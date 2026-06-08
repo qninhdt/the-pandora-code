@@ -15,10 +15,10 @@ literal so the user always gets a path + a next command, never a vague error.
   3. Paste the full result into:  research/{slug}.md
   4. Run `/pandora next` again.
 
-Stopping here — this is the only manual step. I will not invent Pandora canon.
+Stopping here - this is the only manual step. I will not invent Pandora canon.
 ```
 
-`/pandora write {slug}` with no research note (no prompt branch — straight error):
+`/pandora write {slug}` with no research note (no prompt branch - straight error):
 
 ```
 [pandora] Cannot write "{slug}": research/{slug}.md is missing.
@@ -40,7 +40,7 @@ Enable plan mode, then run `/pandora next` (or `/pandora write {slug}`) again.
 `pnpm check-glossary {slug}` exited non-zero:
 
 ```
-[pandora] Glossary sync failed — the chapter references undefined terms.
+[pandora] Glossary sync failed - the chapter references undefined terms.
 Add a definition file for each at content/glossary/{id}.yaml (do NOT remove the
 reference), then re-run. The check output above lists every missing term + where
 it is used.

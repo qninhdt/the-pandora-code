@@ -4,6 +4,7 @@ import { GlassPanel } from "@/components/codex/glass-panel";
 import { SpecimenPlate } from "@/components/codex/specimen-plate";
 import { type Locale, isLocale } from "@/i18n/config";
 import { listPublishedChapters } from "@/lib/content/loader/chapter-loader";
+import { getChapterCoverImage } from "@/lib/content/loader/cover-image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
@@ -40,9 +41,10 @@ export default async function ChaptersIndex({ params }: ChaptersIndexProps) {
                 href={`/${loc}/chapters/${c.meta.slug}`}
                 title={c.title}
                 subtitle={c.subtitle}
+                imageSrc={getChapterCoverImage(c.meta.slug)}
                 plateNo={String(i + 1).padStart(2, "0")}
                 tier="canon"
-                tierLabel={`${c.meta.classification.canon_pct}%`}
+                tierLabel={`${c.meta.reading_time_min} ${loc === "vi" ? "phút" : "min"}`}
                 locale={loc}
               />
             </CodexCell>

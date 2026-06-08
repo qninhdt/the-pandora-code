@@ -1,0 +1,98 @@
+slug: where-is-pandora
+part: the-world
+order: 1
+status: published
+title:
+  vi: Pandora nằm ở đâu?
+  en: Where is Pandora
+subtitle:
+  vi: >-
+    Địa chỉ thật của Pandora trong hệ Alpha Centauri - và nghệ thuật săn tìm một thế giới ta chưa
+    thể nhìn thấy
+  en: >-
+    Pandora's real address in the Alpha Centauri system - and the art of hunting a world we cannot
+    yet see
+hook:
+  vi: >-
+    Đứng trên Pandora trước giữa trưa, bạn sẽ thấy mặt trời tắt lịm sau một bức tường vân mây cao
+    ngang một phần ba bầu trời. Bầu trời ấy nói cho bạn biết bạn không đứng trên một hành tinh - mà
+    trên một mặt trăng. Câu hỏi đặt ra rất giản dị: chính xác thì nơi này nằm ở đâu, và liệu có thứ
+    gì như thế đang thực sự tồn tại đủ gần để một ngày nào đó ta chĩa kính viễn vọng vào và biết
+    được?
+  en: >-
+    Stand on Pandora before midday and watch the sun go out behind a banded wall that fills a third
+    of the sky. That sky tells you you are not on a planet but on a moon. The question is the
+    patient one: where exactly is this place - and could anything like it really be out there, close
+    enough that we might one day point a telescope at it and know?
+authors:
+  - bardabez
+reading_time_min: 26
+tags:
+  - astronomy
+  - exoplanets
+  - habitable-zone
+  - orbital-mechanics
+  - astrobiology
+classification:
+  canon_pct: 26
+  inference_pct: 12
+  speculation_pct: 7
+  real_science_pct: 55
+related_chapters:
+  - time-on-pandora
+  - whats-in-the-air
+glossary_terms:
+  - alpha-centauri
+  - habitable-zone
+  - exomoon
+  - tidal-heating
+  - roche-limit
+  - radial-velocity
+  - direct-imaging
+  - transit-timing-variation
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-eclipse-overhead
+    role: hero
+    asset_status: ready
+  - id: fig-02-system-orrery
+    role: diagram
+    asset_status: ready
+  - id: fig-03-habitable-band
+    role: diagram
+    asset_status: ready
+  - id: fig-04-exomoon-furnace
+    role: diagram
+    asset_status: ready
+  - id: fig-05-radiation-belts
+    role: diagram
+    asset_status: ready
+  - id: fig-06-from-earth
+    role: inline
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Pandora - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Pandora
+  - kind: canon
+    label: Polyphemus - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Polyphemus
+  - kind: science
+    label: Habitable zone - Wikipedia
+    url: https://en.wikipedia.org/wiki/Habitable_zone
+  - kind: science
+    label: Habitability of binary star systems - Wikipedia
+    url: https://en.wikipedia.org/wiki/Habitability_of_binary_star_systems
+  - kind: science
+    label: Habitability of natural satellites - Wikipedia
+    url: https://en.wikipedia.org/wiki/Habitability_of_natural_satellites
+  - kind: science
+    label: Astrophysics of Pandora, the moon-world from Avatar - planetplanet.net
+    url: https://planetplanet.net/2022/12/14/pandora-the-moon-world-from-avatar-revisited/
+  - kind: science
+    label: Alpha Centauri - Wikipedia
+    url: https://en.wikipedia.org/wiki/Alpha_Centauri
+  - kind: research-note
+    label: Physical and Astronomical Characterization of Pandora (chapter research note)

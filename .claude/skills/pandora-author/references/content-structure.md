@@ -1,13 +1,13 @@
 # Content Structure
 
-How to lay out a chapter. A guide, not a rigid template — let the material shape
+How to lay out a chapter. A guide, not a rigid template - let the material shape
 the order. Target 5–7k EN words.
 
 ## The arc
 
 1. **Cold open (observation).** Drop the reader in front of a concrete Pandoran
    thing they can see. No definitions, no thesis. Earn curiosity first.
-2. **The question.** Turn the observation into a "how can that be?" — the hinge
+2. **The question.** Turn the observation into a "how can that be?" - the hinge
    that makes the science feel necessary, not bolted on.
 3. **The reading.** Work through the Pandoran phenomenon, letting the real
    science emerge as the natural explanation. One concept carries the chapter;
@@ -22,7 +22,8 @@ the order. Target 5–7k EN words.
 ## Components (palette, not checklist)
 
 Reach for the registered content components only where they earn their place:
-- A hero figure to anchor the cold open.
+- A hero figure to anchor the cold open (often the chapter's `fig-00-cover` -
+  the same representative image shown on the landing book-map plate).
 - Inline figures / diagrams where a visual teaches faster than prose.
 - A "what this means" beat for the Earth turn.
 - Classification badges / confidence meter for the honest-edges section.
@@ -35,7 +36,7 @@ to use it.
 
 ## Pacing rules
 
-- Sections should breathe — alternate dense explanation with lighter scene.
+- Sections should breathe - alternate dense explanation with lighter scene.
 - No section should read as a self-contained textbook entry.
 - If you're three concepts deep, cut to one and go deeper.
 - Figures punctuate; they don't decorate. Each has a narrative purpose.

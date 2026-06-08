@@ -1,0 +1,17 @@
+id: quantum-locking
+label:
+  vi: Khóa lượng tử
+  en: Quantum locking
+definition:
+  vi: "Tên thường gọi của hệ quả vĩ mô của ghim từ thông: vật siêu dẫn bị khóa cứng tại một vị trí và góc nghiêng trong không gian, có thể lơ lửng cố định, trượt dọc đường ray từ không ma sát, hay thậm chí treo ngược dưới nam châm."
+  en: "The common name for the macroscopic consequence of flux pinning: a superconductor locked rigidly at a fixed position and tilt in space - able to hover fixed, glide frictionlessly along a magnetic track, or even hang upside down beneath a magnet."
+see_also:
+  - flux-pinning
+  - type-ii-superconductor
+category: concept
+cover_prompt: >-
+  A superconducting puck hanging upside down beneath a magnetic rail at a fixed
+  tilted angle, surrounded by cold vapor, as if bolted into empty space without
+  touching the rail. Show the impossible-looking but rigid locked position in a
+  real lab setup, with the subject centered and the geometry easy to read, no
+  text or infographic treatment.

@@ -21,7 +21,7 @@ export function sizeForAspect(
 export interface GeneratedImage {
   /** Decoded PNG bytes, ready to write to disk. */
   bytes: Buffer;
-  /** Provider response id when present — persisted for reproducible regen. */
+  /** Provider response id when present - persisted for reproducible regen. */
   responseId?: string;
 }
 
@@ -178,7 +178,7 @@ async function callEdit(
 }
 
 // Try the full gpt-image-1 payload; if the endpoint 400s on the extras, latch
-// to minimal {model, prompt} and retry — covers proxies that only accept that.
+// to minimal {model, prompt} and retry - covers proxies that only accept that.
 async function callGenerate(
   client: OpenAI,
   prompt: string,

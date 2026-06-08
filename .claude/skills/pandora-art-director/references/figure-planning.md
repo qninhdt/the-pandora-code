@@ -1,4 +1,4 @@
-# Figure Planning — what and how many to illustrate
+# Figure Planning - what and how many to illustrate
 
 Figure count is content-driven. No minimum, no maximum. The question is never
 "how many figures should this chapter have" but "what does the reader need to
@@ -11,7 +11,7 @@ Figure count is content-driven. No minimum, no maximum. The question is never
 - **Mechanism figures (inline/diagram).** Each step or structure the reader must
   picture to follow the science. If a paragraph describes a spatial/physical
   process, a figure probably teaches it faster.
-- **Comparisons.** Pandora-vs-Earth, before-vs-after, scale comparisons — where
+- **Comparisons.** Pandora-vs-Earth, before-vs-after, scale comparisons - where
   the *contrast* is the point. Role `comparison`.
 - **Diagrams.** Abstract relationships (networks, cycles, anatomy callouts) that
   a photo-real scene can't show. Role `diagram`.
@@ -30,12 +30,22 @@ Figure count is content-driven. No minimum, no maximum. The question is never
 - A dense systems/anatomy chapter may warrant many figures.
 - A short reflective chapter may warrant a handful.
 - The sample/template chapter is intentionally figure-rich to set the immersion
-  bar — but that's a property of *that* chapter's content, not a global quota.
+  bar - but that's a property of *that* chapter's content, not a global quota.
 
 ## Anti-pattern: decoration
 
 A figure that looks nice but teaches nothing fails the test. Every figure's
 `narrative_purpose` must be a real teaching reason. If it's "looks cool", cut it.
+
+## Anti-pattern: AI images for charts/diagrams
+
+If a real component can render it, use the component — NOT a generated image.
+Charts, plots, and data graphs go through the `Chart` component (Recharts);
+exact diagrams that need correct labels/values use a diagram component or
+hand-authored SVG. AI image models render numbers, axes, and labels garbled and
+imprecise, so reserve generated figures for atmospheric/illustrative scenes
+(landscapes, creatures, cutaways, conceptual art). A plot of resistance vs.
+temperature is a `Chart`, never a `fig-NN` PNG.
 
 ## Recurring subjects
 

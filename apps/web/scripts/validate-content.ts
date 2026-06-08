@@ -14,5 +14,5 @@ if (!report.ok) {
   process.exit(1);
 }
 
-console.log("[validate-content] OK — all content valid.");
+console.log("[validate-content] OK - all content valid.");
 process.exit(0);

@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-specimen-bench",
+  "chapter_slug": "reading-pandora-as-a-specimen",
+  "role": "inline",
+  "narrative_purpose": "Anchors the cold open: the whole method of the book shown as a posture - one specimen, one lens, one page of unanswered notes.",
+  "subject": "A field naturalist's wooden bench seen from a low three-quarter angle. On it: a single glowing blue-green Pandoran leaf pinned flat on a small dark board; beside it a brass magnifying lens on a folding stand tilted over the leaf; and an open notebook page covered in faint, indistinct handwritten ink strokes that are clearly writing but not legible words, with a thin pen resting across it.",
+  "scene": "A dim study nook at night, the dark wood surface fading into shadow behind the objects; a few luminous spores drift in the air; the leaf casts a small pool of teal light onto the page and pen.",
+  "camera": "Low three-quarter close shot across the bench surface, shallow depth, the pinned leaf as the focal object.",
+  "light": "Bioluminescent key from the glowing leaf itself; soft cool ambient; the notebook lit indirectly by the leaf's glow.",
+  "palette": "Dark indigo and brown-black wood, cyan-teal leaf glow spilling onto a pale page, one faint warm amber glint on the brass lens.",
+  "style": "Painterly naturalist illustration, warm observed intimacy, textured brushwork.",
+  "detail_level": "High detail on leaf, pins, lens, and pen; the indistinct page strokes soft; background dissolving into dark haze.",
+  "composition": "Leaf and lens occupy the left and center; the notebook page leads in from the lower right; large calm dark negative space upper right.",
+  "exclude": ["readable text", "legible words", "letters", "numbers", "watermark", "people", "Earth plant species", "modern electronics"],
+  "consistency_notes": "Same single cyan-teal glowing frond and brass lens as the cover plate, here on a wooden bench rather than top-down; warm amber kept to the lens rim only.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no readable text, no legible handwriting, no logos, no people, no photographic look, no cartoon style, no clutter",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/reading-pandora-as-a-specimen/fig-00-cover.png"]
+}

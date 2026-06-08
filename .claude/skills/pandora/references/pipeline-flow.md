@@ -1,4 +1,4 @@
-# Pipeline Flow — full detail
+# Pipeline Flow - full detail
 
 The exact mechanics behind `/pandora next` and `/pandora write <slug>`. The
 SKILL.md has the summary; this is the operational reference.
@@ -38,9 +38,9 @@ Read `research/{slug}.md` + the chapter's outline entry (title + payload).
 Produce a short plan: section structure, the dual-payload beats (where Pandora
 hooks, where the STEM lands), which existing components to reuse, which new
 components to build, and the figure list (role + purpose each). This is the
-plan-mode artifact — reviewable before prose.
+plan-mode artifact - reviewable before prose.
 
-### 1. Write EN — `pandora-author`
+### 1. Write EN - `pandora-author`
 Author `content/chapters/{slug}/en.mdx` (5–7k words) and the chapter
 `meta.yaml` if absent. `meta.yaml` fields (validated by `ChapterMeta`):
 `slug, part, order, status, title{vi,en}, hook{vi,en}, authors:[bardabez],
@@ -48,20 +48,23 @@ reading_time_min, tags, classification{canon/inference/speculation/real_science
 _pct summing to 100}, related_chapters, glossary_terms, figures[], sources[]`.
 `part` + `order` must match the chapter's position in `outline.ts`.
 
-### 2. Figures — `pandora-art-director`
+### 2. Figures - `pandora-art-director`
 Emit `content/chapters/{slug}/figures/fig-NN-*.json`, one per figure, each
 valid against `FigurePrompt`. Add a matching `figures[]` entry (id, role,
 `asset_status: pending`) to `meta.yaml`. Count is content-driven (many; density
-scales) — no fixed minimum.
+scales) - no fixed minimum. **Always author a `fig-00-cover` (role `hero`,
+16:9/3:2)** - the chapter's representative image shown on the landing book-map
+plate; the web resolves it automatically (`fig-00` sorts first; body figures
+start at `fig-01`).
 
-### 3. Images — `scripts/gen-images.ts`
+### 3. Images - `scripts/gen-images.ts`
 `pnpm gen-images --chapter {slug}`. Writes PNGs to
 `apps/web/public/images/chapters/{slug}/` and flips each figure's
 `asset_status` to `ready` in `meta.yaml`. Needs `OPENAI_API_KEY` (+ optional
 `OPENAI_BASE_URL`, `OPENAI_IMAGE_MODEL`) in `.env`. Single figure:
 `pnpm gen-images --figure fig-NN-… [--force]`.
 
-### 4. Translate — `pandora-translate`
+### 4. Translate - `pandora-translate`
 Author `content/chapters/{slug}/vi.mdx` from `en.mdx`: body + every figure
 caption + callouts, in one pass. VI must read as native VI (see that skill's
 naturalness checklist). Set `meta.yaml` `status: published` once VI is done and

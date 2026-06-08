@@ -1,0 +1,19 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "reading-pandora-as-a-specimen",
+  "role": "hero",
+  "narrative_purpose": "The chapter's full-bleed atmospheric backdrop - a vast dim Pandoran vista the reader's long-form text floats over, setting a contemplative mood.",
+  "subject": "An immense panoramic Pandoran wilderness seen from very far away and high up - a dark expanse of glowing forest canopy and a few distant suspended rock masses dissolving into deep haze toward the horizon. No single subject dominates; the scale is vast and quiet.",
+  "scene": "Deep night under a faint bioluminescent glow. Layered mist drifts low across the canopy; the whole scene is dim and low-contrast, mostly dark, so overlaid text stays readable - light is sparse and atmospheric, not a bright focal burst.",
+  "camera": "Ultra-wide establishing panorama, extreme depth, very high vantage looking out and slightly down across the whole landscape to a distant hazy horizon.",
+  "light": "Very low-key moonless night; faint cool glow rising from scattered bioluminescent flora and mist; no strong highlights, deliberately underexposed and moody.",
+  "palette": "Predominantly deep void blue and near-black, with restrained cyan and teal glows in the mist; almost no warm tones; overall dark and macro.",
+  "style": "Cinematic matte-painting establishing shot, vast atmospheric depth, painterly photoreal.",
+  "detail_level": "Soft and atmospheric throughout - no crisp foreground subject; detail dissolves into haze so the image reads as ambient backdrop, not a figure to study.",
+  "composition": "Full-bleed, horizon low, immense calm sky filling most of the frame; visual weight spread evenly with no bright center, leaving the upper-middle dark for text overlay.",
+  "exclude": ["text", "watermark", "people", "spacecraft", "bright focal subject", "sharp foreground object", "Earth flora"],
+  "consistency_notes": "Cyan-teal bioluminescent glow on deep void-blue matching the book's palette, but darker, wider, and more distant - a macro mood backdrop, not a close hero.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no logos, no people, no bright hotspot, no high contrast, no sharp foreground, no warm daylight, no oversaturation, no busy detail",
+  "style_refs": ["pandora-establishing.png"]
+}

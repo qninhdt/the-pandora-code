@@ -11,9 +11,12 @@ import { FigureGrid } from "@/components/content/figure-grid";
 import { OpenQuestions } from "@/components/content/open-questions";
 import { Quote } from "@/components/content/quote";
 import { ScrollSequence } from "@/components/content/scroll-sequence";
+import { TierLegend } from "@/components/content/tier-legend";
 import { Timeline } from "@/components/content/timeline";
 import { WhatThisMeans } from "@/components/content/what-this-means";
 import { GlossaryTerm } from "@/components/glossary/glossary-term";
+import { FloatingMountainFigure } from "@/components/three/floating-mountain-figure";
+import { FluxFieldFigure } from "@/components/three/flux-field-figure";
 import { ChapterHero } from "@/components/reading/chapter-hero";
 import { ChapterShell } from "@/components/reading/chapter-shell";
 import { ReadingProgress } from "@/components/reading/reading-progress";
@@ -35,6 +38,8 @@ export const pandoraMdxComponents = {
   DiagramFigure,
   Figure,
   FigureGrid,
+  FloatingMountainFigure,
+  FluxFieldFigure,
   GlossaryTerm,
   OpenQuestions,
   Quote,
@@ -46,6 +51,7 @@ export const pandoraMdxComponents = {
   SourceList,
   StatGrid,
   TableOfContents,
+  TierLegend,
   Timeline,
   WhatThisMeans,
 } as const;

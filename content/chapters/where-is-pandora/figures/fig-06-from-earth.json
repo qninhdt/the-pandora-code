@@ -1,0 +1,19 @@
+{
+  "id": "fig-06-from-earth",
+  "chapter_slug": "where-is-pandora",
+  "role": "inline",
+  "narrative_purpose": "Grounds the detection section in our own point of view: an observatory on Earth pointed at the single brilliant star that is Alpha Centauri, the world we would actually search from.",
+  "subject": "A large domed astronomical observatory perched on a dark mountain ridge at night, its dome slit open. Above it, a deep field of faint stars, and low near the horizon one single intensely brilliant star burning far brighter than the rest.",
+  "scene": "A clear high-altitude night under a southern sky. The observatory silhouetted against the faint glow of the night horizon; the one brilliant star dominating the lower sky as the obvious target of the open dome.",
+  "camera": "Wide low-angle landscape shot, the observatory on the ridge in the lower third, vast star-field sky above.",
+  "light": "Night: the brilliant low star is the brightest point; faint cool ambient skyglow on the dome and ridge; deep shadow elsewhere.",
+  "palette": "Void-indigo and deep-teal night sky, cool mist-grey on the dome and ridge, one scarce warm-white brilliant star, faint cyan airglow on the horizon.",
+  "style": "Painterly naturalist nightscape plate, atmospheric, restrained - this is the one figure set on Earth, so keep it sober and real.",
+  "detail_level": "Crisp silhouette of the dome and ridgeline; soft star-field; the brilliant star with a gentle painterly glow, not a lens flare.",
+  "composition": "Observatory dome on the lower-right third; the single brilliant star low on the left horizon; broad dark sky filling the upper frame.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "Pandora flora", "bioluminescence", "alien creatures"],
+  "consistency_notes": "This is the only Earth-set figure in the chapter; it deliberately drops the bioluminescent glow and keeps a sober night palette, while still using the cool void-indigo/teal sky of the book.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no logos, no lens flares, no photographic or 3D-render look, no oversaturation, no alien plants",
+  "style_refs": ["pandora-establishing.png"]
+}

@@ -1,15 +1,27 @@
+"use client";
+
 import { cn } from "@/lib/utils";
-import { HelpCircle } from "lucide-react";
+import { ChevronDown, HelpCircle } from "lucide-react";
+import { useState } from "react";
+
+interface OpenQuestionItem {
+  question: string;
+  /** Optional answer revealed when the row is expanded. */
+  answer?: string;
+}
 
 interface OpenQuestionsProps {
   title?: string;
-  questions: string[];
+  items: OpenQuestionItem[];
   className?: string;
 }
 
-// End-of-chapter open questions — what science (and canon) still can't answer.
-// Each sits in a glassy row with a glowing query mark.
-export function OpenQuestions({ title, questions, className }: OpenQuestionsProps) {
+// End-of-chapter open questions - what science (and canon) still can't answer.
+// Each row expands on click to reveal an answer (or "what we can say so far"),
+// so the reader can sit with the question before seeing the response.
+export function OpenQuestions({ title, items, className }: OpenQuestionsProps) {
+  const [open, setOpen] = useState<number | null>(null);
+
   return (
     <section
       className={cn(
@@ -23,15 +35,60 @@ export function OpenQuestions({ title, questions, className }: OpenQuestionsProp
           {title}
         </h3>
       )}
-      <ul className="space-y-3">
-        {questions.map((q, i) => (
-          <li key={i} className="flex gap-3 font-serif text-[0.95rem] leading-relaxed text-muted">
-            <span className="shrink-0 font-sans text-sm font-semibold text-magenta tabular-nums">
-              {String(i + 1).padStart(2, "0")}
-            </span>
-            {q}
-          </li>
-        ))}
+      <ul className="space-y-2">
+        {items.map((item, i) => {
+          const isOpen = open === i;
+          const hasAnswer = Boolean(item.answer);
+          return (
+            <li
+              key={i}
+              className="rounded-xl border border-border/60 bg-void/20"
+            >
+              <button
+                type="button"
+                disabled={!hasAnswer}
+                onClick={() => setOpen(isOpen ? null : i)}
+                className={cn(
+                  "flex w-full items-start gap-3 p-4 text-left",
+                  hasAnswer && "cursor-pointer",
+                )}
+                aria-expanded={isOpen}
+              >
+                <span className="shrink-0 font-sans text-sm font-semibold text-magenta tabular-nums">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="flex-1 font-serif text-[0.95rem] leading-relaxed text-foreground/90">
+                  {item.question}
+                </span>
+                {hasAnswer && (
+                  <ChevronDown
+                    size={18}
+                    className={cn(
+                      "mt-0.5 shrink-0 text-muted transition-transform duration-300",
+                      isOpen && "rotate-180",
+                    )}
+                  />
+                )}
+              </button>
+              {hasAnswer && (
+                <div
+                  className={cn(
+                    "grid transition-all duration-300 ease-out",
+                    isOpen
+                      ? "grid-rows-[1fr] opacity-100"
+                      : "grid-rows-[0fr] opacity-0",
+                  )}
+                >
+                  <div className="overflow-hidden">
+                    <p className="px-4 pb-4 pl-12 font-serif text-[0.9rem] leading-relaxed text-muted">
+                      {item.answer}
+                    </p>
+                  </div>
+                </div>
+              )}
+            </li>
+          );
+        })}
       </ul>
     </section>
   );

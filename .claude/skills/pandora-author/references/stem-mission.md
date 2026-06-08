@@ -1,4 +1,4 @@
-# STEM Mission — balancing the two payloads
+# STEM Mission - balancing the two payloads
 
 Every chapter ships a Pandora payload AND a real-world STEM payload. This file is
 how to keep them in balance.
@@ -7,7 +7,7 @@ how to keep them in balance.
 
 Read the finished chapter and ask:
 - **Pandora payload:** did the reader understand something about Avatar/Pandora/
-  the Na'vi more deeply than before? (Not plot recap — a *reading* of the world.)
+  the Na'vi more deeply than before? (Not plot recap - a *reading* of the world.)
 - **STEM payload:** can the reader name and roughly explain a real Earth-science
   concept they now own? Could they not have gotten it from a wiki?
 
@@ -23,7 +23,7 @@ The STEM must arrive *through* Pandora, not beside it:
 - Leave one clear takeaway, not a survey of five.
 
 Anti-signal: a paragraph that would survive unchanged in a textbook with "Pandora"
-swapped for "Earth". That paragraph is a lecture — rewrite it so it could only
+swapped for "Earth". That paragraph is a lecture - rewrite it so it could only
 have been written about this scene.
 
 ## Depth over breadth
@@ -35,6 +35,6 @@ without the reader feeling any of them. Cut concepts that don't get room to land
 
 ## Classification honesty
 
-The dual payload includes telling the reader which tier each claim sits in —
+The dual payload includes telling the reader which tier each claim sits in -
 canon, inference, speculation, or real science. That honesty is part of the
 product, not a disclaimer. See `classification-rubric.md`.

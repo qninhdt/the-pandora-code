@@ -3,17 +3,26 @@ interface FloatingMountainFallbackProps {
   poster?: string;
 }
 
-// 2D fallback for the floating-mountain hero — shown on low-power devices,
+// 2D fallback for the floating-mountain hero - shown on low-power devices,
 // reduced-motion, and before the 3D scene mounts. A layered gradient evoking
 // haze-wreathed floating peaks, or a generated poster when one is supplied.
-export function FloatingMountainFallback({ poster }: FloatingMountainFallbackProps) {
+export function FloatingMountainFallback({
+  poster,
+}: FloatingMountainFallbackProps) {
   if (poster) {
     return (
       <div className="absolute inset-0">
-        <img src={poster} alt="" className="size-full object-cover opacity-80" />
+        <img
+          src={poster}
+          alt=""
+          className="size-full object-cover opacity-80"
+        />
         <div
           className="absolute inset-0"
-          style={{ background: "linear-gradient(to bottom, transparent 40%, var(--void))" }}
+          style={{
+            background:
+              "linear-gradient(to bottom, transparent 40%, var(--void))",
+          }}
         />
       </div>
     );
@@ -29,11 +38,16 @@ export function FloatingMountainFallback({ poster }: FloatingMountainFallbackPro
       {/* suggestion of two floating masses */}
       <div
         className="absolute left-[22%] top-[34%] h-20 w-32 -rotate-6 rounded-[60%] blur-md"
-        style={{ background: "color-mix(in oklab, var(--surface-raised) 80%, var(--cyan))" }}
+        style={{
+          background:
+            "color-mix(in oklab, var(--surface-raised) 80%, var(--cyan))",
+        }}
       />
       <div
         className="absolute left-[58%] top-[52%] h-16 w-24 rotate-3 rounded-[60%] blur-md"
-        style={{ background: "color-mix(in oklab, var(--surface) 80%, var(--teal))" }}
+        style={{
+          background: "color-mix(in oklab, var(--surface) 80%, var(--teal))",
+        }}
       />
     </div>
   );

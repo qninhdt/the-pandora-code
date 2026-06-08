@@ -1,0 +1,16 @@
+id: alpha-centauri
+label:
+  vi: Alpha Centauri
+  en: Alpha Centauri
+definition:
+  vi: Hệ sao gần Trái Đất nhất, cách khoảng 4,37 năm ánh sáng, gồm ba ngôi sao - Alpha Centauri A (sao lùn vàng giống Mặt Trời, người Na'vi gọi là Tsawke), Alpha Centauri B (sao lùn cam) và Proxima Centauri (sao lùn đỏ ở xa). Trong cốt truyện, Pandora quay quanh hành tinh khí Polyphemus, vốn quay quanh Alpha Centauri A.
+  en: The nearest star system to Earth, about 4.37 light-years away, made of three suns - Alpha Centauri A (a Sun-like yellow dwarf, the Na'vi Tsawke), Alpha Centauri B (an orange dwarf), and distant Proxima Centauri (a red dwarf). In canon, Pandora orbits the gas giant Polyphemus, which orbits Alpha Centauri A.
+see_also:
+  - habitable-zone
+  - exomoon
+category: planet
+cover_prompt: >-
+  A painted deep-space view of two close suns - one bright yellow-white, one
+  smaller and orange - shining together against a dusting of faint stars, with a
+  much dimmer red point glowing far off in the dark to one side. Cool void-indigo
+  space, soft painterly glow, no text or symbols.

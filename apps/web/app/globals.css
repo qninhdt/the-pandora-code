@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 /*
- * The Pandora Code — dark bioluminescent design system.
+ * The Pandora Code - dark bioluminescent design system.
  * Dark-only (no light theme). Canonical palette mirrors content/art-direction/
  * style-bible.md exactly so generated figures and the interface read as one
  * world. Change a hex here only if you change it in the STYLE BIBLE too.
  */
 
 :root {
-  /* Layered depth — void at the back, surfaces float toward the reader. */
+  /* Layered depth - void at the back, surfaces float toward the reader. */
   --void: #070912;
   --abyss: #0a0e1a;
   --background: #090d18;
@@ -16,7 +16,7 @@
   --surface-raised: #141b2e;
   --surface-overlay: #1b2438;
 
-  /* Text — mist highlight down to subtle haze. */
+  /* Text - mist highlight down to subtle haze. */
   --foreground: #e9edf6;
   --muted: #9aa4bd;
   --subtle: #6c7690;
@@ -25,7 +25,7 @@
   --border: #1d2740;
   --border-strong: #2c3858;
 
-  /* Bioluminescence — the only true light sources. */
+  /* Bioluminescence - the only true light sources. */
   --cyan: #36c5d9;
   --teal: #2bd4a8;
   --magenta: #ff5da8;
@@ -33,13 +33,13 @@
   --accent: #36c5d9;
   --accent-soft: #6fd9e7;
 
-  /* Classification tiers — four distinct biolum hues, all legible on void. */
+  /* Classification tiers - four distinct biolum hues, all legible on void. */
   --canon: #36c5d9;
   --inference: #ffb454;
   --speculation: #ff7bc0;
   --real-science: #2bd4a8;
 
-  /* Glows — soft painterly bloom, never neon UI glare. */
+  /* Glows - soft painterly bloom, never neon UI glare. */
   --glow-cyan: 0 0 24px -4px color-mix(in oklab, var(--cyan) 60%, transparent);
   --glow-teal: 0 0 24px -4px color-mix(in oklab, var(--teal) 55%, transparent);
   --glow-magenta: 0 0 28px -6px color-mix(in oklab, var(--magenta) 55%, transparent);
@@ -97,7 +97,7 @@ html {
   pointer-events: none;
 }
 
-/* Drifting motes for the 2D fallback — tiled radial dots crawling slowly. */
+/* Drifting motes for the 2D fallback - tiled radial dots crawling slowly. */
 .atmosphere-motes {
   background-image: radial-gradient(
       color-mix(in oklab, var(--cyan) 60%, transparent) 0.5px,
@@ -133,7 +133,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Ambient atmosphere — a faint living haze behind everything. */
+/* Ambient atmosphere - a faint living haze behind everything. */
 body::before {
   content: "";
   position: fixed;
@@ -206,7 +206,7 @@ a:hover {
 /* ---- Long-form reading ---- */
 
 .reading-column {
-  max-width: 72ch;
+  max-width: 84ch;
   margin-inline: auto;
 }
 
@@ -296,4 +296,49 @@ a:hover {
   padding: 0.12em 0.4em;
   border-radius: var(--radius-sm);
   color: var(--accent-soft);
+}
+
+/* ---- Landing atmospherics ---- */
+
+/* Film-grain tooth laid over generated imagery so painted backdrops keep a
+   hand-made texture instead of a flat digital sheen. Pointer-transparent. */
+.grain-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.07;
+  mix-blend-mode: soft-light;
+}
+
+/* Slow drifting bioluminescent aurora wash for the hero. */
+@keyframes aurora-drift {
+  0% {
+    transform: translate3d(-4%, -2%, 0) scale(1.1);
+    opacity: 0.55;
+  }
+  100% {
+    transform: translate3d(4%, 3%, 0) scale(1.25);
+    opacity: 0.8;
+  }
+}
+.animate-aurora {
+  animation: aurora-drift 22s ease-in-out infinite alternate;
+}
+
+/* Barely-there cinematic push-in for full-bleed backdrops. */
+@keyframes ken-burns {
+  from {
+    transform: scale(1.02);
+  }
+  to {
+    transform: scale(1.12);
+  }
+}
+.animate-ken-burns {
+  animation: ken-burns 32s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-aurora,
+  .animate-ken-burns {
+    animation: none;
+  }
 }

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 // Decide whether a 3D scene should run at all. Returns true (use 2D fallback)
 // when the user prefers reduced motion or the device looks low-powered. Starts
-// true on the server / first paint and relaxes after mount — so SSR is always
+// true on the server / first paint and relaxes after mount - so SSR is always
 // the cheap fallback and there is no hydration mismatch.
 export function useLowPower(): boolean {
   const reduced = useReducedMotionSafe();

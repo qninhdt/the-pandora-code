@@ -1,0 +1,19 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "reading-pandora-as-a-specimen",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative cover: Pandora treated as a specimen on a naturalist's plate, capturing the book's whole stance at a glance.",
+  "subject": "A single glowing blue-green Pandoran frond laid flat at the center of a dark slate examination plate, held down by two thin pale specimen pins crossed near its stem. The frond's veins glow faintly with cyan bioluminescence. To one side rests a round brass-rimmed magnifying lens on a small stand, angled over the leaf so a soft circle of magnified glow shows through it.",
+  "scene": "A dark naturalist's examination table seen from directly above, almost empty, with a faint scatter of luminous spores around the frond and a shallow pool of teal light cast by the leaf onto the slate.",
+  "camera": "Top-down flat-lay view looking straight down at the plate, the frond and lens arranged like a museum specimen sheet.",
+  "light": "The brightest light is the leaf itself glowing from within; cool low ambient elsewhere; a soft bloom where the magnifier concentrates the glow.",
+  "palette": "Near-black slate, deep indigo shadow, cyan and teal leaf glow, a single restrained warm amber glint on the brass lens rim.",
+  "style": "Painterly naturalist field-plate illustration, observed-from-life, textured.",
+  "detail_level": "High detail on the frond veins, pins, and lens rim; soft falloff into dark negative space around them.",
+  "composition": "Frond centered and isolated with generous dark negative space; the magnifier in the lower third on a rule-of-thirds point.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "people", "Earth plant species", "modern machinery"],
+  "consistency_notes": "A single luminous cyan-teal frond on dark slate, warm amber only on the brass lens; this calm specimen-plate look anchors the prologue's other bench scene.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no readable writing, no logos, no people, no cartoon or anime style, no oversaturation",
+  "style_refs": ["pandora-establishing.png"]
+}

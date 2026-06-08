@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-eclipse-overhead",
+  "chapter_slug": "where-is-pandora",
+  "role": "hero",
+  "narrative_purpose": "Anchors the cold open: midday on Pandora as the giant planet slides across the sun and the land drops into twilight, the sky-fact that tells you you are standing on a moon.",
+  "subject": "Looking steeply upward from inside an alien forest clearing toward a huge banded gas giant whose dark edge is sliding across a small brilliant white-gold star, partly covering it so a bright ring of light flares around the planet's rim. Tall glowing blue-green canopy trees frame the edges of the upward view.",
+  "scene": "The moment of a daily eclipse at midday: light on the forest going long, thin and blue as the star is swallowed. Faint banded detail visible on the lit crescent of the giant planet; the rest of its disc in deep shadow.",
+  "camera": "Steep upward worm's-eye view through a gap in the forest canopy toward the sky.",
+  "light": "Dramatic backlight from the eclipsed star flaring around the planet's edge; the forest below lit mostly by its own cool bioluminescence as daylight fails.",
+  "palette": "Void-indigo and deep teal sky, a scarce warm-amber ring of starlight around the dark planet, cyan and living-teal glow on the framing canopy.",
+  "style": "Painterly speculative-biology naturalist plate, atmospheric, high dynamic range between the bright ring and the dark sky.",
+  "detail_level": "Crisp on the canopy edges and the bright flaring ring; the planet's shadowed disc smooth and dark.",
+  "composition": "Planet-and-star high and central; dark forest silhouette framing the lower corners; strong vertical sense of looking straight up.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "spacecraft", "Earth trees", "human figures"],
+  "consistency_notes": "Same banded gas giant Polyphemus as the cover (cream/rust/grey bands). Cool Pandora palette, bioluminescent forest key light.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no photographic or 3D-render look, no lens flares, no oversaturation, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/where-is-pandora/fig-00-cover.png"]
+}

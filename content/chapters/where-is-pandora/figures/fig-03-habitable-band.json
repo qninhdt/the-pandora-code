@@ -1,0 +1,19 @@
+{
+  "id": "fig-03-habitable-band",
+  "chapter_slug": "where-is-pandora",
+  "role": "diagram",
+  "narrative_purpose": "Visualizes the habitable zone: a temperate ring around a star where liquid water is possible, with scorched space inside it and frozen space outside, and the gas giant sitting in the warm band.",
+  "subject": "A bright yellow-white star surrounded by a broad soft glowing ring of warm temperate space, like a luminous halo at one distance from the star. Inside that ring, closer to the star, space glows harsh scorched orange. Outside the ring, farther out, space fades to cold deep blue. Sitting within the warm ring, a small banded gas giant with a tiny blue-green moon beside it.",
+  "scene": "An almost symbolic but painterly space scene: concentric zones of temperature rendered as glowing colour fields radiating from the star, no hard boundaries, everything blending softly.",
+  "camera": "Wide head-on view centred on the star, the temperate ring sweeping across the frame.",
+  "light": "The star is the single key light at centre; the temperate ring is a soft self-glowing band; falloff to cold blue at the edges.",
+  "palette": "Scorched ember-amber close to the star, a soft living-teal and cyan temperate ring, cold void-indigo and deep blue at the outer edge; cream-rust planet bands.",
+  "style": "Painterly atmospheric astronomical plate with glowing colour fields, NOT a hard vector ring diagram.",
+  "detail_level": "Soft graduated colour fields; the planet and moon rendered with crisp painterly detail against the glow.",
+  "composition": "Star centred; the warm ring as a wide sweeping arc; the gas giant placed on the ring at one side; smooth radial colour gradient from hot-centre to cold-edge.",
+  "exclude": ["text", "letters", "numbers", "labels", "orbit lines", "arrows", "scale bars", "watermark", "logos", "UI", "grid"],
+  "consistency_notes": "Same banded gas giant Polyphemus as the cover, small here. The colour story (hot amber inner, teal temperate ring, cold blue outer) must be unmistakable without any text.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no orbit lines, no arrows, no grid, no ruler marks, no diagram chrome, no photographic or 3D-render look",
+  "style_refs": ["pandora-establishing.png"]
+}

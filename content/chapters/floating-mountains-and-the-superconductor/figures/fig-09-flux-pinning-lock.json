@@ -1,0 +1,18 @@
+{
+  "id": "fig-09-flux-pinning-lock",
+  "chapter_slug": "floating-mountains-and-the-superconductor",
+  "role": "diagram",
+  "narrative_purpose": "Shows glowing threads passing through small notches in a block and locking it in place, with balanced arrows resisting motion in every direction.",
+  "subject": "A dark rectangular block. Several bright vertical threads pass through it; each thread seats into a small notch or gap in the block, like a peg dropped into a slot. Surrounding the block, evenly spaced bright arrows point inward from all sides (up, down, left, right) toward the block, showing it is held from every direction. The threads continue above and below the block, anchoring it to the surrounding field.",
+  "scene": "Just the block, the threads seated in its notches, and the ring of inward-pointing arrows, on a near-black background.",
+  "camera": "Flat head-on three-quarter view of the block.",
+  "light": "Flat even; threads and arrows glow on their own, the seated notch points brightest.",
+  "palette": "Near-black background, dark block, glowing cyan threads, small teal notch points, amber inward arrows.",
+  "style": "Clean elegant schematic of thin glowing lines.",
+  "detail_level": "Clear seating of each thread into a notch; balanced symmetric arrows on all four sides.",
+  "composition": "Block centred; threads vertical through it; arrows radiating inward symmetrically.",
+  "exclude": ["text", "letters", "numbers", "watermark", "photographic texture"],
+  "consistency_notes": "Glowing cyan lines on a near-black background; amber for the holding-force arrows, matching the chapter's diagram language.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no numbers, no photorealism, no 3D bevels, no clutter, no unbalanced arrows"
+}

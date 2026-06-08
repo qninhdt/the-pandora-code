@@ -1,0 +1,20 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "where-is-pandora",
+  "role": "hero",
+  "narrative_purpose": "The dim full-bleed atmospheric backdrop the chapter's text floats over: the immense silhouette of the giant planet barely lit behind a dark Pandoran horizon, deep and low-contrast so overlaid text stays readable.",
+  "subject": "The colossal silhouette of a banded gas giant rising behind a dark, distant Pandoran horizon of low forested ridges. Most of the planet is in shadow; only a thin rim and a few faint cloud bands catch dim light. Vast hazy sky.",
+  "scene": "A wide panoramic vista seen from very high up and far away, deep atmospheric haze layering the distance, almost everything dissolving into murk. No bright focal subject; mood, not a figure to study.",
+  "camera": "Ultra-wide panoramic vista from a very high distant vantage, horizon low in the frame.",
+  "light": "Very dark and low-contrast; a faint cool rim of light on the planet and a dim glow along the far horizon; deep shadow everywhere else.",
+  "palette": "Dominant void-indigo and deep teal-indigo, barely-there cream-rust on the planet's rim, a faint cyan haze low on the horizon; overall dim.",
+  "style": "Painterly atmospheric vista, soft, dark, immersive; detail dissolving into haze.",
+  "detail_level": "Low and soft throughout - deliberately dim and hazy so long-form text can float over it and stay legible.",
+  "composition": "Low horizon; the giant planet's dark silhouette filling much of the upper frame; wide empty hazy sky; nothing bright competing for attention.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "bright focal subject", "high contrast", "sharp foreground detail"],
+  "consistency_notes": "Same banded gas giant Polyphemus as the cover, here vast and dim. Must stay dark and low-contrast as a background layer, distinct from the crisp bright cover.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no bright focal point, no high contrast, no sharp foreground, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/where-is-pandora/fig-00-cover.png"]
+}

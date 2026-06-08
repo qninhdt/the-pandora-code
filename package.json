@@ -18,6 +18,8 @@
     "validate:content": "pnpm --filter web validate:content",
     "gen-images": "tsx scripts/gen-images.ts",
     "gen-anchor": "tsx scripts/gen-anchor.ts",
+    "gen-glossary-covers": "tsx scripts/gen-glossary-covers.ts",
+    "gen-landing-bg": "tsx scripts/gen-landing-backgrounds.ts",
     "check-glossary": "tsx scripts/check-glossary-terms.ts",
     "typecheck:scripts": "tsc --noEmit -p scripts/tsconfig.json"
   },

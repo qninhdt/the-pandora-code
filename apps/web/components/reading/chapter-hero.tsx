@@ -38,11 +38,13 @@ export function ChapterHero({
   ].filter((t) => t.pct > 0);
 
   return (
-    <header className={cn("relative isolate overflow-hidden", className)}>
+    <header
+      className={cn("relative isolate flex min-h-[100svh] items-end overflow-hidden", className)}
+    >
       {/* Backdrop: chapter figure if present, else a living gradient field. */}
       <div aria-hidden className="absolute inset-0 -z-10">
         {imageSrc ? (
-          <img src={imageSrc} alt="" className="size-full object-cover opacity-40" />
+          <img src={imageSrc} alt="" className="size-full object-cover opacity-50" />
         ) : null}
         <div
           className="absolute inset-0"
@@ -51,14 +53,21 @@ export function ChapterHero({
               "radial-gradient(80rem 40rem at 20% -10%, color-mix(in oklab, var(--cyan) 22%, transparent), transparent 60%), radial-gradient(60rem 40rem at 90% 10%, color-mix(in oklab, var(--magenta) 14%, transparent), transparent 55%)",
           }}
         />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to bottom, color-mix(in oklab, var(--void) 18%, transparent), color-mix(in oklab, var(--void) 42%, transparent) 34%, color-mix(in oklab, var(--void) 92%, transparent) 100%)",
+          }}
+        />
         {/* fade the backdrop into the page so content below sits on void */}
         <div
-          className="absolute inset-x-0 bottom-0 h-2/3"
+          className="absolute inset-x-0 bottom-0 h-1/2"
           style={{ background: "linear-gradient(to bottom, transparent, var(--void))" }}
         />
       </div>
 
-      <div className="mx-auto max-w-4xl px-4 pb-16 pt-24 sm:px-6 sm:pt-32">
+      <div className="mx-auto w-full max-w-6xl px-4 pb-10 pt-28 sm:px-6 sm:pb-14 sm:pt-32 lg:px-8 lg:pb-16">
         {tiers.length > 0 && (
           <div className="mb-6 flex flex-wrap gap-2">
             {tiers.map((t) => (
@@ -69,19 +78,19 @@ export function ChapterHero({
           </div>
         )}
 
-        <h1 className="font-display text-4xl font-800 leading-[1.05] tracking-tight text-foreground sm:text-6xl">
+        <h1 className="max-w-5xl font-display text-4xl font-800 leading-[1.02] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
           {title[locale]}
         </h1>
 
         {subtitle && (
-          <p className="mt-4 max-w-2xl font-serif text-xl leading-snug text-muted sm:text-2xl">
+          <p className="mt-4 max-w-3xl font-serif text-xl leading-snug text-foreground/88 sm:text-2xl">
             {subtitle[locale]}
           </p>
         )}
 
         {hook && (
           <p
-            className="mt-8 max-w-2xl border-l-2 pl-5 font-serif text-lg italic leading-relaxed text-foreground/90"
+            className="mt-8 max-w-3xl border-l-2 pl-5 font-serif text-lg italic leading-relaxed text-foreground/90 sm:text-[1.18rem]"
             style={{ borderColor: "var(--cyan)" }}
           >
             {hook[locale]}
@@ -119,7 +128,7 @@ function labelFor(
     canon: { vi: "Chính truyện", en: "Canon" },
     inference: { vi: "Suy luận", en: "Inference" },
     speculation: { vi: "Suy đoán", en: "Speculation" },
-    real_science: { vi: "KH thật", en: "Real sci" },
+    real_science: { vi: "Khoa học thật", en: "Real science" },
   };
   return map[kind][locale];
 }

@@ -18,13 +18,16 @@ interface AnatomyPlateProps {
   className?: string;
 }
 
-function pick(v: { vi: string; en: string } | string | undefined, loc: "vi" | "en") {
+function pick(
+  v: { vi: string; en: string } | string | undefined,
+  loc: "vi" | "en",
+) {
   if (!v) return undefined;
   return typeof v === "string" ? v : v[loc];
 }
 
 // A creature/structure plate with interactive hotspots. Hovering/focusing a
-// glowing node reveals its bilingual label + note — a naturalist's annotated
+// glowing node reveals its bilingual label + note - a naturalist's annotated
 // specimen drawing.
 export function AnatomyPlate({
   src,
@@ -58,7 +61,10 @@ export function AnatomyPlate({
           >
             <span
               className="block size-3 rounded-full transition-transform hover:scale-125"
-              style={{ background: "var(--cyan)", boxShadow: "0 0 12px 1px var(--cyan)" }}
+              style={{
+                background: "var(--cyan)",
+                boxShadow: "0 0 12px 1px var(--cyan)",
+              }}
             />
             {active === i && (
               <span className="absolute left-5 top-1/2 z-10 w-44 -translate-y-1/2 rounded-lg border border-border-strong bg-void/90 p-2.5 text-left backdrop-blur">

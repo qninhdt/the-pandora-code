@@ -13,10 +13,13 @@ interface TierState {
 
 // Decide whether to run the WebGL atmosphere or the 2D fallback. Starts
 // `pending` (renders nothing) so neither the canvas nor the poster flashes
-// before the device decision is made on mount — avoids the F5 image flash.
+// before the device decision is made on mount - avoids the F5 image flash.
 export function useAtmosphereTier(): TierState {
   const reduced = useReducedMotionSafe();
-  const [state, setState] = useState<TierState>({ tier: "pending", weaker: false });
+  const [state, setState] = useState<TierState>({
+    tier: "pending",
+    weaker: false,
+  });
 
   useEffect(() => {
     if (reduced) {

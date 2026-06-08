@@ -1,4 +1,5 @@
 import { type Locale, isLocale } from "@/i18n/config";
+import { getGlossaryCoverImage } from "@/lib/content/loader/glossary-cover";
 import { getGlossaryTerm, listGlossaryIds } from "@/lib/content/loader/glossary-loader";
 import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
@@ -19,9 +20,19 @@ export default async function GlossaryDetail({ params }: GlossaryDetailProps) {
   setRequestLocale(locale);
   const entry = getGlossaryTerm(term, locale as Locale);
   if (!entry) notFound();
+  const cover = getGlossaryCoverImage(term);
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-12 space-y-6">
+      {cover && (
+        <div className="relative -mt-4 mb-2 aspect-[16/9] w-full overflow-hidden rounded-2xl border border-[color:var(--border)]">
+          <img src={cover} alt="" className="size-full object-cover" />
+          <div
+            className="absolute inset-0"
+            style={{ background: "linear-gradient(to top, var(--background) 4%, transparent 55%)" }}
+          />
+        </div>
+      )}
       <p className="text-xs font-mono uppercase tracking-wide text-[color:var(--accent)]">
         {entry.category}
       </p>

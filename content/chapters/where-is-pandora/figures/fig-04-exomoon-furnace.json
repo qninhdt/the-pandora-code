@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-exomoon-furnace",
+  "chapter_slug": "where-is-pandora",
+  "role": "diagram",
+  "narrative_purpose": "Shows a moon heated from several sources at once - direct starlight, light reflected off its giant planet, the giant's own glow, and tidal heat cracking up from within.",
+  "subject": "A blue-green moon seen in space, lit unevenly from several directions. From the upper left, a hard white shaft of direct starlight strikes one limb. Behind and around it looms a huge banded gas giant whose cloudbands give off a warm soft glow that washes the moon's near side. Across the moon's own surface, glowing molten orange seams and cracks split the crust, radiating heat from inside.",
+  "scene": "The moon hangs close in front of the enormous gas giant that fills the background. Multiple light sources compete on the moon's surface: cold-white on one edge, warm-reflected on another, and self-emitted orange from the glowing fissures.",
+  "camera": "Medium space view with the moon large and central, the giant planet vast and close behind it.",
+  "light": "Three readable light sources: a hard white starlight beam from upper left, a broad warm glow from the gas giant behind, and orange self-illumination from the molten cracks on the moon itself.",
+  "palette": "Cool blue-green moon, warm cream-rust glow from the giant's bands, scarce ember-amber molten seams, void-indigo space.",
+  "style": "Painterly speculative-astronomy plate with strong directional lighting, NOT a labelled diagram.",
+  "detail_level": "Crisp on the moon's surface seams and terminator; the giant planet softer and atmospheric behind.",
+  "composition": "Moon centred and large; gas giant filling the background; the three light directions clearly distinguishable on the moon's sphere.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "watermark", "logos", "UI", "grid"],
+  "consistency_notes": "Same banded gas giant Polyphemus as the cover behind the moon. Warm accents (reflected glow + molten seams) kept scarce against the dominant cool palette.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no diagram chrome, no photographic or 3D-render look, no lens flares, no oversaturation",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/where-is-pandora/fig-00-cover.png"]
+}

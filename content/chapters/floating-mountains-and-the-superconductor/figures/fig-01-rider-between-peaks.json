@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-rider-between-peaks",
+  "chapter_slug": "floating-mountains-and-the-superconductor",
+  "role": "hero",
+  "narrative_purpose": "The cold-open image: a flying rider threading between two floating peaks at dawn, establishing the wrongness of rock that hangs where it should fall.",
+  "subject": "A tall blue-skinned humanoid figure riding on the back of a large winged flying creature (leathery bat-like wings, long tail, four limbs), shown small and in silhouette mid-flight. The rider crosses the open gap between two enormous floating islands of grey rock, each with sheer cliff sides and dense blue-green forest on its flat top.",
+  "scene": "Dawn above a white cloud deck. Thin waterfalls spill from the mesa tops and break into drifting mist before reaching anything below. Long hanging vines bridge the gap between the two peaks. A faint glowing mist in soft curving bands hangs around the lower rock.",
+  "camera": "Wide aerial shot; the rider is tiny against the towering scale of the two suspended mountains framing the gap.",
+  "light": "Low warm dawn light raking across the cliff faces from the right; cool blue-shadowed chasm in the centre gap; glow rising from the mist.",
+  "palette": "Deep blue chasm, blue-green lit canopy, cyan mist, warm amber rim light on the cliff edges.",
+  "style": "Painterly photorealistic concept art, strong sense of altitude and scale.",
+  "detail_level": "Crisp on the near peak and the rider-and-creature silhouette; atmospheric haze softening the far peak.",
+  "composition": "Two mountains at left and right framing a deep central gap of open sky; the rider on the lower-right thirds line crossing the void.",
+  "exclude": ["text", "watermark", "Earth birds", "modern aircraft", "closeup faces"],
+  "consistency_notes": "Grey weathered rock, blue-green canopy, cyan-teal glowing mist; the winged mount has four limbs plus two wings and a long tail.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no logos, no closeup human faces, no oversaturation, no lens-flare clutter",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/floating-mountains-and-the-superconductor/fig-00-cover.png"]
+}

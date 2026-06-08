@@ -1,0 +1,18 @@
+id: meissner-effect
+label:
+  vi: Hiệu ứng Meissner
+  en: Meissner effect
+definition:
+  vi: Việc một chất siêu dẫn chủ động đẩy toàn bộ từ trường ra khỏi lòng nó khi làm lạnh dưới nhiệt độ tới hạn (nghịch từ hoàn hảo). Lực đẩy này nâng được nam châm nhưng không tạo ổn định ngang - bản thân nó cho ra trạng thái bay không bền.
+  en: A superconductor actively expelling all magnetic field from its interior when cooled below its critical temperature (perfect diamagnetism). The repulsion can lift a magnet but gives no lateral stability - on its own it yields unstable levitation.
+see_also:
+  - superconductivity
+  - flux-pinning
+  - diamagnetism
+category: concept
+cover_prompt: >-
+  A polished superconducting disc cooled in vapor, lifting a small dark magnet
+  above its surface while smooth blue magnetic field lines are visibly expelled
+  outward and around the disc instead of entering it. The scene should read as
+  pure magnetic exclusion and perfect diamagnetism, in a clean laboratory
+  close-up with no labels.

@@ -7,8 +7,12 @@ describe("locale config", () => {
     expect(locales).toContain("en");
   });
 
-  it("defaults to vi", () => {
-    expect(defaultLocale).toBe("vi");
+  it("defaults to en", () => {
+    expect(defaultLocale).toBe("en");
+  });
+
+  it("lists en before vi", () => {
+    expect(locales[0]).toBe("en");
   });
 
   it("isLocale rejects unknown", () => {

@@ -1,4 +1,5 @@
 import type { Locale } from "@/i18n/config";
+import { Github } from "lucide-react";
 import Link from "next/link";
 
 interface SiteFooterProps {
@@ -7,7 +8,7 @@ interface SiteFooterProps {
   copyright: string;
 }
 
-// A quiet horizon at the foot of every page — a thin bioluminescent rule, the
+// A quiet horizon at the foot of every page - a thin bioluminescent rule, the
 // Bardabez byline, the in-world tagline, and the locale.
 export function SiteFooter({ locale, tagline, copyright }: SiteFooterProps) {
   const base = `/${locale}`;
@@ -28,7 +29,10 @@ export function SiteFooter({ locale, tagline, copyright }: SiteFooterProps) {
             <span
               aria-hidden
               className="size-2 rounded-full"
-              style={{ background: "var(--teal)", boxShadow: "0 0 10px 0 var(--teal)" }}
+              style={{
+                background: "var(--teal)",
+                boxShadow: "0 0 10px 0 var(--teal)",
+              }}
             />
             <span className="font-display text-sm font-600 text-foreground">Bardabez</span>
           </div>
@@ -42,6 +46,15 @@ export function SiteFooter({ locale, tagline, copyright }: SiteFooterProps) {
             <Link href={`${base}/glossary`} className="text-muted hover:text-foreground">
               Glossary
             </Link>
+            <a
+              href="https://github.com/qninhdt/the-pandora-code"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-muted hover:text-foreground"
+            >
+              <Github size={13} />
+              GitHub
+            </a>
           </div>
           <p className="tracking-wide">
             {copyright} · <span className="uppercase">{locale}</span>

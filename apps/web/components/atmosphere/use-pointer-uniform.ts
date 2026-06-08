@@ -9,7 +9,7 @@ export interface PointerTarget {
 }
 
 // Track the pointer as a normalized vec2 written to a ref (never triggers a
-// React re-render — the canvas reads it inside useFrame). On coarse pointers
+// React re-render - the canvas reads it inside useFrame). On coarse pointers
 // (touch), no listener is attached and the target slowly idles at center so the
 // field still breathes without input.
 export function usePointerUniform(): React.RefObject<PointerTarget> {

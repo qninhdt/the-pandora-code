@@ -1,0 +1,26 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "floating-mountains-and-the-superconductor",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative cover image: one iconic floating mountain that makes a reader want to open the chapter.",
+  "subject": "A single enormous island of grey stone floating in open sky. Its sides are sheer vertical cliffs of weathered rock; its flat top is covered in dense blue-green forest. From the underside hang long trailing curtains of vines and dangling roots. Nothing connects it to anything - empty air all around and below it.",
+  "scene": "High above a flat white cloud deck at dawn. Two or three much smaller floating rock islands sit far in the hazy distance behind the main one. A faint glowing mist, organised into soft curving bands, wreathes the lower rock as if the air itself carries a current.",
+  "camera": "Wide cinematic establishing shot from slightly below, looking up at the underside and cliff face of the suspended island so it towers over the viewer.",
+  "light": "Soft warm dawn sunlight striking from the left, rimming the cliff edges; cool blue shadow on the right faces; a gentle glowing fill rising from the mist below.",
+  "palette": "Deep blue sky shading to near-black at the top, grey rock, blue-green canopy, cyan and teal glow in the mist, a thin band of warm amber dawn light on the horizon.",
+  "style": "Painterly photorealistic concept art with strong atmospheric depth.",
+  "detail_level": "Crisp high detail on the near cliff face, vines, and forest edge; soft atmospheric haze fading the distant islands.",
+  "composition": "The floating island fills the upper two-thirds; the lower third is open sky and cloud to emphasise that nothing holds it up. Island placed on a rule-of-thirds line.",
+  "exclude": [
+    "text",
+    "watermark",
+    "people",
+    "spacecraft",
+    "Earth trees",
+    "birds"
+  ],
+  "consistency_notes": "Grey weathered rock, blue-green canopy on top, cyan-teal glowing mist around the base. This image defines the look every other floating-mountain scene in the chapter must match.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no logos, no humans, no modern machinery, no oversaturation, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

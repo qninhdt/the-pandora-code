@@ -13,7 +13,7 @@ const ROOT = process.cwd();
 const CHAPTERS_DIR = path.join(ROOT, "content", "chapters");
 const GLOSSARY_DIR = path.join(ROOT, "content", "glossary");
 
-// <GlossaryTerm ... slug="cooper-pair" ... /> — capture the slug attribute
+// <GlossaryTerm ... slug="cooper-pair" ... /> - capture the slug attribute
 // regardless of attribute order or quote style. The leading \s ensures we match
 // the standalone `slug` attribute, not a suffix like `data-slug`.
 const GLOSSARY_TAG = /<GlossaryTerm\b[^>]*?\sslug=("|')([a-z0-9][a-z0-9-]*)\1/g;
@@ -56,14 +56,19 @@ function referencesForChapter(slug: string): Reference[] {
   if (existsSync(metaPath)) {
     let meta: { glossary_terms?: unknown } | null;
     try {
-      meta = yaml.load(readFileSync(metaPath, "utf8")) as { glossary_terms?: unknown } | null;
+      meta = yaml.load(readFileSync(metaPath, "utf8")) as {
+        glossary_terms?: unknown;
+      } | null;
     } catch (err) {
-      fail(`Malformed YAML in ${slug}/meta.yaml: ${err instanceof Error ? err.message : err}`);
+      fail(
+        `Malformed YAML in ${slug}/meta.yaml: ${err instanceof Error ? err.message : err}`,
+      );
     }
     const terms = meta?.glossary_terms;
     if (Array.isArray(terms)) {
       for (const term of terms) {
-        if (typeof term === "string") refs.push({ term, source: `${slug}/meta.yaml` });
+        if (typeof term === "string")
+          refs.push({ term, source: `${slug}/meta.yaml` });
       }
     }
   }
@@ -115,7 +120,8 @@ function main(): void {
     );
     for (const [term, sources] of byTerm) {
       console.error(`  - "${term}" → define at content/glossary/${term}.yaml`);
-      for (const src of [...new Set(sources)]) console.error(`      used in ${src}`);
+      for (const src of [...new Set(sources)])
+        console.error(`      used in ${src}`);
     }
     console.error(
       `\nAdd the missing definition file(s), then re-run. Checked ${slugs.length} chapter(s), ${totalRefs} reference(s).\n`,
@@ -124,7 +130,7 @@ function main(): void {
   }
 
   console.log(
-    `[check-glossary] OK — ${slugs.length} chapter(s), ${totalRefs} reference(s), all defined.`,
+    `[check-glossary] OK - ${slugs.length} chapter(s), ${totalRefs} reference(s), all defined.`,
   );
 }
 

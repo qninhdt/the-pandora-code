@@ -1,0 +1,18 @@
+{
+  "id": "fig-10-quasicrystal-voids",
+  "chapter_slug": "floating-mountains-and-the-superconductor",
+  "role": "inline",
+  "narrative_purpose": "Extreme close-up of a mineral's internal structure: a glittering aperiodic lattice dotted with tiny empty holes, with glowing threads caught in the holes.",
+  "subject": "An extreme microscopic close-up of a crystalline mineral structure. The pattern is aperiodic with a star-like five-fold symmetry (pentagonal motifs, not a simple repeating square grid). Scattered throughout the lattice are many tiny dark empty holes. A few thin glowing threads pass through the structure and are caught, seated, inside some of the holes.",
+  "scene": "The lattice fills the entire frame, glittering, with the small holes and the seated glowing threads distributed across it.",
+  "camera": "Macro extreme close-up, as if under a microscope.",
+  "light": "Internal teal-cyan luminescence glinting off the lattice facets; the seated threads brighter than the lattice.",
+  "palette": "Dark mineral matrix, teal-cyan glints along the lattice, bright cyan threads seated in the dark holes.",
+  "style": "Semi-realistic scientific micrograph render with a schematic clarity.",
+  "detail_level": "High detail on the five-fold aperiodic lattice and the scattered holes; a few holes emphasized with seated threads.",
+  "composition": "Lattice fills the frame; two or three holes with seated glowing threads drawn slightly larger as focal points.",
+  "exclude": ["text", "watermark", "simple repeating square grid", "faceted gemstone", "jewelry"],
+  "consistency_notes": "Thread glow is the same cyan as the chapter's flux threads; lattice shows five-fold (pentagonal) aperiodic symmetry, not a periodic cubic grid.",
+  "aspect_ratio": "1:1",
+  "negative_prompt": "no text, no numbers, no faceted gemstone, no regular repeating cubic lattice, no oversaturation"
+}

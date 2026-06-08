@@ -1,4 +1,4 @@
-# STYLE BIBLE — The Pandora Code
+# STYLE BIBLE - The Pandora Code
 
 > Single source of truth for the visual language of every generated figure.
 > This block is prepended verbatim to every image prompt. The same hex palette
@@ -10,13 +10,13 @@
 ## Medium
 
 Original speculative-biology painterly illustration. Hand-painted naturalist
-plate energy — think a xenobiologist's field illustration of a real alien moon.
+plate energy - think a xenobiologist's field illustration of a real alien moon.
 
 NOT a film still. NOT a photograph. NOT a 3D render or game cinematic. NOT
 vector/flat-design. NOT concept-art splash with lens flares. Painterly, textured,
 observed-from-life confidence.
 
-## Palette (fixed hex — canonical)
+## Palette (fixed hex - canonical)
 
 Cool Pandora base (dominant, ~80% of every frame):
 
@@ -45,7 +45,7 @@ find first.
 - Bioluminescent key light: the brightest light sources are alive (glowing flora,
   fauna, spores, fungal networks), not the sun. Light emanates from within the
   scene's organisms.
-- Deep ambient shadow: rich, never muddy — shadows carry indigo and teal, not
+- Deep ambient shadow: rich, never muddy - shadows carry indigo and teal, not
   black.
 - Volumetric haze: atmospheric depth, god-rays through canopy/spore-fog, layered
   distance. Haze is part of the identity.
@@ -55,14 +55,16 @@ find first.
 ## Composition
 
 - Confident focal hierarchy: one clear subject, supporting depth layers.
-- Naturalist framing — the scene observed, not staged for drama.
+- Naturalist framing - the scene observed, not staged for drama.
 - Generous negative space of haze and shadow; let the bioluminescence breathe.
 
-## Global exclusions (negative — applies to every figure)
+## Global exclusions (negative - applies to every figure)
 
 - NO text, letters, numbers, captions, labels, watermarks, or signatures in the image.
 - NO Avatar (film) branding, logos, title treatments, or poster framing.
 - NO UI chrome, frames, borders, or HUD elements.
+- NO vector/flat-design, slide-deck infographic, textbook clip art, sterile CAD,
+  glossy app-icon style, or perfectly uniform digital strokes.
 - NO photographic or 3D-render look; no lens flares, no CGI plastic sheen.
 - NO modern Earth objects unless the chapter explicitly calls for human/RDA tech.
 

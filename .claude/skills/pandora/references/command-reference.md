@@ -5,7 +5,7 @@ Every `/pandora` command, its arguments, and exact behavior.
 ## `/pandora status`
 No args. Prints the full outline grouped by Part (book order) with each
 chapter's state (`published` / `drafted` / `has-research` / `pending`).
-Read-only — never mutates files. Source of order: `apps/web/lib/content/outline.ts`.
+Read-only - never mutates files. Source of order: `apps/web/lib/content/outline.ts`.
 
 ## `/pandora next`
 No args. Resolves the first non-published chapter, then:
@@ -16,7 +16,7 @@ No args. Resolves the first non-published chapter, then:
 
 ## `/pandora write <slug>`
 Arg: chapter slug (must exist in `outline.ts`). Runs the chain (steps 0–5) for
-that chapter. Hard error if `research/{slug}.md` is missing — does NOT fall back
+that chapter. Hard error if `research/{slug}.md` is missing - does NOT fall back
 to the research-prompt branch (use `next` for that) and never invents canon.
 
 ## `/pandora figure <id>`

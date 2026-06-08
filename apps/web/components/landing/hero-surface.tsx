@@ -1,15 +1,18 @@
 "use client";
 
+import { DecodeProgress } from "@/components/landing/decode-progress";
 import { useReducedMotionSafe } from "@/components/motion/use-reduced-motion-safe";
-import { FloatingMountainFallback } from "@/components/three/floating-mountain-fallback";
-import { FloatingMountainScene } from "@/components/three/floating-mountain-scene";
-import { Scene3D } from "@/components/three/scene-3d";
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import Link from "next/link";
 
+const HERO_VISTA = "/images/landing/hero-vista.png";
+
 interface HeroSurfaceProps {
-  eyebrow: string;
+  progressLabel: string;
+  progressCount: string;
+  chaptersDone: number;
+  chaptersTotal: number;
   title: string;
   intro: string;
   ctaChapters: string;
@@ -18,10 +21,15 @@ interface HeroSurfaceProps {
   glossaryHref: string;
 }
 
-// Full-screen opening. The title emerges from haze: blurred + faint + slightly
-// scaled, settling into focus. Under reduced motion it just appears.
+// Full-screen opening, built in depth layers: a painted Pandora vista at the
+// back, a bioluminescent aurora wash, grain, and a vignette for legibility. The
+// title emerges from haze - blurred + faint + slightly scaled, settling into
+// focus. Under reduced motion everything is still and the title simply appears.
 export function HeroSurface({
-  eyebrow,
+  progressLabel,
+  progressCount,
+  chaptersDone,
+  chaptersTotal,
   title,
   intro,
   ctaChapters,
@@ -40,63 +48,114 @@ export function HeroSurface({
         };
 
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center px-6 text-center">
-      {/* Living 3D backdrop — floating mountains drifting behind the title. */}
-      <Scene3D
-        className="absolute inset-0 -z-10"
-        fallback={<FloatingMountainFallback />}
-        camera={{ position: [0, 0, 6], fov: 55 }}
-      >
-        <FloatingMountainScene />
-      </Scene3D>
+    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 text-center">
+      {/* Layer 1 - painted establishing vista at the back. */}
+      <div aria-hidden className="absolute inset-0 -z-30">
+        <img
+          src={HERO_VISTA}
+          alt=""
+          className={`size-full object-cover ${reduced ? "" : "animate-ken-burns"}`}
+        />
+      </div>
 
-      <motion.p
-        {...rise(0.1)}
-        className="mb-6 font-sans text-xs uppercase tracking-[0.4em] text-cyan"
-      >
-        {eyebrow}
-      </motion.p>
+      {/* Layer 2 - bioluminescent aurora wash. */}
+      <div
+        aria-hidden
+        className={`pointer-events-none absolute inset-0 -z-20 ${reduced ? "" : "animate-aurora"}`}
+        style={{
+          background:
+            "radial-gradient(70% 55% at 22% 18%, color-mix(in oklab, var(--cyan) 26%, transparent), transparent 60%), radial-gradient(60% 50% at 82% 28%, color-mix(in oklab, var(--teal) 22%, transparent), transparent 60%), radial-gradient(50% 45% at 60% 92%, color-mix(in oklab, var(--magenta) 14%, transparent), transparent 60%)",
+        }}
+      />
 
-      <motion.h1
-        {...rise(0.25)}
-        className="max-w-4xl font-display text-5xl font-800 leading-[0.98] tracking-tight text-foreground sm:text-7xl lg:text-8xl"
-      >
-        {title}
-      </motion.h1>
+      {/* Layer 3 - vignette + blend into the void below, and a grain tooth. */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10"
+        style={{
+          background:
+            "radial-gradient(120% 80% at 50% 35%, transparent 45%, color-mix(in oklab, var(--void) 70%, transparent) 100%), linear-gradient(to bottom, color-mix(in oklab, var(--void) 35%, transparent) 0%, transparent 28%, transparent 62%, var(--void) 100%)",
+        }}
+      />
+      <div aria-hidden className="grain-overlay pointer-events-none absolute inset-0 -z-10" />
 
-      <motion.p
-        {...rise(0.5)}
-        className="mt-8 max-w-2xl font-serif text-lg leading-relaxed text-muted sm:text-xl"
-      >
-        {intro}
-      </motion.p>
+      {/* Content. */}
+      <div className="relative z-10 flex flex-col items-center">
+        <motion.div
+          {...rise(0.1)}
+          className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-border-strong/70 bg-void/40 px-4 py-1.5 backdrop-blur"
+        >
+          <span
+            className="size-1.5 shrink-0 rounded-full bg-cyan"
+            style={{ boxShadow: "0 0 10px 1px var(--cyan)" }}
+          />
+          <DecodeProgress
+            label={progressLabel}
+            countLabel={progressCount}
+            done={chaptersDone}
+            total={chaptersTotal}
+          />
+        </motion.div>
 
-      <motion.div {...rise(0.7)} className="mt-10 flex flex-wrap items-center justify-center gap-3">
-        <Link
-          href={chaptersHref}
-          className="group inline-flex items-center gap-2 rounded-full px-6 py-3 font-sans text-sm font-semibold text-void transition-transform hover:scale-[1.03]"
+        <motion.h1
+          {...rise(0.25)}
+          className="max-w-4xl bg-clip-text font-display text-5xl font-800 leading-[0.98] tracking-tight text-transparent sm:text-7xl lg:text-8xl"
           style={{
-            background: "linear-gradient(120deg, var(--cyan), var(--teal))",
-            boxShadow: "0 0 30px -6px color-mix(in oklab, var(--cyan) 70%, transparent)",
+            backgroundImage:
+              "linear-gradient(180deg, var(--foreground) 30%, var(--accent-soft) 80%, var(--cyan) 100%)",
+            filter: "drop-shadow(0 4px 40px color-mix(in oklab, var(--cyan) 35%, transparent))",
           }}
         >
-          {ctaChapters}
-          <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
-        </Link>
-        <Link
-          href={glossaryHref}
-          className="inline-flex items-center rounded-full border border-border-strong px-6 py-3 font-sans text-sm font-medium text-foreground transition-colors hover:bg-surface/60"
+          {title}
+        </motion.h1>
+
+        <motion.p
+          {...rise(0.5)}
+          className="mt-8 max-w-2xl font-serif text-lg leading-relaxed text-muted sm:text-xl"
         >
-          {ctaGlossary}
-        </Link>
-      </motion.div>
+          {intro}
+        </motion.p>
+
+        <motion.div
+          {...rise(0.7)}
+          className="mt-10 flex flex-wrap items-center justify-center gap-3"
+        >
+          <Link
+            href={chaptersHref}
+            className="group inline-flex items-center gap-2 rounded-full px-6 py-3 font-sans text-sm font-bold transition-transform hover:scale-[1.03]"
+            style={{
+              background: "linear-gradient(120deg, var(--cyan), var(--teal))",
+              color: "var(--void)",
+              boxShadow: "0 0 30px -6px color-mix(in oklab, var(--cyan) 70%, transparent)",
+            }}
+          >
+            {ctaChapters}
+            <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
+          </Link>
+          <Link
+            href={glossaryHref}
+            className="inline-flex items-center rounded-full border px-6 py-3 font-sans text-sm font-semibold backdrop-blur transition-colors hover:bg-surface/70"
+            style={{
+              color: "var(--foreground)",
+              borderColor: "color-mix(in oklab, var(--cyan) 45%, var(--border-strong))",
+              background: "color-mix(in oklab, var(--void) 55%, transparent)",
+            }}
+          >
+            {ctaGlossary}
+          </Link>
+        </motion.div>
+      </div>
 
       {/* Scroll cue */}
       <motion.div
         aria-hidden
-        className="absolute bottom-8 text-subtle"
+        className="absolute bottom-8 z-10 text-subtle"
         animate={reduced ? undefined : { y: [0, 8, 0] }}
-        transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+        transition={{
+          duration: 2,
+          repeat: Number.POSITIVE_INFINITY,
+          ease: "easeInOut",
+        }}
       >
         <ChevronDown size={22} />
       </motion.div>

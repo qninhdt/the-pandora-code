@@ -1,0 +1,17 @@
+id: speculation
+label:
+  vi: Suy đoán
+  en: Speculation
+definition:
+  vi: Trong cuốn sách này, tầng phân loại dành cho một mô hình hợp lý dựa trên một tiền đề chưa được xác nhận - được "cho phép" một lần, rồi buộc phải tuân thủ mọi định luật còn lại. Suy đoán có kỷ luật đổi đúng một biến số và bắt phần còn lại trả đủ giá (bảo toàn năng lượng, nhiệt động học, hóa học). Khi một thế giới bẻ một luật rồi tưởng mọi luật đều mất hiệu lực, suy đoán thoái hóa thành tưởng tượng.
+  en: In this book, the classification tier for a plausible model resting on an unconfirmed premise - granted once, then held to every remaining law. Disciplined speculation changes exactly one variable and makes the rest pay full price (energy conservation, thermodynamics, chemistry). When a world bends one rule and then assumes all rules are off, speculation rots into fantasy.
+see_also:
+  - abduction
+  - falsifiability
+category: concept
+cover_prompt: >-
+  A single small floating island held aloft by one bright luminous teal thread
+  to the dark sky, while ordinary waterfalls, rock layers, and a distant flying
+  creature around it behave normally under gravity. Convey one granted
+  impossibility surrounded by physics still obeyed in full, painterly and
+  literal, no text.

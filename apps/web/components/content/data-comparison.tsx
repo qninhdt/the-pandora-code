@@ -5,20 +5,44 @@ interface Stat {
   value: string;
   /** Optional secondary comparison value. */
   vs?: string;
+  /** Optional note when this is not a direct versus comparison. */
+  note?: string;
+  tone?: "cyan" | "teal" | "magenta" | "amber";
+}
+
+interface LegacyStatItem {
+  label: string;
+  value: string;
+  note?: string;
   tone?: "cyan" | "teal" | "magenta" | "amber";
 }
 
 interface DataComparisonProps {
-  stats: Stat[];
+  stats?: Stat[];
+  /** Legacy MDX shape kept for backward compatibility. */
+  items?: LegacyStatItem[];
+  locale?: "vi" | "en";
   className?: string;
 }
 
-// Quantitative stat grid — big glowing numbers with a label and optional
+// Quantitative stat grid - big glowing numbers with a label and optional
 // comparison value (e.g. Pandora vs Earth gravity). Used for at-a-glance data.
-export function DataComparison({ stats, className }: DataComparisonProps) {
+export function DataComparison({ stats, items, className }: DataComparisonProps) {
+  const normalizedStats: Stat[] =
+    stats ??
+    items?.map((item) => ({
+      label: item.label,
+      value: item.value,
+      note: item.note,
+      tone: item.tone,
+    })) ??
+    [];
+
+  if (normalizedStats.length === 0) return null;
+
   return (
     <div className={cn("my-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3", className)}>
-      {stats.map((s, i) => {
+      {normalizedStats.map((s, i) => {
         const c = `var(--${s.tone ?? "cyan"})`;
         return (
           <div
@@ -37,7 +61,8 @@ export function DataComparison({ stats, className }: DataComparisonProps) {
             >
               {s.value}
             </p>
-            {s.vs && (
+            {s.note && <p className="mt-1 font-sans text-xs text-muted">{s.note}</p>}
+            {!s.note && s.vs && (
               <p className="mt-1 font-sans text-xs text-muted">
                 vs <span className="text-foreground">{s.vs}</span>
               </p>

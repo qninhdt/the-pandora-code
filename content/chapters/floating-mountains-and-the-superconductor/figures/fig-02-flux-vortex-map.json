@@ -1,0 +1,18 @@
+{
+  "id": "fig-02-flux-vortex-map",
+  "chapter_slug": "floating-mountains-and-the-superconductor",
+  "role": "diagram",
+  "narrative_purpose": "Shows two planetary magnetic fields overlapping and concentrating into one bright vortex region above a cluster of floating mountains.",
+  "subject": "A flat schematic diagram. On the left, a large circle (a gas giant) with curved magnetic field lines looping out of its top and bottom like an iron-filing dipole pattern. On the right and lower, a smaller circle (a moon) with its own smaller set of looping field lines. Where the two sets of looping lines meet in the middle, the lines crowd together and spiral into a tight bright glowing knot. Directly beneath that glowing knot sits a small cluster of three or four little floating island shapes.",
+  "scene": "Empty dark space background. Only the two circles, their curved field lines, the bright spiral knot where they overlap, and the small island cluster below it.",
+  "camera": "Flat head-on schematic view, no perspective, no 3D.",
+  "light": "Flat even lighting; the field lines and the central spiral knot glow on their own.",
+  "palette": "Near-black background, thin glowing cyan field lines, teal for the second set of lines, a hot magenta-white core at the central spiral knot.",
+  "style": "Clean elegant infographic of thin glowing lines, like a vector schematic.",
+  "detail_level": "Smooth clean curved lines, a clearly denser glowing spiral at the overlap; everything else sparse.",
+  "composition": "Large circle upper-left, small circle right, the bright knot centred and slightly low, island cluster directly beneath it.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "photographic texture"],
+  "consistency_notes": "Thin glowing cyan/teal lines on a near-black background; this is the shared visual language for every schematic diagram in the chapter.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no letters, no numbers, no busy clutter, no photorealism, no 3D bevels, no drop shadows"
+}

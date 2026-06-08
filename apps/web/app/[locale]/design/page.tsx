@@ -15,17 +15,26 @@ export default async function DesignDebug({ params }: DesignDebugProps) {
   return (
     <main className="mx-auto max-w-4xl space-y-16 px-6 py-20">
       <header>
-        <h1 className="font-display text-4xl font-800 tracking-tight">Design system</h1>
-        <p className="mt-2 font-serif text-muted">Dark bioluminescent reference. Not in sitemap.</p>
+        <h1 className="font-display text-4xl font-800 tracking-tight">
+          Design system
+        </h1>
+        <p className="mt-2 font-serif text-muted">
+          Dark bioluminescent reference. Not in sitemap.
+        </p>
       </header>
 
       <Section title="Depth & surface">
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-          {["void", "abyss", "background", "surface", "surface-raised", "surface-overlay"].map(
-            (name) => (
-              <Swatch key={name} name={name} />
-            ),
-          )}
+          {[
+            "void",
+            "abyss",
+            "background",
+            "surface",
+            "surface-raised",
+            "surface-overlay",
+          ].map((name) => (
+            <Swatch key={name} name={name} />
+          ))}
         </div>
       </Section>
 
@@ -50,11 +59,12 @@ export default async function DesignDebug({ params }: DesignDebugProps) {
         <p className="font-display text-6xl font-800 tracking-tight">Pandora</p>
         <p className="mt-2 font-display text-3xl font-600">Display heading</p>
         <p className="mt-4 font-serif text-lg leading-relaxed text-muted">
-          Đây là một đoạn văn tiếng Việt với đầy đủ dấu: ăn, ằn, ấn, ẩn, ẵn, ặn, ã, ò, ờ, ở, ỡ, ợ,
-          ư, ữ, ự, đ — Spectral phục vụ phần thân bài dài, Be Vietnam Pro cho tiêu đề.
+          Đây là một đoạn văn tiếng Việt với đầy đủ dấu: ăn, ằn, ấn, ẩn, ẵn, ặn,
+          ã, ò, ờ, ở, ỡ, ợ, ư, ữ, ự, đ - Spectral phục vụ phần thân bài dài, Be
+          Vietnam Pro cho tiêu đề.
         </p>
         <p className="mt-3 font-sans text-sm text-subtle">
-          Inter — UI sans for labels, captions, and chrome.
+          Inter - UI sans for labels, captions, and chrome.
         </p>
       </Section>
 
@@ -83,10 +93,18 @@ export default async function DesignDebug({ params }: DesignDebugProps) {
   );
 }
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
+function Section({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
   return (
     <section>
-      <h2 className="mb-5 font-sans text-xs uppercase tracking-wider text-subtle">{title}</h2>
+      <h2 className="mb-5 font-sans text-xs uppercase tracking-wider text-subtle">
+        {title}
+      </h2>
       {children}
     </section>
   );

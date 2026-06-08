@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-system-orrery",
+  "chapter_slug": "where-is-pandora",
+  "role": "diagram",
+  "narrative_purpose": "Shows Pandora's address from outside: a moon hugging a gas giant that orbits a sun-like star, with the system's two other suns far off in the dark.",
+  "subject": "A view from deep space. A bright yellow-white star at left. At a distance from it, a banded gas giant planet (cream, rust and grey bands, one large eye-storm), with a small blue-green glowing moon close beside the giant. Far away in the black on the right, two faint distant suns: one small orange point and, much fainter, a tiny dim red point.",
+  "scene": "The silent dark of interplanetary space, dusted with faint stars. Soft lens-free starlight; the giant planet half-lit by the yellow star, its night side dark. The little moon catches both direct starlight and a faint reflected glow from the giant.",
+  "camera": "Wide, flat, almost diagrammatic space view from a great distance, everything seen side-on like an orrery laid out across the frame.",
+  "light": "The yellow star is the key light from the left; gentle rim light on the planet and moon; the two distant suns are faint glints only.",
+  "palette": "Void-indigo space, a warm yellow-white star, cream-and-rust planet bands, cyan-teal moon glow, one scarce orange and one faint red distant point.",
+  "style": "Painterly naturalist astronomical plate, soft and atmospheric, NOT a hard vector diagram and NOT a 3D render.",
+  "detail_level": "Moderate: clear shapes and spatial relationships, painterly texture, soft edges; no hard outlines.",
+  "composition": "Star far left, giant planet and its moon centre, the two faint distant suns far right - reading left to right as a spread-out system, with generous dark negative space.",
+  "exclude": ["text", "letters", "numbers", "labels", "orbit lines", "arrows", "watermark", "logos", "UI", "grid", "ruler marks"],
+  "consistency_notes": "Same banded gas giant Polyphemus as the cover. No drawn orbit lines or labels of any kind - this reads as a painted scene, not an annotated chart.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no orbit lines, no arrows, no grid, no diagram chrome, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/where-is-pandora/fig-00-cover.png"]
+}

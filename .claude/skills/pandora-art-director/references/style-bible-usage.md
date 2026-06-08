@@ -16,7 +16,7 @@ prompt before calling the image model. So:
   composition.
 
 Do not duplicate the bible's palette/medium into every figure's `palette` /
-`style` fields verbatim — reference the bible's intent and add only what's
+`style` fields verbatim - reference the bible's intent and add only what's
 figure-specific. The two must never contradict (a figure that asks for a look the
 bible forbids will read as off-brand).
 
@@ -38,10 +38,10 @@ Use anchors when:
 Each figure's `consistency_notes` field is where you tell the model what must
 stay stable (e.g. "same six-limbed body plan and queue as fig-02; bioluminescent
 markings cyan not magenta"). This is the per-figure complement to the global
-bible — use it to prevent drift between a chapter's own figures.
+bible - use it to prevent drift between a chapter's own figures.
 
 ## If the bible needs a change
 
-The bible is global — changing it affects every future image. Treat edits as a
+The bible is global - changing it affects every future image. Treat edits as a
 deliberate, project-level decision, not a per-chapter tweak. Per-chapter needs
 belong in figure JSON / consistency notes, not the bible.

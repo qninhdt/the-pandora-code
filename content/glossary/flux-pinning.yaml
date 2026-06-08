@@ -1,0 +1,18 @@
+id: flux-pinning
+label:
+  vi: Ghim từ thông
+  en: Flux pinning
+definition:
+  vi: Cơ chế trong chất siêu dẫn loại II khiến các ống từ thông lượng tử (xoáy Abrikosov) bị "ghim" tại các khuyết tật của mạng tinh thể, khóa cứng vật trong không gian ba chiều. Đây mới là nguyên nhân của lơ lửng ổn định - khác với hiệu ứng Meissner đơn thuần.
+  en: A mechanism in type-II superconductors where quantized flux tubes (Abrikosov vortices) become trapped at lattice defects, rigidly locking the object in three-dimensional space. This - not the Meissner effect alone - is what produces stable levitation.
+see_also:
+  - type-ii-superconductor
+  - meissner-effect
+  - quantum-locking
+category: concept
+cover_prompt: >-
+  A chilled black superconducting disc locked rigidly above a narrow magnetic
+  track, viewed at a slight angle, with thin luminous blue flux tubes piercing
+  the disc and pinning to tiny defects inside it. The object must look frozen
+  in space with absolute stability, showing the physical locking mechanism
+  clearly and literally, no text.

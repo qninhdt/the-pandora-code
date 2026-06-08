@@ -1,0 +1,18 @@
+{
+  "id": "fig-02-the-gap",
+  "chapter_slug": "reading-pandora-as-a-specimen",
+  "role": "diagram",
+  "narrative_purpose": "Shows the chasm between what canon establishes and what it never could, with a reasoned span across it - the visual of inference reaching the far side versus stopping short.",
+  "subject": "Two solid flat-topped cliffs of glowing stone facing each other across a wide dark chasm. The left cliff edge and the right cliff edge are both bright and solid. Spanning the gap between them is a bridge made of evenly spaced short glowing dashes that start at the left edge and march across toward the right edge, the dashes growing fainter near the middle but continuing to reach and touch the far right cliff.",
+  "scene": "A deep near-black void below the chasm, faint drifting mist in the gap; nothing else in frame but the two cliffs and the dashed span between them.",
+  "camera": "Flat head-on side elevation, both cliffs and the span seen in profile.",
+  "light": "Flat even; the cliffs and dashes glow on their own against the dark; the two solid cliff edges brightest, the mid-span dashes dimmest.",
+  "palette": "Near-black background, glowing cyan solid cliffs, teal dashed span, faint indigo mist in the chasm.",
+  "style": "Clean elegant schematic of glowing solid shapes and dashed lines, no realism.",
+  "detail_level": "Crisp solid cliff edges; clearly separated dashes of even spacing across the gap; soft mist only.",
+  "composition": "Symmetric: left cliff and right cliff at the frame edges, the dashed span centered between them, open dark space above and below.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "photographic texture", "people", "question marks"],
+  "consistency_notes": "Glowing cyan and teal lines on near-black, matching the book's schematic diagram language; solid means established, dashes mean reasoned across.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no numbers, no symbols, no photorealism, no 3D bevels, no clutter, no broken or missing far side"
+}

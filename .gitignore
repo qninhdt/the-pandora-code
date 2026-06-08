@@ -40,13 +40,9 @@ yarn.lock
 # semantic-release
 .nyc_output
 
-# env files — never commit secrets (OPENAI_API_KEY, OPENAI_BASE_URL)
+# env files - never commit secrets (OPENAI_API_KEY, OPENAI_BASE_URL)
 .env*
 !.env.example
-
-# Pasted Deep Research results are local-only; generated prompts are tracked
-research/*.md
-!research/*.prompt.md
 
 # vercel
 .vercel
@@ -104,3 +100,5 @@ external/
 
 # Git worktrees (local development only)
 worktrees/
+
+.kiro

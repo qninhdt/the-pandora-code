@@ -1,7 +1,11 @@
 "use client";
 
 import { AnatomyPlate } from "@/components/content/anatomy-plate";
-import { Callout, ScientificNote, SideNote } from "@/components/content/callout";
+import {
+  Callout,
+  ScientificNote,
+  SideNote,
+} from "@/components/content/callout";
 import { Chart } from "@/components/content/chart";
 import { Comparison } from "@/components/content/comparison";
 import { ConfidenceMeter } from "@/components/content/confidence-meter";
@@ -38,10 +42,18 @@ const classification = {
   real_science_pct: 30,
 };
 
-function Block({ label, children }: { label: string; children: React.ReactNode }) {
+function Block({
+  label,
+  children,
+}: {
+  label: string;
+  children: React.ReactNode;
+}) {
   return (
     <div className="space-y-2">
-      <p className="font-sans text-[0.6rem] uppercase tracking-[0.2em] text-subtle">{label}</p>
+      <p className="font-sans text-[0.6rem] uppercase tracking-[0.2em] text-subtle">
+        {label}
+      </p>
       {children}
     </div>
   );
@@ -51,7 +63,7 @@ function Block({ label, children }: { label: string; children: React.ReactNode }
 export function ComponentShowcase() {
   return (
     <div className="space-y-10">
-      <Block label="Scene3D — FloatingMountainScene (3D / 2D fallback)">
+      <Block label="Scene3D - FloatingMountainScene (3D / 2D fallback)">
         <Scene3D
           className="relative h-72 overflow-hidden rounded-2xl border border-border"
           fallback={<FloatingMountainFallback />}
@@ -61,7 +73,7 @@ export function ComponentShowcase() {
         </Scene3D>
       </Block>
 
-      <Block label="Scene3D — FieldViz (magnetic flux)">
+      <Block label="Scene3D - FieldViz (magnetic flux)">
         <Scene3D
           className="relative h-64 overflow-hidden rounded-2xl border border-border"
           fallback={<FieldVizFallback />}
@@ -71,18 +83,23 @@ export function ComponentShowcase() {
         </Scene3D>
       </Block>
 
-      <Block label="Chart — line (Recharts, themed)">
+      <Block label="Chart - line (Recharts, themed)">
         <Chart
           kind="line"
           data={resistanceData}
           xKey="t"
           series={[{ key: "r", tone: "cyan" }]}
-          caption="Điện trở theo nhiệt độ — siêu dẫn về 0 dưới ngưỡng tới hạn."
+          caption="Điện trở theo nhiệt độ - siêu dẫn về 0 dưới ngưỡng tới hạn."
         />
       </Block>
 
-      <Block label="Chart — bar">
-        <Chart kind="bar" data={resistanceData} xKey="t" series={[{ key: "r", tone: "teal" }]} />
+      <Block label="Chart - bar">
+        <Chart
+          kind="bar"
+          data={resistanceData}
+          xKey="t"
+          series={[{ key: "r", tone: "teal" }]}
+        />
       </Block>
 
       <Block label="Figure (bilingual caption)">
@@ -118,9 +135,16 @@ export function ComponentShowcase() {
               x: 30,
               y: 38,
               label: { vi: "Mạch unobtanium", en: "Unobtanium vein" },
-              note: { vi: "Vùng siêu dẫn tạo lực nâng.", en: "Superconducting lift zone." },
+              note: {
+                vi: "Vùng siêu dẫn tạo lực nâng.",
+                en: "Superconducting lift zone.",
+              },
             },
-            { x: 64, y: 60, label: { vi: "Rễ phát quang", en: "Glowing roots" } },
+            {
+              x: 64,
+              y: 60,
+              label: { vi: "Rễ phát quang", en: "Glowing roots" },
+            },
           ]}
         />
       </Block>
@@ -139,7 +163,12 @@ export function ComponentShowcase() {
       <Block label="DataComparison / StatGrid">
         <DataComparison
           stats={[
-            { label: "Trọng lực", value: "0.8 g", vs: "Trái Đất 1 g", tone: "cyan" },
+            {
+              label: "Trọng lực",
+              value: "0.8 g",
+              vs: "Trái Đất 1 g",
+              tone: "cyan",
+            },
             { label: "O₂ khí quyển", value: "18%", vs: "21%", tone: "teal" },
             { label: "Ngày", value: "26 h", tone: "amber" },
           ]}
@@ -156,7 +185,10 @@ export function ComponentShowcase() {
             title: "Pandora",
             children: "Núi bay nhờ siêu dẫn unobtanium trong từ trường mạnh.",
           }}
-          right={{ title: "Trái Đất", children: "Tàu maglev nâng nhờ cùng nguyên lý nghịch từ." }}
+          right={{
+            title: "Trái Đất",
+            children: "Tàu maglev nâng nhờ cùng nguyên lý nghịch từ.",
+          }}
         />
       </Block>
 
@@ -164,7 +196,9 @@ export function ComponentShowcase() {
         <Callout variant="note" title="Ghi chú">
           Một khối nhấn mạnh nội tuyến.
         </Callout>
-        <ScientificNote title="Khoa học">Hiệu ứng nghịch từ hoàn hảo.</ScientificNote>
+        <ScientificNote title="Khoa học">
+          Hiệu ứng nghịch từ hoàn hảo.
+        </ScientificNote>
         <Callout variant="insight" title="Insight">
           Mồi nhử Pandora dẫn tới bài học thật.
         </Callout>
@@ -173,20 +207,32 @@ export function ComponentShowcase() {
 
       <Block label="Quote">
         <Quote cite="Bardabez">
-          Pandora không phải đích đến — nó là tấm gương soi chính khoa học của ta.
+          Pandora không phải đích đến - nó là tấm gương soi chính khoa học của
+          ta.
         </Quote>
       </Block>
 
       <Block label="WhatThisMeans">
-        <WhatThisMeans>Núi bay là cách kể trực quan về siêu dẫn và bẫy từ thông.</WhatThisMeans>
+        <WhatThisMeans>
+          Núi bay là cách kể trực quan về siêu dẫn và bẫy từ thông.
+        </WhatThisMeans>
       </Block>
 
       <Block label="ScrollSequence">
         <ScrollSequence
           steps={[
-            { title: "Làm lạnh dưới ngưỡng", body: "Unobtanium trở thành siêu dẫn loại II." },
-            { title: "Bẫy từ thông", body: "Từ trường bị ghim, khóa vị trí khối đá." },
-            { title: "Lơ lửng ổn định", body: "Núi treo cố định chứ không chỉ nổi." },
+            {
+              title: "Làm lạnh dưới ngưỡng",
+              body: "Unobtanium trở thành siêu dẫn loại II.",
+            },
+            {
+              title: "Bẫy từ thông",
+              body: "Từ trường bị ghim, khóa vị trí khối đá.",
+            },
+            {
+              title: "Lơ lửng ổn định",
+              body: "Núi treo cố định chứ không chỉ nổi.",
+            },
           ]}
         />
       </Block>
@@ -195,7 +241,12 @@ export function ComponentShowcase() {
         <Timeline
           events={[
             { id: "1", date: "Part I", title: "Thế giới", kind: "canon" },
-            { id: "2", date: "1.5", title: "Núi bay & siêu dẫn", kind: "real_science" },
+            {
+              id: "2",
+              date: "1.5",
+              title: "Núi bay & siêu dẫn",
+              kind: "real_science",
+            },
           ]}
         />
       </Block>
@@ -203,9 +254,15 @@ export function ComponentShowcase() {
       <Block label="OpenQuestions">
         <OpenQuestions
           title="Câu hỏi mở"
-          questions={[
-            "Unobtanium siêu dẫn ở nhiệt độ phòng bằng cơ chế nào?",
-            "Từ trường Pandora đủ mạnh để nâng cả ngọn núi không?",
+          items={[
+            {
+              question: "Unobtanium siêu dẫn ở nhiệt độ phòng bằng cơ chế nào?",
+              answer:
+                "Canon không nói rõ; siêu dẫn ở nhiệt độ phòng vẫn là điều khoa học Trái Đất chưa đạt được.",
+            },
+            {
+              question: "Từ trường Pandora đủ mạnh để nâng cả ngọn núi không?",
+            },
           ]}
         />
       </Block>

@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-radiation-belts",
+  "chapter_slug": "where-is-pandora",
+  "role": "diagram",
+  "narrative_purpose": "Shows the gas giant's trapped-radiation belts as two glowing rings, with the small moon riding the calm dark gap between them - the shelter that lets it keep its air.",
+  "subject": "A banded gas giant planet at centre, encircled by two concentric glowing doughnut-shaped belts of charged particles - luminous cyan-and-magenta torus rings tilted in perspective around the planet's equator. Between the two glowing belts lies a darker, calmer gap, and riding in that gap is a small blue-green moon.",
+  "scene": "Space around the giant planet, the two radiation belts shimmering like aurora rendered as ring-shaped clouds of fine glowing particles. The gap between them is notably darker and quieter. The small moon sits clearly within that dark gap.",
+  "camera": "Three-quarter view from slightly above the planet's equatorial plane so the two ring-belts read as nested tori.",
+  "light": "The belts self-glow (cyan with scarce magenta flecks); the planet lit softly from one side by a distant star; the moon catches faint light in the dark gap.",
+  "palette": "Cyan and living-teal glowing belts with scarce biolum-magenta sparks, cream-rust planet bands, void-indigo space, a cool blue-green moon.",
+  "style": "Painterly astronomical plate, the belts like fine luminous particle clouds, NOT hard vector rings and NOT a labelled diagram.",
+  "detail_level": "Soft glowing particle texture in the belts; crisp little moon in the gap; atmospheric planet.",
+  "composition": "Planet centred; two nested glowing tori around it; a clearly darker gap between them with the small moon placed unmistakably inside that gap.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "watermark", "logos", "UI", "grid", "orbit lines"],
+  "consistency_notes": "Same banded gas giant Polyphemus as the cover. The dark calm gap between the two belts, and the moon sitting in it, must be the most readable relationship in the image - achieved purely visually, no labels.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no orbit lines, no diagram chrome, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/where-is-pandora/fig-00-cover.png"]
+}

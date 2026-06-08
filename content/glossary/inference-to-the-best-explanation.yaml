@@ -1,0 +1,16 @@
+id: inference-to-the-best-explanation
+label:
+  vi: Suy luận tới lời giải thích tốt nhất
+  en: Inference to the best explanation
+definition:
+  vi: "Phiên bản được Gilbert Harman tinh chỉnh từ suy luận hồi tố: trước nhiều giả thuyết cùng giải thích một dữ kiện, ta chọn giả thuyết giải thích tốt nhất. Tốt nhất được cân theo bộ tiêu chí - khả kiểm chứng, phạm vi bao quát, tính bảo thủ (hợp với hiểu biết đã vững), và tính giản đơn (dao cạo Occam). Thiếu các tiêu chí này, tốt nhất tụt xuống thành cái tôi thích nhất."
+  en: "Gilbert Harman's sharpened form of abduction: among rival hypotheses that explain the same fact, accept the one that explains it best. Best is weighed by criteria - testability, scope, conservatism (fitting what we already have strong reason to believe), and simplicity (Occam's razor). Without those criteria, best collapses into the one I happen to like."
+see_also:
+  - abduction
+  - occams-razor
+category: concept
+cover_prompt: >-
+  Three translucent glowing diagrams hovering side by side over a dark indigo
+  surface, two dim and tangled, the third clean and bright in teal light, with
+  a soft cyan beam selecting the brightest one. Convey choosing the strongest
+  explanation from competing options, painterly and literal, no text or labels.

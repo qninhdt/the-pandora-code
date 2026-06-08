@@ -1,8 +1,10 @@
 import { DiagonalBreak } from "@/components/codex/diagonal-break";
+import { ClosingCall } from "@/components/landing/closing-call";
 import { type BrowserPart, CodexBrowser } from "@/components/landing/codex-browser";
 import { DescentSection } from "@/components/landing/descent-section";
 import { HeroSurface } from "@/components/landing/hero-surface";
 import { type Locale, isLocale } from "@/i18n/config";
+import { getChapterCoverImage } from "@/lib/content/loader/cover-image";
 import { getOutlineWithStatus } from "@/lib/content/outline";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -28,13 +30,24 @@ export default async function Home({ params }: HomeProps) {
       payload: c.payload[loc],
       plateNo: c.plateNo,
       published: c.published,
+      coverSrc: c.published ? getChapterCoverImage(c.slug) : undefined,
     })),
   }));
+
+  const allChapters = parts.flatMap((p) => p.chapters);
+  const chaptersTotal = allChapters.length;
+  const chaptersDone = allChapters.filter((c) => c.published).length;
 
   return (
     <>
       <HeroSurface
-        eyebrow={t("site.name")}
+        progressLabel={t("home.decoding")}
+        progressCount={t("home.decodingChapters", {
+          done: chaptersDone,
+          total: chaptersTotal,
+        })}
+        chaptersDone={chaptersDone}
+        chaptersTotal={chaptersTotal}
         title={t("home.title")}
         intro={t("home.intro")}
         ctaChapters={t("home.ctaChapters")}
@@ -50,13 +63,25 @@ export default async function Home({ params }: HomeProps) {
         note={t("landing.descentNote")}
       />
 
-      <DiagonalBreak tone="cyan" />
+      {/* <DiagonalBreak tone="cyan" /> */}
 
       <CodexBrowser
         kicker={t("landing.codexKicker")}
         heading={t("landing.codexHeading")}
         comingLabel={t("landing.coming")}
         parts={parts}
+      />
+
+      {/* <DiagonalBreak tone="teal" flip /> */}
+
+      <ClosingCall
+        kicker={t("landing.closingKicker")}
+        heading={t("landing.closingHeading")}
+        body={t("landing.closingBody")}
+        cta={t("home.ctaChapters")}
+        secondaryCta={t("nav.glossary")}
+        chaptersHref={`/${loc}/chapters`}
+        glossaryHref={`/${loc}/glossary`}
       />
     </>
   );

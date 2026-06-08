@@ -13,9 +13,14 @@ interface GlowPulseProps {
   className?: string;
 }
 
-// A slow bioluminescent breathe — drifting drop-shadow bloom on living elements
+// A slow bioluminescent breathe - drifting drop-shadow bloom on living elements
 // (glowing icons, hero accents). Static glow under prefers-reduced-motion.
-export function GlowPulse({ children, color = "cyan", duration = 4.5, className }: GlowPulseProps) {
+export function GlowPulse({
+  children,
+  color = "cyan",
+  duration = 4.5,
+  className,
+}: GlowPulseProps) {
   const reduced = useReducedMotionSafe();
   const c = `var(--${color})`;
   const soft = `drop-shadow(0 0 6px color-mix(in oklab, ${c} 40%, transparent))`;
@@ -34,7 +39,11 @@ export function GlowPulse({ children, color = "cyan", duration = 4.5, className 
       className={className}
       initial={{ filter: soft }}
       animate={{ filter: [soft, bright, soft] }}
-      transition={{ duration, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+      transition={{
+        duration,
+        repeat: Number.POSITIVE_INFINITY,
+        ease: "easeInOut",
+      }}
     >
       {children}
     </motion.div>

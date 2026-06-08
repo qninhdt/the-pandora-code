@@ -2,7 +2,7 @@ import type { ClassificationKind } from "@/lib/content/schemas/shared";
 import { cn } from "@/lib/utils";
 
 // Built fresh for the dark bioluminescent system. Each tier glows in its own
-// hue — a tiny dot of "living light" plus a soft outer bloom — so the four
+// hue - a tiny dot of "living light" plus a soft outer bloom - so the four
 // epistemic tiers read at a glance against the void without shouting.
 
 const labelMap: Record<ClassificationKind, { vi: string; en: string }> = {
@@ -27,7 +27,12 @@ interface CanonBadgeProps {
   children?: React.ReactNode;
 }
 
-export function CanonBadge({ kind, locale = "vi", className, children }: CanonBadgeProps) {
+export function CanonBadge({
+  kind,
+  locale = "vi",
+  className,
+  children,
+}: CanonBadgeProps) {
   const c = `var(${tierVar[kind]})`;
   return (
     <span

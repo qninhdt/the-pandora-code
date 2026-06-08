@@ -1,5 +1,5 @@
 // 2D atmosphere for low-power devices and prefers-reduced-motion. Pure CSS +
-// the style-anchor poster — no canvas, no JS animation loop. Drifting motes use
+// the style-anchor poster - no canvas, no JS animation loop. Drifting motes use
 // a CSS keyframe that is disabled under reduced motion (see globals.css).
 
 export function AtmosphereFallback() {
@@ -8,7 +8,9 @@ export function AtmosphereFallback() {
       {/* Establishing-shot poster, deeply darkened so text stays readable. */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-[0.18]"
-        style={{ backgroundImage: "url(/images/atmosphere/pandora-establishing.png)" }}
+        style={{
+          backgroundImage: "url(/images/atmosphere/pandora-establishing.png)",
+        }}
       />
       {/* Bioluminescent glow blooms. */}
       <div
@@ -24,7 +26,8 @@ export function AtmosphereFallback() {
       <div
         className="absolute inset-0"
         style={{
-          background: "radial-gradient(120% 100% at 50% 40%, transparent 55%, var(--void) 100%)",
+          background:
+            "radial-gradient(120% 100% at 50% 40%, transparent 55%, var(--void) 100%)",
         }}
       />
     </div>

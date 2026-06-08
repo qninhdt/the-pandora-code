@@ -1,0 +1,16 @@
+id: falsifiability
+label:
+  vi: Tính khả phủ định
+  en: Falsifiability
+definition:
+  vi: "Tiêu chí của Karl Popper để một tuyên bố được coi là khoa học: nó phải đưa ra dự đoán mạo hiểm, kiểm chứng được, và về nguyên tắc có thể bị quan sát thực nghiệm chứng minh là sai. Thuyết tương đối rộng dự đoán ánh sáng bẻ cong quanh Mặt Trời - một canh bạc có thể sai và đã được kiểm chứng năm 1919; một lý thuyết mà không quan sát nào có thể bác bỏ thì chẳng nói lên điều gì."
+  en: "Karl Popper's criterion for a claim to count as scientific: it must make a risky, checkable prediction and could, in principle, be proven wrong by observation. General relativity predicted starlight bending around the Sun - a bet that could have failed and was tested in 1919; a theory no observation could ever refute tells you nothing."
+see_also:
+  - demarcation-problem
+category: concept
+cover_prompt: >-
+  A single luminous teal forking path on a dark indigo field: one branch leads
+  to a softly glowing checkmark sphere and the other to an extinguished dark
+  sphere, with a thin bioluminescent line tracing a risky prediction toward the
+  fork. Convey a testable bet that could go either way, painterly and literal,
+  no text or symbols.

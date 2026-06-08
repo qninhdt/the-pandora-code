@@ -1,6 +1,6 @@
 import { Be_Vietnam_Pro, Inter, Spectral } from "next/font/google";
 
-// Display face — headings, hero titles, the book's visual identity. Built for
+// Display face - headings, hero titles, the book's visual identity. Built for
 // Vietnamese (the default locale) with heavy weights for display impact.
 export const beVietnamPro = Be_Vietnam_Pro({
   variable: "--font-display",
@@ -9,7 +9,7 @@ export const beVietnamPro = Be_Vietnam_Pro({
   display: "swap",
 });
 
-// Long-form body — a screen-tuned serif for 5–7k-word chapters. Spectral has
+// Long-form body - a screen-tuned serif for 5–7k-word chapters. Spectral has
 // full Vietnamese diacritic coverage and reads comfortably at body sizes.
 export const spectral = Spectral({
   variable: "--font-serif",
@@ -19,7 +19,7 @@ export const spectral = Spectral({
   display: "swap",
 });
 
-// UI sans — chrome, labels, badges, captions. Inter for crisp small text with
+// UI sans - chrome, labels, badges, captions. Inter for crisp small text with
 // full Vietnamese coverage.
 export const inter = Inter({
   variable: "--font-sans",

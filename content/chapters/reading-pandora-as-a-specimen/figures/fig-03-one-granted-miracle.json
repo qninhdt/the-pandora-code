@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-one-granted-miracle",
+  "chapter_slug": "reading-pandora-as-a-specimen",
+  "role": "inline",
+  "narrative_purpose": "Makes disciplined speculation visible: exactly one impossibility is granted (the island held up by a single thread) while everything else around it obeys ordinary physics.",
+  "subject": "A single modest floating island of grey rock topped with blue-green forest, suspended in open sky. One bright luminous teal thread runs straight up from the top of the island into the sky above, clearly the only thing holding it aloft. Everything else behaves normally: a waterfall pours off the island edge and falls straight down under gravity into the haze below; the rock strata sit in level horizontal bands; a single winged creature glides on an ordinary downward-curving flight path nearby.",
+  "scene": "A calm dawn sky with a low cloud deck far below; gentle distance haze; the lone island centered with empty sky around it to stress that only the one thread holds it.",
+  "camera": "Wide three-quarter view from slightly below, the island and its single supporting thread filling the upper middle.",
+  "light": "Soft cool dawn ambient; the one supporting thread glows brightest as the deliberate focal accent; everything else lit naturally.",
+  "palette": "Deep blue sky, grey rock, blue-green canopy, cyan-teal water glow, a single bright teal thread; warm amber only as a thin dawn rim on the horizon.",
+  "style": "Painterly photoreal concept illustration with atmospheric depth.",
+  "detail_level": "Crisp island, waterfall, and creature; soft haze on the distant cloud deck.",
+  "composition": "Island upper-center, the single glowing thread rising vertically from it, generous open sky framing it; waterfall trailing down the lower third.",
+  "exclude": ["text", "watermark", "multiple support threads", "cables", "pillars", "people", "spacecraft", "Earth trees"],
+  "consistency_notes": "Grey weathered rock with blue-green canopy and cyan-teal glow matching the book's floating-mountain look; exactly ONE luminous thread, never more.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no logos, no extra support lines, no upward-falling water, no tilted rock strata, no cartoon style, no oversaturation",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/reading-pandora-as-a-specimen/fig-00-cover.png"]
+}

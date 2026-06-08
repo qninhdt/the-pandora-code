@@ -1,4 +1,4 @@
-// 2D fallback for the FieldViz flux visualization — concentric glowing rings
+// 2D fallback for the FieldViz flux visualization - concentric glowing rings
 // suggesting a magnetic field, shown on low-power / reduced-motion devices and
 // before the 3D scene mounts. Pure CSS, no animation loop.
 export function FieldVizFallback() {
@@ -25,7 +25,10 @@ export function FieldVizFallback() {
       ))}
       <div
         className="size-3 rounded-full"
-        style={{ background: "var(--cyan)", boxShadow: "0 0 16px 2px var(--cyan)" }}
+        style={{
+          background: "var(--cyan)",
+          boxShadow: "0 0 16px 2px var(--cyan)",
+        }}
       />
     </div>
   );

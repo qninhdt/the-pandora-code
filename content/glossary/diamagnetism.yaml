@@ -1,0 +1,17 @@
+id: diamagnetism
+label:
+  vi: Nghịch từ
+  en: Diamagnetism
+definition:
+  vi: Xu hướng của vật chất đẩy nhẹ từ trường ra do chuyển động quỹ đạo của electron. Ở vật thường (than chì nhiệt phân, nước, mô sống) lực này cực yếu, cần từ trường rất mạnh để nâng; chất siêu dẫn là nghịch từ hoàn hảo nên nâng được trong từ trường yếu.
+  en: The tendency of matter to weakly repel a magnetic field, arising from electron orbital motion. In ordinary materials (pyrolytic graphite, water, living tissue) it is extremely weak and needs huge fields to levitate; a superconductor is a perfect diamagnet, levitating even in weak fields.
+see_also:
+  - meissner-effect
+  - superconductivity
+category: concept
+cover_prompt: >-
+  A macro laboratory scene of a thin square of pyrolytic graphite levitating a
+  few millimeters above four dark magnets, with magnetic field lines bending
+  gently away from the material instead of passing through it. The effect
+  should look delicate and real, emphasizing weak repulsion rather than
+  spectacle, with no text or diagram labels.

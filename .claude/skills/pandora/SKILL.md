@@ -1,6 +1,6 @@
 ---
 name: pandora
-description: Single entry point for producing chapters of The Pandora Code interactive book. Drives the whole pipeline — research prompt → write EN → figures → images → translate VI → validate — with exactly one manual stop (paste research). Auto-routes to sub-skills; never invents canon.
+description: Single entry point for producing chapters of The Pandora Code interactive book. Drives the whole pipeline - research prompt → write EN → figures → images → translate VI → validate - with exactly one manual stop (paste research). Auto-routes to sub-skills; never invents canon.
 triggers:
   - pandora
   - pandora next
@@ -12,11 +12,11 @@ metadata:
   type: project-skill
 ---
 
-# /pandora — The Pandora Code Pipeline
+# /pandora - The Pandora Code Pipeline
 
 The one command that turns the chapter outline into a finished, bilingual,
 illustrated chapter. You only ever type `/pandora …`. This skill routes to the
-sub-skills internally — never load a sub-skill by hand.
+sub-skills internally - never load a sub-skill by hand.
 
 ## Mission (read every run)
 
@@ -24,23 +24,23 @@ The Pandora Code is **not a wiki**. Pandora is the bait; real STEM is the meal.
 Every chapter ships two payloads: a deeper read of Avatar/Pandora/the Na'vi, AND
 a real, verifiable Earth-science concept the reader carries away. A chapter that
 only describes Pandora is incomplete; one that only lectures is wrong. Weave the
-science in subtly — it should feel like the natural next sentence, never homework.
+science in subtly - it should feel like the natural next sentence, never homework.
 
 ## Commands
 
-| Command | What it does |
-|---|---|
-| `/pandora status` | List the outline (9 Parts + prologue, 50 chapters) with each chapter's state: published / drafted / has-research / pending. |
-| `/pandora next` | Find the first non-published chapter and either emit a research prompt + STOP, or (research present) run the full chain automatically. |
-| `/pandora write <slug>` | Run the write→figures→images→translate→validate chain for one chapter. Hard error if its research note is missing. |
-| `/pandora figure <id>` | Regenerate a single figure image (`fig-NN-…`) via `gen-images.ts --figure`. |
-| `/pandora translate <slug>` | (Re)generate `vi.mdx` from `en.mdx` for one chapter (body + figure captions). |
+| Command                     | What it does                                                                                                                           |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `/pandora status`           | List the outline (9 Parts + prologue, 50 chapters) with each chapter's state: published / drafted / has-research / pending.            |
+| `/pandora next`             | Find the first non-published chapter and either emit a research prompt + STOP, or (research present) run the full chain automatically. |
+| `/pandora write <slug>`     | Run the write→figures→images→translate→validate chain for one chapter. Hard error if its research note is missing.                     |
+| `/pandora figure <id>`      | Regenerate a single figure image (`fig-NN-…`) via `gen-images.ts --figure`.                                                            |
+| `/pandora translate <slug>` | (Re)generate `vi.mdx` from `en.mdx` for one chapter (body + figure captions).                                                          |
 
-`<slug>` and chapter order come from **`apps/web/lib/content/outline.ts`** —
+`<slug>` and chapter order come from **`apps/web/lib/content/outline.ts`** -
 the same single source the landing page and reader nav read. Do not maintain a
 second list. See `references/command-reference.md`.
 
-## The flow — `/pandora next` (the heart of this skill)
+## The flow - `/pandora next` (the heart of this skill)
 
 ```
 read outline.ts → first chapter with status != "published"
@@ -67,7 +67,7 @@ Full detail, including `meta.yaml` authoring and the status taxonomy, lives in
 ## Hard Rules (non-negotiable)
 
 1. **Exactly one manual stop.** The ONLY time `/pandora` stops for the user is to
-   paste research. Everything after research-present is non-interactive — no
+   paste research. Everything after research-present is non-interactive - no
    "should I continue?" prompts between write, figures, images, translate, build.
 
 2. **Plan mode before reading research / writing.** Before the author reads the
@@ -75,7 +75,7 @@ Full detail, including `meta.yaml` authoring and the status taxonomy, lives in
    if the environment allows; otherwise stop and ask the user to turn it on, then
    resume. Rationale: the chapter plan (structure, beats, component + figure
    choices) must be formed and reviewable **before** 5–7k words are generated.
-   This is a mode guarantee inside the automatic chain — it is NOT a second manual
+   This is a mode guarantee inside the automatic chain - it is NOT a second manual
    content stop and does not count against Rule #1.
 
 3. **Never invent canon.** If `research/{slug}.md` is missing, hard-error with the
@@ -92,22 +92,22 @@ Full detail, including `meta.yaml` authoring and the status taxonomy, lives in
    `<GlossaryTerm slug="…">` or in `meta.yaml` `glossary_terms` MUST have a
    definition file at `content/glossary/{id}.yaml`. If the check fails, add the
    missing definitions (don't remove the reference) and re-run. The old project
-   shipped many dangling terms — this guard prevents recurrence.
+   shipped many dangling terms - this guard prevents recurrence.
 
 6. **Components are a reference palette, not a checklist.** See the rule below.
 
 7. **All code / identifiers / filenames / comments / commit messages in English.**
    Reader prose: EN authored first → VI translated. VI is the default display
    locale. Never reference plan artifacts (phase numbers, finding codes) in code,
-   comments, or commit messages — describe the *why*, not the origin.
+   comments, or commit messages - describe the _why_, not the origin.
 
 ## Component selection (palette, not checklist)
 
-The component library is a **reference palette that grows chapter by chapter** —
+The component library is a **reference palette that grows chapter by chapter** -
 never a fixed checklist to satisfy. After reading the research note, the
 author/art-director:
 
-- **Reuse** the components that exist in the project *at that moment* (the fresh
+- **Reuse** the components that exist in the project _at that moment_ (the fresh
   baseline plus everything accumulated from earlier chapters). Pick only what this
   chapter genuinely needs. **Never force-fit or cram in a component** to "use it".
 - **Build new bespoke components** for anything the chapter needs that doesn't
@@ -116,19 +116,19 @@ author/art-director:
 
 New components follow the existing component standards: registered in
 `apps/web/lib/mdx-components.ts`, styled from design tokens, a 2D fallback if 3D,
-mobile-verified. The old project's components are NOT a source — they were
+mobile-verified. The old project's components are NOT a source - they were
 discarded for quality. See `references/component-palette.md`.
 
-## Routing table (internal — user never sees these)
+## Routing table (internal - user never sees these)
 
-| Step | Sub-skill / script |
-|---|---|
-| Compose DR prompt, ingest research | `pandora-research` |
-| Plan + write EN prose | `pandora-author` |
-| Figure prompts + image gen | `pandora-art-director` → `scripts/gen-images.ts` |
-| EN→VI translation (body + captions) | `pandora-translate` |
-| Glossary sync | `scripts/check-glossary-terms.ts` (`pnpm check-glossary`) |
-| Validate + build | `pnpm validate:content`, `pnpm build` |
+| Step                                | Sub-skill / script                                        |
+| ----------------------------------- | --------------------------------------------------------- |
+| Compose DR prompt, ingest research  | `pandora-research`                                        |
+| Plan + write EN prose               | `pandora-author`                                          |
+| Figure prompts + image gen          | `pandora-art-director` → `scripts/gen-images.ts`          |
+| EN→VI translation (body + captions) | `pandora-translate`                                       |
+| Glossary sync                       | `scripts/check-glossary-terms.ts` (`pnpm check-glossary`) |
+| Validate + build                    | `pnpm validate:content`, `pnpm build`                     |
 
 ## Definition of done (per chapter)
 

@@ -9,7 +9,7 @@ importing any claim into prose.
 |---|---|---|
 | **Canon** | The films + official Avatar material | May be asserted as canon (the `canon` tier) |
 | **Scientific** | Peer-reviewed papers, textbooks, credible science press | May be asserted as real Earth science (the `real_science` tier) |
-| **Community** | Fan wikis, forums, non-official compilations | NOT canon. Use only as inference/speculation, explicitly flagged — or not at all |
+| **Community** | Fan wikis, forums, non-official compilations | NOT canon. Use only as inference/speculation, explicitly flagged - or not at all |
 | **Synthesis** | Gemini's own summary paragraphs | Never a source. Follow it to the underlying citation and cite that |
 
 ## Rules

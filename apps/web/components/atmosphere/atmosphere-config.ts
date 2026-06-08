@@ -18,8 +18,8 @@ export interface AtmosphereSettings {
 }
 
 export const ATMOSPHERE_PROFILES: Record<AtmosphereProfile, AtmosphereSettings> = {
-  full: { spores: 650, speed: 1, pointerForce: 0, hazeOpacity: 0.1 },
-  calm: { spores: 260, speed: 0.45, pointerForce: 0, hazeOpacity: 0.05 },
+  full: { spores: 460, speed: 1, pointerForce: 0, hazeOpacity: 0.1 },
+  calm: { spores: 180, speed: 0.45, pointerForce: 0, hazeOpacity: 0.05 },
 };
 
 // Hard caps applied on top of profile counts for weaker devices.

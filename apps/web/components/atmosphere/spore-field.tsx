@@ -26,7 +26,7 @@ const VERTEX = /* glsl */ `
   void main() {
     vHue = aHue;
     vec3 p = position;
-    // Slow procedural drift — each spore on its own phase via aSeed.
+    // Slow procedural drift - each spore on its own phase via aSeed.
     float t = uTime * uSpeed;
     p.x += sin(t * 0.3 + aSeed * 6.28) * 0.6;
     p.y += cos(t * 0.24 + aSeed * 4.19) * 0.5 + t * 0.04;
@@ -44,8 +44,15 @@ const VERTEX = /* glsl */ `
     gl_Position = projectionMatrix * mv;
     // Visible motes, sized by depth but capped so they stay soft dots, not blobs.
     gl_PointSize = clamp(aScale * (60.0 / -mv.z), 5.0, 24.0);
-    // Fade with depth so far spores melt into the dark.
-    vAlpha = clamp(1.0 - (-mv.z - 2.0) / 12.0, 0.12, 0.9);
+    // Depth fade so far fireflies melt into the dark.
+    float depth = clamp(1.0 - (-mv.z - 2.0) / 12.0, 0.12, 0.9);
+    // Irregular firefly flicker: two out-of-phase sines per seed give an
+    // uneven blink with a strong swing toward near-off, never a steady glow.
+    float flick = 0.40
+      + 0.45 * sin(uTime * 2.6 + aSeed * 6.28)
+      + 0.28 * sin(uTime * 4.7 + aSeed * 17.0);
+    flick = clamp(flick, 0.02, 1.0);
+    vAlpha = depth * flick;
   }
 `;
 
@@ -55,13 +62,14 @@ const FRAGMENT = /* glsl */ `
   varying float vAlpha;
 
   void main() {
-    // Star-like: a tight bright core plus a soft glowing halo falling off
-    // exponentially — not a flat bubble.
+    // Firefly: a soft round bioluminescent glow with no hard core - a warm
+    // diffuse blob that fades smoothly to its edge, like a glowing insect, not
+    // a sharp star point.
     float r = length(gl_PointCoord - 0.5) * 2.0;
     if (r > 1.0) discard;
-    float core = smoothstep(0.22, 0.0, r);   // small intense center
-    float halo = exp(-r * 3.2) * 0.45;        // diffuse outer glow
-    float a = clamp(core + halo, 0.0, 1.0);
+    float glow = pow(1.0 - r, 1.8);          // soft, edge-fading body
+    float center = smoothstep(0.5, 0.0, r) * 0.5; // gentle brighter middle
+    float a = clamp(glow + center, 0.0, 1.0);
     gl_FragColor = vec4(vHue, a * vAlpha);
   }
 `;
@@ -92,10 +100,8 @@ export function SporeField({ settings, pointer }: SporeFieldProps) {
       positions[i * 3 + 2] = (Math.random() - 0.5) * 10;
       seeds[i] = Math.random();
       scales[i] = 1.5 + Math.random() * 4.5;
-      // Cool palette dominates (cyan/teal); the warm magenta accent is rare
-      // (~8%), matching the STYLE BIBLE.
-      const r = Math.random();
-      const hue = r < 0.08 ? rgbHues[2] : r < 0.54 ? rgbHues[0] : rgbHues[1];
+      // Fireflies are cool only - cyan and teal, no magenta. Roughly even split.
+      const hue = Math.random() < 0.5 ? rgbHues[0] : rgbHues[1];
       hues[i * 3] = hue[0];
       hues[i * 3 + 1] = hue[1];
       hues[i * 3 + 2] = hue[2];

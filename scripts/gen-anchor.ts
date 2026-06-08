@@ -12,9 +12,9 @@ import { loadStyleBible } from "./lib/style-bible-loader";
 const ESTABLISHING_SHOT = [
   "--- THIS FIGURE (STYLE ANCHOR) ---",
   "Narrative purpose: the canonical establishing shot that defines the visual",
-  "language of the whole project — every later figure references this image.",
+  "language of the whole project - every later figure references this image.",
   "Subject: a sweeping Pandoran rainforest valley at night, bioluminescent flora",
-  "glowing from within — towering trees, hanging vines, spore-lit understory.",
+  "glowing from within - towering trees, hanging vines, spore-lit understory.",
   "Scene: layered depth, distant floating rock silhouettes barely visible through",
   "teal volumetric haze; a slow river of mist on the forest floor.",
   "Camera: wide establishing vista, slight low angle, deep focus.",
@@ -31,11 +31,15 @@ async function main(): Promise<void> {
   const outPath = path.join(ANCHORS_DIR, "pandora-establishing.png");
 
   if (!force && existsSync(outPath)) {
-    console.log(`[gen-anchor] anchor exists at ${outPath} (use --force to regenerate)`);
+    console.log(
+      `[gen-anchor] anchor exists at ${outPath} (use --force to regenerate)`,
+    );
     return;
   }
   if (!process.env.OPENAI_API_KEY || process.env.OPENAI_API_KEY.trim() === "") {
-    console.error("[gen-anchor] OPENAI_API_KEY is not set. Add it to .env and re-run.");
+    console.error(
+      "[gen-anchor] OPENAI_API_KEY is not set. Add it to .env and re-run.",
+    );
     process.exit(1);
   }
 
@@ -49,6 +53,8 @@ async function main(): Promise<void> {
 }
 
 main().catch((err) => {
-  console.error(`[gen-anchor] ${err instanceof Error ? err.message : String(err)}`);
+  console.error(
+    `[gen-anchor] ${err instanceof Error ? err.message : String(err)}`,
+  );
   process.exit(1);
 });

@@ -45,7 +45,7 @@ export function SpecimenPlate({
           <img
             src={imageSrc}
             alt=""
-            className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
+            className="size-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:brightness-110"
           />
         ) : (
           <div

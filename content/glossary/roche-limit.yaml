@@ -1,0 +1,16 @@
+id: roche-limit
+label:
+  vi: Giới hạn Roche
+  en: Roche limit
+definition:
+  vi: Khoảng cách tối thiểu mà một mặt trăng có thể tiến lại gần hành tinh mẹ trước khi lực thủy triều của hành tinh - kéo phía gần mạnh hơn phía xa - thắng được lực hấp dẫn tự thân của mặt trăng và xé nó tan ra. Một mặt trăng cỡ Trái Đất quay quá nhanh, quá gần một hành tinh khí khổng lồ sẽ liều lĩnh áp sát giới hạn này; đây là một trong những mâu thuẫn nội tại của cốt truyện Pandora.
+  en: The closest a moon can approach its host planet before the planet's tidal force - pulling harder on the near side than the far side - overpowers the moon's own gravity and tears it apart. An Earth-sized moon orbiting too fast and too close to a gas giant skirts this limit dangerously; it is one of the internal contradictions in Pandora's canon.
+see_also:
+  - tidal-heating
+  - exomoon
+category: concept
+cover_prompt: >-
+  A painted space scene of a large banded gas giant with a nearby moon beginning
+  to stretch and shed a faint trailing arc of debris on the side facing the
+  planet. Cool void-indigo space, painterly, dramatic but restrained, no text or
+  labels.

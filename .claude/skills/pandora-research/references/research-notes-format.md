@@ -5,14 +5,14 @@ How the pasted Deep Research result lives in the repo. The guiding principle:
 
 ## Where it goes
 
-`research/{slug}.md` — one file per chapter, keyed by the chapter slug. The user
+`research/{slug}.md` - one file per chapter, keyed by the chapter slug. The user
 pastes the full Gemini Deep Research output here. This file is **git-ignored**
-(`.gitignore`: `research/*.md`) — raw research stays local. The generated prompt
+(`.gitignore`: `research/*.md`) - raw research stays local. The generated prompt
 (`research/{slug}.prompt.md`) IS tracked.
 
 ## What to paste
 
-The complete DR result, unedited. Do NOT trim, reformat, or pre-summarize it —
+The complete DR result, unedited. Do NOT trim, reformat, or pre-summarize it -
 the author filters aggressively when writing, and over-trimming now can drop
 context the author needs. Keep Gemini's inline citations intact so the author can
 cite the underlying sources.
@@ -41,4 +41,4 @@ See `pandora-author/references/research-workflow.md` for the filtering disciplin
 ## Presence is mandatory
 
 If `research/{slug}.md` does not exist, the author step hard-errors. The note is
-the only sanctioned source of canon — never substitute model memory.
+the only sanctioned source of canon - never substitute model memory.

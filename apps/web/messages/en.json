@@ -27,18 +27,22 @@
   "home": {
     "title": "The Pandora Code",
     "intro": "An interactive book decoding the world of Pandora through biology, planetary science, Na'vi culture, human technology, and the ethics of contact.",
+    "decoding": "Decoding",
+    "decodingChapters": "{done}/{total}",
     "ctaChapters": "Read chapters",
     "featured": "Featured chapters"
   },
   "chapter": {
     "tableOfContents": "Table of contents",
+    "relatedMaterials": "Related materials",
     "relatedChapters": "Related chapters",
+    "relatedGlossary": "Related terms",
     "sources": "Sources",
     "whatThisMeans": "What this means",
     "openQuestions": "Open questions",
     "readingProgress": "Reading progress",
     "classification": "Content classification",
-    "demoBanner": "This is a DEMO chapter — not official Pandora content."
+    "demoBanner": "This is a DEMO chapter - not official Pandora content."
   },
   "classification": {
     "canon": "Canon",
@@ -49,12 +53,15 @@
   "landing": {
     "descentKicker": "The descent",
     "descentHeading": "Read Pandora as a specimen, not a movie",
-    "descentBody": "Each chapter takes one strange thing about Pandora as bait, then leads you to a real scientific idea — biology, planetary science, physics — woven in subtly rather than lectured.",
-    "descentNote": "Four classification tiers — Canon, Inference, Speculation, Real science — always tell you where you stand between fact and imagination.",
+    "descentBody": "Each chapter takes one strange thing about Pandora as bait, then leads you to a real scientific idea - biology, planetary science, physics - woven in subtly rather than lectured.",
+    "descentNote": "Four classification tiers - Canon, Inference, Speculation, Real science - always tell you where you stand between fact and imagination.",
     "codexKicker": "The collection",
     "codexHeading": "The first chapters of the Pandora codex",
     "codexEmpty": "The first specimens are being prepared. Check back soon.",
-    "coming": "Coming soon"
+    "coming": "Coming soon",
+    "closingKicker": "Begin the descent",
+    "closingHeading": "Pandora is waiting to be decoded",
+    "closingBody": "Start with the first specimen and follow the bait down into real biology, planetary science, and physics — one strange, glowing thing at a time."
   },
   "page": {
     "chapters": {

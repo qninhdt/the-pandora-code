@@ -9,11 +9,11 @@ in service of a reading or a science point, never an end in itself.
 
 ## Info-dump
 Cramming the research note into the prose. Lists of facts, stacked concepts, no
-through-line. **Fix:** see `research-workflow.md` — pull only what the chapter's
+through-line. **Fix:** see `research-workflow.md` - pull only what the chapter's
 one core concept needs.
 
 ## Lecture mode
-The science arrives as textbook prose — definitions, equations without scene,
+The science arrives as textbook prose - definitions, equations without scene,
 "as we all know". The reader feels assigned homework. **Fix:** plain language
 before the formal term; arrive at the concept through a Pandoran image.
 
@@ -22,7 +22,7 @@ Name-checking five concepts to seem thorough. None land. **Fix:** one concept pe
 chapter, taught well. Cut the rest.
 
 ## Voice drift
-A chapter that doesn't sound like Bardabez — too jokey, too dry, too breathless,
+A chapter that doesn't sound like Bardabez - too jokey, too dry, too breathless,
 or slipping into encyclopedia-voice. **Fix:** reread against `voice-guide.md`;
 the opener and the close are where drift shows most.
 
@@ -41,7 +41,7 @@ purpose; if you can't state it, cut the figure.
 
 ## Dangling glossary terms
 Using `<GlossaryTerm slug="…">` for a term that has no definition file. **Fix:**
-the orchestrator's `check-glossary` will fail the build — define the term in
+the orchestrator's `check-glossary` will fail the build - define the term in
 `content/glossary/`, don't remove the reference.
 
 ## Plan-artifact references

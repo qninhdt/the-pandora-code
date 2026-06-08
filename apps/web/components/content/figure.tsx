@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 interface FigureProps {
   src: string;
-  /** Bilingual caption — both translated in the same pass. */
+  /** Bilingual caption - both translated in the same pass. */
   caption?: { vi: string; en: string } | string;
   locale?: "vi" | "en";
   alt?: string;
@@ -32,7 +32,11 @@ export function Figure({
   return (
     <figure className={cn("my-8", bleed && "lg:-mx-24", className)}>
       <div className="overflow-hidden rounded-2xl border border-border bg-surface">
-        <img src={src} alt={alt ?? text ?? ""} className="w-full object-cover" />
+        <img
+          src={src}
+          alt={alt ?? text ?? ""}
+          className="w-full object-cover"
+        />
       </div>
       {(text || figNo || tier) && (
         <figcaption className="mt-3 flex items-start gap-3 px-1">

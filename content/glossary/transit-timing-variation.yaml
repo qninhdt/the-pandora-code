@@ -1,0 +1,15 @@
+id: transit-timing-variation
+label:
+  vi: Biến thiên thời điểm transit (TTV)
+  en: Transit-timing variation
+definition:
+  vi: Cách gián tiếp để dò một mặt trăng (hay hành tinh) ẩn. Khi một hành tinh đi ngang qua mặt sao (transit), một mặt trăng quay quanh nó kéo hành tinh đảo quanh khối tâm chung, khiến hành tinh đến điểm transit sớm hoặc muộn hơn một chút qua từng lần. Những sai lệch thời điểm đó - chỉ cỡ vài giây đến vài phút với một mặt trăng cỡ Trái Đất - là dấu vết của vật thể ẩn, nhưng nằm ngay ở ngưỡng nhiễu của thiết bị tốt nhất hiện nay.
+  en: An indirect way to detect a hidden moon (or planet). As a planet transits the face of its star, a moon orbiting it tugs the planet around their shared centre of mass, making the planet arrive at the crossing a little early or late from one transit to the next. Those timing shifts - only seconds to minutes for an Earth-sized moon - are the fingerprint of the hidden body, but sit right at the noise floor of today's best instruments.
+see_also:
+  - radial-velocity
+  - exomoon
+category: concept
+cover_prompt: >-
+  A painted scene of a banded gas giant crossing in front of a bright star, with
+  a small moon beside it subtly tugging it off-centre, against deep space. Cool
+  palette, soft painterly glow, no text, no clock, no arrows, no labels.

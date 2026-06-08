@@ -4,6 +4,8 @@ import { GlassPanel } from "@/components/codex/glass-panel";
 import { FadeInOnScroll } from "@/components/motion/fade-in-on-scroll";
 import { Parallax } from "@/components/motion/parallax";
 
+const DESCENT_BG = "/images/landing/descent-deep.png";
+
 interface DescentSectionProps {
   kicker: string;
   heading: string;
@@ -11,12 +13,34 @@ interface DescentSectionProps {
   note: string;
 }
 
-// The "descent into Pandora": layered parallax depth with the premise floating
-// in a glass panel at mid-depth, a scientific note drifting at a different rate.
+// The "descent into Pandora": a painted ravine plunges behind the copy at a
+// slower parallax rate, layered haze gradients keep the text legible, and the
+// premise floats in a glass panel at mid-depth with the field note drifting at
+// a different rate.
 export function DescentSection({ kicker, heading, body, note }: DescentSectionProps) {
   return (
-    <section className="relative mx-auto max-w-6xl px-6 py-32">
-      <div className="grid items-center gap-10 md:grid-cols-[1.3fr_1fr]">
+    <section className="relative overflow-hidden px-6 py-32">
+      {/* Painted ravine backdrop, drifting slower than the foreground. */}
+      <Parallax offset={60} className="absolute inset-0 -z-20">
+        <img
+          src={DESCENT_BG}
+          alt=""
+          aria-hidden
+          className="size-full scale-[1.3] object-cover opacity-40"
+        />
+      </Parallax>
+      {/* Haze gradients: blend the band into the void above/below and dim the
+          right side where the copy column sits. */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10"
+        style={{
+          background:
+            "linear-gradient(to bottom, var(--void) 0%, transparent 22%, transparent 78%, var(--void) 100%), linear-gradient(to right, var(--void) 12%, color-mix(in oklab, var(--void) 55%, transparent) 55%, transparent 100%)",
+        }}
+      />
+
+      <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-[1.3fr_1fr]">
         <Parallax offset={50}>
           <FadeInOnScroll>
             <p className="mb-4 font-sans text-xs uppercase tracking-[0.3em] text-teal">{kicker}</p>

@@ -18,15 +18,30 @@ interface Args {
   chapter?: string;
   figure?: string;
   force: boolean;
+  concurrency: number;
 }
 
+interface GeneratedFigure {
+  slug: string;
+  figureId: string;
+}
+
+interface GenerationTask {
+  filePath: string;
+  figure: FigurePrompt;
+  dependencies: string[];
+}
+
+const DEFAULT_CONCURRENCY = 4;
+
 function parseArgs(argv: string[]): Args {
-  const args: Args = { force: false };
+  const args: Args = { force: false, concurrency: DEFAULT_CONCURRENCY };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--chapter") args.chapter = argv[++i];
     else if (a === "--figure") args.figure = argv[++i];
     else if (a === "--force") args.force = true;
+    else if (a === "--concurrency") args.concurrency = parseConcurrency(argv[++i]);
   }
   return args;
 }
@@ -34,6 +49,14 @@ function parseArgs(argv: string[]): Args {
 function fail(message: string): never {
   console.error(`\n[gen-images] ${message}\n`);
   process.exit(1);
+}
+
+function parseConcurrency(value: string | undefined): number {
+  const parsed = Number(value);
+  if (!Number.isInteger(parsed) || parsed < 1) {
+    fail(`Invalid --concurrency value "${value ?? ""}". Use a positive integer.`);
+  }
+  return parsed;
 }
 
 // Read a figure JSON, validate against the schema, return the parsed prompt.
@@ -73,13 +96,13 @@ function markAssetReady(slug: string, figureId: string): void {
   }
 }
 
-async function generateOne(filePath: string, force: boolean): Promise<void> {
+async function generateOne(filePath: string, force: boolean): Promise<GeneratedFigure | null> {
   const figure = loadFigure(filePath);
   const outPath = figureImagePath(figure.chapter_slug, figure.id);
 
   if (!force && existsSync(outPath)) {
     console.log(`[gen-images] skip ${figure.id} (image exists; use --force to regenerate)`);
-    return;
+    return null;
   }
 
   const styleBible = loadStyleBible();
@@ -99,8 +122,8 @@ async function generateOne(filePath: string, force: boolean): Promise<void> {
   mkdirSync(chapterImagesDir(figure.chapter_slug), { recursive: true });
   writeFileSync(outPath, result.bytes);
   persistGenerationMeta(filePath, result.responseId);
-  markAssetReady(figure.chapter_slug, figure.id);
   console.log(`[gen-images] wrote ${path.relative(process.cwd(), outPath)}`);
+  return { slug: figure.chapter_slug, figureId: figure.id };
 }
 
 // Find a single figure JSON by id by scanning chapter figure dirs.
@@ -114,11 +137,113 @@ function findFigureFile(figureId: string): string {
   fail(`Figure JSON for "${figureId}" not found under any chapter's figures/.`);
 }
 
+async function generateMany(
+  filePaths: string[],
+  force: boolean,
+  concurrency: number,
+): Promise<GeneratedFigure[]> {
+  const tasks = buildGenerationTasks(filePaths, force);
+  const results: GeneratedFigure[] = [];
+  const completed = new Set<string>(
+    tasks
+      .filter(
+        (task) =>
+          !force && existsSync(figureImagePath(task.figure.chapter_slug, task.figure.id)),
+      )
+      .map((task) => task.figure.id),
+  );
+  const remaining = new Map(tasks.map((task) => [task.figure.id, task]));
+
+  while (remaining.size > 0) {
+    const runnable = [...remaining.values()].filter((task) =>
+      task.dependencies.every((dependency) => completed.has(dependency)),
+    );
+
+    if (runnable.length === 0) {
+      const blocked = [...remaining.values()]
+        .map((task) => `${task.figure.id} waits for ${task.dependencies.join(", ")}`)
+        .join("\n  - ");
+      fail(`No runnable figures; check reference dependencies:\n  - ${blocked}`);
+    }
+
+    const generated = await runTaskBatch(runnable, force, concurrency);
+    for (const task of runnable) {
+      remaining.delete(task.figure.id);
+      completed.add(task.figure.id);
+    }
+    results.push(...generated);
+  }
+
+  return results;
+}
+
+function buildGenerationTasks(filePaths: string[], force: boolean): GenerationTask[] {
+  const figuresByPath = filePaths.map((filePath) => ({
+    filePath,
+    figure: loadFigure(filePath),
+  }));
+  const figureIdByOutputPath = new Map(
+    figuresByPath.map(({ figure }) => [
+      figureImagePath(figure.chapter_slug, figure.id),
+      figure.id,
+    ]),
+  );
+
+  return figuresByPath.map(({ filePath, figure }) => {
+    const dependencies = [...figure.style_refs, ...figure.character_refs]
+      .map(resolveReferencePath)
+      .map((refPath) => figureIdByOutputPath.get(refPath))
+      .filter((id): id is string => Boolean(id))
+      .filter((id) => id !== figure.id)
+      .filter((id) => force || !existsSync(figureImagePath(figure.chapter_slug, id)));
+
+    return { filePath, figure, dependencies };
+  });
+}
+
+async function runTaskBatch(
+  tasks: GenerationTask[],
+  force: boolean,
+  concurrency: number,
+): Promise<GeneratedFigure[]> {
+  const results: GeneratedFigure[] = [];
+  const errors: string[] = [];
+  let nextIndex = 0;
+
+  async function worker(): Promise<void> {
+    while (nextIndex < tasks.length) {
+      const task = tasks[nextIndex++];
+      try {
+        const generated = await generateOne(task.filePath, force);
+        if (generated) results.push(generated);
+      } catch (err) {
+        const message = err instanceof Error ? err.message : String(err);
+        errors.push(`${path.basename(task.filePath)}: ${message}`);
+      }
+    }
+  }
+
+  const workerCount = Math.min(concurrency, tasks.length);
+  await Promise.all(Array.from({ length: workerCount }, () => worker()));
+
+  if (errors.length > 0) {
+    fail(
+      `Failed to generate ${errors.length} figure(s):\n` +
+        errors.map((e) => `  - ${e}`).join("\n"),
+    );
+  }
+
+  return results;
+}
+
 async function main(): Promise<void> {
   const args = parseArgs(process.argv.slice(2));
 
   if (!args.chapter && !args.figure) {
-    fail("Usage: gen-images --chapter <slug> | --figure <fig-NN-...> [--force]");
+    fail(
+      "Usage: gen-images --chapter <slug> | --figure <fig-NN-...> " +
+        "[--force] [--concurrency <n>]",
+    );
   }
 
   // Surface a missing key early with a clear message (not a stack trace).
@@ -127,7 +252,8 @@ async function main(): Promise<void> {
   }
 
   if (args.figure) {
-    await generateOne(findFigureFile(args.figure), args.force);
+    const generated = await generateOne(findFigureFile(args.figure), args.force);
+    if (generated) markAssetReady(generated.slug, generated.figureId);
     console.log("[gen-images] done.");
     return;
   }
@@ -141,9 +267,16 @@ async function main(): Promise<void> {
     .sort();
   if (files.length === 0) fail(`No figure JSON files in ${figuresDir}`);
 
-  // Generate sequentially so reference images and rate limits behave.
-  for (const file of files) {
-    await generateOne(path.join(figuresDir, file), args.force);
+  console.log(
+    `[gen-images] processing ${files.length} figure(s) with concurrency ${args.concurrency}...`,
+  );
+  const generatedFigures = await generateMany(
+    files.map((file) => path.join(figuresDir, file)),
+    args.force,
+    args.concurrency,
+  );
+  for (const generated of generatedFigures) {
+    markAssetReady(generated.slug, generated.figureId);
   }
   console.log(`[gen-images] done. ${files.length} figure(s) processed.`);
 }

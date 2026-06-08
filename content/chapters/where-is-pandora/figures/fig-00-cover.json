@@ -1,0 +1,19 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "where-is-pandora",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative cover: the single image that says 'this is a moon under its giant planet' at a glance, making a reader want to open the chapter on where Pandora is.",
+  "subject": "An enormous banded gas giant planet hanging low and huge in the sky, filling roughly a third of the frame - smooth horizontal cloud bands in cream, rust and storm-grey, with one large oval storm like a single eye. Beside it, much smaller, a brilliant white-gold star burns. In the lower foreground, a high rocky ridge crowned with glowing blue-green alien forest, and one tiny distant silhouette of a slender figure standing at the ridge edge for scale.",
+  "scene": "Dusk on an alien moon. The vast planet dominates the upper sky; two or three small crescent companion moons hang faintly in the distance. Layered atmospheric haze separates the near ridge from the immense planet behind it.",
+  "camera": "Wide cinematic establishing shot, slightly low angle looking up past the ridge toward the giant planet so it towers over the scene.",
+  "light": "Cool twilight; the brightest light is the bioluminescent forest glow rising from below, plus a thin warm rim of starlight along the planet's edge and the ridge.",
+  "palette": "Deep void-indigo sky, teal mid-shadows, cyan and living-teal forest glow, a scarce warm amber rim along the planet's limb and the bright star.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, strong atmospheric depth.",
+  "detail_level": "Crisp detail on the near ridge and glowing forest; the giant planet softer and atmospheric; distant moons dissolving into haze.",
+  "composition": "Giant planet anchored upper-left on a third line, bright star upper-right; ridge and tiny figure along the lower third to give overwhelming scale to the planet and sky.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "spacecraft", "Earth trees", "human characters in modern clothing"],
+  "consistency_notes": "This banded gas giant (cream/rust/grey bands, one large eye-storm) is Polyphemus and must look identical wherever it appears in this chapter. Cool Pandora palette, bioluminescent key light.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no photographic or 3D-render look, no lens flares, no oversaturation, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

@@ -1,0 +1,17 @@
+id: exomoon
+label:
+  vi: Ngoại vệ tinh (exomoon)
+  en: Exomoon
+definition:
+  vi: Mặt trăng quay quanh một hành tinh thuộc hệ sao khác. Một ngoại vệ tinh ở được phải cân bằng tới bốn nguồn nhiệt - ánh sao trực tiếp, ánh sao phản chiếu từ hành tinh mẹ, nhiệt hồng ngoại của chính hành tinh khí, và nhiệt thủy triều sinh ra từ bên trong - đồng thời tránh các vành đai bức xạ của hành tinh mẹ. Pandora chính là một ngoại vệ tinh như vậy. Tính đến nay loài người chưa xác nhận chắc chắn được ngoại vệ tinh nào.
+  en: A moon that orbits a planet in another star system. A habitable exomoon must balance up to four heat sources - direct starlight, starlight reflected off its host planet, the gas giant's own infrared glow, and tidal heat generated within - while dodging the host planet's radiation belts. Pandora is exactly such an exomoon. As yet, no exomoon has been firmly confirmed.
+see_also:
+  - tidal-heating
+  - habitable-zone
+  - alpha-centauri
+category: planet
+cover_prompt: >-
+  A painted space scene of a small blue-green moon hanging close in front of an
+  enormous banded gas giant that fills the background, the moon catching light on
+  one side. Cool Pandora palette, cream-and-rust planet bands, soft painterly
+  atmosphere, no text or labels.

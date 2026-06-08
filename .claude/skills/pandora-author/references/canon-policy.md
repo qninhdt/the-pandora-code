@@ -26,7 +26,7 @@ What the author may assert, and on whose authority.
    badges so the reader always knows which tier a claim sits in. This honesty is
    a feature of the book.
 5. **When canon is silent, say so.** "The films never show how the queue bonds at
-   the cellular level" is a legitimate, interesting sentence — better than
+   the cellular level" is a legitimate, interesting sentence - better than
    inventing a mechanism.
 
 ## Interaction with classification percentages

@@ -1,89 +1,96 @@
 {
   "site": {
     "name": "The Pandora Code",
-    "tagline": "Khám phá Pandora qua lăng kính khoa học và kể chuyện."
+    "tagline": "Pandora, được giải mã qua lăng kính khoa học và nghệ thuật kể chuyện."
   },
   "nav": {
     "home": "Trang chủ",
-    "chapters": "Chương",
+    "chapters": "Danh sách chương",
     "glossary": "Thuật ngữ",
     "authors": "Tác giả",
     "timeline": "Dòng thời gian",
     "topics": "Chủ đề",
-    "parts": "Phần"
+    "parts": "Các phần"
   },
   "common": {
     "readingTime": "{minutes} phút đọc",
     "openInNewTab": "Mở trong tab mới",
-    "assetPending": "Hình ảnh đang chuẩn bị",
-    "viewPrompt": "Xem prompt sinh ảnh",
-    "noResults": "Chưa có nội dung.",
+    "assetPending": "Đang chờ tài nguyên",
+    "viewPrompt": "Xem câu lệnh tạo ảnh",
+    "noResults": "Chưa có gì ở đây cả.",
     "back": "Quay lại",
     "next": "Tiếp theo",
-    "previous": "Trước đó",
+    "previous": "Trang trước",
     "loading": "Đang tải...",
-    "skipToContent": "Bỏ qua đến nội dung chính"
+    "skipToContent": "Đi thẳng tới nội dung chính"
   },
   "home": {
     "title": "The Pandora Code",
-    "intro": "Một dự án đọc tương tác giải mã hành tinh Pandora qua sinh học, hành tinh học, văn hóa Na'vi, công nghệ con người và đạo đức khoa học.",
-    "ctaChapters": "Đọc chương",
+    "intro": "Một cuốn sách tương tác giải mã thế giới Pandora thông qua sinh học, khoa học hành tinh, văn hóa người Na'vi, công nghệ nhân loại và những góc khuất đạo đức khi chạm trán một nền văn minh mới.",
+    "decoding": "Đang giải mã",
+    "decodingChapters": "{done}/{total}",
+    "ctaChapters": "Khám phá các chương",
     "featured": "Chương nổi bật"
   },
   "chapter": {
     "tableOfContents": "Mục lục",
-    "relatedChapters": "Chương liên quan",
-    "sources": "Nguồn",
-    "whatThisMeans": "Ý nghĩa rút ra",
-    "openQuestions": "Câu hỏi mở",
+    "relatedMaterials": "Tài liệu liên quan",
+    "relatedChapters": "Các chương liên quan",
+    "relatedGlossary": "Thuật ngữ liên quan",
+    "sources": "Nguồn tham khảo",
+    "whatThisMeans": "Bản chất vấn đề",
+    "openQuestions": "Những câu hỏi còn bỏ ngỏ",
     "readingProgress": "Tiến độ đọc",
     "classification": "Phân loại nội dung",
-    "demoBanner": "Đây là chương DEMO — không phải nội dung Pandora chính thức."
+    "demoBanner": "Đây chỉ là chương BẢN NHÁP (DEMO) - không phải nội dung chính thức của Pandora."
   },
   "classification": {
-    "canon": "Canon",
+    "canon": "Cốt truyện gốc",
     "inference": "Suy luận",
-    "speculation": "Giả thuyết",
-    "real_science": "Khoa học thực tế"
+    "speculation": "Phỏng đoán",
+    "real_science": "Khoa học thực tiễn"
   },
   "landing": {
-    "descentKicker": "Hành trình hạ cánh",
-    "descentHeading": "Đọc Pandora như một mẫu vật, không phải một bộ phim",
-    "descentBody": "Mỗi chương lấy một điều kỳ lạ của Pandora làm mồi nhử, rồi dẫn bạn tới một khái niệm khoa học có thật — sinh học, hành tinh học, vật lý — đan cài tinh tế chứ không giảng giải khô khan.",
-    "descentNote": "Bốn tầng phân loại — Chính truyện, Suy luận, Suy đoán, Khoa học thật — luôn cho bạn biết mình đang đứng ở đâu giữa sự thật và tưởng tượng.",
-    "codexKicker": "Bộ sưu tập",
-    "codexHeading": "Những chương đầu tiên của bộ mật mã Pandora",
-    "codexEmpty": "Các mẫu vật đầu tiên đang được chuẩn bị. Hãy quay lại sớm.",
-    "coming": "Sắp ra mắt"
+    "descentKicker": "Bước thâm nhập",
+    "descentHeading": "Hãy mổ xẻ Pandora như một mẫu vật khoa học, thay vì chỉ xem phim giải trí",
+    "descentBody": "Mỗi chương dùng một hiện tượng kỳ lạ trên Pandora làm mồi nhử, từ đó dẫn dắt bạn khám phá những ý tưởng khoa học có thật — sinh học, khoa học hành tinh, vật lý — được đan cài một cách tinh tế thay vì giáo điều khô khan.",
+    "descentNote": "Bốn cấp độ phân loại — Cốt truyện gốc, Suy luận, Phỏng đoán và Khoa học thực tiễn — sẽ đóng vai trò như chiếc la bàn, giúp bạn luôn biết mình đang đứng ở đâu giữa lằn ranh của sự thật và trí tưởng tượng.",
+    "codexKicker": "Bộ tư liệu",
+    "codexHeading": "Những chương đầu tiên của thư tịch Pandora",
+    "codexEmpty": "Những mẫu vật đầu tiên vẫn đang được ráo riết chuẩn bị. Hãy quay lại sau nhé.",
+    "coming": "Sắp ra mắt",
+    "closingKicker": "Bắt đầu hành trình thâm nhập",
+    "closingHeading": "Pandora đang chờ được giải mã",
+    "closingBody": "Hãy bắt đầu từ mẫu vật đầu tiên và lần theo mồi nhử để đi sâu vào sinh học, khoa học hành tinh và vật lý có thật — mỗi lần một hiện tượng kỳ lạ, phát sáng."
   },
   "page": {
     "chapters": {
-      "title": "Tất cả chương",
-      "subtitle": "Bộ sưu tập các chương đã xuất bản."
+      "title": "Toàn bộ chương truyện",
+      "subtitle": "Thư viện tổng hợp các chương đã được xuất bản."
     },
     "glossary": {
       "title": "Thuật ngữ",
-      "subtitle": "Từ điển khái niệm dùng trong sách."
+      "subtitle": "Từ điển diễn giải các khái niệm cốt lõi thường gặp."
     },
     "authors": {
       "title": "Tác giả",
-      "subtitle": "Giọng kể duy nhất của The Pandora Code."
+      "subtitle": "Chất giọng duy nhất dẫn dắt toàn bộ tác phẩm The Pandora Code."
     },
     "timeline": {
-      "title": "Dòng thời gian tri thức",
-      "subtitle": "Trật tự đọc theo Phần và Chương."
+      "title": "Dòng thời gian kiến thức",
+      "subtitle": "Trình tự đọc được khuyến nghị cho các phần và các chương."
     },
     "parts": {
-      "title": "Phần",
-      "subtitle": "Chín Phần tổ chức nên cuốn sách."
+      "title": "Các phần",
+      "subtitle": "Chín mảnh ghép nội dung cấu thành nên cuốn sách."
     },
     "topics": {
       "title": "Chủ đề: {tag}",
-      "subtitle": "Các chương cùng gắn nhãn này."
+      "subtitle": "Các chương có chung thẻ phân loại này."
     },
     "notFound": {
       "title": "Không tìm thấy trang",
-      "back": "Trở về trang chủ"
+      "back": "Quay về trang chủ"
     }
   },
   "footer": {
