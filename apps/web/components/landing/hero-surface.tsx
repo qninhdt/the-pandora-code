@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import Link from "next/link";
 
-const HERO_VISTA = "/images/landing/hero-vista.png";
+const HERO_VISTA = "/images/pages/hero-vista.png";
 
 interface HeroSurfaceProps {
   progressLabel: string;

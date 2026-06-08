@@ -3,16 +3,14 @@ part: the-world
 order: 4
 status: published
 title:
-  vi: Những ngọn núi bay và chất siêu dẫn
+  vi: Những ngọn núi lơ lửng và chất siêu dẫn
   en: Floating mountains and the superconductor
 subtitle:
-  vi: Bí ẩn đằng sau dãy Hallelujah lơ lửng - và những gì nó hé lộ về hiện tượng siêu dẫn
+  vi: Tại sao Dãy núi Hallelujah lơ lửng trên không - và những gì nó dạy cho chúng ta về tính siêu dẫn
   en: Why the Hallelujah Mountains hang in the air - and what it teaches about superconductivity
 hook:
-  vi: >-
-    Một ngọn núi khổng lồ dài 16 kilomet treo lơ lửng giữa không trung chẳng phải là phép màu gì sất. Nó thực chất là một màn thị phạm vật lý được phóng to lên tầm vóc hành tinh - và lời giải đáp nằm ở việc làm thế nào một chiếc đĩa làm lạnh có thể tự khóa mình cứng ngắc vào khoảng không vô định.
-  en: >-
-    A sixteen-kilometre mountain hanging in mid-air is not magic. It is a physics demonstration scaled up to planetary size - and the answer lies in why a cold disc can lock rigidly into empty space.
+  vi: Một ngọn núi khổng lồ dài 16 kilomet treo lơ lửng giữa không trung chẳng phải là phép màu gì sất. Nó thực chất là một màn thị phạm vật lý được phóng to lên tầm vóc hành tinh - và lời giải đáp nằm ở việc làm thế nào một chiếc đĩa làm lạnh có thể tự khóa mình cứng ngắc vào khoảng không vô định.
+  en: A sixteen-kilometre mountain hanging in mid-air is not magic. It is a physics demonstration scaled up to planetary size - and the answer lies in why a cold disc can lock rigidly into empty space.
 authors:
   - bardabez
 reading_time_min: 24

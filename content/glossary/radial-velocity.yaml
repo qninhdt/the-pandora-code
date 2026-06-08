@@ -3,14 +3,10 @@ label:
   vi: Vận tốc xuyên tâm
   en: Radial velocity
 definition:
-  vi: Phương pháp săn ngoại hành tinh dựa trên việc đo dao động nhỏ của ngôi sao. Sao và hành tinh cùng quay quanh khối tâm chung, nên sao chao đảo nhẹ; khi nó tiến về phía ta ánh sáng dịch xanh, khi lùi ra xa thì dịch đỏ (hiệu ứng Doppler). Đo nhịp dịch màu đó cho ta chu kỳ quỹ đạo và khối lượng tối thiểu của hành tinh, nhưng không cho biết kích thước hay thành phần khí quyển.
+  vi: Một phương pháp săn hành tinh dựa trên việc đo sự chao đảo nhỏ bé của một ngôi sao. Cả ngôi sao và hành tinh đều quay quanh khối tâm chung của chúng, do đó ngôi sao hơi lắc qua lắc lại; khi nó tiến về phía chúng ta, ánh sáng của nó dịch chuyển sang màu xanh (blue-shift), khi nó lùi ra xa, ánh sáng dịch chuyển sang màu đỏ (red-shift) (hiệu ứng Doppler). Đọc sự thay đổi màu sắc nhịp nhàng đó sẽ cho biết chu kỳ quỹ đạo và khối lượng tối thiểu của hành tinh, nhưng không cho biết kích thước hay bầu khí quyển của nó.
   en: A planet-hunting method based on measuring a star's tiny wobble. Star and planet both orbit their shared centre of mass, so the star sways slightly; as it moves toward us its light shifts bluer, as it pulls away, redder (the Doppler effect). Reading that rhythmic colour-shift gives the planet's orbital period and a minimum mass, but not its size or its atmosphere.
 see_also:
   - transit-timing-variation
   - direct-imaging
 category: concept
-cover_prompt: >-
-  A painted astronomical scene of a single star rendered twice side by side, once
-  tinted faintly blue and once faintly red, suggesting a gentle back-and-forth
-  sway, against deep space. Cool palette, soft painterly glow, no text, no
-  arrows, no labels.
+cover_prompt: A painted astronomical scene of a single star rendered twice side by side, once tinted faintly blue and once faintly red, suggesting a gentle back-and-forth sway, against deep space. Cool palette, soft painterly glow, no text, no arrows, no labels.

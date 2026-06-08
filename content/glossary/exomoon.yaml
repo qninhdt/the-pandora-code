@@ -1,17 +1,13 @@
 id: exomoon
 label:
-  vi: Ngoại vệ tinh (exomoon)
+  vi: Mặt trăng ngoại hệ
   en: Exomoon
 definition:
-  vi: Mặt trăng quay quanh một hành tinh thuộc hệ sao khác. Một ngoại vệ tinh ở được phải cân bằng tới bốn nguồn nhiệt - ánh sao trực tiếp, ánh sao phản chiếu từ hành tinh mẹ, nhiệt hồng ngoại của chính hành tinh khí, và nhiệt thủy triều sinh ra từ bên trong - đồng thời tránh các vành đai bức xạ của hành tinh mẹ. Pandora chính là một ngoại vệ tinh như vậy. Tính đến nay loài người chưa xác nhận chắc chắn được ngoại vệ tinh nào.
+  vi: Một mặt trăng quay quanh một hành tinh ở một hệ sao khác. Một mặt trăng ngoại hệ có thể sinh sống được phải cân bằng được bốn nguồn nhiệt - ánh sáng sao trực tiếp, ánh sáng sao phản chiếu từ hành tinh chủ, bức xạ hồng ngoại của chính hành tinh khí khổng lồ, và nhiệt thủy triều sinh ra bên trong nó - trong khi phải né tránh các vành đai bức xạ của hành tinh chủ. Pandora chính là một mặt trăng ngoại hệ như vậy. Cho đến nay, vẫn chưa có mặt trăng ngoại hệ nào được xác nhận chắc chắn.
   en: A moon that orbits a planet in another star system. A habitable exomoon must balance up to four heat sources - direct starlight, starlight reflected off its host planet, the gas giant's own infrared glow, and tidal heat generated within - while dodging the host planet's radiation belts. Pandora is exactly such an exomoon. As yet, no exomoon has been firmly confirmed.
 see_also:
   - tidal-heating
   - habitable-zone
   - alpha-centauri
 category: planet
-cover_prompt: >-
-  A painted space scene of a small blue-green moon hanging close in front of an
-  enormous banded gas giant that fills the background, the moon catching light on
-  one side. Cool Pandora palette, cream-and-rust planet bands, soft painterly
-  atmosphere, no text or labels.
+cover_prompt: A painted space scene of a small blue-green moon hanging close in front of an enormous banded gas giant that fills the background, the moon catching light on one side. Cool Pandora palette, cream-and-rust planet bands, soft painterly atmosphere, no text or labels.

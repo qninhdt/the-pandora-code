@@ -1,16 +1,12 @@
 id: spin-orbit-resonance
 label:
-  vi: Cộng hưởng quay-quỹ đạo
+  vi: Cộng hưởng spin-quỹ đạo
   en: Spin-orbit resonance
 definition:
-  vi: "Mối quan hệ số nguyên đơn giản giữa số vòng một thiên thể tự quay và số vòng nó đi quanh quỹ đạo. Khóa thủy triều là trường hợp 1:1 (quay một vòng cho mỗi vòng quỹ đạo). Nhưng còn trạng thái khác: Sao Thủy bị kẹt trong cộng hưởng 3:2 - quay đúng ba vòng cho mỗi hai vòng quanh Mặt Trời - vì quỹ đạo của nó quá lệch tâm. Đây là ngoại lệ cho thấy vì sao mọi mặt trăng tròn lớn lại chọn 1:1."
-  en: "A simple whole-number relationship between how many times a body spins and how many times it orbits. Tidal locking is the 1:1 case (one spin per orbit). But other states exist: Mercury is trapped in a 3:2 resonance - exactly three spins for every two trips around the Sun - because its orbit is so eccentric. It is the exception that explains why large round moons settle into 1:1."
+  vi: 'Mối quan hệ tỷ lệ số nguyên đơn giản giữa số lần một thiên thể tự quay và số vòng nó đi quanh quỹ đạo. Khóa thủy triều là trường hợp tỷ lệ 1:1 (một vòng tự quay cho mỗi vòng quỹ đạo). Nhưng cũng tồn tại các trạng thái khác: Sao Thủy bị mắc kẹt ở mức cộng hưởng 3:2 - quay chính xác ba vòng cho mỗi hai chuyến đi quanh Mặt Trời - bởi vì quỹ đạo của nó quá lệch tâm. Nó là ngoại lệ giúp giải thích tại sao các mặt trăng tròn, lớn thường ổn định ở tỷ lệ 1:1.'
+  en: 'A simple whole-number relationship between how many times a body spins and how many times it orbits. Tidal locking is the 1:1 case (one spin per orbit). But other states exist: Mercury is trapped in a 3:2 resonance - exactly three spins for every two trips around the Sun - because its orbit is so eccentric. It is the exception that explains why large round moons settle into 1:1.'
 see_also:
   - tidal-locking
   - synchronous-rotation
 category: concept
-cover_prompt: >-
-  A painted scene of a small rocky planet close to a bright star, the planet's
-  surface marking pointing different directions at successive orbital
-  positions, suggesting it spins more than once per orbit. Cool space palette
-  with a warm star, painterly, no text, no labels, no numbers.
+cover_prompt: A painted scene of a small rocky planet close to a bright star, the planet's surface marking pointing different directions at successive orbital positions, suggesting it spins more than once per orbit. Cool space palette with a warm star, painterly, no text, no labels, no numbers.

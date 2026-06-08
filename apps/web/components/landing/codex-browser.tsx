@@ -37,7 +37,7 @@ export function CodexBrowser({ heading, kicker, comingLabel, parts }: CodexBrows
           before it reaches the cards so they stay legible. */}
       <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 -z-20 h-[60vh]">
         <img
-          src="/images/landing/codex-field.png"
+          src="/images/pages/codex-field.png"
           alt=""
           className="size-full object-cover opacity-25"
         />

@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-tidal-engine",
+  "chapter_slug": "pandoras-deep-time",
+  "role": "inline",
+  "narrative_purpose": "Shows why a small moon stays geologically alive: Pandora hugging the giant Polyphemus is flexed by its gravity, the kneading heating its interior - the tidal engine that mirrors Jupiter's Io and Europa and resolves the 'should be cold and dead' paradox.",
+  "subject": "A relatively small moon hanging close beside the enormous banded bulk of a gas giant, the moon visibly stretched into a faint egg shape with its long axis pointing toward the planet. Glowing orange molten fractures thread the moon's interior and crust, brightest on the side facing the planet, as if it is being squeezed. The gas giant fills most of one side of the frame, its bands looming.",
+  "scene": "Space close to the gas giant, the moon dwarfed beside it, deep starfield and faint magnetic haze around.",
+  "camera": "Wide view placing the small flexed moon against the overwhelming curved flank of the giant planet for scale.",
+  "light": "Warm amber-orange glow leaking from the moon's stressed molten fractures, cool indigo space, dim reflected light on the planet's bands, subtle cyan haze.",
+  "palette": "Dominant cool void-indigo and dim cream-rust planet, deliberate ember-amber glow from the moon's molten seams, faint cyan haze.",
+  "style": "Painterly astronomical plate, naturalistic, textured planetary surfaces.",
+  "detail_level": "Crisp glowing fractures and egg-shaped distortion on the moon; the giant planet softer and atmospheric behind.",
+  "composition": "Gas giant's curved flank filling the right two-thirds, the small flexed moon on the left third, the molten side turned toward the planet so the cause reads as the squeeze.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "orbit lines", "force diagrams", "spacecraft"],
+  "consistency_notes": "Banded gas giant is Polyphemus, consistent with the rest of the chapter. The warm molten glow is the deliberate scarce warm accent. Cool Pandora palette dominates.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no orbit or force diagram lines, no photographic or 3D-render look, no lens flares, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"]
+}

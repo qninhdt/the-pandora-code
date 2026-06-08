@@ -3,15 +3,10 @@ label:
   vi: Chất siêu dẫn loại II
   en: Type-II superconductor
 definition:
-  vi: Lớp chất siêu dẫn (hợp kim chuyển tiếp như NbTi, hay gốm ôxit đồng như YBCO) cho từ trường xuyên qua một phần dưới dạng các xoáy lượng tử trong "trạng thái hỗn hợp", chịu được từ trường rất mạnh và dòng điện lớn. Là nền của mọi ứng dụng siêu dẫn thực tế và là nơi xảy ra ghim từ thông.
+  vi: Một lớp các chất siêu dẫn (các hợp kim kim loại chuyển tiếp như NbTi, hoặc gốm đồng-oxit như YBCO) cho phép từ trường xâm nhập một phần dưới dạng các xoáy lượng tử trong một "trạng thái hỗn hợp", có khả năng chịu đựng được từ trường và dòng điện rất cao. Đây là cơ sở của mọi ứng dụng siêu dẫn trong thực tế, và là nơi hiện tượng ghim từ thông diễn ra.
   en: A class of superconductors (transition-metal alloys like NbTi, or copper-oxide ceramics like YBCO) that lets magnetic field partially penetrate as quantized vortices in a "mixed state", tolerating very high fields and currents. The basis of all practical superconductivity, and where flux pinning happens.
 see_also:
   - flux-pinning
   - meissner-effect
 category: concept
-cover_prompt: >-
-  Cutaway macro view of a dark ceramic type-II superconductor in a strong
-  magnetic field, showing an ordered forest of narrow blue vortices partially
-  penetrating the material while the rest of the field is pushed aside. The
-  image should feel like a real material under extreme conditions, highlighting
-  the mixed state and internal structure, with no text.
+cover_prompt: Cutaway macro view of a dark ceramic type-II superconductor in a strong magnetic field, showing an ordered forest of narrow blue vortices partially penetrating the material while the rest of the field is pushed aside. The image should feel like a real material under extreme conditions, highlighting the mixed state and internal structure, with no text.

@@ -64,13 +64,27 @@ start at `fig-01`).
 `OPENAI_BASE_URL`, `OPENAI_IMAGE_MODEL`) in `.env`. Single figure:
 `pnpm gen-images --figure fig-NN-… [--force]`.
 
-### 4. Translate - `pandora-translate`
-Author `content/chapters/{slug}/vi.mdx` from `en.mdx`: body + every figure
-caption + callouts, in one pass. VI must read as native VI (see that skill's
-naturalness checklist). Set `meta.yaml` `status: published` once VI is done and
-both mdx exist.
+### 4. Figure annotations - `pandora-art-director`
+The figures now have real pixels, so author their callout labels. For each
+AI-generated image figure in `en.mdx`:
+- Ensure it is a `<DiagramFigure>` (convert any `<Figure>`), carrying
+  `src/alt/figNo/caption/tier`.
+- READ the generated PNG (`apps/web/public/images/chapters/{slug}/fig-NN-*.png`)
+  and author `labels=[{ x, y, side, label, note? }]` - `{x,y}` are percentages
+  of the image box placed on the actual features, `label` is the short callout,
+  `note` an optional second line. 2–4 labels per figure is the norm; never
+  clutter. English strings here (VI comes in the translate pass).
+- This pass MUST run after step 3 (coords depend on the real image) and before
+  step 5 (so translate carries the labels). Cover/background layers (`fig-00`,
+  `fig-99`) are decorative and get no labels.
 
-### 5. Validate
+### 5. Translate - `pandora-translate`
+Author `content/chapters/{slug}/vi.mdx` from `en.mdx`: body + every figure
+caption + every `<DiagramFigure>` label/note + callouts, in one pass. VI must
+read as native VI (see that skill's naturalness checklist). Set `meta.yaml`
+`status: published` once VI is done and both mdx exist.
+
+### 6. Validate
 ```
 pnpm check-glossary {slug}   # dangling glossary terms → non-zero
 pnpm validate:content        # schema + frontmatter
@@ -80,6 +94,6 @@ All three green = chapter done. Print summary + `/pandora figure <id>` hint.
 
 ## `/pandora write <slug>` vs `next`
 
-`write <slug>` is the same chain steps 0–5 for a named chapter, with the same
+`write <slug>` is the same chain steps 0–6 for a named chapter, with the same
 hard-error-if-no-research guard. `next` adds the resolve-next + research-prompt
 branch in front. `figure` / `translate` run a single step in isolation.

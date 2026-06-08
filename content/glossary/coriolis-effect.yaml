@@ -1,0 +1,13 @@
+id: coriolis-effect
+label:
+  vi: Hiệu ứng Coriolis
+  en: Coriolis effect
+definition:
+  vi: 'Sự lệch hướng biểu kiến sang một bên của không khí và nước chuyển động gây ra bởi chuyển động tự quay của hành tinh: trên một thế giới đang quay, một dòng chảy thẳng trông như bị bẻ cong sang một bên. Hiệu ứng này bẻ cong các luồng gió vốn sẽ chảy thẳng từ xích đạo đến cực thành các dòng chảy Đông-Tây, và từ đó phá vỡ vòng tuần hoàn thành các vòng riêng biệt. Tốc độ quay càng nhanh, hiệu ứng càng mạnh và các hoàn lưu càng hẹp. Lưu ý: nó chỉ có ý nghĩa ở các quy mô lớn như bão và các dòng hải lưu - nó không quyết định chiều xoáy của nước thoát trong bồn rửa.'
+  en: 'The apparent sideways deflection of moving air and water caused by a planet''s own spin: on a rotating world, a straight flow looks bent to one side. The effect bends winds that would otherwise run straight from equator to pole into east-west streams, and so breaks the circulation into separate loops. The faster the spin, the stronger the effect and the narrower the cells. Note: it only matters at large scales like storms and ocean currents - it does not decide which way a sink drains.'
+see_also:
+  - hadley-cell
+  - atmospheric-general-circulation
+  - superrotation
+category: concept
+cover_prompt: A painted view looking down on a spinning planet with a few smooth flow lines starting straight from the equator and curving gently sideways as they travel toward the pole, the curvature traced in soft glowing streaks. Cool teal and void-indigo, painterly, no text, no labels, no numbers.

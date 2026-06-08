@@ -1,0 +1,113 @@
+# Page background images — committed prompts.
+#
+# Read by scripts/gen-page-backgrounds.ts. The STYLE BIBLE
+# (content/art-direction/style-bible.md) is prepended verbatim to every prompt,
+# and content/art-direction/anchors/pandora-establishing.png is fed as a style
+# reference so these backdrops read as one world with the rest of the book.
+#
+# Each entry renders to apps/web/public/images/pages/{id}.png.
+# Keep these wide (16:9) — they sit full-bleed behind a page (landing sections
+# or a listing page header), so the composition must hold up with a dark
+# gradient and text laid over it.
+
+backgrounds:
+  - id: hero-vista
+    aspect: "16:9"
+    prompt: >-
+      A breathtaking establishing vista of Pandora at the blue hour: a cluster
+      of vast haze-wreathed floating mountains drifting over a bottomless
+      bioluminescent valley, ribbons of glowing teal mist threading between the
+      peaks, distant waterfalls dissolving into spore-fog. The brightest light
+      is alive — clusters of cyan and living-teal flora glowing on the rock
+      faces, faint magenta spores rising. Vast atmospheric depth, layered
+      distance fading into void-indigo. Cinematic wide naturalist composition
+      with generous empty haze in the upper third for a title to breathe.
+      Painterly, observed-from-life confidence.
+
+  - id: descent-deep
+    aspect: "16:9"
+    prompt: >-
+      A descent into a glowing Pandoran ravine seen from above: sheer dark cliff
+      walls draped in bioluminescent moss and fungal networks, volumetric
+      god-rays of teal light cutting down through layered spore-fog into the
+      darkness below, a single warm ember-amber glow deep at the bottom hinting
+      at something alive. Strong vertical depth, the eye drawn downward into the
+      haze. Rich indigo-and-teal shadow, never black. Quiet, contemplative,
+      mysterious.
+
+  - id: codex-field
+    aspect: "16:9"
+    prompt: >-
+      A wide, calm field of drifting bioluminescent spores and seed-pods
+      floating over a dark Pandoran valley floor at night, like a hovering
+      constellation of soft cyan and teal lights suspended in still air, faint
+      glowing flora scattered across the ground far below. Very even, low-drama
+      composition — a quiet luminous texture rather than a single subject — so
+      it can sit subtly behind a grid of cards. Deep void-indigo base, sparse
+      warm magenta accents.
+
+  - id: cta-horizon
+    aspect: "16:9"
+    prompt: >-
+      A distant Pandoran horizon at deep dusk: the gas-giant Polyphemus and a
+      sliver of aurora glowing low over a far range of silhouetted floating
+      mountains, a luminous teal-and-cyan band of atmospheric light along the
+      horizon, foreground dissolving into dark bioluminescent canopy and rising
+      spore-haze. Expansive, hopeful, an invitation outward. Cool palette
+      dominant with a restrained warm amber glow at the horizon line.
+
+  # ---- Listing-page backdrops ----
+  # These sit full-bleed behind a page header under a heavy dark scrim, so they
+  # must stay calm and even — a luminous mood, never a competing subject.
+
+  - id: chapters
+    aspect: "16:9"
+    prompt: >-
+      A vast Pandoran archive seen from a distance at night: countless faintly
+      glowing specimen-plates and bioluminescent leaves arranged like a hanging
+      gallery across a dark canyon wall, each a soft rectangle of teal and cyan
+      light receding into haze. Even, gridlike rhythm of distant glows rather
+      than one subject, deep void-indigo base, sparse warm magenta motes
+      drifting. Calm, orderly, contemplative — a library of living things.
+
+  - id: glossary
+    aspect: "16:9"
+    prompt: >-
+      A quiet constellation of isolated bioluminescent specimens floating in
+      dark Pandoran air, each a small distinct glow — a spore, a seed-pod, a
+      curl of fungal light — evenly spaced like entries in a catalogue,
+      connected by the faintest threads of teal mist. Very low drama, dark
+      void-indigo field, soft cyan and restrained magenta points of light. A
+      calm taxonomic stillness, room to breathe between each glow.
+
+  - id: authors
+    aspect: "16:9"
+    prompt: >-
+      A solitary observation point on Pandora at deep night: a quiet ledge
+      overlooking a bioluminescent valley, a single warm amber lantern-glow
+      where an observer would sit, the rest dissolving into layered teal haze
+      and distant glowing flora. Intimate, hushed, reflective — the mood of a
+      single voice keeping watch. Cool palette with one restrained warm anchor,
+      generous dark negative space.
+
+  - id: parts
+    aspect: "16:9"
+    prompt: >-
+      Nine distant luminous massifs of Pandora arranged across a dark horizon,
+      each a haze-wreathed silhouette glowing a slightly different teal-to-cyan
+      hue, like chapters of a range receding into spore-fog. Even, rhythmic
+      spacing of the forms, deep void-indigo sky, faint aurora band low on the
+      horizon. Structural and calm — distinct sections of one world seen from
+      afar.
+
+  - id: timeline
+    aspect: "16:9"
+    prompt: >-
+      A breathtaking deep-time vista of Pandora: a colossal luminous river of
+      bioluminescent mist winding from the far dark horizon down through a
+      bottomless valley toward the viewer, like a glowing current of time, with
+      drifting floating mountains and tiers of glowing flora marking its course
+      at intervals. Strong sense of a single luminous path receding into
+      infinite atmospheric depth, layered teal-and-cyan haze fading to
+      void-indigo, a restrained warm amber glow at the distant source. Awe,
+      vastness, a journey stretching into the dark.

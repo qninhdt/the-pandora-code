@@ -1,16 +1,12 @@
 id: planetshine
 label:
-  vi: Ánh hành tinh
+  vi: Ánh sáng hành tinh
   en: Planetshine
 definition:
-  vi: Ánh sáng mặt trời phản chiếu từ một hành tinh xuống mặt trăng của nó, soi sáng phía đêm của mặt trăng - giống như "ánh đất" làm phần tối của Mặt Trăng non vẫn lờ mờ hiện ra. Vì Polyphemus to lớn và phản chiếu mạnh, ánh hành tinh của nó rọi xuống Pandora sáng đến mức gần như không có đêm tối thực sự ở bán cầu hướng về hành tinh - một sức ép tiến hóa hun đúc nên thế giới phát quang sinh học.
+  vi: Ánh sáng mặt trời phản chiếu từ một hành tinh lên mặt trăng của nó, thắp sáng nửa ban đêm của mặt trăng - rất giống với cách "ánh sáng Trái Đất" làm cho phần tối của Mặt Trăng lưỡi liềm mờ ảo hiện ra. Vì Polyphemus rất lớn và có tính phản chiếu cao, ánh sáng hành tinh của nó hắt lên Pandora sáng đến mức bán cầu hướng về hành tinh chủ hiếm khi chìm vào bóng tối thực sự - một áp lực tiến hóa đã góp phần định hình thế giới phát quang sinh học của nó.
   en: Sunlight reflected off a planet onto its moon, lighting the moon's night side - much like "earthshine" makes the dark part of a young crescent Moon faintly visible. Because Polyphemus is huge and highly reflective, its planetshine on Pandora is bright enough that the planet-facing hemisphere rarely goes truly dark - an evolutionary pressure that helped shape its bioluminescent world.
 see_also:
   - tidal-locking
   - exomoon
 category: planet
-cover_prompt: >-
-  A painted night scene on an alien moon, a huge banded gas giant in a near-full
-  phase washing the dark landscape below in soft reflected blue-green light,
-  glowing bioluminescent plants beneath. Cool void-indigo palette, gentle
-  reflected glow, painterly, no text, no labels, no numbers.
+cover_prompt: A painted night scene on an alien moon, a huge banded gas giant in a near-full phase washing the dark landscape below in soft reflected blue-green light, glowing bioluminescent plants beneath. Cool void-indigo palette, gentle reflected glow, painterly, no text, no labels, no numbers.

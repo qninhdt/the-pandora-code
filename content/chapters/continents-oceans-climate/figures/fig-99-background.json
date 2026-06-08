@@ -1,0 +1,20 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "continents-oceans-climate",
+  "role": "hero",
+  "narrative_purpose": "The dim, immersive macro vista the chapter's long-form text floats over - a vast, hazy planetary atmosphere seen from very high up, dark and low-contrast so overlaid reading stays legible.",
+  "subject": "An ultra-wide, panoramic view from very high in Pandora's upper atmosphere, looking out across an immense expanse of slowly banded cloud and ocean far below, the curve of the world barely suggested at the edges. No single focal subject - just layer upon layer of atmospheric haze, faint cloud bands, and the dim glow of distant seas dissolving into murk.",
+  "scene": "The high, quiet upper air at dusk, everything soft and far away, deep atmospheric depth, detail fading into haze in every direction.",
+  "camera": "Extreme high-altitude ultra-wide panorama, looking out and slightly down, vast and distant.",
+  "light": "Very dim and even, no bright highlights; a low, moody ambient glow with faint cool light pooling in the far cloud bands.",
+  "palette": "Almost entirely deep void-indigo and dark ocean-teal, with only the faintest misty-cyan in the distant haze; no warm accent, kept dark throughout.",
+  "style": "Painterly atmospheric mood plate, very soft and low-contrast, immersive and dim, NOT a sharp focal illustration, NOT a 3D render.",
+  "detail_level": "Low and soft throughout - intentionally hazy and dim so text can sit over it; no crisp focal element anywhere.",
+  "composition": "Wide horizontal layering of haze and faint cloud bands, dark and even across the whole frame, empty of any bright or sharp focal point.",
+  "exclude": ["text", "letters", "numbers", "labels", "bright focal subject", "high contrast", "sharp foreground object", "UI", "watermark", "logos"],
+  "consistency_notes": "This is the dim background layer, distinct from the crisp fig-00-cover. Keep it dark, hazy, low-contrast, and focal-point-free so overlaid long-form text remains readable.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no bright focal subject, no high contrast, no sharp foreground, no diagram chrome, no 3D-render or photographic look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

@@ -1,0 +1,12 @@
+id: superrotation
+label:
+  vi: Siêu tự quay (Superrotation)
+  en: Superrotation
+definition:
+  vi: Hiện tượng trong đó toàn bộ bầu khí quyển của một thế giới quay nhanh hơn rõ rệt so với bề mặt rắn bên dưới nó - đôi khi nhanh hơn hàng chục lần. Hiện tượng này xuất hiện trên các thiên thể quay chậm có bầu khí quyển dày đặc, như Sao Kim và Titan, nơi các sóng khí quyển và thủy triều nhiệt liên tục bơm động lượng vào dòng chảy. Nó là chế độ động lực học mà một thế giới quay chậm, không khí đặc như Pandora có thể hướng tới, dẫn đến việc nhiệt độ được lan truyền đều khắp toàn cầu.
+  en: The phenomenon in which a world's whole atmosphere spins markedly faster than the solid surface beneath it - sometimes dozens of times faster. It shows up on slow-rotating bodies with thick atmospheres, like Venus and Titan, where atmospheric waves and thermal tides keep pumping momentum into the flow. It is the dynamical regime a slow-spinning, dense-aired world like Pandora can drift toward, with the consequence that heat gets spread evenly around the globe.
+see_also:
+  - coriolis-effect
+  - atmospheric-general-circulation
+category: concept
+cover_prompt: A painted view of a slowly spinning planet wrapped in a thick smooth band of fast-moving cloud that streaks far ahead of the dim surface below, motion blur in the cloud layer. Cool teal cloud over void-indigo, painterly haze, no text, no labels, no numbers.

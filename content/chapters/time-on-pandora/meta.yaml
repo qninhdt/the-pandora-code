@@ -3,28 +3,14 @@ part: the-world
 order: 2
 status: published
 title:
-  vi: Nhịp điệu thời gian trên Pandora
+  vi: Thời gian trên Pandora
   en: Time on Pandora
 subtitle:
-  vi: >-
-    Vì sao thứ lớn nhất trên bầu trời Pandora lại không bao giờ nhúc nhích - mà ngày tháng vẫn cứ
-    trôi: khóa thủy triều, bình động và vũ điệu của cơ học quỹ đạo
-  en: >-
-    Why the biggest thing in Pandora's sky never moves - yet a day still passes: tidal locking,
-    libration, and the dance of orbital mechanics
+  vi: Thời gian trên Pandora
+  en: 'Why the biggest thing in Pandora''s sky never moves - yet a day still passes: tidal locking, libration, and the dance of orbital mechanics'
 hook:
-  vi: >-
-    Người Na'vi có một câu nói làm thay cả chiếc đồng hồ: "về nhà trước lúc nhật thực". Đó không
-    phải thơ ca, mà là một giờ trong ngày - buổi xế chiều khi mặt trời sắp khuất sau hành tinh khổng
-    lồ và thế giới chìm vào bóng tối giữa ban ngày. Trên Trái Đất, nhật thực toàn phần là kỳ quan
-    hiếm hoi cả đời mới gặp một lần; trên Pandora, nó là tiếng chuông báo giờ mỗi ngày. Lần theo chữ
-    "vì sao" ấy là toàn bộ chương này.
-  en: >-
-    The Na'vi have a phrase that does the work of a clock: be home by eclipse. It is not poetry but
-    a time of day - the late afternoon when the sun slides behind the giant planet and the world
-    goes dark in the middle of daylight. On Earth a total eclipse is a once-in-a-lifetime wonder; on
-    Pandora it is a daily errand-bell. Following that "why" is the whole of this chapter - and the
-    answer is a single fact about how Pandora moves.
+  vi: 'Người Na''vi có một câu nói làm thay cả chiếc đồng hồ: "về nhà trước lúc nhật thực". Đó không phải thơ ca, mà là một giờ trong ngày - buổi xế chiều khi mặt trời sắp khuất sau hành tinh khổng lồ và thế giới chìm vào bóng tối giữa ban ngày. Trên Trái Đất, nhật thực toàn phần là kỳ quan hiếm hoi cả đời mới gặp một lần; trên Pandora, nó là tiếng chuông báo giờ mỗi ngày. Lần theo chữ "vì sao" ấy là toàn bộ chương này.'
+  en: 'The Na''vi have a phrase that does the work of a clock: be home by eclipse. It is not poetry but a time of day - the late afternoon when the sun slides behind the giant planet and the world goes dark in the middle of daylight. On Earth a total eclipse is a once-in-a-lifetime wonder; on Pandora it is a daily errand-bell. Following that "why" is the whole of this chapter - and the answer is a single fact about how Pandora moves.'
 authors:
   - bardabez
 reading_time_min: 23
@@ -96,7 +82,6 @@ sources:
     url: https://ytliu0.github.io/Mercury-SpinOrbitResonance/mercury.html
   - kind: community
     label: Community orbital reconstructions of the Polyphemus system (r/Avatar, Universe Sandbox)
-    url: >-
-      https://www.reddit.com/r/Avatar/comments/zyrwql/pandoras_orbit_and_eclipse_visualized_universe/
+    url: https://www.reddit.com/r/Avatar/comments/zyrwql/pandoras_orbit_and_eclipse_visualized_universe/
   - kind: research-note
     label: The Chronometric and Astrodynamical Profile of Pandora (chapter research note)

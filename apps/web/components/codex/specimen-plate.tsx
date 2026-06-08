@@ -102,7 +102,7 @@ export function SpecimenPlate({
   );
 
   const shell = cn(
-    "group relative flex min-h-64 flex-col overflow-hidden rounded-2xl border border-border transition-all duration-300",
+    "group relative isolate flex min-h-64 flex-col overflow-hidden rounded-2xl border border-border transition-all duration-300",
     coming ? "cursor-default opacity-55" : "hover:-translate-y-1 hover:border-border-strong",
     className,
   );

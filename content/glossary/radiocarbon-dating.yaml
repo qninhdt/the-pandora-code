@@ -1,0 +1,13 @@
+id: radiocarbon-dating
+label:
+  vi: Định tuổi bằng cacbon phóng xạ
+  en: Radiocarbon dating
+definition:
+  vi: Một phương pháp định tuổi sử dụng carbon-14, tuyệt hảo cho quá khứ gần - gỗ, xương, than củi, vải vóc - xuyên suốt chiều dài lịch sử nhân loại. Nhưng chu kỳ bán rã của nó chỉ khoảng 5.730 năm, do đó sau khoảng 50.000 năm thì về cơ bản không còn nguyên tử mẹ nào để đo đạc. Carbon-14 hoàn toàn vô dụng trong việc định tuổi đất đá hay thời gian sâu thẳm - dùng sai đồng hồ đến cả triệu lần.
+  en: A dating method using carbon-14, superb for the recent past - wood, bone, charcoal, cloth - across the span of human history. But its half-life is only ~5,730 years, so after about 50,000 years there is essentially no parent left to measure. Carbon-14 is completely useless for dating rocks or deep time - the wrong stopwatch by a factor of a million.
+see_also:
+  - half-life
+  - radiometric-dating
+  - deep-time
+category: concept
+cover_prompt: A painted still life of a piece of ancient charred wood and a fragment of bone on a dark surface, faintly glowing cool teal, conveying recent organic remains rather than stone, painterly naturalist plate, no text or numbers.

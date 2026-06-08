@@ -3,15 +3,11 @@ label:
   vi: Khóa thủy triều
   en: Tidal locking
 definition:
-  vi: Trạng thái khi một thiên thể quay đúng một vòng quanh trục mỗi khi nó đi trọn một vòng quỹ đạo, nên nó luôn quay cùng một mặt về phía vật thể nó quay quanh. Lực hấp dẫn kéo căng thiên thể thành hình bầu dục, và ma sát của khối phình thủy triều ấy dần hãm vòng quay cho tới khi chu kỳ tự quay khớp với chu kỳ quỹ đạo. Mặt Trăng bị khóa với Trái Đất theo kiểu này; trong cốt truyện, Pandora bị khóa với Polyphemus - nên ngày của nó chính là tháng của nó.
+  vi: Trạng thái trong đó một thiên thể tự quay đúng một vòng quanh trục của nó cho mỗi vòng quỹ đạo mà nó đi, do đó nó luôn giữ nguyên một mặt hướng về phía vật thể mà nó quay quanh. Lực hấp dẫn kéo giãn thiên thể đó thành hình quả trứng, và ma sát trong cái bướu thủy triều đó dần dần hãm tốc độ quay của nó lại cho đến khi chu kỳ quay khớp với quỹ đạo. Mặt Trăng bị khóa với Trái Đất theo cách này; trong cốt truyện, Pandora bị khóa với Polyphemus - vì vậy một ngày của nó cũng dài bằng một tháng của nó.
   en: The state in which a body spins exactly once on its axis for each orbit it makes, so it keeps the same face turned toward the object it circles. Gravity stretches the body into an egg shape, and friction in that tidal bulge slowly brakes its spin until rotation matches the orbit. The Moon is locked to Earth this way; in canon, Pandora is locked to Polyphemus - so its day is its month.
 see_also:
   - synchronous-rotation
   - libration
   - tidal-heating
 category: concept
-cover_prompt: >-
-  A painted scene of a small blue-green moon beside a huge banded gas giant, a
-  faint dashed arc showing the moon's orbit, the same patch of the moon's
-  surface always turned toward the planet. Cool void-indigo space, soft
-  painterly glow, no text, no labels, no numbers.
+cover_prompt: A painted scene of a small blue-green moon beside a huge banded gas giant, a faint dashed arc showing the moon's orbit, the same patch of the moon's surface always turned toward the planet. Cool void-indigo space, soft painterly glow, no text, no labels, no numbers.

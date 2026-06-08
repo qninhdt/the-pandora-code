@@ -1,0 +1,13 @@
+id: hadley-cell
+label:
+  vi: Hoàn lưu Hadley
+  en: Hadley cell
+definition:
+  vi: 'Vòng tuần hoàn không khí lớn nhất, lấp đầy vùng nhiệt đới: không khí ẩm ấm bốc lên ở xích đạo, trút mưa khi nó nguội đi, trôi dạt về phía các cực ở trên cao, và chìm trở xuống dưới dạng không khí khô ở vĩ độ khoảng 30°. Nhánh bốc lên tạo ra các khu rừng mưa nhiệt đới; nhánh chìm xuống tạo ra những sa mạc rộng lớn. Chiều rộng của vòng tuần hoàn này phụ thuộc vào tốc độ tự quay của thế giới: quay chậm hơn sẽ làm nó rộng ra, đẩy cả vành đai ẩm ướt và vành đai khô cằn ra xa xích đạo hơn.'
+  en: 'The largest loop of atmospheric circulation, filling the tropics: warm moist air rises at the equator, dumps its rain as it cools, drifts poleward high up, and sinks back down as dry air near 30° latitude. The rising branch makes tropical rainforests; the sinking branch makes the great deserts. The cell''s width depends on how fast the world spins: slower rotation widens it, pushing both the wet belt and the dry belt farther from the equator.'
+see_also:
+  - atmospheric-general-circulation
+  - intertropical-convergence-zone
+  - coriolis-effect
+category: concept
+cover_prompt: 'A painted cross-section of a planet''s tropics showing one big loop of air: warm air rising in a tall plume of glowing cloud at the centre, spreading out high above, and sinking into clear dry sky to either side. Cool teal cloud, void-indigo sky, painterly, no text, no labels, no numbers.'

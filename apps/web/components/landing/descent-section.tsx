@@ -4,7 +4,7 @@ import { GlassPanel } from "@/components/codex/glass-panel";
 import { FadeInOnScroll } from "@/components/motion/fade-in-on-scroll";
 import { Parallax } from "@/components/motion/parallax";
 
-const DESCENT_BG = "/images/landing/descent-deep.png";
+const DESCENT_BG = "/images/pages/descent-deep.png";
 
 interface DescentSectionProps {
   kicker: string;

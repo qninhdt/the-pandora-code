@@ -3,14 +3,10 @@ label:
   vi: Vùng ở được
   en: Habitable zone
 definition:
-  vi: Dải khoảng cách quanh một ngôi sao nơi một thế giới có bầu khí quyển phù hợp có thể giữ nước lỏng trên bề mặt - không quá gần để nước sôi cạn, không quá xa để nước đóng băng. Vị trí của dải này phụ thuộc vào độ sáng của sao; sao sáng hơn đẩy dải ra xa hơn. Còn gọi vui là "vùng Goldilocks".
+  vi: Dải khoảng cách quanh một ngôi sao nơi một thế giới có bầu khí quyển phù hợp có thể giữ nước lỏng trên bề mặt - không quá gần để nước sôi bốc hơi hết, cũng không quá xa để bị đóng băng cứng. Vị trí của dải này phụ thuộc vào độ sáng của ngôi sao; ngôi sao càng sáng thì vùng này càng lùi xa hơn. Thường được gọi vui là "Vùng Goldilocks".
   en: The band of distances around a star where a world with a suitable atmosphere can keep liquid water on its surface - not so close that water boils away, not so far that it freezes solid. The band's location depends on the star's luminosity; a brighter star pushes it farther out. Nicknamed the "Goldilocks zone".
 see_also:
   - alpha-centauri
   - exomoon
 category: concept
-cover_prompt: >-
-  A painted astronomical scene of a bright yellow star ringed by a soft glowing
-  band of temperate space, with scorched ember-orange space closer to the star
-  and cold deep-blue space farther out. Smooth glowing colour fields, no orbit
-  lines, no text, no labels.
+cover_prompt: A painted astronomical scene of a bright yellow star ringed by a soft glowing band of temperate space, with scorched ember-orange space closer to the star and cold deep-blue space farther out. Smooth glowing colour fields, no orbit lines, no text, no labels.

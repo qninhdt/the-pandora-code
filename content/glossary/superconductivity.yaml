@@ -1,18 +1,13 @@
 id: superconductivity
 label:
-  vi: Hiện tượng siêu dẫn
+  vi: Tính siêu dẫn
   en: Superconductivity
 definition:
-  vi: Trạng thái lượng tử vĩ mô trong đó điện trở của vật liệu rơi xuống đúng bằng không dưới một nhiệt độ tới hạn, để dòng điện chạy mãi không hao hụt. Heike Kamerlingh Onnes phát hiện năm 1911 ở thủy ngân.
+  vi: Một trạng thái lượng tử vĩ mô trong đó điện trở của vật liệu giảm xuống đúng bằng không dưới một nhiệt độ tới hạn, cho phép dòng điện chảy mãi mãi mà không bị thất thoát. Được phát hiện bởi Heike Kamerlingh Onnes trên thủy ngân vào năm 1911.
   en: A macroscopic quantum state in which a material's electrical resistance drops to exactly zero below a critical temperature, letting a current flow forever without loss. Discovered by Heike Kamerlingh Onnes in mercury in 1911.
 see_also:
   - cooper-pair
   - critical-temperature
   - meissner-effect
 category: concept
-cover_prompt: >-
-  A cryogenic laboratory scene centered on a closed metal superconducting loop
-  carrying a persistent blue-white current around its ring with no visible
-  power source attached, while cold vapor drifts around a frost-covered support
-  below. Emphasize zero resistance and continuous current in one tangible
-  object, with no text or symbols.
+cover_prompt: A cryogenic laboratory scene centered on a closed metal superconducting loop carrying a persistent blue-white current around its ring with no visible power source attached, while cold vapor drifts around a frost-covered support below. Emphasize zero resistance and continuous current in one tangible object, with no text or symbols.

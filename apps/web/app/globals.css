@@ -210,6 +210,12 @@ a:hover {
   margin-inline: auto;
 }
 
+@media (min-width: 1024px) {
+  .reading-column {
+    max-width: 94ch;
+  }
+}
+
 .prose-pandora {
   font-size: 1.125rem;
   line-height: 1.8;

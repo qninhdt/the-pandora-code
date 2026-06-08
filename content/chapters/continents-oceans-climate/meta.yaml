@@ -1,0 +1,103 @@
+slug: continents-oceans-climate
+part: the-world
+order: 5
+status: published
+title:
+  vi: Lục địa, đại dương, khí hậu
+  en: Continents, oceans, climate
+subtitle:
+  vi: Lục địa, đại dương, khí hậu
+  en: Why almost an entire moon is rainforest - and how the same law that places Earth's forests and deserts predicts Pandora's map before you ever see it
+hook:
+  vi: Đứng trên một sống núi của Australis, rừng mưa trải dài tới tận chân trời rồi đổ xuống Biển Đông, và bạn có thể tự hỏi vì sao Pandora hào phóng rừng nhiệt đới đến thế trong khi Trái Đất chỉ ban phát nó thành một dải hẹp quanh xích đạo. Câu trả lời không nằm ở Pandora. Nó nằm ở một cỗ máy không khí mà mọi hành tinh có khí quyển đều vận hành - và một khi hiểu nó, bạn sẽ đọc được tấm bản đồ của bất kỳ thế giới nào chỉ từ vài con số.
+  en: Stand on a ridge in Australis, where rainforest runs unbroken to the horizon and then spills into the Eastern Sea, and you might wonder why Pandora is so lavish with tropics when Earth rations them to a thin band at the equator. The answer is not on Pandora. It is in a machine made of air that every atmosphere runs - and once you understand it, you can read the map of any world from a handful of numbers.
+authors:
+  - bardabez
+reading_time_min: 27
+tags:
+  - climatology
+  - atmospheric-circulation
+  - biomes
+  - planetary-science
+  - comparative-climatology
+classification:
+  canon_pct: 22
+  inference_pct: 16
+  speculation_pct: 7
+  real_science_pct: 55
+related_chapters:
+  - where-is-pandora
+  - time-on-pandora
+  - pandoras-ocean
+glossary_terms:
+  - albedo
+  - radiative-equilibrium
+  - atmospheric-general-circulation
+  - hadley-cell
+  - intertropical-convergence-zone
+  - coriolis-effect
+  - superrotation
+  - adiabatic-lapse-rate
+  - thermohaline-circulation
+  - biome
+  - obliquity
+  - tidal-heating
+  - roche-limit
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-australis-ridge
+    role: hero
+    asset_status: ready
+  - id: fig-02-cosine-latitude
+    role: diagram
+    asset_status: ready
+  - id: fig-03-three-cell
+    role: diagram
+    asset_status: ready
+  - id: fig-04-widened-hadley
+    role: comparison
+    asset_status: ready
+  - id: fig-05-thermal-flywheel
+    role: diagram
+    asset_status: ready
+  - id: fig-06-ocean-upwelling
+    role: diagram
+    asset_status: ready
+  - id: fig-07-floating-falls
+    role: inline
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Australis - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Australis
+  - kind: canon
+    label: Eastern Sea - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Eastern_Sea
+  - kind: canon
+    label: Western Frontier - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Western_Frontier
+  - kind: canon
+    label: Hallelujah Mountains - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Hallelujah_Mountains
+  - kind: canon
+    label: Polyphemus - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Polyphemus
+  - kind: science
+    label: Hadley cell - Wikipedia
+    url: https://en.wikipedia.org/wiki/Hadley_cell
+  - kind: science
+    label: Atmospheric Dynamics on Terrestrial Planets (Guendelman & Kaspi, 2019)
+    url: https://www.weizmann.ac.il/EPS/kaspi/sites/EPS.kaspi/files/publications/Guendelman-Kaspi-2019.pdf
+  - kind: science
+    label: Superrotation on Venus, on Titan, and Elsewhere (Read & Lebonnois, 2018)
+    url: https://web.lmd.jussieu.fr/~sllmd/pub/REF/2018AREPS..46..175R.pdf
+  - kind: science
+    label: Interpreting Whittaker Biome Diagrams - Global Vegetation Project
+    url: https://gveg.wyobiodiversity.org/index.php/download_file/view/98/285
+  - kind: science
+    label: Climate and Biomes - SERC (Carleton College)
+    url: https://serc.carleton.edu/eslabs/weather/4a.html
+  - kind: research-note
+    label: Comparative Climatology, Planetary Dynamics, and Geographical Synthesis of the Exomoon Pandora (chapter research note)

@@ -75,7 +75,15 @@ than range - a paragraph should sound like Bardabez on every chapter. See
 5. **Components are a palette, not a checklist.** Use only what the chapter needs
    from the current library; build bespoke when needed; never force-fit. See the
    orchestrator's `references/component-palette.md`.
-6. **No plan-artifact references** in prose, frontmatter, comments, or component
+6. **AI-image figures are `<DiagramFigure>`, not `<Figure>`.** Any figure backed
+   by a generated PNG (`fig-NN-*`) MUST be authored as `<DiagramFigure>` so it can
+   carry callout labels and the global annotation toggle. Author it with
+   `src/alt/figNo/caption/tier` and NO `labels` yet - the image does not exist at
+   writing time, and label `{x,y}` coords are read off the real PNG later. The
+   figure-annotation pass (after `gen-images`, owned by `pandora-art-director`)
+   fills `labels=[…]`. Reserve plain `<Figure>` only for cases with no callouts
+   ever; prefer `<DiagramFigure>`.
+7. **No plan-artifact references** in prose, frontmatter, comments, or component
    names (no phase numbers, finding codes). Describe the thing itself.
 
 ## Output

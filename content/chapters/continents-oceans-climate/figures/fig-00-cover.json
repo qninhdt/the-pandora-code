@@ -1,0 +1,20 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "continents-oceans-climate",
+  "role": "hero",
+  "narrative_purpose": "The chapter's cover: Pandora seen whole from space, where the single most telling feature is a bright band of cloud wrapped around the equator - the visible signature of the circulation that places all its forests and seas.",
+  "subject": "A blue-green moon seen from high above space, filling most of the frame as a great curved sphere. One large landmass cloaked in deep teal rainforest sits below the middle; a vast dark ocean spreads beside it; and a single broad, bright belt of white-and-teal cloud wraps all the way around the moon's equator like a sash. The huge curved edge of a banded gas giant intrudes from one far corner.",
+  "scene": "Open space above the moon, deep and black, a scatter of faint stars, the gas giant's pale banded limb glowing softly at the corner.",
+  "camera": "Distant orbital view looking down on the whole moon, the sphere gently curved, slight three-quarter tilt.",
+  "light": "A single off-frame star lights one side of the moon; the bioluminescent forests give the night side a faint inner teal glow.",
+  "palette": "Cool void-indigo space, deep ocean-teal seas, living-teal forests, a bright misty-cyan equatorial cloud band; the gas giant a muted amber-grey.",
+  "style": "Painterly naturalist plate, hand-painted planetary portrait, soft atmospheric haze at the limb, NOT a photograph or 3D render.",
+  "detail_level": "High on the moon's surface texture and cloud band, softening into haze at the curved edge.",
+  "composition": "The moon dominant and centred, the bright equatorial cloud band as the clear horizontal feature, gas-giant limb anchoring one corner, generous black negative space.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "grid", "UI", "watermark", "logos", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette locked to the style anchor; the equatorial cloud band is the recurring motif of the chapter. Crisp focal portrait suitable as a thumbnail.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no grid, no diagram chrome, no UI, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

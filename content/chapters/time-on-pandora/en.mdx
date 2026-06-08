@@ -1,5 +1,10 @@
-<Figure
+<DiagramFigure
   src="/images/chapters/time-on-pandora/fig-01-sky-clock.png"
+  labels={[
+    { x: 58, y: 18, side: "left", label: "Polyphemus, fixed all day", note: "the biggest thing in the sky never moves" },
+    { x: 80, y: 40, side: "left", label: "The sun slides past behind it", note: "tell the time by the light, not the planet" },
+    { x: 50, y: 82, side: "left", label: "Long amber shadows", note: "late afternoon — near enough to eclipse" }
+  ]}
   alt="A Pandoran clearing in mid-afternoon with the banded disc of Polyphemus hanging fixed and motionless high in the sky while the small bright sun-star sits low and off to one side, casting long amber shadows"
   figNo="01"
   caption="The strangest clock on Pandora: the biggest thing in the sky never moves. Polyphemus hangs in a fixed quarter of the heavens all day and all night, while the small sun slides past behind it — so you tell the time not by the planet, but by the light."
@@ -45,8 +50,13 @@ If Pandora kept its face *perfectly* toward Polyphemus, the planet would hang no
 
 This wobble has a name — <GlossaryTerm slug="libration">libration</GlossaryTerm> — and it is not a flaw in the locking but a consequence of it being imperfect in two specific, understandable ways.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/time-on-pandora/fig-03-libration-nod.png"
+  labels={[
+    { x: 52, y: 18, side: "left", label: "One orbit's slow loop", note: "Polyphemus drifts against the stars" },
+    { x: 30, y: 45, side: "right", label: "East and west", note: "the moon speeds and slows on its oval path" },
+    { x: 72, y: 42, side: "left", label: "North and south", note: "the moon's tilt nods its poles toward and away" }
+  ]}
   alt="A composite showing the banded disc of Polyphemus at several slightly different positions against a starfield over one orbit, tracing a small looping nod east-west and up-down, above a dark Pandoran ridge"
   figNo="03"
   caption="The fixed planet is not quite fixed. Over one orbit Polyphemus traces a slow loop against the stars — drifting east and west as Pandora speeds up and slows on its slightly oval orbit, riding north and south as the moon's tilt turns its poles toward and away. The same wobble lets us, on Earth, peer around the edges of our own Moon."
@@ -63,14 +73,24 @@ Our Moon does exactly the same dance for exactly these reasons, and the gift of 
 
 Now we can return to the errand-bell and explain it, because the eclipse is just the moment the carousel carries you directly behind the pole.
 
+<EclipseDayClock
+  locale="en"
+  caption="Pandora's sky-clock. Polyphemus never moves; the sun rises, arcs over, and on its way down each afternoon slides behind the giant — and the world goes dark in the middle of daylight. Drag the time of day, or press play to run a full Pandoran day."
+/>
+
 Once each orbit — once each day — Pandora passes around the far side of Polyphemus from the sun. When it does, the bulk of the planet slides between the moon and the star, and the sun is blotted out: not by another moon, the way our eclipses work, but by the whole vast body of the planet Pandora belongs to. And because Polyphemus is *enormous* in that sky, filling a great wedge of it where our Moon barely covers the sun's disc, the blotting-out is not the few minutes of an Earthly eclipse but a long, deep, total darkness — by the reckoning of the people who live under it, the better part of an hour, arriving like clockwork in the afternoon.
 
 What happens on the ground in that hour is not subtle. On Earth, even a brief total eclipse drops the temperature several degrees and sets confused birds to roosting. On Pandora the sun is cut off completely and for far longer, and there is no daylight reflecting off anything to soften it — when the sun is behind the planet, the planet's own near face is its night side too, so no friendly <GlossaryTerm slug="planetshine">planetshine</GlossaryTerm> fills the gap. The world simply falls into true dark, and cold pours in behind the lost light. And then Pandora answers in the way only Pandora can: the forests light up. The daily eclipse is one of the great triggers of the moon's bioluminescent night-life, the cue that wakes a whole second ecosystem of glowing things and night-moving creatures, every afternoon, on schedule. "Be home by eclipse" is partly a warning: when the lights below come on, the things that hunt by them come out.
 
 But here the bell develops a subtlety, and it is the best piece of real orbital mechanics in the chapter. The eclipse does not, in fact, come every single day of the year. It comes every day for part of the year — and then, for another stretch, it does not come at all.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/time-on-pandora/fig-04-eclipse-season.png"
+  labels={[
+    { x: 52, y: 55, side: "left", label: "The planet's shadow cone", note: "a long cone of dark trailing away from the sun" },
+    { x: 78, y: 42, side: "left", label: "Riding above the shadow", note: "eclipse-free season — the sun is never blocked" },
+    { x: 80, y: 72, side: "left", label: "Threading the shadow", note: "the daily-eclipse season" }
+  ]}
   alt="A diagram-free painted scene showing a moon's tilted orbit around a gas giant relative to the sun: at one orbital position the moon's path carries it cleanly above the planet's long shadow cone, at another the path runs straight through the shadow"
   figNo="04"
   caption="Why the eclipse keeps seasons. Pandora's tilted orbit means that for much of the year the moon rides above or below the planet's long shadow and the sun is never blocked — eclipse-free seasons. Only when the geometry lines up, twice a year, does the orbit thread the shadow on every pass: the daily-eclipse seasons."
@@ -87,8 +107,13 @@ I have been a little loose, on purpose, and it is time to pay the debt, because 
 
 When I said Pandora's day equals one orbit, I meant its day relative to the *stars* — the time for the moon to turn once against the fixed background of the galaxy. Astronomers call that the <GlossaryTerm slug="sidereal-day">sidereal day</GlossaryTerm>, and for a locked moon it is exactly the orbital period, by definition. But the day you actually *live* — sunrise to sunrise, the bright-and-dark cycle that the body runs on — is measured against the *sun*, not the stars, and that is a slightly different number called the <GlossaryTerm slug="synodic-day">synodic day</GlossaryTerm>.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/time-on-pandora/fig-05-sidereal-synodic.png"
+  labels={[
+    { x: 30, y: 38, side: "right", label: "One turn against the stars", note: "the sidereal day, complete" },
+    { x: 62, y: 62, side: "left", label: "The little extra", note: "spin a touch further to bring the sun back overhead" },
+    { x: 88, y: 15, side: "left", label: "The system has crept along its orbit" }
+  ]}
   alt="A painted two-panel scene of a moon orbiting a gas giant that itself slowly circles a distant star, showing that after one full turn relative to the far stars the moon must rotate a little extra to bring the sun back overhead"
   figNo="05"
   caption="The little extra. After Pandora turns once against the far stars (the sidereal day), the whole Polyphemus system has crept along its own orbit around the sun — so the moon must turn a touch further to bring the sun back overhead. That small surplus is the difference between the day measured by stars and the day measured by sunlight."

@@ -3,15 +3,10 @@ label:
   vi: Nhiệt độ tới hạn
   en: Critical temperature
 definition:
-  vi: Nhiệt độ (ký hiệu Tc) mà dưới đó một vật liệu chuyển sang trạng thái siêu dẫn. Với siêu dẫn thường, Tc rất thấp (cần heli hoặc nitơ lỏng); một siêu dẫn ở nhiệt độ phòng - ổn định ở áp suất thường - vẫn là mục tiêu chưa đạt được.
+  vi: Nhiệt độ (ký hiệu là Tc) mà dưới đó vật liệu trở nên siêu dẫn. Đối với các chất siêu dẫn thông thường, Tc rất thấp (cần đến heli lỏng hoặc nitơ lỏng); một chất siêu dẫn ở nhiệt độ phòng và ổn định ở áp suất môi trường vẫn là một mục tiêu chưa đạt được.
   en: The temperature (denoted Tc) below which a material becomes superconducting. For ordinary superconductors Tc is very low (needing liquid helium or nitrogen); a room-temperature superconductor stable at ambient pressure remains an unachieved goal.
 see_also:
   - superconductivity
   - cooper-pair
 category: concept
-cover_prompt: >-
-  A laboratory close-up of a small ceramic superconducting pellet on a chilled
-  metal stage, half wrapped in dense liquid-nitrogen fog, with a sharp visual
-  transition where the cold lower portion glows with stable blue current while
-  the warmer upper portion remains dull and ordinary. Show a precise threshold
-  in one continuous scene, no labels or numbers.
+cover_prompt: A laboratory close-up of a small ceramic superconducting pellet on a chilled metal stage, half wrapped in dense liquid-nitrogen fog, with a sharp visual transition where the cold lower portion glows with stable blue current while the warmer upper portion remains dull and ordinary. Show a precise threshold in one continuous scene, no labels or numbers.

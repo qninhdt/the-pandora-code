@@ -1,0 +1,13 @@
+id: radiometric-dating
+label:
+  vi: Định tuổi bằng phương pháp phóng xạ
+  en: Radiometric dating
+definition:
+  vi: Xác định tuổi của một hòn đá bằng cách đo lường tỷ lệ của các nguyên tử "mẹ" phóng xạ còn sót lại so với các nguyên tử "con" mà chúng phân rã thành. Vì tốc độ phân rã là một hằng số mà không nhiệt độ, áp suất hay tính chất hóa học nào có thể thay đổi được, nó là một chiếc đồng hồ không thể bị mua chuộc - nền tảng để biết được tuổi của Trái Đất và các thiên thể khác.
+  en: Determining a rock's age by measuring the ratio of leftover radioactive "parent" atoms to the "daughter" atoms they decay into. Because the decay rate is a constant that no temperature, pressure, or chemistry can change, it is a clock that cannot be bribed - the basis for knowing the ages of the Earth and other bodies.
+see_also:
+  - half-life
+  - isochron
+  - uranium-lead-dating
+category: concept
+cover_prompt: A painted abstract of a glowing crystal cut open to show a bright inner glow slowly giving way to a cooler outer glow, suggesting a ticking transformation from one substance to another, cool indigo and amber palette, no text.

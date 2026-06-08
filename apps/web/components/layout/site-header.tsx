@@ -35,7 +35,7 @@ export function SiteHeader({ locale, brand, nav }: SiteHeaderProps) {
   const links = [
     { href: `${base}/chapters`, label: nav.chapters },
     { href: `${base}/glossary`, label: nav.glossary },
-    { href: `${base}/authors`, label: nav.authors },
+    { href: `${base}/author`, label: nav.authors },
     { href: `${base}/timeline`, label: nav.timeline },
   ];
 

@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-cosine-latitude",
+  "chapter_slug": "continents-oceans-climate",
+  "role": "diagram",
+  "narrative_purpose": "Shows why the equator runs hot and the poles cold: identical sunlight strikes the curved world square-on at the equator and at a glancing angle near the pole, concentrating versus spreading the same energy.",
+  "subject": "The curved limb of a planet shown from the side as a large arc. Two equal bundles of straight parallel light rays come in from one direction. The upper bundle hits the curve near its middle nearly head-on and lands on a small, intensely bright concentrated patch of glowing surface. The lower bundle strikes the curve near its bottom edge at a shallow grazing angle and smears across a long, dim, stretched-out strip of surface.",
+  "scene": "Dark space beside the planet's curved edge, soft haze along the limb, the two light bundles drawn as faintly glowing streaks of equal width.",
+  "camera": "Side-on diagrammatic view of the planetary curve, flat and clear.",
+  "light": "The concentrated patch glows hot and bright; the smeared strip is faint and cool; the incoming rays carry a soft even glow.",
+  "palette": "Void-indigo space and dark planetary surface, the concentrated patch warm amber-bright, the smeared strip cool dim teal, rays pale misty-cyan.",
+  "style": "Painterly plate that reads as a diagram through composition alone, soft glowing forms, NOT a hard vector chart, NOT a 3D render.",
+  "detail_level": "Moderate: clear contrast between the small bright patch and the long dim strip; soft painterly edges, no hard outlines.",
+  "composition": "The planet's curve filling one side, two equal ray bundles entering, the bright concentrated patch high and the dim stretched strip low, so the eye compares the two footprints directly.",
+  "exclude": ["text", "letters", "numbers", "labels", "angle markings", "rulers", "grid", "UI", "watermark", "logos"],
+  "consistency_notes": "Cool Pandora palette; warm amber used only to mark the concentrated equatorial heat. Reads as a teaching picture, not an annotated figure.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no angle symbols, no rulers, no grid, no diagram chrome, no 3D-render or photographic look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

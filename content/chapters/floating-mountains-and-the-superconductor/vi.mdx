@@ -20,8 +20,14 @@ Hãy bắt đầu với những gì được xác nhận trong phim và các tà
 
 Cốt truyện gốc chỉ đích danh thủ phạm: những ngọn núi bay được là nhờ <GlossaryTerm slug="unobtanium">unobtanium</GlossaryTerm>, một loại khoáng chất tập trung dày đặc ở lõi của chúng. Từ trường của Pandora mạnh một cách bất thường — lõi sắt của mặt trăng này vẫn vận hành như một máy phát điện hành tinh thông thường, nhưng lượng unobtanium chôn vùi dưới lòng đất được miêu tả là có khả năng khuếch đại từ trường nền đó lên gấp trăm lần. Nơi từ trường của Pandora giao thoa với từ trường của hành tinh khí khổng lồ Polyphemus mà nó xoay quanh, ta sẽ có một vùng từ thông chấn động mãnh liệt và đặc kịt: **Vùng xoáy từ** (Flux Vortex), nằm ngay phía trên dãy núi.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/floating-mountains-and-the-superconductor/fig-02-flux-vortex-map.png"
+  labels={[
+    { x: 26, y: 30, side: "right", label: "Từ trường của Polyphemus", note: "từ quyển khổng lồ của hành tinh khí" },
+    { x: 75, y: 55, side: "left", label: "Từ trường của Pandora", note: "từ trường nhỏ hơn của chính mặt trăng" },
+    { x: 52, y: 46, side: "left", label: "Xoáy Từ thông", note: "nơi hai từ trường chen lấn, rối vào nhau" },
+    { x: 50, y: 80, side: "right", label: "Ngay trên dãy Hallelujah", note: "những ngọn núi treo lơ lửng ngay bên dưới" }
+  ]}
   alt="Sơ đồ từ trường giao thoa giữa Pandora và Polyphemus tạo thành Vùng xoáy từ"
   figNo="02"
   caption="Từ trường của Pandora và từ trường của Polyphemus giao thoa và dồn nén thành Vùng xoáy từ, tập trung ngay phía trên dãy Hallelujah."
@@ -59,6 +65,8 @@ Nhưng thủy ngân lại không thích làm theo kịch bản đó. Khi Onnes l
 <Chart
   kind="line"
   xKey="t"
+  xLabel="Nhiệt độ (K)"
+  yLabel="Điện trở (Ω)"
   series={[{ key: "R", label: "Điện trở (Ω)", tone: "cyan" }]}
   data={[
     { t: "4.0", R: 0 },
@@ -73,6 +81,11 @@ Nhưng thủy ngân lại không thích làm theo kịch bản đó. Khi Onnes l
 
 Không phải "gần bằng không", mà là KHÔNG tròn trĩnh. Một dòng điện chạy trong vòng khép kín của loại vật liệu này sẽ chạy mải miết đến tận cùng thời gian mà không cần pin, không cần điện áp và cũng chẳng hao hụt đi chút nào — ít nhất là cho đến tận bây giờ người ta vẫn chưa đo được sự thất thoát nào. Onnes đã phát hiện ra <GlossaryTerm slug="superconductivity">tính siêu dẫn</GlossaryTerm>, và cái mức nhiệt độ khiến vật liệu "nhảy vực" được gọi là <GlossaryTerm slug="critical-temperature">nhiệt độ tới hạn</GlossaryTerm> (T꜀).
 
+<SuperconductorCooldown
+  locale="vi"
+  caption="Tự tay chạy lại thí nghiệm của Onnes. Kéo nhiệt độ xuống: phía trên nhiệt độ tới hạn, điện trở cư xử như một kim loại thường, nhưng ngay khoảnh khắc vượt qua Tc nó rơi thẳng xuống vực còn 0 — và nam châm phía trên mẫu vật thôi nằm yên mà khóa chặt vào trạng thái lơ lửng. (Hiển thị ở một Tc cỡ phòng thí nghiệm; mánh của unobtanium là đẩy chính cái vực đó lên tới nhiệt độ phòng.)"
+/>
+
 Cần tới 46 năm ròng rã sau đó người ta mới giải thích được *lý do tại sao*.
 
 ## Lý do các electron ngừng "đụng chạm"
@@ -83,8 +96,13 @@ Xưa nay electron luôn đẩy nhau. Chúng đều mang điện tích âm; ép h
 
 Bí kíp nằm ở chỗ các electron không hề cô độc. Chúng di chuyển xuyên qua một mạng lưới các ion dương, và khi một electron lướt qua, nó tiện tay "níu" nhẹ các ion dương nặng nề ấy về phía mình. Lũ ion này vốn cục mịch chậm chạp — chúng chỉ chao đảo nghiêng về một bên khi electron kia đã chạy tít đi đâu rồi, vô tình để lại một "vùng lõm" mang điện tích dương dày đặc chớp nhoáng trong mạng tinh thể. Ngay khoảnh khắc đó, một electron *thứ hai* trờ tới và bị hút chặt vào vùng lõm này. Nói nôm na, electron đi trước đã rẽ sóng tạo ra một cái "đuôi" điện dương mờ nhạt, để rồi electron đi sau hồn nhiên lướt trên ngọn sóng đó.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/floating-mountains-and-the-superconductor/fig-05-cooper-pair.png"
+  labels={[
+    { x: 30, y: 68, side: "right", label: "Electron thứ nhất", note: "kéo mạng lưới ion dương vào trong" },
+    { x: 72, y: 32, side: "left", label: "Bị hút vào vệt sóng", note: "electron thứ hai theo sau — một cặp liên kết" },
+    { x: 16, y: 22, side: "right", label: "Mạng lưới ion dương", note: "lưới dương mà sự ghép cặp mượn dùng" }
+  ]}
   alt="Cặp Cooper: một electron làm biến dạng mạng ion, electron thứ hai bị hút vào vùng đuôi tích điện dương"
   figNo="05"
   caption="Một electron kéo mạng tinh thể ion dương về phía trong, để lại một vùng điện dương chớp nhoáng; electron thứ hai bị hút vào vùng đó. Cả hai cùng di chuyển như một cặp bài trùng."
@@ -105,8 +123,13 @@ Dưới nhiệt độ tới hạn, các cặp Cooper không còn hành xử như
 
 Vào năm 1933, Walther Meissner và Robert Ochsenfeld phát hiện ra rằng chất siêu dẫn làm được nhiều trò hay ho hơn là chỉ dẫn điện một cách hoàn hảo. Hạ nhiệt độ của nó xuống dưới T꜀ trong một từ trường, và nó sẽ chủ động *đá phăng từ trường đó ra ngoài*. Từ thông từng xuyên qua kim loại nay bị tống khứ sạch sẽ; bên trong chất siêu dẫn, từ trường tụt xuống con số không. Đây chính là **hiệu ứng Meissner**, và nó là một sự <GlossaryTerm slug="diamagnetism">nghịch từ</GlossaryTerm> hoàn hảo — biến vật liệu thành một tấm gương từ tính không tì vết.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/floating-mountains-and-the-superconductor/fig-06-meissner-expulsion.png"
+  labels={[
+    { x: 10, y: 40, side: "right", label: "Từ trường tìm cách xâm nhập", note: "tiến đến từ bên ngoài" },
+    { x: 72, y: 28, side: "left", label: "Đường sức uốn vòng quanh", note: "dòng điện bề mặt không hao tổn đẩy chúng ra" },
+    { x: 50, y: 50, side: "right", label: "Bên trong trống rỗng", note: "từ trường bị đẩy hoàn toàn ra khỏi lòng vật" }
+  ]}
   alt="Các đường sức từ uốn cong quanh và đi ra ngoài một quả cầu siêu dẫn"
   figNo="06"
   caption="Dưới nhiệt độ tới hạn, chất siêu dẫn hất tung mọi đường sức từ ra khỏi ruột của nó — một tính nghịch từ hoàn hảo."
@@ -143,8 +166,13 @@ Chất siêu dẫn <GlossaryTerm slug="type-ii-superconductor">Loại II</Glossa
 
 Từ trường không hề ùa vào ồ ạt. Nó xuyên thủng vật liệu bằng một rừng các sợi rời rạc, được lượng tử hoá — gọi là **xoáy Abrikosov**, mỗi sợi là một ống nhỏ li ti mang theo vỏn vẹn một lượng tử từ thông, chứa bên trong một lõi "thường dân" (không siêu dẫn), và được bao bọc bởi một vòng xoáy siêu dòng điện của riêng nó. Phần "thịt" nằm giữa những sợi này vẫn duy trì tính siêu dẫn ngon lành. Khối vật liệu bị cả tỷ mũi kim từ tính khâu chằng chịt, nhưng nó chẳng mảy may bận tâm.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/floating-mountains-and-the-superconductor/fig-08-abrikosov-vortices.png"
+  labels={[
+    { x: 50, y: 20, side: "right", label: "Một rừng sợi từ thông", note: "từ trường xuyên qua tại những điểm rời rạc" },
+    { x: 55, y: 75, side: "left", label: "Một xoáy lượng tử hóa", note: "mỗi xoáy mang đúng một lượng tử từ thông" },
+    { x: 22, y: 70, side: "right", label: "Xuyên qua lòng vật", note: "trạng thái hỗn hợp của siêu dẫn loại II" }
+  ]}
   alt="Mạng lưới các xoáy từ thông Abrikosov xuyên qua chất siêu dẫn loại II"
   figNo="08"
   caption="Trong trạng thái hỗn hợp, từ trường xuyên qua chất siêu dẫn Loại II như một khu rừng gồm những xoáy lượng tử rời rạc — mỗi xoáy mang theo đúng một lượng tử từ thông."
@@ -161,8 +189,13 @@ Và những sợi từ thông đó, chính là những chiếc móc xích treo n
 
 Giờ thì xem điều này tạo ra ma thuật gì nhé. Các sợi từ thông bị khóa chặt vào mạng tinh thể của chất siêu dẫn. Đồng thời, chúng *cũng* bám rễ vào từ trường của nam châm bên ngoài. Vậy nên, xét về bản chất, chất siêu dẫn đã bị khâu liền vào chính từ trường đó — không phải nằm đè lên, mà là bị *xâu kim luồn chỉ* qua. Thử nhấc nó lên xem, các sợi từ bị ghim sẽ ghì nó xuống. Thử ấn nó xuống, lực đẩy Meissner sẽ hất nó lên. Thử đẩy nó sang ngang, đám sợi từ sẽ giãy nảy chống lại việc bị kéo chệch khỏi ổ khuyết tật. Phương hướng nào cũng có một lực hồi phục chực sẵn. Lối thoát của Earnshaw đã bị bịt kín.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/floating-mountains-and-the-superconductor/fig-09-flux-pinning-lock.png"
+  labels={[
+    { x: 42, y: 42, side: "left", label: "Sợi từ ghim trong khuyết tật", note: "lõi xoáy rơi vào các lỗi của mạng tinh thể" },
+    { x: 16, y: 50, side: "right", label: "Khóa cứng theo mọi hướng", note: "không thể trôi dọc theo các sợi từ" },
+    { x: 62, y: 50, side: "left", label: "Khâu chặt vào từ trường", note: "cố định cứng trong cả ba chiều" }
+  ]}
   alt="Sợi từ thông bị ghim tại các khuyết tật mạng tinh thể, khóa cứng chất siêu dẫn trong không gian ba chiều"
   figNo="09"
   caption="Lõi xoáy rớt vào các điểm khuyết tật của mạng tinh thể và bị ghim chặt ở đó. Chất siêu dẫn gần như bị khâu liền vào từ trường — khóa cứng ngắc theo cả ba chiều không gian."
@@ -171,8 +204,13 @@ Giờ thì xem điều này tạo ra ma thuật gì nhé. Các sợi từ thông
 
 Đây chính là <GlossaryTerm slug="quantum-locking">khóa lượng tử</GlossaryTerm>, và nếu bạn đã từng xem video thực nghiệm trong phòng lab, bạn sẽ thấy ngôn từ không đủ sức diễn tả cái độ quái đản của nó. Một chiếc đĩa YBCO nhỏ bằng đồng xu, được làm lạnh bằng nitơ lỏng, đặt trên một đường ray nam châm — và nó cứ thế *chết trân* ở đấy, đông cứng giữa không trung ở đúng cái độ cao và độ nghiêng mà bạn vừa chừa lại. Bạn có lật úp nguyên cái đường ray lại thì chiếc đĩa vẫn treo ngược bên dưới, lơ lửng phỉ nhổ vào lực hấp dẫn, kiên quyết không rơi. Nếu cho nó một đường ray vòng tròn, chiếc đĩa sẽ trượt mượt mà không ma sát quanh đường ray đó, ngoan ngoãn giữ đúng khoảng cách lơ lửng ban đầu suốt dọc đường mà chẳng cần ai phải động tay vào.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/floating-mountains-and-the-superconductor/fig-13-levitating-disc.png"
+  labels={[
+    { x: 40, y: 42, side: "right", label: "Khóa cứng, không phải cân bằng", note: "cố định cả độ cao lẫn độ nghiêng, không cần giữ" },
+    { x: 44, y: 64, side: "right", label: "Ghim ở một khoảng cách cố định", note: "lơ lửng phía trên đường ray từ" },
+    { x: 82, y: 18, side: "left", label: "Lật ngược lại vẫn treo", note: "giữ bên dưới đường ray, không chịu rơi" }
+  ]}
   alt="Một đĩa siêu dẫn lạnh bị khóa ở một góc nghiêng trên đường ray nam châm, và lơ lửng bên dưới khi đường ray lật úp"
   figNo="13"
   caption="Màn thị phạm ở phòng lab: một đĩa làm lạnh bị khóa cứng ở một góc nghiêng cố định trên đường ray nam châm — và ngay cả khi lật úp lại, nó vẫn treo ngược bên dưới chứ không hề rơi."
@@ -191,8 +229,13 @@ Giờ hãy mang theo hệ tư tưởng chuẩn xác này quay về Pandora, bạ
 
 Vùng xoáy từ đích thị là một đường ray nam châm, nhưng được phóng to lên tầm cỡ hành tinh: nơi từ trường của Pandora và Polyphemus giao nhau, đặc quánh và kết cấu chặt chẽ, đóng vai trò y như thanh ray neodymium nằm dưới chiếc đĩa YBCO. Khối unobtanium chôn ở lõi núi chính là chiếc đĩa siêu dẫn. Và cái chi tiết kịch bản tưởng chừng vô bổ nay bỗng trở nên sáng giá, đó là khi unobtanium được mô tả có cấu trúc *chuẩn tinh* (quasicrystal) băm vằm bởi vô số lỗ hổng vi mô — bởi lẽ, lỗ hổng chính là những tâm điểm ghim từ thông. Một vật liệu được mô tả là lỗ chỗ hàng tỷ khoang rỗng li ti, dù các nhà biên kịch có dụng ý hay không, cũng tự khắc hóa thành một cỗ máy ghim từ thông "đỉnh của chóp".
 
-<Figure
+<DiagramFigure
   src="/images/chapters/floating-mountains-and-the-superconductor/fig-10-quasicrystal-voids.png"
+  labels={[
+    { x: 26, y: 20, side: "right", label: "Mạng tựa tinh thể", note: "cấu trúc không lặp lại của unobtanium" },
+    { x: 50, y: 40, side: "right", label: "Một sợi mắc kẹt trong lỗ rỗng", note: "đường từ thông vướng và ghim lại ở đây" },
+    { x: 72, y: 86, side: "left", label: "Các lỗ rỗng hiển vi", note: "những tâm ghim rải khắp lòng vật" }
+  ]}
   alt="Cận cảnh mạng chuẩn tinh của unobtanium cho thấy các lỗ hổng vi mô bẫy các đường từ thông"
   figNo="10"
   caption="Cấu trúc chuẩn tinh của unobtanium, lỗ chỗ những khoảng trống vi mô — về mặt vật lý, đây đích thị là một cấu trúc đặc nghẹt các điểm ghim dành cho đường từ thông."
@@ -203,8 +246,14 @@ Thế là, những sợi từ thông khổng lồ của hành tinh sẽ đâm xu
 
 Thậm chí còn có một lợi thế cơ học cực kỳ xịn sò mà tài liệu hướng dẫn đã úp mở, và nó hoàn toàn có cơ sở. Lớp đá không có từ tính ở phần chân mỗi ngọn núi đóng vai trò như cục tạ chết, kéo trì mọi thứ xuống. Trong khi đó, cái lõi siêu dẫn bị ghim ở trên lại bướng bỉnh chống lại mọi sự xê dịch. Lực hấp dẫn níu cục tạ và lực hồi phục của các xoáy từ hoạt động y như hai chiếc lò xo đối nghịch, ép ngọn núi phải nằm yên ở một điểm cân bằng bền, tự duy trì — một trạng thái thụ động, không suy suyển và vĩnh cửu. Một bộ vây thuyền làm từ từ thông bị ghim; và một khối tạ dằn làm bằng đá núi bình thường.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/floating-mountains-and-the-superconductor/fig-11-ballast-keel.png"
+  labels={[
+    { x: 50, y: 12, side: "left", label: "Lực kéo lên", note: "lõi bị ghim khóa chặt vào từ trường phía trên" },
+    { x: 50, y: 38, side: "right", label: "Lõi siêu dẫn", note: "khâu chặt vào từ thông ở bề mặt" },
+    { x: 50, y: 72, side: "right", label: "Khối dằn nặng phía đáy", note: "đá trơ, không từ tính treo bên dưới" },
+    { x: 50, y: 90, side: "left", label: "Lực kéo xuống", note: "hai lò xo đối nghịch tìm được điểm cân bằng ổn định" }
+  ]}
   alt="Mặt cắt chéo của một ngọn núi lơ lửng: lõi siêu dẫn bị ghim ở trên, khối tạ đá không từ tính nặng trịch ở dưới"
   figNo="11"
   caption="Một lõi siêu dẫn bị ghim (bên trên) và khối tạ bằng đá thường không từ tính (bên dưới) đóng vai trò như hai lò xo ngược chiều, khóa chặt ngọn núi vào một trạng thái cân bằng tự duy trì."
@@ -240,8 +289,13 @@ Việc ghim từ thông chẳng phải là món đồ chơi xa xỉ. Nó đã tr
 
 Cái khóa lượng tử thần thánh giữ cho ngọn núi Pandora không rơi xuống đất cũng chính là thứ đang nâng bổng cả một đoàn tàu. Một cỗ xe đệm từ **maglev** siêu dẫn chẳng có bánh xe và cũng đoạn tuyệt luôn với đường ray; nó bị ghim chặt phía trên dải dẫn hướng từ tính y như cái cách chiếc đĩa YBCO lơ lửng trên đường ray của mình. Dòng tàu L0 của Nhật Bản — dùng nam châm niobium-titanium, heli lỏng — đã chở hành khách với vận tốc xé gió 603 km/h. Hay như một mẫu thiết kế siêu dẫn nhiệt độ cao ở Thành Đô ứng dụng luôn công nghệ ghim từ thông một cách trực diện đến độ toàn bộ khoang tàu tự khóa cứng vào đường ray nam châm vĩnh cửu theo một cách thụ động hoàn toàn, không cần bất kỳ hệ thống điều khiển chủ động nào, bê nguyên xi cái trạng thái thăng bằng buông tay của thí nghiệm phòng lab áp lên một cỗ xe khổng lồ mà bạn có thể leo lên ngồi.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/floating-mountains-and-the-superconductor/fig-12-maglev-track.png"
+  labels={[
+    { x: 70, y: 28, side: "left", label: "Ngọn núi thu nhỏ", note: "vật lý của Hallelujah, thu về một toa tàu" },
+    { x: 64, y: 56, side: "left", label: "Lơ lửng trên khe hở", note: "ghim từ thông giữ toa tàu phía trên đường ray" },
+    { x: 30, y: 72, side: "right", label: "Đường ray bị ghim", note: "cùng một cơ chế khóa, dựng thành tuyến đường sắt" }
+  ]}
   alt="Một tàu đệm từ siêu dẫn bị ghim chặt phía trên dải dẫn hướng từ tính"
   figNo="12"
   caption="Chính cái cơ chế ghim từ thông giúp giữ ngọn núi bay lơ lửng cũng đang nâng bổng một toa tàu đệm từ phía trên đường ray — một ngọn núi thu nhỏ, đang vận hành vù vù mỗi ngày."

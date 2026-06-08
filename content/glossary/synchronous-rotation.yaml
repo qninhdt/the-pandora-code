@@ -3,15 +3,11 @@ label:
   vi: Tự quay đồng bộ
   en: Synchronous rotation
 definition:
-  vi: "Hệ quả của khóa thủy triều: chu kỳ tự quay của một thiên thể bằng đúng chu kỳ nó quay quanh vật thể chủ, theo cộng hưởng 1:1. Điều này không có nghĩa là một mặt vĩnh viễn tối - thiên thể vẫn quay so với ngôi sao chiếu sáng nó, nên vẫn có ngày và đêm; chỉ là mặt quay về phía vật thể chủ thì luôn cố định. Đây là nhầm lẫn phổ biến nhất khi nói về Pandora."
-  en: "The consequence of tidal locking: a body's spin period equals its orbital period around its host, in a 1:1 resonance. It does not mean one face is permanently dark - the body still turns relative to the star lighting it, so it still has day and night; only the face toward its host stays fixed. This is the single most common misconception about Pandora."
+  vi: 'Hệ quả của khóa thủy triều: chu kỳ tự quay của một thiên thể bằng với chu kỳ quỹ đạo của nó quanh hành tinh chủ, trong một mức cộng hưởng 1:1. Nó không có nghĩa là một mặt chìm trong bóng tối vĩnh viễn - thiên thể đó vẫn quay tương đối với ngôi sao chiếu sáng nó, do đó nó vẫn có ngày và đêm; chỉ là cái mặt hướng về phía hành tinh chủ của nó thì luôn giữ nguyên. Đây là hiểu lầm phổ biến nhất về Pandora.'
+  en: 'The consequence of tidal locking: a body''s spin period equals its orbital period around its host, in a 1:1 resonance. It does not mean one face is permanently dark - the body still turns relative to the star lighting it, so it still has day and night; only the face toward its host stays fixed. This is the single most common misconception about Pandora.'
 see_also:
   - tidal-locking
   - sidereal-day
   - synodic-day
 category: concept
-cover_prompt: >-
-  A painted diagram-free scene of a moon at four points around its orbit of a
-  banded gas giant, the same surface marking facing the planet at every point
-  while the lit and dark halves rotate relative to a distant bright star. Cool
-  palette, painterly, no text, no labels, no arrows.
+cover_prompt: A painted diagram-free scene of a moon at four points around its orbit of a banded gas giant, the same surface marking facing the planet at every point while the lit and dark halves rotate relative to a distant bright star. Cool palette, painterly, no text, no labels, no arrows.

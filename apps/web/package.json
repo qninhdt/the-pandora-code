@@ -39,6 +39,7 @@
     "remark-gfm": "^4.0.0",
     "tailwind-merge": "^2.5.0",
     "three": "^0.184.0",
+    "yet-another-react-lightbox": "3.32.0",
     "zod": "^3.23.0"
   },
   "devDependencies": {

@@ -28,6 +28,9 @@ New components match the existing baseline:
   gateway used by the other 3D components.
 - Mobile-verified (works at ~375px) and desktop.
 - Bilingual-ready: any visible strings come from props, so EN/VI both render.
+- For chart-like components, render human-facing text from props all the way
+  through the UI: axis labels, legends, tooltips, annotations. Do not expose
+  raw technical keys (`t`, `R`, `flux`) when a readable label exists.
 
 ## What NOT to do
 

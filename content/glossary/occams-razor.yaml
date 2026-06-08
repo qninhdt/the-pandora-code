@@ -3,14 +3,10 @@ label:
   vi: Dao cạo Occam
   en: Occam's razor
 definition:
-  vi: "Nguyên tắc rằng không nên nhân các giả định lên quá mức cần thiết: giữa hai lời giải thích cùng giải thích một dữ kiện, hãy chọn cái đặt ra ít thực thể mới hơn. Không phải là khoa học đơn giản hơn thì đúng hơn, mà là gánh nặng chứng minh thuộc về lời giải thích nào tự thêm cho mình nhiều phép màu hơn. Đây là một trong các tiêu chí đánh giá một suy luận tốt."
-  en: "The principle that one should not multiply assumptions beyond necessity: between two explanations of the same fact, prefer the one that posits fewer new entities. It does not say the simpler story is automatically true - it says the burden of proof falls on whichever explanation grants itself more extra miracles. It is one of the criteria for judging a good inference."
+  vi: 'Nguyên lý cho rằng không nên nhân rộng các giả định vượt quá mức cần thiết: giữa hai lời giải thích cho cùng một sự thật, hãy ưu tiên lời giải thích viện đến ít thực thể mới hơn. Nó không nói rằng câu chuyện đơn giản hơn tự động là sự thật - nó nói rằng gánh nặng chứng minh rơi vào lời giải thích nào tự cho phép mình có nhiều phép màu thừa thãi hơn. Đây là một trong những tiêu chí để đánh giá một suy luận tốt.'
+  en: 'The principle that one should not multiply assumptions beyond necessity: between two explanations of the same fact, prefer the one that posits fewer new entities. It does not say the simpler story is automatically true - it says the burden of proof falls on whichever explanation grants itself more extra miracles. It is one of the criteria for judging a good inference.'
 see_also:
   - inference-to-the-best-explanation
   - abduction
 category: concept
-cover_prompt: >-
-  A single clean thin beam of cyan light cutting through a dense dark cloud of
-  tangled magenta threads, leaving one simple bright path while the excess
-  threads fall away into indigo shadow. Convey paring away unnecessary
-  assumptions to a minimal explanation, painterly and literal, no text.
+cover_prompt: A single clean thin beam of cyan light cutting through a dense dark cloud of tangled magenta threads, leaving one simple bright path while the excess threads fall away into indigo shadow. Convey paring away unnecessary assumptions to a minimal explanation, painterly and literal, no text.

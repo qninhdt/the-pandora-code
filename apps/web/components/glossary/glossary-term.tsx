@@ -1,6 +1,12 @@
 "use client";
 
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 
@@ -69,29 +75,28 @@ export function GlossaryTerm({
         </Tooltip>
       </span>
       <span className="sm:hidden">
-        <Popover>
-          <PopoverTrigger asChild>
+        <Dialog>
+          <DialogTrigger asChild>
             <button type="button" className={triggerClass}>
               {label}
             </button>
-          </PopoverTrigger>
-          <PopoverContent
-            side="top"
-            className="max-w-sm bg-[color:var(--background)] text-[color:var(--foreground)] border border-[color:var(--border)]"
-          >
+          </DialogTrigger>
+          <DialogContent className="max-w-sm">
             {renderPreview()}
-            <p className="text-xs font-mono uppercase tracking-wide mb-1 text-[color:var(--muted)]">
+            <DialogTitle className="font-mono text-xs uppercase tracking-wide text-[color:var(--muted)]">
               {term}
-            </p>
-            <p className="text-sm leading-relaxed mb-3">{definition}</p>
+            </DialogTitle>
+            <DialogDescription className="text-sm leading-relaxed text-[color:var(--foreground)]">
+              {definition}
+            </DialogDescription>
             <a
               href={`/${locale}/glossary#${slug}`}
-              className="text-xs font-medium text-[color:var(--accent)]"
+              className="mt-1 text-xs font-medium text-[color:var(--accent)]"
             >
               {locale === "vi" ? "Xem trong từ điển →" : "View in glossary →"}
             </a>
-          </PopoverContent>
-        </Popover>
+          </DialogContent>
+        </Dialog>
       </span>
     </>
   );

@@ -1,5 +1,10 @@
-<Figure
+<DiagramFigure
   src="/images/chapters/where-is-pandora/fig-01-eclipse-overhead.png"
+  labels={[
+    { x: 58, y: 22, side: "left", label: "Polyphemus", note: "the gas giant's banded face fills a third of the sky" },
+    { x: 70, y: 40, side: "right", label: "The sun, eclipsed", note: "the small bright star slides behind the giant's limb" },
+    { x: 20, y: 80, side: "left", label: "Twilight at noon", note: "the forest dims most of the way through every day" }
+  ]}
   alt="Looking up from a Pandoran ridge as the banded disc of Polyphemus slides across the small bright sun-star, the land dropping into daytime twilight"
   figNo="01"
   caption="Midday on Pandora, and the sun is going out. The banded face of Polyphemus slides across the small bright star, and the forest dims into a twilight that arrives most of the way through every single day."
@@ -20,8 +25,14 @@ Pandora orbits a star called <GlossaryTerm slug="alpha-centauri">Alpha Centauri<
 
 But Pandora does not orbit Alpha Centauri A directly. It orbits a planet that orbits the star: the gas giant **Polyphemus**, named by its first human surveyors for the one-eyed giant of Greek myth, because of a vast cyclopean storm that turns on its face like an eye. (The Na'vi call it *Naranawm*, "the Great Eye," which is the same thought arrived at from the ground.) Polyphemus is, in the canon's accounting, the fourth planet out from Alpha Centauri A, and it sits at roughly the distance Earth sits from our Sun — which is the first clue that someone building this world was paying attention, because that is exactly where you would put a planet if you wanted its moons to be warm.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/where-is-pandora/fig-02-system-orrery.png"
+  labels={[
+    { x: 10, y: 38, side: "right", label: "Alpha Centauri A", note: "the bright yellow sun Pandora's giant orbits" },
+    { x: 42, y: 52, side: "left", label: "Polyphemus", note: "a gas giant about one Earth-distance from the star" },
+    { x: 60, y: 57, side: "right", label: "Pandora", note: "the moon, hugging close against the giant" },
+    { x: 88, y: 33, side: "left", label: "B and Proxima", note: "the system's other two suns, far off in the dark" }
+  ]}
   alt="A painterly view of the Alpha Centauri A system from space: a yellow star, a distant banded gas giant with a small blue-green moon close beside it, and two faint distant stars in the dark"
   figNo="02"
   caption="The address from outside: the yellow sun Alpha Centauri A, the gas giant Polyphemus at about one Earth-distance out, and Pandora hugging close against it. Far off in the dark hang the system's other two suns — orange B and, much fainter, red Proxima."
@@ -46,8 +57,13 @@ The idea is almost embarrassingly simple, and then it isn't. A star pours out he
 
 The band's distance depends on the star. Light spreads out as it travels, thinning with the square of the distance: go twice as far from a star and each patch of ground gets a quarter of the light. So a bright star pushes its warm band far out, and a dim one pulls it close. Our Sun's band straddles Earth's orbit. Alpha Centauri A is a shade more luminous than the Sun — a little bigger, a little brighter, the same essential yellow-dwarf kind of star — so its warm band sits a touch farther out than ours. Put a planet a bit beyond one Earth-distance from Alpha Centauri A and you have put it in the temperate zone. Which is precisely where canon puts Polyphemus.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/where-is-pandora/fig-03-habitable-band.png"
+  labels={[
+    { x: 47, y: 44, side: "left", label: "Scorched, close in", note: "too near the star, oceans boil away" },
+    { x: 73, y: 58, side: "right", label: "The temperate band", note: "where Polyphemus orbits — water can stay liquid" },
+    { x: 14, y: 20, side: "right", label: "Frozen, far out", note: "beyond the band, space is too cold" }
+  ]}
   alt="A yellow star ringed by a soft warm band of temperate space; a banded gas giant and its small moon bathed in that glow, with scorched orange space closer to the star and frozen blue space farther out"
   figNo="03"
   caption="The temperate band around a sun-like star: close in, space is scorched; far out, it is frozen; between them lies the narrow ring where a world can hold liquid water. A star a little brighter than the Sun pushes that ring a little farther out — to about where Polyphemus orbits."
@@ -57,6 +73,8 @@ The band's distance depends on the star. Light spreads out as it travels, thinni
 <Chart
   kind="area"
   xKey="d"
+  xLabel="Distance from the star (AU)"
+  yLabel="Relative starlight (Earth = 1)"
   series={[{ key: "flux", label: "Starlight reaching the world (Earth = 1)", tone: "amber" }]}
   data={[
     { d: "0.4", flux: 6.2 },
@@ -68,6 +86,11 @@ The band's distance depends on the star. Light spreads out as it travels, thinni
     { d: "3.0", flux: 0.11 }
   ]}
   caption="Why distance is everything: the starlight a world receives falls off as the square of its distance from the star. The temperate band — roughly where the curve passes through Earth-like values — sits a little past one Earth-distance for a star slightly brighter than the Sun."
+/>
+
+<HabitableZoneExplorer
+  locale="en"
+  caption="Try it yourself: brighten the star and its temperate band slides outward (with the square root of luminosity); dim it and the band pulls in close. Park the world too near and its oceans boil; too far and they freeze. Alpha Centauri A, a shade brighter than the Sun, puts the just-right band a little past one Earth-distance — right where canon orbits Polyphemus."
 />
 
 The careful version of this, worked out by James Kasting and later sharpened by Ravi Kopparapu, is less a single line than a set of edges, each one a different way for a climate to fail. Too close, and water vapour — itself a greenhouse gas — builds in the air faster than the planet can shed heat, until the oceans cook off entirely in a runaway no atmosphere can stop. Too far, and not even a thick blanket of carbon dioxide can hold enough warmth; pile on more and it just freezes out as cloud and reflects the sunlight back to space. Between those failures is the survivable band.
@@ -113,8 +136,13 @@ A planet in the habitable zone has one heat source: its star. A moon in the habi
 
 The first is the same as the planet's: sunlight, the dominant source. But the moon also catches a second helping of starlight reflected off the giant it orbits — Polyphemus is an enormous pale mirror hanging in Pandora's sky. It catches a third warmth in the infrared glow the giant itself radiates, because a gas giant is still slowly contracting and leaking out the heat of its own formation. And it catches a fourth, stranger heat from inside itself: <GlossaryTerm slug="tidal-heating">tidal heating</GlossaryTerm>.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/where-is-pandora/fig-04-exomoon-furnace.png"
+  labels={[
+    { x: 14, y: 18, side: "right", label: "Direct starlight", note: "white light from the system's sun" },
+    { x: 85, y: 28, side: "left", label: "Reflected & infrared heat", note: "the giant's glow and its own escaping warmth" },
+    { x: 55, y: 58, side: "right", label: "Tidal heating", note: "frictional warmth cracking up from within" }
+  ]}
   alt="A moon lit from several directions at once — white starlight from one side, warm reflected glow from the looming banded gas giant filling the background, and glowing orange molten seams cracking across the moon's own crust"
   figNo="04"
   caption="A moon runs hot from four directions at once: direct starlight, starlight reflected off the giant, the giant's own infrared heat, and — cracking up from within — the frictional warmth of tidal flexing. Get the sum wrong in either direction and the world is a furnace or a stone."
@@ -141,8 +169,13 @@ This is a real and serious obstacle to habitable moons, and it is the reason a s
 
 Canon's answer is a single sentence in the companion material, and it is exactly right: Pandora orbits in the gap *between* Polyphemus's inner and outer radiation belts. The belts are not a solid wall; like Earth's own Van Allen belts, they are structured, with relative lulls between the zones of trapped particles. A moon threading one of those gaps sits in comparative shelter, shielded by the very magnetosphere that would have killed it from a different orbit.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/where-is-pandora/fig-05-radiation-belts.png"
+  labels={[
+    { x: 45, y: 28, side: "left", label: "Polyphemus", note: "its magnetosphere traps the killing particles" },
+    { x: 20, y: 74, side: "right", label: "Radiation belts", note: "trapped particles that strip a small moon's air" },
+    { x: 79, y: 45, side: "right", label: "Pandora, in the gap", note: "sheltered in the calm between the belts" }
+  ]}
   alt="A banded gas giant wrapped in two glowing torus-shaped belts of trapped particles, with a small blue-green moon riding the dark calm gap between the two belts"
   figNo="05"
   caption="Polyphemus's magnetosphere traps charged particles into belts that would strip a small moon's air over time. Canon threads Pandora through the calm gap between the inner and outer belt — sheltered by the same field that would otherwise have killed it."
@@ -159,6 +192,11 @@ Which leaves the question we started with, and have been circling the whole time
 
 We have never photographed an Earth-sized world around another star. Almost everything we know about the four-thousand-odd known exoplanets, we learned indirectly — by watching what a planet *does* to the star we can see, rather than seeing the planet itself. There are four main ways to do it, and walking through them tells you precisely what we could and couldn't learn about Pandora's system.
 
+<DetectionMethodScope
+  locale="en"
+  caption="Three windows onto the same unseen world: switch tabs to watch how each method works. Radial velocity reads the star's Doppler wobble; transit catches the dip as the planet crosses; direct imaging masks the star to photograph the planet itself. Press play to set the planet orbiting."
+/>
+
 The workhorse is <GlossaryTerm slug="radial-velocity">radial velocity</GlossaryTerm>. A planet does not simply orbit its star; the two orbit their shared centre of mass, so the star traces a small circle of its own — it wobbles. As it wobbles toward us its light is squeezed bluer, and as it pulls away its light is stretched redder, by the Doppler effect. Measure that rhythmic colour-shift in the star's spectrum and you have found a planet you never saw, and learned its orbital period and a minimum for its mass. The catch is in the word *minimum*: because you only measure the wobble along your line of sight, you can't tell a small planet seen edge-on from a big one seen at a slant. And you learn nothing about the planet's size or its air.
 
 The second way is the **transit**: if the planet's orbit happens to be edge-on to us, the planet crosses the face of the star once each orbit and blocks a tiny, measurable sip of its light. The depth of that dip tells you the planet's size relative to the star; the timing tells you the period. Pair a transit with a radial-velocity measurement and the ambiguities cancel — now you have a true mass *and* a true size, and dividing one by the other gives you density, which tells you whether you're looking at a ball of rock, ice, or gas. The price is geometry: only a small fraction of planetary systems happen to line up edge-on to Earth, so transits find many worlds only by watching enormous numbers of stars at once.
@@ -166,6 +204,8 @@ The second way is the **transit**: if the planet's orbit happens to be edge-on t
 <Chart
   kind="line"
   xKey="t"
+  xLabel="Relative time"
+  yLabel="Relative brightness (%)"
   series={[{ key: "b", label: "Star brightness", tone: "cyan" }]}
   data={[
     { t: "0", b: 100 },
@@ -194,8 +234,12 @@ No single technique gives you a whole world. Radial velocity gives you a mass fl
 
 Now point all of that at the system the films describe, and a sharp, slightly melancholy answer falls out. The big thing is trivial to find. The thing that matters is almost invisible.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/where-is-pandora/fig-06-from-earth.png"
+  labels={[
+    { x: 13, y: 72, side: "right", label: "Alpha Centauri A", note: "a brilliant point low in the southern sky, four light-years off" },
+    { x: 80, y: 48, side: "left", label: "Our instruments", note: "we already point our best telescopes here" }
+  ]}
   alt="A domed observatory on a dark mountain ridge at night under the southern sky, one brilliant low star burning near the horizon"
   figNo="06"
   caption="The view from our side: a single brilliant point low in the southern sky, four light-years off, that we already point our best instruments at. The gas giant orbiting it we could confirm in weeks; its habitable moon would stay hidden in the glare."

@@ -1,5 +1,10 @@
-<Figure
+<DiagramFigure
   src="/images/chapters/whats-in-the-air/fig-01-the-twenty-seconds.png"
+  labels={[
+    { x: 42, y: 27, side: "left", label: "Twenty seconds", note: "to black out — four minutes to the point of no return" },
+    { x: 73, y: 80, side: "left", label: "The exo-pack, knocked aside", note: "without it, Pandoran air pours straight in" },
+    { x: 88, y: 28, side: "left", label: "Spores drift on, indifferent" }
+  ]}
   alt="A human in a torn jacket on the Pandoran forest floor, mask knocked aside, mouth open in a gasp as bioluminescent spores drift through the blue dark around them"
   figNo="01"
   caption="The mask is off, and the clock has started. Twenty seconds to unconsciousness, four minutes to the point of no return — in an air that, by the only number most people remember, has more than enough oxygen to live on."
@@ -11,6 +16,11 @@ There is a number every recruit shipping out to Pandora is made to memorise, and
 So the obvious story writes itself: Pandora's air has no oxygen, and a human starves for it the way a climber starves near the summit of Everest. Obvious, tidy, and wrong. The air on Pandora has *more* oxygen than the air you are breathing right now. The thing that kills you in twenty seconds is not an absence. It is a presence — several of them — and untangling exactly what they are turns out to teach you something a wiki never will: not just why this particular air is poison, but how the chemistry of *any* world's air can betray, to a telescope four light-years off, whether anything is alive down there.
 
 Let me start with the part we are not free to invent, which is the air itself.
+
+<TwentySecondsTimeline
+  locale="en"
+  caption="Scrub the twenty seconds. The bar that matters is the lower one: the blood stays brimming with oxygen the whole time, while the oxygen your cells can actually use collapses — because hydrogen sulfide has jammed the enzyme that burns it. You suffocate in a sea of oxygen."
+/>
 
 ## What's actually in it
 
@@ -56,8 +66,13 @@ Your body makes carbon dioxide constantly — it is the exhaust of burning food 
 
 Now flood that outside air with seventeen percent carbon dioxide. The gradient does not just weaken. It *reverses*. The air in your lungs is now pressing carbon dioxide harder than your blood is, and so carbon dioxide does the unthinkable: it leaks the wrong way, *into* you, faster than your body has ever had to deal with. This is <GlossaryTerm slug="hypercapnia">hypercapnia</GlossaryTerm>, carbon dioxide overload, and its consequences cascade within a breath or two.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/whats-in-the-air/fig-04-reversed-gradient.png"
+  labels={[
+    { x: 50, y: 15, side: "left", label: "The air sac", note: "17% carbon dioxide on the outside" },
+    { x: 42, y: 48, side: "right", label: "The gradient runs backward", note: "CO₂ floods in instead of out" },
+    { x: 72, y: 80, side: "left", label: "The blood turns acid", note: "carbonic acid, in seconds" }
+  ]}
   alt="A painted cross-section of a lung air sac with arrows of carbon-dioxide molecules pouring inward into the blood instead of out, the blood flushing acidic red-orange"
   figNo="04"
   caption="The gradient runs backward. With the outside air seventeen percent carbon dioxide, the gas that your body has spent your whole life exhaling now floods inward across the lung membrane — and turns the blood acid."
@@ -80,8 +95,13 @@ The reason your body wants oxygen at all is to run a microscopic relay at the ve
 
 <GlossaryTerm slug="histotoxic-hypoxia">Hydrogen sulfide jams that door.</GlossaryTerm> It binds tightly to the iron at the heart of that last enzyme — the same enzyme, the same vulnerable metal site, that cyanide attacks, and by very nearly the same mechanism. With the final station blocked, the bucket brigade backs up and halts, the cell can no longer turn oxygen into energy, and it suffocates while bathed in all the oxygen it could want. Physiologists call this histotoxic hypoxia: *tissue-poisoned* oxygen starvation, the cells drowning at a fully stocked well.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/whats-in-the-air/fig-05-jammed-mitochondrion.png"
+  labels={[
+    { x: 30, y: 33, side: "left", label: "The electron chain", note: "passing energy down the line" },
+    { x: 70, y: 62, side: "left", label: "The last door, jammed", note: "H₂S locks the iron — the trick cyanide plays" },
+    { x: 84, y: 22, side: "left", label: "Oxygen, unused", note: "flooding past a cell that can't touch it" }
+  ]}
   alt="A painted close view of a mitochondrion's inner membrane with the final enzyme of the electron chain clogged by small sulfur molecules, the electron brigade stalled and dark"
   figNo="05"
   caption="The last door in the chain, jammed. Hydrogen sulfide locks onto the iron of the enzyme that normally hands electrons to oxygen — so the cell cannot use the oxygen flooding past it. The same trick cyanide plays."
@@ -107,8 +127,14 @@ Notice what neither killer is. Neither is suffocation in the ordinary sense — 
 
 If the problem were too little oxygen, a human on Pandora would need what an astronaut needs: a sealed supply of breathing gas hauled along, a tank. But the problem is not too little of a good thing; it is too much of several bad things mixed into an otherwise serviceable air. So the exo-pack is not a tank. It is a *filter* — a doorman, not a delivery van.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/whats-in-the-air/fig-03-exo-pack-filter.png"
+  labels={[
+    { x: 18, y: 84, side: "left", label: "Pandoran air in", note: "laced with CO₂ and H₂S" },
+    { x: 33, y: 50, side: "left", label: "Scrubbing stages", note: "sorbents trap the poisons" },
+    { x: 60, y: 20, side: "right", label: "Clean air out", note: "oxygen, nitrogen, inert xenon" },
+    { x: 88, y: 35, side: "left", label: "Good air all along" }
+  ]}
   alt="A painted cutaway of an exo-pack mask: raw Pandoran air drawn in through a chest filter, scrubbing stages stripping out toxic gases, clean breathable air flowing up to the clear faceplate"
   figNo="03"
   caption="Not a tank — a gatekeeper. The exo-pack draws in the local air, strips the carbon dioxide and hydrogen sulfide out of it, and passes the oxygen, nitrogen, and inert xenon straight through. The breathable gas was there all along; the mask just removes what shouldn't be."
@@ -133,8 +159,13 @@ Now look at what Pandora is holding all at once: abundant free oxygen, *and* met
 
 <GlossaryTerm slug="atmospheric-disequilibrium">There is only one way to keep mortal enemies side by side indefinitely: something has to be making fresh supplies of both, continuously, as fast as they destroy each other.</GlossaryTerm> A planet held this far from chemical equilibrium is a planet with an engine running — and the only engine we know that can do this, at planetary scale, for ages, is *life*. Life eats sunlight and chemical gradients and excretes reactive gases as waste, faster than chemistry can clean them up. The persistent, simultaneous presence of gases that should have annihilated each other is, therefore, a <GlossaryTerm slug="biosignature">biosignature</GlossaryTerm> — and it is the strongest kind we know.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/whats-in-the-air/fig-06-bonfire-from-space.png"
+  labels={[
+    { x: 34, y: 42, side: "left", label: "The thin ring of air", note: "read against the starlight" },
+    { x: 72, y: 60, side: "left", label: "Gases that should destroy each other", note: "oxygen and methane, coexisting" },
+    { x: 90, y: 22, side: "left", label: "Starlight, four light-years off" }
+  ]}
   alt="A painted view from deep space of Pandora as a small glowing crescent beside its gas giant, a thin band of starlight passing through the moon's atmosphere and fanning into a faint spectrum"
   figNo="06"
   caption="Read the thin ring of air against the starlight and the recipe spills out: oxygen and methane and hydrogen sulfide together, gases that should have destroyed one another long ago. Seeing them coexist is like spotting a bonfire that has burned for decades — someone, clearly, keeps feeding it."

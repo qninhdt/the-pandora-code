@@ -27,19 +27,14 @@ interface CanonBadgeProps {
   children?: React.ReactNode;
 }
 
-export function CanonBadge({
-  kind,
-  locale = "vi",
-  className,
-  children,
-}: CanonBadgeProps) {
+export function CanonBadge({ kind, locale = "vi", className, children }: CanonBadgeProps) {
   const c = `var(${tierVar[kind]})`;
   return (
     <span
       data-classification={kind}
       className={cn(
         "group inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5",
-        "font-sans text-[0.6875rem] font-medium uppercase tracking-wider",
+        "font-sans text-[0.6875rem] font-medium uppercase tracking-wider whitespace-nowrap",
         "backdrop-blur-sm transition-colors duration-200",
         className,
       )}

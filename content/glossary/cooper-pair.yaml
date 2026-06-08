@@ -3,15 +3,10 @@ label:
   vi: Cặp Cooper
   en: Cooper pair
 definition:
-  vi: Hai electron liên kết yếu với nhau qua dao động mạng tinh thể (phonon), bất chấp lực đẩy tĩnh điện. Cặp có spin tổng bằng không nên hành xử như boson và có thể cùng ngưng tụ vào một trạng thái lượng tử chung - nền tảng của siêu dẫn theo thuyết BCS (1957).
+  vi: Hai electron liên kết lỏng lẻo với nhau thông qua các dao động mạng tinh thể (phonon) mặc dù chúng vốn đẩy nhau. Với tổng spin bằng không, cặp này hành xử như một hạt boson và có thể ngưng tụ vào một trạng thái lượng tử chia sẻ duy nhất - nền tảng của tính siêu dẫn trong lý thuyết BCS (1957).
   en: Two electrons loosely bound through lattice vibrations (phonons) despite their mutual repulsion. With zero net spin the pair behaves as a boson and can condense into a single shared quantum state - the basis of superconductivity in BCS theory (1957).
 see_also:
   - superconductivity
   - critical-temperature
 category: concept
-cover_prompt: >-
-  Macro view inside a dark copper-oxide crystal lattice: two tiny blue-white
-  electrons moving as one paired wave packet between rows of atoms, with soft
-  phonon ripples warping the lattice around them. The scene should feel
-  physical and microscopic, not abstract iconography, with one clear paired
-  subject at the center and no text or equations.
+cover_prompt: 'Macro view inside a dark copper-oxide crystal lattice: two tiny blue-white electrons moving as one paired wave packet between rows of atoms, with soft phonon ripples warping the lattice around them. The scene should feel physical and microscopic, not abstract iconography, with one clear paired subject at the center and no text or equations.'

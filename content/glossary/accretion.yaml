@@ -1,0 +1,13 @@
+id: accretion
+label:
+  vi: Bồi tụ
+  en: Accretion
+definition:
+  vi: Quá trình một thiên thể lớn lên bằng cách thu thập vật chất từ đĩa bụi và khí xung quanh - cách mà các hành tinh và mặt trăng hình thành từ tinh vân nguyên thủy. Một mặt trăng như Pandora bồi tụ từ đĩa mảnh vụn quanh hành tinh chủ khổng lồ của nó, trong vòng vài chục triệu năm kể từ khi ngôi sao ra đời.
+  en: The process by which a body grows by gathering material from a surrounding disk of dust and gas - how planets and moons form from the primordial nebula. A moon like Pandora accretes from the disk of debris around its giant host planet, within a few tens of millions of years of the star's birth.
+see_also:
+  - planetary-differentiation
+  - alpha-centauri
+  - geochronology
+category: planet
+cover_prompt: A painted scene of a swirling disk of dust and debris around a dim newborn gas giant, small clumps gathering into a young moon, cool indigo and teal palette with a faint warm core glow, painterly astronomical plate, no text.

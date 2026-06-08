@@ -1,0 +1,13 @@
+id: zircon
+label:
+  vi: Zircon
+  en: Zircon
+definition:
+  vi: Một khoáng vật zirconium-silicate nhỏ bé nhưng gần như không thể phá hủy, là vật chủ lý tưởng cho phương pháp định tuổi bằng urani-chì. Khi kết tinh, zircon khóa urani vào mạng tinh thể của nó nhưng gạt chì ra ngoài, đảm bảo một điểm xuất phát hoàn toàn sạch sẽ. Nó sống sót qua quá trình nung chảy và chôn vùi của tảng đá mẹ để trôi dạt vào sa thạch - vì vậy một hạt zircon duy nhất có thể mang theo lịch sử hàng tỷ năm. Mảnh vỏ Trái Đất cổ nhất được biết đến là một hạt zircon Jack Hills khoảng 4.4 tỷ năm tuổi.
+  en: A tiny but nearly indestructible zirconium-silicate mineral, the ideal host for uranium-lead dating. As it crystallizes, zircon locks uranium into its lattice but shuts out lead, guaranteeing a clean starting point. It survives the melting and burial of its parent rock to wash into sandstone - so a single zircon grain can carry billions of years. The oldest known fragment of Earth's crust is a ~4.4-billion-year-old Jack Hills zircon.
+see_also:
+  - uranium-lead-dating
+  - radiometric-dating
+  - geochronology
+category: planet
+cover_prompt: A painted extreme close-up of a single tiny faceted crystal grain glowing faintly from within, showing fine concentric growth bands, set on a dark field, cool teal-cyan palette, painterly naturalist specimen plate, no text.

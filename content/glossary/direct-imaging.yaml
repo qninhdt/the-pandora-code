@@ -3,26 +3,10 @@ label:
   vi: Chụp ảnh trực tiếp
   en: Direct imaging
 definition:
-  vi: >-
-    Phương pháp săn ngoại hành tinh khó nhất nhưng trực tiếp nhất - thực sự thu
-    lấy ánh sáng của chính hành tinh bằng cách che ánh chói của ngôi sao bằng một
-    tấm chắn quang học (coronagraph) hoặc một cánh chắn sao bay tự do. Khi thành
-    công, ta có thể phân tích quang phổ ánh sáng đó để đọc thành phần khí quyển.
-    Độ tương phản cực lớn khiến việc chụp một thế giới cỡ Trái Đất gần như bất khả
-    thi với công nghệ hiện nay, nhất là quanh một hệ sao đôi sáng.
-  en: >-
-    The hardest but most direct planet-hunting method - actually capturing the
-    planet's own light by blocking the star's glare with an optical mask (a
-    coronagraph) or a free-flying starshade. When it works, the captured light
-    can be split into a spectrum and read for atmosphere. The brutal contrast
-    makes imaging an Earth-sized world nearly impossible with current technology,
-    especially around a bright binary system.
+  vi: Phương pháp săn ngoại hành tinh khó nhất nhưng trực tiếp nhất - thực sự thu lấy ánh sáng của chính hành tinh bằng cách che ánh chói của ngôi sao bằng một tấm chắn quang học (coronagraph) hoặc một cánh chắn sao bay tự do. Khi thành công, ta có thể phân tích quang phổ ánh sáng đó để đọc thành phần khí quyển. Độ tương phản cực lớn khiến việc chụp một thế giới cỡ Trái Đất gần như bất khả thi với công nghệ hiện nay, nhất là quanh một hệ sao đôi sáng.
+  en: The hardest but most direct planet-hunting method - actually capturing the planet's own light by blocking the star's glare with an optical mask (a coronagraph) or a free-flying starshade. When it works, the captured light can be split into a spectrum and read for atmosphere. The brutal contrast makes imaging an Earth-sized world nearly impossible with current technology, especially around a bright binary system.
 see_also:
   - radial-velocity
   - transit-timing-variation
 category: concept
-cover_prompt: >-
-  A painted scene of a bright star hidden behind a dark circular mask, revealing
-  one faint small planet glowing just beside the blocked glare in deep space.
-  Cool void-indigo palette, soft painterly light, no text, no labels, no lens
-  flare.
+cover_prompt: A painted scene of a bright star hidden behind a dark circular mask, revealing one faint small planet glowing just beside the blocked glare in deep space. Cool void-indigo palette, soft painterly light, no text, no labels, no lens flare.

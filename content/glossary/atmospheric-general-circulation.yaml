@@ -1,0 +1,13 @@
+id: atmospheric-general-circulation
+label:
+  vi: Hoàn lưu khí quyển chung
+  en: Atmospheric general circulation
+definition:
+  vi: Hệ thống các dòng khí ở quy mô hành tinh mang nhiệt từ xích đạo nóng bức về các cực lạnh giá. Bởi vì xích đạo nhận được nhiều năng lượng mặt trời hơn các cực, không khí phải phân phối lại lượng nhiệt dư thừa đó, và nó thực hiện điều này thông qua các vòng tuần hoàn khổng lồ của không khí ấm bốc lên và không khí lạnh chìm xuống. Cỗ máy này - chứ không phải sự ngẫu nhiên - quyết định nơi nào trên thế giới có mưa và nơi nào khô ráo.
+  en: The planet-scale system of air currents that carries heat from the hot equator toward the cold poles. Because the equator receives more solar energy than the poles, the air must redistribute that surplus, and it does so through vast loops of rising warm air and sinking cool air. This machine - not chance - decides where on a world it rains and where it stays dry.
+see_also:
+  - hadley-cell
+  - coriolis-effect
+  - intertropical-convergence-zone
+category: concept
+cover_prompt: A painted side view of a planet's curved atmosphere with large smooth looping bands of moving air, warm air rising near the middle and cool air sinking to either side, soft streamlines tracing the loops. Cool teal and void-indigo palette, painterly haze, no text, no labels, no numbers, no arrows with letters.

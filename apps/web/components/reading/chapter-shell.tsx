@@ -1,3 +1,4 @@
+import { Lightbox } from "@/components/content/lightbox";
 import { cn } from "@/lib/utils";
 
 interface ChapterShellProps {
@@ -37,6 +38,7 @@ export function ChapterShell({
           {footer}
         </main>
       </div>
+      <Lightbox />
     </div>
   );
 }

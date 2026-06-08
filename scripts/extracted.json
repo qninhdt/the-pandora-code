@@ -1,0 +1,282 @@
+{
+  "glossary": {
+    "abduction.yaml": {
+      "label": "Abduction",
+      "definition": "\"A mode of inference, singled out by Charles Sanders Peirce from deduction and induction, that reasons backward from a surprising observation to the hypothesis that best explains it. Unlike induction (which counts repetitions), abduction asks which underlying cause, if true, would make the observation unsurprising. It is the reasoning engine behind this book's Inference tier.\""
+    },
+    "accretion.yaml": {
+      "label": "Accretion",
+      "definition": "The process by which a body grows by gathering material from a surrounding disk of dust and gas - how planets and moons form from the primordial nebula. A moon like Pandora accretes from the disk of debris around its giant host planet, within a few tens of millions of years of the star's birth."
+    },
+    "adiabatic-lapse-rate.yaml": {
+      "label": "Adiabatic lapse rate",
+      "definition": "\"The rate at which air cools as it rises and expands under falling pressure. On Earth, dry air loses about 10°C per kilometre of altitude - which is why mountain peaks are frigid. The rate scales with gravity and inversely with the air's heat capacity: Pandora's weaker gravity and heavy, humid, heat-rich atmosphere make its air cool far more slowly with height - enough to leave the floating mountains warm and watered instead of frozen.\""
+    },
+    "albedo.yaml": {
+      "label": "Albedo",
+      "definition": "\"The fraction of starlight a surface bounces straight back to space instead of absorbing. A world cloaked in snow or white cloud has a high albedo, reflecting most of the light and staying cool; a dark world - ocean, forest - absorbs more and runs warmer. Together with distance from the star, albedo sets how much energy a planet keeps to warm itself.\""
+    },
+    "alpha-centauri.yaml": {
+      "label": "Alpha Centauri",
+      "definition": "The nearest star system to Earth, about 4.37 light-years away, made of three suns - Alpha Centauri A (a Sun-like yellow dwarf, the Na'vi Tsawke), Alpha Centauri B (an orange dwarf), and distant Proxima Centauri (a red dwarf). In canon, Pandora orbits the gas giant Polyphemus, which orbits Alpha Centauri A."
+    },
+    "atmospheric-disequilibrium.yaml": {
+      "label": "Atmospheric disequilibrium"
+    },
+    "atmospheric-general-circulation.yaml": {
+      "label": "Atmospheric general circulation",
+      "definition": "\"The planet-scale system of air currents that carries heat from the hot equator toward the cold poles. Because the equator receives more solar energy than the poles, the air must redistribute that surplus, and it does so through vast loops of rising warm air and sinking cool air. This machine - not chance - decides where on a world it rains and where it stays dry.\""
+    },
+    "biome.yaml": {
+      "label": "Biome",
+      "definition": "\"A major climate-shaped kind of ecosystem - tropical rainforest, desert, temperate forest, grassland, tundra - and the communities of life within it. The ecologist Robert Whittaker showed that just two numbers, mean annual temperature and mean annual precipitation, sort nearly every community into its box. Because atmospheric circulation decides where a world is warm-and-wet or dry-and-cold, it also draws the map of biomes on any world.\""
+    },
+    "biosignature.yaml": {
+      "label": "Biosignature"
+    },
+    "cooper-pair.yaml": {
+      "label": "Cooper pair",
+      "definition": "Two electrons loosely bound through lattice vibrations (phonons) despite their mutual repulsion. With zero net spin the pair behaves as a boson and can condense into a single shared quantum state - the basis of superconductivity in BCS theory (1957)."
+    },
+    "coriolis-effect.yaml": {
+      "label": "Coriolis effect",
+      "definition": "\"The apparent sideways deflection of moving air and water caused by a planet's own spin: on a rotating world, a straight flow looks bent to one side. The effect bends winds that would otherwise run straight from equator to pole into east-west streams, and so breaks the circulation into separate loops. The faster the spin, the stronger the effect and the narrower the cells. Note: it only matters at large scales like storms and ocean currents - it does not decide which way a sink drains.\""
+    },
+    "crater-counting.yaml": {
+      "label": "Crater counting",
+      "definition": "A way to estimate the age of a surface on a world you cannot yet touch, using only orbital images. A fresh surface (a lava flow, a glacier) starts with no craters; craters accumulate over time at a known rate, so counting their density gives a relative age. The rate is calibrated against radiometrically dated Moon rocks, then applied to Mars, Mercury, and icy moons."
+    },
+    "critical-temperature.yaml": {
+      "label": "Critical temperature",
+      "definition": "The temperature (denoted Tc) below which a material becomes superconducting. For ordinary superconductors Tc is very low (needing liquid helium or nitrogen); a room-temperature superconductor stable at ambient pressure remains an unachieved goal."
+    },
+    "deep-time.yaml": {
+      "label": "Deep time",
+      "definition": "The vast scale of geological time - millions to billions of years - far beyond the reach of human intuition. Opened up by James Hutton and Charles Lyell in the 18th-19th centuries, the idea replaced a few-thousand-year-old Earth with a dizzyingly long past, roomy enough for slow rock-building and evolution."
+    },
+    "demarcation-problem.yaml": {
+      "label": "The demarcation problem",
+      "definition": "\"The foundational question in the philosophy of science - how to separate genuine science from non-science and pseudoscience. Popper proposed falsifiability; Kuhn stressed paradigms; Lakatos distinguished progressive research programmes (which predict new facts) from degenerating ones (which only patch contradictions after the fact). There is no final answer, but the useful question remains: what would this claim forbid?\""
+    },
+    "diamagnetism.yaml": {
+      "label": "Diamagnetism",
+      "definition": "The tendency of matter to weakly repel a magnetic field, arising from electron orbital motion. In ordinary materials (pyrolytic graphite, water, living tissue) it is extremely weak and needs huge fields to levitate; a superconductor is a perfect diamagnet, levitating even in weak fields."
+    },
+    "direct-imaging.yaml": {
+      "label": "Direct imaging"
+    },
+    "exomoon.yaml": {
+      "label": "Exomoon",
+      "definition": "A moon that orbits a planet in another star system. A habitable exomoon must balance up to four heat sources - direct starlight, starlight reflected off its host planet, the gas giant's own infrared glow, and tidal heat generated within - while dodging the host planet's radiation belts. Pandora is exactly such an exomoon. As yet, no exomoon has been firmly confirmed."
+    },
+    "falsifiability.yaml": {
+      "label": "Falsifiability",
+      "definition": "\"Karl Popper's criterion for a claim to count as scientific: it must make a risky, checkable prediction and could, in principle, be proven wrong by observation. General relativity predicted starlight bending around the Sun - a bet that could have failed and was tested in 1919; a theory no observation could ever refute tells you nothing.\""
+    },
+    "flux-pinning.yaml": {
+      "label": "Flux pinning",
+      "definition": "A mechanism in type-II superconductors where quantized flux tubes (Abrikosov vortices) become trapped at lattice defects, rigidly locking the object in three-dimensional space. This - not the Meissner effect alone - is what produces stable levitation."
+    },
+    "geochronology.yaml": {
+      "label": "Geochronology",
+      "definition": "The science of putting numerical ages, in years, on rocks, minerals, and geological events. Its backbone is radiometric dating, combined with relative stratigraphy, to build a verifiable timeline of a planet's history - and, in principle, of any world."
+    },
+    "geologic-time-scale.yaml": {
+      "label": "Geologic time scale"
+    },
+    "great-oxidation-event.yaml": {
+      "label": "The Great Oxidation Event",
+      "definition": "The turning point about 2.4 billion years ago when photosynthetic cyanobacteria first pumped out enough free oxygen to transform Earth's atmosphere from an oxygen-poor, reducing haze into the reactive, oxygen-rich mixture we breathe today. Oxygen is fiercely corrosive; its persistent presence can only be maintained by life constantly replenishing it. It is the historical proof that a biosphere can remake an entire planet's air - and the context for reading oxygen as a biosignature."
+    },
+    "gyrochronology.yaml": {
+      "label": "Gyrochronology",
+      "definition": "A way to estimate the age of a low-mass star from how fast it spins. Young stars rotate quickly and slow down with age in a predictable way as they shed angular momentum through magnetic stellar winds. Proposed by Sydney Barnes in 2003, it reads a star's rotation period (via starspots) and color to infer the age of the star and its orbiting planets."
+    },
+    "habitable-zone.yaml": {
+      "label": "Habitable zone",
+      "definition": "The band of distances around a star where a world with a suitable atmosphere can keep liquid water on its surface - not so close that water boils away, not so far that it freezes solid. The band's location depends on the star's luminosity; a brighter star pushes it farther out. Nicknamed the \"Goldilocks zone\"."
+    },
+    "hadley-cell.yaml": {
+      "label": "Hadley cell",
+      "definition": "\"The largest loop of atmospheric circulation, filling the tropics: warm moist air rises at the equator, dumps its rain as it cools, drifts poleward high up, and sinks back down as dry air near 30° latitude. The rising branch makes tropical rainforests; the sinking branch makes the great deserts. The cell's width depends on how fast the world spins: slower rotation widens it, pushing both the wet belt and the dry belt farther from the equator.\""
+    },
+    "half-life.yaml": {
+      "label": "Half-life",
+      "definition": "The time it takes for half the radioactive atoms in a sample to decay into daughter atoms. After each half-life the parent halves again - a half, a quarter, an eighth - along an exponential decay curve so regular it can be run backward to read an age. Each element has its own half-life, from thousands to billions of years."
+    },
+    "hallelujah-mountains.yaml": {
+      "label": "Hallelujah Mountains",
+      "definition": "Pandora's giant floating rock islands (Na'vi - Ayram alusìng), concentrated in the Iknimaya region. Canon explains their flight by superconducting unobtanium cores sitting within the planet's Flux Vortex."
+    },
+    "histotoxic-hypoxia.yaml": {
+      "label": "Histotoxic hypoxia",
+      "definition": "A state in which cells cannot use oxygen even though the blood is full of it, because the cell's internal respiratory machinery has been poisoned. Hydrogen sulfide (H₂S) - like cyanide - binds the iron atom of the final enzyme in the mitochondrial electron transport chain, blocking the hand-off of electrons to oxygen. The cell starves at a fully stocked well. On Pandora this is the second killer, running in parallel with hypercapnia."
+    },
+    "hypercapnia.yaml": {
+      "label": "Hypercapnia",
+      "definition": "An excess of carbon dioxide in the blood. Normally the body offloads CO₂ into the lungs because the outside air holds almost none; but when the surrounding air is rich in CO₂, the flow reverses and CO₂ floods inward, forming carbonic acid and turning the blood acidic. The brainstem responds by driving faster breathing - a reflex that becomes a death trap when every breath only adds more poison. It is one of the two immediate killers in Pandora's air."
+    },
+    "inference-to-the-best-explanation.yaml": {
+      "label": "Inference to the best explanation",
+      "definition": "\"Gilbert Harman's sharpened form of abduction: among rival hypotheses that explain the same fact, accept the one that explains it best. Best is weighed by criteria - testability, scope, conservatism (fitting what we already have strong reason to believe), and simplicity (Occam's razor). Without those criteria, best collapses into the one I happen to like.\""
+    },
+    "intertropical-convergence-zone.yaml": {
+      "label": "Intertropical Convergence Zone",
+      "definition": "\"The belt around the equator where the trade winds of the two hemispheres meet, forcing warm moist air upward. This is the rising branch of the Hadley cell: water vapour condenses and falls as near-daily rain, which is why Earth's densest rainforests cling to it. On a slow-spinning world like Pandora, that rain belt broadens into a vast tropical band rather than a narrow stripe.\""
+    },
+    "isochron.yaml": {
+      "label": "Isochron"
+    },
+    "libration.yaml": {
+      "label": "Libration",
+      "definition": "The slow rocking and nodding of a tidally locked body as seen from its host. Though it shows one face on average, an off-circular orbit makes it run ahead and lag behind (libration in longitude), and an axial tilt lets the viewer peer over its north and south poles in turn (libration in latitude). Libration is why we see about 59% of the Moon's surface from Earth rather than exactly half."
+    },
+    "meissner-effect.yaml": {
+      "label": "Meissner effect",
+      "definition": "A superconductor actively expelling all magnetic field from its interior when cooled below its critical temperature (perfect diamagnetism). The repulsion can lift a magnet but gives no lateral stability - on its own it yields unstable levitation."
+    },
+    "obliquity.yaml": {
+      "label": "Obliquity",
+      "definition": "\"The angle between a body's spin axis and the line perpendicular to its orbital plane. It is axial tilt - not distance from the star - that truly causes seasons: whichever hemisphere leans toward the sun catches more direct light and runs warmer. Earth's tilt is about 23°; canon gives Pandora a larger one, around 25°, enough to produce both seasons and its \\\"eclipse seasons.\\\"\""
+    },
+    "occams-razor.yaml": {
+      "label": "Occam's razor",
+      "definition": "\"The principle that one should not multiply assumptions beyond necessity: between two explanations of the same fact, prefer the one that posits fewer new entities. It does not say the simpler story is automatically true - it says the burden of proof falls on whichever explanation grants itself more extra miracles. It is one of the criteria for judging a good inference.\""
+    },
+    "orbital-resonance.yaml": {
+      "label": "Orbital resonance"
+    },
+    "partial-pressure.yaml": {
+      "label": "Partial pressure",
+      "definition": "The share of pressure a single gas contributes to a mixture - its fraction multiplied by the total pressure (Dalton's law). The body responds not to the \"percentage\" of oxygen but to its partial pressure, the push that drives oxygen from the air into the blood. So the same oxygen percentage can be breathable at one pressure yet suffocating at a lower one, as atop Everest."
+    },
+    "planetary-differentiation.yaml": {
+      "label": "Planetary differentiation",
+      "definition": "The process by which a molten body separates into layers by density - heavy metal sinks to form a core, lighter rock rises to form mantle and crust. It sets a planet's internal structure; for Pandora, the ancient impact is said to have disrupted that very differentiated nickel-iron core."
+    },
+    "planetshine.yaml": {
+      "label": "Planetshine",
+      "definition": "Sunlight reflected off a planet onto its moon, lighting the moon's night side - much like \"earthshine\" makes the dark part of a young crescent Moon faintly visible. Because Polyphemus is huge and highly reflective, its planetshine on Pandora is bright enough that the planet-facing hemisphere rarely goes truly dark - an evolutionary pressure that helped shape its bioluminescent world."
+    },
+    "quantum-locking.yaml": {
+      "label": "Quantum locking",
+      "definition": "\"The common name for the macroscopic consequence of flux pinning: a superconductor locked rigidly at a fixed position and tilt in space - able to hover fixed, glide frictionlessly along a magnetic track, or even hang upside down beneath a magnet.\""
+    },
+    "radial-velocity.yaml": {
+      "label": "Radial velocity",
+      "definition": "A planet-hunting method based on measuring a star's tiny wobble. Star and planet both orbit their shared centre of mass, so the star sways slightly; as it moves toward us its light shifts bluer, as it pulls away, redder (the Doppler effect). Reading that rhythmic colour-shift gives the planet's orbital period and a minimum mass, but not its size or its atmosphere."
+    },
+    "radiative-equilibrium.yaml": {
+      "label": "Radiative equilibrium",
+      "definition": "\"The state in which a planet radiates exactly as much energy to space as it receives from its star, so its average temperature holds steady. From the incoming light and the albedo you can compute an 'equilibrium temperature' - the baseline a world would sit at with no atmosphere. A greenhouse then lifts the real temperature above that baseline, and on Pandora a dense atmosphere lifts it a great deal.\""
+    },
+    "radiocarbon-dating.yaml": {
+      "label": "Radiocarbon dating",
+      "definition": "A dating method using carbon-14, superb for the recent past - wood, bone, charcoal, cloth - across the span of human history. But its half-life is only ~5,730 years, so after about 50,000 years there is essentially no parent left to measure. Carbon-14 is completely useless for dating rocks or deep time - the wrong stopwatch by a factor of a million."
+    },
+    "radiometric-dating.yaml": {
+      "label": "Radiometric dating",
+      "definition": "Determining a rock's age by measuring the ratio of leftover radioactive \"parent\" atoms to the \"daughter\" atoms they decay into. Because the decay rate is a constant that no temperature, pressure, or chemistry can change, it is a clock that cannot be bribed - the basis for knowing the ages of the Earth and other bodies."
+    },
+    "roche-limit.yaml": {
+      "label": "Roche limit",
+      "definition": "The closest a moon can approach its host planet before the planet's tidal force - pulling harder on the near side than the far side - overpowers the moon's own gravity and tears it apart. An Earth-sized moon orbiting too fast and too close to a gas giant skirts this limit dangerously; it is one of the internal contradictions in Pandora's canon."
+    },
+    "sidereal-day.yaml": {
+      "label": "Sidereal day",
+      "definition": "The time a body takes to spin a full 360° relative to the distant fixed stars - one true rotation in space. It differs slightly from the solar day (the one we live by) because, while spinning, the body also moves along its orbit. For a tidally locked moon, the sidereal day equals its orbital period around its host planet."
+    },
+    "speculation.yaml": {
+      "label": "Speculation",
+      "definition": "In this book, the classification tier for a plausible model resting on an unconfirmed premise - granted once, then held to every remaining law. Disciplined speculation changes exactly one variable and makes the rest pay full price (energy conservation, thermodynamics, chemistry). When a world bends one rule and then assumes all rules are off, speculation rots into fantasy."
+    },
+    "spin-orbit-resonance.yaml": {
+      "label": "Spin-orbit resonance",
+      "definition": "\"A simple whole-number relationship between how many times a body spins and how many times it orbits. Tidal locking is the 1:1 case (one spin per orbit). But other states exist: Mercury is trapped in a 3:2 resonance - exactly three spins for every two trips around the Sun - because its orbit is so eccentric. It is the exception that explains why large round moons settle into 1:1.\""
+    },
+    "superconductivity.yaml": {
+      "label": "Superconductivity",
+      "definition": "A macroscopic quantum state in which a material's electrical resistance drops to exactly zero below a critical temperature, letting a current flow forever without loss. Discovered by Heike Kamerlingh Onnes in mercury in 1911."
+    },
+    "superposition.yaml": {
+      "label": "Superposition",
+      "definition": "The foundational principle of stratigraphy: in an undisturbed sequence of sedimentary rocks, the lower layer is always older than the one above it. Obvious once stated, yet powerful - it lets you read the before-and-after order of a planet's history even before any absolute age is known."
+    },
+    "superrotation.yaml": {
+      "label": "Superrotation",
+      "definition": "\"The phenomenon in which a world's whole atmosphere spins markedly faster than the solid surface beneath it - sometimes dozens of times faster. It shows up on slow-rotating bodies with thick atmospheres, like Venus and Titan, where atmospheric waves and thermal tides keep pumping momentum into the flow. It is the dynamical regime a slow-spinning, dense-aired world like Pandora can drift toward, with the consequence that heat gets spread evenly around the globe.\""
+    },
+    "synchronous-rotation.yaml": {
+      "label": "Synchronous rotation",
+      "definition": "\"The consequence of tidal locking: a body's spin period equals its orbital period around its host, in a 1:1 resonance. It does not mean one face is permanently dark - the body still turns relative to the star lighting it, so it still has day and night; only the face toward its host stays fixed. This is the single most common misconception about Pandora.\""
+    },
+    "synodic-day.yaml": {
+      "label": "Synodic day",
+      "definition": "The time it takes the sun to return to the same place in the local sky - from one sunrise to the next. This is the \"day\" we actually live by. It runs a little longer than the sidereal day because, after a full 360° turn, the body must rotate a touch further to catch up with the star it has drifted past along its orbit. Pandora's canon never distinguishes the two."
+    },
+    "thermohaline-circulation.yaml": {
+      "label": "Thermohaline circulation",
+      "definition": "\"The ocean's great heat conveyor, driven by differences in water density - which temperature (thermo) and salinity (haline) together set. Cold, salty water at high latitudes sinks to the deep, flows through the basins, and upwells in warmer regions, closing a loop that moves heat around the planet. On Pandora, tidal-heating warms the seafloor, so its circulation leans toward nutrient-rich local upwelling rather than Earth's sink-at-the-poles pattern.\""
+    },
+    "tidal-heating.yaml": {
+      "label": "Tidal heating",
+      "definition": "Heat generated inside a body when the gravity of the object it orbits repeatedly kneads it. A moon on a slightly off-circular orbit is squeezed harder when it swings close and less when it swings far; that rhythmic flexing warms its interior by friction. It is why Jupiter's moon Io erupts so violently and Europa keeps an ocean under its ice - and, in canon, what drives Pandora's geological heat."
+    },
+    "tidal-locking.yaml": {
+      "label": "Tidal locking",
+      "definition": "The state in which a body spins exactly once on its axis for each orbit it makes, so it keeps the same face turned toward the object it circles. Gravity stretches the body into an egg shape, and friction in that tidal bulge slowly brakes its spin until rotation matches the orbit. The Moon is locked to Earth this way; in canon, Pandora is locked to Polyphemus - so its day is its month."
+    },
+    "transit-timing-variation.yaml": {
+      "label": "Transit-timing variation",
+      "definition": "An indirect way to detect a hidden moon (or planet). As a planet transits the face of its star, a moon orbiting it tugs the planet around their shared centre of mass, making the planet arrive at the crossing a little early or late from one transit to the next. Those timing shifts - only seconds to minutes for an Earth-sized moon - are the fingerprint of the hidden body, but sit right at the noise floor of today's best instruments."
+    },
+    "transmission-spectroscopy.yaml": {
+      "label": "Transmission spectroscopy",
+      "definition": "A technique for reading a distant planet's atmospheric composition by light. As the planet crosses the face of its star, a thin sliver of starlight strains through its atmosphere on the way to us; each gas absorbs light at characteristic wavelengths, leaving a \"fingerprint\" in the spectrum. Split that light and you read the air recipe of a world you can never visit. The James Webb Space Telescope uses this method to detect CO₂, water vapour, and methane on exoplanets."
+    },
+    "type-ii-superconductor.yaml": {
+      "label": "Type-II superconductor",
+      "definition": "A class of superconductors (transition-metal alloys like NbTi, or copper-oxide ceramics like YBCO) that lets magnetic field partially penetrate as quantized vortices in a \"mixed state\", tolerating very high fields and currents. The basis of all practical superconductivity, and where flux pinning happens."
+    },
+    "uniformitarianism.yaml": {
+      "label": "Uniformitarianism",
+      "definition": "The principle that the laws and processes shaping the world today are the same ones that shaped it in the past, operating at broadly the same rates. Stated by James Hutton and developed by Charles Lyell, it is the permission slip for the entire science of the deep past: the present is the key to reading history."
+    },
+    "unobtanium.yaml": {
+      "label": "Unobtanium",
+      "definition": "Pandora's fictional mineral, described as superconducting at room temperature. Unobtanium cores are canon's stated cause for the floating mountains; room-temperature superconductivity remains unachieved in real Earth science."
+    },
+    "uranium-lead-dating.yaml": {
+      "label": "Uranium-lead dating",
+      "definition": "The gold-standard clock for deep time, usually hosted in zircon crystals. Zircon takes in uranium but rejects lead as it grows, so any lead inside it is the product of decay. Two kinds of uranium decay to two kinds of lead at two rates, giving two independent clocks in one grain - cross-checking each other and confessing when they have been disturbed."
+    },
+    "zircon.yaml": {
+      "label": "Zircon",
+      "definition": "A tiny but nearly indestructible zirconium-silicate mineral, the ideal host for uranium-lead dating. As it crystallizes, zircon locks uranium into its lattice but shuts out lead, guaranteeing a clean starting point. It survives the melting and burial of its parent rock to wash into sandstone - so a single zircon grain can carry billions of years. The oldest known fragment of Earth's crust is a ~4.4-billion-year-old Jack Hills zircon."
+    }
+  },
+  "chapters": {
+    "continents-oceans-climate": {
+      "title": "Continents, oceans, climate"
+    },
+    "floating-mountains-and-the-superconductor": {
+      "title": "Floating mountains and the superconductor",
+      "subtitle": "Why the Hallelujah Mountains hang in the air - and what it teaches about superconductivity"
+    },
+    "pandoras-deep-time": {
+      "title": "Pandora's deep time"
+    },
+    "reading-pandora-as-a-specimen": {
+      "title": "Reading Pandora as a specimen"
+    },
+    "time-on-pandora": {
+      "title": "Time on Pandora"
+    },
+    "whats-in-the-air": {
+      "title": "What's in the air"
+    },
+    "where-is-pandora": {
+      "title": "Where is Pandora"
+    }
+  }
+}

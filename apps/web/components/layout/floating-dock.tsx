@@ -4,6 +4,7 @@ import { LocaleSwitcher } from "@/components/layout/locale-switcher";
 import type { Locale } from "@/i18n/config";
 import { cn } from "@/lib/utils";
 import { Github, Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -64,7 +65,7 @@ export function FloatingDock({ locale, brand, nav }: FloatingDockProps) {
     { href: `${base}/chapters`, label: nav.chapters },
     { href: `${base}/parts`, label: nav.parts },
     { href: `${base}/glossary`, label: nav.glossary },
-    { href: `${base}/authors`, label: nav.authors },
+    { href: `${base}/author`, label: nav.authors },
     { href: `${base}/timeline`, label: nav.timeline },
   ];
   const isActive = (href: string) => pathname.startsWith(href);
@@ -85,12 +86,8 @@ export function FloatingDock({ locale, brand, nav }: FloatingDockProps) {
         }
       >
         {/* Brand */}
-        <Link href={base} className="flex items-center gap-2.5 pl-2 pr-1" aria-label={brand}>
-          <span
-            aria-hidden
-            className="size-2.5 shrink-0 rounded-full"
-            style={{ background: "var(--cyan)", boxShadow: "0 0 12px 1px var(--cyan)" }}
-          />
+        <Link href={base} className="flex items-center gap-3 pl-1 pr-1" aria-label={brand}>
+          <BrandEmblem priority />
           <span className="hidden font-display text-sm font-700 tracking-tight text-foreground sm:inline">
             {brand}
           </span>
@@ -191,11 +188,7 @@ function MobileOverlay({ open, onClose, brand, links, isActive, locale }: Mobile
         {/* Top row: brand + close */}
         <div className="flex items-center justify-between">
           <span className="flex items-center gap-2.5">
-            <span
-              aria-hidden
-              className="size-2.5 rounded-full"
-              style={{ background: "var(--cyan)", boxShadow: "0 0 12px 1px var(--cyan)" }}
-            />
+            <BrandEmblem />
             <span className="font-display text-sm font-700 tracking-tight text-foreground">
               {brand}
             </span>
@@ -243,5 +236,23 @@ function MobileOverlay({ open, onClose, brand, links, isActive, locale }: Mobile
         </div>
       </div>
     </div>
+  );
+}
+
+function BrandEmblem({ priority = false }: { priority?: boolean }) {
+  return (
+    <span
+      aria-hidden
+      className="relative size-9 shrink-0 overflow-hidden rounded-full border border-cyan/35 bg-void/80 shadow-[0_0_18px_-6px_color-mix(in_oklab,var(--cyan)_70%,transparent)]"
+    >
+      <Image
+        src="/logo.png"
+        alt=""
+        fill
+        sizes="36px"
+        priority={priority}
+        className="object-cover"
+      />
+    </span>
   );
 }

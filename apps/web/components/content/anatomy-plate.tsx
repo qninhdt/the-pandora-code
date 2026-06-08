@@ -1,7 +1,6 @@
-"use client";
-
+import { AnnotationLayer, type ResolvedLabel } from "@/components/content/figure-annotations";
+import { LightboxImage } from "@/components/content/lightbox";
 import { cn } from "@/lib/utils";
-import { useState } from "react";
 
 interface Hotspot {
   x: number;
@@ -18,17 +17,14 @@ interface AnatomyPlateProps {
   className?: string;
 }
 
-function pick(
-  v: { vi: string; en: string } | string | undefined,
-  loc: "vi" | "en",
-) {
+function pick(v: { vi: string; en: string } | string | undefined, loc: "vi" | "en") {
   if (!v) return undefined;
   return typeof v === "string" ? v : v[loc];
 }
 
-// A creature/structure plate with interactive hotspots. Hovering/focusing a
-// glowing node reveals its bilingual label + note - a naturalist's annotated
-// specimen drawing.
+// A creature/structure plate with annotated anchor points. Hover/focus/tap a
+// dot to reveal its callout; click the image to open it fullscreen (where the
+// same annotations ride along). Nothing is clipped or stacked below the frame.
 export function AnatomyPlate({
   src,
   title,
@@ -36,7 +32,12 @@ export function AnatomyPlate({
   locale = "vi",
   className,
 }: AnatomyPlateProps) {
-  const [active, setActive] = useState<number | null>(null);
+  const resolved: ResolvedLabel[] = hotspots.map((h) => ({
+    x: h.x,
+    y: h.y,
+    label: pick(h.label, locale),
+    note: pick(h.note, locale),
+  }));
 
   return (
     <figure className={cn("my-8", className)}>
@@ -45,41 +46,16 @@ export function AnatomyPlate({
           {title}
         </p>
       )}
-      <div className="relative overflow-hidden rounded-2xl border border-border bg-surface">
-        <img src={src} alt={title ?? ""} className="w-full object-contain" />
-        {hotspots.map((h, i) => (
-          <button
-            key={i}
-            type="button"
-            onMouseEnter={() => setActive(i)}
-            onMouseLeave={() => setActive(null)}
-            onFocus={() => setActive(i)}
-            onBlur={() => setActive(null)}
-            className="absolute -translate-x-1/2 -translate-y-1/2"
-            style={{ left: `${h.x}%`, top: `${h.y}%` }}
-            aria-label={pick(h.label, locale)}
-          >
-            <span
-              className="block size-3 rounded-full transition-transform hover:scale-125"
-              style={{
-                background: "var(--cyan)",
-                boxShadow: "0 0 12px 1px var(--cyan)",
-              }}
-            />
-            {active === i && (
-              <span className="absolute left-5 top-1/2 z-10 w-44 -translate-y-1/2 rounded-lg border border-border-strong bg-void/90 p-2.5 text-left backdrop-blur">
-                <span className="block font-sans text-xs font-semibold text-cyan">
-                  {pick(h.label, locale)}
-                </span>
-                {pick(h.note, locale) && (
-                  <span className="mt-1 block font-serif text-xs leading-snug text-muted">
-                    {pick(h.note, locale)}
-                  </span>
-                )}
-              </span>
-            )}
-          </button>
-        ))}
+      <div className="relative">
+        <div className="relative overflow-hidden rounded-2xl border border-border bg-surface">
+          <LightboxImage
+            src={src}
+            alt={title ?? ""}
+            labels={resolved}
+            className="w-full object-contain"
+          />
+        </div>
+        <AnnotationLayer labels={resolved} />
       </div>
     </figure>
   );

@@ -1,17 +1,13 @@
 id: synodic-day
 label:
-  vi: Ngày mặt trời
+  vi: Ngày giao hội
   en: Synodic day
 definition:
-  vi: Thời gian để mặt trời trở lại đúng vị trí cũ trên bầu trời địa phương - từ bình minh đến bình minh kế tiếp. Đây là "ngày" ta thực sự sống theo. Nó dài hơn ngày sao một chút, vì sau khi quay trọn 360°, thiên thể phải quay thêm một nhúm nữa để bắt kịp ngôi sao mà nó đã rời xa trên quỹ đạo. Cốt truyện Pandora không bao giờ phân biệt ngày sao với ngày mặt trời.
+  vi: Thời gian để mặt trời quay trở lại cùng một vị trí trên bầu trời địa phương - từ bình minh này đến bình minh tiếp theo. Đây là "ngày" mà chúng ta thực sự trải nghiệm. Nó dài hơn một chút so với ngày sao bởi vì, sau một vòng quay 360° trọn vẹn, thiên thể phải xoay thêm một chút nữa để bắt kịp ngôi sao mà nó đã lướt qua trên quỹ đạo của mình. Cốt truyện của Pandora chưa bao giờ phân biệt hai khái niệm này.
   en: The time it takes the sun to return to the same place in the local sky - from one sunrise to the next. This is the "day" we actually live by. It runs a little longer than the sidereal day because, after a full 360° turn, the body must rotate a touch further to catch up with the star it has drifted past along its orbit. Pandora's canon never distinguishes the two.
 see_also:
   - sidereal-day
   - synchronous-rotation
   - tidal-locking
 category: concept
-cover_prompt: >-
-  A painted scene of an alien landscape at sunrise, a small bright sun-star
-  just clearing a low forested horizon, a huge banded gas giant fixed in the
-  sky above. Cool dawn palette with a warm rim of starlight, painterly, no
-  text, no labels, no numbers.
+cover_prompt: A painted scene of an alien landscape at sunrise, a small bright sun-star just clearing a low forested horizon, a huge banded gas giant fixed in the sky above. Cool dawn palette with a warm rim of starlight, painterly, no text, no labels, no numbers.

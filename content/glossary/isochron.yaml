@@ -1,0 +1,13 @@
+id: isochron
+label:
+  vi: Đường đẳng thời (Isochron)
+  en: Isochron
+definition:
+  vi: 'Một phương pháp định tuổi tài tình giải quyết được câu hỏi "ban đầu có sẵn bao nhiêu nguyên tử con?". Vẽ nhiều khoáng vật cùng kết tinh từ một khối magma lên đồ thị: lúc đầu chúng nằm trên một đường nằm ngang, rồi theo thời gian phân rã, đường này quay nghiêng dần. Độ dốc của đường cho ra tuổi, còn điểm cắt trục cho ra thành phần con ban đầu - nên không cần giả định điểm xuất phát.'
+  en: 'An elegant dating method that defeats the question "how much daughter was there to begin with?". Plot several minerals that crystallized from one melt: at first they lie on a flat line, then as decay proceeds the line pivots and steepens. The slope gives the age and the intercept recovers the initial daughter ratio - so no assumption about the starting point is needed.'
+see_also:
+  - radiometric-dating
+  - uranium-lead-dating
+  - half-life
+category: concept
+cover_prompt: A painted abstract plot of several glowing amber points that have pivoted from a flat line into a tilted straight line across a dark graph field, a cyan line through them, cool palette, painterly, no axis text or numbers.

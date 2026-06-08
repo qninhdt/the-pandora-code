@@ -78,7 +78,8 @@
     },
     "timeline": {
       "title": "Knowledge timeline",
-      "subtitle": "Reading order across parts and chapters."
+      "subtitle": "Reading order across parts and chapters.",
+      "kicker": "The journey"
     },
     "parts": {
       "title": "Parts",

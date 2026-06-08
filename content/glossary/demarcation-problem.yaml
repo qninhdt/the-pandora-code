@@ -1,17 +1,12 @@
 id: demarcation-problem
 label:
-  vi: Vấn đề phân ranh
+  vi: Bài toán ranh giới
   en: The demarcation problem
 definition:
-  vi: "Câu hỏi nền tảng trong triết học khoa học - làm sao tách khoa học thật ra khỏi phi khoa học và ngụy khoa học. Popper đề xuất tính khả phủ định; Kuhn nhấn mạnh các hệ hình; Lakatos phân biệt chương trình nghiên cứu tiến bộ (dự đoán cái mới) với thoái hóa (chỉ chữa cháy sau mỗi mâu thuẫn). Chưa có lời giải dứt khoát, nhưng câu hỏi hữu ích vẫn là: tuyên bố này cấm điều gì xảy ra?"
-  en: "The foundational question in the philosophy of science - how to separate genuine science from non-science and pseudoscience. Popper proposed falsifiability; Kuhn stressed paradigms; Lakatos distinguished progressive research programmes (which predict new facts) from degenerating ones (which only patch contradictions after the fact). There is no final answer, but the useful question remains: what would this claim forbid?"
+  vi: 'Câu hỏi nền tảng trong triết học khoa học - làm thế nào để tách biệt khoa học chân chính với phi khoa học và ngụy khoa học. Popper đề xuất tính có thể bác bỏ (falsifiability); Kuhn nhấn mạnh các hệ hình (paradigms); Lakatos phân biệt các chương trình nghiên cứu tiến bộ (dự đoán được sự thật mới) với các chương trình thoái hóa (chỉ vá víu các mâu thuẫn sau khi sự đã rồi). Không có một câu trả lời cuối cùng nào, nhưng một câu hỏi hữu ích vẫn tồn tại: tuyên bố này cấm điều gì xảy ra?'
+  en: 'The foundational question in the philosophy of science - how to separate genuine science from non-science and pseudoscience. Popper proposed falsifiability; Kuhn stressed paradigms; Lakatos distinguished progressive research programmes (which predict new facts) from degenerating ones (which only patch contradictions after the fact). There is no final answer, but the useful question remains: what would this claim forbid?'
 see_also:
   - falsifiability
   - abduction
 category: concept
-cover_prompt: >-
-  A dark indigo field divided by a single glowing cyan boundary line; on one
-  side floats a clean ordered lattice of teal light points, on the other a
-  murky tangle of dim magenta threads imitating the lattice but blurred and
-  disordered. Convey a line dividing genuine structure from a convincing
-  imitation, painterly and literal, no text.
+cover_prompt: A dark indigo field divided by a single glowing cyan boundary line; on one side floats a clean ordered lattice of teal light points, on the other a murky tangle of dim magenta threads imitating the lattice but blurred and disordered. Convey a line dividing genuine structure from a convincing imitation, painterly and literal, no text.

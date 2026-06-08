@@ -1,0 +1,13 @@
+id: uranium-lead-dating
+label:
+  vi: Định tuổi bằng urani-chì
+  en: Uranium-lead dating
+definition:
+  vi: Đồng hồ tiêu chuẩn vàng cho thời gian sâu thẳm, thường nằm trong các tinh thể zircon. Zircon tiếp nhận urani nhưng từ chối chì khi nó lớn lên, do đó bất kỳ lượng chì nào bên trong nó đều là sản phẩm của quá trình phân rã. Hai loại urani phân rã thành hai loại chì ở hai tốc độ khác nhau, mang lại hai chiếc đồng hồ độc lập trong cùng một hạt - tự kiểm tra chéo lẫn nhau và sẽ tố cáo nếu chúng từng bị xáo trộn.
+  en: The gold-standard clock for deep time, usually hosted in zircon crystals. Zircon takes in uranium but rejects lead as it grows, so any lead inside it is the product of decay. Two kinds of uranium decay to two kinds of lead at two rates, giving two independent clocks in one grain - cross-checking each other and confessing when they have been disturbed.
+see_also:
+  - zircon
+  - radiometric-dating
+  - isochron
+category: concept
+cover_prompt: A painted macro of a faceted translucent crystal glowing with two distinct internal hues, suggesting two clocks within one stone, cool cyan and amber on a void-indigo field, painterly specimen plate, no text or numerals.

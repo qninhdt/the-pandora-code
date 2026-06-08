@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-living-archive",
+  "chapter_slug": "pandoras-deep-time",
+  "role": "inline",
+  "narrative_purpose": "Contrasts Earth's dead rock record with Pandora's living archive: on one side dull silent stone strata holding fossils, on the other a luminous neural tree whose glowing roots thread living layers of memory - the chapter's bridge between geology and Eywa.",
+  "subject": "A split natural scene. On the left, dull grey layered rock strata with faint pale fossil shapes pressed silently into the stone - lifeless and still. On the right, the same depth of ground is alive: a vast ancient tree sends luminous cyan and teal roots downward through glowing layered soil, and within each glowing layer faint shapes drift like preserved memories, connected by a web of fine bioluminescent threads climbing back up into the tree.",
+  "scene": "A cutaway of the ground itself, dead rock meeting living network underground, the surface above lost in dark forest haze.",
+  "camera": "A tall cross-sectional view looking at the underground layers head-on, the dead-rock side and the living-network side meeting near the center.",
+  "light": "Left side dim and cold, almost lightless grey; right side glowing from within with cyan and teal bioluminescence radiating up the roots and threads; deep indigo shadow binding them.",
+  "palette": "Cold desaturated stone-grey on the dead side, vivid cyan and living-teal glow on the living side, scarce magenta sparks among the drifting memory-shapes, void-indigo ground.",
+  "style": "Painterly speculative-biology plate, textured rock against luminous organic network.",
+  "detail_level": "Crisp glowing roots, threads, and memory-motes on the living side; the dead side flatter and duller by deliberate contrast; surface above dissolving into haze.",
+  "composition": "A near-central vertical divide between dull strata (left) and glowing rooted network (right), roots and threads drawing the eye downward then back up, balanced halves.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "diagram split-line chrome", "human figures"],
+  "consistency_notes": "Cool Pandora palette with bioluminescent key from the living network; the dead-rock side is deliberately desaturated to read as 'silent record'. Restrained magenta accents only.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no infographic chrome, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"]
+}

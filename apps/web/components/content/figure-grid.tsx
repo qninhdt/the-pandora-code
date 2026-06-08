@@ -1,3 +1,4 @@
+import { LightboxImage } from "@/components/content/lightbox";
 import { cn } from "@/lib/utils";
 
 interface FigureGridItem {
@@ -30,7 +31,11 @@ export function FigureGrid({ items, locale = "vi", cols = 2, className }: Figure
         return (
           <figure key={it.src} className="m-0">
             <div className="overflow-hidden rounded-xl border border-border bg-surface">
-              <img src={it.src} alt={it.alt ?? text ?? ""} className="w-full object-cover" />
+              <LightboxImage
+                src={it.src}
+                alt={it.alt ?? text ?? ""}
+                className="w-full object-cover"
+              />
             </div>
             {text && (
               <figcaption className="mt-2 font-serif text-xs italic leading-snug text-muted">

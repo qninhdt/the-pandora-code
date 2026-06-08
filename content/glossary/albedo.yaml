@@ -1,0 +1,12 @@
+id: albedo
+label:
+  vi: Suất phản chiếu
+  en: Albedo
+definition:
+  vi: Tỷ lệ ánh sáng sao mà một bề mặt dội thẳng lại không gian thay vì hấp thụ. Một thế giới phủ đầy tuyết hoặc mây trắng có suất phản chiếu cao, phản xạ phần lớn ánh sáng và giữ cho nhiệt độ mát mẻ; một thế giới sẫm màu - đại dương, rừng rậm - hấp thụ nhiều hơn và ấm hơn. Cùng với khoảng cách đến ngôi sao, suất phản chiếu quyết định lượng năng lượng mà một hành tinh giữ lại để sưởi ấm chính nó.
+  en: The fraction of starlight a surface bounces straight back to space instead of absorbing. A world cloaked in snow or white cloud has a high albedo, reflecting most of the light and staying cool; a dark world - ocean, forest - absorbs more and runs warmer. Together with distance from the star, albedo sets how much energy a planet keeps to warm itself.
+see_also:
+  - radiative-equilibrium
+  - habitable-zone
+category: concept
+cover_prompt: 'A painted split scene of a planet''s surface: one half bright white ice and pale cloud bouncing arcs of starlight back to space, the other half dark ocean and forest soaking the light in. Cool void-indigo space, soft painterly glow, no text, no labels, no numbers.'

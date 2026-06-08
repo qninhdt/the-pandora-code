@@ -56,8 +56,11 @@ check research/{slug}.md exists?
           1. pandora-author      → content/chapters/{slug}/en.mdx (5–7k words, fusion voice)
           2. pandora-art-director → content/chapters/{slug}/figures/fig-NN-*.json (many)
           3. scripts/gen-images.ts --chapter {slug}   → PNGs + flips asset_status
-          4. pandora-translate   → content/chapters/{slug}/vi.mdx (body + captions)
-          5. pnpm check-glossary {slug} && pnpm validate:content && pnpm build
+          4. figure-annotation pass → READ each generated PNG, author labels/notes
+                                       onto its <DiagramFigure> in en.mdx (coords come
+                                       from the real image, so this MUST follow image gen)
+          5. pandora-translate   → content/chapters/{slug}/vi.mdx (body + captions + labels)
+          6. pnpm check-glossary {slug} && pnpm validate:content && pnpm build
         print a summary + how to regen a figure (`/pandora figure <id>`)
 ```
 
@@ -101,6 +104,16 @@ Full detail, including `meta.yaml` authoring and the status taxonomy, lives in
    locale. Never reference plan artifacts (phase numbers, finding codes) in code,
    comments, or commit messages - describe the _why_, not the origin.
 
+8. **Every AI-image figure is a `<DiagramFigure>`, annotated after image gen.**
+   Author AI-generated image figures as `<DiagramFigure>` (never the bare
+   `<Figure>`) so they carry callout labels and the global show/hide-annotations
+   toggle. Labels CANNOT be authored until the PNG exists - their `{x,y}` coords
+   are read off the real image - so the figure-annotation pass (flow step 4) runs
+   AFTER `gen-images` and BEFORE translate. The author writes the `<DiagramFigure>`
+   with `src/alt/figNo/caption/tier` first (labels empty); the annotation pass
+   fills `labels=[…]`. See `pandora-art-director` (annotation pass) and
+   `pandora-author` (figure component rule).
+
 ## Component selection (palette, not checklist)
 
 The component library is a **reference palette that grows chapter by chapter** -
@@ -126,6 +139,7 @@ discarded for quality. See `references/component-palette.md`.
 | Compose DR prompt, ingest research  | `pandora-research`                                        |
 | Plan + write EN prose               | `pandora-author`                                          |
 | Figure prompts + image gen          | `pandora-art-director` → `scripts/gen-images.ts`          |
+| Figure annotation pass (labels)     | `pandora-art-director` (reads PNGs → labels in en.mdx)    |
 | EN→VI translation (body + captions) | `pandora-translate`                                       |
 | Glossary sync                       | `scripts/check-glossary-terms.ts` (`pnpm check-glossary`) |
 | Validate + build                    | `pnpm validate:content`, `pnpm build`                     |
@@ -134,6 +148,10 @@ discarded for quality. See `references/component-palette.md`.
 
 - `content/chapters/{slug}/{meta.yaml,en.mdx,vi.mdx}` exist and validate.
 - `figures/fig-NN-*.json` present; images generated; `asset_status: ready`.
+- Every AI-image figure renders as a `<DiagramFigure>` and has been through the
+  annotation pass: callout `labels=[…]` authored from the real PNG (EN), then
+  translated (VI). Decorative cover/background layers (`fig-00`, `fig-99`) are
+  exempt - they are not inline figures.
 - `pnpm check-glossary {slug}` passes (no dangling terms).
 - `pnpm validate:content` + `pnpm build` green.
 - Chapter reads as a fused Pandora→STEM piece, not a wiki dump or a lecture.

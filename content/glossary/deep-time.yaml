@@ -1,0 +1,13 @@
+id: deep-time
+label:
+  vi: Thời gian sâu thẳm
+  en: Deep time
+definition:
+  vi: Thang đo thời gian khổng lồ của địa chất học - hàng triệu đến hàng tỷ năm - vượt xa tầm hiểu biết trực giác của con người. Được mở ra bởi James Hutton và Charles Lyell vào thế kỷ 18-19, ý tưởng này thay thế một Trái Đất chỉ vài nghìn năm tuổi bằng một quá khứ dài đến chóng mặt, đủ rộng rãi cho quá trình kiến tạo đá chậm chạp và sự tiến hóa.
+  en: The vast scale of geological time - millions to billions of years - far beyond the reach of human intuition. Opened up by James Hutton and Charles Lyell in the 18th-19th centuries, the idea replaced a few-thousand-year-old Earth with a dizzyingly long past, roomy enough for slow rock-building and evolution.
+see_also:
+  - uniformitarianism
+  - geochronology
+  - geologic-time-scale
+category: concept
+cover_prompt: A painted view down a towering canyon wall of countless thin stacked rock layers receding into deep haze, conveying an almost endless depth of time, cool indigo and teal palette, faint bioluminescent traces along the seams, no text or numbers.

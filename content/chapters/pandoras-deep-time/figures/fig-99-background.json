@@ -1,0 +1,20 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "pandoras-deep-time",
+  "role": "hero",
+  "narrative_purpose": "The dim full-bleed atmospheric backdrop the chapter's text floats over: ancient wind-carved stone arches of the Pandoran highlands receding into haze under a dark sky, evoking deep time and erosion, deliberately low-contrast so overlaid text stays readable.",
+  "subject": "A vast field of ancient, weathered rock arches and eroded stone formations stretching to a low horizon, their surfaces worn smooth by hundreds of millions of years of wind. Most are dark silhouettes; a few catch a faint cool rim of light along their upper edges. Threads of dim bioluminescent teal trace a few crevices low to the ground. A pale sliver of a gas giant's curve sits dim and distant on the horizon.",
+  "scene": "A wide panoramic highland vista from a high, far vantage at deep twilight, immense atmospheric haze layering the distance, almost everything dissolving into murk - mood, not a figure to study.",
+  "camera": "Ultra-wide panoramic vista from a very high distant vantage, horizon low in the frame, great depth of layered haze.",
+  "light": "Very dark and low-contrast; a faint cool rim along the tops of the nearest arches, a dim teal glow in low crevices, deep indigo shadow everywhere else; no bright focal light.",
+  "palette": "Dominant void-indigo and deep teal-indigo, desaturated stone-grey silhouettes, a faint cyan haze low on the horizon; overall dim.",
+  "style": "Painterly atmospheric vista, soft, dark, immersive; detail dissolving into haze.",
+  "detail_level": "Low and soft throughout - deliberately dim and hazy so long-form text can float over it and stay legible.",
+  "composition": "Low horizon; dark eroded arches receding across the frame; wide empty hazy sky above; nothing bright competing for attention.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "bright focal subject", "high contrast", "sharp foreground detail", "human figures"],
+  "consistency_notes": "Same cool Pandora palette and any gas giant must match Polyphemus elsewhere. Must stay dark and low-contrast as a background layer, distinct from the crisp bright cover.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no bright focal point, no high contrast, no sharp foreground, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"]
+}

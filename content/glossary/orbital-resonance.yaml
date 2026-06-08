@@ -1,0 +1,13 @@
+id: orbital-resonance
+label:
+  vi: Cộng hưởng quỹ đạo
+  en: Orbital resonance
+definition:
+  vi: 'Khi các thiên thể quay quanh khóa nhịp với nhau theo tỉ lệ số nguyên đơn giản, đều đặn kéo lẫn nhau bằng lực hấp dẫn. Ở hệ Sao Mộc, Io, Europa và Ganymede ở cộng hưởng 4:2:1 (cộng hưởng Laplace): mỗi cú kéo định kỳ giữ cho quỹ đạo của chúng hơi lệch tâm, nuôi sống động cơ nhiệt thủy triều. Pandora rất có thể cần một dàn xếp tương tự để giữ nóng suốt hàng tỉ năm.'
+  en: 'When orbiting bodies fall into a steady lockstep of simple whole-number ratios, tugging on one another gravitationally at regular intervals. In the Jovian system, Io, Europa, and Ganymede sit in a 4:2:1 (Laplace) resonance: the periodic tugs keep their orbits slightly eccentric, feeding the tidal-heating engine. Pandora most likely needs a similar arrangement to stay hot for billions of years.'
+see_also:
+  - tidal-heating
+  - spin-orbit-resonance
+  - accretion
+category: planet
+cover_prompt: A painted view of three moons of differing sizes lined up in a row beside a vast banded gas giant, faint glowing connection lines suggesting a rhythmic gravitational lockstep, cool indigo palette, painterly astronomical plate, no text or numbers.

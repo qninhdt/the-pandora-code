@@ -1,0 +1,13 @@
+id: half-life
+label:
+  vi: Chu kỳ bán rã
+  en: Half-life
+definition:
+  vi: Thời gian cần thiết để một nửa số nguyên tử phóng xạ trong một mẫu phân rã thành các nguyên tử con. Sau mỗi chu kỳ bán rã, lượng nguyên tử mẹ lại giảm đi một nửa - còn một nửa, một phần tư, một phần tám - theo một đường cong phân rã hàm mũ đều đặn đến mức có thể chạy ngược lại để đọc ra tuổi. Mỗi nguyên tố có chu kỳ bán rã riêng, từ hàng ngàn đến hàng tỷ năm.
+  en: The time it takes for half the radioactive atoms in a sample to decay into daughter atoms. After each half-life the parent halves again - a half, a quarter, an eighth - along an exponential decay curve so regular it can be run backward to read an age. Each element has its own half-life, from thousands to billions of years.
+see_also:
+  - radiometric-dating
+  - radiocarbon-dating
+  - uranium-lead-dating
+category: concept
+cover_prompt: A painted row of glowing orbs receding into the dark, each exactly half as bright as the one before, conveying repeated halving, cool cyan-teal glow on a void-indigo field, painterly, no text or numbers.

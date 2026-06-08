@@ -3,15 +3,10 @@ label:
   vi: Suy luận hồi tố
   en: Abduction
 definition:
-  vi: "Kiểu suy luận, do Charles Sanders Peirce tách riêng khỏi diễn dịch và quy nạp, đi ngược từ một quan sát bất ngờ tới giả thuyết giải thích nó tốt nhất. Khác với quy nạp (vốn chỉ đếm số lần lặp lại), suy luận hồi tố hỏi: nguyên nhân nào, nếu đúng, sẽ khiến quan sát này trở nên không còn đáng ngạc nhiên? Đây là cỗ máy lý luận của tầng Suy luận trong cuốn sách."
-  en: "A mode of inference, singled out by Charles Sanders Peirce from deduction and induction, that reasons backward from a surprising observation to the hypothesis that best explains it. Unlike induction (which counts repetitions), abduction asks which underlying cause, if true, would make the observation unsurprising. It is the reasoning engine behind this book's Inference tier."
+  vi: 'Một kiểu suy luận, được Charles Sanders Peirce phân biệt với diễn dịch và quy nạp, suy luận ngược từ một quan sát bất ngờ về giả thuyết giải thích nó tốt nhất. Khác với quy nạp (chỉ đếm số lần lặp lại), suy luận hồi tố đặt câu hỏi: nguyên nhân cốt lõi nào, nếu đúng, sẽ khiến quan sát này không còn đáng ngạc nhiên nữa? Đây là cỗ máy lập luận đằng sau tầng Suy luận của cuốn sách này.'
+  en: A mode of inference, singled out by Charles Sanders Peirce from deduction and induction, that reasons backward from a surprising observation to the hypothesis that best explains it. Unlike induction (which counts repetitions), abduction asks which underlying cause, if true, would make the observation unsurprising. It is the reasoning engine behind this book's Inference tier.
 see_also:
   - inference-to-the-best-explanation
   - occams-razor
 category: concept
-cover_prompt: >-
-  A single glowing teal footprint pressed into dark Pandoran moss, with three
-  faint translucent creature silhouettes rising as candidate explanations above
-  it and one of them lit brightest by bioluminescence. Convey reasoning
-  backward from a clue to the best of several explanations, painterly and
-  literal, no text.
+cover_prompt: A single glowing teal footprint pressed into dark Pandoran moss, with three faint translucent creature silhouettes rising as candidate explanations above it and one of them lit brightest by bioluminescence. Convey reasoning backward from a clue to the best of several explanations, painterly and literal, no text.

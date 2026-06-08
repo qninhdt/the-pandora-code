@@ -25,8 +25,16 @@ const tierVar: Record<NonNullable<TimelineEvent["kind"]>, string> = {
 export function Timeline({ events, className }: TimelineProps) {
   return (
     <ol
-      className={cn("relative my-8 ml-4 space-y-7 border-l pl-7", className)}
-      style={{ borderColor: "color-mix(in oklab, var(--cyan) 25%, var(--border))" }}
+      className={cn("relative ml-4 space-y-7 border-l", className)}
+      style={{
+        borderColor: "color-mix(in oklab, var(--cyan) 25%, var(--border))",
+        // Neutralize inherited `.prose-pandora ol` styling (decimal markers +
+        // its own inline padding) so the numbers disappear and the tier dots
+        // stay aligned to the spine.
+        listStyle: "none",
+        paddingInlineStart: "1.75rem",
+        marginBlock: "2rem",
+      }}
     >
       {events.map((e) => {
         const c = `var(${tierVar[e.kind ?? "canon"]})`;

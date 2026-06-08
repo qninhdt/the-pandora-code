@@ -1,0 +1,284 @@
+{
+  "glossary": {
+    "abduction.yaml": {
+      "label": "Suy luận hồi tố",
+      "definition": "Một kiểu suy luận, được Charles Sanders Peirce phân biệt với diễn dịch và quy nạp, suy luận ngược từ một quan sát bất ngờ về giả thuyết giải thích nó tốt nhất. Khác với quy nạp (chỉ đếm số lần lặp lại), suy luận hồi tố đặt câu hỏi: nguyên nhân cốt lõi nào, nếu đúng, sẽ khiến quan sát này không còn đáng ngạc nhiên nữa? Đây là cỗ máy lập luận đằng sau tầng Suy luận của cuốn sách này."
+    },
+    "accretion.yaml": {
+      "label": "Bồi tụ",
+      "definition": "Quá trình một thiên thể lớn lên bằng cách thu thập vật chất từ đĩa bụi và khí xung quanh - cách mà các hành tinh và mặt trăng hình thành từ tinh vân nguyên thủy. Một mặt trăng như Pandora bồi tụ từ đĩa mảnh vụn quanh hành tinh chủ khổng lồ của nó, trong vòng vài chục triệu năm kể từ khi ngôi sao ra đời."
+    },
+    "adiabatic-lapse-rate.yaml": {
+      "label": "Tốc độ giảm nhiệt độ đoạn nhiệt",
+      "definition": "Tốc độ mà không khí nguội đi khi nó bốc lên và giãn nở dưới áp suất giảm dần. Trên Trái Đất, không khí khô mất khoảng 10°C cho mỗi km độ cao - đó là lý do tại sao các đỉnh núi lại lạnh giá. Tốc độ này tỷ lệ thuận với trọng lực và tỷ lệ nghịch với nhiệt dung của không khí: trọng lực yếu hơn cùng với bầu khí quyển nặng, ẩm ướt, giàu nhiệt của Pandora khiến không khí của nó nguội đi chậm hơn nhiều theo độ cao - đủ để giữ cho các dãy núi lơ lửng luôn ấm áp và có nước thay vì đóng băng."
+    },
+    "albedo.yaml": {
+      "label": "Suất phản chiếu",
+      "definition": "Tỷ lệ ánh sáng sao mà một bề mặt dội thẳng lại không gian thay vì hấp thụ. Một thế giới phủ đầy tuyết hoặc mây trắng có suất phản chiếu cao, phản xạ phần lớn ánh sáng và giữ cho nhiệt độ mát mẻ; một thế giới sẫm màu - đại dương, rừng rậm - hấp thụ nhiều hơn và ấm hơn. Cùng với khoảng cách đến ngôi sao, suất phản chiếu quyết định lượng năng lượng mà một hành tinh giữ lại để sưởi ấm chính nó."
+    },
+    "alpha-centauri.yaml": {
+      "label": "Alpha Centauri",
+      "definition": "Hệ sao gần Trái Đất nhất, cách khoảng 4.37 năm ánh sáng, gồm ba ngôi sao - Alpha Centauri A (sao lùn vàng giống Mặt Trời, được người Na'vi gọi là Tsawke), Alpha Centauri B (sao lùn cam), và Proxima Centauri ở đằng xa (sao lùn đỏ). Theo mạch truyện, Pandora quay quanh hành tinh khí khổng lồ Polyphemus, còn Polyphemus quay quanh Alpha Centauri A."
+    },
+    "atmospheric-disequilibrium.yaml": {
+      "label": "Mất cân bằng khí quyển"
+    },
+    "atmospheric-general-circulation.yaml": {
+      "label": "Hoàn lưu khí quyển chung",
+      "definition": "Hệ thống các dòng khí ở quy mô hành tinh mang nhiệt từ xích đạo nóng bức về các cực lạnh giá. Bởi vì xích đạo nhận được nhiều năng lượng mặt trời hơn các cực, không khí phải phân phối lại lượng nhiệt dư thừa đó, và nó thực hiện điều này thông qua các vòng tuần hoàn khổng lồ của không khí ấm bốc lên và không khí lạnh chìm xuống. Cỗ máy này - chứ không phải sự ngẫu nhiên - quyết định nơi nào trên thế giới có mưa và nơi nào khô ráo."
+    },
+    "biome.yaml": {
+      "label": "Quần xã sinh vật",
+      "definition": "Một loại hình hệ sinh thái chính được định hình bởi khí hậu - rừng mưa nhiệt đới, sa mạc, rừng ôn đới, đồng cỏ, lãnh nguyên - và các cộng đồng sự sống bên trong nó. Nhà sinh thái học Robert Whittaker đã chỉ ra rằng chỉ cần hai con số, nhiệt độ trung bình năm và lượng mưa trung bình năm, là đủ để sắp xếp gần như mọi cộng đồng vào ô tương ứng. Bởi vì hoàn lưu khí quyển quyết định nơi nào ấm-và-ướt hay lạnh-và-khô, nó cũng vẽ nên bản đồ các quần xã sinh vật trên bất kỳ thế giới nào."
+    },
+    "biosignature.yaml": {
+      "label": "Dấu ấn sinh học"
+    },
+    "cooper-pair.yaml": {
+      "label": "Cặp Cooper",
+      "definition": "Hai electron liên kết lỏng lẻo với nhau thông qua các dao động mạng tinh thể (phonon) mặc dù chúng vốn đẩy nhau. Với tổng spin bằng không, cặp này hành xử như một hạt boson và có thể ngưng tụ vào một trạng thái lượng tử chia sẻ duy nhất - nền tảng của tính siêu dẫn trong lý thuyết BCS (1957)."
+    },
+    "coriolis-effect.yaml": {
+      "label": "Hiệu ứng Coriolis",
+      "definition": "Sự lệch hướng biểu kiến sang một bên của không khí và nước chuyển động gây ra bởi chuyển động tự quay của hành tinh: trên một thế giới đang quay, một dòng chảy thẳng trông như bị bẻ cong sang một bên. Hiệu ứng này bẻ cong các luồng gió vốn sẽ chảy thẳng từ xích đạo đến cực thành các dòng chảy Đông-Tây, và từ đó phá vỡ vòng tuần hoàn thành các vòng riêng biệt. Tốc độ quay càng nhanh, hiệu ứng càng mạnh và các hoàn lưu càng hẹp. Lưu ý: nó chỉ có ý nghĩa ở các quy mô lớn như bão và các dòng hải lưu - nó không quyết định chiều xoáy của nước thoát trong bồn rửa."
+    },
+    "crater-counting.yaml": {
+      "label": "Đếm miệng núi lửa",
+      "definition": "Một cách để ước tính tuổi bề mặt của một thế giới mà bạn chưa thể chạm tới, chỉ sử dụng hình ảnh từ quỹ đạo. Một bề mặt mới tinh (một dòng dung nham, một dòng sông băng) bắt đầu mà không có miệng núi lửa nào; các miệng núi lửa tích tụ theo thời gian với một tốc độ xác định, do đó việc đếm mật độ của chúng sẽ cho ra tuổi tương đối. Tốc độ này được hiệu chỉnh dựa trên các mẫu đá Mặt Trăng đã được định tuổi bằng phương pháp phóng xạ, sau đó áp dụng cho Sao Hỏa, Sao Thủy, và các mặt trăng băng giá."
+    },
+    "critical-temperature.yaml": {
+      "label": "Nhiệt độ tới hạn",
+      "definition": "Nhiệt độ (ký hiệu là Tc) mà dưới đó vật liệu trở nên siêu dẫn. Đối với các chất siêu dẫn thông thường, Tc rất thấp (cần đến heli lỏng hoặc nitơ lỏng); một chất siêu dẫn ở nhiệt độ phòng và ổn định ở áp suất môi trường vẫn là một mục tiêu chưa đạt được."
+    },
+    "deep-time.yaml": {
+      "label": "Thời gian sâu thẳm",
+      "definition": "Thang đo thời gian khổng lồ của địa chất học - hàng triệu đến hàng tỷ năm - vượt xa tầm hiểu biết trực giác của con người. Được mở ra bởi James Hutton và Charles Lyell vào thế kỷ 18-19, ý tưởng này thay thế một Trái Đất chỉ vài nghìn năm tuổi bằng một quá khứ dài đến chóng mặt, đủ rộng rãi cho quá trình kiến tạo đá chậm chạp và sự tiến hóa."
+    },
+    "demarcation-problem.yaml": {
+      "label": "Bài toán ranh giới",
+      "definition": "Câu hỏi nền tảng trong triết học khoa học - làm thế nào để tách biệt khoa học chân chính với phi khoa học và ngụy khoa học. Popper đề xuất tính có thể bác bỏ (falsifiability); Kuhn nhấn mạnh các hệ hình (paradigms); Lakatos phân biệt các chương trình nghiên cứu tiến bộ (dự đoán được sự thật mới) với các chương trình thoái hóa (chỉ vá víu các mâu thuẫn sau khi sự đã rồi). Không có một câu trả lời cuối cùng nào, nhưng một câu hỏi hữu ích vẫn tồn tại: tuyên bố này cấm điều gì xảy ra?"
+    },
+    "diamagnetism.yaml": {
+      "label": "Nghịch từ",
+      "definition": "Xu hướng của vật chất đẩy yếu một từ trường, phát sinh từ chuyển động quỹ đạo của electron. Ở các vật liệu thông thường (như than chì nhiệt phân, nước, mô sống), lực này cực kỳ yếu và cần đến từ trường khổng lồ để tạo ra sự bay lơ lửng; một chất siêu dẫn là một vật liệu nghịch từ hoàn hảo, có thể bay lơ lửng ngay cả trong những từ trường yếu."
+    },
+    "direct-imaging.yaml": {
+      "label": "Chụp ảnh trực tiếp"
+    },
+    "exomoon.yaml": {
+      "label": "Mặt trăng ngoại hệ",
+      "definition": "Một mặt trăng quay quanh một hành tinh ở một hệ sao khác. Một mặt trăng ngoại hệ có thể sinh sống được phải cân bằng được bốn nguồn nhiệt - ánh sáng sao trực tiếp, ánh sáng sao phản chiếu từ hành tinh chủ, bức xạ hồng ngoại của chính hành tinh khí khổng lồ, và nhiệt thủy triều sinh ra bên trong nó - trong khi phải né tránh các vành đai bức xạ của hành tinh chủ. Pandora chính là một mặt trăng ngoại hệ như vậy. Cho đến nay, vẫn chưa có mặt trăng ngoại hệ nào được xác nhận chắc chắn."
+    },
+    "falsifiability.yaml": {
+      "label": "Tính có thể bác bỏ",
+      "definition": "Tiêu chí của Karl Popper để một tuyên bố được coi là khoa học: nó phải đưa ra một dự đoán đầy rủi ro, có thể kiểm chứng được, và về nguyên tắc có thể bị chứng minh là sai bởi quan sát. Thuyết tương đối rộng dự đoán ánh sáng sao bị bẻ cong quanh Mặt Trời - một vụ đánh cược có thể đã thất bại và đã được kiểm chứng vào năm 1919; một lý thuyết mà không quan sát nào có thể bác bỏ thì chẳng nói lên điều gì cả."
+    },
+    "flux-pinning.yaml": {
+      "label": "Ghim từ thông",
+      "definition": "Một cơ chế trong các chất siêu dẫn loại II, nơi các ống từ thông lượng tử (xoáy Abrikosov) bị bẫy lại tại các khuyết tật của mạng tinh thể, khóa chặt vật thể lơ lửng trong không gian ba chiều. Chính điều này - chứ không phải chỉ riêng hiệu ứng Meissner - mới tạo ra sự bay lơ lửng ổn định."
+    },
+    "geochronology.yaml": {
+      "label": "Địa thời học",
+      "definition": "Khoa học về việc gắn những con số tuổi tuyệt đối, tính bằng năm, cho các loại đá, khoáng vật, và các sự kiện địa chất. Xương sống của nó là định tuổi bằng phương pháp phóng xạ, kết hợp với địa tầng học tương đối, để xây dựng nên một dòng thời gian có thể kiểm chứng được về lịch sử của một hành tinh - và về nguyên tắc là của bất kỳ thế giới nào."
+    },
+    "geologic-time-scale.yaml": {
+      "label": "Thang thời gian địa chất"
+    },
+    "great-oxidation-event.yaml": {
+      "label": "Sự kiện Đại Oxy hóa",
+      "definition": "Bước ngoặt cách đây khoảng 2.4 tỷ năm khi vi khuẩn lam quang hợp lần đầu tiên bơm ra đủ oxy tự do để biến đổi bầu khí quyển Trái Đất từ một màn sương mù nghèo oxy, có tính khử thành một hỗn hợp phản ứng mạnh, giàu oxy mà chúng ta hít thở ngày nay. Oxy có tính ăn mòn dữ dội; sự hiện diện dai dẳng của nó chỉ có thể được duy trì khi sự sống liên tục bổ sung nó. Đây là bằng chứng lịch sử cho thấy một sinh quyển có thể làm lại không khí của cả một hành tinh - và là bối cảnh để đọc oxy như một dấu ấn sinh học."
+    },
+    "gyrochronology.yaml": {
+      "label": "Định tuổi bằng vận tốc quay",
+      "definition": "Một cách để ước tính tuổi của một ngôi sao khối lượng thấp từ việc nó quay nhanh như thế nào. Các ngôi sao trẻ quay nhanh và chậm dần theo tuổi tác theo một cách có thể dự đoán được khi chúng rũ bỏ mô men động lượng thông qua gió sao từ tính. Được đề xuất bởi Sydney Barnes vào năm 2003, phương pháp này đọc chu kỳ tự quay của một ngôi sao (thông qua các vết đen) và màu sắc để suy ra tuổi của ngôi sao đó cùng các hành tinh quay quanh nó."
+    },
+    "habitable-zone.yaml": {
+      "label": "Vùng ở được",
+      "definition": "Dải khoảng cách quanh một ngôi sao nơi một thế giới có bầu khí quyển phù hợp có thể giữ nước lỏng trên bề mặt - không quá gần để nước sôi bốc hơi hết, cũng không quá xa để bị đóng băng cứng. Vị trí của dải này phụ thuộc vào độ sáng của ngôi sao; ngôi sao càng sáng thì vùng này càng lùi xa hơn. Thường được gọi vui là \"Vùng Goldilocks\"."
+    },
+    "hadley-cell.yaml": {
+      "label": "Hoàn lưu Hadley",
+      "definition": "Vòng tuần hoàn không khí lớn nhất, lấp đầy vùng nhiệt đới: không khí ẩm ấm bốc lên ở xích đạo, trút mưa khi nó nguội đi, trôi dạt về phía các cực ở trên cao, và chìm trở xuống dưới dạng không khí khô ở vĩ độ khoảng 30°. Nhánh bốc lên tạo ra các khu rừng mưa nhiệt đới; nhánh chìm xuống tạo ra những sa mạc rộng lớn. Chiều rộng của vòng tuần hoàn này phụ thuộc vào tốc độ tự quay của thế giới: quay chậm hơn sẽ làm nó rộng ra, đẩy cả vành đai ẩm ướt và vành đai khô cằn ra xa xích đạo hơn."
+    },
+    "half-life.yaml": {
+      "label": "Chu kỳ bán rã",
+      "definition": "Thời gian cần thiết để một nửa số nguyên tử phóng xạ trong một mẫu phân rã thành các nguyên tử con. Sau mỗi chu kỳ bán rã, lượng nguyên tử mẹ lại giảm đi một nửa - còn một nửa, một phần tư, một phần tám - theo một đường cong phân rã hàm mũ đều đặn đến mức có thể chạy ngược lại để đọc ra tuổi. Mỗi nguyên tố có chu kỳ bán rã riêng, từ hàng ngàn đến hàng tỷ năm."
+    },
+    "hallelujah-mountains.yaml": {
+      "label": "Dãy núi Hallelujah",
+      "definition": "Các hòn đảo đá khổng lồ lơ lửng của Pandora (tiếng Na'vi - Ayram alusìng), tập trung ở vùng Iknimaya. Cốt truyện giải thích sự lơ lửng của chúng là do lõi chứa khoáng vật siêu dẫn unobtanium nằm bên trong Dòng xoáy Từ thông (Flux Vortex) của hành tinh."
+    },
+    "histotoxic-hypoxia.yaml": {
+      "label": "Thiếu oxy mô",
+      "definition": "Một tình trạng mà trong đó các tế bào không thể sử dụng oxy mặc dù máu chứa đầy oxy, bởi vì cỗ máy hô hấp bên trong tế bào đã bị nhiễm độc. Hydro sulfua (H₂S) - cũng giống như xyanua - liên kết với nguyên tử sắt của enzyme cuối cùng trong chuỗi chuyền electron của ty thể, ngăn cản việc trao electron cho oxy. Tế bào chết đói ngay bên một cái giếng đầy ắp. Trên Pandora, đây là kẻ sát nhân thứ hai, song hành cùng chứng tăng CO2 máu."
+    },
+    "hypercapnia.yaml": {
+      "label": "Chứng tăng CO2 máu (Hypercapnia)",
+      "definition": "Tình trạng dư thừa carbon dioxide (CO₂) trong máu. Thông thường, cơ thể xả CO₂ vào phổi vì không khí bên ngoài hầu như không chứa khí này; nhưng khi không khí xung quanh giàu CO₂, dòng chảy đảo ngược và CO₂ tràn vào trong, tạo thành axit carbonic và làm máu bị axit hóa. Cuống não phản ứng bằng cách thúc đẩy nhịp thở nhanh hơn - một phản xạ trở thành cái bẫy tử thần khi mỗi hơi thở chỉ nạp thêm chất độc. Đây là một trong hai kẻ sát nhân trực tiếp trong không khí của Pandora."
+    },
+    "inference-to-the-best-explanation.yaml": {
+      "label": "Suy luận về lời giải thích tốt nhất",
+      "definition": "Hình thức sắc bén hơn của suy luận hồi tố theo Gilbert Harman: trong số các giả thuyết đối thủ cùng giải thích một sự thật, hãy chấp nhận giả thuyết giải thích nó tốt nhất. \"Tốt nhất\" được cân nhắc bởi các tiêu chí - khả năng kiểm chứng, phạm vi, tính bảo thủ (phù hợp với những gì chúng ta đã có lý do chắc chắn để tin tưởng), và tính đơn giản (Dao cạo Occam). Nếu không có những tiêu chí này, \"tốt nhất\" sẽ sụp đổ thành \"cái mà tôi tình cờ thích\"."
+    },
+    "intertropical-convergence-zone.yaml": {
+      "label": "Đới hội tụ liên chí tuyến",
+      "definition": "Vành đai quanh xích đạo nơi gió tín phong của hai bán cầu gặp nhau, đẩy không khí ẩm ấm bốc lên. Đây là nhánh bốc lên của hoàn lưu Hadley: hơi nước ngưng tụ và trút mưa gần như mỗi ngày, đó là lý do tại sao các khu rừng mưa nhiệt đới rậm rạp nhất Trái Đất lại bám dọc theo nó. Trên một thế giới quay chậm như Pandora, vành đai mưa đó mở rộng thành một dải nhiệt đới rộng lớn chứ không phải là một vạch hẹp."
+    },
+    "isochron.yaml": {
+      "label": "Đường đẳng thời (Isochron)"
+    },
+    "libration.yaml": {
+      "label": "Sự bình động",
+      "definition": "Sự lắc lư và gật gù chậm chạp của một thiên thể bị khóa thủy triều khi nhìn từ hành tinh chủ của nó. Mặc dù trung bình nó chỉ hướng một mặt về phía hành tinh chủ, quỹ đạo không tròn hoàn hảo khiến nó lúc thì chạy trước lúc thì tụt lại phía sau (bình động theo kinh độ), và độ nghiêng trục cho phép người quan sát lần lượt nhìn qua các cực bắc và nam của nó (bình động theo vĩ độ). Sự bình động là lý do tại sao chúng ta nhìn thấy khoảng 59% bề mặt Mặt Trăng từ Trái Đất thay vì chính xác là một nửa."
+    },
+    "meissner-effect.yaml": {
+      "label": "Hiệu ứng Meissner",
+      "definition": "Sự kiện một chất siêu dẫn chủ động đẩy lùi toàn bộ từ trường ra khỏi bên trong nó khi được làm lạnh dưới nhiệt độ tới hạn (nghịch từ hoàn hảo). Lực đẩy này có thể nâng một nam châm lên nhưng không mang lại sự ổn định ngang - nếu chỉ có nó thì sự lơ lửng sẽ không ổn định."
+    },
+    "obliquity.yaml": {
+      "label": "Độ nghiêng trục",
+      "definition": "Góc giữa trục quay của một thiên thể và đường vuông góc với mặt phẳng quỹ đạo của nó. Chính độ nghiêng trục - chứ không phải khoảng cách đến ngôi sao - mới là nguyên nhân thực sự gây ra các mùa: bán cầu nào nghiêng về phía mặt trời sẽ đón được nhiều ánh sáng trực tiếp hơn và nóng hơn. Độ nghiêng của Trái Đất là khoảng 23°; theo cốt truyện, Pandora có độ nghiêng lớn hơn, khoảng 25°, đủ để tạo ra cả các mùa thông thường và các \"mùa thiên thực\"."
+    },
+    "occams-razor.yaml": {
+      "label": "Dao cạo Occam",
+      "definition": "Nguyên lý cho rằng không nên nhân rộng các giả định vượt quá mức cần thiết: giữa hai lời giải thích cho cùng một sự thật, hãy ưu tiên lời giải thích viện đến ít thực thể mới hơn. Nó không nói rằng câu chuyện đơn giản hơn tự động là sự thật - nó nói rằng gánh nặng chứng minh rơi vào lời giải thích nào tự cho phép mình có nhiều phép màu thừa thãi hơn. Đây là một trong những tiêu chí để đánh giá một suy luận tốt."
+    },
+    "orbital-resonance.yaml": {
+      "label": "Cộng hưởng quỹ đạo"
+    },
+    "partial-pressure.yaml": {
+      "label": "Áp suất riêng phần",
+      "definition": "Phần áp suất mà một loại khí đơn lẻ đóng góp vào một hỗn hợp - bằng tỷ lệ phần trăm của nó nhân với tổng áp suất (định luật Dalton). Cơ thể phản ứng không phải với \"tỷ lệ phần trăm\" oxy mà là với áp suất riêng phần của nó, tức là lực đẩy oxy từ không khí vào máu. Do đó, cùng một tỷ lệ phần trăm oxy có thể hít thở được ở một áp suất này nhưng lại gây ngạt thở ở một áp suất thấp hơn, giống như trên đỉnh Everest."
+    },
+    "planetary-differentiation.yaml": {
+      "label": "Sự phân tầng hành tinh",
+      "definition": "Quá trình mà một thiên thể nóng chảy tách thành các lớp theo mật độ - kim loại nặng chìm xuống tạo thành lõi, đá nhẹ hơn nổi lên tạo thành lớp manti và lớp vỏ. Nó thiết lập cấu trúc bên trong của một hành tinh; đối với Pandora, vụ va chạm cổ đại được cho là đã phá vỡ chính cái lõi sắt-niken phân tầng rất rõ ràng đó."
+    },
+    "planetshine.yaml": {
+      "label": "Ánh sáng hành tinh",
+      "definition": "Ánh sáng mặt trời phản chiếu từ một hành tinh lên mặt trăng của nó, thắp sáng nửa ban đêm của mặt trăng - rất giống với cách \"ánh sáng Trái Đất\" làm cho phần tối của Mặt Trăng lưỡi liềm mờ ảo hiện ra. Vì Polyphemus rất lớn và có tính phản chiếu cao, ánh sáng hành tinh của nó hắt lên Pandora sáng đến mức bán cầu hướng về hành tinh chủ hiếm khi chìm vào bóng tối thực sự - một áp lực tiến hóa đã góp phần định hình thế giới phát quang sinh học của nó."
+    },
+    "quantum-locking.yaml": {
+      "label": "Khóa lượng tử",
+      "definition": "Tên gọi phổ biến cho hệ quả vĩ mô của hiện tượng ghim từ thông: một chất siêu dẫn bị khóa cứng ở một vị trí và góc nghiêng cố định trong không gian - có khả năng lơ lửng tại chỗ, trượt không ma sát dọc theo một đường ray từ tính, hoặc thậm chí treo ngược bên dưới một nam châm."
+    },
+    "radial-velocity.yaml": {
+      "label": "Vận tốc xuyên tâm",
+      "definition": "Một phương pháp săn hành tinh dựa trên việc đo sự chao đảo nhỏ bé của một ngôi sao. Cả ngôi sao và hành tinh đều quay quanh khối tâm chung của chúng, do đó ngôi sao hơi lắc qua lắc lại; khi nó tiến về phía chúng ta, ánh sáng của nó dịch chuyển sang màu xanh (blue-shift), khi nó lùi ra xa, ánh sáng dịch chuyển sang màu đỏ (red-shift) (hiệu ứng Doppler). Đọc sự thay đổi màu sắc nhịp nhàng đó sẽ cho biết chu kỳ quỹ đạo và khối lượng tối thiểu của hành tinh, nhưng không cho biết kích thước hay bầu khí quyển của nó."
+    },
+    "radiative-equilibrium.yaml": {
+      "label": "Cân bằng bức xạ",
+      "definition": "Trạng thái trong đó một hành tinh bức xạ trở lại không gian lượng năng lượng bằng đúng lượng nó nhận được từ ngôi sao chủ, nhờ đó nhiệt độ trung bình của nó giữ mức ổn định. Từ lượng ánh sáng tới và suất phản chiếu, bạn có thể tính toán được \"nhiệt độ cân bằng\" - mức nhiệt độ nền mà một thế giới sẽ có nếu không có bầu khí quyển. Một hiệu ứng nhà kính sau đó sẽ nâng nhiệt độ thực tế lên trên mức nền đó, và trên Pandora, một bầu khí quyển dày đặc đã nâng mức này lên một khoảng rất lớn."
+    },
+    "radiocarbon-dating.yaml": {
+      "label": "Định tuổi bằng cacbon phóng xạ",
+      "definition": "Một phương pháp định tuổi sử dụng carbon-14, tuyệt hảo cho quá khứ gần - gỗ, xương, than củi, vải vóc - xuyên suốt chiều dài lịch sử nhân loại. Nhưng chu kỳ bán rã của nó chỉ khoảng 5.730 năm, do đó sau khoảng 50.000 năm thì về cơ bản không còn nguyên tử mẹ nào để đo đạc. Carbon-14 hoàn toàn vô dụng trong việc định tuổi đất đá hay thời gian sâu thẳm - dùng sai đồng hồ đến cả triệu lần."
+    },
+    "radiometric-dating.yaml": {
+      "label": "Định tuổi bằng phương pháp phóng xạ",
+      "definition": "Xác định tuổi của một hòn đá bằng cách đo lường tỷ lệ của các nguyên tử \"mẹ\" phóng xạ còn sót lại so với các nguyên tử \"con\" mà chúng phân rã thành. Vì tốc độ phân rã là một hằng số mà không nhiệt độ, áp suất hay tính chất hóa học nào có thể thay đổi được, nó là một chiếc đồng hồ không thể bị mua chuộc - nền tảng để biết được tuổi của Trái Đất và các thiên thể khác."
+    },
+    "roche-limit.yaml": {
+      "label": "Giới hạn Roche",
+      "definition": "Khoảng cách gần nhất mà một mặt trăng có thể tiếp cận hành tinh chủ của nó trước khi lực thủy triều của hành tinh - kéo phía gần mạnh hơn phía xa - áp đảo trọng lực của chính mặt trăng đó và xé toạc nó ra. Một mặt trăng cỡ Trái Đất quay quá nhanh và quá gần một hành tinh khí khổng lồ sẽ lượn lờ nguy hiểm ngay bờ vực của giới hạn này; đó là một trong những mâu thuẫn nội tại trong cốt truyện của Pandora."
+    },
+    "sidereal-day.yaml": {
+      "label": "Ngày sao",
+      "definition": "Thời gian để một thiên thể quay đủ một vòng 360° so với các vì sao cố định ở xa - một chu kỳ tự quay thực sự trong không gian. Nó hơi khác so với ngày mặt trời (ngày mà chúng ta đang sống theo) bởi vì, trong khi tự quay, thiên thể đó cũng di chuyển dọc theo quỹ đạo của nó. Đối với một mặt trăng bị khóa thủy triều, ngày sao bằng với chu kỳ quỹ đạo của nó quanh hành tinh chủ."
+    },
+    "speculation.yaml": {
+      "label": "Suy đoán",
+      "definition": "Trong cuốn sách này, đây là cấp độ phân loại dành cho một mô hình hợp lý nhưng dựa trên một tiền đề chưa được xác nhận - một khi đã chấp nhận tiền đề đó, mô hình phải tuân thủ mọi định luật còn lại. Một sự suy đoán có kỷ luật chỉ thay đổi chính xác một biến số và bắt tất cả những yếu tố còn lại phải trả đúng giá (bảo toàn năng lượng, nhiệt động lực học, hóa học). Khi một thế giới bẻ cong một quy luật rồi sau đó coi như mọi quy tắc đều vô hiệu, suy đoán sẽ thối rữa thành kỳ ảo."
+    },
+    "spin-orbit-resonance.yaml": {
+      "label": "Cộng hưởng spin-quỹ đạo",
+      "definition": "Mối quan hệ tỷ lệ số nguyên đơn giản giữa số lần một thiên thể tự quay và số vòng nó đi quanh quỹ đạo. Khóa thủy triều là trường hợp tỷ lệ 1:1 (một vòng tự quay cho mỗi vòng quỹ đạo). Nhưng cũng tồn tại các trạng thái khác: Sao Thủy bị mắc kẹt ở mức cộng hưởng 3:2 - quay chính xác ba vòng cho mỗi hai chuyến đi quanh Mặt Trời - bởi vì quỹ đạo của nó quá lệch tâm. Nó là ngoại lệ giúp giải thích tại sao các mặt trăng tròn, lớn thường ổn định ở tỷ lệ 1:1."
+    },
+    "superconductivity.yaml": {
+      "label": "Tính siêu dẫn",
+      "definition": "Một trạng thái lượng tử vĩ mô trong đó điện trở của vật liệu giảm xuống đúng bằng không dưới một nhiệt độ tới hạn, cho phép dòng điện chảy mãi mãi mà không bị thất thoát. Được phát hiện bởi Heike Kamerlingh Onnes trên thủy ngân vào năm 1911."
+    },
+    "superposition.yaml": {
+      "label": "Nguyên lý chồng chất",
+      "definition": "Nguyên lý nền tảng của địa tầng học: trong một chuỗi đá trầm tích chưa bị xáo trộn, lớp nằm dưới luôn cổ hơn lớp nằm trên. Hiển nhiên khi đã nói ra, nhưng mạnh mẽ vô cùng - nó cho phép đọc thứ tự trước-sau của lịch sử một hành tinh ngay cả khi chưa có con số tuổi tuyệt đối nào."
+    },
+    "superrotation.yaml": {
+      "label": "Siêu tự quay (Superrotation)",
+      "definition": "Hiện tượng trong đó toàn bộ bầu khí quyển của một thế giới quay nhanh hơn rõ rệt so với bề mặt rắn bên dưới nó - đôi khi nhanh hơn hàng chục lần. Hiện tượng này xuất hiện trên các thiên thể quay chậm có bầu khí quyển dày đặc, như Sao Kim và Titan, nơi các sóng khí quyển và thủy triều nhiệt liên tục bơm động lượng vào dòng chảy. Nó là chế độ động lực học mà một thế giới quay chậm, không khí đặc như Pandora có thể hướng tới, dẫn đến việc nhiệt độ được lan truyền đều khắp toàn cầu."
+    },
+    "synchronous-rotation.yaml": {
+      "label": "Tự quay đồng bộ",
+      "definition": "Hệ quả của khóa thủy triều: chu kỳ tự quay của một thiên thể bằng với chu kỳ quỹ đạo của nó quanh hành tinh chủ, trong một mức cộng hưởng 1:1. Nó không có nghĩa là một mặt chìm trong bóng tối vĩnh viễn - thiên thể đó vẫn quay tương đối với ngôi sao chiếu sáng nó, do đó nó vẫn có ngày và đêm; chỉ là cái mặt hướng về phía hành tinh chủ của nó thì luôn giữ nguyên. Đây là hiểu lầm phổ biến nhất về Pandora."
+    },
+    "synodic-day.yaml": {
+      "label": "Ngày giao hội",
+      "definition": "Thời gian để mặt trời quay trở lại cùng một vị trí trên bầu trời địa phương - từ bình minh này đến bình minh tiếp theo. Đây là \"ngày\" mà chúng ta thực sự trải nghiệm. Nó dài hơn một chút so với ngày sao bởi vì, sau một vòng quay 360° trọn vẹn, thiên thể phải xoay thêm một chút nữa để bắt kịp ngôi sao mà nó đã lướt qua trên quỹ đạo của mình. Cốt truyện của Pandora chưa bao giờ phân biệt hai khái niệm này."
+    },
+    "thermohaline-circulation.yaml": {
+      "label": "Hoàn lưu nhiệt muối",
+      "definition": "Băng chuyền truyền nhiệt vĩ đại của đại dương, được thúc đẩy bởi sự chênh lệch mật độ nước - do nhiệt độ (nhiệt) và độ mặn (muối) cùng quyết định. Nước lạnh, mặn ở các vĩ độ cao chìm xuống vực sâu, chảy qua các bồn trũng, và trồi lên ở những vùng ấm hơn, khép kín một vòng lặp vận chuyển nhiệt quanh hành tinh. Trên Pandora, nhiệt thủy triều sưởi ấm đáy biển, vì vậy vòng tuần hoàn của nó thiên về các luồng nước trồi cục bộ giàu chất dinh dưỡng hơn là mô hình chìm-tại-cực của Trái Đất."
+    },
+    "tidal-heating.yaml": {
+      "label": "Nhiệt thủy triều",
+      "definition": "Nhiệt sinh ra bên trong một thiên thể khi trọng lực của vật thể mà nó quay quanh liên tục nhào nặn nó. Một mặt trăng trên một quỹ đạo hơi lệch tâm sẽ bị ép mạnh hơn khi nó tiến lại gần và nhẹ hơn khi nó lùi ra xa; sự co giãn nhịp nhàng đó làm ấm phần bên trong của nó nhờ ma sát. Đó là lý do tại sao mặt trăng Io của Sao Mộc lại phun trào dữ dội đến thế và Europa lại duy trì được một đại dương dưới lớp băng của mình - và, theo cốt truyện, đó cũng là thứ cung cấp động cơ nhiệt địa chất cho Pandora."
+    },
+    "tidal-locking.yaml": {
+      "label": "Khóa thủy triều",
+      "definition": "Trạng thái trong đó một thiên thể tự quay đúng một vòng quanh trục của nó cho mỗi vòng quỹ đạo mà nó đi, do đó nó luôn giữ nguyên một mặt hướng về phía vật thể mà nó quay quanh. Lực hấp dẫn kéo giãn thiên thể đó thành hình quả trứng, và ma sát trong cái bướu thủy triều đó dần dần hãm tốc độ quay của nó lại cho đến khi chu kỳ quay khớp với quỹ đạo. Mặt Trăng bị khóa với Trái Đất theo cách này; trong cốt truyện, Pandora bị khóa với Polyphemus - vì vậy một ngày của nó cũng dài bằng một tháng của nó."
+    },
+    "transit-timing-variation.yaml": {
+      "label": "Sự biến thiên thời gian đi qua",
+      "definition": "Một phương pháp gián tiếp để phát hiện một mặt trăng (hoặc hành tinh) ẩn giấu. Khi một hành tinh đi ngang qua mặt ngôi sao của nó, một mặt trăng quay quanh hành tinh đó sẽ kéo nó dao động quanh khối tâm chung của chúng, khiến hành tinh đến điểm vạch chéo ngang qua ngôi sao sớm hơn hoặc muộn hơn một chút so với chu kỳ trước. Những sự dịch chuyển thời gian đó - chỉ từ vài giây đến vài phút đối với một mặt trăng cỡ Trái Đất - là dấu vân tay của thiên thể ẩn giấu đó, nhưng hiện nằm ngay ở ranh giới độ nhiễu của những công cụ tốt nhất ngày nay."
+    },
+    "transmission-spectroscopy.yaml": {
+      "label": "Quang phổ truyền qua",
+      "definition": "Một kỹ thuật dùng ánh sáng để đọc cấu tạo bầu khí quyển của một hành tinh xa xôi. Khi hành tinh đi ngang qua mặt ngôi sao của nó, một dải ánh sáng sao hẹp len lỏi qua bầu khí quyển của nó trên đường truyền tới chúng ta; mỗi loại khí hấp thụ ánh sáng ở những bước sóng đặc trưng, để lại một \"dấu vân tay\" trong quang phổ. Phân tách ánh sáng đó và bạn có thể đọc được công thức không khí của một thế giới mà bạn không bao giờ có thể đặt chân tới. Kính viễn vọng Không gian James Webb sử dụng phương pháp này để phát hiện CO₂, hơi nước, và methane trên các ngoại hành tinh."
+    },
+    "type-ii-superconductor.yaml": {
+      "label": "Chất siêu dẫn loại II",
+      "definition": "Một lớp các chất siêu dẫn (các hợp kim kim loại chuyển tiếp như NbTi, hoặc gốm đồng-oxit như YBCO) cho phép từ trường xâm nhập một phần dưới dạng các xoáy lượng tử trong một \"trạng thái hỗn hợp\", có khả năng chịu đựng được từ trường và dòng điện rất cao. Đây là cơ sở của mọi ứng dụng siêu dẫn trong thực tế, và là nơi hiện tượng ghim từ thông diễn ra."
+    },
+    "uniformitarianism.yaml": {
+      "label": "Thuyết đồng nhất",
+      "definition": "Nguyên lý cho rằng các định luật và quá trình định hình thế giới ngày nay cũng chính là những thứ đã định hình nó trong quá khứ, hoạt động với tốc độ nhìn chung là giống nhau. Được đúc kết bởi James Hutton và phát triển bởi Charles Lyell, nó là tấm giấy phép cho toàn bộ ngành khoa học về quá khứ sâu thẳm: hiện tại là chìa khóa để đọc lịch sử."
+    },
+    "unobtanium.yaml": {
+      "label": "Unobtanium",
+      "definition": "Khoáng vật hư cấu của Pandora, được mô tả là có khả năng siêu dẫn ở nhiệt độ phòng. Các lõi unobtanium là nguyên nhân chính thức trong mạch truyện giúp các ngọn núi lơ lửng được; tính siêu dẫn ở nhiệt độ phòng vẫn là một điều chưa đạt được trong khoa học Trái Đất thực tế."
+    },
+    "uranium-lead-dating.yaml": {
+      "label": "Định tuổi bằng urani-chì",
+      "definition": "Đồng hồ tiêu chuẩn vàng cho thời gian sâu thẳm, thường nằm trong các tinh thể zircon. Zircon tiếp nhận urani nhưng từ chối chì khi nó lớn lên, do đó bất kỳ lượng chì nào bên trong nó đều là sản phẩm của quá trình phân rã. Hai loại urani phân rã thành hai loại chì ở hai tốc độ khác nhau, mang lại hai chiếc đồng hồ độc lập trong cùng một hạt - tự kiểm tra chéo lẫn nhau và sẽ tố cáo nếu chúng từng bị xáo trộn."
+    },
+    "zircon.yaml": {
+      "label": "Zircon",
+      "definition": "Một khoáng vật zirconium-silicate nhỏ bé nhưng gần như không thể phá hủy, là vật chủ lý tưởng cho phương pháp định tuổi bằng urani-chì. Khi kết tinh, zircon khóa urani vào mạng tinh thể của nó nhưng gạt chì ra ngoài, đảm bảo một điểm xuất phát hoàn toàn sạch sẽ. Nó sống sót qua quá trình nung chảy và chôn vùi của tảng đá mẹ để trôi dạt vào sa thạch - vì vậy một hạt zircon duy nhất có thể mang theo lịch sử hàng tỷ năm. Mảnh vỏ Trái Đất cổ nhất được biết đến là một hạt zircon Jack Hills khoảng 4.4 tỷ năm tuổi."
+    }
+  },
+  "chapters": {
+    "continents-oceans-climate": {
+      "title": "Lục địa, đại dương, khí hậu"
+    },
+    "floating-mountains-and-the-superconductor": {
+      "title": "Những ngọn núi lơ lửng và chất siêu dẫn",
+      "subtitle": "Tại sao Dãy núi Hallelujah lơ lửng trên không - và những gì nó dạy cho chúng ta về tính siêu dẫn"
+    },
+    "pandoras-deep-time": {
+      "title": "Thời gian sâu thẳm của Pandora"
+    },
+    "reading-pandora-as-a-specimen": {
+      "title": "Đọc Pandora như một mẫu vật"
+    },
+    "time-on-pandora": {
+      "title": "Thời gian trên Pandora"
+    },
+    "whats-in-the-air": {
+      "title": "Có gì trong không khí"
+    },
+    "where-is-pandora": {
+      "title": "Pandora nằm ở đâu?",
+      "subtitle": "Địa chỉ thực sự của Pandora trong hệ Alpha Centauri - và nghệ thuật săn tìm một thế giới mà chúng ta chưa thể nhìn thấy",
+      "hook": "Đứng trên Pandora trước buổi trưa, bạn sẽ thấy mặt trời vụt tắt sau một bức tường vân mây khổng lồ che khuất một phần ba bầu trời. Bầu trời đó nói cho bạn biết rằng bạn không đứng trên một hành tinh - mà là trên một mặt trăng. Câu hỏi đặt ra đòi hỏi sự kiên nhẫn: chính xác thì nơi này nằm ở đâu - và liệu có thứ gì giống như vậy thực sự tồn tại ngoài kia, đủ gần để một ngày nào đó ta chĩa kính viễn vọng vào và biết được hay không?"
+    }
+  }
+}

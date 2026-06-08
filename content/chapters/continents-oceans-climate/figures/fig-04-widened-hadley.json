@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-widened-hadley",
+  "chapter_slug": "continents-oceans-climate",
+  "role": "comparison",
+  "narrative_purpose": "The chapter's central payoff, shown side by side: a fast-spinning world's narrow equatorial rain band with broad nearby deserts, beside a slow-spinning world's wide rain belt with deserts exiled far toward the poles.",
+  "subject": "Two planetary spheres of equal size side by side. The left sphere has a NARROW bright cloud-and-forest band hugging tightly around its equator, flanked closely on both sides by broad pale dry desert zones. The right sphere has a WIDE, fat bright cloud-and-forest belt covering much more of its middle, with only thin dry desert strips pushed far out near its high latitudes close to the poles.",
+  "scene": "Both spheres floating in the same dark space, lit identically, so the only difference the eye catches is how wide the green-and-cloud belt is and how far out the dry zones sit.",
+  "camera": "Front-on view of both spheres at equal scale, side by side.",
+  "light": "Even soft star light on both; the wet belts glow living-teal, the dry zones are dim and warm-grey.",
+  "palette": "Void-indigo space, living-teal and misty-cyan wet belts, muted warm amber-grey dry zones, deep ocean-teal where seas show.",
+  "style": "Painterly naturalist plate, two clean planetary portraits for comparison, NOT a vector infographic, NOT a 3D render.",
+  "detail_level": "Moderate-high on each sphere's banding; the contrast in belt width is the point and must be unmistakable.",
+  "composition": "Two equal spheres balanced left and right with dark space between; left = narrow belt + wide deserts, right = wide belt + far-flung thin deserts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "grid", "UI", "watermark", "logos", "Avatar branding"],
+  "consistency_notes": "Reuse the equatorial cloud-band look from fig-00-cover for both spheres; the right sphere is Pandora-like with its broadened belt. No labels - the width contrast carries the meaning.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no grid, no diagram chrome, no 3D-render or photographic look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/continents-oceans-climate/fig-00-cover.png"]
+}

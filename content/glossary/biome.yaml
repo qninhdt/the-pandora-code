@@ -1,0 +1,12 @@
+id: biome
+label:
+  vi: Quần xã sinh vật
+  en: Biome
+definition:
+  vi: Một loại hình hệ sinh thái chính được định hình bởi khí hậu - rừng mưa nhiệt đới, sa mạc, rừng ôn đới, đồng cỏ, lãnh nguyên - và các cộng đồng sự sống bên trong nó. Nhà sinh thái học Robert Whittaker đã chỉ ra rằng chỉ cần hai con số, nhiệt độ trung bình năm và lượng mưa trung bình năm, là đủ để sắp xếp gần như mọi cộng đồng vào ô tương ứng. Bởi vì hoàn lưu khí quyển quyết định nơi nào ấm-và-ướt hay lạnh-và-khô, nó cũng vẽ nên bản đồ các quần xã sinh vật trên bất kỳ thế giới nào.
+  en: A major climate-shaped kind of ecosystem - tropical rainforest, desert, temperate forest, grassland, tundra - and the communities of life within it. The ecologist Robert Whittaker showed that just two numbers, mean annual temperature and mean annual precipitation, sort nearly every community into its box. Because atmospheric circulation decides where a world is warm-and-wet or dry-and-cold, it also draws the map of biomes on any world.
+see_also:
+  - hadley-cell
+  - intertropical-convergence-zone
+category: concept
+cover_prompt: 'A painted panoramic strip showing biomes change across latitude: dense glowing rainforest in the centre, fading to dry open grassland, then to pale cold tundra at the edges. Cool teal-to-stone palette, painterly haze, no text, no labels, no numbers.'

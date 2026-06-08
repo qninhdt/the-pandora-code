@@ -3,26 +3,11 @@ label:
   vi: Dấu ấn sinh học
   en: Biosignature
 definition:
-  vi: >-
-    Bất kỳ dấu hiệu nào - một chất, một tổ hợp khí, một khuôn mẫu - chỉ có thể được tạo ra hoặc
-    duy trì bởi sự sống, và do đó đóng vai trò bằng chứng cho một sinh quyển từ xa. Dấu ấn khí
-    quyển mạnh nhất không phải một loại khí đơn lẻ mà là sự cùng tồn tại của những khí lẽ ra phải
-    phản ứng và triệt tiêu lẫn nhau (như O₂ và CH₄) - chúng chỉ có thể song hành nếu có thứ gì đó
-    liên tục bù đắp. Một nhà thiên văn đọc được tổ hợp ấy trong không khí một hành tinh xa có thể
-    kết luận nơi đó đang sống mà chưa cần đặt chân tới.
-  en: >-
-    Any sign - a substance, a combination of gases, a pattern - that can only be produced or
-    sustained by life, and so serves as evidence of a biosphere from a distance. The strongest
-    atmospheric biosignature is not a single gas but the coexistence of gases that should react
-    and destroy each other (such as O₂ and CH₄) - they can persist together only if something
-    continually replenishes them. An astronomer reading that combination in a distant planet's
-    air can conclude it is alive without ever landing.
+  vi: Bất kỳ dấu hiệu nào - một chất, một tổ hợp khí, một khuôn mẫu - chỉ có thể được tạo ra hoặc duy trì bởi sự sống, và do đó đóng vai trò bằng chứng cho một sinh quyển từ xa. Dấu ấn khí quyển mạnh nhất không phải một loại khí đơn lẻ mà là sự cùng tồn tại của những khí lẽ ra phải phản ứng và triệt tiêu lẫn nhau (như O₂ và CH₄) - chúng chỉ có thể song hành nếu có thứ gì đó liên tục bù đắp. Một nhà thiên văn đọc được tổ hợp ấy trong không khí một hành tinh xa có thể kết luận nơi đó đang sống mà chưa cần đặt chân tới.
+  en: Any sign - a substance, a combination of gases, a pattern - that can only be produced or sustained by life, and so serves as evidence of a biosphere from a distance. The strongest atmospheric biosignature is not a single gas but the coexistence of gases that should react and destroy each other (such as O₂ and CH₄) - they can persist together only if something continually replenishes them. An astronomer reading that combination in a distant planet's air can conclude it is alive without ever landing.
 see_also:
   - atmospheric-disequilibrium
   - transmission-spectroscopy
   - great-oxidation-event
 category: concept
-cover_prompt: >-
-  A painted view from space of a small glowing crescent world beside a dim gas
-  giant, a thin ribbon of starlight grazing the world's atmosphere and fanning
-  into a soft spectrum of colour, painterly, no text, no labels, no numbers.
+cover_prompt: A painted view from space of a small glowing crescent world beside a dim gas giant, a thin ribbon of starlight grazing the world's atmosphere and fanning into a soft spectrum of colour, painterly, no text, no labels, no numbers.

@@ -1,0 +1,13 @@
+id: crater-counting
+label:
+  vi: Đếm miệng núi lửa
+  en: Crater counting
+definition:
+  vi: Một cách để ước tính tuổi bề mặt của một thế giới mà bạn chưa thể chạm tới, chỉ sử dụng hình ảnh từ quỹ đạo. Một bề mặt mới tinh (một dòng dung nham, một dòng sông băng) bắt đầu mà không có miệng núi lửa nào; các miệng núi lửa tích tụ theo thời gian với một tốc độ xác định, do đó việc đếm mật độ của chúng sẽ cho ra tuổi tương đối. Tốc độ này được hiệu chỉnh dựa trên các mẫu đá Mặt Trăng đã được định tuổi bằng phương pháp phóng xạ, sau đó áp dụng cho Sao Hỏa, Sao Thủy, và các mặt trăng băng giá.
+  en: A way to estimate the age of a surface on a world you cannot yet touch, using only orbital images. A fresh surface (a lava flow, a glacier) starts with no craters; craters accumulate over time at a known rate, so counting their density gives a relative age. The rate is calibrated against radiometrically dated Moon rocks, then applied to Mars, Mercury, and icy moons.
+see_also:
+  - geochronology
+  - radiometric-dating
+  - deep-time
+category: concept
+cover_prompt: A painted overhead view of a dim cratered planetary plain, impact craters of many sizes scattered across it, seen from orbit through faint haze, cool indigo and stone-grey palette, painterly plate, no text, no grid, no numbers.

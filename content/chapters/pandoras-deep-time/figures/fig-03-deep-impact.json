@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-deep-impact",
+  "chapter_slug": "pandoras-deep-time",
+  "role": "inline",
+  "narrative_purpose": "Depicts Pandora's founding catastrophe: a Mars-sized body striking the young molten moon inside Polyphemus's magnetic field - the event canon says disrupted the core and forged unobtanium, and that a zircon's rim would later date.",
+  "subject": "A young half-molten moon seen from space, its dark crust cracked by a web of glowing orange lava seams, just struck off-center by a smaller dark rocky world. A great plume of incandescent ejecta arcs up from the impact point into space. Behind and around, the colossal banded bulk of a gas giant fills one side of the frame, and faint luminous curved lines of its magnetic field sweep around the molten moon.",
+  "scene": "Deep space billions of years ago, the violent moment of collision, the gas giant looming as a cool wall behind the fiery young moon.",
+  "camera": "Wide dramatic space view, the molten moon center-frame, the impactor and ejecta plume to one side, the giant planet's curve filling a background edge.",
+  "light": "Fierce warm orange-amber key from the molten seams and the impact flash, cool indigo space and dim planet bands behind, a faint cyan sheen on the magnetic field lines.",
+  "palette": "Mostly cool void-indigo space and dim cream-rust planet, with a deliberate hot burst of ember-amber and orange at the impact and lava seams, faint cyan field lines.",
+  "style": "Painterly astronomical plate, dramatic but naturalistic, textured molten rock.",
+  "detail_level": "Crisp glowing lava seams and the ejecta plume; the gas giant softer and atmospheric; field lines faint and delicate.",
+  "composition": "Molten moon dominant center-left, impactor and bright plume upper-right on a diagonal of energy, gas giant anchoring the right edge, magnetic field lines curving the eye around.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "orbit dotted lines", "spacecraft", "modern objects"],
+  "consistency_notes": "The banded gas giant is Polyphemus and must match its look elsewhere in the chapter (cream/rust/grey bands). Warm impact glow is the rare deliberate warm accent against the cool palette.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no dotted orbit lines, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"]
+}

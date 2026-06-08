@@ -3,14 +3,10 @@ label:
   vi: Độ nghiêng trục
   en: Obliquity
 definition:
-  vi: "Góc nghiêng giữa trục tự quay của một thiên thể và đường vuông góc với mặt phẳng quỹ đạo của nó. Chính độ nghiêng trục - chứ không phải khoảng cách tới ngôi sao - mới là nguyên nhân thật sự gây ra các mùa: nửa cầu nào ngả về phía mặt trời thì hứng nắng trực diện và ấm hơn. Trái Đất nghiêng khoảng 23°; cốt truyện cho Pandora độ nghiêng lớn hơn, khoảng 25°, đủ để sinh ra cả mùa lẫn các \"mùa nhật thực\"."
-  en: "The angle between a body's spin axis and the line perpendicular to its orbital plane. It is axial tilt - not distance from the star - that truly causes seasons: whichever hemisphere leans toward the sun catches more direct light and runs warmer. Earth's tilt is about 23°; canon gives Pandora a larger one, around 25°, enough to produce both seasons and its \"eclipse seasons.\""
+  vi: 'Góc giữa trục quay của một thiên thể và đường vuông góc với mặt phẳng quỹ đạo của nó. Chính độ nghiêng trục - chứ không phải khoảng cách đến ngôi sao - mới là nguyên nhân thực sự gây ra các mùa: bán cầu nào nghiêng về phía mặt trời sẽ đón được nhiều ánh sáng trực tiếp hơn và nóng hơn. Độ nghiêng của Trái Đất là khoảng 23°; theo cốt truyện, Pandora có độ nghiêng lớn hơn, khoảng 25°, đủ để tạo ra cả các mùa thông thường và các "mùa thiên thực".'
+  en: 'The angle between a body''s spin axis and the line perpendicular to its orbital plane. It is axial tilt - not distance from the star - that truly causes seasons: whichever hemisphere leans toward the sun catches more direct light and runs warmer. Earth''s tilt is about 23°; canon gives Pandora a larger one, around 25°, enough to produce both seasons and its "eclipse seasons."'
 see_also:
   - libration
   - synchronous-rotation
 category: concept
-cover_prompt: >-
-  A painted scene of a blue-green moon tilted on its axis as it orbits a banded
-  gas giant, one hemisphere leaning toward a distant bright star and lit more
-  fully. Cool void-indigo space, warm star key light, painterly, no text, no
-  labels, no numbers.
+cover_prompt: A painted scene of a blue-green moon tilted on its axis as it orbits a banded gas giant, one hemisphere leaning toward a distant bright star and lit more fully. Cool void-indigo space, warm star key light, painterly, no text, no labels, no numbers.

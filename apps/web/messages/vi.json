@@ -78,7 +78,8 @@
     },
     "timeline": {
       "title": "Dòng thời gian kiến thức",
-      "subtitle": "Trình tự đọc được khuyến nghị cho các phần và các chương."
+      "subtitle": "Trình tự đọc được khuyến nghị cho các phần và các chương.",
+      "kicker": "Hành trình"
     },
     "parts": {
       "title": "Các phần",

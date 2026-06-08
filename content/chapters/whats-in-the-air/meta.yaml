@@ -3,26 +3,14 @@ part: the-world
 order: 3
 status: published
 title:
-  vi: Có gì trong bầu không khí chết chóc ấy?
+  vi: Có gì trong không khí
   en: What's in the air
 subtitle:
-  vi: >-
-    Vì sao một bầu không khí thừa oxy vẫn giết người trong vài giây - và vì sao chính nó lại là lời
-    tuyên bố rõ ràng nhất rằng Pandora đang sống
-  en: >-
-    Why an oxygen-rich air kills in seconds - and why that same air is the clearest possible
-    announcement that Pandora is alive
+  vi: Có gì trong không khí
+  en: Why an oxygen-rich air kills in seconds - and why that same air is the clearest possible announcement that Pandora is alive
 hook:
-  vi: >-
-    Tháo mặt nạ ra trên Pandora, và bạn sẽ bất tỉnh trong khoảng hai mươi giây. Điều kỳ lạ là không
-    phải vì thiếu oxy - thứ khí ấy có thừa oxy để thở. Bầu không khí giết bạn bằng hóa học, không
-    phải bằng sự ngạt thở; và chính cái công thức hóa học giết người đó, khi nhìn từ ngoài vũ trụ,
-    lại là dấu hiệu không thể chối cãi của một thế giới đang sống.
-  en: >-
-    Take your mask off on Pandora and you have about twenty seconds before you lose consciousness.
-    The strange part is that it is not for lack of oxygen - the air has oxygen to spare. This air
-    kills by chemistry, not by suffocation; and that same lethal chemistry, read from space, is the
-    one thing that betrays a living world.
+  vi: Tháo mặt nạ ra trên Pandora, và bạn sẽ bất tỉnh trong khoảng hai mươi giây. Điều kỳ lạ là không phải vì thiếu oxy - thứ khí ấy có thừa oxy để thở. Bầu không khí giết bạn bằng hóa học, không phải bằng sự ngạt thở; và chính cái công thức hóa học giết người đó, khi nhìn từ ngoài vũ trụ, lại là dấu hiệu không thể chối cãi của một thế giới đang sống.
+  en: Take your mask off on Pandora and you have about twenty seconds before you lose consciousness. The strange part is that it is not for lack of oxygen - the air has oxygen to spare. This air kills by chemistry, not by suffocation; and that same lethal chemistry, read from space, is the one thing that betrays a living world.
 authors:
   - bardabez
 reading_time_min: 25
@@ -98,9 +86,6 @@ sources:
     url: https://www.pnas.org/doi/10.1073/pnas.2416188122
   - kind: science
     label: Life or illusion? Avoiding 'false positives' in the search for living worlds (UW News)
-    url: >-
-      https://www.washington.edu/news/2016/02/29/life-or-illusion-avoiding-false-positives-in-the-search-for-living-worlds/
+    url: https://www.washington.edu/news/2016/02/29/life-or-illusion-avoiding-false-positives-in-the-search-for-living-worlds/
   - kind: research-note
-    label: >-
-      Comparative Planetology and Xenophysiology - Analysis of the Pandoran Atmosphere (chapter
-      research note)
+    label: Comparative Planetology and Xenophysiology - Analysis of the Pandoran Atmosphere (chapter research note)

@@ -1,5 +1,10 @@
-<Figure
+<DiagramFigure
   src="/images/chapters/whats-in-the-air/fig-01-the-twenty-seconds.png"
+  labels={[
+    { x: 42, y: 27, side: "left", label: "20 giây", note: "trước khi bất tỉnh — 4 phút trước ranh giới sinh tử" },
+    { x: 73, y: 80, side: "left", label: "Exo-pack bị hất văng", note: "không có nó, không khí Pandora tràn thẳng vào" },
+    { x: 88, y: 28, side: "left", label: "Bào tử vẫn trôi nổi dửng dưng" }
+  ]}
   alt="Một người mặc áo khoác rách nằm trên nền rừng Pandora, mặt nạ bị hất văng, miệng há hốc thở dốc giữa những bào tử phát quang sinh học đang lơ lửng trong màn đêm xanh thẳm"
   figNo="01"
   caption="Mặt nạ rơi xuống, đồng hồ bắt đầu đếm ngược. 20 giây trước khi bất tỉnh, 4 phút trước khi bước qua ranh giới sinh tử không thể vãn hồi — giữa một bầu không khí mà theo con số duy nhất đa phần mọi người nhớ đến, lại có thừa lượng oxy để duy trì sự sống."
@@ -11,6 +16,11 @@ Có một con số mà mọi lính mới trên đường đến Pandora đều p
 Mọi thứ dường như quá rõ ràng: không khí trên Pandora không có oxy, và con người chết ngạt ở đó hệt như một nhà leo núi thiếu dưỡng khí khi chạm đỉnh Everest. Một suy luận hiển nhiên, gãy gọn, nhưng lại... sai bét. Không khí trên Pandora thực chất còn có *nhiều* oxy hơn bầu không khí bạn đang hít thở lúc này. Thứ cướp đi sinh mạng của bạn trong 20 giây ngắn ngủi không phải là sự thiếu hụt. Nó là sự hiện diện — của một vài tác nhân — và việc bóc tách xem chúng thực sự là gì sẽ mang đến cho bạn những bài học mà chẳng bách khoa toàn thư nào có: không chỉ hiểu tại sao luồng khí cụ thể này lại là kịch độc, mà còn thấy được cách cấu trúc hóa học của bầu không khí trên *bất kỳ* hành tinh nào cũng có thể "bán đứng" nó. Từ khoảng cách 4 năm ánh sáng, một chiếc kính viễn vọng có thể nhìn vào đó để phán đoán xem liệu có sự sống nào đang nảy nở bên dưới hay không.
 
 Hãy bắt đầu với thứ mà chúng ta không thể tự do bịa đặt: chính bản thân bầu không khí ấy.
+
+<TwentySecondsTimeline
+  locale="vi"
+  caption="Kéo qua hai mươi giây. Thanh quan trọng là thanh phía dưới: máu vẫn ăm ắp oxy suốt thời gian đó, nhưng lượng oxy mà tế bào thực sự dùng được lại sụp đổ — vì hydro sulfua đã làm kẹt enzyme đốt oxy. Bạn ngạt thở ngay giữa một biển oxy."
+/>
 
 ## Thực chất bên trong có gì?
 
@@ -56,8 +66,13 @@ Cơ thể bạn sản sinh CO2 liên tục — nó là "khí thải" của quá 
 
 Bây giờ, hãy bơm đầy bầu không khí bên ngoài ấy bằng 17% CO2. Độ dốc áp suất không chỉ suy yếu đi. Nó bị *đảo ngược* hoàn toàn. Lúc này, không khí trong phổi bạn đang tạo ra sức ép CO2 lớn hơn hẳn so với trong máu. Hệ quả là CO2 làm một chuyện không tưởng: nó thẩm thấu ngược chiều, chảy tràn *vào* cơ thể bạn, với tốc độ điên rồ chưa từng có mà cơ thể phải hứng chịu. Trạng thái này gọi là <GlossaryTerm slug="hypercapnia">tăng CO2 huyết</GlossaryTerm> (hypercapnia) — sự quá tải carbon dioxide, và chuỗi hậu quả tàn khốc của nó sẽ ập đến chỉ trong một hoặc hai nhịp thở.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/whats-in-the-air/fig-04-reversed-gradient.png"
+  labels={[
+    { x: 50, y: 15, side: "left", label: "Túi phổi", note: "17% CO₂ ở bên ngoài" },
+    { x: 42, y: 48, side: "right", label: "Chênh lệch quay ngược", note: "CO₂ tràn vào thay vì thoát ra" },
+    { x: 72, y: 80, side: "left", label: "Máu hóa axit", note: "axit carbonic, chỉ trong vài giây" }
+  ]}
   alt="Hình vẽ cắt ngang túi phổi với các mũi tên hiển thị phân tử CO2 ồ ạt tràn vào máu thay vì thoát ra, dòng máu chuyển sang màu đỏ cam báo hiệu tính axit"
   figNo="04"
   caption="Sự chênh lệch áp suất quay xe. Với không khí bên ngoài chứa 17% CO2, thứ khí mà cơ thể bạn dành cả đời để tống khứ giờ đây lại tràn ngược qua màng phổi — và biến máu thành axit."
@@ -80,8 +95,13 @@ Lý do cơ bản nhất khiến cơ thể bạn khao khát oxy là để vận h
 
 <GlossaryTerm slug="histotoxic-hypoxia">Hydrogen sulfide chính là kẻ chèn cửa.</GlossaryTerm> Nó bám chặt vào nguyên tử sắt nằm ở trung tâm của cái enzyme chốt chặn ấy — cùng một loại enzyme, cùng một điểm yếu kim loại tử huyệt mà chất độc xyanua nhắm tới, và hoạt động theo một cơ chế cũng gần như y hệt. Khi trạm cuối bị phong tỏa, đội chuyền nước ùn ứ rồi khựng lại, tế bào mất hoàn toàn khả năng biến oxy thành năng lượng, và nó chết ngạt ngay cả khi đang ngụp lặn trong vô vàn oxy. Giới sinh lý học gọi đây là tình trạng giảm oxy mô do độc (histotoxic hypoxia): sự đói oxy do *mô bị nhiễm độc*, những tế bào chết đuối ngay bên một miệng giếng đầy ắp nước.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/whats-in-the-air/fig-05-jammed-mitochondrion.png"
+  labels={[
+    { x: 30, y: 33, side: "left", label: "Chuỗi chuyền electron", note: "trao năng lượng dọc theo chuỗi" },
+    { x: 70, y: 62, side: "left", label: "Cánh cửa cuối bị kẹt", note: "H₂S khóa nguyên tử sắt — ngón đòn của xyanua" },
+    { x: 84, y: 22, side: "left", label: "Oxy bị bỏ phí", note: "tràn qua tế bào bất lực không chạm tới được" }
+  ]}
   alt="Hình vẽ cận cảnh màng trong ty thể, nơi enzyme cuối cùng của chuỗi chuyền electron bị tắc nghẽn bởi các phân tử lưu huỳnh nhỏ, đội quân electron bị đình trệ và tối om"
   figNo="05"
   caption="Cánh cửa cuối cùng trong chuỗi đã bị kẹt cứng. Hydrogen sulfide khóa chặt vào nguyên tử sắt của enzyme chuyên làm nhiệm vụ trao electron cho oxy — khiến tế bào bất lực trong việc tiêu thụ lượng oxy đang tràn qua. Một ngón đòn tương tự như xyanua."
@@ -107,8 +127,14 @@ Hãy để ý xem điểm chung của hai sát thủ này là gì. Chẳng kẻ 
 
 Nếu vấn đề là thiếu dưỡng khí, một người trên Pandora sẽ cần thứ mà các phi hành gia cần: một nguồn cung cấp khí thở kín mít được vác theo bên người, hay nói cách khác là một bình dưỡng khí. Nhưng vấn đề ở đây không phải là thiếu đi yếu tố tích cực; mà là có quá nhiều cặn bã tồi tệ bị pha trộn vào một bầu không khí vốn có thể dùng tốt. Cho nên, exo-pack không phải là một chiếc bình dưỡng khí. Nó là một chiếc *màng lọc* — một người gác cửa, chứ không phải một chiếc xe giao hàng.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/whats-in-the-air/fig-03-exo-pack-filter.png"
+  labels={[
+    { x: 18, y: 84, side: "left", label: "Khí Pandora vào", note: "đầy CO₂ và H₂S" },
+    { x: 33, y: 50, side: "left", label: "Các tầng thanh lọc", note: "chất hấp thụ giữ lại chất độc" },
+    { x: 60, y: 20, side: "right", label: "Khí sạch ra", note: "oxy, nitơ, xenon trơ" },
+    { x: 88, y: 35, side: "left", label: "Khí tốt vốn luôn ở đó" }
+  ]}
   alt="Hình vẽ mặt cắt của mặt nạ exo-pack: không khí thô của Pandora được hút qua màng lọc ở ngực, các giai đoạn thanh lọc bóc tách khí độc, không khí sạch và có thể thở được dẫn thẳng lên tấm kính mặt nạ trong suốt"
   figNo="03"
   caption="Không phải bình chứa — mà là người gác cổng. Exo-pack hút không khí bản địa vào, bóc tách hoàn toàn carbon dioxide và hydrogen sulfide, đồng thời cho phép oxy, nitơ và xenon trơ đi thẳng qua. Khí sạch để thở vốn dĩ luôn ở đó; chiếc mặt nạ chỉ đơn giản là tống khứ những thứ không nên có mặt."
@@ -133,8 +159,13 @@ Bây giờ hãy nhìn vào mớ bòng bong mà Pandora đang ôm đồm cùng m�
 
 <GlossaryTerm slug="atmospheric-disequilibrium">Chỉ có một con đường duy nhất để giam giữ những kẻ thù truyền kiếp cạnh nhau mãi mãi: phải có một thứ gì đó liên tục bơm thêm nguồn cung mới cho cả hai bên, với tốc độ ngang bằng với tốc độ chúng tàn sát lẫn nhau.</GlossaryTerm> Một hành tinh bị kéo dạt ra khỏi trạng thái cân bằng hóa học xa đến vậy là một hành tinh có một cỗ máy đang vận hành — và cỗ máy duy nhất mà chúng ta biết có khả năng làm điều này, ở quy mô hành tinh, qua hàng vạn kỷ nguyên, chính là *sự sống*. Sự sống nuốt chửng ánh sáng mặt trời cùng các chuỗi phản ứng hóa học, sau đó bài tiết ra những loại khí dễ phản ứng như một dạng chất thải, với tốc độ nhanh hơn khả năng dọn dẹp của tự nhiên. Sự xuất hiện ngoan cố, đồng thời của những loại khí lẽ ra phải triệt tiêu lẫn nhau, do đó, được coi là một <GlossaryTerm slug="biosignature">dấu hiệu sinh học (biosignature)</GlossaryTerm> — và là dấu hiệu mạnh mẽ nhất mà nhân loại từng biết tới.
 
-<Figure
+<DiagramFigure
   src="/images/chapters/whats-in-the-air/fig-06-bonfire-from-space.png"
+  labels={[
+    { x: 34, y: 42, side: "left", label: "Vành khí mỏng manh", note: "đọc dưới ánh sao" },
+    { x: 72, y: 60, side: "left", label: "Những khí lẽ ra phải hủy diệt nhau", note: "oxy và methane cùng tồn tại" },
+    { x: 90, y: 22, side: "left", label: "Ánh sao, vượt bốn năm ánh sáng" }
+  ]}
   alt="Hình vẽ góc nhìn từ không gian sâu thẳm hướng về Pandora như một vành trăng khuyết nhỏ rực sáng bên cạnh hành tinh khí khổng lồ của nó, một dải ánh sáng sao mỏng manh xuyên qua bầu khí quyển mặt trăng và tản ra thành một quang phổ mờ ảo"
   figNo="06"
   caption="Đọc dải không khí mỏng manh được chiếu rọi bởi ánh sao, và công thức bí mật sẽ phơi bày: oxy, methane và hydrogen sulfide quấn lấy nhau, những loại khí lẽ ra đã phải tự hủy diệt lẫn nhau từ thời nảo thời nào. Việc nhìn thấy chúng cùng tồn tại chẳng khác nào phát hiện ra một đống lửa trại đã bùng cháy suốt nhiều thập kỷ — hiển nhiên, phải có ai đó vẫn luôn miệt mài châm củi."

@@ -1,0 +1,13 @@
+id: superposition
+label:
+  vi: Nguyên lý chồng chất
+  en: Superposition
+definition:
+  vi: 'Nguyên lý nền tảng của địa tầng học: trong một chuỗi đá trầm tích chưa bị xáo trộn, lớp nằm dưới luôn cổ hơn lớp nằm trên. Hiển nhiên khi đã nói ra, nhưng mạnh mẽ vô cùng - nó cho phép đọc thứ tự trước-sau của lịch sử một hành tinh ngay cả khi chưa có con số tuổi tuyệt đối nào.'
+  en: 'The foundational principle of stratigraphy: in an undisturbed sequence of sedimentary rocks, the lower layer is always older than the one above it. Obvious once stated, yet powerful - it lets you read the before-and-after order of a planet''s history even before any absolute age is known.'
+see_also:
+  - uniformitarianism
+  - geologic-time-scale
+  - deep-time
+category: concept
+cover_prompt: A painted cross-section of neatly stacked horizontal rock layers in slightly different muted hues, the lowest clearly the deepest and oldest, cool indigo and stone-grey palette, faint teal traces, painterly plate, no text or numbers.

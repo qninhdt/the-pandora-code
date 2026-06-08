@@ -5,7 +5,7 @@ import { Parallax } from "@/components/motion/parallax";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-const CTA_BG = "/images/landing/cta-horizon.png";
+const CTA_BG = "/images/pages/cta-horizon.png";
 
 interface ClosingCallProps {
   kicker: string;

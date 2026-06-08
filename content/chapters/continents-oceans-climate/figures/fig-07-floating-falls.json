@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-floating-falls",
+  "chapter_slug": "continents-oceans-climate",
+  "role": "inline",
+  "narrative_purpose": "Closes the climate loop on a vivid image: a floating mountain kilometres up that stays warm and watered - lush forest and liquid waterfalls instead of the bare ice that Earth's lapse rate would demand at that height.",
+  "subject": "A single great floating mountain hanging high in open sky, its underside trailing roots and rock. Several waterfalls stream off its lower edges and break apart into fine glowing mist before reaching the clouds far below. The mountain's summit and flanks are covered in dense, lush bioluminescent forest - vivid and green, with no snow and no bare rock cap.",
+  "scene": "High in Pandora's humid sky, layered haze and distant lower islands floating below, soft drifting spore-light in the air, the ground far out of sight beneath the cloud.",
+  "camera": "Slightly low three-quarter angle looking up at the floating mountain so it dominates the sky, the falls trailing down past the viewpoint.",
+  "light": "Soft daylight haze; the forest glows living-teal; the falling water-mist catches a cool misty-cyan shimmer.",
+  "palette": "Cool teal forest and void-indigo sky, misty-cyan waterfall spray, a scarce warm amber glow tucked among the foliage.",
+  "style": "Painterly naturalist plate, atmospheric and grand, soft brushed foliage and mist, NOT a 3D render, NOT a photo.",
+  "detail_level": "High on the mountain, its forest and falls; softening into deep haze toward the lower islands.",
+  "composition": "The floating mountain large and high in the frame, waterfalls and mist drawing the eye downward into haze, lush summit clearly free of ice.",
+  "exclude": ["text", "letters", "numbers", "labels", "snow cap", "bare rock summit", "arrows", "UI", "watermark", "logos"],
+  "consistency_notes": "Match the cool palette and biolum-forest look of the cover; the point is a warm, green, watered summit - never snow or barren rock.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no snow, no ice cap, no bare rock summit, no diagram chrome, no 3D-render or photographic look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/continents-oceans-climate/fig-00-cover.png"]
+}

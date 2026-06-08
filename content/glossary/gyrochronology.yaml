@@ -1,0 +1,13 @@
+id: gyrochronology
+label:
+  vi: Định tuổi bằng vận tốc quay
+  en: Gyrochronology
+definition:
+  vi: Một cách để ước tính tuổi của một ngôi sao khối lượng thấp từ việc nó quay nhanh như thế nào. Các ngôi sao trẻ quay nhanh và chậm dần theo tuổi tác theo một cách có thể dự đoán được khi chúng rũ bỏ mô men động lượng thông qua gió sao từ tính. Được đề xuất bởi Sydney Barnes vào năm 2003, phương pháp này đọc chu kỳ tự quay của một ngôi sao (thông qua các vết đen) và màu sắc để suy ra tuổi của ngôi sao đó cùng các hành tinh quay quanh nó.
+  en: A way to estimate the age of a low-mass star from how fast it spins. Young stars rotate quickly and slow down with age in a predictable way as they shed angular momentum through magnetic stellar winds. Proposed by Sydney Barnes in 2003, it reads a star's rotation period (via starspots) and color to infer the age of the star and its orbiting planets.
+see_also:
+  - alpha-centauri
+  - geochronology
+  - deep-time
+category: concept
+cover_prompt: A painted view of a glowing star with a faint dark spot on its turning surface and soft arcs suggesting rotation, against a deep starfield, cool cyan-amber palette, painterly astronomical plate, no text or numbers.

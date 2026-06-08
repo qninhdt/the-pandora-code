@@ -1,15 +1,12 @@
 id: histotoxic-hypoxia
 label:
-  vi: Thiếu oxy mô (ngộ độc tế bào)
+  vi: Thiếu oxy mô
   en: Histotoxic hypoxia
 definition:
-  vi: Tình trạng tế bào không thể sử dụng oxy dù máu vẫn dồi dào oxy, vì bộ máy hô hấp bên trong tế bào đã bị đầu độc. Hydro sulfua (H₂S) - cũng như xyanua - gắn vào nguyên tử sắt của enzyme cuối cùng trong chuỗi vận chuyển điện tử ở ty thể, chặn đứng việc trao điện tử cho oxy. Tế bào "chết đói" ngay giữa một giếng oxy đầy ắp. Trên Pandora, đây là cơ chế giết người thứ hai, song song với tăng CO₂ máu.
+  vi: Một tình trạng mà trong đó các tế bào không thể sử dụng oxy mặc dù máu chứa đầy oxy, bởi vì cỗ máy hô hấp bên trong tế bào đã bị nhiễm độc. Hydro sulfua (H₂S) - cũng giống như xyanua - liên kết với nguyên tử sắt của enzyme cuối cùng trong chuỗi chuyền electron của ty thể, ngăn cản việc trao electron cho oxy. Tế bào chết đói ngay bên một cái giếng đầy ắp. Trên Pandora, đây là kẻ sát nhân thứ hai, song hành cùng chứng tăng CO2 máu.
   en: A state in which cells cannot use oxygen even though the blood is full of it, because the cell's internal respiratory machinery has been poisoned. Hydrogen sulfide (H₂S) - like cyanide - binds the iron atom of the final enzyme in the mitochondrial electron transport chain, blocking the hand-off of electrons to oxygen. The cell starves at a fully stocked well. On Pandora this is the second killer, running in parallel with hypercapnia.
 see_also:
   - hypercapnia
   - partial-pressure
 category: bio
-cover_prompt: >-
-  A painted close view of a mitochondrion's folded inner membrane with the final
-  enzyme of the chain clogged by small pale sulfur molecules, the electron relay
-  stalled and dim, cool palette, painterly, no text, no labels, no numbers.
+cover_prompt: A painted close view of a mitochondrion's folded inner membrane with the final enzyme of the chain clogged by small pale sulfur molecules, the electron relay stalled and dim, cool palette, painterly, no text, no labels, no numbers.

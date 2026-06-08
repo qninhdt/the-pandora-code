@@ -1,0 +1,12 @@
+id: thermohaline-circulation
+label:
+  vi: Hoàn lưu nhiệt muối
+  en: Thermohaline circulation
+definition:
+  vi: Băng chuyền truyền nhiệt vĩ đại của đại dương, được thúc đẩy bởi sự chênh lệch mật độ nước - do nhiệt độ (nhiệt) và độ mặn (muối) cùng quyết định. Nước lạnh, mặn ở các vĩ độ cao chìm xuống vực sâu, chảy qua các bồn trũng, và trồi lên ở những vùng ấm hơn, khép kín một vòng lặp vận chuyển nhiệt quanh hành tinh. Trên Pandora, nhiệt thủy triều sưởi ấm đáy biển, vì vậy vòng tuần hoàn của nó thiên về các luồng nước trồi cục bộ giàu chất dinh dưỡng hơn là mô hình chìm-tại-cực của Trái Đất.
+  en: The ocean's great heat conveyor, driven by differences in water density - which temperature (thermo) and salinity (haline) together set. Cold, salty water at high latitudes sinks to the deep, flows through the basins, and upwells in warmer regions, closing a loop that moves heat around the planet. On Pandora, tidal-heating warms the seafloor, so its circulation leans toward nutrient-rich local upwelling rather than Earth's sink-at-the-poles pattern.
+see_also:
+  - tidal-heating
+  - biome
+category: concept
+cover_prompt: 'A painted cutaway of a deep ocean showing a looping current: cold water sinking on one side, flowing along the dark seafloor, and rising again on the other side carrying glowing plankton upward. Cool ocean-teal and void-indigo, living teal plankton glow, painterly, no text, no labels, no numbers.'

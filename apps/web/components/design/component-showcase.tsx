@@ -4,17 +4,26 @@ import { AnatomyPlate } from "@/components/content/anatomy-plate";
 import { AtmosphereComparison } from "@/components/content/atmosphere-comparison";
 import { Callout, ScientificNote, SideNote } from "@/components/content/callout";
 import { Chart } from "@/components/content/chart";
+import { CirculationBands } from "@/components/content/circulation-bands";
 import { Comparison } from "@/components/content/comparison";
+import { ConfidenceDial } from "@/components/content/confidence-dial";
 import { ConfidenceMeter } from "@/components/content/confidence-meter";
 import { DataComparison } from "@/components/content/data-comparison";
+import { DetectionMethodScope } from "@/components/content/detection-method-scope";
 import { DiagramFigure } from "@/components/content/diagram-figure";
+import { EclipseDayClock } from "@/components/content/eclipse-day-clock";
 import { Figure } from "@/components/content/figure";
 import { FigureGrid } from "@/components/content/figure-grid";
+import { HabitableZoneExplorer } from "@/components/content/habitable-zone-explorer";
+import { HalfLifeDecay } from "@/components/content/half-life-decay";
 import { OpenQuestions } from "@/components/content/open-questions";
 import { Quote } from "@/components/content/quote";
 import { ScrollSequence } from "@/components/content/scroll-sequence";
+import { SuperconductorCooldown } from "@/components/content/superconductor-cooldown";
 import { Timeline } from "@/components/content/timeline";
+import { TwentySecondsTimeline } from "@/components/content/twenty-seconds-timeline";
 import { WhatThisMeans } from "@/components/content/what-this-means";
+import { WhittakerBiomeExplorer } from "@/components/content/whittaker-biome-explorer";
 import { FieldViz } from "@/components/three/field-viz";
 import { FieldVizFallback } from "@/components/three/field-viz-fallback";
 import { FloatingMountainFallback } from "@/components/three/floating-mountain-fallback";
@@ -95,13 +104,22 @@ export function ComponentShowcase() {
           kind="line"
           data={resistanceData}
           xKey="t"
-          series={[{ key: "r", tone: "cyan" }]}
+          xLabel="Temperature (K)"
+          yLabel="Resistance (ohms)"
+          series={[{ key: "r", label: "Resistance (ohms)", tone: "cyan" }]}
           caption="Điện trở theo nhiệt độ - siêu dẫn về 0 dưới ngưỡng tới hạn."
         />
       </Block>
 
       <Block label="Chart - bar">
-        <Chart kind="bar" data={resistanceData} xKey="t" series={[{ key: "r", tone: "teal" }]} />
+        <Chart
+          kind="bar"
+          data={resistanceData}
+          xKey="t"
+          xLabel="Temperature (K)"
+          yLabel="Resistance (ohms)"
+          series={[{ key: "r", label: "Resistance (ohms)", tone: "teal" }]}
+        />
       </Block>
 
       <Block label="Figure (bilingual caption)">
@@ -183,6 +201,42 @@ export function ComponentShowcase() {
           earth={{ label: "Trái Đất — mực biển", totalKpa: 101, o2Pct: 21, co2Pct: 0.04 }}
           pandora={{ label: "Pandora — bề mặt", totalKpa: 90, o2Pct: 23, co2Pct: 17 }}
         />
+      </Block>
+
+      <Block label="TwentySecondsTimeline (histotoxic hypoxia scrubber)">
+        <TwentySecondsTimeline locale="vi" />
+      </Block>
+
+      <Block label="CirculationBands (Hadley cell → biome bands)">
+        <CirculationBands locale="vi" />
+      </Block>
+
+      <Block label="WhittakerBiomeExplorer (temperature × rainfall biomes)">
+        <WhittakerBiomeExplorer locale="vi" />
+      </Block>
+
+      <Block label="HalfLifeDecay (radioactive decay grid)">
+        <HalfLifeDecay locale="vi" />
+      </Block>
+
+      <Block label="SuperconductorCooldown (Tc transition + levitation)">
+        <SuperconductorCooldown locale="vi" />
+      </Block>
+
+      <Block label="ConfidenceDial (IPCC calibrated likelihood)">
+        <ConfidenceDial locale="vi" />
+      </Block>
+
+      <Block label="HabitableZoneExplorer (interactive habitable zone)">
+        <HabitableZoneExplorer locale="vi" />
+      </Block>
+
+      <Block label="DetectionMethodScope (exoplanet detection tabs)">
+        <DetectionMethodScope locale="vi" />
+      </Block>
+
+      <Block label="EclipseDayClock (tidal-lock sky clock)">
+        <EclipseDayClock locale="vi" />
       </Block>
 
       <Block label="ConfidenceMeter">

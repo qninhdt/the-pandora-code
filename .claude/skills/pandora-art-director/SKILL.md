@@ -75,6 +75,34 @@ the background is a wide, dim, immersive mood layer. Requirements:
 - Do NOT add it to `meta.yaml` `figures[]` (it is a background layer, not an
   inline figure shown in the prose).
 
+## The figure-annotation pass (after images exist)
+
+Image generation only produces pixels. The teaching labels are authored in a
+SEPARATE pass that runs AFTER `gen-images`, because a label's position is read
+off the real PNG - you cannot place `{x,y}` on an image that does not exist yet.
+This is flow step 4 in `/pandora` and it is owned here.
+
+For each AI-generated image figure of the chapter:
+
+1. Confirm the figure is a `<DiagramFigure>` in `en.mdx` (convert any leftover
+   `<Figure>`), carrying `src`, `alt`, `figNo`, `caption`, `tier`.
+2. READ the PNG at `apps/web/public/images/chapters/{slug}/fig-NN-*.png`.
+3. Author `labels=[{ x, y, side, label, note? }]`:
+   - `x`, `y` are percentages (0–100) of the image box, placed on the actual
+     feature the label points at.
+   - `side` (`"left"`/`"right"`) puts the callout box on the side with open/dark
+     space so it stays readable.
+   - `label` is the short callout; `note` an optional second line of detail.
+   - **2–4 labels per figure** is the norm. Label only what teaches; never
+     clutter the image. English strings only (VI is added in the translate pass).
+4. `fig-00-cover` and `fig-99-background` are decorative layers - they get NO
+   labels and stay as cover/background (not inline `<DiagramFigure>`).
+
+Because the prompt/subject is authored before the image, design figures with
+this pass in mind: keep a plain, dark, low-detail region beside each key feature
+so overlaid callouts read cleanly (the `exclude`/`negative_prompt` already ban
+baked-in text, arrows, and leader lines - labels are added by the interface).
+
 ## What this skill produces
 
 For chapter `{slug}`:
@@ -130,6 +158,10 @@ fig-00-cover.png`) to lock a consistent look. Missing ref paths are silently
 7. **Numbering is sequential** in narrative order: `fig-01-…`, `fig-02-…`
    (`fig-00-cover` is the cover; body figures start at `fig-01`).
 8. **No plan-artifact references** in JSON fields, ids, or filenames.
+9. **Annotate every AI-image figure after gen.** Each `fig-NN` body image must
+   end up as a `<DiagramFigure>` with `labels=[…]` authored from the real PNG (the
+   annotation pass above). Run it after `gen-images`, before translate. Skip only
+   the decorative `fig-00-cover` / `fig-99-background` layers.
 
 ## References
 

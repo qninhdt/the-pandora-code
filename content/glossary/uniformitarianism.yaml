@@ -1,0 +1,13 @@
+id: uniformitarianism
+label:
+  vi: Thuyết đồng nhất
+  en: Uniformitarianism
+definition:
+  vi: 'Nguyên lý cho rằng các định luật và quá trình định hình thế giới ngày nay cũng chính là những thứ đã định hình nó trong quá khứ, hoạt động với tốc độ nhìn chung là giống nhau. Được đúc kết bởi James Hutton và phát triển bởi Charles Lyell, nó là tấm giấy phép cho toàn bộ ngành khoa học về quá khứ sâu thẳm: hiện tại là chìa khóa để đọc lịch sử.'
+  en: 'The principle that the laws and processes shaping the world today are the same ones that shaped it in the past, operating at broadly the same rates. Stated by James Hutton and developed by Charles Lyell, it is the permission slip for the entire science of the deep past: the present is the key to reading history.'
+see_also:
+  - deep-time
+  - superposition
+  - geologic-time-scale
+category: concept
+cover_prompt: A painted scene of a slow river depositing fine silt into a delta under a dim Pandoran sky, the same patient process repeating across layered banks, cool teal and indigo palette, painterly naturalist plate, no text.

@@ -1,0 +1,13 @@
+id: geologic-time-scale
+label:
+  vi: Thang thời gian địa chất
+  en: Geologic time scale
+definition:
+  vi: 'Cuốn lịch chia toàn bộ lịch sử Trái Đất thành các liên đại, đại, kỷ và thế, dựng nên bằng cách kết hợp thứ tự tương đối từ địa tầng với những con số tuổi tuyệt đối từ định tuổi phóng xạ. Khung lớn nhất gồm bốn liên đại: Hỏa thành (Hadean), Thái cổ (Archean), Nguyên sinh (Proterozoic) và Hiển sinh (Phanerozoic).'
+  en: 'The calendar that divides Earth''s whole history into eons, eras, periods, and epochs, built by marrying relative order from stratigraphy with absolute ages from radiometric dating. Its grandest framework is four eons: the Hadean, Archean, Proterozoic, and Phanerozoic.'
+see_also:
+  - superposition
+  - geochronology
+  - deep-time
+category: concept
+cover_prompt: A painted vertical ribbon of stacked colored bands of differing widths spiralling up from deep dark at the base toward the present, evoking eras of time, cool teal and indigo palette with scarce amber, painterly, no text.

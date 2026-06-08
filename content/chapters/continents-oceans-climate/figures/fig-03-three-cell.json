@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-three-cell",
+  "chapter_slug": "continents-oceans-climate",
+  "role": "diagram",
+  "narrative_purpose": "Makes the Hadley cell visible: warm moist air rising and raining at the equator, drifting high to the sides, and sinking as dry air near 30 degrees - the loop that places rainforest under its rising arm and desert under its sinking arm.",
+  "subject": "A cross-section of a planet's lower atmosphere shown as a wide curved band of sky above a curved strip of ground. At the centre, a tall plume of glowing storm cloud rises straight up and sheds streaks of falling rain onto a strip of dense glowing forest directly below it. The risen cloud fans outward to both sides high up, thinning as it goes, then curls downward into clear, cloudless dry sky on each side, where the ground below is pale, bare and dry. Soft looping flow lines trace the rising-spreading-sinking motion.",
+  "scene": "A single grand overturning loop on each side of the central plume, painterly haze giving depth, the ground transitioning from lush wet centre to bare dry flanks.",
+  "camera": "Side-on cross-section view, flat and diagrammatic, ground along the bottom.",
+  "light": "The central rising cloud and forest glow brightest with cool teal life; the dry sinking flanks are dim and warm-grey.",
+  "palette": "Cool teal rising cloud and living-teal forest at centre, void-indigo sky, dry flanks in muted warm amber-grey; flow lines faint misty-cyan.",
+  "style": "Painterly plate reading as a diagram by layout, soft glowing volumes and brushed flow lines, NOT a hard vector schematic, NOT a 3D render.",
+  "detail_level": "Moderate: the rising plume, the rain, and the two sinking arms clearly distinct; soft edges, no hard arrows with heads.",
+  "composition": "Symmetric about the central rising plume - wet glowing centre, two dry flanks - so the rainforest-at-centre, desert-at-edge logic reads instantly.",
+  "exclude": ["text", "letters", "numbers", "labels", "lettered arrows", "grid", "UI", "watermark", "logos"],
+  "consistency_notes": "Same teal cloud and forest palette as the cover's equatorial band; warm-grey reserved for the dry sinking zones. Flow lines are painterly streaks, not vector arrows.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no lettered arrows, no grid, no diagram chrome, no 3D-render or photographic look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

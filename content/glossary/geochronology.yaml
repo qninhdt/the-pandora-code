@@ -1,0 +1,13 @@
+id: geochronology
+label:
+  vi: Địa thời học
+  en: Geochronology
+definition:
+  vi: Khoa học về việc gắn những con số tuổi tuyệt đối, tính bằng năm, cho các loại đá, khoáng vật, và các sự kiện địa chất. Xương sống của nó là định tuổi bằng phương pháp phóng xạ, kết hợp với địa tầng học tương đối, để xây dựng nên một dòng thời gian có thể kiểm chứng được về lịch sử của một hành tinh - và về nguyên tắc là của bất kỳ thế giới nào.
+  en: The science of putting numerical ages, in years, on rocks, minerals, and geological events. Its backbone is radiometric dating, combined with relative stratigraphy, to build a verifiable timeline of a planet's history - and, in principle, of any world.
+see_also:
+  - radiometric-dating
+  - isochron
+  - geologic-time-scale
+category: concept
+cover_prompt: A painted close study of a geologist's hand holding several glowing mineral grains over a dark field, each grain faintly lit from within like a tiny clock, cool teal-cyan palette, painterly naturalist plate, no text or numerals.

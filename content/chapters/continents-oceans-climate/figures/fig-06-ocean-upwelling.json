@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-ocean-upwelling",
+  "chapter_slug": "continents-oceans-climate",
+  "role": "diagram",
+  "narrative_purpose": "Shows coastal upwelling feeding the Eastern Sea: wind drags surface water away from a reef coast, cold nutrient-rich deep water rises up the slope to replace it, and a bloom of glowing life gathers where it surfaces.",
+  "subject": "A cross-section cutaway of a coastal sea. On the right, a reef coastline and shallow water. Surface wind drags the top layer of water away from the coast toward the left, so the surface flows outward. Below and rising up the sloping seafloor from the deep on the left, a broad current of cold dark water climbs toward the surface near the coast, carrying clouds of tiny glowing plankton upward. Where this rising water reaches the lit shallows, a dense bloom of bioluminescent sea life gathers.",
+  "scene": "Underwater cross-section, dark deep water below, lighter sunlit shallows above near the reef, the rising current traced by streams of glowing motes.",
+  "camera": "Side-on cutaway view, water surface along the top, seafloor sloping from deep-left up to coast-right.",
+  "light": "Cool sunlit glow in the upper shallows; the deep is dark; the rising plankton streams glow living-teal, brightest in the surface bloom.",
+  "palette": "Deep ocean-teal and void-indigo in the depths, brighter cyan in the shallows, living-teal glowing plankton, a scarce warm amber spark in the densest bloom.",
+  "style": "Painterly plate reading as a cross-section diagram, soft glowing currents, NOT a vector schematic, NOT a 3D render.",
+  "detail_level": "Moderate: the outward surface flow, the rising deep current, and the surface bloom each clearly readable.",
+  "composition": "Diagonal flow from deep lower-left rising to the coastal upper-right, surface water peeling away left, the bright bloom as the focal payoff near the coast.",
+  "exclude": ["text", "letters", "numbers", "labels", "lettered arrows", "grid", "UI", "watermark", "logos"],
+  "consistency_notes": "Ocean-teal palette consistent with the seas in fig-00-cover; warm amber used only as a scarce accent in the richest part of the bloom.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no lettered arrows, no grid, no diagram chrome, no 3D-render or photographic look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

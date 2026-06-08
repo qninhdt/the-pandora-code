@@ -1,0 +1,19 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "pandoras-deep-time",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative cover: a single image that reads as 'a tiny crystal is a clock holding billions of years', making a reader want to open a chapter about reading the deep age of a world from its rocks.",
+  "subject": "A single translucent gemstone crystal, faceted and elongated like a tiny prism, held upright and glowing from within with cool cyan-teal light. Inside it, concentric layered bands are visible like growth rings, the innermost core glowing brightest. The crystal is shaped and lit so it reads faintly like an hourglass - narrow at the waist, light pooling at top and bottom. Fine motes of luminous dust drift around it in the dark.",
+  "scene": "An extreme close, almost reverent view of one ancient mineral grain floating in deep shadow, as if suspended in a dark display, the only light coming from within the crystal and a faint haze around it.",
+  "camera": "Tight macro hero shot, the crystal centered and towering in the frame, shallow depth so the background falls to pure dark haze.",
+  "light": "Bioluminescent key from inside the crystal itself - cool cyan and teal glow radiating outward, a scarce warm amber ember deep in the core; deep indigo shadow all around, never black.",
+  "palette": "Dominant void-indigo and deep teal background, cyan and living-teal glow from the crystal, one scarce ember-amber spark at the core, mist highlights on drifting motes.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, luminous and atmospheric, observed-from-life confidence.",
+  "detail_level": "Crisp on the crystal's facets and internal growth bands; background dissolving softly into haze and dark.",
+  "composition": "The glowing crystal anchored vertically in the center on the rule-of-thirds, drifting luminous motes leading the eye in, generous dark negative space around it.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "clock faces", "literal hourglass frame", "human hands", "lab equipment", "arrows"],
+  "consistency_notes": "Cool Pandora palette with bioluminescent key glow from within the subject. This glowing layered crystal is the chapter's recurring zircon motif and must read consistently with the zircon close-ups later in the chapter.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no literal clock or hourglass hardware, no photographic or 3D-render look, no lens flares, no oversaturation, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

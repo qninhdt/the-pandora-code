@@ -1,0 +1,12 @@
+id: adiabatic-lapse-rate
+label:
+  vi: Tốc độ giảm nhiệt độ đoạn nhiệt
+  en: Adiabatic lapse rate
+definition:
+  vi: 'Tốc độ mà không khí nguội đi khi nó bốc lên và giãn nở dưới áp suất giảm dần. Trên Trái Đất, không khí khô mất khoảng 10°C cho mỗi km độ cao - đó là lý do tại sao các đỉnh núi lại lạnh giá. Tốc độ này tỷ lệ thuận với trọng lực và tỷ lệ nghịch với nhiệt dung của không khí: trọng lực yếu hơn cùng với bầu khí quyển nặng, ẩm ướt, giàu nhiệt của Pandora khiến không khí của nó nguội đi chậm hơn nhiều theo độ cao - đủ để giữ cho các dãy núi lơ lửng luôn ấm áp và có nước thay vì đóng băng.'
+  en: 'The rate at which air cools as it rises and expands under falling pressure. On Earth, dry air loses about 10°C per kilometre of altitude - which is why mountain peaks are frigid. The rate scales with gravity and inversely with the air''s heat capacity: Pandora''s weaker gravity and heavy, humid, heat-rich atmosphere make its air cool far more slowly with height - enough to leave the floating mountains warm and watered instead of frozen.'
+see_also:
+  - radiative-equilibrium
+  - hadley-cell
+category: concept
+cover_prompt: A painted scene of a tall mountainside with a parcel of glowing cloud rising along it, the cloud cooling and thinning only slightly as it climbs, lush vegetation persisting near the high summit. Cool teal and void-indigo, living teal foliage glow, painterly haze, no text, no labels, no numbers.

@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-zircon-anatomy",
+  "chapter_slug": "pandoras-deep-time",
+  "role": "diagram",
+  "narrative_purpose": "The base image for a labeled diagram showing that one zircon crystal holds two ages: a bright glowing inner core (first crystallization) and a distinct paler overgrowth rim (a later event). Labels are added in the interface, so the image itself carries no text.",
+  "subject": "A single large zircon crystal shown as a polished cross-section, elongated and faceted. Inside it, clearly concentric zones: a bright, warm-glowing inner core positioned left-of-center and a little low in the frame, surrounded by fine growth bands, and then a visibly distinct, paler, cooler overgrowth rim wrapping the upper-right shoulder of the crystal. The two zones differ in hue and brightness so they read as two separate growth episodes.",
+  "scene": "The crystal floating alone against a deep dark field, lit as a precious specimen, faint dust motes drifting.",
+  "camera": "Straight-on macro of the cut crystal face, filling most of the frame, flat enough that overlaid labels can sit cleanly beside the core and the rim.",
+  "light": "Internal bioluminescent-style glow: a brighter cyan-amber core and a dimmer, cooler teal rim; deep indigo shadow around the crystal.",
+  "palette": "Void-indigo background, cyan and teal glowing zones, a scarce ember-amber heart in the core, mist highlights on facets.",
+  "style": "Painterly specimen plate with a clean, study-like clarity; textured but legible zones.",
+  "detail_level": "Crisp, clearly separated core and rim zones with visible concentric growth bands; background plain dark so labels stay readable over it.",
+  "composition": "Crystal centered and large; the bright core sitting around the left-center of the frame and the paler rim around the upper-right shoulder, leaving open dark space beside each for callout labels added later.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout dots", "arrows", "leader lines", "busy background"],
+  "consistency_notes": "Same glowing zircon motif as the cover and fig-01 (bright core, paler rim). Keep the background simple and dark so interface labels overlay cleanly. Cool Pandora palette.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no callout dots or leader lines, no infographic chrome, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"]
+}

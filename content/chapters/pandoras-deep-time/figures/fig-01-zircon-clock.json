@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-zircon-clock",
+  "chapter_slug": "pandoras-deep-time",
+  "role": "hero",
+  "narrative_purpose": "The cold-open anchor: the actual specimen the chapter opens on - a single zircon grain whose glowing inner core and paler outer rim hint that one crystal holds two ages, the moon's birth and a later catastrophe.",
+  "subject": "A single tiny translucent crystal grain, smaller than a grain of salt, gripped at the very tip of a pair of fine metal tweezers. The crystal is lit from within: a small bright glowing core of cyan-teal light at its center, wrapped in a slightly paler, cooler outer rim, with faint concentric growth zones between them. A few other dark mineral specks lie out of focus far below in a shallow pan.",
+  "scene": "A field-tent laboratory at night, the grain raised to a cold lamp; everything beyond the crystal and the tweezer-tip falls into soft dark, dust motes drifting in the lamp beam.",
+  "camera": "Extreme macro, the grain and tweezer-tip sharp and large in frame, the background thrown far out of focus into haze.",
+  "light": "Cool clinical lamp glow plus a stronger bioluminescent-style glow from inside the crystal; deep indigo shadow behind; a faint warm pinpoint deep in the core.",
+  "palette": "Void-indigo background, cyan and teal glow from the crystal, cool steel grey on the tweezers, one scarce amber spark in the core.",
+  "style": "Painterly naturalist specimen plate, hand-painted texture, shallow-focus intimacy.",
+  "detail_level": "Crisp on the crystal's core, rim, and growth zones and the tweezer-tip; everything else dissolving into soft dark haze.",
+  "composition": "The tweezers entering from one lower corner, the glowing grain at the optical center on a third line, vast dark negative space around it for focus.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "modern branding"],
+  "consistency_notes": "Same glowing layered crystal motif as the cover (bright core, paler rim). Cool Pandora palette, bioluminescent key glow from within the specimen.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"]
+}
