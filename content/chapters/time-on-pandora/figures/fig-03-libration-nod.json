@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-libration-nod",
+  "chapter_slug": "time-on-pandora",
+  "role": "diagram",
+  "narrative_purpose": "Shows that the 'fixed' planet is not perfectly fixed: over one orbit Polyphemus traces a slow loop against the stars - drifting east-west and riding north-south - the libration that also lets us peer around the edges of our own Moon.",
+  "subject": "The banded disc of Polyphemus shown as a cluster of slightly offset ghosted positions tracing a small lazy figure-eight or loop against a field of fixed stars, high above a dark low Pandoran ridge. The central, most solid position is the planet; the fainter offset repeats suggest its slow nod east, west, high and low.",
+  "scene": "Night-into-twilight sky over a dark forested horizon, the planet large and high, a quiet starfield behind it, the faint looping repeats reading as motion over time.",
+  "camera": "Wide upward view from a dark ridge, planet high in the frame, horizon low.",
+  "light": "Cool indigo night sky, faint reflected glow on the planet's near face, a dim bioluminescent rim along the dark ridge below; the ghosted repeats slightly fainter than the main disc.",
+  "palette": "Void-indigo sky, cream-rust planet bands, faint teal horizon glow, pale star dusting.",
+  "style": "Painterly naturalist astronomical plate, soft, atmospheric, NOT a render and NOT a hard vector diagram.",
+  "detail_level": "Moderate: main planet crisp, the offset repeats softer to read as a slow loop of motion; ridge low-detail and dark.",
+  "composition": "Planet and its small looping trail of ghosted positions centred high, generous starfield, low dark horizon along the bottom for grounding.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "drawn path lines", "grid", "watermark", "logos", "UI", "clock faces"],
+  "consistency_notes": "Same Polyphemus as the cover (identical bands and eye-storm). The looping repeats must read as the same planet at slightly different sky positions, not as several different planets. No drawn motion lines or arrows.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no drawn path lines, no grid, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"]
+}

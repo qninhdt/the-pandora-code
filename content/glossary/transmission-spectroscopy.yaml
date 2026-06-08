@@ -1,0 +1,15 @@
+id: transmission-spectroscopy
+label:
+  vi: Quang phổ truyền qua
+  en: Transmission spectroscopy
+definition:
+  vi: Kỹ thuật đọc thành phần khí quyển của một hành tinh xa bằng ánh sáng. Khi hành tinh đi ngang qua mặt sao chủ, một dải ánh sao mỏng xuyên qua lớp khí quyển của nó trước khi tới ta; mỗi loại khí hấp thụ ánh sáng ở những bước sóng đặc trưng, để lại "dấu vân tay" trong quang phổ. Tách ánh sáng ấy ra là đọc được công thức không khí của một thế giới ta không thể đặt chân tới. Kính James Webb đang dùng cách này để phát hiện CO₂, hơi nước và methane trên các ngoại hành tinh.
+  en: A technique for reading a distant planet's atmospheric composition by light. As the planet crosses the face of its star, a thin sliver of starlight strains through its atmosphere on the way to us; each gas absorbs light at characteristic wavelengths, leaving a "fingerprint" in the spectrum. Split that light and you read the air recipe of a world you can never visit. The James Webb Space Telescope uses this method to detect CO₂, water vapour, and methane on exoplanets.
+see_also:
+  - biosignature
+  - atmospheric-disequilibrium
+category: tech
+cover_prompt: >-
+  A painted scene of a small dark planet crossing the edge of a bright star, a
+  fine ring of backlit atmosphere glowing around it and spreading into a faint
+  rainbow band, painterly and astronomical, no text, no labels, no numbers.

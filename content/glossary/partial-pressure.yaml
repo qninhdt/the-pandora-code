@@ -1,0 +1,14 @@
+id: partial-pressure
+label:
+  vi: Áp suất riêng phần
+  en: Partial pressure
+definition:
+  vi: Phần áp suất mà một loại khí riêng lẻ đóng góp vào một hỗn hợp khí, bằng tỉ lệ của khí đó nhân với tổng áp suất (định luật Dalton). Cơ thể không phản ứng với "phần trăm" oxy mà với áp suất riêng phần của nó - lực đẩy oxy từ không khí vào máu. Vì thế cùng một tỉ lệ phần trăm oxy có thể đủ thở ở áp suất này nhưng gây ngạt ở áp suất thấp hơn, như trên đỉnh Everest.
+  en: The share of pressure a single gas contributes to a mixture - its fraction multiplied by the total pressure (Dalton's law). The body responds not to the "percentage" of oxygen but to its partial pressure, the push that drives oxygen from the air into the blood. So the same oxygen percentage can be breathable at one pressure yet suffocating at a lower one, as atop Everest.
+see_also:
+  - hypercapnia
+category: concept
+cover_prompt: >-
+  A painted scene of two sealed glass chambers side by side, one densely packed
+  with glowing drifting molecules pressing on the walls and one sparsely filled,
+  soft luminous gas, no text, no labels, no numbers, painterly and atmospheric.

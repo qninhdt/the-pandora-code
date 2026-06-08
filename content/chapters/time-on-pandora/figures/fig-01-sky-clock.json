@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-sky-clock",
+  "chapter_slug": "time-on-pandora",
+  "role": "hero",
+  "narrative_purpose": "Opens the chapter on its central strangeness: the largest thing in the sky never moves, so you tell time by the small sun crossing behind the fixed planet rather than by the planet itself.",
+  "subject": "A wide Pandoran clearing in mid-afternoon. The enormous banded disc of Polyphemus hangs high and motionless, dominating the upper sky, its eye-storm slowly turning. The small bright yellow-white sun-star sits lower and off to one side of the planet, clearly the moving body, casting long raking amber shadows across the glowing forest floor.",
+  "scene": "A living Pandoran clearing of luminous plants and tall alien trees, mid-afternoon, the air clear. The fixed planet looms; the low sun rakes the scene. A sense that the planet is a wall that simply stays put while light moves around it.",
+  "camera": "Wide vista from ground level looking up and across the clearing, planet high in frame, sun lower - emphasising that the sun is the thing in motion.",
+  "light": "Warm amber low sun raking from one side, long shadows; cool indigo sky; teal-cyan bioluminescent underglow from plants; thin warm rim on the planet.",
+  "palette": "Void-indigo sky, warm amber raking light, teal-cyan plant glow, cream-rust planet bands.",
+  "style": "Painterly naturalist plate, hand-painted texture, atmospheric depth, NOT a render.",
+  "detail_level": "Crisp foreground clearing and plants, softer atmospheric planet, clean bright sun point.",
+  "composition": "Polyphemus large in the upper third, small sun on a third line to its side, clearing and long shadows leading the eye across the lower two-thirds.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "clock faces", "orbit lines", "arrows", "spacecraft"],
+  "consistency_notes": "Same Polyphemus as fig-00-cover (identical bands and eye-storm). Cool Pandora palette with bioluminescent underglow; planet reads as fixed, sun reads as moving.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no clock imagery, no orbit lines, no arrows, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"]
+}

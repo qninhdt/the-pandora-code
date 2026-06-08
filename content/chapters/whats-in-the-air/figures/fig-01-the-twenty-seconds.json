@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-the-twenty-seconds",
+  "chapter_slug": "whats-in-the-air",
+  "role": "hero",
+  "narrative_purpose": "Opens the chapter on the lethal moment: a human with their mask knocked aside, going down in an air that looks rich and breathable but kills in seconds.",
+  "subject": "A human in a worn field jacket sinking to their knees on the forest floor, one hand reaching back toward a dislodged exo-pack mask lying just out of reach, mouth open in a failing gasp. Bioluminescent spores drift past, indifferent. The air itself seems faintly, beautifully luminous.",
+  "scene": "The floor of a glowing Pandoran forest at night, towering glowing trunks and hanging fronds around. A serene, almost lovely setting for a fast death; the beauty and the danger are the same air.",
+  "camera": "Low cinematic angle near the forest floor, looking slightly up at the collapsing figure, the dropped mask sharp in the near foreground.",
+  "light": "Cool bioluminescent glow from surrounding flora as key; a faint sickly teal-green cast in the air; deep shadow at the edges.",
+  "palette": "Void-indigo and teal, cyan forest glow, a faint unsettling green haze in the air, one small warm amber glint on the dropped mask's lens.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted, atmospheric, NOT a 3D render or photo.",
+  "detail_level": "Crisp on the figure and the dropped mask; softer glowing forest and drifting spores behind.",
+  "composition": "Figure off-centre on a third line collapsing toward the mask in the foreground; glowing trunks framing; drifting spores leading the eye.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "blood", "gore", "weapons"],
+  "consistency_notes": "Same exo-pack design as the cover (clear faceplate, side cartridge, jaw hose). Cool Pandora biolum palette; the air carries a faint green toxic cast unique to this figure.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no photographic or 3D-render look, no lens flares, no gore, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/whats-in-the-air/fig-00-cover.png"]
+}

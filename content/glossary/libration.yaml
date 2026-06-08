@@ -1,0 +1,17 @@
+id: libration
+label:
+  vi: Bình động
+  en: Libration
+definition:
+  vi: Chuyển động lắc lư, gật gù chậm rãi của một thiên thể bị khóa thủy triều khi nhìn từ vật thể chủ. Dù trung bình luôn quay một mặt, quỹ đạo lệch tâm khiến nó lúc quay nhanh lúc quay chậm (bình động theo kinh độ), còn độ nghiêng trục khiến ta nhìn lúc qua cực bắc lúc qua cực nam (bình động theo vĩ độ). Nhờ bình động, từ Trái Đất ta thấy được khoảng 59% bề mặt Mặt Trăng thay vì đúng một nửa.
+  en: The slow rocking and nodding of a tidally locked body as seen from its host. Though it shows one face on average, an off-circular orbit makes it run ahead and lag behind (libration in longitude), and an axial tilt lets the viewer peer over its north and south poles in turn (libration in latitude). Libration is why we see about 59% of the Moon's surface from Earth rather than exactly half.
+see_also:
+  - tidal-locking
+  - synchronous-rotation
+  - obliquity
+category: concept
+cover_prompt: >-
+  A painted sequence suggestion of a banded gas giant low over an alien
+  horizon, shown gently nodding and rocking to slightly different positions, as
+  if seen over one slow orbit. Cool void-indigo sky, faint bioluminescent
+  foreground glow, painterly, no text, no labels, no numbers.

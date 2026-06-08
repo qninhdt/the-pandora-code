@@ -1,0 +1,15 @@
+id: hypercapnia
+label:
+  vi: Tăng CO₂ máu
+  en: Hypercapnia
+definition:
+  vi: Tình trạng dư thừa carbon dioxide trong máu. Bình thường cơ thể thải CO₂ ra phổi vì không khí ngoài gần như không có CO₂; nhưng khi không khí xung quanh giàu CO₂, dòng chảy đảo ngược và CO₂ tràn vào máu, tạo thành acid carbonic và làm máu hóa acid. Trung khu hô hấp phản ứng bằng cách thúc thở gấp hơn - một phản xạ trở thành cái bẫy chết người khi mỗi hơi thở chỉ nạp thêm độc. Đây là một trong hai cơ chế giết người tức thì của không khí Pandora.
+  en: An excess of carbon dioxide in the blood. Normally the body offloads CO₂ into the lungs because the outside air holds almost none; but when the surrounding air is rich in CO₂, the flow reverses and CO₂ floods inward, forming carbonic acid and turning the blood acidic. The brainstem responds by driving faster breathing - a reflex that becomes a death trap when every breath only adds more poison. It is one of the two immediate killers in Pandora's air.
+see_also:
+  - partial-pressure
+  - histotoxic-hypoxia
+category: bio
+cover_prompt: >-
+  A painted cross-section of a lung air sac with streams of molecules flowing
+  inward into reddening blood instead of out, a warm acidic glow spreading,
+  painterly and anatomical, no text, no labels, no numbers, no arrows with words.

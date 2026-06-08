@@ -1,0 +1,19 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "whats-in-the-air",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative cover: a single image that says 'this air looks breathable and is not' - a human sealed behind an exo-pack faceplate in a glowing forest, the unbreathable world just on the other side of the glass.",
+  "subject": "A close three-quarter view of a human face behind the clear faceplate of an exo-pack breathing mask, the transparent visor faintly fogged from inside by breath. Reflected across the glass is a dense bioluminescent Pandoran forest - blue-green glowing fronds and drifting spores. The mask's side filter cartridge and flexible hose are partly visible at the jaw.",
+  "scene": "Night in a luminous Pandoran forest. Glowing spores drift in the heavy air just beyond the glass. The figure's eyes are calm and alert, lit from below by the forest's own light.",
+  "camera": "Intimate close portrait, shallow depth of field, the faceplate and reflected forest sharp, the background dissolving into glowing haze.",
+  "light": "Bioluminescent key light rising from below in cyan and teal; a faint warm amber catchlight on the visor edge; cool shadow elsewhere.",
+  "palette": "Deep void-indigo and teal shadow, cyan and living-teal forest glow on the glass, a scarce warm amber rim along the mask edge.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, strong atmospheric depth, NOT a 3D render or photo.",
+  "detail_level": "Crisp on the faceplate, breath-fog and reflected fronds; softer glowing haze behind.",
+  "composition": "Face and faceplate filling the right two-thirds on a third line; reflected forest sweeping across the glass; generous glowing negative space at left.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "brand markings", "modern Earth cityscape"],
+  "consistency_notes": "This exo-pack design - clear faceplate, side filter cartridge, jaw hose - must match wherever the mask appears in this chapter. Cool Pandora biolum palette throughout.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no photographic or 3D-render look, no lens flares, no oversaturation, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

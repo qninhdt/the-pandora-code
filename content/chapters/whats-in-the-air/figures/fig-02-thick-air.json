@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-thick-air",
+  "chapter_slug": "whats-in-the-air",
+  "role": "diagram",
+  "narrative_purpose": "Shows the paradox of Pandora's air: lower total pressure than Earth yet noticeably denser and heavier, the weight carried by heavy gas, conveyed as a felt contrast rather than a chart.",
+  "subject": "Two tall vertical columns of air set side by side as painted volumes. The left column is thin, clear and airy with sparse light motes. The right column is visibly thicker - crowded with heavy, slow-drifting luminous motes and a faint amber-tinged haze, pressing dense and syrupy. A small silhouetted human figure wades into the base of the dense right column, leaning as if against a current.",
+  "scene": "An abstract painterly space, deep and atmospheric, the two columns rising into darkness. Not a hard infographic - two moods of air made visible.",
+  "camera": "Straight-on, flat, diagrammatic side-by-side view, eye level.",
+  "light": "Soft even glow within each column; the dense column glows warmer and heavier, the thin one cooler and clearer.",
+  "palette": "Left column cool cyan-teal and clear void-indigo; right column denser teal with a warm amber-laden haze; dark surround.",
+  "style": "Painterly naturalist plate evoking a diagram, soft glowing volumes, NOT a hard vector chart and NOT a 3D render.",
+  "detail_level": "Moderate: clear contrast between thin and dense air, painterly motes and haze, soft edges, no hard outlines.",
+  "composition": "Two columns balanced left and right with dark negative space between; tiny wading figure at the base of the right column for scale.",
+  "exclude": ["text", "letters", "numbers", "labels", "axis", "arrows", "watermark", "logos", "UI", "grid", "ruler marks"],
+  "consistency_notes": "Reads as a painted scene, not an annotated chart. Cool Pandora palette; the dense air's warm amber haze ties to the carbon-dioxide motif used elsewhere in the chapter.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no axes, no grid, no diagram chrome, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/whats-in-the-air/fig-00-cover.png"]
+}

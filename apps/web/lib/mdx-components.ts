@@ -1,5 +1,6 @@
 import { CanonBadge } from "@/components/classification/canon-badge";
 import { AnatomyPlate } from "@/components/content/anatomy-plate";
+import { AtmosphereComparison } from "@/components/content/atmosphere-comparison";
 import { Callout, ScientificNote, SideNote } from "@/components/content/callout";
 import { Chart } from "@/components/content/chart";
 import { Comparison } from "@/components/content/comparison";
@@ -15,18 +16,20 @@ import { TierLegend } from "@/components/content/tier-legend";
 import { Timeline } from "@/components/content/timeline";
 import { WhatThisMeans } from "@/components/content/what-this-means";
 import { GlossaryTerm } from "@/components/glossary/glossary-term";
-import { FloatingMountainFigure } from "@/components/three/floating-mountain-figure";
-import { FluxFieldFigure } from "@/components/three/flux-field-figure";
 import { ChapterHero } from "@/components/reading/chapter-hero";
 import { ChapterShell } from "@/components/reading/chapter-shell";
 import { ReadingProgress } from "@/components/reading/reading-progress";
 import { RelatedChapters } from "@/components/reading/related-chapters";
 import { TableOfContents } from "@/components/reading/table-of-contents";
 import { SourceList } from "@/components/sources/source-list";
+import { FloatingMountainFigure } from "@/components/three/floating-mountain-figure";
+import { FluxFieldFigure } from "@/components/three/flux-field-figure";
+import { OrbitClock } from "@/components/three/orbit-clock-figure";
 import type { ComponentType } from "react";
 
 export const pandoraMdxComponents = {
   AnatomyPlate,
+  AtmosphereComparison,
   Callout,
   CanonBadge,
   ChapterHero,
@@ -42,6 +45,7 @@ export const pandoraMdxComponents = {
   FluxFieldFigure,
   GlossaryTerm,
   OpenQuestions,
+  OrbitClock,
   Quote,
   ReadingProgress,
   RelatedChapters,

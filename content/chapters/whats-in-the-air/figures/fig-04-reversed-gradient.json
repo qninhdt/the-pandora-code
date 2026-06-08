@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-reversed-gradient",
+  "chapter_slug": "whats-in-the-air",
+  "role": "diagram",
+  "narrative_purpose": "Makes the first killer visible: with the outside air thick in carbon dioxide, the gas the body normally exhales floods backward into the blood, turning it acid.",
+  "subject": "A painterly close cross-section of a single lung air sac (alveolus) wrapped in fine blood capillaries. Instead of carbon-dioxide motes leaving the blood, dense streams of amber motes pour the wrong way - inward, from the crowded air space into the capillaries - and the blood flushes from healthy red toward an angry acidic orange where they enter.",
+  "scene": "An intimate biological micro-scene, the air space crowded and amber-heavy on one side, the capillary network on the other, the reversed inward flood the dramatic centre.",
+  "camera": "Extreme close anatomical view, shallow depth, the membrane between air and blood across the middle of the frame.",
+  "light": "Soft internal glow; the amber air space warm and oppressive, the blood lit from within, brightening to a hot acidic orange at the flood front.",
+  "palette": "Amber-heavy air space, deep red blood shifting to acidic orange, cool teal-indigo surround to keep it within the chapter's palette.",
+  "style": "Painterly speculative-anatomy plate, hand-painted, organic texture, NOT a clinical textbook diagram and NOT a 3D render.",
+  "detail_level": "Crisp on the membrane and the reversed inward flood; softer capillary network behind.",
+  "composition": "Air space upper, capillaries lower, the inward amber flood crossing the central membrane line; no drawn arrows or labels - the direction reads from the motion of the motes.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "watermark", "logos", "UI", "molecular formulae"],
+  "consistency_notes": "Amber motes are the chapter's consistent visual for carbon dioxide. Reads as a painted micro-scene, not a medical schematic.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no chemical formulae, no schematic chrome, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/whats-in-the-air/fig-00-cover.png"]
+}

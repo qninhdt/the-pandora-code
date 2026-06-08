@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-exo-pack-filter",
+  "chapter_slug": "whats-in-the-air",
+  "role": "diagram",
+  "narrative_purpose": "Reveals what the exo-pack actually does: it is a filter, not an oxygen tank - drawing in the local air, stripping the poisons, passing the good gas through to the wearer.",
+  "subject": "A painterly cutaway of an exo-pack mask and its side filter cartridge. Raw, faintly amber-and-green tinged Pandoran air is drawn in at the intake; inside the cartridge it passes through glowing stacked filter beds where dark, heavy toxic motes are caught and held back; clean cool-cyan breathable air flows up through the hose into the clear faceplate, where a calm human face breathes.",
+  "scene": "A clean, intimate technical cross-section glowing against a dark ground, the flow of air through the stages shown as luminous streams of differing colour.",
+  "camera": "Side-on cutaway view at mask scale, slightly angled to show the layered filter stages within the cartridge.",
+  "light": "Internal glow lighting each filter stage; toxic-laden air darker and warmer at the intake, purified air brighter and cooler at the outflow.",
+  "palette": "Intake air murky amber-green; trapped toxins dark; clean output air bright cyan-teal; dark surround with soft biolum accents.",
+  "style": "Painterly cutaway plate, hand-painted glowing flows, NOT a hard mechanical schematic and NOT a 3D render.",
+  "detail_level": "Crisp on the layered filter beds and the colour change of the air through the stages; softer surround.",
+  "composition": "Air entering from the lower intake, rising left-to-up through the cartridge stages, into the faceplate at upper right - a clear visual flow without any drawn arrows or labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "callout lines", "watermark", "logos", "UI", "brand markings"],
+  "consistency_notes": "Same exo-pack design as the cover (clear faceplate, side cartridge, jaw hose). The intake-air amber-green and the toxic dark motes match the chapter's carbon-dioxide and hydrogen-sulfide motifs.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no callout lines, no schematic chrome, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/whats-in-the-air/fig-00-cover.png"]
+}

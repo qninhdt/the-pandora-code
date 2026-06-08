@@ -1,0 +1,19 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "time-on-pandora",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative cover: a single image that reads as 'time on this world is told by light, not by a moving sky', making a reader want to open a chapter about the rhythm of Pandoran days and eclipses.",
+  "subject": "A vast banded gas giant hanging fixed and high in the sky, its great oval eye-storm turned toward the viewer, partly catching a thin bright rim of light along one limb. Low and off to one side, a small fierce yellow-white sun-star sits close to the planet's edge, about to slip behind it, throwing long amber shadows across the land. In the lower foreground, a dark ridge of glowing blue-green alien forest and one tiny distant slender figure standing still, looking up.",
+  "scene": "Late afternoon on an alien moon at the hour the locals call 'eclipse' - the sun about to vanish behind the giant planet. The light is going long and amber, beginning to thin toward twilight. Faint companion moons hang in the distance.",
+  "camera": "Wide cinematic establishing shot, slightly low angle looking up past the ridge so the motionless planet towers over the scene and the small sun reads as the thing that moves.",
+  "light": "Warm low amber key from the sinking sun-star raking across the ridge, cool indigo twilight gathering in the sky, bioluminescent teal-cyan glow rising from the forest below; a thin warm rim along the planet's limb.",
+  "palette": "Deep void-indigo sky, warm amber low light along the land, teal and cyan forest glow, cream-and-rust planet bands, a scarce bright gold point for the sun.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, strong atmospheric depth.",
+  "detail_level": "Crisp on the near ridge and glowing forest; the giant planet softer and atmospheric; the sun a clean bright point; distant moons dissolving into haze.",
+  "composition": "Giant planet anchored upper-left filling much of the sky, small sun near its lower-right limb on a third line, ridge and tiny figure along the lower third for scale - the eye reads the fixed planet against the about-to-set sun.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "spacecraft", "Earth trees", "clock faces", "human characters in modern clothing", "orbit lines", "arrows"],
+  "consistency_notes": "This banded gas giant (cream/rust/grey bands, one large eye-storm) is Polyphemus and must look identical wherever it appears in this chapter and consistent with the where-is-pandora chapter. Cool Pandora palette, bioluminescent key glow from below.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no clock imagery, no photographic or 3D-render look, no lens flares, no oversaturation, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

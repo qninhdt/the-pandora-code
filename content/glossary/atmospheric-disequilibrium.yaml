@@ -1,0 +1,28 @@
+id: atmospheric-disequilibrium
+label:
+  vi: Mất cân bằng khí quyển
+  en: Atmospheric disequilibrium
+definition:
+  vi: >-
+    Trạng thái khí quyển bị giữ xa khỏi thế cân bằng hóa học, chứa đồng thời những khí lẽ ra phải
+    phản ứng và triệt tiêu nhau. Một hành tinh chết để mặc khí quyển trượt xuống đáy năng lượng -
+    khô khan, trơ lì như Sao Hỏa hay Sao Kim. Một hành tinh sống thì khác hẳn - sinh vật liên tục
+    bơm ra các khí phản ứng nhanh hơn tốc độ chúng bị tiêu hủy, giữ bầu trời ở trạng thái "không
+    chịu đứng yên". Mức mất cân bằng càng lớn, dấu hiệu sự sống càng rõ. James Lovelock đề xuất
+    phép thử này từ thập niên 1960.
+  en: >-
+    The condition of an atmosphere held far from chemical equilibrium, containing at once gases
+    that should react and cancel each other out. A dead planet lets its air slide to the bottom
+    of the energy hill - dry and inert, like Mars or Venus. A living planet is different in kind -
+    organisms continually pump out reactive gases faster than they are destroyed, keeping the sky
+    refusing to settle. The greater the disequilibrium, the clearer the sign of life. James
+    Lovelock proposed this test in the 1960s.
+see_also:
+  - biosignature
+  - great-oxidation-event
+  - transmission-spectroscopy
+category: concept
+cover_prompt: >-
+  A painted scene of a planet's atmosphere where two clashing currents of glowing
+  gas - one cool teal, one warm amber - swirl together without merging, an unstable
+  restless sky, painterly and atmospheric, no text, no labels, no numbers.

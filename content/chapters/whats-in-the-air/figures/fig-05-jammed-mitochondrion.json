@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-jammed-mitochondrion",
+  "chapter_slug": "whats-in-the-air",
+  "role": "diagram",
+  "narrative_purpose": "Shows the second killer at the deepest level: hydrogen sulfide jams the final enzyme that hands electrons to oxygen, so the cell suffocates while bathed in oxygen.",
+  "subject": "A painterly close view of a mitochondrion's folded inner membrane. Along it, a glowing relay of electron carriers normally hands a bright spark down a chain toward oxygen - but at the final enzyme the chain is stalled and dark, choked by small pale sulfur-yellow molecules locked onto its iron heart. Plenty of cool oxygen motes drift nearby, unusable, just past the jammed door.",
+  "scene": "An intimate cellular micro-scene; the membrane's curves filling the frame, the once-bright relay dimming toward the blocked terminal station.",
+  "camera": "Extreme close micro view, shallow depth, following the membrane's fold across the frame to the jammed final enzyme.",
+  "light": "The working part of the chain glows cyan-teal and alive; the light fails and goes cold-dark at the blocked enzyme where the pale sulfur molecules cluster.",
+  "palette": "Cyan-teal living glow fading to cold indigo-dark at the jam, pale sickly sulfur-yellow on the blocking molecules, drifting cool oxygen motes.",
+  "style": "Painterly speculative-biology micro-plate, hand-painted, organic, NOT a clinical schematic and NOT a 3D render.",
+  "detail_level": "Crisp on the final enzyme and the pale sulfur molecules locking it; the rest of the chain softening into glow.",
+  "composition": "The electron relay sweeping in from one side along the membrane, light dying toward the jammed terminal enzyme off-centre; unusable oxygen motes hovering past it.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "watermark", "logos", "UI", "molecular formulae"],
+  "consistency_notes": "Pale sulfur-yellow is the chapter's consistent visual for hydrogen sulfide; cyan-teal is living energy. Reads as a painted micro-scene, not a biochemistry textbook figure.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no chemical formulae, no schematic chrome, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/whats-in-the-air/fig-00-cover.png"]
+}

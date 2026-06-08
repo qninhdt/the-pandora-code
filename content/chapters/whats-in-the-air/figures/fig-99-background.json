@@ -1,0 +1,20 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "whats-in-the-air",
+  "role": "hero",
+  "narrative_purpose": "The dim full-bleed atmospheric backdrop the chapter's text floats over: a dark, hazy Pandoran night thick with faintly luminous drifting spores, deep and low-contrast so overlaid text stays readable.",
+  "subject": "A vast dark expanse of heavy Pandoran night air, faint glowing spores and motes suspended and slowly drifting through it, the dim silhouettes of distant glowing forest ridges low at the bottom. The air itself feels thick and present. No bright focal subject.",
+  "scene": "A wide, deep, hazy nocturnal vista seen as if standing within the heavy air, almost everything dissolving into murk and drifting light.",
+  "camera": "Ultra-wide immersive view, low distant horizon, the heavy air filling most of the frame.",
+  "light": "Very dark and low-contrast; faint cool cyan glow from suspended spores and a dim teal haze along the far horizon; deep shadow everywhere else.",
+  "palette": "Dominant void-indigo and deep teal-indigo, scattered faint cyan spore-glow, a barely-there amber-green tint in the heavy air; overall dim.",
+  "style": "Painterly atmospheric vista, soft, dark, immersive; detail dissolving into haze.",
+  "detail_level": "Low and soft throughout - deliberately dim and hazy so long-form text can float over it and stay legible.",
+  "composition": "Low horizon of dim glowing ridges; vast hazy spore-filled air above; nothing bright competing for attention.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "bright focal subject", "high contrast", "sharp foreground detail"],
+  "consistency_notes": "Same cool Pandora biolum palette as the chapter; the faint amber-green tint in the air echoes the toxic-atmosphere motif while staying dark and low-contrast as a background layer.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no bright focal point, no high contrast, no sharp foreground, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/whats-in-the-air/fig-00-cover.png"]
+}

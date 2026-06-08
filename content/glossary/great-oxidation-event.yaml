@@ -1,0 +1,15 @@
+id: great-oxidation-event
+label:
+  vi: Sự kiện Oxy hóa Vĩ đại
+  en: The Great Oxidation Event
+definition:
+  vi: Bước ngoặt khoảng 2,4 tỉ năm trước khi vi khuẩn lam quang hợp lần đầu bơm đủ oxy tự do để biến bầu khí quyển Trái Đất từ một làn khói khử, thiếu oxy thành hỗn hợp giàu oxy phản ứng mà ta hít thở ngày nay. Oxy là chất ăn mòn dữ dội; sự hiện diện dai dẳng của nó chỉ có thể duy trì khi sự sống không ngừng tái tạo. Đây là minh chứng lịch sử cho thấy một sinh quyển có thể tái định hình toàn bộ không khí của một hành tinh - và là bối cảnh cho việc đọc oxy như một dấu ấn sinh học.
+  en: The turning point about 2.4 billion years ago when photosynthetic cyanobacteria first pumped out enough free oxygen to transform Earth's atmosphere from an oxygen-poor, reducing haze into the reactive, oxygen-rich mixture we breathe today. Oxygen is fiercely corrosive; its persistent presence can only be maintained by life constantly replenishing it. It is the historical proof that a biosphere can remake an entire planet's air - and the context for reading oxygen as a biosignature.
+see_also:
+  - biosignature
+  - atmospheric-disequilibrium
+category: concept
+cover_prompt: >-
+  A painted early-Earth seascape where mats of microbes release glowing bubbles
+  of pale gas rising through dark water into a brightening sky, a world tipping
+  from murk to light, painterly, no text, no labels, no numbers.

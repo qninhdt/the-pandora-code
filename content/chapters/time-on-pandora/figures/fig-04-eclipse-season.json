@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-eclipse-season",
+  "chapter_slug": "time-on-pandora",
+  "role": "diagram",
+  "narrative_purpose": "Shows why eclipses come in seasons rather than every day: the moon's tilted orbit rides above or below the planet's long shadow cone for much of the year, and only threads through it - giving daily eclipses - when the geometry lines up.",
+  "subject": "A view from the side showing a banded gas giant casting a long dark cone of shadow away from a distant off-frame sun. A small blue-green moon is shown on a gently tilted orbital path: at one position its path carries it clearly above the shadow cone (bathed in light), and at another the path runs straight into the dark cone (the moon eclipsed, its near face dark). The contrast between the two positions reads as 'sometimes in shadow, sometimes not'.",
+  "scene": "Deep space seen edge-on, the sun's light arriving from one side as a soft warm wash, the planet's shadow a long soft-edged cone of deeper dark stretching across the frame, faint stars behind.",
+  "camera": "Side-on view of the orbital plane so the shadow cone and the tilt of the moon's path are both legible.",
+  "light": "Warm directional sunlight from one edge lighting the planet's near hemisphere and the lit moon position; the shadow cone a long region of deep cool dark; the eclipsed moon position dim and unlit.",
+  "palette": "Void-indigo space, warm sunlit side, deep blue-black shadow cone, cream-rust planet bands, faint teal moon glow when lit.",
+  "style": "Painterly astronomical plate, soft and atmospheric, the shadow cone rendered as soft graded darkness, NOT a hard vector diagram and NOT a render.",
+  "detail_level": "Moderate: planet and two moon positions clear, shadow cone soft-edged; no hard outlines or drawn geometry.",
+  "composition": "Planet on one side with the shadow cone sweeping across the frame away from the sun; the two moon positions - one lit above the cone, one dark inside it - placed to contrast; generous dark negative space.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "drawn orbit lines", "drawn cone outlines", "grid", "watermark", "logos", "UI"],
+  "consistency_notes": "Same Polyphemus as the cover. The shadow must read as cast by the planet away from the off-frame sun. No drawn lines, arrows or geometry - soft painted light and shadow only. The same moon appears twice (lit and eclipsed), not two different moons.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no drawn orbit or cone lines, no grid, no diagram chrome, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"]
+}

@@ -1,0 +1,197 @@
+<Figure
+  src="/images/chapters/whats-in-the-air/fig-01-the-twenty-seconds.png"
+  alt="A human in a torn jacket on the Pandoran forest floor, mask knocked aside, mouth open in a gasp as bioluminescent spores drift through the blue dark around them"
+  figNo="01"
+  caption="The mask is off, and the clock has started. Twenty seconds to unconsciousness, four minutes to the point of no return — in an air that, by the only number most people remember, has more than enough oxygen to live on."
+  tier="canon"
+/>
+
+There is a number every recruit shipping out to Pandora is made to memorise, and it is not a reassuring one. Lose your mask in the open air and you have about twenty seconds before you black out, and a little under four minutes before the damage is past undoing. The films stage it more than once — a cracked faceplate, a hand clawing at a strap, a body going slack on the forest floor while the spores drift on, indifferent — and the staging is honest. That is roughly how fast it would go.
+
+So the obvious story writes itself: Pandora's air has no oxygen, and a human starves for it the way a climber starves near the summit of Everest. Obvious, tidy, and wrong. The air on Pandora has *more* oxygen than the air you are breathing right now. The thing that kills you in twenty seconds is not an absence. It is a presence — several of them — and untangling exactly what they are turns out to teach you something a wiki never will: not just why this particular air is poison, but how the chemistry of *any* world's air can betray, to a telescope four light-years off, whether anything is alive down there.
+
+Let me start with the part we are not free to invent, which is the air itself.
+
+## What's actually in it
+
+The official accounting — the corporate survival manuals, the RDA science division's own figures — describes a thick, crowded, multi-gas atmosphere, and the proportions are strange in a specific way. Set them beside Earth's and the surprises sort themselves into two kinds.
+
+Earth's air is mostly nitrogen, a little over three-quarters of it, with oxygen making up almost all the rest — about a fifth — and everything else, carbon dioxide included, present only in traces. Carbon dioxide on Earth is a *rounding error*: about four hundredths of one percent. Pandora rearranges this almost gas for gas. Nitrogen drops to roughly half. Oxygen, far from being scarce, sits somewhere between a fifth and a quarter — as much as Earth has, or a little more. Then come the strangers. Carbon dioxide is not a trace gas on Pandora; it is a major constituent, sixteen to eighteen percent of the air, hundreds of times Earth's share. There is a startling slug of xenon — a heavy, inert noble gas that on Earth exists only in vanishing whiffs — at something like five percent. And threaded through all of it, in concentrations the careful sources are at pains to keep small, is hydrogen sulfide, the rotten-egg gas, spewed without pause by a moon that is volcanically far livelier than ours.
+
+<DataComparison
+  locale="en"
+  stats={[
+    { label: "Oxygen — Pandora vs Earth", value: "~21–25%", vs: "21%", tone: "teal" },
+    { label: "Carbon dioxide — Pandora vs Earth", value: "16–18%", vs: "0.04%", tone: "amber" },
+    { label: "Xenon — Pandora vs Earth", value: "~5%", vs: "~0%", tone: "cyan" },
+    { label: "Hydrogen sulfide — Pandora", value: "well under 1%", vs: "trace", tone: "magenta" }
+  ]}
+/>
+
+Look at that oxygen figure and the puzzle sharpens to a point. Twenty-odd percent oxygen is *Earth's* number. If you handed a physiologist that single line — "the air is about a fifth oxygen" — they would tell you it is breathable. So either the survival manuals are wrong about the four minutes, or the percentage is hiding something. The percentage is hiding something. To see what, we have to stop talking about percentages altogether, because percentages are very nearly the most misleading way to describe an air there is.
+
+## Why the percentage is a lie
+
+Your lungs cannot count. They do not measure what *fraction* of the air is oxygen; they have no way to. What they respond to — the only thing they respond to — is how hard the oxygen is pushing.
+
+Air is a crowd of molecules in ceaseless motion, drumming against every surface they meet, and that drumming is pressure. In a mixture, each gas contributes its own share of the total drumming, in proportion to how much of it is present — its <GlossaryTerm slug="partial-pressure">partial pressure</GlossaryTerm>. This is just bookkeeping, first written down by John Dalton two centuries ago: the total pressure of an air is the sum of the partial pressures of the gases in it, and each gas's share is its fraction multiplied by the total. Oxygen at a fifth of an atmosphere that presses with one atmosphere of total force gives you a fifth of an atmosphere of oxygen pressure. The same fifth, in an air pressing only half as hard, gives you only a *tenth* of an atmosphere of oxygen pressure — same percentage, half the push.
+
+And the push is everything, because moving oxygen from the air into your blood is not pumping; it is leaking. Oxygen crosses from the lung into the bloodstream only because it is pressing harder on the air side than the blood side, and it slides down that pressure difference like water finding the lower of two tanks. Weaken the push and the oxygen still goes the right way, just less of it, until at some point your blood cannot fill up no matter how hard you breathe. That is what altitude does to a climber: the air on Everest is still a fifth oxygen, exactly as at sea level, but it presses so feebly that the oxygen can barely cross, and the body suffocates inside an atmosphere that is, by percentage, perfectly ordinary.
+
+<AtmosphereComparison
+  locale="en"
+  earth={{ label: "Earth — sea level", totalKpa: 101, o2Pct: 21, co2Pct: 0.04 }}
+  pandora={{ label: "Pandora — surface", totalKpa: 90, o2Pct: 23, co2Pct: 17 }}
+/>
+
+So run the real number for Pandora. The total pressure at the surface is actually a touch *lower* than Earth's sea level — the moon's gentler gravity holds the air column down less firmly. But the oxygen fraction is as high as ours or higher. Multiply it out and the oxygen pressure on Pandora lands comfortably in the range your blood is built for: a hair under Earth's value at the low end of the oxygen estimates, a shade above it at the high end. By the only measure your lungs can read, Pandora's air is not thin. It is *fine*. A human dropped onto that ridge would draw a first breath and find, for an instant, nothing wrong with the oxygen at all.
+
+Which is exactly why the exo-pack does not carry an oxygen tank, and exactly why the killing has to be something else. There is plenty to breathe. The problem is what comes in alongside it.
+
+## The first killer: drowning in a breath
+
+Here is the trap the carbon dioxide sets, and it is a beautiful, horrible piece of chemistry.
+
+Your body makes carbon dioxide constantly — it is the exhaust of burning food for energy — and getting rid of it is just as vital as taking oxygen in. You dump it the same way you take oxygen up: by leaking it down a pressure difference. Your venous blood arrives at the lungs carrying a modest pressure of carbon dioxide; the air in the lungs, freshly drawn from outside, carries almost none; so the carbon dioxide slides out of the blood into the air and you breathe it away. The entire system depends on the outside air being *nearly empty* of carbon dioxide. On Earth, at four hundredths of a percent, it effectively is.
+
+Now flood that outside air with seventeen percent carbon dioxide. The gradient does not just weaken. It *reverses*. The air in your lungs is now pressing carbon dioxide harder than your blood is, and so carbon dioxide does the unthinkable: it leaks the wrong way, *into* you, faster than your body has ever had to deal with. This is <GlossaryTerm slug="hypercapnia">hypercapnia</GlossaryTerm>, carbon dioxide overload, and its consequences cascade within a breath or two.
+
+<Figure
+  src="/images/chapters/whats-in-the-air/fig-04-reversed-gradient.png"
+  alt="A painted cross-section of a lung air sac with arrows of carbon-dioxide molecules pouring inward into the blood instead of out, the blood flushing acidic red-orange"
+  figNo="04"
+  caption="The gradient runs backward. With the outside air seventeen percent carbon dioxide, the gas that your body has spent your whole life exhaling now floods inward across the lung membrane — and turns the blood acid."
+  tier="real_science"
+/>
+
+The flood is dangerous because carbon dioxide is not inert in the blood; it is an acid waiting to happen. Dissolved in water it becomes carbonic acid, which immediately sheds hydrogen ions, and a surge of hydrogen ions is precisely the definition of the blood turning acid. The body holds its acidity inside an almost absurdly narrow window — stray a few tenths of a unit and enzymes misfold, nerves misfire, the heart loses its rhythm. A lungful of Pandoran air drives the blood out of that window in seconds, into acute acidosis. And here the trap snaps fully shut: the part of your brainstem that senses rising carbon dioxide responds by screaming at you to breathe *harder* — the same alarm that makes holding your breath unbearable. So the dying human, awash in carbon dioxide, gulps the poisoned air faster and faster, each breath making it worse, in a panic that is the body's own safety reflex turned into the instrument of its death. Narcosis, seizure, and the slack collapse follow. That is most of your twenty seconds, spent right there.
+
+<WhatThisMeans title="The diver's empty scrubber">
+This exact failure kills divers, far from any alien moon. A closed-circuit rebreather recycles a diver's breath, topping up the oxygen and chemically scrubbing the carbon dioxide back out. Let the scrubber chemical exhaust itself and the loop keeps delivering perfect, abundant oxygen — while the diver's own exhaled carbon dioxide climbs and climbs in the circuit. They do not feel starved of air; they feel a mounting, clawing panic, then confusion, then nothing. They drown in their own breath in a loop still full of oxygen. A human on Pandora is in the same predicament, except the whole moon is the broken loop, and there is no surfacing from it.
+</WhatThisMeans>
+
+So the first killer is not the absence of a good gas but the overwhelming presence of a normal one, in a quantity that turns your own respiratory wiring against you. The carbon dioxide alone would do the job. But Pandora's air keeps a second knife, and this one does not bother with your lungs at all.
+
+## The second killer: the cell that cannot breathe
+
+Hydrogen sulfide works at a depth the carbon dioxide never reaches. To see how, you have to follow the oxygen past the bloodstream, all the way to where it is actually *used*.
+
+The reason your body wants oxygen at all is to run a microscopic relay at the very end of how you extract energy from food. Deep inside each cell, in the little power plants called mitochondria, electrons are passed down a chain of molecules like a bucket brigade, and at the final station an enzyme hands those electrons to oxygen, which accepts them and becomes water. That final hand-off is the whole point of breathing. Stop it, and the entire energy economy of the cell seizes within moments — not for lack of oxygen, which is right there, but because the door it is supposed to walk through has been jammed.
+
+<GlossaryTerm slug="histotoxic-hypoxia">Hydrogen sulfide jams that door.</GlossaryTerm> It binds tightly to the iron at the heart of that last enzyme — the same enzyme, the same vulnerable metal site, that cyanide attacks, and by very nearly the same mechanism. With the final station blocked, the bucket brigade backs up and halts, the cell can no longer turn oxygen into energy, and it suffocates while bathed in all the oxygen it could want. Physiologists call this histotoxic hypoxia: *tissue-poisoned* oxygen starvation, the cells drowning at a fully stocked well.
+
+<Figure
+  src="/images/chapters/whats-in-the-air/fig-05-jammed-mitochondrion.png"
+  alt="A painted close view of a mitochondrion's inner membrane with the final enzyme of the electron chain clogged by small sulfur molecules, the electron brigade stalled and dark"
+  figNo="05"
+  caption="The last door in the chain, jammed. Hydrogen sulfide locks onto the iron of the enzyme that normally hands electrons to oxygen — so the cell cannot use the oxygen flooding past it. The same trick cyanide plays."
+  tier="real_science"
+/>
+
+What makes it ghastly is the speed and the silence. At the faint concentrations where it first becomes noticeable, hydrogen sulfide announces itself as rotten eggs — an evolved alarm we share with most animals. But raise the dose and it does something cruel: it paralyses the smell receptors themselves within minutes, so the warning *switches off* precisely as the danger climbs. And at high concentrations it skips the slow build entirely and triggers what the safety literature flatly calls "knockdown" — collapse and arrest within a breath or two, no warning, no smell, no time. Even held to "well under one percent," as the careful canon insists, the hydrogen sulfide in Pandoran air is enough to be doing real damage in the same handful of seconds the carbon dioxide is working in. The two killers run in parallel, by completely different routes, and either one alone is fatal.
+
+<Comparison
+  left={{
+    title: "Carbon dioxide — the flood",
+    children: <>Pours backward into the blood, turns it acid, and triggers a breathing panic that makes the victim gulp more poison. A whole-body chemistry failure, fastest of the two to fell you.</>
+  }}
+  right={{
+    title: "Hydrogen sulfide — the jam",
+    children: <>Slips into the cells and locks the final enzyme of energy production, so oxygen can't be used at all. Silent — it kills the sense of smell as the dose rises — and lethal in a breath or two.</>
+  }}
+/>
+
+Notice what neither killer is. Neither is suffocation in the ordinary sense — neither is the air being *short* of oxygen. You could fill a room with pure nitrogen and a person would pass out from simple lack of oxygen, gently and without alarm; that is the displacement that kills in grain silos and faulty mines. Pandora does nothing so plain. Its oxygen is abundant and its push is ample. The moon kills you with the company the oxygen keeps — and that single fact, that the threat is *chemical* rather than a shortage, is the whole reason the thing strapped to a human's face on Pandora looks the way it does.
+
+## What the mask actually buys you
+
+If the problem were too little oxygen, a human on Pandora would need what an astronaut needs: a sealed supply of breathing gas hauled along, a tank. But the problem is not too little of a good thing; it is too much of several bad things mixed into an otherwise serviceable air. So the exo-pack is not a tank. It is a *filter* — a doorman, not a delivery van.
+
+<Figure
+  src="/images/chapters/whats-in-the-air/fig-03-exo-pack-filter.png"
+  alt="A painted cutaway of an exo-pack mask: raw Pandoran air drawn in through a chest filter, scrubbing stages stripping out toxic gases, clean breathable air flowing up to the clear faceplate"
+  figNo="03"
+  caption="Not a tank — a gatekeeper. The exo-pack draws in the local air, strips the carbon dioxide and hydrogen sulfide out of it, and passes the oxygen, nitrogen, and inert xenon straight through. The breathable gas was there all along; the mask just removes what shouldn't be."
+  tier="canon"
+/>
+
+It draws the local air in, runs it through a stage that traps particulates and adsorbs the hydrogen sulfide, then through a scrubber that strips the carbon dioxide down to a sliver of a percent — the same chemistry, regenerable amines or hydroxides, that keeps the air clean on a submarine or a spacecraft — and delivers what is left to the wearer. And what is left is good air: a fifth-plus oxygen, mostly nitrogen, a little harmless xenon, at a pressure your blood is happy with. The exo-pack does not give you oxygen. It takes the poison out of an air that already had the oxygen. That design — light, no tanks, just filters you wash and reuse — is the clearest possible statement of what is really wrong with Pandora's air. You don't bring a delivery van to a stadium that's already packed; you post a doorman to keep the troublemakers out.
+
+There is a second oddity in that air worth a moment, because it shows up the instant you move. Pandora's air is *denser* than Earth's even though its pressure is lower — and the culprit is that five percent of xenon, a gas so heavy each breath of the mixture weighs noticeably more than ours. Dense air is thick to move through; humans on the surface describe a faint, constant resistance, like wading. But what is a nuisance to a person is a gift to everything with wings: denser air pushes back harder on a wingbeat, which is part of why creatures the size of the great banshees can get off the ground on Pandora at all. The same heaviness even drags the pitch of voices down. We will come back to the flyers in a later chapter; for now it is enough to notice that the air's *weight* and the air's *poison* come from the same crowded, strange chemistry — and that chemistry is about to pay off in a completely unexpected place.
+
+Because everything so far has been about what the air does to a body standing in it. The deeper question — the one that turns this from a survival briefing into something worth carrying off the page — is what the air would say to someone who never landed at all. Someone reading it from across four light-years of dark.
+
+## The same air, read from space
+
+Step back from the ridge, all the way back, until Pandora is a point of light beside a brighter point, and ask a different question. Forget breathing it. What does the mere *recipe* of this air tell you?
+
+It tells you, loudly, that the moon is alive — and it tells you that before you have seen a single tree, a single beast, a single glowing frond. This is the real prize of the chapter, and it rests on one quietly profound idea: that a planet's atmosphere, left to itself, settles into chemical boredom, and only life keeps it interesting.
+
+Here is what "left to itself" means. Gases react with each other and with rock until they reach the bottom of the energy hill — the stable, spent, used-up state chemists call equilibrium. A dead world drifts there and stays. Mars and Venus are both essentially at that bottom: their air is overwhelmingly carbon dioxide, the fully burnt-out end state of carbon, with no appreciable quantity of anything that would react with it, because anything reactive reacted long ago and is gone. That is what a planet's air looks like with nobody home. Quiet. Finished.
+
+Now look at what Pandora is holding all at once: abundant free oxygen, *and* methane, *and* hydrogen sulfide. To a chemist that combination is alarming, because those gases are mortal enemies. Oxygen is voracious; it attacks methane and hydrogen sulfide on sight, especially under a star's ultraviolet light, and burns them away. Left alone, the hydrogen sulfide would be gone in a day, the methane in a decade or so, the oxygen slowly swallowed into the rocks — and the air would slide down to the same dead, equilibrium hush as Mars. These gases *cannot* coexist in a stable atmosphere. And yet on Pandora they do, in quantity, year after year.
+
+<GlossaryTerm slug="atmospheric-disequilibrium">There is only one way to keep mortal enemies side by side indefinitely: something has to be making fresh supplies of both, continuously, as fast as they destroy each other.</GlossaryTerm> A planet held this far from chemical equilibrium is a planet with an engine running — and the only engine we know that can do this, at planetary scale, for ages, is *life*. Life eats sunlight and chemical gradients and excretes reactive gases as waste, faster than chemistry can clean them up. The persistent, simultaneous presence of gases that should have annihilated each other is, therefore, a <GlossaryTerm slug="biosignature">biosignature</GlossaryTerm> — and it is the strongest kind we know.
+
+<Figure
+  src="/images/chapters/whats-in-the-air/fig-06-bonfire-from-space.png"
+  alt="A painted view from deep space of Pandora as a small glowing crescent beside its gas giant, a thin band of starlight passing through the moon's atmosphere and fanning into a faint spectrum"
+  figNo="06"
+  caption="Read the thin ring of air against the starlight and the recipe spills out: oxygen and methane and hydrogen sulfide together, gases that should have destroyed one another long ago. Seeing them coexist is like spotting a bonfire that has burned for decades — someone, clearly, keeps feeding it."
+  tier="real_science"
+/>
+
+The idea is older than it sounds. In the 1960s, casting about for how to tell whether Mars was alive without landing on it, James Lovelock proposed exactly this test: don't look for organisms, look at the *air*, and ask whether it is held away from equilibrium. Mars failed — its air was at the dead bottom, and Lovelock predicted, correctly, that the landers would find no life. Earth passes spectacularly. Our own atmosphere is a chemical impossibility maintained by biology: a fifth of it is reactive oxygen, kept aloft only because photosynthesis floods the air with it faster than it can rust the world, alongside the methane that life also pumps out — two gases that should consume one another, coexisting only because the whole biosphere refuses to let them rest. That arrangement switched on, in Earth's deep past, with the <GlossaryTerm slug="great-oxidation-event">Great Oxidation Event</GlossaryTerm>, when the first oxygen-makers transformed the air from a dead, reducing haze into the reactive, disequilibrium mixture we now breathe and depend on.
+
+<WhatThisMeans title="The takeaway you can carry to any star">
+This is the transferable thing — the part that outlives Pandora entirely. We cannot fly to the planets we most want to study; the nearest is years away at the speed of nothing we can build. But we can read their air from here. When a planet crosses in front of its star, a sliver of starlight strains through the thin shell of its atmosphere on the way to us, and each gas stamps that light with a fingerprint at wavelengths only it absorbs. Split the light, read the fingerprints, and you have the planet's atmospheric recipe without leaving home. This is <GlossaryTerm slug="transmission-spectroscopy">transmission spectroscopy</GlossaryTerm>, and the James Webb Space Telescope is doing it now — reading carbon dioxide, water, and methane in the air of worlds we will never visit. The search for life beyond Earth is, in large part, the search for an air that refuses to sit still.
+</WhatThisMeans>
+
+There is a catch, and a good scientist reaches for it immediately, because it is the difference between a discovery and an embarrassment. Oxygen by itself is *not* proof of life. A dead world can fake it. Strong ultraviolet light can split carbon dioxide and pile up oxygen with no biology involved; a planet that lost an ocean to space can be left with a false glut of abiotic oxygen. So the careful hunter never trusts a single gas. They look for the *combination* that no dead process can sustain — oxygen together with methane, the reactive pair held in defiance of their own chemistry — and they look for the tell-tales of the fakes, like a flood of carbon monoxide that would betray lifeless carbon-dioxide splitting. It is a chemistry of guilt by association, of catching gases that should not be seen together. By that standard Pandora is not a subtle case. Oxygen and methane and hydrogen sulfide, all at once, all abundant, under a bright star's hard light — that is not a faint signal anyone has to squint at. It is a shout.
+
+## Where the story cheats — and where it doesn't
+
+A specimen is only honest if you read the parts that don't quite close, and the air gives us a few.
+
+The first is just slippage in the numbers. The oxygen figure wanders between sources, anywhere from about a fifth to a quarter, which is enough to swing a human's oxygen pressure from mildly low to mildly high — not enough to change the verdict, but a reminder that the canon was assembled by storytellers, not surveyors. The hydrogen sulfide is worse, and more interesting. Careful official material says "far less than one percent"; a lot of repeated fan lore has hardened that into a flat "two percent." Those are not close. Two percent hydrogen sulfide is not a four-minute hazard — it is an instant, first-breath flatline, with no twenty seconds and no clawing at a strap. The only version of the number that is consistent with the rest of the story Pandora tells about itself is the careful one: dangerous, fast, but survivable for the brief, frantic window the films actually depict. When canon and the crowd disagree, here the crowd is simply wrong, and you can prove it with a stopwatch.
+
+<Callout variant="warning" title="The hole canon never fills">
+The deepest gap is the one the biosignature argument hands us. If oxygen, methane, and hydrogen sulfide really do destroy one another in days to decades, *something* on Pandora must be replacing all three, continuously, at a furious rate, or the air would have gone dead long ago. Canon never says what runs that planetary-scale engine — it simply hands us the impossible air and moves on. The honest answer the science forces is that Pandora must have a biosphere knitted together far more tightly than scattered plants and animals could manage: a global, coordinated chemical metabolism. That is exactly the role the films will later give to Eywa — and it means the strange air of this chapter is quietly the first hard evidence for the planet-mind of a much later one.
+</Callout>
+
+Two further claims sit out past the edge of what the science will sign, and they belong in the speculation column, flagged plainly. The most recent films introduce a moment where a human is saved from the air permanently — a living fungal filament, placed by the forest itself, grows into his lungs and takes over the filtering job the exo-pack was doing, letting him breathe Pandora raw. As biology it is wishful: a graft that selectively strips carbon dioxide and hydrogen sulfide while passing oxygen, grown to order in minutes, is far past anything tissue can do. As *story* it is the same idea as the Eywa engine, shrunk to one chest — the network keeping a chemistry balanced that no lone body could. Read it as myth, not mechanism. And older companion lore floats a special Na'vi organ — a "wichow" — that supposedly conjures extra oxygen out of carbon dioxide; that one the science rejects outright, because carbon dioxide is the burnt-out, lowest-energy end of carbon, and pulling oxygen back off it costs more energy than any animal could spare. The likelier truth is duller and sturdier: the Na'vi are simply built for this air, with blood run deliberately acidic and lungs unbothered by gases that would kill us — so well-tuned to high carbon dioxide that *our* clean air, starved of it, would tip their chemistry the other way and make them ill.
+
+<ConfidenceMeter
+  classification={{ canon_pct: 24, inference_pct: 12, speculation_pct: 6, real_science_pct: 58 }}
+  locale="en"
+/>
+
+<OpenQuestions
+  title="What stays open"
+  items={[
+    {
+      question: "How much oxygen is really in the air?",
+      answer: "Canon won't commit — sources range from about 21% to 25%. At Pandora's slightly-below-Earth pressure that swings a human's oxygen pressure from a touch low to a touch high, but never near suffocation. The verdict (breathable oxygen, lethal company) holds across the whole range."
+    },
+    {
+      question: "Is the hydrogen sulfide level survivable or instantly fatal?",
+      answer: "Only the careful canon figure — 'far less than 1%' — fits the depicted four-minute window. The widely repeated 'two percent' would mean death on the first breath, with no time for the rescues the films stage. The low figure is the self-consistent one."
+    },
+    {
+      question: "What keeps the air out of chemical equilibrium?",
+      answer: "Unanswered in canon, and unavoidable in the science. Oxygen, methane, and hydrogen sulfide annihilate one another in days to decades; their coexistence demands a continuous, planet-scale biological source. The air is, in effect, early evidence for a globally integrated biosphere — the role later given to Eywa."
+    },
+    {
+      question: "Could a human ever be adapted to breathe it unaided?",
+      answer: "Not by any chemistry we understand. The recent 'living filter' grown into a human's lungs, and the old 'wichow' organ said to make oxygen from carbon dioxide, are both past what biology allows. Treat them as myth. The Na'vi manage it the boring way: they evolved for this air, acidic blood and all."
+    }
+  ]}
+/>
+
+## Back to the mask
+
+So go back to the forest floor, and the slack body, and the clock running down from twenty.
+
+What is killing that person is not the thinness of an alien sky. It is an air with oxygen to spare, carrying two poisons that work faster than the oxygen can save them — a carbon dioxide flood that turns the blood to acid and weaponises the urge to breathe, and a whisper of hydrogen sulfide that jams the very machinery the oxygen was meant to feed. The mask that would save them carries no oxygen at all. It only takes the poison out, because the good air was always there.
+
+And that is the strange unity of this place. The same surplus oxygen that keeps a masked human alive, sitting beside the methane and the sulfide it should have destroyed, is the exact chemical impossibility that — read from four light-years off, in a thread of starlight bent through the edge of the air — would tell an astronomer, before any ship was ever launched, that the world below was alive. The air that kills you on the ground is the air that announces the moon from space. It is the same recipe, read at two distances. Up close it is a death sentence. Far away, it is a signature — and there is no mistaking whose.

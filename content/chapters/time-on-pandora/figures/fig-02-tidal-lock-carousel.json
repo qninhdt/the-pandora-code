@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-tidal-lock-carousel",
+  "chapter_slug": "time-on-pandora",
+  "role": "diagram",
+  "narrative_purpose": "Shows why a tidally locked moon still has a day: the moon keeps one face toward the planet at the centre, yet any spot on its surface still wheels through sunlight and shadow over one orbit - day equals one orbit. Also serves as the 2D poster behind the interactive OrbitClock.",
+  "subject": "A view from above the orbital plane: a banded gas giant at the centre, and a small blue-green moon shown at four points around a gentle circular path around it. At every point the same patch of the moon (a faint surface marking) faces the planet, while the moon's lit half always faces the same distant direction - the sun - so the lit and dark halves rotate relative to the moon's locked face as it travels. A soft beam of sunlight comes from one edge of the frame.",
+  "scene": "Quiet deep space seen from slightly above, dusted with faint stars, a soft circular orbit path implied by the moon's repeated positions rather than a hard drawn line. One side of everything is lit by a distant sun off-frame.",
+  "camera": "High three-quarters view looking down onto the orbital plane so the circular arrangement of the four moon positions reads clearly.",
+  "light": "A single warm directional key from one edge (the off-frame sun) lighting the same side of the planet and each moon position; cool indigo shadow elsewhere; faint teal glow on the moons' lit faces.",
+  "palette": "Void-indigo space, warm sunlit rims, cream-rust planet bands, teal-cyan moon glow.",
+  "style": "Painterly astronomical plate, soft and atmospheric - reads as a painted scene of one moon at four moments, NOT a hard vector schematic and NOT a render.",
+  "detail_level": "Moderate: clear shapes and the repeated-moon arrangement, painterly texture, soft edges, no hard outlines.",
+  "composition": "Planet centred, four moon positions evenly around it like points on a clock face, the sunlit side consistent across all of them, generous dark negative space; the same surface marking faces inward at every position.",
+  "exclude": ["text", "letters", "numbers", "labels", "drawn orbit lines", "arrows", "grid", "ruler marks", "watermark", "logos", "UI", "clock hands"],
+  "consistency_notes": "Same banded gas giant Polyphemus as the cover. No drawn orbit lines, arrows or labels - the repeated moon positions and consistent lit side carry the idea. The moon's inward-facing marking must be the same patch at every position.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no orbit lines, no arrows, no grid, no diagram chrome, no clock hands, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"]
+}

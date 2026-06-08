@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-bonfire-from-space",
+  "chapter_slug": "whats-in-the-air",
+  "role": "diagram",
+  "narrative_purpose": "Lands the chapter's real payload: the same air, read from space, is a biosignature - starlight strained through Pandora's atmosphere fans into a spectrum carrying gases that should have destroyed each other, like a bonfire that has burned for decades.",
+  "subject": "A view from deep space of Pandora as a small glowing crescent moon beside the dim curved limb of its banded gas giant. A thin band of starlight grazes the edge of the moon's atmosphere and bends through it, fanning out beyond into a soft spectrum of colour - cool teal and warm amber bands woven together, a few of them glowing as if lit from a fire that refuses to go out.",
+  "scene": "The silent dark of space, dusted with faint stars; the gas giant a dim presence at the edge, the crescent moon the bright jewel, the spectral fan spreading into the void.",
+  "camera": "Wide, flat, almost diagrammatic deep-space view, the moon and the bending starlight reading left to right across the frame.",
+  "light": "A bright off-frame star as key, grazing the moon's atmospheric rim; the spectrum self-luminous; everything else deep shadow.",
+  "palette": "Void-indigo space, cyan-teal moon glow, cream-rust on the dim giant's limb, a woven teal-and-amber spectral fan with a few embers of warm light.",
+  "style": "Painterly naturalist astronomical plate, soft and atmospheric, NOT a hard vector diagram and NOT a 3D render.",
+  "detail_level": "Moderate: clear crescent and the bending, fanning starlight; painterly soft spectrum; generous dark negative space.",
+  "composition": "Dim gas-giant limb anchored at left, glowing crescent moon centre-left, the starlight bending through its atmosphere and the spectral fan opening across the right; dark negative space throughout.",
+  "exclude": ["text", "letters", "numbers", "labels", "axis", "arrows", "watermark", "logos", "UI", "grid", "wavelength markings"],
+  "consistency_notes": "Same banded gas giant Polyphemus as elsewhere in the book, here dim at the edge. The teal-and-amber spectrum ties the moon's oxygen-and-carbon-dioxide air to the biosignature idea. No drawn axes or labels - a painted scene, not a chart.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no axes, no arrows, no grid, no diagram chrome, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/whats-in-the-air/fig-00-cover.png"]
+}

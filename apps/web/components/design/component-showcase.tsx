@@ -1,11 +1,8 @@
 "use client";
 
 import { AnatomyPlate } from "@/components/content/anatomy-plate";
-import {
-  Callout,
-  ScientificNote,
-  SideNote,
-} from "@/components/content/callout";
+import { AtmosphereComparison } from "@/components/content/atmosphere-comparison";
+import { Callout, ScientificNote, SideNote } from "@/components/content/callout";
 import { Chart } from "@/components/content/chart";
 import { Comparison } from "@/components/content/comparison";
 import { ConfidenceMeter } from "@/components/content/confidence-meter";
@@ -22,6 +19,8 @@ import { FieldViz } from "@/components/three/field-viz";
 import { FieldVizFallback } from "@/components/three/field-viz-fallback";
 import { FloatingMountainFallback } from "@/components/three/floating-mountain-fallback";
 import { FloatingMountainScene } from "@/components/three/floating-mountain-scene";
+import { OrbitClockFallback } from "@/components/three/orbit-clock-fallback";
+import { OrbitClockScene } from "@/components/three/orbit-clock-scene";
 import { Scene3D } from "@/components/three/scene-3d";
 
 const POSTER = "/images/atmosphere/pandora-establishing.png";
@@ -51,9 +50,7 @@ function Block({
 }) {
   return (
     <div className="space-y-2">
-      <p className="font-sans text-[0.6rem] uppercase tracking-[0.2em] text-subtle">
-        {label}
-      </p>
+      <p className="font-sans text-[0.6rem] uppercase tracking-[0.2em] text-subtle">{label}</p>
       {children}
     </div>
   );
@@ -83,6 +80,16 @@ export function ComponentShowcase() {
         </Scene3D>
       </Block>
 
+      <Block label="Scene3D - OrbitClock (tidal-lock day = orbit)">
+        <Scene3D
+          className="relative h-72 overflow-hidden rounded-2xl border border-border"
+          fallback={<OrbitClockFallback />}
+          camera={{ position: [0, 3.4, 6.2], fov: 50 }}
+        >
+          <OrbitClockScene />
+        </Scene3D>
+      </Block>
+
       <Block label="Chart - line (Recharts, themed)">
         <Chart
           kind="line"
@@ -94,12 +101,7 @@ export function ComponentShowcase() {
       </Block>
 
       <Block label="Chart - bar">
-        <Chart
-          kind="bar"
-          data={resistanceData}
-          xKey="t"
-          series={[{ key: "r", tone: "teal" }]}
-        />
+        <Chart kind="bar" data={resistanceData} xKey="t" series={[{ key: "r", tone: "teal" }]} />
       </Block>
 
       <Block label="Figure (bilingual caption)">
@@ -175,6 +177,14 @@ export function ComponentShowcase() {
         />
       </Block>
 
+      <Block label="AtmosphereComparison (partial pressure)">
+        <AtmosphereComparison
+          locale="vi"
+          earth={{ label: "Trái Đất — mực biển", totalKpa: 101, o2Pct: 21, co2Pct: 0.04 }}
+          pandora={{ label: "Pandora — bề mặt", totalKpa: 90, o2Pct: 23, co2Pct: 17 }}
+        />
+      </Block>
+
       <Block label="ConfidenceMeter">
         <ConfidenceMeter classification={classification} locale="vi" />
       </Block>
@@ -196,9 +206,7 @@ export function ComponentShowcase() {
         <Callout variant="note" title="Ghi chú">
           Một khối nhấn mạnh nội tuyến.
         </Callout>
-        <ScientificNote title="Khoa học">
-          Hiệu ứng nghịch từ hoàn hảo.
-        </ScientificNote>
+        <ScientificNote title="Khoa học">Hiệu ứng nghịch từ hoàn hảo.</ScientificNote>
         <Callout variant="insight" title="Insight">
           Mồi nhử Pandora dẫn tới bài học thật.
         </Callout>
@@ -207,15 +215,12 @@ export function ComponentShowcase() {
 
       <Block label="Quote">
         <Quote cite="Bardabez">
-          Pandora không phải đích đến - nó là tấm gương soi chính khoa học của
-          ta.
+          Pandora không phải đích đến - nó là tấm gương soi chính khoa học của ta.
         </Quote>
       </Block>
 
       <Block label="WhatThisMeans">
-        <WhatThisMeans>
-          Núi bay là cách kể trực quan về siêu dẫn và bẫy từ thông.
-        </WhatThisMeans>
+        <WhatThisMeans>Núi bay là cách kể trực quan về siêu dẫn và bẫy từ thông.</WhatThisMeans>
       </Block>
 
       <Block label="ScrollSequence">

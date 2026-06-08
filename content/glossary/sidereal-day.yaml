@@ -1,0 +1,17 @@
+id: sidereal-day
+label:
+  vi: Ngày sao
+  en: Sidereal day
+definition:
+  vi: Thời gian một thiên thể quay đúng 360° so với các ngôi sao xa cố định, tức một vòng tự quay thực sự trong không gian. Nó hơi khác với ngày mặt trời (ngày ta sống theo) vì trong lúc tự quay, thiên thể cũng đã nhích đi một đoạn trên quỹ đạo. Với một mặt trăng bị khóa thủy triều, ngày sao bằng đúng chu kỳ quỹ đạo quanh hành tinh chủ.
+  en: The time a body takes to spin a full 360° relative to the distant fixed stars - one true rotation in space. It differs slightly from the solar day (the one we live by) because, while spinning, the body also moves along its orbit. For a tidally locked moon, the sidereal day equals its orbital period around its host planet.
+see_also:
+  - synodic-day
+  - synchronous-rotation
+  - tidal-locking
+category: concept
+cover_prompt: >-
+  A painted scene of an alien moon turning beneath a field of distant fixed
+  stars, one surface marking returning to point at the same far star after a
+  full turn. Deep void-indigo space, soft star dusting, painterly, no text, no
+  labels, no numbers.

@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-sidereal-synodic",
+  "chapter_slug": "time-on-pandora",
+  "role": "diagram",
+  "narrative_purpose": "Shows why the day measured against the stars (sidereal) is slightly shorter than the day you live by against the sun (synodic): after one full turn relative to the far stars, the whole system has crept along its orbit, so the moon must turn a touch more to bring the sun back overhead.",
+  "subject": "A gentle two-moment painted scene: the banded gas giant with its small blue-green moon, the whole pair shown at two slightly separated positions along a soft arc around a distant warm sun off toward one edge. In the first position a small surface marking on the moon points straight out at the far stars; in the second, after the system has crept along its arc, that same marking must rotate a little further to point back at the sun.",
+  "scene": "Deep space from slightly above, a distant warm sun glow toward one edge, faint fixed stars far behind, the planet-moon pair shown at two adjacent positions to imply the small extra turn.",
+  "camera": "High three-quarters view onto the orbital plane, the two positions side by side so the small extra rotation reads.",
+  "light": "Warm directional sun glow from one edge; cool indigo space; faint teal on the moon's lit face; the far stars a faint cool dusting.",
+  "palette": "Void-indigo space, warm sun glow, cream-rust planet bands, teal-cyan moon glow, pale star dusting.",
+  "style": "Painterly astronomical plate, soft and atmospheric, NOT a hard vector schematic and NOT a render.",
+  "detail_level": "Moderate: two clear planet-moon positions with a subtly different moon orientation; soft edges; no hard outlines or drawn geometry.",
+  "composition": "Sun glow toward one edge, the two planet-moon positions along a soft arc across the frame, the moon's surface marking subtly re-aimed between them; generous dark space.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "drawn orbit lines", "grid", "ruler marks", "watermark", "logos", "UI", "clock faces"],
+  "consistency_notes": "Same Polyphemus as the cover. The two positions are the same planet-moon pair at two moments, not different objects. The teaching beat is the moon's slightly re-aimed surface marking - keep it subtle and painterly, with no drawn lines or arrows.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no drawn orbit lines, no grid, no diagram chrome, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"]
+}
