@@ -1,0 +1,92 @@
+{
+  "site": {
+    "name": "The Pandora Code",
+    "tagline": "Pandora, decoded through science and storytelling."
+  },
+  "nav": {
+    "home": "Home",
+    "chapters": "Chapters",
+    "glossary": "Glossary",
+    "authors": "Author",
+    "timeline": "Timeline",
+    "topics": "Topics",
+    "parts": "Parts"
+  },
+  "common": {
+    "readingTime": "{minutes} min read",
+    "openInNewTab": "Open in new tab",
+    "assetPending": "Asset pending",
+    "viewPrompt": "View image prompt",
+    "noResults": "Nothing here yet.",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "loading": "Loading...",
+    "skipToContent": "Skip to main content"
+  },
+  "home": {
+    "title": "The Pandora Code",
+    "intro": "An interactive book decoding the world of Pandora through biology, planetary science, Na'vi culture, human technology, and the ethics of contact.",
+    "ctaChapters": "Read chapters",
+    "featured": "Featured chapters"
+  },
+  "chapter": {
+    "tableOfContents": "Table of contents",
+    "relatedChapters": "Related chapters",
+    "sources": "Sources",
+    "whatThisMeans": "What this means",
+    "openQuestions": "Open questions",
+    "readingProgress": "Reading progress",
+    "classification": "Content classification",
+    "demoBanner": "This is a DEMO chapter — not official Pandora content."
+  },
+  "classification": {
+    "canon": "Canon",
+    "inference": "Inference",
+    "speculation": "Speculation",
+    "real_science": "Real-world science"
+  },
+  "landing": {
+    "descentKicker": "The descent",
+    "descentHeading": "Read Pandora as a specimen, not a movie",
+    "descentBody": "Each chapter takes one strange thing about Pandora as bait, then leads you to a real scientific idea — biology, planetary science, physics — woven in subtly rather than lectured.",
+    "descentNote": "Four classification tiers — Canon, Inference, Speculation, Real science — always tell you where you stand between fact and imagination.",
+    "codexKicker": "The collection",
+    "codexHeading": "The first chapters of the Pandora codex",
+    "codexEmpty": "The first specimens are being prepared. Check back soon.",
+    "coming": "Coming soon"
+  },
+  "page": {
+    "chapters": {
+      "title": "All chapters",
+      "subtitle": "The growing library of published chapters."
+    },
+    "glossary": {
+      "title": "Glossary",
+      "subtitle": "A dictionary of recurring concepts."
+    },
+    "authors": {
+      "title": "Author",
+      "subtitle": "The single voice narrating The Pandora Code."
+    },
+    "timeline": {
+      "title": "Knowledge timeline",
+      "subtitle": "Reading order across parts and chapters."
+    },
+    "parts": {
+      "title": "Parts",
+      "subtitle": "The nine Parts that organize the book."
+    },
+    "topics": {
+      "title": "Topic: {tag}",
+      "subtitle": "Chapters sharing this tag."
+    },
+    "notFound": {
+      "title": "Page not found",
+      "back": "Return home"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} The Pandora Code"
+  }
+}

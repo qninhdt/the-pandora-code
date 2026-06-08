@@ -1,0 +1,82 @@
+# Pipeline Flow — full detail
+
+The exact mechanics behind `/pandora next` and `/pandora write <slug>`. The
+SKILL.md has the summary; this is the operational reference.
+
+## Resolving "next pending"
+
+The outline is `apps/web/lib/content/outline.ts` (`OUTLINE: OutlinePart[]`,
+prologue + 9 Parts, 50 chapters, ordered). A chapter is **published** when
+`content/chapters/{slug}/meta.yaml` has `status: published` AND both `en.mdx`
+and `vi.mdx` exist. "Next pending" = walk `OUTLINE` parts in order, then chapters
+in array order, and return the first slug that is not published.
+
+To read the order without a runtime: parse `outline.ts` for the ordered `slug:`
+values (they appear top-to-bottom in book order), or run a tiny `tsx` snippet
+importing `OUTLINE`. Do not duplicate the list into a new file.
+
+## Status taxonomy (`/pandora status`)
+
+For each outline chapter, report one state:
+
+| State | Condition |
+|---|---|
+| `published` | `meta.yaml` status `published` + both mdx present |
+| `drafted` | chapter dir + `en.mdx` exist, not yet published |
+| `has-research` | `research/{slug}.md` exists, no `en.mdx` yet |
+| `pending` | nothing yet |
+
+Group the printout by Part, in book order, so it mirrors the landing map.
+
+## The automatic chain (research present)
+
+Run these in order, no prompts between them. Stop only on a hard failure
+(surface the error, do not silently continue).
+
+### 0. Chapter plan (in plan mode)
+Read `research/{slug}.md` + the chapter's outline entry (title + payload).
+Produce a short plan: section structure, the dual-payload beats (where Pandora
+hooks, where the STEM lands), which existing components to reuse, which new
+components to build, and the figure list (role + purpose each). This is the
+plan-mode artifact — reviewable before prose.
+
+### 1. Write EN — `pandora-author`
+Author `content/chapters/{slug}/en.mdx` (5–7k words) and the chapter
+`meta.yaml` if absent. `meta.yaml` fields (validated by `ChapterMeta`):
+`slug, part, order, status, title{vi,en}, hook{vi,en}, authors:[bardabez],
+reading_time_min, tags, classification{canon/inference/speculation/real_science
+_pct summing to 100}, related_chapters, glossary_terms, figures[], sources[]`.
+`part` + `order` must match the chapter's position in `outline.ts`.
+
+### 2. Figures — `pandora-art-director`
+Emit `content/chapters/{slug}/figures/fig-NN-*.json`, one per figure, each
+valid against `FigurePrompt`. Add a matching `figures[]` entry (id, role,
+`asset_status: pending`) to `meta.yaml`. Count is content-driven (many; density
+scales) — no fixed minimum.
+
+### 3. Images — `scripts/gen-images.ts`
+`pnpm gen-images --chapter {slug}`. Writes PNGs to
+`apps/web/public/images/chapters/{slug}/` and flips each figure's
+`asset_status` to `ready` in `meta.yaml`. Needs `OPENAI_API_KEY` (+ optional
+`OPENAI_BASE_URL`, `OPENAI_IMAGE_MODEL`) in `.env`. Single figure:
+`pnpm gen-images --figure fig-NN-… [--force]`.
+
+### 4. Translate — `pandora-translate`
+Author `content/chapters/{slug}/vi.mdx` from `en.mdx`: body + every figure
+caption + callouts, in one pass. VI must read as native VI (see that skill's
+naturalness checklist). Set `meta.yaml` `status: published` once VI is done and
+both mdx exist.
+
+### 5. Validate
+```
+pnpm check-glossary {slug}   # dangling glossary terms → non-zero
+pnpm validate:content        # schema + frontmatter
+pnpm build                   # fumadocs-mdx + Next build
+```
+All three green = chapter done. Print summary + `/pandora figure <id>` hint.
+
+## `/pandora write <slug>` vs `next`
+
+`write <slug>` is the same chain steps 0–5 for a named chapter, with the same
+hard-error-if-no-research guard. `next` adds the resolve-next + research-prompt
+branch in front. `figure` / `translate` run a single step in isolation.

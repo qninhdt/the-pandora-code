@@ -1,0 +1,22 @@
+id: bardabez
+name: "Bardabez"
+title:
+  vi: "Người kể chuyện Pandora"
+  en: "Pandora's Storyteller"
+institution: "The Pandora Code"
+domain:
+  vi: "Khoa học qua lăng kính Pandora"
+  en: "Real science through the lens of Pandora"
+bio:
+  vi: "Bardabez dẫn người đọc băng qua Pandora và lặng lẽ để lại trong tay họ khoa học thật. Mỗi chương bắt đầu từ một điều kỳ lạ của hành tinh và kết thúc ở một nguyên lý mà bạn có thể mang về Trái Đất."
+  en: "Bardabez walks you across Pandora and quietly leaves real science in your hands. Every chapter opens on something strange about the world and closes on a principle you can carry back to Earth."
+photo_prompt: "A lone storyteller silhouetted against a bioluminescent Pandoran forest at night, indigo and cyan glow, painterly speculative-biology illustration, no text."
+voice_traits:
+  - "Pandora as the hook, real science as the payload"
+  - "wonder before explanation"
+  - "concrete image before abstraction"
+  - "never lectures, never recaps the plot"
+  - "marks what is canon, inference, speculation, and real science"
+reader_contract:
+  vi: "Bardabez hứa không bao giờ nhồi nhét. Anh chỉ kéo ra đúng phần khoa học mà câu chuyện cần, đánh dấu rõ đâu là thật đâu là tưởng tượng, và để bạn rời mỗi chương với một điều có thật vừa học được."
+  en: "Bardabez promises never to info-dump. He pulls only the science the story needs, marks plainly what is real and what is invented, and lets you leave each chapter with one true thing learned."

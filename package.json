@@ -1,0 +1,37 @@
+{
+  "name": "pandora-code",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=9"
+  },
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "start": "pnpm --filter web start",
+    "lint": "pnpm --filter web lint",
+    "format": "pnpm --filter web format",
+    "test": "pnpm --filter web test",
+    "test:e2e": "pnpm --filter web test:e2e",
+    "test:lhci": "pnpm --filter web test:lhci",
+    "validate:content": "pnpm --filter web validate:content",
+    "gen-images": "tsx scripts/gen-images.ts",
+    "gen-anchor": "tsx scripts/gen-anchor.ts",
+    "check-glossary": "tsx scripts/check-glossary-terms.ts",
+    "typecheck:scripts": "tsc --noEmit -p scripts/tsconfig.json"
+  },
+  "dependencies": {
+    "openai": "^4.104.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22",
+    "dotenv": "^16.4.5",
+    "js-yaml": "^4.1.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5",
+    "zod": "^3.23.0"
+  },
+  "packageManager": "pnpm@11.4.0+sha512.f0febc7e37552ab485494a914241b338e0b3580b93d54ce31f00933015880863129038a1b4ae4e414a0ee63ac35bf21197e990172c4a68256450b5636310968f"
+}

@@ -1,0 +1,92 @@
+{
+  "site": {
+    "name": "The Pandora Code",
+    "tagline": "Khám phá Pandora qua lăng kính khoa học và kể chuyện."
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "chapters": "Chương",
+    "glossary": "Thuật ngữ",
+    "authors": "Tác giả",
+    "timeline": "Dòng thời gian",
+    "topics": "Chủ đề",
+    "parts": "Phần"
+  },
+  "common": {
+    "readingTime": "{minutes} phút đọc",
+    "openInNewTab": "Mở trong tab mới",
+    "assetPending": "Hình ảnh đang chuẩn bị",
+    "viewPrompt": "Xem prompt sinh ảnh",
+    "noResults": "Chưa có nội dung.",
+    "back": "Quay lại",
+    "next": "Tiếp theo",
+    "previous": "Trước đó",
+    "loading": "Đang tải...",
+    "skipToContent": "Bỏ qua đến nội dung chính"
+  },
+  "home": {
+    "title": "The Pandora Code",
+    "intro": "Một dự án đọc tương tác giải mã hành tinh Pandora qua sinh học, hành tinh học, văn hóa Na'vi, công nghệ con người và đạo đức khoa học.",
+    "ctaChapters": "Đọc chương",
+    "featured": "Chương nổi bật"
+  },
+  "chapter": {
+    "tableOfContents": "Mục lục",
+    "relatedChapters": "Chương liên quan",
+    "sources": "Nguồn",
+    "whatThisMeans": "Ý nghĩa rút ra",
+    "openQuestions": "Câu hỏi mở",
+    "readingProgress": "Tiến độ đọc",
+    "classification": "Phân loại nội dung",
+    "demoBanner": "Đây là chương DEMO — không phải nội dung Pandora chính thức."
+  },
+  "classification": {
+    "canon": "Canon",
+    "inference": "Suy luận",
+    "speculation": "Giả thuyết",
+    "real_science": "Khoa học thực tế"
+  },
+  "landing": {
+    "descentKicker": "Hành trình hạ cánh",
+    "descentHeading": "Đọc Pandora như một mẫu vật, không phải một bộ phim",
+    "descentBody": "Mỗi chương lấy một điều kỳ lạ của Pandora làm mồi nhử, rồi dẫn bạn tới một khái niệm khoa học có thật — sinh học, hành tinh học, vật lý — đan cài tinh tế chứ không giảng giải khô khan.",
+    "descentNote": "Bốn tầng phân loại — Chính truyện, Suy luận, Suy đoán, Khoa học thật — luôn cho bạn biết mình đang đứng ở đâu giữa sự thật và tưởng tượng.",
+    "codexKicker": "Bộ sưu tập",
+    "codexHeading": "Những chương đầu tiên của bộ mật mã Pandora",
+    "codexEmpty": "Các mẫu vật đầu tiên đang được chuẩn bị. Hãy quay lại sớm.",
+    "coming": "Sắp ra mắt"
+  },
+  "page": {
+    "chapters": {
+      "title": "Tất cả chương",
+      "subtitle": "Bộ sưu tập các chương đã xuất bản."
+    },
+    "glossary": {
+      "title": "Thuật ngữ",
+      "subtitle": "Từ điển khái niệm dùng trong sách."
+    },
+    "authors": {
+      "title": "Tác giả",
+      "subtitle": "Giọng kể duy nhất của The Pandora Code."
+    },
+    "timeline": {
+      "title": "Dòng thời gian tri thức",
+      "subtitle": "Trật tự đọc theo Phần và Chương."
+    },
+    "parts": {
+      "title": "Phần",
+      "subtitle": "Chín Phần tổ chức nên cuốn sách."
+    },
+    "topics": {
+      "title": "Chủ đề: {tag}",
+      "subtitle": "Các chương cùng gắn nhãn này."
+    },
+    "notFound": {
+      "title": "Không tìm thấy trang",
+      "back": "Trở về trang chủ"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} The Pandora Code"
+  }
+}

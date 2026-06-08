@@ -1,0 +1,299 @@
+@import "tailwindcss";
+
+/*
+ * The Pandora Code — dark bioluminescent design system.
+ * Dark-only (no light theme). Canonical palette mirrors content/art-direction/
+ * style-bible.md exactly so generated figures and the interface read as one
+ * world. Change a hex here only if you change it in the STYLE BIBLE too.
+ */
+
+:root {
+  /* Layered depth — void at the back, surfaces float toward the reader. */
+  --void: #070912;
+  --abyss: #0a0e1a;
+  --background: #090d18;
+  --surface: #0e1320;
+  --surface-raised: #141b2e;
+  --surface-overlay: #1b2438;
+
+  /* Text — mist highlight down to subtle haze. */
+  --foreground: #e9edf6;
+  --muted: #9aa4bd;
+  --subtle: #6c7690;
+
+  /* Structure. */
+  --border: #1d2740;
+  --border-strong: #2c3858;
+
+  /* Bioluminescence — the only true light sources. */
+  --cyan: #36c5d9;
+  --teal: #2bd4a8;
+  --magenta: #ff5da8;
+  --amber: #ffb454;
+  --accent: #36c5d9;
+  --accent-soft: #6fd9e7;
+
+  /* Classification tiers — four distinct biolum hues, all legible on void. */
+  --canon: #36c5d9;
+  --inference: #ffb454;
+  --speculation: #ff7bc0;
+  --real-science: #2bd4a8;
+
+  /* Glows — soft painterly bloom, never neon UI glare. */
+  --glow-cyan: 0 0 24px -4px color-mix(in oklab, var(--cyan) 60%, transparent);
+  --glow-teal: 0 0 24px -4px color-mix(in oklab, var(--teal) 55%, transparent);
+  --glow-magenta: 0 0 28px -6px color-mix(in oklab, var(--magenta) 55%, transparent);
+
+  --radius-sm: 5px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  --duration-fast: 140ms;
+  --duration-base: 260ms;
+  --duration-slow: 520ms;
+  --ease-out-quart: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@theme inline {
+  --color-void: var(--void);
+  --color-abyss: var(--abyss);
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-surface-overlay: var(--surface-overlay);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-cyan: var(--cyan);
+  --color-teal: var(--teal);
+  --color-magenta: var(--magenta);
+  --color-amber: var(--amber);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-canon: var(--canon);
+  --color-inference: var(--inference);
+  --color-speculation: var(--speculation);
+  --color-real-science: var(--real-science);
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+  --font-serif: var(--font-serif);
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+/* The living atmosphere sits fixed behind all content, never intercepts input,
+   and shares identical stacking whether WebGL or 2D fallback. */
+.atmosphere-layer {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Drifting motes for the 2D fallback — tiled radial dots crawling slowly. */
+.atmosphere-motes {
+  background-image: radial-gradient(
+      color-mix(in oklab, var(--cyan) 60%, transparent) 0.5px,
+      transparent 1.5px
+    ), radial-gradient(color-mix(in oklab, var(--teal) 50%, transparent) 0.5px, transparent 1.5px);
+  background-size: 140px 140px, 220px 220px;
+  background-position: 0 0, 70px 90px;
+  opacity: 0.5;
+  animation: atmosphere-drift 60s linear infinite;
+}
+
+@keyframes atmosphere-drift {
+  to {
+    background-position: 140px 280px, 210px 310px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .atmosphere-motes {
+    animation: none;
+  }
+}
+
+body {
+  background: var(--void);
+  color: var(--foreground);
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* Ambient atmosphere — a faint living haze behind everything. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+      60rem 60rem at 12% -8%,
+      color-mix(in oklab, var(--cyan) 12%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      50rem 50rem at 92% 4%,
+      color-mix(in oklab, var(--teal) 9%, transparent),
+      transparent 55%
+    ),
+    radial-gradient(
+      70rem 70rem at 50% 120%,
+      color-mix(in oklab, var(--magenta) 7%, transparent),
+      transparent 60%
+    );
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display), system-ui, sans-serif;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
+}
+
+a {
+  color: var(--accent-soft);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--cyan);
+}
+
+::selection {
+  background: color-mix(in oklab, var(--cyan) 35%, transparent);
+  color: var(--foreground);
+}
+
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--void);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 99px;
+  border: 2px solid var(--void);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in oklab, var(--cyan) 40%, var(--border-strong));
+}
+
+/* ---- Long-form reading ---- */
+
+.reading-column {
+  max-width: 72ch;
+  margin-inline: auto;
+}
+
+.prose-pandora {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: color-mix(in oklab, var(--foreground) 92%, var(--muted));
+}
+
+.prose-pandora > * + * {
+  margin-top: 1.3em;
+}
+
+.prose-pandora h2 {
+  font-size: 2rem;
+  line-height: 1.15;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  scroll-margin-top: 6rem;
+}
+
+.prose-pandora h3 {
+  font-size: 1.45rem;
+  line-height: 1.25;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  scroll-margin-top: 6rem;
+}
+
+.prose-pandora p {
+  margin-block: 0;
+}
+
+.prose-pandora strong {
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.prose-pandora a {
+  color: var(--accent-soft);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in oklab, var(--cyan) 45%, transparent);
+  text-underline-offset: 0.2em;
+}
+.prose-pandora a:hover {
+  color: var(--cyan);
+}
+
+.prose-pandora ul,
+.prose-pandora ol {
+  padding-inline-start: 1.4em;
+  margin-block: 0;
+}
+.prose-pandora ul {
+  list-style: disc;
+}
+.prose-pandora ol {
+  list-style: decimal;
+}
+.prose-pandora li::marker {
+  color: var(--accent);
+}
+.prose-pandora li + li {
+  margin-top: 0.45em;
+}
+
+.prose-pandora blockquote {
+  margin-inline: 0;
+  padding-inline-start: 1.25em;
+  border-inline-start: 2px solid var(--cyan);
+  font-style: italic;
+  color: var(--muted);
+}
+
+.prose-pandora hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin-block: 2.5rem;
+}
+
+.prose-pandora code {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: color-mix(in oklab, var(--surface-raised) 80%, transparent);
+  padding: 0.12em 0.4em;
+  border-radius: var(--radius-sm);
+  color: var(--accent-soft);
+}
