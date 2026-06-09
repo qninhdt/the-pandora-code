@@ -1,0 +1,12 @@
+id: umwelt
+label:
+  vi: Umwelt (Thế giới tri giác)
+  en: Umwelt
+definition:
+  vi: 'Thế giới riêng tư mà một sinh vật thực sự sống trong đó, dựng nên hoàn toàn từ những tín hiệu mà giác quan của nó cho phép tiếp nhận và cơ thể nó có thể đáp lại. Nhà sinh học Jakob von Uexküll đặt ra khái niệm này năm 1934, phân biệt rạch ròi giữa Umgebung - môi trường vật lý khách quan, chung cho tất cả - và Umwelt - chính môi trường ấy nhưng được lọc và dựng riêng bởi từng loài. Con ve và con hươu cùng chung một khu rừng, nhưng không chung một thế giới. Điều cốt yếu: Umwelt của chính bạn cũng chỉ là một lát cắt được biên tập, dù từ bên trong nó cảm thấy như toàn bộ hiện thực.'
+  en: 'The private world an organism actually lives in, built entirely from the signals its senses can admit and its body can act upon. The biologist Jakob von Uexküll coined the term in 1934, drawing a sharp line between the Umgebung - the objective physical surroundings, shared by all - and the Umwelt - that same environment as filtered and built by one particular species. A tick and a deer share a forest but not a world. The crucial point: your own Umwelt is an edited slice too, even though from the inside it feels like the whole of reality.'
+see_also:
+  - affordances
+  - signal-detection-theory
+category: concept
+cover_prompt: A painted naturalist diagram of a small animal at the centre of a faint perceptual bubble, a richly detailed forest beyond the bubble drawn in muted grey and ignored, only a few cues rendered vivid inside, cool teal and cyan against deep indigo, no text, no labels, no numbers.

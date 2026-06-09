@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-the-web",
+  "chapter_slug": "the-hunters-and-the-hunted",
+  "role": "diagram",
+  "narrative_purpose": "Shows the forest as a connected food web rather than isolated pairs, so the reader can see how pressure from an apex predator at the top reaches down through links to animals it never touches.",
+  "subject": "A vertical food-web diagram of glowing animal silhouettes connected by faint luminous threads. At the very top, a single large winged predator with a broad wingspan. Threads run down from it to a middle row of two smaller winged creatures. Threads from those run down to a central cluster of small six-legged herbivore silhouettes. To one side, a separate vertical column on the ground: a mid-sized sleek four-legged-looking pack predator above the herbivore cluster, and at the very bottom a single massive solitary six-limbed predator as the ground-level base. All silhouettes simple and clearly distinct in size and shape, linked by thin glowing lines.",
+  "scene": "An abstract dark diagrammatic space, faint haze, the silhouettes and threads self-luminous like a constellation map.",
+  "camera": "Flat head-on diagrammatic view of the vertical web.",
+  "light": "Self-luminous silhouettes and connecting threads against dark; no external light.",
+  "palette": "Void-indigo ground, cyan and living-teal silhouettes, a single scarce warm magenta glint on the top apex flyer to draw the eye, threads pale stone-grey.",
+  "style": "Painterly plate that reads as a wiring diagram through composition alone, soft glowing forms, not a hard vector chart.",
+  "detail_level": "Moderate: silhouettes simple and clearly different in scale, the top-to-bottom link structure obvious.",
+  "composition": "Vertical hierarchy filling the frame, apex at top, base at bottom, dark margins on the sides for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "axis text", "tick marks", "arrows", "leader lines", "grid", "UI", "watermark", "logos"],
+  "consistency_notes": "Creature silhouettes echo the chapter's earlier figures (apex flyer, pack predator, massive ground predator, six-legged grazers). Reads as a teaching diagram.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no tick marks, no arrows, no grid, no diagram chrome, no photographic or 3D-render look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

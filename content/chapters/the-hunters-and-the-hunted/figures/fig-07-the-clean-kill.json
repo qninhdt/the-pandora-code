@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-the-clean-kill",
+  "chapter_slug": "the-hunters-and-the-hunted",
+  "role": "inline",
+  "narrative_purpose": "Shows the Na'vi as the rare self-limiting predator: the clean-kill ritual that reads, through the chapter's math, as deliberate carrying-capacity restraint.",
+  "subject": "An intimate night scene: a single tall, slender blue-skinned Na'vi hunter kneels on the forest floor over a stilled six-legged hexapede, one hand laid flat on the animal's flank, head bowed close to it in a posture of gratitude rather than triumph. A simple bone-and-wood bow rests across the hunter's back.",
+  "scene": "A quiet bioluminescent forest floor at night, soft glowing plants and a few drifting motes surrounding the pair, the moment hushed and private.",
+  "camera": "Low, close naturalist three-quarter view at the hunter's level, the two figures filling the central frame.",
+  "light": "Gentle glow from surrounding flora rim-lighting the bowed hunter and the stilled animal in cyan, a single faint warm amber accent low in the scene.",
+  "palette": "Cool teal-indigo dominant, the hunter's blue skin and the animal's body in soft shadow with cyan glow, one scarce warm accent.",
+  "style": "Hand-painted naturalist field plate, intimate and observed, not a film still.",
+  "detail_level": "High on the two figures and the laid hand; soft and hazy on the surrounding forest.",
+  "composition": "Tight focal pair with the hunter's bowed head and laid hand as the center, dark hazy negative space around for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "UI", "watermark", "logos", "film branding", "weapons raised", "violence"],
+  "consistency_notes": "The hexapede is the small six-legged browser archetype, consistent with fig-01. The Na'vi reads as a reverent hunter, not a warrior.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no UI chrome, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/the-hunters-and-the-hunted/fig-01-the-hunt.png"]
+}

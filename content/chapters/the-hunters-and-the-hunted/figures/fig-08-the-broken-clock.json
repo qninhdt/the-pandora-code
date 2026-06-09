@@ -1,0 +1,20 @@
+{
+  "id": "fig-08-the-broken-clock",
+  "chapter_slug": "the-hunters-and-the-hunted",
+  "role": "inline",
+  "narrative_purpose": "The closing image: industrial clearing that razes the base of the whole web and culls predator and prey at once, bypassing every feedback that held the system in balance.",
+  "subject": "A scarred clearing at the edge of an industrial operation: on one side, churned bare earth, splintered stumps, and torn ground where forest used to be; on the other side, intact glowing forest still standing. A few displaced six-legged animals linger at the treeline between the two. Harsh artificial light spills in from heavy machinery just out of frame.",
+  "scene": "Night at the boundary between razed ground and living forest, the bioluminescent glow of the intact side contrasted against the dead, lightless cleared zone.",
+  "camera": "Wide naturalist view across the boundary line, the scar in the foreground and the living forest receding behind.",
+  "light": "A cold, harsh artificial white light intruding from one side against the soft cyan bioluminescence of the forest; the cleared ground is unnaturally dark and unlit by life.",
+  "palette": "Cool teal-indigo forest on one side, a desaturated lightless scar on the other, a single harsh cold-white industrial intrusion as the off-model warning note.",
+  "style": "Hand-painted naturalist field plate, sombre and observed, not a film still.",
+  "detail_level": "Moderate-high on the boundary and the displaced animals; the machinery stays implied off-frame, only its light intruding.",
+  "composition": "A clear diagonal boundary splitting living forest from razed ground, displaced animals at the seam, dark negative space for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "UI", "watermark", "logos", "film branding", "recognizable real-world vehicles", "readable signage"],
+  "consistency_notes": "Forest palette and creature look stay consistent with earlier figures; the industrial side reads as alien intrusion by its cold light, without depicting branded RDA hardware.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no UI chrome, no photographic or 3D-render look, no lens flares, no readable logos",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/the-hunters-and-the-hunted/fig-99-background.png"]
+}

@@ -1,0 +1,13 @@
+id: carrying-capacity
+label:
+  vi: Sức chứa môi trường
+  en: Carrying capacity
+definition:
+  vi: Số lượng cá thể tối đa của một loài mà một môi trường có thể nuôi dưỡng bền vững, đặt ra bởi giới hạn thức ăn, không gian và tài nguyên. Một quần thể tăng nhanh khi còn thưa thớt, rồi chậm dần và phẳng ra khi tiến gần ngưỡng này - cái trần mà mô hình săn mồi đơn giản nhất đã bỏ quên, để mặc con mồi sinh sôi đến vô hạn. Đưa cái trần trở lại, và bánh xe săn mồi - con mồi cuối cùng cũng hành xử như một thứ có thể tồn tại trong một khu rừng thật.
+  en: The largest population of a species an environment can sustain indefinitely, set by the limits of food, space and resources. A population grows fast when sparse, then slows and levels off as it nears this ceiling - the very ceiling the simplest predator-prey model forgot, letting its prey breed to infinity. Put the ceiling back and the predator-prey wheel finally behaves like something that could survive in a real forest, returning toward balance after a shock instead of careering off the edge.
+see_also:
+- density-dependence
+- paradox-of-enrichment
+- lotka-volterra-equations
+category: concept
+cover_prompt: A painted curve that climbs steeply then levels into a flat plateau, glowing cyan against deep indigo, a faint dashed ceiling line above it, painterly naturalist plate, no text, no numbers, no labels.

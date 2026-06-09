@@ -1,0 +1,13 @@
+id: optimal-foraging-theory
+label:
+  vi: Lý thuyết kiếm ăn tối ưu
+  en: Optimal foraging theory
+definition:
+  vi: 'Ý tưởng rằng chọn lọc tự nhiên ưu ái những cá thể tối đa hóa năng lượng thu về trên mỗi đơn vị thời gian kiếm ăn - nên kẻ săn mồi nên đuổi theo một loại con mồi chỉ khi năng lượng dự kiến thu được vượt quá năng lượng bỏ ra để tìm và bắt nó. Khi con mồi ưa thích còn dồi dào, kẻ săn kén chọn và bỏ qua mục tiêu kém giá trị; khi nó khan hiếm, kẻ săn mở rộng khẩu phần. Đây không phải ẩn dụ: các loài săn mồi thực sự hành xử, về tổng thể, như thể đang tính toán sổ sách, và phép tính ích kỷ ấy ở cấp độ cá thể lại trở thành cơ chế giữ cân bằng cho cả khu rừng.'
+  en: 'The idea that natural selection favours individuals who maximise net energy gained per unit of foraging time - so a predator should pursue a prey type only when the energy it expects to gain outruns the energy spent finding and catching it. When preferred prey is plentiful the hunter is choosy and ignores poorer targets; when it grows scarce the hunter widens its diet. This is no metaphor: predators really do behave, on the whole, as if running the sums, and that selfish accounting at the individual level becomes, for the whole forest, a mechanism that keeps it in balance.'
+see_also:
+- prey-switching
+- functional-response
+- life-dinner-principle
+category: concept
+cover_prompt: A painted scene of a single hunter pausing to weigh two glowing prey silhouettes of different size at different distances, faint balance-scale motif implied in the composition, cool cyan and teal light, painterly plate, no text, no numbers, no labels.

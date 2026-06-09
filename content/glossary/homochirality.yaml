@@ -1,0 +1,12 @@
+id: homochirality
+label:
+  vi: Tính đồng thủ (homochirality)
+  en: Homochirality
+definition:
+  vi: 'Việc một sinh quyển chỉ sử dụng đồng nhất một dạng gương của các phân tử có tính bất đối xứng. Toàn bộ sự sống Trái Đất dùng axit amin gần như hoàn toàn thuận tay trái và đường thuận tay phải - không có lý do hóa học bắt buộc phải là chiều đó, nhưng một khi đã chọn, mọi thứ xây dựng sau đều phụ thuộc vào lựa chọn ấy. Đồng thủ là điều kiện thiết yếu để protein gập đúng hình: một chuỗi pha trộn cả hai tay sẽ không gập thành cấu trúc hoạt động được.'
+  en: 'A biosphere''s uniform use of just one mirror-image form of its chiral molecules. All Earth life uses almost entirely left-handed amino acids and right-handed sugars - there is no chemical law forcing that choice, but once made, everything built afterward depends on it. Homochirality is essential for proteins to fold correctly: a chain mixing both hands would never fold into a working shape.'
+see_also:
+  - chirality
+  - frozen-accident
+category: concept
+cover_prompt: A painted ribbon of identical left-handed molecular units spiralling upward in perfect single-handed order, all the same cyan tint, with one rejected mirror-image unit in faint magenta falling away to the side, cool palette against dark, painterly, no text, no labels, no numbers.

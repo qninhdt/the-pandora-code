@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-superconductor-verdict",
+  "chapter_slug": "what-is-pandoran-life-made-of",
+  "role": "inline",
+  "narrative_purpose": "Makes the one impossible claim visible by contrast: a pair of electrons gliding as a single smooth wave through cold ordered matter, versus the same pair torn apart by the warm, churning chaos of a living cell — the place where Pandora's biology leaves physics behind.",
+  "subject": "A naturalist conceptual plate split into two halves. Left: two small glowing blue-white spheres bound together as one smooth flowing wave, gliding cleanly between neat orderly rows of pale stationary dots, leaving a single clean luminous trail. Right: the same two paired spheres being wrenched apart, their wave shattering into broken fragments amid a dense disordered swarm of jostling coloured specks and curved water-shapes crowding in on them.",
+  "scene": "Two contrasting microscopic interiors against deep dark — a cold, still, ordered lattice on the left; a warm, crowded, turbulent cellular fluid on the right.",
+  "camera": "A tight conceptual close view at the scale of the paired spheres, the orderly rows on the left and the chaotic swarm on the right both filling their halves.",
+  "light": "The paired spheres are the bioluminescent key on the left, calm and steady; on the right their light fragments and scatters; cool indigo ground, the chaos side carrying scattered faint warm specks as the disruptive intruders.",
+  "palette": "Void-indigo base, Pandora cyan and mist-white for the gliding pair and the ordered lattice; the chaotic right side flecked with scarce magenta and ember-amber specks as the warm, disruptive ions; cool still dominates the left.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, conceptual but physical.",
+  "detail_level": "Crisp on the paired spheres in both halves and on the contrast between orderly rows and chaotic swarm; edges dissolving into haze.",
+  "composition": "A clear left-calm / right-chaotic split, the paired subject echoed in both halves so the eye reads it as the same thing surviving on one side and destroyed on the other; dark bands left for overlaid callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "equations", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette; the paired glowing spheres must be recognizably the same subject in both halves — intact and gliding at left, shattered at right.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no equations, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

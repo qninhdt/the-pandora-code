@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-carbon-vs-silicon",
+  "chapter_slug": "what-is-pandoran-life-made-of",
+  "role": "comparison",
+  "narrative_purpose": "Makes the carbon-beats-silicon argument visible in one glance: carbon's waste leaves as a clean gas, silicon's waste is solid rock that would brick a body shut — the single image that carries why life is carbon, not silicon.",
+  "subject": "A split-panel naturalist comparison. Left panel: a softly glowing living lung-like form exhaling a clear faint cyan vapour that rises and dissolves cleanly into the air — waste leaving as a gas. Right panel: a mirror-image lung-like form choked with rough opaque quartz-like crystalline rock growing inside it, jagged pale crystals clogging the airways and spilling out, frozen solid and unable to escape.",
+  "scene": "Two paired specimen forms side by side against deep dark, divided by a thin band of haze, presented like two outcomes of the same experiment.",
+  "camera": "A straight-on paired study view, both forms at equal size for direct comparison.",
+  "light": "Cool bioluminescent key on the left form and its rising vapour; a colder, flatter light on the right form catching the hard facets of the choking quartz; deep indigo shadow around both.",
+  "palette": "Void-indigo ground; the living left form in living teal and Pandora cyan with a clean cyan vapour; the right form's quartz in desaturated stone-grey and mist-white, deliberately lifeless; warm accent absent to keep the right side cold and dead.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture.",
+  "detail_level": "Crisp on the clean rising vapour (left) and the jagged choking crystals (right); backgrounds soft.",
+  "composition": "Two equal vertical panels with a dark central seam; a clear dark zone above each form for an overlaid callout.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "chemical formulae", "molecular diagrams", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette; the left reads alive and breathing, the right reads petrified and dead — the visual argument is gas-escapes versus rock-traps.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no chemical formulae, no molecular ball-and-stick diagrams, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

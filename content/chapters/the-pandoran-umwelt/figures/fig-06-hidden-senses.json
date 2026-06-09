@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-hidden-senses",
+  "chapter_slug": "the-pandoran-umwelt",
+  "role": "comparison",
+  "narrative_purpose": "A triptych of senses humans entirely lack — a shark reading electric fields in water, a bat building a world from returning echoes, a fish feeling water flow along its lateral line — so the reader feels how many whole channels of reality exist beyond our own.",
+  "subject": "Three small naturalist vignettes joined by darkness. Left: a shark gliding low over the seabed, faint electric-field haloes glowing around a hidden prey shape buried in sand. Middle: a bat in flight with concentric sound-echo rings rippling out to a moth ahead. Right: a fish with a glowing line of tiny sensor pits along its flank, swirls of disturbed water rendered as faint cyan eddies around it.",
+  "scene": "Three dark vignettes — two underwater, one in night air — each in its own pool of cool glow against deep indigo, separated by shadow.",
+  "camera": "Three balanced side-by-side naturalist studies, mid-distance on each animal.",
+  "light": "Cool bioluminescent-style key picking each animal from the dark; the sensed field/echo/flow rendered as faint living glow; deep indigo surround.",
+  "palette": "Void-indigo ground, Pandora cyan and living teal for the sensed phenomena and animal rims, a sparse magenta accent.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted, observed.",
+  "detail_level": "Crisp on each animal and its sensed phenomenon; backgrounds dissolving into haze.",
+  "composition": "Three equal panels of dark negative space, each animal offset so the sensed field has room to glow.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "panel borders", "Avatar branding"],
+  "consistency_notes": "Earth animals but rendered in the same cool Pandora palette and from-within glow as the rest of the chapter, so they sit in one visual world.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no hard panel borders, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

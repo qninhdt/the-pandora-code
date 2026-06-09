@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-eye-optics",
+  "chapter_slug": "the-pandoran-umwelt",
+  "role": "diagram",
+  "narrative_purpose": "Shows how physics writes an eye's design: the Na'vi's large light-gathering pupil and retroreflective tapetum that bounces missed photons back, beside the banshee's two-pair division of labour — read the eye and you read the world it must see.",
+  "subject": "A naturalist cutaway of a large golden-amber Na'vi eye showing a wide pupil, a curved gradient lens, the retina, and behind it a reflective tapetum layer with a single photon path entering, missing, striking the mirror and bouncing back through the retina; set beside it a banshee's head showing a large forward primary eye and a smaller independently angled secondary eye behind.",
+  "scene": "Dark study-plate ground, the two eye studies floating in deep indigo space like a field-notebook anatomy page.",
+  "camera": "A clean lateral cutaway on the Na'vi eye, three-quarter on the banshee head, both close and clinical.",
+  "light": "Cool internal glow tracing the photon path inside the eye; soft teal rim light on the banshee head; deep shadow ground.",
+  "palette": "Ocean-teal and void-indigo structures, Pandora cyan for the photon path and active light, a restrained amber for the Na'vi iris.",
+  "style": "Painterly speculative-biology naturalist anatomy plate, hand-painted, precise but not mechanical.",
+  "detail_level": "High detail on the lens, retina and tapetum and the bounced photon path; banshee head slightly softer; background plain.",
+  "composition": "Na'vi eye cutaway on the left, banshee head on the right, dark open space between and around for callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Match the banshee head and eye colour to the existing direhorse-and-banshee chapter plates; keep dark negative space beside the lens, tapetum and secondary eye for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/direhorse-and-banshee-up-close/fig-02-ikran-flight-anatomy.png"]
+}

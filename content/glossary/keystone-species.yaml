@@ -1,0 +1,13 @@
+id: keystone-species
+label:
+  vi: Loài chủ chốt
+  en: Keystone species
+definition:
+  vi: "Một loài có ảnh hưởng lên hệ sinh thái lớn đến mức bất tương xứng với số lượng ít ỏi của nó - giống viên đá đỉnh vòm giữ cho cả vòm cuốn không sụp, dù chỉ là một viên trong nhiều viên. Kẻ săn mồi đỉnh thường là loài chủ chốt: nhà sinh thái Robert Paine gỡ một loài sao biển ăn vẹm khỏi một bãi đá, và sự đa dạng ở đó sụp từ mười lăm loài xuống còn tám khi loài vẹm độc chiếm tất cả. Trên Pandora, thanator và toruk hiếm hoi lại định hình cả khu rừng, kìm hãm những kẻ ăn cỏ khổng lồ mà nếu không có chúng sẽ giẫm nát thế giới của mọi loài."
+  en: "A species whose effect on its ecosystem is wildly out of proportion to its numbers - like the wedge at the top of a stone arch that holds every other stone in place, though it is only one of many. Apex predators are often keystones: the ecologist Robert Paine pried a mussel-eating starfish off a rocky shore and its diversity caved from fifteen species to eight as the mussels took over. On Pandora the rare thanator and toruk shape the whole forest, holding down the giant grazers that would otherwise trample everyone's world."
+see_also:
+- trophic-cascade
+- landscape-of-fear
+- mesopredator
+category: concept
+cover_prompt: A painted stone arch glowing in the dark with one bright wedge-shaped stone at its apex highlighted, the rest of the arch in cool teal shadow, painterly naturalist plate, no text, no numbers, no labels.

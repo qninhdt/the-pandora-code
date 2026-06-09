@@ -1,0 +1,13 @@
+id: xeno-nucleic-acid
+label:
+  vi: Axit nucleic ngoại lai (XNA)
+  en: Xeno nucleic acid (XNA)
+definition:
+  vi: 'Một phân tử mang thông tin di truyền giống DNA hoặc RNA nhưng dựng trên một bộ khung khác - thay đường hay cấu trúc xương sống bằng thành phần mà sự sống Trái Đất không dùng. XNA chứng minh rằng chiếc thang xoắn cụ thể của ta không phải lựa chọn duy nhất khả dĩ: thông tin có thể được lưu và sao chép trên nhiều nền hóa học. Điều này nuôi dưỡng cả ngành sinh học tổng hợp lẫn cuộc truy tìm sự sống "lạ" - một sinh vật dùng XNA sẽ vô hình trước những công cụ chỉ biết đọc bộ khung quen thuộc.'
+  en: 'A molecule that carries genetic information like DNA or RNA but is built on a different backbone - swapping the sugar or spine for a component Earth life does not use. XNA proves that our particular twisted ladder is not the only workable choice: information can be stored and copied on several chemistries. This feeds both synthetic biology and the hunt for "weird" life - an organism using XNA would be invisible to tools that only know how to read the familiar backbone.'
+see_also:
+  - shadow-biosphere
+  - frozen-accident
+  - chirality
+category: concept
+cover_prompt: A painted double helix whose two rails are visibly built from unusual geometric links unlike the familiar sugar-phosphate spine, glowing cool cyan against deep indigo dark, one clear molecular subject centered, painterly, no text, no labels, no numbers.

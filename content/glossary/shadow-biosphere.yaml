@@ -1,0 +1,13 @@
+id: shadow-biosphere
+label:
+  vi: Sinh quyển bóng tối
+  en: Shadow biosphere
+definition:
+  vi: Một sinh quyển vi sinh giả định, độc lập, có thể đang cùng tồn tại trên Trái Đất ngay lúc này nhưng không bị phát hiện, vì nó dựa trên một nền hóa sinh khác hẳn sự sống quen thuộc - một bộ khung di truyền khác, một bàn tay đối xứng gương, hay một dung môi khác. Khái niệm này quan trọng vì gần như mọi công cụ tìm vi khuẩn của ta đều được hiệu chỉnh cho sự sống chuẩn; một dạng sống "lạ" đủ mức sẽ không trả về tín hiệu nào, đơn giản vì máy móc chưa từng được thiết kế để hỏi nó câu hỏi mà nó có thể trả lời.
+  en: A hypothetical, independent microbial biosphere that might coexist on Earth right now yet go undetected, because it rests on a biochemistry unlike familiar life - a different genetic backbone, a mirror-image hand, or a different solvent. The idea matters because nearly every tool we use to find microbes is tuned to standard life; a sufficiently "weird" life form would return no signal simply because the instruments were never designed to ask it a question it could answer.
+see_also:
+  - xeno-nucleic-acid
+  - biosignature
+  - extremophile
+category: concept
+cover_prompt: A painted spoonful of dark pond water held to dim light, within it two faint intertwined webs of living motes - one glowing familiar teal, the other a barely-visible second web in cool violet going unseen, painterly, no text, no labels, no numbers.

@@ -1,0 +1,11 @@
+id: tapetum-lucidum
+label:
+  vi: Tapetum lucidum (Tấm gương đáy mắt)
+  en: Tapetum lucidum
+definition:
+  vi: 'Một lớp phản quang nằm ngay sau võng mạc ở nhiều loài vật sống về đêm. Ánh sáng lọt qua mà các tế bào cảm quang chưa kịp bắt được sẽ đập vào tấm gương này và bị dội ngược trở lại, cho võng mạc cơ hội thứ hai để hấp thụ cùng những hạt photon ấy. Đây chính là thứ khiến mắt mèo, mắt hươu rực lên khi gặp đèn pha trong đêm - tapetum đang hắt trả phần ánh sáng nó không dùng tới. Cái giá phải trả là hình ảnh hơi nhòe đi, nhưng với một loài cần nhìn trong tối, gom được gấp đôi ánh sáng đáng giá hơn nhiều. Cốt truyện gán đúng lớp phản quang này cho người Na''vi.'
+  en: 'A reflective layer sitting just behind the retina in many night-active animals. Light that slips past the photoreceptors on the way in strikes this mirror and is bounced back, giving the retina a second chance to absorb the same photons. It is what makes a cat''s or a deer''s eyes flare in headlights at night - the tapetum throwing back the light it could not use. The cost is a slightly blurrier image, but for an animal that must see in the dark, gathering twice the light is well worth it. Canon attributes exactly this retroreflective layer to the Na''vi.'
+see_also:
+  - umwelt
+category: bio
+cover_prompt: A painted cutaway of a large nocturnal eye showing a photon path entering, passing the retina, striking a reflective layer behind it and bouncing back through, faint cyan light trails on deep indigo, no text, no labels, no numbers.

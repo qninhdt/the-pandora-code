@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-carbon-fiber-bone",
+  "chapter_slug": "what-is-pandoran-life-made-of",
+  "role": "diagram",
+  "narrative_purpose": "Shows the carbon-fiber-bone claim as a thing the reader can see: a hollow wing bone whose wall is woven graphitic fiber, so the 'expensive but conceivable' tier lands visually as engineered-looking biology.",
+  "subject": "A cutaway study of a large flying creature's hollow wing bone, sliced open to reveal a thin wall built of tightly woven dark graphitic carbon-fiber strands wrapping a hollow central air channel; the cut face shows the layered fiber weave, the outer surface a smooth dark sheen, the hollow core open and empty.",
+  "scene": "An isolated anatomical specimen floating against deep dark, as on a xenobiologist's study plate, faint teal haze behind it.",
+  "camera": "A close, slightly angled study view of the cut bone segment, the open cross-section facing the viewer.",
+  "light": "Soft cool key raking across the fiber weave to catch its texture, the hollow channel in deep indigo shadow, a faint cyan rim-light along the cut edge.",
+  "palette": "Void-indigo ground, ocean-teal and stone-grey bone, the woven fiber near-black with cyan highlights catching the weave; no warm accent.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, anatomical-study confidence.",
+  "detail_level": "Crisp on the fiber weave and the cut cross-section; the surrounding void soft and empty.",
+  "composition": "The bone segment centred with its open cross-section toward the viewer, a clear dark region to one side for an overlaid callout, generous negative space.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "the whole creature", "wings", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette, study-plate framing; the fiber should read as a grown biological material, not machined industrial carbon fiber.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

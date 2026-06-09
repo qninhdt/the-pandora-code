@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-the-hunt",
+  "chapter_slug": "the-hunters-and-the-hunted",
+  "role": "hero",
+  "narrative_purpose": "Anchors the cold open: the decisive instant of a single hunt, the prey breaking as the pack closes, before any theory arrives. The reader watches one chase so the system underneath it can be revealed.",
+  "subject": "A single small six-limbed browser caught mid-stride, body twisting to bolt, the bright fan of skin on its skull thrown fully open to show a startling pattern of false eyes. Four sleek black six-limbed pack-hunters fan out in a half-circle around it, low and fast, one already lunging from the left, the others cutting off escape to the right. All five animals carry faint glowing markings along their flanks.",
+  "scene": "Dense bioluminescent night forest, glowing ferns and root-buttresses, tall trunks vanishing into haze, motes of spore-light disturbed by the motion.",
+  "camera": "Dynamic low three-quarter action view, slight motion energy, the prey near centre with hunters sweeping in from the edges.",
+  "light": "Glowing undergrowth throws the brightest light upward, catching the flared fan and the prey's straining muscles; the hunters read as rim-lit shadows with glinting eyes.",
+  "palette": "Cool teal-indigo dominant, prey lifted in cyan, hunters in near-black with cyan edges, the eyespot fan carrying a single scarce warm magenta accent.",
+  "style": "Hand-painted naturalist action plate of real alien animals, textured brushwork, not a film still.",
+  "detail_level": "High on the prey and the flared fan and the nearest hunter; softer on the trailing hunters and hazy forest.",
+  "composition": "Converging diagonals of hunters from both sides onto the bright twisting prey, open dark forest depth behind for breathing room.",
+  "exclude": ["text", "letters", "numbers", "labels", "UI", "watermark", "logos", "human figures", "film branding"],
+  "consistency_notes": "Same viperwolf and hexapede archetypes as fig-00-cover; keep the sleek six-limbed black hunters and the small six-legged fan-crested browser consistent.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no UI chrome, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/the-hunters-and-the-hunted/fig-00-cover.png"]
+}

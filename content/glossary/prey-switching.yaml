@@ -1,0 +1,13 @@
+id: prey-switching
+label:
+  vi: Chuyển đổi con mồi
+  en: Prey switching
+definition:
+  vi: 'Hành vi kẻ săn mồi từ bỏ một loại con mồi khi nó trở nên khan hiếm và chuyển sự chú ý sang loại khác giờ đã phổ biến và dễ tìm hơn. Khi con mồi ưa thích giảm sút, kẻ săn không đuổi nó đến con cuối cùng - như thế tốn quá nhiều công cho quá ít lợi - mà quay sang mục tiêu dễ hơn. Đây chính là cơ chế đằng sau đường cong phản ứng chức năng kiểu III ổn định hóa: con mồi hiếm được tha không phải vì lòng thương mà vì phép tính, và sự keo kiệt ích kỷ của từng kẻ săn lại trở thành thứ giữ cho các loài hiếm không bị săn đến tuyệt diệt.'
+  en: 'A predator''s habit of abandoning a prey type once it grows scarce and turning its attention to whatever is now more common and easier to find. When favoured prey declines, the hunter does not chase it to the last individual - that costs too much effort for too little return - but switches to an easier target. This is the mechanism behind the stabilising Type III functional response: rare prey is spared not out of mercy but out of arithmetic, and the selfish thrift of each hunter becomes the thing that keeps rare species from being hunted into oblivion.'
+see_also:
+- functional-response
+- optimal-foraging-theory
+- density-dependence
+category: concept
+cover_prompt: A painted hunter turning its gaze from a single faint scarce prey silhouette toward a dense cluster of more abundant prey silhouettes, cool cyan and teal glow on deep indigo, painterly plate, no text, no labels.

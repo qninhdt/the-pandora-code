@@ -1,0 +1,13 @@
+id: paradox-of-enrichment
+label:
+  vi: Nghịch lý phú dưỡng
+  en: Paradox of enrichment
+definition:
+  vi: 'Phát hiện phản trực giác rằng làm cho một hệ săn mồi - con mồi cân bằng trở nên giàu có hơn lại có thể khiến nó sụp đổ. Nâng sức chứa của con mồi - đất tốt hơn, mưa nhiều hơn, nền thực vật phong phú hơn - và quá một ngưỡng nào đó, các chu kỳ không êm đi mà nới rộng ra: đỉnh cao hơn, đáy sâu hơn, cho đến khi đáy của dao động chạm gần số không và một cú sốc nhỏ cũng đủ đẩy một loài vào tuyệt chủng. Sự ổn định và sự dồi dào không phải là một, và món quà thịnh vượng đầy thiện ý có thể làm rung chuyển một hệ thống đang lặng lẽ cân bằng.'
+  en: 'The counter-intuitive finding that making a balanced predator-prey system richer can make it collapse. Raise the prey''s carrying capacity - better soil, more rain, a lusher plant base - and past a threshold the cycles do not calm but widen: higher peaks, deeper troughs, until the bottom of the oscillation dips near zero and the smallest shock tips a population into extinction. Stability and abundance are not the same thing, and a system humming along in modest balance can be shaken to pieces by the well-meaning gift of plenty.'
+see_also:
+- carrying-capacity
+- density-dependence
+- lotka-volterra-equations
+category: concept
+cover_prompt: A painted pair of wave curves side by side, one gentle and narrow, the other wildly tall and dipping near a baseline that means zero, glowing cyan on deep indigo, painterly plate, no text, no numbers, no labels.

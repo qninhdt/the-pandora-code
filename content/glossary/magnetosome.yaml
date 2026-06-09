@@ -1,0 +1,12 @@
+id: magnetosome
+label:
+  vi: Hạt từ tính (magnetosome)
+  en: Magnetosome
+definition:
+  vi: Tinh thể nam châm cực nhỏ - thường là magnetit (Fe₃O₄) - mà một số vi khuẩn tự tổng hợp bên trong tế bào, xâu thành chuỗi hoạt động như một chiếc kim la bàn. Nhờ đó vi khuẩn từ tính (magnetotactic bacteria) tự định hướng theo từ trường Trái Đất để bơi tới tầng nước có nồng độ oxy ưa thích. Cỗ máy này chứng minh rằng việc khoáng hóa sinh học các tinh thể từ tính là rẻ, cổ xưa và phổ biến - chính là loại tiền lệ Trái Đất khiến giác quan từ trường của sinh vật Pandora trở nên rất khả tín.
+  en: A tiny magnetic crystal - usually magnetite (Fe₃O₄) - that certain bacteria grow inside themselves, strung into a chain that acts as a compass needle. With it, magnetotactic bacteria align to Earth's magnetic field and swim toward the oxygen level they prefer. The machinery proves that biologically mineralizing magnetic crystals is cheap, ancient, and widespread - exactly the kind of Earth precedent that makes Pandoran fauna's magnetic sense so believable.
+see_also:
+  - biomineralization
+  - biosignature
+category: bio
+cover_prompt: A painted microscopic view inside a single rod-shaped bacterium, a neat chain of dark cubic magnetic crystals running down its center like beads on a thread, faint magnetic field lines threading through, cool teal and indigo palette, painterly, no text, no labels, no numbers.

@@ -1,0 +1,20 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "what-is-pandoran-life-made-of",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate on the landing book-map: a single image that says 'two worlds of life, one shared chemistry' — a human-Na'vi hybrid body asleep in its tank, the quiet proof that Pandoran and Earth life are made of the same stuff.",
+  "subject": "A human-Na'vi hybrid avatar body, blue-skinned and longer than a man, floating curled and asleep inside a tall cylindrical glass tank filled with faintly glowing amber nutrient fluid; fine feeding and sensor lines trail from its body into the dark, and a single twist of a luminous cyan DNA double helix drifts in the fluid beside it as a quiet visual motif.",
+  "scene": "A dim laboratory chamber on Pandora at night, the lit tank the only bright object, banks of unlit dark equipment receding into indigo shadow around it.",
+  "camera": "A reverent three-quarter view looking slightly up at the tank, intimate and still, the curled body framed centrally behind the curved glass.",
+  "light": "The amber nutrient fluid as a warm interior key glowing from within the tank, a cool cyan rim along the glass and the drifting helix, deep indigo ambient shadow swallowing the room.",
+  "palette": "Void-indigo room and deep teal shadow dominant; a scarce ember-amber glow from the tank fluid and a thread of Pandora cyan along the helix as the deliberate warm-and-key accents.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence.",
+  "detail_level": "Crisp on the curled body and the curved glass meniscus; equipment and room dissolving into dark haze.",
+  "composition": "The lit tank centred with the body curled within it, generous dark negative space around, the drifting helix a small bright note to one side.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "modern Earth logos"],
+  "consistency_notes": "Cool Pandora palette with a single warm interior light source (the tank); the still, clinical-yet-wondrous mood that anchors the whole chapter.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

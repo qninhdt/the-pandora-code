@@ -1,0 +1,13 @@
+id: magnetoreception
+label:
+  vi: Cảm nhận từ trường
+  en: Magnetoreception
+definition:
+  vi: 'Khả năng cảm nhận trực tiếp từ trường - một giác quan mà con người hoàn toàn không có, dù từ trường Trái Đất đang xuyên qua cơ thể bạn ngay lúc này. Nhiều loài chim di cư, rùa biển, cá hồi và bướm vua dùng nó để định hướng qua hàng ngàn cây số. Bằng chứng chỉ về hai cơ chế khác nhau, thường phối hợp trong cùng một con vật: một chiếc la bàn lượng tử nằm trong mắt (dựa trên cryptochrome và cặp gốc tự do) đọc hướng, và những tinh thể magnetite tí hon đọc cường độ từ trường để dựng nên một tấm bản đồ vị trí.'
+  en: 'The ability to sense a magnetic field directly - a sense humans wholly lack, even though the Earth''s field is passing through your body right now. Migratory birds, sea turtles, salmon and monarch butterflies use it to navigate across thousands of kilometres. The evidence points to two distinct machines, often working together in one animal: a quantum compass in the eye (built on cryptochrome and a radical pair) that reads direction, and tiny magnetite crystals that read field strength to build a map of position.'
+see_also:
+  - cryptochrome
+  - radical-pair
+  - magnetite
+category: bio
+cover_prompt: A painted study of a migratory bird in flight at night with faint glowing magnetic field lines arcing across the scene as contours, a soft compass-glow in the eye, cool teal and magenta against deep indigo, no text, no labels, no numbers.

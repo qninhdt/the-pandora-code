@@ -1,0 +1,20 @@
+{
+  "id": "fig-08-tsaheylu-link",
+  "chapter_slug": "the-pandoran-umwelt",
+  "role": "diagram",
+  "narrative_purpose": "Make tsaheylu legible as a physical neural bridge, not telepathy: two queues' sheaths parted to show the fine living tendrils interlacing like clasped fingers, with signal-light flowing both directions across the join — a cable plugged into a socket, wiring two nervous systems into one.",
+  "subject": "An intimate close study of two neural queues meeting in mid-air, each sheath gently parted to reveal a bundle of fine pink-and-cyan glowing neural tendrils interlacing like the fingers of two clasped hands; faint pulses of nerve-signal light visibly travelling both ways across the interlaced join.",
+  "scene": "Held against a deep dark indigo ground with no background detail, so the delicate interlace is the whole subject.",
+  "camera": "A very close, tender macro view centred on the point where the tendrils interlace, shallow depth into soft dark.",
+  "light": "Self-luminous tendrils as the only key — pink and cyan bioluminescent glow from the nerve-filaments themselves, faint bloom where signal-pulses cross; deep indigo shadow all around.",
+  "palette": "Void-indigo ground, biolum magenta-pink and Pandora cyan in the tendrils, a faint living-teal in the signal pulses.",
+  "style": "Painterly speculative-biology naturalist plate, delicate, hand-painted, intimate.",
+  "detail_level": "Crisp and fine on the interlacing tendrils and the signal-pulses; everything else soft dark.",
+  "composition": "The interlace dead-centre with generous dark negative space around it for callout labels, the two queues entering from opposite sides.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "faces", "full figures", "Avatar branding"],
+  "consistency_notes": "Same glowing-tendril treatment as the tsaheylu glossary cover; reads as living tissue and real synaptic connection, not cables or fibre-optics.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

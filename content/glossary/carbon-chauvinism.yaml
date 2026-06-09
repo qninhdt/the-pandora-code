@@ -1,0 +1,13 @@
+id: carbon-chauvinism
+label:
+  vi: Chủ nghĩa thiên vị carbon
+  en: Carbon chauvinism
+definition:
+  vi: 'Lời tự nhắc trong sinh học vũ trụ rằng đừng giả định mọi sự sống ở đâu cũng phải giống sự sống Trái Đất - đặc biệt là phải dựa trên carbon - chỉ vì đó là ví dụ duy nhất ta biết. Cái tên mang sắc châm biếm tự giễu. Nghịch lý là: carbon thật sự vượt trội về mặt nhiệt động (liên kết vừa đủ bền vừa đủ linh hoạt, oxit của nó là khí thở ra được), nên một phần "thiên vị" lại có cơ sở. Mẹo là phân biệt đâu là điều hóa học thực sự ép buộc, đâu là thói quen của trí tưởng tượng.'
+  en: 'Astrobiology''s reminder not to assume that all life everywhere must resemble Earth''s - especially that it must be carbon-based - simply because that is the only example we know. The name is wryly self-mocking. The twist: carbon really is thermodynamically superior (bonds both stable and flexible enough, an oxide you can exhale), so some of the "bias" is earned. The skill is telling apart what chemistry genuinely forces from what is merely a habit of imagination.'
+see_also:
+  - frozen-accident
+  - convergent-evolution
+  - shadow-biosphere
+category: concept
+cover_prompt: A painted balance scale, one pan holding a glowing carbon atom with four bright bonds and the other holding a faint dim alternative atom, the carbon side clearly weightier, cool teal and indigo palette with scarce amber, painterly, no text, no labels, no numbers.

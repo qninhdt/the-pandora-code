@@ -1,0 +1,12 @@
+id: chirality
+label:
+  vi: Tính bất đối xứng gương (chirality)
+  en: Chirality
+definition:
+  vi: Tính chất của một phân tử tồn tại ở hai dạng là ảnh gương của nhau và không thể chồng khít lên nhau, hệt như bàn tay trái và bàn tay phải - cùng các nguyên tử, cùng các liên kết, nhưng sắp xếp trong không gian theo hai chiều ngược nhau. Vì enzyme nhận diện phân tử bằng hình dạng ba chiều, một enzyme chỉ "cầm" được đúng một bàn tay; dạng gương của cùng một phân tử thường trở nên vô dụng về mặt sinh học. Tên gọi bắt nguồn từ tiếng Hy Lạp "cheir" nghĩa là bàn tay.
+  en: The property of a molecule that exists in two mirror-image forms which cannot be superimposed, exactly like a left and a right hand - the same atoms, the same connections, but arranged in opposite three-dimensional orientations. Because enzymes recognize molecules by their three-dimensional shape, an enzyme can grip only one hand; the mirror form of the same molecule is usually biologically useless. The name comes from the Greek "cheir," hand.
+see_also:
+  - homochirality
+  - enzyme
+category: concept
+cover_prompt: A painted study of two mirror-image molecular hand shapes facing each other across a thin reflective line, one tinted cyan and one tinted magenta, clearly identical yet impossible to overlay, cool palette against dark, painterly, no text, no labels, no numbers.

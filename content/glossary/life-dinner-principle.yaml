@@ -1,0 +1,13 @@
+id: life-dinner-principle
+label:
+  vi: Nguyên lý mạng sống - bữa tối
+  en: The life-dinner principle
+definition:
+  vi: "Lời giải cho sự bất đối xứng trong cuộc chạy đua giữa kẻ săn và con mồi, do Richard Dawkins và John Krebs đúc kết trong một câu sắc lẹm: con thỏ chạy nhanh hơn con cáo, vì con thỏ chạy để giữ mạng còn con cáo chỉ chạy để kiếm bữa tối. Con mồi thất bại thì chết và không để lại hậu duệ; kẻ săn thất bại chỉ đói bụng, mai thử lại, và vẫn sinh sản. Nên chọn lọc ép con mồi mạnh hơn nhiều so với kẻ săn, và phòng vệ của con mồi thường đi trước vũ khí của kẻ săn một bước - lý do vì sao tốc độ, chiếc quạt dọa nạt và giác quan cảnh báo của hexapede lại tinh nhạy đến thế, và vì sao ngay cả một bầy nantang xuất sắc cũng hụt nhiều hơn trúng."
+  en: "An explanation of the asymmetry in the predator-prey race, put by Richard Dawkins and John Krebs in one sharp line: the rabbit runs faster than the fox, because the rabbit runs for its life while the fox runs only for its dinner. Prey that fail are dead and leave no offspring; predators that fail merely go hungry, try again tomorrow, and very likely still breed. So selection presses far harder on the hunted than the hunter, and prey defences tend to stay one step ahead of predator weapons - why the hexapede's speed, startle-fan and warning senses are so good, and why even a superb viperwolf pack misses more often than it hits."
+see_also:
+- coevolution
+- optimal-foraging-theory
+- aposematism
+category: concept
+cover_prompt: A painted chase frozen mid-stride, a fleeing prey animal stretched at full speed just ahead of a lunging hunter that is falling short, the gap between them lit cyan, painterly naturalist plate, cool palette, no text, no labels.

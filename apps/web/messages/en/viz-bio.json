@@ -47,9 +47,18 @@
       ],
       "effTitle": "Where the energy goes",
       "eff": {
-        "incandescent": { "name": "Incandescent bulb", "heat": "≈95% lost as heat" },
-        "led": { "name": "LED", "heat": "much lost to heat" },
-        "firefly": { "name": "Firefly (biology)", "heat": "almost no heat" }
+        "incandescent": {
+          "name": "Incandescent bulb",
+          "heat": "≈95% lost as heat"
+        },
+        "led": {
+          "name": "LED",
+          "heat": "much lost to heat"
+        },
+        "firefly": {
+          "name": "Firefly (biology)",
+          "heat": "almost no heat"
+        }
       },
       "legendLight": "Becomes light"
     },
@@ -87,6 +96,185 @@
       "enzymeLabel": "Enzyme",
       "hint": "Tap a branch to see its own fuel and enzyme.",
       "note": "Each branch glows with a different fuel molecule and a different enzyme. They did not inherit light from a shared glowing ancestor — every lineage stumbled onto it on its own."
+    },
+    "umweltLens": {
+      "title": "One scene, four worlds",
+      "subtitle": "The same patch of night forest, re-seen through different senses",
+      "umgebung": "The shared world — one forest, unchanged",
+      "lens": {
+        "human": "Human",
+        "navi": "Na'vi",
+        "magnetic": "Magnetic",
+        "biolum": "Reactive light"
+      },
+      "hint": {
+        "human": "A human's visible-light world: near-black, a few failing instrument glows, almost everything filtered out before it arrives.",
+        "navi": "Na'vi night vision lifts the whole scene — a large, tapetum-backed eye squeezing every photon, the forest legible in the dark.",
+        "magnetic": "The magnetoreceptive channel: field lines that pass straight through a human unfelt are drawn as a navigable map.",
+        "biolum": "The reactive-light channel: a footstep blooms into a cascade and the flora signals — a whole conversation a human barely sees."
+      }
+    },
+    "predatorPrey": {
+      "title": "The coupled wheel",
+      "subtitle": "Same hunt, three models — watch how each answers a shock",
+      "viewLabel": "Choose the view",
+      "timeTab": "Over time",
+      "phaseTab": "The orbit",
+      "modelLabel": "Choose the model",
+      "naiveTab": "Naive wheel",
+      "realTab": "Real forest",
+      "enrichedTab": "Enriched",
+      "nudge": "Nudge the system",
+      "note": {
+        "naive": "The naive Lotka-Volterra wheel: a neutrally stable orbit. Nudge it and it drifts to a new orbit and stays there — nothing pulls it back. A balance any breath of wind can move.",
+        "real": "Add a carrying capacity and a saturating hunter and the orbit gains a true resting point: nudge it and it spirals back. This is the density-dependent forest that survives shocks.",
+        "enriched": "Raise the carrying capacity far — enrich the world — and the orbit swings wider and wider, its troughs grazing zero. The paradox of enrichment: more food makes the system more likely to crash."
+      },
+      "play": "Play",
+      "pause": "Pause",
+      "scrubLabel": "Scrub through the cycle",
+      "preyLabel": "Hexapede",
+      "predLabel": "Viperwolf",
+      "prey": "Hexapede (prey)",
+      "pred": "Viperwolf (predator)",
+      "timeAxis": "Time",
+      "preyAxis": "Hexapede →",
+      "predAxis": "Viperwolf →",
+      "ariaTime": "Time-series of hexapede and viperwolf populations rising and falling out of step",
+      "ariaPhase": "Phase-plane orbit of hexapede against viperwolf numbers"
+    },
+    "functionalResponse": {
+      "title": "How fast one hunter eats",
+      "subtitle": "Drag the prey density — watch the share each hunter takes",
+      "xAxis": "Prey density →",
+      "yAxis": "Intake / share →",
+      "intakeLabel": "Intake (solid)",
+      "shareLabel": "Share taken (dashed)",
+      "refuge": "refuge",
+      "refugeNote": "Pressure eases as prey thin",
+      "analogueLabel": "On Pandora",
+      "type1": {
+        "tab": "Type I",
+        "animal": "Tulkun",
+        "role": "A filter-feeder straining food from the water — intake just tracks how thick the prey is, until it is full.",
+        "note": "Type I: a straight line to a hard cap. Search and swallow are one act, so the kill rate climbs in direct proportion to prey, then stops dead at satiety. The shape of a filter-feeder."
+      },
+      "type2": {
+        "tab": "Type II",
+        "animal": "Thanator",
+        "role": "A solitary hunter limited by handling time — it can only stalk, kill, and eat so fast no matter how thick the herds grow.",
+        "note": "Type II: climbs steeply, then bends to a ceiling set by handling time. At low prey density the hunter takes a larger fraction of what little remains — quietly destabilising, pressing rare prey rarer."
+      },
+      "type3": {
+        "tab": "Type III",
+        "animal": "Viperwolf",
+        "role": "A learning, switching hunter that ignores rare prey until there is enough to be worth forming a search image for.",
+        "note": "Type III: the S-curve, nearly flat near the origin before it rises and levels off. That flat stretch is a refuge — when prey get rare, the pressure eases instead of tightening, letting a crashing population recover. The strongest behavioural stabiliser there is."
+      }
+    },
+    "keystoneCascade": {
+      "title": "Pull the keystone",
+      "subtitle": "Draw out the apex wedge and watch the arch hold, then let go",
+      "present": "Apex present",
+      "removed": "Apex removed",
+      "removalLabel": "Keystone removed",
+      "keystone": "apex predator (keystone)",
+      "apex": "Apex predator",
+      "grazer": "Heavy grazers",
+      "plants": "Vegetation",
+      "none": "gone",
+      "phase": {
+        "stable": "The apex predator is the keystone wedge at the crown — the whole arch leans on one rare animal. Grazers are held in check and the vegetation stays lush.",
+        "tipping": "The wedge is most of the way out. The arch is losing its hold; the grazers are already climbing as the check on them weakens.",
+        "collapsed": "The keystone is gone and the arch lets go all at once — grazers explode, vegetation crashes, the smaller herbivores are crushed out. A collapse running top to bottom from removing a single rare animal."
+      }
+    },
+    "xenobiologyLadder": {
+      "aria": "Pandora's biological claims plotted on a spectrum from all-but-forced to physically forbidden",
+      "forced": "All but forced",
+      "conceivable": "Conceivable",
+      "forbidden": "Forbidden",
+      "verdict": {
+        "survives": "Survives",
+        "costly": "Costly",
+        "shatters": "Shatters"
+      }
+    },
+    "nightEyeOptics": {
+      "title": "The night eye: a bucket for light",
+      "subtitle": "Widen the pupil to drink more photons — and pay on the way out",
+      "aria": "A nocturnal eye gathering more light as its pupil widens, with the three optical costs rising in step",
+      "pupilLabel": "Pupil width",
+      "captureLabel": "Light gathered",
+      "noiseLabel": "Photon noise",
+      "aberrationLabel": "Edge blur",
+      "dofLabel": "Depth of field",
+      "apertureAxis": "Aperture",
+      "tapetumLabel": "Tapetum (retina mirror)",
+      "on": "on",
+      "off": "off",
+      "hint": "A wider pupil is a wider bucket held up to a thin rain of photons — but physics charges for it: graininess falls while edge blur rises and the in-focus slice grows shallow. The tapetum is a mirror behind the retina that bounces missed photons back for a second pass, the same trick that flares a cat's eyes in headlights."
+    },
+    "magneticCompass": {
+      "title": "Two machines for one missing sense",
+      "subtitle": "A quantum compass reads direction; a magnetite map reads where you are",
+      "fieldLabel": "Field condition",
+      "calm": "Calm field",
+      "vortex": "Flux vortex",
+      "latitudeLabel": "Latitude",
+      "equator": "equator",
+      "mid": "mid",
+      "pole": "pole",
+      "inclinationLabel": "Field inclination",
+      "compassLabel": "radical-pair compass",
+      "mapLabel": "magnetite map",
+      "compassReadLabel": "Compass",
+      "mapReadLabel": "Map",
+      "clear": "clear",
+      "scrambled": "scrambled",
+      "holding": "holding",
+      "mapWhy": "rugged crystals hold where the quantum compass fails",
+      "calmNote": "In a quiet, steady field both machines work: the quantum compass in the eye paints the field's angle across vision (direction), while magnetite crystals read raw intensity (position). Earth's birds run both.",
+      "vortexNote": "Drop into the flux vortex and the delicate quantum compass scrambles — its coherence shattered by the noisy field, the overlay breaking into static. The rugged magnetite map holds. A flyer that thrives here must lean on the tough machine, which is why banshees fly the vortex clean where human instruments go blind."
+    },
+    "chirality": {
+      "title": "The same hand, or no splice at all",
+      "subtitle": "An enzyme grips one handedness — flip the molecule and the lock won't turn",
+      "handLabel": "Molecule handedness",
+      "leftHand": "Left-handed",
+      "rightHand": "Right-handed (mirror)",
+      "enzymeLabel": "left-handed enzyme",
+      "bindLabel": "Binding",
+      "binds": "locks in",
+      "rejected": "rejected",
+      "fitsNote": "The left-handed molecule drops into the left-handed pocket — every group meets its socket, and the enzyme grips it. This is the one Earth life uses: amino acids almost all left-handed, sugars all right.",
+      "failsNote": "Flip to the mirror form and two groups swap places: they no longer line up with their sockets, so the enzyme cannot hold it. A mirror-image meal would pass through you untouched — your locks open only to one-handed keys.",
+      "spliceLabel": "Avatar splice",
+      "spliceClean": "Strands interlock",
+      "spliceSmear": "A smear, not a hybrid",
+      "spliceCleanWhy": "Same hand on both genomes → proteins fold on one shared assembly line. The working avatar all but forces this.",
+      "spliceSmearWhy": "Opposite hands → the spliced proteins cannot fold, the code cannot be read. No working hybrid could ever exist."
+    },
+    "carbonSilicon": {
+      "title": "The breath that decides it",
+      "subtitle": "Burn each element and look at the exhaust — one leaves, one stays",
+      "elementLabel": "Backbone element",
+      "carbon": "Carbon",
+      "silicon": "Silicon",
+      "airwayLabel": "respiratory airway",
+      "exhaled": "exhaled",
+      "blocked": "bricked shut",
+      "accumulating": "accumulating",
+      "exhaustLabel": "Waste product",
+      "gas": "a gas — breathed out",
+      "solid": "a solid — quartz, no way out",
+      "bondLabel": "Bond strength",
+      "bondUnit": "kJ/mol",
+      "chainLabel": "Stable chain length",
+      "chainCarbon": "thousands",
+      "chainSilicon": "a few",
+      "carbonNote": "Burn carbon for energy and the exhaust is CO₂ — a gas. It dissolves in blood, rides to the lungs, and leaves on the next breath. Waste disposal is built into the chemistry, and carbon's bonds are strong enough to last yet weak enough to rearrange.",
+      "siliconNote": "Burn silicon and the exhaust is SiO₂ — quartz, sand, a solid. With every breath the airway fills with rock it cannot exhale, until the metabolism bricks itself shut. Silicon's weaker bonds also fall apart past a few atoms in a row. Silicon does not metabolize; it petrifies."
     }
   }
 }

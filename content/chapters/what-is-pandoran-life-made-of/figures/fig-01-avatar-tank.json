@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-avatar-tank",
+  "chapter_slug": "what-is-pandoran-life-made-of",
+  "role": "hero",
+  "narrative_purpose": "The cold-open image: a hybrid body grown from two worlds' DNA, asleep in its tank — so the reader feels the central fact before the argument, that two biospheres can be cut together at the level of the gene and the join holds.",
+  "subject": "A single tall human-Na'vi hybrid body curled asleep inside a vertical glass amniotic tank filled with faintly glowing pale amber-green fluid; the body is long-limbed and blue-skinned with fine luminous freckle-lines, a feeding tube and a few sensor leads trailing from it into the tank wall, eyes closed, utterly still.",
+  "scene": "A dim laboratory at night, the tank as the one lit object, banks of dark unlabelled equipment receding into shadow behind it, faint reflections of the tank's glow on a wet floor.",
+  "camera": "A slow reverent three-quarter view of the upright tank from slightly below, intimate and close on the sleeping figure.",
+  "light": "Key light entirely from within the tank — the amber-green amniotic fluid glowing and the body's own faint blue freckle-lines; deep indigo-teal shadow swallowing the rest of the lab.",
+  "palette": "Void-indigo lab, ocean-teal glass, the body's faint cyan freckles, and a scarce ember-amber warm glow in the tank fluid as the focal accent.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, tactile and observed.",
+  "detail_level": "Crisp on the sleeping body, the curve of the glass and the trailing tube; the lab behind dissolving into dark haze.",
+  "composition": "The tank set just off-centre filling the vertical frame, the curled body as the clear focal subject, generous dark negative space around it.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "modern brand logos", "readable screens"],
+  "consistency_notes": "Cool Pandora palette with the one warm tank-glow accent; the body's blue skin and freckle-lines match the Na'vi look used elsewhere in the book.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

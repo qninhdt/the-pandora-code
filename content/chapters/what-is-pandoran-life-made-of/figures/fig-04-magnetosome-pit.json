@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-magnetosome-pit",
+  "chapter_slug": "what-is-pandoran-life-made-of",
+  "role": "inline",
+  "narrative_purpose": "Shows the chapter's most believable adaptation by lining up the Earth original and the Pandoran version: a bacterium's internal chain of magnetic crystals beside the same crystal-chain seated in a Pandoran animal's sensory tissue — the magnetic sense is real, cheap, and ancient.",
+  "subject": "A two-part naturalist plate joined by faint threading field lines. Left: a single translucent rod-shaped microbe with a neat internal chain of small dark cubic crystals running end to end like beads on a string, aligned along curved field lines. Right: the same kind of dark crystal chain embedded in a small pit of living tissue beneath a Pandoran animal's skin, the field lines continuing across from the left into the right.",
+  "scene": "Two linked specimen studies against deep dark, the microbe enlarged at left, the skin-pit cross-section at right, both threaded by the same faint curved lines of a magnetic field.",
+  "camera": "A close microscope-plate view on the left, a shallow cross-section view into skin on the right, matched in scale so the crystal chains read as the same structure.",
+  "light": "Cool bioluminescent key; the crystal chains catch a faint cyan rim while staying dark and dense; the threading field lines glow very faintly in living teal; indigo shadow throughout.",
+  "palette": "Void-indigo ground, Pandora cyan and living teal for the living tissue and the faint field lines, the crystals near-black with cool rims; a single faint magenta cue on the sensory nerve as a scarce accent.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, anatomical-study feel.",
+  "detail_level": "Crisp on both crystal chains and the curved field lines; surrounding tissue and background softening into haze.",
+  "composition": "Left and right studies bridged by the continuous field lines across a dark central gap that doubles as space for an overlaid callout.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette; the two crystal chains must read as clearly the same kind of structure at two scales — Earth microbe and Pandoran sense organ.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

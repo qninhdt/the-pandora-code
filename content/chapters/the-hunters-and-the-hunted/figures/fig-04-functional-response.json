@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-functional-response",
+  "chapter_slug": "the-hunters-and-the-hunted",
+  "role": "diagram",
+  "narrative_purpose": "Gives the three Holling functional-response shapes a memorable visual: three distinct glowing curves rising from a shared origin so the reader can feel the difference between linear, saturating, and S-shaped responses.",
+  "subject": "Three distinct glowing curves rising from a single shared origin point at the lower left of an abstract plot space. One curve climbs as a straight diagonal line then abruptly flattens to a horizontal ceiling. A second curve climbs steeply at first then bends smoothly over to approach the same ceiling. A third curve hugs low and flat near the origin, then sweeps up in an S-shape, then flattens to the ceiling. The three curves are clearly different colours and clearly separated in shape, sharing only the origin corner.",
+  "scene": "An abstract dark plot field with two faint glowing axis lines meeting at the lower-left origin, gentle haze.",
+  "camera": "Flat head-on diagrammatic view of the plot.",
+  "light": "Self-luminous curves and axis lines against dark; no external light.",
+  "palette": "Void-indigo ground, the three curves in living-teal, ember-amber, and Pandora-cyan respectively, axis lines pale stone-grey.",
+  "style": "Painterly plate that reads as a plot through composition alone, soft glowing curve-lines, not a hard vector chart.",
+  "detail_level": "Moderate: three curve shapes clearly distinct (straight-then-flat, bend-over, S-shape), origin shared, ceiling shared.",
+  "composition": "Two faint axes framing three glowing curves rising left-to-right, dark open margins for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "axis text", "tick marks", "arrows", "leader lines", "grid", "UI", "watermark", "logos"],
+  "consistency_notes": "Cool Pandora palette with the three curve tones matching the interactive figure's tones (teal Type I, amber Type II, cyan Type III). Reads as a teaching plot.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no tick marks, no arrows, no grid, no diagram chrome, no photographic or 3D-render look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

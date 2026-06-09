@@ -47,9 +47,18 @@
       ],
       "effTitle": "Năng lượng đi đâu",
       "eff": {
-        "incandescent": { "name": "Bóng đèn sợi đốt", "heat": "≈95% hao thành nhiệt" },
-        "led": { "name": "Đèn LED", "heat": "phần lớn thành điện-nhiệt" },
-        "firefly": { "name": "Đom đóm (sinh học)", "heat": "gần như không nhiệt" }
+        "incandescent": {
+          "name": "Bóng đèn sợi đốt",
+          "heat": "≈95% hao thành nhiệt"
+        },
+        "led": {
+          "name": "Đèn LED",
+          "heat": "phần lớn thành điện-nhiệt"
+        },
+        "firefly": {
+          "name": "Đom đóm (sinh học)",
+          "heat": "gần như không nhiệt"
+        }
       },
       "legendLight": "Thành ánh sáng"
     },
@@ -87,6 +96,185 @@
       "enzymeLabel": "Enzyme",
       "hint": "Chạm vào một nhánh để xem nhiên liệu và enzyme riêng của nó.",
       "note": "Mỗi nhánh phát sáng bằng một phân tử nhiên liệu khác nhau, với một enzyme khác nhau. Chúng không thừa kế khả năng phát sáng từ tổ tiên chung — mỗi dòng dõi tự mò ra nó."
+    },
+    "umweltLens": {
+      "title": "Một khung cảnh, bốn thế giới",
+      "subtitle": "Cùng một mảnh rừng đêm, nhìn lại qua những giác quan khác nhau",
+      "umgebung": "Thế giới chung — một khu rừng, không hề đổi",
+      "lens": {
+        "human": "Loài người",
+        "navi": "Na'vi",
+        "magnetic": "Từ trường",
+        "biolum": "Ánh sáng phản ứng"
+      },
+      "hint": {
+        "human": "Thế giới ánh sáng khả kiến của loài người: gần như tối đen, vài ánh đèn thiết bị leo lét, gần như mọi thứ bị lọc bỏ trước khi kịp đến.",
+        "navi": "Thị giác đêm của người Na'vi nâng sáng cả khung cảnh — con mắt to với lớp tapetum vắt kiệt từng photon, khu rừng hiện rõ trong bóng tối.",
+        "magnetic": "Kênh cảm từ: những đường sức xuyên thẳng qua người mà loài người chẳng hề hay biết, nay được vẽ thành một tấm bản đồ để định hướng.",
+        "biolum": "Kênh ánh sáng phản ứng: một bước chân bùng thành làn sóng lan tỏa và cây cỏ phát tín hiệu — cả một cuộc trò chuyện mà loài người gần như không thấy."
+      }
+    },
+    "predatorPrey": {
+      "title": "Nhịp đập của kẻ săn và con mồi",
+      "subtitle": "Cùng một cuộc săn, ba mô hình — xem mỗi mô hình đáp lại một cú sốc ra sao",
+      "viewLabel": "Kiểu hiển thị",
+      "timeTab": "Theo thời gian",
+      "phaseTab": "Mặt phẳng pha",
+      "modelLabel": "Chọn mô hình",
+      "naiveTab": "Vòng ngây thơ",
+      "realTab": "Rừng thật",
+      "enrichedTab": "Phì nhiêu",
+      "nudge": "Hích hệ thống",
+      "note": {
+        "naive": "Vòng Lotka-Volterra ngây thơ: một quỹ đạo ổn định trung tính. Hích một cái là nó trôi sang quỹ đạo mới rồi ở lì đó — chẳng có gì kéo nó về. Một thế cân bằng mà chỉ một làn gió cũng làm xê dịch.",
+        "real": "Thêm sức chứa và một kẻ săn bão hòa, quỹ đạo có được một điểm nghỉ thật sự: hích nó là nó xoắn về. Đây là khu rừng phụ thuộc mật độ, đứng vững qua mọi cú sốc.",
+        "enriched": "Nâng sức chứa lên thật cao — làm thế giới phì nhiêu hơn — và quỹ đạo bung ra rộng dần, đáy chạm sát số không. Nghịch lý phì nhiêu: càng nhiều thức ăn, hệ thống càng dễ sụp."
+      },
+      "play": "Chạy",
+      "pause": "Dừng",
+      "scrubLabel": "Tua theo thời gian",
+      "preyLabel": "Hexapede",
+      "predLabel": "Viperwolf",
+      "prey": "Con mồi (hexapede)",
+      "pred": "Kẻ săn (viperwolf)",
+      "timeAxis": "Thời gian →",
+      "preyAxis": "Số con mồi →",
+      "predAxis": "Số kẻ săn →",
+      "ariaTime": "Đồ thị theo thời gian của số con mồi và số kẻ săn, dao động lệch pha",
+      "ariaPhase": "Quỹ đạo trên mặt phẳng pha giữa số con mồi và số kẻ săn"
+    },
+    "functionalResponse": {
+      "title": "Một kẻ săn ăn nhanh đến đâu",
+      "subtitle": "Kéo mật độ con mồi — xem tỷ phần mỗi kẻ săn lấy đi",
+      "analogueLabel": "Hình mẫu trên Pandora",
+      "xAxis": "Mật độ con mồi →",
+      "yAxis": "Nhịp ăn / tỷ phần →",
+      "intakeLabel": "Nhịp ăn (nét liền)",
+      "shareLabel": "Tỷ phần lấy đi (nét đứt)",
+      "refuge": "chốn ẩn nấp",
+      "refugeNote": "Mồi càng thưa, áp lực càng dịu",
+      "type1": {
+        "tab": "Loại I",
+        "animal": "Tulkun lọc mồi",
+        "role": "Lọc thức ăn từ dòng nước - ăn tỉ lệ thuận với lượng mồi cho đến khi no, gần như không có thời gian xử lý.",
+        "note": "Loại I: nhịp ăn tăng theo đường thẳng cùng mật độ mồi rồi đột ngột chạm trần. Đúng kiểu loài lọc mồi như tulkun rẽ nước há miệng - tìm và nuốt là cùng một động tác."
+      },
+      "type2": {
+        "tab": "Loại II",
+        "animal": "Thanator đi săn",
+        "role": "Kẻ săn đơn độc, bận rộn - mỗi con mồi đòi thời gian rượt, hạ, ăn, nên nhịp ăn cong lại rồi chạm trần do thời gian xử lý.",
+        "note": "Loại II: nhịp ăn vọt lên ở mật độ thấp rồi cong xuống chạm trần do thời gian xử lý. Vì ở mật độ thấp kẻ săn ngốn một tỷ lệ lớn hơn của số mồi ít ỏi, đường này gây bất ổn - dồn loài hiếm về phía tuyệt chủng."
+      },
+      "type3": {
+        "tab": "Loại III",
+        "animal": "Viperwolf học mồi",
+        "role": "Kẻ săn biết học và đổi mồi - lờ con mồi hiếm cho đến khi đủ đông để đáng công, tạo một chốn ẩn nấp cho loài đang thưa.",
+        "note": "Loại III: đường hình chữ S - phẳng ở mật độ thấp, rồi dốc lên, rồi chạm trần. Đoạn phẳng gần gốc là chốn ẩn nấp: khi mồi thưa, áp lực săn dịu đi thay vì siết chặt, cho quần thể đang sụp kịp hồi sức. Đây là một trong những cơ chế ổn định mạnh nhất của một hệ sinh thái thật."
+      }
+    },
+    "keystoneCascade": {
+      "title": "Rút viên đá đỉnh vòm",
+      "subtitle": "Rút dần viên nêm đỉnh và xem vòm trụ được bao lâu trước khi buông",
+      "present": "Còn kẻ săn đỉnh",
+      "removed": "Mất kẻ săn đỉnh",
+      "removalLabel": "Mức rút viên đá đỉnh",
+      "keystone": "kẻ săn đỉnh (đá đỉnh vòm)",
+      "apex": "Kẻ săn đỉnh",
+      "grazer": "Thú ăn cỏ lớn",
+      "plants": "Thảm thực vật",
+      "none": "không còn",
+      "phase": {
+        "stable": "Kẻ săn đỉnh là viên nêm đá ở đỉnh vòm — cả vòm tựa vào một con vật hiếm hoi. Đám thú ăn cỏ bị kìm lại và thảm thực vật giữ được sự um tùm.",
+        "tipping": "Viên nêm đã rút gần hết. Vòm đang mất thế tựa; đám thú ăn cỏ đã bắt đầu tăng lên khi lực kìm chúng yếu dần.",
+        "collapsed": "Viên đá đỉnh biến mất và cả vòm buông cùng một lúc — thú ăn cỏ bùng nổ, thảm thực vật sụp đổ, các loài ăn cỏ nhỏ bị chèn ra. Một cú sụp chạy từ đỉnh xuống đáy chỉ vì rút đi một con vật hiếm hoi."
+      }
+    },
+    "xenobiologyLadder": {
+      "aria": "Các tuyên bố sinh học của Pandora đặt trên một dải từ 'gần như bắt buộc' đến 'vật lý cấm tuyệt đối'",
+      "forced": "Gần như bắt buộc",
+      "conceivable": "Có thể hình dung",
+      "forbidden": "Bị cấm tuyệt đối",
+      "verdict": {
+        "survives": "Trụ được",
+        "costly": "Tốn kém",
+        "shatters": "Tan vỡ"
+      }
+    },
+    "nightEyeOptics": {
+      "title": "Con mắt đêm: một chiếc gàu hứng ánh sáng",
+      "subtitle": "Mở rộng đồng tử để hứng nhiều photon hơn — và trả giá ở đầu ra",
+      "aria": "Một con mắt đêm hứng được nhiều ánh sáng hơn khi đồng tử mở rộng, kèm ba cái giá quang học cùng tăng theo",
+      "pupilLabel": "Độ mở đồng tử",
+      "captureLabel": "Ánh sáng hứng được",
+      "noiseLabel": "Nhiễu photon",
+      "aberrationLabel": "Nhòe rìa",
+      "dofLabel": "Độ sâu trường ảnh",
+      "apertureAxis": "Khẩu độ",
+      "tapetumLabel": "Tapetum (gương sau võng mạc)",
+      "on": "bật",
+      "off": "tắt",
+      "hint": "Đồng tử rộng hơn là chiếc gàu rộng hơn hứng cơn mưa photon mỏng manh — nhưng vật lý tính phí: nhiễu hạt giảm trong khi nhòe rìa tăng và lát cắt nét lại mỏng đi. Tapetum là tấm gương sau võng mạc dội những photon bị bỏ lỡ trở lại cho lượt hứng thứ hai, đúng thủ thuật làm mắt mèo lóe sáng trong đèn pha."
+    },
+    "magneticCompass": {
+      "title": "Hai cỗ máy cho một giác quan ta không có",
+      "subtitle": "Một la bàn lượng tử đọc hướng; một bản đồ magnetite đọc vị trí",
+      "fieldLabel": "Trạng thái từ trường",
+      "calm": "Từ trường yên",
+      "vortex": "Xoáy từ thông",
+      "latitudeLabel": "Vĩ độ",
+      "equator": "xích đạo",
+      "mid": "trung",
+      "pole": "địa cực",
+      "inclinationLabel": "Độ nghiêng từ trường",
+      "compassLabel": "la bàn cặp gốc tự do",
+      "mapLabel": "bản đồ magnetite",
+      "compassReadLabel": "La bàn",
+      "mapReadLabel": "Bản đồ",
+      "clear": "rõ",
+      "scrambled": "nhiễu loạn",
+      "holding": "vẫn vững",
+      "mapWhy": "tinh thể thô bền giữ vững nơi la bàn lượng tử thất bại",
+      "calmNote": "Trong một từ trường yên và đều, cả hai cỗ máy đều chạy: la bàn lượng tử trong mắt vẽ góc từ trường lên thị giác (hướng), còn các tinh thể magnetite đọc cường độ thô (vị trí). Chim trên Trái Đất dùng cả hai.",
+      "vortexNote": "Rơi vào xoáy từ thông, la bàn lượng tử mong manh nhiễu loạn — độ kết hợp của nó vỡ vụn trong từ trường ồn ào, lớp phủ tan thành nhiễu. Bản đồ magnetite thô bền vẫn vững. Một loài bay trụ được ở đây ắt phải dựa vào cỗ máy bền bỉ ấy, đó là lý do banshee bay sạch trong xoáy nơi thiết bị của con người mù lòa."
+    },
+    "chirality": {
+      "title": "Cùng một tay, hoặc chẳng ghép được gì",
+      "subtitle": "Một enzyme chỉ nắm một tay — lật phân tử lại thì ổ khóa không xoay",
+      "handLabel": "Tay của phân tử",
+      "leftHand": "Tay trái",
+      "rightHand": "Tay phải (ảnh gương)",
+      "enzymeLabel": "enzyme tay trái",
+      "bindLabel": "Bám dính",
+      "binds": "khớp vào",
+      "rejected": "bị từ chối",
+      "fitsNote": "Phân tử tay trái rơi đúng vào túi tay trái — mọi nhóm gặp đúng ổ của nó, và enzyme nắm chặt. Đây là tay mà sự sống Trái Đất dùng: amino acid gần như đều tay trái, đường đều tay phải.",
+      "failsNote": "Lật sang dạng ảnh gương và hai nhóm đổi chỗ: chúng không còn khớp với ổ của mình, nên enzyme không giữ nổi. Một bữa ăn ảnh gương sẽ trôi qua người bạn nguyên vẹn — ổ khóa trong cơ thể bạn chỉ mở cho chìa một tay.",
+      "spliceLabel": "Ghép gen avatar",
+      "spliceClean": "Hai chuỗi khớp vào nhau",
+      "spliceSmear": "Một vũng nhòe, không phải con lai",
+      "spliceCleanWhy": "Cùng một tay trên cả hai bộ gen → protein gập trên một dây chuyền chung. Con avatar hoạt động được gần như bắt buộc điều này.",
+      "spliceSmearWhy": "Hai tay ngược nhau → protein ghép không gập được, mã không đọc được. Không con lai nào có thể tồn tại."
+    },
+    "carbonSilicon": {
+      "title": "Hơi thở quyết định tất cả",
+      "subtitle": "Đốt mỗi nguyên tố và nhìn khí thải — một thứ bay đi, một thứ ở lại",
+      "elementLabel": "Nguyên tố khung xương",
+      "carbon": "Carbon",
+      "silicon": "Silic",
+      "airwayLabel": "đường hô hấp",
+      "exhaled": "thở ra",
+      "blocked": "bít kín",
+      "accumulating": "đang chất đống",
+      "exhaustLabel": "Sản phẩm thải",
+      "gas": "một chất khí — thở ra được",
+      "solid": "một chất rắn — thạch anh, không lối thoát",
+      "bondLabel": "Độ bền liên kết",
+      "bondUnit": "kJ/mol",
+      "chainLabel": "Chiều dài chuỗi bền",
+      "chainCarbon": "hàng nghìn",
+      "chainSilicon": "vài nguyên tử",
+      "carbonNote": "Đốt carbon lấy năng lượng và khí thải là CO₂ — một chất khí. Nó tan vào máu, trôi tới phổi, và ra đi theo hơi thở kế tiếp. Việc xử lý chất thải nằm sẵn trong hóa học, và liên kết carbon đủ bền để trụ lâu mà vẫn đủ yếu để tái sắp xếp.",
+      "siliconNote": "Đốt silic và khí thải là SiO₂ — thạch anh, cát, một chất rắn. Mỗi hơi thở, đường hô hấp lại đầy thêm đá không thể thở ra, cho đến khi quá trình trao đổi chất tự bít kín. Liên kết yếu hơn của silic cũng rã ra sau vài nguyên tử nối nhau. Silic không trao đổi chất; nó hóa đá."
     }
   }
 }

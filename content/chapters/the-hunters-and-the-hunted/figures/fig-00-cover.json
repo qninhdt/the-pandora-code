@@ -1,0 +1,20 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "the-hunters-and-the-hunted",
+  "role": "hero",
+  "narrative_purpose": "The cover that captures the chapter at a glance: the hunt itself, a pack closing on a single prey animal in the dark, so the reader feels the predator-prey drama the chapter turns into mathematics.",
+  "subject": "A tense hunting scene: a single small six-limbed deer-like browser stands frozen at the centre-right, head up and alert, a bright fan of skin flared open on its skull. Around it, low to the ground, three sleek black six-limbed pack-hunters fan out in a wide half-circle, bodies stretched in a stalking crouch, closing in from the left. Faint bioluminescent markings trace all four animals. The prey is the bright focal point; the hunters are darker shapes emerging from the gloom.",
+  "scene": "A dim bioluminescent forest floor at night, glowing undergrowth and a few tall trunks receding into haze, drifting spores in the air.",
+  "camera": "Naturalist low three-quarter view at the animals' eye level, the half-circle of hunters leading the eye toward the prey.",
+  "light": "Brightest light from glowing flora low in the scene, rim-lighting the prey's flank and flared fan in cyan; the hunters' eyes catch faint glints.",
+  "palette": "Cool teal-indigo dominant, the hunters in deep shadow, the prey lifted by cyan rim light, a scarce warm magenta glint in the predators' eyes.",
+  "style": "Hand-painted naturalist field plate of real alien animals, textured and observed, not a film still.",
+  "detail_level": "High on the four animals and the flared fan; soft and hazy on the forest behind.",
+  "composition": "A reading half-circle of dark hunters on the left curving toward a single lit prey on the right, deep hazy depth, dark negative space above.",
+  "exclude": ["text", "letters", "numbers", "labels", "UI", "watermark", "logos", "human figures", "film branding"],
+  "consistency_notes": "The pack-hunters are the viperwolf archetype (sleek, black, six-limbed) and the prey is the hexapede archetype (small, six-legged, cranial display fan); both must read consistently across this chapter's figures.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no UI chrome, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

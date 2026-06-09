@@ -1,0 +1,20 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "the-pandoran-umwelt",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate on the landing book-map: the same patch of night forest holding two beings who do not share a world — a Na'vi reading a biosphere alive with signal, a human sealed in a far narrower slice of it. One image that says 'perception is a private world.'",
+  "subject": "A Na'vi crouched low on a glowing forest floor at night, one hand resting on moss that answers in a spreading ring of cyan light, her luminous freckles faintly lit, her posture that of someone reading the ground; a few paces behind her the dark angular silhouette of a grounded human aircraft canopy, a small dim figure inside it lit only by a few failing red instrument glows, oblivious to the light around it.",
+  "scene": "Pandoran understorey at night, glowing flora receding into teal haze, the canopy closing overhead so all light comes from living things and from the faint instrument glow of the machine.",
+  "camera": "A low three-quarter view across the forest floor, the Na'vi as near focal subject, the cockpit set deeper and smaller in the mid-ground.",
+  "light": "Bioluminescent key from the moss-ring and flora, lighting the Na'vi from below and ahead; a separate small pocket of cold red artificial light isolating the human in the dark — two light worlds in one frame.",
+  "palette": "Void-indigo base, Pandora cyan and living teal dominant in the glow, the human cockpit a scarce muted amber-red island so the two perceptual worlds read as different temperatures of light.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence.",
+  "detail_level": "Crisp on the Na'vi and the lit ground ring; the cockpit and far forest dissolving into haze.",
+  "composition": "Na'vi low and forward off-centre, the cockpit deeper and opposite, generous dark negative space between them so the gap between two worlds is felt.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "modern Earth objects beyond the single dark aircraft canopy"],
+  "consistency_notes": "Na'vi anatomy and bioluminescent freckles consistent with the book's other Na'vi; cool Pandora palette with from-within bioluminescent key. The establishing 'two worlds, one forest' mood that anchors the whole chapter.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

@@ -1,0 +1,12 @@
+id: radical-pair
+label:
+  vi: Cặp gốc tự do
+  en: Radical pair
+definition:
+  vi: 'Hai phân tử, mỗi phân tử mang một electron chưa ghép cặp, mà spin lượng tử của chúng vẫn còn liên kết với nhau sau khi sinh ra cùng lúc. Cặp spin này dao động qua lại giữa hai trạng thái, và điều kỳ diệu là tốc độ dao động đó nhạy với hướng của từ trường xung quanh. Đây là cơ chế được cho là nền tảng của giác quan từ trường ở chim: một hiệu ứng cơ học lượng tử đủ tinh tế để một sinh vật sống đọc được từ trường yếu ớt của hành tinh. Cũng vì tinh tế mà nó mong manh - nhiễu sóng vô tuyến yếu cũng đủ phá vỡ sự đồng pha lượng tử và làm chim mất phương hướng.'
+  en: 'Two molecules, each carrying one unpaired electron, whose quantum spins remain linked after being created together. The spin pair flickers back and forth between two states, and the remarkable thing is that the rate of that flicker is sensitive to the direction of the surrounding magnetic field. This is the mechanism thought to underlie the magnetic sense in birds: a quantum-mechanical effect subtle enough that a living creature can read a planet''s faint magnetic field. Being subtle, it is also fragile - even weak radio-frequency noise can break the quantum coherence and leave a bird disoriented.'
+see_also:
+  - cryptochrome
+  - magnetoreception
+category: concept
+cover_prompt: A painted abstract of two linked glowing electrons with quantum spin arrows, flickering between aligned and opposed states, faint magnetic field lines tilting them, cyan and magenta on deep indigo, no text, no labels, no numbers.

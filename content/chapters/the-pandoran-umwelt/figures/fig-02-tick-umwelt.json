@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-tick-umwelt",
+  "chapter_slug": "the-pandoran-umwelt",
+  "role": "diagram",
+  "narrative_purpose": "Teaches von Uexkull's core idea with his own example: the tick's entire perceivable world is three cues wide, and the roaring sensory abundance of the forest simply does not exist for it — the perceptual bubble made visible.",
+  "subject": "A single tick waiting on the tip of a grass blade at the centre, enclosed in a faint translucent bubble; outside the bubble a richly detailed forest is rendered dim and grey and ignored; inside the bubble only three cues glow vividly — a rising warm scent plume from a mammal passing below, a soft radiant warmth, and a tactile suggestion of hair texture.",
+  "scene": "A patch of forest floor and low grass, the unsensed forest receding into desaturated grey haze beyond the bubble.",
+  "camera": "A close, slightly low macro view on the grass tip and tick, the bubble filling the frame, the grey forest as backdrop.",
+  "light": "The three living cues glow as the only true light sources; everything outside the bubble is flat, dim and colourless to show it is filtered out.",
+  "palette": "Vivid Pandora cyan and living teal plus a single warm amber scent-plume inside the bubble; muted desaturated grey-indigo outside it.",
+  "style": "Painterly speculative-biology naturalist plate with a faint diagrammatic clarity, hand-painted texture.",
+  "detail_level": "Crisp on the tick and the three glowing cues; deliberately low-detail and grey on the ignored forest.",
+  "composition": "Centred bubble with the tick at its heart, three cue-glows spaced around it, generous dim negative space outside for the contrast to land.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Earth-science figure but rendered in the book's cool palette and from-within glow language so it sits beside the Pandoran plates; keep open dark space beside each cue for callout labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

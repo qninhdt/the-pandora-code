@@ -1,0 +1,13 @@
+id: landscape-of-fear
+label:
+  vi: Bản đồ sợ hãi
+  en: Landscape of fear
+definition:
+  vi: Tấm bản đồ một môi trường sống được vẽ không phải bằng thức ăn mà bằng rủi ro - cách kẻ săn mồi định hình lại nơi và cách con mồi có thể sống, từ lâu trước khi nó bắt được gì. Một con mồi biết kẻ săn rình ở đồng trống sẽ tránh đồng trống, kiếm ăn ở nơi an toàn hơn nhưng tệ hơn, tốn thời gian cảnh giác lẽ ra để gặm cỏ, mang nỗi sợ kinh niên đè cả việc sinh sản. Trên Pandora, một đàn sturmbeest né bìa rừng rậm nơi thanator có thể mai phục, nên thảm thực vật ở đó cứ thế mọc - bị định hình bởi một kẻ săn chưa từng đến, hồi sinh nhờ một nỗi sợ chưa từng bị thử thách.
+  en: A map of a habitat drawn not in food but in risk - how a predator reshapes where and how its prey can live, long before it catches anything. Prey that know a hunter stalks the open meadow avoid the open meadow, feeding in safer but worse ground, spending time watching that they could have spent eating, carrying a chronic dread that even suppresses breeding. On Pandora a sturmbeest herd shuns the dense forest edge where a thanator could wait, so the vegetation there grows untouched - shaped by a predator that never came, regrown because of a fear that was never tested. Often this fear moves more vegetation than the killing does.
+see_also:
+- keystone-species
+- trophic-cascade
+- life-dinner-principle
+category: concept
+cover_prompt: A painted forest clearing at night where one shadowy edge glows faintly red with danger while an open lit area reads as safe, a small herd keeping to the safe side, cool teal palette with a sparing warm warning accent, painterly plate, no text, no labels.

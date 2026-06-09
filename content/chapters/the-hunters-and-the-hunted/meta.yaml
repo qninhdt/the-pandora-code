@@ -1,0 +1,125 @@
+slug: the-hunters-and-the-hunted
+part: the-living-world
+order: 7
+status: published
+title:
+  vi: Kẻ đi săn và kẻ bị săn
+  en: The hunters and the hunted
+subtitle:
+  vi: >-
+    Vì sao một khu rừng đầy nanh vuốt lại không bao giờ tự ăn cạn chính mình - và bộ phương trình
+    đơn giản đến kinh ngạc đã hé lộ nhịp đập ngầm bên dưới mọi cuộc đi săn.
+  en: >-
+    Why a forest full of fangs never eats itself empty - and the startlingly simple pair of
+    equations that reveals the heartbeat under every hunt
+hook:
+  vi: >-
+    Một bầy nantang khép vòng vây quanh con yerik trong bóng tối, và bạn chứng kiến một câu chuyện -
+    kẻ săn mồi, con mồi, một cú vọt chạy thoát thân. Nhưng hãy lùi lại đủ xa, nhìn không phải một
+    cuộc đi săn mà cả vạn cuộc, và câu chuyện ấy hóa thành một cỗ máy: số lượng kẻ săn và con mồi
+    dâng lên hụt xuống cùng nhau nhưng lệch pha, bị khóa chặt trong một điệu nhảy mà không bên nào
+    chủ động bước vào. Bí mật không nằm ở răng nanh hay tốc độ. Nó nằm ở một bộ phương trình đủ đơn
+    giản để viết kín một mặt khăn ăn, đủ mạnh để giải thích vì sao thiêu rụi loài này lại khiến loài
+    kia bùng nổ, và đủ phổ quát để vận hành y hệt trên một mặt trăng cách Trái Đất bốn năm ánh sáng.
+  en: >-
+    A viperwolf pack closes its ring on a hexapede in the dark, and you watch a story - hunter,
+    prey, a desperate sprint to safety. But pull back far enough to see not one hunt but ten
+    thousand, and the story turns into a machine: the numbers of hunter and hunted rise and fall
+    together but out of step, locked in a dance neither side chose to begin. The secret is not in
+    the fangs or the speed. It is in a pair of equations simple enough to write on a napkin,
+    powerful enough to explain why culling one species makes another explode, and universal enough
+    to run identically on a moon four light-years from Earth.
+authors:
+  - bardabez
+reading_time_min: 25
+tags:
+  - ecology
+  - predator-prey-dynamics
+  - population-dynamics
+  - trophic-cascade
+  - astrobiology
+classification:
+  canon_pct: 22
+  inference_pct: 16
+  speculation_pct: 7
+  real_science_pct: 55
+related_chapters:
+  - convergent-but-not-quite
+  - pandoran-tree-of-life
+  - direhorse-and-banshee-up-close
+glossary_terms:
+  - lotka-volterra-equations
+  - density-dependence
+  - carrying-capacity
+  - functional-response
+  - paradox-of-enrichment
+  - keystone-species
+  - landscape-of-fear
+  - optimal-foraging-theory
+  - prey-switching
+  - life-dinner-principle
+  - coevolution
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-the-hunt
+    role: hero
+    asset_status: ready
+  - id: fig-02-the-coupled-cycle
+    role: diagram
+    asset_status: ready
+  - id: fig-03-the-web
+    role: diagram
+    asset_status: ready
+  - id: fig-04-functional-response
+    role: diagram
+    asset_status: ready
+  - id: fig-05-the-blockade
+    role: inline
+    asset_status: ready
+  - id: fig-06-keystone-pull
+    role: comparison
+    asset_status: ready
+  - id: fig-07-the-clean-kill
+    role: inline
+    asset_status: ready
+  - id: fig-08-the-broken-clock
+    role: inline
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Thanator - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Thanator
+  - kind: canon
+    label: Feral Viperwolf - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Feral_Viperwolf
+  - kind: canon
+    label: Great Leonopteryx (Toruk) - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Great_Leonopteryx
+  - kind: canon
+    label: Hammerhead Titanothere - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Hammerhead_Titanothere
+  - kind: canon
+    label: Eywa's Blessing (Na'vi hunting ethic) - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Eywa%27s_Blessing
+  - kind: science
+    label: Lotka-Volterra equations - Wikipedia
+    url: https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations
+  - kind: science
+    label: Functional response (Holling Type I/II/III) - Wikipedia
+    url: https://en.wikipedia.org/wiki/Functional_response
+  - kind: science
+    label: Gause, G.F. (1934) The Struggle for Existence
+    url: https://www.biodiversitylibrary.org/bibliography/4489
+  - kind: science
+    label: Huffaker's mite experiment - Wikipedia
+    url: https://en.wikipedia.org/wiki/Huffaker%27s_mite_experiment
+  - kind: science
+    label: The Big Scientific Debate - Trophic Cascades (U.S. National Park Service)
+    url: https://www.nps.gov/articles/the-big-scientific-debate-trophic-cascades.htm
+  - kind: science
+    label: Yellowstone Wolves and the Forces That Structure Natural Systems (PMC)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4275297/
+  - kind: research-note
+    label: Astro-Ecological Dynamics of Pandora - Trophic Coupling (chapter research note)

@@ -1,0 +1,12 @@
+id: electroreception
+label:
+  vi: Cảm nhận điện trường
+  en: Electroreception
+definition:
+  vi: 'Khả năng dò ra những điện trường yếu ớt trong môi trường. Cá mập và cá đuối mang những lỗ chứa đầy chất keo gọi là bóng Lorenzini, nhạy đến mức cảm được dòng điện sinh ra từ chính cơ bắp của một con mồi đang ẩn nấp, nhờ đó tóm được con vật vùi trong cát mà mắt không hề thấy. Nhưng giác quan này có một giới hạn vật lý cứng rắn: nó chỉ chạy được dưới nước, bởi nước biển dẫn điện còn không khí thì không. Trong không khí, điện trường tan biến gần như tức thì theo khoảng cách - đó là lý do không một loài trên cạn nào đi săn bằng cảm nhận điện trường. Chính vật lý cấm điều đó.'
+  en: 'The ability to detect weak electric fields in the environment. Sharks and rays carry jelly-filled pores called the ampullae of Lorenzini, sensitive enough to feel the current cast by a hidden prey animal''s own muscles, letting them find a creature buried in sand they cannot see. But the sense has a hard physical limit: it works only in water, because seawater conducts electricity and air does not. In air, electric fields collapse almost instantly over distance - which is why no land animal hunts by electroreception. The physics simply forbids it.'
+see_also:
+  - umwelt
+  - lateral-line
+category: bio
+cover_prompt: A painted underwater scene of a shark head with faint glowing pores along its snout, sensing the dim electric aura of a fish hidden under sand, cool teal water light on deep indigo, no text, no labels, no numbers.

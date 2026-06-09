@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-flux-vortex-compass",
+  "chapter_slug": "the-pandoran-umwelt",
+  "role": "inline",
+  "narrative_purpose": "The Pandora payload of the magnetic sense: a banshee flies a clean confident arc through the floating mountains while the magnetic field twists violently around the peaks and a distant human aircraft trails failing sparks — the contrast that proves the animal runs a sense the machines cannot.",
+  "subject": "A mountain banshee banking in flight through a canyon between two floating Hallelujah Mountains, magnetic field lines drawn as glowing contour-ribbons twisting and knotting around the peaks; in the far distance a small human aircraft tilts awkwardly, faint red sparks trailing from its instruments, while the banshee holds a smooth assured curve through the same chaotic field.",
+  "scene": "High among the suspended mountains wreathed in cloud and glowing field-lines, deep sky falling away below into teal haze.",
+  "camera": "A wide dramatic aerial three-quarter view following the banshee through the field-laced canyon, the failing aircraft small and far.",
+  "light": "Cool ambient daylight-through-haze on the peaks, the magnetic field-lines self-glowing magenta-cyan; the banshee rim-lit, the distant aircraft marked by a few failing warm sparks.",
+  "palette": "Void-indigo and ocean-teal sky, magenta and Pandora-cyan field-ribbons, the banshee in teal with a scarce warm spark from the distant machine.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted, atmospheric.",
+  "detail_level": "Crisp on the banshee and the nearest field-lines; mountains and aircraft dissolving into haze.",
+  "composition": "The banshee on a confident diagonal through the lower-third, field-lines spiralling around the peaks above, the tiny struggling aircraft in the far upper corner for contrast, deep negative space of haze.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Same banshee build and cool Pandora palette as the direhorse-and-banshee chapter; floating mountains consistent with the superconductor chapter; field-lines self-luminous, not a digital HUD.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/direhorse-and-banshee-up-close/fig-02-ikran-flight-anatomy.png"]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "the-hunters-and-the-hunted",
+  "role": "hero",
+  "narrative_purpose": "The dim full-bleed atmospheric backdrop the chapter's text floats over: a vast night-forest expanse that evokes a whole wilderness full of unseen hunters and hunted, dissolving into haze so overlaid long-form text stays readable.",
+  "subject": "A vast nocturnal forested valley seen from a very high vantage, ridge after ridge of canopy fading into deep haze, scattered faint constellations of bioluminescent glow across the dark expanse, with a few barely-perceptible pairs of predator-eye glints low among the trees, nothing sharp or focal.",
+  "scene": "Pandoran rainforest at night under a faintly luminous sky, layered atmospheric depth, drifting spore-fog softening every distance.",
+  "camera": "Ultra-wide panoramic high-altitude vista, looking out and slightly down across endless canopy.",
+  "light": "No bright focal source; only diffuse low bioluminescence scattered through the dark and a dim sky-glow, everything low-contrast and shadowed.",
+  "palette": "Deep void-indigo and teal-indigo throughout, only the faintest cyan and living-teal glow points, no warm accent, kept dark and muted.",
+  "style": "Hand-painted atmospheric vista, soft and tonal, detail dissolving into haze, a mood layer not a figure to study.",
+  "detail_level": "Low and soft everywhere; no crisp focal subject; built for text to sit on top.",
+  "composition": "Wide horizon of receding ridges, generous dark sky and haze, deliberately empty of any single subject.",
+  "exclude": ["text", "letters", "numbers", "labels", "UI", "watermark", "logos", "bright focal subject", "human figures", "film branding"],
+  "consistency_notes": "Pure background mood layer; must stay dark and low-contrast so overlaid chapter text remains legible. Not an inline figure.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no UI chrome, no bright focal point, no high contrast, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

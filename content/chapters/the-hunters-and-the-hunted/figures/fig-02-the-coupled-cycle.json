@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-the-coupled-cycle",
+  "chapter_slug": "the-hunters-and-the-hunted",
+  "role": "diagram",
+  "narrative_purpose": "Makes the central idea visible before the math: two population waves that rise and fall together but out of step, the predator wave cresting after the prey wave, so the reader feels the lag the Lotka-Volterra model predicts.",
+  "subject": "Two smooth glowing wave-curves running left to right across a dark field, stacked over the same horizontal baseline: an upper teal-green wave and a lower magenta wave of similar shape, the magenta wave's crests clearly shifted to the right of the teal wave's crests so each magenta peak sits just after a teal peak. Small simple animal silhouettes mark the curves: a tiny six-legged grazer riding the crest of the teal wave, a tiny sleek predator riding the crest of the magenta wave behind it.",
+  "scene": "An abstract dark diagrammatic space, faint haze, the curves self-luminous like light-trails against void-indigo.",
+  "camera": "Flat head-on diagrammatic view of the two stacked waves.",
+  "light": "Self-luminous curves and silhouettes against dark; no external light source.",
+  "palette": "Void-indigo ground, living-teal for the prey wave, biolum-magenta for the predator wave, no other accent.",
+  "style": "Painterly plate that reads as a diagram through composition alone, soft glowing wave-trails, not a hard vector chart.",
+  "detail_level": "Moderate: curves clean and legible, the rightward shift of the magenta crests obvious, silhouettes simple.",
+  "composition": "Two horizontal waves filling the frame, dark open margins above and below for callouts, the phase-offset reading clearly left to right.",
+  "exclude": ["text", "letters", "numbers", "labels", "axis text", "tick marks", "arrows", "leader lines", "grid", "UI", "watermark", "logos"],
+  "consistency_notes": "Teal = prey, magenta = predator, the same colour coding used by the chapter's interactive oscillator. Reads as a teaching picture.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no tick marks, no arrows, no grid, no diagram chrome, no photographic or 3D-render look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

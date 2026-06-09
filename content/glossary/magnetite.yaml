@@ -1,0 +1,12 @@
+id: magnetite
+label:
+  vi: Magnetit
+  en: Magnetite
+definition:
+  vi: 'Một khoáng vật sắt từ tính tự nhiên (oxit sắt). Ở những sinh vật biết định hướng theo từ trường, các tinh thể magnetit cỡ dưới micromet nằm trong những tế bào chuyên biệt, hoạt động như những chiếc kim la bàn tí hon: khi từ trường đổi, chúng xoay hoặc lệch, kéo lên các đầu dây thần kinh quanh chúng và gửi tín hiệu cơ học vào não. Khác với la bàn lượng tử trong mắt vốn cho biết hướng, hệ magnetit được cho là đọc cường độ từ trường tại chỗ - thông tin giúp con vật biết nó đang ở đâu, chứ không chỉ đang quay mặt về đâu. Bền hơn và thô hơn cơ chế cặp gốc tự do.'
+  en: 'A naturally magnetic iron mineral (an iron oxide). In animals that navigate by magnetic field, sub-micron crystals of magnetite sit inside specialised cells and act like tiny compass needles: as the field changes they rotate or deflect, tugging on the nerve endings around them and sending a mechanical signal to the brain. Unlike the quantum compass in the eye, which gives direction, the magnetite system is thought to read the local field intensity - the information that tells an animal where it is, not just which way it faces. Sturdier and cruder than the radical-pair mechanism.'
+see_also:
+  - magnetoreception
+  - radical-pair
+category: concept
+cover_prompt: A painted chain of dark iron-mineral crystals inside a glowing cell, twisting in a tilting magnetic field and tugging a nerve fibre, cool teal cell with magenta field lines on deep indigo, no text, no labels, no numbers.

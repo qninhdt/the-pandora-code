@@ -1,0 +1,12 @@
+id: lateral-line
+label:
+  vi: Đường bên
+  en: Lateral line
+definition:
+  vi: 'Một hàng cảm biến chạy dọc hai bên sườn cá và một số loài lưỡng cư, đọc được dòng chảy và áp lực của nước xung quanh. Bên trong là những đơn vị cảm giác gọi là neuromast - cụm tế bào lông bọc trong một khối keo; khi nước đẩy qua, khối keo nghiêng đi, bẻ cong các tế bào lông và phát ra xung thần kinh. Nhờ vậy con cá "cảm" được vận tốc, hướng và xoáy nước của một sinh vật bơi gần đó mà không cần nhìn thấy - và đó là lý do cả một đàn cá có thể quay ngoặt cùng lúc như một cơ thể duy nhất. Đây là một giác quan thuần túy dưới nước, vì nó đọc chuyển động của chất lỏng.'
+  en: 'A row of sensors running down each flank of a fish and some amphibians, reading the flow and pressure of the surrounding water. Inside are sensory units called neuromasts - clusters of hair cells wrapped in a jelly cap; as water pushes past, the jelly tilts, bending the hair cells and firing a nerve impulse. This lets a fish feel the velocity, direction, and swirl of a nearby swimmer it cannot see - which is how a whole school can turn at once as a single body. It is a purely aquatic sense, because it reads the motion of a fluid.'
+see_also:
+  - umwelt
+  - electroreception
+category: bio
+cover_prompt: A painted close study of a fish flank at night showing a faint line of sensory pores down the side, soft cyan water-flow lines streaming past and bending around them, deep teal and indigo, no text, no labels, no numbers.

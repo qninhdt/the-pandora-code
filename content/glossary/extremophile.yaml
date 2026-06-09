@@ -1,0 +1,12 @@
+id: extremophile
+label:
+  vi: Sinh vật ưa cực hạn
+  en: Extremophile
+definition:
+  vi: 'Một sinh vật - gần như luôn là vi sinh vật - phát triển mạnh trong những điều kiện sẽ giết chết phần lớn sự sống: nước sôi, băng giá, axit đậm đặc, độ mặn cực cao, hay môi trường ngập kim loại độc. Chúng vạch ra ranh giới ngoài của khả năng sống được và là nơi đầu tiên các nhà sinh học vũ trụ tìm đến khi hỏi sự sống có thể chịu đựng tới đâu. Con vi khuẩn hồ Mono trong vụ "sự sống asen" chính là một sinh vật ưa cực hạn: nó chịu được asen, chứ không hề dựng bộ gen từ asen.'
+  en: 'An organism - almost always a microbe - that thrives in conditions that would kill most life: boiling water, deep cold, strong acid, extreme salt, or environments saturated with toxic metals. They chart the outer edge of habitability and are the first place astrobiologists look when asking how much life can endure. The Mono Lake bacterium of the "arsenic life" affair was an extremophile: it tolerated arsenic, it did not build its genome from it.'
+see_also:
+  - biosignature
+  - shadow-biosphere
+category: bio
+cover_prompt: A painted scene of a vividly colored extreme hot spring, scalding turquoise and rust-orange microbial mats ringing steaming water in a barren mineral landscape, beautiful and forbidding, cool palette with scarce warm accents, painterly, no text, no labels, no numbers.

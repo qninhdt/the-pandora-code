@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-the-blockade",
+  "chapter_slug": "the-hunters-and-the-hunted",
+  "role": "inline",
+  "narrative_purpose": "Shows the prey's collective defence and sets up the landscape-of-fear idea: a titanothere herd in a defensive ring, the largest armoured adults facing outward, the young sheltered inside.",
+  "subject": "A herd of massive armoured six-limbed grazing animals formed into a tight defensive ring in a misty clearing. The largest adults face outward in a circle, their broad bony hammer-shaped cranial crests lowered toward the surrounding dark; smaller juveniles are clustered protected in the centre of the ring. The bodies are heavy, armoured across the skull and shoulders, clearly built like living walls.",
+  "scene": "A misty Pandoran forest clearing at dusk, faint bioluminescent motes drifting in the air, the treeline a dark wall of haze around the herd.",
+  "camera": "Slightly elevated three-quarter view looking down onto the defensive ring so its circular formation reads clearly.",
+  "light": "Cool ambient glow from surrounding flora, the armoured backs catching faint cyan rim light, the centre of the ring darker and sheltered.",
+  "palette": "Cool teal-indigo dominant, armoured hides in deep desaturated stone and shadow, a scarce warm amber glint low in the haze.",
+  "style": "Hand-painted naturalist field plate, textured and observed, not a film still.",
+  "detail_level": "High on the outward-facing adults and the ring formation; softer on the sheltered young and the hazy treeline.",
+  "composition": "Circular herd formation centred in frame, dark hazy margins around the edges for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "UI", "watermark", "logos", "human figures", "film branding"],
+  "consistency_notes": "These are hammerhead titanothere archetypes: over-large, bony hammer-crest, armoured frontal mass. Keep their build consistent if they recur.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no UI chrome, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

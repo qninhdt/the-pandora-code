@@ -1,0 +1,135 @@
+slug: the-pandoran-umwelt
+part: the-living-world
+order: 17
+status: published
+title:
+  vi: Umwelt – Lăng kính tri giác trên Pandora
+  en: The Pandoran umwelt
+subtitle:
+  vi: >-
+    Cùng một khu rừng, nhưng người Na'vi, con ikran và viên phi công loài người sống trong ba thế
+    giới khác nhau — bởi mỗi loài chỉ cảm nhận được phần hiện thực mà giác quan của nó cho phép.
+  en: >-
+    One forest, but a Na'vi, an ikran and a human pilot live in three different worlds — because
+    each creature perceives only the slice of reality its senses can reach.
+hook:
+  vi: >-
+    Đặt một người Na'vi và một viên phi công loài người vào cùng một khu rừng đêm trên Pandora, và
+    họ sẽ không hề ở chung một thế giới. Mặt đất bừng sáng dưới mỗi bước chân của người Na'vi; bảng
+    điều khiển của viên phi công thì mù lòa giữa từ trường hỗn loạn. Câu hỏi không phải "ai nhìn
+    thấy đúng?" mà là "vì sao không một ai trong họ nhìn thấy toàn bộ?" — và câu trả lời là một khái
+    niệm ra đời từ một con ve, mở rộng thành định luật cho mọi giác quan từng tồn tại.
+  en: >-
+    Put a Na'vi and a human pilot in the same Pandoran forest at night and they will not share a
+    world. The ground lights up beneath the Na'vi's every step; the pilot's instruments go blind in
+    the churning magnetism. The question is not "who sees correctly?" but "why does neither of them
+    see all of it?" — and the answer is an idea born from a tick, widened into a law that governs
+    every sense that ever evolved.
+authors:
+  - bardabez
+reading_time_min: 27
+tags:
+  - umwelt
+  - sensory-ecology
+  - magnetoreception
+  - perception
+  - tsaheylu
+  - bioluminescence
+classification:
+  canon_pct: 22
+  inference_pct: 20
+  speculation_pct: 10
+  real_science_pct: 48
+related_chapters:
+  - when-glow-is-the-norm
+  - floating-mountains-and-the-superconductor
+  - convergent-but-not-quite
+  - direhorse-and-banshee-up-close
+glossary_terms:
+  - umwelt
+  - magnetoreception
+  - cryptochrome
+  - radical-pair
+  - magnetite
+  - tapetum-lucidum
+  - electroreception
+  - echolocation
+  - lateral-line
+  - proprioception
+  - tsaheylu
+  - bioluminescence
+  - fluorescence
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-two-worlds
+    role: hero
+    asset_status: ready
+  - id: fig-02-tick-umwelt
+    role: diagram
+    asset_status: ready
+  - id: fig-03-eye-optics
+    role: diagram
+    asset_status: ready
+  - id: fig-04-fauna-senses
+    role: comparison
+    asset_status: ready
+  - id: fig-05-magnetoreception
+    role: diagram
+    asset_status: ready
+  - id: fig-06-hidden-senses
+    role: comparison
+    asset_status: ready
+  - id: fig-07-flux-vortex-compass
+    role: inline
+    asset_status: ready
+  - id: fig-08-tsaheylu-link
+    role: diagram
+    asset_status: ready
+  - id: fig-09-freckle-signal
+    role: inline
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Na'vi - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Na%27vi
+  - kind: canon
+    label: Queue - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Queue
+  - kind: canon
+    label: Flux Vortex - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Flux_Vortex
+  - kind: canon
+    label: Viperwolf - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Viperwolf
+  - kind: canon
+    label: Heartlands Ikran - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Heartlands_Ikran
+  - kind: science
+    label: Jakob von Uexküll - A Foray into the Worlds of Animals and Humans (1934)
+    url: https://www.upress.umn.edu/9780816659005/a-foray-into-the-worlds-of-animals-and-humans/
+  - kind: science
+    label: Thomas Nagel - What Is It Like to Be a Bat? (The Philosophical Review, 1974)
+    url: https://www.jstor.org/stable/2183914
+  - kind: science
+    label: Ed Yong - An Immense World (2022)
+    url: https://www.penguinrandomhouse.com/books/612833/an-immense-world-by-ed-yong/
+  - kind: science
+    label: >-
+      Hore & Mouritsen - The Radical-Pair Mechanism of Magnetoreception (Annual Review of
+      Biophysics)
+    url: https://www.annualreviews.org/doi/10.1146/annurev-biophys-032116-094545
+  - kind: science
+    label: Magnetoreception in birds (Journal of the Royal Society Interface, 2019)
+    url: https://royalsocietypublishing.org/doi/10.1098/rsif.2019.0295
+  - kind: science
+    label: A hybrid compass mechanism combining radical pairs and magnetite crystals (PNAS)
+    url: https://www.pnas.org/doi/10.1073/pnas.2524093123
+  - kind: science
+    label: Ampulla of Lorenzini - Electroreception (Encyclopaedia Britannica)
+    url: https://www.britannica.com/science/ampulla-of-Lorenzini
+  - kind: research-note
+    label: >-
+      The Pandoran Umwelt - A Comparative Xenobiological and Sensory Ecological Analysis (chapter
+      research note)

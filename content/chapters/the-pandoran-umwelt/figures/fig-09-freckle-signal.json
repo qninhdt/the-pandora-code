@@ -1,0 +1,20 @@
+{
+  "id": "fig-09-freckle-signal",
+  "chapter_slug": "the-pandoran-umwelt",
+  "role": "inline",
+  "narrative_purpose": "Show the Na'vi luminous freckles as an honest, un-fakeable signal: the same bilateral pattern on two figures at two intensities — bright on one mid-exertion, soft on a calm one — so the reader sees that the glow tracks inner state and follows the body's own nerves and vessels.",
+  "subject": "A close naturalist study of two Na'vi heads-and-shoulders side by side at night, blue skin marked with fine cyan-white luminous freckles in precise bilateral lines along the cheekbones, brow, neck and collarbone; on the left figure the freckles glow bright and hot with exertion, on the right figure the same pattern rests soft and dim with calm.",
+  "scene": "Against a dark forest-night ground, the two figures lit chiefly by their own skin-light, faint teal haze behind.",
+  "camera": "A close portrait framing of both figures' faces and upper shoulders, even and observational.",
+  "light": "Self-luminous skin freckles as the key light, brighter on the aroused figure; cool ambient indigo fill; no external warm source so the colour reads as one blue-white hue at two intensities.",
+  "palette": "Na'vi indigo-blue skin, Pandora cyan and mist-white in the freckles, void-indigo ground; strictly no hue shift between the two states — only intensity.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted skin texture, observed portrait energy.",
+  "detail_level": "Crisp on the freckle-lines and their bilateral tracing of vessels and nerves; backgrounds soft.",
+  "composition": "Two near-symmetric portraits side by side for direct comparison, dark space above and between for callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "colour-shifting glow", "rainbow skin", "Avatar branding"],
+  "consistency_notes": "Single blue-white photophore hue at two brightnesses (canon: intensity changes, not colour); freckles trace vessels and nerves in mirrored bilateral lines; same Na'vi skin treatment as other chapters.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style, no multicolour glow",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/when-glow-is-the-norm/fig-02-navi-photophores.png"]
+}

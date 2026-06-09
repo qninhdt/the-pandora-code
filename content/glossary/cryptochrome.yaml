@@ -1,0 +1,13 @@
+id: cryptochrome
+label:
+  vi: Cryptochrome
+  en: Cryptochrome
+definition:
+  vi: 'Một protein nhạy sáng nằm trong võng mạc của chim di cư, được cho là trái tim của chiếc la bàn từ trường lượng tử. Khi một photon ánh sáng xanh chạm vào nó, một electron bị đẩy ngang qua phân tử, để lại một cặp gốc tự do mà spin lượng tử của chúng liên kết với nhau. Tốc độ dao động của cặp spin này nhạy với góc của từ trường xung quanh, nên tín hiệu mà phân tử gửi về não thay đổi theo hướng đầu của con chim - biến hóa học phân tử thành một giác quan định hướng. Đây là chiếc la bàn đo độ nghiêng, đọc góc cắm của đường sức từ chứ không phải bắc-nam.'
+  en: 'A light-sensitive protein in the retina of migratory birds, thought to be the heart of the quantum magnetic compass. When a photon of blue light strikes it, an electron is kicked across the molecule, leaving a radical pair whose quantum spins are linked. The rate at which that spin pair flickers is sensitive to the angle of the surrounding magnetic field, so the signal the molecule sends to the brain changes with which way the bird''s head points - turning molecular chemistry into a direction sense. It is an inclination compass, reading the dip angle of the field lines rather than north and south.'
+see_also:
+  - radical-pair
+  - magnetoreception
+  - magnetite
+category: bio
+cover_prompt: A painted molecular study of a cryptochrome protein in a bird's eye, a blue photon striking it and a glowing linked electron pair forming, faint field lines overlaid, cool cyan and magenta against deep indigo, no text, no labels, no numbers.

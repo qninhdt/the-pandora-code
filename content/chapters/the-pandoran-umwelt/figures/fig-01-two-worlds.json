@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-two-worlds",
+  "chapter_slug": "the-pandoran-umwelt",
+  "role": "hero",
+  "narrative_purpose": "The cold-open contrast that frames the whole chapter: the same square metre of night forest experienced as two utterly different worlds — the Na'vi reading a biosphere of light and field, the human sealed in a dim, instrument-blind slice.",
+  "subject": "A split-feeling single scene: on the left a Na'vi crouched with a hand to glowing moss, a ring of cyan light spreading from her touch, the understorey around her alive with blue and violet glow and her own freckles faintly lit; on the right, framed by the dark interior of a human cockpit, a pilot lit only by a few failing red instrument glows, the forest beyond his canopy flat, black and unreadable.",
+  "scene": "One stretch of Pandoran night forest, the living-light half and the blacked-out-cockpit half meeting near the centre, same trees visible through both.",
+  "camera": "A wide eye-level view holding both the crouched Na'vi and the cockpit interior in one frame, the dividing darkness down the middle.",
+  "light": "Left half keyed by warm-cool bioluminescence from the ground and flora; right half keyed by cold dim red instrument light only, the forest beyond it unlit — the same place under two completely different light economies.",
+  "palette": "Void-indigo throughout, Pandora cyan and living teal flooding the Na'vi half, a scarce muted red-amber confined to the cockpit half.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed and atmospheric.",
+  "detail_level": "Crisp on the Na'vi's hand and the lit moss and on the pilot's lit face; both backgrounds falling into haze and black.",
+  "composition": "A near-symmetrical split with a dark seam of negative space between the two worlds, neither side dominant, the contrast itself the subject.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI text", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Na'vi anatomy and freckle bioluminescence consistent with the book; keep a dark, low-detail band along the central seam so interface callout labels can sit cleanly.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

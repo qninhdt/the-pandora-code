@@ -1,0 +1,20 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "what-is-pandoran-life-made-of",
+  "role": "hero",
+  "narrative_purpose": "Full-bleed atmospheric mood layer behind the chapter: a vast, dim Pandoran nightscape that sets the feeling of a living world built, all the way down, from the same chemistry as our own.",
+  "subject": "An ultra-wide panoramic Pandoran night vista from a high vantage: an endless forested basin far below threaded with faint rivers of bioluminescent cyan and teal, drifting banks of luminous spore-fog, no single bright focal subject — only the slow low glow of a living landscape under a dark sky.",
+  "scene": "A high ridge overlook at deep night, the basin receding for miles into layered atmospheric haze, the great dim unlit bulk of Polyphemus implied low on the far horizon.",
+  "camera": "An extreme wide, high-vantage panoramic view, distant and contemplative, horizon low.",
+  "light": "Very low overall; scattered faint bioluminescent glows in the far forest as the only light, deep indigo-teal atmosphere swallowing the distance, no bright highlights.",
+  "palette": "Dominated by void-indigo and deep teal, with only sparse dim cyan glow far below; deliberately dark and low-contrast.",
+  "style": "Painterly speculative-biology naturalist plate, atmospheric, hand-painted depth.",
+  "detail_level": "Soft and low-contrast throughout; everything dissolving into atmospheric haze, no crisp focal element.",
+  "composition": "Wide horizontal panorama with deep atmospheric layers, low horizon, vast dark sky above, the glow kept faint and distant — built to sit behind text.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "bright focal subject", "foreground creatures", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette, dark and atmospheric, intentionally low-contrast as a background layer; no bright subject to compete with overlaid text.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no bright focal point, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

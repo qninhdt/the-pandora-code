@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-fauna-senses",
+  "chapter_slug": "the-pandoran-umwelt",
+  "role": "comparison",
+  "narrative_purpose": "A survey plate of Pandoran fauna sensory organs — the thanator's mobile quills, the viperwolf's tapetum eyes, the direhorse's antennae, the hexapede's membrane fans — to show each animal's senses are tuned to a different perceptual niche.",
+  "subject": "A four-panel naturalist study sheet of Pandoran animal heads, each emphasising its sensory apparatus: a thanator's armored skull ringed with mobile red-and-yellow sensory quills; a viperwolf's head with large green light-reflecting eyes; a direhorse's head with two long backswept mobile antennae; a hexapede's head with twin horns sheathing a thin taut membrane fan.",
+  "scene": "A dark field-notebook study sheet, the four heads arranged in a grid against deep indigo, each in its own faint pool of glow.",
+  "camera": "Consistent three-quarter portrait framing on each head, close and observational.",
+  "light": "Cool bioluminescent rim light picking out each sensory organ; eyes catching a faint retroreflective shine; deep shadow between panels.",
+  "palette": "Void-indigo ground and teal mid-tones, Pandora cyan glow on the sensory organs, scarce amber only on the thanator quills.",
+  "style": "Painterly speculative-biology naturalist study sheet, hand-painted, observed.",
+  "detail_level": "High detail on each sensory structure — quills, eyes, antennae, membrane; bodies cropped out, backgrounds plain.",
+  "composition": "A clean 2x2 grid of heads with dark gutters and open space around each for callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "panel borders with text", "Avatar branding"],
+  "consistency_notes": "Match each creature's established canon look; keep the four heads visually distinct and each ringed by dark space for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/direhorse-and-banshee-up-close/fig-01-pali-specimen.png"]
+}

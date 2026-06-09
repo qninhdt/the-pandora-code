@@ -1,0 +1,13 @@
+id: functional-response
+label:
+  vi: Phản ứng chức năng
+  en: Functional response
+definition:
+  vi: "Tốc độ một cá thể săn mồi ăn thịt thay đổi ra sao khi mật độ con mồi tăng lên. Nhà sinh thái học C. S. Holling tìm ra ba dáng hình: Loại I tăng tuyến tính rồi dừng đột ngột (kẻ ăn lọc như tulkun); Loại II tăng rồi cong lại chạm trần do thời gian xử lý mồi (kẻ săn đơn độc bận rộn như thanator); và Loại III hình chữ S - chậm ở mật độ thấp, dốc lên rồi phẳng ra - dáng hình cứu được con mồi hiếm vì kẻ săn lờ đi thứ quá khó tìm. Chỉ đường cong chữ S mới uốn xuống gần gốc, và chỗ uốn ấy là một nơi trú ẩn."
+  en: "How fast a single predator eats as its prey grow more abundant. The ecologist C. S. Holling sorted it into three shapes: Type I rises in a straight line then stops abruptly (a filter-feeder like a tulkun); Type II rises then bends to a ceiling set by handling time (a busy solitary hunter like a thanator); and the S-shaped Type III - slow at low density, then steep, then flat - the shape that spares rare prey because the hunter ignores what is too scarce to be worth learning. Only the S-curve bends down near the origin, and that bend is a refuge that lets crashing prey recover."
+see_also:
+- lotka-volterra-equations
+- prey-switching
+- density-dependence
+category: concept
+cover_prompt: A painted diagram of three rising curves glowing against the dark - one straight line, one bending to a flat ceiling, one an S-shape - in cool cyan and teal, painterly plate energy, no text, no numbers, no labels, no axis ticks.

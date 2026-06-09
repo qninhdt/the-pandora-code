@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-magnetoreception",
+  "chapter_slug": "the-pandoran-umwelt",
+  "role": "diagram",
+  "narrative_purpose": "Show the two machines behind a magnetic sense — the light-driven radical-pair compass inside the eye that reads field direction, and the magnetite crystals that read field intensity as a map — so the reader grasps how an animal can feel a field we cannot.",
+  "subject": "A two-part naturalist diagram. On one side, a cutaway of an eye with a single glowing protein molecule splitting into a linked pair of glowing points (a radical pair), faint magnetic field contour lines overlaid across the retina like a compass. On the other side, a chain of small dark angular crystals inside a cell, physically tugging on a fine nerve fibre.",
+  "scene": "A dark study ground, the two mechanisms set apart in their own pools of glow against deep indigo.",
+  "camera": "Flat diagrammatic study view, close on each mechanism.",
+  "light": "Cool bioluminescent glow from the radical pair and the field lines; the magnetite chain catching a hard cool rim; deep shadow surround.",
+  "palette": "Void-indigo ground, Pandora cyan and living teal for the molecular glow and field lines, magenta accent on the active radical pair.",
+  "style": "Painterly speculative-biology diagram plate, hand-painted, clean and observed.",
+  "detail_level": "Crisp on the molecule, the field-line overlay and the crystal chain; plain dark background.",
+  "composition": "Two clear zones side by side — eye-compass left, magnetite-map right — each ringed with dark open space for labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "equations", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette and from-within glow; field lines should read as a perceived overlay, not a technical schematic.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no equations, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

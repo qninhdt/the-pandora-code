@@ -1,0 +1,20 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "the-pandoran-umwelt",
+  "role": "hero",
+  "narrative_purpose": "The dim, immersive mood layer the chapter's text floats over: a vast Pandoran night forest seen from high above, so wide and atmospheric that no single subject competes with the prose, only a sense of a whole living world breathing in the dark.",
+  "subject": "An ultra-wide, very-high-vantage vista over an endless Pandoran rainforest canopy at night, faint scattered bioluminescent glows threaded through the dark foliage far below, distant floating mountains as dim silhouettes wreathed in haze on the horizon.",
+  "scene": "Seen from far above the canopy, layered ridgelines of forest dissolving into deep atmospheric haze; sky a near-black indigo with the faint banded mass of Polyphemus low and unobtrusive.",
+  "camera": "An ultra-wide panoramic aerial vantage, very high and distant, everything small and atmospheric.",
+  "light": "Very low-key: faint cool bioluminescent speckle from the forest below, dim planetshine; deliberately dark and low-contrast so overlaid text stays legible.",
+  "palette": "Dominant void-indigo and deep teal-indigo, only the faintest threads of Pandora cyan and living teal glow, almost no warm accent.",
+  "style": "Painterly speculative-biology naturalist plate, atmospheric, soft, detail dissolving into haze.",
+  "detail_level": "Low overall — no crisp focal subject; everything soft, distant, and dim, dissolving into atmospheric depth.",
+  "composition": "Wide horizontal mood field with deep haze, no bright focal point, generous dark expanses across the whole frame for text overlay.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "bright focal subject", "foreground figures", "Avatar branding"],
+  "consistency_notes": "Macro establishing mood for this chapter; dark, low-contrast, immersive; same cool Pandora palette and from-within glow as the chapter cover but far dimmer and wider.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style, no bright central subject",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

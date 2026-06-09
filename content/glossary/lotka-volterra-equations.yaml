@@ -1,0 +1,13 @@
+id: lotka-volterra-equations
+label:
+  vi: Phương trình Lotka-Volterra
+  en: Lotka-Volterra equations
+definition:
+  vi: Cặp phương trình đơn giản đến kinh ngạc, được Alfred Lotka và Vito Volterra viết ra độc lập vào những năm 1920, mô tả cách số lượng kẻ săn mồi và con mồi tác động lẫn nhau. Chỉ với ba giả định - con mồi tự sinh sôi, kẻ săn ăn thịt chúng mỗi khi chạm mặt, kẻ săn chết đói khi vắng mồi - phương trình tiên đoán rằng hai quần thể sẽ dao động mãi mãi theo những đợt sóng móc nối, với đỉnh của kẻ săn luôn trễ một nhịp sau đỉnh của con mồi.
+  en: A startlingly simple pair of equations, written independently by Alfred Lotka and Vito Volterra in the 1920s, describing how predator and prey numbers drive each other. From just three assumptions - prey breed on their own, predators eat them whenever they meet, predators starve without them - the equations predict that the two populations will oscillate forever in linked waves, the predator peak always lagging a beat behind the prey peak.
+see_also:
+- limit-cycle
+- functional-response
+- carrying-capacity
+category: concept
+cover_prompt: A painted pair of glowing sine-like waves, one cyan and one teal, rising and falling across a dark field with the teal wave trailing a quarter-step behind the cyan, cool Pandora palette, painterly plate, no text, no numbers, no labels.

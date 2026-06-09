@@ -1,0 +1,12 @@
+id: echolocation
+label:
+  vi: Định vị bằng tiếng vang
+  en: Echolocation
+definition:
+  vi: 'Lối cảm nhận chủ động: thay vì chờ thế giới gửi tín hiệu đến, con vật tự phát ra âm thanh rồi đọc tiếng vang dội về để dựng nên một bức tranh bằng âm. Dơi và cá heo phát ra những tiếng kêu tần số cao rồi giải mã âm phản hồi để biết khoảng cách (từ độ trễ của tiếng vang), vận tốc (từ độ dịch tần số - hiệu ứng Doppler), kích thước và bề mặt (từ biên độ và sắc âm dội về). Đây là cảm nhận chủ động vì con vật tự sinh ra tín hiệu để dò đường, khác với mắt vốn chỉ thụ động hứng lấy ánh sáng có sẵn.'
+  en: 'A form of active sensing: instead of waiting for the world to send a signal, the animal emits a sound and reads the returning echoes to build a picture out of sound. Bats and dolphins emit high-frequency calls and decode the echoes for distance (from the time delay), speed (from the frequency shift - the Doppler effect), and size and texture (from the amplitude and tone of what returns). It is active because the animal generates its own probing signal, unlike the eye, which passively receives whatever light is already there.'
+see_also:
+  - umwelt
+  - magnetoreception
+category: bio
+cover_prompt: A painted night scene of a bat in flight emitting faint concentric sound rings that bounce off a moth ahead and return, the echo drawn as soft cyan arcs against deep indigo, no text, no labels, no numbers.

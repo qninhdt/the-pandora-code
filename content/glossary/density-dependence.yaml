@@ -1,0 +1,13 @@
+id: density-dependence
+label:
+  vi: Sự phụ thuộc mật độ
+  en: Density dependence
+definition:
+  vi: "Khi tốc độ sinh trưởng của một quần thể tự điều chỉnh theo độ đông đúc của chính nó - sinh sôi nhanh khi còn thưa, chậm lại khi chen chúc, bởi thức ăn cạn, bệnh tật lan và cạnh tranh gay gắt. Đây chính là lực hồi phục mà mô hình đồ chơi thiếu mất: nó biến những vòng quay mong manh, dễ vỡ thành một điểm cân bằng thật sự mà hệ thống tìm về sau mỗi cú sốc, như viên bi lăn về đáy bát. Khu rừng đầy đặn vì nó được dựng nên, ở mọi tầng bậc, để tự kéo mình về trạng thái cân bằng."
+  en: "When a population's growth rate adjusts to its own crowding - breeding fast when sparse, slowing as it packs in, because food runs short, disease spreads and competition bites. This is the restoring force the toy model lacked: it turns fragile, easily-shattered orbits into a true balance the system returns to after a shock, the way a marble rolls back to the bottom of a bowl. A forest stays full because it is built, at every level, to pull itself back toward balance."
+see_also:
+- carrying-capacity
+- paradox-of-enrichment
+- functional-response
+category: concept
+cover_prompt: A painted bowl-shaped curve with a glowing marble resting at its lowest point and faint arrows showing it rolling back toward the centre, cool teal and cyan light, painterly plate, no text, no numbers, no labels.
