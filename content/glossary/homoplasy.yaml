@@ -1,0 +1,13 @@
+id: homoplasy
+label:
+  vi: Tương đồng giả (homoplasy)
+  en: Homoplasy
+definition:
+  vi: 'Sự giống nhau giữa các loài *không* do thừa hưởng từ một tổ tiên chung - một nét trùng hợp phát sinh độc lập, chứ không phải một chữ ký truyền lại. Tương đồng giả là kẻ thù lớn nhất của việc dựng cây gia phả, vì nó trông y hệt bằng chứng huyết thống thật. Nó nảy sinh qua tiến hóa hội tụ (hai dòng dõi xa lạ tìm ra cùng một lời giải), qua tiến hóa song song, hoặc qua đảo ngược (một đặc điểm phái sinh quay về trạng thái tổ tiên). Phân biệt tương đồng giả với tương đồng thật là cả nghệ thuật của phân nhánh học.'
+  en: 'Similarity between species that is *not* due to inheritance from a common ancestor - a coincidence arrived at independently, not a signature passed down. Homoplasy is the great enemy of tree-building, because it looks exactly like true evidence of kinship. It arises through convergent evolution (distant lineages finding the same solution), through parallel evolution, or through reversal (a derived trait returning to the ancestral state). Telling homoplasy from true homology is the whole art of cladistics.'
+see_also:
+- homologous-structures
+- convergent-evolution
+- long-branch-attraction
+category: bio
+cover_prompt: A painted pair of unrelated glowing creatures from far-apart branches that have independently arrived at the same body feature, a deceptive shared look highlighted, cool teal and indigo with a misleading amber glow, bioluminescent, no text, no labels.

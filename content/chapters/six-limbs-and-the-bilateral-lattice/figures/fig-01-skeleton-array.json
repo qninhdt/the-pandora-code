@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-skeleton-array",
+  "chapter_slug": "six-limbs-and-the-bilateral-lattice",
+  "role": "hero",
+  "narrative_purpose": "The cold-open anchor: three Pandoran skeletons laid out together so the reader sees, beneath running legs, wings, and flippers, the same six-limbed four-eyed frame repeating - the puzzle the whole chapter solves.",
+  "subject": "Three complete Pandoran skeletons laid out in a row on a dark specimen bench: a six-legged running predator (thanator-like), a winged flyer (banshee-like) with two great wing-arms and a smaller hind pair, and a six-flippered swimmer (tulkun-like). Each skeleton clearly shows six limb attachments, four eye sockets in the skull, and the lightweight bones riddled with small holes and threaded with darker carbon-like fibre.",
+  "scene": "A field-laboratory bench at night, the three skeletons arranged parallel under a cold overhead lamp, the room beyond falling into dark haze.",
+  "camera": "A slightly elevated three-quarter view down the row of skeletons, all three sharp, the bench surface receding into soft focus.",
+  "light": "Cool clinical lamp from above plus a faint bioluminescent glow seeping from within the porous bones; deep indigo shadow pooling under the bench.",
+  "palette": "Void-indigo background, cool bone-grey and pale teal on the skeletons, faint cyan glow in the marrow holes, one scarce amber pinpoint.",
+  "style": "Painterly naturalist specimen plate, hand-painted texture, museum-array clarity.",
+  "detail_level": "Crisp on the limb attachments, the four eye sockets, and the fenestrated carbon-threaded bone; bench and background dissolving into haze.",
+  "composition": "Three skeletons as parallel horizontal bands filling the frame, aligned so the matching six-limb frame reads across all three, dark negative space above.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "living flesh", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with bioluminescent key from within the bone. Same dark glowing-specimen mood as the chapter cover.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/six-limbs-and-the-bilateral-lattice/fig-00-cover.png"]
+}

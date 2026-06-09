@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-pali-specimen",
+  "chapter_slug": "direhorse-and-banshee-up-close",
+  "role": "hero",
+  "narrative_purpose": "The cold-open anchor for the pa'li: an elephant-massed six-limbed runner laid out so the reader sees the contradiction the chapter opens on - enormous bulk carried on slender, athletic legs, with the middle limb pair, long nectar-feeding neck, and flank breathing slits all visible.",
+  "subject": "A complete direhorse specimen presented in profile on a dark bench: a large six-limbed herbivore with three pairs of limbs - elongated front and rear pairs built for running, and a smaller middle pair set between them - all strikingly slender for the body's bulk. A long muscular neck leads to a small streamlined head with a tubular sucker-mouth. A pair of breathing slits (opercula) sits low on the flank behind the neck. The leg bones glow faintly from within, lightweight and threaded with darker carbon-like fibre.",
+  "scene": "A field-laboratory bench at night, the animal posed mid-stance, the room beyond falling into dark haze.",
+  "camera": "A clean side-on profile view, the whole body sharp from nose to hindquarters, bench receding into soft focus.",
+  "light": "Cool clinical lamp from above plus a faint bioluminescent glow within the porous leg bones; deep indigo shadow under the body.",
+  "palette": "Void-indigo background, cool bone-grey and pale teal on the body, faint cyan glow in the leg bones, one scarce amber pinpoint at the eye.",
+  "style": "Painterly naturalist specimen plate, hand-painted texture, museum clarity.",
+  "detail_level": "Crisp on the three limb pairs, the slender leg bones, the long neck and sucker-mouth, and the flank opercula; bench and background dissolving into haze.",
+  "composition": "The animal in full profile filling the horizontal frame, slight elevation, dark negative space above for breathing room, 3:2 landscape.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "riders", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with bioluminescent key from within the bone. Same dark glowing-specimen mood as the chapter cover.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/direhorse-and-banshee-up-close/fig-00-cover.png"]
+}

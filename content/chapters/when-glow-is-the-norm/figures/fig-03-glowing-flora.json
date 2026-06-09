@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-glowing-flora",
+  "chapter_slug": "when-glow-is-the-norm",
+  "role": "inline",
+  "narrative_purpose": "Show the named Pandoran flora carrying the forest's light in different colours and forms, grounding the canon claim that the glow begins with the plants and saturates the understorey.",
+  "subject": "A naturalist lineup of several distinct glowing Pandoran plants at night: a tall warbonnet fern with fronds lit in red and iridescent blue, a deep-indigo vein pod tracing a luminous line low along the ground, a cyan bladder polyp swelling with light, and a small luminous white woodsprite seed drifting in the air nearby.",
+  "scene": "A stretch of forest understorey at night, the plants arranged across the frame at varied depths, ground and far trees falling into glowing teal haze.",
+  "camera": "An eye-level naturalist view across the group of plants, each readable, gentle depth into haze behind.",
+  "light": "Each plant is its own bioluminescent key in its own colour; deep indigo ambient shadow between them, soft volumetric haze carrying the mixed glow.",
+  "palette": "Void-indigo base, living teal and Pandora cyan dominant, with a deliberate scarce-warm red-magenta on the warbonnet fern and deep indigo on the vein pod as colour variety among the flora.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, field-guide clarity.",
+  "detail_level": "Crisp on each plant's form and the texture of its glow; background understorey dissolving into haze.",
+  "composition": "The plants distributed across the frame at staggered depths like specimens observed in place, dark negative space binding them, no single dominant subject.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "animals", "human figures", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with from-within bioluminescent key consistent with the cover; colours per plant as named, warm accents kept scarce.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/when-glow-is-the-norm/fig-00-cover.png"]
+}

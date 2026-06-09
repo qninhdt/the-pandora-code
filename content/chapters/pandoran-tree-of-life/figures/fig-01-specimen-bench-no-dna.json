@@ -1,0 +1,19 @@
+{
+  "id": "fig-01-specimen-bench-no-dna",
+  "chapter_slug": "pandoran-tree-of-life",
+  "role": "hero",
+  "narrative_purpose": "The cold-open anchor: a biologist's bench crowded with Pandoran bodies to be sorted into a family tree, and the one tool every Earth phylogeneticist now reaches for first - a vial of DNA - conspicuously empty. The puzzle of the whole chapter in one image.",
+  "subject": "A long dark specimen bench seen from a low three-quarter angle, crowded with Pandoran remains: a six-legged predator skull, a long finned flipper, a great curved vertebra, and an upright four-limbed humanoid skeleton standing among them; in the clear foreground, set apart on the bench, a single small empty glass sample vial with its stopper beside it, catching a thin cold highlight - nothing inside it; a blank pinned specimen sheet lies near the vial.",
+  "scene": "A xenobiologist's field laboratory at night, deep haze in the background, the bodies arranged as if mid-study.",
+  "camera": "Low three-quarter view down the length of the bench, the empty vial sharp in the near foreground, the standing humanoid skeleton drawing the eye in the mid-ground.",
+  "light": "Cold cyan key raking across the bench from one side, the empty vial catching a thin bright highlight; deep indigo ambient shadow; volumetric haze behind.",
+  "palette": "Void-indigo and deep teal-indigo ground, cyan highlights along bone and glass, one faint warm accent on the humanoid skull, restrained.",
+  "style": "Painterly naturalist plate, hand-painted texture, moody and specimen-like.",
+  "detail_level": "Crisp on the empty vial and the standing humanoid skeleton; the crowded specimens behind softer; deep dark space above the bench for overlaid text later.",
+  "composition": "Strong diagonal of the bench from lower-left to upper-right, the empty vial isolated in the near foreground as the focal anomaly, generous dark negative space in the upper portion.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "modern lab equipment", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette, bioluminescent and cold-lab key light. Differentiated from a pure anatomy array by foregrounding the empty DNA vial - this reads as 'reconstruction with a missing tool', not 'skeleton catalogue'.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

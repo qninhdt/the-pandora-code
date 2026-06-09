@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-prolemuris-arm",
+  "chapter_slug": "six-limbs-and-the-bilateral-lattice",
+  "role": "inline",
+  "narrative_purpose": "Shows the prolemuris forelimb that splits at the elbow into two forearms - the living clue, read as one limb-tip dividing in two rather than two limbs fusing into one.",
+  "subject": "A close anatomical study of a single prolemuris forelimb against a dark canopy backdrop: one slender upper arm extends from the shoulder to the elbow, where it cleanly divides into two complete separate forearms, each with its own wrist and slender clawed hand. The single shared humerus and the two distinct forearm bones are subtly visible beneath translucent skin.",
+  "scene": "High in a glowing night canopy, the limb reaching across the frame, leaves and bioluminescent motes hazing behind.",
+  "camera": "A near study-shot of the limb, elbow and the split sharp and central, the animal's body implied off-frame, background thrown soft.",
+  "light": "Bioluminescent key from canopy flora, cyan and teal, raking along the limb to model the single-to-double structure; deep indigo shadow.",
+  "palette": "Void-indigo and teal ground, cool cyan glow on the limb skin, faint warm amber on the claws, restrained.",
+  "style": "Painterly naturalist specimen study, hand-painted texture, anatomical intimacy.",
+  "detail_level": "Crisp on the elbow split, the shared upper arm, and the two forearms and hands; canopy background dissolving into haze.",
+  "composition": "The limb on a strong diagonal from lower shoulder to the split and twin hands upper-frame, the elbow division at the optical centre, dark negative space.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette, bioluminescent key. Same hand-painted specimen mood as the chapter cover. The single-shoulder, double-forearm structure must read clearly.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/six-limbs-and-the-bilateral-lattice/fig-00-cover.png"]
+}

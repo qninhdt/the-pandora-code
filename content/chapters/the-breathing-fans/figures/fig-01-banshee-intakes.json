@@ -1,0 +1,19 @@
+{
+  "id": "fig-01-banshee-intakes",
+  "chapter_slug": "the-breathing-fans",
+  "role": "hero",
+  "narrative_purpose": "The cold open: a flying Pandoran predator in a hard vertical climb, body turned so the reader sees the flank breathing fans flared open to the wind - poses the chapter's question, where does the air go in?",
+  "subject": "A large winged six-limbed Pandoran predator in a steep near-vertical power climb, wings beating hard, its chest and one flank turned toward the viewer so a pair of slotted fan-like breathing openings along its side are clearly flared wide open, swallowing the oncoming air; the nostrils on its head are small and clearly NOT where the breathing is happening.",
+  "scene": "A bright open Pandoran sky with drifting cloud and distant floating peaks far below, the creature climbing away from the land.",
+  "camera": "A low dramatic upward angle following the climb, the creature filling the upper frame, sky and far-below land giving scale.",
+  "light": "Bright high-key sky light from above, the flank fans catching a faint inner teal glow against the body's shadowed underside.",
+  "palette": "Pale cyan-grey sky, the creature in deep teal-indigo, the breathing fans edged in living-teal and faint biolum, a scarce warm accent on the wing membrane.",
+  "style": "Painterly naturalist illustration, dynamic motion, hand-painted texture.",
+  "detail_level": "Crisp on the flared flank fans and the working wing; the sky soft; the distant land hazy.",
+  "composition": "Strong upward diagonal of the climbing body, the open flank fans on a focal third, generous sky negative space.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette; the breathing fans are the glowing focal detail; same painterly mood as the chapter cover.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

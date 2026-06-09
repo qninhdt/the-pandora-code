@@ -1,0 +1,19 @@
+{
+  "id": "fig-02-character-types",
+  "chapter_slug": "pandoran-tree-of-life",
+  "role": "diagram",
+  "narrative_purpose": "Makes Hennig's central distinction visible: not all shared similarity means kinship. Three kinds of shared trait laid out side by side - the one that groups kin, the one that traps you, and the one that lies - so the reader can see why only shared *derived* traits build a true tree.",
+  "subject": "A clean conceptual plate divided into three vertical panels, each showing a pair of simple glowing creature silhouettes that share one highlighted feature. Left panel: two different Pandoran bodies both glowing brightly at the same neck-braid feature, a connecting glow tying them - a true shared inheritance. Middle panel: two bodies sharing a plain ancestral trait shown dim and grey, present everywhere and so meaningless for grouping. Right panel: two utterly different bodies - one finned, one winged - that have independently arrived at the same streamlined outline, the matching outline glowing a warning amber, with no connecting glow between them.",
+  "scene": "An abstract dark diagram space, the three panels floating with faint divider haze between them.",
+  "camera": "Flat head-on schematic view, the three panels evenly placed across the frame.",
+  "light": "Self-glow from the highlighted features - cyan-teal for the true shared trait, dim grey for the ancestral one, warning amber for the convergent look-alike; deep indigo ground.",
+  "palette": "Void-indigo background; living-teal and cyan for true inheritance, muted stone-grey for the ancestral trait, scarce amber for the convergent trap.",
+  "style": "Painterly conceptual diagram, hand-painted glow, restrained - not a vector infographic.",
+  "detail_level": "Crisp on the three highlighted feature-pairings and their colour coding; the silhouettes simple; dark margins around and between panels for overlaid labels later.",
+  "composition": "Three balanced vertical registers across the frame, each self-contained, generous dark gutters between them and clear dark space above for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "infographic chrome", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with bioluminescent self-glow; amber reserved strictly for the convergent look-alike. Colour-coded meaning carries NO baked-in text - labels added later by the interface.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no infographic chrome, no photographic or 3D-render look, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

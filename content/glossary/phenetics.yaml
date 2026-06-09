@@ -1,0 +1,13 @@
+id: phenetics
+label:
+  vi: Phân loại theo độ giống (phenetics)
+  en: Phenetics
+definition:
+  vi: 'Cách phân loại sinh vật dựa trên độ giống nhau tổng thể về hình thái - đếm càng nhiều điểm chung càng tốt, rồi xếp những loài trông giống nhau nhất vào cùng nhóm. Nghe hợp lý, nhưng nó có một lỗ hổng chí mạng: nó không phân biệt được nét giống do thừa hưởng (huyết thống thật) với nét giống do hội tụ (trùng hợp). Vì thế nó dễ dàng gộp nhầm những loài chỉ *trông* giống nhau. Phân nhánh học ra đời để thay thế nó, bằng cách chỉ tin vào các đặc điểm chung *dẫn xuất* thay vì độ giống thô.'
+  en: 'A way of classifying organisms by overall morphological similarity - count as many shared features as possible, then group the species that look most alike. It sounds reasonable, but it has a fatal flaw: it cannot distinguish resemblance from inheritance (true kinship) from resemblance by convergence (coincidence). So it readily lumps together species that merely *look* alike. Cladistics arose to replace it, by trusting only shared *derived* traits rather than raw similarity.'
+see_also:
+- polyphyly
+- convergent-evolution
+- synapomorphy
+category: concept
+cover_prompt: A painted scene of two superficially similar glowing creatures being grouped by overall resemblance while a truer hidden kinship line points elsewhere, cool teal and indigo with one tempting amber match, bioluminescent, no text, no labels.

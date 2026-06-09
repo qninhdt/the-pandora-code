@@ -1,0 +1,27 @@
+id: tidal-ventilation
+label:
+  vi: Hô hấp thủy triều
+  en: Tidal ventilation
+definition:
+  vi: >-
+    Kiểu thở mà bạn và mọi loài thú đang dùng: không khí ùa vào rồi lại ùa ra qua
+    cùng một đường, như thủy triều lên xuống. Đơn giản, dễ vận hành, nhưng kèm hai
+    cái giá - một ngụm khí cũ luôn đọng lại trong phổi không bao giờ tống hết được,
+    và một cột khí chết nằm im trong khí quản mỗi nhịp thở. Trong bầu khí quyển đặc
+    của Pandora, việc hãm lại và đảo chiều cả khối khí nặng mỗi nhịp còn tốn kém
+    hơn nữa - đó là lý do những loài thú đòi hỏi oxy cao nhất trên Pandora dường
+    như đã bỏ kiểu thở này. Người Na'vi thì vẫn giữ nó, giống chúng ta.
+  en: >-
+    The way you and every mammal breathe: air rushes in and back out the same
+    passage, like a tide. Simple and easy to run, but it carries two costs - a slug
+    of stale air always left in the lung that can never be fully expelled, and a
+    column of dead air sitting in the windpipe with every breath. In Pandora's dense
+    atmosphere, stopping and reversing that heavy mass of gas each breath costs even
+    more - which is why the highest-demand Pandoran animals seem to have abandoned
+    it. The Na'vi keep it, like us.
+see_also:
+  - unidirectional-airflow
+  - dead-space
+  - partial-pressure
+category: concept
+cover_prompt: A painted schematic of a single rounded sac with a double-headed arrow at one opening showing air moving in and out, a dim stale pocket at the closed end, dull amber against deep indigo, painterly, no text, no labels, no numbers.

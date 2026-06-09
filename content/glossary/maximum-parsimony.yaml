@@ -1,0 +1,13 @@
+id: maximum-parsimony
+label:
+  vi: Tiết kiệm tối đa (maximum parsimony)
+  en: Maximum parsimony
+definition:
+  vi: 'Nguyên tắc chọn cây gia phả: trong vô số cây có thể vẽ, hãy chọn cây đòi hỏi ít bước tiến hóa nhất để giải thích các đặc điểm quan sát được. Đây là dao cạo Occam áp dụng vào sự sống - cây nào cần ít sự trùng hợp, ít đổi mới lặp lại nhất thì được ưu tiên, vì nó là giả thuyết đơn giản nhất khớp với dữ liệu. Phương pháp này mạnh và trực giác, nhưng có gót chân Achilles: khi các dòng dõi biến đổi với tốc độ rất chênh lệch, nó có thể gãy theo kiểu hút nhánh dài.'
+  en: 'The principle for choosing a family tree: among the countless trees one could draw, prefer the one requiring the fewest evolutionary steps to explain the observed traits. It is Occam''s razor applied to life - the tree that needs the least coincidence, the fewest repeated novelties, wins, because it is the simplest hypothesis that fits the data. The method is powerful and intuitive, but it has an Achilles'' heel: when lineages change at very unequal rates, it can break through long-branch attraction.'
+see_also:
+- occams-razor
+- cladogram
+- long-branch-attraction
+category: concept
+cover_prompt: A painted comparison of two branching trees of glowing creatures side by side, one visibly simpler with fewer change-marks and chosen, the other tangled with many and rejected, cool teal and indigo, bioluminescent, no text, no numbers, no labels.

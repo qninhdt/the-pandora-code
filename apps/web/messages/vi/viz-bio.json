@@ -1,0 +1,92 @@
+{
+  "viz": {
+    "countercurrent": {
+      "title": "Phiến mang: đổi chiều dòng máu",
+      "water": "Nước",
+      "blood": "Máu",
+      "concurrent": "Cùng chiều",
+      "countercurrent": "Ngược chiều",
+      "extraction": "Oxy lấy được",
+      "slope": "Độ chênh oxy dọc phiến mang",
+      "concurrentNote": "Cùng chiều: nước và máu lao về một mức cân bằng tầm tầm rồi dừng — độ chênh tắt ở giữa chặng, oxy còn lại trôi tuột đi.",
+      "countercurrentNote": "Ngược chiều: máu luôn gặp dòng nước tươi hơn chính nó, nên độ chênh được giữ suốt chiều dài — oxy được lấy tới tận cùng."
+    },
+    "breathingMode": {
+      "title": "Hai cách thở, một bài toán",
+      "tidal": "Thủy triều",
+      "unidirectional": "Một chiều",
+      "freshLabel": "Bề mặt trao đổi",
+      "fresh": "luôn tươi",
+      "stale": "có vùng tù đọng",
+      "costLabel": "Chi phí đảo chiều",
+      "costHigh": "cao",
+      "costNone": "không",
+      "deadSpace": "Khí tù",
+      "ram": "Thông gió động: BẬT khi bay nhanh",
+      "tidalNote": "Thủy triều: khí vào rồi ra cùng một cửa, để lại một túi khí tù không bao giờ thoát; mỗi nhịp phải hãm lại và đảo chiều cả khối khí nặng. Trong bầu khí quyển đặc của Pandora, cái giá ấy rất đắt.",
+      "unidirectionalNote": "Một chiều: khí chảy thẳng một hướng qua bề mặt luôn tươi, không ngừng, không đảo. Khe thở hướng ra trước để chính tốc độ con vật bơm khí — gần như miễn phí."
+    },
+    "coldLight": {
+      "title": "Phản ứng của ánh sáng lạnh",
+      "step": "Bước",
+      "play": "Chạy",
+      "pause": "Dừng",
+      "steps": [
+        {
+          "label": "Luciferin + O₂",
+          "body": "Enzyme luciferase nắm lấy một phân tử nhiên liệu nhỏ — luciferin — rồi ghép nó với oxy. Chưa có ánh sáng, chỉ là khâu nạp đạn."
+        },
+        {
+          "label": "Trung gian cao năng",
+          "body": "Phản ứng oxy hóa tạo ra một vòng peroxide căng thẳng (dioxetanone). Khi vòng vỡ, nó nhả CO₂ và đẩy sản phẩm lên trạng thái điện tử bị kích thích."
+        },
+        {
+          "label": "Photon",
+          "body": "Electron bị kích thích rơi về trạng thái nền. Toàn bộ phần năng lượng chênh lệch thoát ra dưới dạng một hạt ánh sáng — gần như không nhiệt thừa. Đó là ánh sáng lạnh."
+        }
+      ],
+      "effTitle": "Năng lượng đi đâu",
+      "eff": {
+        "incandescent": { "name": "Bóng đèn sợi đốt", "heat": "≈95% hao thành nhiệt" },
+        "led": { "name": "Đèn LED", "heat": "phần lớn thành điện-nhiệt" },
+        "firefly": { "name": "Đom đóm (sinh học)", "heat": "gần như không nhiệt" }
+      },
+      "legendLight": "Thành ánh sáng"
+    },
+    "photophore": {
+      "title": "Đốm sáng Na'vi: theo nhịp cơ thể",
+      "calm": "Tĩnh tại",
+      "aroused": "Dồn dập",
+      "slider": "Trạng thái sinh lý",
+      "intensity": "Cường độ",
+      "hue": "Sắc — không đổi",
+      "hueValue": "blue-white",
+      "note": "Đốm sáng xếp dọc theo các đường mạch máu và thần kinh, đối xứng hai bên. Chúng không chớp tắt — sáng đều, rồi rực lên khi adrenaline dâng (chiến đấu, giao kết) và dịu xuống khi nghỉ.",
+      "mono": "Ánh sáng đơn sắc xanh lơ-trắng. Cái 'đổi màu' nhiều người tưởng chỉ là ảo giác do cường độ thay đổi, hoặc ánh lửa hắt lên da.",
+      "monoTag": "Sửa một lầm tưởng"
+    },
+    "glowBiogeography": {
+      "title": "Nơi nào phát sáng — và vì sao",
+      "earth": "Trái Đất",
+      "pandora": "Pandora",
+      "axisDim": "Càng xuống càng tối",
+      "axisGlow": "Mật độ phát sáng",
+      "zone": {
+        "sky": "Trời",
+        "land": "Đất liền",
+        "shallow": "Biển nông",
+        "deep": "Biển sâu"
+      },
+      "insight": "Cùng một quy luật, lật ngược: ánh sáng sinh học bùng nổ ở bất cứ đâu tù mù triền miên và tín hiệu thị giác đáng giá. Trên Trái Đất nơi đó là biển sâu; đêm tù mù dưới ánh Polyphemus biến cả mặt đất Pandora thành 'biển sâu'."
+    },
+    "glowOriginsTree": {
+      "title": "Cùng một thủ thuật, phát minh hàng chục lần",
+      "ancestor": "Tổ tiên chung",
+      "tagline": "lần khởi nguồn độc lập",
+      "fuelLabel": "Nhiên liệu (luciferin)",
+      "enzymeLabel": "Enzyme",
+      "hint": "Chạm vào một nhánh để xem nhiên liệu và enzyme riêng của nó.",
+      "note": "Mỗi nhánh phát sáng bằng một phân tử nhiên liệu khác nhau, với một enzyme khác nhau. Chúng không thừa kế khả năng phát sáng từ tổ tiên chung — mỗi dòng dõi tự mò ra nó."
+    }
+  }
+}

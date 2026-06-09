@@ -1,0 +1,19 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "direhorse-and-banshee-up-close",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate for the landing book-map: the two impossible bodies of the chapter together on the dark specimen stage - the elephant-massed runner and the great winged predator - posed so their scale and slender build read at a glance as the puzzle the chapter solves.",
+  "subject": "Two complete Pandoran animals presented together on a dark naturalist stage: a tall six-limbed direhorse standing in profile, elephantine in bulk yet carried on strikingly slender legs, long neck lowered; and behind and above it a mountain banshee with its great membranous wings half-spread, the wing-frame thin and elegant. Both bodies show the faint internal glow of light, carbon-threaded bone beneath the skin.",
+  "scene": "A dark museum specimen space, both creatures floating as if posed for display, deep haze beyond, no ground clutter.",
+  "camera": "A clean three-quarter display view, the direhorse largest and nearest, the banshee rising behind with wings catching the light.",
+  "light": "Bioluminescent key glowing from within the skeletal frames and along the wing membranes, cyan and teal; deep indigo shadow throughout; one scarce warm amber accent.",
+  "palette": "Void-indigo ground, cyan and living-teal glow in the bodies and wings, a single restrained amber accent.",
+  "style": "Painterly naturalist specimen plate, hand-painted texture, confident focal hierarchy.",
+  "detail_level": "Crisp on the direhorse's slender legs and long neck and the banshee's thin wing-frame; softer toward the edges; background dissolving into haze.",
+  "composition": "Strong near figure (direhorse) lower-centre, the banshee rising upper-left with spread wings, generous dark negative space, 3:2 landscape.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "human figures", "riders"],
+  "consistency_notes": "Cool Pandora palette, bioluminescent key from within the specimens. Same dark glowing-specimen mood as the established chapter covers.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

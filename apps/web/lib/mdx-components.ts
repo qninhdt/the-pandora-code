@@ -1,24 +1,41 @@
 import { CanonBadge } from "@/components/classification/canon-badge";
 import { AnatomyPlate } from "@/components/content/anatomy-plate";
 import { AtmosphereComparison } from "@/components/content/atmosphere-comparison";
+import { BilateralLatticeTree } from "@/components/content/bilateral-lattice-tree";
+import { BreathingModeToggle } from "@/components/content/breathing-mode-toggle";
 import { Callout, ScientificNote, SideNote } from "@/components/content/callout";
+import { CharacterMatrixCladogram } from "@/components/content/character-matrix-cladogram";
 import { Chart } from "@/components/content/chart";
 import { CirculationBands } from "@/components/content/circulation-bands";
+import { ColdLightReaction } from "@/components/content/cold-light-reaction";
 import { Comparison } from "@/components/content/comparison";
 import { ConfidenceDial } from "@/components/content/confidence-dial";
 import { ConfidenceMeter } from "@/components/content/confidence-meter";
+import { ConvergenceToggle } from "@/components/content/convergence-toggle";
+import { CountercurrentExchange } from "@/components/content/countercurrent-exchange";
 import { DataComparison, StatGrid } from "@/components/content/data-comparison";
 import { DetectionMethodScope } from "@/components/content/detection-method-scope";
 import { DiagramFigure } from "@/components/content/diagram-figure";
 import { EclipseDayClock } from "@/components/content/eclipse-day-clock";
 import { Figure } from "@/components/content/figure";
 import { FigureGrid } from "@/components/content/figure-grid";
+import { FlightPowerCeiling } from "@/components/content/flight-power-ceiling";
+import { FroudeGaitDial } from "@/components/content/froude-gait-dial";
+import { GlowBiogeographyToggle } from "@/components/content/glow-biogeography-toggle";
+import { GlowOriginsTree } from "@/components/content/glow-origins-tree";
 import { HabitableZoneExplorer } from "@/components/content/habitable-zone-explorer";
 import { HalfLifeDecay } from "@/components/content/half-life-decay";
+import { HoxColinearityMap } from "@/components/content/hox-colinearity-map";
 import { IsochronPlot } from "@/components/content/isochron-plot";
+import { LimbFieldToggle } from "@/components/content/limb-field-toggle";
+import { LongBranchAttractionDemo } from "@/components/content/long-branch-attraction-demo";
+import { NichePartitionExplorer } from "@/components/content/niche-partition-explorer";
 import { OpenQuestions } from "@/components/content/open-questions";
+import { PhotophoreIntensity } from "@/components/content/photophore-intensity";
 import { Quote } from "@/components/content/quote";
+import { ReplayTheTape } from "@/components/content/replay-the-tape";
 import { ScrollSequence } from "@/components/content/scroll-sequence";
+import { SquareCubeScaler } from "@/components/content/square-cube-scaler";
 import { SuperconductorCooldown } from "@/components/content/superconductor-cooldown";
 import { TierLegend } from "@/components/content/tier-legend";
 import { Timeline } from "@/components/content/timeline";
@@ -40,36 +57,53 @@ import type { ComponentType } from "react";
 export const pandoraMdxComponents = {
   AnatomyPlate,
   AtmosphereComparison,
+  BilateralLatticeTree,
+  BreathingModeToggle,
   Callout,
   CanonBadge,
   ChapterHero,
   ChapterShell,
+  CharacterMatrixCladogram,
   Chart,
   CirculationBands,
+  ColdLightReaction,
   Comparison,
   ConfidenceDial,
   ConfidenceMeter,
+  ConvergenceToggle,
+  CountercurrentExchange,
   DataComparison,
   DetectionMethodScope,
   DiagramFigure,
   EclipseDayClock,
   Figure,
   FigureGrid,
+  FlightPowerCeiling,
   FloatingMountainFigure,
   FluxFieldFigure,
+  FroudeGaitDial,
   GlossaryTerm,
+  GlowBiogeographyToggle,
+  GlowOriginsTree,
   HabitableZoneExplorer,
   HalfLifeDecay,
+  HoxColinearityMap,
+  NichePartitionExplorer,
   IsochronPlot,
+  LimbFieldToggle,
+  LongBranchAttractionDemo,
   OpenQuestions,
   OrbitClock,
+  PhotophoreIntensity,
   Quote,
   ReadingProgress,
   RelatedChapters,
+  ReplayTheTape,
   ScientificNote,
   ScrollSequence,
   SideNote,
   SourceList,
+  SquareCubeScaler,
   StatGrid,
   SuperconductorCooldown,
   TableOfContents,

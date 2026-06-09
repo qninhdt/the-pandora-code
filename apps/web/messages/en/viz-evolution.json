@@ -1,0 +1,75 @@
+{
+  "viz": {
+    "bilateralTree": {
+      "title": "Cladogram of the bilateral lattice",
+      "ariaLabel": "Cladogram of the Pandoran bilateral lattice, with the Na'vi as the aberrant branch"
+    },
+    "characterMatrix": {
+      "title": "Character matrix → the most parsimonious tree",
+      "ariaLabel": "Pandoran cladogram built from the character matrix",
+      "matrixHead": "Characters × taxa",
+      "parsimony": "Parsimonious (true)",
+      "phenetic": "Overall-similarity (the trap)",
+      "steps": "Evolutionary steps",
+      "stepsParsimony": "Fewest steps — carbon-fibre bone and the queue evolve just once",
+      "stepsPhenetic": "Steps explode — carbon-fibre bone and the queue must evolve twice, on two worlds",
+      "placeNavi": "Place the Na'vi:",
+      "synapNote": "Bold branch: where carbon-fibre bone + the queue appear once, binding the whole branch into one lineage.",
+      "hint": "Tap to move the Na'vi. Parsimony picks the tree needing the fewest changes — and that tree nests the Na'vi deep inside the Pandoran six-limbed branch, not beside humans."
+    },
+    "longBranch": {
+      "title": "Long-branch attraction",
+      "trueTree": "True tree",
+      "inferredTree": "Parsimony infers",
+      "ariaTrue": "True phylogenetic tree",
+      "ariaInferred": "Tree distorted by long-branch attraction",
+      "trueNote": "Ikran and toruk sit on two separate lineages. Long branch = fast evolution, heaping up independent flight traits.",
+      "inferredNote": "The two long branches are pulled together at the base — parsimony mistakes chance resemblance for kinship.",
+      "attracted": "Attracted!",
+      "fast": "fast-evolving",
+      "slow": "slow",
+      "hint": "On Earth, molecular data corrects this error. Pandora has no molecules — so a morphology-only tree stays vulnerable to exactly this trap."
+    },
+    "limbField": {
+      "title": "One toolkit, three switches",
+      "on": "on",
+      "off": "off",
+      "resultLabel": "This configuration ≈",
+      "limbCount": "Limb pairs",
+      "hint": "The same Hox toolkit. Switching off one limb field's enhancer deletes that pair outright — it does not fuse them. This is exactly how snakes lost their legs on Earth."
+    },
+    "hoxMap": {
+      "title": "The Hox address system",
+      "shelf": "Gene row on the chromosome",
+      "body": "The body, head to tail",
+      "prompt": "Hover or tap a gene to see the body region it labels.",
+      "hint": "The order of the genes on the shelf matches the order of the body regions they label. A Hox gene does not build a part — it stamps an address. Move a label and you move a body part, without redesigning the part itself."
+    },
+    "replayTape": {
+      "title": "Replay the tape",
+      "role": "The role (fixed)",
+      "roleValue": "Ambush predator — low, fast, forward-eyed",
+      "originLabel": "The stock (rolls each replay)",
+      "substrateLabel": "Substrate",
+      "button": "Replay the tape",
+      "run": "Run {n}/{total}",
+      "hint": "The role converges every time — because physics writes the job description. But the substrate that fills it is history's call, and history never repeats."
+    },
+    "convergence": {
+      "title": "Same job, different substrate",
+      "job": "The job",
+      "tells": "The tells",
+      "jobHint": "In Job mode both wear the same pounce — the spring-loaded haunch, the grasping forelimb, the forward hunting eyes. Ambush predation has a shape, and any lineage that takes up the trade is pulled toward it.",
+      "tellsHint": "In Tells mode, look again at the thanator: six limbs where the cat has four, four eyes where it has two, breathing slits down the flank. The role is Earth's; the animal is emphatically not.",
+      "shared": "Role features (converged)",
+      "inherited": "Pandoran inheritance (did not converge)"
+    },
+    "nichePartition": {
+      "title": "One forest, divided into floors",
+      "pandoraLabel": "Pandora",
+      "earthLabel": "Earth analogue",
+      "prompt": "Click a layer to see who feeds there.",
+      "hint": "Competitive exclusion says two species cannot share one niche. The answer is not to share a niche — it is to split it into floors, each species at its own height, feeding its own way."
+    }
+  }
+}

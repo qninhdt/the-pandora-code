@@ -304,6 +304,67 @@ a:hover {
   color: var(--accent-soft);
 }
 
+/* ---- Interactive figure range sliders ---- */
+
+/* A single styled range control shared by every figure slider. The track is a
+   gradient set inline per-slider; the thumb is a glowing token-colored knob whose
+   hue is driven by the --viz-thumb custom property (also set inline per slider).
+   Replaces the OS-default gray knob that made figures read as unfinished. */
+.viz-range {
+  --viz-thumb: var(--cyan);
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+}
+
+.viz-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--viz-thumb);
+  border: 2px solid color-mix(in oklab, var(--viz-thumb) 30%, var(--void));
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--viz-thumb) 35%, transparent), 0 0 14px -2px
+    color-mix(in oklab, var(--viz-thumb) 70%, transparent);
+  cursor: grab;
+  transition: transform var(--duration-fast) var(--ease-out-quart), box-shadow var(--duration-fast)
+    var(--ease-out-quart);
+}
+.viz-range::-webkit-slider-thumb:hover {
+  transform: scale(1.12);
+}
+.viz-range:active::-webkit-slider-thumb {
+  transform: scale(1.18);
+  cursor: grabbing;
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--viz-thumb) 50%, transparent), 0 0 20px -1px
+    color-mix(in oklab, var(--viz-thumb) 85%, transparent);
+}
+
+.viz-range::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--viz-thumb);
+  border: 2px solid color-mix(in oklab, var(--viz-thumb) 30%, var(--void));
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--viz-thumb) 35%, transparent), 0 0 14px -2px
+    color-mix(in oklab, var(--viz-thumb) 70%, transparent);
+  cursor: grab;
+  transition: transform var(--duration-fast) var(--ease-out-quart), box-shadow var(--duration-fast)
+    var(--ease-out-quart);
+}
+.viz-range:active::-moz-range-thumb {
+  transform: scale(1.18);
+  cursor: grabbing;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .viz-range::-webkit-slider-thumb,
+  .viz-range::-moz-range-thumb {
+    transition: none;
+  }
+}
+
 /* ---- Landing atmospherics ---- */
 
 /* Film-grain tooth laid over generated imagery so painted backdrops keep a

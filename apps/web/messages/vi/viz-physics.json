@@ -1,0 +1,59 @@
+{
+  "viz": {
+    "squareCube": {
+      "title": "Định luật bình phương - lập phương",
+      "sizeLabel": "Kích thước tuyến tính",
+      "multiple": "{n} lần",
+      "length": "Chiều dài",
+      "area": "Diện tích bề mặt / tiết diện xương",
+      "volume": "Thể tích / khối lượng",
+      "stress": "Ứng suất lên xương",
+      "areaNote": "tỉ lệ với bình phương (k²)",
+      "volumeNote": "tỉ lệ với lập phương (k³)",
+      "stressNote": "khối lượng chia tiết diện = k",
+      "hint": "Tăng gấp đôi chiều dài thì khối lượng tăng gấp tám, nhưng tiết diện xương đỡ nó chỉ tăng gấp bốn. Ứng suất lên mỗi khúc xương vì thế tăng gấp đôi. Đó là lý do một con vật không thể chỉ phóng to lên - hình dạng buộc phải đổi theo."
+    },
+    "froudeDial": {
+      "title": "Bánh xe dáng đi Froude",
+      "gravity": "Trọng lực",
+      "earth": "Trái Đất",
+      "pandora": "Pandora",
+      "legLabel": "Chiều dài chân",
+      "walkTrot": "Đi → chạy nước kiệu",
+      "gallop": "Ngưỡng phi nước đại",
+      "frNote": "tại Fr ≈ 0,5",
+      "gallopNote": "tại Fr ≈ 1,0",
+      "range": "0–{max} km/h",
+      "hint": "Cùng một chiều dài chân, trọng lực thấp hơn của Pandora kéo mọi ngưỡng chuyển dáng đi xuống tốc độ thấp hơn. Con pa'li bước vào nhịp chạy lò xo hiệu quả của nó sớm hơn - và mỗi cú đạp đất vì thế nhẹ hơn."
+    },
+    "flightCeiling": {
+      "title": "Bức tường của mọi kẻ bay",
+      "earth": "Trái Đất",
+      "pandora": "Pandora",
+      "supply": "Công suất cơ bắp cấp được",
+      "demand": "Công suất bay đòi hỏi",
+      "ceiling": "Trần bay",
+      "massAxis": "Khối lượng →",
+      "powerAxis": "Công suất →",
+      "quetz": "Quetzalcoatlus",
+      "ikran": "Ikran + người cưỡi",
+      "hint": "Đường đòi hỏi dốc hơn đường cấp được, nên chúng luôn cắt nhau. Điểm cắt là kẻ bay nặng nhất còn có thể vỗ cánh. Trọng lực thấp và không khí dày của Pandora hạ đường đòi hỏi xuống - đẩy điểm cắt sang phải, tới khối lượng mà Trái Đất sẽ ghim chặt xuống đất."
+    },
+    "superconductor": {
+      "title": "Làm lạnh chất siêu dẫn",
+      "temp": "Nhiệt độ",
+      "resistance": "Điện trở",
+      "state": "Trạng thái",
+      "normal": "Kim loại thường",
+      "superconducting": "Siêu dẫn",
+      "tc": "Nhiệt độ tới hạn Tc",
+      "tempAxis": "Nhiệt độ (K) →",
+      "resAxis": "Điện trở →",
+      "play": "Làm lạnh / làm nóng",
+      "pause": "Dừng",
+      "hint": "Hạ nhiệt độ xuống dưới Tc: điện trở rơi thẳng về 0 và nam châm bị khóa lơ lửng trong không trung.",
+      "levitating": "Khóa từ thông — lơ lửng",
+      "resting": "Nằm yên trên mặt"
+    }
+  }
+}

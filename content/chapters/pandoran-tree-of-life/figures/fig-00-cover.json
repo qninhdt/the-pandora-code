@@ -1,0 +1,19 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "pandoran-tree-of-life",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate for the landing book-map: the whole idea in one image - a branching tree of Pandoran life reconstructed from bodies alone, its root quietly dissolving into a web.",
+  "subject": "A luminous branching tree drawn as a phylogenetic diagram, its tips ending in faint glowing silhouettes of distinct Pandoran creatures - a six-legged running beast, a winged flyer, a finned swimmer, and one upright four-limbed humanoid set among them; the branches are clean glowing lines forking from inner nodes; toward the base the single trunk frays into several crossing strands, a clean tree becoming a faint reticulate web at the root.",
+  "scene": "A dark naturalist's reconstruction space, the tree floating as if drawn in light, deep haze beyond.",
+  "camera": "A clean front-on view, the tree filling the frame, root at lower-left fraying, tips fanning to the right.",
+  "light": "Bioluminescent key glowing from within the branch-lines, cyan and living-teal; the lone humanoid tip lit a touch warmer; the frayed web at the root dimmer and cooler; deep indigo shadow throughout.",
+  "palette": "Void-indigo ground, cyan and living-teal glow in the branches, one scarce amber accent on the humanoid tip, restrained.",
+  "style": "Painterly naturalist specimen plate, hand-painted texture, confident focal hierarchy.",
+  "detail_level": "Crisp on the branching structure and the creature tips; the reticulate root softer; edges dissolving into haze.",
+  "composition": "A left-to-right branching tree across the frame, generous dark negative space, the root fraying into a web at lower-left, the humanoid tip placed quietly among the others.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette, bioluminescent key from within the drawn lines. Same dark glowing-specimen mood as the established chapter covers.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

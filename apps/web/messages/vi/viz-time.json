@@ -1,0 +1,99 @@
+{
+  "viz": {
+    "halfLife": {
+      "title": "Đồng hồ phân rã phóng xạ",
+      "elapsed": "Đã trôi qua",
+      "halfLives": "chu kỳ bán rã",
+      "parentLeft": "Nguyên tử cha còn lại",
+      "age": "Tuổi suy ra",
+      "parent": "Cha (phóng xạ)",
+      "daughter": "Con (đã phân rã)",
+      "gyr": "tỉ năm",
+      "play": "Chạy",
+      "pause": "Dừng",
+      "reset": "Đặt lại",
+      "timeLabel": "Thời gian (số chu kỳ bán rã)",
+      "hint": "Mỗi chu kỳ bán rã, một nửa số nguyên tử cha còn lại biến thành con. Đếm tỉ lệ còn lại là đọc được tuổi.",
+      "aria": "Đã trôi qua {time} chu kỳ bán rã, còn {remaining}% nguyên tử cha"
+    },
+    "isochron": {
+      "title": "Đồ thị isochron",
+      "xAxis": "đồng vị cha (P / bền) →",
+      "yAxis": "đồng vị con (D / bền) →",
+      "initialRatio": "tỉ lệ ban đầu",
+      "elapsed": "đã trôi qua",
+      "elapsedValue": "{t} chu kỳ",
+      "slope": "độ dốc",
+      "parentLeft": "cha còn lại",
+      "play": "Chạy",
+      "pause": "Dừng",
+      "reset": "Đặt lại về đường nằm ngang",
+      "timeLabel": "Thời gian đã trôi qua, tính theo chu kỳ bán rã",
+      "aria": "Đồ thị isochron ở {t} chu kỳ bán rã, độ dốc đường {slope}"
+    },
+    "dataComparison": {
+      "vs": "so với"
+    },
+    "confidenceDial": {
+      "title": "Mặt đồng hồ độ tin cậy đã hiệu chỉnh",
+      "probability": "Xác suất",
+      "ipccTerm": "Thuật ngữ IPCC",
+      "range": "Khoảng quy ước",
+      "sliderLabel": "Xác suất (%)",
+      "hint": "Kéo xác suất: mỗi từ tiếng Anh nghe bình dân lại mang một khoảng số chính xác. \"Hầu như chắc chắn\" nghĩa là > 99%, không phải nói cho sướng miệng.",
+      "aria": "{probability} {p}% — {term}",
+      "terms": {
+        "virtuallyCertain": "Hầu như chắc chắn",
+        "extremelyLikely": "Cực kỳ có khả năng",
+        "veryLikely": "Rất có khả năng",
+        "likely": "Có khả năng",
+        "aboutEven": "Khả năng ngang nhau",
+        "unlikely": "Khó xảy ra",
+        "veryUnlikely": "Rất khó xảy ra",
+        "extremelyUnlikely": "Cực kỳ khó xảy ra",
+        "exceptionallyUnlikely": "Hầu như không thể"
+      }
+    },
+    "confidenceMeter": {
+      "aria": "Phân bố các tầng nhận thức"
+    },
+    "tierLegend": {
+      "earth": "Trên Trái Đất",
+      "pandora": "Trên Pandora"
+    },
+    "journeyTimeline": {
+      "title": "Hai mươi giây",
+      "bloodO2": "Oxy trong máu",
+      "usableO2": "Oxy tế bào dùng được",
+      "seconds": "giây",
+      "play": "Chạy",
+      "pause": "Dừng",
+      "reset": "Đặt lại",
+      "timeline": "Dòng thời gian (giây)",
+      "hint": "Kéo dòng thời gian: oxy trong máu vẫn đầy, nhưng oxy mà tế bào dùng được thì sụp đổ.",
+      "aria": "{time} giây: {stage}",
+      "stages": {
+        "maskOff": {
+          "title": "Tháo mặt nạ",
+          "body": "Không khí thừa oxy để thở — phổi đầy, máu đỏ tươi. Chưa có gì sai."
+        },
+        "h2sFloods": {
+          "title": "H₂S tràn vào",
+          "body": "Hydro sulfua khuếch tán vào máu và bám lấy enzyme hô hấp trong ty thể."
+        },
+        "histotoxic": {
+          "title": "Ngạt độc tế bào",
+          "body": "Máu vẫn đầy oxy, nhưng tế bào không còn ĐỐT được nó. Đây là nghịch lý: ngạt giữa biển oxy."
+        },
+        "collapse": {
+          "title": "Sụp đổ",
+          "body": "Não thiếu năng lượng: tầm nhìn thu hẹp, chân khuỵu, ý thức trượt dần."
+        },
+        "unconscious": {
+          "title": "Bất tỉnh",
+          "body": "Khoảng hai mươi giây sau khi tháo mặt nạ, bạn ngã gục. Không phải vì thiếu oxy — mà vì hóa học."
+        }
+      }
+    }
+  }
+}

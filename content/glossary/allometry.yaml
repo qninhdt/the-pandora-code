@@ -1,0 +1,13 @@
+id: allometry
+label:
+  vi: Dị sinh trưởng (allometry)
+  en: Allometry
+definition:
+  vi: 'Ngành nghiên cứu cách hình dạng, tỉ lệ và các quá trình sinh lý của một sinh vật thay đổi theo kích thước cơ thể. Quy luật cốt lõi: các đại lượng sinh học hiếm khi tỉ lệ thuận một-một với kích thước - chúng tuân theo hàm lũy thừa Y = a·Mᵇ, trong đó số mũ b quyết định đại lượng ấy lớn nhanh hay chậm theo khối lượng. Vì thế một con vật không thể đơn thuần phóng to: bề dày xương, nhịp tim, diện tích cánh đều phải đổi tỉ lệ để cơ thể tiếp tục vận hành. Đây là công cụ để đánh giá liệu những sinh vật khổng lồ của Pandora như pa''li hay ikran có khả thi về mặt vật lý hay không.'
+  en: 'The study of how an organism''s shape, proportions, and physiological processes change with body size. The core rule: biological quantities rarely scale one-to-one with size - they follow a power law, Y = a·Mᵇ, where the exponent b decides how fast the quantity grows with mass. This is why an animal cannot simply be scaled up: bone thickness, heart rate, and wing area must all re-proportion for the body to keep working. It is the tool for testing whether Pandora''s giants like the pa''li and ikran are physically plausible.'
+see_also:
+- square-cube-law
+- scaling-exponent
+- biomechanics
+category: concept
+cover_prompt: A painted log-log plot floating in dark space, a single straight glowing line rising through scattered data points, cool teal and cyan on void-indigo, suggesting how one biological quantity scales with body mass, no text, no numbers, no labels.

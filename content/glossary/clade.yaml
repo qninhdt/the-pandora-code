@@ -1,0 +1,13 @@
+id: clade
+label:
+  vi: Nhánh đơn ngành (clade)
+  en: Clade
+definition:
+  vi: 'Một nhóm tự nhiên gồm một tổ tiên chung và toàn bộ - không thiếu một ai - con cháu của nó. Đây là đơn vị "thật" duy nhất trong phân loại học hiện đại: một cành liền lạc cắt ra từ cây sự sống. Chim cùng mọi loài khủng long làm thành một nhánh đơn ngành; "bò sát" mà loại trừ chim thì không, vì đã bỏ sót một phần con cháu. Nhận ra một nhánh đơn ngành nghĩa là tìm thấy một gia đình trọn vẹn, được gắn kết bằng những đặc điểm chung dẫn xuất.'
+  en: 'A natural group consisting of a common ancestor and all - without exception - of its descendants. It is the only "real" unit in modern classification: a single unbroken limb cut from the tree of life. Birds together with all dinosaurs form a clade; "reptiles" excluding birds does not, because it leaves out part of the descendants. To recognise a clade is to find a complete family, bound together by shared derived traits.'
+see_also:
+- synapomorphy
+- paraphyly
+- polyphyly
+category: bio
+cover_prompt: A painted tree-of-life branch glowing as one connected whole - an ancestral node and every twig descending from it lit in the same cyan, the rest of the tree dim, cool indigo ground, bioluminescent, no text, no labels.

@@ -1,0 +1,13 @@
+id: realized-niche
+label:
+  vi: Ổ sinh thái hiện thực
+  en: Realized niche
+definition:
+  vi: Không gian và nguồn tài nguyên thực tế mà một loài chiếm giữ sau khi bị o ép bởi sự cạnh tranh, sinh cảnh hẹp và áp lực sinh tồn. Đó là công việc mà một loài rốt cuộc phải nhận làm sau khi thị trường lao động sinh thái đã phân bua xong mọi xung đột quyền lợi.
+  en: The portion of its niche a species actually occupies in the real world, after competitors, predators and parasites have fenced it in - always a smaller subset of the fundamental niche its body could tolerate. Every organism lives a cramped life relative to what its physiology alone would allow, simply because other species got to parts of the living space first.
+see_also:
+- fundamental-niche
+- ecological-niche
+- competitive-exclusion-principle
+category: concept
+cover_prompt: A painted large faint volume with a smaller bright lived-in region glowing inside it, the rest dimmed by surrounding pressures, cool teal-cyan palette, painterly plate, no text, no labels.

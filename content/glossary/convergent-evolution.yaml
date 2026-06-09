@@ -1,0 +1,12 @@
+id: convergent-evolution
+label:
+  vi: Tiến hóa hội tụ
+  en: Convergent evolution
+definition:
+  vi: Khi những dòng dõi tiến hóa xa xôi lại độc lập phát triển những đặc điểm y hệt nhau, bởi chính môi trường đã gò ép chúng về chung một hướng giải quyết - giống như thân hình thon gọn tắp của cá heo, ngư long và cá mập, ba nhánh rẽ cách biệt cùng tìm đến một dáng hình của cá vì sức cản của nước đã ấn định hình dáng tối ưu cho mọi kẻ bơi lội tốc độ. Sự hội tụ giải thích được những đặc điểm đơn giản do môi trường định đoạt, nhưng lại là một sự khiên cưỡng với những đặc điểm phức tạp và đầy tính ngẫu nhiên - vốn dĩ là những bằng chứng mạnh mẽ nhất của chung một cội nguồn di truyền.
+  en: When separate lineages independently evolve the same feature because the environment pushes them toward the same solution - like the streamlined torso of a dolphin, an ichthyosaur, and a shark, three distant lineages all arriving at a fishlike shape because water imposes one efficient form on anything that swims fast. Convergence explains simple, environment-dictated traits, but it is implausible for complex, arbitrary ones - those are usually a sign of shared inheritance instead.
+see_also:
+- synapomorphy
+- body-plan
+category: concept
+cover_prompt: A painted trio of streamlined swimming silhouettes - dolphin, ichthyosaur, shark - aligned to show their near-identical shape, cool teal water light, no text, no labels.

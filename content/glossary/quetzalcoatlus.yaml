@@ -1,0 +1,12 @@
+id: quetzalcoatlus
+label:
+  vi: Quetzalcoatlus
+  en: Quetzalcoatlus
+definition:
+  vi: 'Loài thằn lằn bay (pterosaur) khổng lồ thời kỳ Phấn Trắng, sải cánh 10-11 mét - sinh vật biết bay lớn nhất từng được biết đến trên Trái Đất. Ước tính khối lượng dao động dữ dội, từ những mô hình nhẹ hều ~70 kg đến các con số cơ sinh học sát thực ~200-250 kg. Quetzalcoatlus không cất cánh kiểu chim; nó dùng cú phóng bốn chân, lấy đà bằng chính cặp cơ cánh lực lưỡng. Nó đánh dấu giới hạn trên của khả năng bay chủ động trong điều kiện Trái Đất - và chính là thước đo để ta hỏi vì sao một con ikran còn lớn hơn lại bay được trên Pandora.'
+  en: 'A giant Cretaceous pterosaur with a 10-11 metre wingspan - the largest flying animal Earth is known to have produced. Mass estimates vary wildly, from featherweight models of ~70 kg to realistic biomechanical figures of ~200-250 kg. Quetzalcoatlus did not take off like a bird; it used a four-limbed vault, launching off its own powerful wing muscles. It marks the upper limit of active powered flight under Earth conditions - and is the yardstick against which we ask how an even larger ikran could fly on Pandora.'
+see_also:
+- wing-loading
+- biomechanics
+category: concept
+cover_prompt: A painted naturalist study of a giant long-necked pterosaur skeleton with vast wing-finger bones, posed against a dark indigo ground in cool teal bone-light, museum-plate clarity, no text, no labels.

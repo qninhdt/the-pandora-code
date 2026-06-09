@@ -1,0 +1,13 @@
+id: genetic-toolkit
+label:
+  vi: Bộ công cụ di truyền
+  en: Genetic toolkit
+definition:
+  vi: Bộ gene điều hòa phát triển cổ xưa được san sẻ bởi gần như toàn bộ giới động vật - cùng một công tắc tổng để nặn ra con mắt, cùng một gene khởi tạo chi, cùng những kẻ tạo địa chỉ Hox. Sự phong phú đến ngỡ ngàng của các hình thái động vật không đến từ việc mỗi nhánh tự phát minh ra công cụ riêng, mà bắt nguồn từ những cách thức dùng khác nhau của chung một bộ công cụ. Khái niệm này đã được Sean Carroll đưa ra ánh sáng qua cuốn sách "Endless Forms Most Beautiful" (Vô Vàn Hình Thái Tuyệt Mỹ).
+  en: The ancient set of developmental regulatory genes shared by nearly every animal - the same master switch that builds an eye, the same limb-initiating gene, the same Hox address-makers. The vast diversity of animal form comes not from each lineage inventing its own tools, but from different ways of using the same toolkit. The idea was popularised by Sean Carroll in his book "Endless Forms Most Beautiful".
+see_also:
+- deep-homology
+- hox-genes
+- cis-regulatory-element
+category: concept
+cover_prompt: A painted array of glowing gene-tools laid out like instruments on dark velvet, with faint silhouettes of wildly different creatures rising from them, cool teal and indigo, no text, no labels.

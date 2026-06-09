@@ -66,12 +66,12 @@ export function SegmentedToggle<T extends string>({
             tabIndex={active ? 0 : -1}
             onClick={() => onChange(opt.value)}
             onKeyDown={(e) => handleKey(e, i)}
-            className="rounded-md px-3 py-1 font-sans text-xs transition-colors duration-200"
+            className="rounded-md px-3 py-2 font-sans text-xs font-600 transition-all duration-200"
             style={{
-              background: active ? `color-mix(in oklab, ${tone} 16%, transparent)` : "transparent",
+              background: active ? `color-mix(in oklab, ${tone} 18%, transparent)` : "transparent",
               color: active ? tone : "var(--subtle)",
               boxShadow: active
-                ? `inset 0 0 0 1px color-mix(in oklab, ${tone} 35%, transparent)`
+                ? `inset 0 0 0 1px color-mix(in oklab, ${tone} 45%, transparent), 0 0 16px -6px color-mix(in oklab, ${tone} 80%, transparent)`
                 : "none",
             }}
           >

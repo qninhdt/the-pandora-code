@@ -1,11 +1,20 @@
 "use client";
 
-import { cn } from "@/lib/utils";
+import {
+  GAUGE_END,
+  GAUGE_START,
+  angleForFraction,
+  arcPath,
+  arcPoint,
+} from "@/components/content/viz/dial";
+import { GlowDefs, glowUrl } from "@/components/content/viz/glow-defs";
+import { VizFigure } from "@/components/content/viz/viz-figure";
+import { VizText } from "@/components/content/viz/viz-svg-text";
+import { useTranslations } from "next-intl";
 import { useId, useState } from "react";
 
 interface ConfidenceDialProps {
   caption?: string;
-  locale?: "vi" | "en";
   className?: string;
 }
 
@@ -42,194 +51,161 @@ function classify(p: number): { key: TermKey; range: string } {
   return { key: "exceptionallyUnlikely", range: "0–1%" };
 }
 
-const STRINGS = {
-  vi: {
-    terms: {
-      virtuallyCertain: "Hầu như chắc chắn",
-      extremelyLikely: "Cực kỳ có khả năng",
-      veryLikely: "Rất có khả năng",
-      likely: "Có khả năng",
-      aboutEven: "Khả năng ngang nhau",
-      unlikely: "Khó xảy ra",
-      veryUnlikely: "Rất khó xảy ra",
-      extremelyUnlikely: "Cực kỳ khó xảy ra",
-      exceptionallyUnlikely: "Hầu như không thể",
-    },
-    probability: "Xác suất",
-    ipccTerm: "Thuật ngữ IPCC",
-    range: "Khoảng quy ước",
-    sliderLabel: "Xác suất (%)",
-    hint: 'Kéo xác suất: mỗi từ tiếng Anh nghe bình dân lại mang một khoảng số chính xác. "Hầu như chắc chắn" nghĩa là > 99%, không phải nói cho sướng miệng.',
-  },
-  en: {
-    terms: {
-      virtuallyCertain: "Virtually certain",
-      extremelyLikely: "Extremely likely",
-      veryLikely: "Very likely",
-      likely: "Likely",
-      aboutEven: "About as likely as not",
-      unlikely: "Unlikely",
-      veryUnlikely: "Very unlikely",
-      extremelyUnlikely: "Extremely unlikely",
-      exceptionallyUnlikely: "Exceptionally unlikely",
-    },
-    probability: "Probability",
-    ipccTerm: "IPCC term",
-    range: "Calibrated range",
-    sliderLabel: "Probability (%)",
-    hint: 'Drag the probability: each ordinary-sounding word carries an exact numeric range. "Virtually certain" means > 99%, not enthusiasm.',
-  },
-} as const;
-
-// Point on the gauge arc for a probability p (0 = left, 100 = right).
-function arcPoint(p: number, r: number): { x: number; y: number } {
-  const a = Math.PI * (1 - p / 100); // π (left) → 0 (right)
-  return { x: CX + r * Math.cos(a), y: CY - r * Math.sin(a) };
+// Point on the half-circle gauge for a probability p (0 = left, 100 = right).
+function gaugePoint(p: number, r: number) {
+  return arcPoint(CX, CY, r, angleForFraction(p / 100, GAUGE_START, GAUGE_END));
 }
 
 // An interactive dial for the chapter's point that confidence is machinery, not
 // a vibe: the reader sweeps a probability and watches it snap to the IPCC's
 // calibrated likelihood word and its exact numeric range. SVG-only, no motion,
 // deterministic for SSR, keyboard-operable through the range input.
-export function ConfidenceDial({ caption, locale = "en", className }: ConfidenceDialProps) {
-  const t = STRINGS[locale];
+export function ConfidenceDial({ caption, className }: ConfidenceDialProps) {
+  const t = useTranslations("viz.confidenceDial");
   const uid = useId();
   const [p, setP] = useState(DEFAULT_P);
 
   const { key, range } = classify(p);
+  const term = t(`terms.${key}`);
   const tone = p >= 66 ? "--teal" : p > 33 ? "--amber" : "--magenta";
-  const needle = arcPoint(p, R - 14);
-
-  // Build the coloured gauge track as a sampled arc path.
-  const trackPts = Array.from({ length: 49 }, (_, i) => {
-    const pt = arcPoint((i / 48) * 100, R);
-    return `${pt.x.toFixed(1)},${pt.y.toFixed(1)}`;
-  });
+  const needle = gaugePoint(p, R - 14);
 
   return (
-    <figure className={cn("my-8", className)}>
-      <div className="overflow-hidden rounded-2xl border border-border bg-surface/60 p-4 backdrop-blur-sm">
-        <svg
-          viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
-          className="mx-auto block w-full max-w-md"
-          role="img"
-          aria-label={`${t.probability} ${p}% — ${t.terms[key]}`}
+    <VizFigure
+      title={t("title")}
+      hint={t("hint")}
+      caption={caption}
+      tone={p >= 66 ? "teal" : p > 33 ? "amber" : "magenta"}
+      className={className}
+    >
+      <svg
+        viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
+        className="mx-auto block w-full max-w-md"
+        role="img"
+        aria-label={t("aria", { probability: t("probability"), p, term })}
+      >
+        <GlowDefs idBase={uid} tones={["teal", "amber", "magenta"]} />
+        <defs>
+          <linearGradient id={`${uid}-g`} x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0%" stopColor="var(--magenta)" />
+            <stop offset="50%" stopColor="var(--amber)" />
+            <stop offset="100%" stopColor="var(--teal)" />
+          </linearGradient>
+        </defs>
+
+        {/* gauge track */}
+        <path
+          d={arcPath(CX, CY, R, GAUGE_START, GAUGE_END)}
+          fill="none"
+          stroke={`url(#${uid}-g)`}
+          strokeWidth={10}
+          strokeLinecap="round"
+          opacity={0.85}
+        />
+
+        {/* end + mid ticks */}
+        {[0, 33, 66, 100].map((v) => {
+          const inner = gaugePoint(v, R - 16);
+          const outer = gaugePoint(v, R + 4);
+          return (
+            <line
+              key={v}
+              x1={inner.x}
+              y1={inner.y}
+              x2={outer.x}
+              y2={outer.y}
+              stroke="var(--border-strong)"
+              strokeWidth={1.5}
+            />
+          );
+        })}
+        <VizText
+          x={gaugePoint(0, R + 16).x}
+          y={gaugePoint(0, R + 16).y}
+          size="micro"
+          anchor="middle"
+          numeric
         >
-          <defs>
-            <linearGradient id={`${uid}-g`} x1="0" x2="1" y1="0" y2="0">
-              <stop offset="0%" stopColor="var(--magenta)" />
-              <stop offset="50%" stopColor="var(--amber)" />
-              <stop offset="100%" stopColor="var(--teal)" />
-            </linearGradient>
-          </defs>
+          0
+        </VizText>
+        <VizText
+          x={gaugePoint(100, R + 16).x}
+          y={gaugePoint(100, R + 16).y}
+          size="micro"
+          anchor="middle"
+          numeric
+        >
+          100
+        </VizText>
 
-          {/* gauge track */}
-          <polyline
-            points={trackPts.join(" ")}
-            fill="none"
-            stroke={`url(#${uid}-g)`}
-            strokeWidth={10}
-            strokeLinecap="round"
-            opacity={0.85}
-          />
+        {/* needle */}
+        <line
+          x1={CX}
+          y1={CY}
+          x2={needle.x}
+          y2={needle.y}
+          stroke={`var(${tone})`}
+          strokeWidth={4}
+          strokeLinecap="round"
+          filter={glowUrl(uid, "bloom")}
+        />
+        {/* hub: outer ring + glowing core */}
+        <circle
+          cx={CX}
+          cy={CY}
+          r={9}
+          fill="var(--surface)"
+          style={{ stroke: `var(${tone})` }}
+          strokeWidth={2}
+        />
+        <circle cx={CX} cy={CY} r={4} fill={`var(${tone})`} filter={glowUrl(uid, "bloom")} />
 
-          {/* end + mid ticks */}
-          {[0, 33, 66, 100].map((v) => {
-            const inner = arcPoint(v, R - 16);
-            const outer = arcPoint(v, R + 4);
-            return (
-              <line
-                key={v}
-                x1={inner.x}
-                y1={inner.y}
-                x2={outer.x}
-                y2={outer.y}
-                style={{ stroke: "var(--border-strong)" }}
-                strokeWidth={1.5}
-              />
-            );
-          })}
-          <text
-            x={arcPoint(0, R + 16).x}
-            y={arcPoint(0, R + 16).y}
-            textAnchor="middle"
-            style={{ fill: "var(--subtle)", fontSize: 10 }}
-            className="font-sans tabular-nums"
-          >
-            0
-          </text>
-          <text
-            x={arcPoint(100, R + 16).x}
-            y={arcPoint(100, R + 16).y}
-            textAnchor="middle"
-            style={{ fill: "var(--subtle)", fontSize: 10 }}
-            className="font-sans tabular-nums"
-          >
-            100
-          </text>
+        {/* central readout */}
+        <VizText
+          x={CX}
+          y={CY - 42}
+          size="xlarge"
+          tone={tone}
+          anchor="middle"
+          numeric
+          weight={800}
+          className="font-display"
+        >
+          {p}%
+        </VizText>
+      </svg>
 
-          {/* needle */}
-          <line
-            x1={CX}
-            y1={CY}
-            x2={needle.x}
-            y2={needle.y}
-            style={{ stroke: `var(${tone})`, filter: `drop-shadow(0 0 5px var(${tone}))` }}
-            strokeWidth={3}
-            strokeLinecap="round"
-          />
-          <circle cx={CX} cy={CY} r={6} style={{ fill: `var(${tone})` }} />
-
-          {/* central readout */}
-          <text
-            x={CX}
-            y={CY - 44}
-            textAnchor="middle"
-            style={{ fill: `var(${tone})`, fontSize: 30 }}
-            className="font-display font-800 tabular-nums"
-          >
-            {p}%
-          </text>
-        </svg>
-
-        {/* term readout */}
-        <div className="mt-1 text-center">
-          <p className="font-display text-xl font-800" style={{ color: `var(${tone})` }}>
-            {t.terms[key]}
-          </p>
-          <p className="font-sans text-xs text-subtle">
-            {t.ipccTerm} · {t.range} {range}
-          </p>
-        </div>
-
-        {/* control */}
-        <div className="mt-4">
-          <label htmlFor={`${uid}-p`} className="mb-1 block font-sans text-[0.7rem] text-muted">
-            {t.sliderLabel}
-          </label>
-          <input
-            id={`${uid}-p`}
-            type="range"
-            min={0}
-            max={100}
-            step={1}
-            value={p}
-            onChange={(e) => setP(Number(e.target.value))}
-            aria-label={t.sliderLabel}
-            className="h-1.5 w-full cursor-pointer appearance-none rounded-full"
-            style={{
-              background: `linear-gradient(to right, var(${tone}) ${p}%, var(--border) ${p}%)`,
-            }}
-          />
-        </div>
-
-        <p className="mt-3 font-sans text-xs text-subtle">{t.hint}</p>
+      {/* term readout */}
+      <div className="mt-1 text-center">
+        <p className="font-display text-xl font-800" style={{ color: `var(${tone})` }}>
+          {term}
+        </p>
+        <p className="font-sans text-xs text-subtle">
+          {t("ipccTerm")} · {t("range")} {range}
+        </p>
       </div>
-      {caption && (
-        <figcaption className="mt-3 px-1 font-serif text-sm italic leading-relaxed text-muted">
-          {caption}
-        </figcaption>
-      )}
-    </figure>
+
+      {/* control */}
+      <div className="mt-4">
+        <label htmlFor={`${uid}-p`} className="mb-1 block font-sans text-xs text-muted">
+          {t("sliderLabel")}
+        </label>
+        <input
+          id={`${uid}-p`}
+          type="range"
+          min={0}
+          max={100}
+          step={1}
+          value={p}
+          onChange={(e) => setP(Number(e.target.value))}
+          aria-label={t("sliderLabel")}
+          className="viz-range w-full cursor-pointer rounded-full outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
+          style={{
+            background: `linear-gradient(to right, var(${tone}) ${p}%, var(--border) ${p}%)`,
+            ["--viz-thumb" as string]: `var(${tone})`,
+          }}
+        />
+      </div>
+    </VizFigure>
   );
 }

@@ -1,0 +1,18 @@
+{
+  "id": "fig-03-gill-countercurrent",
+  "chapter_slug": "the-breathing-fans",
+  "role": "diagram",
+  "narrative_purpose": "Shows the countercurrent trick of a fish gill: blood flowing opposite to water keeps the oxygen gradient open along the whole exchange surface.",
+  "subject": "A flat schematic of a single gill frond. A horizontal blood vessel runs across the middle, with an arrow pointing left-to-right. Above it, a band of water flow with an arrow pointing right-to-left (the opposite way). Between the two, a row of short vertical arrows showing oxygen crossing downward from the water into the blood, spaced evenly along the entire length, all roughly the same strength end to end - signalling the gradient never dies.",
+  "scene": "Empty dark space background, only the two opposed flow bands and the small crossing arrows between them.",
+  "camera": "Flat head-on schematic view, no perspective, no 3D.",
+  "light": "Flat even lighting; the flow bands and arrows glow on their own.",
+  "palette": "Near-black background, cyan band for the water flow, magenta band for the blood flow, small teal crossing arrows between them.",
+  "style": "Clean elegant infographic of thin glowing lines and arrows, like a vector schematic.",
+  "detail_level": "Two clearly opposed flow arrows, an even row of small crossing arrows between them, generous space; nothing cluttered.",
+  "composition": "Two long horizontal bands one above the other with opposite-pointing arrows, evenly spaced small vertical arrows in the gap between.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "photographic texture"],
+  "consistency_notes": "Thin glowing cyan/magenta/teal shapes on a near-black background; the shared visual language for every schematic diagram in this chapter.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no letters, no numbers, no busy clutter, no photorealism, no 3D bevels, no drop shadows"
+}

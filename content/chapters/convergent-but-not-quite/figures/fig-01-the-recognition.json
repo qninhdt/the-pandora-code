@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-the-recognition",
+  "chapter_slug": "convergent-but-not-quite",
+  "role": "hero",
+  "narrative_purpose": "The cold-open anchor: a thanator over its kill that the eye reads as 'panther' before it notices the alien details, so the reader feels the chapter's central tension firsthand.",
+  "subject": "A massive six-limbed black predator crouched low over a fallen prey animal in the forest gloom, its lean muscular body and grappling forelimbs reading unmistakably as a great cat mid-feed. On closer look it is alien: six limbs, a flared armoured crest behind the skull, four forward eyes in two stacked pairs, and faint bioluminescent striping along its flanks. A clear dark region of empty forest sits to the upper left of the animal.",
+  "scene": "Deep bioluminescent understory at night, glowing ferns and fungal light low to the ground, heavy haze swallowing the background.",
+  "camera": "Low naturalist three-quarter view, slightly below the predator, prey beneath its forelimbs.",
+  "light": "Faint cyan glow from ground flora rim-lighting the crouched body; the predator mostly in indigo shadow; eyes catching a scarce cool glint.",
+  "palette": "Void indigo and ocean teal dominant, cyan rim light, one scarce magenta glint in the eyes.",
+  "style": "Hand-painted naturalist plate, textured and observed.",
+  "detail_level": "High on the predator and its head; soft on the hazy surround.",
+  "composition": "Predator crouched centre-right over prey, open dark hazy negative space upper-left for a callout, depth dissolving behind.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "UI", "watermark", "logos", "human figures"],
+  "consistency_notes": "Same thanator archetype as fig-00 and fig-02. Leave the upper-left dark for annotation.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no UI chrome, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/convergent-but-not-quite/fig-00-cover.png"]
+}

@@ -1,0 +1,13 @@
+id: scaling-exponent
+label:
+  vi: Số mũ tỉ lệ
+  en: Scaling exponent
+definition:
+  vi: 'Con số mũ trong công thức lũy thừa Y = a·Mᵇ mô tả một thông số sinh học (Y) thay đổi ra sao theo khối lượng cơ thể (M). Số mũ b chính là linh hồn của cả phép tính: b = 1 nghĩa là thông số đó lớn cùng nhịp với khối lượng (đồng sinh trưởng); b < 1 nghĩa là nó lớn chậm hơn; b > 1 nghĩa là nó lớn nhanh hơn. Vẽ dữ liệu lên trục log-log, đường thẳng thu được có độ dốc bằng đúng b. Những số mũ này không tùy tiện - chúng lộ ra các quy luật vật lý sâu xa, như số mũ 3/4 của định luật Kleiber về trao đổi chất, hay số mũ khiến công suất bay đòi hỏi vượt mặt công suất cơ bắp ở các loài bay khổng lồ.'
+  en: 'The exponent in the power law Y = a·Mᵇ that describes how a biological measure (Y) changes with body mass (M). The exponent b is the heart of the whole calculation: b = 1 means the measure grows in lockstep with mass (isometry); b < 1 means it grows slower; b > 1 means it grows faster. Plot the data on log-log axes and the straight line you get has a slope of exactly b. These exponents are not arbitrary - they expose deep physical regularities, like the 3/4 exponent of Kleiber''s metabolic law, or the exponents that make the power flight demands outrun the power muscles can supply in giant flyers.'
+see_also:
+- allometry
+- isometry
+- kleibers-law
+category: concept
+cover_prompt: A painted log-log plot with a single straight glowing line rising across it, faint grid behind, cyan line on deep indigo, hand-painted glow, no text, no numbers, no axis labels.

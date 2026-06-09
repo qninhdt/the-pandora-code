@@ -1,0 +1,14 @@
+id: aposematism
+label:
+  vi: Tín hiệu cảnh báo
+  en: Aposematism
+definition:
+  vi: >-
+    Lối quảng cáo trung thực: một sinh vật có khả năng tự vệ (độc, gai, vị khó nuốt) phô ra một tín hiệu nổi bật - sọc sặc sỡ, màu chói, hoặc ánh sáng - để báo trước cho kẻ săn mồi "đừng đụng vào ta". Kẻ săn học được mối liên hệ giữa tín hiệu và hậu quả khó chịu, rồi tránh xa. Thường thấy là màu sắc ban ngày (ong vò vẽ), nhưng cũng có thể là ánh sáng ban đêm: loài cuốn chiếu *Motyxia* mù, tẩm xyanua, phát sáng xanh lục để cảnh báo - và thí nghiệm cho thấy mô hình phát sáng bị cắn ít hơn hẳn mô hình tối.
+  en: >-
+    Honest advertisement: an organism with a defense (poison, spines, a foul taste) displays a conspicuous signal - bold stripes, vivid color, or light - to warn predators off in advance. Predators learn to associate the signal with the unpleasant consequence and avoid it. Usually it is daytime color (a wasp), but it can be nighttime light: the blind, cyanide-laced millipede *Motyxia* glows green as a warning - and experiments show glowing models are bitten far less than dark ones.
+see_also:
+- bioluminescence
+- convergent-evolution
+category: concept
+cover_prompt: A small glowing greenish millipede on a dark forest floor, its light reading as a warning beacon, cool palette with one green accent, no text, no labels.

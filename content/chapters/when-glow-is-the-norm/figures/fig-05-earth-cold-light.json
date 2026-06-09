@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-earth-cold-light",
+  "chapter_slug": "when-glow-is-the-norm",
+  "role": "inline",
+  "narrative_purpose": "Anchor the real-science payload in Earth's own bioluminescence: the rare land firefly and the common sea sparkle, the familiar baseline against which Pandora reads as inverted.",
+  "subject": "A single plate joining two Earth night scenes across a band of darkness. One side: a firefly glowing warm yellow-green in mid-air over a dim summer meadow, a faint second firefly answering in the distance. Other side: a breaking ocean wave lit electric blue from within by a dinoflagellate bloom, the foam glowing as it curls.",
+  "scene": "Two terrestrial-Earth night habitats meeting: a grassy meadow at dusk and a dark shoreline wave, joined by deep shadow.",
+  "camera": "A balanced two-scene naturalist composition, the firefly close on its side, the wave mid-distance on its side.",
+  "light": "Each side has its own bioluminescent key — the firefly's warm pulse over the meadow, the cold blue glow inside the breaking wave; surrounding night kept deep and dark.",
+  "palette": "Void-indigo night across both; a scarce warm yellow-green on the firefly side as the deliberate warm accent, electric Pandora-cyan blue in the wave.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture; an honest Earth illustration, not a Pandora scene.",
+  "detail_level": "Crisp on the firefly's glowing abdomen and on the luminous curl of the wave; backgrounds soft and dark.",
+  "composition": "Two scenes balanced left and right across a dark seam, the warm point of the firefly answering the cold sweep of the wave.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Pandora flora", "Na'vi", "Avatar branding"],
+  "consistency_notes": "Cool base palette consistent with the chapter; this plate depicts EARTH bioluminescence, recognisably a meadow firefly and a glowing sea wave.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

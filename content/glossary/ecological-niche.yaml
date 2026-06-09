@@ -1,0 +1,13 @@
+id: ecological-niche
+label:
+  vi: Ổ sinh thái
+  en: Ecological niche
+definition:
+  vi: '"Công việc" mà một loài đảm nhận trong hệ sinh thái của nó - thứ nó ăn, kẻ ăn thịt nó, thời điểm nó kiếm mồi và những tác động vật lý lên môi trường. Đó không phải là một chỗ ở, mà là một bản mô tả công việc. Mọi sinh quyển đều lấp đầy vô số những "ô việc làm" sinh thái này; trên Pandora, Trái Đất hay bất cứ nơi nào, sự tiến hóa luôn tìm cách cắt cử một sinh vật nào đó lấp vào những vai trò trống.'
+  en: Not a place, but the complete set of conditions under which a species can survive and reproduce - temperature, food, moisture, active hours and dozens of other axes, stacked into what G. Evelyn Hutchinson in 1957 called an n-dimensional hypervolume. Crucially, a niche is a property of the environment, a job posted by the physics and chemistry of a place, sitting there as a real opening before anything fills it. That is why ecological roles recur across separate continents - and worlds.
+see_also:
+- fundamental-niche
+- realized-niche
+- niche-partitioning
+category: concept
+cover_prompt: A painted abstract space of glowing axes crossing in many directions with a luminous volume floating where they overlap, cool teal-cyan palette, painterly plate, no text, no labels.

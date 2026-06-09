@@ -1,0 +1,13 @@
+id: polyphyly
+label:
+  vi: Nhóm đa ngành (polyphyly)
+  en: Polyphyly
+definition:
+  vi: 'Một nhóm gán ghép từ hai hay nhiều dòng dõi khác nhau, được gộp lại vì một nét giống bề ngoài chứ không vì một tổ tiên chung gần. Nhóm đa ngành thậm chí không chứa tổ tiên chung của các thành viên - nó là một cái sọt phân loại, không phải một cành cây. Gộp Na''vi với người chỉ vì cả hai đứng thẳng, hai mắt, là một ví dụ: nét giống ấy là hội tụ, và cái nhóm dựng trên nó tan rã ngay khi ta cân đo các đặc điểm chung dẫn xuất thực sự.'
+  en: 'A group cobbled together from two or more separate lineages, lumped by a surface resemblance rather than a recent common ancestor. A polyphyletic group does not even contain the common ancestor of its members - it is a taxonomic basket, not a limb of the tree. Grouping the Na''vi with humans because both stand upright and have two eyes is one example: the resemblance is convergence, and the group built on it collapses the moment real shared derived traits are weighed.'
+see_also:
+- clade
+- phenetics
+- convergent-evolution
+category: bio
+cover_prompt: A painted diagram of two separate glowing tree branches whose far tips look alike and are wrongly circled together, their true roots far apart in the dark, cool teal with one false amber link, bioluminescent, no text, no labels.

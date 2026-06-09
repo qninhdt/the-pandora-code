@@ -1,0 +1,19 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "the-breathing-fans",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate for the landing book-map: a single Pandoran flyer seen so that the breathing fans along its flanks are the clear focal point - the whole chapter in one image.",
+  "subject": "A large six-limbed Pandoran flying creature in profile-three-quarter view, wings half-spread, its body turned just enough that a pair of slotted, fan-like respiratory openings along its flank are clearly visible and flared open, catching an inner glow; the head and its small facial nostrils are deliberately turned away and dim, so the eye is drawn to the side-mounted fans, not the face.",
+  "scene": "A dark naturalist's specimen space, the creature floating as if pinned in glowing display, deep atmospheric haze beyond.",
+  "camera": "A clean three-quarter display view, the creature large and centred, the flank fans turned toward the viewer.",
+  "light": "Bioluminescent key glowing from within the flank fans, cyan and teal; the rest of the body in deep indigo shadow; a faint warm rim on the far edge.",
+  "palette": "Void-indigo ground, cyan and living-teal glow concentrated in the breathing fans, a scarce amber rim accent.",
+  "style": "Painterly naturalist specimen plate, hand-painted texture, confident focal hierarchy.",
+  "detail_level": "Crisp on the flank fans and their slotted structure; the body softer; the head quietest; edges dissolving into haze.",
+  "composition": "Strong central figure, the glowing flank fans on the lower-third focal line, generous dark negative space around.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette, bioluminescent key from within the specimen. Same dark glowing-specimen mood as the established chapter covers.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

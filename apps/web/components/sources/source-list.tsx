@@ -26,7 +26,7 @@ const kindLabel: Record<Source["kind"], { vi: string; en: string }> = {
   other: { vi: "Khác", en: "Other" },
 };
 
-export function SourceList({ sources, locale = "vi", heading, className }: SourceListProps) {
+export function SourceList({ sources = [], locale = "vi", heading, className }: SourceListProps) {
   if (sources.length === 0) return null;
   return (
     <section

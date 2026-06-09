@@ -1,0 +1,18 @@
+{
+  "id": "fig-04-avian-flowthrough",
+  "chapter_slug": "the-breathing-fans",
+  "role": "diagram",
+  "narrative_purpose": "Shows the bird's one-way lung: air sacs front and back driving a single-direction flow through the exchange tubes, the high-performance design Pandora's flyers echo.",
+  "subject": "A flat schematic. In the centre, a set of parallel horizontal tubes (the lung's exchange tubes) with arrows all pointing the same direction, left to right. On the left end, a rounded balloon shape (a rear air sac); on the right end, another rounded balloon shape (a front air sac). A continuous looping arrow path shows air entering the rear balloon, passing one-way through the central tubes, and leaving via the front balloon. Small short arrows cross the central tubes at a slight angle, showing blood meeting the air stream crosswise.",
+  "scene": "Empty dark space background, only the two balloon shapes, the central tube bundle, and the directional arrows.",
+  "camera": "Flat head-on schematic view, no perspective, no 3D.",
+  "light": "Flat even lighting; the tubes, balloons, and arrows glow on their own.",
+  "palette": "Near-black background, cyan one-way flow arrows, teal balloon air sacs, faint magenta cross arrows for the blood.",
+  "style": "Clean elegant infographic of thin glowing lines and arrows, like a vector schematic.",
+  "detail_level": "Clear parallel tubes with same-direction arrows, two distinct balloon shapes at the ends, a few angled cross arrows; generous space.",
+  "composition": "Rear balloon left, front balloon right, parallel exchange tubes spanning the middle, one continuous one-way arrow loop through it all.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "photographic texture"],
+  "consistency_notes": "Thin glowing cyan/teal/magenta shapes on a near-black background; the shared visual language for every schematic diagram in this chapter.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no letters, no numbers, no busy clutter, no photorealism, no 3D bevels, no drop shadows"
+}

@@ -1,6 +1,5 @@
 import { CanonBadge } from "@/components/classification/canon-badge";
 import { AnatomyPlate } from "@/components/content/anatomy-plate";
-import { ConfidenceMeter } from "@/components/content/confidence-meter";
 import { DiagramFigure } from "@/components/content/diagram-figure";
 import { Figure } from "@/components/content/figure";
 import { FigureGrid } from "@/components/content/figure-grid";
@@ -93,9 +92,6 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
     ),
     CanonBadge: (props: ComponentProps<typeof CanonBadge>) => (
       <CanonBadge {...props} locale={loc} />
-    ),
-    ConfidenceMeter: (props: ComponentProps<typeof ConfidenceMeter>) => (
-      <ConfidenceMeter {...props} locale={loc} />
     ),
     DiagramFigure: (props: ComponentProps<typeof DiagramFigure>) => (
       <DiagramFigure {...props} locale={loc} />

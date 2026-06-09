@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-thanator-vs-panther",
+  "chapter_slug": "convergent-but-not-quite",
+  "role": "comparison",
+  "narrative_purpose": "Sets the convergent shape against the divergent build directly: same pouncing pose, one Earth cat and one Pandoran predator, so the reader sees role-convergence and body-divergence at once.",
+  "subject": "A clean two-panel comparison, a faint vertical seam dividing the frame. LEFT panel: an Earth black panther mid-pounce, four limbs, two eyes, sleek and feline, springing forward. RIGHT panel: a Pandoran thanator in the identical explosive pouncing pose so the silhouettes echo, but with six limbs, an armoured swept-back crest, four eyes in two stacked pairs, and lateral breathing membranes along its flank. The two poses mirror each other across the seam.",
+  "scene": "Both animals against a simple dim bioluminescent-forest backdrop kept plain so the bodies dominate.",
+  "camera": "Matched side-on views, both animals at the same scale and pose for direct comparison.",
+  "light": "Even cool rim light on both bodies from glowing flora; backgrounds dark and uncluttered.",
+  "palette": "Cool teal-indigo throughout, the panther in slightly warmer neutral shadow, the thanator in cooler teal, scarce magenta glints in the alien eyes.",
+  "style": "Two matched naturalist plates, painterly, reading as a comparison through composition alone.",
+  "detail_level": "High on both animals' silhouettes; minimal background.",
+  "composition": "Symmetric left/right panels mirroring the same pose, plain dark space above each animal for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "UI", "watermark", "logos"],
+  "consistency_notes": "The thanator must match fig-00/fig-01. The panther is a real Earth black panther for contrast.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no UI chrome, no photographic or 3D-render look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/convergent-but-not-quite/fig-00-cover.png"]
+}

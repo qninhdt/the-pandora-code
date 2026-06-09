@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-navi-vs-hexapod",
+  "chapter_slug": "six-limbs-and-the-bilateral-lattice",
+  "role": "comparison",
+  "narrative_purpose": "Sets the lattice template beside the Na'vi so every reduction lines up at a glance - six limbs to four, four eyes to two, paired queues to one, opercula to a nose - showing the Na'vi as the template edited, not redesigned.",
+  "subject": "A side-by-side comparison plate. On the left, a generic six-limbed Pandoran hexapod in profile: six limbs, four eyes, a pair of temple queues, and lateral breathing slits along the flank, all clearly present. On the right, an upright Na'vi figure in matching profile: four limbs, two eyes, a single queue at the back of the head, breathing through cranial nostrils - with the lost features (the middle limb pair, the second eye pair, the second queue, the flank slits) shown as faint dimmed ghost-marks where they would have been.",
+  "scene": "A dark comparative-anatomy space, the two figures floating as paired specimens, a soft vertical divide of haze between them.",
+  "camera": "A flat front-facing comparison view, both figures the same height in frame, matched poses for easy reading.",
+  "light": "Bioluminescent key from within both figures, cyan and teal; the hexapod's full feature set glowing brightly, the Na'vi's lost features barely glimmering as ghost-marks; deep indigo divide.",
+  "palette": "Void-indigo ground, cyan and living-teal glow on present features, dim grey-teal ghosting on the lost features, one scarce amber accent.",
+  "style": "Painterly comparative-anatomy plate, hand-painted texture, balanced two-figure clarity.",
+  "detail_level": "Crisp on both figures' limb counts, eyes, queues, and breathing structures; the ghost-marks deliberately faint; background minimal dark haze.",
+  "composition": "Two profile figures filling left and right halves, matched in scale and pose, a soft central vertical divide, dark margins.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "diagram split-line chrome", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette, bioluminescent key. The reductions must read clearly through brightness contrast, not text. Same mood as the chapter cover.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no infographic chrome, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/six-limbs-and-the-bilateral-lattice/fig-00-cover.png"]
+}

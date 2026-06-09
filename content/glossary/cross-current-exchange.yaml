@@ -1,0 +1,13 @@
+id: cross-current-exchange
+label:
+  vi: Trao đổi chéo dòng
+  en: Cross-current exchange
+definition:
+  vi: Cách sắp xếp trao đổi khí trong phổi chim, nơi máu băng qua luồng không khí theo một góc thay vì đối đầu trực diện. Không hoàn hảo bằng kiểu ngược dòng của mang cá, nhưng vì luồng khí chảy một chiều liên tục nên máu được tiếp xúc với không khí tươi tại nhiều điểm dọc đường đi, đủ để bỏ xa lá phổi thủy triều của động vật có vú. Đây gần như chắc chắn là kiểu trao đổi mà những kẻ bay lượn khổng lồ của Pandora vận dụng.
+  en: The gas-exchange arrangement in a bird's lung, where blood crosses the air stream at an angle rather than meeting it head-on. Not as perfect as the fish gill's countercurrent, but because the airflow runs one way continuously, the blood meets fresh air at many points along its path - more than enough to leave the mammalian tidal lung gasping. It is almost certainly the arrangement Pandora's giant flyers use.
+see_also:
+- countercurrent-exchange
+- unidirectional-airflow
+- operculum
+category: concept
+cover_prompt: A painted schematic of parallel glowing one-way air tubes with thin blood lines crossing them at an angle, cyan flow and faint magenta crossings, deep indigo ground, painterly, no text, no labels, no numbers.

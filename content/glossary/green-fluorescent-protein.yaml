@@ -1,0 +1,14 @@
+id: green-fluorescent-protein
+label:
+  vi: Protein huỳnh quang xanh lục (GFP)
+  en: Green fluorescent protein (GFP)
+definition:
+  vi: >-
+    Một protein lấy từ loài sứa pha lê *Aequorea victoria*, hấp thụ ánh sáng xanh dương rồi tái phát ra ánh sáng xanh lục. Trong cơ thể con sứa, nó nhận năng lượng từ phản ứng phát sáng và đổi màu ánh sáng ấy sang xanh lục. Tách ra và gắn vào sinh vật khác như một "nhãn phát sáng", GFP đã làm cách mạng hóa sinh học - cho phép các nhà nghiên cứu thắp sáng một gene đang hoạt động ngay bên trong tế bào sống. Công trình về GFP được trao giải Nobel Hóa học năm 2008. Lưu ý: GFP là huỳnh quang (cần ánh sáng từ ngoài), khác với phát quang sinh học (tự tạo ánh sáng).
+  en: >-
+    A protein taken from the crystal jellyfish *Aequorea victoria* that absorbs blue light and re-emits it as green. In the jellyfish it receives energy from the light-making reaction and shifts that light to green. Plucked out and wired into other organisms as a glowing tag, GFP revolutionized biology - letting researchers light up a single gene switching on inside a living cell. Work on GFP won the 2008 Nobel Prize in Chemistry. Note: GFP is fluorescence (it needs incoming light), distinct from bioluminescence (which makes its own).
+see_also:
+- fluorescence
+- bioluminescence
+category: concept
+cover_prompt: A jellyfish silhouette glowing green at its rim, a single bright protein point re-emitting light, cool teal-and-green palette, no text, no labels.

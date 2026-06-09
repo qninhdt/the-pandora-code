@@ -1,0 +1,13 @@
+id: niche-partitioning
+label:
+  vi: Sự phân chia ổ sinh thái
+  en: Niche partitioning
+definition:
+  vi: 'Quá trình các loài cạnh tranh buộc phải phân chia và thu hẹp ổ sinh thái của mình để tránh cảnh triệt tiêu lẫn nhau. Khi nhiều thực khách cùng vây quanh một bàn tiệc, chọn lọc tự nhiên sẽ đẩy họ vào những phân khu chuyên biệt nhỏ hơn: loài thì với tán lá cao, loài thì gặm cỏ mặt đất, cho đến khi sự chồng chéo chết chóc biến mất. Đó là lời giải cho câu hỏi vì sao hàng chục loài ăn cỏ có thể cùng chia sẻ một khu rừng.'
+  en: 'How many seemingly competing species manage to coexist: instead of sharing one niche they split it, each doing a slightly different job until the deadly overlap is gone. The ecologist Robert MacArthur found five warbler species living in the same spruce trees were really feeding in five different zones of the tree. On Pandora the hexapede, direhorse and titanothere divide the forest by feeding height and food type - coexistence not as the absence of competition, but as competition already resolved into difference.'
+see_also:
+- competitive-exclusion-principle
+- character-displacement
+- ecological-niche
+category: concept
+cover_prompt: A painted forest cutaway with three animals feeding at three clearly separated heights, each in its own glowing band, cool teal-cyan palette, painterly plate, no text, no labels.

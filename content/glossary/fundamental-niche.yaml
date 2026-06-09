@@ -1,0 +1,13 @@
+id: fundamental-niche
+label:
+  vi: Ổ sinh thái cơ bản
+  en: Fundamental niche
+definition:
+  vi: 'Toàn bộ những không gian và nguồn tài nguyên mà một loài có khả năng khai thác một cách lý thuyết, nếu không có bất kỳ rào cản nào từ kẻ thù hay đối thủ cạnh tranh. Nó giống như bộ kỹ năng thô của một ứng viên: mọi công việc họ có thể làm nếu không có ai tranh giành vị trí.'
+  en: The full range of conditions a species could physically tolerate if it had the world to itself - the outer limits its body allows, with no competitors or predators fencing it in. In reality almost no species occupies its whole fundamental niche; other species got to parts of the space first, pressing it into the smaller life of its realized niche.
+see_also:
+- realized-niche
+- ecological-niche
+- competitive-exclusion-principle
+category: concept
+cover_prompt: A painted large luminous volume with a smaller bright core nested inside it, suggesting potential versus actual range, cool teal-cyan palette, painterly plate, no text, no labels.

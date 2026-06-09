@@ -1,0 +1,12 @@
+id: gill-lamella
+label:
+  vi: Phiến mang
+  en: Gill lamella
+definition:
+  vi: "Những phiến mỏng đầy mạch máu xếp thành hàng trên mang cá, nơi quá trình trao đổi khí thực sự diễn ra. Nước chảy qua chúng, oxy khuếch tán vào máu bên trong. Để vắt được nhiều oxy nhất từ một thứ môi trường vốn nghèo oxy như nước, các phiến mang đẩy diện tích bề mặt lên cực đại và dựng máu chảy ngược chiều với nước - chính là mẹo trao đổi ngược dòng. Đây là lời đáp của vật chất sống cho định luật Fick trong môi trường khó nhằn nhất: dưới nước."
+  en: "The thin, blood-filled plates arrayed along a fish gill, where the actual gas exchange happens. Water flows over them and oxygen diffuses into the blood inside. To wring the most oxygen from a medium as oxygen-poor as water, the lamellae push surface area to the maximum and run the blood opposite to the water - the countercurrent trick. They are life's answer to Fick's law in the hardest environment of all: underwater."
+see_also:
+  - countercurrent-exchange
+  - ficks-law
+category: bio
+cover_prompt: A painted close study of a fish gill's fine red-pink lamellae fanned in rows with water streaming over them, delicate vascular detail, cool teal water against deep indigo, painterly, no text, no labels, no numbers.

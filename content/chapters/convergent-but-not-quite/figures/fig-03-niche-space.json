@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-niche-space",
+  "chapter_slug": "convergent-but-not-quite",
+  "role": "diagram",
+  "narrative_purpose": "Makes the abstract niche concept visible: two crossing axes define a space of ways to make a living, and Earth animals and Pandoran animals settle into the same clusters, showing niches are properties of the environment, not of either planet.",
+  "subject": "An abstract dark field with two faint glowing axis-lines crossing at right angles: a horizontal axis along which small animal silhouettes sit at the left and large ones at the right, and a vertical axis along which gentle grazing silhouettes sit at the bottom and fanged hunting silhouettes at the top. Scattered across this space are small glowing animal silhouettes gathered into three or four distinct clusters. In each cluster, two silhouettes overlap: one drawn in cool cyan (an Earth animal) and one in living-teal-green (a Pandoran animal), the matched pair occupying the same spot.",
+  "scene": "Deep void-indigo space, the axes and silhouettes glowing softly like constellations, faint haze.",
+  "camera": "Flat head-on diagrammatic view of the abstract space.",
+  "light": "Self-luminous silhouettes and axis lines against dark; no external light source.",
+  "palette": "Void indigo ground, cyan for one set of silhouettes and living-teal-green for the other, axis lines pale stone-grey, no warm accent.",
+  "style": "Painterly plate that reads as a diagram through composition alone, soft glowing forms, not a hard vector chart.",
+  "detail_level": "Moderate: silhouettes simple and clear, clusters obviously paired, axes legible as gradients of size and ferocity.",
+  "composition": "Two crossing axes framing a field of paired clusters, dark open margins around the edges for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "axis text", "tick marks", "arrows", "leader lines", "grid", "UI", "watermark", "logos"],
+  "consistency_notes": "Cool Pandora palette; the two tints distinguish the two biospheres without any warm competing for area. Reads as a teaching picture.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no tick marks, no arrows, no grid, no diagram chrome, no photographic or 3D-render look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

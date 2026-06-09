@@ -1,0 +1,12 @@
+id: homeobox
+label:
+  vi: Hộp gene homeobox
+  en: Homeobox
+definition:
+  vi: Một đoạn DNA ngắn, chỉ chừng 180 cặp base, nằm chễm chệ và gần như không sai một ly bên trong các gene Hox cùng vô số các gene điều hòa phát triển khác. Nó mã hóa cho một phần của protein giúp gene bấu chặt lấy DNA và đóng vai trò như một chiếc công tắc tổng để bật hoặc tắt các gene khác. Việc tìm thấy đúng chuỗi homeobox này ở những sinh vật cách xa nhau đến hơn 600 triệu năm tiến hóa chính là bước ngoặt làm bừng sáng toàn bộ lĩnh vực sinh học tiến hóa phát triển (evo-devo).
+  en: A short stretch of DNA, about 180 base pairs long, found nearly identical inside the Hox genes and many other developmental regulators. It encodes the part of the protein that lets the gene grip DNA and switch other genes on or off like a master switch. Finding this same homeobox sequence in creatures separated by more than 600 million years was the discovery that opened up the whole field of evolutionary developmental biology.
+see_also:
+- hox-genes
+- genetic-toolkit
+category: concept
+cover_prompt: A painted close view of a glowing protein shape clasping a twist of luminous DNA helix, cool teal and cyan light against deep indigo, no text, no labels.

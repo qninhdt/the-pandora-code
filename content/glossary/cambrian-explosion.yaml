@@ -1,0 +1,13 @@
+id: cambrian-explosion
+label:
+  vi: Sự bùng nổ kỷ Cambri
+  en: Cambrian explosion
+definition:
+  vi: 'Quãng thời gian vào khoảng 538 triệu năm trước khi mà gần như mọi sơ đồ cơ thể động vật lớn đột ngột xuất đầu lộ diện trong hồ sơ hóa thạch chỉ trong một cái chớp mắt của lịch sử địa chất. Điều đáng ngạc nhiên là nó chẳng hề mang theo một đợt sóng thần sáng tạo gene mới ồ ạt nào: bộ công cụ di truyền vốn đã túc trực sẵn ở sinh vật tổ tiên chung, và sự bùng nổ ấy thực chất phần lớn chỉ là việc tái điều động lại bộ công cụ đó theo những phương cách mới toanh thông qua các đột biến điều hòa.'
+  en: 'The period around 538 million years ago when nearly every major animal body plan appears in the fossil record over a relatively short stretch of geological time. The surprise is that it did not come with a massive wave of new gene creation: the genetic toolkit already existed in the common ancestor, and the explosion was largely the redeployment of that toolkit in new ways through regulatory mutations.'
+see_also:
+- genetic-toolkit
+- body-plan
+- cis-regulatory-element
+category: concept
+cover_prompt: A painted dark sea suddenly teeming with many wildly different glowing early-animal silhouettes radiating outward from a single point of light, cool teal and indigo with scarce magenta, no text, no labels.

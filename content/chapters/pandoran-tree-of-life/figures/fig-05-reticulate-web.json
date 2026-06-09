@@ -1,0 +1,19 @@
+{
+  "id": "fig-05-reticulate-web",
+  "chapter_slug": "pandoran-tree-of-life",
+  "role": "inline",
+  "narrative_purpose": "Shows the honest edge of the whole method: the neural-queue network (Eywa) lets information pass sideways between lineages, so a clean branching tree turns into a webbed, reticulate one. The reader sees why the tree is only part of the story.",
+  "subject": "A glowing branching tree of life rising from a single root, its lineages fanning upward - but threaded across and between the separate branches run fine luminous horizontal filaments, queue-like neural tendrils, linking branch to branch sideways so the clean fork becomes a net. At several crossing points the sideways threads glow brighter where lineages touch and exchange. The lower trunk dissolves into a dense tangled mesh of roots and threads rather than a single clean line.",
+  "scene": "A dark biolum space, the upright tree clear at first then increasingly webbed by horizontal neural filaments, deep haze beyond.",
+  "camera": "A front-on view of the whole tree, tall in frame, the sideways-linking threads clearly visible against dark space.",
+  "light": "Self-glow from both the vertical branches and the horizontal linking threads; the cross-links a touch warmer to read as living connection; deep indigo shadow.",
+  "palette": "Void-indigo ground; living-teal and cyan vertical branches; faint magenta-warm glow on the horizontal queue-threads and root mesh, restrained.",
+  "style": "Painterly naturalist plate, hand-painted glow, elegant - not a vector infographic.",
+  "detail_level": "Crisp on the contrast between clean vertical branching and the sideways web of threads, and on the tangled root mesh; edges dissolving into haze.",
+  "composition": "A vertical tree filling the frame, horizontal glowing cross-links woven between branches, dense root tangle at the base, dark margins.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "infographic chrome", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with bioluminescent self-glow; the queue-threads echo the neural-queue motif of the chapter. The reticulation - sideways links turning tree into web - is the whole point, carried with NO text.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no infographic chrome, no photographic or 3D-render look, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

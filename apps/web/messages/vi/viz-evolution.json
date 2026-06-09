@@ -1,0 +1,75 @@
+{
+  "viz": {
+    "bilateralTree": {
+      "title": "Cây phát sinh của lưới đối xứng hai bên",
+      "ariaLabel": "Cây phát sinh chủng loài của lưới đối xứng hai bên Pandora, với Na'vi là nhánh ngoại lệ"
+    },
+    "characterMatrix": {
+      "title": "Ma trận đặc điểm → cây tiết kiệm nhất",
+      "ariaLabel": "Cây phát sinh chủng loài Pandora dựng từ ma trận đặc điểm",
+      "matrixHead": "Đặc điểm × đơn vị phân loại",
+      "parsimony": "Tiết kiệm (đúng)",
+      "phenetic": "Tương đồng bề ngoài (bẫy)",
+      "steps": "Số bước tiến hóa",
+      "stepsParsimony": "Ít bước nhất — chỉ một lần mọc xương sợi-carbon và queue",
+      "stepsPhenetic": "Bùng nổ số bước — xương sợi-carbon và queue phải mọc hai lần trên hai thế giới",
+      "placeNavi": "Đặt Na'vi:",
+      "synapNote": "Nhánh tô đậm: nơi xương sợi-carbon + queue xuất hiện một lần, gắn cả nhánh thành một dòng họ.",
+      "hint": "Bấm để dời Na'vi. Phép tiết kiệm chọn cái cây cần ít thay đổi nhất — và cái cây đó đặt Na'vi sâu trong nhánh sáu chi Pandora, không phải cạnh con người."
+    },
+    "longBranch": {
+      "title": "Lực hút nhánh dài",
+      "trueTree": "Cây thật",
+      "inferredTree": "Phép tiết kiệm suy ra",
+      "ariaTrue": "Cây phát sinh thật",
+      "ariaInferred": "Cây sai do lực hút nhánh dài",
+      "trueNote": "Ikran và toruk nằm trên hai dòng dõi riêng. Nhánh dài = tiến hóa nhanh, chất đầy đặc điểm bay riêng lẻ.",
+      "inferredNote": "Hai nhánh dài bị kéo lại cạnh nhau ở gốc — phép tiết kiệm nhầm sự giống nhau ngẫu nhiên thành họ hàng.",
+      "attracted": "Bị hút!",
+      "fast": "tiến hóa nhanh",
+      "slow": "chậm",
+      "hint": "Trên Trái Đất, dữ liệu phân tử sửa được lỗi này. Pandora không có phân tử nào — nên cây dựng từ hình thái vẫn dễ sập vào cái bẫy này."
+    },
+    "limbField": {
+      "title": "Bộ công cụ, ba công tắc",
+      "on": "bật",
+      "off": "tắt",
+      "resultLabel": "Cấu hình này ≈",
+      "limbCount": "Số cặp chi",
+      "hint": "Cùng một bộ gene Hox. Tắt enhancer của một vùng chi là xóa hẳn cặp chi đó — không phải hợp nhất. Đây chính là cách rắn mất chân trên Trái Đất."
+    },
+    "hoxMap": {
+      "title": "Hệ thống địa chỉ Hox",
+      "shelf": "Dãy gene trên nhiễm sắc thể",
+      "body": "Cơ thể, từ đầu đến đuôi",
+      "prompt": "Di chuột hoặc bấm vào một gene để thấy vùng cơ thể nó đánh dấu.",
+      "hint": "Thứ tự các gene trên giá khớp với thứ tự các vùng cơ thể chúng đánh dấu. Gene Hox không xây dựng bộ phận — nó chỉ dán địa chỉ. Dời nhãn là dời bộ phận, mà không cần thiết kế lại bộ phận đó."
+    },
+    "replayTape": {
+      "title": "Tua lại cuốn băng",
+      "role": "Vai trò (không đổi)",
+      "roleValue": "Kẻ săn mồi mai phục — thấp, nhanh, mắt hướng trước",
+      "originLabel": "Tổ tiên (ngẫu nhiên mỗi lần)",
+      "substrateLabel": "Chất nền",
+      "button": "Tua lại cuốn băng",
+      "run": "Lần chạy {n}/{total}",
+      "hint": "Vai trò hội tụ mỗi lần — vì vật lý viết bản mô tả công việc. Nhưng chất nền lấp đầy vai trò ấy là chuyện của lịch sử, và lịch sử không bao giờ lặp lại."
+    },
+    "convergence": {
+      "title": "Cùng công việc, khác chất nền",
+      "job": "Công việc",
+      "tells": "Dấu vết",
+      "jobHint": "Ở chế độ Công việc, cả hai khoác cùng một dáng vồ mồi — lò xo hông, chi trước quặp, mắt săn hướng trước. Mai phục có một hình dạng, và bất kỳ dòng dõi nào nhận công việc ấy đều bị kéo về hình dạng đó.",
+      "tellsHint": "Ở chế độ Dấu vết, hãy nhìn lại con thanator: sáu chi nơi báo có bốn, bốn mắt nơi báo có hai, khe hô hấp dọc sườn. Vai trò là của Trái Đất; con vật thì dứt khoát không phải.",
+      "shared": "Đặc điểm vai trò (hội tụ)",
+      "inherited": "Di sản Pandora (không hội tụ)"
+    },
+    "nichePartition": {
+      "title": "Một khu rừng, chia thành nhiều tầng",
+      "pandoraLabel": "Pandora",
+      "earthLabel": "Tương đồng Trái Đất",
+      "prompt": "Bấm vào một tầng để xem ai kiếm ăn ở đó.",
+      "hint": "Loại trừ cạnh tranh nói rằng hai loài không thể chung một hốc sinh thái. Lời giải không phải chia sẻ một hốc — mà là tách nó thành nhiều tầng, mỗi loài một độ cao, một cách ăn."
+    }
+  }
+}

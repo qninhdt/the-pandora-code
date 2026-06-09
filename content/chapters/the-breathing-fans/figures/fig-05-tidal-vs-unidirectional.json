@@ -1,0 +1,18 @@
+{
+  "id": "fig-05-tidal-vs-unidirectional",
+  "chapter_slug": "the-breathing-fans",
+  "role": "comparison",
+  "narrative_purpose": "The core contrast of the chapter: a tidal sac that fills and empties through one door and traps stale air, beside a one-way flow-through tube whose surface always meets fresh air.",
+  "subject": "A flat schematic split into two halves side by side. LEFT half: a single rounded sac with one opening on its left; a double-headed arrow at the opening showing air going in AND out the same door; a shaded dim pocket of trapped stale air at the blind right end of the sac. RIGHT half: a straight open-ended tube; a single arrow entering the left end and a single arrow leaving the right end, all one direction; a clean bright band along the tube wall showing the always-fresh exchange surface.",
+  "scene": "Empty dark space background, a faint thin vertical divider between the two halves, only the sac and the tube and their arrows.",
+  "camera": "Flat head-on schematic view, no perspective, no 3D.",
+  "light": "Flat even lighting; arrows and the fresh-surface band glow on their own; the trapped stale pocket is dim and dull.",
+  "palette": "Near-black background; left (tidal) side uses dull amber for the double arrow and a murky amber dim pocket; right (one-way) side uses bright cyan one-way arrows and a clean teal fresh-surface band.",
+  "style": "Clean elegant infographic of thin glowing lines and arrows, like a vector schematic.",
+  "detail_level": "One clear sac with a double-headed arrow and a dim trapped pocket on the left; one clear straight tube with single-direction arrows and a bright surface band on the right; generous space.",
+  "composition": "Two balanced halves side by side, divider down the centre, the tidal sac left, the flow-through tube right.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "photographic texture"],
+  "consistency_notes": "Thin glowing shapes on a near-black background; cyan/teal = the efficient one-way design, dull amber = the wasteful tidal design; shared visual language for this chapter's diagrams.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no letters, no numbers, no busy clutter, no photorealism, no 3D bevels, no drop shadows"
+}

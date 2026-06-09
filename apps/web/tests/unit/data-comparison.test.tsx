@@ -1,10 +1,11 @@
 import { DataComparison } from "@/components/content/data-comparison";
-import { render, screen } from "@testing-library/react";
+import { screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
+import { renderWithIntl } from "./render-with-intl";
 
 describe("DataComparison", () => {
   it("renders legacy MDX items without crashing", () => {
-    render(
+    renderWithIntl(
       <DataComparison
         items={[
           {
@@ -22,7 +23,7 @@ describe("DataComparison", () => {
   });
 
   it("renders nothing when no data is provided", () => {
-    const { container } = render(<DataComparison />);
+    const { container } = renderWithIntl(<DataComparison />);
     expect(container.firstChild).toBeNull();
   });
 });

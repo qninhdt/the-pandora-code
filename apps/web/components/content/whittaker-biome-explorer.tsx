@@ -1,12 +1,16 @@
 "use client";
 
-import { useReducedMotionSafe } from "@/components/motion/use-reduced-motion-safe";
-import { cn } from "@/lib/utils";
+import { GlowDefs, glowUrl } from "@/components/content/viz/glow-defs";
+import { ReferenceMarker } from "@/components/content/viz/reference-marker";
+import { VizFigure } from "@/components/content/viz/viz-figure";
+import { VizReadout } from "@/components/content/viz/viz-readout";
+import { VizSlider } from "@/components/content/viz/viz-slider";
+import { VizText, VizTick } from "@/components/content/viz/viz-svg-text";
+import { useLocale, useTranslations } from "next-intl";
 import { useId, useRef, useState } from "react";
 
 interface WhittakerBiomeExplorerProps {
   caption?: string;
-  locale?: "vi" | "en";
   className?: string;
 }
 
@@ -31,6 +35,8 @@ type BiomeKey =
   | "savanna"
   | "tropicalRainforest";
 
+// Scientific-data record: each biome's color is bound to its vi/en name, so this
+// stays in code (per the i18n boundary — only generic UI labels move to messages).
 const BIOMES: Record<BiomeKey, { vi: string; en: string; color: string }> = {
   tundra: {
     vi: "Đài nguyên",
@@ -99,29 +105,6 @@ function ty(precip: number): number {
   return PAD.top + (1 - (precip - P_MIN) / (P_MAX - P_MIN)) * PLOT_H;
 }
 
-const STRINGS = {
-  vi: {
-    tempAxis: "Nhiệt độ trung bình năm (°C) →",
-    precipAxis: "Lượng mưa năm (cm) →",
-    biome: "Quần xã sinh vật",
-    tempLabel: "Nhiệt độ",
-    precipLabel: "Lượng mưa",
-    earth: "Nhiệt đới Trái Đất",
-    pandora: "Pandora (Australis)",
-    hint: "Kéo điểm — hoặc dùng thanh trượt — để xem khí hậu nào nuôi quần xã nào. Pandora ấm và ẩm: rừng mưa trải rộng.",
-  },
-  en: {
-    tempAxis: "Mean annual temperature (°C) →",
-    precipAxis: "Annual precipitation (cm) →",
-    biome: "Biome",
-    tempLabel: "Temperature",
-    precipLabel: "Precipitation",
-    earth: "Earth tropics",
-    pandora: "Pandora (Australis)",
-    hint: "Drag the point — or use the sliders — to see which climate grows which biome. Pandora is warm and wet: rainforest runs wide.",
-  },
-} as const;
-
 const GRID_NX = 23;
 const GRID_NY = 13;
 
@@ -136,14 +119,9 @@ const DEFAULT = { temp: 27, precip: 360 }; // deterministic SSR default = Pandor
 // chapter's point that Pandora's warm, wet air grows rainforest across a far
 // wider band than Earth's. SVG-only and deterministic for SSR; sliders keep it
 // keyboard-accessible, with optional pointer-drag on the plane.
-export function WhittakerBiomeExplorer({
-  caption,
-  locale = "en",
-  className,
-}: WhittakerBiomeExplorerProps) {
-  const reduced = useReducedMotionSafe();
-  void reduced;
-  const t = STRINGS[locale];
+export function WhittakerBiomeExplorer({ caption, className }: WhittakerBiomeExplorerProps) {
+  const t = useTranslations("viz.whittaker");
+  const locale = (useLocale() === "vi" ? "vi" : "en") as "vi" | "en";
   const uid = useId();
   const svgRef = useRef<SVGSVGElement | null>(null);
   const [temp, setTemp] = useState(DEFAULT.temp);
@@ -169,263 +147,176 @@ export function WhittakerBiomeExplorer({
   const cellH = PLOT_H / GRID_NY;
 
   return (
-    <figure className={cn("my-8", className)}>
-      <div className="overflow-hidden rounded-2xl border border-border bg-surface/60 p-4 backdrop-blur-sm">
-        <svg
-          ref={svgRef}
-          viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
-          className="w-full touch-none"
-          role="img"
-          aria-label={`${t.biome}: ${BIOMES[biome][locale]} — ${temp}°C, ${precip} cm`}
-          onPointerDown={(e) => {
-            setDragging(true);
-            e.currentTarget.setPointerCapture(e.pointerId);
-            pointTo(e);
-          }}
-          onPointerMove={(e) => {
-            if (dragging) pointTo(e);
-          }}
-          onPointerUp={(e) => {
-            setDragging(false);
-            e.currentTarget.releasePointerCapture(e.pointerId);
-          }}
+    <VizFigure
+      title={t("title")}
+      subtitle={t("subtitle")}
+      caption={caption}
+      hint={t("hint")}
+      tone="teal"
+      className={className}
+    >
+      <svg
+        ref={svgRef}
+        viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
+        className="w-full touch-none"
+        role="img"
+        aria-label={`${t("biome")}: ${BIOMES[biome][locale]} — ${temp}°C, ${precip} cm`}
+        onPointerDown={(e) => {
+          setDragging(true);
+          e.currentTarget.setPointerCapture(e.pointerId);
+          pointTo(e);
+        }}
+        onPointerMove={(e) => {
+          if (dragging) pointTo(e);
+        }}
+        onPointerUp={(e) => {
+          setDragging(false);
+          e.currentTarget.releasePointerCapture(e.pointerId);
+        }}
+      >
+        <GlowDefs idBase={uid} />
+
+        {/* biome field */}
+        {Array.from({ length: GRID_NX }, (_, i) =>
+          Array.from({ length: GRID_NY }, (_, j) => {
+            const cellT = T_MIN + ((i + 0.5) / GRID_NX) * (T_MAX - T_MIN);
+            const cellP = P_MIN + (1 - (j + 0.5) / GRID_NY) * (P_MAX - P_MIN);
+            const key = classify(cellT, cellP);
+            return (
+              <rect
+                key={`${i}-${j}`}
+                x={PAD.left + i * cellW}
+                y={PAD.top + j * cellH}
+                width={cellW + 0.5}
+                height={cellH + 0.5}
+                fill={BIOMES[key].color}
+                opacity={key === biome ? 0.95 : 0.5}
+              />
+            );
+          }),
+        )}
+
+        {/* grid overlay for legibility */}
+        <rect
+          x={PAD.left}
+          y={PAD.top}
+          width={PLOT_W}
+          height={PLOT_H}
+          fill={glowUrl(uid, "grid")}
+          opacity={0.4}
+        />
+
+        {/* axes */}
+        <line
+          x1={PAD.left}
+          y1={PAD.top + PLOT_H}
+          x2={PAD.left + PLOT_W}
+          y2={PAD.top + PLOT_H}
+          style={{ stroke: "var(--border-strong)" }}
+          strokeWidth={1.5}
+        />
+        <line
+          x1={PAD.left}
+          y1={PAD.top}
+          x2={PAD.left}
+          y2={PAD.top + PLOT_H}
+          style={{ stroke: "var(--border-strong)" }}
+          strokeWidth={1.5}
+        />
+        <VizText x={PAD.left + PLOT_W / 2} y={VIEW_H - 20} size="small" anchor="middle">
+          {t("tempAxis")}
+        </VizText>
+        <VizText
+          x={14}
+          y={PAD.top + PLOT_H / 2}
+          size="small"
+          anchor="middle"
+          transform={`rotate(-90 14 ${PAD.top + PLOT_H / 2})`}
         >
-          {/* biome field */}
-          {Array.from({ length: GRID_NX }, (_, i) =>
-            Array.from({ length: GRID_NY }, (_, j) => {
-              const cellT = T_MIN + ((i + 0.5) / GRID_NX) * (T_MAX - T_MIN);
-              const cellP = P_MIN + (1 - (j + 0.5) / GRID_NY) * (P_MAX - P_MIN);
-              const key = classify(cellT, cellP);
-              return (
-                <rect
-                  key={`${i}-${j}`}
-                  x={PAD.left + i * cellW}
-                  y={PAD.top + j * cellH}
-                  width={cellW + 0.5}
-                  height={cellH + 0.5}
-                  fill={BIOMES[key].color}
-                  opacity={key === biome ? 0.95 : 0.5}
-                />
-              );
-            }),
-          )}
+          {t("precipAxis")}
+        </VizText>
+        {/* a few axis ticks */}
+        {[-10, 0, 10, 20, 30].map((v) => (
+          <VizTick key={v} x={tx(v)} y={PAD.top + PLOT_H + 16}>
+            {v}
+          </VizTick>
+        ))}
+        {[0, 150, 300, 450].map((v) => (
+          <VizTick key={v} x={PAD.left - 6} y={ty(v) + 3} anchor="end">
+            {v}
+          </VizTick>
+        ))}
 
-          {/* axes */}
-          <line
-            x1={PAD.left}
-            y1={PAD.top + PLOT_H}
-            x2={PAD.left + PLOT_W}
-            y2={PAD.top + PLOT_H}
-            style={{ stroke: "var(--border-strong)" }}
+        {/* reference markers */}
+        <ReferenceMarker
+          x={tx(EARTH.temp)}
+          y={ty(EARTH.precip)}
+          label={t("earth")}
+          tone="var(--muted)"
+        />
+        <ReferenceMarker
+          x={tx(PANDORA.temp)}
+          y={ty(PANDORA.precip)}
+          label={t("pandora")}
+          tone="var(--cyan)"
+        />
+
+        {/* the draggable climate point */}
+        <g transform={`translate(${tx(temp)} ${ty(precip)})`} style={{ cursor: "grab" }}>
+          <circle r={8} style={{ fill: "var(--magenta)" }} filter={glowUrl(uid, "bloom-strong")} />
+          <circle
+            r={13}
+            fill="none"
+            style={{ stroke: "var(--magenta)", opacity: 0.5 }}
             strokeWidth={1.5}
           />
-          <line
-            x1={PAD.left}
-            y1={PAD.top}
-            x2={PAD.left}
-            y2={PAD.top + PLOT_H}
-            style={{ stroke: "var(--border-strong)" }}
-            strokeWidth={1.5}
-          />
-          <text
-            x={PAD.left + PLOT_W / 2}
-            y={VIEW_H - 22}
-            textAnchor="middle"
-            style={{ fill: "var(--subtle)", fontSize: 10 }}
-            className="font-sans"
-          >
-            {t.tempAxis}
-          </text>
-          <text
-            x={14}
-            y={PAD.top + PLOT_H / 2}
-            textAnchor="middle"
-            transform={`rotate(-90 14 ${PAD.top + PLOT_H / 2})`}
-            style={{ fill: "var(--subtle)", fontSize: 10 }}
-            className="font-sans"
-          >
-            {t.precipAxis}
-          </text>
-          {/* a few axis ticks */}
-          {[-10, 0, 10, 20, 30].map((v) => (
-            <text
-              key={v}
-              x={tx(v)}
-              y={PAD.top + PLOT_H + 14}
-              textAnchor="middle"
-              style={{ fill: "var(--subtle)", fontSize: 8 }}
-              className="font-sans tabular-nums"
-            >
-              {v}
-            </text>
-          ))}
-          {[0, 150, 300, 450].map((v) => (
-            <text
-              key={v}
-              x={PAD.left - 6}
-              y={ty(v) + 3}
-              textAnchor="end"
-              style={{ fill: "var(--subtle)", fontSize: 8 }}
-              className="font-sans tabular-nums"
-            >
-              {v}
-            </text>
-          ))}
+        </g>
+      </svg>
 
-          {/* reference markers */}
-          <Marker x={tx(EARTH.temp)} y={ty(EARTH.precip)} label={t.earth} tone="--muted" hollow />
-          <Marker
-            x={tx(PANDORA.temp)}
-            y={ty(PANDORA.precip)}
-            label={t.pandora}
-            tone="--cyan"
-            hollow
-          />
-
-          {/* the draggable climate point */}
-          <g transform={`translate(${tx(temp)} ${ty(precip)})`} style={{ cursor: "grab" }}>
-            <circle
-              r={8}
-              style={{ fill: "var(--magenta)", filter: "drop-shadow(0 0 6px var(--magenta))" }}
-            />
-            <circle
-              r={13}
-              fill="none"
-              style={{ stroke: "var(--magenta)", opacity: 0.5 }}
-              strokeWidth={1.5}
-            />
-          </g>
-        </svg>
-
-        {/* readout */}
-        <div className="mt-2 flex items-center justify-between gap-2 rounded-lg border border-border bg-void/30 px-3 py-2">
-          <span className="font-sans text-[0.6rem] uppercase tracking-wider text-subtle">
-            {t.biome}
-          </span>
+      {/* readout — the classified biome is the figure's answer, so it gets the
+          tinted "result" treatment */}
+      <VizReadout
+        className="mt-2"
+        label={t("biome")}
+        tone="var(--teal)"
+        tinted
+        value={
           <span className="flex items-center gap-2">
             <span
               className="inline-block size-3 rounded-full"
-              style={{ background: BIOMES[biome].color }}
+              style={{
+                background: BIOMES[biome].color,
+                boxShadow: `0 0 8px -1px ${BIOMES[biome].color}`,
+              }}
             />
-            <span className="font-display text-sm font-700" style={{ color: "var(--foreground)" }}>
-              {BIOMES[biome][locale]}
-            </span>
+            <span>{BIOMES[biome][locale]}</span>
           </span>
-        </div>
-
-        {/* controls */}
-        <div className="mt-3 space-y-3">
-          <Slider
-            id={`${uid}-t`}
-            label={`${t.tempLabel}`}
-            min={T_MIN}
-            max={T_MAX}
-            step={1}
-            value={temp}
-            display={`${temp} °C`}
-            tone="--amber"
-            onChange={setTemp}
-          />
-          <Slider
-            id={`${uid}-p`}
-            label={`${t.precipLabel}`}
-            min={P_MIN}
-            max={P_MAX}
-            step={5}
-            value={precip}
-            display={`${precip} cm`}
-            tone="--cyan"
-            onChange={setPrecip}
-          />
-        </div>
-
-        <p className="mt-3 font-sans text-xs text-subtle">{t.hint}</p>
-      </div>
-      {caption && (
-        <figcaption className="mt-3 px-1 font-serif text-sm italic leading-relaxed text-muted">
-          {caption}
-        </figcaption>
-      )}
-    </figure>
-  );
-}
-
-function Marker({
-  x,
-  y,
-  label,
-  tone,
-  hollow,
-}: {
-  x: number;
-  y: number;
-  label: string;
-  tone: string;
-  hollow?: boolean;
-}) {
-  return (
-    <g transform={`translate(${x} ${y})`}>
-      <circle
-        r={5}
-        fill={hollow ? "var(--void)" : `var(${tone})`}
-        style={{ stroke: `var(${tone})` }}
-        strokeWidth={2}
+        }
       />
-      <text x={8} y={-7} style={{ fill: `var(${tone})`, fontSize: 9 }} className="font-sans">
-        {label}
-      </text>
-    </g>
-  );
-}
 
-function Slider({
-  id,
-  label,
-  min,
-  max,
-  step,
-  value,
-  display,
-  tone,
-  onChange,
-}: {
-  id: string;
-  label: string;
-  min: number;
-  max: number;
-  step: number;
-  value: number;
-  display: string;
-  tone: string;
-  onChange: (v: number) => void;
-}) {
-  const pct = ((value - min) / (max - min)) * 100;
-  return (
-    <div>
-      <div className="mb-1 flex items-baseline justify-between gap-2">
-        <label htmlFor={id} className="font-sans text-[0.7rem] text-muted">
-          {label}
-        </label>
-        <span
-          className="font-display text-xs font-700 tabular-nums"
-          style={{ color: `var(${tone})` }}
-        >
-          {display}
-        </span>
+      {/* controls */}
+      <div className="mt-3 space-y-3">
+        <VizSlider
+          label={t("tempLabel")}
+          min={T_MIN}
+          max={T_MAX}
+          step={1}
+          value={temp}
+          display={`${temp} °C`}
+          tone="var(--amber)"
+          onChange={setTemp}
+        />
+        <VizSlider
+          label={t("precipLabel")}
+          min={P_MIN}
+          max={P_MAX}
+          step={5}
+          value={precip}
+          display={`${precip} cm`}
+          tone="var(--cyan)"
+          onChange={setPrecip}
+        />
       </div>
-      <input
-        id={id}
-        type="range"
-        min={min}
-        max={max}
-        step={step}
-        value={value}
-        onChange={(e) => onChange(Number(e.target.value))}
-        className="h-1.5 w-full cursor-pointer appearance-none rounded-full"
-        style={{
-          background: `linear-gradient(to right, var(${tone}) ${pct}%, var(--border) ${pct}%)`,
-        }}
-      />
-    </div>
+    </VizFigure>
   );
 }

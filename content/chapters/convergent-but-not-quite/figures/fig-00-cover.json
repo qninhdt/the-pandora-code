@@ -1,0 +1,20 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "convergent-but-not-quite",
+  "role": "hero",
+  "narrative_purpose": "The cover that captures the chapter at a glance: an alien predator that reads instantly as a great cat, so the reader feels the uncanny familiarity the chapter is about before reading a word.",
+  "subject": "A single large six-limbed predator standing in profile on a low rise, unmistakably cat-like in its lean muscular build and low predatory stance, but clearly alien: six powerful limbs instead of four, a flared armoured sensory crest sweeping back from the skull, and four forward-set eyes arranged in two stacked pairs. Faint bioluminescent markings trace its flanks. It is the clear focal subject, sharply lit against a softer forest behind.",
+  "scene": "A dim bioluminescent forest clearing at night, glowing flora receding into haze behind the animal, a few drifting spores in the air.",
+  "camera": "Naturalist three-quarter side view at the animal's eye level, the creature filling the central third of the frame.",
+  "light": "The brightest light comes from glowing plants behind and below, rim-lighting the predator's contour in cyan; its own flank markings glow faintly.",
+  "palette": "Cool teal-indigo dominant, the predator's body in deep shadow with cyan rim light, a single scarce warm magenta glint in its eyes to draw the gaze.",
+  "style": "Hand-painted naturalist field plate of a real alien animal, textured and observed, not a film still.",
+  "detail_level": "High on the animal's silhouette and head; soft and hazy on the background.",
+  "composition": "Strong single focal subject with deep hazy depth behind, generous dark negative space above for the eye to rest.",
+  "exclude": ["text", "letters", "numbers", "labels", "UI", "watermark", "logos", "human figures", "film branding"],
+  "consistency_notes": "This predator is the thanator archetype and must read the same as fig-01 and fig-02. Establishes the chapter's creature look.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no UI chrome, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

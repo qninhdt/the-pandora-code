@@ -1,13 +1,17 @@
 "use client";
 
+import { GlowDefs, glowUrl } from "@/components/content/viz/glow-defs";
+import { usePhaseLoop } from "@/components/content/viz/use-phase-loop";
+import { VizFigure } from "@/components/content/viz/viz-figure";
+import { VizReadout } from "@/components/content/viz/viz-readout";
+import { VizText, VizTick } from "@/components/content/viz/viz-svg-text";
 import { useReducedMotionSafe } from "@/components/motion/use-reduced-motion-safe";
-import { cn } from "@/lib/utils";
 import { Pause, Play } from "lucide-react";
-import { useEffect, useId, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
+import { useEffect, useId, useState } from "react";
 
 interface SuperconductorCooldownProps {
   caption?: string;
-  locale?: "vi" | "en";
   /** Critical temperature in kelvin. Defaults to a YBCO-like 92 K. */
   tcKelvin?: number;
   className?: string;
@@ -17,42 +21,11 @@ const VIEW_W = 460;
 const VIEW_H = 220;
 // Graph occupies the left half; the levitation scene the right half.
 const G = { left: 44, top: 16, w: 200, h: 150 };
+const T_MIN = 5; // kelvin floor of the sweep
 const T_MAX = 160; // kelvin shown on the slider/axis
 const DEFAULT_TC = 92;
 const DEFAULT_T = 60; // below Tc → starts levitating, the signature image
-
-const STRINGS = {
-  vi: {
-    temp: "Nhiệt độ",
-    resistance: "Điện trở",
-    state: "Trạng thái",
-    normal: "Kim loại thường",
-    superconducting: "Siêu dẫn",
-    tc: "Nhiệt độ tới hạn Tc",
-    tempAxis: "Nhiệt độ (K) →",
-    resAxis: "Điện trở →",
-    play: "Làm lạnh / làm nóng",
-    pause: "Dừng",
-    hint: "Hạ nhiệt độ xuống dưới Tc: điện trở rơi thẳng về 0 và nam châm bị khóa lơ lửng trong không trung.",
-    levitating: "Khóa từ thông — lơ lửng",
-    resting: "Nằm yên trên mặt",
-  },
-  en: {
-    temp: "Temperature",
-    resistance: "Resistance",
-    state: "State",
-    normal: "Normal metal",
-    superconducting: "Superconducting",
-    tc: "Critical temperature Tc",
-    tempAxis: "Temperature (K) →",
-    resAxis: "Resistance →",
-    play: "Cool / warm",
-    pause: "Pause",
-    hint: "Drop the temperature below Tc: resistance falls straight to zero and the magnet locks, hanging in mid-air.",
-    levitating: "Flux-locked — levitating",
-    resting: "Resting on the surface",
-  },
-} as const;
+const SWEEP_PERIOD = 7.75; // seconds for a full T_MIN→T_MAX→T_MIN cool/warm cycle
 
 // Resistance as a fraction of its room-temperature value: a normal metal's
 // resistance rises with temperature, but at Tc it collapses abruptly to exactly
@@ -60,6 +33,18 @@ const STRINGS = {
 function resistanceFrac(temp: number, tc: number): number {
   if (temp <= tc) return 0;
   return (temp - tc) / (T_MAX - tc);
+}
+
+// Map a 0→1 phase onto a triangle wave over [T_MIN, T_MAX] so the animation
+// cools to the floor then warms back up, indefinitely.
+function phaseToTemp(phase: number): number {
+  const tri = phase < 0.5 ? 1 - phase * 2 : (phase - 0.5) * 2; // 1→0→1
+  return T_MIN + (1 - tri) * (T_MAX - T_MIN);
+}
+function tempToPhase(temp: number): number {
+  // Inverse on the cooling half (phase 0→0.5) — used to seed scrubbing.
+  const frac = (temp - T_MIN) / (T_MAX - T_MIN);
+  return frac / 2;
 }
 
 function gx(temp: number): number {
@@ -76,48 +61,28 @@ function gy(frac: number): number {
 // deterministic for SSR; the cool/warm sweep is gated on reduced-motion.
 export function SuperconductorCooldown({
   caption,
-  locale = "en",
   tcKelvin = DEFAULT_TC,
   className,
 }: SuperconductorCooldownProps) {
+  const t = useTranslations("viz.superconductor");
   const reduced = useReducedMotionSafe();
-  const t = STRINGS[locale];
   const uid = useId();
-  const [temp, setTemp] = useState(DEFAULT_T);
   const [playing, setPlaying] = useState(false);
-  const dir = useRef(-1); // -1 cooling, +1 warming
-  const raf = useRef<number | null>(null);
-  const last = useRef<number | null>(null);
+  // Phase loop drives the cool/warm sweep; reduced-motion freezes advancement.
+  const { phase, setPhase } = usePhaseLoop({
+    period: SWEEP_PERIOD,
+    playing,
+    initial: tempToPhase(DEFAULT_T),
+  });
+  // Manual temperature override when the reader scrubs the slider.
+  const [manualTemp, setManualTemp] = useState<number | null>(null);
 
+  const temp = manualTemp ?? phaseToTemp(phase);
+
+  // Stop the loop and disable controls under reduced-motion.
   useEffect(() => {
-    if (!playing) {
-      if (raf.current !== null) cancelAnimationFrame(raf.current);
-      last.current = null;
-      return;
-    }
-    const step = (now: number) => {
-      if (last.current !== null) {
-        const dt = (now - last.current) / 1000;
-        setTemp((p) => {
-          let next = p + dir.current * dt * 40;
-          if (next <= 5) {
-            next = 5;
-            dir.current = 1;
-          } else if (next >= T_MAX) {
-            next = T_MAX;
-            dir.current = -1;
-          }
-          return next;
-        });
-      }
-      last.current = now;
-      raf.current = requestAnimationFrame(step);
-    };
-    raf.current = requestAnimationFrame(step);
-    return () => {
-      if (raf.current !== null) cancelAnimationFrame(raf.current);
-    };
-  }, [playing]);
+    if (reduced && playing) setPlaying(false);
+  }, [reduced, playing]);
 
   const frac = resistanceFrac(temp, tcKelvin);
   const isSuper = temp <= tcKelvin;
@@ -125,230 +90,277 @@ export function SuperconductorCooldown({
   const lift = Math.max(0, Math.min(1, (tcKelvin - temp) / 45));
 
   // Resistance curve: flat zero up to Tc, a jump, then linear to T_MAX.
-  const curve: string[] = [];
-  curve.push(`${gx(0)},${gy(0)}`);
-  curve.push(`${gx(tcKelvin)},${gy(0)}`);
-  curve.push(`${gx(tcKelvin)},${gy(resistanceFrac(tcKelvin + 0.001, tcKelvin))}`);
-  curve.push(`${gx(T_MAX)},${gy(1)}`);
+  const curve = [
+    `${gx(0)},${gy(0)}`,
+    `${gx(tcKelvin)},${gy(0)}`,
+    `${gx(tcKelvin)},${gy(resistanceFrac(tcKelvin + 0.001, tcKelvin))}`,
+    `${gx(T_MAX)},${gy(1)}`,
+  ];
 
   // Right-hand levitation scene geometry.
   const sceneCx = 350;
   const discY = 150;
   const magnetY = discY - 30 - lift * 36;
 
+  function scrub(next: number) {
+    setPlaying(false);
+    setManualTemp(next);
+    // Keep the phase in sync so resuming play continues from here.
+    setPhase(tempToPhase(next));
+  }
+
+  function togglePlay() {
+    setManualTemp(null); // hand control back to the loop
+    setPlaying((p) => !p);
+  }
+
   return (
-    <figure className={cn("my-8", className)}>
-      <div className="overflow-hidden rounded-2xl border border-border bg-surface/60 p-4 backdrop-blur-sm">
-        <svg
-          viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
-          className="w-full"
-          role="img"
-          aria-label={`${t.temp} ${temp.toFixed(0)} K, ${t.state}: ${isSuper ? t.superconducting : t.normal}`}
+    <VizFigure
+      title={t("title")}
+      hint={reduced ? undefined : t("hint")}
+      caption={caption}
+      tone="cyan"
+      className={className}
+      controls={
+        reduced ? undefined : (
+          <button
+            type="button"
+            onClick={togglePlay}
+            aria-label={playing ? t("pause") : t("play")}
+            className="flex size-9 shrink-0 items-center justify-center rounded-full border border-border bg-void/40 text-cyan transition-colors hover:bg-void/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan"
+          >
+            {playing ? <Pause size={16} /> : <Play size={16} />}
+          </button>
+        )
+      }
+    >
+      <svg
+        viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
+        className="w-full"
+        role="img"
+        aria-label={`${t("temp")} ${temp.toFixed(0)} K, ${t("state")}: ${isSuper ? t("superconducting") : t("normal")}`}
+      >
+        <GlowDefs idBase={uid} tones={["cyan", "magenta", "amber"]} />
+
+        {/* ---- resistance graph ---- */}
+        <line
+          x1={G.left}
+          y1={G.top}
+          x2={G.left}
+          y2={G.top + G.h}
+          stroke="var(--border-strong)"
+          strokeWidth={1.5}
+        />
+        <line
+          x1={G.left}
+          y1={G.top + G.h}
+          x2={G.left + G.w}
+          y2={G.top + G.h}
+          stroke="var(--border-strong)"
+          strokeWidth={1.5}
+        />
+        <VizTick x={G.left + G.w / 2} y={G.top + G.h + 22}>
+          {t("tempAxis")}
+        </VizTick>
+        <VizText
+          x={14}
+          y={G.top + G.h / 2}
+          size="micro"
+          anchor="middle"
+          transform={`rotate(-90 14 ${G.top + G.h / 2})`}
         >
-          {/* ---- resistance graph ---- */}
-          <line
-            x1={G.left}
-            y1={G.top}
-            x2={G.left}
-            y2={G.top + G.h}
-            style={{ stroke: "var(--border-strong)" }}
-            strokeWidth={1.5}
-          />
-          <line
-            x1={G.left}
-            y1={G.top + G.h}
-            x2={G.left + G.w}
-            y2={G.top + G.h}
-            style={{ stroke: "var(--border-strong)" }}
-            strokeWidth={1.5}
-          />
-          <text
-            x={G.left + G.w / 2}
-            y={G.top + G.h + 22}
-            textAnchor="middle"
-            style={{ fill: "var(--subtle)", fontSize: 9 }}
-            className="font-sans"
-          >
-            {t.tempAxis}
-          </text>
-          <text
-            x={14}
-            y={G.top + G.h / 2}
-            textAnchor="middle"
-            transform={`rotate(-90 14 ${G.top + G.h / 2})`}
-            style={{ fill: "var(--subtle)", fontSize: 9 }}
-            className="font-sans"
-          >
-            {t.resAxis}
-          </text>
+          {t("resAxis")}
+        </VizText>
 
-          {/* Tc marker */}
-          <line
-            x1={gx(tcKelvin)}
-            y1={G.top}
-            x2={gx(tcKelvin)}
-            y2={G.top + G.h}
-            style={{ stroke: "var(--magenta)" }}
-            strokeWidth={1}
-            strokeDasharray="3 3"
-          />
-          <text
-            x={gx(tcKelvin)}
-            y={G.top - 4}
-            textAnchor="middle"
-            style={{ fill: "var(--magenta)", fontSize: 9 }}
-            className="font-sans"
-          >
-            Tc
-          </text>
+        {/* Tc marker */}
+        <line
+          x1={gx(tcKelvin)}
+          y1={G.top}
+          x2={gx(tcKelvin)}
+          y2={G.top + G.h}
+          stroke="var(--magenta)"
+          strokeWidth={1}
+          strokeDasharray="3 3"
+        />
+        <VizText x={gx(tcKelvin)} y={G.top - 4} size="micro" tone="magenta" anchor="middle">
+          Tc
+        </VizText>
 
-          {/* resistance curve */}
-          <polyline
-            points={curve.join(" ")}
-            fill="none"
-            style={{ stroke: "var(--cyan)", filter: "drop-shadow(0 0 4px var(--cyan))" }}
-            strokeWidth={2.5}
-            strokeLinejoin="round"
-          />
-          {/* current-temperature marker on the curve */}
+        {/* resistance curve */}
+        <polyline
+          points={curve.join(" ")}
+          fill="none"
+          stroke="var(--cyan)"
+          strokeWidth={2.5}
+          strokeLinejoin="round"
+          filter={glowUrl(uid, "bloom")}
+        />
+        {/* current-temperature marker on the curve */}
+        <circle
+          cx={gx(temp)}
+          cy={gy(frac)}
+          r={5}
+          fill="var(--amber)"
+          filter={glowUrl(uid, "bloom-strong")}
+        />
+
+        {/* ---- levitation scene ---- */}
+        {/* radial wash blooms behind the magnet as it locks into levitation */}
+        {isSuper && (
           <circle
-            cx={gx(temp)}
-            cy={gy(frac)}
-            r={5}
-            style={{ fill: "var(--amber)", filter: "drop-shadow(0 0 5px var(--amber))" }}
-          />
-
-          {/* ---- levitation scene ---- */}
-          {/* flux-pinning lock lines when superconducting */}
-          {isSuper &&
-            [-18, -9, 0, 9, 18].map((dx) => (
-              <line
-                key={dx}
-                x1={sceneCx + dx}
-                y1={magnetY + 10}
-                x2={sceneCx + dx}
-                y2={discY - 8}
-                style={{ stroke: "var(--cyan)", opacity: 0.35 * lift + 0.15 }}
-                strokeWidth={1}
-                strokeDasharray="2 3"
-              />
-            ))}
-
-          {/* the magnet */}
-          <g
-            transform={`translate(${sceneCx} ${magnetY})`}
-            style={{ transition: reduced ? undefined : "transform 0.2s" }}
-          >
-            <rect
-              x={-24}
-              y={-10}
-              width={48}
-              height={20}
-              rx={4}
-              style={{
-                fill: "var(--magenta)",
-                filter: isSuper ? "drop-shadow(0 0 8px var(--magenta))" : undefined,
-              }}
-            />
-          </g>
-
-          {/* the superconductor disc */}
-          <ellipse
             cx={sceneCx}
-            cy={discY}
-            rx={40}
-            ry={11}
-            style={{
-              fill: isSuper
-                ? "color-mix(in oklab, var(--cyan) 35%, var(--void))"
-                : "var(--surface-overlay)",
-              stroke: "var(--border-strong)",
-            }}
-            strokeWidth={1}
+            cy={magnetY}
+            r={48}
+            fill={glowUrl(uid, "wash-cyan")}
+            opacity={0.4 + 0.5 * lift}
           />
-          {/* vapor when cold */}
-          {isSuper &&
-            [-26, 0, 26].map((dx, i) => (
-              <ellipse
-                key={i}
-                cx={sceneCx + dx}
-                cy={discY + 12 + (i % 2) * 4}
-                rx={9}
-                ry={3}
-                style={{ fill: "var(--cyan)", opacity: 0.12 }}
-              />
-            ))}
-          <text
-            x={sceneCx}
-            y={discY + 30}
-            textAnchor="middle"
-            style={{ fill: isSuper ? "var(--cyan)" : "var(--subtle)", fontSize: 9 }}
-            className="font-sans"
-          >
-            {isSuper ? t.levitating : t.resting}
-          </text>
-        </svg>
+        )}
+        {/* flux-pinning lock lines when superconducting */}
+        {isSuper &&
+          [-18, -9, 0, 9, 18].map((dx) => (
+            <line
+              key={dx}
+              x1={sceneCx + dx}
+              y1={magnetY + 10}
+              x2={sceneCx + dx}
+              y2={discY - 8}
+              stroke="var(--cyan)"
+              strokeOpacity={0.35 * lift + 0.15}
+              strokeWidth={1.25}
+              strokeDasharray="2 3"
+              filter={glowUrl(uid, "bloom")}
+            />
+          ))}
 
-        {/* readouts */}
-        <div className="mt-2 grid grid-cols-3 gap-2 text-center">
-          <Readout label={t.temp} value={`${temp.toFixed(0)} K`} tone="--amber" />
-          <Readout label={t.resistance} value={`${Math.round(frac * 100)}%`} tone="--cyan" />
-          <Readout
-            label={t.state}
-            value={isSuper ? t.superconducting : t.normal}
-            tone={isSuper ? "--teal" : "--subtle"}
+        {/* cast shadow on the disc — tightens as the magnet settles, widens as
+            it lifts; sells the gap between magnet and surface */}
+        <ellipse
+          cx={sceneCx}
+          cy={discY - 2}
+          rx={18 + lift * 8}
+          ry={3.5}
+          fill="var(--void)"
+          opacity={0.45 - 0.25 * lift}
+        />
+
+        {/* the magnet — a beveled puck: shadowed base, lit body, top highlight */}
+        <g
+          transform={`translate(${sceneCx} ${magnetY})`}
+          style={{ transition: reduced ? undefined : "transform 0.2s" }}
+          filter={isSuper ? glowUrl(uid, "bloom-strong") : glowUrl(uid, "soft-shadow")}
+        >
+          <rect
+            x={-24}
+            y={-10}
+            width={48}
+            height={20}
+            rx={4}
+            fill="color-mix(in oklab, var(--magenta) 55%, var(--void))"
           />
-        </div>
-
-        {/* controls */}
-        <div className="mt-3 flex items-center gap-3">
-          {!reduced && (
-            <button
-              type="button"
-              onClick={() => setPlaying((p) => !p)}
-              aria-label={playing ? t.pause : t.play}
-              className="flex size-9 shrink-0 items-center justify-center rounded-full border border-border bg-void/40 text-cyan transition-colors hover:bg-void/70"
-            >
-              {playing ? <Pause size={16} /> : <Play size={16} />}
-            </button>
-          )}
-          <input
-            id={`${uid}-temp`}
-            type="range"
-            min={5}
-            max={T_MAX}
-            step={1}
-            value={temp}
-            onChange={(e) => {
-              setPlaying(false);
-              setTemp(Number(e.target.value));
-            }}
-            aria-label={t.temp}
-            className="h-1.5 w-full cursor-pointer appearance-none rounded-full"
-            style={{
-              background: `linear-gradient(to right, var(--cyan) ${(temp / T_MAX) * 100}%, var(--border) ${(temp / T_MAX) * 100}%)`,
-            }}
+          <rect x={-24} y={-10} width={48} height={12} rx={4} fill="var(--magenta)" />
+          {/* top sheen */}
+          <rect
+            x={-20}
+            y={-8}
+            width={40}
+            height={3.5}
+            rx={1.75}
+            fill="color-mix(in oklab, var(--magenta) 40%, var(--foreground))"
+            opacity={0.55}
           />
-        </div>
+        </g>
 
-        {!reduced && <p className="mt-3 font-sans text-xs text-subtle">{t.hint}</p>}
+        {/* the superconductor disc — body + lit top rim for thickness */}
+        <ellipse
+          cx={sceneCx}
+          cy={discY + 5}
+          rx={40}
+          ry={11}
+          fill={
+            isSuper
+              ? "color-mix(in oklab, var(--cyan) 22%, var(--void))"
+              : "color-mix(in oklab, var(--surface-overlay) 80%, var(--void))"
+          }
+          stroke="var(--border-strong)"
+          strokeWidth={1}
+        />
+        <ellipse
+          cx={sceneCx}
+          cy={discY}
+          rx={40}
+          ry={11}
+          fill={
+            isSuper ? "color-mix(in oklab, var(--cyan) 35%, var(--void))" : "var(--surface-overlay)"
+          }
+          stroke="var(--border-strong)"
+          strokeWidth={1}
+        />
+        {/* inner highlight ring on the disc face */}
+        <ellipse
+          cx={sceneCx}
+          cy={discY - 1}
+          rx={30}
+          ry={7}
+          fill="none"
+          stroke={isSuper ? "var(--cyan)" : "var(--border-strong)"}
+          strokeWidth={0.75}
+          strokeOpacity={isSuper ? 0.5 : 0.3}
+        />
+        {/* vapor when cold */}
+        {isSuper &&
+          [-26, 0, 26].map((dx, i) => (
+            <ellipse
+              key={dx}
+              cx={sceneCx + dx}
+              cy={discY + 12 + (i % 2) * 4}
+              rx={9}
+              ry={3}
+              fill="var(--cyan)"
+              opacity={0.12}
+            />
+          ))}
+        <VizText
+          x={sceneCx}
+          y={discY + 30}
+          size="micro"
+          tone={isSuper ? "cyan" : "subtle"}
+          anchor="middle"
+        >
+          {isSuper ? t("levitating") : t("resting")}
+        </VizText>
+      </svg>
+
+      {/* readouts */}
+      <div className="mt-2 grid grid-cols-3 gap-2">
+        <VizReadout label={t("temp")} value={`${temp.toFixed(0)} K`} tone="var(--amber)" />
+        <VizReadout
+          label={t("resistance")}
+          value={`${Math.round(frac * 100)}%`}
+          tone="var(--cyan)"
+        />
+        <VizReadout
+          label={t("state")}
+          value={isSuper ? t("superconducting") : t("normal")}
+          tone={isSuper ? "var(--teal)" : "var(--subtle)"}
+        />
       </div>
-      {caption && (
-        <figcaption className="mt-3 px-1 font-serif text-sm italic leading-relaxed text-muted">
-          {caption}
-        </figcaption>
-      )}
-    </figure>
-  );
-}
 
-function Readout({ label, value, tone }: { label: string; value: string; tone: string }) {
-  return (
-    <div className="rounded-lg border border-border bg-void/30 px-2 py-1.5">
-      <p className="font-sans text-[0.6rem] uppercase tracking-wider text-subtle">{label}</p>
-      <p className="font-display text-sm font-700 tabular-nums" style={{ color: `var(${tone})` }}>
-        {value}
-      </p>
-    </div>
+      {/* temperature scrub */}
+      <input
+        id={`${uid}-temp`}
+        type="range"
+        min={T_MIN}
+        max={T_MAX}
+        step={1}
+        value={Math.round(temp)}
+        onChange={(e) => scrub(Number(e.target.value))}
+        aria-label={t("temp")}
+        className="viz-range mt-3 w-full cursor-pointer rounded-full outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
+        style={{
+          background: `linear-gradient(to right, var(--cyan) ${(temp / T_MAX) * 100}%, var(--border) ${(temp / T_MAX) * 100}%)`,
+          ["--viz-thumb" as string]: "var(--cyan)",
+        }}
+      />
+    </VizFigure>
   );
 }

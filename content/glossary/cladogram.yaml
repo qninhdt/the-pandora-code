@@ -1,0 +1,13 @@
+id: cladogram
+label:
+  vi: Cây phân nhánh (cladogram)
+  en: Cladogram
+definition:
+  vi: 'Một sơ đồ hình cây thể hiện giả thuyết về quan hệ họ hàng giữa các loài, trong đó chỉ có thứ tự phân nhánh - ai là họ hàng gần của ai - mang ý nghĩa, còn độ dài các nhánh thì tùy ý và không biểu thị thời gian hay mức độ biến đổi. Mỗi điểm chẻ nhánh đại diện cho một tổ tiên chung; mỗi đầu nhánh là một loài đang xét. Cladogram là kết quả cốt lõi của phương pháp phân nhánh học: nó không vẽ nên dòng thời gian, mà vẽ nên trật tự huyết thống.'
+  en: 'A tree diagram showing a hypothesis of kinship among species, in which only the branching order - who is whose closest relative - carries meaning, while branch lengths are arbitrary and signify neither time nor amount of change. Each fork represents a common ancestor; each tip is a species under study. The cladogram is the core output of cladistics: it does not draw a timeline, it draws an order of descent.'
+see_also:
+- synapomorphy
+- maximum-parsimony
+- clade
+category: concept
+cover_prompt: A painted dark diagram of a simple branching tree of glowing creature silhouettes, forks emphasised and branch lengths visibly uneven and unimportant, cool teal and indigo, bioluminescent glow, no text, no numbers, no labels.

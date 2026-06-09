@@ -1,0 +1,13 @@
+id: luciferase
+label:
+  vi: Luciferase
+  en: Luciferase
+definition:
+  vi: Enzyme xúc tác phản ứng phát sáng - nó nắm lấy phân tử nhiên liệu luciferin, ghép với oxy, và dẫn dắt phản ứng để sản phẩm rơi vào trạng thái kích thích rồi nhả ra ánh sáng. Nếu luciferin là cây nến thì luciferase là bàn tay châm và giữ ngọn lửa. Mỗi hệ phát quang sinh học độc lập trên Trái Đất dùng một luciferase khác nhau, không cùng nguồn gốc - bằng chứng cho thấy khả năng phát sáng được phát minh lại nhiều lần. Một biến thể đặc biệt là photoprotein (như aequorin), giữ sẵn phản ứng ở trạng thái nạp và chỉ bùng sáng khi có ion calci.
+  en: The enzyme that catalyzes the light reaction - it grabs the fuel molecule luciferin, joins it to oxygen, and steers the reaction so the product lands excited and then releases light. If luciferin is the candle, luciferase is the hand that strikes and steadies the flame. Each independent bioluminescent system on Earth uses a different, non-homologous luciferase - evidence that glow was reinvented many times. A special variant is the photoprotein (such as aequorin), which holds the reaction pre-loaded and flashes only when calcium ions arrive.
+see_also:
+- luciferin
+- bioluminescence
+- convergent-evolution
+category: concept
+cover_prompt: A painted enzyme form cradling a small glowing fuel molecule that emits cyan light, cool teal palette, no text, no labels.

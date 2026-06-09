@@ -16,8 +16,7 @@ export function Quote({ children, cite, className }: QuoteProps) {
         className="absolute -left-1 -top-4 font-display text-6xl leading-none"
         style={{
           color: "var(--cyan)",
-          textShadow:
-            "0 0 24px color-mix(in oklab, var(--cyan) 50%, transparent)",
+          textShadow: "0 0 24px color-mix(in oklab, var(--cyan) 50%, transparent)",
         }}
       >
         “

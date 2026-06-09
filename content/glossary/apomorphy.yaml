@@ -1,0 +1,13 @@
+id: apomorphy
+label:
+  vi: Đặc điểm phái sinh (apomorphy)
+  en: Apomorphy
+definition:
+  vi: 'Một trạng thái đặc điểm mới, phái sinh - một đổi mới mà một dòng dõi tạo ra, khác với điều kiện tổ tiên. Đặc điểm phái sinh là thứ đáng chú ý trong việc dựng cây gia phả, bởi một đổi mới được chia sẻ tiết lộ một tổ tiên chung đã tạo ra nó. Khi một đặc điểm phái sinh được hai hay nhiều loài cùng mang, ta gọi là đặc điểm chung dẫn xuất (synapomorphy); khi chỉ một loài mang, ta gọi là đặc điểm riêng (autapomorphy). Đối lập với nó là đặc điểm tổ tiên (plesiomorphy).'
+  en: 'A new, derived character state - a novelty a lineage introduced, differing from the ancestral condition. The apomorphy is what matters in building a family tree, because a shared novelty reveals a common ancestor that produced it. When an apomorphy is carried by two or more species it is a synapomorphy; when only one species carries it, it is an autapomorphy. Its opposite is the ancestral state, the plesiomorphy.'
+see_also:
+- plesiomorphy
+- synapomorphy
+- autapomorphy
+category: bio
+cover_prompt: A painted creature silhouette glowing with one bright newly-derived feature that sets it apart from a dim ancestral form behind it, cool teal with a single bright cyan novelty, bioluminescent, no text, no labels.

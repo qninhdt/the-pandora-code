@@ -1,0 +1,13 @@
+id: competitive-exclusion-principle
+label:
+  vi: Nguyên lý loại trừ cạnh tranh
+  en: Competitive exclusion principle
+definition:
+  vi: 'Quy luật tuyên bố rằng không có hai loài nào có thể bền bỉ chiếm giữ cùng một ổ sinh thái tại cùng một nơi - nếu chúng trùng khít hoàn toàn về món ăn, thời gian và cách thức sinh hoạt, thì một loài có ưu thế hơn một chút rồi cũng sẽ dần dần hất cẳng loài kia. Nhà sinh học Georgii Gause đã chứng minh điều này qua hai loài vi sinh vật trong hồ: nuôi riêng thì sống khỏe, nhưng thả chung một hồ thức ăn thì chắc chắn có kẻ phải chịu cảnh diệt vong. Đây chính là động cơ thúc đẩy mọi sự phân chia ổ sinh thái.'
+  en: 'The rule that two species cannot occupy the same niche in the same place indefinitely - if they overlap completely in food, timing and method, one will be slightly more efficient and over generations drive the other out entirely. The biologist Georgii Gause demonstrated it with two species of pond microbe: grown separately both thrived, grown together on one food source one always wiped the other out. Its corollary is the engine that drives niche partitioning.'
+see_also:
+- niche-partitioning
+- ecological-niche
+- character-displacement
+category: concept
+cover_prompt: A painted contest between two near-identical glowing organisms over a single bright resource, one already fading, cool teal-cyan palette, painterly plate, no text, no labels.

@@ -1,0 +1,16 @@
+id: bioluminescence
+label:
+  vi: Phát quang sinh học
+  en: Bioluminescence
+definition:
+  vi: >-
+    Ánh sáng mà một sinh vật sống tự tạo ra bằng chính phản ứng hóa học trong cơ thể, chứ không phải phản chiếu ánh sáng từ bên ngoài. Nó là một dạng phát quang hóa học diễn ra bên trong tế bào: một phân tử nhiên liệu (luciferin) bị enzyme oxy hóa, rơi vào trạng thái kích thích rồi nhả ra một hạt ánh sáng - gần như không tỏa nhiệt. Trên Trái Đất, phát quang sinh học hiếm hoi trên cạn nhưng lại phổ biến đến mức là chuẩn mực ở biển sâu.
+  en: >-
+    Light that a living organism makes itself through a chemical reaction in its body, rather than reflecting light from outside. It is a form of chemiluminescence performed inside a cell: an enzyme oxidizes a fuel molecule (luciferin), which lands in an excited state and then releases a particle of light - with almost no heat. On Earth it is rare on land but so common in the deep sea that it is the norm there.
+see_also:
+- chemiluminescence
+- luciferin
+- luciferase
+- fluorescence
+category: concept
+cover_prompt: A single glowing deep-sea creature suspended in black water, emitting its own cyan light from within, cool teal palette, no text, no labels.

@@ -1,0 +1,18 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "the-breathing-fans",
+  "role": "hero",
+  "narrative_purpose": "A full-bleed atmospheric mood layer for the chapter: the dense, hazy Pandoran air itself, the medium every breath in this chapter must move.",
+  "subject": "A wide, dim, empty expanse of Pandoran sky and far horizon at a high vantage - thick layered atmospheric haze, faint distant floating peaks dissolving into vapour, a sense of heavy humid air made visible by depth; no creatures, no focal subject.",
+  "scene": "Vast open atmosphere seen from high up, deep layered haze receding into distance, very low contrast, immersive and quiet.",
+  "camera": "Ultra-wide high-vantage establishing view, no subject, deep atmospheric perspective.",
+  "light": "Dim diffuse ambient light, soft glow buried deep in the haze, no bright focal source, dark overall.",
+  "palette": "Void-indigo and deep teal-indigo dominating, the faintest cyan glow in the far haze, no warm accents.",
+  "style": "Painterly atmospheric background, soft, textureless, mood over detail.",
+  "detail_level": "Very soft and low-detail throughout, everything dissolving into haze; nothing sharp, nothing focal.",
+  "composition": "Wide empty horizontal expanse, layered depth bands, generous dim negative space, suitable as a dark background layer.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "creatures", "focal subject", "bright highlights"],
+  "consistency_notes": "Cool Pandora palette, dim and immersive; a quiet background mood layer, not an illustration.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no creatures, no sharp focal subject, no bright highlights, no photographic or 3D-render look"
+}

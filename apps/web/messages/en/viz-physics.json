@@ -1,0 +1,59 @@
+{
+  "viz": {
+    "squareCube": {
+      "title": "The square-cube law",
+      "sizeLabel": "Linear size",
+      "multiple": "{n}×",
+      "length": "Length",
+      "area": "Surface area / bone cross-section",
+      "volume": "Volume / mass",
+      "stress": "Stress on bone",
+      "areaNote": "scales as the square (k²)",
+      "volumeNote": "scales as the cube (k³)",
+      "stressNote": "mass over cross-section = k",
+      "hint": "Double an animal's length and its mass goes up eightfold, but the bone cross-section that carries it goes up only fourfold. The stress on every bone therefore doubles. That is why a body cannot simply be scaled up - its shape is forced to change."
+    },
+    "froudeDial": {
+      "title": "Froude gait dial",
+      "gravity": "Gravity",
+      "earth": "Earth",
+      "pandora": "Pandora",
+      "legLabel": "Leg length",
+      "walkTrot": "Walk → trot",
+      "gallop": "Gallop threshold",
+      "frNote": "at Fr ≈ 0.5",
+      "gallopNote": "at Fr ≈ 1.0",
+      "range": "0–{max} km/h",
+      "hint": "At the same leg length, Pandora's lower gravity pulls every gait transition down to a lower speed. The pa'li breaks into its efficient spring-loaded gaits sooner - and each footfall lands softer for it."
+    },
+    "flightCeiling": {
+      "title": "The wall every flyer hits",
+      "earth": "Earth",
+      "pandora": "Pandora",
+      "supply": "Power muscles supply",
+      "demand": "Power flight demands",
+      "ceiling": "Flight ceiling",
+      "massAxis": "Mass →",
+      "powerAxis": "Power →",
+      "quetz": "Quetzalcoatlus",
+      "ikran": "Ikran + rider",
+      "hint": "The demand curve climbs steeper than the supply curve, so they always cross. The crossing is the heaviest a flyer can still flap. Pandora's lower gravity and denser air pull the demand curve down - sliding the crossing rightward, to a mass Earth would pin to the ground."
+    },
+    "superconductor": {
+      "title": "Superconductor cool-down",
+      "temp": "Temperature",
+      "resistance": "Resistance",
+      "state": "State",
+      "normal": "Normal metal",
+      "superconducting": "Superconducting",
+      "tc": "Critical temperature Tc",
+      "tempAxis": "Temperature (K) →",
+      "resAxis": "Resistance →",
+      "play": "Cool / warm",
+      "pause": "Pause",
+      "hint": "Drop the temperature below Tc: resistance falls straight to zero and the magnet locks, hanging in mid-air.",
+      "levitating": "Flux-locked — levitating",
+      "resting": "Resting on the surface"
+    }
+  }
+}

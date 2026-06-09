@@ -1,0 +1,92 @@
+{
+  "viz": {
+    "countercurrent": {
+      "title": "Gill lamella: flip the blood",
+      "water": "Water",
+      "blood": "Blood",
+      "concurrent": "Same way",
+      "countercurrent": "Opposed",
+      "extraction": "Oxygen extracted",
+      "slope": "Oxygen gradient along the frond",
+      "concurrentNote": "Same direction: water and blood rush to a shared, middling balance and stop — the slope dies at the halfway mark and the leftover oxygen drifts past untaken.",
+      "countercurrentNote": "Opposed: the blood always meets water fresher than itself, so the slope holds the whole length of the frond — oxygen is taken right to the end."
+    },
+    "breathingMode": {
+      "title": "Two ways to breathe, one problem",
+      "tidal": "Tidal",
+      "unidirectional": "One-way",
+      "freshLabel": "Exchange surface",
+      "fresh": "always fresh",
+      "stale": "has a stale pocket",
+      "costLabel": "Cost to reverse",
+      "costHigh": "high",
+      "costNone": "none",
+      "deadSpace": "Stale air",
+      "ram": "Ram-ventilation: ON at speed",
+      "tidalNote": "Tidal: air in and back out the same door, leaving a pocket of stale air that never clears; every breath stops and reverses a heavy mass of gas. In Pandora's dense air, that cost is steep.",
+      "unidirectionalNote": "One-way: air streams a single direction across an always-fresh surface, never pausing, never reversing. Forward-facing intakes let the animal's own speed do the pumping — almost free."
+    },
+    "coldLight": {
+      "title": "The cold-light reaction",
+      "step": "Step",
+      "play": "Play",
+      "pause": "Pause",
+      "steps": [
+        {
+          "label": "Luciferin + O₂",
+          "body": "The enzyme luciferase takes a small fuel molecule — luciferin — and joins it to oxygen. No light yet; this is only loading the chamber."
+        },
+        {
+          "label": "High-energy intermediate",
+          "body": "Oxidation builds a strained peroxide ring (a dioxetanone). When the ring snaps, it sheds CO₂ and kicks the product up into an excited electronic state."
+        },
+        {
+          "label": "Photon",
+          "body": "The excited electron drops back to its ground state. The whole energy difference leaves as a single particle of light — with almost no waste heat. That is cold light."
+        }
+      ],
+      "effTitle": "Where the energy goes",
+      "eff": {
+        "incandescent": { "name": "Incandescent bulb", "heat": "≈95% lost as heat" },
+        "led": { "name": "LED", "heat": "much lost to heat" },
+        "firefly": { "name": "Firefly (biology)", "heat": "almost no heat" }
+      },
+      "legendLight": "Becomes light"
+    },
+    "photophore": {
+      "title": "Na'vi photophores: tuned to the body",
+      "calm": "Calm",
+      "aroused": "Aroused",
+      "slider": "Physiological state",
+      "intensity": "Intensity",
+      "hue": "Hue — constant",
+      "hueValue": "blue-white",
+      "note": "The dots sit along the vascular and neural lines, in bilateral pairs. They do not blink — they glow steadily, then flare as adrenaline rises (combat, bonding) and dim at rest.",
+      "mono": "The light is monochrome blue-white. The 'colour change' people think they see is an illusion of changing intensity, or firelight reflecting off the skin.",
+      "monoTag": "Correcting a myth"
+    },
+    "glowBiogeography": {
+      "title": "Where glow happens — and why",
+      "earth": "Earth",
+      "pandora": "Pandora",
+      "axisDim": "Darker with depth",
+      "axisGlow": "Glow density",
+      "zone": {
+        "sky": "Sky",
+        "land": "Land",
+        "shallow": "Shallows",
+        "deep": "Deep sea"
+      },
+      "insight": "One rule, flipped: bioluminescence floods wherever it is chronically dim and a visual signal pays. On Earth that is the deep sea; dim Polyphemus-lit nights turn Pandora's land into the deep sea too."
+    },
+    "glowOriginsTree": {
+      "title": "One trick, invented dozens of times",
+      "ancestor": "Common ancestor",
+      "tagline": "independent origins",
+      "fuelLabel": "Fuel (luciferin)",
+      "enzymeLabel": "Enzyme",
+      "hint": "Tap a branch to see its own fuel and enzyme.",
+      "note": "Each branch glows with a different fuel molecule and a different enzyme. They did not inherit light from a shared glowing ancestor — every lineage stumbled onto it on its own."
+    }
+  }
+}

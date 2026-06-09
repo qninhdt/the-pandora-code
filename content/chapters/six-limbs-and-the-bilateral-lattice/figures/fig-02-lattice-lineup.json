@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-lattice-lineup",
+  "chapter_slug": "six-limbs-and-the-bilateral-lattice",
+  "role": "inline",
+  "narrative_purpose": "Shows the shared specification holding across living, fleshed Pandoran animals of very different trades - the count of six limbs, four eyes, paired temple queues recurs no matter the body shape, driving home that this is inheritance, not chance.",
+  "subject": "A naturalist line-up of four living Pandoran animals of clearly different kinds - a tall grazing direhorse-like quadrupedal-looking beast that on close look has six legs, a low six-legged viperwolf-like hunter, a perched winged flyer, and a heavy hammerhead-browed herbivore - each posed in profile, each subtly showing the same six limbs, four eyes, and the pair of fine neural braids at the temples.",
+  "scene": "A glowing forest clearing at night, the four animals arranged across it at different depths, bioluminescent flora hazing the background.",
+  "camera": "A wide naturalist field view taking in all four animals, foreground ones larger, the far ones softened by haze.",
+  "light": "Bioluminescent ambient glow from surrounding flora, cyan and teal, catching the animals' eyes and temple-braids; deep indigo shadow.",
+  "palette": "Void-indigo and deep teal ground, cyan and living-teal biolum on flora and eyes, scarce magenta blooms, restrained warm accent.",
+  "style": "Painterly naturalist plate, hand-painted texture, field-survey clarity.",
+  "detail_level": "Crisp on each animal's limb count, eyes, and temple-braids; background flora soft; far animals dissolving into haze.",
+  "composition": "Four animals staggered across the frame at varied depth, eyes and queues catching the light, generous dark canopy negative space above.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette, bioluminescent key. Animals read as kin of one family despite different trades. Same mood as the chapter cover.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/six-limbs-and-the-bilateral-lattice/fig-00-cover.png"]
+}

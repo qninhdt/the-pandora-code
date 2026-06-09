@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-prolemuris-intermediate",
+  "chapter_slug": "convergent-but-not-quite",
+  "role": "inline",
+  "narrative_purpose": "Makes the adaptive-radiation transition concrete: the prolemuris shows a six-limbed body plan caught mid-change toward four limbs, a living intermediate between the deep hexapod stock and the Na'vi.",
+  "subject": "A lemur-like arboreal creature clinging to a glowing branch in the centre, shown clearly so its anatomy reads: its forelimbs are partially fused, a single upper arm that splits into two forearms only toward the hands, and it has a single neural queue trailing from its head rather than the paired queues of other Pandoran animals. Its four eyes are large and yellow. Flanking it faintly and smaller, set back in the haze: on one side a small six-limbed forest creature, on the other a tall slender four-limbed Na'vi-like silhouette, so the central animal reads as the step between them.",
+  "scene": "A dim bioluminescent canopy at night, glowing leaves and soft spores, the two flanking silhouettes ghosted in the background haze.",
+  "camera": "Naturalist front-three-quarter view of the central creature on its branch, the flanking forms smaller and dimmer to the sides.",
+  "light": "Bioluminescent foliage rim-lighting the central animal in cyan; its eyes catch a faint warm glow; the flanking silhouettes barely lit.",
+  "palette": "Cool teal-indigo dominant, living-teal foliage, a scarce ember-amber glint in the eyes, warm kept minimal.",
+  "style": "Hand-painted naturalist study plate, painterly and observed.",
+  "detail_level": "High on the central creature's fused forelimbs and single queue; soft and ghostly on the flanking silhouettes.",
+  "composition": "Central focal creature on its branch, a dimmer six-limbed form to one side and a tall four-limbed form to the other, dark hazy margins for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "UI", "watermark", "logos"],
+  "consistency_notes": "Pandoran palette and creature look consistent with the chapter; emphasise the partly-fused forelimbs and single queue as the readable teaching features.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

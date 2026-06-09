@@ -1,0 +1,13 @@
+id: countercurrent-exchange
+label:
+  vi: Trao đổi ngược dòng
+  en: Countercurrent exchange
+definition:
+  vi: Mẹo khéo léo nhất mà sự sống tìm ra để giữ cho độ chênh áp suất không bao giờ khép lại. Trong mang cá, nước chảy qua các phiến mang theo một hướng, còn máu bên trong chảy theo hướng ngược lại. Nhờ vậy, ở mỗi điểm dọc theo phiến mang, máu luôn gặp dòng nước tươi hơn chính nó - độ chênh oxy được duy trì suốt cả chiều dài thay vì chết ở giữa chặng. Một chiếc mang ngược dòng có thể vắt kiệt 80-90% lượng oxy trong nước; nếu để máu và nước chảy cùng chiều, chúng sẽ nhanh chóng cân bằng ở mức tầm tầm và quá trình trao đổi ngừng lại.
+  en: The cleverest trick life found for keeping the pressure slope from ever closing. In a fish gill, water flows over the lamellae one way while the blood inside flows the opposite way. So at every point along the frond the blood meets water fresher than itself - the oxygen slope is held the whole length instead of dying at the halfway mark. A countercurrent gill can strip 80-90% of the oxygen from the water; let blood and water flow the same direction and they quickly equalise at a mediocre level and exchange stops.
+see_also:
+- ficks-law
+- gill-lamella
+- cross-current-exchange
+category: concept
+cover_prompt: A painted schematic of two opposed glowing streams running past each other, cyan flowing one way and magenta the other, small luminous transfers crossing the gap evenly along the length, deep indigo ground, painterly, no text, no labels, no numbers.

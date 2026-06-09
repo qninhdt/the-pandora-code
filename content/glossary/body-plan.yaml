@@ -1,0 +1,13 @@
+id: body-plan
+label:
+  vi: Sơ đồ cấu tạo cơ thể
+  en: Body plan
+definition:
+  vi: Kiến trúc cốt lõi định hình nên một loài động vật - sự bày trí của trục đầu-đuôi và lưng-bụng, tính đối xứng, cũng như số lượng và vị trí của các bộ phận lặp lại như đốt cơ thể, chi hay mắt. Đa phần các loài động vật đều chia sẻ một vài sơ đồ cơ thể lớn, và mỗi sơ đồ này có xu hướng bám rễ gần như bất biến qua hàng trăm triệu năm, bởi lẽ việc tự ý sửa đổi nó từ trong phôi sớm sẽ châm ngòi cho một phản ứng dây chuyền làm sụp đổ mọi thứ theo sau.
+  en: The fundamental architecture an animal is built on - the layout of its head-to-tail and back-to-belly axes, its symmetry, and the number and placement of repeated parts like segments, limbs, or eyes. Most animals share a small handful of major body plans, and each tends to stay nearly fixed for hundreds of millions of years, because altering it early in the embryo triggers a cascade of failures downstream.
+see_also:
+- bilateral-symmetry
+- hox-genes
+- synapomorphy
+category: concept
+cover_prompt: A painted ghostly blueprint of a generic bilaterian animal seen from above, a glowing central head-to-tail line with symmetric paired markings along it, cool teal and indigo, no text, no labels.

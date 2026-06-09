@@ -1,37 +1,19 @@
 "use client";
 
 import { LINEAGES } from "@/components/content/glow-origins-tree.data";
+import { GlowDefs, glowUrl } from "@/components/content/viz/glow-defs";
+import { branchCurve } from "@/components/content/viz/tree";
 import { VizFigure } from "@/components/content/viz/viz-figure";
+import { VizText } from "@/components/content/viz/viz-svg-text";
 import { useReducedMotionSafe } from "@/components/motion/use-reduced-motion-safe";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useLocale, useTranslations } from "next-intl";
+import { useId, useState } from "react";
 
 interface GlowOriginsTreeProps {
-  locale?: "vi" | "en";
   caption?: string;
   className?: string;
 }
-
-const STRINGS = {
-  vi: {
-    title: "Cùng một thủ thuật, phát minh hàng chục lần",
-    ancestor: "Tổ tiên chung",
-    tagline: "lần khởi nguồn độc lập",
-    fuelLabel: "Nhiên liệu (luciferin)",
-    enzymeLabel: "Enzyme",
-    hint: "Chạm vào một nhánh để xem nhiên liệu và enzyme riêng của nó.",
-    note: "Mỗi nhánh phát sáng bằng một phân tử nhiên liệu khác nhau, với một enzyme khác nhau. Chúng không thừa kế khả năng phát sáng từ tổ tiên chung — mỗi dòng dõi tự mò ra nó.",
-  },
-  en: {
-    title: "One trick, invented dozens of times",
-    ancestor: "Common ancestor",
-    tagline: "independent origins",
-    fuelLabel: "Fuel (luciferin)",
-    enzymeLabel: "Enzyme",
-    hint: "Tap a branch to see its own fuel and enzyme.",
-    note: "Each branch glows with a different fuel molecule and a different enzyme. They did not inherit light from a shared glowing ancestor — every lineage stumbled onto it on its own.",
-  },
-} as const;
 
 const W = 300;
 const ROOT_X = 30;
@@ -40,19 +22,24 @@ const TIP_X = 150;
 const TOP = 30;
 const GAP = 38;
 
-export function GlowOriginsTree({ locale = "vi", caption, className }: GlowOriginsTreeProps) {
+export function GlowOriginsTree({ caption, className }: GlowOriginsTreeProps) {
+  const t = useTranslations("viz.glowOriginsTree");
+  const locale = useLocale();
   const reduced = useReducedMotionSafe();
-  const t = STRINGS[locale];
+  const uid = useId();
   const [active, setActive] = useState<string | null>(null);
+  const isVi = locale === "vi";
   const sel = LINEAGES.find((l) => l.key === active) ?? null;
   const rootY = TOP + ((LINEAGES.length - 1) * GAP) / 2;
   const H = TOP * 2 + (LINEAGES.length - 1) * GAP;
 
   return (
     <VizFigure
-      title={t.title}
+      title={t("title")}
       caption={caption}
+      tone="teal"
       className={className}
+      hint={t("hint")}
       controls={
         <span
           className="flex items-baseline gap-1 rounded-full px-2.5 py-0.5"
@@ -62,14 +49,13 @@ export function GlowOriginsTree({ locale = "vi", caption, className }: GlowOrigi
           }}
         >
           <span className="font-display text-sm font-700">40–50+</span>
-          <span className="font-sans text-[0.6rem]">{t.tagline}</span>
+          <span className="font-sans text-xs">{t("tagline")}</span>
         </span>
       }
     >
-      <p className="mb-2 font-sans text-[0.65rem] text-subtle">{t.hint}</p>
-
       <div className="rounded-xl border border-border bg-void/30 p-2">
-        <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label={t.title}>
+        <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label={t("title")}>
+          <GlowDefs idBase={uid} tones={["cyan", "teal", "magenta", "amber"]} />
           <line
             x1={ROOT_X}
             y1={rootY}
@@ -85,16 +71,11 @@ export function GlowOriginsTree({ locale = "vi", caption, className }: GlowOrigi
             fill="var(--surface-overlay)"
             stroke="var(--subtle)"
             strokeWidth={2}
+            filter={glowUrl(uid, "soft-shadow")}
           />
-          <text
-            x={ROOT_X}
-            y={rootY - 14}
-            textAnchor="middle"
-            className="font-sans"
-            style={{ fontSize: 9, fill: "var(--subtle)" }}
-          >
-            {t.ancestor}
-          </text>
+          <VizText x={ROOT_X} y={rootY - 14} size="micro" tone="subtle" anchor="middle">
+            {t("ancestor")}
+          </VizText>
 
           {LINEAGES.map((l, i) => {
             const y = TOP + l.slot * GAP;
@@ -108,16 +89,16 @@ export function GlowOriginsTree({ locale = "vi", caption, className }: GlowOrigi
                 // biome-ignore lint/a11y/useSemanticElements: an SVG <g> cannot be a native <button>; button role is the correct ARIA mapping for a clickable tree node
                 role="button"
                 aria-pressed={on}
-                aria-label={locale === "vi" ? l.nameVi : l.nameEn}
+                aria-label={isVi ? l.nameVi : l.nameEn}
               >
                 <path
-                  d={`M ${FORK_X} ${rootY} L ${FORK_X} ${y} L ${TIP_X} ${y}`}
+                  d={branchCurve({ x: FORK_X, y: rootY }, { x: TIP_X, y })}
                   fill="none"
                   stroke={tone}
                   strokeWidth={on ? 3 : 2}
                   strokeLinecap="round"
                   strokeOpacity={on ? 1 : 0.55}
-                  style={on ? { filter: `drop-shadow(0 0 5px ${tone})` } : undefined}
+                  filter={on ? glowUrl(uid, "bloom") : undefined}
                 />
                 {/* tip blooms in on load, staggered per lineage — each origin lighting on its own */}
                 <motion.circle
@@ -126,26 +107,24 @@ export function GlowOriginsTree({ locale = "vi", caption, className }: GlowOrigi
                   fill={tone}
                   stroke={tone}
                   strokeWidth={2}
-                  initial={reduced ? false : { scale: 0, opacity: 0 }}
+                  filter={glowUrl(uid, on ? "bloom-strong" : "bloom")}
+                  initial={reduced ? { r: on ? 8 : 6 } : { scale: 0, opacity: 0, r: on ? 8 : 6 }}
                   animate={{ scale: 1, opacity: 1, r: on ? 8 : 6 }}
                   transition={
                     reduced
                       ? { duration: 0 }
                       : { delay: 0.25 + i * 0.45, type: "spring", stiffness: 320, damping: 16 }
                   }
-                  style={{
-                    filter: `drop-shadow(0 0 ${on ? 9 : 4}px ${tone})`,
-                    transformOrigin: `${TIP_X}px ${y}px`,
-                  }}
+                  style={{ transformOrigin: `${TIP_X}px ${y}px` }}
                 />
-                <text
+                <VizText
                   x={TIP_X + 14}
                   y={y + 4}
-                  className="font-sans"
-                  style={{ fontSize: 11, fill: on ? "var(--foreground)" : "var(--muted)" }}
+                  size="small"
+                  tone={on ? "var(--foreground)" : "var(--muted)"}
                 >
-                  {locale === "vi" ? l.nameVi : l.nameEn}
-                </text>
+                  {isVi ? l.nameVi : l.nameEn}
+                </VizText>
               </g>
             );
           })}
@@ -166,24 +145,24 @@ export function GlowOriginsTree({ locale = "vi", caption, className }: GlowOrigi
         {sel ? (
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <p className="font-sans text-[0.6rem] uppercase tracking-wider text-subtle">
-                {t.fuelLabel}
+              <p className="font-sans text-xs uppercase tracking-wider text-subtle">
+                {t("fuelLabel")}
               </p>
               <p className="mt-0.5 font-sans text-xs font-700" style={{ color: sel.tone }}>
-                {locale === "vi" ? sel.fuelVi : sel.fuelEn}
+                {isVi ? sel.fuelVi : sel.fuelEn}
               </p>
             </div>
             <div>
-              <p className="font-sans text-[0.6rem] uppercase tracking-wider text-subtle">
-                {t.enzymeLabel}
+              <p className="font-sans text-xs uppercase tracking-wider text-subtle">
+                {t("enzymeLabel")}
               </p>
               <p className="mt-0.5 font-sans text-xs font-700" style={{ color: sel.tone }}>
-                {locale === "vi" ? sel.enzymeVi : sel.enzymeEn}
+                {isVi ? sel.enzymeVi : sel.enzymeEn}
               </p>
             </div>
           </div>
         ) : (
-          <p className="font-sans text-xs text-muted">{t.note}</p>
+          <p className="font-sans text-xs text-muted">{t("note")}</p>
         )}
       </div>
     </VizFigure>

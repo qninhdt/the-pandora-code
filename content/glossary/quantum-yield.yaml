@@ -1,0 +1,14 @@
+id: quantum-yield
+label:
+  vi: Hiệu suất lượng tử
+  en: Quantum yield
+definition:
+  vi: >-
+    Tỉ lệ giữa số hạt ánh sáng (photon) phát ra và số phân tử (hoặc photon) tham gia phản ứng - thước đo độ "hiệu quả" của một quá trình phát sáng. Hiệu suất lượng tử bằng 1 nghĩa là mỗi phân tử nhiên liệu phản ứng đều cho đúng một photon, không lãng phí. Các phép đo ban đầu tưởng phản ứng của đom đóm đạt gần mức hoàn hảo ấy; các phép đo sau này chính xác hơn hạ con số xuống thấp hơn, nhưng kết luận vẫn vững: so với mọi cách tạo sáng bằng nhiệt, ánh sáng sinh học cực kỳ tiết kiệm năng lượng.
+  en: >-
+    The ratio of light particles (photons) emitted to molecules (or photons) that react - a measure of how "efficient" a light-producing process is. A quantum yield of 1 means every fuel molecule that reacts yields exactly one photon, with no waste. Early measurements suggested the firefly reaction reached nearly that perfection; later, more careful measurements lowered the figure, but the conclusion holds: compared with any way of making light by getting hot, biological light is extraordinarily energy-cheap.
+see_also:
+- chemiluminescence
+- bioluminescence
+category: concept
+cover_prompt: A single fuel molecule emitting one clean photon of cyan light, a one-to-one pairing, dark teal field, no text, no labels.

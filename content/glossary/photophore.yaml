@@ -1,0 +1,13 @@
+id: photophore
+label:
+  vi: Cơ quan phát quang
+  en: Photophore
+definition:
+  vi: Cơ quan chuyên biệt tạo ra ánh sáng trên cơ thể một sinh vật - từ những "đèn" lấm tấm dọc sườn cá biển sâu cho đến các đốm sáng trên da. Một photophore có thể tự sản sinh ánh sáng bằng phản ứng luciferin-luciferase của chính nó, hoặc nuôi vi khuẩn phát sáng cộng sinh. Nhiều photophore còn có thấu kính, gương phản xạ hay màng chắn để hội tụ, điều hướng hoặc che bớt ánh sáng. Trên Pandora, các đốm sáng lấm tấm trên da người Na'vi chính là photophore, xếp theo các đường mạch máu và thần kinh.
+  en: A specialized light-producing organ on an organism's body - from the "lamps" studding the flank of a deep-sea fish to luminous dots set in skin. A photophore may make its own light through its own luciferin-luciferase reaction, or it may farm symbiotic glowing bacteria. Many photophores add lenses, reflectors, or shutters to focus, aim, or mask the light. On Pandora, the Na'vi's luminous skin freckles are photophores, arranged along the lines of vessels and nerves.
+see_also:
+- bioluminescence
+- counter-illumination
+- quorum-sensing
+category: bio
+cover_prompt: A row of small glowing organs along the dark flank of a deep-sea fish silhouette, emitting cyan light, cool teal palette, no text, no labels.

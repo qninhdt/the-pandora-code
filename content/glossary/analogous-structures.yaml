@@ -1,0 +1,12 @@
+id: analogous-structures
+label:
+  vi: Cấu trúc tương đồng chức năng
+  en: Analogous structures
+definition:
+  vi: Những cấu trúc tuy giống nhau về mặt công năng nhưng lại có nguồn gốc tiến hóa hoàn toàn độc lập, không hề được thừa hưởng từ một tổ tiên chung - tựa như cánh của côn trùng và cánh dơi, vốn được nhào nặn từ những chất liệu khác hẳn nhau để cùng giải quyết bài toán bay lượn. Tương đồng chức năng chính là sản phẩm của tiến hóa hội tụ. Việc một con thanator khoác lên mình dáng vẻ của loài báo dù chẳng mảy may chung dòng máu với nhà mèo, chính là lúc ta đang tận mắt chứng kiến sự tương đồng chức năng phô diễn ở quy mô của cả một hành tinh.
+  en: Features that are similar in function but evolved independently, not inherited from a shared ancestor - like an insect's wing and a bat's wing, built from completely different materials to solve the same problem of flight. Analogy is the product of convergent evolution. When the thanator wears a panther's build despite no kinship with any cat, we are looking at analogy on a planetary scale.
+see_also:
+- homologous-structures
+- convergent-evolution
+category: bio
+cover_prompt: A painted comparison of an insect wing and a bat wing side by side, similar in outline yet visibly built from different materials, cool teal-cyan palette, painterly plate, no text, no labels.

@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-anolis-radiation",
+  "chapter_slug": "convergent-but-not-quite",
+  "role": "diagram",
+  "narrative_purpose": "Shows convergence replicated with controls: four islands each grow the same set of lizard body-types independently, the cleanest natural evidence that niches pull form toward predictable solutions.",
+  "subject": "Four separate small island shapes arranged in a loose row across the frame, each island floating in dark sea. On each island sit the same set of about five small lizard silhouettes in the same recurring forms: a slim long-bodied twig-dweller high up, a stocky short-limbed trunk lizard low down, a large crowned giant, a slender grass form, and one more. The five forms repeat island to island so the eye sees the same cast four times. Faint thin connecting threads link each lizard only to the differently-shaped lizards on its own island, not to its matching form on other islands, showing independent local origin.",
+  "scene": "Dark teal sea between the islands, each island faintly glowing with bioluminescent foliage, soft haze.",
+  "camera": "Flat top-down-ish diagrammatic arrangement of the four islands side by side.",
+  "light": "Each island and its lizards softly self-lit in cyan and living-teal against the dark sea.",
+  "palette": "Void indigo sea, living-teal island foliage, cyan lizard silhouettes, no warm accent.",
+  "style": "Painterly plate reading as a diagram through arrangement, soft glowing forms, not a vector chart.",
+  "detail_level": "Moderate: the five recurring body-types clearly distinguishable and obviously repeated across islands.",
+  "composition": "Four islands in a row, matching forms vertically aligned across islands so repetition is instantly legible, dark sea margins for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "island names", "arrows", "leader lines", "UI", "watermark", "logos"],
+  "consistency_notes": "Earth lizards, drawn naturalistically; the point is repetition of form, so keep the five types visually consistent island to island.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no diagram chrome, no photographic or 3D-render look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

@@ -1,0 +1,13 @@
+id: reticulate-evolution
+label:
+  vi: Tiến hóa mạng lưới (reticulate evolution)
+  en: Reticulate evolution
+definition:
+  vi: 'Tiến hóa không theo kiểu cây phân nhánh thuần túy, mà các dòng dõi đã tách ra lại nối với nhau trở lại - tạo thành một mạng lưới thay vì một cây. Nó xảy ra qua chuyển gene ngang (gene nhảy từ sinh vật này sang sinh vật khác không qua sinh sản), qua lai giống, và qua nội cộng sinh. Tên gọi xuất phát từ tiếng Latin "reticulum" - cái lưới. Ở những nơi nó hoạt động, sơ đồ cây gọn gàng chỉ là một sự giản lược của một thứ thực ra có hình mạng. Mạng lưới làm cây phức tạp thêm, chứ không xóa bỏ cây.'
+  en: 'Evolution that is not a purely branching tree, but one in which lineages that have split rejoin - forming a net rather than a tree. It happens through horizontal gene transfer (genes jumping between organisms outside reproduction), through hybridization, and through endosymbiosis. The name comes from the Latin "reticulum" - a little net. Where it operates, the tidy tree diagram is a simplification of something genuinely web-shaped. Reticulation complicates the tree; it does not abolish it.'
+see_also:
+- cladogram
+- clade
+- queue
+category: bio
+cover_prompt: A painted upright branching tree of glowing life whose separate branches are stitched together by fine horizontal threads into a luminous net, tree and web sharing one dark space, cool teal and indigo with magenta thread-glints, bioluminescent, no text, no labels.

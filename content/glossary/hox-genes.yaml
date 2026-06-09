@@ -1,0 +1,13 @@
+id: hox-genes
+label:
+  vi: Gene Hox
+  en: Hox genes
+definition:
+  vi: Một dòng họ gene điều hòa chịu trách nhiệm đánh dấu vị trí dọc theo trục đầu-đuôi của phôi thai - bản thân chúng chẳng tự xây cất bất cứ thứ gì, nhưng chúng lại chỉ định cho từng vùng cơ thể biết nó là đầu, thân giữa, hay đuôi, để rồi các tế bào tại đó tự động thi công những gì thuộc về địa chỉ đó. Đáng kinh ngạc thay, chúng nằm sát nhau thành một hàng trên nhiễm sắc thể, theo đúng trật tự của các vùng cơ thể mà chúng cai trị, và trật tự này được bảo tồn nguyên vẹn từ ruồi giấm, chuột nhắt cho đến con người.
+  en: A family of regulatory genes that label position along the head-to-tail axis of an embryo - they build nothing themselves, but tell each region of the body whether it is head, mid-body, or tail, so the cells there construct whatever belongs at that address. Remarkably, they sit in a row on the chromosome in the same order as the body regions they govern, and this arrangement is conserved identically in a fruit fly, a mouse, and a human.
+see_also:
+- homeobox
+- homeosis
+- genetic-toolkit
+category: concept
+cover_prompt: A painted row of glowing coloured beads along a strand, each bead's colour echoed on a matching head-to-tail band of a ghostly embryo beside it, cool palette with scarce amber, no text, no labels.

@@ -1,0 +1,13 @@
+id: adaptive-radiation
+label:
+  vi: Bức xạ thích nghi
+  en: Adaptive radiation
+definition:
+  vi: 'Quá trình một dòng dõi tổ tiên duy nhất phân nhánh chớp nhoáng thành vô vàn những hình thái con cháu, mỗi hình thái được đẽo gọt để lấp vào một ổ sinh thái trống rỗng khác nhau - thường bùng nổ khi sự sống chạm trán một thế giới ngập tràn những "việc làm" chưa có ai xí phần: một hòn đảo mới tinh, một vùng đất sạch bóng, một sinh quyển hãy còn non trẻ. Sẻ của Darwin ở Galápagos, chim hút mật ở Hawaii, thằn lằn Anolis vùng Caribe đều đã làm vậy. Toàn bộ hệ động vật Pandora có thể được nghiền ngẫm như một cuộc tiến hóa phân nhánh khổng lồ khởi nguồn từ cấu trúc sáu chi nền tảng của chính nó.'
+  en: 'The process by which a single ancestral lineage fans out rapidly into many descendant forms, each adapted to a different empty niche - usually when life meets a world full of open jobs: a new island, a cleared landscape, a young biosphere. Darwin''s finches on the Galápagos, Hawaii''s honeycreepers, and the Caribbean''s Anolis lizards all did it. Pandora''s entire bestiary can be read as one enormous adaptive radiation off the moon''s foundational six-limbed body plan.'
+see_also:
+- ecomorph
+- convergent-evolution
+- niche-partitioning
+category: bio
+cover_prompt: A painted single glowing root form branching upward into many distinct animal silhouettes spreading to fill a forest, cool teal-cyan palette, painterly plate, no text, no labels.

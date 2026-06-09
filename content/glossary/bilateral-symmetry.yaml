@@ -1,0 +1,12 @@
+id: bilateral-symmetry
+label:
+  vi: Đối xứng hai bên
+  en: Bilateral symmetry
+definition:
+  vi: Một kiểu thiết kế cơ thể sở hữu nửa trái và nửa phải soi bóng lẫn nhau dọc theo một trục chạy thẳng từ đầu đến đuôi. Nó định nghĩa toàn bộ nhóm Bilateria (động vật đối xứng hai bên) - ôm trọn gần như mọi loài động vật quen thuộc, từ giun dế, côn trùng cho đến loài người. Sự đối xứng này luôn song hành với việc có một phần đầu đi trước dẫn đường, một hướng di chuyển chủ đạo, và một hệ thần kinh hội tụ về phía trước.
+  en: A body layout with a left and a right side that mirror each other along a single head-to-tail axis. It defines the Bilateria - nearly every familiar animal, from worms and insects to humans. This symmetry goes hand in hand with having a leading head end, a dominant direction of travel, and a nervous system concentrated toward the front.
+see_also:
+- body-plan
+- synapomorphy
+category: concept
+cover_prompt: A painted dark plate of a softly glowing creature seen head-on, its left and right halves perfectly mirrored along a vertical centre line, cool cyan bioluminescence, no text, no labels.

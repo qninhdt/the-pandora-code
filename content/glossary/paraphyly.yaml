@@ -1,0 +1,13 @@
+id: paraphyly
+label:
+  vi: Nhóm cận ngành (paraphyly)
+  en: Paraphyly
+definition:
+  vi: 'Một nhóm gồm một tổ tiên chung và một số - nhưng không phải tất cả - con cháu của nó. Nhóm cận ngành là một cành bị cắt cụt: nó để sót lại vài nhánh con cháu, nên không phải một gia đình trọn vẹn. "Cá" là ví dụ kinh điển - nó gộp gần hết hậu duệ của một tổ tiên nhưng bỏ ra ngoài các loài bốn chân trên cạn, vốn cũng từ tổ tiên ấy mà ra. Phân loại học hiện đại tránh các nhóm cận ngành vì chúng phản ánh sự tiện tay, chứ không phản ánh huyết thống.'
+  en: 'A group consisting of a common ancestor and some - but not all - of its descendants. A paraphyletic group is a truncated limb: it omits a few descendant branches, so it is not a complete family. "Fish" is the classic case - it bundles nearly all descendants of one ancestor but leaves out the land-dwelling tetrapods, which also came from that ancestor. Modern systematics avoids paraphyletic groups because they reflect convenience, not ancestry.'
+see_also:
+- clade
+- polyphyly
+- symplesiomorphy
+category: bio
+cover_prompt: A painted tree-of-life branch where an ancestral node and most of its descending twigs glow cyan but one descendant branch is conspicuously left dark and excluded, cool indigo ground, bioluminescent, no text, no labels.

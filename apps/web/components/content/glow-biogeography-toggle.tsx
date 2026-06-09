@@ -1,15 +1,17 @@
 "use client";
 
+import { GlowDefs, glowId, glowUrl } from "@/components/content/viz/glow-defs";
 import { SegmentedToggle } from "@/components/content/viz/segmented-toggle";
 import { VizFigure } from "@/components/content/viz/viz-figure";
+import { VizText, vizTextScale } from "@/components/content/viz/viz-svg-text";
 import { useReducedMotionSafe } from "@/components/motion/use-reduced-motion-safe";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { useId, useState } from "react";
 
 type World = "earth" | "pandora";
 
 interface GlowBiogeographyToggleProps {
-  locale?: "vi" | "en";
   caption?: string;
   className?: string;
 }
@@ -17,77 +19,47 @@ interface GlowBiogeographyToggleProps {
 // A vertical slice of the world, sky at top to abyss at bottom. Each zone has a
 // `dim` value (how chronically dark it is, 0..1) and a `glow` value per world.
 // Glow tracks dimness: it floods wherever it is dark enough for a photon to pay.
+// Scientific data — the zone label comes from messages, keyed by `key`.
 interface Zone {
   key: string;
-  labelVi: string;
-  labelEn: string;
   dim: number;
   earth: number;
   pandora: number;
 }
 
 const ZONES: Zone[] = [
-  { key: "sky", labelVi: "Trời", labelEn: "Sky", dim: 0.05, earth: 0.02, pandora: 0.05 },
-  { key: "land", labelVi: "Đất liền", labelEn: "Land", dim: 0.15, earth: 0.08, pandora: 0.78 },
-  {
-    key: "shallow",
-    labelVi: "Biển nông",
-    labelEn: "Shallows",
-    dim: 0.45,
-    earth: 0.35,
-    pandora: 0.7,
-  },
-  { key: "deep", labelVi: "Biển sâu", labelEn: "Deep sea", dim: 0.95, earth: 0.92, pandora: 0.95 },
+  { key: "sky", dim: 0.05, earth: 0.02, pandora: 0.05 },
+  { key: "land", dim: 0.15, earth: 0.08, pandora: 0.78 },
+  { key: "shallow", dim: 0.45, earth: 0.35, pandora: 0.7 },
+  { key: "deep", dim: 0.95, earth: 0.92, pandora: 0.95 },
 ];
-
-const STRINGS = {
-  vi: {
-    title: "Nơi nào phát sáng — và vì sao",
-    earth: "Trái Đất",
-    pandora: "Pandora",
-    axisDim: "Càng xuống càng tối",
-    axisGlow: "Mật độ phát sáng",
-    insight:
-      "Cùng một quy luật, lật ngược: ánh sáng sinh học bùng nổ ở bất cứ đâu tù mù triền miên và tín hiệu thị giác đáng giá. Trên Trái Đất nơi đó là biển sâu; đêm tù mù dưới ánh Polyphemus biến cả mặt đất Pandora thành 'biển sâu'.",
-  },
-  en: {
-    title: "Where glow happens — and why",
-    earth: "Earth",
-    pandora: "Pandora",
-    axisDim: "Darker with depth",
-    axisGlow: "Glow density",
-    insight:
-      "One rule, flipped: bioluminescence floods wherever it is chronically dim and a visual signal pays. On Earth that is the deep sea; dim Polyphemus-lit nights turn Pandora's land into the deep sea too.",
-  },
-} as const;
 
 const W = 360;
 const ZONE_H = 52;
 const PAD = 8;
 
-export function GlowBiogeographyToggle({
-  locale = "vi",
-  caption,
-  className,
-}: GlowBiogeographyToggleProps) {
+export function GlowBiogeographyToggle({ caption, className }: GlowBiogeographyToggleProps) {
+  const t = useTranslations("viz.glowBiogeography");
   const reduced = useReducedMotionSafe();
-  const t = STRINGS[locale];
+  const uid = useId();
   const [world, setWorld] = useState<World>("earth");
   const H = PAD * 2 + ZONES.length * ZONE_H;
 
   return (
     <VizFigure
-      title={t.title}
+      title={t("title")}
       caption={caption}
+      tone="teal"
       className={className}
+      hint={t("insight")}
       controls={
         <SegmentedToggle<World>
-          ariaLabel={t.title}
+          ariaLabel={t("title")}
           value={world}
           onChange={setWorld}
           options={[
-            { value: "earth", label: t.earth, tone: "var(--muted)" },
-            { value: "pandora", label: t.pandora, tone: "var(--cyan)" },
+            { value: "earth", label: t("earth"), tone: "var(--muted)" },
+            { value: "pandora", label: t("pandora"), tone: "var(--cyan)" },
           ]}
         />
       }
@@ -96,10 +68,10 @@ export function GlowBiogeographyToggle({
         {/* dimness axis */}
         <div className="flex w-5 shrink-0 flex-col items-center justify-between py-1">
           <span
-            className="font-sans text-[0.55rem] uppercase tracking-wider text-subtle"
+            className="font-sans text-xs uppercase tracking-wider text-subtle"
             style={{ writingMode: "vertical-rl" }}
           >
-            {t.axisDim}
+            {t("axisDim")}
           </span>
         </div>
 
@@ -107,22 +79,34 @@ export function GlowBiogeographyToggle({
           viewBox={`0 0 ${W} ${H}`}
           className="w-full"
           role="img"
-          aria-label={`${world === "earth" ? t.earth : t.pandora}: ${t.axisGlow}`}
+          aria-label={`${world === "earth" ? t("earth") : t("pandora")}: ${t("axisGlow")}`}
         >
+          <GlowDefs idBase={uid} tones={["teal"]} />
           <defs>
-            <linearGradient id="gb-depth" x1="0" y1="0" x2="0" y2="1">
+            <linearGradient id={glowId(uid, "depth")} x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stopColor="color-mix(in oklab, var(--cyan) 8%, var(--surface))" />
               <stop offset="100%" stopColor="var(--void)" />
             </linearGradient>
           </defs>
-          <rect x={0} y={0} width={W} height={H} rx={10} fill="url(#gb-depth)" />
+          <rect x={0} y={0} width={W} height={H} rx={10} fill={`url(#${glowId(uid, "depth")})`} />
 
           {ZONES.map((z, i) => {
             const y = PAD + i * ZONE_H;
             const glow = world === "earth" ? z.earth : z.pandora;
             const barW = 12 + glow * (W - 150);
+            const lit = glow > 0.25;
             return (
               <g key={z.key}>
+                {/* zone band — a faint depth-tinted slab so layers read as stacked
+                    strata rather than text floating on one flat field */}
+                <rect
+                  x={6}
+                  y={y}
+                  width={W - 12}
+                  height={ZONE_H}
+                  rx={6}
+                  fill={`color-mix(in oklab, var(--void) ${20 + z.dim * 55}%, transparent)`}
+                />
                 {i > 0 && (
                   <line
                     x1={8}
@@ -134,14 +118,9 @@ export function GlowBiogeographyToggle({
                     strokeOpacity={0.5}
                   />
                 )}
-                <text
-                  x={16}
-                  y={y + ZONE_H / 2 + 4}
-                  className="font-sans"
-                  style={{ fontSize: 11, fill: "var(--muted)" }}
-                >
-                  {locale === "vi" ? z.labelVi : z.labelEn}
-                </text>
+                <VizText x={16} y={y + ZONE_H / 2 + 4} size="small" tone="muted">
+                  {t(`zone.${z.key}`)}
+                </VizText>
 
                 {/* glow-density bar: width + bloom track this zone's glow in this world */}
                 <motion.rect
@@ -155,18 +134,15 @@ export function GlowBiogeographyToggle({
                   transition={
                     reduced ? { duration: 0 } : { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
                   }
-                  style={{
-                    filter:
-                      glow > 0.25 ? `drop-shadow(0 0 ${4 + glow * 10}px var(--teal))` : "none",
-                  }}
+                  filter={lit ? glowUrl(uid, "bloom") : glowUrl(uid, "soft-shadow")}
                 />
                 <motion.text
                   x={104 + 8}
                   y={y + ZONE_H / 2 + 4}
-                  className="font-sans"
+                  className="font-sans tabular-nums"
                   initial={false}
                   animate={{ opacity: glow > 0.3 ? 1 : 0.4 }}
-                  style={{ fontSize: 10, fill: "var(--void)", fontWeight: 700 }}
+                  style={{ fontSize: vizTextScale.micro, fill: "var(--void)", fontWeight: 700 }}
                 >
                   {Math.round(glow * 100)}%
                 </motion.text>
@@ -176,19 +152,9 @@ export function GlowBiogeographyToggle({
         </svg>
       </div>
 
-      <p className="mt-1 text-center font-sans text-[0.6rem] uppercase tracking-wider text-subtle">
-        {t.axisGlow} →
+      <p className="mt-1 text-center font-sans text-xs uppercase tracking-wider text-subtle">
+        {t("axisGlow")} →
       </p>
-
-      <div
-        className="mt-3 rounded-lg border px-3 py-2"
-        style={{
-          borderColor: "color-mix(in oklab, var(--cyan) 40%, transparent)",
-          background: "color-mix(in oklab, var(--cyan) 9%, transparent)",
-        }}
-      >
-        <p className="font-sans text-xs text-muted">{t.insight}</p>
-      </div>
     </VizFigure>
   );
 }

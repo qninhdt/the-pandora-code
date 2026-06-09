@@ -1,0 +1,14 @@
+id: fluorescence
+label:
+  vi: Huỳnh quang
+  en: Fluorescence
+definition:
+  vi: >-
+    Hiện tượng một vật chất hấp thụ ánh sáng từ bên ngoài rồi lập tức tái phát ra ở một màu khác (thường dịch về phía bước sóng dài hơn). Khác hẳn phát quang sinh học: huỳnh quang không tự tạo ra ánh sáng - tắt nguồn sáng chiếu vào thì huỳnh quang tắt ngay, vì nó chỉ mượn và đổi màu ánh sáng sẵn có. Đây là một nhầm lẫn phổ biến: một sinh vật "phát sáng dưới đèn UV" là huỳnh quang, còn một sinh vật sáng trong bóng tối tuyệt đối là phát quang sinh học. Có loài dùng cả hai: sứa pha lê tạo ánh sáng xanh dương bằng hóa học rồi để protein GFP đổi nó sang xanh lục.
+  en: >-
+    When a material absorbs light from outside and immediately re-emits it at a different color (usually shifted toward longer wavelengths). Unlike bioluminescence: fluorescence makes no light of its own - cut the incoming light and the fluorescence dies instantly, because it only borrows and reshades existing light. This is a common confusion: a creature that "glows under UV" is fluorescing, while a creature that shines in total darkness is bioluminescent. Some use both: the crystal jelly makes blue light chemically, then lets GFP shift it to green.
+see_also:
+- bioluminescence
+- green-fluorescent-protein
+category: concept
+cover_prompt: A material lit by an external blue beam and re-emitting green light, the beam clearly external, cool teal-and-green palette, no text, no labels.

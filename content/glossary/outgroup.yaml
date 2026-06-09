@@ -1,0 +1,13 @@
+id: outgroup
+label:
+  vi: Nhóm ngoài (outgroup)
+  en: Outgroup
+definition:
+  vi: 'Một loài hay nhóm họ hàng được biết là đã tách ra *trước* nhóm ta đang nghiên cứu, dùng làm điểm tựa để xác định đâu là trạng thái tổ tiên và đâu là trạng thái phái sinh. Không có nhóm ngoài, cây gia phả là một sơ đồ trôi nổi không gốc - ta thấy các loài khác nhau ở chỗ nào nhưng không biết chiều nào là "cổ", chiều nào là "mới". Trạng thái xuất hiện ở nhóm ngoài được coi là tổ tiên; trạng thái chỉ có trong nhóm trong là phái sinh. Nhóm ngoài là chiếc la bàn định hướng cho cả cây.'
+  en: 'A species or related group known to have branched off *before* the group under study, used as an anchor to decide which character states are ancestral and which are derived. Without an outgroup, a family tree is a rootless floating diagram - you see where species differ but not which direction is "old" and which is "new." A state present in the outgroup is taken as ancestral; a state found only inside the ingroup is derived. The outgroup is the compass that orients the whole tree.'
+see_also:
+- plesiomorphy
+- apomorphy
+- cladogram
+category: bio
+cover_prompt: A painted branching tree of glowing creatures with one silhouette set apart at the base as a reference point, a faint directional glow running from it up into the rest of the tree, cool teal and indigo, bioluminescent, no text, no labels.

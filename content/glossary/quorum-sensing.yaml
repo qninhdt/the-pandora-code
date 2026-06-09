@@ -1,0 +1,15 @@
+id: quorum-sensing
+label:
+  vi: Cảm biến mật độ
+  en: Quorum sensing
+definition:
+  vi: >-
+    Cách vi khuẩn "đếm đầu người": mỗi tế bào tiết ra một phân tử tín hiệu nhỏ, và khi mật độ tế bào đủ cao thì tín hiệu tích tụ đến ngưỡng, bật đồng loạt một loạt gene. Nhờ đó cả quần thể chỉ hành động khi đã đủ đông để hành động có ý nghĩa. Ví dụ kinh điển là vi khuẩn phát sáng *Vibrio fischeri*: ngoài biển khơi loãng chúng tối thui, nhưng khi cư trú dày đặc trong cơ quan phát sáng của một con mực, tín hiệu dồn lại và chúng mới đồng loạt bật đèn.
+  en: >-
+    How bacteria "take a headcount": each cell releases a small signaling molecule, and when cell density is high enough the signal builds to a threshold that switches on a batch of genes at once. This lets a whole population act only when it is numerous enough for the action to matter. The classic case is the glowing bacterium *Vibrio fischeri*: diffuse in open seawater it stays dark, but packed densely inside a squid's light organ the signal accumulates and only then do they all switch on the light.
+see_also:
+- bioluminescence
+- counter-illumination
+- photophore
+category: concept
+cover_prompt: A cluster of glowing bacterial cells reaching a critical density and lighting up together, cyan glow against dark field, no text, no labels.

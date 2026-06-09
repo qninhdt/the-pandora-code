@@ -1,0 +1,12 @@
+id: deep-homology
+label:
+  vi: Tương đồng sâu
+  en: Deep homology
+definition:
+  vi: 'Khám phá chấn động rằng những cấu trúc nom có vẻ hoàn toàn xa lạ ở những loài động vật cách biệt xa xôi lại được nhào nặn nên bởi cùng một bộ gene điều hòa cổ đại. Trường hợp kinh điển chính là đôi mắt: mắt kép của côn trùng và con mắt tựa thấu kính máy ảnh của động vật có xương sống, dù khác xa nhau về vẻ ngoài, lại đều được khởi động bởi cùng một gene tổng Pax6 - đến mức độ gene Pax6 của chuột thậm chí có thể nặn ra đôi mắt ruồi ngay trên mình con ruồi giấm.'
+  en: 'The discovery that structures looking utterly different in distantly related animals are built by the same ancient set of regulatory genes. The classic case is the eye: the compound eye of an insect and the camera eye of a vertebrate, however unlike in form, are both switched on by the same master gene Pax6 - so much so that the mouse Pax6 gene can grow fly eyes on a fruit fly.'
+see_also:
+- genetic-toolkit
+- homeobox
+category: concept
+cover_prompt: A painted diptych of an insect compound eye and a vertebrate camera eye joined by a single glowing thread of light running between them, cool cyan and teal, no text, no labels.

@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-scale-ceiling",
+  "chapter_slug": "direhorse-and-banshee-up-close",
+  "role": "comparison",
+  "narrative_purpose": "The size story in one plate: the pa'li set beside an Earth elephant and the ikran beside Quetzalcoatlus, so the reader feels at a glance how far Pandora's megafauna overshoot Earth's limits for running mass and flying span.",
+  "subject": "Two paired silhouettes on a common ground line. On the left, the six-limbed pa'li standing beside an Asian elephant of similar shoulder height - the pa'li leaner and longer-legged. On the right, the great winged ikran with its fourteen-metre span set against the smaller skeletal outline of Quetzalcoatlus, Earth's largest flyer, the ikran clearly larger. A faint scale grid behind gives a sense of true size.",
+  "scene": "A dark measured display space, the four forms aligned on one ground line against a faint receding grid, haze beyond.",
+  "camera": "A flat side-on elevation so heights and spans compare honestly, all forms sharp.",
+  "light": "Even cool glow tracing the Pandoran forms brighter, the Earth analogues dimmer and cooler to set them apart; deep indigo ground.",
+  "palette": "Void-indigo background, living-teal and cyan on the Pandoran pair, dimmer grey on the Earth analogues, one scarce amber accent.",
+  "style": "Painterly naturalist comparison plate, hand-painted texture, clear silhouette read.",
+  "detail_level": "Crisp on the four silhouettes and their relative scale; the grid faint; background dissolving into haze.",
+  "composition": "Two side-by-side pairings on a shared baseline, the Pandoran form brighter in each, generous dark margins, 3:2.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette; Pandoran forms glow from within, Earth analogues rendered cooler and dimmer. Same dark glowing-specimen mood as the chapter cover.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/direhorse-and-banshee-up-close/fig-00-cover.png"]
+}

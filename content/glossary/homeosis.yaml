@@ -1,0 +1,12 @@
+id: homeosis
+label:
+  vi: Biến đổi đồng dạng
+  en: Homeosis
+definition:
+  vi: Sự biến đổi của một bộ phận cơ thể này thành hình dạng của một bộ phận khác vốn dĩ thuộc về nơi khác - ví dụ như một cái chân lại đâm chồi từ nơi đáng lẽ phải là sợi râu (anten). Nó xảy ra khi nhãn định vị mà gene Hox đóng mộc lên một vùng bị dán nhầm địa chỉ, khiến các tế bào ở đó hùng hục xây nên cấu trúc của một nơi khác. Những đột biến đồng dạng kinh điển ở ruồi giấm chính là bằng chứng thép cho thấy cơ thể được xây dựng theo kiểu "gửi địa chỉ", chứ không phải lắp ráp thủ công từng mảnh.
+  en: The transformation of one body part into the likeness of another that belongs elsewhere - a leg growing where an antenna should be, for instance. It happens when the positional label a Hox gene stamps on a region is misplaced, so the cells there build the structure of a different address. The famous homeotic mutations in fruit flies are the proof that bodies are addressed rather than hand-assembled.
+see_also:
+- hox-genes
+- homeobox
+category: concept
+cover_prompt: A painted study of a stylised insect head from which a perfectly formed leg grows in place of an antenna, eerie and precise, cool palette with one amber accent, no text, no labels.

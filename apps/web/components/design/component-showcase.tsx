@@ -2,25 +2,45 @@
 
 import { AnatomyPlate } from "@/components/content/anatomy-plate";
 import { AtmosphereComparison } from "@/components/content/atmosphere-comparison";
+import { BilateralLatticeTree } from "@/components/content/bilateral-lattice-tree";
+import { BreathingModeToggle } from "@/components/content/breathing-mode-toggle";
 import { Callout, ScientificNote, SideNote } from "@/components/content/callout";
+import { CharacterMatrixCladogram } from "@/components/content/character-matrix-cladogram";
 import { Chart } from "@/components/content/chart";
 import { CirculationBands } from "@/components/content/circulation-bands";
+import { ColdLightReaction } from "@/components/content/cold-light-reaction";
 import { Comparison } from "@/components/content/comparison";
 import { ConfidenceDial } from "@/components/content/confidence-dial";
 import { ConfidenceMeter } from "@/components/content/confidence-meter";
+import { ConvergenceToggle } from "@/components/content/convergence-toggle";
+import { CountercurrentExchange } from "@/components/content/countercurrent-exchange";
 import { DataComparison } from "@/components/content/data-comparison";
 import { DetectionMethodScope } from "@/components/content/detection-method-scope";
 import { DiagramFigure } from "@/components/content/diagram-figure";
 import { EclipseDayClock } from "@/components/content/eclipse-day-clock";
 import { Figure } from "@/components/content/figure";
 import { FigureGrid } from "@/components/content/figure-grid";
+import { FlightPowerCeiling } from "@/components/content/flight-power-ceiling";
+import { FroudeGaitDial } from "@/components/content/froude-gait-dial";
+import { GlowBiogeographyToggle } from "@/components/content/glow-biogeography-toggle";
+import { GlowOriginsTree } from "@/components/content/glow-origins-tree";
 import { HabitableZoneExplorer } from "@/components/content/habitable-zone-explorer";
 import { HalfLifeDecay } from "@/components/content/half-life-decay";
+import { HoxColinearityMap } from "@/components/content/hox-colinearity-map";
+import { IsochronPlot } from "@/components/content/isochron-plot";
+import { LimbFieldToggle } from "@/components/content/limb-field-toggle";
+import { LongBranchAttractionDemo } from "@/components/content/long-branch-attraction-demo";
+import { NichePartitionExplorer } from "@/components/content/niche-partition-explorer";
 import { OpenQuestions } from "@/components/content/open-questions";
+import { PhotophoreIntensity } from "@/components/content/photophore-intensity";
 import { Quote } from "@/components/content/quote";
+import { ReplayTheTape } from "@/components/content/replay-the-tape";
 import { ScrollSequence } from "@/components/content/scroll-sequence";
+import { SquareCubeScaler } from "@/components/content/square-cube-scaler";
 import { SuperconductorCooldown } from "@/components/content/superconductor-cooldown";
+import { TierLegend } from "@/components/content/tier-legend";
 import { Timeline } from "@/components/content/timeline";
+import { TimelineJourney } from "@/components/content/timeline-journey";
 import { TwentySecondsTimeline } from "@/components/content/twenty-seconds-timeline";
 import { WhatThisMeans } from "@/components/content/what-this-means";
 import { WhittakerBiomeExplorer } from "@/components/content/whittaker-biome-explorer";
@@ -59,7 +79,7 @@ function Block({
 }) {
   return (
     <div className="space-y-2">
-      <p className="font-sans text-[0.6rem] uppercase tracking-[0.2em] text-subtle">{label}</p>
+      <p className="font-sans text-xs uppercase tracking-[0.2em] text-subtle">{label}</p>
       {children}
     </div>
   );
@@ -140,7 +160,10 @@ export function ComponentShowcase() {
           locale="vi"
           items={[
             { src: POSTER, caption: "Tầng tán rừng" },
-            { src: POSTER, caption: "Bào tử trôi" },
+            {
+              src: "/images/chapters/where-is-pandora/fig-01-eclipse-overhead.webp",
+              caption: "Bào tử trôi",
+            },
           ]}
         />
       </Block>
@@ -197,50 +220,49 @@ export function ComponentShowcase() {
 
       <Block label="AtmosphereComparison (partial pressure)">
         <AtmosphereComparison
-          locale="vi"
           earth={{ label: "Trái Đất — mực biển", totalKpa: 101, o2Pct: 21, co2Pct: 0.04 }}
           pandora={{ label: "Pandora — bề mặt", totalKpa: 90, o2Pct: 23, co2Pct: 17 }}
         />
       </Block>
 
       <Block label="TwentySecondsTimeline (histotoxic hypoxia scrubber)">
-        <TwentySecondsTimeline locale="vi" />
+        <TwentySecondsTimeline />
       </Block>
 
       <Block label="CirculationBands (Hadley cell → biome bands)">
-        <CirculationBands locale="vi" />
+        <CirculationBands />
       </Block>
 
       <Block label="WhittakerBiomeExplorer (temperature × rainfall biomes)">
-        <WhittakerBiomeExplorer locale="vi" />
+        <WhittakerBiomeExplorer />
       </Block>
 
       <Block label="HalfLifeDecay (radioactive decay grid)">
-        <HalfLifeDecay locale="vi" />
+        <HalfLifeDecay />
       </Block>
 
       <Block label="SuperconductorCooldown (Tc transition + levitation)">
-        <SuperconductorCooldown locale="vi" />
+        <SuperconductorCooldown />
       </Block>
 
       <Block label="ConfidenceDial (IPCC calibrated likelihood)">
-        <ConfidenceDial locale="vi" />
+        <ConfidenceDial />
       </Block>
 
       <Block label="HabitableZoneExplorer (interactive habitable zone)">
-        <HabitableZoneExplorer locale="vi" />
+        <HabitableZoneExplorer />
       </Block>
 
       <Block label="DetectionMethodScope (exoplanet detection tabs)">
-        <DetectionMethodScope locale="vi" />
+        <DetectionMethodScope />
       </Block>
 
       <Block label="EclipseDayClock (tidal-lock sky clock)">
-        <EclipseDayClock locale="vi" />
+        <EclipseDayClock />
       </Block>
 
       <Block label="ConfidenceMeter">
-        <ConfidenceMeter classification={classification} locale="vi" />
+        <ConfidenceMeter classification={classification} />
       </Block>
 
       <Block label="Comparison">
@@ -321,6 +343,139 @@ export function ComponentShowcase() {
             },
             {
               question: "Từ trường Pandora đủ mạnh để nâng cả ngọn núi không?",
+            },
+          ]}
+        />
+      </Block>
+
+      <Block label="SquareCubeScaler (area ∝ k², volume ∝ k³)">
+        <SquareCubeScaler />
+      </Block>
+
+      <Block label="FlightPowerCeiling (power supply vs demand)">
+        <FlightPowerCeiling />
+      </Block>
+
+      <Block label="FroudeGaitDial (gait regime gauge)">
+        <FroudeGaitDial />
+      </Block>
+
+      <Block label="BreathingModeToggle (tidal vs unidirectional)">
+        <BreathingModeToggle />
+      </Block>
+
+      <Block label="CountercurrentExchange (opposed-flow heat/gas)">
+        <CountercurrentExchange />
+      </Block>
+
+      <Block label="PhotophoreIntensity (arousal → glow)">
+        <PhotophoreIntensity />
+      </Block>
+
+      <Block label="ColdLightReaction (bioluminescence steps)">
+        <ColdLightReaction />
+      </Block>
+
+      <Block label="GlowOriginsTree (lineage origins)">
+        <GlowOriginsTree />
+      </Block>
+
+      <Block label="GlowBiogeographyToggle (glow distribution)">
+        <GlowBiogeographyToggle />
+      </Block>
+
+      <Block label="BilateralLatticeTree (hexapod radiation)">
+        <BilateralLatticeTree />
+      </Block>
+
+      <Block label="CharacterMatrixCladogram (parsimony vs phenetic)">
+        <CharacterMatrixCladogram />
+      </Block>
+
+      <Block label="LongBranchAttractionDemo (phylogenetic artifact)">
+        <LongBranchAttractionDemo />
+      </Block>
+
+      <Block label="HoxColinearityMap (gene colinearity)">
+        <HoxColinearityMap />
+      </Block>
+
+      <Block label="LimbFieldToggle (skeleton vs innervation)">
+        <LimbFieldToggle />
+      </Block>
+
+      <Block label="ConvergenceToggle (role vs tells)">
+        <ConvergenceToggle />
+      </Block>
+
+      <Block label="ReplayTheTape (contingent convergence)">
+        <ReplayTheTape />
+      </Block>
+
+      <Block label="NichePartitionExplorer (canopy strata)">
+        <NichePartitionExplorer />
+      </Block>
+
+      <Block label="IsochronPlot (radiometric dating sweep)">
+        <IsochronPlot />
+      </Block>
+
+      <Block label="TierLegend (four epistemic tiers)">
+        <TierLegend
+          title="Bốn tầng nhận thức"
+          tiers={[
+            {
+              kind: "canon",
+              gloss: "Điều phim/canon nêu rõ.",
+              realWorld: "Văn bản gốc",
+              example: "Pandora là mặt trăng của Polyphemus.",
+            },
+            {
+              kind: "inference",
+              gloss: "Suy ra hợp lý từ canon.",
+              realWorld: "Suy luận khoa học",
+              example: "Khí quyển dày hơn Trái Đất.",
+            },
+            {
+              kind: "speculation",
+              gloss: "Phỏng đoán có cơ sở, ngoài canon.",
+              realWorld: "Giả thuyết",
+              example: "Cơ chế siêu dẫn của unobtanium.",
+            },
+            {
+              kind: "real_science",
+              gloss: "Khoa học Trái Đất có thật.",
+              realWorld: "Tài liệu khoa học",
+              example: "Hiệu ứng Meissner trong vật siêu dẫn.",
+            },
+          ]}
+        />
+      </Block>
+
+      <Block label="TimelineJourney (cinematic vertical journey)">
+        <TimelineJourney
+          locale="vi"
+          events={[
+            {
+              id: "1",
+              date: "Phần I",
+              title: "Thế giới Pandora",
+              description: "Khung cảnh và vật lý nền của mặt trăng.",
+              kind: "canon",
+            },
+            {
+              id: "2",
+              date: "Phần II",
+              title: "Sự sống phát quang",
+              description: "Hệ sinh thái rực sáng về đêm.",
+              kind: "inference",
+            },
+            {
+              id: "3",
+              date: "Phần III",
+              title: "Núi bay & siêu dẫn",
+              description: "Cơ chế nâng từ tính của unobtanium.",
+              kind: "real_science",
             },
           ]}
         />

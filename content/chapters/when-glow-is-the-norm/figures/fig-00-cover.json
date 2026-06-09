@@ -1,0 +1,20 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "when-glow-is-the-norm",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate on the landing book-map: a single image that says 'on this world, glow is the baseline' — a Pandoran night forest where the living light, not the sky, is the source of all illumination.",
+  "subject": "A deep Pandoran rainforest at night seen from a low clearing, every layer of it alive with its own light: a carpet of cyan-green glowing moss across the ground, tall ferns holding steady blue, a fallen trunk crusted with violet bioluminescent fungus, and drifting luminous spores hanging in the air like slow sparks.",
+  "scene": "The forest understorey opening into a small clearing, towering trunks receding into glowing haze, no sky visible — the canopy closes overhead so all light comes from the organisms themselves.",
+  "camera": "A low, slightly upward three-quarter view across the clearing floor into the depth of the trees, wide and immersive.",
+  "light": "Entirely bioluminescent key light — the brightest sources are the moss, ferns, fungus and spores; deep indigo-teal ambient shadow between them, volumetric haze catching the glow in god-ray shafts.",
+  "palette": "Void-indigo base, Pandora cyan and living teal dominant in the glow, one scarce magenta spore-cluster and a faint amber fungal coal as warm accents.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence.",
+  "detail_level": "Crisp on the foreground moss, fern fronds and spores; trunks and far forest dissolving into luminous haze.",
+  "composition": "Layered depth from a glowing foreground floor back into haze, generous dark negative space in the mid-canopy, the eye led inward along the lit ground.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "human figures", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with bioluminescent key from within the scene; the establishing night-forest mood that anchors the whole chapter.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

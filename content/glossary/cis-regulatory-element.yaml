@@ -1,0 +1,13 @@
+id: cis-regulatory-element
+label:
+  vi: Yếu tố điều hòa cis
+  en: Cis-regulatory element
+definition:
+  vi: 'Những dải DNA không mã hóa nằm vây quanh một gene, hoạt động hệt như những chiếc công tắc, quyết định khi nào, ở đâu, và sức bật của gene đó mạnh đến nhường nào. Đây chính là nơi tiến hóa làm nên hầu hết những công việc thiết thực của nó: thay vì liều lĩnh thiết kế lại một gene tổng vô giá (việc thường làm sụp đổ mọi thứ cùng lúc), tiến hóa chỉ đơn giản là tinh chỉnh lại một chiếc công tắc - điểm xuyết một đốm màu, dập tắt một cái chân trên một đốt thân, vặn to nhỏ kích cỡ một cơ quan - mà vẫn giữ cho thứ công cụ cốt lõi nguyên vẹn không tì vết.'
+  en: 'Stretches of non-coding DNA around a gene that act as switches, deciding when, where, and how strongly that gene turns on. This is where evolution does most of its real work: rather than risk redesigning a precious master gene (which tends to break everything at once), evolution simply retunes a switch - adding a spot of colour, suppressing a limb on one body segment, dialling an organ''s size up or down - leaving the tool itself untouched.'
+see_also:
+- genetic-toolkit
+- hox-genes
+- canalization
+category: concept
+cover_prompt: A painted glowing gene strand surrounded by small luminous switch-nodes, one switch dimmed dark while the others glow, cool teal and indigo with scarce amber, no text, no labels.

@@ -1,0 +1,14 @@
+id: unidirectional-airflow
+label:
+  vi: Luồng khí một chiều
+  en: Unidirectional airflow
+definition:
+  vi: Kiểu hô hấp trong đó không khí chảy theo một hướng duy nhất qua phổi thay vì ra vào cùng một cửa. Bề mặt trao đổi luôn được tắm trong không khí tươi, độ chênh áp suất được giữ mở liên tục - đó là lý do một con ngỗng đầu sọc có thể bay qua đỉnh Himalaya trong bầu khí quyển loãng đến mức quật ngã một con thú chạy bộ. Người ta từng tưởng đây là phát minh riêng của loài chim, nhưng nó còn xuất hiện ở cá sấu, kỳ đà và kỳ nhông biển - một lời giải cổ xưa mà tiến hóa tìm đi tìm lại. Gần như chắc chắn đây là cách những kẻ bay lượn của Pandora hít thở.
+  en: A breathing pattern in which air flows one direction through the lung instead of in and out the same door. The exchange surface is always bathed in fresh air, the pressure slope held permanently open - which is why a bar-headed goose can cross the Himalaya through air thin enough to drop a running mammal. Once thought a bird's invention, it also turns up in alligators, monitor lizards, and iguanas - an ancient answer evolution keeps re-deriving. It is almost certainly how Pandora's flyers breathe.
+see_also:
+- tidal-ventilation
+- cross-current-exchange
+- convergent-evolution
+- operculum
+category: concept
+cover_prompt: A painted schematic of air streaming one direction through a set of parallel glowing tubes, single-direction cyan arrows entering one end and leaving the other, deep indigo ground, painterly, no text, no labels, no numbers.

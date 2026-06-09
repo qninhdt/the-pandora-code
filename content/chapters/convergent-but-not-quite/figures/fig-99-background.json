@@ -1,0 +1,20 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "convergent-but-not-quite",
+  "role": "hero",
+  "narrative_purpose": "The dim full-bleed mood layer the chapter's text floats over: a vast forest of life seen from far above, evoking a whole biosphere of niches without any single subject competing with the prose.",
+  "subject": "An ultra-wide panoramic vista of an endless bioluminescent forest seen from a very high vantage, ridge after ridge of glowing canopy dissolving into deep atmospheric haze toward a faint horizon. No single creature or focal object; only the immense textured sweep of living land.",
+  "scene": "Night over a continental forest, layered banks of haze separating distance into receding planes, faint drifting motes of light.",
+  "camera": "Extreme high-altitude wide panorama, looking out and slightly down across the canopy to a distant horizon.",
+  "light": "Very low contrast and dark overall; a dim even bioluminescent glow rising from the forest, no bright hotspot anywhere.",
+  "palette": "Void indigo and deep teal-indigo dominant, faint cyan and living-teal glow in the canopy, no warm accent.",
+  "style": "Painterly atmospheric mood plate, detail deliberately dissolving into haze.",
+  "detail_level": "Low and soft throughout so overlaid long-form text stays readable; no crisp focal detail.",
+  "composition": "Horizontal banding of receding hazy ridges, dark sky above, calm and immersive with no focal subject.",
+  "exclude": ["text", "letters", "numbers", "labels", "UI", "watermark", "logos", "bright focal subject", "creatures", "human figures"],
+  "consistency_notes": "Background layer behind the chapter, kept dim and low-contrast under a dark scrim. Distinct from the crisp fig-00 cover.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no UI chrome, no bright focal point, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

@@ -1,47 +1,21 @@
 "use client";
 
+import { GlowDefs, glowUrl } from "@/components/content/viz/glow-defs";
 import { SegmentedToggle } from "@/components/content/viz/segmented-toggle";
 import { VizFigure } from "@/components/content/viz/viz-figure";
+import { VizReadout } from "@/components/content/viz/viz-readout";
+import { VizText } from "@/components/content/viz/viz-svg-text";
 import { useReducedMotionSafe } from "@/components/motion/use-reduced-motion-safe";
 import { motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
+import { useEffect, useId, useRef, useState } from "react";
 
 interface CountercurrentExchangeProps {
-  locale?: "vi" | "en";
   caption?: string;
   className?: string;
 }
 
 type Mode = "concurrent" | "countercurrent";
-
-const STRINGS = {
-  vi: {
-    title: "Phiến mang: đổi chiều dòng máu",
-    water: "Nước",
-    blood: "Máu",
-    concurrent: "Cùng chiều",
-    countercurrent: "Ngược chiều",
-    extraction: "Oxy lấy được",
-    slope: "Độ chênh oxy dọc phiến mang",
-    concurrentNote:
-      "Cùng chiều: nước và máu lao về một mức cân bằng tầm tầm rồi dừng — độ chênh tắt ở giữa chặng, oxy còn lại trôi tuột đi.",
-    countercurrentNote:
-      "Ngược chiều: máu luôn gặp dòng nước tươi hơn chính nó, nên độ chênh được giữ suốt chiều dài — oxy được lấy tới tận cùng.",
-  },
-  en: {
-    title: "Gill lamella: flip the blood",
-    water: "Water",
-    blood: "Blood",
-    concurrent: "Same way",
-    countercurrent: "Opposed",
-    extraction: "Oxygen extracted",
-    slope: "Oxygen gradient along the frond",
-    concurrentNote:
-      "Same direction: water and blood rush to a shared, middling balance and stop — the slope dies at the halfway mark and the leftover oxygen drifts past untaken.",
-    countercurrentNote:
-      "Opposed: the blood always meets water fresher than itself, so the slope holds the whole length of the frond — oxygen is taken right to the end.",
-  },
-} as const;
 
 const W = 380;
 const X0 = 36;
@@ -59,6 +33,34 @@ function slopeAt(p: number, counter: boolean): number {
   return Math.max(0, 1 - 2 * p); // open at inlet, dead by the middle
 }
 
+// A glowing chevron marking the outflow end of a lane — points in the travel
+// direction (dir = +1 right, -1 left), so the opposing flow reads instantly.
+function FlowArrow({
+  x,
+  y,
+  dir,
+  color,
+  bloom,
+}: {
+  x: number;
+  y: number;
+  dir: 1 | -1;
+  color: string;
+  bloom: string;
+}) {
+  return (
+    <path
+      d={`M ${x - 7 * dir} ${y - 6} L ${x + 3 * dir} ${y} L ${x - 7 * dir} ${y + 6}`}
+      fill="none"
+      stroke={color}
+      strokeWidth={2.5}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      filter={bloom}
+    />
+  );
+}
+
 function Particle({
   y,
   fromX,
@@ -66,6 +68,7 @@ function Particle({
   color,
   delay,
   reduced,
+  bloom,
 }: {
   y: number;
   fromX: number;
@@ -73,24 +76,17 @@ function Particle({
   color: string;
   delay: number;
   reduced: boolean;
+  bloom: string;
 }) {
   if (reduced) {
-    return (
-      <circle
-        cx={(fromX + toX) / 2}
-        cy={y}
-        r={3.5}
-        fill={color}
-        style={{ filter: `drop-shadow(0 0 5px ${color})` }}
-      />
-    );
+    return <circle cx={(fromX + toX) / 2} cy={y} r={3.5} fill={color} filter={bloom} />;
   }
   return (
     <motion.circle
       cy={y}
       r={3.5}
       fill={color}
-      style={{ filter: `drop-shadow(0 0 5px ${color})` }}
+      filter={bloom}
       initial={{ cx: fromX, opacity: 0 }}
       animate={{ cx: [fromX, toX], opacity: [0, 1, 1, 0] }}
       transition={{ duration: 3.4, delay, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
@@ -98,13 +94,10 @@ function Particle({
   );
 }
 
-export function CountercurrentExchange({
-  locale = "vi",
-  caption,
-  className,
-}: CountercurrentExchangeProps) {
+export function CountercurrentExchange({ caption, className }: CountercurrentExchangeProps) {
+  const t = useTranslations("viz.countercurrent");
   const reduced = useReducedMotionSafe();
-  const t = STRINGS[locale];
+  const uid = useId();
   const [mode, setMode] = useState<Mode>("countercurrent");
   const counter = mode === "countercurrent";
   const target = counter ? 88 : 50;
@@ -130,7 +123,6 @@ export function CountercurrentExchange({
     return () => {
       if (raf.current) cancelAnimationFrame(raf.current);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [target, reduced]);
 
   const bloodFrom = counter ? X1 : X0;
@@ -138,17 +130,19 @@ export function CountercurrentExchange({
 
   return (
     <VizFigure
-      title={t.title}
+      title={t("title")}
       caption={caption}
+      tone="cyan"
       className={className}
+      hint={counter ? t("countercurrentNote") : t("concurrentNote")}
       controls={
         <SegmentedToggle<Mode>
-          ariaLabel={t.title}
+          ariaLabel={t("title")}
           value={mode}
           onChange={setMode}
           options={[
-            { value: "concurrent", label: t.concurrent, tone: "var(--muted)" },
-            { value: "countercurrent", label: t.countercurrent, tone: "var(--cyan)" },
+            { value: "concurrent", label: t("concurrent"), tone: "var(--muted)" },
+            { value: "countercurrent", label: t("countercurrent"), tone: "var(--cyan)" },
           ]}
         />
       }
@@ -158,8 +152,9 @@ export function CountercurrentExchange({
           viewBox={`0 0 ${W} 210`}
           className="w-full sm:w-3/5"
           role="img"
-          aria-label={`${t.extraction}: ${target}%`}
+          aria-label={`${t("extraction")}: ${target}%`}
         >
+          <GlowDefs idBase={uid} tones={["cyan", "magenta", "teal"]} />
           {/* lane rails */}
           <line
             x1={X0}
@@ -181,12 +176,21 @@ export function CountercurrentExchange({
             strokeLinecap="round"
             strokeOpacity={0.18}
           />
-          <text x={X0} y={WATER_Y - 12} fill="var(--subtle)" fontSize={11} fontFamily="sans-serif">
-            {t.water} →
-          </text>
-          <text x={X0} y={BLOOD_Y + 22} fill="var(--subtle)" fontSize={11} fontFamily="sans-serif">
-            {t.blood} {counter ? "←" : "→"}
-          </text>
+          {/* glowing flow-direction terminals: water always → , blood reverses with mode */}
+          <FlowArrow x={X1} y={WATER_Y} dir={1} color="var(--cyan)" bloom={glowUrl(uid, "bloom")} />
+          <FlowArrow
+            x={bloodTo}
+            y={BLOOD_Y}
+            dir={counter ? -1 : 1}
+            color="var(--magenta)"
+            bloom={glowUrl(uid, "bloom")}
+          />
+          <VizText x={X0} y={WATER_Y - 12} size="small" tone="subtle">
+            {t("water")} →
+          </VizText>
+          <VizText x={X0} y={BLOOD_Y + 22} size="small" tone="subtle">
+            {t("blood")} {counter ? "←" : "→"}
+          </VizText>
 
           {[0, 1, 2, 3, 4, 5].map((i) => (
             <Particle
@@ -197,6 +201,7 @@ export function CountercurrentExchange({
               color="var(--cyan)"
               delay={i * 0.56}
               reduced={reduced}
+              bloom={glowUrl(uid, "bloom")}
             />
           ))}
           {[0, 1, 2, 3, 4, 5].map((i) => (
@@ -208,19 +213,14 @@ export function CountercurrentExchange({
               color="var(--magenta)"
               delay={i * 0.56}
               reduced={reduced}
+              bloom={glowUrl(uid, "bloom")}
             />
           ))}
 
           {/* slope bars: the local oxygen gradient along the frond */}
-          <text
-            x={X0}
-            y={SLOPE_BASE + 18}
-            fill="var(--subtle)"
-            fontSize={10}
-            fontFamily="sans-serif"
-          >
-            {t.slope}
-          </text>
+          <VizText x={X0} y={SLOPE_BASE + 18} size="micro" tone="subtle">
+            {t("slope")}
+          </VizText>
           {Array.from({ length: N_BARS }, (_, i) => {
             const p = i / (N_BARS - 1);
             const x = X0 + p * (X1 - X0);
@@ -236,31 +236,34 @@ export function CountercurrentExchange({
                 animate={{ y: SLOPE_BASE - h, height: h }}
                 transition={reduced ? { duration: 0 } : { duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
                 fill={alive ? "var(--teal)" : "var(--border-strong)"}
-                style={{ filter: alive ? "drop-shadow(0 0 4px var(--teal))" : "none" }}
+                filter={alive ? glowUrl(uid, "bloom") : undefined}
               />
             );
           })}
         </svg>
 
-        <div className="flex flex-col justify-center gap-2 sm:w-2/5">
-          <div className="rounded-lg border border-border bg-void/30 px-3 py-2">
-            <p className="font-sans text-[0.6rem] uppercase tracking-wider text-subtle">
-              {t.extraction}
-            </p>
-            <p className="font-display text-3xl font-700 text-teal">{shown}%</p>
-            <div className="mt-1.5 h-2 w-full overflow-hidden rounded-full bg-void">
-              <motion.div
-                className="h-full rounded-full bg-teal"
-                initial={false}
-                animate={{ width: `${target}%` }}
-                transition={reduced ? { duration: 0 } : { duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                style={{ boxShadow: "0 0 10px var(--teal)" }}
-              />
-            </div>
-          </div>
-          <p className="font-sans text-xs leading-relaxed text-subtle">
-            {counter ? t.countercurrentNote : t.concurrentNote}
-          </p>
+        <div className="flex flex-col justify-center gap-3 sm:w-2/5">
+          <VizReadout
+            label={t("extraction")}
+            tone="var(--teal)"
+            tinted
+            value={
+              <div className="flex flex-col items-end gap-1.5">
+                <span className="font-display text-3xl font-700 text-teal">{shown}%</span>
+                <div className="h-2 w-full overflow-hidden rounded-full bg-void">
+                  <motion.div
+                    className="h-full rounded-full bg-teal"
+                    initial={false}
+                    animate={{ width: `${target}%` }}
+                    transition={
+                      reduced ? { duration: 0 } : { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
+                    }
+                    style={{ boxShadow: "var(--glow-teal)" }}
+                  />
+                </div>
+              </div>
+            }
+          />
         </div>
       </div>
     </VizFigure>

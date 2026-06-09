@@ -1,0 +1,19 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "six-limbs-and-the-bilateral-lattice",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate for the landing book-map: the single idea of the chapter in one image - one ancestral six-limbed body radiating into many Pandoran shapes, with one quiet four-limbed exception.",
+  "subject": "A central luminous six-limbed creature silhouette, elegant and anatomically clear, from which faint ghostly variants radiate outward in a gentle fan - a winged form, a swimming finned form, a running form - all sharing the same glowing skeletal frame; off to one side, smaller and set slightly apart, a single upright four-limbed humanoid silhouette stands quietly, its missing middle limbs implied by a faint dimmed gap.",
+  "scene": "A dark naturalist's specimen space, the forms floating as if pinned in glowing display, deep haze beyond.",
+  "camera": "A clean front-on display view, the central creature largest, the radiating variants smaller and softer toward the edges.",
+  "light": "Bioluminescent key glowing from within the skeletal frames, cyan and teal; the lone humanoid lit a touch warmer and dimmer to set it apart; deep indigo shadow throughout.",
+  "palette": "Void-indigo ground, cyan and living-teal glow in the frames, one scarce amber accent on the humanoid exception, restrained.",
+  "style": "Painterly naturalist specimen plate, hand-painted texture, confident focal hierarchy.",
+  "detail_level": "Crisp on the central creature's six-limbed frame; the radiating variants softer; the lone humanoid clear but quieter; edges dissolving into haze.",
+  "composition": "Radial fan from a strong central figure, generous dark negative space, the four-limbed exception placed on a lower third line apart from the fan.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette, bioluminescent key from within the specimens. Same dark glowing-specimen mood as the established chapter covers.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

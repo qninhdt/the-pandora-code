@@ -1,0 +1,19 @@
+{
+  "id": "fig-03-hox-address",
+  "chapter_slug": "six-limbs-and-the-bilateral-lattice",
+  "role": "diagram",
+  "narrative_purpose": "Makes the abstract Hox idea visible: a row of genes whose order matches the head-to-tail order of the body regions they label, so the reader feels the colinearity that is the chapter's master key.",
+  "subject": "A clean conceptual plate: along the top, a horizontal strand bearing a row of distinct glowing coloured beads in sequence; below it, a stylised soft-bodied embryo arranged head-to-tail, divided into matching coloured bands - each band glowing the same colour as the bead directly above it, so colour ties each gene to its body region. The head end and tail end of the embryo are clearly distinguishable.",
+  "scene": "An abstract dark diagram space, the strand and the embryo floating with faint connective glow between matching colours.",
+  "camera": "A flat, head-on schematic view, strand above and embryo below, both fully in frame.",
+  "light": "Even soft glow from the coloured beads and bands themselves, no external lamp; deep indigo ground.",
+  "palette": "Void-indigo background; an ordered spectrum of cool-leaning glows (teal, cyan, then warming slightly toward amber at the tail) for the beads and matching bands.",
+  "style": "Painterly conceptual diagram, hand-painted glow, restrained and elegant - not a vector infographic.",
+  "detail_level": "Crisp on the bead row and the matching body bands and their colour pairing; everything else minimal dark space.",
+  "composition": "Two stacked horizontal registers - gene strand above, banded embryo below - aligned so matching colours sit in vertical correspondence, generous dark margins.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "infographic chrome", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with bioluminescent self-glow. Reads as a hand-painted plate, not a flat schematic. Colour-coded correspondence is the whole point but carries NO text.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no infographic chrome, no photographic or 3D-render look, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

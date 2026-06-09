@@ -1,0 +1,19 @@
+{
+  "id": "fig-03-phenetic-trap",
+  "chapter_slug": "pandoran-tree-of-life",
+  "role": "comparison",
+  "narrative_purpose": "Shows the phenetic trap in one image: grouped by overall look, the Na'vi falls beside a human; grouped by shared *derived* traits, the Na'vi nests deep among Pandoran hexapods. The reader sees why surface resemblance misleads and cladistic signal corrects it.",
+  "subject": "A two-sided comparison plate. On the left, under a faint dim grouping arc, an upright human figure and an upright Na'vi figure stand side by side, their matching tall bipedal outlines glowing a misleading amber - a false pairing by looks alone. On the right, under a strong bright grouping arc, the same Na'vi figure stands instead among a cluster of Pandoran forms - a split-armed prolemuris, a six-limbed direhorse - the bond between them glowing true cyan-teal at a shared neck-braid feature, the real family.",
+  "scene": "A dark specimen space split into two soft fields, the false grouping on the left in cool amber warning, the true grouping on the right in living teal.",
+  "camera": "Front-on display view, the two groupings balanced left and right, the Na'vi figure echoed in both halves so the eye tracks its true home.",
+  "light": "Bioluminescent self-glow: misleading amber on the human-Na'vi look-alike pairing, true cyan-teal on the Na'vi-prolemuris bond; deep indigo shadow throughout.",
+  "palette": "Void-indigo ground; scarce amber for the false phenetic grouping, living-teal and cyan for the true cladistic one.",
+  "style": "Painterly naturalist specimen plate, hand-painted texture, clear focal hierarchy.",
+  "detail_level": "Crisp on the Na'vi figure in both halves and on the two grouping bonds; the surrounding forms a touch softer; edges into haze.",
+  "composition": "Balanced left-right diptych, the repeated Na'vi figure as the hinge, generous dark space above each grouping for later callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette; amber strictly for the misleading look-alike grouping, teal for true kinship. Na'vi and prolemuris forms consistent with the chapter's other plates.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

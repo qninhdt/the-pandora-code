@@ -1,0 +1,19 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "pandoran-tree-of-life",
+  "role": "hero",
+  "narrative_purpose": "The full-bleed atmospheric mood layer the chapter's text floats over: a vast dim branching-canopy vista that evokes the tree of life at planetary scale without any focal subject, so long-form text stays readable on top.",
+  "subject": "An immense, dim Pandoran forest canopy seen from very high above, the branching limbs and root-like waterways spreading into a faint tree-like fractal pattern across the whole land, everything dissolving into deep atmospheric haze toward the edges; no single creature or focal point, only the suggestion of endless branching structure under a dark sky.",
+  "scene": "A planetary-scale vista at deep dusk, low contrast, detail swallowed by distance and haze.",
+  "camera": "An ultra-wide, very high vantage panoramic view, looking down and out across an immense branching landscape, no foreground subject.",
+  "light": "Dim, diffuse bioluminescent ambience from far below, deep indigo and teal, very low contrast, no bright focal source; mood not subject.",
+  "palette": "Predominantly dark void-indigo and deep teal-indigo, the faintest cyan glimmer in the far branching pattern, kept dark for overlaid text.",
+  "style": "Painterly atmospheric matte vista, hand-painted, soft and immersive - a mood backdrop, not a figure to study.",
+  "detail_level": "Deliberately low and dissolving; detail only hinted, most of the frame dim haze so text reads cleanly over it.",
+  "composition": "Ultra-wide horizon-less expanse, branching structure spread across the lower and middle frame, vast dark sky above, everything low-contrast with no bright focal subject.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "bright focal subject", "sharp foreground creature", "arrows", "Avatar branding"],
+  "consistency_notes": "Same dark, hazy, low-contrast Pandora-establishing mood as the other chapter backgrounds; very dark so overlaid long-form text stays readable. A branching motif echoes the chapter's tree-of-life theme without becoming a figure.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no labels, no bright focal subject, no sharp foreground, no arrows, no photographic or 3D-render look, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

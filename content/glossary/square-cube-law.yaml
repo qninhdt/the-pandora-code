@@ -1,0 +1,13 @@
+id: square-cube-law
+label:
+  vi: Định luật bình phương - lập phương
+  en: The square-cube law
+definition:
+  vi: 'Quy luật hình học do Galileo nêu ra năm 1638: khi một vật thể phóng to mà giữ nguyên tỉ lệ, diện tích bề mặt của nó tăng theo bình phương kích thước dài, còn thể tích và khối lượng tăng theo lập phương. Hệ quả với cơ thể sống rất sâu sắc - trọng lượng (theo thể tích) lớn nhanh hơn nhiều so với sức chịu của xương (theo tiết diện), nên ứng suất lên xương tăng tỉ lệ thuận với chiều dài cơ thể. Tăng gấp đôi kích thước thì khối lượng tăng gấp tám nhưng tiết diện xương chỉ tăng gấp bốn: bộ xương phải dày lên hoặc làm từ vật liệu cứng hơn. Đây là rào cản vật lý cốt lõi quy định một cơ thể có thể lớn và nhanh tới đâu.'
+  en: 'A geometric law stated by Galileo in 1638: as an object scales up while keeping its proportions, its surface area grows with the square of its linear size, while its volume and mass grow with the cube. The consequence for living bodies is profound - weight (which follows volume) outruns bone strength (which follows cross-section), so skeletal stress rises in direct proportion to body length. Double an animal''s size and its mass grows eightfold while bone cross-section grows only fourfold: the skeleton must thicken or be built from stronger material. This is the core physical limit on how large and how fast a body can be.'
+see_also:
+- allometry
+- isometry
+- biomechanics
+category: concept
+cover_prompt: A painted study of a small cube beside a cube twice its linear size, the larger one glowing more intensely to suggest disproportionate growth in mass, cool teal and amber on deep indigo, hand-painted texture, no text, no numbers, no labels.

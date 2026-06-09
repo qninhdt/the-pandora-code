@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-partitioning",
+  "chapter_slug": "convergent-but-not-quite",
+  "role": "diagram",
+  "narrative_purpose": "Shows niche partitioning made concrete: three Pandoran herbivores feed at three separated heights in one forest, so coexistence-as-divided-resource is visible at a glance.",
+  "subject": "A vertical cutaway of a Pandoran forest from ground to high canopy, with three different six-limbed herbivores each feeding in its own clearly separate horizontal band. LOW near the ground: a small slender browser cropping understory shoots. MID-HEIGHT: a taller herd animal feeding on mid-level foliage. HIGH near the canopy: a massive crested grazer reaching up into the high leaves. Each animal sits in its own distinct stratum with clear vertical separation between them.",
+  "scene": "A glowing bioluminescent forest interior at night, layered foliage at distinct heights, soft haze between layers.",
+  "camera": "Side-on cutaway view of the forest column, ground at the bottom, canopy at the top.",
+  "light": "Bioluminescent foliage glowing at each level, rim-lighting each animal; deep indigo shadow between strata.",
+  "palette": "Void indigo and ocean teal, living-teal foliage glow at each height, a scarce magenta bloom on one high flower, warm kept minimal.",
+  "style": "Hand-painted naturalist cutaway plate, painterly, reading as a diagram by its layered composition.",
+  "detail_level": "High on each animal and its feeding level; soft haze separating the bands.",
+  "composition": "Three stacked horizontal feeding bands with clear vertical gaps, each animal in its own band, dark side margins for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "UI", "watermark", "logos", "human figures"],
+  "consistency_notes": "Pandoran six-limbed herbivores consistent with the moon's body plan; the teaching point is vertical separation, so keep the bands distinct.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

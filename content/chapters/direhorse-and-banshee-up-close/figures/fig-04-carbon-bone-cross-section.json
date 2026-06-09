@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-carbon-bone-cross-section",
+  "chapter_slug": "direhorse-and-banshee-up-close",
+  "role": "diagram",
+  "narrative_purpose": "Makes the material trick visible: a cutaway of a Pandoran limb bone showing the lattice of dark carbon fibre threaded through pale bone, lighter and stronger than Earth bone - the single innovation that lets the pa'li keep slender legs and the ikran fly hollow.",
+  "subject": "A clean cross-section cutaway of a long limb bone, sliced to reveal the interior: a thin outer wall of pale bone, hollow at the core, with a fine three-dimensional lattice of dark carbon-like fibres woven through the wall like rebar in concrete. The wall is conspicuously thinner than a solid mammal bone would be, the holey lightweight structure clearly readable.",
+  "scene": "An abstract dark specimen space, the bone section floating and lit as if for study, deep haze beyond.",
+  "camera": "A near three-quarter view into the cut face so both the hollow core and the fibre lattice in the wall are visible, the section sharp.",
+  "light": "Cool study light raking across the cut face plus a faint bioluminescent glow from within the porous bone; deep indigo shadow.",
+  "palette": "Void-indigo ground, pale bone-grey and teal on the section, darker threads for the carbon fibre, faint cyan glow in the pores, one scarce amber pinpoint.",
+  "style": "Painterly naturalist specimen plate, hand-painted texture, museum-cutaway clarity.",
+  "detail_level": "Crisp on the cut face - the thin wall, the hollow core, the woven fibre lattice; background dissolving into haze.",
+  "composition": "A single bone section set slightly off-centre, the cut face turned to the viewer, generous dark negative space, 16:9.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with bioluminescent key from within the bone. Same dark glowing-specimen mood as the chapter cover and the pa'li plate.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/direhorse-and-banshee-up-close/fig-00-cover.png"]
+}

@@ -1,0 +1,13 @@
+id: canalization
+label:
+  vi: Sự định hướng phát triển
+  en: Canalization
+definition:
+  vi: 'Khuynh hướng của một tiến trình phát triển là phải tạo ra bằng được cùng một kết quả ổn định, có sức bật lùi chống lại cả những nhiễu loạn môi trường lẫn những sai biệt di truyền nhỏ nhặt - cứ như thể sự phát triển đang cuồn cuộn chảy theo một rãnh xẻ đã được định sẵn. Đó là một trong những lý do vì sao các sơ đồ cơ thể lại bám rễ gần như không suy suyển suốt hàng trăm triệu năm: phôi thai lúc non yếu được gắn kết chặt chẽ đến mức một thay đổi nền tảng sẽ kéo theo cả một chuỗi sụp đổ, do đó sự chọn lọc sẽ không thương tiếc loại bỏ những dị biệt quá trớn.'
+  en: 'The tendency of a developmental process to reliably produce the same stable outcome, buffered against both environmental disturbance and small genetic variation - as if development flows down a pre-cut channel. It is one reason body plans stay nearly unchanged for hundreds of millions of years: the early embryo is so tightly integrated that a fundamental change cascades into collapse, so selection strongly removes large deviations.'
+see_also:
+- pleiotropy
+- body-plan
+- cis-regulatory-element
+category: concept
+cover_prompt: A painted glowing channel carved into dark terrain with a stream of light running surely down its centre, smaller side-trickles fading away, cool teal and indigo, no text, no labels.

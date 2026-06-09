@@ -1,0 +1,13 @@
+id: ficks-law
+label:
+  vi: Định luật khuếch tán Fick
+  en: Fick's law of diffusion
+definition:
+  vi: "Quy luật vật lý chi phối mọi cơ quan hô hấp từng tồn tại: một chất khí băng qua một màng sống nhanh hay chậm phụ thuộc vào ba thứ - diện tích bề mặt trao đổi, độ chênh áp suất riêng phần giữa hai bên, và độ mỏng của màng. Bề mặt càng rộng, chênh lệch càng dốc, vách càng mỏng thì khí đi càng nhanh. Đây không phải định luật sinh học mà là định luật vật lý, đúng trên Pandora y như trong phòng thí nghiệm. Sự sống không thể trốn tránh nó, chỉ có thể tuân theo một cách khôn ngoan - và đó là lý do mọi lá phổi, mọi mang cá đều là những cấu trúc gấp nếp khổng lồ với vách mỏng đến mức gần như chạm vào nhau."
+  en: "The physical rule behind every respiratory organ that ever existed: how fast a gas crosses a living membrane depends on three things - the surface area for exchange, the steepness of the partial-pressure difference across it, and the thinness of the membrane. More surface, steeper difference, thinner wall, faster the gas moves. It is not a biological law but a physical one, as true on Pandora as in a laboratory. Life cannot escape it, only obey it cleverly - which is why every lung and gill is a vastly folded structure with walls shaved thin enough that blood and air nearly touch."
+see_also:
+  - partial-pressure
+  - operculum
+  - countercurrent-exchange
+category: concept
+cover_prompt: A painted schematic of a thin glowing membrane with dense luminous particles crowded on one side and sparse on the other, faint streams crossing the gap, cool teal and cyan against deep indigo, painterly and atmospheric, no text, no labels, no numbers.

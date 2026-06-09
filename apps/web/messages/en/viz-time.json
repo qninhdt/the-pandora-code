@@ -1,0 +1,99 @@
+{
+  "viz": {
+    "halfLife": {
+      "title": "Radioactive decay clock",
+      "elapsed": "Elapsed",
+      "halfLives": "half-lives",
+      "parentLeft": "Parent atoms left",
+      "age": "Inferred age",
+      "parent": "Parent (radioactive)",
+      "daughter": "Daughter (decayed)",
+      "gyr": "Gyr",
+      "play": "Play",
+      "pause": "Pause",
+      "reset": "Reset",
+      "timeLabel": "Time (half-lives)",
+      "hint": "Each half-life, half of the remaining parent atoms turn into daughters. Counting the fraction left reads off the age.",
+      "aria": "Elapsed {time} half-lives, {remaining}% parent atoms left"
+    },
+    "isochron": {
+      "title": "Isochron plot",
+      "xAxis": "parent isotope (P / stable) →",
+      "yAxis": "daughter isotope (D / stable) →",
+      "initialRatio": "initial ratio",
+      "elapsed": "elapsed",
+      "elapsedValue": "{t} ½-lives",
+      "slope": "line slope",
+      "parentLeft": "parent left",
+      "play": "Play",
+      "pause": "Pause",
+      "reset": "Reset to a flat line",
+      "timeLabel": "Time elapsed, in half-lives",
+      "aria": "Isochron plot at {t} half-lives elapsed, line slope {slope}"
+    },
+    "dataComparison": {
+      "vs": "vs"
+    },
+    "confidenceDial": {
+      "title": "Calibrated confidence dial",
+      "probability": "Probability",
+      "ipccTerm": "IPCC term",
+      "range": "Calibrated range",
+      "sliderLabel": "Probability (%)",
+      "hint": "Drag the probability: each ordinary-sounding word carries an exact numeric range. \"Virtually certain\" means > 99%, not enthusiasm.",
+      "aria": "{probability} {p}% — {term}",
+      "terms": {
+        "virtuallyCertain": "Virtually certain",
+        "extremelyLikely": "Extremely likely",
+        "veryLikely": "Very likely",
+        "likely": "Likely",
+        "aboutEven": "About as likely as not",
+        "unlikely": "Unlikely",
+        "veryUnlikely": "Very unlikely",
+        "extremelyUnlikely": "Extremely unlikely",
+        "exceptionallyUnlikely": "Exceptionally unlikely"
+      }
+    },
+    "confidenceMeter": {
+      "aria": "Epistemic tier breakdown"
+    },
+    "tierLegend": {
+      "earth": "On Earth",
+      "pandora": "On Pandora"
+    },
+    "journeyTimeline": {
+      "title": "Twenty seconds",
+      "bloodO2": "Oxygen in blood",
+      "usableO2": "Oxygen cells can use",
+      "seconds": "seconds",
+      "play": "Play",
+      "pause": "Pause",
+      "reset": "Reset",
+      "timeline": "Timeline (seconds)",
+      "hint": "Drag the timeline: oxygen in the blood stays full, but the oxygen cells can actually use collapses.",
+      "aria": "{time} seconds: {stage}",
+      "stages": {
+        "maskOff": {
+          "title": "Mask off",
+          "body": "The air has oxygen to spare — lungs fill, blood runs bright red. Nothing feels wrong yet."
+        },
+        "h2sFloods": {
+          "title": "H₂S floods in",
+          "body": "Hydrogen sulfide diffuses into the blood and latches onto the respiratory enzyme in your mitochondria."
+        },
+        "histotoxic": {
+          "title": "Histotoxic hypoxia",
+          "body": "The blood is still full of oxygen, but the cells can no longer BURN it. This is the paradox: suffocating in a sea of oxygen."
+        },
+        "collapse": {
+          "title": "Collapse",
+          "body": "Starved of energy, the brain falters: vision narrows, legs give way, awareness slips."
+        },
+        "unconscious": {
+          "title": "Unconscious",
+          "body": "About twenty seconds after the mask came off, you are down. Not from a lack of oxygen — from chemistry."
+        }
+      }
+    }
+  }
+}

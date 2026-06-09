@@ -1,0 +1,12 @@
+id: reynolds-number
+label:
+  vi: Số Reynolds
+  en: Reynolds number
+definition:
+  vi: 'Một con số không thứ nguyên đo tỉ lệ giữa lực quán tính và lực nhớt trong một dòng chất lưu - nói nôm na, nó cho biết với một vật đang chuyển động qua không khí hay nước, thì khối lượng của dòng chảy hay độ "dính" của nó mới là yếu tố chi phối. Côn trùng tí hon bay ở số Reynolds thấp, nơi không khí dính như mật; những kẻ bay lớn như ikran hoạt động ở số Reynolds cao, nơi lực nâng sinh ra từ chênh lệch áp suất trên mặt cánh được tạo dáng khí động học, hiệu quả hơn nhiều. Cùng một bầu khí quyển có thể là chất lỏng nhớt với một con muỗi và là dòng khí sạch với một con banshee.'
+  en: 'A dimensionless number measuring the ratio of inertial forces to viscous forces in a fluid - loosely, it tells you whether, for an object moving through air or water, the heft of the flow or its "stickiness" dominates. Tiny insects fly at low Reynolds numbers, where air is as clinging as honey; large flyers like the ikran operate at high Reynolds numbers, where lift comes from pressure differences across a streamlined airfoil, far more efficiently. The same atmosphere can be a viscous syrup to a midge and a clean airstream to a banshee.'
+see_also:
+- wing-loading
+- biomechanics
+category: concept
+cover_prompt: A painted abstract of airflow streamlines parting cleanly around a streamlined wing edge in cool teal on a dark indigo ground, smooth laminar curves, hand-painted, no text, no labels.

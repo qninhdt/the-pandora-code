@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-lit-footprint",
+  "chapter_slug": "when-glow-is-the-norm",
+  "role": "hero",
+  "narrative_purpose": "The cold-open image: a single footstep on the forest floor sets off a spreading ring of bioluminescence, so the reader feels at once that on Pandora the dark answers with light — glow as the default, not the exception.",
+  "subject": "A close view of a Na'vi foot pressing into dark forest moss, and radiating outward from the point of contact a bright ring of cyan-green light spreading through the ground cover; smaller answering glows rising from ferns and a fungal patch just beyond, fine luminous spores stirred up around the ankle.",
+  "scene": "The forest floor at night, low to the ground, surrounding understorey falling away into glowing teal haze and deep shadow.",
+  "camera": "A low, intimate ground-level angle close on the foot and the spreading ring of light, shallow depth into soft dark behind.",
+  "light": "Bioluminescent key entirely from the moss ring and the touched ground; the foot and ankle lit from below by the glow they trigger; rich indigo shadow elsewhere.",
+  "palette": "Void-indigo ground, intense Pandora cyan and living teal in the spreading ring, a faint magenta in stirred spores as a scarce warm accent.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, tactile and observed.",
+  "detail_level": "Crisp on the foot, the moss texture and the bright leading edge of the light ring; background dissolving into haze.",
+  "composition": "The foot and contact point set just off-centre, the light ring as concentric arcs filling the lower frame, dark negative space above.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "full human figure", "faces", "Avatar branding"],
+  "consistency_notes": "Same cool Pandora palette and from-within bioluminescent key as the chapter cover; the moss-ring light should read as alive, not as a digital effect.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/when-glow-is-the-norm/fig-00-cover.png"]
+}

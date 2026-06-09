@@ -1,0 +1,13 @@
+id: plesiomorphy
+label:
+  vi: Đặc điểm tổ tiên (plesiomorphy)
+  en: Plesiomorphy
+definition:
+  vi: 'Một trạng thái đặc điểm cổ, thừa hưởng từ xa xưa - phần "mặc định" của cơ thể có trước khi một dòng dõi tạo ra những đổi mới riêng. Năm ngón ở động vật bốn chân là một đặc điểm tổ tiên: gần như loài nào cũng có, vì tổ tiên chung đã có. Bản thân nó không sai, nhưng nó không giúp ta xếp nhóm, bởi một đặc điểm mà ai cũng mang thì không chỉ ra được ai là họ hàng gần của ai. Đối lập với nó là đặc điểm phái sinh (apomorphy).'
+  en: 'An ancestral character state, inherited from deep in the past - the "default" part of the body that predates a lineage''s own novelties. Five digits in tetrapods is a plesiomorphy: nearly everyone has it, because the common ancestor did. It is not wrong in itself, but it cannot group anyone, because a trait everybody carries says nothing about who is whose close relative. Its opposite is the derived state, the apomorphy.'
+see_also:
+- apomorphy
+- symplesiomorphy
+- synapomorphy
+category: bio
+cover_prompt: A painted row of varied glowing creature silhouettes all sharing one identical ancestral feature marked faintly on each, the shared mark deliberately unremarkable, cool teal and indigo, bioluminescent, no text, no labels.

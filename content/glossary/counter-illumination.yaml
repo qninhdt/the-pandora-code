@@ -1,0 +1,15 @@
+id: counter-illumination
+label:
+  vi: Phản chiếu xóa bóng
+  en: Counter-illumination
+definition:
+  vi: >-
+    Một kiểu ngụy trang bằng ánh sáng: sinh vật tự phát sáng ở mặt bụng để hòa với ánh sáng mờ rọi từ trên xuống, nhờ đó xóa đi cái bóng đen của chính mình khi bị nhìn từ bên dưới. Ở vùng chạng vạng của đại dương, một con vật không phát sáng sẽ hiện lên như một vệt tối trên nền nước sáng phía trên - nên nhiều loài cá và mực vùng nước giữa mọc "đèn" ở bụng, chỉnh độ sáng cho khớp với nền trời nước, biến mình thành vô hình. Chính áp lực này được suy đoán là đã đẩy hệ động vật Pandora tới chỗ phải phát sáng để hòa vào nền rừng rực rỡ.
+  en: >-
+    A form of camouflage by light: an organism glows on its underside to match the dim light filtering from above, erasing its own dark silhouette when seen from below. In the ocean's twilight zone, a non-glowing animal shows up as a dark shape against the brighter water overhead - so many midwater fish and squid grow belly "lamps" tuned to match the background, making themselves invisible. This same pressure is the inferred reason Pandora's fauna had to glow to blend into a luminous forest background.
+see_also:
+- bioluminescence
+- photophore
+- quorum-sensing
+category: concept
+cover_prompt: A fish silhouette in twilight blue water lit faintly from below so its outline dissolves into the bright water above, cool teal palette, no text, no labels.

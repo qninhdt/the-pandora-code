@@ -1,0 +1,13 @@
+id: long-branch-attraction
+label:
+  vi: Hút nhánh dài (long-branch attraction)
+  en: Long-branch attraction
+definition:
+  vi: 'Một kiểu sai hệ thống của phương pháp tiết kiệm tối đa: khi hai dòng dõi biến đổi nhanh và lâu - hai "nhánh dài" - chúng tích lũy quá nhiều đổi mới đến mức một số tình cờ trùng nhau. Phương pháp đếm các trùng hợp ấy, tưởng là bằng chứng huyết thống, rồi kéo hai nhánh dài lại gần nhau ở gốc cây - dù thật ra chúng chẳng phải họ hàng gần. Điều nguy hiểm là nó gãy một cách *tự tin*: cho ra một đáp án gọn gàng nhưng sai. Dữ liệu phân tử thường gỡ được bẫy này; hình thái học đơn thuần thì không.'
+  en: 'A systematic error of maximum parsimony: when two lineages change fast and long - two "long branches" - they accumulate so many novelties that some coincidentally match. The method counts those matches, mistakes them for evidence of kinship, and pulls the two long branches together near the base of the tree - even though they are not close relatives. The danger is that it fails *confidently*, producing a clean but wrong answer. Molecular data can usually break the trap; morphology alone cannot.'
+see_also:
+- maximum-parsimony
+- autapomorphy
+- homoplasy
+category: concept
+cover_prompt: A painted dark tree diagram where two long glowing branches reaching far out are being deceptively drawn together near the root by a false attracting glow, the true short branches left apart, cool teal with a misleading amber pull, bioluminescent, no text, no labels.

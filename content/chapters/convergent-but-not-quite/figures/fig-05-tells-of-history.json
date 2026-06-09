@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-tells-of-history",
+  "chapter_slug": "convergent-but-not-quite",
+  "role": "comparison",
+  "narrative_purpose": "Shows the 'not quite' principle on Earth: three fast swimmers converged on one body, but their tails betray three different ancestries, so the reader sees that convergence drags an anchor of history.",
+  "subject": "Three streamlined fast-swimming animals shown in side profile, stacked or arrayed across the frame at matched scale so their near-identical torpedo bodies line up. TOP: a shark, its tail a vertical fin that beats side to side. MIDDLE: an extinct ichthyosaur, also with a vertical tail fin. BOTTOM: a dolphin, its tail a horizontal fluke that beats up and down. The bodies are almost the same shape; the tails are visibly oriented differently, the key contrast.",
+  "scene": "Plain dim teal water, faint light shafts from above, uncluttered so the bodies and tails dominate.",
+  "camera": "Matched side-on views, all three at the same scale and orientation for direct comparison.",
+  "light": "Soft cool light from above through water, even on all three; backgrounds dark.",
+  "palette": "Ocean teal and indigo water, the three animals in cool desaturated tones, no warm accent.",
+  "style": "Three matched naturalist plates, painterly, reading as a comparison by arrangement.",
+  "detail_level": "High on the body outlines and especially the tails; minimal background.",
+  "composition": "Three horizontal animals aligned vertically, the tails grouped toward one side so the orientation difference is easy to compare, dark margins for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "UI", "watermark", "logos"],
+  "consistency_notes": "Real Earth animals, naturalistic. The teaching point is tail orientation, so keep tails clearly readable.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no photographic or 3D-render look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fig-02-ficks-law-membrane",
+  "chapter_slug": "the-breathing-fans",
+  "role": "diagram",
+  "narrative_purpose": "Makes Fick's law visual: gas crosses a living membrane faster with more surface, a thinner wall, and a steeper difference between the two sides.",
+  "subject": "A flat schematic cross-section of a thin respiratory membrane shown as a single narrow vertical band down the centre. On the left side, many small glowing dots crowded densely together (high concentration); on the right side, only a few scattered dots (low concentration). Several arrows cross the thin band from the crowded left to the sparse right. The band is drawn deliberately thin, and is wide top-to-bottom to suggest large surface area.",
+  "scene": "Empty dark space background, only the membrane band, the dot fields, and the crossing arrows.",
+  "camera": "Flat head-on schematic view, no perspective, no 3D.",
+  "light": "Flat even lighting; the dots and arrows glow on their own.",
+  "palette": "Near-black background, dense cyan dots on the left, sparse teal dots on the right, thin pale membrane band, glowing cyan crossing arrows.",
+  "style": "Clean elegant infographic of thin glowing shapes, like a vector schematic.",
+  "detail_level": "Crisp clean dots and arrows, an obviously thin central band, generous space; nothing cluttered.",
+  "composition": "Central thin vertical band, crowded dot field left, sparse dot field right, a few clear arrows crossing left to right.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "photographic texture"],
+  "consistency_notes": "Thin glowing cyan/teal shapes on a near-black background; the shared visual language for every schematic diagram in this chapter.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no letters, no numbers, no busy clutter, no photorealism, no 3D bevels, no drop shadows"
+}

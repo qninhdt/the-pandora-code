@@ -1,0 +1,16 @@
+id: luciferin
+label:
+  vi: Luciferin
+  en: Luciferin
+definition:
+  vi: >-
+    Phân tử nhiên liệu nhỏ bị oxy hóa để tạo ra ánh sáng trong phản ứng phát quang sinh học - cái tên bắt nguồn từ chữ Latin *lucifer*, "kẻ mang ánh sáng". Enzyme luciferase ghép luciferin với oxy, đẩy nó vào trạng thái kích thích, rồi nó nhả ra một photon khi rơi về trạng thái nền. Điều đáng kinh ngạc trên Trái Đất: có ít nhất hàng chục loại luciferin khác nhau về mặt hóa học, vì khả năng phát sáng đã tiến hóa độc lập hàng chục lần - mỗi dòng dõi tự mò ra một loại nhiên liệu riêng.
+  en: >-
+    The small fuel molecule that is oxidized to produce light in a bioluminescent reaction - the name comes from the Latin *lucifer*, "light-bringer". The enzyme luciferase joins luciferin to oxygen, kicks it into an excited state, and it releases a photon as it drops back down. Strikingly on Earth, there are at least dozens of chemically distinct luciferins, because glow evolved independently dozens of times - each lineage stumbling onto its own fuel.
+see_also:
+- luciferase
+- bioluminescence
+- chemiluminescence
+- convergent-evolution
+category: concept
+cover_prompt: A single small glowing molecule rendered as a luminous cyan node releasing a point of light, dark teal field, no text, no labels.

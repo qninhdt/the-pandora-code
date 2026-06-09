@@ -1,0 +1,12 @@
+id: serial-homology
+label:
+  vi: Tương đồng chuỗi
+  en: Serial homology
+definition:
+  vi: Mối liên hệ giữa các bộ phận lặp lại dọc theo một cơ thể vốn chung một cội nguồn nhưng lại được chỉnh trang để gánh vác các nhiệm vụ khác nhau tùy theo vị trí - chẳng hạn như các đốt xương sống, các phần chi chuyên biệt của một con tôm, hay các phân đoạn cánh lặp lại của con chuồn chuồn. Đó là một đơn vị phân đoạn nền tảng, cơ bản, được đẽo gọt lại tùy theo "địa chỉ Hox" của nó dọc theo trục đầu-đuôi.
+  en: The relationship between repeated parts along a single body that share a common origin but have been modified to do different jobs depending on position - like the vertebrae of a spine, the specialised appendages of a shrimp, or the repeated flight segments of a dragonfly. A basic, modular segment unit, tailored according to its Hox address along the head-to-tail axis.
+see_also:
+- hox-genes
+- body-plan
+category: concept
+cover_prompt: A painted row of repeating body segments fading from simple to specialised along a glowing axis, cool indigo and teal, no text, no labels.

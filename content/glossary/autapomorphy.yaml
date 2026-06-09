@@ -1,0 +1,13 @@
+id: autapomorphy
+label:
+  vi: Đặc điểm riêng (autapomorphy)
+  en: Autapomorphy
+definition:
+  vi: 'Một đặc điểm phái sinh chỉ duy nhất một loài mang - một đổi mới riêng của một đầu nhánh, không chia sẻ với ai khác. Vì không có loài thứ hai nào mang nó, đặc điểm riêng không nói gì về quan hệ họ hàng *giữa* các loài, nên vô dụng cho việc xếp nhóm. Nhưng nó lại nguy hiểm: khi hai dòng dõi biến đổi nhanh và lâu, chúng tích lũy hàng đống đặc điểm riêng, và một số tình cờ trùng nhau - đánh lừa phương pháp tiết kiệm tối đa, gây ra hiện tượng hút nhánh dài.'
+  en: 'A derived trait carried by only a single species - a novelty unique to one tip, shared with no one else. Because no second species carries it, an autapomorphy says nothing about kinship *between* species, so it is useless for grouping. But it is dangerous: when two lineages change fast and long, they pile up autapomorphies, and some coincidentally match - fooling maximum parsimony and causing long-branch attraction.'
+see_also:
+- apomorphy
+- synapomorphy
+- long-branch-attraction
+category: bio
+cover_prompt: A painted single glowing creature silhouette bearing one unique bright feature no other nearby silhouette shares, set alone at a branch tip, cool teal and indigo with one isolated cyan novelty, bioluminescent, no text, no labels.

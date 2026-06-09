@@ -1,0 +1,12 @@
+id: synapomorphy
+label:
+  vi: Đặc điểm chung dẫn xuất
+  en: Synapomorphy
+definition:
+  vi: 'Một đặc điểm phái sinh - một thay đổi mới mẻ từ gốc tổ tiên - mà hai hay nhiều loài cùng chia sẻ bởi chúng đều được thừa hưởng nó từ một tổ tiên chung. Đây là bằng chứng đanh thép nhất để xếp các loài vào đúng nhánh cây gia phả của sự sống: một chữ ký chung được truyền lại, chứ không phải một sự trùng hợp bề ngoài do tiến hóa hội tụ. Một đặc điểm càng tinh vi và ngẫu nhiên bao nhiêu, thì việc nó độc lập tự phát sinh ở nhiều nơi càng trở nên khó tin bấy nhiêu.'
+  en: 'A derived trait - a novel change from the ancestral condition - shared by two or more species because they inherited it from a common ancestor. It is the strongest evidence for grouping species into their true branch of the tree of life: a shared signature that was passed down, not a coincidental resemblance produced by convergence. The more complex and arbitrary the trait, the less believable it is that it arose independently more than once.'
+see_also:
+- convergent-evolution
+- body-plan
+category: concept
+cover_prompt: A painted family tree of glowing creature silhouettes branching from one root, several sharing an identical bright mark while one branch lacks it, cool teal and indigo, no text, no labels.

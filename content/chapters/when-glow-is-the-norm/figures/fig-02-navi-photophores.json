@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-navi-photophores",
+  "chapter_slug": "when-glow-is-the-norm",
+  "role": "diagram",
+  "narrative_purpose": "Show that the Na'vi's luminous freckles are organs laid out along the body's vascular and neural lines in bilateral pairs — anchoring the canon point that the pattern is anatomical, steady, and gene-placed, not decorative.",
+  "subject": "A naturalist study of a Na'vi face, neck and shoulders at night, the blue skin marked with fine cyan-white luminous dots arranged in clear bilateral lines that trace the paths of veins and nerves across the brow, cheekbones, jaw, throat and collarbone; the dots glowing steadily with a soft from-within light.",
+  "scene": "A dark, neutral study background so the photophore pattern reads clearly, faint teal haze at the edges.",
+  "camera": "A near-frontal portrait study, slightly turned, head and upper shoulders filling the frame.",
+  "light": "Low ambient indigo with the photophores themselves as the bioluminescent key; the dots cast a faint blue-white glow onto the surrounding skin.",
+  "palette": "Deep indigo-teal skin shadow, Na'vi blue mid-tones, Pandora cyan-white in the glowing dots; strictly monochrome glow, no multi-colour photophores.",
+  "style": "Painterly naturalist anatomical study, hand-painted texture, calm and observed.",
+  "detail_level": "Crisp on the dot pattern and the bilateral lines they follow; background and far shoulder softening into haze.",
+  "composition": "Head and shoulders centred, the bilateral symmetry of the dot lines emphasised, generous dark negative space around.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "multi-colour glowing dots", "rainbow light", "Avatar branding"],
+  "consistency_notes": "Photophore light is a single blue-white hue throughout; placement strictly bilateral and following vessel/nerve lines; cool Pandora palette consistent with the cover.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no multi-coloured glow, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/when-glow-is-the-norm/fig-00-cover.png"]
+}

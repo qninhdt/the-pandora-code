@@ -49,9 +49,7 @@ export function Timeline({ events, className }: TimelineProps) {
                 outline: "4px solid var(--void)",
               }}
             />
-            <p className="font-sans text-[0.65rem] uppercase tracking-[0.2em] text-subtle">
-              {e.date}
-            </p>
+            <p className="font-sans text-xs uppercase tracking-[0.2em] text-subtle">{e.date}</p>
             <h4 className="mt-1 font-display text-base font-700 text-foreground">{e.title}</h4>
             {e.description && (
               <p className="mt-1 font-serif text-sm leading-relaxed text-muted">{e.description}</p>

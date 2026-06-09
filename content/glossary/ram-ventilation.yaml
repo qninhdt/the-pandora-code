@@ -1,0 +1,24 @@
+id: ram-ventilation
+label:
+  vi: Thông khí kiểu xốc gió
+  en: Ram ventilation
+definition:
+  vi: >-
+    Để chính chuyển động của con vật làm việc bơm khí, thay vì cơ bắp. Những con cá
+    mập nhanh nhất bơi với miệng hé mở, để nước biển bị tốc độ của chúng ép qua
+    mang - không tốn một nhịp cơ nào. Một cái khe thở hướng ra trước trên sườn loài
+    thú bay Pandora có thể làm điều y hệt với không khí - khi con vật lao tới, luồng
+    khí dày đặc bị xốc thẳng vào khe, qua phổi, rồi thoát ra phía sau. Đây là suy
+    luận trung tâm về cách hoạt động của khe thở bên sườn ở tốc độ cao.
+  en: >-
+    Letting the animal's own motion do the pumping instead of muscle. The fastest
+    sharks swim with mouths cracked open so the sea is forced over their gills by
+    their own speed - no muscular effort spent. A forward-facing flank slot on a
+    Pandoran flyer could do the same with air - as the animal drives forward, the
+    dense airstream is rammed into the slot, through the lung, and out the rear.
+    This is the central inference for how the breathing fans work at speed.
+see_also:
+  - operculum
+  - unidirectional-airflow
+category: concept
+cover_prompt: A painted schematic of a forward-facing intake slot with a dense stream of glowing air rammed into it by motion, cyan flow lines sweeping in, deep indigo ground, painterly, no text, no labels, no numbers.

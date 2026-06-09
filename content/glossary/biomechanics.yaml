@@ -1,0 +1,13 @@
+id: biomechanics
+label:
+  vi: Cơ sinh học
+  en: Biomechanics
+definition:
+  vi: 'Ngành khoa học soi cơ thể sống bằng con mắt của một kỹ sư: xương là dầm chịu lực, gân là lò xo, cơ là động cơ, và mọi chuyển động đều phải tuân theo cùng các định luật cơ học chi phối cầu và máy móc. Cơ sinh học hỏi những câu rất vật lý - một khúc xương chịu được bao nhiêu ứng suất trước khi gãy, một cái gân trả lại bao nhiêu năng lượng đàn hồi mỗi sải chân, một cánh cần bao nhiêu lực nâng để giữ thân hình trên không. Chính lăng kính này cho phép ta đặt con pa''li hay ikran lên bàn mổ và phán xét: bộ khung ấy có đứng vững, có chạy, có bay nổi dưới quy luật vật lý hay không.'
+  en: 'The science that looks at living bodies through an engineer''s eyes: bone is a load-bearing beam, tendon is a spring, muscle is a motor, and every movement must obey the same mechanical laws that govern bridges and machines. Biomechanics asks resolutely physical questions - how much stress a bone takes before it snaps, how much elastic energy a tendon returns each stride, how much lift a wing needs to hold a body aloft. It is the lens that lets us lay a pa''li or an ikran on the dissection table and judge whether the frame could really stand, run, or fly under the laws of physics.'
+see_also:
+- allometry
+- square-cube-law
+- wing-loading
+category: concept
+cover_prompt: A painted study of a creature's leg bone rendered like an engineering beam under load, faint stress lines glowing along it, cool teal on deep indigo, hand-painted, no text, no labels, no arrows.

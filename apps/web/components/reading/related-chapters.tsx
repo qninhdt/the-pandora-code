@@ -16,7 +16,12 @@ interface RelatedChaptersProps {
   className?: string;
 }
 
-export function RelatedChapters({ chapters, locale, heading, className }: RelatedChaptersProps) {
+export function RelatedChapters({
+  chapters = [],
+  locale,
+  heading,
+  className,
+}: RelatedChaptersProps) {
   if (chapters.length === 0) return null;
   return (
     <section className={cn("my-12", className)} aria-label={heading ?? "Related chapters"}>

@@ -1,0 +1,19 @@
+{
+  "id": "fig-04-long-branch-flyers",
+  "chapter_slug": "pandoran-tree-of-life",
+  "role": "diagram",
+  "narrative_purpose": "Visualizes long-branch attraction: two fast-evolving flyers on long separate branches get wrongly pulled together near the root because their many independent changes look alike. The reader sees how morphology-only parsimony can be fooled.",
+  "subject": "A schematic glowing tree on a dark field. Two short, calm branches sit near the top, close to a central trunk. Below them, two very long, jagged, brightly-burning branches - each ending in a winged Pandoran flyer silhouette, one a banshee, one a great leonopteryx - stretch far out, heavily encrusted with little glowing change-marks along their length. Despite rising from different points on the trunk, the two long burning branches bend toward each other and nearly touch near the base, a faint deceptive halo where they are wrongly drawn together.",
+  "scene": "An abstract dark phylogenetic-diagram space, branches as glowing filaments, the two long flyer branches far brighter and busier than the calm short ones.",
+  "camera": "Flat head-on schematic view of the whole tree, the deceptive convergence of the two long branches near the base centered.",
+  "light": "Self-glowing branches; the long fast branches blaze hot and dense with change-marks, the short branches calm and dim; deep indigo ground.",
+  "palette": "Void-indigo background; calm teal for short branches; hotter cyan-to-amber glow for the long fast-evolving flyer branches; a faint amber false-halo where they attract.",
+  "style": "Painterly conceptual diagram, hand-painted glow, elegant - not a vector infographic.",
+  "detail_level": "Crisp on the contrast between long busy branches and short calm ones and on the deceptive near-touch at the base; dark elsewhere.",
+  "composition": "A rooted tree filling the frame, two short branches high near the trunk, two long branches sweeping down and inward to nearly meet, generous dark margins for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "infographic chrome", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with self-glow; branch length and density of change-marks encode evolutionary rate. Banshee and leonopteryx silhouettes consistent with the chapter's other plates. The whole point is the false attraction, carried with NO text.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no infographic chrome, no photographic or 3D-render look, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

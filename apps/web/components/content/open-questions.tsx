@@ -40,10 +40,7 @@ export function OpenQuestions({ title, items, className }: OpenQuestionsProps) {
           const isOpen = open === i;
           const hasAnswer = Boolean(item.answer);
           return (
-            <li
-              key={i}
-              className="rounded-xl border border-border/60 bg-void/20"
-            >
+            <li key={i} className="rounded-xl border border-border/60 bg-void/20">
               <button
                 type="button"
                 disabled={!hasAnswer}
@@ -74,9 +71,7 @@ export function OpenQuestions({ title, items, className }: OpenQuestionsProps) {
                 <div
                   className={cn(
                     "grid transition-all duration-300 ease-out",
-                    isOpen
-                      ? "grid-rows-[1fr] opacity-100"
-                      : "grid-rows-[0fr] opacity-0",
+                    isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0",
                   )}
                 >
                   <div className="overflow-hidden">

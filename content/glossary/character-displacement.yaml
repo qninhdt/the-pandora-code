@@ -1,0 +1,13 @@
+id: character-displacement
+label:
+  vi: Sự dịch chuyển đặc điểm
+  en: Character displacement
+definition:
+  vi: Hiện tượng hai loài tương đồng chung sống cạnh nhau và cạnh tranh nhau sẽ bị ép phải trở nên ngày càng khác biệt - ngay tại điểm mà chúng giẫm chân nhau. Hai loài sẻ ăn hạt cùng chia sẻ một hòn đảo sẽ rẽ nhánh tiến hóa ra những chiếc mỏ khác biệt nhiều hơn hẳn so với khi mỗi loài sống riêng lẻ, bởi vì những cá thể khác biệt với đối thủ nhất sẽ kiếm ăn tốt nhất và để lại nhiều thế hệ sau nhất. Việc chung sống không chỉ đơn thuần cho phép sự khác biệt; nó còn tích cực đẽo gọt nên sự khác biệt ấy.
+  en: The way two similar species living side by side and competing are pushed by selection to become more different - precisely where they overlap. Two seed-eating finches sharing an island evolve beaks of more different sizes than either shows where it lives alone, because the individuals least like their competitor eat best and leave the most offspring. Coexistence does not merely permit difference; it actively manufactures it.
+see_also:
+- niche-partitioning
+- competitive-exclusion-principle
+- adaptive-radiation
+category: bio
+cover_prompt: A painted pair of similar birds whose beaks have grown to noticeably different sizes where their ranges meet, cool teal-cyan palette, painterly plate, no text, no labels.

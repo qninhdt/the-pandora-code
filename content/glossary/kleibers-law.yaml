@@ -1,0 +1,13 @@
+id: kleibers-law
+label:
+  vi: Định luật Kleiber
+  en: Kleiber's law
+definition:
+  vi: 'Quy luật trao đổi chất của Max Kleiber từ thập niên 1930: tốc độ trao đổi chất cơ bản của một con vật tỉ lệ với khối lượng cơ thể lũy thừa ba phần tư, chứ không phải tỉ lệ thẳng. Hệ quả: con vật càng to thì càng "tiết kiệm" trên mỗi kilôgam - đốt ít năng lượng hơn, tim đập chậm hơn, sống lâu hơn. Lời giải thích hiện đại (mô hình West-Brown-Enquist) truy nguyên con số ba phần tư về hình học của các mạng lưới vận chuyển phân nhánh như mạch máu. Với một con thú khổng lồ như pa''li hay ikran, định luật này là cái thuế ngầm định hình nhịp tim, lượng máu và mức tiêu thụ oxy của nó.'
+  en: 'Max Kleiber''s metabolic rule from the 1930s: an animal''s basal metabolic rate scales with body mass to the three-quarter power, not in direct proportion. The consequence is that bigger animals are more "economical" per kilogram - they burn less energy, beat their hearts slower, and live longer. The modern explanation (the West-Brown-Enquist model) traces the three-quarter figure to the geometry of branching transport networks like blood vessels. For a giant animal like the pa''li or the ikran, this law is the hidden tax that shapes its heart rate, blood volume, and oxygen consumption.'
+see_also:
+- allometry
+- scaling-exponent
+- biomechanics
+category: concept
+cover_prompt: A painted log-log plot with a straight line rising at a gentle three-quarter slope, faint animal silhouettes of increasing size along it, cool teal glow on deep indigo, hand-painted, no text, no numbers.

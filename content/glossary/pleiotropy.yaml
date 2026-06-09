@@ -1,0 +1,12 @@
+id: pleiotropy
+label:
+  vi: Tính đa hiệu
+  en: Pleiotropy
+definition:
+  vi: Hiện tượng khi một gene duy nhất lại cáng đáng hàng đống những công việc hoàn toàn chẳng liên quan gì đến nhau trong suốt quá trình phát triển. Gene Sonic hedgehog, chẳng hạn, là thứ không thể thiếu để chi vươn ra nhưng lại cũng thiết yếu để định hình não bộ, tủy sống và những chiếc răng. Bản chất "một nách nhiều con" này chính là điều khiến cho việc làm đột biến trình tự mã hóa của một gene tổng trở nên cực kỳ nguy hiểm - sửa được một chỗ thì phá hỏng luôn vài chỗ khác cùng lúc - và đó là lý do vì sao tiến hóa thường chọn cách chỉnh sửa các công tắc điều hòa thay vì chọc ngoáy vào chính bản thân gene đó.
+  en: When a single gene performs several completely unrelated jobs throughout development. The Sonic hedgehog gene, for example, is needed for limbs to grow out but is also essential for patterning the brain, the spinal cord, and the teeth. This many-rolled nature is exactly what makes mutating a master gene's coding sequence dangerous - fix one thing and you break several at once - and it is why evolution usually edits regulatory switches rather than the gene itself.
+see_also:
+- cis-regulatory-element
+- canalization
+category: concept
+cover_prompt: A painted single glowing seed-gene with several threads of light radiating to a brain, a limb, a spine and teeth at once, cool palette, no text, no labels.

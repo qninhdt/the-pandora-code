@@ -1,0 +1,13 @@
+id: wing-loading
+label:
+  vi: Tải trọng cánh
+  en: Wing loading
+definition:
+  vi: 'Trọng lượng của một sinh vật biết bay (hay một chiếc máy bay) chia cho diện tích cánh nâng nó. Vì khối lượng tăng theo lập phương của kích thước còn diện tích cánh chỉ tăng theo bình phương, tải trọng cánh phải tăng dần khi con vật to ra - và tải trọng cánh càng cao thì tốc độ bay tối thiểu để tạo đủ lực nâng càng lớn. Đây là lý do những kẻ bay khổng lồ phải lao đi rất nhanh mới cất cánh nổi. Con số 1,5 tấn mà các trang wiki cộng đồng gán cho ikran sẽ tạo ra tải trọng cánh bất khả thi; một khối lượng nhẹ hơn nhiều, cỡ 200-250 kg, mới khớp với một sải cánh 14 mét bay được trong bầu khí quyển dày của Pandora.'
+  en: 'The weight of a flying animal (or an aircraft) divided by the area of the wing that lifts it. Because mass grows with the cube of size while wing area grows only with the square, wing loading must rise as an animal gets bigger - and the higher the wing loading, the faster the minimum speed needed to generate enough lift. This is why giant flyers must rush forward quickly just to take off. The 1.5-ton figure community wikis attach to the ikran would produce an impossible wing loading; a far lighter mass, around 200-250 kg, is what fits a 14-metre wingspan flying in Pandora''s dense air.'
+see_also:
+- biomechanics
+- reynolds-number
+- quetzalcoatlus
+category: concept
+cover_prompt: A painted study of a vast membranous wing seen from below against a dark sky, the body small relative to the great wing area, cool teal bioluminescent veining, hand-painted, no text, no labels.

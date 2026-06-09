@@ -1,0 +1,13 @@
+id: froude-number
+label:
+  vi: Số Froude
+  en: Froude number
+definition:
+  vi: 'Một con số không thứ nguyên đo nhịp đi đứng, bằng v² chia cho (g nhân L) - vận tốc bình phương, trên trọng lực nhân chiều dài chân. Ý tưởng cốt lõi đẹp đẽ: hai con vật to nhỏ khác nhau sẽ di chuyển theo cùng một kiểu khi số Froude của chúng bằng nhau. Vì các ngưỡng đổi dáng đi nằm ở những giá trị Froude cố định (đi sang chạy nước kiệu vào khoảng 0,5, trần của bước đi vào khoảng 1,0), ta có thể tính chính xác tốc độ một con vật phải đổi dáng đi. Đổi trọng lực thì đổi luôn tốc độ ấy: trọng lực thấp hơn của Pandora kéo mọi ngưỡng xuống tốc độ thấp hơn, nên con pa''li bước vào nhịp chạy lò xo của nó sớm hơn so với trên Trái Đất.'
+  en: 'A dimensionless number that measures the rhythm of gait: v² divided by (g times L) - velocity squared, over gravity times leg length. The beautiful core idea is that two animals of different sizes move in the same way when their Froude numbers match. Because gait transitions sit at fixed Froude values (walk to trot around 0.5, the ceiling of walking around 1.0), you can calculate the exact speed at which an animal must change gait. Change the gravity and you change that speed: Pandora''s lower gravity pulls every threshold down to a lower velocity, so the pa''li breaks into its spring-loaded gaits sooner than it would on Earth.'
+see_also:
+- biomechanics
+- cursorial
+- allometry
+category: concept
+cover_prompt: A painted speedometer-like arc with two glowing transition marks on it, a running silhouette beneath, cool cyan and amber on deep indigo, hand-painted, no text, no numbers, no labels.

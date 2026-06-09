@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-deepsea-vs-land",
+  "chapter_slug": "when-glow-is-the-norm",
+  "role": "comparison",
+  "narrative_purpose": "Make the Earth biogeography vivid: the deep sea crowded with light, the land nearly dark — the contrast that sets up the rule the chapter then flips onto Pandora.",
+  "subject": "A single plate split into two halves joined by darkness. Left half: an Earth deep-sea scene full of glowing life — a lantern-bearing anglerfish, a luminous jellyfish, a counter-illuminating squid, scattered points of blue light throughout the black water. Right half: an Earth forest floor at night, almost entirely dark, with only one small firefly glowing mid-air and a single faint patch of foxfire fungus on a log.",
+  "scene": "Two natural habitats abutting: open black ocean on the left, dark terrestrial forest floor on the right, the seam between them a band of deep shadow.",
+  "camera": "A balanced two-panel naturalist composition, each half observed at mid-distance, equal framing.",
+  "light": "Left: many bioluminescent keys scattered through black water. Right: near-total darkness with one tiny firefly glow and one faint fungal patch — the deliberate scarcity of land glow is the point.",
+  "palette": "Void-indigo and deep teal throughout both halves; abundant Pandora cyan glow on the sea side, only a scarce amber-green firefly and faint fungal glow on the land side.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture; an honest Earth-science illustration, not a Pandora scene.",
+  "detail_level": "Crisp on the sea creatures' lights and on the lone land firefly; both backgrounds deep and hazy.",
+  "composition": "Two equal vertical halves, the bright crowded sea against the dark sparse land, the asymmetry of light between them carrying the meaning.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Pandora flora", "Na'vi", "Avatar branding"],
+  "consistency_notes": "Cool palette consistent with the chapter; this plate depicts EARTH, so keep it recognisably terrestrial/oceanic, with land glow conspicuously scarce versus the sea.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

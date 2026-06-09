@@ -1,86 +1,65 @@
 "use client";
 
+import { GlowDefs, glowUrl } from "@/components/content/viz/glow-defs";
 import { VizFigure } from "@/components/content/viz/viz-figure";
 import { useReducedMotionSafe } from "@/components/motion/use-reduced-motion-safe";
 import { AnimatePresence, motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
+import { useEffect, useId, useState } from "react";
 
 interface ColdLightReactionProps {
-  locale?: "vi" | "en";
   caption?: string;
   className?: string;
 }
 
-const STRINGS = {
-  vi: {
-    title: "Phản ứng của ánh sáng lạnh",
-    step: "Bước",
-    play: "Chạy",
-    pause: "Dừng",
-    steps: [
-      {
-        label: "Luciferin + O₂",
-        body: "Enzyme luciferase nắm lấy một phân tử nhiên liệu nhỏ — luciferin — rồi ghép nó với oxy. Chưa có ánh sáng, chỉ là khâu nạp đạn.",
-      },
-      {
-        label: "Trung gian cao năng",
-        body: "Phản ứng oxy hóa tạo ra một vòng peroxide căng thẳng (dioxetanone). Khi vòng vỡ, nó nhả CO₂ và đẩy sản phẩm lên trạng thái điện tử bị kích thích.",
-      },
-      {
-        label: "Photon",
-        body: "Electron bị kích thích rơi về trạng thái nền. Toàn bộ phần năng lượng chênh lệch thoát ra dưới dạng một hạt ánh sáng — gần như không nhiệt thừa. Đó là ánh sáng lạnh.",
-      },
-    ],
-    effTitle: "Năng lượng đi đâu",
-    eff: [
-      { name: "Bóng đèn sợi đốt", light: 5, heat: "≈95% hao thành nhiệt" },
-      { name: "Đèn LED", light: 40, heat: "phần lớn thành điện-nhiệt" },
-      { name: "Đom đóm (sinh học)", light: 90, heat: "gần như không nhiệt" },
-    ],
-    legendLight: "Thành ánh sáng",
-  },
-  en: {
-    title: "The cold-light reaction",
-    step: "Step",
-    play: "Play",
-    pause: "Pause",
-    steps: [
-      {
-        label: "Luciferin + O₂",
-        body: "The enzyme luciferase takes a small fuel molecule — luciferin — and joins it to oxygen. No light yet; this is only loading the chamber.",
-      },
-      {
-        label: "High-energy intermediate",
-        body: "Oxidation builds a strained peroxide ring (a dioxetanone). When the ring snaps, it sheds CO₂ and kicks the product up into an excited electronic state.",
-      },
-      {
-        label: "Photon",
-        body: "The excited electron drops back to its ground state. The whole energy difference leaves as a single particle of light — with almost no waste heat. That is cold light.",
-      },
-    ],
-    effTitle: "Where the energy goes",
-    eff: [
-      { name: "Incandescent bulb", light: 5, heat: "≈95% lost as heat" },
-      { name: "LED", light: 40, heat: "much lost to heat" },
-      { name: "Firefly (biology)", light: 90, heat: "almost no heat" },
-    ],
-    legendLight: "Becomes light",
-  },
-} as const;
+interface Step {
+  label: string;
+  body: string;
+}
+
+// Light yield per source — fixed scientific data, not UI copy. The display
+// name + heat caption come from messages; the percentage stays in code.
+const EFF_KEYS = ["incandescent", "led", "firefly"] as const;
+const EFF_LIGHT: Record<(typeof EFF_KEYS)[number], number> = {
+  incandescent: 5,
+  led: 40,
+  firefly: 90,
+};
 
 const W = 320;
 const MID = 58;
 
-function ReactionTrack({ stage, reduced }: { stage: number; reduced: boolean }) {
+function ReactionTrack({ stage, reduced, uid }: { stage: number; reduced: boolean; uid: string }) {
   const cyan = "var(--cyan)";
   const teal = "var(--teal)";
   const amber = "var(--amber)";
   const dim = "var(--subtle)";
   return (
     <svg viewBox={`0 0 ${W} 120`} className="w-full" aria-hidden={true}>
+      <GlowDefs idBase={uid} tones={["cyan", "teal", "amber"]} />
+      {/* radial wash behind the photon focal point — blooms in as the reaction fires */}
+      <AnimatePresence>
+        {stage >= 2 && (
+          <motion.circle
+            key="wash"
+            cx={272}
+            cy={MID}
+            r={48}
+            fill={glowUrl(uid, "wash-cyan")}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: reduced ? 0.9 : [0.4, 1, 0.7] }}
+            exit={{ opacity: 0 }}
+            transition={
+              reduced
+                ? { duration: 0 }
+                : { duration: 1.6, repeat: Number.POSITIVE_INFINITY, repeatType: "reverse" }
+            }
+          />
+        )}
+      </AnimatePresence>
       <line x1={24} y1={MID} x2={296} y2={MID} stroke="var(--border)" strokeWidth={2} />
 
-      {/* stage 0: luciferin + O2 loading */}
+      {/* stage 0: luciferin + O2 loading — blooms strongest while it is active */}
       <circle
         cx={48}
         cy={MID}
@@ -88,7 +67,7 @@ function ReactionTrack({ stage, reduced }: { stage: number; reduced: boolean }) 
         fill={`color-mix(in oklab, ${teal} 22%, transparent)`}
         stroke={stage >= 0 ? teal : dim}
         strokeWidth={2}
-        style={stage >= 0 ? { filter: `drop-shadow(0 0 5px ${teal})` } : undefined}
+        filter={stage >= 0 ? glowUrl(uid, stage === 0 ? "bloom-strong" : "bloom") : undefined}
       />
       <circle
         cx={72}
@@ -102,7 +81,7 @@ function ReactionTrack({ stage, reduced }: { stage: number; reduced: boolean }) 
         d="M 92 58 L 122 58"
         stroke={stage >= 1 ? cyan : dim}
         strokeWidth={2}
-        markerEnd="url(#cl-arrow)"
+        markerEnd={`url(#${uid}-cl-arrow)`}
       />
 
       {/* stage 1: strained ring — pulses while it is the active step */}
@@ -122,16 +101,14 @@ function ReactionTrack({ stage, reduced }: { stage: number; reduced: boolean }) 
           repeat: stage === 1 && !reduced ? Number.POSITIVE_INFINITY : 0,
           ease: "easeInOut",
         }}
-        style={{
-          transformOrigin: `146px ${MID}px`,
-          filter: stage >= 1 ? `drop-shadow(0 0 5px ${amber})` : undefined,
-        }}
+        style={{ transformOrigin: `146px ${MID}px` }}
+        filter={stage >= 1 ? glowUrl(uid, "bloom") : undefined}
       />
       <path
         d="M 178 58 L 208 58"
         stroke={stage >= 2 ? cyan : dim}
         strokeWidth={2}
-        markerEnd="url(#cl-arrow)"
+        markerEnd={`url(#${uid}-cl-arrow)`}
       />
 
       {/* stage 2: excited product + photon bloom */}
@@ -142,6 +119,7 @@ function ReactionTrack({ stage, reduced }: { stage: number; reduced: boolean }) 
         fill={`color-mix(in oklab, ${teal} 20%, transparent)`}
         stroke={stage >= 2 ? teal : dim}
         strokeWidth={2}
+        filter={stage >= 2 ? glowUrl(uid, "bloom") : undefined}
       />
       <AnimatePresence>
         {stage >= 2 && (
@@ -151,7 +129,8 @@ function ReactionTrack({ stage, reduced }: { stage: number; reduced: boolean }) 
             animate={{ opacity: 1, scale: reduced ? 1 : [0.4, 1.25, 1] }}
             exit={{ opacity: 0 }}
             transition={{ duration: reduced ? 0 : 0.6, ease: [0.34, 1.56, 0.64, 1] }}
-            style={{ transformOrigin: `272px ${MID}px`, filter: `drop-shadow(0 0 10px ${cyan})` }}
+            style={{ transformOrigin: `272px ${MID}px` }}
+            filter={glowUrl(uid, "bloom-strong")}
           >
             <circle cx={272} cy={MID} r={9} fill={cyan} />
             {[0, 45, 90, 135, 180, 225, 270, 315].map((a) => {
@@ -174,7 +153,14 @@ function ReactionTrack({ stage, reduced }: { stage: number; reduced: boolean }) 
       </AnimatePresence>
 
       <defs>
-        <marker id="cl-arrow" markerWidth={8} markerHeight={8} refX={6} refY={3} orient="auto">
+        <marker
+          id={`${uid}-cl-arrow`}
+          markerWidth={8}
+          markerHeight={8}
+          refX={6}
+          refY={3}
+          orient="auto"
+        >
           <path d="M0,0 L6,3 L0,6 Z" fill="var(--cyan)" />
         </marker>
       </defs>
@@ -193,7 +179,7 @@ function EfficiencyBar({
     <div className="flex flex-col gap-1">
       <div className="flex items-baseline justify-between gap-2">
         <span className="font-sans text-xs text-foreground">{name}</span>
-        <span className="font-sans text-[0.6rem] text-subtle">{heat}</span>
+        <span className="font-sans text-xs text-subtle">{heat}</span>
       </div>
       <div
         className="flex h-3 w-full overflow-hidden rounded-full bg-[color-mix(in_oklab,var(--amber)_35%,var(--surface))]"
@@ -211,13 +197,16 @@ function EfficiencyBar({
   );
 }
 
-export function ColdLightReaction({ locale = "vi", caption, className }: ColdLightReactionProps) {
+export function ColdLightReaction({ caption, className }: ColdLightReactionProps) {
+  const t = useTranslations("viz.coldLight");
   const reduced = useReducedMotionSafe();
-  const t = STRINGS[locale];
+  const uid = useId();
+  const steps = t.raw("steps") as Step[];
   const [stage, setStage] = useState(0);
-  const [playing, setPlaying] = useState(!reduced);
-  const last = t.steps.length - 1;
-  const current = t.steps[stage];
+  // Deterministic initial play state → SSR-safe; the loop self-gates on reduced.
+  const [playing, setPlaying] = useState(true);
+  const last = steps.length - 1;
+  const current = steps[stage];
 
   // Auto-advance through the reaction while playing; loops back to the start.
   useEffect(() => {
@@ -228,51 +217,81 @@ export function ColdLightReaction({ locale = "vi", caption, className }: ColdLig
 
   return (
     <VizFigure
-      title={t.title}
+      title={t("title")}
       caption={caption}
+      tone="cyan"
       className={className}
       controls={
         <button
           type="button"
           onClick={() => setPlaying((p) => !p)}
           aria-pressed={playing}
-          className="rounded-md border border-border px-3 py-1 font-sans text-xs transition-colors"
+          className="flex items-center gap-1.5 rounded-md border px-3 py-1 font-sans text-xs font-600 transition-all duration-200"
           style={{
             color: "var(--cyan)",
+            borderColor: playing
+              ? "color-mix(in oklab, var(--cyan) 45%, transparent)"
+              : "var(--border)",
             background: playing
               ? "color-mix(in oklab, var(--cyan) 12%, transparent)"
               : "transparent",
+            boxShadow: playing
+              ? "0 0 16px -6px color-mix(in oklab, var(--cyan) 80%, transparent)"
+              : "none",
           }}
         >
-          {playing ? t.pause : t.play}
+          <span
+            aria-hidden
+            className="h-1.5 w-1.5 rounded-full"
+            style={{
+              background: "var(--cyan)",
+              boxShadow: playing ? "0 0 6px var(--cyan)" : "none",
+              opacity: playing ? 1 : 0.4,
+            }}
+          />
+          {playing ? t("pause") : t("play")}
         </button>
       }
     >
       <div className="rounded-xl border border-border bg-void/30 p-3">
-        <ReactionTrack stage={stage} reduced={reduced} />
+        <ReactionTrack stage={stage} reduced={reduced} uid={uid} />
       </div>
 
-      {/* step scrubber */}
+      {/* step scrubber — taller hit target with an inner fill bar so it reads as
+          a tactile progress control, not a hairline */}
       <div className="mt-3 flex items-center gap-2">
-        {t.steps.map((s, i) => (
-          <button
-            key={s.label}
-            type="button"
-            aria-label={`${t.step} ${i + 1}`}
-            aria-current={stage === i}
-            onClick={() => {
-              setPlaying(false);
-              setStage(i);
-            }}
-            className="h-1.5 flex-1 rounded-full transition-colors"
-            style={{
-              background: i <= stage ? "var(--cyan)" : "var(--border-strong)",
-              boxShadow: i <= stage ? "0 0 6px var(--cyan)" : "none",
-            }}
-          />
-        ))}
-        <span className="ml-1 shrink-0 font-sans text-[0.65rem] text-subtle">
-          {t.step} {stage + 1}/{t.steps.length}
+        {steps.map((s, i) => {
+          const done = i <= stage;
+          return (
+            <button
+              key={s.label}
+              type="button"
+              aria-label={`${t("step")} ${i + 1}`}
+              aria-current={stage === i}
+              onClick={() => {
+                setPlaying(false);
+                setStage(i);
+              }}
+              className="group flex h-5 flex-1 items-center rounded-full px-0.5 transition-colors"
+              style={{
+                background: "color-mix(in oklab, var(--cyan) 8%, var(--void))",
+                boxShadow: done
+                  ? "inset 0 0 0 1px color-mix(in oklab, var(--cyan) 45%, transparent)"
+                  : "inset 0 0 0 1px var(--border)",
+              }}
+            >
+              <span
+                className="h-1.5 w-full rounded-full transition-all"
+                style={{
+                  background: done ? "var(--cyan)" : "var(--border-strong)",
+                  boxShadow: done ? "0 0 8px var(--cyan)" : "none",
+                }}
+              />
+            </button>
+          );
+        })}
+        <span className="ml-1 shrink-0 font-sans text-xs text-subtle">
+          {t("step")} {stage + 1}/{steps.length}
         </span>
       </div>
 
@@ -297,12 +316,19 @@ export function ColdLightReaction({ locale = "vi", caption, className }: ColdLig
       </AnimatePresence>
 
       <div className="mt-4">
-        <p className="mb-2 font-sans text-[0.6rem] uppercase tracking-wider text-subtle">
-          {t.effTitle}
+        <p className="mb-2 font-sans text-xs uppercase tracking-wider text-subtle">
+          {t("effTitle")}
         </p>
         <div className="flex flex-col gap-2.5">
-          {t.eff.map((e) => (
-            <EfficiencyBar key={e.name} {...e} legendLight={t.legendLight} reduced={reduced} />
+          {EFF_KEYS.map((key) => (
+            <EfficiencyBar
+              key={key}
+              name={t(`eff.${key}.name`)}
+              heat={t(`eff.${key}.heat`)}
+              light={EFF_LIGHT[key]}
+              legendLight={t("legendLight")}
+              reduced={reduced}
+            />
           ))}
         </div>
       </div>

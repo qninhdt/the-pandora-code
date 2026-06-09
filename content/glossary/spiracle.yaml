@@ -1,0 +1,26 @@
+id: spiracle
+label:
+  vi: Lỗ thở
+  en: Spiracle
+definition:
+  vi: >-
+    Những lỗ nhỏ có van dọc thân côn trùng, nơi không khí đi vào hệ thống ống khí
+    (tracheae) dẫn thẳng tới các mô mà bỏ qua máu hoàn toàn. Cực kỳ hiệu quả ở kích
+    thước nhỏ, nhưng kèm một trần cứng: khuếch tán thụ động trong ống tắt dần rất
+    nhanh theo khoảng cách, nên ống không thể vươn tới lõi của một cơ thể lớn. Kỷ
+    nguyên duy nhất từng có côn trùng khổng lồ - những con chuồn chuồn sải cánh như
+    diều hâu - là một đoạn thời gian sâu khi không khí chứa nhiều oxy hơn hẳn, đủ
+    sức ép sâu xuống các ống ấy.
+  en: >-
+    The small valved pores along an insect's body where air enters the tracheal
+    system - tiny pipes that carry air straight to the tissues, bypassing blood
+    entirely. Wonderfully efficient at small size, but with a hard ceiling: passive
+    diffusion down a tube fades fast with distance, so the pipes cannot reach the
+    core of a large body. The only era that ever grew giant insects - dragonflies
+    with a hawk's wingspan - was a stretch of deep time when the air held far more
+    oxygen, enough to force its way deeper down those pipes.
+see_also:
+  - ficks-law
+  - tidal-ventilation
+category: bio
+cover_prompt: A painted close study of a row of small valved breathing pores along a dark insect flank, fine glowing air-pipes branching inward from each, cool teal against deep indigo, painterly, no text, no labels, no numbers.

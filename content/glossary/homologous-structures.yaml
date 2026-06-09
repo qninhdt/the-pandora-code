@@ -1,0 +1,12 @@
+id: homologous-structures
+label:
+  vi: Cấu trúc tương đồng nguồn gốc
+  en: Homologous structures
+definition:
+  vi: Những cấu trúc sinh học ở các loài khác nhau bắt nguồn từ cùng một bộ phận cơ thể của tổ tiên chung, dù cho hiện tại chức năng và hình dáng của chúng có khác biệt ra sao - như cánh của loài dơi, vây của cá voi và cánh tay của con người. Sự tồn tại của chúng là bằng chứng rành rành cho một gốc gác chung, trái ngược hoàn toàn với những cấu trúc tương đồng bề ngoài nhưng khác biệt về bản chất do tiến hóa hội tụ tạo ra.
+  en: Features that are similar because they were inherited from a shared ancestor, even when later put to very different uses - like the human arm, the whale's flipper and the bat's wing, all built from the same tetrapod forelimb bones in the same order. Homology is the signature of kinship; it stands opposite to analogy, which is the signature of convergence. Telling the two apart is the heart of reading an organism's history.
+see_also:
+- analogous-structures
+- convergent-evolution
+category: bio
+cover_prompt: A painted overlay of a human arm, a bat wing and a whale flipper showing the same bone sequence inside different outlines, cool teal-cyan palette, painterly plate, no text, no labels.

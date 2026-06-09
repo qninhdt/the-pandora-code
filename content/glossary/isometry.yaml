@@ -1,0 +1,13 @@
+id: isometry
+label:
+  vi: Đồng dạng tỉ lệ (isometry)
+  en: Isometry
+definition:
+  vi: 'Trường hợp một cơ thể lớn lên mà giữ nguyên y hệt hình dạng và tỉ lệ - mọi chiều dài đổi theo cùng một hệ số. Isometry là cái nền để so sánh: trong thực tế hầu hết sinh vật KHÔNG lớn lên kiểu này, vì định luật bình phương - lập phương khiến một con vật phóng to đồng dạng sẽ gãy xương dưới chính trọng lượng của mình. Khi một thông số sinh học thay đổi lệch khỏi đồng dạng - chẳng hạn xương dày lên nhanh hơn chiều dài - ta gọi đó là dị sinh trưởng (allometry). Vì thế đo độ lệch khỏi isometry chính là cách phát hiện cơ thể đã buộc phải đổi hình ra sao để chống đỡ kích thước.'
+  en: 'The case where a body grows while keeping its shape and proportions identical - every length changes by the same factor. Isometry is the baseline for comparison: in reality most organisms do NOT grow this way, because the square-cube law means an isometrically enlarged animal would break its own bones under its weight. When a biological measure departs from isometry - bone thickening faster than length, say - we call it allometry. Measuring the departure from isometry is therefore how we detect the ways a body has been forced to change shape to cope with size.'
+see_also:
+- allometry
+- square-cube-law
+- scaling-exponent
+category: concept
+cover_prompt: A painted diagram of an animal silhouette and a perfectly proportional larger copy of it side by side, identical in shape, cool teal line-work glowing on deep indigo, hand-painted texture, no text, no numbers, no labels.

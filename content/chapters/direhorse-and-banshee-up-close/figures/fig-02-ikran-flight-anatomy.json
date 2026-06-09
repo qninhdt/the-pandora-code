@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-ikran-flight-anatomy",
+  "chapter_slug": "direhorse-and-banshee-up-close",
+  "role": "diagram",
+  "narrative_purpose": "Shows how the hexapod body plan became a flyer: the ikran's four limbs all remade into flight surfaces, with the deep chest keel and hollow carbon bone that power the wingbeat - the anatomy behind the chapter's wing-loading argument.",
+  "subject": "A mountain banshee specimen with wings spread, seen so the flight build is clear: two great fore-wings stretched on elongated forelimb fingers, and a smaller pair of hind wings (the 'stabs') behind them - four limbs, all become wings. A deep keel projects from the chest where the flight muscles anchor. The wing bones are visibly hollow and threaded with darker carbon-like fibre, the membranes thin and faintly translucent with semi-rigid vanes along the trailing edge.",
+  "scene": "A dark display space, the banshee suspended with wings outstretched as if pinned for study, deep haze beyond.",
+  "camera": "A three-quarter dorsal view showing both wing pairs and the chest keel, the whole animal sharp, background soft.",
+  "light": "Cool clinical glow plus faint bioluminescence within the hollow wing bones and along the membrane vanes; deep indigo shadow.",
+  "palette": "Void-indigo ground, cool bone-grey and pale teal on the frame, faint cyan glow in the hollow bones, scarce amber at the eyes.",
+  "style": "Painterly naturalist specimen plate, hand-painted texture, anatomical clarity.",
+  "detail_level": "Crisp on the four wing-limbs, the chest keel, the hollow carbon-threaded wing bones and trailing-edge vanes; background dissolving into haze.",
+  "composition": "Wings spread wide filling the frame, chest keel toward the viewer, generous dark margins, 16:9.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "riders", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with bioluminescent key from within the bone. Same dark glowing-specimen mood as the chapter cover.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/direhorse-and-banshee-up-close/fig-00-cover.png"]
+}

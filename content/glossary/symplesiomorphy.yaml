@@ -1,0 +1,13 @@
+id: symplesiomorphy
+label:
+  vi: Đặc điểm tổ tiên chung (symplesiomorphy)
+  en: Symplesiomorphy
+definition:
+  vi: 'Một đặc điểm tổ tiên được nhiều loài cùng chia sẻ - một nét cổ mà tất cả đều thừa hưởng từ một tổ tiên xa. Điểm mấu chốt của phân nhánh học là: đặc điểm tổ tiên chung KHÔNG dùng để xếp nhóm được. Nó là cái bẫy. Vì mọi thành viên đều mang nó, nó không tách ra được nhóm con nào có quan hệ gần hơn; xếp nhóm dựa trên nó sẽ cho ra những nhóm cận ngành giả tạo. Chỉ những đặc điểm chung *dẫn xuất* (synapomorphy) mới chỉ ra được huyết thống gần.'
+  en: 'An ancestral trait shared by many species - an old feature all of them inherited from a distant common ancestor. The crux of cladistics is that a symplesiomorphy CANNOT be used to group. It is the trap. Because every member carries it, it cannot single out any more-closely-related subgroup; grouping by it produces artificial paraphyletic groups. Only shared *derived* traits - synapomorphies - reveal close kinship.'
+see_also:
+- plesiomorphy
+- synapomorphy
+- paraphyly
+category: bio
+cover_prompt: A painted lineup of different glowing creatures all bearing one identical old feature, a tempting bracket trying to group them by it shown faded and rejected, cool indigo and teal, bioluminescent, no text, no labels.

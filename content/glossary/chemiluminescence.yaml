@@ -1,0 +1,13 @@
+id: chemiluminescence
+label:
+  vi: Phát quang hóa học
+  en: Chemiluminescence
+definition:
+  vi: Ánh sáng sinh ra trực tiếp từ một phản ứng hóa học, không qua bước nung nóng. Một phản ứng thích hợp đẩy sản phẩm của nó vào trạng thái điện tử bị kích thích; khi sản phẩm rơi trở về trạng thái nền, phần năng lượng chênh lệch thoát ra dưới dạng một hạt ánh sáng. Khác hẳn với sự nung sáng (như dây tóc bóng đèn hay ngọn lửa), phát quang hóa học gần như không tỏa nhiệt - nên người ta gọi nó là "ánh sáng lạnh". Phát quang sinh học chính là phát quang hóa học diễn ra bên trong cơ thể sống.
+  en: Light produced directly by a chemical reaction, with no heating step. A suitable reaction kicks its product into an excited electronic state; as the product drops back to its ground state, the energy difference leaves as a particle of light. Unlike incandescence (a filament or a flame), chemiluminescence wastes almost no heat - which is why it is called "cold light". Bioluminescence is chemiluminescence performed inside a living organism.
+see_also:
+- bioluminescence
+- quantum-yield
+- luciferin
+category: concept
+cover_prompt: A dark flask in which a chemical reaction glows cool cyan from within, no flame, no heat, cool teal palette, no text, no labels.

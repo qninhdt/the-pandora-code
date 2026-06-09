@@ -20,6 +20,7 @@
     "gen-anchor": "tsx scripts/gen-anchor.ts",
     "gen-glossary-covers": "tsx scripts/gen-glossary-covers.ts",
     "gen-page-bg": "tsx scripts/gen-page-backgrounds.ts",
+    "convert-webp": "tsx scripts/convert-figures-webp.ts",
     "check-glossary": "tsx scripts/check-glossary-terms.ts",
     "typecheck:scripts": "tsc --noEmit -p scripts/tsconfig.json"
   },
