@@ -1,0 +1,16 @@
+id: integrated-information-theory
+label:
+  vi: Thuyết thông tin tích hợp (IIT)
+  en: Integrated Information Theory (IIT)
+definition:
+  vi: >-
+    Lý thuyết về ý thức do nhà thần kinh học Giulio Tononi đề xướng, cho rằng ý thức không gắn với một chất nền cụ thể nào (thịt, carbon hay silicon) mà chính là lượng *thông tin tích hợp* mà một hệ thống sinh ra, ký hiệu bằng giá trị Φ (phi). Để có Φ cao, hệ thống vừa phải phân hóa cao (tạo được nhiều trạng thái khác nhau) vừa phải tích hợp cao (thông tin không thể tách rời thành các phần độc lập), đòi hỏi những vòng phản hồi quặt ngược nhanh và không thể quy giản. Theo IIT, một mạng truyền thẳng khổng lồ - dù hành xử thông minh đến đâu - vẫn có Φ bằng không. Lý thuyết này gây tranh cãi gay gắt, có người gọi nó là "ngụy khoa học" vì khó kiểm chứng, nhưng nó vẫn là nỗ lực toán học chặt chẽ nhất để đo ý thức.
+  en: >-
+    A theory of consciousness proposed by neuroscientist Giulio Tononi, holding that consciousness is not tied to any particular substrate (meat, carbon, or silicon) but is identical to the amount of *integrated information* a system generates, denoted by the value Φ (phi). For a high Φ, a system must be both highly differentiated (capable of many distinct states) and highly integrated (its information cannot be split into independent parts), which demands fast, irreducible recurrent feedback. Under IIT, a vast feed-forward network - however intelligently it behaves - has a Φ of zero. The theory is fiercely contested, even branded "pseudoscience" for being hard to test, but it remains the most mathematically rigorous attempt to measure consciousness.
+see_also:
+- global-workspace-theory
+- connectome
+- hard-problem-of-consciousness
+- emergence
+category: concept
+cover_prompt: A dense web of nodes bound by glowing cyan threads that cannot be cleanly cut apart, a faint Greek letter-like glyph of light at the centre suggested only as a glow, dark field, no text, no labels.

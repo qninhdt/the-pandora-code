@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-substrate-paradox",
+  "chapter_slug": "the-wood-wide-web",
+  "role": "diagram",
+  "narrative_purpose": "Makes the chapter's hinge visible: two trees too far apart for their roots to ever touch — the roots reaching out and falling short across a gap — while a far finer web of fungal threads quietly bridges the void between them, resolving the paradox that roots alone could never wire a planet.",
+  "subject": "Two large trees separated by a wide gap of soil, their thick roots reaching toward each other but clearly stopping short, a visible empty span between the two root systems; threading across that gap, far finer and almost invisible, a delicate web of glowing fungal filaments that actually connects the two, doing the job the roots cannot.",
+  "scene": "An underground cross-section beneath two trees with a stream or rocky barrier on the surface above the gap, emphasising the distance the roots cannot cross.",
+  "camera": "A wide side-on cross-section showing both trees and the full gap between their roots.",
+  "light": "Dim earthy ambient above; the thick roots rendered solid and unlit, the fine fungal bridge glowing faint cyan as the only luminous element across the gap.",
+  "palette": "Deep void-indigo soil, muted brown-grey roots, vivid but delicate Pandora cyan only on the fungal threads bridging the void.",
+  "style": "Painterly speculative-biology naturalist plate with diagrammatic clarity, hand-painted texture.",
+  "detail_level": "Crisp on the two root systems and the failing gap between them; the fungal bridge fine and luminous; surroundings soft.",
+  "composition": "Two trees at left and right edges, a deliberately wide dark gap centred between their roots, the thin glowing bridge crossing it, generous dark space for labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Earth-science/Pandora-bridging figure in the book's cool palette; the contrast between thick-but-short roots and fine-but-far-reaching fungus must read instantly; leave dark space for callout labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

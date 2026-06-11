@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-slow-signal",
+  "chapter_slug": "the-wood-wide-web",
+  "role": "diagram",
+  "narrative_purpose": "The physics reality-check on canon's 'like the synapses between neurons' line: a neuron fires in milliseconds while a real fungal signal creeps along at half a centimetre a minute — a vast difference in timescale that decides whether a network of trees could ever think.",
+  "subject": "A side-by-side comparison rendered as two halves of one dark plate. On the left, a single human neuron firing a bright, sharp pulse across a synaptic gap, drawn with crisp fast motion streaks and a clean burst of light at the synapse. On the right, a fungal hypha — a fine tube — with a dim, sluggish pulse of light crawling slowly along it, drawn faint and smeared with a sense of glacial slowness; a subtle clock or sweep motif behind each side underscores the difference between thousandths of a second and minutes.",
+  "scene": "An abstract dark biological field, the neuron upper-left, the hypha lower-right, deep negative space between them so the two timescales read as separate worlds.",
+  "camera": "A close macro view of both structures, balanced left and right, neutral straight-on framing.",
+  "light": "The neuron's spike is a bright, sharp cyan-white flash; the fungal pulse is a dim, soft teal smear that barely glows — light itself encoding fast versus slow.",
+  "palette": "Void-indigo base; a bright sharp cyan for the fast neuron, a dim muted teal for the slow hypha, a faint magenta accent on the synaptic burst.",
+  "style": "Painterly speculative-biology naturalist plate with faint diagrammatic clarity, hand-painted texture.",
+  "detail_level": "Crisp and bright on the neuron and synapse; deliberately soft, dim, and slow-feeling on the fungal hypha.",
+  "composition": "Two diagonal halves with open dark space between, the neuron crisp top-left and the hypha faint bottom-right, room beside each for a callout.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Earth-science figure rendered in the book's cool palette and from-within glow language so it sits beside the Pandoran plates; keep open dark space beside each structure for callout labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

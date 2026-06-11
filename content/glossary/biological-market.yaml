@@ -1,0 +1,28 @@
+id: biological-market
+label:
+  vi: Thị trường sinh học
+  en: Biological market
+definition:
+  vi: >-
+    Cách nhìn một mối quan hệ cộng sinh như một cái chợ, nơi hai bên trao đổi hàng hóa theo những
+    quy luật gần giống cung-cầu. Công trình của Toby Kiers cho thấy trong quan hệ nấm rễ, cây ưu tiên
+    dồn carbon cho những sợi nấm trả về nhiều phốt-pho nhất, và nấm cũng dồn phốt-pho cho những rễ
+    cây trả carbon hậu nhất — cả hai cùng thưởng cho đối tác tốt và "trừng phạt" kẻ keo kiệt. Không
+    cần một trí tuệ điều phối nào: chỉ cần hai bên đều biết thưởng và phạt là đủ để cuộc trao đổi
+    luôn sòng phẳng.
+  en: >-
+    A way of seeing a symbiosis as a marketplace, where two parties trade goods under rules much like
+    supply and demand. Toby Kiers' work showed that in the mycorrhizal partnership, plants
+    preferentially route carbon to the fungal threads that deliver the most phosphorus, and fungi
+    route phosphorus to the roots that pay the best carbon — both sides rewarding good partners and
+    "sanctioning" stingy ones. No coordinating intelligence is needed: two parties able to reward and
+    withhold are enough to keep the trade fair.
+see_also:
+  - mutualism
+  - mycorrhiza
+  - common-mycorrhizal-network
+category: bio
+cover_prompt: >-
+  A naturalist diagram of a plant root and a fungal network as two trading partners, glowing tokens
+  of carbon and phosphorus passing between them along balanced scales, a marketplace mood rendered in
+  cool teal and amber against dark soil, painterly style, no text, no labels.

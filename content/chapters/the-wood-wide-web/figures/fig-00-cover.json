@@ -1,0 +1,20 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "the-wood-wide-web",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate on the landing book-map: the hidden wiring of a forest revealed beneath the soil — a glowing web of fine fungal threads coupling the roots of many trees into one luminous circuit, the literal picture of 'the roots are all connected.'",
+  "subject": "A dramatic cross-section of a Pandoran forest: above the soil line, the dark trunks and buttressed roots of several great trees rise into night; below the soil line, the earth is peeled away to reveal a vast, glowing lattice of impossibly fine fungal threads weaving between and linking the roots of every tree into a single shimmering network, brightest where many threads converge.",
+  "scene": "A night forest in vertical cross-section, the underground half dominating: a dark soil volume threaded everywhere with a luminous mycelial web, roots descending into it like terminals plugging into cable.",
+  "camera": "A wide cross-sectional view, eye-level with the soil line so both the dark forest above and the lit network below share the frame.",
+  "light": "Bioluminescent key from the fungal web itself — cool cyan and teal light radiating from the underground threads, lighting the roots from below; the forest above kept dark and atmospheric.",
+  "palette": "Void-indigo base, dominant Pandora cyan and living teal in the glowing underground web, the forest above near-black with faint planetshine.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence, luminous and atmospheric.",
+  "detail_level": "Crisp and intricate on the underground mycelial web and the root terminals; the forest above softer and dissolving into haze.",
+  "composition": "Horizon/soil line low-to-centre, the glowing network filling the lower two-thirds, dark forest and negative space above for the plate to breathe.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "modern Earth objects"],
+  "consistency_notes": "Na'vi absent; this is a landscape/architecture plate. Cool Pandora palette with from-within bioluminescent key. The establishing 'the forest is one wired circuit' mood that anchors the whole chapter.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

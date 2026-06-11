@@ -1,0 +1,29 @@
+id: mother-tree-hypothesis
+label:
+  vi: Giả thuyết "cây mẹ"
+  en: The mother tree hypothesis
+definition:
+  vi: >-
+    Ý tưởng - gắn liền với Suzanne Simard - rằng những cây lớn nhất, già nhất trong rừng đóng vai
+    trò trung tâm: là các nút kết nối dày đặc nhất trong mạng nấm rễ, và chủ động bơm carbon dư thừa
+    qua mạng để nuôi những cây non bên dưới, ưu ái chính dòng dõi của mình, thậm chí trao lại tài
+    nguyên khi sắp chết. Đây là hình ảnh đẹp đẽ, gần như mang tính mẫu tử, về khu rừng - và là phép
+    so sánh thực tế gần nhất với Cây Linh Hồn của Pandora. Nó cũng chính là nấc thang mà khoa học
+    chưa hề chứng minh: bản tổng quan 2023 không tìm thấy một bằng chứng thực địa nào cho phần "ưu ái
+    dòng dõi".
+  en: >-
+    The idea - associated with Suzanne Simard - that the largest, oldest trees in a forest act as
+    central hubs: the most richly connected nodes in the mycorrhizal network, deliberately channeling
+    surplus carbon through it to nourish understorey seedlings, preferentially their own kin, even
+    passing on resources as they die. It is a beautiful, almost maternal picture of the forest - and
+    the closest real-world analogue to Pandora's Tree of Souls. It is also the rung science has not
+    earned: the 2023 review found zero field evidence for the kin-directed claim.
+see_also:
+  - common-mycorrhizal-network
+  - source-sink-dynamics
+  - positive-citation-bias
+category: concept
+cover_prompt: >-
+  A painted study of one immense old tree at the centre of a glowing underground web, fine threads
+  radiating to many small saplings around it, the great tree lit warmest, cool teal-and-amber
+  bioluminescent palette on a dark indigo ground, no text, no labels.

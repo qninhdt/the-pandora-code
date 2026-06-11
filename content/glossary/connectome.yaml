@@ -1,0 +1,15 @@
+id: connectome
+label:
+  vi: Bản đồ kết nối thần kinh
+  en: Connectome
+definition:
+  vi: >-
+    Sơ đồ đầy đủ mọi đường nối trong một hệ thần kinh - ai nối với ai, theo hướng nào. Ngành dựng những bản đồ này (connectomics) dạy ta một bài học sắc bén: số lượng kết nối thuần túy không hề tạo nên một tâm trí. Tiểu não người chứa khoảng 69 tỷ trong tổng số 86 tỷ neuron - tức gần 80% - nhưng gần như không dính dáng gì đến ý thức, vì nó là mạch truyền thẳng một chiều. Vỏ não, với phần neuron ít hơn nhiều, lại sinh ra toàn bộ trải nghiệm chủ quan, nhờ vô số vòng phản hồi quặt ngược chằng chịt. Kiến trúc, chứ không phải kích thước, mới là điều quyết định.
+  en: >-
+    The complete wiring diagram of a nervous system - which cell connects to which, and in what direction. The field that builds these maps (connectomics) teaches a sharp lesson: raw connection count does not make a mind. The human cerebellum holds about 69 of the brain's 86 billion neurons - nearly 80% - yet has almost nothing to do with consciousness, because it is a one-way feed-forward circuit. The cortex, with far fewer neurons, generates the entire subjective experience, thanks to dense recurrent feedback loops. Architecture, not size, is what decides.
+see_also:
+- integrated-information-theory
+- global-workspace-theory
+- emergence
+category: concept
+cover_prompt: Two contrasting neural diagrams side by side, one a huge plain one-way grid of dim nodes, the other a small dense knot of glowing cyan looping connections, dark field, no text, no labels.

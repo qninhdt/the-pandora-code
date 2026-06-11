@@ -1,0 +1,15 @@
+id: basal-cognition
+label:
+  vi: Nhận thức nền tảng
+  en: Basal cognition
+definition:
+  vi: >-
+    Quan điểm - gắn liền với công trình của nhà sinh học Michael Levin - rằng nhận thức, trí nhớ và hành vi hướng đích không phải đặc quyền của mô thần kinh, mà mọi tế bào sống đều kết nối thành mạng điện sinh học để xử lý thông tin và cùng nhau giải các bài toán hình thái. Một tế bào đơn lẻ có một "phạm vi" mục tiêu nhỏ hẹp; khi nhiều tế bào nối với nhau, mục tiêu riêng của chúng hợp nhất thành mục tiêu tập thể. Não bộ con người chỉ là sự nhân rộng khổng lồ của chính cơ chế hợp tác điện sinh học ấy - nhưng "hành xử như thể có mục tiêu" vẫn không đồng nghĩa với "trải nghiệm" mục tiêu đó một cách chủ quan.
+  en: >-
+    The view - associated with biologist Michael Levin - that cognition, memory, and goal-directed behaviour are not the exclusive domain of neural tissue, but that all living cells form bioelectric networks to process information and cooperatively solve problems of shape and form. A single cell has a tiny "scope" of goals; when many cells connect, their individual goals merge into a collective one. A human brain is simply that same bioelectric cooperation scaled up enormously - but behaving *as if* you have a goal is still not the same as subjectively *experiencing* it.
+see_also:
+- cognitive-light-cone
+- distributed-cognition
+- emergence
+category: concept
+cover_prompt: A cluster of cells linked by faint glowing junctions forming a coordinated front, individual cells cyan, the linked group teal, dark background, no text, no labels.

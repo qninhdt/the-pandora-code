@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-grace-root-sample",
+  "chapter_slug": "the-wood-wide-web",
+  "role": "hero",
+  "narrative_purpose": "Opens the chapter by turning Grace's claim into an engineering question: a hand peels back the Pandoran forest floor to reveal that the roots above ground are only terminals, while the real wiring is a glowing lattice of fine threads spreading sideways through the dark, coupling one tree to the next.",
+  "subject": "A cross-section of the Pandoran forest floor at night. Above the soil line, the buttressed roots of a great tree; below it, those roots branch down into a glowing lattice of fine threads that light up cyan and reach sideways across the frame toward the roots of other trees, as if a hand had peeled back the earth to expose the circuitry of the forest.",
+  "scene": "Pandoran understorey at night with a slice of ground opened to reveal the belowground network; faint glowing flora above, dark rich soil threaded with light below.",
+  "camera": "A side-on cross-section view, the soil layer opened like a specimen cut, the lattice spreading horizontally.",
+  "light": "Bioluminescent key from the glowing thread-lattice below the soil, cyan and teal; dimmer ambient glow from the flora above.",
+  "palette": "Void-indigo soil base, Pandora cyan and living teal in the glowing thread network, faint warm accents from flora above.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence.",
+  "detail_level": "Crisp on the root terminals and the glowing lattice; the upper forest dissolving into haze.",
+  "composition": "The soil line crossing the frame, roots descending from above, the horizontal glowing web filling the lower two-thirds with open dark space for labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "modern Earth objects"],
+  "consistency_notes": "Cool Pandora palette with from-within bioluminescent key; the glowing-web visual language carries through the whole chapter. Keep open dark soil for callout labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

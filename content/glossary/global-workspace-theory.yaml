@@ -1,0 +1,15 @@
+id: global-workspace-theory
+label:
+  vi: Thuyết không gian làm việc toàn cục (GWT)
+  en: Global Workspace Theory (GWT)
+definition:
+  vi: >-
+    Lý thuyết về ý thức do Bernard Baars đề xuất và Stanislas Dehaene phát triển, nhìn ý thức qua lăng kính kiến trúc nhận thức. Não chứa vô số bộ xử lý chuyên biệt hoạt động vô thức (thị giác, trí nhớ, vận động...); ý thức chỉ nảy sinh khi thông tin từ một bộ xử lý được tuyển chọn và *phát sóng* ra một "không gian làm việc" rộng khắp, để mọi bộ xử lý khác cùng truy cập được một lúc. Dehaene gọi dấu hiệu thần kinh của khoảnh khắc phát sóng đó là "sự bùng cháy" (ignition) - một đợt bùng nổ hoạt động điện đồng bộ lan khắp các vùng não xa nhau. Thiếu một không gian làm việc toàn cục và khả năng bùng cháy như thế, một mạng lưới chỉ là một mớ các thường trình song song rời rạc, vô thức.
+  en: >-
+    A theory of consciousness proposed by Bernard Baars and developed by Stanislas Dehaene, viewing consciousness through cognitive architecture. The brain holds many specialized processors running unconsciously (vision, memory, motor control...); consciousness arises only when information from one processor is selected and *broadcast* to a wide "workspace" that all the other processors can access at once. Dehaene calls the neural signature of that broadcast "ignition" - a sudden burst of synchronized electrical activity sweeping across distant brain regions. Without a global workspace and the capacity for such ignition, a network is merely a collection of isolated, unconscious parallel routines.
+see_also:
+- integrated-information-theory
+- connectome
+- hard-problem-of-consciousness
+category: concept
+cover_prompt: Many small dim processor-boxes around the edge feeding into one central bright stage that suddenly flares cyan and broadcasts lines back out to all of them, dark field, no text, no labels.

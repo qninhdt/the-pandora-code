@@ -1,0 +1,20 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "what-eywa-is",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate on the landing book-map: a planet-spanning living network seen as both forest and circuitry at once — the image that captures the central question, is this a mind or a network? A web of glowing root-links beneath a Pandoran forest, vast and patternful, with no single bright centre that would read as a 'self'.",
+  "subject": "A wide view looking down through a darkened Pandoran forest into the soil beneath it, where a vast lattice of fine glowing root and fungal filaments spreads in every direction like a neural net, countless small nodes where filaments meet lit faintly in cyan, the web continuing past the frame in all directions with no obvious centre; above the soil the dim trunks and hanging fronds of the forest rise into darkness.",
+  "scene": "The boundary between forest floor and the lit underground network, the canopy a dark ceiling above and the glowing root-mesh receding into hazy depth below.",
+  "camera": "A three-quarter downward view that shows both the forest above and the luminous network below in one frame, deep perspective into the mesh.",
+  "light": "Bioluminescent key entirely from the glowing filament-junctions of the network; the forest above lit only by that upward spill; deep indigo shadow everywhere else.",
+  "palette": "Void-indigo base, dense Pandora cyan and living teal in the network filaments, a single faint warm node or two as rare accent so no warm area competes.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence.",
+  "detail_level": "Crisp on the nearest network junctions and root filaments; the forest above and the deep mesh dissolving into haze.",
+  "composition": "Network filling the lower two-thirds spreading edge to edge with no single focal hub, forest as a dark band above, generous hazy depth so the web feels planet-scale and unbounded.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "human figures", "modern Earth objects", "a single glowing brain shape"],
+  "consistency_notes": "Cool Pandora palette with from-within bioluminescent key; the network must read as distributed and centreless, not as a brain or a single organism — that centrelessness is the chapter's whole thesis.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style, no single central glowing brain",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

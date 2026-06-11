@@ -1,0 +1,23 @@
+id: distributed-cognition
+label:
+  vi: Nhận thức phân tán
+  en: Distributed cognition
+definition:
+  vi: >-
+    Khi việc xử lý thông tin và ra quyết định không nằm ở một bộ não trung tâm nào cả, mà trải
+    rộng ra khắp nhiều cá thể đơn giản và cả môi trường xung quanh. Mỗi phần chỉ tuân theo vài
+    quy tắc cục bộ, nhưng tổng thể lại hành xử như thể có một trí khôn điều phối - dù chẳng có ai
+    cầm trịch. Một tổ kiến tìm được đường ngắn nhất tới mồi, một đàn ong chọn được tổ mới tối ưu,
+    một khu rừng "phản ứng" trước mối đe dọa: tất cả đều là nhận thức không cần một kẻ tư duy.
+  en: >-
+    When information processing and decision-making live not in a central brain but spread across
+    many simple agents and the environment itself. Each part follows only a few local rules, yet
+    the whole behaves as if a coordinating intelligence were at work - even though no one is in
+    charge. An ant colony finding the shortest path to food, a bee swarm choosing an optimal new
+    home, a forest that "responds" to a threat: all are cognition without a single thinker.
+see_also:
+- swarm-intelligence
+- stigmergy
+- emergence
+category: concept
+cover_prompt: A glowing web of many small nodes lighting up in sequence across a dark field, no single bright center, cool cyan and teal, painterly, no text, no labels.

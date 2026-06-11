@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-quorum-swarm",
+  "chapter_slug": "what-eywa-is",
+  "role": "diagram",
+  "narrative_purpose": "Teaches swarm decision-making with no decider: scout bees dance for two candidate sites, inspect each other's finds, and one site wins purely because the count of scouts there crosses a threshold — the whole swarm tips on a quorum, with no central bee in charge.",
+  "subject": "A clustered swarm of small insects hanging from a branch at lower centre; thin glowing flight-paths arcing out to two distant hollows; a faint looping dance-path traced over the cluster; at one hollow the gathered scouts are visibly denser and brighter, crossing a softly marked ring-threshold so that hollow reads as the winner, while the other hollow stays sparse and dim; deliberately no single large directing insect anywhere.",
+  "scene": "A dim forest clearing, the swarm-branch foreground, two tree-hollows in the mid distance, haze beyond.",
+  "camera": "A wide naturalist three-quarter view taking in the cluster and both candidate hollows.",
+  "light": "Bioluminescent cyan key from the swarm cluster and the flight-paths; the winning hollow glows brighter as more scouts gather; the losing hollow dim.",
+  "palette": "Void-indigo base, Pandora cyan dominant for the swarm and paths, living teal on the foliage, a faint warm amber spark only at the winning hollow's threshold.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture.",
+  "detail_level": "Crisp on the cluster and the two hollows; flight-paths and far forest softening into haze.",
+  "composition": "Cluster low-centre, two hollows upper-left and upper-right, the brighter winner offset so dark space remains for labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "one large leader insect"],
+  "consistency_notes": "Earth-science figure rendered in the book's cool palette and from-within glow; keep open dark regions beside the cluster and each hollow for callouts.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

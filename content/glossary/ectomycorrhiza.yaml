@@ -1,0 +1,26 @@
+id: ectomycorrhiza
+label:
+  vi: Nấm rễ ngoại bào (ecto)
+  en: Ectomycorrhiza
+definition:
+  vi: >-
+    Loại nấm rễ gắn với phần lớn các cây gỗ lớn của rừng ôn đới và rừng phương bắc — thông, sồi,
+    linh sam, bạch dương — và là loại đứng sau hầu hết các câu chuyện "wood-wide web". Khác với loại
+    nội bào, nấm ở đây kín đáo hơn: nó không đâm vào tế bào rễ mà bọc quanh mỗi đầu rễ một lớp áo
+    dày (mantle) rồi luồn một mạng sợi mảnh len giữa các tế bào bên ngoài. Cuộc trao đổi carbon và
+    khoáng diễn ra qua mạng sợi đó.
+  en: >-
+    The mycorrhiza of most large trees in temperate and boreal forests — pine, oak, fir, birch — and
+    the type behind most "wood-wide web" stories. Unlike the arbuscular kind, the fungus here is more
+    discreet: it does not pierce the root cells but wraps each root tip in a dense sheath (a mantle)
+    and weaves a fine net of threads between the outer cells without entering them. Carbon and
+    minerals change hands across that net.
+see_also:
+  - mycorrhiza
+  - arbuscular-mycorrhiza
+  - common-mycorrhizal-network
+category: bio
+cover_prompt: >-
+  A naturalist cutaway of a tree root tip wrapped in a pale fungal sheath, a fine net of threads
+  woven between the outer root cells, fine hyphae radiating into dark soil, faint cyan glow,
+  painterly, cool palette, no text, no labels.

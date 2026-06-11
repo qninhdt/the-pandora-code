@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-slime-mould-map",
+  "chapter_slug": "what-eywa-is",
+  "role": "comparison",
+  "narrative_purpose": "Shows the slime mould solving a network-design problem with no brain: from a sprawling exploratory mass it prunes to an efficient transport web that mirrors an optimised rail map — brainless competence through pure local feedback, the headline case that breaks the 'brainless means stupid' link.",
+  "subject": "A two-stage comparison on one plate. Left: a single yellow-cyan slime-mould mass sprawling messily over a dark plate dotted with small food specks, branches reaching everywhere. Right: the same organism after pruning, now a clean efficient network of glowing tubes connecting the same specks in an elegant rail-map-like layout, redundant branches gone.",
+  "scene": "A dark wet culture plate seen from directly above, food specks scattered in a city-like constellation across both halves.",
+  "camera": "A flat top-down view of the plate, both stages side by side.",
+  "light": "The living tubes are the light source — dim and diffuse on the left sprawl, bright and confident along the pruned efficient network on the right.",
+  "palette": "Void-indigo plate, living-teal and Pandora-cyan glow in the organism, a faint warm amber on the food specks so the nodes read.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, organic.",
+  "detail_level": "Crisp on the tube networks of both stages; plate background flat and dark.",
+  "composition": "Two stages left and right with a clear gap between them, dark margins for labels at top and bottom.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "real-world city names"],
+  "consistency_notes": "Earth-science figure in the book's cool palette; left = messy exploration, right = pruned efficiency, the contrast obvious at a glance; keep dark margins for callouts.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

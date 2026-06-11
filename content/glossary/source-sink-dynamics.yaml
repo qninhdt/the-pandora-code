@@ -1,0 +1,27 @@
+id: source-sink-dynamics
+label:
+  vi: Động lực nguồn–đích
+  en: Source–sink dynamics
+definition:
+  vi: >-
+    Nguyên lý cho rằng vật chất có xu hướng chảy từ nơi dư thừa (nguồn) sang nơi khan hiếm (đích),
+    xuôi theo độ chênh nồng độ. Trong rừng, một cây được nắng và quang hợp mạnh là nguồn carbon; một
+    cây non bị che bóng, đói ăn, là đích. Khi hai cây nối chung một mạng nấm, carbon có thể chảy ròng
+    từ cây nguồn sang cây đích - chính hiện tượng mà thí nghiệm đồng vị của Simard đã đo được. Đây là
+    vật lý của sự chênh lệch, không phải lòng tốt: dòng chảy đi theo gradient, không theo ý định.
+  en: >-
+    The principle that material tends to flow from where it is abundant (a source) toward where it
+    is scarce (a sink), down a concentration gradient. In a forest, a sunlit tree photosynthesising
+    hard is a carbon source; a shaded, starving seedling is a sink. When two trees share a fungal
+    network, carbon can flow net from source to sink - exactly what Simard's isotope experiment
+    measured. This is the physics of a gradient, not kindness: the flow follows the slope, not an
+    intention.
+see_also:
+  - cytoplasmic-streaming
+  - common-mycorrhizal-network
+  - mother-tree-hypothesis
+category: concept
+cover_prompt: >-
+  A painted diagram of two trees joined by a glowing underground thread, faint particles drifting
+  net from a bright sunlit tree toward a dim shaded one along a gentle gradient, cool teal palette
+  on a dark indigo ground, no text, no labels.

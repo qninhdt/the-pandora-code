@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-wood-wide-web",
+  "chapter_slug": "the-wood-wide-web",
+  "role": "diagram",
+  "narrative_purpose": "Shows the real experiment behind the legend: two trees of different species, a tall sunlit one and a smaller shaded one, growing a few metres apart with roots enmeshed in a shared fungal web, and a faint net flow of carbon travelling from the sunlit tree through the fungus toward the shaded, struggling one along a source-to-sink gradient.",
+  "subject": "Two trees of clearly different species a few metres apart — one tall and bathed in light, one smaller and in shadow — their root systems below the soil line woven together by a shared web of fine fungal threads. Faint glowing particles trace a directional net flow of carbon from the sunlit tree, down through its roots, across the fungal web, and up into the shaded tree.",
+  "scene": "A forest-floor cross-section, sunlit canopy gap above the larger tree and shade over the smaller, the rich soil below opened to show the shared mycelial web.",
+  "camera": "A side-on cross-section view spanning both trees, above and below the soil line.",
+  "light": "A warm shaft of light on the source tree fading to cool shade on the sink tree; the fungal web and the flowing carbon particles glowing cyan-teal below ground.",
+  "palette": "Void-indigo soil, muted teal foliage, a single restrained warm light shaft, vivid Pandora cyan on the fungal web and the moving carbon.",
+  "style": "Painterly speculative-biology naturalist plate with diagrammatic clarity, hand-painted texture.",
+  "detail_level": "Crisp on both trees, the root coupling, and the directional flow; surrounding forest dissolving into haze.",
+  "composition": "Source tree left and taller, sink tree right and smaller, the shared web spanning the lower third, dark margins for labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Earth-science figure in the book's cool palette and from-within glow; keep the flow direction legible left-to-right and leave dark space for callout labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

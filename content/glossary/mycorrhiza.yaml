@@ -1,0 +1,28 @@
+id: mycorrhiza
+label:
+  vi: Nấm rễ (mycorrhiza)
+  en: Mycorrhiza
+definition:
+  vi: >-
+    Mối cộng sinh thân thiết giữa rễ cây và nấm trong đất - tên gọi bắt nguồn từ tiếng Hy Lạp,
+    nghĩa đen là "nấm-rễ". Cây cung cấp carbon (đường tạo ra từ quang hợp); nấm đáp lại bằng
+    phốt-pho, nitơ và nước hút từ một thể tích đất mà rễ không bao giờ với tới. Khoảng 80-90% loài
+    thực vật trên cạn hình thành mối quan hệ này, và nó đã tồn tại từ khi thực vật đầu tiên lên cạn
+    cách đây chừng 400 triệu năm.
+  en: >-
+    The intimate symbiosis between plant roots and soil fungi - the name is Greek for "fungus-root."
+    The plant supplies carbon (sugars made by photosynthesis); the fungus repays it with phosphorus,
+    nitrogen, and water drawn from a volume of soil no root could ever reach. Some 80-90% of land
+    plant species form this partnership, and it has existed since the first plants colonised land
+    roughly 400 million years ago.
+see_also:
+  - mycelium
+  - hypha
+  - arbuscular-mycorrhiza
+  - ectomycorrhiza
+  - mutualism
+category: bio
+cover_prompt: >-
+  A naturalist cutaway of a plant root in dark soil with fine pale fungal threads wrapping and
+  radiating from it, cool teal and faint cyan bioluminescent palette against deep indigo earth, no
+  text, no labels.

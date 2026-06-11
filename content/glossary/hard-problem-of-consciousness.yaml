@@ -1,0 +1,16 @@
+id: hard-problem-of-consciousness
+label:
+  vi: Bài toán hóc búa của ý thức
+  en: The hard problem of consciousness
+definition:
+  vi: >-
+    Câu hỏi do triết gia David Chalmers nêu ra: vì sao việc xử lý thông tin vật lý lại *đi kèm* với một trải nghiệm chủ quan từ bên trong - cái cảm giác "được làm" một hệ thống nào đó? Ta có thể, trên nguyên tắc, giải thích trọn vẹn mọi chức năng của não (cách nó nhận diện, ghi nhớ, ra quyết định) mà vẫn chưa hề chạm tới vì sao tất cả những việc đó lại *cảm thấy* như có gì đó. Thomas Nagel làm sắc câu hỏi này bằng "Làm một con dơi thì như thế nào?": ta có thể biết mọi dữ kiện vật lý về định vị bằng tiếng vang của dơi mà vẫn không biết được nó *như thế nào* từ bên trong. Đây chính là lý do vì sao chứng minh một mạng lưới biết tính toán còn xa mới bằng chứng minh nó biết cảm nhận.
+  en: >-
+    The question posed by philosopher David Chalmers: why is physical information processing *accompanied* by an inner, subjective experience - the felt sense of what it is like to be a given system? One could, in principle, fully explain every function of the brain (how it recognizes, remembers, decides) and still not have touched why any of it *feels* like something. Thomas Nagel sharpened it with "What is it like to be a bat?": you could know every physical fact about a bat's echolocation and still not know what it is like from the inside. It is precisely why showing that a network computes falls far short of showing that it feels.
+see_also:
+- integrated-information-theory
+- global-workspace-theory
+- functionalism
+- panpsychism
+category: concept
+cover_prompt: A glowing brain-like mesh on one side and an empty luminous void on the other separated by a dark unbridged gap, asking a question through composition alone, cool palette, no text, no labels.

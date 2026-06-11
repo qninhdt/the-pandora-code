@@ -9,6 +9,7 @@ import { CharacterMatrixCladogram } from "@/components/content/character-matrix-
 import { Chart } from "@/components/content/chart";
 import { ChiralityHandedness } from "@/components/content/chirality-handedness";
 import { CirculationBands } from "@/components/content/circulation-bands";
+import { ClaimAudit } from "@/components/content/claim-audit";
 import { ColdLightReaction } from "@/components/content/cold-light-reaction";
 import { Comparison } from "@/components/content/comparison";
 import { ConfidenceDial } from "@/components/content/confidence-dial";
@@ -29,16 +30,19 @@ import { GlowOriginsTree } from "@/components/content/glow-origins-tree";
 import { HabitableZoneExplorer } from "@/components/content/habitable-zone-explorer";
 import { HalfLifeDecay } from "@/components/content/half-life-decay";
 import { HoxColinearityMap } from "@/components/content/hox-colinearity-map";
+import { IntegrationVsSize } from "@/components/content/integration-vs-size";
 import { IsochronPlot } from "@/components/content/isochron-plot";
 import { KeystoneCascadeToggle } from "@/components/content/keystone-cascade-toggle";
 import { LimbFieldToggle } from "@/components/content/limb-field-toggle";
 import { LongBranchAttractionDemo } from "@/components/content/long-branch-attraction-demo";
 import { MagneticCompassExplorer } from "@/components/content/magnetic-compass-explorer";
+import { MycorrhizalMarket } from "@/components/content/mycorrhizal-market";
 import { NichePartitionExplorer } from "@/components/content/niche-partition-explorer";
 import { NightEyeOptics } from "@/components/content/night-eye-optics";
 import { OpenQuestions } from "@/components/content/open-questions";
 import { PhotophoreIntensity } from "@/components/content/photophore-intensity";
 import { PredatorPreyOscillator } from "@/components/content/predator-prey-oscillator";
+import { QuorumCascade } from "@/components/content/quorum-cascade";
 import { Quote } from "@/components/content/quote";
 import { ReplayTheTape } from "@/components/content/replay-the-tape";
 import { ScrollSequence } from "@/components/content/scroll-sequence";
@@ -77,6 +81,7 @@ export const pandoraMdxComponents = {
   Chart,
   ChiralityHandedness,
   CirculationBands,
+  ClaimAudit,
   ColdLightReaction,
   Comparison,
   ConfidenceDial,
@@ -102,8 +107,10 @@ export const pandoraMdxComponents = {
   HoxColinearityMap,
   KeystoneCascadeToggle,
   MagneticCompassExplorer,
+  MycorrhizalMarket,
   NichePartitionExplorer,
   IsochronPlot,
+  IntegrationVsSize,
   LimbFieldToggle,
   LongBranchAttractionDemo,
   NightEyeOptics,
@@ -111,6 +118,7 @@ export const pandoraMdxComponents = {
   OrbitClock,
   PhotophoreIntensity,
   PredatorPreyOscillator,
+  QuorumCascade,
   Quote,
   ReadingProgress,
   RelatedChapters,

@@ -1,0 +1,25 @@
+id: stigmergy
+label:
+  vi: Điều phối qua dấu vết (stigmergy)
+  en: Stigmergy
+definition:
+  vi: >-
+    Cách phối hợp gián tiếp, trong đó mỗi cá thể để lại một dấu vết trong môi trường, và chính dấu
+    vết ấy lại kích thích và dẫn dắt hành động của những cá thể đến sau. Mối xây những ụ đất khổng
+    lồ có hệ thống thông gió tinh vi mà không hề có bản vẽ: mỗi con thợ đắp một viên bùn tẩm
+    pheromone, và hình dạng cùng mùi của viên bùn trước đó quyết định nơi con kế tiếp đặt viên của
+    mình. Bộ nhớ và phép tính được "đẩy" ra ngoài, lưu ngay trong chính môi trường - một công trình
+    phức tạp lớn dần mà chẳng cần ai cầm trịch.
+  en: >-
+    A form of indirect coordination where each individual leaves a trace in the environment, and
+    that trace in turn stimulates and directs the actions of others that come later. Termites build
+    towering mounds with sophisticated ventilation and no blueprint: each worker deposits a pellet
+    of pheromone-laced mud, and the shape and scent of the previous pellet dictate where the next
+    worker places its own. Memory and computation are offloaded into the environment itself - a
+    complex structure grows with no one in charge.
+see_also:
+- swarm-intelligence
+- superorganism
+- emergence
+category: concept
+cover_prompt: A tall termite-mound-like structure in cross-section growing from countless small deposits, faint trails of light marking where builders followed earlier marks, cool teal and indigo palette, painterly naturalist plate, no text, no labels.

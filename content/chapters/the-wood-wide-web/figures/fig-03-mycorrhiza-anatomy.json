@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-mycorrhiza-anatomy",
+  "chapter_slug": "the-wood-wide-web",
+  "role": "diagram",
+  "narrative_purpose": "Teaches the two architectures of the root-fungus handshake side by side: the arbuscular type, where the fungus pushes inside the root cells and branches into tree-shaped arbuscules, versus the ectomycorrhizal type, where the fungus sheathes the root tip and threads between the cells without entering them — the real trading desks where carbon and phosphorus change hands.",
+  "subject": "A clean two-panel cutaway. Left panel: a root cross-section with fungal threads penetrating individual root cells and ballooning inside them into finely branched, tree-shaped arbuscules. Right panel: a root tip wrapped in a dense fungal sheath or mantle, with a net of threads running between the outer cells but not piercing them. From both, fine hyphae radiate outward into the surrounding soil.",
+  "scene": "A microscopic-anatomy view, the two root sections floating on a dark page with soil texture suggested faintly behind.",
+  "camera": "A close, clean scientific-illustration view of two root cross-sections at matched scale.",
+  "light": "Even diagrammatic light on the root structures; the fungal arbuscules and mantle picked out in a soft cyan-teal glow to read as the living interface.",
+  "palette": "Muted root tones in dim teal-grey, the fungal structures in luminous Pandora cyan and living teal against void-indigo.",
+  "style": "Painterly speculative-biology naturalist plate with strong diagrammatic clarity, hand-painted texture.",
+  "detail_level": "Crisp and detailed on both root cross-sections and the fungal structures inside/around them; soft elsewhere.",
+  "composition": "Two balanced panels left and right at matched scale, clear separation between them, dark margins for callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Pure Earth-science figure rendered in the book's cool palette and from-within glow so it sits beside the Pandoran plates; the arbuscule-inside-cell vs mantle-around-cell contrast must read clearly; leave open dark space beside each panel for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

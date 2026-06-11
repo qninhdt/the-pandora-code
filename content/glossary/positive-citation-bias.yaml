@@ -1,0 +1,28 @@
+id: positive-citation-bias
+label:
+  vi: Thiên kiến trích dẫn tích cực
+  en: Positive citation bias
+definition:
+  vi: >-
+    Khuynh hướng giới khoa học trích dẫn những kết quả hấp dẫn, khẳng định một giả thuyết, trong khi
+    bỏ qua các kết quả vô hiệu hay mâu thuẫn - khiến một tuyên bố "cứng" dần lên qua mỗi lần trích
+    dẫn dù chẳng có bằng chứng mới nào. Khi một nghiên cứu thận trọng cho thấy điều gì đó "có thể"
+    xảy ra, các bài sau lại trích nó như bằng chứng rằng điều đó "chắc chắn" xảy ra, và những lời dè
+    dặt của tác giả gốc bốc hơi dần. Bản tổng quan 2023 về mạng nấm rễ cho thấy đây chính là cơ chế
+    khiến câu chuyện "wood-wide web" vượt mặt dữ liệu: tần suất các tuyên bố thiếu cơ sở đã tăng gấp
+    đôi trong 25 năm.
+  en: >-
+    The tendency of a research community to cite exciting results that confirm a hypothesis while
+    overlooking null or contradictory ones - so a claim hardens with each citation even though no new
+    evidence has arrived. When a cautious study shows something is *possible*, later papers cite it as
+    proof it *happens*, and the original authors' hedges evaporate. The 2023 review of mycorrhizal
+    networks showed this is exactly how the wood-wide web story outran its data: the frequency of
+    unsupported claims doubled over 25 years.
+see_also:
+  - common-mycorrhizal-network
+  - mother-tree-hypothesis
+category: concept
+cover_prompt: >-
+  A painted conceptual study of a single small grain of evidence at the base growing into an
+  oversized glowing structure above it, the top far larger than its support, cool teal palette with
+  one warning-magenta thread, dark indigo ground, no text, no labels.

@@ -1,0 +1,25 @@
+id: mutualism
+label:
+  vi: Cộng sinh tương hỗ
+  en: Mutualism
+definition:
+  vi: >-
+    Mối quan hệ giữa hai loài mà cả hai bên đều có lợi. Cộng sinh nấm rễ là một ví dụ kinh điển: cây
+    trả đường (carbon) cho nấm, nấm trả khoáng và nước cho cây, và không bên nào sống tốt trên cạn
+    nếu thiếu bên kia. Quan trọng là cộng sinh tương hỗ không cần lòng vị tha — nó bền vững vì mỗi
+    bên đều thu lợi cho chính mình, và sẽ rạn nứt ngay khi một bên không còn được trả công xứng đáng.
+  en: >-
+    A relationship between two species in which both benefit. The mycorrhizal symbiosis is the
+    textbook case: the plant pays sugar (carbon) to the fungus, the fungus pays minerals and water
+    to the plant, and neither thrives on land without the other. Crucially, mutualism requires no
+    altruism — it is stable because each side gains for itself, and it frays the moment one party
+    stops being fairly paid.
+see_also:
+  - mycorrhiza
+  - biological-market
+  - coevolution
+category: bio
+cover_prompt: >-
+  A painterly naturalist study of a plant root and a fungal thread meeting and exchanging glowing
+  particles in two directions, balanced and reciprocal, cool teal and amber accents on dark indigo,
+  no text, no labels.

@@ -1,0 +1,144 @@
+slug: the-wood-wide-web
+part: eywa
+order: 2
+status: published
+title:
+  vi: 'Wood-Wide Web: Mạng internet của núi rừng'
+  en: The wood-wide web
+subtitle:
+  vi: >-
+    Grace Augustine bốc một nắm rễ Pandora lên và bảo rằng cả khu rừng được nối với nhau bằng nhiều
+    mối liên kết hơn cả số synapse trong não người. Câu hỏi không phải "có thật không?" mà là "thứ
+    gì đang nối chúng?" — và câu trả lời nằm ngay dưới chân ta, trong một mạng nấm cổ 400 triệu năm.
+  en: >-
+    Grace Augustine lifts a handful of Pandoran roots and says the whole forest is wired together by
+    more links than there are synapses in a human brain. The question is not "is it real?" but "what
+    is doing the wiring?" — and the answer lies under our own feet, in a fungal web 400 million
+    years old.
+hook:
+  vi: >-
+    Trên Pandora, rễ cây được cho là nối liền vạn vật — một mạng lưới điện hóa trải khắp một vệ
+    tinh. Nhưng rễ cây thật không vươn xa quá tán lá của chính nó, nên một mạng phủ kín cả thế giới
+    không thể chỉ là rễ chạm rễ. Phải có một tay trung gian thứ ba luồn lách giữa chúng. Trên Trái
+    Đất, tay trung gian đó là nấm — và câu chuyện về cách nó nối những cái cây lại, về những gì nó
+    thật sự làm được và những gì chỉ là truyền thuyết đẹp đẽ vượt mặt bằng chứng, là một trong những
+    bài học trung thực nhất mà khoa học rừng có thể dạy ta.
+  en: >-
+    On Pandora the roots are said to connect everything — an electrochemical network strung across a
+    whole moon. But real roots barely reach past their own canopy, so a world-spanning web cannot be
+    root touching root. There has to be a third party threading between them. On Earth that third
+    party is fungi — and the story of how it links trees, of what it provably does and what is only
+    a beautiful tale that outran the evidence, is one of the most honest lessons forest science has
+    to teach.
+authors:
+  - bardabez
+reading_time_min: 29
+tags:
+  - mycorrhizal-networks
+  - wood-wide-web
+  - eywa
+  - symbiosis
+  - fungi
+  - forest-ecology
+classification:
+  canon_pct: 20
+  inference_pct: 18
+  speculation_pct: 7
+  real_science_pct: 55
+related_chapters:
+  - what-eywa-is
+  - why-burning-eywa-doesnt-kill-it
+  - the-bandwidth-of-a-planet
+  - a-real-living-planet
+glossary_terms:
+  - mycorrhiza
+  - mycelium
+  - hypha
+  - arbuscular-mycorrhiza
+  - ectomycorrhiza
+  - common-mycorrhizal-network
+  - mutualism
+  - biological-market
+  - cytoplasmic-streaming
+  - source-sink-dynamics
+  - mother-tree-hypothesis
+  - positive-citation-bias
+  - tsaheylu
+  - coevolution
+  - bioluminescence
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-grace-root-sample
+    role: hero
+    asset_status: ready
+  - id: fig-02-substrate-paradox
+    role: diagram
+    asset_status: ready
+  - id: fig-03-mycorrhiza-anatomy
+    role: diagram
+    asset_status: ready
+  - id: fig-04-wood-wide-web
+    role: diagram
+    asset_status: ready
+  - id: fig-05-sacred-tree-hubs
+    role: comparison
+    asset_status: ready
+  - id: fig-06-slow-signal
+    role: diagram
+    asset_status: ready
+  - id: fig-99-background
+    role: hero
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Oma - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Oma
+  - kind: canon
+    label: Tree of Souls - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Tree_of_Souls
+  - kind: canon
+    label: Tree of Voices - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Tree_of_Voices
+  - kind: canon
+    label: Spirit Tree - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Spirit_Tree
+  - kind: canon
+    label: Whispering Greatcap - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Whispering_Greatcap
+  - kind: canon
+    label: Fall of Hometree - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Fall_of_Hometree
+  - kind: science
+    label: >-
+      Simard et al. - Net transfer of carbon between ectomycorrhizal tree species in the field
+      (Nature, 1997)
+    url: https://www.nature.com/articles/41557
+  - kind: science
+    label: >-
+      Kiers et al. - Reciprocal Rewards Stabilize Cooperation in the Mycorrhizal Symbiosis (Science,
+      2011)
+    url: https://www.science.org/doi/10.1126/science.1208473
+  - kind: science
+    label: >-
+      Babikova et al. - Underground signals carried through common mycelial networks warn
+      neighbouring plants of aphid attack (Ecology Letters, 2013)
+    url: https://pubmed.ncbi.nlm.nih.gov/23656527/
+  - kind: science
+    label: >-
+      Karst, Jones & Hoeksema - Positive citation bias and overinterpreted results lead to
+      misinformation on common mycorrhizal networks in forests (Nature Ecology & Evolution, 2023)
+    url: https://pubmed.ncbi.nlm.nih.gov/36782032/
+  - kind: science
+    label: >-
+      Adamatzky - Language of fungi derived from their electrical spiking activity (Royal Society
+      Open Science, 2022)
+    url: https://royalsocietypublishing.org/doi/10.1098/rsos.211926
+  - kind: science
+    label: Society for the Protection of Underground Networks (SPUN)
+    url: https://www.spun.earth/
+  - kind: research-note
+    label: >-
+      The Architecture of the Underground - Mycorrhizal Substrates and the Planetary Wiring of
+      Pandora (chapter research note)

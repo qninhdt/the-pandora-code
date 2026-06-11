@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-root-network",
+  "chapter_slug": "what-eywa-is",
+  "role": "comparison",
+  "narrative_purpose": "Makes the two readings of Eywa visible at once: the same root-and-tree network read as a revered All-Mother presence and as measurable electrochemical infrastructure — the deity/substrate duality the chapter must reconcile.",
+  "subject": "A single vast Pandoran tree-and-root system seen in cross-section, split down the middle by treatment rather than a hard line: on the left half the roots and trunk are rendered as a soft, reverent, glowing presence, light pooling around a kneeling Na'vi silhouette resting a hand on the trunk; on the right half the very same roots are rendered as a precise web of fine bright filaments threading between many tree bases underground, dense nodes where roots meet glowing like synapses, a clinical clarity to the wiring.",
+  "scene": "Forest floor and the soil beneath it cut away to show the root mesh, the canopy above dissolving into haze, a faint underground lattice extending past the frame on both sides.",
+  "camera": "A straight-on elevation view, the tree centred, the ground cut away to reveal the root web below.",
+  "light": "Left half: diffuse, warm-leaning reverent glow pooling softly. Right half: cooler, sharper bioluminescent filament-light picking out individual root junctions as bright nodes.",
+  "palette": "Cool ocean-teal and Pandora cyan dominant throughout; the left half carries the faintest ember warmth in its glow, the right half stays pure cyan filament-light; warm kept scarce.",
+  "style": "Painterly speculative-biology naturalist plate with faint diagrammatic clarity on the right half, hand-painted texture.",
+  "detail_level": "Crisp on the trunk and the brightest root junctions; the deeper lattice and canopy dissolving into haze.",
+  "composition": "Tree centred and vertical, kneeling Na'vi small at lower left, the root web spreading symmetrically below; open dark soil regions left and right for callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "hard dividing line down the middle"],
+  "consistency_notes": "Same cool Pandora palette and from-within glow as the chapter cover; Na'vi anatomy consistent with other plates; keep dark space beside the root junctions for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

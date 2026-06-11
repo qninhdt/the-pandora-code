@@ -1,0 +1,14 @@
+id: cognitive-light-cone
+label:
+  vi: Nón nhận thức
+  en: Cognitive light cone
+definition:
+  vi: >-
+    Hình tượng do nhà sinh học Michael Levin đề ra để đo "tầm với" của bất kỳ tác nhân nào: ranh giới không-thời gian của những sự kiện mà nó có thể đo đạc, hình dung và cố gắng tác động tới. Một tế bào đơn lẻ có nón nhận thức tí hon, chỉ chăm chăm vào mục tiêu trao đổi chất tức thời ngay cạnh nó. Một bộ não người có nón nhận thức khổng lồ, trải dài hàng thập kỷ vào tương lai và ôm trọn những khái niệm trừu tượng. Đo một hệ thống bằng nón nhận thức của nó là cách hỏi: nó quan tâm được tới điều gì, xa và rộng đến đâu - chứ không phải nó có ý thức hay không.
+  en: >-
+    A figure proposed by biologist Michael Levin for measuring the "reach" of any agent: the spatio-temporal boundary of events it can measure, model, and attempt to affect. A single cell has a tiny cognitive light cone, fixed on its immediate local metabolic goals. A human brain has an immense one, spanning decades into the future and encompassing abstract concepts. Sizing a system by its cognitive light cone asks what it can care about, and how far and wide - not whether it is conscious.
+see_also:
+- basal-cognition
+- distributed-cognition
+category: concept
+cover_prompt: A widening cone shape opening from a single small bright point outward into a starfield, the cone glowing teal against deep indigo, no text, no labels.

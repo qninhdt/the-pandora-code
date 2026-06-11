@@ -1,0 +1,26 @@
+id: arbuscular-mycorrhiza
+label:
+  vi: Nấm rễ nội bào (arbuscular)
+  en: Arbuscular mycorrhiza
+definition:
+  vi: >-
+    Loại nấm rễ cổ xưa và phổ biến nhất, hình thành với khoảng 80% số loài thực vật. Đặc điểm nhận
+    dạng: sợi nấm xuyên thẳng qua thành tế bào rễ và phình ra bên trong thành những cấu trúc phân
+    nhánh dày đặc hình cây nhỏ gọi là arbuscule. Chính các arbuscule này là "quầy giao dịch" — bề
+    mặt gấp nếp khổng lồ nơi carbon của cây đổi lấy phốt-pho của nấm. Nói cách khác, nấm sống ngay
+    bên trong tế bào của cây.
+  en: >-
+    The most ancient and common type of mycorrhiza, formed with about 80% of plant species. Its
+    signature: the fungal threads push right through the root's cell walls and balloon out inside
+    into densely branched, tree-shaped structures called arbuscules. These arbuscules are the
+    trading desks — vast folded surfaces where the plant's carbon is exchanged for the fungus's
+    phosphorus. In effect, the fungus lives inside the plant's own cells.
+see_also:
+  - mycorrhiza
+  - ectomycorrhiza
+  - hypha
+category: bio
+cover_prompt: >-
+  A naturalist cutaway of a single plant root cell with a finely branched tree-shaped fungal
+  arbuscule filling its interior, delicate filaments glowing faint cyan against the cell's dark
+  interior, microscopic and intricate, painterly, cool palette, no text, no labels.

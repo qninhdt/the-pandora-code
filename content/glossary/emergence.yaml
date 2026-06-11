@@ -1,0 +1,15 @@
+id: emergence
+label:
+  vi: Sự trồi hiện
+  en: Emergence
+definition:
+  vi: >-
+    Khi một hệ thống quy mô lớn sinh ra những tính chất mới mà không phần tử riêng lẻ nào có - như nhà vật lý P.W. Anderson đúc kết trong câu "Nhiều thì khác" (More Is Different): luật chi phối một phân tử nước không hề báo trước sự ướt của cả đại dương. Sự trồi hiện *yếu* là khi hành vi tổng thể tuy bất ngờ nhưng vẫn có thể suy ra và mô phỏng được từ các quy tắc cục bộ - kiểu một đàn kiến hay một mô hình thời tiết. Sự trồi hiện *mạnh* là giả thuyết gây tranh cãi cho rằng cái tổng thể sở hữu năng lực nhân quả hoàn toàn mới, không thể quy giản về các phần - và đó là rào cản mà bất cứ ai muốn gọi một mạng lưới là "tâm trí" phải vượt qua.
+  en: >-
+    When a large-scale system gives rise to new properties that none of its individual parts possess - captured in physicist P.W. Anderson's line "More Is Different": the rules governing one water molecule never predict the wetness of an ocean. *Weak* emergence is when the whole's behaviour is unexpected but can still be derived and simulated from local rules - an ant colony, a weather pattern. *Strong* emergence is the contested claim that the whole gains genuinely new causal powers irreducible to its parts - and that is the bar anyone who wants to call a network a "mind" has to clear.
+see_also:
+- distributed-cognition
+- swarm-intelligence
+- integrated-information-theory
+category: concept
+cover_prompt: A field of simple repeating cells from which a single large coherent spiral pattern visibly forms, lower parts plain and upper pattern glowing cyan, no text, no labels.

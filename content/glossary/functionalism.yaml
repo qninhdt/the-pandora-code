@@ -1,0 +1,15 @@
+id: functionalism
+label:
+  vi: Thuyết chức năng
+  en: Functionalism
+definition:
+  vi: >-
+    Quan điểm triết học cho rằng tâm trí chỉ là *những gì một hệ thống làm*, hoàn toàn độc lập với chất liệu cấu tạo nên nó. Nếu một thứ gì đó - dù là não thịt, chip silicon, hay một mạng lưới rễ cây - tiếp nhận thông tin, lưu trữ ký ức và giải quyết vấn đề hiệu quả ngang một bộ não, thì theo thuyết chức năng, nó *là* một tâm trí. Đây là góc nhìn thân thiện nhất với ý tưởng "một khu rừng biết nghĩ": điều quan trọng là vai trò nhân quả của trạng thái, không phải nó được làm bằng gì. Nhưng phe phản đối vặn lại rằng một cỗ máy mô phỏng hoàn hảo mọi chức năng vẫn có thể tối đen bên trong, chẳng có chút trải nghiệm nào.
+  en: >-
+    The philosophical view that the mind is simply *what a system does*, entirely independent of the material it is made of. If something - whether a meat brain, a silicon chip, or a root network - takes in information, stores memories, and solves problems as effectively as a brain, then by functionalism it *is* a mind. It is the view friendliest to the idea of a forest that thinks: what matters is the causal role of a state, not what it is built from. But critics counter that a machine perfectly mimicking every function could still be dark inside, with no experience at all.
+see_also:
+- hard-problem-of-consciousness
+- panpsychism
+- integrated-information-theory
+category: concept
+cover_prompt: Two differently-built machines, one organic and one crystalline, performing the identical glowing process side by side, the process cyan and matching, dark field, no text, no labels.

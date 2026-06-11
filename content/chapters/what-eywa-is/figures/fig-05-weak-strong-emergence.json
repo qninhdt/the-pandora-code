@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-weak-strong-emergence",
+  "chapter_slug": "what-eywa-is",
+  "role": "diagram",
+  "narrative_purpose": "Contrasts the two grades of emergence the chapter hinges on: weak emergence, where a surprising global pattern still rises cleanly from local rules (drawn as many simple parts forming one coherent flowing shape), versus strong emergence, where a higher level is imagined reaching back down to push the parts around — the steep wall a network would have to clear to be a mind.",
+  "subject": "A two-zone naturalist diagram. Lower-left zone: a dense field of identical simple glowing cells from which a single large coherent swirling pattern visibly assembles, the flow rising upward — order built from below. Upper-right zone, set apart by a faint steep ridge or step: a luminous higher form shown sending influence back DOWN onto the cells beneath it, the downward direction emphasised, rendered as rarer and more uncertain, almost dreamlike.",
+  "scene": "A single dark field divided by a faint rising step between the two zones, suggesting an easy slope on one side and a steep wall on the other.",
+  "camera": "A clean diagrammatic side-on view, the two zones legible at a glance.",
+  "light": "Cyan-teal glow on the self-assembling lower swirl (confident, solid); a fainter, cooler, more ethereal magenta-tinged glow on the upper downward-causing form to mark it as the contested case.",
+  "palette": "Void-indigo base, Pandora cyan and living teal for the weak-emergence swirl, a scarce uncertain magenta accent for the strong-emergence form above.",
+  "style": "Painterly speculative-biology naturalist plate with faint diagrammatic structure.",
+  "detail_level": "Crisp on the lower self-assembling pattern; deliberately softer and more dissolved on the upper contested form.",
+  "composition": "Diagonal split low-left to upper-right with a felt step between; generous dark space beside each zone for labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Abstract concept figure kept in the book's cool palette and from-within glow; the upper form is intentionally fainter/rarer to read as the harder, contested case. Leave dark margins for callouts.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

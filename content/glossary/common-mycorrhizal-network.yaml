@@ -1,0 +1,28 @@
+id: common-mycorrhizal-network
+label:
+  vi: Mạng nấm rễ chung (CMN)
+  en: Common mycorrhizal network (CMN)
+definition:
+  vi: >-
+    Khi một cá thể nấm duy nhất cắm vào rễ của hai hay nhiều cây cùng lúc, nó nối chúng vào một mạng
+    chung — mạng nấm rễ chung. Đây là bước nhảy từ "mỗi cây có bạn nấm riêng" sang "nấm nối nhiều cây
+    lại với nhau", và là hạt nhân của giả thuyết "wood-wide web": một khi hai cây cùng cắm vào một
+    thân nấm, vật chất (carbon, khoáng, nước) trên lý thuyết có thể đi từ cây này sang cây kia. Việc
+    mạng tồn tại được chứng minh tốt; việc nó điều phối cả khu rừng thì còn tranh cãi.
+  en: >-
+    When a single fungal individual taps into the roots of two or more plants at once, it stitches
+    them into a shared web — a common mycorrhizal network. This is the leap from "each tree has its
+    own fungal partners" to "fungi link multiple trees," and it is the heart of the wood-wide web
+    hypothesis: once two trees plug into one fungal body, material (carbon, minerals, water) can in
+    principle move from one to the other. That the network exists is well-supported; that it
+    coordinates a forest is contested.
+see_also:
+  - mycorrhiza
+  - mycelium
+  - mother-tree-hypothesis
+  - source-sink-dynamics
+category: bio
+cover_prompt: >-
+  A naturalist diagram of three trees of different sizes above ground, their roots below enmeshed in
+  one shared web of fine glowing fungal threads linking all three, cool teal and cyan palette,
+  painterly, dark soil, no text, no labels.

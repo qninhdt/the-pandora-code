@@ -1,0 +1,24 @@
+id: swarm-intelligence
+label:
+  vi: Trí tuệ bầy đàn
+  en: Swarm intelligence
+definition:
+  vi: >-
+    Khi một hành vi thông minh, có vẻ như tính toán và hướng đích, nảy sinh từ vô số tương tác đơn
+    giản tại chỗ giữa các cá thể - mà không hề có một bộ chỉ huy trung tâm nào. Một đàn ong mật chọn
+    tổ mới qua cơ chế "cảm biến mật độ": từng con ong trinh sát bỏ phiếu bằng vũ điệu, và khi đủ
+    ngưỡng số ong dồn về một địa điểm, cả đàn đồng loạt cất cánh. Không con ong nào nắm bản đồ toàn
+    cục; quyết định tối ưu vẫn hiện ra. Một mạng lưới "quyết định" được mà chẳng cần "kẻ quyết định".
+  en: >-
+    When intelligent, seemingly calculated and goal-directed behavior emerges from countless simple,
+    local interactions between individuals - with no central commander. A honeybee swarm chooses a
+    new nest through quorum sensing: each scout votes with a dance, and once a threshold of scouts
+    favors one site, the whole swarm commits. No single bee holds a map of all the options; the
+    optimal decision emerges anyway. A network that "decides" with no "decider".
+see_also:
+- quorum-sensing
+- stigmergy
+- distributed-cognition
+- emergence
+category: concept
+cover_prompt: A swarm of many small glowing points converging into one coherent moving shape against a dark field, cyan and teal bioluminescent glow, painterly naturalist plate, no central leader visible, no text, no labels.

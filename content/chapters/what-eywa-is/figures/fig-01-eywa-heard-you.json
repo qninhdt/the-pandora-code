@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-eywa-heard-you",
+  "chapter_slug": "what-eywa-is",
+  "role": "hero",
+  "narrative_purpose": "Anchors the cold open: the moment the forest seems to choose. A wall of Pandoran wildlife surges together against a human war line, moving as if answering one signal — the visual that poses the chapter's central question of whether coordination requires a mind.",
+  "subject": "Across a smoke-lit Pandoran plain at dusk, a single coordinated surge of huge wildlife breaks from a glowing treeline toward the viewer: a massive hammerhead titanothere lowering its broad bony head in the lead, dark armoured thanators and a pouring pack of low six-legged viperwolves around it, all charging in one direction together; in the hazy distance a thin line of angular human gunships and armoured vehicles; overhead a few winged banshees stooping in formation. No human or commanding figure visible directing the animals.",
+  "scene": "An open plain between forest and a distant battle line, drifting smoke and ember-light low on the horizon, glowing flora at the treeline behind the animals.",
+  "camera": "A low, wide three-quarter view from just ahead of the charging animals, the titanothere as near focal subject, the human line small and deep in the haze.",
+  "light": "Cool bioluminescent glow from the treeline behind the wildlife as the key; a scarce, distant warm ember glow marking the human line and smoke far off.",
+  "palette": "Void-indigo and ocean-teal dominant across the plain and animals, a thin band of ember amber confined to the far horizon line so the warm stays scarce and distant.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed motion, naturalist not staged-cinematic.",
+  "detail_level": "Crisp on the lead titanothere and nearest animals; the human line and far ranks dissolving into smoke and haze.",
+  "composition": "The animal surge filling the lower and middle frame moving toward the viewer, the distant line small and opposite, open dark sky above and dark plain to the sides for callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "close-up modern Earth machinery detail"],
+  "consistency_notes": "Pandoran fauna anatomy consistent with the book's other plates; cool from-within bioluminescent key, warm reserved for the distant human line. The 'forest seems to choose' establishing mood that anchors the chapter.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

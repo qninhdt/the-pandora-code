@@ -1,0 +1,16 @@
+id: superorganism
+label:
+  vi: Siêu cá thể
+  en: Superorganism
+definition:
+  vi: >-
+    Một quần thể côn trùng xã hội - đàn kiến, tổ ong, gò mối - vận hành như thể chính nó là một cơ thể duy nhất, nơi mỗi cá thể chỉ đóng vai một "tế bào" cảm giác hay vận động dùng một lần, còn năng lực nhận thức thực sự lại nằm ở cấp độ cả đàn. Không có cá thể nào nắm bản đồ toàn cục, không ai ra lệnh; vậy mà cả khối vẫn quyết định, xây dựng và tự điều hòa như một thực thể thống nhất. Đây là minh chứng sống động rằng trí tuệ có thể trồi lên từ vô số phần tử đơn giản mà không cần một bộ não trung tâm.
+  en: >-
+    A colony of social insects - an ant nest, a beehive, a termite mound - that behaves as though it were itself a single body, with each individual playing the part of a disposable sensory or motor "cell" while the real cognitive capacity sits at the level of the whole colony. No individual holds a global map, no one issues orders, yet the collective decides, builds, and regulates itself as one unified entity. It is vivid proof that intelligence can rise from a multitude of simple parts with no central brain at all.
+see_also:
+- swarm-intelligence
+- stigmergy
+- quorum-sensing
+- distributed-cognition
+category: concept
+cover_prompt: A dense swarm of small glowing insect-like points moving as one coherent shape against a dark teal field, the mass reading as a single organism, no text, no labels.

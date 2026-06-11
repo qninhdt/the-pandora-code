@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-sacred-tree-hubs",
+  "chapter_slug": "the-wood-wide-web",
+  "role": "comparison",
+  "narrative_purpose": "A comparative plate of Pandora's network structures, showing that the Oma is not a uniform mat of roots but a structured system with specialized organs — a primary hub, a memory bank, a colossal node, a marine hub, and, tellingly, a fungus doing a sacred tree's job.",
+  "subject": "Five distinct Pandoran network structures arranged across a dark page like specimens: a large weeping willow-like Tree of Souls trailing a curtain of glowing fiber-optic-like tendrils; a smaller willow-like Tree of Voices; a colossal buttressed Hometree; an underwater Spirit Tree rooted to a reef with glowing roots; and a broad bioluminescent polypore mushroom, the Whispering Greatcap, with fine neural tendrils along the underside of its cap.",
+  "scene": "A dark naturalist comparison plate, each structure set in its own pool of space with faint ground or seabed beneath it.",
+  "camera": "A flat comparative-plate view, each structure shown in clear profile at a consistent scale-cue.",
+  "light": "Each structure lit from within by its own bioluminescent tendrils and roots against the dark page.",
+  "palette": "Void-indigo page, Pandora cyan and living teal glow on the tendrils and roots, the Spirit Tree's water a slightly deeper teal.",
+  "style": "Painterly speculative-biology naturalist comparison plate, hand-painted texture, observed-from-life confidence.",
+  "detail_level": "Crisp on all five structures and their connective tendrils; backgrounds minimal.",
+  "composition": "Five structures in a balanced grid or row across the frame, generous dark space around each for callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with from-within glow; the Whispering Greatcap must clearly read as a fungus among the trees. Keep dark space beside each specimen for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

@@ -1,0 +1,26 @@
+id: cytoplasmic-streaming
+label:
+  vi: Dòng chảy nguyên sinh chất
+  en: Cytoplasmic streaming
+definition:
+  vi: >-
+    Sự chuyển động có hướng của dịch bên trong tế bào, cuốn theo dưỡng chất, bào quan và phân tử tín
+    hiệu từ nơi này đến nơi khác. Trong sợi nấm, đây là cơ chế chính để vận chuyển vật chất đi xa:
+    chênh lệch áp suất trương đẩy dòng dịch từ vùng giàu (nguồn) sang vùng nghèo (đích). Nó hoạt
+    động thật, nhưng chậm chạp - khoảng 5 đến 40 micromet mỗi giây, nghĩa là một phân tử mất gần
+    trọn một ngày để vượt qua một mét nền rừng.
+  en: >-
+    The directed flow of fluid inside a cell, carrying nutrients, organelles, and signalling
+    molecules from place to place. In fungal threads it is the main way material travels long
+    distances: differences in turgor pressure push the fluid from a rich region (a source) toward a
+    poor one (a sink). It works, but it crawls - roughly 5 to 40 micrometres per second, meaning a
+    molecule takes the better part of a day to cross a single metre of forest floor.
+see_also:
+  - hypha
+  - mycelium
+  - source-sink-dynamics
+category: bio
+cover_prompt: >-
+  A painted cutaway of a single translucent fungal thread with faint glowing particles streaming
+  along its interior in one direction, cool teal bioluminescence against a dark indigo ground, a
+  sense of slow steady flow, no text, no labels.

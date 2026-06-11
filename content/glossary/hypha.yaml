@@ -1,0 +1,26 @@
+id: hypha
+label:
+  vi: Sợi nấm (hypha)
+  en: Hypha
+definition:
+  vi: >-
+    Một sợi đơn lẻ, dạng ống, siêu nhỏ tạo nên thân nấm; số nhiều là hyphae. Mỗi sợi chỉ rộng vài
+    phần nghìn milimet, và hàng triệu sợi đan lại thành hệ sợi nấm. Sợi nấm không phải ống rỗng mà
+    là một xi-lanh sinh học chịu áp suất: bên trong nó, tế bào chất chảy theo dòng, mang đường,
+    phốt-pho và các phân tử tín hiệu đi khắp mạng. Chính qua những sợi này mà cây và nấm trao đổi
+    hàng hóa.
+  en: >-
+    A single microscopic, tube-shaped filament that makes up the body of a fungus; the plural is
+    hyphae. Each is only a few thousandths of a millimetre wide, and millions of them weave together
+    into the mycelium. A hypha is not an empty pipe but a pressurised biological cylinder: inside it
+    the cytoplasm flows, carrying sugar, phosphorus and signalling molecules across the network. It
+    is through these threads that plant and fungus exchange their goods.
+see_also:
+  - mycelium
+  - mycorrhiza
+  - cytoplasmic-streaming
+category: bio
+cover_prompt: >-
+  An extreme close study of a single translucent fungal filament glowing faintly from within,
+  pressurised fluid streaming along it, against a dark indigo ground, cool teal palette, painterly
+  naturalist style, no text, no labels.

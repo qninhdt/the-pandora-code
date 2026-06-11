@@ -1,0 +1,25 @@
+id: mycelium
+label:
+  vi: Hệ sợi nấm (mycelium)
+  en: Mycelium
+definition:
+  vi: >-
+    Phần thân của nấm vươn ra khỏi rễ cây và luồn vào đất - một mạng quạt xòe gồm vô số sợi nấm
+    siêu nhỏ. Chính hệ sợi nấm này làm nên cái "cáp sống" của mạng nấm rễ: vì các sợi mảnh đến mức
+    vài phần nghìn milimet, hệ sợi nấm gấp một diện tích bề mặt khổng lồ vào một thể tích bé tí, nhân
+    tầm với hút dưỡng chất của cây lên gấp hàng trăm lần. Một gram đất rừng khỏe mạnh có thể chứa tới
+    chín mươi mét sợi nấm.
+  en: >-
+    The body of a fungus that reaches out beyond a plant's roots and into the soil - a fan of
+    countless microscopic threads. The mycelium is the living cable of a mycorrhizal network:
+    because the filaments are only a few thousandths of a millimetre across, the mycelium folds an
+    enormous surface area into a tiny volume, multiplying a plant's nutrient-gathering reach several
+    hundredfold. A single gram of healthy forest soil can hold up to ninety metres of it.
+see_also:
+  - hypha
+  - mycorrhiza
+  - cytoplasmic-streaming
+category: bio
+cover_prompt: >-
+  A dense glowing fan of fine fungal threads spreading through dark soil from a root, fading into
+  the depths, cool teal and cyan bioluminescence, painterly naturalist style, no text, no labels.
