@@ -1,0 +1,16 @@
+id: planetary-boundaries
+label:
+  vi: Các ranh giới hành tinh
+  en: Planetary boundaries
+definition:
+  vi: 'Một khung khoa học (Rockström và cộng sự, 2009) xác định chín hệ thống sinh-địa-hóa điều hòa sự ổn định của Trái Đất, mỗi hệ có một ngưỡng mà bên trong đó nhân loại có một "không gian vận hành an toàn". Vượt một ranh giới - quá nhiều carbon trong khí quyển, tốc độ tuyệt chủng quá cao, quá nhiều nitơ cố định tuồn vào - là đẩy hệ ra khỏi vùng cân bằng ổn định đã đặc trưng cho thế Toàn Tân (Holocene), 12.000 năm yên ả mà toàn bộ nền văn minh loài người được dựng nên trong đó. Khung này biến ý niệm trừu tượng "hành tinh tự điều hòa" thành thứ đo đếm được: cái mặt số có thành, và ta đã vượt vài cái thành rồi.'
+  en: 'A scientific framework (Rockström et al., 2009) identifying nine biogeochemical systems that regulate Earth''s stability, each with a threshold inside which humanity has a "safe operating space." To cross a boundary - too much carbon in the air, too high a rate of extinctions, too much fixed nitrogen flooding in - is to shove the system out of the stable equilibrium that defined the Holocene, the 12,000-year calm in which all of human civilisation was built. The framework turns the abstract notion of a self-regulating planet into something measurable: the dial has walls, and we have already pushed several of them.'
+see_also:
+- tipping-point
+- earth-system-science
+- homeostasis
+category: concept
+tags:
+- earth-systems
+- ecology
+cover_prompt: A painted planet rendered as a great circular dial ringed by nine faint segments, a few of them glowing warning-amber where a marker has slipped past the edge, the rest cool teal, on void-indigo, no text, no numbers, no labels.

@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-the-living-moon",
+  "chapter_slug": "a-real-living-planet",
+  "role": "hero",
+  "narrative_purpose": "The cold-open anchor: the climax moment when the whole planet seems to act as one, a continent-wide surge of wildlife converging on the invaders — the image that forces the chapter's question of whether a planet can defend itself like a living body.",
+  "subject": "A wide, smoke-lit Pandoran plain at the height of battle: from the treeline a vast coordinated surge of diverse wildlife — heavy six-legged beasts, packs of running predators, flying creatures stooping overhead — all pours in a single direction toward a distant, small line of human machines, the animals moving as one wave though nothing visible commands them; faint threads of bioluminescent light run through the ground and vegetation tying the scene into one network.",
+  "scene": "A broad battlefield plain under a darkened, smoke-streaked sky, forest on one side surging with animals, the human line small and distant on the far side, Polyphemus faint above.",
+  "camera": "A wide, slightly elevated establishing shot taking in the whole sweep of the charge from forest to distant enemy line.",
+  "light": "Low, dramatic, smoke-filtered light; cool bioluminescent glow threading the forest and ground against the warmer haze of distant fire.",
+  "palette": "Void-indigo and deep teal night, cool cyan bioluminescent threads, a restrained warm amber smear from distant fire and machines.",
+  "style": "Painterly speculative-biology naturalist plate, cinematic and atmospheric, hand-painted texture.",
+  "detail_level": "Crisp on the near surge of wildlife and the glowing ground-threads; the distant human line and sky softer and hazier.",
+  "composition": "The wildlife wave sweeping from the lower-left/forest across toward the small distant enemy line at right, open smoky sky above for callout space.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "recognisable real-world weapons brands", "gore"],
+  "consistency_notes": "A canon-tier scene; keep the wildlife as a coordinated mass rather than individual hero creatures. Cool Pandora palette, from-within glow, dark enough beside and above the surge for callout labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style, no gore",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["fig-00-cover.png"]
+}

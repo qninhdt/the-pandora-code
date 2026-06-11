@@ -1,0 +1,20 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "the-bandwidth-of-a-planet",
+  "role": "hero",
+  "narrative_purpose": "The chapter's atmospheric background layer: an abstract field of glowing neural-signal traffic — pulses of light streaming along fine bioluminescent fibres — evoking information in transit through a living channel, behind the reading column.",
+  "subject": "An abstract, atmospheric field of fine glowing fibres running in loose parallel through deep darkness, with small bright pulses of light travelling along them at intervals, like data moving down a bundle of neural cables, fading softly into void at the edges.",
+  "scene": "A near-abstract close field of luminous neural fibres and travelling signal pulses, no horizon, no subject — pure texture of information in transit.",
+  "camera": "An intimate, shallow-depth view along a bundle of glowing fibres, some in focus and some dissolving into bokeh.",
+  "light": "Self-luminous: cool cyan and teal light from the fibres and the travelling pulses, everything else void-dark.",
+  "palette": "Void-indigo to near-black ground, cyan and teal glowing fibres, occasional brighter pulse highlights.",
+  "style": "Painterly speculative abstract, hand-painted texture, soft and atmospheric, very low visual noise.",
+  "detail_level": "Soft throughout, deliberately understated so it can sit behind text; no hard focal subject.",
+  "composition": "Even, calm, edge-fading field with generous dark negative space — a backdrop, not a focal image.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "modern Earth objects", "faces", "figures"],
+  "consistency_notes": "Decorative background only — must stay quiet behind the reading column. Cool Pandora palette, from-within glow, no focal subject.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style, no central subject",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

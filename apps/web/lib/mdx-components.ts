@@ -1,10 +1,13 @@
 import { CanonBadge } from "@/components/classification/canon-badge";
 import { AnatomyPlate } from "@/components/content/anatomy-plate";
 import { AtmosphereComparison } from "@/components/content/atmosphere-comparison";
+import { AtmosphericDisequilibrium } from "@/components/content/atmospheric-disequilibrium";
 import { BilateralLatticeTree } from "@/components/content/bilateral-lattice-tree";
 import { BreathingModeToggle } from "@/components/content/breathing-mode-toggle";
 import { Callout, ScientificNote, SideNote } from "@/components/content/callout";
 import { CarbonVsSilicon } from "@/components/content/carbon-vs-silicon";
+import { CarbonateSilicateThermostat } from "@/components/content/carbonate-silicate-thermostat";
+import { CascadingFailure } from "@/components/content/cascading-failure";
 import { CharacterMatrixCladogram } from "@/components/content/character-matrix-cladogram";
 import { Chart } from "@/components/content/chart";
 import { ChiralityHandedness } from "@/components/content/chirality-handedness";
@@ -14,8 +17,10 @@ import { ColdLightReaction } from "@/components/content/cold-light-reaction";
 import { Comparison } from "@/components/content/comparison";
 import { ConfidenceDial } from "@/components/content/confidence-dial";
 import { ConfidenceMeter } from "@/components/content/confidence-meter";
+import { ConsciousBottleneck } from "@/components/content/conscious-bottleneck";
 import { ConvergenceToggle } from "@/components/content/convergence-toggle";
 import { CountercurrentExchange } from "@/components/content/countercurrent-exchange";
+import { Daisyworld } from "@/components/content/daisyworld";
 import { DataComparison, StatGrid } from "@/components/content/data-comparison";
 import { DetectionMethodScope } from "@/components/content/detection-method-scope";
 import { DiagramFigure } from "@/components/content/diagram-figure";
@@ -40,12 +45,14 @@ import { MycorrhizalMarket } from "@/components/content/mycorrhizal-market";
 import { NichePartitionExplorer } from "@/components/content/niche-partition-explorer";
 import { NightEyeOptics } from "@/components/content/night-eye-optics";
 import { OpenQuestions } from "@/components/content/open-questions";
+import { PercolationNetwork } from "@/components/content/percolation-network";
 import { PhotophoreIntensity } from "@/components/content/photophore-intensity";
 import { PredatorPreyOscillator } from "@/components/content/predator-prey-oscillator";
 import { QuorumCascade } from "@/components/content/quorum-cascade";
 import { Quote } from "@/components/content/quote";
 import { ReplayTheTape } from "@/components/content/replay-the-tape";
 import { ScrollSequence } from "@/components/content/scroll-sequence";
+import { ShannonChannel } from "@/components/content/shannon-channel";
 import { SquareCubeScaler } from "@/components/content/square-cube-scaler";
 import { SuperconductorCooldown } from "@/components/content/superconductor-cooldown";
 import { TierLegend } from "@/components/content/tier-legend";
@@ -70,11 +77,14 @@ import type { ComponentType } from "react";
 export const pandoraMdxComponents = {
   AnatomyPlate,
   AtmosphereComparison,
+  AtmosphericDisequilibrium,
   BilateralLatticeTree,
   BreathingModeToggle,
   Callout,
   CanonBadge,
   CarbonVsSilicon,
+  CarbonateSilicateThermostat,
+  CascadingFailure,
   ChapterHero,
   ChapterShell,
   CharacterMatrixCladogram,
@@ -86,8 +96,10 @@ export const pandoraMdxComponents = {
   Comparison,
   ConfidenceDial,
   ConfidenceMeter,
+  ConsciousBottleneck,
   ConvergenceToggle,
   CountercurrentExchange,
+  Daisyworld,
   DataComparison,
   DetectionMethodScope,
   DiagramFigure,
@@ -116,6 +128,7 @@ export const pandoraMdxComponents = {
   NightEyeOptics,
   OpenQuestions,
   OrbitClock,
+  PercolationNetwork,
   PhotophoreIntensity,
   PredatorPreyOscillator,
   QuorumCascade,
@@ -125,6 +138,7 @@ export const pandoraMdxComponents = {
   ReplayTheTape,
   ScientificNote,
   ScrollSequence,
+  ShannonChannel,
   SideNote,
   SourceList,
   SquareCubeScaler,

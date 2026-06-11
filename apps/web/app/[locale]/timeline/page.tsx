@@ -1,6 +1,7 @@
 import { TimelineJourney } from "@/components/content/timeline-journey";
 import { PageBackground } from "@/components/layout/page-background";
 import { type Locale, isLocale } from "@/i18n/config";
+import { chapterOrderPrefix } from "@/lib/content/loader/chapter-index";
 import { listChapters } from "@/lib/content/loader/chapter-loader";
 import { getPageBackground } from "@/lib/content/loader/page-background";
 import { listParts } from "@/lib/content/loader/part-loader";
@@ -43,24 +44,30 @@ export default async function TimelinePage({ params }: TimelinePageProps) {
 
   const events = sectionIds.flatMap((partId, i) => {
     const meta = partMeta.get(partId);
-    const order = meta?.order ?? i + 1;
     const partChapters = chapters.filter((c) => c.meta.part === partId);
     if (!meta && partChapters.length === 0) return [];
+    // Part/chapter numbers come from the on-disk "N-M-" folder prefix (book
+    // order), since meta.order is unreliable. Fall back to part metadata or
+    // encounter index only when no chapter prefix is available.
+    const partNo = chapterOrderPrefix(partChapters[0]?.meta.slug ?? "")?.part ?? meta?.order ?? i + 1;
     return [
       {
         id: `part-${partId}`,
-        date: `Part ${order}`,
+        date: `Part ${partNo}`,
         title: meta?.title ?? humanize(partId),
         description: meta?.description,
         kind: "canon" as const,
       },
-      ...partChapters.map((c) => ({
-        id: `ch-${c.meta.slug}`,
-        date: `${order}.${c.meta.order}`,
-        title: c.title,
-        description: c.subtitle ?? c.hook,
-        kind: "inference" as const,
-      })),
+      ...partChapters.map((c, j) => {
+        const prefix = chapterOrderPrefix(c.meta.slug);
+        return {
+          id: `ch-${c.meta.slug}`,
+          date: `${prefix?.part ?? partNo}.${prefix?.order ?? j + 1}`,
+          title: c.title,
+          description: c.subtitle ?? c.hook,
+          kind: "inference" as const,
+        };
+      }),
     ];
   });
 
@@ -72,10 +79,10 @@ export default async function TimelinePage({ params }: TimelinePageProps) {
           <p className="mb-4 font-sans text-xs uppercase tracking-[0.4em] text-cyan">
             {t("page.timeline.kicker")}
           </p>
-          <h1 className="font-display text-5xl font-800 leading-[1.02] tracking-tight text-foreground sm:text-6xl">
+          <h1 className="font-display text-4xl font-700 tracking-tight text-foreground sm:text-5xl">
             {t("page.timeline.title")}
           </h1>
-          <p className="mt-5 font-serif text-lg leading-relaxed text-muted sm:text-xl">
+          <p className="mt-3 max-w-2xl font-serif text-base leading-relaxed text-muted">
             {t("page.timeline.subtitle")}
           </p>
         </header>

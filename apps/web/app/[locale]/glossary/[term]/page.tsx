@@ -1,6 +1,7 @@
 import { type Locale, isLocale } from "@/i18n/config";
 import { getGlossaryCoverImage } from "@/lib/content/loader/glossary-cover";
 import { getGlossaryTerm, listGlossaryIds } from "@/lib/content/loader/glossary-loader";
+import { glossaryTagLabel } from "@/lib/content/schemas/glossary-tags";
 import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -23,9 +24,9 @@ export default async function GlossaryDetail({ params }: GlossaryDetailProps) {
   const cover = getGlossaryCoverImage(term);
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-12 space-y-6">
+    <main className="mx-auto max-w-3xl px-6 pb-12 pt-32 space-y-6">
       {cover && (
-        <div className="relative -mt-4 mb-2 aspect-[16/9] w-full overflow-hidden rounded-2xl border border-[color:var(--border)]">
+        <div className="relative mb-2 aspect-[16/9] w-full overflow-hidden rounded-2xl border border-[color:var(--border)]">
           <img src={cover} alt="" className="size-full object-cover" />
           <div
             className="absolute inset-0"
@@ -37,6 +38,18 @@ export default async function GlossaryDetail({ params }: GlossaryDetailProps) {
         {entry.category}
       </p>
       <h1 className="text-3xl font-semibold tracking-tight">{entry.label}</h1>
+      {entry.tags.length > 0 ? (
+        <div className="flex flex-wrap gap-1.5">
+          {entry.tags.map((tag) => (
+            <span
+              key={tag}
+              className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface-overlay)] px-2.5 py-0.5 text-xs font-medium text-[color:var(--muted)]"
+            >
+              {glossaryTagLabel(tag, locale as Locale)}
+            </span>
+          ))}
+        </div>
+      ) : null}
       <p className="text-base leading-relaxed">{entry.definition}</p>
       {entry.see_also.length > 0 ? (
         <section className="border-t border-[color:var(--border)] pt-6">

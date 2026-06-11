@@ -1,0 +1,27 @@
+id: giant-connected-component
+label:
+  vi: Thành phần liên thông khổng lồ
+  en: Giant connected component
+definition:
+  vi: >-
+    Tập hợp lớn nhất các nút trong mạng mà ai cũng có thể với tới ai bằng một đường nối nào đó. Đây
+    là thước đo thực sự cho việc một mạng còn "là một mạng" hay không: chừng nào một thành phần khổng
+    lồ còn trải khắp phần lớn hệ thống, mạng vẫn vận hành như một khối thống nhất. Nếu hư hại làm
+    thành phần này vỡ thành vô số mảnh nhỏ cô lập, mạng coi như đã chết về mặt chức năng — ngay cả
+    khi từng nút riêng lẻ vẫn còn sống.
+  en: >-
+    The largest set of nodes in a network that can all reach one another by some path. It is the real
+    measure of whether a network is still "one network": as long as a giant component spans most of the
+    system, the network works as a unified whole. If damage shatters this component into many small
+    isolated fragments, the network is functionally dead — even if every individual node is still alive.
+see_also:
+  - node-graph-theory
+  - percolation-threshold
+  - phase-transition
+category: concept
+tags:
+- network-science
+cover_prompt: >-
+  A painted web of glowing cyan nodes where one vast connected mass fills most of the frame, with a
+  few small isolated clusters drifting dark at the edges, deep indigo ground, painterly and luminous,
+  no text, no labels, no numbers.

@@ -1,0 +1,29 @@
+id: redundancy-engineering
+label:
+  vi: Độ dư thừa (kỹ thuật)
+  en: Redundancy (engineering)
+definition:
+  vi: >-
+    Chiến lược chống hỏng hóc bằng cách lắp nhiều bộ phận giống hệt nhau cùng làm một việc, để khi
+    một cái hỏng thì cái khác gánh thay — máy phát điện dự phòng, lốp xe sơ-cua, hai động cơ trên một
+    chiếc máy bay. Đơn giản và hiệu quả, nhưng tốn kém và cứng nhắc: bản dự phòng phải đúng là cùng
+    một loại bộ phận, làm cùng một việc. Tiến hóa hiếm khi xây dựng theo lối này; nó thiên về một thứ
+    tinh tế hơn gọi là tính suy biến, nơi những cấu trúc khác nhau tình cờ chia sẻ một chức năng.
+  en: >-
+    A fault-tolerance strategy of installing multiple identical components that do the same job, so
+    that when one fails another takes over — backup generators, a spare tyre, two engines on an
+    aircraft. Simple and effective, but expensive and brittle: the backup has to be the same kind of
+    part doing the same job. Evolution rarely builds this way; it leans on something subtler called
+    degeneracy, where structurally different parts happen to share a function and can cover for one
+    another in ways no dedicated backup could.
+see_also:
+  - degeneracy-biology
+  - ecological-resilience
+  - modularity-network
+category: concept
+tags:
+- network-science
+cover_prompt: >-
+  A painted study of three identical glowing components arranged in parallel, one dimmed while the
+  others carry the load, a clean schematic sense of backups, cool cyan and faint teal on dark indigo,
+  painterly, no text, no labels, no numbers.

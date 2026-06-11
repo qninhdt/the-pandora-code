@@ -1,5 +1,26 @@
 {
   "viz": {
+    "daisyworld": {
+      "title": "Daisyworld",
+      "subtitle": "A planet that regulates its own temperature with no controller and no foresight",
+      "aria": "A plot of planetary temperature against solar brightness: a living world's temperature stays nearly flat across a wide range while a bare lifeless world's temperature climbs straight through it",
+      "tempAxis": "Planet temperature (°C)",
+      "lumAxis": "Solar brightness (fainter → brighter)",
+      "comfortBand": "where daisies grow best",
+      "bareLine": "bare rock, no life",
+      "lumSlider": "Solar brightness",
+      "planetTemp": "Planet temperature",
+      "bareWould": "bare rock would be",
+      "verdictLabel": "State",
+      "heldBy": "held down by",
+      "blackDaisy": "Black daisies (warming)",
+      "whiteDaisy": "White daisies (cooling)",
+      "regulated": "Regulated",
+      "struggling": "Near the edge",
+      "dead": "Lifeless",
+      "hintAlive": "Slide the sun. Black daisies seize the cold early world and warm it; white daisies take the hot late world and cool it — and the planet's temperature barely moves while the bare-rock line climbs straight past. No daisy intends any of it.",
+      "hintDead": "Past the daisies' limits the planet is bare rock again, and its temperature tracks the lifeless line exactly. The regulation only exists while life does."
+    },
     "habitableZone": {
       "title": "The habitable zone",
       "subtitle": "Where liquid water can survive on a world's surface",
@@ -95,6 +116,46 @@
       "play": "Play",
       "pause": "Pause",
       "hint": "Drag time: Polyphemus hangs fixed in the sky while the sun slides behind it each late afternoon."
+    },
+    "carbonateSilicate": {
+      "title": "The thermostat with no thermostat",
+      "subtitle": "How Earth stayed liquid under a sun 30% fainter",
+      "tempAxis": "Surface temperature (°C)",
+      "sunAxis": "Solar brightness (faint young sun → today)",
+      "liquidBand": "liquid water survives",
+      "bareLine": "bare rock, no thermostat",
+      "tempLabel": "Surface temp",
+      "bareWould": "bare rock would be",
+      "co2Label": "Steady-state CO₂",
+      "co2Note": "relative to today — high under a faint sun",
+      "sunSlider": "Solar brightness",
+      "aria": "Surface temperature against solar brightness: the regulated planet stays near liquid-water temperatures across the range while a bare rock scorches straight through.",
+      "hintFaint": "Under the faint young sun a bare rock would freeze solid — yet the thermostat lets CO₂ pile up, thickening the greenhouse until the planet stays liquid. This is why the early Earth never froze.",
+      "hintBright": "As the sun brightens, warmer rock in acid rain weathers faster, drawing CO₂ out of the air and thinning the greenhouse. The planet cools itself — the thermostat turning itself down with no one at the dial."
+    },
+    "atmosphericDisequilibrium": {
+      "title": "Reading life off the air",
+      "subtitle": "A dead world settles; a living world is held impossible",
+      "worldLabel": "Choose a world",
+      "mars": "Mars",
+      "venus": "Venus",
+      "earth": "Earth",
+      "co2": "CO₂",
+      "o2": "O₂",
+      "ch4": "CH₄",
+      "pumpFlux": "↑ biological flux ↑",
+      "disequilibriumLabel": "Disequilibrium",
+      "disequilibriumNote": "reactive gases held coexisting — the biosignature",
+      "verdictLabel": "Verdict",
+      "living": "Living world",
+      "dead": "Dead world",
+      "none": "none",
+      "pumpSlider": "Biological pump",
+      "noLife": "no life",
+      "deadPumpHint": "Nothing to pump — the air has settled into chemical equilibrium",
+      "aria": "Atmospheric composition of the chosen world; the disequilibrium index reads {value}.",
+      "hintDead": "A dead world settles into chemical equilibrium — Mars and Venus are both more than 95% CO₂, inert and finished. There is nothing to pump and nothing out of balance, so a distant telescope reads: lifeless.",
+      "hintAlive": "Earth's air is impossible: reactive oxygen and methane coexisting, a mixture chemistry should erase. Only a ceaseless biological pump holds it open — and that disequilibrium, not any single gas, is the most robust signature of life we can read from afar."
     }
   }
 }

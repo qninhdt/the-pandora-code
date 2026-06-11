@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-random-vs-targeted",
+  "chapter_slug": "why-burning-eywa-doesnt-kill-it",
+  "role": "comparison",
+  "narrative_purpose": "The visual heart of the Albert-Barabási result: the same scale-free network shown twice, side by side, so the reader sees that random loss leaves the connected whole intact while targeted hub loss shatters it — the single most important idea in the chapter.",
+  "subject": "The same scale-free network rendered twice, side by side as a diptych. Each panel shows an identical web of glowing nodes — a few large bright hub nodes near the centre, many small dim leaf nodes around the rim, linked into one connected mesh. LEFT PANEL ('random'): a scattering of small leaf nodes around the edges has gone dark and fallen away at random, yet the central hubs and the bulk of the web remain lit and fully connected into one luminous whole. RIGHT PANEL ('targeted'): only the few large central hub nodes have gone dark and been struck out, and as a result the entire web has fragmented into several small disconnected islands of nodes drifting apart, the connections between them severed and dark.",
+  "scene": "A two-panel comparison of one network under two kinds of damage: scattered random loss on the left that the network shrugs off, surgical hub loss on the right that breaks it into fragments.",
+  "camera": "A flat schematic diptych, the two identical-starting networks placed side by side at equal scale.",
+  "light": "Bioluminescent key from the surviving nodes; the left panel reads as one connected glowing mass, the right as scattered dimming fragments; fallen nodes go dark.",
+  "palette": "Void-indigo base; left panel dominated by intact Pandora cyan and teal; right panel the fragments cooling and dimming, faint magenta marking the struck-out hubs.",
+  "style": "Painterly speculative-biology naturalist plate as a luminous schematic, hand-painted texture, not vector-flat.",
+  "detail_level": "Crisp on both networks' nodes and links so the contrast in connectivity reads instantly; plain dark gutters around each panel for callouts.",
+  "composition": "Two equal panels left and right with a dark gutter between; hubs centred in each; left panel visibly whole, right panel visibly shattered; dark margins for labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Both panels must start from a visibly identical network so the only difference is WHICH nodes fell. Left = connected, right = fragmented. Cool palette, warm only on the struck hubs. Leave dark margins for annotation labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

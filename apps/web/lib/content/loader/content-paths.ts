@@ -1,11 +1,13 @@
 import path from "node:path";
+import { chapterDirname } from "./chapter-index";
 
 export const CONTENT_ROOT = path.resolve(process.cwd(), "../../content");
 
 export const PUBLIC_IMAGES_ROOT = path.resolve(process.cwd(), "public/images");
 
+// Folder is named "N-M-<slug>"; resolve the clean slug to that prefixed folder.
 export function chapterDir(slug: string): string {
-  return path.join(CONTENT_ROOT, "chapters", slug);
+  return path.join(CONTENT_ROOT, "chapters", chapterDirname(slug));
 }
 
 export function chapterMetaPath(slug: string): string {

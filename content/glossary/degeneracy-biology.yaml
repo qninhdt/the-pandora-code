@@ -1,0 +1,32 @@
+id: degeneracy-biology
+label:
+  vi: Tính suy biến (sinh học)
+  en: Degeneracy (biology)
+definition:
+  vi: >-
+    Tính chất phổ biến trong sinh học nơi những cấu trúc *khác nhau về mặt cấu tạo* lại có thể đảm
+    nhận *cùng một chức năng*. Không phải hai bản sao của một bộ phận, mà nhiều bộ phận không giống
+    nhau tình cờ chồng lấn trong việc chúng làm được: thận, tuyến mồ hôi và phổi đều có thể thải chất
+    ra khỏi cơ thể. Tính suy biến mua được một thứ độ bền mà độ dư thừa không có — nó cho phép một hệ
+    hấp thụ một đòn nó chưa từng được thiết kế để chịu, vì kẻ thay thế vốn không phải bản dự phòng
+    chuyên trách mà chỉ là một bộ phận khác có năng lực trùng lặp.
+  en: >-
+    The pervasive biological property where *structurally different* elements can perform the *same*
+    function. Not two copies of one part, but several unlike parts that happen to overlap in what
+    they can do: kidneys, sweat glands, and lungs can all rid the body of waste. Degeneracy buys a
+    robustness redundancy cannot — it lets a system absorb a blow it was never specifically designed
+    to survive, because the substitute was never a dedicated backup, just a different part with an
+    overlapping talent. Defined by Edelman and Gally (2001) as a hallmark of complex living systems.
+see_also:
+  - redundancy-engineering
+  - ecological-resilience
+  - insurance-hypothesis
+category: bio
+tags:
+- physiology
+- ecology
+- network-science
+cover_prompt: >-
+  A painted naturalist study of three quite different organic structures glowing the same cyan hue
+  to show they share one function, varied shapes unified by colour, cool teal and cyan on dark
+  indigo ground, painterly, no text, no labels, no numbers.

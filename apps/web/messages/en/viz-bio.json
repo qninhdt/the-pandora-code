@@ -369,6 +369,50 @@
         "sanction": "You are underpaying a willing partner and getting little back. Pay more, or it favours a better customer.",
         "cheated": "This partner hoards phosphorus no matter how much you pay. The plant learns to starve it — a sanction."
       }
+    },
+    "percolationNetwork": {
+      "title": "Burn it down — and find the cliff",
+      "subtitle": "Remove part of a scale-free network and watch what stays connected",
+      "aria": "A scale-free network of glowing nodes and links; removing nodes either at random or hubs-first, showing the largest surviving connected component",
+      "modeLabel": "Attack mode",
+      "modeRandom": "Random",
+      "modeTargeted": "Targeted",
+      "removeSlider": "Fraction removed",
+      "removedLabel": "Removed",
+      "giantLabel": "Largest cluster",
+      "giantNote": "share of the whole still wired into one piece",
+      "verdictLabel": "Network",
+      "intact": "Whole",
+      "connected": "Still connected",
+      "shattered": "Shattered",
+      "hubHint": "big nodes = hubs · small nodes = leaves",
+      "randomHint": "Removing nodes blindly, by where they sit — not by how connected they are",
+      "targetedHint": "Removing the most-connected hubs first — the Albert-Barabási attack",
+      "prompt": "Drag to remove part of the network. Under random removal the giant component clings on far past where you would expect, then vanishes all at once at the percolation threshold. Switch to targeted and aim at the hubs — the same network shatters after only a few.",
+      "randomNote": "Random loss barely dents the connected whole — the leaves fall, the hubs hold, and signals route around the damage. This is why clear-cutting forests never kills the network.",
+      "targetedNote": "Striking the hubs first tears the network apart fast. Only a small fraction of removals — the right fraction — drops the giant component off a cliff. This is Quaritch's instinct at the Tree of Souls.",
+      "shatteredNote": "The giant component is gone: what remains is a dust of disconnected islands that cannot reach each other. Below the percolation threshold the network is no longer one whole — it is fragments."
+    },
+    "cascadingFailure": {
+      "title": "The cascade — kill her without a fire",
+      "subtitle": "Two coupled networks, and a plague that touches only one",
+      "aria": "Two facing rows of nodes — flora above, fauna below — each depending on a partner in the other; {dead} of {total} nodes have failed",
+      "floraLayer": "Flora — the trees",
+      "faunaLayer": "Fauna — pollinators & seed-carriers",
+      "verdictLabel": "Both networks",
+      "intact": "Intact",
+      "cascading": "Cascading",
+      "collapsed": "Collapsed",
+      "deadLabel": "Failed",
+      "deadNote": "across both coupled layers",
+      "roundLabel": "Cascade round",
+      "roundNote": "each round, failure crosses to the other layer",
+      "plagueSlider": "Plague severity (fauna only)",
+      "roundSlider": "Step the cascade",
+      "prompt": "Release a plague that kills only animals — not a single tree. Then step the cascade and watch the damage ricochet: dead fauna strand the flora that depended on them, dead flora starve the fauna that depended on those, an avalanche bouncing between two layers each of which was robust on its own.",
+      "stepHint": "Keep stepping. The failure has not settled — it is still bouncing between the two layers, each round taking down whatever lost its partner in the last.",
+      "settledNote": "The cascade has settled. A plague aimed at one layer alone has pulled both down together — the signature of interdependent networks (Buldyrev et al. 2010).",
+      "collapsedNote": "Both networks are gone. The most efficient way to kill a forest, the mathematics suggests, may be to never touch the forest at all — only the creatures it cannot live without."
     }
   }
 }

@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-woodsprite-seedbank",
+  "chapter_slug": "why-burning-eywa-doesnt-kill-it",
+  "role": "diagram",
+  "narrative_purpose": "Shows regeneration as the living engine of resilience: the luminous woodsprites drifting out from an intact glowing hub across a fire-scarred, ashen sector and settling into the burned ground, re-seeding new nodes — the visual of a network repairing its own losses faster than damage accumulates.",
+  "subject": "A wide Pandoran landscape split between two states. On one side, an intact, richly glowing sacred tree with a luminous canopy stands untouched, releasing a drifting swarm of dozens of small, translucent, jellyfish-like luminous seeds — the woodsprites — into the air. The swarm streams across the middle of the frame on the wind toward the other side: a wide expanse of black, ashen, fire-scarred ground where the trees are reduced to charred stumps. Where the drifting seeds have settled onto the burned ground, tiny new cyan shoots and faint fresh threads of light are beginning to glow up out of the ash, the first new nodes of a regrowing network.",
+  "scene": "A burned forest sector being reseeded: living glowing hub on one flank, charred dead ground on the other, a bridge of drifting luminous seeds carrying the light across to spark new growth in the ash.",
+  "camera": "A wide landscape vantage, slightly elevated, taking in both the intact hub and the burned expanse in one sweep.",
+  "light": "Bioluminescent key from the intact tree and the drifting seeds and the new shoots; the burned ground dark and matte, lit only where new light is taking hold.",
+  "palette": "Void-indigo and charred near-black across the burned ground; Pandora cyan and living teal in the intact tree, the seed swarm, and the new shoots; a faint ember-amber smoulder lingering in the ash.",
+  "style": "Painterly speculative-biology naturalist plate, atmospheric and luminous, hand-painted texture.",
+  "detail_level": "Crisp on the drifting seed swarm and the new shoots in the ash; the far landscape dissolving into haze.",
+  "composition": "Intact glowing tree to one side, burned ground to the other, the seed swarm arcing across the upper-middle as a bridge of light; generous dark sky and ash for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "modern Earth objects"],
+  "consistency_notes": "Woodsprites are the translucent luminous drifting seeds seen in canon — render them as soft glowing jellyfish-like motes, not insects. Cool palette dominant, ember-amber scarce in the ash. Leave dark margins for annotation labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

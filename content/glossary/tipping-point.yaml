@@ -1,0 +1,16 @@
+id: tipping-point
+label:
+  vi: Điểm tới hạn (tipping point)
+  en: Tipping point
+definition:
+  vi: 'Ngưỡng tại đó một thay đổi nhỏ, tăng dần trong một biến điều khiển bỗng kích hoạt một dịch chuyển lớn, đột ngột và thường không thể đảo ngược sang một trạng thái khác của hệ. Trước điểm tới hạn, các phản hồi âm ổn định giữ hệ tại chỗ; vượt qua nó, các phản hồi dương tự khuếch đại giành quyền kiểm soát và đẩy hệ chạy trốn sang một cân bằng mới - một cân bằng mà sau đó nó sẽ bảo vệ cứng đầu y như cái cũ. Băng tan lộ ra biển sẫm hút thêm nhiệt làm tan thêm băng; tầng băng vĩnh cửu rã giải phóng khí nhà kính làm rã thêm băng vĩnh cửu. Đó là lý do một mặt số hành tinh tưởng như bền vững vẫn có thể gãy.'
+  en: 'A threshold at which a small, incremental change in a control variable suddenly triggers a large, abrupt, and often irreversible shift to a different state of the system. Below the tipping point, stabilising negative feedbacks hold the system in place; cross it, and self-amplifying positive feedbacks take over and drive the system running away to a new equilibrium - one it will then defend just as stubbornly as the old. Melt bright ice and you expose dark ocean that absorbs more heat and melts more ice; thaw permafrost and you release greenhouse gases that thaw more permafrost. It is why a seemingly durable planetary dial can still break.'
+see_also:
+- positive-feedback
+- planetary-boundaries
+- negative-feedback
+category: concept
+tags:
+- earth-systems
+- ecology
+cover_prompt: A painted ball balanced on the lip of a ridge in dark space, about to roll from one shallow basin into a far deeper one, cool teal giving way to warning-amber beyond the crest, on void-indigo, no text, no numbers, no labels.

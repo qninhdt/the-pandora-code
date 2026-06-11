@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-the-bond-as-cable",
+  "chapter_slug": "the-bandwidth-of-a-planet",
+  "role": "hero",
+  "narrative_purpose": "Opens the chapter by reframing tsaheylu from mysticism to engineering: two bundles of neural tendrils reaching toward each other and interlacing in mid-air, drawn as if a fibre-optic cable were being plugged into a port — the gesture that lets us ask the only question an engineer asks of a wire: how much can it carry, and how fast?",
+  "subject": "An extreme close study of a Na'vi queue tip and a banshee's neural antenna joining in tsaheylu: two bundles of fine pink-and-cyan neural tendrils reaching toward each other and interlacing in mid-air, lit from within, the geometry deliberately echoing a connector seating into a socket, against a dark indigo ground.",
+  "scene": "A dark, intimate Pandoran night; nothing in frame but the two reaching neural bundles and the charged space between them as they meet.",
+  "camera": "A tight macro view, shallow depth of field, the interlacing filaments sharp and the surroundings dissolving to black.",
+  "light": "Bioluminescent key from the tendrils themselves — cyan with a breath of magenta, brightest at the point of contact.",
+  "palette": "Void-indigo ground, Pandora cyan dominant, faint magenta warmth at the living connection.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence.",
+  "detail_level": "Crisp and intricate on the interlacing tendrils; the surroundings near-black and empty.",
+  "composition": "The two bundles meeting at centre, generous dark negative space around them for callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "modern Earth objects"],
+  "consistency_notes": "Cool Pandora palette with from-within bioluminescent key; the glowing-tendril visual language carries through the chapter. Keep dark space for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

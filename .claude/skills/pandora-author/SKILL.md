@@ -99,3 +99,9 @@ figures[], sources[]`. `part` + `order` mirror `outline.ts`.
 `status` starts `draft`; the orchestrator flips it to `published` after VI +
 validate + build pass. Glossary terms used via `<GlossaryTerm slug="…">` must end
 up defined in `content/glossary/` (the orchestrator's check enforces this).
+
+When you create a `content/glossary/{id}.yaml` term, it MUST include a `tags:`
+array (1-4 entries) drawn from the fixed vocabulary in
+`apps/web/lib/content/schemas/glossary-tags.ts` - tags are the primary lookup
+facet on the glossary page, so the coarse `category` field alone is not enough.
+Pick tags from the definition's actual subject; do not invent new tag slugs.

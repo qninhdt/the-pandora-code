@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-earth-vs-pandora-regulation",
+  "chapter_slug": "a-real-living-planet",
+  "role": "comparison",
+  "narrative_purpose": "The chapter's closing contrast: Earth regulates itself through scattered, unconnected feedback loops with nothing steering, while Pandora runs the same planetary regulation through a single integrated network that senses and responds as one — strong Gaia made literal.",
+  "subject": "Two planets side by side. Left planet (Earth-like, blue-green): several separate small feedback loops drawn at different points around it — a weathering loop on a continent, a cloud loop over an ocean, an ice patch at a pole — each loop self-contained and isolated, with no threads connecting them, nothing at the centre. Right planet (Pandora-like): the same kinds of loops at the same places, but now every loop is wired together by a bright web of fine filaments converging through the whole globe into one luminous integrated network with a glowing core.",
+  "scene": "A clean two-panel diagram, one planet per panel against dark space, the left scattered and unconnected, the right unified by a glowing web.",
+  "camera": "A flat, even diagrammatic view of the two planets at matched scale, side by side.",
+  "light": "Even diagrammatic light; the left planet's loops dim and separate, the right planet's network and core brightly self-lit.",
+  "palette": "Void-indigo space, the left planet in muted blue-green with faint isolated loops, the right planet ablaze with Pandora cyan and living teal network light.",
+  "style": "Painterly speculative-science naturalist plate with strong diagrammatic clarity, hand-painted texture.",
+  "detail_level": "Crisp on both planets and their loops; the right planet's converging network the brightest, most detailed element; space soft.",
+  "composition": "Two balanced planet panels left and right at matched scale, clear separation between them, dark margins for callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "continents resembling real Earth maps"],
+  "consistency_notes": "Inference-tier comparison closing the chapter. The contrast must read instantly: left = scattered isolated loops, no wiring; right = same loops fused into one glowing network. Cool Pandora palette throughout; leave dark margins for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style, no real Earth coastlines",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["fig-00-cover.png"]
+}

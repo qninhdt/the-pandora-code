@@ -95,7 +95,10 @@ Full detail, including `meta.yaml` authoring and the status taxonomy, lives in
    `<GlossaryTerm slug="…">` or in `meta.yaml` `glossary_terms` MUST have a
    definition file at `content/glossary/{id}.yaml`. If the check fails, add the
    missing definitions (don't remove the reference) and re-run. The old project
-   shipped many dangling terms - this guard prevents recurrence.
+   shipped many dangling terms - this guard prevents recurrence. Every glossary
+   definition file MUST also carry a `tags:` array from the fixed vocabulary in
+   `apps/web/lib/content/schemas/glossary-tags.ts` (the lookup facet on the
+   glossary page), not just a `category`.
 
 6. **Components are a reference palette, not a checklist.** See the rule below.
 

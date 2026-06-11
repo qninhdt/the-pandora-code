@@ -1,0 +1,18 @@
+id: negative-feedback
+label:
+  vi: Phản hồi âm (negative feedback)
+  en: Negative feedback
+definition:
+  vi: 'Một vòng lặp trong đó một thay đổi kích hoạt phản ứng chống lại chính nó, kéo hệ thống trở về trạng thái ổn định. Đây là cỗ máy của mọi sự tự điều hòa: nóng lên thì một quá trình làm mát khởi động, lạnh đi thì một quá trình sưởi ấm bật lên. Bộ điều nhiệt trong nhà là ví dụ quen thuộc; vòng tuần hoàn carbonate-silicate giữ khí hậu Trái Đất là ví dụ ở quy mô hành tinh. Phản hồi âm là thứ làm cho một hệ thống ổn định và "đàn hồi" - và sự vắng mặt hay sụp đổ của nó là điều biến một điểm tới hạn thành thảm họa. Trái ngược với phản hồi dương, vốn khuếch đại thay vì dập tắt.'
+  en: 'A loop in which a change triggers a response that opposes it, pulling the system back toward a stable state. This is the engine of all self-regulation: warm up and a cooling process kicks in, cool down and a warming one switches on. A household thermostat is the familiar case; the carbonate-silicate cycle holding Earth''s climate is the planetary-scale one. Negative feedback is what makes a system stable and resilient - and its absence or failure is what turns a tipping point into a catastrophe. It is the opposite of positive feedback, which amplifies rather than damps.'
+see_also:
+- positive-feedback
+- homeostasis
+- carbonate-silicate-cycle
+- daisyworld
+- tipping-point
+category: concept
+tags:
+- earth-systems
+- ecology
+cover_prompt: A painted loop arrow curving back on itself to cancel a rising disturbance, a wave flattening into calm, cool teal and cyan on void-indigo, suggesting self-correction, no text, no numbers, no labels.

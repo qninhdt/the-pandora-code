@@ -1,0 +1,30 @@
+id: percolation-theory
+label:
+  vi: Lý thuyết thẩm thấu
+  en: Percolation theory
+definition:
+  vi: >-
+    Nhánh toán học nghiên cứu cách một hệ kết nối tan rã khi ta lần lượt gỡ bỏ các nút hoặc liên kết.
+    Nó khởi nguồn từ một câu hỏi giản dị — nước có lách qua được một khối vật xốp không — rồi trở
+    thành công cụ chuẩn để phân tích độ bền của mọi thứ từ lưới điện đến cháy rừng. Phát hiện cốt lõi:
+    hệ không suy yếu dần đều mà giữ nguyên gần như toàn vẹn cho tới một ngưỡng tới hạn, rồi vỡ vụn đột
+    ngột. Đó là khung toán học lý giải vì sao một mạng lưới chịu được tổn thất khổng lồ — cho đến đúng
+    điểm nó không chịu nổi nữa.
+  en: >-
+    The branch of mathematics describing how a connected system falls apart as nodes or links are
+    progressively removed. It began with a homely question — can liquid seep through a porous solid —
+    and became the standard tool for analysing the robustness of everything from power grids to forest
+    fires. Its central finding: a system does not degrade smoothly but stays almost wholly intact up to
+    a critical threshold, then disintegrates abruptly. It is the mathematics of why a network endures
+    enormous loss — right up until the point it suddenly cannot.
+see_also:
+  - percolation-threshold
+  - phase-transition
+  - giant-connected-component
+category: concept
+tags:
+- network-science
+cover_prompt: >-
+  A painted grid of glowing cyan dots with many removed at random, the connected cluster still barely
+  spanning the field, a sense of a system on the verge of breaking apart, dark indigo ground,
+  painterly and schematic, no text, no labels, no numbers.

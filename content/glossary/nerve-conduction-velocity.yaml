@@ -1,0 +1,31 @@
+id: nerve-conduction-velocity
+label:
+  vi: Vận tốc dẫn truyền thần kinh
+  en: Nerve conduction velocity
+definition:
+  vi: >-
+    Tốc độ một xung thần kinh chạy dọc theo sợi trục. Xung thần kinh không phải dòng điện
+    chạy qua dây đồng ở gần ba trăm nghìn kilômét mỗi giây; nó là một cơn thác hóa học chậm
+    chạp, các ion bơm qua màng tế bào, tự tái tạo từng bước dọc theo sợi trục. Những sợi
+    thần kinh nhanh nhất, dày nhất, bọc myelin kỹ nhất trong cơ thể người - loại dành cho
+    phản xạ khẩn cấp - đạt cỡ 120 mét mỗi giây; loại trần trụi, chậm chạp bò ở 1 mét mỗi
+    giây, tốc độ đi bộ. Trần tốc độ này do hóa học định đoạt, không phải kỹ thuật - và là
+    ràng buộc cứng cho mọi mạng lưới "điện hóa" như Eywa.
+  en: >-
+    The speed at which a nerve impulse travels along an axon. A nerve impulse is not
+    electricity flowing through copper at nearly three hundred thousand kilometres a
+    second; it is a slow chemical cascade, ions pumping across a membrane, regenerating
+    itself step by step along the axon. The fastest, fattest, most heavily myelinated
+    nerves in the human body - the ones built for emergency reflexes - manage perhaps 120
+    metres per second; the bare, slow ones crawl at 1 metre per second, walking pace. The
+    ceiling is set by chemistry, not engineering - and is a hard constraint on any
+    "electrochemical" network like Eywa.
+see_also:
+  - tsaheylu
+  - queue
+  - bandwidth
+category: bio
+tags:
+- physiology
+- information-theory
+cover_prompt: A glowing nerve fibre with a bright pulse creeping slowly along it beside a streak of fast light for contrast, dark indigo ground, sense of a slow chemical wave, no text, no labels.

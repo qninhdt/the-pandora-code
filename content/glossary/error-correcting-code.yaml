@@ -1,0 +1,28 @@
+id: error-correcting-code
+label:
+  vi: Mã sửa lỗi
+  en: Error-correcting code
+definition:
+  vi: >-
+    Cách thực tế để đánh bại nhiễu. Thay vì chỉ gửi thông điệp, bên truyền gửi kèm thêm
+    những bit phụ được cấu trúc khéo léo, để bên nhận có thể phát hiện chỗ bị hỏng và tái
+    dựng lại phần đã mất bằng toán học. Đây chính là mánh giúp một chiếc đĩa bị xước vẫn
+    phát được, và giúp tàu vũ trụ cách xa hàng tỉ cây số gửi về một bức ảnh sạch giữa biển
+    nhiễu. Nhưng độ dư thừa không miễn phí: mỗi bit sửa lỗi là một bit KHÔNG dùng cho thông
+    điệp. Trên một kênh nhiễu, đảm bảo độ chính xác hoàn hảo có thể ngốn phần lớn dung lượng.
+  en: >-
+    The practical way to beat noise. Instead of just sending the message, the transmitter
+    sends extra, carefully structured bits alongside it, so the receiver can detect
+    corruption and mathematically reconstruct what was damaged. This is the trick that lets
+    a scratched disc still play, and lets a spacecraft billions of kilometres away send
+    back a clean photo through a sea of static. But the redundancy is not free: every
+    error-correcting bit is one NOT spent on the message. On a noisy channel, guaranteeing
+    perfect fidelity can eat most of the capacity.
+see_also:
+  - noisy-channel-coding-theorem
+  - channel-capacity
+  - redundancy
+category: concept
+tags:
+- information-theory
+cover_prompt: A grid of glowing bits where a few are flipped red by noise and then snapped back to cyan by a surrounding lattice of parity links, dark field, no text, no labels.

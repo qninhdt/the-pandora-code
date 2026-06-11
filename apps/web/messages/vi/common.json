@@ -66,11 +66,25 @@
   "page": {
     "chapters": {
       "title": "Toàn bộ chương truyện",
-      "subtitle": "Thư viện tổng hợp các chương đã được xuất bản."
+      "subtitle": "Thư viện tổng hợp các chương đã được xuất bản.",
+      "searchPlaceholder": "Tìm theo tên hoặc tóm tắt…",
+      "allParts": "Tất cả",
+      "statusAll": "Tất cả",
+      "statusPublished": "Đã ra mắt",
+      "statusComing": "Sắp ra mắt",
+      "jumpTo": "Nhảy tới phần",
+      "comingSoon": "Sắp ra mắt",
+      "statsDone": "{done} / {total} đã giải mã",
+      "readingTotal": "{minutes} phút đọc",
+      "noMatches": "Không có chương nào khớp bộ lọc."
     },
     "glossary": {
       "title": "Thuật ngữ",
-      "subtitle": "Từ điển diễn giải các khái niệm cốt lõi thường gặp."
+      "subtitle": "Từ điển diễn giải các khái niệm cốt lõi thường gặp.",
+      "searchPlaceholder": "Tìm thuật ngữ hoặc định nghĩa…",
+      "allTags": "Tất cả",
+      "resultCount": "{count} thuật ngữ",
+      "untagged": "Chưa phân loại"
     },
     "authors": {
       "title": "Tác giả",

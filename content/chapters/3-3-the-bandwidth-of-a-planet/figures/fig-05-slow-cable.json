@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-slow-cable",
+  "chapter_slug": "the-bandwidth-of-a-planet",
+  "role": "diagram",
+  "narrative_purpose": "Makes the latency problem visceral: a single faint electrochemical pulse creeping along a glowing neural cable that stretches across a whole curved moonscape, a signal that would take days to cross the network end to end — the quiet demolition of the 'planet thinking in real time' romance.",
+  "subject": "A vast curved horizon of a Pandoran moon seen from high altitude at night, the land laced with a faint glowing neural-root network like veins of light; along one strand a single small bright pulse of light creeps forward, with a long dark stretch of un-traversed cable ahead of it, dwarfed by the sheer distance it must cover.",
+  "scene": "A planetary-scale night view: the curve of the moon, a web of dim bioluminescent neural cabling spanning continents, one tiny travelling pulse making its slow way along a single thread.",
+  "camera": "A high, wide, slightly orbital vantage so the curvature of the moon and the vastness of the network are felt, the lone pulse small within it.",
+  "light": "The neural web a dim, cool cyan tracery across dark land; the single travelling pulse a brighter point of teal-white; faint planetshine from Polyphemus on the horizon.",
+  "palette": "Void-indigo and near-black land, dim cyan neural web, one brighter teal pulse, faint magenta-blue planetshine glow at the limb.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, atmospheric and vast.",
+  "detail_level": "Fine and intricate on the glowing network tracery and the single pulse; the land softening into atmospheric haze toward the curved horizon.",
+  "composition": "Curved horizon high in the frame, the web filling the dark land below, the lone pulse positioned with a long empty stretch of cable ahead to convey distance and slowness.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "modern Earth objects"],
+  "consistency_notes": "Cool Pandora palette with from-within bioluminescent key on the network. The mood is vastness and slowness — the pulse must read as tiny against the distance. Keep dark sky for callout labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

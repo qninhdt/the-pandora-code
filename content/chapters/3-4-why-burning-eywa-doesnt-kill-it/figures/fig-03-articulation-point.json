@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-articulation-point",
+  "chapter_slug": "why-burning-eywa-doesnt-kill-it",
+  "role": "diagram",
+  "narrative_purpose": "Makes the abstract idea of an articulation point concrete: two dense clusters joined by a single bridging node, so the reader sees exactly why destroying the Tree of Souls might amputate one clan from the network without killing the planetary whole.",
+  "subject": "Two dense clusters of glowing cyan nodes set apart in deep void: on the left a tight cluster representing one forest community, on the right a much larger sprawling cluster representing the wider planetary network; the two clusters are joined by exactly one bright bridging node sitting on the single thin link between them, glowing more strongly than its neighbours; a faint targeting ring is trained on that one bridge node; rendered faintly beside it, a ghosted alternate state shows the bridge node gone dark and the link broken, the left cluster dimmed and isolated while the right cluster stays fully lit.",
+  "scene": "A network diagram of two clusters and one bridge between them, with a ghosted 'after' state showing the consequence of cutting the bridge.",
+  "camera": "A flat schematic view of the two clusters side by side, the bridge node centred between them.",
+  "light": "Bioluminescent key from the nodes; the bridge node flares brightest as the focal subject; the ghosted broken state rendered dimmer and cooler.",
+  "palette": "Void-indigo base, Pandora cyan and living teal for the live clusters, the isolated left cluster dimming toward dark in the ghosted state, faint magenta only on the targeting ring.",
+  "style": "Painterly speculative-biology naturalist plate as a luminous schematic, hand-painted texture, not vector-flat.",
+  "detail_level": "Crisp on the two clusters and the single bridge node; surrounding void kept plain and dark for callouts.",
+  "composition": "Left cluster smaller, right cluster larger, the bright bridge node dead-centre on the only link between them; generous dark space above and below for labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "The single bridge node must read unmistakably as the only connection between the two clusters. Cool palette, warm only on the targeting ring. Leave dark margins for annotation labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

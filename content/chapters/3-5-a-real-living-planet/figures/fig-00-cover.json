@@ -1,0 +1,20 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "a-real-living-planet",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate on the landing book-map: Pandora seen whole from space as a single living organism — the moon as one luminous, breathing body, the synthesis image that closes Part III and asks whether a planet can itself be alive.",
+  "subject": "The full disc of the habitable moon Pandora seen from orbit against deep space, the gas giant Polyphemus a vast banded presence behind it, the moon's night side threaded all over with the faintest web of glowing bioluminescent filaments — forests, coastlines and ocean alike laced into one continuous shimmering circuit, so the whole world reads as a single wired organism rather than a dead rock with life on top.",
+  "scene": "A wide orbital view: the moon hanging in space, half lit by its distant sun, the dark hemisphere alive with a planet-spanning lattice of cool light, the curve of Polyphemus filling the upper background.",
+  "camera": "A distant orbital establishing shot, the whole disc of the moon in frame, deep space around it.",
+  "light": "A soft rim of sunlight on one limb; the dark side self-lit from within by the cool bioluminescent network; deep space black elsewhere.",
+  "palette": "Void-indigo space, the moon's living network in Pandora cyan and living teal, Polyphemus in muted storm-band tones behind.",
+  "style": "Painterly speculative-astronomy naturalist plate, hand-painted texture, luminous and atmospheric.",
+  "detail_level": "Crisp on the moon's glowing network and limb; Polyphemus and space softer and atmospheric.",
+  "composition": "The moon's disc set off-centre, the glowing network filling it, Polyphemus curving across one corner, generous dark space for the plate to breathe.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "spacecraft", "modern Earth objects"],
+  "consistency_notes": "Na'vi absent; landscape/astronomy plate. Cool Pandora palette with from-within bioluminescent key. The establishing 'the whole moon is one living system' mood that anchors the chapter.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style, no spacecraft",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

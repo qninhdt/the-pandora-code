@@ -1,0 +1,20 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "why-burning-eywa-doesnt-kill-it",
+  "role": "hero",
+  "narrative_purpose": "The full-bleed atmospheric mood layer the chapter's text floats over: a vast, dim, planet-scale view of Pandora's forest network at night, a faint web of bioluminescent connection stretching unbroken to the horizon — the living network at rest, immense and quietly resilient.",
+  "subject": "An ultra-wide, very high-altitude panorama of a continent-spanning Pandoran forest at deep night, seen from far above. Across the whole dark landscape runs a barely-visible, gossamer-fine web of cyan bioluminescent connections linking countless points of faint light into one continuous network that fades into atmospheric haze at the horizon. No single bright subject — just the immense, dim, connected whole, with one faint scar of darker burned ground that the surrounding web simply routes around and closes over.",
+  "scene": "A planet-scale forest network at night from very high vantage, dissolving into haze; a faint unbroken web of connection over a vast dark land.",
+  "camera": "Ultra-wide panoramic, very high aerial vantage, deep atmospheric perspective.",
+  "light": "Extremely low-key: faint bioluminescent web glow against deep void-indigo dark; no bright focal light; detail dissolving into haze.",
+  "palette": "Dominant void-indigo and deep teal-indigo dark; sparse faint Pandora cyan in the distant web; very low contrast for overlaid text readability.",
+  "style": "Painterly speculative-biology naturalist plate, dim and atmospheric, hand-painted texture.",
+  "detail_level": "Low and soft throughout — a mood layer, not a figure to study; everything dissolving into haze.",
+  "composition": "Vast horizontal expanse, horizon high, the faint network filling the dark field; deliberately empty and dim so long-form text floats readably over it.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "modern Earth objects", "bright focal subject"],
+  "consistency_notes": "This is the wide dim background layer, distinct from the crisp fig-00 cover. Keep it dark, low-contrast, and subjectless so overlaid text stays legible. Cool palette only.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no bright focal subject, no high contrast, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

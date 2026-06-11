@@ -29,7 +29,6 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
     glossary: t("nav.glossary"),
     authors: t("nav.authors"),
     timeline: t("nav.timeline"),
-    parts: t("nav.parts"),
   };
 
   return (

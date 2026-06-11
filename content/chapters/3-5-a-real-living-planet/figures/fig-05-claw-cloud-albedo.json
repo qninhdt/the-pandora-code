@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-claw-cloud-albedo",
+  "chapter_slug": "a-real-living-planet",
+  "role": "diagram",
+  "narrative_purpose": "Teaches the ocean's faster thermostat: heat-stressed plankton vent a sulphur compound that rises and seeds bright clouds, which reflect sunlight and cool the sea that warmed the plankton — life reaching up to adjust the planet's own albedo.",
+  "subject": "A vertical loop diagram over a stretch of ocean. At the bottom, sunlit surface water with a faint bloom of tiny glowing plankton. From the bloom, thin wisps rise into the air and gather into a deck of bright, dense white cloud across the upper third. From the cloud, broad pale beams of reflected light bounce back upward toward the sky. A curved return path runs down the side from the cooled sea back to the plankton, showing the cycle closing on itself.",
+  "scene": "A side-on slice of ocean and sky: glowing plankton in the water below, rising sulphur wisps, a reflective cloud deck above, sunlight bouncing off it.",
+  "camera": "A side-on diagrammatic cross-section of sea and sky, the full vertical loop in frame.",
+  "light": "Even diagrammatic light; the plankton bloom and the bright cloud deck picked out in cool glow, the reflected beams pale, the deep water dim.",
+  "palette": "Void-indigo and deep teal water, the plankton and cloud in Pandora cyan and pale luminous white, restrained.",
+  "style": "Painterly speculative-science naturalist plate with strong diagrammatic clarity, hand-painted texture.",
+  "detail_level": "Crisp on the plankton bloom, the rising wisps and the bright cloud deck; soft in the deep water and sky margins.",
+  "composition": "A clear vertical stack — plankton low, wisps rising, cloud deck high, reflected light bouncing up — with the return path down one side, dark margins for labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "chemical formulae", "Avatar branding"],
+  "consistency_notes": "Pure Earth-science figure in the book's cool palette so it sits beside the Pandoran plates. The single baked-in return-path curve is allowed because the loop is the subject; no other arrows, no text. Leave dark sky and water margins for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no chemical formulae, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

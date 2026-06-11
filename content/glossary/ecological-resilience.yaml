@@ -1,0 +1,30 @@
+id: ecological-resilience
+label:
+  vi: Khả năng phục hồi sinh thái
+  en: Ecological resilience
+definition:
+  vi: >-
+    Khả năng của một hệ sống hấp thụ những xáo trộn lớn, thay đổi, mà vẫn giữ được bản sắc, cấu trúc
+    và các vòng phản hồi chức năng cốt lõi của mình — phân biệt rõ với *sức đề kháng*, vốn là khả năng
+    không bị tổn hại ngay từ đầu. Nhà sinh thái C. S. Holling vạch ranh giới này năm 1973: đề kháng là
+    lớp vỏ giáp, còn phục hồi là khả năng bật dậy sau cú đánh. Một hệ có thể yếu về đề kháng (rừng vẫn
+    cháy) nhưng cực mạnh về phục hồi (rừng mọc lại) — và chính phục hồi, không phải đề kháng, mới là
+    thứ giúp một mạng lưới sống sót sau thảm họa lặp đi lặp lại.
+  en: >-
+    The capacity of a living system to absorb large perturbations, change, and still keep its core
+    identity, structure, and functional feedbacks — sharply distinct from *resistance*, the ability
+    to not be damaged in the first place. The ecologist C. S. Holling drew the line in 1973:
+    resistance is armour, resilience is the ability to bounce back after a blow. A system can be weak
+    in resistance (the forest still burns) yet ferociously strong in resilience (the forest regrows)
+    — and it is resilience, not resistance, that lets a network survive repeated catastrophe.
+see_also:
+  - insurance-hypothesis
+  - seed-bank
+  - degeneracy-biology
+category: concept
+tags:
+- ecology
+cover_prompt: >-
+  A painted naturalist scene of a burned dark hillside with bright green and cyan shoots already
+  rising from the ash, a sense of recovery after damage, cool teal and cyan against charred indigo
+  ground, painterly and luminous, no text, no labels, no numbers.

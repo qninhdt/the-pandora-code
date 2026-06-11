@@ -66,11 +66,25 @@
   "page": {
     "chapters": {
       "title": "All chapters",
-      "subtitle": "The growing library of published chapters."
+      "subtitle": "The growing library of published chapters.",
+      "searchPlaceholder": "Search title or summary…",
+      "allParts": "All",
+      "statusAll": "All",
+      "statusPublished": "Published",
+      "statusComing": "Coming",
+      "jumpTo": "Jump to part",
+      "comingSoon": "Coming soon",
+      "statsDone": "{done} / {total} decoded",
+      "readingTotal": "{minutes} min of reading",
+      "noMatches": "No chapters match your filters."
     },
     "glossary": {
       "title": "Glossary",
-      "subtitle": "A dictionary of recurring concepts."
+      "subtitle": "A dictionary of recurring concepts.",
+      "searchPlaceholder": "Search terms or definitions…",
+      "allTags": "All",
+      "resultCount": "{count} terms",
+      "untagged": "Untagged"
     },
     "authors": {
       "title": "Author",

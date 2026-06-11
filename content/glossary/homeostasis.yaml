@@ -1,0 +1,17 @@
+id: homeostasis
+label:
+  vi: Cân bằng nội môi (homeostasis)
+  en: Homeostasis
+definition:
+  vi: 'Khả năng một hệ thống duy trì một trạng thái nội tại ổn định trước những thay đổi của môi trường bên ngoài. Cơ thể bạn giữ thân nhiệt quanh 37°C dù trời nóng hay lạnh; đó là cân bằng nội môi. Cơ chế cốt lõi luôn là một vòng phản hồi âm: một độ lệch khỏi điểm cân bằng sẽ kích hoạt chính sự hiệu chỉnh kéo nó trở lại. Khái niệm này vốn của sinh lý học, nhưng mở rộng tự nhiên lên quy mô hành tinh - một thế giới giữ nhiệt độ, thành phần khí quyển hay độ pH đại dương ổn định qua những vòng phản hồi cũng đang thể hiện cân bằng nội môi, dù không có cơ quan nào "quyết định" làm vậy. Người Na''vi gọi nó là "giữ thế cân bằng của sự sống".'
+  en: 'The ability of a system to maintain a stable internal state in the face of a changing outside. Your body holds its temperature near 37°C whether the day is hot or cold; that is homeostasis. The core mechanism is always a negative feedback loop: a deviation from the set point triggers the very correction that pulls it back. The idea comes from physiology but extends naturally to planetary scale - a world that holds its temperature, atmospheric composition, or ocean pH steady through feedback loops is exhibiting homeostasis too, even with no organ "deciding" to do so. The Na''vi call it keeping the balance of life.'
+see_also:
+- negative-feedback
+- daisyworld
+- gaia-hypothesis
+- carbonate-silicate-cycle
+category: concept
+tags:
+- physiology
+- earth-systems
+cover_prompt: A painted needle resting steady at the centre of a glowing dial while pressures push from both sides, cool teal and cyan on void-indigo, suggesting a held balance, no text, no numbers, no labels.

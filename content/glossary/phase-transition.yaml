@@ -1,0 +1,32 @@
+id: phase-transition
+label:
+  vi: Chuyển pha
+  en: Phase transition
+definition:
+  vi: >-
+    Sự thay đổi đột ngột, về chất, trong trạng thái của một hệ khi một thông số điều khiển vượt qua
+    một giá trị tới hạn — như nước hóa đá ở đúng 0°C. Khác với một thay đổi từ tốn, chuyển pha có một
+    điểm gãy sắc: ngay dưới điểm đó hệ là một loại vật chất, ngay trên đó là một loại khác hẳn, không
+    có vùng đệm. Khái niệm này vượt xa vật lý nhiệt: sự vỡ vụn của một mạng lưới tại ngưỡng thẩm thấu
+    là một chuyển pha thực thụ, đúng theo nghĩa toán học sâu xa nhất — vì thế một mạng không "yếu dần"
+    mà sống sót gần như nguyên vẹn rồi sụp đổ toàn bộ chỉ trong một khoảnh khắc.
+  en: >-
+    A sudden, qualitative change in the state of a system when a control parameter crosses a critical
+    value — like water freezing into ice at exactly 0°C. Unlike a gradual change, a phase transition
+    has a sharp break: just below the point the system is one kind of thing, just above it a
+    qualitatively different kind, with no gentle middle. The idea reaches far beyond thermal physics:
+    the shattering of a network at its percolation threshold is a genuine phase transition in the
+    deepest mathematical sense — which is why a network does not "weaken gradually" but survives almost
+    intact and then collapses entirely in a single instant.
+see_also:
+  - percolation-threshold
+  - percolation-theory
+  - critical-temperature
+category: concept
+tags:
+- physics
+- network-science
+cover_prompt: >-
+  A painted diptych of water transforming into jagged ice crystals across a sharp boundary line, cool
+  cyan and pale mist tones on deep indigo, a sense of a sudden threshold being crossed, painterly and
+  elegant, no text, no labels, no numbers.

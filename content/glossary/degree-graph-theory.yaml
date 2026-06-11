@@ -1,0 +1,26 @@
+id: degree-graph-theory
+label:
+  vi: Bậc (lý thuyết đồ thị)
+  en: Degree (graph theory)
+definition:
+  vi: >-
+    Số cạnh mà một nút có — tức nó nối trực tiếp với bao nhiêu nút khác. Một cái cây trong rừng có
+    bậc thấp nối với vài cây lân cận; một Cây Linh Hồn nối với hàng nghìn thì có bậc rất cao. Bậc là
+    thước đo tầm quan trọng đơn giản nhất của một nút: các nút bậc cao (các trung tâm) gánh phần lớn
+    lưu thông của mạng, và việc mất chúng gây tổn hại lớn hơn nhiều so với mất một nút bậc thấp.
+  en: >-
+    The number of edges a node has — how many other nodes it connects to directly. A single forest
+    tree wired to a few neighbours has low degree; a Tree of Souls wired to thousands has very high
+    degree. Degree is the simplest measure of a node's importance: high-degree nodes (the hubs) carry
+    most of a network's traffic, and losing one does far more damage than losing a low-degree node.
+see_also:
+  - node-graph-theory
+  - degree-distribution
+  - hub-network
+category: concept
+tags:
+- network-science
+cover_prompt: >-
+  A dark indigo field of glowing cyan network nodes where a few central nodes have many threads
+  radiating out and most nodes have only one or two, the difference in connection count visible at a
+  glance, painterly and schematic, no text, no labels, no numbers.

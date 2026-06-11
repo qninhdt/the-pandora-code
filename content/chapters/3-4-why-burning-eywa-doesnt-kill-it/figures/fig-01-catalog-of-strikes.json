@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-catalog-of-strikes",
+  "chapter_slug": "why-burning-eywa-doesnt-kill-it",
+  "role": "diagram",
+  "narrative_purpose": "Shows the four canonical RDA strikes laid over a single stylized map of the living network, so the reader sees at a glance that three are blind/random damage to ordinary nodes and only one is aimed at a hub — the random-versus-targeted distinction that the whole chapter turns on.",
+  "subject": "A stylized dark map of Pandora's living network drawn as a web of glowing cyan nodes joined by fine luminous links, a few large bright hub-nodes among many small dim leaf-nodes; across this web, four distinct sites of damage: at the lower-left edge a small grove being flattened by a dark bulldozer blade; near the centre a single very large node toppling and going dark as it falls; at the upper area one brightly glowing large hub-node encircled by a faint targeting ring; and in a separate darker ocean-region at the right, a cluster of mid-sized mobile nodes struck and dimming; despite all four, the vast majority of the web remains lit and connected.",
+  "scene": "A single continuous network-web filling the frame against deep void, the four damage sites distributed across it, most of the lattice intact and glowing.",
+  "camera": "A flat top-down schematic view of the whole network at once, as if looking at the planet's connectivity from directly above.",
+  "light": "Bioluminescent key from the network nodes and links themselves — cyan and teal glow; the felled and struck nodes gone dark; one targeted hub flaring brightest under its ring; a faint ember-amber smear only at the bulldozed grove.",
+  "palette": "Void-indigo base, dominant Pandora cyan and living teal for the live web, dead nodes near-black, a single scarce ember-amber accent at the bulldozer.",
+  "style": "Painterly speculative-biology naturalist plate rendered as a luminous schematic map, hand-painted texture, not vector-flat.",
+  "detail_level": "Crisp on the node-and-link web and the four damage sites; background dissolving into dark haze, with plain dark regions left beside each strike for later callouts.",
+  "composition": "The web spread across the full frame, four damage sites well separated (lower-left, centre, upper, right-ocean) so each can be labelled cleanly; dark negative space at the margins.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "A luminous network map, not a literal landscape. Hubs visibly larger and brighter than leaf-nodes so the targeted strike reads as aimed at a hub. Cool palette, warm only at the single bulldozed grove. Leave dark margins beside each strike for annotation labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

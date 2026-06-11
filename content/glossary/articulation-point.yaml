@@ -1,0 +1,28 @@
+id: articulation-point
+label:
+  vi: Điểm khớp nối
+  en: Articulation point
+definition:
+  vi: >-
+    Trong lý thuyết đồ thị, một nút mà nếu bị gỡ bỏ sẽ làm một đồ thị đang liền mạch tách thành hai
+    phần rời nhau — còn gọi là đỉnh cắt. Đó là chiếc cầu độc đạo giữa hai vùng của mạng lưới: phá nó
+    đi và hai bên không còn đường nào với tới nhau. Trong một mạng lưới mô-đun, các điểm khớp nối là
+    những nút hiếm hoi bắc cầu giữa các cụm, và vì thế là mục tiêu chiến lược: bạn không cần phá nhiều
+    mạng lưới, chỉ cần phá đúng nút cầu để cô lập cả một vùng khỏi phần còn lại.
+  en: >-
+    In graph theory, a node whose removal splits a once-connected graph into two disconnected pieces
+    — also called a cut vertex. It is the sole bridge between two regions of a network: destroy it
+    and the two sides can no longer reach each other. In a modular network, articulation points are
+    the rare nodes that bridge clusters, which makes them strategic targets: you need not destroy
+    much of the network, only the right bridging node, to amputate an entire region from the rest.
+see_also:
+  - modularity-network
+  - hub-network
+  - giant-connected-component
+category: concept
+tags:
+- network-science
+cover_prompt: >-
+  A painted diagram of two glowing clusters of cyan nodes joined by a single bright bridging node on
+  the only link between them, that one node visibly critical, cool cyan and faint magenta on dark
+  indigo ground, painterly schematic, no text, no labels, no numbers.

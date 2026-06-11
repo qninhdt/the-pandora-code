@@ -1,0 +1,18 @@
+id: claw-hypothesis
+label:
+  vi: Giả thuyết CLAW
+  en: CLAW hypothesis
+definition:
+  vi: 'Một vòng phản hồi âm đại dương đề xuất năm 1987, lấy tên từ chữ cái đầu của bốn tác giả (Charlson, Lovelock, Andreae, Warren). Sinh vật phù du biển, dưới áp lực nhiệt và ánh sáng, thải ra một hợp chất lưu huỳnh bay vào khí quyển và làm hạt nhân ngưng tụ mây. Nhiều phù du hơn → nhiều mầm mây hơn → nhiều mây hơn; mà mây thì sáng, phản xạ ánh nắng trở lại không gian và làm mát mặt biển. Hâm nóng biển thì phù du nở rộ và pha thêm mây làm mát; làm lạnh thì chúng rút lui và để lọt nhiều nắng hơn - sự sống vươn lên chỉnh suất phản xạ của hành tinh, đúng như những bông cúc trắng trong Daisyworld. Lovelock về sau lo ngại phiên bản trái ngược: hâm biển quá mức thì phù du không nở mà sụp đổ, mây mát biến mất, và vòng phản hồi lật từ ổn định sang chạy trốn.'
+  en: 'An ocean negative-feedback loop proposed in 1987, named for its authors'' initials (Charlson, Lovelock, Andreae, Warren). Marine plankton, under heat and light stress, release a sulphur compound that escapes to the air and seeds cloud droplets. More plankton, more cloud-seeds, more cloud - and clouds are bright, reflecting sunlight back to space and cooling the sea surface. Warm the ocean and the plankton bloom and brew more cooling cloud; cool it and they retreat and let more sun through - life reaching up to adjust the planet''s albedo, exactly as the white daisies did. Lovelock later worried about its dark twin: warm the ocean too far and the plankton collapse rather than bloom, the cooling clouds fail, and the feedback flips from stabilising to runaway.'
+see_also:
+- negative-feedback
+- albedo
+- daisyworld
+- gaia-hypothesis
+category: concept
+tags:
+- earth-systems
+- atmosphere
+- ecology
+cover_prompt: A painted ocean seen from high above, microscopic plankton glowing faintly in the water sending pale wisps up into a deck of bright reflective cloud, cool cyan and teal on void-indigo, a loop of sea and sky, no text, no numbers, no labels.

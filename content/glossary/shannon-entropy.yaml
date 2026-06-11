@@ -1,0 +1,27 @@
+id: shannon-entropy
+label:
+  vi: Entropy Shannon
+  en: Shannon entropy
+definition:
+  vi: >-
+    Thước đo lượng thông tin trung bình mà một nguồn sinh ra trên mỗi ký hiệu - tức mức
+    độ bất định mà mỗi ký hiệu giải tỏa. Ký hiệu là H, tính bằng tổng -p·log₂(p) trên mọi
+    khả năng. Một nguồn dễ đoán mang rất ít thông tin mỗi ký hiệu; một nguồn khó đoán
+    mang nhiều. Tiếng Anh, nhờ tính dư thừa và quy luật của nó, chỉ chứa khoảng 1 đến 1,5
+    bit entropy cho mỗi chữ cái - thấp hơn nhiều so với 100+ phím trên bàn phím. Entropy
+    cho ta biết một thông điệp có thể nén tới đâu mà không mất mát.
+  en: >-
+    A measure of the average information a source produces per symbol - the uncertainty
+    each symbol resolves. Written H, computed as the sum of -p·log₂(p) over all
+    possibilities. A predictable source carries little information per symbol; an
+    unpredictable one carries much. English, thanks to its redundancy and rules, holds
+    only about 1 to 1.5 bits of entropy per letter - far below the 100+ keys on a
+    keyboard. Entropy tells you how far a message can be compressed without loss.
+see_also:
+  - information-theory
+  - bit
+  - redundancy
+category: concept
+tags:
+- information-theory
+cover_prompt: A spread of glowing letter-tiles dissolving into a thin orderly stream of cyan bits, suggesting compression, dark indigo ground, luminous, no text labels.

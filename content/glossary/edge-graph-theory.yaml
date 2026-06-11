@@ -1,0 +1,27 @@
+id: edge-graph-theory
+label:
+  vi: Cạnh (lý thuyết đồ thị)
+  en: Edge (graph theory)
+definition:
+  vi: >-
+    Một liên kết nối hai nút trong mạng lưới. Nếu nút là các điểm, cạnh là những đường nối chúng —
+    tình bạn giữa hai người, một đường bay giữa hai sân bay, một sợi rễ giữa hai cái cây. Toàn bộ
+    "hình dạng" của một mạng lưới, và do đó cả sức bền lẫn điểm yếu của nó, nằm ở chỗ các cạnh được
+    bố trí ra sao. Cắt đúng vài cạnh có thể chia một mạng lưới làm đôi; cắt nhầm chỗ thì chẳng hề gì.
+  en: >-
+    A link joining two nodes in a network. If nodes are the points, edges are the lines between them —
+    a friendship between two people, a flight between two airports, a root thread between two trees.
+    The whole "shape" of a network, and therefore both its strength and its weak spots, lies in how
+    the edges are arranged. Cut the right few edges and you split a network in two; cut the wrong ones
+    and nothing happens.
+see_also:
+  - node-graph-theory
+  - degree-graph-theory
+  - articulation-point
+category: concept
+tags:
+- network-science
+cover_prompt: >-
+  Two glowing cyan points on a dark indigo ground joined by a single luminous thread between them,
+  with fainter threads branching toward other unseen points, painterly and schematic, emphasis on the
+  connecting line, no text, no labels, no numbers.

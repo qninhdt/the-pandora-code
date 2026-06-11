@@ -15,7 +15,6 @@ export interface DockNav {
   glossary: string;
   authors: string;
   timeline: string;
-  parts: string;
 }
 
 const REPO_URL = "https://github.com/qninhdt/the-pandora-code";
@@ -63,7 +62,6 @@ export function FloatingDock({ locale, brand, nav }: FloatingDockProps) {
 
   const links = [
     { href: `${base}/chapters`, label: nav.chapters },
-    { href: `${base}/parts`, label: nav.parts },
     { href: `${base}/glossary`, label: nav.glossary },
     { href: `${base}/author`, label: nav.authors },
     { href: `${base}/timeline`, label: nav.timeline },

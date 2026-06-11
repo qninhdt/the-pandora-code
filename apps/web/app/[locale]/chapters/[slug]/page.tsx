@@ -114,6 +114,7 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
           term={g?.label}
           definition={g?.definition}
           coverSrc={getGlossaryCoverImage(termSlug)}
+          tags={g?.tags}
           locale={loc}
         >
           {children}

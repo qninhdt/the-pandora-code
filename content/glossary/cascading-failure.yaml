@@ -1,0 +1,32 @@
+id: cascading-failure
+label:
+  vi: Sụp đổ dây chuyền
+  en: Cascading failure
+definition:
+  vi: >-
+    Một chuỗi hỏng hóc tự nuôi mình, trong đó sự thất bại của vài thành phần dồn tải hoặc cắt nguồn
+    của các thành phần khác, khiến chúng cũng hỏng, lại kéo theo những thành phần phụ thuộc tiếp theo
+    — một trận lở tuyết có thể san phẳng cả hệ thống chỉ từ một cú hích. Đây là cơ chế đằng sau những
+    đợt mất điện diện rộng và các vụ sụp đổ mạng lưới phụ thuộc lẫn nhau. Trong một hệ ghép đôi như
+    quần xã thực vật và động vật của Pandora, một mầm bệnh chỉ giết động vật vẫn có thể buộc cả mạng
+    lưới thực vật sụp theo dây chuyền mà không cần đốt một cái cây nào.
+  en: >-
+    A self-feeding chain of failures in which the loss of a few components overloads or cuts the
+    supply to others, making them fail too, which takes down further dependent components — an
+    avalanche that can level a whole system from a single push. It is the mechanism behind
+    wide-area blackouts and the collapse of interdependent networks. In a coupled system like
+    Pandora's flora and fauna, a plague that kills only animals could force the entire plant network
+    to cascade into collapse without a single tree being burned — the most insidious failure mode of
+    a connected world.
+see_also:
+  - interdependent-networks
+  - percolation-threshold
+  - giant-connected-component
+category: concept
+tags:
+- network-science
+- ecology
+cover_prompt: >-
+  A painted diagram of a network where darkness spreads node by node in a chain reaction, bright
+  cyan nodes going dark in a propagating wave, a sense of avalanche, cool cyan fading to void-indigo
+  with faint magenta at the failure front, painterly schematic, no text, no labels, no numbers.

@@ -1,0 +1,20 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "the-bandwidth-of-a-planet",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate on the landing book-map: tsaheylu read as a communication channel. A single glowing neural queue-tendril plugged into a luminous planet-spanning web, a thread of light running away from the connection point into the dark — the image of information crossing a biological cable.",
+  "subject": "An extreme, reverent close study of the tip of a Na'vi queue meeting the glowing tendrils of a sacred tree: fine pink-and-cyan neural filaments interlacing in mid-air like a fibre-optic connector seating into a port, and from the join a single bright thread of light streaking away into a vast, dim lattice of connections that fills the depth of the frame — one cable in a planet-sized network.",
+  "scene": "A dark Pandoran night interior near a sacred tree; the foreground dominated by the luminous join of two neural bundles, the background dissolving into an immense faint web of glowing links receding into distance.",
+  "camera": "A macro, shallow-depth view on the interlacing tendrils, the network behind thrown into soft bokeh so the single bright signal-thread reads against it.",
+  "light": "Bioluminescent key from the neural join itself — intense cyan and faint magenta at the connection, falling off fast into deep indigo; a single brighter filament of light tracing away from the join.",
+  "palette": "Void-indigo base, dominant Pandora cyan and a breath of magenta at the living connection, the receding network in dim teal.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence, luminous and atmospheric.",
+  "detail_level": "Crisp and intricate on the interlacing tendrils and the bright signal-thread; the background network softer, dissolving into haze.",
+  "composition": "The glowing join low-and-left of centre, the bright thread sweeping across and into the depth, dark negative space upper-right for the plate to breathe.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "modern Earth objects"],
+  "consistency_notes": "Na'vi mostly absent — this is a close study of the connection itself. Cool Pandora palette with from-within bioluminescent key. The establishing 'the bond is a cable carrying information' mood that anchors the whole chapter.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

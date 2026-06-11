@@ -1,0 +1,29 @@
+id: conscious-bottleneck
+label:
+  vi: Nút thắt ý thức
+  en: The conscious bottleneck
+definition:
+  vi: >-
+    Khoảng cách kinh ngạc giữa lượng dữ liệu giác quan đổ vào hệ thần kinh và lượng thực sự
+    chạm tới ý thức. Các giác quan bơm vào cỡ 11 triệu bit mỗi giây - riêng mắt chiếm phần
+    lớn - nhưng dòng chảy chạm tới nhận thức có ý thức, cái "tôi" đang nghĩ và quyết định,
+    chỉ được ước tính khoảng 10 đến 50 bit mỗi giây, chậm hơn cả modem thập niên 1980. Não
+    nén tàn nhẫn một dòng thác cảm giác xuống còn một dòng nhỏ giọt trừu tượng của ý nghĩa.
+    Tor Nørretranders gọi kết quả này là "ảo giác người dùng".
+  en: >-
+    The startling gap between how much sensory data floods the nervous system and how much
+    actually reaches conscious awareness. The senses pump in around 11 million bits per
+    second - the eyes account for most of it - yet the stream that reaches conscious
+    awareness, the self that thinks and decides, is estimated at a mere 10 to 50 bits per
+    second, slower than a 1980s modem. The brain ruthlessly compresses a firehose of
+    sensation down to a thin abstract trickle of meaning. Tor Nørretranders called the
+    result "the user illusion".
+see_also:
+  - bit
+  - information-theory
+  - connectome
+category: concept
+tags:
+- consciousness
+- information-theory
+cover_prompt: A wide torrent of glowing particles funneling into a narrow neck and emerging as a thin single thread of cyan light, dark indigo field, sense of vast compression, no text, no labels.

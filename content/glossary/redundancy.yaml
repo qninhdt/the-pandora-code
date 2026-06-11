@@ -1,0 +1,27 @@
+id: redundancy
+label:
+  vi: Độ dư thừa
+  en: Redundancy
+definition:
+  vi: >-
+    Trong lý thuyết thông tin, độ dư thừa là phần thông điệp có thể đoán trước được - phần
+    không mang thông tin mới. Tiếng Anh dư thừa nặng: bạn vẫn đọc được câu "th_s s_nt_nc_"
+    dù đã bỏ mất nhiều chữ cái, vì phần còn lại đã đủ để suy ra phần thiếu. Sự dư thừa đó
+    vừa là lãng phí, vừa là cứu cánh: nó cho phép nén (vứt bỏ phần đoán được) và cho phép
+    sửa lỗi (thêm phần dư có kiểm soát để chống nhiễu). Một bản sao hoàn hảo qua kênh nhiễu
+    được mua bằng chính độ dư thừa có chủ đích này.
+  en: >-
+    In information theory, redundancy is the predictable part of a message - the part that
+    carries no new information. English is heavily redundant: you can still read
+    "th_s s_nt_nc_" with letters missing, because the rest is enough to infer the gaps.
+    That redundancy is both waste and salvation: it allows compression (throw away the
+    predictable part) and error correction (add controlled redundancy back to fight noise).
+    A perfect copy across a noisy channel is bought with exactly this deliberate redundancy.
+see_also:
+  - error-correcting-code
+  - shannon-entropy
+  - channel-capacity
+category: concept
+tags:
+- information-theory
+cover_prompt: A line of text dissolving with half its letters missing yet still legible, glowing cyan on a dark indigo field, no readable words, abstract, no labels.

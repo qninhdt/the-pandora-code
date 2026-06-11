@@ -369,6 +369,50 @@
         "sanction": "Bạn đang trả quá ít cho một đối tác sẵn lòng và nhận về chẳng bao nhiêu. Trả thêm đi, hoặc nó sẽ ưu ái một khách hàng sộp hơn.",
         "cheated": "Đối tác này giữ khư khư phốt-pho dù bạn trả bao nhiêu. Cái cây học cách bỏ đói nó — một hình thức trừng phạt."
       }
+    },
+    "percolationNetwork": {
+      "title": "Đốt nó đi — và tìm ra vách đá",
+      "subtitle": "Gỡ bỏ một phần của mạng vô tỉ lệ và xem phần nào còn nối liền",
+      "aria": "Một mạng vô tỉ lệ gồm các nút và liên kết phát sáng; gỡ bỏ các nút một cách ngẫu nhiên hoặc nhắm vào hub trước, cho thấy cụm liên thông lớn nhất còn sống sót",
+      "modeLabel": "Kiểu tấn công",
+      "modeRandom": "Ngẫu nhiên",
+      "modeTargeted": "Có chủ đích",
+      "removeSlider": "Tỉ lệ bị gỡ bỏ",
+      "removedLabel": "Đã gỡ",
+      "giantLabel": "Cụm lớn nhất",
+      "giantNote": "phần của toàn mạng còn nối thành một khối",
+      "verdictLabel": "Mạng lưới",
+      "intact": "Nguyên vẹn",
+      "connected": "Vẫn liên thông",
+      "shattered": "Vỡ vụn",
+      "hubHint": "nút lớn = hub · nút nhỏ = lá",
+      "randomHint": "Gỡ nút một cách mù quáng, theo vị trí — không theo mức độ kết nối",
+      "targetedHint": "Gỡ các hub kết nối nhiều nhất trước — kiểu tấn công Albert-Barabási",
+      "prompt": "Kéo để gỡ bỏ một phần của mạng. Khi gỡ ngẫu nhiên, cụm liên thông lớn bám trụ lâu hơn nhiều so với ta tưởng, rồi biến mất cùng một lúc ngay tại ngưỡng thấm. Chuyển sang chế độ có chủ đích và nhắm vào các hub — cũng mạng đó vỡ vụn chỉ sau vài lần gỡ.",
+      "randomNote": "Mất mát ngẫu nhiên gần như không hề hấn gì với khối liên thông — lá rụng, hub trụ vững, và tín hiệu vòng qua chỗ hỏng. Đây là lý do đốn sạch rừng chẳng bao giờ giết được mạng lưới.",
+      "targetedNote": "Đánh thẳng vào hub trước sẽ xé toạc mạng lưới rất nhanh. Chỉ một phần nhỏ bị gỡ — đúng cái phần ấy — là đủ đẩy cụm liên thông lớn rơi khỏi vách đá. Đây chính là bản năng của Quaritch ở Cây Linh Hồn.",
+      "shatteredNote": "Cụm liên thông lớn đã biến mất: thứ còn lại là một đám bụi các hòn đảo rời rạc không thể với tới nhau. Dưới ngưỡng thấm, mạng lưới không còn là một khối — nó là những mảnh vỡ."
+    },
+    "cascadingFailure": {
+      "title": "Hiệu ứng dây chuyền — giết nàng mà không cần lửa",
+      "subtitle": "Hai mạng lưới gắn kết, và một mầm bệnh chỉ chạm vào một bên",
+      "aria": "Hai hàng nút đối diện nhau — hệ thực vật ở trên, hệ động vật ở dưới — mỗi nút phụ thuộc vào một bạn đồng hành ở mạng kia; {dead} trên {total} nút đã sụp đổ",
+      "floraLayer": "Hệ thực vật — cây cối",
+      "faunaLayer": "Hệ động vật — kẻ thụ phấn & sứ giả mang hạt",
+      "verdictLabel": "Cả hai mạng lưới",
+      "intact": "Nguyên vẹn",
+      "cascading": "Đang sụp dây chuyền",
+      "collapsed": "Đã sụp đổ",
+      "deadLabel": "Đã sụp",
+      "deadNote": "trên cả hai lớp gắn kết",
+      "roundLabel": "Vòng dây chuyền",
+      "roundNote": "mỗi vòng, sự hỏng hóc lại vượt sang lớp kia",
+      "plagueSlider": "Mức độ mầm bệnh (chỉ động vật)",
+      "roundSlider": "Bước qua từng vòng",
+      "prompt": "Thả một mầm bệnh chỉ sát hại động vật — không đụng một cái cây nào. Rồi bước qua từng vòng và xem thiệt hại dội qua dội lại: động vật chết bỏ rơi thực vật từng sống nhờ chúng, thực vật chết bỏ đói động vật từng sống nhờ chúng, một trận tuyết lở nảy bật giữa hai lớp vốn vững vàng khi đứng riêng.",
+      "stepHint": "Hãy bước tiếp. Sự hỏng hóc chưa lắng xuống — nó vẫn đang nảy bật giữa hai lớp, mỗi vòng hạ gục bất cứ nút nào mất bạn đồng hành ở vòng trước.",
+      "settledNote": "Chuỗi dây chuyền đã lắng. Một mầm bệnh chỉ nhắm vào một lớp đã kéo cả hai cùng đổ — dấu hiệu của các mạng lưới phụ thuộc lẫn nhau (Buldyrev và đồng sự, 2010).",
+      "collapsedNote": "Cả hai mạng lưới đều tiêu vong. Căn cứ theo toán học, cách hiệu quả nhất để bức tử một khu rừng có lẽ là chẳng cần chạm vào khu rừng — chỉ cần những sinh vật mà nó không thể sống thiếu."
     }
   }
 }

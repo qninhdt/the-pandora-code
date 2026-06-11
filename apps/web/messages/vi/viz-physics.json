@@ -1,5 +1,45 @@
 {
   "viz": {
+    "shannonChannel": {
+      "title": "Giới hạn kênh truyền của Shannon",
+      "subtitle": "C = B · log₂(1 + S/N)",
+      "bandwidth": "Băng thông (B)",
+      "snr": "Tỉ số tín hiệu trên nhiễu (S/N)",
+      "payload": "Khối dữ liệu cần truyền",
+      "payloads": {
+        "word": "Một lời nói",
+        "photo": "Một bức ảnh",
+        "stream": "Một đời ý thức",
+        "connectome": "Toàn bộ connectome"
+      },
+      "capacity": "Dung lượng kênh",
+      "transferTime": "Thời gian truyền",
+      "clearedPerSecond": "thông được trong một giây",
+      "hint": "Băng thông là đòn bẩy thật sự: kéo thanh B, đáp án nhảy qua từng bậc độ lớn. Kéo thanh S/N — đổ thêm công suất thô — thì đáp án gần như đứng yên, vì dung lượng chỉ tăng theo logarit của tín hiệu. Đó là hai bài học của Shannon, cảm nhận ngay trong tay.",
+      "aria": "Dung lượng kênh {capacity}, thời gian truyền {time}",
+      "units": {
+        "instant": "tức thì",
+        "seconds": "{n} giây",
+        "minutes": "{n} phút",
+        "hours": "{n} giờ",
+        "days": "{n} ngày",
+        "years": "{n} năm"
+      }
+    },
+    "consciousBottleneck": {
+      "title": "Nút thắt cổ chai của ý thức",
+      "subtitle": "Mười một triệu bit đổ vào; chỉ vài chục bit cái tôi đi ra",
+      "firehose": "Cảm giác thô",
+      "trickle": "Cái tôi được trải nghiệm",
+      "consciousLabel": "Dòng ý thức",
+      "compressionLabel": "Tỉ lệ nén",
+      "compressionNote": "lượng cảm giác bị vứt bỏ trên mỗi bit giữ lại",
+      "lifetimeLabel": "Cả một cái tôi",
+      "lifetimeNote": "{years} năm trải nghiệm ý thức",
+      "consciousSlider": "Tốc độ ý thức",
+      "aria": "Các giác quan đổ vào mười một triệu bit mỗi giây; chỉ {conscious} chạm tới nhận thức — một tỉ lệ nén gấp {compression} lần.",
+      "hint": "Các giác quan đổ ~11 Mb/s vào hệ thần kinh, nhưng dòng chảy chạm tới nhận thức — cái tôi biết suy nghĩ và ghi nhớ — chỉ chạy ở vài chục bit mỗi giây. Kéo thanh trượt và xem cả một đời cái tôi co lại còn vài chục gigabit: đủ nhỏ, cuối cùng, để gửi qua mối liên kết trong một đêm."
+    },
     "squareCube": {
       "title": "Định luật bình phương - lập phương",
       "sizeLabel": "Kích thước tuyến tính",

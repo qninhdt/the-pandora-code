@@ -1,0 +1,18 @@
+id: carbonate-silicate-cycle
+label:
+  vi: Chu trình carbonate-silicate
+  en: Carbonate-silicate cycle
+definition:
+  vi: 'Bộ điều nhiệt dài hạn của Trái Đất - một vòng lặp địa hóa kéo dài hàng trăm nghìn năm giữ cho khí hậu hành tinh ở mức sống được suốt gần bốn tỉ năm. CO₂ trong khí quyển tan vào nước mưa thành acid yếu, bào mòn đá silicate trên lục địa; sản phẩm trôi ra biển, nơi sinh vật biển khóa chúng vào vỏ calcium carbonate rồi chìm xuống thành đá đáy biển, lôi carbon ra khỏi không khí; kiến tạo mảng nhấn chìm đá ấy, nung nóng nó, và núi lửa thở CO₂ trở lại. Điểm mấu chốt: tốc độ bào mòn tăng theo nhiệt độ, nên khi hành tinh ấm lên, bào mòn nhanh hơn hút bớt CO₂ và làm nguội trở lại - một phản hồi âm tự sửa lỗi. Đây là lời giải cho nghịch lý Mặt Trời trẻ mờ nhạt.'
+  en: 'Earth''s long-term thermostat - a geochemical loop turning over every few hundred thousand years that has kept the planet habitable for nearly four billion years. Atmospheric CO₂ dissolves in rain to make a weak acid that weathers continental silicate rock; the products wash to the sea, where marine life locks them into calcium carbonate shells that sink to become seafloor rock, pulling carbon out of the air; tectonics subducts that rock, cooks it, and volcanoes breathe the CO₂ back out. The key: weathering speeds up with temperature, so when the planet warms, faster weathering draws down CO₂ and cools it back - a self-correcting negative feedback. It is the resolution of the faint young sun paradox.'
+see_also:
+- negative-feedback
+- faint-young-sun-paradox
+- earth-system-science
+- gaia-hypothesis
+category: concept
+tags:
+- earth-systems
+- geology
+- atmosphere
+cover_prompt: A painted planetary loop - rain falling on mountains, rivers to a glowing sea, rock sinking and a volcano exhaling - drawn as a closed ring of cool teal and cyan on void-indigo, suggesting a slow self-balancing cycle, no text, no numbers, no labels.

@@ -1,0 +1,30 @@
+id: scale-free-network
+label:
+  vi: Mạng phi tỉ lệ
+  en: Scale-free network
+definition:
+  vi: >-
+    Một mạng mà phân bố bậc tuân theo luật lũy thừa: phần lớn nút có rất ít liên kết, còn một số ít
+    hub thì có cực nhiều. Không có một "bậc trung bình" tiêu biểu — đó là lý do gọi là phi tỉ lệ. Rất
+    nhiều mạng thực mang đặc tính này: Internet, mạng trao đổi chất trong tế bào, mạng xã hội. Cấu
+    trúc ấy sinh ra một tính chất kép then chốt (Albert–Barabási, 2000): bền bỉ phi thường trước hỏng
+    hóc ngẫu nhiên, nhưng mong manh trước đòn nhắm trúng hub. Đây là khuôn mẫu khoa học để hiểu vì sao
+    đốt rừng ngẫu nhiên không giết được Eywa.
+  en: >-
+    A network whose degree distribution follows a power law: most nodes have very few links while a
+    handful of hubs have enormous numbers. There is no typical "average degree" — which is why it is
+    called scale-free. Many real networks have this shape: the Internet, cellular metabolic networks,
+    social networks. The structure produces a crucial double property (Albert–Barabási, 2000):
+    extraordinary robustness to random failure, but fragility to a strike aimed at the hubs. It is the
+    scientific model for why random burning cannot kill Eywa.
+see_also:
+  - hub-network
+  - degree-distribution
+  - percolation-threshold
+category: concept
+tags:
+- network-science
+cover_prompt: >-
+  A painted sprawling network with a few enormous glowing cyan hub nodes and a vast scatter of tiny
+  faint nodes linked into them, an organic uneven structure, deep indigo void, painterly and
+  atmospheric, no text, no labels, no numbers.

@@ -1,62 +1,87 @@
-import { CodexCell } from "@/components/codex/codex-cell";
-import { CodexGrid } from "@/components/codex/codex-grid";
-import { GlassPanel } from "@/components/codex/glass-panel";
-import { SpecimenPlate } from "@/components/codex/specimen-plate";
-import { PageBackground } from "@/components/layout/page-background";
+import { ChaptersLibrary } from "@/components/chapters/chapters-library";
 import { type Locale, isLocale } from "@/i18n/config";
 import { listPublishedChapters } from "@/lib/content/loader/chapter-loader";
 import { getChapterCoverImage } from "@/lib/content/loader/cover-image";
-import { getPageBackground } from "@/lib/content/loader/page-background";
+import { getOutlineWithStatus } from "@/lib/content/outline";
+import type { ChapterMeta } from "@/lib/content/schemas/chapter-meta";
+import type { ClassificationKind } from "@/lib/content/schemas/shared";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
-interface ChaptersIndexProps {
+interface ChaptersPageProps {
   params: Promise<{ locale: string }>;
 }
 
-export default async function ChaptersIndex({ params }: ChaptersIndexProps) {
+// Pick the dominant epistemic tier from the classification percentages, so each
+// chapter row can carry one badge that signals what kind of reading it is.
+function dominantTier(meta: ChapterMeta): ClassificationKind {
+  const c = meta.classification;
+  const entries: [ClassificationKind, number][] = [
+    ["canon", c.canon_pct],
+    ["inference", c.inference_pct],
+    ["speculation", c.speculation_pct],
+    ["real_science", c.real_science_pct],
+  ];
+  return entries.reduce((best, cur) => (cur[1] > best[1] ? cur : best))[0];
+}
+
+export default async function ChaptersPage({ params }: ChaptersPageProps) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
-  setRequestLocale(locale);
   const loc = locale as Locale;
+  setRequestLocale(loc);
   const t = await getTranslations({ locale });
-  const chapters = listPublishedChapters(loc);
-  const bg = getPageBackground("chapters");
+
+  // Canonical book order + plate numbers + published status come from the
+  // outline; reading time + classification come from the published meta.
+  const metaBySlug = new Map(listPublishedChapters(loc).map((c) => [c.meta.slug, c.meta]));
+
+  let done = 0;
+  let total = 0;
+  let totalReadingMin = 0;
+
+  const parts = getOutlineWithStatus(loc).map((part) => ({
+    id: part.id,
+    label: part.label[loc],
+    chapters: part.chapters.map((ch) => {
+      total += 1;
+      const meta = metaBySlug.get(ch.slug);
+      if (ch.published) done += 1;
+      if (meta) totalReadingMin += meta.reading_time_min;
+      return {
+        slug: ch.slug,
+        href: `/${loc}/chapters/${ch.slug}`,
+        title: ch.title[loc],
+        payload: ch.payload[loc],
+        plateNo: ch.plateNo,
+        published: ch.published,
+        coverSrc: ch.published ? (getChapterCoverImage(ch.slug) ?? null) : null,
+        readingMin: meta?.reading_time_min ?? null,
+        tier: meta ? dominantTier(meta) : null,
+      };
+    }),
+  }));
 
   return (
-    <>
-      {bg && <PageBackground src={bg} />}
-      <main className="mx-auto max-w-7xl px-6 pb-24 pt-32">
-        <header className="mb-12 max-w-3xl">
-          <h1 className="font-display text-5xl font-800 leading-tight tracking-tight text-foreground">
-            {t("page.chapters.title")}
-          </h1>
-          <p className="mt-4 font-serif text-lg text-muted">{t("page.chapters.subtitle")}</p>
-        </header>
-
-        {chapters.length === 0 ? (
-          <GlassPanel depth={2} className="grid min-h-48 place-items-center p-10 text-center">
-            <p className="font-serif text-lg text-muted">{t("common.noResults")}</p>
-          </GlassPanel>
-        ) : (
-          <CodexGrid variant="mosaic">
-            {chapters.map((c, i) => (
-              <CodexCell key={c.meta.slug} span={i % 3 === 0 ? 4 : 2} rowSpan={i % 3 === 0 ? 2 : 1}>
-                <SpecimenPlate
-                  href={`/${loc}/chapters/${c.meta.slug}`}
-                  title={c.title}
-                  subtitle={c.subtitle}
-                  imageSrc={getChapterCoverImage(c.meta.slug)}
-                  plateNo={String(i + 1).padStart(2, "0")}
-                  tier="canon"
-                  tierLabel={`${c.meta.reading_time_min} ${loc === "vi" ? "phút" : "min"}`}
-                  locale={loc}
-                />
-              </CodexCell>
-            ))}
-          </CodexGrid>
-        )}
-      </main>
-    </>
+    <ChaptersLibrary
+      locale={loc}
+      title={t("page.chapters.title")}
+      subtitle={t("page.chapters.subtitle")}
+      parts={parts}
+      totals={{ done, total, totalReadingMin }}
+      labels={{
+        search: t("page.chapters.searchPlaceholder"),
+        allParts: t("page.chapters.allParts"),
+        statusAll: t("page.chapters.statusAll"),
+        statusPublished: t("page.chapters.statusPublished"),
+        statusComing: t("page.chapters.statusComing"),
+        jumpTo: t("page.chapters.jumpTo"),
+        comingSoon: t("page.chapters.comingSoon"),
+        statsDone: t("page.chapters.statsDone", { done, total }),
+        readingTotal: t("page.chapters.readingTotal", { minutes: totalReadingMin }),
+        noMatches: t("page.chapters.noMatches"),
+        readingUnit: loc === "vi" ? "phút" : "min",
+      }}
+    />
   );
 }

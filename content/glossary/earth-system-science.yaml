@@ -1,0 +1,18 @@
+id: earth-system-science
+label:
+  vi: Khoa học Hệ Trái Đất
+  en: Earth-system science
+definition:
+  vi: 'Ngành khoa học coi Trái Đất là một hệ thống đơn nhất, ghép nối chặt chẽ giữa đá, nước, không khí và sự sống - đúng như Lovelock kêu gọi - nhưng bỏ lối nói gây tranh cãi về "một cơ thể sống" và thay bằng thứ kiểm chứng được: những vòng phản hồi cụ thể, mỗi vòng là một mẩu hóa học hay vật lý đo đếm được, cùng nhau giữ khí hậu hành tinh trong ngưỡng sống được suốt những khoảng thời gian khổng lồ. Đây là hậu duệ đáng kính của Giả thuyết Gaia: giữ lại phần lõi vững chắc (sự sống và môi trường đồng tiến hóa, tác động lẫn nhau), vứt bỏ phần mục đích luận. Không thần bí, không ý chí - chỉ có những vòng phản hồi âm được tìm ra, đặt tên và định lượng.'
+  en: 'The discipline that treats Earth as a single, tightly coupled system of rock, water, air, and life - exactly as Lovelock urged - but drops the loaded talk of a living organism and replaces it with the checkable: specific feedback loops, each a measurable piece of chemistry or physics, that together hold the planet''s climate within habitable bounds over enormous spans of time. It is the respectable descendant of the Gaia hypothesis: it keeps the defensible core (life and environment co-evolve and shape each other) and discards the teleology. No mysticism, no will - just negative feedbacks found, named, and quantified.'
+see_also:
+- gaia-hypothesis
+- negative-feedback
+- carbonate-silicate-cycle
+- planetary-boundaries
+- homeostasis
+category: concept
+tags:
+- earth-systems
+- ecology
+cover_prompt: A painted whole-Earth seen from space wrapped in faint interlocking loops of glowing line linking ocean, air and land, cool teal and cyan on void-indigo, suggesting one coupled system, no text, no numbers, no labels.

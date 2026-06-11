@@ -1,0 +1,17 @@
+id: gaia-hypothesis
+label:
+  vi: Giả thuyết Gaia
+  en: Gaia hypothesis
+definition:
+  vi: 'Giả thuyết do James Lovelock và Lynn Margulis đề xuất đầu thập niên 1970, cho rằng sinh quyển, khí quyển, đại dương và lớp vỏ Trái Đất hợp thành một hệ thống đơn nhất, ghép nối chặt chẽ, cùng nhau giữ cho điều kiện bề mặt thuận lợi cho sự sống. Bản "yếu" - rằng sự sống và môi trường vật lý đồng tiến hóa và các vòng phản hồi sinh học định hình khí hậu - nay đã thành dòng chính. Bản "mạnh" - rằng hành tinh chủ động điều hòa chính mình như một cơ thể có mục đích - bị bác bỏ rộng rãi vì hàm ý mục đích luận. Đây là lăng kính để đọc Pandora: liệu một hành tinh có thể *là* một cơ thể sống, chứ không chỉ *mang* sự sống?'
+  en: 'Proposed by James Lovelock and Lynn Margulis in the early 1970s, the idea that Earth''s biosphere, atmosphere, oceans, and crust form a single, tightly coupled system that holds surface conditions favourable to life. Its "weak" form - that life and the physical environment co-evolve and biological feedbacks shape climate - is now mainstream. Its "strong" form - that the planet actively regulates itself like a purposeful organism - is widely rejected for smuggling in teleology. It is the lens for reading Pandora: can a planet *be* a living thing rather than merely *carry* life?'
+see_also:
+- daisyworld
+- earth-system-science
+- homeostasis
+- teleology
+category: concept
+tags:
+- earth-systems
+- ecology
+cover_prompt: A painted view of a single blue-green living world seen from space against void-indigo, faint luminous threads wrapping ocean and cloud into one continuous web, cool teal and cyan glow from within, no text, no labels.

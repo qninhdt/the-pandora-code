@@ -1,0 +1,30 @@
+id: insurance-hypothesis
+label:
+  vi: Giả thuyết bảo hiểm
+  en: Insurance hypothesis
+definition:
+  vi: >-
+    Ý tưởng trong sinh thái học rằng sự đa dạng sinh học là một dạng bảo hiểm chống lại biến động môi
+    trường: trong một hệ sinh thái đa dạng, nhiều loài cùng đảm nhận những vai trò chồng lấn nhau,
+    nên khi một xáo trộn quét sạch một số loài, những loài khác đã sẵn sàng gánh tiếp chức năng đó.
+    Được Yachi và Loreau hình thức hóa năm 1999, giả thuyết cho rằng đa dạng không phải vật trang
+    trí mà là một danh mục các phản ứng khác nhau trước một tương lai bất định — chính là tính suy
+    biến, viết ở quy mô của cả một hệ sinh thái.
+  en: >-
+    The idea in ecology that biodiversity is a form of insurance against environmental fluctuation:
+    in a diverse ecosystem many species perform overlapping roles, so when a disturbance wipes out
+    some of them, others are already in place to carry the function forward. Formalized by Yachi and
+    Loreau (1999), it holds that diversity is not decoration but a portfolio of different responses
+    to an uncertain future — degeneracy written at the scale of a whole ecosystem. It is a large part
+    of why a burned patch of forest is reseeded by a crowd of species, not one fragile specialist.
+see_also:
+  - ecological-resilience
+  - degeneracy-biology
+  - seed-bank
+category: concept
+tags:
+- ecology
+cover_prompt: >-
+  A painted study of many different glowing species side by side in a forest, several faded and
+  several bright to suggest overlapping backup roles, cool teal and cyan on dark indigo ground,
+  painterly naturalist plate, no text, no labels, no numbers.

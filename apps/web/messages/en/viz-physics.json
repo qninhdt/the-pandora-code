@@ -1,5 +1,45 @@
 {
   "viz": {
+    "shannonChannel": {
+      "title": "Shannon's channel, made playable",
+      "subtitle": "C = B · log₂(1 + S/N)",
+      "bandwidth": "Bandwidth (B)",
+      "snr": "Signal-to-noise (S/N)",
+      "payload": "Payload to send",
+      "capacity": "Channel capacity",
+      "transferTime": "Transfer time",
+      "clearedPerSecond": "cleared in one second",
+      "payloads": {
+        "word": "A spoken word",
+        "photo": "A photograph",
+        "stream": "A lifetime of conscious thought",
+        "connectome": "A whole connectome"
+      },
+      "units": {
+        "instant": "instant",
+        "seconds": "{n} s",
+        "minutes": "{n} min",
+        "hours": "{n} hours",
+        "days": "{n} days",
+        "years": "{n} years"
+      },
+      "aria": "Channel capacity {capacity}; the chosen payload takes {time} to cross.",
+      "hint": "Drag bandwidth and watch the answer move in great linear strides; drag the signal-to-noise ratio and watch it barely budge. Bandwidth is the precious resource — raw power is almost useless. Then send a whole connectome down the biological cable and see why an overnight transfer of a mind is impossible the maximalist way, and merely extravagant the minimalist way."
+    },
+    "consciousBottleneck": {
+      "title": "The conscious bottleneck",
+      "subtitle": "Eleven million bits in; a few dozen bits of self out",
+      "firehose": "Raw sensation",
+      "trickle": "The experienced self",
+      "consciousLabel": "Conscious stream",
+      "compressionLabel": "Compression",
+      "compressionNote": "sensation thrown away per bit kept",
+      "lifetimeLabel": "A whole self",
+      "lifetimeNote": "{years} years of conscious experience",
+      "consciousSlider": "Conscious rate",
+      "aria": "The senses pour in eleven million bits per second; only {conscious} reaches awareness — a {compression}-fold compression.",
+      "hint": "Your senses pour ~11 Mb/s into the nervous system, yet the stream that reaches awareness — the self that thinks and remembers — runs at a mere handful of bits per second. Slide that rate and watch a whole lifetime of selfhood collapse to mere tens of gigabits: small enough, at last, to send across the bond in a single night."
+    },
     "squareCube": {
       "title": "The square-cube law",
       "sizeLabel": "Linear size",

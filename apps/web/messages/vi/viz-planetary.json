@@ -1,5 +1,26 @@
 {
   "viz": {
+    "daisyworld": {
+      "title": "Daisyworld",
+      "subtitle": "Một hành tinh tự điều hòa nhiệt độ của chính mình mà không cần ai điều khiển hay tính trước",
+      "aria": "Đồ thị nhiệt độ hành tinh theo độ sáng mặt trời: nhiệt độ của thế giới có sự sống gần như phẳng trên một dải rộng, trong khi nhiệt độ của thế giới chết trơ trụi cứ leo thẳng xuyên qua nó",
+      "tempAxis": "Nhiệt độ hành tinh (°C)",
+      "lumAxis": "Độ sáng mặt trời (mờ hơn → sáng hơn)",
+      "comfortBand": "nơi hoa cúc mọc tốt nhất",
+      "bareLine": "đá trơ, không sự sống",
+      "lumSlider": "Độ sáng mặt trời",
+      "planetTemp": "Nhiệt độ hành tinh",
+      "bareWould": "đá trơ sẽ là",
+      "verdictLabel": "Trạng thái",
+      "heldBy": "được ghìm xuống",
+      "blackDaisy": "Cúc đen (sưởi ấm)",
+      "whiteDaisy": "Cúc trắng (làm mát)",
+      "regulated": "Được điều hòa",
+      "struggling": "Sát mép giới hạn",
+      "dead": "Chết trơ",
+      "hintAlive": "Hãy chỉnh mặt trời. Cúc đen chiếm lấy thế giới lạnh lẽo thuở đầu và sưởi ấm nó; cúc trắng nắm thế giới nóng bỏng về sau và làm nó nguội đi — và nhiệt độ hành tinh gần như đứng yên trong khi đường đá trơ leo thẳng vượt qua. Không con cúc nào cố ý làm điều ấy.",
+      "hintDead": "Vượt qua giới hạn của hoa cúc, hành tinh lại thành đá trơ, và nhiệt độ của nó bám sát đường chết trơ y hệt. Sự điều hòa chỉ tồn tại chừng nào sự sống còn."
+    },
     "habitableZone": {
       "title": "Vành đai sống được",
       "subtitle": "Nơi nước lỏng có thể tồn tại trên bề mặt một thế giới",
@@ -95,6 +116,46 @@
       "play": "Chạy",
       "pause": "Dừng",
       "hint": "Kéo thời gian: Polyphemus đứng yên trên trời, mặt trời trượt qua sau nó mỗi buổi xế chiều."
+    },
+    "carbonateSilicate": {
+      "title": "Bộ điều nhiệt không có người điều chỉnh",
+      "subtitle": "Cách Trái Đất giữ nước ở thể lỏng dưới một mặt trời mờ hơn 30%",
+      "tempAxis": "Nhiệt độ bề mặt (°C)",
+      "sunAxis": "Độ sáng mặt trời (mặt trời trẻ mờ nhạt → ngày nay)",
+      "liquidBand": "nước lỏng tồn tại được",
+      "bareLine": "đá trơ, không có bộ điều nhiệt",
+      "tempLabel": "Nhiệt độ bề mặt",
+      "bareWould": "đá trơ sẽ là",
+      "co2Label": "CO₂ ở trạng thái cân bằng",
+      "co2Note": "so với hiện nay — cao khi mặt trời mờ",
+      "sunSlider": "Độ sáng mặt trời",
+      "aria": "Nhiệt độ bề mặt theo độ sáng mặt trời: hành tinh được điều hòa giữ mức gần nhiệt độ nước lỏng trên cả dải, trong khi một tảng đá trơ thì nung nóng xuyên thẳng qua.",
+      "hintFaint": "Dưới mặt trời trẻ mờ nhạt, một tảng đá trơ sẽ đóng băng cứng đờ — nhưng bộ điều nhiệt để CO₂ chất chồng lên, làm dày hiệu ứng nhà kính cho tới khi hành tinh giữ được thể lỏng. Đây là lý do Trái Đất thuở sơ khai chưa bao giờ đóng băng.",
+      "hintBright": "Khi mặt trời sáng dần lên, đá ấm hơn trong mưa axit phong hóa nhanh hơn, rút CO₂ khỏi không khí và làm mỏng hiệu ứng nhà kính. Hành tinh tự làm mát mình — bộ điều nhiệt tự vặn xuống mà chẳng có ai đứng ở cái núm."
+    },
+    "atmosphericDisequilibrium": {
+      "title": "Đọc sự sống từ bầu khí quyển",
+      "subtitle": "Một thế giới chết thì lắng xuống; một thế giới sống thì được giữ ở thế bất khả thi",
+      "worldLabel": "Chọn một thế giới",
+      "mars": "Sao Hỏa",
+      "venus": "Sao Kim",
+      "earth": "Trái Đất",
+      "co2": "CO₂",
+      "o2": "O₂",
+      "ch4": "CH₄",
+      "pumpFlux": "↑ dòng sinh học ↑",
+      "disequilibriumLabel": "Mất cân bằng",
+      "disequilibriumNote": "các khí phản ứng được giữ cùng tồn tại — dấu hiệu sinh học",
+      "verdictLabel": "Kết luận",
+      "living": "Thế giới sống",
+      "dead": "Thế giới chết",
+      "none": "không có",
+      "pumpSlider": "Bơm sinh học",
+      "noLife": "không sự sống",
+      "deadPumpHint": "Chẳng có gì để bơm — bầu khí quyển đã lắng vào cân bằng hóa học",
+      "aria": "Thành phần khí quyển của thế giới đã chọn; chỉ số mất cân bằng đọc được {value}.",
+      "hintDead": "Một thế giới chết lắng vào cân bằng hóa học — Sao Hỏa và Sao Kim đều hơn 95% CO₂, trơ lì và đã xong chuyện. Chẳng có gì để bơm và chẳng có gì lệch khỏi cân bằng, nên một kính viễn vọng từ xa đọc được: vô sinh.",
+      "hintAlive": "Bầu khí quyển Trái Đất là điều bất khả thi: oxy và mêtan phản ứng cùng tồn tại, một hỗn hợp mà hóa học đáng lẽ phải xóa sổ. Chỉ một cái bơm sinh học không ngừng nghỉ mới giữ nó mở — và chính sự mất cân bằng đó, chứ không phải bất kỳ loại khí đơn lẻ nào, là dấu hiệu sự sống vững chắc nhất ta đọc được từ xa."
     }
   }
 }

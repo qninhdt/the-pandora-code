@@ -1,0 +1,28 @@
+id: information-theory
+label:
+  vi: Lý thuyết thông tin
+  en: Information theory
+definition:
+  vi: >-
+    Ngành toán học do Claude Shannon khai sinh năm 1948, đo lường thông tin một cách
+    chính xác - tách hẳn khỏi ý nghĩa. Thông tin được định nghĩa là sự giải trừ bất
+    định: một thông điệp mang nhiều thông tin khi nó loại bỏ nhiều khả năng. Từ nền tảng
+    này mọc lên đơn vị bit, khái niệm entropy, và định lý dung lượng kênh - bộ khung đặt
+    ra giới hạn cứng cho mọi hệ truyền tin, từ sợi cáp quang đến sợi tua thần kinh của
+    người Na'vi.
+  en: >-
+    The branch of mathematics Claude Shannon founded in 1948 to measure information
+    precisely - divorced entirely from meaning. Information is defined as the resolution
+    of uncertainty: a message carries more information the more possibilities it rules
+    out. From this footing grow the bit, the concept of entropy, and the channel-capacity
+    theorem - the framework that sets hard limits on every communication system, from a
+    fibre-optic strand to a Na'vi neural queue.
+see_also:
+  - bit
+  - shannon-entropy
+  - channel-capacity
+  - tsaheylu
+category: concept
+tags:
+- information-theory
+cover_prompt: A dark field crossed by a single luminous cyan signal-wave resolving from static noise into a clean pulse, abstract and elegant, faint grid in the depth, no text, no numbers, no labels.

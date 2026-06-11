@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-disequilibrium-biosignature",
+  "chapter_slug": "a-real-living-planet",
+  "role": "comparison",
+  "narrative_purpose": "Teaches the chemical fingerprint of a living world: a dead planet's air settles into flat equilibrium (mostly CO2), while a living planet holds reactive gases impossibly side by side, pumped there continuously by the whole biosphere.",
+  "subject": "Three tall vertical columns of gas side by side, each rising from a small planet at its base. Left column rises from a dead rusty world and is almost entirely one uniform packed gas, flat and settled. Middle column rises from a dead pale-yellow world and is likewise one uniform packed gas, flat and settled. Right column rises from a living blue-green world and is visibly different — two distinct kinds of glowing particle (one cool, one warm) coexisting and intermixing where they should not, with faint upward streams from the planet's surface feeding the mixture and holding it churning out of balance.",
+  "scene": "A clean diagram page, three planets in a row along the bottom each with its atmospheric column rising above it, dark space behind.",
+  "camera": "A flat, even diagrammatic front-on view of the three columns at matched scale.",
+  "light": "Even diagrammatic light; the two dead columns dim and uniform, the living column glowing with its two intermixing species and the feeding streams from below.",
+  "palette": "Void-indigo background, dead worlds in dim rust and pale ochre, the living column in Pandora cyan and a restrained warm accent for the second gas.",
+  "style": "Painterly speculative-science naturalist plate with strong diagrammatic clarity, hand-painted texture.",
+  "detail_level": "Crisp on all three columns and the feeding streams of the living one; soft elsewhere.",
+  "composition": "Three balanced vertical columns evenly spaced across the frame, dark margins above each for callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "chemical formulae", "Avatar branding"],
+  "consistency_notes": "Pure Earth-science figure rendered in the book's cool palette so it sits beside the Pandoran plates. The dead-vs-living contrast must read at a glance: two flat uniform columns vs one churning mixed column. Leave dark space above each column for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no chemical formulae, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

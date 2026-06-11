@@ -1,0 +1,20 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "why-burning-eywa-doesnt-kill-it",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate on the landing book-map: a forest half-consumed by fire, yet the glowing living network webbed across it stays lit and unbroken — the single image of a network shrugging off the loss of its pieces, the visual thesis that burning Eywa does not kill her.",
+  "subject": "A vast Pandoran rainforest seen from a high vantage at night, the right half scorched into a black burn-scar of charred stumps and smoking ground where machines have clear-cut and torched a wide swathe; yet stretched across the entire landscape — over the living trees and straight across the burnt void alike — a fine luminous cyan lattice of glowing thread-like connections still webs from treetop to treetop, the strands over the burn re-knitting around the gap like a net with a hole punched in it that simply closes over.",
+  "scene": "An aerial-oblique view of a continental forest at night, a sharp diagonal boundary between intact glowing canopy on the left and a fire-blackened clear-cut on the right, the connective web of light spanning both.",
+  "camera": "A high three-quarter aerial vantage looking down and across the forest, wide enough to hold both the living canopy and the burn-scar in one sweep.",
+  "light": "Bioluminescent key from the network web itself — cool cyan and teal light tracing the connective strands across the canopy; a low, dying ember-amber glow smouldering in the burn-scar as the only warm accent; deep indigo night above.",
+  "palette": "Void-indigo and deep teal-indigo base, dominant Pandora cyan and living teal in the glowing web, scarce ember-amber confined to the smouldering burn, the charred ground near-black.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence, luminous and atmospheric.",
+  "detail_level": "Crisp and intricate on the glowing connective web and the boundary where living canopy meets burn-scar; the far forest dissolving into haze.",
+  "composition": "Diagonal division of the frame between lit forest and dark burn, the luminous web arcing across the seam, generous hazy negative space toward the horizon for the plate to breathe.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "modern Earth objects"],
+  "consistency_notes": "Na'vi absent; a landscape plate. Cool Pandora palette with from-within bioluminescent key; warm reserved strictly for the dying fire. The establishing 'the net survives the wound' mood that anchors the whole chapter.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

@@ -1,0 +1,29 @@
+id: degree-distribution
+label:
+  vi: Phân bố bậc
+  en: Degree distribution
+definition:
+  vi: >-
+    Đường cong cho biết bậc kết nối được trải ra như thế nào trên toàn mạng — bao nhiêu nút có một
+    mối nối, bao nhiêu có mười, bao nhiêu có hàng nghìn. Hình dạng của đường cong này quyết định mạng
+    là bền hay mong manh. Một mạng nơi mọi nút có bậc gần như nhau hành xử rất khác với một mạng nơi
+    vài trung tâm hiếm hoi gom phần lớn các mối nối — kiểu thứ hai (mạng phi tỉ lệ) vừa cực kỳ chịu
+    đựng được hư hại ngẫu nhiên, vừa cực kỳ dễ tổn thương trước đòn nhắm trúng trung tâm.
+  en: >-
+    The curve describing how connectivity is spread across a whole network — how many nodes have one
+    link, how many have ten, how many have thousands. The shape of this curve decides whether a network
+    is robust or fragile. A network where every node has roughly the same degree behaves very
+    differently from one where a few rare hubs hoard most of the links — the second kind (a scale-free
+    network) is both extraordinarily tolerant of random damage and extraordinarily vulnerable to a
+    strike aimed at the hubs.
+see_also:
+  - degree-graph-theory
+  - scale-free-network
+  - hub-network
+category: concept
+tags:
+- network-science
+cover_prompt: >-
+  A painted schematic curve falling steeply from a tall left edge down to a long flat tail, drawn in
+  glowing cyan over a dark indigo ground, with a few bright large dots near the top and a scatter of
+  tiny dots along the tail, elegant and naturalist, no text, no labels, no numbers.

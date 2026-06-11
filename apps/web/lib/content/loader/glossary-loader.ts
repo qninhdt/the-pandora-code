@@ -6,6 +6,7 @@ import { fileExists, listYamlFiles, parseYaml } from "./yaml-utils";
 export interface LocalizedGlossaryTerm {
   id: string;
   category: GlossaryTerm["category"];
+  tags: string[];
   label: string;
   definition: string;
   see_also: string[];
@@ -27,6 +28,7 @@ export function getGlossaryTerm(id: string, locale: Locale): LocalizedGlossaryTe
   return {
     id: term.id,
     category: term.category,
+    tags: term.tags,
     label: term.label[locale],
     definition: term.definition[locale],
     see_also: term.see_also,

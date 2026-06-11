@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-connectome-vs-stream",
+  "chapter_slug": "the-bandwidth-of-a-planet",
+  "role": "comparison",
+  "narrative_purpose": "Stages the chapter's central contrast as a single image: on one side the brain as a colossal, dense block of wiring (the petabyte connectome); on the other the thin, luminous trickle of conscious experience flowing out of it — the million-fold gap that decides whether the soul-transfer is impossible or merely extravagant.",
+  "subject": "A two-sided composition. On the left, a vast, dense, intricate lattice of neural wiring packed almost solid — overwhelming in its sheer volume, dimly lit, suggesting petabytes of static hardware. On the right, from that huge mass, a single fine bright thread of light escapes and flows away as a slender luminous stream — small, elegant, almost weightless against the bulk it came from.",
+  "scene": "An abstract conceptual plate in dark space: a monstrous wiring-block on one side, a delicate escaping light-stream on the other, the visual disproportion between them the entire message.",
+  "camera": "A head-on conceptual view holding both halves in one frame so the size contrast is immediate.",
+  "light": "The connectome block dim and cool, near-uniform, vast; the conscious stream a bright, warm-cool thread that draws the eye precisely because it is so much smaller and cleaner.",
+  "palette": "Void-indigo ground, teal-cyan dense wiring on the bulk side, a brighter cyan-white thread for the conscious stream, faint magenta depth.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, conceptual but observed.",
+  "detail_level": "Crisp, dense, almost claustrophobic on the connectome bulk; clean and spare on the escaping stream.",
+  "composition": "Heavy mass occupying one side and much of the frame, the thin stream crossing into open dark space on the other, exploiting the imbalance.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "modern Earth objects"],
+  "consistency_notes": "Cool Pandora palette. The whole point is scale disproportion — the connectome must dwarf the stream. Keep dark space around the thread for callout labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

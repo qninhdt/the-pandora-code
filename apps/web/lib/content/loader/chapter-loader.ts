@@ -2,11 +2,14 @@ import fs from "node:fs";
 import path from "node:path";
 import type { Locale } from "@/i18n/config";
 import { ChapterMeta, type LocalizedChapter } from "../schemas/chapter-meta";
-import { CONTENT_ROOT, chapterDir, chapterMdxPath, chapterMetaPath } from "./content-paths";
-import { fileExists, listSubdirectories, parseYaml } from "./yaml-utils";
+import { chapterOrderPrefix, listChapterSlugsFromIndex } from "./chapter-index";
+import { chapterDir, chapterMdxPath, chapterMetaPath } from "./content-paths";
+import { fileExists, parseYaml } from "./yaml-utils";
 
+// Returns clean slugs (URL params), resolved from each meta.yaml via the index -
+// the on-disk folders carry an "N-M-" order prefix that never appears in URLs.
 export function listChapterSlugs(): string[] {
-  return listSubdirectories(path.join(CONTENT_ROOT, "chapters"));
+  return listChapterSlugsFromIndex();
 }
 
 export function loadChapterMeta(slug: string): ChapterMeta {
@@ -35,11 +38,18 @@ export function listChapters(locale: Locale): LocalizedChapter[] {
     const chapter = getChapter(slug, locale);
     if (chapter) chapters.push(chapter);
   }
+  // Sort by the on-disk "N-M-" folder prefix (part N, order M) - the
+  // authoritative book order. meta.part is a string id and meta.order is
+  // inconsistent across chapters, so neither can be trusted for sequencing.
   return chapters.sort((a, b) => {
-    if (a.meta.part !== b.meta.part) {
-      return a.meta.part.localeCompare(b.meta.part);
+    const pa = chapterOrderPrefix(a.meta.slug);
+    const pb = chapterOrderPrefix(b.meta.slug);
+    if (pa && pb) {
+      return pa.part - pb.part || pa.order - pb.order;
     }
-    return a.meta.order - b.meta.order;
+    if (pa) return -1;
+    if (pb) return 1;
+    return a.meta.slug.localeCompare(b.meta.slug);
   });
 }
 

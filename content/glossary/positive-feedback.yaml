@@ -1,0 +1,17 @@
+id: positive-feedback
+label:
+  vi: Phản hồi dương (positive feedback)
+  en: Positive feedback
+definition:
+  vi: 'Một vòng lặp trong đó một thay đổi khuếch đại chính nó, đẩy hệ thống ngày càng xa trạng thái ban đầu thay vì kéo nó về. Tan băng vùng cực lộ ra mặt biển sẫm màu hấp thụ nhiều nhiệt hơn, làm tan thêm băng; rã băng vĩnh cửu giải phóng khí nhà kính làm rã thêm băng vĩnh cửu. Phản hồi dương nằm im cho tới khi vượt một ngưỡng, rồi chiếm quyền điều khiển và cuốn hệ thống "chạy trốn" về một trạng thái mới. Đây là cơ chế đứng sau các điểm tới hạn của hành tinh - thứ biến một độ ấm nhỏ thành một cú lật trạng thái không thể đảo ngược. Trái ngược với phản hồi âm, vốn ổn định hóa.'
+  en: 'A loop in which a change amplifies itself, driving the system further and further from its starting state rather than back toward it. Melt polar ice and you expose dark ocean that absorbs more heat and melts more ice; thaw permafrost and it releases greenhouse gases that thaw more permafrost. Positive feedback lies dormant until a threshold is crossed, then takes over and runs the system away toward a new state. It is the mechanism behind planetary tipping points - what turns a small warming into an irreversible flip. It is the opposite of negative feedback, which stabilises.'
+see_also:
+- negative-feedback
+- tipping-point
+- planetary-boundaries
+- claw-hypothesis
+category: concept
+tags:
+- earth-systems
+- atmosphere
+cover_prompt: A painted spiral arrow widening as it climbs, a small spark swelling into a runaway bloom of light, cool cyan tipping into warning amber on void-indigo, suggesting self-amplification, no text, no numbers, no labels.

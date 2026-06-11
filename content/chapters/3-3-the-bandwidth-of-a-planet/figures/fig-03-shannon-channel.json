@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-shannon-channel",
+  "chapter_slug": "the-bandwidth-of-a-planet",
+  "role": "diagram",
+  "narrative_purpose": "Renders Shannon's five-part communication system in Pandora's visual language so the reader can map the abstract model onto the bond: a source, an encoder, a channel under attack from noise, a decoder, and a destination — the skeleton every transfer in the chapter runs on.",
+  "subject": "A clean left-to-right schematic on a dark page: a glowing source node on the far left, a short link into a small encoder block, then a long horizontal channel rendered as a luminous pipe or cable, with jagged spikes of dim chaotic static raining down into the middle of the pipe from above (the noise), then a decoder block, then a destination node on the far right glowing a different hue from the source.",
+  "scene": "An abstract diagram floating in Pandoran dark space, each stage a softly glowing biological-tech form rather than a flat box.",
+  "camera": "A flat head-on schematic view, evenly spaced stages along a single horizontal axis.",
+  "light": "Each node and the channel pipe self-lit; the noise drawn as dimmer, colder, jagged intrusions disturbing the smooth channel light.",
+  "palette": "Void-indigo ground, cyan channel and source/destination nodes, magenta accent on the noise to mark it as the antagonist.",
+  "style": "Painterly speculative-biology naturalist plate with a schematic clarity, hand-painted texture.",
+  "detail_level": "Crisp on the five stages and the noise intrusion; background empty and dark.",
+  "composition": "Single horizontal flow across the middle of the frame, generous dark space above and below for stage labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "modern Earth objects"],
+  "consistency_notes": "Cool Pandora palette; render the engineering schematic as living luminous forms, not flat office-diagram boxes. Noise is magenta and jagged. Keep open dark space for the five labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

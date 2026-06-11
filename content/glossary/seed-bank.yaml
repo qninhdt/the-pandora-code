@@ -1,0 +1,30 @@
+id: seed-bank
+label:
+  vi: Ngân hàng hạt giống
+  en: Seed bank
+definition:
+  vi: >-
+    Kho hạt giống còn sống nằm chờ trong đất hoặc khóa trong những quả nón chỉ mở khi gặp lửa, cách
+    nhiệt khỏi sức nóng, đợi nảy mầm vào mặt đất quang đãng và màu mỡ mà một đám cháy để lại. Nhiều
+    hệ sinh thái thích nghi với lửa không chỉ chịu được lửa mà còn *cần* lửa, giữ thế hệ kế tiếp trong
+    dự trữ đúng cho cái ngày mọi thứ trên mặt đất hóa tro. Đốt một khu rừng như thế xuống tận đất không
+    phải là kết liễu nó — mà là kích hoạt nó. Hạt giống của Pandora, atokirina', đóng đúng vai trò
+    này, nhưng bay trong không khí.
+  en: >-
+    The store of living seeds waiting in the soil or locked in fire-opened cones, insulated from the
+    heat, ready to germinate into the cleared and fertilised ground a fire leaves behind. Many
+    fire-adapted ecosystems do not merely tolerate fire but *require* it, holding their next
+    generation in reserve precisely against the day everything above ground turns to ash. To burn
+    such a forest to bare earth is not to end it but to trigger it. Pandora's drifting woodsprites,
+    the atokirina', play exactly this role as a mobile, airborne seed bank for the living network.
+see_also:
+  - ecological-resilience
+  - insurance-hypothesis
+category: bio
+tags:
+- ecology
+- pandora-canon
+cover_prompt: >-
+  A painted naturalist study of glowing seeds buried in dark soil beneath a charred surface, some
+  drifting upward like luminous spores, a sense of life held in reserve, cool cyan and teal on deep
+  indigo ground, painterly, no text, no labels, no numbers.

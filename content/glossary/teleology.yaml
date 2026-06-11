@@ -1,0 +1,15 @@
+id: teleology
+label:
+  vi: Mục đích luận (teleology)
+  en: Teleology
+definition:
+  vi: 'Lối giải thích một sự vật bằng *mục đích* hay *cứu cánh* mà nó hướng tới, thay vì bằng nguyên nhân cơ học sinh ra nó. Nói "trái tim đập *để* bơm máu" là một phát biểu mục đích luận. Trong sinh học hiện đại, mục đích biểu kiến của sinh vật được chấp nhận chỉ vì có một cơ chế tạo ra nó - chọn lọc tự nhiên giữ lại những trái tim bơm tốt qua vô số thế hệ. Vấn đề của giả thuyết Gaia "mạnh" là nó dường như gán cho cả hành tinh một mục đích - tự điều hòa *để* duy trì sự sống - mà không có cơ chế nào tạo ra mục đích ấy, vì hành tinh không sinh sản và không cạnh tranh. Mô hình Daisyworld tháo gỡ chính phản bác này: nó cho thấy sự điều hòa toàn cầu có thể nảy sinh mà không cần bất kỳ mục đích nào.'
+  en: 'Explaining a thing by the *purpose* or *end* it serves rather than by the mechanical cause that produced it. To say "the heart beats *in order to* pump blood" is a teleological statement. In modern biology the apparent purposiveness of organisms is licensed only because there is a mechanism that produces it - natural selection retaining the hearts that pump well across countless generations. The problem with the "strong" Gaia hypothesis is that it seems to grant a whole planet a purpose - regulating itself *in order to* sustain life - with no mechanism to produce that purpose, since a planet neither reproduces nor competes. The Daisyworld model dissolves exactly this objection: it shows global regulation can emerge with no purpose at all.'
+see_also:
+- gaia-hypothesis
+- daisyworld
+- differential-persistence
+category: concept
+tags:
+- philosophy-of-science
+cover_prompt: A painted arrow in dark space bending toward a distant glowing goal it seems to aim at, set against scattered mechanical gears that actually drive it, cool teal and amber on void-indigo, suggesting purpose versus mechanism, no text, no numbers, no labels.

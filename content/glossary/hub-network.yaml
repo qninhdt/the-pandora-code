@@ -1,0 +1,28 @@
+id: hub-network
+label:
+  vi: Nút trung tâm (hub)
+  en: Hub
+definition:
+  vi: >-
+    Một nút có số kết nối lớn bất thường so với phần còn lại của mạng. Trong các mạng phi tỉ lệ, đại
+    đa số nút chỉ có vài liên kết, trong khi một thiểu số ít ỏi các hub ôm giữ phần lớn các kết nối —
+    chúng là những ngã ba giao thông giữ cho cả hệ thống dính liền vào nhau. Chính sự tồn tại của hub
+    tạo nên nghịch lý cốt lõi: mạng cực kỳ bền trước hư hại ngẫu nhiên (gần như chẳng bao giờ trúng
+    hub) nhưng cực kỳ mong manh trước đòn đánh có chủ đích nhắm thẳng vào hub.
+  en: >-
+    A node with an unusually large number of connections compared with the rest of the network. In
+    scale-free networks the vast majority of nodes have only a few links, while a tiny minority of hubs
+    hold most of the connections — they are the traffic junctions that keep the whole system stitched
+    together. The existence of hubs creates the core paradox: the network is extremely robust to random
+    damage (which almost never hits a hub) yet extremely fragile to a targeted strike aimed at the hubs.
+see_also:
+  - scale-free-network
+  - degree-graph-theory
+  - articulation-point
+category: concept
+tags:
+- network-science
+cover_prompt: >-
+  A painted network where a few large bright cyan nodes blaze as central hubs, ringed by many small
+  faint nodes connected outward to them, deep indigo ground, painterly and luminous, no text, no
+  labels, no numbers.

@@ -1,0 +1,30 @@
+id: bandwidth
+label:
+  vi: Băng thông
+  en: Bandwidth
+definition:
+  vi: >-
+    Dải tần số mà một kênh truyền có thể tải, tính bằng hertz (Hz) - và là tài nguyên thật
+    sự quyết định một kênh tải được bao nhiêu. Trong định lý Shannon-Hartley, dung lượng
+    tăng tuyến tính theo băng thông: gấp đôi băng thông là gấp đôi tốc độ dữ liệu. Một
+    đường dây điện thoại đồng có băng thông vài kilohertz và tải được vài chục kilobit mỗi
+    giây; một sợi cáp quang có băng thông cỡ terahertz và tải được terabit. Lưu ý: băng
+    thông (Hz, kích cỡ "đường ống") khác với tốc độ bit (bit/giây, lượng thông tin thật
+    sự chảy qua) - dù đời thường hay dùng lẫn lộn.
+  en: >-
+    The range of frequencies a channel can carry, measured in hertz (Hz) - and the
+    resource that really decides how much a channel can move. In the Shannon-Hartley
+    theorem, capacity grows linearly with bandwidth: double the bandwidth, double the data
+    rate. A copper phone line has a few kilohertz of bandwidth and carries tens of
+    kilobits per second; a fibre-optic strand has terahertz of bandwidth and carries
+    terabits. Note the distinction: bandwidth (Hz, the "size of the pipe") is not bit-rate
+    (bits/s, the information actually flowing through it) - though casual speech conflates
+    them.
+see_also:
+  - channel-capacity
+  - information-theory
+  - signal-to-noise-ratio
+category: concept
+tags:
+- information-theory
+cover_prompt: Two pipes side by side carrying light, a narrow one with a thin trickle and a wide one with a flood of cyan, dark indigo ground, no text, no labels.

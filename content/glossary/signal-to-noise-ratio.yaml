@@ -1,0 +1,28 @@
+id: signal-to-noise-ratio
+label:
+  vi: Tỉ số tín hiệu trên nhiễu
+  en: Signal-to-noise ratio
+definition:
+  vi: >-
+    Độ lớn của tín hiệu so với nhiễu nền đang lấn át nó, ký hiệu S/N. Cùng với băng thông,
+    nó là một trong hai đại lượng quyết định dung lượng kênh trong định lý Shannon-Hartley.
+    Nhưng đòn bẩy của nó yếu một cách bất ngờ: dung lượng chỉ tăng theo logarit của S/N,
+    nên muốn tăng tốc độ bằng cách "hét to hơn" (đổ thêm công suất) sẽ cho lợi ích giảm
+    dần thảm hại - phải bình phương S/N mới gấp đôi được tốc độ. Công suất thô gần như là
+    một đòn bẩy vô dụng; băng thông mới là thứ đáng giá.
+  en: >-
+    How loud a signal is compared to the background noise drowning it, written S/N. With
+    bandwidth, it is one of the two quantities that set a channel's capacity in the
+    Shannon-Hartley theorem. But its leverage is surprisingly weak: capacity grows only
+    with the logarithm of S/N, so trying to speed things up by "shouting louder" (pouring
+    in power) gives brutally diminishing returns - you must square the ratio just to
+    double the rate. Raw power is an almost useless lever; bandwidth is what is worth
+    having.
+see_also:
+  - channel-capacity
+  - bandwidth
+  - information-theory
+category: concept
+tags:
+- information-theory
+cover_prompt: A faint signal waveform glowing cyan struggling to rise above a sea of jagged grey noise, dark field, no text, no labels.

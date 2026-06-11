@@ -1,0 +1,16 @@
+id: differential-persistence
+label:
+  vi: Tồn tại biệt hóa (differential persistence)
+  en: Differential persistence
+definition:
+  vi: 'Một cách mở rộng khung Darwin để chọn lọc có thể tác động lên cả những thực thể không sinh sản - như một hành tinh đơn lẻ. Chọn lọc Darwin cổ điển cần một quần thể các cá thể cạnh tranh, sinh sản, di truyền biến dị; nhưng W. Ford Doolittle lập luận rằng chọn lọc cũng có thể vận hành đơn thuần qua việc *tồn tại lâu hơn*. Những hệ tình cờ rơi vào các vòng phản hồi ổn định sẽ trụ được lâu; những hệ không có thì sụp đổ nhanh. Qua thời gian địa chất, các hệ còn sót lại - một cách hiển nhiên - là những hệ có phản hồi đã giữ vững, một kiểu "chọn lọc chỉ bằng sống sót" không cần con cái. Đi kèm là khẩu hiệu *bài ca, không phải ca sĩ*: loài đến rồi đi, nhưng các chu trình sinh địa hóa chúng thực hiện thì được truyền tiếp. Đây là một nới lỏng thực sự của khung Darwin và vẫn còn gây tranh cãi.'
+  en: 'A way of stretching the Darwinian frame so that selection can act even on entities that do not reproduce - such as a lone planet. Classical Darwinian selection needs a population of competing, reproducing individuals with heritable variation; but W. Ford Doolittle argued that selection can also operate purely through *lasting longer*. Systems that happen to stumble into stabilising feedback loops persist; systems that do not collapse fast. Over geological time the surviving systems are, trivially, the ones whose feedbacks held - a "selection by survival alone" that needs no offspring. It pairs with the slogan *it''s the song, not the singer*: species come and go, but the biogeochemical cycles they perform are carried on by whoever is recruited to sing them next. It is a genuine loosening of the Darwinian frame, and it remains contested.'
+see_also:
+- gaia-hypothesis
+- earth-system-science
+category: concept
+tags:
+- evolution
+- earth-systems
+- philosophy-of-science
+cover_prompt: A painted hourglass in dark space whose surviving sand forms a stable looping ring while lesser streams scatter and fade, cool teal and cyan on void-indigo, suggesting persistence as the thing selected, no text, no numbers, no labels.

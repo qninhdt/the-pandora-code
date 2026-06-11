@@ -1,0 +1,30 @@
+id: channel-capacity
+label:
+  vi: Dung lượng kênh truyền
+  en: Channel capacity
+definition:
+  vi: >-
+    Tốc độ tối đa tuyệt đối mà một kênh truyền có thể tải thông tin không lỗi, tính bằng
+    bit trên giây. Định lý Shannon-Hartley cho công thức: C = B·log₂(1 + S/N), trong đó B
+    là băng thông (Hz) và S/N là tỉ số tín hiệu trên nhiễu. Hai bài học khắc nghiệt nằm
+    trong công thức: dung lượng tăng tuyến tính theo băng thông nhưng chỉ tăng theo
+    logarit của công suất tín hiệu - nên băng thông là tài nguyên quý giá, còn việc "hét
+    to hơn" gần như vô dụng. Truyền dưới mức C thì có thể đạt sai số gần bằng không; vượt
+    quá C thì lỗi là điều chắc chắn về mặt toán học.
+  en: >-
+    The absolute maximum rate at which a channel can carry error-free information, in bits
+    per second. The Shannon-Hartley theorem gives it: C = B·log₂(1 + S/N), where B is
+    bandwidth (Hz) and S/N the signal-to-noise ratio. Two harsh lessons live inside it:
+    capacity grows linearly with bandwidth but only logarithmically with signal power - so
+    bandwidth is the precious resource and "shouting louder" is nearly useless. Transmit
+    below C and you can drive errors near zero; exceed C and corruption is mathematically
+    certain.
+see_also:
+  - information-theory
+  - bandwidth
+  - signal-to-noise-ratio
+  - noisy-channel-coding-theorem
+category: concept
+tags:
+- information-theory
+cover_prompt: A glowing pipe of light with a hard luminous ceiling line above it, a torrent of cyan bits flowing through just below the limit, dark ground, no text.

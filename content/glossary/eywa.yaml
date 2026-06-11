@@ -1,0 +1,32 @@
+id: eywa
+label:
+  vi: Eywa
+  en: Eywa
+definition:
+  vi: >-
+    Thực thể mà người Na'vi tôn thờ như nữ thần - mạng lưới sinh học quy mô hành tinh nối
+    liền mọi sinh vật sống trên Pandora qua rễ cây, sợi nấm, và mối liên kết tsaheylu. Cốt
+    truyện gốc mô tả Eywa không phải một vị thần ngồi trên cao mà là tổng hòa của mọi sự
+    sống: ký ức của tổ tiên được lưu giữ và truy xuất qua Cây Linh Hồn, tín hiệu điện hóa
+    chạy giữa rễ của hàng nghìn tỷ cái cây. Grace Augustine mô tả nó như một mạng lưới có
+    số kết nối nhiều hơn cả số synapse trong não người. Eywa là trung tâm của câu hỏi xuyên
+    suốt Phần III: một mạng lưới đủ lớn, đủ kết nối, có thể trở thành một tâm trí hay không.
+  en: >-
+    The entity the Na'vi revere as a goddess - the planet-scale biological network linking
+    every living thing on Pandora through tree roots, fungal threads, and the tsaheylu
+    bond. Canon frames Eywa not as a deity sitting above the world but as the sum of all
+    its life: ancestral memory stored and recalled through the Tree of Souls,
+    electrochemical signals running between the roots of trillions of trees. Grace
+    Augustine describes it as a network with more connections than there are synapses in a
+    human brain. Eywa is the centre of Part III's running question: whether a network, made
+    large enough and connected enough, can become a mind.
+see_also:
+  - tsaheylu
+  - connectome
+  - distributed-cognition
+category: bio
+tags:
+- pandora-canon
+- consciousness
+- network-science
+cover_prompt: A vast luminous web of fine glowing threads seen receding into planetary depth, countless cyan and teal connection points like a galaxy of roots, reverent and immense, dark indigo ground, no text, no labels.

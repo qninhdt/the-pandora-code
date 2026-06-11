@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-borrowed-energy-loop",
+  "chapter_slug": "a-real-living-planet",
+  "role": "diagram",
+  "narrative_purpose": "Teaches that Pandora's land and ocean are not two networks but one closed loop of borrowed energy — the forest root web and the ocean Spirit Tree wired into a single planetary system, with energy flowing through living bodies and returning to the whole on death.",
+  "subject": "A clean cross-section diagram of a whole world split into two coupled halves: on the left a forest of towering trees laced together at the roots by glowing filaments; on the right an ocean with a great Spirit Tree anchored to the seabed by a dense glowing root mass, and large whale-like creatures threading between the two; a continuous web of fine light runs across the middle of the frame joining the forest roots to the ocean roots into one ring, with faint looping light-paths suggesting matter flowing out of living bodies and returning to the network.",
+  "scene": "A symbolic planetary cross-section, forest half meeting ocean half across the centre, the unifying network of light running through both and closing into a loop.",
+  "camera": "A wide diagrammatic cross-sectional view holding both the forest and the ocean halves at matched scale.",
+  "light": "Even diagrammatic light; the connecting network and root masses picked out in a cool cyan-teal glow as the living circuitry, the rest dim.",
+  "palette": "Void-indigo base, the unifying network in Pandora cyan and living teal, forest and ocean masses in dim teal-grey.",
+  "style": "Painterly speculative-biology naturalist plate with strong diagrammatic clarity, hand-painted texture.",
+  "detail_level": "Crisp on the connecting network, the root masses and the whale-like nodes; soft and dim elsewhere.",
+  "composition": "Two balanced halves left (forest) and right (ocean) joined by the glowing loop across the centre, dark margins above and below for callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Inference-tier diagram: present land and ocean as one coupled system. Cool Pandora palette and from-within glow; leave open dark space around the loop for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["fig-00-cover.png"]
+}

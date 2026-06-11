@@ -1,0 +1,17 @@
+id: faint-young-sun-paradox
+label:
+  vi: Nghịch lý Mặt Trời trẻ mờ nhạt
+  en: Faint young sun paradox
+definition:
+  vi: 'Một mâu thuẫn sâu sắc giữa thiên văn và địa chất. Các mô hình sao cho thấy Mặt Trời thuở sơ khai mờ hơn ngày nay khoảng 30%. Với một ngôi sao yếu đến vậy, Trái Đất trẻ lẽ ra phải đóng băng toàn cầu thành một quả cầu tuyết - vậy mà hồ sơ địa chất lại khẳng định rõ ràng có nước lỏng, và có sự sống, gần như xa tới mức đá còn ghi lại được. Mặt Trời yếu hơn, nhưng không có băng. Lời giải được chấp nhận rộng rãi là bộ điều nhiệt carbonate-silicate: một hành tinh lạnh tích tụ CO₂ núi lửa không bị tiêu thụ cho tới khi hiệu ứng nhà kính đủ dày để bù lại Mặt Trời mờ - bộ điều nhiệt đơn giản chạy nóng để che cho ngôi sao yếu, rồi tự hạ dần khi Mặt Trời sáng lên.'
+  en: 'A deep clash between astronomy and geology. Stellar models show the early Sun was about 30% dimmer than today. With that feeble a star, the young Earth should have frozen solid into a snowball - yet the geological record is unambiguous that there was liquid water, and life, almost as far back as the rocks go. A weaker sun, and no ice. The widely accepted resolution is the carbonate-silicate thermostat: a cold planet accumulates unconsumed volcanic CO₂ until the greenhouse thickens enough to compensate for the faint sun - the thermostat simply runs hot to cover the weak star, then turns itself down as the Sun brightens.'
+see_also:
+- carbonate-silicate-cycle
+- negative-feedback
+- earth-system-science
+category: concept
+tags:
+- earth-systems
+- astronomy
+- atmosphere
+cover_prompt: A painted young dim red-gold sun low over a world that should be frozen but holds a glint of open liquid water, cool teal and cyan against void-indigo, a quiet contradiction, no text, no numbers, no labels.

@@ -1,0 +1,27 @@
+id: bit
+label:
+  vi: Bit
+  en: Bit
+definition:
+  vi: >-
+    Đơn vị cơ bản của thông tin, do Shannon đặt tên (rút gọn của "binary digit"). Một
+    bit là lượng thông tin vừa đủ để chọn giữa hai khả năng đồng xác suất - một câu trả
+    lời có/không, một lần tung đồng xu công bằng. Mọi thông điệp, dù là một dòng chữ, một
+    bức ảnh, hay toàn bộ ký ức của một đời người, đều có thể quy về một số đếm bit. Chính
+    nhờ đơn vị chung này mà ta có thể hỏi một câu tưởng chừng vô lý: một tâm trí nặng bao
+    nhiêu bit?
+  en: >-
+    The fundamental unit of information, named by Shannon (short for "binary digit"). One
+    bit is exactly the information needed to choose between two equally likely
+    alternatives - a yes/no answer, a fair coin flip. Any message - a line of text, a
+    photograph, or the whole memory of a life - can be reduced to a count of bits. It is
+    this shared unit that lets us ask a question that sounds absurd: how many bits is a
+    mind?
+see_also:
+  - information-theory
+  - shannon-entropy
+  - channel-capacity
+category: concept
+tags:
+- information-theory
+cover_prompt: A single glowing cyan binary digit poised between a 0 and a 1 on a dark field, a coin caught mid-flip nearby, minimal and luminous, no text beyond the implied digits, no labels.

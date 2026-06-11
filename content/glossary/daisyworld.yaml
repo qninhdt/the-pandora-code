@@ -1,0 +1,18 @@
+id: daisyworld
+label:
+  vi: Daisyworld (Thế giới Hoa cúc)
+  en: Daisyworld
+definition:
+  vi: 'Mô hình toán học do Andrew Watson và James Lovelock công bố năm 1983 để chứng minh một hành tinh có thể tự điều hòa nhiệt độ mà không cần mục đích hay tâm trí. Một hành tinh tưởng tượng chỉ mọc hai loài: cúc đen (hấp thụ nắng, sưởi ấm chỗ quanh nó) và cúc trắng (phản xạ nắng, làm mát chỗ quanh nó). Khi mặt trời sáng dần, cúc đen thống trị thuở hành tinh còn lạnh rồi sưởi ấm nó; cúc trắng thắng thế khi hành tinh nóng lên rồi làm nó nguội. Kết quả: nhiệt độ bề mặt gần như phẳng trên một dải độ sáng khổng lồ. Không con cúc nào "cố" điều hòa gì cả - sự điều hòa toàn cục là hệ quả phụ phát sinh từ cạnh tranh ích kỷ cục bộ cộng với vật lý albedo. Đòn phản công chí mạng vào lời chê mục đích luận của Gaia.'
+  en: 'A mathematical model published by Andrew Watson and James Lovelock in 1983 to show a planet can regulate its own temperature with no purpose and no mind. An imaginary world grows only two things: black daisies (which absorb sunlight and warm their patch) and white daisies (which reflect it and cool their patch). As the sun brightens, black daisies dominate the cold early world and warm it; white daisies take over the hot later world and cool it. The result: surface temperature stays nearly flat across a huge range of solar brightness. No daisy "tries" to regulate anything - the global regulation is an emergent byproduct of selfish local competition coupled to albedo physics. The decisive answer to the teleology objection against Gaia.'
+see_also:
+- gaia-hypothesis
+- albedo
+- homeostasis
+- negative-feedback
+- emergence
+category: concept
+tags:
+- earth-systems
+- ecology
+cover_prompt: A painted minimalist planet half covered in dark flowers and half in pale flowers under a brightening star, a nearly flat temperature line glowing across it, cool teal and amber on void-indigo, no text, no numbers, no labels.

@@ -1,0 +1,26 @@
+id: node-graph-theory
+label:
+  vi: Nút (lý thuyết đồ thị)
+  en: Node (graph theory)
+definition:
+  vi: >-
+    Đơn vị cơ bản của một mạng lưới — một điểm có thể nối với những điểm khác. Trong một đồ thị, mọi
+    thứ quy về hai loại: nút và các liên kết giữa chúng. Một cái cây, một con người, một sân bay, một
+    trang web đều có thể là một nút; thứ khiến nó thành nút không phải bản chất của nó mà là việc nó
+    có thể kết nối. Trên Pandora, một cái cây hay một local grove là một nút trong mạng lưới Eywa.
+  en: >-
+    The basic unit of a network — a point that can connect to other points. In a graph, everything
+    reduces to two things: nodes and the links between them. A tree, a person, an airport, a web page
+    can each be a node; what makes it a node is not what it is but that it can connect. On Pandora, a
+    single tree or a local grove is one node in the network the Na'vi call Eywa.
+see_also:
+  - edge-graph-theory
+  - degree-graph-theory
+  - giant-connected-component
+category: concept
+tags:
+- network-science
+cover_prompt: >-
+  A single bright glowing point of cyan light on a dark indigo ground, a few faint threads beginning
+  to reach out from it toward unseen others, painterly and schematic, a sense of one unit in a larger
+  web, no text, no labels, no numbers.

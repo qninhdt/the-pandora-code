@@ -1,0 +1,29 @@
+id: noisy-channel-coding-theorem
+label:
+  vi: Định lý mã hóa kênh nhiễu
+  en: Noisy-channel coding theorem
+definition:
+  vi: >-
+    Kết quả trung tâm và đẹp đẽ nhất của Shannon. Nó nói rằng: chừng nào ta còn truyền với
+    tốc độ THẤP HƠN dung lượng kênh, ta luôn có thể - bằng cách mã hóa đủ khéo léo - đẩy tỉ
+    lệ lỗi xuống gần bằng không tùy ý, ngay cả trên một kênh đầy nhiễu. Truyền tin hoàn hảo,
+    không mất mát, qua một đường truyền không hoàn hảo là điều thực sự khả thi. Nhưng khoảnh
+    khắc ta cố truyền NHANH HƠN dung lượng, lời hứa ấy tan vỡ: lỗi trở nên không phải khó
+    xảy ra mà là chắc chắn về mặt toán học. Đây là một định luật cứng như tốc độ ánh sáng,
+    không phải một bất tiện kỹ thuật có thể lách qua.
+  en: >-
+    Shannon's central and most beautiful result. It states: as long as you transmit BELOW
+    the channel's capacity, you can - with clever enough coding - drive the error rate as
+    close to zero as you like, even over a noisy channel. Perfect, lossless communication
+    over an imperfect line is genuinely possible. But the instant you try to transmit
+    FASTER than capacity, the promise shatters: errors become not unlikely but
+    mathematically certain. This is a law as firm as the speed of light, not an
+    engineering inconvenience to be designed around.
+see_also:
+  - channel-capacity
+  - error-correcting-code
+  - information-theory
+category: concept
+tags:
+- information-theory
+cover_prompt: A clean data stream of glowing cyan bits flowing through a noisy channel and emerging perfectly ordered on the far side, dark field, no text, no labels.

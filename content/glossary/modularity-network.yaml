@@ -1,0 +1,29 @@
+id: modularity-network
+label:
+  vi: Tính mô-đun (mạng lưới)
+  en: Modularity (networks)
+definition:
+  vi: >-
+    Đặc điểm của một mạng lưới được xây từ các cụm cục bộ dày đặc — mỗi cụm nối chằng chịt bên trong
+    nhưng chỉ thưa thớt nối sang các cụm khác. Tính mô-đun hoạt động như một đường ngăn lửa: hư hại
+    bên trong một mô-đun có xu hướng ở lại trong đó, vì có quá ít liên kết để nó lan sang mô-đun kế
+    tiếp. Cái giá là vài liên kết hiếm hoi bắc cầu giữa các mô-đun trở nên cực kỳ quan trọng — và các
+    nút nằm trên những cây cầu ấy chính là các điểm khớp nối, nơi mạng lưới dễ bị chia cắt nhất.
+  en: >-
+    A network built from dense local clusters — each richly wired inside but only sparsely connected
+    to the others. Modularity acts as a firebreak: damage inside one module tends to stay there,
+    because there are too few links for it to spread to the next. The cost is that the handful of
+    links bridging modules become precious, and the nodes sitting on those bridges — the articulation
+    points — are exactly where the network is most easily split in two. Biological networks are
+    overwhelmingly modular, which is a large part of why they localize damage so well.
+see_also:
+  - articulation-point
+  - degeneracy-biology
+  - ecological-resilience
+category: concept
+tags:
+- network-science
+cover_prompt: >-
+  A painted diagram of three dense glowing clusters of nodes connected to each other by only one or
+  two thin bridging links each, a clear sense of separate neighbourhoods, cool cyan and teal on dark
+  indigo, painterly schematic, no text, no labels, no numbers.

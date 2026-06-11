@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-three-payloads",
+  "chapter_slug": "the-bandwidth-of-a-planet",
+  "role": "diagram",
+  "narrative_purpose": "Lays out the escalating ladder of what tsaheylu carries as three rungs of increasing data volume: the everyday animal bond (a thin command-and-feel link), the ancestral archive (a great stored library read back), and the consciousness transfer (a whole self crossing the wire) — the spread between them is the chapter's whole tension.",
+  "subject": "A vertical three-tier naturalist diagram on a dark page. Lowest tier: a Na'vi riding a banshee, a thin bright thread of light running between queue and mount. Middle tier: a Na'vi kneeling at a glowing willow-like Tree of Voices, a broader river of light flowing from the tree's tendrils carrying faint ghostly ancestral faces. Top tier: a figure at the Tree of Souls dissolving into a vast torrent of light pouring into the network — the volume of light growing dramatically from bottom to top.",
+  "scene": "Three stacked Pandoran night vignettes sharing one dark background, linked by the growing volume of the light-stream between organism and network.",
+  "camera": "A flat, plate-like vertical stack, each tier read like a panel, even eye-level framing.",
+  "light": "Bioluminescent key from the connecting light-streams; each tier brighter and more voluminous than the one below.",
+  "palette": "Void-indigo ground, Pandora cyan and teal in the streams, faint magenta in the ancestral faces and the dissolving self.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence.",
+  "detail_level": "Crisp on the three connection-streams and their growing volume; figures suggested rather than fully rendered.",
+  "composition": "Three horizontal bands stacked vertically, the stream of light widening top-ward, dark margins for labels at each tier.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "modern Earth objects"],
+  "consistency_notes": "Cool Pandora palette; reuse the glowing-tendril/stream language from fig-01. The visual grammar is volume-of-light = amount-of-data. Keep dark bands for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

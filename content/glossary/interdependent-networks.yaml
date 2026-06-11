@@ -1,0 +1,30 @@
+id: interdependent-networks
+label:
+  vi: Mạng lưới phụ thuộc lẫn nhau
+  en: Interdependent networks
+definition:
+  vi: >-
+    Hai hay nhiều mạng lưới mà mỗi cái cần cái kia hoạt động mới hoạt động được — ví dụ lưới điện
+    cấp nguồn cho mạng máy tính, mạng máy tính lại điều khiển lưới điện. Buldyrev và cộng sự chứng
+    minh năm 2010 một thực tế đáng sợ: những mạng phụ thuộc lẫn nhau dễ vỡ hơn nhiều so với từng mạng
+    đứng riêng, vì hư hỏng dội qua dội lại giữa chúng trong một chuỗi sụp đổ lan truyền. Đáng lo hơn,
+    phân bố bậc càng rộng — vốn giúp một mạng đơn lẻ bền hơn — lại càng làm hệ phụ thuộc lẫn nhau dễ
+    sụp hơn, đảo ngược trực giác thông thường về độ bền.
+  en: >-
+    Two or more networks where each depends on the other to function — a power grid feeding a
+    computer network that in turn controls the grid. Buldyrev and colleagues showed in 2010 a
+    frightening reality: interdependent networks are far more fragile than either alone, because
+    failure ricochets back and forth between them in a cascading collapse. Worse, a broader degree
+    distribution — which makes a single network *more* robust — makes a coupled pair *more* vulnerable,
+    inverting the usual intuition. Pandora's coupled flora and fauna networks are exactly such a pair.
+see_also:
+  - cascading-failure
+  - scale-free-network
+  - giant-connected-component
+category: concept
+tags:
+- network-science
+cover_prompt: >-
+  A painted diagram of two glowing networks stacked one above the other with vertical links binding
+  them, a failure spreading between the two layers, cool cyan above and faint magenta below on dark
+  indigo ground, painterly schematic, no text, no labels, no numbers.

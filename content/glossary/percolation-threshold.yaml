@@ -1,0 +1,31 @@
+id: percolation-threshold
+label:
+  vi: Ngưỡng thẩm thấu
+  en: Percolation threshold
+definition:
+  vi: >-
+    Tỉ lệ tới hạn của số nút (hoặc liên kết) bị gỡ bỏ mà tại đó một mạng lưới đột ngột vỡ từ một khối
+    liên thông duy nhất thành một đám mảnh vụn cô lập. Ký hiệu là p_c. Bên dưới ngưỡng, mạng vẫn dẫn —
+    tín hiệu băng qua được từ đầu này sang đầu kia; vượt ngưỡng, nó cách ly — không còn đường nào nối
+    hai bên. Điều phản trực giác là sự chuyển đổi này sắc lẹm chứ không thoai thoải: gỡ thêm một
+    nhúm nút chẳng khác gì những nhúm trước đó cũng đủ đẩy cả hệ qua bờ vực. Với mạng vô tỉ lệ chịu
+    tổn thất ngẫu nhiên, p_c bị đẩy gần tới 1 — gần như phải xóa sạch mọi thứ mới sập.
+  en: >-
+    The critical fraction of removed nodes (or links) at which a network abruptly breaks from one
+    connected whole into a dust of isolated fragments. Written p_c. Below it the network conducts —
+    a signal can cross from one side to the other; above it the network insulates — no path links the
+    two sides. The counter-intuitive part is that this transition is sharp, not gradual: removing one
+    more small batch of nodes, no different from the batches before, can tip the whole system over the
+    edge. For a scale-free network under random loss, p_c is pushed close to 1 — you must remove very
+    nearly everything before it fails.
+see_also:
+  - percolation-theory
+  - phase-transition
+  - scale-free-network
+category: concept
+tags:
+- network-science
+cover_prompt: >-
+  A painted moment of a glowing cyan network grid snapping apart, the left half still one connected
+  whole and the right half scattering into disconnected islands, a sharp dividing line of transition,
+  dark indigo ground, painterly and dramatic, no text, no labels, no numbers.
