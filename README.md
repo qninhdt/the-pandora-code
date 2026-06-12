@@ -11,12 +11,12 @@
 </p>
 
 <p align="center">
-  <a href="#-about"><strong>About</strong></a> ·
-  <a href="#-the-journey"><strong>The Journey</strong></a> ·
-  <a href="#-what-youll-find-inside"><strong>Inside</strong></a> ·
-  <a href="#-getting-started"><strong>Get Started</strong></a> ·
-  <a href="#-credits"><strong>Credits</strong></a> ·
-  <a href="#-license"><strong>License</strong></a>
+  <a href="#about"><strong>About</strong></a> ·
+  <a href="#the-journey"><strong>The Journey</strong></a> ·
+  <a href="#what-youll-find-inside"><strong>Inside</strong></a> ·
+  <a href="#getting-started"><strong>Get Started</strong></a> ·
+  <a href="#credits"><strong>Credits</strong></a> ·
+  <a href="#license"><strong>License</strong></a>
 </p>
 
 <p align="center">
@@ -28,7 +28,7 @@
 
 ---
 
-## 🌙 About
+## About
 
 > *Stand on a high ridge on Pandora a little before midday and watch the sky do something the sky on Earth has never once done in four and a half billion years...*
 
@@ -42,7 +42,7 @@ Every chapter begins with something strange about the world of Pandora — float
   <sub><em>Every chapter is a descent into wonder — fiction is the question, science is the answer.</em></sub>
 </p>
 
-## 🗺️ The Journey
+## The Journey
 
 The Pandora Code unfolds across **nine great expeditions**, each peeling back a deeper layer of the moon-world:
 
@@ -170,18 +170,18 @@ The Pandora Code unfolds across **nine great expeditions**, each peeling back a 
   <sub><em>The seeds of the sacred tree drift through the dark, and beneath the soil, the roots remember everything.</em></sub>
 </p>
 
-## ✨ What You'll Find Inside
+## What You'll Find Inside
 
-- 🔬 **50 chapters** of deep science dressed in alien wonder — from orbital mechanics to consciousness theory
-- 📖 **Bilingual content** — every word in both English and Vietnamese
-- 🧬 **250+ glossary terms** — an interactive codex of real science, cross-linked and searchable
-- 🌌 **Original painterly illustrations** — speculative-biology field plates, not screenshots
-- 🕸️ **3D concept constellation** — an interactive knowledge graph connecting ideas across chapters
-- 🔍 **⌘K instant search** — find anything, diacritic-insensitive, lightning-fast
-- 🔖 **Bookmarks & reading position** — pick up exactly where you left off
-- 📡 **SEO, RSS, dynamic OG images** — every chapter is a first-class citizen of the web
+- **50 chapters** of deep science dressed in alien wonder — from orbital mechanics to consciousness theory
+- **Bilingual content** — every word in both English and Vietnamese
+- **250+ glossary terms** — an interactive codex of real science, cross-linked and searchable
+- **Original painterly illustrations** — speculative-biology field plates, not screenshots
+- **3D concept constellation** — an interactive knowledge graph connecting ideas across chapters
+- **⌘K instant search** — find anything, diacritic-insensitive, lightning-fast
+- **Bookmarks & reading position** — pick up exactly where you left off
+- **SEO, RSS, dynamic OG images** — every chapter is a first-class citizen of the web
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |:------|:-----------|
@@ -195,7 +195,7 @@ The Pandora Code unfolds across **nine great expeditions**, each peeling back a 
 | Testing | Vitest + Playwright + Lighthouse CI |
 | Package Manager | pnpm 11 (monorepo) |
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 # Clone the repository
@@ -211,7 +211,7 @@ pnpm dev
 
 Then open [http://localhost:3000](http://localhost:3000) and step through the airlock.
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 the-pandora-code/
@@ -230,7 +230,7 @@ the-pandora-code/
 └── research/              # Background research notes
 ```
 
-## 🤝 Contributing
+## Contributing
 
 The forest grows when more hands tend it. If you'd like to contribute:
 
@@ -242,7 +242,7 @@ The forest grows when more hands tend it. If you'd like to contribute:
 
 Whether it's fixing a typo in a glossary term, suggesting a new chapter topic, improving accessibility, or translating content — every contribution makes the world a little more luminous.
 
-## 🙏 Credits
+## Credits
 
 **The Pandora Code** is created and maintained by:
 
@@ -257,7 +257,7 @@ Whether it's fixing a typo in a glossary term, suggesting a new chapter topic, i
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
@@ -270,7 +270,7 @@ The content, illustrations, and written chapters are original creative works. Th
   <br/><br/>
   <em>"Every chapter opens on something strange about the world<br/>and closes on a principle you can carry back to Earth."</em>
   <br/><br/>
-  <strong>Oel ngati kameie.</strong> 🌿
+  <strong>Oel ngati kameie.</strong>
   <br/>
   <sub>I See You.</sub>
 </p>
