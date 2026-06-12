@@ -1,0 +1,15 @@
+id: understory
+label:
+  vi: Tầng dưới tán
+  en: Understory
+definition:
+  vi: 'Lớp rừng râm mát giữa tầng tán và nền rừng, nơi cây non và các loài cây lá rộng vươn mình giành lấy chút ánh sáng ít ỏi lọt xuống. Không khí ở đây lặng gió và ẩm hơn, nhiệt độ dao động dịu hơn so với tán cây phơi nắng phía trên. Sống ở tầng dưới tán đòi hỏi những bộ lá biết tận dụng tối đa thứ ánh sáng thừa thãi.'
+  en: 'The shaded layer between the canopy and the forest floor, where saplings and broad-leaved plants strain toward what little light filters down. The air here is stiller and more humid, and temperature swings gentler, than in the sunlit canopy above. Living in the understory demands leaves built to wring the most out of the forest''s leftover light.'
+see_also:
+- forest-stratification
+- canopy
+- forest-floor
+category: concept
+tags:
+- ecology
+cover_prompt: A painted shaded mid-forest layer of slender trunks and broad drooping leaves in dim filtered light, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

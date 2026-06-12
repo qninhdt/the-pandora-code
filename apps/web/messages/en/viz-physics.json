@@ -1,5 +1,23 @@
 {
   "viz": {
+    "treeHeightCeiling": {
+      "title": "How tall can a tree get?",
+      "envLabel": "Which world",
+      "earth": "Earth",
+      "pandora": "Pandora",
+      "heightLabel": "Tree height",
+      "heightAxis": "Height →",
+      "vigourAxis": "Top-leaf vigour",
+      "ceiling": "ceiling",
+      "redwood": "Tallest redwood (116 m)",
+      "hometree": "Hometree (~300 m)",
+      "turgorLabel": "Top-leaf vigour",
+      "turgorNote": "How well the topmost leaves can still fill with water and grow.",
+      "failNote": "Past the ceiling the water column snaps — the top can no longer drink.",
+      "verdictOk": "The crown is still paying its way: water reaches the top under survivable tension.",
+      "verdictOver": "Beyond what the plumbing allows here. On Earth this is impossible; on Pandora, lower gravity and a CO2-rich, humid atmosphere lift the ceiling — straining toward Hometree's scale, not sailing past it.",
+      "hint": "A tree has no pump: it drinks by pulling an unbroken thread of water up its wood, powered only by evaporation from its leaves. The taller it grows, the harder the top must pull, until the leaf cells can no longer fill — Koch & Sillett (2004) put Earth's ceiling near 130 m. Switch to Pandora and watch lower gravity and dense, carbon-rich air move that ceiling."
+    },
     "shannonChannel": {
       "title": "Shannon's channel, made playable",
       "subtitle": "C = B · log₂(1 + S/N)",
@@ -78,6 +96,36 @@
       "quetz": "Quetzalcoatlus",
       "ikran": "Ikran + rider",
       "hint": "The demand curve climbs steeper than the supply curve, so they always cross. The crossing is the heaviest a flyer can still flap. Pandora's lower gravity and denser air pull the demand curve down - sliding the crossing rightward, to a mass Earth would pin to the ground."
+    },
+    "wingspanLadder": {
+      "title": "A ladder of fliers",
+      "subtitle": "Wingspan, drawn to one scale",
+      "ceiling": "Earth's ceiling",
+      "metres": "{n} m",
+      "axis": "Wingspan (m) →",
+      "earth": "Earth",
+      "pandora": "Pandora",
+      "pelagornis": "Pelagornis",
+      "argentavis": "Argentavis",
+      "quetzalcoatlus": "Quetzalcoatlus",
+      "ikran": "Ikran",
+      "toruk": "Toruk",
+      "hint": "Earth's largest fliers top out near 11 m - Quetzalcoatlus marks the wall, and everything to the right of the dashed line is airspace Earth's physics forbids. The rideable ikran sits right on that wall; the toruk leaves the chart, at roughly double the largest creature Earth ever flew."
+    },
+    "reynoldsRegime": {
+      "title": "What kind of air?",
+      "subtitle": "Re = ρ·v·L / μ",
+      "earth": "Earth",
+      "pandora": "Pandora",
+      "sizeLabel": "Wing chord",
+      "reLabel": "Reynolds number",
+      "axis": "Reynolds number →",
+      "metres": "{n} m",
+      "millimetres": "{n} mm",
+      "viscousLabel": "Syrup",
+      "transitionalLabel": "Transitional",
+      "inertialLabel": "Clean flow",
+      "hint": "The Reynolds number measures whether the air behaves like sticky syrup (low Re - the insect's rowing world) or a thin clean stream a sleek wing can slice (high Re - birds, pterosaurs, banshees). It rises with size, speed, and air density - so Pandora's denser air nudges a flier of any given size up into the friendlier, cleaner regime."
     },
     "superconductor": {
       "title": "Superconductor cool-down",

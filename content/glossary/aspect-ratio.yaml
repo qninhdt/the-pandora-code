@@ -1,0 +1,16 @@
+id: aspect-ratio
+label:
+  vi: Tỉ lệ dạng cánh
+  en: Aspect ratio
+definition:
+  vi: 'Thước đo độ dài và hẹp của một chiếc cánh — về mặt kỹ thuật là bình phương sải cánh chia cho diện tích cánh. Cánh dài hẹp (tỉ lệ cao), như cánh chim hải âu, lượn rất hiệu quả với lực cản cảm ứng thấp, lý tưởng cho việc bay vút đường dài. Cánh ngắn rộng (tỉ lệ thấp) đổi sự hiệu quả lấy khả năng cơ động và lực nâng ở tốc độ thấp. Những kẻ lượn khổng lồ của Trái Đất và Pandora đều thiên về cánh dài để sống nhờ những luồng khí bốc lên mà tốn ít sức nhất.'
+  en: 'A measure of how long and narrow a wing is — technically the wingspan squared divided by the wing area. Long, narrow wings (high aspect ratio), like an albatross''s, glide very efficiently with low induced drag, ideal for sustained long-distance soaring. Short, broad wings (low aspect ratio) trade that efficiency for manoeuvrability and low-speed lift. The giant soarers of both Earth and Pandora lean toward long wings, to live off rising air at the least cost.'
+see_also:
+- lift
+- wing-loading
+- thermal-soaring
+category: concept
+tags:
+- physics
+- physiology
+cover_prompt: A painted comparison of one long narrow wing beside one short broad wing in cool teal on a dark indigo ground, hand-painted texture, no text, no numbers, no labels.

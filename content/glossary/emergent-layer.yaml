@@ -1,0 +1,15 @@
+id: emergent-layer
+label:
+  vi: Tầng vượt tán
+  en: Emergent layer
+definition:
+  vi: 'Tầng cao nhất của khu rừng: một số ít cây khổng lồ vươn mình đơn độc lên trên mái tán liên tục, hứng trọn ánh nắng và sức gió. Đây là vương quốc của những loài biết bay và những bộ lá chịu được nắng gắt cùng nhiệt độ dao động dữ dội. Trên Pandora, các tán vượt tầng chính là nơi ikran đậu và lấy đà lao mình vào không trung.'
+  en: 'The topmost layer of the forest: a few giant trees standing alone above the continuous canopy roof, taking the full force of sun and wind. It is the realm of fliers and of leaves built to withstand fierce light and violent temperature swings. On Pandora the emergent crowns are where the mountain banshees roost and launch into the air.'
+see_also:
+- forest-stratification
+- canopy
+- tree-height-limit
+category: concept
+tags:
+- ecology
+cover_prompt: A painted few isolated giant tree crowns standing alone above a continuous forest roof in bright sky with small winged shapes, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

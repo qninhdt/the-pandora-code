@@ -98,7 +98,10 @@ Full detail, including `meta.yaml` authoring and the status taxonomy, lives in
    shipped many dangling terms - this guard prevents recurrence. Every glossary
    definition file MUST also carry a `tags:` array from the fixed vocabulary in
    `apps/web/lib/content/schemas/glossary-tags.ts` (the lookup facet on the
-   glossary page), not just a `category`.
+   glossary page), not just a `category`. Prefer existing tags; if no tag fits a
+   genuinely new facet, extend the vocabulary first (add the slug to
+   `GLOSSARY_TAGS` + a vi/en label to `GLOSSARY_TAG_LABELS`), then use it. Adding
+   a tag ad-hoc in content YAML without registering it fails schema validation.
 
 6. **Components are a reference palette, not a checklist.** See the rule below.
 

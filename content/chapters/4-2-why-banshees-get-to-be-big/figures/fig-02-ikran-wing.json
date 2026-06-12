@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-ikran-wing",
+  "chapter_slug": "why-banshees-get-to-be-big",
+  "role": "diagram",
+  "narrative_purpose": "Shows the banshee's wing as a real flight instrument: a leathery membrane stiffened by trailing-edge vanes, with a free clawed thumb at the leading edge - the design the chapter argues lets a giant flier shape airflow and fight the low-speed stall.",
+  "subject": "A single mountain banshee fore-wing spread flat and seen from above as a naturalist study: a long arm-bone runs along the leading edge to a small free clawed thumb at the wrist; behind it a translucent leathery membrane is stretched taut, stiffened by a fan of several large semi-rigid vanes along the trailing edge, faint cyan bioluminescent veins threading through the membrane. A small separate cutaway inset to one side shows the resin-filled vein of a single vane in cross-section, a rigid transparent core within the membrane.",
+  "scene": "A dark display surface, the wing laid out as if pinned for study, deep haze beyond, generous empty dark space around the wing.",
+  "camera": "A clean top-down study view of the whole wing, the wing sharp, the inset smaller and set to one side, background soft.",
+  "light": "Cool clinical glow plus faint bioluminescence within the wing veins and along the vanes; deep indigo shadow.",
+  "palette": "Void-indigo ground, cool bone-grey on the arm-bone and vanes, pale teal-translucent membrane, faint cyan glow in the veins.",
+  "style": "Painterly naturalist specimen plate, hand-painted texture, anatomical clarity.",
+  "detail_level": "Crisp on the arm-bone, clawed thumb, membrane, and trailing-edge vanes plus the cutaway inset; background dissolving into haze.",
+  "composition": "The spread wing filling the centre with the clawed thumb upper-left and vanes along the lower trailing edge, the cutaway inset lower-right, generous dark margins for callouts, 16:9.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "riders", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with bioluminescent key from within the membrane. Same dark glowing-specimen mood as the chapter cover and the 2-6 banshee plates.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/why-banshees-get-to-be-big/fig-00-cover.png"]
+}

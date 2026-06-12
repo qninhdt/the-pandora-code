@@ -1,0 +1,16 @@
+id: cohesion-tension
+label:
+  vi: Lực kéo - bám (cohesion-tension)
+  en: Cohesion-tension
+definition:
+  vi: 'Cơ chế giúp một cái cây kéo nước lên cao mà chẳng cần đến cái bơm nào. Nước bốc hơi từ lá ở trên ngọn kéo theo phần nước ngay bên dưới, cứ thế dọc theo một sợi nước liền mạch chạy qua các ống dẫn li ti trong gỗ. Các phân tử nước bám vào nhau đủ chặt để cả cột nước chịu được sức căng mà không đứt — như sợi dây thừng được kéo từ đầu trên. Càng lên cao, sức căng càng lớn, và khi vượt một ngưỡng nào đó cột nước sẽ đứt: đó chính là giới hạn chiều cao của mọi cái cây.'
+  en: 'The mechanism by which a tree lifts water without a pump. Water evaporating from the leaves at the top pulls on the water just below it, all the way down an unbroken thread running through microscopic pipes in the wood. Water molecules cling to each other strongly enough that the whole column holds together under tension — like a rope pulled from the top. The higher the tree, the greater the tension, and past a threshold the column snaps: this is what sets the maximum height of any tree.'
+see_also:
+- xylem
+- transpiration
+- turgor-pressure
+category: concept
+tags:
+- physics
+- physiology
+cover_prompt: A painted cutaway of a tree trunk with a single glowing thread of water rising through it, thick and relaxed at the base and thin and strained near the top, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

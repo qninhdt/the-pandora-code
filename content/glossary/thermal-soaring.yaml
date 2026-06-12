@@ -1,0 +1,16 @@
+id: thermal-soaring
+label:
+  vi: Lượn nhiệt
+  en: Thermal soaring
+definition:
+  vi: 'Cách bay tận dụng những cột không khí ấm bốc lên — các "nhiệt lưu" hình thành khi mặt đất bị hun nóng không đều — để lấy độ cao mà gần như không phải vỗ cánh. Con vật lượn vòng tròn bên trong cột khí đang dâng, để dòng khí nâng nó lên, rồi trượt sang nhiệt lưu kế tiếp. Đây là chiến lược của những kẻ bay lớn nhất Trái Đất như Argentavis, vì với thân hình khổng lồ, việc vỗ cánh liên tục là bất khả thi về mặt trao đổi chất. Những luồng khí bốc mạnh quanh dãy núi bay của Pandora là một động cơ lượn nhiệt lý tưởng.'
+  en: 'A way of flying that exploits columns of rising warm air — "thermals," formed where the ground heats unevenly — to gain height with almost no flapping. The animal circles inside a rising column, letting the updraft carry it up, then glides off to the next thermal. It is the strategy of Earth''s largest fliers, such as Argentavis, because at giant size continuous flapping is metabolically impossible. The powerful updrafts around Pandora''s floating mountains are an ideal soaring engine.'
+see_also:
+- dynamic-soaring
+- power-curve
+- aspect-ratio
+category: concept
+tags:
+- physics
+- physiology
+cover_prompt: A painted study of a wide-winged flier circling inside a faint rising column of warm air on a dark indigo ground, cool teal updraft glow, hand-painted, no text, no labels.

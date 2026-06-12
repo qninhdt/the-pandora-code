@@ -14,8 +14,7 @@
     "test:lhci": "lhci autorun",
     "validate:content": "tsx scripts/validate-content.ts",
     "build:search-index": "tsx scripts/build-search-index.ts",
-    "build:graph": "tsx scripts/build-graph.ts",
-    "prebuild": "tsx scripts/validate-content.ts && tsx scripts/build-search-index.ts && tsx scripts/build-graph.ts && fumadocs-mdx",
+    "prebuild": "tsx scripts/validate-content.ts && tsx scripts/build-search-index.ts && fumadocs-mdx",
     "postinstall": "fumadocs-mdx"
   },
   "dependencies": {
@@ -25,7 +24,6 @@
     "@react-three/fiber": "^9.6.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "d3-force": "^3.0.0",
     "framer-motion": "^11.11.0",
     "fumadocs-core": "^14.0.0",
     "fumadocs-mdx": "^11.0.0",
@@ -54,7 +52,6 @@
     "@tailwindcss/postcss": "^4",
     "@testing-library/jest-dom": "^6.6.0",
     "@testing-library/react": "^16.1.0",
-    "@types/d3-force": "^3.0.10",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^22",
     "@types/react": "^19",

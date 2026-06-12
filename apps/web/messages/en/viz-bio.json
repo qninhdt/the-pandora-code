@@ -413,6 +413,16 @@
       "stepHint": "Keep stepping. The failure has not settled — it is still bouncing between the two layers, each round taking down whatever lost its partner in the last.",
       "settledNote": "The cascade has settled. A plague aimed at one layer alone has pulled both down together — the signature of interdependent networks (Buldyrev et al. 2010).",
       "collapsedNote": "Both networks are gone. The most efficient way to kill a forest, the mathematics suggests, may be to never touch the forest at all — only the creatures it cannot live without."
+    },
+    "forestStrata": {
+      "title": "One forest, four stacked worlds",
+      "climateLabel": "Climate of this layer",
+      "tenantLabel": "Who lives here",
+      "lightLabel": "Light reaching this layer",
+      "lightNote": "share of canopy-top sunlight that survives",
+      "lightAxis": "Light surviving →",
+      "prompt": "Click a layer to see its light budget, climate, and the Pandoran life that lives at that height.",
+      "hint": "A forest is not one habitat but a stack of them, sorted by height. The amber curve is the surviving light, falling off exponentially through the leaves (Beer-Lambert) — by the floor of a closed forest as little as 1–2% of the canopy-top sun is left. Each floor is a different world, and the animals sort themselves accordingly."
     }
   }
 }

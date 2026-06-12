@@ -1,5 +1,23 @@
 {
   "viz": {
+    "treeHeightCeiling": {
+      "title": "Một cái cây cao được tới đâu?",
+      "envLabel": "Thế giới nào",
+      "earth": "Trái Đất",
+      "pandora": "Pandora",
+      "heightLabel": "Chiều cao cây",
+      "heightAxis": "Chiều cao →",
+      "vigourAxis": "Sức sống lá ngọn",
+      "ceiling": "trần",
+      "redwood": "Cây redwood cao nhất (116 m)",
+      "hometree": "Hometree (~300 m)",
+      "turgorLabel": "Sức sống của lá ngọn",
+      "turgorNote": "Mức độ lá trên ngọn còn có thể hút đầy nước và phát triển.",
+      "failNote": "Vượt trần, cột nước đứt gãy — phần ngọn không còn uống được nữa.",
+      "verdictOk": "Tán cây vẫn tự nuôi được mình: nước lên tới ngọn dưới mức căng còn chịu nổi.",
+      "verdictOver": "Vượt quá giới hạn mà hệ dẫn nước nơi đây cho phép. Trên Trái Đất điều này bất khả; trên Pandora, trọng lực thấp hơn cùng bầu khí quyển giàu CO2 và ẩm đã nâng trần lên — gắng vươn tới tầm vóc Hometree, chứ không vượt qua nhẹ nhàng.",
+      "hint": "Cây không có bơm: nó uống bằng cách kéo một sợi nước liền mạch lên thân gỗ, chỉ nhờ sức bốc hơi từ lá. Càng cao, phần ngọn càng phải kéo mạnh, đến khi tế bào lá không còn hút đầy được — Koch và Sillett (2004) đặt trần của Trái Đất quanh mức 130 m. Chuyển sang Pandora và xem trọng lực thấp cùng bầu khí dày, giàu cacbon dịch chuyển cái trần ấy."
+    },
     "shannonChannel": {
       "title": "Giới hạn kênh truyền của Shannon",
       "subtitle": "C = B · log₂(1 + S/N)",
@@ -78,6 +96,36 @@
       "quetz": "Quetzalcoatlus",
       "ikran": "Ikran + người cưỡi",
       "hint": "Đường đòi hỏi dốc hơn đường cấp được, nên chúng luôn cắt nhau. Điểm cắt là kẻ bay nặng nhất còn có thể vỗ cánh. Trọng lực thấp và không khí dày của Pandora hạ đường đòi hỏi xuống - đẩy điểm cắt sang phải, tới khối lượng mà Trái Đất sẽ ghim chặt xuống đất."
+    },
+    "wingspanLadder": {
+      "title": "Bậc thang của những kẻ bay",
+      "subtitle": "Sải cánh, vẽ trên cùng một tỉ lệ",
+      "ceiling": "Trần của Trái Đất",
+      "metres": "{n} m",
+      "axis": "Sải cánh (m) →",
+      "earth": "Trái Đất",
+      "pandora": "Pandora",
+      "pelagornis": "Pelagornis",
+      "argentavis": "Argentavis",
+      "quetzalcoatlus": "Quetzalcoatlus",
+      "ikran": "Ikran",
+      "toruk": "Toruk",
+      "hint": "Những kẻ bay lớn nhất Trái Đất dừng lại quanh 11 m - Quetzalcoatlus đánh dấu bức tường, và mọi thứ bên phải đường gạch là vùng trời mà vật lý Trái Đất cấm tiệt. Con ikran cưỡi được nằm ngay trên bức tường ấy; con toruk thì rời khỏi biểu đồ, lớn gấp đôi sinh vật bay lớn nhất Trái Đất từng có."
+    },
+    "reynoldsRegime": {
+      "title": "Loại không khí nào?",
+      "subtitle": "Re = ρ·v·L / μ",
+      "earth": "Trái Đất",
+      "pandora": "Pandora",
+      "sizeLabel": "Bề rộng cánh",
+      "reLabel": "Số Reynolds",
+      "axis": "Số Reynolds →",
+      "metres": "{n} m",
+      "millimetres": "{n} mm",
+      "viscousLabel": "Xi-rô",
+      "transitionalLabel": "Chuyển tiếp",
+      "inertialLabel": "Dòng sạch",
+      "hint": "Số Reynolds đo xem không khí hành xử như xi-rô đặc quánh (Re thấp - thế giới chèo cánh của côn trùng) hay như một dòng mỏng trơn mà một cánh thuôn có thể rạch qua (Re cao - chim, dực long, banshee). Nó tăng theo kích thước, tốc độ và mật độ không khí - nên không khí dày của Pandora đẩy một kẻ bay bất kỳ kích thước nào lên vùng chế độ sạch hơn, dễ chịu hơn."
     },
     "superconductor": {
       "title": "Làm lạnh chất siêu dẫn",

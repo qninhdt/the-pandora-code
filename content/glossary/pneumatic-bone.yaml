@@ -1,0 +1,16 @@
+id: pneumatic-bone
+label:
+  vi: Xương khí (rỗng)
+  en: Pneumatic bone
+definition:
+  vi: 'Xương rỗng, chứa đầy khí thay vì đặc tủy — một thủ thuật giảm cân nặng then chốt cho việc bay. Chim và dực long đều có bộ xương xốp khí: các túi khí từ phổi luồn vào trong lòng xương, để lại những thành xương mỏng được chống đỡ bằng các giằng bên trong, nhẹ mà vẫn cứng. Chính nhờ vậy mà một con Quetzalcoatlus cao bằng hươu cao cổ vẫn đủ nhẹ để rời mặt đất. Những kẻ bay khổng lồ của Pandora hẳn cũng dựa vào cùng nguyên lý: tối đa hóa độ cứng trên mỗi gram, vì với một cỗ máy bay thì mỗi gram đều phải được nâng lên.'
+  en: 'Bone that is hollow and air-filled rather than solid with marrow — a key weight-saving trick for flight. Birds and pterosaurs both carry air-filled skeletons: air sacs from the lungs invade the inside of the bone, leaving thin bone walls braced by internal struts, light yet stiff. It is part of how a Quetzalcoatlus as tall as a giraffe stayed light enough to leave the ground. Pandora''s giant fliers presumably lean on the same principle: maximise stiffness per gram, because for a flying machine every gram must be lifted.'
+see_also:
+- quetzalcoatlus
+- wing-loading
+- quadrupedal-launch
+category: concept
+tags:
+- physiology
+- evolution
+cover_prompt: A painted cutaway of a hollow bone showing thin walls braced by delicate internal struts around an open air-filled core, cool bone-grey and faint cyan on dark indigo, hand-painted, no text, no labels.

@@ -1,0 +1,16 @@
+id: canopy
+label:
+  vi: Tầng tán
+  en: Canopy
+definition:
+  vi: 'Lớp mái lá liên tục, dày đặc do các tán cây giao nhau tạo thành — nơi tập trung phần lớn lá, hoa, quả và sự sống của khu rừng. Tầng tán hứng ánh sáng đầu tiên và giữ lại gần hết, để lại rất ít cho các tầng bên dưới. Nó cũng là tầng giàu có và ít được khám phá nhất: suốt phần lớn lịch sử sinh học, các nhà khoa học đứng dưới đất gần như không với tới được nó, nên nó được gọi là "biên cương sinh học cuối cùng".'
+  en: 'The continuous, dense roof of interlocking tree crowns, where most of a forest''s leaves, flowers, fruit, and animal traffic actually are. The canopy intercepts sunlight first and keeps most of it, leaving little for the layers below. It is also the richest and least-explored floor: for most of biology''s history a scientist on the ground could barely reach it, earning it the name "the last biotic frontier."'
+see_also:
+- forest-stratification
+- emergent-layer
+- understory
+- epiphyte
+category: concept
+tags:
+- ecology
+cover_prompt: A painted dense continuous roof of interlocking tree crowns seen from just above, bright at the top and dark beneath, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

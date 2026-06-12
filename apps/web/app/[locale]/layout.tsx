@@ -29,8 +29,6 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
     glossary: t("nav.glossary"),
     authors: t("nav.authors"),
     timeline: t("nav.timeline"),
-    constellation: t("nav.constellation"),
-    saved: t("engagement.saved"),
   };
 
   const searchLabels = {

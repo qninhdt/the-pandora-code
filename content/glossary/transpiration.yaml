@@ -1,0 +1,16 @@
+id: transpiration
+label:
+  vi: Sự thoát hơi nước
+  en: Transpiration
+definition:
+  vi: 'Quá trình cây mất nước qua các lỗ khí li ti trên lá khi nước bốc hơi vào không khí. Chính sức bốc hơi này là động cơ kéo cả cột nước lên cao trong cây — nhưng nó cũng là cái giá phải trả: cây mở lỗ khí để hút khí CO₂ làm thức ăn thì đồng thời cũng để nước thoát ra. Trong bầu khí quyển giàu CO₂ như của Pandora, cây có thể no đủ cacbon mà chỉ hé lỗ khí, gần như chẳng tốn nước — một phần lý do cây Pandora có thể vươn cao đến vậy.'
+  en: 'The loss of water from a plant through tiny pores in its leaves as water evaporates into the air. This evaporative pull is the engine that drags the whole water column up the tree — but it is also the cost: a plant opens its pores to take in CO₂ for food and bleeds water in the process. In a CO₂-rich atmosphere like Pandora''s, a tree can feed fully while barely cracking its pores open, spending almost no water — part of why Pandoran trees can grow so tall.'
+see_also:
+- cohesion-tension
+- xylem
+- turgor-pressure
+category: bio
+tags:
+- physiology
+- physics
+cover_prompt: A painted close view of a leaf surface with faint vapor rising from tiny pores into the air above, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

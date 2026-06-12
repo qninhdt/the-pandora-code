@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-hydraulic-limit",
+  "chapter_slug": "the-forest-as-a-cathedral",
+  "role": "diagram",
+  "narrative_purpose": "Teaches why trees have a maximum height: with no pump, a tree pulls an unbroken thread of water up its wood; the taller it grows the more strained the column, until the topmost leaves can no longer fill and a new leaf costs more than it earns — Earth's ceiling near 122-130 m.",
+  "subject": "A tall slender tree shown in clean cutaway against a dark page, with a single continuous thread of water drawn rising through the centre of its trunk from roots to crown; near the base the water thread is drawn thick, relaxed, and bright; it grows progressively thinner, more stretched, and more strained toward the top; the leaves at the very top of the tree are drawn small, dense, and shrivelled while the lower leaves are large and full; a faint dashed horizontal line crosses the upper trunk marking a ceiling the tree cannot grow past.",
+  "scene": "One tall tree as a hydraulic diagram, the rising water column the clear visual subject.",
+  "camera": "A flat side-on view of the whole tree, full height in frame.",
+  "light": "Even diagrammatic light; the water thread glows cool and bright at the relaxed base, thinning to a tense, pale, near-breaking strand at the top; leaves brighter and fuller below, dim and shrunken above.",
+  "palette": "Pandora cyan and living teal for the water thread and foliage, void-indigo trunk and background, a faint magenta tint at the strained top to read as danger.",
+  "style": "Painterly speculative-biology naturalist plate with strong diagrammatic clarity, hand-painted texture.",
+  "detail_level": "Crisp on the rising water thread, the contrast between full lower leaves and shrivelled top leaves, and the dashed ceiling line; soft elsewhere.",
+  "composition": "The tree centred, the water thread running bottom to top getting visibly thinner, the dashed ceiling near the top, open dark margins for callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Earth-science figure (cohesion-tension water transport, turgor limit) in the book's cool palette; the thinning, straining water column from base to crown is the key thing that must read clearly; leave space for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

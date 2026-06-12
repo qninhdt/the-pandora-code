@@ -1,0 +1,16 @@
+id: turgor-pressure
+label:
+  vi: Áp suất trương
+  en: Turgor pressure
+definition:
+  vi: 'Áp lực nước bên trong một tế bào thực vật ép vào thành tế bào, khiến nó căng cứng — thứ giữ cho lá và thân cây không héo rũ. Tế bào cần đủ áp suất trương mới giãn nở và lớn lên được. Trên ngọn của một cây cực cao, nước bị kéo căng đến mức áp suất trương sụt xuống quá thấp, tế bào lá không còn giãn nở nổi: lá ngọn mọc ra nhỏ xíu, dày và quắt lại. Đó là dấu hiệu cho thấy cái cây đã chạm tới giới hạn chiều cao của nó.'
+  en: 'The water pressure inside a plant cell pushing out against its wall, making it firm — what keeps leaves and stems from wilting. A cell needs enough turgor to expand and grow. At the top of a very tall tree the water is pulled so taut that turgor drops too low for the leaf cells to expand: the topmost leaves come out tiny, dense, and shrivelled. That is the sign a tree has reached the limit of its height.'
+see_also:
+- cohesion-tension
+- transpiration
+- xylem
+category: bio
+tags:
+- physiology
+- physics
+cover_prompt: A painted comparison of two plant cells, one plump and firm pressing against its wall and one collapsed and slack, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

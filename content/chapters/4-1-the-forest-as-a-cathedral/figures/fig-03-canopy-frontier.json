@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-canopy-frontier",
+  "chapter_slug": "the-forest-as-a-cathedral",
+  "role": "diagram",
+  "narrative_purpose": "Teaches that the canopy is the forest's richest, least-explored floor — a garden with its own soil: epiphytes growing on branches, their debris building aerial soil mats, and the host tree growing roots out of its own limbs to drink from them.",
+  "subject": "A close naturalist study of a single great horizontal tree branch high in the canopy, seen in cutaway: its upper surface is thick with cushions of moss, ferns, and orchid-like epiphytes; their accumulated debris forms a dark mat of soil running along the branch; fine roots grow downward out of the host branch itself, penetrating into that aerial soil mat; small insects and one tiny climbing animal are tucked among the epiphytes; the background falls away into bright hazy open air to signal great height.",
+  "scene": "A high-canopy close-up of one branch as a living garden, the rest of the forest dissolving into bright haze far below and behind.",
+  "camera": "A close, slightly raised three-quarter view of the branch, shallow depth so the aerial garden is sharp and the background soft.",
+  "light": "Bright, airy high-canopy daylight with a cool cast; the epiphyte cushions and the host roots picked out clearly, the deep background washed pale with height-haze.",
+  "palette": "Living teal and Pandora cyan in the foliage and roots, soft pale haze behind, void-indigo only in the cutaway shadow of the branch.",
+  "style": "Painterly speculative-biology naturalist plate with diagrammatic clarity, hand-painted texture.",
+  "detail_level": "Crisp and intricate on the epiphytes, the soil mat, and the descending host roots; soft and pale in the distant background.",
+  "composition": "The branch running across the frame, the aerial garden on its upper surface and the descending roots below it, open hazy space above and beside for callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Earth-science concept (epiphytes, aerial soil, canopy roots) rendered in the book's cool palette so it sits beside the Pandoran plates; the branch-as-garden and the roots-from-the-branch must read clearly; leave open space for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

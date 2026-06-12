@@ -1,0 +1,15 @@
+id: forest-floor
+label:
+  vi: Nền rừng
+  en: Forest floor
+definition:
+  vi: 'Tầng thấp nhất của khu rừng: tối, ẩm, lặng gió, nơi diễn ra công cuộc phân hủy chậm rãi. Trong một khu rừng khép tán, nền rừng chỉ nhận được chừng một đến hai phần trăm lượng ánh sáng từng chiếu xuống đỉnh tán — sống ở đây nghĩa là sống bằng phần "tiền lẻ" ánh sáng của cả khu rừng. Trên Pandora, nền rừng tối tăm còn phát quang sinh học, là nơi hexapede gặm lá và viperwolf cùng thanator đi săn.'
+  en: 'The lowest layer of the forest: dim, humid, still, where the slow business of decay happens. In a closed-canopy forest the floor receives as little as one to two percent of the light that struck the crown — living here means living on the forest''s pocket change of light. On Pandora the dim floor also glows with bioluminescence, and it is where the hexapede browses and the viperwolf and thanator hunt.'
+see_also:
+- forest-stratification
+- understory
+- canopy
+category: concept
+tags:
+- ecology
+cover_prompt: A painted dark damp forest floor under deep shade with faint bioluminescent glow among leaf litter and roots, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

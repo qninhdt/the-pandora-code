@@ -1,0 +1,16 @@
+id: leaf-area-index
+label:
+  vi: Chỉ số diện tích lá
+  en: Leaf area index
+definition:
+  vi: 'Tổng diện tích lá nằm phía trên một đơn vị diện tích mặt đất — một con số đo độ "dày" của lớp lá trong rừng. Chỉ số diện tích lá càng cao, tán càng dày, càng hứng nhiều ánh sáng ở trên và càng để lọt ít xuống dưới. Nó là cách định lượng vì sao nền một khu rừng khép tán lại tối đến vậy: ánh sáng bị hút dần qua từng lớp lá chồng lên nhau, theo một quy luật suy giảm đều đặn.'
+  en: 'The total area of leaves stacked above one unit of ground — a number for how "thick" a forest''s foliage is. The higher the leaf area index, the denser the canopy, the more light it intercepts up top and the less it lets through below. It is the way to quantify why a closed forest floor is so dark: light is absorbed layer by layer as it passes down through stacked leaves, in a steady decline.'
+see_also:
+- canopy
+- forest-stratification
+- transpiration
+category: concept
+tags:
+- ecology
+- physics
+cover_prompt: A painted stack of translucent leaf layers seen edge-on with light dimming through each successive layer from top to bottom, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

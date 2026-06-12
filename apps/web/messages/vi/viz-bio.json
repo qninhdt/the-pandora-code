@@ -413,6 +413,16 @@
       "stepHint": "Hãy bước tiếp. Sự hỏng hóc chưa lắng xuống — nó vẫn đang nảy bật giữa hai lớp, mỗi vòng hạ gục bất cứ nút nào mất bạn đồng hành ở vòng trước.",
       "settledNote": "Chuỗi dây chuyền đã lắng. Một mầm bệnh chỉ nhắm vào một lớp đã kéo cả hai cùng đổ — dấu hiệu của các mạng lưới phụ thuộc lẫn nhau (Buldyrev và đồng sự, 2010).",
       "collapsedNote": "Cả hai mạng lưới đều tiêu vong. Căn cứ theo toán học, cách hiệu quả nhất để bức tử một khu rừng có lẽ là chẳng cần chạm vào khu rừng — chỉ cần những sinh vật mà nó không thể sống thiếu."
+    },
+    "forestStrata": {
+      "title": "Một khu rừng, bốn thế giới xếp chồng",
+      "climateLabel": "Khí hậu của tầng này",
+      "tenantLabel": "Ai sống ở đây",
+      "lightLabel": "Ánh sáng chạm tới tầng này",
+      "lightNote": "phần nắng đỉnh tán còn sống sót",
+      "lightAxis": "Ánh sáng còn lại →",
+      "prompt": "Bấm vào một tầng để xem lượng ánh sáng, khí hậu và sự sống Pandora cư ngụ ở độ cao đó.",
+      "hint": "Một khu rừng không phải một môi trường sống duy nhất mà là cả một chồng môi trường, xếp theo chiều cao. Đường cong màu hổ phách là lượng ánh sáng còn lại, tụt giảm theo hàm mũ khi xuyên qua các tầng lá (Beer-Lambert) — xuống tới nền của một khu rừng khép tán, chỉ còn 1–2% lượng nắng ở đỉnh tán. Mỗi tầng là một thế giới riêng, và muôn loài tự phân mình theo đó."
     }
   }
 }

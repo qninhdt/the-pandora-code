@@ -1,0 +1,16 @@
+id: leading-edge-vortex
+label:
+  vi: Xoáy mép trước
+  en: Leading-edge vortex
+definition:
+  vi: 'Một xoáy không khí áp suất thấp cuộn lại ngay phía trên mép trước của một chiếc cánh đang vỗ hoặc nghiêng gấp — như một cơn lốc tí hon bám trên lưng cánh. Vùng áp suất thấp ấy hút cánh lên, tạo ra lực nâng nhiều hơn hẳn so với những gì lý thuyết cánh cứng, dòng đều có thể giải thích. Đây chính là lời giải cho "huyền thoại ong nghệ không thể bay": phép tính cũ bỏ sót cơ chế xoáy động này. Ở số Reynolds thấp của côn trùng, xoáy mép trước là nguồn nâng chủ đạo — và là kiểu mẹo khí động mà những chiếc cánh màng vỗ trong không khí dày của Pandora cũng có thể khai thác.'
+  en: 'A low-pressure swirl of air that rolls up just over the leading edge of a flapping or sharply tilted wing — a tiny tornado clinging to the wing''s back. That low-pressure region sucks the wing upward, making far more lift than steady, rigid-aerofoil theory can explain. It is the resolution of the "bumblebees can''t fly" myth: the old calculation missed this unsteady vortex mechanism. At the low Reynolds numbers of insects the leading-edge vortex is the dominant source of lift — and the kind of aerodynamic trick a flapping membrane wing in Pandora''s dense air could exploit too.'
+see_also:
+- reynolds-number
+- lift
+- wing-loading
+category: concept
+tags:
+- physics
+- physiology
+cover_prompt: A painted study of a small spiral vortex of air curling over the top leading edge of a tilted wing on a dark indigo ground, cool teal swirl glow, hand-painted, no text, no labels.

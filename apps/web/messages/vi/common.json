@@ -10,8 +10,7 @@
     "authors": "Tác giả",
     "timeline": "Dòng thời gian",
     "topics": "Chủ đề",
-    "parts": "Các phần",
-    "constellation": "Bản đồ"
+    "parts": "Các phần"
   },
   "common": {
     "readingTime": "{minutes} phút đọc",
@@ -34,13 +33,6 @@
     "groupChapter": "Chương",
     "groupGlossary": "Thuật ngữ",
     "groupTopic": "Chủ đề"
-  },
-  "engagement": {
-    "continueHeading": "Đọc tiếp",
-    "resume": "Tiếp tục",
-    "bookmarkAdd": "Lưu vào tuyển tập của bạn",
-    "bookmarkRemove": "Bỏ khỏi tuyển tập",
-    "saved": "Đã lưu"
   },
   "home": {
     "title": "The Pandora Code",
@@ -103,21 +95,6 @@
       "allTags": "Tất cả",
       "resultCount": "{count} thuật ngữ",
       "untagged": "Chưa phân loại"
-    },
-    "saved": {
-      "kicker": "Tuyển tập của bạn",
-      "title": "Đã lưu",
-      "subtitle": "Những chương và thuật ngữ bạn đã đánh dấu, lưu trên thiết bị này.",
-      "empty": "Bạn chưa lưu gì cả. Đánh dấu một chương hoặc thuật ngữ để tìm lại ở đây.",
-      "remove": "Xóa"
-    },
-    "constellation": {
-      "kicker": "Bản đồ",
-      "title": "Chòm sao khái niệm",
-      "subtitle": "Mỗi chương và thuật ngữ là một vì sao, nối với nhau bởi những gì chúng chia sẻ. Kéo để xoay, rê chuột để lần theo, bấm để mở.",
-      "all": "Tất cả phần",
-      "loading": "Đang vẽ chòm sao…",
-      "hint": "Kéo để xoay · rê chuột để làm nổi · bấm để mở"
     },
     "authors": {
       "title": "Tác giả",

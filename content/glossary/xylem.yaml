@@ -1,0 +1,14 @@
+id: xylem
+label:
+  vi: Mạch gỗ
+  en: Xylem
+definition:
+  vi: 'Hệ thống ống dẫn li ti trong gỗ của cây, đưa nước và khoáng chất từ rễ lên lá. Mạch gỗ chính là "ống hút" mà cả cái cây dùng để uống: nước được kéo lên qua nó thành một cột liền mạch nhờ cơ chế lực kéo - bám. Đường kính các ống này, cùng ma sát khi nước len qua chúng, là một phần lý do vì sao cây càng cao thì việc đưa nước lên ngọn càng khó.'
+  en: 'The system of microscopic pipes in a tree''s wood that carries water and minerals up from the roots to the leaves. The xylem is the "straw" the whole tree drinks through: water is pulled up it as an unbroken column by cohesion-tension. The width of these pipes, and the friction as water grinds through them, is part of why getting water to the crown gets harder the taller a tree grows.'
+see_also:
+- cohesion-tension
+- transpiration
+category: bio
+tags:
+- physiology
+cover_prompt: A painted close cutaway of woody tissue showing bundles of fine vertical tubes carrying glowing threads of water upward, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

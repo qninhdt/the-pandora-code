@@ -1,5 +1,4 @@
 import { ChaptersLibrary } from "@/components/chapters/chapters-library";
-import { ContinueReading } from "@/components/engagement/continue-reading";
 import { type Locale, isLocale } from "@/i18n/config";
 import { listPublishedChapters } from "@/lib/content/loader/chapter-loader";
 import { getChapterCoverImage } from "@/lib/content/loader/cover-image";
@@ -65,12 +64,6 @@ export default async function ChaptersPage({ params }: ChaptersPageProps) {
 
   return (
     <>
-      <div className="pt-24">
-        <ContinueReading
-          locale={loc}
-          labels={{ heading: t("engagement.continueHeading"), resume: t("engagement.resume") }}
-        />
-      </div>
       <ChaptersLibrary
         locale={loc}
         title={t("page.chapters.title")}

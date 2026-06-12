@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-cathedral-base",
+  "chapter_slug": "the-forest-as-a-cathedral",
+  "role": "hero",
+  "narrative_purpose": "The cold-open anchor: standing at the buttressed base of a Hometree and looking straight up the trunk through tier after tier of life into a vaulted ceiling of foliage — the reader's first felt sense that the forest is built like a cathedral, with floors.",
+  "subject": "An extreme upward view straight up the trunk of a colossal Pandoran Hometree from its base: dozens of woody columns braid together and rise out of sight; the trunk passes through stacked tiers of hanging foliage and branch galleries; at the very top, daylight breaks through a vaulted ceiling of leaves in long pale shafts, where tiny winged shapes wheel in the bright crown; the foreground forest floor is dim, damp, and faintly glowing.",
+  "scene": "Looking up the central axis of a giant tree, the trunk converging toward a distant bright crown, layers of foliage receding upward.",
+  "camera": "A dramatic worm's-eye upward view from the forest floor, strong vertical perspective convergence.",
+  "light": "Bright shafts of daylight breaking through the high canopy at the top, dimming steeply downward to a cool, faintly bioluminescent floor.",
+  "palette": "Cool Pandora cyan and living teal in the lit upper tiers, void-indigo shadow and faint glow at the dim floor.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, atmospheric and reverent.",
+  "detail_level": "Crisp on the braided trunk and nearer foliage tiers; dissolving into light and haze at the crown.",
+  "composition": "Trunk dead-centre running bottom to top, radial convergence toward the bright crown, dim foreground floor with open dark space for a caption.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Architecture/landscape plate, figures minimal. The cathedral-interior mood; same Hometree look as the cover.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["fig-00-cover.png"]
+}

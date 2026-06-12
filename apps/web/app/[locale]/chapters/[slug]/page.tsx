@@ -3,7 +3,6 @@ import { AnatomyPlate } from "@/components/content/anatomy-plate";
 import { DiagramFigure } from "@/components/content/diagram-figure";
 import { Figure } from "@/components/content/figure";
 import { FigureGrid } from "@/components/content/figure-grid";
-import { BookmarkButton } from "@/components/engagement/bookmark-button";
 import { GlossaryTerm } from "@/components/glossary/glossary-term";
 import { ChapterBackground } from "@/components/reading/chapter-background";
 import { ChapterHero } from "@/components/reading/chapter-hero";
@@ -180,15 +179,6 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
             readingTimeMin={chapter.meta.reading_time_min}
             classification={cls}
             imageSrc={coverImage}
-            actions={
-              <BookmarkButton
-                entry={{ type: "chapter", slug, locale: loc, title: chapter.title }}
-                labels={{
-                  add: t("engagement.bookmarkAdd"),
-                  remove: t("engagement.bookmarkRemove"),
-                }}
-              />
-            }
           />
         }
         toc={<TableOfContents headings={headings} label={t("chapter.tableOfContents")} />}

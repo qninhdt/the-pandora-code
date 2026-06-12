@@ -16,8 +16,6 @@ export interface DockNav {
   glossary: string;
   authors: string;
   timeline: string;
-  constellation: string;
-  saved: string;
 }
 
 export interface SearchLabels {
@@ -78,10 +76,8 @@ export function FloatingDock({ locale, brand, nav, search }: FloatingDockProps) 
   const links = [
     { href: `${base}/chapters`, label: nav.chapters },
     { href: `${base}/glossary`, label: nav.glossary },
-    { href: `${base}/constellation`, label: nav.constellation },
     { href: `${base}/author`, label: nav.authors },
     { href: `${base}/timeline`, label: nav.timeline },
-    { href: `${base}/saved`, label: nav.saved },
   ];
   const isActive = (href: string) => pathname.startsWith(href);
 

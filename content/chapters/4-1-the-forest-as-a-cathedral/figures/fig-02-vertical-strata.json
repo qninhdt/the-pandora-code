@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-vertical-strata",
+  "chapter_slug": "the-forest-as-a-cathedral",
+  "role": "diagram",
+  "narrative_purpose": "Teaches the forest's four stacked layers and the steep vertical light gradient at a glance: emergent crowns in full sun, a dense canopy roof, a shaded understory, and a dim floor living on as little as 1-2% of the light — with fauna sorted by height.",
+  "subject": "A tall vertical cross-section of a Pandoran forest divided into four clearly separated horizontal bands stacked top to bottom: at the very top, a few isolated giant tree crowns standing alone in bright light with small winged creatures around them; below, a dense continuous roof of interlocking foliage; below that, a dim shaded zone of slender trunks and broad drooping leaves; at the bottom, a dark, faintly glowing forest floor with a large six-legged grazing animal. Along the right edge runs a narrow vertical strip that fades from bright pale at the top to near-black at the bottom, showing how light dwindles with depth.",
+  "scene": "A diagrammatic vertical slice through a whole forest from crown to floor, the four layers visually distinct in brightness and density.",
+  "camera": "A flat, side-on cross-sectional view, the full height of the forest in frame.",
+  "light": "A continuous top-to-bottom gradient: brilliant at the emergent crowns, dimming through each layer to a deep, faintly bioluminescent floor; the right-edge strip reads as a pure light scale.",
+  "palette": "Pale luminous light at top, cooling through Pandora cyan and living teal in the mid layers to void-indigo and faint glow at the floor.",
+  "style": "Painterly speculative-biology naturalist plate with strong diagrammatic clarity, hand-painted texture.",
+  "detail_level": "Crisp and legible on each of the four bands and the edge light-strip; soft atmospheric transitions between bands.",
+  "composition": "Four stacked horizontal bands of roughly equal height, the light-gradient strip down the right margin, generous dark space at each band's side for callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Pandoran forest rendered in the book's cool palette; the four-layer separation and the dimming light gradient must read instantly; leave dark margins for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

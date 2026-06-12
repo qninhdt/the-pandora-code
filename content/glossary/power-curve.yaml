@@ -1,0 +1,16 @@
+id: power-curve
+label:
+  vi: Đường công suất
+  en: Power curve
+definition:
+  vi: 'Đồ thị cho thấy một kẻ bay phải tiêu tốn bao nhiêu công suất để bay ở mỗi tốc độ — và đặt cạnh nó là công suất tối đa mà cơ bắp có thể cấp ra. Bay quá chậm thì tốn sức (phải quẫy mạnh để khỏi rơi); bay quá nhanh cũng tốn sức (phải thắng lực cản), nên đường "công suất đòi hỏi" võng xuống hình chữ U, với một tốc độ rẻ nhất ở đáy. Khi con vật to ra, đường đòi hỏi dâng lên nhanh hơn công suất cơ bắp có thể cấp; nơi hai đường chạm nhau là kẻ bay nặng nhất còn có thể vỗ cánh. Nhà sinh lý học Colin Pennycuick là người vẽ nên những đường này.'
+  en: 'A graph of how much power a flier must spend to fly at each speed — set against the most its muscles can supply. Flying too slowly costs power (you must thrash to keep from falling); flying too fast also costs power (you must beat the drag), so the "power required" line sags into a U-shape, with a cheapest speed at its bottom. As an animal grows, the required line rises faster than the power its muscles can deliver; where the two meet is the heaviest a flier can still flap. The physiologist Colin Pennycuick mapped these curves.'
+see_also:
+- wing-loading
+- thermal-soaring
+- quadrupedal-launch
+category: concept
+tags:
+- physics
+- physiology
+cover_prompt: A painted U-shaped curve sagging across a dark indigo field with a second gently rising line crossing it, cool teal and amber, hand-painted texture, no text, no numbers, no labels.

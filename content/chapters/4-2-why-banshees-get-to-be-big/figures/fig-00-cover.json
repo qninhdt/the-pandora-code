@@ -1,0 +1,19 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "why-banshees-get-to-be-big",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate for the landing book-map: a great winged Pandoran flier riding the air against the floating mountains, posed so its impossible scale - a body too large for any Earth sky - reads at a glance as the puzzle the chapter solves.",
+  "subject": "A mountain banshee in full soaring flight, wings spread wide and taut, seen against a backdrop of the floating Hallelujah Mountains. The wings are great leathery membranes stiffened by a fan of semi-rigid vanes along the trailing edge, faint cyan bioluminescent veins threading through them; a tiny Na'vi rider sits low on its back, small enough that the wingspan dwarfs them and the true size lands.",
+  "scene": "High open air among drifting island-mountains, deep hazy distance falling away below, wisps of cloud catching the light.",
+  "camera": "A sweeping three-quarter view from slightly above and ahead, the flier filling the frame, the floating peaks soft behind.",
+  "light": "Cool daylight diffused through haze, bioluminescent glow tracing the wing veins and the hollow bone, deep indigo shadow beneath the wings, one scarce warm amber accent at the eye.",
+  "palette": "Void-indigo and teal sky-haze, cyan glow in the wing membranes, cool bone-grey on the frame, a single restrained amber accent.",
+  "style": "Painterly naturalist plate, hand-painted texture, confident focal hierarchy.",
+  "detail_level": "Crisp on the wing membrane, vanes, and rider; the floating peaks softer; background dissolving into haze.",
+  "composition": "The flier strong across the upper-centre with wings spread full-width, floating peaks lower and behind, generous dark sky for text, 3:2 landscape.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette, bioluminescent key from within the wing. Same dark glowing mood as the established chapter covers.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

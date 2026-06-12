@@ -1,0 +1,17 @@
+id: forest-stratification
+label:
+  vi: Sự phân tầng rừng
+  en: Forest stratification
+definition:
+  vi: 'Sự sắp xếp của một khu rừng thành các lớp nằm ngang xếp chồng theo chiều cao — nền rừng, tầng dưới tán, tầng tán, và tầng vượt tán — mỗi lớp một thứ ánh sáng, độ ẩm, nhiệt độ và gió riêng. Chính sự phân tầng này, chứ không phải chiều cao đơn thuần, biến một khu rừng từ một môi trường sống duy nhất thành cả một chồng môi trường, và là lý do nó chứa nổi mật độ sự sống đáng kinh ngạc đến vậy.'
+  en: 'The arrangement of a forest into horizontal layers stacked by height — forest floor, understory, canopy, and emergent layer — each with its own light, humidity, temperature, and wind. It is this layering, not sheer height, that turns a forest from one habitat into a stack of them, and the reason a single patch of forest can hold so much life. On Pandora the same four-floor architecture appears, scaled up around 300-metre Hometrees.'
+see_also:
+- canopy
+- understory
+- emergent-layer
+- forest-floor
+- niche-partitioning
+category: concept
+tags:
+- ecology
+cover_prompt: A painted vertical cross-section of a forest split into four clearly separated horizontal bands from a bright crown down to a dark glowing floor, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

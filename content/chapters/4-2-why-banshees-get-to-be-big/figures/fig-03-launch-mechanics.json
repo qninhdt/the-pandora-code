@@ -1,0 +1,19 @@
+{
+  "id": "fig-03-launch-mechanics",
+  "chapter_slug": "why-banshees-get-to-be-big",
+  "role": "diagram",
+  "narrative_purpose": "Contrasts the two ways a flier leaves the ground - the bird's hind-leg leap (which carries dead launch-weight aloft) versus the pterosaur's forelimb vault (launch limbs and flight limbs are one) - the mechanic the chapter says Pandora's giants inherit.",
+  "subject": "Two three-stage launch sequences side by side against a dark page. LEFT, a large bird: stage one crouched on its hind legs, stage two leaping straight up off those legs, stage three airborne with wings spreading while the heavy hind legs hang beneath it as dead weight. RIGHT, a giant pterosaur: stage one crouched on all four limbs, stage two vaulting forward and up off its powerful folded forelimbs like a pole-vaulter, stage three airborne unfurling those same forelimbs into wings. The two sequences are clearly separated, each reading left-to-right as motion.",
+  "scene": "A dark study space, the two sequences floating as labelled motion-strips with deep haze beyond, a faint ground line under each crouch.",
+  "camera": "A flat side-on view of both sequences so the limb mechanics read cleanly, all six poses sharp.",
+  "light": "Cool clinical glow, faint bioluminescent tracing along the limbs that do the launching, deep indigo shadow.",
+  "palette": "Void-indigo ground, cool bone-grey on both animals, faint teal-cyan glow on the active launch limbs, no warm accents.",
+  "style": "Painterly naturalist diagram, hand-painted texture, clear stage-to-stage motion.",
+  "detail_level": "Crisp on the limbs doing the launching in each stage; bodies simpler; background dissolving into haze.",
+  "composition": "Bird sequence across the upper half, pterosaur sequence across the lower half, each three poses left-to-right, generous dark gutters for callouts, 16:9.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "riders", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette. Same dark glowing-specimen mood as the chapter's other plates; keep both animals neutral grey so the glowing launch limbs carry the contrast.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

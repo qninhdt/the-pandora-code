@@ -1,0 +1,14 @@
+id: epiphyte
+label:
+  vi: Thực vật phụ sinh
+  en: Epiphyte
+definition:
+  vi: 'Loài thực vật mọc bám trên cây khác — trên cành, trên thân — mà không cắm rễ xuống đất, hút nước và dưỡng chất thẳng từ mưa và sương. Lan, dương xỉ, rêu và họ dứa là những ví dụ điển hình. Theo thời gian, xác mục của chúng tích tụ thành những thảm đất thực sự lơ lửng trên cao, và cây chủ thậm chí mọc rễ ra từ chính cành của mình để uống nước từ khu vườn mọc trên thân nó. Phụ sinh không phải ký sinh: chúng chỉ mượn chỗ đậu, không hút nhựa cây chủ.'
+  en: 'A plant that grows on another plant — on a branch or trunk — without rooting in the ground, drawing water and nutrients straight from rain and mist. Orchids, ferns, mosses, and bromeliads are classic examples. Over time their debris builds up into genuine mats of soil perched high in the trees, and host trees even grow roots out of their own branches to drink from the gardens growing on them. Epiphytes are not parasites: they borrow a perch, not the host''s sap.'
+see_also:
+- canopy
+- forest-stratification
+category: bio
+tags:
+- ecology
+cover_prompt: A painted tree branch thick with cushions of moss, ferns and orchid-like plants forming a dark soil mat, fine roots descending from the branch, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

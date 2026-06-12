@@ -1,0 +1,16 @@
+id: dynamic-soaring
+label:
+  vi: Lượn động
+  en: Dynamic soaring
+definition:
+  vi: 'Cách bay khai thác sự chênh lệch tốc độ gió ở các độ cao khác nhau — điển hình là ngay trên mặt biển, nơi gió gần mặt nước chậm hơn gió ở trên cao. Bằng cách liên tục đảo hướng leo lên rồi lao xuống xuyên qua lớp gradient gió ấy, con vật rút năng lượng thẳng từ gió mà gần như không vỗ cánh — kỹ thuật của chim hải âu, và của loài chim biển khổng lồ tuyệt chủng Pelagornis. Đây là một trong vài mẹo cho phép những kẻ bay nặng nhất tồn tại mà không cần công suất cơ bắp mà thân hình chúng đòi hỏi.'
+  en: 'A way of flying that harvests the difference in wind speed at different heights — classically just above the sea, where wind near the surface is slower than wind higher up. By repeatedly wheeling up and diving back down through that wind gradient, the animal extracts energy straight from the wind with almost no flapping — the technique of the albatross, and of the giant extinct seabird Pelagornis. It is one of the few tricks that let the heaviest fliers exist without the muscle power their size would otherwise demand.'
+see_also:
+- thermal-soaring
+- power-curve
+- aspect-ratio
+category: concept
+tags:
+- physics
+- physiology
+cover_prompt: A painted study of a long-winged seabird arcing up and down through faint layered wind streamlines above a dark sea, cool teal on deep indigo, hand-painted, no text, no labels.

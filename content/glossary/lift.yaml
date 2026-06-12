@@ -1,0 +1,16 @@
+id: lift
+label:
+  vi: Lực nâng
+  en: Lift
+definition:
+  vi: 'Lực hướng lên mà một chiếc cánh tạo ra bằng cách hất không khí xuống dưới: không khí bị đẩy xuống thì đẩy ngược cánh lên. Độ lớn của lực nâng phụ thuộc vào diện tích cánh, bình phương tốc độ cánh cắt qua không khí, và — quan trọng cho câu chuyện banshee — mật độ của chính không khí. Không khí càng đặc thì cùng một chiếc cánh ở cùng tốc độ lại tạo ra càng nhiều lực nâng. Đây là lý do bầu khí quyển dày của Pandora nâng đỡ những kẻ bay khổng lồ dễ hơn bầu trời mỏng của Trái Đất.'
+  en: 'The upward force a wing generates by throwing air downward: the air, shoved down, pushes the wing up. How much lift a wing makes depends on its area, on the square of the speed it slices through the air, and — crucial to the banshee story — on the density of the air itself. Denser air means the same wing at the same speed makes more lift. This is why Pandora''s thick atmosphere holds up giant fliers more easily than Earth''s thin sky.'
+see_also:
+- wing-loading
+- reynolds-number
+- aspect-ratio
+category: concept
+tags:
+- physics
+- physiology
+cover_prompt: A painted study of a curved wing slicing through cool teal airflow on a dark indigo ground, streamlines bending down behind the wing to suggest air pushed downward, hand-painted, no text, no labels.

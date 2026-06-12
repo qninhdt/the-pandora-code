@@ -1,0 +1,15 @@
+id: foliage-height-diversity
+label:
+  vi: Độ đa dạng chiều cao tán lá
+  en: Foliage height diversity
+definition:
+  vi: 'Thước đo mức độ lá cây được trải đều qua các tầng theo chiều dọc của một khu rừng — tức là khu rừng có bao nhiêu "tầng lầu" và chúng được lấp đầy đồng đều ra sao. Năm 1961, anh em nhà MacArthur phát hiện chỉ riêng con số này đã dự đoán số loài chim trong một môi trường tốt đến kinh ngạc: càng nhiều tầng lá, trải càng đều, càng nhiều loài chim. Đây là cách định lượng cho ý tưởng cốt lõi: cấu trúc tạo ra chỗ ở, rừng càng nhiều tầng càng chứa nổi nhiều sự sống.'
+  en: 'A measure of how evenly a forest''s leaves are spread across its vertical layers — in effect, how many "floors" the forest has and how evenly they are furnished. In 1961 the MacArthur brothers found this single number predicted the diversity of birds in a habitat astonishingly well: more foliage layers, more evenly filled, meant more kinds of birds. It is the way to quantify the core idea that structure creates room — the more layered a forest, the more life it can hold.'
+see_also:
+- forest-stratification
+- niche-partitioning
+- canopy
+category: concept
+tags:
+- ecology
+cover_prompt: A painted forest profile beside a simple vertical bar split into evenly filled layers, suggesting many well-stocked floors, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

@@ -27,7 +27,9 @@ import { DiagramFigure } from "@/components/content/diagram-figure";
 import { EclipseDayClock } from "@/components/content/eclipse-day-clock";
 import { Figure } from "@/components/content/figure";
 import { FigureGrid } from "@/components/content/figure-grid";
+import { FlierWingspanLadder } from "@/components/content/flier-wingspan-ladder";
 import { FlightPowerCeiling } from "@/components/content/flight-power-ceiling";
+import { ForestStrataExplorer } from "@/components/content/forest-strata-explorer";
 import { FroudeGaitDial } from "@/components/content/froude-gait-dial";
 import { FunctionalResponseCurves } from "@/components/content/functional-response-curves";
 import { GlowBiogeographyToggle } from "@/components/content/glow-biogeography-toggle";
@@ -51,12 +53,14 @@ import { PredatorPreyOscillator } from "@/components/content/predator-prey-oscil
 import { QuorumCascade } from "@/components/content/quorum-cascade";
 import { Quote } from "@/components/content/quote";
 import { ReplayTheTape } from "@/components/content/replay-the-tape";
+import { ReynoldsRegimeExplorer } from "@/components/content/reynolds-regime-explorer";
 import { ScrollSequence } from "@/components/content/scroll-sequence";
 import { ShannonChannel } from "@/components/content/shannon-channel";
 import { SquareCubeScaler } from "@/components/content/square-cube-scaler";
 import { SuperconductorCooldown } from "@/components/content/superconductor-cooldown";
 import { TierLegend } from "@/components/content/tier-legend";
 import { Timeline } from "@/components/content/timeline";
+import { TreeHeightCeiling } from "@/components/content/tree-height-ceiling";
 import { TwentySecondsTimeline } from "@/components/content/twenty-seconds-timeline";
 import { UmweltLens } from "@/components/content/umwelt-lens";
 import { WhatThisMeans } from "@/components/content/what-this-means";
@@ -106,9 +110,11 @@ export const pandoraMdxComponents = {
   EclipseDayClock,
   Figure,
   FigureGrid,
+  FlierWingspanLadder,
   FlightPowerCeiling,
   FloatingMountainFigure,
   FluxFieldFigure,
+  ForestStrataExplorer,
   FroudeGaitDial,
   FunctionalResponseCurves,
   GlossaryTerm,
@@ -136,6 +142,7 @@ export const pandoraMdxComponents = {
   ReadingProgress,
   RelatedChapters,
   ReplayTheTape,
+  ReynoldsRegimeExplorer,
   ScientificNote,
   ScrollSequence,
   ShannonChannel,
@@ -147,6 +154,7 @@ export const pandoraMdxComponents = {
   TableOfContents,
   TierLegend,
   Timeline,
+  TreeHeightCeiling,
   TwentySecondsTimeline,
   UmweltLens,
   WhatThisMeans,

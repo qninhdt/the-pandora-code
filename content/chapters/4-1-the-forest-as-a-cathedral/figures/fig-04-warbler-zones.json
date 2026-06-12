@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-warbler-zones",
+  "chapter_slug": "the-forest-as-a-cathedral",
+  "role": "diagram",
+  "narrative_purpose": "The Earth case for vertical niche partitioning: MacArthur's five warbler species each feeding in a different zone of one spruce tree, the experiment that proved coexistence is competition already resolved into separate floors.",
+  "subject": "A single tall conifer tree shown in clean side profile against a dark page, divided by faint horizontal guide bands into stacked zones; five small songbirds, each with slightly different markings, are positioned in five clearly separated regions of the same tree: one at the bright topmost tips, one high near the trunk, one in the middle foliage, one deep in the shaded interior near the trunk, and one on the low branches near the base; each bird sits alone in its own distinct patch so the partitioning reads instantly.",
+  "scene": "One spruce tree as a diagram of divided space, the five birds spread across its vertical profile.",
+  "camera": "A flat side-on view of the whole tree, full height in frame.",
+  "light": "Even diagrammatic light, slightly brighter at the exposed top tips and dimmer in the shaded interior to suggest the zones differ in exposure.",
+  "palette": "Muted teal-grey conifer foliage, the five birds picked out in soft Pandora cyan and faint warm accent against void-indigo.",
+  "style": "Painterly speculative-biology naturalist plate with strong diagrammatic clarity, hand-painted texture.",
+  "detail_level": "Crisp on each bird and its distinct zone; soft on the overall foliage mass.",
+  "composition": "The conifer centred, five well-separated bird positions from crown to base, open dark margins beside each for callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Pure Earth-science figure (Maine spruce, real warblers) rendered in the book's cool palette so it sits beside the Pandoran plates; the five birds must read as occupying five separate zones of one tree; leave space for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

@@ -10,8 +10,7 @@
     "authors": "Author",
     "timeline": "Timeline",
     "topics": "Topics",
-    "parts": "Parts",
-    "constellation": "Map"
+    "parts": "Parts"
   },
   "common": {
     "readingTime": "{minutes} min read",
@@ -34,13 +33,6 @@
     "groupChapter": "Chapters",
     "groupGlossary": "Glossary",
     "groupTopic": "Topics"
-  },
-  "engagement": {
-    "continueHeading": "Continue reading",
-    "resume": "Resume",
-    "bookmarkAdd": "Save to your codex",
-    "bookmarkRemove": "Remove from your codex",
-    "saved": "Saved"
   },
   "home": {
     "title": "The Pandora Code",
@@ -103,21 +95,6 @@
       "allTags": "All",
       "resultCount": "{count} terms",
       "untagged": "Untagged"
-    },
-    "saved": {
-      "kicker": "Your codex",
-      "title": "Saved",
-      "subtitle": "Chapters and terms you bookmarked, kept on this device.",
-      "empty": "You haven't saved anything yet. Bookmark a chapter or term to find it here.",
-      "remove": "Remove"
-    },
-    "constellation": {
-      "kicker": "The map",
-      "title": "Concept constellation",
-      "subtitle": "Every chapter and term as a star, linked by what they share. Drag to rotate, hover to trace, click to open.",
-      "all": "All parts",
-      "loading": "Charting the constellation…",
-      "hint": "Drag to rotate · hover to highlight · click to open"
     },
     "authors": {
       "title": "Author",

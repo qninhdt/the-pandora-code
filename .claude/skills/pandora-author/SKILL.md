@@ -104,4 +104,10 @@ When you create a `content/glossary/{id}.yaml` term, it MUST include a `tags:`
 array (1-4 entries) drawn from the fixed vocabulary in
 `apps/web/lib/content/schemas/glossary-tags.ts` - tags are the primary lookup
 facet on the glossary page, so the coarse `category` field alone is not enough.
-Pick tags from the definition's actual subject; do not invent new tag slugs.
+Prefer existing tags: pick from the vocabulary whenever one fits the
+definition's actual subject. Never invent a tag slug ad-hoc inside content YAML
+(the schema is a `z.enum`, so an unknown slug fails validation). If the corpus
+genuinely needs a new facet that no existing tag covers, extend the vocabulary
+first: add the kebab-case slug to `GLOSSARY_TAGS` and a bilingual vi/en entry to
+`GLOSSARY_TAG_LABELS` in `glossary-tags.ts`, then use it. Add new tags sparingly
+- only when a real cluster of terms would otherwise be mis-filed.

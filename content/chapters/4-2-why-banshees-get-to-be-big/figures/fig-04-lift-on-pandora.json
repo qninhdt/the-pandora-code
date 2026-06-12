@@ -1,0 +1,19 @@
+{
+  "id": "fig-04-lift-on-pandora",
+  "chapter_slug": "why-banshees-get-to-be-big",
+  "role": "diagram",
+  "narrative_purpose": "Shows why the same wing flies more easily on Pandora: lower gravity and denser air both cut the speed a flier must reach before takeoff - the chapter's payoff, the two dials that slide the flight ceiling upward.",
+  "subject": "A two-panel takeoff comparison against a dark page. LEFT panel marked as Earth: a flier running a long distance along a ground line before lifting off, with a tall vertical bar beside it standing for the high required-takeoff-speed. RIGHT panel marked as Pandora: the same flier lifting off after a much shorter run, with a noticeably shorter vertical bar beside it. Beneath both panels sit two small simple round gauges: one showing a lower gravity level, one showing a denser, heavier air (drawn as more, thicker air particles), both visually pushing the right-hand bar down.",
+  "scene": "A dark diagram space, the two panels side by side with a faint ground line in each, deep haze beyond.",
+  "camera": "A flat side-on view of both panels so the run-length and the height of each speed-bar read at a glance.",
+  "light": "Cool clinical glow, faint bioluminescent tracing on the flier and the bars, deep indigo shadow.",
+  "palette": "Void-indigo ground, cool grey fliers and ground lines, teal for the Pandora bar and cyan glow on the gauges, a restrained amber for the taller Earth bar.",
+  "style": "Painterly naturalist diagram, hand-painted texture, clean comparative clarity.",
+  "detail_level": "Crisp on the two fliers, the run-lengths, the two speed-bars, and the gauges; background dissolving into haze.",
+  "composition": "Earth panel left, Pandora panel right, the two speed-bars clearly different heights, the two gauges along the bottom, generous dark margins for callouts, 16:9.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with one restrained amber accent on the Earth bar. Same dark glowing mood as the chapter's other plates.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

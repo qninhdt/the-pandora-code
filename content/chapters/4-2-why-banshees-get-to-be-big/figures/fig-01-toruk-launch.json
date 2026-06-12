@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-toruk-launch",
+  "chapter_slug": "why-banshees-get-to-be-big",
+  "role": "hero",
+  "narrative_purpose": "The cold-open anchor: a colossal flier at the instant of launch off a high crag, posed so its impossible scale and its cliff-vault launch - the very strategy a too-heavy flier must use - read immediately.",
+  "subject": "A great leonopteryx (toruk) at the instant of launch from the edge of a floating mountain: enormous fore-wings swept back mid-downstroke, a second smaller pair of limbs held out as horizontal stabilisers, taloned hind feet still trailing the rock it has just pushed off. The wings are vast finned membranes, crimson-and-orange shading to dark, faint glow along the wing struts. Far below and behind, a tiny banshee with its rider wheels in the open air for scale, dwarfed by the toruk's span.",
+  "scene": "The lip of a floating island-mountain, mist and forest canopy falling away into deep hazy distance below, other drifting peaks behind.",
+  "camera": "A dramatic low three-quarter view looking slightly up at the launching toruk, the cliff edge and the void beneath it visible, the distant rider small.",
+  "light": "Cool hazy daylight, a warm rim of amber-crimson along the wing leading edges, deep indigo shadow in the membrane folds and the gulf below.",
+  "palette": "Void-indigo and teal sky-haze, crimson-and-amber on the toruk's wings, cool grey rock, scarce cyan glow on the struts.",
+  "style": "Painterly cinematic naturalist plate, hand-painted texture, strong focal drama.",
+  "detail_level": "Crisp on the toruk's wings, stabiliser limbs, and the trailing feet; the cliff and distant rider softer; deep haze below.",
+  "composition": "The toruk dominating the upper two-thirds with wings spread wide, the cliff edge lower-left, the void and tiny rider lower-right, generous dark sky for text, 16:9.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with a warm wing accent. Same dark glowing mood as the chapter cover; reuse the cover's banshee look for the distant rider.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/why-banshees-get-to-be-big/fig-00-cover.png"]
+}
