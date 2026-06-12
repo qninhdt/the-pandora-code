@@ -13,6 +13,8 @@ interface ChapterHeroProps {
   locale: "vi" | "en";
   /** Optional hero image (the chapter's establishing figure) for full-bleed. */
   imageSrc?: string;
+  /** Optional action controls (e.g. bookmark) rendered in the meta row. */
+  actions?: React.ReactNode;
   className?: string;
 }
 
@@ -28,6 +30,7 @@ export function ChapterHero({
   classification,
   locale,
   imageSrc,
+  actions,
   className,
 }: ChapterHeroProps) {
   const tiers = [
@@ -114,6 +117,7 @@ export function ChapterHero({
               {readingTimeMin} {locale === "vi" ? "phút đọc" : "min read"}
             </span>
           )}
+          {actions && <span className="ml-auto flex items-center gap-2">{actions}</span>}
         </div>
       </div>
     </header>
