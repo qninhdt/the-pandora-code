@@ -1,8 +1,11 @@
-import { type Locale, isLocale } from "@/i18n/config";
+import { BookmarkButton } from "@/components/engagement/bookmark-button";
+import { type Locale, isLocale, locales } from "@/i18n/config";
 import { getGlossaryCoverImage } from "@/lib/content/loader/glossary-cover";
 import { getGlossaryTerm, listGlossaryIds } from "@/lib/content/loader/glossary-loader";
 import { glossaryTagLabel } from "@/lib/content/schemas/glossary-tags";
-import { setRequestLocale } from "next-intl/server";
+import { buildPageMetadata, clampDescription } from "@/lib/seo/page-metadata";
+import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -15,10 +18,26 @@ export function generateStaticParams() {
   return ["vi", "en"].flatMap((locale) => ids.map((term) => ({ locale, term })));
 }
 
+export async function generateMetadata({ params }: GlossaryDetailProps): Promise<Metadata> {
+  const { locale, term } = await params;
+  if (!isLocale(locale)) return {};
+  const loc = locale as Locale;
+  const entry = getGlossaryTerm(term, loc);
+  if (!entry) return {};
+  return buildPageMetadata({
+    locale: loc,
+    path: `/glossary/${term}`,
+    title: entry.label,
+    description: clampDescription(entry.definition),
+    availableLocales: locales,
+  });
+}
+
 export default async function GlossaryDetail({ params }: GlossaryDetailProps) {
   const { locale, term } = await params;
   if (!isLocale(locale)) notFound();
   setRequestLocale(locale);
+  const t = await getTranslations({ locale });
   const entry = getGlossaryTerm(term, locale as Locale);
   if (!entry) notFound();
   const cover = getGlossaryCoverImage(term);
@@ -38,6 +57,10 @@ export default async function GlossaryDetail({ params }: GlossaryDetailProps) {
         {entry.category}
       </p>
       <h1 className="text-3xl font-semibold tracking-tight">{entry.label}</h1>
+      <BookmarkButton
+        entry={{ type: "glossary", slug: term, locale: locale as Locale, title: entry.label }}
+        labels={{ add: t("engagement.bookmarkAdd"), remove: t("engagement.bookmarkRemove") }}
+      />
       {entry.tags.length > 0 ? (
         <div className="flex flex-wrap gap-1.5">
           {entry.tags.map((tag) => (

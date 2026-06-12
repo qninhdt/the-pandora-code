@@ -7,3 +7,5 @@ coverage/
 *.tsbuildinfo
 .env*
 !.env.example
+public/search/
+public/graph/

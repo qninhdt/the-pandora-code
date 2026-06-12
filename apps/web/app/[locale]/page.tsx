@@ -1,4 +1,5 @@
 import { DiagonalBreak } from "@/components/codex/diagonal-break";
+import { ContinueReading } from "@/components/engagement/continue-reading";
 import { ClosingCall } from "@/components/landing/closing-call";
 import { type BrowserPart, CodexBrowser } from "@/components/landing/codex-browser";
 import { DescentSection } from "@/components/landing/descent-section";
@@ -54,6 +55,11 @@ export default async function Home({ params }: HomeProps) {
         ctaGlossary={t("nav.glossary")}
         chaptersHref={`/${loc}/chapters`}
         glossaryHref={`/${loc}/glossary`}
+      />
+
+      <ContinueReading
+        locale={loc}
+        labels={{ heading: t("engagement.continueHeading"), resume: t("engagement.resume") }}
       />
 
       <DescentSection

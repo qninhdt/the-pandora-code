@@ -1,6 +1,7 @@
 "use client";
 
 import { LocaleSwitcher } from "@/components/layout/locale-switcher";
+import { CommandPalette } from "@/components/search/command-palette";
 import type { Locale } from "@/i18n/config";
 import { cn } from "@/lib/utils";
 import { Github, Menu, X } from "lucide-react";
@@ -15,6 +16,19 @@ export interface DockNav {
   glossary: string;
   authors: string;
   timeline: string;
+  constellation: string;
+  saved: string;
+}
+
+export interface SearchLabels {
+  trigger: string;
+  placeholder: string;
+  title: string;
+  empty: string;
+  hint: string;
+  groupChapter: string;
+  groupGlossary: string;
+  groupTopic: string;
 }
 
 const REPO_URL = "https://github.com/qninhdt/the-pandora-code";
@@ -23,12 +37,13 @@ interface FloatingDockProps {
   locale: Locale;
   brand: string;
   nav: DockNav;
+  search: SearchLabels;
 }
 
 // A single frosted-glass pill nav floating at top-center - balanced on every
 // breakpoint. Desktop shows the links inline; mobile opens a full-screen
 // bioluminescent overlay (no drawer/sidebar) with oversized glowing links.
-export function FloatingDock({ locale, brand, nav }: FloatingDockProps) {
+export function FloatingDock({ locale, brand, nav, search }: FloatingDockProps) {
   const pathname = usePathname();
   const base = `/${locale}`;
   const [scrolled, setScrolled] = useState(false);
@@ -63,8 +78,10 @@ export function FloatingDock({ locale, brand, nav }: FloatingDockProps) {
   const links = [
     { href: `${base}/chapters`, label: nav.chapters },
     { href: `${base}/glossary`, label: nav.glossary },
+    { href: `${base}/constellation`, label: nav.constellation },
     { href: `${base}/author`, label: nav.authors },
     { href: `${base}/timeline`, label: nav.timeline },
+    { href: `${base}/saved`, label: nav.saved },
   ];
   const isActive = (href: string) => pathname.startsWith(href);
 
@@ -116,6 +133,7 @@ export function FloatingDock({ locale, brand, nav }: FloatingDockProps) {
         </nav>
 
         <div className="ml-auto flex items-center gap-2 md:ml-3">
+          <CommandPalette locale={locale} labels={search} />
           <a
             href={REPO_URL}
             target="_blank"

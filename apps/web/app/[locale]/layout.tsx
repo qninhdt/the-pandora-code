@@ -29,13 +29,31 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
     glossary: t("nav.glossary"),
     authors: t("nav.authors"),
     timeline: t("nav.timeline"),
+    constellation: t("nav.constellation"),
+    saved: t("engagement.saved"),
+  };
+
+  const searchLabels = {
+    trigger: t("search.trigger"),
+    placeholder: t("search.placeholder"),
+    title: t("search.title"),
+    empty: t("search.empty"),
+    hint: t("search.hint"),
+    groupChapter: t("search.groupChapter"),
+    groupGlossary: t("search.groupGlossary"),
+    groupTopic: t("search.groupTopic"),
   };
 
   return (
     <NextIntlClientProvider locale={locale as Locale} messages={messages}>
       <TooltipProvider delayDuration={150}>
         <AtmosphereProvider />
-        <FloatingDock locale={locale as Locale} brand={t("site.name")} nav={dockNav} />
+        <FloatingDock
+          locale={locale as Locale}
+          brand={t("site.name")}
+          nav={dockNav}
+          search={searchLabels}
+        />
         <div>
           {children}
           <SiteFooter

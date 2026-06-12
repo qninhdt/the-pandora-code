@@ -1,4 +1,5 @@
 import { ChaptersLibrary } from "@/components/chapters/chapters-library";
+import { ContinueReading } from "@/components/engagement/continue-reading";
 import { type Locale, isLocale } from "@/i18n/config";
 import { listPublishedChapters } from "@/lib/content/loader/chapter-loader";
 import { getChapterCoverImage } from "@/lib/content/loader/cover-image";
@@ -63,25 +64,33 @@ export default async function ChaptersPage({ params }: ChaptersPageProps) {
   }));
 
   return (
-    <ChaptersLibrary
-      locale={loc}
-      title={t("page.chapters.title")}
-      subtitle={t("page.chapters.subtitle")}
-      parts={parts}
-      totals={{ done, total, totalReadingMin }}
-      labels={{
-        search: t("page.chapters.searchPlaceholder"),
-        allParts: t("page.chapters.allParts"),
-        statusAll: t("page.chapters.statusAll"),
-        statusPublished: t("page.chapters.statusPublished"),
-        statusComing: t("page.chapters.statusComing"),
-        jumpTo: t("page.chapters.jumpTo"),
-        comingSoon: t("page.chapters.comingSoon"),
-        statsDone: t("page.chapters.statsDone", { done, total }),
-        readingTotal: t("page.chapters.readingTotal", { minutes: totalReadingMin }),
-        noMatches: t("page.chapters.noMatches"),
-        readingUnit: loc === "vi" ? "phút" : "min",
-      }}
-    />
+    <>
+      <div className="pt-24">
+        <ContinueReading
+          locale={loc}
+          labels={{ heading: t("engagement.continueHeading"), resume: t("engagement.resume") }}
+        />
+      </div>
+      <ChaptersLibrary
+        locale={loc}
+        title={t("page.chapters.title")}
+        subtitle={t("page.chapters.subtitle")}
+        parts={parts}
+        totals={{ done, total, totalReadingMin }}
+        labels={{
+          search: t("page.chapters.searchPlaceholder"),
+          allParts: t("page.chapters.allParts"),
+          statusAll: t("page.chapters.statusAll"),
+          statusPublished: t("page.chapters.statusPublished"),
+          statusComing: t("page.chapters.statusComing"),
+          jumpTo: t("page.chapters.jumpTo"),
+          comingSoon: t("page.chapters.comingSoon"),
+          statsDone: t("page.chapters.statsDone", { done, total }),
+          readingTotal: t("page.chapters.readingTotal", { minutes: totalReadingMin }),
+          noMatches: t("page.chapters.noMatches"),
+          readingUnit: loc === "vi" ? "phút" : "min",
+        }}
+      />
+    </>
   );
 }

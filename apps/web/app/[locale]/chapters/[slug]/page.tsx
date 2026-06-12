@@ -3,6 +3,7 @@ import { AnatomyPlate } from "@/components/content/anatomy-plate";
 import { DiagramFigure } from "@/components/content/diagram-figure";
 import { Figure } from "@/components/content/figure";
 import { FigureGrid } from "@/components/content/figure-grid";
+import { BookmarkButton } from "@/components/engagement/bookmark-button";
 import { GlossaryTerm } from "@/components/glossary/glossary-term";
 import { ChapterBackground } from "@/components/reading/chapter-background";
 import { ChapterHero } from "@/components/reading/chapter-hero";
@@ -12,7 +13,7 @@ import type { RelatedChapterCard } from "@/components/reading/related-chapters";
 import { type RelatedGlossaryChip, RelatedMaterials } from "@/components/reading/related-materials";
 import { TableOfContents, type TocHeading } from "@/components/reading/table-of-contents";
 import { SourceList } from "@/components/sources/source-list";
-import { type Locale, isLocale } from "@/i18n/config";
+import { type Locale, isLocale, locales } from "@/i18n/config";
 import { getChapterBackgroundImage } from "@/lib/content/loader/chapter-background";
 import { getChapter, listChapterSlugs } from "@/lib/content/loader/chapter-loader";
 import { getChapterCoverImage } from "@/lib/content/loader/cover-image";
@@ -20,6 +21,8 @@ import { getGlossaryCoverImage } from "@/lib/content/loader/glossary-cover";
 import { listGlossaryTerms } from "@/lib/content/loader/glossary-loader";
 import { getChapterMDX } from "@/lib/content/render/mdx-source";
 import { getMDXComponents } from "@/lib/mdx-components";
+import { buildPageMetadata, clampDescription } from "@/lib/seo/page-metadata";
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { type ComponentProps, type ReactNode, isValidElement } from "react";
@@ -31,6 +34,23 @@ interface ChapterPageProps {
 export function generateStaticParams() {
   const slugs = listChapterSlugs();
   return ["vi", "en"].flatMap((locale) => slugs.map((slug) => ({ locale, slug })));
+}
+
+export async function generateMetadata({ params }: ChapterPageProps): Promise<Metadata> {
+  const { locale, slug } = await params;
+  if (!isLocale(locale)) return {};
+  const loc = locale as Locale;
+  const chapter = getChapter(slug, loc);
+  if (!chapter) return {};
+  // hreflang only for locales whose MDX actually exists.
+  const available = locales.filter((l) => getChapter(slug, l) !== null);
+  return buildPageMetadata({
+    locale: loc,
+    path: `/chapters/${slug}`,
+    title: chapter.title,
+    description: clampDescription(chapter.hook),
+    availableLocales: available,
+  });
 }
 
 // Map fumadocs TOC items to the reader's TocHeading shape (depth 2–3 only).
@@ -149,7 +169,7 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
     <>
       {backgroundImage && <ChapterBackground src={backgroundImage} />}
       <ChapterShell
-        progress={<ReadingProgress />}
+        progress={<ReadingProgress entry={{ slug, locale: loc, title: chapter.title }} />}
         hero={
           <ChapterHero
             locale={loc}
@@ -160,6 +180,15 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
             readingTimeMin={chapter.meta.reading_time_min}
             classification={cls}
             imageSrc={coverImage}
+            actions={
+              <BookmarkButton
+                entry={{ type: "chapter", slug, locale: loc, title: chapter.title }}
+                labels={{
+                  add: t("engagement.bookmarkAdd"),
+                  remove: t("engagement.bookmarkRemove"),
+                }}
+              />
+            }
           />
         }
         toc={<TableOfContents headings={headings} label={t("chapter.tableOfContents")} />}
