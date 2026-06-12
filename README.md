@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/chapters-24-36c5d9?style=for-the-badge&labelColor=0e1320" />
+  <img src="https://img.shields.io/badge/chapters-50-36c5d9?style=for-the-badge&labelColor=0e1320" />
   <img src="https://img.shields.io/badge/glossary-250%2B_terms-2bd4a8?style=for-the-badge&labelColor=0e1320" />
   <img src="https://img.shields.io/badge/languages-EN_%7C_VI-ff5da8?style=for-the-badge&labelColor=0e1320" />
   <img src="https://img.shields.io/badge/license-MIT-ffb454?style=for-the-badge&labelColor=0e1320" />
@@ -44,13 +44,13 @@ Every chapter begins with something strange about the world of Pandora — float
 
 ## 🗺️ The Journey
 
-The Pandora Code unfolds across **four great expeditions**, each peeling back a deeper layer of the moon-world:
+The Pandora Code unfolds across **nine great expeditions**, each peeling back a deeper layer of the moon-world:
 
 ### Prologue
 
 | # | Chapter | |
 |:-:|:--------|:-|
-| 0.1 | **Reading Pandora as a specimen** | *How to read an alien world like a scientist* |
+| 0.1 | **Reading Pandora as a specimen** | *Read Pandora as a specimen, not a plot → the Canon / Inference / Speculation / Real-science tier system* |
 
 ### Part I · The World
 
@@ -58,12 +58,12 @@ The Pandora Code unfolds across **four great expeditions**, each peeling back a 
 
 | # | Chapter | |
 |:-:|:--------|:-|
-| 1.1 | **Where is Pandora** | Pandora's real address in Alpha Centauri |
-| 1.2 | **Time on Pandora** | Orbital mechanics and how days work on a moon |
-| 1.3 | **What's in the air** | The atmosphere you can't quite breathe |
-| 1.4 | **Floating mountains and the superconductor** | Unobtanium, Meissner effect, and quantum locking |
-| 1.5 | **Continents, oceans, climate** | Planetary geography and weather systems |
-| 1.6 | **Pandora's deep time** | Geological history without a rock hammer |
+| 1.1 | **Where is Pandora** | Alpha Centauri A, Polyphemus, habitable zones, exoplanet detection |
+| 1.2 | **Time on Pandora** | Tidal locking, libration, orbital mechanics |
+| 1.3 | **What's in the air** | Atmospheric chemistry, biosignatures, O₂/CH₄ disequilibrium |
+| 1.4 | **Floating mountains and the superconductor** | Cooper pairs, Meissner effect, flux pinning |
+| 1.5 | **Continents, oceans, climate** | Comparative climatology, Hadley cells, biomes |
+| 1.6 | **Pandora's deep time** | Geochronology, radiometric dating, planetary evolution |
 
 ### Part II · The Living World
 
@@ -71,36 +71,98 @@ The Pandora Code unfolds across **four great expeditions**, each peeling back a 
 
 | # | Chapter | |
 |:-:|:--------|:-|
-| 2.1 | **Six limbs and the bilateral lattice** | The body plan that defines Pandoran life |
-| 2.2 | **Convergent but not quite** | When alien evolution rhymes with Earth's |
-| 2.3 | **The breathing fans** | Why Pandoran creatures breathe through their ribs |
-| 2.4 | **When glow is the norm** | Bioluminescence as the default, not the exception |
-| 2.5 | **Pandoran tree of life** | Building a phylogeny without DNA |
-| 2.6 | **Direhorse and banshee up close** | Biomechanics of impossible animals |
-| 2.7 | **The hunters and the hunted** | Predator-prey dynamics and Lotka-Volterra |
-| 2.8 | **What is Pandoran life made of** | Carbon, water, chirality, and frozen accidents |
-| 2.9 | **The Pandoran umwelt** | Three species, one forest, three different worlds |
+| 2.1 | **Six limbs and the bilateral lattice** | Body-plan evolution, Hox genes |
+| 2.2 | **Convergent but not quite** | Convergent evolution, niche partitioning |
+| 2.3 | **The breathing fans** | Comparative respiratory biology |
+| 2.4 | **When glow is the norm** | Bioluminescence chemistry, why glow evolves |
+| 2.5 | **Pandoran tree of life** | Phylogenetics, cladograms, parsimony |
+| 2.6 | **Direhorse and banshee up close** | Allometric scaling, biomechanics |
+| 2.7 | **The hunters and the hunted** | Predator-prey dynamics, Lotka-Volterra |
+| 2.8 | **What is Pandoran life made of** | Astrobiology, alternative biochemistries |
+| 2.9 | **The Pandoran umwelt** | Sensory ecology, the Umwelt concept |
 
-### Part III · Eywa
+### Part III · The Living Network / Eywa
 
 > *What is Eywa, and could a living planet think?* — Network science, mycorrhizal biology, information theory
 
 | # | Chapter | |
 |:-:|:--------|:-|
-| 3.1 | **What Eywa is** | A planetary network that just *decided* something |
-| 3.2 | **The wood-wide web** | 400-million-year-old fungal internet under your feet |
-| 3.3 | **The bandwidth of a planet** | Shannon's limit on a neural cable called tsaheylu |
-| 3.4 | **Why burning Eywa doesn't kill it** | Percolation theory and network resilience |
-| 3.5 | **A real living planet** | Gaia hypothesis — theology or thermodynamics? |
+| 3.1 | **What Eywa is** | Distributed cognition, the network/mind boundary |
+| 3.2 | **The wood-wide web** | Mycorrhizal networks (Simard, Kiers) |
+| 3.3 | **The bandwidth of a planet** | Information theory, Shannon limits |
+| 3.4 | **Why burning Eywa doesn't kill it** | Network resilience, percolation theory |
+| 3.5 | **A real living planet** | The Gaia hypothesis revisited |
 
 ### Part IV · Forests, Mountains & Skies
 
-> *How do the impossible things work?* — Aerodynamics, scaling laws, superconductivity
+> *How do the impossible things work?* — Aerodynamics, scaling laws, forest ecology
 
 | # | Chapter | |
 |:-:|:--------|:-|
-| 4.1 | **The forest as a cathedral** | Vertical stratification of a 300-metre Hometree |
-| 4.2 | **Why banshees get to be big** | The physics wall that Pandora's sky lets you break |
+| 4.1 | **The forest as a cathedral** | Forest stratification, niche partitioning |
+| 4.2 | **Why banshees get to be big** | Flight biomechanics, Reynolds number, wing loading |
+| 4.3 | **The night ecology** | Circadian biology under non-Earth light |
+| 4.4 | **Hometree as keystone** | Keystone / foundation species |
+| 4.5 | **Pandora's smallest things** | Soil ecology, host-pathogen co-evolution, Red Queen |
+
+### Part V · Sea & Reefs
+
+> *What lurks beneath the waves?* — Ocean science, cetacean cognition, reef ecology
+
+| # | Chapter | |
+|:-:|:--------|:-|
+| 5.1 | **Pandora's ocean** | Ocean stratification, upwelling |
+| 5.2 | **Tulkun, not quite whales** | Cetacean cognition, cultural transmission |
+| 5.3 | **The reef as substrate** | Coral-reef ecology, symbiosis, zooxanthellae |
+| 5.4 | **Bodies built for water** | Aquatic adaptation, Bajau divers, recent human evolution |
+| 5.5 | **Amrita and the price of a hunt** | Bioprospecting, biopiracy, the Nagoya Protocol |
+
+### Part VI · The Na'vi
+
+> *What does it mean to be ten feet tall, blue, and wired into a planet?* — Anatomy, linguistics, cultural ecology
+
+| # | Chapter | |
+|:-:|:--------|:-|
+| 6.1 | **The Na'vi body** | Allometric scaling, thermoregulation, square-cube law |
+| 6.2 | **The queue as interface** | Neural interfaces, BCI |
+| 6.3 | **Na'vi language as a window** | Linguistic relativity, typology |
+| 6.4 | **One people, many ecologies** | Cultural ecology, niche construction |
+| 6.5 | **What the elders know** | Traditional Ecological Knowledge (TEK) |
+| 6.6 | **I see you** | Embodied cognition, Gibson's affordances |
+
+### Part VII · The Human Machine / RDA Tech
+
+> *How do you cross four light-years and survive?* — Propulsion, cryogenics, mining, brain emulation
+
+| # | Chapter | |
+|:-:|:--------|:-|
+| 7.1 | **Six years each way** | Interstellar propulsion, antimatter, 0.7c |
+| 7.2 | **Sleeping through the stars** | Induced torpor, therapeutic hypothermia |
+| 7.3 | **The avatar body** | BCI, telepresence, chimerism |
+| 7.4 | **What extraction costs** | Mining engineering, EROI |
+| 7.5 | **What the mask buys you** | Closed-loop ECLSS |
+| 7.6 | **Old minds in new bodies** | Brain emulation, continuity of identity |
+
+### Part VIII · Contact, Conflict, Ethics
+
+> *What happens when two worlds collide?* — Anthropology, ethics, postcolonial science
+
+| # | Chapter | |
+|:-:|:--------|:-|
+| 8.1 | **First contact as a pattern** | Anthropology of contact (Sentinelese, Yanomami) |
+| 8.2 | **Whose body, whose consent** | Research ethics, indigenous data sovereignty |
+| 8.3 | **No shared grammar** | The commensurability problem |
+| 8.4 | **Why the stronger side loses** | Asymmetric warfare, insurgency theory |
+| 8.5 | **Pandora as mirror** | Postcolonial science studies, transitional justice |
+
+### Part IX · Open Questions
+
+> *What don't we know yet?* — The edges of the map
+
+| # | Chapter | |
+|:-:|:--------|:-|
+| 9.1 | **Pandora's open file** | The structure of an open scientific question |
+| 9.2 | **What Pandora helps us see** | Counterfactual reasoning, Drake equation, Fermi paradox |
 
 <p align="center">
   <img src="apps/web/public/images/pages/codex-field.png" alt="Woodsprites drifting through Pandora's bioluminescent forest — seeds of Eywa" width="720" />
@@ -110,7 +172,7 @@ The Pandora Code unfolds across **four great expeditions**, each peeling back a 
 
 ## ✨ What You'll Find Inside
 
-- 🔬 **24 chapters** of deep science dressed in alien wonder — from orbital mechanics to consciousness theory
+- 🔬 **50 chapters** of deep science dressed in alien wonder — from orbital mechanics to consciousness theory
 - 📖 **Bilingual content** — every word in both English and Vietnamese
 - 🧬 **250+ glossary terms** — an interactive codex of real science, cross-linked and searchable
 - 🌌 **Original painterly illustrations** — speculative-biology field plates, not screenshots
