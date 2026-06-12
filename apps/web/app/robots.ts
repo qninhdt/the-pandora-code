@@ -1,8 +1,8 @@
+import { getSiteUrl } from "@/lib/seo/site-url";
 import type { MetadataRoute } from "next";
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://pandora.example";
-
 export default function robots(): MetadataRoute.Robots {
+  const base = getSiteUrl();
   return {
     rules: [
       {
@@ -11,6 +11,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/_design", "/_components", "/*/_design", "/*/_components"],
       },
     ],
-    sitemap: `${BASE}/sitemap.xml`,
+    sitemap: `${base}/sitemap.xml`,
   };
 }

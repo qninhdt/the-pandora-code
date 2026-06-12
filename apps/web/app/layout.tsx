@@ -1,9 +1,11 @@
 import { fontVariables } from "@/lib/fonts";
+import { getSiteUrl } from "@/lib/seo/site-url";
 import type { Metadata } from "next";
 import { getLocale } from "next-intl/server";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(getSiteUrl()),
   title: "The Pandora Code",
   description:
     "An interactive book decoding the world of Pandora through real science and storytelling.",
