@@ -270,7 +270,7 @@ The content, illustrations, and written chapters are original creative works. Th
   <br/><br/>
   <em>"Every chapter opens on something strange about the world<br/>and closes on a principle you can carry back to Earth."</em>
   <br/><br/>
-  <strong>Oel ngati kameie.</strong>
+  <strong>Oel ngati kameie.</strong> 🌿
   <br/>
   <sub>I See You.</sub>
 </p>
