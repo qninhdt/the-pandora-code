@@ -46,12 +46,61 @@ Every chapter begins with something strange about the world of Pandora — float
 
 The Pandora Code unfolds across **four great expeditions**, each peeling back a deeper layer of the moon-world:
 
-| Part | Title | The Question It Asks |
-|:----:|:------|:---------------------|
-| **I** | **The World** | *Where is Pandora, and what kind of place is it?* — Astronomy, geology, atmospheric science |
-| **II** | **The Creatures** | *Why does everything here have six limbs and glow?* — Evolutionary biology, biomechanics, biochemistry |
-| **III** | **The Network** | *What is Eywa, and could a living planet think?* — Network science, mycorrhizal biology, information theory |
-| **IV** | **The Physics of Wonder** | *How do the impossible things work?* — Aerodynamics, scaling laws, superconductivity |
+### Prologue
+
+| # | Chapter | |
+|:-:|:--------|:-|
+| 0.1 | **Reading Pandora as a specimen** | *How to read an alien world like a scientist* |
+
+### Part I · The World
+
+> *Where is Pandora, and what kind of place is it?* — Astronomy, geology, atmospheric science
+
+| # | Chapter | |
+|:-:|:--------|:-|
+| 1.1 | **Where is Pandora** | Pandora's real address in Alpha Centauri |
+| 1.2 | **Time on Pandora** | Orbital mechanics and how days work on a moon |
+| 1.3 | **What's in the air** | The atmosphere you can't quite breathe |
+| 1.4 | **Floating mountains and the superconductor** | Unobtanium, Meissner effect, and quantum locking |
+| 1.5 | **Continents, oceans, climate** | Planetary geography and weather systems |
+| 1.6 | **Pandora's deep time** | Geological history without a rock hammer |
+
+### Part II · The Living World
+
+> *Why does everything here have six limbs and glow?* — Evolutionary biology, biomechanics, biochemistry
+
+| # | Chapter | |
+|:-:|:--------|:-|
+| 2.1 | **Six limbs and the bilateral lattice** | The body plan that defines Pandoran life |
+| 2.2 | **Convergent but not quite** | When alien evolution rhymes with Earth's |
+| 2.3 | **The breathing fans** | Why Pandoran creatures breathe through their ribs |
+| 2.4 | **When glow is the norm** | Bioluminescence as the default, not the exception |
+| 2.5 | **Pandoran tree of life** | Building a phylogeny without DNA |
+| 2.6 | **Direhorse and banshee up close** | Biomechanics of impossible animals |
+| 2.7 | **The hunters and the hunted** | Predator-prey dynamics and Lotka-Volterra |
+| 2.8 | **What is Pandoran life made of** | Carbon, water, chirality, and frozen accidents |
+| 2.9 | **The Pandoran umwelt** | Three species, one forest, three different worlds |
+
+### Part III · Eywa
+
+> *What is Eywa, and could a living planet think?* — Network science, mycorrhizal biology, information theory
+
+| # | Chapter | |
+|:-:|:--------|:-|
+| 3.1 | **What Eywa is** | A planetary network that just *decided* something |
+| 3.2 | **The wood-wide web** | 400-million-year-old fungal internet under your feet |
+| 3.3 | **The bandwidth of a planet** | Shannon's limit on a neural cable called tsaheylu |
+| 3.4 | **Why burning Eywa doesn't kill it** | Percolation theory and network resilience |
+| 3.5 | **A real living planet** | Gaia hypothesis — theology or thermodynamics? |
+
+### Part IV · Forests, Mountains & Skies
+
+> *How do the impossible things work?* — Aerodynamics, scaling laws, superconductivity
+
+| # | Chapter | |
+|:-:|:--------|:-|
+| 4.1 | **The forest as a cathedral** | Vertical stratification of a 300-metre Hometree |
+| 4.2 | **Why banshees get to be big** | The physics wall that Pandora's sky lets you break |
 
 <p align="center">
   <img src="apps/web/public/images/pages/codex-field.png" alt="Woodsprites drifting through Pandora's bioluminescent forest — seeds of Eywa" width="720" />
