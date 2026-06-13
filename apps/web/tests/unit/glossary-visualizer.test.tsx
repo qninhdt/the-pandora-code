@@ -1,4 +1,5 @@
 import AlphaCentauri from "@/components/glossary/interactive/alpha-centauri";
+import Bioluminescence from "@/components/glossary/interactive/bioluminescence";
 import CountercurrentExchange from "@/components/glossary/interactive/countercurrent-exchange";
 import DirectImaging from "@/components/glossary/interactive/direct-imaging";
 import Exomoon from "@/components/glossary/interactive/exomoon";
@@ -68,6 +69,11 @@ describe("Glossary Components Direct Mount", () => {
   it("renders countercurrent-exchange simulator", () => {
     renderWithIntl(<CountercurrentExchange locale="en" />);
     expect(screen.getAllByText("Gill lamella: flip the blood")[0]).toBeInTheDocument();
+  });
+
+  it("renders bioluminescence simulator", () => {
+    renderWithIntl(<Bioluminescence locale="en" />);
+    expect(screen.getAllByText("The cold-light reaction")[0]).toBeInTheDocument();
   });
 
   it("returns null for unregistered terms in GlossaryVisualizer", () => {

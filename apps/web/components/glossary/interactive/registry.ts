@@ -10,6 +10,7 @@ export const GLOSSARY_VISUALIZATION_IDS = [
   "hox-genes",
   "niche-partitioning",
   "countercurrent-exchange",
+  "bioluminescence",
 ] as const;
 
 export type GlossaryVisualizationId = (typeof GLOSSARY_VISUALIZATION_IDS)[number];

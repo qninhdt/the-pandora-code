@@ -19,6 +19,7 @@ const GLOSSARY_VISUALIZATIONS: Record<
   "hox-genes": dynamic(() => import("./hox-genes"), { ssr: false }),
   "niche-partitioning": dynamic(() => import("./niche-partitioning"), { ssr: false }),
   "countercurrent-exchange": dynamic(() => import("./countercurrent-exchange"), { ssr: false }),
+  bioluminescence: dynamic(() => import("./bioluminescence"), { ssr: false }),
 };
 
 interface GlossaryVisualizerProps {
