@@ -1,3 +1,5 @@
+import { GLOSSARY_VISUALIZATION_IDS } from "@/components/glossary/interactive/registry";
+import { GlossaryVisualizer } from "@/components/glossary/interactive/visualizer";
 import { type Locale, isLocale, locales } from "@/i18n/config";
 import { getGlossaryCoverImage } from "@/lib/content/loader/glossary-cover";
 import { getGlossaryTerm, listGlossaryIds } from "@/lib/content/loader/glossary-loader";
@@ -41,10 +43,15 @@ export default async function GlossaryDetail({ params }: GlossaryDetailProps) {
   const entry = getGlossaryTerm(term, locale as Locale);
   if (!entry) notFound();
   const cover = getGlossaryCoverImage(term);
+  const hasVisualizer = (GLOSSARY_VISUALIZATION_IDS as readonly string[]).includes(term);
 
   return (
     <main className="mx-auto max-w-3xl px-6 pb-12 pt-32 space-y-6">
-      {cover && (
+      {hasVisualizer ? (
+        <div className="relative mb-2 w-full">
+          <GlossaryVisualizer term={term} locale={locale} />
+        </div>
+      ) : cover ? (
         <div className="relative mb-2 aspect-[16/9] w-full overflow-hidden rounded-2xl border border-[color:var(--border)]">
           <img src={cover} alt="" className="size-full object-cover" />
           <div
@@ -52,7 +59,7 @@ export default async function GlossaryDetail({ params }: GlossaryDetailProps) {
             style={{ background: "linear-gradient(to top, var(--background) 4%, transparent 55%)" }}
           />
         </div>
-      )}
+      ) : null}
       <p className="text-xs font-mono uppercase tracking-wide text-[color:var(--accent)]">
         {entry.category}
       </p>
