@@ -40,6 +40,51 @@
       "noteB": "Dựa trên ít niềm tin mù quáng hơn.",
       "noteTie": "Không thể phân định chỉ dựa vào sự tối giản."
     },
+    "shannonEntropy": {
+      "title": "Entropy Shannon",
+      "subtitle": "Độ bất định và lượng thông tin của đồng xu thiên lệch",
+      "probLabel": "Xác suất mặt Ngửa (p)",
+      "entropyLabel": "Entropy (H)",
+      "flipBtn": "Tung đồng xu",
+      "streamLabel": "Chuỗi kết quả",
+      "hint": "Ở p = 0.5, đồng xu hoàn toàn công bằng và độ bất định đạt cực đại tại 1.0 bit entropy mỗi lần tung. Ở p = 0.0 hoặc 1.0, kết quả hoàn toàn chắc chắn, mang lại 0 bit thông tin vì không có kiến thức mới nào được tạo ra."
+    },
+    "cohesionTension": {
+      "title": "Lực kéo - bám (Cohesion-Tension)",
+      "subtitle": "Sức căng của cột nước dưới lực kéo thoát hơi nước",
+      "sunLabel": "Tốc độ thoát hơi nước",
+      "tensionLabel": "Sức căng cột nước",
+      "stateLabel": "Trạng thái cột nước",
+      "stateStable": "Ổn định (Dòng chảy liên tục)",
+      "stateSnapped": "Đứt gãy (Hiện tượng Cavitation)",
+      "heightLabel": "Chiều cao cây",
+      "hint": "Cây không có bơm chủ động: lá thoát hơi nước để kéo các phân tử nước phía sau lên. Nắng gắt hoặc chiều cao quá lớn sẽ kéo căng cột nước. Vượt quá giới hạn, cột nước sẽ đứt gãy và dừng dòng chảy."
+    },
+    "dynamicSoaring": {
+      "title": "Lượn động (Dynamic Soaring)",
+      "subtitle": "Khai thác động năng từ gradient tốc độ gió",
+      "windGradient": "Tốc độ gió (gradient)",
+      "energyLabel": "Năng lượng thu được",
+      "altitudeLabel": "Độ cao",
+      "modeLabel": "Pha bay",
+      "phaseAscent": "Bay lên (thu năng lượng)",
+      "phaseDescent": "Lao xuống (tăng tốc độ)",
+      "hint": "Lượn động hoạt động bằng cách bay qua lại giữa các lớp gió có tốc độ khác nhau. Bằng cách bay lên lớp gió mạnh (thu năng lượng) và lao xuống sát mặt biển lặng gió (tăng tốc), cánh chim hấp thụ năng lượng gió để lượn vô tận mà không cần vỗ cánh."
+    },
+    "squareCubeLaw": {
+      "title": "Định luật bình phương - lập phương",
+      "subtitle": "Khối lượng tăng nhanh hơn diện tích khi phóng to",
+      "scaleSlider": "Tỉ lệ phóng to",
+      "heightLabel": "Hệ số chiều cao",
+      "areaLabel": "Diện tích bề mặt (x²)",
+      "volumeLabel": "Khối lượng/Thể tích (x³)",
+      "limitLabel": "Giới hạn ứng suất xương",
+      "statusLabel": "Trạng thái bộ xương",
+      "statusStable": "Ổn định",
+      "statusStrained": "Căng thẳng (Cần sự thích nghi của Na'vi)",
+      "statusCrushed": "Đổ vỡ (Xương người thường gãy)",
+      "hint": "Gấp đôi chiều cao, bạn có diện tích mặt cắt cơ/xương tăng gấp 4 nhưng khối lượng phải nâng đỡ tăng gấp 8. Ứng suất xương tăng tuyến tính theo kích thước. Đó là lý do người Na'vi có xương gia cố sợi carbon, và sinh vật khổng lồ không thể có tỷ lệ giống người."
+    },
     "shannonChannel": {
       "title": "Giới hạn kênh truyền của Shannon",
       "subtitle": "C = B · log₂(1 + S/N)",

@@ -23,6 +23,13 @@ export const GLOSSARY_VISUALIZATION_IDS = [
   "quantum-locking",
   "hadley-cell",
   "percolation-theory",
+  "integrated-information-theory",
+  "biological-market",
+  "shannon-entropy",
+  "daisyworld",
+  "cohesion-tension",
+  "dynamic-soaring",
+  "square-cube-law",
 ] as const;
 
 export type GlossaryVisualizationId = (typeof GLOSSARY_VISUALIZATION_IDS)[number];

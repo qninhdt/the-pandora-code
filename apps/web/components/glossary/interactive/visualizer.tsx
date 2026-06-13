@@ -27,11 +27,22 @@ const GLOSSARY_VISUALIZATIONS: Record<
   umwelt: dynamic(() => import("./umwelt"), { ssr: false }),
   "occams-razor": dynamic(() => import("./occams-razor"), { ssr: false }),
   "tidal-locking": dynamic(() => import("./tidal-locking"), { ssr: false }),
-  "atmospheric-disequilibrium": dynamic(() => import("./atmospheric-disequilibrium"), { ssr: false }),
+  "atmospheric-disequilibrium": dynamic(() => import("./atmospheric-disequilibrium"), {
+    ssr: false,
+  }),
   "half-life": dynamic(() => import("./half-life"), { ssr: false }),
   "quantum-locking": dynamic(() => import("./quantum-locking"), { ssr: false }),
   "hadley-cell": dynamic(() => import("./hadley-cell"), { ssr: false }),
   "percolation-theory": dynamic(() => import("./percolation-theory"), { ssr: false }),
+  "integrated-information-theory": dynamic(() => import("./integrated-information-theory"), {
+    ssr: false,
+  }),
+  "biological-market": dynamic(() => import("./biological-market"), { ssr: false }),
+  "shannon-entropy": dynamic(() => import("./shannon-entropy"), { ssr: false }),
+  daisyworld: dynamic(() => import("./daisyworld"), { ssr: false }),
+  "cohesion-tension": dynamic(() => import("./cohesion-tension"), { ssr: false }),
+  "dynamic-soaring": dynamic(() => import("./dynamic-soaring"), { ssr: false }),
+  "square-cube-law": dynamic(() => import("./square-cube-law"), { ssr: false }),
 };
 
 interface GlossaryVisualizerProps {

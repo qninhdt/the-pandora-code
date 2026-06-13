@@ -42,6 +42,51 @@
       "noteB": "Relies on fewer leaps of faith.",
       "noteTie": "Cannot distinguish based on simplicity alone."
     },
+    "shannonEntropy": {
+      "title": "Shannon Entropy",
+      "subtitle": "Uncertainty and information content of a biased coin flip",
+      "probLabel": "Probability of Heads (p)",
+      "entropyLabel": "Entropy (H)",
+      "flipBtn": "Flip Coin",
+      "streamLabel": "Outcome Stream",
+      "hint": "At p = 0.5, the coin is perfectly fair and unpredictability is maximized at 1.0 bit of entropy per flip. At p = 0.0 or 1.0, the outcome is completely certain, carrying 0 bits of information because you gain no new knowledge when it lands."
+    },
+    "cohesionTension": {
+      "title": "Cohesion-Tension",
+      "subtitle": "Water column tension under transpiration pull",
+      "sunLabel": "Transpiration Rate",
+      "tensionLabel": "Column Tension",
+      "stateLabel": "Column State",
+      "stateStable": "Stable (Continuous flow)",
+      "stateSnapped": "Snapped (Cavitation)",
+      "heightLabel": "Tree Height",
+      "hint": "Water has no pump: leaves evaporate water (transpiration), pulling the molecules behind them. High sun or excessive height stretches the water column. Exceed the threshold, and the column snaps, blocking flow."
+    },
+    "dynamicSoaring": {
+      "title": "Dynamic Soaring",
+      "subtitle": "Harvesting kinetic energy from wind gradients",
+      "windGradient": "Wind Speed (gradient)",
+      "energyLabel": "Energy Gain",
+      "altitudeLabel": "Altitude",
+      "modeLabel": "Flight Phase",
+      "phaseAscent": "Ascent (harvesting wind)",
+      "phaseDescent": "Descent (gaining speed)",
+      "hint": "Dynamic soaring works by flying between different wind speeds. By climbing into fast wind (ascent) and diving into slow wind near the sea (descent), a bird extracts energy from the wind shear, staying aloft indefinitely without flapping."
+    },
+    "squareCubeLaw": {
+      "title": "The Square-Cube Law",
+      "subtitle": "How mass outruns surface area during scaling",
+      "scaleSlider": "Linear Scale",
+      "heightLabel": "Height multiplier",
+      "areaLabel": "Surface Area (x²)",
+      "volumeLabel": "Mass/Volume (x³)",
+      "limitLabel": "Bone Stress Limit",
+      "statusLabel": "Skeletal Status",
+      "statusStable": "Stable",
+      "statusStrained": "Strained (Na'vi adaptation required)",
+      "statusCrushed": "Crushed (Earth bone fails)",
+      "hint": "Double the height, and you get 4x the muscle/bone cross-section but 8x the mass to support. Bone stress increases linearly with size. That is why Na'vi have carbon-fiber reinforced bones, and why giant terrestrial animals cannot exist with standard human proportions."
+    },
     "shannonChannel": {
       "title": "Shannon's channel, made playable",
       "subtitle": "C = B · log₂(1 + S/N)",
