@@ -28,6 +28,7 @@ import SquareCubeLaw from "@/components/glossary/interactive/square-cube-law";
 import TidalHeating from "@/components/glossary/interactive/tidal-heating";
 import TidalLocking from "@/components/glossary/interactive/tidal-locking";
 import TransitTimingVariation from "@/components/glossary/interactive/transit-timing-variation";
+import TransmissionSpectroscopy from "@/components/glossary/interactive/transmission-spectroscopy";
 import Umwelt from "@/components/glossary/interactive/umwelt";
 import { GlossaryVisualizer } from "@/components/glossary/interactive/visualizer";
 import { screen } from "@testing-library/react";
@@ -193,6 +194,11 @@ describe("Glossary Components Direct Mount", () => {
   it("renders square-cube-law visualizer", () => {
     renderWithIntl(<SquareCubeLaw locale="en" />);
     expect(screen.getAllByText("The Square-Cube Law")[0]).toBeInTheDocument();
+  });
+
+  it("renders transmission-spectroscopy visualizer", () => {
+    renderWithIntl(<TransmissionSpectroscopy locale="en" />);
+    expect(screen.getAllByText("Transmission Spectroscopy")[0]).toBeInTheDocument();
   });
 
   it("returns null for unregistered terms in GlossaryVisualizer", () => {
