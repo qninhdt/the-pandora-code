@@ -1,0 +1,42 @@
+# Bản dịch tối ưu - Section 07
+
+## Làm thế nào để tìm thấy một thế giới vô hình
+
+Chúng ta chưa từng chụp được bức ảnh nào của một thế giới cỡ Trái Đất quay quanh một ngôi sao khác. Gần như mọi điều ta biết về khoảng hơn bốn nghìn ngoại hành tinh hiện nay đều là thông qua con đường gián tiếp — bằng cách quan sát những gì hành tinh *tác động* lên ngôi sao mẹ mà ta nhìn thấy, chứ không phải là nhìn trực diện vào bản thân hành tinh ấy. Có bốn phương pháp chủ lực để làm điều đó, và dạo qua một vòng từng phương pháp sẽ cho bạn câu trả lời chính xác xem hệ thống của Pandora có thể (hoặc không thể) bị chúng ta "nhìn thấu" đến mức nào.
+
+<DetectionMethodScope
+  caption="Ba ô cửa nhìn về cùng một thế giới vô hình: chuyển đổi giữa các thẻ để xem cách thức vận hành của từng phương pháp. Vận tốc xuyên tâm đọc được độ lắc lư Doppler của ngôi sao; quá cảnh chộp được nhịp giảm sáng khi hành tinh quét ngang qua; chụp ảnh trực tiếp thì dùng mặt nạ che khuất ngôi sao để chụp lại chân dung của chính hành tinh đó. Nhấn nút phát để xem hành tinh quay trên quỹ đạo."
+/>
+
+Công thần đắc lực nhất chính là phương pháp <GlossaryTerm slug="radial-velocity">vận tốc xuyên tâm</GlossaryTerm> (radial velocity). Một hành tinh không đơn thuần bay quanh ngôi sao của nó; thay vào đó, cả hai cùng quay quanh khối tâm chung, khiến bản thân ngôi sao cũng vạch ra một quỹ đạo tròn nho nhỏ — nói cách khác, nó lắc lư. Dưới lăng kính của hiệu ứng Doppler, khi ngôi sao nghiêng về phía ta, ánh sáng của nó bị ép nén lại và chuyển sang quang phổ xanh; còn khi nó rời xa, ánh sáng bị kéo giãn ra và chuyển sang quang phổ đỏ. Đo lường sự chuyển màu nhịp nhàng đó qua quang phổ của ngôi sao, bạn sẽ chộp được một hành tinh chưa từng lộ diện, đồng thời nắm được chu kỳ quỹ đạo và khối lượng tối thiểu của nó. Lỗ hổng nằm ở ngay hai chữ *tối thiểu*: do bạn chỉ đo được độ lắc lư dọc theo đường ngắm của mình, bạn không thể phân biệt nổi đó là một hành tinh nhỏ bé nhìn từ cạnh rìa, hay là một hành tinh khổng lồ nhìn từ một góc nghiêng. Và bạn cũng mù tịt hoàn toàn về kích thước cũng như không khí trên đó.
+
+Phương pháp thứ hai là **quá cảnh** (transit): nếu quỹ đạo của hành tinh tình cờ nằm ngang tầm mắt ta, thì mỗi lần nó quét ngang qua mặt ngôi sao, nó sẽ che khuất một vệt sáng bé tí hon nhưng vẫn đủ để đo đạc được. Độ sâu của nhịp giảm sáng ấy cho ta biết kích thước của hành tinh so với ngôi sao mẹ; còn chu kỳ giảm sáng sẽ tiết lộ thời gian nó hoàn thành một vòng quỹ đạo. Ghép nối kết quả quá cảnh với dữ liệu vận tốc xuyên tâm, sự mơ hồ sẽ lập tức bị triệt tiêu — giờ đây bạn nắm trong tay cả khối lượng thực *và* kích thước thực, từ đó suy ra mật độ vật chất, giúp bạn tự tin phán đoán xem mình đang nhìn vào một quả bóng bằng đá, bằng băng hay bằng khí. Cái giá phải trả là yếu tố hình học: chỉ một tỷ lệ cực nhỏ các hệ hành tinh chịu xếp thẳng hàng với tầm nhìn của Trái Đất, thế nên phương pháp quá cảnh chỉ tìm ra được nhiều hành tinh khi nó quét cùng lúc vô số ngôi sao dồn dập.
+
+<Chart
+  kind="line"
+  xKey="t"
+  xLabel="Thời gian tương đối"
+  yLabel="Độ sáng tương đối (%)"
+  series={[{ key: "b", label: "Độ sáng ngôi sao", tone: "cyan" }]}
+  data={[
+    { t: "0", b: 100 },
+    { t: "1", b: 100 },
+    { t: "2", b: 100 },
+    { t: "2.5", b: 99.1 },
+    { t: "3", b: 99.0 },
+    { t: "4", b: 99.0 },
+    { t: "5", b: 99.0 },
+    { t: "5.5", b: 99.1 },
+    { t: "6", b: 100 },
+    { t: "7", b: 100 }
+  ]}
+  caption="Một đợt quá cảnh: khi hành tinh quét ngang qua mặt ngôi sao, độ sáng của sao sẽ tụt xuống một phần nhỏ phản ánh đúng tỷ lệ kích thước hành tinh. Đọc được độ sâu của nhịp giảm sáng ấy là bạn đã có thể đo đạc một thế giới vô hình."
+/>
+
+Cách thứ ba là con đường gian truân nhất nhưng cũng mang lại thành quả trực diện nhất: <GlossaryTerm slug="direct-imaging">chụp ảnh trực tiếp</GlossaryTerm> (direct imaging) — tức là thực sự chộp lại ánh sáng tỏa ra từ chính hành tinh ấy, bằng cách sử dụng một chiếc mặt nạ được chế tác cực kỳ tinh vi gọi là nhật hoa kế (coronagraph), hoặc một tấm chắn sao (starshade) bay tự do, để cản lại ánh sáng chói lóa từ ngôi sao mẹ. Một khi phương pháp này phát huy tác dụng, nó trở thành chìa khóa vạn năng, bởi ánh sáng của hành tinh có thể được phân tách qua lăng kính quang phổ để dò tìm những dấu vân tay đặc trưng của bầu khí quyển. Nhưng độ tương phản lại là một thử thách tàn nhẫn: một thế giới cỡ Trái Đất mờ nhạt hơn ngôi sao của nó tới khoảng mười tỷ lần, lại còn nằm sát sàn sạt ngay bên cạnh. Và một hệ sao *đôi* rực rỡ như Alpha Centauri lại càng đẩy độ khó lên mức không tưởng, khi thứ ánh sáng đi lạc từ ngôi sao thứ hai sẽ tràn qua trường nhìn, nhấn chìm khu vực tĩnh mịch mà bạn đang cố gắng làm tối.
+
+Cách thứ tư, trắc lượng thiên thể (astrometry), truy tìm độ lắc lư của ngôi sao thông qua những chuyển động xê dịch li ti trên bầu trời thay vì tìm kiếm dải chuyển màu quang phổ. Phương pháp này có thể giúp ta chốt hạ mức khối lượng thực mà phép đo vận tốc xuyên tâm đành bó tay — nhưng nó lại đòi hỏi độ chính xác tột độ mà công nghệ của chúng ta chỉ mới mon men chạm đến ngưỡng cửa. (Còn một phương pháp thứ năm, thấu kính vi hấp dẫn, có thể chộp được những thế giới xa xôi trong một khoảnh khắc trùng trục hiếm hoi chẳng bao giờ lặp lại; nghe thì rất tuyệt để lập bản đồ tổng thể, nhưng lại hoàn toàn vô dụng nếu bạn muốn theo dõi cụ thể một ngôi sao lân cận nào đó.)
+
+<Callout variant="note" title="Mỗi phương pháp đại diện cho một mảng ghép">
+Chẳng có kỹ thuật đơn lẻ nào vẽ nên được trọn vẹn một thế giới. Vận tốc xuyên tâm vẽ nên quỹ đạo và mức sàn khối lượng. Quá cảnh cung cấp kích thước — và nếu ghép chung với vận tốc xuyên tâm, ta sẽ có mật độ vật chất. Chụp ảnh trực tiếp cho ta nguồn ánh sáng để bóc tách lớp khí quyển. Còn trắc lượng thiên thể sẽ chốt hạ mức khối lượng thực. Bức chân dung của bất kỳ hành tinh nào cũng là sản phẩm nhào nặn từ nhiều phương pháp, phương pháp này lấp đầy những khoảng trống mà phương pháp kia bất lực. Hãy ghi nhớ điều đó khi đọc tiếp phần sau, bởi nó sẽ cho bạn thấy chính xác bao nhiêu phần trong hệ thống của Pandora có thể — và không thể — được chúng ta trục vớt khỏi bóng tối vô tận.
+</Callout>

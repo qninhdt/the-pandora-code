@@ -1,0 +1,52 @@
+# Bản dịch tối ưu - Section 03
+
+## Nơi một thế giới được phép ấm áp
+
+Việc hành tinh chia sọc kia ngự trị ở vị trí "xấp xỉ khoảng cách từ Trái Đất đến Mặt Trời" hoàn toàn không phải là chi tiết tô vẽ cho đẹp. Đó là dữ kiện quan trọng bậc nhất quyết định xem Pandora có thể tồn tại được hay không, và giới thiên văn có hẳn một thuật ngữ dành cho vị trí này: <GlossaryTerm slug="habitable-zone">vùng ở được</GlossaryTerm> (habitable zone).
+
+Ý tưởng này đơn giản đến ngỡ ngàng, nhưng đào sâu vào lại thấy không hề đơn giản. Một ngôi sao tỏa ra nhiệt lượng. Càng ở gần, sức nóng càng dữ dội đủ để đun cạn kiệt mọi đại dương; còn càng trôi dạt ra xa, nhiệt lượng lại quá yếu ớt, chẳng thể ngăn nổi nước đóng băng vĩnh cửu. Nằm lọt thỏm giữa hai thái cực ấy là một dải không gian — các nhà thiên văn học thường miễn cưỡng mượn câu chuyện cổ tích "Goldilocks" để gọi tên vùng không gian có "điều kiện vừa đủ" này — nơi một thế giới sở hữu bầu khí quyển phù hợp có thể duy trì nước ở trạng thái lỏng trên bề mặt. Nước lỏng là điều kiện bắt buộc duy nhất mà ta biết để nuôi dưỡng sự sống, vậy nên vùng ở được chính là màng lọc đầu tiên mà bất kỳ ai cũng phải dò qua khi tự hỏi liệu một nơi nào đó có thể tồn tại mầm sống hay không.
+
+Khoảng cách của dải không gian này phụ thuộc vào ngôi sao. Ánh sáng lan tỏa trong không gian sẽ nhạt dần theo bình phương khoảng cách: đi xa gấp đôi, mỗi tấc đất chỉ còn nhận được một phần tư lượng ánh sáng. Do đó, một ngôi sao rực rỡ sẽ đẩy dải ấm áp này ra rất xa, còn một ngôi sao mờ nhạt sẽ kéo nó lại gần. Dải ấm áp của Mặt Trời chúng ta ôm trọn lấy quỹ đạo Trái Đất. Trong khi đó, Alpha Centauri A lại sáng hơn Mặt Trời đôi chút — lớn hơn một chút, rực rỡ hơn một chút, dù vẫn cùng bản chất là một ngôi sao lùn vàng — nên dải ấm áp của nó bị lùi ra xa hơn của chúng ta một tẹo. Hãy đặt một hành tinh ở vị trí cách Alpha Centauri A nhỉnh hơn một khoảng cách Trái Đất đôi chút, và bạn đã ném nó vào đúng vùng ôn đới. Đó cũng chính xác là nơi chính sử đặt Polyphemus.
+
+<DiagramFigure
+  src="/images/chapters/where-is-pandora/fig-03-habitable-band.webp"
+  labels={[
+    { x: 47, y: 44, side: "left", label: "Gần sao thì bỏng rát", note: "quá gần ngôi sao, đại dương sôi sùng sục và bốc hơi" },
+    { x: 73, y: 58, side: "right", label: "Dải không gian ôn đới", note: "nơi Polyphemus quay quanh — nước có thể duy trì trạng thái lỏng" },
+    { x: 14, y: 20, side: "right", label: "Xa sao thì buốt giá", note: "vượt khỏi dải ôn đới, không gian lạnh lẽo tột cùng" }
+  ]}
+  alt="Một ngôi sao màu vàng được bao quanh bởi dải không gian ôn đới ấm áp; một hành tinh khí khổng lồ chia sọc cùng mặt trăng nhỏ bé của nó đang đắm mình trong quầng sáng ấy, với vùng không gian màu cam bỏng rát nằm gần ngôi sao hơn và vùng không gian màu xanh buốt giá nằm tít phía xa."
+  figNo="03"
+  caption="Dải ôn đới quanh một ngôi sao giống Mặt Trời: gần thì bỏng rát; xa thì đóng băng; chen giữa hai vùng này là một vành đai hẹp nơi hành tinh có thể giữ nước ở dạng lỏng. Một ngôi sao sáng hơn Mặt Trời đôi chút sẽ đẩy vành đai đó lùi ra xa hơn một tẹo — xấp xỉ vị trí mà Polyphemus xoay quanh."
+  tier="real_science"
+/>
+
+<Chart
+  kind="area"
+  xKey="d"
+  xLabel="Khoảng cách tới ngôi sao (Đơn vị thiên văn - AU)"
+  yLabel="Ánh sáng sao tương đối (Trái Đất = 1)"
+  series={[{ key: "flux", label: "Lượng ánh sáng chiếu tới hành tinh (Trái Đất = 1)", tone: "amber" }]}
+  data={[
+    { d: "0.4", flux: 6.2 },
+    { d: "0.7", flux: 2.0 },
+    { d: "1.0", flux: 1.0 },
+    { d: "1.2", flux: 0.69 },
+    { d: "1.5", flux: 0.44 },
+    { d: "2.0", flux: 0.25 },
+    { d: "3.0", flux: 0.11 }
+  ]}
+  caption="Vì sao khoảng cách lại quyết định tất cả: lượng ánh sáng sao mà một thế giới hấp thụ sẽ giảm dần theo bình phương khoảng cách của nó tới ngôi sao. Dải ôn đới — ước chừng đoạn mà đường cong đi ngang qua các giá trị tương đương với Trái Đất — nằm lùi ra một chút so với khoảng cách một Trái Đất đối với một ngôi sao sáng hơn Mặt Trời đôi phần."
+/>
+
+<HabitableZoneExplorer
+  caption="Hãy tự mình trải nghiệm: tăng độ sáng của ngôi sao và dải ôn đới sẽ trượt ra ngoài (tỷ lệ với căn bậc hai của độ sáng); giảm độ sáng và dải này sẽ co lại gần. Đặt hành tinh quá gần, đại dương sẽ sôi sùng sục; đặt quá xa, chúng sẽ hóa băng. Với độ sáng nhỉnh hơn Mặt Trời một chút, Alpha Centauri A dịch chuyển dải-vừa-đủ này lùi ra xa hơn khoảng cách Trái Đất một tẹo — trúng phóc vị trí mà nguyên tác đặt Polyphemus."
+/>
+
+Một phiên bản cẩn trọng hơn của lý thuyết này, do James Kasting dày công nghiên cứu và sau này được Ravi Kopparapu tinh chỉnh sắc bén hơn, không miêu tả vùng ở được bằng một vạch ranh giới đơn lẻ mà bằng một loạt các mép rìa, mỗi mép đại diện cho một kịch bản diệt vong khác nhau của khí hậu. Nếu rúc vào quá gần, hơi nước — bản thân nó cũng là một loại khí nhà kính — sẽ tích tụ trong không khí nhanh hơn mức hành tinh có thể tản nhiệt, cho đến khi mọi đại dương đều bị đun cạn kiệt trong một quá trình nhà kính mất kiểm soát (runaway greenhouse) mà chẳng có bầu khí quyển nào ngăn cản nổi. Còn nếu trôi dạt quá xa, thì dẫu có đắp một tấm chăn carbon dioxide dày cộm cũng chẳng thể níu giữ nổi hơi ấm; càng đắp thêm bao nhiêu thì nó lại càng đóng băng thành mây bấy nhiêu, rồi hắt ngược toàn bộ ánh sáng sao trở lại không gian. Lọt giữa hai kịch bản thất bại thảm hại đó chính là dải không gian mang cơ hội sống sót.
+
+<WhatThisMeans title="Bộ điều nhiệt ẩn dưới dải không gian lý tưởng">
+Việc một thế giới duy trì được sự ổn định *bên trong* dải không gian này suốt hàng tỷ năm không hề nhờ vào may mắn — đó là nhờ một hệ thống điều nhiệt hành tinh hoạt động chậm rãi, mang tên chu trình carbonat–silicat (carbonate–silicate cycle). Carbon dioxide hòa tan vào mưa, phong hóa đất đá, cuốn trôi ra biển dưới dạng carbonat, bám theo các mảng kiến tạo lặn sâu xuống lớp manti, rồi lại tuôn trào ra ngoài qua miệng núi lửa. Khi hành tinh nóng lên, quá trình phong hóa diễn ra nhanh hơn, kéo CO₂ xuống lòng đất và làm vạn vật nguội bớt; khi hành tinh lạnh đi, quá trình phong hóa ngưng trệ, tạo điều kiện cho CO₂ từ núi lửa tích tụ trở lại và làm ấm bầu không khí. Đó là một bộ điều nhiệt làm bằng đá và mưa, và là lý do cốt lõi giúp Trái Đất duy trì được biển hồ dạng lỏng suốt bốn tỷ năm qua. Một thế giới không chỉ cần đúng khoảng cách mà còn cần một bộ điều nhiệt trơn tru để *trụ lại* trong dải ôn đới — đó là lý do vì sao hoạt động kiến tạo và bầu khí quyển lại mang tầm quan trọng ngang ngửa với quỹ đạo.
+</WhatThisMeans>
+
+Đến đây, tương lai của Pandora nghe chừng vẫn rất khả quan. Nhưng từ nãy đến giờ tôi đang âm thầm nói dối bạn bằng cách giấu nhẹm đi sự thật, bởi tôi chỉ mới miêu tả một hệ thống có một ngôi sao đơn lẻ. Trong khi Alpha Centauri lại có đến ba. Và ngay khoảnh khắc bạn thêm thắt mặt trời thứ hai vào bức tranh, câu hỏi về nơi cư ngụ của một hành tinh sẽ không còn đơn thuần xoay quanh chuyện nhiệt độ nữa, mà chuyển thành bài toán xem thế giới ấy liệu có *trụ nổi ở đó* mà không bị văng tuột vào màn đêm tăm tối hay không.

@@ -1,0 +1,32 @@
+## Nơi điện trở đi vào cõi chết
+
+Vào năm 1911, nhà vật lý người Hà Lan Heike Kamerlingh Onnes sở hữu một thứ gần như không ai khác trên Trái Đất có được: khả năng làm lạnh vạn vật đến mức cực độ. Ông đã hóa lỏng được heli, thứ chỉ sôi ở khoảng bốn độ trên độ không tuyệt đối, và ông đang dùng nó để đi tìm lời giải cho một câu hỏi đơn giản — điều gì sẽ xảy ra với điện trở của một kim loại khi ta làm lạnh nó đến tận cùng của thang nhiệt độ?
+
+Người ta vốn đinh ninh câu trả lời là *nó sẽ giảm dần đi một cách êm ái*. Các electron mang dòng điện đi qua kim loại bằng cách trôi qua một mạng tinh thể nguyên tử. Tại đó, chúng liên tục va đập vào những rung động nhiệt của mạng tinh thể và mất đi năng lượng dưới dạng nhiệt lượng. Chính những cú va đập đó tạo ra điện trở. Làm lạnh kim loại, dập tắt những rung động, và điện trở sẽ từ từ giảm xuống một giá trị nhỏ nhoi nào đó còn sót lại.
+
+Nhưng thủy ngân lại không tuân theo quy luật đó. Khi Onnes làm lạnh nó qua ngưỡng bốn kelvin, điện trở không hề giảm từ từ xuống một giá trị nhỏ. Nó rơi thẳng đứng như tuột dốc không phanh — tuột thẳng về *không*, đột ngột, hoàn toàn, vượt qua mọi giới hạn đo đạc của các thiết bị thời bấy giờ.
+
+<Chart
+  kind="line"
+  xKey="t"
+  xLabel="Nhiệt độ (K)"
+  yLabel="Điện trở (Ω)"
+  series={[{ key: "R", label: "Điện trở (Ω)", tone: "cyan" }]}
+  data={[
+    { t: "4.0", R: 0 },
+    { t: "4.1", R: 0 },
+    { t: "4.19", R: 0 },
+    { t: "4.20", R: 0.12 },
+    { t: "4.6", R: 0.122 },
+    { t: "5.2", R: 0.125 }
+  ]}
+  caption="Phép đo của Onnes năm 1911: khi hạ nhiệt độ qua điểm tới hạn (~4.2 K), điện trở của thủy ngân không hề giảm dần — nó rơi thẳng đứng về điểm không tuyệt đối."
+/>
+
+Không phải là gần bằng không. Mà là bằng không tuyệt đối. Nếu ta truyền một dòng điện vào vòng khép kín làm bằng loại vật liệu này, nó sẽ, theo như tất cả những gì con người từng đo lường được, chạy mãi mãi — không cần pin, không cần điện áp, không hề tiêu hao. Onnes đã khám phá ra <GlossaryTerm slug="superconductivity">hiện tượng siêu dẫn</GlossaryTerm>, và mức nhiệt độ khiến một vật liệu cụ thể lao dốc không phanh như vậy được gọi là <GlossaryTerm slug="critical-temperature">nhiệt độ tới hạn</GlossaryTerm> của nó, hay T꜀.
+
+<SuperconductorCooldown
+  caption="Hãy tự mình thực hiện thí nghiệm của Onnes. Kéo thanh nhiệt độ xuống: phía trên điểm tới hạn, điện trở cư xử như một kim loại bình thường, nhưng ngay khoảnh khắc bạn vượt qua Tc, nó rơi thẳng đứng về không — và cục nam châm phía trên mẫu vật sẽ ngừng nằm im mà khóa chặt vào trạng thái lơ lửng. (Hình ảnh minh họa nhiệt độ tới hạn trong phòng thí nghiệm; chiêu bài của unobtanium là đẩy cái dốc đó lên tận mức nhiệt độ phòng.)"
+/>
+
+Phải mất thêm bốn mươi sáu năm nữa người ta mới có thể giải thích được *tại sao*.
