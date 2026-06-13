@@ -24,6 +24,7 @@ const GLOSSARY_VISUALIZATIONS: Record<
   allometry: dynamic(() => import("./allometry"), { ssr: false }),
   "lotka-volterra-equations": dynamic(() => import("./lotka-volterra-equations"), { ssr: false }),
   chirality: dynamic(() => import("./chirality"), { ssr: false }),
+  umwelt: dynamic(() => import("./umwelt"), { ssr: false }),
 };
 
 interface GlossaryVisualizerProps {

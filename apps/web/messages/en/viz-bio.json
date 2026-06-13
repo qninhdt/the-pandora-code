@@ -481,6 +481,15 @@
       "concentration": "Concentration",
       "brightness": "Detector light",
       "hint": "Rotate the analyzer dial to align with the rotated light plane. Chiral molecules rotate polarized light clockwise (D-form) or counterclockwise (L-form)."
+    },
+    "umwelt": {
+      "title": "The Pandoran Umwelt",
+      "humanFilter": "Human",
+      "biolumFilter": "Biolum",
+      "echoFilter": "Echoloc",
+      "magneticFilter": "Magnetic",
+      "thermalFilter": "Thermal",
+      "hint": "Toggle the sensory goggles to perceive the environment through the eyes of different organisms. Standard vision sees ordinary colors; specialized senses isolate bioluminescent cues, sonar contours, magnetic field lines, or heat signatures."
     }
   }
 }

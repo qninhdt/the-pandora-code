@@ -3,6 +3,7 @@ import AlphaCentauri from "@/components/glossary/interactive/alpha-centauri";
 import Bioluminescence from "@/components/glossary/interactive/bioluminescence";
 import LotkaVolterra from "@/components/glossary/interactive/lotka-volterra-equations";
 import Chirality from "@/components/glossary/interactive/chirality";
+import Umwelt from "@/components/glossary/interactive/umwelt";
 import Cladogram from "@/components/glossary/interactive/cladogram";
 import CountercurrentExchange from "@/components/glossary/interactive/countercurrent-exchange";
 import DirectImaging from "@/components/glossary/interactive/direct-imaging";
@@ -106,6 +107,13 @@ describe("Glossary Components Direct Mount", () => {
     renderWithIntl(<Chirality locale="en" />);
     expect(
       screen.getAllByText("Chirality & Optical Rotation")[0],
+    ).toBeInTheDocument();
+  });
+
+  it("renders umwelt goggles", () => {
+    renderWithIntl(<Umwelt locale="en" />);
+    expect(
+      screen.getAllByText("The Pandoran Umwelt")[0],
     ).toBeInTheDocument();
   });
 

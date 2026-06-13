@@ -529,6 +529,15 @@
       "concentration": "Nồng độ",
       "brightness": "Cường độ sáng truyền qua",
       "hint": "Xoay kính phân tích để thẳng hàng với mặt phẳng ánh sáng bị quay. Phân tử bất đối quay mặt phẳng ánh sáng theo chiều kim đồng hồ (dạng D) hoặc ngược chiều (dạng L)."
+    },
+    "umwelt": {
+      "title": "Thế giới cảm quan (Umwelt) của Pandora",
+      "humanFilter": "Người thường",
+      "biolumFilter": "Phát quang",
+      "echoFilter": "Định vị âm",
+      "magneticFilter": "Cảm từ",
+      "thermalFilter": "Hồng ngoại",
+      "hint": "Bật các kính lọc cảm quan để nhìn nhận thế giới qua con mắt của những loài sinh vật khác nhau. Thị giác thường thấy màu thông thường; các giác quan chuyên biệt cô lập tín hiệu phát quang sinh học, đường viền sonar, đường sức từ, hoặc bức xạ nhiệt."
     }
   }
 }
