@@ -20,6 +20,7 @@ const GLOSSARY_VISUALIZATIONS: Record<
   "niche-partitioning": dynamic(() => import("./niche-partitioning"), { ssr: false }),
   "countercurrent-exchange": dynamic(() => import("./countercurrent-exchange"), { ssr: false }),
   bioluminescence: dynamic(() => import("./bioluminescence"), { ssr: false }),
+  cladogram: dynamic(() => import("./cladogram"), { ssr: false }),
 };
 
 interface GlossaryVisualizerProps {

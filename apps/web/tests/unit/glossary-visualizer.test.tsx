@@ -1,5 +1,6 @@
 import AlphaCentauri from "@/components/glossary/interactive/alpha-centauri";
 import Bioluminescence from "@/components/glossary/interactive/bioluminescence";
+import Cladogram from "@/components/glossary/interactive/cladogram";
 import CountercurrentExchange from "@/components/glossary/interactive/countercurrent-exchange";
 import DirectImaging from "@/components/glossary/interactive/direct-imaging";
 import Exomoon from "@/components/glossary/interactive/exomoon";
@@ -74,6 +75,13 @@ describe("Glossary Components Direct Mount", () => {
   it("renders bioluminescence simulator", () => {
     renderWithIntl(<Bioluminescence locale="en" />);
     expect(screen.getAllByText("The cold-light reaction")[0]).toBeInTheDocument();
+  });
+
+  it("renders cladogram builder", () => {
+    renderWithIntl(<Cladogram locale="en" />);
+    expect(
+      screen.getAllByText("Character matrix → the most parsimonious tree")[0],
+    ).toBeInTheDocument();
   });
 
   it("returns null for unregistered terms in GlossaryVisualizer", () => {

@@ -11,6 +11,7 @@ export const GLOSSARY_VISUALIZATION_IDS = [
   "niche-partitioning",
   "countercurrent-exchange",
   "bioluminescence",
+  "cladogram",
 ] as const;
 
 export type GlossaryVisualizationId = (typeof GLOSSARY_VISUALIZATION_IDS)[number];
