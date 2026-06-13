@@ -4,6 +4,7 @@ import Bioluminescence from "@/components/glossary/interactive/bioluminescence";
 import LotkaVolterra from "@/components/glossary/interactive/lotka-volterra-equations";
 import Chirality from "@/components/glossary/interactive/chirality";
 import Umwelt from "@/components/glossary/interactive/umwelt";
+import OccamsRazor from "@/components/glossary/interactive/occams-razor";
 import Cladogram from "@/components/glossary/interactive/cladogram";
 import CountercurrentExchange from "@/components/glossary/interactive/countercurrent-exchange";
 import DirectImaging from "@/components/glossary/interactive/direct-imaging";
@@ -114,6 +115,13 @@ describe("Glossary Components Direct Mount", () => {
     renderWithIntl(<Umwelt locale="en" />);
     expect(
       screen.getAllByText("The Pandoran Umwelt")[0],
+    ).toBeInTheDocument();
+  });
+
+  it("renders occams-razor logic engine", () => {
+    renderWithIntl(<OccamsRazor locale="en" />);
+    expect(
+      screen.getAllByText("Occam's Razor")[0],
     ).toBeInTheDocument();
   });
 

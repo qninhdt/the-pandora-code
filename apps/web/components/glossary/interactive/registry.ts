@@ -16,6 +16,7 @@ export const GLOSSARY_VISUALIZATION_IDS = [
   "lotka-volterra-equations",
   "chirality",
   "umwelt",
+  "occams-razor",
 ] as const;
 
 export type GlossaryVisualizationId = (typeof GLOSSARY_VISUALIZATION_IDS)[number];

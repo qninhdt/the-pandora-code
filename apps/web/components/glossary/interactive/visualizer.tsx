@@ -25,6 +25,7 @@ const GLOSSARY_VISUALIZATIONS: Record<
   "lotka-volterra-equations": dynamic(() => import("./lotka-volterra-equations"), { ssr: false }),
   chirality: dynamic(() => import("./chirality"), { ssr: false }),
   umwelt: dynamic(() => import("./umwelt"), { ssr: false }),
+  "occams-razor": dynamic(() => import("./occams-razor"), { ssr: false }),
 };
 
 interface GlossaryVisualizerProps {
