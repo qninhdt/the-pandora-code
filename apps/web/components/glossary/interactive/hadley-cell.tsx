@@ -4,11 +4,7 @@ import { useTranslations } from "next-intl";
 import React, { useState, useEffect } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface HadleyCellProps {
-  locale: string;
-}
-
-export default function HadleyCell({ locale }: HadleyCellProps) {
+export default function HadleyCell() {
   const t = useTranslations("viz.circulationBands");
 
   const [isPlaying, setIsPlaying] = useState(true);
@@ -265,7 +261,7 @@ export default function HadleyCell({ locale }: HadleyCellProps) {
           {/* Equator heating intensity slider */}
           <div className="flex items-center gap-3 border-t border-border/15 pt-2">
             <span className="text-[9px] font-mono text-muted w-24 truncate uppercase">
-              {locale === "vi" ? "Nhiệt lượng xích đạo" : "Equator Heating"}:
+              {t("equatorHeating")}:
             </span>
             <input
               type="range"

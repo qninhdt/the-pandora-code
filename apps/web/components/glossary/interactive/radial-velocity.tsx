@@ -4,11 +4,7 @@ import { useTranslations } from "next-intl";
 import React, { useState, useEffect } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface RadialVelocityProps {
-  locale: string;
-}
-
-export default function RadialVelocity({ locale }: RadialVelocityProps) {
+export default function RadialVelocity() {
   const t = useTranslations("viz.radialVelocity");
   const [mass, setMass] = useState(5); // Planet Mass (1..10)
   const [radius, setRadius] = useState(1.2); // Orbit Radius (0.6..2.0)

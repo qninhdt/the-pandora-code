@@ -4,11 +4,7 @@ import { useTranslations } from "next-intl";
 import React, { useState, useEffect, useMemo } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface HalfLifeProps {
-  locale: string;
-}
-
-export default function HalfLife({ locale }: HalfLifeProps) {
+export default function HalfLife() {
   const t = useTranslations("viz.halfLife");
 
   const [isPlaying, setIsPlaying] = useState(true);
@@ -251,7 +247,7 @@ export default function HalfLife({ locale }: HalfLifeProps) {
           {/* Half-lives elapsed slider */}
           <div className="flex items-center gap-3">
             <span className="text-[9px] font-mono text-muted w-24 truncate uppercase">
-              {locale === "vi" ? "Thời gian" : "Time Slider"}:
+              {t("timeLabel")}:
             </span>
             <input
               type="range"

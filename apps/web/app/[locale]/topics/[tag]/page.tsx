@@ -43,6 +43,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
   const { locale, tag } = await params;
   if (!isLocale(locale)) notFound();
   setRequestLocale(locale);
+  const t = await getTranslations("page.topics");
 
   const chapters = listChapterSlugs()
     .map((slug) => getChapter(slug, locale as Locale))
@@ -52,14 +53,14 @@ export default async function TopicPage({ params }: TopicPageProps) {
     <main className="mx-auto max-w-3xl px-6 py-12 space-y-6">
       <header>
         <p className="text-xs font-mono uppercase tracking-wide text-[color:var(--muted)]">
-          {locale === "vi" ? "Chủ đề" : "Topic"}
+          {t("topicKicker")}
         </p>
         <h1 className="text-3xl font-semibold tracking-tight">#{tag}</h1>
       </header>
 
       {chapters.length === 0 ? (
         <p className="text-sm text-[color:var(--muted)]">
-          {locale === "vi" ? "Chưa có chương nào." : "No chapters yet."}
+          {t("empty")}
         </p>
       ) : (
         <ul className="space-y-3">
@@ -74,7 +75,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
               >
                 <h2 className="text-lg font-semibold">{c.title}</h2>
                 <div className="mt-2">
-                  <CanonBadge kind="canon" locale={locale as Locale}>
+                  <CanonBadge kind="canon">
                     {`Canon ${c.meta.classification.canon_pct}%`}
                   </CanonBadge>
                 </div>

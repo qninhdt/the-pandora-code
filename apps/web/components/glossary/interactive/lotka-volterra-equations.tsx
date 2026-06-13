@@ -4,11 +4,7 @@ import { useTranslations } from "next-intl";
 import React, { useState, useEffect, useRef } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface LotkaVolterraProps {
-  locale: string;
-}
-
-export default function LotkaVolterra({ locale }: LotkaVolterraProps) {
+export default function LotkaVolterra() {
   const t = useTranslations("viz.lotkaVolterra");
 
   const [isPlaying, setIsPlaying] = useState(true);
@@ -243,16 +239,10 @@ export default function LotkaVolterra({ locale }: LotkaVolterraProps) {
             {/* Status indicator */}
             <div className="absolute top-2 right-2 text-[8px] font-mono text-muted/80 uppercase">
               {hasK && prey > carryingCapacity * 0.9 && prey - carryingCapacity < 10
-                ? locale === "vi"
-                  ? "Đạt sức chứa"
-                  : "Near Carrying Capacity"
+                ? t("nearCapacity")
                 : isPlaying
-                  ? locale === "vi"
-                    ? "Đang giả lập"
-                    : "Simulating"
-                  : locale === "vi"
-                    ? "Đã tạm dừng"
-                    : "Paused"}
+                  ? t("simulating")
+                  : t("pausedStatus")}
             </div>
           </div>
         </div>
@@ -264,7 +254,7 @@ export default function LotkaVolterra({ locale }: LotkaVolterraProps) {
             {/* Prey birth rate (Alpha) */}
             <div className="flex items-center gap-2">
               <span className="text-[9px] font-mono text-muted w-16 truncate uppercase">
-                {locale === "vi" ? "Mồi sinh" : "Prey Birth"}
+                {t("preyBirth")}
               </span>
               <input
                 type="range"
@@ -283,7 +273,7 @@ export default function LotkaVolterra({ locale }: LotkaVolterraProps) {
             {/* Predation efficiency (Beta) */}
             <div className="flex items-center gap-2">
               <span className="text-[9px] font-mono text-muted w-16 truncate uppercase">
-                {locale === "vi" ? "Săn bắt" : "Predation"}
+                {t("predation")}
               </span>
               <input
                 type="range"
@@ -302,7 +292,7 @@ export default function LotkaVolterra({ locale }: LotkaVolterraProps) {
             {/* Predator growth (Delta) */}
             <div className="flex items-center gap-2">
               <span className="text-[9px] font-mono text-muted w-16 truncate uppercase">
-                {locale === "vi" ? "Thú sinh" : "Pred Birth"}
+                {t("predBirth")}
               </span>
               <input
                 type="range"
@@ -321,7 +311,7 @@ export default function LotkaVolterra({ locale }: LotkaVolterraProps) {
             {/* Predator decay (Gamma) */}
             <div className="flex items-center gap-2">
               <span className="text-[9px] font-mono text-muted w-16 truncate uppercase">
-                {locale === "vi" ? "Thú chết" : "Pred Death"}
+                {t("predDeath")}
               </span>
               <input
                 type="range"
@@ -352,7 +342,7 @@ export default function LotkaVolterra({ locale }: LotkaVolterraProps) {
                 boxShadow: hasSwitching ? "0 0 6px rgba(43, 212, 168, 0.3)" : "none",
               }}
             >
-              {locale === "vi" ? "CHUYỂN ĐỔI MỒI (ỔN ĐỊNH)" : "PREY-SWITCHING (STABLE)"}
+              {t("preySwitching")}
             </button>
 
             {/* Paradox of enrichment K toggle */}
@@ -367,7 +357,7 @@ export default function LotkaVolterra({ locale }: LotkaVolterraProps) {
                 boxShadow: hasK ? "0 0 6px rgba(255, 180, 84, 0.3)" : "none",
               }}
             >
-              {locale === "vi" ? "SỨC CHỨA TỐI ĐA (K)" : "CARRYING CAPACITY (K)"}
+              {t("carryingCapacityLabel")}
             </button>
           </div>
 

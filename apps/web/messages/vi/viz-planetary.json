@@ -49,7 +49,17 @@
       "precipLabel": "Lượng mưa",
       "earth": "Nhiệt đới Trái Đất",
       "pandora": "Pandora (Australis)",
-      "hint": "Kéo điểm — hoặc dùng thanh trượt — để xem khí hậu nào nuôi quần xã nào. Pandora ấm và ẩm: rừng mưa trải rộng."
+      "hint": "Kéo điểm — hoặc dùng thanh trượt — để xem khí hậu nào nuôi quần xã nào. Pandora ấm và ẩm: rừng mưa trải rộng.",
+      "biomes": {
+        "tundra": "Đài nguyên",
+        "boreal": "Rừng taiga (phương bắc)",
+        "grassland": "Đồng cỏ ôn đới",
+        "tempForest": "Rừng ôn đới",
+        "tempRainforest": "Rừng mưa ôn đới",
+        "desert": "Sa mạc cận nhiệt",
+        "savanna": "Xavan nhiệt đới",
+        "tropicalRainforest": "Rừng mưa nhiệt đới"
+      }
     },
     "circulationBands": {
       "title": "Hoàn lưu khí quyển",
@@ -67,6 +77,7 @@
       "desert": "Sa mạc",
       "temperate": "Ôn đới",
       "polar": "Vùng lạnh",
+      "equatorHeating": "Nhiệt lượng xích đạo",
       "takeaway": "Bề rộng vòng hoàn lưu quyết định vĩ độ của mọi khu rừng và sa mạc - và vì Pandora quay chậm, rừng mưa của nó trải rộng gần khắp hành tinh."
     },
     "atmosphere": {
@@ -201,7 +212,27 @@
       "contrast": "Độ tương phản / Phơi sáng",
       "planetDetected": "Phát hiện hành tinh ngoại",
       "starGlare": "Ánh sáng sao chói lòa",
+      "underexposed": "Phơi sáng quá thấp",
+      "instrumentGlare": "Nhiễu sáng thiết bị",
       "hint": "Không có tấm chắn coronagraph, ánh sáng chói của sao hoàn toàn làm mờ mắt chúng ta. Hãy bật tấm chắn để chặn ánh sáng sao và để lộ hành tinh."
+    },
+    "alphaCentauri": {
+      "title": "Hệ thống Alpha Centauri",
+      "infoText": "Hệ sao Alpha Centauri gồm ba ngôi sao: Alpha Centauri A và B tạo thành một hệ sao kép quay quanh một khối tâm chung, và Proxima Centauri là một sao lùn đỏ mờ hơn quay quanh cặp đôi này ở khoảng cách rất xa.",
+      "starA": {
+        "name": "Alpha Centauri A (Rigil Kentaurus)",
+        "type": "Sao lùn vàng (G2V)"
+      },
+      "starB": {
+        "name": "Alpha Centauri B (Toliman)",
+        "type": "Sao lùn cam (K1V)"
+      },
+      "starProxima": {
+        "name": "Proxima Centauri",
+        "type": "Sao lùn đỏ (M6Ve)"
+      },
+      "speed": "Tốc độ",
+      "zoom": "Phóng to"
     },
     "transitTimingVariation": {
       "title": "Biến thiên thời gian quá cảnh (TTV)",
@@ -218,6 +249,7 @@
       "bulge": "Độ lệch bướu thủy triều",
       "observerPolyphemus": "Nhìn từ hành tinh mẹ: Mặt trăng tự quay",
       "observerPolyphemusLocked": "Nhìn từ hành tinh mẹ: Luôn thấy một mặt",
+      "orbitSpeed": "Tốc độ quỹ đạo",
       "hint": "Chuyển đổi giữa trạng thái Chưa khóa và Đã khóa. Vệ tinh chưa khóa tự quay tự do; Vệ tinh bị khóa bị biến dạng thủy triều và luôn giữ một mặt hướng về hành tinh mẹ."
     },
     "transmissionSpectroscopy": {
@@ -247,6 +279,8 @@
       "hemisphere": "Bán cầu",
       "northern": "Bán cầu Bắc (Lệch bên Phải)",
       "southern": "Bán cầu Nam (Lệch bên Trái)",
+      "northernShort": "Bán cầu Bắc",
+      "southernShort": "Bán cầu Nam",
       "spinSpeed": "Tốc độ tự quay",
       "stationary": "Đứng yên",
       "fast": "Nhanh",
@@ -254,6 +288,8 @@
       "launchPos": "Bắn từ",
       "pole": "Cực Bắc (Hướng ra ngoài)",
       "equator": "Xích đạo (Hướng vào trong)",
+      "poleShort": "Cực Bắc",
+      "equatorShort": "Xích đạo",
       "inertialPath": "Đường đi quán tính (Nhìn từ vũ trụ)",
       "apparentPath": "Đường đi biểu kiến (Nhìn từ bề mặt)",
       "planetPresets": "So sánh tự quay hành tinh",

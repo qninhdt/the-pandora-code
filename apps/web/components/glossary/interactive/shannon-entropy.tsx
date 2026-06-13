@@ -5,11 +5,7 @@ import { useTranslations } from "next-intl";
 import React, { useState, useEffect, useMemo, useCallback } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface ShannonEntropyProps {
-  locale: string;
-}
-
-export default function ShannonEntropy({ locale }: ShannonEntropyProps) {
+export default function ShannonEntropy() {
   const t = useTranslations("viz.shannonEntropy");
 
   const [p, setP] = useState(0.5); // Probability of Heads

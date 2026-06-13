@@ -4,10 +4,6 @@ import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface NichePartitioningProps {
-  locale?: string;
-}
-
 interface ForestLayer {
   id: string;
   color: string;
@@ -40,7 +36,7 @@ const LAYERS: ForestLayer[] = [
   },
 ];
 
-export default function NichePartitioning({ locale }: NichePartitioningProps) {
+export default function NichePartitioning() {
   const t = useTranslations("viz.nichePartition");
   const [selectedLayerId, setSelectedLayerId] = useState<string | null>(null);
 

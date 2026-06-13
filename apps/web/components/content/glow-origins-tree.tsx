@@ -7,7 +7,7 @@ import { VizFigure } from "@/components/content/viz/viz-figure";
 import { VizText } from "@/components/content/viz/viz-svg-text";
 import { useReducedMotionSafe } from "@/components/motion/use-reduced-motion-safe";
 import { motion } from "framer-motion";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useId, useState } from "react";
 
 interface GlowOriginsTreeProps {
@@ -24,11 +24,9 @@ const GAP = 38;
 
 export function GlowOriginsTree({ caption, className }: GlowOriginsTreeProps) {
   const t = useTranslations("viz.glowOriginsTree");
-  const locale = useLocale();
   const reduced = useReducedMotionSafe();
   const uid = useId();
   const [active, setActive] = useState<string | null>(null);
-  const isVi = locale === "vi";
   const sel = LINEAGES.find((l) => l.key === active) ?? null;
   const rootY = TOP + ((LINEAGES.length - 1) * GAP) / 2;
   const H = TOP * 2 + (LINEAGES.length - 1) * GAP;
@@ -89,7 +87,7 @@ export function GlowOriginsTree({ caption, className }: GlowOriginsTreeProps) {
                 // biome-ignore lint/a11y/useSemanticElements: an SVG <g> cannot be a native <button>; button role is the correct ARIA mapping for a clickable tree node
                 role="button"
                 aria-pressed={on}
-                aria-label={isVi ? l.nameVi : l.nameEn}
+                aria-label={t(`lineages.${l.key}.name`)}
               >
                 <path
                   d={branchCurve({ x: FORK_X, y: rootY }, { x: TIP_X, y })}
@@ -123,7 +121,7 @@ export function GlowOriginsTree({ caption, className }: GlowOriginsTreeProps) {
                   size="small"
                   tone={on ? "var(--foreground)" : "var(--muted)"}
                 >
-                  {isVi ? l.nameVi : l.nameEn}
+                  {t(`lineages.${l.key}.name`)}
                 </VizText>
               </g>
             );
@@ -149,7 +147,7 @@ export function GlowOriginsTree({ caption, className }: GlowOriginsTreeProps) {
                 {t("fuelLabel")}
               </p>
               <p className="mt-0.5 font-sans text-xs font-700" style={{ color: sel.tone }}>
-                {isVi ? sel.fuelVi : sel.fuelEn}
+                {t(`lineages.${sel.key}.fuel`)}
               </p>
             </div>
             <div>
@@ -157,7 +155,7 @@ export function GlowOriginsTree({ caption, className }: GlowOriginsTreeProps) {
                 {t("enzymeLabel")}
               </p>
               <p className="mt-0.5 font-sans text-xs font-700" style={{ color: sel.tone }}>
-                {isVi ? sel.enzymeVi : sel.enzymeEn}
+                {t(`lineages.${sel.key}.enzyme`)}
               </p>
             </div>
           </div>

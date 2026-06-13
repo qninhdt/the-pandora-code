@@ -40,7 +40,19 @@
       "verdictTie": "Equally plausible",
       "noteA": "Relies on fewer leaps of faith.",
       "noteB": "Relies on fewer leaps of faith.",
-      "noteTie": "Cannot distinguish based on simplicity alone."
+      "noteTie": "Cannot distinguish based on simplicity alone.",
+      "theoryADesc": "Natural Explan.",
+      "theoryBDesc": "Conspiratorial Explan.",
+      "shavedStatus": "✗ SHAVED (TOO COMPLEX)",
+      "plausibleStatus": "✓ PLAUSIBLE (PARSIMONIOUS)",
+      "assumptionsList": {
+        "active": "Banshee was active in this area",
+        "hungry": "Banshee was hungry (seeking prey)",
+        "drones": "RDA deployed silent stealth drones",
+        "paint": "Drones leaked glowing cyan chemical paint",
+        "stealth": "Stealth drone intentionally snapped twigs to mark path",
+        "wind": "Heavy storm wind carried the drones here undetected"
+      }
     },
     "shannonEntropy": {
       "title": "Shannon Entropy",
@@ -71,6 +83,8 @@
       "modeLabel": "Flight Phase",
       "phaseAscent": "Ascent (harvesting wind)",
       "phaseDescent": "Descent (gaining speed)",
+      "seaLevel": "Sea level (Calm)",
+      "windShear": "Wind Shear",
       "hint": "Dynamic soaring works by flying between different wind speeds. By climbing into fast wind (ascent) and diving into slow wind near the sea (descent), a bird extracts energy from the wind shear, staying aloft indefinitely without flapping."
     },
     "squareCubeLaw": {
@@ -85,7 +99,10 @@
       "statusStable": "Stable",
       "statusStrained": "Strained (Na'vi adaptation required)",
       "statusCrushed": "Crushed (Earth bone fails)",
-      "hint": "Double the height, and you get 4x the muscle/bone cross-section but 8x the mass to support. Bone stress increases linearly with size. That is why Na'vi have carbon-fiber reinforced bones, and why giant terrestrial animals cannot exist with standard human proportions."
+      "hint": "Double the height, and you get 4x the muscle/bone cross-section but 8x the mass to support. Bone stress increases linearly with size. That is why Na'vi have carbon-fiber reinforced bones, and why giant terrestrial animals cannot exist with standard human proportions.",
+      "gridLabel": "Isometric grid division (volume)",
+      "humanBone": "Human Bone",
+      "naviBone": "Na'vi Carbon Bone"
     },
     "shannonChannel": {
       "title": "Shannon's channel, made playable",
@@ -126,6 +143,17 @@
       "consciousSlider": "Conscious rate",
       "aria": "The senses pour in eleven million bits per second; only {conscious} reaches awareness — a {compression}-fold compression.",
       "hint": "Your senses pour ~11 Mb/s into the nervous system, yet the stream that reaches awareness — the self that thinks and remembers — runs at a mere handful of bits per second. Slide that rate and watch a whole lifetime of selfhood collapse to mere tens of gigabits: small enough, at last, to send across the bond in a single night."
+    },
+    "allometry": {
+      "title": "Bone Stress & Allometry",
+      "statusStable": "Skeleton: STABLE",
+      "statusOverloaded": "Skeleton: BUCKLING RISK",
+      "infoAllometric": "Allometry: Bones thicken non-linearly to support the cubed weight, maintaining skeletal integrity.",
+      "infoIsometric": "Isometry: Linear scaling. Volume (mass) increases by 8x while bone cross-section only increases by 4x, risking fracture.",
+      "boneWidth": "Bone width:",
+      "boneStress": "BONE MECHANICAL STRESS",
+      "mass": "Body Mass",
+      "sizeLabel": "Scale factor (k)"
     },
     "scaleUp": {
       "title": "The square-cube scaling trap",
@@ -250,7 +278,9 @@
       "pause": "Pause",
       "hint": "Drop the temperature below Tc: resistance falls straight to zero and the magnet locks, hanging in mid-air.",
       "levitating": "Flux-locked — levitating",
-      "resting": "Resting on the surface"
+      "resting": "Resting on the surface",
+      "dragToMove": "DRAG BLOCK TO MOVE ALONG MAGNETIC TRACK",
+      "lowerToLevitate": "LOWER TEMPERATURE BELOW Tc TO LEVITATE"
     }
   }
 }

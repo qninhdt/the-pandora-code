@@ -1,18 +1,16 @@
-import type { Locale } from "@/i18n/config";
+"use client";
+
 import { Github } from "lucide-react";
 import Link from "next/link";
-
-interface SiteFooterProps {
-  locale: Locale;
-  tagline: string;
-  copyright: string;
-  disclaimer: string;
-}
+import { useLocale, useTranslations } from "next-intl";
+import type { Locale } from "@/i18n/config";
 
 // A quiet horizon at the foot of every page - a thin bioluminescent rule, the
 // Bardabez byline, the in-world tagline, and the locale.
-export function SiteFooter({ locale, tagline, copyright, disclaimer }: SiteFooterProps) {
+export function SiteFooter() {
+  const locale = useLocale() as Locale;
   const base = `/${locale}`;
+  const t = useTranslations();
   return (
     <footer className="relative mt-24 border-t border-border">
       {/* faint glowing horizon line */}
@@ -37,18 +35,18 @@ export function SiteFooter({ locale, tagline, copyright, disclaimer }: SiteFoote
             />
             <span className="font-display text-sm font-600 text-foreground">Bardabez</span>
           </div>
-          <p className="mt-3 font-serif text-sm leading-relaxed text-muted">{tagline}</p>
+          <p className="mt-3 font-serif text-sm leading-relaxed text-muted">{t("site.tagline")}</p>
           <p className="mt-4 max-w-sm font-sans text-xs italic leading-relaxed text-subtle/70">
-            {disclaimer}
+            {t("footer.disclaimer")}
           </p>
         </div>
         <div className="flex flex-col gap-2 font-sans text-xs text-subtle md:items-end">
           <div className="flex gap-4">
             <Link href={`${base}/chapters`} className="text-muted hover:text-foreground">
-              Chapters
+              {t("nav.chapters")}
             </Link>
             <Link href={`${base}/glossary`} className="text-muted hover:text-foreground">
-              Glossary
+              {t("nav.glossary")}
             </Link>
             <a
               href="https://github.com/qninhdt/the-pandora-code"
@@ -61,7 +59,8 @@ export function SiteFooter({ locale, tagline, copyright, disclaimer }: SiteFoote
             </a>
           </div>
           <p className="tracking-wide">
-            {copyright} · <span className="uppercase">{locale}</span>
+            {t("footer.copyright", { year: new Date().getFullYear() })} ·{" "}
+            <span className="uppercase">{locale}</span>
           </p>
         </div>
       </div>

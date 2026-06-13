@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { useCallback, useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 import YARLightbox, { type SlideImage } from "yet-another-react-lightbox";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/styles.css";
@@ -59,7 +60,8 @@ export function LightboxImage({
 // Powered by yet-another-react-lightbox: swipe, keyboard, a thumbnail strip, and
 // counter come for free. Each slide is custom-rendered so the figure's
 // annotation dots + popovers ride along on the fullscreen image too.
-export function Lightbox({ locale = "vi" }: { locale?: "vi" | "en" }) {
+export function Lightbox() {
+  const t = useTranslations("lightbox");
   const [open, setOpen] = useState(false);
   const [slides, setSlides] = useState<AnnoSlide[]>([]);
   const [index, setIndex] = useState(0);
@@ -114,9 +116,11 @@ export function Lightbox({ locale = "vi" }: { locale?: "vi" | "en" }) {
       carousel={{ finite: false, padding: 0 }}
       controller={{ closeOnBackdropClick: true }}
       styles={{ container: { backgroundColor: "rgba(4,6,12,0.94)" } }}
-      labels={
-        locale === "vi" ? { Previous: "Ảnh trước", Next: "Ảnh sau", Close: "Đóng" } : undefined
-      }
+      labels={{
+        Previous: t("previous"),
+        Next: t("next"),
+        Close: t("close"),
+      }}
       render={{ slide: renderSlide }}
     />
   );

@@ -74,18 +74,7 @@ function toHeadings(toc: { depth: number; url: string; title: ReactNode }[]): To
     }));
 }
 
-function classificationLabel(
-  kind: "canon" | "inference" | "speculation" | "real_science",
-  locale: Locale,
-) {
-  const map = {
-    canon: { vi: "Chính truyện", en: "Canon" },
-    inference: { vi: "Suy luận", en: "Inference" },
-    speculation: { vi: "Suy đoán", en: "Speculation" },
-    real_science: { vi: "Khoa học thật", en: "Real science" },
-  };
-  return map[kind][locale];
-}
+
 
 export default async function ChapterPage({ params }: ChapterPageProps) {
   const { locale, slug } = await params;
@@ -109,17 +98,17 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
   const glossary = new Map(listGlossaryTerms(loc).map((g) => [g.id, g]));
   const components = getMDXComponents({
     AnatomyPlate: (props: ComponentProps<typeof AnatomyPlate>) => (
-      <AnatomyPlate {...props} locale={loc} />
+      <AnatomyPlate {...props} />
     ),
     CanonBadge: (props: ComponentProps<typeof CanonBadge>) => (
       <CanonBadge {...props} />
     ),
     DiagramFigure: (props: ComponentProps<typeof DiagramFigure>) => (
-      <DiagramFigure {...props} locale={loc} />
+      <DiagramFigure {...props} />
     ),
-    Figure: (props: ComponentProps<typeof Figure>) => <Figure {...props} locale={loc} />,
+    Figure: (props: ComponentProps<typeof Figure>) => <Figure {...props} />,
     FigureGrid: (props: ComponentProps<typeof FigureGrid>) => (
-      <FigureGrid {...props} locale={loc} />
+      <FigureGrid {...props} />
     ),
     GlossaryTerm: ({
       slug: termSlug,
@@ -136,14 +125,13 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
           definition={g?.definition}
           coverSrc={getGlossaryCoverImage(termSlug)}
           tags={g?.tags}
-          locale={loc}
         >
           {children}
         </GlossaryTerm>
       );
     },
     SourceList: (props: ComponentProps<typeof SourceList>) => (
-      <SourceList {...props} locale={loc} />
+      <SourceList {...props} />
     ),
   });
   const headings = toHeadings(mdx.data.toc ?? []);
@@ -170,10 +158,9 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
     <>
       {backgroundImage && <ChapterBackground src={backgroundImage} />}
       <ChapterShell
-        progress={<ReadingProgress entry={{ slug, locale: loc, title: chapter.title }} />}
+        progress={<ReadingProgress />}
         hero={
           <ChapterHero
-            locale={loc}
             title={chapter.meta.title}
             subtitle={chapter.meta.subtitle}
             hook={chapter.meta.hook}
@@ -187,7 +174,6 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
         footer={
           <>
             <RelatedMaterials
-              locale={loc}
               chapters={relatedChapters}
               glossary={relatedGlossary}
               sources={chapter.meta.sources}
@@ -203,21 +189,18 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
                 {t("chapter.classification")}
               </p>
               <div className="flex flex-wrap gap-2">
-                <CanonBadge kind="canon" locale={loc}>
-                  {`${classificationLabel("canon", loc)} ${cls.canon_pct}%`}
+                <CanonBadge kind="canon">
+                  {`${t("classification.canon")} ${cls.canon_pct}%`}
                 </CanonBadge>
-                <CanonBadge
-                  kind="inference"
-                  locale={loc}
-                >{`${classificationLabel("inference", loc)} ${cls.inference_pct}%`}</CanonBadge>
-                <CanonBadge
-                  kind="speculation"
-                  locale={loc}
-                >{`${classificationLabel("speculation", loc)} ${cls.speculation_pct}%`}</CanonBadge>
-                <CanonBadge
-                  kind="real_science"
-                  locale={loc}
-                >{`${classificationLabel("real_science", loc)} ${cls.real_science_pct}%`}</CanonBadge>
+                <CanonBadge kind="inference">
+                  {`${t("classification.inference")} ${cls.inference_pct}%`}
+                </CanonBadge>
+                <CanonBadge kind="speculation">
+                  {`${t("classification.speculation")} ${cls.speculation_pct}%`}
+                </CanonBadge>
+                <CanonBadge kind="real_science">
+                  {`${t("classification.real_science")} ${cls.real_science_pct}%`}
+                </CanonBadge>
               </div>
             </div>
           </>

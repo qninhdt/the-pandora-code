@@ -4,11 +4,7 @@ import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface DirectImagingProps {
-  locale: string;
-}
-
-export default function DirectImaging({ locale }: DirectImagingProps) {
+export default function DirectImaging() {
   const t = useTranslations("viz.directImaging");
   const [maskOn, setMaskOn] = useState(false);
   const [contrast, setContrast] = useState(50); // Exposure / Contrast (1..100)
@@ -29,11 +25,11 @@ export default function DirectImaging({ locale }: DirectImagingProps) {
   if (maskOn) {
     if (contrast < 20) {
       planetOpacity = contrast / 20; // Faint
-      detectStatus = locale === "vi" ? "Phơi sáng quá thấp" : "Underexposed";
+      detectStatus = t("underexposed");
       statusClass = "text-muted";
     } else if (contrast > 85) {
       planetOpacity = Math.max(0, 1 - (contrast - 85) / 15); // Glared out again
-      detectStatus = locale === "vi" ? "Nhiễu sáng thiết bị" : "Instrument Glare";
+      detectStatus = t("instrumentGlare");
       statusClass = "text-amber";
     } else {
       planetOpacity = 1.0;

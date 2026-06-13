@@ -24,7 +24,8 @@
     "loading": "Đang tải...",
     "skipToContent": "Đi thẳng tới nội dung chính",
     "hideAllLabels": "Ẩn chú thích trên mọi hình",
-    "showAllLabels": "Hiện chú thích trên mọi hình"
+    "showAllLabels": "Hiện chú thích trên mọi hình",
+    "language": "Ngôn ngữ"
   },
   "search": {
     "trigger": "Tìm kiếm",
@@ -54,7 +55,8 @@
     "openQuestions": "Những câu hỏi còn bỏ ngỏ",
     "readingProgress": "Tiến độ đọc",
     "classification": "Phân loại nội dung",
-    "demoBanner": "Đây chỉ là chương BẢN NHÁP (DEMO) - không phải nội dung chính thức của Pandora."
+    "demoBanner": "Đây chỉ là chương BẢN NHÁP (DEMO) - không phải nội dung chính thức của Pandora.",
+    "readNext": "Đọc tiếp"
   },
   "classification": {
     "canon": "Cốt truyện gốc",
@@ -88,7 +90,8 @@
       "comingSoon": "Sắp ra mắt",
       "statsDone": "{done} / {total} đã giải mã",
       "readingTotal": "{minutes} phút đọc",
-      "noMatches": "Không có chương nào khớp bộ lọc."
+      "noMatches": "Không có chương nào khớp bộ lọc.",
+      "readingUnit": "phút"
     },
     "glossary": {
       "title": "Thuật ngữ",
@@ -96,7 +99,10 @@
       "searchPlaceholder": "Tìm thuật ngữ hoặc định nghĩa…",
       "allTags": "Tất cả",
       "resultCount": "{count} thuật ngữ",
-      "untagged": "Chưa phân loại"
+      "untagged": "Chưa phân loại",
+      "viewInGlossary": "Xem trong từ điển →",
+      "seeAlso": "Xem thêm",
+      "allTerms": "Tất cả thuật ngữ"
     },
     "authors": {
       "title": "Tác giả",
@@ -120,15 +126,37 @@
     },
     "topics": {
       "title": "Chủ đề: {tag}",
-      "subtitle": "Các chương có chung thẻ phân loại này."
+      "subtitle": "Các chương có chung thẻ phân loại này.",
+      "topicKicker": "Chủ đề",
+      "empty": "Chưa có chương nào."
     },
     "notFound": {
       "title": "Không tìm thấy trang",
       "back": "Quay về trang chủ"
     }
   },
+  "sources": {
+    "heading": "Nguồn",
+    "kinds": {
+      "canon": "Canon",
+      "science": "Khoa học",
+      "community": "Cộng đồng",
+      "research-note": "Ghi chú NC",
+      "wiki": "Wiki",
+      "other": "Khác"
+    }
+  },
+  "lightbox": {
+    "previous": "Ảnh trước",
+    "next": "Ảnh sau",
+    "close": "Đóng"
+  },
   "footer": {
     "copyright": "© {year} The Pandora Code",
     "disclaimer": "Hình ảnh được phác họa bởi AI. Những câu chuyện thuộc về Pandora, nhưng khoa học ở đây thuộc về Trái Đất."
+  },
+  "feed": {
+    "title": "The Pandora Code — Chương mới",
+    "description": "Giải mã thế giới Pandora qua khoa học và kể chuyện."
   }
 }

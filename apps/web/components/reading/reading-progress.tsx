@@ -5,8 +5,6 @@ import { useEffect, useState } from "react";
 interface ReadingProgressProps {
   /** Element to measure scroll progress against. Defaults to the whole page. */
   targetSelector?: string;
-  /** Chapter identity used to persist reading position / bookmarks. */
-  entry?: { slug: string; locale: "en" | "vi"; title: string };
 }
 
 // Slim bioluminescent bar pinned to the top, tracking reading progress through

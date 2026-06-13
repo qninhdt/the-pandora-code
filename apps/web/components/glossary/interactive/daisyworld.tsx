@@ -12,10 +12,6 @@ import { useTranslations } from "next-intl";
 import React, { useState, useMemo } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface DaisyworldProps {
-  locale: string;
-}
-
 // Fixed dimensions for the chart view
 const VIEW_W = 320;
 const VIEW_H = 120;
@@ -37,7 +33,7 @@ const ty = (tempC: number) => {
   return PAD_T + (1 - (clamped - T_MIN) / (T_MAX - T_MIN)) * PLOT_H;
 };
 
-export default function Daisyworld({ locale }: DaisyworldProps) {
+export default function Daisyworld() {
   const t = useTranslations("viz.daisyworld");
 
   const [luminosity, setLuminosity] = useState(1.0);

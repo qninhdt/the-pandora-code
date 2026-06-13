@@ -3,9 +3,9 @@
 import { type Locale, locales } from "@/i18n/config";
 import { usePathname, useRouter } from "next/navigation";
 import { useTransition } from "react";
+import { useLocale } from "next-intl";
 
 interface LocaleSwitcherProps {
-  current: Locale;
   /** Stack vertically (for the collapsed instrument rail). */
   vertical?: boolean;
 }
@@ -14,7 +14,8 @@ const labels: Record<Locale, string> = { vi: "VI", en: "EN" };
 
 // Segmented pill that swaps the leading locale segment of the current path. The
 // active locale rides a glowing cyan capsule; the inactive one stays subtle.
-export function LocaleSwitcher({ current, vertical = false }: LocaleSwitcherProps) {
+export function LocaleSwitcher({ vertical = false }: LocaleSwitcherProps) {
+  const current = useLocale() as Locale;
   const router = useRouter();
   const pathname = usePathname();
   const [pending, startTransition] = useTransition();

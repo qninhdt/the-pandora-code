@@ -6,7 +6,7 @@ import { getGlossaryTerm, listGlossaryIds } from "@/lib/content/loader/glossary-
 import { glossaryTagLabel } from "@/lib/content/schemas/glossary-tags";
 import { buildPageMetadata, clampDescription } from "@/lib/seo/page-metadata";
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -44,6 +44,7 @@ export default async function GlossaryDetail({ params }: GlossaryDetailProps) {
   if (!entry) notFound();
   const cover = getGlossaryCoverImage(term);
   const hasVisualizer = (GLOSSARY_VISUALIZATION_IDS as readonly string[]).includes(term);
+  const t = await getTranslations("page.glossary");
 
   return (
     <main className="mx-auto max-w-3xl px-6 pb-12 pt-32 space-y-6">
@@ -75,13 +76,13 @@ export default async function GlossaryDetail({ params }: GlossaryDetailProps) {
       <p className="text-base leading-relaxed">{entry.definition}</p>
       {hasVisualizer && (
         <div className="relative mb-2 w-full">
-          <GlossaryVisualizer term={term} locale={locale} />
+          <GlossaryVisualizer term={term} />
         </div>
       )}
       {entry.see_also.length > 0 ? (
         <section className="border-t border-[color:var(--border)] pt-6">
           <h2 className="text-xs font-mono uppercase tracking-wide text-[color:var(--muted)] mb-3">
-            {locale === "vi" ? "Xem thêm" : "See also"}
+            {t("seeAlso")}
           </h2>
           <ul className="flex flex-wrap gap-2">
             {entry.see_also.map((id) => (
@@ -101,7 +102,7 @@ export default async function GlossaryDetail({ params }: GlossaryDetailProps) {
         href={`/${locale}/glossary`}
         className="text-sm text-[color:var(--accent)] no-underline"
       >
-        ← {locale === "vi" ? "Tất cả thuật ngữ" : "All terms"}
+        ← {t("allTerms")}
       </Link>
     </main>
   );

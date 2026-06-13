@@ -1,6 +1,7 @@
 import { type JourneyEvent, TimelineJourney } from "@/components/content/timeline-journey";
-import { render, screen } from "@testing-library/react";
+import { screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
+import { renderWithIntl } from "./render-with-intl";
 
 const events: JourneyEvent[] = [
   {
@@ -27,7 +28,7 @@ const events: JourneyEvent[] = [
 
 describe("TimelineJourney", () => {
   it("renders every part marker and chapter event", () => {
-    render(<TimelineJourney events={events} locale="en" />);
+    renderWithIntl(<TimelineJourney events={events} />, "en");
 
     expect(screen.getByText("Origins")).toBeInTheDocument();
     expect(screen.getByText("Where is Pandora")).toBeInTheDocument();
@@ -37,15 +38,15 @@ describe("TimelineJourney", () => {
   });
 
   it("renders the four-tier key", () => {
-    render(<TimelineJourney events={events} locale="en" />);
-    for (const label of ["Canon", "Inference", "Speculation", "Real science"]) {
+    renderWithIntl(<TimelineJourney events={events} />, "en");
+    for (const label of ["Canon", "Inference", "Speculation", "Real-world science"]) {
       expect(screen.getByText(label)).toBeInTheDocument();
     }
   });
 
   it("renders localized tier labels in Vietnamese", () => {
-    render(<TimelineJourney events={events} locale="vi" />);
-    expect(screen.getByText("Chính truyện")).toBeInTheDocument();
+    renderWithIntl(<TimelineJourney events={events} />, "vi");
+    expect(screen.getByText("Cốt truyện gốc")).toBeInTheDocument();
     expect(screen.getByText("Suy luận")).toBeInTheDocument();
   });
 });

@@ -4,11 +4,7 @@ import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface BioluminescenceProps {
-  locale: string;
-}
-
-export default function Bioluminescence({ locale }: BioluminescenceProps) {
+export default function Bioluminescence() {
   const t = useTranslations("viz.coldLight");
   const [currentStep, setCurrentStep] = useState(0);
 
@@ -215,7 +211,7 @@ export default function Bioluminescence({ locale }: BioluminescenceProps) {
                   boxShadow: isActive ? `0 0 8px ${particleColor}` : "none",
                 }}
               >
-                {locale === "vi" ? `Bước ${idx + 1}` : `STEP ${idx + 1}`}
+                {t("step")} {idx + 1}
               </button>
             );
           })}

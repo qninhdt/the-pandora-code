@@ -4,58 +4,15 @@ import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface OccamsRazorProps {
-  locale: string;
-}
-
-interface Assumption {
-  id: string;
-  labelEn: string;
-  labelVi: string;
-}
-
-export default function OccamsRazor({ locale }: OccamsRazorProps) {
+export default function OccamsRazor() {
   const t = useTranslations("viz.occamsRazor");
 
   // Theory assumptions
   const [assumptionsA, setAssumptionsA] = useState<string[]>(["active"]);
   const [assumptionsB, setAssumptionsB] = useState<string[]>(["drones", "paint", "stealth"]);
 
-  const assumptionsListA: Assumption[] = [
-    {
-      id: "active",
-      labelEn: "Banshee was active in this area",
-      labelVi: "Banshee kiếm ăn tại khu vực này",
-    },
-    {
-      id: "hungry",
-      labelEn: "Banshee was hungry (seeking prey)",
-      labelVi: "Banshee đang đói (săn mồi)",
-    },
-  ];
-
-  const assumptionsListB: Assumption[] = [
-    {
-      id: "drones",
-      labelEn: "RDA deployed silent stealth drones",
-      labelVi: "RDA đã triển khai drone tàng hình",
-    },
-    {
-      id: "paint",
-      labelEn: "Drones leaked glowing cyan chemical paint",
-      labelVi: "Drone bị rò rỉ hóa chất phát quang màu lam",
-    },
-    {
-      id: "stealth",
-      labelEn: "Stealth drone intentionally snapped twigs to mark path",
-      labelVi: "Drone cố tình bẻ gãy cành cây để đánh dấu",
-    },
-    {
-      id: "wind",
-      labelEn: "Heavy storm wind carried the drones here undetected",
-      labelVi: "Cơn bão lớn đã thổi bay drone đến đây mà không bị phát hiện",
-    },
-  ];
+  const assumptionsListA = ["active", "hungry"];
+  const assumptionsListB = ["drones", "paint", "stealth", "wind"];
 
   const toggleAssumptionA = (id: string) => {
     setAssumptionsA((prev) =>
@@ -105,8 +62,8 @@ export default function OccamsRazor({ locale }: OccamsRazorProps) {
                 <h4 className="text-[11px] font-bold text-cyan font-mono uppercase tracking-wider">
                   {t("theoryA") || "Theory A"}
                 </h4>
-                <span className="text-[8px] font-mono text-muted">
-                  {locale === "vi" ? "Giải thích Tự nhiên" : "Natural Explan."}
+                <span className="text-[8px] font-mono text-muted font-semibold">
+                  {t("theoryADesc")}
                 </span>
               </div>
 
@@ -122,24 +79,24 @@ export default function OccamsRazor({ locale }: OccamsRazorProps) {
 
               {/* Checkbox Items */}
               <div className="flex flex-col gap-1.5 mt-2">
-                {assumptionsListA.map((a) => (
+                {assumptionsListA.map((id) => (
                   <button
-                    key={a.id}
+                    key={id}
                     type="button"
-                    onClick={() => toggleAssumptionA(a.id)}
+                    onClick={() => toggleAssumptionA(id)}
                     className="flex items-start text-left gap-1.5 p-1 rounded hover:bg-surface-overlay transition-colors"
                   >
                     <span
                       className={`w-3 h-3 rounded flex items-center justify-center border font-mono text-[8px] mt-0.5 shrink-0 transition-colors ${
-                        assumptionsA.includes(a.id)
+                        assumptionsA.includes(id)
                           ? "bg-cyan border-cyan text-void font-bold"
                           : "border-border"
                       }`}
                     >
-                      {assumptionsA.includes(a.id) ? "✓" : ""}
+                      {assumptionsA.includes(id) ? "✓" : ""}
                     </span>
                     <span className="text-[9px] font-sans leading-tight text-foreground/80 select-none">
-                      {locale === "vi" ? a.labelVi : a.labelEn}
+                      {t(`assumptionsList.${id}`)}
                     </span>
                   </button>
                 ))}
@@ -149,12 +106,12 @@ export default function OccamsRazor({ locale }: OccamsRazorProps) {
             {/* Shaved Overlay Status */}
             {isShavedA && (
               <div className="text-[9px] font-mono text-magenta text-center font-bold tracking-wide mt-2 animate-pulse">
-                {locale === "vi" ? "✗ BỊ CẮT BỎ (QUÁ PHỨC TẠP)" : "✗ SHAVED (TOO COMPLEX)"}
+                {t("shavedStatus")}
               </div>
             )}
             {!isShavedA && (
               <div className="text-[9px] font-mono text-teal text-center font-bold tracking-wide mt-2">
-                {locale === "vi" ? "✓ KHẢ THI (HỢP LÝ)" : "✓ PLAUSIBLE (PARSIMONIOUS)"}
+                {t("plausibleStatus")}
               </div>
             )}
           </div>
@@ -187,8 +144,8 @@ export default function OccamsRazor({ locale }: OccamsRazorProps) {
                 <h4 className="text-[11px] font-bold text-cyan font-mono uppercase tracking-wider">
                   {t("theoryB") || "Theory B"}
                 </h4>
-                <span className="text-[8px] font-mono text-muted">
-                  {locale === "vi" ? "Giả thuyết Phức tạp" : "Conspiratorial Explan."}
+                <span className="text-[8px] font-mono text-muted font-semibold">
+                  {t("theoryBDesc")}
                 </span>
               </div>
 
@@ -204,24 +161,24 @@ export default function OccamsRazor({ locale }: OccamsRazorProps) {
 
               {/* Checkbox Items */}
               <div className="flex flex-col gap-1.5 mt-2">
-                {assumptionsListB.map((b) => (
+                {assumptionsListB.map((id) => (
                   <button
-                    key={b.id}
+                    key={id}
                     type="button"
-                    onClick={() => toggleAssumptionB(b.id)}
+                    onClick={() => toggleAssumptionB(id)}
                     className="flex items-start text-left gap-1.5 p-1 rounded hover:bg-surface-overlay transition-colors"
                   >
                     <span
                       className={`w-3 h-3 rounded flex items-center justify-center border font-mono text-[8px] mt-0.5 shrink-0 transition-colors ${
-                        assumptionsB.includes(b.id)
+                        assumptionsB.includes(id)
                           ? "bg-cyan border-cyan text-void font-bold"
                           : "border-border"
                       }`}
                     >
-                      {assumptionsB.includes(b.id) ? "✓" : ""}
+                      {assumptionsB.includes(id) ? "✓" : ""}
                     </span>
                     <span className="text-[9px] font-sans leading-tight text-foreground/80 select-none">
-                      {locale === "vi" ? b.labelVi : b.labelEn}
+                      {t(`assumptionsList.${id}`)}
                     </span>
                   </button>
                 ))}
@@ -231,12 +188,12 @@ export default function OccamsRazor({ locale }: OccamsRazorProps) {
             {/* Shaved Overlay Status */}
             {isShavedB && (
               <div className="text-[9px] font-mono text-magenta text-center font-bold tracking-wide mt-2 animate-pulse">
-                {locale === "vi" ? "✗ BỊ CẮT BỎ (QUÁ PHỨC TẠP)" : "✗ SHAVED (TOO COMPLEX)"}
+                {t("shavedStatus")}
               </div>
             )}
             {!isShavedB && (
               <div className="text-[9px] font-mono text-teal text-center font-bold tracking-wide mt-2">
-                {locale === "vi" ? "✓ KHẢ THI (HỢP LÝ)" : "✓ PLAUSIBLE (PARSIMONIOUS)"}
+                {t("plausibleStatus")}
               </div>
             )}
           </div>

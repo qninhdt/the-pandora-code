@@ -2,6 +2,7 @@ import { CanonBadge } from "@/components/classification/canon-badge";
 import type { ClassificationPct, LocalizedString } from "@/lib/content/schemas/shared";
 import { cn } from "@/lib/utils";
 import { Clock } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 
 interface ChapterHeroProps {
   title: LocalizedString;
@@ -10,7 +11,6 @@ interface ChapterHeroProps {
   authors?: string[];
   readingTimeMin?: number;
   classification: ClassificationPct;
-  locale: "vi" | "en";
   /** Optional hero image (the chapter's establishing figure) for full-bleed. */
   imageSrc?: string;
   /** Optional action controls (e.g. bookmark) rendered in the meta row. */
@@ -28,11 +28,14 @@ export function ChapterHero({
   authors,
   readingTimeMin,
   classification,
-  locale,
   imageSrc,
   actions,
   className,
 }: ChapterHeroProps) {
+  const locale = useLocale() as "vi" | "en";
+  const tClassification = useTranslations("classification");
+  const tCommon = useTranslations("common");
+
   const tiers = [
     { kind: "canon" as const, pct: classification.canon_pct },
     { kind: "inference" as const, pct: classification.inference_pct },
@@ -74,8 +77,8 @@ export function ChapterHero({
         {tiers.length > 0 && (
           <div className="mb-6 flex flex-wrap gap-2">
             {tiers.map((t) => (
-              <CanonBadge key={t.kind} kind={t.kind} locale={locale}>
-                {`${labelFor(t.kind, locale)} ${t.pct}%`}
+              <CanonBadge key={t.kind} kind={t.kind}>
+                {`${tClassification(t.kind)} ${t.pct}%`}
               </CanonBadge>
             ))}
           </div>
@@ -114,7 +117,7 @@ export function ChapterHero({
           {readingTimeMin && (
             <span className="flex items-center gap-1.5">
               <Clock size={14} aria-hidden />
-              {readingTimeMin} {locale === "vi" ? "phút đọc" : "min read"}
+              {tCommon("readingTime", { minutes: readingTimeMin })}
             </span>
           )}
           {actions && <span className="ml-auto flex items-center gap-2">{actions}</span>}
@@ -122,17 +125,4 @@ export function ChapterHero({
       </div>
     </header>
   );
-}
-
-function labelFor(
-  kind: "canon" | "inference" | "speculation" | "real_science",
-  locale: "vi" | "en",
-) {
-  const map = {
-    canon: { vi: "Chính truyện", en: "Canon" },
-    inference: { vi: "Suy luận", en: "Inference" },
-    speculation: { vi: "Suy đoán", en: "Speculation" },
-    real_science: { vi: "Khoa học thật", en: "Real science" },
-  };
-  return map[kind][locale];
 }

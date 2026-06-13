@@ -7,10 +7,10 @@ import { cn } from "@/lib/utils";
 import { ChevronDown, Search } from "lucide-react";
 import { useMemo, useState } from "react";
 import { GlossaryCard } from "./glossary-card";
+import { useLocale } from "next-intl";
 
 interface GlossaryBrowserProps {
   terms: LocalizedGlossaryTerm[];
-  locale: "vi" | "en";
   covers: Record<string, string | null>;
   labels: {
     searchPlaceholder: string;
@@ -29,7 +29,8 @@ function normalize(s: string): string {
     .toLowerCase();
 }
 
-export function GlossaryBrowser({ terms, locale, covers, labels }: GlossaryBrowserProps) {
+export function GlossaryBrowser({ terms, covers, labels }: GlossaryBrowserProps) {
+  const locale = useLocale() as "vi" | "en";
   const [query, setQuery] = useState("");
   const [activeTag, setActiveTag] = useState<string | null>(null);
   const [tagsOpen, setTagsOpen] = useState(false);
@@ -175,7 +176,6 @@ export function GlossaryBrowser({ terms, locale, covers, labels }: GlossaryBrows
                     key={`${tag}-${term.id}`}
                     term={term}
                     cover={covers[term.id] ?? null}
-                    locale={locale}
                   />
                 ))}
               </div>

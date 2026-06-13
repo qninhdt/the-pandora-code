@@ -4,11 +4,7 @@ import { useTranslations } from "next-intl";
 import React, { useState, useEffect } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface TransitTimingVariationProps {
-  locale: string;
-}
-
-export default function TransitTimingVariation({ locale }: TransitTimingVariationProps) {
+export default function TransitTimingVariation() {
   const t = useTranslations("viz.transitTimingVariation");
   const [hasCompanion, setHasCompanion] = useState(false);
   const [isPlaying, setIsPlaying] = useState(true);

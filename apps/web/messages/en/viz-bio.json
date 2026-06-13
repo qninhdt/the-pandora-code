@@ -95,7 +95,34 @@
       "fuelLabel": "Fuel (luciferin)",
       "enzymeLabel": "Enzyme",
       "hint": "Tap a branch to see its own fuel and enzyme.",
-      "note": "Each branch glows with a different fuel molecule and a different enzyme. They did not inherit light from a shared glowing ancestor — every lineage stumbled onto it on its own."
+      "note": "Each branch glows with a different fuel molecule and a different enzyme. They did not inherit light from a shared glowing ancestor — every lineage stumbled onto it on its own.",
+      "lineages": {
+        "bacteria": {
+          "name": "Bacteria",
+          "fuel": "Reduced flavin (FMNH₂)",
+          "enzyme": "Bacterial luciferase"
+        },
+        "dino": {
+          "name": "Dinoflagellates",
+          "fuel": "Open-chain tetrapyrrole",
+          "enzyme": "Dinoflagellate luciferase"
+        },
+        "fungi": {
+          "name": "Fungi",
+          "fuel": "3-hydroxyhispidin",
+          "enzyme": "Luz (fungal)"
+        },
+        "cnidaria": {
+          "name": "Cnidarians",
+          "fuel": "Coelenterazine",
+          "enzyme": "Aequorin / luciferase"
+        },
+        "firefly": {
+          "name": "Fireflies",
+          "fuel": "D-luciferin",
+          "enzyme": "Firefly luciferase"
+        }
+      }
     },
     "umweltLens": {
       "title": "One scene, four worlds",
@@ -469,6 +496,15 @@
       "prey": "Hexapede (Prey)",
       "predator": "Viperwolf (Predator)",
       "carryingCapacity": "Carrying capacity (K)",
+      "preyBirth": "Prey Birth",
+      "predation": "Predation",
+      "predBirth": "Pred Birth",
+      "predDeath": "Pred Death",
+      "preySwitching": "PREY-SWITCHING (STABLE)",
+      "carryingCapacityLabel": "CARRYING CAPACITY (K)",
+      "nearCapacity": "Near Carrying Capacity",
+      "simulating": "Simulating",
+      "pausedStatus": "Paused",
       "hint": "Adjust birth, predation, and death rates. Enable Prey-switching to stabilize oscillations, or introduce a Carrying Capacity (K) to test the Paradox of Enrichment."
     },
     "chirality": {
@@ -480,15 +516,20 @@
       "analyzerAngle": "Analyzer angle",
       "concentration": "Concentration",
       "brightness": "Detector light",
+      "lightSource": "Light Source",
+      "sampleTube": "Sample Tube",
+      "rotationPlane": "Light rotation plane:",
       "hint": "Rotate the analyzer dial to align with the rotated light plane. Chiral molecules rotate polarized light clockwise (D-form) or counterclockwise (L-form)."
     },
     "umwelt": {
       "title": "The Pandoran Umwelt",
       "humanFilter": "Human",
-      "biolumFilter": "Biolum",
-      "echoFilter": "Echoloc",
-      "magneticFilter": "Magnetic",
-      "thermalFilter": "Thermal",
+      "humanVisible": "Human Visible",
+      "biolumFilter": "Biolum Filter",
+      "echoFilter": "Echolocation contours",
+      "magneticFilter": "Magnetic Flux lines",
+      "thermalFilter": "Infrared Thermal",
+      "gogglesLabel": "SENSORY RECEPTOR GOGGLES:",
       "hint": "Toggle the sensory goggles to perceive the environment through the eyes of different organisms. Standard vision sees ordinary colors; specialized senses isolate bioluminescent cues, sonar contours, magnetic field lines, or heat signatures."
     }
   }

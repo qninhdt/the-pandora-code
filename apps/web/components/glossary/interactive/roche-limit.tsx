@@ -4,10 +4,6 @@ import { useTranslations } from "next-intl";
 import React, { useState, useEffect } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface RocheLimitProps {
-  locale: string;
-}
-
 interface Particle {
   id: number;
   radius: number;
@@ -17,7 +13,7 @@ interface Particle {
   size: number;
 }
 
-export default function RocheLimit({ locale }: RocheLimitProps) {
+export default function RocheLimit() {
   const t = useTranslations("viz.rocheLimit");
   const [radius, setRadius] = useState(2.2); // Relative units (0.6 .. 3.0)
   const [isPlaying, setIsPlaying] = useState(true);

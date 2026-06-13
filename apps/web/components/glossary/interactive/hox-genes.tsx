@@ -4,10 +4,6 @@ import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface HoxGenesProps {
-  locale?: string;
-}
-
 interface Gene {
   id: number;
   geneName: string;
@@ -85,7 +81,7 @@ const GENES: Gene[] = [
   },
 ];
 
-export default function HoxGenes({ locale }: HoxGenesProps) {
+export default function HoxGenes() {
   const t = useTranslations("viz.hoxMap");
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
 

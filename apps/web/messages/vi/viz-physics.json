@@ -38,7 +38,19 @@
       "verdictTie": "Bất phân thắng bại",
       "noteA": "Dựa trên ít niềm tin mù quáng hơn.",
       "noteB": "Dựa trên ít niềm tin mù quáng hơn.",
-      "noteTie": "Không thể phân định chỉ dựa vào sự tối giản."
+      "noteTie": "Không thể phân định chỉ dựa vào sự tối giản.",
+      "theoryADesc": "Giải thích Tự nhiên",
+      "theoryBDesc": "Giả thuyết Phức tạp",
+      "shavedStatus": "✗ BỊ CẮT BỎ (QUÁ PHỨC TẠP)",
+      "plausibleStatus": "✓ KHẢ THI (HỢP LÝ)",
+      "assumptionsList": {
+        "active": "Banshee kiếm ăn tại khu vực này",
+        "hungry": "Banshee đang đói (săn mồi)",
+        "drones": "RDA đã triển khai drone tàng hình",
+        "paint": "Drone bị rò rỉ hóa chất phát quang màu lam",
+        "stealth": "Drone cố tình bẻ gãy cành cây để đánh dấu",
+        "wind": "Cơn bão lớn đã thổi bay drone đến đây mà không bị phát hiện"
+      }
     },
     "shannonEntropy": {
       "title": "Entropy Shannon",
@@ -69,6 +81,8 @@
       "modeLabel": "Pha bay",
       "phaseAscent": "Bay lên (thu năng lượng)",
       "phaseDescent": "Lao xuống (tăng tốc độ)",
+      "seaLevel": "Mặt biển (Gió lặng)",
+      "windShear": "Lực xén gió",
       "hint": "Lượn động hoạt động bằng cách bay qua lại giữa các lớp gió có tốc độ khác nhau. Bằng cách bay lên lớp gió mạnh (thu năng lượng) và lao xuống sát mặt biển lặng gió (tăng tốc), cánh chim hấp thụ năng lượng gió để lượn vô tận mà không cần vỗ cánh."
     },
     "squareCubeLaw": {
@@ -83,7 +97,10 @@
       "statusStable": "Ổn định",
       "statusStrained": "Căng thẳng (Cần sự thích nghi của Na'vi)",
       "statusCrushed": "Đổ vỡ (Xương người thường gãy)",
-      "hint": "Gấp đôi chiều cao, bạn có diện tích mặt cắt cơ/xương tăng gấp 4 nhưng khối lượng phải nâng đỡ tăng gấp 8. Ứng suất xương tăng tuyến tính theo kích thước. Đó là lý do người Na'vi có xương gia cố sợi carbon, và sinh vật khổng lồ không thể có tỷ lệ giống người."
+      "hint": "Gấp đôi chiều cao, bạn có diện tích mặt cắt cơ/xương tăng gấp 4 nhưng khối lượng phải nâng đỡ tăng gấp 8. Ứng suất xương tăng tuyến tính theo kích thước. Đó là lý do người Na'vi có xương gia cố sợi carbon, và sinh vật khổng lồ không thể có tỷ lệ giống người.",
+      "gridLabel": "Lớp lưới biểu diễn thể tích",
+      "humanBone": "Xương người thường",
+      "naviBone": "Xương Na'vi gia cố"
     },
     "shannonChannel": {
       "title": "Giới hạn kênh truyền của Shannon",
@@ -124,6 +141,17 @@
       "consciousSlider": "Tốc độ ý thức",
       "aria": "Các giác quan đổ vào mười một triệu bit mỗi giây; chỉ {conscious} chạm tới nhận thức — một tỉ lệ nén gấp {compression} lần.",
       "hint": "Các giác quan đổ ~11 Mb/s vào hệ thần kinh, nhưng dòng chảy chạm tới nhận thức — cái tôi biết suy nghĩ và ghi nhớ — chỉ chạy ở vài chục bit mỗi giây. Kéo thanh trượt và xem cả một đời cái tôi co lại còn vài chục gigabit: đủ nhỏ, cuối cùng, để gửi qua mối liên kết trong một đêm."
+    },
+    "allometry": {
+      "title": "Ứng suất và Tương quan sinh trưởng (Allometry)",
+      "statusStable": "Bộ xương chắc chắn",
+      "statusOverloaded": "Xương bị quá tải",
+      "infoAllometric": "Allometry: Xương phát triển phi tuyến tính dày lên nhanh hơn chiều dài cơ thể để giữ cho áp lực xương không đổi.",
+      "infoIsometric": "Isometry: Xương phát triển tuyến tính. Thể tích (trọng lượng) tăng gấp 8 lần khi chiều dài gấp đôi, làm xương dễ gãy.",
+      "boneWidth": "Độ dày xương:",
+      "boneStress": "ỨNG SUẤT XƯƠNG",
+      "mass": "Khối lượng cơ thể",
+      "sizeLabel": "Hệ số tỷ lệ (k)"
     },
     "scaleUp": {
       "title": "Thử thách nhân quy mô",
@@ -221,7 +249,9 @@
       "pause": "Dừng",
       "hint": "Hạ nhiệt độ xuống dưới Tc: điện trở rơi thẳng về 0 và nam châm bị khóa lơ lửng trong không trung.",
       "levitating": "Khóa từ thông — lơ lửng",
-      "resting": "Nằm yên trên mặt"
+      "resting": "Nằm yên trên mặt",
+      "dragToMove": "KÉO KHỐI ĐỂ DI CHUYỂN DỌC THEO ĐƯỜNG RAY",
+      "lowerToLevitate": "HẠ NHIỆT ĐỘ XUỐNG DƯỚI Tc ĐỂ BAY LÊN"
     },
     "torukFlight": {
       "title": "Cỗ máy mô phỏng cất cánh Toruk",

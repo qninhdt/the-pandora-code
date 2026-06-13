@@ -1,3 +1,4 @@
+import { useLocale, useTranslations } from "next-intl";
 import type { LocalizedString } from "@/lib/content/schemas/shared";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -11,22 +12,24 @@ export interface RelatedChapterCard {
 
 interface RelatedChaptersProps {
   chapters: RelatedChapterCard[];
-  locale: "vi" | "en";
   heading?: string;
   className?: string;
 }
 
 export function RelatedChapters({
   chapters = [],
-  locale,
   heading,
   className,
 }: RelatedChaptersProps) {
+  const locale = useLocale() as "vi" | "en";
+  const t = useTranslations("chapter");
+  const tCommon = useTranslations("common");
+
   if (chapters.length === 0) return null;
   return (
     <section className={cn("my-12", className)} aria-label={heading ?? "Related chapters"}>
       <h3 className="text-xs uppercase tracking-wide font-mono mb-4 text-[color:var(--muted)]">
-        {heading ?? (locale === "vi" ? "Đọc tiếp" : "Read next")}
+        {heading ?? t("readNext")}
       </h3>
       <ul className="grid gap-3 sm:grid-cols-2">
         {chapters.map((c) => (
@@ -43,7 +46,7 @@ export function RelatedChapters({
               ) : null}
               {c.reading_time_min ? (
                 <p className="mt-2 text-xs font-mono text-[color:var(--muted)]">
-                  {c.reading_time_min} {locale === "vi" ? "phút đọc" : "min read"}
+                  {tCommon("readingTime", { minutes: c.reading_time_min })}
                 </p>
               ) : null}
             </Link>

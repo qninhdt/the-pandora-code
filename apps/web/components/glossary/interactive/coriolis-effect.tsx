@@ -4,14 +4,10 @@ import { useTranslations } from "next-intl";
 import React, { useState, useEffect, useRef } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface CoriolisEffectProps {
-  locale: string;
-}
-
 type HemisphereType = "northern" | "southern";
 type LaunchFromType = "pole" | "equator";
 
-export default function CoriolisEffect({ locale }: CoriolisEffectProps) {
+export default function CoriolisEffect() {
   const t = useTranslations("viz.coriolisEffect");
 
   const [hemisphere, setHemisphere] = useState<HemisphereType>("northern");
@@ -333,7 +329,7 @@ export default function CoriolisEffect({ locale }: CoriolisEffectProps) {
                       : "bg-surface border-border/30 text-muted hover:text-foreground"
                   }`}
                 >
-                  {locale === "vi" ? "Bán cầu Bắc" : "Northern"}
+                  {t("northernShort")}
                 </button>
                 <button
                   type="button"
@@ -347,7 +343,7 @@ export default function CoriolisEffect({ locale }: CoriolisEffectProps) {
                       : "bg-surface border-border/30 text-muted hover:text-foreground"
                   }`}
                 >
-                  {locale === "vi" ? "Bán cầu Nam" : "Southern"}
+                  {t("southernShort")}
                 </button>
               </div>
             </div>
@@ -371,7 +367,7 @@ export default function CoriolisEffect({ locale }: CoriolisEffectProps) {
                       : "bg-surface border-border/30 text-muted hover:text-foreground"
                   }`}
                 >
-                  {locale === "vi" ? "Cực Bắc" : "North Pole"}
+                  {t("poleShort")}
                 </button>
                 <button
                   type="button"
@@ -386,7 +382,7 @@ export default function CoriolisEffect({ locale }: CoriolisEffectProps) {
                       : "bg-surface border-border/30 text-muted hover:text-foreground"
                   }`}
                 >
-                  {locale === "vi" ? "Xích đạo" : "Equator"}
+                  {t("equatorShort")}
                 </button>
               </div>
             </div>

@@ -4,16 +4,12 @@ import { useTranslations } from "next-intl";
 import React, { useState, useEffect, useMemo } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface IntegratedInformationTheoryProps {
-  locale: string;
-}
-
 interface Point {
   x: number;
   y: number;
 }
 
-export default function IntegratedInformationTheory({ locale }: IntegratedInformationTheoryProps) {
+export default function IntegratedInformationTheory() {
   const t = useTranslations("viz.integrationVsSize");
 
   const [recurrence, setRecurrence] = useState(0); // 0 to 1

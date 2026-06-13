@@ -4,16 +4,11 @@ import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface CladogramProps {
-  locale: string;
-}
-
-export default function Cladogram({ locale }: CladogramProps) {
+export default function Cladogram() {
   const t = useTranslations("viz.characterMatrix");
   const [isParsimony, setIsParsimony] = useState(true);
 
   const stepsCount = isParsimony ? 2 : 4;
-  const isVi = locale === "vi";
 
   return (
     <GlossaryFrame
@@ -244,7 +239,7 @@ export default function Cladogram({ locale }: CladogramProps) {
               boxShadow: isParsimony ? "0 0 8px rgba(43, 212, 168, 0.4)" : "none",
             }}
           >
-            {isVi ? "Tối giản (Parsimony)" : "MAXIMUM PARSIMONY"}
+            {t("btnParsimony")}
           </button>
 
           {/* Phenetic Similarity Button */}
@@ -259,7 +254,7 @@ export default function Cladogram({ locale }: CladogramProps) {
               boxShadow: !isParsimony ? "0 0 8px rgba(255, 93, 168, 0.4)" : "none",
             }}
           >
-            {isVi ? "Tương đồng (Phenetic)" : "PHENETIC SIMILARITY"}
+            {t("btnPhenetic")}
           </button>
         </div>
       </div>

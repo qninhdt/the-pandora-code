@@ -4,11 +4,7 @@ import { useTranslations } from "next-intl";
 import React, { useState, useEffect } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface HabitableZoneProps {
-  locale: string;
-}
-
-export default function HabitableZone({ locale }: HabitableZoneProps) {
+export default function HabitableZone() {
   const t = useTranslations("viz.habitableZone");
   const [temp, setTemp] = useState(5800); // Kelvin
   const [isPlaying, setIsPlaying] = useState(true);

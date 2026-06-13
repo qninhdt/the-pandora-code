@@ -1,13 +1,11 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import React, { useState, useEffect } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface AlphaCentauriProps {
-  locale: string;
-}
-
-export default function AlphaCentauri({ locale }: AlphaCentauriProps) {
+export default function AlphaCentauri() {
+  const t = useTranslations("viz.alphaCentauri");
   const [speed, setSpeed] = useState(1);
   const [zoom, setZoom] = useState(1);
   const [time, setTime] = useState(0);
@@ -27,32 +25,24 @@ export default function AlphaCentauri({ locale }: AlphaCentauriProps) {
 
   const starData: Record<string, { name: string; type: string; temp: string; dist: string }> = {
     A: {
-      name:
-        locale === "vi"
-          ? "Alpha Centauri A (Rigil Kentaurus)"
-          : "Alpha Centauri A (Rigil Kentaurus)",
-      type: locale === "vi" ? "Sao lùn vàng (G2V)" : "Yellow Dwarf (G2V)",
+      name: t("starA.name"),
+      type: t("starA.type"),
       temp: "5,790 K",
       dist: "1.1 R☉",
     },
     B: {
-      name: locale === "vi" ? "Alpha Centauri B (Toliman)" : "Alpha Centauri B (Toliman)",
-      type: locale === "vi" ? "Sao lùn cam (K1V)" : "Orange Dwarf (K1V)",
+      name: t("starB.name"),
+      type: t("starB.type"),
       temp: "5,260 K",
       dist: "0.86 R☉",
     },
     Proxima: {
-      name: locale === "vi" ? "Proxima Centauri" : "Proxima Centauri",
-      type: locale === "vi" ? "Sao lùn đỏ (M6Ve)" : "Red Dwarf (M6Ve)",
+      name: t("starProxima.name"),
+      type: t("starProxima.type"),
       temp: "3,040 K",
       dist: "0.15 R☉",
     },
   };
-
-  const infoText =
-    locale === "vi"
-      ? "Hệ sao Alpha Centauri gồm ba ngôi sao: Alpha Centauri A và B tạo thành một hệ sao kép quay quanh một khối tâm chung, và Proxima Centauri là một sao lùn đỏ mờ hơn quay quanh cặp đôi này ở khoảng cách rất xa."
-      : "The Alpha Centauri system consists of three stars: Alpha Centauri A and B forming a close binary pair, and Proxima Centauri, a faint red dwarf orbiting the pair at a great distance.";
 
   // Coordinates calculated based on time, speed, and zoom
   const center = { x: 200, y: 150 };
@@ -78,8 +68,8 @@ export default function AlphaCentauri({ locale }: AlphaCentauriProps) {
 
   return (
     <GlossaryFrame
-      title={locale === "vi" ? "Hệ thống Alpha Centauri" : "Alpha Centauri Orrery"}
-      infoText={infoText}
+      title={t("title")}
+      infoText={t("infoText")}
       onReset={() => {
         setSpeed(1);
         setZoom(1);
@@ -218,7 +208,7 @@ export default function AlphaCentauri({ locale }: AlphaCentauriProps) {
           <div className="flex items-center gap-4 flex-1">
             {/* Speed slider */}
             <div className="flex items-center gap-2 flex-1">
-              <span className="text-[10px] font-mono text-muted uppercase">Speed</span>
+              <span className="text-[10px] font-mono text-muted uppercase">{t("speed")}</span>
               <input
                 type="range"
                 min="0.1"
@@ -233,7 +223,7 @@ export default function AlphaCentauri({ locale }: AlphaCentauriProps) {
 
             {/* Zoom slider */}
             <div className="flex items-center gap-2 flex-1">
-              <span className="text-[10px] font-mono text-muted uppercase">Zoom</span>
+              <span className="text-[10px] font-mono text-muted uppercase">{t("zoom")}</span>
               <input
                 type="range"
                 min="0.5"

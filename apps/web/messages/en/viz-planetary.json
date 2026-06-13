@@ -49,7 +49,17 @@
       "precipLabel": "Precipitation",
       "earth": "Earth tropics",
       "pandora": "Pandora (Australis)",
-      "hint": "Drag the point — or use the sliders — to see which climate grows which biome. Pandora is warm and wet: rainforest runs wide."
+      "hint": "Drag the point — or use the sliders — to see which climate grows which biome. Pandora is warm and wet: rainforest runs wide.",
+      "biomes": {
+        "tundra": "Tundra",
+        "boreal": "Boreal forest",
+        "grassland": "Temperate grassland",
+        "tempForest": "Temperate forest",
+        "tempRainforest": "Temperate rainforest",
+        "desert": "Subtropical desert",
+        "savanna": "Tropical savanna",
+        "tropicalRainforest": "Tropical rainforest"
+      }
     },
     "circulationBands": {
       "title": "Atmospheric circulation",
@@ -67,6 +77,7 @@
       "desert": "Desert",
       "temperate": "Temperate",
       "polar": "Cold lands",
+      "equatorHeating": "Equator Heating",
       "takeaway": "The width of the cell sets the latitude of every forest and desert - and because Pandora spins slowly, its rainforest spreads across almost the whole world."
     },
     "atmosphere": {
@@ -201,7 +212,27 @@
       "contrast": "Contrast/Exposure",
       "planetDetected": "Exoplanet Detected",
       "starGlare": "Star Glare Overwhelming",
+      "underexposed": "Underexposed",
+      "instrumentGlare": "Instrument Glare",
       "hint": "Without a coronagraph mask, the star's glare completely blinds us. Turn on the mask to block the star's light and reveal the planet."
+    },
+    "alphaCentauri": {
+      "title": "Alpha Centauri Orrery",
+      "infoText": "The Alpha Centauri system consists of three stars: Alpha Centauri A and B forming a close binary pair, and Proxima Centauri, a faint red dwarf orbiting the pair at a great distance.",
+      "starA": {
+        "name": "Alpha Centauri A (Rigil Kentaurus)",
+        "type": "Yellow Dwarf (G2V)"
+      },
+      "starB": {
+        "name": "Alpha Centauri B (Toliman)",
+        "type": "Orange Dwarf (K1V)"
+      },
+      "starProxima": {
+        "name": "Proxima Centauri",
+        "type": "Red Dwarf (M6Ve)"
+      },
+      "speed": "Speed",
+      "zoom": "Zoom"
     },
     "transitTimingVariation": {
       "title": "Transit Timing Variations (TTV)",
@@ -218,6 +249,7 @@
       "bulge": "Tidal bulge alignment",
       "observerPolyphemus": "View from Giant: Moon rotates",
       "observerPolyphemusLocked": "View from Giant: Permanent face",
+      "orbitSpeed": "Orbit Speed",
       "hint": "Toggle between Unlocked and Locked. Unlocked moons spin freely; Locked moons are tidally distorted, keeping one face permanently turned toward the parent giant."
     },
     "transmissionSpectroscopy": {
@@ -247,6 +279,8 @@
       "hemisphere": "Hemisphere",
       "northern": "Northern (Deflects Right)",
       "southern": "Southern (Deflects Left)",
+      "northernShort": "Northern",
+      "southernShort": "Southern",
       "spinSpeed": "Rotation Speed",
       "stationary": "Stationary",
       "fast": "Fast",
@@ -254,6 +288,8 @@
       "launchPos": "Launch From",
       "pole": "North Pole (Outward)",
       "equator": "Equator (Inward)",
+      "poleShort": "North Pole",
+      "equatorShort": "Equator",
       "inertialPath": "Space view (Inertial path)",
       "apparentPath": "Surface view (Apparent path)",
       "planetPresets": "Planetary Spin Comparison",

@@ -4,11 +4,7 @@ import { useTranslations } from "next-intl";
 import React, { useState, useEffect } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface DynamicSoaringProps {
-  locale: string;
-}
-
-export default function DynamicSoaring({ locale }: DynamicSoaringProps) {
+export default function DynamicSoaring() {
   const t = useTranslations("viz.dynamicSoaring");
 
   const [shearStrength, setShearStrength] = useState(70); // 0% to 100%
@@ -103,8 +99,8 @@ export default function DynamicSoaring({ locale }: DynamicSoaringProps) {
               })}
 
               {/* Wind Gradient label */}
-              <text x="20" y="116" className="fill-muted font-mono text-[6.5px]">
-                {locale === "vi" ? "Mặt biển (Gió lặng)" : "Sea level (Calm)"}
+              <text x="20" y="116" className="fill-muted font-mono text-[7px] text-right">
+                {t("seaLevel")}
               </text>
               <text x="20" y="12" className="fill-cyan font-mono text-[6.5px]">
                 {t("windGradient") || "Wind Gradient"}
@@ -168,8 +164,8 @@ export default function DynamicSoaring({ locale }: DynamicSoaringProps) {
         <div className="absolute bottom-4 left-4 right-4 bg-void/85 backdrop-blur-md p-3 border border-border/30 rounded-xl flex flex-col gap-2.5 z-10 text-[9.5px] font-mono">
           {/* Wind Shear slider */}
           <div className="flex items-center gap-3">
-            <span className="text-[9px] font-mono text-muted w-24 truncate uppercase">
-              {locale === "vi" ? "Lực xén gió" : "Wind Shear"}:
+            <span className="text-[10px] font-mono text-muted uppercase">
+              {t("windShear")}:
             </span>
             <input
               type="range"

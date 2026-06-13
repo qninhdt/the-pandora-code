@@ -4,11 +4,7 @@ import { useTranslations } from "next-intl";
 import React, { useState, useEffect } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface TidalHeatingProps {
-  locale: string;
-}
-
-export default function TidalHeating({ locale }: TidalHeatingProps) {
+export default function TidalHeating() {
   const t = useTranslations("viz.tidalHeating");
   const [eccentricity, setEccentricity] = useState(0.4);
   const [isPlaying, setIsPlaying] = useState(true);

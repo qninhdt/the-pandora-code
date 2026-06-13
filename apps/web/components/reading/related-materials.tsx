@@ -3,6 +3,7 @@ import type { Source } from "@/lib/content/schemas/shared";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { type RelatedChapterCard, RelatedChapters } from "./related-chapters";
+import { useLocale } from "next-intl";
 
 export interface RelatedGlossaryChip {
   id: string;
@@ -21,7 +22,6 @@ interface RelatedMaterialsLabels {
 }
 
 interface RelatedMaterialsProps {
-  locale: "vi" | "en";
   chapters: RelatedChapterCard[];
   glossary: RelatedGlossaryChip[];
   sources: Source[];
@@ -36,13 +36,13 @@ interface RelatedMaterialsProps {
  * whole section disappears if there is nothing to show.
  */
 export function RelatedMaterials({
-  locale,
   chapters,
   glossary,
   sources,
   labels,
   className,
 }: RelatedMaterialsProps) {
+  const locale = useLocale() as "vi" | "en";
   const hasContent = chapters.length > 0 || glossary.length > 0 || sources.length > 0;
   if (!hasContent) return null;
 
@@ -58,7 +58,6 @@ export function RelatedMaterials({
       {chapters.length > 0 ? (
         <RelatedChapters
           chapters={chapters}
-          locale={locale}
           heading={labels.relatedChapters}
           className="my-6"
         />
@@ -87,7 +86,6 @@ export function RelatedMaterials({
       {sources.length > 0 ? (
         <SourceList
           sources={sources}
-          locale={locale}
           heading={labels.sources}
           className="my-6 border-t-0 pt-0"
         />

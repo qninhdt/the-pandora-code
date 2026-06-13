@@ -24,7 +24,6 @@ export async function generateMetadata({ params }: DesignDebugProps): Promise<Me
 export default async function DesignDebug({ params }: DesignDebugProps) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const loc = locale === "en" ? "en" : "vi";
 
   return (
     <main className="mx-auto max-w-4xl space-y-16 px-6 py-20">
@@ -53,10 +52,10 @@ export default async function DesignDebug({ params }: DesignDebugProps) {
 
       <Section title="Classification tiers">
         <div className="flex flex-wrap gap-3">
-          <CanonBadge kind="canon" locale={loc} />
-          <CanonBadge kind="inference" locale={loc} />
-          <CanonBadge kind="speculation" locale={loc} />
-          <CanonBadge kind="real_science" locale={loc} />
+          <CanonBadge kind="canon" />
+          <CanonBadge kind="inference" />
+          <CanonBadge kind="speculation" />
+          <CanonBadge kind="real_science" />
         </div>
       </Section>
 

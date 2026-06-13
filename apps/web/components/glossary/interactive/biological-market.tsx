@@ -5,16 +5,12 @@ import { useTranslations } from "next-intl";
 import React, { useState, useEffect, useMemo, useCallback } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface BiologicalMarketProps {
-  locale: string;
-}
-
 interface Point {
   x: number;
   y: number;
 }
 
-export default function BiologicalMarket({ locale }: BiologicalMarketProps) {
+export default function BiologicalMarket() {
   const t = useTranslations("viz.mycorrhizalMarket");
 
   const [carbon, setCarbon] = useState(60); // 0 to 100

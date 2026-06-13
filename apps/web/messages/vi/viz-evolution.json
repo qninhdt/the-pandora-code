@@ -37,6 +37,8 @@
       "matrixHead": "Đặc điểm × đơn vị phân loại",
       "parsimony": "Tiết kiệm (đúng)",
       "phenetic": "Tương đồng bề ngoài (bẫy)",
+      "btnParsimony": "Tối giản (Parsimony)",
+      "btnPhenetic": "Tương đồng (Phenetic)",
       "steps": "Số bước tiến hóa",
       "stepsParsimony": "Ít bước nhất — chỉ một lần mọc xương sợi-carbon và queue",
       "stepsPhenetic": "Bùng nổ số bước — xương sợi-carbon và queue phải mọc hai lần trên hai thế giới",
@@ -69,7 +71,13 @@
       "attracted": "Bị hút!",
       "fast": "tiến hóa nhanh",
       "slow": "chậm",
-      "hint": "Trên Trái Đất, dữ liệu phân tử sửa được lỗi này. Pandora không có phân tử nào — nên cây dựng từ hình thái vẫn dễ sập vào cái bẫy này."
+      "hint": "Trên Trái Đất, dữ liệu phân tử sửa được lỗi này. Pandora không có phân tử nào — nên cây dựng từ hình thái vẫn dễ sập vào cái bẫy này.",
+      "tips": {
+        "a": "Thú chạy",
+        "b": "Ikran",
+        "c": "Thú bơi",
+        "d": "Toruk"
+      }
     },
     "limbField": {
       "title": "Bộ công cụ, ba công tắc",

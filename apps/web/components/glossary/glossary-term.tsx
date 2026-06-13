@@ -10,6 +10,7 @@ import {
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { glossaryTagLabel } from "@/lib/content/schemas/glossary-tags";
 import { cn } from "@/lib/utils";
+import { useLocale, useTranslations } from "next-intl";
 
 interface GlossaryTermProps {
   slug: string;
@@ -21,7 +22,6 @@ interface GlossaryTermProps {
   coverSrc?: string;
   /** Topic tags resolved server-side from the glossary YAML. */
   tags?: string[];
-  locale?: "vi" | "en";
   className?: string;
   children?: React.ReactNode;
 }
@@ -32,10 +32,11 @@ export function GlossaryTerm({
   definition,
   coverSrc,
   tags,
-  locale = "vi",
   className,
   children,
 }: GlossaryTermProps) {
+  const locale = useLocale() as "vi" | "en";
+  const t = useTranslations("page.glossary");
   const label = children ?? term ?? slug;
   const triggerClass = cn(
     "rounded px-0.5 align-baseline font-medium text-[color:var(--accent)] underline decoration-dotted underline-offset-4 cursor-help",
@@ -112,7 +113,7 @@ export function GlossaryTerm({
               href={`/${locale}/glossary#${slug}`}
               className="mt-1 text-xs font-medium text-[color:var(--accent)]"
             >
-              {locale === "vi" ? "Xem trong từ điển →" : "View in glossary →"}
+              {t("viewInGlossary")}
             </a>
           </DialogContent>
         </Dialog>

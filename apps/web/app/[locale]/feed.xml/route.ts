@@ -1,6 +1,7 @@
 import { type Locale, isLocale } from "@/i18n/config";
 import { listPublishedChapters } from "@/lib/content/loader/chapter-loader";
 import { getSiteUrl } from "@/lib/seo/site-url";
+import { getTranslations } from "next-intl/server";
 
 export function generateStaticParams() {
   return [{ locale: "en" }, { locale: "vi" }];
@@ -24,11 +25,9 @@ export async function GET(_req: Request, { params }: { params: Promise<{ locale:
   const feedUrl = `${base}/${loc}/feed.xml`;
   const siteUrl = `${base}/${loc}`;
 
-  const title = loc === "vi" ? "The Pandora Code — Chương mới" : "The Pandora Code — Chapters";
-  const description =
-    loc === "vi"
-      ? "Giải mã thế giới Pandora qua khoa học và kể chuyện."
-      : "Pandora, decoded through science and storytelling.";
+  const t = await getTranslations({ locale: loc });
+  const title = t("feed.title");
+  const description = t("feed.description");
 
   const items = listPublishedChapters(loc)
     .map((c) => {

@@ -5,11 +5,7 @@ import type React from "react";
 import { useMemo, useState } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface SquareCubeLawProps {
-  locale: string;
-}
-
-export default function SquareCubeLaw({ locale }: SquareCubeLawProps) {
+export default function SquareCubeLaw() {
   const t = useTranslations("viz.squareCubeLaw");
 
   const [scale, setScale] = useState(1.5); // Linear scale factor 1.0 to 3.0
@@ -131,9 +127,7 @@ export default function SquareCubeLaw({ locale }: SquareCubeLawProps) {
               </svg>
               {/* Display grid count indicator */}
               <div className="absolute bottom-2 left-2 text-[7.5px] font-mono text-muted">
-                {locale === "vi"
-                  ? "Lớp lưới biểu diễn thể tích"
-                  : "Isometric grid division (volume)"}
+                {t("gridLabel")}
               </div>
             </div>
 
@@ -195,7 +189,7 @@ export default function SquareCubeLaw({ locale }: SquareCubeLawProps) {
                   borderColor: boneType === "earth" ? "var(--muted)" : "var(--border)",
                 }}
               >
-                {locale === "vi" ? "Xương người thường" : "Human Bone"}
+                {t("humanBone")}
               </button>
 
               <button
@@ -209,7 +203,7 @@ export default function SquareCubeLaw({ locale }: SquareCubeLawProps) {
                   boxShadow: boneType === "navi" ? "0 0 6px rgba(43, 212, 168, 0.3)" : "none",
                 }}
               >
-                {locale === "vi" ? "Xương Na'vi gia cố" : "Na'vi Carbon Bone"}
+                {t("naviBone")}
               </button>
             </div>
           </div>

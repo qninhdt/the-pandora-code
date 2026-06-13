@@ -24,7 +24,8 @@
     "loading": "Loading...",
     "skipToContent": "Skip to main content",
     "hideAllLabels": "Hide labels on every figure",
-    "showAllLabels": "Show labels on every figure"
+    "showAllLabels": "Show labels on every figure",
+    "language": "Language"
   },
   "search": {
     "trigger": "Search",
@@ -54,7 +55,8 @@
     "openQuestions": "Open questions",
     "readingProgress": "Reading progress",
     "classification": "Content classification",
-    "demoBanner": "This is a DEMO chapter - not official Pandora content."
+    "demoBanner": "This is a DEMO chapter - not official Pandora content.",
+    "readNext": "Read next"
   },
   "classification": {
     "canon": "Canon",
@@ -88,7 +90,8 @@
       "comingSoon": "Coming soon",
       "statsDone": "{done} / {total} decoded",
       "readingTotal": "{minutes} min of reading",
-      "noMatches": "No chapters match your filters."
+      "noMatches": "No chapters match your filters.",
+      "readingUnit": "min"
     },
     "glossary": {
       "title": "Glossary",
@@ -96,7 +99,10 @@
       "searchPlaceholder": "Search terms or definitions…",
       "allTags": "All",
       "resultCount": "{count} terms",
-      "untagged": "Untagged"
+      "untagged": "Untagged",
+      "viewInGlossary": "View in glossary →",
+      "seeAlso": "See also",
+      "allTerms": "All terms"
     },
     "authors": {
       "title": "Author",
@@ -120,15 +126,37 @@
     },
     "topics": {
       "title": "Topic: {tag}",
-      "subtitle": "Chapters sharing this tag."
+      "subtitle": "Chapters sharing this tag.",
+      "topicKicker": "Topic",
+      "empty": "No chapters yet."
     },
     "notFound": {
       "title": "Page not found",
       "back": "Return home"
     }
   },
+  "sources": {
+    "heading": "Sources",
+    "kinds": {
+      "canon": "Canon",
+      "science": "Science",
+      "community": "Community",
+      "research-note": "Research note",
+      "wiki": "Wiki",
+      "other": "Other"
+    }
+  },
+  "lightbox": {
+    "previous": "Previous",
+    "next": "Next",
+    "close": "Close"
+  },
   "footer": {
     "copyright": "© {year} The Pandora Code",
     "disclaimer": "Images are AI-assisted. The stories belong to Pandora, but the science belongs to Earth."
+  },
+  "feed": {
+    "title": "The Pandora Code — Chapters",
+    "description": "Pandora, decoded through science and storytelling."
   }
 }

@@ -4,12 +4,8 @@ import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface AllometryProps {
-  locale: string;
-}
-
-export default function Allometry({ locale }: AllometryProps) {
-  const t = useTranslations("viz.scaleUp");
+export default function Allometry() {
+  const t = useTranslations("viz.allometry");
   const [scale, setScale] = useState(1); // Scale factor 1x to 4x
   const [isAllometric, setIsAllometric] = useState(true);
 
@@ -29,30 +25,18 @@ export default function Allometry({ locale }: AllometryProps) {
 
   const boneStressPercent = Math.min(100, Math.round(stressFactor * 25));
 
-  let statusText = locale === "vi" ? "Bộ xương chắc chắn" : "Skeleton: STABLE";
+  let statusText = t("statusStable");
   let statusClass = "text-teal";
 
   if (!isAllometric && scale > 1.8) {
-    statusText = locale === "vi" ? "Xương bị quá tải" : "Skeleton: BUCKLING RISK";
+    statusText = t("statusOverloaded");
     statusClass = "text-magenta animate-pulse";
   }
 
   return (
     <GlossaryFrame
-      title={
-        locale === "vi"
-          ? "Ứng suất và Tương quan sinh trưởng (Allometry)"
-          : "Bone Stress & Allometry"
-      }
-      infoText={
-        isAllometric
-          ? locale === "vi"
-            ? "Allometry: Xương phát triển phi tuyến tính dày lên nhanh hơn chiều dài cơ thể để giữ cho áp lực xương không đổi."
-            : "Allometry: Bones thicken non-linearly to support the cubed weight, maintaining skeletal integrity."
-          : locale === "vi"
-            ? "Isometry: Xương phát triển tuyến tính. Thể tích (trọng lượng) tăng gấp 8 lần khi chiều dài gấp đôi, làm xương dễ gãy."
-            : "Isometry: Linear scaling. Volume (mass) increases by 8x while bone cross-section only increases by 4x, risking fracture."
-      }
+      title={t("title")}
+      infoText={isAllometric ? t("infoAllometric") : t("infoIsometric")}
       onReset={() => {
         setScale(1);
         setIsAllometric(true);
@@ -147,7 +131,7 @@ export default function Allometry({ locale }: AllometryProps) {
               <span className="text-[9px] text-muted">({lengthMultiple.toFixed(1)}x size)</span>
             </div>
             <div className="text-[8px] text-muted/80 mt-1 font-mono">
-              {locale === "vi" ? "Độ dày xương:" : "Bone width:"}{" "}
+              {t("boneWidth")}{" "}
               <span className="text-cyan">{Math.round(boneWidth * 10) / 10}px</span>
             </div>
           </div>
@@ -155,7 +139,7 @@ export default function Allometry({ locale }: AllometryProps) {
           {/* Stress Meter */}
           <div className="bg-void/90 border border-border/40 rounded-xl p-3 flex-1 pointer-events-auto shadow-lg flex flex-col justify-center max-w-[180px]">
             <h6 className="text-[8px] font-mono font-bold text-muted uppercase mb-0.5">
-              {locale === "vi" ? "ỨNG SUẤT XƯƠNG" : "BONE MECHANICAL STRESS"}
+              {t("boneStress")}
             </h6>
             <div className="text-[10px] font-mono font-semibold tracking-wide mb-1">
               <span className={statusClass}>{statusText}</span>

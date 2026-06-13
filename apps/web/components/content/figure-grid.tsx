@@ -1,5 +1,6 @@
 import { LightboxImage } from "@/components/content/lightbox";
 import { cn } from "@/lib/utils";
+import { useLocale } from "next-intl";
 
 interface FigureGridItem {
   src: string;
@@ -9,7 +10,6 @@ interface FigureGridItem {
 
 interface FigureGridProps {
   items: FigureGridItem[];
-  locale?: "vi" | "en";
   /** Columns on md+ (2 or 3). */
   cols?: 2 | 3;
   className?: string;
@@ -17,7 +17,8 @@ interface FigureGridProps {
 
 // A small gallery of related figures laid out side by side, each with its own
 // bilingual caption. Breaks out wider than the reading column.
-export function FigureGrid({ items, locale = "vi", cols = 2, className }: FigureGridProps) {
+export function FigureGrid({ items, cols = 2, className }: FigureGridProps) {
+  const locale = useLocale() as "vi" | "en";
   return (
     <div
       className={cn(

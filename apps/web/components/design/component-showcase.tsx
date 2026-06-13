@@ -145,7 +145,6 @@ export function ComponentShowcase() {
           src={POSTER}
           figNo="01"
           tier="speculation"
-          locale="vi"
           caption={{
             vi: "Thung lũng phát quang sinh học của Pandora về đêm.",
             en: "A bioluminescent Pandoran valley at night.",
@@ -155,7 +154,6 @@ export function ComponentShowcase() {
 
       <Block label="FigureGrid">
         <FigureGrid
-          locale="vi"
           items={[
             { src: POSTER, caption: "Tầng tán rừng" },
             {
@@ -170,7 +168,6 @@ export function ComponentShowcase() {
         <AnatomyPlate
           src={POSTER}
           title="Cấu tạo núi bay"
-          locale="vi"
           hotspots={[
             {
               x: 30,
@@ -412,7 +409,6 @@ export function ComponentShowcase() {
 
       <Block label="TimelineJourney (cinematic vertical journey)">
         <TimelineJourney
-          locale="vi"
           events={[
             {
               id: "1",

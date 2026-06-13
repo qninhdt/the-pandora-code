@@ -4,10 +4,8 @@ import { GlowDefs, glowUrl } from "@/components/content/viz/glow-defs";
 import { SegmentedToggle } from "@/components/content/viz/segmented-toggle";
 import { VizFigure } from "@/components/content/viz/viz-figure";
 import { VizText } from "@/components/content/viz/viz-svg-text";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useId, useState } from "react";
-
-type Localized = { vi: string; en: string };
 
 // Long-branch attraction, the classic failure mode of morphology-only parsimony.
 // Two fast-evolving flyers (ikran, toruk) sit on genuinely separate lineages in
@@ -17,7 +15,6 @@ type Localized = { vi: string; en: string };
 // evolutionary rate. Creature names stay in code (scientific data).
 interface Tip {
   id: string;
-  name: Localized;
   y: number; // fraction of height
   long: boolean; // long (fast) branch?
 }
@@ -25,18 +22,18 @@ interface Tip {
 // True tree: A (short) sister to long B; C (short) sister to long D. The two
 // long branches (B, D) are on opposite sides of the root — NOT relatives.
 const TRUE_TIPS: Tip[] = [
-  { id: "a", name: { vi: "Thú chạy", en: "Runner" }, y: 0.16, long: false },
-  { id: "b", name: { vi: "Ikran", en: "Ikran" }, y: 0.4, long: true },
-  { id: "c", name: { vi: "Thú bơi", en: "Swimmer" }, y: 0.64, long: false },
-  { id: "d", name: { vi: "Toruk", en: "Toruk" }, y: 0.88, long: true },
+  { id: "a", y: 0.16, long: false },
+  { id: "b", y: 0.4, long: true },
+  { id: "c", y: 0.64, long: false },
+  { id: "d", y: 0.88, long: true },
 ];
 
 // Inferred tree: the two long flyers (B, D) wrongly grouped together at the base.
 const INFERRED_TIPS: Tip[] = [
-  { id: "a", name: { vi: "Thú chạy", en: "Runner" }, y: 0.16, long: false },
-  { id: "c", name: { vi: "Thú bơi", en: "Swimmer" }, y: 0.4, long: false },
-  { id: "b", name: { vi: "Ikran", en: "Ikran" }, y: 0.66, long: true },
-  { id: "d", name: { vi: "Toruk", en: "Toruk" }, y: 0.9, long: true },
+  { id: "a", y: 0.16, long: false },
+  { id: "c", y: 0.4, long: false },
+  { id: "b", y: 0.66, long: true },
+  { id: "d", y: 0.9, long: true },
 ];
 
 const W = 340;
@@ -47,14 +44,13 @@ function TreePanel({
   uid,
   ariaLabel,
   attractedLabel,
-  locale,
 }: {
   inferred: boolean;
   uid: string;
   ariaLabel: string;
   attractedLabel: string;
-  locale: "vi" | "en";
 }) {
+  const t = useTranslations("viz.longBranch");
   const tips = inferred ? INFERRED_TIPS : TRUE_TIPS;
   const rootX = 0.08 * W;
   const yPx = (f: number) => f * (H - 50) + 28;
@@ -119,7 +115,7 @@ function TreePanel({
               filter={glowUrl(uid, tp.long ? "bloom" : "soft-shadow")}
             />
             <VizText x={endX + 9} y={by + 4} size="small" tone="foreground" weight={700}>
-              {tp.name[locale]}
+              {t(`tips.${tp.id}`)}
             </VizText>
           </g>
         );
@@ -152,7 +148,6 @@ type View = "true" | "inferred";
 export function LongBranchAttractionDemo({ caption, className }: LongBranchAttractionDemoProps) {
   const uid = useId();
   const t = useTranslations("viz.longBranch");
-  const locale = useLocale() as "vi" | "en";
   // Deterministic initial render → SSR-safe.
   const [view, setView] = useState<View>("true");
   const inferred = view === "inferred";
@@ -195,7 +190,6 @@ export function LongBranchAttractionDemo({ caption, className }: LongBranchAttra
             uid={`${uid}-true`}
             ariaLabel={t("ariaTrue")}
             attractedLabel={t("attracted")}
-            locale={locale}
           />
         </div>
 
@@ -217,7 +211,6 @@ export function LongBranchAttractionDemo({ caption, className }: LongBranchAttra
             uid={`${uid}-inf`}
             ariaLabel={t("ariaInferred")}
             attractedLabel={t("attracted")}
-            locale={locale}
           />
         </div>
       </div>

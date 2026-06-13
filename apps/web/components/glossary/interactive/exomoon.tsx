@@ -4,11 +4,7 @@ import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface ExomoonProps {
-  locale: string;
-}
-
-export default function Exomoon({ locale }: ExomoonProps) {
+export default function Exomoon() {
   const t = useTranslations("viz.exomoon");
 
   // Heat sources values (0..100)

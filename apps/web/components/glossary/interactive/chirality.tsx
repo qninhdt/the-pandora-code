@@ -4,11 +4,7 @@ import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface ChiralityProps {
-  locale: string;
-}
-
-export default function Chirality({ locale }: ChiralityProps) {
+export default function Chirality() {
   const t = useTranslations("viz.chirality");
 
   // State
@@ -249,7 +245,7 @@ export default function Chirality({ locale }: ChiralityProps) {
               className="fill-muted font-mono text-[8px] text-center"
               textAnchor="middle"
             >
-              {locale === "vi" ? "Nguồn sáng" : "Light Source"}
+              {t("lightSource")}
             </text>
             <text
               x="200"
@@ -257,7 +253,7 @@ export default function Chirality({ locale }: ChiralityProps) {
               className="fill-muted font-mono text-[8px] text-center"
               textAnchor="middle"
             >
-              {locale === "vi" ? "Ống đựng mẫu" : "Sample Tube"}
+              {t("sampleTube")}
             </text>
             <text
               x="362"
@@ -377,7 +373,7 @@ export default function Chirality({ locale }: ChiralityProps) {
           <div className="flex justify-between items-center border-t border-border/10 pt-2 text-[9px] font-mono">
             <div>
               <span className="text-muted mr-1">
-                {locale === "vi" ? "Góc quay của ánh sáng:" : "Light rotation plane:"}
+                {t("rotationPlane")}
               </span>
               <span className="text-cyan font-bold">{lightRotation.toFixed(1)}°</span>
             </div>

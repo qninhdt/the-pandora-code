@@ -4,11 +4,7 @@ import { useTranslations } from "next-intl";
 import React, { useState, useEffect } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface CohesionTensionProps {
-  locale: string;
-}
-
-export default function CohesionTension({ locale }: CohesionTensionProps) {
+export default function CohesionTension() {
   const t = useTranslations("viz.cohesionTension");
 
   const [height, setHeight] = useState(100); // 10m to 350m

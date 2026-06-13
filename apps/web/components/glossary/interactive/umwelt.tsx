@@ -5,11 +5,7 @@ import type React from "react";
 import { useState } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface UmweltProps {
-  locale: string;
-}
-
-export default function Umwelt({ locale }: UmweltProps) {
+export default function Umwelt() {
   const t = useTranslations("viz.umwelt");
 
   // State: sensory mode
@@ -334,16 +330,11 @@ export default function Umwelt({ locale }: UmweltProps) {
 
             {/* Viewport label overlay */}
             <div className="absolute top-2.5 left-2.5 bg-void/70 backdrop-blur-sm px-2 py-0.5 border border-border/20 rounded font-mono text-[9px] text-muted">
-              {sensorMode === "human" &&
-                (locale === "vi" ? "Thị giác Loài người" : "Human Visible")}
-              {sensorMode === "biolum" &&
-                (locale === "vi" ? "Phổ Phát quang sinh học" : "Biolum Filter")}
-              {sensorMode === "echo" &&
-                (locale === "vi" ? "Định vị phản hồi Sonar" : "Echolocation contours")}
-              {sensorMode === "magnetic" &&
-                (locale === "vi" ? "Thụ thể cảm ứng từ trường" : "Magnetic Flux lines")}
-              {sensorMode === "thermal" &&
-                (locale === "vi" ? "Ảnh Hồng ngoại nhiệt" : "Infrared Thermal")}
+              {sensorMode === "human" && t("humanVisible")}
+              {sensorMode === "biolum" && t("biolumFilter")}
+              {sensorMode === "echo" && t("echoFilter")}
+              {sensorMode === "magnetic" && t("magneticFilter")}
+              {sensorMode === "thermal" && t("thermalFilter")}
             </div>
           </div>
         </div>
@@ -351,7 +342,7 @@ export default function Umwelt({ locale }: UmweltProps) {
         {/* HUD Controls */}
         <div className="absolute bottom-4 left-4 right-4 bg-void/85 backdrop-blur-md p-2.5 border border-border/30 rounded-xl flex flex-col gap-2 z-10">
           <span className="text-[8px] font-mono text-muted uppercase tracking-wider block border-b border-border/15 pb-1">
-            {locale === "vi" ? "Bộ lọc cảm thụ quan học:" : "SENSORY RECEPTOR GOGGLES:"}
+            {t("gogglesLabel")}
           </span>
 
           <div className="flex flex-wrap gap-1.5">

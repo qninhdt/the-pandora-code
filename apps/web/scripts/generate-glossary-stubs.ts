@@ -21,12 +21,10 @@ const stubTemplate = (slug: string, className: string) => `"use client";
 
 import React from "react";
 import { GlossaryFrame } from "./shared/frame";
+import { useLocale } from "next-intl";
 
-interface ${className}Props {
-  locale: string;
-}
-
-export default function ${className}({ locale }: ${className}Props) {
+export default function ${className}() {
+  const locale = useLocale();
   const infoText = locale === "vi"
     ? "Mô tả trực quan chi tiết cho thuật ngữ ${slug}."
     : "Detailed interactive visualization for ${slug}.";

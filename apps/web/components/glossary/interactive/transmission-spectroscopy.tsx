@@ -4,10 +4,6 @@ import { useTranslations } from "next-intl";
 import React, { useState, useMemo } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface TransmissionSpectroscopyProps {
-  locale: string;
-}
-
 type AtmosphereType = "earth" | "pandora" | "giant" | "lifeless";
 
 interface GasSpec {
@@ -17,7 +13,7 @@ interface GasSpec {
   dips: { center: number; width: number; depth: number }[];
 }
 
-export default function TransmissionSpectroscopy({ locale }: TransmissionSpectroscopyProps) {
+export default function TransmissionSpectroscopy() {
   const t = useTranslations("viz.transmissionSpectroscopy");
 
   const [atmoType, setAtmoType] = useState<AtmosphereType>("pandora");

@@ -6,7 +6,7 @@ import { VizFigure } from "@/components/content/viz/viz-figure";
 import { VizReadout } from "@/components/content/viz/viz-readout";
 import { VizSlider } from "@/components/content/viz/viz-slider";
 import { VizText, VizTick } from "@/components/content/viz/viz-svg-text";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useId, useRef, useState } from "react";
 
 interface WhittakerBiomeExplorerProps {
@@ -35,47 +35,29 @@ type BiomeKey =
   | "savanna"
   | "tropicalRainforest";
 
-// Scientific-data record: each biome's color is bound to its vi/en name, so this
-// stays in code (per the i18n boundary — only generic UI labels move to messages).
-const BIOMES: Record<BiomeKey, { vi: string; en: string; color: string }> = {
+const BIOMES: Record<BiomeKey, { color: string }> = {
   tundra: {
-    vi: "Đài nguyên",
-    en: "Tundra",
     color: "color-mix(in oklab, var(--cyan) 32%, var(--void))",
   },
   boreal: {
-    vi: "Rừng taiga (phương bắc)",
-    en: "Boreal forest",
     color: "color-mix(in oklab, var(--teal) 45%, var(--void))",
   },
   grassland: {
-    vi: "Đồng cỏ ôn đới",
-    en: "Temperate grassland",
     color: "color-mix(in oklab, var(--amber) 50%, var(--void))",
   },
   tempForest: {
-    vi: "Rừng ôn đới",
-    en: "Temperate forest",
     color: "color-mix(in oklab, var(--teal) 75%, var(--cyan))",
   },
   tempRainforest: {
-    vi: "Rừng mưa ôn đới",
-    en: "Temperate rainforest",
     color: "color-mix(in oklab, var(--cyan) 78%, var(--void))",
   },
   desert: {
-    vi: "Sa mạc cận nhiệt",
-    en: "Subtropical desert",
     color: "var(--amber)",
   },
   savanna: {
-    vi: "Xavan nhiệt đới",
-    en: "Tropical savanna",
     color: "color-mix(in oklab, var(--amber) 62%, var(--teal))",
   },
   tropicalRainforest: {
-    vi: "Rừng mưa nhiệt đới",
-    en: "Tropical rainforest",
     color: "var(--teal)",
   },
 };
@@ -121,7 +103,6 @@ const DEFAULT = { temp: 27, precip: 360 }; // deterministic SSR default = Pandor
 // keyboard-accessible, with optional pointer-drag on the plane.
 export function WhittakerBiomeExplorer({ caption, className }: WhittakerBiomeExplorerProps) {
   const t = useTranslations("viz.whittaker");
-  const locale = (useLocale() === "vi" ? "vi" : "en") as "vi" | "en";
   const uid = useId();
   const svgRef = useRef<SVGSVGElement | null>(null);
   const [temp, setTemp] = useState(DEFAULT.temp);
@@ -160,7 +141,7 @@ export function WhittakerBiomeExplorer({ caption, className }: WhittakerBiomeExp
         viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
         className="w-full touch-none"
         role="img"
-        aria-label={`${t("biome")}: ${BIOMES[biome][locale]} — ${temp}°C, ${precip} cm`}
+        aria-label={`${t("biome")}: ${t(`biomes.${biome}`)} — ${temp}°C, ${precip} cm`}
         onPointerDown={(e) => {
           setDragging(true);
           e.currentTarget.setPointerCapture(e.pointerId);
@@ -289,7 +270,7 @@ export function WhittakerBiomeExplorer({ caption, className }: WhittakerBiomeExp
                 boxShadow: `0 0 8px -1px ${BIOMES[biome].color}`,
               }}
             />
-            <span>{BIOMES[biome][locale]}</span>
+            <span>{t(`biomes.${biome}`)}</span>
           </span>
         }
       />

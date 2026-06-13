@@ -4,11 +4,7 @@ import { useTranslations } from "next-intl";
 import React, { useState, useEffect } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface TidalLockingProps {
-  locale: string;
-}
-
-export default function TidalLocking({ locale }: TidalLockingProps) {
+export default function TidalLocking() {
   const t = useTranslations("viz.tidalLocking");
 
   const [isPlaying, setIsPlaying] = useState(true);
@@ -249,7 +245,7 @@ export default function TidalLocking({ locale }: TidalLockingProps) {
             {/* Speed controller */}
             <div className="flex items-center gap-2 flex-1 max-w-[200px]">
               <span className="text-muted text-[8.5px] uppercase">
-                {locale === "vi" ? "Tốc độ quỹ đạo" : "Orbit Speed"}:
+                {t("orbitSpeed")}:
               </span>
               <input
                 type="range"

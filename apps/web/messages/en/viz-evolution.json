@@ -37,6 +37,8 @@
       "matrixHead": "Characters × taxa",
       "parsimony": "Parsimonious (true)",
       "phenetic": "Overall-similarity (the trap)",
+      "btnParsimony": "Maximum Parsimony",
+      "btnPhenetic": "Phenetic Similarity",
       "steps": "Evolutionary steps",
       "stepsParsimony": "Fewest steps — carbon-fibre bone and the queue evolve just once",
       "stepsPhenetic": "Steps explode — carbon-fibre bone and the queue must evolve twice, on two worlds",
@@ -69,7 +71,13 @@
       "attracted": "Attracted!",
       "fast": "fast-evolving",
       "slow": "slow",
-      "hint": "On Earth, molecular data corrects this error. Pandora has no molecules — so a morphology-only tree stays vulnerable to exactly this trap."
+      "hint": "On Earth, molecular data corrects this error. Pandora has no molecules — so a morphology-only tree stays vulnerable to exactly this trap.",
+      "tips": {
+        "a": "Runner",
+        "b": "Ikran",
+        "c": "Swimmer",
+        "d": "Toruk"
+      }
     },
     "limbField": {
       "title": "One toolkit, three switches",

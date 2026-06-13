@@ -4,11 +4,7 @@ import { useTranslations } from "next-intl";
 import React, { useState, useEffect } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface CountercurrentExchangeProps {
-  locale: string;
-}
-
-export default function CountercurrentExchange({ locale }: CountercurrentExchangeProps) {
+export default function CountercurrentExchange() {
   const t = useTranslations("viz.countercurrent");
   const [isCounter, setIsCounter] = useState(true);
 

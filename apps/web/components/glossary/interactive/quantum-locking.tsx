@@ -5,11 +5,7 @@ import type React from "react";
 import { useEffect, useState } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface QuantumLockingProps {
-  locale: string;
-}
-
-export default function QuantumLocking({ locale }: QuantumLockingProps) {
+export default function QuantumLocking() {
   const t = useTranslations("viz.superconductor");
 
   const [temp, setTemp] = useState(150); // 50K to 200K
@@ -70,7 +66,7 @@ export default function QuantumLocking({ locale }: QuantumLockingProps) {
 
   return (
     <GlossaryFrame
-      title={locale === "vi" ? "Khóa Lượng tử (Meissner)" : t("title")}
+      title={t("title")}
       infoText={t("hint")}
       onReset={handleReset}
       aspectRatio="aspect-[16/10]"
@@ -175,13 +171,7 @@ export default function QuantumLocking({ locale }: QuantumLockingProps) {
                 className="fill-muted/70 font-mono text-[7.5px] text-center"
                 textAnchor="middle"
               >
-                {isSuperconducting
-                  ? locale === "vi"
-                    ? "KÉO KHỐI ĐỂ DI CHUYỂN DỌC THEO ĐƯỜNG RAY"
-                    : "DRAG BLOCK TO MOVE ALONG MAGNETIC TRACK"
-                  : locale === "vi"
-                    ? "HẠ NHIỆT ĐỘ XUỐNG DƯỚI Tc ĐỂ BAY LÊN"
-                    : "LOWER TEMPERATURE BELOW Tc TO LEVITATE"}
+                {isSuperconducting ? t("dragToMove") : t("lowerToLevitate")}
               </text>
             </svg>
           </div>

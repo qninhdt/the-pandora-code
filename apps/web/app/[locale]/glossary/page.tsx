@@ -57,7 +57,6 @@ export default async function GlossaryIndex({ params }: GlossaryIndexProps) {
         ) : (
           <GlossaryBrowser
             terms={terms}
-            locale={loc}
             covers={covers}
             labels={{
               searchPlaceholder: t("page.glossary.searchPlaceholder"),

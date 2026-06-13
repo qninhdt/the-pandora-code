@@ -9,41 +9,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-
-export interface DockNav {
-  home: string;
-  chapters: string;
-  glossary: string;
-  authors: string;
-  timeline: string;
-}
-
-export interface SearchLabels {
-  trigger: string;
-  placeholder: string;
-  title: string;
-  empty: string;
-  hint: string;
-  groupChapter: string;
-  groupGlossary: string;
-  groupTopic: string;
-}
+import { useLocale, useTranslations } from "next-intl";
 
 const REPO_URL = "https://github.com/qninhdt/the-pandora-code";
-
-interface FloatingDockProps {
-  locale: Locale;
-  brand: string;
-  nav: DockNav;
-  search: SearchLabels;
-}
 
 // A single frosted-glass pill nav floating at top-center - balanced on every
 // breakpoint. Desktop shows the links inline; mobile opens a full-screen
 // bioluminescent overlay (no drawer/sidebar) with oversized glowing links.
-export function FloatingDock({ locale, brand, nav, search }: FloatingDockProps) {
+export function FloatingDock() {
+  const locale = useLocale() as Locale;
   const pathname = usePathname();
   const base = `/${locale}`;
+  const t = useTranslations();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -73,11 +50,12 @@ export function FloatingDock({ locale, brand, nav, search }: FloatingDockProps) 
     };
   }, [open]);
 
+  const brand = t("site.name");
   const links = [
-    { href: `${base}/chapters`, label: nav.chapters },
-    { href: `${base}/glossary`, label: nav.glossary },
-    { href: `${base}/author`, label: nav.authors },
-    { href: `${base}/timeline`, label: nav.timeline },
+    { href: `${base}/chapters`, label: t("nav.chapters") },
+    { href: `${base}/glossary`, label: t("nav.glossary") },
+    { href: `${base}/author`, label: t("nav.authors") },
+    { href: `${base}/timeline`, label: t("nav.timeline") },
   ];
   const isActive = (href: string) => pathname.startsWith(href);
 
@@ -132,7 +110,7 @@ export function FloatingDock({ locale, brand, nav, search }: FloatingDockProps) 
         </nav>
 
         <div className="ml-auto flex items-center gap-2 md:ml-3">
-          <CommandPalette locale={locale} labels={search} />
+          <CommandPalette />
           <a
             href={REPO_URL}
             target="_blank"
@@ -142,7 +120,7 @@ export function FloatingDock({ locale, brand, nav, search }: FloatingDockProps) 
           >
             <Github size={17} />
           </a>
-          <LocaleSwitcher current={locale} />
+          <LocaleSwitcher />
           {/* Mobile menu trigger */}
           <button
             type="button"
@@ -163,7 +141,6 @@ export function FloatingDock({ locale, brand, nav, search }: FloatingDockProps) 
         brand={brand}
         links={links}
         isActive={isActive}
-        locale={locale}
       />
     </header>
   );
@@ -175,12 +152,12 @@ interface MobileOverlayProps {
   brand: string;
   links: { href: string; label: string }[];
   isActive: (href: string) => boolean;
-  locale: Locale;
 }
 
 // Full-screen bioluminescent menu: a deep-void blurred backdrop lit by radial
 // glows, with oversized links that slide in. Replaces the old right-side drawer.
-function MobileOverlay({ open, onClose, brand, links, isActive, locale }: MobileOverlayProps) {
+function MobileOverlay({ open, onClose, brand, links, isActive }: MobileOverlayProps) {
+  const t = useTranslations("common");
   return (
     <div
       className={cn(
@@ -244,9 +221,9 @@ function MobileOverlay({ open, onClose, brand, links, isActive, locale }: Mobile
         </nav>
 
         <div className="mt-8 flex items-center gap-3">
-          <LocaleSwitcher current={locale} />
+          <LocaleSwitcher />
           <span className="font-sans text-xs uppercase tracking-[0.25em] text-subtle">
-            {locale === "vi" ? "Ngôn ngữ" : "Language"}
+            {t("language")}
           </span>
         </div>
       </div>

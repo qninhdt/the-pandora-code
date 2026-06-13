@@ -2,12 +2,12 @@ import { CanonBadge } from "@/components/classification/canon-badge";
 import { LightboxImage } from "@/components/content/lightbox";
 import type { ClassificationKind } from "@/lib/content/schemas/shared";
 import { cn } from "@/lib/utils";
+import { useLocale } from "next-intl";
 
 interface FigureProps {
   src: string;
   /** Bilingual caption - both translated in the same pass. */
   caption?: { vi: string; en: string } | string;
-  locale?: "vi" | "en";
   alt?: string;
   tier?: ClassificationKind;
   /** Plate/figure number for the margin. */
@@ -22,13 +22,13 @@ interface FigureProps {
 export function Figure({
   src,
   caption,
-  locale = "vi",
   alt,
   tier,
   figNo,
   bleed,
   className,
 }: FigureProps) {
+  const locale = useLocale() as "vi" | "en";
   const text = typeof caption === "string" ? caption : caption?.[locale];
   return (
     <figure className={cn("my-8", bleed && "lg:-mx-24", className)}>

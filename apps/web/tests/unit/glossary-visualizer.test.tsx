@@ -37,74 +37,74 @@ import { renderWithIntl } from "./render-with-intl";
 
 describe("Glossary Components Direct Mount", () => {
   it("renders alpha-centauri orrery", () => {
-    renderWithIntl(<AlphaCentauri locale="en" />);
+    renderWithIntl(<AlphaCentauri />);
     expect(screen.getAllByText("Alpha Centauri Orrery")[0]).toBeInTheDocument();
   });
 
   it("renders habitable-zone simulator", () => {
-    renderWithIntl(<HabitableZone locale="en" />);
+    renderWithIntl(<HabitableZone />);
     expect(screen.getAllByText("The habitable zone")[0]).toBeInTheDocument();
   });
 
   it("renders exomoon balance puzzle", () => {
-    renderWithIntl(<Exomoon locale="en" />);
+    renderWithIntl(<Exomoon />);
     expect(screen.getAllByText("Exomoon Energy Balance")[0]).toBeInTheDocument();
   });
 
   it("renders tidal-heating simulator", () => {
-    renderWithIntl(<TidalHeating locale="en" />);
+    renderWithIntl(<TidalHeating />);
     expect(screen.getAllByText("Tidal Heating & Elliptical Flexing")[0]).toBeInTheDocument();
   });
 
   it("renders roche-limit breakup simulator", () => {
-    renderWithIntl(<RocheLimit locale="en" />);
+    renderWithIntl(<RocheLimit />);
     expect(screen.getAllByText("Roche Limit Breakup Simulator")[0]).toBeInTheDocument();
   });
 
   it("renders radial-velocity Doppler wobble", () => {
-    renderWithIntl(<RadialVelocity locale="en" />);
+    renderWithIntl(<RadialVelocity />);
     expect(screen.getAllByText("Radial Velocity (Doppler Wobble)")[0]).toBeInTheDocument();
   });
 
   it("renders direct-imaging coronagraph", () => {
-    renderWithIntl(<DirectImaging locale="en" />);
+    renderWithIntl(<DirectImaging />);
     expect(screen.getAllByText("Direct Imaging & Coronagraph Mask")[0]).toBeInTheDocument();
   });
 
   it("renders transit-timing-variation TTV plot", () => {
-    renderWithIntl(<TransitTimingVariation locale="en" />);
+    renderWithIntl(<TransitTimingVariation />);
     expect(screen.getAllByText("Transit Timing Variations (TTV)")[0]).toBeInTheDocument();
   });
 
   it("renders hox-genes address system", () => {
-    renderWithIntl(<HoxGenes locale="en" />);
+    renderWithIntl(<HoxGenes />);
     expect(screen.getAllByText("The Hox address system")[0]).toBeInTheDocument();
   });
 
   it("renders niche-partitioning layers", () => {
-    renderWithIntl(<NichePartitioning locale="en" />);
+    renderWithIntl(<NichePartitioning />);
     expect(screen.getAllByText("One forest, divided into floors")[0]).toBeInTheDocument();
   });
 
   it("renders countercurrent-exchange simulator", () => {
-    renderWithIntl(<CountercurrentExchange locale="en" />);
+    renderWithIntl(<CountercurrentExchange />);
     expect(screen.getAllByText("Gill lamella: flip the blood")[0]).toBeInTheDocument();
   });
 
   it("renders bioluminescence simulator", () => {
-    renderWithIntl(<Bioluminescence locale="en" />);
+    renderWithIntl(<Bioluminescence />);
     expect(screen.getAllByText("The cold-light reaction")[0]).toBeInTheDocument();
   });
 
   it("renders cladogram builder", () => {
-    renderWithIntl(<Cladogram locale="en" />);
+    renderWithIntl(<Cladogram />);
     expect(
       screen.getAllByText("Character matrix → the most parsimonious tree")[0],
     ).toBeInTheDocument();
   });
 
   it("renders allometry scaling calculator", () => {
-    renderWithIntl(<Allometry locale="en" />);
+    renderWithIntl(<Allometry />);
     expect(
       screen.getAllByText("Bone Stress & Allometry")[0] ||
         screen.getAllByText("Bone Stress & Allometry")[0],
@@ -112,97 +112,97 @@ describe("Glossary Components Direct Mount", () => {
   });
 
   it("renders lotka-volterra dynamics", () => {
-    renderWithIntl(<LotkaVolterra locale="en" />);
+    renderWithIntl(<LotkaVolterra />);
     expect(screen.getAllByText("Predator-Prey Population dynamics")[0]).toBeInTheDocument();
   });
 
   it("renders chirality polarimeter", () => {
-    renderWithIntl(<Chirality locale="en" />);
+    renderWithIntl(<Chirality />);
     expect(screen.getAllByText("Chirality & Optical Rotation")[0]).toBeInTheDocument();
   });
 
   it("renders umwelt goggles", () => {
-    renderWithIntl(<Umwelt locale="en" />);
+    renderWithIntl(<Umwelt />);
     expect(screen.getAllByText("The Pandoran Umwelt")[0]).toBeInTheDocument();
   });
 
   it("renders occams-razor logic engine", () => {
-    renderWithIntl(<OccamsRazor locale="en" />);
+    renderWithIntl(<OccamsRazor />);
     expect(screen.getAllByText("Occam's Razor")[0]).toBeInTheDocument();
   });
 
   it("renders tidal-locking simulator", () => {
-    renderWithIntl(<TidalLocking locale="en" />);
+    renderWithIntl(<TidalLocking />);
     expect(screen.getAllByText("Tidal Locking Simulator")[0]).toBeInTheDocument();
   });
 
   it("renders atmospheric-disequilibrium reaction", () => {
-    renderWithIntl(<AtmosphericDisequilibrium locale="en" />);
+    renderWithIntl(<AtmosphericDisequilibrium />);
     expect(screen.getAllByText("Reading life off the air")[0]).toBeInTheDocument();
   });
 
   it("renders half-life decay clock", () => {
-    renderWithIntl(<HalfLife locale="en" />);
+    renderWithIntl(<HalfLife />);
     expect(screen.getAllByText("Radioactive decay clock")[0]).toBeInTheDocument();
   });
 
   it("renders quantum-locking simulator", () => {
-    renderWithIntl(<QuantumLocking locale="en" />);
+    renderWithIntl(<QuantumLocking />);
     expect(screen.getAllByText("Superconductor cool-down")[0]).toBeInTheDocument();
   });
 
   it("renders hadley-cell circulation", () => {
-    renderWithIntl(<HadleyCell locale="en" />);
+    renderWithIntl(<HadleyCell />);
     expect(screen.getAllByText("Atmospheric circulation")[0]).toBeInTheDocument();
   });
 
   it("renders percolation-theory network", () => {
-    renderWithIntl(<PercolationTheory locale="en" />);
+    renderWithIntl(<PercolationTheory />);
     expect(screen.getAllByText("Burn it down — and find the cliff")[0]).toBeInTheDocument();
   });
 
   it("renders integrated-information-theory visualizer", () => {
-    renderWithIntl(<IntegratedInformationTheory locale="en" />);
+    renderWithIntl(<IntegratedInformationTheory />);
     expect(screen.getAllByText("Bigger is not a mind")[0]).toBeInTheDocument();
   });
 
   it("renders biological-market visualizer", () => {
-    renderWithIntl(<BiologicalMarket locale="en" />);
+    renderWithIntl(<BiologicalMarket />);
     expect(screen.getAllByText("The underground market")[0]).toBeInTheDocument();
   });
 
   it("renders shannon-entropy visualizer", () => {
-    renderWithIntl(<ShannonEntropy locale="en" />);
+    renderWithIntl(<ShannonEntropy />);
     expect(screen.getAllByText("Shannon Entropy")[0]).toBeInTheDocument();
   });
 
   it("renders daisyworld visualizer", () => {
-    renderWithIntl(<Daisyworld locale="en" />);
+    renderWithIntl(<Daisyworld />);
     expect(screen.getAllByText("Daisyworld")[0]).toBeInTheDocument();
   });
 
   it("renders cohesion-tension visualizer", () => {
-    renderWithIntl(<CohesionTension locale="en" />);
+    renderWithIntl(<CohesionTension />);
     expect(screen.getAllByText("Cohesion-Tension")[0]).toBeInTheDocument();
   });
 
   it("renders dynamic-soaring visualizer", () => {
-    renderWithIntl(<DynamicSoaring locale="en" />);
+    renderWithIntl(<DynamicSoaring />);
     expect(screen.getAllByText("Dynamic Soaring")[0]).toBeInTheDocument();
   });
 
   it("renders square-cube-law visualizer", () => {
-    renderWithIntl(<SquareCubeLaw locale="en" />);
+    renderWithIntl(<SquareCubeLaw />);
     expect(screen.getAllByText("The Square-Cube Law")[0]).toBeInTheDocument();
   });
 
   it("renders transmission-spectroscopy visualizer", () => {
-    renderWithIntl(<TransmissionSpectroscopy locale="en" />);
+    renderWithIntl(<TransmissionSpectroscopy />);
     expect(screen.getAllByText("Transmission Spectroscopy")[0]).toBeInTheDocument();
   });
 
   it("returns null for unregistered terms in GlossaryVisualizer", () => {
-    const { container } = renderWithIntl(<GlossaryVisualizer term="unknown-term" locale="en" />);
+    const { container } = renderWithIntl(<GlossaryVisualizer term="unknown-term" />);
     expect(container.firstChild).toBeNull();
   });
 });

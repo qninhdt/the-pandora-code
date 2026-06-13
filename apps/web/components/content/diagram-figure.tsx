@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { CanonBadge } from "@/components/classification/canon-badge";
 import { AnnotationLayer, type ResolvedLabel } from "@/components/content/figure-annotations";
 import { LightboxImage } from "@/components/content/lightbox";
@@ -30,7 +30,6 @@ interface DiagramFigureProps {
   caption?: Localized;
   /** Positioned callout labels overlaid on the image. */
   labels?: DiagramLabel[];
-  locale?: "vi" | "en";
   alt?: string;
   /** Epistemic tier badge in the caption row. */
   tier?: ClassificationKind;
@@ -55,7 +54,6 @@ export function DiagramFigure({
   src,
   caption,
   labels = [],
-  locale = "vi",
   alt,
   tier,
   figNo,
@@ -63,6 +61,7 @@ export function DiagramFigure({
   className,
 }: DiagramFigureProps) {
   const t = useTranslations("common");
+  const locale = useLocale() as "vi" | "en";
   const annotationsVisible = useAnnotationsVisible();
   const captionText = pick(caption, locale);
   const hasLabels = labels.length > 0;

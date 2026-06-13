@@ -5,6 +5,7 @@ import { FadeInOnScroll } from "@/components/motion/fade-in-on-scroll";
 import { GlowPulse } from "@/components/motion/glow-pulse";
 import { Parallax } from "@/components/motion/parallax";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 
 type Kind = "canon" | "inference" | "speculation" | "real_science";
 
@@ -18,7 +19,6 @@ export interface JourneyEvent {
 
 interface TimelineJourneyProps {
   events: JourneyEvent[];
-  locale: "vi" | "en";
   className?: string;
 }
 
@@ -46,23 +46,18 @@ const panelGlow: Record<Kind, "cyan" | "teal" | "magenta"> = {
   real_science: "cyan",
 };
 
-const tierLabel: Record<Kind, { vi: string; en: string }> = {
-  canon: { vi: "Chính truyện", en: "Canon" },
-  inference: { vi: "Suy luận", en: "Inference" },
-  speculation: { vi: "Suy đoán", en: "Speculation" },
-  real_science: { vi: "Khoa học thật", en: "Real science" },
-};
+
 
 // A cinematic vertical "journey" down the codex: a glowing spine threads through
 // the page, Part markers land as luminous waypoints centered on the spine, and
 // each chapter floats in on a glass card that alternates sides on desktop. All
 // motion degrades to a static (still-glowing) layout under reduced motion via
 // the underlying FadeInOnScroll / Parallax / GlowPulse primitives.
-export function TimelineJourney({ events, locale, className }: TimelineJourneyProps) {
+export function TimelineJourney({ events, className }: TimelineJourneyProps) {
   let cardIndex = -1;
   return (
     <div className={cn("relative", className)}>
-      <TierKey locale={locale} />
+      <TierKey />
 
       <ol className="relative mt-12">
         {/* The glowing spine. */}
@@ -204,7 +199,8 @@ function ChapterCard({
 }
 
 // A compact key to the four epistemic tiers, so the node colors read at a glance.
-function TierKey({ locale }: { locale: "vi" | "en" }) {
+function TierKey() {
+  const t = useTranslations("classification");
   const kinds: Kind[] = ["canon", "inference", "speculation", "real_science"];
   return (
     <ul className="flex flex-wrap items-center gap-x-5 gap-y-2">
@@ -218,7 +214,7 @@ function TierKey({ locale }: { locale: "vi" | "en" }) {
               style={{ background: c, boxShadow: `0 0 8px 0 ${c}` }}
             />
             <span className="font-sans text-xs uppercase tracking-wider text-muted">
-              {tierLabel[k][locale]}
+              {t(k)}
             </span>
           </li>
         );

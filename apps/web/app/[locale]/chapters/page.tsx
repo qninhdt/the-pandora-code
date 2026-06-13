@@ -94,7 +94,7 @@ export default async function ChaptersPage({ params }: ChaptersPageProps) {
           statsDone: t("page.chapters.statsDone", { done, total }),
           readingTotal: t("page.chapters.readingTotal", { minutes: totalReadingMin }),
           noMatches: t("page.chapters.noMatches"),
-          readingUnit: loc === "vi" ? "phút" : "min",
+          readingUnit: t("page.chapters.readingUnit"),
         }}
       />
     </>

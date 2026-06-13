@@ -7,14 +7,15 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { useLocale } from "next-intl";
 
 interface SiteHeaderProps {
-  locale: Locale;
   brand: string;
   nav: { chapters: string; glossary: string; authors: string; timeline: string };
 }
 
-export function SiteHeader({ locale, brand, nav }: SiteHeaderProps) {
+export function SiteHeader({ brand, nav }: SiteHeaderProps) {
+  const locale = useLocale() as Locale;
   const base = `/${locale}`;
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
@@ -69,7 +70,7 @@ export function SiteHeader({ locale, brand, nav }: SiteHeaderProps) {
         </nav>
 
         <div className="flex items-center gap-2">
-          <LocaleSwitcher current={locale} />
+          <LocaleSwitcher />
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}

@@ -1,6 +1,7 @@
 import { AnnotationLayer, type ResolvedLabel } from "@/components/content/figure-annotations";
 import { LightboxImage } from "@/components/content/lightbox";
 import { cn } from "@/lib/utils";
+import { useLocale } from "next-intl";
 
 interface Hotspot {
   x: number;
@@ -13,7 +14,6 @@ interface AnatomyPlateProps {
   src: string;
   title?: string;
   hotspots: Hotspot[];
-  locale?: "vi" | "en";
   className?: string;
 }
 
@@ -29,9 +29,9 @@ export function AnatomyPlate({
   src,
   title,
   hotspots,
-  locale = "vi",
   className,
 }: AnatomyPlateProps) {
+  const locale = useLocale() as "vi" | "en";
   const resolved: ResolvedLabel[] = hotspots.map((h) => ({
     x: h.x,
     y: h.y,

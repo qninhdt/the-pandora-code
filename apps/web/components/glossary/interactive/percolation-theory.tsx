@@ -4,10 +4,6 @@ import { useTranslations } from "next-intl";
 import React, { useState, useMemo } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface PercolationTheoryProps {
-  locale: string;
-}
-
 interface Node {
   id: number;
   x: number;
@@ -21,7 +17,7 @@ interface Edge {
   v: number;
 }
 
-export default function PercolationTheory({ locale }: PercolationTheoryProps) {
+export default function PercolationTheory() {
   const t = useTranslations("viz.percolationNetwork");
 
   const [mode, setMode] = useState<"random" | "targeted">("random");

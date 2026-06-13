@@ -95,7 +95,34 @@
       "fuelLabel": "Nhiên liệu (luciferin)",
       "enzymeLabel": "Enzyme",
       "hint": "Chạm vào một nhánh để xem nhiên liệu và enzyme riêng của nó.",
-      "note": "Mỗi nhánh phát sáng bằng một phân tử nhiên liệu khác nhau, với một enzyme khác nhau. Chúng không thừa kế khả năng phát sáng từ tổ tiên chung — mỗi dòng dõi tự mò ra nó."
+      "note": "Mỗi nhánh phát sáng bằng một phân tử nhiên liệu khác nhau, với một enzyme khác nhau. Chúng không thừa kế khả năng phát sáng từ tổ tiên chung — mỗi dòng dõi tự mò ra nó.",
+      "lineages": {
+        "bacteria": {
+          "name": "Vi khuẩn",
+          "fuel": "Flavin khử (FMNH₂)",
+          "enzyme": "Luciferase vi khuẩn"
+        },
+        "dino": {
+          "name": "Tảo giáp",
+          "fuel": "Tetrapyrrole mạch hở",
+          "enzyme": "Luciferase tảo giáp"
+        },
+        "fungi": {
+          "name": "Nấm",
+          "fuel": "3-hydroxyhispidin",
+          "enzyme": "Luz (nấm)"
+        },
+        "cnidaria": {
+          "name": "Sứa & họ hàng",
+          "fuel": "Coelenterazine",
+          "enzyme": "Aequorin / luciferase"
+        },
+        "firefly": {
+          "name": "Đom đóm",
+          "fuel": "D-luciferin",
+          "enzyme": "Luciferase đom đóm"
+        }
+      }
     },
     "umweltLens": {
       "title": "Một khung cảnh, bốn thế giới",
@@ -517,6 +544,15 @@
       "prey": "Hexapede (Con mồi)",
       "predator": "Viperwolf (Kẻ săn mồi)",
       "carryingCapacity": "Sức chứa tối đa (K)",
+      "preyBirth": "Mồi sinh",
+      "predation": "Săn bắt",
+      "predBirth": "Thú sinh",
+      "predDeath": "Thú chết",
+      "preySwitching": "CHUYỂN ĐỔI MỒI (ỔN ĐỊNH)",
+      "carryingCapacityLabel": "SỨC CHỨA TỐI ĐA (K)",
+      "nearCapacity": "Đạt sức chứa",
+      "simulating": "Đang giả lập",
+      "pausedStatus": "Đã tạm dừng",
       "hint": "Điều chỉnh tỉ lệ sinh, tỉ lệ săn bắt, và tỉ lệ chết. Bật Chuyển đổi con mồi để ổn định dao động, hoặc thêm Sức chứa tối đa (K) để thử nghiệm Nghịch lý làm giàu."
     },
     "chirality": {
@@ -528,15 +564,20 @@
       "analyzerAngle": "Góc kính phân tích",
       "concentration": "Nồng độ",
       "brightness": "Cường độ sáng truyền qua",
+      "lightSource": "Nguồn sáng",
+      "sampleTube": "Ống đựng mẫu",
+      "rotationPlane": "Góc quay của ánh sáng:",
       "hint": "Xoay kính phân tích để thẳng hàng với mặt phẳng ánh sáng bị quay. Phân tử bất đối quay mặt phẳng ánh sáng theo chiều kim đồng hồ (dạng D) hoặc ngược chiều (dạng L)."
     },
     "umwelt": {
       "title": "Thế giới cảm quan (Umwelt) của Pandora",
       "humanFilter": "Người thường",
-      "biolumFilter": "Phát quang",
-      "echoFilter": "Định vị âm",
-      "magneticFilter": "Cảm từ",
-      "thermalFilter": "Hồng ngoại",
+      "humanVisible": "Thị giác Loài người",
+      "biolumFilter": "Phổ Phát quang sinh học",
+      "echoFilter": "Định vị phản hồi Sonar",
+      "magneticFilter": "Thụ thể cảm ứng từ trường",
+      "thermalFilter": "Ảnh Hồng ngoại nhiệt",
+      "gogglesLabel": "Bộ lọc cảm thụ quan học:",
       "hint": "Bật các kính lọc cảm quan để nhìn nhận thế giới qua con mắt của những loài sinh vật khác nhau. Thị giác thường thấy màu thông thường; các giác quan chuyên biệt cô lập tín hiệu phát quang sinh học, đường viền sonar, đường sức từ, hoặc bức xạ nhiệt."
     }
   }

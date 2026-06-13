@@ -105,7 +105,7 @@ export default async function TimelinePage({ params }: TimelinePageProps) {
         {events.length === 0 ? (
           <p className="font-serif text-muted">{t("common.noResults")}</p>
         ) : (
-          <TimelineJourney events={events} locale={loc} />
+          <TimelineJourney events={events} />
         )}
       </main>
     </>

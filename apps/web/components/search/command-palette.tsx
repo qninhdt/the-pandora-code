@@ -4,24 +4,11 @@ import type { Locale } from "@/i18n/config";
 import { type SearchHit, search } from "@/lib/search/search-index";
 import { cn } from "@/lib/utils";
 import { FileText, Hash, Search, Tag } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { Dialog as DialogPrimitive } from "radix-ui";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useSearchHotkey } from "./use-search-hotkey";
-
-interface CommandPaletteProps {
-  locale: Locale;
-  labels: {
-    trigger: string;
-    placeholder: string;
-    title: string;
-    empty: string;
-    hint: string;
-    groupChapter: string;
-    groupGlossary: string;
-    groupTopic: string;
-  };
-}
 
 const TYPE_ICON = {
   chapter: FileText,
@@ -33,7 +20,9 @@ const TYPE_ICON = {
 // topics) for the current locale, groups hits by type, and navigates on select.
 // Full keyboard support: ↑↓ to move, Enter to open, Esc to close (Esc handled
 // by the Radix dialog). Index loads lazily on first open.
-export function CommandPalette({ locale, labels }: CommandPaletteProps) {
+export function CommandPalette() {
+  const locale = useLocale() as Locale;
+  const t = useTranslations("search");
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
@@ -98,17 +87,17 @@ export function CommandPalette({ locale, labels }: CommandPaletteProps) {
 
   const groupLabel = (type: SearchHit["type"]) =>
     type === "chapter"
-      ? labels.groupChapter
+      ? t("groupChapter")
       : type === "glossary"
-        ? labels.groupGlossary
-        : labels.groupTopic;
+        ? t("groupGlossary")
+        : t("groupTopic");
 
   return (
     <DialogPrimitive.Root open={open} onOpenChange={setOpen}>
       <DialogPrimitive.Trigger asChild>
         <button
           type="button"
-          aria-label={labels.trigger}
+          aria-label={t("trigger")}
           className="grid size-9 place-items-center rounded-full border border-border text-muted transition-colors hover:border-border-strong hover:text-foreground"
         >
           <Search size={17} />
@@ -120,9 +109,9 @@ export function CommandPalette({ locale, labels }: CommandPaletteProps) {
           onKeyDown={onKeyDown}
           className="fixed left-1/2 top-[15%] z-50 w-full max-w-lg -translate-x-1/2 overflow-hidden rounded-2xl border border-border bg-surface text-foreground shadow-2xl outline-hidden data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95"
         >
-          <DialogPrimitive.Title className="sr-only">{labels.title}</DialogPrimitive.Title>
+          <DialogPrimitive.Title className="sr-only">{t("title")}</DialogPrimitive.Title>
           <DialogPrimitive.Description className="sr-only">
-            {labels.hint}
+            {t("hint")}
           </DialogPrimitive.Description>
           <div className="flex items-center gap-3 border-b border-border px-4">
             <Search size={18} className="shrink-0 text-subtle" />
@@ -130,15 +119,15 @@ export function CommandPalette({ locale, labels }: CommandPaletteProps) {
               ref={inputRef}
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder={labels.placeholder}
+              placeholder={t("placeholder")}
               className="w-full bg-transparent py-4 font-sans text-base text-foreground outline-none placeholder:text-subtle"
             />
           </div>
           <div ref={listRef} className="max-h-[60vh] overflow-y-auto p-2">
             {query.trim() === "" ? (
-              <p className="px-3 py-8 text-center font-sans text-sm text-subtle">{labels.hint}</p>
+              <p className="px-3 py-8 text-center font-sans text-sm text-subtle">{t("hint")}</p>
             ) : hits.length === 0 ? (
-              <p className="px-3 py-8 text-center font-sans text-sm text-subtle">{labels.empty}</p>
+              <p className="px-3 py-8 text-center font-sans text-sm text-subtle">{t("empty")}</p>
             ) : (
               hits.map((hit, idx) => {
                 const Icon = TYPE_ICON[hit.type];

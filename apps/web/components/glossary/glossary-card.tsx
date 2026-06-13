@@ -4,15 +4,16 @@ import { GlassPanel } from "@/components/codex/glass-panel";
 import type { LocalizedGlossaryTerm } from "@/lib/content/loader/glossary-loader";
 import { glossaryTagLabel } from "@/lib/content/schemas/glossary-tags";
 import Link from "next/link";
+import { useLocale } from "next-intl";
 
 interface GlossaryCardProps {
   term: LocalizedGlossaryTerm;
   cover: string | null;
-  locale: "vi" | "en";
 }
 
 /** A visual glossary term card: cover banner + tag pills + label + definition. */
-export function GlossaryCard({ term, cover, locale }: GlossaryCardProps) {
+export function GlossaryCard({ term, cover }: GlossaryCardProps) {
+  const locale = useLocale() as "vi" | "en";
   return (
     <Link
       href={`/${locale}/glossary/${term.id}`}

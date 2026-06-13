@@ -4,10 +4,6 @@ import { useTranslations } from "next-intl";
 import React, { useState, useEffect, useRef } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
-interface AtmosphericDisequilibriumProps {
-  locale: string;
-}
-
 interface Molecule {
   id: number;
   type: "O2" | "CH4" | "CO2" | "H2O";
@@ -17,7 +13,7 @@ interface Molecule {
   vy: number;
 }
 
-export default function AtmosphericDisequilibrium({ locale }: AtmosphericDisequilibriumProps) {
+export default function AtmosphericDisequilibrium() {
   const t = useTranslations("viz.atmosphericDisequilibrium");
 
   const [isPlaying, setIsPlaying] = useState(true);
