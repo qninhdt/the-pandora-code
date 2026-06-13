@@ -5,17 +5,15 @@ import React, { useState } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
 interface HoxGenesProps {
-  locale: string;
+  locale?: string;
 }
 
 interface Gene {
   id: number;
   geneName: string;
+  key: string;
   color: string;
   glowColor: string;
-  en: { region: string; note: string };
-  vi: { region: string; note: string };
-  // SVG points or attributes for highlighting
   cx: number;
   cy: number;
   r: number;
@@ -26,10 +24,9 @@ const GENES: Gene[] = [
   {
     id: 1,
     geneName: "Hox-1",
+    key: "hox1",
     color: "#36c5d9", // Pandora Cyan
     glowColor: "rgba(54, 197, 217, 0.6)",
-    en: { region: "Head & Jaw", note: "Specifies head structure and double sensory organs." },
-    vi: { region: "Đầu & Hàm", note: "Xác định cấu trúc đầu và các cơ quan cảm giác kép." },
     cx: 80,
     cy: 120,
     r: 18,
@@ -37,13 +34,9 @@ const GENES: Gene[] = [
   {
     id: 2,
     geneName: "Hox-2",
+    key: "hox2",
     color: "#2bd4a8", // Living Teal
     glowColor: "rgba(43, 212, 168, 0.6)",
-    en: {
-      region: "Neck & Spiracles",
-      note: "Addresses the breathing vents and primary neck segments.",
-    },
-    vi: { region: "Cổ & Lỗ thở", note: "Xác định các van hô hấp và các đốt cổ chính." },
     cx: 120,
     cy: 120,
     r: 16,
@@ -51,16 +44,9 @@ const GENES: Gene[] = [
   {
     id: 3,
     geneName: "Hox-3",
+    key: "hox3",
     color: "#ffb454", // Ember Amber
     glowColor: "rgba(255, 180, 84, 0.6)",
-    en: {
-      region: "Forelimbs (Wings)",
-      note: "Switches on the first pair of appendages, forming wings.",
-    },
-    vi: {
-      region: "Chi trước (Cánh)",
-      note: "Kích hoạt cặp chi đầu tiên, tạo thành đôi cánh chính.",
-    },
     cx: 160,
     cy: 100,
     r: 22,
@@ -69,16 +55,9 @@ const GENES: Gene[] = [
   {
     id: 4,
     geneName: "Hox-4",
+    key: "hox4",
     color: "#8a93a8", // Stone/Midtone
     glowColor: "rgba(138, 147, 168, 0.4)",
-    en: {
-      region: "Mid-body Thorax",
-      note: "Forms the central ribcage and carbon-composite support skeleton.",
-    },
-    vi: {
-      region: "Thân giữa (Ngực)",
-      note: "Hình thành lồng ngực trung tâm và khung xương hỗ trợ sợi carbon.",
-    },
     cx: 200,
     cy: 120,
     r: 20,
@@ -86,10 +65,9 @@ const GENES: Gene[] = [
   {
     id: 5,
     geneName: "Hox-5",
+    key: "hox5",
     color: "#ff5da8", // Biolum Magenta
     glowColor: "rgba(255, 93, 168, 0.6)",
-    en: { region: "Hindlimbs", note: "Controls development of the rear crawling/clinging claws." },
-    vi: { region: "Chi sau", note: "Kiểm soát sự phát triển của cặp chân bám/bò phía sau." },
     cx: 245,
     cy: 135,
     r: 15,
@@ -98,16 +76,9 @@ const GENES: Gene[] = [
   {
     id: 6,
     geneName: "Hox-6",
+    key: "hox6",
     color: "#143b46", // Ocean Teal
     glowColor: "rgba(20, 59, 70, 0.6)",
-    en: {
-      region: "Tail End & Queue",
-      note: "Specifies the tail tip and neural queue connection interface.",
-    },
-    vi: {
-      region: "Đuôi & Bím tóc",
-      note: "Xác định phần chóp đuôi và giao diện kết nối dây thần kinh.",
-    },
     cx: 300,
     cy: 120,
     r: 16,
@@ -119,7 +90,6 @@ export default function HoxGenes({ locale }: HoxGenesProps) {
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
 
   const activeGene = activeIdx !== null ? GENES[activeIdx] : null;
-  const isVi = locale === "vi";
 
   return (
     <GlossaryFrame
@@ -240,10 +210,10 @@ export default function HoxGenes({ locale }: HoxGenesProps) {
                   className="text-[10px] font-mono font-bold uppercase mb-0.5"
                   style={{ color: activeGene.color }}
                 >
-                  {activeGene.geneName} &rarr; {isVi ? activeGene.vi.region : activeGene.en.region}
+                  {activeGene.geneName} &rarr; {t(`glossaryGenes.${activeGene.key}.region`)}
                 </h5>
                 <p className="text-[11px] text-muted leading-relaxed font-sans">
-                  {isVi ? activeGene.vi.note : activeGene.en.note}
+                  {t(`glossaryGenes.${activeGene.key}.note`)}
                 </p>
               </>
             ) : (

@@ -14,7 +14,6 @@ interface LibraryPart {
 }
 
 interface ChaptersLibraryProps {
-  locale: "vi" | "en";
   title: string;
   subtitle: string;
   parts: LibraryPart[];
@@ -43,7 +42,6 @@ function normalize(s: string): string {
 }
 
 export function ChaptersLibrary({
-  locale,
   title,
   subtitle,
   parts,
@@ -258,7 +256,6 @@ export function ChaptersLibrary({
                       <ChapterRow
                         key={c.slug}
                         chapter={c}
-                        locale={locale}
                         comingLabel={labels.comingSoon}
                         readingUnit={labels.readingUnit}
                       />

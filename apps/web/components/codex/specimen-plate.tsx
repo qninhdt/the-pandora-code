@@ -14,7 +14,6 @@ interface SpecimenPlateProps {
   plateNo?: string;
   tier?: ClassificationKind;
   tierLabel?: string;
-  locale?: "vi" | "en";
   /** Dim + disable for unpublished entries. */
   coming?: boolean;
   comingLabel?: string;
@@ -32,7 +31,6 @@ export function SpecimenPlate({
   plateNo,
   tier,
   tierLabel,
-  locale = "vi",
   coming = false,
   comingLabel,
   className,
@@ -70,7 +68,7 @@ export function SpecimenPlate({
           </span>
         )}
         {tier && (
-          <CanonBadge kind={tier} locale={locale}>
+          <CanonBadge kind={tier}>
             {tierLabel}
           </CanonBadge>
         )}

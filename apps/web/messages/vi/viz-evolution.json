@@ -2,7 +2,34 @@
   "viz": {
     "bilateralTree": {
       "title": "Cây phát sinh của lưới đối xứng hai bên",
-      "ariaLabel": "Cây phát sinh chủng loài của lưới đối xứng hai bên Pandora, với Na'vi là nhánh ngoại lệ"
+      "ariaLabel": "Cây phát sinh chủng loài của lưới đối xứng hai bên Pandora, với Na'vi là nhánh ngoại lệ",
+      "ancestor": "Tổ tiên sáu chi",
+      "ancestorSub": "6 chi · 4 mắt · queue đôi · xương sợi-carbon · operculum",
+      "rootNote": "Đặc điểm chung dẫn xuất → một nhánh duy nhất",
+      "leaves": {
+        "thanator": {
+          "label": "Thanator",
+          "sub": "6 chân chạy"
+        },
+        "ikran": {
+          "label": "Ikran",
+          "sub": "2 cánh + chi sau tiêu giảm"
+        },
+        "tulkun": {
+          "label": "Tulkun",
+          "sub": "6 vây · 4 mắt"
+        },
+        "prolemuris": {
+          "label": "Prolemuris",
+          "sub": "cẳng tay chẻ đôi · 1 queue",
+          "note": "Mất chi giữa, mắt 4→2"
+        },
+        "navi": {
+          "label": "Na'vi",
+          "sub": "4 chi · 2 mắt · 1 queue · mũi",
+          "note": "Im lặng vùng chi giữa (như rắn mất chân)"
+        }
+      }
     },
     "characterMatrix": {
       "title": "Ma trận đặc điểm → cây tiết kiệm nhất",
@@ -15,7 +42,21 @@
       "stepsPhenetic": "Bùng nổ số bước — xương sợi-carbon và queue phải mọc hai lần trên hai thế giới",
       "placeNavi": "Đặt Na'vi:",
       "synapNote": "Nhánh tô đậm: nơi xương sợi-carbon + queue xuất hiện một lần, gắn cả nhánh thành một dòng họ.",
-      "hint": "Bấm để dời Na'vi. Phép tiết kiệm chọn cái cây cần ít thay đổi nhất — và cái cây đó đặt Na'vi sâu trong nhánh sáu chi Pandora, không phải cạnh con người."
+      "hint": "Bấm để dời Na'vi. Phép tiết kiệm chọn cái cây cần ít thay đổi nhất — và cái cây đó đặt Na'vi sâu trong nhánh sáu chi Pandora, không phải cạnh con người.",
+      "chars": {
+        "limbs": "Chi",
+        "eyes": "Mắt",
+        "resp": "Hô hấp",
+        "queue": "Queue",
+        "bone": "Xương"
+      },
+      "taxa": {
+        "outgroup": "Ngoại nhóm",
+        "ilu": "Ilu",
+        "direhorse": "Pa'li",
+        "prolemuris": "Prolemuris",
+        "navi": "Na'vi"
+      }
     },
     "longBranch": {
       "title": "Lực hút nhánh dài",
@@ -36,14 +77,42 @@
       "off": "tắt",
       "resultLabel": "Cấu hình này ≈",
       "limbCount": "Số cặp chi",
-      "hint": "Cùng một bộ gene Hox. Tắt enhancer của một vùng chi là xóa hẳn cặp chi đó — không phải hợp nhất. Đây chính là cách rắn mất chân trên Trái Đất."
+      "hint": "Cùng một bộ gene Hox. Tắt enhancer của một vùng chi là xóa hẳn cặp chi đó — không phải hợp nhất. Đây chính là cách rắn mất chân trên Trái Đất.",
+      "zones": {
+        "pectoralA": "Vùng ngực-A",
+        "pectoralB": "Vùng ngực-B",
+        "pelvic": "Vùng chậu"
+      },
+      "creatures": {
+        "thanator": "Thanator — sáu chân chạy",
+        "banshee": "Ikran — đôi cánh, chi sau tiêu giảm",
+        "navi": "Na'vi — vùng ngực-B bị im lặng",
+        "novel": "một sơ đồ cơ thể chưa từng thấy",
+        "legless": "một dạng thân không chi"
+      }
     },
     "hoxMap": {
       "title": "Hệ thống địa chỉ Hox",
       "shelf": "Dãy gene trên nhiễm sắc thể",
       "body": "Cơ thể, từ đầu đến đuôi",
       "prompt": "Di chuột hoặc bấm vào một gene để thấy vùng cơ thể nó đánh dấu.",
-      "hint": "Thứ tự các gene trên giá khớp với thứ tự các vùng cơ thể chúng đánh dấu. Gene Hox không xây dựng bộ phận — nó chỉ dán địa chỉ. Dời nhãn là dời bộ phận, mà không cần thiết kế lại bộ phận đó."
+      "hint": "Thứ tự các gene trên giá khớp với thứ tự các vùng cơ thể chúng đánh dấu. Gene Hox không xây dựng bộ phận — nó chỉ dán địa chỉ. Dời nhãn là dời bộ phận, mà không cần thiết kế lại bộ phận đó.",
+      "genes": {
+        "hox1": { "gene": "Hox-1", "region": "Đầu" },
+        "hox2": { "gene": "Hox-2", "region": "Cổ" },
+        "hox3": { "gene": "Hox-3", "region": "Vùng chi trước" },
+        "hox4": { "gene": "Hox-4", "region": "Thân giữa" },
+        "hox5": { "gene": "Hox-5", "region": "Vùng chi sau" },
+        "hox6": { "gene": "Hox-6", "region": "Đuôi" }
+      },
+      "glossaryGenes": {
+        "hox1": { "region": "Đầu & Hàm", "note": "Xác định cấu trúc đầu và các cơ quan cảm giác kép." },
+        "hox2": { "region": "Cổ & Lỗ thở", "note": "Xác định các van hô hấp và các đốt cổ chính." },
+        "hox3": { "region": "Chi trước (Cánh)", "note": "Kích hoạt cặp chi đầu tiên, tạo thành đôi cánh chính." },
+        "hox4": { "region": "Thân giữa (Ngực)", "note": "Hình thành lồng ngực trung tâm và khung xương hỗ trợ sợi carbon." },
+        "hox5": { "region": "Chi sau", "note": "Kiểm soát sự phát triển của cặp chân bám/bò phía sau." },
+        "hox6": { "region": "Đuôi & Bím tóc", "note": "Xác định phần chóp đuôi và giao diện kết nối dây thần kinh." }
+      }
     },
     "replayTape": {
       "title": "Tua lại cuốn băng",
@@ -53,7 +122,25 @@
       "substrateLabel": "Chất nền",
       "button": "Tua lại cuốn băng",
       "run": "Lần chạy {n}/{total}",
-      "hint": "Vai trò hội tụ mỗi lần — vì vật lý viết bản mô tả công việc. Nhưng chất nền lấp đầy vai trò ấy là chuyện của lịch sử, và lịch sử không bao giờ lặp lại."
+      "hint": "Vai trò hội tụ mỗi lần — vì vật lý viết bản mô tả công việc. Nhưng chất nền lấp đầy vai trò ấy là chuyện của lịch sử, và lịch sử không bao giờ lặp lại.",
+      "variants": {
+        "cat": {
+          "origin": "Trái Đất — mèo nhau thai",
+          "substrate": "4 chi · 2 mắt · cột sống dọc · lông"
+        },
+        "hexapod": {
+          "origin": "Pandora — dòng dõi sáu chi",
+          "substrate": "6 chi · 4 mắt · hô hấp bên sườn · queue"
+        },
+        "sabre": {
+          "origin": "Trái Đất — thú có túi 'răng kiếm'",
+          "substrate": "4 chi · túi · răng nanh chân hở"
+        },
+        "unvisited": {
+          "origin": "Một thế giới chưa từng đặt chân",
+          "substrate": "8 chi · 4 mắt · tấm kitin · ??"
+        }
+      }
     },
     "convergence": {
       "title": "Cùng công việc, khác chất nền",
@@ -62,14 +149,59 @@
       "jobHint": "Ở chế độ Công việc, cả hai khoác cùng một dáng vồ mồi — lò xo hông, chi trước quặp, mắt săn hướng trước. Mai phục có một hình dạng, và bất kỳ dòng dõi nào nhận công việc ấy đều bị kéo về hình dạng đó.",
       "tellsHint": "Ở chế độ Dấu vết, hãy nhìn lại con thanator: sáu chi nơi báo có bốn, bốn mắt nơi báo có hai, khe hô hấp dọc sườn. Vai trò là của Trái Đất; con vật thì dứt khoát không phải.",
       "shared": "Đặc điểm vai trò (hội tụ)",
-      "inherited": "Di sản Pandora (không hội tụ)"
+      "inherited": "Di sản Pandora (không hội tụ)",
+      "panther": "Báo đen Trái Đất",
+      "thanator": "Thanator Pandora"
     },
     "nichePartition": {
       "title": "Một khu rừng, chia thành nhiều tầng",
       "pandoraLabel": "Pandora",
       "earthLabel": "Tương đồng Trái Đất",
       "prompt": "Bấm vào một tầng để xem ai kiếm ăn ở đó.",
-      "hint": "Loại trừ cạnh tranh nói rằng hai loài không thể chung một hốc sinh thái. Lời giải không phải chia sẻ một hốc — mà là tách nó thành nhiều tầng, mỗi loài một độ cao, một cách ăn."
+      "hint": "Loại trừ cạnh tranh nói rằng hai loài không thể chung một hốc sinh thái. Lời giải không phải chia sẻ một hốc — mà là tách nó thành nhiều tầng, mỗi loài một độ cao, một cách ăn.",
+      "bands": {
+        "high": {
+          "zone": "Tán lá cao",
+          "pandora": "Hammerhead titanothere",
+          "earth": "Hươu cao cổ",
+          "how": "Vươn tới lá cao mà không loài nào khác chạm được."
+        },
+        "mid": {
+          "zone": "Tầng giữa",
+          "pandora": "Bầy direhorse",
+          "earth": "Linh dương ăn lá",
+          "how": "Tỉa lá ở tầm trung, di chuyển theo bầy."
+        },
+        "low": {
+          "zone": "Chồi mặt đất",
+          "pandora": "Hexapede",
+          "earth": "Linh dương gazelle",
+          "how": "Gặm chồi non dưới tầng thấp gần mặt đất."
+        }
+      },
+      "glossaryLayers": {
+        "canopy": {
+          "name": "Vòm rừng (Cao)",
+          "btnLabel": "Vòm",
+          "species": "Ikran (Banshee núi)",
+          "role": "Sinh vật săn mồi đỉnh cao ở độ cao lớn, làm tổ trên đỉnh núi và săn mồi ở tầng tán.",
+          "analog": "Chim ưng / Đại bàng"
+        },
+        "midstory": {
+          "name": "Tầng giữa (Trung)",
+          "btnLabel": "Tầng",
+          "species": "Tetrapteron",
+          "role": "Sinh vật ăn hạt và côn trùng bay theo bầy, đôi cánh nhỏ linh hoạt bay ở tầng trung.",
+          "analog": "Chim én / Chim đớp ruồi"
+        },
+        "floor": {
+          "name": "Thảm rừng (Thấp)",
+          "btnLabel": "Thảm",
+          "species": "Sói Viper (Anapsey)",
+          "role": "Sinh vật săn mồi theo đàn dưới mặt đất, chuyên theo dấu linh dương sáu chân.",
+          "analog": "Sói / Linh cẩu"
+        }
+      }
     }
   }
 }

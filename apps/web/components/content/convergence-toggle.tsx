@@ -3,20 +3,15 @@
 import { GlowDefs, glowUrl } from "@/components/content/viz/glow-defs";
 import { SegmentedToggle } from "@/components/content/viz/segmented-toggle";
 import { VizFigure } from "@/components/content/viz/viz-figure";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useId, useState } from "react";
 
 type Mode = "job" | "tells";
-type Localized = { vi: string; en: string };
 
 interface ConvergenceToggleProps {
   caption?: string;
   className?: string;
 }
-
-// Scientific data stays in code: the two animals being compared.
-const PANTHER: Localized = { vi: "Báo đen Trái Đất", en: "Earth panther" };
-const THANATOR: Localized = { vi: "Thanator Pandora", en: "Pandoran thanator" };
 
 const W = 200;
 const H = 180;
@@ -120,7 +115,6 @@ function Predator({
 export function ConvergenceToggle({ caption, className }: ConvergenceToggleProps) {
   const uid = useId();
   const t = useTranslations("viz.convergence");
-  const locale = useLocale() as "vi" | "en";
   const [mode, setMode] = useState<Mode>("job");
   const tells = mode === "tells";
 
@@ -164,18 +158,18 @@ export function ConvergenceToggle({ caption, className }: ConvergenceToggleProps
     >
       <div className="grid grid-cols-2 gap-3">
         <div className="flex flex-col items-center gap-1">
-          <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label={PANTHER[locale]}>
+          <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label={t("panther")}>
             <GlowDefs idBase={`${uid}-a`} tones={["amber"]} />
             <Predator accent="var(--muted)" tells={false} />
           </svg>
-          <p className="font-sans text-xs text-subtle">{PANTHER[locale]}</p>
+          <p className="font-sans text-xs text-subtle">{t("panther")}</p>
         </div>
         <div className="flex flex-col items-center gap-1">
           <svg
             viewBox={`0 0 ${W} ${H}`}
             className="w-full"
             role="img"
-            aria-label={THANATOR[locale]}
+            aria-label={t("thanator")}
           >
             <GlowDefs idBase={`${uid}-b`} tones={["cyan", "amber"]} />
             <Predator
@@ -185,7 +179,7 @@ export function ConvergenceToggle({ caption, className }: ConvergenceToggleProps
               tellGlow={glowUrl(`${uid}-b`, "bloom")}
             />
           </svg>
-          <p className="font-sans text-xs text-subtle">{THANATOR[locale]}</p>
+          <p className="font-sans text-xs text-subtle">{t("thanator")}</p>
         </div>
       </div>
     </VizFigure>

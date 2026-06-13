@@ -112,7 +112,7 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
       <AnatomyPlate {...props} locale={loc} />
     ),
     CanonBadge: (props: ComponentProps<typeof CanonBadge>) => (
-      <CanonBadge {...props} locale={loc} />
+      <CanonBadge {...props} />
     ),
     DiagramFigure: (props: ComponentProps<typeof DiagramFigure>) => (
       <DiagramFigure {...props} locale={loc} />

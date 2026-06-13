@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { CanonBadge } from "@/components/classification/canon-badge";
 import { AnnotationLayer, type ResolvedLabel } from "@/components/content/figure-annotations";
 import { LightboxImage } from "@/components/content/lightbox";
@@ -61,6 +62,7 @@ export function DiagramFigure({
   bleed,
   className,
 }: DiagramFigureProps) {
+  const t = useTranslations("common");
   const annotationsVisible = useAnnotationsVisible();
   const captionText = pick(caption, locale);
   const hasLabels = labels.length > 0;
@@ -75,12 +77,8 @@ export function DiagramFigure({
   }));
 
   const btnTitle = annotationsVisible
-    ? locale === "vi"
-      ? "Ẩn chú thích trên mọi hình"
-      : "Hide labels on every figure"
-    : locale === "vi"
-      ? "Hiện chú thích trên mọi hình"
-      : "Show labels on every figure";
+    ? t("hideAllLabels")
+    : t("showAllLabels");
 
   return (
     <figure className={cn("my-8", bleed && "lg:-mx-24", className)}>
@@ -137,7 +135,7 @@ export function DiagramFigure({
               </span>
             )}
             {tier && (
-              <CanonBadge kind={tier} locale={locale} className="ml-auto shrink-0 sm:ml-0" />
+              <CanonBadge kind={tier} className="ml-auto shrink-0 sm:ml-0" />
             )}
           </div>
           {captionText && (

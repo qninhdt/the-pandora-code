@@ -5,31 +5,10 @@ import { SegmentedToggle } from "@/components/content/viz/segmented-toggle";
 import { VizFigure } from "@/components/content/viz/viz-figure";
 import { VizReadout } from "@/components/content/viz/viz-readout";
 import { useReducedMotionSafe } from "@/components/motion/use-reduced-motion-safe";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useId, useState } from "react";
 
 type Zone = "pectoralA" | "pectoralB" | "pelvic";
-type Localized = { vi: string; en: string };
-
-// Scientific data stays in code: zone names + the creature each configuration
-// maps onto. The Na'vi case (Pectoral-B off, the other two on) is the chapter's
-// punchline — limb loss, not limb fusion.
-const ZONE_NAMES: Record<Zone, Localized> = {
-  pectoralA: { vi: "Vùng ngực-A", en: "Pectoral-A field" },
-  pectoralB: { vi: "Vùng ngực-B", en: "Pectoral-B field" },
-  pelvic: { vi: "Vùng chậu", en: "Pelvic field" },
-};
-
-const CREATURES = {
-  thanator: { vi: "Thanator — sáu chân chạy", en: "Thanator — six running legs" },
-  banshee: {
-    vi: "Ikran — đôi cánh, chi sau tiêu giảm",
-    en: "Mountain banshee — wings, reduced hindlimbs",
-  },
-  navi: { vi: "Na'vi — vùng ngực-B bị im lặng", en: "Na'vi — Pectoral-B silenced" },
-  novel: { vi: "một sơ đồ cơ thể chưa từng thấy", en: "a body plan never seen" },
-  legless: { vi: "một dạng thân không chi", en: "a limbless body form" },
-} as const;
 
 interface ZoneState {
   pectoralA: boolean;
@@ -39,15 +18,14 @@ interface ZoneState {
 
 const DEFAULT_STATE: ZoneState = { pectoralA: true, pectoralB: true, pelvic: true };
 
-// Map a zone configuration to the nearest canonical Pandoran creature.
-function creatureFor(s: ZoneState, locale: "vi" | "en") {
+// Map a zone configuration to the nearest canonical Pandoran creature key.
+function creatureFor(s: ZoneState): string {
   const { pectoralA, pectoralB, pelvic } = s;
-  let key: keyof typeof CREATURES = "novel";
-  if (pectoralA && pectoralB && pelvic) key = "thanator";
-  else if (pectoralA && pectoralB && !pelvic) key = "banshee";
-  else if (pectoralA && !pectoralB && pelvic) key = "navi";
-  else if (!pectoralA && !pectoralB && !pelvic) key = "legless";
-  return CREATURES[key][locale];
+  if (pectoralA && pectoralB && pelvic) return "thanator";
+  if (pectoralA && pectoralB && !pelvic) return "banshee";
+  if (pectoralA && !pectoralB && pelvic) return "navi";
+  if (!pectoralA && !pectoralB && !pelvic) return "legless";
+  return "novel";
 }
 
 const W = 360;
@@ -112,12 +90,11 @@ export function LimbFieldToggle({ caption, className }: LimbFieldToggleProps) {
   const uid = useId();
   const reduced = useReducedMotionSafe();
   const t = useTranslations("viz.limbField");
-  const locale = useLocale() as "vi" | "en";
   const [state, setState] = useState<ZoneState>(DEFAULT_STATE);
 
   const zones: Zone[] = ["pectoralA", "pectoralB", "pelvic"];
   const limbPairs = zones.filter((z) => state[z]).length;
-  const resultName = creatureFor(state, locale);
+  const resultName = t(`creatures.${creatureFor(state)}`);
 
   return (
     <VizFigure title={t("title")} caption={caption} className={className} hint={t("hint")}>
@@ -128,7 +105,7 @@ export function LimbFieldToggle({ caption, className }: LimbFieldToggleProps) {
           role="img"
           aria-label={`${t("resultLabel")} ${resultName}`}
         >
-          <GlowDefs idBase={uid} tones={["cyan"]} />
+          <GlowDefs idBase={uid} />
           {/* spine + body */}
           <line
             x1={BODY_X0}
@@ -170,10 +147,10 @@ export function LimbFieldToggle({ caption, className }: LimbFieldToggleProps) {
                 className="font-sans text-sm"
                 style={{ color: state[z] ? "var(--cyan)" : "var(--subtle)" }}
               >
-                {ZONE_NAMES[z][locale]}
+                {t(`zones.${z}`)}
               </span>
               <SegmentedToggle
-                ariaLabel={ZONE_NAMES[z][locale]}
+                ariaLabel={t(`zones.${z}`)}
                 value={state[z] ? "on" : "off"}
                 onChange={(v) => setState((s) => ({ ...s, [z]: v === "on" }))}
                 options={[

@@ -1,16 +1,10 @@
+import { useTranslations } from "next-intl";
 import type { ClassificationKind } from "@/lib/content/schemas/shared";
 import { cn } from "@/lib/utils";
 
 // Built fresh for the dark bioluminescent system. Each tier glows in its own
 // hue - a tiny dot of "living light" plus a soft outer bloom - so the four
 // epistemic tiers read at a glance against the void without shouting.
-
-const labelMap: Record<ClassificationKind, { vi: string; en: string }> = {
-  canon: { vi: "Chính truyện", en: "Canon" },
-  inference: { vi: "Suy luận", en: "Inference" },
-  speculation: { vi: "Suy đoán", en: "Speculation" },
-  real_science: { vi: "Khoa học thật", en: "Real science" },
-};
 
 // Token var per tier, used for text, dot, ring, and bloom.
 const tierVar: Record<ClassificationKind, string> = {
@@ -22,12 +16,12 @@ const tierVar: Record<ClassificationKind, string> = {
 
 interface CanonBadgeProps {
   kind: ClassificationKind;
-  locale?: "vi" | "en";
   className?: string;
   children?: React.ReactNode;
 }
 
-export function CanonBadge({ kind, locale = "vi", className, children }: CanonBadgeProps) {
+export function CanonBadge({ kind, className, children }: CanonBadgeProps) {
+  const t = useTranslations("classification");
   const c = `var(${tierVar[kind]})`;
   return (
     <span
@@ -50,7 +44,7 @@ export function CanonBadge({ kind, locale = "vi", className, children }: CanonBa
         className="size-1.5 rounded-full"
         style={{ background: c, boxShadow: `0 0 6px 0 ${c}` }}
       />
-      {children ?? labelMap[kind][locale]}
+      {children ?? t(kind)}
     </span>
   );
 }

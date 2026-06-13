@@ -22,7 +22,9 @@
     "next": "Tiếp theo",
     "previous": "Trang trước",
     "loading": "Đang tải...",
-    "skipToContent": "Đi thẳng tới nội dung chính"
+    "skipToContent": "Đi thẳng tới nội dung chính",
+    "hideAllLabels": "Ẩn chú thích trên mọi hình",
+    "showAllLabels": "Hiện chú thích trên mọi hình"
   },
   "search": {
     "trigger": "Tìm kiếm",
@@ -98,7 +100,14 @@
     },
     "authors": {
       "title": "Tác giả",
-      "subtitle": "Chất giọng duy nhất dẫn dắt toàn bộ tác phẩm The Pandora Code."
+      "subtitle": "Chất giọng duy nhất dẫn dắt toàn bộ tác phẩm The Pandora Code.",
+      "bio": "Giới thiệu",
+      "voice": "Đặc trưng giọng văn",
+      "contract": "Cam kết với độc giả",
+      "models": "Mô hình sử dụng",
+      "writing": "Chấp bút",
+      "drawing": "Minh hoạ",
+      "translation": "Chuyển ngữ"
     },
     "timeline": {
       "title": "Dòng thời gian kiến thức",

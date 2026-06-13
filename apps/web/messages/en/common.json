@@ -22,7 +22,9 @@
     "next": "Next",
     "previous": "Previous",
     "loading": "Loading...",
-    "skipToContent": "Skip to main content"
+    "skipToContent": "Skip to main content",
+    "hideAllLabels": "Hide labels on every figure",
+    "showAllLabels": "Show labels on every figure"
   },
   "search": {
     "trigger": "Search",
@@ -98,7 +100,14 @@
     },
     "authors": {
       "title": "Author",
-      "subtitle": "The single voice narrating The Pandora Code."
+      "subtitle": "The single voice narrating The Pandora Code.",
+      "bio": "Bio",
+      "voice": "Voice",
+      "contract": "Reader contract",
+      "models": "Models used",
+      "writing": "Writing",
+      "drawing": "Illustration",
+      "translation": "Translation"
     },
     "timeline": {
       "title": "Knowledge timeline",

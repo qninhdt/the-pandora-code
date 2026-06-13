@@ -3,7 +3,7 @@
 import { GlowDefs, glowUrl } from "@/components/content/viz/glow-defs";
 import { VizFigure } from "@/components/content/viz/viz-figure";
 import { useReducedMotionSafe } from "@/components/motion/use-reduced-motion-safe";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useId, useState } from "react";
 
 interface ReplayTheTapeProps {
@@ -17,49 +17,16 @@ interface ReplayTheTapeProps {
 // replay. Gould's accidents wearing Conway Morris's roles: the silhouette
 // converges, the inheritance never repeats.
 interface Variant {
+  id: string;
   limbs: number; // limb pairs drawn under the body
   eyes: number; // hunting eyes at the head
-  vi: { origin: string; substrate: string };
-  en: { origin: string; substrate: string };
 }
 
 const VARIANTS: Variant[] = [
-  {
-    limbs: 2,
-    eyes: 1,
-    en: { origin: "Earth — placental cat", substrate: "4 limbs · 2 eyes · vertical spine · fur" },
-    vi: { origin: "Trái Đất — mèo nhau thai", substrate: "4 chi · 2 mắt · cột sống dọc · lông" },
-  },
-  {
-    limbs: 3,
-    eyes: 2,
-    en: {
-      origin: "Pandora — hexapod stock",
-      substrate: "6 limbs · 4 eyes · flank breathing · queue",
-    },
-    vi: {
-      origin: "Pandora — dòng dõi sáu chi",
-      substrate: "6 chi · 4 mắt · hô hấp bên sườn · queue",
-    },
-  },
-  {
-    limbs: 2,
-    eyes: 1,
-    en: {
-      origin: "Earth — marsupial 'sabre-tooth'",
-      substrate: "4 limbs · pouch · open-rooted fangs",
-    },
-    vi: {
-      origin: "Trái Đất — thú có túi 'răng kiếm'",
-      substrate: "4 chi · túi · răng nanh chân hở",
-    },
-  },
-  {
-    limbs: 4,
-    eyes: 2,
-    en: { origin: "A world never visited", substrate: "8 limbs · 4 eyes · chitin plates · ??" },
-    vi: { origin: "Một thế giới chưa từng đặt chân", substrate: "8 chi · 4 mắt · tấm kitin · ??" },
-  },
+  { id: "cat", limbs: 2, eyes: 1 },
+  { id: "hexapod", limbs: 3, eyes: 2 },
+  { id: "sabre", limbs: 2, eyes: 1 },
+  { id: "unvisited", limbs: 4, eyes: 2 },
 ];
 
 const W = 320;
@@ -79,7 +46,6 @@ export function ReplayTheTape({ caption, className }: ReplayTheTapeProps) {
   const uid = useId();
   const reduced = useReducedMotionSafe();
   const t = useTranslations("viz.replayTape");
-  const locale = useLocale() as "vi" | "en";
   // Deterministic initial render (no Math.random in state) → SSR-safe.
   const [index, setIndex] = useState(0);
   const v = VARIANTS[index];
@@ -136,7 +102,7 @@ export function ReplayTheTape({ caption, className }: ReplayTheTapeProps) {
             viewBox={`0 0 ${W} ${H}`}
             className="w-full"
             role="img"
-            aria-label={`${t("roleValue")} — ${v[locale].substrate}`}
+            aria-label={`${t("roleValue")} — ${t(`variants.${v.id}.substrate`)}`}
           >
             <GlowDefs idBase={uid} tones={["teal", "amber"]} />
             {/* the pounce: a low spring-loaded body — the role, held constant */}
@@ -208,13 +174,13 @@ export function ReplayTheTape({ caption, className }: ReplayTheTapeProps) {
               {t("originLabel")}
             </p>
             <p className="font-display text-sm font-700 text-foreground" style={{ transition: tr }}>
-              {v[locale].origin}
+              {t(`variants.${v.id}.origin`)}
             </p>
             <p className="mt-1 font-sans text-xs uppercase tracking-wider text-subtle">
               {t("substrateLabel")}
             </p>
             <p className="font-sans text-xs text-amber" style={{ transition: tr }}>
-              {v[locale].substrate}
+              {t(`variants.${v.id}.substrate`)}
             </p>
           </div>
         </div>

@@ -5,40 +5,32 @@ import { SegmentedToggle } from "@/components/content/viz/segmented-toggle";
 import { branchPath, tipYs } from "@/components/content/viz/tree";
 import { VizFigure } from "@/components/content/viz/viz-figure";
 import { VizText } from "@/components/content/viz/viz-svg-text";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useId, useState } from "react";
 
-type Localized = { vi: string; en: string };
-
-// Scientific data stays in code: the five diagnostic characters scored against a
-// hypothetical marine-chordate outgroup. State 0 is the outgroup/ancestral
-// condition; higher integers are derived states. The carbon-fibre skeleton and
-// the neural queue are the synapomorphies that bind the bestiary into one clade.
 interface CharCol {
   key: string;
-  short: Localized;
 }
 
 const CHARS: CharCol[] = [
-  { key: "limbs", short: { vi: "Chi", en: "Limbs" } },
-  { key: "eyes", short: { vi: "Mắt", en: "Eyes" } },
-  { key: "resp", short: { vi: "Hô hấp", en: "Resp." } },
-  { key: "queue", short: { vi: "Queue", en: "Queue" } },
-  { key: "bone", short: { vi: "Xương", en: "Bone" } },
+  { key: "limbs" },
+  { key: "eyes" },
+  { key: "resp" },
+  { key: "queue" },
+  { key: "bone" },
 ];
 
 interface Taxon {
   id: string;
-  name: Localized;
   states: [number, number, number, number, number];
 }
 
 const TAXA: Taxon[] = [
-  { id: "outgroup", name: { vi: "Ngoại nhóm", en: "Outgroup" }, states: [0, 1, 1, 0, 0] },
-  { id: "ilu", name: { vi: "Ilu", en: "Ilu" }, states: [0, 0, 1, 1, 1] },
-  { id: "direhorse", name: { vi: "Pa'li", en: "Direhorse" }, states: [0, 0, 0, 1, 1] },
-  { id: "prolemuris", name: { vi: "Prolemuris", en: "Prolemuris" }, states: [1, 1, 0, 1, 1] },
-  { id: "navi", name: { vi: "Na'vi", en: "Na'vi" }, states: [2, 1, 1, 1, 1] },
+  { id: "outgroup", states: [0, 1, 1, 0, 0] },
+  { id: "ilu", states: [0, 0, 1, 1, 1] },
+  { id: "direhorse", states: [0, 0, 0, 1, 1] },
+  { id: "prolemuris", states: [1, 1, 0, 1, 1] },
+  { id: "navi", states: [2, 1, 1, 1, 1] },
 ];
 
 const W = 420;
@@ -62,7 +54,6 @@ interface CharacterMatrixCladogramProps {
 export function CharacterMatrixCladogram({ caption, className }: CharacterMatrixCladogramProps) {
   const uid = useId();
   const t = useTranslations("viz.characterMatrix");
-  const locale = useLocale() as "vi" | "en";
   const [layout, setLayout] = useState<Layout>("parsimony");
   const phenetic = layout === "phenetic";
 
@@ -109,7 +100,7 @@ export function CharacterMatrixCladogram({ caption, className }: CharacterMatrix
                   <th className="px-1 py-1 text-left font-sans text-xs font-700 text-subtle" />
                   {CHARS.map((c) => (
                     <th key={c.key} className="px-1 py-1 font-sans text-xs font-700 text-subtle">
-                      {c.short[locale]}
+                      {t(`chars.${c.key}`)}
                     </th>
                   ))}
                 </tr>
@@ -118,7 +109,7 @@ export function CharacterMatrixCladogram({ caption, className }: CharacterMatrix
                 {TAXA.map((tx) => (
                   <tr key={tx.id} className="border-t border-border/60">
                     <td className="px-1 py-1 text-left font-display text-xs font-700 text-foreground">
-                      {tx.name[locale]}
+                      {t(`taxa.${tx.id}`)}
                     </td>
                     {tx.states.map((s, i) => (
                       <td
@@ -194,7 +185,7 @@ export function CharacterMatrixCladogram({ caption, className }: CharacterMatrix
                     filter={glowUrl(uid, highlight ? "bloom-strong" : "bloom")}
                   />
                   <VizText x={tipX + 12} y={by + 4} size="small" tone="foreground" weight={700}>
-                    {tx.name[locale]}
+                    {t(`taxa.${tx.id}`)}
                   </VizText>
                 </g>
               );

@@ -32,5 +32,5 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
   const author = listAuthors(loc)[0];
   if (!author) notFound();
 
-  return <AuthorProfile author={author} locale={loc} bgSrc={getPageBackground("authors")} />;
+  return <AuthorProfile author={author} bgSrc={getPageBackground("authors")} />;
 }

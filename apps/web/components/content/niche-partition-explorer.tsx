@@ -4,7 +4,7 @@ import { GlowDefs, glowUrl } from "@/components/content/viz/glow-defs";
 import { VizFigure } from "@/components/content/viz/viz-figure";
 import { VizReadout } from "@/components/content/viz/viz-readout";
 import { VizText } from "@/components/content/viz/viz-svg-text";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useId, useState } from "react";
 
 interface NichePartitionExplorerProps {
@@ -17,61 +17,15 @@ interface NichePartitionExplorerProps {
 // exclusion forces open. Click a band to see the Pandoran tenant, its Earth
 // analogue, and how it feeds.
 interface Band {
+  id: string;
   y: number; // top of band in viewBox units
   h: number;
-  vi: { zone: string; pandora: string; earth: string; how: string };
-  en: { zone: string; pandora: string; earth: string; how: string };
 }
 
 const BANDS: Band[] = [
-  {
-    y: 8,
-    h: 56,
-    en: {
-      zone: "High foliage",
-      pandora: "Hammerhead titanothere",
-      earth: "Giraffe",
-      how: "Reaches the high leaves no one else can crop.",
-    },
-    vi: {
-      zone: "Tán lá cao",
-      pandora: "Hammerhead titanothere",
-      earth: "Hươu cao cổ",
-      how: "Vươn tới lá cao mà không loài nào khác chạm được.",
-    },
-  },
-  {
-    y: 64,
-    h: 56,
-    en: {
-      zone: "Mid-canopy",
-      pandora: "Direhorse herd",
-      earth: "Browsing antelope",
-      how: "Strips foliage at mid-height, moving in herds.",
-    },
-    vi: {
-      zone: "Tầng giữa",
-      pandora: "Bầy direhorse",
-      earth: "Linh dương ăn lá",
-      how: "Tỉa lá ở tầm trung, di chuyển theo bầy.",
-    },
-  },
-  {
-    y: 120,
-    h: 54,
-    en: {
-      zone: "Ground shoots",
-      pandora: "Hexapede",
-      earth: "Gazelle",
-      how: "Crops tender understorey shoots near the floor.",
-    },
-    vi: {
-      zone: "Chồi mặt đất",
-      pandora: "Hexapede",
-      earth: "Linh dương gazelle",
-      how: "Gặm chồi non dưới tầng thấp gần mặt đất.",
-    },
-  },
+  { id: "high", y: 8, h: 56 },
+  { id: "mid", y: 64, h: 56 },
+  { id: "low", y: 120, h: 54 },
 ];
 
 const W = 200;
@@ -80,9 +34,13 @@ const H = 182;
 export function NichePartitionExplorer({ caption, className }: NichePartitionExplorerProps) {
   const uid = useId();
   const t = useTranslations("viz.nichePartition");
-  const locale = useLocale() as "vi" | "en";
   const [selected, setSelected] = useState<number | null>(null);
-  const active = selected !== null ? BANDS[selected][locale] : null;
+  const active = selected !== null ? {
+    zone: t(`bands.${BANDS[selected].id}.zone`),
+    pandora: t(`bands.${BANDS[selected].id}.pandora`),
+    earth: t(`bands.${BANDS[selected].id}.earth`),
+    how: t(`bands.${BANDS[selected].id}.how`),
+  } : null;
 
   return (
     <VizFigure title={t("title")} caption={caption} className={className} hint={t("hint")}>
@@ -110,15 +68,16 @@ export function NichePartitionExplorer({ caption, className }: NichePartitionExp
           ))}
           {BANDS.map((b, i) => {
             const isOn = selected === i;
+            const zoneLabel = t(`bands.${b.id}.zone`);
             return (
               <g
-                key={b.en.zone}
+                key={b.id}
                 onClick={() => setSelected(isOn ? null : i)}
                 style={{ cursor: "pointer" }}
                 // biome-ignore lint/a11y/useSemanticElements: an SVG <g> cannot be a native <button>; button role is the correct ARIA mapping for a clickable band
                 role="button"
                 aria-pressed={isOn}
-                aria-label={b[locale].zone}
+                aria-label={zoneLabel}
               >
                 <rect
                   x={6}
@@ -155,7 +114,7 @@ export function NichePartitionExplorer({ caption, className }: NichePartitionExp
                   tone={isOn ? "teal" : "subtle"}
                   weight={700}
                 >
-                  {b[locale].zone}
+                  {zoneLabel}
                 </VizText>
                 {/* a small feeding marker at the band's height */}
                 <circle

@@ -79,7 +79,6 @@ export default async function ChaptersPage({ params }: ChaptersPageProps) {
   return (
     <>
       <ChaptersLibrary
-        locale={loc}
         title={t("page.chapters.title")}
         subtitle={t("page.chapters.subtitle")}
         parts={parts}

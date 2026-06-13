@@ -20,7 +20,6 @@ export interface ChapterRowData {
 
 interface ChapterRowProps {
   chapter: ChapterRowData;
-  locale: "vi" | "en";
   comingLabel: string;
   readingUnit: string;
 }
@@ -29,7 +28,7 @@ interface ChapterRowProps {
 // flat and scannable (thumbnail + title + one-line payload + meta), unlike the
 // landing's tall poster plates. Published rows link out; coming rows are dimmed
 // and inert.
-export function ChapterRow({ chapter, locale, comingLabel, readingUnit }: ChapterRowProps) {
+export function ChapterRow({ chapter, comingLabel, readingUnit }: ChapterRowProps) {
   const { published, coverSrc, plateNo, title, payload, readingMin, tier } = chapter;
 
   const inner = (
@@ -70,7 +69,7 @@ export function ChapterRow({ chapter, locale, comingLabel, readingUnit }: Chapte
         <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1.5">
           {published ? (
             <>
-              {tier ? <CanonBadge kind={tier} locale={locale} /> : null}
+              {tier ? <CanonBadge kind={tier} /> : null}
               {readingMin ? (
                 <span className="font-sans text-xs tabular-nums text-subtle">
                   {readingMin} {readingUnit}

@@ -2,7 +2,34 @@
   "viz": {
     "bilateralTree": {
       "title": "Cladogram of the bilateral lattice",
-      "ariaLabel": "Cladogram of the Pandoran bilateral lattice, with the Na'vi as the aberrant branch"
+      "ariaLabel": "Cladogram of the Pandoran bilateral lattice, with the Na'vi as the aberrant branch",
+      "ancestor": "Ancestral hexapod",
+      "ancestorSub": "6 limbs · 4 eyes · paired queues · carbon-fibre bone · opercula",
+      "rootNote": "Shared derived traits → one clade",
+      "leaves": {
+        "thanator": {
+          "label": "Thanator",
+          "sub": "six running legs"
+        },
+        "ikran": {
+          "label": "Mountain banshee",
+          "sub": "wings + reduced hindlimbs"
+        },
+        "tulkun": {
+          "label": "Tulkun",
+          "sub": "six flippers · four eyes"
+        },
+        "prolemuris": {
+          "label": "Prolemuris",
+          "sub": "split forearm · single queue",
+          "note": "Mid-limb loss, eyes 4→2"
+        },
+        "navi": {
+          "label": "Na'vi",
+          "sub": "4 limbs · 2 eyes · 1 queue · nostrils",
+          "note": "Mid-limb field silenced (snake-like)"
+        }
+      }
     },
     "characterMatrix": {
       "title": "Character matrix → the most parsimonious tree",
@@ -15,7 +42,21 @@
       "stepsPhenetic": "Steps explode — carbon-fibre bone and the queue must evolve twice, on two worlds",
       "placeNavi": "Place the Na'vi:",
       "synapNote": "Bold branch: where carbon-fibre bone + the queue appear once, binding the whole branch into one lineage.",
-      "hint": "Tap to move the Na'vi. Parsimony picks the tree needing the fewest changes — and that tree nests the Na'vi deep inside the Pandoran six-limbed branch, not beside humans."
+      "hint": "Tap to move the Na'vi. Parsimony picks the tree needing the fewest changes — and that tree nests the Na'vi deep inside the Pandoran six-limbed branch, not beside humans.",
+      "chars": {
+        "limbs": "Limbs",
+        "eyes": "Eyes",
+        "resp": "Resp.",
+        "queue": "Queue",
+        "bone": "Bone"
+      },
+      "taxa": {
+        "outgroup": "Outgroup",
+        "ilu": "Ilu",
+        "direhorse": "Direhorse",
+        "prolemuris": "Prolemuris",
+        "navi": "Na'vi"
+      }
     },
     "longBranch": {
       "title": "Long-branch attraction",
@@ -36,14 +77,42 @@
       "off": "off",
       "resultLabel": "This configuration ≈",
       "limbCount": "Limb pairs",
-      "hint": "The same Hox toolkit. Switching off one limb field's enhancer deletes that pair outright — it does not fuse them. This is exactly how snakes lost their legs on Earth."
+      "hint": "The same Hox toolkit. Switching off one limb field's enhancer deletes that pair outright — it does not fuse them. This is exactly how snakes lost their legs on Earth.",
+      "zones": {
+        "pectoralA": "Pectoral-A field",
+        "pectoralB": "Pectoral-B field",
+        "pelvic": "Pelvic field"
+      },
+      "creatures": {
+        "thanator": "Thanator — six running legs",
+        "banshee": "Mountain banshee — wings, reduced hindlimbs",
+        "navi": "Na'vi — Pectoral-B silenced",
+        "novel": "a body plan never seen",
+        "legless": "a limbless body form"
+      }
     },
     "hoxMap": {
       "title": "The Hox address system",
       "shelf": "Gene row on the chromosome",
       "body": "The body, head to tail",
       "prompt": "Hover or tap a gene to see the body region it labels.",
-      "hint": "The order of the genes on the shelf matches the order of the body regions they label. A Hox gene does not build a part — it stamps an address. Move a label and you move a body part, without redesigning the part itself."
+      "hint": "The order of the genes on the shelf matches the order of the body regions they label. A Hox gene does not build a part — it stamps an address. Move a label and you move a body part, without redesigning the part itself.",
+      "genes": {
+        "hox1": { "gene": "Hox-1", "region": "Head end" },
+        "hox2": { "gene": "Hox-2", "region": "Neck" },
+        "hox3": { "gene": "Hox-3", "region": "Forelimb zone" },
+        "hox4": { "gene": "Hox-4", "region": "Mid-body" },
+        "hox5": { "gene": "Hox-5", "region": "Hindlimb zone" },
+        "hox6": { "gene": "Hox-6", "region": "Tail end" }
+      },
+      "glossaryGenes": {
+        "hox1": { "region": "Head & Jaw", "note": "Specifies head structure and double sensory organs." },
+        "hox2": { "region": "Neck & Spiracles", "note": "Addresses the breathing vents and primary neck segments." },
+        "hox3": { "region": "Forelimbs (Wings)", "note": "Switches on the first pair of appendages, forming wings." },
+        "hox4": { "region": "Mid-body Thorax", "note": "Forms the central ribcage and carbon-composite support skeleton." },
+        "hox5": { "region": "Hindlimbs", "note": "Controls development of the rear crawling/clinging claws." },
+        "hox6": { "region": "Tail End & Queue", "note": "Specifies the tail tip and neural queue connection interface." }
+      }
     },
     "replayTape": {
       "title": "Replay the tape",
@@ -53,7 +122,25 @@
       "substrateLabel": "Substrate",
       "button": "Replay the tape",
       "run": "Run {n}/{total}",
-      "hint": "The role converges every time — because physics writes the job description. But the substrate that fills it is history's call, and history never repeats."
+      "hint": "The role converges every time — because physics writes the job description. But the substrate that fills it is history's call, and history never repeats.",
+      "variants": {
+        "cat": {
+          "origin": "Earth — placental cat",
+          "substrate": "4 limbs · 2 eyes · vertical spine · fur"
+        },
+        "hexapod": {
+          "origin": "Pandora — hexapod stock",
+          "substrate": "6 limbs · 4 eyes · flank breathing · queue"
+        },
+        "sabre": {
+          "origin": "Earth — marsupial 'sabre-tooth'",
+          "substrate": "4 limbs · pouch · open-rooted fangs"
+        },
+        "unvisited": {
+          "origin": "A world never visited",
+          "substrate": "8 limbs · 4 eyes · chitin plates · ??"
+        }
+      }
     },
     "convergence": {
       "title": "Same job, different substrate",
@@ -62,14 +149,59 @@
       "jobHint": "In Job mode both wear the same pounce — the spring-loaded haunch, the grasping forelimb, the forward hunting eyes. Ambush predation has a shape, and any lineage that takes up the trade is pulled toward it.",
       "tellsHint": "In Tells mode, look again at the thanator: six limbs where the cat has four, four eyes where it has two, breathing slits down the flank. The role is Earth's; the animal is emphatically not.",
       "shared": "Role features (converged)",
-      "inherited": "Pandoran inheritance (did not converge)"
+      "inherited": "Pandoran inheritance (did not converge)",
+      "panther": "Earth panther",
+      "thanator": "Pandoran thanator"
     },
     "nichePartition": {
       "title": "One forest, divided into floors",
       "pandoraLabel": "Pandora",
       "earthLabel": "Earth analogue",
       "prompt": "Click a layer to see who feeds there.",
-      "hint": "Competitive exclusion says two species cannot share one niche. The answer is not to share a niche — it is to split it into floors, each species at its own height, feeding its own way."
+      "hint": "Competitive exclusion says two species cannot share one niche. The answer is not to share a niche — it is to split it into floors, each species at its own height, feeding its own way.",
+      "bands": {
+        "high": {
+          "zone": "High foliage",
+          "pandora": "Hammerhead titanothere",
+          "earth": "Giraffe",
+          "how": "Reaches the high leaves no one else can crop."
+        },
+        "mid": {
+          "zone": "Mid-canopy",
+          "pandora": "Direhorse herd",
+          "earth": "Browsing antelope",
+          "how": "Strips foliage at mid-height, moving in herds."
+        },
+        "low": {
+          "zone": "Ground shoots",
+          "pandora": "Hexapede",
+          "earth": "Gazelle",
+          "how": "Crops tender understorey shoots near the floor."
+        }
+      },
+      "glossaryLayers": {
+        "canopy": {
+          "name": "Canopy (High)",
+          "btnLabel": "CANOPY",
+          "species": "Ikran (Mountain Banshee)",
+          "role": "High-altitude apex predator, nesting in the emergent peaks and hunting canopy flyers.",
+          "analog": "Peregrine Falcon / Eagles"
+        },
+        "midstory": {
+          "name": "Mid-story (Middle)",
+          "btnLabel": "MIDSTORY",
+          "species": "Tetrapteron",
+          "role": "Agile, small-winged flocking foragers, feeding on mid-altitude insects and seeds.",
+          "analog": "Swallows / Flycatchers"
+        },
+        "floor": {
+          "name": "Forest Floor (Low)",
+          "btnLabel": "FLOOR",
+          "species": "Viperwolf (Anapsey)",
+          "role": "Ground pack hunters tracking hexapedes and forest-floor herbivores.",
+          "analog": "Wolves / Hyenas"
+        }
+      }
     }
   }
 }

@@ -5,86 +5,38 @@ import React, { useState } from "react";
 import { GlossaryFrame } from "./shared/frame";
 
 interface NichePartitioningProps {
-  locale: string;
+  locale?: string;
 }
 
 interface ForestLayer {
   id: string;
-  nameEn: string;
-  nameVi: string;
   color: string;
   glowColor: string;
   y: number;
   height: number;
-  en: {
-    species: string;
-    role: string;
-    analog: string;
-  };
-  vi: {
-    species: string;
-    role: string;
-    analog: string;
-  };
 }
 
 const LAYERS: ForestLayer[] = [
   {
     id: "canopy",
-    nameEn: "Canopy (High)",
-    nameVi: "Vòm rừng (Cao)",
     color: "#36c5d9", // Pandora Cyan
     glowColor: "rgba(54, 197, 217, 0.4)",
     y: 20,
     height: 45,
-    en: {
-      species: "Ikran (Mountain Banshee)",
-      role: "High-altitude apex predator, nesting in the emergent peaks and hunting canopy flyers.",
-      analog: "Peregrine Falcon / Eagles",
-    },
-    vi: {
-      species: "Ikran (Banshee núi)",
-      role: "Sinh vật săn mồi đỉnh cao ở độ cao lớn, làm tổ trên đỉnh núi và săn mồi ở tầng tán.",
-      analog: "Chim ưng / Đại bàng",
-    },
   },
   {
     id: "midstory",
-    nameEn: "Mid-story (Middle)",
-    nameVi: "Tầng giữa (Trung)",
     color: "#2bd4a8", // Living Teal
     glowColor: "rgba(43, 212, 168, 0.4)",
     y: 75,
     height: 60,
-    en: {
-      species: "Tetrapteron",
-      role: "Agile, small-winged flocking foragers, feeding on mid-altitude insects and seeds.",
-      analog: "Swallows / Flycatchers",
-    },
-    vi: {
-      species: "Tetrapteron",
-      role: "Sinh vật ăn hạt và côn trùng bay theo bầy, đôi cánh nhỏ linh hoạt bay ở tầng trung.",
-      analog: "Chim én / Chim đớp ruồi",
-    },
   },
   {
     id: "floor",
-    nameEn: "Forest Floor (Low)",
-    nameVi: "Thảm rừng (Thấp)",
     color: "#ff5da8", // Biolum Magenta
     glowColor: "rgba(255, 93, 168, 0.4)",
     y: 145,
     height: 45,
-    en: {
-      species: "Viperwolf (Anapsey)",
-      role: "Ground pack hunters tracking hexapedes and forest-floor herbivores.",
-      analog: "Wolves / Hyenas",
-    },
-    vi: {
-      species: "Sói Viper (Anapsey)",
-      role: "Sinh vật săn mồi theo đàn dưới mặt đất, chuyên theo dấu linh dương sáu chân.",
-      analog: "Sói / Linh cẩu",
-    },
   },
 ];
 
@@ -93,7 +45,6 @@ export default function NichePartitioning({ locale }: NichePartitioningProps) {
   const [selectedLayerId, setSelectedLayerId] = useState<string | null>(null);
 
   const selectedLayer = selectedLayerId ? LAYERS.find((l) => l.id === selectedLayerId) : null;
-  const isVi = locale === "vi";
 
   return (
     <GlossaryFrame
@@ -126,6 +77,7 @@ export default function NichePartitioning({ locale }: NichePartitioningProps) {
             {/* Render Forest Layers */}
             {LAYERS.map((layer) => {
               const isSelected = selectedLayerId === layer.id;
+              const nameText = t(`glossaryLayers.${layer.id}.name`);
               return (
                 <g
                   key={layer.id}
@@ -172,7 +124,7 @@ export default function NichePartitioning({ locale }: NichePartitioningProps) {
                     style={{ fill: isSelected ? layer.color : "var(--muted)" }}
                     textAnchor="end"
                   >
-                    {isVi ? layer.nameVi : layer.nameEn}
+                    {nameText}
                   </text>
                 </g>
               );
@@ -241,15 +193,15 @@ export default function NichePartitioning({ locale }: NichePartitioningProps) {
                   className="text-[10px] font-mono font-bold uppercase mb-0.5"
                   style={{ color: selectedLayer.color }}
                 >
-                  {isVi ? selectedLayer.vi.species : selectedLayer.en.species}
+                  {t(`glossaryLayers.${selectedLayer.id}.species`)}
                 </h5>
                 <p className="text-[11px] text-muted leading-snug font-sans">
-                  {isVi ? selectedLayer.vi.role : selectedLayer.en.role}
+                  {t(`glossaryLayers.${selectedLayer.id}.role`)}
                 </p>
                 <div className="text-[8px] font-mono text-muted/60 mt-1">
                   {t("earthLabel")}:{" "}
                   <span className="text-foreground">
-                    {isVi ? selectedLayer.vi.analog : selectedLayer.en.analog}
+                    {t(`glossaryLayers.${selectedLayer.id}.analog`)}
                   </span>
                 </div>
               </>
@@ -276,7 +228,7 @@ export default function NichePartitioning({ locale }: NichePartitioningProps) {
                   boxShadow: isSelected ? `0 0 8px ${layer.glowColor}` : "none",
                 }}
               >
-                {isVi ? layer.nameVi.split(" ")[0] : layer.id.toUpperCase()}
+                {t(`glossaryLayers.${layer.id}.btnLabel`)}
               </button>
             );
           })}

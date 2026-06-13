@@ -3,7 +3,7 @@
 import { GlowDefs, glowUrl } from "@/components/content/viz/glow-defs";
 import { VizFigure } from "@/components/content/viz/viz-figure";
 import { VizText } from "@/components/content/viz/viz-svg-text";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useId, useState } from "react";
 
 interface HoxColinearityMapProps {
@@ -16,42 +16,17 @@ interface HoxColinearityMapProps {
 // tail. Hover/click a gene to light up the body band it addresses, in the same
 // colour — colinearity made literal. Each gene is a label-maker, not a builder.
 interface Gene {
+  id: string;
   color: string;
-  vi: { gene: string; region: string };
-  en: { gene: string; region: string };
 }
 
 const GENES: Gene[] = [
-  {
-    color: "var(--cyan)",
-    en: { gene: "Hox-1", region: "Head end" },
-    vi: { gene: "Hox-1", region: "Đầu" },
-  },
-  {
-    color: "var(--teal)",
-    en: { gene: "Hox-2", region: "Neck" },
-    vi: { gene: "Hox-2", region: "Cổ" },
-  },
-  {
-    color: "var(--amber)",
-    en: { gene: "Hox-3", region: "Forelimb zone" },
-    vi: { gene: "Hox-3", region: "Vùng chi trước" },
-  },
-  {
-    color: "var(--accent-soft)",
-    en: { gene: "Hox-4", region: "Mid-body" },
-    vi: { gene: "Hox-4", region: "Thân giữa" },
-  },
-  {
-    color: "var(--magenta)",
-    en: { gene: "Hox-5", region: "Hindlimb zone" },
-    vi: { gene: "Hox-5", region: "Vùng chi sau" },
-  },
-  {
-    color: "var(--speculation)",
-    en: { gene: "Hox-6", region: "Tail end" },
-    vi: { gene: "Hox-6", region: "Đuôi" },
-  },
+  { id: "hox1", color: "var(--cyan)" },
+  { id: "hox2", color: "var(--teal)" },
+  { id: "hox3", color: "var(--amber)" },
+  { id: "hox4", color: "var(--accent-soft)" },
+  { id: "hox5", color: "var(--magenta)" },
+  { id: "hox6", color: "var(--speculation)" },
 ];
 
 const W = 320;
@@ -66,11 +41,13 @@ const SLOT = (W - X0 * 2) / GENES.length;
 export function HoxColinearityMap({ caption, className }: HoxColinearityMapProps) {
   const uid = useId();
   const t = useTranslations("viz.hoxMap");
-  const locale = useLocale() as "vi" | "en";
   const [active, setActive] = useState<number | null>(null);
 
   const slotX = (i: number) => X0 + SLOT * i + SLOT / 2;
-  const current = active !== null ? GENES[active][locale] : null;
+  const current = active !== null ? {
+    gene: t(`genes.${GENES[active].id}.gene`),
+    region: t(`genes.${GENES[active].id}.region`),
+  } : null;
 
   return (
     <VizFigure title={t("title")} caption={caption} className={className} hint={t("hint")}>
@@ -89,7 +66,7 @@ export function HoxColinearityMap({ caption, className }: HoxColinearityMapProps
             const bw = SLOT - 6;
             return (
               <g
-                key={g.en.gene}
+                key={g.id}
                 onMouseEnter={() => setActive(i)}
                 onMouseLeave={() => setActive(null)}
                 onClick={() => setActive(isOn ? null : i)}
@@ -125,7 +102,7 @@ export function HoxColinearityMap({ caption, className }: HoxColinearityMapProps
                   tone={isOn ? "void" : g.color}
                   weight={700}
                 >
-                  {g[locale].gene}
+                  {t(`genes.${g.id}.gene`)}
                 </VizText>
               </g>
             );
@@ -139,7 +116,7 @@ export function HoxColinearityMap({ caption, className }: HoxColinearityMapProps
             const isOn = active === i;
             const bx = X0 + SLOT * i;
             return (
-              <g key={`band-${g.en.gene}`}>
+              <g key={`band-${g.id}`}>
                 <rect
                   x={bx + 1}
                   y={BODY_Y}

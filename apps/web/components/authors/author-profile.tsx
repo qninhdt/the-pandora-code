@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { GlassPanel } from "@/components/codex/glass-panel";
 import { PageBackground } from "@/components/layout/page-background";
 import { FadeInOnScroll } from "@/components/motion/fade-in-on-scroll";
@@ -9,38 +10,16 @@ import Image from "next/image";
 
 interface AuthorProfileProps {
   author: LocalizedAuthor;
-  locale: "vi" | "en";
   /** Full-bleed, fixed page backdrop (the generated authors image). */
   bgSrc?: string;
 }
-
-const COPY = {
-  vi: {
-    bio: "Giới thiệu",
-    voice: "Đặc trưng giọng văn",
-    contract: "Cam kết với độc giả",
-    models: "Mô hình sử dụng",
-    writing: "Chấp bút",
-    drawing: "Minh hoạ",
-    translation: "Chuyển ngữ",
-  },
-  en: {
-    bio: "Bio",
-    voice: "Voice",
-    contract: "Reader contract",
-    models: "Models used",
-    writing: "Writing",
-    drawing: "Illustration",
-    translation: "Translation",
-  },
-} as const;
 
 // The single storyteller behind The Pandora Code, laid out like a long-form
 // article: a centered byline header on a fullscreen bioluminescent backdrop,
 // then the bio, the reader contract as a pull quote, the voice traits, and the
 // production credits — all in one comfortable reading measure.
-export function AuthorProfile({ author, locale, bgSrc }: AuthorProfileProps) {
-  const t = COPY[locale];
+export function AuthorProfile({ author, bgSrc }: AuthorProfileProps) {
+  const t = useTranslations("page.authors");
 
   return (
     <>
@@ -98,7 +77,7 @@ export function AuthorProfile({ author, locale, bgSrc }: AuthorProfileProps) {
           {/* Bio */}
           <FadeInOnScroll>
             <section>
-              <SectionLabel>{t.bio}</SectionLabel>
+              <SectionLabel>{t("bio")}</SectionLabel>
               <p className="mt-4 font-serif text-xl leading-relaxed text-foreground/90">
                 {author.bio}
               </p>
@@ -109,7 +88,7 @@ export function AuthorProfile({ author, locale, bgSrc }: AuthorProfileProps) {
           {author.reader_contract ? (
             <FadeInOnScroll>
               <figure>
-                <SectionLabel tone="cyan">{t.contract}</SectionLabel>
+                <SectionLabel tone="cyan">{t("contract")}</SectionLabel>
                 <blockquote
                   className="mt-4 border-l-2 pl-6 font-serif text-lg italic leading-relaxed text-foreground/90"
                   style={{ borderColor: "var(--cyan)" }}
@@ -124,7 +103,7 @@ export function AuthorProfile({ author, locale, bgSrc }: AuthorProfileProps) {
           {author.voice_traits.length > 0 ? (
             <FadeInOnScroll>
               <section>
-                <SectionLabel>{t.voice}</SectionLabel>
+                <SectionLabel>{t("voice")}</SectionLabel>
                 <StaggerChildren className="mt-4 flex flex-wrap gap-2.5">
                   {author.voice_traits.map((trait) => (
                     <StaggerItem key={trait}>
@@ -152,24 +131,24 @@ export function AuthorProfile({ author, locale, bgSrc }: AuthorProfileProps) {
           {/* Production credits */}
           <FadeInOnScroll>
             <section>
-              <SectionLabel>{t.models}</SectionLabel>
+              <SectionLabel>{t("models")}</SectionLabel>
               <div className="mt-4 grid gap-4 sm:grid-cols-2">
                 <CreditCard
                   icon={<PenLine size={18} />}
                   glow="cyan"
-                  label={t.writing}
+                  label={t("writing")}
                   model="Claude Opus 4.8"
                 />
                 <CreditCard
                   icon={<Palette size={18} />}
                   glow="magenta"
-                  label={t.drawing}
+                  label={t("drawing")}
                   model="GPT Image 2"
                 />
                 <CreditCard
                   icon={<Languages size={18} />}
                   glow="teal"
-                  label={t.translation}
+                  label={t("translation")}
                   model="Gemini 3.1 Pro"
                 />
               </div>

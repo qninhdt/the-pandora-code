@@ -51,7 +51,7 @@ export function Figure({
               </span>
             )}
             {tier && (
-              <CanonBadge kind={tier} locale={locale} className="ml-auto shrink-0 sm:ml-0" />
+              <CanonBadge kind={tier} className="ml-auto shrink-0 sm:ml-0" />
             )}
           </div>
           {text && (
