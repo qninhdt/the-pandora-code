@@ -106,10 +106,9 @@ You MUST strictly follow the 5-step sequence below based on the **BATCH-FIRST** 
 - Analyze all sections. For each section, write the entire analysis into `1-analysis.mdx` following `i18n/templates/1-analysis.template.mdx`.
 - Identify Register, Audience, Core Intent, Tone, Pronouns, and plan for structural/cultural bottlenecks.
 
-**STEP 2: Literal Semantic Draft (Batch)**
-
+**STEP 2: Optimal Translation Draft (Batch)**
 - After Step 1 is finished for the entire document, draft all sections. Save to `2-draft.mdx` following `i18n/templates/2-draft.template.mdx`.
-
+- **CRITICAL NOTE:** This is NOT a literal (word-by-word) rough draft. This must be the **best possible translation you can produce**, aggressively applying all 9 Linguistic Rules and the analysis from Step 1. This draft must aim for absolute naturalness, fluency, and precision. The subagent in Step 3 is merely the final safety net to catch the smallest remaining flaws.
 **STEP 3: Unbiased Subagent Evaluation (Batch)**
 
 - **PHASE-LEVEL SUBAGENT:** Instead of invoking a subagent for each section, you MUST invoke a SINGLE subagent (generalist agent) for the entire evaluation phase.

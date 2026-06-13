@@ -107,10 +107,9 @@ Bạn BẮT BUỘC phải tuân thủ đúng trình tự 5 bước dưới đây
 - Phân tích tất cả các section. Với mỗi section, ghi toàn bộ nội dung phân tích vào `1-analysis.mdx` theo đúng `i18n/templates/1-analysis.template.mdx`.
 - Xác định Ngữ vực, Khán giả, Thông điệp cốt lõi, Giọng điệu, Xưng hô và xử lý các điểm nghẽn cú pháp/phép ẩn dụ.
 
-**BƯỚC 2: Bản Dịch Thô Bám Sát Ngữ Nghĩa (Hàng loạt)**
-
-- Sau khi xong Bước 1 cho toàn bộ bài, tiến hành viết nháp tất cả các section. Lưu vào `2-draft.mdx` theo `i18n/templates/2-draft.template.mdx`.
-
+**BƯỚC 2: Bản Dịch Tối Ưu (Hàng loạt)**
+- Sau khi xong Bước 1 cho toàn bộ bài, tiến hành dịch tất cả các section. Lưu vào `2-draft.mdx` theo `i18n/templates/2-draft.template.mdx`.
+- **LƯU Ý QUAN TRỌNG:** Đây KHÔNG phải là một bản dịch thô (word-by-word). Đây phải là **bản dịch tốt nhất mà bạn có thể tạo ra**, vận dụng toàn bộ 9 Quy tắc Ngôn ngữ và kết quả phân tích ở Bước 1. Bản dịch này phải hướng tới sự tự nhiên, mượt mà và chính xác tuyệt đối. Subagent ở Bước 3 chỉ đóng vai trò là một màng lọc cuối cùng để nhặt những hạt sạn nhỏ nhất.
 **BƯỚC 3: Subagent Đánh Giá Khách Quan (Hàng loạt)**
 
 - **TRIỆU HỒI SUBAGENT:** Thay vì gọi subagent cho từng section, bạn PHẢI khởi tạo DUY NHẤT một subagent (generalist agent) cho toàn bộ Phase đánh giá.
