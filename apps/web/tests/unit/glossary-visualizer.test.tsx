@@ -1,3 +1,4 @@
+import Allometry from "@/components/glossary/interactive/allometry";
 import AlphaCentauri from "@/components/glossary/interactive/alpha-centauri";
 import Bioluminescence from "@/components/glossary/interactive/bioluminescence";
 import Cladogram from "@/components/glossary/interactive/cladogram";
@@ -81,6 +82,14 @@ describe("Glossary Components Direct Mount", () => {
     renderWithIntl(<Cladogram locale="en" />);
     expect(
       screen.getAllByText("Character matrix → the most parsimonious tree")[0],
+    ).toBeInTheDocument();
+  });
+
+  it("renders allometry scaling calculator", () => {
+    renderWithIntl(<Allometry locale="en" />);
+    expect(
+      screen.getAllByText("Bone Stress & Allometry")[0] ||
+        screen.getAllByText("Bone Stress & Allometry")[0],
     ).toBeInTheDocument();
   });
 

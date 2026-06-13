@@ -21,6 +21,7 @@ const GLOSSARY_VISUALIZATIONS: Record<
   "countercurrent-exchange": dynamic(() => import("./countercurrent-exchange"), { ssr: false }),
   bioluminescence: dynamic(() => import("./bioluminescence"), { ssr: false }),
   cladogram: dynamic(() => import("./cladogram"), { ssr: false }),
+  allometry: dynamic(() => import("./allometry"), { ssr: false }),
 };
 
 interface GlossaryVisualizerProps {

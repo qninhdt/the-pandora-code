@@ -12,6 +12,7 @@ export const GLOSSARY_VISUALIZATION_IDS = [
   "countercurrent-exchange",
   "bioluminescence",
   "cladogram",
+  "allometry",
 ] as const;
 
 export type GlossaryVisualizationId = (typeof GLOSSARY_VISUALIZATION_IDS)[number];
