@@ -470,6 +470,17 @@
       "predator": "Viperwolf (Predator)",
       "carryingCapacity": "Carrying capacity (K)",
       "hint": "Adjust birth, predation, and death rates. Enable Prey-switching to stabilize oscillations, or introduce a Carrying Capacity (K) to test the Paradox of Enrichment."
+    },
+    "chirality": {
+      "title": "Chirality & Optical Rotation",
+      "lAmino": "L-Amino Acids",
+      "dAmino": "D-Amino Acids",
+      "racemic": "Racemic",
+      "empty": "Water (None)",
+      "analyzerAngle": "Analyzer angle",
+      "concentration": "Concentration",
+      "brightness": "Detector light",
+      "hint": "Rotate the analyzer dial to align with the rotated light plane. Chiral molecules rotate polarized light clockwise (D-form) or counterclockwise (L-form)."
     }
   }
 }

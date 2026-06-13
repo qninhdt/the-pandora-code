@@ -14,6 +14,7 @@ export const GLOSSARY_VISUALIZATION_IDS = [
   "cladogram",
   "allometry",
   "lotka-volterra-equations",
+  "chirality",
 ] as const;
 
 export type GlossaryVisualizationId = (typeof GLOSSARY_VISUALIZATION_IDS)[number];
