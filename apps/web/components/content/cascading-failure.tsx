@@ -7,13 +7,7 @@ import { VizSlider } from "@/components/content/viz/viz-slider";
 import { VizText } from "@/components/content/viz/viz-svg-text";
 import { useTranslations } from "next-intl";
 import { useId, useMemo, useState } from "react";
-import {
-  H,
-  PER_LAYER,
-  W,
-  buildCoupled,
-  runCascade,
-} from "./cascading-failure-model";
+import { H, PER_LAYER, W, buildCoupled, runCascade } from "./cascading-failure-model";
 
 interface CascadingFailureProps {
   caption?: string;

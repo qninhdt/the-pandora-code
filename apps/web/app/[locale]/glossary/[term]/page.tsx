@@ -47,11 +47,7 @@ export default async function GlossaryDetail({ params }: GlossaryDetailProps) {
 
   return (
     <main className="mx-auto max-w-3xl px-6 pb-12 pt-32 space-y-6">
-      {hasVisualizer ? (
-        <div className="relative mb-2 w-full">
-          <GlossaryVisualizer term={term} locale={locale} />
-        </div>
-      ) : cover ? (
+      {cover && (
         <div className="relative mb-2 aspect-[16/9] w-full overflow-hidden rounded-2xl border border-[color:var(--border)]">
           <img src={cover} alt="" className="size-full object-cover" />
           <div
@@ -59,7 +55,7 @@ export default async function GlossaryDetail({ params }: GlossaryDetailProps) {
             style={{ background: "linear-gradient(to top, var(--background) 4%, transparent 55%)" }}
           />
         </div>
-      ) : null}
+      )}
       <p className="text-xs font-mono uppercase tracking-wide text-[color:var(--accent)]">
         {entry.category}
       </p>
@@ -77,6 +73,11 @@ export default async function GlossaryDetail({ params }: GlossaryDetailProps) {
         </div>
       ) : null}
       <p className="text-base leading-relaxed">{entry.definition}</p>
+      {hasVisualizer && (
+        <div className="relative mb-2 w-full">
+          <GlossaryVisualizer term={term} locale={locale} />
+        </div>
+      )}
       {entry.see_also.length > 0 ? (
         <section className="border-t border-[color:var(--border)] pt-6">
           <h2 className="text-xs font-mono uppercase tracking-wide text-[color:var(--muted)] mb-3">

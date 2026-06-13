@@ -346,7 +346,6 @@ export function ComponentShowcase() {
         />
       </Block>
 
-
       <Block label="FroudeGaitDial (gait regime gauge)">
         <FroudeGaitDial />
       </Block>
@@ -410,7 +409,6 @@ export function ComponentShowcase() {
       <Block label="IsochronPlot (radiometric dating sweep)">
         <IsochronPlot />
       </Block>
-
 
       <Block label="TimelineJourney (cinematic vertical journey)">
         <TimelineJourney

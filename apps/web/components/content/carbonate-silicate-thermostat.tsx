@@ -132,8 +132,20 @@ export function CarbonateSilicateThermostat({
           </VizText>
 
           {/* axes */}
-          <line x1={PAD.left} y1={PAD.top} x2={PAD.left} y2={PAD.top + PLOT_H} stroke="var(--border-strong)" />
-          <line x1={PAD.left} y1={PAD.top + PLOT_H} x2={PAD.left + PLOT_W} y2={PAD.top + PLOT_H} stroke="var(--border-strong)" />
+          <line
+            x1={PAD.left}
+            y1={PAD.top}
+            x2={PAD.left}
+            y2={PAD.top + PLOT_H}
+            stroke="var(--border-strong)"
+          />
+          <line
+            x1={PAD.left}
+            y1={PAD.top + PLOT_H}
+            x2={PAD.left + PLOT_W}
+            y2={PAD.top + PLOT_H}
+            stroke="var(--border-strong)"
+          />
           <VizText
             x={PAD.left - 30}
             y={PAD.top + PLOT_H / 2}
@@ -144,23 +156,61 @@ export function CarbonateSilicateThermostat({
           >
             {t("tempAxis")}
           </VizText>
-          <VizText x={PAD.left + PLOT_W / 2} y={VIEW_H - 4} size="micro" tone="subtle" anchor="middle">
+          <VizText
+            x={PAD.left + PLOT_W / 2}
+            y={VIEW_H - 4}
+            size="micro"
+            tone="subtle"
+            anchor="middle"
+          >
             {t("sunAxis")}
           </VizText>
 
           {/* bare-rock line — scorches straight through */}
-          <path d={BARE_PATH} fill="none" stroke="var(--border-strong)" strokeWidth={1.5} strokeDasharray="4 3" />
-          <VizText x={sx(S_MAX) - 4} y={ty(bareTempC(S_MAX)) - 6} size="micro" tone="subtle" anchor="end">
+          <path
+            d={BARE_PATH}
+            fill="none"
+            stroke="var(--border-strong)"
+            strokeWidth={1.5}
+            strokeDasharray="4 3"
+          />
+          <VizText
+            x={sx(S_MAX) - 4}
+            y={ty(bareTempC(S_MAX)) - 6}
+            size="micro"
+            tone="subtle"
+            anchor="end"
+          >
             {t("bareLine")}
           </VizText>
 
           {/* regulated line — held flat by the thermostat */}
-          <path d={REGULATED_PATH} fill="none" stroke="var(--teal)" strokeWidth={2.4} filter={glowUrl(uid, "bloom")} />
+          <path
+            d={REGULATED_PATH}
+            fill="none"
+            stroke="var(--teal)"
+            strokeWidth={2.4}
+            filter={glowUrl(uid, "bloom")}
+          />
 
           {/* current-sun marker */}
-          <line x1={cx} y1={PAD.top} x2={cx} y2={PAD.top + PLOT_H} stroke="var(--amber)" strokeWidth={1} strokeOpacity={0.5} />
+          <line
+            x1={cx}
+            y1={PAD.top}
+            x2={cx}
+            y2={PAD.top + PLOT_H}
+            stroke="var(--amber)"
+            strokeWidth={1}
+            strokeOpacity={0.5}
+          />
           <circle cx={cx} cy={ty(bare)} r={3.5} fill="var(--border-strong)" />
-          <circle cx={cx} cy={ty(tempC)} r={5} fill={`var(--${tone})`} filter={glowUrl(uid, "bloom")} />
+          <circle
+            cx={cx}
+            cy={ty(tempC)}
+            r={5}
+            fill={`var(--${tone})`}
+            filter={glowUrl(uid, "bloom")}
+          />
         </svg>
 
         <div className="flex flex-col gap-2 sm:w-1/3">

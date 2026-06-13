@@ -39,11 +39,7 @@ type StatusFilter = "all" | "published" | "coming";
 // Strip diacritics + lowercase so a search for "eywa" matches "Eywa" and
 // VI accents don't block matches.
 function normalize(s: string): string {
-  return s
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    .replace(/đ/g, "d");
+  return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/đ/g, "d");
 }
 
 export function ChaptersLibrary({
@@ -99,7 +95,9 @@ export function ChaptersLibrary({
           <h1 className="font-display text-4xl font-700 tracking-tight text-foreground sm:text-5xl">
             {title}
           </h1>
-          <p className="mt-3 max-w-2xl font-serif text-base leading-relaxed text-muted">{subtitle}</p>
+          <p className="mt-3 max-w-2xl font-serif text-base leading-relaxed text-muted">
+            {subtitle}
+          </p>
 
           <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3 font-sans text-xs uppercase tracking-[0.18em] text-cyan">
             <span className="tabular-nums">{labels.statsDone}</span>
@@ -165,12 +163,7 @@ export function ChaptersLibrary({
               />
             </button>
 
-            <div
-              className={cn(
-                "flex-wrap gap-2 sm:flex",
-                partsOpen ? "mt-2 flex" : "hidden",
-              )}
-            >
+            <div className={cn("flex-wrap gap-2 sm:flex", partsOpen ? "mt-2 flex" : "hidden")}>
               <Chip
                 active={activePart === "all"}
                 onClick={() => {

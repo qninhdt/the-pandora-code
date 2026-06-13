@@ -82,7 +82,10 @@ export function FloatingDock({ locale, brand, nav, search }: FloatingDockProps) 
   const isActive = (href: string) => pathname.startsWith(href);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 flex justify-center px-4 pt-4" style={{ willChange: "transform" }}>
+    <header
+      className="fixed inset-x-0 top-0 z-40 flex justify-center px-4 pt-4"
+      style={{ willChange: "transform" }}
+    >
       <div
         className={cn(
           "flex w-full max-w-5xl items-center gap-3 rounded-full border px-3 py-2 transition-all duration-300",

@@ -43,7 +43,9 @@ function ty(tempC: number): number {
 }
 
 function pathFrom(points: { x: number; y: number }[]): string {
-  return points.map((p, i) => `${i === 0 ? "M" : "L"}${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(" ");
+  return points
+    .map((p, i) => `${i === 0 ? "M" : "L"}${p.x.toFixed(1)} ${p.y.toFixed(1)}`)
+    .join(" ");
 }
 
 // Lovelock & Watson's Daisyworld, made drivable. The reader slides the sun from
@@ -179,8 +181,20 @@ export function Daisyworld({ caption, className }: DaisyworldProps) {
           </VizText>
 
           {/* bare-rock curve — the lifeless world, climbing straight up */}
-          <path d={barePath} fill="none" stroke="var(--border-strong)" strokeWidth={1.5} strokeDasharray="4 3" />
-          <VizText x={lx(L_MAX) - 4} y={ty(bareTempC(L_MAX)) - 6} size="micro" tone="subtle" anchor="end">
+          <path
+            d={barePath}
+            fill="none"
+            stroke="var(--border-strong)"
+            strokeWidth={1.5}
+            strokeDasharray="4 3"
+          />
+          <VizText
+            x={lx(L_MAX) - 4}
+            y={ty(bareTempC(L_MAX)) - 6}
+            size="micro"
+            tone="subtle"
+            anchor="end"
+          >
             {t("bareLine")}
           </VizText>
 
@@ -239,12 +253,19 @@ export function Daisyworld({ caption, className }: DaisyworldProps) {
             <div className="h-1.5 w-full overflow-hidden rounded-full bg-void/60">
               <div
                 className="h-full rounded-full"
-                style={{ width: `${state.black * 100}%`, background: "var(--foreground)", opacity: 0.55 }}
+                style={{
+                  width: `${state.black * 100}%`,
+                  background: "var(--foreground)",
+                  opacity: 0.55,
+                }}
               />
             </div>
             <div className="mb-1 mt-2 flex items-baseline justify-between">
               <span className="font-sans text-xs text-muted">{t("whiteDaisy")}</span>
-              <span className="font-display text-sm font-700 tabular-nums" style={{ color: "var(--cyan)" }}>
+              <span
+                className="font-display text-sm font-700 tabular-nums"
+                style={{ color: "var(--cyan)" }}
+              >
                 {Math.round(state.white * 100)}%
               </span>
             </div>

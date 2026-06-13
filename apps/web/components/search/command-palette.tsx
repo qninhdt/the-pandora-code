@@ -121,7 +121,9 @@ export function CommandPalette({ locale, labels }: CommandPaletteProps) {
           className="fixed left-1/2 top-[15%] z-50 w-full max-w-lg -translate-x-1/2 overflow-hidden rounded-2xl border border-border bg-surface text-foreground shadow-2xl outline-hidden data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95"
         >
           <DialogPrimitive.Title className="sr-only">{labels.title}</DialogPrimitive.Title>
-          <DialogPrimitive.Description className="sr-only">{labels.hint}</DialogPrimitive.Description>
+          <DialogPrimitive.Description className="sr-only">
+            {labels.hint}
+          </DialogPrimitive.Description>
           <div className="flex items-center gap-3 border-b border-border px-4">
             <Search size={18} className="shrink-0 text-subtle" />
             <input

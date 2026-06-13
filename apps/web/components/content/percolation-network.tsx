@@ -43,10 +43,7 @@ export function PercolationNetwork({ caption, className }: PercolationNetworkPro
   const [removedCount, setRemovedCount] = useState(0);
 
   const curve = useMemo(() => giantComponentCurve(nodes, mode), [nodes, mode]);
-  const removed = useMemo(
-    () => removedSet(nodes, mode, removedCount),
-    [nodes, mode, removedCount],
-  );
+  const removed = useMemo(() => removedSet(nodes, mode, removedCount), [nodes, mode, removedCount]);
 
   const giant = curve[removedCount];
   const removedPct = Math.round((removedCount / NODE_COUNT) * 100);

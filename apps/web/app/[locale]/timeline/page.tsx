@@ -63,7 +63,8 @@ export default async function TimelinePage({ params }: TimelinePageProps) {
     // Part/chapter numbers come from the on-disk "N-M-" folder prefix (book
     // order), since meta.order is unreliable. Fall back to part metadata or
     // encounter index only when no chapter prefix is available.
-    const partNo = chapterOrderPrefix(partChapters[0]?.meta.slug ?? "")?.part ?? meta?.order ?? i + 1;
+    const partNo =
+      chapterOrderPrefix(partChapters[0]?.meta.slug ?? "")?.part ?? meta?.order ?? i + 1;
     return [
       {
         id: `part-${partId}`,

@@ -62,7 +62,12 @@ export function AirRegimeVisualizer({ caption, className }: AirRegimeVisualizerP
   const regime = regimeKey(re);
   const lengthM = 10 ** logL;
 
-  const regimeTone = regime === "viscous" ? "var(--magenta)" : regime === "transitional" ? "var(--amber)" : "var(--cyan)";
+  const regimeTone =
+    regime === "viscous"
+      ? "var(--magenta)"
+      : regime === "transitional"
+        ? "var(--amber)"
+        : "var(--cyan)";
 
   // Flow animation parameters
   // At high Re: thin lines, straight flow, attached.
@@ -70,7 +75,7 @@ export function AirRegimeVisualizer({ caption, className }: AirRegimeVisualizerP
   const isViscous = regime === "viscous";
   const lineWeight = isViscous ? 3 : regime === "transitional" ? 2 : 1.5;
   const turbulence = isViscous ? 20 : regime === "transitional" ? 8 : 0;
-  
+
   // Airfoil in center
   const wingPath = "M 120 110 C 150 90, 200 90, 260 110 C 200 120, 150 120, 120 110 Z";
 
@@ -100,27 +105,40 @@ export function AirRegimeVisualizer({ caption, className }: AirRegimeVisualizerP
       <div className="flex flex-col gap-4">
         {/* Animated Flow SVG */}
         <div className="overflow-hidden rounded-xl border border-border bg-void/50">
-          <svg viewBox={`0 0 ${W_SVG} ${H_SVG}`} className="w-full" role="img" aria-label={t("title")}>
+          <svg
+            viewBox={`0 0 ${W_SVG} ${H_SVG}`}
+            className="w-full"
+            role="img"
+            aria-label={t("title")}
+          >
             <GlowDefs idBase={uid} tones={["cyan", "amber", "magenta"]} />
-            
+
             {/* Background wash matching regime */}
-            <rect width={W_SVG} height={H_SVG} fill={`color-mix(in oklab, ${regimeTone} 5%, transparent)`} />
+            <rect
+              width={W_SVG}
+              height={H_SVG}
+              fill={`color-mix(in oklab, ${regimeTone} 5%, transparent)`}
+            />
 
             {/* Streamlines */}
             {lines.map((yBase, i) => {
               // Generate wavy path
               const pts = [];
-              for(let x=0; x<=W_SVG; x+=20) {
+              for (let x = 0; x <= W_SVG; x += 20) {
                 // Wave based on x, phase, and turbulence
                 let y = yBase;
                 if (x > 100 && x < 300) {
                   // Deflect around wing
-                  const deflect = (x > 120 && x < 260 && Math.abs(yBase - 110) < 40) ? (yBase < 110 ? -20 : 20) : 0;
+                  const deflect =
+                    x > 120 && x < 260 && Math.abs(yBase - 110) < 40 ? (yBase < 110 ? -20 : 20) : 0;
                   // Add turbulence wake if past wing and viscous
-                  const wake = (x > 200 && turbulence > 0) ? Math.sin(x*0.1 - phase*Math.PI*2 + i) * turbulence * ((x-200)/100) : 0;
+                  const wake =
+                    x > 200 && turbulence > 0
+                      ? Math.sin(x * 0.1 - phase * Math.PI * 2 + i) * turbulence * ((x - 200) / 100)
+                      : 0;
                   y += deflect + wake;
                 }
-                pts.push(`${x===0 ? 'M' : 'L'} ${x} ${y}`);
+                pts.push(`${x === 0 ? "M" : "L"} ${x} ${y}`);
               }
 
               // Dash offset for flow animation
@@ -156,7 +174,9 @@ export function AirRegimeVisualizer({ caption, className }: AirRegimeVisualizerP
                   strokeDashoffset={-phase * 20}
                   filter={glowUrl(uid, "bloom")}
                 />
-                <VizText x={25} y={-25} size="micro" tone="magenta">{t("vortex")}</VizText>
+                <VizText x={25} y={-25} size="micro" tone="magenta">
+                  {t("vortex")}
+                </VizText>
               </g>
             )}
 
@@ -170,7 +190,11 @@ export function AirRegimeVisualizer({ caption, className }: AirRegimeVisualizerP
           <div>
             <VizSlider
               label={t("sizeLabel")}
-              display={lengthM >= 1 ? t("metres", { n: lengthM.toFixed(1) }) : t("millimetres", { n: Math.round(lengthM * 1000) })}
+              display={
+                lengthM >= 1
+                  ? t("metres", { n: lengthM.toFixed(1) })
+                  : t("millimetres", { n: Math.round(lengthM * 1000) })
+              }
               min={L_MIN}
               max={L_MAX}
               step={0.01}
@@ -186,13 +210,20 @@ export function AirRegimeVisualizer({ caption, className }: AirRegimeVisualizerP
               tone={regimeTone}
               tinted
             />
-            <div className="rounded-lg border px-3 py-2" style={{ borderColor: `color-mix(in oklab, ${regimeTone} 30%, transparent)`, background: `color-mix(in oklab, ${regimeTone} 10%, transparent)`}}>
-              <p className="font-sans text-xs font-bold uppercase tracking-wider" style={{ color: regimeTone }}>
+            <div
+              className="rounded-lg border px-3 py-2"
+              style={{
+                borderColor: `color-mix(in oklab, ${regimeTone} 30%, transparent)`,
+                background: `color-mix(in oklab, ${regimeTone} 10%, transparent)`,
+              }}
+            >
+              <p
+                className="font-sans text-xs font-bold uppercase tracking-wider"
+                style={{ color: regimeTone }}
+              >
                 {t(`${regime}Label`)}
               </p>
-              <p className="mt-1 font-serif text-[0.85rem] text-muted">
-                {t(`${regime}Desc`)}
-              </p>
+              <p className="mt-1 font-serif text-[0.85rem] text-muted">{t(`${regime}Desc`)}</p>
             </div>
           </div>
         </div>
@@ -208,6 +239,21 @@ function formatRe(re: number): string {
 }
 
 function superscript(n: number): string {
-  const map: Record<string, string> = { "0": "⁰", "1": "¹", "2": "²", "3": "³", "4": "⁴", "5": "⁵", "6": "⁶", "7": "⁷", "8": "⁸", "9": "⁹", "-": "⁻" };
-  return String(n).split("").map((c) => map[c] ?? c).join("");
+  const map: Record<string, string> = {
+    "0": "⁰",
+    "1": "¹",
+    "2": "²",
+    "3": "³",
+    "4": "⁴",
+    "5": "⁵",
+    "6": "⁶",
+    "7": "⁷",
+    "8": "⁸",
+    "9": "⁹",
+    "-": "⁻",
+  };
+  return String(n)
+    .split("")
+    .map((c) => map[c] ?? c)
+    .join("");
 }

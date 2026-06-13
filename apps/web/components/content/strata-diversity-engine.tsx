@@ -14,7 +14,10 @@ function seededRandom(seed: number) {
   return x - Math.floor(x);
 }
 
-export function StrataDiversityEngine({ caption, className }: { caption?: string; className?: string }) {
+export function StrataDiversityEngine({
+  caption,
+  className,
+}: { caption?: string; className?: string }) {
   const uid = useId();
   const t = useTranslations("viz.strataDiversity");
   const [height, setHeight] = useState(50);
@@ -67,7 +70,12 @@ export function StrataDiversityEngine({ caption, className }: { caption?: string
       className={className}
     >
       <div className="flex flex-col gap-6 sm:flex-row sm:items-stretch">
-        <svg viewBox={`0 0 ${W_SVG} ${H_SVG}`} className="w-full sm:w-[55%]" role="img" aria-label={t("title")}>
+        <svg
+          viewBox={`0 0 ${W_SVG} ${H_SVG}`}
+          className="w-full sm:w-[55%]"
+          role="img"
+          aria-label={t("title")}
+        >
           <GlowDefs idBase={uid} tones={["teal", "cyan", "amber", "magenta"]} />
 
           {/* Background Strata zones */}
@@ -78,7 +86,10 @@ export function StrataDiversityEngine({ caption, className }: { caption?: string
             const opacity = active ? (height >= s.max ? 1 : (height - s.min) / (s.max - s.min)) : 0;
 
             return (
-              <g key={s.key} style={{ opacity: Math.max(0.05, opacity), transition: "opacity 0.5s ease" }}>
+              <g
+                key={s.key}
+                style={{ opacity: Math.max(0.05, opacity), transition: "opacity 0.5s ease" }}
+              >
                 <rect
                   x={45}
                   y={yTop}
@@ -86,7 +97,15 @@ export function StrataDiversityEngine({ caption, className }: { caption?: string
                   height={yBot - yTop}
                   fill={`color-mix(in oklab, ${s.color} 8%, transparent)`}
                 />
-                <line x1={45} y1={yTop} x2={W_SVG} y2={yTop} stroke={s.color} strokeOpacity={0.3} strokeDasharray="3 3" />
+                <line
+                  x1={45}
+                  y1={yTop}
+                  x2={W_SVG}
+                  y2={yTop}
+                  stroke={s.color}
+                  strokeOpacity={0.3}
+                  strokeDasharray="3 3"
+                />
                 <VizText x={50} y={yBot - 6} size="micro" tone={s.tone as any} weight={700}>
                   {t(s.key)}
                 </VizText>
@@ -96,15 +115,24 @@ export function StrataDiversityEngine({ caption, className }: { caption?: string
 
           {/* Trunk */}
           <line
-            x1={170} y1={yGround} x2={170} y2={yFor(height)}
+            x1={170}
+            y1={yGround}
+            x2={170}
+            y2={yFor(height)}
             stroke="color-mix(in oklab, var(--teal) 40%, var(--foreground))"
-            strokeWidth={14} strokeLinecap="round"
+            strokeWidth={14}
+            strokeLinecap="round"
             style={{ transition: "y2 0.3s ease" }}
           />
           <line
-            x1={170} y1={yGround} x2={170} y2={yFor(height)}
+            x1={170}
+            y1={yGround}
+            x2={170}
+            y2={yFor(height)}
             stroke="var(--void)"
-            strokeWidth={4} strokeLinecap="round" strokeOpacity={0.5}
+            strokeWidth={4}
+            strokeLinecap="round"
+            strokeOpacity={0.5}
             style={{ transition: "y2 0.3s ease" }}
           />
 
@@ -136,7 +164,14 @@ export function StrataDiversityEngine({ caption, className }: { caption?: string
 
           {/* Y Axis */}
           <line x1={35} y1={PAD_T} x2={35} y2={yGround} stroke="var(--border)" strokeWidth={1} />
-          <line x1={30} y1={yGround} x2={W_SVG} y2={yGround} stroke="var(--border-strong)" strokeWidth={2} />
+          <line
+            x1={30}
+            y1={yGround}
+            x2={W_SVG}
+            y2={yGround}
+            stroke="var(--border-strong)"
+            strokeWidth={2}
+          />
           {[0, 100, 200, 300].map((m) => (
             <g key={m}>
               <line x1={30} y1={yFor(m)} x2={35} y2={yFor(m)} stroke="var(--border-strong)" />

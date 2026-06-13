@@ -87,7 +87,14 @@ export function ConfidenceDial({ caption, className }: ConfidenceDialProps) {
       >
         <GlowDefs idBase={uid} tones={["teal", "amber", "magenta"]} />
         <defs>
-          <linearGradient id={`${uid}-g`} x1={CX - R} x2={CX + R} y1="0" y2="0" gradientUnits="userSpaceOnUse">
+          <linearGradient
+            id={`${uid}-g`}
+            x1={CX - R}
+            x2={CX + R}
+            y1="0"
+            y2="0"
+            gradientUnits="userSpaceOnUse"
+          >
             <stop offset="0%" stopColor="var(--magenta)" />
             <stop offset="50%" stopColor="var(--amber)" />
             <stop offset="100%" stopColor="var(--teal)" />
@@ -141,7 +148,8 @@ export function ConfidenceDial({ caption, className }: ConfidenceDialProps) {
 
         {/* needle */}
         <g filter={glowUrl(uid, "bloom")}>
-          <line x1={CX} y1={CY} x2={CX} y2={CY - 10} stroke="transparent" /> {/* SVG bounding-box strut */}
+          <line x1={CX} y1={CY} x2={CX} y2={CY - 10} stroke="transparent" />{" "}
+          {/* SVG bounding-box strut */}
           <line
             x1={CX}
             y1={CY}

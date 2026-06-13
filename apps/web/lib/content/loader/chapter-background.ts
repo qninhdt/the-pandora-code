@@ -8,7 +8,5 @@ import { chapterImagesDir } from "./content-paths";
 
 export function getChapterBackgroundImage(slug: string): string | undefined {
   const file = path.join(chapterImagesDir(slug), "fig-99-background.png");
-  return fs.existsSync(file)
-    ? `/images/chapters/${slug}/fig-99-background.png`
-    : undefined;
+  return fs.existsSync(file) ? `/images/chapters/${slug}/fig-99-background.png` : undefined;
 }

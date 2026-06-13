@@ -26,8 +26,7 @@ export function AtmosphereFallback() {
       <div
         className="absolute inset-0"
         style={{
-          background:
-            "radial-gradient(120% 100% at 50% 40%, transparent 55%, var(--void) 100%)",
+          background: "radial-gradient(120% 100% at 50% 40%, transparent 55%, var(--void) 100%)",
         }}
       />
     </div>

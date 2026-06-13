@@ -6,22 +6,15 @@ interface FloatingMountainFallbackProps {
 // 2D fallback for the floating-mountain hero - shown on low-power devices,
 // reduced-motion, and before the 3D scene mounts. A layered gradient evoking
 // haze-wreathed floating peaks, or a generated poster when one is supplied.
-export function FloatingMountainFallback({
-  poster,
-}: FloatingMountainFallbackProps) {
+export function FloatingMountainFallback({ poster }: FloatingMountainFallbackProps) {
   if (poster) {
     return (
       <div className="absolute inset-0">
-        <img
-          src={poster}
-          alt=""
-          className="size-full object-cover opacity-80"
-        />
+        <img src={poster} alt="" className="size-full object-cover opacity-80" />
         <div
           className="absolute inset-0"
           style={{
-            background:
-              "linear-gradient(to bottom, transparent 40%, var(--void))",
+            background: "linear-gradient(to bottom, transparent 40%, var(--void))",
           }}
         />
       </div>
@@ -39,8 +32,7 @@ export function FloatingMountainFallback({
       <div
         className="absolute left-[22%] top-[34%] h-20 w-32 -rotate-6 rounded-[60%] blur-md"
         style={{
-          background:
-            "color-mix(in oklab, var(--surface-raised) 80%, var(--cyan))",
+          background: "color-mix(in oklab, var(--surface-raised) 80%, var(--cyan))",
         }}
       />
       <div

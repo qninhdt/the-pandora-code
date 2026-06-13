@@ -41,10 +41,7 @@ const WORLDS: Record<World, WorldDef> = {
 const VIEW_W = 360;
 const VIEW_H = 200;
 
-export function AtmosphericDisequilibrium({
-  caption,
-  className,
-}: AtmosphericDisequilibriumProps) {
+export function AtmosphericDisequilibrium({ caption, className }: AtmosphericDisequilibriumProps) {
   const t = useTranslations("viz.atmosphericDisequilibrium");
   const uid = useId();
   const [world, setWorld] = useState<World>("earth");
@@ -121,7 +118,14 @@ export function AtmosphericDisequilibrium({
                 <VizText x={x + 35} y={VIEW_H - 14} size="micro" tone="subtle" anchor="middle">
                   {b.label}
                 </VizText>
-                <VizText x={x + 35} y={VIEW_H - 36 - h} size="micro" tone="subtle" anchor="middle" numeric>
+                <VizText
+                  x={x + 35}
+                  y={VIEW_H - 36 - h}
+                  size="micro"
+                  tone="subtle"
+                  anchor="middle"
+                  numeric
+                >
                   {b.frac >= 0.01 ? `${Math.round(b.frac * 100)}%` : b.frac > 0 ? "trace" : "—"}
                 </VizText>
               </g>

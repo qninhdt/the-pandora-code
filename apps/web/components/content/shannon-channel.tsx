@@ -188,7 +188,15 @@ export function ShannonChannel({ caption, className }: ShannonChannelProps) {
             })}
           >
             <GlowDefs idBase={uid} tones={["cyan"]} />
-            <rect x={4} y={22} width={232} height={20} rx={10} fill="var(--void)" stroke="var(--border)" />
+            <rect
+              x={4}
+              y={22}
+              width={232}
+              height={20}
+              rx={10}
+              fill="var(--void)"
+              stroke="var(--border)"
+            />
             <rect
               x={4}
               y={22}

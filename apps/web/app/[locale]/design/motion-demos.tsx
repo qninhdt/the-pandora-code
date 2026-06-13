@@ -2,10 +2,7 @@
 
 import { FadeInOnScroll } from "@/components/motion/fade-in-on-scroll";
 import { GlowPulse } from "@/components/motion/glow-pulse";
-import {
-  StaggerChildren,
-  StaggerItem,
-} from "@/components/motion/stagger-children";
+import { StaggerChildren, StaggerItem } from "@/components/motion/stagger-children";
 import { Sparkles } from "lucide-react";
 
 // Live demos of the Phase 3 motion primitives for visual QA on /_design.
@@ -29,9 +26,7 @@ export function MotionDemos() {
             <Sparkles size={20} />
           </span>
         </GlowPulse>
-        <p className="font-sans text-sm text-muted">
-          GlowPulse - breathing bioluminescence.
-        </p>
+        <p className="font-sans text-sm text-muted">GlowPulse - breathing bioluminescence.</p>
       </div>
 
       <StaggerChildren className="grid grid-cols-3 gap-3">

@@ -41,7 +41,7 @@ function demand(m: number, g: number, rho: number): number {
 
 function ceilingMass(g: number, rho: number): number {
   // SUPPLY_K * M^0.73 = D_K * M^1.17 => M^0.44 = SUPPLY_K / D_K
-  const dk = DEMAND_K_EARTH * Math.pow(g, 1.5) / Math.sqrt(rho);
+  const dk = (DEMAND_K_EARTH * Math.pow(g, 1.5)) / Math.sqrt(rho);
   return Math.pow(SUPPLY_K / dk, 1 / (DEMAND_EXP - SUPPLY_EXP));
 }
 
@@ -100,7 +100,9 @@ export function FlightCeilingLab({ caption, className }: FlightCeilingLabProps) 
     const pts: string[] = [];
     for (let i = 0; i <= 50; i++) {
       const m = (i / 50) * MASS_MAX;
-      pts.push(`${i === 0 ? "M" : "L"} ${xFor(m).toFixed(1)} ${yFor(demand(m, g, rho)).toFixed(1)}`);
+      pts.push(
+        `${i === 0 ? "M" : "L"} ${xFor(m).toFixed(1)} ${yFor(demand(m, g, rho)).toFixed(1)}`,
+      );
     }
     return pts.join(" ");
   }, [g, rho, pMax]);
@@ -150,25 +152,71 @@ export function FlightCeilingLab({ caption, className }: FlightCeilingLabProps) 
       <svg viewBox={`0 0 ${W_SVG} ${H_SVG}`} className="w-full" role="img" aria-label={t("title")}>
         <GlowDefs idBase={uid} tones={["teal", "amber", "cyan"]} />
 
-        <rect x={PAD_L} y={PAD_T} width={W_SVG - PAD_L - PAD_R} height={H_SVG - PAD_T - PAD_B}
-          fill={glowUrl(uid, "grid")} opacity={0.5} />
+        <rect
+          x={PAD_L}
+          y={PAD_T}
+          width={W_SVG - PAD_L - PAD_R}
+          height={H_SVG - PAD_T - PAD_B}
+          fill={glowUrl(uid, "grid")}
+          opacity={0.5}
+        />
 
-        <line x1={PAD_L} y1={H_SVG - PAD_B} x2={W_SVG - PAD_R} y2={H_SVG - PAD_B} stroke="var(--border-strong)" strokeWidth={1} />
-        <line x1={PAD_L} y1={PAD_T} x2={PAD_L} y2={H_SVG - PAD_B} stroke="var(--border-strong)" strokeWidth={1} />
+        <line
+          x1={PAD_L}
+          y1={H_SVG - PAD_B}
+          x2={W_SVG - PAD_R}
+          y2={H_SVG - PAD_B}
+          stroke="var(--border-strong)"
+          strokeWidth={1}
+        />
+        <line
+          x1={PAD_L}
+          y1={PAD_T}
+          x2={PAD_L}
+          y2={H_SVG - PAD_B}
+          stroke="var(--border-strong)"
+          strokeWidth={1}
+        />
 
         {/* Surplus glow */}
-        <path d={surplusPath} fill="color-mix(in oklab, var(--teal) 15%, transparent)" stroke="none" filter={glowUrl(uid, "bloom")}
-          style={{ transition: "d 0.5s ease" }} />
+        <path
+          d={surplusPath}
+          fill="color-mix(in oklab, var(--teal) 15%, transparent)"
+          stroke="none"
+          filter={glowUrl(uid, "bloom")}
+          style={{ transition: "d 0.5s ease" }}
+        />
 
         {/* Curves */}
-        <path d={supplyPath} fill="none" stroke="var(--teal)" strokeWidth={2.5} filter={glowUrl(uid, "bloom")} />
-        <path d={demandPath} fill="none" stroke="var(--amber)" strokeWidth={2.5} filter={glowUrl(uid, "bloom")}
-          style={{ transition: "d 0.5s ease" }} />
+        <path
+          d={supplyPath}
+          fill="none"
+          stroke="var(--teal)"
+          strokeWidth={2.5}
+          filter={glowUrl(uid, "bloom")}
+        />
+        <path
+          d={demandPath}
+          fill="none"
+          stroke="var(--amber)"
+          strokeWidth={2.5}
+          filter={glowUrl(uid, "bloom")}
+          style={{ transition: "d 0.5s ease" }}
+        />
 
         {/* Crossing marker */}
         {cx <= W_SVG - PAD_R && (
           <g style={{ transition: "transform 0.5s ease" }} transform={`translate(${cx},0)`}>
-            <line x1={0} y1={PAD_T} x2={0} y2={H_SVG - PAD_B} stroke="var(--cyan)" strokeWidth={1.5} strokeDasharray="4 4" strokeOpacity={0.8} />
+            <line
+              x1={0}
+              y1={PAD_T}
+              x2={0}
+              y2={H_SVG - PAD_B}
+              stroke="var(--cyan)"
+              strokeWidth={1.5}
+              strokeDasharray="4 4"
+              strokeOpacity={0.8}
+            />
             <circle cx={0} cy={cy} r={6} fill="var(--cyan)" filter={glowUrl(uid, "bloom-strong")} />
             <VizText x={-6} y={PAD_T + 12} size="micro" tone="cyan" weight={700} anchor="end">
               {t("ceiling")}
@@ -181,27 +229,60 @@ export function FlightCeilingLab({ caption, className }: FlightCeilingLabProps) 
           const ax = xFor(a.m);
           const isGrounded = a.m > ceiling;
           return (
-            <g key={a.key} transform={`translate(${ax}, ${H_SVG - PAD_B})`} style={{ transition: "transform 0.5s ease" }}>
-              <line x1={0} y1={0} x2={0} y2={a.yOffset} stroke={isGrounded ? "var(--subtle)" : "var(--foreground)"} strokeWidth={1} strokeOpacity={0.5} />
+            <g
+              key={a.key}
+              transform={`translate(${ax}, ${H_SVG - PAD_B})`}
+              style={{ transition: "transform 0.5s ease" }}
+            >
+              <line
+                x1={0}
+                y1={0}
+                x2={0}
+                y2={a.yOffset}
+                stroke={isGrounded ? "var(--subtle)" : "var(--foreground)"}
+                strokeWidth={1}
+                strokeOpacity={0.5}
+              />
               <VizTick x={0} y={a.yOffset > 0 ? a.yOffset + 10 : a.yOffset - 4} anchor="middle">
                 {a.key}
               </VizTick>
-              <circle cx={0} cy={0} r={3} fill={isGrounded ? "var(--subtle)" : "var(--foreground)"} />
+              <circle
+                cx={0}
+                cy={0}
+                r={3}
+                fill={isGrounded ? "var(--subtle)" : "var(--foreground)"}
+              />
             </g>
           );
         })}
 
-        <VizText x={W_SVG - PAD_R} y={H_SVG - PAD_B + 16} size="micro" anchor="end">{t("massAxis")}</VizText>
+        <VizText x={W_SVG - PAD_R} y={H_SVG - PAD_B + 16} size="micro" anchor="end">
+          {t("massAxis")}
+        </VizText>
       </svg>
 
       {mode === "custom" && (
         <div className="mt-4 grid grid-cols-2 gap-4">
           <VizSlider
-            label={t("gLabel")} display={`${customG.toFixed(2)}g`}
-            min={0.5} max={1.5} step={0.05} value={customG} onChange={setCustomG} tone="var(--amber)" />
+            label={t("gLabel")}
+            display={`${customG.toFixed(2)}g`}
+            min={0.5}
+            max={1.5}
+            step={0.05}
+            value={customG}
+            onChange={setCustomG}
+            tone="var(--amber)"
+          />
           <VizSlider
-            label={t("rhoLabel")} display={`×${customRho.toFixed(2)}`}
-            min={0.5} max={2.0} step={0.05} value={customRho} onChange={setCustomRho} tone="var(--amber)" />
+            label={t("rhoLabel")}
+            display={`×${customRho.toFixed(2)}`}
+            min={0.5}
+            max={2.0}
+            step={0.05}
+            value={customRho}
+            onChange={setCustomRho}
+            tone="var(--amber)"
+          />
         </div>
       )}
 

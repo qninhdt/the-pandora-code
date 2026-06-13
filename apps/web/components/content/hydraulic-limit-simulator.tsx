@@ -59,9 +59,9 @@ function tension(h: number, world: "earth" | "pandora"): number {
 
 // ─────────────────────────────────────────────────────────────────────
 // Landmarks
-const HYPERION = 116;  // tallest living redwood
-const HOMETREE = 300;  // Omatikaya canonical
-const H_MAX = 340;     // plotting span
+const HYPERION = 116; // tallest living redwood
+const HOMETREE = 300; // Omatikaya canonical
+const H_MAX = 340; // plotting span
 
 // SVG dimensions
 const W = 330;
@@ -136,12 +136,18 @@ export function HydraulicLimitSimulator({ caption, className }: HydraulicLimitSi
       }
     >
       <div className="flex flex-col gap-6 lg:flex-row lg:items-stretch">
-        <svg viewBox={`0 0 ${W} ${SVG_H}`} className="w-full lg:w-[60%]" role="img" aria-label={t("title")}>
+        <svg
+          viewBox={`0 0 ${W} ${SVG_H}`}
+          className="w-full lg:w-[60%]"
+          role="img"
+          aria-label={t("title")}
+        >
           <GlowDefs idBase={uid} tones={["teal", "cyan", "magenta", "amber"]} />
 
           {/* Grid backdrop */}
           <rect
-            x={PAD_L} y={PAD_T}
+            x={PAD_L}
+            y={PAD_T}
             width={W - PAD_L - PAD_R}
             height={SVG_H - PAD_T - PAD_B}
             fill={glowUrl(uid, "grid")}
@@ -149,15 +155,30 @@ export function HydraulicLimitSimulator({ caption, className }: HydraulicLimitSi
           />
 
           {/* Axes */}
-          <line x1={PAD_L} y1={SVG_H - PAD_B} x2={W - PAD_R} y2={SVG_H - PAD_B}
-            stroke="var(--border-strong)" strokeWidth={1} strokeOpacity={0.6} />
-          <line x1={PAD_L} y1={PAD_T} x2={PAD_L} y2={SVG_H - PAD_B}
-            stroke="var(--border-strong)" strokeWidth={1} strokeOpacity={0.6} />
+          <line
+            x1={PAD_L}
+            y1={SVG_H - PAD_B}
+            x2={W - PAD_R}
+            y2={SVG_H - PAD_B}
+            stroke="var(--border-strong)"
+            strokeWidth={1}
+            strokeOpacity={0.6}
+          />
+          <line
+            x1={PAD_L}
+            y1={PAD_T}
+            x2={PAD_L}
+            y2={SVG_H - PAD_B}
+            stroke="var(--border-strong)"
+            strokeWidth={1}
+            strokeOpacity={0.6}
+          />
 
           {/* Dead zone beyond ceiling — where cavitation occurs */}
           {ceiling < H_MAX && (
             <rect
-              x={xFor(ceiling)} y={PAD_T}
+              x={xFor(ceiling)}
+              y={PAD_T}
               width={W - PAD_R - xFor(ceiling)}
               height={SVG_H - PAD_T - PAD_B}
               fill="color-mix(in oklab, var(--magenta) 10%, transparent)"
@@ -165,15 +186,18 @@ export function HydraulicLimitSimulator({ caption, className }: HydraulicLimitSi
           )}
 
           {/* Viable zone fill */}
-          <path d={fillPath}
+          <path
+            d={fillPath}
             fill={`color-mix(in oklab, ${toneVar} 14%, transparent)`}
             stroke="none"
             filter={glowUrl(uid, "bloom")}
           />
 
           {/* Turgor curve */}
-          <path d={turgorPath}
-            fill="none" stroke={toneVar}
+          <path
+            d={turgorPath}
+            fill="none"
+            stroke={toneVar}
             strokeWidth={2.5}
             filter={glowUrl(uid, "bloom")}
           />
@@ -182,13 +206,23 @@ export function HydraulicLimitSimulator({ caption, className }: HydraulicLimitSi
           {ceiling < H_MAX && (
             <>
               <line
-                x1={xFor(ceiling)} y1={PAD_T}
-                x2={xFor(ceiling)} y2={SVG_H - PAD_B}
-                stroke="var(--magenta)" strokeWidth={1.5}
-                strokeDasharray="4 3" strokeOpacity={0.8}
+                x1={xFor(ceiling)}
+                y1={PAD_T}
+                x2={xFor(ceiling)}
+                y2={SVG_H - PAD_B}
+                stroke="var(--magenta)"
+                strokeWidth={1.5}
+                strokeDasharray="4 3"
+                strokeOpacity={0.8}
               />
-              <VizText x={xFor(ceiling) - 4} y={PAD_T + 12}
-                size="micro" anchor="end" tone="magenta" weight={700}>
+              <VizText
+                x={xFor(ceiling) - 4}
+                y={PAD_T + 12}
+                size="micro"
+                anchor="end"
+                tone="magenta"
+                weight={700}
+              >
                 {t("ceiling")} ~{Math.round(ceiling)}m
               </VizText>
             </>
@@ -200,9 +234,14 @@ export function HydraulicLimitSimulator({ caption, className }: HydraulicLimitSi
             { m: HOMETREE, key: "hometree", tn: "teal" },
           ].map((r) => (
             <g key={r.key}>
-              <line x1={xFor(r.m)} y1={SVG_H - PAD_B}
-                x2={xFor(r.m)} y2={SVG_H - PAD_B - 6}
-                stroke={`var(--${r.tn})`} strokeWidth={1.5} />
+              <line
+                x1={xFor(r.m)}
+                y1={SVG_H - PAD_B}
+                x2={xFor(r.m)}
+                y2={SVG_H - PAD_B - 6}
+                stroke={`var(--${r.tn})`}
+                strokeWidth={1.5}
+              />
               <VizTick x={xFor(r.m)} y={SVG_H - PAD_B + 14}>
                 {t(r.key)}
               </VizTick>
@@ -219,7 +258,7 @@ export function HydraulicLimitSimulator({ caption, className }: HydraulicLimitSi
               const segY = colBot + (colTop - colBot) * frac;
               const segH = (colBot - colTop) / segments;
               // Width narrows as tension increases
-              const segTension = tension((frac * Math.min(probe, ceiling)), world);
+              const segTension = tension(frac * Math.min(probe, ceiling), world);
               const w = columnW * (1 - segTension * 0.006);
               const alpha = isCavitated && frac > 0.85 ? 0.2 : 0.5 + (1 - segTension / 100) * 0.4;
               return (
@@ -240,23 +279,36 @@ export function HydraulicLimitSimulator({ caption, className }: HydraulicLimitSi
           {/* Cavitation bubble if past ceiling */}
           {isCavitated && (
             <g>
-              <circle cx={columnX} cy={yFor(100) + 10} r={4}
-                fill="var(--void)" stroke="var(--magenta)" strokeWidth={1.5}
-                filter={glowUrl(uid, "bloom-strong")} />
-              <VizText x={columnX + 8} y={yFor(100) + 14}
-                size="micro" tone="magenta" weight={700}>
+              <circle
+                cx={columnX}
+                cy={yFor(100) + 10}
+                r={4}
+                fill="var(--void)"
+                stroke="var(--magenta)"
+                strokeWidth={1.5}
+                filter={glowUrl(uid, "bloom-strong")}
+              />
+              <VizText x={columnX + 8} y={yFor(100) + 14} size="micro" tone="magenta" weight={700}>
                 {t("snap")}
               </VizText>
             </g>
           )}
 
           {/* Probe point on curve */}
-          <circle cx={cx} cy={cy} r={18}
+          <circle
+            cx={cx}
+            cy={cy}
+            r={18}
             fill={glowUrl(uid, isCavitated ? "wash-magenta" : `wash-${tone}`)}
-            opacity={0.7} />
-          <circle cx={cx} cy={cy} r={5}
+            opacity={0.7}
+          />
+          <circle
+            cx={cx}
+            cy={cy}
+            r={5}
             fill={isCavitated ? "var(--magenta)" : toneVar}
-            filter={glowUrl(uid, "bloom-strong")} />
+            filter={glowUrl(uid, "bloom-strong")}
+          />
 
           {/* Axis labels */}
           <VizTick x={W - PAD_R} y={SVG_H - PAD_B + 22} anchor="end">
@@ -288,7 +340,9 @@ export function HydraulicLimitSimulator({ caption, className }: HydraulicLimitSi
           <VizSlider
             label={t("heightLabel")}
             display={`${probe} m`}
-            min={10} max={H_MAX} step={5}
+            min={10}
+            max={H_MAX}
+            step={5}
             value={probe}
             onChange={setProbe}
             tone={isCavitated ? "var(--magenta)" : toneVar}

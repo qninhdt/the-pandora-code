@@ -106,7 +106,10 @@ export function ChapterRow({ chapter, locale, comingLabel, readingUnit }: Chapte
   return (
     <Link
       href={chapter.href}
-      className={cn(shell, "no-underline hover:-translate-y-0.5 hover:border-border-strong hover:bg-surface/70")}
+      className={cn(
+        shell,
+        "no-underline hover:-translate-y-0.5 hover:border-border-strong hover:bg-surface/70",
+      )}
     >
       {inner}
     </Link>

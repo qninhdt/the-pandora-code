@@ -15,8 +15,7 @@ export function OrbitClockFallback({ poster }: OrbitClockFallbackProps) {
         <div
           className="absolute inset-0"
           style={{
-            background:
-              "radial-gradient(60% 60% at 50% 50%, transparent 55%, var(--abyss))",
+            background: "radial-gradient(60% 60% at 50% 50%, transparent 55%, var(--abyss))",
           }}
         />
       </div>

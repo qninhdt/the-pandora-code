@@ -74,13 +74,24 @@ export function OrbitClockScene() {
           emissiveIntensity={0.06}
         />
       </mesh>
-      <pointLight position={[0, 0, 0]} intensity={3} distance={6} color={designTokens.biolum.cyan} />
+      <pointLight
+        position={[0, 0, 0]}
+        intensity={3}
+        distance={6}
+        color={designTokens.biolum.cyan}
+      />
 
       {/* The orbiting, tide-locked moon. */}
       <group ref={orbitGroup}>
         <group ref={moonRef} position={[ORBIT_RADIUS, 0, 0]}>
           {/* A dedicated sunlight on the moon, faded during eclipse. */}
-          <pointLight ref={sunlightRef} position={[3.5, 1, 1.5]} intensity={26} distance={9} color={designTokens.biolum.amber} />
+          <pointLight
+            ref={sunlightRef}
+            position={[3.5, 1, 1.5]}
+            intensity={26}
+            distance={9}
+            color={designTokens.biolum.amber}
+          />
           <mesh>
             <sphereGeometry args={[0.42, 36, 36]} />
             <meshStandardMaterial

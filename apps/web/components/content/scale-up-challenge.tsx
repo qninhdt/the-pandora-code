@@ -31,9 +31,9 @@ interface ScaleUpChallengeProps {
 // ─────────────────────────────────────────────────────────────────────
 
 // Reference sparrow values (baseline at k=1)
-const BASE_MASS = 0.03;     // kg
-const BASE_WING = 0.008;    // m² (wing area)
-const BASE_SPAN = 0.22;     // m
+const BASE_MASS = 0.03; // kg
+const BASE_WING = 0.008; // m² (wing area)
+const BASE_SPAN = 0.22; // m
 
 function wingLoading(k: number): number {
   return (BASE_MASS * k ** 3) / (BASE_WING * k ** 2); // = BASE_MASS/BASE_WING * k
@@ -85,17 +85,20 @@ export function ScaleUpChallenge({ caption, className }: ScaleUpChallengeProps) 
 
   // Divergence bars: normalized so k=1 → same length, then they diverge
   const barMax = 5 ** 3; // at k=5, mass = 125× base
-  const bars = useMemo(() => [
-    { key: "wing", value: k ** 2, exp: "k²", tone: "var(--cyan)" },
-    { key: "mass", value: k ** 3, exp: "k³", tone: "var(--teal)" },
-    { key: "loading", value: k, exp: "k", tone: statusTone },
-  ], [k, statusTone]);
+  const bars = useMemo(
+    () => [
+      { key: "wing", value: k ** 2, exp: "k²", tone: "var(--cyan)" },
+      { key: "mass", value: k ** 3, exp: "k³", tone: "var(--teal)" },
+      { key: "loading", value: k, exp: "k", tone: statusTone },
+    ],
+    [k, statusTone],
+  );
 
   // SVG body dimensions — the body grows as k³ (volume), wings as k²
   const groundY = H_SVG - 30;
-  const bodyW = 24 * Math.cbrt(k);     // cube-root so body doesn't overflow
+  const bodyW = 24 * Math.cbrt(k); // cube-root so body doesn't overflow
   const bodyH = 20 * Math.cbrt(k);
-  const wingSpan = 80 * Math.sqrt(k);  // wing grows as √(k²) = k (visual)
+  const wingSpan = 80 * Math.sqrt(k); // wing grows as √(k²) = k (visual)
   const bodyCx = W_SVG / 2;
   const bodyCy = groundY - bodyH / 2;
 
@@ -123,25 +126,43 @@ export function ScaleUpChallenge({ caption, className }: ScaleUpChallengeProps) 
           <GlowDefs idBase={uid} tones={["teal", "cyan", "amber", "magenta"]} />
 
           {/* Ground line */}
-          <line x1={20} y1={groundY} x2={W_SVG - 20} y2={groundY}
-            stroke="var(--border-strong)" strokeWidth={2} strokeOpacity={0.5} />
+          <line
+            x1={20}
+            y1={groundY}
+            x2={W_SVG - 20}
+            y2={groundY}
+            stroke="var(--border-strong)"
+            strokeWidth={2}
+            strokeOpacity={0.5}
+          />
 
           {/* Contact shadow */}
-          <ellipse cx={bodyCx} cy={groundY + 2}
-            rx={bodyW * 0.8} ry={4}
-            fill="var(--void)" opacity={0.5}
-            style={{ filter: "blur(3px)" }} />
+          <ellipse
+            cx={bodyCx}
+            cy={groundY + 2}
+            rx={bodyW * 0.8}
+            ry={4}
+            fill="var(--void)"
+            opacity={0.5}
+            style={{ filter: "blur(3px)" }}
+          />
 
           {/* Radial wash behind body */}
-          <ellipse cx={bodyCx} cy={bodyCy}
-            rx={wingSpan * 0.6} ry={bodyH * 1.2}
+          <ellipse
+            cx={bodyCx}
+            cy={bodyCy}
+            rx={wingSpan * 0.6}
+            ry={bodyH * 1.2}
             fill={glowUrl(uid, `wash-${status === "grounded" ? "magenta" : "teal"}`)}
-            opacity={0.5} />
+            opacity={0.5}
+          />
 
           {/* Wings — they become visibly inadequate at high k */}
           <line
-            x1={bodyCx - wingSpan / 2} y1={bodyCy - 2}
-            x2={bodyCx + wingSpan / 2} y2={bodyCy - 2}
+            x1={bodyCx - wingSpan / 2}
+            y1={bodyCy - 2}
+            x2={bodyCx + wingSpan / 2}
+            y2={bodyCy - 2}
             stroke={statusTone}
             strokeWidth={Math.max(2, 3 / Math.sqrt(k))}
             strokeLinecap="round"
@@ -149,30 +170,48 @@ export function ScaleUpChallenge({ caption, className }: ScaleUpChallengeProps) 
           />
           {/* Wing tips — downward curve showing strain at high k */}
           <line
-            x1={bodyCx - wingSpan / 2} y1={bodyCy - 2}
-            x2={bodyCx - wingSpan / 2 - 3} y2={bodyCy + Math.min(10, k * 2)}
-            stroke={statusTone} strokeWidth={2} strokeLinecap="round" />
+            x1={bodyCx - wingSpan / 2}
+            y1={bodyCy - 2}
+            x2={bodyCx - wingSpan / 2 - 3}
+            y2={bodyCy + Math.min(10, k * 2)}
+            stroke={statusTone}
+            strokeWidth={2}
+            strokeLinecap="round"
+          />
           <line
-            x1={bodyCx + wingSpan / 2} y1={bodyCy - 2}
-            x2={bodyCx + wingSpan / 2 + 3} y2={bodyCy + Math.min(10, k * 2)}
-            stroke={statusTone} strokeWidth={2} strokeLinecap="round" />
+            x1={bodyCx + wingSpan / 2}
+            y1={bodyCy - 2}
+            x2={bodyCx + wingSpan / 2 + 3}
+            y2={bodyCy + Math.min(10, k * 2)}
+            stroke={statusTone}
+            strokeWidth={2}
+            strokeLinecap="round"
+          />
 
           {/* Body — ellipse that grows with k³ */}
-          <ellipse cx={bodyCx} cy={bodyCy}
-            rx={bodyW / 2} ry={bodyH / 2}
+          <ellipse
+            cx={bodyCx}
+            cy={bodyCy}
+            rx={bodyW / 2}
+            ry={bodyH / 2}
             fill={`color-mix(in oklab, ${statusTone} 30%, transparent)`}
-            stroke={statusTone} strokeWidth={2}
+            stroke={statusTone}
+            strokeWidth={2}
             filter={glowUrl(uid, "bloom")}
           />
 
           {/* Head */}
-          <circle cx={bodyCx + bodyW / 2 + 4} cy={bodyCy - 3}
+          <circle
+            cx={bodyCx + bodyW / 2 + 4}
+            cy={bodyCy - 3}
             r={Math.max(3, 5 / Math.cbrt(k))}
-            fill={statusTone} />
+            fill={statusTone}
+          />
 
           {/* Legs — get disproportionately thicker (allometric) */}
           {[-0.3, 0.3].map((offset) => (
-            <line key={offset}
+            <line
+              key={offset}
               x1={bodyCx + bodyW * offset}
               y1={bodyCy + bodyH / 2}
               x2={bodyCx + bodyW * offset}
@@ -184,32 +223,62 @@ export function ScaleUpChallenge({ caption, className }: ScaleUpChallengeProps) 
           ))}
 
           {/* Size label */}
-          <VizText x={bodyCx} y={bodyCy - bodyH / 2 - 10}
-            size="small" tone={statusTone} anchor="middle" weight={700} numeric>
+          <VizText
+            x={bodyCx}
+            y={bodyCy - bodyH / 2 - 10}
+            size="small"
+            tone={statusTone}
+            anchor="middle"
+            weight={700}
+            numeric
+          >
             {t("multiple", { n: fmt(k) })}
           </VizText>
 
           {/* Status badge */}
-          <VizText x={bodyCx} y={groundY + 18}
-            size="small" tone={statusTone} anchor="middle" weight={700}>
+          <VizText
+            x={bodyCx}
+            y={groundY + 18}
+            size="small"
+            tone={statusTone}
+            anchor="middle"
+            weight={700}
+          >
             {t(`status.${status}`)}
           </VizText>
 
           {/* Wing loading gauge — top right */}
-          <circle cx={W_SVG - 50} cy={50} r={gaugeR}
-            fill="none" stroke="var(--border)" strokeWidth={3} strokeOpacity={0.2} />
+          <circle
+            cx={W_SVG - 50}
+            cy={50}
+            r={gaugeR}
+            fill="none"
+            stroke="var(--border)"
+            strokeWidth={3}
+            strokeOpacity={0.2}
+          />
           {gaugeAngle > 0 && (
-            <path d={gaugePath}
-              fill="none" stroke={statusTone} strokeWidth={3.5}
+            <path
+              d={gaugePath}
+              fill="none"
+              stroke={statusTone}
+              strokeWidth={3.5}
               strokeLinecap="round"
-              filter={glowUrl(uid, "bloom")} />
+              filter={glowUrl(uid, "bloom")}
+            />
           )}
-          <VizText x={W_SVG - 50} y={48}
-            size="base" tone={statusTone} anchor="middle" weight={700} numeric>
+          <VizText
+            x={W_SVG - 50}
+            y={48}
+            size="base"
+            tone={statusTone}
+            anchor="middle"
+            weight={700}
+            numeric
+          >
             {fmt(wl)}
           </VizText>
-          <VizText x={W_SVG - 50} y={62}
-            size="micro" tone="subtle" anchor="middle">
+          <VizText x={W_SVG - 50} y={62} size="micro" tone="subtle" anchor="middle">
             {t("wlUnit")}
           </VizText>
         </svg>
@@ -219,7 +288,9 @@ export function ScaleUpChallenge({ caption, className }: ScaleUpChallengeProps) 
           <VizSlider
             label={t("sizeLabel")}
             display={t("multiple", { n: fmt(k) })}
-            min={1} max={5} step={0.1}
+            min={1}
+            max={5}
+            step={0.1}
             value={k}
             onChange={setK}
             tone={statusTone}
@@ -231,8 +302,13 @@ export function ScaleUpChallenge({ caption, className }: ScaleUpChallengeProps) 
             return (
               <div key={b.key} className="mt-1">
                 <div className="mb-1 flex items-baseline justify-between">
-                  <span className="font-sans text-xs text-muted">{t(b.key)} ({b.exp})</span>
-                  <span className="font-display text-sm font-700 tabular-nums" style={{ color: b.tone }}>
+                  <span className="font-sans text-xs text-muted">
+                    {t(b.key)} ({b.exp})
+                  </span>
+                  <span
+                    className="font-display text-sm font-700 tabular-nums"
+                    style={{ color: b.tone }}
+                  >
                     {fmt(b.value)}×
                   </span>
                 </div>
@@ -263,7 +339,13 @@ export function ScaleUpChallenge({ caption, className }: ScaleUpChallengeProps) 
 // ─────────────────────────────────────────────────────────────────────
 // SVG arc helper for the wing-loading gauge
 // ─────────────────────────────────────────────────────────────────────
-function describeArc(cx: number, cy: number, r: number, startAngle: number, endAngle: number): string {
+function describeArc(
+  cx: number,
+  cy: number,
+  r: number,
+  startAngle: number,
+  endAngle: number,
+): string {
   const rad = (a: number) => (a * Math.PI) / 180;
   const x1 = cx + r * Math.cos(rad(startAngle));
   const y1 = cy + r * Math.sin(rad(startAngle));

@@ -115,10 +115,23 @@ export function ConsciousBottleneck({ caption, className }: ConsciousBottleneckP
             filter={glowUrl(uid, "bloom")}
             style={{ transition: "height 0.2s, y 0.2s" }}
           />
-          <VizText x={VIEW_W - 8} y={midY - outThickness - 8} size="small" tone="magenta" anchor="end">
+          <VizText
+            x={VIEW_W - 8}
+            y={midY - outThickness - 8}
+            size="small"
+            tone="magenta"
+            anchor="end"
+          >
             {t("trickle")}
           </VizText>
-          <VizText x={VIEW_W - 8} y={midY + outThickness + 18} size="micro" tone="magenta" anchor="end" numeric>
+          <VizText
+            x={VIEW_W - 8}
+            y={midY + outThickness + 18}
+            size="micro"
+            tone="magenta"
+            anchor="end"
+            numeric
+          >
             {formatRate(bps)}
           </VizText>
         </svg>

@@ -65,8 +65,8 @@ export function GlossaryBrowser({ terms, locale, covers, labels }: GlossaryBrows
         else byTag.set(tag, [t]);
       }
     }
-    const ordered: { tag: string; items: LocalizedGlossaryTerm[] }[] = GLOSSARY_TAGS.filter(
-      (tag) => byTag.has(tag),
+    const ordered: { tag: string; items: LocalizedGlossaryTerm[] }[] = GLOSSARY_TAGS.filter((tag) =>
+      byTag.has(tag),
     ).map((tag) => ({
       tag,
       items: byTag.get(tag) ?? [],

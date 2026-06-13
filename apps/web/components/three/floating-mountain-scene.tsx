@@ -14,31 +14,15 @@ export function FloatingMountainScene() {
   const group = useRef<THREE.Group>(null);
 
   useFrame((state) => {
-    if (group.current)
-      group.current.rotation.y = Math.sin(state.clock.elapsedTime * 0.1) * 0.15;
+    if (group.current) group.current.rotation.y = Math.sin(state.clock.elapsedTime * 0.1) * 0.15;
   });
 
   return (
     <group ref={group}>
-      <ambientLight
-        intensity={0.25}
-        color={designTokens.depth.surfaceOverlay}
-      />
-      <pointLight
-        position={[-3, 2, 3]}
-        intensity={40}
-        color={designTokens.biolum.cyan}
-      />
-      <pointLight
-        position={[3, -1, 2]}
-        intensity={25}
-        color={designTokens.biolum.teal}
-      />
-      <pointLight
-        position={[0, -2, -2]}
-        intensity={12}
-        color={designTokens.biolum.magenta}
-      />
+      <ambientLight intensity={0.25} color={designTokens.depth.surfaceOverlay} />
+      <pointLight position={[-3, 2, 3]} intensity={40} color={designTokens.biolum.cyan} />
+      <pointLight position={[3, -1, 2]} intensity={25} color={designTokens.biolum.teal} />
+      <pointLight position={[0, -2, -2]} intensity={12} color={designTokens.biolum.magenta} />
 
       <Float speed={1.4} rotationIntensity={0.4} floatIntensity={0.8}>
         <mesh position={[-1.4, 0.6, 0]} rotation={[0.3, 0.5, -0.2]}>

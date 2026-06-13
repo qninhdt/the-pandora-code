@@ -24,17 +24,17 @@ interface VerticalForestDiveProps {
 const K = 0.55; // canopy extinction coefficient (broadleaf ~0.4–0.7)
 
 interface Stratum {
-  top: number;       // fraction of total height (1 = emergent peak)
+  top: number; // fraction of total height (1 = emergent peak)
   bottom: number;
-  lai: number;       // leaf-area added crossing THIS band from above
-  toneVar: string;   // ambient glow tone for this layer
+  lai: number; // leaf-area added crossing THIS band from above
+  toneVar: string; // ambient glow tone for this layer
 }
 
 const STRATA: Stratum[] = [
-  { top: 1.0,  bottom: 0.78, lai: 0.4,  toneVar: "var(--amber)" },   // emergent
-  { top: 0.78, bottom: 0.45, lai: 3.6,  toneVar: "var(--teal)" },    // canopy
-  { top: 0.45, bottom: 0.18, lai: 1.8,  toneVar: "var(--cyan)" },    // understory
-  { top: 0.18, bottom: 0.0,  lai: 0.6,  toneVar: "var(--magenta)" }, // floor
+  { top: 1.0, bottom: 0.78, lai: 0.4, toneVar: "var(--amber)" }, // emergent
+  { top: 0.78, bottom: 0.45, lai: 3.6, toneVar: "var(--teal)" }, // canopy
+  { top: 0.45, bottom: 0.18, lai: 1.8, toneVar: "var(--cyan)" }, // understory
+  { top: 0.18, bottom: 0.0, lai: 0.6, toneVar: "var(--magenta)" }, // floor
 ];
 
 // Cumulative LAI from top down to a given fractional height (0–1).
@@ -63,7 +63,7 @@ function lightAt(frac: number): number {
 
 // Wind speed approximation (relative): exponential decay into the canopy.
 function windAt(frac: number): number {
-  if (frac >= 0.78) return 80 + (frac - 0.78) / 0.22 * 20;
+  if (frac >= 0.78) return 80 + ((frac - 0.78) / 0.22) * 20;
   return 80 * Math.exp(-3.5 * (0.78 - frac));
 }
 
@@ -89,21 +89,29 @@ function stratumAt(frac: number): number {
 // Emergent: banshee (wings spread). Canopy: prolemuris (swinging).
 // Understory: Na'vi figure. Floor: hexapede (browsing).
 const FAUNA_PATHS: Record<number, { d: string; w: number; h: number }> = {
-  0: { // Banshee — spread wings
+  0: {
+    // Banshee — spread wings
     d: "M16 8 L4 2 L2 6 L10 10 L2 14 L4 18 L16 12 L28 18 L30 14 L22 10 L30 6 L28 2 Z",
-    w: 32, h: 20,
+    w: 32,
+    h: 20,
   },
-  1: { // Prolemuris — climbing figure
+  1: {
+    // Prolemuris — climbing figure
     d: "M8 4 Q6 2 8 0 Q10 2 8 4 M8 4 L8 10 M5 7 L11 7 M8 10 L5 16 M8 10 L11 16 M11 7 L14 4 M5 7 L2 4",
-    w: 16, h: 16,
+    w: 16,
+    h: 16,
   },
-  2: { // Na'vi — standing figure with bow
+  2: {
+    // Na'vi — standing figure with bow
     d: "M8 3 Q6 1 8 0 Q10 1 8 3 M8 3 L8 12 M4 6 L12 6 M8 12 L5 20 M8 12 L11 20 M12 6 L14 0",
-    w: 16, h: 20,
+    w: 16,
+    h: 20,
   },
-  3: { // Hexapede — quadruped
+  3: {
+    // Hexapede — quadruped
     d: "M4 6 L20 6 Q24 6 24 4 Q24 2 22 2 M4 6 Q0 6 0 8 M4 6 L2 12 M8 6 L6 12 M16 6 L14 12 M20 6 L18 12",
-    w: 24, h: 12,
+    w: 24,
+    h: 12,
   },
 };
 
@@ -112,8 +120,8 @@ const FAUNA_PATHS: Record<number, { d: string; w: number; h: number }> = {
 // ─────────────────────────────────────────────────────────────────────
 const W = 320;
 const H = 280;
-const COL_X = 60;  // trunk center x
-const COL_W = 12;  // trunk visual width
+const COL_X = 60; // trunk center x
+const COL_W = 12; // trunk visual width
 
 export function VerticalForestDive({ caption, className }: VerticalForestDiveProps) {
   const uid = useId();
@@ -170,7 +178,12 @@ export function VerticalForestDive({ caption, className }: VerticalForestDivePro
             className="pointer-events-none absolute inset-0 rounded-lg transition-opacity duration-500"
             style={{ background: `rgba(0,0,0,${bgOpacity})` }}
           />
-          <svg viewBox={`0 0 ${W} ${H}`} className="relative w-full" role="img" aria-label={t("title")}>
+          <svg
+            viewBox={`0 0 ${W} ${H}`}
+            className="relative w-full"
+            role="img"
+            aria-label={t("title")}
+          >
             <GlowDefs idBase={uid} tones={["teal", "cyan", "amber", "magenta"]} />
 
             {/* Strata bands */}
@@ -189,9 +202,11 @@ export function VerticalForestDive({ caption, className }: VerticalForestDivePro
                     width={70}
                     height={bandH}
                     rx={4}
-                    fill={isActive
-                      ? `color-mix(in oklab, ${s.toneVar} 22%, transparent)`
-                      : `color-mix(in oklab, var(--cyan) ${Math.round(alpha * 100)}%, transparent)`}
+                    fill={
+                      isActive
+                        ? `color-mix(in oklab, ${s.toneVar} 22%, transparent)`
+                        : `color-mix(in oklab, var(--cyan) ${Math.round(alpha * 100)}%, transparent)`
+                    }
                     stroke={isActive ? s.toneVar : "var(--border)"}
                     strokeWidth={isActive ? 1.5 : 0.5}
                     strokeOpacity={isActive ? 1 : 0.4}

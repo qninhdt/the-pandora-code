@@ -17,12 +17,7 @@ interface GlowPulseProps {
 // (glowing icons, hero accents). Uses box-shadow instead of filter: drop-shadow()
 // because filter animations trigger main-thread repaints every frame.
 // Static glow under prefers-reduced-motion.
-export function GlowPulse({
-  children,
-  color = "cyan",
-  duration = 4.5,
-  className,
-}: GlowPulseProps) {
+export function GlowPulse({ children, color = "cyan", duration = 4.5, className }: GlowPulseProps) {
   const reduced = useReducedMotionSafe();
   const c = `var(--${color})`;
   const soft = `0 0 6px color-mix(in oklab, ${c} 40%, transparent)`;
