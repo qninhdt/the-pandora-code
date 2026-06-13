@@ -120,9 +120,8 @@ You MUST strictly follow the 5-step sequence below. **ULTIMATE RULE:** Do not ke
 - Save the corrections to `4-correction.mdx` following `i18n/templates/4-correction.template.mdx` (Format: `- "<Bad Sentence>" -> "<Natural Sentence>"`).
 
 **Step 5: The Ultimate Masterpiece Translation (Master Editorial Director)**
-- Create the final polished translation integrating all corrections.
-- Save the final output to `5-final.mdx` following `i18n/templates/5-final.template.mdx`.
-- **Output Format Rule:** After generating all `5-final.mdx` files, combine them and print the entirety of the official translated text into the chat output, neatly contained within ONE single Markdown code block. Do not write any additional comments.
+- Create the final polished translation integrating all corrections for each section, and save it to `i18n/chapters/<chapter-slug>/<section-index>/5-final.mdx` following `i18n/templates/5-final.template.mdx`.
+- **Final Output Format Rule:** After generating all `5-final.mdx` files for every section, you MUST combine them into a single complete file and save it to `i18n/chapters/<chapter-slug>/final.mdx`. Finally, print the entirety of this `final.mdx` file into the chat output, neatly contained within ONE single Markdown code block. Do not write any additional comments.
 
 ---
 

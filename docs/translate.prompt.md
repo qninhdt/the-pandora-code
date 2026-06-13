@@ -121,9 +121,8 @@ Bạn BẮT BUỘC phải tuân thủ đúng trình tự 5 bước dưới đây
 - Lưu quá trình sửa lỗi vào `4-correction.mdx` theo `i18n/templates/4-correction.template.mdx` (Định dạng: `- "<Câu dịch tệ>" -> "<Câu dịch tự nhiên>"`).
 
 **Bước 5: Bản Dịch Hoàn Thiện Tối Ưu (Master Editorial Director)**
-- Tạo bản dịch hoàn thiện cuối cùng bằng cách tích hợp tất cả các sửa đổi.
-- Lưu kết quả cuối cùng vào `5-final.mdx` theo `i18n/templates/5-final.template.mdx`.
-- **Định dạng đầu ra:** Sau khi tạo xong tất cả các file `5-final.mdx`, hãy gộp chúng lại và in toàn bộ phần văn bản dịch chính thức ra màn hình chat, đặt gọn gàng trong MỘT Markdown code block duy nhất. Không viết thêm bất kỳ lời bình luận hay chào hỏi nào.
+- Tạo bản dịch hoàn thiện cuối cùng bằng cách tích hợp tất cả các sửa đổi cho từng section, lưu vào `i18n/chapters/<chapter-slug>/<section-index>/5-final.mdx` theo `i18n/templates/5-final.template.mdx`.
+- **Định dạng đầu ra cuối cùng:** Sau khi tạo xong tất cả các file `5-final.mdx` của mọi section, BẮT BUỘC phải gộp tất cả chúng lại thành một file hoàn chỉnh và lưu vào `i18n/chapters/<chapter-slug>/final.mdx`. Cuối cùng, in toàn bộ nội dung file `final.mdx` này ra màn hình chat, đặt gọn gàng trong MỘT Markdown code block duy nhất. Không viết thêm bất kỳ lời bình luận hay chào hỏi nào.
 
 ---
 
