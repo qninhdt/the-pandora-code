@@ -44,6 +44,7 @@ const GLOSSARY_VISUALIZATIONS: Record<
   "dynamic-soaring": dynamic(() => import("./dynamic-soaring"), { ssr: false }),
   "square-cube-law": dynamic(() => import("./square-cube-law"), { ssr: false }),
   "transmission-spectroscopy": dynamic(() => import("./transmission-spectroscopy"), { ssr: false }),
+  "coriolis-effect": dynamic(() => import("./coriolis-effect"), { ssr: false }),
 };
 
 interface GlossaryVisualizerProps {

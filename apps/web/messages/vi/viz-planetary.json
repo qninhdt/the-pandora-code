@@ -240,6 +240,27 @@
       "noDips": "Không phát hiện vạch hấp thụ dấu hiệu sinh học đáng kể",
       "dipsFound": "Phát hiện các vạch hấp thụ rõ rệt!",
       "hint": "Khi hành tinh đi ngang qua sao chủ, ánh sáng sao lọc qua vành khí quyển mỏng của nó. Các khí nhau hấp thụ ánh sáng ở những bước sóng cụ thể, tạo ra các 'vạch hấp thụ' đặc trưng trên đồ thị quang phổ. Hãy thay đổi khí quyển để đọc các công thức hóa học."
+    },
+    "coriolisEffect": {
+      "title": "Hiệu ứng Coriolis",
+      "subtitle": "Sự lệch hướng biểu kiến sang bên trên thế giới tự quay",
+      "hemisphere": "Bán cầu",
+      "northern": "Bán cầu Bắc (Lệch bên Phải)",
+      "southern": "Bán cầu Nam (Lệch bên Trái)",
+      "spinSpeed": "Tốc độ tự quay",
+      "stationary": "Đứng yên",
+      "fast": "Nhanh",
+      "launch": "Bắn đầu dò",
+      "launchPos": "Bắn từ",
+      "pole": "Cực Bắc (Hướng ra ngoài)",
+      "equator": "Xích đạo (Hướng vào trong)",
+      "inertialPath": "Đường đi quán tính (Nhìn từ vũ trụ)",
+      "apparentPath": "Đường đi biểu kiến (Nhìn từ bề mặt)",
+      "planetPresets": "So sánh tự quay hành tinh",
+      "presetEarth": "Trái Đất (Quay nhanh · 3 vòng)",
+      "presetPandora": "Pandora (Quay chậm hơn · 1 vòng)",
+      "presetNone": "Không tự quay (Đứng yên)",
+      "hint": "Lực Coriolis bẻ cong hướng gió và hải lưu do sự tự quay của hành tinh. Hãy chọn bán cầu, chỉnh tốc độ quay và bắn đầu dò. Để ý cách đầu dò bị bẻ cong so với bề mặt quay dưới chân nó, dù vẫn đi thẳng trong không gian quán tính."
     }
   }
 }

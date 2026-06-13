@@ -240,6 +240,27 @@
       "noDips": "No significant biosignature absorption dips",
       "dipsFound": "Clear absorption dips detected!",
       "hint": "As a planet transits its host star, starlight filters through its thin atmospheric ring. Different gases absorb light at specific wavelengths, leaving characteristic 'dips' in the spectrum. Switch atmospheres to read their chemical recipes."
+    },
+    "coriolisEffect": {
+      "title": "Coriolis Effect",
+      "subtitle": "Sideways deflection on a spinning world",
+      "hemisphere": "Hemisphere",
+      "northern": "Northern (Deflects Right)",
+      "southern": "Southern (Deflects Left)",
+      "spinSpeed": "Rotation Speed",
+      "stationary": "Stationary",
+      "fast": "Fast",
+      "launch": "Launch Probe",
+      "launchPos": "Launch From",
+      "pole": "North Pole (Outward)",
+      "equator": "Equator (Inward)",
+      "inertialPath": "Space view (Inertial path)",
+      "apparentPath": "Surface view (Apparent path)",
+      "planetPresets": "Planetary Spin Comparison",
+      "presetEarth": "Earth (Fast spin · 3 cells)",
+      "presetPandora": "Pandora (Slower spin · 1 cell)",
+      "presetNone": "No spin (Stationary)",
+      "hint": "Coriolis deflection is an apparent force resulting from planetary rotation. Choose a hemisphere, adjust the spin speed, and launch a probe. Watch the probe drift relative to the rotating surface, while moving in a straight line in space."
     }
   }
 }

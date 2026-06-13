@@ -31,6 +31,7 @@ export const GLOSSARY_VISUALIZATION_IDS = [
   "dynamic-soaring",
   "square-cube-law",
   "transmission-spectroscopy",
+  "coriolis-effect",
 ] as const;
 
 export type GlossaryVisualizationId = (typeof GLOSSARY_VISUALIZATION_IDS)[number];
