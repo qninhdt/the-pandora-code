@@ -112,9 +112,9 @@ Bạn BẮT BUỘC phải tuân thủ đúng trình tự 6 bước dưới đây
 - Xác định mục tiêu cụ thể, xử lý trước các điểm nghẽn cú pháp/ẩn dụ và thuật ngữ đặc thù của section đó.
 
 **BƯỚC 3: Dịch Kép - Dual Drafting (Hàng loạt)**
-- Sau khi xong Bước 2 cho toàn bộ bài, tiến hành dịch tất cả các section thành 2 bản nháp với 2 hướng tiếp cận/văn phong khác nhau:
-  - Bản 1: Lưu vào `2-draft-1.mdx` (Bám sát cấu trúc / Cổ điển).
-  - Bản 2: Lưu vào `2-draft-2.mdx` (Phá cách / Chuyển ngữ mạnh tay).
+- Sau khi xong Bước 2 cho toàn bộ bài, tiến hành dịch tất cả các section thành 2 bản nháp độc lập và khác nhau về cách diễn đạt:
+  - Bản 1: Lưu vào `2-draft-1.mdx` (Bản dịch thứ nhất).
+  - Bản 2: Lưu vào `2-draft-2.mdx` (Bản dịch thứ hai, sử dụng cách diễn đạt và từ vựng khác với Bản 1).
 - **LƯU Ý QUAN TRỌNG:** Cả 2 bản đều phải là bản dịch TỐT NHẤT có thể, không phải dịch thô (word-by-word). Vận dụng toàn bộ 9 Quy tắc Ngôn ngữ.
 
 **BƯỚC 4: Subagent Đánh Giá Toàn Diện (Hàng loạt)**

@@ -111,9 +111,9 @@ You MUST strictly follow the 6-step sequence below based on the **BATCH-FIRST** 
 - Identify specific goals, pre-handle structural/cultural bottlenecks, and section-specific terminology.
 
 **STEP 3: Dual Drafting (Batch)**
-- After Step 2 is finished for the entire document, draft all sections into 2 versions with different styles/approaches:
-  - Version 1: Save to `2-draft-1.mdx` (Structurally Adherent / Classical).
-  - Version 2: Save to `2-draft-2.mdx` (Creative / Aggressive Transcreation).
+- After Step 2 is finished for the entire document, draft all sections into 2 independent versions with different phrasing:
+  - Version 1: Save to `2-draft-1.mdx` (First Draft).
+  - Version 2: Save to `2-draft-2.mdx` (Second Draft, using different phrasing and vocabulary choices compared to Version 1).
 - **CRITICAL NOTE:** BOTH versions must be the BEST possible translations you can produce, not literal word-by-word rough drafts. Apply all 9 Linguistic Rules.
 
 **STEP 4: Comprehensive Subagent Evaluation (Batch)**
