@@ -20,9 +20,9 @@ To shatter the structural barriers of machine learning systems and achieve this 
   - Switch to an ANONYMOUS ACTIVE structure: Move the verb before the object, or use indefinite pronouns ("người ta" - people, "giới chức" - authorities, "ta" - we).
   - Use the Topic-Comment structure.
 
-  - *Example (Incorrect):* "The sample was heated to 100°C" -> "Mẫu đã được làm nóng..." | "The house was built by him" -> "Ngôi nhà đã được xây bởi anh ấy" | "Báo cáo đã được viết bởi ủy ban."
-  - *Example (Correct):* "Đun nóng mẫu tới 100°C" | "Anh ấy đã xây ngôi nhà này" / "Ngôi nhà này xây xong rồi" | "Ủy ban đã hoàn thành báo cáo" / "Báo cáo do ủy ban biên soạn."
-  - *Note:* For dummy subject structures like "It is required that..." -> "Cần phải..."; "It can be seen that..." -> "Có thể thấy...".
+  - _Example (Incorrect):_ "The sample was heated to 100°C" -> "Mẫu đã được làm nóng..." | "The house was built by him" -> "Ngôi nhà đã được xây bởi anh ấy" | "Báo cáo đã được viết bởi ủy ban."
+  - _Example (Correct):_ "Đun nóng mẫu tới 100°C" | "Anh ấy đã xây ngôi nhà này" / "Ngôi nhà này xây xong rồi" | "Ủy ban đã hoàn thành báo cáo" / "Báo cáo do ủy ban biên soạn."
+  - _Note:_ For dummy subject structures like "It is required that..." -> "Cần phải..."; "It can be seen that..." -> "Có thể thấy...".
 
 **Rule 2: Relative Clauses Reduction**
 
@@ -34,16 +34,16 @@ To shatter the structural barriers of machine learning systems and achieve this 
   - Convert into a direct adjective/verb phrase (reduced relative clause, e.g., using "đang" - currently, "đã" - already).
   - Break into two independent simple sentences.
 
-  - *Example (Incorrect):* "The girl who is wearing a red shirt is my sister" -> "Cô gái người mà đang mặc áo đỏ..." | "Chính sách cái mà được thông qua..."
-  - *Example (Correct):* "Cô gái mặc áo đỏ kia là em gái tôi" | "Chính sách vừa thông qua..."
+  - _Example (Incorrect):_ "The girl who is wearing a red shirt is my sister" -> "Cô gái người mà đang mặc áo đỏ..." | "Chính sách cái mà được thông qua..."
+  - _Example (Correct):_ "Cô gái mặc áo đỏ kia là em gái tôi" | "Chính sách vừa thông qua..."
 
 **Rule 3: Verbalization over Nominalization**
 
 - **Awareness:** Academic/political English texts are often stuffed with massive noun phrases.
 - **Discipline:** DO NOT translate rigidly by prepending meaningless words like "sự" (the act of), "việc" (the doing of), "cuộc" (the event of), "tính" (the quality of) before verbs.
 - **Native Solutions:** Break down complex noun phrases into subordinate clauses containing action verbs. Let the verbs drive the sentence, making the rhythm graceful, not suffocating.
-  - *Example (Incorrect):* "The rapid development of non-linear structural analysis algorithms has..." -> "Sự phát triển nhanh chóng của các thuật toán..." | "Sự cải thiện của hệ thống giáo dục đã dẫn đến việc gia tăng điểm số."
-  - *Example (Correct):* "Việc các thuật toán phân tích cấu trúc phi tuyến tính phát triển nhanh chóng đã..." | "Hệ thống giáo dục cải thiện đã giúp học sinh đạt điểm cao hơn."
+  - _Example (Incorrect):_ "The rapid development of non-linear structural analysis algorithms has..." -> "Sự phát triển nhanh chóng của các thuật toán..." | "Sự cải thiện của hệ thống giáo dục đã dẫn đến việc gia tăng điểm số."
+  - _Example (Correct):_ "Việc các thuật toán phân tích cấu trúc phi tuyến tính phát triển nhanh chóng đã..." | "Hệ thống giáo dục cải thiện đã giúp học sinh đạt điểm cao hơn."
 
 **Rule 4: Theme-Rheme Restructuring & Bold Transcreation**
 
@@ -100,15 +100,19 @@ You MUST strictly follow the 5-step sequence below. **ULTIMATE RULE:** Do not ke
 
 **Step 1: Context, Terminology & Strategy Analysis (Agent: Senior Analyst)**
 - Analyze all sections. For each section, write the entire analysis into `1-analysis.mdx` following `i18n/templates/1-analysis.template.mdx`.
-- Explicitly output your entire reasoning process (in Vietnamese). Identify the Register, Audience, Tone, Pronouns, and extract ALL difficult terminology.
+- Explicitly output your entire reasoning process (in Vietnamese). Identify the Register, Audience, Tone, Pronouns, and Core Intent.
+- Pre-plan structural changes for complex sentences/passages (Structural Bottlenecks) and plan transcreation strategies for metaphors/idioms.
+- Extract and analyze ALL difficult terminology.
 
 **Step 2: Literal Semantic Draft (Agent: Base Translator)**
+
 - Draft all sections. For each section, save the full literal translation draft into `2-draft.mdx` following `i18n/templates/2-draft.template.mdx`.
 - The goal is 100% factual integrity and zero omissions. Sentences may be stiff.
 
 **Phase 2: Subagent Evaluation, Correction & Finalization (Do this per section)**
 
 **Step 3: Unbiased Subagent Evaluation (Agent: Strict Native Evaluation Coordinator)**
+
 - To avoid self-bias, you MUST NOT evaluate your own draft directly. For each section, you MUST use the `invoke_agent` tool (agent_name: "generalist").
 - **Prepare the Prompt:** Read the template `i18n/templates/subagent_evaluator.prompt.md`. Replace its placeholders (`{{CHAPTER_INFO}}`, `{{SOURCE_TEXT}}`, `{{DRAFT_TEXT}}`, `{{SECTION_INDEX}}`) with the actual chapter context, English source text, and your literal draft for that section.
 - Send this fully populated prompt to the subagent.
@@ -116,10 +120,12 @@ You MUST strictly follow the 5-step sequence below. **ULTIMATE RULE:** Do not ke
 - Save the subagent's exact output to `3-evaluation.mdx` following `i18n/templates/3-evaluation.template.mdx`.
 
 **Step 4: Comprehensive Correction (Agent: Master Corrector)**
+
 - Read the subagent's evaluation. Fix ALL the errors identified.
 - Save the corrections to `4-correction.mdx` following `i18n/templates/4-correction.template.mdx` (Format: `- "<Bad Sentence>" -> "<Natural Sentence>"`).
 
 **Step 5: The Ultimate Masterpiece Translation (Master Editorial Director)**
+
 - Create the final polished translation integrating all corrections for each section, and save it to `i18n/chapters/<chapter-slug>/<section-index>/5-final.mdx` following `i18n/templates/5-final.template.mdx`.
 - **Final Output Format Rule:** After generating all `5-final.mdx` files for every section, you MUST combine them into a single complete file and save it to `i18n/chapters/<chapter-slug>/final.mdx`. Finally, print the entirety of this `final.mdx` file into the chat output, neatly contained within ONE single Markdown code block. Do not write any additional comments.
 
@@ -131,49 +137,44 @@ To deeply understand the difference between "Translationese" (Machine Translatio
 
 **1. Literature & Expression (Rhythm & Tone)**
 
-- *Original:* "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife." (Pride and Prejudice)
-  - *Machine:* "Đó là một sự thật được thừa nhận phổ quát, rằng một người đàn ông độc thân sở hữu một gia tài tốt, chắc chắn phải đang cần một người vợ."
-  - *Expert:* "Có một sự thật mà ai cũng công nhận, đấy là: một người đàn ông có một tài sản khá hẳn sẽ muốn lấy vợ."
-- *Original:* "I'd like to put some sense in that head of yours, boy." (The Catcher in the Rye)
-  - *Expert:* "Tôi muốn nhét một ít lương tri vào cái đầu của cậu, ông mãnh."
-- *Original:* "Whenever you feel like criticizing anyone, just remember that all the people in this world haven't had the advantages that you've had." (The Great Gatsby)
-  - *Machine:* "Bất cứ khi nào bạn cảm thấy muốn chỉ trích bất cứ ai, chỉ cần nhớ rằng tất cả những người trên thế giới này đều không có được những lợi thế mà bạn đã có."
-  - *Expert:* "Hễ định phê phán ai đó, con hãy nhớ rằng chưa có ai trên đời này được như mình."
+- _Original:_ "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife." (Pride and Prejudice)
+  - _Machine:_ "Đó là một sự thật được thừa nhận phổ quát, rằng một người đàn ông độc thân sở hữu một gia tài tốt, chắc chắn phải đang cần một người vợ."
+  - _Expert:_ "Có một sự thật mà ai cũng công nhận, đấy là: một người đàn ông có một tài sản khá hẳn sẽ muốn lấy vợ."
+- _Original:_ "I'd like to put some sense in that head of yours, boy." (The Catcher in the Rye)
+  - _Expert:_ "Tôi muốn nhét một ít lương tri vào cái đầu của cậu, ông mãnh."
+- _Original:_ "Whenever you feel like criticizing anyone, just remember that all the people in this world haven't had the advantages that you've had." (The Great Gatsby)
+  - _Machine:_ "Bất cứ khi nào bạn cảm thấy muốn chỉ trích bất cứ ai, chỉ cần nhớ rằng tất cả những người trên thế giới này đều không có được những lợi thế mà bạn đã có."
+  - _Expert:_ "Hễ định phê phán ai đó, con hãy nhớ rằng chưa có ai trên đời này được như mình."
 
 **2. Transcreation - Daring to Add, Subtract, and Refine by Context (Contextual Adaptation)**
-*(Examples from a sci-fi book about the planet Pandora)*
+_(Examples from a sci-fi book about the planet Pandora)_
 
-- *Original:* "What's in the air"
-  - *Expert:* "Có gì trong bầu không khí chết chóc ấy?" (Added "chết chóc ấy" [that deadly] based on context to increase imagery and emotion).
-- *Original:* "Convergent but not quite"
-  - *Expert:* "Tiến hóa hội tụ, nhưng lại là một ngã rẽ khác" (Used the scientific term "Tiến hóa hội tụ" [Convergent evolution] instead of a literal translation "Hội tụ nhưng không hẳn").
-- *Original:* "The wood-wide web"
-  - *Expert:* "Wood-Wide Web: Mạng internet của núi rừng" (Kept the original pun and added a poetic explanation).
-- *Original:* "Six years each way"
-  - *Expert:* "Sáu năm ròng rã, một chặng đường" (Added "ròng rã" [grueling], "một chặng đường" [quite a journey] to convey the sheer length of space/time).
-- *Original:* "Hometree as keystone"
-  - *Expert:* "Hometree – Nền móng của cả hệ sinh thái" (Did not translate "Hometree", used "Nền móng của cả hệ sinh thái" [Foundation of the entire ecosystem] instead of a literal "như là đá tảng" [as a keystone]).
-- *Original:* "Part VIII - Contact, Conflict, Ethics"
-  - *Expert:* "Phần VIII - Chạm trán, Xung đột và Lằn ranh Đạo đức" (Used "Lằn ranh Đạo đức" [The Boundary of Ethics] to create gravity instead of a generic "Đạo đức" [Ethics]).
-- *Original:* "canon"
-  - *Expert:* "mạch truyện chính/nguyên tác" (main storyline/original work)
+- _Original:_ "What's in the air"
+  - _Expert:_ "Có gì trong bầu không khí chết chóc ấy?" (Added "chết chóc ấy" [that deadly] based on context to increase imagery and emotion).
+- _Original:_ "Convergent but not quite"
+  - _Expert:_ "Tiến hóa hội tụ, nhưng lại là một ngã rẽ khác" (Used the scientific term "Tiến hóa hội tụ" [Convergent evolution] instead of a literal translation "Hội tụ nhưng không hẳn").
+- _Original:_ "The wood-wide web"
+  - _Expert:_ "Wood-Wide Web: Mạng internet của núi rừng" (Kept the original pun and added a poetic explanation).
+- _Original:_ "Six years each way"
+  - _Expert:_ "Sáu năm ròng rã, một chặng đường" (Added "ròng rã" [grueling], "một chặng đường" [quite a journey] to convey the sheer length of space/time).
+- _Original:_ "Hometree as keystone"
+  - _Expert:_ "Hometree – Nền móng của cả hệ sinh thái" (Did not translate "Hometree", used "Nền móng của cả hệ sinh thái" [Foundation of the entire ecosystem] instead of a literal "như là đá tảng" [as a keystone]).
+- _Original:_ "Part VIII - Contact, Conflict, Ethics"
+  - _Expert:_ "Phần VIII - Chạm trán, Xung đột và Lằn ranh Đạo đức" (Used "Lằn ranh Đạo đức" [The Boundary of Ethics] to create gravity instead of a generic "Đạo đức" [Ethics]).
+- _Original:_ "canon"
+  - _Expert:_ "mạch truyện chính/nguyên tác" (main storyline/original work)
 
 **3. Eradicating Polysemy Errors, Avoiding Word-by-Word Translation in Specialized Domains (Polysemy & Domain Accuracy)**
 
-- *Biology:* "...52 macrofungi species in 23 families and 11 orders..."
-  - *Machine:* "...52 loài nấm vĩ mô trong 23 gia đình và 11 đơn đặt hàng..."
-  - *Expert:* "...52 loài nấm lớn thuộc 23 họ và 11 bộ..." (Accurately identified taxonomic terminology).
-- *Organization/Academia:* "The American Society for Mass Spectrometry (ASMS)..."
-  - *Machine:* "Xã hội Khối phổ Mỹ..."
-  - *Expert:* "Hiệp hội Khối phổ Hoa Kỳ..." ("Society" here means Association).
-- *Clinical Medicine:* "...brief nausea, vomiting, and anorexia."
-  - *Machine:* "...buồn nôn ngắn, nôn mửa, và chứng biếng ăn."
-  - *Expert:* "...buồn nôn, nôn và chán ăn." (Used standard Vietnamese clinical phrasing).
-- *Social Research:* "...were face-to-face interviewed."
-  - *Machine:* "...đã được phỏng vấn mặt đối mặt."
-  - *Expert:* "...đã được phỏng vấn trực tiếp..." (interviewed directly)
-
----
-
-**SOURCE ENGLISH TEXT TO BE TRANSLATED:**
-[The user will provide the English text here. Please begin your response with Step 1 of the workflow above.]
+- _Biology:_ "...52 macrofungi species in 23 families and 11 orders..."
+  - _Machine:_ "...52 loài nấm vĩ mô trong 23 gia đình và 11 đơn đặt hàng..."
+  - _Expert:_ "...52 loài nấm lớn thuộc 23 họ và 11 bộ..." (Accurately identified taxonomic terminology).
+- _Organization/Academia:_ "The American Society for Mass Spectrometry (ASMS)..."
+  - _Machine:_ "Xã hội Khối phổ Mỹ..."
+  - _Expert:_ "Hiệp hội Khối phổ Hoa Kỳ..." ("Society" here means Association).
+- _Clinical Medicine:_ "...brief nausea, vomiting, and anorexia."
+  - _Machine:_ "...buồn nôn ngắn, nôn mửa, và chứng biếng ăn."
+  - _Expert:_ "...buồn nôn, nôn và chán ăn." (Used standard Vietnamese clinical phrasing).
+- _Social Research:_ "...were face-to-face interviewed."
+  - _Machine:_ "...đã được phỏng vấn mặt đối mặt."
+  - _Expert:_ "...đã được phỏng vấn trực tiếp..." (interviewed directly)

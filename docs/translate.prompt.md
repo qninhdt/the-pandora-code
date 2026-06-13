@@ -101,15 +101,19 @@ Bạn BẮT BUỘC phải tuân thủ đúng trình tự 5 bước dưới đây
 
 **Bước 1: Phân Tích Ngữ Cảnh, Thuật Ngữ & Chiến Lược (Agent: Senior Analyst)**
 - Phân tích tất cả các section. Với mỗi section, ghi toàn bộ nội dung phân tích vào `1-analysis.mdx` theo đúng `i18n/templates/1-analysis.template.mdx`.
-- Suy luận rõ ràng bối cảnh, xác định Ngữ vực, Khán giả, Thông điệp cốt lõi, Giọng điệu và Khung Xưng hô. Trích xuất TẤT CẢ thuật ngữ khó.
+- Suy luận rõ ràng bối cảnh, xác định Ngữ vực, Khán giả, Thông điệp cốt lõi, Giọng điệu và Khung Xưng hô.
+- Lên phương án xử lý trước các câu phức/câu bị động dài (Điểm nghẽn cú pháp) và đưa ra chiến lược chuyển ngữ cho các phép ẩn dụ/thành ngữ.
+- Trích xuất TẤT CẢ thuật ngữ khó.
 
 **Bước 2: Bản Dịch Thô Bám Sát Ngữ Nghĩa (Agent: Base Translator)**
+
 - Viết nháp tất cả các section. Với mỗi section, lưu toàn bộ bản dịch nghĩa đen vào `2-draft.mdx` theo `i18n/templates/2-draft.template.mdx`.
 - Mục tiêu là 100% toàn vẹn dữ kiện và không bỏ sót. Chấp nhận câu văn sượng làm nguyên liệu gọt giũa.
 
 **Giai đoạn 2: Subagent Đánh giá, Sửa lỗi & Hoàn thiện (Thực hiện cho TỪNG section)**
 
 **Bước 3: Subagent Đánh Giá Khách Quan (Agent: Strict Native Evaluation Coordinator)**
+
 - Để tránh thiên vị (self-reflection bias), bạn KHÔNG ĐƯỢC tự đánh giá bản nháp của mình. Với mỗi section, bạn BẮT BUỘC phải sử dụng tool `invoke_agent` (agent_name: "generalist").
 - **Chuẩn bị prompt:** Đọc file `i18n/templates/subagent_evaluator.prompt.md`. Thay thế các placeholder (`{{CHAPTER_INFO}}`, `{{SOURCE_TEXT}}`, `{{DRAFT_TEXT}}`, `{{SECTION_INDEX}}`) bằng thông tin thực tế của chapter, văn bản gốc tiếng Anh và bản nháp thô tương ứng của bạn.
 - Gửi toàn bộ prompt đã được điền đầy đủ dữ liệu này cho subagent.
@@ -117,10 +121,12 @@ Bạn BẮT BUỘC phải tuân thủ đúng trình tự 5 bước dưới đây
 - Lưu chính xác kết quả của subagent vào `3-evaluation.mdx` theo đúng cấu trúc của `i18n/templates/3-evaluation.template.mdx`.
 
 **Bước 4: Sửa Lỗi Toàn Diện (Agent: Master Corrector)**
+
 - Đọc bản đánh giá của subagent. Sửa TOÀN BỘ các lỗi đã được chỉ ra.
 - Lưu quá trình sửa lỗi vào `4-correction.mdx` theo `i18n/templates/4-correction.template.mdx` (Định dạng: `- "<Câu dịch tệ>" -> "<Câu dịch tự nhiên>"`).
 
 **Bước 5: Bản Dịch Hoàn Thiện Tối Ưu (Master Editorial Director)**
+
 - Tạo bản dịch hoàn thiện cuối cùng bằng cách tích hợp tất cả các sửa đổi cho từng section, lưu vào `i18n/chapters/<chapter-slug>/<section-index>/5-final.mdx` theo `i18n/templates/5-final.template.mdx`.
 - **Định dạng đầu ra cuối cùng:** Sau khi tạo xong tất cả các file `5-final.mdx` của mọi section, BẮT BUỘC phải gộp tất cả chúng lại thành một file hoàn chỉnh và lưu vào `i18n/chapters/<chapter-slug>/final.mdx`. Cuối cùng, in toàn bộ nội dung file `final.mdx` này ra màn hình chat, đặt gọn gàng trong MỘT Markdown code block duy nhất. Không viết thêm bất kỳ lời bình luận hay chào hỏi nào.
 
@@ -173,8 +179,3 @@ _(Ví dụ từ sách giả tưởng khoa học về hành tinh Pandora)_
 - _Nghiên cứu Xã hội:_ "...were face-to-face interviewed."
   - _Dịch Máy:_ "...đã được phỏng vấn mặt đối mặt."
   - _Chuyên gia:_ "...đã được phỏng vấn trực tiếp..."
-
----
-
-**VĂN BẢN TIẾNG ANH NGUỒN CẦN DỊCH:**
-[Người dùng sẽ cung cấp đoạn văn bản tiếng Anh vào đây. Hãy bắt đầu phản hồi của bạn bằng Bước 1 theo quy trình trên.]
