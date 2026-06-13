@@ -30,6 +30,7 @@ const GLOSSARY_VISUALIZATIONS: Record<
   "atmospheric-disequilibrium": dynamic(() => import("./atmospheric-disequilibrium"), { ssr: false }),
   "half-life": dynamic(() => import("./half-life"), { ssr: false }),
   "quantum-locking": dynamic(() => import("./quantum-locking"), { ssr: false }),
+  "hadley-cell": dynamic(() => import("./hadley-cell"), { ssr: false }),
 };
 
 interface GlossaryVisualizerProps {

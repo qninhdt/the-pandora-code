@@ -21,6 +21,7 @@ export const GLOSSARY_VISUALIZATION_IDS = [
   "atmospheric-disequilibrium",
   "half-life",
   "quantum-locking",
+  "hadley-cell",
 ] as const;
 
 export type GlossaryVisualizationId = (typeof GLOSSARY_VISUALIZATION_IDS)[number];

@@ -9,6 +9,7 @@ import TidalLocking from "@/components/glossary/interactive/tidal-locking";
 import AtmosphericDisequilibrium from "@/components/glossary/interactive/atmospheric-disequilibrium";
 import HalfLife from "@/components/glossary/interactive/half-life";
 import QuantumLocking from "@/components/glossary/interactive/quantum-locking";
+import HadleyCell from "@/components/glossary/interactive/hadley-cell";
 import Cladogram from "@/components/glossary/interactive/cladogram";
 import CountercurrentExchange from "@/components/glossary/interactive/countercurrent-exchange";
 import DirectImaging from "@/components/glossary/interactive/direct-imaging";
@@ -154,6 +155,13 @@ describe("Glossary Components Direct Mount", () => {
     renderWithIntl(<QuantumLocking locale="en" />);
     expect(
       screen.getAllByText("Superconductor cool-down")[0],
+    ).toBeInTheDocument();
+  });
+
+  it("renders hadley-cell circulation", () => {
+    renderWithIntl(<HadleyCell locale="en" />);
+    expect(
+      screen.getAllByText("Atmospheric circulation")[0],
     ).toBeInTheDocument();
   });
 
