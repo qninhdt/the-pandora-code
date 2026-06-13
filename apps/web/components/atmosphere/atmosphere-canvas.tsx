@@ -22,7 +22,7 @@ export function AtmosphereCanvas({ profile, weaker, paused }: AtmosphereCanvasPr
 
   return (
     <Canvas
-      frameloop={paused ? "never" : "always"}
+      frameloop={paused ? "never" : "demand"}
       dpr={DPR_RANGE}
       gl={{ antialias: false, powerPreference: "low-power", alpha: true }}
       camera={{ position: [0, 0, 6], fov: 60 }}

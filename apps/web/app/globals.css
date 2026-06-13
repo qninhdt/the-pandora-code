@@ -85,6 +85,13 @@
 
 html {
   color-scheme: dark;
+}
+
+/* Only opt in to smooth scrolling for specific containers that need it
+   (e.g., anchor-link navigation). Putting it on `html` globally fights
+   native inertial / momentum scrolling and causes visible jank, especially
+   on mobile. */
+.scroll-smooth {
   scroll-behavior: smooth;
 }
 
@@ -95,6 +102,9 @@ html {
   inset: 0;
   z-index: -1;
   pointer-events: none;
+  /* GPU layer promotion: the fixed full-viewport canvas/fallback should
+     composite on the GPU, not be re-rasterized during scroll. */
+  will-change: transform;
 }
 
 /* Drifting motes for the 2D fallback - tiled radial dots crawling slowly. */
@@ -116,7 +126,7 @@ html {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
+  .scroll-smooth {
     scroll-behavior: auto;
   }
   .atmosphere-motes {
@@ -140,6 +150,9 @@ body::before {
   inset: 0;
   z-index: -1;
   pointer-events: none;
+  /* Promote to its own compositor layer so the fixed gradient backdrop
+     doesn't cause main-thread repaints during scroll. */
+  will-change: transform;
   background: radial-gradient(
       60rem 60rem at 12% -8%,
       color-mix(in oklab, var(--cyan) 12%, transparent),
