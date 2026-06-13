@@ -22,6 +22,7 @@ const GLOSSARY_VISUALIZATIONS: Record<
   bioluminescence: dynamic(() => import("./bioluminescence"), { ssr: false }),
   cladogram: dynamic(() => import("./cladogram"), { ssr: false }),
   allometry: dynamic(() => import("./allometry"), { ssr: false }),
+  "lotka-volterra-equations": dynamic(() => import("./lotka-volterra-equations"), { ssr: false }),
 };
 
 interface GlossaryVisualizerProps {

@@ -463,6 +463,13 @@
       "understory": "Understory",
       "canopy": "Canopy",
       "emergent": "Emergent"
+    },
+    "lotkaVolterra": {
+      "title": "Predator-Prey Population dynamics",
+      "prey": "Hexapede (Prey)",
+      "predator": "Viperwolf (Predator)",
+      "carryingCapacity": "Carrying capacity (K)",
+      "hint": "Adjust birth, predation, and death rates. Enable Prey-switching to stabilize oscillations, or introduce a Carrying Capacity (K) to test the Paradox of Enrichment."
     }
   }
 }

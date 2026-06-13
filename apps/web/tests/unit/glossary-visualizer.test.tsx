@@ -1,6 +1,7 @@
 import Allometry from "@/components/glossary/interactive/allometry";
 import AlphaCentauri from "@/components/glossary/interactive/alpha-centauri";
 import Bioluminescence from "@/components/glossary/interactive/bioluminescence";
+import LotkaVolterra from "@/components/glossary/interactive/lotka-volterra-equations";
 import Cladogram from "@/components/glossary/interactive/cladogram";
 import CountercurrentExchange from "@/components/glossary/interactive/countercurrent-exchange";
 import DirectImaging from "@/components/glossary/interactive/direct-imaging";
@@ -90,6 +91,13 @@ describe("Glossary Components Direct Mount", () => {
     expect(
       screen.getAllByText("Bone Stress & Allometry")[0] ||
         screen.getAllByText("Bone Stress & Allometry")[0],
+    ).toBeInTheDocument();
+  });
+
+  it("renders lotka-volterra dynamics", () => {
+    renderWithIntl(<LotkaVolterra locale="en" />);
+    expect(
+      screen.getAllByText("Predator-Prey Population dynamics")[0],
     ).toBeInTheDocument();
   });
 

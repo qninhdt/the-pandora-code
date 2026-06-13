@@ -511,6 +511,13 @@
       "understory": "Tầng dưới tán",
       "canopy": "Vòm lá",
       "emergent": "Vượt tán"
+    },
+    "lotkaVolterra": {
+      "title": "Động lực học quần thể con mồi - kẻ săn mồi",
+      "prey": "Hexapede (Con mồi)",
+      "predator": "Viperwolf (Kẻ săn mồi)",
+      "carryingCapacity": "Sức chứa tối đa (K)",
+      "hint": "Điều chỉnh tỉ lệ sinh, tỉ lệ săn bắt, và tỉ lệ chết. Bật Chuyển đổi con mồi để ổn định dao động, hoặc thêm Sức chứa tối đa (K) để thử nghiệm Nghịch lý làm giàu."
     }
   }
 }

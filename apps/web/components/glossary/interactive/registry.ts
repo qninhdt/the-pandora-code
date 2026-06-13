@@ -13,6 +13,7 @@ export const GLOSSARY_VISUALIZATION_IDS = [
   "bioluminescence",
   "cladogram",
   "allometry",
+  "lotka-volterra-equations",
 ] as const;
 
 export type GlossaryVisualizationId = (typeof GLOSSARY_VISUALIZATION_IDS)[number];
