@@ -107,10 +107,10 @@ Bạn BẮT BUỘC phải tuân thủ đúng trình tự 5 bước dưới đây
 - Sau khi xong Bước 1 cho toàn bộ bài, tiến hành viết nháp tất cả các section. Lưu vào `2-draft.mdx` theo `i18n/templates/2-draft.template.mdx`.
 
 **BƯỚC 3: Subagent Đánh Giá Khách Quan (Hàng loạt)**
-- Sau khi xong Bước 2 cho toàn bộ bài, tiến hành gọi Subagent (generalist agent) đánh giá cho từng section.
-- **Chuẩn bị prompt:** Đọc `i18n/templates/subagent_evaluator.prompt.md`, thay thế các placeholder bằng dữ liệu thực tế.
-- Lưu kết quả đánh giá lỗi vào `3-evaluation.mdx` cho TẤT CẢ các section.
-
+- **KỶ LUẬT SẮT:** Tuyệt đối NGHIÊM CẤM việc tự đánh giá bản nháp của chính mình. Bạn KHÔNG ĐƯỢC PHÉP tự tìm lỗi cho bài dịch mình vừa viết.
+- **BẮT BUỘC:** Với mỗi section, bạn PHẢI sử dụng tool `invoke_agent` (với `agent_name: "generalist"`) để đóng vai một biên tập viên độc lập và khắt khe.
+- **Chuẩn bị prompt:** Đọc `i18n/templates/subagent_evaluator.prompt.md`, thay thế các placeholder bằng dữ liệu thực tế của section đó.
+- Lưu kết quả đánh giá lỗi từ Subagent vào `3-evaluation.mdx` cho TẤT CẢ các section. Không được tự ý thêm bớt hay sửa đổi nhận xét của Subagent.
 **BƯỚC 4: Sửa Lỗi Toàn Diện (Hàng loạt)**
 - Sau khi có đầy đủ report lỗi của toàn bộ các section, tiến hành sửa lỗi.
 - Lưu quá trình sửa lỗi vào `4-correction.mdx` cho TẤT CẢ các section (Format: `- "<Câu sượng>" -> "<Câu mượt>"`).

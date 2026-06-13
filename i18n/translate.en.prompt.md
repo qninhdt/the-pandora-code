@@ -106,10 +106,10 @@ You MUST strictly follow the 5-step sequence below based on the **BATCH-FIRST** 
 - After Step 1 is finished for the entire document, draft all sections. Save to `2-draft.mdx` following `i18n/templates/2-draft.template.mdx`.
 
 **STEP 3: Unbiased Subagent Evaluation (Batch)**
-- After Step 2 is finished for the entire document, invoke the subagent (generalist agent) to evaluate each section.
-- **Prepare the Prompt:** Read `i18n/templates/subagent_evaluator.prompt.md`, replace placeholders with actual data.
-- Save the error reports to `3-evaluation.mdx` for ALL sections.
-
+- **IRONCLAD DISCIPLINE:** Strictly FORBIDDEN to evaluate your own draft. You are NOT ALLOWED to find errors in the translation you just wrote.
+- **MANDATORY:** For every section, you MUST use the `invoke_agent` tool (with `agent_name: "generalist"`) to act as an independent and hyper-critical editor.
+- **Prepare the Prompt:** Read `i18n/templates/subagent_evaluator.prompt.md`, replace placeholders with actual data for that specific section.
+- Save the error reports received from the Subagent to `3-evaluation.mdx` for ALL sections. Do not alter or omit any of the Subagent's findings.
 **STEP 4: Comprehensive Correction (Batch)**
 - After receiving error reports for all sections, proceed with corrections.
 - Save corrections to `4-correction.mdx` for ALL sections (Format: `- "<Awkward Sentence>" -> "<Natural Sentence>"`).
