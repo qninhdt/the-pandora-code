@@ -43,12 +43,14 @@ export async function generateMetadata({ params }: ChapterPageProps): Promise<Me
   if (!chapter) return {};
   // hreflang only for locales whose MDX actually exists.
   const available = locales.filter((l) => getChapter(slug, l) !== null);
+  const cover = getChapterCoverImage(slug);
   return buildPageMetadata({
     locale: loc,
     path: `/chapters/${slug}`,
     title: chapter.title,
     description: clampDescription(chapter.hook),
     availableLocales: available,
+    ogImage: cover,
   });
 }
 

@@ -119,6 +119,7 @@
     }
   },
   "footer": {
-    "copyright": "© {year} The Pandora Code"
+    "copyright": "© {year} The Pandora Code",
+    "disclaimer": "Hình ảnh được phác họa bởi AI. Những câu chuyện thuộc về Pandora, nhưng khoa học ở đây thuộc về Trái Đất."
   }
 }

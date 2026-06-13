@@ -26,9 +26,9 @@ classification:
   speculation_pct: 8
   real_science_pct: 49
 related_chapters:
-- six-limbs-and-the-bilateral-lattice
-- pandoran-tree-of-life
-- the-hunters-and-the-hunted
+  - six-limbs-and-the-bilateral-lattice
+  - pandoran-tree-of-life
+  - the-hunters-and-the-hunted
 glossary_terms:
 - convergent-evolution
 - analogous-structures

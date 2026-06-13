@@ -1,10 +1,24 @@
 import { CanonBadge } from "@/components/classification/canon-badge";
 import { ComponentShowcase } from "@/components/design/component-showcase";
+import { type Locale, isLocale } from "@/i18n/config";
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { MotionDemos } from "./motion-demos";
 
 interface DesignDebugProps {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: DesignDebugProps): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  return {
+    title: `Design system (${locale.toUpperCase()})`,
+    robots: {
+      index: false,
+      follow: false,
+    },
+  };
 }
 
 export default async function DesignDebug({ params }: DesignDebugProps) {

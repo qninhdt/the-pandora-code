@@ -119,6 +119,7 @@
     }
   },
   "footer": {
-    "copyright": "© {year} The Pandora Code"
+    "copyright": "© {year} The Pandora Code",
+    "disclaimer": "Images are AI-assisted. The stories belong to Pandora, but the science belongs to Earth."
   }
 }

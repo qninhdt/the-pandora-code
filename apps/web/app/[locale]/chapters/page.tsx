@@ -5,11 +5,25 @@ import { getChapterCoverImage } from "@/lib/content/loader/cover-image";
 import { getOutlineWithStatus } from "@/lib/content/outline";
 import type { ChapterMeta } from "@/lib/content/schemas/chapter-meta";
 import type { ClassificationKind } from "@/lib/content/schemas/shared";
+import { buildPageMetadata } from "@/lib/seo/page-metadata";
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
 interface ChaptersPageProps {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: ChaptersPageProps): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  const t = await getTranslations({ locale });
+  return buildPageMetadata({
+    locale: locale as Locale,
+    path: "/chapters",
+    title: t("page.chapters.title"),
+    description: t("page.chapters.subtitle"),
+  });
 }
 
 // Pick the dominant epistemic tier from the classification percentages, so each

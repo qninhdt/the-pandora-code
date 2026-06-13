@@ -67,7 +67,8 @@ export function ConfidenceDial({ caption, className }: ConfidenceDialProps) {
 
   const { key, range } = classify(p);
   const term = t(`terms.${key}`);
-  const tone = p >= 66 ? "--teal" : p > 33 ? "--amber" : "--magenta";
+  const toneName = p >= 66 ? "teal" : p > 33 ? "amber" : "magenta";
+  const toneVar = `--${toneName}`;
   const needle = gaugePoint(p, R - 14);
 
   return (
@@ -75,18 +76,18 @@ export function ConfidenceDial({ caption, className }: ConfidenceDialProps) {
       title={t("title")}
       hint={t("hint")}
       caption={caption}
-      tone={p >= 66 ? "teal" : p > 33 ? "amber" : "magenta"}
+      tone={toneName}
       className={className}
     >
       <svg
         viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
-        className="mx-auto block w-full max-w-md"
+        className="mx-auto block w-full max-w-md overflow-visible"
         role="img"
         aria-label={t("aria", { probability: t("probability"), p, term })}
       >
         <GlowDefs idBase={uid} tones={["teal", "amber", "magenta"]} />
         <defs>
-          <linearGradient id={`${uid}-g`} x1="0" x2="1" y1="0" y2="0">
+          <linearGradient id={`${uid}-g`} x1={CX - R} x2={CX + R} y1="0" y2="0" gradientUnits="userSpaceOnUse">
             <stop offset="0%" stopColor="var(--magenta)" />
             <stop offset="50%" stopColor="var(--amber)" />
             <stop offset="100%" stopColor="var(--teal)" />
@@ -106,7 +107,7 @@ export function ConfidenceDial({ caption, className }: ConfidenceDialProps) {
         {/* end + mid ticks */}
         {[0, 33, 66, 100].map((v) => {
           const inner = gaugePoint(v, R - 16);
-          const outer = gaugePoint(v, R + 4);
+          const outer = gaugePoint(v, R + 8); // Extends further out to be clearly visible
           return (
             <line
               key={v}
@@ -114,14 +115,14 @@ export function ConfidenceDial({ caption, className }: ConfidenceDialProps) {
               y1={inner.y}
               x2={outer.x}
               y2={outer.y}
-              stroke="var(--border-strong)"
-              strokeWidth={1.5}
+              stroke="var(--foreground)"
+              strokeWidth={2}
             />
           );
         })}
         <VizText
-          x={gaugePoint(0, R + 16).x}
-          y={gaugePoint(0, R + 16).y}
+          x={gaugePoint(0, R + 24).x}
+          y={gaugePoint(0, R + 24).y + 4}
           size="micro"
           anchor="middle"
           numeric
@@ -129,8 +130,8 @@ export function ConfidenceDial({ caption, className }: ConfidenceDialProps) {
           0
         </VizText>
         <VizText
-          x={gaugePoint(100, R + 16).x}
-          y={gaugePoint(100, R + 16).y}
+          x={gaugePoint(100, R + 24).x}
+          y={gaugePoint(100, R + 24).y + 4}
           size="micro"
           anchor="middle"
           numeric
@@ -139,33 +140,35 @@ export function ConfidenceDial({ caption, className }: ConfidenceDialProps) {
         </VizText>
 
         {/* needle */}
-        <line
-          x1={CX}
-          y1={CY}
-          x2={needle.x}
-          y2={needle.y}
-          stroke={`var(${tone})`}
-          strokeWidth={4}
-          strokeLinecap="round"
-          filter={glowUrl(uid, "bloom")}
-        />
+        <g filter={glowUrl(uid, "bloom")}>
+          <line x1={CX} y1={CY} x2={CX} y2={CY - 10} stroke="transparent" /> {/* SVG bounding-box strut */}
+          <line
+            x1={CX}
+            y1={CY}
+            x2={needle.x}
+            y2={needle.y}
+            stroke={`var(${toneVar})`}
+            strokeWidth={4}
+            strokeLinecap="round"
+          />
+        </g>
         {/* hub: outer ring + glowing core */}
         <circle
           cx={CX}
           cy={CY}
           r={9}
           fill="var(--surface)"
-          style={{ stroke: `var(${tone})` }}
+          style={{ stroke: `var(${toneVar})` }}
           strokeWidth={2}
         />
-        <circle cx={CX} cy={CY} r={4} fill={`var(${tone})`} filter={glowUrl(uid, "bloom")} />
+        <circle cx={CX} cy={CY} r={4} fill={`var(${toneVar})`} filter={glowUrl(uid, "bloom")} />
 
         {/* central readout */}
         <VizText
           x={CX}
           y={CY - 42}
           size="xlarge"
-          tone={tone}
+          tone={toneName}
           anchor="middle"
           numeric
           weight={800}
@@ -177,7 +180,7 @@ export function ConfidenceDial({ caption, className }: ConfidenceDialProps) {
 
       {/* term readout */}
       <div className="mt-1 text-center">
-        <p className="font-display text-xl font-800" style={{ color: `var(${tone})` }}>
+        <p className="font-display text-xl font-800" style={{ color: `var(${toneVar})` }}>
           {term}
         </p>
         <p className="font-sans text-xs text-subtle">
@@ -201,8 +204,8 @@ export function ConfidenceDial({ caption, className }: ConfidenceDialProps) {
           aria-label={t("sliderLabel")}
           className="viz-range w-full cursor-pointer rounded-full outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
           style={{
-            background: `linear-gradient(to right, var(${tone}) ${p}%, var(--border) ${p}%)`,
-            ["--viz-thumb" as string]: `var(${tone})`,
+            background: `linear-gradient(to right, var(${toneVar}) ${p}%, var(--border) ${p}%)`,
+            ["--viz-thumb" as string]: `var(${toneVar})`,
           }}
         />
       </div>

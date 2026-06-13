@@ -255,6 +255,10 @@ Whether it's fixing a typo in a glossary term, suggesting a new chapter topic, i
 - Scientific content is sourced from peer-reviewed literature, textbooks, and publicly available research — every claim is cited.
 - Illustrations are original AI-assisted painterly compositions following a strict [style bible](content/art-direction/style-bible.md).
 
+## Disclaimer
+
+**Images are AI-assisted. The stories belong to Pandora, but the science belongs to Earth.**
+
 ---
 
 ## License

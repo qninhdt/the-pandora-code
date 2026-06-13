@@ -20,7 +20,7 @@ import { DiagramFigure } from "@/components/content/diagram-figure";
 import { EclipseDayClock } from "@/components/content/eclipse-day-clock";
 import { Figure } from "@/components/content/figure";
 import { FigureGrid } from "@/components/content/figure-grid";
-import { FlightPowerCeiling } from "@/components/content/flight-power-ceiling";
+
 import { FroudeGaitDial } from "@/components/content/froude-gait-dial";
 import { GlowBiogeographyToggle } from "@/components/content/glow-biogeography-toggle";
 import { GlowOriginsTree } from "@/components/content/glow-origins-tree";
@@ -36,9 +36,7 @@ import { PhotophoreIntensity } from "@/components/content/photophore-intensity";
 import { Quote } from "@/components/content/quote";
 import { ReplayTheTape } from "@/components/content/replay-the-tape";
 import { ScrollSequence } from "@/components/content/scroll-sequence";
-import { SquareCubeScaler } from "@/components/content/square-cube-scaler";
 import { SuperconductorCooldown } from "@/components/content/superconductor-cooldown";
-import { TierLegend } from "@/components/content/tier-legend";
 import { Timeline } from "@/components/content/timeline";
 import { TimelineJourney } from "@/components/content/timeline-journey";
 import { TwentySecondsTimeline } from "@/components/content/twenty-seconds-timeline";
@@ -348,13 +346,6 @@ export function ComponentShowcase() {
         />
       </Block>
 
-      <Block label="SquareCubeScaler (area ∝ k², volume ∝ k³)">
-        <SquareCubeScaler />
-      </Block>
-
-      <Block label="FlightPowerCeiling (power supply vs demand)">
-        <FlightPowerCeiling />
-      </Block>
 
       <Block label="FroudeGaitDial (gait regime gauge)">
         <FroudeGaitDial />
@@ -420,37 +411,6 @@ export function ComponentShowcase() {
         <IsochronPlot />
       </Block>
 
-      <Block label="TierLegend (four epistemic tiers)">
-        <TierLegend
-          title="Bốn tầng nhận thức"
-          tiers={[
-            {
-              kind: "canon",
-              gloss: "Điều phim/canon nêu rõ.",
-              realWorld: "Văn bản gốc",
-              example: "Pandora là mặt trăng của Polyphemus.",
-            },
-            {
-              kind: "inference",
-              gloss: "Suy ra hợp lý từ canon.",
-              realWorld: "Suy luận khoa học",
-              example: "Khí quyển dày hơn Trái Đất.",
-            },
-            {
-              kind: "speculation",
-              gloss: "Phỏng đoán có cơ sở, ngoài canon.",
-              realWorld: "Giả thuyết",
-              example: "Cơ chế siêu dẫn của unobtanium.",
-            },
-            {
-              kind: "real_science",
-              gloss: "Khoa học Trái Đất có thật.",
-              realWorld: "Tài liệu khoa học",
-              example: "Hiệu ứng Meissner trong vật siêu dẫn.",
-            },
-          ]}
-        />
-      </Block>
 
       <Block label="TimelineJourney (cinematic vertical journey)">
         <TimelineJourney

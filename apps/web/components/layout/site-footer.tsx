@@ -6,11 +6,12 @@ interface SiteFooterProps {
   locale: Locale;
   tagline: string;
   copyright: string;
+  disclaimer: string;
 }
 
 // A quiet horizon at the foot of every page - a thin bioluminescent rule, the
 // Bardabez byline, the in-world tagline, and the locale.
-export function SiteFooter({ locale, tagline, copyright }: SiteFooterProps) {
+export function SiteFooter({ locale, tagline, copyright, disclaimer }: SiteFooterProps) {
   const base = `/${locale}`;
   return (
     <footer className="relative mt-24 border-t border-border">
@@ -37,6 +38,9 @@ export function SiteFooter({ locale, tagline, copyright }: SiteFooterProps) {
             <span className="font-display text-sm font-600 text-foreground">Bardabez</span>
           </div>
           <p className="mt-3 font-serif text-sm leading-relaxed text-muted">{tagline}</p>
+          <p className="mt-4 max-w-sm font-sans text-xs italic leading-relaxed text-subtle/70">
+            {disclaimer}
+          </p>
         </div>
         <div className="flex flex-col gap-2 font-sans text-xs text-subtle md:items-end">
           <div className="flex gap-4">

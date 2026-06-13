@@ -27,8 +27,9 @@ classification:
   speculation_pct: 8
   real_science_pct: 54
 related_chapters:
-- where-is-pandora
-- floating-mountains-and-the-superconductor
+  - where-is-pandora
+  - floating-mountains-and-the-superconductor
+  - time-on-pandora
 glossary_terms:
 - deep-time
 - geochronology

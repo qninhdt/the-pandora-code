@@ -1,22 +1,46 @@
 {
   "viz": {
-    "treeHeightCeiling": {
+    "hydraulicLimit": {
       "title": "How tall can a tree get?",
+      "subtitle": "Drag the height up to see how much the water column stretches",
       "envLabel": "Which world",
       "earth": "Earth",
       "pandora": "Pandora",
       "heightLabel": "Tree height",
       "heightAxis": "Height →",
-      "vigourAxis": "Top-leaf vigour",
+      "turgorAxis": "Top-leaf vigour",
       "ceiling": "ceiling",
-      "redwood": "Tallest redwood (116 m)",
+      "hyperion": "Tallest redwood (116 m)",
       "hometree": "Hometree (~300 m)",
       "turgorLabel": "Top-leaf vigour",
       "turgorNote": "How well the topmost leaves can still fill with water and grow.",
-      "failNote": "Past the ceiling the water column snaps — the top can no longer drink.",
+      "snapNote": "Past the ceiling the water column snaps — the top can no longer drink.",
+      "dead": "0%",
+      "snap": "Snap",
+      "worldLabel": "Select world",
+      "gravityLabel": "Gravity",
+      "gravityNote": "Lightens the water column",
+      "atmoLabel": "Atmosphere (CO₂ & density)",
+      "atmoNote": "Cuts transpiration loss",
       "verdictOk": "The crown is still paying its way: water reaches the top under survivable tension.",
       "verdictOver": "Beyond what the plumbing allows here. On Earth this is impossible; on Pandora, lower gravity and a CO2-rich, humid atmosphere lift the ceiling — straining toward Hometree's scale, not sailing past it.",
       "hint": "A tree has no pump: it drinks by pulling an unbroken thread of water up its wood, powered only by evaporation from its leaves. The taller it grows, the harder the top must pull, until the leaf cells can no longer fill — Koch & Sillett (2004) put Earth's ceiling near 130 m. Switch to Pandora and watch lower gravity and dense, carbon-rich air move that ceiling."
+    },
+
+    "occamsRazor": {
+      "title": "Occam's Razor",
+      "subtitle": "Weighing competing explanations",
+      "hint": "Adjust the number of unproven assumptions. The razor shaves away the theory that demands too many miracles.",
+      "theoryA": "Theory A",
+      "theoryB": "Theory B",
+      "assumptions": "assumptions",
+      "verdict": "Verdict",
+      "verdictA": "Theory A is more robust",
+      "verdictB": "Theory B is more robust",
+      "verdictTie": "Equally plausible",
+      "noteA": "Relies on fewer leaps of faith.",
+      "noteB": "Relies on fewer leaps of faith.",
+      "noteTie": "Cannot distinguish based on simplicity alone."
     },
     "shannonChannel": {
       "title": "Shannon's channel, made playable",
@@ -58,18 +82,29 @@
       "aria": "The senses pour in eleven million bits per second; only {conscious} reaches awareness — a {compression}-fold compression.",
       "hint": "Your senses pour ~11 Mb/s into the nervous system, yet the stream that reaches awareness — the self that thinks and remembers — runs at a mere handful of bits per second. Slide that rate and watch a whole lifetime of selfhood collapse to mere tens of gigabits: small enough, at last, to send across the bond in a single night."
     },
-    "squareCube": {
-      "title": "The square-cube law",
-      "sizeLabel": "Linear size",
-      "multiple": "{n}×",
-      "length": "Length",
-      "area": "Surface area / bone cross-section",
-      "volume": "Volume / mass",
-      "stress": "Stress on bone",
-      "areaNote": "scales as the square (k²)",
-      "volumeNote": "scales as the cube (k³)",
-      "stressNote": "mass over cross-section = k",
-      "hint": "Double an animal's length and its mass goes up eightfold, but the bone cross-section that carries it goes up only fourfold. The stress on every bone therefore doubles. That is why a body cannot simply be scaled up - its shape is forced to change."
+    "scaleUp": {
+      "title": "The square-cube scaling trap",
+      "subtitle": "Scale an animal up and watch mass outrun wing area",
+      "sizeLabel": "Scale factor (k)",
+      "multiple": "{n}× base",
+      "wing": "Wing Area",
+      "mass": "Body Mass",
+      "loading": "Wing Loading",
+      "stallLabel": "Stall speed",
+      "stallNote": {
+        "easy": "Slow, agile flight",
+        "hard": "Needs a long runway",
+        "desperate": "Must drop off a cliff",
+        "grounded": "Cannot generate enough lift"
+      },
+      "status": {
+        "easy": "Agile flier",
+        "hard": "Heavy flier",
+        "desperate": "Marginal",
+        "grounded": "Grounded"
+      },
+      "wlUnit": "kg/m²",
+      "hint": "Double the length, and you get 4× the wing area to lift 8× the mass. The 'wing loading' (mass per unit wing area) climbs relentlessly, forcing the animal to fly faster and faster just to stay in the air. Eventually, the stall speed exceeds what muscles can deliver."
     },
     "froudeDial": {
       "title": "Froude gait dial",
@@ -84,48 +119,77 @@
       "range": "0–{max} km/h",
       "hint": "At the same leg length, Pandora's lower gravity pulls every gait transition down to a lower speed. The pa'li breaks into its efficient spring-loaded gaits sooner - and each footfall lands softer for it."
     },
-    "flightCeiling": {
-      "title": "The wall every flyer hits",
+    "flightLab": {
+      "title": "The wall for fliers",
+      "subtitle": "Where power demanded crosses power supplied",
+      "hint": "The teal curve is what muscles can supply. The amber curve is what flight demands. They must cross, setting a maximum mass. Drop Pandora's gravity and thicken its air, and watch the demand curve slide down — pushing the crossing point to a much heavier animal.",
       "earth": "Earth",
       "pandora": "Pandora",
-      "supply": "Power muscles supply",
-      "demand": "Power flight demands",
+      "custom": "Custom",
+      "mode": "Select planet",
+      "massAxis": "Body mass →",
       "ceiling": "Flight ceiling",
-      "massAxis": "Mass →",
-      "powerAxis": "Power →",
-      "quetz": "Quetzalcoatlus",
-      "ikran": "Ikran + rider",
-      "hint": "The demand curve climbs steeper than the supply curve, so they always cross. The crossing is the heaviest a flyer can still flap. Pandora's lower gravity and denser air pull the demand curve down - sliding the crossing rightward, to a mass Earth would pin to the ground."
+      "gLabel": "Gravity",
+      "rhoLabel": "Air density",
+      "ceilingLabel": "Maximum flying mass"
     },
-    "wingspanLadder": {
-      "title": "A ladder of fliers",
-      "subtitle": "Wingspan, drawn to one scale",
-      "ceiling": "Earth's ceiling",
-      "metres": "{n} m",
-      "axis": "Wingspan (m) →",
-      "earth": "Earth",
-      "pandora": "Pandora",
+    "flierShowdown": {
+      "title": "The giants, to scale",
+      "subtitle": "Comparing Earth's largest to Pandora's everyday fliers",
+      "hint": "Quetzalcoatlus is the absolute largest creature Earth ever put in the air. The mountain banshee matches it. The toruk doubles it.",
+      "earthCeiling": "Earth's maximum (~11m)",
+      "spanAxis": "Wingspan (m) →",
+      "span": "Wingspan",
+      "mass": "Est. Mass",
+      "era": "Era",
+      "launch": "Launch mode",
       "pelagornis": "Pelagornis",
       "argentavis": "Argentavis",
       "quetzalcoatlus": "Quetzalcoatlus",
-      "ikran": "Ikran",
-      "toruk": "Toruk",
-      "hint": "Earth's largest fliers top out near 11 m - Quetzalcoatlus marks the wall, and everything to the right of the dashed line is airspace Earth's physics forbids. The rideable ikran sits right on that wall; the toruk leaves the chart, at roughly double the largest creature Earth ever flew."
+      "ikran": "Mountain Banshee",
+      "toruk": "Great Leonopteryx",
+      "eras": {
+        "25Mya": "25 Mya",
+        "6Mya": "6 Mya",
+        "68Mya": "68 Mya",
+        "Contemporary": "Contemporary"
+      },
+      "launches": {
+        "bipedal": "Bipedal run / drop",
+        "quadrupedal": "Quadrupedal vault"
+      }
     },
-    "reynoldsRegime": {
-      "title": "What kind of air?",
-      "subtitle": "Re = ρ·v·L / μ",
+    "airRegime": {
+      "title": "The texture of the air",
+      "subtitle": "Reynolds number and flow regimes",
+      "hint": "Air is a thick syrup to a bug, and a clean stream to an eagle. Denser air on Pandora pushes fliers into a cleaner, more efficient aerodynamic regime.",
+      "mode": "Select world",
       "earth": "Earth",
       "pandora": "Pandora",
-      "sizeLabel": "Wing chord",
-      "reLabel": "Reynolds number",
-      "axis": "Reynolds number →",
+      "sizeLabel": "Chord length",
       "metres": "{n} m",
       "millimetres": "{n} mm",
-      "viscousLabel": "Syrup",
+      "reLabel": "Reynolds No.",
+      "vortex": "Vortex detached",
+      "viscousLabel": "Viscous",
       "transitionalLabel": "Transitional",
-      "inertialLabel": "Clean flow",
-      "hint": "The Reynolds number measures whether the air behaves like sticky syrup (low Re - the insect's rowing world) or a thin clean stream a sleek wing can slice (high Re - birds, pterosaurs, banshees). It rises with size, speed, and air density - so Pandora's denser air nudges a flier of any given size up into the friendlier, cleaner regime."
+      "inertialLabel": "Inertial",
+      "viscousDesc": "Sticky, turbulent flow. High drag, stalling.",
+      "transitionalDesc": "Flow begins to attach, but unsteady.",
+      "inertialDesc": "Clean, attached flow. Efficient lift."
+    },
+    "torukFlight": {
+      "title": "Toruk Flight Synthesizer",
+      "subtitle": "Turn on Pandora's three physical 'cheats' to get Toruk airborne",
+      "hint": "Activate the necessary conditions to make Toruk's flight viable.",
+      "switch1": "Dense Atmosphere (1.2x Earth)",
+      "switch2": "Low Gravity (0.8x Earth)",
+      "switch3": "Quadrupedal Vault Launch",
+      "status": "Flight Viability",
+      "fail": "Grounded",
+      "success": "Airborne",
+      "failDesc": "Standard Earth physics. Toruk is far too heavy to fly or launch.",
+      "successDesc": "All three Pandoran physics cheats combined. The lift is higher, the weight is lower, and the launch muscles are maximized. Toruk flies."
     },
     "superconductor": {
       "title": "Superconductor cool-down",

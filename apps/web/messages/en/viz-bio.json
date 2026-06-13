@@ -172,6 +172,34 @@
         "note": "Type III: the S-curve, nearly flat near the origin before it rises and levels off. That flat stretch is a refuge — when prey get rare, the pressure eases instead of tightening, letting a crashing population recover. The strongest behavioural stabiliser there is."
       }
     },
+    "forestDive": {
+      "title": "Vertical Forest Dive",
+      "subtitle": "Drag the elevator to sink through the layers and watch the climate change",
+      "hint": "Drag the slider to dive from the canopy to the forest floor. Watch how light decays exponentially when blocked by the canopy, humidity rises, wind dies down, and temperature swings are buffered.",
+      "depthLabel": "Depth",
+      "heightLabel": "Height",
+      "lightLabel": "Light",
+      "lightNote": "% of top",
+      "windLabel": "Wind",
+      "windNote": "% of top",
+      "humidityLabel": "Humidity",
+      "humidityNote": "Relative",
+      "tempLabel": "Temp swing",
+      "tempNote": "Daily range",
+      "lightCurve": "Light curve",
+      "strata": {
+        "0": "Emergent Layer",
+        "1": "Canopy",
+        "2": "Understory",
+        "3": "Forest Floor"
+      },
+      "fauna": {
+        "0": "Banshees roost on the peaks, catching wind and blistering sun.",
+        "1": "Prolemuris swing through the dense canopy.",
+        "2": "Na'vi hunt in the cool, shaded understory.",
+        "3": "Hexapedes graze in the dim, still light of the forest floor."
+      }
+    },
     "keystoneCascade": {
       "title": "Pull the keystone",
       "subtitle": "Draw out the apex wedge and watch the arch hold, then let go",
@@ -423,6 +451,18 @@
       "lightAxis": "Light surviving →",
       "prompt": "Click a layer to see its light budget, climate, and the Pandoran life that lives at that height.",
       "hint": "A forest is not one habitat but a stack of them, sorted by height. The amber curve is the surviving light, falling off exponentially through the leaves (Beer-Lambert) — by the floor of a closed forest as little as 1–2% of the canopy-top sun is left. Each floor is a different world, and the animals sort themselves accordingly."
+    },
+    "strataDiversity": {
+      "title": "Biodiversity Multiplier",
+      "subtitle": "Grow the tree taller to see how vertical strata multiply niches",
+      "hint": "Use the slider to grow the tree. As new layers emerge, new ecological niches open up without competing for space.",
+      "treeHeight": "Tree Height",
+      "niches": "Ecological Niches",
+      "strataNames": ["Forest Floor", "Understory", "Canopy", "Emergent Layer"],
+      "floor": "Floor",
+      "understory": "Understory",
+      "canopy": "Canopy",
+      "emergent": "Emergent"
     }
   }
 }

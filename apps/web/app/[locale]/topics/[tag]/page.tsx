@@ -1,12 +1,26 @@
 import { CanonBadge } from "@/components/classification/canon-badge";
 import { type Locale, isLocale } from "@/i18n/config";
 import { getChapter, listChapterSlugs } from "@/lib/content/loader/chapter-loader";
-import { setRequestLocale } from "next-intl/server";
+import { buildPageMetadata } from "@/lib/seo/page-metadata";
+import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 interface TopicPageProps {
   params: Promise<{ locale: string; tag: string }>;
+}
+
+export async function generateMetadata({ params }: TopicPageProps): Promise<Metadata> {
+  const { locale, tag } = await params;
+  if (!isLocale(locale)) return {};
+  const t = await getTranslations({ locale });
+  return buildPageMetadata({
+    locale: locale as Locale,
+    path: `/topics/${tag}`,
+    title: t("page.topics.title", { tag }),
+    description: t("page.topics.subtitle"),
+  });
 }
 
 function collectTags(): string[] {

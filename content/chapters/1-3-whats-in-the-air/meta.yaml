@@ -26,9 +26,9 @@ classification:
   speculation_pct: 6
   real_science_pct: 58
 related_chapters:
-- where-is-pandora
-- the-breathing-fans
-- a-real-living-planet
+  - where-is-pandora
+  - the-breathing-fans
+  - a-real-living-planet
 glossary_terms:
 - partial-pressure
 - hypercapnia

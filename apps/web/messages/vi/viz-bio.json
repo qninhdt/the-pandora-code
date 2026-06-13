@@ -414,15 +414,103 @@
       "settledNote": "Chuỗi dây chuyền đã lắng. Một mầm bệnh chỉ nhắm vào một lớp đã kéo cả hai cùng đổ — dấu hiệu của các mạng lưới phụ thuộc lẫn nhau (Buldyrev và đồng sự, 2010).",
       "collapsedNote": "Cả hai mạng lưới đều tiêu vong. Căn cứ theo toán học, cách hiệu quả nhất để bức tử một khu rừng có lẽ là chẳng cần chạm vào khu rừng — chỉ cần những sinh vật mà nó không thể sống thiếu."
     },
-    "forestStrata": {
-      "title": "Một khu rừng, bốn thế giới xếp chồng",
-      "climateLabel": "Khí hậu của tầng này",
-      "tenantLabel": "Ai sống ở đây",
-      "lightLabel": "Ánh sáng chạm tới tầng này",
-      "lightNote": "phần nắng đỉnh tán còn sống sót",
-      "lightAxis": "Ánh sáng còn lại →",
-      "prompt": "Bấm vào một tầng để xem lượng ánh sáng, khí hậu và sự sống Pandora cư ngụ ở độ cao đó.",
-      "hint": "Một khu rừng không phải một môi trường sống duy nhất mà là cả một chồng môi trường, xếp theo chiều cao. Đường cong màu hổ phách là lượng ánh sáng còn lại, tụt giảm theo hàm mũ khi xuyên qua các tầng lá (Beer-Lambert) — xuống tới nền của một khu rừng khép tán, chỉ còn 1–2% lượng nắng ở đỉnh tán. Mỗi tầng là một thế giới riêng, và muôn loài tự phân mình theo đó."
+    "forestDive": {
+      "title": "Chuyến lặn dọc khu rừng",
+      "subtitle": "Kéo thang máy để chìm qua các tầng và xem khí hậu đổi thay",
+      "hint": "Kéo thanh trượt để lặn từ vòm lá xuống thảm rừng. Chú ý ánh sáng lịm đi theo hàm mũ khi bị vòm lá chặn lại, độ ẩm tăng, gió lặng dần, và nhiệt độ được xoa dịu.",
+      "depthLabel": "Độ sâu",
+      "heightLabel": "Độ cao",
+      "lightLabel": "Ánh sáng",
+      "lightNote": "% so với đỉnh",
+      "windLabel": "Gió",
+      "windNote": "% so với đỉnh",
+      "humidityLabel": "Độ ẩm",
+      "humidityNote": "Tương đối",
+      "tempLabel": "Biến thiên nhiệt",
+      "tempNote": "Biên độ ngày đêm",
+      "lightCurve": "Đường cong ánh sáng",
+      "strata": {
+        "0": "Tầng vượt tán (Emergent)",
+        "1": "Vòm lá (Canopy)",
+        "2": "Tầng dưới tán (Understory)",
+        "3": "Thảm rừng (Floor)"
+      },
+      "fauna": {
+        "0": "Banshee neo mình trên ngọn đón gió và ánh mặt trời rát bỏng.",
+        "1": "Prolemuris chuyền cành trong vùng vòm lá rậm rạp.",
+        "2": "Người Na'vi leo trèo săn bắn trong không gian mát mẻ dưới tán.",
+        "3": "Hexapede gặm cỏ trong ánh sáng mờ ảo, yên ả của thảm rừng."
+      }
+    },
+    "forestEvidence": {
+      "title": "Lập bản đồ bằng chứng",
+      "subtitle": "Phần nào là định luật đã được chứng minh, phần nào là suy luận",
+      "hint": "Bấm vào một tuyên bố để xem cơ sở của nó và liệu nó đến từ khoa học Trái Đất, truyền thuyết (canon) hay chỉ là phỏng đoán.",
+      "trustAxis": "Trục độ tin cậy →",
+      "tierScience": "Khoa học Trái Đất thực thụ",
+      "tierCanon": "Xuất hiện trong truyền thuyết",
+      "tierInference": "Suy luận",
+      "tierSpeculation": "Phỏng đoán",
+      "claims": {
+        "stratification": {
+          "short": "Phân tầng rừng",
+          "label": "Phân tầng rừng và chia sẻ ổ sinh thái",
+          "evidence": "Sinh thái học cơ bản. Hầu như mọi khu rừng khép kín đều phân chia theo chiều dọc theo ánh sáng; trục chiều cao là cách đáng tin cậy nhất để phân chia môi trường sống."
+        },
+        "beerLambert": {
+          "short": "Suy giảm ánh sáng",
+          "label": "Suy giảm ánh sáng theo hàm mũ xuyên qua vòm lá",
+          "evidence": "Định luật Beer-Lambert. Thảm rừng nhiệt đới thật nhận 1-2% ánh sáng vòm."
+        },
+        "warblers": {
+          "short": "Khu vực chim chích",
+          "label": "Sự phân chia khu vực chim chích của MacArthur",
+          "evidence": "Nghiên cứu thực địa nền tảng năm 1958 chứng minh sự phân chia ổ sinh thái theo chiều dọc."
+        },
+        "hydraulicCeiling": {
+          "short": "Trần 130m",
+          "label": "Giới hạn chiều cao cây ~130m trên Trái Đất",
+          "evidence": "Đo đạc cây redwood của Koch & Sillett (2004); thuyết gắn kết-căng thẳng."
+        },
+        "hometreeShown": {
+          "short": "Hometree",
+          "label": "Kiến trúc khổng lồ của Hometree",
+          "evidence": "Truyền thuyết phim ảnh. Cấu trúc này tồn tại và người Na'vi sống bên trong nó."
+        },
+        "verticalSorting": {
+          "short": "Phân chia sự sống",
+          "label": "Kẻ bay ở trên ngọn, kẻ đi bộ dưới thảm",
+          "evidence": "Thể hiện trực tiếp trên màn ảnh; ikran đậu trên cao, viperwolf săn mồi dưới thấp."
+        },
+        "lowGravityLift": {
+          "short": "Trọng lực nâng trần",
+          "label": "0.8g của Pandora cho phép cây cao hơn",
+          "evidence": "Áp dụng trực tiếp các phương trình áp suất thủy tĩnh vào trọng lực trong truyền thuyết."
+        },
+        "co2Atmosphere": {
+          "short": "CO2 giữ nước",
+          "label": "CO2 cao cắt giảm nhu cầu thoát hơi nước",
+          "evidence": "Sinh lý học thực vật áp dụng vào khí quyển truyền thuyết: nhiều carbon mỗi lần hít thở nghĩa là ít nước mất đi, giảm sức căng."
+        },
+        "threeHundredM": {
+          "short": "Hometree 300m",
+          "label": "Hometree cao chính xác hơn 300 mét",
+          "evidence": "Các con số trong truyền thuyết mâu thuẫn (150m so với 300m+). Một cột nước 300m làm căng thẳng ngay cả nền vật lý nới lỏng của Pandora và có thể đòi hỏi một thiết kế hệ thống dẫn nước bên trong hoàn toàn khác."
+        }
+      },
+      "prompt": "Bấm vào một tuyên bố để xem cơ sở của nó."
+    },
+    "strataDiversity": {
+      "title": "Bộ máy nhân bản sinh học",
+      "subtitle": "Kéo cây cao lên để xem cách phân tầng nhân cấp ổ sinh thái",
+      "hint": "Sử dụng thanh trượt để kéo cây mọc cao lên. Khi các tầng mới xuất hiện, những ổ sinh thái mới mở ra mà không hề giẫm chân lên nhau tranh giành không gian.",
+      "treeHeight": "Độ cao cây",
+      "niches": "Ổ sinh thái",
+      "strataNames": ["Thảm rừng", "Tầng dưới tán", "Vòm lá", "Tầng vượt tán"],
+      "floor": "Thảm rừng",
+      "understory": "Tầng dưới tán",
+      "canopy": "Vòm lá",
+      "emergent": "Vượt tán"
     }
   }
 }

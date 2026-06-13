@@ -26,9 +26,9 @@ classification:
   speculation_pct: 4
   real_science_pct: 63
 related_chapters:
-- floating-mountains-and-the-superconductor
-- pandoras-open-file
-- what-pandora-helps-us-see
+  - where-is-pandora
+  - floating-mountains-and-the-superconductor
+  - what-is-pandoran-life-made-of
 glossary_terms:
 - falsifiability
 - demarcation-problem

@@ -6,10 +6,10 @@ import type { CSSProperties, ReactNode } from "react";
 // `text-[0.6rem]` values that were scattered, inconsistent, and too small on
 // mobile across every figure. One ladder, used everywhere.
 const SCALE = {
-  micro: 11, // ticks, dense annotations
-  small: 13, // axis labels, in-figure captions
-  base: 16, // primary values / headings inside SVG
-  xlarge: 22, // hero readouts (e.g. the confidence percentage)
+  micro: 7.5, // ticks, dense annotations
+  small: 8.5, // axis labels, in-figure captions
+  base: 10, // primary values / headings inside SVG
+  xlarge: 14, // hero readouts (e.g. the confidence percentage)
 } as const;
 
 export type VizTextSize = keyof typeof SCALE;

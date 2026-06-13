@@ -27,8 +27,9 @@ classification:
   speculation_pct: 10
   real_science_pct: 52
 related_chapters:
-- convergent-but-not-quite
-- pandoras-deep-time
+  - convergent-but-not-quite
+  - pandoras-deep-time
+  - pandoran-tree-of-life
 glossary_terms:
 - body-plan
 - bilateral-symmetry

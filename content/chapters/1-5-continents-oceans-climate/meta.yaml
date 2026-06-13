@@ -26,9 +26,9 @@ classification:
   speculation_pct: 7
   real_science_pct: 55
 related_chapters:
-- where-is-pandora
-- time-on-pandora
-- pandoras-ocean
+  - where-is-pandora
+  - time-on-pandora
+  - whats-in-the-air
 glossary_terms:
 - albedo
 - radiative-equilibrium

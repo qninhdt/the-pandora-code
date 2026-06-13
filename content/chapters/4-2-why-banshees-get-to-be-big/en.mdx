@@ -27,7 +27,7 @@ The problem is that the two quantities a flier cares about most — how heavy it
 
 The number that captures the squeeze even has a name, and it is the one worth carrying out of this chapter: **<GlossaryTerm slug="wing-loading">wing loading</GlossaryTerm>**, the animal's weight divided by its wing area — how many kilograms each square metre of wing is asked to carry. Because weight outruns area, wing loading climbs relentlessly the bigger an animal gets. A sparrow carries a feather-light load on generous wings and can flutter almost lazily. A swan carries a punishing load on wings that, for its bulk, are comparatively meagre — which is why a swan does not flutter anywhere; it runs across half a lake, hammering the water with its feet, fighting for every scrap of speed before it finally heaves into the air. Scale up past the swan and the wing loading becomes so brutal that the wings cannot make enough lift to fly at any speed the animal could possibly reach, let alone survive.
 
-<SquareCubeScaler />
+<ScaleUpChallenge />
 
 You can feel exactly why this bites if you think for a moment about what lift actually is. A wing holds an animal up by one means only: it throws air *downward*, and the air, shoving back, holds the animal *up*. The amount of lift a wing makes depends on three things — how much wing there is, how fast that wing is slicing through the air, and how dense the air itself is. Now hold the wing area fixed and pile on weight, as the square-cube law forces you to. The only way left to make enough lift is to move the wing faster through the air. So the heavier the flier, the faster it must go simply to stay aloft — its minimum flying speed creeps upward and upward. A small bird can loiter, can hang almost still in a headwind. A heavy flier must commit to real speed or fall. Push the trend far enough and the minimum speed to stay airborne becomes a sprint, then a dive off a height, then a velocity no muscle and no cliff can deliver, and the animal is simply grounded for life.
 
@@ -47,7 +47,7 @@ Here is the cruelty hidden in those two phrases. As an animal gets bigger, *both
 
 The mass at which they cross is the ceiling. Below it, the muscles make more power than flight costs, and there is surplus left over — for climbing, for turning hard, for carrying prey, for the sheer extravagance of a courtship display. Right at the crossing, the books balance to the penny: every watt the muscles produce goes to staying merely level, with nothing whatever to spare. And above it, the accounts simply will not close — flight demands more power than the body can ever supply, and sustained flapping flight is not difficult but *impossible*. The physiologist Colin Pennycuick spent a long career mapping these power curves for real birds; the biologist James Marden measured how much lift animals can actually wring out at the desperate instant of takeoff. Their numbers converge on a ceiling for Earth, and it is humbling in its modesty: the heaviest a powered, flapping flier can be is somewhere around **two hundred and fifty kilograms**. Nothing alive today comes remotely close. The heaviest flying birds — the great bustards, the largest swans and condors — top out near sixteen kilograms, and even they get airborne like overloaded freighters, with a long graceless run and a great deal of complaint.
 
-<FlightPowerCeiling />
+<FlightCeilingLab />
 
 Toggle that figure between the two worlds and you are holding the entire thesis of this chapter in a single image, so it is worth being slow and exact about what it shows. The teal curve — the power the muscles can supply — belongs to the *animal*. It is a fact about physiology, about how muscle works, and it does not care in the slightest what planet it is drawn on. But the amber curve — the power that flight *demands* — does care, deeply, because what flight costs depends on two things that are properties of the *world*: how hard gravity drags the body down, and how much lift the air is willing to give back for each beat. On Earth, those two settings put the crossing at roughly two hundred and fifty kilograms. And that number, it is crucial to understand, is not a fact about Quetzalcoatlus or any other animal. It is a fact about *Earth* — the heaviest thing this particular planet's gravity and this particular planet's air will permit a muscle to fly.
 
@@ -103,7 +103,7 @@ The toruk's wing is the same idea taken further. Its membrane is built from indi
 
 It helps to set them all in a row, Earth's record-holders beside Pandora's everyday giants, because the gap between the two is the whole argument in one glance.
 
-<FlierWingspanLadder />
+<GiantFlierShowdown />
 
 Earth's ceiling, measured in span, sits around ten or eleven metres — Quetzalcoatlus, the single largest, with the big soaring birds trailing just behind it at six or seven. The mountain banshee, by the lore's own figures, runs to a wingspan in the low teens of metres: already level with or just past the Quetzalcoatlus line. Sit with that for a moment. The animal the Na'vi casually break and ride to school their children and hunt their meat is, in pure dimensions, *the largest flying creature Earth ever produced* — an animal that on our world represents the absolute furthest edge of the possible. On Pandora it is a saddle horse.
 
@@ -115,7 +115,7 @@ Everything up to now — lift, wing loading, the power curves — has quietly as
 
 The Reynolds number is, put loosely, a measure of how much the air a creature flies through behaves like a thin gas as against a thick, sticky fluid. To a tiny insect, air is effectively *syrup* — gluey, viscous, something to be rowed and clawed through with paddle-like strokes. This is the world of low Reynolds number, and it is why a fruit fly's frantic flight looks nothing whatever like a hawk's. To a large bird or a pterosaur, the very same air behaves like a thin, clean stream that slides smoothly over a sleek wing and lets a proper aerofoil do proper work. This is the world of high Reynolds number, where lift comes cheaply and efficiently. And the number that decides which world you live in scales with three things: how large the flier is, how fast it is going, *and how dense the air is*. That last term is the one Pandora reaches in and changes.
 
-<ReynoldsRegimeExplorer />
+<AirRegimeVisualizer />
 
 This, incidentally, is the true source of that hoary old slander about the bumblebee — the cocktail-party claim that "science proved bumblebees can't fly." What actually happened is that an early aerodynamicist ran the numbers on a bee's wing *as though it were a fixed aircraft wing operating at high Reynolds number*, found it hopelessly inadequate to hold the bee up, and concluded, on paper, that the bee was impossible. The bee, of course, was entirely fine. The *calculation* was using the wrong rulebook — applying the physics of a thin, clean, high-speed airflow to a tiny creature living deep in the viscous, low-Reynolds world, where wings make lift not by smooth steady flow but by a roiling bag of unsteady tricks: a **<GlossaryTerm slug="leading-edge-vortex">leading-edge vortex</GlossaryTerm>** curled like a tiny tornado over the top of the wing, stroke reversals, wake recapture, none of which a rigid-aerofoil sum can see. The lesson is not "physics was wrong." The lesson is the opposite, and it is the one this whole chapter runs on: *flight has different regimes, and you must know which one you are in before the equations mean anything at all.*
 
@@ -154,35 +154,7 @@ Does the gift stretch all the way to the toruk? Honestly, no — and the chapter
 
 It is worth being clear about which parts of this chapter are solid ground, which are reasonable bridges, and which are numbers that were never built to survive a physics exam.
 
-<TierLegend
-  title="What each tier lets this chapter say"
-  tiers={[
-    {
-      kind: "canon",
-      gloss: "Shown directly on screen: the rideable mountain banshee, the colossal toruk, their cliff-launching and broad membranous wings.",
-      realWorld: "A primary source — something you can point to and replay.",
-      example: "The Na'vi break and ride banshees; the toruk is the apex predator of the Pandoran sky."
-    },
-    {
-      kind: "inference",
-      gloss: "The bridge we build: Pandora's ~0.8 g and denser air are what slide the flight ceiling up far enough to seat a banshee.",
-      realWorld: "Applying a known law to a new case and reading off the result.",
-      example: "Lower gravity plus thicker air move the power-curve crossing to a heavier mass — a Quetzalcoatlus-class flier becomes rideable."
-    },
-    {
-      kind: "speculation",
-      gloss: "Plausible but unconfirmed: exact banshee mass, carbon-fibre bones, double-force muscle, a xenon-laced atmosphere.",
-      realWorld: "A reasonable guess that fills a gap canon never closes.",
-      example: "Community wikis quote a 1.5-tonne banshee; the physics says a far lighter mass, or the wing loading is impossible."
-    },
-    {
-      kind: "real_science",
-      gloss: "Verifiable Earth science, none of it invented for this book.",
-      realWorld: "Textbook flight biomechanics and palaeontology.",
-      example: "The square-cube law, wing loading, the Pennycuick/Marden power ceiling, Reynolds regimes, Habib's quadrupedal launch."
-    }
-  ]}
-/>
+<TorukFlightEngine />
 
 The flying giants themselves — the rideable mountain banshee, the colossal toruk, their cliff-launching, their broad membranous wings — are canon, shown directly on screen. The flight physics is all real Earth science, none of it invented for this book: the square-cube law, wing loading, the power-required-versus-available crossing that Pennycuick and Marden mapped, the Reynolds-number regimes and the bumblebee that exposed them, Habib's quadrupedal launch, and the real record-holders from Quetzalcoatlus to Argentavis to Pelagornis. What is *inference* — a bridge we are building, not a fact handed to us — is the central claim that Pandora's roughly eighty-percent gravity and denser air are what slide the flight ceiling up far enough to seat a banshee. It is the best physical story the available numbers support, but it is a story we are telling *about* the canon, not one the canon tells about itself.
 

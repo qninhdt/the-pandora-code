@@ -1,4 +1,5 @@
 import { CanonBadge } from "@/components/classification/canon-badge";
+import { AirRegimeVisualizer } from "@/components/content/air-regime-visualizer";
 import { AnatomyPlate } from "@/components/content/anatomy-plate";
 import { AtmosphereComparison } from "@/components/content/atmosphere-comparison";
 import { AtmosphericDisequilibrium } from "@/components/content/atmospheric-disequilibrium";
@@ -27,16 +28,17 @@ import { DiagramFigure } from "@/components/content/diagram-figure";
 import { EclipseDayClock } from "@/components/content/eclipse-day-clock";
 import { Figure } from "@/components/content/figure";
 import { FigureGrid } from "@/components/content/figure-grid";
-import { FlierWingspanLadder } from "@/components/content/flier-wingspan-ladder";
-import { FlightPowerCeiling } from "@/components/content/flight-power-ceiling";
-import { ForestStrataExplorer } from "@/components/content/forest-strata-explorer";
+import { FlightCeilingLab } from "@/components/content/flight-ceiling-lab";
+import { StrataDiversityEngine } from "@/components/content/strata-diversity-engine";
 import { FroudeGaitDial } from "@/components/content/froude-gait-dial";
 import { FunctionalResponseCurves } from "@/components/content/functional-response-curves";
+import { GiantFlierShowdown } from "@/components/content/giant-flier-showdown";
 import { GlowBiogeographyToggle } from "@/components/content/glow-biogeography-toggle";
 import { GlowOriginsTree } from "@/components/content/glow-origins-tree";
 import { HabitableZoneExplorer } from "@/components/content/habitable-zone-explorer";
 import { HalfLifeDecay } from "@/components/content/half-life-decay";
 import { HoxColinearityMap } from "@/components/content/hox-colinearity-map";
+import { HydraulicLimitSimulator } from "@/components/content/hydraulic-limit-simulator";
 import { IntegrationVsSize } from "@/components/content/integration-vs-size";
 import { IsochronPlot } from "@/components/content/isochron-plot";
 import { KeystoneCascadeToggle } from "@/components/content/keystone-cascade-toggle";
@@ -46,21 +48,22 @@ import { MagneticCompassExplorer } from "@/components/content/magnetic-compass-e
 import { MycorrhizalMarket } from "@/components/content/mycorrhizal-market";
 import { NichePartitionExplorer } from "@/components/content/niche-partition-explorer";
 import { NightEyeOptics } from "@/components/content/night-eye-optics";
+import { OccamsRazorEngine } from "@/components/content/occams-razor-engine";
 import { OpenQuestions } from "@/components/content/open-questions";
 import { PercolationNetwork } from "@/components/content/percolation-network";
 import { PhotophoreIntensity } from "@/components/content/photophore-intensity";
+import { TorukFlightEngine } from "@/components/content/toruk-flight-engine";
 import { PredatorPreyOscillator } from "@/components/content/predator-prey-oscillator";
 import { QuorumCascade } from "@/components/content/quorum-cascade";
 import { Quote } from "@/components/content/quote";
 import { ReplayTheTape } from "@/components/content/replay-the-tape";
-import { ReynoldsRegimeExplorer } from "@/components/content/reynolds-regime-explorer";
+import { ScaleUpChallenge } from "@/components/content/scale-up-challenge";
 import { ScrollSequence } from "@/components/content/scroll-sequence";
 import { ShannonChannel } from "@/components/content/shannon-channel";
-import { SquareCubeScaler } from "@/components/content/square-cube-scaler";
 import { SuperconductorCooldown } from "@/components/content/superconductor-cooldown";
-import { TierLegend } from "@/components/content/tier-legend";
 import { Timeline } from "@/components/content/timeline";
-import { TreeHeightCeiling } from "@/components/content/tree-height-ceiling";
+import { TierLegend } from "@/components/content/tier-legend";
+import { VerticalForestDive } from "@/components/content/vertical-forest-dive";
 import { TwentySecondsTimeline } from "@/components/content/twenty-seconds-timeline";
 import { UmweltLens } from "@/components/content/umwelt-lens";
 import { WhatThisMeans } from "@/components/content/what-this-means";
@@ -79,6 +82,7 @@ import { OrbitClock } from "@/components/three/orbit-clock-figure";
 import type { ComponentType } from "react";
 
 export const pandoraMdxComponents = {
+  AirRegimeVisualizer,
   AnatomyPlate,
   AtmosphereComparison,
   AtmosphericDisequilibrium,
@@ -110,19 +114,20 @@ export const pandoraMdxComponents = {
   EclipseDayClock,
   Figure,
   FigureGrid,
-  FlierWingspanLadder,
-  FlightPowerCeiling,
+  FlightCeilingLab,
   FloatingMountainFigure,
   FluxFieldFigure,
-  ForestStrataExplorer,
+  StrataDiversityEngine,
   FroudeGaitDial,
   FunctionalResponseCurves,
+  GiantFlierShowdown,
   GlossaryTerm,
   GlowBiogeographyToggle,
   GlowOriginsTree,
   HabitableZoneExplorer,
   HalfLifeDecay,
   HoxColinearityMap,
+  HydraulicLimitSimulator,
   KeystoneCascadeToggle,
   MagneticCompassExplorer,
   MycorrhizalMarket,
@@ -132,31 +137,32 @@ export const pandoraMdxComponents = {
   LimbFieldToggle,
   LongBranchAttractionDemo,
   NightEyeOptics,
+  OccamsRazorEngine,
   OpenQuestions,
   OrbitClock,
   PercolationNetwork,
   PhotophoreIntensity,
+  TorukFlightEngine,
   PredatorPreyOscillator,
   QuorumCascade,
   Quote,
   ReadingProgress,
   RelatedChapters,
   ReplayTheTape,
-  ReynoldsRegimeExplorer,
+  ScaleUpChallenge,
   ScientificNote,
   ScrollSequence,
   ShannonChannel,
   SideNote,
   SourceList,
-  SquareCubeScaler,
   StatGrid,
   SuperconductorCooldown,
   TableOfContents,
   TierLegend,
   Timeline,
-  TreeHeightCeiling,
   TwentySecondsTimeline,
   UmweltLens,
+  VerticalForestDive,
   WhatThisMeans,
   WhittakerBiomeExplorer,
   XenobiologyLadder,

@@ -26,8 +26,9 @@ classification:
   speculation_pct: 8
   real_science_pct: 55
 related_chapters:
-- where-is-pandora
-- whats-in-the-air
+  - where-is-pandora
+  - whats-in-the-air
+  - continents-oceans-climate
 glossary_terms:
 - tidal-locking
 - synchronous-rotation

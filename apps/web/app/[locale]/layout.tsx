@@ -58,6 +58,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
             locale={locale as Locale}
             tagline={t("site.tagline")}
             copyright={t("footer.copyright", { year: new Date().getFullYear() })}
+            disclaimer={t("footer.disclaimer")}
           />
         </div>
       </TooltipProvider>

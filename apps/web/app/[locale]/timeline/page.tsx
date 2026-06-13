@@ -5,11 +5,25 @@ import { chapterOrderPrefix } from "@/lib/content/loader/chapter-index";
 import { listChapters } from "@/lib/content/loader/chapter-loader";
 import { getPageBackground } from "@/lib/content/loader/page-background";
 import { listParts } from "@/lib/content/loader/part-loader";
+import { buildPageMetadata } from "@/lib/seo/page-metadata";
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
 interface TimelinePageProps {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: TimelinePageProps): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  const t = await getTranslations({ locale });
+  return buildPageMetadata({
+    locale: locale as Locale,
+    path: "/timeline",
+    title: t("page.timeline.title"),
+    description: t("page.timeline.subtitle"),
+  });
 }
 
 // "first-light" → "First Light", so part sections still read nicely even when a

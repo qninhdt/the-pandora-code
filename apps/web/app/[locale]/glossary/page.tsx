@@ -5,11 +5,25 @@ import { type Locale, isLocale } from "@/i18n/config";
 import { getGlossaryCoverImage } from "@/lib/content/loader/glossary-cover";
 import { listGlossaryTerms } from "@/lib/content/loader/glossary-loader";
 import { getPageBackground } from "@/lib/content/loader/page-background";
+import { buildPageMetadata } from "@/lib/seo/page-metadata";
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
 interface GlossaryIndexProps {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: GlossaryIndexProps): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  const t = await getTranslations({ locale });
+  return buildPageMetadata({
+    locale: locale as Locale,
+    path: "/glossary",
+    title: t("page.glossary.title"),
+    description: t("page.glossary.subtitle"),
+  });
 }
 
 export default async function GlossaryIndex({ params }: GlossaryIndexProps) {

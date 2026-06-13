@@ -23,12 +23,14 @@ export async function generateMetadata({ params }: GlossaryDetailProps): Promise
   const loc = locale as Locale;
   const entry = getGlossaryTerm(term, loc);
   if (!entry) return {};
+  const cover = getGlossaryCoverImage(term);
   return buildPageMetadata({
     locale: loc,
     path: `/glossary/${term}`,
     title: entry.label,
     description: clampDescription(entry.definition),
     availableLocales: locales,
+    ogImage: cover,
   });
 }
 

@@ -1,22 +1,44 @@
 {
   "viz": {
-    "treeHeightCeiling": {
-      "title": "Một cái cây cao được tới đâu?",
-      "envLabel": "Thế giới nào",
+    "hydraulicLimit": {
+      "title": "Bức trần thủy lực",
+      "subtitle": "Kéo chiều cao lên để xem cột nước kéo căng đến mức nào",
+      "hint": "Chuyển sang Pandora: trọng lực thấp làm cột nước nhẹ đi, và không khí dày CO2 giúp cây giữ nước. Cả hai mặt của phương trình đều dịch chuyển, và bức trần được nâng lên.",
+      "worldLabel": "Thế giới",
       "earth": "Trái Đất",
       "pandora": "Pandora",
+      "ceiling": "Trần",
+      "hyperion": "Redwood",
+      "hometree": "Hometree",
+      "snap": "Đứt cột nước!",
+      "heightAxis": "Chiều cao (m)",
+      "turgorAxis": "Sức căng",
+      "gravityLabel": "Trọng lực",
+      "gravityNote": "nhẹ hơn = dễ kéo",
+      "atmoLabel": "Khí quyển",
+      "atmoNote": "đặc hơn = ít mất nước",
       "heightLabel": "Chiều cao cây",
-      "heightAxis": "Chiều cao →",
-      "vigourAxis": "Sức sống lá ngọn",
-      "ceiling": "trần",
-      "redwood": "Cây redwood cao nhất (116 m)",
-      "hometree": "Hometree (~300 m)",
-      "turgorLabel": "Sức sống của lá ngọn",
-      "turgorNote": "Mức độ lá trên ngọn còn có thể hút đầy nước và phát triển.",
-      "failNote": "Vượt trần, cột nước đứt gãy — phần ngọn không còn uống được nữa.",
-      "verdictOk": "Tán cây vẫn tự nuôi được mình: nước lên tới ngọn dưới mức căng còn chịu nổi.",
-      "verdictOver": "Vượt quá giới hạn mà hệ dẫn nước nơi đây cho phép. Trên Trái Đất điều này bất khả; trên Pandora, trọng lực thấp hơn cùng bầu khí quyển giàu CO2 và ẩm đã nâng trần lên — gắng vươn tới tầm vóc Hometree, chứ không vượt qua nhẹ nhàng.",
-      "hint": "Cây không có bơm: nó uống bằng cách kéo một sợi nước liền mạch lên thân gỗ, chỉ nhờ sức bốc hơi từ lá. Càng cao, phần ngọn càng phải kéo mạnh, đến khi tế bào lá không còn hút đầy được — Koch và Sillett (2004) đặt trần của Trái Đất quanh mức 130 m. Chuyển sang Pandora và xem trọng lực thấp cùng bầu khí dày, giàu cacbon dịch chuyển cái trần ấy."
+      "turgorLabel": "Sức sống lá ngọn",
+      "dead": "Chết khô",
+      "snapNote": "áp suất âm",
+      "turgorNote": "sức căng tế bào",
+      "verdictOver": "Quá giới hạn. Cột nước đứt gãy, lá không thể trương lên. Cây không thể cao hơn.",
+      "verdictOk": "Hệ thống vẫn nguyên vẹn. Lá vẫn có thể hút nước và phát triển."
+    },
+    "occamsRazor": {
+      "title": "Dao cạo Occam",
+      "subtitle": "Cân đo các lời giải thích cạnh tranh",
+      "hint": "Điều chỉnh số lượng giả định chưa được chứng minh. Lưỡi dao sẽ cắt bỏ lý thuyết nào đòi hỏi quá nhiều phép màu.",
+      "theoryA": "Lý thuyết A",
+      "theoryB": "Lý thuyết B",
+      "assumptions": "giả định",
+      "verdict": "Kết luận",
+      "verdictA": "Lý thuyết A vững chắc hơn",
+      "verdictB": "Lý thuyết B vững chắc hơn",
+      "verdictTie": "Bất phân thắng bại",
+      "noteA": "Dựa trên ít niềm tin mù quáng hơn.",
+      "noteB": "Dựa trên ít niềm tin mù quáng hơn.",
+      "noteTie": "Không thể phân định chỉ dựa vào sự tối giản."
     },
     "shannonChannel": {
       "title": "Giới hạn kênh truyền của Shannon",
@@ -58,74 +80,87 @@
       "aria": "Các giác quan đổ vào mười một triệu bit mỗi giây; chỉ {conscious} chạm tới nhận thức — một tỉ lệ nén gấp {compression} lần.",
       "hint": "Các giác quan đổ ~11 Mb/s vào hệ thần kinh, nhưng dòng chảy chạm tới nhận thức — cái tôi biết suy nghĩ và ghi nhớ — chỉ chạy ở vài chục bit mỗi giây. Kéo thanh trượt và xem cả một đời cái tôi co lại còn vài chục gigabit: đủ nhỏ, cuối cùng, để gửi qua mối liên kết trong một đêm."
     },
-    "squareCube": {
-      "title": "Định luật bình phương - lập phương",
-      "sizeLabel": "Kích thước tuyến tính",
-      "multiple": "{n} lần",
-      "length": "Chiều dài",
-      "area": "Diện tích bề mặt / tiết diện xương",
-      "volume": "Thể tích / khối lượng",
-      "stress": "Ứng suất lên xương",
-      "areaNote": "tỉ lệ với bình phương (k²)",
-      "volumeNote": "tỉ lệ với lập phương (k³)",
-      "stressNote": "khối lượng chia tiết diện = k",
-      "hint": "Tăng gấp đôi chiều dài thì khối lượng tăng gấp tám, nhưng tiết diện xương đỡ nó chỉ tăng gấp bốn. Ứng suất lên mỗi khúc xương vì thế tăng gấp đôi. Đó là lý do một con vật không thể chỉ phóng to lên - hình dạng buộc phải đổi theo."
+    "scaleUp": {
+      "title": "Thử thách nhân quy mô",
+      "subtitle": "Phóng to con vật và xem điều gì gãy vỡ đầu tiên",
+      "hint": "Định luật bình phương-lập phương: Diện tích (cánh) tăng theo k², nhưng thể tích (khối lượng) tăng theo k³. Tải trọng cánh tăng vọt khiến sinh vật rơi như đá.",
+      "sizeLabel": "Hệ số nhân (k)",
+      "multiple": "{n}×",
+      "wing": "Diện tích cánh",
+      "mass": "Khối lượng",
+      "loading": "Tải trọng cánh",
+      "wlUnit": "kg/m²",
+      "stallLabel": "Tốc độ chòng chành",
+      "status": {
+        "easy": "Bay lượn nhẹ nhàng",
+        "hard": "Cất cánh khó nhọc",
+        "desperate": "Bay lao dốc",
+        "grounded": "Gắn chặt xuống đất"
+      },
+      "stallNote": {
+        "easy": "Chậm, lượn tốt",
+        "hard": "Cần lấy đà nhanh",
+        "desperate": "Bay quá nhanh",
+        "grounded": "Vận tốc không tưởng"
+      }
     },
-    "froudeDial": {
-      "title": "Bánh xe dáng đi Froude",
-      "gravity": "Trọng lực",
+    "flightLab": {
+      "title": "Phòng thí nghiệm trần bay",
+      "hint": "Khi kéo trọng lực và độ đặc không khí, bạn đang trượt đường giới hạn sang phải. Những động vật từng bị Trái Đất cấm đoán nay lại có thể cất cánh.",
+      "mode": "Hành tinh",
       "earth": "Trái Đất",
       "pandora": "Pandora",
-      "legLabel": "Chiều dài chân",
-      "walkTrot": "Đi → chạy nước kiệu",
-      "gallop": "Ngưỡng phi nước đại",
-      "frNote": "tại Fr ≈ 0,5",
-      "gallopNote": "tại Fr ≈ 1,0",
-      "range": "0–{max} km/h",
-      "hint": "Cùng một chiều dài chân, trọng lực thấp hơn của Pandora kéo mọi ngưỡng chuyển dáng đi xuống tốc độ thấp hơn. Con pa'li bước vào nhịp chạy lò xo hiệu quả của nó sớm hơn - và mỗi cú đạp đất vì thế nhẹ hơn."
-    },
-    "flightCeiling": {
-      "title": "Bức tường của mọi kẻ bay",
-      "earth": "Trái Đất",
-      "pandora": "Pandora",
-      "supply": "Công suất cơ bắp cấp được",
-      "demand": "Công suất bay đòi hỏi",
-      "ceiling": "Trần bay",
+      "custom": "Tùy chỉnh",
       "massAxis": "Khối lượng →",
-      "powerAxis": "Công suất →",
-      "quetz": "Quetzalcoatlus",
-      "ikran": "Ikran + người cưỡi",
-      "hint": "Đường đòi hỏi dốc hơn đường cấp được, nên chúng luôn cắt nhau. Điểm cắt là kẻ bay nặng nhất còn có thể vỗ cánh. Trọng lực thấp và không khí dày của Pandora hạ đường đòi hỏi xuống - đẩy điểm cắt sang phải, tới khối lượng mà Trái Đất sẽ ghim chặt xuống đất."
+      "ceiling": "Giới hạn bay",
+      "gLabel": "Trọng lực",
+      "rhoLabel": "Độ đặc không khí",
+      "ceilingLabel": "Khối lượng tối đa"
     },
-    "wingspanLadder": {
-      "title": "Bậc thang của những kẻ bay",
-      "subtitle": "Sải cánh, vẽ trên cùng một tỉ lệ",
-      "ceiling": "Trần của Trái Đất",
-      "metres": "{n} m",
-      "axis": "Sải cánh (m) →",
-      "earth": "Trái Đất",
-      "pandora": "Pandora",
+    "flierShowdown": {
+      "title": "Bậc thang của những gã khổng lồ",
+      "subtitle": "Dựng tất cả theo cùng một tỷ lệ để thấy Trái Đất nhỏ bé thế nào",
+      "hint": "Bấm vào từng sinh vật. Pterosaur và Banshee cất cánh bằng 4 chi, giúp chúng vọt lên không trung bằng sức vóc của vai và cánh chứ không phải bằng đôi chân chết nặng.",
+      "earthCeiling": "Trần Trái Đất",
+      "spanAxis": "Sải cánh (m) →",
       "pelagornis": "Pelagornis",
       "argentavis": "Argentavis",
       "quetzalcoatlus": "Quetzalcoatlus",
       "ikran": "Ikran",
       "toruk": "Toruk",
-      "hint": "Những kẻ bay lớn nhất Trái Đất dừng lại quanh 11 m - Quetzalcoatlus đánh dấu bức tường, và mọi thứ bên phải đường gạch là vùng trời mà vật lý Trái Đất cấm tiệt. Con ikran cưỡi được nằm ngay trên bức tường ấy; con toruk thì rời khỏi biểu đồ, lớn gấp đôi sinh vật bay lớn nhất Trái Đất từng có."
+      "span": "Sải cánh",
+      "mass": "Khối lượng",
+      "era": "Thời đại / Nơi sống",
+      "launch": "Cất cánh",
+      "eras": {
+        "25Mya": "Cách đây ~25 triệu năm",
+        "6Mya": "Cách đây ~6 triệu năm",
+        "68Mya": "Cách đây ~68 triệu năm",
+        "Contemporary": "Bầu trời Pandora đương đại"
+      },
+      "launches": {
+        "bipedal": "Hai chân (nhảy)",
+        "quadrupedal": "Bốn chi (chống đẩy lật ngựa)"
+      }
     },
-    "reynoldsRegime": {
-      "title": "Loại không khí nào?",
-      "subtitle": "Re = ρ·v·L / μ",
+    "airRegime": {
+      "title": "Trực quan hóa dòng chảy",
+      "subtitle": "Xem dòng chảy thay đổi khi Số Reynolds giảm",
+      "hint": "Càng nhỏ, dòng chảy càng giống xi-rô thay vì nước. Không khí đặc của Pandora giúp đẩy sinh vật bay sang vùng có dòng chảy trơn tru hơn.",
+      "mode": "Hành tinh",
       "earth": "Trái Đất",
       "pandora": "Pandora",
-      "sizeLabel": "Bề rộng cánh",
-      "reLabel": "Số Reynolds",
-      "axis": "Số Reynolds →",
+      "vortex": "Xoáy cuộn LEV",
+      "sizeLabel": "Kích thước cánh",
       "metres": "{n} m",
       "millimetres": "{n} mm",
-      "viscousLabel": "Xi-rô",
+      "reLabel": "Số Reynolds (Re)",
+      "viscousLabel": "Chảy rối",
       "transitionalLabel": "Chuyển tiếp",
-      "inertialLabel": "Dòng sạch",
-      "hint": "Số Reynolds đo xem không khí hành xử như xi-rô đặc quánh (Re thấp - thế giới chèo cánh của côn trùng) hay như một dòng mỏng trơn mà một cánh thuôn có thể rạch qua (Re cao - chim, dực long, banshee). Nó tăng theo kích thước, tốc độ và mật độ không khí - nên không khí dày của Pandora đẩy một kẻ bay bất kỳ kích thước nào lên vùng chế độ sạch hơn, dễ chịu hơn."
+      "inertialLabel": "Dòng chảy sạch",
+      "viscousDesc": "Không khí như mật ong dính chặt vào cánh, cản trở chuyển động mượt mà.",
+      "transitionalDesc": "Bắt đầu xuất hiện các dòng xoáy không ổn định ở rìa cánh.",
+      "inertialDesc": "Không khí trượt qua dễ dàng, tạo ra lực nâng tối ưu để bay lượn."
     },
     "superconductor": {
       "title": "Làm lạnh chất siêu dẫn",
@@ -142,6 +177,19 @@
       "hint": "Hạ nhiệt độ xuống dưới Tc: điện trở rơi thẳng về 0 và nam châm bị khóa lơ lửng trong không trung.",
       "levitating": "Khóa từ thông — lơ lửng",
       "resting": "Nằm yên trên mặt"
+    },
+    "torukFlight": {
+      "title": "Cỗ máy mô phỏng cất cánh Toruk",
+      "subtitle": "Bật ba 'mật mã ăn gian' vật lý của Pandora để xem Toruk cất cánh",
+      "hint": "Kích hoạt các điều kiện cần thiết để biến chuyến bay của Toruk thành hiện thực.",
+      "switch1": "Không khí đặc (1.2x Trái Đất)",
+      "switch2": "Trọng lực thấp (0.8x Trái Đất)",
+      "switch3": "Cất cánh nhảy bằng bốn chi",
+      "status": "Khả năng bay",
+      "fail": "Bám đất",
+      "success": "Cất cánh",
+      "failDesc": "Vật lý Trái Đất tiêu chuẩn. Toruk quá nặng để bay hoặc cất cánh.",
+      "successDesc": "Cả ba mật mã ăn gian vật lý của Pandora đã được bật. Lực nâng cao hơn, trọng lượng nhẹ hơn, và sức bật tối đa. Toruk bay lên."
     }
   }
 }

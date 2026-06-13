@@ -6,11 +6,25 @@ import { HeroSurface } from "@/components/landing/hero-surface";
 import { type Locale, isLocale } from "@/i18n/config";
 import { getChapterCoverImage } from "@/lib/content/loader/cover-image";
 import { getOutlineWithStatus } from "@/lib/content/outline";
+import { buildPageMetadata } from "@/lib/seo/page-metadata";
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
 interface HomeProps {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: HomeProps): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  const t = await getTranslations({ locale });
+  return buildPageMetadata({
+    locale: locale as Locale,
+    path: "",
+    title: t("home.title"),
+    description: t("home.intro"),
+  });
 }
 
 export default async function Home({ params }: HomeProps) {

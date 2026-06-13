@@ -25,8 +25,9 @@ classification:
   speculation_pct: 10
   real_science_pct: 54
 related_chapters:
-- whats-in-the-air
-- what-extraction-costs
+  - whats-in-the-air
+  - the-pandoran-umwelt
+  - what-is-pandoran-life-made-of
 glossary_terms:
 - superconductivity
 - cooper-pair
