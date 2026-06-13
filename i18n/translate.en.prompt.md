@@ -98,6 +98,8 @@ You MUST strictly follow the 5-step sequence below based on the **BATCH-FIRST** 
 - **Section Segmentation Rule:** The number and length of each section MUST be determined EXACTLY by the existing headings (e.g., `##`, `###`) in the English source text.
 - **Sequential Execution Rule:** Complete STEP 1 for ALL sections -> then STEP 2 for ALL sections -> and so on until STEP 5 is finished.
 
+- **FILE WRITING LIMIT:** Strictly FORBIDDEN to perform multiple file writing commands (\`write_file\` or \`replace\`) in a single LLM turn. Each file (e.g., \`1-analysis.mdx\` for Section 1, then \`1-analysis.mdx\` for Section 2) MUST be written in separate, sequential turns.
+
 **STEP 1: Context, Terminology & Strategy Analysis (Batch)**
 - Analyze all sections. For each section, write the entire analysis into `1-analysis.mdx` following `i18n/templates/1-analysis.template.mdx`.
 - Identify Register, Audience, Core Intent, Tone, Pronouns, and plan for structural/cultural bottlenecks.
@@ -106,10 +108,11 @@ You MUST strictly follow the 5-step sequence below based on the **BATCH-FIRST** 
 - After Step 1 is finished for the entire document, draft all sections. Save to `2-draft.mdx` following `i18n/templates/2-draft.template.mdx`.
 
 **STEP 3: Unbiased Subagent Evaluation (Batch)**
-- **IRONCLAD DISCIPLINE:** Strictly FORBIDDEN to evaluate your own draft. You are NOT ALLOWED to find errors in the translation you just wrote.
-- **MANDATORY:** For every section, you MUST use the `invoke_agent` tool (with `agent_name: "generalist"`) to act as an independent and hyper-critical editor.
-- **Prepare the Prompt:** Read `i18n/templates/subagent_evaluator.prompt.md`, replace placeholders with actual data for that specific section.
-- Save the error reports received from the Subagent to `3-evaluation.mdx` for ALL sections. Do not alter or omit any of the Subagent's findings.
+- **PHASE-LEVEL SUBAGENT:** Instead of invoking a subagent for each section, you MUST invoke a SINGLE subagent (generalist agent) for the entire evaluation phase.
+- **IRONCLAD DISCIPLINE:** Strictly FORBIDDEN to evaluate your own draft.
+- **Task:** Provide the subagent with the list of all sections to be evaluated, including the paths to the original text and the corresponding literal drafts (\`2-draft.mdx\`).
+- The subagent will read \`i18n/templates/subagent_evaluator.prompt.md\` and perform evaluations for ALL sections, writing the results into the respective \`3-evaluation.mdx\` files (adhering to the one-write-per-turn rule).
+- You must wait for the subagent to complete the entire phase before proceeding to Step 4.
 **STEP 4: Comprehensive Correction (Batch)**
 - After receiving error reports for all sections, proceed with corrections.
 - Save corrections to `4-correction.mdx` for ALL sections (Format: `- "<Awkward Sentence>" -> "<Natural Sentence>"`).

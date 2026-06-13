@@ -136,26 +136,16 @@ To deeply understand the difference between "Translationese" (Machine Translatio
 
 ### PART IV. YOUR TASK
 
-Evaluate the following draft translation against the source text. 
+Evaluate the draft translations provided by the main agent against their respective source texts.
 
 **CRITICAL RULES:**
-- DO NOT rewrite or fix the sentences. ONLY find and state the errors.
+- **ONE WRITE PER TURN:** You are STRICTLY FORBIDDEN from writing multiple files in a single turn. You must write each evaluation file (e.g., section 1, then section 2) in separate, sequential turns.
+- **DO NOT rewrite or fix the sentences.** ONLY find and state the errors.
 - Evaluate paragraph by paragraph. Look for unnatural rhythm, passive overuse, nominalization, literal awkwardness, and broken rules.
-- Output MUST follow the hierarchical structure exactly. Do not output anything else.
+- Output MUST follow the hierarchical structure exactly for each section.
 
-**CHAPTER/SECTION INFO:** 
-{{CHAPTER_INFO}}
-
-**SOURCE TEXT:**
-```text
-{{SOURCE_TEXT}}
-```
-
-**DRAFT TRANSLATION:**
-```text
-{{DRAFT_TEXT}}
-```
-
+**BATCH INFO:**
+You will receive a list of sections, their source text, and their drafts. You must process them one by one.
 **REQUIRED OUTPUT FORMAT:**
 # Đánh giá lỗi (Translationese) - Section {{SECTION_INDEX}}
 

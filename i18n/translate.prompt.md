@@ -99,6 +99,8 @@ Bạn BẮT BUỘC phải tuân thủ đúng trình tự 5 bước dưới đây
 - **Quy tắc phân chia Section:** Số lượng và độ dài của mỗi section PHẢI dựa CHÍNH XÁC vào các heading (ví dụ: `##`, `###`) có sẵn trong văn bản gốc tiếng Anh.
 - **Quy tắc Thứ tự thực hiện:** Thực hiện xong BƯỚC 1 cho TẤT CẢ các section -> rồi mới sang BƯỚC 2 cho TẤT CẢ các section -> và cứ thế cho đến hết BƯỚC 5.
 
+- **HẠN CHẾ GHI FILE:** Tuyệt đối NGHIÊM CẤM việc thực hiện nhiều lệnh ghi file (\`write_file\` hoặc \`replace\`) trong cùng một lượt (turn) của LLM. Mỗi file (ví dụ: \`1-analysis.mdx\` của section 1, sau đó là \`1-analysis.mdx\` của section 2) BẮT BUỘC phải được ghi trong các lượt riêng biệt và tuần tự.
+
 **BƯỚC 1: Phân Tích Ngữ Cảnh, Thuật Ngữ & Chiến Lược (Hàng loạt)**
 - Phân tích tất cả các section. Với mỗi section, ghi toàn bộ nội dung phân tích vào `1-analysis.mdx` theo đúng `i18n/templates/1-analysis.template.mdx`.
 - Xác định Ngữ vực, Khán giả, Thông điệp cốt lõi, Giọng điệu, Xưng hô và xử lý các điểm nghẽn cú pháp/phép ẩn dụ.
@@ -107,10 +109,11 @@ Bạn BẮT BUỘC phải tuân thủ đúng trình tự 5 bước dưới đây
 - Sau khi xong Bước 1 cho toàn bộ bài, tiến hành viết nháp tất cả các section. Lưu vào `2-draft.mdx` theo `i18n/templates/2-draft.template.mdx`.
 
 **BƯỚC 3: Subagent Đánh Giá Khách Quan (Hàng loạt)**
-- **KỶ LUẬT SẮT:** Tuyệt đối NGHIÊM CẤM việc tự đánh giá bản nháp của chính mình. Bạn KHÔNG ĐƯỢC PHÉP tự tìm lỗi cho bài dịch mình vừa viết.
-- **BẮT BUỘC:** Với mỗi section, bạn PHẢI sử dụng tool `invoke_agent` (với `agent_name: "generalist"`) để đóng vai một biên tập viên độc lập và khắt khe.
-- **Chuẩn bị prompt:** Đọc `i18n/templates/subagent_evaluator.prompt.md`, thay thế các placeholder bằng dữ liệu thực tế của section đó.
-- Lưu kết quả đánh giá lỗi từ Subagent vào `3-evaluation.mdx` cho TẤT CẢ các section. Không được tự ý thêm bớt hay sửa đổi nhận xét của Subagent.
+- **TRIỆU HỒI SUBAGENT:** Thay vì gọi subagent cho từng section, bạn PHẢI khởi tạo DUY NHẤT một subagent (generalist agent) cho toàn bộ Phase đánh giá.
+- **KỶ LUẬT SẮT:** Tuyệt đối NGHIÊM CẤM việc tự đánh giá bản nháp của chính mình. 
+- **Nhiệm vụ:** Gửi cho subagent danh sách tất cả các section cần đánh giá, kèm theo đường dẫn đến file văn bản gốc và file nháp (\`2-draft.mdx\`) tương ứng. 
+- Subagent sẽ đọc \`i18n/templates/subagent_evaluator.prompt.md\` và thực hiện đánh giá cho TẤT CẢ các section, ghi kết quả vào các file \`3-evaluation.mdx\` tương ứng (tuân thủ quy tắc mỗi turn ghi 1 file).
+- Bạn đợi subagent hoàn thành toàn bộ phase trước khi chuyển sang Bước 4.
 **BƯỚC 4: Sửa Lỗi Toàn Diện (Hàng loạt)**
 - Sau khi có đầy đủ report lỗi của toàn bộ các section, tiến hành sửa lỗi.
 - Lưu quá trình sửa lỗi vào `4-correction.mdx` cho TẤT CẢ các section (Format: `- "<Câu sượng>" -> "<Câu mượt>"`).
