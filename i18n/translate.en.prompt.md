@@ -89,47 +89,34 @@ To shatter the structural barriers of machine learning systems and achieve this 
 
 ---
 
-### PART II. MULTI-PASS AUTOMATED BATCH WORKFLOW
+### PART II. MULTI-PASS AUTOMATED BATCH WORKFLOW (STRICT SEQUENTIAL BATCH WORKFLOW)
 
-You MUST strictly follow the 5-step sequence below. **ULTIMATE RULE:** Do not keep any reasoning in your head. The entire thought process, drafts, evaluations, and corrections **MUST be written in detail to files**.
+You MUST strictly follow the 5-step sequence below based on the **BATCH-FIRST** principle: You must complete all sections for the current step before proceeding to the next step. "Rolling" execution (completing steps 1-5 for section 1 before starting section 2) is STRICTLY FORBIDDEN.
 
-**Workflow & File Structure Rule:** You must process the document section by section. **Section Segmentation Rule:** The number and length of each section MUST be determined EXACTLY by the existing headings (e.g., `##`, `###`) in the English source text. You are absolutely NOT allowed to arbitrarily split or merge paragraphs on your own. The workflow operates in phases across ALL sections. All outputs must be saved to `i18n/chapters/<chapter-slug-with-prefix-index>/<section-index>/<step-number>-<step-name>.mdx`.
-**Template Rule:** You MUST read the templates in `i18n/templates/` before generating the respective outputs to ensure correct formatting.
+**Workflow & File Structure Rules:**
+- All outputs must be saved to `i18n/chapters/<chapter-slug>/<section-index>/<step-number>-<step-name>.mdx`.
+- **Section Segmentation Rule:** The number and length of each section MUST be determined EXACTLY by the existing headings (e.g., `##`, `###`) in the English source text.
+- **Sequential Execution Rule:** Complete STEP 1 for ALL sections -> then STEP 2 for ALL sections -> and so on until STEP 5 is finished.
 
-**Phase 1: Batch Analysis & Drafting (Do this for ALL sections first)**
-
-**Step 1: Context, Terminology & Strategy Analysis (Agent: Senior Analyst)**
+**STEP 1: Context, Terminology & Strategy Analysis (Batch)**
 - Analyze all sections. For each section, write the entire analysis into `1-analysis.mdx` following `i18n/templates/1-analysis.template.mdx`.
-- Explicitly output your entire reasoning process (in Vietnamese). Identify the Register, Audience, Tone, Pronouns, and Core Intent.
-- Pre-plan structural changes for complex sentences/passages (Structural Bottlenecks) and plan transcreation strategies for metaphors/idioms.
-- Extract and analyze ALL difficult terminology.
+- Identify Register, Audience, Core Intent, Tone, Pronouns, and plan for structural/cultural bottlenecks.
 
-**Step 2: Literal Semantic Draft (Agent: Base Translator)**
+**STEP 2: Literal Semantic Draft (Batch)**
+- After Step 1 is finished for the entire document, draft all sections. Save to `2-draft.mdx` following `i18n/templates/2-draft.template.mdx`.
 
-- Draft all sections. For each section, save the full literal translation draft into `2-draft.mdx` following `i18n/templates/2-draft.template.mdx`.
-- The goal is 100% factual integrity and zero omissions. Sentences may be stiff.
+**STEP 3: Unbiased Subagent Evaluation (Batch)**
+- After Step 2 is finished for the entire document, invoke the subagent (generalist agent) to evaluate each section.
+- **Prepare the Prompt:** Read `i18n/templates/subagent_evaluator.prompt.md`, replace placeholders with actual data.
+- Save the error reports to `3-evaluation.mdx` for ALL sections.
 
-**Phase 2: Subagent Evaluation, Correction & Finalization (Do this per section)**
+**STEP 4: Comprehensive Correction (Batch)**
+- After receiving error reports for all sections, proceed with corrections.
+- Save corrections to `4-correction.mdx` for ALL sections (Format: `- "<Awkward Sentence>" -> "<Natural Sentence>"`).
 
-**Step 3: Unbiased Subagent Evaluation (Agent: Strict Native Evaluation Coordinator)**
-
-- To avoid self-bias, you MUST NOT evaluate your own draft directly. For each section, you MUST use the `invoke_agent` tool (agent_name: "generalist").
-- **Prepare the Prompt:** Read the template `i18n/templates/subagent_evaluator.prompt.md`. Replace its placeholders (`{{CHAPTER_INFO}}`, `{{SOURCE_TEXT}}`, `{{DRAFT_TEXT}}`, `{{SECTION_INDEX}}`) with the actual chapter context, English source text, and your literal draft for that section.
-- Send this fully populated prompt to the subagent.
-- The subagent's ONLY job is to find and state errors hierarchically (by Heading, Paragraph 1, Paragraph 2...). It will NOT fix them.
-- Save the subagent's exact output to `3-evaluation.mdx` following `i18n/templates/3-evaluation.template.mdx`.
-
-**Step 4: Comprehensive Correction (Agent: Master Corrector)**
-
-- Read the subagent's evaluation. Fix ALL the errors identified.
-- Save the corrections to `4-correction.mdx` following `i18n/templates/4-correction.template.mdx` (Format: `- "<Bad Sentence>" -> "<Natural Sentence>"`).
-
-**Step 5: The Ultimate Masterpiece Translation (Master Editorial Director)**
-
-- Create the final polished translation integrating all corrections for each section, and save it to `i18n/chapters/<chapter-slug>/<section-index>/5-final.mdx` following `i18n/templates/5-final.template.mdx`.
-- **Final Output Format Rule:** After generating all `5-final.mdx` files for every section, you MUST combine them into a single complete file and save it to `i18n/chapters/<chapter-slug>/final.mdx`. Finally, print the entirety of this `final.mdx` file into the chat output, neatly contained within ONE single Markdown code block. Do not write any additional comments.
-
----
+**STEP 5: The Ultimate Masterpiece Translation & Merging**
+- After corrections are done for all sections, create the final polished translation for each, saving to `5-final.mdx`.
+- **Final Result:** Combine all `5-final.mdx` files into a single `i18n/chapters/<chapter-slug>/final.mdx`. Print the content of this file in the chat within ONE single Markdown code block.---
 
 ### PART III. FEW-SHOT LEARNING EXAMPLES & ADDITIONAL RULES
 
