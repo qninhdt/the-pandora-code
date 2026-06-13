@@ -1,0 +1,59 @@
+import AlphaCentauri from "@/components/glossary/interactive/alpha-centauri";
+import DirectImaging from "@/components/glossary/interactive/direct-imaging";
+import Exomoon from "@/components/glossary/interactive/exomoon";
+import HabitableZone from "@/components/glossary/interactive/habitable-zone";
+import RocheLimit from "@/components/glossary/interactive/roche-limit";
+import RadialVelocity from "@/components/glossary/interactive/radial-velocity";
+import TidalHeating from "@/components/glossary/interactive/tidal-heating";
+import TransitTimingVariation from "@/components/glossary/interactive/transit-timing-variation";
+import { GlossaryVisualizer } from "@/components/glossary/interactive/visualizer";
+import { screen } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
+import { renderWithIntl } from "./render-with-intl";
+
+describe("Glossary Components Direct Mount", () => {
+  it("renders alpha-centauri orrery", () => {
+    renderWithIntl(<AlphaCentauri locale="en" />);
+    expect(screen.getAllByText("Alpha Centauri Orrery")[0]).toBeInTheDocument();
+  });
+
+  it("renders habitable-zone simulator", () => {
+    renderWithIntl(<HabitableZone locale="en" />);
+    expect(screen.getAllByText("The habitable zone")[0]).toBeInTheDocument();
+  });
+
+  it("renders exomoon balance puzzle", () => {
+    renderWithIntl(<Exomoon locale="en" />);
+    expect(screen.getAllByText("Exomoon Energy Balance")[0]).toBeInTheDocument();
+  });
+
+  it("renders tidal-heating simulator", () => {
+    renderWithIntl(<TidalHeating locale="en" />);
+    expect(screen.getAllByText("Tidal Heating & Elliptical Flexing")[0]).toBeInTheDocument();
+  });
+
+  it("renders roche-limit breakup simulator", () => {
+    renderWithIntl(<RocheLimit locale="en" />);
+    expect(screen.getAllByText("Roche Limit Breakup Simulator")[0]).toBeInTheDocument();
+  });
+
+  it("renders radial-velocity Doppler wobble", () => {
+    renderWithIntl(<RadialVelocity locale="en" />);
+    expect(screen.getAllByText("Radial Velocity (Doppler Wobble)")[0]).toBeInTheDocument();
+  });
+
+  it("renders direct-imaging coronagraph", () => {
+    renderWithIntl(<DirectImaging locale="en" />);
+    expect(screen.getAllByText("Direct Imaging & Coronagraph Mask")[0]).toBeInTheDocument();
+  });
+
+  it("renders transit-timing-variation TTV plot", () => {
+    renderWithIntl(<TransitTimingVariation locale="en" />);
+    expect(screen.getAllByText("Transit Timing Variations (TTV)")[0]).toBeInTheDocument();
+  });
+
+  it("returns null for unregistered terms in GlossaryVisualizer", () => {
+    const { container } = renderWithIntl(<GlossaryVisualizer term="unknown-term" locale="en" />);
+    expect(container.firstChild).toBeNull();
+  });
+});

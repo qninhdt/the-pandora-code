@@ -11,6 +11,11 @@ const GLOSSARY_VISUALIZATIONS: Record<
   "alpha-centauri": dynamic(() => import("./alpha-centauri"), { ssr: false }),
   "habitable-zone": dynamic(() => import("./habitable-zone"), { ssr: false }),
   exomoon: dynamic(() => import("./exomoon"), { ssr: false }),
+  "tidal-heating": dynamic(() => import("./tidal-heating"), { ssr: false }),
+  "roche-limit": dynamic(() => import("./roche-limit"), { ssr: false }),
+  "radial-velocity": dynamic(() => import("./radial-velocity"), { ssr: false }),
+  "direct-imaging": dynamic(() => import("./direct-imaging"), { ssr: false }),
+  "transit-timing-variation": dynamic(() => import("./transit-timing-variation"), { ssr: false }),
 };
 
 interface GlossaryVisualizerProps {

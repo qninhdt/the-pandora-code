@@ -1,3 +1,12 @@
-export const GLOSSARY_VISUALIZATION_IDS = ["alpha-centauri", "habitable-zone", "exomoon"] as const;
+export const GLOSSARY_VISUALIZATION_IDS = [
+  "alpha-centauri",
+  "habitable-zone",
+  "exomoon",
+  "tidal-heating",
+  "roche-limit",
+  "radial-velocity",
+  "direct-imaging",
+  "transit-timing-variation",
+] as const;
 
 export type GlossaryVisualizationId = (typeof GLOSSARY_VISUALIZATION_IDS)[number];

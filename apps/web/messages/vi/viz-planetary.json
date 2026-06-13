@@ -156,6 +156,60 @@
       "aria": "Thành phần khí quyển của thế giới đã chọn; chỉ số mất cân bằng đọc được {value}.",
       "hintDead": "Một thế giới chết lắng vào cân bằng hóa học — Sao Hỏa và Sao Kim đều hơn 95% CO₂, trơ lì và đã xong chuyện. Chẳng có gì để bơm và chẳng có gì lệch khỏi cân bằng, nên một kính viễn vọng từ xa đọc được: vô sinh.",
       "hintAlive": "Bầu khí quyển Trái Đất là điều bất khả thi: oxy và mêtan phản ứng cùng tồn tại, một hỗn hợp mà hóa học đáng lẽ phải xóa sổ. Chỉ một cái bơm sinh học không ngừng nghỉ mới giữ nó mở — và chính sự mất cân bằng đó, chứ không phải bất kỳ loại khí đơn lẻ nào, là dấu hiệu sự sống vững chắc nhất ta đọc được từ xa."
+    },
+    "exomoon": {
+      "title": "Cân bằng năng lượng vệ tinh",
+      "starlight": "Ánh sáng sao trực tiếp",
+      "planetshine": "Ánh sáng phản xạ hành tinh",
+      "giantIR": "Bức xạ hồng ngoại khổng lồ",
+      "tidalHeating": "Nhiệt triều",
+      "status": "Trạng thái",
+      "frozen": "Đóng băng (Tấm băng dày)",
+      "habitable": "Ôn đới (Nước lỏng tồn tại)",
+      "scorched": "Cháy sém (Thế giới dung nham)",
+      "hint": "Cân bằng bốn nguồn năng lượng để duy trì khí hậu ôn đới trên vệ tinh. Quá nhiều nhiệt làm sôi cạn đại dương, quá ít làm chúng đóng băng."
+    },
+    "tidalHeating": {
+      "title": "Nhiệt triều & Co bóp quỹ đạo elip",
+      "eccentricity": "Độ lệch tâm quỹ đạo",
+      "periapsis": "Cận điểm (Gần nhất)",
+      "apoapsis": "Viễn điểm (Xa nhất)",
+      "flexing": "Co bóp triều: Đang hoạt động",
+      "circular": "Quỹ đạo tròn: Ổn định",
+      "hint": "Tăng độ lệch tâm của quỹ đạo vệ tinh. Càng quét gần hành tinh khổng lồ, sức ép trọng lực càng mạnh, nung nóng lõi của nó."
+    },
+    "rocheLimit": {
+      "title": "Mô phỏng giới hạn Roche",
+      "radius": "Bán kính quỹ đạo",
+      "limit": "Giới hạn Roche",
+      "stable": "Vệ tinh ổn định",
+      "disintegrating": "Thủy triều xé toạc",
+      "ring": "Vành đai hành tinh hình thành",
+      "hint": "Kéo thanh trượt bán kính quỹ đạo. Bên trong giới hạn Roche, lực triều của hành tinh chủ vượt qua lực tự trọng lực của vệ tinh, xé toạc nó thành vành đai."
+    },
+    "radialVelocity": {
+      "title": "Vận tốc xuyên tâm (Sao lắc lư)",
+      "mass": "Khối lượng hành tinh",
+      "radius": "Bán kính quỹ đạo",
+      "blueShift": "Dịch xanh (Tiến lại gần)",
+      "redShift": "Dịch đỏ (Lùi ra xa)",
+      "hint": "Tăng khối lượng hành tinh hoặc giảm bán kính để làm ngôi sao lắc lư. Để ý dịch chuyển bước sóng: xanh khi tiến lại gần, đỏ khi lùi ra xa."
+    },
+    "directImaging": {
+      "title": "Chụp ảnh trực tiếp & Tấm chắn quang học",
+      "maskToggle": "Trượt tấm chắn quang học",
+      "contrast": "Độ tương phản / Phơi sáng",
+      "planetDetected": "Phát hiện hành tinh ngoại",
+      "starGlare": "Ánh sáng sao chói lòa",
+      "hint": "Không có tấm chắn coronagraph, ánh sáng chói của sao hoàn toàn làm mờ mắt chúng ta. Hãy bật tấm chắn để chặn ánh sáng sao và để lộ hành tinh."
+    },
+    "transitTimingVariation": {
+      "title": "Biến thiên thời gian quá cảnh (TTV)",
+      "companion": "Thêm hành tinh đồng hành",
+      "deviation": "Lệch thời gian quá cảnh",
+      "regular": "Quá cảnh tuần hoàn nghiêm ngặt",
+      "perturbed": "Nhiễu loạn hấp dẫn (TTV)",
+      "hint": "TTV giúp phát hiện các hành tinh vô hình. Bật hành tinh đồng hành để xem trò chơi kéo co hấp dẫn làm hành tinh chính quá cảnh sớm hoặc muộn."
     }
   }
 }

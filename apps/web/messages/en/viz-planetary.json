@@ -156,6 +156,60 @@
       "aria": "Atmospheric composition of the chosen world; the disequilibrium index reads {value}.",
       "hintDead": "A dead world settles into chemical equilibrium — Mars and Venus are both more than 95% CO₂, inert and finished. There is nothing to pump and nothing out of balance, so a distant telescope reads: lifeless.",
       "hintAlive": "Earth's air is impossible: reactive oxygen and methane coexisting, a mixture chemistry should erase. Only a ceaseless biological pump holds it open — and that disequilibrium, not any single gas, is the most robust signature of life we can read from afar."
+    },
+    "exomoon": {
+      "title": "Exomoon Energy Balance",
+      "starlight": "Direct Starlight",
+      "planetshine": "Planetshine (Reflected)",
+      "giantIR": "Giant IR Radiation",
+      "tidalHeating": "Tidal Heating",
+      "status": "State",
+      "frozen": "Frozen (Ice Sheet)",
+      "habitable": "Temperate (Liquid Water)",
+      "scorched": "Scorched (Lava World)",
+      "hint": "Balance the four energy sources to maintain a habitable climate on the exomoon. Too much heat boils the oceans, too little freezes them."
+    },
+    "tidalHeating": {
+      "title": "Tidal Heating & Elliptical Flexing",
+      "eccentricity": "Orbital Eccentricity",
+      "periapsis": "Periapsis (Closest)",
+      "apoapsis": "Apoapsis (Farthest)",
+      "flexing": "Tidal Flexing: Active",
+      "circular": "Circular Orbit: Stable",
+      "hint": "Increase the eccentricity of the moon's orbit. The closer it sweeps to the giant, the more intense the gravitational squeeze, heating its core."
+    },
+    "rocheLimit": {
+      "title": "Roche Limit Breakup Simulator",
+      "radius": "Orbital Radius",
+      "limit": "Roche Limit",
+      "stable": "Stable Moon",
+      "disintegrating": "Tidal Disintegration",
+      "ring": "Planetary Ring Formed",
+      "hint": "Drag the orbital radius slider. Inside the Roche Limit, the host planet's tidal forces overcome the moon's self-gravity, tearing it into a ring."
+    },
+    "radialVelocity": {
+      "title": "Radial Velocity (Doppler Wobble)",
+      "mass": "Planet Mass",
+      "radius": "Orbital Radius",
+      "blueShift": "Blue-shift (Approaching)",
+      "redShift": "Red-shift (Receding)",
+      "hint": "Increase planet mass or decrease radius to make the star wobble. Note the wavelength shift: blue when approaching, red when receding."
+    },
+    "directImaging": {
+      "title": "Direct Imaging & Coronagraph Mask",
+      "maskToggle": "Slide Coronagraph Mask",
+      "contrast": "Contrast/Exposure",
+      "planetDetected": "Exoplanet Detected",
+      "starGlare": "Star Glare Overwhelming",
+      "hint": "Without a coronagraph mask, the star's glare completely blinds us. Turn on the mask to block the star's light and reveal the planet."
+    },
+    "transitTimingVariation": {
+      "title": "Transit Timing Variations (TTV)",
+      "companion": "Add Gravitational Companion",
+      "deviation": "Transit Time Deviation",
+      "regular": "Strict Periodic Transit",
+      "perturbed": "Gravitational Perturbations (TTV)",
+      "hint": "TTV detects unseen planets. Toggle the companion planet to see the gravitational tug-of-war pull the main planet, making transits arrive early or late."
     }
   }
 }
