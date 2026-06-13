@@ -43,7 +43,7 @@ export function TorukFlightEngine({ caption, className }: { caption?: string; cl
     >
       <div className="flex flex-col gap-6 sm:flex-row sm:items-stretch">
         <svg viewBox={`0 0 ${W_SVG} ${H_SVG}`} className="w-full sm:w-[55%]" role="img" aria-label={t("title")}>
-          <GlowDefs idBase={uid} tones={["teal", "cyan", "amber", "magenta", "subtle"]} />
+          <GlowDefs idBase={uid} tones={["teal", "cyan", "amber", "magenta"]} />
           
           {/* Ground line */}
           <line x1={20} y1={yGround} x2={W_SVG - 20} y2={yGround} stroke="var(--border-strong)" strokeWidth={2} />

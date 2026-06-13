@@ -27,7 +27,7 @@ export function OccamsRazorEngine({ caption, className }: { caption?: string; cl
   const angle = diff * 4; // degrees
   
   const winner = a < b ? "A" : b < a ? "B" : "Tie";
-  const tone = winner === "A" ? "cyan" : winner === "B" ? "magenta" : "subtle";
+  const tone = winner === "A" ? "cyan" : winner === "B" ? "magenta" : undefined;
 
   return (
     <VizFigure
@@ -40,7 +40,7 @@ export function OccamsRazorEngine({ caption, className }: { caption?: string; cl
     >
       <div className="flex flex-col gap-6 lg:flex-row lg:items-stretch">
         <svg viewBox={`0 0 ${W} ${H}`} className="w-full lg:w-[60%]" role="img">
-          <GlowDefs idBase={uid} tones={["teal", "cyan", "magenta", "subtle"]} />
+          <GlowDefs idBase={uid} tones={["cyan", "magenta"]} />
           
           {/* Base */}
           <path d={`M ${CX - 15} ${H - 20} L ${CX + 15} ${H - 20} L ${CX} ${CY} Z`} fill="var(--surface)" stroke="var(--border-strong)" strokeWidth={2} />
