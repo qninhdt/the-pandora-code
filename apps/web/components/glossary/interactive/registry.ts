@@ -30,6 +30,7 @@ export const GLOSSARY_VISUALIZATION_IDS = [
   "cohesion-tension",
   "dynamic-soaring",
   "square-cube-law",
+  "transmission-spectroscopy",
 ] as const;
 
 export type GlossaryVisualizationId = (typeof GLOSSARY_VISUALIZATION_IDS)[number];

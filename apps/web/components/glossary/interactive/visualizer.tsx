@@ -43,6 +43,7 @@ const GLOSSARY_VISUALIZATIONS: Record<
   "cohesion-tension": dynamic(() => import("./cohesion-tension"), { ssr: false }),
   "dynamic-soaring": dynamic(() => import("./dynamic-soaring"), { ssr: false }),
   "square-cube-law": dynamic(() => import("./square-cube-law"), { ssr: false }),
+  "transmission-spectroscopy": dynamic(() => import("./transmission-spectroscopy"), { ssr: false }),
 };
 
 interface GlossaryVisualizerProps {

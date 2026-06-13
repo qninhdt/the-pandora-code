@@ -219,6 +219,27 @@
       "observerPolyphemus": "Nhìn từ hành tinh mẹ: Mặt trăng tự quay",
       "observerPolyphemusLocked": "Nhìn từ hành tinh mẹ: Luôn thấy một mặt",
       "hint": "Chuyển đổi giữa trạng thái Chưa khóa và Đã khóa. Vệ tinh chưa khóa tự quay tự do; Vệ tinh bị khóa bị biến dạng thủy triều và luôn giữ một mặt hướng về hành tinh mẹ."
+    },
+    "transmissionSpectroscopy": {
+      "title": "Quang phổ truyền qua",
+      "subtitle": "Đọc công thức khí quyển ngoại hành tinh bằng cách lọc ánh sáng sao",
+      "selectAtmosphere": "Chọn kiểu khí quyển",
+      "earthLike": "Giống Trái Đất (N₂/O₂ + dấu vết sinh học)",
+      "pandoraLike": "Giống Pandora (Nhiều CO₂ + Xenon + H₂S)",
+      "gasGiant": "Hành tinh khí (H₂/He + nhiều CH₄)",
+      "lifeless": "Thế giới vô sinh (Cân bằng 95%+ CO₂)",
+      "atmoThickness": "Độ dày khí quyển",
+      "gasLegend": "Dấu vân tay quang phổ",
+      "methane": "Methane (CH₄)",
+      "co2": "Cacbon Dioxit (CO₂)",
+      "water": "Hơi nước (H₂O)",
+      "ozone": "Ozone / Oxy (O₃/O₂)",
+      "xenon": "Xenon (Xe)",
+      "h2s": "Hydro Sulfua (H₂S)",
+      "ammonia": "Amoniac (NH₃)",
+      "noDips": "Không phát hiện vạch hấp thụ dấu hiệu sinh học đáng kể",
+      "dipsFound": "Phát hiện các vạch hấp thụ rõ rệt!",
+      "hint": "Khi hành tinh đi ngang qua sao chủ, ánh sáng sao lọc qua vành khí quyển mỏng của nó. Các khí nhau hấp thụ ánh sáng ở những bước sóng cụ thể, tạo ra các 'vạch hấp thụ' đặc trưng trên đồ thị quang phổ. Hãy thay đổi khí quyển để đọc các công thức hóa học."
     }
   }
 }
