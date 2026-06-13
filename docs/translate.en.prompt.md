@@ -110,9 +110,10 @@ You MUST strictly follow the 5-step sequence below. **ULTIMATE RULE:** Do not ke
 
 **Step 3: Unbiased Subagent Evaluation (Agent: Strict Native Evaluation Coordinator)**
 - To avoid self-bias, you MUST NOT evaluate your own draft directly. For each section, you MUST use the `invoke_agent` tool (agent_name: "generalist").
-- The prompt you send to the subagent MUST be constructed by reading `i18n/templates/subagent_evaluator.prompt.md` and appending the English Source Text and your Draft Text.
-- The subagent's ONLY job is to find and state errors. It will NOT fix them.
-- Save the subagent's exact output to `3-evaluation.mdx` following `i18n/templates/3-evaluation.template.mdx` (Format: `- "<Bad Sentence>": <Reason>`).
+- **Prepare the Prompt:** Read the template `i18n/templates/subagent_evaluator.prompt.md`. Replace its placeholders (`{{CHAPTER_INFO}}`, `{{SOURCE_TEXT}}`, `{{DRAFT_TEXT}}`, `{{SECTION_INDEX}}`) with the actual chapter context, English source text, and your literal draft for that section.
+- Send this fully populated prompt to the subagent.
+- The subagent's ONLY job is to find and state errors hierarchically (by Heading, Paragraph 1, Paragraph 2...). It will NOT fix them.
+- Save the subagent's exact output to `3-evaluation.mdx` following `i18n/templates/3-evaluation.template.mdx`.
 
 **Step 4: Comprehensive Correction (Agent: Master Corrector)**
 - Read the subagent's evaluation. Fix ALL the errors identified.

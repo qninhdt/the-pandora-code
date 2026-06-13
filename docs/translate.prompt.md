@@ -111,9 +111,10 @@ Bạn BẮT BUỘC phải tuân thủ đúng trình tự 5 bước dưới đây
 
 **Bước 3: Subagent Đánh Giá Khách Quan (Agent: Strict Native Evaluation Coordinator)**
 - Để tránh thiên vị (self-reflection bias), bạn KHÔNG ĐƯỢC tự đánh giá bản nháp của mình. Với mỗi section, bạn BẮT BUỘC phải sử dụng tool `invoke_agent` (agent_name: "generalist").
-- Prompt gửi cho subagent PHẢI được tạo ra bằng cách đọc `i18n/templates/subagent_evaluator.prompt.md` và đính kèm Văn bản Nguồn tiếng Anh cùng Bản nháp của bạn.
-- Nhiệm vụ DUY NHẤT của subagent là tìm và nêu lỗi. Tuyệt đối không thực hiện sửa lỗi.
-- Lưu chính xác kết quả của subagent vào `3-evaluation.mdx` theo `i18n/templates/3-evaluation.template.mdx` (Định dạng: `- "<Câu dịch tệ>": <Lỗi sai>`).
+- **Chuẩn bị prompt:** Đọc file `i18n/templates/subagent_evaluator.prompt.md`. Thay thế các placeholder (`{{CHAPTER_INFO}}`, `{{SOURCE_TEXT}}`, `{{DRAFT_TEXT}}`, `{{SECTION_INDEX}}`) bằng thông tin thực tế của chapter, văn bản gốc tiếng Anh và bản nháp thô tương ứng của bạn.
+- Gửi toàn bộ prompt đã được điền đầy đủ dữ liệu này cho subagent.
+- Nhiệm vụ DUY NHẤT của subagent là tìm và nêu lỗi theo phân cấp (Tiêu đề, Đoạn 1, Đoạn 2...). Tuyệt đối không thực hiện sửa lỗi.
+- Lưu chính xác kết quả của subagent vào `3-evaluation.mdx` theo đúng cấu trúc của `i18n/templates/3-evaluation.template.mdx`.
 
 **Bước 4: Sửa Lỗi Toàn Diện (Agent: Master Corrector)**
 - Đọc bản đánh giá của subagent. Sửa TOÀN BỘ các lỗi đã được chỉ ra.
