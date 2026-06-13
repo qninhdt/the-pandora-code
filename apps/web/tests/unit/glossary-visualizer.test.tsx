@@ -6,6 +6,7 @@ import Chirality from "@/components/glossary/interactive/chirality";
 import Umwelt from "@/components/glossary/interactive/umwelt";
 import OccamsRazor from "@/components/glossary/interactive/occams-razor";
 import TidalLocking from "@/components/glossary/interactive/tidal-locking";
+import AtmosphericDisequilibrium from "@/components/glossary/interactive/atmospheric-disequilibrium";
 import Cladogram from "@/components/glossary/interactive/cladogram";
 import CountercurrentExchange from "@/components/glossary/interactive/countercurrent-exchange";
 import DirectImaging from "@/components/glossary/interactive/direct-imaging";
@@ -130,6 +131,13 @@ describe("Glossary Components Direct Mount", () => {
     renderWithIntl(<TidalLocking locale="en" />);
     expect(
       screen.getAllByText("Tidal Locking Simulator")[0],
+    ).toBeInTheDocument();
+  });
+
+  it("renders atmospheric-disequilibrium reaction", () => {
+    renderWithIntl(<AtmosphericDisequilibrium locale="en" />);
+    expect(
+      screen.getAllByText("Reading life off the air")[0],
     ).toBeInTheDocument();
   });
 
