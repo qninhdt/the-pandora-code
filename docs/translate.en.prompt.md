@@ -89,42 +89,39 @@ To shatter the structural barriers of machine learning systems and achieve this 
 
 ---
 
-### PART II. MULTI-PASS ITERATIVE TRANSLATION WORKFLOW
+### PART II. MULTI-PASS AUTOMATED BATCH WORKFLOW
 
-You MUST strictly follow the 4-step sequence below. **ULTIMATE RULE:** Do not keep any reasoning in your head or hide it in internal "thinking tokens". The entire thought process, drafts, and error lists **MUST be written in detail to files in the `/temp` directory** (with no length limits). You may output these as markdown code blocks representing the file contents if you lack direct file-writing capabilities.
+You MUST strictly follow the 5-step sequence below. **ULTIMATE RULE:** Do not keep any reasoning in your head. The entire thought process, drafts, evaluations, and corrections **MUST be written in detail to files**.
 
-**File Naming Rule:** To prevent overwriting data from previous translation sessions, generate a `{slug}` representing the current text (based on its title or first few words) and use it as a prefix for ALL temporary files. Example: `/temp/article-a-step1_analysis.md`.
+**Workflow & File Structure Rule:** You must process the document section by section. The workflow operates in phases across ALL sections. All outputs must be saved to `i18n/chapters/<chapter-slug-with-prefix-index>/<section-index>/<step-number>-<step-name>.mdx`.
+**Template Rule:** You MUST read the templates in `i18n/templates/` before generating the respective outputs to ensure correct formatting.
+
+**Phase 1: Batch Analysis & Drafting (Do this for ALL sections first)**
 
 **Step 1: Context, Terminology & Strategy Analysis (Agent: Senior Analyst)**
-
-- Write the entire analysis into the file `/temp/{slug}-step1_analysis.md`.
-- Explicitly output your entire reasoning process (in Vietnamese). DO NOT think silently.
-- Identify the Register (Field/Domain), Target Audience, Core Message, and Tone Characteristics.
-- Determine the Pronoun/Address Framework.
-- Extract and analyze **ALL** difficult technical terms, polysemous words, massive noun phrases, and cultural/linguistic bottlenecks (do not limit to 3-5). Finalize the translation approach for each term.
+- Analyze all sections. For each section, write the entire analysis into `1-analysis.mdx` following `i18n/templates/1-analysis.template.mdx`.
+- Explicitly output your entire reasoning process (in Vietnamese). Identify the Register, Audience, Tone, Pronouns, and extract ALL difficult terminology.
 
 **Step 2: Literal Semantic Draft (Agent: Base Translator)**
+- Draft all sections. For each section, save the full literal translation draft into `2-draft.mdx` following `i18n/templates/2-draft.template.mdx`.
+- The goal is 100% factual integrity and zero omissions. Sentences may be stiff.
 
-- Save the full literal translation draft into the file `/temp/{slug}-step2_draft.md`.
-- The ultimate goal is 100% factual integrity and zero omissions (100% semantic fidelity).
-- Preserve all formatting, markdown, and numbers. It is acceptable if sentences are stiff and carry "Translationese" as raw material. No length limits.
+**Phase 2: Subagent Evaluation, Correction & Finalization (Do this per section)**
 
-**Step 3: Rigorous Native Linguistic Evaluation (Agent: Strict Native Evaluation Coordinator)**
+**Step 3: Unbiased Subagent Evaluation (Agent: Strict Native Evaluation Coordinator)**
+- To avoid self-bias, you MUST NOT evaluate your own draft directly. For each section, you MUST use the `invoke_agent` tool (agent_name: "generalist").
+- The prompt you send to the subagent MUST be constructed by reading `i18n/templates/subagent_evaluator.prompt.md` and appending the English Source Text and your Draft Text.
+- The subagent's ONLY job is to find and state errors. It will NOT fix them.
+- Save the subagent's exact output to `3-evaluation.mdx` following `i18n/templates/3-evaluation.template.mdx` (Format: `- "<Bad Sentence>": <Reason>`).
 
-- Save the full evaluation report into the file `/temp/{slug}-step3_evaluation.md`.
-- Play the role of a hyper-critical native Editor-in-Chief, holding a magnifying glass to review the Draft (Step 2) against all 9 Linguistic Rules.
-- **Identify ALL "Translationese" errors** (NO LIMITS, do not stop at 3-5 errors. Exhaustively point out every single weakness). Evaluate based on:
-  1. Is the rhythm natural yet, or does it still linger on Western left-to-right structures? Are there any sentences too long that need breaking?
-  2. Is there an overuse of passive markers ("bị/được/bởi") or relative pronouns ("người mà/cái mà/điều mà")?
-  3. Are there any phrases heavily nominalized that need verbalization?
-  4. Would a native Vietnamese person actually use this nuance and vocabulary?
-- Write out detailed restructuring proposals and corrections for **every single error** found.
+**Step 4: Comprehensive Correction (Agent: Master Corrector)**
+- Read the subagent's evaluation. Fix ALL the errors identified.
+- Save the corrections to `4-correction.mdx` following `i18n/templates/4-correction.template.mdx` (Format: `- "<Bad Sentence>" -> "<Natural Sentence>"`).
 
-**Step 4: The Ultimate Masterpiece Translation (Master Editorial Director)**
-
-- Save the final polished translation into the file `/temp/{slug}-step4_final.md`.
-- This must be a linguistic work of art: seamless rhythm, accurate punctuation, and 100% native Vietnamese vocabulary. Leave no remnants of English syntax behind.
-- **Output Format Rule:** After writing to the file, **print the entirety of this official translated text into the chat output, neatly contained within ONE single Markdown code block.** Do not write any additional comments, explanations, or greetings at the beginning or end of your response.
+**Step 5: The Ultimate Masterpiece Translation (Master Editorial Director)**
+- Create the final polished translation integrating all corrections.
+- Save the final output to `5-final.mdx` following `i18n/templates/5-final.template.mdx`.
+- **Output Format Rule:** After generating all `5-final.mdx` files, combine them and print the entirety of the official translated text into the chat output, neatly contained within ONE single Markdown code block. Do not write any additional comments.
 
 ---
 

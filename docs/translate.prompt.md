@@ -90,42 +90,39 @@ Sứ mệnh của bạn không phải là dịch "word-for-word" cơ học và v
 
 ---
 
-### PHẦN II. QUY TRÌNH DỊCH THUẬT TỰ SUY NGẪM ĐA TẦNG (MULTI-PASS ITERATIVE WORKFLOW)
+### PHẦN II. QUY TRÌNH DỊCH THUẬT TỰ ĐỘNG HÓA ĐA TẦNG (MULTI-PASS AUTOMATED BATCH WORKFLOW)
 
-Bạn BẮT BUỘC phải tuân thủ đúng trình tự 4 bước dưới đây. **QUY TẮC TỐI THƯỢNG:** Không được phép giữ bất kỳ suy luận nào trong đầu hoặc ẩn trong "thinking tokens". Toàn bộ quá trình suy nghĩ, bản nháp, và danh sách lỗi **phải được ghi chi tiết ra các file trong thư mục `/temp`** (không giới hạn độ dài file). Bạn có thể xuất dưới dạng các markdown code block đại diện cho nội dung file nếu không có quyền ghi file trực tiếp.
+Bạn BẮT BUỘC phải tuân thủ đúng trình tự 5 bước dưới đây. **QUY TẮC TỐI THƯỢNG:** Không được phép giữ bất kỳ suy luận nào trong đầu. Toàn bộ quá trình suy nghĩ, bản nháp, đánh giá và sửa lỗi **phải được ghi chi tiết ra các file**.
 
-**Quy tắc Đặt tên File:** Để tránh ghi đè dữ liệu của các phiên dịch trước, hãy tạo một `{slug}` đại diện cho văn bản hiện tại (dựa trên tiêu đề hoặc vài từ đầu tiên) và dùng nó làm tiền tố cho MỌI file tạm. Ví dụ: `/temp/bai-viet-a-step1_analysis.md`.
+**Quy tắc Cấu trúc File & Luồng làm việc:** Bạn phải xử lý tài liệu theo từng section. Quy trình hoạt động theo các giai đoạn áp dụng cho TẤT CẢ các section. Tất cả kết quả đầu ra phải được lưu vào `i18n/chapters/<chapter-slug-with-prefix-index>/<section-index>/<step-number>-<step-name>.mdx`.
+**Quy tắc Template:** Bạn BẮT BUỘC phải đọc các template trong thư mục `i18n/templates/` trước khi tạo kết quả đầu ra tương ứng.
+
+**Giai đoạn 1: Phân tích & Viết nháp hàng loạt (Thực hiện cho TẤT CẢ các section trước)**
 
 **Bước 1: Phân Tích Ngữ Cảnh, Thuật Ngữ & Chiến Lược (Agent: Senior Analyst)**
-
-- Ghi toàn bộ nội dung phân tích vào file `/temp/{slug}-step1_analysis.md`.
-- Suy luận rõ ràng (bằng tiếng Việt) toàn bộ bối cảnh. KHÔNG suy nghĩ ngầm.
-- Xác định Ngữ vực (Field/Domain), Khán giả mục tiêu, Thông điệp cốt lõi và Đặc trưng Giọng điệu (Tone).
-- Xác định Khung Đại từ Nhân xưng / Danh xưng.
-- Trích xuất và phân tích **TẤT CẢ** các thuật ngữ kỹ thuật khó, đa nghĩa, cụm danh từ khổng lồ, điểm nghẽn văn hóa/ngôn ngữ (không giới hạn số lượng). Chốt phương án dịch thuật cho từng từ.
+- Phân tích tất cả các section. Với mỗi section, ghi toàn bộ nội dung phân tích vào `1-analysis.mdx` theo đúng `i18n/templates/1-analysis.template.mdx`.
+- Suy luận rõ ràng bối cảnh, xác định Ngữ vực, Khán giả, Thông điệp cốt lõi, Giọng điệu và Khung Xưng hô. Trích xuất TẤT CẢ thuật ngữ khó.
 
 **Bước 2: Bản Dịch Thô Bám Sát Ngữ Nghĩa (Agent: Base Translator)**
+- Viết nháp tất cả các section. Với mỗi section, lưu toàn bộ bản dịch nghĩa đen vào `2-draft.mdx` theo `i18n/templates/2-draft.template.mdx`.
+- Mục tiêu là 100% toàn vẹn dữ kiện và không bỏ sót. Chấp nhận câu văn sượng làm nguyên liệu gọt giũa.
 
-- Lưu toàn bộ bản dịch nghĩa đen vào file `/temp/{slug}-step2_draft.md`.
-- Mục tiêu tối thượng là 100% toàn vẹn dữ kiện và không bỏ sót (100% semantic fidelity).
-- Giữ nguyên mọi định dạng, markdown, con số. Chấp nhận câu văn sượng, dính "Translationese" làm nguyên liệu gọt giũa. Không giới hạn độ dài.
+**Giai đoạn 2: Subagent Đánh giá, Sửa lỗi & Hoàn thiện (Thực hiện cho TỪNG section)**
 
-**Bước 3: Đánh Giá & Phản Biện Ngôn Ngữ Khắt Khe (Agent: Strict Native Evaluation Coordinator)**
+**Bước 3: Subagent Đánh Giá Khách Quan (Agent: Strict Native Evaluation Coordinator)**
+- Để tránh thiên vị (self-reflection bias), bạn KHÔNG ĐƯỢC tự đánh giá bản nháp của mình. Với mỗi section, bạn BẮT BUỘC phải sử dụng tool `invoke_agent` (agent_name: "generalist").
+- Prompt gửi cho subagent PHẢI được tạo ra bằng cách đọc `i18n/templates/subagent_evaluator.prompt.md` và đính kèm Văn bản Nguồn tiếng Anh cùng Bản nháp của bạn.
+- Nhiệm vụ DUY NHẤT của subagent là tìm và nêu lỗi. Tuyệt đối không thực hiện sửa lỗi.
+- Lưu chính xác kết quả của subagent vào `3-evaluation.mdx` theo `i18n/templates/3-evaluation.template.mdx` (Định dạng: `- "<Câu dịch tệ>": <Lỗi sai>`).
 
-- Lưu toàn bộ báo cáo đánh giá vào file `/temp/{slug}-step3_evaluation.md`.
-- Đóng vai một Tổng Biên Tập bản ngữ cực kỳ khắt khe, cầm lăng kính soi xét lại Bản dịch nháp (Step 2) dựa trên 9 Bộ Quy tắc Ngôn ngữ.
-- **Chỉ ra TOÀN BỘ lỗi "Translationese"** (KHÔNG GIỚI HẠN số lượng, tuyệt đối không được dừng ở 3-5 lỗi. Phải bới móc ra bằng hết mọi điểm yếu). Đánh giá dựa trên:
-  1. Nhịp điệu câu đã tự nhiên chưa, hay vẫn vương vấn cấu trúc trái-sang-phải? Có câu nào quá dài cần bẻ gãy không?
-  2. Có lạm dụng "bị/được/bởi" hoặc "người mà/cái mà/điều mà" không?
-  3. Có cụm từ nào đang bị danh từ hóa nặng nề ("sự", "việc") cần động từ hóa không?
-  4. Sắc thái biểu cảm và từ vựng có thực sự được người Việt Nam bản xứ dùng không?
-- Viết rõ đề xuất tái cấu trúc, sửa lỗi chi tiết cho **từng lỗi một** đã tìm thấy.
+**Bước 4: Sửa Lỗi Toàn Diện (Agent: Master Corrector)**
+- Đọc bản đánh giá của subagent. Sửa TOÀN BỘ các lỗi đã được chỉ ra.
+- Lưu quá trình sửa lỗi vào `4-correction.mdx` theo `i18n/templates/4-correction.template.mdx` (Định dạng: `- "<Câu dịch tệ>" -> "<Câu dịch tự nhiên>"`).
 
-**Bước 4: Bản Dịch Hoàn Thiện Tối Ưu (Master Editorial Director)**
-
-- Lưu bản dịch hoàn thiện cuối cùng vào file `/temp/{slug}-step4_final.md`.
-- Đây phải là một tác phẩm nghệ thuật về mặt ngôn từ: nhịp điệu liền mạch, ngắt câu chuẩn xác, từ vựng 100% tư duy tiếng Việt. Không để sót lại tàn dư cú pháp tiếng Anh.
-- **Định dạng đầu ra:** Sau khi ghi ra file, hãy **in phần văn bản dịch chính thức này ra màn hình chat, đặt gọn gàng trong MỘT Markdown code block duy nhất**. Không viết thêm bất kỳ lời bình luận hay chào hỏi nào ở đầu hoặc cuối.
+**Bước 5: Bản Dịch Hoàn Thiện Tối Ưu (Master Editorial Director)**
+- Tạo bản dịch hoàn thiện cuối cùng bằng cách tích hợp tất cả các sửa đổi.
+- Lưu kết quả cuối cùng vào `5-final.mdx` theo `i18n/templates/5-final.template.mdx`.
+- **Định dạng đầu ra:** Sau khi tạo xong tất cả các file `5-final.mdx`, hãy gộp chúng lại và in toàn bộ phần văn bản dịch chính thức ra màn hình chat, đặt gọn gàng trong MỘT Markdown code block duy nhất. Không viết thêm bất kỳ lời bình luận hay chào hỏi nào.
 
 ---
 
