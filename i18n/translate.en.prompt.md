@@ -117,10 +117,10 @@ You MUST strictly follow the 5-step sequence below based on the **BATCH-FIRST** 
 - **Task:** Provide the subagent with the list of all sections to be evaluated, including the paths to the original text and the corresponding literal drafts (\`2-draft.mdx\`).
 - The subagent will read \`i18n/subagent_evaluator.prompt.md\` and perform evaluations for ALL sections, writing the results into the respective \`3-evaluation.mdx\` files (adhering to the one-write-per-turn rule).
 - You must wait for the subagent to complete the entire phase before proceeding to Step 4.
-  **STEP 4: Comprehensive Correction (Batch)**
+  **STEP 4: Comprehensive Correction (Batch) (Agent: Master Corrector)**
 - After receiving error reports for all sections, proceed with corrections.
+- **CORRECTION DISCIPLINE:** The evaluating subagent may provide some suggestions or directions for fixing errors. However, you MUST TREAT THEM ONLY AS REFERENCES. It is STRICTLY FORBIDDEN to blindly copy or apply those suggestions without re-checking them against the original context and translation rules. You are solely responsible for crafting the final, most natural and flawless correction.
 - Save corrections to `4-correction.mdx` for ALL sections (Format: `- "<Awkward Sentence>" -> "<Natural Sentence>"`).
-
 **STEP 5: The Ultimate Masterpiece Translation & Merging**
 
 - After corrections are done for all sections, create the final polished translation for each, saving to `5-final.mdx`.

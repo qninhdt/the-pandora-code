@@ -118,10 +118,10 @@ Bạn BẮT BUỘC phải tuân thủ đúng trình tự 5 bước dưới đây
 - **Nhiệm vụ:** Gửi cho subagent danh sách tất cả các section cần đánh giá, kèm theo đường dẫn đến file văn bản gốc và file nháp (\`2-draft.mdx\`) tương ứng.
 - Subagent sẽ đọc \`i18n/subagent_evaluator.prompt.md\` và thực hiện đánh giá cho TẤT CẢ các section, ghi kết quả vào các file \`3-evaluation.mdx\` tương ứng (tuân thủ quy tắc mỗi turn ghi 1 file).
 - Bạn đợi subagent hoàn thành toàn bộ phase trước khi chuyển sang Bước 4.
-  **BƯỚC 4: Sửa Lỗi Toàn Diện (Hàng loạt)**
+  **BƯỚC 4: Sửa Lỗi Toàn Diện (Hàng loạt) (Agent: Master Corrector)**
 - Sau khi có đầy đủ report lỗi của toàn bộ các section, tiến hành sửa lỗi.
-- Lưu quá trình sửa lỗi vào `4-correction.mdx` cho TẤT CẢ các section (Format: `- "<Câu sượng>" -> "<Câu mượt>"`).
-
+- **KỶ LUẬT SỬA LỖI:** Subagent đánh giá có thể đưa ra một số gợi ý hoặc định hướng sửa lỗi. Tuy nhiên, bạn CHỈ ĐƯỢC PHÉP XEM CHÚNG NHƯ TÀI LIỆU THAM KHẢO. Tuyệt đối CẤM sao chép hoặc áp dụng ngay lập tức các gợi ý đó mà không kiểm chứng lại (re-check) với ngữ cảnh của bản gốc và các quy tắc dịch thuật. Bạn phải tự mình chịu trách nhiệm đưa ra bản sửa lỗi cuối cùng mượt mà và tự nhiên nhất.
+- Lưu quá trình sửa lỗi vào `4-correction.mdx` cho TẤT CẢ các section (Định dạng: `- "<Câu sượng>" -> "<Câu mượt>"`).
 **BƯỚC 5: Bản Dịch Hoàn Thiện Tối Ưu & Gộp File**
 
 - Sau khi đã sửa lỗi xong cho toàn bộ, tạo bản dịch hoàn thiện cuối cùng cho từng section, lưu vào `5-final.mdx`.
