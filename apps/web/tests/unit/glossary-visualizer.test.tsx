@@ -10,6 +10,7 @@ import AtmosphericDisequilibrium from "@/components/glossary/interactive/atmosph
 import HalfLife from "@/components/glossary/interactive/half-life";
 import QuantumLocking from "@/components/glossary/interactive/quantum-locking";
 import HadleyCell from "@/components/glossary/interactive/hadley-cell";
+import PercolationTheory from "@/components/glossary/interactive/percolation-theory";
 import Cladogram from "@/components/glossary/interactive/cladogram";
 import CountercurrentExchange from "@/components/glossary/interactive/countercurrent-exchange";
 import DirectImaging from "@/components/glossary/interactive/direct-imaging";
@@ -162,6 +163,13 @@ describe("Glossary Components Direct Mount", () => {
     renderWithIntl(<HadleyCell locale="en" />);
     expect(
       screen.getAllByText("Atmospheric circulation")[0],
+    ).toBeInTheDocument();
+  });
+
+  it("renders percolation-theory network", () => {
+    renderWithIntl(<PercolationTheory locale="en" />);
+    expect(
+      screen.getAllByText("Burn it down — and find the cliff")[0],
     ).toBeInTheDocument();
   });
 

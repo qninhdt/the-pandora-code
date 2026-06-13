@@ -31,6 +31,7 @@ const GLOSSARY_VISUALIZATIONS: Record<
   "half-life": dynamic(() => import("./half-life"), { ssr: false }),
   "quantum-locking": dynamic(() => import("./quantum-locking"), { ssr: false }),
   "hadley-cell": dynamic(() => import("./hadley-cell"), { ssr: false }),
+  "percolation-theory": dynamic(() => import("./percolation-theory"), { ssr: false }),
 };
 
 interface GlossaryVisualizerProps {

@@ -22,6 +22,7 @@ export const GLOSSARY_VISUALIZATION_IDS = [
   "half-life",
   "quantum-locking",
   "hadley-cell",
+  "percolation-theory",
 ] as const;
 
 export type GlossaryVisualizationId = (typeof GLOSSARY_VISUALIZATION_IDS)[number];
