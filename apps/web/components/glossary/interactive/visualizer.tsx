@@ -18,6 +18,7 @@ const GLOSSARY_VISUALIZATIONS: Record<
   "transit-timing-variation": dynamic(() => import("./transit-timing-variation"), { ssr: false }),
   "hox-genes": dynamic(() => import("./hox-genes"), { ssr: false }),
   "niche-partitioning": dynamic(() => import("./niche-partitioning"), { ssr: false }),
+  "countercurrent-exchange": dynamic(() => import("./countercurrent-exchange"), { ssr: false }),
 };
 
 interface GlossaryVisualizerProps {

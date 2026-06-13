@@ -1,4 +1,5 @@
 import AlphaCentauri from "@/components/glossary/interactive/alpha-centauri";
+import CountercurrentExchange from "@/components/glossary/interactive/countercurrent-exchange";
 import DirectImaging from "@/components/glossary/interactive/direct-imaging";
 import Exomoon from "@/components/glossary/interactive/exomoon";
 import HabitableZone from "@/components/glossary/interactive/habitable-zone";
@@ -62,6 +63,11 @@ describe("Glossary Components Direct Mount", () => {
   it("renders niche-partitioning layers", () => {
     renderWithIntl(<NichePartitioning locale="en" />);
     expect(screen.getAllByText("One forest, divided into floors")[0]).toBeInTheDocument();
+  });
+
+  it("renders countercurrent-exchange simulator", () => {
+    renderWithIntl(<CountercurrentExchange locale="en" />);
+    expect(screen.getAllByText("Gill lamella: flip the blood")[0]).toBeInTheDocument();
   });
 
   it("returns null for unregistered terms in GlossaryVisualizer", () => {
