@@ -29,6 +29,7 @@ const GLOSSARY_VISUALIZATIONS: Record<
   "tidal-locking": dynamic(() => import("./tidal-locking"), { ssr: false }),
   "atmospheric-disequilibrium": dynamic(() => import("./atmospheric-disequilibrium"), { ssr: false }),
   "half-life": dynamic(() => import("./half-life"), { ssr: false }),
+  "quantum-locking": dynamic(() => import("./quantum-locking"), { ssr: false }),
 };
 
 interface GlossaryVisualizerProps {

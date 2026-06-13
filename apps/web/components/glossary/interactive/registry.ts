@@ -20,6 +20,7 @@ export const GLOSSARY_VISUALIZATION_IDS = [
   "tidal-locking",
   "atmospheric-disequilibrium",
   "half-life",
+  "quantum-locking",
 ] as const;
 
 export type GlossaryVisualizationId = (typeof GLOSSARY_VISUALIZATION_IDS)[number];
