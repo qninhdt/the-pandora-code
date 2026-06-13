@@ -99,7 +99,10 @@ You MUST strictly follow the 5-step sequence below based on the **BATCH-FIRST** 
 - **Section Segmentation Rule:** The number and length of each section MUST be determined EXACTLY by the existing headings (e.g., `##`, `###`) in the English source text.
 - **Sequential Execution Rule:** Complete STEP 1 for ALL sections -> then STEP 2 for ALL sections -> and so on until STEP 5 is finished.
 
-- **FILE WRITING LIMIT:** Strictly FORBIDDEN to perform multiple file writing commands (\`write_file\` or \`replace\`) in a single LLM turn. Each file (e.g., \`1-analysis.mdx\` for Section 1, then \`1-analysis.mdx\` for Section 2) MUST be written in separate, sequential turns.
+- **FILE WRITING LIMIT & SCRIPT BAN:** 
+  1. Strictly FORBIDDEN to perform multiple file writing commands (`write_file` or `replace`) in a single LLM turn. 
+  2. STRICTLY FORBIDDEN to use scripts (Bash, Python, Node.js...) via the `run_shell_command` tool to automate creating/writing multiple files at once as a loophole. 
+  3. Each file for each section MUST be written using the standard `write_file` tool in completely separate, sequential turns.
 
 **STEP 1: Context, Terminology & Strategy Analysis (Batch)**
 

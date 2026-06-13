@@ -100,7 +100,10 @@ Bạn BẮT BUỘC phải tuân thủ đúng trình tự 5 bước dưới đây
 - **Quy tắc phân chia Section:** Số lượng và độ dài của mỗi section PHẢI dựa CHÍNH XÁC vào các heading (ví dụ: `##`, `###`) có sẵn trong văn bản gốc tiếng Anh.
 - **Quy tắc Thứ tự thực hiện:** Thực hiện xong BƯỚC 1 cho TẤT CẢ các section -> rồi mới sang BƯỚC 2 cho TẤT CẢ các section -> và cứ thế cho đến hết BƯỚC 5.
 
-- **HẠN CHẾ GHI FILE:** Tuyệt đối NGHIÊM CẤM việc thực hiện nhiều lệnh ghi file (\`write_file\` hoặc \`replace\`) trong cùng một lượt (turn) của LLM. Mỗi file (ví dụ: \`1-analysis.mdx\` của section 1, sau đó là \`1-analysis.mdx\` của section 2) BẮT BUỘC phải được ghi trong các lượt riêng biệt và tuần tự.
+- **HẠN CHẾ GHI FILE VÀ CẤM DÙNG SCRIPT:** 
+  1. Tuyệt đối NGHIÊM CẤM việc thực hiện nhiều lệnh ghi file (`write_file` hoặc `replace`) trong cùng một lượt (turn). 
+  2. NGHIÊM CẤM sử dụng các đoạn script (Bash, Python, Node.js...) thông qua công cụ `run_shell_command` để tự động hóa việc tạo/ghi nhiều file cùng lúc nhằm lách luật. 
+  3. Mỗi file của mỗi section BẮT BUỘC phải được ghi bằng công cụ `write_file` chuẩn của hệ thống trong các lượt (turns) hoàn toàn riêng biệt và tuần tự.
 
 **BƯỚC 1: Phân Tích Ngữ Cảnh, Thuật Ngữ & Chiến Lược (Hàng loạt)**
 

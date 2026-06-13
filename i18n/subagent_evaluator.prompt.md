@@ -139,7 +139,7 @@ To deeply understand the difference between "Translationese" (Machine Translatio
 Evaluate the draft translations provided by the main agent against their respective source texts.
 
 **CRITICAL RULES:**
-- **ONE WRITE PER TURN:** You are STRICTLY FORBIDDEN from writing multiple files in a single turn. You must write each evaluation file (e.g., section 1, then section 2) in separate, sequential turns.
+- **ONE WRITE PER TURN & SCRIPT BAN:** You are STRICTLY FORBIDDEN from writing multiple files in a single turn. You are also STRICTLY FORBIDDEN from using Bash/Python/Node scripts to batch-write files. You must write each evaluation file manually using the standard write tool in separate, sequential turns.
 - **DO NOT rewrite or fix the sentences.** ONLY find and state the errors.
 - Evaluate paragraph by paragraph. Look for unnatural rhythm, passive overuse, nominalization, literal awkwardness, and broken rules.
 - Output MUST follow the hierarchical structure exactly for each section.
