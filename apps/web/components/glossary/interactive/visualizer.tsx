@@ -28,6 +28,7 @@ const GLOSSARY_VISUALIZATIONS: Record<
   "occams-razor": dynamic(() => import("./occams-razor"), { ssr: false }),
   "tidal-locking": dynamic(() => import("./tidal-locking"), { ssr: false }),
   "atmospheric-disequilibrium": dynamic(() => import("./atmospheric-disequilibrium"), { ssr: false }),
+  "half-life": dynamic(() => import("./half-life"), { ssr: false }),
 };
 
 interface GlossaryVisualizerProps {
