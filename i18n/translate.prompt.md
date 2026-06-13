@@ -95,30 +95,35 @@ Sứ mệnh của bạn không phải là dịch "word-for-word" cơ học và v
 Bạn BẮT BUỘC phải tuân thủ đúng trình tự 6 bước dưới đây theo nguyên tắc **BATCH-FIRST**: Phải hoàn thành toàn bộ các section của bước hiện tại trước khi được phép chuyển sang bước kế tiếp. Tuyệt đối không được thực hiện kiểu "cuốn chiếu".
 
 **Quy tắc Cấu trúc File & Luồng làm việc:**
+
 - Kết quả đầu ra phải được lưu vào `i18n/chapters/<chapter-slug>/section-XX/<step-name>.mdx`.
 - **Quy tắc phân chia Section:** Số lượng và độ dài của mỗi section PHẢI dựa CHÍNH XÁC vào các heading (ví dụ: `##`, `###`) có sẵn trong văn bản gốc.
-- **HẠN CHẾ GHI FILE VÀ CẤM DÙNG SCRIPT:** 
-  1. Tuyệt đối NGHIÊM CẤM ghi nhiều file trong cùng một lượt (turn). 
-  2. NGHIÊM CẤM sử dụng script (Bash, Python...) để tự động hóa ghi nhiều file cùng lúc nhằm lách luật. 
+- **HẠN CHẾ GHI FILE VÀ CẤM DÙNG SCRIPT:**
+  1. Tuyệt đối NGHIÊM CẤM ghi nhiều file trong cùng một lượt (turn).
+  2. NGHIÊM CẤM sử dụng script (Bash, Python...) để tự động hóa ghi nhiều file cùng lúc nhằm lách luật.
   3. Mỗi file BẮT BUỘC phải được ghi bằng công cụ `write_file` chuẩn của hệ thống trong các lượt hoàn toàn riêng biệt.
 - **Quy tắc Thứ tự thực hiện:** Xong BƯỚC 1 cho TẤT CẢ các section -> sang BƯỚC 2 cho TẤT CẢ các section -> và cứ thế cho đến BƯỚC 6.
 
 **BƯỚC 1: Phân Tích Tổng Quan Chapter (Root)**
+
 - Tạo DUY NHẤT 1 file `0-chapter-analysis.mdx` ở thư mục gốc của chapter (`i18n/chapters/<chapter-slug>/`) theo `i18n/templates/0-chapter-analysis.template.mdx`.
 - Phân tích Ngữ vực chung, Khán giả mục tiêu, Thông điệp cốt lõi toàn chương, Giọng điệu chủ đạo, và Hệ thống Thuật ngữ xuyên suốt.
 
 **BƯỚC 2: Phân Tích Chi Tiết Section (Hàng loạt)**
+
 - Phân tích sâu tất cả các section. Với mỗi section, lưu vào `1-section-analysis.mdx` theo `i18n/templates/1-section-analysis.template.mdx`.
 - Xác định mục tiêu cụ thể, xử lý trước các điểm nghẽn cú pháp/ẩn dụ và thuật ngữ đặc thù của section đó.
 
 **BƯỚC 3: Dịch Kép - Dual Drafting bằng Subagents (Hàng loạt)**
+
 - Bạn KHÔNG tự dịch. Bạn PHẢI triệu hồi **2 Subagents** (generalist agents) ĐỘC LẬP:
   - **Subagent 1** tạo `2-draft-1.mdx` (Bản dịch thứ nhất) cho TẤT CẢ các section.
-  - **Subagent 2** tạo `2-draft-2.mdx` (Bản dịch thứ hai, từ vựng/diễn đạt khác) cho TẤT CẢ các section.
-- Cả hai Subagent đều dùng chung prompt template `i18n/templates/subagent_translator.prompt.md` và format đầu ra theo `i18n/templates/2-draft.template.mdx`.
+  - **Subagent 2** tạo `2-draft-2.mdx` (Bản dịch thứ hai) cho TẤT CẢ các section.
+- Cả hai Subagent đều dùng chung prompt template `i18n/subagent_translator.prompt.md` và format đầu ra theo `i18n/templates/2-draft.template.mdx`.
 - **KỶ LUẬT CÁCH LY:** Tuyệt đối CẤM Subagent này đọc file draft do Subagent kia tạo ra.
 
 **BƯỚC 4: Subagent Đánh Giá Toàn Diện (Hàng loạt)**
+
 - Bạn KHÔNG tự đánh giá. Bạn PHẢI triệu hồi **2 Subagents Đánh giá** (generalist agents) ĐỘC LẬP:
   - **Subagent Eval 1** CHỈ đọc và đánh giá `2-draft-1.mdx` của tất cả các section, xuất ra `3-eval-1.mdx`.
   - **Subagent Eval 2** CHỈ đọc và đánh giá `2-draft-2.mdx` của tất cả các section, xuất ra `3-eval-2.mdx`.
@@ -126,7 +131,7 @@ Bạn BẮT BUỘC phải tuân thủ đúng trình tự 6 bước dưới đây
 - **KỶ LUẬT CÁCH LY:** CẤM Subagent Eval 1 đọc file của Draft 2 hoặc Eval 2, và ngược lại.
 - **Nhiệm vụ:** Đánh giá TỪNG CÂU/CAPTION/COMPONENT MỘT. Câu nào tốt phải khen và nêu lý do, câu nào tệ phải nêu lý do bắt lỗi.
 - Đợi cả 2 Subagent hoàn thành toàn bộ phase rồi mới sang Bước 5.
-**BƯỚC 5: Hợp Nhất & Lựa Chọn (Hàng loạt)**
+  **BƯỚC 5: Hợp Nhất & Lựa Chọn (Hàng loạt)**
 - Sau khi có đầy đủ đánh giá (eval-1, eval-2) cho toàn bộ các section, tiến hành Hợp nhất.
 - Đọc đánh giá của subagent. **Tuy nhiên, bạn CHỈ ĐƯỢC PHÉP XEM ĐÁNH GIÁ ĐÓ NHƯ TÀI LIỆU THAM KHẢO.** Bạn phải tự kiểm chứng lại.
 - Lưu kết quả vào `4-merge.mdx` cho TẤT CẢ các section theo `i18n/templates/4-merge.template.mdx`.
@@ -134,8 +139,10 @@ Bạn BẮT BUỘC phải tuân thủ đúng trình tự 6 bước dưới đây
 
 **BƯỚC 6: Bản Dịch Hoàn Thiện Tối Ưu & Gộp File (Hàng loạt)**
 - Từ file Merge, tạo bản dịch hoàn thiện cuối cùng liền mạch cho từng section, lưu vào `5-final.mdx` theo `i18n/templates/5-final.template.mdx`.
-- **Định dạng đầu ra cuối cùng:** Gộp tất cả các file `5-final.mdx` thành file duy nhất `i18n/chapters/<chapter-slug>/final.mdx`. Cuối cùng, in toàn bộ nội dung file `final.mdx` này ra màn hình chat, đặt gọn gàng trong MỘT Markdown code block duy nhất. Không viết thêm bất kỳ lời bình luận hay chào hỏi nào.
-
+- **Định dạng đầu ra cuối cùng:** 
+  1. Sau khi tạo xong tất cả các file `5-final.mdx` của mọi section, BẮT BUỘC phải dùng lệnh Bash (ví dụ: `cat i18n/chapters/<chapter-slug>/section-*/5-final.mdx > i18n/chapters/<chapter-slug>/final.mdx`) để gộp nội dung lại. TUYỆT ĐỐI CẤM dùng LLM tự gõ lại từ đầu để tránh lỗi/mất chữ.
+  2. Dùng lệnh bash copy đè file `final.mdx` này vào file `vi.mdx` gốc của chapter (ví dụ: `cp i18n/chapters/<chapter-slug>/final.mdx content/chapters/<chapter-slug>/vi.mdx`).
+  3. Cuối cùng, in toàn bộ nội dung file `final.mdx` này ra màn hình chat, đặt gọn gàng trong MỘT Markdown code block duy nhất. Không viết thêm bất kỳ lời bình luận hay chào hỏi nào.
 ---
 
 ### PHẦN III. VÍ DỤ MINH HỌA (FEW-SHOT LEARNING) VÀ CÁC QUY TẮC BỔ SUNG

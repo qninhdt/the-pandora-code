@@ -133,8 +133,10 @@ You MUST strictly follow the 6-step sequence below based on the **BATCH-FIRST** 
 
 **STEP 6: The Ultimate Masterpiece Translation & Merging**
 - From the Merge file, create the final seamless polished translation for each section, saving to `5-final.mdx` following `i18n/templates/5-final.template.mdx`.
-- **Final Output Format Rule:** Combine all `5-final.mdx` files into a single `i18n/chapters/<chapter-slug>/final.mdx`. Print the content of this file in the chat within ONE single Markdown code block. No comments.
-
+- **Final Output Format Rule:** 
+  1. After generating all `5-final.mdx` files, you MUST use a Bash command (e.g., `cat i18n/chapters/<chapter-slug>/section-*/5-final.mdx > i18n/chapters/<chapter-slug>/final.mdx`) to concatenate them. STRICTLY FORBIDDEN to rewrite the combined content from scratch using the LLM to prevent omissions/errors.
+  2. Use a Bash command to overwrite the original `vi.mdx` file with this `final.mdx` (e.g., `cp i18n/chapters/<chapter-slug>/final.mdx content/chapters/<chapter-slug>/vi.mdx`).
+  3. Finally, print the entirety of this `final.mdx` file into the chat output, neatly contained within ONE single Markdown code block. No comments.
 ---
 
 ### PART III. FEW-SHOT LEARNING EXAMPLES & ADDITIONAL RULES
