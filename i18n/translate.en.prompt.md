@@ -91,42 +91,49 @@ To shatter the structural barriers of machine learning systems and achieve this 
 
 ### PART II. MULTI-PASS AUTOMATED BATCH WORKFLOW (STRICT SEQUENTIAL BATCH WORKFLOW)
 
-You MUST strictly follow the 5-step sequence below based on the **BATCH-FIRST** principle: You must complete all sections for the current step before proceeding to the next step. "Rolling" execution (completing steps 1-5 for section 1 before starting section 2) is STRICTLY FORBIDDEN.
+You MUST strictly follow the 6-step sequence below based on the **BATCH-FIRST** principle: You must complete all sections for the current step before proceeding to the next step. "Rolling" execution is STRICTLY FORBIDDEN.
 
 **Workflow & File Structure Rules:**
-
-- All outputs must be saved to `i18n/chapters/<chapter-slug>/section-XX (e.g., section-01, section-02)/<step-number>-<step-name>.mdx`.
-- **Section Segmentation Rule:** The number and length of each section MUST be determined EXACTLY by the existing headings (e.g., `##`, `###`) in the English source text.
-- **Sequential Execution Rule:** Complete STEP 1 for ALL sections -> then STEP 2 for ALL sections -> and so on until STEP 5 is finished.
-
+- All outputs must be saved to `i18n/chapters/<chapter-slug>/section-XX/<step-name>.mdx`.
+- **Section Segmentation Rule:** The number and length of each section MUST be determined EXACTLY by the existing headings in the English source text.
 - **FILE WRITING LIMIT & SCRIPT BAN:** 
-  1. Strictly FORBIDDEN to perform multiple file writing commands (`write_file` or `replace`) in a single LLM turn. 
-  2. STRICTLY FORBIDDEN to use scripts (Bash, Python, Node.js...) via the `run_shell_command` tool to automate creating/writing multiple files at once as a loophole. 
-  3. Each file for each section MUST be written using the standard `write_file` tool in completely separate, sequential turns.
+  1. Strictly FORBIDDEN to perform multiple file writing commands in a single LLM turn. 
+  2. STRICTLY FORBIDDEN to use scripts (Bash, Python...) to automate batch-writing files as a loophole. 
+  3. Each file MUST be written using the standard `write_file` tool in completely separate, sequential turns.
+- **Sequential Execution Rule:** Complete STEP 1 -> then STEP 2 for ALL sections -> and so on until STEP 6.
 
-**STEP 1: Context, Terminology & Strategy Analysis (Batch)**
+**STEP 1: Chapter Overview Analysis (Root)**
+- Create a SINGLE `0-chapter-analysis.mdx` file at the chapter root (`i18n/chapters/<chapter-slug>/`) following `i18n/templates/0-chapter-analysis.template.mdx`.
+- Analyze the overall Domain, Target Audience, Core Intent of the entire chapter, Tone, and Cross-cutting Terminology.
 
-- Analyze all sections. For each section, write the entire analysis into `1-analysis.mdx` following `i18n/templates/1-analysis.template.mdx`.
-- Identify Register, Audience, Core Intent, Tone, Pronouns, and plan for structural/cultural bottlenecks.
+**STEP 2: Detailed Section Analysis (Batch)**
+- Deeply analyze all sections. For each section, save to `1-section-analysis.mdx` following `i18n/templates/1-section-analysis.template.mdx`.
+- Identify specific goals, pre-handle structural/cultural bottlenecks, and section-specific terminology.
 
-**STEP 2: Optimal Translation Draft (Batch)**
-- After Step 1 is finished for the entire document, draft all sections. Save to `2-draft.mdx` following `i18n/templates/2-draft.template.mdx`.
-- **CRITICAL NOTE:** This is NOT a literal (word-by-word) rough draft. This must be the **best possible translation you can produce**, aggressively applying all 9 Linguistic Rules and the analysis from Step 1. This draft must aim for absolute naturalness, fluency, and precision. The subagent in Step 3 is merely the final safety net to catch the smallest remaining flaws.
-**STEP 3: Unbiased Subagent Evaluation (Batch)**
+**STEP 3: Dual Drafting (Batch)**
+- After Step 2 is finished for the entire document, draft all sections into 2 versions with different styles/approaches:
+  - Version 1: Save to `2-draft-1.mdx` (Structurally Adherent / Classical).
+  - Version 2: Save to `2-draft-2.mdx` (Creative / Aggressive Transcreation).
+- **CRITICAL NOTE:** BOTH versions must be the BEST possible translations you can produce, not literal word-by-word rough drafts. Apply all 9 Linguistic Rules.
 
-- **PHASE-LEVEL SUBAGENT:** Instead of invoking a subagent for each section, you MUST invoke a SINGLE subagent (generalist agent) for the entire evaluation phase.
+**STEP 4: Comprehensive Subagent Evaluation (Batch)**
+- **PHASE-LEVEL SUBAGENT:** Invoke a SINGLE subagent (generalist agent) for the entire evaluation phase.
 - **IRONCLAD DISCIPLINE:** Strictly FORBIDDEN to evaluate your own draft.
-- **Task:** Provide the subagent with the list of all sections to be evaluated, including the paths to the original text and the corresponding literal drafts (\`2-draft.mdx\`).
-- The subagent will read \`i18n/subagent_evaluator.prompt.md\` and perform evaluations for ALL sections, writing the results into the respective \`3-evaluation.mdx\` files (adhering to the one-write-per-turn rule).
-- You must wait for the subagent to complete the entire phase before proceeding to Step 4.
-  **STEP 4: Comprehensive Correction (Batch) (Agent: Master Corrector)**
-- After receiving error reports for all sections, proceed with corrections.
-- **CORRECTION DISCIPLINE:** The evaluating subagent may provide some suggestions or directions for fixing errors. However, you MUST TREAT THEM ONLY AS REFERENCES. It is STRICTLY FORBIDDEN to blindly copy or apply those suggestions without re-checking them against the original context and translation rules. You are solely responsible for crafting the final, most natural and flawless correction.
-- Save corrections to `4-correction.mdx` for ALL sections (Format: `- "<Awkward Sentence>" -> "<Natural Sentence>"`).
-**STEP 5: The Ultimate Masterpiece Translation & Merging**
+- **Task:** Provide the subagent with the list of sections, original texts, and BOTH drafts (`2-draft-1.mdx` and `2-draft-2.mdx`).
+- The subagent will read `i18n/templates/subagent_evaluator.prompt.md` and evaluate EVERY SINGLE SENTENCE/CAPTION/COMPONENT of BOTH drafts for ALL sections. It must praise good sentences with reasons, and critique bad ones with reasons.
+- The subagent saves results to `3-eval-1.mdx` and `3-eval-2.mdx` for each section (adhering to the one-write-per-turn rule). Wait for the subagent to complete the entire phase before Step 5.
 
-- After corrections are done for all sections, create the final polished translation for each, saving to `5-final.mdx`.
-- **Final Result:** Combine all `5-final.mdx` files into a single `i18n/chapters/<chapter-slug>/final.mdx`. Print the content of this file in the chat within ONE single Markdown code block.---
+**STEP 5: Merge & Selection (Batch)**
+- After receiving evaluations (eval-1, eval-2) for all sections, proceed with merging.
+- Read the subagent's evaluations. **TREAT THEM ONLY AS REFERENCES.** You must re-verify.
+- Save results to `4-merge.mdx` for ALL sections following `i18n/templates/4-merge.template.mdx`.
+- You MUST iterate through EVERY SENTENCE/CAPTION/COMPONENT: Decide to pick Draft 1, Draft 2, or write a completely new Combined sentence, and explain your reasoning.
+
+**STEP 6: The Ultimate Masterpiece Translation & Merging**
+- From the Merge file, create the final seamless polished translation for each section, saving to `5-final.mdx` following `i18n/templates/5-final.template.mdx`.
+- **Final Output Format Rule:** Combine all `5-final.mdx` files into a single `i18n/chapters/<chapter-slug>/final.mdx`. Print the content of this file in the chat within ONE single Markdown code block. No comments.
+
+---
 
 ### PART III. FEW-SHOT LEARNING EXAMPLES & ADDITIONAL RULES
 

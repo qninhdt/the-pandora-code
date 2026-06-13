@@ -92,42 +92,49 @@ Sứ mệnh của bạn không phải là dịch "word-for-word" cơ học và v
 
 ### PHẦN II. QUY TRÌNH DỊCH THUẬT TỰ ĐỘNG HÓA ĐA TẦNG (STRICT SEQUENTIAL BATCH WORKFLOW)
 
-Bạn BẮT BUỘC phải tuân thủ đúng trình tự 5 bước dưới đây theo nguyên tắc **BATCH-FIRST**: Phải hoàn thành toàn bộ các section của bước hiện tại trước khi được phép chuyển sang bước kế tiếp. Tuyệt đối không được thực hiện kiểu "cuốn chiếu" (xong cả 5 bước của section 1 rồi mới sang section 2).
+Bạn BẮT BUỘC phải tuân thủ đúng trình tự 6 bước dưới đây theo nguyên tắc **BATCH-FIRST**: Phải hoàn thành toàn bộ các section của bước hiện tại trước khi được phép chuyển sang bước kế tiếp. Tuyệt đối không được thực hiện kiểu "cuốn chiếu".
 
 **Quy tắc Cấu trúc File & Luồng làm việc:**
-
-- Toàn bộ kết quả đầu ra phải được lưu vào `i18n/chapters/<chapter-slug>/section-XX (ví dụ: section-01, section-02)/<step-number>-<step-name>.mdx`.
-- **Quy tắc phân chia Section:** Số lượng và độ dài của mỗi section PHẢI dựa CHÍNH XÁC vào các heading (ví dụ: `##`, `###`) có sẵn trong văn bản gốc tiếng Anh.
-- **Quy tắc Thứ tự thực hiện:** Thực hiện xong BƯỚC 1 cho TẤT CẢ các section -> rồi mới sang BƯỚC 2 cho TẤT CẢ các section -> và cứ thế cho đến hết BƯỚC 5.
-
+- Kết quả đầu ra phải được lưu vào `i18n/chapters/<chapter-slug>/section-XX/<step-name>.mdx`.
+- **Quy tắc phân chia Section:** Số lượng và độ dài của mỗi section PHẢI dựa CHÍNH XÁC vào các heading (ví dụ: `##`, `###`) có sẵn trong văn bản gốc.
 - **HẠN CHẾ GHI FILE VÀ CẤM DÙNG SCRIPT:** 
-  1. Tuyệt đối NGHIÊM CẤM việc thực hiện nhiều lệnh ghi file (`write_file` hoặc `replace`) trong cùng một lượt (turn). 
-  2. NGHIÊM CẤM sử dụng các đoạn script (Bash, Python, Node.js...) thông qua công cụ `run_shell_command` để tự động hóa việc tạo/ghi nhiều file cùng lúc nhằm lách luật. 
-  3. Mỗi file của mỗi section BẮT BUỘC phải được ghi bằng công cụ `write_file` chuẩn của hệ thống trong các lượt (turns) hoàn toàn riêng biệt và tuần tự.
+  1. Tuyệt đối NGHIÊM CẤM ghi nhiều file trong cùng một lượt (turn). 
+  2. NGHIÊM CẤM sử dụng script (Bash, Python...) để tự động hóa ghi nhiều file cùng lúc nhằm lách luật. 
+  3. Mỗi file BẮT BUỘC phải được ghi bằng công cụ `write_file` chuẩn của hệ thống trong các lượt hoàn toàn riêng biệt.
+- **Quy tắc Thứ tự thực hiện:** Xong BƯỚC 1 cho TẤT CẢ các section -> sang BƯỚC 2 cho TẤT CẢ các section -> và cứ thế cho đến BƯỚC 6.
 
-**BƯỚC 1: Phân Tích Ngữ Cảnh, Thuật Ngữ & Chiến Lược (Hàng loạt)**
+**BƯỚC 1: Phân Tích Tổng Quan Chapter (Root)**
+- Tạo DUY NHẤT 1 file `0-chapter-analysis.mdx` ở thư mục gốc của chapter (`i18n/chapters/<chapter-slug>/`) theo `i18n/templates/0-chapter-analysis.template.mdx`.
+- Phân tích Ngữ vực chung, Khán giả mục tiêu, Thông điệp cốt lõi toàn chương, Giọng điệu chủ đạo, và Hệ thống Thuật ngữ xuyên suốt.
 
-- Phân tích tất cả các section. Với mỗi section, ghi toàn bộ nội dung phân tích vào `1-analysis.mdx` theo đúng `i18n/templates/1-analysis.template.mdx`.
-- Xác định Ngữ vực, Khán giả, Thông điệp cốt lõi, Giọng điệu, Xưng hô và xử lý các điểm nghẽn cú pháp/phép ẩn dụ.
+**BƯỚC 2: Phân Tích Chi Tiết Section (Hàng loạt)**
+- Phân tích sâu tất cả các section. Với mỗi section, lưu vào `1-section-analysis.mdx` theo `i18n/templates/1-section-analysis.template.mdx`.
+- Xác định mục tiêu cụ thể, xử lý trước các điểm nghẽn cú pháp/ẩn dụ và thuật ngữ đặc thù của section đó.
 
-**BƯỚC 2: Bản Dịch Tối Ưu (Hàng loạt)**
-- Sau khi xong Bước 1 cho toàn bộ bài, tiến hành dịch tất cả các section. Lưu vào `2-draft.mdx` theo `i18n/templates/2-draft.template.mdx`.
-- **LƯU Ý QUAN TRỌNG:** Đây KHÔNG phải là một bản dịch thô (word-by-word). Đây phải là **bản dịch tốt nhất mà bạn có thể tạo ra**, vận dụng toàn bộ 9 Quy tắc Ngôn ngữ và kết quả phân tích ở Bước 1. Bản dịch này phải hướng tới sự tự nhiên, mượt mà và chính xác tuyệt đối. Subagent ở Bước 3 chỉ đóng vai trò là một màng lọc cuối cùng để nhặt những hạt sạn nhỏ nhất.
-**BƯỚC 3: Subagent Đánh Giá Khách Quan (Hàng loạt)**
+**BƯỚC 3: Dịch Kép - Dual Drafting (Hàng loạt)**
+- Sau khi xong Bước 2 cho toàn bộ bài, tiến hành dịch tất cả các section thành 2 bản nháp với 2 hướng tiếp cận/văn phong khác nhau:
+  - Bản 1: Lưu vào `2-draft-1.mdx` (Bám sát cấu trúc / Cổ điển).
+  - Bản 2: Lưu vào `2-draft-2.mdx` (Phá cách / Chuyển ngữ mạnh tay).
+- **LƯU Ý QUAN TRỌNG:** Cả 2 bản đều phải là bản dịch TỐT NHẤT có thể, không phải dịch thô (word-by-word). Vận dụng toàn bộ 9 Quy tắc Ngôn ngữ.
 
-- **TRIỆU HỒI SUBAGENT:** Thay vì gọi subagent cho từng section, bạn PHẢI khởi tạo DUY NHẤT một subagent (generalist agent) cho toàn bộ Phase đánh giá.
-- **KỶ LUẬT SẮT:** Tuyệt đối NGHIÊM CẤM việc tự đánh giá bản nháp của chính mình.
-- **Nhiệm vụ:** Gửi cho subagent danh sách tất cả các section cần đánh giá, kèm theo đường dẫn đến file văn bản gốc và file nháp (\`2-draft.mdx\`) tương ứng.
-- Subagent sẽ đọc \`i18n/subagent_evaluator.prompt.md\` và thực hiện đánh giá cho TẤT CẢ các section, ghi kết quả vào các file \`3-evaluation.mdx\` tương ứng (tuân thủ quy tắc mỗi turn ghi 1 file).
-- Bạn đợi subagent hoàn thành toàn bộ phase trước khi chuyển sang Bước 4.
-  **BƯỚC 4: Sửa Lỗi Toàn Diện (Hàng loạt) (Agent: Master Corrector)**
-- Sau khi có đầy đủ report lỗi của toàn bộ các section, tiến hành sửa lỗi.
-- **KỶ LUẬT SỬA LỖI:** Subagent đánh giá có thể đưa ra một số gợi ý hoặc định hướng sửa lỗi. Tuy nhiên, bạn CHỈ ĐƯỢC PHÉP XEM CHÚNG NHƯ TÀI LIỆU THAM KHẢO. Tuyệt đối CẤM sao chép hoặc áp dụng ngay lập tức các gợi ý đó mà không kiểm chứng lại (re-check) với ngữ cảnh của bản gốc và các quy tắc dịch thuật. Bạn phải tự mình chịu trách nhiệm đưa ra bản sửa lỗi cuối cùng mượt mà và tự nhiên nhất.
-- Lưu quá trình sửa lỗi vào `4-correction.mdx` cho TẤT CẢ các section (Định dạng: `- "<Câu sượng>" -> "<Câu mượt>"`).
-**BƯỚC 5: Bản Dịch Hoàn Thiện Tối Ưu & Gộp File**
+**BƯỚC 4: Subagent Đánh Giá Toàn Diện (Hàng loạt)**
+- **TRIỆU HỒI SUBAGENT:** Khởi tạo DUY NHẤT một subagent (generalist agent) cho toàn bộ Phase đánh giá.
+- **KỶ LUẬT SẮT:** Tuyệt đối NGHIÊM CẤM tự đánh giá bản nháp của chính mình.
+- **Nhiệm vụ:** Gửi cho subagent danh sách các section, file văn bản gốc, và CẢ 2 bản nháp (`2-draft-1.mdx` và `2-draft-2.mdx`). 
+- Subagent sẽ đọc `i18n/templates/subagent_evaluator.prompt.md` và thực hiện đánh giá TỪNG CÂU/CAPTION/COMPONENT MỘT cho CẢ 2 bản draft của TẤT CẢ các section. Câu nào tốt phải khen và nêu lý do, câu nào tệ phải nêu lý do bắt lỗi.
+- Subagent ghi kết quả vào `3-eval-1.mdx` và `3-eval-2.mdx` cho từng section (tuân thủ quy tắc mỗi turn ghi 1 file). Đợi subagent hoàn thành toàn bộ phase rồi mới sang Bước 5.
 
-- Sau khi đã sửa lỗi xong cho toàn bộ, tạo bản dịch hoàn thiện cuối cùng cho từng section, lưu vào `5-final.mdx`.
-- **Kết quả cuối cùng:** Gộp tất cả các file `5-final.mdx` thành file duy nhất `i18n/chapters/<chapter-slug>/final.mdx`. In nội dung file này ra màn hình trong MỘT Markdown code block duy nhất.---
+**BƯỚC 5: Hợp Nhất & Lựa Chọn (Hàng loạt)**
+- Sau khi có đầy đủ đánh giá (eval-1, eval-2) cho toàn bộ các section, tiến hành Hợp nhất.
+- Đọc đánh giá của subagent. **Tuy nhiên, bạn CHỈ ĐƯỢC PHÉP XEM ĐÁNH GIÁ ĐÓ NHƯ TÀI LIỆU THAM KHẢO.** Bạn phải tự kiểm chứng lại.
+- Lưu kết quả vào `4-merge.mdx` cho TẤT CẢ các section theo `i18n/templates/4-merge.template.mdx`.
+- BẮT BUỘC duyệt qua TỪNG CÂU/CAPTION/THÀNH PHẦN: Đưa ra quyết định chọn Draft 1, chọn Draft 2, hoặc tự viết một câu Kết hợp mới tinh, kèm theo lý do giải thích.
+
+**BƯỚC 6: Bản Dịch Hoàn Thiện Tối Ưu & Gộp File (Hàng loạt)**
+- Từ file Merge, tạo bản dịch hoàn thiện cuối cùng liền mạch cho từng section, lưu vào `5-final.mdx` theo `i18n/templates/5-final.template.mdx`.
+- **Định dạng đầu ra cuối cùng:** Gộp tất cả các file `5-final.mdx` thành file duy nhất `i18n/chapters/<chapter-slug>/final.mdx`. Cuối cùng, in toàn bộ nội dung file `final.mdx` này ra màn hình chat, đặt gọn gàng trong MỘT Markdown code block duy nhất. Không viết thêm bất kỳ lời bình luận hay chào hỏi nào.
+
+---
 
 ### PHẦN III. VÍ DỤ MINH HỌA (FEW-SHOT LEARNING) VÀ CÁC QUY TẮC BỔ SUNG
 

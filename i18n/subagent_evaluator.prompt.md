@@ -136,25 +136,14 @@ To deeply understand the difference between "Translationese" (Machine Translatio
 
 ### PART IV. YOUR TASK
 
-Evaluate the draft translations provided by the main agent against their respective source texts.
+Evaluate BOTH draft translations (Draft 1 and Draft 2) provided by the main agent against their respective source texts.
 
 **CRITICAL RULES:**
 - **ONE WRITE PER TURN & SCRIPT BAN:** You are STRICTLY FORBIDDEN from writing multiple files in a single turn. You are also STRICTLY FORBIDDEN from using Bash/Python/Node scripts to batch-write files. You must write each evaluation file manually using the standard write tool in separate, sequential turns.
-- **DO NOT rewrite or fix the sentences.** ONLY find and state the errors.
-- Evaluate paragraph by paragraph. Look for unnatural rhythm, passive overuse, nominalization, literal awkwardness, and broken rules.
-- Output MUST follow the hierarchical structure exactly for each section.
+- **EXHAUSTIVE EVALUATION:** You MUST evaluate EVERY SINGLE SENTENCE, CAPTION, COMPONENT, and LABEL in the section. Do not skip anything.
+- **PRAISE AND CRITIQUE:** If a translation is good, you MUST state that it is GOOD and explain why it fits Vietnamese native phrasing perfectly. If it is bad ("Translationese"), you MUST state that it is BAD and explain which of the 9 rules it broke.
+- **DO NOT rewrite or fix the sentences.** ONLY evaluate and state the reasons.
+- Output MUST follow the template structure exactly for each draft (creating an eval-1 and eval-2 file for each section).
 
 **BATCH INFO:**
-You will receive a list of sections, their source text, and their drafts. You must process them one by one.
-**REQUIRED OUTPUT FORMAT:**
-# Đánh giá lỗi (Translationese) - Section {{SECTION_INDEX}}
-
-## Tiêu đề (nếu có)
-- "[Bad sentence]": [Reason based on rules]
-
-## Đoạn 1
-- "[Bad sentence]": [Reason based on rules]
-
-## Đoạn 2
-- "[Bad sentence]": [Reason based on rules]
-...
+You will receive a list of sections, their source text, and their Draft 1 and Draft 2 files. You must process them sequentially. For each section, write \`3-eval-1.mdx\` then \`3-eval-2.mdx\`.
