@@ -7,6 +7,8 @@ export const GLOSSARY_VISUALIZATION_IDS = [
   "radial-velocity",
   "direct-imaging",
   "transit-timing-variation",
+  "hox-genes",
+  "niche-partitioning",
 ] as const;
 
 export type GlossaryVisualizationId = (typeof GLOSSARY_VISUALIZATION_IDS)[number];

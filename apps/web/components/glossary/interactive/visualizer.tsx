@@ -16,6 +16,8 @@ const GLOSSARY_VISUALIZATIONS: Record<
   "radial-velocity": dynamic(() => import("./radial-velocity"), { ssr: false }),
   "direct-imaging": dynamic(() => import("./direct-imaging"), { ssr: false }),
   "transit-timing-variation": dynamic(() => import("./transit-timing-variation"), { ssr: false }),
+  "hox-genes": dynamic(() => import("./hox-genes"), { ssr: false }),
+  "niche-partitioning": dynamic(() => import("./niche-partitioning"), { ssr: false }),
 };
 
 interface GlossaryVisualizerProps {

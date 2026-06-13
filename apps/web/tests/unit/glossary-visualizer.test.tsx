@@ -2,6 +2,8 @@ import AlphaCentauri from "@/components/glossary/interactive/alpha-centauri";
 import DirectImaging from "@/components/glossary/interactive/direct-imaging";
 import Exomoon from "@/components/glossary/interactive/exomoon";
 import HabitableZone from "@/components/glossary/interactive/habitable-zone";
+import HoxGenes from "@/components/glossary/interactive/hox-genes";
+import NichePartitioning from "@/components/glossary/interactive/niche-partitioning";
 import RadialVelocity from "@/components/glossary/interactive/radial-velocity";
 import RocheLimit from "@/components/glossary/interactive/roche-limit";
 import TidalHeating from "@/components/glossary/interactive/tidal-heating";
@@ -50,6 +52,16 @@ describe("Glossary Components Direct Mount", () => {
   it("renders transit-timing-variation TTV plot", () => {
     renderWithIntl(<TransitTimingVariation locale="en" />);
     expect(screen.getAllByText("Transit Timing Variations (TTV)")[0]).toBeInTheDocument();
+  });
+
+  it("renders hox-genes address system", () => {
+    renderWithIntl(<HoxGenes locale="en" />);
+    expect(screen.getAllByText("The Hox address system")[0]).toBeInTheDocument();
+  });
+
+  it("renders niche-partitioning layers", () => {
+    renderWithIntl(<NichePartitioning locale="en" />);
+    expect(screen.getAllByText("One forest, divided into floors")[0]).toBeInTheDocument();
   });
 
   it("returns null for unregistered terms in GlossaryVisualizer", () => {
