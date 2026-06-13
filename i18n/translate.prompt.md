@@ -115,14 +115,14 @@ Bạn BẮT BUỘC phải tuân thủ đúng trình tự 6 bước dưới đây
 - Bạn KHÔNG tự dịch. Bạn PHẢI triệu hồi **2 Subagents** (generalist agents) ĐỘC LẬP:
   - **Subagent 1** tạo `2-draft-1.mdx` (Bản dịch thứ nhất) cho TẤT CẢ các section.
   - **Subagent 2** tạo `2-draft-2.mdx` (Bản dịch thứ hai, từ vựng/diễn đạt khác) cho TẤT CẢ các section.
-- Cả hai Subagent đều dùng chung prompt template `i18n/templates/subagent_translator.prompt.md`.
+- Cả hai Subagent đều dùng chung prompt template `i18n/templates/subagent_translator.prompt.md` và format đầu ra theo `i18n/templates/2-draft.template.mdx`.
 - **KỶ LUẬT CÁCH LY:** Tuyệt đối CẤM Subagent này đọc file draft do Subagent kia tạo ra.
 
 **BƯỚC 4: Subagent Đánh Giá Toàn Diện (Hàng loạt)**
 - Bạn KHÔNG tự đánh giá. Bạn PHẢI triệu hồi **2 Subagents Đánh giá** (generalist agents) ĐỘC LẬP:
   - **Subagent Eval 1** CHỈ đọc và đánh giá `2-draft-1.mdx` của tất cả các section, xuất ra `3-eval-1.mdx`.
   - **Subagent Eval 2** CHỈ đọc và đánh giá `2-draft-2.mdx` của tất cả các section, xuất ra `3-eval-2.mdx`.
-- Cả hai dùng chung `i18n/templates/subagent_evaluator.prompt.md`.
+- Cả hai dùng chung prompt `i18n/templates/subagent_evaluator.prompt.md` và format đầu ra theo `i18n/templates/3-eval.template.mdx`.
 - **KỶ LUẬT CÁCH LY:** CẤM Subagent Eval 1 đọc file của Draft 2 hoặc Eval 2, và ngược lại.
 - **Nhiệm vụ:** Đánh giá TỪNG CÂU/CAPTION/COMPONENT MỘT. Câu nào tốt phải khen và nêu lý do, câu nào tệ phải nêu lý do bắt lỗi.
 - Đợi cả 2 Subagent hoàn thành toàn bộ phase rồi mới sang Bước 5.

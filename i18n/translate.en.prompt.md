@@ -114,14 +114,14 @@ You MUST strictly follow the 6-step sequence below based on the **BATCH-FIRST** 
 - You MUST NOT draft this yourself. You MUST invoke **2 INDEPENDENT Subagents** (generalist agents):
   - **Subagent 1** creates `2-draft-1.mdx` (First Draft) for ALL sections.
   - **Subagent 2** creates `2-draft-2.mdx` (Second Draft, distinct phrasing) for ALL sections.
-- Both Subagents use the same prompt template `i18n/templates/subagent_translator.prompt.md`.
+- Both Subagents use the prompt template `i18n/templates/subagent_translator.prompt.md` and format output using `i18n/templates/2-draft.template.mdx`.
 - **ISOLATION DISCIPLINE:** Subagents are STRICTLY FORBIDDEN from reading each other's draft files.
 
 **STEP 4: Comprehensive Subagent Evaluation (Batch)**
 - You MUST NOT evaluate drafts yourself. You MUST invoke **2 INDEPENDENT Evaluator Subagents** (generalist agents):
   - **Evaluator 1** ONLY reads and evaluates `2-draft-1.mdx` for all sections, outputting `3-eval-1.mdx`.
   - **Evaluator 2** ONLY reads and evaluates `2-draft-2.mdx` for all sections, outputting `3-eval-2.mdx`.
-- Both use `i18n/templates/subagent_evaluator.prompt.md`.
+- Both use the prompt `i18n/templates/subagent_evaluator.prompt.md` and format output using `i18n/templates/3-eval.template.mdx`.
 - **ISOLATION DISCIPLINE:** Evaluator 1 is FORBIDDEN from reading Draft 2 or Eval 2 files, and vice versa.
 - **Task:** Evaluate EVERY SINGLE SENTENCE/CAPTION/COMPONENT. Praise good sentences with reasons, and critique bad ones with reasons.
 - Wait for both Evaluators to finish the entire phase before Step 5.

@@ -136,14 +136,14 @@ To deeply understand the difference between "Translationese" (Machine Translatio
 
 ### PART IV. YOUR TASK
 
-Evaluate BOTH draft translations (Draft 1 and Draft 2) provided by the main agent against their respective source texts.
+Evaluate the draft translation provided by the main agent against its respective source text.
 
 **CRITICAL RULES:**
 - **ONE WRITE PER TURN & SCRIPT BAN:** You are STRICTLY FORBIDDEN from writing multiple files in a single turn. You are also STRICTLY FORBIDDEN from using Bash/Python/Node scripts to batch-write files. You must write each evaluation file manually using the standard write tool in separate, sequential turns.
 - **EXHAUSTIVE EVALUATION:** You MUST evaluate EVERY SINGLE SENTENCE, CAPTION, COMPONENT, and LABEL in the section. Do not skip anything.
 - **PRAISE AND CRITIQUE:** If a translation is good, you MUST state that it is GOOD and explain why it fits Vietnamese native phrasing perfectly. If it is bad ("Translationese"), you MUST state that it is BAD and explain which of the 9 rules it broke.
 - **DO NOT rewrite or fix the sentences.** ONLY evaluate and state the reasons.
-- Output MUST follow the template structure exactly for each draft (creating an eval-1 and eval-2 file for each section).
+- Output MUST follow the `i18n/templates/3-eval.template.mdx` template structure exactly for your assigned draft.
 
 **BATCH INFO:**
-You will receive a list of sections, their source text, and their Draft 1 and Draft 2 files. You must process them sequentially. For each section, write \`3-eval-1.mdx\` then \`3-eval-2.mdx\`.
+You will receive a list of sections, their source text, and the specific draft file you need to evaluate (either Draft 1 OR Draft 2). You must process them sequentially. For each section, write your evaluation to the output file specified by the main agent (e.g., \`3-eval-1.mdx\` or \`3-eval-2.mdx\`).
