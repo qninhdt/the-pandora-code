@@ -1,0 +1,32 @@
+# Bản dịch Nháp [1/2] - Section 05
+
+## Chỉnh hướng núm xoay về phía Pandora
+
+Pandora tự quay quanh trục chậm hơn Trái Đất. Các nguồn tài liệu chính thống khá mơ hồ về con số chính xác — một ngày đêm tại đây dao động quanh mức một ngày Trái Đất — nhưng chiều hướng thì rõ ràng, và tự quay chậm hơn chính là điều kiện duy nhất chúng ta cần để lý giải mọi chuyện. Vòng tự quay chậm rãi hơn đồng nghĩa với một hiệu ứng Coriolis yếu ớt hơn, khiến khối khí nhiệt đới thoát đi xa hơn về hai phương bắc - nam trước khi bị bẻ cong hướng gió. Hệ quả là, tế bào Hadley của Pandora sẽ *rộng lớn* hơn hẳn so với Trái Đất, kéo giãn toàn bộ mô thức khí hậu mưa ẩm và khô hạn ra xa vùng xích đạo.
+
+<CirculationBands />
+
+<DiagramFigure
+  src="/images/chapters/continents-oceans-climate/fig-04-widened-hadley.webp"
+  labels={[
+    { x: 24, y: 49, side: "right", label: "Quay nhanh — vành đai ẩm mỏng manh" },
+    { x: 22, y: 24, side: "right", label: "Sa mạc lan rộng lấn át" },
+    { x: 76, y: 49, side: "left", label: "Quay chậm (Pandora) — vành đai ẩm dày đặc", note: "Sa mạc bị lưu đày ra vùng vĩ độ cao" },
+  ]}
+  alt="Hai hành tinh nằm cạnh nhau: hành tinh bên trái có dải rừng và mây hẹp rực sáng ôm lấy xích đạo cùng các sa mạc khô cằn rộng lớn kề cận, hành tinh bên phải có vành đai xanh và mây khổng lồ dày đặc vắt ngang ở giữa và các sa mạc mỏng bị đẩy ra xa tận vùng cực"
+  figNo="04"
+  caption="Cùng một nguồn sáng, hai tốc độ quay. Quay nhanh (bên trái), vành đai ẩm ướt chỉ là một vệt mảnh mai nơi xích đạo bị các hoang mạc bao la chèn ép; quay chậm như Pandora (bên phải), dải mưa ẩm phình to ôm trọn vùng nhiệt đới, trong khi sa mạc bị xua đuổi về tận những vĩ độ cao lạnh giá."
+  tier="inference"
+/>
+
+Hãy xem sự co giãn đó tái định hình tấm bản đồ như thế nào. Trên Trái Đất, nhánh khí bốc lên trút mưa bị ghim chặt lấy xích đạo, còn nhánh khí chìm xuống tạo sa mạc lại dội thẳng vào vĩ độ 30 độ, khiến rừng mưa chỉ có một dải đất khiêm nhường trong khi sa mạc được ban phát cả một giang sơn rộng lớn. Khi kéo rộng tế bào đối lưu, hai hiện tượng sẽ xảy ra đồng thời. Nhánh bốc lên tạo mưa không còn là một đường xích đạo mảnh mai — nó phình ra thành một vành đai nhiệt đới dày đặc, vươn xa gấp đôi khoảng cách từ xích đạo, nhường lại một phần lớn thế giới cho những dòng khí bốc cao mang mưa. Đồng thời, nhánh khí chìm xuống sấy khô mặt đất bị xua đuổi ra tận vĩ độ 45 hoặc 50 độ, lọt vào các vĩ độ cao mát mẻ hơn, nơi luồng khí đi xuống trở nên yếu ớt hơn và dễ dàng bị chế ngự. Sa mạc không biến mất hoàn toàn, nhưng chúng bị lưu đày ra các vùng rìa lục địa và vùng bóng mưa cằn cỗi, bị tước đoạt mất "đế chế" cận nhiệt đới rộng lớn mà chúng đang thống trị trên Trái Đất.
+
+Kết hợp hai thay đổi này lại, bạn đã tự phác họa nên diện mạo của Australis mà không cần phải tận mắt chứng kiến: cả một lục địa chìm sâu trong vành đai ẩm ướt giãn rộng, tới mức rừng mưa trở thành trạng thái mặc định của đất đai từ bờ biển này sang bờ biển kia, tịnh không còn khoảng trống nào cho một hoang mạc cỡ Sahara hình thành. Cái vẻ xanh mướt ngút ngàn đơn điệu tưởng chừng kỳ lạ nhìn từ sống núi hóa ra chẳng có gì kỳ lạ. Đó chính xác là những gì tế bào Hadley của một thế giới quay chậm phải tạo ra. Chúng ta chỉ cần xoay một núm vặn tham số, và rừng mưa lập tức tràn ngập tầm mắt.
+
+<WhatThisMeans title="Cỗ máy phác họa bản đồ thế giới">
+Đây chính là ý tưởng cốt lõi có thể áp dụng rộng rãi, là thứ rất đáng để mang theo khi rời Pandora sang bất kỳ thế giới nào bạn tò mò muốn biết. Khí hậu không phải là một danh sách ngẫu nhiên của những nơi tình cờ ẩm ướt hay khô hạn. Nó là *sản phẩm của một hệ tuần hoàn*, và cấu trúc hình học của hệ tuần hoàn ấy lại được định hình bởi vài thông số hành tinh cơ bản — lượng nắng chiếu xuống, tốc độ tự quay, và độ dày của bầu sinh quyển. Nơi nào bầu không khí của hành tinh bốc lên, nơi đó có rừng mưa; nơi nào khí chìm xuống, nơi đó là sa mạc; và tốc độ tự quay sẽ quyết định vĩ độ của cả hai. Đó là lý do tại sao các nhà sinh thái học có thể phân loại hầu như mọi hệ sinh thái trên Trái Đất — mọi <GlossaryTerm slug="biome">khu sinh học (biome)</GlossaryTerm>, từ rừng mưa nhiệt đới đến đài nguyên — chỉ bằng hai con số: nhiệt độ trung bình và lượng mưa trung bình của một khu vực, bởi vì bản thân hai con số ấy đều do vị trí của khu vực đó dưới dòng đối lưu khí quyển hành tinh định đoạt. Chỉ cần đưa cho một nhà khí hậu học tài năng các thông số về tốc độ tự quay, ánh sáng sao chủ và độ dày khí quyển của một hành tinh, họ sẽ trả lại cho bạn, bằng những nét vẽ khái quát nhưng chính xác, bức bản đồ sự sống của thế giới đó. Sự phân bố của rừng rậm và sa mạc, hóa ra, vốn dĩ luôn nằm trong tầm tay tính toán.
+</WhatThisMeans>
+
+<WhittakerBiomeExplorer
+  caption="Hai con số phân định thế giới sinh thái. Hãy kéo chấm tròn qua các mức nhiệt độ và lượng mưa để chứng kiến các khu sinh học thay đổi — đây chính là logic mà các nhà sinh thái học sử dụng trên Trái Đất. Vùng đất Australis của Pandora nằm ở khu vực ấm áp và ẩm ướt quanh năm, lọt thỏm trong góc rừng mưa nhiệt đới, trong khi vùng nhiệt đới của Trái Đất chỉ chạm tới điểm tương tự từ một dải hành tinh hẹp hơn nhiều."
+/>

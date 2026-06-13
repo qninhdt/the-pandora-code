@@ -1,0 +1,37 @@
+## Chiếc đồng hồ không thể bị mua chuộc
+
+Bên trong một số nguyên tử ẩn chứa trạng thái bất ổn. Hạt nhân — nút thắt dày đặc gồm proton và neutron tại tâm nguyên tử — có thể liên kết theo cách kém ổn định. Sớm muộn gì, một hạt nhân như thế cũng sẽ tự sắp xếp lại thành cấu trúc bền vững hơn, giải phóng một hạt hoặc luồng năng lượng trong biến đổi này. Chúng ta gọi loại hạt nhân bất ổn ban đầu là *đồng vị mẹ* và sản phẩm tạo thành là *đồng vị con*, biến đổi này chính là phân rã phóng xạ. Điều kỳ diệu đối với bất kỳ ai muốn đo lường thời gian nằm ở chính cụm từ *sớm muộn gì*.
+
+Ta không thể biết chính xác khi nào một hạt nhân đơn lẻ sẽ phân rã. Nó có thể biến đổi ngay trong giây tiếp theo, hoặc nằm im lìm suốt mười tỷ năm. Thế nhưng, nếu tập hợp một số lượng khổng lồ các hạt nhân — và ngay cả một mảnh đá nhỏ cũng chứa đựng những con số nhiều chữ số không hơn cả số giây của tuổi vũ trụ — cả quần thể ấy sẽ tuân thủ tuyệt đối các quy luật thống kê. Trong bất kỳ khoảng thời gian nào, một *tỷ lệ* cố định lượng hạt nhân mẹ hiện có sẽ phân rã. Không phải một số lượng cố định, mà là một tỷ lệ cố định. Vì thế, quần thể ấy giảm dần không phải bằng phép trừ đều đặn, mà bằng cách chia đôi liên tiếp — đường cong đặc trưng của phân rã hàm mũ.
+
+Cách trực quan nhất để nắm bắt quy luật này là khái niệm <GlossaryTerm slug="half-life">chu kỳ bán rã</GlossaryTerm>: khoảng thời gian cần thiết để một nửa số nguyên tử mẹ hiện có biến đổi thành nguyên tử con. Trải qua một chu kỳ bán rã, một nửa lượng chất mẹ biến mất. Trải qua một chu kỳ nữa, một nửa lượng còn lại tiếp tục phân rã — ta chỉ còn lại một phần tư. Thêm một chu kỳ nữa, một phần tám. Các nguyên tử mẹ không bao giờ biến mất hoàn toàn, nhưng chúng hao hụt theo một lịch trình đều đặn đến mức ta có thể tính ngược dòng: đo lượng chất mẹ còn lại và lượng chất con tích tụ, tỷ lệ giữa hai đại lượng này sẽ cho biết đã có bao nhiêu chu kỳ bán rã trôi qua.
+
+<Chart
+  kind="line"
+  xKey="halflives"
+  xLabel="Chu kỳ bán rã đã trôi qua"
+  yLabel="Số lượng nguyên tử (%)"
+  height={300}
+  data={[
+    { halflives: "0", parent: 100, daughter: 0 },
+    { halflives: "1", parent: 50, daughter: 50 },
+    { halflives: "2", parent: 25, daughter: 75 },
+    { halflives: "3", parent: 12.5, daughter: 87.5 },
+    { halflives: "4", parent: 6.25, daughter: 93.75 },
+    { halflives: "5", parent: 3.125, daughter: 96.875 },
+    { halflives: "6", parent: 1.5625, daughter: 98.4375 }
+  ]}
+  series={[
+    { key: "parent", label: "Nguyên tử mẹ còn lại (%)", tone: "cyan" },
+    { key: "daughter", label: "Nguyên tử con tạo thành (%)", tone: "amber" }
+  ]}
+  caption="Đường cong đặc trưng của mọi chiếc đồng hồ phóng xạ. Mỗi vạch chia dọc theo trục hoành biểu thị một chu kỳ bán rã: lượng nguyên tử mẹ liên tục giảm đi một nửa, trong khi lượng nguyên tử con tương ứng tăng lên để bù đắp. Bằng cách đọc tỷ lệ giữa hai quần thể này, ta sẽ biết được số chu kỳ bán rã đã trôi qua — và từ đó xác định tuổi đời. Trục hoành tính theo đơn vị chu kỳ bán rã, vốn có thể kéo dài từ hàng nghìn năm đến hàng tỷ năm tùy thuộc vào từng nguyên tố khác nhau."
+/>
+
+<HalfLifeDecay
+  caption="Một trăm nguyên tử mẹ phân rã đúng lộ trình. Kéo thanh trượt thời gian theo từng chu kỳ bán rã và quan sát một nửa lượng nguyên tử còn lại biến đổi thành nguyên tử con ở mỗi bước — 100, 50, 25, rồi 12 phần trăm. Tỷ lệ nguyên tử vẫn phát sáng chính là những gì ta cần để xác định tuổi: đây chính là nguyên lý của chiếc đồng hồ sơ cấp mà sau này phương pháp đẳng thời sẽ giúp nó trở nên hoàn hảo không thể lay chuyển. (Chu kỳ bán rã mô phỏng cho phân rã uranium-238 → chì.)"
+/>
+
+Và giờ đây là sự thật cốt lõi giúp toàn bộ công trình này khả thi, một điều thực sự phi thường: tốc độ phân rã là bất biến. Dù bạn nung nóng đá, đông lạnh, nghiền nát dưới áp lực của lớp manti, hòa tan trong axit, hay liên kết các nguyên tử của nó vào hàng trăm khoáng vật khác nhau — chu kỳ bán rã vẫn không hề suy suyển. Các lực tương tác bên trong hạt nhân chi phối hoàn toàn phản ứng phân rã này, khiến hóa học thông thường của thế giới bên ngoài không thể chạm tới. Đây là lý do chiếc đồng hồ phóng xạ không thể bị mua chuộc. Ta có thể dịch chuyển đồng hồ mặt trời, làm chậm con lắc bằng bầu khí quyển đậm đặc, làm tắc nghẽn đồng hồ nước — nhưng tự nhiên không có mức nhiệt độ, áp suất hay mẹo hóa học nào có thể đẩy nhanh hay kìm hãm nhịp tích tắc khi uranium phân rã thành chì. Một chiếc đồng hồ phớt lờ mọi biến động của thế giới xung quanh chính xác là những gì bạn cần để tái hiện lịch sử của lửa cháy, chôn vùi và kiến tạo địa chất. Người ta gọi nhóm phương pháp này là <GlossaryTerm slug="radiometric-dating">đo tuổi bằng phóng xạ</GlossaryTerm>, xương sống của <GlossaryTerm slug="geochronology">địa thời học</GlossaryTerm> — ngành khoa học định hình quá khứ bằng những con số.
+
+Thế nhưng vẫn còn một trở ngại duy nhất, trở ngại suýt đánh sập toàn bộ nỗ lực này.

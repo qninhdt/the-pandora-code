@@ -1,0 +1,24 @@
+# Hợp nhất & Lựa chọn - Section 05
+
+## Lựa chọn Từng câu / Thành phần
+
+- **Cấu trúc chung:**
+  - **Draft 1:** Bị lỗi phóng tác (hallucination) nghiêm trọng. Tự ý thêm thông tin chu kỳ ngày đêm 9.7 ngày của Pandora và một `<Callout>` khoa học tự chế không hề có trong bản gốc. Đồng thời thêm các thuộc tính phức tạp vào `<CirculationBands />` mặc dù trong bản gốc nó là thẻ tự đóng không thuộc tính.
+  - **Draft 2:** Tuân thủ đúng cấu trúc nguyên bản của các thẻ JSX, không có thông tin bịa đặt. Tuy nhiên, cả Draft 1 và Draft 2 đều bị lỗi mất mát dữ liệu (data loss) ở cuối section: cả hai đều bỏ sót đoạn văn chuyển tiếp quan trọng nằm giữa thành phần `<WhittakerBiomeExplorer />` và tiêu đề tiếp theo.
+  - **Quyết định:** Chọn Draft 2 làm nền tảng cốt lõi, bổ sung đoạn dịch tự biên soạn cho phần thông tin bị thiếu hụt ở cuối, và sửa lỗi dịch sai thuật ngữ.
+  - **Lý do:** Đảm bảo truyền tải đầy đủ 100% dữ liệu gốc, không bỏ sót bất kỳ câu chữ nào. Khắc phục lỗi dịch thuật cấu trúc của Draft 1.
+
+- **Thuật ngữ sai ở Draft 2:** "độ dày của bầu sinh quyển" (dịch từ "thickness of its atmosphere" ở câu cuối của `<WhatThisMeans>`).
+  - **Quyết định:** Đổi thành "độ dày của bầu khí quyển".
+  - **Lý do:** Tránh lỗi nghiêm trọng về kiến thức khoa học vũ trụ, "atmosphere" là khí quyển, còn sinh quyển là "biosphere".
+
+- **Đoạn văn bị bỏ sót ở cuối Section (cả hai Draft đều thiếu):**
+  - **Câu gốc:** "But the Hadley cell only places the wet and the dry. It does not, by itself, explain the other thing the ridge showed us — a world that seems gentle and temperate even far from the tropics, with no fierce extremes. For that we need the second dial, and the second dial is the air's own thickness."
+  - **Quyết định:** Kết hợp tự biên soạn: "Thế nhưng, tế bào Hadley mới chỉ xác định được ranh giới của vùng ẩm ướt và khô hạn. Bản thân nó chưa thể lý giải một chi tiết khác mà ta đã thấy từ sống núi Australis — một thế giới dịu hòa và ôn hòa ngay cả khi ở cách xa vùng nhiệt đới, không có những biên độ thời tiết khắc nghiệt. Để giải thích điều này, chúng ta cần tới núm xoay tham số thứ hai, và đó chính là độ dày đặc của bầu khí quyển."
+  - **Lý do:** Điền đầy đủ khoảng trống thông tin chuyển tiếp vô cùng quan trọng trước khi bước sang phần bàn luận về mật độ không khí dày đặc của Pandora ở Section tiếp theo.
+
+- **Thành phần:** `<DiagramFigure />` (fig-04)
+  - **Draft 1:** Dùng tên nhãn dịch thô: "Mặt quay nhanh", "Sa mạc lớn", "Quay chậm (Pandora) - dải ẩm béo".
+  - **Draft 2:** Dịch thoát ý và chuẩn xác hơn: "Quay nhanh — vành đai ẩm mỏng manh", "Sa mạc lan rộng lấn át", "Quay chậm (Pandora) — vành đai ẩm dày đặc".
+  - **Quyết định:** Chọn Draft 2.
+  - **Lý do:** Cách chuyển ngữ của Draft 2 chuyên nghiệp và tự nhiên hơn hẳn.
