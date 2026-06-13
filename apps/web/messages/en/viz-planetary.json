@@ -210,6 +210,15 @@
       "regular": "Strict Periodic Transit",
       "perturbed": "Gravitational Perturbations (TTV)",
       "hint": "TTV detects unseen planets. Toggle the companion planet to see the gravitational tug-of-war pull the main planet, making transits arrive early or late."
+    },
+    "tidalLocking": {
+      "title": "Tidal Locking Simulator",
+      "unlocked": "Unlocked (Independent rotation)",
+      "locked": "Locked (1:1 Spin-Orbit Resonance)",
+      "bulge": "Tidal bulge alignment",
+      "observerPolyphemus": "View from Giant: Moon rotates",
+      "observerPolyphemusLocked": "View from Giant: Permanent face",
+      "hint": "Toggle between Unlocked and Locked. Unlocked moons spin freely; Locked moons are tidally distorted, keeping one face permanently turned toward the parent giant."
     }
   }
 }

@@ -5,6 +5,7 @@ import LotkaVolterra from "@/components/glossary/interactive/lotka-volterra-equa
 import Chirality from "@/components/glossary/interactive/chirality";
 import Umwelt from "@/components/glossary/interactive/umwelt";
 import OccamsRazor from "@/components/glossary/interactive/occams-razor";
+import TidalLocking from "@/components/glossary/interactive/tidal-locking";
 import Cladogram from "@/components/glossary/interactive/cladogram";
 import CountercurrentExchange from "@/components/glossary/interactive/countercurrent-exchange";
 import DirectImaging from "@/components/glossary/interactive/direct-imaging";
@@ -122,6 +123,13 @@ describe("Glossary Components Direct Mount", () => {
     renderWithIntl(<OccamsRazor locale="en" />);
     expect(
       screen.getAllByText("Occam's Razor")[0],
+    ).toBeInTheDocument();
+  });
+
+  it("renders tidal-locking simulator", () => {
+    renderWithIntl(<TidalLocking locale="en" />);
+    expect(
+      screen.getAllByText("Tidal Locking Simulator")[0],
     ).toBeInTheDocument();
   });
 

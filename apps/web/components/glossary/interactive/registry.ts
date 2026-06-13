@@ -17,6 +17,7 @@ export const GLOSSARY_VISUALIZATION_IDS = [
   "chirality",
   "umwelt",
   "occams-razor",
+  "tidal-locking",
 ] as const;
 
 export type GlossaryVisualizationId = (typeof GLOSSARY_VISUALIZATION_IDS)[number];

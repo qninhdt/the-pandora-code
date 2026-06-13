@@ -205,11 +205,20 @@
     },
     "transitTimingVariation": {
       "title": "Biến thiên thời gian quá cảnh (TTV)",
-      "companion": "Thêm hành tinh đồng hành",
-      "deviation": "Lệch thời gian quá cảnh",
+      "companion": "Thêm hành tinh đồng hành hấp dẫn",
+      "deviation": "Độ lệch thời gian quá cảnh",
       "regular": "Quá cảnh tuần hoàn nghiêm ngặt",
       "perturbed": "Nhiễu loạn hấp dẫn (TTV)",
       "hint": "TTV giúp phát hiện các hành tinh vô hình. Bật hành tinh đồng hành để xem trò chơi kéo co hấp dẫn làm hành tinh chính quá cảnh sớm hoặc muộn."
+    },
+    "tidalLocking": {
+      "title": "Giả lập Khóa Thủy triều",
+      "unlocked": "Chưa khóa (Tự quay độc lập)",
+      "locked": "Đã khóa (Cộng hưởng Quỹ đạo-Tự quay 1:1)",
+      "bulge": "Độ lệch bướu thủy triều",
+      "observerPolyphemus": "Nhìn từ hành tinh mẹ: Mặt trăng tự quay",
+      "observerPolyphemusLocked": "Nhìn từ hành tinh mẹ: Luôn thấy một mặt",
+      "hint": "Chuyển đổi giữa trạng thái Chưa khóa và Đã khóa. Vệ tinh chưa khóa tự quay tự do; Vệ tinh bị khóa bị biến dạng thủy triều và luôn giữ một mặt hướng về hành tinh mẹ."
     }
   }
 }

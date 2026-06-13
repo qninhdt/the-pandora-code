@@ -26,6 +26,7 @@ const GLOSSARY_VISUALIZATIONS: Record<
   chirality: dynamic(() => import("./chirality"), { ssr: false }),
   umwelt: dynamic(() => import("./umwelt"), { ssr: false }),
   "occams-razor": dynamic(() => import("./occams-razor"), { ssr: false }),
+  "tidal-locking": dynamic(() => import("./tidal-locking"), { ssr: false }),
 };
 
 interface GlossaryVisualizerProps {
