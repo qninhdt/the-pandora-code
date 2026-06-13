@@ -110,19 +110,21 @@ You MUST strictly follow the 6-step sequence below based on the **BATCH-FIRST** 
 - Deeply analyze all sections. For each section, save to `1-section-analysis.mdx` following `i18n/templates/1-section-analysis.template.mdx`.
 - Identify specific goals, pre-handle structural/cultural bottlenecks, and section-specific terminology.
 
-**STEP 3: Dual Drafting (Batch)**
-- After Step 2 is finished for the entire document, draft all sections into 2 independent versions with different phrasing:
-  - Version 1: Save to `2-draft-1.mdx` (First Draft).
-  - Version 2: Save to `2-draft-2.mdx` (Second Draft, using different phrasing and vocabulary choices compared to Version 1).
-- **CRITICAL NOTE:** BOTH versions must be the BEST possible translations you can produce, not literal word-by-word rough drafts. Apply all 9 Linguistic Rules.
+**STEP 3: Dual Drafting via Subagents (Batch)**
+- You MUST NOT draft this yourself. You MUST invoke **2 INDEPENDENT Subagents** (generalist agents):
+  - **Subagent 1** creates `2-draft-1.mdx` (First Draft) for ALL sections.
+  - **Subagent 2** creates `2-draft-2.mdx` (Second Draft, distinct phrasing) for ALL sections.
+- Both Subagents use the same prompt template `i18n/templates/subagent_translator.prompt.md`.
+- **ISOLATION DISCIPLINE:** Subagents are STRICTLY FORBIDDEN from reading each other's draft files.
 
 **STEP 4: Comprehensive Subagent Evaluation (Batch)**
-- **PHASE-LEVEL SUBAGENT:** Invoke a SINGLE subagent (generalist agent) for the entire evaluation phase.
-- **IRONCLAD DISCIPLINE:** Strictly FORBIDDEN to evaluate your own draft.
-- **Task:** Provide the subagent with the list of sections, original texts, and BOTH drafts (`2-draft-1.mdx` and `2-draft-2.mdx`).
-- The subagent will read `i18n/templates/subagent_evaluator.prompt.md` and evaluate EVERY SINGLE SENTENCE/CAPTION/COMPONENT of BOTH drafts for ALL sections. It must praise good sentences with reasons, and critique bad ones with reasons.
-- The subagent saves results to `3-eval-1.mdx` and `3-eval-2.mdx` for each section (adhering to the one-write-per-turn rule). Wait for the subagent to complete the entire phase before Step 5.
-
+- You MUST NOT evaluate drafts yourself. You MUST invoke **2 INDEPENDENT Evaluator Subagents** (generalist agents):
+  - **Evaluator 1** ONLY reads and evaluates `2-draft-1.mdx` for all sections, outputting `3-eval-1.mdx`.
+  - **Evaluator 2** ONLY reads and evaluates `2-draft-2.mdx` for all sections, outputting `3-eval-2.mdx`.
+- Both use `i18n/templates/subagent_evaluator.prompt.md`.
+- **ISOLATION DISCIPLINE:** Evaluator 1 is FORBIDDEN from reading Draft 2 or Eval 2 files, and vice versa.
+- **Task:** Evaluate EVERY SINGLE SENTENCE/CAPTION/COMPONENT. Praise good sentences with reasons, and critique bad ones with reasons.
+- Wait for both Evaluators to finish the entire phase before Step 5.
 **STEP 5: Merge & Selection (Batch)**
 - After receiving evaluations (eval-1, eval-2) for all sections, proceed with merging.
 - Read the subagent's evaluations. **TREAT THEM ONLY AS REFERENCES.** You must re-verify.

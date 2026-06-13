@@ -111,19 +111,21 @@ Bạn BẮT BUỘC phải tuân thủ đúng trình tự 6 bước dưới đây
 - Phân tích sâu tất cả các section. Với mỗi section, lưu vào `1-section-analysis.mdx` theo `i18n/templates/1-section-analysis.template.mdx`.
 - Xác định mục tiêu cụ thể, xử lý trước các điểm nghẽn cú pháp/ẩn dụ và thuật ngữ đặc thù của section đó.
 
-**BƯỚC 3: Dịch Kép - Dual Drafting (Hàng loạt)**
-- Sau khi xong Bước 2 cho toàn bộ bài, tiến hành dịch tất cả các section thành 2 bản nháp độc lập và khác nhau về cách diễn đạt:
-  - Bản 1: Lưu vào `2-draft-1.mdx` (Bản dịch thứ nhất).
-  - Bản 2: Lưu vào `2-draft-2.mdx` (Bản dịch thứ hai, sử dụng cách diễn đạt và từ vựng khác với Bản 1).
-- **LƯU Ý QUAN TRỌNG:** Cả 2 bản đều phải là bản dịch TỐT NHẤT có thể, không phải dịch thô (word-by-word). Vận dụng toàn bộ 9 Quy tắc Ngôn ngữ.
+**BƯỚC 3: Dịch Kép - Dual Drafting bằng Subagents (Hàng loạt)**
+- Bạn KHÔNG tự dịch. Bạn PHẢI triệu hồi **2 Subagents** (generalist agents) ĐỘC LẬP:
+  - **Subagent 1** tạo `2-draft-1.mdx` (Bản dịch thứ nhất) cho TẤT CẢ các section.
+  - **Subagent 2** tạo `2-draft-2.mdx` (Bản dịch thứ hai, từ vựng/diễn đạt khác) cho TẤT CẢ các section.
+- Cả hai Subagent đều dùng chung prompt template `i18n/templates/subagent_translator.prompt.md`.
+- **KỶ LUẬT CÁCH LY:** Tuyệt đối CẤM Subagent này đọc file draft do Subagent kia tạo ra.
 
 **BƯỚC 4: Subagent Đánh Giá Toàn Diện (Hàng loạt)**
-- **TRIỆU HỒI SUBAGENT:** Khởi tạo DUY NHẤT một subagent (generalist agent) cho toàn bộ Phase đánh giá.
-- **KỶ LUẬT SẮT:** Tuyệt đối NGHIÊM CẤM tự đánh giá bản nháp của chính mình.
-- **Nhiệm vụ:** Gửi cho subagent danh sách các section, file văn bản gốc, và CẢ 2 bản nháp (`2-draft-1.mdx` và `2-draft-2.mdx`). 
-- Subagent sẽ đọc `i18n/templates/subagent_evaluator.prompt.md` và thực hiện đánh giá TỪNG CÂU/CAPTION/COMPONENT MỘT cho CẢ 2 bản draft của TẤT CẢ các section. Câu nào tốt phải khen và nêu lý do, câu nào tệ phải nêu lý do bắt lỗi.
-- Subagent ghi kết quả vào `3-eval-1.mdx` và `3-eval-2.mdx` cho từng section (tuân thủ quy tắc mỗi turn ghi 1 file). Đợi subagent hoàn thành toàn bộ phase rồi mới sang Bước 5.
-
+- Bạn KHÔNG tự đánh giá. Bạn PHẢI triệu hồi **2 Subagents Đánh giá** (generalist agents) ĐỘC LẬP:
+  - **Subagent Eval 1** CHỈ đọc và đánh giá `2-draft-1.mdx` của tất cả các section, xuất ra `3-eval-1.mdx`.
+  - **Subagent Eval 2** CHỈ đọc và đánh giá `2-draft-2.mdx` của tất cả các section, xuất ra `3-eval-2.mdx`.
+- Cả hai dùng chung `i18n/templates/subagent_evaluator.prompt.md`.
+- **KỶ LUẬT CÁCH LY:** CẤM Subagent Eval 1 đọc file của Draft 2 hoặc Eval 2, và ngược lại.
+- **Nhiệm vụ:** Đánh giá TỪNG CÂU/CAPTION/COMPONENT MỘT. Câu nào tốt phải khen và nêu lý do, câu nào tệ phải nêu lý do bắt lỗi.
+- Đợi cả 2 Subagent hoàn thành toàn bộ phase rồi mới sang Bước 5.
 **BƯỚC 5: Hợp Nhất & Lựa Chọn (Hàng loạt)**
 - Sau khi có đầy đủ đánh giá (eval-1, eval-2) cho toàn bộ các section, tiến hành Hợp nhất.
 - Đọc đánh giá của subagent. **Tuy nhiên, bạn CHỈ ĐƯỢC PHÉP XEM ĐÁNH GIÁ ĐÓ NHƯ TÀI LIỆU THAM KHẢO.** Bạn phải tự kiểm chứng lại.
