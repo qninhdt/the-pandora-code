@@ -1,21 +1,24 @@
 # Phân tích Chi tiết - Section 03
 
 ## 1. Mục tiêu Cụ thể của Section
-- **Thông điệp (Intent):** Giải thích hoạt động của tế bào Hadley (Hadley cell) - vòng tuần hoàn khí quyển lớn quyết định sự phân bố của rừng mưa ở xích đạo (nơi không khí bốc lên, nguội đi và trút mưa - "inhale") và sa mạc ở vĩ độ 30 độ (nơi không khí chìm xuống, nén lại, ấm lên và hút ẩm - "exhale").
-- **Khung xưng hô (Pronouns):** Giọng văn thuyết minh khoa học kết hợp lối ví von trực quan sinh động.
+- **Thông điệp (Intent):** Giải thích tại sao vòng tuần hoàn Hadley lại kết thúc ở vĩ độ 30 mà không kéo dài đến tận cực. Đó là do Hiệu ứng Coriolis - hệ quả của việc hành tinh tự quay. Tốc độ tự quay của hành tinh chính là "núm vặn" (dial) quyết định độ rộng của vòng tuần hoàn này, từ đó định đoạt ranh giới của rừng và sa mạc.
+- **Khung xưng hô (Pronouns):** Khách quan, khoa học. "Picture a parcel of air..." -> "Hãy tưởng tượng một khối không khí...".
 
 ## 2. Điểm nghẽn Cú pháp & Ẩn dụ (Bottlenecks)
-- **Ẩn dụ:** "buoyant" (nổi, có sức nổi). Hướng xử lý: "không khí nóng nhẹ hơn nên bốc lên cao".
-- **Cấu trúc khó:** "The forest is simply standing where the air is forced to let go of its water." -> Không dịch máy móc "rừng đơn giản là đứng ở nơi...". Xử lý tự nhiên: "Rừng mưa mọc lên ở chính nơi bầu không khí buộc phải trút bỏ lượng nước tích tụ của mình."
-- **Ẩn dụ:** "...it greedily drinks it from the land below." -> Nhân hóa "greedily drinks" (uống một cách tham lam). Hướng xử lý: "...nó hút kiệt hơi ẩm từ vùng đất bên dưới."
-- **Ẩn dụ:** "business ends" (phần hoạt động chính / đầu mối hoạt động). Hướng xử lý: "hai đầu hoạt động chính: một vùng rừng mưa nơi nó 'hút vào' ở xích đạo, và một vùng sa mạc nơi nó 'thở ra' ở vĩ độ 30 độ."
+- **Cấu trúc khó:** "The air, carrying its fast eastward equatorial motion with it, races ahead of the slowing ground underneath, and from the surface it looks as though some invisible hand were shoving the air sideways..."
+  - *Hướng xử lý:* "Mang theo quán tính quay nhanh về phía đông từ xích đạo, khối không khí này lao nhanh hơn bề mặt đang chậm dần bên dưới. Từ mặt đất nhìn lên, trông như thể có một bàn tay vô hình nào đó đang xô dạt không khí sang một bên..."
+- **Ẩn dụ/Thành ngữ:** "Coriolis only takes the wheel when the moving thing is enormous and slow" / "The drain it has never touched."
+  - *Hướng chuyển ngữ:* "takes the wheel" -> "nắm quyền điều khiển" / "kiểm soát"; "The drain it has never touched." -> "Còn với lỗ cạn bồn tắm, nó chưa từng một lần nhúng tay vào."
+- **Cấu trúc:** "This is the dial."
+  - *Hướng chuyển ngữ:* "Đây chính là chiếc núm vặn." (ẩn dụ về núm vặn điều chỉnh thông số trên một cỗ máy).
 
 ## 3. Thuật ngữ Đặc thù của Section
-- `Intertropical Convergence Zone`: Dải hội tụ liên chí tuyến.
-- `Hadley cell`: tế bào Hadley.
-- `overturning wheel`: bánh xe đảo chiều / vòng tuần hoàn đối lưu khổng lồ.
-- `general circulation`: tuần hoàn chung của khí quyển.
-- `inhale / exhale`: hút vào / thở ra (dùng trong phép ẩn dụ của tế bào Hadley).
+- `Coriolis effect`: Hiệu ứng Coriolis (để nguyên tên riêng).
+- `Parcel of air`: Khối không khí.
+- `Eastward arc`: Đường vòng cung hướng đông.
+- `Downdraft`: Luồng không khí chìm xuống / Luồng giáng.
+- `Jet`: Dòng phản lực (hoặc luồng gió thổi xiết).
+- `Dial`: Núm vặn / Nút xoay điều chỉnh.
 
 ## 4. Ghi chú khác
-- Cần chú ý giữ định dạng của component `<GlossaryTerm />` và `<DiagramFigure />`.
+- `<Callout>` đính chính hiểu lầm phổ biến về hiệu ứng Coriolis (nước xoáy trong bồn cầu). Cần dịch mạch lạc, giọng văn dứt khoát, mang tính giải ảo (myth-busting): "No, it does not steer your bathtub" -> "Không, nó không hề điều khiển bồn tắm nhà bạn".

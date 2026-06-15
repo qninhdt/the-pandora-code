@@ -2,23 +2,65 @@
 
 ## Lựa chọn Từng câu / Thành phần
 
-- **Cấu trúc chung:**
-  - **Draft 1:** Bị lỗi phóng tác (hallucination) nghiêm trọng. Tự ý thêm thông tin chu kỳ ngày đêm 9.7 ngày của Pandora và một `<Callout>` khoa học tự chế không hề có trong bản gốc. Đồng thời thêm các thuộc tính phức tạp vào `<CirculationBands />` mặc dù trong bản gốc nó là thẻ tự đóng không thuộc tính.
-  - **Draft 2:** Tuân thủ đúng cấu trúc nguyên bản của các thẻ JSX, không có thông tin bịa đặt. Tuy nhiên, cả Draft 1 và Draft 2 đều bị lỗi mất mát dữ liệu (data loss) ở cuối section: cả hai đều bỏ sót đoạn văn chuyển tiếp quan trọng nằm giữa thành phần `<WhittakerBiomeExplorer />` và tiêu đề tiếp theo.
-  - **Quyết định:** Chọn Draft 2 làm nền tảng cốt lõi, bổ sung đoạn dịch tự biên soạn cho phần thông tin bị thiếu hụt ở cuối, và sửa lỗi dịch sai thuật ngữ.
-  - **Lý do:** Đảm bảo truyền tải đầy đủ 100% dữ liệu gốc, không bỏ sót bất kỳ câu chữ nào. Khắc phục lỗi dịch thuật cấu trúc của Draft 1.
+- **Câu gốc:** "## The thick-air thermostat"
+  - **Quyết định:** Chọn Draft 2: "## Bộ ổn nhiệt bằng không khí đặc".
 
-- **Thuật ngữ sai ở Draft 2:** "độ dày của bầu sinh quyển" (dịch từ "thickness of its atmosphere" ở câu cuối của `<WhatThisMeans>`).
-  - **Quyết định:** Đổi thành "độ dày của bầu khí quyển".
-  - **Lý do:** Tránh lỗi nghiêm trọng về kiến thức khoa học vũ trụ, "atmosphere" là khí quyển, còn sinh quyển là "biosphere".
+- **Câu gốc:** "Pandora's atmosphere is roughly a fifth denser than Earth's, weighed down with heavy gases."
+  - **Quyết định:** Chọn Draft 1: "Khí quyển của Pandora đặc hơn Trái Đất khoảng một phần năm, trĩu nặng bởi vô số loại khí đậm đặc."
 
-- **Đoạn văn bị bỏ sót ở cuối Section (cả hai Draft đều thiếu):**
-  - **Câu gốc:** "But the Hadley cell only places the wet and the dry. It does not, by itself, explain the other thing the ridge showed us — a world that seems gentle and temperate even far from the tropics, with no fierce extremes. For that we need the second dial, and the second dial is the air's own thickness."
-  - **Quyết định:** Kết hợp tự biên soạn: "Thế nhưng, tế bào Hadley mới chỉ xác định được ranh giới của vùng ẩm ướt và khô hạn. Bản thân nó chưa thể lý giải một chi tiết khác mà ta đã thấy từ sống núi Australis — một thế giới dịu hòa và ôn hòa ngay cả khi ở cách xa vùng nhiệt đới, không có những biên độ thời tiết khắc nghiệt. Để giải thích điều này, chúng ta cần tới núm xoay tham số thứ hai, và đó chính là độ dày đặc của bầu khí quyển."
-  - **Lý do:** Điền đầy đủ khoảng trống thông tin chuyển tiếp vô cùng quan trọng trước khi bước sang phần bàn luận về mật độ không khí dày đặc của Pandora ở Section tiếp theo.
+- **Câu gốc:** "That heaviness is a nuisance to a walking human, but to the climate it is a gift, because a thick atmosphere is an enormous reservoir of heat and an enormous mover of it."
+  - **Quyết định:** Kết hợp: "Sự nặng nề ấy là một phiền toái đối với những con người tản bộ, nhưng lại là một món quà dành cho khí hậu, bởi một bầu không khí đặc quánh chính là một kho chứa nhiệt khổng lồ, đồng thời là một cỗ máy luân chuyển nhiệt vĩ đại."
+  - **Lý do:** Bản dịch "cỗ máy luân chuyển nhiệt vĩ đại" mang sắc thái uy nghi, đúng với văn phong khoa học hệ hành tinh.
 
-- **Thành phần:** `<DiagramFigure />` (fig-04)
-  - **Draft 1:** Dùng tên nhãn dịch thô: "Mặt quay nhanh", "Sa mạc lớn", "Quay chậm (Pandora) - dải ẩm béo".
-  - **Draft 2:** Dịch thoát ý và chuẩn xác hơn: "Quay nhanh — vành đai ẩm mỏng manh", "Sa mạc lan rộng lấn át", "Quay chậm (Pandora) — vành đai ẩm dày đặc".
-  - **Quyết định:** Chọn Draft 2.
-  - **Lý do:** Cách chuyển ngữ của Draft 2 chuyên nghiệp và tự nhiên hơn hẳn.
+- **Câu gốc:** "The thicker the air, the more heat it can carry per gust, and the more aggressively it hauls warmth out of the broiling tropics and rams it into the cold high latitudes."
+  - **Quyết định:** Kết hợp: "Không khí càng đặc, mỗi cơn gió càng cõng được nhiều nhiệt lượng, và nó càng quyết liệt bòn rút hơi ấm ra khỏi vùng nhiệt đới như thiêu như đốt để dội thẳng vào những vùng vĩ độ cao buốt giá."
+  - **Lý do:** Các động từ "cõng", "bòn rút", "dội thẳng vào" lột tả xuất sắc cường độ mạnh mẽ của hành động.
+
+- **Câu gốc:** "A thin-aired world cannot do this well and is forced to bank its heat where it lands — searing equator, frozen poles, a brutal gradient between."
+  - **Quyết định:** Kết hợp: "Một thế giới có bầu không khí loãng hoàn toàn bất lực trong chuyện này và đành cam chịu nhốt nhiệt lượng ngay tại nơi nó giáng xuống — xích đạo rực lửa, hai cực đóng băng, tạo ra một chênh lệch nhiệt độ tàn khốc ở giữa."
+  - **Lý do:** "bất lực", "cam chịu nhốt nhiệt lượng", "tàn khốc" rất biểu cảm.
+
+- **Câu gốc:** "A thick-aired world spreads the wealth."
+  - **Quyết định:** Kết hợp: "Ngược lại, một thế giới có bầu khí quyển đặc lại biết cách san sẻ sự giàu có ấy đi muôn nơi."
+
+- **Câu gốc:** "The equator-to-pole temperature difference flattens; the high latitudes are kept far milder than their meagre sunlight could ever manage on their own."
+  - **Quyết định:** Kết hợp: "Sự chênh lệch nhiệt độ từ xích đạo đến cực bị cào bằng; những vĩ độ cao được ủ ấm êm dịu hơn rất nhiều so với những gì chút ánh sáng mặt trời le lói của chúng có thể tự xoay xở."
+
+- **Câu gốc:** "Our own solar system runs the experiment for us."
+  - **Quyết định:** Kết hợp: "Hệ mặt trời của chúng ta đã làm sẵn thí nghiệm này để phơi bày rành rành điều đó."
+
+- **Câu gốc:** "Mars, with almost no air, swings through savage temperature extremes because its threadbare atmosphere can store and move nothing."
+  - **Quyết định:** Chọn Draft 2: "Sao Hỏa, với lớp không khí mỏng dính gần như bằng không, liên tục chao đảo giữa những thái cực nhiệt độ man rợ vì bầu khí quyển của nó chẳng thể lưu trữ hay luân chuyển thứ gì."
+
+- **Câu gốc:** "Venus and the moon Titan, both wrapped in dense, heavy atmospheres, do the opposite to an almost eerie degree: their thick air smears heat so efficiently that the temperature barely changes from equator to pole, or even from day to night."
+  - **Quyết định:** Kết hợp: "Ngược lại, Sao Kim và mặt trăng Titan — cả hai đều khoác lên mình lớp không khí dày cộm, nặng trĩu — lại phô diễn điều ngược lại đến mức kỳ dị: bầu không khí đặc của chúng bôi trát hơi ấm hiệu quả đến độ nhiệt độ từ xích đạo đến cực, hay thậm chí từ ngày sang đêm, gần như không mảy may sứt mẻ."
+
+- **Câu gốc:** DiagramFigure 05 Labels, alt, caption
+  - **Quyết định:** Nhãn và alt tốt. Caption: "Bầu khí quyển loãng chôn vùi nhiệt lượng ngay tại nơi nó đáp xuống — khúc giữa cháy sém, hai đầu đóng băng. Còn khí quyển đặc lại hoạt động y hệt một bánh đà nhiệt, chuyên chở hơi ấm về cực và tích trữ nó, cho đến khi toàn cầu vận hành ở một ngưỡng nhiệt độ dịu êm. Pandora ngự trị ở một mốc gần hơn rất nhiều so với thái cực đặc."
+
+- **Câu gốc:** "Push the density and the slow spin far enough together and a world can tip into an extreme called <GlossaryTerm slug="superrotation">superrotation</GlossaryTerm>, where the entire atmosphere comes loose from the surface and races around the planet as a single fast-moving shell — Venus does exactly this, its air lapping the slow solid body dozens of times for each of the planet's own turns."
+  - **Quyết định:** Kết hợp: "Thử ép chặt mật độ khí quyển và tốc độ tự quay chậm đi cùng nhau đến một ngưỡng đủ lớn, cả thế giới có thể lật nhào sang một trạng thái cực đoan mang tên <GlossaryTerm slug="superrotation">siêu tự quay</GlossaryTerm>. Ở đó, toàn bộ bầu khí quyển bong dứt ra khỏi bề mặt và đua quanh hành tinh như một lớp vỏ độc nhất di chuyển cực nhanh — Sao Kim đang làm chính xác chuyện này, khi bầu không khí của nó vượt mặt phần thân xác rắn rùa bò bên dưới đến hàng chục lần trong mỗi vòng tự quay của hành tinh."
+
+- **Câu gốc:** "Pandora need not go that far to enjoy the milder version of the same physics: a heavy atmosphere on a slow rotator is built to even out its temperatures."
+  - **Quyết định:** Kết hợp: "Pandora không cần phải đi xa đến thế để tận hưởng phiên bản êm dịu hơn của cùng một nguyên lý vật lý: một bầu không khí nặng trĩu đặt trên một thiên thể tự quay chậm lừ đừ vốn dĩ được sinh ra để cào bằng mọi biến động nhiệt độ."
+
+- **Câu gốc:** "This is the explanation for the parts of Pandora that the rainforest belt alone cannot cover."
+  - **Quyết định:** Kết hợp: "Đây chính là lời giải thích cho những vùng đất trên Pandora mà vành đai rừng mưa chẳng tài nào bao phủ nổi."
+
+- **Câu gốc:** "The Western Frontier's high, cool Clouded Forest — a temperate world of giant fog-wrapped trees that on Earth would belong to a cold maritime coast — sits at a latitude that ought to be harsher than it is, and it survives because the thick-air thermostat keeps warmth flowing into the high latitudes and never lets the cold dig in."
+  - **Quyết định:** Kết hợp: "Rừng Mây (Clouded Forest) vươn cao và se lạnh ở Western Frontier — một vương quốc ôn đới với những thân cây khổng lồ chìm trong sương mù, nơi mà trên Trái Đất lẽ ra phải án ngữ ở một bờ biển lạnh giá — lại ngự trị ở một vĩ độ đáng ra phải khắc nghiệt hơn thế nhiều. Nó sinh tồn được là nhờ bộ ổn nhiệt bằng bầu không khí đặc này liên tục bơm hơi ấm vào các vĩ độ cao, vĩnh viễn không để cái lạnh bắt rễ."
+
+- **Câu gốc:** "The same flywheel even saves Pandora from its own astronomy."
+  - **Quyết định:** Chọn Draft 2: "Cũng chính cái bánh đà ấy đã cứu vớt Pandora khỏi sự tàn nhẫn của chính hệ thiên văn bao quanh nó."
+
+- **Câu gốc:** "The moon is eclipsed by its giant planet daily, plunged into the planet's shadow and cut off from its star for the better part of an hour and a half at a stretch; a thin-aired world would lurch toward a nightly freeze each time."
+  - **Quyết định:** Chọn Draft 2: "Mặt trăng này ngày nào cũng bị hành tinh mẹ khổng lồ nuốt chửng trong nhật thực, chìm vào bóng râm và bị cắt đứt nguồn sáng khỏi ngôi sao ròng rã suốt gần một tiếng rưỡi đồng hồ; cứ mỗi lần như thế, một thế giới không khí loãng sẽ lao thẳng xuống vực băng giá của màn đêm."
+
+- **Câu gốc:** "Pandora's dense atmosphere holds its heat through the shadow like a banked fire holds its warmth through the night, and the surface scarcely notices the star wink out."
+  - **Quyết định:** Kết hợp: "Thế nhưng bầu không khí đặc của Pandora lại ôm ấp nhiệt lượng xuyên qua bóng tối hệt như một đống lửa được ủ kỹ giữ hơi ấm suốt đêm thâu, và bề mặt hành tinh gần như chẳng mảy may nhận ra ngôi sao vừa vụt tắt."
+
+- **Câu gốc:** "Thick air does not just move heat. It refuses to let it go quickly — and that patience is what makes the climate gentle."
+  - **Quyết định:** Kết hợp: "Không khí đặc không chỉ luân chuyển nhiệt lượng. Nó còn cự tuyệt buông tay một cách chóng vánh — và chính sự kiên nhẫn ấy mới là thứ nhào nặn nên một khí hậu êm dịu."
+
+- **Câu gốc:** "There is one more reservoir we have left out, and on a world with an ocean the size of the Eastern Sea, leaving it out would be a crime."
+  - **Quyết định:** Kết hợp: "Vẫn còn một kho dự trữ nữa mà ta chưa nhắc đến, và trên một thế giới sở hữu một đại dương rộng cỡ Biển Đông (Eastern Sea), lờ nó đi thì đúng là một thiếu sót tội lỗi."

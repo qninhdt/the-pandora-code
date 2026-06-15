@@ -1,15 +1,34 @@
 # Bản dịch Nháp [1/2] - Section 04
 
-## Tại sao kích thước vòng tuần hoàn lại cố định như thế
+## Vặn núm xoay về hướng Pandora
 
-Nếu một hành tinh hoàn toàn không tự quay, tế bào Hadley sẽ vô cùng đơn giản và vĩ đại. Luồng khí nóng sẽ bốc lên ở xích đạo, lướt một mạch đến tận hai cực, chìm sâu vào màn đêm lạnh giá, rồi men theo bề mặt đất thổi ngược trở lại. Mỗi bán cầu chỉ có một vòng đối lưu khổng lồ duy nhất, bao trùm từ cực này đến cực kia.
+Pandora tự quay chậm hơn Trái Đất. Nguyên tác khá mơ hồ về con số chính xác — một ngày kéo dài đâu đó từ ngắn hơn một chút cho đến dài hơn một chút so với ngày Trái Đất — nhưng hướng đi thì đã rõ ràng, và tự quay chậm hơn là tất cả những gì chúng ta cần. Tốc độ tự quay chậm hơn đồng nghĩa với hiệu ứng Coriolis yếu ớt hơn, kéo theo luồng khí nhiệt đới sẽ tẩu thoát xa hơn về phía bắc và phía nam trước khi bị bẻ cong, khiến cho vòng tuần hoàn Hadley *rộng hơn* so với của Trái Đất, và vì thế toàn bộ dải phân bố ướt - khô bị kéo giãn ra xa khỏi xích đạo.
 
-Thế nhưng, các hành tinh đều tự quay, và chuyển động tự quay đó đã phá vỡ vòng tuần hoàn đơn độc này.
+<CirculationBands />
 
-Hãy hình dung một khối khí đang nằm ở xích đạo. Bởi vì nó đang ngự trên một khối cầu đang xoay, bản thân nó đã chuyển động về hướng đông với vận tốc bằng vận tốc bề mặt xích đạo — khoảng 1.600 km/h trên Trái Đất. Khi tế bào Hadley nhấc bổng khối khí này lên và đưa nó về phía cực, khối khí sẽ chuyển động lại gần trục tự quay của hành tinh hơn. Các vòng vĩ độ thu hẹp dần, và mặt đất bên dưới chuyển động về phía đông chậm chạp hơn. Khối khí mang theo vận tốc quay hướng đông rất nhanh từ xích đạo sẽ lao nhanh hơn mặt đất đang chuyển động chậm dần bên dưới. Đứng từ bề mặt nhìn lên, ta có cảm giác như một bàn tay vô hình đang đẩy khối khí lệch sang bên. Đây chính là <GlossaryTerm slug="coriolis-effect">hiệu ứng Coriolis</GlossaryTerm>.
+<DiagramFigure
+  src="/images/chapters/continents-oceans-climate/fig-04-widened-hadley.webp"
+  labels={[
+    { x: 24, y: 49, side: "right", label: "Quay nhanh — dải mưa mỏng manh" },
+    { x: 22, y: 24, side: "right", label: "Sa mạc rộng lớn chen chúc" },
+    { x: 76, y: 49, side: "left", label: "Quay chậm (Pandora) — dải mưa béo mập", note: "Sa mạc bị lưu đày lên vĩ độ cao" },
+  ]}
+  alt="Hai hành tinh đặt cạnh nhau: bên trái với một vành đai mây và rừng hẹp sáng rực ôm sát xích đạo và những sa mạc rộng lớn nhạt màu chen chúc ngay sát cạnh, bên phải với một vành đai mây và rừng béo mập xanh tươi bao trọn phần giữa và chỉ còn lại những sa mạc mỏng manh bị đẩy tít ra xa về phía hai cực"
+  figNo="04"
+  caption="Cùng một cỗ máy, hai tốc độ quay. Quay nhanh (trái) và vành đai mưa chỉ là một dải mỏng quanh xích đạo bị chèn ép bởi những sa mạc rộng lớn; quay chậm, như Pandora (phải), và vành đai mưa phình to lấp đầy vùng nhiệt đới trong khi sa mạc bị lưu đày lên tận các vĩ độ cao."
+  tier="inference"
+/>
 
-<Callout variant="science" title="Không, nó không quyết định chiều xoáy nước bồn tắm đâu">
-Một đính chính khoa học nhỏ: hiệu ứng Coriolis không hề quyết định chiều xoáy của dòng nước khi bạn xả bồn cầu hay bồn tắm. Ở quy mô chỉ vài decimet, chuyển động tự quay vô cùng nhỏ của Trái Đất hoàn toàn bị lấn át bởi hình dáng của lòng bồn, hướng chảy của vòi nước và cả cái lắc tay nhẹ khi bạn rút nút xả. Hiệu ứng Coriolis chỉ thực sự làm chủ cuộc chơi khi vật thể chuyển động có quy mô khổng lồ và chậm rãi, như một hệ thống thời tiết đang quét qua cả một lục địa.
-</Callout>
+Hãy xem sự kéo giãn đó tác động ra sao lên bản đồ. Trên Trái Đất, nhánh bốc lên tạo mưa bị ghim chặt ở xích đạo và nhánh hạ giáng tạo sa mạc giáng thẳng xuống ở vĩ độ 30, thế nên rừng mưa chỉ chiếm được một dải hẹp còn sa mạc lại được hưởng một vùng thênh thang. Kéo rộng vòng tuần hoàn ra, và hai điều sẽ đồng thời xảy ra. Nhánh khí bốc lên tạo mưa không còn là một đường xích đạo mỏng manh nữa — nó phình to thành một vành đai nhiệt đới khổng lồ vươn xa có lẽ gấp đôi khỏi xích đạo, một vùng rộng lớn của thế giới được giao phó cho luồng khí ẩm không ngừng bốc lên và đổ mưa. Còn nhánh hạ giáng tạo sa mạc thì bị đẩy lùi ra tận vĩ độ 45 hay 50, tiến vào những vĩ độ cao mát mẻ, nơi mà nó yếu đi và dễ dàng bị khuất phục. Các sa mạc không biến mất, nhưng chúng bị lưu đày ra ngoài lề và rơi vào vùng khuất gió, bị tước đoạt mất đế chế cận nhiệt đới rộng lớn mà chúng từng thống trị trên Trái Đất.
 
-Chính sự lệch hướng sang hai bên này đã chặn đứng tầm với của tế bào Hadley. Khi luồng khí hướng về phía cực bị bẻ cong ngày càng nhiều về phía đông, cuối cùng nó hoàn toàn ngừng di chuyển về phía cực. Thay vào đó, nó dồn tụ lại thành một dòng gió thổi nhanh ở độ cao lớn từ tây sang đông — gọi là dòng xiết cận nhiệt đới (subtropical jet). Bị chặn đứng bởi động lượng của chính mình, khối khí không thể đi xa hơn về phía bắc hay nam. Nó tích tụ lại, nặng dần lên và buộc phải chìm ngược trở lại bề mặt.
+Kết hợp cả hai thay đổi đó lại, ta vừa mới viết nên lời mô tả về Australis mà chẳng cần liếc nhìn nó dù chỉ một lần: một lục địa nằm sâu thẳm bên trong một vành đai ẩm ướt được mở rộng, đến mức rừng mưa đơn giản chính là trạng thái mặc định của vùng đất, trải dải từ bờ này sang bờ kia, chẳng chừa lại khoảng trống nào để hình thành một Sahara. Cái sự đồng nhất xanh tươi ngút ngàn thoạt nhìn có vẻ kỳ lạ từ dải núi kia hóa ra chẳng có gì lạ thường cả. Đó chính xác là những gì vòng tuần hoàn Hadley của một thế giới quay chậm phải tạo ra. Chúng ta chỉ vừa vặn một chiếc núm, và rừng mưa đã lan rộng lấp kín toàn bộ tầm nhìn.
+
+<WhatThisMeans title="Cỗ máy phác thảo bản đồ">
+Đây chính là ý tưởng có thể chuyển giao, thứ đáng để mang theo khi rời khỏi Pandora để áp dụng cho mọi thế giới mà bạn tò mò. Khí hậu không phải là một danh sách những nơi tình cờ bị ẩm ướt hay khô hạn. Nó là *kết quả đầu ra của một quá trình hoàn lưu*, và cấu trúc hình học của hoàn lưu đó được thiết lập bởi vài thông số hành tinh — lượng ánh sáng nhận được, tốc độ tự quay, và độ dày bầu không khí. Nơi nào không khí bốc lên, nơi đó sinh ra rừng mưa; nơi nào không khí giáng xuống, nơi đó có sa mạc; và tốc độ quay quyết định vĩ độ của cả hai. Đây là lý do tại sao các nhà sinh thái học có thể phân loại hầu hết mọi hệ sinh thái trên Trái Đất — mọi <GlossaryTerm slug="biome">quần xã sinh vật</GlossaryTerm>, từ rừng mưa cho đến đài nguyên — chỉ bằng hai con số: nhiệt độ trung bình và lượng mưa trung bình của một vùng, bởi chính hai con số này lại bị chi phối bởi vị trí của vùng đất đó trong vòng luân chuyển không khí của hành tinh. Hãy trao cho một nhà khí hậu học lành nghề tốc độ quay, lượng ánh sáng sao và độ dày bầu khí quyển của một thế giới, họ sẽ phác thảo lại cho bạn bức tranh toàn cảnh về bản đồ sự sống của thế giới ấy. Hóa ra, từ trước đến nay, rừng rậm và sa mạc đều là những thứ hoàn toàn có thể tính toán được.
+</WhatThisMeans>
+
+<WhittakerBiomeExplorer
+  caption="Hai con số phân loại thế giới sống. Hãy kéo điểm đánh dấu chạy dọc theo nhiệt độ và lượng mưa rồi quan sát quần xã sinh vật thay đổi — chính cái logic mà các nhà sinh thái học vẫn dùng trên Trái Đất. Lục địa Australis của Pandora nóng ẩm và sũng nước, ngự trị sâu bên trong góc phần tư của rừng mưa nhiệt đới, trong khi vùng nhiệt đới của Trái Đất chỉ lướt qua vị trí này bằng một dải hẹp hơn rất nhiều của hành tinh."
+/>
+
+Thế nhưng vòng tuần hoàn Hadley mới chỉ sắp đặt ranh giới ướt và khô. Tự bản thân nó không giải thích được đặc điểm còn lại mà dải núi đã phô bày cho ta thấy — một thế giới ôn hòa và êm dịu dẫu đã đi xa khỏi vùng nhiệt đới, không hề có những cực đoan khắc nghiệt. Để lý giải điều đó, ta cần đến chiếc núm vặn thứ hai, và chiếc núm vặn thứ hai chính là độ dày của bầu không khí.

@@ -2,26 +2,94 @@
 
 ## Lựa chọn Từng câu / Thành phần
 
-- **Cấu trúc chung:**
-  - **Draft 1:** Mắc lỗi cấu trúc nghiêm trọng, chứa nhiều đoạn văn và ghi chú khoa học ngoài lề không hề tồn tại trong văn bản tiếng Anh gốc của Section 03 (bao gồm chú thích về vùng lặng gió doldrums và thủy thủ). Đồng thời dùng sai hình vẽ (`fig-03-hadley-cell.webp` thay vì `fig-03-three-cell.webp`).
-  - **Draft 2:** Tuân thủ 100% cấu trúc, nội dung và các thành phần của văn bản gốc.
-  - **Quyết định:** Chọn Draft 2 làm nền tảng cốt lõi, tiến hành hiệu chỉnh ngôn từ để tối ưu hóa tính trôi chảy.
-  - **Lý do:** Draft 1 bị lỗi nghiêm trọng về tính chính xác thông tin (hallucination) và sai lệch cấu trúc mảng nội dung so với tài liệu gốc.
+- **Câu gốc:** "## Why the wheel is the size it is"
+  - **Quyết định:** Chọn Draft 1: "## Vì sao bánh xe lại mang kích cỡ ấy".
+  - **Lý do:** Giữ hình ảnh "bánh xe" từ phần trước, nghe tự nhiên.
 
-- **Câu gốc:** "Take that hot equatorial air. Warm air is buoyant, so it rises — and as it climbs into thinner surroundings it expands and cools, and cooling air cannot hold its water, so the moisture condenses into towering cloud and falls back out as rain."
-  - **Draft 1:** "Tại vùng nhiệt đới, nơi mặt đất luôn nóng bỏng, lớp không khí ngay bên trên nó cũng ấm lên. Không khí nóng giãn nở, trở nên nhẹ hơn... bắt đầu bốc lên cao... [Hallucinated extra content]"
-  - **Draft 2:** "Hãy quan sát luồng không khí nóng bỏng tại xích đạo. Không khí ấm nhẹ hơn nên bốc lên cao — và khi vươn tới những tầng khí quyển loãng hơn, nó giãn nở rồi nguội dần. Luồng khí lạnh đi không thể giữ mãi lượng hơi nước tích tụ, khiến chúng ngưng tụ thành những cột mây giông sừng sững rồi trút xuống thành mưa."
-  - **Quyết định:** Kết hợp: "Hãy xét luồng không khí nóng bỏng tại xích đạo. Không khí ấm nhẹ hơn nên bốc lên cao — và khi vươn tới những tầng khí quyển loãng hơn, nó giãn nở rồi nguội dần. Luồng khí nguội đi không thể giữ được hơi nước, khiến độ ẩm ngưng tụ thành những cột mây giông sừng sững rồi trút xuống thành mưa."
-  - **Lý do:** Khắc phục lỗi dịch thuật cấu trúc của Draft 1, chỉnh sửa chữ "quan sát" thành "xét" cho hợp văn phong học thuật, diễn đạt tự nhiên hơn hiện tượng ngưng tụ hơi ẩm.
+- **Câu gốc:** "The Hadley cell does not reach all the way to the pole, and the reason is the planet's spin."
+  - **Quyết định:** Kết hợp: "Vòng tuần hoàn Hadley không vươn dài đến tận vùng cực, và thủ phạm chính là chuyển động tự quay của hành tinh."
+  - **Lý do:** Dùng từ "thủ phạm" và "chuyển động tự quay" cực kỳ chuẩn xác.
 
-- **Câu gốc:** "Sinking air is the enemy of rain: as it descends it compresses and warms and its capacity for moisture *grows*, so instead of releasing water it greedily drinks it from the land below."
-  - **Draft 1:** "Giống như sự giãn nở và nguội đi đã vắt kiệt nước ra ngoài, sự nén lại và ấm lên biến khối khí thành một miếng bọt biển khổng lồ: khô ráo, khát nước... hút kiệt hơi ẩm..."
-  - **Draft 2:** "Dòng khí đi xuống chính là khắc tinh của mưa: khi hạ cao độ, nó bị nén lại, ấm lên và khả năng ngậm hơi ẩm của nó *tăng lên*, thế nên thay vì trút nước, nó lại tham lam hút kiệt hơi ẩm từ vùng đất bên dưới."
-  - **Quyết định:** Kết hợp: "Luồng khí đi xuống chính là khắc tinh của mưa: khi hạ xuống thấp, nó nén lại và ấm lên, khiến khả năng ngậm hơi ẩm của nó *tăng lên*; thế nên thay vì trút nước, nó lại hút kiệt hơi ẩm từ vùng đất bên dưới."
-  - **Lý do:** Loại bỏ từ mang sắc thái quá nhân hóa "tham lam" (greedily) trong văn bản khoa học, dùng từ "luồng khí đi xuống" tự nhiên và súc tích hơn.
+- **Câu gốc:** "Picture a parcel of air leaving the equator, heading north at altitude toward the pole."
+  - **Quyết định:** Chọn Draft 2: "Hãy hình dung một khối không khí rời khỏi xích đạo, bốc lên cao và tiến về cực Bắc."
+  - **Lý do:** Mạch lạc, dễ hình dung.
 
-- **Thành phần:** `<DiagramFigure />` (fig-03)
-  - **Draft 1:** Dịch nhãn bị lệch cấu trúc và dùng hình ảnh sai.
-  - **Draft 2:** Dịch đầy đủ các nhãn gốc: "Khí ấm bốc lên ở xích đạo / Mây giông sừng sững, mưa xối xả", "Luồng khí nguội dần trôi về phía cực", "Khí khô chìm xuống → sa mạc", "Rừng xanh mọc dưới luồng khí hút vào".
-  - **Quyết định:** Chọn Draft 2.
-  - **Lý do:** Khớp hoàn toàn với định vị hình ảnh và nhãn của sơ đồ trong nguyên tác.
+- **Câu gốc:** "As it travels it is also riding a spinning ball — and the ground beneath it is moving fastest at the equator and slower the farther north it goes, because the higher latitudes trace smaller circles around the axis."
+  - **Quyết định:** Kết hợp: "Trên chặng đường đó, bản thân nó đồng thời đang cưỡi trên một quả cầu đang xoay tròn — và mặt đất bên dưới nó thì chuyển động nhanh nhất ở xích đạo, càng lên phía Bắc thì tốc độ càng giảm dần, bởi lẽ các vĩ độ cao hơn vạch ra những vòng tròn nhỏ hơn quanh trục."
+  - **Lý do:** Động từ "cưỡi trên", "vạch ra" sinh động.
+
+- **Câu gốc:** "The air, carrying its fast eastward equatorial motion with it, races ahead of the slowing ground underneath, and from the surface it looks as though some invisible hand were shoving the air sideways, curving its straight path into a tightening eastward arc."
+  - **Quyết định:** Kết hợp: "Mang theo quán tính chuyển động nhanh về phía Đông từ xích đạo, khối không khí lao nhanh hơn hẳn bề mặt đang chậm dần bên dưới. Đứng từ mặt đất nhìn lên, trông như thể có một bàn tay vô hình nào đó đang xô dạt không khí sang một bên, uốn cong đường bay thẳng tắp của nó thành một vòng cung ngày càng thắt chặt về hướng Đông."
+  - **Lý do:** "bàn tay vô hình", "xô dạt", "uốn cong" lột tả tuyệt hảo.
+
+- **Câu gốc:** "That apparent shove is the <GlossaryTerm slug="coriolis-effect">Coriolis effect</GlossaryTerm>, and it is purely a consequence of doing your travelling on a spinning thing."
+  - **Quyết định:** Kết hợp: "Cú xô biểu kiến ấy chính là <GlossaryTerm slug="coriolis-effect">hiệu ứng Coriolis</GlossaryTerm>, một hệ quả rành rành của việc di chuyển trên một vật thể đang xoay."
+  - **Lý do:** "Cú xô biểu kiến" là ngôn ngữ khoa học tốt, "hệ quả rành rành" là ngôn ngữ Việt tự nhiên.
+
+- **Câu gốc:** `<Callout variant="science" title="No, it does not steer your bathtub">`
+  - **Quyết định:** Chọn Draft 1: `<Callout variant="science" title="Không, nó không hề điều khiển bồn tắm nhà bạn">`
+  - **Lý do:** Dịch sắc sảo.
+
+- **Câu gốc:** "The Coriolis effect is real and it is powerful — but only at the right scale, and the most famous thing attributed to it is a myth."
+  - **Quyết định:** Chọn Draft 1: "Hiệu ứng Coriolis là có thật và vô cùng mạnh mẽ — nhưng chỉ ở một quy mô thích hợp, còn hiện tượng nổi tiếng nhất được gán cho nó thực chất lại là một lời đồn thổi vô căn cứ."
+  - **Lý do:** Dịch "myth" thành "lời đồn thổi vô căn cứ" rất sắc.
+
+- **Câu gốc:** "It does not decide which way water spirals down your sink or toilet."
+  - **Quyết định:** Chọn Draft 1: "Nó không hề định đoạt chiều xoáy của dòng nước xả xuống bồn rửa hay bồn cầu nhà bạn."
+  - **Lý do:** "Dòng nước xả xuống" tự nhiên hơn.
+
+- **Câu gốc:** "The force is so feeble over a basin a metre wide that it is utterly drowned out by the shape of the bowl, the angle of the tap, and whatever swirl the water already had; fill the same sink twice and it will happily drain both ways."
+  - **Quyết định:** Kết hợp: "Trên một chiếc bồn chỉ rộng chừng một mét, lực này yếu ớt đến độ bị lấn át hoàn toàn bởi hình dáng của chiếc bồn, góc độ của vòi nước, và bất kỳ vòng xoáy nào mà dòng nước vốn dĩ đã mang theo; hãy đổ đầy cùng một chiếc bồn ấy hai lần, và nước sẽ vui vẻ xả xuống theo cả hai chiều khác nhau."
+  - **Lý do:** Lối dịch nhẹ nhàng, tinh tế.
+
+- **Câu gốc:** "Coriolis only takes the wheel when the moving thing is enormous and slow — a thousand-kilometre storm, a basin-spanning ocean current, a planet-girdling wind."
+  - **Quyết định:** Kết hợp: "Coriolis chỉ giành lấy vô lăng khi sự vật chuyển động có kích thước khổng lồ và diễn tiến chậm chạp — một cơn bão rộng ngàn kilomet, một dòng hải lưu trải dài cả lưu vực đại dương, một trận cuồng phong bao quanh hành tinh."
+  - **Lý do:** "giành lấy vô lăng" là pha Việt hóa thông minh.
+
+- **Câu gốc:** "Those it rules absolutely. The drain it has never touched."
+  - **Quyết định:** Chọn Draft 1: "Đó mới là những thứ nó thống trị tuyệt đối. Còn với lỗ cạn bồn tắm, nó chưa từng một lần nhúng tay vào."
+  - **Lý do:** Đảo ngữ và "nhúng tay vào" chốt vấn đề xuất sắc.
+
+- **Câu gốc:** "Here is the payoff."
+  - **Quyết định:** Chọn Draft 2: "Và đây là đáp án."
+  - **Lý do:** Phù hợp với bối cảnh đang giải đáp tại sao vòng tuần hoàn không vươn tới cực.
+
+- **Câu gốc:** "That sideways deflection is what stops the Hadley cell short."
+  - **Quyết định:** Kết hợp: "Chính cú chệch hướng sang ngang ấy đã buộc vòng tuần hoàn Hadley phải dừng bước."
+  - **Lý do:** "buộc... dừng bước" mạnh mẽ, biểu cảm.
+
+- **Câu gốc:** "The poleward-bound high air gets bent so hard toward the east that, by about thirty degrees of latitude, it is no longer travelling poleward at all — it is racing due east as a jet, going around the world instead of toward the pole."
+  - **Quyết định:** Kết hợp: "Khối không khí trên cao đang hướng về cực bị bẻ cong về phía Đông mạnh đến mức, khi chạm ngưỡng vĩ độ 30, nó không còn hướng về cực nữa — nó đang lao vun vút về hướng Đông hệt như một dòng phản lực, bay vòng quanh thế giới thay vì tiến về phía cực."
+  - **Lý do:** "lao vun vút", "dòng phản lực" là các từ sinh động, diễn tả tốc độ cao.
+
+- **Câu gốc:** "Unable to push any farther north, it banks up and sinks."
+  - **Quyết định:** Kết hợp: "Không thể nhích thêm xa hơn về phía Bắc, nó đành dồn ứ lại và chìm xuống."
+  - **Lý do:** "nhích thêm", "dồn ứ lại" chuẩn xác cao độ.
+
+- **Câu gốc:** "*That* is why the desert-making downdraft sits at thirty degrees: it is the latitude where the spin of the Earth turns the escaping tropical air sideways and brings it down."
+  - **Quyết định:** Kết hợp: "*Đó* chính là lý do vì sao luồng giáng tạo sa mạc lại an tọa ở vĩ độ 30: đó là vĩ độ mà chuyển động tự quay của Trái Đất bẻ ngoặt luồng không khí đang cố tẩu thoát khỏi vùng nhiệt đới sang một bên rồi kéo nó giáng xuống mặt đất."
+  - **Lý do:** "an tọa", "bẻ ngoặt", "cố tẩu thoát", "giáng xuống" hợp lại tạo nên một hình ảnh cực kỳ uy lực.
+
+- **Câu gốc:** "The faster a planet spins, the sooner that happens — the stronger the deflection, the shorter the poleward reach, the narrower the cell."
+  - **Quyết định:** Chọn Draft 1: "Một hành tinh quay càng nhanh thì điều đó xảy ra càng sớm — độ lệch hướng càng mạnh, tầm vươn về cực càng ngắn, ô hoàn lưu càng hẹp."
+  - **Lý do:** Cấu trúc điệp khúc dứt khoát.
+
+- **Câu gốc:** "Spin a world quickly and you get tight, early-closing Hadley cells and a thin tropical belt."
+  - **Quyết định:** Kết hợp: "Xoay một thế giới thật nhanh, bạn sẽ có những vòng tuần hoàn Hadley chật hẹp, khép lại từ sớm, cùng một vành đai nhiệt đới mỏng dính."
+  - **Lý do:** "mỏng dính" rất khẩu ngữ và sinh động.
+
+- **Câu gốc:** "Spin it slowly and the air gets farther from the equator before the weakened Coriolis can turn it, the cell stretches wider, and the rainy belt and the sinking deserts both migrate poleward."
+  - **Quyết định:** Kết hợp: "Nhưng nếu xoay thật chậm, không khí sẽ vươn được xa xích đạo hơn trước khi sức mạnh rệu rã của Coriolis kịp bẻ cong nó, vòng tuần hoàn sẽ kéo giãn rộng ra, đẩy cả vành đai mưa lẫn những sa mạc hạ giáng di cư về phía các cực."
+  - **Lý do:** "rệu rã", "di cư" lột tả xuất sắc ý đồ tác giả.
+
+- **Câu gốc:** "This is the dial."
+  - **Quyết định:** Chọn Draft 1: "Đây chính là chiếc núm vặn."
+  - **Lý do:** Đúng văn cảnh.
+
+- **Câu gốc:** "Rotation rate sets the width of the wheel, and the width of the wheel sets the latitude of every forest and every desert."
+  - **Quyết định:** Kết hợp: "Tốc độ tự quay thiết lập độ rộng của bánh xe luân chuyển, và độ rộng của bánh xe lại thiết lập vĩ độ cho từng gốc rừng và mỗi bãi cát sa mạc."
+  - **Lý do:** Văn phong thơ mộng ở nửa sau "từng gốc rừng và mỗi bãi cát sa mạc".
+
+- **Câu gốc:** "Now we can finally turn it, and watch Pandora appear."
+  - **Quyết định:** Kết hợp: "Giờ đây, cuối cùng ta cũng có thể tự tay xoay chiếc núm vặn ấy, và chiêm ngưỡng Pandora dần hiện hình."
+  - **Lý do:** "tự tay xoay", "chiêm ngưỡng", "dần hiện hình" đậm chất điện ảnh.
