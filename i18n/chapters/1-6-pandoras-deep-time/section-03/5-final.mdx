@@ -1,37 +1,14 @@
-## Chiếc đồng hồ không thể bị mua chuộc
+## Chiếc đồng hồ không cần vạch số 0
 
-Bên trong một số nguyên tử ẩn chứa trạng thái bất ổn. Hạt nhân — nút thắt dày đặc gồm proton và neutron tại tâm nguyên tử — có thể liên kết theo cách kém ổn định. Sớm muộn gì, một hạt nhân như thế cũng sẽ tự sắp xếp lại thành cấu trúc bền vững hơn, giải phóng một hạt hoặc luồng năng lượng trong biến đổi này. Chúng ta gọi loại hạt nhân bất ổn ban đầu là *đồng vị mẹ* và sản phẩm tạo thành là *đồng vị con*, biến đổi này chính là phân rã phóng xạ. Điều kỳ diệu đối với bất kỳ ai muốn đo lường thời gian nằm ở chính cụm từ *sớm muộn gì*.
+Muốn đọc một chiếc đồng hồ, ta phải biết nó bắt đầu chạy từ đâu. Đồng hồ phân rã đếm số lượng nguyên tử con tích tụ — nhưng nếu ngay từ ngày tảng đá mới hình thành, nó đã chứa sẵn một lượng nguyên tố con nào đó thì sao? Khi ấy, ta sẽ tính gộp cả những nguyên tử thừa hưởng sẵn có này như thể chúng là sản phẩm phân rã, và đọc ra một độ tuổi già hơn rất nhiều so với thực tế. Suốt một thời gian dài, đây chính là tử huyệt của toàn bộ phương pháp: mọi kết quả định tuổi đều phụ thuộc vào một giả định về lượng nguyên tố con ban đầu, mà giả định thì vĩnh viễn không thể coi là một phép đo lường khoa học.
 
-Ta không thể biết chính xác khi nào một hạt nhân đơn lẻ sẽ phân rã. Nó có thể biến đổi ngay trong giây tiếp theo, hoặc nằm im lìm suốt mười tỷ năm. Thế nhưng, nếu tập hợp một số lượng khổng lồ các hạt nhân — và ngay cả một mảnh đá nhỏ cũng chứa đựng những con số nhiều chữ số không hơn cả số giây của tuổi vũ trụ — cả quần thể ấy sẽ tuân thủ tuyệt đối các quy luật thống kê. Trong bất kỳ khoảng thời gian nào, một *tỷ lệ* cố định lượng hạt nhân mẹ hiện có sẽ phân rã. Không phải một số lượng cố định, mà là một tỷ lệ cố định. Vì thế, quần thể ấy giảm dần không phải bằng phép trừ đều đặn, mà bằng cách chia đôi liên tiếp — đường cong đặc trưng của phân rã hàm mũ.
+Lối thoát khỏi cạm bẫy này là một trong những ý tưởng tao nhã bậc nhất của toàn bộ nền khoa học vật lý, xứng đáng để ta nghiền ngẫm thấu đáo vẻ đẹp tư duy thay vì chỉ tiếp nhận như một định lý khô khan. Đó là phương pháp <GlossaryTerm slug="isochron">đường đẳng thời</GlossaryTerm> (isochron), vận hành bằng cách khảo sát khéo léo *nhiều* khoáng vật cùng lúc thay vì bám víu vào một khoáng vật duy nhất.
 
-Cách trực quan nhất để nắm bắt quy luật này là khái niệm <GlossaryTerm slug="half-life">chu kỳ bán rã</GlossaryTerm>: khoảng thời gian cần thiết để một nửa số nguyên tử mẹ hiện có biến đổi thành nguyên tử con. Trải qua một chu kỳ bán rã, một nửa lượng chất mẹ biến mất. Trải qua một chu kỳ nữa, một nửa lượng còn lại tiếp tục phân rã — ta chỉ còn lại một phần tư. Thêm một chu kỳ nữa, một phần tám. Các nguyên tử mẹ không bao giờ biến mất hoàn toàn, nhưng chúng hao hụt theo một lịch trình đều đặn đến mức ta có thể tính ngược dòng: đo lượng chất mẹ còn lại và lượng chất con tích tụ, tỷ lệ giữa hai đại lượng này sẽ cho biết đã có bao nhiêu chu kỳ bán rã trôi qua.
+Khi một khối đá nóng chảy nguội dần và kết tinh, nó không chỉ tạo ra một khoáng vật đơn độc — mà sinh ra nhiều khoáng vật khác nhau cạnh nhau từ cùng một lò magma. Do cấu trúc mạng tinh thể đặc thù, mỗi khoáng vật sẽ háo hức thu nạp một số nguyên tố nhất định và kiên quyết khước từ những nguyên tố khác. Kết quả là các khoáng vật kết thúc với hàm lượng nguyên tử mẹ phóng xạ chênh lệch một trời một vực. Nhưng món quà của tự nhiên nằm ở chỗ: vì cùng kết tinh từ một khối magma đồng nhất đã hòa trộn kỹ, tất cả chúng đều bắt đầu với *cùng một* tỷ lệ nguyên tố con ban đầu. Cùng chung vạch xuất phát, chỉ khác nhau lượng nhiên liệu mang theo.
 
-<Chart
-  kind="line"
-  xKey="halflives"
-  xLabel="Chu kỳ bán rã đã trôi qua"
-  yLabel="Số lượng nguyên tử (%)"
-  height={300}
-  data={[
-    { halflives: "0", parent: 100, daughter: 0 },
-    { halflives: "1", parent: 50, daughter: 50 },
-    { halflives: "2", parent: 25, daughter: 75 },
-    { halflives: "3", parent: 12.5, daughter: 87.5 },
-    { halflives: "4", parent: 6.25, daughter: 93.75 },
-    { halflives: "5", parent: 3.125, daughter: 96.875 },
-    { halflives: "6", parent: 1.5625, daughter: 98.4375 }
-  ]}
-  series={[
-    { key: "parent", label: "Nguyên tử mẹ còn lại (%)", tone: "cyan" },
-    { key: "daughter", label: "Nguyên tử con tạo thành (%)", tone: "amber" }
-  ]}
-  caption="Đường cong đặc trưng của mọi chiếc đồng hồ phóng xạ. Mỗi vạch chia dọc theo trục hoành biểu thị một chu kỳ bán rã: lượng nguyên tử mẹ liên tục giảm đi một nửa, trong khi lượng nguyên tử con tương ứng tăng lên để bù đắp. Bằng cách đọc tỷ lệ giữa hai quần thể này, ta sẽ biết được số chu kỳ bán rã đã trôi qua — và từ đó xác định tuổi đời. Trục hoành tính theo đơn vị chu kỳ bán rã, vốn có thể kéo dài từ hàng nghìn năm đến hàng tỷ năm tùy thuộc vào từng nguyên tố khác nhau."
-/>
+Hãy quan sát điều gì xảy ra khi chiếc đồng hồ bắt đầu chạy. Ta biểu diễn mỗi khoáng vật thành một điểm trên đồ thị, với lượng nguyên tử mẹ trên một trục và lượng nguyên tử con trên trục còn lại. Tại thời điểm kết tinh, mọi điểm đều nằm thẳng hàng trên một đường nằm ngang — cùng một tỷ lệ nguyên tố con, bất kể lượng nguyên tử mẹ nhiều hay ít. Rồi quá trình phân rã bắt đầu. Khoáng vật ăm ắp nguyên tử mẹ sẽ sinh ra rất nhiều nguyên tố con và vút lên cao; khoáng vật nghèo nguyên tử mẹ hầu như đứng yên. Đường thẳng nằm ngang xoay dần, tựa như chiếc bập bênh nghiêng đi, và chiếc đồng hồ chạy càng lâu thì độ dốc nghiêng càng lớn. *Độ dốc* của đường thẳng ấy chính là tuổi của khối đá — và nét tuyệt mỹ nằm ở chỗ: lượng nguyên tố con ban đầu, thứ mà ta không bao giờ biết trước, lại tự động lộ diện ngay tại điểm đường nghiêng cắt trục tung. Bạn không còn phải phỏng đoán vạch số 0. Khối đá đã tự bộc lộ điểm xuất phát lẫn tuổi thọ của chính mình chỉ trong cùng một nét vẽ.
 
-<HalfLifeDecay
-  caption="Một trăm nguyên tử mẹ phân rã đúng lộ trình. Kéo thanh trượt thời gian theo từng chu kỳ bán rã và quan sát một nửa lượng nguyên tử còn lại biến đổi thành nguyên tử con ở mỗi bước — 100, 50, 25, rồi 12 phần trăm. Tỷ lệ nguyên tử vẫn phát sáng chính là những gì ta cần để xác định tuổi: đây chính là nguyên lý của chiếc đồng hồ sơ cấp mà sau này phương pháp đẳng thời sẽ giúp nó trở nên hoàn hảo không thể lay chuyển. (Chu kỳ bán rã mô phỏng cho phân rã uranium-238 → chì.)"
-/>
+<IsochronPlot caption="Chiếc bập bênh định tuổi khối đá. Hãy kéo thanh trượt để thời gian trôi về phía trước. Ban đầu, mọi khoáng vật đều nằm trên một đường thẳng nằm ngang — chúng xuất phát với cùng một tỷ lệ nguyên tố con. Khi quá trình phân rã diễn ra, các hạt khoáng vật giàu nguyên tử mẹ phóng xạ leo dốc nhanh hơn các hạt nghèo nguyên tử mẹ, khiến đường thẳng xoay nghiêng và dốc dần lên. Độ dốc của đường chính là tuổi của khối đá; giao điểm của nó với trục tung chính là thành phần ban đầu của khối đá lúc mới hình thành. Không cần bất kỳ giả định nào về vạch số 0 — điều này giúp phương pháp đạt độ tin cậy tuyệt đối." />
 
-Và giờ đây là sự thật cốt lõi giúp toàn bộ công trình này khả thi, một điều thực sự phi thường: tốc độ phân rã là bất biến. Dù bạn nung nóng đá, đông lạnh, nghiền nát dưới áp lực của lớp manti, hòa tan trong axit, hay liên kết các nguyên tử của nó vào hàng trăm khoáng vật khác nhau — chu kỳ bán rã vẫn không hề suy suyển. Các lực tương tác bên trong hạt nhân chi phối hoàn toàn phản ứng phân rã này, khiến hóa học thông thường của thế giới bên ngoài không thể chạm tới. Đây là lý do chiếc đồng hồ phóng xạ không thể bị mua chuộc. Ta có thể dịch chuyển đồng hồ mặt trời, làm chậm con lắc bằng bầu khí quyển đậm đặc, làm tắc nghẽn đồng hồ nước — nhưng tự nhiên không có mức nhiệt độ, áp suất hay mẹo hóa học nào có thể đẩy nhanh hay kìm hãm nhịp tích tắc khi uranium phân rã thành chì. Một chiếc đồng hồ phớt lờ mọi biến động của thế giới xung quanh chính xác là những gì bạn cần để tái hiện lịch sử của lửa cháy, chôn vùi và kiến tạo địa chất. Người ta gọi nhóm phương pháp này là <GlossaryTerm slug="radiometric-dating">đo tuổi bằng phóng xạ</GlossaryTerm>, xương sống của <GlossaryTerm slug="geochronology">địa thời học</GlossaryTerm> — ngành khoa học định hình quá khứ bằng những con số.
+Và còn một phần thưởng vô giá ẩn sâu trong cấu trúc hình học này. Nếu khối đá từng chịu biến động sau khi hình thành — bị nung nóng trở lại, rò rỉ nguyên tử hay tái kết tinh — các điểm khoáng vật sẽ không còn xếp thành một đường thẳng tắp; chúng sẽ phân tán hỗn loạn. Nhờ đó, phương pháp này tự thiết lập cơ chế kiểm chứng nghiêm ngặt. Một đường thẳng ngay ngắn cho thấy khối đá đã giữ trọn vẹn bí mật; một đồ thị phân tán lộn xộn lại là lời cảnh báo rành rọt: *đừng tin tôi, tôi đã bị xáo trộn*. Phương pháp đẳng thời không chỉ đem lại một con số tuổi. Nó còn cho bạn biết liệu con số ấy có đáng tin hay không.
 
-Thế nhưng vẫn còn một trở ngại duy nhất, trở ngại suýt đánh sập toàn bộ nỗ lực này.

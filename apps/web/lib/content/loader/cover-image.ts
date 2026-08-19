@@ -18,17 +18,24 @@ export function getChapterCoverImage(slug: string): string | undefined {
   const dir = chapterImagesDir(slug);
   if (!fs.existsSync(dir)) return undefined;
 
-  if (fs.existsSync(path.join(dir, "cover.png"))) {
-    return publicPath(slug, "cover.png");
-  }
-  if (fs.existsSync(path.join(dir, "fig-00-cover.png"))) {
-    return publicPath(slug, "fig-00-cover.png");
+  const candidates = [
+    "cover.webp",
+    "cover.png",
+    "fig-00-cover.webp",
+    "fig-00-cover.png",
+  ];
+  for (const candidate of candidates) {
+    if (fs.existsSync(path.join(dir, candidate))) {
+      return publicPath(slug, candidate);
+    }
   }
 
   // Fallback: the first figure image in sequential order.
   const figures = fs
     .readdirSync(dir)
-    .filter((f) => /^fig-\d{2}-.+\.png$/.test(f))
+    .filter((f) => /^fig-\d{2}-.+\.(webp|png)$/.test(f))
     .sort();
+  const webpFig = figures.find((f) => f.endsWith(".webp"));
+  if (webpFig) return publicPath(slug, webpFig);
   return figures.length > 0 ? publicPath(slug, figures[0]) : undefined;
 }

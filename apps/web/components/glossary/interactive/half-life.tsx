@@ -1,271 +1,155 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import React, { useState, useEffect, useMemo } from "react";
+import { useMemo, useRef, useState } from "react";
+import { ControlSlider } from "./shared/control-slider";
 import { GlossaryFrame } from "./shared/frame";
+import { Readout } from "./shared/readout";
+import { useInView } from "./shared/use-in-view";
+import { useRafLoop } from "./shared/use-raf-loop";
+
+const GRID = 10; // 10×10 = 100 atoms
+const N0 = GRID * GRID;
+
+// Each atom carries an independent decay time drawn from the exponential law, so
+// the population halves every half-life with the right statistical jitter — the
+// randomness is the point: decay is per-atom chance, the smooth curve is emergent.
+function makeDecayTimes(seed: number): number[] {
+  let s = seed * 16807;
+  const rnd = () => {
+    s = (s * 16807) % 2147483647;
+    return s / 2147483647;
+  };
+  // mean lifetime tau = halfLife / ln2; we work in units of half-lives (HL=1).
+  const tau = 1 / Math.LN2;
+  return Array.from({ length: N0 }, () => -Math.log(1 - rnd()) * tau);
+}
 
 export default function HalfLife() {
-  const t = useTranslations("viz.halfLife");
-
+  const t = useTranslations("viz.half-life");
+  const { ref, inView } = useInView<HTMLDivElement>();
+  const [speed, setSpeed] = useState(0.5);
   const [isPlaying, setIsPlaying] = useState(true);
-  const [halfLivesElapsed, setHalfLivesElapsed] = useState(0); // 0 to 4 half-lives
+  const [seed, setSeed] = useState(7);
 
-  // Animation tick
-  useEffect(() => {
-    if (!isPlaying) return;
-    let animationId: number;
+  const decayTimes = useMemo(() => makeDecayTimes(seed), [seed]);
+  const clockRef = useRef(0); // elapsed time in half-lives
+  const [, force] = useState(0);
 
-    const tick = () => {
-      setHalfLivesElapsed((prev) => {
-        const next = prev + 0.01;
-        if (next >= 4) {
-          setIsPlaying(false);
-          return 4;
-        }
-        return next;
-      });
-      animationId = requestAnimationFrame(tick);
-    };
+  useRafLoop(
+    (dt) => {
+      clockRef.current = Math.min(6, clockRef.current + dt * speed);
+      force((n) => (n + 1) % 1_000_000);
+    },
+    { active: isPlaying && inView },
+  );
 
-    animationId = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(animationId);
-  }, [isPlaying]);
-
-  // Seeded thresholds for 100 atoms to make slider movement deterministic
-  const atomThresholds = useMemo(() => {
-    const thresholds: number[] = [];
-    // Simple LCG pseudo-random numbers generator
-    let seed = 42;
-    for (let i = 0; i < 100; i++) {
-      seed = (seed * 1664525 + 1013904223) % 4294967296;
-      thresholds.push(seed / 4294967296);
-    }
-    return thresholds;
-  }, []);
-
-  const fractionRemaining = 0.5 ** halfLivesElapsed;
-  const parentPercentage = Math.round(fractionRemaining * 100);
-
-  const handleReset = () => {
-    setHalfLivesElapsed(0);
-    setIsPlaying(false);
-  };
-
-  // SVG grid settings
-  const gridSize = 10;
-  const spacing = 11;
-  const offset = 8;
-
-  // Plot variables
-  const plotWidth = 140;
-  const plotHeight = 90;
-  const plotPadding = 10;
-
-  // Generate path for the exponential decay curve: y = 100 * 0.5^x
-  const getCurvePath = () => {
-    const pts = [];
-    for (let x = 0; x <= 40; x++) {
-      const h = x / 10; // half lives
-      const yVal = 0.5 ** h;
-      const px = plotPadding + (h / 4) * (plotWidth - 2 * plotPadding);
-      const py = plotHeight - plotPadding - yVal * (plotHeight - 2 * plotPadding);
-      pts.push(`${px},${py}`);
-    }
-    return `M ${pts.join(" L ")}`;
-  };
-
-  // Coordinates of current point on the plot
-  const dotX = plotPadding + (halfLivesElapsed / 4) * (plotWidth - 2 * plotPadding);
-  const dotY = plotHeight - plotPadding - fractionRemaining * (plotHeight - 2 * plotPadding);
+  const clock = clockRef.current;
+  const remaining = decayTimes.filter((d) => d > clock).length;
+  const predicted = N0 * 0.5 ** clock;
 
   return (
     <GlossaryFrame
       title={t("title")}
-      infoText={t("hint")}
-      onReset={handleReset}
-      onPlayPause={() => setIsPlaying(!isPlaying)}
+      category={t("category")}
+      infoText={t("info")}
       isPlaying={isPlaying}
-      aspectRatio="aspect-[16/10]"
+      onPlayPause={() => setIsPlaying((p) => !p)}
+      onReset={() => {
+        clockRef.current = 0;
+        setSeed((s) => s + 1);
+        setIsPlaying(true);
+      }}
+      caption={
+        <span>
+          {t("elapsed")}: <span className="text-cyan">{clock.toFixed(2)}</span> {t("halfLives")} · N
+          = {remaining}
+        </span>
+      }
     >
-      <div className="relative w-full h-full flex flex-col justify-between p-4">
-        {/* Visualizers Area */}
-        <div className="w-full flex-1 flex gap-6 justify-between pb-28 pt-4">
-          {/* Left: 10x10 Atom Grid */}
-          <div className="flex-1 flex flex-col items-center justify-center bg-void/30 border border-border/15 rounded-xl p-3">
-            <svg viewBox="0 0 120 120" className="w-full max-w-[120px] select-none">
-              <title>Radioactive parent and daughter atom grid</title>
-              {atomThresholds.map((threshold, index) => {
-                const row = Math.floor(index / gridSize);
-                const col = index % gridSize;
-                const cx = offset + col * spacing;
-                const cy = offset + row * spacing;
-
-                const isParent = threshold < fractionRemaining;
-
-                return (
-                  <circle
-                    key={index}
-                    cx={cx}
-                    cy={cy}
-                    r="4"
-                    className={`transition-colors duration-200 ${
-                      isParent ? "fill-amber" : "fill-cyan"
-                    }`}
-                    style={{
-                      filter: isParent
-                        ? "drop-shadow(0 0 3px rgba(255, 180, 84, 0.4))"
-                        : "drop-shadow(0 0 3px rgba(54, 197, 217, 0.4))",
-                    }}
-                  />
-                );
-              })}
-            </svg>
-
-            {/* Micro legends */}
-            <div className="flex justify-center gap-4 text-[7.5px] font-mono mt-3">
-              <div className="flex items-center gap-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-amber inline-block" />
-                <span className="text-amber">{t("parent") || "Parent"}</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-cyan inline-block" />
-                <span className="text-cyan">{t("daughter") || "Daughter"}</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Right: Exponential Decay Curve Plot */}
-          <div className="flex-1 flex flex-col items-center justify-center bg-void/30 border border-border/15 rounded-xl p-3">
-            <svg viewBox={`0 0 ${plotWidth} ${plotHeight}`} className="w-full select-none">
-              <title>Exponential decay plot</title>
-
-              {/* Axes */}
-              <line
-                x1={plotPadding}
-                y1={plotHeight - plotPadding}
-                x2={plotWidth - plotPadding}
-                y2={plotHeight - plotPadding}
-                className="stroke-border/30 stroke-1"
+      <div ref={ref} className="absolute inset-0 flex items-center gap-4 px-4 pt-14 pb-14">
+        {/* the atom lattice */}
+        <div className="grid aspect-square h-full max-h-full shrink-0 grid-cols-10 gap-[3px]">
+          {decayTimes.map((d, i) => {
+            const decayed = d <= clock;
+            return (
+              <span
+                key={i}
+                className="rounded-[2px] transition-colors duration-300"
+                style={{
+                  background: decayed ? "var(--border-strong)" : "var(--cyan)",
+                  boxShadow: decayed ? "none" : "0 0 4px var(--cyan)",
+                  opacity: decayed ? 0.35 : 1,
+                }}
               />
-              <line
-                x1={plotPadding}
-                y1={plotPadding}
-                x2={plotPadding}
-                y2={plotHeight - plotPadding}
-                className="stroke-border/30 stroke-1"
-              />
-
-              {/* Curve line */}
-              <path d={getCurvePath()} fill="none" className="stroke-muted/50 stroke-1" />
-
-              {/* Highlighted active portion */}
-              <path
-                d={(() => {
-                  const pts = [];
-                  const limit = Math.round(halfLivesElapsed * 10);
-                  for (let x = 0; x <= limit; x++) {
-                    const h = x / 10;
-                    const yVal = 0.5 ** h;
-                    const px = plotPadding + (h / 4) * (plotWidth - 2 * plotPadding);
-                    const py = plotHeight - plotPadding - yVal * (plotHeight - 2 * plotPadding);
-                    pts.push(`${px},${py}`);
-                  }
-                  return pts.length > 0 ? `M ${pts.join(" L ")}` : "";
-                })()}
-                fill="none"
-                className="stroke-amber stroke-2"
-                style={{ filter: "drop-shadow(0 0 3px rgba(255, 180, 84, 0.6))" }}
-              />
-
-              {/* Ticks & Labels */}
-              <line
-                x1={plotPadding + (1 / 4) * (plotWidth - 2 * plotPadding)}
-                y1={plotHeight - plotPadding}
-                x2={plotPadding + (1 / 4) * (plotWidth - 2 * plotPadding)}
-                y2={plotHeight - plotPadding + 3}
-                className="stroke-border/30 stroke-1"
-              />
-              <line
-                x1={plotPadding + (2 / 4) * (plotWidth - 2 * plotPadding)}
-                y1={plotHeight - plotPadding}
-                x2={plotPadding + (2 / 4) * (plotWidth - 2 * plotPadding)}
-                y2={plotHeight - plotPadding + 3}
-                className="stroke-border/30 stroke-1"
-              />
-              <line
-                x1={plotPadding + (3 / 4) * (plotWidth - 2 * plotPadding)}
-                y1={plotHeight - plotPadding}
-                x2={plotPadding + (3 / 4) * (plotWidth - 2 * plotPadding)}
-                y2={plotHeight - plotPadding + 3}
-                className="stroke-border/30 stroke-1"
-              />
-              <line
-                x1={plotWidth - plotPadding}
-                y1={plotHeight - plotPadding}
-                x2={plotWidth - plotPadding}
-                y2={plotHeight - plotPadding + 3}
-                className="stroke-border/30 stroke-1"
-              />
-
-              <text
-                x={plotPadding + (2 / 4) * (plotWidth - 2 * plotPadding)}
-                y={plotHeight - 1}
-                className="fill-muted font-mono text-[6px] text-center"
-                textAnchor="middle"
-              >
-                {t("timeLabel") || "Time (half-lives)"}
-              </text>
-
-              {/* Current value dot */}
-              <circle
-                cx={dotX}
-                cy={dotY}
-                r="3.5"
-                className="fill-amber"
-                style={{ filter: "drop-shadow(0 0 4px var(--amber))" }}
-              />
-            </svg>
-
-            {/* Readouts */}
-            <div className="flex flex-col gap-0.5 text-[8px] font-mono mt-3 text-center">
-              <div>
-                <span className="text-muted">{t("elapsed") || "Elapsed"}:</span>{" "}
-                <span className="text-cyan font-bold">
-                  {halfLivesElapsed.toFixed(2)} {t("halfLives") || "half-lives"}
-                </span>
-              </div>
-              <div>
-                <span className="text-muted">{t("parentLeft") || "Parent Left"}:</span>{" "}
-                <span className="text-amber font-bold">{parentPercentage}%</span>
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
 
-        {/* HUD Controls */}
-        <div className="absolute bottom-4 left-4 right-4 bg-void/85 backdrop-blur-md p-3 border border-border/30 rounded-xl flex flex-col gap-2.5 z-10">
-          {/* Half-lives elapsed slider */}
-          <div className="flex items-center gap-3">
-            <span className="text-[9px] font-mono text-muted w-24 truncate uppercase">
-              {t("timeLabel")}:
-            </span>
-            <input
-              type="range"
-              min="0"
-              max="4"
-              step="0.05"
-              value={halfLivesElapsed}
-              onChange={(e) => {
-                setHalfLivesElapsed(Number.parseFloat(e.target.value));
-                setIsPlaying(false); // Pause when manual slide
-              }}
-              className="flex-1 h-1 rounded bg-surface appearance-none cursor-pointer accent-amber"
+        {/* the N(t) decay curve, drawn live */}
+        <div className="flex flex-1 flex-col gap-2">
+          <svg viewBox="0 0 100 60" className="w-full" role="img" aria-label={t("curveAria")}>
+            {[0, 1, 2, 3, 4, 5, 6].map((hl) => (
+              <line
+                key={hl}
+                x1={(hl / 6) * 100}
+                y1="0"
+                x2={(hl / 6) * 100}
+                y2="60"
+                stroke="var(--border-strong)"
+                strokeWidth="0.3"
+                opacity="0.4"
+              />
+            ))}
+            {/* theoretical N0 (1/2)^n */}
+            <path
+              d={Array.from({ length: 61 }, (_, k) => {
+                const hl = (k / 60) * 6;
+                const x = (hl / 6) * 100;
+                const y = 58 - 0.5 ** hl * 54;
+                return `${k === 0 ? "M" : "L"}${x.toFixed(1)} ${y.toFixed(1)}`;
+              }).join(" ")}
+              fill="none"
+              stroke="var(--teal)"
+              strokeWidth="1"
+              opacity="0.6"
+              strokeDasharray="2 2"
             />
-            <span className="text-[9px] font-mono text-foreground w-12 text-right">
-              {halfLivesElapsed.toFixed(2)} t½
-            </span>
+            {/* current position */}
+            <circle
+              cx={(clock / 6) * 100}
+              cy={58 - (remaining / N0) * 54}
+              r="1.8"
+              fill="var(--amber)"
+            />
+            <line
+              x1={(clock / 6) * 100}
+              y1="0"
+              x2={(clock / 6) * 100}
+              y2="60"
+              stroke="var(--amber)"
+              strokeWidth="0.4"
+              opacity="0.7"
+            />
+          </svg>
+          <div className="flex flex-wrap gap-1.5">
+            <Readout label={t("observed")} value={remaining} accent="cyan" />
+            <Readout label={t("predicted")} value={predicted.toFixed(1)} accent="teal" />
           </div>
         </div>
+      </div>
+
+      <div className="absolute inset-x-3 bottom-12">
+        <ControlSlider
+          label={t("speed")}
+          value={speed}
+          min={0.1}
+          max={1.4}
+          step={0.01}
+          onChange={setSpeed}
+          display={`${(speed * 100).toFixed(0)}%`}
+          thumb="cyan"
+        />
       </div>
     </GlossaryFrame>
   );

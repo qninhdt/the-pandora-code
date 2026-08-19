@@ -29,11 +29,22 @@ const glowShadow: Record<string, string | undefined> = {
 
 interface GlassPanelProps
   extends React.HTMLAttributes<HTMLDivElement>,
-    VariantProps<typeof glassPanel> {}
+    VariantProps<typeof glassPanel> {
+  ref?: React.Ref<HTMLDivElement>;
+}
 
-export function GlassPanel({ depth, glow, className, style, children, ...rest }: GlassPanelProps) {
+export function GlassPanel({
+  depth,
+  glow,
+  className,
+  style,
+  children,
+  ref,
+  ...rest
+}: GlassPanelProps) {
   return (
     <div
+      ref={ref}
       className={cn(glassPanel({ depth, glow }), className)}
       style={{ boxShadow: glow ? glowShadow[glow] : undefined, ...style }}
       {...rest}

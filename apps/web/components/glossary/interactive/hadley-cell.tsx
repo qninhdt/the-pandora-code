@@ -1,279 +1,203 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import React, { useState, useEffect } from "react";
+import { useRef, useState } from "react";
+import { ControlSlider } from "./shared/control-slider";
 import { GlossaryFrame } from "./shared/frame";
+import { Readout } from "./shared/readout";
+import { useInView } from "./shared/use-in-view";
+import { useRafLoop } from "./shared/use-raf-loop";
 
+// One overturning wheel, in cross-section. Warm moist air rises at the equator
+// (left edge), rains itself out into rainforest, drifts poleward aloft, and
+// sinks as dry air over desert. The sink latitude is set by spin: slower spin →
+// weaker Coriolis → the air escapes farther before turning → a WIDER cell that
+// pushes the wet belt out and exiles the desert. Pandora is the slow-spin case,
+// which is why Australis is rainforest coast to coast.
 export default function HadleyCell() {
-  const t = useTranslations("viz.circulationBands");
+  const t = useTranslations("viz.hadley-cell");
+  const { ref, inView } = useInView<HTMLDivElement>();
+  const [spin, setSpin] = useState(1.0); // 1 = Earth-like
+  const flow = useRef(0);
+  const force = useState(0)[1];
 
-  const [isPlaying, setIsPlaying] = useState(true);
-  const [isSlowSpin, setIsSlowSpin] = useState(true); // Slow spin (Pandora) vs Fast spin (Earth)
-  const [heating, setHeating] = useState(1.0); // Heating factor 0.5 to 1.5
-  const [particleOffset, setParticleOffset] = useState(0);
+  useRafLoop(
+    (dt) => {
+      flow.current = (flow.current + dt * 0.35) % 1;
+      force((n) => (n + 1) % 1_000_000);
+    },
+    { active: inView },
+  );
 
-  // Animation ticks for air flow particles
-  useEffect(() => {
-    if (!isPlaying) return;
-    let animationId: number;
+  // sink latitude (as an x-fraction across the panel). Fast spin → sink near 30°
+  // (narrow). Slow spin → sink pushed out toward 50° (wide).
+  const sinkX = 20 + (1 / spin) * 42; // px in a 0..100 viewBox width band
+  const clampedSink = Math.min(88, sinkX);
 
-    const tick = () => {
-      setParticleOffset((prev) => (prev + 0.01 * heating) % 1.0);
-      animationId = requestAnimationFrame(tick);
-    };
+  const EQ_X = 8;
+  const TOP_Y = 24;
+  const GND_Y = 74;
 
-    animationId = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(animationId);
-  }, [isPlaying, heating]);
+  // trace a loop: up at equator, over at top, down at sink, back along ground
+  const loop = `M${EQ_X} ${GND_Y} L${EQ_X} ${TOP_Y} L${clampedSink} ${TOP_Y} L${clampedSink} ${GND_Y} Z`;
 
-  const handleReset = () => {
-    setIsPlaying(true);
-    setIsSlowSpin(true);
-    setHeating(1.0);
-  };
+  // particles riding the loop
+  const perim = [
+    { x: EQ_X, y: GND_Y },
+    { x: EQ_X, y: TOP_Y },
+    { x: clampedSink, y: TOP_Y },
+    { x: clampedSink, y: GND_Y },
+  ];
+  const segLen = [GND_Y - TOP_Y, clampedSink - EQ_X, GND_Y - TOP_Y, clampedSink - EQ_X];
+  const total = segLen.reduce((a, b) => a + b, 0);
 
-  // Dimensions
-  const viewWidth = 400;
-  const viewHeight = 150;
-  const ySurface = 120;
-
-  // Boundary where air sinks
-  // Fast spin (Earth) -> Sinks at 30 degrees latitude (x=150)
-  // Slow spin (Pandora) -> Sinks at 55 degrees latitude (x=270)
-  const xSink = isSlowSpin ? 280 : 150;
-
-  // Render wind circulation loops
-  const renderCirculationLoops = () => {
-    // We draw circles or smooth pill loops for the Hadley cell
-    const loops = [];
-    const particleCount = 10;
-
-    for (let i = 0; i < particleCount; i++) {
-      const p = (particleOffset + i / particleCount) % 1.0;
-
-      // Calculate coordinates along the rectangular loop (Equator at x=40 to x=xSink, y=55 to y=110)
-      let px = 40;
-      let py = 110;
-
-      if (p < 0.25) {
-        // 1. Rising at Equator (x=40, y goes from 110 to 55)
-        const sub = p / 0.25;
-        px = 40;
-        py = 110 - sub * 55;
-      } else if (p < 0.5) {
-        // 2. High-altitude flow (y=55, x goes from 40 to xSink)
-        const sub = (p - 0.25) / 0.25;
-        px = 40 + sub * (xSink - 40);
-        py = 55;
-      } else if (p < 0.75) {
-        // 3. Sinking at horse latitudes (x=xSink, y goes from 55 to 110)
-        const sub = (p - 0.5) / 0.25;
-        px = xSink;
-        py = 55 + sub * 55;
-      } else {
-        // 4. Return trade winds along surface (y=110, x goes from xSink to 40)
-        const sub = (p - 0.75) / 0.25;
-        px = xSink - sub * (xSink - 40);
-        py = 110;
+  function ptAt(frac: number): [number, number, boolean] {
+    let d = frac * total;
+    for (let i = 0; i < 4; i++) {
+      if (d <= segLen[i]) {
+        const a = perim[i];
+        const b = perim[(i + 1) % 4];
+        const f = d / segLen[i];
+        return [a.x + (b.x - a.x) * f, a.y + (b.y - a.y) * f, i === 0];
       }
-
-      loops.push(
-        <circle
-          key={i}
-          cx={px}
-          cy={py}
-          r="2.5"
-          fill={py > 80 ? "var(--cyan)" : "var(--amber)"}
-          style={{
-            filter:
-              py > 80
-                ? "drop-shadow(0 0 3px rgba(54, 197, 217, 0.6))"
-                : "drop-shadow(0 0 3px rgba(255, 180, 84, 0.6))",
-            opacity: 0.8,
-          }}
-        />,
-      );
+      d -= segLen[i];
     }
-    return loops;
-  };
+    return [EQ_X, GND_Y, true];
+  }
 
   return (
     <GlossaryFrame
       title={t("title")}
-      infoText={t("intro")}
-      onReset={handleReset}
-      onPlayPause={() => setIsPlaying(!isPlaying)}
-      isPlaying={isPlaying}
-      aspectRatio="aspect-[16/10]"
+      category={t("category")}
+      infoText={t("info")}
+      allowFullscreen={false}
+      caption={
+        <span>
+          {t("sinkLat")}:{" "}
+          <span className="text-amber">~{Math.round((clampedSink - EQ_X) / 1.6)}°</span> ·{" "}
+          {spin < 0.8 ? t("wide") : spin > 1.3 ? t("narrow") : t("earthlike")}
+        </span>
+      }
     >
-      <div className="relative w-full h-full flex flex-col justify-between p-4">
-        {/* Hadley Cell Cross section */}
-        <div className="w-full flex-1 flex flex-col justify-start pb-28 pt-2">
-          <div className="relative w-full h-full bg-void/30 border border-border/15 rounded-xl overflow-hidden">
-            <svg viewBox={`0 0 ${viewWidth} ${viewHeight}`} className="w-full h-full select-none">
-              <title>Atmospheric Hadley cell circulation loops</title>
+      <div ref={ref} className="absolute inset-0">
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
+          {/* sky + ground */}
+          <rect x="0" y="0" width="100" height={GND_Y} fill="#080c16" />
+          <rect x="0" y={GND_Y} width="100" height={100 - GND_Y} fill="#0b1420" />
 
-              {/* Surface ground line */}
+          {/* wet belt (under the rising branch) */}
+          <rect
+            x="0"
+            y={GND_Y}
+            width={EQ_X + 14}
+            height={100 - GND_Y}
+            fill="var(--teal)"
+            opacity="0.22"
+          />
+          {/* desert (under the sink) */}
+          <rect
+            x={clampedSink - 10}
+            y={GND_Y}
+            width="24"
+            height={100 - GND_Y}
+            fill="var(--amber)"
+            opacity="0.16"
+          />
+
+          {/* rainforest tufts */}
+          {Array.from({ length: 6 }, (_, i) => (
+            <circle
+              key={i}
+              cx={EQ_X - 4 + i * 3.4}
+              cy={GND_Y + 4}
+              r="1.6"
+              fill="var(--teal)"
+              opacity="0.6"
+            />
+          ))}
+          {/* desert dunes */}
+          <path
+            d={`M${clampedSink - 8} ${GND_Y + 6} q 4 -3 8 0 q 4 3 8 0`}
+            fill="none"
+            stroke="var(--amber)"
+            strokeWidth="0.6"
+            opacity="0.5"
+          />
+
+          {/* the loop path */}
+          <path
+            d={loop}
+            fill="none"
+            stroke="var(--border-strong)"
+            strokeWidth="0.4"
+            opacity="0.5"
+          />
+
+          {/* rising rain column */}
+          {Array.from({ length: 6 }, (_, i) => {
+            const yy = TOP_Y + 6 + ((i * 9 + flow.current * 40) % (GND_Y - TOP_Y - 6));
+            return (
               <line
-                x1="20"
-                y1={ySurface}
-                x2="380"
-                y2={ySurface}
-                className="stroke-border-strong stroke-2"
+                key={i}
+                x1={EQ_X - 2 + (i % 2) * 4}
+                y1={yy}
+                x2={EQ_X - 3 + (i % 2) * 4}
+                y2={yy + 3}
+                stroke="var(--cyan)"
+                strokeWidth="0.4"
+                opacity="0.5"
               />
+            );
+          })}
+          {/* rising cloud */}
+          <ellipse cx={EQ_X} cy={TOP_Y + 2} rx="7" ry="3" fill="var(--cyan)" opacity="0.2" />
 
-              {/* Biome green zone (Rainforest) under rising air at x=40 */}
-              <rect
-                x="25"
-                y={ySurface - 4}
-                width={xSink - 30}
-                height="4"
-                className="fill-teal transition-all duration-500"
-                style={{ filter: "drop-shadow(0 0 4px var(--teal))" }}
+          {/* flowing particles */}
+          {Array.from({ length: 12 }, (_, i) => {
+            const [x, y, rising] = ptAt((i / 12 + flow.current) % 1);
+            return (
+              <circle
+                key={i}
+                cx={x}
+                cy={y}
+                r="1.1"
+                fill={rising ? "var(--amber)" : "var(--cyan)"}
+                opacity="0.8"
               />
+            );
+          })}
+        </svg>
 
-              {/* Biome desert zone (Dry land) under sinking air at x=xSink */}
-              <rect
-                x={xSink - 15}
-                y={ySurface - 4}
-                width="40"
-                className="fill-amber transition-all duration-500"
-                style={{ filter: "drop-shadow(0 0 4px var(--amber))" }}
-              />
-
-              {/* Equator rising heat wave representation */}
-              <g className="stroke-magenta/30 fill-none stroke-[1.5]">
-                <path d="M 28 120 Q 33 100 28 80 T 28 40" className="animate-pulse" />
-                <path d="M 40 120 Q 45 100 40 80 T 40 40" />
-                <path d="M 52 120 Q 57 100 52 80 T 52 40" className="animate-pulse" />
-              </g>
-
-              {/* Hadley Cell Loop path guides */}
-              <rect
-                x="40"
-                y="55"
-                width={xSink - 40}
-                height="55"
-                fill="none"
-                className="stroke-border/10 stroke-[0.8]"
-                strokeDasharray="2,2"
-              />
-
-              {/* Rising Air label (Equator) */}
-              <text
-                x="40"
-                y="32"
-                className="fill-cyan font-mono text-[7px] text-center"
-                textAnchor="middle"
-              >
-                {t("rising") || "Air Rises"}
-              </text>
-              <text
-                x="40"
-                y="138"
-                className="fill-muted font-mono text-[8.5px] text-center"
-                textAnchor="middle"
-              >
-                {t("equator") || "Equator"} (0°)
-              </text>
-
-              {/* Sinking Air label */}
-              <text
-                x={xSink}
-                y="32"
-                className="fill-amber font-mono text-[7px] text-center"
-                textAnchor="middle"
-              >
-                {t("sinking") || "Air Sinks"}
-              </text>
-              <text
-                x={xSink}
-                y="138"
-                className="fill-muted font-mono text-[8.5px] text-center"
-                textAnchor="middle"
-              >
-                {isSlowSpin ? "55° Lat" : "30° Lat"}
-              </text>
-
-              {/* Render wind loop particles */}
-              {renderCirculationLoops()}
-
-              {/* Biome text labels overlay */}
-              <text
-                x={(xSink + 40) / 2}
-                y={ySurface - 10}
-                className="fill-teal font-mono text-[7.5px] text-center"
-                textAnchor="middle"
-              >
-                {t("rainforest") || "Rainforest"}
-              </text>
-              <text
-                x={xSink + 5}
-                y={ySurface - 10}
-                className="fill-amber font-mono text-[7.5px] text-center"
-                textAnchor="middle"
-              >
-                {t("desert") || "Desert"}
-              </text>
-            </svg>
-
-            {/* Cell scale description tag */}
-            <div className="absolute top-2.5 left-2.5 bg-void/70 backdrop-blur-sm px-2 py-0.5 border border-border/20 rounded font-mono text-[8.5px] text-muted">
-              {isSlowSpin
-                ? t("pandoraSpin") || "Slow Spin (26h day)"
-                : t("earthSpin") || "Fast Spin (24h day)"}
-            </div>
-          </div>
+        <div className="absolute left-3 top-16 flex flex-col gap-1">
+          <span className="font-mono text-[9px] uppercase tracking-wider text-teal">
+            {t("equator")}
+          </span>
+        </div>
+        <div className="absolute right-3 top-16">
+          <Readout
+            label={t("cellWidth")}
+            value={spin < 0.8 ? t("wide") : spin > 1.3 ? t("narrow") : t("medium")}
+            accent="amber"
+          />
         </div>
 
-        {/* HUD Controls */}
-        <div className="absolute bottom-4 left-4 right-4 bg-void/85 backdrop-blur-md p-3 border border-border/30 rounded-xl flex flex-col gap-2.5 z-10 text-[9.5px] font-mono">
-          {/* Planet Spin speed toggle */}
-          <div className="flex gap-2">
-            <button
-              type="button"
-              onClick={() => setIsSlowSpin(false)}
-              className="flex-1 py-1.5 px-1 rounded border font-mono text-[10px] text-center transition-all duration-200 select-none hover:bg-surface-overlay"
-              style={{
-                backgroundColor: !isSlowSpin ? "var(--muted)" : "transparent",
-                color: !isSlowSpin ? "var(--background)" : "var(--foreground)",
-                borderColor: !isSlowSpin ? "var(--muted)" : "var(--border)",
-              }}
-            >
-              {t("earth") || "Fast Spin (Earth)"}
-            </button>
-
-            <button
-              type="button"
-              onClick={() => setIsSlowSpin(true)}
-              className="flex-1 py-1.5 px-1 rounded border font-mono text-[10px] text-center transition-all duration-200 select-none hover:bg-surface-overlay"
-              style={{
-                backgroundColor: isSlowSpin ? "var(--cyan)" : "transparent",
-                color: isSlowSpin ? "var(--background)" : "var(--foreground)",
-                borderColor: isSlowSpin ? "var(--cyan)" : "var(--border)",
-                boxShadow: isSlowSpin ? "0 0 8px rgba(54, 197, 217, 0.4)" : "none",
-              }}
-            >
-              {t("pandora") || "Slow Spin (Pandora)"}
-            </button>
-          </div>
-
-          {/* Equator heating intensity slider */}
-          <div className="flex items-center gap-3 border-t border-border/15 pt-2">
-            <span className="text-[9px] font-mono text-muted w-24 truncate uppercase">
-              {t("equatorHeating")}:
-            </span>
-            <input
-              type="range"
-              min="0.5"
-              max="1.5"
-              step="0.1"
-              value={heating}
-              onChange={(e) => setHeating(Number.parseFloat(e.target.value))}
-              className="flex-1 h-1 rounded bg-surface appearance-none cursor-pointer accent-cyan"
-            />
-            <span className="text-foreground w-8 text-right">{Math.round(heating * 100)}%</span>
-          </div>
+        <div className="absolute inset-x-3 bottom-12">
+          <ControlSlider
+            label={t("rotationRate")}
+            value={spin}
+            min={0.4}
+            max={2}
+            step={0.05}
+            onChange={setSpin}
+            display={spin < 0.8 ? `${spin.toFixed(1)}× ${t("pandora")}` : `${spin.toFixed(1)}×`}
+            thumb="cyan"
+          />
         </div>
       </div>
     </GlossaryFrame>

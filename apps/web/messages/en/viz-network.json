@@ -1,0 +1,205 @@
+{
+  "viz": {
+    "articulation-point": {
+      "title": "Articulation Point",
+      "category": "Network",
+      "info": "A cut vertex. Hover nodes — bridges flash magenta. Remove one and the graph splits into disconnected pieces.",
+      "remove": "Remove",
+      "split": "Split",
+      "intact": "Intact",
+      "components": "Components"
+    },
+    "cascading-failure": {
+      "title": "Cascading Failure",
+      "category": "Network",
+      "info": "Knock out one node. Load spills to neighbors; overloaded nodes fail next. Watch the blackout wave.",
+      "knock": "Knock out",
+      "load": "Load",
+      "failed": "Failed",
+      "alive": "Alive"
+    },
+    "degree-distribution": {
+      "title": "Degree Distribution",
+      "category": "Network",
+      "info": "Left: the graph. Right: its degree histogram. Toggle random (Poisson) vs scale-free (power-law) and watch the shape.",
+      "random": "Random",
+      "scaleFree": "Scale-free",
+      "degree": "Degree",
+      "count": "Count"
+    },
+    "degree-graph-theory": {
+      "title": "Degree",
+      "category": "Network",
+      "info": "Degree is how many edges touch a node. Add or drop edges on the hub; the counter tracks every link.",
+      "degree": "Degree",
+      "add": "Add edge",
+      "drop": "Drop edge"
+    },
+    "edge-graph-theory": {
+      "title": "Edge",
+      "category": "Network",
+      "info": "An edge is a relation. Toggle directed vs undirected and weighted vs plain — meaning changes with the marks.",
+      "directed": "Directed",
+      "undirected": "Undirected",
+      "weighted": "Weighted",
+      "plain": "Unweighted",
+      "weight": "Weight"
+    },
+    "emergence": {
+      "title": "Emergence",
+      "category": "Network",
+      "info": "Boids obey three local rules. Tune separation, alignment, cohesion — flocking appears with no leader.",
+      "separation": "Separation",
+      "alignment": "Alignment",
+      "cohesion": "Cohesion",
+      "flock": "Flocking"
+    },
+    "error-correcting-code": {
+      "title": "Error-Correcting Code",
+      "category": "Network",
+      "info": "Noise flips bits in transit. Enable parity or Hamming; the receiver detects and repairs what the channel broke.",
+      "noise": "Noise",
+      "parity": "Parity",
+      "hamming": "Hamming",
+      "raw": "Raw",
+      "fixed": "Corrected",
+      "errors": "Errors"
+    },
+    "giant-connected-component": {
+      "title": "Giant Component",
+      "category": "Network",
+      "info": "Add random edges one by one. Below the threshold: islands. At percolation a giant component crystallizes.",
+      "edges": "Edges",
+      "giant": "Giant size",
+      "islands": "Islands"
+    },
+    "hub-network": {
+      "title": "Hub",
+      "category": "Network",
+      "info": "Scale-free nets have hubs. Attack hubs and connectivity collapses; random failures barely dent it.",
+      "attack": "Attack hub",
+      "random": "Random fail",
+      "connected": "Largest component"
+    },
+    "interdependent-networks": {
+      "title": "Interdependent Networks",
+      "category": "Network",
+      "info": "Power feeds comms; comms steer power. Fail one node and the cascade ricochets across both layers.",
+      "fail": "Fail node",
+      "power": "Power",
+      "comms": "Comms",
+      "cascade": "Cascade"
+    },
+    "modularity-network": {
+      "title": "Modularity",
+      "category": "Network",
+      "info": "Communities denser inside than between. Slide resolution — modules merge or split as color clusters.",
+      "resolution": "Resolution",
+      "modules": "Modules",
+      "q": "Modularity Q"
+    },
+    "node-graph-theory": {
+      "title": "Node",
+      "category": "Network",
+      "info": "The atomic unit of a graph. Click the void to spawn nodes; drag links between them. Tree, neuron, router — same abstraction.",
+      "spawn": "Click to spawn",
+      "nodes": "Nodes",
+      "links": "Links"
+    },
+    "percolation-theory": {
+      "title": "Percolation Theory",
+      "category": "Network",
+      "info": "Occupy grid sites at probability p. Raise p until a connected path spans the lattice — the percolating cluster.",
+      "p": "Occupation p",
+      "span": "Spans",
+      "noSpan": "No path"
+    },
+    "percolation-threshold": {
+      "title": "Percolation Threshold",
+      "category": "Network",
+      "info": "Fine-tune p around pc. The order parameter (spanning fraction) jumps at the knife-edge critical point.",
+      "p": "p",
+      "pc": "pc ≈ 0.59",
+      "order": "Order P∞"
+    },
+    "phase-transition": {
+      "title": "Phase Transition",
+      "category": "Network",
+      "info": "Drag the control past critical. Order snaps — disordered lattice reorganizes into a coherent phase.",
+      "control": "Control T",
+      "order": "Order",
+      "critical": "Critical",
+      "ordered": "Ordered",
+      "disordered": "Disordered"
+    },
+    "queue": {
+      "title": "Queue",
+      "category": "Network",
+      "info": "FIFO buffer. Raise arrival above service and length grows without bound. Little: L = λW.",
+      "arrival": "Arrival λ",
+      "service": "Service μ",
+      "length": "Length L",
+      "wait": "Wait W"
+    },
+    "redundancy": {
+      "title": "Redundancy",
+      "category": "Network",
+      "info": "Parallel backup paths. Sever them one by one — the system holds until the last path dies.",
+      "paths": "Paths left",
+      "sever": "Sever path",
+      "alive": "Alive",
+      "dead": "Failed"
+    },
+    "redundancy-engineering": {
+      "title": "N-Modular Redundancy",
+      "category": "Network",
+      "info": "Triple modular redundancy. Inject faults; the majority voter masks them until too many modules lie.",
+      "fault": "Inject fault",
+      "voter": "Voter out",
+      "modules": "Good modules",
+      "masked": "Masked",
+      "corrupt": "Corrupt"
+    },
+    "scale-free-network": {
+      "title": "Scale-Free Network",
+      "category": "Network",
+      "info": "Preferential attachment: new nodes link to popular hubs. Grow the net and the power-law degree tail appears.",
+      "grow": "Add node",
+      "hubs": "Hubs",
+      "nodes": "Nodes"
+    },
+    "stigmergy": {
+      "title": "Stigmergy",
+      "category": "Network",
+      "info": "Ants drop pheromone. Successful paths thicken; weak trails evaporate. Shortest route emerges with no map.",
+      "food": "Drop food",
+      "evap": "Evaporation",
+      "path": "Trail strength"
+    },
+    "superorganism": {
+      "title": "Superorganism",
+      "category": "Network",
+      "info": "Zoom from agent to colony. Local rules at the leaf become one decision at the crown — many bodies, one mind.",
+      "zoom": "Zoom",
+      "agents": "Agents",
+      "colony": "Colony choice"
+    },
+    "swarm-intelligence": {
+      "title": "Swarm Intelligence",
+      "category": "Network",
+      "info": "Particles search a fitness landscape. Share personal and global bests; the swarm converges on the peak.",
+      "inertia": "Inertia",
+      "social": "Social pull",
+      "best": "Best found"
+    },
+    "connectome": {
+      "title": "Connectome",
+      "category": "Network",
+      "info": "Wiring diagram of a mind. Prune edges and functional clusters fracture; density tracks residual capacity.",
+      "prune": "Prune",
+      "density": "Density",
+      "clusters": "Clusters",
+      "capacity": "Capacity"
+    }
+  }
+}

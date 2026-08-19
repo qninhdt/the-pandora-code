@@ -1,0 +1,49 @@
+## Làm thế nào để đóng đinh một đám mây lên bầu trời
+
+Nhưng ngay cả vật liệu Loại II vẫn gặp phải một vấn đề: định lý Earnshaw vẫn chưa chết.
+
+Những sợi từ thông đó đang đi xuyên qua chất siêu dẫn, đúng vậy, nhưng điều gì ngăn cản chúng trượt quanh bên trong đó? Nếu thỏi nam châm di chuyển, các sợi từ thông sẽ di chuyển theo nó. Nếu các sợi có thể quét tự do qua mạng tinh thể, thỏi nam châm vẫn có thể trôi ngang và rơi xuống.
+
+Vì vậy, một vật liệu Loại II tốt không được phép để chúng tự do. Mạng tinh thể của nó chứa đầy các tì vết — các nguyên tử bị khuyết, tạp chất xen lẫn, ranh giới hạt, hay các khoảng trống vi mô được cố ý tạo ra — và mỗi tì vết là một nơi mà tính siêu dẫn yếu đi. Phần lõi bình thường của dòng xoáy tìm được trạng thái năng lượng thấp nhất bằng cách nằm chính xác ngay trên một trong những tì vết đó. Nó lọt thỏm vào lỗ hổng hệt như một chiếc chốt cắm vào ổ khóa, và cắm rễ ở đó. Đây chính là hiện tượng <GlossaryTerm slug="flux-pinning">ghim từ thông</GlossaryTerm>.
+
+Hãy xem cơ chế này hoạt động ra sao. Các sợi từ thông bị khóa chặt vào mạng tinh thể của khối siêu dẫn. Nhưng các sợi từ thông đó *chính là* từ trường bên ngoài. Vì vậy, giờ đây khối siêu dẫn thực sự đã bị khâu chặt vào chính từ trường — nó không nằm đè lên từ trường, mà nó bị từ trường *xỏ xuyên qua*.
+
+Cố nhấc nó lên, những sợi từ thông bị ghim sẽ kéo giật lại. Cố ấn nó xuống, lực đẩy Meissner sẽ hất ngược lên. Cố đẩy nó trượt sang một bên, các sợi này sẽ kháng cự lại việc bị lôi ra khỏi các tì vết. Mọi phương hướng đều vấp phải lực hồi phục. Con dốc của Earnshaw đã bị triệt tiêu hoàn toàn.
+
+<DiagramFigure 
+  id="flux-pinning-forces"
+  caption="Ghim từ thông chặn đứng mọi chuyển động. Bất kỳ nỗ lực di chuyển chất siêu dẫn nào so với từ trường đều đòi hỏi phải kéo các từ thông ra khỏi tì vết, tạo ra lực hồi phục ở mọi hướng."
+  labels={[
+    { id: 'pinned-vortex', text: 'Từ thông bị ghim' },
+    { id: 'pull-up', text: 'Lực kéo lên bị chống lại' },
+    { id: 'push-down', text: 'Lực đẩy xuống bị chống lại' },
+    { id: 'slide', text: 'Lực trượt ngang bị chống lại' }
+  ]}
+/>
+
+Đây được gọi là hiện tượng <GlossaryTerm slug="quantum-locking">khóa lượng tử</GlossaryTerm>, và nếu bạn từng được tận mắt chứng kiến nó trong phòng thí nghiệm, sẽ rất khó để lột tả bằng lời sự kỳ lạ của nó.
+
+Một chiếc đĩa YBCO nhỏ, được làm lạnh bằng nitơ lỏng, đặt trên một đường ray từ tính — và nó cứ thế *đứng sững lại*, đóng đinh giữa không trung ở bất kỳ độ cao hay góc nghiêng nào mà bạn tạo ra. Lật ngược đường ray, và chiếc đĩa vẫn lủng lẳng bên dưới, treo ngược chống lại trọng lực, dứt khoát không chịu rơi xuống. Đặt nó lên một đường ray vòng lặp, nó sẽ trượt vòng quanh mà không hề có ma sát, bị khóa cứng ở đúng cự ly đó suốt toàn bộ quãng đường mà không cần đến sự điều khiển nào.
+
+<DiagramFigure 
+  id="quantum-locking-demo"
+  caption="Khóa lượng tử. Vật liệu không phải đang được thăng bằng trên đỉnh từ trường; nó bị khóa cứng trong không gian ba chiều."
+  labels={[
+    { id: 'magnetic-track', text: 'Đường ray từ tính' },
+    { id: 'ybco-puck', text: 'Đĩa siêu dẫn YBCO' },
+    { id: 'locked-tilt', text: 'Bị khóa ở góc nghiêng' },
+    { id: 'locked-suspended', text: 'Bị khóa treo lơ lửng' }
+  ]}
+/>
+
+Nó không hề thăng bằng. Nó đang bị *khóa chặt*. Và đó chính là sự khác biệt giữa một ngọn núi chỉ có thể nổi lên trong chớp mắt và một ngọn núi đã hiên ngang phủ bóng lên vùng Iknimaya từ trước cả khi người Na'vi sáng tạo ra ngôn ngữ để gọi tên nó.
+
+<WhatThisMeans title="Cơ chế đã hoàn thiện">
+Tới lúc này, chúng ta đã có một bộ máy vật lý hoàn chỉnh.
+1. **Các cặp Cooper** loại bỏ điện trở, duy trì trạng thái lượng tử.
+2. **Hiệu ứng Meissner** cố gắng đẩy lùi từ trường bên ngoài, cung cấp lực đẩy thô sơ nhưng thiếu ổn định.
+3. **Các dòng xoáy Abrikosov** để một phần từ trường đi xuyên qua, tạo nên các "sợi chỉ".
+4. **Các tì vết mạng tinh thể** khóa chặt những sợi chỉ đó vào các cấu trúc nguyên tử của vật liệu.
+
+Kết quả? Một vật thể hoàn toàn bất động trong từ trường, hoàn toàn cự tuyệt sự xê dịch, có khả năng lơ lửng không cần kiểm soát. Bây giờ, hãy phóng đại kích cỡ của nó lên thành ngọn núi.
+</WhatThisMeans>

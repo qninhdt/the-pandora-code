@@ -1,0 +1,60 @@
+{
+  "viz": {
+    "eywa": {
+      "title": "Eywa",
+      "category": "Canon Pandora",
+      "info": "Không phải nữ thần ngồi trên cao — mà là tổng hòa mọi sự sống. Rễ cây, sợi nấm và tsaheylu tạo mạng quy mô hành tinh. Grace Augustine: nhiều kết nối hơn synapse trong não người. Chạm một nút; xem tín hiệu lan ra.",
+      "connections": "Kết nối",
+      "humanBrain": "Não người",
+      "eywaNet": "Mạng Eywa",
+      "synapses": "synapse",
+      "nodes": "nút sáng",
+      "ripple": "Tín hiệu lan tỏa",
+      "idle": "Chạm một nút để đánh thức mạng",
+      "depth": "Độ sâu hành tinh",
+      "hint": "Mỗi lần chạm gieo một gợn sóng. Ở độ sâu đầy đủ, mạng giữ nhiều liên kết hơn cả connectome người — câu hỏi Phần III là liệu quy mô đó có thể trở thành một tâm trí."
+    },
+    "tsaheylu": {
+      "title": "Tsaheylu",
+      "category": "Canon Pandora",
+      "info": "Mối liên kết. Hai queue sợi thần kinh hồng cài vào nhau, mở kênh hai chiều — lệnh vận động, cảm giác và cảm xúc theo thời gian thực. Canon ví như cáp ethernet sinh học; con vật cưỡi trở thành phần nối dài của người cưỡi.",
+      "rider": "Queue người cưỡi",
+      "mount": "Queue sinh vật",
+      "draw": "Kéo hai queue lại gần",
+      "bonded": "Đã kết — kênh mở",
+      "apart": "Tách rời — chưa liên kết",
+      "motor": "Vận động",
+      "sensation": "Cảm giác",
+      "emotion": "Cảm xúc",
+      "flow": "Dòng hai chiều",
+      "hint": "Kéo hai queue đến khi sợi tua đan vào nhau. Hạt chảy hai chiều khi mối liên kết khóa — lệnh đi ra, cảm nhận đi vào."
+    },
+    "unobtanium": {
+      "title": "Unobtanium",
+      "category": "Canon Pandora",
+      "info": "Siêu dẫn nhiệt độ phòng của Pandora. Lõi quặng ghim vào Flux Vortex và giữ các ngọn núi lơ lửng. Kéo khối quặng lên đường ray từ; sợi flux khâu nó vào chỗ. Lõi hổ phách là điểm nhấn ấm hiếm hoi — nhiệt không dập tắt siêu dẫn.",
+      "ore": "Quặng",
+      "track": "Đường ray từ",
+      "pinned": "Ghim flux",
+      "free": "Tự do — kéo lên ray",
+      "coreTemp": "Ánh lõi",
+      "lock": "Khóa",
+      "gap": "Khe hở",
+      "hint": "Nhiệt độ phòng đã đủ. Trượt quặng lên ray và các chốt flux bắt lấy — không phải thăng bằng, mà bị khóa. Tim hổ phách vẫn sáng."
+    },
+    "prolemuris": {
+      "title": "Prolemuris",
+      "category": "Canon Pandora",
+      "info": "Linh trưởng sống trên tán rừng Pandora với chi trước phần nào dung hợp — cầu nối sống từ thiết kế sáu chi chung của muôn thú Pandora tới thiết kế bốn chi của người Na'vi. Đời sống trên tán ưu ái sự khéo léo hơn một cặp tay thừa.",
+      "evolution": "Dung hợp chi",
+      "sixLimb": "Sáu chi",
+      "fused": "Dung hợp hướng Na'vi",
+      "forelimbs": "Chi trước",
+      "hindlimbs": "Chi sau",
+      "stateSix": "Kế hoạch tổ tiên sáu chi",
+      "stateMid": "Dung hợp một phần — Prolemuris",
+      "stateNavi": "Hướng tới cánh tay Na'vi",
+      "hint": "Kéo tiến hóa từ sáu chi tự do tới cẳng tay dung hợp. Prolemuris nằm giữa — bằng chứng Na'vi cũng xuất phát từ tổ tiên sáu chi."
+    }
+  }
+}

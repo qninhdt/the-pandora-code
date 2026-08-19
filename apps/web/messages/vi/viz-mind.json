@@ -1,0 +1,190 @@
+{
+  "viz": {
+    "bandwidth": {
+      "title": "Băng thông",
+      "category": "Tâm thức",
+      "info": "Lượng thông tin kênh mang mỗi giây. Nới ống; throughput tăng. So neuron, cáp quang, và mạng rễ Eywa.",
+      "width": "Độ rộng ống",
+      "throughput": "Thông lượng",
+      "neuron": "Neuron",
+      "fiber": "Cáp quang",
+      "eywa": "Rễ Eywa",
+      "unit": "bit/s"
+    },
+    "basal-cognition": {
+      "title": "Nhận thức cơ sở",
+      "category": "Tâm thức",
+      "info": "Tâm không não. Đặt thức ăn và chướng ngại; nấm nhầy mọc, lấy mẫu, và giải mê cung chỉ bằng hình thái.",
+      "food": "Thả thức ăn",
+      "wall": "Đặt tường",
+      "grow": "Bước mọc",
+      "clear": "Xóa",
+      "solved": "Tìm đường",
+      "searching": "Đang dò"
+    },
+    "bit": {
+      "title": "Bit",
+      "category": "Tâm thức",
+      "info": "Một lựa chọn nhị phân = đúng một bit. Lật từng công tắc; xếp chúng để mã thông điệp lớn hơn. Mỗi lật giảm nửa bất định.",
+      "flip": "Lật",
+      "zero": "0",
+      "one": "1",
+      "total": "Tổng bit",
+      "message": "Đã mã"
+    },
+    "channel-capacity": {
+      "title": "Dung lượng kênh",
+      "category": "Tâm thức",
+      "info": "Trần Shannon: C = B log₂(1+S/N). Tăng nhiễu; tốc độ tin cậy giảm. Gói trên giới hạn vỡ tan.",
+      "noise": "Nhiễu",
+      "bandwidth": "Băng thông B",
+      "capacity": "Dung lượng C",
+      "reliable": "Dưới hạn",
+      "lossy": "Trên hạn"
+    },
+    "cognitive-light-cone": {
+      "title": "Nón sáng nhận thức",
+      "category": "Tâm thức",
+      "info": "Thể tích không-thời gian một tác nhân cảm và hành. Nâng tinh vi; nón nở từ bọt tế bào tới tâm hành tinh.",
+      "scale": "Tinh vi",
+      "cell": "Tế bào",
+      "animal": "Động vật",
+      "human": "Người",
+      "eywa": "Eywa",
+      "reach": "Tầm với"
+    },
+    "conscious-bottleneck": {
+      "title": "Nút thắt ý thức",
+      "category": "Tâm thức",
+      "info": "Nhiều luồng song song, một đèn pin nối tiếp. Thêm đầu vào; chỉ vài cái qua nút thắt cùng lúc. Chú ý là cổng.",
+      "add": "Thêm luồng",
+      "clear": "Xóa",
+      "capacity": "Khe cổng",
+      "queued": "Hàng đợi",
+      "broadcast": "Trong đèn"
+    },
+    "distributed-cognition": {
+      "title": "Nhận thức phân tán",
+      "category": "Tâm thức",
+      "info": "Tư duy trải đầu, công cụ, và chỗ. Tắt sổ, đồng đội, hay bảng; năng lực tập thể rơi. Tâm không chỉ trong sọ.",
+      "head": "Đầu",
+      "notebook": "Sổ",
+      "teammate": "Đồng đội",
+      "board": "Bảng",
+      "capacity": "C tập thể",
+      "intact": "Hệ nguyên",
+      "degraded": "Suy giảm"
+    },
+    "global-workspace-theory": {
+      "title": "Không gian làm việc toàn cục",
+      "category": "Tâm thức",
+      "info": "Module vô thức tranh; kẻ thắng phát trên sân khấu sáng. Bơm kích thích và xem đèn pin chuyển.",
+      "inject": "Bơm",
+      "vision": "Thị giác",
+      "sound": "Âm thanh",
+      "memory": "Trí nhớ",
+      "broadcast": "Phát sóng",
+      "dark": "Vô thức"
+    },
+    "hard-problem-of-consciousness": {
+      "title": "Bài toán khó",
+      "category": "Tâm thức",
+      "info": "Vẽ mọi gai và synapse — phía khách quan đầy. 'Cảm giác ra sao' chủ quan vẫn không cầu. Khe đó là bài toán khó.",
+      "map": "Vẽ quá trình",
+      "reset": "Xóa bản đồ",
+      "neural": "Hoạt động thần kinh",
+      "qualia": "Qualia",
+      "gap": "Khe giải thích",
+      "bridged": "Vẫn mở"
+    },
+    "information-theory": {
+      "title": "Lý thuyết thông tin",
+      "category": "Tâm thức",
+      "info": "Tin → mã → kênh nhiễu → giải. Gõ chuỗi ngắn; xem nén, hỏng, và khôi phục. Đồng hồ entropy và dư thừa live.",
+      "send": "Gửi",
+      "clear": "Xóa",
+      "entropy": "Entropy",
+      "redundancy": "Dư thừa",
+      "received": "Nhận được",
+      "placeholder": "gõ tin"
+    },
+    "integrated-information-theory": {
+      "title": "Thông tin tích hợp",
+      "category": "Tâm thức",
+      "info": "Φ đo hệ hơn tổng phần. Nối nút; mạng tích hợp + phân biệt tăng. Đống rời ~0.",
+      "addLink": "Thêm liên kết",
+      "cutLink": "Cắt liên kết",
+      "phi": "Φ",
+      "integrated": "Tích hợp",
+      "scattered": "Rời rạc"
+    },
+    "noisy-channel-coding-theorem": {
+      "title": "Định lý mã kênh nhiễu",
+      "category": "Tâm thức",
+      "info": "Shannon: mọi tốc độ dưới dung lượng có thể tin cậy tùy ý. Chọn rate; xanh dưới C, đỏ trên — lỗi nổ qua biên.",
+      "rate": "Tốc độ mã",
+      "noise": "Nhiễu",
+      "capacity": "C",
+      "ok": "Tin cậy",
+      "fail": "Lỗi nổ"
+    },
+    "shannon-entropy": {
+      "title": "Entropy Shannon",
+      "category": "Tâm thức",
+      "info": "Bất ngờ trung bình của nguồn. Lệch xác suất ký hiệu; H đỉnh khi đều, về 0 khi một cái chắc chắn.",
+      "skew": "Lệch",
+      "entropy": "H",
+      "unit": "bit/ký",
+      "uniform": "Đều",
+      "certain": "Chắc"
+    },
+    "signal-to-noise-ratio": {
+      "title": "Tín hiệu trên nhiễu",
+      "category": "Tâm thức",
+      "info": "Sóng sạch dưới sàn nhiễu dâng. Nâng nhiễu; SNR rơi và tín hiệu chìm quá ngưỡng khôi phục. Gắn thẳng dung lượng kênh.",
+      "noise": "Sàn nhiễu",
+      "snr": "SNR",
+      "clean": "Khôi phục được",
+      "drowned": "Không khôi phục"
+    },
+    "functionalism": {
+      "title": "Thuyết chức năng",
+      "category": "Tâm thức",
+      "info": "Cùng chức năng, ba nền: neuron, silicon, mạng rễ. Cùng đầu vào; cả ba ra cùng đầu ra. Bật 'ai ở nhà?' cho phản đối qualia.",
+      "input": "Xung vào",
+      "neurons": "Neuron",
+      "silicon": "Silicon",
+      "roots": "Mạng rễ",
+      "match": "I/O khớp",
+      "home": "Ai ở nhà?",
+      "objection": "Khe qualia"
+    },
+    "panpsychism": {
+      "title": "Phiếm tâm luận",
+      "category": "Tâm thức",
+      "info": "Zoom thiên hà → não → nguyên tử → electron. Mỗi tầng giữ tia lửa mờ. Phiếm tâm: trải nghiệm là gốc. Lật trỗi dậy và tia chỉ ở não.",
+      "zoom": "Tỷ lệ",
+      "galaxy": "Thiên hà",
+      "brain": "Não",
+      "atom": "Nguyên tử",
+      "electron": "Electron",
+      "pan": "Phiếm tâm",
+      "emerge": "Trỗi dậy",
+      "spark": "Tia"
+    },
+    "teleology": {
+      "title": "Mục đích luận",
+      "category": "Tâm thức",
+      "info": "Tim đập vì chọn lọc tạo nên, hay để bơm? Xếp mệnh đề vào cơ chế vs mục đích. Daisyworld điều tiết không mục tiêu.",
+      "mechanism": "Cơ chế",
+      "purpose": "Mục đích",
+      "claimA": "Đập vì được chọn lọc",
+      "claimB": "Đập để bơm",
+      "claimC": "Daisyworld làm mát giúp sự sống",
+      "claimD": "Phản hồi hạ albedo",
+      "valid": "Khung hợp lệ",
+      "invalid": "Lén mục tiêu",
+      "score": "Đã xếp"
+    }
+  }
+}

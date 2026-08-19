@@ -1,0 +1,244 @@
+{
+  "viz": {
+    "alpha-centauri": {
+      "title": "Alpha Centauri",
+      "category": "Astronomy",
+      "info": "The nearest star system to Earth — three suns: a Sun-like yellow dwarf (the Na'vi Tsawke), an orange dwarf, and distant red Proxima. Pandora orbits Polyphemus, which orbits Alpha Centauri A. Click a star to read its card.",
+      "starA": "Alpha Centauri A",
+      "starB": "Alpha Centauri B",
+      "proxima": "Proxima Centauri",
+      "classG": "G2 yellow dwarf — Tsawke",
+      "classK": "K1 orange dwarf",
+      "classM": "M5 red dwarf",
+      "hint": "Click a star"
+    },
+    "habitable-zone": {
+      "title": "Habitable Zone",
+      "category": "Astrobiology",
+      "info": "The band of distances around a star where liquid water can persist — not too hot, not too cold. A brighter star pushes the zone outward. Drag the stellar mass to see Pandora drift in and out of the green band.",
+      "mass": "Stellar mass",
+      "zone": "Goldilocks band",
+      "tooHot": "too hot",
+      "tooCold": "too cold",
+      "inZone": "Pandora: habitable",
+      "outZone": "Pandora: inhospitable"
+    },
+    "exomoon": {
+      "title": "Exomoon",
+      "category": "Planetary Science",
+      "info": "A moon orbiting a planet in another star system. A habitable exomoon balances four heat sources — direct starlight, reflected planetshine, the giant's infrared glow, and internal tidal heat. Shrink the orbit and tidal heating climbs.",
+      "radius": "Orbital radius",
+      "heat": "Tidal heat",
+      "cold": "frozen",
+      "warm": "temperate",
+      "molten": "molten"
+    },
+    "roche-limit": {
+      "title": "Roche Limit",
+      "category": "Orbital Mechanics",
+      "info": "The closest a moon can approach before the planet's tidal force overpowers the moon's own gravity and tears it apart into a debris ring. Drag the moon inward past the limit and watch it disrupt.",
+      "distance": "Approach distance",
+      "intact": "intact",
+      "shedding": "shedding mass",
+      "disrupted": "disrupted → ring",
+      "limit": "Roche limit"
+    },
+    "accretion": {
+      "title": "Accretion",
+      "category": "Planetary Science",
+      "info": "How planets and moons grow — by sweeping up dust and gas from a surrounding disk. Raise the collapse rate and watch hundreds of particles spiral inward and coalesce into a young protoplanet.",
+      "rate": "Collapse rate",
+      "mass": "Protoplanet mass",
+      "disk": "disk",
+      "forming": "coalescing",
+      "formed": "protoplanet"
+    },
+    "planetary-differentiation": {
+      "title": "Planetary Differentiation",
+      "category": "Geology",
+      "info": "A molten young world separates by density — heavy metal sinks to form a core, lighter rock rises to mantle and crust. Scrub through time to watch the layers sort themselves.",
+      "time": "Time",
+      "core": "Iron core",
+      "mantle": "Mantle",
+      "crust": "Crust",
+      "molten": "undifferentiated melt",
+      "layered": "fully differentiated"
+    },
+    "biosignature": {
+      "title": "Biosignature",
+      "category": "Astrobiology",
+      "info": "The strongest atmospheric sign of life is not one gas but the coexistence of gases that should destroy each other — like O₂ and CH₄. They persist together only if life keeps replenishing them. Toggle gases on a dead vs living world and watch the disequilibrium glow.",
+      "dead": "Dead world",
+      "living": "Living world",
+      "balanced": "chemically dead — gases at equilibrium",
+      "imbalance": "disequilibrium — a biosignature",
+      "o2": "O₂ oxygen",
+      "ch4": "CH₄ methane",
+      "co2": "CO₂ carbon dioxide"
+    },
+    "direct-imaging": {
+      "title": "Direct Imaging",
+      "category": "Planetary Science",
+      "info": "The hardest planet-hunting method: capture the planet's own light by hiding the star's glare behind an occulting disk (a coronagraph). Slide the occulter into place and watch the star vanish, revealing a faint planet in the cleared dark.",
+      "occulter": "Occulter position",
+      "open": "star glare floods the field",
+      "blocked": "star masked — planet revealed",
+      "star": "Star",
+      "planet": "Planet"
+    },
+    "radial-velocity": {
+      "title": "Radial Velocity",
+      "category": "Planetary Science",
+      "info": "A star and its planet both orbit a shared centre of mass, so the star sways. Toward us its light shifts bluer, away redder — the Doppler wobble. Read the rhythmic colour-shift to get the planet's period and minimum mass.",
+      "speed": "Orbital speed",
+      "approaching": "approaching — blueshift",
+      "receding": "receding — redshift",
+      "line": "Spectral line",
+      "rest": "rest wavelength"
+    },
+    "transmission-spectroscopy": {
+      "title": "Transmission Spectroscopy",
+      "category": "Astronomy",
+      "info": "As a planet crosses its star, a sliver of starlight strains through its atmosphere. Each gas absorbs at characteristic wavelengths, leaving dark fingerprint lines in the spectrum. Toggle molecules to see their absorption bands appear.",
+      "h2o": "H₂O water",
+      "co2": "CO₂ carbon dioxide",
+      "ch4": "CH₄ methane",
+      "spectrum": "Transmission spectrum",
+      "transit": "in transit",
+      "out": "out of transit"
+    },
+    "transit-timing-variation": {
+      "title": "Transit-Timing Variation",
+      "category": "Orbital Mechanics",
+      "info": "A moon tugs its planet around their shared centre of mass, so the planet transits its star a little early or late each orbit. Drag the hidden moon and watch the lightcurve dip shift — the fingerprint of an unseen body.",
+      "moonMass": "Hidden moon mass",
+      "early": "transit early",
+      "onTime": "transit on time",
+      "late": "transit late",
+      "lightcurve": "Brightness",
+      "shift": "Timing shift"
+    },
+    "tidal-heating": {
+      "title": "Tidal Heating",
+      "category": "Planetary Science",
+      "info": "On an off-circular orbit a moon is squeezed harder when close, less when far — that rhythmic flexing heats its interior by friction. It drives Io's volcanoes and Pandora's geology. Raise the eccentricity and the core glows hotter.",
+      "ecc": "Orbital eccentricity",
+      "heat": "Internal heat",
+      "cool": "cold & dead",
+      "warm": "geologically active",
+      "molten": "volcanic — Io-like"
+    },
+    "faint-young-sun-paradox": {
+      "title": "Faint Young Sun Paradox",
+      "category": "Earth Systems",
+      "info": "Four billion years ago the Sun shone about 30% dimmer, yet the rocks record liquid water, not a frozen snowball. Scrub through deep time: the faint-sun curve drops the surface into the ice band — until you switch on the carbonate-silicate thermostat and a thicker CO₂ greenhouse holds the world warm.",
+      "time": "Billions of years ago",
+      "luminosity": "Solar brightness",
+      "temperature": "Surface temperature",
+      "thermostat": "CO₂ thermostat",
+      "frozen": "snowball — should be frozen",
+      "liquid": "liquid water — held warm",
+      "paradox": "paradox: dim sun, no ice"
+    },
+    "gyrochronology": {
+      "title": "Gyrochronology",
+      "category": "Astronomy",
+      "info": "A low-mass star is a clock you can read by its spin. Young stars whirl fast and bright; over billions of years magnetic winds bleed off angular momentum and the spin slows predictably. Drag the age and watch the starspots crawl slower and the glow cool — the rotation period gives the age.",
+      "age": "Stellar age",
+      "period": "Rotation period",
+      "young": "young — fast spin",
+      "old": "old — slow spin",
+      "spot": "starspot"
+    },
+    "libration": {
+      "title": "Libration",
+      "category": "Orbital Mechanics",
+      "info": "A tidally locked moon shows one face on average — but an off-circular orbit and a tilted axis make it slowly rock and nod, letting you peek over each limb in turn. That wobble is why we see 59% of the Moon, not half. Toggle libration off to freeze the face dead still.",
+      "wobble": "Libration",
+      "on": "rocking — 59% visible",
+      "off": "frozen — 50% visible",
+      "visible": "Surface visible",
+      "nearside": "near side"
+    },
+    "obliquity": {
+      "title": "Obliquity",
+      "category": "Planetary Science",
+      "info": "Seasons come from axial tilt, not distance from the star. Whichever hemisphere leans sunward catches more direct light and runs warm; the other tilts into winter and grows ice. Drag the tilt from upright to steep and watch the polar caps and seasons swing.",
+      "tilt": "Axial tilt",
+      "upright": "no tilt — no seasons",
+      "steep": "steep tilt — fierce seasons",
+      "summer": "summer hemisphere",
+      "winter": "winter hemisphere"
+    },
+    "orbital-resonance": {
+      "title": "Orbital Resonance",
+      "category": "Orbital Mechanics",
+      "info": "When moons fall into simple whole-number period ratios they tug each other at the same points every orbit, locking into a rhythm — like Io, Europa, and Ganymede at 4:2:1. The periodic kicks keep their orbits eccentric and feed tidal heat. Pick a ratio and watch the traced pattern lock clean or dissolve into chaos.",
+      "ratio": "Resonance ratio",
+      "locked": "locked — stable rhythm",
+      "chaotic": "off-ratio — drifting",
+      "inner": "inner moon",
+      "outer": "outer moon"
+    },
+    "planetshine": {
+      "title": "Planetshine",
+      "category": "Astronomy",
+      "info": "Sunlight bouncing off a giant planet floods its moon's night side — the same trick that makes the dark of a young crescent Moon faintly glow (earthshine). Polyphemus is so vast and bright that Pandora's planet-facing night rarely goes truly dark. Toggle the reflected light and watch the bioluminescent world brighten.",
+      "shine": "Planetshine",
+      "on": "lit night — soft glow",
+      "off": "true dark",
+      "phase": "Planet phase",
+      "nightside": "moon night side"
+    },
+    "sidereal-day": {
+      "title": "Sidereal Day",
+      "category": "Astronomy",
+      "info": "A sidereal day is one true 360° spin measured against the distant stars. But while the world turns it also moves along its orbit, so it must rotate a little further to bring the sun back overhead — that extra turn is the solar day. Step through the orbit and watch the two day-marks drift apart.",
+      "star": "vs fixed star",
+      "sun": "vs the sun",
+      "sidereal": "sidereal — full 360° spin",
+      "solar": "solar — sun back overhead",
+      "gap": "extra turn needed"
+    },
+    "spin-orbit-resonance": {
+      "title": "Spin-Orbit Resonance",
+      "category": "Orbital Mechanics",
+      "info": "A whole-number lock between how often a world spins and how often it orbits. Tidal locking is the 1:1 case; Mercury is trapped at 3:2 — three spins for every two orbits — because its orbit is so eccentric. Switch ratios and watch the surface marker trace its signature petal path.",
+      "ratio": "Spin : orbit ratio",
+      "spins": "spins per orbit",
+      "locked": "1:1 — same face (tidal lock)",
+      "mercury": "3:2 — Mercury-like",
+      "fast": "2:1 — two spins per orbit"
+    },
+    "synchronous-rotation": {
+      "title": "Synchronous Rotation",
+      "category": "Orbital Mechanics",
+      "info": "The result of tidal locking: a moon spins exactly once per orbit, so the same hemisphere always faces its host. It does NOT mean one side is forever dark — the moon still turns relative to the star, so it still has day and night. Toggle to break the lock and let the far side rotate into view.",
+      "sync": "Synchronous (1:1)",
+      "async": "Asynchronous",
+      "near": "near side — faces host",
+      "far": "far side — hidden",
+      "lit": "day/night still cycles"
+    },
+    "synodic-day": {
+      "title": "Synodic Day",
+      "category": "Astronomy",
+      "info": "The synodic (solar) day is sunrise to sunrise — the day we actually live by — and it runs a touch longer than the true sidereal spin. On Pandora, locked to Polyphemus, the giant hangs fixed in the sky and the sun ducks behind it: an eclipse marks the rhythm of each day. Step through to flag the eclipse events.",
+      "sidereal": "Sidereal spin",
+      "solar": "Solar day",
+      "eclipse": "Polyphemus eclipse",
+      "sunrise": "sunrise",
+      "marker": "eclipse marker"
+    },
+    "tidal-locking": {
+      "title": "Tidal Locking",
+      "category": "Planetary Science",
+      "info": "Gravity stretches a moon into an egg shape; friction in that tidal bulge brakes its spin until rotation matches the orbit and one face stays turned toward the host forever. The Moon locked to Earth this way; Pandora locked to Polyphemus, so its day equals its month. Speed the spin and watch it brake into lock.",
+      "spin": "Spin rate",
+      "orbit": "Orbital rate",
+      "unlocked": "spinning free — bulge lags",
+      "locking": "braking toward lock",
+      "locked": "locked — day equals month"
+    }
+  }
+}

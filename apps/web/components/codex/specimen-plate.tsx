@@ -43,6 +43,8 @@ export function SpecimenPlate({
           <img
             src={imageSrc}
             alt=""
+            loading="lazy"
+            decoding="async"
             className="size-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:brightness-110"
           />
         ) : (

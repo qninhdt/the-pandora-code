@@ -1,0 +1,32 @@
+# Bản dịch Nháp [1/2] - Section 04
+
+## Tại sao các electron ngừng va đập
+
+Lời giải thích — khi nó được John Bardeen, Leon Cooper, và Robert Schrieffer công bố vào năm 1957 thông qua thuyết BCS — là một trong những ý tưởng mà nghe qua có vẻ như không thể nào đúng được.
+
+Các electron đẩy lẫn nhau. Chúng đều mang điện tích âm; ép hai electron lại với nhau sẽ tiêu tốn năng lượng. Vậy mà toàn bộ hiện tượng siêu dẫn lại dựa trên việc các electron ghép cặp với nhau. Bằng cách nào?
+
+Bí quyết nằm ở chỗ các electron không hề đơn độc. Chúng di chuyển xuyên qua một mạng lưới các ion dương, và một electron lướt qua sẽ kéo nhẹ những ion dương nặng nề đó về phía nó. Các ion dương phản ứng rất chậm chạp — chúng lảo đảo nghiêng về phía trong sau khi electron đã đi qua, để lại phía sau, trong một khoảnh khắc chớp nhoáng, một túi nhỏ chứa điện tích dương đậm đặc trong mạng tinh thể. Một electron *thứ hai*, lao đến đúng khoảnh khắc đó, sẽ bị hút về phía cái túi điện tích này. Về cơ bản, electron thứ nhất đã để lại một vệt sóng dương mờ nhạt, và electron thứ hai cưỡi lên vệt sóng đó.
+
+<DiagramFigure
+  src="/images/chapters/floating-mountains-and-the-superconductor/fig-05-cooper-pair.webp"
+  labels={[
+    { x: 30, y: 68, side: "right", label: "Electron thứ nhất", note: "kéo mạng tinh thể các ion dương vào trong" },
+    { x: 72, y: 32, side: "left", label: "Bị hút vào vệt sóng", note: "electron thứ hai nối gót — tạo thành một cặp liên kết" },
+    { x: 16, y: 22, side: "right", label: "Mạng tinh thể ion", note: "lưới điện dương mà sự ghép cặp vay mượn" }
+  ]}
+  alt="Một cặp Cooper: một electron làm biến dạng mạng tinh thể ion, electron thứ hai bị hút vào vệt sóng dương"
+  figNo="05"
+  caption="Một electron kéo mạng tinh thể các ion dương về phía trong, để lại một vệt sóng dương chớp nhoáng; một electron thứ hai bị hút vào vùng đó. Cả hai di chuyển như một cặp."
+  tier="real_science"
+/>
+
+Lực hút gián tiếp, thông qua mạng tinh thể ấy là đủ — vừa đủ — để trói buộc hai electron lại thành một <GlossaryTerm slug="cooper-pair">cặp Cooper</GlossaryTerm>. Và sự ghép cặp này làm thay đổi mọi thứ, bởi một quy luật sâu xa về cách tự nhiên phân loại các hạt của nó.
+
+Một electron đơn lẻ là một *fermion*: mang tính chất tránh né xã hội, bị nguyên lý loại trừ Pauli cấm chia sẻ cùng một trạng thái lượng tử với một hạt khác giống nó. Nhưng một cặp Cooper có các spin bằng nhau và ngược chiều tự triệt tiêu về không, và một vật thể tổng hợp có spin ròng bằng không sẽ hành xử giống như một *boson* — và các boson thì trái ngược hoàn toàn với sự tránh né xã hội. Chúng mang tính bầy đàn. Tất cả chúng sẽ vui vẻ chen chúc vào cùng một trạng thái lượng tử vào cùng một lúc.
+
+<WhatThisMeans title="Cốt lõi của vấn đề">
+Bên dưới nhiệt độ tới hạn, các cặp Cooper không cư xử như một đám đông các hạt riêng lẻ. Chúng ngưng tụ thành một trạng thái lượng tử duy nhất, dùng chung — một hàm sóng khổng lồ duy nhất, nơi mọi hạt đều hành quân bước đều tăm tắp. Để làm chệch hướng một electron và tạo ra điện trở, bạn sẽ phải làm xáo trộn toàn bộ dàn đồng ca đó cùng một lúc, và chẳng có đủ năng lượng nhiệt ở dưới mức nhiệt độ đó để làm điều này. Thế nên, không có gì bị chệch hướng cả. Dòng điện chạy mà không gặp chút tổn hao nào. Điện trở bằng không không phải là "rất ít ma sát" — mà đó là sự tĩnh lặng ở tầm vóc vĩ mô của vài nghìn tỉ tỉ hạt đang cùng hát chung một nốt nhạc.
+</WhatThisMeans>
+
+Đó là phép màu thứ nhất: không có điện trở. Nhưng một ngọn núi bay cần một phép màu thứ hai.

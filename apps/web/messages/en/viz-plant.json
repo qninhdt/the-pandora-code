@@ -1,0 +1,235 @@
+{
+  "viz": {
+    "arbuscular-mycorrhiza": {
+      "title": "Arbuscular Mycorrhiza",
+      "category": "Plant",
+      "info": "Fungal arbuscules branch inside root cells. Toggle the symbiosis; phosphorus inflows while carbon pays the fungus at the interface.",
+      "symbiosis": "Symbiosis",
+      "on": "Linked",
+      "off": "Severed",
+      "phosphorus": "P in",
+      "carbon": "C out",
+      "exchange": "Exchange"
+    },
+    "biome": {
+      "title": "Biome",
+      "category": "Plant",
+      "info": "Climate wheel of temperature × precipitation. Drag the dial; the matching biome morphs — rainforest, tundra, desert, Pandoran glow-forest.",
+      "temp": "Temperature",
+      "precip": "Precipitation",
+      "rainforest": "Rainforest",
+      "tundra": "Tundra",
+      "desert": "Desert",
+      "pandora": "Pandoran forest",
+      "biome": "Biome"
+    },
+    "canopy": {
+      "title": "Canopy",
+      "category": "Plant",
+      "info": "Vertical forest slice. Drop a light-meter through the crown; intensity falls exponentially and understory plants adapt at each depth.",
+      "depth": "Depth",
+      "light": "Light",
+      "surface": "Crown",
+      "floor": "Floor",
+      "adapt": "Adaptation"
+    },
+    "cohesion-tension": {
+      "title": "Cohesion–Tension",
+      "category": "Plant",
+      "info": "A continuous water column under tension. Pull harder at the leaves; the column rises. Overpull and a cavitation bubble snaps the stream.",
+      "pull": "Transpiration pull",
+      "column": "Column height",
+      "intact": "Intact",
+      "cavitation": "Cavitation",
+      "tension": "Tension"
+    },
+    "common-mycorrhizal-network": {
+      "title": "Common Mycorrhizal Network",
+      "category": "Plant",
+      "info": "Trees share a glowing fungal web. Inject carbon at a hub tree and watch it flow underground to shaded seedlings — the wood-wide web.",
+      "inject": "Inject C",
+      "flow": "Carbon flow",
+      "hub": "Hub tree",
+      "seedling": "Seedling",
+      "network": "Network"
+    },
+    "cytoplasmic-streaming": {
+      "title": "Cytoplasmic Streaming",
+      "category": "Plant",
+      "info": "Organelles ride a looping current inside a giant cell. Raise velocity and nutrients spread fast; stall it and distribution freezes.",
+      "velocity": "Velocity",
+      "flow": "Streaming",
+      "stall": "Stalled",
+      "fast": "Racing",
+      "organelles": "Organelles"
+    },
+    "ectomycorrhiza": {
+      "title": "Ectomycorrhiza",
+      "category": "Plant",
+      "info": "A fungal mantle sheaths the root tip; the Hartig net runs between cells, never inside. Contrast with arbuscular type at the sheath.",
+      "mantle": "Mantle",
+      "hartig": "Hartig net",
+      "sheath": "Sheath trade",
+      "contrast": "vs arbuscular",
+      "exchange": "Exchange"
+    },
+    "emergent-layer": {
+      "title": "Emergent Layer",
+      "category": "Plant",
+      "info": "Giants poke above the closed canopy. Scroll the forest profile upward; full sun and wind hit, and exposure meters spike at the top.",
+      "height": "Height",
+      "sun": "Sun exposure",
+      "wind": "Wind",
+      "canopy": "Canopy top",
+      "emergent": "Emergent"
+    },
+    "epiphyte": {
+      "title": "Epiphyte",
+      "category": "Plant",
+      "info": "A plant on a host tree with no soil and no parasitism. Place it at canopy heights; it sips water and debris from air alone.",
+      "height": "Placement height",
+      "water": "Water capture",
+      "debris": "Debris",
+      "host": "Host only",
+      "parasite": "Not a parasite"
+    },
+    "foliage-height-diversity": {
+      "title": "Foliage-Height Diversity",
+      "category": "Plant",
+      "info": "Vertical leaf-density histogram. Redistribute foliage across heights; the diversity index rises and more animal niches open.",
+      "layer": "Layer mass",
+      "fhd": "FHD index",
+      "niches": "Niches",
+      "even": "Even spread",
+      "clumped": "Clumped"
+    },
+    "forest-floor": {
+      "title": "Forest Floor",
+      "category": "Plant",
+      "info": "Darkest stratum — about 2% of sunlight. Shine a lamp to reveal decomposers, fungi, and detritus; the nutrient loop closes here.",
+      "light": "Lamp",
+      "sun": "Sunlight left",
+      "recycle": "Recycling",
+      "detritus": "Detritus",
+      "reveal": "Reveal life"
+    },
+    "forest-stratification": {
+      "title": "Forest Stratification",
+      "category": "Plant",
+      "info": "Five labeled vertical layers. Click a stratum to highlight light, humidity, and inhabitants — Earth cutaway or Pandoran glow variant.",
+      "emergent": "Emergent",
+      "canopy": "Canopy",
+      "understory": "Understory",
+      "shrub": "Shrub",
+      "floor": "Floor",
+      "light": "Light",
+      "humidity": "Humidity",
+      "variant": "Pandoran"
+    },
+    "hypha": {
+      "title": "Hypha",
+      "category": "Plant",
+      "info": "A single fungal thread grows and branches live. Steer the tip toward a nutrient patch; extension speed tracks the gradient.",
+      "growth": "Growth rate",
+      "steer": "Steer tip",
+      "nutrient": "Nutrient",
+      "branch": "Branching",
+      "tip": "Tip"
+    },
+    "leaf-area-index": {
+      "title": "Leaf Area Index",
+      "category": "Plant",
+      "info": "Stack leaf layers over a ground patch. LAI climbs and light interception saturates — more leaves, diminishing returns.",
+      "layers": "Leaf layers",
+      "lai": "LAI",
+      "intercept": "Interception",
+      "saturate": "Saturated",
+      "ground": "Ground"
+    },
+    "mother-tree-hypothesis": {
+      "title": "Mother Tree Hypothesis",
+      "category": "Plant",
+      "info": "A hub tree feeds seedlings through mycorrhizal links. Shade a juvenile and the mother routes more carbon its way.",
+      "shade": "Shade seedling",
+      "carbon": "Carbon sent",
+      "mother": "Mother tree",
+      "juvenile": "Juvenile",
+      "link": "Mycorrhizal link"
+    },
+    "mycelium": {
+      "title": "Mycelium",
+      "category": "Plant",
+      "info": "An expanding fungal colony explores substrate. Drop food sources; threads reorganize toward them and prune unused paths.",
+      "food": "Drop food",
+      "prune": "Prune idle",
+      "explore": "Exploring",
+      "optimize": "Optimized",
+      "colony": "Colony size"
+    },
+    "mycorrhiza": {
+      "title": "Mycorrhiza",
+      "category": "Plant",
+      "info": "Root–fungus trade balance. Carbon from the plant vs phosphorus and nitrogen from the fungus; lean the soil and the scale tips.",
+      "soilP": "Soil P",
+      "carbon": "Plant C",
+      "fungus": "Fungus nutrients",
+      "balance": "Trade balance",
+      "fair": "Fair trade",
+      "skew": "Skewed"
+    },
+    "seed-bank": {
+      "title": "Seed Bank",
+      "category": "Plant",
+      "info": "Dormant seeds wait at depth. Trigger fire, flood, or a light gap; the matching cohort germinates while others stay asleep.",
+      "fire": "Fire",
+      "flood": "Flood",
+      "gap": "Light gap",
+      "dormant": "Dormant",
+      "germinate": "Germinating",
+      "depth": "Depth"
+    },
+    "transpiration": {
+      "title": "Transpiration",
+      "category": "Plant",
+      "info": "Stomata open and vapor escapes. Tune humidity, heat, and wind; the rate gauge moves and the water column is tugged upward.",
+      "humidity": "Humidity",
+      "temp": "Temperature",
+      "wind": "Wind",
+      "rate": "Rate",
+      "stomata": "Stomata",
+      "open": "Open",
+      "closed": "Closed"
+    },
+    "turgor-pressure": {
+      "title": "Turgor Pressure",
+      "category": "Plant",
+      "info": "A cell inflates or wilts with water. Shift the osmotic gradient from turgid and firm to plasmolyzed; the whole shoot droops.",
+      "osmotic": "Osmotic gradient",
+      "turgid": "Turgid",
+      "wilted": "Wilted",
+      "pressure": "Pressure",
+      "plant": "Shoot posture"
+    },
+    "understory": {
+      "title": "Understory",
+      "category": "Plant",
+      "info": "Shaded layer beneath the crown. Open canopy gaps; light flecks shift. Shade-tolerant plants thrive while sun-plants stall.",
+      "gap": "Canopy gap",
+      "flecks": "Light flecks",
+      "shade": "Shade plant",
+      "sun": "Sun plant",
+      "thrive": "Thriving",
+      "stress": "Stressed"
+    },
+    "xylem": {
+      "title": "Xylem",
+      "category": "Plant",
+      "info": "Vessel bundle lifting water. Widen diameter for faster Hagen–Poiseuille flow — and higher cavitation risk on the gauge.",
+      "diameter": "Vessel diameter",
+      "flow": "Flow rate",
+      "risk": "Cavitation risk",
+      "safe": "Safe",
+      "critical": "Critical"
+    }
+  }
+}

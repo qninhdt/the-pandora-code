@@ -1,0 +1,235 @@
+{
+  "viz": {
+    "arbuscular-mycorrhiza": {
+      "title": "Nấm rễ arbuscular",
+      "category": "Thực vật",
+      "info": "Arbuscule nấm phân nhánh trong tế bào rễ. Bật/tắt cộng sinh; phosphorus vào còn carbon trả nấm tại giao diện.",
+      "symbiosis": "Cộng sinh",
+      "on": "Liên kết",
+      "off": "Cắt",
+      "phosphorus": "P vào",
+      "carbon": "C ra",
+      "exchange": "Trao đổi"
+    },
+    "biome": {
+      "title": "Quần hệ",
+      "category": "Thực vật",
+      "info": "Bánh xe khí hậu nhiệt × mưa. Kéo núm; quần hệ đổi hình — rừng mưa, đài nguyên, sa mạc, rừng phát quang Pandora.",
+      "temp": "Nhiệt độ",
+      "precip": "Lượng mưa",
+      "rainforest": "Rừng mưa",
+      "tundra": "Đài nguyên",
+      "desert": "Sa mạc",
+      "pandora": "Rừng Pandora",
+      "biome": "Quần hệ"
+    },
+    "canopy": {
+      "title": "Tán rừng",
+      "category": "Thực vật",
+      "info": "Lát cắt rừng đứng. Hạ thước sáng qua tán; cường độ giảm mũ và cây tầng dưới thích nghi theo độ sâu.",
+      "depth": "Độ sâu",
+      "light": "Ánh sáng",
+      "surface": "Đỉnh tán",
+      "floor": "Nền",
+      "adapt": "Thích nghi"
+    },
+    "cohesion-tension": {
+      "title": "Kết dính–căng",
+      "category": "Thực vật",
+      "info": "Cột nước liên tục dưới sức căng. Kéo mạnh hơn ở lá; cột dâng. Kéo quá và bọt cavitation đứt dòng.",
+      "pull": "Lực thoát hơi",
+      "column": "Cao cột",
+      "intact": "Nguyên vẹn",
+      "cavitation": "Cavitation",
+      "tension": "Sức căng"
+    },
+    "common-mycorrhizal-network": {
+      "title": "Mạng nấm rễ chung",
+      "category": "Thực vật",
+      "info": "Cây chia sẻ mạng nấm phát quang. Bơm carbon vào cây trung tâm và xem nó chảy ngầm tới cây non — web gỗ rộng.",
+      "inject": "Bơm C",
+      "flow": "Dòng carbon",
+      "hub": "Cây trung tâm",
+      "seedling": "Cây non",
+      "network": "Mạng"
+    },
+    "cytoplasmic-streaming": {
+      "title": "Dòng tế bào chất",
+      "category": "Thực vật",
+      "info": "Bào quan cưỡi dòng xoay trong tế bào khổng lồ. Tăng vận tốc thì dinh dưỡng lan nhanh; dừng thì phân phối đông cứng.",
+      "velocity": "Vận tốc",
+      "flow": "Dòng chảy",
+      "stall": "Đứng",
+      "fast": "Nhanh",
+      "organelles": "Bào quan"
+    },
+    "ectomycorrhiza": {
+      "title": "Nấm rễ ngoại",
+      "category": "Thực vật",
+      "info": "Áo nấm bọc chóp rễ; lưới Hartig chạy giữa tế bào, không vào trong. Đối chiếu kiểu arbuscular tại vỏ bọc.",
+      "mantle": "Áo nấm",
+      "hartig": "Lưới Hartig",
+      "sheath": "Trao đổi vỏ",
+      "contrast": "vs arbuscular",
+      "exchange": "Trao đổi"
+    },
+    "emergent-layer": {
+      "title": "Tầng vượt tán",
+      "category": "Thực vật",
+      "info": "Cây khổng lồ nhô trên tán khép. Cuộn profile rừng lên; nắng và gió đầy đủ, đồng hồ phơi nhiễm vọt ở đỉnh.",
+      "height": "Chiều cao",
+      "sun": "Phơi nắng",
+      "wind": "Gió",
+      "canopy": "Đỉnh tán",
+      "emergent": "Vượt tán"
+    },
+    "epiphyte": {
+      "title": "Phụ sinh",
+      "category": "Thực vật",
+      "info": "Cây bám thân chủ không đất, không ký sinh. Đặt ở các độ cao tán; hút nước và mảnh vụn từ không khí.",
+      "height": "Độ cao đặt",
+      "water": "Bắt nước",
+      "debris": "Mảnh vụn",
+      "host": "Chỉ bám chủ",
+      "parasite": "Không ký sinh"
+    },
+    "foliage-height-diversity": {
+      "title": "Đa dạng tán theo cao",
+      "category": "Thực vật",
+      "info": "Biểu đồ mật độ lá theo chiều đứng. Phân bố lại tán theo tầng; chỉ số đa dạng tăng và nhiều niche động vật mở.",
+      "layer": "Khối tầng",
+      "fhd": "Chỉ số FHD",
+      "niches": "Niche",
+      "even": "Đều",
+      "clumped": "Tụ"
+    },
+    "forest-floor": {
+      "title": "Nền rừng",
+      "category": "Thực vật",
+      "info": "Tầng tối nhất — khoảng 2% nắng. Soi đèn lộ phân hủy, nấm, mùn; vòng dinh dưỡng khép tại đây.",
+      "light": "Đèn",
+      "sun": "Nắng còn",
+      "recycle": "Tái chế",
+      "detritus": "Mùn",
+      "reveal": "Hiện sinh vật"
+    },
+    "forest-stratification": {
+      "title": "Phân tầng rừng",
+      "category": "Thực vật",
+      "info": "Năm tầng đứng có nhãn. Chạm tầng để hiện sáng, ẩm và cư dân — lát cắt Trái Đất hoặc biến thể phát quang Pandora.",
+      "emergent": "Vượt tán",
+      "canopy": "Tán",
+      "understory": "Dưới tán",
+      "shrub": "Bụi",
+      "floor": "Nền",
+      "light": "Sáng",
+      "humidity": "Ẩm",
+      "variant": "Pandora"
+    },
+    "hypha": {
+      "title": "Sợi nấm",
+      "category": "Thực vật",
+      "info": "Một sợi nấm mọc và phân nhánh trực tiếp. Lái chóp về đốm dinh dưỡng; tốc độ kéo dài theo gradient.",
+      "growth": "Tốc độ mọc",
+      "steer": "Lái chóp",
+      "nutrient": "Dinh dưỡng",
+      "branch": "Nhánh",
+      "tip": "Chóp"
+    },
+    "leaf-area-index": {
+      "title": "Chỉ số diện tích lá",
+      "category": "Thực vật",
+      "info": "Xếp lớp lá trên một mảng đất. LAI tăng và chặn sáng bão hòa — thêm lá, lợi nhuận giảm dần.",
+      "layers": "Lớp lá",
+      "lai": "LAI",
+      "intercept": "Chặn sáng",
+      "saturate": "Bão hòa",
+      "ground": "Đất"
+    },
+    "mother-tree-hypothesis": {
+      "title": "Giả thuyết cây mẹ",
+      "category": "Thực vật",
+      "info": "Cây trung tâm nuôi cây non qua liên kết nấm rễ. Che bóng non và mẹ chuyển thêm carbon về phía nó.",
+      "shade": "Che cây non",
+      "carbon": "Carbon gửi",
+      "mother": "Cây mẹ",
+      "juvenile": "Cây non",
+      "link": "Liên kết nấm"
+    },
+    "mycelium": {
+      "title": "Hệ sợi nấm",
+      "category": "Thực vật",
+      "info": "Khuẩn lạc nấm lan khám phá nền. Thả nguồn thức ăn; sợi tổ chức lại về phía chúng và cắt nhánh thừa.",
+      "food": "Thả thức ăn",
+      "prune": "Cắt nhánh chết",
+      "explore": "Khám phá",
+      "optimize": "Tối ưu",
+      "colony": "Cỡ khuẩn lạc"
+    },
+    "mycorrhiza": {
+      "title": "Nấm rễ",
+      "category": "Thực vật",
+      "info": "Cán cân trao đổi rễ–nấm. Carbon từ cây đối phosphorus và nitơ từ nấm; nghiêng đất và cân lệch.",
+      "soilP": "P đất",
+      "carbon": "C cây",
+      "fungus": "Dinh dưỡng nấm",
+      "balance": "Cân trao đổi",
+      "fair": "Công bằng",
+      "skew": "Lệch"
+    },
+    "seed-bank": {
+      "title": "Ngân hàng hạt",
+      "category": "Thực vật",
+      "info": "Hạt ngủ ở các độ sâu. Kích hoạt lửa, lũ hoặc hở sáng; cohort phù hợp nảy mầm, số khác vẫn ngủ.",
+      "fire": "Lửa",
+      "flood": "Lũ",
+      "gap": "Hở sáng",
+      "dormant": "Ngủ",
+      "germinate": "Nảy mầm",
+      "depth": "Độ sâu"
+    },
+    "transpiration": {
+      "title": "Thoát hơi nước",
+      "category": "Thực vật",
+      "info": "Khí khổng mở và hơi thoát. Chỉnh ẩm, nhiệt, gió; đồng hồ tốc độ đáp ứng và cột nước bị kéo lên.",
+      "humidity": "Độ ẩm",
+      "temp": "Nhiệt độ",
+      "wind": "Gió",
+      "rate": "Tốc độ",
+      "stomata": "Khí khổng",
+      "open": "Mở",
+      "closed": "Đóng"
+    },
+    "turgor-pressure": {
+      "title": "Áp suất trương",
+      "category": "Thực vật",
+      "info": "Tế bào phồng hoặc héo theo nước. Đổi gradient thẩm thấu từ căng chắc sang plasmolysis; cả chồi rũ.",
+      "osmotic": "Gradient thẩm thấu",
+      "turgid": "Trương",
+      "wilted": "Héo",
+      "pressure": "Áp suất",
+      "plant": "Tư thế chồi"
+    },
+    "understory": {
+      "title": "Tầng dưới tán",
+      "category": "Thực vật",
+      "info": "Tầng râm dưới tán. Mở hở tán; đốm sáng dịch. Cây chịu bóng thrives còn cây ưa nắng kẹt.",
+      "gap": "Hở tán",
+      "flecks": "Đốm sáng",
+      "shade": "Cây chịu bóng",
+      "sun": "Cây ưa nắng",
+      "thrive": "Phát triển",
+      "stress": "Căng thẳng"
+    },
+    "xylem": {
+      "title": "Mạch gỗ",
+      "category": "Thực vật",
+      "info": "Bó mạch nâng nước. Nới đường kính cho dòng Hagen–Poiseuille nhanh hơn — và rủi ro cavitation cao hơn trên đồng hồ.",
+      "diameter": "Đường kính mạch",
+      "flow": "Tốc độ dòng",
+      "risk": "Rủi ro cavitation",
+      "safe": "An toàn",
+      "critical": "Tới hạn"
+    }
+  }
+}

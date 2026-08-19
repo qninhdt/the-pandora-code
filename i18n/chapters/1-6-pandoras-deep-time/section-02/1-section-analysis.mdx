@@ -1,19 +1,24 @@
 # Phân tích Chi tiết - Section 02
 
 ## 1. Mục tiêu Cụ thể của Section
-- **Thông điệp (Intent):** Trình bày khó khăn mang tính lịch sử khi con người phải làm quen và tin tưởng vào khái niệm "thời gian sâu thẳm" (deep time). Dẫn chứng bằng câu chuyện của James Hutton (người phát hiện ra thuyết đồng nhất), sai lầm kinh điển của Lord Kelvin khi dùng mô hình dẫn nhiệt thuần túy để giới hạn tuổi Trái Đất, và sự hiệu chỉnh đúng đắn về mặt đối lưu địa chất của John Perry.
-- **Khung xưng hô (Pronouns):** Giọng văn khoa học lịch sử khách quan, uyên bác.
+- **Thông điệp (Intent):** Khám phá "chiếc đồng hồ không thể bị mua chuộc" - hiện tượng phân rã phóng xạ của các hạt nhân không bền. Giải thích bản chất xác suất thống kê: từng nguyên tử riêng lẻ phân rã ngẫu nhiên, nhưng một quần thể khổng lồ luôn tuân theo quy luật bán rã (half-life) và hàm mũ một cách tuyệt đối. Nhấn mạnh tính bất biến của chu kỳ bán rã trước mọi tác động nhiệt độ, áp suất, phản ứng hóa học ngoài hạt nhân.
+- **Khung xưng hô (Pronouns):** "You / We" -> "bạn / chúng ta" hoặc diễn đạt chủ động vô nhân xưng ("khi đo đạc", "hãy quan sát").
 
 ## 2. Điểm nghẽn Cú pháp & Ẩn dụ (Bottlenecks)
-- **Cấu trúc khó:** "The principle Hutton leaned on, later carried forward by Charles Lyell, is uniformitarianism..." -> Giải thích khái niệm thuyết đồng nhất một cách mạch lạc. Hướng xử lý: "Nguyên lý mà Hutton dựa vào, sau này được Charles Lyell kế thừa và phát triển, là thuyết đồng nhất..."
-- **Ẩn dụ/Thành ngữ:** "...but because a hidden assumption was doing silent work." -> Phép nhân hóa "silent work" của giả định ngầm. Hướng xử lý: "...mà vì một giả định ngầm đã lặng lẽ định đoạt kết quả."
-- **Cấu trúc khó:** "A convecting Earth keeps a thin cool skin over a hot, stirring interior for billions of years — and a thin cool skin is exactly what we measure." -> Diễn đạt hình ảnh "thin cool skin". Hướng xử lý: "Một Trái Đất đối lưu có thể duy trì một lớp vỏ mỏng nguội lạnh bên trên lớp ruột nóng bỏng không ngừng xáo trộn suốt hàng tỷ năm — và lớp vỏ mỏng nguội lạnh đó chính xác là những gì chúng ta đo đạc được."
+- **Cấu trúc khó:** "A sundial can be moved, a pendulum can be slowed by a thick atmosphere, a water-clock clogs — but there is no temperature, no pressure, no chemical trick in nature that speeds or slows the ticking of uranium into lead."
+  - *Hướng xử lý:* Dịch đối chiếu song hành nhịp nhàng: "Đồng hồ mặt trời có thể bị xê dịch, con lắc có thể bị bầu khí quyển đặc quánh cản bước, đồng hồ nước có thể bị tắc nghẽn — nhưng trong tự nhiên, chẳng có nhiệt độ, áp suất hay trò ma thuật hóa học nào có thể làm nhanh hay chậm tiếng tích tắc biến urani thành chì."
+- **Ẩn dụ/Thành ngữ:** "A clock that cannot be bribed" -> "Chiếc đồng hồ không thể mua chuộc" (hoặc "Chiếc đồng hồ bất hoại").
 
 ## 3. Thuật ngữ Đặc thù của Section
-- `uniformitarianism`: thuyết đồng nhất / nguyên lý đồng nhất - Học thuyết địa chất nền tảng.
-- `conduction`: dẫn nhiệt - Sự truyền nhiệt qua tiếp xúc vật lý.
-- `convection`: đối lưu - Sự truyền nhiệt qua dòng vật chất chuyển động.
-- `heat equation`: phương trình truyền nhiệt - Công cụ toán lý của Kelvin.
+- `Parent atom / Daughter atom`: Hạt nhân mẹ / Hạt nhân con.
+- `Radioactive decay`: Phân rã phóng xạ.
+- `Half-life`: Chu kỳ bán rã.
+- `Exponential decay`: Phân rã theo hàm mũ.
+- `Radiometric dating`: Định tuổi bằng đồng vị phóng xạ.
+- `Geochronology`: Địa thời học.
 
 ## 4. Ghi chú khác
-- Chú ý dịch đúng và giữ nguyên định dạng của component `<Callout />`.
+- Chú ý các component `Chart` và `HalfLifeDecay`:
+  - `Chart series`: "Parent atoms left (%)" -> "Nguyên tử mẹ còn lại (%)", "Daughter atoms formed (%)" -> "Nguyên tử con tạo thành (%)".
+  - `xLabel`: "Half-lives elapsed" -> "Số chu kỳ bán rã đã trôi qua".
+  - Caption giải thích rõ trục hoành tính bằng chu kỳ bán rã (từ hàng nghìn năm đến hàng tỷ năm tùy nguyên tố).

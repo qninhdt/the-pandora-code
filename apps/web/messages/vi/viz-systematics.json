@@ -1,0 +1,225 @@
+{
+  "viz": {
+    "abduction": {
+      "title": "Suy luận hồi tố",
+      "category": "Triết học",
+      "info": "Kiểu suy luận thứ ba của Peirce: đi ngược từ manh mối bất ngờ tới giả thuyết khiến nó hết bất ngờ. Diễn dịch suy ra, quy nạp đếm, hồi tố đoán cái hợp lý nhất. Nằm sau mọi tầng Suy luận của cuốn sách.",
+      "deduction": "Diễn dịch",
+      "induction": "Quy nạp",
+      "abduction": "Hồi tố",
+      "deductionFlow": "quy tắc + trường hợp → kết quả",
+      "inductionFlow": "trường hợp + kết quả → quy tắc",
+      "abductionFlow": "kết quả + quy tắc → trường hợp",
+      "example": "Giải thích tốt nhất cho sáu chi",
+      "pick": "Chọn một kiểu"
+    },
+    "apomorphy": {
+      "title": "Đặc điểm phái sinh",
+      "category": "Hệ thống học",
+      "info": "Một đổi mới phái sinh mà dòng dõi tạo ra — không phải mặc định tổ tiên. Được chia sẻ thì thành synapomorphy gắn clade; riêng một tip thì là autapomorphy. Chạm nút để xem đổi mới sáng trên hậu duệ.",
+      "derived": "Đổi mới phái sinh",
+      "ancestral": "Trạng thái tổ tiên",
+      "hint": "Chạm một nút — đổi mới sáng trên hậu duệ",
+      "nodeA": "A",
+      "nodeB": "B",
+      "nodeC": "C",
+      "nodeD": "D"
+    },
+    "autapomorphy": {
+      "title": "Đặc điểm riêng",
+      "category": "Hệ thống học",
+      "info": "Đặc điểm phái sinh chỉ một tip mang — vô dụng để xếp nhóm, nguy hiểm khi nhánh dài tích lũy trùng hợp đánh lừa parsimony. Chọn một dòng; chỉ dấu magenta riêng của nó sáng.",
+      "unique": "Riêng tip",
+      "noGroup": "Không xếp nhóm được",
+      "hint": "Chọn tip — chỉ đổi mới riêng sáng",
+      "t1": "A",
+      "t2": "B",
+      "t3": "C",
+      "t4": "D"
+    },
+    "clade": {
+      "title": "Nhánh đơn ngành",
+      "category": "Hệ thống học",
+      "info": "Một tổ tiên chung và mọi hậu duệ — không thiếu ai. Đơn vị thật duy nhất của phân loại hiện đại. Chạm nút; cả cành sáng. So cắt monophyletic với non-monophyletic.",
+      "mono": "Đơn ngành",
+      "nonMono": "Không đơn ngành",
+      "hint": "Chạm nút để cắt một clade",
+      "complete": "Gia đình trọn",
+      "truncated": "Thiếu hậu duệ"
+    },
+    "cladogram": {
+      "title": "Cây phân nhánh",
+      "category": "Hệ thống học",
+      "info": "Giả thuyết phân nhánh về huyết thống. Chỉ thứ tự quan trọng — độ dài nhánh tùy ý. Đổi topology sáu tip Pandora; điểm parsimony đếm bước tiến hóa. Cây đúng cần ít bước nhất.",
+      "steps": "Bước",
+      "best": "Tiết kiệm nhất",
+      "hint": "Đổi topology — ít bước thắng",
+      "topology": "Topology"
+    },
+    "demarcation-problem": {
+      "title": "Bài toán ranh giới",
+      "category": "Triết học",
+      "info": "Khoa học kết thúc, phi khoa học bắt đầu ở đâu? Popper đặt cược falsifiability; Kuhn vào paradigm; Lakatos vào chương trình tiến bộ. Đặt tuyên bố lên dial — cái bác bỏ được sáng cyan.",
+      "science": "Khoa học",
+      "nonScience": "Phi khoa học",
+      "falsifiable": "Bác bỏ được",
+      "unfalsifiable": "Không bác bỏ được",
+      "hint": "Đặt tuyên bố lên dial"
+    },
+    "falsifiability": {
+      "title": "Tính có thể bác bỏ",
+      "category": "Triết học",
+      "info": "Cổng của Popper: tuyên bố chỉ là khoa học nếu có quan sát nào đó, về nguyên tắc, có thể chứng minh nó sai. Lật thẻ — cược rủi ro sáng cyan; cái không bác bỏ được tắt tiếng.",
+      "testable": "Bác bỏ được",
+      "notTestable": "Không bác bỏ được",
+      "flip": "Lật thẻ",
+      "next": "Tuyên bố tiếp",
+      "verdict": "Phán quyết"
+    },
+    "homologous-structures": {
+      "title": "Cấu trúc tương đồng nguồn gốc",
+      "category": "Hệ thống học",
+      "info": "Cùng kế hoạch sâu, việc khác nhau — thừa hưởng từ một tổ tiên. Cánh tay người, vây cá voi, cánh dơi cùng thứ tự xương. Chạm để lộ khung chung; đối chiếu analogy huyết thống bằng không.",
+      "sharedPlan": "Kế hoạch chung",
+      "kinship": "Huyết thống",
+      "real": "thật",
+      "reveal": "Hiện xương",
+      "hide": "Ẩn xương",
+      "arm": "Cánh tay",
+      "flipper": "Vây",
+      "wing": "Cánh"
+    },
+    "inference-to-the-best-explanation": {
+      "title": "Suy luận giải thích tốt nhất",
+      "category": "Triết học",
+      "info": "Abduction sắc của Harman: giữa các giả thuyết đối thủ cho một sự thật, chọn cái giải thích tốt nhất — kiểm chứng, phạm vi, bảo thủ, đơn giản. Chấm điểm thẻ; cái khớp nhất sáng nhất.",
+      "simplicity": "Đơn giản",
+      "scope": "Phạm vi",
+      "fit": "Khớp",
+      "best": "Giải thích tốt nhất",
+      "h1": "H₁",
+      "h2": "H₂",
+      "h3": "H₃",
+      "observation": "Vì sao sáu chi?"
+    },
+    "long-branch-attraction": {
+      "title": "Hút nhánh dài",
+      "category": "Hệ thống học",
+      "info": "Gót chân Achilles của parsimony: hai dòng nhanh tích trùng hợp tình cờ rồi bị kéo sát gốc — cây gọn mà sai. Bật chuẩn vs hiệu chỉnh; xem cụm giả tan.",
+      "trueTree": "Cây thật",
+      "parsimonyTree": "Parsimony suy ra",
+      "corrected": "Mô hình hiệu chỉnh",
+      "standard": "Parsimony chuẩn",
+      "attracted": "Bị hút!",
+      "fast": "nhanh",
+      "slow": "chậm"
+    },
+    "maximum-parsimony": {
+      "title": "Tiết kiệm tối đa",
+      "category": "Hệ thống học",
+      "info": "Giữa các cây, chọn cây cần ít bước tiến hóa nhất. Occam trên cây sự sống. Đổi topology; điểm đếm bước — cực tiểu sáng teal.",
+      "steps": "Bước",
+      "minimum": "Cực tiểu",
+      "treeA": "Cây A",
+      "treeB": "Cây B",
+      "treeC": "Cây C",
+      "hint": "Đổi cây — ít thay đổi thắng"
+    },
+    "occams-razor": {
+      "title": "Dao cạo Occam",
+      "category": "Triết học",
+      "info": "Đừng nhân giả định quá mức cần. Giữa hai lời giải, ưu tiên ít thực thể mới hơn — không vì đơn giản tự đúng, mà vì phép màu thừa mang gánh chứng minh. Đếm mắt xích; cắt phần thừa.",
+      "assumptions": "Giả định",
+      "lean": "Chuỗi gọn",
+      "bloated": "Chuỗi phình",
+      "cut": "Cắt thừa",
+      "restore": "Khôi phục"
+    },
+    "outgroup": {
+      "title": "Nhóm ngoài",
+      "category": "Hệ thống học",
+      "info": "Nhánh tách sớm hơn dùng làm gốc — la bàn tổ tiên vs phái sinh. Chọn tip làm outgroup; cực của ingroup lật theo.",
+      "outgroup": "Nhóm ngoài",
+      "ingroup": "Nhóm trong",
+      "rooted": "Đã gốc",
+      "hint": "Chọn tip outgroup"
+    },
+    "paraphyly": {
+      "title": "Nhóm cận ngành",
+      "category": "Hệ thống học",
+      "info": "Tổ tiên cộng một số — không phải mọi — hậu duệ. Cành cụt: 'bò sát' thiếu chim, 'cá' thiếu tetrapod. Bật tip bị loại để khôi phục clade.",
+      "para": "Cận ngành",
+      "mono": "Đơn ngành",
+      "include": "Gồm tip bị loại",
+      "exclude": "Loại tip",
+      "missing": "Thiếu hậu duệ"
+    },
+    "phenetics": {
+      "title": "Phân loại theo độ giống",
+      "category": "Hệ thống học",
+      "info": "Xếp nhóm theo giống tổng thể — chết khi hội tụ giả huyết thống. Bật phenetic vs cladistic shared-derived; xem hai cây bất đồng.",
+      "phenetic": "Phenetic",
+      "cladistic": "Cladistic",
+      "hint": "Cùng dữ liệu, hai thuật toán",
+      "trap": "Trông giống ≠ họ hàng"
+    },
+    "plesiomorphy": {
+      "title": "Đặc điểm tổ tiên",
+      "category": "Hệ thống học",
+      "info": "Mặc định tổ tiên mà ai cũng còn mang. Năm ngón tetrapod: đúng, nhưng vô dụng để xếp nhóm vì gần như mọi tip đều có. Sáng trait gốc trên cả cây.",
+      "ancestral": "Trait tổ tiên",
+      "everywhere": "Có ở mọi tip",
+      "noSignal": "Không tín hiệu nhóm",
+      "hint": "Làm nổi plesiomorphy"
+    },
+    "polyphyly": {
+      "title": "Nhóm đa ngành",
+      "category": "Hệ thống học",
+      "info": "Giỏ gán ghép nhiều dòng bằng giống bề mặt — không phải cành cây. 'Động vật bay' hay Na'vi+người đứng thẳng. Bật vòng giả; gốc thật vẫn xa nhau.",
+      "poly": "Giỏ đa ngành",
+      "trueRoots": "Gốc thật xa nhau",
+      "hint": "Bật nhóm giả",
+      "show": "Hiện nhóm giả",
+      "hide": "Ẩn nhóm giả"
+    },
+    "positive-citation-bias": {
+      "title": "Thiên kiến trích dẫn tích cực",
+      "category": "Triết học",
+      "info": "Kết quả dương hấp dẫn được trích; null biến mất. Tuyên bố cứng dần qua mỗi citation dù không có bằng chứng mới — wood-wide web vượt dữ liệu. Chạy thử; chỉ positive được nộp.",
+      "run": "Chạy lô",
+      "published": "Đã xuất bản",
+      "nulls": "Null cất ngăn",
+      "positive": "Dương",
+      "null": "Null",
+      "bias": "Lệch tài liệu"
+    },
+    "speculation": {
+      "title": "Suy đoán",
+      "category": "Triết học",
+      "info": "Tầng của sách cho mô hình chấp một tiền đề chưa xác nhận rồi tuân mọi luật còn lại. Kéo tuyên bố qua Canon / Inference / Speculation / Real-science. Bẻ một quy tắc; trả đủ giá phần còn lại.",
+      "canon": "Canon",
+      "inference": "Suy luận",
+      "speculation": "Suy đoán",
+      "realScience": "Khoa học thật",
+      "hint": "Đặt mỗi tuyên bố vào một tầng"
+    },
+    "symplesiomorphy": {
+      "title": "Đặc điểm tổ tiên chung",
+      "category": "Hệ thống học",
+      "info": "Trait tổ tiên nhiều loài vẫn chia sẻ — bẫy cladistics. Xếp nhóm theo nó cho ra cận ngành. Chỉ shared derived gắn clade thật. Chọn dấu cũ; xem nhóm giả gãy.",
+      "sharedAncestral": "Tổ tiên chung",
+      "falseGroup": "Nhóm giả",
+      "trap": "Không xếp nhóm được",
+      "hint": "Xếp nhóm theo trait cũ — xem nó fail"
+    },
+    "synapomorphy": {
+      "title": "Đặc điểm chung dẫn xuất",
+      "category": "Hệ thống học",
+      "info": "Đổi mới phái sinh hai hay nhiều loài thừa hưởng từ một tổ tiên — bằng chứng cứng của clade. Chọn dấu chung; nhóm monophyletic hợp lệ sáng cyan.",
+      "sharedDerived": "Chung dẫn xuất",
+      "cladeLit": "Clade sáng",
+      "hint": "Chọn synapomorphy",
+      "valid": "Clade hợp lệ"
+    }
+  }
+}

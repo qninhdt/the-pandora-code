@@ -1,0 +1,210 @@
+{
+  "viz": {
+    "allometry": {
+      "title": "Tỷ lệ dị hình",
+      "category": "Cơ sinh học",
+      "info": "Cơ quan không scale 1:1 với khối lượng. Trên log-log, độ dốc là số mũ scale — phổi gần 1, não nông hơn, xương dốc hơn. Kéo mass và xem mỗi cơ quan đi đường riêng.",
+      "mass": "Khối lượng",
+      "organ": "Cỡ cơ quan",
+      "slope": "Độ dốc",
+      "lung": "Phổi",
+      "heart": "Tim",
+      "brain": "Não",
+      "bone": "Xương"
+    },
+    "aspect-ratio": {
+      "title": "Tỷ số khung cánh",
+      "category": "Cơ sinh học",
+      "info": "Sải cánh² / diện tích cánh. AR cao lượn rẻ (hải âu); AR thấp quay gắt (sẻ). Kéo sải và chord; L/D cập nhật. Ikran nằm giữa lượn và săn linh hoạt.",
+      "span": "Sải",
+      "chord": "Chord",
+      "ar": "AR",
+      "ld": "L/D",
+      "ikran": "Ikran",
+      "albatross": "Hải âu",
+      "sparrow": "Sẻ"
+    },
+    "biomechanics": {
+      "title": "Cơ sinh học",
+      "category": "Cơ sinh học",
+      "info": "Lực xuyên máy sống. Chạm khớp banshee để xem vector mô-men; lực phản đất nhọn khi đáp. Cấu trúc là câu trả lời cho tải.",
+      "joint": "Khớp",
+      "torque": "Mô-men",
+      "grf": "GRF",
+      "hip": "Hông",
+      "knee": "Gối",
+      "ankle": "Cổ chân",
+      "wing": "Gốc cánh"
+    },
+    "cursorial": {
+      "title": "Chạy nhanh (cursorial)",
+      "category": "Cơ sinh học",
+      "info": "Sinh ra để chạy. Tỷ lệ chi đặt dáng đi: walk → trot → gallop khi Froude tăng. Kéo dài chân và pha dịch chuyển.",
+      "limbRatio": "Tỷ lệ chi",
+      "froude": "Froude",
+      "walk": "Đi",
+      "trot": "Nước kiệu",
+      "gallop": "Nước đại",
+      "gait": "Dáng đi"
+    },
+    "dynamic-soaring": {
+      "title": "Lượn động",
+      "category": "Cơ sinh học",
+      "info": "Gặt gradient gió: leo vào gió nhanh, bổ downwind, nghiêng, lặp. Thanh năng lượng đầy từ shear, không từ cơ. Bật lượn vs đập cánh.",
+      "energy": "Năng lượng",
+      "soar": "Lượn",
+      "flap": "Đập",
+      "shear": "Wind shear",
+      "cost": "Chi phí"
+    },
+    "ecomorph": {
+      "title": "Dạng sinh thái",
+      "category": "Cơ sinh học",
+      "info": "Hình theo niche. Sáu silhouette cho sáu môi trường — chọn habitat và body plan khớp sáng. Hội tụ viết cùng một đáp án hai lần.",
+      "habitat": "Sinh cảnh",
+      "arboreal": "Trên cây",
+      "cursorial": "Chạy",
+      "fossorial": "Đào",
+      "aquatic": "Dưới nước",
+      "aerial": "Trên không",
+      "grazing": "Gặm cỏ"
+    },
+    "froude-number": {
+      "title": "Số Froude",
+      "category": "Cơ sinh học",
+      "info": "v / √(gL) — quán tính trên trọng lực. Gần Fr ≈ 1 drag sóng đỉnh và dáng đi đổi. Đẩy tốc qua kênh; xem meter và sóng mũi.",
+      "speed": "Tốc độ",
+      "fr": "Fr",
+      "waveDrag": "Drag sóng",
+      "transition": "Chuyển dáng"
+    },
+    "isometry": {
+      "title": "Đẳng hình",
+      "category": "Cơ sinh học",
+      "info": "Cùng hình, cỡ lớn hơn. Scale cặp đôi lên và bề dày vách giữ tỉ lệ — thể tích vượt tiết diện, isometry thuần gãy xương. Tự nhiên từ chối.",
+      "scale": "Tỷ lệ",
+      "area": "Tiết diện",
+      "volume": "Thể tích",
+      "safe": "An toàn",
+      "fail": "Gãy"
+    },
+    "kleibers-law": {
+      "title": "Định luật Kleiber",
+      "category": "Cơ sinh học",
+      "info": "Tỷ lệ trao đổi chất ~mass^¾, không phải 1. Log-log, sự sống nằm trên đường nông. Kéo mass sinh vật Pandora; nó nên gần độ dốc Kleiber.",
+      "mass": "Khối lượng",
+      "metab": "Trao đổi chất",
+      "exponent": "Đường ¾",
+      "onLine": "Trên đường"
+    },
+    "leading-edge-vortex": {
+      "title": "Xoáy cạnh trước",
+      "category": "Cơ sinh học",
+      "info": "Xoáy lăn dính cạnh trước cánh tăng lực nâng ở góc cao — trick côn trùng và banshee. Bật dòng dính vs LEV và xem lõi áp thấp.",
+      "attached": "Dòng dính",
+      "lev": "LEV bật",
+      "liftBoost": "Tăng nâng",
+      "aoa": "Góc"
+    },
+    "lift": {
+      "title": "Lực nâng",
+      "category": "Cơ sinh học",
+      "info": "Aerofoil + góc tấn. Streamline dồn phía trên, áp giảm, lực tịnh lên — đến stall. Quét AoA; Cl lên rồi sụp.",
+      "aoa": "AoA",
+      "cl": "Cl",
+      "stall": "Stall",
+      "stream": "Dòng"
+    },
+    "pneumatic-bone": {
+      "title": "Xương khí",
+      "category": "Cơ sinh học",
+      "info": "Rỗng, giàn, chứa khí. Trượt từ đặc sang pneumatic: mass rơi nhanh hơn độ cứng. Flyer mua sải bằng khoảng trống.",
+      "solid": "Đặc",
+      "pneumatic": "Khí",
+      "mass": "Khối lượng",
+      "stiffness": "Độ cứng",
+      "ratio": "Cứng / mass"
+    },
+    "power-curve": {
+      "title": "Đường công suất",
+      "category": "Cơ sinh học",
+      "info": "Công cần vs tốc là chữ U: chậm tốn hover, nhanh tốn parasite drag. Marker dịch với wing loading và mass — tốc min-power và max-range.",
+      "speed": "Tốc độ",
+      "power": "Công suất",
+      "minPower": "Min power",
+      "maxRange": "Max range",
+      "loading": "Wing loading",
+      "mass": "Khối lượng"
+    },
+    "quadrupedal-launch": {
+      "title": "Cất cánh bốn chi",
+      "category": "Cơ sinh học",
+      "info": "Flyer lớn đẩy bằng cả bốn chi. Bước chuỗi banshee: chùng → bật → mở cánh → nhịp đầu. Sức đến từ cú nhảy, không chỉ nhịp đập đầu.",
+      "step": "Bước",
+      "crouch": "Chùng",
+      "push": "Bật",
+      "unfold": "Mở cánh",
+      "stroke": "Nhịp đầu"
+    },
+    "quetzalcoatlus": {
+      "title": "Quetzalcoatlus",
+      "category": "Cơ sinh học",
+      "info": "Azhdarchid khổng lồ Trái Đất cạnh ikran. So sải và mass; meter khả thi tách tải được hỗ trợ khỏi fantasy.",
+      "span": "Sải",
+      "mass": "Khối lượng",
+      "ikran": "Ikran",
+      "quetz": "Quetzalcoatlus",
+      "plausible": "Khả thi",
+      "stretch": "Căng"
+    },
+    "reynolds-number": {
+      "title": "Số Reynolds",
+      "category": "Cơ sinh học",
+      "info": "ρvL/μ — quán tính trên nhớt. Nhỏ/chậm = vệt laminar mượt; lớn/nhanh = hỗn loạn turbulent. Không khí đặc Pandora dịch Re của một cánh.",
+      "size": "Cỡ",
+      "speed": "Tốc",
+      "re": "Re",
+      "laminar": "Laminar",
+      "turbulent": "Turbulent",
+      "pandora": "Khí Pandora"
+    },
+    "scaling-exponent": {
+      "title": "Số mũ scale",
+      "category": "Cơ sinh học",
+      "info": "Trait ∝ base^b. Chọn b (½, ¾, 1, 2) và xem đường log-log nghiêng. Hình học và trao đổi chất sống trên độ dốc khác nhau.",
+      "base": "Cơ sở",
+      "exponent": "Số mũ",
+      "trait": "Đặc điểm",
+      "curve": "Đường cong"
+    },
+    "square-cube-law": {
+      "title": "Luật vuông–khối",
+      "category": "Cơ sinh học",
+      "info": "Scale body theo k: diện tích ×k², thể tích ×k³. Mặt thua cuộc — tản nhiệt, ứng suất xương, lực cơ đều cảm mismatch. Phóng cube đến khi volume vượt area.",
+      "scale": "Scale k",
+      "area": "Diện tích ~k²",
+      "volume": "Thể tích ~k³",
+      "stress": "Ứng suất"
+    },
+    "thermal-soaring": {
+      "title": "Lượn nhiệt",
+      "category": "Cơ sinh học",
+      "info": "Đất nóng mặt trời thổi cột vô hình. Ikran vòng trong thermal và lấy độ cao miễn phí. Đặt thermal; xem leo.",
+      "thermal": "Thermal",
+      "altitude": "Độ cao",
+      "place": "Đặt thermal",
+      "clear": "Xóa"
+    },
+    "wing-loading": {
+      "title": "Tải cánh",
+      "category": "Cơ sinh học",
+      "info": "Trọng lượng / diện tích cánh. Loading cao = đáp nhanh, quay kém; thấp = nổi và linh hoạt. Khớp preset ikran hoặc tự tạo flyer.",
+      "weight": "Trọng lượng",
+      "area": "Diện tích cánh",
+      "loading": "Loading",
+      "landSpeed": "Tốc đáp",
+      "agility": "Linh hoạt",
+      "ikran": "Preset ikran"
+    }
+  }
+}

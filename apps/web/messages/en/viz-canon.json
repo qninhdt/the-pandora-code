@@ -1,0 +1,60 @@
+{
+  "viz": {
+    "eywa": {
+      "title": "Eywa",
+      "category": "Canon",
+      "info": "Not a goddess above the world — the sum of all its life. Roots, fungal threads, and tsaheylu bonds form a planet-scale network. Grace Augustine: more connections than synapses in a human brain. Touch a node; watch the signal ripple outward.",
+      "connections": "Connections",
+      "humanBrain": "Human brain",
+      "eywaNet": "Eywa network",
+      "synapses": "synapses",
+      "nodes": "nodes lit",
+      "ripple": "Signal spreading",
+      "idle": "Touch a node to wake the web",
+      "depth": "Planetary depth",
+      "hint": "Each touch seeds a ripple. At full depth the web holds more links than a human connectome — the question of Part III is whether that scale can become a mind."
+    },
+    "tsaheylu": {
+      "title": "Tsaheylu",
+      "category": "Canon",
+      "info": "The bond. Two queues of pinkish neural tendrils interlace and open a two-way channel — motor command, sensation, and emotion in real time. Canon calls it a biological ethernet cable; the mount becomes an extension of the rider.",
+      "rider": "Rider queue",
+      "mount": "Mount queue",
+      "draw": "Draw queues together",
+      "bonded": "Bonded — channel open",
+      "apart": "Apart — no link",
+      "motor": "Motor",
+      "sensation": "Sensation",
+      "emotion": "Emotion",
+      "flow": "Bidirectional flow",
+      "hint": "Drag the queues until the tendrils lace. Particles stream both ways once the bond locks — command out, feeling in."
+    },
+    "unobtanium": {
+      "title": "Unobtanium",
+      "category": "Canon",
+      "info": "Pandora's room-temperature superconductor. Ore cores pin into the Flux Vortex and hold the floating mountains aloft. Drag the chunk over the magnet track; flux threads sew it in place. The amber core is the rare warm accent — heat that never quenches the superconductivity.",
+      "ore": "Ore",
+      "track": "Magnet track",
+      "pinned": "Flux-pinned",
+      "free": "Free — drag over track",
+      "coreTemp": "Core glow",
+      "lock": "Lock",
+      "gap": "Gap",
+      "hint": "Room temperature is already met. Slide the ore onto the track and the flux pins catch — not balancing, locked. The amber heart keeps glowing."
+    },
+    "prolemuris": {
+      "title": "Prolemuris",
+      "category": "Canon",
+      "info": "An arboreal Pandoran primate with partly fused upper forelimbs — the living bridge from the six-limbed body plan shared by Pandoran animals to the four-limbed plan of the Na'vi. Canopy life favored dexterity over a spare pair of arms.",
+      "evolution": "Limb fusion",
+      "sixLimb": "Six limbs",
+      "fused": "Fused toward Na'vi",
+      "forelimbs": "Forelimbs",
+      "hindlimbs": "Hindlimbs",
+      "stateSix": "Hexapod ancestor plan",
+      "stateMid": "Partial fusion — Prolemuris",
+      "stateNavi": "Toward the Na'vi arm",
+      "hint": "Drag evolution from six free limbs toward a fused forearm. Prolemuris sits in the middle — evidence the Na'vi came from the same hexapod stock."
+    }
+  }
+}

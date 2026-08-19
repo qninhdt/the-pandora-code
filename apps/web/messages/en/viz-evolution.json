@@ -106,20 +106,56 @@
       "prompt": "Hover or tap a gene to see the body region it labels.",
       "hint": "The order of the genes on the shelf matches the order of the body regions they label. A Hox gene does not build a part — it stamps an address. Move a label and you move a body part, without redesigning the part itself.",
       "genes": {
-        "hox1": { "gene": "Hox-1", "region": "Head end" },
-        "hox2": { "gene": "Hox-2", "region": "Neck" },
-        "hox3": { "gene": "Hox-3", "region": "Forelimb zone" },
-        "hox4": { "gene": "Hox-4", "region": "Mid-body" },
-        "hox5": { "gene": "Hox-5", "region": "Hindlimb zone" },
-        "hox6": { "gene": "Hox-6", "region": "Tail end" }
+        "hox1": {
+          "gene": "Hox-1",
+          "region": "Head end"
+        },
+        "hox2": {
+          "gene": "Hox-2",
+          "region": "Neck"
+        },
+        "hox3": {
+          "gene": "Hox-3",
+          "region": "Forelimb zone"
+        },
+        "hox4": {
+          "gene": "Hox-4",
+          "region": "Mid-body"
+        },
+        "hox5": {
+          "gene": "Hox-5",
+          "region": "Hindlimb zone"
+        },
+        "hox6": {
+          "gene": "Hox-6",
+          "region": "Tail end"
+        }
       },
       "glossaryGenes": {
-        "hox1": { "region": "Head & Jaw", "note": "Specifies head structure and double sensory organs." },
-        "hox2": { "region": "Neck & Spiracles", "note": "Addresses the breathing vents and primary neck segments." },
-        "hox3": { "region": "Forelimbs (Wings)", "note": "Switches on the first pair of appendages, forming wings." },
-        "hox4": { "region": "Mid-body Thorax", "note": "Forms the central ribcage and carbon-composite support skeleton." },
-        "hox5": { "region": "Hindlimbs", "note": "Controls development of the rear crawling/clinging claws." },
-        "hox6": { "region": "Tail End & Queue", "note": "Specifies the tail tip and neural queue connection interface." }
+        "hox1": {
+          "region": "Head & Jaw",
+          "note": "Specifies head structure and double sensory organs."
+        },
+        "hox2": {
+          "region": "Neck & Spiracles",
+          "note": "Addresses the breathing vents and primary neck segments."
+        },
+        "hox3": {
+          "region": "Forelimbs (Wings)",
+          "note": "Switches on the first pair of appendages, forming wings."
+        },
+        "hox4": {
+          "region": "Mid-body Thorax",
+          "note": "Forms the central ribcage and carbon-composite support skeleton."
+        },
+        "hox5": {
+          "region": "Hindlimbs",
+          "note": "Controls development of the rear crawling/clinging claws."
+        },
+        "hox6": {
+          "region": "Tail End & Queue",
+          "note": "Specifies the tail tip and neural queue connection interface."
+        }
       }
     },
     "replayTape": {
@@ -210,6 +246,414 @@
           "analog": "Wolves / Hyenas"
         }
       }
+    },
+    "adaptive-radiation": {
+      "title": "Adaptive Radiation",
+      "category": "Evolution",
+      "info": "One ancestral lineage fans out to fill a world of open jobs — a new island, a cleared land, a young biosphere. Toggle a niche open and a descendant lineage rushes in, shaped to that role; close it and the lineage that depended on it fades to extinction. Pandora's whole bestiary reads as one enormous radiation off a single six-limbed stock.",
+      "lineages": "Lineages",
+      "nichesFilled": "Niches",
+      "tapNiche": "tap a niche",
+      "ancestor": "ancestor",
+      "canopy": "canopy",
+      "understory": "understory",
+      "ground": "ground",
+      "river": "river",
+      "coast": "coast",
+      "air": "air"
+    },
+    "analogous-structures": {
+      "title": "Analogous Structures",
+      "category": "Evolution",
+      "info": "Same job, unrelated origin. An insect's wing and a bat's wing both solve flight but are built from different materials on different lineages — analogy, the product of convergence, not inheritance. When a thanator wears a panther's build with no cat in its ancestry, this is analogy at planetary scale.",
+      "earthLineage": "Earth lineage",
+      "pandoraLineage": "Pandora lineage",
+      "sharedFunction": "Shared function",
+      "kinship": "Kinship",
+      "kinshipZero": "kinship is zero",
+      "none": "none",
+      "flight": "flight",
+      "swimming": "swimming",
+      "grasping": "grasping",
+      "insectWing": "insect wing",
+      "bansheeWing": "banshee wing",
+      "fishFin": "fish fin",
+      "tulkunFluke": "tulkun fluke",
+      "mantisClaw": "mantis claw",
+      "napalmGrip": "hexapod grip"
+    },
+    "bilateral-symmetry": {
+      "title": "Bilateral Symmetry",
+      "category": "Evolution",
+      "info": "The mirror axis that defines almost every animal you know. A bilaterian has a left and a right reflecting across one head-to-tail line — and that symmetry travels with a leading head, a forward direction, and a brain gathered at the front. Corrupt the mirror and you see why evolution keeps it clean: a lopsided body has no honest forward to move or sense along.",
+      "axis": "axis",
+      "broken": "Symmetry broken — no true forward",
+      "cleanAxis": "Clean mirror axis — an efficient body plan",
+      "corruption": "Corruption",
+      "forward": "forward",
+      "symmetric": "symmetric",
+      "symmetryLabel": "Symmetry"
+    },
+    "body-plan": {
+      "title": "Body Plan",
+      "category": "Evolution",
+      "info": "The architecture an animal is built on — its axes, symmetry, and the count and placement of repeated parts. Set the segment number and paint regional identity along the head-to-tail axis. Most animals share a small handful of these plans, and each stays nearly fixed for hundreds of millions of years, because changing it early in the embryo cascades into collapse.",
+      "headEnd": "head",
+      "segment": "segment",
+      "segmentCount": "Segment count",
+      "segmentsLabel": "Segments",
+      "segmentsN": "{n} segments",
+      "tapToPaint": "tap a segment to paint its region",
+      "head": "head",
+      "thorax": "thorax",
+      "abdomen": "abdomen"
+    },
+    "cambrian-explosion": {
+      "title": "Cambrian Explosion",
+      "category": "Evolution",
+      "info": "Forty million years, compressed. Around 538 Mya almost every major animal body plan appears in the fossil record in one geological blink. The twist: it came with almost no new genes — the toolkit already existed in the common ancestor, and the explosion was that toolkit redeployed through regulatory rewiring. Play the clock and watch the disparity of forms bloom from a single point.",
+      "bodyPlans": "Body plans",
+      "disparity": "Disparity",
+      "geologicClock": "Geologic clock",
+      "mya": "Mya"
+    },
+    "canalization": {
+      "title": "Canalization",
+      "category": "Evolution",
+      "info": "Development flowing down a pre-cut channel. In Waddington's landscape a marble rolls from the top and, however hard you shove it, a deep enough canal funnels it to the same stable outcome — buffered against noise and small genetic wobble. Perturb the ball and raise the noise; while canalization is strong it still lands in the same basin. This is one reason body plans hold for aeons.",
+      "buffered": "Buffered — the channel corrects the wander",
+      "canalDepth": "Canal depth",
+      "drift": "Drift",
+      "perturb": "Perturb",
+      "stableOutcome": "stable outcome",
+      "strayed": "Strayed — the channel was too shallow",
+      "strong": "strong",
+      "weak": "weak",
+      "moderate": "moderate"
+    },
+    "character-displacement": {
+      "title": "Character Displacement",
+      "category": "Evolution",
+      "info": "Competition that manufactures difference. Two similar species on one resource axis overlap, and the individuals least like their competitor eat best and breed most. So exactly where the ranges meet, selection shoves the two distributions apart. Drag them into overlap and watch the peaks repel: coexistence does not merely permit difference, it actively carves it.",
+      "imposedSeparation": "Imposed separation",
+      "overlapLabel": "Overlap",
+      "overlapping": "overlapping",
+      "distinct": "distinct",
+      "repelling": "Overlap drives the traits apart",
+      "separate": "Separate ranges — no pressure to diverge",
+      "resourceAxis": "resource (e.g. beak size)",
+      "speciesA": "sp. A",
+      "speciesB": "sp. B"
+    },
+    "cis-regulatory-element": {
+      "title": "Cis-Regulatory Element",
+      "category": "Evolution",
+      "info": "Where evolution does most of its real work. Around every gene sit stretches of non-coding DNA that act as switches — deciding when, where and how strongly the gene fires. Rather than risk redesigning a precious master gene, evolution retunes a switch: add a spot of colour here, suppress a limb there, leaving the tool itself untouched. Flip the switches and watch which tissues express while the coding gene stays whole.",
+      "codingGene": "coding gene",
+      "expressed": "Expressed",
+      "geneIntact": "coding gene stays intact",
+      "switchesOn": "switches on",
+      "tapSwitches": "tap the switches to retune expression",
+      "eyeSpot": "eye spot",
+      "limbBud": "limb bud",
+      "pigment": "pigment",
+      "flank": "flank"
+    },
+    "coevolution": {
+      "title": "Coevolution",
+      "category": "Evolution",
+      "info": "The arms race that never ends. Each side is a selective force on the other: faster prey select for faster hunters, which select for faster prey still. Push the prey's escape trait and the predator's pursuit climbs to answer it — an escalating spiral that settles into no winner, because the race itself is the equilibrium. On Pandora it's the viperwolf's pack tactics answered by the hexapede's senses.",
+      "escalation": "Escalation",
+      "gap": "Gap",
+      "noWinner": "no winner — the race is the equilibrium",
+      "predator": "predator",
+      "prey": "prey",
+      "preyTrait": "Prey escape trait",
+      "traitLevel": "trait level"
+    },
+    "convergent-evolution": {
+      "title": "Convergent Evolution",
+      "category": "Evolution",
+      "info": "The environment imposing one answer on many starts. Pick a job and distant lineages converge on the same form: water forces a streamlined torso on a dolphin, an ichthyosaur and a shark alike. Convergence explains simple, environment-dictated traits — but not complex arbitrary ones, which point to shared inheritance. Pick a function and watch five unrelated lineages slide toward one silhouette.",
+      "converged": "converged on one form",
+      "function": "Function",
+      "solution": "Solution",
+      "swim": "swim",
+      "fly": "fly",
+      "run": "run",
+      "l1": "lin. 1",
+      "l2": "lin. 2",
+      "l3": "lin. 3",
+      "l4": "lin. 4",
+      "l5": "lin. 5"
+    },
+    "deep-homology": {
+      "title": "Deep Homology",
+      "category": "Evolution",
+      "info": "The same ancient switch behind structures that look nothing alike. An insect's compound eye and a vertebrate's camera eye are built on utterly different plans, yet both are booted by one master gene, Pax6 — so deeply shared that a mouse's Pax6 can grow eyes on a fruit fly. Toggle Pax6 and both eyes light or go dark together: proof that different structure can hide a common deep-homologous origin.",
+      "bothEyesForm": "Both eyes form — one master gene, Pax6",
+      "insect": "insect",
+      "masterGene": "Pax6",
+      "noEyes": "Pax6 off — neither eye forms",
+      "off": "off",
+      "on": "on",
+      "togglePax6Off": "switch Pax6 off",
+      "togglePax6On": "switch Pax6 on",
+      "vertebrate": "vertebrate"
+    },
+    "degeneracy-biology": {
+      "title": "Degeneracy",
+      "category": "Biology",
+      "info": "Robustness that redundancy can't buy. Degeneracy is when structurally different parts happen to do the same job — kidneys, sweat glands and lungs all shed waste. Disable one route and flow finds another unlike it; the output holds. Only when enough distinct paths are cut does the function finally fail, because the substitutes were never dedicated backups, just different parts with an overlapping talent.",
+      "input": "input",
+      "liveRoutes": "Live routes",
+      "output": "output",
+      "outputFails": "Output fails — every route is cut",
+      "outputHolds": "Output holds on {n} unlike routes",
+      "tapToDisable": "tap a pathway to disable it",
+      "renal": "renal",
+      "glandular": "glandular",
+      "respiratory": "lung"
+    },
+    "differential-persistence": {
+      "title": "Differential Persistence",
+      "category": "Evolution",
+      "info": "Selection without reproduction. Doolittle's loosening of the Darwinian frame: a system need not breed to be selected — it need only last longer. Candidate systems that stumble into stabilising feedback loops persist; those that don't collapse fast. Run geological time and the survivors are, trivially, the ones whose feedback held — the song, not the singer.",
+      "feedbackStrength": "Feedback strength",
+      "geologicalTime": "geological time",
+      "gyr": "Gyr",
+      "persisted": "Persisted",
+      "surviving": "Surviving",
+      "strongLoops": "strong loops",
+      "weakLoops": "weak loops",
+      "someLoops": "some loops"
+    },
+    "evolutionary-stasis": {
+      "title": "Evolutionary Stasis",
+      "category": "Evolution",
+      "info": "The species that time forgot. Most lineages on a restless world are forced to keep changing; a few sit almost unchanged for aeons. Scrub the deep-time ticker and this creature barely shifts while ghost-layers of epochs sweep past. In canon the Na'vi appeared ~12 Myr ago and have scarcely changed since — a stillness Eywa is said to actively hold, with no Earthly precedent.",
+      "changeLabel": "Change",
+      "deepTime": "Deep time",
+      "morphChange": "Morphological change",
+      "myr": "Myr",
+      "over": "over",
+      "slowDrift": "slow drift",
+      "weakSelection": "weak selection — stasis holds"
+    },
+    "extremophile": {
+      "title": "Extremophile",
+      "category": "Biology",
+      "info": "Life at the edge of the possible. An extremophile — nearly always a microbe — thrives where most life dies: boiling water, deep cold, savage acid, brine, metal-soaked mud. It charts the outer bound of habitability, the first place astrobiologists look. Push the dials past Earth-normal and the ordinary microbe fades while the extremophile lights up: its comfort zone begins where the mundane one ends.",
+      "earthNormal": "Earth-normal — ordinary life thrives",
+      "extremophileLabel": "extremophile",
+      "extremophileThrives": "Beyond Earth-normal — the extremophile thrives",
+      "ordinaryMicrobe": "ordinary microbe",
+      "temperature": "temp",
+      "ph": "pH",
+      "salinity": "salt",
+      "radiation": "radiation"
+    },
+    "frozen-accident": {
+      "title": "Frozen Accident",
+      "category": "Evolution",
+      "info": "A choice chemistry never forced, frozen because everything came to depend on it. The genetic code maps each codon to an amino acid — one of many workable assignments, picked early by chance and then locked, because reassigning a codon now would corrupt every protein that used it. Try to reassign one and watch the damage ripple through the proteome. Its opposite is a universal optimum, a feature chemistry forces.",
+      "broken": "broken",
+      "codeLockedIn": "The code is locked in — reassignment is catastrophic",
+      "intact": "intact",
+      "lockInLesson": "everything downstream depended on the old meaning",
+      "proteinsCorrupted": "{n} proteins corrupted at once",
+      "proteome": "Proteome",
+      "reassign": "reassign",
+      "tapToReassign": "tap a codon to try reassigning it"
+    },
+    "genetic-toolkit": {
+      "title": "Genetic Toolkit",
+      "category": "Evolution",
+      "info": "One toolbox, endless forms. Nearly every animal shares the same ancient developmental regulators — the same eye-builder, the same limb-initiator, the same Hox address-makers. The diversity of animal bodies comes not from new tools but from using the shared kit differently. Line an Earth arthropod against a Pandoran hexapod: the conserved toolkit genes glow the same cyan, the species-specific extras stand apart.",
+      "conservedAcross": "conserved across both lineages",
+      "earthArthropod": "Earth arthropod",
+      "pandoraHexapod": "Pandoran hexapod",
+      "sharedLabel": "Shared",
+      "sharedTools": "shared tools",
+      "tapTool": "tap a tool to trace it in both",
+      "pax6": "Pax6",
+      "distalless": "Dll",
+      "hox": "Hox",
+      "tinman": "tinman",
+      "wnt": "Wnt",
+      "chitinSynth": "chitin",
+      "carbonFibre": "C-fibre"
+    },
+    "homeobox": {
+      "title": "Homeobox",
+      "category": "Evolution",
+      "info": "The 180-letter grip found almost unchanged inside Hox genes and countless developmental regulators. It encodes the part of the protein that clasps DNA and throws other genes on or off like a master switch. Finding this same short sequence in a fly, a mouse and a human — split by 600 million years — is the discovery that opened evo-devo. Switch organisms and the motif stays identical while all else differs.",
+      "conservedLabel": "Conserved",
+      "homeodomain": "homeodomain",
+      "inOrganism": "In the {org} — the homeobox is the same",
+      "motifIdentical": "the motif is identical",
+      "mya": "Mya",
+      "organism": "organism",
+      "splitLabel": "Split",
+      "fly": "fly",
+      "mouse": "mouse",
+      "human": "human"
+    },
+    "homeosis": {
+      "title": "Homeosis",
+      "category": "Evolution",
+      "info": "Bodies are addressed, not hand-assembled. Homeosis is one part built in the likeness of another that belongs elsewhere — the classic Antennapedia fly, a leg growing where an antenna should be. It happens when the positional label a Hox gene stamps is misplaced, so the cells build a different address's structure. Flip the switch and watch the antenna morph limb-by-limb into a leg.",
+      "antenna": "antenna",
+      "antennapedia": "Antennapedia — a leg in the antenna's place",
+      "appendage": "Appendage",
+      "induceHomeosis": "induce homeosis",
+      "leg": "leg",
+      "revertNormal": "revert to normal",
+      "wildType": "Wild type — antenna where it belongs"
+    },
+    "homoplasy": {
+      "title": "Homoplasy",
+      "category": "Evolution",
+      "info": "The counterfeit signature. Homoplasy is similarity not inherited from a common ancestor — a coincidence arrived at twice, not a trait passed down. It is the great enemy of tree-building because it looks exactly like real kinship, creeping in through convergence, parallelism, or reversal. Highlight the trait and watch it flare on two far-apart tips with no shared branch: telling this from true homology is the whole art of cladistics.",
+      "hideTrait": "hide trait",
+      "highlightHint": "highlight the trait to see its origins",
+      "highlightTrait": "highlight trait",
+      "looksShared": "looks shared — but isn't",
+      "origins": "Origins",
+      "twoIndependentGains": "Two independent gains — not shared ancestry",
+      "t1": "A",
+      "t2": "B",
+      "t3": "C",
+      "t4": "D",
+      "t5": "E"
+    },
+    "hox-genes": {
+      "title": "Hox Genes",
+      "category": "Evolution",
+      "info": "The genes that hand out addresses. Hox genes build nothing themselves — they label position along the head-to-tail axis, telling each region whether it is head, mid-body or tail. The uncanny part is collinearity: they sit in a row on the chromosome in the very same order as the body regions they govern, conserved from fly to mouse to human. Click a gene and its matching band lights up.",
+      "chromosome": "chromosome",
+      "clickGene": "click a gene to light its body region",
+      "collinear": "collinear — gene order matches body order",
+      "embryoAxis": "embryo",
+      "geneLabel": "Genes",
+      "head": "head",
+      "tail": "tail",
+      "lab": "lab",
+      "pb": "pb",
+      "dfd": "Dfd",
+      "scr": "Scr",
+      "antp": "Antp",
+      "ubx": "Ubx",
+      "abda": "abd-A",
+      "abdb": "Abd-B"
+    },
+    "pleiotropy": {
+      "title": "Pleiotropy",
+      "category": "Evolution",
+      "info": "One gene, many unrelated jobs. Sonic hedgehog grows limbs — but also patterns the brain, the spinal cord and the teeth. That many-rolled nature is exactly why mutating a master gene's coding sequence is dangerous: fix one thing and you break several at once. Toggle the gene and every trait it touches dims together — which is why evolution usually edits a regulatory switch instead.",
+      "allDimmed": "All traits dim at once — the danger of pleiotropy",
+      "geneShort": "SHH",
+      "knockOut": "knock out gene",
+      "oneGene": "one gene",
+      "restoreGene": "restore gene",
+      "traitsExpressed": "traits expressed",
+      "traitsHit": "Traits hit",
+      "brain": "brain",
+      "limbs": "limbs",
+      "spine": "spine",
+      "teeth": "teeth",
+      "eyes": "eyes"
+    },
+    "reticulate-evolution": {
+      "title": "Reticulate Evolution",
+      "category": "Evolution",
+      "info": "Evolution as a net, not just a tree. Sometimes lineages that split rejoin — through horizontal gene transfer, hybridization, endosymbiosis — stitching the branches into a web (Latin reticulum, little net). The tidy tree is then a simplification of something genuinely reticulate. Click a bridge to reveal the gene that jumped across it. Reticulation complicates the tree; it does not abolish it.",
+      "bridges": "Bridges",
+      "clickBridge": "click a bridge to reveal the transferred gene",
+      "transferred": "{gene} jumped across lineages",
+      "treePlusWeb": "a tree stitched into a web",
+      "hgt": "horizontal transfer",
+      "hybrid": "hybridization",
+      "endo": "endosymbiosis",
+      "geneA": "gene A",
+      "geneB": "gene B",
+      "geneC": "gene C"
+    },
+    "serial-homology": {
+      "title": "Serial Homology",
+      "category": "Evolution",
+      "info": "Repeated parts, one origin, tailored by address. Serial homology is the kinship between segments repeated along a body that share a common developmental unit but are modified to do different jobs by position — vertebrae, a shrimp's appendages, a dragonfly's flight segments. Click any of the hexapod's six limbs and it lights on the shared limb-field map: all six are the same module, re-shaped by Hox address.",
+      "clickLimb": "click a limb to trace its shared origin",
+      "limbField": "limb field",
+      "limbs": "Limbs",
+      "sameModule": "same module, tuned to {role}",
+      "grasp": "grasp",
+      "walk": "walk",
+      "push": "push"
+    },
+    "shadow-biosphere": {
+      "title": "Shadow Biosphere",
+      "category": "Astrobiology",
+      "info": "A second life we might be blind to. A shadow biosphere is a hypothetical, independent microbial life on a different biochemistry — a different genetic backbone, a mirror-image hand, another solvent — coexisting with us yet undetected, because our instruments are all tuned to standard life. Feed the dish standard nutrients and only the cyan colony blooms; feed it shadow-compatible ones and the magenta does. Neither can cross-feed the other.",
+      "neutral": "neutral",
+      "noCrossFeed": "neither can cross-feed the other",
+      "nutrientType": "Nutrient type",
+      "shadow": "shadow",
+      "shadowBlooms": "Shadow life blooms — invisible to standard tools",
+      "shadowFood": "shadow food",
+      "standard": "standard",
+      "standardBlooms": "Standard life blooms",
+      "standardFood": "standard food"
+    },
+    "xeno-nucleic-acid": {
+      "title": "Xeno Nucleic Acid",
+      "category": "Astrobiology",
+      "info": "Our twisted ladder is not the only workable one. An XNA carries genetic information like DNA or RNA but on a different backbone — swap the sugar or the spine for a component Earth life never used, and information can still be stored and copied. Switch backbones and watch the two rails change chemistry while the rungs — the base-pairing logic — stay intact. A microbe built on XNA would be invisible to tools that only read the familiar spine.",
+      "backbone": "Backbone",
+      "backboneShort": "backbone",
+      "pairingHolds": "base-pairing logic holds",
+      "rails": "Rails",
+      "rungs": "Rungs",
+      "aTgC": "A·T G·C",
+      "dna": "DNA",
+      "tna": "TNA",
+      "pna": "PNA",
+      "hna": "HNA",
+      "deoxyribose": "deoxyribose",
+      "threose": "threose",
+      "peptide": "peptide",
+      "hexitol": "hexitol"
+    },
+    "chirality": {
+      "title": "Chirality",
+      "category": "Chemistry",
+      "info": "Handedness at the molecular scale. A chiral molecule comes in two mirror-image forms that can never be superimposed — same atoms, same bonds, opposite three-dimensional arrangement, exactly like a left and a right hand. Rotate the right-hand copy however you like and it never overlays the left. Because an enzyme recognizes shape, its pocket grips only one hand; the mirror form is usually biologically useless. From the Greek cheir, hand.",
+      "enzyme": "Enzyme",
+      "enzymePocket": "left-only pocket",
+      "fits": "fits",
+      "leftHand": "left hand",
+      "neverAligns": "no rotation ever aligns them",
+      "overlap": "Overlap",
+      "overlapLabel": "Overlap",
+      "rejected": "rejected",
+      "rightHand": "right hand (mirror)",
+      "rotateAttempt": "Rotate attempt"
+    },
+    "homochirality": {
+      "title": "Homochirality",
+      "category": "Chemistry",
+      "info": "One hand, or nothing works. A biosphere uses just one mirror-form of its chiral molecules — Earth life runs on almost entirely left-handed amino acids and right-handed sugars. No chemical law forced that, but once made, everything depends on it. Homochirality is what lets a protein fold: feed a chain of all-left residues and it settles into a clean working shape; mix in right-handed ones and the fold tangles into a useless knot.",
+      "failed": "failed",
+      "fold": "Fold",
+      "foldsCleanly": "Homochiral — folds into a working shape",
+      "handedness": "L / R purity",
+      "homochiral": "homochiral",
+      "misfolds": "Mixed hands — the fold tangles and fails",
+      "mixed": "mixed",
+      "native": "native",
+      "purityLabel": "Purity",
+      "tangled": "tangled knot",
+      "workingShape": "working shape"
     }
   }
 }

@@ -1,0 +1,43 @@
+## Nơi điện trở trút hơi thở cuối cùng
+
+Vào năm 1911, nhà vật lý người Hà Lan Heike Kamerlingh Onnes đã nắm giữ một thứ quyền năng mà hầu như chưa một ai khác trên Trái Đất có được: khả năng tạo ra cái lạnh tột độ. Ông đã tìm ra cách hóa lỏng heli, thứ khí sôi ở khoảng bốn độ trên độ không tuyệt đối, và ông đang sử dụng nó để đặt ra một câu hỏi đơn giản — điều gì sẽ xảy ra với điện trở của một kim loại khi bạn đóng băng nó xuống sát đáy của thang đo?
+
+Câu trả lời được kỳ vọng là *nó sẽ giảm dần một cách mượt mà*. Các electron mang dòng điện chảy qua kim loại bằng cách len lỏi giữa một mạng tinh thể các nguyên tử, và chúng liên tục va đập vào những dao động nhiệt của mạng lưới ấy, mất đi năng lượng dưới dạng nhiệt. Sự va đập đó *chính là* điện trở. Làm lạnh kim loại, xoa dịu các dao động, và điện trở lẽ ra phải giảm dần về một con số nhỏ nhoi nào đó còn sót lại.
+
+Thủy ngân đã từ khước kịch bản đó. Khi Onnes làm lạnh nó qua ngưỡng bốn kelvin, điện trở không hề từ tốn tiến về một giá trị thấp. Nó lao xuống bờ vực — rơi thẳng đứng về *không*, một sự sụt giảm đột biến và triệt để đến mức vượt quá khả năng đo lường của thiết bị.
+
+<Chart 
+  title="Khám phá của Onnes (1911)"
+  xAxisLabel="Nhiệt độ (Kelvin)"
+  yAxisLabel="Điện trở (Ohms)"
+  data={[
+    { x: 4.5, y: 0.15, series: "Dự kiến", color: "red" },
+    { x: 4.4, y: 0.12, series: "Dự kiến", color: "red" },
+    { x: 4.3, y: 0.08, series: "Dự kiến", color: "red" },
+    { x: 4.2, y: 0.05, series: "Dự kiến", color: "red" },
+    { x: 4.1, y: 0.03, series: "Dự kiến", color: "red" },
+    { x: 4.0, y: 0.02, series: "Dự kiến", color: "red" },
+    { x: 4.5, y: 0.15, series: "Thủy ngân thực tế", color: "blue" },
+    { x: 4.4, y: 0.12, series: "Thủy ngân thực tế", color: "blue" },
+    { x: 4.3, y: 0.08, series: "Thủy ngân thực tế", color: "blue" },
+    { x: 4.2, y: 0.05, series: "Thủy ngân thực tế", color: "blue" },
+    { x: 4.15, y: 0.0, series: "Thủy ngân thực tế", color: "blue" },
+    { x: 4.0, y: 0.0, series: "Thủy ngân thực tế", color: "blue" }
+  ]}
+  caption="Sự sụt giảm đến kinh ngạc của điện trở thủy ngân ở mức 4.15K. Thay vì giảm dần, điện trở lao thẳng xuống vực sâu để kết thúc ở con số 0 tuyệt đối."
+/>
+
+Không phải là gần bằng không. Là số không tuyệt đối. Một dòng điện được khởi chạy trong một vòng mạch làm từ vật liệu như vậy sẽ chạy mãi mãi, theo như mọi thứ chúng ta có thể đo lường, mà không cần pin, không cần điện áp và không hề suy hao năng lượng. Onnes đã khám phá ra <GlossaryTerm slug="superconductivity">hiện tượng siêu dẫn</GlossaryTerm>, và cái ngưỡng nhiệt độ mà tại đó vật liệu lao xuống bờ vực đó chính là <GlossaryTerm slug="critical-temperature">nhiệt độ tới hạn</GlossaryTerm> của nó, ký hiệu là T꜀.
+
+<SuperconductorCooldown 
+  caption="Hãy tự mình thực hiện lại thí nghiệm của Onnes. Kéo thanh trượt để làm mát vật liệu, và quan sát xem nó phản ứng thế nào khi chạm đến nhiệt độ tới hạn (critical temperature). (Hình ảnh hiển thị quá trình này ở mức nhiệt độ cực lạnh trong phòng thí nghiệm; chiêu bài của unobtanium là đã kéo cái bờ vực này lên tận mức nhiệt độ phòng.)" 
+  labels={{
+    instruction: "Kéo để làm mát",
+    temperature: "Nhiệt độ",
+    resistance: "Điện trở",
+    statusNormal: "Kim loại thông thường",
+    statusSuper: "Trạng thái siêu dẫn"
+  }}
+/>
+
+Phải mất thêm bốn mươi sáu năm ròng rã người ta mới có thể giải thích được *tại sao*.

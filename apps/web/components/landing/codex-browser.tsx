@@ -39,6 +39,8 @@ export function CodexBrowser({ heading, kicker, comingLabel, parts }: CodexBrows
         <img
           src="/images/pages/codex-field.png"
           alt=""
+          loading="lazy"
+          decoding="async"
           className="size-full object-cover opacity-25"
         />
         <div

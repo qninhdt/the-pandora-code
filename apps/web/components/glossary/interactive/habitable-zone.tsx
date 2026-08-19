@@ -1,233 +1,118 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
+import { ControlSlider } from "./shared/control-slider";
 import { GlossaryFrame } from "./shared/frame";
+import { Readout } from "./shared/readout";
+
+// Inner/outer habitable-zone radii scale with the square root of luminosity,
+// and luminosity scales steeply with stellar mass (~M^3.5). We fold that into a
+// single normalized factor so the band visibly marches outward with mass.
+function zoneBounds(mass: number) {
+  const lum = Math.pow(mass, 3.5);
+  const inner = 0.95 * Math.sqrt(lum);
+  const outer = 1.67 * Math.sqrt(lum);
+  return { inner, outer };
+}
+
+// Pandora's fixed orbital distance (AU-ish, in canon it orbits Polyphemus but we
+// abstract to a star-distance for the Goldilocks demo).
+const PANDORA_AU = 1.2;
 
 export default function HabitableZone() {
-  const t = useTranslations("viz.habitableZone");
-  const [temp, setTemp] = useState(5800); // Kelvin
-  const [isPlaying, setIsPlaying] = useState(true);
-  const [time, setTime] = useState(0);
+  const t = useTranslations("viz.habitable-zone");
+  const [mass, setMass] = useState(1);
 
-  useEffect(() => {
-    if (!isPlaying) return;
-    let animationId: number;
-    const tick = () => {
-      setTime((prev) => prev + 0.04);
-      animationId = requestAnimationFrame(tick);
-    };
-    animationId = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(animationId);
-  }, [isPlaying]);
+  const { inner, outer } = zoneBounds(mass);
+  const inHab = PANDORA_AU >= inner && PANDORA_AU <= outer;
 
-  // Star luminosity relative to the Sun (L ~ T^4 for main sequence approx)
-  const l = (temp / 5800) ** 4;
+  // Map AU to px radius for the SVG (centre star at 50,50).
+  const scale = 26; // px per AU baseline
+  const toR = (au: number) => au * scale;
+  const innerR = toR(inner);
+  const outerR = toR(outer);
+  const pandoraR = toR(PANDORA_AU);
 
-  // Visually scaled radii for orbits
-  const center = { x: 200, y: 140 };
-  const planetOrbitRadius = 80;
-
-  // Midpoint of habitable zone scaled to look good on screen
-  // Damping the massive range of T^4 using a smaller power for visualization
-  const hzPosition = planetOrbitRadius * (temp / 5800) ** 1.2;
-  const hzWidth = 32 * (temp / 5800) ** 1.2;
-
-  const innerBound = hzPosition - hzWidth / 2;
-  const outerBound = hzPosition + hzWidth / 2;
-
-  // Determine planet status
-  let statusKey: "scorched" | "temperate" | "frozen" = "temperate";
-  let statusText = t("temperate");
-  let statusClass = "text-teal";
-  let planetColor = "#36c5d9"; // Pandora Cyan
-  let planetGlow = "shadow-[0_0_10px_#36c5d9]";
-
-  if (planetOrbitRadius < innerBound) {
-    statusKey = "scorched";
-    statusText = t("scorched");
-    statusClass = "text-magenta";
-    planetColor = "#ff5da8"; // Biolum Magenta
-    planetGlow = "shadow-[0_0_10px_#ff5da8]";
-  } else if (planetOrbitRadius > outerBound) {
-    statusKey = "frozen";
-    statusText = t("frozen");
-    statusClass = "text-muted";
-    planetColor = "#8a93a8"; // Stone/Ice
-    planetGlow = "shadow-[0_0_10px_#8a93a8]";
-  }
-
-  // Interpolate star color and glow based on temperature
-  let starColor = "#fff4e8";
-  let starGlowColor = "rgba(255, 180, 84, 0.4)"; // Ember Amber
-  if (temp < 4500) {
-    // Red Dwarf
-    starColor = "#ff7c3b";
-    starGlowColor = "rgba(255, 93, 168, 0.5)"; // Magenta glow
-  } else if (temp < 7000) {
-    // G-type yellow-white
-    starColor = "#ffeaad";
-    starGlowColor = "rgba(255, 180, 84, 0.4)"; // Amber glow
-  } else {
-    // Blue Giant
-    starColor = "#a6e3e9";
-    starGlowColor = "rgba(54, 197, 217, 0.6)"; // Cyan glow
-  }
-
-  // Planet coordinates
-  const pX = center.x + Math.cos(time) * planetOrbitRadius;
-  const pY = center.y + Math.sin(time) * planetOrbitRadius;
+  const starColor = mass > 1.2 ? "#bcd4ff" : mass < 0.8 ? "#ff9a52" : "#fff2cc";
 
   return (
     <GlossaryFrame
       title={t("title")}
-      infoText={t("hint")}
-      onReset={() => {
-        setTemp(5800);
-        setTime(0);
-        setIsPlaying(true);
-      }}
-      onPlayPause={() => setIsPlaying(!isPlaying)}
-      isPlaying={isPlaying}
-      aspectRatio="aspect-[16/10]"
+      category={t("category")}
+      infoText={t("info")}
+      aspectRatio="square"
+      caption={
+        <span className={inHab ? "text-teal" : "text-amber"}>
+          {inHab ? t("inZone") : t("outZone")}
+        </span>
+      }
     >
-      <div className="relative w-full h-full flex flex-col justify-end p-4">
-        {/* Simulation Canvas */}
-        <div className="absolute inset-0 flex items-center justify-center p-6 pb-20">
-          <svg viewBox="0 0 400 280" className="w-full h-full max-h-[85%] select-none">
-            <title>Habitable Zone Simulator</title>
-            <defs>
-              {/* Star Glow */}
-              <radialGradient id="starGlow" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stopColor={starColor} stopOpacity="1" />
-                <stop offset="30%" stopColor={starColor} stopOpacity="0.8" />
-                <stop offset="70%" stopColor={starColor} stopOpacity="0.2" />
-                <stop offset="100%" stopColor={starColor} stopOpacity="0" />
-              </radialGradient>
+      <div className="relative flex h-full w-full flex-col">
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full flex-1"
+          style={{ background: "radial-gradient(circle at 50% 50%, #0a0f1e, #05060d)" }}
+          role="img"
+          aria-label={t("zone")}
+        >
+          <defs>
+            <radialGradient id="hz-hot">
+              <stop offset="0%" stopColor="#ff7a2e" stopOpacity="0.5" />
+              <stop offset="100%" stopColor="#ff7a2e" stopOpacity="0" />
+            </radialGradient>
+            <radialGradient id="hz-star">
+              <stop offset="0%" stopColor="#ffffff" />
+              <stop offset="60%" stopColor={starColor} />
+              <stop offset="100%" stopColor={starColor} stopOpacity="0" />
+            </radialGradient>
+          </defs>
 
-              {/* Habitable Zone Gradient */}
-              <radialGradient id="hzGradient" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stopColor="rgba(43, 212, 168, 0)" />
-                <stop offset="60%" stopColor="rgba(43, 212, 168, 0.18)" />
-                <stop offset="85%" stopColor="rgba(43, 212, 168, 0.25)" />
-                <stop offset="100%" stopColor="rgba(43, 212, 168, 0)" />
-              </radialGradient>
-            </defs>
+          {/* too-hot inner wash */}
+          <circle cx={50} cy={50} r={innerR} fill="url(#hz-hot)" />
+          {/* habitable green band */}
+          <circle
+            cx={50}
+            cy={50}
+            r={(innerR + outerR) / 2}
+            fill="none"
+            stroke="#2bd4a8"
+            strokeOpacity={0.5}
+            strokeWidth={outerR - innerR}
+          />
+          {/* zone edges */}
+          <circle cx={50} cy={50} r={innerR} fill="none" stroke="#2bd4a8" strokeOpacity={0.5} strokeWidth={0.4} />
+          <circle cx={50} cy={50} r={outerR} fill="none" stroke="#36c5d9" strokeOpacity={0.4} strokeWidth={0.4} />
 
-            {/* Orbit paths */}
-            <circle
-              cx={center.x}
-              cy={center.y}
-              r={planetOrbitRadius}
-              className="fill-none stroke-border/20 stroke-dasharray-[3,3]"
-            />
+          {/* Pandora orbit + dot */}
+          <circle cx={50} cy={50} r={pandoraR} fill="none" stroke="#9fb4d8" strokeOpacity={0.25} strokeDasharray="1 2" strokeWidth={0.3} />
+          <circle
+            cx={50 + pandoraR}
+            cy={50}
+            r={2.4}
+            fill={inHab ? "#2bd4a8" : "#8a93a8"}
+            stroke="#e8ecf5"
+            strokeWidth={0.3}
+          />
 
-            {/* Shaded Habitable Zone Ring */}
-            {outerBound > innerBound && (
-              <path
-                d={`
-                  M ${center.x} ${center.y - outerBound}
-                  A ${outerBound} ${outerBound} 0 1 0 ${center.x} ${center.y + outerBound}
-                  A ${outerBound} ${outerBound} 0 1 0 ${center.x} ${center.y - outerBound}
-                  Z
-                  M ${center.x} ${center.y - innerBound}
-                  A ${innerBound} ${innerBound} 0 1 1 ${center.x} ${center.y + innerBound}
-                  A ${innerBound} ${innerBound} 0 1 1 ${center.x} ${center.y - innerBound}
-                  Z
-                `}
-                fill="url(#hzGradient)"
-                fillRule="evenodd"
-                className="transition-all duration-300"
-              />
-            )}
+          {/* central star */}
+          <circle cx={50} cy={50} r={9} fill="url(#hz-star)" />
+          <circle cx={50} cy={50} r={3.4} fill={starColor} />
+        </svg>
 
-            {/* Habitable zone borders (labels/helpers) */}
-            <circle
-              cx={center.x}
-              cy={center.y}
-              r={innerBound}
-              className="fill-none stroke-teal/10 stroke-1 transition-all duration-300"
-            />
-            <circle
-              cx={center.x}
-              cy={center.y}
-              r={outerBound}
-              className="fill-none stroke-teal/10 stroke-1 transition-all duration-300"
-            />
-
-            {/* Central Star */}
-            <circle
-              cx={center.x}
-              cy={center.y}
-              r={25 + temp / 3000}
-              fill="url(#starGlow)"
-              className="transition-all duration-300"
-            />
-            <circle
-              cx={center.x}
-              cy={center.y}
-              r={8 + temp / 2000}
-              fill={starColor}
-              className="transition-all duration-300"
-              style={{ filter: `drop-shadow(0 0 12px ${starGlowColor})` }}
-            />
-
-            {/* Planet */}
-            <g>
-              {/* Planet shadow or atmosphere glow */}
-              <circle
-                cx={pX}
-                cy={pY}
-                r={6}
-                fill={planetColor}
-                opacity="0.4"
-                className="animate-pulse"
-              />
-              <circle
-                cx={pX}
-                cy={pY}
-                r={4}
-                fill={planetColor}
-                className="transition-colors duration-300"
-              />
-            </g>
-          </svg>
-        </div>
-
-        {/* HUD Overlay for active planet details */}
-        <div className="absolute top-16 left-4 bg-void/90 border border-border/40 rounded-xl p-3 min-w-[150px] z-10 shadow-lg">
-          <h5 className="text-[10px] font-mono font-bold text-muted uppercase mb-1">
-            {t("status")}
-          </h5>
-          <div className="text-xs font-mono font-semibold tracking-wide">
-            <span className={statusClass}>{statusText}</span>
-          </div>
-          <div className="text-[10px] text-muted mt-1 font-mono">
-            {t("luminosity")}: <span className="text-foreground">{l.toFixed(2)}x</span>
-          </div>
-          <div className="text-[10px] text-muted mt-0.5 font-mono">
-            Temp: <span className="text-foreground">{temp} K</span>
-          </div>
-        </div>
-
-        {/* Bottom controls panel */}
-        <div className="relative z-10 w-full flex items-center justify-between gap-4 mt-auto bg-void/65 backdrop-blur-md px-4 py-2 border border-border/30 rounded-xl">
-          {/* Temperature slider */}
-          <div className="flex items-center gap-2 flex-1">
-            <span className="text-[10px] font-mono text-muted uppercase whitespace-nowrap">
-              {t("star")} Temp
-            </span>
-            <input
-              type="range"
-              min="3000"
-              max="10000"
-              step="100"
-              value={temp}
-              onChange={(e) => setTemp(Number.parseInt(e.target.value))}
-              className="w-full h-1 rounded-lg bg-surface border border-border/20 appearance-none cursor-pointer accent-cyan"
-            />
-            <span className="text-[10px] font-mono text-foreground w-14 text-right">{temp} K</span>
-          </div>
+        <div className="flex items-center gap-3 px-4 pb-3 pt-1">
+          <ControlSlider
+            className="flex-1"
+            label={t("mass")}
+            value={mass}
+            min={0.5}
+            max={1.8}
+            step={0.01}
+            thumb="cyan"
+            display={`${mass.toFixed(2)} M☉`}
+            onChange={setMass}
+          />
+          <Readout label="HZ" value={`${inner.toFixed(2)}–${outer.toFixed(2)}`} unit="AU" accent="teal" />
         </div>
       </div>
     </GlossaryFrame>

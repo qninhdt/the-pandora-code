@@ -26,6 +26,8 @@ export function DescentSection({ kicker, heading, body, note }: DescentSectionPr
           src={DESCENT_BG}
           alt=""
           aria-hidden
+          loading="lazy"
+          decoding="async"
           className="size-full scale-[1.3] object-cover opacity-40"
         />
       </Parallax>

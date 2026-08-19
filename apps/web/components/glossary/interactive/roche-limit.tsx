@@ -1,248 +1,166 @@
 "use client";
 
+import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
-import React, { useState, useEffect } from "react";
 import { GlossaryFrame } from "./shared/frame";
+import { ControlSlider } from "./shared/control-slider";
+import { Readout } from "./shared/readout";
 
-interface Particle {
-  id: number;
-  radius: number;
-  speed: number;
-  angle: number;
-  color: string;
-  size: number;
-}
+// Roche limit: drag the moon's approach distance inward. Beyond the limit the
+// planet's tidal gradient overpowers the moon's self-gravity and it shears into
+// a debris ring. Distance is normalized; the limit sits at 0.4.
+const LIMIT = 0.4;
 
 export default function RocheLimit() {
-  const t = useTranslations("viz.rocheLimit");
-  const [radius, setRadius] = useState(2.2); // Relative units (0.6 .. 3.0)
-  const [isPlaying, setIsPlaying] = useState(true);
-  const [time, setTime] = useState(0);
-  const [particles, setParticles] = useState<Particle[]>([]);
+  const t = useTranslations("viz.roche-limit");
+  const [distance, setDistance] = useState(0.78);
 
-  // Initialize ring particles once
-  useEffect(() => {
-    const p: Particle[] = [];
-    const colors = ["#36c5d9", "#2bd4a8", "#ff5da8", "#ffb454", "#8a93a8"];
-    for (let i = 0; i < 50; i++) {
-      p.push({
-        id: i,
-        // Particle radii distributed between 50 and 85 pixels
-        radius: 45 + Math.random() * 45,
-        speed: 0.04 + Math.random() * 0.04,
-        angle: Math.random() * 2 * Math.PI,
-        color: colors[Math.floor(Math.random() * colors.length)],
-        size: 1 + Math.random() * 2,
-      });
-    }
-    setParticles(p);
-  }, []);
+  // 0 = intact, 1 = fully disrupted. Ramps up once inside the limit.
+  const disruption = distance >= LIMIT ? 0 : Math.min(1, (LIMIT - distance) / LIMIT);
 
-  useEffect(() => {
-    if (!isPlaying) return;
-    let animationId: number;
-    const tick = () => {
-      setTime((prev) => prev + 0.03);
-      setParticles((prev) =>
-        prev.map((pt) => ({
-          ...pt,
-          angle: (pt.angle + pt.speed) % (2 * Math.PI),
-        })),
-      );
-      animationId = requestAnimationFrame(tick);
-    };
-    animationId = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(animationId);
-  }, [isPlaying]);
+  const planetX = 30;
+  const planetY = 50;
+  const moonX = planetX + 12 + distance * 52;
+  const moonY = 50;
 
-  const center = { x: 200, y: 135 };
-  const visualScale = 60; // Scale from relative unit to pixels
-  const visualRadius = radius * visualScale;
+  // Debris particles: spread along an arc as disruption increases.
+  const debris = useMemo(
+    () =>
+      Array.from({ length: 46 }, (_, i) => {
+        const seed = (i * 2654435761) % 1000 / 1000;
+        const seed2 = (i * 40503) % 997 / 997;
+        return { a: seed * Math.PI * 2, spread: 0.3 + seed2 * 0.7, size: 0.3 + seed2 * 0.7 };
+      }),
+    [],
+  );
 
-  // Roche limit is set to 1.35 relative units (~81 pixels)
-  const rocheLimitVal = 1.35;
-  const visualRocheLimit = rocheLimitVal * visualScale;
-
-  // States
-  const isShattered = radius <= 1.05;
-  const isDisintegrating = radius <= rocheLimitVal && !isShattered;
-
-  // Moon coords if not shattered
-  const mX = center.x + Math.cos(time) * visualRadius;
-  const mY = center.y + Math.sin(time) * visualRadius;
-
-  // Warp parameters (stretch moon as it gets close to limit)
-  let moonWidth = 7;
-  let moonHeight = 7;
-  let rotationDeg = 0;
-
-  if (isDisintegrating) {
-    const stretchFactor = 1 + (rocheLimitVal - radius) * 2;
-    moonWidth = 7 * stretchFactor;
-    moonHeight = Math.max(3, 7 / Math.sqrt(stretchFactor));
-    // Points toward the center giant
-    rotationDeg = (Math.atan2(mY - center.y, mX - center.x) * 180) / Math.PI;
-  }
+  const stateLabel =
+    disruption === 0 ? t("intact") : disruption < 0.6 ? t("shedding") : t("disrupted");
+  const accent = disruption === 0 ? "teal" : disruption < 0.6 ? "amber" : "magenta";
 
   return (
     <GlossaryFrame
       title={t("title")}
-      infoText={t("hint")}
-      onReset={() => {
-        setRadius(2.2);
-        setTime(0);
-        setIsPlaying(true);
-      }}
-      onPlayPause={() => setIsPlaying(!isPlaying)}
-      isPlaying={isPlaying}
-      aspectRatio="aspect-[16/10]"
+      category={t("category")}
+      infoText={t("info")}
+      onReset={() => setDistance(0.78)}
+      caption={
+        <span>
+          {t("distance")}: {(distance * 100).toFixed(0)}% · {stateLabel}
+        </span>
+      }
     >
-      <div className="relative w-full h-full flex flex-col justify-end p-4">
-        {/* Orbital View */}
-        <div className="absolute inset-0 flex items-center justify-center p-6 pb-20">
-          <svg viewBox="0 0 400 270" className="w-full h-full max-h-[85%] select-none">
-            <title>Roche Limit Breakup Simulator</title>
-            <defs>
-              {/* Giant Glow */}
-              <radialGradient id="giantGlow" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stopColor="#0e1320" />
-                <stop offset="70%" stopColor="#143b46" stopOpacity="0.4" />
-                <stop offset="100%" stopColor="#143b46" stopOpacity="0" />
-              </radialGradient>
-            </defs>
+      <div className="absolute inset-0">
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid slice"
+          role="img"
+          aria-label={t("title")}
+        >
+          <defs>
+            <radialGradient id="roche-planet" cx="45%" cy="40%" r="70%">
+              <stop offset="0%" stopColor="#46568a" />
+              <stop offset="55%" stopColor="#263054" />
+              <stop offset="100%" stopColor="#0a0e1c" />
+            </radialGradient>
+            <radialGradient id="roche-moon" cx="50%" cy="45%" r="60%">
+              <stop offset="0%" stopColor="#5a6e8a" />
+              <stop offset="100%" stopColor="#1a2438" />
+            </radialGradient>
+          </defs>
 
-            {/* Roche Limit circle */}
-            <circle
-              cx={center.x}
-              cy={center.y}
-              r={visualRocheLimit}
-              className="fill-none stroke-magenta/30 stroke-1 stroke-dasharray-[4,4]"
+          {STARS.map((s, i) => (
+            <circle key={i} cx={s.x} cy={s.y} r={s.r} fill="var(--foreground)" opacity={s.o} />
+          ))}
+
+          {/* Roche-limit ring marker */}
+          <circle
+            cx={planetX}
+            cy={planetY}
+            r={12 + LIMIT * 52}
+            fill="none"
+            stroke="var(--magenta)"
+            strokeWidth="0.3"
+            strokeDasharray="1 1.4"
+            opacity="0.55"
+          />
+          <text
+            x={planetX + 12 + LIMIT * 52}
+            y={planetY - 3}
+            fill="var(--magenta)"
+            fontSize="2.6"
+            fontFamily="monospace"
+            textAnchor="middle"
+            opacity="0.8"
+          >
+            {t("limit")}
+          </text>
+
+          {/* Gas giant */}
+          <circle cx={planetX} cy={planetY} r="14" fill="url(#roche-planet)" />
+          {[-6, -1, 4, 8].map((dy, i) => (
+            <ellipse
+              key={i}
+              cx={planetX}
+              cy={planetY + dy}
+              rx={Math.sqrt(Math.max(0, 196 - dy * dy))}
+              ry={1.3}
+              fill={i % 2 ? "#7a8ab0" : "#36406a"}
+              opacity="0.4"
             />
-            {/* Label for Roche Limit */}
-            <text
-              x={center.x + visualRocheLimit}
-              y={center.y + 12}
-              className="fill-magenta/60 text-[7px] font-mono"
-            >
-              LIMIT
-            </text>
+          ))}
 
-            {/* Orbit path for moon */}
-            {!isShattered && (
-              <circle
-                cx={center.x}
-                cy={center.y}
-                r={visualRadius}
-                className="fill-none stroke-border/20 stroke-1 transition-all duration-300"
-              />
-            )}
+          {/* Intact moon (fades as it disrupts) */}
+          <circle cx={moonX} cy={moonY} r={5.5} fill="url(#roche-moon)" opacity={1 - disruption} />
 
-            {/* Central Planet */}
-            <circle cx={center.x} cy={center.y} r={40} fill="url(#giantGlow)" />
-            <circle
-              cx={center.x}
-              cy={center.y}
-              r={26}
-              fill="#070912"
-              className="stroke-cyan/30 stroke-2"
-              style={{ filter: "drop-shadow(0 0 10px rgba(54, 197, 217, 0.25))" }}
-            />
-            <circle
-              cx={center.x}
-              cy={center.y}
-              r={22}
-              fill="none"
-              className="stroke-cyan/15 stroke-1"
-            />
-
-            {/* Moon / Particles */}
-            {isShattered ? (
-              // Shattered particles forming a ring
-              <g>
-                {particles.map((pt) => {
-                  const px = center.x + Math.cos(pt.angle) * pt.radius;
-                  const py = center.y + Math.sin(pt.angle) * pt.radius;
-                  return (
-                    <circle
-                      key={pt.id}
-                      cx={px}
-                      cy={py}
-                      r={pt.size}
-                      fill={pt.color}
-                      style={{ filter: `drop-shadow(0 0 2px ${pt.color})` }}
-                    />
-                  );
-                })}
-              </g>
-            ) : (
-              // Intact or warping moon
-              <g transform={`translate(${mX}, ${mY}) rotate(${rotationDeg})`}>
-                <ellipse
-                  cx={0}
-                  cy={0}
-                  rx={moonWidth + 3}
-                  ry={moonHeight + 3}
-                  fill={isDisintegrating ? "#ff5da8" : "#36c5d9"}
-                  opacity="0.25"
+          {/* Debris stream (grows with disruption) — sheared into an arc toward planet */}
+          {disruption > 0 &&
+            debris.map((d, i) => {
+              const t01 = (i / debris.length);
+              // particles trail from the moon toward and around the planet
+              const along = moonX - (moonX - planetX) * t01 * disruption;
+              const ang = d.a + t01 * 4;
+              const arc = d.spread * disruption * 10;
+              return (
+                <circle
+                  key={i}
+                  cx={along + Math.cos(ang) * arc}
+                  cy={moonY + Math.sin(ang) * arc * 0.7}
+                  r={d.size}
+                  fill={i % 3 === 0 ? "var(--amber)" : "var(--cyan)"}
+                  opacity={0.3 + disruption * 0.5}
                 />
-                <ellipse
-                  cx={0}
-                  cy={0}
-                  rx={moonWidth}
-                  ry={moonHeight}
-                  fill={isDisintegrating ? "#ff5da8" : "#36c5d9"}
-                  className="stroke-void stroke-0.5"
-                  style={{
-                    filter: `drop-shadow(0 0 6px ${isDisintegrating ? "#ff5da8" : "#36c5d9"})`,
-                  }}
-                />
-              </g>
-            )}
-          </svg>
+              );
+            })}
+        </svg>
+
+        <div className="absolute right-3 top-16">
+          <Readout label="state" value={stateLabel} accent={accent} />
         </div>
 
-        {/* HUD Indicator */}
-        <div className="absolute top-16 left-4 bg-void/90 border border-border/40 rounded-xl p-3 min-w-[155px] z-10 shadow-lg">
-          <h5 className="text-[10px] font-mono font-bold text-muted uppercase mb-1">STATUS</h5>
-          <div className="text-xs font-mono font-semibold tracking-wide">
-            {isShattered ? (
-              <span className="text-magenta">{t("ring")}</span>
-            ) : isDisintegrating ? (
-              <span className="text-amber">{t("disintegrating")}</span>
-            ) : (
-              <span className="text-teal">{t("stable")}</span>
-            )}
-          </div>
-          <div className="text-[9px] text-muted mt-1 font-mono">
-            {t("radius")}: <span className="text-foreground">{radius.toFixed(2)} R</span>
-          </div>
-          <div className="text-[9px] text-muted mt-0.5 font-mono">
-            {t("limit")}: <span className="text-foreground">{rocheLimitVal.toFixed(2)} R</span>
-          </div>
-        </div>
-
-        {/* Bottom controls panel */}
-        <div className="relative z-10 w-full flex items-center justify-between gap-4 mt-auto bg-void/65 backdrop-blur-md px-4 py-2 border border-border/30 rounded-xl">
-          {/* Radius slider */}
-          <div className="flex items-center gap-2 flex-1">
-            <span className="text-[10px] font-mono text-muted uppercase whitespace-nowrap">
-              {t("radius")}
-            </span>
-            <input
-              type="range"
-              min="0.7"
-              max="3.0"
-              step="0.05"
-              value={radius}
-              onChange={(e) => setRadius(Number.parseFloat(e.target.value))}
-              className="w-full h-1 rounded-lg bg-surface border border-border/20 appearance-none cursor-pointer accent-cyan"
-            />
-            <span className="text-[10px] font-mono text-foreground w-10 text-right">
-              {radius.toFixed(2)}
-            </span>
-          </div>
+        <div className="absolute inset-x-3 bottom-12">
+          <ControlSlider
+            label={t("distance")}
+            value={distance}
+            min={0.1}
+            max={1}
+            step={0.01}
+            onChange={setDistance}
+            display={`${(distance * 100).toFixed(0)}%`}
+            thumb={accent === "magenta" ? "magenta" : accent === "amber" ? "amber" : "teal"}
+          />
         </div>
       </div>
     </GlossaryFrame>
   );
 }
+
+const STARS = [
+  { x: 70, y: 16, r: 0.4, o: 0.7 },
+  { x: 88, y: 60, r: 0.3, o: 0.5 },
+  { x: 56, y: 84, r: 0.4, o: 0.6 },
+  { x: 82, y: 30, r: 0.3, o: 0.5 },
+  { x: 64, y: 44, r: 0.3, o: 0.4 },
+  { x: 94, y: 78, r: 0.35, o: 0.6 },
+];

@@ -1,0 +1,205 @@
+{
+  "viz": {
+    "articulation-point": {
+      "title": "Điểm khớp",
+      "category": "Mạng lưới",
+      "info": "Đỉnh cắt. Di chuột lên nút — cầu nối sáng magenta. Gỡ một nút và đồ thị vỡ thành các mảnh rời.",
+      "remove": "Gỡ",
+      "split": "Tách",
+      "intact": "Nguyên vẹn",
+      "components": "Thành phần"
+    },
+    "cascading-failure": {
+      "title": "Sụp đổ dây chuyền",
+      "category": "Mạng lưới",
+      "info": "Hạ một nút. Tải tràn sang hàng xóm; nút quá tải hỏng tiếp. Sóng mất điện lan ra.",
+      "knock": "Hạ nút",
+      "load": "Tải",
+      "failed": "Hỏng",
+      "alive": "Sống"
+    },
+    "degree-distribution": {
+      "title": "Phân bố bậc",
+      "category": "Mạng lưới",
+      "info": "Trái: đồ thị. Phải: histogram bậc. Chuyển ngẫu nhiên (Poisson) / không thang (luật lũy thừa) và xem hình dạng.",
+      "random": "Ngẫu nhiên",
+      "scaleFree": "Không thang",
+      "degree": "Bậc",
+      "count": "Số lượng"
+    },
+    "degree-graph-theory": {
+      "title": "Bậc",
+      "category": "Mạng lưới",
+      "info": "Bậc là số cạnh chạm một nút. Thêm hoặc bớt cạnh trên hub; bộ đếm theo từng liên kết.",
+      "degree": "Bậc",
+      "add": "Thêm cạnh",
+      "drop": "Bớt cạnh"
+    },
+    "edge-graph-theory": {
+      "title": "Cạnh",
+      "category": "Mạng lưới",
+      "info": "Cạnh là một quan hệ. Bật có hướng / vô hướng và có trọng số / trơn — nghĩa đổi theo ký hiệu.",
+      "directed": "Có hướng",
+      "undirected": "Vô hướng",
+      "weighted": "Có trọng số",
+      "plain": "Không trọng số",
+      "weight": "Trọng số"
+    },
+    "emergence": {
+      "title": "Tính trỗi dậy",
+      "category": "Mạng lưới",
+      "info": "Boid tuân ba quy tắc địa phương. Chỉnh tách, căn, gắn — đàn xuất hiện không thủ lĩnh.",
+      "separation": "Tách",
+      "alignment": "Căn hướng",
+      "cohesion": "Gắn kết",
+      "flock": "Đàn"
+    },
+    "error-correcting-code": {
+      "title": "Mã sửa lỗi",
+      "category": "Mạng lưới",
+      "info": "Nhiễu lật bit khi truyền. Bật parity hoặc Hamming; máy nhận phát hiện và sửa những gì kênh phá.",
+      "noise": "Nhiễu",
+      "parity": "Parity",
+      "hamming": "Hamming",
+      "raw": "Thô",
+      "fixed": "Đã sửa",
+      "errors": "Lỗi"
+    },
+    "giant-connected-component": {
+      "title": "Thành phần khổng lồ",
+      "category": "Mạng lưới",
+      "info": "Thêm cạnh ngẫu nhiên lần lượt. Dưới ngưỡng: đảo rời. Tại thấm, thành phần khổng lồ kết tinh.",
+      "edges": "Cạnh",
+      "giant": "Cỡ khổng lồ",
+      "islands": "Đảo"
+    },
+    "hub-network": {
+      "title": "Hub",
+      "category": "Mạng lưới",
+      "info": "Mạng không thang có hub. Tấn công hub thì liên thông sụp; hỏng ngẫu nhiên hầu như không ảnh hưởng.",
+      "attack": "Tấn công hub",
+      "random": "Hỏng ngẫu nhiên",
+      "connected": "Thành phần lớn nhất"
+    },
+    "interdependent-networks": {
+      "title": "Mạng phụ thuộc chéo",
+      "category": "Mạng lưới",
+      "info": "Điện nuôi thông tin; thông tin điều khiển điện. Hỏng một nút và thác đổ nảy qua cả hai lớp.",
+      "fail": "Hỏng nút",
+      "power": "Điện",
+      "comms": "Thông tin",
+      "cascade": "Thác đổ"
+    },
+    "modularity-network": {
+      "title": "Module hóa",
+      "category": "Mạng lưới",
+      "info": "Cộng đồng dày bên trong hơn giữa các nhóm. Trượt độ phân giải — module gộp hoặc tách theo màu.",
+      "resolution": "Độ phân giải",
+      "modules": "Module",
+      "q": "Modularity Q"
+    },
+    "node-graph-theory": {
+      "title": "Nút",
+      "category": "Mạng lưới",
+      "info": "Đơn vị nguyên tử của đồ thị. Chạm khoảng trống để sinh nút; kéo liên kết. Cây, nơron, router — cùng trừu tượng.",
+      "spawn": "Chạm để sinh",
+      "nodes": "Nút",
+      "links": "Liên kết"
+    },
+    "percolation-theory": {
+      "title": "Lý thuyết thấm",
+      "category": "Mạng lưới",
+      "info": "Chiếm ô lưới với xác suất p. Tăng p đến khi có đường nối xuyên lưới — chùm thấm.",
+      "p": "Xác suất p",
+      "span": "Xuyên",
+      "noSpan": "Chưa có đường"
+    },
+    "percolation-threshold": {
+      "title": "Ngưỡng thấm",
+      "category": "Mạng lưới",
+      "info": "Chỉnh mịn p quanh pc. Tham số trật tự (phân số xuyên) nhảy tại điểm tới hạn.",
+      "p": "p",
+      "pc": "pc ≈ 0.59",
+      "order": "Trật tự P∞"
+    },
+    "phase-transition": {
+      "title": "Chuyển pha",
+      "category": "Mạng lưới",
+      "info": "Kéo tham số qua điểm tới hạn. Trật tự bật — lưới hỗn loạn tự tổ chức thành pha kết hợp.",
+      "control": "Điều khiển T",
+      "order": "Trật tự",
+      "critical": "Tới hạn",
+      "ordered": "Có trật tự",
+      "disordered": "Hỗn loạn"
+    },
+    "queue": {
+      "title": "Hàng đợi",
+      "category": "Mạng lưới",
+      "info": "Bộ đệm FIFO. Tăng đến lớn hơn phục vụ thì độ dài tăng không biên. Little: L = λW.",
+      "arrival": "Đến λ",
+      "service": "Phục vụ μ",
+      "length": "Độ dài L",
+      "wait": "Chờ W"
+    },
+    "redundancy": {
+      "title": "Dự phòng",
+      "category": "Mạng lưới",
+      "info": "Các đường song song. Cắt lần lượt — hệ thống chịu đến khi đường cuối cùng đứt.",
+      "paths": "Đường còn",
+      "sever": "Cắt đường",
+      "alive": "Sống",
+      "dead": "Hỏng"
+    },
+    "redundancy-engineering": {
+      "title": "Dự phòng N-module",
+      "category": "Mạng lưới",
+      "info": "Dự phòng ba module. Bơm lỗi; bộ bỏ phiếu đa số che đến khi quá nhiều module sai.",
+      "fault": "Bơm lỗi",
+      "voter": "Đầu ra vote",
+      "modules": "Module tốt",
+      "masked": "Được che",
+      "corrupt": "Hỏng"
+    },
+    "scale-free-network": {
+      "title": "Mạng không thang",
+      "category": "Mạng lưới",
+      "info": "Gắn ưu tiên: nút mới nối hub phổ biến. Lớn mạng và đuôi bậc luật lũy thừa hiện ra.",
+      "grow": "Thêm nút",
+      "hubs": "Hub",
+      "nodes": "Nút"
+    },
+    "stigmergy": {
+      "title": "Stigmergy",
+      "category": "Mạng lưới",
+      "info": "Kiến để pheromone. Đường thành công dày lên; vết yếu bay hơi. Lộ trình ngắn nhất hiện ra không bản đồ.",
+      "food": "Thả mồi",
+      "evap": "Bay hơi",
+      "path": "Sức đường mòn"
+    },
+    "superorganism": {
+      "title": "Siêu cơ thể",
+      "category": "Mạng lưới",
+      "info": "Zoom từ cá thể đến đàn. Quy tắc địa phương ở lá thành một quyết định ở ngọn — nhiều thân, một ý.",
+      "zoom": "Zoom",
+      "agents": "Cá thể",
+      "colony": "Lựa chọn đàn"
+    },
+    "swarm-intelligence": {
+      "title": "Trí tuệ bầy đàn",
+      "category": "Mạng lưới",
+      "info": "Hạt tìm trên địa hình fitness. Chia sẻ best cá nhân và toàn cục; bầy hội tụ về đỉnh.",
+      "inertia": "Quán tính",
+      "social": "Hút xã hội",
+      "best": "Best tìm được"
+    },
+    "connectome": {
+      "title": "Connectome",
+      "category": "Mạng lưới",
+      "info": "Sơ đồ dây của một tâm trí. Tỉa cạnh và cụm chức năng vỡ; mật độ theo năng lực còn lại.",
+      "prune": "Tỉa",
+      "density": "Mật độ",
+      "clusters": "Cụm",
+      "capacity": "Năng lực"
+    }
+  }
+}

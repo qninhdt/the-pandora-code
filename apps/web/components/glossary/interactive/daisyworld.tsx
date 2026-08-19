@@ -1,261 +1,202 @@
 "use client";
 
-import {
-  L_MAX,
-  L_MIN,
-  T_OPT,
-  bareTempC,
-  solveDaisyworld,
-  temperatureCurves,
-} from "@/components/content/daisyworld-model";
 import { useTranslations } from "next-intl";
-import React, { useState, useMemo } from "react";
+import { useRef, useState } from "react";
+import { ControlSlider } from "./shared/control-slider";
 import { GlossaryFrame } from "./shared/frame";
+import { Legend } from "./shared/legend";
+import { useInView } from "./shared/use-in-view";
+import { useRafLoop } from "./shared/use-raf-loop";
 
-// Fixed dimensions for the chart view
-const VIEW_W = 320;
-const VIEW_H = 120;
-const PAD_L = 25;
-const PAD_R = 10;
-const PAD_T = 10;
-const PAD_B = 18;
-const PLOT_W = VIEW_W - PAD_L - PAD_R;
-const PLOT_H = VIEW_H - PAD_T - PAD_B;
+// Lovelock & Watson's toy planet. Two flowers: black (absorbs → warms its patch)
+// and white (reflects → cools its patch). Slide the sun from dim to blazing.
+// Black daisies seize the cold early world and warm it; white daisies take the
+// hot late world and cool it — and across a huge range of luminosity the planet's
+// temperature stays nearly flat. Regulation with no regulator: the decisive
+// answer to the "Gaia needs a purpose" objection. Grey line = the same world dead.
+const IDEAL_TEMP = 22.5; // °C daisies prefer
 
-// Temperature scale: -15C to 80C
-const T_MIN = -15;
-const T_MAX = 80;
-
-// Math conversions for SVG coordinates
-const lx = (l: number) => PAD_L + ((l - L_MIN) / (L_MAX - L_MIN)) * PLOT_W;
-const ty = (tempC: number) => {
-  const clamped = Math.max(T_MIN, Math.min(T_MAX, tempC));
-  return PAD_T + (1 - (clamped - T_MIN) / (T_MAX - T_MIN)) * PLOT_H;
-};
+// steady-state daisy cover + temperature for a given luminosity (solved by
+// relaxation each frame so the populations visibly chase equilibrium)
+function step(lum: number, black: number, white: number, dt: number) {
+  // local temperatures under each daisy type vs bare ground
+  const bareTemp = -10 + lum * 42;
+  const tBlack = bareTemp + 18;
+  const tWhite = bareTemp - 18;
+  // growth peaks at IDEAL_TEMP, zero outside ±16°C
+  const g = (temp: number) => Math.max(0, 1 - ((temp - IDEAL_TEMP) / 16) ** 2);
+  const bare = Math.max(0, 1 - black - white);
+  const dBlack = black * (bare * g(tBlack) - 0.3);
+  const dWhite = white * (bare * g(tWhite) - 0.3);
+  let nb = Math.max(0.001, Math.min(1, black + dBlack * dt * 3));
+  let nw = Math.max(0.001, Math.min(1, white + dWhite * dt * 3));
+  if (nb + nw > 1) {
+    const s = 1 / (nb + nw);
+    nb *= s;
+    nw *= s;
+  }
+  // planetary temp from area-weighted albedo
+  const albedo = 0.5 + nw * 0.3 - nb * 0.3;
+  const planetTemp = -10 + lum * 42 * (1 - (albedo - 0.5));
+  return { nb, nw, planetTemp };
+}
 
 export default function Daisyworld() {
   const t = useTranslations("viz.daisyworld");
+  const { ref, inView } = useInView<HTMLDivElement>();
+  const [lum, setLum] = useState(1.0);
+  const black = useRef(0.2);
+  const white = useRef(0.2);
+  const temp = useRef(IDEAL_TEMP);
+  const force = useState(0)[1];
 
-  const [luminosity, setLuminosity] = useState(1.0);
+  useRafLoop(
+    (dt) => {
+      const r = step(lum, black.current, white.current, dt);
+      black.current = r.nb;
+      white.current = r.nw;
+      temp.current = r.planetTemp;
+      force((n) => (n + 1) % 1_000_000);
+    },
+    { active: inView },
+  );
 
-  const curves = useMemo(() => temperatureCurves(32), []);
+  const deadTemp = -10 + lum * 42; // no daisies, fixed albedo 0.5 baseline
+  const bPct = Math.round(black.current * 100);
+  const wPct = Math.round(white.current * 100);
 
-  const regulatedPath = useMemo(() => {
-    return curves
-      .map((c, i) => `${i === 0 ? "M" : "L"}${lx(c.l).toFixed(1)} ${ty(c.regulated).toFixed(1)}`)
-      .join(" ");
-  }, [curves]);
-
-  const barePath = useMemo(() => {
-    return curves
-      .map((c, i) => `${i === 0 ? "M" : "L"}${lx(c.l).toFixed(1)} ${ty(c.bare).toFixed(1)}`)
-      .join(" ");
-  }, [curves]);
-
-  const state = solveDaisyworld(luminosity);
-  const bare = bareTempC(luminosity);
-  const alive = state.black + state.white > 0.05;
-
-  const verdict = !alive
-    ? t("dead")
-    : Math.abs(state.tempC - T_OPT) < 8
-      ? t("regulated")
-      : t("struggling");
-
-  const verdictColor = !alive
-    ? "text-amber"
-    : Math.abs(state.tempC - T_OPT) < 8
-      ? "text-teal"
-      : "text-cyan";
-
-  const cx = lx(luminosity);
-
-  const handleReset = () => {
-    setLuminosity(1.0);
-  };
+  // map temp (−10..32) to y
+  const ty = (c: number) => 78 - ((c + 10) / 42) * 56;
 
   return (
     <GlossaryFrame
       title={t("title")}
-      infoText={alive ? t("hintAlive") : t("hintDead")}
-      onReset={handleReset}
-      aspectRatio="aspect-[16/10]"
+      category={t("category")}
+      infoText={t("info")}
+      onReset={() => {
+        black.current = 0.2;
+        white.current = 0.2;
+        setLum(1.0);
+      }}
+      allowFullscreen={false}
+      caption={
+        <span>
+          {t("planetTemp")}: <span className="text-teal">{temp.current.toFixed(1)}°C</span> ·{" "}
+          {t("regulated")}
+        </span>
+      }
     >
-      <div className="relative w-full h-full flex flex-col justify-between p-4">
-        {/* Daisyworld simulation plot */}
-        <div className="w-full flex-1 flex flex-col justify-start pb-32 pt-2">
-          <div className="relative w-full h-full bg-void/50 border border-border/20 rounded-xl overflow-hidden flex flex-row p-3 gap-3">
-            {/* Chart Area */}
-            <div className="flex-1 h-full relative">
-              <svg viewBox={`0 0 ${VIEW_W} ${VIEW_H}`} className="w-full h-full select-none">
-                <title>Daisyworld temperature regulation graph</title>
-
-                {/* Comfort Band Area */}
-                <rect
-                  x={PAD_L}
-                  y={ty(T_OPT + 10)}
-                  width={PLOT_W}
-                  height={ty(T_OPT - 10) - ty(T_OPT + 10)}
-                  className="fill-teal/10"
-                />
-
-                {/* Axes */}
-                <line
-                  x1={PAD_L}
-                  y1={PAD_T}
-                  x2={PAD_L}
-                  y2={PAD_T + PLOT_H}
-                  className="stroke-border/30 stroke-1"
-                />
-                <line
-                  x1={PAD_L}
-                  y1={PAD_T + PLOT_H}
-                  x2={PAD_L + PLOT_W}
-                  y2={PAD_T + PLOT_H}
-                  className="stroke-border/30 stroke-1"
-                />
-
-                {/* Y Tick Marks */}
-                {[0, 25, 50, 75].map((val) => (
-                  <g key={val}>
-                    <line
-                      x1={PAD_L - 3}
-                      y1={ty(val)}
-                      x2={PAD_L}
-                      y2={ty(val)}
-                      className="stroke-border/30 stroke-[0.5]"
-                    />
-                    <text
-                      x={PAD_L - 6}
-                      y={ty(val) + 2.5}
-                      textAnchor="end"
-                      className="fill-muted font-mono text-[6px]"
-                    >
-                      {val}
-                    </text>
-                  </g>
-                ))}
-
-                {/* Bare-rock curve */}
-                <path
-                  d={barePath}
-                  fill="none"
-                  className="stroke-border/30 stroke-[0.8] stroke-dashed"
-                  strokeDasharray="2,2"
-                />
-
-                {/* Regulated curve */}
-                <path
-                  d={regulatedPath}
-                  fill="none"
-                  className="stroke-teal/70 stroke-[1.8]"
-                  style={{ filter: "drop-shadow(0 0 3px rgba(43, 212, 168, 0.4))" }}
-                />
-
-                {/* Solar slider indicator line */}
-                <line
-                  x1={cx}
-                  y1={PAD_T}
-                  x2={cx}
-                  y2={PAD_T + PLOT_H}
-                  className="stroke-amber/40 stroke-[0.8]"
-                />
-
-                {/* Intersection dots */}
-                <circle cx={cx} cy={ty(bare)} r="2.5" className="fill-border/40" />
+      <div ref={ref} className="absolute inset-0">
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
+          {/* the daisy planet — a disk split by current cover */}
+          <g transform="translate(24 30)">
+            <circle
+              cx="0"
+              cy="0"
+              r="16"
+              fill="#1a1408"
+              stroke="var(--border-strong)"
+              strokeWidth="0.5"
+            />
+            {/* black daisies (lower arc) + white daisies (upper arc), area ~ cover */}
+            {Array.from({ length: 40 }, (_, i) => {
+              const a = (i / 40) * Math.PI * 2;
+              const isBlack = i / 40 < black.current;
+              const isWhite = !isBlack && i / 40 < black.current + white.current;
+              if (!isBlack && !isWhite) return null;
+              return (
                 <circle
-                  cx={cx}
-                  cy={ty(state.tempC)}
-                  r="3.5"
-                  className={
-                    !alive
-                      ? "fill-amber"
-                      : Math.abs(state.tempC - T_OPT) < 8
-                        ? "fill-teal"
-                        : "fill-cyan"
-                  }
-                  style={{
-                    filter: `drop-shadow(0 0 3px ${
-                      !alive
-                        ? "var(--amber)"
-                        : Math.abs(state.tempC - T_OPT) < 8
-                          ? "var(--teal)"
-                          : "var(--cyan)"
-                    })`,
-                  }}
+                  key={i}
+                  cx={Math.cos(a) * 11}
+                  cy={Math.sin(a) * 11}
+                  r="2.1"
+                  fill={isBlack ? "#20242c" : "#e8f0f8"}
+                  stroke={isBlack ? "var(--cyan)" : "var(--foreground)"}
+                  strokeWidth="0.2"
+                  opacity="0.9"
                 />
-              </svg>
-              {/* Comfort Band label */}
-              <div className="absolute top-[38%] left-[28%] text-[6.5px] font-mono text-teal/50 uppercase pointer-events-none">
-                {t("comfortBand") || "comfort band"}
-              </div>
-            </div>
+              );
+            })}
+          </g>
 
-            {/* Readouts side panel */}
-            <div className="w-1/3 border-l border-border/15 pl-3 flex flex-col justify-between h-full">
-              {/* Temp and state */}
-              <div className="flex flex-col gap-1.5">
-                <div className="flex flex-col">
-                  <span className="text-[7.5px] font-mono text-muted uppercase">
-                    {t("planetTemp") || "Temp"}
-                  </span>
-                  <span className="font-mono text-xs font-bold text-foreground">
-                    {state.tempC.toFixed(1)}°C
-                  </span>
-                  {alive && (
-                    <span className="text-[6.5px] font-mono text-muted">
-                      ({t("bareWould") || "Bare"}: {bare.toFixed(0)}°C)
-                    </span>
-                  )}
-                </div>
+          {/* temperature vs luminosity plot */}
+          <g>
+            <line x1="48" y1="78" x2="94" y2="78" stroke="var(--border-strong)" strokeWidth="0.4" />
+            <line x1="48" y1="22" x2="48" y2="78" stroke="var(--border-strong)" strokeWidth="0.4" />
+            {/* ideal temp line */}
+            <line
+              x1="48"
+              y1={ty(IDEAL_TEMP)}
+              x2="94"
+              y2={ty(IDEAL_TEMP)}
+              stroke="var(--teal)"
+              strokeWidth="0.3"
+              strokeDasharray="1.5 1.5"
+              opacity="0.5"
+            />
+            {/* dead-world diagonal (no life) */}
+            <line
+              x1="48"
+              y1={ty(-10 + 0.4 * 42)}
+              x2="94"
+              y2={ty(-10 + 1.6 * 42)}
+              stroke="var(--muted)"
+              strokeWidth="0.6"
+              opacity="0.5"
+            />
+            {/* current dead point */}
+            <circle
+              cx={48 + ((lum - 0.4) / 1.2) * 46}
+              cy={ty(deadTemp)}
+              r="1.4"
+              fill="var(--muted)"
+            />
+            {/* current regulated point */}
+            <circle
+              cx={48 + ((lum - 0.4) / 1.2) * 46}
+              cy={ty(temp.current)}
+              r="2"
+              fill="var(--teal)"
+            />
+            <text
+              x="48"
+              y="20"
+              className="fill-muted"
+              style={{ fontSize: 2.8, fontFamily: "monospace" }}
+            >
+              {t("tempAxis")}
+            </text>
+          </g>
+        </svg>
 
-                <div className="flex flex-col border-t border-border/10 pt-1.5">
-                  <span className="text-[7.5px] font-mono text-muted uppercase">
-                    {t("verdictLabel") || "State"}
-                  </span>
-                  <span className={`font-mono text-[10px] font-bold ${verdictColor}`}>
-                    {verdict}
-                  </span>
-                </div>
-              </div>
-
-              {/* Daisy population percentages */}
-              <div className="flex flex-col gap-1 border-t border-border/10 pt-1.5 text-[7px] font-mono">
-                <div className="flex justify-between">
-                  <span className="text-muted">✿ Black:</span>
-                  <span className="text-foreground font-bold">
-                    {Math.round(state.black * 100)}%
-                  </span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-cyan">✿ White:</span>
-                  <span className="text-cyan font-bold">{Math.round(state.white * 100)}%</span>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="absolute right-3 top-16">
+          <Legend
+            vertical
+            items={[
+              { color: "#e8f0f8", label: `${t("white")} ${wPct}%` },
+              { color: "#20242c", label: `${t("black")} ${bPct}%` },
+              { color: "var(--muted)", label: t("dead") },
+            ]}
+          />
         </div>
 
-        {/* HUD Controls */}
-        <div className="absolute bottom-4 left-4 right-4 bg-void/85 backdrop-blur-md p-3 border border-border/30 rounded-xl flex flex-col gap-2.5 z-10 text-[9.5px] font-mono">
-          {/* Luminosity Slider */}
-          <div className="flex items-center gap-3">
-            <span className="text-[9px] font-mono text-muted w-24 truncate uppercase">
-              {t("lumSlider") || "Solar Brightness"}:
-            </span>
-            <input
-              type="range"
-              min={L_MIN}
-              max={L_MAX}
-              step="0.01"
-              value={luminosity}
-              onChange={(e) => setLuminosity(Number.parseFloat(e.target.value))}
-              className="flex-1 h-1 rounded bg-surface appearance-none cursor-pointer accent-teal"
-            />
-            <span className="text-foreground w-12 text-right font-bold">
-              {luminosity.toFixed(2)} L☉
-            </span>
-          </div>
+        <div className="absolute inset-x-3 bottom-12">
+          <ControlSlider
+            label={t("luminosity")}
+            value={lum}
+            min={0.4}
+            max={1.6}
+            step={0.01}
+            onChange={setLum}
+            display={`${lum.toFixed(2)} ${t("suns")}`}
+            thumb="amber"
+          />
         </div>
       </div>
     </GlossaryFrame>

@@ -1,0 +1,225 @@
+{
+  "viz": {
+    "abduction": {
+      "title": "Abduction",
+      "category": "Philosophy",
+      "info": "Peirce's third mode of inference: reason backward from a surprising clue to the hypothesis that would make it unsurprising. Deduction derives, induction counts, abduction invents the best guess. Behind every Inference tier in this book.",
+      "deduction": "Deduction",
+      "induction": "Induction",
+      "abduction": "Abduction",
+      "deductionFlow": "rule + case → result",
+      "inductionFlow": "case + result → rule",
+      "abductionFlow": "result + rule → case",
+      "example": "Best explanation for six limbs",
+      "pick": "Pick a mode"
+    },
+    "apomorphy": {
+      "title": "Apomorphy",
+      "category": "Systematics",
+      "info": "A derived novelty a lineage invented — not the ancestral default. Shared, it becomes a synapomorphy and binds a clade; unique, an autapomorphy that only labels one tip. Click a node to watch the novelty appear on its descendants.",
+      "derived": "Derived novelty",
+      "ancestral": "Ancestral state",
+      "hint": "Tap a node — the novelty lights its descendants",
+      "nodeA": "A",
+      "nodeB": "B",
+      "nodeC": "C",
+      "nodeD": "D"
+    },
+    "autapomorphy": {
+      "title": "Autapomorphy",
+      "category": "Systematics",
+      "info": "A derived trait unique to one tip — useless for grouping, dangerous when long branches pile them up and chance matches fool parsimony. Select a lineage; only its private magenta mark glows.",
+      "unique": "Unique to tip",
+      "noGroup": "Cannot group",
+      "hint": "Select a tip — only its private novelty lights",
+      "t1": "A",
+      "t2": "B",
+      "t3": "C",
+      "t4": "D"
+    },
+    "clade": {
+      "title": "Clade",
+      "category": "Systematics",
+      "info": "A common ancestor and every descendant — no one left out. The only real unit in modern classification. Tap a node; the whole limb lights. Compare a monophyletic cut with a non-monophyletic one.",
+      "mono": "Monophyletic",
+      "nonMono": "Non-monophyletic",
+      "hint": "Tap a node to cut a clade",
+      "complete": "Complete family",
+      "truncated": "Missing descendants"
+    },
+    "cladogram": {
+      "title": "Cladogram",
+      "category": "Systematics",
+      "info": "A branching hypothesis of kinship. Only order matters — branch lengths are arbitrary. Rearrange six Pandoran tips; the parsimony score counts evolutionary steps. The true tree needs the fewest.",
+      "steps": "Steps",
+      "best": "Most parsimonious",
+      "hint": "Cycle topologies — fewer steps wins",
+      "topology": "Topology"
+    },
+    "demarcation-problem": {
+      "title": "Demarcation Problem",
+      "category": "Philosophy",
+      "info": "Where does science end and non-science begin? Popper bet on falsifiability; Kuhn on paradigms; Lakatos on progressive programmes. Place each claim on the dial — falsifiable ones glow cyan.",
+      "science": "Science",
+      "nonScience": "Non-science",
+      "falsifiable": "Falsifiable",
+      "unfalsifiable": "Unfalsifiable",
+      "hint": "Place claims on the dial"
+    },
+    "falsifiability": {
+      "title": "Falsifiability",
+      "category": "Philosophy",
+      "info": "Popper's gate: a claim is scientific only if some observation could, in principle, prove it wrong. Flip each card — risky bets glow cyan; unfalsifiable claims mute.",
+      "testable": "Falsifiable",
+      "notTestable": "Not falsifiable",
+      "flip": "Flip card",
+      "next": "Next claim",
+      "verdict": "Verdict"
+    },
+    "homologous-structures": {
+      "title": "Homologous Structures",
+      "category": "Systematics",
+      "info": "Same deep plan, different jobs — inherited from one ancestor. Human arm, whale flipper, bat wing share bone order. Tap to reveal the shared scaffold; contrast with analogy's zero kinship.",
+      "sharedPlan": "Shared plan",
+      "kinship": "Kinship",
+      "real": "real",
+      "reveal": "Reveal bones",
+      "hide": "Hide bones",
+      "arm": "Arm",
+      "flipper": "Flipper",
+      "wing": "Wing"
+    },
+    "inference-to-the-best-explanation": {
+      "title": "Inference to the Best Explanation",
+      "category": "Philosophy",
+      "info": "Harman's sharpened abduction: among rivals for one fact, take the one that explains it best — by testability, scope, conservatism, simplicity. Rate each card; the best-fit glows brightest.",
+      "simplicity": "Simplicity",
+      "scope": "Scope",
+      "fit": "Fit",
+      "best": "Best explanation",
+      "h1": "H₁",
+      "h2": "H₂",
+      "h3": "H₃",
+      "observation": "Why six limbs?"
+    },
+    "long-branch-attraction": {
+      "title": "Long-Branch Attraction",
+      "category": "Systematics",
+      "info": "Parsimony's Achilles heel: two fast lineages pile up chance matches and get pulled together at the root — a clean wrong tree. Toggle standard vs corrected; watch the false cluster dissolve.",
+      "trueTree": "True tree",
+      "parsimonyTree": "Parsimony infers",
+      "corrected": "Corrected model",
+      "standard": "Standard parsimony",
+      "attracted": "Attracted!",
+      "fast": "fast",
+      "slow": "slow"
+    },
+    "maximum-parsimony": {
+      "title": "Maximum Parsimony",
+      "category": "Systematics",
+      "info": "Among trees, prefer the one needing the fewest evolutionary changes. Occam on the tree of life. Toggle topologies; the score counts steps — the minimum lights teal.",
+      "steps": "Steps",
+      "minimum": "Minimum",
+      "treeA": "Tree A",
+      "treeB": "Tree B",
+      "treeC": "Tree C",
+      "hint": "Toggle trees — fewest changes wins"
+    },
+    "occams-razor": {
+      "title": "Occam's Razor",
+      "category": "Philosophy",
+      "info": "Do not multiply assumptions beyond necessity. Between two explanations, prefer fewer new entities — not because simple is true, but because extra miracles carry the burden of proof. Count the links; cut the waste.",
+      "assumptions": "Assumptions",
+      "lean": "Lean chain",
+      "bloated": "Bloated chain",
+      "cut": "Cut extras",
+      "restore": "Restore"
+    },
+    "outgroup": {
+      "title": "Outgroup",
+      "category": "Systematics",
+      "info": "A known earlier branch that roots the tree — the compass for ancestral vs derived. Drag which tip is outgroup; the ingroup polarity flips with it.",
+      "outgroup": "Outgroup",
+      "ingroup": "Ingroup",
+      "rooted": "Rooted",
+      "hint": "Pick the outgroup tip"
+    },
+    "paraphyly": {
+      "title": "Paraphyly",
+      "category": "Systematics",
+      "info": "Ancestor plus some — not all — descendants. A truncated limb: 'reptiles' without birds, 'fish' without tetrapods. Toggle the missing branch back in to restore a clade.",
+      "para": "Paraphyletic",
+      "mono": "Monophyletic",
+      "include": "Include excluded tip",
+      "exclude": "Exclude tip",
+      "missing": "Missing descendants"
+    },
+    "phenetics": {
+      "title": "Phenetics",
+      "category": "Systematics",
+      "info": "Group by overall similarity — fatal when convergence mimics kinship. Toggle phenetic clustering vs cladistic shared-derived; watch the trees disagree.",
+      "phenetic": "Phenetic",
+      "cladistic": "Cladistic",
+      "hint": "Same data, two algorithms",
+      "trap": "Looks alike ≠ related"
+    },
+    "plesiomorphy": {
+      "title": "Plesiomorphy",
+      "category": "Systematics",
+      "info": "The ancestral default everyone still carries. Five digits in tetrapods: true, but useless for grouping because nearly all tips share it. Light the base trait across the whole tree.",
+      "ancestral": "Ancestral trait",
+      "everywhere": "Present in all",
+      "noSignal": "No grouping signal",
+      "hint": "Highlight the plesiomorphy"
+    },
+    "polyphyly": {
+      "title": "Polyphyly",
+      "category": "Systematics",
+      "info": "A basket of separate lineages glued by surface resemblance — not a limb of the tree. 'Flying animals' or Na'vi+human bipeds. Toggle the false circle; true roots stay far apart.",
+      "poly": "Polyphyletic basket",
+      "trueRoots": "True roots apart",
+      "hint": "Toggle the false group",
+      "show": "Show false group",
+      "hide": "Hide false group"
+    },
+    "positive-citation-bias": {
+      "title": "Positive Citation Bias",
+      "category": "Philosophy",
+      "info": "Exciting positives get cited; nulls vanish. Claims harden with each citation though no new evidence arrives — how the wood-wide web outran its data. Run trials; watch only positives file.",
+      "run": "Run batch",
+      "published": "Published",
+      "nulls": "Nulls filed away",
+      "positive": "Positive",
+      "null": "Null",
+      "bias": "Literature skew"
+    },
+    "speculation": {
+      "title": "Speculation",
+      "category": "Philosophy",
+      "info": "This book's tier for a model that grants one unconfirmed premise, then obeys every remaining law. Drag claims across Canon / Inference / Speculation / Real-science. Bend one rule; pay full price elsewhere.",
+      "canon": "Canon",
+      "inference": "Inference",
+      "speculation": "Speculation",
+      "realScience": "Real science",
+      "hint": "Place each claim on a tier"
+    },
+    "symplesiomorphy": {
+      "title": "Symplesiomorphy",
+      "category": "Systematics",
+      "info": "An ancestral trait many species still share — the cladistic trap. Grouping by it yields paraphyly. Only shared derived traits bind true clades. Pick the old mark; watch the false group fail.",
+      "sharedAncestral": "Shared ancestral",
+      "falseGroup": "False group",
+      "trap": "Cannot group",
+      "hint": "Group by the old trait — see it fail"
+    },
+    "synapomorphy": {
+      "title": "Synapomorphy",
+      "category": "Systematics",
+      "info": "A derived novelty inherited by two or more species from one ancestor — the hard evidence of a clade. Pick the shared mark; a valid monophyletic group lights cyan.",
+      "sharedDerived": "Shared derived",
+      "cladeLit": "Clade lights",
+      "hint": "Pick the synapomorphy",
+      "valid": "Valid clade"
+    }
+  }
+}

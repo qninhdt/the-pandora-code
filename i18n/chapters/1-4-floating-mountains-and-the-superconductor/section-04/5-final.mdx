@@ -1,0 +1,35 @@
+## Tại sao các electron ngừng va đập?
+
+Lời giải đáp — khi cuối cùng nó được công bố vào năm 1957 bởi bộ ba John Bardeen, Leon Cooper và Robert Schrieffer dưới cái tên thuyết BCS — là một trong những ý tưởng nghe có vẻ kỳ lạ đến khó tin.
+
+Các electron vốn đẩy nhau. Chúng đều mang điện tích âm; việc ép chúng lại với nhau làm tiêu tốn năng lượng. Nhưng tính siêu dẫn lại dựa vào việc chúng... bắt cặp. Bằng cách nào?
+
+Mấu chốt là chúng không hề di chuyển đơn độc. Chúng lướt qua một mạng tinh thể gồm các ion dương, và lực hút của một electron đang di chuyển sẽ kéo nhẹ những ion dương nặng nề, cục mịch đó nhích về phía nó. Các ion trũng lại vào bên trong ngay sau khi electron lướt qua, để lại một khoảnh khắc chớp nhoáng tạo ra một cụm điện tích dương túm tụm lại ngay tại vùng mạng tinh thể đó.
+
+Lúc này, một electron *thứ hai* đi tới và bị hút vào cụm đó. Về cơ bản, electron tiên phong để lại một luồng dư ba mang điện dương chớp nhoáng, và electron thứ hai lướt trên luồng dư ba ấy.
+
+<DiagramFigure 
+  id="cooper-pair"
+  caption="Sự hình thành Cặp Cooper. Electron đầu tiên kéo các ion dương lại gần nhau. Electron thứ hai bị hút vào cụm điện tích dương tạm thời đó."
+  labels={[
+    { id: 'electron-1', text: 'Electron 1' },
+    { id: 'electron-2', text: 'Electron 2 lướt trên dư ba' },
+    { id: 'positive-ions', text: 'Mạng lưới ion dương' },
+    { id: 'lattice-distortion', text: 'Các ion bị kéo trũng vào trong' },
+    { id: 'positive-wake', text: 'Dư ba mang điện dương' }
+  ]}
+/>
+
+Sức hút gián tiếp thông qua mạng tinh thể ấy là vừa đủ — chót lọt vừa đủ — để vượt qua lực đẩy của chúng và trói buộc hai electron thành một <GlossaryTerm slug="cooper-pair">cặp Cooper</GlossaryTerm>.
+
+Và sự ghép cặp này làm thay đổi mọi thứ, nhờ vào một quy luật sâu xa về cách tự nhiên phân loại các hạt.
+
+Một electron đơn lẻ là một *fermion*: một loại hạt xa lánh đồng loại, bị nguyên lý loại trừ Pauli cấm chia sẻ chính xác cùng một trạng thái lượng tử với một fermion khác. Nhưng một cặp Cooper có tổng spin bằng không. Một hạt tổng hợp có spin nguyên sẽ hành xử giống như một *boson* — và boson thì có tính bầy đàn sâu sắc. Chúng hoàn toàn hân hoan khi chen chúc vào cùng một trạng thái lượng tử ngay tại cùng một thời điểm.
+
+<WhatThisMeans title="Cốt lõi của vấn đề">
+Khi vật liệu bị làm lạnh xuống dưới mức T꜀, các cặp Cooper không chỉ hình thành — chúng cô đặc lại thành một biển hạt khổng lồ. Hàng nghìn tỷ electron ngừng hành xử như những hạt riêng lẻ và bắt đầu chia sẻ chung một hàm sóng duy nhất, nơi mọi cặp đều hành quân bước đều tăm tắp.
+
+Sự va đập gây ra điện trở giờ đây trở nên bất khả thi. Lưới tinh thể không thể hất văng một electron riêng lẻ ra khỏi đường đi nữa, bởi vì electron đó đã khóa chặt vào hàng tỷ electron khác. Để gây ra sức cản, lưới tinh thể sẽ phải phá vỡ toàn bộ dàn đồng ca đó cùng một lúc — mà ở nhiệt độ tới hạn đó, nó không có đủ năng lượng để làm việc ấy. Dòng điện trôi qua một cách tĩnh lặng, hoàn hảo, và không hề suy hao.
+</WhatThisMeans>
+
+Đó là phép màu đầu tiên: triệt tiêu điện trở. Phép màu thứ hai chính là thứ có thể nâng bổng ngọn núi.

@@ -1,0 +1,190 @@
+{
+  "viz": {
+    "bandwidth": {
+      "title": "Bandwidth",
+      "category": "Mind",
+      "info": "How much information a channel can carry per second. Widen the pipe; throughput climbs. Compare a neuron, fiber optic, and Eywa's root net.",
+      "width": "Pipe width",
+      "throughput": "Throughput",
+      "neuron": "Neuron",
+      "fiber": "Fiber",
+      "eywa": "Eywa roots",
+      "unit": "bit/s"
+    },
+    "basal-cognition": {
+      "title": "Basal Cognition",
+      "category": "Mind",
+      "info": "Mind without a brain. Place food and obstacles; the slime mold grows, samples, and solves the maze by morphology alone.",
+      "food": "Drop food",
+      "wall": "Place wall",
+      "grow": "Grow step",
+      "clear": "Clear",
+      "solved": "Path found",
+      "searching": "Exploring"
+    },
+    "bit": {
+      "title": "Bit",
+      "category": "Mind",
+      "info": "One binary choice = exactly one bit. Flip each switch; stack them to encode a larger message. Uncertainty halved each flip.",
+      "flip": "Flip",
+      "zero": "0",
+      "one": "1",
+      "total": "Total bits",
+      "message": "Encoded"
+    },
+    "channel-capacity": {
+      "title": "Channel Capacity",
+      "category": "Mind",
+      "info": "Shannon's ceiling: C = B log₂(1+S/N). Raise noise; the reliable rate drops. Packets above the limit scatter.",
+      "noise": "Noise",
+      "bandwidth": "Bandwidth B",
+      "capacity": "Capacity C",
+      "reliable": "Below limit",
+      "lossy": "Above limit"
+    },
+    "cognitive-light-cone": {
+      "title": "Cognitive Light Cone",
+      "category": "Mind",
+      "info": "The space-time volume an agent can sense and act on. Raise sophistication; the cone widens from a cell's bubble to a planet-mind.",
+      "scale": "Sophistication",
+      "cell": "Cell",
+      "animal": "Animal",
+      "human": "Human",
+      "eywa": "Eywa",
+      "reach": "Reach"
+    },
+    "conscious-bottleneck": {
+      "title": "Conscious Bottleneck",
+      "category": "Mind",
+      "info": "Many parallel streams, one serial spotlight. Add sensory inputs; only a few cross the bottleneck at once. Attention is the gate.",
+      "add": "Add stream",
+      "clear": "Clear",
+      "capacity": "Gate slots",
+      "queued": "Queued",
+      "broadcast": "In spotlight"
+    },
+    "distributed-cognition": {
+      "title": "Distributed Cognition",
+      "category": "Mind",
+      "info": "Thinking spans heads, tools, and place. Toggle notebook, teammate, or whiteboard offline; collective capacity falls. Mind is not only skull-bound.",
+      "head": "Head",
+      "notebook": "Notebook",
+      "teammate": "Teammate",
+      "board": "Board",
+      "capacity": "Collective C",
+      "intact": "System intact",
+      "degraded": "Degraded"
+    },
+    "global-workspace-theory": {
+      "title": "Global Workspace",
+      "category": "Mind",
+      "info": "Unconscious modules compete; the winner is broadcast on the lit stage. Inject a stimulus and watch the spotlight shift.",
+      "inject": "Inject",
+      "vision": "Vision",
+      "sound": "Sound",
+      "memory": "Memory",
+      "broadcast": "Broadcast",
+      "dark": "Unconscious"
+    },
+    "hard-problem-of-consciousness": {
+      "title": "Hard Problem",
+      "category": "Mind",
+      "info": "Map every spike and synapse — the objective side fills in. The subjective 'what it is like' stays unbridged. That gap is the hard problem.",
+      "map": "Map process",
+      "reset": "Clear map",
+      "neural": "Neural activity",
+      "qualia": "Qualia",
+      "gap": "Explanatory gap",
+      "bridged": "Still open"
+    },
+    "information-theory": {
+      "title": "Information Theory",
+      "category": "Mind",
+      "info": "Message → encode → noisy channel → decode. Type a short string; watch compression, corruption, and recovery. Entropy and redundancy meters live.",
+      "send": "Send",
+      "clear": "Clear",
+      "entropy": "Entropy",
+      "redundancy": "Redundancy",
+      "received": "Received",
+      "placeholder": "type msg"
+    },
+    "integrated-information-theory": {
+      "title": "Integrated Information",
+      "category": "Mind",
+      "info": "Φ scores how much a system is more than its parts. Wire nodes together; integrated + differentiated nets rise. A disconnected pile scores ~0.",
+      "addLink": "Add link",
+      "cutLink": "Cut link",
+      "phi": "Φ",
+      "integrated": "Integrated",
+      "scattered": "Scattered"
+    },
+    "noisy-channel-coding-theorem": {
+      "title": "Noisy-Channel Coding",
+      "category": "Mind",
+      "info": "Shannon: any rate below capacity can be made arbitrarily reliable. Pick a coding rate; green below C, red above — errors explode past the boundary.",
+      "rate": "Coding rate",
+      "noise": "Noise",
+      "capacity": "C",
+      "ok": "Reliable",
+      "fail": "Errors explode"
+    },
+    "shannon-entropy": {
+      "title": "Shannon Entropy",
+      "category": "Mind",
+      "info": "Average surprise of a source. Skew the symbol probabilities; H peaks when all are equal, drops to zero when one is certain.",
+      "skew": "Skew",
+      "entropy": "H",
+      "unit": "bit/sym",
+      "uniform": "Uniform",
+      "certain": "Certain"
+    },
+    "signal-to-noise-ratio": {
+      "title": "Signal-to-Noise",
+      "category": "Mind",
+      "info": "Clean waveform under rising noise floor. Lift noise; SNR falls and the signal drowns past a recovery threshold. Ties straight to channel capacity.",
+      "noise": "Noise floor",
+      "snr": "SNR",
+      "clean": "Recoverable",
+      "drowned": "Unrecoverable"
+    },
+    "functionalism": {
+      "title": "Functionalism",
+      "category": "Mind",
+      "info": "Same function, three substrates: neurons, silicon, root-net. Feed identical input; all three emit the same output. Toggle 'anyone home?' for the qualia objection.",
+      "input": "Input pulse",
+      "neurons": "Neurons",
+      "silicon": "Silicon",
+      "roots": "Root-net",
+      "match": "I/O match",
+      "home": "Anyone home?",
+      "objection": "Qualia gap"
+    },
+    "panpsychism": {
+      "title": "Panpsychism",
+      "category": "Mind",
+      "info": "Zoom galaxy → brain → atom → electron. Each level keeps a faint spark. Panpsychism: experience is fundamental. Flip to emergentism and sparks appear only at brains.",
+      "zoom": "Scale",
+      "galaxy": "Galaxy",
+      "brain": "Brain",
+      "atom": "Atom",
+      "electron": "Electron",
+      "pan": "Panpsychism",
+      "emerge": "Emergentism",
+      "spark": "Spark"
+    },
+    "teleology": {
+      "title": "Teleology",
+      "category": "Mind",
+      "info": "Heart beats because selection shaped it, or in order to pump? Sort claims onto mechanism vs purpose. Daisyworld regulates without goals.",
+      "mechanism": "Mechanism",
+      "purpose": "Purpose",
+      "claimA": "Beats because selected",
+      "claimB": "Beats in order to pump",
+      "claimC": "Daisyworld cools to help life",
+      "claimD": "Feedback lowers albedo",
+      "valid": "Valid frame",
+      "invalid": "Smuggled goal",
+      "score": "Sorted"
+    }
+  }
+}

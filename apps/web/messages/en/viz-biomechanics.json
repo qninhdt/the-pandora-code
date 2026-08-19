@@ -1,0 +1,210 @@
+{
+  "viz": {
+    "allometry": {
+      "title": "Allometry",
+      "category": "Biomechanics",
+      "info": "Organs do not scale 1:1 with body mass. On a log-log plot the slope is the scaling exponent — lungs near 1, brains shallower, bones steeper. Drag mass and watch each organ ride its own line.",
+      "mass": "Body mass",
+      "organ": "Organ size",
+      "slope": "Slope",
+      "lung": "Lung",
+      "heart": "Heart",
+      "brain": "Brain",
+      "bone": "Bone"
+    },
+    "aspect-ratio": {
+      "title": "Aspect Ratio",
+      "category": "Biomechanics",
+      "info": "Wingspan² / wing area. High AR soars cheap (albatross); low AR turns tight (sparrow). Drag span and chord; L/D updates. Ikran sits between soarer and agile hunter.",
+      "span": "Span",
+      "chord": "Chord",
+      "ar": "AR",
+      "ld": "L/D",
+      "ikran": "Ikran",
+      "albatross": "Albatross",
+      "sparrow": "Sparrow"
+    },
+    "biomechanics": {
+      "title": "Biomechanics",
+      "category": "Biomechanics",
+      "info": "Forces through a living machine. Tap a banshee joint to see torque arrows; ground reaction force spikes on landing. Structure is the answer to load.",
+      "joint": "Joint",
+      "torque": "Torque",
+      "grf": "GRF",
+      "hip": "Hip",
+      "knee": "Knee",
+      "ankle": "Ankle",
+      "wing": "Wing root"
+    },
+    "cursorial": {
+      "title": "Cursorial",
+      "category": "Biomechanics",
+      "info": "Built to run. Limb length ratio sets the gait: walk → trot → gallop as Froude number climbs. Stretch the legs and the phase diagram shifts.",
+      "limbRatio": "Limb ratio",
+      "froude": "Froude",
+      "walk": "Walk",
+      "trot": "Trot",
+      "gallop": "Gallop",
+      "gait": "Gait"
+    },
+    "dynamic-soaring": {
+      "title": "Dynamic Soaring",
+      "category": "Biomechanics",
+      "info": "Harvest a wind gradient: climb into faster air, dive downwind, bank, repeat. Energy bar fills from shear, not muscle. Toggle soaring vs flapping cost.",
+      "energy": "Energy",
+      "soar": "Soar",
+      "flap": "Flap",
+      "shear": "Wind shear",
+      "cost": "Cost"
+    },
+    "ecomorph": {
+      "title": "Ecomorph",
+      "category": "Biomechanics",
+      "info": "Form following niche. Six silhouettes for six habitats — pick a habitat and the matching body plan lights. Convergence writes the same answer twice.",
+      "habitat": "Habitat",
+      "arboreal": "Arboreal",
+      "cursorial": "Cursorial",
+      "fossorial": "Fossorial",
+      "aquatic": "Aquatic",
+      "aerial": "Aerial",
+      "grazing": "Grazing"
+    },
+    "froude-number": {
+      "title": "Froude Number",
+      "category": "Biomechanics",
+      "info": "v / √(gL) — inertial over gravitational. Near Fr ≈ 1 wave drag peaks and gaits shift. Push speed through the canal; watch the meter and the bow wave.",
+      "speed": "Speed",
+      "fr": "Fr",
+      "waveDrag": "Wave drag",
+      "transition": "Gait transition"
+    },
+    "isometry": {
+      "title": "Isometry",
+      "category": "Biomechanics",
+      "info": "Same shape, bigger size. Scale the twin up and wall thickness stays proportional — volume outruns cross-section, so pure isometry snaps bones. Nature refuses it.",
+      "scale": "Scale",
+      "area": "Cross-section",
+      "volume": "Volume",
+      "safe": "Safe",
+      "fail": "Fails"
+    },
+    "kleibers-law": {
+      "title": "Kleiber's Law",
+      "category": "Biomechanics",
+      "info": "Metabolic rate scales ~mass^¾, not 1. Log-log, life sits on a shallow line. Drag mass for a Pandoran body; it should fall near Kleiber's slope.",
+      "mass": "Mass",
+      "metab": "Metabolic rate",
+      "exponent": "¾ line",
+      "onLine": "On line"
+    },
+    "leading-edge-vortex": {
+      "title": "Leading-Edge Vortex",
+      "category": "Biomechanics",
+      "info": "A rolling vortex glued to the wing's front edge boosts lift at high angle — insect and banshee trick. Toggle attached flow vs LEV and watch the low-pressure core.",
+      "attached": "Attached flow",
+      "lev": "LEV on",
+      "liftBoost": "Lift boost",
+      "aoa": "Angle"
+    },
+    "lift": {
+      "title": "Lift",
+      "category": "Biomechanics",
+      "info": "Aerofoil + angle of attack. Streamlines pack above, pressure drops, net force up — until stall. Sweep AoA; Cl rises then collapses.",
+      "aoa": "AoA",
+      "cl": "Cl",
+      "stall": "Stall",
+      "stream": "Flow"
+    },
+    "pneumatic-bone": {
+      "title": "Pneumatic Bone",
+      "category": "Biomechanics",
+      "info": "Hollow, strutted, air-filled. Slide from solid to pneumatic: mass falls faster than stiffness. Flyers buy span with emptiness.",
+      "solid": "Solid",
+      "pneumatic": "Pneumatic",
+      "mass": "Mass",
+      "stiffness": "Stiffness",
+      "ratio": "Stiff / mass"
+    },
+    "power-curve": {
+      "title": "Power Curve",
+      "category": "Biomechanics",
+      "info": "Power required vs speed is a U: slow costs hover-work, fast costs parasite drag. Markers shift with wing loading and mass — min-power and max-range speeds.",
+      "speed": "Speed",
+      "power": "Power",
+      "minPower": "Min power",
+      "maxRange": "Max range",
+      "loading": "Wing loading",
+      "mass": "Mass"
+    },
+    "quadrupedal-launch": {
+      "title": "Quadrupedal Launch",
+      "category": "Biomechanics",
+      "info": "Big flyers push with all four limbs. Step the banshee sequence: crouch → vault → unfold → first stroke. Power comes from the leap, not the first flap alone.",
+      "step": "Step",
+      "crouch": "Crouch",
+      "push": "Push",
+      "unfold": "Unfold",
+      "stroke": "First stroke"
+    },
+    "quetzalcoatlus": {
+      "title": "Quetzalcoatlus",
+      "category": "Biomechanics",
+      "info": "Earth's giant azhdarchid beside ikran. Compare span and mass; the plausibility meter separates supported loads from fantasy overload.",
+      "span": "Span",
+      "mass": "Mass",
+      "ikran": "Ikran",
+      "quetz": "Quetzalcoatlus",
+      "plausible": "Plausible",
+      "stretch": "Stretch"
+    },
+    "reynolds-number": {
+      "title": "Reynolds Number",
+      "category": "Biomechanics",
+      "info": "ρvL/μ — inertia over viscosity. Tiny/slow = smooth laminar streaks; big/fast = turbulent chaos. Pandora's dense air shifts the Re of a given wing.",
+      "size": "Size",
+      "speed": "Speed",
+      "re": "Re",
+      "laminar": "Laminar",
+      "turbulent": "Turbulent",
+      "pandora": "Pandora air"
+    },
+    "scaling-exponent": {
+      "title": "Scaling Exponent",
+      "category": "Biomechanics",
+      "info": "Trait ∝ base^b. Pick b (½, ¾, 1, 2) and watch the log-log curve tilt. Geometry and metabolism live on different slopes.",
+      "base": "Base",
+      "exponent": "Exponent",
+      "trait": "Trait",
+      "curve": "Curve"
+    },
+    "square-cube-law": {
+      "title": "Square–Cube Law",
+      "category": "Biomechanics",
+      "info": "Scale a body by k: area ×k², volume ×k³. Surface loses the race — heat dump, bone stress, muscle force all feel the mismatch. Grow the cube until volume overtops area.",
+      "scale": "Scale k",
+      "area": "Area ~k²",
+      "volume": "Volume ~k³",
+      "stress": "Stress"
+    },
+    "thermal-soaring": {
+      "title": "Thermal Soaring",
+      "category": "Biomechanics",
+      "info": "Sun-heated ground lofts invisible columns. Ikran circles inside a thermal and gains height for free. Place a thermal; watch the climb.",
+      "thermal": "Thermal",
+      "altitude": "Altitude",
+      "place": "Place thermal",
+      "clear": "Clear"
+    },
+    "wing-loading": {
+      "title": "Wing Loading",
+      "category": "Biomechanics",
+      "info": "Weight / wing area. High loading = fast landing, poor turns; low loading = floaty and agile. Match ikran's preset or invent your own flyer.",
+      "weight": "Weight",
+      "area": "Wing area",
+      "loading": "Loading",
+      "landSpeed": "Landing speed",
+      "agility": "Agility",
+      "ikran": "Ikran preset"
+    }
+  }
+}

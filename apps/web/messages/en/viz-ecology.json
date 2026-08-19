@@ -1,0 +1,198 @@
+{
+  "viz": {
+    "biological-market": {
+      "title": "Biological Market",
+      "category": "Ecology",
+      "info": "Partners trade — carbon for phosphorus. Shift the exchange rate; each side accepts or defects until a temporary equilibrium holds.",
+      "carbon": "Carbon offer",
+      "phosphorus": "P demand",
+      "accept": "Accept",
+      "defect": "Defect",
+      "equilibrium": "Equilibrium"
+    },
+    "carrying-capacity": {
+      "title": "Carrying Capacity",
+      "category": "Ecology",
+      "info": "Logistic growth toward ceiling K. Drag K; the sigmoid reshapes. Toggle overshoot and the population boom-busts around the line.",
+      "k": "K",
+      "population": "N",
+      "overshoot": "Overshoot",
+      "stable": "Stable approach"
+    },
+    "competitive-exclusion-principle": {
+      "title": "Competitive Exclusion",
+      "category": "Ecology",
+      "info": "Identical niches, one winner. Nudge relative fitness; only the knife-edge lets both persist — usually the fitter drives the other to zero.",
+      "fitnessA": "Fitness A",
+      "fitnessB": "Fitness B",
+      "coexist": "Coexist",
+      "exclude": "Excluded"
+    },
+    "density-dependence": {
+      "title": "Density Dependence",
+      "category": "Ecology",
+      "info": "Per-capita growth falls as the crowd thickens. Add bodies; the growth gauge drops — crowding is the brake.",
+      "density": "Density",
+      "growth": "Per-capita r",
+      "crowd": "Crowding"
+    },
+    "ecological-niche": {
+      "title": "Ecological Niche",
+      "category": "Ecology",
+      "info": "A hypervolume of tolerances. Slide axes — temperature, prey size, activity window — and the niche volume reshapes.",
+      "temp": "Temperature",
+      "food": "Food size",
+      "time": "Activity time",
+      "volume": "Niche volume"
+    },
+    "ecological-resilience": {
+      "title": "Ecological Resilience",
+      "category": "Ecology",
+      "info": "Ball-in-basin. Perturb the system; a deep basin pulls it home, a shallow one lets it escape. Depth is resilience.",
+      "depth": "Basin depth",
+      "perturb": "Perturb",
+      "stable": "Returns",
+      "flip": "State flip"
+    },
+    "functional-response": {
+      "title": "Functional Response",
+      "category": "Ecology",
+      "info": "Predator intake vs prey density — Type I linear, II saturating, III sigmoid. Handling time bends Type II.",
+      "typeI": "Type I",
+      "typeII": "Type II",
+      "typeIII": "Type III",
+      "handling": "Handling time",
+      "intake": "Intake"
+    },
+    "fundamental-niche": {
+      "title": "Fundamental Niche",
+      "category": "Ecology",
+      "info": "Full potential range without enemies. Toggle competitors; the translucent zone shrinks toward the realized niche.",
+      "full": "Fundamental",
+      "competitors": "Competitors on",
+      "shrink": "Shrinks"
+    },
+    "insurance-hypothesis": {
+      "title": "Insurance Hypothesis",
+      "category": "Ecology",
+      "info": "Diversity buffers function. Fire stress on a diverse plot vs monoculture — redundancy holds the line; monoculture folds.",
+      "diverse": "Diverse",
+      "mono": "Monoculture",
+      "stress": "Stress event",
+      "function": "Function left"
+    },
+    "keystone-species": {
+      "title": "Keystone Species",
+      "category": "Ecology",
+      "info": "Remove the keystone and the web cascades. Remove a peripheral node and almost nothing moves. Identity, not biomass, is power.",
+      "removeKey": "Remove keystone",
+      "removeOther": "Remove other",
+      "cascade": "Cascade",
+      "stable": "Stable"
+    },
+    "landscape-of-fear": {
+      "title": "Landscape of Fear",
+      "category": "Ecology",
+      "info": "Prey map risk, not just calories. Place predators; the foraging heatmap empties red zones even when food sits there.",
+      "risk": "Risk",
+      "forage": "Foraging",
+      "place": "Place predator",
+      "clear": "Clear"
+    },
+    "life-dinner-principle": {
+      "title": "Life–Dinner Principle",
+      "category": "Ecology",
+      "info": "Prey runs for life; predator for a meal. Selection pressure bars show why prey often evolves the edge. Tilt the asymmetry.",
+      "preyStake": "Prey stake",
+      "predStake": "Predator stake",
+      "pressure": "Selection pressure"
+    },
+    "lotka-volterra-equations": {
+      "title": "Lotka–Volterra",
+      "category": "Ecology",
+      "info": "Classic predator–prey ODEs. Tune birth, death, attack, conversion; the phase spiral and time series reshape live.",
+      "prey": "Prey N",
+      "pred": "Predator P",
+      "a": "Prey growth",
+      "b": "Attack",
+      "c": "Conversion",
+      "d": "Predator death"
+    },
+    "mutualism": {
+      "title": "Mutualism",
+      "category": "Ecology",
+      "info": "Reciprocal benefit. Sever the link and both fitness meters drop; restore it and the scale balances again.",
+      "linked": "Linked",
+      "severed": "Severed",
+      "fitnessA": "Partner A",
+      "fitnessB": "Partner B"
+    },
+    "niche-partitioning": {
+      "title": "Niche Partitioning",
+      "category": "Ecology",
+      "info": "Share a resource axis by spreading use curves. Overlap spikes competition; partition and coexistence stabilizes.",
+      "overlap": "Overlap",
+      "competition": "Competition",
+      "spread": "Spread niches"
+    },
+    "optimal-foraging-theory": {
+      "title": "Optimal Foraging",
+      "category": "Ecology",
+      "info": "Patches differ in return and travel cost. Marginal-value theorem marks the optimal leave time as you set patch value.",
+      "patch": "Patch value",
+      "travel": "Travel cost",
+      "leave": "Leave time",
+      "gain": "Gain rate"
+    },
+    "paradox-of-enrichment": {
+      "title": "Paradox of Enrichment",
+      "category": "Ecology",
+      "info": "Add resources and the system can destabilize. Raise K; oscillations grow until crash — enrichment is not always mercy.",
+      "k": "Enrichment K",
+      "amplitude": "Amplitude",
+      "stable": "Damped",
+      "crash": "Crash risk"
+    },
+    "prey-switching": {
+      "title": "Prey Switching",
+      "category": "Ecology",
+      "info": "As one prey thins, the predator shifts to the abundant type. Diet pie tracks frequency-dependent choice.",
+      "preyA": "Prey A",
+      "preyB": "Prey B",
+      "diet": "Diet share A"
+    },
+    "quorum-sensing": {
+      "title": "Quorum Sensing",
+      "category": "Ecology",
+      "info": "Each cell whispers a signal. Cross the density threshold and the colony flips behavior together — add cells to tip it.",
+      "cells": "Cell count",
+      "signal": "Signal",
+      "threshold": "Threshold",
+      "lit": "Colony on"
+    },
+    "realized-niche": {
+      "title": "Realized Niche",
+      "category": "Ecology",
+      "info": "Fundamental niche minus enemies. Toggle competitors and predators; the usable zone shrinks to what remains.",
+      "base": "Base zone",
+      "enemies": "Enemies on",
+      "realized": "Realized"
+    },
+    "source-sink-dynamics": {
+      "title": "Source–Sink Dynamics",
+      "category": "Ecology",
+      "info": "Source births exceed deaths; sink survives only on immigrants. Tune rates and watch the arrow keep the sink alive.",
+      "source": "Source N",
+      "sink": "Sink N",
+      "migration": "Migration"
+    },
+    "planetary-boundaries": {
+      "title": "Planetary Boundaries",
+      "category": "Ecology",
+      "info": "Nine wedges of Earth-system safe space. Push a boundary past its limit and it flares red — the operating envelope.",
+      "safe": "Safe",
+      "breach": "Breached",
+      "push": "Push boundary"
+    }
+  }
+}

@@ -1,284 +1,152 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
+import { ControlSlider } from "./shared/control-slider";
 import { GlossaryFrame } from "./shared/frame";
+import { Readout } from "./shared/readout";
 
+const CX = 50;
+const STAR_R = 16;
+
+// A moon tugs the planet around their shared barycentre, so the planet reaches
+// transit early or late depending on the moon's mass. We map mass (0..1) to a
+// timing offset in arbitrary "minutes" and slide the lightcurve dip to match.
 export default function TransitTimingVariation() {
-  const t = useTranslations("viz.transitTimingVariation");
-  const [hasCompanion, setHasCompanion] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(true);
-  const [theta, setTheta] = useState(0);
+  const t = useTranslations("viz.transit-timing-variation");
+  // Hidden moon mass, -1..1 — sign sets whether the planet is pulled ahead or
+  // behind; magnitude sets how far the transit slips.
+  const [moon, setMoon] = useState(0.4);
 
-  useEffect(() => {
-    if (!isPlaying) return;
-    let animationId: number;
+  // Timing offset: positive moon → late transit, negative → early.
+  const offsetMin = moon * 22;
+  const dipCenter = 50 + moon * 24; // shift dip across the lightcurve panel
+  const state =
+    Math.abs(moon) < 0.06 ? t("onTime") : moon > 0 ? t("late") : t("early");
 
-    const tick = () => {
-      setTheta((prev) => (prev + 0.03) % (2 * Math.PI * 8)); // Run up to 8 orbits
-      animationId = requestAnimationFrame(tick);
-    };
-
-    animationId = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(animationId);
-  }, [isPlaying]);
-
-  const center = { x: 200, y: 70 };
-  const rStar = 20;
-
-  // Orbit parameters
-  const rPlanet1 = 55;
-  const rPlanet2 = 90;
-
-  // Orbit angle calculations
-  const orbitAngle = theta % (2 * Math.PI);
-  const orbitIndex = Math.floor(theta / (2 * Math.PI)) % 8;
-
-  // Gravitational perturbation (TTV) offset
-  // Sinusoidal variation of transit time
-  const perturbation = hasCompanion ? 0.08 * Math.sin(orbitIndex * 1.5 + orbitAngle * 0.1) : 0;
-  const planet1Angle = orbitAngle + perturbation;
-
-  // Primary planet coordinates (tilted 3D ellipse)
-  const p1X = center.x + rPlanet1 * Math.cos(planet1Angle);
-  const p1Y = center.y + 18 * Math.sin(planet1Angle);
-  const isP1InFront = Math.sin(planet1Angle) > 0;
-
-  // Companion planet coordinates (tilted 3D ellipse, orbits slower)
-  const planet2Angle = (theta * 0.45) % (2 * Math.PI);
-  const p2X = center.x + rPlanet2 * Math.cos(planet2Angle);
-  const p2Y = center.y + 28 * Math.sin(planet2Angle);
-  const isP2InFront = Math.sin(planet2Angle) > 0;
-
-  // Transit indicator: primary planet is in front and overlapping star on x-axis
-  const isTransiting = isP1InFront && Math.abs(p1X - center.x) < rStar + 3;
-
-  // Light curve value (dips during transit)
-  let lightIntensity = 100;
-  if (isTransiting) {
-    const overlap = Math.max(0, 1 - Math.abs(p1X - center.x) / (rStar + 3));
-    lightIntensity = 100 - overlap * 12; // 12% dip
-  }
-
-  // TTV Deviation Graph parameters
-  const graphX = 60;
-  const graphY = 180;
-  const graphWidth = 280;
-  const graphHeight = 45;
-
-  // Deviation points for orbits 1 to 8
-  const points = Array.from({ length: 8 }).map((_, i) => {
-    const x = graphX + (i / 7) * graphWidth;
-    const deviation = hasCompanion ? 12 * Math.sin(i * 1.5) : 0;
-    const y = graphY + graphHeight / 2 - deviation;
-    return { x, y, index: i, deviation };
-  });
+  // Barycentre wobble: planet sits off-centre opposite the moon.
+  const planetOffset = -moon * 8;
 
   return (
     <GlossaryFrame
       title={t("title")}
-      infoText={t("hint")}
-      onReset={() => {
-        setHasCompanion(false);
-        setTheta(0);
-        setIsPlaying(true);
-      }}
-      onPlayPause={() => setIsPlaying(!isPlaying)}
-      isPlaying={isPlaying}
-      aspectRatio="aspect-[16/10]"
+      category={t("category")}
+      infoText={t("info")}
+      aspectRatio="16/10"
+      caption={
+        <span
+          style={{ color: Math.abs(moon) < 0.06 ? "var(--muted)" : "var(--amber)" }}
+        >
+          {state}
+        </span>
+      }
     >
-      <div className="relative w-full h-full flex flex-col justify-end p-4">
-        {/* Orbits Visualizer */}
-        <div className="absolute inset-0 flex flex-col justify-start p-4 pb-20">
-          <svg viewBox="0 0 400 240" className="w-full h-full select-none">
-            <title>Transit Timing Variations</title>
+      <div className="flex h-full w-full flex-col gap-3 p-4 pt-16">
+        {/* Star + planet + hidden moon orbiting barycentre */}
+        <div className="relative flex-1">
+          <svg
+            viewBox="0 0 100 60"
+            className="h-full w-full"
+            preserveAspectRatio="xMidYMid meet"
+            role="img"
+            aria-label={t("title")}
+          >
             <defs>
-              <radialGradient id="starGlow" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stopColor="#fff4e8" />
-                <stop offset="70%" stopColor="#ffeaad" stopOpacity="0.8" />
-                <stop offset="100%" stopColor="#ffeaad" stopOpacity="0" />
+              <radialGradient id="ttv-star" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stopColor="#fff6e0" />
+                <stop offset="60%" stopColor="var(--amber)" />
+                <stop offset="100%" stopColor="#a85f1c" />
               </radialGradient>
             </defs>
 
-            {/* Orbit Paths (Back Half) */}
-            <path
-              d={`M ${center.x - rPlanet1} ${center.y} A ${rPlanet1} 18 0 0 1 ${center.x + rPlanet1} ${center.y}`}
-              className="fill-none stroke-border/10 stroke-1 stroke-dasharray-[2,2]"
-            />
-            {hasCompanion && (
-              <path
-                d={`M ${center.x - rPlanet2} ${center.y} A ${rPlanet2} 28 0 0 1 ${center.x + rPlanet2} ${center.y}`}
-                className="fill-none stroke-border/10 stroke-1 stroke-dasharray-[2,2]"
-              />
-            )}
+            <circle cx={CX} cy={30} r={STAR_R + 4} fill="var(--amber)" opacity="0.12" />
+            <circle cx={CX} cy={30} r={STAR_R} fill="url(#ttv-star)" />
 
-            {/* Planets behind star */}
-            {!isP1InFront && <circle cx={p1X} cy={p1Y} r={3} fill="#8a93a8" opacity="0.7" />}
-            {hasCompanion && !isP2InFront && (
-              <circle cx={p2X} cy={p2Y} r={2} fill="#8a93a8" opacity="0.6" />
-            )}
+            {/* barycentre marker */}
+            <circle cx={CX} cy={30} r="0.8" fill="var(--border-strong)" />
 
-            {/* Star */}
-            <circle cx={center.x} cy={center.y} r={rStar + 10} fill="url(#starGlow)" />
+            {/* planet — pulled off the barycentre line opposite the moon */}
+            <circle cx={CX + planetOffset} cy={30} r="5" fill="var(--cyan)" />
             <circle
-              cx={center.x}
-              cy={center.y}
-              r={rStar}
-              fill="#ffeaad"
-              style={{ filter: "drop-shadow(0 0 10px rgba(255, 234, 173, 0.4))" }}
+              cx={CX + planetOffset}
+              cy={30}
+              r="5"
+              fill="none"
+              stroke="var(--border-strong)"
+              strokeWidth="0.5"
             />
 
-            {/* Orbit Paths (Front Half) */}
-            <path
-              d={`M ${center.x + rPlanet1} ${center.y} A ${rPlanet1} 18 0 0 1 ${center.x - rPlanet1} ${center.y}`}
-              className="fill-none stroke-border/20 stroke-1"
+            {/* hidden moon — faint, sits opposite the planet, scales with mass */}
+            <circle
+              cx={CX - planetOffset * 2}
+              cy={30}
+              r={1.5 + Math.abs(moon) * 3.5}
+              fill="var(--magenta)"
+              opacity={0.25 + Math.abs(moon) * 0.5}
             />
-            {hasCompanion && (
-              <path
-                d={`M ${center.x + rPlanet2} ${center.y} A ${rPlanet2} 28 0 0 1 ${center.x - rPlanet2} ${center.y}`}
-                className="fill-none stroke-border/20 stroke-1"
-              />
-            )}
-
-            {/* Planets in front of star */}
-            {isP1InFront && (
-              <circle
-                cx={p1X}
-                cy={p1Y}
-                r={4}
-                fill={isTransiting ? "#070912" : "#36c5d9"}
-                className="stroke-cyan/50 stroke-0.5"
-                style={{
-                  filter: isTransiting ? "none" : "drop-shadow(0 0 4px var(--cyan))",
-                }}
-              />
-            )}
-            {hasCompanion && isP2InFront && (
-              <circle
-                cx={p2X}
-                cy={p2Y}
-                r={2.5}
-                fill="#ff5da8"
-                style={{ filter: "drop-shadow(0 0 4px var(--magenta))" }}
-              />
-            )}
-
-            {/* Transit Timing Deviation Plot */}
-            <g>
-              {/* Box border */}
-              <rect
-                x={graphX - 10}
-                y={graphY - 5}
-                width={graphWidth + 20}
-                height={graphHeight + 10}
-                rx={6}
-                fill="#070912"
-                className="stroke-border/20 stroke-1"
-              />
-
-              {/* Zero deviation line */}
-              <line
-                x1={graphX}
-                y1={graphY + graphHeight / 2}
-                x2={graphX + graphWidth}
-                y2={graphY + graphHeight / 2}
-                className="stroke-border/10 stroke-0.5 stroke-dasharray-[2,2]"
-              />
-
-              {/* Deviation sine line (if companion active) */}
-              {hasCompanion && (
-                <path
-                  d={`M ${points[0].x} ${points[0].y} ${points.map((p) => `L ${p.x} ${p.y}`).join(" ")}`}
-                  fill="none"
-                  className="stroke-magenta/30 stroke-1"
-                />
-              )}
-
-              {/* Graph points */}
-              {points.map((pt) => {
-                const isActive = orbitIndex === pt.index;
-                return (
-                  <g key={pt.index}>
-                    <circle
-                      cx={pt.x}
-                      cy={pt.y}
-                      r={isActive ? 4.5 : 2.5}
-                      fill={isActive ? (hasCompanion ? "#ff5da8" : "#36c5d9") : "#8a93a8"}
-                      style={{
-                        filter: isActive
-                          ? `drop-shadow(0 0 4px ${hasCompanion ? "var(--magenta)" : "var(--cyan)"})`
-                          : "none",
-                      }}
-                    />
-                    <text
-                      x={pt.x}
-                      y={graphY + graphHeight + 6}
-                      className="fill-muted/40 text-[5px] font-mono"
-                      textAnchor="middle"
-                    >
-                      E{pt.index + 1}
-                    </text>
-                  </g>
-                );
-              })}
-
-              {/* Graph Label */}
-              <text x={graphX} y={graphY + 6} className="fill-muted/40 text-[6px] font-mono">
-                {t("deviation")}
-              </text>
-            </g>
+            <text
+              x={CX - planetOffset * 2}
+              y={42}
+              textAnchor="middle"
+              fontSize="3.4"
+              fill="var(--magenta)"
+              opacity="0.7"
+              fontFamily="monospace"
+            >
+              ?
+            </text>
           </svg>
         </div>
 
-        {/* HUD Indicator */}
-        <div className="absolute top-16 left-4 right-4 flex justify-between gap-4 pointer-events-none z-10">
-          <div className="bg-void/90 border border-border/40 rounded-xl p-3 min-w-[150px] pointer-events-auto shadow-lg">
-            <h5 className="text-[10px] font-mono font-bold text-muted uppercase mb-1">
-              OBSERVATION
-            </h5>
-            <div className="text-xs font-mono font-semibold tracking-wide">
-              {hasCompanion ? (
-                <span className="text-magenta">{t("perturbed")}</span>
-              ) : (
-                <span className="text-teal">{t("regular")}</span>
-              )}
-            </div>
-            <div className="text-[9px] text-muted mt-1 font-mono">
-              Orbit Index: <span className="text-foreground">#{orbitIndex + 1}/8</span>
-            </div>
-          </div>
-
-          {/* Light curve meter */}
-          <div className="bg-void/90 border border-border/40 rounded-xl p-3 min-w-[130px] pointer-events-auto flex flex-col justify-center shadow-lg">
-            <div className="flex justify-between text-[9px] font-mono text-muted mb-1">
-              <span>LIGHT CURVE</span>
-              <span className={isTransiting ? "text-cyan animate-pulse" : "text-muted"}>
-                {lightIntensity.toFixed(0)}%
-              </span>
-            </div>
-            <div className="relative w-full h-2 rounded bg-surface border border-border/20 overflow-hidden">
-              <div
-                className="h-full bg-cyan transition-all duration-100"
-                style={{ width: `${lightIntensity}%` }}
-              />
-            </div>
-          </div>
+        {/* Lightcurve panel — dip slides with the timing offset */}
+        <div className="relative h-14 w-full overflow-hidden rounded-lg border border-border/40 bg-void/70">
+          <svg
+            viewBox="0 0 100 30"
+            className="h-full w-full"
+            preserveAspectRatio="none"
+            aria-hidden
+          >
+            {/* on-time reference dip */}
+            <path
+              d="M0 6 H42 L48 20 H52 L58 6 H100"
+              fill="none"
+              stroke="var(--border-strong)"
+              strokeWidth="0.8"
+              strokeDasharray="2 2"
+              opacity="0.5"
+            />
+            {/* shifted observed dip */}
+            <path
+              d={`M0 6 H${dipCenter - 8} L${dipCenter - 2} 22 H${dipCenter + 2} L${dipCenter + 8} 6 H100`}
+              fill="none"
+              stroke="var(--cyan)"
+              strokeWidth="1.4"
+            />
+          </svg>
+          <span className="absolute bottom-1 left-2 font-mono text-[8px] uppercase tracking-wider text-muted">
+            {t("lightcurve")}
+          </span>
         </div>
 
-        {/* Bottom controls panel */}
-        <div className="relative z-10 w-full flex items-center justify-between gap-6 mt-auto bg-void/65 backdrop-blur-md px-4 py-2.5 border border-border/30 rounded-xl">
-          {/* Companion Planet Toggle */}
-          <button
-            type="button"
-            onClick={() => setHasCompanion(!hasCompanion)}
-            className={`px-3 py-1 text-xs font-mono font-semibold rounded-lg border cursor-pointer transition-all ${
-              hasCompanion
-                ? "bg-magenta/10 border-magenta text-magenta"
-                : "bg-surface border-border hover:border-magenta/50 text-muted"
-            }`}
-          >
-            {t("companion")}
-          </button>
+        {/* Hidden-moon mass slider + timing readout */}
+        <div className="flex items-end gap-3">
+          <ControlSlider
+            className="flex-1"
+            label={t("moonMass")}
+            value={moon}
+            min={-1}
+            max={1}
+            step={0.01}
+            onChange={setMoon}
+            display={`${(Math.abs(moon) * 100).toFixed(0)}%`}
+            thumb="magenta"
+          />
+          <Readout
+            label={t("shift")}
+            value={`${offsetMin > 0 ? "+" : ""}${offsetMin.toFixed(0)}`}
+            unit="min"
+            accent={Math.abs(moon) < 0.06 ? "foreground" : "amber"}
+          />
         </div>
       </div>
     </GlossaryFrame>

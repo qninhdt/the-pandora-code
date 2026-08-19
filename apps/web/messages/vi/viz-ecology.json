@@ -1,0 +1,198 @@
+{
+  "viz": {
+    "biological-market": {
+      "title": "Thị trường sinh học",
+      "category": "Sinh thái",
+      "info": "Đối tác trao đổi — carbon lấy phosphorus. Đổi tỷ giá; mỗi bên chấp nhận hoặc phản bội đến khi cân bằng tạm giữ.",
+      "carbon": "Chào carbon",
+      "phosphorus": "Nhu cầu P",
+      "accept": "Chấp nhận",
+      "defect": "Phản bội",
+      "equilibrium": "Cân bằng"
+    },
+    "carrying-capacity": {
+      "title": "Sức chứa",
+      "category": "Sinh thái",
+      "info": "Tăng trưởng logistic hướng trần K. Kéo K; sigmoid đổi hình. Bật overshoot và quần thể boom-bust quanh đường.",
+      "k": "K",
+      "population": "N",
+      "overshoot": "Vượt trần",
+      "stable": "Tiệm cận ổn"
+    },
+    "competitive-exclusion-principle": {
+      "title": "Loại trừ cạnh tranh",
+      "category": "Sinh thái",
+      "info": "Cùng niche, một kẻ thắng. Chỉnh fitness tương đối; chỉ mép dao cho cả hai sống — thường kẻ khỏe hơn đẩy cái kia về không.",
+      "fitnessA": "Fitness A",
+      "fitnessB": "Fitness B",
+      "coexist": "Đồng tồn",
+      "exclude": "Bị loại"
+    },
+    "density-dependence": {
+      "title": "Phụ thuộc mật độ",
+      "category": "Sinh thái",
+      "info": "Tăng trưởng per-capita giảm khi đông. Thêm cá thể; gauge r rơi — chật chội là phanh.",
+      "density": "Mật độ",
+      "growth": "r per-capita",
+      "crowd": "Chật chội"
+    },
+    "ecological-niche": {
+      "title": "Ổ sinh thái",
+      "category": "Sinh thái",
+      "info": "Siêu thể tích các dung sai. Trượt trục — nhiệt, cỡ mồi, cửa sổ hoạt động — và thể tích niche đổi hình.",
+      "temp": "Nhiệt độ",
+      "food": "Cỡ thức ăn",
+      "time": "Thời gian hoạt động",
+      "volume": "Thể tích niche"
+    },
+    "ecological-resilience": {
+      "title": "Khả năng phục hồi sinh thái",
+      "category": "Sinh thái",
+      "info": "Bi trong chậu. Nhiễu hệ; chậu sâu kéo về, chậu nông để thoát. Độ sâu là resilience.",
+      "depth": "Độ sâu chậu",
+      "perturb": "Nhiễu",
+      "stable": "Trở lại",
+      "flip": "Lật trạng thái"
+    },
+    "functional-response": {
+      "title": "Đáp ứng chức năng",
+      "category": "Sinh thái",
+      "info": "Tiêu thụ thú săn vs mật độ mồi — Type I tuyến, II bão hòa, III sigmoid. Handling time uốn Type II.",
+      "typeI": "Type I",
+      "typeII": "Type II",
+      "typeIII": "Type III",
+      "handling": "Thời gian xử lý",
+      "intake": "Tiêu thụ"
+    },
+    "fundamental-niche": {
+      "title": "Ổ cơ bản",
+      "category": "Sinh thái",
+      "info": "Phạm vi tiềm năng đầy đủ không kẻ thù. Bật đối thủ; vùng mờ co về ổ thực hiện.",
+      "full": "Cơ bản",
+      "competitors": "Đối thủ bật",
+      "shrink": "Co lại"
+    },
+    "insurance-hypothesis": {
+      "title": "Giả thuyết bảo hiểm",
+      "category": "Sinh thái",
+      "info": "Đa dạng đệm chức năng. Bắn stress lên đa dạng vs độc canh — dư thừa giữ nhịp; độc canh gãy.",
+      "diverse": "Đa dạng",
+      "mono": "Độc canh",
+      "stress": "Sự kiện stress",
+      "function": "Chức năng còn"
+    },
+    "keystone-species": {
+      "title": "Loài then chốt",
+      "category": "Sinh thái",
+      "info": "Gỡ keystone và lưới đổ dây chuyền. Gỡ nút ngoại vi gần như không đổi. Bản sắc, không biomass, là quyền lực.",
+      "removeKey": "Gỡ keystone",
+      "removeOther": "Gỡ khác",
+      "cascade": "Thác đổ",
+      "stable": "Ổn"
+    },
+    "landscape-of-fear": {
+      "title": "Phong cảnh nỗi sợ",
+      "category": "Sinh thái",
+      "info": "Mồi vẽ rủi ro, không chỉ calorie. Đặt thú săn; heatmap kiếm ăn trống vùng đỏ dù vẫn có thức ăn.",
+      "risk": "Rủi ro",
+      "forage": "Kiếm ăn",
+      "place": "Đặt thú săn",
+      "clear": "Xóa"
+    },
+    "life-dinner-principle": {
+      "title": "Nguyên lý sống–bữa ăn",
+      "category": "Sinh thái",
+      "info": "Mồi chạy vì mạng; thú săn vì bữa. Thanh chọn lọc cho thấy vì sao mồi thường tiến hóa nhanh hơn. Nghiêng bất đối xứng.",
+      "preyStake": "Cược mồi",
+      "predStake": "Cược thú săn",
+      "pressure": "Áp lực chọn lọc"
+    },
+    "lotka-volterra-equations": {
+      "title": "Lotka–Volterra",
+      "category": "Sinh thái",
+      "info": "ODE thú săn–mồi kinh điển. Chỉnh sinh, chết, tấn công, chuyển đổi; xoắn phase và chuỗi thời gian đổi live.",
+      "prey": "Mồi N",
+      "pred": "Thú săn P",
+      "a": "Tăng mồi",
+      "b": "Tấn công",
+      "c": "Chuyển đổi",
+      "d": "Chết thú săn"
+    },
+    "mutualism": {
+      "title": "Cộng sinh đôi bên",
+      "category": "Sinh thái",
+      "info": "Lợi ích qua lại. Cắt liên kết và cả hai meter fitness rơi; nối lại và cán cân cân bằng.",
+      "linked": "Liên kết",
+      "severed": "Cắt",
+      "fitnessA": "Đối tác A",
+      "fitnessB": "Đối tác B"
+    },
+    "niche-partitioning": {
+      "title": "Phân chia ổ",
+      "category": "Sinh thái",
+      "info": "Chia trục tài nguyên bằng cách xòe đường dùng. Chồng chéo tăng cạnh tranh; tách và đồng tồn ổn.",
+      "overlap": "Chồng chéo",
+      "competition": "Cạnh tranh",
+      "spread": "Xòe niche"
+    },
+    "optimal-foraging-theory": {
+      "title": "Kiếm ăn tối ưu",
+      "category": "Sinh thái",
+      "info": "Mảng khác lợi nhuận và chi phí đi. Định lý giá trị biên đánh dấu thời điểm rời tối ưu khi bạn đặt giá mảng.",
+      "patch": "Giá mảng",
+      "travel": "Chi phí đi",
+      "leave": "Thời điểm rời",
+      "gain": "Tốc độ thu"
+    },
+    "paradox-of-enrichment": {
+      "title": "Nghịch lý làm giàu",
+      "category": "Sinh thái",
+      "info": "Thêm tài nguyên có thể làm hệ mất ổn. Tăng K; biên độ dao động lớn đến sụp — làm giàu không luôn là thương xót.",
+      "k": "K làm giàu",
+      "amplitude": "Biên độ",
+      "stable": "Giảm dần",
+      "crash": "Rủi ro sụp"
+    },
+    "prey-switching": {
+      "title": "Chuyển mồi",
+      "category": "Sinh thái",
+      "info": "Khi một mồi thưa, thú săn chuyển sang loại dồi dào. Pie khẩu phần theo lựa chọn phụ thuộc tần suất.",
+      "preyA": "Mồi A",
+      "preyB": "Mồi B",
+      "diet": "Tỉ lệ khẩu phần A"
+    },
+    "quorum-sensing": {
+      "title": "Cảm ứng quần thể",
+      "category": "Sinh thái",
+      "info": "Mỗi tế bào thì thầm tín hiệu. Vượt ngưỡng mật độ và cả khuẩn lạc lật hành vi cùng lúc — thêm tế bào để lật.",
+      "cells": "Số tế bào",
+      "signal": "Tín hiệu",
+      "threshold": "Ngưỡng",
+      "lit": "Khuẩn lạc bật"
+    },
+    "realized-niche": {
+      "title": "Ổ thực hiện",
+      "category": "Sinh thái",
+      "info": "Ổ cơ bản trừ kẻ thù. Bật đối thủ và thú săn; vùng dùng được co lại còn phần sống sót.",
+      "base": "Vùng gốc",
+      "enemies": "Kẻ thù bật",
+      "realized": "Thực hiện"
+    },
+    "source-sink-dynamics": {
+      "title": "Động lực nguồn–hố",
+      "category": "Sinh thái",
+      "info": "Nguồn sinh > chết; hố sống nhờ người nhập cư. Chỉnh tỷ lệ và xem mũi tên nuôi hố.",
+      "source": "Nguồn N",
+      "sink": "Hố N",
+      "migration": "Di cư"
+    },
+    "planetary-boundaries": {
+      "title": "Ranh giới hành tinh",
+      "category": "Sinh thái",
+      "info": "Chín múi không gian an toàn hệ Trái Đất. Đẩy ranh giới quá giới hạn và nó đỏ — phong bì vận hành.",
+      "safe": "An toàn",
+      "breach": "Vượt",
+      "push": "Đẩy ranh giới"
+    }
+  }
+}

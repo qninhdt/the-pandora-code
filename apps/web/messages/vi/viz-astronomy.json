@@ -1,0 +1,244 @@
+{
+  "viz": {
+    "alpha-centauri": {
+      "title": "Alpha Centauri",
+      "category": "Thiên văn học",
+      "info": "Hệ sao gần Trái Đất nhất — ba ngôi sao: một sao lùn vàng giống Mặt Trời (người Na'vi gọi là Tsawke), một sao lùn cam, và Proxima đỏ ở đằng xa. Pandora quay quanh Polyphemus, còn Polyphemus quay quanh Alpha Centauri A. Nhấp vào một ngôi sao để xem thẻ thông tin.",
+      "starA": "Alpha Centauri A",
+      "starB": "Alpha Centauri B",
+      "proxima": "Proxima Centauri",
+      "classG": "Sao lùn vàng G2 — Tsawke",
+      "classK": "Sao lùn cam K1",
+      "classM": "Sao lùn đỏ M5",
+      "hint": "Nhấp vào một ngôi sao"
+    },
+    "habitable-zone": {
+      "title": "Vùng ở được",
+      "category": "Sinh học vũ trụ",
+      "info": "Dải khoảng cách quanh một ngôi sao nơi nước lỏng có thể tồn tại — không quá nóng, không quá lạnh. Sao càng sáng thì vùng này càng lùi xa. Kéo khối lượng sao để thấy Pandora trôi vào và ra khỏi dải xanh.",
+      "mass": "Khối lượng sao",
+      "zone": "Dải Goldilocks",
+      "tooHot": "quá nóng",
+      "tooCold": "quá lạnh",
+      "inZone": "Pandora: ở được",
+      "outZone": "Pandora: không ở được"
+    },
+    "exomoon": {
+      "title": "Mặt trăng ngoại hệ",
+      "category": "Khoa học hành tinh",
+      "info": "Một mặt trăng quay quanh hành tinh ở hệ sao khác. Mặt trăng ngoại hệ ở được phải cân bằng bốn nguồn nhiệt — ánh sáng sao trực tiếp, ánh sáng phản chiếu từ hành tinh, bức xạ hồng ngoại của hành tinh khí, và nhiệt thủy triều bên trong. Thu nhỏ quỹ đạo và nhiệt thủy triều tăng lên.",
+      "radius": "Bán kính quỹ đạo",
+      "heat": "Nhiệt thủy triều",
+      "cold": "đóng băng",
+      "warm": "ôn hòa",
+      "molten": "nóng chảy"
+    },
+    "roche-limit": {
+      "title": "Giới hạn Roche",
+      "category": "Cơ học quỹ đạo",
+      "info": "Khoảng cách gần nhất mà một mặt trăng có thể tiếp cận trước khi lực thủy triều của hành tinh áp đảo trọng lực của chính nó và xé toạc nó thành vành đai mảnh vụn. Kéo mặt trăng vào trong qua giới hạn và xem nó tan rã.",
+      "distance": "Khoảng cách tiếp cận",
+      "intact": "nguyên vẹn",
+      "shedding": "đang mất khối lượng",
+      "disrupted": "tan rã → vành đai",
+      "limit": "Giới hạn Roche"
+    },
+    "accretion": {
+      "title": "Bồi tụ",
+      "category": "Khoa học hành tinh",
+      "info": "Cách hành tinh và mặt trăng lớn lên — bằng cách gom bụi và khí từ đĩa xung quanh. Tăng tốc độ co sụp và xem hàng trăm hạt xoáy vào trong rồi kết tụ thành một tiền hành tinh trẻ.",
+      "rate": "Tốc độ co sụp",
+      "mass": "Khối lượng tiền hành tinh",
+      "disk": "đĩa",
+      "forming": "đang kết tụ",
+      "formed": "tiền hành tinh"
+    },
+    "planetary-differentiation": {
+      "title": "Sự phân tầng hành tinh",
+      "category": "Địa chất",
+      "info": "Một thế giới trẻ nóng chảy tách theo mật độ — kim loại nặng chìm xuống tạo lõi, đá nhẹ hơn nổi lên tạo manti và vỏ. Tua qua thời gian để xem các lớp tự sắp xếp.",
+      "time": "Thời gian",
+      "core": "Lõi sắt",
+      "mantle": "Manti",
+      "crust": "Vỏ",
+      "molten": "khối nóng chảy chưa phân tầng",
+      "layered": "phân tầng hoàn toàn"
+    },
+    "biosignature": {
+      "title": "Dấu ấn sinh học",
+      "category": "Sinh học vũ trụ",
+      "info": "Dấu hiệu khí quyển mạnh nhất của sự sống không phải một loại khí mà là sự cùng tồn tại của những khí lẽ ra phải triệt tiêu nhau — như O₂ và CH₄. Chúng chỉ song hành nếu có sự sống liên tục bù đắp. Bật/tắt các khí trên một thế giới chết so với thế giới sống và xem ánh sáng mất cân bằng.",
+      "dead": "Thế giới chết",
+      "living": "Thế giới sống",
+      "balanced": "chết về mặt hóa học — khí ở cân bằng",
+      "imbalance": "mất cân bằng — một dấu ấn sinh học",
+      "o2": "O₂ oxy",
+      "ch4": "CH₄ methane",
+      "co2": "CO₂ carbon dioxide"
+    },
+    "direct-imaging": {
+      "title": "Chụp ảnh trực tiếp",
+      "category": "Khoa học hành tinh",
+      "info": "Phương pháp săn hành tinh khó nhất: thu lấy ánh sáng của chính hành tinh bằng cách che ánh chói của ngôi sao sau một tấm chắn (coronagraph). Trượt tấm chắn vào vị trí và xem ngôi sao biến mất, để lộ một hành tinh mờ nhạt trong vùng tối đã được dọn quang.",
+      "occulter": "Vị trí tấm chắn",
+      "open": "ánh chói sao tràn ngập",
+      "blocked": "sao bị che — hành tinh lộ ra",
+      "star": "Ngôi sao",
+      "planet": "Hành tinh"
+    },
+    "radial-velocity": {
+      "title": "Vận tốc xuyên tâm",
+      "category": "Khoa học hành tinh",
+      "info": "Ngôi sao và hành tinh cùng quay quanh khối tâm chung, nên ngôi sao chao đảo. Tiến về phía ta ánh sáng dịch xanh, lùi ra xa dịch đỏ — sự lắc Doppler. Đọc nhịp dịch màu để tính chu kỳ và khối lượng tối thiểu của hành tinh.",
+      "speed": "Tốc độ quỹ đạo",
+      "approaching": "đang tiến lại — dịch xanh",
+      "receding": "đang lùi xa — dịch đỏ",
+      "line": "Vạch quang phổ",
+      "rest": "bước sóng nghỉ"
+    },
+    "transmission-spectroscopy": {
+      "title": "Quang phổ truyền qua",
+      "category": "Thiên văn học",
+      "info": "Khi một hành tinh đi qua ngôi sao, một dải ánh sáng sao len qua bầu khí quyển của nó. Mỗi loại khí hấp thụ ở những bước sóng đặc trưng, để lại các vạch dấu vân tay tối trong quang phổ. Bật/tắt các phân tử để thấy dải hấp thụ của chúng xuất hiện.",
+      "h2o": "H₂O nước",
+      "co2": "CO₂ carbon dioxide",
+      "ch4": "CH₄ methane",
+      "spectrum": "Quang phổ truyền qua",
+      "transit": "đang đi qua",
+      "out": "ngoài lúc đi qua"
+    },
+    "transit-timing-variation": {
+      "title": "Biến thiên thời gian đi qua",
+      "category": "Cơ học quỹ đạo",
+      "info": "Một mặt trăng kéo hành tinh của nó quanh khối tâm chung, nên hành tinh đi qua ngôi sao sớm hơn hoặc muộn hơn một chút mỗi vòng. Kéo mặt trăng ẩn và xem điểm lõm của đường cong sáng dịch chuyển — dấu vân tay của một thiên thể vô hình.",
+      "moonMass": "Khối lượng mặt trăng ẩn",
+      "early": "đi qua sớm",
+      "onTime": "đi qua đúng giờ",
+      "late": "đi qua muộn",
+      "lightcurve": "Độ sáng",
+      "shift": "Độ dịch thời gian"
+    },
+    "tidal-heating": {
+      "title": "Nhiệt thủy triều",
+      "category": "Khoa học hành tinh",
+      "info": "Trên quỹ đạo lệch tâm, một mặt trăng bị ép mạnh hơn khi lại gần, nhẹ hơn khi ra xa — sự co giãn nhịp nhàng đó làm nóng phần bên trong nhờ ma sát. Nó tạo ra núi lửa của Io và địa chất của Pandora. Tăng độ lệch tâm và lõi sẽ rực sáng hơn.",
+      "ecc": "Độ lệch tâm quỹ đạo",
+      "heat": "Nhiệt bên trong",
+      "cool": "lạnh & chết",
+      "warm": "hoạt động địa chất",
+      "molten": "núi lửa — giống Io"
+    },
+    "faint-young-sun-paradox": {
+      "title": "Nghịch lý Mặt Trời trẻ mờ nhạt",
+      "category": "Hệ Trái Đất",
+      "info": "Bốn tỉ năm trước Mặt Trời mờ hơn khoảng 30%, vậy mà đá lại ghi lại nước lỏng chứ không phải quả cầu tuyết đóng băng. Tua qua thời gian sâu: đường cong mặt trời mờ kéo nhiệt độ bề mặt xuống dải băng giá — cho đến khi bạn bật bộ điều nhiệt carbonate-silicate và hiệu ứng nhà kính CO₂ dày hơn giữ ấm thế giới.",
+      "time": "Tỉ năm trước",
+      "luminosity": "Độ sáng Mặt Trời",
+      "temperature": "Nhiệt độ bề mặt",
+      "thermostat": "Bộ điều nhiệt CO₂",
+      "frozen": "quả cầu tuyết — lẽ ra đóng băng",
+      "liquid": "nước lỏng — được giữ ấm",
+      "paradox": "nghịch lý: sao mờ, không băng"
+    },
+    "gyrochronology": {
+      "title": "Định tuổi bằng vận tốc quay",
+      "category": "Thiên văn học",
+      "info": "Một ngôi sao khối lượng thấp là chiếc đồng hồ mà bạn đọc qua tốc độ quay. Sao trẻ quay nhanh và sáng; qua hàng tỉ năm, gió từ tính rút dần mô men động lượng và tốc độ quay chậm lại có thể dự đoán. Kéo tuổi và xem các vết đen bò chậm hơn cùng ánh sáng nguội đi — chu kỳ tự quay cho ra tuổi.",
+      "age": "Tuổi sao",
+      "period": "Chu kỳ tự quay",
+      "young": "trẻ — quay nhanh",
+      "old": "già — quay chậm",
+      "spot": "vết đen sao"
+    },
+    "libration": {
+      "title": "Sự bình động",
+      "category": "Cơ học quỹ đạo",
+      "info": "Một mặt trăng bị khóa thủy triều trung bình chỉ hướng một mặt — nhưng quỹ đạo lệch tâm và trục nghiêng khiến nó lắc lư và gật gù chậm rãi, cho ta nhìn lần lượt qua từng rìa. Chính sự lắc đó là lý do ta thấy 59% Mặt Trăng chứ không phải một nửa. Tắt bình động để đóng băng mặt trăng đứng yên.",
+      "wobble": "Sự bình động",
+      "on": "đang lắc — thấy 59%",
+      "off": "đóng băng — thấy 50%",
+      "visible": "Bề mặt nhìn thấy",
+      "nearside": "mặt gần"
+    },
+    "obliquity": {
+      "title": "Độ nghiêng trục",
+      "category": "Khoa học hành tinh",
+      "info": "Các mùa đến từ độ nghiêng trục, không phải khoảng cách đến sao. Bán cầu nào nghiêng về phía mặt trời sẽ đón nhiều ánh sáng trực tiếp hơn và ấm hơn; bán cầu kia nghiêng vào mùa đông và tích băng. Kéo độ nghiêng từ thẳng đứng đến dốc và xem chỏm băng cùng các mùa dao động.",
+      "tilt": "Độ nghiêng trục",
+      "upright": "không nghiêng — không có mùa",
+      "steep": "nghiêng dốc — mùa khắc nghiệt",
+      "summer": "bán cầu mùa hè",
+      "winter": "bán cầu mùa đông"
+    },
+    "orbital-resonance": {
+      "title": "Cộng hưởng quỹ đạo",
+      "category": "Cơ học quỹ đạo",
+      "info": "Khi các mặt trăng rơi vào tỉ lệ chu kỳ số nguyên đơn giản, chúng kéo nhau tại cùng những điểm mỗi vòng quỹ đạo, khóa vào một nhịp điệu — như Io, Europa và Ganymede ở tỉ lệ 4:2:1. Những cú kéo định kỳ giữ quỹ đạo lệch tâm và nuôi nhiệt thủy triều. Chọn một tỉ lệ và xem hoa văn vẽ ra khóa gọn hay tan thành hỗn loạn.",
+      "ratio": "Tỉ lệ cộng hưởng",
+      "locked": "khóa — nhịp ổn định",
+      "chaotic": "lệch tỉ lệ — trôi dạt",
+      "inner": "mặt trăng trong",
+      "outer": "mặt trăng ngoài"
+    },
+    "planetshine": {
+      "title": "Ánh sáng hành tinh",
+      "category": "Thiên văn học",
+      "info": "Ánh sáng mặt trời phản chiếu khỏi một hành tinh khí khổng lồ tràn ngập nửa ban đêm của mặt trăng nó — đúng kiểu khiến phần tối của vầng trăng lưỡi liềm non mờ ảo hiện ra (ánh sáng Trái Đất). Polyphemus quá lớn và sáng đến mức nửa đêm hướng về hành tinh của Pandora hiếm khi tối thực sự. Bật ánh sáng phản chiếu và xem thế giới phát quang sinh học bừng sáng.",
+      "shine": "Ánh sáng hành tinh",
+      "on": "đêm sáng — ánh dịu",
+      "off": "tối thực sự",
+      "phase": "Pha hành tinh",
+      "nightside": "nửa đêm mặt trăng"
+    },
+    "sidereal-day": {
+      "title": "Ngày sao",
+      "category": "Thiên văn học",
+      "info": "Ngày sao là một vòng quay 360° thực sự đo theo các vì sao xa. Nhưng trong khi quay, thế giới cũng di chuyển dọc quỹ đạo, nên phải xoay thêm chút nữa để đưa mặt trời trở lại đỉnh đầu — vòng quay thêm đó là ngày mặt trời. Bước qua quỹ đạo và xem hai mốc ngày tách dần ra.",
+      "star": "so với sao cố định",
+      "sun": "so với mặt trời",
+      "sidereal": "ngày sao — quay đủ 360°",
+      "solar": "mặt trời — về lại đỉnh đầu",
+      "gap": "vòng quay thêm cần thiết"
+    },
+    "spin-orbit-resonance": {
+      "title": "Cộng hưởng spin-quỹ đạo",
+      "category": "Cơ học quỹ đạo",
+      "info": "Một mối khóa số nguyên giữa số lần một thế giới tự quay và số lần nó đi quỹ đạo. Khóa thủy triều là trường hợp 1:1; Sao Thủy mắc kẹt ở 3:2 — ba vòng quay cho mỗi hai vòng quỹ đạo — vì quỹ đạo của nó quá lệch tâm. Đổi tỉ lệ và xem dấu trên bề mặt vẽ ra đường hoa văn cánh hoa đặc trưng.",
+      "ratio": "Tỉ lệ spin : quỹ đạo",
+      "spins": "vòng quay mỗi quỹ đạo",
+      "locked": "1:1 — cùng một mặt (khóa thủy triều)",
+      "mercury": "3:2 — giống Sao Thủy",
+      "fast": "2:1 — hai vòng mỗi quỹ đạo"
+    },
+    "synchronous-rotation": {
+      "title": "Tự quay đồng bộ",
+      "category": "Cơ học quỹ đạo",
+      "info": "Hệ quả của khóa thủy triều: một mặt trăng tự quay đúng một vòng mỗi quỹ đạo, nên cùng một bán cầu luôn hướng về hành tinh chủ. Nó KHÔNG có nghĩa một mặt tối vĩnh viễn — mặt trăng vẫn quay tương đối với ngôi sao, nên vẫn có ngày và đêm. Bật để phá khóa và để mặt xa quay vào tầm nhìn.",
+      "sync": "Đồng bộ (1:1)",
+      "async": "Không đồng bộ",
+      "near": "mặt gần — hướng về chủ",
+      "far": "mặt xa — bị che",
+      "lit": "ngày/đêm vẫn luân chuyển"
+    },
+    "synodic-day": {
+      "title": "Ngày giao hội",
+      "category": "Thiên văn học",
+      "info": "Ngày giao hội (ngày mặt trời) là từ bình minh đến bình minh — ngày mà ta thực sự sống theo — và dài hơn chút so với vòng quay sao thực. Trên Pandora, bị khóa với Polyphemus, hành tinh khổng lồ treo cố định trên trời và mặt trời nấp sau nó: một lần thiên thực đánh dấu nhịp của mỗi ngày. Bước qua để đánh dấu các sự kiện thiên thực.",
+      "sidereal": "Vòng quay sao",
+      "solar": "Ngày mặt trời",
+      "eclipse": "Thiên thực Polyphemus",
+      "sunrise": "bình minh",
+      "marker": "dấu thiên thực"
+    },
+    "tidal-locking": {
+      "title": "Khóa thủy triều",
+      "category": "Khoa học hành tinh",
+      "info": "Lực hấp dẫn kéo giãn mặt trăng thành hình quả trứng; ma sát trong cái bướu thủy triều đó hãm tốc độ quay cho đến khi vòng quay khớp quỹ đạo và một mặt mãi hướng về hành tinh chủ. Mặt Trăng khóa với Trái Đất theo cách này; Pandora khóa với Polyphemus, nên ngày của nó bằng tháng của nó. Tăng tốc độ quay và xem nó hãm dần vào khóa.",
+      "spin": "Tốc độ tự quay",
+      "orbit": "Tốc độ quỹ đạo",
+      "unlocked": "quay tự do — bướu trễ pha",
+      "locking": "đang hãm về khóa",
+      "locked": "đã khóa — ngày bằng tháng"
+    }
+  }
+}

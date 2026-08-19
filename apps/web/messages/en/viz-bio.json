@@ -63,16 +63,13 @@
       "legendLight": "Becomes light"
     },
     "photophore": {
-      "title": "Na'vi photophores: tuned to the body",
-      "calm": "Calm",
-      "aroused": "Aroused",
-      "slider": "Physiological state",
-      "intensity": "Intensity",
-      "hue": "Hue — constant",
-      "hueValue": "blue-white",
-      "note": "The dots sit along the vascular and neural lines, in bilateral pairs. They do not blink — they glow steadily, then flare as adrenaline rises (combat, bonding) and dim at rest.",
-      "mono": "The light is monochrome blue-white. The 'colour change' people think they see is an illusion of changing intensity, or firelight reflecting off the skin.",
-      "monoTag": "Correcting a myth"
+      "title": "Photophore",
+      "category": "Sensory",
+      "info": "A built lamp: photocyte, reflector, lens, pigment shutter. Toggle each layer and watch the beam shape change.",
+      "photocyte": "Photocyte",
+      "reflector": "Reflector",
+      "lens": "Lens",
+      "pigment": "Pigment"
     },
     "glowBiogeography": {
       "title": "Where glow happens — and why",
@@ -293,22 +290,18 @@
       "vortexNote": "Drop into the flux vortex and the delicate quantum compass scrambles — its coherence shattered by the noisy field, the overlay breaking into static. The rugged magnetite map holds. A flyer that thrives here must lean on the tough machine, which is why banshees fly the vortex clean where human instruments go blind."
     },
     "chirality": {
-      "title": "The same hand, or no splice at all",
-      "subtitle": "An enzyme grips one handedness — flip the molecule and the lock won't turn",
-      "handLabel": "Molecule handedness",
-      "leftHand": "Left-handed",
-      "rightHand": "Right-handed (mirror)",
-      "enzymeLabel": "left-handed enzyme",
-      "bindLabel": "Binding",
-      "binds": "locks in",
-      "rejected": "rejected",
-      "fitsNote": "The left-handed molecule drops into the left-handed pocket — every group meets its socket, and the enzyme grips it. This is the one Earth life uses: amino acids almost all left-handed, sugars all right.",
-      "failsNote": "Flip to the mirror form and two groups swap places: they no longer line up with their sockets, so the enzyme cannot hold it. A mirror-image meal would pass through you untouched — your locks open only to one-handed keys.",
-      "spliceLabel": "Avatar splice",
-      "spliceClean": "Strands interlock",
-      "spliceSmear": "A smear, not a hybrid",
-      "spliceCleanWhy": "Same hand on both genomes → proteins fold on one shared assembly line. The working avatar all but forces this.",
-      "spliceSmearWhy": "Opposite hands → the spliced proteins cannot fold, the code cannot be read. No working hybrid could ever exist."
+      "title": "Chirality & Optical Rotation",
+      "lAmino": "L-Amino Acids",
+      "dAmino": "D-Amino Acids",
+      "racemic": "Racemic",
+      "empty": "Water (None)",
+      "analyzerAngle": "Analyzer angle",
+      "concentration": "Concentration",
+      "brightness": "Detector light",
+      "lightSource": "Light Source",
+      "sampleTube": "Sample Tube",
+      "rotationPlane": "Light rotation plane:",
+      "hint": "Rotate the analyzer dial to align with the rotated light plane. Chiral molecules rotate polarized light clockwise (D-form) or counterclockwise (L-form)."
     },
     "carbonSilicon": {
       "title": "The breath that decides it",
@@ -485,7 +478,12 @@
       "hint": "Use the slider to grow the tree. As new layers emerge, new ecological niches open up without competing for space.",
       "treeHeight": "Tree Height",
       "niches": "Ecological Niches",
-      "strataNames": ["Forest Floor", "Understory", "Canopy", "Emergent Layer"],
+      "strataNames": [
+        "Forest Floor",
+        "Understory",
+        "Canopy",
+        "Emergent Layer"
+      ],
       "floor": "Floor",
       "understory": "Understory",
       "canopy": "Canopy",
@@ -507,30 +505,295 @@
       "pausedStatus": "Paused",
       "hint": "Adjust birth, predation, and death rates. Enable Prey-switching to stabilize oscillations, or introduce a Carrying Capacity (K) to test the Paradox of Enrichment."
     },
-    "chirality": {
-      "title": "Chirality & Optical Rotation",
-      "lAmino": "L-Amino Acids",
-      "dAmino": "D-Amino Acids",
-      "racemic": "Racemic",
-      "empty": "Water (None)",
-      "analyzerAngle": "Analyzer angle",
-      "concentration": "Concentration",
-      "brightness": "Detector light",
-      "lightSource": "Light Source",
-      "sampleTube": "Sample Tube",
-      "rotationPlane": "Light rotation plane:",
-      "hint": "Rotate the analyzer dial to align with the rotated light plane. Chiral molecules rotate polarized light clockwise (D-form) or counterclockwise (L-form)."
-    },
     "umwelt": {
-      "title": "The Pandoran Umwelt",
-      "humanFilter": "Human",
-      "humanVisible": "Human Visible",
-      "biolumFilter": "Biolum Filter",
-      "echoFilter": "Echolocation contours",
-      "magneticFilter": "Magnetic Flux lines",
-      "thermalFilter": "Infrared Thermal",
-      "gogglesLabel": "SENSORY RECEPTOR GOGGLES:",
-      "hint": "Toggle the sensory goggles to perceive the environment through the eyes of different organisms. Standard vision sees ordinary colors; specialized senses isolate bioluminescent cues, sonar contours, magnetic field lines, or heat signatures."
+      "title": "Umwelt",
+      "category": "Sensory",
+      "info": "Each creature's sensory bubble. Flip among five bodies; spectra and senses overlap or diverge — worlds inside one forest.",
+      "creature": "Creature",
+      "vision": "Vision",
+      "electro": "Electro",
+      "chemical": "Chemical",
+      "pressure": "Pressure",
+      "magnetic": "Magnetic"
+    },
+    "aposematism": {
+      "title": "Aposematism",
+      "category": "Sensory",
+      "info": "Honest warning colors. Bright signals advertise real cost — toxin, spine, sting. Toggle a predator approach; dim the signal until the retreat threshold fails.",
+      "brightness": "Signal",
+      "approach": "Approach",
+      "retreat": "Retreat",
+      "attack": "Attack",
+      "threshold": "Threshold"
+    },
+    "bioluminescence": {
+      "title": "Bioluminescence",
+      "category": "Sensory",
+      "info": "Cold light from life. Step luciferin → luciferase → excited state → photon. Advance each stage; the glow climbs without waste heat.",
+      "step": "Step",
+      "luciferin": "Luciferin",
+      "enzyme": "Enzyme",
+      "excited": "Excited state",
+      "photon": "Photon",
+      "next": "Next step"
+    },
+    "chemiluminescence": {
+      "title": "Chemiluminescence",
+      "category": "Sensory",
+      "info": "Same electronic jump, no enzyme. Side-by-side with bioluminescence: both emit, but the living path runs cooler.",
+      "bio": "Bioluminescence",
+      "chem": "Chemiluminescence",
+      "heat": "Heat",
+      "light": "Light"
+    },
+    "counter-illumination": {
+      "title": "Counter-Illumination",
+      "category": "Sensory",
+      "info": "Ventral glow cancels a silhouette from below. Toggle photophores; the dark body dissolves into the downwelling light.",
+      "off": "Photophores off",
+      "on": "Photophores on",
+      "silhouette": "Silhouette",
+      "match": "Matched"
+    },
+    "cryptochrome": {
+      "title": "Cryptochrome",
+      "category": "Sensory",
+      "info": "A radical-pair compass in the eye. Rotate the field; singlet/triplet balance tips and the internal needle shifts.",
+      "field": "Field angle",
+      "singlet": "Singlet",
+      "triplet": "Triplet",
+      "needle": "Compass"
+    },
+    "dead-space": {
+      "title": "Dead Space",
+      "category": "Respiration",
+      "info": "Air that moves but never exchanges. Deepen the breath; dead-space fraction falls as tidal volume climbs past the conduit.",
+      "tidal": "Tidal volume",
+      "dead": "Dead space",
+      "fraction": "Fraction",
+      "exchange": "Exchange"
+    },
+    "echolocation": {
+      "title": "Echolocation",
+      "category": "Sensory",
+      "info": "Pulse out, echo home. Move the target; round-trip time becomes range. Hearing as a ruler.",
+      "range": "Range",
+      "ping": "Ping",
+      "echo": "Echo",
+      "target": "Target distance"
+    },
+    "electroreception": {
+      "title": "Electroreception",
+      "category": "Sensory",
+      "info": "Living voltmeters in water. Move the prey; field lines warp and snout receptors light where the distortion peaks.",
+      "field": "Field",
+      "prey": "Prey offset",
+      "receptors": "Receptors"
+    },
+    "ficks-law": {
+      "title": "Fick's Law",
+      "category": "Respiration",
+      "info": "Flux ∝ area × ΔC / thickness. Thin the membrane, steepen the gradient; O₂ rate climbs. Pandoran fans win on both levers.",
+      "thickness": "Thickness",
+      "gradient": "Gradient",
+      "area": "Area",
+      "flux": "O₂ flux"
+    },
+    "fluorescence": {
+      "title": "Fluorescence",
+      "category": "Sensory",
+      "info": "Absorb short, emit long — the Stokes shift. Pick a fluorophore; watch emission color slide redward of the excitation.",
+      "excite": "Excitation",
+      "emit": "Emission",
+      "stokes": "Stokes shift",
+      "molecule": "Molecule"
+    },
+    "gill-lamella": {
+      "title": "Gill Lamella",
+      "category": "Respiration",
+      "info": "Stacked plates, countercurrent blood. Flip to parallel flow and extraction efficiency halves — geometry is the engine.",
+      "counter": "Countercurrent",
+      "parallel": "Parallel",
+      "efficiency": "O₂ extraction"
+    },
+    "green-fluorescent-protein": {
+      "title": "Green Fluorescent Protein",
+      "category": "Sensory",
+      "info": "A β-barrel lamp. Blue in, green out; the chromophore at the core pulses. Sweep excitation and the glow answers.",
+      "excitation": "Excitation λ",
+      "emission": "Emission",
+      "barrel": "Barrel"
+    },
+    "histotoxic-hypoxia": {
+      "title": "Histotoxic Hypoxia",
+      "category": "Respiration",
+      "info": "O₂ arrives; cells cannot use it. Blocked mitochondria sit dark while oxygen piles up unused — cyanide's quiet asphyxia.",
+      "normal": "Normal",
+      "blocked": "Blocked",
+      "unused": "Unused O₂",
+      "mitochondria": "Mitochondria"
+    },
+    "hypercapnia": {
+      "title": "Hypercapnia",
+      "category": "Respiration",
+      "info": "CO₂ climbs; respiratory drive screams. Raise pCO₂ and the urge-to-breathe signal spikes — Na'vi physiology must blunt this.",
+      "pco2": "pCO₂",
+      "drive": "Drive",
+      "urge": "Breathing urge"
+    },
+    "lateral-line": {
+      "title": "Lateral Line",
+      "category": "Sensory",
+      "info": "A touch sense for water. Wave near the canal; hair cells deflect and fire along the flank.",
+      "flow": "Flow strength",
+      "cells": "Hair cells",
+      "canal": "Canal"
+    },
+    "luciferin": {
+      "title": "Luciferin",
+      "category": "Sensory",
+      "info": "The fuel molecule of cold light. Highlight the reactive site where oxygen docks before the photon is born.",
+      "reactive": "Reactive site",
+      "oxidize": "Oxidize",
+      "structure": "Structure"
+    },
+    "luciferase": {
+      "title": "Luciferase",
+      "category": "Sensory",
+      "info": "The enzyme that lights the fuel. Dock luciferin, watch the pocket close, release oxyluciferin and a photon.",
+      "dock": "Dock",
+      "bound": "Bound",
+      "release": "Release + photon",
+      "active": "Active site"
+    },
+    "magnetite": {
+      "title": "Magnetite",
+      "category": "Sensory",
+      "info": "Fe₃O₄ crystals that torque a cell. Rotate the field; the chain turns the body like a living compass needle.",
+      "field": "Field angle",
+      "align": "Alignment",
+      "crystal": "Crystal"
+    },
+    "magnetoreception": {
+      "title": "Magnetoreception",
+      "category": "Sensory",
+      "info": "Two compasses in one bird: cryptochrome in the eye, magnetite in the beak. Toggle each; navigation accuracy shifts.",
+      "crypto": "Cryptochrome",
+      "beak": "Beak magnetite",
+      "accuracy": "Accuracy",
+      "both": "Both on"
+    },
+    "magnetosome": {
+      "title": "Magnetosome",
+      "category": "Sensory",
+      "info": "A chain of magnetite organelles. Apply a field; the chain and cell rotate together. Remove it — the chain keeps its memory.",
+      "fieldOn": "Field on",
+      "fieldOff": "Field off",
+      "chain": "Chain angle"
+    },
+    "nerve-conduction-velocity": {
+      "title": "Nerve Conduction Velocity",
+      "category": "Sensory",
+      "info": "Myelin turns a crawl into a leap. Compare continuous vs saltatory spikes; the speed readout jumps with sheath.",
+      "myelin": "Myelinated",
+      "bare": "Unmyelinated",
+      "speed": "Speed",
+      "mode": "Mode"
+    },
+    "operculum": {
+      "title": "Operculum",
+      "category": "Respiration",
+      "info": "The gill cover as a pump. Open–close pushes water across lamellae. Switch to ram ventilation — mouth open, cover locked, swim for breath.",
+      "pump": "Buccal pump",
+      "ram": "Ram ventilation",
+      "flow": "Flow"
+    },
+    "proprioception": {
+      "title": "Proprioception",
+      "category": "Sensory",
+      "info": "The sense of self-position. Drag the limb; spindles fire on stretch, Golgi organs on load — the body reading itself.",
+      "angle": "Joint angle",
+      "spindle": "Spindle",
+      "golgi": "Golgi"
+    },
+    "quantum-yield": {
+      "title": "Quantum Yield",
+      "category": "Sensory",
+      "info": "Photons out per reaction in. Tune pH, temperature, O₂; the yield meter shows how often chemistry becomes light.",
+      "yield": "Yield",
+      "temp": "Temperature",
+      "o2": "O₂",
+      "ph": "pH"
+    },
+    "radical-pair": {
+      "title": "Radical Pair",
+      "category": "Sensory",
+      "info": "Two unpaired spins as a molecular compass. A weak field tips singlet vs triplet; the product ratio is the signal cryptochrome reads.",
+      "field": "Field",
+      "singlet": "Singlet %",
+      "triplet": "Triplet %",
+      "ratio": "Ratio"
+    },
+    "ram-ventilation": {
+      "title": "Ram Ventilation",
+      "category": "Respiration",
+      "info": "Swim to breathe. Below threshold speed the fish must pump; above it, open mouth and locked operculum do the work.",
+      "speed": "Speed",
+      "pump": "Must pump",
+      "ram": "Ram on",
+      "threshold": "Threshold"
+    },
+    "spiracle": {
+      "title": "Spiracle",
+      "category": "Respiration",
+      "info": "Side doors on an insect thorax. Open them; O₂ diffuses in along tracheae. Close them; exchange stalls.",
+      "open": "Open",
+      "closed": "Closed",
+      "o2": "O₂ in",
+      "co2": "CO₂ out"
+    },
+    "tapetum-lucidum": {
+      "title": "Tapetum Lucidum",
+      "category": "Sensory",
+      "info": "A night mirror behind the retina. Dim the world; light double-passes and eyeshine blooms.",
+      "ambient": "Ambient light",
+      "glow": "Eyeshine",
+      "pass": "Double pass"
+    },
+    "tidal-ventilation": {
+      "title": "Tidal Ventilation",
+      "category": "Respiration",
+      "info": "In and out the same path. Mark tidal, residual, capacity; dead space rides along — compare to unidirectional fans.",
+      "tidal": "Tidal",
+      "residual": "Residual",
+      "capacity": "Capacity",
+      "breath": "Breath depth"
+    },
+    "unidirectional-airflow": {
+      "title": "Unidirectional Airflow",
+      "category": "Respiration",
+      "info": "Air crosses exchange tissue one way only. Efficiency bar beats mammalian tidal back-and-forth — bird and Pandoran strategy.",
+      "uni": "Unidirectional",
+      "tidal": "Tidal",
+      "efficiency": "Extraction"
+    },
+    "cross-current-exchange": {
+      "title": "Cross-Current Exchange",
+      "category": "Respiration",
+      "info": "Three geometries: concurrent, countercurrent, cross-current. Efficiency bars rank them — fans may sit in the cross-current middle.",
+      "concurrent": "Concurrent",
+      "counter": "Countercurrent",
+      "cross": "Cross-current",
+      "efficiency": "Efficiency"
+    },
+    "countercurrent-exchange": {
+      "title": "Countercurrent Exchange",
+      "category": "Respiration",
+      "info": "Two flows, opposite directions. Gradients stay steep the whole length — maximum transfer versus same-way concurrent waste.",
+      "counter": "Counter",
+      "concurrent": "Concurrent",
+      "transfer": "Transfer",
+      "gradient": "Gradient"
     }
   }
 }

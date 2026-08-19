@@ -1,354 +1,231 @@
 "use client";
 
-import { ArrowRightLeft, Pause, Play, RotateCcw } from "lucide-react";
 import { useTranslations } from "next-intl";
-import React, { useState, useEffect, useMemo, useCallback } from "react";
+import { useMemo, useState } from "react";
+import { ControlSlider } from "./shared/control-slider";
 import { GlossaryFrame } from "./shared/frame";
+import { Readout } from "./shared/readout";
 
-interface Point {
-  x: number;
-  y: number;
-}
-
+// Plant ↔ fungus trading floor: carbon for phosphorus. Each side accepts when the
+// other's offer beats its reservation price; otherwise it defects. Equilibrium is
+// the knife-edge where both accept.
 export default function BiologicalMarket() {
-  const t = useTranslations("viz.mycorrhizalMarket");
+  const t = useTranslations("viz.biological-market");
+  const [carbon, setCarbon] = useState(0.55);
+  const [phosphorus, setPhosphorus] = useState(0.5);
 
-  const [carbon, setCarbon] = useState(60); // 0 to 100
-  const [partner, setPartner] = useState<"generous" | "cheat">("generous");
-  const [round, setRound] = useState(0);
-  const [trust, setTrust] = useState(0.5);
-  const [history, setHistory] = useState<number[]>([]);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [particleOffset, setParticleOffset] = useState(0);
+  // Plant wants high P relative to C cost; fungus wants high C relative to P cost.
+  const plantAccepts = phosphorus >= carbon * 0.85;
+  const fungusAccepts = carbon >= phosphorus * 0.9;
+  const equilibrium = plantAccepts && fungusAccepts;
 
-  // Compute round rewards/sanctions
-  const tradeResult = useMemo(() => {
-    const yieldRate = partner === "generous" ? 1.15 : 0.35;
-    const trustGain = partner === "generous" ? 0.6 + 0.5 * trust : 1.0;
-    const base = carbon * yieldRate * trustGain;
-    const rewardBonus = partner === "generous" && carbon > 55 ? (carbon - 55) * 0.45 : 0;
-    const phosphorus = Math.round(Math.min(base + rewardBonus, 160));
-    const net = phosphorus - carbon;
-    const nextTrust =
-      partner === "cheat"
-        ? Math.max(0, Math.min(1, trust - 0.16))
-        : Math.max(0, Math.min(1, trust + (carbon >= 55 ? 0.12 : -0.12)));
-
-    const verdict = partner === "cheat" ? "cheated" : net > 0 ? "reward" : "sanction";
-    return { phosphorus, net, nextTrust, verdict };
-  }, [carbon, partner, trust]);
-
-  const handleStep = useCallback(() => {
-    setRound((r) => r + 1);
-    setHistory((prev) => [...prev, tradeResult.net].slice(-10));
-    setTrust(tradeResult.nextTrust);
-  }, [tradeResult]);
-
-  useEffect(() => {
-    if (!isPlaying) return;
-    const timer = setInterval(() => {
-      handleStep();
-    }, 1200);
-    return () => clearInterval(timer);
-  }, [isPlaying, handleStep]);
-
-  // Particle flow animation
-  useEffect(() => {
-    let animationId: number;
-    const tick = () => {
-      setParticleOffset((prev) => (prev + 0.015) % 1.0);
-      animationId = requestAnimationFrame(tick);
-    };
-    animationId = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(animationId);
-  }, []);
-
-  const handleReset = () => {
-    setCarbon(60);
-    setPartner("generous");
-    setRound(0);
-    setTrust(0.5);
-    setHistory([]);
-    setIsPlaying(false);
-  };
-
-  const flowTone = partner === "generous" ? "var(--teal)" : "var(--magenta)";
-  const carbonDots = Math.max(2, Math.round(carbon / 20));
-  const phosDots = Math.max(2, Math.round(tradeResult.phosphorus / 30));
-
-  // Bezier curve calculations for SVG arcs
-  // Plant at (60, 65)
-  // Fungus at (315, 65)
-  const getCarbonPt = (t: number): Point => {
-    const x0 = 60;
-    const y0 = 55;
-    const x1 = 187;
-    const y1 = 20;
-    const x2 = 187;
-    const y2 = 20;
-    const x3 = 315;
-    const y3 = 55;
-    const u = 1 - t;
-    return {
-      x: u * u * u * x0 + 3 * u * u * t * x1 + 3 * u * t * t * x2 + t * t * t * x3,
-      y: u * u * u * y0 + 3 * u * u * t * y1 + 3 * u * t * t * y2 + t * t * t * y3,
-    };
-  };
-
-  const getPhosPt = (t: number): Point => {
-    const x0 = 315;
-    const y0 = 75;
-    const x1 = 187;
-    const y1 = 110;
-    const x2 = 187;
-    const y2 = 110;
-    const x3 = 60;
-    const y3 = 75;
-    const u = 1 - t;
-    return {
-      x: u * u * u * x0 + 3 * u * u * t * x1 + 3 * u * t * t * x2 + t * t * t * x3,
-      y: u * u * u * y0 + 3 * u * u * t * y1 + 3 * u * t * t * y2 + t * t * t * y3,
-    };
-  };
+  const tradeFlow = useMemo(() => {
+    if (!equilibrium) return 0;
+    return Math.min(carbon, phosphorus);
+  }, [carbon, phosphorus, equilibrium]);
 
   return (
     <GlossaryFrame
       title={t("title")}
-      infoText={t(`verdict.${tradeResult.verdict}`)}
-      onReset={handleReset}
-      onPlayPause={() => setIsPlaying(!isPlaying)}
-      isPlaying={isPlaying}
-      aspectRatio="aspect-[16/10]"
+      category={t("category")}
+      infoText={t("info")}
+      onReset={() => {
+        setCarbon(0.55);
+        setPhosphorus(0.5);
+      }}
+      allowFullscreen={false}
+      caption={
+        <span className={equilibrium ? "text-teal" : "text-magenta"}>
+          {equilibrium ? t("equilibrium") : `${plantAccepts ? "P" : "C"} / ${fungusAccepts ? "F" : "D"}`}
+        </span>
+      }
     >
-      <div className="relative w-full h-full flex flex-col justify-between p-4">
-        {/* Marketplace visualization */}
-        <div className="w-full flex-1 flex flex-col justify-start pb-32 pt-2">
-          <div className="relative w-full h-full bg-void/50 border border-border/20 rounded-xl overflow-hidden">
-            <svg viewBox="0 0 375 130" className="w-full h-full select-none">
-              <title>Underground Mycorrhizal Market Interaction</title>
+      <div className="absolute inset-0">
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
+          {/* trading floor baseline */}
+          <line
+            x1="12"
+            y1="52"
+            x2="88"
+            y2="52"
+            stroke="var(--border-strong)"
+            strokeWidth="0.4"
+            strokeDasharray="1.5 1.5"
+          />
 
-              {/* Carbon Flow Arc: Plant -> Fungus */}
-              <path
-                d="M 60 55 C 187 20, 187 20, 315 55"
-                fill="none"
-                className="stroke-amber/40 stroke-2"
-                strokeDasharray="4,4"
+          {/* plant (left) */}
+          <g transform="translate(22 48)">
+            <ellipse
+              cx="0"
+              cy="8"
+              rx="10"
+              ry="6"
+              fill="var(--surface)"
+              stroke="var(--teal)"
+              strokeWidth="0.7"
+            />
+            <path
+              d="M0 2 C-4 -10, -8 -14, 0 -18 C8 -14, 4 -10, 0 2"
+              fill="var(--teal)"
+              opacity={0.55 + carbon * 0.4}
+            />
+            <circle cx="0" cy="-16" r="2.2" fill="var(--teal)" />
+            <text
+              x="0"
+              y="18"
+              textAnchor="middle"
+              style={{ fontSize: 2.6, fontFamily: "monospace", fill: "var(--teal)" }}
+            >
+              C→
+            </text>
+          </g>
+
+          {/* fungus (right) */}
+          <g transform="translate(78 48)">
+            <ellipse
+              cx="0"
+              cy="8"
+              rx="10"
+              ry="6"
+              fill="var(--surface)"
+              stroke="var(--amber)"
+              strokeWidth="0.7"
+            />
+            {[0, 1, 2, 3].map((i) => (
+              <line
+                key={i}
+                x1={-6 + i * 4}
+                y1="4"
+                x2={-8 + i * 5}
+                y2={-10 - (i % 2) * 4}
+                stroke="var(--amber)"
+                strokeWidth="0.8"
+                opacity={0.5 + phosphorus * 0.45}
               />
+            ))}
+            <text
+              x="0"
+              y="18"
+              textAnchor="middle"
+              style={{ fontSize: 2.6, fontFamily: "monospace", fill: "var(--amber)" }}
+            >
+              ←P
+            </text>
+          </g>
 
-              {/* Phosphorus Flow Arc: Fungus -> Plant */}
-              <path
-                d="M 315 75 C 187 110, 187 110, 60 75"
-                fill="none"
-                style={{ stroke: flowTone }}
-                className="stroke-2 opacity-40"
-                strokeDasharray="4,4"
-              />
+          {/* exchange beams */}
+          <path
+            d={`M32 44 Q50 ${44 - tradeFlow * 18} 68 44`}
+            fill="none"
+            stroke="var(--teal)"
+            strokeWidth={0.6 + carbon * 1.4}
+            opacity={plantAccepts ? 0.85 : 0.15}
+            strokeDasharray={fungusAccepts ? undefined : "2 2"}
+          />
+          <path
+            d={`M68 56 Q50 ${56 + tradeFlow * 14} 32 56`}
+            fill="none"
+            stroke="var(--amber)"
+            strokeWidth={0.6 + phosphorus * 1.4}
+            opacity={fungusAccepts ? 0.85 : 0.15}
+            strokeDasharray={plantAccepts ? undefined : "2 2"}
+          />
 
-              {/* Carbon flowing particles */}
-              {Array.from({ length: carbonDots }).map((_, i) => {
-                const tt = (particleOffset + i / carbonDots) % 1.0;
-                const pt = getCarbonPt(tt);
-                return (
-                  <circle
-                    key={`c-dot-${i}`}
-                    cx={pt.x}
-                    cy={pt.y}
-                    r="2.5"
-                    className="fill-amber"
-                    style={{ filter: "drop-shadow(0 0 3px var(--amber))" }}
-                  />
-                );
-              })}
+          {/* deal marker */}
+          <circle
+            cx="50"
+            cy="50"
+            r={equilibrium ? 4 + tradeFlow * 3 : 2.5}
+            fill={equilibrium ? "var(--cyan)" : "var(--magenta)"}
+            opacity={equilibrium ? 0.7 : 0.35}
+          />
 
-              {/* Phosphorus flowing particles */}
-              {Array.from({ length: phosDots }).map((_, i) => {
-                const tt = (particleOffset + i / phosDots) % 1.0;
-                const pt = getPhosPt(tt);
-                return (
-                  <circle
-                    key={`p-dot-${i}`}
-                    cx={pt.x}
-                    cy={pt.y}
-                    r="2.5"
-                    style={{ fill: flowTone, filter: `drop-shadow(0 0 3px ${flowTone})` }}
-                  />
-                );
-              })}
+          {/* accept / defect chips */}
+          <g transform="translate(22 78)">
+            <rect
+              x="-12"
+              y="-4"
+              width="24"
+              height="8"
+              rx="1.5"
+              fill="var(--void)"
+              stroke={plantAccepts ? "var(--teal)" : "var(--magenta)"}
+              strokeWidth="0.5"
+            />
+            <text
+              x="0"
+              y="1.5"
+              textAnchor="middle"
+              style={{
+                fontSize: 2.8,
+                fontFamily: "monospace",
+                fill: plantAccepts ? "var(--teal)" : "var(--magenta)",
+              }}
+            >
+              {plantAccepts ? t("accept") : t("defect")}
+            </text>
+          </g>
+          <g transform="translate(78 78)">
+            <rect
+              x="-12"
+              y="-4"
+              width="24"
+              height="8"
+              rx="1.5"
+              fill="var(--void)"
+              stroke={fungusAccepts ? "var(--amber)" : "var(--magenta)"}
+              strokeWidth="0.5"
+            />
+            <text
+              x="0"
+              y="1.5"
+              textAnchor="middle"
+              style={{
+                fontSize: 2.8,
+                fontFamily: "monospace",
+                fill: fungusAccepts ? "var(--amber)" : "var(--magenta)",
+              }}
+            >
+              {fungusAccepts ? t("accept") : t("defect")}
+            </text>
+          </g>
+        </svg>
 
-              {/* Plant Node */}
-              <circle cx="60" cy="65" r="18" className="fill-cyan/15 stroke-cyan/40 stroke-2" />
-              <circle
-                cx="60"
-                cy="65"
-                r="8"
-                className="fill-cyan"
-                style={{ filter: "drop-shadow(0 0 4px var(--cyan))" }}
-              />
-              <text
-                x="60"
-                y="95"
-                textAnchor="middle"
-                className="fill-muted font-mono text-[8px] font-semibold"
-              >
-                {t("plant") || "Plant"}
-              </text>
-
-              {/* Fungal Node */}
-              <circle
-                cx="315"
-                cy="65"
-                r="18"
-                className="stroke-2 transition-all duration-300"
-                style={{
-                  fill:
-                    partner === "generous"
-                      ? "rgba(43, 212, 168, 0.15)"
-                      : "rgba(255, 93, 168, 0.15)",
-                  stroke:
-                    partner === "generous" ? "rgba(43, 212, 168, 0.4)" : "rgba(255, 93, 168, 0.4)",
-                }}
-              />
-              <circle
-                cx="315"
-                cy="65"
-                r={6 + trust * 6}
-                className="transition-all duration-300"
-                style={{
-                  fill: flowTone,
-                  filter: `drop-shadow(0 0 5px ${flowTone})`,
-                }}
-              />
-              <text
-                x="315"
-                y="95"
-                textAnchor="middle"
-                className="fill-muted font-mono text-[8px] font-semibold"
-              >
-                {t("fungus") || "Fungus"}
-              </text>
-
-              {/* Center Arrows */}
-              <text
-                x="187"
-                y="38"
-                textAnchor="middle"
-                className="fill-amber/80 font-mono text-[7px]"
-              >
-                {t("carbonFlow") || "carbon →"}
-              </text>
-              <text
-                x="187"
-                y="102"
-                textAnchor="middle"
-                style={{ fill: flowTone }}
-                className="font-mono text-[7px]"
-              >
-                {t("phosphorusFlow") || "← phosphorus"}
-              </text>
-            </svg>
-
-            {/* Readouts overlay */}
-            <div className="absolute top-2 left-2 flex gap-3 text-[8.5px] font-mono pointer-events-none">
-              <div>
-                <span className="text-muted mr-1">{t("phosphorusBack") || "Phos back"}:</span>
-                <span className="text-foreground font-bold">{tradeResult.phosphorus}</span>
-              </div>
-              <div>
-                <span className="text-muted mr-1">{t("netLabel") || "Net benefit"}:</span>
-                <span
-                  className={`font-bold ${tradeResult.net >= 0 ? "text-teal" : "text-magenta"}`}
-                >
-                  {tradeResult.net > 0 ? "+" : ""}
-                  {tradeResult.net}
-                </span>
-              </div>
-              <div>
-                <span className="text-muted mr-1">{t("trust") || "Trust"}:</span>
-                <span style={{ color: flowTone }} className="font-bold">
-                  {Math.round(trust * 100)}%
-                </span>
-              </div>
-            </div>
-
-            <div className="absolute top-2 right-2 text-[8.5px] font-mono pointer-events-none">
-              <span className="text-muted mr-1">{t("round") || "Round"}:</span>
-              <span className="text-foreground font-bold">{round}</span>
-            </div>
-          </div>
+        <div className="absolute right-3 top-14 flex flex-col gap-1.5">
+          <Readout
+            label={t("equilibrium")}
+            value={equilibrium ? t("accept") : t("defect")}
+            accent={equilibrium ? "teal" : "magenta"}
+          />
         </div>
 
-        {/* HUD Controls */}
-        <div className="absolute bottom-4 left-4 right-4 bg-void/85 backdrop-blur-md p-3 border border-border/30 rounded-xl flex flex-col gap-2.5 z-10 text-[9.5px] font-mono">
-          {/* Partner and trade controls */}
-          <div className="flex gap-2 items-center">
-            {/* Fungal partner selectors */}
-            <div className="flex flex-1 gap-1">
-              <button
-                type="button"
-                onClick={() => {
-                  setPartner("generous");
-                  setRound(0);
-                  setTrust(0.5);
-                  setHistory([]);
-                }}
-                className="flex-1 py-1 px-1 rounded border font-mono text-[9px] text-center transition-all duration-200 select-none hover:bg-surface-overlay"
-                style={{
-                  backgroundColor: partner === "generous" ? "var(--teal)" : "transparent",
-                  color: partner === "generous" ? "var(--background)" : "var(--foreground)",
-                  borderColor: partner === "generous" ? "var(--teal)" : "var(--border)",
-                  boxShadow: partner === "generous" ? "0 0 6px rgba(43, 212, 168, 0.3)" : "none",
-                }}
-              >
-                {t("generous") || "Generous Partner"}
-              </button>
-
-              <button
-                type="button"
-                onClick={() => {
-                  setPartner("cheat");
-                  setRound(0);
-                  setTrust(0.5);
-                  setHistory([]);
-                }}
-                className="flex-1 py-1 px-1 rounded border font-mono text-[9px] text-center transition-all duration-200 select-none hover:bg-surface-overlay"
-                style={{
-                  backgroundColor: partner === "cheat" ? "var(--magenta)" : "transparent",
-                  color: partner === "cheat" ? "var(--background)" : "var(--foreground)",
-                  borderColor: partner === "cheat" ? "var(--magenta)" : "var(--border)",
-                  boxShadow: partner === "cheat" ? "0 0 6px rgba(255, 93, 168, 0.3)" : "none",
-                }}
-              >
-                {t("cheat") || "Cheat Partner"}
-              </button>
-            </div>
-
-            {/* Run round button */}
-            <button
-              type="button"
-              onClick={handleStep}
-              className="px-2 py-1 bg-void/50 border border-border/40 hover:border-cyan/50 rounded flex items-center gap-1 select-none hover:bg-surface-overlay"
-            >
-              <ArrowRightLeft size={11} className="text-cyan animate-pulse" />
-              <span>{t("step") || "Trade Round"}</span>
-            </button>
-          </div>
-
-          {/* Carbon slider */}
-          <div className="flex items-center gap-3 border-t border-border/15 pt-2">
-            <span className="text-[9.5px] font-mono text-muted w-24 truncate uppercase">
-              {t("carbonSlider") || "Carbon Sugar Paid"}:
-            </span>
-            <input
-              type="range"
-              min="0"
-              max="100"
-              step="5"
-              value={carbon}
-              onChange={(e) => setCarbon(Number.parseInt(e.target.value))}
-              className="flex-1 h-1 rounded bg-surface appearance-none cursor-pointer accent-amber"
-            />
-            <span className="text-amber w-8 text-right font-bold">{carbon}g</span>
-          </div>
+        <div className="absolute inset-x-3 bottom-10 space-y-2">
+          <ControlSlider
+            label={t("carbon")}
+            value={carbon}
+            min={0.1}
+            max={1}
+            step={0.02}
+            display={`${Math.round(carbon * 100)}%`}
+            onChange={setCarbon}
+            thumb="teal"
+          />
+          <ControlSlider
+            label={t("phosphorus")}
+            value={phosphorus}
+            min={0.1}
+            max={1}
+            step={0.02}
+            display={`${Math.round(phosphorus * 100)}%`}
+            onChange={setPhosphorus}
+            thumb="amber"
+          />
         </div>
       </div>
     </GlossaryFrame>

@@ -106,20 +106,56 @@
       "prompt": "Di chuột hoặc bấm vào một gene để thấy vùng cơ thể nó đánh dấu.",
       "hint": "Thứ tự các gene trên giá khớp với thứ tự các vùng cơ thể chúng đánh dấu. Gene Hox không xây dựng bộ phận — nó chỉ dán địa chỉ. Dời nhãn là dời bộ phận, mà không cần thiết kế lại bộ phận đó.",
       "genes": {
-        "hox1": { "gene": "Hox-1", "region": "Đầu" },
-        "hox2": { "gene": "Hox-2", "region": "Cổ" },
-        "hox3": { "gene": "Hox-3", "region": "Vùng chi trước" },
-        "hox4": { "gene": "Hox-4", "region": "Thân giữa" },
-        "hox5": { "gene": "Hox-5", "region": "Vùng chi sau" },
-        "hox6": { "gene": "Hox-6", "region": "Đuôi" }
+        "hox1": {
+          "gene": "Hox-1",
+          "region": "Đầu"
+        },
+        "hox2": {
+          "gene": "Hox-2",
+          "region": "Cổ"
+        },
+        "hox3": {
+          "gene": "Hox-3",
+          "region": "Vùng chi trước"
+        },
+        "hox4": {
+          "gene": "Hox-4",
+          "region": "Thân giữa"
+        },
+        "hox5": {
+          "gene": "Hox-5",
+          "region": "Vùng chi sau"
+        },
+        "hox6": {
+          "gene": "Hox-6",
+          "region": "Đuôi"
+        }
       },
       "glossaryGenes": {
-        "hox1": { "region": "Đầu & Hàm", "note": "Xác định cấu trúc đầu và các cơ quan cảm giác kép." },
-        "hox2": { "region": "Cổ & Lỗ thở", "note": "Xác định các van hô hấp và các đốt cổ chính." },
-        "hox3": { "region": "Chi trước (Cánh)", "note": "Kích hoạt cặp chi đầu tiên, tạo thành đôi cánh chính." },
-        "hox4": { "region": "Thân giữa (Ngực)", "note": "Hình thành lồng ngực trung tâm và khung xương hỗ trợ sợi carbon." },
-        "hox5": { "region": "Chi sau", "note": "Kiểm soát sự phát triển của cặp chân bám/bò phía sau." },
-        "hox6": { "region": "Đuôi & Bím tóc", "note": "Xác định phần chóp đuôi và giao diện kết nối dây thần kinh." }
+        "hox1": {
+          "region": "Đầu & Hàm",
+          "note": "Xác định cấu trúc đầu và các cơ quan cảm giác kép."
+        },
+        "hox2": {
+          "region": "Cổ & Lỗ thở",
+          "note": "Xác định các van hô hấp và các đốt cổ chính."
+        },
+        "hox3": {
+          "region": "Chi trước (Cánh)",
+          "note": "Kích hoạt cặp chi đầu tiên, tạo thành đôi cánh chính."
+        },
+        "hox4": {
+          "region": "Thân giữa (Ngực)",
+          "note": "Hình thành lồng ngực trung tâm và khung xương hỗ trợ sợi carbon."
+        },
+        "hox5": {
+          "region": "Chi sau",
+          "note": "Kiểm soát sự phát triển của cặp chân bám/bò phía sau."
+        },
+        "hox6": {
+          "region": "Đuôi & Bím tóc",
+          "note": "Xác định phần chóp đuôi và giao diện kết nối dây thần kinh."
+        }
       }
     },
     "replayTape": {
@@ -210,6 +246,414 @@
           "analog": "Sói / Linh cẩu"
         }
       }
+    },
+    "adaptive-radiation": {
+      "title": "Bức xạ thích nghi",
+      "category": "Tiến hóa",
+      "info": "Một dòng dõi tổ tiên tỏa ra lấp đầy một thế giới đầy chỗ trống — một hòn đảo mới, vùng đất sạch bóng, một sinh quyển non trẻ. Mở một ổ sinh thái và một dòng con cháu ùa vào, được đẽo gọt cho vai trò ấy; đóng lại thì dòng phụ thuộc vào nó tàn lụi. Toàn bộ hệ động vật Pandora đọc được như một cuộc bức xạ khổng lồ từ một gốc sáu chi.",
+      "lineages": "Dòng dõi",
+      "nichesFilled": "Ổ sinh thái",
+      "tapNiche": "chạm một ổ",
+      "ancestor": "tổ tiên",
+      "canopy": "tán cây",
+      "understory": "tầng thấp",
+      "ground": "mặt đất",
+      "river": "sông",
+      "coast": "bờ biển",
+      "air": "không trung"
+    },
+    "analogous-structures": {
+      "title": "Cấu trúc tương đồng chức năng",
+      "category": "Tiến hóa",
+      "info": "Cùng công năng, khác nguồn gốc. Cánh côn trùng và cánh dơi cùng giải bài toán bay nhưng dựng từ chất liệu khác nhau trên những dòng dõi khác nhau — tương đồng chức năng, sản phẩm của hội tụ chứ không phải di truyền. Khi thanator khoác dáng báo mà không chút họ hàng với nhà mèo, đó là tương đồng chức năng ở quy mô hành tinh.",
+      "earthLineage": "dòng Trái Đất",
+      "pandoraLineage": "dòng Pandora",
+      "sharedFunction": "Chức năng chung",
+      "kinship": "Họ hàng",
+      "kinshipZero": "họ hàng bằng không",
+      "none": "không có",
+      "flight": "bay",
+      "swimming": "bơi",
+      "grasping": "cầm nắm",
+      "insectWing": "cánh côn trùng",
+      "bansheeWing": "cánh banshee",
+      "fishFin": "vây cá",
+      "tulkunFluke": "đuôi tulkun",
+      "mantisClaw": "càng bọ ngựa",
+      "napalmGrip": "chi hexapod"
+    },
+    "bilateral-symmetry": {
+      "title": "Đối xứng hai bên",
+      "category": "Tiến hóa",
+      "info": "Trục gương định nghĩa gần như mọi loài động vật bạn biết. Loài đối xứng hai bên có nửa trái và nửa phải soi bóng qua một trục đầu-đuôi — kèm theo một đầu dẫn đường, một hướng tiến, và một bộ não dồn về phía trước. Làm hỏng trục gương và bạn thấy vì sao tiến hóa giữ nó sạch: cơ thể lệch lạc không có hướng tiến trung thực để di chuyển hay cảm nhận.",
+      "axis": "trục",
+      "broken": "Đối xứng vỡ — không còn hướng tiến thực",
+      "cleanAxis": "Trục gương sạch — một sơ đồ cơ thể hiệu quả",
+      "corruption": "Sai lệch",
+      "forward": "phía trước",
+      "symmetric": "đối xứng",
+      "symmetryLabel": "Đối xứng"
+    },
+    "body-plan": {
+      "title": "Sơ đồ cấu tạo cơ thể",
+      "category": "Tiến hóa",
+      "info": "Kiến trúc mà một loài được dựng trên đó — các trục, tính đối xứng, số lượng và vị trí các bộ phận lặp lại. Đặt số đốt và tô danh tính vùng dọc trục đầu-đuôi. Đa số động vật chia sẻ vài sơ đồ lớn, và mỗi sơ đồ gần như bất biến hàng trăm triệu năm, vì sửa nó từ sớm trong phôi sẽ gây sụp đổ dây chuyền.",
+      "headEnd": "đầu",
+      "segment": "đốt",
+      "segmentCount": "Số đốt",
+      "segmentsLabel": "Số đốt",
+      "segmentsN": "{n} đốt",
+      "tapToPaint": "chạm một đốt để tô vùng của nó",
+      "head": "đầu",
+      "thorax": "ngực",
+      "abdomen": "bụng"
+    },
+    "cambrian-explosion": {
+      "title": "Sự bùng nổ kỷ Cambri",
+      "category": "Tiến hóa",
+      "info": "Bốn mươi triệu năm, nén lại. Khoảng 538 triệu năm trước, gần như mọi sơ đồ cơ thể động vật lớn xuất hiện trong hồ sơ hóa thạch chỉ trong một cái chớp mắt địa chất. Điều bất ngờ: nó gần như không kèm gene mới nào — bộ công cụ đã sẵn ở tổ tiên chung, và sự bùng nổ chủ yếu là tái điều động bộ công cụ đó qua các đột biến điều hòa. Chạy đồng hồ và xem sự đa dạng hình thái nở bung từ một điểm.",
+      "bodyPlans": "Sơ đồ cơ thể",
+      "disparity": "Đa dạng",
+      "geologicClock": "Đồng hồ địa chất",
+      "mya": "Tr.năm"
+    },
+    "canalization": {
+      "title": "Sự định hướng phát triển",
+      "category": "Tiến hóa",
+      "info": "Phát triển cuộn chảy theo một rãnh đã xẻ sẵn. Trong cảnh quan Waddington, viên bi lăn từ đỉnh và dù bạn đẩy mạnh đến đâu, một con kênh đủ sâu vẫn dồn nó về cùng một kết cục ổn định — có sức bật chống nhiễu và sai biệt di truyền nhỏ. Nhiễu loạn viên bi và tăng nhiễu; khi định hướng còn mạnh nó vẫn rơi về cùng một rãnh. Đây là một lý do sơ đồ cơ thể bám trụ hàng aeon.",
+      "buffered": "Được đệm — con kênh chỉnh lại độ trôi",
+      "canalDepth": "Độ sâu kênh",
+      "drift": "Độ trôi",
+      "perturb": "Nhiễu loạn",
+      "stableOutcome": "kết cục ổn định",
+      "strayed": "Đi lạc — con kênh quá nông",
+      "strong": "mạnh",
+      "weak": "yếu",
+      "moderate": "vừa"
+    },
+    "character-displacement": {
+      "title": "Sự dịch chuyển đặc điểm",
+      "category": "Tiến hóa",
+      "info": "Cạnh tranh chế tạo ra khác biệt. Hai loài tương đồng trên một trục tài nguyên giẫm chân nhau, và những cá thể ít giống đối thủ nhất kiếm ăn tốt nhất, sinh sản nhiều nhất. Nên đúng nơi hai vùng chồng lấn, chọn lọc đẩy hai phân bố tách xa. Kéo chúng vào chồng lấn và xem hai đỉnh đẩy nhau: chung sống không chỉ cho phép khác biệt, nó chủ động khắc ra khác biệt.",
+      "imposedSeparation": "Khoảng cách áp đặt",
+      "overlapLabel": "Chồng lấn",
+      "overlapping": "đang chồng lấn",
+      "distinct": "tách biệt",
+      "repelling": "Chồng lấn đẩy các đặc điểm ra xa",
+      "separate": "Vùng tách biệt — không áp lực phân ly",
+      "resourceAxis": "tài nguyên (vd. cỡ mỏ)",
+      "speciesA": "loài A",
+      "speciesB": "loài B"
+    },
+    "cis-regulatory-element": {
+      "title": "Yếu tố điều hòa cis",
+      "category": "Tiến hóa",
+      "info": "Nơi tiến hóa làm phần lớn công việc thực. Quanh mỗi gene là những đoạn DNA không mã hóa đóng vai công tắc — quyết định khi nào, ở đâu và mạnh ra sao gene bật. Thay vì liều thiết kế lại một gene tổng vô giá, tiến hóa tinh chỉnh một công tắc: thêm một đốm màu, dập một cái chân, mà giữ nguyên công cụ. Bật tắt các công tắc và xem mô nào biểu hiện trong khi gene mã hóa vẫn nguyên vẹn.",
+      "codingGene": "gene mã hóa",
+      "expressed": "Biểu hiện",
+      "geneIntact": "gene mã hóa vẫn nguyên vẹn",
+      "switchesOn": "công tắc bật",
+      "tapSwitches": "chạm các công tắc để tinh chỉnh biểu hiện",
+      "eyeSpot": "đốm mắt",
+      "limbBud": "mầm chi",
+      "pigment": "sắc tố",
+      "flank": "sườn"
+    },
+    "coevolution": {
+      "title": "Đồng tiến hóa",
+      "category": "Tiến hóa",
+      "info": "Cuộc chạy đua vũ trang không hồi kết. Mỗi bên là lực chọn lọc lên bên kia: con mồi nhanh hơn chọn lọc cho kẻ săn nhanh hơn, lại chọn lọc cho con mồi nhanh hơn nữa. Đẩy đặc điểm trốn chạy của con mồi và đặc điểm truy đuổi của kẻ săn leo lên đáp trả — một xoáy leo thang mà không ai thắng, vì bản thân cuộc đua là trạng thái cân bằng. Trên Pandora là chiến thuật bầy của viperwolf đối lại giác quan của hexapede.",
+      "escalation": "Leo thang",
+      "gap": "Khoảng cách",
+      "noWinner": "không ai thắng — cuộc đua là cân bằng",
+      "predator": "kẻ săn",
+      "prey": "con mồi",
+      "preyTrait": "Đặc điểm trốn chạy",
+      "traitLevel": "mức đặc điểm"
+    },
+    "convergent-evolution": {
+      "title": "Tiến hóa hội tụ",
+      "category": "Tiến hóa",
+      "info": "Môi trường áp một đáp án lên nhiều khởi đầu. Chọn một công việc và các dòng dõi xa xôi hội tụ về cùng một hình: nước ép thân thon lên cá heo, ngư long và cá mập như nhau. Hội tụ giải thích các đặc điểm đơn giản do môi trường định đoạt — nhưng không giải thích được đặc điểm phức tạp, ngẫu nhiên, vốn chỉ về chung dòng máu. Chọn một chức năng và xem năm dòng dõi xa lạ trượt về một dáng hình.",
+      "converged": "hội tụ về một hình",
+      "function": "Chức năng",
+      "solution": "Lời giải",
+      "swim": "bơi",
+      "fly": "bay",
+      "run": "chạy",
+      "l1": "dòng 1",
+      "l2": "dòng 2",
+      "l3": "dòng 3",
+      "l4": "dòng 4",
+      "l5": "dòng 5"
+    },
+    "deep-homology": {
+      "title": "Tương đồng sâu",
+      "category": "Tiến hóa",
+      "info": "Cùng một công tắc cổ đại đằng sau những cấu trúc trông chẳng giống nhau. Mắt kép côn trùng và mắt máy ảnh động vật có xương sống dựng trên những sơ đồ khác hẳn, nhưng cả hai đều được khởi động bởi một gene tổng, Pax6 — chung sâu đến mức Pax6 của chuột có thể mọc mắt trên ruồi. Bật tắt Pax6 và cả hai mắt cùng sáng hoặc cùng tối: bằng chứng khác cấu trúc có thể giấu một cội nguồn tương đồng sâu.",
+      "bothEyesForm": "Cả hai mắt hình thành — một gene tổng, Pax6",
+      "insect": "côn trùng",
+      "masterGene": "Pax6",
+      "noEyes": "Pax6 tắt — không mắt nào hình thành",
+      "off": "tắt",
+      "on": "bật",
+      "togglePax6Off": "tắt Pax6",
+      "togglePax6On": "bật Pax6",
+      "vertebrate": "động vật có xương sống"
+    },
+    "degeneracy-biology": {
+      "title": "Tính suy biến",
+      "category": "Sinh học",
+      "info": "Độ bền mà độ dư thừa không mua được. Suy biến là khi các bộ phận khác cấu tạo tình cờ làm cùng một việc — thận, tuyến mồ hôi và phổi đều thải chất. Vô hiệu một tuyến và dòng chảy tìm một tuyến khác không giống nó; đầu ra vẫn giữ. Chỉ khi đủ số tuyến khác biệt bị cắt thì chức năng mới hỏng, vì kẻ thay thế chưa từng là bản dự phòng chuyên trách, chỉ là bộ phận khác có năng lực trùng lặp.",
+      "input": "đầu vào",
+      "liveRoutes": "Tuyến sống",
+      "output": "đầu ra",
+      "outputFails": "Đầu ra hỏng — mọi tuyến đã cắt",
+      "outputHolds": "Đầu ra giữ nhờ {n} tuyến khác biệt",
+      "tapToDisable": "chạm một tuyến để vô hiệu",
+      "renal": "thận",
+      "glandular": "tuyến",
+      "respiratory": "phổi"
+    },
+    "differential-persistence": {
+      "title": "Tồn tại biệt hóa",
+      "category": "Tiến hóa",
+      "info": "Chọn lọc không cần sinh sản. Nới lỏng khung Darwin của Doolittle: một hệ không cần sinh sản để được chọn lọc — nó chỉ cần tồn tại lâu hơn. Những hệ tình cờ rơi vào vòng phản hồi ổn định thì trụ lại; hệ không có thì sụp nhanh. Chạy thời gian địa chất và những kẻ sống sót, một cách hiển nhiên, là những hệ có phản hồi đã giữ vững — bài ca, không phải ca sĩ.",
+      "feedbackStrength": "Sức mạnh phản hồi",
+      "geologicalTime": "thời gian địa chất",
+      "gyr": "Tỷ.năm",
+      "persisted": "Còn tồn tại",
+      "surviving": "Sống sót",
+      "strongLoops": "vòng mạnh",
+      "weakLoops": "vòng yếu",
+      "someLoops": "vài vòng"
+    },
+    "evolutionary-stasis": {
+      "title": "Trì trệ tiến hóa",
+      "category": "Tiến hóa",
+      "info": "Loài mà thời gian bỏ quên. Đa số dòng dõi trên một thế giới bất an bị buộc phải liên tục biến đổi; vài loài ngồi gần như bất biến hàng aeon. Tua đồng hồ thời gian sâu và sinh vật này hầu như không đổi trong khi các lớp thời đại ma quái quét qua. Theo cốt truyện, người Na'vi xuất hiện ~12 triệu năm trước và gần như không đổi từ đó — một sự đứng yên Eywa được cho là chủ động duy trì, không có tiền lệ trên Trái Đất.",
+      "changeLabel": "Thay đổi",
+      "deepTime": "Thời gian sâu",
+      "morphChange": "Thay đổi hình thái",
+      "myr": "Tr.năm",
+      "over": "qua",
+      "slowDrift": "trôi chậm",
+      "weakSelection": "chọn lọc yếu — đứng yên bám trụ"
+    },
+    "extremophile": {
+      "title": "Sinh vật ưa cực hạn",
+      "category": "Sinh học",
+      "info": "Sự sống ở rìa của khả dĩ. Một sinh vật ưa cực hạn — gần như luôn là vi sinh vật — phát triển mạnh nơi phần lớn sự sống chết: nước sôi, băng giá, axit dữ dội, nước muối, bùn ngập kim loại. Nó vạch ranh giới ngoài của khả năng sống được, nơi đầu tiên nhà sinh học vũ trụ tìm đến. Đẩy các núm quá mức Trái Đất và vi sinh vật thường tàn lụi trong khi kẻ ưa cực hạn bừng sáng: vùng thoải mái của nó bắt đầu nơi vùng bình thường kết thúc.",
+      "earthNormal": "Mức Trái Đất — sự sống thường phát triển",
+      "extremophileLabel": "kẻ ưa cực hạn",
+      "extremophileThrives": "Vượt mức Trái Đất — kẻ ưa cực hạn phát triển",
+      "ordinaryMicrobe": "vi sinh vật thường",
+      "temperature": "nhiệt",
+      "ph": "pH",
+      "salinity": "muối",
+      "radiation": "phóng xạ"
+    },
+    "frozen-accident": {
+      "title": "Tai nạn đông cứng",
+      "category": "Tiến hóa",
+      "info": "Một lựa chọn hóa học không bắt buộc, đông cứng vì mọi thứ về sau đều phụ thuộc vào nó. Bộ mã di truyền gán mỗi codon với một axit amin — một trong nhiều cách gán khả dĩ, chọn sớm một cách ngẫu nhiên rồi khóa lại, vì gán lại một codon bây giờ sẽ làm hỏng mọi protein đã dùng nó. Thử gán lại một codon và xem thiệt hại lan qua proteome. Đối lập của nó là tối ưu phổ quát, đặc điểm mà hóa học bắt buộc.",
+      "broken": "hỏng",
+      "codeLockedIn": "Bộ mã đã khóa cứng — gán lại là thảm họa",
+      "intact": "nguyên vẹn",
+      "lockInLesson": "mọi thứ phía sau phụ thuộc vào ý nghĩa cũ",
+      "proteinsCorrupted": "{n} protein hỏng cùng lúc",
+      "proteome": "Proteome",
+      "reassign": "gán lại",
+      "tapToReassign": "chạm một codon để thử gán lại"
+    },
+    "genetic-toolkit": {
+      "title": "Bộ công cụ di truyền",
+      "category": "Tiến hóa",
+      "info": "Một hộp công cụ, vô vàn hình thái. Gần như mọi động vật chia sẻ cùng bộ điều hòa phát triển cổ xưa — cùng kẻ dựng mắt, cùng gene khởi tạo chi, cùng những kẻ đánh địa chỉ Hox. Sự đa dạng cơ thể động vật đến không phải từ công cụ mới mà từ cách dùng khác nhau của chung một bộ. Xếp một arthropod Trái Đất cạnh một hexapod Pandora: các gene công cụ được bảo tồn phát cùng màu cyan, phần riêng của mỗi loài đứng tách ra.",
+      "conservedAcross": "bảo tồn qua cả hai dòng dõi",
+      "earthArthropod": "arthropod Trái Đất",
+      "pandoraHexapod": "hexapod Pandora",
+      "sharedLabel": "Chung",
+      "sharedTools": "công cụ chung",
+      "tapTool": "chạm một công cụ để truy nó ở cả hai",
+      "pax6": "Pax6",
+      "distalless": "Dll",
+      "hox": "Hox",
+      "tinman": "tinman",
+      "wnt": "Wnt",
+      "chitinSynth": "chitin",
+      "carbonFibre": "sợi-C"
+    },
+    "homeobox": {
+      "title": "Hộp gene homeobox",
+      "category": "Tiến hóa",
+      "info": "Đoạn kẹp 180 chữ cái tìm thấy gần như không đổi bên trong các gene Hox và vô số gene điều hòa phát triển. Nó mã hóa phần protein bấu chặt DNA và bật tắt các gene khác như một công tắc tổng. Tìm thấy cùng chuỗi ngắn này ở ruồi, chuột và người — cách nhau 600 triệu năm — chính là khám phá mở ra ngành evo-devo. Đổi sinh vật và motif vẫn y hệt trong khi mọi thứ khác đều đổi.",
+      "conservedLabel": "Bảo tồn",
+      "homeodomain": "vùng homeo",
+      "inOrganism": "Ở loài {org} — homeobox vẫn thế",
+      "motifIdentical": "motif y hệt",
+      "mya": "Tr.năm",
+      "organism": "sinh vật",
+      "splitLabel": "Tách ra",
+      "fly": "ruồi",
+      "mouse": "chuột",
+      "human": "người"
+    },
+    "homeosis": {
+      "title": "Biến đổi đồng dạng",
+      "category": "Tiến hóa",
+      "info": "Cơ thể được gửi địa chỉ, không lắp ráp thủ công. Biến đổi đồng dạng là một bộ phận được dựng theo hình một bộ phận thuộc về nơi khác — con ruồi Antennapedia kinh điển, một cái chân mọc nơi đáng lẽ là râu. Nó xảy ra khi nhãn vị trí mà gene Hox đóng bị đặt nhầm, nên tế bào dựng cấu trúc của một địa chỉ khác. Bật công tắc và xem cái râu biến hình từng đốt thành chân.",
+      "antenna": "râu",
+      "antennapedia": "Antennapedia — một cái chân thế chỗ râu",
+      "appendage": "Phần phụ",
+      "induceHomeosis": "gây biến đổi đồng dạng",
+      "leg": "chân",
+      "revertNormal": "trở lại bình thường",
+      "wildType": "Kiểu hoang dã — râu đúng chỗ"
+    },
+    "homoplasy": {
+      "title": "Tương đồng giả",
+      "category": "Tiến hóa",
+      "info": "Chữ ký giả mạo. Tương đồng giả là sự giống nhau không thừa hưởng từ tổ tiên chung — một trùng hợp đến hai lần, không phải một đặc điểm truyền lại. Nó là kẻ thù lớn của việc dựng cây vì trông y hệt họ hàng thật, len vào qua hội tụ, song song, hoặc đảo ngược. Làm nổi đặc điểm và xem nó bừng lên ở hai đầu mút xa nhau không có nhánh chung: phân biệt cái này với tương đồng thật là cả nghệ thuật phân nhánh học.",
+      "hideTrait": "ẩn đặc điểm",
+      "highlightHint": "làm nổi đặc điểm để thấy nguồn gốc",
+      "highlightTrait": "làm nổi đặc điểm",
+      "looksShared": "trông như chung — nhưng không phải",
+      "origins": "Nguồn gốc",
+      "twoIndependentGains": "Hai lần phát sinh độc lập — không chung tổ tiên",
+      "t1": "A",
+      "t2": "B",
+      "t3": "C",
+      "t4": "D",
+      "t5": "E"
+    },
+    "hox-genes": {
+      "title": "Gene Hox",
+      "category": "Tiến hóa",
+      "info": "Những gene phát địa chỉ. Gene Hox không tự xây gì — chúng đánh dấu vị trí dọc trục đầu-đuôi, bảo mỗi vùng biết nó là đầu, thân giữa hay đuôi. Điều kỳ lạ là tính đồng tuyến: chúng nằm thành hàng trên nhiễm sắc thể đúng theo trật tự các vùng cơ thể chúng cai trị, được bảo tồn từ ruồi đến chuột đến người. Bấm một gene và dải cơ thể tương ứng sáng lên.",
+      "chromosome": "nhiễm sắc thể",
+      "clickGene": "bấm một gene để sáng vùng cơ thể của nó",
+      "collinear": "đồng tuyến — trật tự gene khớp trật tự cơ thể",
+      "embryoAxis": "phôi",
+      "geneLabel": "Gene",
+      "head": "đầu",
+      "tail": "đuôi",
+      "lab": "lab",
+      "pb": "pb",
+      "dfd": "Dfd",
+      "scr": "Scr",
+      "antp": "Antp",
+      "ubx": "Ubx",
+      "abda": "abd-A",
+      "abdb": "Abd-B"
+    },
+    "pleiotropy": {
+      "title": "Tính đa hiệu",
+      "category": "Tiến hóa",
+      "info": "Một gene, nhiều việc chẳng liên quan. Sonic hedgehog mọc chi — nhưng cũng định hình não, tủy sống và răng. Bản chất một nách nhiều con ấy chính là điều khiến làm đột biến trình tự mã hóa của một gene tổng trở nên nguy hiểm: sửa một chỗ, phá vài chỗ cùng lúc. Bật tắt gene và mọi đặc điểm nó chạm cùng mờ đi — đó là lý do tiến hóa thường chỉnh một công tắc điều hòa thay vì chọc vào gene.",
+      "allDimmed": "Mọi đặc điểm cùng mờ — hiểm họa của đa hiệu",
+      "geneShort": "SHH",
+      "knockOut": "vô hiệu gene",
+      "oneGene": "một gene",
+      "restoreGene": "phục hồi gene",
+      "traitsExpressed": "đặc điểm biểu hiện",
+      "traitsHit": "Đặc điểm bị hại",
+      "brain": "não",
+      "limbs": "chi",
+      "spine": "cột sống",
+      "teeth": "răng",
+      "eyes": "mắt"
+    },
+    "reticulate-evolution": {
+      "title": "Tiến hóa mạng lưới",
+      "category": "Tiến hóa",
+      "info": "Tiến hóa như một mạng lưới, không chỉ là cây. Đôi khi các dòng đã tách lại nối lại — qua chuyển gene ngang, lai giống, nội cộng sinh — khâu các nhánh thành một mạng (tiếng Latin reticulum, cái lưới nhỏ). Cây gọn gàng khi đó là một giản lược của thứ thực sự có hình mạng. Bấm một cây cầu để lộ gene đã nhảy qua nó. Mạng lưới làm cây phức tạp thêm, không xóa bỏ cây.",
+      "bridges": "Cầu nối",
+      "clickBridge": "bấm một cầu để lộ gene đã chuyển",
+      "transferred": "{gene} nhảy giữa các dòng dõi",
+      "treePlusWeb": "một cái cây khâu thành mạng",
+      "hgt": "chuyển ngang",
+      "hybrid": "lai giống",
+      "endo": "nội cộng sinh",
+      "geneA": "gene A",
+      "geneB": "gene B",
+      "geneC": "gene C"
+    },
+    "serial-homology": {
+      "title": "Tương đồng chuỗi",
+      "category": "Tiến hóa",
+      "info": "Bộ phận lặp lại, một cội nguồn, chỉnh theo địa chỉ. Tương đồng chuỗi là mối liên hệ giữa các đốt lặp dọc cơ thể vốn chung một đơn vị phát triển nhưng được sửa để làm việc khác nhau tùy vị trí — đốt sống, phần phụ của tôm, đốt cánh chuồn chuồn. Bấm bất kỳ chi nào trong sáu chi của hexapod và nó sáng trên bản đồ trường-chi chung: cả sáu cùng một module, được đẽo lại theo địa chỉ Hox.",
+      "clickLimb": "bấm một chi để truy cội nguồn chung",
+      "limbField": "trường chi",
+      "limbs": "Chi",
+      "sameModule": "cùng module, chỉnh cho {role}",
+      "grasp": "nắm",
+      "walk": "đi",
+      "push": "đẩy"
+    },
+    "shadow-biosphere": {
+      "title": "Sinh quyển bóng tối",
+      "category": "Sinh học vũ trụ",
+      "info": "Một sự sống thứ hai ta có thể đang mù trước nó. Sinh quyển bóng tối là một sự sống vi sinh giả định, độc lập, trên một nền hóa sinh khác — khung di truyền khác, một bàn tay đối xứng gương, một dung môi khác — cùng tồn tại với ta mà không bị phát hiện, vì máy móc của ta đều hiệu chỉnh cho sự sống chuẩn. Cho dĩa dưỡng chất chuẩn và chỉ khuẩn lạc cyan nở; cho dưỡng chất hợp bóng tối thì khuẩn magenta nở. Không bên nào nuôi được bên kia.",
+      "neutral": "trung tính",
+      "noCrossFeed": "không bên nào nuôi được bên kia",
+      "nutrientType": "Loại dưỡng chất",
+      "shadow": "bóng tối",
+      "shadowBlooms": "Sự sống bóng tối nở — vô hình trước máy chuẩn",
+      "shadowFood": "thức ăn bóng tối",
+      "standard": "chuẩn",
+      "standardBlooms": "Sự sống chuẩn nở",
+      "standardFood": "thức ăn chuẩn"
+    },
+    "xeno-nucleic-acid": {
+      "title": "Axit nucleic ngoại lai",
+      "category": "Sinh học vũ trụ",
+      "info": "Chiếc thang xoắn của ta không phải lựa chọn khả dĩ duy nhất. Một XNA mang thông tin di truyền như DNA hay RNA nhưng trên một bộ khung khác — thay đường hay xương sống bằng thành phần sự sống Trái Đất chưa dùng, và thông tin vẫn có thể lưu và sao. Đổi bộ khung và xem hai thanh ray đổi hóa học trong khi các bậc — logic ghép base — vẫn nguyên. Một vi sinh vật dựng trên XNA sẽ vô hình trước công cụ chỉ đọc được bộ khung quen.",
+      "backbone": "Bộ khung",
+      "backboneShort": "khung",
+      "pairingHolds": "logic ghép base vẫn giữ",
+      "rails": "Thanh ray",
+      "rungs": "Bậc thang",
+      "aTgC": "A·T G·C",
+      "dna": "DNA",
+      "tna": "TNA",
+      "pna": "PNA",
+      "hna": "HNA",
+      "deoxyribose": "deoxyribose",
+      "threose": "threose",
+      "peptide": "peptide",
+      "hexitol": "hexitol"
+    },
+    "chirality": {
+      "title": "Tính bất đối xứng gương",
+      "category": "Hóa học",
+      "info": "Tính thuận tay ở quy mô phân tử. Một phân tử bất đối xứng gương có hai dạng ảnh gương không bao giờ chồng khít — cùng nguyên tử, cùng liên kết, sắp xếp ba chiều ngược nhau, hệt bàn tay trái và phải. Xoay bản sao tay phải kiểu gì nó cũng không phủ lên tay trái. Vì enzyme nhận diện bằng hình dạng, túi của nó chỉ cầm được một tay; dạng gương thường vô dụng về mặt sinh học. Từ tiếng Hy Lạp cheir, bàn tay.",
+      "enzyme": "Enzyme",
+      "enzymePocket": "túi chỉ nhận tay trái",
+      "fits": "vừa",
+      "leftHand": "tay trái",
+      "neverAligns": "không phép xoay nào làm chúng khớp",
+      "overlap": "Chồng khít",
+      "overlapLabel": "Chồng khít",
+      "rejected": "bị từ chối",
+      "rightHand": "tay phải (gương)",
+      "rotateAttempt": "Thử xoay"
+    },
+    "homochirality": {
+      "title": "Tính đồng thủ",
+      "category": "Hóa học",
+      "info": "Một tay, hoặc chẳng gì hoạt động. Một sinh quyển chỉ dùng một dạng gương của các phân tử bất đối xứng — sự sống Trái Đất chạy trên axit amin gần như hoàn toàn thuận tay trái và đường thuận tay phải. Không luật hóa học nào bắt buộc, nhưng một khi đã chọn, mọi thứ phụ thuộc vào nó. Đồng thủ là điều cho phép protein gập: cho một chuỗi toàn tay trái và nó lắng vào một hình dạng hoạt động sạch; trộn tay phải vào và nếp gập rối thành một nút vô dụng.",
+      "failed": "thất bại",
+      "fold": "Gập",
+      "foldsCleanly": "Đồng thủ — gập thành hình dạng hoạt động",
+      "handedness": "Độ tinh khiết L / R",
+      "homochiral": "đồng thủ",
+      "misfolds": "Pha trộn tay — nếp gập rối và hỏng",
+      "mixed": "pha trộn",
+      "native": "tự nhiên",
+      "purityLabel": "Tinh khiết",
+      "tangled": "nút rối",
+      "workingShape": "hình dạng hoạt động"
     }
   }
 }

@@ -3,18 +3,38 @@ import { NextIntlClientProvider } from "next-intl";
 import type { ReactElement } from "react";
 
 import enCommon from "@/messages/en/common.json";
+import enAstronomy from "@/messages/en/viz-astronomy.json";
+import enAtmosphere from "@/messages/en/viz-atmosphere.json";
 import enBio from "@/messages/en/viz-bio.json";
+import enBiomechanics from "@/messages/en/viz-biomechanics.json";
+import enCanon from "@/messages/en/viz-canon.json";
+import enEcology from "@/messages/en/viz-ecology.json";
 import enEvolution from "@/messages/en/viz-evolution.json";
+import enGeochronology from "@/messages/en/viz-geochronology.json";
+import enMind from "@/messages/en/viz-mind.json";
+import enNetwork from "@/messages/en/viz-network.json";
 import enPhysics from "@/messages/en/viz-physics.json";
 import enPlanetary from "@/messages/en/viz-planetary.json";
+import enPlant from "@/messages/en/viz-plant.json";
+import enSystematics from "@/messages/en/viz-systematics.json";
 import enTime from "@/messages/en/viz-time.json";
 import enWrappers from "@/messages/en/viz-wrappers.json";
 
 import viCommon from "@/messages/vi/common.json";
+import viAstronomy from "@/messages/vi/viz-astronomy.json";
+import viAtmosphere from "@/messages/vi/viz-atmosphere.json";
 import viBio from "@/messages/vi/viz-bio.json";
+import viBiomechanics from "@/messages/vi/viz-biomechanics.json";
+import viCanon from "@/messages/vi/viz-canon.json";
+import viEcology from "@/messages/vi/viz-ecology.json";
 import viEvolution from "@/messages/vi/viz-evolution.json";
+import viGeochronology from "@/messages/vi/viz-geochronology.json";
+import viMind from "@/messages/vi/viz-mind.json";
+import viNetwork from "@/messages/vi/viz-network.json";
 import viPhysics from "@/messages/vi/viz-physics.json";
 import viPlanetary from "@/messages/vi/viz-planetary.json";
+import viPlant from "@/messages/vi/viz-plant.json";
+import viSystematics from "@/messages/vi/viz-systematics.json";
 import viTime from "@/messages/vi/viz-time.json";
 import viWrappers from "@/messages/vi/viz-wrappers.json";
 
@@ -41,15 +61,49 @@ function deepMerge(target: Json, source: Json): Json {
   return target;
 }
 
+const EN_PARTS = [
+  enCommon,
+  enPhysics,
+  enPlanetary,
+  enBio,
+  enEvolution,
+  enTime,
+  enWrappers,
+  enAstronomy,
+  enGeochronology,
+  enAtmosphere,
+  enSystematics,
+  enBiomechanics,
+  enEcology,
+  enPlant,
+  enNetwork,
+  enMind,
+  enCanon,
+] as const;
+
+const VI_PARTS = [
+  viCommon,
+  viPhysics,
+  viPlanetary,
+  viBio,
+  viEvolution,
+  viTime,
+  viWrappers,
+  viAstronomy,
+  viGeochronology,
+  viAtmosphere,
+  viSystematics,
+  viBiomechanics,
+  viEcology,
+  viPlant,
+  viNetwork,
+  viMind,
+  viCanon,
+] as const;
+
 const MESSAGES: Record<"en" | "vi", Json> = {
-  en: [enCommon, enPhysics, enPlanetary, enBio, enEvolution, enTime, enWrappers].reduce<Json>(
-    (acc, part) => deepMerge(acc, part as Json),
-    {},
-  ),
-  vi: [viCommon, viPhysics, viPlanetary, viBio, viEvolution, viTime, viWrappers].reduce<Json>(
-    (acc, part) => deepMerge(acc, part as Json),
-    {},
-  ),
+  en: EN_PARTS.reduce<Json>((acc, part) => deepMerge(acc, part as Json), {}),
+  vi: VI_PARTS.reduce<Json>((acc, part) => deepMerge(acc, part as Json), {}),
 };
 
 // Render a component inside the real merged message catalog for a locale, so

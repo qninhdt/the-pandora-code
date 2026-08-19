@@ -1,250 +1,269 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import React, { useState } from "react";
+import { useState } from "react";
 import { GlossaryFrame } from "./shared/frame";
+import { Readout } from "./shared/readout";
+import { useInView } from "./shared/use-in-view";
+import { useRafLoop } from "./shared/use-raf-loop";
 
-interface Gene {
-  id: number;
-  geneName: string;
-  key: string;
-  color: string;
-  glowColor: string;
-  cx: number;
-  cy: number;
-  r: number;
-  pathD?: string;
-}
-
-const GENES: Gene[] = [
-  {
-    id: 1,
-    geneName: "Hox-1",
-    key: "hox1",
-    color: "#36c5d9", // Pandora Cyan
-    glowColor: "rgba(54, 197, 217, 0.6)",
-    cx: 80,
-    cy: 120,
-    r: 18,
-  },
-  {
-    id: 2,
-    geneName: "Hox-2",
-    key: "hox2",
-    color: "#2bd4a8", // Living Teal
-    glowColor: "rgba(43, 212, 168, 0.6)",
-    cx: 120,
-    cy: 120,
-    r: 16,
-  },
-  {
-    id: 3,
-    geneName: "Hox-3",
-    key: "hox3",
-    color: "#ffb454", // Ember Amber
-    glowColor: "rgba(255, 180, 84, 0.6)",
-    cx: 160,
-    cy: 100,
-    r: 22,
-    pathD: "M 150 120 C 120 70, 160 50, 180 80 Z",
-  },
-  {
-    id: 4,
-    geneName: "Hox-4",
-    key: "hox4",
-    color: "#8a93a8", // Stone/Midtone
-    glowColor: "rgba(138, 147, 168, 0.4)",
-    cx: 200,
-    cy: 120,
-    r: 20,
-  },
-  {
-    id: 5,
-    geneName: "Hox-5",
-    key: "hox5",
-    color: "#ff5da8", // Biolum Magenta
-    glowColor: "rgba(255, 93, 168, 0.6)",
-    cx: 245,
-    cy: 135,
-    r: 15,
-    pathD: "M 240 125 C 230 150, 250 160, 255 140 Z",
-  },
-  {
-    id: 6,
-    geneName: "Hox-6",
-    key: "hox6",
-    color: "#143b46", // Ocean Teal
-    glowColor: "rgba(20, 59, 70, 0.6)",
-    cx: 300,
-    cy: 120,
-    r: 16,
-  },
+// The genes that hand out addresses. Hox genes build nothing themselves — they
+// label position along the head-to-tail axis, telling each region whether it is
+// head, mid-body or tail. The uncanny part is collinearity: they sit in a row on
+// the chromosome in the very same order as the body regions they govern,
+// conserved from fly to mouse to human. Click a gene and its matching band lights.
+const HOX = [
+  { key: "lab", color: "#ff5da8" },
+  { key: "pb", color: "#ff8f6b" },
+  { key: "dfd", color: "#ffb454" },
+  { key: "scr", color: "#d9d24a" },
+  { key: "antp", color: "#2bd4a8" },
+  { key: "ubx", color: "#36c5d9" },
+  { key: "abda", color: "#6aa9ff" },
+  { key: "abdb", color: "#9a7dff" },
 ];
 
 export default function HoxGenes() {
-  const t = useTranslations("viz.hoxMap");
-  const [activeIdx, setActiveIdx] = useState<number | null>(null);
+  const t = useTranslations("viz.hox-genes");
+  const { ref, inView } = useInView<HTMLDivElement>();
+  const [sel, setSel] = useState<number | null>(null);
+  const force = useState(0)[1];
 
-  const activeGene = activeIdx !== null ? GENES[activeIdx] : null;
+  useRafLoop(() => force((n) => (n + 1) % 1_000_000), { active: inView });
+
+  const n = HOX.length;
+  const geneW = 74 / n;
+  // the embryo is drawn as a tapering worm: wide head (left) → thin tail (right)
+  const bodyX0 = 14;
+  const bodyX1 = 88;
+  const bodyLen = bodyX1 - bodyX0;
+  const segW = bodyLen / n;
+  const halfH = (i: number) => 13 - (i / (n - 1)) * 7; // taper head→tail
+  const cy = 62;
+  const pulse = 0.5 + 0.5 * Math.sin((Date.now() / 1000) * 3);
 
   return (
     <GlossaryFrame
       title={t("title")}
-      infoText={t("hint")}
-      onReset={() => setActiveIdx(null)}
-      aspectRatio="aspect-[16/10]"
+      category={t("category")}
+      infoText={t("info")}
+      onReset={() => setSel(null)}
+      allowFullscreen={false}
+      caption={
+        sel != null ? (
+          <span style={{ color: HOX[sel].color }}>{t("collinear")}</span>
+        ) : (
+          <span className="text-muted">{t("clickGene")}</span>
+        )
+      }
     >
-      <div className="relative w-full h-full flex flex-col justify-end p-4">
-        {/* SVG Visualization */}
-        <div className="absolute inset-0 flex items-center justify-center p-6 pb-36">
-          <svg viewBox="0 0 400 200" className="w-full h-full max-h-[85%] select-none">
-            <title>Hox Genes body plan</title>
+      <div ref={ref} className="absolute inset-0">
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
+          <defs>
+            <linearGradient id="hox-bg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#0c1424" />
+              <stop offset="100%" stopColor="#080d18" />
+            </linearGradient>
+            <linearGradient id="hox-chr" x1="0" y1="0" x2="1" y2="0">
+              {HOX.map((g, i) => (
+                <stop
+                  key={g.key}
+                  offset={`${(i / (n - 1)) * 100}%`}
+                  stopColor={g.color}
+                />
+              ))}
+            </linearGradient>
+            <filter id="hox-glow" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="0.9" result="b" />
+              <feMerge>
+                <feMergeNode in="b" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+            {HOX.map((g) => (
+              <radialGradient
+                key={g.key}
+                id={`hox-seg-${g.key}`}
+                cx="40%"
+                cy="30%"
+                r="80%"
+              >
+                <stop offset="0%" stopColor={g.color} stopOpacity="0.95" />
+                <stop offset="100%" stopColor={g.color} stopOpacity="0.45" />
+              </radialGradient>
+            ))}
+          </defs>
 
-            {/* Draw Creature Silhouette Grid */}
-            <g opacity="0.15">
-              {/* Reference Grid lines */}
-              <line x1="40" y1="120" x2="360" y2="120" className="stroke-muted stroke-[1]" />
-              <line x1="160" y1="50" x2="160" y2="170" className="stroke-muted stroke-[0.5]" />
-              <line x1="240" y1="50" x2="240" y2="170" className="stroke-muted stroke-[0.5]" />
-            </g>
+          <rect x="0" y="0" width="100" height="100" fill="url(#hox-bg)" />
 
-            {/* Spine (connecting all segments) */}
-            <path
-              d="M 70 120 Q 180 110 320 120"
-              fill="none"
-              stroke={activeIdx !== null ? "var(--border-strong)" : "var(--border)"}
-              strokeWidth="3"
-              className="transition-all duration-300"
-            />
+          <text
+            x="13"
+            y="18"
+            className="fill-muted"
+            style={{ fontSize: 3, fontFamily: "monospace" }}
+          >
+            {t("chromosome")}
+          </text>
 
-            {/* Draw Segments */}
-            {GENES.map((g, idx) => {
-              const isActive = activeIdx === idx;
+          {/* the chromosome ribbon carrying the ordered gene cluster */}
+          <path
+            d="M13 27 Q50 24 87 27"
+            fill="none"
+            stroke="url(#hox-chr)"
+            strokeWidth="1.4"
+            strokeLinecap="round"
+            opacity="0.55"
+          />
+
+          {/* Hox gene beads on the chromosome */}
+          {HOX.map((g, i) => {
+            const x = 14 + i * geneW + geneW / 2;
+            const gy = 27 - Math.sin((i / (n - 1)) * Math.PI) * 2.4;
+            const on = sel === i;
+            const dim = sel != null && !on;
+            return (
+              <g
+                key={g.key}
+                role="button"
+                tabIndex={0}
+                aria-label={t(g.key)}
+                aria-pressed={on}
+                style={{ cursor: "pointer" }}
+                onClick={() => setSel(i === sel ? null : i)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    setSel(i === sel ? null : i);
+                  }
+                }}
+              >
+                {/* generous invisible hit target */}
+                <rect
+                  x={14 + i * geneW}
+                  y={18}
+                  width={geneW}
+                  height={18}
+                  fill="transparent"
+                />
+                {on && (
+                  <circle
+                    cx={x}
+                    cy={gy}
+                    r={4 + pulse * 1.6}
+                    fill={g.color}
+                    opacity={0.25}
+                  />
+                )}
+                <circle
+                  cx={x}
+                  cy={gy}
+                  r={on ? 3.2 : 2.4}
+                  fill={g.color}
+                  opacity={dim ? 0.3 : 1}
+                  stroke={on ? "var(--foreground)" : "transparent"}
+                  strokeWidth="0.5"
+                  filter={dim ? undefined : "url(#hox-glow)"}
+                />
+                <text
+                  x={x}
+                  y={gy - 4.4}
+                  textAnchor="middle"
+                  fill={dim ? "var(--muted)" : g.color}
+                  style={{ fontSize: 2.4, fontFamily: "monospace" }}
+                  opacity={dim ? 0.4 : 1}
+                >
+                  {t(g.key)}
+                </text>
+              </g>
+            );
+          })}
+
+          {/* collinearity thread from gene to its body segment */}
+          {sel != null &&
+            (() => {
+              const gx = 14 + sel * geneW + geneW / 2;
+              const sx = bodyX0 + sel * segW + segW / 2;
               return (
-                <g key={g.geneName} className="transition-all duration-300">
-                  {/* Outer Highlight Aura */}
-                  {isActive && (
-                    <circle
-                      cx={g.cx}
-                      cy={g.cy}
-                      r={g.r + 12}
-                      fill="none"
-                      stroke={g.color}
-                      strokeWidth="2"
-                      strokeDasharray="4,3"
-                      className="animate-spin"
-                      style={{ animationDuration: "12s" }}
-                    />
-                  )}
-
-                  {/* Segment Body Core */}
-                  {g.pathD ? (
-                    <path
-                      d={g.pathD}
-                      fill={isActive ? g.color : "transparent"}
-                      stroke={isActive ? g.color : "var(--border)"}
-                      strokeWidth={isActive ? 3 : 1.5}
-                      className="transition-all duration-300"
-                      style={
-                        isActive ? { filter: `drop-shadow(0 0 10px ${g.glowColor})` } : undefined
-                      }
-                    />
-                  ) : (
-                    <circle
-                      cx={g.cx}
-                      cy={g.cy}
-                      r={g.r}
-                      fill={isActive ? g.color : "var(--surface)"}
-                      stroke={isActive ? g.color : "var(--border)"}
-                      strokeWidth={isActive ? 3 : 1.5}
-                      className="transition-all duration-300"
-                      style={
-                        isActive ? { filter: `drop-shadow(0 0 10px ${g.glowColor})` } : undefined
-                      }
-                    />
-                  )}
-                </g>
+                <path
+                  d={`M${gx} 30 C ${gx} 42 ${sx} 44 ${sx} ${cy - halfH(sel)}`}
+                  fill="none"
+                  stroke={HOX[sel].color}
+                  strokeWidth="0.6"
+                  strokeDasharray="1.6 1.6"
+                  strokeDashoffset={-(Date.now() / 1000) * 4}
+                  opacity="0.8"
+                  filter="url(#hox-glow)"
+                />
               );
-            })}
+            })()}
 
-            {/* Custom overlays for wings or tails */}
-            <g>
-              {/* Head sensory eyes */}
-              <circle
-                cx="68"
-                cy="114"
-                r="2"
-                fill="var(--cyan)"
-                opacity={activeIdx === 0 ? 1 : 0.4}
-              />
-              <circle
-                cx="68"
-                cy="126"
-                r="2"
-                fill="var(--cyan)"
-                opacity={activeIdx === 0 ? 1 : 0.4}
-              />
-              {/* Queue neural lines at tail */}
+          {/* the embryo — a tapering segmented worm, banded in gene order */}
+          {HOX.map((g, i) => {
+            const x = bodyX0 + i * segW;
+            const h = halfH(i);
+            const hn = halfH(Math.min(n - 1, i + 1));
+            const on = sel === i;
+            const dim = sel != null && !on;
+            return (
               <path
-                d="M 314 120 Q 340 125 350 145"
-                fill="none"
-                stroke="var(--magenta)"
-                strokeWidth="1.5"
-                opacity={activeIdx === 5 ? 1 : 0.3}
-                className="stroke-dasharray-[2,2]"
+                key={g.key}
+                d={`M${x} ${cy - h} L${x + segW} ${cy - hn} L${x + segW} ${cy + hn} L${x} ${cy + h} Z`}
+                fill={`url(#hox-seg-${g.key})`}
+                opacity={dim ? 0.2 : on ? 1 : 0.75}
+                stroke="#070912"
+                strokeWidth="0.4"
+                filter={on ? "url(#hox-glow)" : undefined}
               />
-            </g>
-          </svg>
-        </div>
+            );
+          })}
+          {/* head cap + eye */}
+          <ellipse
+            cx={bodyX0 - 1}
+            cy={cy}
+            rx="3"
+            ry={halfH(0)}
+            fill="url(#hox-seg-lab)"
+            opacity={sel != null && sel !== 0 ? 0.2 : 0.9}
+          />
+          <circle
+            cx={bodyX0 + 1.5}
+            cy={cy - 2}
+            r="1"
+            fill="#070912"
+            opacity="0.8"
+          />
 
-        {/* Info Box HUD */}
-        <div className="absolute top-16 left-4 right-4 flex justify-between gap-4 pointer-events-none z-10">
-          <div className="bg-void/90 border border-border/40 rounded-xl p-3 flex-1 pointer-events-auto min-h-[72px] shadow-lg flex flex-col justify-center">
-            {activeGene ? (
-              <>
-                <h5
-                  className="text-[10px] font-mono font-bold uppercase mb-0.5"
-                  style={{ color: activeGene.color }}
-                >
-                  {activeGene.geneName} &rarr; {t(`glossaryGenes.${activeGene.key}.region`)}
-                </h5>
-                <p className="text-[11px] text-muted leading-relaxed font-sans">
-                  {t(`glossaryGenes.${activeGene.key}.note`)}
-                </p>
-              </>
-            ) : (
-              <p className="text-[10px] font-mono text-muted/80 text-center py-2">{t("prompt")}</p>
-            )}
-          </div>
-        </div>
+          <text
+            x={bodyX0}
+            y={cy + 20}
+            className="fill-muted"
+            style={{ fontSize: 2.8, fontFamily: "monospace" }}
+          >
+            {t("head")}
+          </text>
+          <text
+            x={bodyX1}
+            y={cy + 20}
+            textAnchor="end"
+            className="fill-muted"
+            style={{ fontSize: 2.8, fontFamily: "monospace" }}
+          >
+            {t("tail")}
+          </text>
+        </svg>
 
-        {/* Chromosome Gene shelf slider controller */}
-        <div className="relative z-10 w-full bg-void/65 backdrop-blur-md px-4 py-3 border border-border/30 rounded-xl flex flex-col gap-2 mt-auto">
-          <div className="text-[8px] font-mono text-muted uppercase tracking-wider text-center">
-            {t("shelf")}
-          </div>
-
-          <div className="grid grid-cols-6 gap-2">
-            {GENES.map((g, idx) => {
-              const isActive = activeIdx === idx;
-              return (
-                <button
-                  type="button"
-                  key={g.geneName}
-                  onClick={() => setActiveIdx(isActive ? null : idx)}
-                  className="py-2 px-1 rounded border font-mono text-xs text-center transition-all duration-200 select-none hover:bg-surface-overlay"
-                  style={{
-                    backgroundColor: isActive ? g.color : "transparent",
-                    color: isActive ? "var(--background)" : "var(--foreground)",
-                    borderColor: isActive ? g.color : "var(--border)",
-                    boxShadow: isActive ? `0 0 10px ${g.glowColor}` : "none",
-                  }}
-                >
-                  {g.geneName}
-                </button>
-              );
-            })}
-          </div>
+        <div className="absolute right-3 top-16">
+          <Readout
+            label={t("geneLabel")}
+            value={sel != null ? t(HOX[sel].key) : `${n}`}
+            accent="cyan"
+          />
         </div>
       </div>
     </GlossaryFrame>

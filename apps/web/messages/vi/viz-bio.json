@@ -63,16 +63,13 @@
       "legendLight": "Thành ánh sáng"
     },
     "photophore": {
-      "title": "Đốm sáng Na'vi: theo nhịp cơ thể",
-      "calm": "Tĩnh tại",
-      "aroused": "Dồn dập",
-      "slider": "Trạng thái sinh lý",
-      "intensity": "Cường độ",
-      "hue": "Sắc — không đổi",
-      "hueValue": "blue-white",
-      "note": "Đốm sáng xếp dọc theo các đường mạch máu và thần kinh, đối xứng hai bên. Chúng không chớp tắt — sáng đều, rồi rực lên khi adrenaline dâng (chiến đấu, giao kết) và dịu xuống khi nghỉ.",
-      "mono": "Ánh sáng đơn sắc xanh lơ-trắng. Cái 'đổi màu' nhiều người tưởng chỉ là ảo giác do cường độ thay đổi, hoặc ánh lửa hắt lên da.",
-      "monoTag": "Sửa một lầm tưởng"
+      "title": "Photophore",
+      "category": "Giác quan",
+      "info": "Đèn lắp sẵn: photocyte, gương, thấu kính, màn sắc tố. Bật/tắt từng lớp và xem chùm đổi hình.",
+      "photocyte": "Photocyte",
+      "reflector": "Gương",
+      "lens": "Thấu kính",
+      "pigment": "Sắc tố"
     },
     "glowBiogeography": {
       "title": "Nơi nào phát sáng — và vì sao",
@@ -265,22 +262,18 @@
       "vortexNote": "Rơi vào xoáy từ thông, la bàn lượng tử mong manh nhiễu loạn — độ kết hợp của nó vỡ vụn trong từ trường ồn ào, lớp phủ tan thành nhiễu. Bản đồ magnetite thô bền vẫn vững. Một loài bay trụ được ở đây ắt phải dựa vào cỗ máy bền bỉ ấy, đó là lý do banshee bay sạch trong xoáy nơi thiết bị của con người mù lòa."
     },
     "chirality": {
-      "title": "Cùng một tay, hoặc chẳng ghép được gì",
-      "subtitle": "Một enzyme chỉ nắm một tay — lật phân tử lại thì ổ khóa không xoay",
-      "handLabel": "Tay của phân tử",
-      "leftHand": "Tay trái",
-      "rightHand": "Tay phải (ảnh gương)",
-      "enzymeLabel": "enzyme tay trái",
-      "bindLabel": "Bám dính",
-      "binds": "khớp vào",
-      "rejected": "bị từ chối",
-      "fitsNote": "Phân tử tay trái rơi đúng vào túi tay trái — mọi nhóm gặp đúng ổ của nó, và enzyme nắm chặt. Đây là tay mà sự sống Trái Đất dùng: amino acid gần như đều tay trái, đường đều tay phải.",
-      "failsNote": "Lật sang dạng ảnh gương và hai nhóm đổi chỗ: chúng không còn khớp với ổ của mình, nên enzyme không giữ nổi. Một bữa ăn ảnh gương sẽ trôi qua người bạn nguyên vẹn — ổ khóa trong cơ thể bạn chỉ mở cho chìa một tay.",
-      "spliceLabel": "Ghép gen avatar",
-      "spliceClean": "Hai chuỗi khớp vào nhau",
-      "spliceSmear": "Một vũng nhòe, không phải con lai",
-      "spliceCleanWhy": "Cùng một tay trên cả hai bộ gen → protein gập trên một dây chuyền chung. Con avatar hoạt động được gần như bắt buộc điều này.",
-      "spliceSmearWhy": "Hai tay ngược nhau → protein ghép không gập được, mã không đọc được. Không con lai nào có thể tồn tại."
+      "title": "Đồng phân quang học & Góc quay cực",
+      "lAmino": "L-Amino Acid",
+      "dAmino": "D-Amino Acid",
+      "racemic": "Hỗn hợp Racemic",
+      "empty": "Nước (Không)",
+      "analyzerAngle": "Góc kính phân tích",
+      "concentration": "Nồng độ",
+      "brightness": "Cường độ sáng truyền qua",
+      "lightSource": "Nguồn sáng",
+      "sampleTube": "Ống đựng mẫu",
+      "rotationPlane": "Góc quay của ánh sáng:",
+      "hint": "Xoay kính phân tích để thẳng hàng với mặt phẳng ánh sáng bị quay. Phân tử bất đối quay mặt phẳng ánh sáng theo chiều kim đồng hồ (dạng D) hoặc ngược chiều (dạng L)."
     },
     "carbonSilicon": {
       "title": "Hơi thở quyết định tất cả",
@@ -533,7 +526,12 @@
       "hint": "Sử dụng thanh trượt để kéo cây mọc cao lên. Khi các tầng mới xuất hiện, những ổ sinh thái mới mở ra mà không hề giẫm chân lên nhau tranh giành không gian.",
       "treeHeight": "Độ cao cây",
       "niches": "Ổ sinh thái",
-      "strataNames": ["Thảm rừng", "Tầng dưới tán", "Vòm lá", "Tầng vượt tán"],
+      "strataNames": [
+        "Thảm rừng",
+        "Tầng dưới tán",
+        "Vòm lá",
+        "Tầng vượt tán"
+      ],
       "floor": "Thảm rừng",
       "understory": "Tầng dưới tán",
       "canopy": "Vòm lá",
@@ -555,30 +553,295 @@
       "pausedStatus": "Đã tạm dừng",
       "hint": "Điều chỉnh tỉ lệ sinh, tỉ lệ săn bắt, và tỉ lệ chết. Bật Chuyển đổi con mồi để ổn định dao động, hoặc thêm Sức chứa tối đa (K) để thử nghiệm Nghịch lý làm giàu."
     },
-    "chirality": {
-      "title": "Đồng phân quang học & Góc quay cực",
-      "lAmino": "L-Amino Acid",
-      "dAmino": "D-Amino Acid",
-      "racemic": "Hỗn hợp Racemic",
-      "empty": "Nước (Không)",
-      "analyzerAngle": "Góc kính phân tích",
-      "concentration": "Nồng độ",
-      "brightness": "Cường độ sáng truyền qua",
-      "lightSource": "Nguồn sáng",
-      "sampleTube": "Ống đựng mẫu",
-      "rotationPlane": "Góc quay của ánh sáng:",
-      "hint": "Xoay kính phân tích để thẳng hàng với mặt phẳng ánh sáng bị quay. Phân tử bất đối quay mặt phẳng ánh sáng theo chiều kim đồng hồ (dạng D) hoặc ngược chiều (dạng L)."
-    },
     "umwelt": {
-      "title": "Thế giới cảm quan (Umwelt) của Pandora",
-      "humanFilter": "Người thường",
-      "humanVisible": "Thị giác Loài người",
-      "biolumFilter": "Phổ Phát quang sinh học",
-      "echoFilter": "Định vị phản hồi Sonar",
-      "magneticFilter": "Thụ thể cảm ứng từ trường",
-      "thermalFilter": "Ảnh Hồng ngoại nhiệt",
-      "gogglesLabel": "Bộ lọc cảm thụ quan học:",
-      "hint": "Bật các kính lọc cảm quan để nhìn nhận thế giới qua con mắt của những loài sinh vật khác nhau. Thị giác thường thấy màu thông thường; các giác quan chuyên biệt cô lập tín hiệu phát quang sinh học, đường viền sonar, đường sức từ, hoặc bức xạ nhiệt."
+      "title": "Umwelt",
+      "category": "Giác quan",
+      "info": "Bong bóng giác quan của mỗi sinh vật. Lật năm cơ thể; phổ và giác quan chồng hoặc lệch — nhiều thế giới trong một rừng.",
+      "creature": "Sinh vật",
+      "vision": "Thị giác",
+      "electro": "Điện",
+      "chemical": "Hóa",
+      "pressure": "Áp",
+      "magnetic": "Từ"
+    },
+    "aposematism": {
+      "title": "Cảnh báo màu",
+      "category": "Giác quan",
+      "info": "Màu cảnh báo trung thực. Tín hiệu sáng quảng cáo cái giá thật — độc, gai, nọc. Bật predator lại gần; làm mờ tín hiệu đến khi ngưỡng rút lui gãy.",
+      "brightness": "Tín hiệu",
+      "approach": "Tiếp cận",
+      "retreat": "Rút",
+      "attack": "Tấn công",
+      "threshold": "Ngưỡng"
+    },
+    "bioluminescence": {
+      "title": "Phát quang sinh học",
+      "category": "Giác quan",
+      "info": "Ánh sáng lạnh từ sự sống. Bước luciferin → luciferase → trạng thái kích thích → photon. Tiến từng giai đoạn; ánh sáng tăng không phí nhiệt.",
+      "step": "Bước",
+      "luciferin": "Luciferin",
+      "enzyme": "Enzyme",
+      "excited": "Trạng thái kích thích",
+      "photon": "Photon",
+      "next": "Bước tiếp"
+    },
+    "chemiluminescence": {
+      "title": "Phát quang hóa học",
+      "category": "Giác quan",
+      "info": "Cùng bước nhảy điện tử, không enzyme. Song song với bioluminescence: cả hai phát sáng, nhưng đường sống chạy mát hơn.",
+      "bio": "Sinh học",
+      "chem": "Hóa học",
+      "heat": "Nhiệt",
+      "light": "Ánh sáng"
+    },
+    "counter-illumination": {
+      "title": "Chiếu sáng bù",
+      "category": "Giác quan",
+      "info": "Ánh bụng xóa bóng nhìn từ dưới. Bật photophore; thân tối tan vào ánh sáng từ trên.",
+      "off": "Photophore tắt",
+      "on": "Photophore bật",
+      "silhouette": "Bóng",
+      "match": "Khớp"
+    },
+    "cryptochrome": {
+      "title": "Cryptochrome",
+      "category": "Giác quan",
+      "info": "La bàn radical-pair trong mắt. Xoay từ trường; cân singlet/triplet lệch và kim nội tại dịch.",
+      "field": "Góc từ trường",
+      "singlet": "Singlet",
+      "triplet": "Triplet",
+      "needle": "La bàn"
+    },
+    "dead-space": {
+      "title": "Khoảng chết",
+      "category": "Hô hấp",
+      "info": "Không khí di chuyển nhưng không trao đổi. Thở sâu hơn; tỉ lệ khoảng chết giảm khi thể tích thủy triều vượt ống dẫn.",
+      "tidal": "Thể tích thủy triều",
+      "dead": "Khoảng chết",
+      "fraction": "Tỉ lệ",
+      "exchange": "Trao đổi"
+    },
+    "echolocation": {
+      "title": "Định vị bằng tiếng vang",
+      "category": "Giác quan",
+      "info": "Xung ra, echo về. Di chuyển mục tiêu; thời gian khứ hồi thành khoảng cách. Nghe như thước đo.",
+      "range": "Tầm",
+      "ping": "Ping",
+      "echo": "Echo",
+      "target": "Khoảng cách"
+    },
+    "electroreception": {
+      "title": "Cảm điện",
+      "category": "Giác quan",
+      "info": "Vôn kế sống trong nước. Di chuyển mồi; đường sức cong và receptor mõm sáng nơi méo lớn nhất.",
+      "field": "Trường",
+      "prey": "Lệch mồi",
+      "receptors": "Receptor"
+    },
+    "ficks-law": {
+      "title": "Định luật Fick",
+      "category": "Hô hấp",
+      "info": "Flux ∝ diện tích × ΔC / bề dày. Làm mỏng màng, dốc gradient; tốc O₂ tăng. Quạt Pandora thắng cả hai đòn bẩy.",
+      "thickness": "Bề dày",
+      "gradient": "Gradient",
+      "area": "Diện tích",
+      "flux": "Flux O₂"
+    },
+    "fluorescence": {
+      "title": "Huỳnh quang",
+      "category": "Giác quan",
+      "info": "Hấp thụ ngắn, phát dài — Stokes shift. Chọn fluorophore; màu phát trượt đỏ hơn kích thích.",
+      "excite": "Kích thích",
+      "emit": "Phát xạ",
+      "stokes": "Stokes shift",
+      "molecule": "Phân tử"
+    },
+    "gill-lamella": {
+      "title": "Lá mang",
+      "category": "Hô hấp",
+      "info": "Tấm xếp, máu ngược dòng. Lật song song và hiệu suất chiết O₂ giảm nửa — hình học là động cơ.",
+      "counter": "Ngược dòng",
+      "parallel": "Song song",
+      "efficiency": "Chiết O₂"
+    },
+    "green-fluorescent-protein": {
+      "title": "Protein huỳnh quang xanh",
+      "category": "Giác quan",
+      "info": "Đèn β-barrel. Xanh dương vào, xanh lá ra; chromophore lõi nhịp. Quét kích thích và ánh sáng trả lời.",
+      "excitation": "λ kích thích",
+      "emission": "Phát xạ",
+      "barrel": "Barrel"
+    },
+    "histotoxic-hypoxia": {
+      "title": "Thiếu oxy mô độc",
+      "category": "Hô hấp",
+      "info": "O₂ đến; tế bào không dùng được. Mitochondria bị chặn tối sẫm trong khi oxy ứ đọng — ngạt thầm của cyanide.",
+      "normal": "Bình thường",
+      "blocked": "Bị chặn",
+      "unused": "O₂ thừa",
+      "mitochondria": "Mitochondria"
+    },
+    "hypercapnia": {
+      "title": "Tăng CO₂ máu",
+      "category": "Hô hấp",
+      "info": "CO₂ lên; drive hô hấp gào. Tăng pCO₂ và tín hiệu muốn thở nhảy — sinh lý Na'vi phải làm tù tín hiệu này.",
+      "pco2": "pCO₂",
+      "drive": "Drive",
+      "urge": "Muốn thở"
+    },
+    "lateral-line": {
+      "title": "Đường bên",
+      "category": "Giác quan",
+      "info": "Xúc giác của nước. Vẫy gần ống; tế bào lông lệch và bắn dọc hông.",
+      "flow": "Cường độ dòng",
+      "cells": "Tế bào lông",
+      "canal": "Ống"
+    },
+    "luciferin": {
+      "title": "Luciferin",
+      "category": "Giác quan",
+      "info": "Nhiên liệu của ánh sáng lạnh. Làm nổi vị trí phản ứng nơi oxy gắn trước khi photon ra đời.",
+      "reactive": "Vị trí phản ứng",
+      "oxidize": "Oxy hóa",
+      "structure": "Cấu trúc"
+    },
+    "luciferase": {
+      "title": "Luciferase",
+      "category": "Giác quan",
+      "info": "Enzyme thắp nhiên liệu. Gắn luciferin, xem túi khép, nhả oxyluciferin và một photon.",
+      "dock": "Gắn",
+      "bound": "Đã gắn",
+      "release": "Nhả + photon",
+      "active": "Vị trí hoạt động"
+    },
+    "magnetite": {
+      "title": "Magnetite",
+      "category": "Giác quan",
+      "info": "Tinh thể Fe₃O₄ xoay tế bào. Xoay từ trường; chuỗi kéo thân như kim la bàn sống.",
+      "field": "Góc từ trường",
+      "align": "Căn chỉnh",
+      "crystal": "Tinh thể"
+    },
+    "magnetoreception": {
+      "title": "Cảm từ",
+      "category": "Giác quan",
+      "info": "Hai la bàn trong một chim: cryptochrome ở mắt, magnetite ở mỏ. Bật/tắt từng cái; độ chính xác định hướng đổi.",
+      "crypto": "Cryptochrome",
+      "beak": "Magnetite mỏ",
+      "accuracy": "Độ chính xác",
+      "both": "Cả hai"
+    },
+    "magnetosome": {
+      "title": "Magnetosome",
+      "category": "Giác quan",
+      "info": "Chuỗi bào quan magnetite. Bật từ trường; chuỗi và tế bào xoay cùng. Tắt — chuỗi giữ trí nhớ hướng.",
+      "fieldOn": "Từ trường bật",
+      "fieldOff": "Từ trường tắt",
+      "chain": "Góc chuỗi"
+    },
+    "nerve-conduction-velocity": {
+      "title": "Tốc độ dẫn truyền thần kinh",
+      "category": "Giác quan",
+      "info": "Myelin biến bò thành nhảy. So spike liên tục vs saltatory; tốc độ nhảy khi có bao myelin.",
+      "myelin": "Có myelin",
+      "bare": "Trần",
+      "speed": "Tốc độ",
+      "mode": "Chế độ"
+    },
+    "operculum": {
+      "title": "Nắp mang",
+      "category": "Hô hấp",
+      "info": "Nắp mang như bơm. Mở–đóng đẩy nước qua lá mang. Chuyển ram — miệng mở, nắp khóa, bơi để thở.",
+      "pump": "Bơm miệng",
+      "ram": "Thông khí ram",
+      "flow": "Dòng"
+    },
+    "proprioception": {
+      "title": "Cảm nhận bản thể",
+      "category": "Giác quan",
+      "info": "Giác quan về tư thế. Kéo chi; spindle nổ khi căng, Golgi khi tải — cơ thể tự đọc mình.",
+      "angle": "Góc khớp",
+      "spindle": "Spindle",
+      "golgi": "Golgi"
+    },
+    "quantum-yield": {
+      "title": "Hiệu suất lượng tử",
+      "category": "Giác quan",
+      "info": "Photon ra trên mỗi phản ứng. Chỉnh pH, nhiệt, O₂; meter cho biết hóa học thành ánh sáng bao nhiêu lần.",
+      "yield": "Hiệu suất",
+      "temp": "Nhiệt độ",
+      "o2": "O₂",
+      "ph": "pH"
+    },
+    "radical-pair": {
+      "title": "Cặp radical",
+      "category": "Giác quan",
+      "info": "Hai spin lẻ như la bàn phân tử. Từ trường yếu lệch singlet/triplet; tỉ lệ sản phẩm là tín hiệu cryptochrome đọc.",
+      "field": "Từ trường",
+      "singlet": "Singlet %",
+      "triplet": "Triplet %",
+      "ratio": "Tỉ lệ"
+    },
+    "ram-ventilation": {
+      "title": "Thông khí ram",
+      "category": "Hô hấp",
+      "info": "Bơi để thở. Dưới ngưỡng tốc cá phải bơm; trên ngưỡng, miệng mở và nắp khóa làm việc.",
+      "speed": "Tốc độ",
+      "pump": "Phải bơm",
+      "ram": "Ram bật",
+      "threshold": "Ngưỡng"
+    },
+    "spiracle": {
+      "title": "Lỗ thở",
+      "category": "Hô hấp",
+      "info": "Cửa hông trên ngực côn trùng. Mở; O₂ khuếch tán vào khí quản. Đóng; trao đổi dừng.",
+      "open": "Mở",
+      "closed": "Đóng",
+      "o2": "O₂ vào",
+      "co2": "CO₂ ra"
+    },
+    "tapetum-lucidum": {
+      "title": "Màng phản quang",
+      "category": "Giác quan",
+      "info": "Gương đêm sau võng mạc. Làm tối thế giới; ánh sáng đi hai lượt và mắt sáng bừng.",
+      "ambient": "Ánh sáng môi trường",
+      "glow": "Eyeshine",
+      "pass": "Hai lượt"
+    },
+    "tidal-ventilation": {
+      "title": "Thông khí thủy triều",
+      "category": "Hô hấp",
+      "info": "Vào ra cùng một đường. Đánh dấu tidal, residual, capacity; khoảng chết đi kèm — so với quạt một chiều.",
+      "tidal": "Tidal",
+      "residual": "Residual",
+      "capacity": "Capacity",
+      "breath": "Độ sâu hơi thở"
+    },
+    "unidirectional-airflow": {
+      "title": "Dòng khí một chiều",
+      "category": "Hô hấp",
+      "info": "Khí chỉ cắt mô trao đổi một chiều. Thanh hiệu suất thắng thủy triều thú có vú — chiến lược chim và Pandora.",
+      "uni": "Một chiều",
+      "tidal": "Thủy triều",
+      "efficiency": "Chiết xuất"
+    },
+    "cross-current-exchange": {
+      "title": "Trao đổi dòng chéo",
+      "category": "Hô hấp",
+      "info": "Ba hình học: cùng chiều, ngược chiều, chéo. Thanh hiệu suất xếp hạng — quạt có thể nằm giữa kiểu chéo.",
+      "concurrent": "Cùng chiều",
+      "counter": "Ngược chiều",
+      "cross": "Chéo",
+      "efficiency": "Hiệu suất"
+    },
+    "countercurrent-exchange": {
+      "title": "Trao đổi ngược dòng",
+      "category": "Hô hấp",
+      "info": "Hai dòng ngược nhau. Gradient dốc suốt chiều dài — truyền tối đa so với cùng chiều lãng phí.",
+      "counter": "Ngược",
+      "concurrent": "Cùng chiều",
+      "transfer": "Truyền",
+      "gradient": "Gradient"
     }
   }
 }

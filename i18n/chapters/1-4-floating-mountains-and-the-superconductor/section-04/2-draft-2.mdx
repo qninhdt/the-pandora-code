@@ -1,0 +1,32 @@
+# Bản dịch Nháp [2/2] - Section 04
+
+## Tại sao các electron ngừng va đập?
+
+Lời giải đáp — khi nó được xướng lên vào năm 1957 bởi bộ ba John Bardeen, Leon Cooper và Robert Schrieffer dưới cái tên thuyết BCS — là một trong những ý tưởng mà thoạt nghe qua có vẻ hoang đường đến mức không thể nào là sự thật.
+
+Các electron vốn đẩy nhau. Cùng mang điện tích âm, việc ép uổng hai electron lại gần nhau là một sự phung phí năng lượng tột độ. Vậy mà toàn bộ nền móng của siêu dẫn lại đặt cược vào việc các electron... bắt cặp với nhau. Bằng cách nào?
+
+Mấu chốt nằm ở chỗ các electron không hề dạo bước đơn độc. Chúng lướt qua một mạng lưới tinh thể gồm các ion dương, và sức kéo của một electron đang lướt tới sẽ kéo nhẹ những ion dương nặng nề, cục mịch đó chao đảo về phía nó. Các ion lảo đảo ngả vào trong ngay sau khi electron đã lướt qua, để lại phía sau một khoảnh khắc chớp nhoáng: một cái túi điện tích dương đậm đặc túm tụm lại giữa mạng lưới. Lúc này, một electron *thứ hai* lao tới và ngay lập tức bị cuốn vào chiếc túi mồi đó. Nói một cách hoa mỹ, electron tiên phong đã rạch một luồng dư ba dương tính chớp nhoáng, và electron đi sau đơn giản là lướt trên luồng dư ba ấy.
+
+<DiagramFigure
+  src="/images/chapters/floating-mountains-and-the-superconductor/fig-05-cooper-pair.webp"
+  labels={[
+    { x: 30, y: 68, side: "right", label: "Electron tiên phong", note: "kéo mạng lưới các ion dương chụm vào trong" },
+    { x: 72, y: 32, side: "left", label: "Bị cuốn vào vệt sóng", note: "electron thứ hai lướt theo — hình thành một cặp liên kết" },
+    { x: 16, y: 22, side: "right", label: "Mạng lưới ion", note: "khung điện dương mà sự bắt cặp đã vay mượn" }
+  ]}
+  alt="Một cặp Cooper: một electron làm biến dạng mạng tinh thể ion, electron thứ hai bị hút vào vệt sóng dương"
+  figNo="05"
+  caption="Một electron kéo mạng lưới các ion dương lảo đảo vào trong, để lại một luồng dư ba dương chớp nhoáng; electron thứ hai bị hút vào vũng điện tích đó. Cả hai trói buộc vào nhau và di chuyển như một cặp."
+  tier="real_science"
+/>
+
+Sức hút gián tiếp mượn danh mạng lưới tinh thể ấy là đủ — vớt vát vừa đủ — để trói chặt hai electron cự tuyệt nhau thành một <GlossaryTerm slug="cooper-pair">cặp Cooper</GlossaryTerm>. Và cái sự bắt cặp ấy đã thay đổi vận mệnh của vật chất, tất cả là nhờ một đạo luật sâu xa về cách tự nhiên phân loại các đứa con lượng tử của mình.
+
+Một electron đơn độc mang phận *fermion*: những kẻ độc hành bài xích xã hội, bị nguyên lý loại trừ Pauli cấm tiệt việc chia sẻ cùng một trạng thái lượng tử với đồng loại. Thế nhưng, khi hóa thành cặp Cooper, các spin bằng nhau và ngược chiều của chúng tự triệt tiêu về mức không. Một thực thể chắp vá có spin ròng bằng không sẽ hành xử như một *boson* — mà boson thì trái ngược hoàn toàn với những kẻ độc hành. Chúng là sinh vật bầy đàn. Tất cả chúng sẽ hân hoan chen chúc, nhồi nhét nhau vào cùng một trạng thái lượng tử duy nhất, ngay trong cùng một thời khắc.
+
+<WhatThisMeans title="Cốt lõi của vấn đề">
+Khi bị dìm xuống dưới nhiệt độ tới hạn, các cặp Cooper không còn là một đám đông ô hợp của những hạt riêng lẻ. Chúng ngưng tụ lại thành một thực thể duy nhất, chia sẻ chung một hàm sóng khổng lồ, nơi mọi cặp đều hành quân bước đều tăm tắp. Nếu muốn làm xao nhãng một electron để sinh ra điện trở, bạn sẽ phải phá bĩnh cả một dàn đồng ca cùng một lúc, và dưới cái lạnh cùng cực đó, làm gì còn đủ năng lượng nhiệt để làm nên trò trống ấy. Không hạt nào bị phân tâm. Dòng điện trôi đi mà không rớt lại một giọt tổn hao. Điện trở bằng không không phải là khái niệm "rất ít ma sát" — nó là sự tĩnh lặng vĩ mô của hàng tỷ tỷ hạt đang cùng xướng lên một nốt nhạc duy nhất.
+</WhatThisMeans>
+
+Đó là phép màu đầu tiên: xóa sổ điện trở. Nhưng để gánh một ngọn núi bay thì cần gọi tên phép màu thứ hai.

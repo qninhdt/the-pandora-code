@@ -1,19 +1,27 @@
 # Phân tích Chi tiết - Section 04
 
 ## 1. Mục tiêu Cụ thể của Section
-- **Thông điệp (Intent):** Trình bày vấn đề nan giải của phương pháp đo niên đại truyền thống (không biết lượng đồng vị con ban đầu khi đá hình thành) và cách giải pháp thiên tài — phương pháp đường đẳng thời (isochron) — giải quyết triệt để lỗi này. Phân tích nguyên lý hình học của đường đẳng thời (trục xoay bập bênh, độ dốc biểu thị tuổi, điểm cắt biểu thị tỷ lệ ban đầu) và tính năng tự kiểm chứng (self-policing) của phương pháp này.
-- **Khung xưng hô (Pronouns):** Giọng kể học thuật, giải thích trực quan và lôi cuốn.
+- **Thông điệp (Intent):** Trình bày hệ thống các loại "đồng hồ nguyên tử" khác nhau phù hợp với từng thang đo thời gian (U-Pb, K-Ar, Rb-Sr, Sm-Nd, C-14). Khẳng định vị thế quý tộc của hệ urani - chì trong khoáng vật zircon. Phân tích sự ngộ nhận phổ biến về định tuổi cacbon phóng xạ (C-14 chỉ dùng cho mẫu hữu cơ dưới 50.000 năm, không thể định tuổi khủng long hay thạch quyển cổ đại). Kết hợp định tuổi tương đối (nguyên lý chồng chất, hóa thạch chỉ tầng) và định tuổi tuyệt đối tạo nên thang thời gian địa chất.
+- **Khung xưng hô (Pronouns):** "You / We" -> "bạn / chúng ta / các nhà khoa học".
 
 ## 2. Điểm nghẽn Cú pháp & Ẩn dụ (Bottlenecks)
-- **Ẩn dụ/Thành ngữ:** "The clock that needs no zero" -> Phép ẩn dụ cho việc không cần biết lượng ban đầu. Hướng xử lý: "Chiếc đồng hồ không cần vạch số không".
-- **Cấu trúc khó:** "The flat line pivots, like a see-saw tilting, and the longer the clock runs the steeper it tilts." -> Cách ví von hình học rất trực quan. Hướng xử lý: "Đường thẳng nằm ngang sẽ xoay quanh một điểm tựa, giống như một chiếc bập bênh đang nghiêng đi, và đồng hồ chạy càng lâu thì độ nghiêng của nó càng dốc."
-- **Ẩn dụ/Thành ngữ:** "A tidy line is a rock that kept its secrets; a scattered mess is a rock waving a flag..." -> Nhân hóa đá giữ bí mật và vẫy cờ tự thú. Hướng xử lý: "Một đường thẳng tắp gọn gàng cho thấy mẫu đá đã giữ trọn vẹn bí mật của nó; còn một tập hợp điểm nằm phân tán hỗn loạn lại là một dấu hiệu cảnh báo rằng mẫu đá đã bị xáo trộn và không thể tin cậy."
+- **Cấu trúc khó:** "First, zircon crystals are tiny tyrants about what they admit: as they grow they will happily lock uranium into their lattice but they slam the door on lead."
+  - *Hướng xử lý:* "Trước hết, tinh thể zircon là những kẻ độc tài khó tính bậc nhất trong việc kết nạp nguyên tố: khi lớn lên, chúng sẵn sàng nhốt urani vào mạng tinh thể nhưng lại dứt khoát đóng sầm cánh cửa trước chì."
+- **Ẩn dụ/Thành ngữ:** "A drawer full of clocks" -> "Ngăn kéo chứa đầy đồng hồ".
+- "reaching for the marathon with a sprinter's watch" -> "dùng đồng hồ bấm giờ của vận động viên chạy nước rút để đo cự ly marathon".
 
 ## 3. Thuật ngữ Đặc thù của Section
-- `isochron`: đường đẳng thời.
-- `see-saw`: bập bênh (ẩn dụ hình học).
-- `self-policing`: tự kiểm chứng / tự cảnh báo.
-- `crystallize`: kết tinh.
+- `Uranium-lead dating`: Định tuổi urani - chì.
+- `Potassium-argon dating`: Định tuổi kali - argon.
+- `Rubidium-strontium dating`: Định tuổi rubidi - stronti.
+- `Samarium-neodymium dating`: Định tuổi samari - neodim.
+- `Radiocarbon dating (Carbon-14)`: Định tuổi bằng đồng vị cacbon-14.
+- `Principle of superposition`: Nguyên lý chồng chất tầng bậc.
+- `Geologic time scale`: Thang thời gian địa chất.
+- `Mass spectrometer`: Khối phổ kế.
 
 ## 4. Ghi chú khác
-- Chú ý dịch đúng nhãn và chú thích trong component `<IsochronPlot />`.
+- `StatGrid` và `DiagramFigure` (fig-02-strata-record.webp) có nhiều nhãn:
+  - "Datable volcanic ash band" -> "Tầng tro núi lửa có thể định tuổi".
+  - "Pins absolute years onto the sequence" -> "Ghim mốc năm tuyệt đối vào chuỗi địa tầng".
+  - "A page-stack of time" -> "Những trang sách xếp lớp của thời gian".

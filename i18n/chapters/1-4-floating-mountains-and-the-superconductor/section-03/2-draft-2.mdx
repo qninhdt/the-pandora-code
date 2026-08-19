@@ -1,0 +1,34 @@
+# Bản dịch Nháp [2/2] - Section 03
+
+## Nơi điện trở trút hơi thở cuối cùng
+
+Vào năm 1911, nhà vật lý người Hà Lan Heike Kamerlingh Onnes đã nắm giữ một siêu năng lực mà hầu như chưa một ai trên Trái Đất chạm tới: khả năng đóng băng vật chất xuống mức cực hạn. Ông đã hóa lỏng thành công heli, thứ khí chỉ sôi ở khoảng bốn độ trên vạch số không tuyệt đối, và dùng nó làm chìa khóa để giải mã một câu hỏi ngỡ như rất đơn giản — số phận của điện trở trong một kim loại sẽ ra sao khi bạn dìm nhiệt độ của nó chìm sâu xuống đáy của thang đo?
+
+Câu trả lời được kỳ vọng là *nó sẽ teo nhỏ lại, một cách từ tốn và êm ái*. Các electron mang dòng điện tuôn chảy qua kim loại bằng cách len lỏi giữa một mạng lưới các nguyên tử, và chúng liên tục va đập vào những dao động nhiễu loạn nhiệt của mạng lưới ấy, tự vắt kiệt năng lượng của mình và tỏa ra dưới dạng nhiệt. Sự cản trở va đập đó *chính là* điện trở. Nếu bạn làm lạnh kim loại, tước đi sự rung lắc hỗn loạn của mạng tinh thể, điện trở lẽ ra phải lịm dần về một con số lẻ tẻ nào đó còn sót lại.
+
+Thế nhưng, thủy ngân đã thẳng thừng khước từ kịch bản đó. Khi Onnes kéo nhiệt độ của nó trượt qua cột mốc khoảng bốn kelvin, điện trở không hề thong thả hạ nhiệt xuống một giá trị nhỏ. Nó gieo mình xuống vực thẳm — cắm đầu lao thẳng về *số không*, một cú tắt lịm đột ngột, toàn diện, và tàn nhẫn đến mức vắt kiệt giới hạn đo lường của mọi thiết bị lúc bấy giờ.
+
+<Chart
+  kind="line"
+  xKey="t"
+  xLabel="Nhiệt độ (K)"
+  yLabel="Điện trở (Ω)"
+  series={[{ key: "R", label: "Điện trở (Ω)", tone: "cyan" }]}
+  data={[
+    { t: "4.0", R: 0 },
+    { t: "4.1", R: 0 },
+    { t: "4.19", R: 0 },
+    { t: "4.20", R: 0.12 },
+    { t: "4.6", R: 0.122 },
+    { t: "5.2", R: 0.125 }
+  ]}
+  caption="Biểu đồ lịch sử từ thí nghiệm năm 1911 của Onnes: khi làm lạnh qua nhiệt độ tới hạn (~4.2 K), điện trở của thủy ngân không hề giảm dần một cách mượt mà — nó lao thẳng xuống vực sâu để kết thúc ở một đường phẳng mang giá trị 0 tuyệt đối."
+/>
+
+Không phải là xấp xỉ không. Mà là số không tròn trĩnh. Một dòng điện một khi đã khởi chạy trong một vòng khép kín của một vật liệu dị biệt như vậy sẽ luân chuyển đến thiên thu bất tận, theo như mọi giới hạn ghi nhận của con người — không cần pin mồi, không bòn rút điện áp, và không đánh rơi một giọt năng lượng nào. Onnes đã vô tình chạm tay vào <GlossaryTerm slug="superconductivity">hiện tượng siêu dẫn</GlossaryTerm>, và cái ngưỡng nhiệt độ mà tại đó một vật liệu quyết định gieo mình xuống bờ vực đó chính là <GlossaryTerm slug="critical-temperature">nhiệt độ tới hạn</GlossaryTerm> của nó, mức T꜀.
+
+<SuperconductorCooldown
+  caption="Hãy tự mình sống lại thí nghiệm của Onnes. Kéo thanh nhiệt độ xuống: ở miền nhiệt độ phía trên điểm tới hạn, điện trở vẫn cư xử ngoan ngoãn như một kim loại thông thường, nhưng ngay tích tắc bạn bước qua lằn ranh Tc, nó bị xóa sổ về 0 — và khối nam châm phía trên mẫu vật sẽ chối từ việc nằm yên để vươn lên khóa chặt mình vào không trung. (Mô phỏng đang chạy ở ngưỡng nhiệt độ tới hạn của phòng thí nghiệm; chiêu bài của unobtanium là đã nhấc bổng cái bờ vực này lên tận mức nhiệt độ phòng.)"
+/>
+
+Phải mất ròng rã bốn mươi sáu năm sau, nhân loại mới tìm ra câu trả lời cho câu hỏi *tại sao*.
