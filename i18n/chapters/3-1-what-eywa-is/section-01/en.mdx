@@ -1,0 +1,40 @@
+<DiagramFigure
+  src="/images/chapters/what-eywa-is/fig-02-root-network.webp"
+  alt="A single vast Pandoran tree shown in cross-section with the soil cut away beneath it; on the left the trunk and roots glow as a soft reverent presence around a kneeling Na'vi resting a hand on the bark, on the right the very same roots are drawn as a precise web of fine bright filaments threading between many tree bases, with glowing nodes where roots meet like synapses"
+  labels={[
+    { x: 24, y: 72, side: "right", label: "The revered reading", note: "A presence to kneel to and commune with" },
+    { x: 74, y: 40, side: "left", label: "The measured reading", note: "Root junctions glowing like synapses" },
+    { x: 52, y: 60, side: "right", label: "One dense hub", note: "The most connected node — later, the Tree of Souls" }
+  ]}
+  figNo="02"
+  caption="The biological reading made visible. Strip away the theology and Grace's Eywa is this: an electrochemical web running tree to tree through roots and fungal threads, signalling 'like the synapses between neurons,' with one densely connected hub. The connection count is real and enormous. Whether a mesh this slow and diffuse can do more than carry signals is the question the count alone cannot settle."
+  tier="inference"
+/>
+
+Hold onto Grace's number, because the whole chapter turns on it. The instinct behind it is intuitive and almost universal: *that many connections, surely, must add up to a mind.* It is the same instinct that makes us uneasy about large language models, the same one that made people wonder whether the global internet might one day "wake up." More parts, more links, more complexity — at some point, the feeling goes, the lights must come on. Grace looks at a connection count that dwarfs the human brain's and concludes there must be a global mind on the other end of it.
+
+The trouble is that this instinct, as comforting as it is, is one of the most reliable errors in the science of cognition. Raw connection count is almost the *wrong* thing to measure. And the gap between what Grace assumes and what the connections actually buy you is precisely where the real science of this chapter lives — the science of how networks of mindless parts can think, when "thinking" stops and something we'd call a *mind* begins, and why those two thresholds are nowhere near each other.
+
+## Intelligence without a brain
+
+Start with the half of the question that is *not* mysterious at all, because Earth settles it decisively: a network of simple parts, with no brain and no central controller, can absolutely produce adaptive, problem-solving, goal-looking behaviour. This is not speculation or a fringe claim. It is one of the best-established results in biology, and once you have seen it a few times the wildlife stampede on Pandora stops looking like a miracle and starts looking like a category of thing we already understand.
+
+Take a honeybee swarm choosing a new home. When a colony outgrows its hive, ten thousand bees cluster on a branch while a few hundred scouts fly out to hunt for cavities. Each scout that finds a candidate comes back and dances — a waggle dance that encodes the direction and distance of her find, and she dances longer and harder the better the site is. Other scouts read the dance, fly out to inspect, and if they agree, come back and dance for the same site. Here is the crucial part, the part Thomas Seeley spent decades pinning down: no bee compares all the options. No bee holds a map. The queen has nothing to do with it. Instead, scouts at each candidate site monitor how *crowded* it is getting with other scouts, and once the number at one site crosses a threshold — a <GlossaryTerm slug="quorum-sensing">quorum</GlossaryTerm> — those scouts switch from dancing to a piping signal that shuts the other dances down and triggers the whole swarm to launch. The colony reliably picks the best available cavity. It makes a genuinely good decision. And there is no decider anywhere in the system — only thousands of bees each following a few local rules about dancing, inspecting, and counting their neighbours.
+
+<GlossaryTerm slug="swarm-intelligence">Swarm intelligence</GlossaryTerm> is the name for this, and the bees are only the cleanest demonstration. The same principle — global competence assembled out of local rules — turns up wherever you look closely at a colony. Ants find the shortest path to food not because any ant knows the route but because pheromone trails on shorter paths get reinforced faster. Termites build cathedral mounds, metres tall, threaded with ventilation shafts that hold the colony's temperature steady, and they do it with no architect and no plan. Each worker just deposits a pellet of mud where the local chemical and physical cues tell it to, and the cues left by earlier pellets steer the later ones. The structure builds itself out of the builders' reactions to what previous builders left behind.
+
+<GlossaryTerm slug="stigmergy">Stigmergy</GlossaryTerm> is the technical word for that last trick — coordination through traces left in the environment rather than direct communication — and it matters here because it shows how a system can pursue a long, complex, structured goal with no memory of the goal and no representation of it anywhere. The plan isn't in any termite's head. The plan isn't anywhere. It is smeared across the half-built mound itself, and the mound finishes itself by being what it is. Memory and computation get offloaded into the world.
+
+<DiagramFigure
+  src="/images/chapters/what-eywa-is/fig-03-quorum-swarm.webp"
+  alt="A naturalist diagram of a honeybee swarm decision: a cluster of bees on a branch at centre, scouts flying out to two candidate cavities, waggle-dance loops drawn faintly over the cluster, and at one cavity the scout density crossing a marked threshold line so that site 'wins' — no central bee directing any of it"
+  labels={[
+    { x: 48, y: 72, side: "right", label: "The swarm cluster", note: "Thousands waiting; no bee holds the map" },
+    { x: 76, y: 26, side: "left", label: "The site that wins", note: "Scouts here cross the quorum threshold" },
+    { x: 22, y: 28, side: "right", label: "The site that loses", note: "Stays sparse, never tips" }
+  ]}
+  figNo="03"
+  caption="A decision with no decider. Scout bees dance for the sites they find, inspect each other's finds, and monitor how crowded a candidate is getting; when one site crosses a quorum of scouts, that threshold alone tips the whole swarm into committing. No bee weighs all the options, and none is in charge — yet the colony reliably picks the best home. The competence is real; the central mind is absent."
+  tier="real_science"
+/>
+
