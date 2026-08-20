@@ -1,0 +1,32 @@
+## The real cable's specs
+
+So what *are* the specs of the cable the Na'vi are actually using? Canon is unambiguous on the one point that matters most: the connection is **electrochemical.** Grace says so, and the queue's interlocking neural tendrils behave like nerve tissue. That single word is a hard constraint, because we know exactly how fast electrochemical signalling goes, and it is nothing like the speed of light down a wire.
+
+A nerve impulse is not electricity flowing through copper at nearly three hundred thousand kilometres a second. It is a slow chemical cascade, ions pumping across a membrane, regenerating itself step by step along the axon. The fastest, fattest, most heavily insulated nerves in your body — the ones built for emergency reflexes — manage perhaps a hundred and twenty metres per second. The bare, slow ones crawl at one metre per second, walking pace. This is the <GlossaryTerm slug="nerve-conduction-velocity">conduction velocity</GlossaryTerm> ceiling, and it is set by chemistry, not engineering. No biological cable escapes it.
+
+<DiagramFigure
+  src="/images/chapters/the-bandwidth-of-a-planet/fig-05-slow-cable.webp"
+  alt="A wide view of the curved limb of Pandora seen from near orbit at night, its forests laced with a faint glowing network; a single pulse of light is shown creeping only a short way along one strand, with the vast dark remainder of the moon still unlit, conveying how a signal moving at electrochemical speed would take days to cross the planet-spanning web"
+  labels={[
+    { x: 50, y: 62, side: "left", label: "The lit network", note: "Glowing strands lacing a whole moon's forests" },
+    { x: 38, y: 82, side: "right", label: "A signal, creeping", note: "At nerve speed, days to cross end to end" },
+    { x: 78, y: 16, side: "left", label: "A world of latency", note: "The far side still dark — the message hasn't arrived" },
+  ]}
+  figNo="05"
+  caption="The cruel arithmetic of latency. A signal travelling at the speed of a nerve impulse - at most a hundred-odd metres a second - would take days to cross a moon-spanning network end to end. A web can hold more connections than a brain and still be unable to think quickly, because thought is not about how many wires you have but how fast a signal crosses them. Pandora's network, built on electrochemical cable, is necessarily a thing that thinks in seasons, not seconds."
+  tier="real_science"
+/>
+
+But raw speed is latency, not bandwidth — and the more useful question is how many bits a biological cable can actually carry per second. For that we have a gorgeous real measurement. The human optic nerve — a million-odd fibres bundling the eye's output to the brain, one of the highest-bandwidth data links in all of biology — has been clocked at roughly **ten million bits per second.** The speed of an early home ethernet cable, running down the back of your eye. That is what a million parallel nerve fibres, honed by hundreds of millions of years of evolution for raw throughput, can do.
+
+<DataComparison
+  stats={[
+    { label: "Optic nerve", value: "~10 Mb/s", note: "A million nerve fibres — biology's best data link", tone: "teal" },
+    { label: "Nerve signal speed", value: "~120 m/s", note: "Top electrochemical speed; light is millions of times faster", tone: "amber" },
+    { label: "Fibre-optic cable", value: "terabits/s", note: "The artificial channel, for scale", tone: "cyan" },
+    { label: "Conscious thought", value: "10–50 b/s", note: "The thin trickle that is your experienced self", tone: "magenta" },
+  ]}
+/>
+
+The Na'vi queue is plainly a more serious piece of hardware than a single optic nerve — companion material describes a dense mass of tens of thousands of neural tendrils. Be generous, wildly generous. Suppose the kuru runs a hundred optic nerves in parallel, every one of them flawless. That puts the absolute ceiling of the tsaheylu channel at roughly **one gigabit per second** — a good home broadband connection. Hold that number; it is the cable we must push every payload through. And now we can finally do the arithmetic the whole chapter has been walking toward.
+

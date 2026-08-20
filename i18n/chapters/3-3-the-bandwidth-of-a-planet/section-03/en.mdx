@@ -1,0 +1,25 @@
+## What a bit really is
+
+In 1948, in a paper published in a telephone-company journal, Claude Shannon did something that sounds impossible until you see how he pulled it off: he found a way to measure *information* itself — to put a number on it, in a unit, the way we put a number on length or mass. Before Shannon, "information" was a vague, almost literary idea. After him, it was a physical quantity with an unbreakable accounting. His paper, "A Mathematical Theory of Communication," is one of those rare documents that founds an entire science in a single stroke, and very nearly everything in your digital life — every file, every stream, every bar of signal on a phone — runs on the machinery he built in it.
+
+His first and deepest move was to throw away *meaning*. This feels like vandalism the first time you hear it. Surely the whole point of a message is what it means? But Shannon saw that meaning is the engineer's enemy, because it cannot be measured. So he redefined information as something colder and countable: **information is the resolution of uncertainty.** A message carries information precisely to the degree that it tells you something you could not have predicted. If I promise to send you a letter that will certainly say "yes," the letter, when it arrives, tells you nothing — you knew already. Information lives entirely in surprise.
+
+From that single idea falls the unit that now rules the world: the <GlossaryTerm slug="bit">bit</GlossaryTerm>. One bit is the amount of information needed to settle one perfectly balanced either/or — a single fair coin-flip, a clean yes-or-no. Two bits settle a choice among four equally likely things; ten bits, a choice among 1,024; and so on, each bit doubling the number of possibilities it can pin down. The amount of information in a source is, in Shannon's framework, the average number of these yes/no questions you would have to ask to nail down its message. He gave that average a name borrowed from physics — <GlossaryTerm slug="shannon-entropy">entropy</GlossaryTerm> — and a formula, but the formula matters less than the intuition behind it: a predictable source carries little information per symbol, an unpredictable one carries a lot. English text, for all its hundred-odd keyboard characters, is so riddled with redundancy and pattern that each letter carries only about one bit of genuine information. The rest is predictable filler — which, as we will see, is not waste at all, but the very thing that lets a message survive a noisy world.
+
+Shannon then drew the picture every communications engineer now carries in their head. Any act of communication, he said, is the same five-part machine. An **information source** produces a message. A **transmitter** encodes it into a signal. The signal crosses a **channel**. A **receiver** decodes it back into a message. And it arrives at a **destination**. Lurking over the channel is the villain of the whole story — **noise**: the random corruption, the static, the thermal jitter that every real physical medium inflicts on every signal that crosses it. Map tsaheylu onto that machine and it fits with almost unsettling ease.
+
+<DiagramFigure
+  src="/images/chapters/the-bandwidth-of-a-planet/fig-03-shannon-channel.webp"
+  alt="A clean schematic of Shannon's five-part communication system rendered in Pandora's bioluminescent style: a glowing source node on the left, an arrow into an encoder, then a long channel pipe with jagged noise injected into it from above, then a decoder, then a destination node on the right; each stage labelled with both an engineering term and its Pandoran biological equivalent"
+  labels={[
+    { x: 9, y: 50, side: "right", label: "Source", note: "The mind — message before encoding" },
+    { x: 50, y: 30, side: "left", label: "Noise", note: "Biological static clawing at the signal" },
+    { x: 91, y: 50, side: "left", label: "Destination", note: "Decoded at the far nervous system" },
+  ]}
+  figNo="03"
+  caption="Shannon's 1948 model of any communication system, mapped onto the bond. The Na'vi mind is the source; the base of the queue encodes thought into electrochemical pulses; the interlaced neural tendrils are the channel; the far creature or tree decodes it; and noise - the thermal, biological static every real cable suffers - claws at the signal the whole way across. Every transfer tsaheylu performs, from steering a banshee to moving a soul, is this same machine running at a different volume."
+  tier="real_science"
+/>
+
+The mind of the rider is the information source. The machinery at the base of the queue, converting thought into electrochemical pulses, is the transmitter. The interlaced neural tendrils are the channel. The banshee's nervous system, or the root-system of the Tree of Souls, is the receiver. And noise is there too, inescapably — because a warm, wet, living biological cable is one of the *noisiest* channels imaginable, awash in thermal jitter and chemical cross-talk. That last fact is going to matter more than any other when we reach the soul.
+

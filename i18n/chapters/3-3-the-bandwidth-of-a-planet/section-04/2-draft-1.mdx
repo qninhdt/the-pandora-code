@@ -1,0 +1,15 @@
+# Bản dịch Nháp 1 - Section 04
+
+## Giới hạn tốc độ không ai có thể phá vỡ
+
+Kiệt tác của Shannon không phải là khái niệm bit. Nó là một định lý về kênh truyền tải — một phương trình duy nhất đặt ra mức trần vật lý tuyệt đối về tốc độ thông tin có thể truyền qua bất kỳ môi trường nào, và chứng minh rằng mức trần đó không thể bị vượt qua bằng bất kỳ thủ thuật, bất kỳ công nghệ hay bất kỳ nỗ lực nào. Nó được gọi là định lý Shannon–Hartley, và trong một chương chứa đầy sự kính sợ, nó là điều luật cứng rắn duy nhất xứng đáng được phát biểu một cách chính xác:
+
+<Callout variant="insight" title="Định lý dung lượng kênh truyền">
+**C = B · log₂(1 + S/N)**
+
+Dung lượng **C** của một kênh — tốc độ tối đa tuyệt đối để truyền tải thông tin không có lỗi, tính bằng bit trên giây — được quyết định bởi chỉ hai yếu tố. **B** là **băng thông** của nó, dải tần số mà nó có thể mang theo, tính bằng hertz. Và **S/N** là **tỷ số tín hiệu trên nhiễu**, độ lớn của tín hiệu so với lớp nhiễu đang dìm lấp nó. Đó là toàn bộ giới hạn tốc độ của vũ trụ dành cho thông tin. Không một thứ gì có thể truyền qua bất kỳ kênh nào nhanh hơn mức C của kênh đó. Ngay cả khi có kỹ thuật tốt hơn, có nhiều năng lượng hơn, hay bất cứ khi nào đi chăng nữa.
+</Callout>
+
+Có hai bài học tàn nhẫn nằm bên trong phương trình nhỏ bé đó, và cả hai đều sẽ quay lại giáng một đòn chí mạng vào Pandora. Bài học thứ nhất: dung lượng chỉ tăng theo *logarit* của tỷ số tín hiệu trên nhiễu. Logarit chính là phép toán đại diện cho quy luật hiệu suất giảm dần. Để nhân đôi tốc độ dữ liệu bằng sức mạnh thô — bằng cách phát tín hiệu lớn hơn — bạn không nhân đôi công suất; bạn phải bình phương tỷ số tín hiệu trên nhiễu, đổ vào lượng năng lượng tăng theo cấp số nhân cho mỗi phần tốc độ nhích thêm. Sức mạnh thô gần như là một đòn bẩy vô dụng. Bài học thứ hai chính là điều đã tạo nên tên gọi cho chương này: dung lượng tăng theo *tuyến tính* với băng thông. Băng thông mới là nguồn tài nguyên quý giá, là thước đo thực sự cho giá trị của một kênh truyền. Một đường dây điện thoại bằng đồng có băng thông vài nghìn hertz và có thể truyền tải hàng chục kilobit mỗi giây. Một sợi cáp quang có băng thông ở mức terahertz và truyền tải hàng terabit. Sự khác biệt giữa một dòng nước nhỏ giọt và một thác lũ cuồn cuộn, gần như hoàn toàn, nằm ở băng thông.
+
+Và Shannon đã chứng minh thêm một điều nữa, một kết quả tàn khốc và tuyệt mỹ nhất trong tất cả. Miễn là bạn truyền tải *dưới* mức dung lượng của kênh, bạn có thể — bằng một phương pháp mã hóa đủ khôn khéo — ép tỷ lệ lỗi xuống gần bằng không theo ý muốn. Khả năng truyền thông hoàn hảo, không tổn hao qua một kênh truyền đầy nhiễu, không hoàn hảo là điều thực sự khả thi. Nhưng ngay khoảnh khắc bạn cố gắng đẩy tốc độ *nhanh hơn* mức dung lượng, sự bảo đảm đó vỡ vụn. Lỗi không chỉ là khả năng có thể xảy ra, mà là một sự *chắc chắn về mặt toán học*. Dữ liệu sẽ bị hỏng, và không có bất kỳ sự xảo diệu nào có thể cứu vãn được nó. Đây không phải là một sự bất tiện trong kỹ thuật mà bạn có thể thiết kế lách qua. Nó là một định luật, vững chắc như tốc độ ánh sáng, và chúng ta chuẩn bị đặt linh hồn của một người phụ nữ đang hấp hối lên bàn cân cùng với nó.

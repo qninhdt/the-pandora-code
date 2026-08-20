@@ -1,0 +1,40 @@
+## How many bits is a mind?
+
+Here the inquiry splits in two, and the whole question of whether the Tree of Souls ceremony is impossible or merely extravagant turns on which fork you take. There are two utterly different ways to measure the size of a human mind, and they disagree by a factor of more than a million.
+
+The first way is to count the hardware. A human brain holds something on the order of a hundred trillion <GlossaryTerm slug="connectome">synapses</GlossaryTerm>, each a connection whose strength is a piece of stored information. If a mind is the complete state of that wiring — every synapse, every weight, the full <GlossaryTerm slug="connectome">connectome</GlossaryTerm> — then copying it means copying all of it. The popular figure that floats around for this is about 2.5 petabytes: two and a half million gigabytes, the brain-as-hard-drive number. Treat it with suspicion — the brain does not store discrete files, and any "the mind is X bytes" claim papers over deep uncertainty about what is even being counted — but as an upper bound on the raw hardware state, the petabyte scale is the figure to beat.
+
+The second way is to measure not the hardware but the *experience* — the actual rate at which conscious thought flows. And here the science delivers one of its great humbling surprises. Your senses pour something like eleven million bits per second into your nervous system; the eyes alone account for most of it. But the amount that reaches *conscious awareness* — the bandwidth of the self that thinks, decides, and remembers being you — has been estimated, by classic psychophysics, at a mere **ten to fifty bits per second.** Slower than a 1980s modem. The psychologist's name for the gap is the <GlossaryTerm slug="conscious-bottleneck">conscious bottleneck</GlossaryTerm>, and the philosopher Tor Nørretranders called the result "the user illusion": the brain ruthlessly compresses a firehose of raw sensation down to a thin, abstract trickle of meaning, throwing away all but the gist, and that trickle is what you experience as your mind.
+
+<Comparison
+  left={{
+    title: "The connectome reading",
+    children: (
+      <>
+        <p>A mind <em>is</em> its hardware: every synapse, every weight, the full wiring diagram.</p>
+        <p>To copy it, you copy <strong>everything</strong> — on the order of <strong>2.5 petabytes</strong>, the brain-as-hard-drive number.</p>
+        <p>This is the maximalist payload. It is the figure that makes the ceremony sound impossible.</p>
+      </>
+    ),
+  }}
+  right={{
+    title: "The conscious-stream reading",
+    children: (
+      <>
+        <p>A mind is the <em>experience</em> — the thin trickle of thought that reaches awareness.</p>
+        <p>That stream runs at just <strong>10–50 bits per second</strong>: a lifetime of conscious selfhood is only tens of gigabits.</p>
+        <p>This is the minimalist payload. It is the figure that makes the ceremony almost reasonable.</p>
+      </>
+    ),
+  }}
+/>
+
+The gap between these two readings is the gap between the impossible and the merely astonishing, and we are about to run both numbers against the cable.
+
+<ConsciousBottleneck />
+
+
+Before we do, take the equation out for a drive yourself. The figure below is Shannon's channel-capacity law made playable: set the bandwidth of a channel and its signal-to-noise ratio, choose a payload — a spoken word, a photograph, a whole connectome — and watch how long the transfer takes. Push the sliders and feel the two lessons in your hands: how bandwidth moves the answer in great linear strides, and how raw signal power barely nudges it at all.
+
+<ShannonChannel />
+

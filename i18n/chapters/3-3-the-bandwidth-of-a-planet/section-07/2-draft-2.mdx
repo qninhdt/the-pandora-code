@@ -1,0 +1,33 @@
+# Bản dịch Nháp 2 - Section 07
+
+## Thông số thực của sợi cáp
+
+Vậy *thông số* của sợi cáp mà người Na'vi thực sự sử dụng là gì? Nguyên tác cực kỳ rõ ràng ở một điểm quan trọng nhất: kết nối này mang tính **điện hóa.** Grace đã nói vậy, và các tua thần kinh đan cài của bím tóc cư xử hệt như mô thần kinh. Từ duy nhất đó là một giới hạn thép, bởi chúng ta biết chính xác tốc độ truyền tín hiệu điện hóa là bao nhiêu, và nó khác xa hoàn toàn so với tốc độ ánh sáng chạy dọc theo một sợi dây dẫn.
+
+Xung thần kinh không phải là dòng điện chạy qua dây đồng với tốc độ xấp xỉ ba trăm ngàn kilômét một giây. Nó là một chuỗi dòng chảy hóa học chậm chạp, các ion được bơm qua một lớp màng tế bào, tự tái tạo lại bản thân từng bước một dọc theo sợi trục thần kinh. Những dây thần kinh nhanh nhất, to nhất, được bọc cách điện kỹ nhất trong cơ thể bạn — những dây thần kinh được thiết kế cho các phản xạ khẩn cấp — cũng chỉ đạt tới khoảng một trăm hai mươi mét mỗi giây. Những dây trần, chậm chạp thì lê lết ở mức một mét mỗi giây, chỉ ngang tốc độ đi bộ. Đây là mức trần của <GlossaryTerm slug="nerve-conduction-velocity">vận tốc dẫn truyền</GlossaryTerm>, và nó được thiết lập bởi hóa học, chứ không phải bởi kỹ thuật. Không một sợi cáp sinh học nào có thể thoát khỏi giới hạn đó.
+
+<DiagramFigure
+  src="/images/chapters/the-bandwidth-of-a-planet/fig-05-slow-cable.webp"
+  alt="Một góc nhìn rộng về đường cong rìa mặt trăng Pandora từ quỹ đạo gần vào ban đêm, với những khu rừng được bao bọc bởi một mạng lưới phát sáng nhạt; một xung ánh sáng đơn lẻ đang bò trườn dọc theo một sợi dây trên một quãng ngắn, trong khi phần tối tăm bao la còn lại của mặt trăng vẫn chưa sáng lên, phác họa cảnh tượng một tín hiệu di chuyển ở tốc độ điện hóa sẽ mất nhiều ngày để đi qua mạng lưới quy mô hành tinh này"
+  labels={[
+    { x: 50, y: 62, side: "left", label: "Mạng lưới phát sáng", note: "Những sợi sáng len lỏi khắp các khu rừng của toàn mặt trăng" },
+    { x: 38, y: 82, side: "right", label: "Tín hiệu bò trườn", note: "Ở tốc độ thần kinh, mất nhiều ngày để vượt từ đầu này sang đầu kia" },
+    { x: 78, y: 16, side: "left", label: "Thế giới của độ trễ", note: "Phía bên kia vẫn chìm trong bóng tối — thông điệp chưa tới nơi" },
+  ]}
+  figNo="05"
+  caption="Phép toán tàn nhẫn của độ trễ. Một tín hiệu di chuyển ở tốc độ của một xung thần kinh - tối đa khoảng hơn một trăm mét một giây - sẽ mất nhiều ngày để vượt qua một mạng lưới bao trùm cả một mặt trăng. Một mạng lưới có thể chứa nhiều kết nối hơn một bộ não nhưng vẫn không thể tư duy nhanh nhạy, bởi suy nghĩ không nằm ở việc bạn có bao nhiêu sợi dây nối, mà ở việc một tín hiệu chạy qua chúng nhanh đến nhường nào. Mạng lưới của Pandora, được xây dựng trên nền tảng cáp điện hóa, dĩ nhiên phải là một thực thể tư duy theo đơn vị mùa, chứ không phải là giây."
+  tier="real_science"
+/>
+
+Thế nhưng tốc độ thô chỉ là độ trễ, chứ không phải là băng thông — và câu hỏi hữu ích hơn là một sợi cáp sinh học thực sự có thể chở được bao nhiêu bit trong một giây. Để trả lời điều đó, chúng ta có một con số đo lường thực tế tuyệt đẹp. Dây thần kinh thị giác của con người — một bó gồm hơn một triệu sợi nối từ mắt về não bộ, một trong những đường dẫn truyền dữ liệu có băng thông cao nhất trong thế giới sinh học — được ghi nhận tốc độ vào khoảng **mười triệu bit mỗi giây.** Đó chính là tốc độ của một đường cáp mạng ethernet đời đầu dùng trong gia đình, đang chạy dọc ngay phía sau đôi mắt bạn. Đó là những gì mà một triệu sợi thần kinh song song, được mài giũa qua hàng trăm triệu năm tiến hóa để tối ưu hóa thông lượng thô, có thể làm được.
+
+<DataComparison
+  stats={[
+    { label: "Thần kinh thị giác", value: "~10 Mb/s", note: "Một triệu sợi thần kinh — kết nối dữ liệu đỉnh nhất sinh học", tone: "teal" },
+    { label: "Tốc độ tín hiệu thần kinh", value: "~120 m/s", note: "Tốc độ điện hóa cao nhất; ánh sáng nhanh hơn hàng triệu lần", tone: "amber" },
+    { label: "Cáp quang", value: "terabit/s", note: "Kênh truyền nhân tạo, để so sánh", tone: "cyan" },
+    { label: "Dòng chảy ý thức", value: "10–50 b/s", note: "Dòng chảy mỏng manh tạo nên trải nghiệm bản ngã", tone: "magenta" },
+  ]}
+/>
+
+Bím tóc của người Na'vi rõ ràng là một món phần cứng đồ sộ hơn nhiều so với một dây thần kinh thị giác đơn lẻ — các tài liệu bổ trợ mô tả nó là một khối đặc quánh gồm hàng chục nghìn tua thần kinh. Cứ hào phóng đi, hào phóng hết mức có thể. Cứ cho là kuru vận hành một trăm dây thần kinh thị giác song song, và dây nào cũng ở trạng thái hoàn hảo không tì vết. Ngay cả thế thì mức trần tuyệt đối của kênh truyền tsaheylu cũng chỉ vào khoảng **một gigabit mỗi giây** — tương đương với một đường truyền băng thông rộng khá xịn trong gia đình. Hãy giữ chặt lấy con số đó; đó là sợi cáp duy nhất mà chúng ta phải dùng để nhồi nhét mọi tải trọng qua. Và bây giờ, cuối cùng thì chúng ta cũng có thể thực hiện những phép tính mà toàn bộ chương này đã luôn nhắm đến.

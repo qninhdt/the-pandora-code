@@ -1,0 +1,38 @@
+## Một tâm trí chứa bao nhiêu bit?
+
+Tại đây, cuộc khảo sát rẽ làm hai hướng, và toàn bộ câu hỏi về việc liệu buổi lễ tại Cây Linh Hồn là bất khả thi hay chỉ đơn thuần là một sự xa xỉ tột bậc sẽ phụ thuộc vào ngã rẽ mà bạn chọn. Có hai phương pháp hoàn toàn khác biệt để đo lường kích thước của một tâm trí con người, và chúng cho ra kết quả chênh lệch nhau tới hơn một triệu lần.
+
+Cách thứ nhất là đếm phần cứng. Một bộ não con người chứa khoảng một trăm nghìn tỷ <GlossaryTerm slug="connectome">khớp thần kinh (synapse)</GlossaryTerm>, mỗi khớp là một kết nối mà cường độ của nó đại diện cho một phần thông tin được lưu trữ. Nếu một tâm trí là trạng thái hoàn chỉnh của mạng lưới liên kết đó — mọi khớp thần kinh, mọi trọng số, toàn bộ <GlossaryTerm slug="connectome">bản đồ kết nối thần kinh (connectome)</GlossaryTerm> — thì việc sao chép nó đồng nghĩa với việc sao chép toàn bộ mạng lưới ấy. Con số phổ biến thường được nhắc đến cho phương pháp này là khoảng 2,5 petabyte: hai triệu rưỡi gigabyte, con số tính toán khi coi não bộ như một ổ cứng. Hãy tiếp nhận nó với một sự hoài nghi nhất định — bộ não không lưu trữ các tệp tin rời rạc, và bất kỳ tuyên bố nào kiểu "tâm trí bằng X byte" đều đang che đậy một sự mơ hồ sâu sắc về việc chính xác thứ gì đang được đong đếm — nhưng nếu coi đó là một giới hạn trên cho trạng thái phần cứng thô, thì quy mô hàng petabyte là con số cần phải vượt qua.
+
+Cách thứ hai không đo lường phần cứng, mà đo lường *trải nghiệm* — tốc độ thực tế mà những luồng suy nghĩ có ý thức tuôn trào. Và tại đây, khoa học mang đến một trong những bất ngờ lớn lao nhất khiến chúng ta phải khiêm nhường. Các giác quan của bạn trút khoảng mười một triệu bit mỗi giây vào hệ thần kinh; chỉ riêng đôi mắt đã chiếm phần lớn trong số đó. Thế nhưng, lượng thông tin thực sự chạm đến *nhận thức có ý thức* — băng thông của cái bản ngã biết suy nghĩ, biết quyết định và nhớ rằng mình là bạn — lại được các chuyên gia tâm vật lý học cổ điển ước tính chỉ vỏn vẹn ở mức **mười đến năm mươi bit mỗi giây.** Còn chậm hơn cả một chiếc modem từ thập niên 1980. Giới tâm lý học gọi khoảng trống này là <GlossaryTerm slug="conscious-bottleneck">nút thắt nhận thức</GlossaryTerm>, và triết gia Tor Nørretranders gọi kết quả đó là "ảo giác người dùng": não bộ nén một cách không thương tiếc dòng thác dữ liệu cảm giác thô thành một dòng chảy ý nghĩa mỏng manh và trừu tượng, vứt bỏ tất cả và chỉ giữ lại phần cốt lõi, và dòng chảy nhỏ nhoi đó chính là thứ mà bạn đang trải nghiệm với tư cách là tâm trí của mình.
+
+<Comparison
+  left={{
+    title: "Góc nhìn bản đồ kết nối thần kinh",
+    children: (
+      <>
+        <p>Một tâm trí <em>chính là</em> phần cứng của nó: mọi khớp thần kinh, mọi trọng số, toàn bộ sơ đồ mạng lưới.</p>
+        <p>Để sao chép nó, bạn phải sao chép <strong>tất cả mọi thứ</strong> — ở mức khoảng <strong>2,5 petabyte</strong>, con số tính toán khi coi não bộ như một ổ cứng.</p>
+        <p>Đây là tải trọng tối đa. Nó là con số khiến buổi lễ nghe có vẻ bất khả thi.</p>
+      </>
+    ),
+  }}
+  right={{
+    title: "Góc nhìn dòng chảy ý thức",
+    children: (
+      <>
+        <p>Một tâm trí là <em>trải nghiệm</em> — dòng chảy mỏng manh của những suy nghĩ chạm đến được nhận thức.</p>
+        <p>Dòng chảy đó chỉ vận hành ở tốc độ <strong>10–50 bit mỗi giây</strong>: trải nghiệm cá nhân của cả một đời người cũng chỉ vỏn vẹn vài chục gigabit.</p>
+        <p>Đây là tải trọng tối thiểu. Nó là con số khiến buổi lễ nghe có vẻ gần như hợp lý.</p>
+      </>
+    ),
+  }}
+/>
+
+Khoảng cách giữa hai góc nhìn này là khoảng cách giữa điều bất khả thi và điều đáng kinh ngạc đơn thuần, và chúng ta chuẩn bị đối chiếu cả hai con số đó với khả năng truyền tải của sợi cáp.
+
+<ConsciousBottleneck />
+
+Trước khi làm điều đó, hãy thử tự mình cầm lái phương trình này. Biểu đồ dưới đây là phiên bản tương tác được của định luật dung lượng kênh truyền Shannon: hãy thiết lập băng thông của một kênh và tỷ số tín hiệu trên nhiễu của nó, chọn một khối lượng dữ liệu — một từ được nói ra, một bức ảnh, hoặc toàn bộ bản đồ kết nối thần kinh — và quan sát xem quá trình truyền tải mất bao lâu. Hãy kéo các thanh trượt và tự tay cảm nhận hai bài học: cách băng thông tạo ra những bước nhảy vọt tuyến tính khổng lồ cho đáp án, và cách sức mạnh tín hiệu thô gần như không làm kết quả nhúc nhích chút nào.
+
+<ShannonChannel />

@@ -1,0 +1,13 @@
+## The cost of a perfect copy
+
+There is a quiet assumption buried in the Tree of Souls ceremony, and it is the assumption that breaks budgets. When the Na'vi move Grace's consciousness, or permanently transfer Jake's, the transfer must be *perfect*. A soul copied with errors is not a soul. Drop a few thousand bits and you have not slightly degraded the person — you may have erased a childhood, scrambled a personality, corrupted the very thing the ritual exists to save. The maximum-payload event on Pandora is also the one event that can tolerate *zero* loss. And it is being attempted across the noisiest kind of channel there is.
+
+Shannon tells us exactly what perfection costs on a noisy line, and the answer is: **redundancy.** To beat noise, you cannot simply send the message; you must send extra, carefully structured bits alongside it — <GlossaryTerm slug="error-correcting-code">error-correcting codes</GlossaryTerm> — so that the receiver can detect corruption and mathematically reconstruct what was damaged. This is the same trick that lets a scratched disc still play, that lets a spacecraft billions of kilometres away send back a clean photograph through a sea of cosmic static. Real neural systems appear to do it too: there is active research suggesting the brain's own circuits use redundancy as a kind of biological error-correction, spending neurons to buy reliability against the constant noise of wet biology.
+
+<Callout variant="warning" title="Redundancy is not free — it eats the channel">
+Every error-correcting bit you add to protect a message is a bit you are *not* spending on the message itself. Perfect fidelity over a noisy channel is bought with capacity. To move a soul losslessly across a warm, jittering biological cable might demand that you double or triple the raw data — spending more of your precious bandwidth on protection than on payload. The noisier the channel and the higher the stakes, the heavier the tax. A "perfect copy" is the single most expensive thing you can ever ask a channel to carry.
+</Callout>
+
+So the true cost of the consciousness transfer is not just the size of a mind. It is the size of a mind, *plus* the enormous overhead of guaranteeing that not one critical bit of it is lost in transit across the worst kind of cable for the job. We now have both halves of the engineer's question framed. We know the channel obeys C = B · log₂(1 + S/N), and that perfection on a noisy line is taxed heavily in redundancy. All that remains is the payload. How many bits, exactly, is a human being?
+
+

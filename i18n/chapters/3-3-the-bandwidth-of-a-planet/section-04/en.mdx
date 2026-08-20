@@ -1,0 +1,14 @@
+## The speed limit nobody can break
+
+Shannon's masterpiece was not the bit. It was a theorem about the channel — a single equation that places an absolute, physical ceiling on how fast information can cross any medium, and proves that the ceiling cannot be beaten by any trick, any technology, any expenditure of effort. It is called the Shannon–Hartley theorem, and in a chapter full of awe it is the one piece of hard law worth stating exactly:
+
+<Callout variant="insight" title="The channel-capacity theorem">
+**C = B · log₂(1 + S/N)**
+
+A channel's capacity **C** — its absolute maximum rate of error-free information, in bits per second — is set by just two things. **B** is its **bandwidth**, the range of frequencies it can carry, in hertz. And **S/N** is the **signal-to-noise ratio**, how loud the signal is compared to the noise drowning it. That is the whole speed limit of the universe for information. Nothing crosses any channel faster than its C. Not with better engineering, not with more power, not ever.
+</Callout>
+
+Two brutal lessons live inside that little equation, and both come back to bite Pandora. The first: capacity grows only with the *logarithm* of the signal-to-noise ratio. Logarithms are the mathematics of diminishing returns. To double your data rate by brute force — by shouting louder — you do not double your power; you must square the signal-to-noise ratio, pouring in exponentially more energy for each additional increment of speed. Raw power is an almost useless lever. The second lesson is the one that names this chapter: capacity grows *linearly* with bandwidth. Bandwidth is the precious resource, the true measure of a channel's worth. A copper phone line has a bandwidth of a few thousand hertz and can carry tens of kilobits a second. A fibre-optic strand has bandwidth in the terahertz and carries terabits. The difference between a trickle and a torrent is, almost entirely, bandwidth.
+
+And Shannon proved one more thing, the cruelest and most beautiful result of all. As long as you transmit *below* the channel's capacity, you can — with clever enough encoding — drive your error rate as close to zero as you like. Perfect, lossless communication over an imperfect, noisy channel is genuinely possible. But the instant you try to push *faster* than capacity, the guarantee shatters. Errors become not unlikely but *mathematically certain*. The data corrupts, and no amount of cleverness can save it. This is not an engineering inconvenience to be designed around. It is a law, as firm as the speed of light, and we are about to hold a dying woman's soul up against it.
+
