@@ -88,6 +88,12 @@ figures:
   - id: fig-06-slow-signal
     role: diagram
     asset_status: ready
+  - id: fig-07-citation-chain
+    role: diagram
+    asset_status: ready
+  - id: fig-08-wild-network-patchwork
+    role: comparison
+    asset_status: ready
   - id: fig-99-background
     role: hero
     asset_status: ready

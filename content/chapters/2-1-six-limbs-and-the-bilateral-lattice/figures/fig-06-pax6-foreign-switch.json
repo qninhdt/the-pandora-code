@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-pax6-foreign-switch",
+  "chapter_slug": "six-limbs-and-the-bilateral-lattice",
+  "role": "comparison",
+  "narrative_purpose": "Make deep homology concrete: a mouse eye-control gene can tell a fly to build eyes in impossible places, but the organs that appear are fly compound eyes. The switch specifies where; the host animal's inherited toolkit decides what gets built.",
+  "subject": "A single fruit fly shown as a careful naturalist specimen with its normal red compound eyes plus three clearly visible ectopic red compound-eye patches growing from the upper surface of one leg, the leading edge of one wing, and the base of one antenna; beside it, a small translucent laboratory-mouse embryo silhouette contains one softly glowing point near the developing eye, visually linking the foreign developmental switch to the fly without text or symbols.",
+  "scene": "A comparative evo-devo study plate against deep indigo, with the fly large enough that every ectopic compound-eye patch is unmistakable and the mouse embryo secondary and smaller.",
+  "camera": "Three-quarter macro view of the fly with leg, wing, antenna, and head all separated in silhouette; lateral embryological study view of the mouse beside it.",
+  "light": "Soft cool specimen light from above, faint cyan transmitted light through the wing and mouse embryo, and restrained ember-red highlights confined to the faceted compound eyes.",
+  "palette": "Void indigo ground, muted stone and ocean-teal insect body, mist-white wing, Pandora-cyan transmitted light, scarce ember red on every compound-eye patch.",
+  "style": "Painterly speculative-biology naturalist plate with the precision of an evo-devo specimen study, hand-painted texture, scientifically legible anatomy.",
+  "detail_level": "Crisp on the faceted eye patches and the exact body locations where they grow; softer on the embryo and surrounding ground.",
+  "composition": "The fly occupies two thirds of the frame on a diagonal that keeps head, antenna, wing, and leg unobstructed; the small mouse embryo sits across a dark gap, leaving clear negative space around both subjects.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "human eyes", "vertebrate camera eyes growing on the fly", "extra fly limbs", "cartoon mutation"],
+  "consistency_notes": "Every ectopic organ must visibly retain the fly's red faceted compound-eye anatomy. The mouse contributes only the developmental switch; no mouse-like eye should appear on the fly.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no arrows, no labels, no human-style eyeballs on the fly, no grotesque horror, no random tumors, no extra limbs, no photorealistic macro photograph, no glossy 3D render, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

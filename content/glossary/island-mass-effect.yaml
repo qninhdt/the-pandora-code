@@ -1,0 +1,16 @@
+id: island-mass-effect
+label:
+  vi: Hiệu ứng khối đảo
+  en: Island mass effect
+definition:
+  vi: Sự gia tăng năng suất sinh học quanh một hòn đảo so với vùng biển khơi nghèo dưỡng chất lân cận. Dòng chảy va vào địa hình, xoáy nước, sóng nội, nước trồi cục bộ, dòng chảy từ đất liền và tái chế dưỡng chất ven bờ đều có thể góp phần tạo nên điểm nóng này.
+  en: The increase in biological productivity around an island relative to the nutrient-poor open ocean nearby. Flow over topography, wakes, internal waves, local upwelling, land-derived inputs, and nearshore nutrient recycling can all contribute to the hotspot.
+see_also:
+  - upwelling
+  - ocean-stratification
+category: concept
+tags:
+  - oceanography
+  - ecology
+  - earth-systems
+cover_prompt: A painterly aerial-oblique view of a steep tropical island in a dark blue ocean, with a soft living-teal plankton plume curling downstream in its wake while surrounding water stays clear, no text, no labels, no numbers.

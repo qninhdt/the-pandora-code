@@ -1,0 +1,20 @@
+{
+  "id": "fig-08-vortex-over-a-wing",
+  "chapter_slug": "why-banshees-get-to-be-big",
+  "role": "diagram",
+  "narrative_purpose": "Makes the bumblebee example physically visible: at insect scale, a stable leading-edge vortex is a rotating pocket of air that keeps low-pressure flow attached over the wing and supplies lift a fixed-wing calculation misses.",
+  "subject": "A bumblebee frozen in the middle of a downstroke, viewed close enough that one translucent forewing dominates the frame. Above the wing's sharp leading edge, a coherent corkscrew tube of mist rolls from the wing root toward the tip, tight against the upper surface. Beneath the wing, denser smooth air is driven downward. The second wing is visible farther back at a different phase but remains out of focus.",
+  "scene": "The bee flies through a dark flower-edge air volume seeded with fine luminous pollen, allowing the otherwise invisible airflow to appear as continuous curved streaks and one compact vortex tube.",
+  "camera": "Extreme macro three-quarter view from slightly above and ahead of the wing leading edge.",
+  "light": "Cyan pollen and mist reveal the rotating flow; the bee is lit by subdued teal rim light; one warm amber accent sits on the thorax rather than the air mechanism.",
+  "palette": "Void indigo background, cyan-teal airflow, muted natural bee amber kept small, pale mist highlights.",
+  "style": "Painterly fluid-dynamics naturalist plate that feels observed with seeded airflow, not an abstract vector diagram.",
+  "detail_level": "Crisp leading edge, attached vortex and downwash; bee abdomen and flower background soften strongly.",
+  "composition": "Wing runs diagonally from lower left to upper right; vortex coils directly above its front edge; downwash opens into the lower right. Keep dark space on both sides of the vortex for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "smoke ring detached from wing", "aircraft", "watermark", "logos", "UI chrome"],
+  "consistency_notes": "The vortex must remain attached immediately above the leading edge and run spanwise along the wing, not float as a decorative spiral behind the bee.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no arrows, no labels, no detached tornado, no cartoon bee, no jet aircraft, no photo, no CGI, no vector infographic",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

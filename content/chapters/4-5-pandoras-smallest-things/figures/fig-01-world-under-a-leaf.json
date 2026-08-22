@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-world-under-a-leaf",
+  "chapter_slug": "pandoras-smallest-things",
+  "role": "hero",
+  "narrative_purpose": "The cold open follows one fallen leaf past the point where cinema would cut away, revealing decomposition as a crowded transfer of matter rather than disappearance.",
+  "subject": "A fallen blue-green alien leaf lying half-softened on wet soil. Its left half remains veined and intact; across the middle, minute pale detritivores tear the margin; on the right, fine branching fungal hyphae and colonies of tiny rods and spheres penetrate softened tissue, while a young root tip reaches into the dark crumbs beyond. Small fragments visibly pass from leaf tissue into the surrounding soil.",
+  "scene": "A quiet patch of Pandoran forest floor under dripping roots, the scale intimate and close, with no large creature present.",
+  "camera": "Oblique macro view almost level with the leaf surface, enough depth to show intact tissue, active decay, and dark soil in one continuous field.",
+  "light": "Cool diffuse night ambience; faint cyan leaf veins, living-teal fungal threads, restrained amber on the oldest softened tissue.",
+  "palette": "Deep indigo and wet umber ground, muted blue-green leaf, cyan-teal biological glow, scarce amber decay accent.",
+  "style": "Painterly field-naturalist macro plate, textured and ecological, observed rather than theatrical.",
+  "detail_level": "Crisp along the transition from intact leaf to fragmented tissue to fungal and microbial colonization; peripheral forest softly hazed.",
+  "composition": "A left-to-right sequence embedded in one natural scene, intact leaf at left, busy decomposer frontier at center, soil and new root at right, dark space above for interface callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "callout lines", "oversized monsters", "human hands"],
+  "consistency_notes": "Same fallen leaf as the cover, with credible microbial scale cues. The process should read through material transitions without diagram arrows.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no labels, no arrows, no cute anthropomorphic microbes, no infographic layout, no photographic or 3D-render look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-smallest-things/fig-00-cover.png"]
+}

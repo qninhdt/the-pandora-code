@@ -7,19 +7,29 @@ title:
   en: Reading Pandora as a specimen
 subtitle:
   vi: Đọc Pandora như một mẫu vật
-  en: Why this whole book treats Pandora as a specimen to be examined - and the four-tier system that keeps the reading honest
+  en: >-
+    Why this whole book treats Pandora as a specimen to be examined - and the four-tier system that
+    keeps the reading honest
 hook:
-  vi: Một nhà thực vật học từng cố vấn cho đoàn phim Avatar ngồi xem thành phẩm và lặng lẽ chấm điểm từng lỗi nhỏ. Tư thế ấy - trìu mến, chăm chú, không chịu ngoảnh mặt khỏi sai sót - chính là cách cả cuốn sách này đọc Pandora. Không phải tóm tắt cốt phim, mà nhặt nó lên, soi ra ánh sáng, và hỏi câu mà mọi nhà tự nhiên học hỏi trước một mẫu vật lạ.
-  en: A botanist who had advised the Avatar production sat watching the finished film and quietly grading its small errors. That posture - affectionate, attentive, unwilling to look away from a mistake - is how this entire book reads Pandora. Not a plot recap, but picking the world up, holding it to the light, and asking the question a naturalist asks of any unfamiliar specimen.
+  vi: >-
+    Một nhà thực vật học từng cố vấn cho đoàn phim Avatar ngồi xem thành phẩm và lặng lẽ chấm điểm
+    từng lỗi nhỏ. Tư thế ấy - trìu mến, chăm chú, không chịu ngoảnh mặt khỏi sai sót - chính là cách
+    cả cuốn sách này đọc Pandora. Không phải tóm tắt cốt phim, mà nhặt nó lên, soi ra ánh sáng, và
+    hỏi câu mà mọi nhà tự nhiên học hỏi trước một mẫu vật lạ.
+  en: >-
+    A botanist who had advised the Avatar production sat watching the finished film and quietly
+    grading its small errors. That posture - affectionate, attentive, unwilling to look away from a
+    mistake - is how this entire book reads Pandora. Not a plot recap, but picking the world up,
+    holding it to the light, and asking the question a naturalist asks of any unfamiliar specimen.
 authors:
-- bardabez
+  - bardabez
 reading_time_min: 26
 tags:
-- epistemology
-- philosophy-of-science
-- methodology
-- worldbuilding
-- evidence
+  - epistemology
+  - philosophy-of-science
+  - methodology
+  - worldbuilding
+  - evidence
 classification:
   canon_pct: 22
   inference_pct: 11
@@ -30,50 +40,62 @@ related_chapters:
   - floating-mountains-and-the-superconductor
   - what-is-pandoran-life-made-of
 glossary_terms:
-- falsifiability
-- demarcation-problem
-- abduction
-- inference-to-the-best-explanation
-- occams-razor
-- speculation
+  - falsifiability
+  - demarcation-problem
+  - abduction
+  - inference-to-the-best-explanation
+  - occams-razor
+  - speculation
 figures:
-- id: fig-00-cover
-  role: hero
-  asset_status: ready
-- id: fig-01-specimen-bench
-  role: inline
-  asset_status: ready
-- id: fig-02-the-gap
-  role: diagram
-  asset_status: ready
-- id: fig-03-one-granted-miracle
-  role: inline
-  asset_status: ready
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-specimen-bench
+    role: inline
+    asset_status: ready
+  - id: fig-02-the-gap
+    role: diagram
+    asset_status: ready
+  - id: fig-03-one-granted-miracle
+    role: inline
+    asset_status: ready
+  - id: fig-04-carbon-silicon-leash
+    role: comparison
+    asset_status: ready
+  - id: fig-05-novum-consequences
+    role: diagram
+    asset_status: ready
+  - id: fig-06-four-evidence-trays
+    role: diagram
+    asset_status: ready
+  - id: fig-07-smoke-in-the-sample
+    role: inline
+    asset_status: ready
 sources:
-- kind: canon
-  label: Avatar Canon - James Cameron's Avatar Wiki
-  url: https://james-camerons-avatar.fandom.com/wiki/Avatar_Canon
-- kind: community
-  label: An Interview with Jodie Holt, the Botanist Behind 'Avatar' - Scienceline
-  url: https://scienceline.org/2010/03/an-interview-with-jodie-holt-the-botanist-behind-avatar/
-- kind: community
-  label: How to speak Na'vi - an interview with Paul Frommer - Salon
-  url: https://www.salon.com/2023/01/11/navi-language-avatar-linguistics-paul-frommer-interview/
-- kind: science
-  label: The Real Science of 'Avatar' - Space.com
-  url: https://www.space.com/7698-real-science-avatar.html
-- kind: science
-  label: Hierarchy of evidence - Wikipedia
-  url: https://en.wikipedia.org/wiki/Hierarchy_of_evidence
-- kind: science
-  label: Guidance Note on Consistent Treatment of Uncertainties - IPCC AR5
-  url: https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf
-- kind: science
-  label: Pseudoscience and the Demarcation Problem - Internet Encyclopedia of Philosophy
-  url: https://iep.utm.edu/pseudoscience-demarcation/
-- kind: science
-  label: Abduction - Stanford Encyclopedia of Philosophy
-  url: https://plato.stanford.edu/entries/abduction/
-- kind: science
-  label: Astrobiology - Wikipedia
-  url: https://en.wikipedia.org/wiki/Astrobiology
+  - kind: canon
+    label: Avatar Canon - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Avatar_Canon
+  - kind: community
+    label: An Interview with Jodie Holt, the Botanist Behind 'Avatar' - Scienceline
+    url: https://scienceline.org/2010/03/an-interview-with-jodie-holt-the-botanist-behind-avatar/
+  - kind: community
+    label: How to speak Na'vi - an interview with Paul Frommer - Salon
+    url: https://www.salon.com/2023/01/11/navi-language-avatar-linguistics-paul-frommer-interview/
+  - kind: science
+    label: The Real Science of 'Avatar' - Space.com
+    url: https://www.space.com/7698-real-science-avatar.html
+  - kind: science
+    label: Hierarchy of evidence - Wikipedia
+    url: https://en.wikipedia.org/wiki/Hierarchy_of_evidence
+  - kind: science
+    label: Guidance Note on Consistent Treatment of Uncertainties - IPCC AR5
+    url: https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf
+  - kind: science
+    label: Pseudoscience and the Demarcation Problem - Internet Encyclopedia of Philosophy
+    url: https://iep.utm.edu/pseudoscience-demarcation/
+  - kind: science
+    label: Abduction - Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/abduction/
+  - kind: science
+    label: Astrobiology - Wikipedia
+    url: https://en.wikipedia.org/wiki/Astrobiology

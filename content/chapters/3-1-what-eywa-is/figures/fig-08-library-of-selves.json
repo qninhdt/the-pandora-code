@@ -1,0 +1,20 @@
+{
+  "id": "fig-08-library-of-selves",
+  "chapter_slug": "what-eywa-is",
+  "role": "inline",
+  "narrative_purpose": "Makes the chapter's library analogy concrete: Eywa can preserve and replay many complete personalities without the storage medium itself becoming a single person, separating a network that contains selves from a network that is one self.",
+  "subject": "Inside the hanging luminous tendrils of a Tree of Voices, several separate translucent human and Na'vi memory figures are suspended like distinct living recordings, each enclosed in its own soft oval pocket of light. A kneeling Na'vi touches one tendril and only one stored figure leans forward in response. The tree trunk and root mesh hold all the pockets but form no face, body, or central figure of their own.",
+  "scene": "A quiet nocturnal memory grove, seen close enough to distinguish individual stored personalities inside separate tendril clusters.",
+  "camera": "Medium-wide eye-level naturalist view, with the reader looking past the kneeling visitor into layers of suspended memory pockets.",
+  "light": "Cool bioluminescence from the tree tendrils, with faint magenta warmth contained inside the individual memory figures.",
+  "palette": "Cool dark grove with isolated pale cyan and rare magenta memory accents; the supporting tree remains darker than the stored figures.",
+  "style": "Painterly speculative-biology field illustration, intimate and observational, avoiding religious iconography.",
+  "detail_level": "Crisp on the visitor and the one responsive memory; other stored figures recede softly into depth.",
+  "composition": "Visitor low-left, responsive memory near centre, several separate memory pockets distributed through the tendril curtain, and no dominant central self.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "single giant face", "ghost horror", "religious halo"],
+  "consistency_notes": "Every stored personality must remain visually separate. The network is visibly the container and retrieval medium, never a merged composite person.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no labels, no arrows, no merged faces, no giant goddess, no horror ghosts, no photographic or CGI look, no lens flare",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

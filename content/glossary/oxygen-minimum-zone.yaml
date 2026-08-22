@@ -1,0 +1,16 @@
+id: oxygen-minimum-zone
+label:
+  vi: Vùng cực tiểu oxy
+  en: Oxygen minimum zone
+definition:
+  vi: Lớp nước giữa đại dương nơi oxy hòa tan thấp hơn rõ rệt so với nước phía trên và phía dưới. Oxy bị tiêu thụ khi vi sinh vật hô hấp vật chất hữu cơ đang chìm; vùng cực tiểu trở nên mạnh khi nhu cầu ấy cao nhưng thông khí và pha trộn lại yếu.
+  en: A mid-water layer where dissolved oxygen is markedly lower than in the water above and below. Microbial respiration consumes oxygen while breaking down sinking organic matter; the minimum intensifies where that demand is high but ventilation and mixing are weak.
+see_also:
+  - biological-pump
+  - ocean-stratification
+category: concept
+tags:
+  - oceanography
+  - ecology
+  - chemistry
+cover_prompt: A painterly ocean cutaway with bright oxygenated cyan water above and a dim magenta-indigo middle band nearly empty of animals, while sparse marine snow falls through it, no text, no labels, no numbers.

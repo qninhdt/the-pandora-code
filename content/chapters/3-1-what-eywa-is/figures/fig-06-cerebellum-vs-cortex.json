@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-cerebellum-vs-cortex",
+  "chapter_slug": "what-eywa-is",
+  "role": "comparison",
+  "narrative_purpose": "Makes Grace's connection-count mistake anatomical: the much larger store of neurons is packed into orderly one-way cerebellar lanes, while the smaller cortex is dominated by recurrent loops, showing why architecture and integration matter more than the number of parts.",
+  "subject": "A matched two-part cutaway of a human brain on a dark field. On the left, an enlarged cerebellum appears as a dense fan of countless fine parallel fibres entering from one edge, passing through tightly repeated folded layers, and exiting at the opposite edge with almost no paths curling backward. On the right, a smaller sheet of cerebral cortex appears as a compact tangle of fibres repeatedly looping back, crossing between distant patches, and returning into the same regions, with several bright junctions linked in closed circuits.",
+  "scene": "Two isolated anatomical specimens shown side by side, the dense one-way folded cerebellum and the smaller recurrent cortical web suspended against plain dark space.",
+  "camera": "Straight-on naturalist cutaway at matched scale, close enough for the direction and looping of the fibres to be legible.",
+  "light": "Soft self-luminous cyan picks out the parallel cerebellar lanes; brighter teal junctions and returning loops illuminate the cortex from within.",
+  "palette": "Figure-specific contrast only: muted cool tissue around the cerebellum and brighter cyan-teal recurrence in the cortex, with no warm area.",
+  "style": "Painterly anatomical naturalist plate with clear tissue structure, not a flat infographic.",
+  "detail_level": "Very fine repeated fibres in the cerebellum and crisp recurrent paths in the cortex; backgrounds empty and soft.",
+  "composition": "The cerebellum fills the larger left half, the cortex occupies the smaller right half, with generous dark gutters beside both for later callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "brain floating inside a head", "medical scan look"],
+  "consistency_notes": "The visual claim must be literal: left contains more repeated fibres but almost no return loops; right contains less bulk but many obvious closed recurrent paths.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no arrows, no labels, no photographic dissection, no MRI, no glossy 3D render, no vector infographic, no gore",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

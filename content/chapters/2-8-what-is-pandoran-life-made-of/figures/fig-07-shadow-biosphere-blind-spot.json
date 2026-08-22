@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-shadow-biosphere-blind-spot",
+  "chapter_slug": "what-is-pandoran-life-made-of",
+  "role": "inline",
+  "narrative_purpose": "Show the observational blind spot behind a shadow biosphere: familiar DNA-based microbes light up under a detector designed for them while a second, chemically different population in the same water remains alive but invisible to the assay.",
+  "subject": "One droplet of pond water enlarged into a naturalist microscope field containing two intermingled microbial communities. Familiar rod and spiral microbes with ordinary DNA inside them fluoresce cyan under a narrow scanning beam and are collected into a bright detector aperture. Among them, equally structured but subtly mirror-coiled and alternative-backbone microbes remain dark and pass outside the aperture's response, still dividing and moving in the same droplet. A dark microscope lens and unmarked sensor edge frame the field without screens or text.",
+  "scene": "Microscopic pond-water world suspended against deep indigo, crowded enough to show coexistence but with clear separation between detected glow and undetected living forms.",
+  "camera": "Close microscope-field view looking through the circular edge of an optical instrument, with the scanning band crossing diagonally.",
+  "light": "A narrow cool cyan assay beam excites only the familiar microbes; the alternative community is revealed by very faint rim and transmitted water light, not by the detector itself.",
+  "palette": "Void indigo ground, ocean teal water, Pandora cyan detected cells, mist-white instrument edge, subdued violet-grey undetected cells with no self-glow.",
+  "style": "Painterly astrobiology naturalist plate, hand-painted microscopic texture, mysterious but scientifically restrained.",
+  "detail_level": "Crisp on both kinds of living cells and the selective illumination boundary; surrounding droplet and instrument fall into haze.",
+  "composition": "A diagonal illuminated band catches the familiar population in the upper left while multiple dark but visibly living cells persist in the lower right, all within one continuous droplet.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "readable screen", "callout lines", "arrows", "alien faces", "tiny humanoids", "dead cells", "outer space"],
+  "consistency_notes": "The undetected cells must still read as organised, reproducing life in the same sample; they are missed because the assay recognises familiar chemistry, not because they are absent or dead.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no UI, no alien humanoids, no monster microbes, no outer space, no fluorescent glow on the undetected population, no glossy 3D medical render, no photographic microscopy, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-resistance-vs-resilience",
+  "chapter_slug": "why-burning-eywa-doesnt-kill-it",
+  "role": "comparison",
+  "narrative_purpose": "Separates two survival strategies the prose warns readers not to confuse: resistance prevents the initial injury, while resilience accepts visible damage and restores function afterward.",
+  "subject": "A two-panel fire comparison. Left panel: one massive thick-barked trunk stands in a low ground fire; flames curl around the intact bark and die without entering, while the crown remains unchanged. Right panel: an ordinary stand has already burned to black stumps and ash, but fresh green-cyan shoots, fungal threads, and young saplings are spreading densely through the scar; the damage is unmistakable and so is the recovery.",
+  "scene": "Two matched forest disturbances, one stopped at the surface and one followed by vigorous ecological regrowth.",
+  "camera": "Wide eye-level diptych with the resistant trunk and the regenerating burn scar at matched scale.",
+  "light": "Scarce ember light marks the fire and char; cool living bioluminescence illuminates the intact crown and the new growth.",
+  "palette": "Cool forest tones dominate, with ember amber confined to flame and char and vivid living teal reserved for regrowth.",
+  "style": "Painterly disturbance-ecology naturalist plate, tactile bark, ash, shoots, and fungal threads.",
+  "detail_level": "Crisp on bark-fire contact in the left panel and on multiple stages of new growth in the right; distant forest soft.",
+  "composition": "Equal panels with a dark gutter; left has one uninjured vertical subject, right has a low horizontal carpet of recovery and open dark sky for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "firefighters", "modern vehicles"],
+  "consistency_notes": "Left must show little damage because the blow is resisted. Right must show severe damage plus unmistakable recovery; do not make resilience look like immunity.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no labels, no arrows, no people, no firefighting equipment, no photographic or 3D-render look, no excessive orange area",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

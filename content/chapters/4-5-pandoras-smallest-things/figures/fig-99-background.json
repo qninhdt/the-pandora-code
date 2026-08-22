@@ -1,0 +1,19 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "pandoras-smallest-things",
+  "role": "hero",
+  "narrative_purpose": "A low-contrast full-bleed mood layer for long-form reading: the enormous Pandoran forest seen from the level of the organisms that recycle it.",
+  "subject": "An immense dim Pandoran forest floor viewed almost at soil level, one decomposing leaf and a few fine roots in the near darkness, faint branching fungal threads and tiny water films glimmering through crumbs of soil, giant tree trunks rising out of focus far above like distant columns. No single bright subject.",
+  "scene": "Deep night after rain, humid haze, the scale shifting quietly from soil crumbs to a forest too large to see at once.",
+  "camera": "Ultra-wide panoramic macro-to-landscape view, horizon low and soft, no foreground focal point.",
+  "light": "Extremely dim diffuse indigo ambience with faint teal fungal traces, low contrast throughout so overlaid text remains readable.",
+  "palette": "Predominantly void-indigo and deep teal-black, the faintest cyan threads, muted wet-earth grey, no bright highlights.",
+  "style": "Painterly atmospheric matte vista, hand-painted and immersive, a mood backdrop rather than a study figure.",
+  "detail_level": "Deliberately soft and dissolving; only hints of leaf texture, root and fungal threads in the lower frame.",
+  "composition": "Wide dark field with soil motifs low in frame and vast shadowed trunks receding upward, even tonal distribution and no competing focal subject.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "bright focal subject", "sharp creature", "Avatar branding"],
+  "consistency_notes": "Same fallen leaf and hidden-soil motif as the cover, but much darker and lower contrast for page background use.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no labels, no bright focal subject, no lens flare, no photographic or 3D-render look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

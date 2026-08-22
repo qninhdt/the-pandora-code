@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-earths-flight-ceiling",
+  "chapter_slug": "why-banshees-get-to-be-big",
+  "role": "inline",
+  "narrative_purpose": "Gives Earth's roughly quarter-tonne flight ceiling a body: Quetzalcoatlus is shown as a giraffe-tall terrestrial animal whose entire lightweight frame is committed to an eleven-metre wing.",
+  "subject": "A full adult Quetzalcoatlus standing quadrupedally on a dry floodplain, shoulder height comparable to a giraffe silhouette far behind it. The near forelimb is partly unfolded so the viewer can follow the immensely elongated wing finger, thin hollow bones, taut skin membrane and compact torso. A small human palaeontologist silhouette stands well outside reach for scale, holding no equipment with readable markings.",
+  "scene": "An open Late Cretaceous floodplain at blue hour with sparse low vegetation, a distant herd reduced to haze, and enough empty sky to make the grounded giant feel poised at the boundary between walking and flight.",
+  "camera": "Low three-quarter naturalist portrait from several body lengths away, entire animal and folded wing visible without dramatic distortion.",
+  "light": "Cool diffuse sky light defines the long bones and membrane; a narrow amber rim picks out the shoulder and wing root where launch force concentrates.",
+  "palette": "Deep indigo sky, desaturated teal-grey hide, pale bone highlights and a controlled amber edge on the launch anatomy.",
+  "style": "Speculative palaeobiology field portrait grounded in current azhdarchid anatomy, painterly and restrained rather than cinematic.",
+  "detail_level": "High anatomical detail on forelimb, wing finger, membrane attachments and compact body; landscape recedes into haze.",
+  "composition": "The tall head and neck rise through the right half; the partly opened wing sweeps diagonally into the left half; scale silhouettes remain small and distant. Preserve dark margins around the torso and wing root for labels.",
+  "exclude": ["text", "numbers", "labels", "arrows", "feathers", "bird beak anatomy", "bat fingers", "dragon features", "dinosaur movie branding", "watermark", "logos"],
+  "consistency_notes": "Depict a four-limbed azhdarchid pterosaur with the forelimbs becoming the wings, not a feathered bird or six-limbed dragon. Its frame must look lightweight despite its great height.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no museum placard, no feathers, no extra limbs, no fantasy dragon, no aggressive monster pose, no photo, no CGI sheen, no watermark",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

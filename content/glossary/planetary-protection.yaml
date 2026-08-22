@@ -1,0 +1,23 @@
+id: planetary-protection
+label:
+  vi: Bảo vệ hành tinh (planetary protection)
+  en: Planetary protection
+definition:
+  vi: >-
+    Hệ nguyên tắc và kỹ thuật nhằm ngăn tàu thăm dò mang sự sống Trái Đất tới làm nhiễm một thế
+    giới khác, đồng thời ngăn mẫu vật ngoài Trái Đất gây hại cho sinh quyển quê nhà. “Bảo vệ” ở đây
+    còn giữ cho khoa học khỏi tự đánh lừa mình: nếu một thiết bị không biết nó đã mang theo vi khuẩn
+    nào, nó không thể chắc sinh vật tìm thấy ở điểm đến thực sự là bản địa.
+  en: >-
+    The principles and techniques used to keep spacecraft from carrying Earth life into another
+    world and to keep returned extraterrestrial material from harming Earth's biosphere. Protection
+    also prevents science from fooling itself: if an instrument does not know which organisms it
+    brought along, it cannot be sure that life detected at the destination is genuinely native.
+see_also:
+  - shadow-biosphere
+  - extremophile
+category: tech
+tags:
+  - astrobiology
+  - planetary-science
+cover_prompt: A painterly sterile sampling capsule hovering above untouched alien soil, one sealed core vial inside and a faint contamination boundary around the mechanism, no text, labels, or numbers.

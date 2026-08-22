@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-two-toruk-wings",
+  "chapter_slug": "why-banshees-get-to-be-big",
+  "role": "comparison",
+  "narrative_purpose": "Shows why variable geometry would help a giant predator whose safe low-speed wing and high-speed hunting wing cannot otherwise be the same shape.",
+  "subject": "The same great leonopteryx wing shown twice from above at matched scale. On the left, the wing is broad and fully spread for slow soaring; individual finned membrane elements along the outer and trailing edge are separated into narrow slots, and soft air streams pass between them. On the right, the wing is swept rearward for a dive; the same finned elements seal edge-to-edge into one smooth continuous blade with a sharply tapered outline. The shoulder, leading spar and membrane pattern are identical in both states.",
+  "scene": "A paired aerodynamic naturalist study suspended over deep cloud haze, with only faint silhouettes of the animal's crimson torso anchoring each wing root.",
+  "camera": "Matched top-down orthographic views with no perspective difference between the two wing states.",
+  "light": "Living cyan translucence through the membranes reveals each fin boundary; sparse amber light marks the leading edges; cloud haze remains indigo and low contrast.",
+  "palette": "Toruk crimson is subdued within the book's indigo-teal field; cyan membrane veins dominate, with restrained amber at the load-bearing leading edge.",
+  "style": "Painterly comparative flight-anatomy plate, detailed enough to track the same fin elements across both configurations.",
+  "detail_level": "Crisp repeated wing anatomy and fin separations; torso and clouds are soft secondary context.",
+  "composition": "Broad slotted wing fills the left half; narrow sealed wing fills the right half; roots align horizontally so the geometry can be compared directly. Leave a dark gutter and clear outer margins for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "aircraft", "metal hinges", "mechanical panels", "feathers", "watermark", "logos"],
+  "consistency_notes": "Both panels must depict the exact same biological wing. Only sweep angle and separation of the finned membrane elements change; never turn it into machinery.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no aircraft parts, no robotic wing, no extra wing bones, no film poster, no photo or CGI look",
+  "style_refs": [],
+  "character_refs": ["apps/web/public/images/chapters/why-banshees-get-to-be-big/fig-01-toruk-launch.webp"]
+}

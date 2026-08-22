@@ -90,6 +90,12 @@ figures:
   - id: fig-05-reticulate-web
     role: inline
     asset_status: ready
+  - id: fig-06-shared-pandoran-signatures
+    role: comparison
+    asset_status: ready
+  - id: fig-07-whale-ankle-clue
+    role: comparison
+    asset_status: ready
   - id: fig-99-background
     role: inline
     asset_status: ready

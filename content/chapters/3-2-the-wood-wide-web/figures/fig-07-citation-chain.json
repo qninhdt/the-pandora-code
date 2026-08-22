@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-citation-chain",
+  "chapter_slug": "the-wood-wide-web",
+  "role": "diagram",
+  "narrative_purpose": "Visualizes positive citation bias without relying on a chart: one narrow laboratory result is copied through a chain of papers until the final retelling has swollen into an unsupported image of a harmonious, intentional forest mind.",
+  "subject": "At the far left, a small glass growth chamber contains exactly two seedlings linked by one visible fungal strand, with a few luminous particles crossing between them. A diagonal chain of open research pages recedes across the frame; each page carries only a tiny painted thumbnail of the preceding scene, but the fungal web in each thumbnail grows wider and the trees more numerous. At the far right, the final page has expanded into an entire glowing forest whose trees bend toward seedlings as if deliberately feeding them, far larger and more purposeful than the original chamber.",
+  "scene": "A dark archive table where a modest two-plant experiment is transformed through repeated visual copying into a sweeping forest story.",
+  "camera": "Oblique overhead view along the chain from the real chamber at near-left to the exaggerated forest image at far-right.",
+  "light": "The laboratory chamber is lit with restrained clinical cyan; each successive copied image grows brighter and more seductive, ending in a lush but suspect glow.",
+  "palette": "Cool dark archive tones, restrained cyan at the evidence source, increasingly vivid teal and rare magenta toward the overgrown final story.",
+  "style": "Painterly naturalist and archival illustration, with pages as physical objects rather than flat slide graphics.",
+  "detail_level": "Crisp on the original two seedlings and the progressive change across four or five pages; background plain and dark.",
+  "composition": "A clear left-to-right diagonal chain with ample dark space around the first chamber, middle pages, and final forest for later callouts.",
+  "exclude": ["readable text", "letters", "numbers", "captions", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "newspaper headlines"],
+  "consistency_notes": "The original evidence must stay narrow and literal: two plants, one fungal link, a small transfer. Only the retellings may expand into the intentional forest story.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no readable writing, no letters, no numbers, no labels, no arrows, no infographic, no photographic or 3D-render look, no modern computer screen",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

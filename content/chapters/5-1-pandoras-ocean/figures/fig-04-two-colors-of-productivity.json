@@ -1,0 +1,19 @@
+{
+  "id": "fig-04-two-colors-of-productivity",
+  "chapter_slug": "pandoras-ocean",
+  "role": "comparison",
+  "narrative_purpose": "A side-by-side natural water-mass comparison corrects the intuition that the clearest blue water must be the most biologically productive.",
+  "subject": "One continuous ocean scene divided by a sinuous natural front. On the left, transparent cobalt-blue water admits deep shafts of light but contains only a few tiny plankton cells and scattered fish. On the right, a cooler green-teal plume contains dense microscopic producers, suspended particles, grazing specks and one compact school of small alien fish. The two water masses meet without a hard border.",
+  "scene": "The upper open ocean near an unseen island, observed just below the surface across a biological front.",
+  "camera": "Wide level underwater comparison view, clear oligotrophic water on the left and productive plume on the right, equal visual weight.",
+  "light": "Long clean cyan shafts penetrate the clear side; the productive side scatters softer green-teal light and becomes less transparent with depth.",
+  "palette": "Cobalt indigo and cyan on the clear side, living teal and muted green-cyan on the productive side, sparse amber highlights on fish.",
+  "style": "Painterly comparative naturalist plate with a physically continuous water front, not a split-screen graphic.",
+  "detail_level": "Sparse left water, visibly particle-rich right water, microscopic texture and a legible fish aggregation; backgrounds remain simple for labels.",
+  "composition": "A curved vertical front creates two readable halves. Preserve open upper corners and dark lower margins for annotation boxes.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "divider line", "Earth species", "algae mat", "pollution"],
+  "consistency_notes": "The productive water should look alive rather than dirty or toxic. Do not imply universal exact colours; this is a mechanism plate.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no split-screen border, no before-after captions, no sewage, no photographic or CGI look",
+  "style_refs": ["pandora-establishing.png"]
+}

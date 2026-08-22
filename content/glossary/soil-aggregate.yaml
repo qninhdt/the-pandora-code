@@ -1,0 +1,24 @@
+id: soil-aggregate
+label:
+  vi: Viên kết đất (soil aggregate)
+  en: Soil aggregate
+definition:
+  vi: >-
+    Một cụm hạt cát, bụi và sét được rễ, sợi nấm, chất nhầy của vi sinh vật cùng vật chất hữu cơ
+    gắn thành một cấu trúc xốp. Các khe giữa và bên trong viên kết giữ nước, dẫn khí và tạo ra những
+    nơi ở khác nhau chỉ cách nhau vài phần milimet: bề mặt giàu oxy, lõi có thể yếm khí. Cấu trúc ấy
+    là lý do đất không chỉ là bột đá trộn với xác lá mà là một môi trường sống có kiến trúc.
+  en: >-
+    A cluster of sand, silt, and clay particles bound into a porous structure by roots, fungal
+    threads, microbial glues, and organic matter. Spaces around and within an aggregate hold water,
+    conduct gases, and create contrasting habitats millimetres apart: an oxygen-rich surface can
+    surround an anoxic core. That architecture is why soil is not merely powdered rock mixed with
+    dead leaves but a built living environment.
+see_also:
+  - rhizosphere
+  - mycelium
+category: bio
+tags:
+  - ecology
+  - geology
+cover_prompt: A painterly macro cutaway of one irregular dark soil aggregate made from mineral grains, fine roots and glowing microbial films, visible pores holding thin cyan water films, no text, no labels.

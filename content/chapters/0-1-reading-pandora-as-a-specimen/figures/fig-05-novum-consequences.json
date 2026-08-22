@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-novum-consequences",
+  "chapter_slug": "reading-pandora-as-a-specimen",
+  "role": "diagram",
+  "narrative_purpose": "Visualizes the chapter's thought-experiment discipline: change one premise, then let ordinary consequences propagate outward instead of granting additional miracles.",
+  "subject": "A long tabletop mechanism made from a row of ordinary wooden levers, brass pendulums, water cups and stone counterweights. At the far left, exactly one impossible element appears: a small rough stone floating unsupported a hand's breadth above the table, glowing faintly. The floating stone presses the first ordinary lever beneath it; that lever tips a cup, the water turns a small wheel, the wheel releases a counterweight, and the final counterweight lifts a wooden latch. Every stage after the single floating stone uses visible contact, weight, flowing water or gravity.",
+  "scene": "A dark field-naturalist workshop, the mechanism stretching across a worn bench and fading into shadow, with no people present.",
+  "camera": "Low oblique side view along the full length of the mechanism so each physical consequence can be followed from left to right.",
+  "light": "The one floating stone supplies a cool living glow; the ordinary brass and water catch soft ambient highlights, with a restrained amber glint only on the final latch.",
+  "palette": "Global cool dark workshop tones, teal glow isolated to the single impossible stone, scarce amber on brass contact points.",
+  "style": "Painterly mechanical thought-experiment plate, tactile wood, stone, water and brass; observed rather than theatrical.",
+  "detail_level": "Crisp on every contact point in the causal chain, softer workshop background and generous shadow around the mechanism.",
+  "composition": "A clear left-to-right cascade beginning with one hovering stone and ending with one raised latch; no disconnected stages and ample dark space above for later callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "multiple floating objects", "electric motors", "computer parts", "watermark", "people"],
+  "consistency_notes": "There must be exactly one visually impossible element, the unsupported stone; every later motion must have an ordinary visible mechanical cause.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no arrows, no extra levitating objects, no perpetual-motion loop, no missing contact points, no steampunk clutter, no photographic or 3D-render look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

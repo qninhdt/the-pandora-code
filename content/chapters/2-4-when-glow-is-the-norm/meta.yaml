@@ -77,6 +77,12 @@ figures:
   - id: fig-05-earth-cold-light
     role: inline
     asset_status: ready
+  - id: fig-06-counterillumination
+    role: comparison
+    asset_status: ready
+  - id: fig-07-luminous-background-pressure
+    role: comparison
+    asset_status: ready
 sources:
   - kind: canon
     label: Bioluminescence - James Cameron's Avatar Wiki

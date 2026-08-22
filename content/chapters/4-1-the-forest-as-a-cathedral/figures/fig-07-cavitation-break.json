@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-cavitation-break",
+  "chapter_slug": "the-forest-as-a-cathedral",
+  "role": "diagram",
+  "narrative_purpose": "Shows the specific hydraulic failure hidden inside the tree-height ceiling: a water column under extreme tension nucleates a gas bubble, breaks continuity, and leaves one xylem vessel unable to conduct.",
+  "subject": "A magnified cutaway through three parallel xylem vessels inside the upper trunk of a very tall tree. Two vessels remain filled by unbroken translucent cyan columns of water. In the central vessel, the water is visibly stretched into a narrow neck around a single expanding gas bubble; above the bubble the column has separated and the vessel is dry and dark. Fine bordered pits connect the failed vessel to its wet neighbours, while intact woody cell walls hold the tubes in place.",
+  "scene": "The microscopic plumbing is isolated as a naturalist specimen against deep indigo, with a faint out-of-focus silhouette of the distant crown above to establish that this failure occurs near the top of a giant tree.",
+  "camera": "Extreme close cutaway, front-on and slightly oblique so the tubular depth of the vessels remains visible.",
+  "light": "Cool transmitted cyan light inside intact water columns; a restrained amber rim around the gas bubble marks the single failure point; surrounding wood stays teal-grey in deep shadow.",
+  "palette": "Void indigo background, muted teal-grey lignified walls, living cyan water, one sparse amber failure accent.",
+  "style": "Painterly botanical microscopy plate with anatomically coherent vessel walls and tactile hand-painted texture, not a sterile textbook vector.",
+  "detail_level": "Crisp vessel walls, bordered pits, continuous water surfaces and one clearly separated embolized column; all nonessential tissue fades into shadow.",
+  "composition": "Three tall vessels fill the frame. The intact left vessel and the failed central vessel form the teaching contrast; the right vessel recedes as context. Leave open dark margins beside the intact lower column and the central bubble for interface callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "blood vessels", "animal cells", "metal pipes", "watermark", "logos", "UI chrome"],
+  "consistency_notes": "The failure must be a gas embolism inside woody xylem, not a crack in the wood. Show exactly one broken water column and at least one neighbouring intact column.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no labels, no arrows, no infographic layout, no plumbing hardware, no bloodstream, no photographic or CGI look, no glossy vector art",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

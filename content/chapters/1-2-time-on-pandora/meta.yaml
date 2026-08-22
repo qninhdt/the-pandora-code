@@ -7,19 +7,31 @@ title:
   en: Time on Pandora
 subtitle:
   vi: Thời gian trên Pandora
-  en: 'Why the biggest thing in Pandora''s sky never moves - yet a day still passes: tidal locking, libration, and the dance of orbital mechanics'
+  en: >-
+    Why the biggest thing in Pandora's sky never moves - yet a day still passes: tidal locking,
+    libration, and the dance of orbital mechanics
 hook:
-  vi: 'Người Na''vi có một câu nói làm thay cả chiếc đồng hồ: "về nhà trước lúc nhật thực". Đó không phải thơ ca, mà là một giờ trong ngày - buổi xế chiều khi mặt trời sắp khuất sau hành tinh khổng lồ và thế giới chìm vào bóng tối giữa ban ngày. Trên Trái Đất, nhật thực toàn phần là kỳ quan hiếm hoi cả đời mới gặp một lần; trên Pandora, nó là tiếng chuông báo giờ mỗi ngày. Lần theo chữ "vì sao" ấy là toàn bộ chương này.'
-  en: 'The Na''vi have a phrase that does the work of a clock: be home by eclipse. It is not poetry but a time of day - the late afternoon when the sun slides behind the giant planet and the world goes dark in the middle of daylight. On Earth a total eclipse is a once-in-a-lifetime wonder; on Pandora it is a daily errand-bell. Following that "why" is the whole of this chapter - and the answer is a single fact about how Pandora moves.'
+  vi: >-
+    Người Na'vi có một câu nói làm thay cả chiếc đồng hồ: "về nhà trước lúc nhật thực". Đó không
+    phải thơ ca, mà là một giờ trong ngày - buổi xế chiều khi mặt trời sắp khuất sau hành tinh khổng
+    lồ và thế giới chìm vào bóng tối giữa ban ngày. Trên Trái Đất, nhật thực toàn phần là kỳ quan
+    hiếm hoi cả đời mới gặp một lần; trên Pandora, nó là tiếng chuông báo giờ mỗi ngày. Lần theo chữ
+    "vì sao" ấy là toàn bộ chương này.
+  en: >-
+    The Na'vi have a phrase that does the work of a clock: be home by eclipse. It is not poetry but
+    a time of day - the late afternoon when the sun slides behind the giant planet and the world
+    goes dark in the middle of daylight. On Earth a total eclipse is a once-in-a-lifetime wonder; on
+    Pandora it is a daily errand-bell. Following that "why" is the whole of this chapter - and the
+    answer is a single fact about how Pandora moves.
 authors:
-- bardabez
+  - bardabez
 reading_time_min: 23
 tags:
-- orbital-mechanics
-- tidal-locking
-- astronomy
-- exomoons
-- eclipses
+  - orbital-mechanics
+  - tidal-locking
+  - astronomy
+  - exomoons
+  - eclipses
 classification:
   canon_pct: 24
   inference_pct: 13
@@ -30,59 +42,66 @@ related_chapters:
   - whats-in-the-air
   - continents-oceans-climate
 glossary_terms:
-- tidal-locking
-- synchronous-rotation
-- libration
-- sidereal-day
-- synodic-day
-- spin-orbit-resonance
-- obliquity
-- planetshine
-- roche-limit
-- tidal-heating
+  - tidal-locking
+  - synchronous-rotation
+  - libration
+  - sidereal-day
+  - synodic-day
+  - spin-orbit-resonance
+  - obliquity
+  - planetshine
+  - roche-limit
+  - tidal-heating
 figures:
-- id: fig-00-cover
-  role: hero
-  asset_status: ready
-- id: fig-01-sky-clock
-  role: hero
-  asset_status: ready
-- id: fig-02-tidal-lock-carousel
-  role: diagram
-  asset_status: ready
-- id: fig-03-libration-nod
-  role: diagram
-  asset_status: ready
-- id: fig-04-eclipse-season
-  role: diagram
-  asset_status: ready
-- id: fig-05-sidereal-synodic
-  role: diagram
-  asset_status: ready
-- id: fig-99-background
-  role: hero
-  asset_status: ready
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-sky-clock
+    role: hero
+    asset_status: ready
+  - id: fig-02-tidal-lock-carousel
+    role: diagram
+    asset_status: ready
+  - id: fig-03-libration-nod
+    role: diagram
+    asset_status: ready
+  - id: fig-04-eclipse-season
+    role: diagram
+    asset_status: ready
+  - id: fig-05-sidereal-synodic
+    role: diagram
+    asset_status: ready
+  - id: fig-06-two-sun-decades
+    role: comparison
+    asset_status: ready
+  - id: fig-07-too-close-clock
+    role: comparison
+    asset_status: ready
+  - id: fig-99-background
+    role: hero
+    asset_status: ready
 sources:
-- kind: canon
-  label: Pandora - James Cameron's Avatar Wiki
-  url: https://james-camerons-avatar.fandom.com/wiki/Pandora
-- kind: canon
-  label: Polyphemus - James Cameron's Avatar Wiki
-  url: https://james-camerons-avatar.fandom.com/wiki/Polyphemus
-- kind: science
-  label: Tidal locking - Wikipedia
-  url: https://en.wikipedia.org/wiki/Tidal_locking
-- kind: science
-  label: Orbit of the Moon (libration) - Wikipedia
-  url: https://en.wikipedia.org/wiki/Orbit_of_the_Moon
-- kind: science
-  label: Astrophysics of Pandora, the moon-world from Avatar - planetplanet.net
-  url: https://planetplanet.net/2022/12/14/pandora-the-moon-world-from-avatar-revisited/
-- kind: science
-  label: Mercury's 3:2 Spin-Orbit Resonance
-  url: https://ytliu0.github.io/Mercury-SpinOrbitResonance/mercury.html
-- kind: community
-  label: Community orbital reconstructions of the Polyphemus system (r/Avatar, Universe Sandbox)
-  url: https://www.reddit.com/r/Avatar/comments/zyrwql/pandoras_orbit_and_eclipse_visualized_universe/
-- kind: research-note
-  label: The Chronometric and Astrodynamical Profile of Pandora (chapter research note)
+  - kind: canon
+    label: Pandora - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Pandora
+  - kind: canon
+    label: Polyphemus - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Polyphemus
+  - kind: science
+    label: Tidal locking - Wikipedia
+    url: https://en.wikipedia.org/wiki/Tidal_locking
+  - kind: science
+    label: Orbit of the Moon (libration) - Wikipedia
+    url: https://en.wikipedia.org/wiki/Orbit_of_the_Moon
+  - kind: science
+    label: Astrophysics of Pandora, the moon-world from Avatar - planetplanet.net
+    url: https://planetplanet.net/2022/12/14/pandora-the-moon-world-from-avatar-revisited/
+  - kind: science
+    label: Mercury's 3:2 Spin-Orbit Resonance
+    url: https://ytliu0.github.io/Mercury-SpinOrbitResonance/mercury.html
+  - kind: community
+    label: Community orbital reconstructions of the Polyphemus system (r/Avatar, Universe Sandbox)
+    url: >-
+      https://www.reddit.com/r/Avatar/comments/zyrwql/pandoras_orbit_and_eclipse_visualized_universe/
+  - kind: research-note
+    label: The Chronometric and Astrodynamical Profile of Pandora (chapter research note)

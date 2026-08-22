@@ -1,0 +1,16 @@
+id: biological-pump
+label:
+  vi: Bơm sinh học đại dương
+  en: Biological pump
+definition:
+  vi: Tập hợp quá trình trong đó sinh vật tầng mặt biến carbon vô cơ thành vật chất sống, rồi một phần vật chất ấy chìm xuống dưới dạng tế bào, viên phân và tuyết biển. Hô hấp tái sinh phần lớn dưỡng chất trên đường xuống; một phần carbon đi tới đại dương sâu hoặc trầm tích.
+  en: The processes by which surface organisms turn inorganic carbon into living matter and some of that matter sinks as cells, faecal pellets, and marine snow. Respiration regenerates most nutrients on the way down; a fraction of the carbon reaches the deep ocean or sediments.
+see_also:
+  - euphotic-zone
+  - oxygen-minimum-zone
+category: concept
+tags:
+  - oceanography
+  - earth-systems
+  - ecology
+cover_prompt: A painterly deep-ocean column with a bright plankton-rich surface and a sparse snowfall of luminous organic flakes descending into dark indigo water toward the seafloor, no text, no labels, no numbers.

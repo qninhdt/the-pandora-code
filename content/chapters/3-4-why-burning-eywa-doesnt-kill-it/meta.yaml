@@ -85,6 +85,18 @@ figures:
   - id: fig-04-woodsprite-seedbank
     role: diagram
     asset_status: ready
+  - id: fig-05-resistance-vs-resilience
+    role: comparison
+    asset_status: ready
+  - id: fig-06-simultaneous-hub-strike
+    role: diagram
+    asset_status: ready
+  - id: fig-07-sterile-future
+    role: comparison
+    asset_status: ready
+  - id: fig-08-fauna-flora-cascade
+    role: diagram
+    asset_status: ready
   - id: fig-99-background
     role: hero
     asset_status: ready

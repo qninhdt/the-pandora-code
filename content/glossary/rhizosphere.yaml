@@ -1,0 +1,24 @@
+id: rhizosphere
+label:
+  vi: Vùng rễ (rhizosphere)
+  en: Rhizosphere
+definition:
+  vi: >-
+    Dải đất mỏng sát quanh một chiếc rễ, nơi đường, axit hữu cơ, chất nhầy và tế bào rụng từ cây làm
+    mật độ cũng như hoạt động của vi sinh vật khác hẳn đất ở xa. Cây trả carbon để đổi lấy dưỡng
+    chất, tuyển mộ cộng sinh, cạnh tranh với mầm bệnh và vô tình nuôi cả những kẻ cơ hội. Đây không
+    phải một đường biên cố định mà là vùng ảnh hưởng hóa học luôn chuyển động theo đầu rễ.
+  en: >-
+    The narrow zone of soil around a root where sugars, organic acids, mucilage, and shed plant
+    cells make microbial abundance and activity different from the bulk soil beyond it. A plant
+    spends carbon to obtain nutrients, recruits partners, competes with pathogens, and inevitably
+    feeds opportunists too. It is not a fixed boundary but a moving chemical sphere around a root.
+see_also:
+  - soil-aggregate
+  - mutualism
+  - mycelium
+category: bio
+tags:
+  - ecology
+  - mycology
+cover_prompt: A hand-painted close cutaway of one pale root tip passing through dark soil, surrounded by a dense cyan halo of bacteria and fine fungal filaments fed by glowing droplets, no text or labels.

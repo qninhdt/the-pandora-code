@@ -80,6 +80,21 @@ figures:
   - id: fig-04-lift-on-pandora
     role: diagram
     asset_status: ready
+  - id: fig-05-wing-loading-ladder
+    role: comparison
+    asset_status: ready
+  - id: fig-06-earths-flight-ceiling
+    role: inline
+    asset_status: pending
+  - id: fig-07-two-toruk-wings
+    role: comparison
+    asset_status: pending
+  - id: fig-08-vortex-over-a-wing
+    role: diagram
+    asset_status: ready
+  - id: fig-09-riding-the-updraft
+    role: inline
+    asset_status: pending
 sources:
   - kind: canon
     label: Mountain Banshee - James Cameron's Avatar Wiki

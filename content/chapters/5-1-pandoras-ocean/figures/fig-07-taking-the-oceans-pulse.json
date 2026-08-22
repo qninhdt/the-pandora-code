@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-taking-the-oceans-pulse",
+  "chapter_slug": "pandoras-ocean",
+  "role": "inline",
+  "narrative_purpose": "Make the chapter's proposed measurement programme tangible by showing the humble instrument package that can reveal an otherwise invisible vertical ocean structure.",
+  "subject": "A compact unmanned ocean survey platform floating at the edge of a luminous alien lagoon lowers a circular CTD rosette on a single thin cable. The metal frame carries a ring of open sampling bottles and a central cluster of small sensors. It descends through sunlit cyan surface water, a visibly wavering magenta-blue transition layer, and toward dark indigo deep water with sparse marine snow. Several bottles are open at different angles, ready to close at selected depths. No screen readouts or writing are visible.",
+  "scene": "A hypothetical first scientific cast in the Eastern Sea, presented as a specimen-gathering moment rather than a military or industrial operation.",
+  "camera": "Tall-feeling wide cutaway from just above the small platform to deep below it, with the cable forming a clean vertical axis and the rosette slightly below centre.",
+  "light": "Bright natural cyan near the surface fading rapidly into indigo, warm amber glints on the instrument frame and a subtle magenta density boundary.",
+  "palette": "Ocean teal and cyan upper water, abyssal indigo depth, restrained amber instrument highlights and a thin magenta transition.",
+  "style": "Painterly scientific-expedition plate with tactile engineered details and atmospheric water depth, consistent with the chapter's naturalist imagery.",
+  "detail_level": "Readable cable, circular frame, sampling-bottle ring and sensor cluster; simple platform silhouette and uncluttered water column for annotations.",
+  "composition": "Platform occupies a narrow strip at the top, cable leads the eye to the rosette near centre, with distinct surface, transition and deep zones and negative space on both sides.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "weapons", "military ship", "submarine", "film actors", "divers", "Earth flags"],
+  "consistency_notes": "Match fig-01's water column and fig-05's deep-water restraint. The equipment is a plausible generic CTD rosette, not a named canonical RDA object.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no screen graphics, no arrows, no huge ship, no submarine, no weaponry, no glossy product render, no flat infographic",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-ocean/fig-01-ocean-is-a-volume.png"]
+}

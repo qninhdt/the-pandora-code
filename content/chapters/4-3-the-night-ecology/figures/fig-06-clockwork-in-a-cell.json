@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-clockwork-in-a-cell",
+  "chapter_slug": "the-night-ecology",
+  "role": "diagram",
+  "narrative_purpose": "Makes a circadian oscillator concrete as delayed negative feedback: a gene produces protein, accumulated protein returns to suppress that gene, then degradation releases the brake and starts another cycle.",
+  "subject": "One animal cell shown as a circular cutaway at four successive sectors around its nucleus. In the first sector, an exposed gene region in chromatin releases fresh messenger strands through a nuclear pore. In the second, ribosomes in the cytoplasm build many identical clock-protein molecules. In the third, a dense cluster of those proteins re-enters the nucleus and physically covers the active gene region, while messenger production has stopped. In the fourth, the proteins are fragmented and cleared, leaving the gene region uncovered and active again. The repeated molecular shapes are identical throughout.",
+  "scene": "A single dark biological specimen isolated in deep indigo, with the four states arranged around one shared nucleus so the feedback loop reads spatially without printed arrows.",
+  "camera": "Front-on cellular cutaway with a shallow three-dimensional view of nucleus, pores, ribosomes and protein clusters.",
+  "light": "Cyan illuminates newly produced messenger and protein; restrained amber marks the moment accumulated protein closes the gene; degradation products fade into teal shadow.",
+  "palette": "Void indigo cytoplasm, teal membranes, living cyan products, sparse amber at the suppressed gene.",
+  "style": "Painterly molecular-cell naturalist plate, materially textured but mechanically legible.",
+  "detail_level": "Clear nucleus boundary, one gene locus, messenger strands, ribosomes and recurring protein forms; unrelated organelles remain soft.",
+  "composition": "Four sequential states occupy clockwise quadrants around the same central nucleus, connected by repeated placement and molecular shapes rather than arrows. Keep a clean dark ring around the cell for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "clock face", "gears", "DNA letters", "watermark", "logos", "UI chrome"],
+  "consistency_notes": "The causal loop must remain literal: gene on, protein accumulation, gene suppressed, protein cleared, gene available again. Do not introduce mechanical clocks or unrelated molecular symbols.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no arrows, no clock hands, no gears, no infographic boxes, no cartoon organelles, no photographic or glossy CGI look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

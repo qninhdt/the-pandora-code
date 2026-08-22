@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-paines-crowbar",
+  "chapter_slug": "hometree-as-keystone",
+  "role": "comparison",
+  "narrative_purpose": "Shows the original keystone experiment as a causal before-and-after: removing a rare predator releases mussels to monopolise rock and collapses the rest of the intertidal community.",
+  "subject": "Two adjacent Pacific rocky-shore plots at matched tide height and scale. The untouched plot contains a sparse ochre sea star among a mosaic of mussels, barnacles, limpets, anemones and algae with bare rock between them. In the removal plot, an ecologist's gloved hand and crowbar are lifting the last sea star away at the near edge while a later view of the same rock shows a dense near-continuous carpet of mussels covering the substrate and excluding the former mosaic. The sea star is visibly rare in area and biomass.",
+  "scene": "Mukkaw Bay on the Washington coast under cool overcast light, with the two experimental stretches separated only by a narrow natural crack in the same wave-washed rock bench.",
+  "camera": "High oblique field-survey view that keeps individual organisms and the full plot boundaries legible.",
+  "light": "Cool cyan-grey marine light, teal wet rock and tide pools, one restrained ochre-amber accent on the rare Pisaster subject.",
+  "palette": "Indigo water, teal-grey rock, cyan tide-pool reflections, muted biological colours, sparse amber on the sea star.",
+  "style": "Painterly intertidal field experiment plate with taxonomically recognisable organisms and tactile wet surfaces.",
+  "detail_level": "Crisp sea star, mussel cover and species mosaic; waves and distant shore soften into haze.",
+  "composition": "Diverse control plot fills the left half; removal and mussel-dominated outcome share the right half in a shallow temporal overlay. Keep clear dark water margins beside the rare sea star and dense mussel carpet for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "aquarium glass", "tropical coral", "watermark", "logos", "UI chrome"],
+  "consistency_notes": "The sea star must occupy little biomass yet control a large community effect. The post-removal plot must be dominated by mussels, not simply empty rock.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no plot labels, no arrows, no tropical beach, no giant starfish, no cartoon style, no photographic or CGI look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

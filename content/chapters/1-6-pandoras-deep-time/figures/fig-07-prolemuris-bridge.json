@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-prolemuris-bridge",
+  "chapter_slug": "pandoras-deep-time",
+  "role": "comparison",
+  "narrative_purpose": "Makes the chapter's evolutionary clue visible: Prolemuris carries partly fused upper limbs that appear to bridge Pandora's common six-limbed body plan and the Na'vi's four limbs.",
+  "subject": "A three-subject naturalist comparison plate on one ground line. At left stands a generalized Pandoran arboreal animal with six fully separate limbs: two forelimbs, two middle limbs and two hind limbs, all visibly attached separately to the torso. At center stands a Prolemuris-like climbing creature with two hind limbs and two upper limb trunks; each upper trunk clearly forks below the elbow into two separate forearms and hands, creating four hands from two shared upper arms. At right stands a tall slender Na'vi silhouette with exactly two arms and two legs. All three face the same direction in neutral side three-quarter pose, with no overlap between bodies.",
+  "scene": "A dark xenobiologist's field-plate ground with faint forest haze and a few low glowing fronds for scale, no dramatic action.",
+  "camera": "Straight-on full-body comparison at matched shoulder height, each subject entirely visible from head to foot.",
+  "light": "Soft cool bioluminescent rim from low flora, even enough that every limb attachment and fork remains readable.",
+  "palette": "Global cool Pandora palette with teal-cyan anatomical rim light; neutral stone ground and no competing warm focal area.",
+  "style": "Painterly speculative-zoology naturalist plate, anatomically legible and observed, not a movie still.",
+  "detail_level": "High on shoulders, elbows, fork points, hands and limb attachments; faces subdued; background minimal.",
+  "composition": "Three separated figures ordered left to right from six separate limbs, to forked paired upper limbs, to four total limbs, with open dark space above each for labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "weapons", "clothing detail", "extra tails", "overlapping bodies", "watermark", "Earth primates"],
+  "consistency_notes": "Limb counts are load-bearing: left exactly six separately attached limbs; center exactly two legs plus two upper arms that each fork into two forearms and hands; right exactly two arms and two legs.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no arrows, no wrong limb counts, no extra arms, no fused silhouettes, no ape or monkey from Earth, no photographic or 3D-render look, no action pose",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

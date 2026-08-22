@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-counterillumination",
+  "chapter_slug": "when-glow-is-the-norm",
+  "role": "comparison",
+  "narrative_purpose": "Reverse the reader's default equation of light with visibility: a bobtail squid uses bacterial light on its underside to erase its silhouette, while the same animal with the photophore dark remains conspicuous from below.",
+  "subject": "A paired underwater view from beneath two small Hawaiian bobtail squid hovering under the same dim moonlit surface: the left squid's underside emits a soft blue-white bacterial glow precisely matching the downwelling haze so its body edge nearly disappears; the right squid's underside is unlit and forms a hard black silhouette against the pale water above. Fine translucent fins, rounded mantle, and short arms are anatomically clear.",
+  "scene": "Shallow night sea seen upward toward a low luminous surface, with open dark water below and faint suspended particles.",
+  "camera": "Low-angle prey's-eye view looking straight up, both squid at equal size and depth for immediate comparison.",
+  "light": "Dim blue-violet downwelling moonlight from the surface; on the left, a living underside glow matched in colour and intensity; on the right, no body light, producing a stark silhouette.",
+  "palette": "Void indigo deep water, ocean teal and mist-white surface haze, Pandora cyan bacterial light, almost no warm colour.",
+  "style": "Painterly marine-biology naturalist plate, hand-painted, soft-bodied anatomy observed with quiet scientific clarity.",
+  "detail_level": "Crisp on the right silhouette and the left photophore-bearing underside, with the left animal's boundary deliberately dissolving into matching light.",
+  "composition": "Two squid spaced symmetrically beneath one continuous bright surface band, ample dark water below reinforcing the viewpoint of a predator looking up.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "rainbow glow", "giant squid", "Pandoran fauna", "divers"],
+  "consistency_notes": "The left squid must become less visible because its belly light matches the water above, not more visible through neon brightness. The right is the same species and posture with the light off.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no neon outline, no multicolour glow, no giant squid, no horror, no photographic underwater look, no glossy 3D render, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

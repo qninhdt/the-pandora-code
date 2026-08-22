@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-two-giant-launches",
+  "chapter_slug": "direhorse-and-banshee-up-close",
+  "role": "comparison",
+  "narrative_purpose": "Compare the launch bottleneck on two worlds: Earth's giant pterosaur needs a four-limb pole-vault from level ground, while the ikran uses a running cliff drop and Pandora's dense air and low gravity to convert the fall into flight.",
+  "subject": "A matched two-world launch study. On the left, a giant Quetzalcoatlus on an open Cretaceous plain vaults from all four limbs, folded wing-fingers and powerful forelimbs pushing the body airborne like poles while the hind feet leave the ground. On the right, a mountain banshee with a Na'vi rider sprints on its limbs from a high Pandoran cliff edge, drops into open air, and begins spreading four broad flight membranes as the forest canopy falls far below.",
+  "scene": "Earth's dry level floodplain and Pandora's misty cliff are joined as two adjacent environmental vignettes with a dark vertical seam.",
+  "camera": "Low lateral view on the pterosaur at the instant of vault; wider three-quarter view slightly above the banshee as it crosses the cliff lip.",
+  "light": "Muted warm dawn on the Earth side, cool cyan planetshine and bioluminescent haze on the Pandora side; both subjects rim-lit against open sky.",
+  "palette": "Earth panel in stone grey, muted ochre, and scarce ember; Pandora panel in void indigo, ocean teal, and Pandora cyan, with restrained continuity across the seam.",
+  "style": "Painterly comparative flight-biology naturalist plate, hand-painted, physical and observational rather than cinematic spectacle.",
+  "detail_level": "Crisp on the pterosaur's four-limb launch posture and the banshee's unfolding four flight membranes; landscapes recede into haze.",
+  "composition": "Two equal horizontal vignettes capture the decisive instant before sustained flight, with each animal moving toward central open sky and no arrows or measurements.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "feathered pterosaur wings", "dragon", "aircraft", "extra pterosaur limbs", "six banshee wings"],
+  "consistency_notes": "Quetzalcoatlus launches quadrupedally with membranous wings supported by elongated fingers. The ikran retains exactly four distinct flight membranes and canonical head and body proportions.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no charts, no feathered wings on pterosaur, no dragon anatomy, no extra wings or limbs, no photorealistic or glossy 3D render look, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/direhorse-and-banshee-up-close/fig-02-ikran-flight-anatomy.png"]
+}

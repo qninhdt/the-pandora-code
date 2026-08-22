@@ -1,0 +1,20 @@
+{
+  "id": "fig-09-the-nocturnal-inheritance",
+  "chapter_slug": "the-night-ecology",
+  "role": "comparison",
+  "narrative_purpose": "Makes the nocturnal-bottleneck hypothesis tangible by setting an early mammal's night-specialized sensory equipment against a daylight reptile's richer colour apparatus, then showing the same inherited bias in a modern mammal.",
+  "subject": "Three aligned naturalist portraits. Left: a small Mesozoic mammal moving beneath dinosaur feet at night, with very large whiskers, broad external ears, an elongated scent-rich snout and eyes that gather light but carry only two visibly distinct cone receptor types in a magnified retinal inset. Centre: a daylight lizard of similar body size in bright foliage, with smaller whiskerless face and a retinal inset containing four distinct cone receptor types. Right: a modern fox at twilight, its large ears, whiskers and scenting nose echoing the ancient mammal while the daylight world above is empty of it.",
+  "scene": "A time-spanning zoological specimen plate that moves from Cretaceous night through daylight comparison to a modern forest edge, linked by matching head scale and sensory close-ups.",
+  "camera": "Matched eye-level side portraits with small magnified eye insets integrated beside each head.",
+  "light": "Ancient and modern mammals live in cyan moonlit shadow; the lizard receives a controlled amber daylight accent that stays secondary in area.",
+  "palette": "Indigo and teal dominate both night panels, mist highlights on whiskers and ears, restrained amber-green daylight only in the central comparison.",
+  "style": "Painterly evolutionary sensory plate with anatomically plausible Mesozoic mammal, modern fox and lizard.",
+  "detail_level": "Crisp whiskers, ears, noses and simplified retinal receptor mosaics; dinosaurs and habitats remain soft context.",
+  "composition": "Ancient mammal left, daylight lizard centre, modern fox right. Faces align horizontally; dark margins beside ears and retinal insets allow callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "anthropomorphic expressions", "dinosaurs attacking", "watermark", "logos"],
+  "consistency_notes": "The figure should communicate a sensory trade: enhanced hearing, touch and smell in mammals alongside reduced colour receptor diversity, not claim that every early mammal was strictly nocturnal.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no arrows, no cartoon evolution march, no human eyes, no monster scene, no photo or CGI look, no vector infographic",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

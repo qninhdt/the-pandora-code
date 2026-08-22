@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-island-stirs-the-water",
+  "chapter_slug": "pandoras-ocean",
+  "role": "diagram",
+  "narrative_purpose": "An oblique, label-ready atoll wake makes the island mass effect visible without claiming that it has been measured at Awa'atlu.",
+  "subject": "A low alien atoll rising from a steep submarine pedestal in an otherwise clear dark-blue ocean. A broad current approaches from the left, separates around the island, and forms two curling downstream eddies. Beneath the surface, pale internal density layers bend upward against the steep slope. A soft living-teal plankton plume appears only in the downstream wake, with a compact fish school at its outer edge.",
+  "scene": "Open tropical Eastern-Sea-like water around an isolated inhabited reef island, seen as a transparent oblique cutaway from high above.",
+  "camera": "High three-quarter aerial-oblique view with the island just right of center, upstream water on the left and a long wake extending to the lower right.",
+  "light": "Soft cyan daylight on the island rim, deep indigo offshore water, and a restrained living-teal glow tracing the biologically active wake.",
+  "palette": "Void-indigo open ocean, ocean teal shallows, cyan rim light, living-teal wake and sparse magenta reef accents.",
+  "style": "Painterly naturalist ocean-process plate with atmospheric depth, not a satellite photograph or vector flowchart.",
+  "detail_level": "Clear island pedestal, two wake eddies, bent subsurface layers and one biological plume; upstream water remains simple and empty.",
+  "composition": "Island as the obstacle, upstream and downstream regions clearly distinguishable, with dark negative space beside the slope and eddies for callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "weather map symbols", "Earth buildings", "film actors"],
+  "consistency_notes": "Match the marine architecture of fig-00 and fig-01. Render current structure through suspended particles and curved density bands, never arrows.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no map legend, no satellite photo, no flat infographic, no glossy CGI, no giant storm vortex",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-ocean/fig-01-ocean-is-a-volume.png"]
+}

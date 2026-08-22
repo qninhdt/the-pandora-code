@@ -1,0 +1,19 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "tulkun-not-quite-whales",
+  "role": "hero",
+  "narrative_purpose": "A low-contrast full-bleed ocean mood layer suggests a society moving through enormous dark water without competing with the chapter text.",
+  "subject": "A distant pod of immense tulkun silhouettes traveling beneath a vast dark ocean surface, their four-eyed heads and multiple flippers only faintly legible, with one separated silhouette following farther behind. Sparse bioluminescent plankton and a dim reef shelf dissolve into haze. No close subject and no bright focal point.",
+  "scene": "Pandora's open ocean at deep night seen from a very high, distant vantage, water extending beyond sight in every direction.",
+  "camera": "Ultra-wide panoramic view from high above and behind the pod, extremely distant scale and layered atmospheric depth.",
+  "light": "Very dim indigo ambience, faint living-teal traces along the pod and almost imperceptible cyan plankton, uniformly low contrast for readable overlaid text.",
+  "palette": "Nearly all void indigo and deep ocean teal, minimal muted cyan, no warm focal accents.",
+  "style": "Painterly atmospheric ocean vista, hand-painted and immersive, designed as a background rather than a study plate.",
+  "detail_level": "Soft silhouettes and dissolving reef depth; intentionally little local contrast or sharp detail.",
+  "composition": "Pod occupies a small lower-third diagonal, one separated animal trails behind, upper two-thirds remain dark open water with even tone.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "bright focal subject", "close face", "boats", "humans", "RDA machinery", "Avatar branding"],
+  "consistency_notes": "Same tulkun body language as the cover but rendered only as distant low-contrast silhouettes. Preserve a dark reading surface above all else.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no labels, no bright focal subject, no lens flare, no photographic or CGI look, no ordinary two-eyed Earth whales, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

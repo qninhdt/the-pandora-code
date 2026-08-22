@@ -1,0 +1,19 @@
+{
+  "id": "fig-02-three-ocean-traditions",
+  "chapter_slug": "tulkun-not-quite-whales",
+  "role": "comparison",
+  "narrative_purpose": "A three-part visual distinguishes cultural phenomena that prose can too easily blend: enduring sperm-whale clan signals, migrating humpback song, and socially learned dolphin tool use.",
+  "subject": "A continuous underwater naturalist plate divided spatially into three clear groups without borders. On the left, four sperm whales exchange compact clusters of luminous cyan pulse rings between their heads. In the center, three humpback whales face east in a loose sequence while a long layered ribbon of repeated wave shapes changes gradually as it passes from one singer to the next. On the right, one bottlenose dolphin lifts a large empty spiral shell from the seabed while a close companion watches the exact action. Every animal has anatomically correct Earth-cetacean form.",
+  "scene": "One dark ocean field transitioning from deep pelagic water at left, through open midwater, to a sandy shallow seabed at right, with enough separation that each tradition reads independently.",
+  "camera": "Wide straight-on comparative plate, three groups at equal visual scale, no perspective overlap between them.",
+  "light": "Subtle cyan acoustic rings and wave ribbons, living-teal edge light on bodies, indigo water and a restrained amber glint on the shell.",
+  "palette": "Void indigo and ocean teal, cyan signal motifs, muted grey cetaceans, sparse amber shell accent.",
+  "style": "Painterly marine naturalist comparison, organic signal shapes rather than a vector infographic.",
+  "detail_level": "Clear species silhouettes and behaviors, simplified low-detail background, crisp open areas around the three teaching motifs.",
+  "composition": "Three left-to-right islands of action with dark water gaps between them and open space above each group for overlay callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "panel borders", "arrows", "musical notation", "staff lines", "human divers", "boats", "Pandoran creatures"],
+  "consistency_notes": "Keep the three Earth species distinct: square-headed sperm whales, long-flippered humpbacks, and small beaked bottlenose dolphins. Signals are abstract light traces with no glyphs or notation.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no musical notes, no arrows, no infographic boxes, no photographic or 3D-render look, no species hybrids, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

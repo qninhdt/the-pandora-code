@@ -34,6 +34,19 @@ The plant was a *Mimosa pudica*, the sensitive plant, the one that folds its lea
 
 The leaves kept opening in the morning. They kept closing at dusk. In total darkness, with no sun to see, no dawn, no dusk, no shadow moving across a floor, the plant went on keeping the schedule it had always kept.
 
+<DiagramFigure
+  src="/images/chapters/the-night-ecology/fig-05-the-closed-cupboard.png"
+  alt="Inside the same sealed dark cupboard, a mimosa opens its leaves, folds them hours later, then opens them again even though no sunlight has entered"
+  labels={[
+    { x: 24, y: 47, side: "left", label: "Open state", note: "The plant begins with its leaves spread" },
+    { x: 50, y: 47, side: "right", label: "Folded state", note: "Hours later the leaves close despite no change in the dark cupboard" },
+    { x: 76, y: 47, side: "right", label: "Open again", note: "The cycle returns without a sunrise to trigger it" }
+  ]}
+  figNo="05"
+  caption="De Mairan removed the day and the plant kept one. In a cupboard that supplied neither dawn nor dusk, the mimosa still opened, closed and opened again. A reflex cannot continue after its trigger has vanished. The persistence of the rhythm is the first clean evidence that the schedule is being generated inside the organism."
+  tier="real_science"
+/>
+
 <Callout variant="insight" title="The finding that founded a science">
 A rhythm that continues in constant darkness is not a response to anything. It is being *generated* — by the organism, from the inside. This is the single most counterintuitive fact in the biology of time, and almost everyone's intuition gets it backwards: we assume living things follow the sun. They don't. They run their own clock and check it against the sun. Take the sun away and the clock keeps ticking, which is how you know it was there all along.
 </Callout>
@@ -52,6 +65,20 @@ So what is doing the ticking? For a long time this was the field's most embarras
 
 In 1971 Ronald Konopka and Seymour Benzer went looking for flies whose timing was broken, and found three. One ran fast, on a cycle around nineteen hours. One ran slow, near twenty-eight. One had no rhythm at all. All three carried damage to a single gene — which meant, unavoidably, that a clock capable of measuring out a day could be reached and broken by changing one gene, and that the clock was therefore not some diffuse property of being alive but a specific piece of molecular machinery. Following that thread took another two decades and eventually a Nobel Prize, awarded in 2017 to Jeffrey Hall, Michael Rosbash and Michael Young, and what they found at the bottom of it is almost comically simple. A cell makes a protein. The protein accumulates. Once there is enough of it, it goes back and switches off the very gene that produces it. Production stops, the protein is broken down and cleared away, and with the brake released the gene switches back on and starts the whole thing over. A loop that builds its own off-switch, then dismantles it, and does so — this is the entire trick — in almost exactly a day.
 
+<DiagramFigure
+  src="/images/chapters/the-night-ecology/fig-06-clockwork-in-a-cell.png"
+  alt="Four states around one cell show a clock gene producing protein, the protein accumulating and returning to suppress the gene, then breaking down so production can begin again"
+  labels={[
+    { x: 25, y: 28, side: "left", label: "Gene switched on", note: "The clock gene starts producing its protein" },
+    { x: 75, y: 28, side: "right", label: "Protein accumulates", note: "The delayed product builds through the cell" },
+    { x: 75, y: 75, side: "right", label: "Feedback closes the gene", note: "The accumulated protein returns to suppress production" },
+    { x: 25, y: 75, side: "left", label: "Protein clears", note: "Breakdown releases the gene and starts the loop again" }
+  ]}
+  figNo="06"
+  caption="The clock is a delayed argument a gene has with its own product. The gene makes protein; the protein accumulates, returns to the nucleus and closes the gene; with production stopped, the protein is gradually cleared; the uncovered gene begins again. Nothing in the loop knows the hour. Its chemistry simply takes about a day to come home."
+  tier="real_science"
+/>
+
 That is the clock. Not a pendulum, not a special organ, but a protein that suppresses its own manufacture on a slow enough delay that the round trip takes a day. In mammals the loop is coordinated centrally by a cluster of a few tens of thousands of neurons in the hypothalamus called the **<GlossaryTerm slug="suprachiasmatic-nucleus">suprachiasmatic nucleus</GlossaryTerm>** — the master clock, which keeps the peripheral clocks running in almost every tissue of the body in step with one another. And lest the mechanism sound like something that requires the full apparatus of a cell, cyanobacteria run a version built from three proteins that keeps a roughly 24-hour rhythm in a test tube, with no cell, no genes being read, nothing alive in the tube at all — just protein, ATP, and time. A clock is a *chemistry*, not a privilege of the complicated.
 
 ## How a clock gets set, and how far it can be dragged
@@ -59,6 +86,19 @@ That is the clock. Not a pendulum, not a special organ, but a protein that suppr
 A clock that runs slightly wrong needs correcting, and the thing that does the correcting has a name borrowed from German, because German chronobiologists got there first: a **<GlossaryTerm slug="zeitgeber">zeitgeber</GlossaryTerm>**, a *time-giver*. Anything in the environment that recurs reliably enough to reset an internal clock qualifies. Temperature cycles can do it. Regular feeding can do it. Even social contact can, weakly. But on Earth the overwhelming zeitgeber, the one that outranks everything else, is light.
 
 The resetting itself is called **<GlossaryTerm slug="entrainment">entrainment</GlossaryTerm>**, and the shape it takes is the part worth understanding, because it is not what you would guess. Light does not simply "advance" or "delay" a clock. Its effect depends entirely on *when it arrives* relative to what the clock currently believes the time to be — and the map of that relationship is called the **<GlossaryTerm slug="phase-response-curve">phase response curve</GlossaryTerm>**. Light landing in the early part of the creature's subjective night pushes the clock *later*, delaying it. Light landing in the late part of the subjective night, just before the internal dawn, pulls the clock *earlier*, advancing it. And light arriving in the middle of the subjective day does approximately nothing at all — a stretch chronobiologists call the dead zone, where the clock has already had its fill of daylight and one more photon carries no information.
+
+<DiagramFigure
+  src="/images/chapters/the-night-ecology/fig-07-light-at-two-phases.png"
+  alt="The same blue light pulse reaches the same sleeper early and late in biological night, shifting an internal molecular cycle later in the first case and earlier in the second"
+  labels={[
+    { x: 18, y: 28, side: "left", label: "Early biological night", note: "The same blue pulse delays the internal clock" },
+    { x: 50, y: 28, side: "right", label: "Biological day", note: "A pulse here has little phase-shifting effect" },
+    { x: 82, y: 28, side: "right", label: "Late biological night", note: "The pulse advances the internal clock instead" }
+  ]}
+  figNo="07"
+  caption="A photon has no fixed instruction. Early in subjective night, the same blue pulse pushes the clock later; close to subjective dawn, it pulls the clock earlier; in the middle of biological day, it says almost nothing. Entrainment works because the correction changes sign with phase, nudging a wandering oscillator back toward the world from whichever side it has strayed."
+  tier="real_science"
+/>
 
 Which is exactly the machinery you would build if you wanted a self-correcting clock. A human clock runs a little slow, at 24.2 hours, and so drifts a little later every day; morning light arrives at precisely the phase where it produces an advance, hauling the clock back by the twelve minutes it lost. Every morning, forever. The organism is a clock that gains and a correction that cancels the gain, and the two together keep time better than either could alone.
 
@@ -101,6 +141,19 @@ You might assume the clock reads light through the eyes in the ordinary way — 
 Two details about that light meter matter here. The first is that it is tuned narrowly, peaking in the blue at around 480 nanometres, so the clock does not weigh all light equally — the *colour* of a light source, not just its brightness, determines how loudly it speaks to the clock. The second is that insects and plants solve the same problem with a different pigment, the **<GlossaryTerm slug="cryptochrome">cryptochromes</GlossaryTerm>**, also blue-sensitive, also wired to timing rather than sight. Blue light, arriving at a dedicated meter, is how life on Earth learns the hour.
 
 And the hormone everyone has heard of belongs in the same frame, correctly labelled. **<GlossaryTerm slug="melatonin">Melatonin</GlossaryTerm>** is routinely called a sleep hormone, and that is close enough to be misleading. It is a *darkness* signal: the body produces it at night and light suppresses it, so its concentration is a chemical report on how dark it currently is. It does not induce sleep so much as tell the rest of the body what the clock believes the time to be. Which means that anything bright enough to suppress melatonin is bright enough to interfere with the body's account of when night is — and the threshold for that is far lower than most people would guess.
+
+<DiagramFigure
+  src="/images/chapters/the-night-ecology/fig-08-the-retinas-second-wire.png"
+  alt="A cutaway from eye to brain separates the ordinary visual pathway to the rear cortex from sparse melanopsin retinal cells whose fibres end at the tiny paired master clock above the optic chiasm"
+  labels={[
+    { x: 16, y: 44, side: "left", label: "Image-forming retina", note: "Rods and cones send detailed visual information rearward" },
+    { x: 61, y: 47, side: "right", label: "Melanopsin pathway", note: "Sparse cells report blue-weighted light rather than an image" },
+    { x: 58, y: 76, side: "right", label: "Paired master clock", note: "The tiny clock above the optic chiasm sets daily timing" }
+  ]}
+  figNo="08"
+  caption="The retina houses two installations. Rods and cones send enough information rearward to build an image; sparse melanopsin cells send a far simpler report to the tiny master clock above the optic chiasm: how much blue-weighted light is arriving now. A body can lose image-forming vision and keep that second wire, remaining blind yet still able to set its day."
+  tier="real_science"
+/>
 
 That threshold is exactly the number we need to take to Pandora.
 
@@ -177,6 +230,20 @@ Read as a rota, it makes sense in a way the list alone never could. The night pr
 
 Earth has run this experiment for a very long time, and it left marks on us. There is a hypothesis, still argued over but with real evidence behind it, called the **<GlossaryTerm slug="nocturnal-bottleneck">nocturnal bottleneck</GlossaryTerm>**: that early mammals spent something over a hundred million years confined to the night shift, because the day shift was fully staffed by dinosaurs, and that this long exile is why mammals are built the way we are. The evidence is our own sensory legacy. Most mammals lost two of the four colour-detecting pigments their ancestors had, which is why a bird or a lizard sees a richer world of colour than nearly any mammal — colour is expensive and useless in the dark, so it was allowed to go. Meanwhile whiskers, hearing and smell were elaborated far past what a daylight animal would need. Human colour vision is a partial re-acquisition, a later patch on an animal built for the dark. The hypothesis has honest opposition — fossil eye sockets suggest some Mesozoic mammals were out in the daylight after all — but the sensory asymmetry it explains is not in dispute.
 
+<DiagramFigure
+  src="/images/chapters/the-night-ecology/fig-09-the-nocturnal-inheritance.png"
+  alt="An early mammal under dinosaur shadows and a modern fox share large ears, whiskers and scenting snouts, while a daylight lizard between them carries a richer set of colour receptors"
+  labels={[
+    { x: 18, y: 52, side: "left", label: "Early nocturnal mammal", note: "Large ears, whiskers and scenting replace a daylight-first sensory kit" },
+    { x: 50, y: 52, side: "right", label: "Daylight lizard", note: "The central comparison keeps a richer colour-receptor mosaic" },
+    { x: 82, y: 52, side: "right", label: "Modern mammal", note: "The nocturnal inheritance is still visible in the face" },
+    { x: 50, y: 87, side: "right", label: "Receptor comparison", note: "Mammal insets are blue-heavy while the daylight lizard retains more colour" }
+  ]}
+  figNo="09"
+  caption="If mammals spent their long apprenticeship under the night shift, they still wear the uniform. Whiskers, acute hearing and elaborate smell became generous investments; much of the ancestral colour system was allowed to go. The nocturnal-bottleneck hypothesis remains debated in its strictest form, but the sensory inheritance it is trying to explain is written plainly across modern mammal faces."
+  tier="real_science"
+/>
+
 And the process is still running, right now, on us. One of the more striking findings in recent mammal ecology is that animals worldwide are shifting their activity into the night to avoid human beings. Not fleeing to different places — there often aren't any — but to a different *time*, the one hour of the day we mostly vacate. Species that were happily active in daylight for their entire evolutionary history are becoming nocturnal within a few generations, because the day shift has become dangerous. Temporal partitioning is not a museum piece. It is an ongoing negotiation, and we are one of the parties.
 
 ## The 26-hour problem
@@ -194,6 +261,20 @@ So the outcome is not fatigue. It is not an adjustment period. An unassisted hum
 If that sounds like an exotic alien-planet problem, it is not, and this is the part of the chapter I would most want a reader to carry away. We have measured this exact failure, at home, at a far gentler setting.
 
 Mars has a day of 24.65 hours. The mismatch against a human clock is **thirty-nine minutes** — trivial, surely, less than the difference between a weekday and a weekend lie-in. And when NASA put mission-control teams on Mars time to operate the rovers, shifting their whole schedule forty minutes later each day, the teams were measurably damaged by it. Sleep loss accumulated. Vigilance degraded. More than half the personnel on Mars-time schedules suffered chronic fatigue and demonstrable desynchrony. Getting people to function on a 24.65-hour day required deliberate clinical intervention: high-intensity blue-enriched light delivered at precisely calculated times, and melatonin administered before scheduled sleep. It worked, but only as managed medicine, not as adaptation.
+
+<DiagramFigure
+  src="/images/chapters/the-night-ecology/fig-10-living-on-mars-time.png"
+  alt="An exhausted rover operator works in a dark Earth control room beside a bright blue therapy panel while ordinary daylight outside and a prepared melatonin dose reveal the managed Mars-time protocol"
+  labels={[
+    { x: 12, y: 39, side: "left", label: "Blue-enriched light", note: "Timed light is used as treatment to reset the drifting clock" },
+    { x: 29, y: 50, side: "left", label: "Sleep-deprived operator", note: "A longer workday erodes vigilance when the schedule drifts" },
+    { x: 80, y: 25, side: "right", label: "Earth daylight", note: "The outside world keeps running on the ordinary terrestrial clock" },
+    { x: 79, y: 82, side: "right", label: "Melatonin protocol", note: "A timed dose helps hold the managed Mars-time schedule together" }
+  ]}
+  figNo="10"
+  caption="Mars time was not a thought experiment. A day only thirty-nine minutes longer forced rover teams to walk their work around the Earth clock, losing sleep and vigilance as the schedule drifted. Precisely timed blue-enriched light and melatonin could hold them together, but as treatment. Pandora's extra one hundred and eight minutes asks almost three times as much from the same clock."
+  tier="real_science"
+/>
 
 Thirty-nine minutes needed a treatment protocol. Pandora asks for one hundred and eight.
 

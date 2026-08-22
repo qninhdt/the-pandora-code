@@ -1,0 +1,19 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "pandoras-ocean",
+  "role": "hero",
+  "narrative_purpose": "A quiet panoramic Eastern Sea supplies a dark atmospheric reading layer behind the chapter without competing with the text.",
+  "subject": "A remote chain of low alien reef islands and thin natural arches scattered across an immense ocean at deep twilight, with the nearest reef only a dark silhouette and faint living lights tracing the waterline. The open sea occupies most of the frame and fades into layered haze.",
+  "scene": "The Eastern Sea after sunset from an extremely high distant vantage, no characters and no close focal subject.",
+  "camera": "Ultra-wide panoramic aerial view, high horizon, islands small and widely separated, immense dark foreground water.",
+  "light": "Very low-contrast indigo twilight, faint cyan atmospheric band at the horizon, minimal teal bioluminescence and no bright sun or moon.",
+  "palette": "Void indigo and deep teal dominate almost entirely, with only faint cyan haze and tiny living-teal points.",
+  "style": "Painterly atmospheric macro vista with detail dissolving into haze, designed as a dark text background.",
+  "detail_level": "Soft distant silhouettes and broad tonal fields; no crisp foreground object and no busy surface texture.",
+  "composition": "Open dark water across the lower two-thirds, a few small islands near the horizon, generous low-detail space everywhere for readable overlay text.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "characters", "ships", "bright focal subject", "sun", "lens flare", "busy reef detail"],
+  "consistency_notes": "Match the chapter's marine palette but remain darker, wider and quieter than the cover. This is atmosphere, not an inline figure.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no logo, no characters, no bright sun, no central hero object, no high contrast, no detailed foreground, no photographic or CGI look",
+  "style_refs": ["pandora-establishing.png"]
+}

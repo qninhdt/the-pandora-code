@@ -1,0 +1,19 @@
+{
+  "id": "fig-07-the-dirty-airlock",
+  "chapter_slug": "pandoras-smallest-things",
+  "role": "comparison",
+  "narrative_purpose": "Expose Hell's Gate as a two-way contamination experiment: an exo-pack controls breathing gas while microbes and biological material can still travel on people, equipment, samples and waste.",
+  "subject": "A broad cutaway through a generic Hell's-Gate-like decontamination airlock with the sealed human base on the left and living Pandoran forest on the right. A suited field worker wearing a clear exo-pack crosses inward carrying a closed native soil-core case whose exterior is damp with forest residue. Beside the boots, tiny Earth-like microbial specks cling to tread grooves and equipment joints on the outward path; on the opposite side, faint native spores and organic films persist on the sample case and outer clothing entering the base. A service cart carrying sealed waste moves toward the forest-side door. The air seals are visible, but no full biological barrier encloses the traffic.",
+  "scene": "The threshold between an industrial human habitat and humid Pandoran forest after a rainy field excursion, treated as a sober planetary-protection inspection rather than an action scene.",
+  "camera": "Wide side-on architectural cutaway, base interior occupying the left third, the airlock centered, and roots, wet ground and foliage filling the right third.",
+  "light": "Cold clinical cyan inside the base, a narrow neutral-white airlock seam, living teal forest glow outside, restrained amber on contaminated boot treads and sample-case edges.",
+  "palette": "Void indigo structure and shadows, clinical cyan interior, living teal forest, muted steel grey equipment, sparse amber contamination accents.",
+  "style": "Painterly planetary-protection field plate with credible industrial surfaces and restrained microscopic overlays, not a hazard-poster infographic.",
+  "detail_level": "Crisp door seals, exo-pack, boot tread, sample case, service cart and the two distinct biological residues; deep base and forest backgrounds remain simplified.",
+  "composition": "The airlock is a porous center between two visibly different biospheres, with opposing traffic crossing in one coherent moment and clean negative space around each contamination route.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "biohazard symbol", "RDA branding", "weapons", "combat", "visible faces", "giant microbes"],
+  "consistency_notes": "The worker's exo-pack protects atmospheric respiration but must not look like a hermetic hazmat suit. Show contamination as plausible residue on surfaces, not a glowing plague or guaranteed infection.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no biohazard icon, no outbreak scene, no monster spores, no military battle, no photographic film still, no glossy CGI, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "fig-09-riding-the-updraft",
+  "chapter_slug": "why-banshees-get-to-be-big",
+  "role": "inline",
+  "narrative_purpose": "Shows the likely energy strategy at the chapter's honest edge: a giant flier can trade continuous muscular flapping for gravitational and atmospheric energy by circling in ridge lift beside a floating mountain.",
+  "subject": "A great leonopteryx with wings fully extended and motionless, banking in a broad circle beside the sun-warmed face of a floating mountain. A continuous column of translucent mist rises along the cliff, bends upward around the leading wing and continues above the animal; far below, a smaller banshee is actively flapping in still air, making the energetic contrast visible. The toruk's primary fin elements are open into a broad slotted soaring surface.",
+  "scene": "A deep Hallelujah Mountains valley at dawn, with one dark cliff face heating in the first light, waterfalls falling away and layered cloud decks far beneath the circling animal.",
+  "camera": "Very wide side view from across the valley, toruk and the complete rising-air column visible together.",
+  "light": "Cool cyan bioluminescent shadow dominates; a restrained amber dawn rim warms only the cliff face that generates the updraft and the toruk's upper wing.",
+  "palette": "Void indigo valley, teal-grey rock, cyan mist and water, small crimson toruk accents, sparse amber on the heated ridge.",
+  "style": "Painterly field observation of atmospheric ecology, quiet and spatial rather than an action poster.",
+  "detail_level": "Clear wing posture and rising mist near the subject; distant peaks and lower flier dissolve into atmospheric depth.",
+  "composition": "Mountain wall anchors the left third; rising mist sweeps upward through the middle; the motionless toruk occupies the upper right with open dark sky around it. The smaller flapping banshee remains low and subordinate.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "aircraft", "engines", "RDA technology", "battle", "watermark", "logos"],
+  "consistency_notes": "The toruk must be visibly soaring with wings held still, while the small distant banshee is the only animal mid-flap. The rising air must follow the sun-warmed cliff, not emerge magically from the animal.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no arrows, no magical beam, no storm tornado, no battle scene, no aircraft, no film poster, no photographic or CGI look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/why-banshees-get-to-be-big/fig-01-toruk-launch.webp"]
+}

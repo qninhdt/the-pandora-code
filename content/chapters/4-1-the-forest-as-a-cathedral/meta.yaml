@@ -91,6 +91,12 @@ figures:
   - id: fig-06-hometree-vs-redwood
     role: comparison
     asset_status: ready
+  - id: fig-07-cavitation-break
+    role: diagram
+    asset_status: ready
+  - id: fig-08-carbon-rich-stomata
+    role: comparison
+    asset_status: ready
 sources:
   - kind: canon
     label: Hometree - James Cameron's Avatar Wiki

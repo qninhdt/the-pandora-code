@@ -1,0 +1,25 @@
+id: network-based-diffusion-analysis
+label:
+  vi: Phân tích khuếch tán dựa trên mạng
+  en: Network-based diffusion analysis
+definition:
+  vi: >-
+    Phương pháp thống kê kiểm tra xem một hành vi mới có lan theo mạng quan hệ xã hội đã đo được
+    hay không. Nếu những cá thể giao du gần với kẻ đã biết hành vi liên tục tiếp thu sớm hơn những
+    cá thể ít liên hệ, mô hình truyền đạt xã hội sẽ khớp thứ tự quan sát tốt hơn mô hình học độc lập.
+    Phương pháp này không đọc được tâm trí; nó so sánh những dự đoán có thể bị dữ liệu bác bỏ.
+  en: >-
+    A statistical method that tests whether a novel behavior spreads along a measured social
+    network. If close associates of knowledgeable individuals consistently acquire it earlier than
+    weakly connected animals, a social-transmission model should fit the observed order better than
+    independent learning. The method does not read minds; it compares predictions that data can
+    reject.
+see_also:
+  - social-learning
+  - animal-culture
+category: concept
+tags:
+  - collective-behavior
+  - network-science
+  - philosophy-of-science
+cover_prompt: A painterly constellation of whale-like silhouettes linked by faint social paths, one cyan behavior signal spreading along the strongest connections while distant animals remain dark, no text or labels.

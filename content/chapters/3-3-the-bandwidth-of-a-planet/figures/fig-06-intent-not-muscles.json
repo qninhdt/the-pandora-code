@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-intent-not-muscles",
+  "chapter_slug": "the-bandwidth-of-a-planet",
+  "role": "diagram",
+  "narrative_purpose": "Shows why the everyday animal bond is cheap enough to work: the rider sends one narrow high-level intention, while the banshee's own nervous system expands it locally into thousands of coordinated wing-muscle commands.",
+  "subject": "A Na'vi rider bonded to a flying banshee in profile. Between the rider's queue and the animal's neural antenna runs one single thin luminous pulse. Inside the banshee, revealed in a transparent anatomical cutaway, that one pulse reaches a compact neural hub and fans outward into hundreds of fine branching paths distributed through both wings, chest, tail, and flight muscles; the enormous branching happens entirely inside the animal after the narrow link.",
+  "scene": "A dark open-sky flight study combining the external bond with a clear internal cutaway of the mount's nervous and muscular branching.",
+  "camera": "Broad side profile of rider and airborne animal, close enough to see the thin join and the internal fan of signals.",
+  "light": "A bright but very narrow cyan thread marks the tsaheylu command; a much broader living-teal fan illuminates the animal's internal control paths.",
+  "palette": "Cool night tones with cyan on the compact transmitted intent and teal across the locally expanded muscle-control web.",
+  "style": "Painterly speculative-anatomy naturalist plate, one organism observed in motion with a restrained cutaway.",
+  "detail_level": "Crisp at the queue join and neural hub, finely branched through the wings; the open sky remains soft and empty.",
+  "composition": "Rider and bond occupy the upper-left, the banshee spans the frame, and the internal branching fan opens across the right two-thirds with dark sky around it.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "reins", "mechanical wires", "Earth bird anatomy"],
+  "consistency_notes": "The transmitted path must remain one thin line until it reaches the banshee; only then may it explode into many local branches. Keep a plausible Pandoran flying body plan.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no labels, no arrows, no reins, no cybernetic hardware, no Earth eagle, no photographic or 3D-render look, no neon UI, no gore",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

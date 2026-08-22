@@ -1,0 +1,20 @@
+{
+  "id": "fig-08-brake-becomes-accelerator",
+  "chapter_slug": "a-real-living-planet",
+  "role": "comparison",
+  "narrative_purpose": "Shows the dangerous edge of planetary homeostasis: below a threshold, feedback pushes a disturbance back toward the old state; beyond it, the same coupled planet amplifies change and settles into a new harsher state.",
+  "subject": "A two-panel view of the same polar coast and permafrost plain under warming. Left panel: a modest melt exposes a narrow strip of dark water, but a broad bright ice field remains, clouds shade the surface, vegetation persists, and the landscape is still mostly reflective and cool. Right panel: the bright ice has retreated beyond a visible narrow ridge, a wide dark ocean absorbs light, thawed ground releases many pale gas bubbles and slumps into wet hollows, sparse vegetation is dying, and the newly dark surfaces make the scene visibly hotter and dimmer; the changed state reinforces itself.",
+  "scene": "One planetary boundary shown on either side of a tipping threshold, using literal ice, ocean, thawing ground, and cloud changes.",
+  "camera": "Matched high oblique landscape panels with identical coastline, ridge, and horizon.",
+  "light": "Left panel reflects cool pale light from broad ice and cloud; right panel absorbs light into dark water and ground, with sparse amber heat haze as a controlled warning accent.",
+  "palette": "Cool cyan, mist, and teal dominate both panels; the post-threshold side uses much more void-dark ocean and only a scarce amber heat accent.",
+  "style": "Painterly climate-system naturalist comparison, physical landscapes rather than a data chart.",
+  "detail_level": "Crisp on the shared ridge, ice edge, thaw bubbles, and vegetation state; atmosphere softens toward the horizon.",
+  "composition": "Equal matched panels separated by a narrow dark gutter, the same ridge serving as the visual threshold, with clear negative space above both coasts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "temperature gauges", "factories", "polar bears"],
+  "consistency_notes": "Both panels must be unmistakably the same place. The right side is not random destruction; dark exposed surfaces and thawed gases are visibly feeding further warming.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no labels, no arrows, no graph, no thermometer, no factory smokestacks, no polar-bear cliché, no photographic or 3D-render look, no dominant orange",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

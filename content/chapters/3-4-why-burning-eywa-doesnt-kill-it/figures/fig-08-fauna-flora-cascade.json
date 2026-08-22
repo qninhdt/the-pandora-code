@@ -1,0 +1,20 @@
+{
+  "id": "fig-08-fauna-flora-cascade",
+  "chapter_slug": "why-burning-eywa-doesnt-kill-it",
+  "role": "diagram",
+  "narrative_purpose": "Turns interdependent-network failure into an ecological sequence: remove animals without touching the forest, then watch pollination and seed dispersal fail, young plants vanish, and the remaining fauna lose food in return.",
+  "subject": "A three-stage naturalist triptych of the same Pandoran forest clearing. First stage: abundant flying pollinators, woodsprites, grazers, and fruit-eating animals move among flowering and fruiting plants. Second stage: the mature vegetation still stands but the animals are absent; flowers remain unvisited, fruit drops and rots beneath parent plants, and no seeds travel into open ground. Third stage: the canopy is thinning, young plants are missing, flowers and fruit are scarce, and the few surviving animals are gaunt and leaving; both plant and animal bioluminescence has dimmed.",
+  "scene": "One unchanged clearing followed through a coupled ecological collapse that begins with fauna loss rather than fire.",
+  "camera": "Three matched eye-level landscape panels with the same trunks and rocks anchoring each time step.",
+  "light": "First panel richly self-lit by living organisms, second panel dimmer despite intact trees, third panel cold and sparse with wide dark gaps.",
+  "palette": "Cool cyan-teal life fading stage by stage; no broad warm fire because no tree is directly attacked.",
+  "style": "Painterly speculative-ecology naturalist sequence, the same place observed over time.",
+  "detail_level": "Crisp recurring landmarks and organisms so disappearances are obvious; backgrounds consistent across all stages.",
+  "composition": "Three equal panels left to right, identical horizon and key trunks, open dark strips at the top and bottom for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "fire", "logging", "human attackers", "gore"],
+  "consistency_notes": "No trees are directly burned or cut. The visible collapse must proceed from animal absence to failed plant recruitment and then back to animal starvation.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no labels, no arrows, no fire, no chainsaws, no humans, no gore, no photographic or 3D-render look, no different locations between panels",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

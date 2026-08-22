@@ -1,0 +1,20 @@
+{
+  "id": "fig-09-the-debt-still-alive",
+  "chapter_slug": "hometree-as-keystone",
+  "role": "diagram",
+  "narrative_purpose": "Shows extinction debt at the misleading moment after habitat loss: adult specialists remain alive around the scar, but their unique breeding sites are gone and no young replace them.",
+  "subject": "A burned giant-tree clearing surrounded by surviving forest, viewed across three seasonal states. Immediately after disturbance, several adult hollow-dependent birds and canopy-soil invertebrates remain alive on neighbouring branches while searching the empty scar. In the next state, the same ageing adults crowd the last unsuitable perch beside a shattered cavity section, with abandoned unhatched eggs and no canopy-soil mat. In the final state, the perch is empty and only generalist species cross the regrown scrub. The number of adult specialists declines without any mass-death scene.",
+  "scene": "The edge of the Hometree burn scar rendered as a restrained ecological time study, with the same stump, branch and horizon anchoring every state.",
+  "camera": "Matched wide side views compressed into one continuous panorama from recent ash to later scrub.",
+  "light": "Cool indigo aftermath shifts gradually toward living teal regrowth; a sparse amber accent stays on the last surviving adult and disappears in the final state.",
+  "palette": "Indigo ash and shadow, teal regrowth, cyan remnant fungi, one diminishing amber specialist accent.",
+  "style": "Painterly disturbance-ecology plate focused on absence and demographic lag rather than spectacle.",
+  "detail_level": "Crisp surviving adults, destroyed nesting cavity, missing canopy-soil substrate and later empty perch; background remains atmospheric.",
+  "composition": "Three time states read left to right using the same central stump and perch. Keep dark space near the surviving adult, failed breeding site and final empty perch for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "piles of dead animals", "RDA soldiers", "battle", "watermark", "logos"],
+  "consistency_notes": "The teaching point is delayed demographic collapse: adults survive the initial event but reproduction fails because obligate structures are missing. Do not show immediate mass mortality.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no arrows, no mass grave, no dramatic battle, no instant extinction, no chart, no photo or CGI look",
+  "style_refs": [],
+  "character_refs": ["apps/web/public/images/chapters/hometree-as-keystone/fig-01-the-felling.webp"]
+}

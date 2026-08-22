@@ -6,21 +6,40 @@ title:
   vi: Sáu chi và khuôn mẫu đối xứng hai bên
   en: Six limbs and the bilateral lattice
 subtitle:
-  vi: 'Tại sao gần như mọi loài vật trên Pandora đều khoác lên mình cùng một bản thiết kế: sáu chi, bốn mắt, queue theo cặp - và tại sao chỉ duy nhất người Na''vi dám phá vỡ quy luật đó: sơ đồ cơ thể, Hox gene, và bộ công cụ di truyền nhào nặn nên một thế giới.'
-  en: 'Why almost every Pandoran animal wears the same six-limbed, four-eyed, paired-queue blueprint - and why the Na''vi alone break it: body plans, Hox genes, and the genetic toolkit that builds a world'
+  vi: >-
+    Tại sao gần như mọi loài vật trên Pandora đều khoác lên mình cùng một bản thiết kế: sáu chi, bốn
+    mắt, queue theo cặp - và tại sao chỉ duy nhất người Na'vi dám phá vỡ quy luật đó: sơ đồ cơ thể,
+    Hox gene, và bộ công cụ di truyền nhào nặn nên một thế giới.
+  en: >-
+    Why almost every Pandoran animal wears the same six-limbed, four-eyed, paired-queue blueprint -
+    and why the Na'vi alone break it: body plans, Hox genes, and the genetic toolkit that builds a
+    world
 hook:
-  vi: 'Xếp bộ xương của một con thanator, một con banshee và một con tulkun nằm cạnh nhau, bạn sẽ thấy một bản thiết kế cứ lặp đi lặp lại không ngừng - sáu chi, bốn mắt, một cặp queue đâm chồi từ hai bên thái dương. Và rồi người Na''vi cao ba mét bước tới, đập tan bản thiết kế ấy thành từng mảnh - bốn chi, hai mắt, một chiếc queue duy nhất. Trọn vẹn chương này là để giải đáp cho câu hỏi: vì sao một hành tinh lại đúc gần như toàn bộ sự sống của mình từ một chiếc khuôn duy nhất, và vì sao giống loài thông tuệ nhất lại là kẻ ngoại lệ lẻ loi - một bí ẩn mà trớ trêu thay, ngành sinh học tiến hóa của chính Trái Đất đã nắm sẵn trong tay lời giải.'
-  en: Lay the skeletons of a thanator, a banshee, and a tulkun side by side and you see one blueprint repeating - six limbs, four eyes, a pair of queues sprouting at the temples. Then comes the ten-foot Na'vi, and the blueprint shatters - four limbs, two eyes, a single queue. The whole of this chapter is the question of why a planet would cast nearly all its life from one mould, and why its cleverest species is the lone exception - a mystery that Earth's own evolutionary biology, it turns out, already knows how to solve.
+  vi: >-
+    Xếp bộ xương của một con thanator, một con banshee và một con tulkun nằm cạnh nhau, bạn sẽ thấy
+    một bản thiết kế cứ lặp đi lặp lại không ngừng - sáu chi, bốn mắt, một cặp queue đâm chồi từ hai
+    bên thái dương. Và rồi người Na'vi cao ba mét bước tới, đập tan bản thiết kế ấy thành từng mảnh
+    - bốn chi, hai mắt, một chiếc queue duy nhất. Trọn vẹn chương này là để giải đáp cho câu hỏi: vì
+    sao một hành tinh lại đúc gần như toàn bộ sự sống của mình từ một chiếc khuôn duy nhất, và vì
+    sao giống loài thông tuệ nhất lại là kẻ ngoại lệ lẻ loi - một bí ẩn mà trớ trêu thay, ngành sinh
+    học tiến hóa của chính Trái Đất đã nắm sẵn trong tay lời giải.
+  en: >-
+    Lay the skeletons of a thanator, a banshee, and a tulkun side by side and you see one blueprint
+    repeating - six limbs, four eyes, a pair of queues sprouting at the temples. Then comes the
+    ten-foot Na'vi, and the blueprint shatters - four limbs, two eyes, a single queue. The whole of
+    this chapter is the question of why a planet would cast nearly all its life from one mould, and
+    why its cleverest species is the lone exception - a mystery that Earth's own evolutionary
+    biology, it turns out, already knows how to solve.
 authors:
-- bardabez
+  - bardabez
 reading_time_min: 25
 tags:
-- evo-devo
-- body-plan
-- hox-genes
-- convergent-evolution
-- limb-development
-- genetic-toolkit
+  - evo-devo
+  - body-plan
+  - hox-genes
+  - convergent-evolution
+  - limb-development
+  - genetic-toolkit
 classification:
   canon_pct: 22
   inference_pct: 16
@@ -31,75 +50,83 @@ related_chapters:
   - pandoras-deep-time
   - pandoran-tree-of-life
 glossary_terms:
-- body-plan
-- bilateral-symmetry
-- synapomorphy
-- hox-genes
-- homeobox
-- serial-homology
-- homeosis
-- genetic-toolkit
-- deep-homology
-- cis-regulatory-element
-- canalization
-- pleiotropy
-- convergent-evolution
-- cambrian-explosion
-- prolemuris
-- operculum
-- queue
+  - body-plan
+  - bilateral-symmetry
+  - synapomorphy
+  - hox-genes
+  - homeobox
+  - serial-homology
+  - homeosis
+  - genetic-toolkit
+  - deep-homology
+  - cis-regulatory-element
+  - canalization
+  - pleiotropy
+  - convergent-evolution
+  - cambrian-explosion
+  - prolemuris
+  - operculum
+  - queue
 figures:
-- id: fig-00-cover
-  role: hero
-  asset_status: ready
-- id: fig-01-skeleton-array
-  role: hero
-  asset_status: ready
-- id: fig-02-lattice-lineup
-  role: inline
-  asset_status: ready
-- id: fig-03-hox-address
-  role: diagram
-  asset_status: ready
-- id: fig-04-prolemuris-arm
-  role: inline
-  asset_status: ready
-- id: fig-05-navi-vs-hexapod
-  role: comparison
-  asset_status: ready
-- id: fig-99-background
-  role: inline
-  asset_status: ready
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-skeleton-array
+    role: hero
+    asset_status: ready
+  - id: fig-02-lattice-lineup
+    role: inline
+    asset_status: ready
+  - id: fig-03-hox-address
+    role: diagram
+    asset_status: ready
+  - id: fig-04-prolemuris-arm
+    role: inline
+    asset_status: ready
+  - id: fig-05-navi-vs-hexapod
+    role: comparison
+    asset_status: ready
+  - id: fig-06-pax6-foreign-switch
+    role: comparison
+    asset_status: ready
+  - id: fig-07-snake-limb-switch-off
+    role: comparison
+    asset_status: ready
+  - id: fig-99-background
+    role: inline
+    asset_status: ready
 sources:
-- kind: canon
-  label: Pandoran Fauna - James Cameron's Avatar Wiki
-  url: https://james-camerons-avatar.fandom.com/wiki/Pandoran_Fauna
-- kind: canon
-  label: Na'vi - James Cameron's Avatar Wiki
-  url: https://james-camerons-avatar.fandom.com/wiki/Na%27vi
-- kind: canon
-  label: Operculum - James Cameron's Avatar Wiki
-  url: https://james-camerons-avatar.fandom.com/wiki/Operculum
-- kind: canon
-  label: Prolemuris - James Cameron's Avatar Wiki
-  url: https://james-camerons-avatar.fandom.com/wiki/Prolemuris
-- kind: science
-  label: Carroll, Endless Forms Most Beautiful (Evo-Devo, the genetic toolkit)
-  url: https://en.wikipedia.org/wiki/Endless_Forms_Most_Beautiful_(book)
-- kind: science
-  label: Hox genes and limb musculoskeletal development (PMC)
-  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4216602/
-- kind: science
-  label: Loss and re-emergence of legs in snakes by modular evolution of Shh/HOXD enhancers (PubMed)
-  url: https://pubmed.ncbi.nlm.nih.gov/27773569/
-- kind: science
-  label: Hox genes regulate the onset of Tbx5 expression in the forelimb (PMC)
-  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3413163/
-- kind: science
-  label: Gehring - master control genes and the evolution of the eye (Pax6)
-  url: https://www.balzan.org/en/prizewinners/walter-gehring
-- kind: science
-  label: Developmental functions of the Distal-less/Dlx homeobox genes (PubMed)
-  url: https://pubmed.ncbi.nlm.nih.gov/12223397/
-- kind: research-note
-  label: Comparative Xenobiology and Evolutionary Ontogeny - the Pandoran hexapodal Bauplan (chapter research note)
+  - kind: canon
+    label: Pandoran Fauna - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Pandoran_Fauna
+  - kind: canon
+    label: Na'vi - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Na%27vi
+  - kind: canon
+    label: Operculum - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Operculum
+  - kind: canon
+    label: Prolemuris - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Prolemuris
+  - kind: science
+    label: Carroll, Endless Forms Most Beautiful (Evo-Devo, the genetic toolkit)
+    url: https://en.wikipedia.org/wiki/Endless_Forms_Most_Beautiful_(book)
+  - kind: science
+    label: Hox genes and limb musculoskeletal development (PMC)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4216602/
+  - kind: science
+    label: Loss and re-emergence of legs in snakes by modular evolution of Shh/HOXD enhancers (PubMed)
+    url: https://pubmed.ncbi.nlm.nih.gov/27773569/
+  - kind: science
+    label: Hox genes regulate the onset of Tbx5 expression in the forelimb (PMC)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3413163/
+  - kind: science
+    label: Gehring - master control genes and the evolution of the eye (Pax6)
+    url: https://www.balzan.org/en/prizewinners/walter-gehring
+  - kind: science
+    label: Developmental functions of the Distal-less/Dlx homeobox genes (PubMed)
+    url: https://pubmed.ncbi.nlm.nih.gov/12223397/
+  - kind: research-note
+    label: >-
+      Comparative Xenobiology and Evolutionary Ontogeny - the Pandoran hexapodal Bauplan (chapter
+      research note)

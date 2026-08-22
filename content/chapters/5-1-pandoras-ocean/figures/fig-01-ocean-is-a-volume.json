@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-ocean-is-a-volume",
+  "chapter_slug": "pandoras-ocean",
+  "role": "hero",
+  "narrative_purpose": "A label-ready spatial cutaway turns the Eastern Sea from a flat horizon into connected lagoon, reef, slope, water-column and deep habitats.",
+  "subject": "A single continuous side cutaway through an alien ocean island: a shallow sheltered lagoon with arching root-like marine plants at far right, a low living reef crest breaking waves, a steep outer reef wall descending leftward, and a vast open water column grading into darkness. One small blue-skinned diver crosses the upper slope. Sparse fish occupy the surface, while faint marine particles appear below.",
+  "scene": "An idealized naturalist transect across an Awa'atlu-like atoll and the adjacent Eastern Sea, with the water shown transparent enough to read the underwater relief.",
+  "camera": "Wide straight-on sectional landscape, horizon high in frame, lagoon at right and deep sea at left, with no exploded panels.",
+  "light": "Cyan daylight illuminates the lagoon and reef crest, angled shafts weaken across the slope, and deep water shifts to indigo with subtle teal life glows.",
+  "palette": "Cyan and living teal in the upper reef, muted stone substrate, ocean-teal middle water and void-indigo depth with minimal magenta accents.",
+  "style": "Painterly naturalist field plate with credible spatial continuity, not a vector diagram.",
+  "detail_level": "Clear reef crest, lagoon roots, outer slope and depth transition; simple open water and dark margins reserved for interface labels.",
+  "composition": "Four legible zones arranged right to left and top to bottom: lagoon, reef rim, descending wall and deep reservoir. Keep open dark space beside each zone for later callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "separate panels", "bathymetric grid", "film actors"],
+  "consistency_notes": "Match the atoll, diver and marine palette established by fig-00-cover. Maintain one continuous ocean rather than a collage.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no labels, no arrows, no map symbols, no infographic chrome, no photographic or 3D-render look, no split-screen collage",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-ocean/fig-00-cover.png"]
+}

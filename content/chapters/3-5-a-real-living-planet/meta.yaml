@@ -16,14 +16,14 @@ subtitle:
 hook:
   vi: >-
     Suốt cả Phần III, ta đã mổ xẻ từng cơ phận của Eywa: trí tuệ phân tán, mạng nấm rễ, băng thông,
-    sức bền của mạng lưới. Giờ là lúc lắp chúng lại thành một câu hỏi duy nhất, lớn nhất — Pandora là
-    một hành tinh *có* sự sống, hay một hành tinh *là* một cơ thể sống? Trái Đất đã chạm tới câu hỏi
-    ấy trước, dưới một cái tên gây tranh cãi suốt nửa thế kỷ: Giả thuyết Gaia.
+    sức bền của mạng lưới. Giờ là lúc lắp chúng lại thành một câu hỏi duy nhất, lớn nhất — Pandora
+    là một hành tinh *có* sự sống, hay một hành tinh *là* một cơ thể sống? Trái Đất đã chạm tới câu
+    hỏi ấy trước, dưới một cái tên gây tranh cãi suốt nửa thế kỷ: Giả thuyết Gaia.
   en: >-
     All through Part III we have dissected Eywa part by part: distributed cognition, the fungal web,
-    bandwidth, the resilience of the mesh. Now we assemble them into a single, largest question —
-    is Pandora a planet *with* life, or a planet that *is* a living thing? Earth reached that
-    question first, under a name that has been fought over for half a century: the Gaia hypothesis.
+    bandwidth, the resilience of the mesh. Now we assemble them into a single, largest question — is
+    Pandora a planet *with* life, or a planet that *is* a living thing? Earth reached that question
+    first, under a name that has been fought over for half a century: the Gaia hypothesis.
 authors:
   - bardabez
 reading_time_min: 30
@@ -85,6 +85,12 @@ figures:
   - id: fig-06-earth-vs-pandora-regulation
     role: comparison
     asset_status: ready
+  - id: fig-07-song-not-singer
+    role: diagram
+    asset_status: ready
+  - id: fig-08-brake-becomes-accelerator
+    role: comparison
+    asset_status: ready
   - id: fig-99-background
     role: hero
     asset_status: ready
@@ -105,7 +111,9 @@ sources:
     label: Lovelock & Margulis - Atmospheric homeostasis by and for the biosphere (Tellus, 1974)
     url: https://onlinelibrary.wiley.com/doi/10.1111/j.2153-3490.1974.tb01946.x
   - kind: science
-    label: Watson & Lovelock - Biological homeostasis of the global environment (Daisyworld, Tellus, 1983)
+    label: >-
+      Watson & Lovelock - Biological homeostasis of the global environment (Daisyworld, Tellus,
+      1983)
     url: https://onlinelibrary.wiley.com/doi/10.3402/tellusb.v35i4.14616
   - kind: science
     label: >-
@@ -122,10 +130,10 @@ sources:
     url: https://www.nature.com/articles/461472a
   - kind: science
     label: >-
-      Doolittle - Is it the song, not the singer? A hierarchical reframing of selection (ITSNTS, PNAS,
-      2018)
+      Doolittle - Is it the song, not the singer? A hierarchical reframing of selection (ITSNTS,
+      PNAS, 2018)
     url: https://www.pnas.org/doi/10.1073/pnas.1722232115
   - kind: research-note
     label: >-
-      Comparative Astro-Physiology - Pandora's Bioneurological Biosphere through Earth System Science
-      and the Gaia Hypothesis (chapter research note)
+      Comparative Astro-Physiology - Pandora's Bioneurological Biosphere through Earth System
+      Science and the Gaia Hypothesis (chapter research note)

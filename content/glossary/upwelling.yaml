@@ -1,0 +1,17 @@
+id: upwelling
+label:
+  vi: Hiện tượng nước trồi
+  en: Upwelling
+definition:
+  vi: Quá trình nước dưới sâu dâng lên thay thế nước mặt bị đẩy đi. Dòng nước trồi thường lạnh và giàu dưỡng chất được tái sinh, vì vậy có thể tiếp nhiên liệu cho sinh vật phù du và cả một lưới thức ăn khi đi vào tầng có ánh sáng.
+  en: The rise of deeper water to replace surface water that has moved away. Upwelled water is often cold and rich in regenerated nutrients, so it can fuel plankton and an entire food web when it reaches the sunlit layer.
+see_also:
+  - ekman-transport
+  - pycnocline
+  - island-mass-effect
+category: concept
+tags:
+  - oceanography
+  - earth-systems
+  - ecology
+cover_prompt: A painterly coastal ocean cutaway where a broad cold teal current rises from dark deep water along a steep shore into a luminous surface bloom, no text, no labels, no arrows, no numbers.

@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-two-sun-decades",
+  "chapter_slug": "time-on-pandora",
+  "role": "comparison",
+  "narrative_purpose": "Makes the slowest clock in the chapter visible: over one Na'vi lifetime, Alpha Centauri B changes the character of Pandora's nights from orange-shadowed brightness to deep darkness.",
+  "subject": "A split view of the exact same Pandoran forest clearing and the exact same ancient forked tree seen many decades apart. In the left half, one intense orange-white star burns high in the night and casts long crisp amber-edged shadows from the tree, while the bioluminescent plants remain visible. In the right half, the companion star is absent from the night hemisphere; the same tree and rocks are lit only by cyan-teal bioluminescence under a much darker star field. Polyphemus hangs in the same fixed position in both halves.",
+  "scene": "Two moments in the eighty-year binary cycle, identical geography and viewing direction, separated only by the companion star's position and resulting night brightness.",
+  "camera": "Locked wide eye-level landscape repeated side by side, like two naturalist observations from the same tripod position.",
+  "light": "Left: strong directional orange-white starlight plus cool living underglow. Right: cool bioluminescent underglow only, with deep ambient shadow.",
+  "palette": "Global cool night palette across both halves; restrained amber starlight and cast-shadow rims confined to the left half.",
+  "style": "Painterly longitudinal field-observation plate, atmospheric and naturalistic rather than infographic-like.",
+  "detail_level": "High detail on the repeated tree, rocks and shadows so the two halves clearly depict the same place; backgrounds soften into haze.",
+  "composition": "Two equal halves with matching horizon and fixed planet position; left visibly bright and shadow-casting, right dark and bioluminescent.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "clock faces", "different landscapes", "different trees", "people", "watermark", "sunrise"],
+  "consistency_notes": "Both halves must be the same clearing and same Polyphemus. The only causal change is the brilliant companion star and its directional orange shadows on the left.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no seasonal foliage change, no day-night split, no different camera angles, no lens flare, no photographic or 3D-render look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"]
+}

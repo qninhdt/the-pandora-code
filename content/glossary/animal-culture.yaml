@@ -1,0 +1,26 @@
+id: animal-culture
+label:
+  vi: Văn hóa ở động vật
+  en: Animal culture
+definition:
+  vi: >-
+    Thông tin hoặc hành vi đặc trưng của một nhóm được tiếp thu qua học hỏi xã hội và duy trì đủ
+    lâu để vượt khỏi cá thể đã sáng tạo ra nó. Một tập tính khác nhau giữa hai quần thể chưa tự
+    động là văn hóa: gene, môi trường hoặc việc mỗi cá thể tự khám phá vẫn có thể tạo ra cùng khuôn
+    mẫu. Bằng chứng mạnh nhất xuất hiện khi những lời giải ấy suy yếu, còn quan hệ xã hội lại dự
+    đoán đúng ai sẽ học hành vi tiếp theo.
+  en: >-
+    Information or behavior characteristic of a group that is acquired through social learning
+    and persists beyond the individual that first invented it. A difference between populations is
+    not automatically culture: genes, habitat, or repeated individual discovery can draw the same
+    pattern. The strongest evidence appears when those alternatives weaken while social relationships
+    correctly predict who acquires the behavior next.
+see_also:
+  - social-learning
+  - network-based-diffusion-analysis
+category: culture
+tags:
+  - collective-behavior
+  - evolution
+  - consciousness
+cover_prompt: A painterly pod of whale-like silhouettes passing one distinctive glowing movement pattern from an elder to two younger animals across dark ocean water, cool teal and cyan light, no text or labels.

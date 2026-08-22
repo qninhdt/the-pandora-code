@@ -1,0 +1,19 @@
+{
+  "id": "fig-05-two-inheritances",
+  "chapter_slug": "tulkun-not-quite-whales",
+  "role": "diagram",
+  "narrative_purpose": "The figure gives the chapter's central idea one visual sentence: a calf receives a body through genetic inheritance and a repertoire through social inheritance, with both streams converging on the same life.",
+  "subject": "A young anatomically correct killer whale centered in open water. On the left, its mother swims close beside it, with a restrained translucent DNA double-helix motif and faint matching anatomical contours linking mother and calf. On the right, an older female leads ahead while two family members follow; patterned call pulses and a subtle trail through the water pass from elder through the group toward the calf. The genetic stream shapes the calf's body silhouette; the cultural stream supplies a route, social companions and learned acoustic pattern. No text, arrows, symbols or UI.",
+  "scene": "A spacious cold-ocean water column with a soft surface glow, no seabed clutter and ample dark negative space around the two converging sides.",
+  "camera": "Straight-on wide naturalist diagram, calf at the compositional center, mother to the left and experienced social group curving in from the right.",
+  "light": "Cool cyan light defines shared anatomy on the left; teal acoustic ripples and route particles define social transmission on the right; one restrained amber rim gathers on the calf where both streams meet.",
+  "palette": "Void indigo water, charcoal and white killer whales, cyan genetic motif, teal cultural motif and a very sparse amber convergence accent.",
+  "style": "Painterly evolutionary-biology plate with diagrammatic clarity and natural animal posture, not a corporate infographic.",
+  "detail_level": "Crisp calf, mother, elder and the distinct motifs; distant relatives and water soften into layered haze with annotation-ready margins.",
+  "composition": "Two visually different inheritance streams converge symmetrically on the calf without literal arrows: matched body contours from the left, learned calls and a followed route from the right.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "chromosome labels", "family-tree icons", "humans", "boats", "harpoons", "Pandoran creatures"],
+  "consistency_notes": "Use anatomically accurate Earth killer whales. The DNA motif is a subtle scientific layer, not a giant decorative logo. The cultural side must read through social following and learned sound rather than mystical telepathy.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no infographic boxes, no human faces, no anthropomorphic expressions, no photographic or 3D-render look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

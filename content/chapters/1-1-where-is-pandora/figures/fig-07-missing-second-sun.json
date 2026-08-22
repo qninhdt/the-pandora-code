@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-missing-second-sun",
+  "chapter_slug": "where-is-pandora",
+  "role": "inline",
+  "narrative_purpose": "Shows the chapter's most important missing sky-object: Alpha Centauri B should make many Pandoran nights bright enough to cast orange shadows, even when the primary sun is hidden.",
+  "subject": "A night clearing on Pandora with the enormous dark banded disc of Polyphemus fixed high at the left, its near face almost unlit. On the opposite side of the sky burns one intense orange-white star, much brighter than every other star but still a point rather than a sun disc. Its light throws long sharp orange-edged shadows from alien tree trunks across the glowing forest floor. The forest's own cyan bioluminescence remains visible beneath the warm cast.",
+  "scene": "A supposedly dark Pandoran night during the bright part of the binary star's eighty-year cycle, with no daylight horizon and no eclipse flare.",
+  "camera": "Wide ground-level night landscape, fixed gas giant and brilliant companion star sharing the upper frame, shadowed clearing below.",
+  "light": "Two readable night sources: cyan-teal bioluminescence from below and a strong directional orange-white point source from Alpha Centauri B casting real shadows.",
+  "palette": "Dominant global indigo, teal and cyan night palette, with a tightly controlled orange-white star and thin amber edges on the cast shadows.",
+  "style": "Painterly naturalist night-sky plate, atmospheric and observed, not a film still.",
+  "detail_level": "Crisp near trunks and cast shadows; Polyphemus and distant canopy softened by night haze; star a compact bright point without flare.",
+  "composition": "Polyphemus upper-left, bright star upper-right, a diagonal fan of orange-edged shadows crossing the lower third; dark negative space between the two sky objects.",
+  "exclude": ["text", "letters", "numbers", "labels", "multiple bright stars", "daylight", "sun disc", "lens flare", "spacecraft", "people", "watermark"],
+  "consistency_notes": "Polyphemus must match the chapter cover's cream-rust-grey bands but appear mostly in shadow. Alpha Centauri B is a single brilliant orange-white point that casts shadows, not a large nearby sun.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no two-sun disc cliché, no sunrise, no lens flare, no extra moons as bright points, no photographic or 3D-render look, no oversaturated orange wash",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/where-is-pandora/fig-00-cover.png"]
+}

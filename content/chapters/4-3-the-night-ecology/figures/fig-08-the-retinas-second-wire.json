@@ -1,0 +1,20 @@
+{
+  "id": "fig-08-the-retinas-second-wire",
+  "chapter_slug": "the-night-ecology",
+  "role": "diagram",
+  "narrative_purpose": "Separates seeing from timekeeping anatomically: rods and cones feed image-forming pathways while melanopsin ganglion cells send a dedicated brightness report to the suprachiasmatic nucleus.",
+  "subject": "A clean anatomical cutaway from one mammalian eye into the brain. Most incoming light falls on dense layers of rods and cones whose bundled optic fibres continue toward a softly rendered visual cortex at the rear. Scattered among the retinal ganglion layer are a few larger branching melanopsin cells glowing cyan; their thin distinct fibre bundle peels away at the optic chiasm and ends at two tiny paired nuclei directly above it in the hypothalamus. The visual and clock pathways remain physically separate after leaving the same retina.",
+  "scene": "The head is reduced to a translucent naturalist anatomical profile suspended in darkness, with only eye, optic routes, visual cortex and hypothalamic target rendered.",
+  "camera": "Medial side cutaway through eye and brain, slightly elevated so both diverging fibre paths remain unobstructed.",
+  "light": "A soft blue beam enters the pupil; melanopsin cells and their route glow living cyan; ordinary visual fibres are muted teal; the paired master-clock nuclei carry a restrained amber core.",
+  "palette": "Void indigo field, teal neural tissue, cyan timing channel, sparse amber at the SCN target.",
+  "style": "Painterly neuroanatomical plate with accurate relative placement and delicate biological texture, not a sterile medical vector.",
+  "detail_level": "Crisp retinal layers and diverging fibre tracts; the rest of the head dissolves into shadow.",
+  "composition": "Eye occupies the left third, optic chiasm and tiny SCN the centre, visual cortex the right third. Leave open dark space above each pathway for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "third eye", "glowing whole brain", "surgical tools", "watermark", "logos"],
+  "consistency_notes": "The melanopsin pathway must begin in sparse retinal cells and terminate at the paired suprachiasmatic nuclei above the optic chiasm; it must not merge with the visual cortex pathway.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no arrows, no labels, no fantasy brain glow, no cybernetic wires, no gore, no photo, no CGI, no vector infographic",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

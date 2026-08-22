@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-arsenic-backbone-fails",
+  "chapter_slug": "what-is-pandoran-life-made-of",
+  "role": "comparison",
+  "narrative_purpose": "Let the chemistry's survival test be seen rather than merely asserted: an ordinary phosphorus DNA backbone remains intact in warm water while the superficially similar arsenic version hydrolyses into disconnected fragments.",
+  "subject": "Two enlarged double-helical molecular backbones suspended side by side inside the same warm aqueous cell-like environment. The left helix has an unbroken repeating sugar-phosphate rail, compact and stable. The right begins with the same overall helix shape but its arsenate links are visibly being attacked by surrounding water molecules, leaving multiple clean breaks and separated nucleotide fragments drifting away. The comparison is physical and molecular, with no formulae or written symbols.",
+  "scene": "A dark microscopic biochemical plate, both helices immersed in softly swirling water and cellular haze at the same scale and temperature.",
+  "camera": "Close three-quarter molecular study view, left and right rails fully visible across equal lengths.",
+  "light": "Cool cyan transmitted light makes the intact helix softly luminous; on the failing side the light fragments at each broken linkage, with scarce magenta at the dissolving joins; deep indigo ground.",
+  "palette": "Void indigo, ocean teal water, Pandora cyan stable backbone, mist-white bases, restrained biolum magenta at the arsenic-linked breaks.",
+  "style": "Painterly molecular naturalist plate, hand-painted and materially tactile rather than a software chemistry diagram.",
+  "detail_level": "Crisp on the continuous left rail and the discrete hydrolysed breaks and drifting fragments on the right; surrounding solvent stays soft.",
+  "composition": "Two equal helices occupy the left and right halves with a dark central channel, one continuous and one visibly disassembling, creating an immediate stable-versus-dissolving read.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "chemical formulae", "periodic table", "bar chart", "bacterium portrait"],
+  "consistency_notes": "Both structures begin as DNA-like double helices; only the backbone stability differs. The arsenic version must look chemically broken apart in water, not burned, exploded, or mutated.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no element symbols, no labels, no arrows, no equations, no chart, no explosion, no radiation mutation, no glossy educational 3D render, no photographic look, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

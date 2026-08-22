@@ -1,0 +1,17 @@
+id: ocean-stratification
+label:
+  vi: Sự phân tầng đại dương
+  en: Ocean stratification
+definition:
+  vi: Sự sắp xếp nước biển thành các lớp có mật độ khác nhau. Nhiệt độ và độ mặn thường khiến lớp nước ấm hoặc nhạt hơn nổi trên lớp nước lạnh hoặc mặn hơn, cản trở trao đổi theo chiều đứng. Gió, bão, thủy triều và đối lưu có thể làm yếu hoặc phá vỡ các lớp ấy.
+  en: The arrangement of seawater into layers of different density. Temperature and salinity often leave warmer or fresher water floating above colder or saltier water, resisting vertical exchange. Wind, storms, tides, and convection can weaken or break those layers.
+see_also:
+  - pycnocline
+  - thermohaline-circulation
+  - upwelling
+category: concept
+tags:
+  - oceanography
+  - earth-systems
+  - physics
+cover_prompt: A painterly vertical cutaway through a dark ocean with a warm luminous cyan surface layer floating above colder indigo deep water, separated by a thin wavering boundary, no text, no labels, no numbers.

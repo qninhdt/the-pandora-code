@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-pali-cornering",
+  "chapter_slug": "direhorse-and-banshee-up-close",
+  "role": "inline",
+  "narrative_purpose": "Put the direhorse's six-limb division of labour into motion: long fore and hind pairs carry stride while the shorter middle pair braces a high-speed turn, revealing a gait solution unavailable to a four-legged horse.",
+  "subject": "A full adult direhorse executing a hard lateral turn at speed across luminous grassland. Its long front pair reaches forward into the next stride, the long rear pair drives and trails outward, and the shorter middle pair is planted close beneath the torso as a stabilising pivot. The animal has six distinct legs, a long low equine-like body, blue-grey skin, paired antennae swept back, and a Na'vi rider balanced with the turn. Torn glowing turf and the flex of the body show momentum without drawn motion lines.",
+  "scene": "Open Pandoran grassland at blue dusk, low bioluminescent plants smeared into soft background haze and a curved track of disturbed turf under the turn.",
+  "camera": "Low three-quarter side view at ground height, freezing the instant of maximum lean with all six feet separated and readable.",
+  "light": "Cool dusk ambient light, living cyan glow kicked up from disturbed grass below, a restrained warm rim from the horizon along the rider and the animal's back.",
+  "palette": "Void indigo sky, ocean teal grass, blue-grey body, Pandora cyan ground glow, scarce ember amber on the far horizon.",
+  "style": "Painterly speculative-biology field observation, hand-painted, kinetic anatomy with natural weight and traction.",
+  "detail_level": "Crisp on leg placement, planted middle feet, flexed torso, and rider balance; background streaks softly through atmospheric motion.",
+  "composition": "The direhorse cuts a strong diagonal through the frame, head and long forelegs entering the turn while the shorter middle pair anchors near the centre; open space remains ahead of the turn.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "motion arrows", "four-legged horse", "eight legs", "wheels", "saddle machinery"],
+  "consistency_notes": "Exactly six legs: long fore pair, visibly shorter middle pair beneath the torso, long hind pair. Preserve the direhorse's paired antennae and long low Pandoran anatomy.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no four-legged horse, no duplicated or fused legs, no eight legs, no racing saddle, no photorealistic sports photograph, no glossy 3D render, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/direhorse-and-banshee-up-close/fig-01-pali-specimen.png"]
+}

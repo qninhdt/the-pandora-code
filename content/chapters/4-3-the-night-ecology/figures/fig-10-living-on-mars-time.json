@@ -1,0 +1,20 @@
+{
+  "id": "fig-10-living-on-mars-time",
+  "chapter_slug": "the-night-ecology",
+  "role": "inline",
+  "narrative_purpose": "Grounds Pandora's human clock problem in measured Earth experience by showing the managed protocol required to keep rover teams on a day only thirty-nine minutes longer than ours.",
+  "subject": "A Mars rover operations specialist sits at an unbranded console in a dark control room, face tired and posture slumped while a wall of windows shows ordinary terrestrial daylight outside. Beside the workstation stands a broad clinical blue-enriched light panel bathing the face and eyes; on a small tray near a closed sleeping berth lies one plain melatonin tablet and a glass of water. In the background, three colleagues occupy successive work bays at visibly different states of alertness and local daylight, suggesting a schedule that shifts later each day without any readable clocks.",
+  "scene": "A quiet terrestrial mission-control annex adapted for Mars time, isolated from normal office lighting but unable to hide the changing Earth day outside.",
+  "camera": "Medium-wide observational view across the main operator, light panel, window and sleep berth in one coherent room.",
+  "light": "The therapeutic panel supplies controlled cyan-blue key light; normal daylight at the window is muted and displaced; small amber task light marks the treatment tray.",
+  "palette": "Deep indigo control room, cyan therapy light, teal screens with no glyphs, pale daylight, sparse amber at the treatment tray.",
+  "style": "Painterly human-factors field observation, clinically believable and unglamorous, not futuristic command-centre spectacle.",
+  "detail_level": "Clear exhausted posture, blue light panel, outside daylight mismatch and treatment tray; consoles remain soft and unreadable.",
+  "composition": "Operator and blue panel occupy the left centre; daylight window opens on the right; berth and treatment tray anchor the lower right; background staff recede in a shallow diagonal. Leave dark air beside the face and window for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "NASA logos", "readable screens", "spacesuits", "Mars landscape outside", "watermark", "branding"],
+  "consistency_notes": "This is a control team on Earth following Mars time, not astronauts on Mars. The blue light and melatonin are deliberate treatment tools; the window shows Earth's changing daylight.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no logos, no readable clocks, no sci-fi HUD, no astronauts, no Mars surface outside, no medical drama, no photo or CGI look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

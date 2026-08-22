@@ -1,0 +1,20 @@
+{
+  "id": "fig-08-hemlock-microclimate-collapse",
+  "chapter_slug": "hometree-as-keystone",
+  "role": "comparison",
+  "narrative_purpose": "Makes foundation-species loss visible as a suite of linked physical changes, not merely missing trees: removing hemlock opens light, warms soil and stream, accelerates litter decay and loses shade specialists.",
+  "subject": "The same Appalachian headwater plot before and after eastern hemlock death. In the intact half, dense evergreen crowns create deep cool shade over thick acidic litter and a narrow clear stream; a black-throated green warbler forages in the dim branches. In the girdled half, standing trunks carry a clean ring cut through the bark, crowns are thinning, harsh shafts reach a warm exposed floor, leaf litter is visibly decomposing into patchy dark soil, runoff enters a brighter warmer stream, and the specialist bird is absent while a generalist bird occupies a birch sapling.",
+  "scene": "Harvard Forest experimental plots shown at matched season, topography and weather, separated by a narrow survey corridor with no signage.",
+  "camera": "Wide eye-level forest cross-section following the stream across both plots.",
+  "light": "Intact hemlock side stays cool indigo-teal; removal side receives a controlled pale amber daylight intrusion while cyan water links the two.",
+  "palette": "Cool indigo, hemlock teal and cyan stream dominate; restrained amber only on the newly exposed floor and warming water.",
+  "style": "Painterly forest-ecology experiment with faithful eastern hemlock form and legible microclimate contrast.",
+  "detail_level": "Crisp girdling cut, litter, stream edge and bird niches; distant trunks soften.",
+  "composition": "Intact shaded plot left, girdled opening right, the same stream running continuously across the lower third. Preserve dark canopy and open floor regions for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "clear-cut stumps", "wildfire", "logging machinery", "watermark", "logos"],
+  "consistency_notes": "The experimental treatment is bark girdling with trees left standing, not logging. Show multiple linked microclimate effects and a change in bird occupancy without depicting instant total forest death.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no arrows, no clear-cut, no chainsaws, no dramatic fire, no tropical forest, no photo or CGI look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-light-at-two-phases",
+  "chapter_slug": "the-night-ecology",
+  "role": "comparison",
+  "narrative_purpose": "Shows why a zeitgeber is phase-dependent rather than a simple on-switch: the same blue light pulse delivered early or late in subjective night pushes an identical internal oscillator in opposite directions.",
+  "subject": "Two matched sleeping human silhouettes shown in dark rooms with identical narrow blue light pulses reaching closed eyelids. In the left room, the subject is early in biological night: the molecular clock inside a translucent head is shown as a cyan protein cycle shifted toward a later position relative to a faint external dawn glow. In the right room, the subject is late in biological night: the same cycle is shifted toward an earlier position, closer to the coming dawn. A third small central vignette shows midday light striking an awake eye while the internal cycle remains unchanged.",
+  "scene": "Three controlled chronobiology observation bays with identical beds, light sources and bodies; only the internal phase and the faint horizon outside differ.",
+  "camera": "Matched side-on cutaway views through each dark room, with the translucent head and internal oscillator visible without medical gore.",
+  "light": "The test pulse is narrow Pandora cyan in every bay; early-night background is deep indigo, late-night background has a pale pre-dawn rim, midday vignette is softly lit but subdued.",
+  "palette": "Indigo rooms, cyan test light and oscillator, pale mist dawn, tiny amber horizon accent only in the late-night panel.",
+  "style": "Painterly physiological comparison with quiet clinical clarity, not a chart and not science-fiction UI.",
+  "detail_level": "Clear repeated light pulse, closed eye, internal cycle position and outside dawn cue; room detail remains minimal.",
+  "composition": "Large early-night bay left, narrow midday dead-zone vignette center, large late-night bay right. Preserve dark margins beside each head for interface labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "clock faces", "digital displays", "hospital branding", "watermark", "logos"],
+  "consistency_notes": "Use the same subject and same blue pulse in both night panels. The only teaching difference is when the light arrives and whether the internal cycle shifts later or earlier.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no arrows, no readable clocks, no neon UI, no split personality, no medical horror, no photo or CGI look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

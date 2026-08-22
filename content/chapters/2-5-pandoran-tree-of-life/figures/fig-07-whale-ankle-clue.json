@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-whale-ankle-clue",
+  "chapter_slug": "pandoran-tree-of-life",
+  "role": "comparison",
+  "narrative_purpose": "Show why phylogeny trusts inherited construction over outward resemblance: a small double-pulley ankle bone in an early whale fossil ties whales to hippos and other even-toed hoofed mammals despite the adult whale's fishlike body.",
+  "subject": "An early amphibious whale skeleton with four weight-bearing limbs laid out as a naturalist fossil reconstruction, its hind ankle enlarged in a circular close study to reveal the distinctive grooved double-pulley astragalus; beside it, a hippopotamus hind foot skeleton presents the same grooved ankle-bone shape at matching angle, while a small living whale silhouette swims above as the misleading modern exterior.",
+  "scene": "An Earth paleontology comparison plate on a dark indigo field, combining fossil slab texture, two precise bone studies, and one restrained living silhouette.",
+  "camera": "Lateral view of the early whale skeleton and hippo foot, with the two ankle bones oriented identically for direct visual matching.",
+  "light": "Soft cool museum light across fossil and bone, faint cyan rim on the matching ankle surfaces, living whale silhouette submerged in deep teal haze.",
+  "palette": "Void indigo ground, warm stone-grey and muted ochre fossil, mist-white bone, ocean teal water silhouette, restrained Pandora cyan on the matching joint surfaces.",
+  "style": "Painterly paleontological naturalist plate, hand-painted, anatomically precise and quietly dramatic.",
+  "detail_level": "Crisp on the grooved double-pulley ankle morphology and matching orientation; softer on the whole skeleton and living whale silhouette.",
+  "composition": "Early whale skeleton spans the lower left, enlarged ankle comparison occupies the centre, hippo foot mirrors it on the right, and the living whale floats small in upper negative space.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "cladogram", "modern cetacean with legs", "Pandoran fauna"],
+  "consistency_notes": "The early whale must be an amphibious four-limbed archaeocete, not a modern whale given fantasy legs. The paired ankle bones should clearly share the same double-pulley construction.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no chart, no fantasy whale legs, no dinosaur skeleton, no Pandoran species, no photographic museum display, no glossy 3D render, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

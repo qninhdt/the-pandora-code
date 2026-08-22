@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-four-evidence-trays",
+  "chapter_slug": "reading-pandora-as-a-specimen",
+  "role": "diagram",
+  "narrative_purpose": "Turns the four-tier method into a memorable physical sorting act: record, reasoned bridge, granted premise, and measured specimen occupy distinct trays and cannot silently trade places.",
+  "subject": "Four shallow specimen trays arranged in one row on a dark examination table. The first tray holds a short strip of exposed motion-picture film with visible but unreadable image frames and a sealed archive tag with no writing. The second holds two matching broken stone halves joined by a carefully fitted narrow wooden bridge. The third holds one modest stone floating above an otherwise empty tray, tethered by exactly one luminous thread. The fourth holds a pinned glowing leaf beside a small glass measuring cylinder and brass calipers. Each tray is physically separate with a narrow dark gap around it.",
+  "scene": "A quiet naturalist's evidence table viewed from above, bare except for the four deliberately sorted trays.",
+  "camera": "Direct top-down view, all four trays fully visible and equal in size.",
+  "light": "Low cool ambient with living light from the leaf and the single tether; a restrained amber glint on the calipers and film edge.",
+  "palette": "Dark slate and stone neutrals under the global palette; cyan-teal glow confined to the speculative tether and living specimen; sparse amber metal highlights.",
+  "style": "Painterly museum-study plate, tactile and orderly, with no infographic chrome.",
+  "detail_level": "High detail within each tray, especially the film frames, fitted bridge, single tether and measuring tools; plain dark tabletop elsewhere.",
+  "composition": "Four equal trays read left to right, with strong separation and open dark margins around every object for interface labels.",
+  "exclude": ["readable text", "letters", "numbers", "captions", "labels", "arrows", "icons", "watermark", "people", "extra objects between trays"],
+  "consistency_notes": "The trays must remain distinct: recorded image strip, constructed bridge, exactly one tethered impossibility, and measured biological specimen. Never blend the contents across trays.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no readable writing, no symbols, no arrows, no UI, no poster layout, no photographic or 3D-render look, no clutter, no fifth tray",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/reading-pandora-as-a-specimen/fig-00-cover.png"]
+}

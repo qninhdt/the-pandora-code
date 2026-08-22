@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-song-not-singer",
+  "chapter_slug": "a-real-living-planet",
+  "role": "diagram",
+  "narrative_purpose": "Makes Doolittle's persistence idea visible: species are temporary singers that appear and vanish, while the carbon, nitrogen, water, and weathering cycles continue through successive casts for geological time.",
+  "subject": "A long horizontal naturalist sequence across four geological eras of the same coastline and mountain basin. In each era, a completely different community of plants, microbes, and animals occupies the land and sea; several older organisms fade into pale silhouettes while new forms replace them. Running continuously through all four eras are the same four broad material paths: vapour rising and rain returning, carbon moving between air and living tissue, minerals washing from mountain to sea, and nutrients returning through decay, drawn as uninterrupted luminous currents that pass through each changing community.",
+  "scene": "One enduring planetary landscape viewed through deep time, with biological casts turning over while biogeochemical flows remain continuous.",
+  "camera": "Wide side-on temporal panorama, the four eras aligned at the same horizon and linked by the persistent material currents.",
+  "light": "The changing organisms carry localized living glow; the persistent cycles form steadier pale cyan currents that cross every era without breaking.",
+  "palette": "Cool landscape tones and stable cyan-teal cycle paths, with rare soft magenta only on transitional organisms.",
+  "style": "Painterly Earth-system naturalist plate, geological time conveyed through recurring landscape rather than a timeline graphic.",
+  "detail_level": "Distinct organism communities in each era, crisp continuous currents, distant mountains and sea held consistent.",
+  "composition": "Four equal eras in a continuous panorama, persistent paths crossing the boundaries, with dark sky and deep water bands for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "timeline dates", "human technology"],
+  "consistency_notes": "The organisms must visibly change from era to era while the same material pathways remain unbroken through all four panels: the song persists, the singers do not.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no dates, no labels, no arrows, no modern city, no flat timeline infographic, no photographic or glossy 3D look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

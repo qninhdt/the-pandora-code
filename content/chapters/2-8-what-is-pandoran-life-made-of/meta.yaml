@@ -76,6 +76,12 @@ figures:
   - id: fig-05-superconductor-verdict
     role: inline
     asset_status: ready
+  - id: fig-06-arsenic-backbone-fails
+    role: comparison
+    asset_status: ready
+  - id: fig-07-shadow-biosphere-blind-spot
+    role: inline
+    asset_status: ready
 sources:
   - kind: canon
     label: Pandora - James Cameron's Avatar Wiki

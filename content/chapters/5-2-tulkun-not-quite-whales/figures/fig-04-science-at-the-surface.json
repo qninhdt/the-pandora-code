@@ -1,0 +1,19 @@
+{
+  "id": "fig-04-science-at-the-surface",
+  "chapter_slug": "tulkun-not-quite-whales",
+  "role": "diagram",
+  "narrative_purpose": "The cutaway shows why cetacean culture is an inference assembled from partial methods: each instrument samples one narrow window while the social life continues below.",
+  "subject": "A clean ocean cutaway with a small non-branded research sailboat at the surface, one hydrophone cable descending from it, a compact drone hovering above, and a suction-cup movement tag attached harmlessly to one whale below. A pod of five Earth whales moves through deep water in a social formation. Small inset-like visual motifs without borders show a dorsal-fin photograph near the boat and a simple DNA helix near a sealed biopsy vial; no text, numbers, arrows or UI.",
+  "scene": "Open ocean from air through surface to deep water, with the research layer occupying the top quarter and the largely hidden pod filling the lower half.",
+  "camera": "Straight-on educational cutaway, wide aspect, surface line horizontal and each instrument physically connected to the part of the scene it samples.",
+  "light": "Cyan daylight filtered through water, teal instrument glints, deep indigo lower ocean and sparse amber highlights on sampling points.",
+  "palette": "Cool indigo-teal ocean, cyan sampling details, muted stone-grey boat and animals, sparse amber markers.",
+  "style": "Painterly field-method naturalist plate with clear spatial organization, not a vector diagram.",
+  "detail_level": "Crisp boat, drone, hydrophone, tag and nearest whales; deep social group softens into haze while remaining legible.",
+  "composition": "Horizontal surface divides the frame; four sampling windows are distributed without overlap and large dark margins remain for interface annotations.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "brand marks", "military ship", "harpoon", "blood", "captivity tank", "Pandoran animals"],
+  "consistency_notes": "Every method must be visually distinct and non-invasive. The image teaches partial access, so no single instrument should appear to reveal the entire pod or mind.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no infographic chrome, no military equipment, no injury, no photographic or 3D-render look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

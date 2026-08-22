@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-the-closed-cupboard",
+  "chapter_slug": "the-night-ecology",
+  "role": "comparison",
+  "narrative_purpose": "Recreates the observation that founded chronobiology: a mimosa continues opening and closing on schedule after the external light cycle has been removed, revealing that the rhythm is generated inside the organism.",
+  "subject": "The same potted Mimosa pudica appears in three adjacent observations inside a completely closed eighteenth-century wooden cupboard. In the first, its compound leaves are spread open despite total darkness; in the second, hours later, the leaflets are folded together; in the third, the following internal morning, they are open again. The cupboard door remains shut in every view, and a thin seal of dust along its edge is undisturbed. A small mechanical pocket watch sits outside the cupboard, never inside with the plant.",
+  "scene": "Jean-Jacques d'Ortous de Mairan's quiet Paris study in 1729, rendered as a repeated naturalist observation rather than a staged portrait; the plant is the only living subject.",
+  "camera": "Matched front-on cutaway views through the cupboard wall, identical framing and scale across all three states.",
+  "light": "The cupboard interior stays deep indigo with only faint cyan explanatory edge light on the leaves; a restrained amber glow outside the sealed door marks changing time without illuminating the plant.",
+  "palette": "Void indigo wood interior, muted teal leaves, pale cyan edges, sparse amber confined outside the cupboard.",
+  "style": "Painterly historical botany plate with tactile wood, soil and leaf texture; observational and restrained.",
+  "detail_level": "Crisp repeated leaf postures and sealed cupboard edge; room furniture is soft and secondary.",
+  "composition": "Three equal cupboard windows run left to right: open leaves, folded leaves, open leaves. The surrounding room and watch occupy a narrow lower strip. Leave dark space beside each leaf crown for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "sunlight entering cupboard", "open door", "electric lamps", "watermark", "logos"],
+  "consistency_notes": "Use the exact same plant, pot and sealed cupboard in all three observations. Only leaf posture and the external time glow may change; the interior must remain dark.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no clocks with readable numbers, no arrows, no open cupboard, no light beam inside, no modern laboratory, no photographic or CGI look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

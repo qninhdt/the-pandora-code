@@ -1,0 +1,15 @@
+id: pycnocline
+label:
+  vi: Đới biến mật
+  en: Pycnocline
+definition:
+  vi: Khoảng độ sâu nơi mật độ nước tăng nhanh theo chiều xuống. Đới biến mật thường hình thành từ thay đổi nhiệt độ, độ mặn hoặc cả hai, và hoạt động như một rào cản đối với sự trộn nước giữa tầng mặt và đại dương sâu.
+  en: The depth interval where seawater density increases rapidly downward. A pycnocline usually arises from a change in temperature, salinity, or both, and acts as a barrier to mixing between the surface layer and the deep ocean.
+see_also:
+  - ocean-stratification
+  - upwelling
+category: concept
+tags:
+  - oceanography
+  - physics
+cover_prompt: A painterly ocean cross-section with pale warm water above, dense dark water below, and a narrow glowing teal transition band bending like a soft membrane between them, no text, no labels, no numbers.

@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-carbon-silicon-leash",
+  "chapter_slug": "reading-pandora-as-a-specimen",
+  "role": "comparison",
+  "narrative_purpose": "Makes the astrobiology passage concrete: disciplined speculation may test unfamiliar chemistry, but carbon in liquid water remains the flexible benchmark while silicon tends toward rigid mineral lattices.",
+  "subject": "A split naturalist laboratory plate with two sealed shallow glass dishes viewed side by side. In the left dish, dark bead-like atoms form many long branching flexible chains suspended and curling through clear liquid, with several chain ends joining and separating. In the right dish, pale stone-like atoms lock into a rigid repeating angular crystal lattice that grows into a small quartz-like solid and does not curl through the liquid. The two dishes are identical in size so the difference between flexible chains and a rigid mineral network is unmistakable.",
+  "scene": "A dim astrobiology workbench with only the two dishes visible against dark slate; faint condensation beads cling to the glass and a few indistinct mineral grains lie beyond the right dish.",
+  "camera": "Straight-down close comparison view, both circular dishes fully visible at equal scale.",
+  "light": "Cool internal glow in the liquid dishes; the flexible chains catch a living teal edge, while the rigid crystal catches a restrained pale amber rim.",
+  "palette": "Figure-specific contrast of living teal on the flexible chains and desaturated stone with a scarce amber edge on the rigid lattice, against the global dark ground.",
+  "style": "Painterly naturalist laboratory plate with literal molecular-scale forms enlarged into visible bead-and-bond structures; not a textbook infographic.",
+  "detail_level": "High detail on the branching chain geometry and the repeating angular crystal lattice; bench and background soft and sparse.",
+  "composition": "Two equal dishes balanced left and right with a narrow strip of dark negative space between; the left is visibly fluid and branching, the right compact and immobile.",
+  "exclude": ["text", "letters", "numbers", "chemical formulae", "labels", "arrows", "watermark", "people", "computer screens", "flat vector infographic"],
+  "consistency_notes": "The image must show a physical contrast, not merely two colored blobs: many flexible branching chains in liquid on the left, one rigid repeating stone lattice on the right.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no symbols, no periodic-table glyphs, no labels, no arrows, no UI, no glossy 3D molecular render, no photographic look, no clutter",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "pandoras-smallest-things",
+  "role": "hero",
+  "narrative_purpose": "The chapter cover compresses its argument into one image: Pandora's immense forest depends on a hidden microbial world beneath a single fallen leaf.",
+  "subject": "A single broad luminous alien leaf resting on damp black forest soil, its upper surface still glowing faint cyan while its torn lower edge dissolves into a dense miniature world of fine fungal threads, translucent microbial films, tiny mineral grains, and new root hairs. The visible forest above is only a dim suggestion; the intricate living soil below the leaf is the true focal subject.",
+  "scene": "Pandora's forest floor at deep dusk immediately after rain, viewed close enough that a fallen leaf becomes a landscape.",
+  "camera": "Low intimate macro hero view, leaf crossing the center diagonally, a shallow cutaway into the soil visible beneath its lower edge.",
+  "light": "Soft bioluminescent cyan from the leaf and fine fungal threads, restrained teal reflections in water films, deep indigo ambient shadow, one scarce amber glint among mineral grains.",
+  "palette": "Void-indigo soil and background, cyan and living teal biological glow, muted mineral grey, sparse ember-amber accent.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, luminous but scientifically observed.",
+  "detail_level": "Crisp on the leaf edge, fungal filaments, root hairs and soil pores; the towering forest behind dissolves into dark haze.",
+  "composition": "Leaf as the central diagonal bridge between the dim macro forest above and the bright microscopic architecture below, with generous dark negative space around it.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "callout lines", "human figures", "modern equipment", "Avatar branding"],
+  "consistency_notes": "Establish the recurring fallen-leaf motif. Cool Pandora palette, restrained natural bioluminescence, and a credible soil cutaway rather than fantasy sparkles.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no labels, no arrows, no infographic chrome, no photographic or 3D-render look, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

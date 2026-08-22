@@ -1,0 +1,23 @@
+id: social-learning
+label:
+  vi: Học hỏi xã hội
+  en: Social learning
+definition:
+  vi: >-
+    Quá trình trong đó điều một cá thể học được chịu ảnh hưởng từ sự hiện diện, hành vi hoặc sản
+    phẩm hành vi của cá thể khác. Cơ chế có thể đơn giản như bị thu hút tới nơi một đồng loại đang
+    kiếm ăn, hoặc đòi hỏi sao chép chính xác một hành động hay âm thanh mới. Khi thông tin học theo
+    cách này tồn tại và lan trong nhóm, nó có thể trở thành một truyền thống văn hóa.
+  en: >-
+    Learning influenced by the presence, behavior, or behavioral products of another individual.
+    The mechanism may be as simple as being drawn to a place where a companion feeds, or as exacting
+    as copying a novel action or sound. When information acquired this way persists and spreads
+    through a group, it can become a cultural tradition.
+see_also:
+  - animal-culture
+  - network-based-diffusion-analysis
+category: bio
+tags:
+  - collective-behavior
+  - evolution
+cover_prompt: Two painterly dolphin-like animals above a dark seabed, one demonstrating how to lift a shell while the other watches and repeats the movement, restrained cyan and teal glow, no text or labels.

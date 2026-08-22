@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-luminous-background-pressure",
+  "chapter_slug": "when-glow-is-the-norm",
+  "role": "comparison",
+  "narrative_purpose": "Carry counter-illumination onto Pandora: once the forest itself is luminous, matching that light can conceal an animal while remaining dark can betray it. The image makes the evolutionary pressure from glowing background to glowing fauna visible.",
+  "subject": "Two similarly sized six-limbed Pandoran browsing animals crossing the same bioluminescent understorey at night. The nearer animal carries a restrained pattern of cyan flank and belly photophores that aligns with the glowing stems and ground behind it, breaking its outline into the forest's light. The second animal, identical in anatomy but with its photophores dark, stands farther across the clearing as a single solid black silhouette against luminous vegetation.",
+  "scene": "Dense low Pandoran forest with glowing fungal fans, cyan ground moss, violet stems, and deep lanes of shadow, seen from the height of a stalking predator.",
+  "camera": "Low lateral view across the understorey, both animals broadside so the difference in outline visibility is unmistakable.",
+  "light": "Living flora provide all key light from below and behind; the matched animal's photophores repeat the local cyan rhythm at modest intensity, while the unlit animal blocks the glow into a dark shape.",
+  "palette": "Void indigo shadows, ocean teal foliage, Pandora cyan ground glow, scarce biolum magenta in distant plants; no warm artificial light.",
+  "style": "Painterly speculative-biology field observation, hand-painted texture, ecological rather than decorative bioluminescence.",
+  "detail_level": "Crisp on the two animal outlines and the spatial relationship between their photophores and background stems; forest depth softens into haze.",
+  "composition": "The camouflaged animal overlaps a dense luminous patch on the left and visually fragments; the unlit animal crosses an equally bright patch on the right and reads as one continuous silhouette, with a dark central interval.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "rainbow animals", "neon edge lighting", "Earth deer", "Na'vi", "combat"],
+  "consistency_notes": "Both animals must be the same plausible Pandoran species with six limbs. Photophores are functional low-intensity camouflage matched to the vegetation, not decorative neon stripes.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no rainbow glow, no neon cyberpunk look, no four-legged Earth mammal, no photorealistic or glossy 3D render look, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

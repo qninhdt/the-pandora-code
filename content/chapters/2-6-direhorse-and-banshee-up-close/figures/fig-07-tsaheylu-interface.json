@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-tsaheylu-interface",
+  "chapter_slug": "direhorse-and-banshee-up-close",
+  "role": "diagram",
+  "narrative_purpose": "Reveal the biological interface behind riding: the Na'vi and mount queues are sheathed nerve bundles that open into many fine tendrils and physically interlace, turning rider and animal into one bidirectional control-and-sensation circuit.",
+  "subject": "An intimate anatomical close-up of a Na'vi neural queue and a direhorse neural queue meeting between rider and mount. Both flexible skin sheaths open at their tips into fans of dozens of fine living tendrils, pink-cyan and moist, which interlace densely like two hands clasping. The bases of the tendrils continue visibly into bundled nerve fibres beneath each sheath; the rider's blue hand and the direhorse's neck remain softly out of focus behind the connection.",
+  "scene": "Held close against the shadowed side of a direhorse at dusk, with background grass and the bodies reduced to soft indigo-teal forms.",
+  "camera": "Extreme macro three-quarter view centred on the point of interlacing, shallow depth of field that still preserves the two distinct sheath origins.",
+  "light": "The neural tendrils emit a restrained cyan and magenta living glow that lights the sheath edges from within; soft cool ambient dusk and deep shadow surround the join.",
+  "palette": "Void indigo background, ocean teal skin and sheath, Pandora cyan and restrained biolum magenta in the neural fibres, no warm artificial light.",
+  "style": "Painterly speculative-biology anatomical plate, hand-painted, intimate and organic, precise without clinical sterility.",
+  "detail_level": "Very crisp on individual tendrils, moist living texture, and continuity into nerve bundles; hand, neck, and landscape softly blurred.",
+  "composition": "The two queues enter from opposite sides and meet just off centre, with generous dark negative space around the interlace and no other focal object.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "electrical plug", "metal cable", "USB connector", "glowing rope", "gore"],
+  "consistency_notes": "The connection is physical living nervous tissue, not telepathy or technology. Both tips open into many fine tendrils; the light is restrained biological signal, not neon electricity.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no labels, no arrows, no metal or plastic connector, no cable plug, no floating magic, no gore, no neon cyberpunk glow, no photographic surgery, no glossy 3D render, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/direhorse-and-banshee-up-close/fig-01-pali-specimen.png"]
+}

@@ -75,6 +75,9 @@ figures:
   - id: fig-06-operculum-reading
     role: diagram
     asset_status: ready
+  - id: fig-07-one-way-airflow-lineage
+    role: comparison
+    asset_status: ready
 sources:
   - kind: canon
     label: Operculum - James Cameron's Avatar Wiki

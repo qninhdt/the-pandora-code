@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-simultaneous-hub-strike",
+  "chapter_slug": "why-burning-eywa-doesnt-kill-it",
+  "role": "diagram",
+  "narrative_purpose": "Shows the first genuine kill strategy as different from clear-cutting: leave almost all ordinary forest standing, identify the rare sacred hubs across land and sea, and remove them together so their dependent regions become isolated.",
+  "subject": "A high oblique view across forest, mountains, coast, and reef at night. Almost every ordinary tree remains intact. Seven rare luminous hub structures are distributed far apart: several willow-like sacred trees on land, a broad glowing fungal hub, and two rooted Spirit Trees under shallow sea. Each hub is encircled by a small dark targeting ring at the same moment; around the already dimming hubs, fine network links break and broad regions separate into disconnected pools of light while untouched ordinary forest remains standing.",
+  "scene": "A moon-scale surgical attack map embedded in a real landscape, focusing on simultaneous removal of rare hubs rather than area burned.",
+  "camera": "Very high three-quarter panorama spanning several biomes while keeping the seven hub targets individually legible.",
+  "light": "Cool bioluminescent network light across the intact world, hubs brightest; sparse magenta rings mark only the targeted nodes, with no broad fire glow.",
+  "palette": "Cool night landscape and cyan-teal hubs, rare magenta targeting accents, almost no amber because the strategy is surgical rather than incendiary.",
+  "style": "Painterly speculative-biology map-landscape hybrid, natural forms rather than flat symbols.",
+  "detail_level": "Crisp on each distinct hub and the severed links around it; ordinary forest recedes into haze.",
+  "composition": "Seven targets spread across the full frame with dark air and water beside them for labels; disconnected light regions become readable without borders.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "large burned area", "single central target"],
+  "consistency_notes": "Most biomass must remain untouched. The failure comes specifically from losing several rare high-connectivity hubs simultaneously across different biomes.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no labels, no arrows, no continent-wide fire, no one giant central tree, no photographic satellite image, no glossy 3D render, no neon HUD",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

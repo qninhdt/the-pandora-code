@@ -17,11 +17,11 @@ subtitle:
 hook:
   vi: >-
     Ai cũng gọi Hometree là "loài chủ chốt", và cách gọi ấy sai — sai theo một kiểu hữu ích. Loài
-    chủ chốt của Robert Paine là kẻ hiếm hoi, tác động qua việc ăn; Hometree thì chiếm phần lớn
-    sinh khối quanh nó và tác động chỉ bằng cách tồn tại. Đó là hai cơ chế khác nhau, và phân biệt
-    được chúng là chìa khóa giải thích vì sao đốn Hometree vừa chẳng làm mạng lưới hành tinh nhíu
-    mày, vừa là một tổn thất không gì bù nổi. Bài học mang về: sinh khối mọc lại trong vài thập
-    niên, nhưng cấu trúc cần hàng thế kỷ — có những thứ chỉ thời gian mới dựng được.
+    chủ chốt của Robert Paine là kẻ hiếm hoi, tác động qua việc ăn; Hometree thì chiếm phần lớn sinh
+    khối quanh nó và tác động chỉ bằng cách tồn tại. Đó là hai cơ chế khác nhau, và phân biệt được
+    chúng là chìa khóa giải thích vì sao đốn Hometree vừa chẳng làm mạng lưới hành tinh nhíu mày,
+    vừa là một tổn thất không gì bù nổi. Bài học mang về: sinh khối mọc lại trong vài thập niên,
+    nhưng cấu trúc cần hàng thế kỷ — có những thứ chỉ thời gian mới dựng được.
   en: >-
     Everyone calls Hometree a keystone, and everyone is wrong in a useful way. Robert Paine's
     keystone was rare and worked by eating; Hometree is most of the biomass around it and works
@@ -84,6 +84,21 @@ figures:
     asset_status: ready
   - id: fig-05-chestnut-then-and-now
     role: comparison
+    asset_status: ready
+  - id: fig-06-paines-crowbar
+    role: comparison
+    asset_status: ready
+  - id: fig-07-a-hollow-made-by-time
+    role: comparison
+    asset_status: ready
+  - id: fig-08-hemlock-microclimate-collapse
+    role: comparison
+    asset_status: ready
+  - id: fig-09-the-debt-still-alive
+    role: diagram
+    asset_status: ready
+  - id: fig-10-the-nurse-log
+    role: inline
     asset_status: ready
 sources:
   - kind: wiki

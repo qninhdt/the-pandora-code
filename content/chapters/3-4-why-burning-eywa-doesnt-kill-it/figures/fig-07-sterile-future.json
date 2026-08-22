@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-sterile-future",
+  "chapter_slug": "why-burning-eywa-doesnt-kill-it",
+  "role": "comparison",
+  "narrative_purpose": "Makes sterilising regeneration more frightening than felling a mature tree: an apparently intact forest can already be doomed if its seed bank, woodsprites, and living soil have been erased.",
+  "subject": "A matched two-part forest-floor study beneath equally large mature trees. Left: the soil is dense with dormant seeds, fine fungal threads, tiny roots, and several translucent woodsprites settling onto moist ground; small seedlings of different species are emerging. Right: the adult trunks still stand above, but the soil beneath is pale, compacted, and chemically scorched, with empty seed husks, dead fungal threads, no woodsprites, and no seedlings anywhere; the canopy looks alive while the ground holds no next generation.",
+  "scene": "Two futures hidden under similar standing forests: one with a distributed recovery reserve and one already reproductively dead.",
+  "camera": "Side-on soil cutaway at ground level, matching canopy roots and soil depth across both halves.",
+  "light": "Living soil glows softly in cyan and teal; sterile soil is dim stone-grey with one faint sickly amber trace and no internal glow.",
+  "palette": "Cool living colours on the fertile side, desaturated stone and near-black on the sterile side, warm contamination kept scarce.",
+  "style": "Painterly ecological naturalist cutaway with close soil detail.",
+  "detail_level": "Fine seeds, hyphae, and seedlings on the living side; stark empty texture and broken remnants on the sterile side.",
+  "composition": "Equal underground panels, mature trunks cropped similarly above, strong negative space in the sterile soil for later callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "human figures", "visible laboratory containers"],
+  "consistency_notes": "The adult forest on both sides should look initially similar; the decisive contrast is belowground capacity for future recovery.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no labels, no arrows, no people, no laboratory glassware, no photographic or 3D-render look, no bright orange contamination",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

@@ -1,0 +1,26 @@
+id: pathogen
+label:
+  vi: Mầm bệnh (pathogen)
+  en: Pathogen
+definition:
+  vi: >-
+    Một tác nhân sinh học có khả năng gây bệnh cho một vật chủ cụ thể trong những điều kiện cụ thể.
+    Khả năng ấy không phải danh tính bất biến: vi sinh vật vô hại trong ruột có thể gây tổn thương
+    khi lọt vào máu, còn tác nhân nguy hiểm với loài này có thể chẳng bám nổi tế bào loài khác. Để
+    thành công, mầm bệnh phải tới được vật chủ, xâm nhập hoặc bám trụ, sinh sản và tìm đường truyền
+    sang vật chủ kế tiếp.
+  en: >-
+    A biological agent capable of causing disease in a particular host under particular conditions.
+    That ability is not a permanent identity: a harmless gut microbe may cause damage if it reaches
+    the bloodstream, while an agent dangerous to one species may be unable to attach to another's
+    cells. To succeed, a pathogen must reach a host, enter or persist, reproduce, and find a route
+    to the next host.
+see_also:
+  - microbiome
+  - coevolution
+category: bio
+tags:
+  - ecology
+  - evolution
+  - physiology
+cover_prompt: A painterly microscopic view of one small hooked microbial cell approaching a living epithelial membrane while other cells are excluded, restrained magenta against cool cyan tissue, no text or labels.

@@ -1,0 +1,15 @@
+id: euphotic-zone
+label:
+  vi: Tầng sáng
+  en: Euphotic zone
+definition:
+  vi: Lớp trên cùng của đại dương nhận đủ ánh sáng để quang hợp tạo ra nhiều vật chất hữu cơ hơn lượng bị hô hấp tiêu thụ. Độ sâu của tầng sáng thay đổi mạnh theo độ trong của nước, phù sa, chất hữu cơ hòa tan và mật độ sinh vật phù du.
+  en: The upper ocean layer that receives enough light for photosynthesis to produce more organic matter than respiration consumes. Its depth varies greatly with water clarity, sediment, dissolved organic matter, and plankton abundance.
+see_also:
+  - biological-pump
+  - upwelling
+category: concept
+tags:
+  - oceanography
+  - ecology
+cover_prompt: A painterly underwater view with sunbeams fading through clear cyan water, a bright upper habitat full of tiny drifting producers giving way to a dark indigo depth below, no text, no labels, no numbers.

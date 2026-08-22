@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-one-way-airflow-lineage",
+  "chapter_slug": "the-breathing-fans",
+  "role": "comparison",
+  "narrative_purpose": "Break the intuition that one-way lungs belong only to flight: a bird, an alligator, and a monitor lizard carry the same functional airflow principle in very different bodies, making it plausible that the mechanism is ancient or repeatedly favoured rather than an aviation specialisation.",
+  "subject": "Three living Earth vertebrates in matched side profile: a pigeon standing alert, an alligator resting low, and a monitor lizard walking; each has a restrained translucent thoracic window revealing the lungs, with a continuous ribbon of cool blue inhaled air entering, passing through the gas-exchange region in one direction, and leaving along a separate branch without reversing through the exchange tissue.",
+  "scene": "A comparative respiratory-physiology plate against deep indigo, the three animals sharing one ground line but separated by dark breathing room.",
+  "camera": "Clean lateral naturalist view at equal visual scale, with every thoracic window unobstructed.",
+  "light": "Soft cool dorsal light on feathers, scales, and hide; the airflow ribbons and lung interiors glow faintly cyan from within; deep teal shadow elsewhere.",
+  "palette": "Void indigo and ocean teal dominant, stone-grey animal surfaces, Pandora cyan airflow, scarce living green in the lung tissue.",
+  "style": "Painterly comparative-anatomy naturalist plate, hand-painted, scientifically restrained and tactile.",
+  "detail_level": "Crisp on the three lung windows and the continuous airflow paths; exterior anatomy stays observed but subordinate.",
+  "composition": "Bird, alligator, and lizard arranged left to right with repeated thoracic windows at one visual height, making the shared flow pattern readable without labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "bar charts", "graphs", "human lungs", "aircraft", "Pandoran animals"],
+  "consistency_notes": "The blue airflow must form a continuous through-path across each gas-exchange region rather than a simple in-and-out tidal loop. Keep the animals recognisably pigeon, alligator, and monitor lizard.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no charts, no duplicated limbs, no fantasy reptiles, no photorealistic cutaway, no glossy 3D medical render, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

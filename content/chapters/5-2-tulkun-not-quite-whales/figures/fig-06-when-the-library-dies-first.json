@@ -1,0 +1,19 @@
+{
+  "id": "fig-06-when-the-library-dies-first",
+  "chapter_slug": "tulkun-not-quite-whales",
+  "role": "inline",
+  "narrative_purpose": "The figure separates recovery of bodies from recovery of information: suitable habitat can remain physically intact after the learned route into it has vanished from living memory.",
+  "subject": "A seamless before-and-after ocean panorama around the same sheltered coastal bay. On the left, an experienced baleen-whale mother leads a calf and several companions through a narrow underwater passage into the bay, their repeated route visible only as subtle teal particles stirred in their wake. On the right years later, a small recovering group of younger whales travels past the same intact entrance in open water; the old path fades and stops before reaching them, while the bay remains empty. No dead animals, blood, text, arrows, panels or UI.",
+  "scene": "A temperate rocky bay and underwater shelf shown continuously across time, ecologically intact on both sides; the only missing element in the later moment is the knowledgeable leader and the group's use of the route.",
+  "camera": "High oblique cutaway wide view showing open sea, the narrow passage and sheltered bay, with the earlier procession at left and later offshore group at right.",
+  "light": "Soft cyan daylight over the unchanged coast; teal wake particles clearly continue into the bay in the earlier moment but dissolve in empty water before the later pod; muted amber light rests inside the unused cove.",
+  "palette": "Deep indigo and slate water, stone coast, cyan whale edges, teal memory trail and a restrained amber empty-bay accent.",
+  "style": "Painterly conservation-science plate, elegiac and spatially legible without becoming a literal ghost story.",
+  "detail_level": "Crisp whales, passage and route discontinuity; coast and deep water simplified into quiet layered shapes with room for interface annotations.",
+  "composition": "The unchanged bay anchors the center; an earlier group enters it from one side while a later group passes offshore on the other, making absence visible without a written before-and-after label.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "panel borders", "ghost whale", "skeleton", "blood", "dead whale", "active hunt", "harpoon", "industrial ship", "Pandoran creatures"],
+  "consistency_notes": "Use anatomically correct Earth baleen whales and keep the habitat physically suitable in both temporal halves. Do not imply that the later animals genetically lost migration; the missing link is social demonstration.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no split-screen border, no ghost, no carcass, no hunting violence, no photographic or CGI look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

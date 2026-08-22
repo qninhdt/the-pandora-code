@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-local-memory-port",
+  "chapter_slug": "what-eywa-is",
+  "role": "comparison",
+  "narrative_purpose": "Shows why point-to-point memory retrieval is not evidence of a global conscious workspace: one Na'vi opens one bright local path at a sacred tree while the immense surrounding root web remains in separate dim pockets rather than igniting together.",
+  "subject": "A Na'vi kneels at the hanging tendrils of a sacred willow-like tree and joins a queue to one tendril. From that single contact, one narrow bright path runs down the trunk and through the roots to one small distant cluster holding a faint ancestral silhouette. All around it, an enormous underground mesh extends to many other clusters, but those regions remain dim, separate, and unlit; there is no planet-wide flash and no central glowing brain.",
+  "scene": "Night at a sacred tree with the soil shown in cross-section, one local memory route illuminated inside a far larger dormant network.",
+  "camera": "Wide side-on cutaway holding the kneeling figure, the tree, and the branching underground mesh in one frame.",
+  "light": "The single accessed route glows bright cyan from the living contact to one memory pocket; the rest of the network stays in deep teal shadow.",
+  "palette": "Cool network tones with one restrained magenta trace inside the ancestral memory pocket; no broad warm illumination.",
+  "style": "Painterly speculative-biology naturalist cutaway, observed and anatomical rather than mystical poster art.",
+  "detail_level": "Crisp on the local contact and one illuminated route, increasingly soft and dim across the unused network.",
+  "composition": "Na'vi and tree on the left third, selected memory pocket on the right third, dormant network spanning the lower frame with dark space above and between.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "global flash", "central brain shape", "multiple bright routes"],
+  "consistency_notes": "Only one point-to-point route may be bright. The larger mesh must visibly remain partitioned into dim local pockets, which is the teaching contrast.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no labels, no arrows, no planet-wide ignition, no central deity face, no photographic or 3D-render look, no lens flare, no neon UI",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

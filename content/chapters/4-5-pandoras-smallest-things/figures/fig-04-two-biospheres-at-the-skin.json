@@ -1,0 +1,19 @@
+{
+  "id": "fig-04-two-biospheres-at-the-skin",
+  "chapter_slug": "pandoras-smallest-things",
+  "role": "comparison",
+  "narrative_purpose": "A microscopic border scene replaces the simplistic 'alien germ equals instant plague' trope with the sequence of ecological and molecular gates any cross-biosphere pathogen would need to cross.",
+  "subject": "A close cutaway of blue living skin forming a broad vertical boundary at center. On the left, a sparse cluster of Earth-like microbial rods and spheres approaches through air and moisture; most fail to attach and drift away. At one small contact point a hooked cell reaches a membrane receptor but does not fit. On the right, native Pandoran surface microbes already occupy dense protective films and niches. Beneath the skin, quiet immune-like cells wait in tissue, separated from the outside by intact layers.",
+  "scene": "Abstract but organic microscopic space at the interface between two biospheres, with a single continuous skin barrier and dark clean surroundings.",
+  "camera": "Straight-on high-magnification cutaway, external microbes left, barrier center, resident community and tissue defences right and below.",
+  "light": "Cyan rim on the skin barrier, teal glow for resident organisms, sparse amber for rejected outsiders, restrained magenta at the mismatched receptor contact.",
+  "palette": "Deep indigo ground, blue-cyan tissue, living teal residents, sparse amber outsiders and one magenta incompatibility accent.",
+  "style": "Painterly microscopic naturalist diagram, tactile membranes and cells, elegant rather than vector-clean.",
+  "detail_level": "Crisp at the skin layers, mismatched receptor, resident film and waiting immune cells; dark margins for labels.",
+  "composition": "A strong central barrier dividing the frame, multiple failed steps readable from left to right without arrows, clear open spaces near each gate.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "gore", "monster viruses", "hazmat suits"],
+  "consistency_notes": "Communicate barriers and incompatibility spatially. Avoid implying guaranteed safety or guaranteed infection; the image represents filters, not a verdict.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no labels, no arrows, no infographic chrome, no gore, no giant horror microbes, no photographic or 3D-render look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

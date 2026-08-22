@@ -1,0 +1,52 @@
+# Phân tích Chi tiết - Section 06
+
+## 1. Mục tiêu Cụ thể của Section
+- **Thông điệp (Intent):**
+  - Khám phá động lực học tiến hóa tương hỗ ở cấp độ thân mật nhất giữa vật chủ (*host*) và mầm bệnh (*pathogen*) sau khi mầm bệnh đã vượt qua các "ổ khóa" phòng vệ phân tử.
+  - Làm rõ và phân biệt hai cơ chế đồng tiến hóa (*coevolution*) cơ bản mà truyền thông đại chúng thường đánh đồng:
+    1. *Cuộc chạy đua vũ trang định hướng (directional arms race):* Tiến hóa leo thang tích lũy liên tục theo một trục (vũ khí/giáp trụ ngày càng đồ sộ, độc tố và kháng độc tố), các giải pháp cũ bị đào thải.
+    2. *Chọn lọc biến động (fluctuating selection / negative frequency-dependent selection):* Hướng chọn lọc liên tục đảo chiều; tính hiếm trở thành lợi thế sinh tồn; không kiểu gen nào ngự trị vĩnh viễn ở đỉnh cao (động lực Nữ hoàng Đỏ / Red Queen dynamics).
+  - Hướng dẫn tương tác với mô hình trực quan `<RedQueenRace />` để quan sát sự khác biệt giữa hai cơ chế và lưu ý tính cẩn trọng khoa học: mô hình tinh giản (*toy pattern*) dùng để phân biệt hai động lực học với các dấu ấn dữ liệu khác nhau, chứ không giản lược thực tế phức tạp của quần thể tự nhiên.
+- **Khung xưng hô (Pronouns):**
+  - Ngôi thứ hai (*"your face"*, *"Move the generation slider"*, *"does not tell you"*): Dùng cách diễn đạt trực tiếp, tự nhiên (*"Kẻ thù ghi nhớ diện mạo của bạn"*, *"Di chuyển thanh trượt thế hệ"*, *"không cho bạn biết"*).
+  - Giữ giọng văn học thuật sinh học tiến hóa sắc sảo, triết lý, kết hợp phong cách giải thích trực quan, gợi mở và chính xác.
+
+## 2. Điểm nghẽn Cú pháp & Ẩn dụ (Bottlenecks)
+- **Ẩn dụ/Thành ngữ:** *"The enemy learns your face"*
+  - *Hướng xử lý:* "Kẻ thù ghi nhớ diện mạo của bạn" hoặc "Kẻ thù học cách nhận diện bạn". Ẩn dụ về việc mầm bệnh nhận diện các protein bề mặt / đặc điểm phân tử của kiểu gen vật chủ chiếm ưu thế.
+- **Ẩn dụ/Thành ngữ:** *"It begins to edit both participants."*
+  - *Hướng xử lý:* Động từ *"edit"* (biên tập / nhào nặn / chỉnh sửa). Ám chỉ việc chọn lọc tự nhiên liên tục tinh chỉnh bộ gen của cả vật chủ lẫn mầm bệnh. Cần chuyển ngữ sinh động: *"Nó bắt đầu nhào nặn cả hai bên tham gia"*.
+- **Ẩn dụ/Thành ngữ:** *"both sides ratchet along one axis"*
+  - *Hướng xử lý:* *"ratchet"* là cơ cấu bánh cóc (chỉ tiến từng nấc theo một chiều, không thể đảo ngược). Hướng xử lý: *"cả hai phía cùng leo thang từng nấc dọc theo một trục duy nhất"*.
+- **Ẩn dụ/Thành ngữ:** *"...not because it is universally superior, but because the pathogen has practised on somebody else."*
+  - *Hướng xử lý:* Nhân hóa thú vị với *"practised on somebody else"*. Hướng chuyển ngữ: *"...không phải vì nó vượt trội toàn diện, mà vì mầm bệnh đã quen 'tập dượt' trên kẻ khác"*.
+- **Ẩn dụ/Thành ngữ:** *"Fitness is not a medal pinned permanently to a genotype. It depends on what else is common right now."*
+  - *Hướng xử lý:* Hình ảnh ẩn dụ tấm huy chương gắn cố định. Hướng xử lý: *"Độ thích nghi không phải là một tấm huy chương được gài cố định vào một kiểu gen. Nó phụ thuộc vào việc những kiểu gen nào khác đang phổ biến ở thời điểm hiện tại."*
+- **Ẩn dụ/Thành ngữ:** *"The host that fills the population also paints a target on itself."*
+  - *Hướng xử lý:* *"paints a target on itself"* (tự vẽ hồng tâm / bia ngắm lên chính mình). Khi vật chủ chiếm số đông, nó trở thành mục tiêu tối ưu cho mầm bệnh thích nghi.
+- **Cấu trúc khó:** *"Neither toy pattern proves that a real population will behave so neatly."*
+  - *Hướng xử lý:* *"toy pattern"* dịch là *"mô hình tinh giản / mô hình mô phỏng đơn giản"*. Cần nhấn mạnh tính cẩn trọng khoa học: không ngộ nhận mô hình lý thuyết gọn gàng với thực tế sinh thái đa biến.
+
+## 3. Thuật ngữ Đặc thù của Section
+- `coevolution`: [Đồng tiến hóa] - Quá trình hai hay nhiều loài tương tác sinh học và cùng thúc đẩy sự tiến hóa của nhau.
+- `host`: [Vật chủ] - Sinh vật mang hoặc bị mầm bệnh xâm nhiễm.
+- `pathogen`: [Mầm bệnh] - Tác nhân vi sinh gây bệnh.
+- `genotype`: [Kiểu gen] - Tập hợp các gen đặc thù của cá thể.
+- `selective forces`: [Lực chọn lọc / Áp lực chọn lọc] - Các tác nhân môi trường thúc đẩy chọn lọc tự nhiên.
+- `directional arms race`: [Cuộc chạy đua vũ trang định hướng] - Tiến hóa leo thang một chiều giữa tấn công và phòng thủ.
+- `fluctuating selection`: [Chọn lọc biến động / Chọn lọc dao động] - Cơ chế chọn lọc mà hướng ưu thế đảo chiều liên tục theo thời gian.
+- `negative frequency-dependent selection`: [Chọn lọc phụ thuộc tần số âm] - Quy luật chọn lọc trong đó kiểu gen càng hiếm thì càng có giá trị thích nghi cao, càng phổ biến thì càng dễ bị khai thác.
+- `fitness`: [Độ thích nghi / Giá trị thích nghi] - Khả năng sinh tồn và đóng góp gen cho thế hệ kế tiếp.
+- `counter-toxins`: [Kháng độc tố] - Chất vô hiệu hóa độc tố sinh học.
+- `countermeasure`: [Biện pháp đối phó / Phản sách] - Cơ chế chống trả lại vũ khí sinh học của đối phương.
+- `resistance costs`: [Chi phí kháng bệnh / Cái giá của sự đề kháng] - Năng lượng và tài nguyên cơ thể phải đánh đổi để duy trì phòng thủ.
+- `spatial structure`: [Cấu trúc không gian] - Sự phân bố cá thể và quần thể theo không gian địa lý.
+- `toy pattern / toy model`: [Mô hình tinh giản / Mô hình đồ chơi] - Mô hình lý thuyết đơn giản hóa nhằm minh họa nguyên lý.
+- `signatures in data`: [Dấu ấn trong dữ liệu / Dấu hiệu nhận diện trong dữ liệu] - Các mẫu hình thống kê/di truyền đặc trưng của từng cơ chế tiến hóa.
+
+## 4. Ghi chú khác
+- Tương tác với component `<RedQueenRace />`: Cần lưu ý các thao tác được nhắc đến trong văn bản (*"generation slider"*, *"changing-target mode"*, *"arms race"*) để bản dịch ăn khớp hoàn hảo với nhãn giao diện của thành phần mô phỏng trực quan.
+- Tinh thần đối chiếu: Phân biệt rõ hai trạng thái:
+  1. Động lực leo thang (*escalating in one direction* - vũ trang)
+  2. Động lực xoay vần (*rotating through old alternatives* - vòng lặp Nữ hoàng Đỏ)
+- Đảm bảo giữ nguyên vẹn thẻ `<RedQueenRace />` và các thẻ `<GlossaryTerm>` khi tiến hành dịch ở các bước sau.

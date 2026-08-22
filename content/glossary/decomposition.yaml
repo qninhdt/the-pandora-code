@@ -1,0 +1,23 @@
+id: decomposition
+label:
+  vi: Phân hủy
+  en: Decomposition
+definition:
+  vi: >-
+    Quá trình sinh vật phân giải xác chết và chất thải thành những phân tử nhỏ hơn, giải phóng lại
+    carbon, nitơ, phốt pho cùng các nguyên tố khác cho hệ sinh thái. Động vật vụn xác xé nhỏ vật
+    liệu; nấm và vi khuẩn tiết enzyme ra ngoài để cắt các phân tử lớn; những kẻ ăn vi sinh vật tiếp
+    tục hoàn trả dưỡng chất. Phân hủy không làm vật chất biến mất—nó đổi chủ và đổi dạng.
+  en: >-
+    The biological breakdown of dead organisms and waste into smaller molecules, returning carbon,
+    nitrogen, phosphorus, and other elements to an ecosystem. Detritivores fragment material;
+    fungi and bacteria release enzymes that cut large molecules apart; microbial grazers release
+    nutrients again. Decomposition does not make matter disappear—it changes its form and owner.
+see_also:
+  - soil-aggregate
+  - mycelium
+category: bio
+tags:
+  - ecology
+  - chemistry
+cover_prompt: A painterly sequence contained in one forest-floor scene where a luminous fallen leaf softens into fungal threads, fine particles and new root tips, cool teal biological glow, no text or labels.

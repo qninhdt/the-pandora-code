@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-false-positive-oxygen",
+  "chapter_slug": "whats-in-the-air",
+  "role": "comparison",
+  "narrative_purpose": "Shows why oxygen alone is not proof of life: a dead, ocean-lost world can retain an oxygen-rich atmosphere, whereas a living-world diagnosis depends on incompatible gases persisting together.",
+  "subject": "Two equal planetary crescents seen side by side against dark space. The left world is dead and dry: a pale cracked surface with empty basins, no clouds, no vegetation and a thin bright blue atmospheric rim; faint hydrogen wisps escape upward from the rim into space under harsh ultraviolet light. The right world is Pandora-like and alive: dark ocean, dense cloud, glowing forest at the night edge, and a thicker atmospheric rim containing several visually distinct interwoven streams of cool cyan, warm amber and pale sulfur-yellow haze that remain side by side rather than blending away.",
+  "scene": "A matched deep-space comparison of a lifeless oxygen false positive and a chemically disequilibrated living atmosphere.",
+  "camera": "Flat wide astronomical view, both crescents at equal scale and phase.",
+  "light": "The same off-frame star grazes both atmospheric rims; the dead world is stark and pale, the living world glows softly from atmosphere and night-side life.",
+  "palette": "Global void-indigo space; dead world desaturated stone and cold blue; living world cyan-teal with restrained amber and sulfur-yellow atmospheric accents.",
+  "style": "Painterly comparative planetary plate, atmospheric and literal, not a spectral chart or infographic.",
+  "detail_level": "High enough to read cracked dry basins and escaping wisps on the left, ocean-cloud-forest and interwoven gas streams on the right; dark space plain.",
+  "composition": "Two equal crescents with broad dark separation; dead dry world left, living chemically busy world right, generous open space around each rim for labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "axes", "wavelength bars", "arrows", "people", "spacecraft", "watermark", "city lights"],
+  "consistency_notes": "Oxygen-rich blue rims appear on both worlds. The teaching contrast is that the left remains dead and dry while the right sustains several incompatible atmospheric streams alongside visible oceans and life.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no spectrum chart, no arrows, no Earth continents, no cities, no photographic or glossy 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/whats-in-the-air/fig-00-cover.png"]
+}

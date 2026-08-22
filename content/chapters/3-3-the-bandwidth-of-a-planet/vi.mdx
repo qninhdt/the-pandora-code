@@ -51,6 +51,19 @@ Chi tiết duy nhất đó — *hãy nghĩ "bay"* — là mảnh ghép kỹ thu�
 Sự thiên tài của "hãy nghĩ 'bay'" nằm ở chỗ nó cực kỳ nhỏ gọn. Người cưỡi truyền đi *ý niệm*; chính cơ thể con thú sẽ cung cấp hàng megabyte cho việc kiểm soát cơ bắp. Đây chính xác là cách một giao diện não-máy tính thực thụ phải vận hành, bởi vì giải pháp thay thế — truyền dữ liệu vận động thô — sẽ làm quá tải bất kỳ kênh truyền nào. Một liên kết băng thông thấp mang theo các mệnh lệnh cấp cao, dựa vào trí thông minh ở đầu tiếp nhận để tự hoàn thiện chi tiết, không phải là điểm yếu của tsaheylu. Đó là cách duy nhất để một liên kết như vậy có thể hoạt động được.
 </Callout>
 
+<DiagramFigure
+  src="/images/chapters/the-bandwidth-of-a-planet/fig-06-intent-not-muscles.png"
+  labels={[
+    { x: 18, y: 36, side: "right", label: "Một bit ý định", note: "Người cưỡi gửi một lệnh gọn như bay, trèo hoặc rẽ." },
+    { x: 49, y: 51, side: "right", label: "Giao diện tsaheylu", note: "Mối nối mang lệnh qua một kết nối phát sáng hẹp." },
+    { x: 81, y: 38, side: "left", label: "Mở rộng ở phía nhận", note: "Hệ thần kinh của banshee tự xòe lệnh thành tín hiệu đúng nhịp cho cánh, ngực và đuôi." },
+  ]}
+  alt="Một người Na'vi gửi duy nhất một xung sáng mảnh qua tsaheylu vào con banshee đang bay; chỉ khi xung tới cơ thể con vật, nó mới tỏa qua lát cắt hệ thần kinh thành hàng trăm nhánh điều khiển cánh, ngực và đuôi"
+  figNo="06"
+  caption="Một mẩu ý niệm, cả cơ thể thực thi. Mối liên kết chỉ mang mệnh lệnh hẹp — bay, vút lên, chuyển hướng — vào banshee. Vòi rồng dữ liệu chỉ xuất hiện ở đầu bên kia, nơi hệ thần kinh của chính con vật bung chỉ dẫn nhỏ ấy thành hàng trăm tín hiệu cơ bắp được căn thời gian chính xác. Tsaheylu hoạt động vì trí thông minh ở bộ thu giải nén thông điệp. Người cưỡi không bao giờ phải truyền trực tiếp từng nhịp cánh."
+  tier="inference"
+/>
+
 Điều này mang ý nghĩa to lớn đối với bài toán ngân sách của chúng ta, vì nó cho thấy mối liên kết động vật thực chất rất *rẻ*. Luồng lệnh truyền đi — một ý niệm trừu tượng — là không đáng kể, chỉ vỏn vẹn một vài bit. Luồng cảm giác truyền về thì phong phú hơn; việc cảm nhận cơ thể một con vật từ bên trong là thông tin thực tế, và chúng ta sẽ thấy nó vẫn nằm gọn gàng bên trong giới hạn truyền tải của một dây thần kinh sinh học đơn lẻ. Phép màu thường nhật của việc cưỡi một con banshee, điều trông có vẻ viễn tưởng nhất, hóa ra lại là nấc thang hòa hợp nhất với các định luật vật lý của Trái Đất. Chính bậc trên cùng của nấc thang, đêm tại Cây Linh Hồn, mới là thứ sẽ khiến những con số phải gào thét. Để hiểu lý do tại sao, chúng ta phải rời Pandora một lát và gặp gỡ người đàn ông đã dạy cho cả thế giới cách cân đong một suy nghĩ.
 ## Một bit thực chất là gì
 
@@ -98,6 +111,20 @@ Shannon chỉ cho chúng ta biết chính xác cái giá của sự hoàn hảo 
 <Callout variant="warning" title="Sự dự phòng không hề miễn phí — nó ăn mòn kênh truyền">
 Mỗi một bit sửa lỗi mà bạn thêm vào để bảo vệ thông điệp, chính là một bit mà bạn *không* thể sử dụng cho bản thân thông điệp đó. Độ trung thực tuyệt đối qua một kênh truyền nhiễu phải được đánh đổi bằng dung lượng. Việc chuyển giao một linh hồn không tổn hao ngang qua một sợi cáp sinh học ấm áp, đầy dao động có thể đòi hỏi bạn phải nhân đôi hoặc nhân ba lượng dữ liệu thô — tiêu tốn nhiều phần băng thông quý giá cho việc bảo vệ hơn là cho tải trọng dữ liệu. Kênh truyền càng nhiễu và mức cược càng cao, thì cái giá phải trả càng đắt đỏ. Một "bản sao hoàn hảo" là thứ đắt đỏ nhất mà bạn có thể yêu cầu một kênh truyền phải gánh vác.
 </Callout>
+
+<DiagramFigure
+  src="/images/chapters/the-bandwidth-of-a-planet/fig-07-redundancy-repairs-soul.png"
+  labels={[
+    { x: 12, y: 53, side: "right", label: "Gói thông tin nhỏ", note: "Mẫu hình bản ngã bắt đầu như một tín hiệu nhỏ nhưng dày đặc thông tin." },
+    { x: 37, y: 48, side: "right", label: "Bím dư thừa", note: "Các sợi lặp lại tăng thể tích để hỏng một bản sao không xóa được mẫu hình." },
+    { x: 52, y: 53, side: "left", label: "Kênh nhiễu", note: "Các đứt gãy hồng cho thấy thông tin mất đi khi môi trường sống truyền tín hiệu." },
+    { x: 87, y: 51, side: "left", label: "Đầu nhận tái dựng", note: "Các bản sao còn sống hội tụ thành mẫu hình nguyên vẹn ở phía bên kia." },
+  ]}
+  alt="Một khuôn mẫu bản ngã phát sáng nhỏ gọn được mở rộng thành bím dày gồm nhiều sợi lặp lại trước khi đi qua kênh sinh học ẩm ướt; nhiễu làm đứt vài sợi giữa đường, nhưng những phần lặp còn lại hội tụ ở bộ thu và dựng lại khuôn mẫu nguyên vẹn ban đầu"
+  figNo="07"
+  caption="Độ tin cậy cũng chiếm chỗ. Tải trọng ban đầu nhỏ, rồi phình thành một bím cấu trúc lặp lại trước khi bước vào kênh sống đầy nhiễu. Vài sợi bị mất, nhưng vẫn còn đủ bản sao của từng khuôn mẫu để bộ thu tái dựng cái toàn thể. Bím phụ ấy chính là mã sửa lỗi: không thể thiếu khi một bit hỏng có thể làm đổi khác một con người, và mỗi bit bảo vệ đều chiếm phần dung lượng lẽ ra có thể đưa con người ấy tới đích nhanh hơn."
+  tier="real_science"
+/>
 
 Vậy nên, chi phí thực sự của quá trình chuyển giao ý thức không chỉ nằm ở kích cỡ của một tâm trí. Đó là kích cỡ của một tâm trí, *cộng thêm* chi phí phát sinh khổng lồ để bảo đảm rằng không một bit quan trọng nào của nó bị đánh rơi trong quá trình trung chuyển qua loại cáp tồi tệ nhất cho công việc này.
 
@@ -192,6 +219,20 @@ Toàn bộ một bản đồ kết nối thần kinh — hàng trăm ngày, bấ
   figNo="04"
   caption="Hai cách để cân đo một linh hồn, và khoảng cách chênh lệch hàng triệu lần giữa chúng. Nếu hiểu theo toàn bộ một bản đồ kết nối thần kinh - mọi khớp thần kinh, hàng petabyte phần cứng - một tâm trí cần hàng trăm ngày để băng qua sợi cáp sinh học và buổi lễ là điều bất khả thi. Nếu hiểu theo luồng ý thức - dòng chảy mỏng manh của bản ngã được trải nghiệm, dung lượng vài trăm gigabit - nó có thể vượt qua chỉ trong một đêm. Toàn bộ tính khả thi của sự kiện thiêng liêng nhất Pandora phụ thuộc vào việc bạn tin một bản ngã thực chất là khái niệm nào trong hai khái niệm này."
   tier="inference"
+/>
+
+<DiagramFigure
+  src="/images/chapters/the-bandwidth-of-a-planet/fig-08-tree-of-souls-transfer.png"
+  labels={[
+    { x: 25, y: 52, side: "right", label: "Cơ thể nguồn", note: "Cơ thể người đang chết là một đầu của truyền tải, không phải toàn bộ lượng dữ liệu của một gia tộc." },
+    { x: 74, y: 58, side: "left", label: "Cơ thể đích", note: "Thân avatar là đầu thứ hai nhận dòng thông tin được tái dựng." },
+    { x: 50, y: 59, side: "right", label: "Tuyến thần kinh hội tụ", note: "Nhiều liên kết nhỏ gặp một đường sáng dày qua Cây Linh Hồn." },
+    { x: 50, y: 28, side: "right", label: "Câu hỏi về codec", note: "Cảnh phim cho thấy sự truyền tải; nó mang mọi synapse hay một dòng nén vẫn là suy luận." },
+  ]}
+  alt="Dưới Cây Linh Hồn, một phụ nữ loài người hấp hối và cơ thể avatar của bà nằm trên hai chiếc nôi bằng rễ, quanh họ là hàng trăm người Na'vi đang kết nối; các liên kết mờ hội tụ thành một luồng sáng dày chạy qua rễ từ cơ thể nguồn sang cơ thể đích"
+  figNo="08"
+  caption="Phép tính quay về với chính đêm mà nó cần phán xét. Hai cơ thể — một nguồn, một đích — được ghép qua Cây Linh Hồn, trong khi các liên kết thần kinh của cả thị tộc hội tụ lên tuyến đường giữa chúng. Nếu tải trọng là từng khớp thần kinh, buổi lễ phải kéo dài nhiều tháng. Nếu tải trọng là luồng ý thức đã nén, ánh sáng có thể sang tới nơi trước bình minh. Khung cảnh là canon; bộ mã hóa và tải trọng thì không."
+  tier="canon"
 />
 
 Đó chính là món quà thầm lặng mà những phép toán của người kỹ sư trao trả lại cho người kể chuyện. Nếu hiểu theo nghĩa đen, như một quá trình tải xuống mọi khớp thần kinh, sự dịch chuyển ý thức sẽ vỡ vụn trước bức tường của Shannon. Nhưng nếu hiểu nó như việc truyền tải một *luồng thông tin hẹp, nén chặt và mang ý nghĩa cao* mà bản thân bản ngã ý thức thực sự là — chỉ lấy phần cốt lõi, không lấy hàng gigabyte — thì nó hoàn toàn vừa vặn, thậm chí còn dư dả, bên trong băng thông của một đêm. Và đó không phải là một trò ăn gian. Đó cũng chính là thủ thuật mà bộ não của bạn vận hành trong từng giây phút thức tỉnh, vứt bỏ đi vòi rồng dữ liệu thô và chỉ giữ lại ý nghĩa. Nghi lễ của người Na'vi, nếu nhìn nhận theo cách này, không phải là việc di chuyển một chiếc ổ cứng. Đó là việc di chuyển ảo giác người dùng — và ảo giác người dùng luôn luôn đủ nhỏ để có thể gửi đi.

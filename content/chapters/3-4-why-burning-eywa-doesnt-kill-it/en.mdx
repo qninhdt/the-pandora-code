@@ -159,19 +159,71 @@ Now read the woodsprites again. The *atokirina'* — the drifting, luminous seed
 The two get confused constantly, and the difference is everything. A resistant system is hard to damage — thick bark, a high wall. A resilient system is hard to *finish* — it takes the damage and regrows. Eywa is not especially resistant: her forests burn. She is ferociously resilient: she grows back from a seed bank dispersed across a whole moon. The honest reason burning her fails is not that the fire does no damage. It is that the network repairs the damage — reseeds the burned nodes from its untouched hubs — faster than blind burning can ever pull it toward the cliff.
 </Callout>
 
+<DiagramFigure
+  src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-05-resistance-vs-resilience.png"
+  labels={[
+    { x: 25, y: 42, side: "right", label: "Resistance", note: "Thick bark keeps the fire from entering; the standing trunk looks unchanged." },
+    { x: 77, y: 47, side: "left", label: "Resilience", note: "The stand burns to stumps, but buried reserves are already rebuilding lost function." },
+    { x: 78, y: 76, side: "left", label: "Recovery reserve", note: "Young shoots, fungal threads, and living soil carry the second strategy forward." },
+  ]}
+  alt="Two forest survival strategies: a thick-barked trunk on the left turns aside a low fire and remains unchanged, while on the right an ordinary stand has burned to black stumps but is already crowded with new shoots, fungal threads, and young saplings"
+  figNo="05"
+  caption="Armour and recovery are not the same promise. Resistance (left) keeps the blow outside: the fire reaches the trunk and fails to enter. Resilience (right) makes no such claim — the trees are gone and the ash is real — but the buried reserve is already rebuilding the lost function. Eywa survives in the second way. The wound happens. It simply does not get the last word."
+  tier="real_science"
+/>
+
 ## How you would actually kill her
 
 It would be a strange kind of honesty that spent a whole chapter proving Eywa nearly unkillable and then stopped without admitting the obvious: *nearly* is not *entirely*. The same mathematics that explains her resilience also draws, with uncomfortable precision, the map of her death. A distributed network is hard to kill by accident and quite possible to kill on purpose, and the difference is exactly the difference between what the RDA did and what it would have had to do. There are four ways across the line, and laying them out is not ghoulishness — it is the proof that the resilience is real rather than magical, because a thing that genuinely could not be destroyed under any conditions would not be resilient. It would just be a miracle.
 
 The first way is **targeted hub decapitation** — the Albert-Barabási attack mode, executed at scale. Stop clear-cutting at random and start hunting hubs: identify every Tree of Souls, every Tree of Voices, every Spirit Tree, every major bioluminescent relay on the moon, and destroy them simultaneously. A scale-free network fragments after losing only a tiny fraction of its most connected nodes, so this would not require burning much of Pandora at all. It would require burning exactly the *right* sliver of it. Quaritch's instinct at the Tree of Souls was this strategy in embryo; he simply aimed at one hub instead of all of them at once.
 
+<DiagramFigure
+  src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-06-simultaneous-hub-strike.png"
+  labels={[
+    { x: 24, y: 39, side: "right", label: "Rare hubs", note: "The circled sacred trees are few compared with the surrounding intact forest." },
+    { x: 52, y: 55, side: "right", label: "Simultaneous strike", note: "A coordinated attack removes connectors at once rather than clearing every ordinary tree." },
+    { x: 79, y: 80, side: "left", label: "Topological damage", note: "The links fail across a huge landscape even though the physically destroyed area stays small." },
+  ]}
+  alt="A high night panorama across forest, coast, and reef where almost every ordinary tree remains standing, but seven rare sacred-tree, fungal, and underwater hubs are targeted together; their surrounding links fail and the intact landscape separates into disconnected pools of light"
+  figNo="06"
+  caption="A surgical attack looks nothing like a clear-cut. Almost all the forest can remain standing while the rare structures that hold regions together are removed at once — sacred trees on land, fungal access hubs, Spirit Trees below the sea. The area destroyed is tiny. The topological damage is enormous. This is the attack mode Quaritch glimpsed at one tree, expanded into the only version the mathematics says could decapitate the mesh."
+  tier="speculation"
+/>
+
 The second way is **crossing the percolation threshold by attrition** — winning the race against regeneration. The woodsprites reseed faster than blind burning can accumulate damage, so the threshold stays out of reach. But that is a race, not a law. Burn faster than Eywa can regrow, sustain it long enough, and the standing density of the network creeps down toward *p*<sub>c</sub> — and then one ordinary day, indistinguishable from the last, the giant component crosses the cliff and the planetary mind shatters into mute fragments. Not a decline. A threshold, reached by outpacing the regrowth that normally holds it back.
 
 The third way is subtler and crueller: **sterilising the regeneration itself**. Resilience depends entirely on the capacity to regrow, and that capacity has a physical substrate — the seeds, the woodsprites, the living soil. Poison the soil against germination, or destroy the *atokirina'* in flight, and you have not killed a single mature tree, yet you have converted every future blow from survivable into permanent. A network that cannot regrow is, from the moment its seed bank dies, merely a network being slowly subtracted toward the threshold with no way back.
 
+<DiagramFigure
+  src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-07-sterile-future.png"
+  labels={[
+    { x: 27, y: 43, side: "right", label: "Recovery reserve", note: "Seeds, fungi, and seedlings wait beneath a mature canopy that still has a future." },
+    { x: 75, y: 43, side: "left", label: "Sterile present", note: "Adult trunks remain standing over pale soil where the next generation has already disappeared." },
+    { x: 75, y: 79, side: "left", label: "Resilience turned countdown", note: "When the last adults fall, there is no buried reserve left to restart the forest." },
+  ]}
+  alt="Two apparently similar mature forests shown in soil cutaway: beneath the left are seeds, living fungal threads, settling woodsprites, and many seedlings, while beneath the right the adult trunks still stand over pale poisoned soil containing empty husks, dead hyphae, and no next generation"
+  figNo="07"
+  caption="A forest can be dead in the future while still green in the present. On the left, the recovery reserve waits below every adult: seeds, fungi, woodsprites, seedlings. On the right, the same mature canopy stands over sterile ground. No tree had to fall today. But every tree that falls tomorrow has become irreplaceable, and resilience has quietly been converted into a countdown."
+  tier="speculation"
+/>
+
 The fourth way is the most insidious, and it comes from one of the genuinely frightening results in modern network science. In 2010 Sergey Buldyrev and colleagues showed that <GlossaryTerm slug="interdependent-networks">interdependent networks</GlossaryTerm> — two networks that each depend on the other to function — are dramatically *more* fragile than either alone, because failure ricochets back and forth between them in a <GlossaryTerm slug="cascading-failure">cascading failure</GlossaryTerm>: nodes fail in network A, which knocks out the network-B nodes that depended on them, which knocks out further A nodes that depended on *those*, and so on, an avalanche that can level both systems from a single push. Pandora is exactly such a coupled pair. The flora is one network; the fauna — the pollinators, the seed-carriers, the woodsprites and the great beasts that defend the trees — is another, and each depends utterly on the other. Which means the way to kill Eywa might not be to burn a single tree. It might be to release a plague that kills only *animals*, and let the cascade do the rest: no fauna to disperse seeds or pollinate, so the flora fails, so the remaining fauna starve, the collapse bouncing between the two networks until both are gone. The most efficient way to kill a forest, the mathematics suggests, may be to never touch the forest at all.
 
 <CascadingFailure />
+
+<DiagramFigure
+  src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-08-fauna-flora-cascade.png"
+  labels={[
+    { x: 18, y: 55, side: "right", label: "Animals present", note: "Pollinators, seed carriers, grazers, flowers, and fruit still support one another." },
+    { x: 50, y: 55, side: "right", label: "Fauna removed first", note: "Plants remain standing for a while, but pollination and seed movement have stopped." },
+    { x: 82, y: 55, side: "left", label: "Cascade", note: "Fewer plants mean less food, so the remaining animals collapse after the initial loss." },
+  ]}
+  alt="The same Pandoran clearing in three stages: first full of pollinators, seed carriers, grazers, flowers, and fruit; then with mature plants still standing but animals absent and seeds rotting beneath their parents; finally with a thinning canopy, no young plants, scarce fruit, and the few remaining animals starving"
+  figNo="08"
+  caption="Kill neither tree nor root, and the forest can still fail. Remove the animals first (left to right): flowers go unpollinated, seeds stop travelling, young plants vanish. Then the blow returns across the dependency — fewer plants mean less food, and the remaining fauna collapse in turn. Each network subtracts the support of the other until both fall. The efficient attack on Eywa may begin in a forest that no weapon ever touches."
+  tier="speculation"
+/>
 
 
 <ClaimAudit

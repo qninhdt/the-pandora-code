@@ -9,18 +9,20 @@ subtitle:
   vi: >-
     Grace nói mạng lưới Pandora có nhiều kết nối hơn cả số synapse trong não người. Nhưng kỹ sư hỏi
     câu khác: bao nhiêu thông tin thực sự chảy qua mối liên kết tsaheylu, và nhanh đến mức nào? Lý
-    thuyết thông tin của Shannon đặt một trần cứng lên mọi đường truyền - kể cả một sợi cáp thần kinh.
+    thuyết thông tin của Shannon đặt một trần cứng lên mọi đường truyền - kể cả một sợi cáp thần
+    kinh.
   en: >-
     Grace says Pandora's network has more connections than there are synapses in a human brain. But
     the engineer asks a different question: how much information actually crosses the tsaheylu bond,
-    and how fast? Shannon's information theory sets a hard ceiling on any channel - even a nerve cable.
+    and how fast? Shannon's information theory sets a hard ceiling on any channel - even a nerve
+    cable.
 hook:
   vi: >-
     Đỉnh cao của mọi mối liên kết trên Pandora là khoảnh khắc cả một ý thức người băng qua sợi cáp
-    sinh học để sang một thân xác mới. Canon coi đó là phép màu. Nhưng nếu ta cân nó bằng bit - đơn vị
-    đo thông tin của Claude Shannon - thì câu hỏi đổi hẳn: một tâm trí nặng bao nhiêu bit, và một sợi
-    dây thần kinh tải được bao nhiêu bit mỗi giây? Câu trả lời vừa đập tan cách đọc dễ dãi nhất, vừa
-    bất ngờ cứu lấy cảnh quay bất khả thi nhất của cả bộ phim.
+    sinh học để sang một thân xác mới. Canon coi đó là phép màu. Nhưng nếu ta cân nó bằng bit - đơn
+    vị đo thông tin của Claude Shannon - thì câu hỏi đổi hẳn: một tâm trí nặng bao nhiêu bit, và một
+    sợi dây thần kinh tải được bao nhiêu bit mỗi giây? Câu trả lời vừa đập tan cách đọc dễ dãi nhất,
+    vừa bất ngờ cứu lấy cảnh quay bất khả thi nhất của cả bộ phim.
   en: >-
     The summit of every bond on Pandora is the moment an entire human consciousness crosses a
     biological cable into a new body. Canon calls it a miracle. But weigh it in bits - Claude
@@ -67,7 +69,7 @@ glossary_terms:
 figures:
   - id: fig-00-cover
     role: hero
-    asset_status: pending
+    asset_status: ready
   - id: fig-01-the-bond-as-cable
     role: hero
     asset_status: ready
@@ -82,6 +84,15 @@ figures:
     asset_status: ready
   - id: fig-05-slow-cable
     role: diagram
+    asset_status: ready
+  - id: fig-06-intent-not-muscles
+    role: diagram
+    asset_status: ready
+  - id: fig-07-redundancy-repairs-soul
+    role: diagram
+    asset_status: ready
+  - id: fig-08-tree-of-souls-transfer
+    role: inline
     asset_status: ready
   - id: fig-99-background
     role: hero
@@ -103,29 +114,24 @@ sources:
     label: Avatar (2009) script - The Internet Movie Script Database (IMSDb)
     url: https://imsdb.com/scripts/Avatar.html
   - kind: science
-    label: >-
-      C. E. Shannon - A Mathematical Theory of Communication (Bell System Technical
-      Journal, 1948)
+    label: C. E. Shannon - A Mathematical Theory of Communication (Bell System Technical Journal, 1948)
     url: https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf
   - kind: science
-    label: >-
-      Koch et al. - How Much the Eye Tells the Brain (Current Biology, 2006; retina
-      ~10 Mbit/s)
+    label: Koch et al. - How Much the Eye Tells the Brain (Current Biology, 2006; retina ~10 Mbit/s)
     url: https://www.eurekalert.org/news-releases/468943
   - kind: science
     label: >-
-      Balasubramanian et al. - How the optic nerve allocates space, energy capacity,
-      and information (J. Neuroscience, 2009)
+      Balasubramanian et al. - How the optic nerve allocates space, energy capacity, and information
+      (J. Neuroscience, 2009)
     url: https://pubmed.ncbi.nlm.nih.gov/19535603/
   - kind: science
     label: >-
-      Zheng & Meister - The Unbearable Slowness of Being: the brain works at ~10 bits
-      per second (Neuron, 2025)
+      Zheng & Meister - The Unbearable Slowness of Being: the brain works at ~10 bits per second
+      (Neuron, 2025)
     url: https://pubmed.ncbi.nlm.nih.gov/40514587/
   - kind: science
     label: Tor Norretranders - The User Illusion (1991; the conscious bottleneck)
-    url: https://www.holisticperspective.org/tor-norretranders-user-illusion-and-the-theory-of-holistic-perspective/
+    url: >-
+      https://www.holisticperspective.org/tor-norretranders-user-illusion-and-the-theory-of-holistic-perspective/
   - kind: research-note
-    label: >-
-      The Bandwidth of a Planet - Information Theory and the Tsaheylu Bond (chapter
-      research note)
+    label: The Bandwidth of a Planet - Information Theory and the Tsaheylu Bond (chapter research note)

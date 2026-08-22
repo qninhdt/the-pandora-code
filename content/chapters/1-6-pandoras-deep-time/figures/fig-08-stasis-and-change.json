@@ -1,0 +1,20 @@
+{
+  "id": "fig-08-stasis-and-change",
+  "chapter_slug": "pandoras-deep-time",
+  "role": "comparison",
+  "narrative_purpose": "Shows why twelve million years of Na'vi stasis is extraordinary: an Earth lineage changes across successive environments while the Pandoran lineage remains visually fixed beneath a stabilizing network.",
+  "subject": "A split deep-time procession with four evenly spaced time positions in each half. On the left, four Earth hominin silhouettes progress from a small long-armed forest-adapted ancestor, to an upright early walker, to a shorter robust tool-carrying human, to a modern tall human; behind them the habitat changes from dense forest to open grassland to cold rocky steppe. On the right, the same tall slender Na'vi silhouette is repeated four times with identical height, limb proportions and posture; behind each repetition the landscape changes through forest, volcanic ash, flooded wetland and renewed forest, while one continuous web of luminous roots runs beneath all four positions.",
+  "scene": "A symbolic naturalist deep-time plate comparing lineage change under shifting Earth environments with repeated Pandoran form under a continuous living network.",
+  "camera": "Straight-on full-body procession, all eight silhouettes at matched scale and fully separated.",
+  "light": "Earth half lit by restrained natural daylight shifting between habitats; Pandora half lit from below by the same continuous cyan-teal root network.",
+  "palette": "Earth half desaturated stone, green and cold grey; Pandora half dominated by global indigo, teal and cyan, with scarce amber at the volcanic interval.",
+  "style": "Painterly comparative evolutionary naturalist plate, silhouettes anatomically clear, no infographic chrome.",
+  "detail_level": "Moderate-high on changing body proportions and repeated identical Na'vi forms; background habitats simplified but distinct.",
+  "composition": "Two equal horizontal processions separated by dark space; four changing Earth figures on the left, four visually identical Na'vi figures on the right above one unbroken root web.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "timeline ticks", "weapons", "spacesuits", "city skyline", "watermark", "overlapping silhouettes"],
+  "consistency_notes": "The right-side Na'vi figure must be copied consistently at all four positions. The left-side Earth lineage must visibly change in stature, limb proportions and habitat rather than merely repeat.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no timeline numbers, no arrows, no cartoon evolution march, no wrong Na'vi limb count, no duplicated changing Earth figure, no photographic or 3D-render look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-06-living-archive.png"]
+}

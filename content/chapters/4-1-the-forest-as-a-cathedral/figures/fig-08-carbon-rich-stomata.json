@@ -1,0 +1,20 @@
+{
+  "id": "fig-08-carbon-rich-stomata",
+  "chapter_slug": "the-forest-as-a-cathedral",
+  "role": "comparison",
+  "narrative_purpose": "Makes the dense carbon-rich atmosphere mechanism legible at leaf scale: a Pandoran leaf can admit abundant carbon dioxide through a narrowly opened stoma while losing less water than an Earth leaf opened wide for the same carbon supply.",
+  "subject": "Two matched leaf-surface cutaways viewed at the same scale. On the left, an Earth leaf has two kidney-shaped guard cells pulled far apart around a wide stomatal pore; only a sparse handful of carbon-dioxide molecules enter while a broad plume of water vapour escapes. On the right, a blue-green Pandoran leaf has its guard cells only slightly parted; a dense cluster of carbon-dioxide molecules enters through the narrow slit while only a thin wisp of water vapour leaves. Beneath both pores, moist mesophyll chambers and branching veins are visible.",
+  "scene": "A paired botanical specimen plate suspended against a dark atmospheric field, with the Earth half in ordinary humid air and the Pandora half in visibly denser teal haze; the two leaves are aligned for direct comparison without baked-in symbols.",
+  "camera": "Matched macro cutaways from directly above each epidermis, tilted just enough to reveal the air chambers beneath the pores.",
+  "light": "Soft cyan transmitted light through both leaves; the Pandoran air carries deeper teal haze; escaping water catches pale mist highlights while incoming carbon is marked by sparse amber molecular spheres.",
+  "palette": "Cool indigo and teal dominate, with pale mist for water vapour and restrained amber only on the carbon-dioxide molecules.",
+  "style": "Painterly comparative botanical plate, precise enough to distinguish guard cells, pore width, mesophyll and gas movement while retaining natural material texture.",
+  "detail_level": "High detail at both stomata; molecules are simplified physical spheres without letters; background and deeper tissue soften rapidly.",
+  "composition": "Equal left and right leaf windows separated by a narrow band of darkness. Earth pore wide on the left with a large upward water plume; Pandora pore narrow on the right with a dense inward carbon cluster and small water plume. Preserve empty dark space above each pore for callouts.",
+  "exclude": ["text", "letters", "chemical formulas", "numbers", "labels", "arrows", "leader lines", "human skin", "mouths", "watermark", "logos", "UI chrome"],
+  "consistency_notes": "Both panels must show the same stomatal anatomy and scale; the teaching difference is pore width plus the relative density of incoming carbon and outgoing water, not a different organ.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no CO2 lettering, no labels, no arrows, no cartoon faces, no infographic chrome, no photographic or CGI look, no vector diagram",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

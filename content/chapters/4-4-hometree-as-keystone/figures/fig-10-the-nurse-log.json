@@ -1,0 +1,20 @@
+{
+  "id": "fig-10-the-nurse-log",
+  "chapter_slug": "hometree-as-keystone",
+  "role": "inline",
+  "narrative_purpose": "Shows a biological legacy doing active recovery work: a fallen giant stores water, hosts decomposers and raises a straight nursery of seedlings that can outlive the wood beneath them.",
+  "subject": "A colossal fallen temperate rainforest trunk in advanced but recognisable decay. Its upper surface is a deep sponge of moss, fungal fruiting bodies and softened wood holding beads of water. A straight row of young conifer seedlings roots along the crest, their roots wrapping down both sides into the moist log. In the background, an older row of mature trees stands on raised root arches above the empty space where an earlier nurse log has completely rotted away. Salamanders and saproxylic beetles occupy dark cavities near the ground.",
+  "scene": "A cool old-growth rainforest after rain, quiet and mist-filled, with living succession concentrated on the dead trunk.",
+  "camera": "Low longitudinal view looking along the nurse log so the seedling row and older tree colonnade align in depth.",
+  "light": "Living cyan and teal light follows wet moss and roots; pale mist outlines the mature colonnade; a restrained amber glows on fresh fungal fruiting bodies.",
+  "palette": "Void indigo shadows, deep teal moss and wood, cyan water and roots, sparse amber fungi.",
+  "style": "Painterly forest naturalist observation with tactile decay, moisture and generational depth.",
+  "detail_level": "Crisp seedlings, wrapping roots, water-holding wood, fungi and deadwood fauna; distant mature trees dissolve into haze.",
+  "composition": "Nurse log begins large in the lower left and recedes toward the centre; seedling row rides its crest; mature colonnade echoes the line in the upper right. Leave dark pockets beside each life stage for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "human logging", "cut lumber", "grave imagery", "watermark", "logos"],
+  "consistency_notes": "The fallen trunk must read as dead wood functioning as habitat and nursery. Show both young seedlings on the present log and older trees standing where a previous log has vanished.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no arrows, no fantasy resurrection, no carved log, no lumberjack scene, no photo, no CGI, no vector infographic",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

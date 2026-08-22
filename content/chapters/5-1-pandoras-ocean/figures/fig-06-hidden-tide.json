@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-hidden-tide",
+  "chapter_slug": "pandoras-ocean",
+  "role": "diagram",
+  "narrative_purpose": "Reveal the large internal motion hidden beneath a nearly calm tide and show how breaking against reef relief can mix a stratified water column.",
+  "subject": "A narrow alien reef pass in cutaway. The sea surface crosses the frame as a nearly level, gently rippled line. Far beneath it, three translucent density layers bend into one broad internal wave as tidal flow passes a steep submarine ridge. On the downstream face the wave steepens and breaks into a compact cloud of teal turbulence, lifting sparse nutrient-like particles toward the illuminated upper water. The surface above shows only a small disturbance.",
+  "scene": "A scientifically legible Pandoran reef-channel cross-section connecting a sheltered turquoise lagoon to dark open ocean, focused on submerged water structure rather than animals.",
+  "camera": "Wide side-on underwater cutaway, with the reef ridge in the lower centre, calm surface across the upper fifth, incoming layered water on the left and breaking turbulence on the right.",
+  "light": "Soft cyan daylight confined to the upper water, indigo depth, pale magenta density interfaces and restrained living-teal turbulence at the slope.",
+  "palette": "Void indigo, ocean teal, cyan surface light, muted magenta layer boundaries and a compact living-teal mixing plume.",
+  "style": "Painterly naturalist ocean-process plate with cinematic depth and physically readable layers, not a flat educational diagram.",
+  "detail_level": "Three clear bent density bands, one steep reef ridge, one compact breaking zone and broad uncluttered water for later callouts.",
+  "composition": "The visual contrast must be between the quiet surface and the much larger submerged wave; reserve negative space at upper left, centre and lower right for annotations.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "giant surface wave", "storm", "ships", "film actors", "crowded fauna"],
+  "consistency_notes": "Match the marine palette and painterly material of fig-03. Render motion using bent particle fields and density interfaces, never arrows. Keep the claim generic rather than depicting a confirmed Awa'atlu measurement.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no giant breaking surface wave, no tsunami, no weather map, no vector infographic, no glossy CGI",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-ocean/fig-03-island-stirs-the-water.png"]
+}

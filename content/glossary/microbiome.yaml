@@ -1,0 +1,26 @@
+id: microbiome
+label:
+  vi: Hệ vi sinh vật (microbiome)
+  en: Microbiome
+definition:
+  vi: >-
+    Cộng đồng vi sinh vật cùng gene và hoạt động của chúng trong một môi trường xác định—ruột,
+    da, rễ cây hay một nhúm đất. Một microbiome có thể giúp tiêu hóa, chặn kẻ xâm nhập và huấn luyện
+    miễn dịch, nhưng nó không phải đội quân đồng lòng phục vụ vật chủ. Thành viên có lợi, trung tính
+    hay gây bệnh tùy vị trí, thức ăn và trạng thái của cơ thể; phần lớn cộng đồng cũng liên tục được
+    thu nhận lại từ môi trường.
+  en: >-
+    The community of microorganisms, their genes, and their activities in a defined environment—a
+    gut, skin, root, or handful of soil. A microbiome may aid digestion, exclude invaders, and train
+    immunity, but it is not a loyal army serving the host. Members can be helpful, neutral, or
+    harmful depending on location, food, and host condition, and much of the community is repeatedly
+    acquired from the environment.
+see_also:
+  - mutualism
+  - pathogen
+  - rhizosphere
+category: bio
+tags:
+  - ecology
+  - physiology
+cover_prompt: A painterly translucent silhouette of an animal gut filled with a diverse constellation of tiny rods, spheres and branching cells glowing cyan, teal and sparse magenta, no text or labels.

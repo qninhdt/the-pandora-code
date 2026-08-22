@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-too-close-clock",
+  "chapter_slug": "time-on-pandora",
+  "role": "comparison",
+  "narrative_purpose": "Shows why the convenient 26-hour clock fails physically: an Earth-sized moon orbiting a Jupiter-sized planet that quickly must skim close enough to be violently flexed and heated, unlike a wider habitable orbit.",
+  "subject": "Two equal side-by-side views of the same banded gas giant and the same blue-green moon. On the left, the moon skims extremely close above the giant's cloud tops; its globe is visibly stretched toward the planet and crossed by many hot orange volcanic fissures, with a plume erupting from the near side. On the right, the moon sits several planet radii farther away; it remains round, blue-green, ocean-bearing and only faintly warm inside, with no erupting fissures. The gas giant is the same size in both panels for comparison.",
+  "scene": "Deep space around Polyphemus, contrasting the tight day-long orbit required by canon with a wider orbit that a habitable large moon could survive.",
+  "camera": "Flat side-on astronomical comparison, matched scale and viewing angle in both halves.",
+  "light": "Cool distant starlight on both; the close moon adds fierce ember-orange internal heat, while the wider moon carries only a soft cyan atmospheric rim.",
+  "palette": "Global void-indigo and muted cream-rust planet bands; scarce but intense ember heat on the close moon, living teal and cyan on the wider moon.",
+  "style": "Painterly comparative astronomy plate with tactile planetary surfaces, not a vector orbital chart.",
+  "detail_level": "Crisp moon shapes and fissures; planet bands slightly softer; plain dark background for later labels.",
+  "composition": "Matched halves with gas giant on the inner edge and moon outward; the left gap extremely narrow, the right gap visibly several times wider.",
+  "exclude": ["text", "letters", "numbers", "labels", "orbit lines", "arrows", "clocks", "different gas giants", "spacecraft", "watermark"],
+  "consistency_notes": "Both panels show the same Polyphemus and same moon at different orbital distances. The close case must read as distorted and volcanically overheated; the wide case as round and habitable.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no orbit rings, no arrows, no planet-size mismatch between panels, no extra moons, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"]
+}

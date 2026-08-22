@@ -1,0 +1,19 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "tulkun-not-quite-whales",
+  "role": "hero",
+  "narrative_purpose": "The cover makes the chapter's central claim immediate: Lo'ak and Payakan meet as two individuals rather than rider and animal, with an entire social ocean behind them.",
+  "subject": "A colossal scarred tulkun and one young reef Na'vi suspended face-to-face underwater. The tulkun has a broad armored whale-like head, four small intelligent eyes arranged in two pairs, six flipper-derived appendages with the left forward fin visibly shortened and scarred, six dorsal breathing openings, a wide jaw, subtle cyan biological markings, and no Earth-whale baleen. The Na'vi is tiny by comparison, blue-skinned with a long dark braid and simple reef clothing, hands open rather than riding. Both hold one another's gaze.",
+  "scene": "Deep blue water outside a Pandoran reef at dusk, a distant tulkun pod fading into layered teal haze behind the pair, sparse drifting luminous organisms and no machinery.",
+  "camera": "Wide intimate side profile at eye level, the tulkun's head filling the right two-thirds while the small Na'vi floats at left near its foremost eye.",
+  "light": "Cool cyan bioluminescence traces the tulkun's markings and the Na'vi silhouette; deep indigo ambient water, soft teal shafts from far above, one restrained amber glint in the eye.",
+  "palette": "Ocean teal and void indigo dominate, cyan living light, sparse magenta plankton points and one amber eye accent.",
+  "style": "Painterly speculative-biology naturalist encounter, observed and intimate rather than cinematic action art.",
+  "detail_level": "Crisp scars, eye, fin edges and skin texture on the central pair; distant pod and reef dissolve into haze.",
+  "composition": "Two faces balanced across the frame with open dark water between their eyes, clear scale contrast and generous low-detail margins.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "callout lines", "Earth whale anatomy", "two-eyed tulkun", "four-limbed tulkun", "riding saddle", "weapons", "RDA machinery", "Avatar branding"],
+  "consistency_notes": "Payakan must remain a four-eyed, six-appendaged alien marine animal with a shortened scarred left front fin, not a blue Earth humpback whale. Lo'ak is a small reef-adapted Na'vi companion, not mounted.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no poster typography, no photographic or 3D-render look, no two-eyed Earth whale, no extra people, no battle scene, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

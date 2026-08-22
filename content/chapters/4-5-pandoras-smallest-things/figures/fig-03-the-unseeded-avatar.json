@@ -1,0 +1,19 @@
+{
+  "id": "fig-03-the-unseeded-avatar",
+  "chapter_slug": "pandoras-smallest-things",
+  "role": "comparison",
+  "narrative_purpose": "The paired plate distinguishes a laboratory-grown avatar body before environmental exposure from the same body after contact with Pandora, making microbiome assembly visible without claiming undocumented canon.",
+  "subject": "A balanced two-panel biological comparison. Left: a newly grown blue humanoid avatar body curled inside a clean translucent amnio tank, skin pristine, gut and skin shown only as quiet dim surfaces, sparse isolated microbial specks outside the barrier. Right: the same blue humanoid standing barefoot at the forest edge after exposure, surrounded by a restrained diverse halo of tiny rods, spheres and branching cells concentrated on skin, mouth and gut silhouette, with soil on the feet and plant contact at one hand.",
+  "scene": "Left half is a dim sterile field laboratory; right half is a humid Pandoran forest margin. A soft vertical seam separates them.",
+  "camera": "Front-on comparison plate with matched body scale and pose readability, generous negative space over each half.",
+  "light": "Cool clinical cyan on the sealed tank; warmer living teal from forest microbes and plants; deep indigo shared background.",
+  "palette": "Void-indigo ground, blue-cyan body, pale clinical cyan on left, diverse teal with sparse magenta and amber microbial accents on right.",
+  "style": "Painterly speculative-medical naturalist plate, anatomically restrained, hand-painted rather than cinematic merchandise art.",
+  "detail_level": "Crisp on the tank barrier, skin, gut silhouette and microbial halo; surrounding laboratory and forest softened.",
+  "composition": "Symmetrical diptych, sealed body left and environmentally colonized body right, strong dark gutters and clear callout space.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "callout lines", "brand marks", "military weapons", "nudity details"],
+  "consistency_notes": "This is an explicitly inferential microbiome assembly comparison, not a canon scene. Keep microbes subtle and biologically varied, never magical dust.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no labels, no arrows, no logos, no explicit anatomy, no superhero pose, no photographic or 3D-render look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

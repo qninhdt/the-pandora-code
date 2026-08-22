@@ -11,20 +11,20 @@ subtitle:
     nhưng một mạng lưới phủ khắp địa cầu vừa *quyết định* điều gì đó, hay chỉ vừa thực thi phép tính
     phản xạ vĩ đại nhất trong vũ trụ?
   en: >-
-    When a whole planet's wildlife turns and counterattacks, the Na'vi say "Eywa has heard you" — but
-    did a planet-wide network just *decide* something, or merely execute the greatest reflexive
+    When a whole planet's wildlife turns and counterattacks, the Na'vi say "Eywa has heard you" —
+    but did a planet-wide network just *decide* something, or merely execute the greatest reflexive
     computation in the universe?
 hook:
   vi: >-
     Eywa được thờ phụng như một nữ thần và bị giải mã như một siêu máy tính sinh học cùng một lúc.
-    Bóc lớp thần học ấy ra và đặt nó lên bàn mổ, ta gặp ngay câu hỏi nằm ở ranh giới sắc bén nhất của
-    khoa học nhận thức Trái Đất: tới ngưỡng nào thì một mạng lưới gồm vô số phần tử đơn giản trở thành
-    trí khôn — và bao giờ, nếu có, một trí khôn vượt ngưỡng để thành một tâm trí thực sự?
+    Bóc lớp thần học ấy ra và đặt nó lên bàn mổ, ta gặp ngay câu hỏi nằm ở ranh giới sắc bén nhất
+    của khoa học nhận thức Trái Đất: tới ngưỡng nào thì một mạng lưới gồm vô số phần tử đơn giản trở
+    thành trí khôn — và bao giờ, nếu có, một trí khôn vượt ngưỡng để thành một tâm trí thực sự?
   en: >-
     Eywa is worshipped as a goddess and decoded as a biological supercomputer in the same breath.
-    Strip the theology away and lay it on the table and you meet a question that sits on the sharpest
-    edge of Earth's cognitive science: at what threshold does a network of simple parts become an
-    intelligence — and when, if ever, does an intelligence cross over into a mind?
+    Strip the theology away and lay it on the table and you meet a question that sits on the
+    sharpest edge of Earth's cognitive science: at what threshold does a network of simple parts
+    become an intelligence — and when, if ever, does an intelligence cross over into a mind?
 authors:
   - bardabez
 reading_time_min: 29
@@ -79,6 +79,15 @@ figures:
     asset_status: ready
   - id: fig-05-weak-strong-emergence
     role: diagram
+    asset_status: ready
+  - id: fig-06-cerebellum-vs-cortex
+    role: comparison
+    asset_status: pending
+  - id: fig-07-local-memory-port
+    role: comparison
+    asset_status: ready
+  - id: fig-08-library-of-selves
+    role: inline
     asset_status: ready
 sources:
   - kind: canon

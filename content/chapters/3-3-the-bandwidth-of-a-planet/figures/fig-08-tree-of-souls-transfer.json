@@ -1,0 +1,20 @@
+{
+  "id": "fig-08-tree-of-souls-transfer",
+  "chapter_slug": "the-bandwidth-of-a-planet",
+  "role": "inline",
+  "narrative_purpose": "Returns the arithmetic to the canonical event being weighed: one night at the Tree of Souls, with a dying human body and an avatar body coupled through thousands of Na'vi and one luminous biological channel carrying the attempted self-transfer.",
+  "subject": "Beneath the hanging luminous tendrils of the Tree of Souls at night, a dying human woman lies on one woven root cradle and her tall blue avatar body lies on a second cradle opposite her. Between them the tree's root mass carries one dense stream of pale light from the human body downward through the roots and upward toward the avatar. Hundreds of kneeling Na'vi form concentric rows around both bodies, each queue connected to a root tendril, their many faint links converging on the central transfer path.",
+  "scene": "The consciousness-transfer ceremony under the sacred tree, viewed as a biological data route rather than a mystical abstraction.",
+  "camera": "High three-quarter wide view that clearly shows both bodies, the converging crowd, and the root route connecting them.",
+  "light": "Bioluminescent light from the hanging tendrils and connected queues; the central transfer path is the brightest pale cyan element, with very sparse magenta at the two bodies.",
+  "palette": "Deep cool grove tones, cyan-teal living connections, rare magenta held at the source and destination bodies.",
+  "style": "Painterly speculative-biology naturalist scene, solemn and observed, not a film still or devotional poster.",
+  "detail_level": "Crisp on both bodies and the central path; the Na'vi rings and outer roots soften into atmospheric depth.",
+  "composition": "Two bodies placed across the central axis, a luminous route curving between them, concentric connected figures surrounding the event, and dark canopy margins for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "medical machinery", "weapons", "religious iconography"],
+  "consistency_notes": "The human source and avatar destination must be visibly distinct bodies. The many Na'vi links support one central transfer path during a single-night ceremony.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no labels, no arrows, no medical monitors, no hospital equipment, no film still, no photographic or glossy CGI look, no halo, no lens flare",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

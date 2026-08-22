@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-a-hollow-made-by-time",
+  "chapter_slug": "hometree-as-keystone",
+  "role": "comparison",
+  "narrative_purpose": "Shows why planting saplings cannot replace old-growth structure: a usable vertebrate hollow emerges only through accumulated injury, fungal decay and insect excavation over centuries.",
+  "subject": "The same eucalyptus trunk appears in four matched vertical cutaways across its life. The young trunk is solid with smooth bark. The next has a storm-broken branch stub admitting moisture and pale fungal threads. The third has dark softened heartwood riddled by insect galleries and a small cavity opening. The oldest has thick fissured bark and a deep dry hollow large enough for a possum and nesting bird, while the living sapwood forms a sound ring around it. The outer trunk diameter increases realistically at each stage.",
+  "scene": "A quiet Australian woodland specimen sequence with the surrounding forest held soft and nearly identical so time is read from the wood rather than a changing landscape.",
+  "camera": "Matched front-on trunk sections at the same viewing distance, interior exposed by a clean naturalist cutaway.",
+  "light": "Cool forest shade and cyan fungal edges dominate; a restrained amber interior glow marks the final habitable cavity without turning it magical.",
+  "palette": "Indigo understory, teal-grey bark and sapwood, cyan fungal threads, sparse amber inside the mature hollow.",
+  "style": "Painterly dendrology and decay plate, botanically coherent and materially detailed.",
+  "detail_level": "Crisp bark, branch scar, fungal front, galleries and final hollow; background foliage remains soft.",
+  "composition": "Four trunks progress left to right from solid sapling to mature hollow-bearing veteran, aligned at the base. Leave dark strips beside the injury, decay front and final occupants for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "chainsaws", "carved holes", "human nest boxes", "watermark", "logos"],
+  "consistency_notes": "The hollow must develop from a natural branch injury through fungal and insect decay while living sapwood persists around it. Do not show a dead hollow log as the final stage.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no age numbers, no arrows, no carved doorway, no fantasy tree face, no photo, no CGI, no vector timeline",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

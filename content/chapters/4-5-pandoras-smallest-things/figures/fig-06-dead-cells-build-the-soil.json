@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-dead-cells-build-the-soil",
+  "chapter_slug": "pandoras-smallest-things",
+  "role": "diagram",
+  "narrative_purpose": "Make the chapter's counterintuitive soil-carbon claim visible: microbial remains can persist longer than the leaf material they consumed because access, aggregation and mineral binding protect them.",
+  "subject": "A single magnified Pandoran soil aggregate shown in cutaway around the softened edge of a fallen leaf. At upper left, fragments of blue-green leaf tissue are being taken into small rod-shaped and spherical microbial cells along a thin water film. Deeper inside the aggregate, broken cell walls and translucent microbial residues lie pressed tightly against broad clay plates and rusty metal-oxide grains, while another residue pocket is sealed behind interlocked mineral grains. Fresh leaf fragments remain exposed near the surface; the protected microbial remnants occupy the quiet mineral interior. No process arrows or symbolic icons.",
+  "scene": "The microscopic interior of damp forest soil beneath the chapter's recurring fallen leaf, isolated against a deep indigo specimen field.",
+  "camera": "Straight-on macro cutaway, with active decomposition in the upper-left third and three clearly readable protected residue sites across the lower and right interior.",
+  "light": "Faint cyan on fresh leaf fragments and water films, living teal on active cells, muted amber on microbial residues, and soft mineral-grey highlights on clay and oxide surfaces; the sealed pore remains darker.",
+  "palette": "Void indigo background, charcoal and mineral grey soil, cyan water and leaf veins, living teal cells, restrained amber residue and iron-oxide accents.",
+  "style": "Painterly soil-biogeochemistry naturalist plate with tactile mineral and membrane textures, scientifically observed rather than infographic-clean.",
+  "detail_level": "Crisp microbial cells, torn cell-wall residues, clay plates, oxide grains, water films and the sealed aggregate pocket; surrounding soil fades into uncluttered darkness.",
+  "composition": "A continuous diagonal transition from recognizable leaf tissue to living microbes to mineral-bound and physically enclosed microbial remains, with clear open margins for later interface annotation.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "recycling symbol", "human figures", "laboratory glassware", "cute faces on microbes"],
+  "consistency_notes": "Continue the fallen-leaf and soil-pore material language from figures 01 and 02. The long-lived material must read as fragmented microbial residue physically protected by minerals, not as intact immortal organisms or magical amber fossils.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no molecular formulae, no recycling icon, no anthropomorphic microbes, no vector infographic, no photographic or glossy 3D-render look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-smallest-things/fig-02-life-inside-a-pore.png"]
+}

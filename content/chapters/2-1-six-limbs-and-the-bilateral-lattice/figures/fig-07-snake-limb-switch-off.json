@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-snake-limb-switch-off",
+  "chapter_slug": "six-limbs-and-the-bilateral-lattice",
+  "role": "comparison",
+  "narrative_purpose": "Show that evolution can remove an appendage by switching off its developmental programme rather than degrading every limb gene: a python retains tiny pelvic spurs while a more derived snake carries no external trace, with intact internal patterning implied beneath both bodies.",
+  "subject": "Two adult snakes presented side by side as anatomical specimens: a heavy-bodied python curled to expose two tiny paired pelvic spurs beside the cloaca, and a slender advanced snake with a completely smooth limbless underside; beneath the python's translucent skin, a small vestigial pelvic girdle and short internal femur remnants are visible, while a faint early-embryo inset shows paired limb buds beginning as small rounded swellings before disappearing later in development.",
+  "scene": "A dark comparative anatomy plate with the adult bodies floating over a restrained translucent embryology inset, no written notation.",
+  "camera": "Ventral three-quarter study view on the python pelvis and spurs, matched side view of the smooth-bodied snake, close enough for the vestiges to read clearly.",
+  "light": "Cool raking specimen light catching scales and the tiny spurs, faint cyan transmitted light through the cutaway pelvis and embryo, deep indigo shadow around the bodies.",
+  "palette": "Void indigo, desaturated olive and stone-grey scales, ocean-teal anatomy, Pandora cyan for translucent developmental tissue, one restrained ember accent at the vestigial pelvis.",
+  "style": "Painterly evolutionary-anatomy naturalist plate, hand-painted, observational and precise rather than grotesque.",
+  "detail_level": "High detail on the python's paired spurs, pelvic remnants, and embryonic limb buds; adult bodies soften into the dark away from the comparison zone.",
+  "composition": "Python pelvis anchors the left half, the smooth advanced snake mirrors it on the right, and the small embryo curves below them in a dark central pocket.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "fully developed legs", "fantasy serpent", "multiple heads", "gore"],
+  "consistency_notes": "The python must have only the real tiny paired pelvic spurs, not functional feet. The comparison communicates lost developmental activation, not injured or amputated limbs.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no full legs on adult snakes, no dragon anatomy, no wounds or amputation, no horror, no photographic or glossy 3D render look, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

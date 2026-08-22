@@ -1,0 +1,19 @@
+{
+  "id": "fig-05-below-the-last-light",
+  "chapter_slug": "pandoras-ocean",
+  "role": "diagram",
+  "narrative_purpose": "A deep-sea energy landscape distinguishes the sparse marine-snow economy, a concentrated carcass fall, and a small chemosynthetic oasis.",
+  "subject": "A vast dark alien abyssal plain beneath the final faint cyan trace of the surface. Sparse luminous organic flakes fall through the water. On the left seafloor lies the large weathered skeleton and remaining tissue of an unfamiliar marine animal, attended by small scavengers. Far to the right, a compact cluster of mineral chimneys releases a pale teal fluid plume and supports a small dense ring of microbial mats and rooted tube-like organisms. Most of the seafloor between them remains empty.",
+  "scene": "An explicitly speculative Pandoran deep-ocean cross-section presented as three energy patches within a much larger food-poor abyss.",
+  "camera": "Very wide low-oblique seafloor view with the water column occupying the upper two-thirds, carcass left and vent oasis right.",
+  "light": "Almost no sunlight; faint cyan from distant upper water, living-teal microbial glow around the vent, restrained magenta scavenger signals and deep indigo ambient shadow.",
+  "palette": "Void indigo dominates, with sparse cyan marine snow, living teal vent life, muted stone skeleton and rare magenta biological accents.",
+  "style": "Painterly speculative-biology naturalist plate, sober and resource-limited rather than a fantasy aquarium.",
+  "detail_level": "Crisp carcass community and compact vent oasis, sparse particles and broad empty sediment plain; generous dark areas for callouts.",
+  "composition": "Three readable energy settings—falling particles above, carcass left, vent right—separated by large quiet distances.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "human submarine", "Earth whale", "crowded coral reef", "lava river"],
+  "consistency_notes": "This is explicitly a scientific speculation plate. Keep the abyss sparse and do not present Earth vent species unchanged.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no giant glowing city, no crowded aquarium, no Earth whale, no photographic or glossy CGI look",
+  "style_refs": ["pandora-establishing.png"]
+}

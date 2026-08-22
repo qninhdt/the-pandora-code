@@ -79,6 +79,15 @@ figures:
   - id: fig-04-carbon-bone-cross-section
     role: diagram
     asset_status: ready
+  - id: fig-05-pali-cornering
+    role: inline
+    asset_status: pending
+  - id: fig-06-two-giant-launches
+    role: comparison
+    asset_status: ready
+  - id: fig-07-tsaheylu-interface
+    role: diagram
+    asset_status: ready
   - id: fig-99-background
     role: inline
     asset_status: ready

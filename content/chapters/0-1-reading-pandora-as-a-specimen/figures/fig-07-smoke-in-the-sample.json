@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-smoke-in-the-sample",
+  "chapter_slug": "reading-pandora-as-a-specimen",
+  "role": "inline",
+  "narrative_purpose": "Returns the close to Jodie Holt's overlooked laboratory error and makes the contamination mechanism visible: smoke from one casual cigarette can cross into living plant samples.",
+  "subject": "A genetics laboratory bench with a lit cigarette abandoned in a shallow metal dish at the far left, a thin plume of smoke drifting horizontally across the frame. In the center, an open sterile plant-culture dish contains several small green leaf cuttings in clear gel. At the smoke front, hundreds of tiny rod-shaped particles travel with the haze and settle onto the exposed leaf tissue. At the far right, a sealed identical culture dish remains clear and untouched for comparison. No person is present.",
+  "scene": "A sober Earth laboratory after hours, stainless work surface and dark out-of-focus equipment behind, the careless contamination event isolated on the bench.",
+  "camera": "Bench-height close side view following the smoke from cigarette to open culture dish to sealed control dish.",
+  "light": "Cool clinical overhead light, with the cigarette ember as the only scarce warm accent and a faint cyan edge on the clean glassware.",
+  "palette": "Cool clinical greys and deep indigo shadow, living green leaf tissue, restrained ember amber only at the cigarette tip.",
+  "style": "Painterly scientific incident plate, precise and understated, not sensational.",
+  "detail_level": "Crisp cigarette ember, smoke-borne particles, exposed leaf tissue and sealed control; background equipment soft and unreadable.",
+  "composition": "A left-to-right contamination path with open negative space above the cigarette, open dish and sealed dish for later callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "logos", "people", "faces", "hazmat suits", "flames", "watermark", "Pandoran flora"],
+  "consistency_notes": "This is an Earth genetics lab, not Pandora. The teaching relationship must be literal: smoke and particles reach the open plant sample while the sealed control remains untouched.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no brand marks, no people smoking, no fire beyond one small ember, no gore, no photographic or glossy 3D-render look, no clutter obscuring the dishes",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-shared-pandoran-signatures",
+  "chapter_slug": "pandoran-tree-of-life",
+  "role": "comparison",
+  "narrative_purpose": "Ground the tree's two strongest shared characters in bodies rather than abstractions: radically different land, sea, flying, and humanoid forms all reveal the same grown carbon-composite skeleton and the same exposed neural-queue architecture.",
+  "subject": "A comparative xenobiology bench holding four distinct Pandoran specimens in matched study views: a Na'vi upper torso, a thanator head and forequarter, an ikran wing root, and a tulkun flipper base. Each specimen has one small clean anatomical window exposing dark woven carbon-composite fibres inside a hollow or lightweight bone, and each also shows a neural queue or homologous connector ending in a fan of fine pink-cyan tendrils. The four exteriors remain unmistakably different while the two hidden structures repeat.",
+  "scene": "A museum-like naturalist study plate against deep indigo, with no laboratory text or interface, the specimens arranged as observations from land, air, and sea.",
+  "camera": "Consistent three-quarter anatomical study angles, close enough to compare the repeated bone texture and neural tendril fans.",
+  "light": "Cool specimen light rakes across skin and bone windows; the neural tendrils glow softly from within in cyan and magenta; deep shadow separates the specimens.",
+  "palette": "Void indigo ground, ocean teal and stone-grey anatomy, near-black woven bone fibres, Pandora cyan and restrained biolum magenta in neural tissue.",
+  "style": "Painterly speculative-biology comparative anatomy plate, hand-painted, field-guide precision without schematic labels.",
+  "detail_level": "High detail on the repeated carbon-fibre weave and tendril-fan architecture; exterior bodies are clear but secondary.",
+  "composition": "Four specimens in a balanced horizontal sequence with their bone windows aligned across one visual band and their neural connectors visible at a second band, allowing pattern recognition without arrows.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "cladogram", "branching tree", "Earth animals", "surgical gore"],
+  "consistency_notes": "The four bodies must remain recognisably Na'vi, thanator, ikran, and tulkun. The repeated internal traits are homologous in visual construction, not identical pasted icons.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no phylogenetic tree, no charts, no gore, no cybernetic cables, no photographic dissection, no glossy 3D render, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

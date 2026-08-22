@@ -1,0 +1,19 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "pandoras-ocean",
+  "role": "hero",
+  "narrative_purpose": "The cover makes the chapter's vertical argument immediate: a bright inhabited reef is only the thin upper skin of a much larger dark ocean.",
+  "subject": "One slender blue-skinned alien reef diver seen from behind at the edge of a luminous shallow lagoon, descending beside a steep living reef wall. Above the diver, broad sunbeams reveal turquoise water, fine fish schools and branching reef life. Beneath the diver, the wall falls into an immense indigo water column with sparse drifting particles and no visible bottom.",
+  "scene": "The outer edge of an Awa'atlu-like tropical alien atoll at late underwater afternoon, viewed across the boundary from shallow reef to open Eastern Sea.",
+  "camera": "Wide underwater hero view from slightly above and behind the diver, reef wall on the right third, open depth filling the left and lower frame.",
+  "light": "Pale cyan shafts from the surface fade rapidly downward; living teal reef organisms provide restrained points of light; the lower half remains rich indigo shadow.",
+  "palette": "Cool cyan surface, ocean teal reef, void-indigo depth, small living-teal bioluminescent accents and one restrained magenta organism near the diver.",
+  "style": "Painterly speculative-biology naturalist illustration, observed underwater with hand-painted texture and strong atmospheric depth.",
+  "detail_level": "Crisp diver silhouette and near reef textures; fish and architecture soften with depth; the abyss dissolves into clean haze.",
+  "composition": "A strong diagonal reef edge divides bright upper life from dark open volume. The diver crosses the division and provides scale. Preserve generous dark negative space in the lower left.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "callout lines", "film actors", "human face close-up", "Earth scuba gear", "Avatar branding"],
+  "consistency_notes": "Establish a coherent Awa'atlu-like marine environment without copying a film frame. The sea is the subject; the diver is scale, not a portrait.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no labels, no arrows, no logo, no poster title, no photographic film still, no glossy CGI, no Earth coral photo, no crowded foreground",
+  "style_refs": ["pandora-establishing.png"]
+}

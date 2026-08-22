@@ -1,0 +1,25 @@
+id: red-queen-hypothesis
+label:
+  vi: Giả thuyết Nữ hoàng Đỏ
+  en: Red Queen hypothesis
+definition:
+  vi: >-
+    Ý tưởng rằng môi trường sinh học luôn biến đổi vì đối thủ, ký sinh trùng và vật chủ đều đang
+    tiến hóa, nên một dòng dõi phải tiếp tục thích nghi chỉ để giữ nguyên vị thế tương đối. Phiên
+    bản vật chủ–mầm bệnh giải thích vì sao tái tổ hợp và sinh sản hữu tính có thể có lợi: chúng liên
+    tục tạo ra tổ hợp gene hiếm mà mầm bệnh chưa kịp theo. Đây là một lời giải quan trọng cho việc
+    duy trì sinh sản hữu tính, không phải lời giải duy nhất đã được định đoạt.
+  en: >-
+    The idea that the biological environment keeps changing because rivals, parasites, and hosts
+    are evolving too, so a lineage must continue adapting merely to preserve its relative position.
+    In the host–pathogen version, recombination and sex can help by continually producing rare gene
+    combinations that pathogens have not yet tracked. It is an important explanation for the
+    maintenance of sex, not a single settled answer.
+see_also:
+  - negative-frequency-dependent-selection
+  - coevolution
+category: concept
+tags:
+  - evolution
+  - ecology
+cover_prompt: A painterly circular pursuit of three host silhouettes and three smaller parasite forms, each chasing the next around an empty center, cyan and magenta biological glow, no text or labels.

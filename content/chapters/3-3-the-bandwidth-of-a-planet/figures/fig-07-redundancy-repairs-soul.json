@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-redundancy-repairs-soul",
+  "chapter_slug": "the-bandwidth-of-a-planet",
+  "role": "diagram",
+  "narrative_purpose": "Makes the cost of error correction visible: a fragile self-pattern crosses a noisy biological channel wrapped in repeated protective structure, several pieces are damaged, and the receiver reconstructs one intact pattern from the surviving redundancy.",
+  "subject": "A left-to-right living communication channel. At the left, a small coherent human-like self-pattern made of many distinct luminous strands is duplicated into a thicker braided bundle with repeated motifs. In the centre, the bundle crosses a warm wet membrane tunnel where random dim magenta sparks erase and break several individual strands. At the right, the surviving repeated motifs converge through a biological receiver and re-form the original complete self-pattern, while the damaged fragments fall away.",
+  "scene": "An abstract biological transmission cutaway with a clearly readable before, noisy crossing, and reconstructed after state.",
+  "camera": "Straight-on close schematic, the three stages arranged horizontally at equal height.",
+  "light": "Cyan-teal self-pattern and protective braid glow from within; sparse magenta noise sparks interrupt the middle; the reconstructed pattern is clean pale cyan.",
+  "palette": "Cool signal tones against deep shadow, with rare magenta used only for corruption inside the channel.",
+  "style": "Painterly speculative-biology plate with tactile membranes and fibres, not flat digital iconography.",
+  "detail_level": "Fine enough to see repeated motifs, missing strands, and their reconstruction; simple dark background.",
+  "composition": "Original pattern left, noisy membrane tunnel centre, reconstructed pattern right, with open dark bands above and below each stage for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "binary digits", "computer chips"],
+  "consistency_notes": "The outgoing protected bundle must be visibly larger than the original payload, and the reconstructed right-hand pattern must match the intact original despite missing middle strands.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no numbers, no binary code, no labels, no arrows, no circuit board, no vector infographic, no photographic or glossy CGI look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

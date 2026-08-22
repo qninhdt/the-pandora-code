@@ -1,0 +1,15 @@
+id: ekman-transport
+label:
+  vi: Vận chuyển Ekman
+  en: Ekman transport
+definition:
+  vi: Chuyển động tổng hợp của lớp nước mặt theo hướng vuông góc với ứng suất gió do ma sát và hiệu ứng Coriolis cùng tác động. Khi vận chuyển Ekman kéo nước mặt rời bờ, nước sâu phải dâng lên thay chỗ và tạo ra nước trồi ven bờ.
+  en: The net movement of the wind-driven surface layer at right angles to the wind stress, produced by friction acting together with the Coriolis effect. Where Ekman transport carries surface water offshore, deeper water must rise to replace it, producing coastal upwelling.
+see_also:
+  - coriolis-effect
+  - upwelling
+category: concept
+tags:
+  - oceanography
+  - physics
+cover_prompt: A painterly oblique view of a wind-brushed ocean beside a dark coast, with successive translucent water layers turning gently and a single coherent surface drift moving away from shore, no text, no labels, no numbers.

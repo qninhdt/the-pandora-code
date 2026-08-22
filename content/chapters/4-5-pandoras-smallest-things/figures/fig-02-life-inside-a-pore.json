@@ -1,0 +1,19 @@
+{
+  "id": "fig-02-life-inside-a-pore",
+  "chapter_slug": "pandoras-smallest-things",
+  "role": "diagram",
+  "narrative_purpose": "A label-ready soil aggregate cutaway shows why millimetres matter: mineral architecture, water films, gas-filled pores and an oxygen-poor core produce different microbial habitats side by side.",
+  "subject": "One irregular dark soil aggregate shown as a large clean cutaway, built from distinct sand, silt and clay grains bound by pale fungal threads, hair-fine roots and translucent microbial glue. Open pores wind through it. Thin cyan water films coat grains near the outer surface while one deeper pore is fully water-filled and darker. Small clusters of rod and sphere microbes occupy the films, with a visibly dim oxygen-poor inner core.",
+  "scene": "The isolated aggregate floats against a plain deep-indigo specimen field, with only a faint bed of loose grains below.",
+  "camera": "Straight-on macro cutaway, aggregate filling the middle two-thirds of frame, outer pore at upper left and darker core at lower right clearly separated.",
+  "light": "Cool cyan light tracing thin water films, living-teal microbial pinpoints, soft mineral highlights, the inner saturated core visibly darker and muted.",
+  "palette": "Void-indigo background, charcoal and mineral grey grains, cyan water, teal biology, faint amber organic fragments.",
+  "style": "Painterly scientific specimen plate with clear anatomy and hand-painted texture, not a vector infographic.",
+  "detail_level": "Crisp grain boundaries, films, hyphae, pores and microbial clusters; simple dark background reserved for overlay labels.",
+  "composition": "Large centered aggregate with three legible zones—outer gas-filled pore, connected water-film middle, dark saturated core—and open margins around each.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "callout dots", "busy forest background"],
+  "consistency_notes": "Use spatial architecture, water thickness and brightness to encode the pore gradient. No baked labels or arrows; interface annotations will identify features.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no labels, no arrows, no leader lines, no infographic chrome, no photographic or 3D-render look, no cartoon microbes",
+  "style_refs": ["pandora-establishing.png"]
+}

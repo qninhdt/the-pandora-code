@@ -1,0 +1,20 @@
+{
+  "id": "fig-08-wild-network-patchwork",
+  "chapter_slug": "the-wood-wide-web",
+  "role": "comparison",
+  "narrative_purpose": "Corrects the popular picture of one continuous underground internet by contrasting an ideal seamless web with what wild forest mapping actually finds: short-lived local fungal individuals, breaks, regrowth, and overlapping patches.",
+  "subject": "A matched underground forest cutaway shown in two halves. Left: every tree root is joined by one continuous, evenly glowing fungal lattice stretching without interruption across the entire soil volume. Right: the same number of trees stand above a mosaic of separate fungal patches; some threads link two or three roots, others end abruptly at gaps, one broken strand is regrowing around a stone, and several patches overlap without merging into one body.",
+  "scene": "Two versions of the same forest floor, idealized continuity beside the transient patchwork observed in wild ground.",
+  "camera": "Straight-on side cutaway at matched scale, showing tree bases above and the complete soil volume below.",
+  "light": "The ideal web glows evenly and continuously; the wild side glows in irregular local islands with dark breaks between them.",
+  "palette": "Cool soil and root tones, continuous cyan on the ideal side, varied dim teal-cyan patches on the wild side.",
+  "style": "Painterly forest-soil naturalist plate with enough schematic clarity to compare connectivity.",
+  "detail_level": "Fine hyphae and broken tips crisp in the foreground; deeper soil dissolves softly.",
+  "composition": "Equal left and right soil panels separated by a dark vertical gutter, with open dark margins for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "perfect symmetry on the wild side"],
+  "consistency_notes": "Both halves must contain the same trees. The only changed variable is network continuity: seamless single web versus irregular temporary local patches.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no labels, no arrows, no vector infographic, no photographic or glossy 3D look, no perfectly uniform fungal grid",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

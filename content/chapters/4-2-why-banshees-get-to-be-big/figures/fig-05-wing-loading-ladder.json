@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-wing-loading-ladder",
+  "chapter_slug": "why-banshees-get-to-be-big",
+  "role": "comparison",
+  "narrative_purpose": "Turns wing loading from an abstract ratio into visible behaviour by showing how geometrically larger fliers need progressively more speed and runway before the same basic wing plan can support them.",
+  "subject": "Three real Earth fliers arranged left to right at matched moments of takeoff: a small sparrow lifting almost vertically from a twig with broad wings relative to its body; a heavy mute swan running across water with feet striking a long chain of splashes before its narrower relative wing area carries it; and a giant azhdarchid pterosaur at the edge of a long downslope, body pitched forward and enormous wings only beginning to load with air. Each animal is anatomically accurate and visibly scaled by the ground or water beneath it.",
+  "scene": "A continuous dark naturalist panorama that moves from woodland edge to lake surface to open Cretaceous slope, connected by the repeated geometry of takeoff rather than by arrows or text.",
+  "camera": "Low side-on tracking view, each animal shown in full profile at its decisive takeoff instant.",
+  "light": "Cool dawn light and cyan reflected sky unify the three habitats; restrained amber touches the feet or forelimbs where each animal pushes against its launch surface.",
+  "palette": "Indigo and cool teal dominate across all three stages, with pale mist on disturbed air and water and sparse amber at contact points.",
+  "style": "Painterly comparative zoological plate with observed-from-life posture and precise flight anatomy, not a chart or movie montage.",
+  "detail_level": "Crisp wing outlines, body proportions and launch traces; distant habitat is soft and subordinate.",
+  "composition": "Sparrow occupies the compact left third above a twig; swan crosses the broad middle with a long splash trail; pterosaur fills the right third with a long downslope behind it. Leave dark air above each animal for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "aircraft", "fantasy birds", "watermark", "logos", "UI chrome"],
+  "consistency_notes": "The sequence must show increasingly demanding takeoff behaviour, not merely increasing wingspan. Keep the sparrow, swan and azhdarchid anatomically distinct and correctly proportioned.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no scale ruler, no infographic boxes, no cartoon style, no photographic or CGI look, no duplicated limbs",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

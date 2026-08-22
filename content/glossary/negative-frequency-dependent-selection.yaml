@@ -1,0 +1,24 @@
+id: negative-frequency-dependent-selection
+label:
+  vi: Chọn lọc phụ thuộc tần số âm
+  en: Negative frequency-dependent selection
+definition:
+  vi: >-
+    Kiểu chọn lọc trong đó một biến thể càng phổ biến thì lợi thế của nó càng giảm, còn biến thể
+    hiếm được hưởng lợi. Trong quan hệ vật chủ–mầm bệnh, tác nhân gây bệnh thích nghi tốt nhất với
+    kiểu gene vật chủ mà nó gặp thường xuyên nhất; kiểu hiếm tạm thời thoát được rồi trở nên phổ
+    biến, khiến chính nó biến thành mục tiêu mới. Cơ chế này có thể duy trì đa dạng thay vì chọn ra
+    một kẻ thắng vĩnh viễn.
+  en: >-
+    Selection in which a variant loses advantage as it becomes common while rare variants benefit.
+    In host–pathogen interactions, a pathogen adapts best to the host genotype it encounters most;
+    a rare type escapes temporarily, rises in frequency, and thereby becomes the next target. The
+    mechanism can preserve diversity instead of producing one permanent winner.
+see_also:
+  - coevolution
+  - red-queen-hypothesis
+category: concept
+tags:
+  - evolution
+  - ecology
+cover_prompt: Three painterly glowing host-cell forms arranged in a cycle, the brightest common form shadowed by a matching parasite while a rare form escapes into open dark space, no text or labels.
