@@ -7,35 +7,21 @@ import type { GlossaryVisualizationId } from "./registry";
 // Populated incrementally as each phase ships its components. Keys are glossary
 // term slugs; values are code-split dynamic imports so a term page only loads
 // its own figure chunk.
-const GLOSSARY_VISUALIZATIONS: Partial<
-  Record<GlossaryVisualizationId, React.ComponentType>
-> = {
+const GLOSSARY_VISUALIZATIONS: Partial<Record<GlossaryVisualizationId, React.ComponentType>> = {
   // Phase 2 — Astronomy & Space
   "alpha-centauri": dynamic(() => import("./alpha-centauri"), { ssr: false }),
   "habitable-zone": dynamic(() => import("./habitable-zone"), { ssr: false }),
   exomoon: dynamic(() => import("./exomoon"), { ssr: false }),
   "roche-limit": dynamic(() => import("./roche-limit"), { ssr: false }),
   accretion: dynamic(() => import("./accretion"), { ssr: false }),
-  "planetary-differentiation": dynamic(
-    () => import("./planetary-differentiation"),
-    { ssr: false },
-  ),
+  "planetary-differentiation": dynamic(() => import("./planetary-differentiation"), { ssr: false }),
   biosignature: dynamic(() => import("./biosignature"), { ssr: false }),
   "direct-imaging": dynamic(() => import("./direct-imaging"), { ssr: false }),
   "radial-velocity": dynamic(() => import("./radial-velocity"), { ssr: false }),
-  "transmission-spectroscopy": dynamic(
-    () => import("./transmission-spectroscopy"),
-    { ssr: false },
-  ),
-  "transit-timing-variation": dynamic(
-    () => import("./transit-timing-variation"),
-    { ssr: false },
-  ),
+  "transmission-spectroscopy": dynamic(() => import("./transmission-spectroscopy"), { ssr: false }),
+  "transit-timing-variation": dynamic(() => import("./transit-timing-variation"), { ssr: false }),
   "tidal-heating": dynamic(() => import("./tidal-heating"), { ssr: false }),
-  "faint-young-sun-paradox": dynamic(
-    () => import("./faint-young-sun-paradox"),
-    { ssr: false },
-  ),
+  "faint-young-sun-paradox": dynamic(() => import("./faint-young-sun-paradox"), { ssr: false }),
   gyrochronology: dynamic(() => import("./gyrochronology"), { ssr: false }),
   libration: dynamic(() => import("./libration"), { ssr: false }),
   obliquity: dynamic(() => import("./obliquity"), { ssr: false }),
@@ -81,21 +67,16 @@ const GLOSSARY_VISUALIZATIONS: Partial<
     ssr: false,
   }),
   albedo: dynamic(() => import("./albedo"), { ssr: false }),
-  "atmospheric-disequilibrium": dynamic(
-    () => import("./atmospheric-disequilibrium"),
-    { ssr: false },
-  ),
-  "atmospheric-general-circulation": dynamic(
-    () => import("./atmospheric-general-circulation"),
-    { ssr: false },
-  ),
+  "atmospheric-disequilibrium": dynamic(() => import("./atmospheric-disequilibrium"), {
+    ssr: false,
+  }),
+  "atmospheric-general-circulation": dynamic(() => import("./atmospheric-general-circulation"), {
+    ssr: false,
+  }),
   "carbon-chauvinism": dynamic(() => import("./carbon-chauvinism"), {
     ssr: false,
   }),
-  "carbonate-silicate-cycle": dynamic(
-    () => import("./carbonate-silicate-cycle"),
-    { ssr: false },
-  ),
+  "carbonate-silicate-cycle": dynamic(() => import("./carbonate-silicate-cycle"), { ssr: false }),
   "coriolis-effect": dynamic(() => import("./coriolis-effect"), { ssr: false }),
   daisyworld: dynamic(() => import("./daisyworld"), { ssr: false }),
   "earth-system-science": dynamic(() => import("./earth-system-science"), {
@@ -107,10 +88,9 @@ const GLOSSARY_VISUALIZATIONS: Partial<
   }),
   "hadley-cell": dynamic(() => import("./hadley-cell"), { ssr: false }),
   homeostasis: dynamic(() => import("./homeostasis"), { ssr: false }),
-  "intertropical-convergence-zone": dynamic(
-    () => import("./intertropical-convergence-zone"),
-    { ssr: false },
-  ),
+  "intertropical-convergence-zone": dynamic(() => import("./intertropical-convergence-zone"), {
+    ssr: false,
+  }),
   "negative-feedback": dynamic(() => import("./negative-feedback"), {
     ssr: false,
   }),
@@ -124,10 +104,7 @@ const GLOSSARY_VISUALIZATIONS: Partial<
     ssr: false,
   }),
   superrotation: dynamic(() => import("./superrotation"), { ssr: false }),
-  "thermohaline-circulation": dynamic(
-    () => import("./thermohaline-circulation"),
-    { ssr: false },
-  ),
+  "thermohaline-circulation": dynamic(() => import("./thermohaline-circulation"), { ssr: false }),
   "tipping-point": dynamic(() => import("./tipping-point"), { ssr: false }),
   "claw-hypothesis": dynamic(() => import("./claw-hypothesis"), { ssr: false }),
 
@@ -180,10 +157,7 @@ const GLOSSARY_VISUALIZATIONS: Partial<
   "degeneracy-biology": dynamic(() => import("./degeneracy-biology"), {
     ssr: false,
   }),
-  "differential-persistence": dynamic(
-    () => import("./differential-persistence"),
-    { ssr: false },
-  ),
+  "differential-persistence": dynamic(() => import("./differential-persistence"), { ssr: false }),
   "evolutionary-stasis": dynamic(() => import("./evolutionary-stasis"), {
     ssr: false,
   }),
@@ -288,10 +262,7 @@ const GLOSSARY_VISUALIZATIONS: Partial<
   "ficks-law": dynamic(() => import("./ficks-law"), { ssr: false }),
   fluorescence: dynamic(() => import("./fluorescence"), { ssr: false }),
   "gill-lamella": dynamic(() => import("./gill-lamella"), { ssr: false }),
-  "green-fluorescent-protein": dynamic(
-    () => import("./green-fluorescent-protein"),
-    { ssr: false },
-  ),
+  "green-fluorescent-protein": dynamic(() => import("./green-fluorescent-protein"), { ssr: false }),
   "histotoxic-hypoxia": dynamic(() => import("./histotoxic-hypoxia"), {
     ssr: false,
   }),
@@ -302,10 +273,7 @@ const GLOSSARY_VISUALIZATIONS: Partial<
   magnetite: dynamic(() => import("./magnetite"), { ssr: false }),
   magnetoreception: dynamic(() => import("./magnetoreception"), { ssr: false }),
   magnetosome: dynamic(() => import("./magnetosome"), { ssr: false }),
-  "nerve-conduction-velocity": dynamic(
-    () => import("./nerve-conduction-velocity"),
-    { ssr: false },
-  ),
+  "nerve-conduction-velocity": dynamic(() => import("./nerve-conduction-velocity"), { ssr: false }),
   operculum: dynamic(() => import("./operculum"), { ssr: false }),
   photophore: dynamic(() => import("./photophore"), { ssr: false }),
   proprioception: dynamic(() => import("./proprioception"), { ssr: false }),
@@ -324,10 +292,7 @@ const GLOSSARY_VISUALIZATIONS: Partial<
   "cross-current-exchange": dynamic(() => import("./cross-current-exchange"), {
     ssr: false,
   }),
-  "countercurrent-exchange": dynamic(
-    () => import("./countercurrent-exchange"),
-    { ssr: false },
-  ),
+  "countercurrent-exchange": dynamic(() => import("./countercurrent-exchange"), { ssr: false }),
   // Phase 10 — Ecology
   "biological-market": dynamic(() => import("./biological-market"), {
     ssr: false,
@@ -335,10 +300,9 @@ const GLOSSARY_VISUALIZATIONS: Partial<
   "carrying-capacity": dynamic(() => import("./carrying-capacity"), {
     ssr: false,
   }),
-  "competitive-exclusion-principle": dynamic(
-    () => import("./competitive-exclusion-principle"),
-    { ssr: false },
-  ),
+  "competitive-exclusion-principle": dynamic(() => import("./competitive-exclusion-principle"), {
+    ssr: false,
+  }),
   "density-dependence": dynamic(() => import("./density-dependence"), {
     ssr: false,
   }),
@@ -366,18 +330,12 @@ const GLOSSARY_VISUALIZATIONS: Partial<
   "life-dinner-principle": dynamic(() => import("./life-dinner-principle"), {
     ssr: false,
   }),
-  "lotka-volterra-equations": dynamic(
-    () => import("./lotka-volterra-equations"),
-    { ssr: false },
-  ),
+  "lotka-volterra-equations": dynamic(() => import("./lotka-volterra-equations"), { ssr: false }),
   mutualism: dynamic(() => import("./mutualism"), { ssr: false }),
   "niche-partitioning": dynamic(() => import("./niche-partitioning"), {
     ssr: false,
   }),
-  "optimal-foraging-theory": dynamic(
-    () => import("./optimal-foraging-theory"),
-    { ssr: false },
-  ),
+  "optimal-foraging-theory": dynamic(() => import("./optimal-foraging-theory"), { ssr: false }),
   "paradox-of-enrichment": dynamic(() => import("./paradox-of-enrichment"), {
     ssr: false,
   }),
@@ -399,20 +357,16 @@ const GLOSSARY_VISUALIZATIONS: Partial<
   "cohesion-tension": dynamic(() => import("./cohesion-tension"), {
     ssr: false,
   }),
-  "common-mycorrhizal-network": dynamic(
-    () => import("./common-mycorrhizal-network"),
-    { ssr: false },
-  ),
+  "common-mycorrhizal-network": dynamic(() => import("./common-mycorrhizal-network"), {
+    ssr: false,
+  }),
   "cytoplasmic-streaming": dynamic(() => import("./cytoplasmic-streaming"), {
     ssr: false,
   }),
   ectomycorrhiza: dynamic(() => import("./ectomycorrhiza"), { ssr: false }),
   "emergent-layer": dynamic(() => import("./emergent-layer"), { ssr: false }),
   epiphyte: dynamic(() => import("./epiphyte"), { ssr: false }),
-  "foliage-height-diversity": dynamic(
-    () => import("./foliage-height-diversity"),
-    { ssr: false },
-  ),
+  "foliage-height-diversity": dynamic(() => import("./foliage-height-diversity"), { ssr: false }),
   "forest-floor": dynamic(() => import("./forest-floor"), { ssr: false }),
   "forest-stratification": dynamic(() => import("./forest-stratification"), {
     ssr: false,
@@ -453,15 +407,9 @@ const GLOSSARY_VISUALIZATIONS: Partial<
   "error-correcting-code": dynamic(() => import("./error-correcting-code"), {
     ssr: false,
   }),
-  "giant-connected-component": dynamic(
-    () => import("./giant-connected-component"),
-    { ssr: false },
-  ),
+  "giant-connected-component": dynamic(() => import("./giant-connected-component"), { ssr: false }),
   "hub-network": dynamic(() => import("./hub-network"), { ssr: false }),
-  "interdependent-networks": dynamic(
-    () => import("./interdependent-networks"),
-    { ssr: false },
-  ),
+  "interdependent-networks": dynamic(() => import("./interdependent-networks"), { ssr: false }),
   "modularity-network": dynamic(() => import("./modularity-network"), {
     ssr: false,
   }),
@@ -479,10 +427,7 @@ const GLOSSARY_VISUALIZATIONS: Partial<
   }),
   queue: dynamic(() => import("./queue"), { ssr: false }),
   redundancy: dynamic(() => import("./redundancy"), { ssr: false }),
-  "redundancy-engineering": dynamic(
-    () => import("./redundancy-engineering"),
-    { ssr: false },
-  ),
+  "redundancy-engineering": dynamic(() => import("./redundancy-engineering"), { ssr: false }),
   "scale-free-network": dynamic(() => import("./scale-free-network"), {
     ssr: false,
   }),
@@ -508,25 +453,19 @@ const GLOSSARY_VISUALIZATIONS: Partial<
   "distributed-cognition": dynamic(() => import("./distributed-cognition"), {
     ssr: false,
   }),
-  "global-workspace-theory": dynamic(
-    () => import("./global-workspace-theory"),
-    { ssr: false },
-  ),
-  "hard-problem-of-consciousness": dynamic(
-    () => import("./hard-problem-of-consciousness"),
-    { ssr: false },
-  ),
+  "global-workspace-theory": dynamic(() => import("./global-workspace-theory"), { ssr: false }),
+  "hard-problem-of-consciousness": dynamic(() => import("./hard-problem-of-consciousness"), {
+    ssr: false,
+  }),
   "information-theory": dynamic(() => import("./information-theory"), {
     ssr: false,
   }),
-  "integrated-information-theory": dynamic(
-    () => import("./integrated-information-theory"),
-    { ssr: false },
-  ),
-  "noisy-channel-coding-theorem": dynamic(
-    () => import("./noisy-channel-coding-theorem"),
-    { ssr: false },
-  ),
+  "integrated-information-theory": dynamic(() => import("./integrated-information-theory"), {
+    ssr: false,
+  }),
+  "noisy-channel-coding-theorem": dynamic(() => import("./noisy-channel-coding-theorem"), {
+    ssr: false,
+  }),
   "shannon-entropy": dynamic(() => import("./shannon-entropy"), {
     ssr: false,
   }),
@@ -557,26 +496,19 @@ const GLOSSARY_VISUALIZATIONS: Partial<
     ssr: false,
   }),
   masking: dynamic(() => import("./masking"), { ssr: false }),
-  "suprachiasmatic-nucleus": dynamic(
-    () => import("./suprachiasmatic-nucleus"),
-    { ssr: false },
-  ),
+  "suprachiasmatic-nucleus": dynamic(() => import("./suprachiasmatic-nucleus"), { ssr: false }),
   melatonin: dynamic(() => import("./melatonin"), { ssr: false }),
   melanopsin: dynamic(() => import("./melanopsin"), { ssr: false }),
-  "temporal-niche-partitioning": dynamic(
-    () => import("./temporal-niche-partitioning"),
-    { ssr: false },
-  ),
+  "temporal-niche-partitioning": dynamic(() => import("./temporal-niche-partitioning"), {
+    ssr: false,
+  }),
   "nocturnal-bottleneck": dynamic(() => import("./nocturnal-bottleneck"), {
     ssr: false,
   }),
   "circalunar-clock": dynamic(() => import("./circalunar-clock"), {
     ssr: false,
   }),
-  "artificial-light-at-night": dynamic(
-    () => import("./artificial-light-at-night"),
-    { ssr: false },
-  ),
+  "artificial-light-at-night": dynamic(() => import("./artificial-light-at-night"), { ssr: false }),
   "forced-desynchrony": dynamic(() => import("./forced-desynchrony"), {
     ssr: false,
   }),
@@ -608,12 +540,29 @@ const GLOSSARY_VISUALIZATIONS: Partial<
     ssr: false,
   }),
   "nurse-log": dynamic(() => import("./nurse-log"), { ssr: false }),
-  "alternative-stable-state": dynamic(
-    () => import("./alternative-stable-state"),
+  "alternative-stable-state": dynamic(() => import("./alternative-stable-state"), { ssr: false }),
+  "cultural-keystone-species": dynamic(() => import("./cultural-keystone-species"), { ssr: false }),
+  // Pandora's smallest things — soil, microbes, and coevolution
+  "soil-aggregate": dynamic(() => import("./soil-aggregate"), { ssr: false }),
+  decomposition: dynamic(() => import("./decomposition"), { ssr: false }),
+  rhizosphere: dynamic(() => import("./rhizosphere"), { ssr: false }),
+  microbiome: dynamic(() => import("./microbiome"), { ssr: false }),
+  pathogen: dynamic(() => import("./pathogen"), { ssr: false }),
+  "negative-frequency-dependent-selection": dynamic(
+    () => import("./negative-frequency-dependent-selection"),
     { ssr: false },
   ),
-  "cultural-keystone-species": dynamic(
-    () => import("./cultural-keystone-species"),
+  "red-queen-hypothesis": dynamic(() => import("./red-queen-hypothesis"), {
+    ssr: false,
+  }),
+  "planetary-protection": dynamic(() => import("./planetary-protection"), {
+    ssr: false,
+  }),
+  // Cetacean cognition and cultural transmission
+  "animal-culture": dynamic(() => import("./animal-culture"), { ssr: false }),
+  "social-learning": dynamic(() => import("./social-learning"), { ssr: false }),
+  "network-based-diffusion-analysis": dynamic(
+    () => import("./network-based-diffusion-analysis"),
     { ssr: false },
   ),
 };

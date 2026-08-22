@@ -1,0 +1,105 @@
+{
+  "viz": {
+    "cultureTransmissionLab": {
+      "title": "Khi nào một hành vi trở thành văn hóa?",
+      "subtitle": "Một khuôn mẫu, ba lời giải — thêm bằng chứng cho đến khi chỉ còn một lời giải đứng vững",
+      "stepLabel": "Từng lớp bằng chứng",
+      "hypothesisLabel": "Các giả thuyết cạnh tranh",
+      "observedFirst": "cá thể đầu tiên",
+      "laterObservers": "những cá thể học sau",
+      "caption": "Khác biệt giữa hai nhóm mới chỉ là điểm khởi đầu. Văn hóa trở thành lời giải mạnh nhất khi gene và môi trường không dự đoán được khuôn mẫu, còn quan hệ xã hội lại dự đoán đúng ai sẽ học tiếp theo.",
+      "hypotheses": {
+        "genetic": "Di truyền qua gene",
+        "environmental": "Do môi trường khơi ra",
+        "social": "Học từ cá thể khác"
+      },
+      "verdicts": {
+        "open": "chưa loại trừ",
+        "weakened": "suy yếu",
+        "supported": "được ủng hộ"
+      },
+      "steps": {
+        "pattern": {
+          "tab": "Tìm khuôn mẫu",
+          "hint": "Khác biệt là manh mối, chưa phải phán quyết.",
+          "aria": "Hai nhóm cá voi có hành vi khác nhau trong khi cả ba lời giải vẫn còn khả dĩ",
+          "observation": "Một nhóm thực hiện hành vi mà nhóm gần đó không có. Điều này đáng chú ý, nhưng gene, môi trường và học hỏi xã hội đều có thể vẽ nên cùng một bản đồ.",
+          "results": {
+            "genetic": "Hai nhóm có thể mang những thiên hướng di truyền khác nhau.",
+            "environmental": "Một nhóm có thể gặp nguồn thức ăn hoặc điều kiện mà nhóm kia không có.",
+            "social": "Hành vi có thể lan qua việc quan sát bạn đồng hành. Chưa có gì phân định ba khả năng."
+          }
+        },
+        "sharedWater": {
+          "tab": "Ghép môi trường",
+          "hint": "Cùng vùng nước làm suy yếu lời giải thuần sinh thái.",
+          "aria": "Hai nhóm cá voi sống cùng môi trường nhưng vẫn giữ hai truyền thống khác nhau",
+          "observation": "Hai nhóm bơi trong cùng vùng nước và tiếp cận cùng nguồn mồi, thế nhưng truyền thống vẫn dừng đúng ở ranh giới xã hội.",
+          "results": {
+            "genetic": "Di truyền vẫn có thể giải thích cho đến khi quan hệ huyết thống được đo.",
+            "environmental": "Khác biệt môi trường trên diện rộng không còn giải thích được ranh giới xã hội.",
+            "social": "Ranh giới nhóm bền vững chính là điều một truyền thống được học sẽ tạo ra."
+          }
+        },
+        "geneticOverlap": {
+          "tab": "Kiểm tra huyết thống",
+          "hint": "Sự chồng lấn di truyền gạt bỏ thêm một lời giải dễ dãi.",
+          "aria": "Hai nhóm cá voi chồng lấn về di truyền nhưng vẫn giữ truyền thống hành vi riêng",
+          "observation": "Dữ liệu gene không chia cá thể thành đúng những nhóm mà hành vi tạo ra. Họ hàng có thể theo hai truyền thống khác nhau; những cá thể không gần huyết thống vẫn có thể học cùng một cách.",
+          "results": {
+            "genetic": "Gene không còn dự đoán tốt ranh giới hành vi.",
+            "environmental": "Môi trường chung đã làm lời giải này suy yếu từ bước trước.",
+            "social": "Quan hệ giao du giờ dự đoán hành vi tốt hơn quan hệ tổ tiên."
+          }
+        },
+        "socialDiffusion": {
+          "tab": "Dõi cách lan truyền",
+          "hint": "Thứ tự tiếp nhận đi theo mạng quan hệ xã hội.",
+          "aria": "Một hành vi mới lan từ cá voi này sang cá voi khác dọc theo những mối liên hệ xã hội đã quan sát",
+          "observation": "Một hành vi mới xuất hiện rồi đến với bạn đồng hành gần trước những cá thể xa. Trình tự thời gian chạy dọc theo quan hệ xã hội đã đo, chứ không đơn thuần lan qua không gian.",
+          "results": {
+            "genetic": "Gene không thay đổi trong khoảng thời gian ngắn của đợt lan truyền này.",
+            "environmental": "Những cá thể ở gần nhưng ít giao du không học hành vi với cùng tốc độ.",
+            "social": "Mạng xã hội dự đoán đúng ai sẽ học tiếp: bằng chứng trực tiếp cho sự truyền đạt xã hội."
+          }
+        }
+      }
+    },
+    "animalCulture": {
+      "title": "Văn hóa ở động vật",
+      "category": "Sinh thái học hành vi",
+      "info": "Một truyền thống phải được học qua xã hội và tồn tại lâu hơn cá thể đã sáng tạo ra nó.",
+      "left": "SÁNG KIẾN",
+      "middle": "LAN QUA XÃ HỘI",
+      "right": "TRUYỀN THỐNG",
+      "control": "Độ bền",
+      "low": "Một cá thể",
+      "high": "Qua nhiều thế hệ",
+      "caption": "Văn hóa bắt đầu khi thông tin vượt qua ranh giới giữa hai cuộc đời. Sống lâu thôi chưa đủ; con đường truyền phải là con đường xã hội."
+    },
+    "socialLearning": {
+      "title": "Học hỏi xã hội",
+      "category": "Sinh thái học hành vi",
+      "info": "Sự hiện diện hoặc hành vi của cá thể khác làm thay đổi điều mà kẻ quan sát học được.",
+      "left": "TỰ MÌNH",
+      "middle": "QUAN SÁT",
+      "right": "LÀM THEO",
+      "control": "Tác động xã hội",
+      "low": "Tự khám phá",
+      "high": "Học qua cá thể khác",
+      "caption": "Học hỏi xã hội trải từ việc bị thu hút đến nơi một cá thể khác đang kiếm ăn cho tới sao chép chính xác một hành động hoàn toàn mới."
+    },
+    "networkBasedDiffusionAnalysis": {
+      "title": "Phân tích khuếch tán dựa trên mạng",
+      "category": "Phương pháp khoa học",
+      "info": "Kiểm tra xem thứ tự tiếp nhận có đi theo những mối liên hệ xã hội đã đo hay không.",
+      "left": "NGẪU NHIÊN",
+      "middle": "PHA TRỘN",
+      "right": "QUAN HỆ XÃ HỘI",
+      "control": "Độ khớp mạng",
+      "low": "Không có tín hiệu xã hội",
+      "high": "Truyền đạt xã hội",
+      "caption": "Nếu bạn đồng hành gần liên tục học hành vi mới sớm hơn, mô hình truyền đạt xã hội phải khớp trình tự quan sát tốt hơn mô hình phi xã hội."
+    }
+  }
+}

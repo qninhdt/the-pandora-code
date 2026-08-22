@@ -26,6 +26,8 @@ const NAMESPACES = [
   "viz-mind",
   "viz-canon",
   "viz-chrono",
+  "viz-ocean",
+  "viz-culture",
 ] as const;
 
 type Json = Record<string, unknown>;

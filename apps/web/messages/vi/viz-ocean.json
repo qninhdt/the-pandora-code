@@ -1,0 +1,87 @@
+{
+  "viz": {
+    "oceanColumnExplorer": {
+      "title": "Một đại dương theo chiều đứng",
+      "subtitle": "Di chuyển qua cột nước và đổi chế độ hoàn lưu.",
+      "regimeLabel": "Chế độ đại dương",
+      "regime": {
+        "stratified": "Phân tầng",
+        "upwelling": "Nước trồi"
+      },
+      "hint": {
+        "stratified": "Ranh giới mật độ mạnh ngăn lớp mặt đầy ánh sáng tiếp xúc với kho dưỡng chất bên dưới.",
+        "upwelling": "Nước dâng lên kéo ranh giới dưỡng chất lên cao, nhưng không mang ánh sáng xuống vực sâu."
+      },
+      "aria": "Cột nước ở chế độ {regime}, đầu dò nằm tại độ sâu tương đối {depth} phần trăm",
+      "layer": {
+        "surface": "Lớp nước trộn",
+        "pycnocline": "Vùng chuyển tiếp mật độ",
+        "deep": "Kho nước sâu"
+      },
+      "depth": "Độ sâu đầu dò",
+      "depthValue": "{depth}% độ sâu",
+      "zone": {
+        "surface": "Tầng mặt có ánh sáng",
+        "transition": "Đới biến mật",
+        "deep": "Nước sâu"
+      },
+      "zoneNote": {
+        "surface": "Ánh sáng dồi dào; dưỡng chất có thể cạn kiệt.",
+        "transition": "Nhiệt độ và mật độ đổi nhanh tại đây.",
+        "deep": "Nước tối tích trữ dưỡng chất được tái sinh."
+      },
+      "readout": {
+        "light": "Ánh sáng tương đối",
+        "warmth": "Độ ấm tương đối",
+        "nutrients": "Dưỡng chất tương đối",
+        "oxygen": "Oxy tương đối",
+        "zone": "Môi trường hiện tại"
+      }
+    },
+    "coastalUpwellingExplorer": {
+      "title": "Khiến nước biển leo lên",
+      "subtitle": "Gió dọc bờ và chuyển động quay của hành tinh quyết định nước mặt rời bờ hay dồn vào bờ.",
+      "hemisphereLabel": "Bán cầu",
+      "hemisphere": {
+        "north": "Bắc bán cầu",
+        "south": "Nam bán cầu"
+      },
+      "windLabel": "Hướng gió dọc bờ",
+      "wind": {
+        "equatorward": "Gió hướng xích đạo",
+        "poleward": "Gió hướng cực"
+      },
+      "aria": "Mặt cắt ven bờ minh họa {state}",
+      "ekman": "Vận chuyển nước mặt tổng hợp",
+      "deepWater": "Nước sâu lạnh, giàu dưỡng chất",
+      "coast": "Bờ biển",
+      "bloom": "Dải nước giàu sinh vật",
+      "clearSurface": "Lớp nước mặt ấm",
+      "hint": {
+        "upwelling": "Nước mặt rời bờ. Tính liên tục buộc nước dưới đới biến mật dâng lên thay chỗ.",
+        "downwelling": "Nước mặt dồn về bờ, tích lại rồi bị ép chìm xuống."
+      },
+      "readout": {
+        "transport": "Vận chuyển Ekman",
+        "vertical": "Phản ứng thẳng đứng",
+        "result": "Chế độ ven bờ"
+      },
+      "transport": {
+        "offshore": "Rời bờ",
+        "onshore": "Hướng vào bờ"
+      },
+      "vertical": {
+        "rising": "Nước sâu dâng lên",
+        "sinking": "Nước mặt chìm xuống"
+      },
+      "state": {
+        "upwelling": "Nước trồi",
+        "downwelling": "Nước chìm"
+      },
+      "result": {
+        "productive": "Dưỡng chất có thể trở lại tầng có ánh sáng.",
+        "suppressed": "Ranh giới dưỡng chất bị đẩy xuống sâu hơn."
+      }
+    }
+  }
+}

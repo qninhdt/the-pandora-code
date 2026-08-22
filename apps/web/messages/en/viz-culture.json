@@ -1,0 +1,105 @@
+{
+  "viz": {
+    "cultureTransmissionLab": {
+      "title": "How a behavior becomes culture",
+      "subtitle": "One pattern, three explanations — add evidence until only one survives",
+      "stepLabel": "Evidence step",
+      "hypothesisLabel": "Competing explanations",
+      "observedFirst": "first observed",
+      "laterObservers": "later observers",
+      "caption": "A group difference is only the beginning. Culture becomes the strongest explanation when genes and habitat fail to predict the pattern, while social relationships predict who learns next.",
+      "hypotheses": {
+        "genetic": "Inherited through genes",
+        "environmental": "Evoked by the habitat",
+        "social": "Learned from others"
+      },
+      "verdicts": {
+        "open": "still open",
+        "weakened": "weakened",
+        "supported": "supported"
+      },
+      "steps": {
+        "pattern": {
+          "tab": "Find a pattern",
+          "hint": "Difference is a clue, not a verdict.",
+          "aria": "Two whale groups showing different behavior with all explanations still possible",
+          "observation": "One group performs a behavior that a nearby group does not. That is interesting, but genes, habitat and social learning can all produce the same map.",
+          "results": {
+            "genetic": "The groups may carry different inherited tendencies.",
+            "environmental": "One group may encounter a resource or condition the other lacks.",
+            "social": "The behavior may be copied through association. Nothing yet separates the options."
+          }
+        },
+        "sharedWater": {
+          "tab": "Match the habitat",
+          "hint": "Shared water weakens a purely ecological explanation.",
+          "aria": "Neighboring whale groups in the same habitat retaining different behaviors",
+          "observation": "The groups overlap in the same water and can reach the same prey, yet the tradition remains divided along social lines.",
+          "results": {
+            "genetic": "Inheritance remains possible until relatedness is measured.",
+            "environmental": "A broad habitat difference no longer explains the social boundary.",
+            "social": "A stable group boundary is what a learned tradition predicts."
+          }
+        },
+        "geneticOverlap": {
+          "tab": "Check kinship",
+          "hint": "Genetic overlap removes another easy answer.",
+          "aria": "Genetically overlapping whale groups preserving separate behavior traditions",
+          "observation": "Genetic data do not sort individuals into the same groups as the behavior. Relatives can belong to different traditions; unrelated associates can share one.",
+          "results": {
+            "genetic": "Genes no longer predict the behavioral boundary well.",
+            "environmental": "The shared setting has already weakened this alternative.",
+            "social": "Association now predicts the behavior better than ancestry does."
+          }
+        },
+        "socialDiffusion": {
+          "tab": "Watch it spread",
+          "hint": "The order of adoption follows the social network.",
+          "aria": "A novel behavior spreading from whale to whale along observed social connections",
+          "observation": "A new behavior appears, then reaches close associates before distant individuals. The chronology travels along measured social ties rather than simply across space.",
+          "results": {
+            "genetic": "Genes do not change on the timescale of this observed spread.",
+            "environmental": "Nearby non-associates do not acquire the behavior at the same rate.",
+            "social": "The social network predicts who learns next: direct evidence of social transmission."
+          }
+        }
+      }
+    },
+    "animalCulture": {
+      "title": "Animal culture",
+      "category": "Behavioral ecology",
+      "info": "A tradition must be learned socially and persist beyond one inventor.",
+      "left": "INVENTION",
+      "middle": "SOCIAL SPREAD",
+      "right": "TRADITION",
+      "control": "Persistence",
+      "low": "One individual",
+      "high": "Across generations",
+      "caption": "Culture begins with information crossing between lives. Longevity alone is not enough; the route must be social."
+    },
+    "socialLearning": {
+      "title": "Social learning",
+      "category": "Behavioral ecology",
+      "info": "Another individual's presence or behavior changes what the observer learns.",
+      "left": "ALONE",
+      "middle": "OBSERVING",
+      "right": "COPYING",
+      "control": "Social input",
+      "low": "Individual discovery",
+      "high": "Learned through others",
+      "caption": "Social learning ranges from being drawn to a place another animal uses to copying a novel action with high fidelity."
+    },
+    "networkBasedDiffusionAnalysis": {
+      "title": "Network-based diffusion analysis",
+      "category": "Scientific method",
+      "info": "Tests whether the order of adoption follows measured social ties.",
+      "left": "RANDOM",
+      "middle": "MIXED",
+      "right": "SOCIAL TIES",
+      "control": "Network fit",
+      "low": "No social signal",
+      "high": "Social transmission",
+      "caption": "If close associates reliably acquire a new behavior earlier, a social-transmission model should fit the observed diffusion better than a non-social model."
+    }
+  }
+}

@@ -526,12 +526,7 @@
       "hint": "Sử dụng thanh trượt để kéo cây mọc cao lên. Khi các tầng mới xuất hiện, những ổ sinh thái mới mở ra mà không hề giẫm chân lên nhau tranh giành không gian.",
       "treeHeight": "Độ cao cây",
       "niches": "Ổ sinh thái",
-      "strataNames": [
-        "Thảm rừng",
-        "Tầng dưới tán",
-        "Vòm lá",
-        "Tầng vượt tán"
-      ],
+      "strataNames": ["Thảm rừng", "Tầng dưới tán", "Vòm lá", "Tầng vượt tán"],
       "floor": "Thảm rừng",
       "understory": "Tầng dưới tán",
       "canopy": "Vòm lá",
@@ -842,6 +837,171 @@
       "concurrent": "Cùng chiều",
       "transfer": "Truyền",
       "gradient": "Gradient"
+    },
+    "soilPoreExplorer": {
+      "title": "Một lỗ rỗng là cả một lục địa",
+      "subtitle": "Nước nối các láng giềng vi sinh, rồi khép cánh cửa oxy",
+      "controlLabel": "Độ ẩm của đất",
+      "state": { "dry": "Khô", "moist": "Ẩm vừa", "saturated": "Bão hòa" },
+      "grain": "hạt khoáng",
+      "waterFilm": "màng nước",
+      "oxygen": "oxy",
+      "aria": {
+        "dry": "Lỗ rỗng đất khô với các màng nước đứt đoạn và vi sinh vật bị cô lập",
+        "moist": "Lỗ rỗng đất ẩm với màng nước liền nhau, oxy và vi sinh vật hoạt động",
+        "saturated": "Lỗ rỗng ngập nước với lớp nước dày, oxy khuếch tán yếu và các túi yếm khí"
+      },
+      "readout": {
+        "water": "Phần lỗ chứa nước",
+        "oxygen": "Oxy",
+        "connectivity": "Tiếp xúc vi sinh",
+        "turnover": "Phân hủy"
+      },
+      "oxygenLevel": {
+        "dry": "Nhiều nhưng khó tiếp cận",
+        "moist": "Sẵn có",
+        "saturated": "Thấp; có túi yếm khí"
+      },
+      "connectivity": { "dry": "Đứt đoạn", "moist": "Liền mạch", "saturated": "Liền mạch" },
+      "turnover": { "dry": "Đình trệ", "moist": "Nhanh", "saturated": "Chậm lại" },
+      "verdict": {
+        "dry": "Không khí dồi dào nhưng những xa lộ nước đã đứt. Tế bào không chạm được cơ chất hay nhau.",
+        "moist": "Màng nước mỏng đưa cơ chất tới trong khi khoảng khí vẫn cấp oxy—đây là vùng nhộn nhịp nhất.",
+        "saturated": "Nước nối lại lỗ rỗng nhưng oxy khuếch tán rất chậm. Các kiểu chuyển hóa yếm khí tiếp quản."
+      },
+      "hint": {
+        "dry": "Khô hạn không làm lỗ rỗng trống đi; nó chia nơi này thành những hòn đảo vi sinh.",
+        "moist": "Hoạt tính sinh học thường đạt đỉnh giữa khô hạn và ngập úng, nơi nước và oxy cùng tồn tại.",
+        "saturated": "Lỗ rỗng ngập nước không chết. Hóa học của nó đổi khác: khử nitrat, lên men và sinh methane trở nên khả dĩ."
+      }
+    },
+    "redQueenRace": {
+      "title": "Mục tiêu không chịu đứng yên",
+      "subtitle": "So sánh leo thang một chiều với chu kỳ Nữ hoàng Đỏ",
+      "modeLabel": "Động lực đồng tiến hóa",
+      "mode": { "fluctuating": "Mục tiêu đổi chỗ", "armsRace": "Chạy đua vũ trang" },
+      "generationLabel": "Thế hệ",
+      "generation": "Thế hệ {n}",
+      "hostRow": "Kiểu gene vật chủ",
+      "pathogenRow": "Kiểu mầm bệnh",
+      "tracking": "mầm bệnh bám theo kiểu phổ biến",
+      "genotype": { "a": "Vật chủ A", "b": "Vật chủ B", "c": "Vật chủ C" },
+      "pathogen": { "a": "Mầm bệnh A", "b": "Mầm bệnh B", "c": "Mầm bệnh C" },
+      "defence": "Phòng vệ chung của vật chủ",
+      "attack": "Đòn đối phó của mầm bệnh",
+      "armsAria": "Sự leo thang một chiều giữa phòng vệ và tấn công",
+      "armsExplanation": "Cùng một đặc tính tăng dần ở cả hai phía. Biến thể cũ bị thay thế chứ không quay lại nhờ trở nên hiếm.",
+      "readout": {
+        "common": "Vật chủ phổ biến nhất",
+        "target": "Mầm bệnh khớp nhất",
+        "advantage": "Chọn lọc ưu ái",
+        "defence": "Phòng vệ",
+        "attack": "Tấn công",
+        "outcome": "Chiều biến đổi"
+      },
+      "rareVerdict": "Kiểu gene hiếm thắng—tạm thời",
+      "armsVerdict": "Mỗi cải tiến lại chọn ra một biện pháp đối phó mạnh hơn.",
+      "escalation": "Đang leo thang",
+      "hint": {
+        "fluctuating": "Vật chủ phổ biến trở thành mục tiêu dễ nhất. Sự hiếm mang lợi thế tạm thời, khiến các kiểu gene luân phiên thay vì tiến tới một kẻ thắng vĩnh viễn.",
+        "armsRace": "Chạy đua vũ trang có hướng: phòng vệ và tấn công cùng tích lũy. Động lực Nữ hoàng Đỏ lại có thể giữ các biến thể cũ bằng cách biến chính sự hiếm hoi thành lợi thế."
+      }
+    },
+    "soil-aggregate": {
+      "title": "Một thế giới đất xây từ vụn",
+      "category": "Sinh thái đất",
+      "info": "Rễ, sợi nấm và keo vi sinh gắn hạt khoáng thành những viên kết xốp.",
+      "left": "khe ngoài",
+      "middle": "màng nước",
+      "right": "lõi yếm khí",
+      "control": "Vị trí",
+      "low": "rìa giàu oxy",
+      "high": "lõi nghèo oxy",
+      "caption": "Chỉ vài milimet có thể ngăn cách những sinh cảnh trái ngược."
+    },
+    "decomposition": {
+      "title": "Vật chất đổi chủ",
+      "category": "Sinh địa hóa",
+      "info": "Phân hủy chuyển vật chất chết qua sinh vật xé vụn, vi sinh vật và mô sống.",
+      "left": "vật chất chết",
+      "middle": "vi sinh vật",
+      "right": "sinh trưởng mới",
+      "control": "Mức phân giải",
+      "low": "nguyên vẹn",
+      "high": "đã tái tuần hoàn",
+      "caption": "Không gì biến mất; carbon và dưỡng chất chỉ đổi dạng, đổi chủ."
+    },
+    "rhizosphere": {
+      "title": "Quầng chuyển động quanh rễ",
+      "category": "Sinh thái đất",
+      "info": "Dịch tiết rễ làm dải đất hẹp quanh đầu rễ khác hẳn về hóa học.",
+      "left": "đất nền",
+      "middle": "quầng dịch tiết",
+      "right": "bề mặt rễ",
+      "control": "Khoảng cách tới rễ",
+      "low": "đất nền",
+      "high": "bề mặt rễ",
+      "caption": "Cây chi carbon để định hình khu dân cư vi sinh quanh mình."
+    },
+    "microbiome": {
+      "title": "Một cộng đồng, không phải cơ quan",
+      "category": "Sinh thái vi sinh",
+      "info": "Microbiome gồm vi sinh vật, gene và hoạt động của chúng trong một sinh cảnh.",
+      "left": "môi trường",
+      "middle": "cộng đồng",
+      "right": "vật chủ",
+      "control": "Mức gắn với vật chủ",
+      "low": "từ môi trường",
+      "high": "gắn với vật chủ",
+      "caption": "Thành viên có lợi, trung tính và gây hại có thể cùng sống trong một cộng đồng."
+    },
+    "pathogen": {
+      "title": "Bệnh là một chuỗi cửa ải",
+      "category": "Sinh thái bệnh",
+      "info": "Mầm bệnh phải tới, xâm nhập, sinh sản và rời được một vật chủ tương thích.",
+      "left": "phơi nhiễm",
+      "middle": "tương thích",
+      "right": "lây truyền",
+      "control": "Tiến trình",
+      "low": "bị loại",
+      "high": "đã lây truyền",
+      "caption": "Thất bại ở bất kỳ cửa ải nào cũng chấm dứt chuỗi nhiễm."
+    },
+    "negative-frequency-dependent-selection": {
+      "title": "Sự hiếm có lợi thế tạm thời",
+      "category": "Tiến hóa",
+      "info": "Một biến thể mất lợi thế khi trở nên phổ biến và dễ bị kẻ thù theo dấu.",
+      "left": "hiếm",
+      "middle": "đang tăng",
+      "right": "mục tiêu phổ biến",
+      "control": "Tần số",
+      "low": "lợi thế khi hiếm",
+      "high": "bị nhắm tới",
+      "caption": "Kiểu thoát thân hôm nay sẽ thành mục tiêu quen thuộc ngày mai."
+    },
+    "red-queen-hypothesis": {
+      "title": "Chạy để đứng yên",
+      "category": "Đồng tiến hóa",
+      "info": "Vật chủ và ký sinh trùng liên tục thay đổi môi trường chọn lọc của nhau.",
+      "left": "vật chủ đổi",
+      "middle": "theo dấu",
+      "right": "ký sinh đổi",
+      "control": "Pha chu kỳ",
+      "low": "vật chủ dẫn trước",
+      "high": "ký sinh bắt kịp",
+      "caption": "Thích nghi tương đối có thể đứng yên dù cả hai phía vẫn tiến hóa."
+    },
+    "planetary-protection": {
+      "title": "Giữ hai sinh quyển cách nhau",
+      "category": "Sinh học vũ trụ",
+      "info": "Bảo vệ hành tinh hạn chế nhiễm bẩn chiều đi và cô lập mẫu vật mang về.",
+      "left": "vi sinh Trái Đất",
+      "middle": "hàng rào vô trùng",
+      "right": "mẫu ngoại giới",
+      "control": "Độ kín hàng rào",
+      "low": "nguy cơ nhiễm",
+      "high": "được cô lập",
+      "caption": "Cô lập bảo vệ hệ sinh thái lẫn ý nghĩa của kết quả khoa học."
     },
     "foundationVsKeystone": {
       "title": "Hai kiểu quan trọng",

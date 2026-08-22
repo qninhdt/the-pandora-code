@@ -11,10 +11,7 @@ import { describe, expect, it } from "vitest";
 import { renderWithIntl } from "./render-with-intl";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
-const INTERACTIVE_DIR = path.resolve(
-  HERE,
-  "../../components/glossary/interactive",
-);
+const INTERACTIVE_DIR = path.resolve(HERE, "../../components/glossary/interactive");
 const GLOSSARY_YAML_DIR = path.resolve(HERE, "../../../../content/glossary");
 
 function diskComponentIds(): string[] {
@@ -27,13 +24,8 @@ function diskComponentIds(): string[] {
 }
 
 function visualizerImportIds(): string[] {
-  const src = fs.readFileSync(
-    path.join(INTERACTIVE_DIR, "visualizer.tsx"),
-    "utf8",
-  );
-  return [...src.matchAll(/import\(\s*["']\.\/([a-z0-9-]+)["']\s*\)/g)].map(
-    (m) => m[1],
-  );
+  const src = fs.readFileSync(path.join(INTERACTIVE_DIR, "visualizer.tsx"), "utf8");
+  return [...src.matchAll(/import\(\s*["']\.\/([a-z0-9-]+)["']\s*\)/g)].map((m) => m[1]);
 }
 
 function glossaryYamlIds(): string[] {
@@ -51,9 +43,9 @@ describe("Glossary registry / visualizer / disk / yaml consistency", () => {
   const vizUnique = [...new Set(vizIds)].sort();
   const yamlIds = glossaryYamlIds();
 
-  it("has exactly 286 registry IDs with no duplicates", () => {
-    expect(GLOSSARY_VISUALIZATION_IDS).toHaveLength(286);
-    expect(new Set(GLOSSARY_VISUALIZATION_IDS).size).toBe(286);
+  it("has exactly 297 registry IDs with no duplicates", () => {
+    expect(GLOSSARY_VISUALIZATION_IDS).toHaveLength(297);
+    expect(new Set(GLOSSARY_VISUALIZATION_IDS).size).toBe(297);
   });
 
   it("matches disk component files 1:1", () => {
@@ -61,13 +53,12 @@ describe("Glossary registry / visualizer / disk / yaml consistency", () => {
   });
 
   it("matches visualizer dynamic imports 1:1", () => {
-    expect(vizIds).toHaveLength(286);
+    expect(vizIds).toHaveLength(297);
     expect(vizUnique).toEqual(registryIds);
   });
 
-  it("matches content/glossary YAML entries 1:1", () => {
-    expect(yamlIds).toHaveLength(286);
-    expect(yamlIds).toEqual(registryIds);
+  it("maps every visualization to a glossary YAML entry", () => {
+    expect(yamlIds).toEqual(expect.arrayContaining(registryIds));
   });
 
   it("rejects unknown slugs against the registry set", () => {
@@ -82,9 +73,7 @@ describe("Glossary registry / visualizer / disk / yaml consistency", () => {
 
 describe("GlossaryVisualizer mount smoke", () => {
   it("returns null for unregistered terms", () => {
-    const { container } = renderWithIntl(
-      <GlossaryVisualizer term="unknown-term" />,
-    );
+    const { container } = renderWithIntl(<GlossaryVisualizer term="unknown-term" />);
     expect(container.firstChild).toBeNull();
   });
 

@@ -14,6 +14,7 @@ import { Chart } from "@/components/content/chart";
 import { ChiralityHandedness } from "@/components/content/chirality-handedness";
 import { CirculationBands } from "@/components/content/circulation-bands";
 import { ClaimAudit } from "@/components/content/claim-audit";
+import { CoastalUpwellingExplorer } from "@/components/content/coastal-upwelling-explorer";
 import { ColdLightReaction } from "@/components/content/cold-light-reaction";
 import { Comparison } from "@/components/content/comparison";
 import { ConfidenceDial } from "@/components/content/confidence-dial";
@@ -21,6 +22,7 @@ import { ConfidenceMeter } from "@/components/content/confidence-meter";
 import { ConsciousBottleneck } from "@/components/content/conscious-bottleneck";
 import { ConvergenceToggle } from "@/components/content/convergence-toggle";
 import { CountercurrentExchange } from "@/components/content/countercurrent-exchange";
+import { CultureTransmissionLab } from "@/components/content/culture-transmission-lab";
 import { Daisyworld } from "@/components/content/daisyworld";
 import { DataComparison, StatGrid } from "@/components/content/data-comparison";
 import { DetectionMethodScope } from "@/components/content/detection-method-scope";
@@ -32,8 +34,6 @@ import { Figure } from "@/components/content/figure";
 import { FigureGrid } from "@/components/content/figure-grid";
 import { FlightCeilingLab } from "@/components/content/flight-ceiling-lab";
 import { FoundationVsKeystone } from "@/components/content/foundation-vs-keystone";
-import { StrataDiversityEngine } from "@/components/content/strata-diversity-engine";
-import { StructureVsBiomassClock } from "@/components/content/structure-vs-biomass-clock";
 import { FroudeGaitDial } from "@/components/content/froude-gait-dial";
 import { FunctionalResponseCurves } from "@/components/content/functional-response-curves";
 import { GiantFlierShowdown } from "@/components/content/giant-flier-showdown";
@@ -54,25 +54,30 @@ import { MycorrhizalMarket } from "@/components/content/mycorrhizal-market";
 import { NichePartitionExplorer } from "@/components/content/niche-partition-explorer";
 import { NightEyeOptics } from "@/components/content/night-eye-optics";
 import { OccamsRazorEngine } from "@/components/content/occams-razor-engine";
+import { OceanColumnExplorer } from "@/components/content/ocean-column-explorer";
 import { OpenQuestions } from "@/components/content/open-questions";
 import { PandoraLightLadder } from "@/components/content/pandora-light-ladder";
 import { PercolationNetwork } from "@/components/content/percolation-network";
 import { PhotophoreIntensity } from "@/components/content/photophore-intensity";
-import { TemporalNichePartition } from "@/components/content/temporal-niche-partition";
-import { TorukFlightEngine } from "@/components/content/toruk-flight-engine";
 import { PredatorPreyOscillator } from "@/components/content/predator-prey-oscillator";
 import { QuorumCascade } from "@/components/content/quorum-cascade";
 import { Quote } from "@/components/content/quote";
+import { RedQueenRace } from "@/components/content/red-queen-race";
 import { ReplayTheTape } from "@/components/content/replay-the-tape";
 import { ScaleUpChallenge } from "@/components/content/scale-up-challenge";
 import { ScrollSequence } from "@/components/content/scroll-sequence";
 import { ShannonChannel } from "@/components/content/shannon-channel";
+import { SoilPoreExplorer } from "@/components/content/soil-pore-explorer";
+import { StrataDiversityEngine } from "@/components/content/strata-diversity-engine";
+import { StructureVsBiomassClock } from "@/components/content/structure-vs-biomass-clock";
 import { SuperconductorCooldown } from "@/components/content/superconductor-cooldown";
-import { Timeline } from "@/components/content/timeline";
+import { TemporalNichePartition } from "@/components/content/temporal-niche-partition";
 import { TierLegend } from "@/components/content/tier-legend";
-import { VerticalForestDive } from "@/components/content/vertical-forest-dive";
+import { Timeline } from "@/components/content/timeline";
+import { TorukFlightEngine } from "@/components/content/toruk-flight-engine";
 import { TwentySecondsTimeline } from "@/components/content/twenty-seconds-timeline";
 import { UmweltLens } from "@/components/content/umwelt-lens";
+import { VerticalForestDive } from "@/components/content/vertical-forest-dive";
 import { WhatThisMeans } from "@/components/content/what-this-means";
 import { WhittakerBiomeExplorer } from "@/components/content/whittaker-biome-explorer";
 import { XenobiologyLadder } from "@/components/content/xenobiology-ladder";
@@ -108,12 +113,14 @@ export const pandoraMdxComponents = {
   CirculationBands,
   ClaimAudit,
   ColdLightReaction,
+  CoastalUpwellingExplorer,
   Comparison,
   ConfidenceDial,
   ConfidenceMeter,
   ConsciousBottleneck,
   ConvergenceToggle,
   CountercurrentExchange,
+  CultureTransmissionLab,
   Daisyworld,
   DataComparison,
   DetectionMethodScope,
@@ -150,6 +157,7 @@ export const pandoraMdxComponents = {
   LongBranchAttractionDemo,
   NightEyeOptics,
   OccamsRazorEngine,
+  OceanColumnExplorer,
   OpenQuestions,
   OrbitClock,
   PandoraLightLadder,
@@ -163,10 +171,12 @@ export const pandoraMdxComponents = {
   ReadingProgress,
   RelatedChapters,
   ReplayTheTape,
+  RedQueenRace,
   ScaleUpChallenge,
   ScientificNote,
   ScrollSequence,
   ShannonChannel,
+  SoilPoreExplorer,
   SideNote,
   SourceList,
   StatGrid,

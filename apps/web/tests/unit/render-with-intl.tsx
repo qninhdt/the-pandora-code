@@ -8,11 +8,13 @@ import enAtmosphere from "@/messages/en/viz-atmosphere.json";
 import enBio from "@/messages/en/viz-bio.json";
 import enBiomechanics from "@/messages/en/viz-biomechanics.json";
 import enCanon from "@/messages/en/viz-canon.json";
+import enCulture from "@/messages/en/viz-culture.json";
 import enEcology from "@/messages/en/viz-ecology.json";
 import enEvolution from "@/messages/en/viz-evolution.json";
 import enGeochronology from "@/messages/en/viz-geochronology.json";
 import enMind from "@/messages/en/viz-mind.json";
 import enNetwork from "@/messages/en/viz-network.json";
+import enOcean from "@/messages/en/viz-ocean.json";
 import enPhysics from "@/messages/en/viz-physics.json";
 import enPlanetary from "@/messages/en/viz-planetary.json";
 import enPlant from "@/messages/en/viz-plant.json";
@@ -26,11 +28,13 @@ import viAtmosphere from "@/messages/vi/viz-atmosphere.json";
 import viBio from "@/messages/vi/viz-bio.json";
 import viBiomechanics from "@/messages/vi/viz-biomechanics.json";
 import viCanon from "@/messages/vi/viz-canon.json";
+import viCulture from "@/messages/vi/viz-culture.json";
 import viEcology from "@/messages/vi/viz-ecology.json";
 import viEvolution from "@/messages/vi/viz-evolution.json";
 import viGeochronology from "@/messages/vi/viz-geochronology.json";
 import viMind from "@/messages/vi/viz-mind.json";
 import viNetwork from "@/messages/vi/viz-network.json";
+import viOcean from "@/messages/vi/viz-ocean.json";
 import viPhysics from "@/messages/vi/viz-physics.json";
 import viPlanetary from "@/messages/vi/viz-planetary.json";
 import viPlant from "@/messages/vi/viz-plant.json";
@@ -79,6 +83,8 @@ const EN_PARTS = [
   enNetwork,
   enMind,
   enCanon,
+  enOcean,
+  enCulture,
 ] as const;
 
 const VI_PARTS = [
@@ -99,6 +105,8 @@ const VI_PARTS = [
   viNetwork,
   viMind,
   viCanon,
+  viOcean,
+  viCulture,
 ] as const;
 
 const MESSAGES: Record<"en" | "vi", Json> = {

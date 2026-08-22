@@ -1,0 +1,87 @@
+{
+  "viz": {
+    "oceanColumnExplorer": {
+      "title": "A vertical ocean",
+      "subtitle": "Move through the water column; switch the circulation regime.",
+      "regimeLabel": "Ocean regime",
+      "regime": {
+        "stratified": "Stratified",
+        "upwelling": "Upwelling"
+      },
+      "hint": {
+        "stratified": "A strong density boundary keeps the bright surface apart from the nutrient-rich interior.",
+        "upwelling": "Rising water lifts the nutrient boundary, but it does not bring sunlight into the abyss."
+      },
+      "aria": "Ocean column in a {regime} regime with the probe at {depth} percent depth",
+      "layer": {
+        "surface": "Mixed layer",
+        "pycnocline": "Density transition",
+        "deep": "Deep reservoir"
+      },
+      "depth": "Probe depth",
+      "depthValue": "{depth}% depth",
+      "zone": {
+        "surface": "Sunlit surface",
+        "transition": "Pycnocline",
+        "deep": "Deep water"
+      },
+      "zoneNote": {
+        "surface": "Light is abundant; nutrients can run short.",
+        "transition": "Temperature and density change quickly here.",
+        "deep": "Dark water stores regenerated nutrients."
+      },
+      "readout": {
+        "light": "Relative light",
+        "warmth": "Relative warmth",
+        "nutrients": "Relative nutrients",
+        "oxygen": "Relative oxygen",
+        "zone": "Current habitat"
+      }
+    },
+    "coastalUpwellingExplorer": {
+      "title": "Make the water climb",
+      "subtitle": "Alongshore wind and planetary rotation decide whether surface water leaves or piles against the coast.",
+      "hemisphereLabel": "Hemisphere",
+      "hemisphere": {
+        "north": "Northern",
+        "south": "Southern"
+      },
+      "windLabel": "Alongshore wind direction",
+      "wind": {
+        "equatorward": "Equatorward wind",
+        "poleward": "Poleward wind"
+      },
+      "aria": "Coastal cross-section showing {state}",
+      "ekman": "Net surface transport",
+      "deepWater": "Cold, nutrient-rich water",
+      "coast": "Coast",
+      "bloom": "Productive plume",
+      "clearSurface": "Warm surface layer",
+      "hint": {
+        "upwelling": "Surface water moves offshore. Continuity replaces it with water from beneath the pycnocline.",
+        "downwelling": "Surface water moves toward the coast, piles up, and is forced downward."
+      },
+      "readout": {
+        "transport": "Ekman transport",
+        "vertical": "Vertical response",
+        "result": "Coastal regime"
+      },
+      "transport": {
+        "offshore": "Offshore",
+        "onshore": "Onshore"
+      },
+      "vertical": {
+        "rising": "Deep water rises",
+        "sinking": "Surface water sinks"
+      },
+      "state": {
+        "upwelling": "Upwelling",
+        "downwelling": "Downwelling"
+      },
+      "result": {
+        "productive": "Nutrients can re-enter the sunlit layer.",
+        "suppressed": "The nutrient boundary is pushed deeper."
+      }
+    }
+  }
+}

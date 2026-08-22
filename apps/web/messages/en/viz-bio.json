@@ -478,12 +478,7 @@
       "hint": "Use the slider to grow the tree. As new layers emerge, new ecological niches open up without competing for space.",
       "treeHeight": "Tree Height",
       "niches": "Ecological Niches",
-      "strataNames": [
-        "Forest Floor",
-        "Understory",
-        "Canopy",
-        "Emergent Layer"
-      ],
+      "strataNames": ["Forest Floor", "Understory", "Canopy", "Emergent Layer"],
       "floor": "Floor",
       "understory": "Understory",
       "canopy": "Canopy",
@@ -794,6 +789,171 @@
       "concurrent": "Concurrent",
       "transfer": "Transfer",
       "gradient": "Gradient"
+    },
+    "soilPoreExplorer": {
+      "title": "A pore is a continent",
+      "subtitle": "Water connects microbial neighbours, then shuts the oxygen door",
+      "controlLabel": "Soil moisture",
+      "state": { "dry": "Dry", "moist": "Moist", "saturated": "Saturated" },
+      "grain": "mineral grain",
+      "waterFilm": "water film",
+      "oxygen": "oxygen",
+      "aria": {
+        "dry": "A dry soil pore with broken water films and isolated microorganisms",
+        "moist": "A moist soil pore with connected water films, oxygen, and active microorganisms",
+        "saturated": "A flooded soil pore with thick water, weak oxygen diffusion, and anoxic pockets"
+      },
+      "readout": {
+        "water": "Pore filled with water",
+        "oxygen": "Oxygen",
+        "connectivity": "Microbial contact",
+        "turnover": "Decomposition"
+      },
+      "oxygenLevel": {
+        "dry": "High, but inaccessible",
+        "moist": "Available",
+        "saturated": "Low; anoxic pockets"
+      },
+      "connectivity": { "dry": "Fragmented", "moist": "Connected", "saturated": "Connected" },
+      "turnover": { "dry": "Stalled", "moist": "Fast", "saturated": "Slower" },
+      "verdict": {
+        "dry": "Air is plentiful, but the water highways are broken. Cells cannot reach substrate or one another.",
+        "moist": "Thin connected films deliver substrate while gas-filled space still supplies oxygen—the busy middle.",
+        "saturated": "Water reconnects the pore but oxygen diffuses slowly through it. Different anaerobic metabolisms take over."
+      },
+      "hint": {
+        "dry": "Drying does not empty a pore; it divides it into microbial islands.",
+        "moist": "Maximum biological activity usually sits between drought and flooding, where water and oxygen coexist.",
+        "saturated": "A flooded pore is not dead. It changes chemistry: denitrification, fermentation, and methanogenesis become possible."
+      }
+    },
+    "redQueenRace": {
+      "title": "The target that will not stay still",
+      "subtitle": "Compare directional escalation with a Red Queen cycle",
+      "modeLabel": "Coevolutionary dynamic",
+      "mode": { "fluctuating": "Changing target", "armsRace": "Arms race" },
+      "generationLabel": "Generation",
+      "generation": "Generation {n}",
+      "hostRow": "Host genotypes",
+      "pathogenRow": "Pathogen types",
+      "tracking": "the pathogen tracks what is common",
+      "genotype": { "a": "Host A", "b": "Host B", "c": "Host C" },
+      "pathogen": { "a": "Pathogen A", "b": "Pathogen B", "c": "Pathogen C" },
+      "defence": "Shared host defence",
+      "attack": "Pathogen countermeasure",
+      "armsAria": "Directional escalation between defence and attack",
+      "armsExplanation": "The same trait ratchets upward on both sides. Older variants are replaced rather than returning when rare.",
+      "readout": {
+        "common": "Most common host",
+        "target": "Best-matched pathogen",
+        "advantage": "Selection favours",
+        "defence": "Defence",
+        "attack": "Attack",
+        "outcome": "Direction"
+      },
+      "rareVerdict": "Rare genotype wins—for now",
+      "armsVerdict": "Each improvement selects for a stronger countermeasure.",
+      "escalation": "Escalating",
+      "hint": {
+        "fluctuating": "The common host becomes the easiest target. Rarity is temporarily valuable, so genotypes cycle instead of marching toward one permanent winner.",
+        "armsRace": "An arms race is directional: defence and attack accumulate. Red Queen dynamics can instead preserve old variants by making rarity itself advantageous."
+      }
+    },
+    "soil-aggregate": {
+      "title": "A soil world built from crumbs",
+      "category": "Soil ecology",
+      "info": "Roots, fungal threads, and microbial glues bind mineral grains into porous aggregates.",
+      "left": "outer pore",
+      "middle": "water film",
+      "right": "anoxic core",
+      "control": "Position",
+      "low": "oxygen-rich edge",
+      "high": "oxygen-poor core",
+      "caption": "Millimetres of distance can separate contrasting habitats."
+    },
+    "decomposition": {
+      "title": "Matter changes hands",
+      "category": "Biogeochemistry",
+      "info": "Decomposition transfers dead material through fragmenters, microbes, and living tissue.",
+      "left": "dead matter",
+      "middle": "microbes",
+      "right": "new growth",
+      "control": "Breakdown",
+      "low": "intact",
+      "high": "recycled",
+      "caption": "Nothing vanishes; carbon and nutrients change form and owner."
+    },
+    "rhizosphere": {
+      "title": "The root's moving halo",
+      "category": "Soil ecology",
+      "info": "Root exudates make the narrow soil zone around a growing tip chemically distinct.",
+      "left": "bulk soil",
+      "middle": "exudate halo",
+      "right": "root surface",
+      "control": "Distance to root",
+      "low": "bulk soil",
+      "high": "root surface",
+      "caption": "A plant spends carbon to shape the microbial neighbourhood around it."
+    },
+    "microbiome": {
+      "title": "A community, not an organ",
+      "category": "Microbial ecology",
+      "info": "A microbiome includes microorganisms, their genes, and their activity in one habitat.",
+      "left": "environment",
+      "middle": "community",
+      "right": "host",
+      "control": "Host association",
+      "low": "environmental",
+      "high": "host-linked",
+      "caption": "Helpful, neutral, and harmful members can occupy the same community."
+    },
+    "pathogen": {
+      "title": "Disease is a sequence of gates",
+      "category": "Disease ecology",
+      "info": "A would-be pathogen must reach, enter, reproduce in, and leave a compatible host.",
+      "left": "exposure",
+      "middle": "compatibility",
+      "right": "transmission",
+      "control": "Progress",
+      "low": "excluded",
+      "high": "transmitted",
+      "caption": "Failure at any gate ends the infection chain."
+    },
+    "negative-frequency-dependent-selection": {
+      "title": "Rarity has temporary value",
+      "category": "Evolution",
+      "info": "A variant loses advantage as it becomes common and easier for enemies to track.",
+      "left": "rare",
+      "middle": "rising",
+      "right": "common target",
+      "control": "Frequency",
+      "low": "rare advantage",
+      "high": "targeted",
+      "caption": "Today's escape type becomes tomorrow's familiar target."
+    },
+    "red-queen-hypothesis": {
+      "title": "Running to stay in place",
+      "category": "Coevolution",
+      "info": "Hosts and parasites continually alter one another's selective environment.",
+      "left": "host change",
+      "middle": "tracking",
+      "right": "parasite change",
+      "control": "Cycle phase",
+      "low": "host leads",
+      "high": "parasite catches up",
+      "caption": "Relative fitness can stay level while both sides keep evolving."
+    },
+    "planetary-protection": {
+      "title": "Keep two biospheres apart",
+      "category": "Astrobiology",
+      "info": "Planetary protection limits forward contamination and safeguards returned samples.",
+      "left": "Earth microbes",
+      "middle": "sterile barrier",
+      "right": "alien sample",
+      "control": "Barrier integrity",
+      "low": "contamination risk",
+      "high": "contained",
+      "caption": "Containment protects ecosystems and the meaning of the scientific result."
     },
     "foundationVsKeystone": {
       "title": "Two kinds of important",

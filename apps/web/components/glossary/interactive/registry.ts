@@ -301,6 +301,19 @@ export const GLOSSARY_VISUALIZATION_IDS = [
   "nurse-log",
   "alternative-stable-state",
   "cultural-keystone-species",
+  // Pandora's smallest things — soil, microbes, and coevolution
+  "soil-aggregate",
+  "decomposition",
+  "rhizosphere",
+  "microbiome",
+  "pathogen",
+  "negative-frequency-dependent-selection",
+  "red-queen-hypothesis",
+  "planetary-protection",
+  // Cetacean cognition and cultural transmission
+  "animal-culture",
+  "social-learning",
+  "network-based-diffusion-analysis",
 ] as const;
 
 export type GlossaryVisualizationId = (typeof GLOSSARY_VISUALIZATION_IDS)[number];
