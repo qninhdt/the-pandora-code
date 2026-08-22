@@ -1,0 +1,17 @@
+id: phase-response-curve
+label:
+  vi: Đường cong đáp ứng pha
+  en: Phase response curve
+definition:
+  vi: 'Bản đồ cho biết một xung ánh sáng sẽ dịch đồng hồ sinh học đi bao nhiêu, tùy theo nó đến vào lúc nào so với giờ mà đồng hồ đang tin. Hình dạng của nó không hề trực giác. Ánh sáng rơi vào đầu đêm chủ quan đẩy đồng hồ *muộn lại*; ánh sáng rơi vào cuối đêm chủ quan, ngay trước bình minh nội tại, kéo đồng hồ *sớm lên*; còn ánh sáng giữa ngày chủ quan hầu như không làm gì cả - một quãng gọi là vùng chết, nơi đồng hồ đã no ánh sáng và thêm một photon cũng không mang thêm thông tin. Chính hình dạng ba phần này là thứ khiến việc chỉnh đồng hồ hằng ngày hoạt động được.'
+  en: 'The map of how far a pulse of light will shift a clock, depending on when it arrives relative to what the clock currently believes the time to be. Its shape is not intuitive. Light landing in the early subjective night pushes the clock *later*; light in the late subjective night, just before the internal dawn, pulls it *earlier*; and light in the middle of the subjective day does almost nothing - a stretch called the dead zone, where the clock has already had its fill of daylight and one more photon carries no information. That three-part shape is exactly what makes daily resetting work.'
+see_also:
+  - entrainment
+  - zeitgeber
+  - range-of-entrainment
+  - melanopsin
+category: bio
+tags:
+  - physiology
+  - sensory-biology
+cover_prompt: A painted S-shaped curve crossing a horizontal baseline, rising above it on one side and dipping below on the other with a flat stretch in the middle, drawn over a faint band shaded from bright at one end to dark at the other, cyan and amber on deep indigo, no text, no labels, no numbers.

@@ -1,0 +1,301 @@
+{
+  "viz": {
+    "entrainmentRange": {
+      "title": "The range of entrainment",
+      "subtitle": "How far a clock can be dragged from its own period — and where it lets go",
+      "aria": "A scale of day lengths showing the narrow band a human clock can be entrained to, with Earth, Mars and Pandora marked",
+      "dayLengthLabel": "The world's day",
+      "axisLabel": "Length of the world's day (hours)",
+      "bandLabel": "Entrainable band",
+      "tauLabel": "Clock's own period, 24.2 h",
+      "marks": {
+        "earth": "Earth",
+        "mars": "Mars",
+        "pandora": "Pandora"
+      },
+      "requiredLabel": "Correction needed",
+      "requiredNote": "every single day",
+      "capacityLabel": "Correction available",
+      "capacityNote": "the most light can deliver",
+      "stateLabel": "Result",
+      "stateLocked": "Locked on",
+      "stateLockedNote": "the clock follows the world",
+      "stateFree": "Broken free",
+      "stateFreeNote": "the clock runs on its own period",
+      "caption": "A clock can only be held to a day close to its own. Each day, light must correct the gap between the clock's natural period and the world's day — and light has a limited daily budget. Inside the band, the correction fits and the clock locks on. Outside it, the correction demanded exceeds anything light can deliver, and the clock disengages and free-runs. Mars, at 24.65 hours, sits just inside. Pandora, at 26, does not.",
+      "hint": "Drag the day length. Note that failure is not gradual: the clock either follows the world or abandons it. There is no partial adaptation, which is why a mismatched day is a mechanical limit rather than a matter of effort."
+    },
+    "maskingOrClock": {
+      "title": "Reflex, or clock?",
+      "subtitle": "Two mechanisms that look identical — until you take the light away",
+      "aria": "An activity record over ten days, showing four days under a light cycle followed by release into constant darkness",
+      "mechanismLabel": "Mechanism",
+      "clockOption": "Real clock",
+      "maskingOption": "Light reflex",
+      "releaseLabel": "Light cycle removed",
+      "hourAxis": "Hour of day →",
+      "dayAxis": "Day",
+      "underCycleLabel": "Under the light cycle",
+      "underCycleValue": "Identical",
+      "underCycleNote": "both are perfectly punctual",
+      "afterReleaseLabel": "In constant darkness",
+      "afterClockValue": "Keeps going",
+      "afterClockNote": "drifting by its own period",
+      "afterMaskingValue": "Scatters",
+      "afterMaskingNote": "no timing source left",
+      "verdictLabel": "What it proves",
+      "verdictClock": "Internal oscillator",
+      "verdictClockNote": "the animal carries the time",
+      "verdictMasking": "No clock at all",
+      "verdictMaskingNote": "the room was telling the time",
+      "caption": "The founding experiment of the field, run on an animal instead of a plant. Under a regular light cycle, a genuine internal clock and a simple light-driven reflex produce the same tidy record: activity at the same hour, every day. Remove the light cycle and they part company. The clock keeps counting, drifting a little each day on its own slightly-wrong period — that drift is the proof. The reflex, with nothing left to react to, simply falls apart.",
+      "hint": "The drift is the signature. A reflex can only ever be late, because it waits for the world to act; a clock can be early, because it knows what is coming. Nobody has run this test on Pandora, which is why canon cannot tell us which of the two we are watching when the forest lights up."
+    },
+    "lightLadder": {
+      "title": "How dark is a night?",
+      "subtitle": "The Pandoran light budget against the levels a clock can actually read",
+      "aria": "A logarithmic scale of illuminance from bright sunlight down to bioluminescence, with clock-relevant thresholds marked",
+      "worldLabel": "World",
+      "earth": "Earth",
+      "pandora": "Pandora",
+      "axisLabel": "Illuminance (lux, log scale)",
+      "darkerLabel": "← darker",
+      "rungs": {
+        "sunlight": "Direct sun",
+        "overcast": "Overcast day",
+        "indoor": "Indoor lighting",
+        "twilight": "Twilight",
+        "companionStar": "Companion star",
+        "planetshine": "Planetshine",
+        "fullMoon": "Full moon",
+        "starlight": "Starlight",
+        "groundGlow": "Glowing ground"
+      },
+      "thresholds": {
+        "melatonin": "Melatonin suppressed",
+        "sublux": "Sub-lux floor"
+      },
+      "caption": "The light levels that matter to a clock, on a logarithmic scale. Earth's night falls away to starlight — about eight orders of magnitude below noon, the crispest signal in nature. Pandora's night has a floor: planetshine from a permanently fixed gas giant, and for part of the year a second sun. Meanwhile the celebrated glowing ground, measured against real photometry from Earth's luminous fungi, sits far below anything a clock could read. Earth figures are measured; the Pandoran values are approximate, since canon never states an ambient night illuminance.",
+      "hint": "The visually spectacular part of the Pandoran night is chronobiologically almost silent, and the parts nobody would call 'light' are the ones bright enough to matter. Pandora's difficulty is not too little light at night — it is a night that is never reliably dark, and an unreliable cue is a poor clock-setter."
+    },
+    "temporalNiche": {
+      "title": "One forest, two shifts",
+      "subtitle": "Time as an axis of the niche — scrub a Pandoran day and watch the handover",
+      "aria": "Activity windows for six Pandoran animals across a 26-hour day, with the afternoon eclipse marked",
+      "hourLabel": "Hour of the Pandoran day",
+      "axisLabel": "Hours into the 26-hour day",
+      "dayLabel": "Day shift",
+      "nightLabel": "Night shift",
+      "eclipseLabel": "Eclipse",
+      "occupants": {
+        "banshee": "Mountain banshee",
+        "hexapede": "Hexapede",
+        "prolemuris": "Prolemuris",
+        "viperwolf": "Viperwolf",
+        "thanator": "Thanator",
+        "fanLizard": "Fan lizard"
+      },
+      "tiers": {
+        "stated": "stated in canon",
+        "inferred": "inferred from film"
+      },
+      "phaseLabel": "Current phase",
+      "phases": {
+        "day": "Daylight",
+        "night": "Night",
+        "eclipse": "Eclipse dark"
+      },
+      "phaseNotes": {
+        "day": "the day roster is working",
+        "night": "the night roster has the forest",
+        "eclipse": "true dark in the middle of the afternoon"
+      },
+      "onShiftLabel": "On shift now",
+      "nobodyOnShift": "the handover moment",
+      "caption": "Two predators can hunt the same clearing for the same prey and never meet, provided one works while the other sleeps. That makes time an axis of the niche as real as height in the canopy — and it is why this forest can support as many large predators as it does. Read as a staff rota rather than a bestiary, the Pandoran roster divides a 26-hour day into two workforces with separate equipment. The night assignments are largely stated in companion material; most day assignments are inferred from what the films show.",
+      "hint": "Scrub through the day and watch the changeover. The eclipse cuts a band of genuine dark into the bright phase — the one high-contrast light event this moon reliably produces, and a kind of cue Earth has never had to interpret."
+    },
+    "driftingClock": {
+      "title": "A body on the wrong day",
+      "subtitle": "What free-running actually looks like, day after day",
+      "aria": "Twelve local days showing a human sleep block sliding progressively out of phase with local night",
+      "settingLabel": "World",
+      "pandoraOption": "Pandora, 26 h",
+      "marsOption": "Mars, 24.65 h",
+      "dayLabel": "Local day",
+      "axisLabel": "Hour of the local day",
+      "dayAxis": "Day",
+      "localNightLabel": "Local night",
+      "requiredLabel": "Daily correction asked",
+      "requiredNote": "world's day minus clock's period",
+      "capacityLabel": "Correction available",
+      "capacityNote": "the clock's daily budget",
+      "driftLabel": "Accumulated drift",
+      "driftNote": "after {days} local days",
+      "caption": "A human clock runs near 24.2 hours and can absorb roughly an hour of correction a day. Pandora's 26-hour day asks for nearly two — more than the clock can give — so the clock disengages and keeps its own time while the world keeps its own. The body's night walks steadily through the local afternoon and around again. Mars asks for only 39 minutes and still measurably damaged the rover teams who tried to live on it.",
+      "hint": "Step through the days. Nothing here is exotic: NASA documented this exact failure on Mars time, where more than half the personnel on a 24.65-hour schedule suffered chronic fatigue and demonstrable desynchrony, and functioning at all required timed bright light and melatonin. Pandora asks for nearly three times the shift."
+    },
+    "circadian-rhythm": {
+      "title": "Circadian Rhythm",
+      "category": "Chronobiology",
+      "info": "De Mairan's cupboard, 1729. Slide the world into darkness: the light cycle stops, the rhythm does not. A rhythm that survives without a cue is being generated from inside.",
+      "darkness": "Darkness",
+      "cue": "Light cue",
+      "removed": "Removed",
+      "present": "Present",
+      "persists": "Rhythm persists in the dark",
+      "underLight": "Running under a light cycle",
+      "axis": "Time →"
+    },
+    "free-running-period": {
+      "title": "Free-Running Period",
+      "category": "Chronobiology",
+      "info": "Tau: the period a clock keeps with no cues at all. Set it away from 24 hours and the daily onset walks off the vertical — that drift is the proof of an internal oscillator.",
+      "tau": "Tau",
+      "driftLabel": "Drift",
+      "minPerDay": "min/day",
+      "axis": "Hour of day →"
+    },
+    "zeitgeber": {
+      "title": "Zeitgeber",
+      "category": "Chronobiology",
+      "info": "A time-giver: any cue regular enough to reset a clock. Light dominates on Earth; temperature and feeding work, but far more weakly.",
+      "strength": "Cue strength",
+      "cues": {
+        "light": "Light",
+        "temperature": "Temperature",
+        "feeding": "Feeding"
+      },
+      "axis": "Cue → clock"
+    },
+    "entrainment": {
+      "title": "Entrainment",
+      "category": "Chronobiology",
+      "info": "A clock that runs slow drifts later each day; light hauls it back. When the daily correction cancels the drift, internal and external time agree.",
+      "correction": "Daily correction",
+      "net": "Net drift",
+      "minPerDay": "min/day",
+      "aligned": "Locked to local time",
+      "drifting": "Still drifting",
+      "axis": "Hour of day →"
+    },
+    "phase-response-curve": {
+      "title": "Phase Response Curve",
+      "category": "Chronobiology",
+      "info": "The same light pulse does opposite things depending on when it lands: delay in early subjective night, advance in late night, nothing at all through subjective day.",
+      "pulseTime": "Pulse arrives at",
+      "shift": "Phase shift",
+      "kinds": {
+        "delay": "Delay — the clock is pushed later",
+        "advance": "Advance — the clock is pulled earlier",
+        "dead": "Dead zone — no effect"
+      },
+      "axis": "Circadian phase →"
+    },
+    "range-of-entrainment": {
+      "title": "Range of Entrainment",
+      "category": "Chronobiology",
+      "info": "A clock follows only days close to its own period. Push past the band and it does not adapt — it lets go and free-runs.",
+      "dayLength": "World's day",
+      "required": "Correction needed",
+      "locked": "Locked on",
+      "free": "Broken free",
+      "axis": "Length of day (hours) →"
+    },
+    "masking": {
+      "title": "Masking",
+      "category": "Chronobiology",
+      "info": "Light driving behaviour without touching the clock. Identical to a real rhythm under a light cycle — then you remove the cue and only one of them survives.",
+      "modes": {
+        "masking": "Light reflex",
+        "clock": "Real clock"
+      },
+      "afterRelease": "In darkness",
+      "persists": "Persists",
+      "scatters": "Scatters",
+      "verdictClock": "An internal oscillator was there",
+      "verdictMasking": "The room was telling the time",
+      "axis": "Hour of day →"
+    },
+    "suprachiasmatic-nucleus": {
+      "title": "Suprachiasmatic Nucleus",
+      "category": "Neurobiology",
+      "info": "The master clock above the optic crossing. Weaken its authority and the body's peripheral clocks drift apart — organ by organ, the scatter that jet lag causes.",
+      "coupling": "Coupling",
+      "inStep": "Peripheral clocks in step",
+      "scattered": "Tissue clocks scattered",
+      "axis": "Master clock → tissues"
+    },
+    "melatonin": {
+      "title": "Melatonin",
+      "category": "Physiology",
+      "info": "A darkness signal, not a sedative. Its nightly rise reports how dark it is — and it takes only twilight-level light to flatten it.",
+      "ambient": "Ambient light",
+      "level": "Melatonin",
+      "nightSignal": "Night signal intact",
+      "suppressed": "Suppressed by light",
+      "axis": "Night →"
+    },
+    "melanopsin": {
+      "title": "Melanopsin",
+      "category": "Sensory",
+      "info": "The clock's own light meter, peaking in the blue near 480 nm. Sweep the wavelength: colour, not just brightness, sets how loudly light speaks to the clock.",
+      "wavelength": "Wavelength",
+      "response": "Clock response",
+      "loud": "The clock hears this clearly",
+      "quiet": "Nearly inaudible to the clock",
+      "axis": "Wavelength →"
+    },
+    "temporal-niche-partitioning": {
+      "title": "Temporal Niche Partitioning",
+      "category": "Ecology",
+      "info": "Two competitors, one clearing. Slide their working hours apart and the contested overlap — the only place they actually compete — collapses.",
+      "separation": "Separation in time",
+      "overlap": "Contested",
+      "coexist": "Coexistence — they never meet",
+      "compete": "Overlap — they still collide",
+      "axis": "Hour of day →"
+    },
+    "nocturnal-bottleneck": {
+      "title": "Nocturnal Bottleneck",
+      "category": "Evolution",
+      "info": "A hundred million years on the night shift and the bill it left. Drag the duration: colour pigments are shed, whiskers and smell expand to cover for them.",
+      "duration": "Time spent nocturnal",
+      "myr": "Myr",
+      "opsins": "Colour pigments",
+      "tactile": "Touch & smell",
+      "axis": "Sensory trade-off"
+    },
+    "circalunar-clock": {
+      "title": "Circalunar Clock",
+      "category": "Chronobiology",
+      "info": "A monthly oscillator entrained by moonlight of a few tenths of a lux. Walk the lunar phase and the spawning window opens on one night.",
+      "lunarPhase": "Lunar phase",
+      "moonlight": "Moonlight",
+      "days": "days",
+      "spawning": "Spawning window open",
+      "waiting": "Waiting out the month",
+      "axis": "Lunar month →"
+    },
+    "artificial-light-at-night": {
+      "title": "Artificial Light at Night",
+      "category": "Ecology",
+      "info": "Darkness is a resource. Raise the lamp: insects are drawn in and held circling, night pollinators withdraw, and the dark refuge shrinks toward nothing.",
+      "brightness": "Lamp brightness",
+      "drawnIn": "Insects drawn in",
+      "refugeIntact": "Dark refuge remains",
+      "refugeLost": "Dark refuge erased",
+      "axis": "Lit ground →"
+    },
+    "forced-desynchrony": {
+      "title": "Forced Desynchrony",
+      "category": "Chronobiology",
+      "info": "Impose a day outside the entrainable range and the body comes apart: sleep tracks the schedule while the clock free-runs on its own period.",
+      "imposed": "Imposed day",
+      "gap": "Mismatch",
+      "coupled": "Systems still coupled",
+      "decoupled": "Clock and sleep decoupled",
+      "axis": "Hour of imposed day →"
+    }
+  }
+}

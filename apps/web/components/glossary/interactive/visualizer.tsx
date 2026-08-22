@@ -541,6 +541,81 @@ const GLOSSARY_VISUALIZATIONS: Partial<
   tsaheylu: dynamic(() => import("./tsaheylu"), { ssr: false }),
   unobtanium: dynamic(() => import("./unobtanium"), { ssr: false }),
   prolemuris: dynamic(() => import("./prolemuris"), { ssr: false }),
+  // Phase 15 — Chronobiology
+  "circadian-rhythm": dynamic(() => import("./circadian-rhythm"), {
+    ssr: false,
+  }),
+  "free-running-period": dynamic(() => import("./free-running-period"), {
+    ssr: false,
+  }),
+  zeitgeber: dynamic(() => import("./zeitgeber"), { ssr: false }),
+  entrainment: dynamic(() => import("./entrainment"), { ssr: false }),
+  "phase-response-curve": dynamic(() => import("./phase-response-curve"), {
+    ssr: false,
+  }),
+  "range-of-entrainment": dynamic(() => import("./range-of-entrainment"), {
+    ssr: false,
+  }),
+  masking: dynamic(() => import("./masking"), { ssr: false }),
+  "suprachiasmatic-nucleus": dynamic(
+    () => import("./suprachiasmatic-nucleus"),
+    { ssr: false },
+  ),
+  melatonin: dynamic(() => import("./melatonin"), { ssr: false }),
+  melanopsin: dynamic(() => import("./melanopsin"), { ssr: false }),
+  "temporal-niche-partitioning": dynamic(
+    () => import("./temporal-niche-partitioning"),
+    { ssr: false },
+  ),
+  "nocturnal-bottleneck": dynamic(() => import("./nocturnal-bottleneck"), {
+    ssr: false,
+  }),
+  "circalunar-clock": dynamic(() => import("./circalunar-clock"), {
+    ssr: false,
+  }),
+  "artificial-light-at-night": dynamic(
+    () => import("./artificial-light-at-night"),
+    { ssr: false },
+  ),
+  "forced-desynchrony": dynamic(() => import("./forced-desynchrony"), {
+    ssr: false,
+  }),
+
+  // Structural keystone loss — foundation species, engineers, and what time builds
+  "foundation-species": dynamic(() => import("./foundation-species"), {
+    ssr: false,
+  }),
+  "ecosystem-engineer": dynamic(() => import("./ecosystem-engineer"), {
+    ssr: false,
+  }),
+  "autogenic-engineer": dynamic(() => import("./autogenic-engineer"), {
+    ssr: false,
+  }),
+  "keystone-structure": dynamic(() => import("./keystone-structure"), {
+    ssr: false,
+  }),
+  "dominant-species": dynamic(() => import("./dominant-species"), {
+    ssr: false,
+  }),
+  "canopy-soil": dynamic(() => import("./canopy-soil"), { ssr: false }),
+  "tree-hollow": dynamic(() => import("./tree-hollow"), { ssr: false }),
+  "co-extinction": dynamic(() => import("./co-extinction"), { ssr: false }),
+  "extinction-debt": dynamic(() => import("./extinction-debt"), { ssr: false }),
+  "functional-extinction": dynamic(() => import("./functional-extinction"), {
+    ssr: false,
+  }),
+  "biological-legacy": dynamic(() => import("./biological-legacy"), {
+    ssr: false,
+  }),
+  "nurse-log": dynamic(() => import("./nurse-log"), { ssr: false }),
+  "alternative-stable-state": dynamic(
+    () => import("./alternative-stable-state"),
+    { ssr: false },
+  ),
+  "cultural-keystone-species": dynamic(
+    () => import("./cultural-keystone-species"),
+    { ssr: false },
+  ),
 };
 
 interface GlossaryVisualizerProps {

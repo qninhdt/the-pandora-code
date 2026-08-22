@@ -193,6 +193,216 @@
       "safe": "An toàn",
       "breach": "Vượt",
       "push": "Đẩy ranh giới"
+    },
+    "foundation-species": {
+      "title": "Loài nền tảng",
+      "category": "Sinh thái",
+      "info": "Tầm quan trọng của loài chủ chốt thì bất tương xứng với khối lượng của nó. Kéo tỉ lệ sinh khối và xem cùng một mức tác động khi bị gỡ đi lại đổi hẳn phạm trù — phi thường khi khối lượng nhỏ, chỉ là tỉ lệ thuận khi khối lượng lớn.",
+      "biomass": "Tỉ lệ sinh khối tại chỗ",
+      "impact": "Mức biến đổi khi bị gỡ",
+      "ratio": "Tác động trên mỗi phần khối lượng",
+      "axis": "Hiếm  ←   tỉ lệ sinh khối   →  gần như tất cả",
+      "verdictKeystone": "Hiếm và bất tương xứng — một loài chủ chốt",
+      "verdictFoundation": "Chiếm phần lớn sinh khối. Nó là chỗ ở, không phải loài chủ chốt"
+    },
+    "ecosystem-engineer": {
+      "title": "Loài kiến tạo hệ sinh thái",
+      "category": "Sinh thái",
+      "info": "Hai cách dựng nên một chỗ ở. Một loài chuyển vật liệu từ nơi khác tới; loài kia chỉ lớn lên, và chính cơ thể nó thành cấu trúc.",
+      "mechanism": "Cơ chế",
+      "modes": {
+        "allogenic": "Ngoại sinh",
+        "autogenic": "Nội sinh"
+      },
+      "short": {
+        "allogenic": "Lắp ghép",
+        "autogenic": "Hóa thân"
+      },
+      "verdict": {
+        "allogenic": "Hải ly chở vật liệu tới. Cái đập không phải cơ thể nó",
+        "autogenic": "Chẳng có gì được chở tới. Sinh vật chính là cấu trúc"
+      },
+      "caption": {
+        "allogenic": "Vật liệu được chuyển từ nơi khác",
+        "autogenic": "Chỗ ở làm từ chính mô của nó"
+      }
+    },
+    "autogenic-engineer": {
+      "title": "Loài kiến tạo nội sinh",
+      "category": "Sinh thái",
+      "info": "Chính cơ thể nó là sự thay đổi. Không lắp ghép gì, không chở gì — mô tích tụ dần, và chỗ ở xuất hiện cùng với nó.",
+      "tenants": "Loài phụ thuộc",
+      "axis": "Chỗ ở tích tụ cùng nhịp với cơ thể",
+      "stages": {
+        "young": "Non",
+        "mature": "Trưởng thành",
+        "old": "Cổ thụ"
+      },
+      "verdict": {
+        "young": "Gỗ đang sống, và chưa là địa chỉ của ai",
+        "mature": "Vỏ và cành đã đủ cho vài loài trú",
+        "old": "Sinh vật đã trở thành một chỗ ở"
+      }
+    },
+    "keystone-structure": {
+      "title": "Cấu trúc chủ chốt",
+      "category": "Sinh thái",
+      "info": "Một cái cây giữa cánh đồng trống. Chân đế của nó không đáng kể, còn phần sự sống chạy qua nó thì đáng kể — và đó là chỗ chữ \"chủ chốt\" làm việc một cách trung thực.",
+      "species": "Số loài dùng nó",
+      "axis": "Một đặc điểm đơn lẻ giữa cảnh quan đã phát trắng",
+      "modes": {
+        "present": "Cây còn đứng",
+        "gone": "Cây đã mất"
+      },
+      "verdictPresent": "Một điểm dừng, một tâm hạt rơi, một hòn đảo chỗ ở",
+      "verdictGone": "Các đường bay tán ra và hạt rơi không còn tâm"
+    },
+    "dominant-species": {
+      "title": "Loài ưu thế",
+      "category": "Sinh thái",
+      "info": "Sinh khối cao, hai công việc khác nhau. Loài ưu thế độc chiếm tài nguyên; loài nền tảng có cùng khối lượng ấy và mọi loài đều phụ thuộc vào cấu trúc của nó.",
+      "dependents": "Loài phụ thuộc",
+      "axis": "Cùng sinh khối, khác nhau ở mức được phụ thuộc",
+      "modes": {
+        "dominant": "Ưu thế",
+        "foundation": "Nền tảng"
+      },
+      "verdict": {
+        "dominant": "Nó chiếm ánh sáng. Gần như không loài nào sống trên nó",
+        "foundation": "Cùng khối lượng ấy, mà mọi thứ đều bám rễ vào"
+      }
+    },
+    "canopy-soil": {
+      "title": "Đất treo trên tán cây",
+      "category": "Sinh thái",
+      "info": "Lớp đất chưa từng chạm mặt đất. Xác thực vật phụ sinh đọng trên một cành, thập niên này qua thập niên khác, tới khi nó có hệ động vật riêng ở độ cao trăm mét.",
+      "depth": "Độ dày thảm",
+      "fauna": "Động vật trong đất",
+      "time": "Số năm tích tụ",
+      "yearsValue": "{n} năm",
+      "axis": "Mảnh vụn đọng lại trên một cành",
+      "verdictBare": "Vỏ trơ. Chưa có gì để sống trong đó",
+      "verdictLiving": "Đất thật, có cộng đồng riêng, ở trên không"
+    },
+    "tree-hollow": {
+      "title": "Hốc cây",
+      "category": "Sinh thái",
+      "info": "Một cái hốc không được khoét ra, mà được chờ đợi. Suốt một thế kỷ chẳng có gì; rồi một lỗ nhỏ mở ra, và phải rất lâu sau mới có cái đủ lớn cho một con vật cỡ lớn.",
+      "age": "Tuổi cây",
+      "cavity": "Hốc",
+      "none": "Chưa có",
+      "yearsValue": "{n} năm",
+      "axis": "Nấm, côn trùng và thương tích, làm việc rất chậm",
+      "sizes": {
+        "small": "Nhỏ",
+        "medium": "Vừa",
+        "large": "Lớn"
+      },
+      "verdict": {
+        "none": "Dưới ngưỡng khoảng một thế kỷ thì chưa có hốc nào",
+        "small": "Một hốc nhỏ — đủ cho côn trùng hoặc một con chim nhỏ",
+        "medium": "Đủ lớn để một con chim hay thú túi sinh sản trong đó",
+        "large": "Hàng thế kỷ mục dần. Không cách trồng nào rút ngắn được"
+      }
+    },
+    "co-extinction": {
+      "title": "Tuyệt chủng kéo theo",
+      "category": "Sinh thái",
+      "info": "Hình dạng của tổn thất phụ thuộc vào độ kén chọn của loài phụ thuộc. Loài phụ thuộc tuyệt đối đi theo vật chủ một-đối-một; loài ăn tạp bám trụ tới khi cả mạng vật chủ sụp.",
+      "hostsLost": "Vật chủ đã mất",
+      "obligate": "Phụ thuộc tuyệt đối",
+      "generalist": "Ăn tạp",
+      "axis": "Tỉ lệ vật chủ đã mất  →",
+      "verdict": "Loài phụ thuộc tuyệt đối còn {obligate}%, loài ăn tạp còn {generalist}%"
+    },
+    "extinction-debt": {
+      "title": "Nợ tuyệt chủng",
+      "category": "Sinh thái",
+      "info": "Chỗ ở mất ở năm số không; các cuộc tuyệt chủng thì trả sau, trả góp. Kéo về phía trước và xem số loài còn sống cạn dần rất lâu sau khi máy móc đã rút đi.",
+      "surviving": "Còn hiện diện",
+      "owed": "Còn nợ",
+      "time": "Số năm sau khi mất chỗ ở",
+      "yearsValue": "{n} năm",
+      "axis": "Số năm sau khi chỗ ở bị phá hủy  →",
+      "verdictOwed": "{n}% số loài đang hiện diện thì đã chắc chắn mất",
+      "verdictPaid": "Món nợ đã trả xong. Đây là điểm cân bằng mới"
+    },
+    "functional-extinction": {
+      "title": "Tuyệt chủng chức năng",
+      "category": "Sinh thái",
+      "info": "Còn sống dưới dạng mô, mất với tư cách thành viên. Rễ vẫn liên tục đâm chồi và nấm bệnh vẫn giết từng chồi trước khi nó kịp sinh sản.",
+      "alive": "Còn sống",
+      "reproducing": "Còn sinh sản",
+      "yes": "Có",
+      "no": "Không",
+      "axis": "Cùng một hệ rễ, cách nhau một thế kỷ",
+      "modes": {
+        "before": "Trước dịch bệnh",
+        "after": "Sau"
+      },
+      "verdict": {
+        "before": "Trưởng thành, ra hạt, và đang làm việc sinh thái của mình",
+        "after": "Chưa tuyệt chủng. Mà cũng không còn là một phần của rừng"
+      }
+    },
+    "biological-legacy": {
+      "title": "Di sản sinh học",
+      "category": "Sinh thái",
+      "info": "Những gì một thảm họa để lại không phải phế thải — đó là bộ khung để khu rừng sau được dựng lên. Dọn sạch khu đất là sự hồi phục phải bắt đầu từ ít hơn nhiều.",
+      "recovery": "Tốc độ hồi phục",
+      "axis": "Cùng một vết cháy, dọn sạch hay để nguyên",
+      "modes": {
+        "legacies": "Giữ di sản",
+        "salvaged": "Chặt tận thu"
+      },
+      "verdict": {
+        "legacies": "Thân chết, gỗ mục và rễ: khu rừng sau đã có bộ khung",
+        "salvaged": "Đám cháy để lại bộ khung. Việc dọn dẹp lấy nó đi"
+      }
+    },
+    "nurse-log": {
+      "title": "Thân cây mục dưỡng cây non",
+      "category": "Sinh thái",
+      "info": "Sự nghiệp thứ hai của một người khổng lồ đã đổ. Cây non bám rễ dọc theo nó thành một hàng, và một thế kỷ sau cái hàng ấy vẫn đọc được thành một dãy cột cây trưởng thành.",
+      "logRemaining": "Thân còn lại",
+      "seedlings": "Cây bám trên nó",
+      "time": "Số năm từ khi đổ",
+      "yearsValue": "{n} năm",
+      "axis": "Một thân cây đổ, đọc xuyên một thế kỷ",
+      "verdictLog": "Ẩm, mềm, và nằm cao hơn đám tranh giành bên dưới",
+      "verdictRooting": "Cây non bám rễ dọc thân nó, thành một hàng",
+      "verdictColonnade": "Thân cây đã mất. Hình dáng của nó thì vẫn đứng"
+    },
+    "alternative-stable-state": {
+      "title": "Trạng thái bền vững thay thế",
+      "category": "Sinh thái",
+      "info": "Một viên bi trong địa hình hai lòng chảo. Đẩy đủ mạnh là nó rơi sang thung lũng thứ hai — và nới áp lực ra thì cũng không nhấc nó lên lại được.",
+      "state": "Trạng thái",
+      "intact": "Còn nguyên",
+      "degraded": "Đã suy thoái",
+      "pressure": "Áp lực tác động",
+      "basinA": "Rừng tảo bẹ",
+      "basinB": "Bãi cầu gai",
+      "verdictHolding": "Bị đẩy, mà vẫn ở lòng chảo thứ nhất",
+      "verdictFlipped": "Đã qua mép. Nới áp lực ra cũng chẳng đổi gì"
+    },
+    "cultural-keystone-species": {
+      "title": "Loài chủ chốt văn hóa",
+      "category": "Sinh thái",
+      "info": "Một loài dệt xuyên cả một nền văn hóa. Gỡ nó đi thì tổn thất không chỉ thuộc về vật chất: từ ngữ, nghề thủ công và cuốn lịch đều mất chỗ để bám vào.",
+      "intact": "Tầng còn nguyên",
+      "axis": "Một loài, ba tầng văn hóa",
+      "layers": {
+        "material": "Thuyền, nhà, dây",
+        "language": "Từ ngữ, tên gọi",
+        "ceremony": "Lịch, nghi lễ"
+      },
+      "modes": {
+        "present": "Loài còn đó",
+        "gone": "Loài đã mất"
+      },
+      "verdictPresent": "Đời sống vật chất, ngôn ngữ và nghi lễ đều chạy qua nó",
+      "verdictGone": "Không chỉ mất một nguồn lợi — cả nền văn hóa phải tái cấu trúc"
     }
   }
 }

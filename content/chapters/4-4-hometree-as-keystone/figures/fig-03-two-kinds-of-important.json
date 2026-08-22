@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-two-kinds-of-important",
+  "chapter_slug": "hometree-as-keystone",
+  "role": "comparison",
+  "narrative_purpose": "Carries the chapter's core correction in a single glance: the keystone is one small element whose loss topples a structure it is barely part of, while the foundation is the accumulated mass everything else physically rests on. Two mechanisms, two failure modes, one word that cannot serve both.",
+  "subject": "A two-panel comparison study against a dark ground. Left panel: a stone arch of many wedge-shaped voussoirs with one small bright wedge highlighted at its crown, the rest of the arch in cool shadow, and a small ochre sea star resting on the rock beside its base. Right panel: a colossal tree drawn as a single load-bearing pillar, its whole surface occupied - epiphytes and moss on the bark, cavities in the trunk with small shapes sheltering in them, mats of soil on its limbs, animals distributed across it - the pillar itself glowing faintly from within as the mass everything else stands on.",
+  "scene": "Neutral dark void background in both panels, no horizon, no landscape, so the two objects read as diagrammatic specimens.",
+  "camera": "Flat frontal elevation for both panels, matched scale and eye level, a clear vertical division between them.",
+  "light": "Even cool illumination for legibility; the keystone wedge lit as a small bright accent on the left, the whole pillar glowing softly from within on the right, so the difference between one bright point and a bright mass reads immediately.",
+  "palette": "Void-indigo ground throughout, cool bone-grey stone on the left with one magenta-pink accent on the highlighted wedge, teal and cyan on the tree with its internal glow, one restrained amber accent.",
+  "style": "Painterly naturalist plate, hand-painted texture, diagrammatic clarity without infographic styling.",
+  "detail_level": "Crisp on the individual arch stones and the highlighted wedge; crisp on the tree's bark, cavities and tenants; both panels clean and uncluttered.",
+  "composition": "Two equal vertical panels side by side with a narrow dark gutter between them, each object centred in its half with headroom above and below for later callout labels, 16:9 landscape.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "charts", "graph axes"],
+  "consistency_notes": "The tree on the right shares the Hometree morphology of the other plates. The arch is deliberately austere so the contrast is between a point and a mass, not between two styles.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no infographic styling, no photographic or 3D-render look, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["fig-00-cover.png"]
+}

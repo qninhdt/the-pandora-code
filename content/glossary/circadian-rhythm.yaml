@@ -1,0 +1,18 @@
+id: circadian-rhythm
+label:
+  vi: Nhịp sinh học ngày đêm (circadian)
+  en: Circadian rhythm
+definition:
+  vi: 'Một nhịp sinh học tự dao động với chu kỳ xấp xỉ - nhưng gần như không bao giờ đúng bằng - một ngày. Tên gọi đến từ tiếng Latin *circa diem*, "khoảng một ngày", và chữ "khoảng" ấy chính là điểm cốt lõi. Nhịp này không phải phản ứng trước ánh sáng: nó được sinh ra từ bên trong cơ thể và vẫn tiếp tục chạy trong bóng tối hoàn toàn, như nhà thiên văn de Mairan phát hiện năm 1729 khi đóng một cây trinh nữ vào tủ kín mà lá vẫn xòe ra mỗi sáng. Một nhịp sinh học ngày đêm thực sự phải hội đủ ba điều: tự dao động khi không có tín hiệu ngoài, chỉnh được theo tín hiệu môi trường, và giữ nguyên chu kỳ khi nhiệt độ thay đổi.'
+  en: 'A biological rhythm that oscillates on its own with a period of roughly - but almost never exactly - one day. The name comes from the Latin *circa diem*, "about a day," and that "about" is the whole point. The rhythm is not a response to light: it is generated internally and keeps running in total darkness, as the astronomer de Mairan discovered in 1729 when he shut a sensitive plant in a cupboard and its leaves went on opening every morning. A genuine circadian rhythm must satisfy three conditions: it oscillates without external cues, it can be reset by environmental signals, and its period holds steady as temperature changes.'
+see_also:
+  - free-running-period
+  - zeitgeber
+  - entrainment
+  - suprachiasmatic-nucleus
+category: bio
+tags:
+  - physiology
+  - sensory-biology
+  - ecology
+cover_prompt: A painted cutaway of a single plant leaf inside a closed dark wooden cupboard, the leaf shown in two overlaid states - unfurled and folded - with a faint circular arc of light traced behind it suggesting a day passing outside, deep indigo interior, thin cyan glow along the leaf veins, no text, no labels, no numbers.

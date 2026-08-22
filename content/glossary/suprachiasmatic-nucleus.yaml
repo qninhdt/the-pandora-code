@@ -1,0 +1,17 @@
+id: suprachiasmatic-nucleus
+label:
+  vi: Nhân trên chéo thị (SCN)
+  en: Suprachiasmatic nucleus
+definition:
+  vi: 'Cụm chừng hai vạn tế bào thần kinh nằm trong vùng dưới đồi, ngay phía trên nơi hai dây thần kinh thị giác giao nhau - và là đồng hồ chủ của động vật có vú. Gần như mọi tế bào trong cơ thể đều mang một đồng hồ riêng, nhưng chúng sẽ trôi rời rạc nếu không có ai điều phối; nhân trên chéo thị giữ toàn bộ đám đồng hồ ngoại vi ấy đi cùng nhịp với nhau và với thế giới bên ngoài. Nó nhận tín hiệu sáng qua một đường dây riêng đi thẳng từ võng mạc, hoàn toàn tách biệt khỏi hệ thống tạo ảnh - nó không nhìn, nó chỉ đo sáng.'
+  en: 'A cluster of some twenty thousand neurons in the hypothalamus, sitting just above where the two optic nerves cross - and the master clock of mammals. Nearly every cell in the body carries a clock of its own, but they would drift apart without a conductor; the suprachiasmatic nucleus keeps that whole population of peripheral clocks running in step with one another and with the outside world. It receives light through a dedicated line running straight from the retina, entirely separate from the image-forming system - it does not see, it only meters light.'
+see_also:
+  - circadian-rhythm
+  - melanopsin
+  - melatonin
+  - entrainment
+category: bio
+tags:
+  - physiology
+  - sensory-biology
+cover_prompt: A painted anatomical cutaway of the underside of a brain showing two optic nerves crossing in an X and a small paired cluster of glowing cells directly above the crossing, fine nerve fibres running from the retina to that cluster, cyan glow on deep indigo tissue, no text, no labels, no numbers.

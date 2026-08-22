@@ -193,6 +193,216 @@
       "safe": "Safe",
       "breach": "Breached",
       "push": "Push boundary"
+    },
+    "foundation-species": {
+      "title": "Foundation species",
+      "category": "Ecology",
+      "info": "A keystone's importance is disproportionate to its bulk. Slide the biomass share and watch the same removal effect change category — extraordinary at low bulk, merely proportional at high.",
+      "biomass": "Share of local biomass",
+      "impact": "Change on removal",
+      "ratio": "Impact per unit bulk",
+      "axis": "Rare  ←   biomass share   →  most of it",
+      "verdictKeystone": "Rare and disproportionate — a keystone",
+      "verdictFoundation": "Most of the biomass. It is the habitat, not a keystone"
+    },
+    "ecosystem-engineer": {
+      "title": "Ecosystem engineer",
+      "category": "Ecology",
+      "info": "Two ways to build a habitat. One organism moves material around; the other simply grows, and its own body becomes the structure.",
+      "mechanism": "Mechanism",
+      "modes": {
+        "allogenic": "Allogenic",
+        "autogenic": "Autogenic"
+      },
+      "short": {
+        "allogenic": "Assembles",
+        "autogenic": "Embodies"
+      },
+      "verdict": {
+        "allogenic": "The beaver carries the material. The dam is not its body",
+        "autogenic": "Nothing was carried. The organism is the structure"
+      },
+      "caption": {
+        "allogenic": "Material moved from elsewhere",
+        "autogenic": "Habitat made of its own tissue"
+      }
+    },
+    "autogenic-engineer": {
+      "title": "Autogenic engineer",
+      "category": "Ecology",
+      "info": "Its own body is the change. Nothing is assembled and nothing is carried — the tissue accumulates, and the habitat appears with it.",
+      "tenants": "Dependents",
+      "axis": "Habitat accumulates as the body does",
+      "stages": {
+        "young": "Young",
+        "mature": "Mature",
+        "old": "Old"
+      },
+      "verdict": {
+        "young": "Living wood, and nobody's address yet",
+        "mature": "Bark and limbs enough for a few tenants",
+        "old": "The organism has become a habitat"
+      }
+    },
+    "keystone-structure": {
+      "title": "Keystone structure",
+      "category": "Ecology",
+      "info": "One tree in an empty field. Its footprint is trivial and the share of life routed through it is not — which is where the word 'keystone' does honest work.",
+      "species": "Species using it",
+      "axis": "A single feature in a cleared landscape",
+      "modes": {
+        "present": "Tree standing",
+        "gone": "Tree gone"
+      },
+      "verdictPresent": "A waypoint, a seed focus, an island of habitat",
+      "verdictGone": "The crossings scatter and the seed rain has no focus"
+    },
+    "dominant-species": {
+      "title": "Dominant species",
+      "category": "Ecology",
+      "info": "High biomass, two different jobs. A dominant monopolises the resource; a foundation has the same bulk and everything depends on its structure.",
+      "dependents": "Dependents",
+      "axis": "Same biomass, different amount depended on",
+      "modes": {
+        "dominant": "Dominant",
+        "foundation": "Foundation"
+      },
+      "verdict": {
+        "dominant": "It takes the light. Almost nothing lives on it",
+        "foundation": "The same bulk, and everything is rooted in it"
+      }
+    },
+    "canopy-soil": {
+      "title": "Canopy soil",
+      "category": "Ecology",
+      "info": "Soil that never touched the ground. Epiphyte debris accumulates on a limb, decade after decade, until it has its own fauna a hundred metres up.",
+      "depth": "Mat depth",
+      "fauna": "Soil fauna",
+      "time": "Years of accumulation",
+      "yearsValue": "{n} yr",
+      "axis": "Debris accumulating on one limb",
+      "verdictBare": "Bare bark. Nothing to live in yet",
+      "verdictLiving": "Genuine soil, with its own community, in the air"
+    },
+    "tree-hollow": {
+      "title": "Tree hollow",
+      "category": "Ecology",
+      "info": "A cavity is not excavated, it is waited for. Nothing happens for a century; then a small hole opens, and only much later one large enough for a substantial animal.",
+      "age": "Tree age",
+      "cavity": "Cavity",
+      "none": "None",
+      "yearsValue": "{n} yr",
+      "axis": "Fungi, insects and injury, working slowly",
+      "sizes": {
+        "small": "Small",
+        "medium": "Medium",
+        "large": "Large"
+      },
+      "verdict": {
+        "none": "No cavity at any age below about a century",
+        "small": "A small hollow — enough for an insect or a small bird",
+        "medium": "Large enough for a bird or possum to breed in",
+        "large": "Centuries of decay. No planting shortens this"
+      }
+    },
+    "co-extinction": {
+      "title": "Co-extinction",
+      "category": "Ecology",
+      "info": "The shape of the loss depends on how fussy the dependent is. A strict obligate tracks its host one-to-one; a generalist hangs on until the whole host network gives way.",
+      "hostsLost": "Hosts lost",
+      "obligate": "Strict obligate",
+      "generalist": "Generalist",
+      "axis": "Fraction of hosts gone  →",
+      "verdict": "Obligate at {obligate}% surviving, generalist at {generalist}%"
+    },
+    "extinction-debt": {
+      "title": "Extinction debt",
+      "category": "Ecology",
+      "info": "The habitat goes at year zero; the extinctions are paid later, by instalment. Scrub forward and watch survivors drain away long after the machinery left.",
+      "surviving": "Still present",
+      "owed": "Still owed",
+      "time": "Years since habitat loss",
+      "yearsValue": "{n} yr",
+      "axis": "Years after the habitat was destroyed  →",
+      "verdictOwed": "{n}% of the species present are already doomed",
+      "verdictPaid": "The debt is settled. This is the new equilibrium"
+    },
+    "functional-extinction": {
+      "title": "Functional extinction",
+      "category": "Ecology",
+      "info": "Alive as tissue, gone as a participant. The roots keep sending up shoots and the blight keeps killing each one before it can reproduce.",
+      "alive": "Alive",
+      "reproducing": "Reproducing",
+      "yes": "Yes",
+      "no": "No",
+      "axis": "The same root system, a century apart",
+      "modes": {
+        "before": "Before the blight",
+        "after": "After"
+      },
+      "verdict": {
+        "before": "Mature, seeding, and doing its ecological job",
+        "after": "Not extinct. Also no longer part of the forest"
+      }
+    },
+    "biological-legacy": {
+      "title": "Biological legacy",
+      "category": "Ecology",
+      "info": "What a catastrophe leaves behind is not debris — it is the template the next forest is built on. Tidy the site and recovery starts from far less.",
+      "recovery": "Recovery rate",
+      "axis": "The same burn, cleaned up or left alone",
+      "modes": {
+        "legacies": "Legacies left",
+        "salvaged": "Salvage logged"
+      },
+      "verdict": {
+        "legacies": "Snags, logs and roots: the next forest has a template",
+        "salvaged": "The fire left the template. The cleanup removed it"
+      }
+    },
+    "nurse-log": {
+      "title": "Nurse log",
+      "category": "Ecology",
+      "info": "A fallen giant's second career. Seedlings root along its length in a line, and a century later that line is still legible as a colonnade of mature trunks.",
+      "logRemaining": "Log remaining",
+      "seedlings": "Rooted on it",
+      "time": "Years since it fell",
+      "yearsValue": "{n} yr",
+      "axis": "One fallen trunk, read across a century",
+      "verdictLog": "Wet, soft, and raised above the competition",
+      "verdictRooting": "Seedlings rooting along its length, in a line",
+      "verdictColonnade": "The log is gone. Its shape is still standing"
+    },
+    "alternative-stable-state": {
+      "title": "Alternative stable state",
+      "category": "Ecology",
+      "info": "A ball in a landscape of two basins. Push it hard enough and it drops into the second valley — and easing the pressure does not lift it back out.",
+      "state": "State",
+      "intact": "Intact",
+      "degraded": "Degraded",
+      "pressure": "Pressure applied",
+      "basinA": "Kelp forest",
+      "basinB": "Urchin barren",
+      "verdictHolding": "Pushed, and still in the first basin",
+      "verdictFlipped": "Over the edge. Releasing the pressure changes nothing"
+    },
+    "cultural-keystone-species": {
+      "title": "Cultural keystone species",
+      "category": "Ecology",
+      "info": "One species threaded through a whole culture. Remove it and the loss is not only material: the words, the crafts and the calendar lose what they attached to.",
+      "intact": "Layers intact",
+      "axis": "One species, three cultural layers",
+      "layers": {
+        "material": "Canoes, houses, rope",
+        "language": "Words, names",
+        "ceremony": "Calendar, rite"
+      },
+      "modes": {
+        "present": "Species present",
+        "gone": "Species gone"
+      },
+      "verdictPresent": "Material life, language and ceremony all run through it",
+      "verdictGone": "Not only a resource lost — the culture must restructure"
     }
   }
 }

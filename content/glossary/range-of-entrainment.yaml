@@ -1,0 +1,18 @@
+id: range-of-entrainment
+label:
+  vi: Phạm vi đồng bộ hóa
+  en: Range of entrainment
+definition:
+  vi: 'Dải độ dài ngày mà một chiếc đồng hồ sinh học cụ thể có thể bị giữ theo - và nó hẹp đến mức đáng ngạc nhiên, thường chỉ chừng một hai giờ về mỗi phía so với chu kỳ tự nhiên của chính đồng hồ. Lý do rất cơ học: mỗi ngày, ánh sáng chỉ dịch được đồng hồ một lượng hữu hạn, nên nếu độ lệch cần bù lớn hơn lượng ấy, đồng hồ không chậm dần rồi bắt nhịp mà *buông hẳn*, quay về chạy theo chu kỳ riêng và để ngày của thế giới trôi qua. Điều này khiến một ngày lệch nhịp trở thành giới hạn cơ học chứ không phải chuyện thích nghi: ngoài dải ấy, không kỷ luật nào, không thời gian làm quen nào cứu được.'
+  en: 'The band of day-lengths a given clock can be held to - and it is startlingly narrow, typically only a couple of hours either side of the clock''s own natural period. The reason is mechanical: light can shift a clock only so far each day, so if the correction needed exceeds that budget, the clock does not slowly settle into step. It *lets go*, reverting to its own period and letting the world''s day slide past. This is what makes a mismatched day a mechanical limit rather than a matter of adaptation: outside the band, no discipline and no adjustment period will do it.'
+see_also:
+  - entrainment
+  - free-running-period
+  - forced-desynchrony
+  - phase-response-curve
+category: bio
+tags:
+  - physiology
+  - astrobiology
+  - sensory-biology
+cover_prompt: A painted horizontal scale with a narrow softly glowing band near its centre and darkness on either side, a single marker standing well outside the band and casting no connecting line to it, teal band with a magenta marker on deep void, no text, no labels, no numbers.

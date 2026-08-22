@@ -1,0 +1,15 @@
+id: autogenic-engineer
+label:
+  vi: Loài kiến tạo nội sinh
+  en: Autogenic engineer
+definition:
+  vi: 'Loài kiến tạo hệ sinh thái mà chính cơ thể nó là sự thay đổi nó tạo ra cho thế giới. Hải ly phải hạ cây và dựng đập — đó là ngoại sinh. San hô, tảo bẹ và cây cối thì không dựng gì cả: chúng chỉ lớn lên, và khối vật chất sống ấy trở thành tán che, độ ẩm, bề mặt, hốc trú cho mọi loài khác. Không phải là dịch vụ cây cung cấp, mà đơn giản là điều xảy ra khi một khối gỗ khổng lồ đứng yên một chỗ suốt hàng thế kỷ.'
+  en: 'An ecosystem engineer whose own living body is the change it makes to the world. A beaver has to fell trees and build a dam — that is allogenic. Corals, kelp and trees build nothing: they simply grow, and the resulting mass of living tissue becomes the shade, the humidity, the surfaces and the cavities everything else depends on. It is not a service the organism performs. It is what a large amount of wood standing in one place for centuries does.'
+see_also:
+- ecosystem-engineer
+- foundation-species
+- canopy-soil
+category: concept
+tags:
+- ecology
+cover_prompt: A painted colossal tree trunk rising through darkness, its own bark, limbs and hollows drawn as the habitat itself with mosses, ferns and small sheltering creatures embedded in it, the trunk glowing faintly cyan from within, painterly naturalist plate, no text, no labels.

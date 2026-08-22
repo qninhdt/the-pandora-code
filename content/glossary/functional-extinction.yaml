@@ -1,0 +1,15 @@
+id: functional-extinction
+label:
+  vi: Tuyệt chủng chức năng
+  en: Functional extinction
+definition:
+  vi: 'Khi một loài vẫn còn sống về mặt sinh học nhưng đã thôi đóng vai trò sinh thái của nó. Ví dụ kinh điển là hạt dẻ Mỹ: nấm bệnh du nhập từ năm 1904 đã giết ba đến bốn tỉ cây, nhưng loài này không tuyệt chủng — hệ rễ vẫn còn và liên tục đâm chồi, chỉ có điều nấm giết những chồi ấy trước khi chúng kịp trưởng thành và sinh sản. Loài còn sống dưới dạng mô sống, và đã biến mất với tư cách một thành viên của hệ sinh thái. Một nhắc nhở hữu ích rằng "chưa tuyệt chủng" và "vẫn đang làm việc của mình" là hai phát biểu hoàn toàn khác nhau.'
+  en: 'When a species is still biologically alive but has stopped performing its ecological role. The classic case is the American chestnut: a blight arriving in 1904 killed three to four billion trees, yet the species is not extinct — its root systems persist and keep sending up shoots, and the fungus kills those shoots before they can mature and reproduce. The species survives as tissue and is gone as an ecological participant. A useful reminder that "not extinct" and "still doing its job" are entirely different statements.'
+see_also:
+- co-extinction
+- extinction-debt
+- foundation-species
+category: concept
+tags:
+- ecology
+cover_prompt: A painted dark forest floor with a broad dead stump sending up several small hopeful green shoots, the ghostly outline of the enormous tree it once was drawn faintly above it in cool teal against void indigo, painterly naturalist plate, no text, no labels.

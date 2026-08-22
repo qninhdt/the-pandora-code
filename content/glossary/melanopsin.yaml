@@ -1,0 +1,18 @@
+id: melanopsin
+label:
+  vi: Melanopsin
+  en: Melanopsin
+definition:
+  vi: 'Sắc tố cảm quang nằm trong một nhóm tế bào hạch võng mạc rải rác, khiến chính các tế bào ấy nhạy sáng trực tiếp và nối thẳng tới đồng hồ chủ ở vùng dưới đồi thay vì tới các vùng não dựng nên hình ảnh. Chúng không dùng để nhìn - chúng là một cái đo sáng, và nó báo cáo cho đồng hồ. Đây là lý do một con chuột không còn tế bào que lẫn tế bào nón, tức mù hoàn toàn về mặt thị giác, vẫn đồng bộ hoàn hảo với chu kỳ sáng-tối, và nhiều người khiếm thị cũng vậy. Melanopsin nhạy nhất ở vùng lam, quanh 480 nanomet - nghĩa là *màu* của một nguồn sáng, không chỉ độ sáng, quyết định nó nói to đến đâu với đồng hồ.'
+  en: 'The light-sensitive pigment carried by a scattered population of retinal ganglion cells, which makes those cells directly photosensitive and wires them straight to the master clock in the hypothalamus rather than to the parts of the brain that build images. They are not for seeing - they are a light meter, and it reports to the clock. This is why a mouse with no working rods or cones, visually blind, still entrains perfectly to a light cycle, and why many blind humans do too. Melanopsin peaks in the blue, around 480 nanometres - meaning the *colour* of a light source, not just its brightness, determines how loudly it speaks to the clock.'
+see_also:
+  - suprachiasmatic-nucleus
+  - cryptochrome
+  - melatonin
+  - entrainment
+category: bio
+tags:
+  - sensory-biology
+  - physiology
+  - chemistry
+cover_prompt: A painted cutaway of a retina in cross-section with most photoreceptor cells rendered dim and a few scattered ganglion cells glowing blue, fine fibres from those glowing cells gathering into a single bundle leaving toward the brain, blue-cyan glow on deep indigo, no text, no labels, no numbers.

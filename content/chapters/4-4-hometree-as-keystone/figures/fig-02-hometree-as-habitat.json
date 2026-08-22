@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-hometree-as-habitat",
+  "chapter_slug": "hometree-as-keystone",
+  "role": "diagram",
+  "narrative_purpose": "Makes the chapter's central claim visible: this organism is not a tree with animals on it but an address, every physical feature being habitat somebody depends on. The reader should be able to point at four distinct kinds of accommodation on one body.",
+  "subject": "A cutaway naturalist study of a single colossal Pandoran Hometree drawn whole from root to crown against a dark background, the near half of the braided multi-columnar trunk opened to reveal the hollow core. Distinct zones are rendered by the life they hold: deep fissured bark packed with moss cushions and epiphytic ferns low down; a great horizontal limb mid-height carrying a thick dark mat of suspended canopy soil with fine roots descending into it; cavities opening in the upper trunk with winged shapes roosting inside them; small six-limbed arboreal animals moving through the mid-canopy branch network; and the sprawling buttressed prop-root base with faint glowing ground cover around it.",
+  "scene": "Neutral dark void background so the tree reads as a specimen study rather than a landscape, no horizon, no sky.",
+  "camera": "A flat elevation view of the entire tree, orthographic and specimen-like, the whole height in frame with no perspective distortion.",
+  "light": "Even cool illumination from the upper left for legibility, plus bioluminescent cyan glow from the bark fissures, the canopy-soil mat, and the ground cover at the roots; deep indigo inside the hollow core.",
+  "palette": "Void-indigo ground, cool bone-grey and teal on the wood, cyan bioluminescent glow in the fissures and mats, one restrained amber accent at a roosting animal's eye.",
+  "style": "Painterly naturalist plate in the manner of an old botanical specimen study, hand-painted texture, clean separation between zones.",
+  "detail_level": "Crisp and legible on bark texture, the soil mat, the cavity mouths and the root buttresses, since each is a teaching element; the far side of the crown softer.",
+  "composition": "The tree centred vertically and filling the full height of the frame, generous dark margins left and right for callout labels to be added later, 4:3 portrait-leaning landscape.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "Na'vi figures", "dwellings", "hammocks"],
+  "consistency_notes": "Same Hometree morphology as the cover and felling plates. Zones must stay visually distinct so annotation callouts can land on individual features.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no cartoon or anime style, no infographic styling",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["fig-00-cover.png"]
+}

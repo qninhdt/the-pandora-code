@@ -842,6 +842,76 @@
       "concurrent": "Cùng chiều",
       "transfer": "Truyền",
       "gradient": "Gradient"
+    },
+    "foundationVsKeystone": {
+      "title": "Hai kiểu quan trọng",
+      "subtitle": "Đặt một sinh vật theo khối lượng của nó và theo cái giá khi mất nó",
+      "hint": "Loài chủ chốt của Robert Paine thì hiếm và tác động qua việc ăn; loài nền tảng thì chiếm phần lớn sinh khối và tác động chỉ bằng cách tồn tại. Lấy mức tác động chia cho độ đông đảo là hai thứ tách ra rõ ràng. Hometree nằm ở góc nền tảng xa nhất — nên gọi nó là loài chủ chốt là nhầm hẳn phạm trù, chứ không phải một lời ngợi ca.",
+      "axis": {
+        "biomass": "Tỉ lệ sinh khối tại chỗ",
+        "impact": "Mức cộng đồng biến đổi khi mất nó",
+        "biomassLow": "hiếm",
+        "biomassHigh": "gần như tất cả",
+        "recovered": ""
+      },
+      "zone": {
+        "keystone": "Chủ chốt",
+        "foundation": "Nền tảng",
+        "dominant": "Ưu thế",
+        "passenger": "Đi kèm"
+      },
+      "species": {
+        "seaStar": "Sao biển của Paine",
+        "seaOtter": "Rái cá biển",
+        "limpet": "Ốc nón",
+        "meadowGrass": "Cỏ đồng",
+        "giantKelp": "Tảo bẹ khổng lồ",
+        "hemlock": "Thông độc cần miền đông",
+        "chestnut": "Hạt dẻ Mỹ",
+        "hometree": "Hometree"
+      },
+      "readout": {
+        "zone": "Phạm trù",
+        "biomass": "Tỉ lệ sinh khối",
+        "impact": "Tác động khi mất",
+        "ratio": "Tác động trên mỗi phần khối lượng"
+      },
+      "verdict": {
+        "keystone": "Sức nặng vượt xa tầm cỡ của nó — chính sự bất tương xứng ấy là định nghĩa.",
+        "foundation": "Tác động đúng bằng khối lượng. Không hề bất tương xứng: nó chính là nơi ở.",
+        "dominant": "Độc chiếm tài nguyên, nhưng ít loài nào phụ thuộc vào cấu trúc của nó.",
+        "passenger": "Có mặt ở đó, và cộng đồng gần như không thấy gì khi nó mất đi."
+      }
+    },
+    "structureClock": {
+      "title": "Hai chiếc đồng hồ của sự hồi phục",
+      "subtitle": "Kéo qua bốn bậc độ lớn thời gian và xem hai đường cong nhất định không đi cùng nhau",
+      "hint": "Màu xanh trở lại rất nhanh: cây tiên phong trong một mùa, sinh khối đầy đủ sau 30-80 năm. Cấu trúc thì không. Hốc nhỏ bắt đầu hình thành sau khoảng 110 năm, hốc lớn cần 220-500 năm, còn độ phức tạp của rừng già phải tính bằng nhiều thế kỷ đến hàng nghìn năm. Khoảng cách giữa hai đường cong chính là tất cả những gì một khu rừng trồng lại vẫn chưa có.",
+      "timeLabel": "Số năm kể từ khi rừng bị phá",
+      "years": "{n} năm",
+      "yearsThousands": "{n} nghìn năm",
+      "axis": {
+        "time": "Số năm sau biến động (thang log)",
+        "recovered": "Tỉ lệ đã hồi phục"
+      },
+      "readout": {
+        "biomass": "Sinh khối đã hồi phục",
+        "structure": "Cấu trúc đã hồi phục",
+        "gap": "Khoảng cách"
+      },
+      "verdict": {
+        "noStructure": "Xanh mướt, mà rỗng về cấu trúc. Dưới ngưỡng khoảng một thế kỷ thì chưa có hốc cây nào tồn tại.",
+        "lookingRecovered": "Nhìn từ trên cao thì như đã hồi phục. Với bất cứ loài nào cần một cái hốc hay lớp đất treo trên cành, đây vẫn là một công trường.",
+        "genuinelyOld": "Cấu trúc cuối cùng cũng đã theo kịp. Đây chính là nghĩa của rừng già, và là điều không thể trồng ra được."
+      },
+      "milestone": {
+        "pioneers": "~3 năm — thực vật tiên phong phủ kín lớp tro",
+        "canopyClosed": "~60 năm — tán rừng đã khép, sinh khối gần đầy",
+        "firstHollows": "~110 năm — những hốc nhỏ đầu tiên bắt đầu hình thành",
+        "largeCavities": "~350 năm — hốc đủ lớn cho loài có xương sống cỡ lớn",
+        "oldGrowth": "~800 năm — vỏ dày nứt sâu, đất treo trên tán, đủ độ phức tạp",
+        "hometree": "~20.000 năm — lượng cấu trúc tích tụ của một Hometree"
+      }
     }
   }
 }

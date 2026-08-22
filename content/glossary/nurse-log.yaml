@@ -1,0 +1,15 @@
+id: nurse-log
+label:
+  vi: Thân cây mục dưỡng cây non
+  en: Nurse log
+definition:
+  vi: 'Một cây khổng lồ đã đổ, tiếp tục làm môi trường sống suốt hàng thế kỷ sau khi chết. Nằm cao hơn lớp lá mục và đám cỏ tranh giành bên dưới, giữ nước như một miếng bọt biển, mềm dần và được nấm cấy vào, thân cây mục thành nơi hạt nảy mầm — nên cây non mọc thành một hàng thẳng dọc theo nó. Đi trong rừng mưa ôn đới già, ta đọc được những dãy cây trưởng thành xếp thẳng hàng, mỗi dãy là bóng của một thân cây đã mục rã ra bên dưới chúng cả trăm năm trước. Trong lúc ấy, nó còn nuôi cả cộng đồng chuyên sống nhờ gỗ chết: bọ, nấm, kỳ giông, và những con gõ mõ tìm bắt chúng.'
+  en: 'A fallen giant that goes on being habitat for centuries after death. Raised above the leaf litter and the competition beneath it, holding water like a sponge, slowly softening and seeded with fungi, a nurse log becomes where seedlings root — which is why they root along it in a straight line. Walk any old temperate rainforest and you can read colonnades of mature trees standing in rows, each row the ghost of a log that rotted out from under them a century ago. Meanwhile it feeds the substantial community that requires dead wood: beetles, fungi, salamanders, and the woodpeckers hunting them.'
+see_also:
+- biological-legacy
+- tree-hollow
+- functional-extinction
+category: bio
+tags:
+- ecology
+cover_prompt: A painted long fallen mossy log on a dark forest floor with a straight row of young saplings rooted along its length, taller mature trunks standing in the same line behind it, faint cyan glow on the moss, painterly naturalist plate, no text, no labels.

@@ -1,0 +1,18 @@
+id: circalunar-clock
+label:
+  vi: Đồng hồ theo tuần trăng
+  en: Circalunar clock
+definition:
+  vi: 'Một chiếc đồng hồ sinh học nội sinh chạy theo chu kỳ khoảng một tháng thay vì một ngày, đồng bộ với tuần trăng - và là một dao động riêng biệt, không phải nhịp ngày đêm chạy chậm lại. Điều đáng chú ý nhất về nó là ngưỡng nhạy sáng: loài giun biển *Platynereis dumerilii* đọc được ánh trăng ở mức chỉ vài phần mười lux, và chỉ cần vài đêm phơi dưới thứ ánh sáng dưới-một-lux ấy là đủ để chỉnh lại đồng hồ tháng của nó, kéo cả đàn vào một đêm sinh sản đồng loạt. Đây là bằng chứng thẳng thắn nhất cho thấy sinh học đọc được cả những mức sáng mà ta tưởng là không đáng kể.'
+  en: 'An endogenous clock running on a roughly monthly cycle instead of a daily one, synchronised to the phase of the moon - and a distinct oscillator, not the circadian rhythm slowed down. The most striking thing about it is its light sensitivity: the marine worm *Platynereis dumerilii* reads moonlight at just a few tenths of a lux, and a few nights of exposure to that sub-lux light is enough to reset its monthly clock and pull a whole population into one synchronous spawning night. It is the plainest evidence that biology reads light levels we would dismiss as negligible.'
+see_also:
+  - circadian-rhythm
+  - free-running-period
+  - entrainment
+  - zeitgeber
+category: bio
+tags:
+  - ecology
+  - physiology
+  - astronomy
+cover_prompt: A painted underwater scene of slender marine worms rising together through dark water toward a faintly moonlit surface, the moon visible as a soft pale disc far above through the water, cyan-green worms against deep indigo water, no text, no labels, no numbers.

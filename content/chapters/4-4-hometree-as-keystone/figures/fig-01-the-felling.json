@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-the-felling",
+  "chapter_slug": "hometree-as-keystone",
+  "role": "hero",
+  "narrative_purpose": "Opens the chapter on the event itself, framed so the reader watches it as an ecologist rather than a mourner: an enormous quantity of accumulated structure being deleted, with the scattering residents and the widening crush zone visible as the ecological signal.",
+  "subject": "A colossal Pandoran Hometree in the moment of collapse, seen from across the forest canopy at middle distance. The braided multi-columnar trunk has failed low down, fire and smoke boiling upward out of the hollow core like a chimney flue. The upper three hundred metres tilts slowly through a curtain of ash. Flocks of small winged shapes stream outward from the crown in every direction, and the surrounding canopy is already flattened in a widening ring beneath the falling mass.",
+  "scene": "Pandoran rainforest by day, thick smoke and ash haze, the felled giant dwarfing the ordinary canopy around it.",
+  "camera": "A wide elevated view from across the forest at the tree's mid-height, the whole collapsing structure held in frame.",
+  "light": "Harsh daylight cut by smoke, hot amber fire glow venting from the trunk's hollow core, ash haze scattering the light into flat grey, deep indigo shadow in the ring of flattened forest.",
+  "palette": "Ash grey and void-indigo dominant, one strong amber-orange fire accent in the trunk core, cold teal in the untouched forest at the edges.",
+  "style": "Painterly naturalist plate, hand-painted texture, restrained and documentary rather than spectacular.",
+  "detail_level": "Crisp on the failing trunk columns and the scattering winged shapes; the falling crown softened by motion and ash; distant forest dissolving into haze.",
+  "composition": "The tilting trunk running diagonally across the frame from lower left toward upper right, the flattened ring of forest across the lower third, ash sky filling the upper right, 3:2 landscape.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "human figures", "aircraft", "machinery"],
+  "consistency_notes": "Same Hometree as the cover plate - braided multi-columnar trunk, hollow core, buttressed roots. Cool Pandora palette with the fire as the single warm intrusion.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style, no explosions with sci-fi energy effects",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["fig-00-cover.png"]
+}

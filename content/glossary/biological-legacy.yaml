@@ -1,0 +1,15 @@
+id: biological-legacy
+label:
+  vi: Di sản sinh học
+  en: Biological legacy
+definition:
+  vi: 'Những gì còn sót lại tại chỗ sau một thảm họa, và chính chúng quyết định hình dạng của hệ sinh thái kế tiếp. Sau vụ phun trào núi St. Helens, Jerry Franklin, Fred Swanson và đồng nghiệp phát hiện quá trình hồi phục không đến từ sự di cư từ bên ngoài mà từ những gì đã sống sót ngay tại đó: hệ rễ chôn dưới đất, thân cây chết còn đứng, gỗ mục nằm ngang, hạt giống dưới lớp tro, những con vật tình cờ đang ở trong hang. Vật liệu mà thảm họa để lại không phải phế thải — nó là bộ khung để khu rừng sau được dựng lên trên đó. Hệ quả quan trọng nhất: dọn sạch di sản còn tệ hơn chính thảm họa.'
+  en: 'What survives in place after a catastrophe, and which determines the shape of the ecosystem that follows. After Mount St. Helens erupted, Jerry Franklin, Fred Swanson and colleagues found recovery was driven not by colonisation from outside but by what had lived through it on site: buried root systems, standing dead trunks, downed logs, seed banks under ash, animals that happened to be in burrows. The material a catastrophe leaves behind is not debris — it is the template the next forest is built on. The critical corollary: removing the legacies is worse than the disturbance was.'
+see_also:
+- nurse-log
+- tree-hollow
+- extinction-debt
+category: concept
+tags:
+- ecology
+cover_prompt: A painted grey ash-covered volcanic landscape in darkness with a fallen log, a standing dead snag and a buried root mound emerging from the ash, small green shoots pushing up beside them lit in faint cyan, painterly naturalist plate, no text, no labels.

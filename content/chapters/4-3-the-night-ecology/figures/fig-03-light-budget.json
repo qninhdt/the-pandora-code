@@ -1,0 +1,19 @@
+{
+  "id": "fig-03-light-budget",
+  "chapter_slug": "the-night-ecology",
+  "role": "diagram",
+  "narrative_purpose": "Stacks the three sources that light a Pandoran night in one image, so the chapter's counterintuitive finding lands visually: the two nobody would call light are the bright ones, and the spectacular glowing ground is the faintest thing in the picture.",
+  "subject": "A single tall vertical scene of one Pandoran forest slope at night, showing three distinct light contributions layered from sky to soil. At the very top, a small orange-red companion star low above the horizon casting a thin warm wash across the upper canopy. Below and dominating the upper sky, the enormous banded curve of a gas giant lit along one limb, spilling a broad cool blue-white sheet of reflected light down over the treetops. At the bottom, the forest floor emitting its own faint cyan light from root filaments, moss and fungal mats - visibly the dimmest of the three, a low local shimmer that reaches only centimetres up the trunks.",
+  "scene": "A forested slope seen in cross-section from soil to sky, trunks rising through all three light zones, mist between them.",
+  "camera": "A tall vertical view looking slightly up the slope so the ground glow, the planet-lit canopy and the companion star all sit in one frame at different heights.",
+  "light": "Three distinct and clearly unequal sources: warm orange from the companion star at top, broad cool blue-white planetshine across the middle, and a very faint cyan self-glow at the bottom that conspicuously fails to illuminate anything above the litter layer.",
+  "palette": "Void-indigo throughout, cool blue-white for the planetshine sheet, muted orange-red for the companion star, faint cyan at the floor, no other hues.",
+  "style": "Painterly naturalist cross-section plate, hand-painted texture, clear vertical separation of the three zones.",
+  "detail_level": "Crisp on the glowing floor detail and the planet's banded limb; the companion star small and simple; mid-trunks softer to keep the three zones legible.",
+  "composition": "Strict vertical stack - companion star top, gas giant and planetshine upper-middle, dark mid-forest, faint glowing floor across the bottom, generous dark space between zones, 9:16 portrait.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette. The ground glow must read as genuinely the weakest source in the frame - the whole point of the figure - and the planetshine as the broadest.",
+  "aspect_ratio": "9:16",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style, no bright ground glow overpowering the sky",
+  "style_refs": ["pandora-establishing.png"]
+}

@@ -1,0 +1,15 @@
+id: dominant-species
+label:
+  vi: Loài ưu thế
+  en: Dominant species
+definition:
+  vi: 'Loài chiếm phần sinh khối lớn nhất trong một cộng đồng, thường bằng cách độc chiếm nguồn tài nguyên giới hạn như ánh sáng hay dưỡng chất. Cần phân biệt với loài nền tảng: mọi loài nền tảng đều đông đảo, nhưng không phải loài đông đảo nào cũng là nền tảng — chỉ khi các loài khác phụ thuộc vào chính cấu trúc vật lý của nó để sống. Một loài cỏ phủ kín đồng cỏ là ưu thế; một cây cổ thụ mà hàng trăm loài trú trong hốc và mọc trên vỏ nó thì vừa ưu thế vừa nền tảng.'
+  en: 'The species holding the largest share of a community''s biomass, usually by monopolising a limiting resource such as light or nutrients. Worth separating from a foundation species: every foundation species is abundant, but not every abundant species is a foundation — that requires other species to depend on its physical structure to live. A grass blanketing a meadow is dominant; an old tree with hundreds of species sheltering in its cavities and growing on its bark is both dominant and foundational.'
+see_also:
+- foundation-species
+- keystone-species
+- competitive-exclusion-principle
+category: concept
+tags:
+- ecology
+cover_prompt: A painted dense stand of one single tree species filling the whole frame in uniform ranks, cool teal foliage against dark indigo, one brighter individual glowing among the identical others, painterly naturalist plate, no text, no labels.

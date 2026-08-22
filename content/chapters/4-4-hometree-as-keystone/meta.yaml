@@ -1,0 +1,142 @@
+slug: hometree-as-keystone
+part: forests-mountains-skies
+order: 4
+status: published
+title:
+  vi: Hometree – Nền móng của cả hệ sinh thái
+  en: Hometree as keystone
+subtitle:
+  vi: >-
+    Một sinh vật cao hơn ba trăm mét, sống suốt hai mươi nghìn năm, đổ xuống trong vài phút. Cùng
+    lúc ấy, mạng lưới Eywa không hề chớp một nhịp. Vậy cái cây ấy quan trọng, hay không quan trọng?
+    Câu trả lời buộc ta phải sửa lại từ ngữ mà sinh thái học đại chúng dùng sai nhiều nhất.
+  en: >-
+    An organism more than three hundred metres tall, twenty thousand years old, comes down in
+    minutes. At the same moment, Eywa's network does not flicker. So did the tree matter, or not?
+    Answering that honestly forces us to repair the most abused word in popular ecology.
+hook:
+  vi: >-
+    Ai cũng gọi Hometree là "loài chủ chốt", và cách gọi ấy sai — sai theo một kiểu hữu ích. Loài
+    chủ chốt của Robert Paine là kẻ hiếm hoi, tác động qua việc ăn; Hometree thì chiếm phần lớn
+    sinh khối quanh nó và tác động chỉ bằng cách tồn tại. Đó là hai cơ chế khác nhau, và phân biệt
+    được chúng là chìa khóa giải thích vì sao đốn Hometree vừa chẳng làm mạng lưới hành tinh nhíu
+    mày, vừa là một tổn thất không gì bù nổi. Bài học mang về: sinh khối mọc lại trong vài thập
+    niên, nhưng cấu trúc cần hàng thế kỷ — có những thứ chỉ thời gian mới dựng được.
+  en: >-
+    Everyone calls Hometree a keystone, and everyone is wrong in a useful way. Robert Paine's
+    keystone was rare and worked by eating; Hometree is most of the biomass around it and works
+    merely by standing there. Those are different mechanisms, and telling them apart is what
+    explains how felling Hometree can leave a planetary network untroubled and still be a loss
+    nothing can repay. The idea to carry away: biomass grows back in decades, structure takes
+    centuries — some things only time can build.
+authors:
+  - bardabez
+reading_time_min: 30
+tags:
+  - foundation-species
+  - ecosystem-engineer
+  - structural-habitat-loss
+  - extinction-debt
+  - old-growth
+  - hometree
+classification:
+  canon_pct: 14
+  inference_pct: 17
+  speculation_pct: 11
+  real_science_pct: 58
+related_chapters:
+  - the-forest-as-a-cathedral
+  - why-burning-eywa-doesnt-kill-it
+  - the-hunters-and-the-hunted
+  - pandoras-smallest-things
+glossary_terms:
+  - foundation-species
+  - keystone-species
+  - keystone-structure
+  - ecosystem-engineer
+  - autogenic-engineer
+  - dominant-species
+  - epiphyte
+  - canopy-soil
+  - tree-hollow
+  - co-extinction
+  - extinction-debt
+  - functional-extinction
+  - biological-legacy
+  - nurse-log
+  - alternative-stable-state
+  - cultural-keystone-species
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-the-felling
+    role: hero
+    asset_status: ready
+  - id: fig-02-hometree-as-habitat
+    role: diagram
+    asset_status: ready
+  - id: fig-03-two-kinds-of-important
+    role: comparison
+    asset_status: ready
+  - id: fig-04-the-scar-over-time
+    role: diagram
+    asset_status: ready
+  - id: fig-05-chestnut-then-and-now
+    role: comparison
+    asset_status: ready
+sources:
+  - kind: wiki
+    label: Omatikaya Hometree - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Omatikaya_Hometree
+  - kind: wiki
+    label: Hometree - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Hometree
+  - kind: wiki
+    label: Omatikaya Clan - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Omatikaya_Clan
+  - kind: community
+    label: Stephen Baxter - The Science of Avatar
+  - kind: science
+    label: Paine - Food Web Complexity and Species Diversity (American Naturalist, 1966)
+    url: https://www.journals.uchicago.edu/doi/10.1086/282400
+  - kind: science
+    label: Power et al. - Challenges in the Quest for Keystones (BioScience, 1996)
+    url: https://scholarworks.umt.edu/cgi/viewcontent.cgi?article=1007&context=wildbio_pubs
+  - kind: science
+    label: >-
+      Ellison et al. - Loss of foundation species: consequences for the structure and dynamics of
+      forested ecosystems (Frontiers in Ecology and the Environment, 2005)
+    url: https://research.fs.usda.gov/treesearch/22218
+  - kind: science
+    label: Jones, Lawton & Shachak - Organisms as Ecosystem Engineers (Oikos, 1994)
+    url: https://www.jstor.org/stable/3545850
+  - kind: science
+    label: Manning, Fischer & Lindenmayer - Scattered trees are keystone structures (2006)
+    url: http://mail.murrumbidgeelandcare.asn.au/files/biblio/Manning_Paddock_Trees.pdf
+  - kind: science
+    label: Lindenmayer, Laurance & Franklin - Global Decline in Large Old Trees (Science, 2012)
+    url: https://www.science.org/doi/10.1126/science.1231070
+  - kind: science
+    label: Gibbons & Lindenmayer - Tree Hollows and Wildlife Conservation in Australia (CSIRO, 2002)
+    url: https://www.publishing.csiro.au/book/3010/
+  - kind: science
+    label: >-
+      Mitchell et al. - Ash dieback in the UK: a review of the ecological and conservation
+      implications (Biological Conservation, 2014)
+    url: https://www.researchgate.net/publication/267507098
+  - kind: science
+    label: Koh et al. - Species Coextinctions and the Biodiversity Crisis (Science, 2004)
+    url: https://www.science.org/doi/10.1126/science.1101101
+  - kind: science
+    label: Tilman et al. - Habitat destruction and the extinction debt (Nature, 1994)
+    url: https://www.nature.com/articles/371065a0
+  - kind: science
+    label: >-
+      Garibaldi & Turner - Cultural Keystone Species: Implications for Ecological Conservation and
+      Restoration (Ecology and Society, 2004)
+    url: https://www.ecologyandsociety.org/vol9/iss3/art1/
+  - kind: research-note
+    label: >-
+      Structural Loss and Ecological Irreproducibility - Hometree as Foundation Species, Ecosystem
+      Engineer, and Cultural Keystone (chapter research note)

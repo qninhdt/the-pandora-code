@@ -1,0 +1,19 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "the-night-ecology",
+  "role": "inline",
+  "narrative_purpose": "A decorative atmospheric layer for the chapter - a faint field of luminous root filaments dissolving into darkness, setting the night mood behind the text without competing with it.",
+  "subject": "An abstract field of faint, branching luminous filaments - root networks and fungal threads - spreading and overlapping at very low opacity across pure darkness, like a nervous system glimpsed under leaf litter, fading toward the edges into void. A few barely-there moss cushions and spore points glow among them.",
+  "scene": "Bottomless dark ground, the filament network suspended and receding, no horizon, no sky, only depth and haze.",
+  "camera": "A drifting, depthless overhead field view with no single focus, filaments at varied scales and softness.",
+  "light": "Very low cyan self-emission from the filaments themselves, most barely visible; deep indigo throughout, no external light source.",
+  "palette": "Almost entirely void-indigo and deep teal-indigo, the faintest cyan tracing, no warm accents.",
+  "style": "Painterly atmospheric wash, hand-painted haze, deliberately low-contrast and unobtrusive.",
+  "detail_level": "Intentionally soft everywhere - a mood layer, no sharp focal point, filaments dissolving into dark.",
+  "composition": "An even, edge-darkened field with no dominant subject, safe for text overlay, generous void.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "sharp focal subject", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette, extremely restrained. A background plate only - must never compete with foreground text or figures.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no labels, no arrows, no high-contrast focal subject, no photographic or 3D-render look, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-night-roster",
+  "chapter_slug": "the-night-ecology",
+  "role": "diagram",
+  "narrative_purpose": "Shows the same clearing twice, day and night, so temporal niche partitioning reads instantly: not two forests but one forest with two workforces, sharing the ground and never meeting.",
+  "subject": "A single Pandoran clearing rendered twice as two stacked horizontal panels of identical geography - the same trunks, the same fallen log, the same rock. In the upper panel, daylight: a large winged flier banking above the canopy gap, a six-legged grazer browsing low undergrowth, a slender long-limbed arboreal animal in the branches. In the lower panel, the same clearing at night with the ground glowing: a pack of three six-legged predators moving across the open, a heavy solitary armoured predator with long sensory quills at the treeline, and a small lizard-like animal on a trunk with a spread luminous fan-membrane.",
+  "scene": "Identical clearings, one lit from above and one lit from below, matched exactly in layout so the eye can hold them as the same place.",
+  "camera": "The same fixed wide three-quarter view for both panels, no change in vantage between them.",
+  "light": "Upper panel in cool diffuse overhead daylight with soft shadows; lower panel unlit from above, everything uplit in cyan and violet from the glowing floor.",
+  "palette": "Upper panel cool grey-teal daylight with muted amber accents; lower panel void-indigo and cyan with faint violet; the two panels sharing one restrained palette.",
+  "style": "Painterly naturalist comparison plate, hand-painted texture, deliberately matched staging between panels.",
+  "detail_level": "Crisp on all six animals so each is identifiable; the shared background rendered identically and slightly softer in both panels.",
+  "composition": "Two full-width horizontal panels stacked with a thin dark division, matched geography, animals spread across each so none overlaps its counterpart above or below, 4:3 overall.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette. The pack predators, grazer and flier must match their appearance in the chapter cover and the shift-change plate.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/the-night-ecology/fig-01-eclipse-shift-change.png"]
+}

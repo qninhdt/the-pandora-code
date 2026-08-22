@@ -1,0 +1,18 @@
+id: artificial-light-at-night
+label:
+  vi: Ánh sáng nhân tạo ban đêm (ALAN)
+  en: Artificial light at night
+definition:
+  vi: 'Việc con người thắp sáng màn đêm ở quy mô hành tinh, và là thí nghiệm tự nhiên gần nhất với một thế giới tự phát sáng. Hệ quả sinh thái đã được ghi nhận khá rõ: đèn đường hút côn trùng bay từ hàng trăm mét quanh đó rồi giữ chúng bay vòng cho tới khi kiệt sức; các loài thụ phấn đêm như bướm đêm và dơi tránh vùng bị chiếu sáng, làm giảm tỷ lệ đậu quả ở cây thụ phấn về đêm; loài săn mồi ban ngày lấn giờ sang đêm, đẩy áp lực lên con mồi vốn chỉ hoạt động trong tối; rùa biển mới nở lần theo phía chân trời sáng nhất và bị đèn ven biển dẫn ngược vào đất liền. Bài học chung là bóng tối cũng là một tài nguyên, và xóa nó đi thì phá vỡ những lịch trình đã mất hàng triệu năm để hình thành.'
+  en: 'Humanity lighting up the night at planetary scale, and the closest natural experiment we have to a self-illuminated world. The ecological consequences are reasonably well documented: streetlights draw flying insects from hundreds of metres around and hold them circling until they die of exhaustion; night pollinators such as moths and bats avoid lit ground, reducing fruit set in night-pollinated plants; daytime predators extend their hunting into the dark, raising pressure on prey that only ever worked at night; hatchling sea turtles orient toward the brightest horizon and coastal lighting draws them inland instead. The general lesson is that darkness is itself a resource, and erasing it breaks schedules that took millions of years to settle.'
+see_also:
+  - melatonin
+  - temporal-niche-partitioning
+  - entrainment
+  - bioluminescence
+category: bio
+tags:
+  - ecology
+  - earth-systems
+  - physiology
+cover_prompt: A painted night scene of a single tall streetlight over dark ground, a dense swirling cone of small flying insects trapped in its cone of light, the surrounding forest edge falling into untouched darkness, harsh amber lamp against deep void, no text, no labels, no numbers.

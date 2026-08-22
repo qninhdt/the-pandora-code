@@ -1,0 +1,17 @@
+id: temporal-niche-partitioning
+label:
+  vi: Phân chia ổ sinh thái theo thời gian
+  en: Temporal niche partitioning
+definition:
+  vi: 'Việc các loài chia nhau chu kỳ ngày đêm thay vì chia nhau không gian, biến thời gian thành một trục của ổ sinh thái thật như độ cao trong vòm lá hay độ sâu trong đất. Hai loài săn mồi có thể cùng đi săn một trảng trống, cùng nhắm một con mồi, dùng cùng một lối săn, mà không bao giờ gặp nhau - miễn là loài này làm việc lúc loài kia ngủ. Từ đó sinh ra bộ từ vựng quen thuộc: hoạt động ngày, hoạt động đêm, hoạt động lúc tinh mơ và chạng vạng, và loại linh hoạt làm việc bất cứ khi nào có cơ hội. Chia một ngày làm hai là có hai khu rừng để sống.'
+  en: 'Species dividing up the daily cycle instead of dividing up space, which makes time an axis of the niche as real as height in the canopy or depth in the soil. Two predators can hunt the same clearing, for the same prey, with the same technique, and never meet - provided one works while the other sleeps. From this comes the familiar vocabulary: diurnal, nocturnal, crepuscular for the specialists working the narrow margins at dawn and dusk, and cathemeral for the generalists who take work whenever it appears. Split the day in two and you have two forests to live in.'
+see_also:
+  - nocturnal-bottleneck
+  - ecological-niche
+  - niche-partitioning
+  - circadian-rhythm
+category: bio
+tags:
+  - ecology
+  - evolution
+cover_prompt: A painted vertical split image of the same forest clearing twice, the left half in daylight with grazing and flying animals, the right half at night with a pack predator and glowing ground, the two halves meeting on a single hard vertical seam, amber left and teal right on deep void, no text, no labels, no numbers.

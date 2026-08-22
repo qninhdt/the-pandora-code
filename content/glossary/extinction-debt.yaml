@@ -1,0 +1,15 @@
+id: extinction-debt
+label:
+  vi: Nợ tuyệt chủng
+  en: Extinction debt
+definition:
+  vi: 'Khoản tuyệt chủng đã bị gây ra nhưng chưa được thanh toán. Tilman và cộng sự (1994) đặt tên cho hiện tượng này: khi môi trường sống bị phá hủy, các loài phụ thuộc vào nó không chết ngay — những loài di động, sống lâu vẫn còn đó sáng hôm sau, kiếm ăn được ở khu rừng xung quanh dù nơi chúng sinh sản đã mất. Nhưng sinh sản đã tụt xuống dưới mức tử vong, và phần còn lại chỉ là số học: chúng tồn tại thêm một mùa, một thập niên, đôi khi cả thế kỷ, như một quần thể đang lặng lẽ đi về không. Vì thế, đánh giá thiệt hại vào ngày xảy ra sự việc luôn ước lượng thấp hơn thực tế.'
+  en: 'Extinctions that have already been caused but not yet paid. Tilman and colleagues named it in 1994: when habitat is destroyed, the dependent species do not all die at once — the mobile and long-lived ones are still there the next morning, foraging in the surrounding forest even though the thing they bred in has gone. But their reproduction has already fallen below their deaths, and the rest is arithmetic. They persist for a season, a decade, sometimes a century, as a population going quietly to zero. Which is why a damage assessment taken on the day always understates the true toll.'
+see_also:
+- co-extinction
+- functional-extinction
+- biological-legacy
+category: concept
+tags:
+- ecology
+cover_prompt: A painted dark scene of a cleared forest stump field with several faint translucent animal and bird silhouettes still standing among the stumps, some already dissolving into the indigo background, cool teal light, painterly naturalist plate, no text, no labels.

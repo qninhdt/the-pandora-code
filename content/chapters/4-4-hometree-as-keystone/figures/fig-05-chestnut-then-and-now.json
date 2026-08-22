@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-chestnut-then-and-now",
+  "chapter_slug": "hometree-as-keystone",
+  "role": "comparison",
+  "narrative_purpose": "Grounds the whole argument in an Earth case the reader can verify: the American chestnut forest that existed a century ago and the stump-sprout remnant that replaced it. Shows what functional extinction actually looks like - the species alive as tissue, gone as a participant.",
+  "subject": "A two-panel comparison study. Left panel: a tall broadleaf forest interior dominated by enormous straight-trunked chestnut trees, their crowns closing overhead, heavy nut husks scattered on the open floor, a few birds and a deer in the middle distance, the trunks wide enough that several would fill an arm span. Right panel: the same forest a century later, now oaks and maples of ordinary size, and in the foreground a broad dead chestnut stump ringed with thin juvenile shoots, none taller than a person, one shoot already blighted and browning.",
+  "scene": "Temperate Appalachian broadleaf forest interior in both panels, same viewpoint, same slope of ground, so the eye reads it as one place across time.",
+  "camera": "A fixed eye-level view into the forest interior, repeated identically in both panels, matched ground line.",
+  "light": "Left panel: high dappled light falling through a closed giant canopy in long soft shafts. Right panel: flatter, more even light from a lower, less structured canopy - visibly less depth and less shadow.",
+  "palette": "Cool teal-green and bone-grey in the left panel with restrained amber in the light shafts, duller grey-green and dry brown in the right panel, void-indigo in the deep shadows of both.",
+  "style": "Painterly naturalist plate, hand-painted texture, documentary and unsentimental.",
+  "detail_level": "Crisp on the chestnut trunk bark and nut husks on the left; crisp on the dead stump, its thin shoots and the blighted leaves on the right; middle distance softer in both.",
+  "composition": "Two equal vertical panels side by side with a narrow dark gutter, matched ground line across both, the great trunks anchoring the left and the low stump anchoring the lower right, 16:9 landscape.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "Pandoran flora", "bioluminescence", "human figures"],
+  "consistency_notes": "This is an Earth plate, not a Pandoran one - no bioluminescence and no alien flora. Keep the palette cool and restrained so it still sits beside the chapter's other figures.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no bioluminescent glow, no alien plants, no photographic or 3D-render look, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

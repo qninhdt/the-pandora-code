@@ -1,0 +1,16 @@
+id: co-extinction
+label:
+  vi: Tuyệt chủng kéo theo
+  en: Co-extinction
+definition:
+  vi: 'Sự mất đi của một loài vì loài nó phụ thuộc vào đã biến mất. Koh và cộng sự (2004) chỉ ra hình dạng của hiện tượng này tùy thuộc hoàn toàn vào mức độ kén chọn của loài phụ thuộc: loài ăn tạp dùng được nhiều vật chủ thì bám trụ được khi các vật chủ lần lượt mất đi, chỉ sụp khi cả mạng vật chủ vượt qua một ngưỡng nào đó. Nhưng loài chuyên biệt tuyệt đối, gắn với đúng một vật chủ, thì có đường tuyến tính một-đối-một: vật chủ mất là nó mất, không có thời gian thích nghi, không có lựa chọn thay thế. Đó là lý do các nhà nghiên cứu bệnh chết ngọn tần bì đã đếm được số loài chắc chắn sẽ mất trước khi chúng thật sự mất.'
+  en: 'The loss of a species because the species it depended on is gone. Koh and colleagues (2004) showed the shape depends entirely on how fussy the dependent is: a generalist that can use many hosts hangs on as its hosts vanish one by one, collapsing only when the whole host network passes a threshold. But a strict obligate, tied to one host and no other, follows a straight one-to-one line — its host goes, it goes, with no adjustment period and no alternative. This is why ash-dieback researchers can name a doomed number of species now, before the deaths have happened.'
+see_also:
+- extinction-debt
+- functional-extinction
+- mutualism
+category: concept
+tags:
+- ecology
+- evolution
+cover_prompt: A painted dark plate of a single withered tree with a chain of small faint moth, lichen and fungus silhouettes fading out one by one along a line leading away from it, cool teal fading to void indigo, painterly naturalist plate, no text, no labels.

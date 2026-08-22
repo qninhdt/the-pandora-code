@@ -1,0 +1,17 @@
+id: nocturnal-bottleneck
+label:
+  vi: Nút thắt cổ chai ban đêm
+  en: Nocturnal bottleneck
+definition:
+  vi: 'Giả thuyết cho rằng tổ tiên động vật có vú đã trải qua hơn một trăm triệu năm bị dồn vào ca đêm, vì ca ngày đã có khủng long chiếm đủ chỗ - và rằng cuộc lưu đày dài ấy là lý do động vật có vú được cấu tạo như hiện nay. Bằng chứng nằm ở chính di sản giác quan của chúng ta: phần lớn động vật có vú đã mất hai trong bốn sắc tố nhận màu mà tổ tiên từng có, nên một con chim hay một con thằn lằn thấy thế giới rực rỡ màu sắc hơn gần như mọi loài có vú - màu sắc thì đắt đỏ mà vô dụng trong tối, nên bị bỏ rơi. Bù lại, râu xúc giác, thính giác và khứu giác được phát triển vượt xa mức một loài sống ban ngày cần đến. Thị giác màu của con người là một sự thu hồi một phần, một bản vá về sau trên một cơ thể vốn dựng cho bóng tối. Giả thuyết này vẫn còn tranh luận: hốc mắt hóa thạch cho thấy một số loài có vú thời Đại Trung sinh vẫn ra ngoài giữa ban ngày.'
+  en: 'The hypothesis that ancestral mammals spent something over a hundred million years confined to the night shift, because the day shift was fully staffed by dinosaurs - and that this long exile is why mammals are built the way we are. The evidence is our own sensory legacy: most mammals lost two of the four colour-detecting pigments their ancestors had, which is why a bird or a lizard sees a richer world of colour than nearly any mammal - colour is expensive and useless in the dark, so it was allowed to go. In exchange, whiskers, hearing and smell were elaborated far past what a daylight animal would need. Human colour vision is a partial re-acquisition, a later patch on an animal built for the dark. The hypothesis is still argued over: fossil eye sockets suggest some Mesozoic mammals were out in the daylight after all.'
+see_also:
+  - temporal-niche-partitioning
+  - tapetum-lucidum
+  - convergent-evolution
+category: bio
+tags:
+  - evolution
+  - sensory-biology
+  - ecology
+cover_prompt: A painted scene of a small furry shrew-like creature with large dark eyes and prominent whiskers moving through leaf litter at night, while high above and out of focus the silhouetted legs of enormous reptilian animals stand in daylight beyond the treeline, deep indigo foreground with a pale distant band, no text, no labels, no numbers.

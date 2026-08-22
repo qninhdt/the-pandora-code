@@ -1,0 +1,19 @@
+{
+  "id": "fig-04-drifting-sleep",
+  "chapter_slug": "the-night-ecology",
+  "role": "diagram",
+  "narrative_purpose": "Makes the 26-hour problem physical rather than numerical: a human sleeping compartment shown across successive local days, its occupant's rest sliding steadily out of step with what the window says, so free-running reads as a lived condition instead of an arithmetic result.",
+  "subject": "A vertical sequence of five identical narrow sleeping berths inside a sealed human habitat, stacked as a column of repeated frames representing five successive local days. Each berth holds the same sleeping human figure under a thin blanket, and each has the same small window beside the bunk. Down the sequence, two things change in opposite directions: the light in the window shifts progressively - from local night, through deep pre-dawn, into full local daylight - while the sleeper's posture stays identically asleep in every frame. In the last frame the window is bright with day while the figure sleeps on, and a small overhead panel of cold artificial habitat light glows in every frame, unchanging.",
+  "scene": "The interior of a cramped, utilitarian sealed habitat berth, repeated five times as a vertical strip, with the alien daylight visible only through the window.",
+  "camera": "The identical fixed side-on view of the berth in all five frames, so only the window light and nothing else appears to change.",
+  "light": "Constant cold artificial overhead light inside every berth; the window light cycling from dark indigo through cold pre-dawn grey to pale bright exterior day down the sequence.",
+  "palette": "Cold grey-white habitat interior, void-indigo through pale grey-cyan in the windows, one restrained amber indicator on the overhead panel, no warm skin tones emphasised.",
+  "style": "Painterly naturalist sequence plate, hand-painted texture, deliberately repetitive framing.",
+  "detail_level": "Crisp on the window light and the sleeping figure in each frame; the berth interior consistent and slightly plain so the only visible variable is the light outside.",
+  "composition": "Five equal horizontal frames stacked in a vertical column with thin dark gutters, identical interior geometry in each, window on the same side throughout, 9:16 portrait.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "clocks", "dials", "Avatar branding"],
+  "consistency_notes": "Cold human-habitat palette deliberately opposed to the warm bioluminescent forest plates in this chapter - the visual argument is that this room refuses the local world.",
+  "aspect_ratio": "9:16",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no clock faces, no diagram labels, no arrows, no photographic or 3D-render look, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

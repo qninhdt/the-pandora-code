@@ -1,0 +1,18 @@
+id: melatonin
+label:
+  vi: Melatonin
+  en: Melatonin
+definition:
+  vi: 'Hormone do tuyến tùng tiết ra vào ban đêm và bị ánh sáng ức chế, nên nồng độ của nó là một bản báo cáo hóa học về mức độ tối hiện tại. Người ta hay gọi nó là "hormone giấc ngủ", và cách gọi ấy đủ gần để gây hiểu sai: melatonin là *tín hiệu bóng tối*, không phải thuốc ngủ. Nó không gây buồn ngủ cho bằng việc thông báo cho toàn cơ thể biết đồng hồ đang tin bây giờ là mấy giờ. Hệ quả đáng chú ý là ngưỡng ức chế nó thấp hơn nhiều so với hầu hết mọi người tưởng - chỉ cỡ ánh sáng tà dương, vài lux đến vài chục lux, là đã đủ can thiệp vào bản tường trình về đêm của cơ thể.'
+  en: 'A hormone secreted by the pineal gland at night and suppressed by light, so its concentration is a chemical report on how dark it currently is. It is routinely called "the sleep hormone," and that is close enough to be misleading: melatonin is a *darkness signal*, not a sedative. It does not induce sleep so much as tell the rest of the body what the clock believes the time to be. The consequence worth noting is that the threshold for suppressing it is far lower than most people assume - roughly twilight levels, single-digit to low-tens of lux, is enough to interfere with the body''s account of when night is.'
+see_also:
+  - suprachiasmatic-nucleus
+  - melanopsin
+  - artificial-light-at-night
+  - circadian-rhythm
+category: bio
+tags:
+  - physiology
+  - chemistry
+  - sensory-biology
+cover_prompt: A painted curve rising smoothly through a dark band and falling away as the band lightens at both ends, with a small bright lamp introduced partway along the dark stretch and the curve visibly collapsing beneath it, cyan curve with an amber lamp on deep void, no text, no labels, no numbers.

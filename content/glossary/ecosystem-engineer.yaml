@@ -1,0 +1,15 @@
+id: ecosystem-engineer
+label:
+  vi: Loài kiến tạo hệ sinh thái
+  en: Ecosystem engineer
+definition:
+  vi: 'Sinh vật làm thay đổi môi trường sống của mình về mặt vật lý, chứ không chỉ qua chuyện ăn và bị ăn. Khái niệm do Jones, Lawton và Shachak đưa ra năm 1994, chia làm hai kiểu: loài kiến tạo ngoại sinh biến đổi vật chất bên ngoài cơ thể — hải ly hạ cây chắn dòng, giun đất xáo trộn tầng đất; loài kiến tạo nội sinh thì chính cơ thể nó là sự biến đổi ấy — san hô, tảo bẹ, cây cối. Cách nhìn này giải thích vì sao một cái cây không "xây" môi trường sống, mà bản thân nó là môi trường sống.'
+  en: 'An organism that changes its habitat physically, not only by eating and being eaten. Jones, Lawton and Shachak introduced the idea in 1994 and split it in two: allogenic engineers modify material outside themselves — a beaver damming a stream, an earthworm rebuilding soil — while autogenic engineers *are* the modification, their own bodies being the structural change. Corals, kelp, trees. It is the concept that explains why a large tree does not build a habitat so much as constitute one.'
+see_also:
+- autogenic-engineer
+- foundation-species
+- keystone-structure
+category: concept
+tags:
+- ecology
+cover_prompt: A painted split scene against dark indigo, a beaver dam of felled branches holding back a pool on the left and a branching coral head crowded with small fish on the right, both structures glowing faintly in cool teal, painterly naturalist plate, no text, no labels.

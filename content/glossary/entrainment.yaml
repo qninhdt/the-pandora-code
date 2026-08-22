@@ -1,0 +1,18 @@
+id: entrainment
+label:
+  vi: Sự đồng bộ hóa (entrainment)
+  en: Entrainment
+definition:
+  vi: 'Quá trình một tín hiệu môi trường lặp lại - thường là chu kỳ sáng-tối - chỉnh lại đồng hồ sinh học nội sinh mỗi ngày, giữ nó đi đúng nhịp với thế giới bên ngoài. Đây là điều bắt buộc, vì chu kỳ tự nhiên của đồng hồ gần như không bao giờ đúng bằng một ngày: đồng hồ của con người chạy chậm chừng mười hai phút mỗi ngày, và ánh sáng ban mai kéo nó bù đúng lượng ấy trở lại. Điểm mấu chốt là đồng bộ hóa tác động lên chính cơ chế đồng hồ - khác hẳn với hiện tượng che phủ, nơi ánh sáng chỉ bật tắt hành vi mà không hề chạm tới đồng hồ.'
+  en: 'The process by which a recurring environmental signal - usually a light cycle - resets an endogenous clock each day, holding it in step with the outside world. It is not optional, because a clock''s natural period is almost never exactly a day: a human clock runs about twelve minutes slow daily, and morning light hauls back precisely that much. The essential point is that entrainment acts on the clock mechanism itself - unlike masking, where light merely switches behaviour on and off without ever touching the clock.'
+see_also:
+  - zeitgeber
+  - phase-response-curve
+  - range-of-entrainment
+  - masking
+category: bio
+tags:
+  - physiology
+  - sensory-biology
+  - ecology
+cover_prompt: A painted diagram of two circular dials side by side, one slightly out of alignment with the other, joined by a curved arrow showing the smaller being turned back into register with the larger, cool teal and cyan on deep void, no text, no labels, no numbers.

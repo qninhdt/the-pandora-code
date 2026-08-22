@@ -1,0 +1,18 @@
+id: zeitgeber
+label:
+  vi: Zeitgeber (tín hiệu định giờ)
+  en: Zeitgeber
+definition:
+  vi: 'Bất cứ tín hiệu môi trường nào lặp lại đủ đều đặn để chỉnh lại đồng hồ sinh học bên trong cơ thể. Từ này vay nguyên từ tiếng Đức, nghĩa là "kẻ cho thời gian", vì các nhà sinh học thời gian người Đức đặt tên trước. Trên Trái Đất, ánh sáng áp đảo mọi tín hiệu khác, nhưng chu kỳ nhiệt độ, giờ ăn đều đặn, thậm chí tiếp xúc xã hội cũng có thể làm được việc ấy ở mức yếu hơn. Một tín hiệu định giờ tốt phải sắc nét và đáng tin: thứ gì đó thỉnh thoảng mới xuất hiện thì gần như vô dụng với một chiếc đồng hồ.'
+  en: 'Any environmental signal that recurs regularly enough to reset an organism''s internal clock. The word is borrowed straight from German - "time-giver" - because German chronobiologists named it first. On Earth light outranks everything else, but temperature cycles, regular feeding times, and even social contact can do the job more weakly. A good zeitgeber must be sharp and reliable: something that only shows up intermittently is nearly useless to a clock.'
+see_also:
+  - entrainment
+  - phase-response-curve
+  - circadian-rhythm
+  - masking
+category: bio
+tags:
+  - physiology
+  - ecology
+  - sensory-biology
+cover_prompt: A painted image of a single sharp shaft of dawn light falling across a dark forest floor, with a faint concentric ripple radiating outward from where the light strikes as though the light were a struck bell, deep indigo and amber, no text, no labels, no numbers.

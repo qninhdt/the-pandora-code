@@ -794,6 +794,76 @@
       "concurrent": "Concurrent",
       "transfer": "Transfer",
       "gradient": "Gradient"
+    },
+    "foundationVsKeystone": {
+      "title": "Two kinds of important",
+      "subtitle": "Plot an organism by its bulk and by what its removal costs",
+      "hint": "Robert Paine's keystone was rare and worked by eating; a foundation species is most of the biomass and works by physically existing. Divide impact by abundance and the two separate cleanly. Hometree sits in the far foundation corner — which is why calling it a keystone is a category error rather than a compliment.",
+      "axis": {
+        "biomass": "Share of local biomass",
+        "impact": "Community change on removal",
+        "biomassLow": "rare",
+        "biomassHigh": "most of it",
+        "recovered": ""
+      },
+      "zone": {
+        "keystone": "Keystone",
+        "foundation": "Foundation",
+        "dominant": "Dominant",
+        "passenger": "Passenger"
+      },
+      "species": {
+        "seaStar": "Paine's sea star",
+        "seaOtter": "Sea otter",
+        "limpet": "Limpet",
+        "meadowGrass": "Meadow grass",
+        "giantKelp": "Giant kelp",
+        "hemlock": "Eastern hemlock",
+        "chestnut": "American chestnut",
+        "hometree": "Hometree"
+      },
+      "readout": {
+        "zone": "Category",
+        "biomass": "Biomass share",
+        "impact": "Removal impact",
+        "ratio": "Impact per unit bulk"
+      },
+      "verdict": {
+        "keystone": "Punches far above its weight — the disproportion is the definition.",
+        "foundation": "Impact matches its mass. Nothing disproportionate: it is the habitat.",
+        "dominant": "Monopolises resources, but little depends on its structure.",
+        "passenger": "Present, and the community barely registers its loss."
+      }
+    },
+    "structureClock": {
+      "title": "The two clocks of recovery",
+      "subtitle": "Scrub across four orders of magnitude and watch the curves refuse to travel together",
+      "hint": "Green cover returns fast: pioneers within a season, full standing biomass in 30-80 years. Structure does not. Small hollows begin at about 110 years, large cavities need 220-500, and full old-growth complexity runs to centuries or millennia. The gap between the curves is everything a replanted forest does not yet have.",
+      "timeLabel": "Years since the forest was cleared",
+      "years": "{n} yr",
+      "yearsThousands": "{n}k yr",
+      "axis": {
+        "time": "Years since disturbance (log scale)",
+        "recovered": "Fraction recovered"
+      },
+      "readout": {
+        "biomass": "Biomass recovered",
+        "structure": "Structure recovered",
+        "gap": "The gap"
+      },
+      "verdict": {
+        "noStructure": "Green, and structurally empty. No hollow exists yet at any age below about a century.",
+        "lookingRecovered": "Looks recovered from the air. To anything that needs a cavity or canopy soil, it is a construction site.",
+        "genuinelyOld": "Structure has finally caught up. This is what old growth means, and what cannot be planted."
+      },
+      "milestone": {
+        "pioneers": "~3 yr — pioneer vegetation covers the ash",
+        "canopyClosed": "~60 yr — canopy closed, biomass nearly full",
+        "firstHollows": "~110 yr — the first small hollows begin to form",
+        "largeCavities": "~350 yr — cavities big enough for large vertebrates",
+        "oldGrowth": "~800 yr — deep bark, canopy soil, full complexity",
+        "hometree": "~20,000 yr — one Hometree's accumulated structure"
+      }
     }
   }
 }

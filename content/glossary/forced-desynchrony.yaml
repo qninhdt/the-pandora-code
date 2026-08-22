@@ -1,0 +1,17 @@
+id: forced-desynchrony
+label:
+  vi: Mất đồng bộ cưỡng bức
+  en: Forced desynchrony
+definition:
+  vi: 'Quy trình thí nghiệm đặt người vào một môi trường cách biệt thời gian với độ dài ngày nhân tạo nằm hẳn ngoài phạm vi đồng bộ hóa - chẳng hạn hai mươi hoặc hai mươi tám giờ. Vì đồng hồ chủ không thể theo được chu kỳ sáng ấy, nó quay về chạy tự do theo chu kỳ riêng, trong khi giấc ngủ, chuyển hóa và hiệu năng nhận thức tách rời khỏi nó - và chính sự tách rời ấy là điều nhà nghiên cứu muốn quan sát, vì nó bóc riêng ảnh hưởng của đồng hồ khỏi ảnh hưởng của việc thức lâu. Phiên bản ngoài phòng thí nghiệm là các đội điều khiển robot Sao Hỏa sống theo ngày 24,65 giờ: chỉ lệch ba mươi chín phút mà hơn một nửa nhân sự vẫn mệt mỏi mạn tính và mất đồng bộ đo đếm được.'
+  en: 'An experimental protocol that places people in a time-isolated environment on an artificial day length well outside the range of entrainment - twenty hours, say, or twenty-eight. Because the master clock cannot follow that light cycle, it reverts to free-running on its own period while sleep, metabolism and cognitive performance decouple from it - and that decoupling is precisely what the researcher wants to observe, since it separates the effect of the clock from the effect of simply having been awake a long time. The out-of-laboratory version is the Mars rover teams living on a 24.65-hour day: a mismatch of only thirty-nine minutes, and still more than half the personnel suffered chronic fatigue and measurable desynchrony.'
+see_also:
+  - range-of-entrainment
+  - free-running-period
+  - circadian-rhythm
+  - melatonin
+category: bio
+tags:
+  - physiology
+  - astrobiology
+cover_prompt: A painted stack of horizontal daily rows in which two separate marks per row drift apart at different rates, one holding a steady diagonal and the other wandering, so the two tracks visibly diverge down the page, cyan and magenta tracks on deep void, no text, no labels, no numbers.

@@ -1,0 +1,301 @@
+{
+  "viz": {
+    "entrainmentRange": {
+      "title": "Phạm vi đồng bộ hóa",
+      "subtitle": "Đồng hồ sinh học có thể bị kéo xa chu kỳ gốc tới đâu — và tới đâu thì nó buông",
+      "aria": "Thang độ dài ngày cho thấy dải hẹp mà đồng hồ sinh học của con người có thể đồng bộ, với các mốc Trái Đất, Sao Hỏa và Pandora",
+      "dayLengthLabel": "Độ dài ngày của thế giới",
+      "axisLabel": "Độ dài một ngày (giờ)",
+      "bandLabel": "Dải đồng bộ được",
+      "tauLabel": "Chu kỳ gốc, 24,2 giờ",
+      "marks": {
+        "earth": "Trái Đất",
+        "mars": "Sao Hỏa",
+        "pandora": "Pandora"
+      },
+      "requiredLabel": "Lượng chỉnh cần có",
+      "requiredNote": "mỗi ngày, không ngày nào nghỉ",
+      "capacityLabel": "Lượng chỉnh khả dụng",
+      "capacityNote": "tối đa ánh sáng làm được",
+      "stateLabel": "Kết quả",
+      "stateLocked": "Bắt nhịp",
+      "stateLockedNote": "đồng hồ đi theo thế giới",
+      "stateFree": "Chạy tự do",
+      "stateFreeNote": "đồng hồ quay về chu kỳ riêng",
+      "caption": "Một chiếc đồng hồ sinh học chỉ có thể bị giữ theo những ngày gần với chu kỳ của chính nó. Mỗi ngày, ánh sáng phải bù đắp khoảng lệch giữa chu kỳ tự nhiên của đồng hồ và độ dài ngày của thế giới — mà ánh sáng chỉ có một hạn mức nhất định mỗi ngày. Nằm trong dải, lượng bù vừa đủ và đồng hồ bắt nhịp. Ra ngoài dải, lượng bù đòi hỏi vượt quá mọi thứ ánh sáng có thể cấp, và đồng hồ ngắt kết nối rồi chạy tự do. Sao Hỏa, với 24,65 giờ, vừa vặn nằm trong. Pandora, 26 giờ, thì không.",
+      "hint": "Hãy kéo thanh độ dài ngày. Để ý rằng sự thất bại không diễn ra từ tốn: đồng hồ hoặc đi theo thế giới, hoặc bỏ mặc nó. Không có chuyện thích nghi một phần — và đó là lý do một ngày lệch nhịp là giới hạn cơ học, chứ không phải chuyện cố gắng nhiều hay ít."
+    },
+    "maskingOrClock": {
+      "title": "Phản xạ, hay đồng hồ?",
+      "subtitle": "Hai cơ chế trông y hệt nhau — cho tới khi ta lấy ánh sáng đi",
+      "aria": "Biểu đồ hoạt động qua mười ngày, gồm bốn ngày dưới chu kỳ sáng-tối rồi được thả vào bóng tối liên tục",
+      "mechanismLabel": "Cơ chế",
+      "clockOption": "Đồng hồ thật",
+      "maskingOption": "Phản xạ ánh sáng",
+      "releaseLabel": "Ngắt chu kỳ sáng-tối",
+      "hourAxis": "Giờ trong ngày →",
+      "dayAxis": "Ngày",
+      "underCycleLabel": "Dưới chu kỳ sáng-tối",
+      "underCycleValue": "Giống hệt",
+      "underCycleNote": "cả hai đều đúng giờ tuyệt đối",
+      "afterReleaseLabel": "Trong tối liên tục",
+      "afterClockValue": "Vẫn chạy",
+      "afterClockNote": "trôi dần theo chu kỳ riêng",
+      "afterMaskingValue": "Tan rã",
+      "afterMaskingNote": "không còn nguồn giữ nhịp",
+      "verdictLabel": "Điều nó chứng minh",
+      "verdictClock": "Có dao động nội sinh",
+      "verdictClockNote": "con vật mang thời gian trong mình",
+      "verdictMasking": "Chẳng có đồng hồ nào",
+      "verdictMaskingNote": "chính căn phòng đã báo giờ",
+      "caption": "Thí nghiệm khai sinh của cả ngành, chỉ là làm trên động vật thay vì trên cây. Dưới một chu kỳ sáng-tối đều đặn, đồng hồ nội sinh thật và phản xạ ánh sáng đơn thuần cho ra cùng một biểu đồ gọn gàng: hoạt động đúng giờ đó, mọi ngày. Ngắt chu kỳ sáng-tối đi, hai thứ lập tức chia đường. Đồng hồ tiếp tục đếm, mỗi ngày trôi lệch một chút theo chu kỳ hơi-sai của riêng nó — chính độ trôi ấy là bằng chứng. Còn phản xạ, không còn gì để phản ứng, đơn giản là vỡ vụn.",
+      "hint": "Độ trôi chính là dấu vân tay. Phản xạ mãi mãi chỉ có thể đến muộn, vì nó chờ thế giới ra tay trước; đồng hồ thì có thể đến sớm, vì nó biết điều gì đang tới. Chưa ai chạy thí nghiệm này trên Pandora, nên chính sử không thể cho ta biết ta đang xem cái nào khi khu rừng bừng sáng."
+    },
+    "lightLadder": {
+      "title": "Một đêm tối đến mức nào?",
+      "subtitle": "Ngân sách ánh sáng của Pandora đặt cạnh những mức mà đồng hồ sinh học thật sự đọc được",
+      "aria": "Thang lôgarit độ chiếu sáng từ nắng gắt xuống tới ánh phát quang sinh học, có đánh dấu các ngưỡng liên quan tới đồng hồ sinh học",
+      "worldLabel": "Thế giới",
+      "earth": "Trái Đất",
+      "pandora": "Pandora",
+      "axisLabel": "Độ chiếu sáng (lux, thang lôgarit)",
+      "darkerLabel": "← tối hơn",
+      "rungs": {
+        "sunlight": "Nắng trực tiếp",
+        "overcast": "Ngày trời âm u",
+        "indoor": "Đèn trong nhà",
+        "twilight": "Ánh tà dương",
+        "companionStar": "Ngôi sao đồng hành",
+        "planetshine": "Ánh hành tinh",
+        "fullMoon": "Trăng tròn",
+        "starlight": "Ánh sao",
+        "groundGlow": "Mặt đất phát sáng"
+      },
+      "thresholds": {
+        "melatonin": "Ngưỡng ức chế melatonin",
+        "sublux": "Sàn dưới một lux"
+      },
+      "caption": "Những mức sáng có ý nghĩa với một chiếc đồng hồ sinh học, trên thang lôgarit. Đêm Trái Đất tụt xuống tới ánh sao — thấp hơn giữa trưa chừng tám bậc độ lớn, tín hiệu sắc nét nhất trong tự nhiên. Đêm Pandora thì có sàn: ánh hành tinh phản chiếu từ một hành tinh khí khổng lồ treo bất động, và trong một phần của năm là cả một mặt trời thứ hai. Trong khi đó mặt đất phát sáng nổi danh kia, đối chiếu với số đo quang học thật từ các loài nấm phát sáng trên Trái Đất, lại nằm thấp hơn hẳn mọi mức mà đồng hồ có thể đọc. Các con số Trái Đất là số đo thật; các giá trị Pandora chỉ là xấp xỉ, vì chính sử chưa bao giờ nêu độ chiếu sáng ban đêm.",
+      "hint": "Phần lộng lẫy nhất về mặt thị giác của đêm Pandora lại gần như câm lặng với đồng hồ sinh học, còn những phần không ai gọi là 'ánh sáng' mới là thứ đủ mạnh để có ý nghĩa. Khó khăn của Pandora không phải là quá ít sáng về đêm — mà là một màn đêm chưa bao giờ tối một cách đáng tin, và một tín hiệu bất định là một tín hiệu tồi để lên dây đồng hồ."
+    },
+    "temporalNiche": {
+      "title": "Một khu rừng, hai ca làm",
+      "subtitle": "Thời gian như một trục của ổ sinh thái — hãy kéo qua một ngày Pandora và xem cuộc giao ca",
+      "aria": "Khung giờ hoạt động của sáu loài Pandora trải trên một ngày 26 giờ, có đánh dấu kỳ nhật thực buổi chiều",
+      "hourLabel": "Giờ trong ngày Pandora",
+      "axisLabel": "Số giờ đã trôi trong ngày 26 giờ",
+      "dayLabel": "Ca ngày",
+      "nightLabel": "Ca đêm",
+      "eclipseLabel": "Nhật thực",
+      "occupants": {
+        "banshee": "Banshee núi",
+        "hexapede": "Hexapede",
+        "prolemuris": "Prolemuris",
+        "viperwolf": "Viperwolf",
+        "thanator": "Thanator",
+        "fanLizard": "Thằn lằn quạt"
+      },
+      "tiers": {
+        "stated": "chính sử nêu rõ",
+        "inferred": "suy ra từ phim"
+      },
+      "phaseLabel": "Pha hiện tại",
+      "phases": {
+        "day": "Ban ngày",
+        "night": "Ban đêm",
+        "eclipse": "Tối nhật thực"
+      },
+      "phaseNotes": {
+        "day": "danh sách ca ngày đang làm việc",
+        "night": "ca đêm đã nắm khu rừng",
+        "eclipse": "tối thật giữa buổi chiều"
+      },
+      "onShiftLabel": "Đang vào ca",
+      "nobodyOnShift": "khoảnh khắc giao ca",
+      "caption": "Hai loài săn mồi có thể cùng đi săn một trảng trống, cùng nhắm một con mồi, mà không bao giờ gặp nhau — miễn là loài này làm việc lúc loài kia ngủ. Điều đó khiến thời gian trở thành một trục của ổ sinh thái, thật như độ cao trong vòm lá — và đó là lý do khu rừng này nuôi được nhiều loài săn mồi lớn đến vậy. Đọc như một bảng phân ca thay vì một quyển sách tra cứu, danh sách sinh vật Pandora chia một ngày 26 giờ thành hai lực lượng với hai bộ trang bị riêng. Các phân công ca đêm phần lớn được nêu trong tài liệu đồng hành; phần lớn phân công ca ngày là suy ra từ những gì phim cho thấy.",
+      "hint": "Hãy kéo qua ngày và xem cuộc giao ca. Kỳ nhật thực khoét một dải tối thật vào giữa pha sáng — sự kiện ánh sáng tương phản cao duy nhất mà mặt trăng này tạo ra đều đặn, và là một loại tín hiệu Trái Đất chưa từng phải diễn giải."
+    },
+    "driftingClock": {
+      "title": "Một cơ thể trên một ngày sai",
+      "subtitle": "Chạy tự do trông ra sao, ngày này qua ngày khác",
+      "aria": "Mười hai ngày địa phương cho thấy khối giấc ngủ của con người trượt dần ra khỏi pha với đêm địa phương",
+      "settingLabel": "Thế giới",
+      "pandoraOption": "Pandora, 26 giờ",
+      "marsOption": "Sao Hỏa, 24,65 giờ",
+      "dayLabel": "Ngày địa phương",
+      "axisLabel": "Giờ trong ngày địa phương",
+      "dayAxis": "Ngày",
+      "localNightLabel": "Đêm địa phương",
+      "requiredLabel": "Lượng chỉnh đòi hỏi",
+      "requiredNote": "ngày của thế giới trừ chu kỳ đồng hồ",
+      "capacityLabel": "Lượng chỉnh khả dụng",
+      "capacityNote": "hạn mức mỗi ngày của đồng hồ",
+      "driftLabel": "Độ trôi tích lũy",
+      "driftNote": "sau {days} ngày địa phương",
+      "caption": "Đồng hồ sinh học của con người chạy quanh 24,2 giờ và mỗi ngày hấp thụ được chừng một giờ chỉnh sửa. Ngày 26 giờ của Pandora đòi gần hai giờ — nhiều hơn mức đồng hồ có thể cho — nên đồng hồ ngắt kết nối và giữ giờ riêng của nó trong khi thế giới giữ giờ riêng của mình. Đêm của cơ thể cứ thế đi bộ xuyên qua buổi chiều địa phương rồi vòng lại. Sao Hỏa chỉ đòi 39 phút, mà vẫn gây tổn hại đo đếm được cho các đội điều khiển robot đã thử sống theo nó.",
+      "hint": "Hãy bước qua từng ngày. Không có gì kỳ dị ở đây: NASA đã ghi nhận đúng thất bại này khi làm việc theo giờ Sao Hỏa, nơi hơn một nửa nhân sự theo lịch 24,65 giờ bị mệt mỏi mạn tính và mất đồng bộ rõ rệt, và để trụ được cần tới liệu pháp ánh sáng mạnh đúng giờ cùng melatonin. Pandora đòi gần gấp ba lượng dịch chuyển ấy."
+    },
+    "circadian-rhythm": {
+      "title": "Nhịp sinh học ngày đêm",
+      "category": "Sinh học thời gian",
+      "info": "Chiếc tủ kín của de Mairan, năm 1729. Hãy đẩy thế giới vào bóng tối: chu kỳ sáng-tối dừng lại, còn nhịp sinh học thì không. Một nhịp sống sót mà không cần tín hiệu nghĩa là nó được sinh ra từ bên trong.",
+      "darkness": "Mức tối",
+      "cue": "Tín hiệu sáng",
+      "removed": "Đã ngắt",
+      "present": "Còn đó",
+      "persists": "Nhịp vẫn tiếp tục trong tối",
+      "underLight": "Đang chạy dưới chu kỳ sáng-tối",
+      "axis": "Thời gian →"
+    },
+    "free-running-period": {
+      "title": "Chu kỳ chạy tự do",
+      "category": "Sinh học thời gian",
+      "info": "Tau: chu kỳ mà đồng hồ giữ khi không còn tín hiệu nào. Đặt nó lệch khỏi 24 giờ, thời điểm khởi động mỗi ngày sẽ trượt dần khỏi đường dọc — chính độ trôi ấy chứng minh có một dao động nội sinh.",
+      "tau": "Tau",
+      "driftLabel": "Độ trôi",
+      "minPerDay": "phút/ngày",
+      "axis": "Giờ trong ngày →"
+    },
+    "zeitgeber": {
+      "title": "Zeitgeber",
+      "category": "Sinh học thời gian",
+      "info": "Kẻ cho thời gian: bất cứ tín hiệu nào đủ đều đặn để chỉnh lại đồng hồ. Trên Trái Đất ánh sáng áp đảo; nhiệt độ và giờ ăn cũng có tác dụng, nhưng yếu hơn nhiều.",
+      "strength": "Độ mạnh tín hiệu",
+      "cues": {
+        "light": "Ánh sáng",
+        "temperature": "Nhiệt độ",
+        "feeding": "Giờ ăn"
+      },
+      "axis": "Tín hiệu → đồng hồ"
+    },
+    "entrainment": {
+      "title": "Sự đồng bộ hóa",
+      "category": "Sinh học thời gian",
+      "info": "Một chiếc đồng hồ chạy chậm sẽ trôi muộn dần mỗi ngày; ánh sáng kéo nó về. Khi lượng chỉnh mỗi ngày triệt tiêu đúng độ trôi, giờ bên trong và giờ bên ngoài trùng nhau.",
+      "correction": "Lượng chỉnh mỗi ngày",
+      "net": "Độ trôi còn lại",
+      "minPerDay": "phút/ngày",
+      "aligned": "Đã khớp giờ địa phương",
+      "drifting": "Vẫn còn trôi",
+      "axis": "Giờ trong ngày →"
+    },
+    "phase-response-curve": {
+      "title": "Đường cong đáp ứng pha",
+      "category": "Sinh học thời gian",
+      "info": "Cùng một xung ánh sáng lại gây tác dụng trái ngược tùy thời điểm nó rơi vào: làm muộn nếu vào đầu đêm chủ quan, làm sớm nếu vào cuối đêm, và không gì cả suốt ngày chủ quan.",
+      "pulseTime": "Xung sáng đến vào",
+      "shift": "Độ dịch pha",
+      "kinds": {
+        "delay": "Làm muộn — đồng hồ bị đẩy lùi",
+        "advance": "Làm sớm — đồng hồ bị kéo lên",
+        "dead": "Vùng chết — không tác dụng"
+      },
+      "axis": "Pha sinh học →"
+    },
+    "range-of-entrainment": {
+      "title": "Phạm vi đồng bộ hóa",
+      "category": "Sinh học thời gian",
+      "info": "Đồng hồ chỉ theo được những ngày gần chu kỳ của chính nó. Vượt ra ngoài dải ấy, nó không thích nghi — nó buông và chạy tự do.",
+      "dayLength": "Ngày của thế giới",
+      "required": "Lượng chỉnh cần có",
+      "locked": "Bắt nhịp",
+      "free": "Chạy tự do",
+      "axis": "Độ dài ngày (giờ) →"
+    },
+    "masking": {
+      "title": "Hiện tượng che phủ",
+      "category": "Sinh học thời gian",
+      "info": "Ánh sáng điều khiển hành vi mà không chạm tới đồng hồ. Dưới chu kỳ sáng-tối, nó giống hệt một nhịp thật — rồi ta ngắt tín hiệu, và chỉ một trong hai còn sống sót.",
+      "modes": {
+        "masking": "Phản xạ ánh sáng",
+        "clock": "Đồng hồ thật"
+      },
+      "afterRelease": "Trong bóng tối",
+      "persists": "Vẫn tiếp tục",
+      "scatters": "Tan rã",
+      "verdictClock": "Đã có một dao động nội sinh",
+      "verdictMasking": "Chính căn phòng đã báo giờ",
+      "axis": "Giờ trong ngày →"
+    },
+    "suprachiasmatic-nucleus": {
+      "title": "Nhân trên chéo thị",
+      "category": "Thần kinh học",
+      "info": "Đồng hồ chủ nằm ngay trên chỗ hai dây thần kinh thị giác giao nhau. Làm yếu quyền điều phối của nó, các đồng hồ ngoại vi trong cơ thể sẽ trôi rời rạc — từng cơ quan một, đúng kiểu tán loạn mà lệch múi giờ gây ra.",
+      "coupling": "Độ ghép nhịp",
+      "inStep": "Các đồng hồ ngoại vi cùng nhịp",
+      "scattered": "Đồng hồ các cơ quan tán loạn",
+      "axis": "Đồng hồ chủ → các cơ quan"
+    },
+    "melatonin": {
+      "title": "Melatonin",
+      "category": "Sinh lý học",
+      "info": "Một tín hiệu bóng tối, không phải thuốc ngủ. Đợt tăng ban đêm của nó báo cáo mức độ tối — và chỉ cần ánh sáng cỡ tà dương là đủ dập nó xuống.",
+      "ambient": "Ánh sáng môi trường",
+      "level": "Melatonin",
+      "nightSignal": "Tín hiệu đêm còn nguyên",
+      "suppressed": "Bị ánh sáng ức chế",
+      "axis": "Đêm →"
+    },
+    "melanopsin": {
+      "title": "Melanopsin",
+      "category": "Giác quan",
+      "info": "Cái đo sáng riêng của đồng hồ, nhạy nhất ở vùng lam quanh 480 nm. Hãy quét bước sóng: chính màu sắc, không chỉ độ sáng, quyết định ánh sáng nói to đến đâu với đồng hồ.",
+      "wavelength": "Bước sóng",
+      "response": "Đáp ứng của đồng hồ",
+      "loud": "Đồng hồ nghe rõ mức này",
+      "quiet": "Gần như không lọt tới đồng hồ",
+      "axis": "Bước sóng →"
+    },
+    "temporal-niche-partitioning": {
+      "title": "Phân chia ổ sinh thái theo thời gian",
+      "category": "Sinh thái",
+      "info": "Hai đối thủ, một trảng trống. Hãy tách giờ làm việc của chúng ra và phần chồng lấn tranh chấp — chỗ duy nhất chúng thật sự cạnh tranh — sẽ tan biến.",
+      "separation": "Độ tách theo thời gian",
+      "overlap": "Phần tranh chấp",
+      "coexist": "Cùng tồn tại — không bao giờ gặp nhau",
+      "compete": "Còn chồng lấn — vẫn xung đột",
+      "axis": "Giờ trong ngày →"
+    },
+    "nocturnal-bottleneck": {
+      "title": "Nút thắt cổ chai ban đêm",
+      "category": "Tiến hóa",
+      "info": "Một trăm triệu năm trong ca đêm và cái giá nó để lại. Hãy kéo thanh thời lượng: các sắc tố nhận màu bị bỏ rơi, còn râu xúc giác và khứu giác phình ra thay thế.",
+      "duration": "Thời gian sống về đêm",
+      "myr": "triệu năm",
+      "opsins": "Sắc tố nhận màu",
+      "tactile": "Xúc giác & khứu giác",
+      "axis": "Sự đánh đổi giác quan"
+    },
+    "circalunar-clock": {
+      "title": "Đồng hồ theo tuần trăng",
+      "category": "Sinh học thời gian",
+      "info": "Một dao động theo tháng, được chỉnh bởi ánh trăng chỉ vài phần mười lux. Hãy đi qua tuần trăng và cửa sổ sinh sản mở ra vào đúng một đêm.",
+      "lunarPhase": "Pha Mặt Trăng",
+      "moonlight": "Ánh trăng",
+      "days": "ngày",
+      "spawning": "Cửa sổ sinh sản đang mở",
+      "waiting": "Chờ hết tháng",
+      "axis": "Tháng âm →"
+    },
+    "artificial-light-at-night": {
+      "title": "Ánh sáng nhân tạo ban đêm",
+      "category": "Sinh thái",
+      "info": "Bóng tối là một tài nguyên. Hãy tăng độ sáng đèn: côn trùng bị hút vào và giữ bay vòng, các loài thụ phấn đêm rút đi, và vùng tối trú ẩn co lại tới không còn gì.",
+      "brightness": "Độ sáng đèn",
+      "drawnIn": "Côn trùng bị hút vào",
+      "refugeIntact": "Vùng tối trú ẩn còn lại",
+      "refugeLost": "Vùng tối trú ẩn bị xóa sạch",
+      "axis": "Mặt đất bị chiếu sáng →"
+    },
+    "forced-desynchrony": {
+      "title": "Mất đồng bộ cưỡng bức",
+      "category": "Sinh học thời gian",
+      "info": "Áp một ngày nằm ngoài phạm vi đồng bộ và cơ thể rã ra: giấc ngủ đi theo lịch áp đặt, còn đồng hồ chạy tự do theo chu kỳ riêng.",
+      "imposed": "Ngày áp đặt",
+      "gap": "Độ lệch",
+      "coupled": "Các hệ vẫn còn ghép nhịp",
+      "decoupled": "Đồng hồ và giấc ngủ đã tách rời",
+      "axis": "Giờ trong ngày áp đặt →"
+    }
+  }
+}

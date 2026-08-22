@@ -1,0 +1,15 @@
+id: keystone-structure
+label:
+  vi: Cấu trúc chủ chốt
+  en: Keystone structure
+definition:
+  vi: 'Một đặc điểm vật lý của cảnh quan mang lượng sinh vật lớn hơn hẳn so với diện tích nhỏ bé nó chiếm — ở đây từ "chủ chốt" gắn vào một cấu trúc, không phải một loài, nên tính bất tương xứng là thật. Manning, Fischer và Lindenmayer (2006) lập luận cho một trường hợp nghe rất tầm thường: một cây cổ thụ đơn độc còn sót giữa cánh đồng trống. Một cái cây ấy thành bậc đá cho chim băng qua khoảng trống, thành tâm điểm hạt rơi xuống nảy mầm, thành hòn đảo cho côn trùng tán lá, thành điểm nóng dinh dưỡng.'
+  en: 'A physical feature of a landscape that carries biodiversity out of all proportion to the small area it occupies — here the word "keystone" attaches to a structure rather than a species, so the disproportion is genuine. Manning, Fischer and Lindenmayer argued the case in 2006 for something that sounds trivial: the single old tree left standing in a cleared paddock. That one tree becomes a stepping stone for birds crossing the gap, a focal point where seeds rain down and germinate, an island of canopy invertebrates, and a nutrient hotspot.'
+see_also:
+- keystone-species
+- foundation-species
+- tree-hollow
+category: concept
+tags:
+- ecology
+cover_prompt: A painted single vast old tree standing alone in an empty dark field, birds converging on it from several directions, its canopy glowing faintly teal against a void-indigo sky, the bare ground around it in deep shadow, painterly naturalist plate, no text, no labels.

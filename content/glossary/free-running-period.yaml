@@ -1,0 +1,17 @@
+id: free-running-period
+label:
+  vi: Chu kỳ chạy tự do (tau)
+  en: Free-running period
+definition:
+  vi: 'Độ dài chu kỳ mà đồng hồ sinh học của một sinh vật tự chạy khi bị cắt hoàn toàn khỏi mọi tín hiệu thời gian bên ngoài - không ánh sáng, không đồng hồ, không bình minh. Thường ký hiệu là tau. Điều đáng chú ý là nó gần như không bao giờ đúng 24 giờ: con người trôi ở khoảng 24,2 giờ, ruồi giấm và chuột hamster quanh 24, nấm *Neurospora* chừng 22, cây trinh nữ chừng 22,5. Sai lệch nhỏ ấy không phải lỗi mà là thiết kế - một chiếc đồng hồ cần được chỉnh mỗi ngày là chiếc đồng hồ được đối chiếu với thực tế mỗi ngày, nên nó linh hoạt theo mùa thay vì cứng nhắc.'
+  en: 'The cycle length an organism''s internal clock keeps when it is cut off from every external time cue - no light, no clocks, no dawn. Usually written as tau. The striking thing is that it is almost never exactly 24 hours: humans drift at about 24.2, fruit flies and hamsters near 24, the fungus *Neurospora* around 22, the sensitive plant around 22.5. That small wrongness is not a defect but the design - a clock that needs correcting daily is a clock checked against reality daily, so it stays flexible as the seasons shift instead of rigid.'
+see_also:
+  - circadian-rhythm
+  - entrainment
+  - range-of-entrainment
+  - forced-desynchrony
+category: bio
+tags:
+  - physiology
+  - sensory-biology
+cover_prompt: A painted diagram of a long horizontal band divided into stacked daily rows, each row's dark activity block starting slightly later than the row above so the blocks form a gently sloping diagonal stripe down the page, deep void background, teal glow on the blocks, no text, no labels, no numbers.

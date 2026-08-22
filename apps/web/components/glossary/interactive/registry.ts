@@ -269,6 +269,38 @@ export const GLOSSARY_VISUALIZATION_IDS = [
   "tsaheylu",
   "unobtanium",
   "prolemuris",
+  // Phase 15 — Chronobiology
+  "circadian-rhythm",
+  "free-running-period",
+  "zeitgeber",
+  "entrainment",
+  "phase-response-curve",
+  "range-of-entrainment",
+  "masking",
+  "suprachiasmatic-nucleus",
+  "melatonin",
+  "melanopsin",
+  "temporal-niche-partitioning",
+  "nocturnal-bottleneck",
+  "circalunar-clock",
+  "artificial-light-at-night",
+  "forced-desynchrony",
+
+  // Structural keystone loss — foundation species, engineers, and what time builds
+  "foundation-species",
+  "ecosystem-engineer",
+  "autogenic-engineer",
+  "keystone-structure",
+  "dominant-species",
+  "canopy-soil",
+  "tree-hollow",
+  "co-extinction",
+  "extinction-debt",
+  "functional-extinction",
+  "biological-legacy",
+  "nurse-log",
+  "alternative-stable-state",
+  "cultural-keystone-species",
 ] as const;
 
 export type GlossaryVisualizationId = (typeof GLOSSARY_VISUALIZATION_IDS)[number];

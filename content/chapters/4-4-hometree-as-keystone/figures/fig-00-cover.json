@@ -1,0 +1,20 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "hometree-as-keystone",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate for the landing book-map: one colossal tree read as a whole inhabited world rather than as scenery, so the chapter's question - what exactly is lost when a single organism is also an entire habitat - lands before a word is read.",
+  "subject": "A single colossal Pandoran Hometree standing alone above the forest, its trunk a braided ring of fused woody columns around a hollow core, sprawling buttressed prop roots spreading wide at its base. Its bark is thick with cushions of moss and large epiphytic ferns; broad lateral limbs carry visible dark mats of suspended soil; small winged shapes wheel around the crown and cavities open in the upper trunk. Faint cyan bioluminescence threads the bark fissures and the ground cover at its feet.",
+  "scene": "Pandoran rainforest at dusk, the surrounding canopy far below the tree's crown so its height reads unmistakably, mist pooling among the roots.",
+  "camera": "A low three-quarter view from near the forest floor looking up the trunk, the tree filling the frame's height, the distant canopy small beneath it.",
+  "light": "Cool blue dusk falling from above, warm amber flecks in the crown where the last light catches, bioluminescent cyan glow rising from the bark fissures and root-level ground cover, deep indigo shadow in the hollow of the trunk.",
+  "palette": "Void-indigo and deep teal, cyan bioluminescent glow, cool bone-grey on the woody columns, a single restrained amber accent high in the crown.",
+  "style": "Painterly naturalist plate, hand-painted texture, confident focal hierarchy.",
+  "detail_level": "Crisp on the bark fissures, epiphytes, root buttresses and the mats on the limbs; the crown softer; the distant canopy dissolving into mist.",
+  "composition": "The tree strong through the centre and upper frame with the crown near the top edge, root system spreading across the lower third, generous dark sky at the sides for text, 3:2 landscape.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with bioluminescent key from within the bark and ground. Same dark glowing mood as the established chapter covers.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

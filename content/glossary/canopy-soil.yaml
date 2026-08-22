@@ -1,0 +1,15 @@
+id: canopy-soil
+label:
+  vi: Đất treo trên tán cây
+  en: Canopy soil
+definition:
+  vi: 'Lớp đất thực sự tích tụ trên những cành ngang lớn của cây cổ thụ, hình thành từ xác thực vật phụ sinh và mảnh vụn chúng giữ lại — không rơi xuống đất mà đọng ngay tại chỗ, thập niên này qua thập niên khác. Nghiên cứu tán rừng của Nalini Nadkarni cho thấy lớp thảm này có thể dày tới ba mươi xăng-ti-mét, ở độ cao hàng trăm mét, với hệ tuyến trùng, nhện nhỏ và côn trùng riêng — thậm chí cả kỳ giông ở một số rừng, sống cả đời trong lớp đất chưa từng chạm mặt đất. Cây chủ đôi khi mọc rễ ra từ chính cành mình để uống nước từ khu vườn ấy.'
+  en: 'Genuine soil accumulated on the big lateral limbs of an old tree, formed from dead epiphyte tissue and the debris they trap — material that never falls to the ground but builds up in place, decade after decade. Nalini Nadkarni''s canopy work found these mats can reach some thirty centimetres deep, a hundred metres in the air, with their own nematodes, mites and invertebrate communities — and in some forests salamanders, living entire lives in dirt that has never touched the ground. The host tree sometimes grows roots out of its own branches to drink from the garden growing on it.'
+see_also:
+- epiphyte
+- autogenic-engineer
+- canopy
+category: bio
+tags:
+- ecology
+cover_prompt: A painted close view of a massive horizontal tree limb in darkness carrying a deep mat of dark soil, moss cushions and fern roots, fine white roots descending from the branch into the mat, a small salamander half-hidden in it, cool teal and indigo palette, painterly naturalist plate, no text, no labels.

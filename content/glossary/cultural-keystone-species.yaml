@@ -1,0 +1,15 @@
+id: cultural-keystone-species
+label:
+  vi: Loài chủ chốt văn hóa
+  en: Cultural keystone species
+definition:
+  vi: 'Một loài gắn bó sâu đến mức mất nó là cả nền văn hóa bị tái cấu trúc, chứ không chỉ bất tiện. Ann Garibaldi và Nancy Turner đưa ra khái niệm này năm 2004. Ví dụ kinh điển là tuyết tùng đỏ với các dân tộc bản địa vùng Tây Bắc Thái Bình Dương: thuyền độc mộc, nhà ván, cột tổ, dây, áo dệt từ vỏ, thuốc, nghi lễ và cả địa vị xã hội đều chạy qua một loài cây. Cá hồi với các cộng đồng ven biển; xương rồng saguaro với người Tohono O''odham, nơi vụ thu hoạch định ra cả cuốn lịch. Khi loài ấy mất, từ vựng mất chỗ để chỉ, vai trò xã hội quanh việc thu hái mất chỗ để bám, lịch nghi lễ mất mốc. Mất mát sinh thái và mất mát văn hóa ở mức này là một quá trình, không phải hai.'
+  en: 'A species so deeply woven into a people''s material life, diet, language, ceremony and identity that its loss restructures the culture itself rather than merely inconveniencing it. Ann Garibaldi and Nancy Turner introduced the term in 2004. The canonical example is western red cedar for the First Nations of the Pacific Northwest Coast: canoes, plank houses, poles, rope, woven bark clothing, medicine, ceremony and social standing all run through one tree. Salmon for coastal peoples; the saguaro for the Tohono O''odham, whose harvest sets the calendar. When such a species goes, vocabulary loses its referents, social roles built around harvesting have nothing to attach to, and ceremonial calendars lose their keys. At this level ecological and cultural loss are one process, not two.'
+see_also:
+- keystone-species
+- foundation-species
+- traditional-ecological-knowledge
+category: culture
+tags:
+- ecology
+cover_prompt: A painted dark scene of a great cedar-like tree with a carved canoe, a woven bark garment and a ceremonial vessel arranged at its base, all rendered in cool teal and amber against void indigo, painterly naturalist plate, no text, no labels.

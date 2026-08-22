@@ -1,0 +1,18 @@
+id: masking
+label:
+  vi: Hiện tượng che phủ (masking)
+  en: Masking
+definition:
+  vi: 'Khi ánh sáng hay bóng tối tác động trực tiếp lên hành vi mà không hề chạm tới đồng hồ sinh học bên trong. Con vật không tra cứu một thời khóa biểu nội tại nào cả - bóng tối chỉ đơn giản *giải phóng* nó, như tắt đèn thì thả con bướm đêm ra. Điều nguy hiểm là che phủ có thể tạo ra hành vi không thể phân biệt được với hành vi do đồng hồ điều khiển: đều đặn, đúng giờ, mỗi ngày cùng một thời điểm - đơn giản vì chu kỳ sáng-tối mà nó đi theo tự nó đã đều đặn. Cách phân biệt là cắt tín hiệu đi: đồng hồ thật vẫn chạy và trôi dần theo chu kỳ riêng, còn hành vi bị che phủ thì tan rã.'
+  en: 'When light or darkness acts directly on behaviour without ever touching the internal clock. The animal is not consulting an internal schedule - the dark simply *releases* it, the way switching off a lamp releases a moth. The treacherous part is that masking can produce behaviour indistinguishable from clock-driven behaviour: regular, punctual, at the same hour every day - for the trivial reason that the light cycle it follows is itself regular. The way to tell is to remove the cue: a real clock keeps running and drifts on its own period, while masked behaviour falls apart.'
+see_also:
+  - entrainment
+  - circadian-rhythm
+  - zeitgeber
+  - free-running-period
+category: bio
+tags:
+  - physiology
+  - ecology
+  - sensory-biology
+cover_prompt: A painted pair of side-by-side activity records as stacked horizontal rows of dark blocks, the left column keeping a neat diagonal drift downward while the right column dissolves into scattered irregular marks below a dashed dividing line, teal and magenta on deep void, no text, no labels, no numbers.

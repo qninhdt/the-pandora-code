@@ -25,11 +25,15 @@ import { Daisyworld } from "@/components/content/daisyworld";
 import { DataComparison, StatGrid } from "@/components/content/data-comparison";
 import { DetectionMethodScope } from "@/components/content/detection-method-scope";
 import { DiagramFigure } from "@/components/content/diagram-figure";
+import { DriftingHumanClock } from "@/components/content/drifting-human-clock";
 import { EclipseDayClock } from "@/components/content/eclipse-day-clock";
+import { EntrainmentRangeDial } from "@/components/content/entrainment-range-dial";
 import { Figure } from "@/components/content/figure";
 import { FigureGrid } from "@/components/content/figure-grid";
 import { FlightCeilingLab } from "@/components/content/flight-ceiling-lab";
+import { FoundationVsKeystone } from "@/components/content/foundation-vs-keystone";
 import { StrataDiversityEngine } from "@/components/content/strata-diversity-engine";
+import { StructureVsBiomassClock } from "@/components/content/structure-vs-biomass-clock";
 import { FroudeGaitDial } from "@/components/content/froude-gait-dial";
 import { FunctionalResponseCurves } from "@/components/content/functional-response-curves";
 import { GiantFlierShowdown } from "@/components/content/giant-flier-showdown";
@@ -45,13 +49,16 @@ import { KeystoneCascadeToggle } from "@/components/content/keystone-cascade-tog
 import { LimbFieldToggle } from "@/components/content/limb-field-toggle";
 import { LongBranchAttractionDemo } from "@/components/content/long-branch-attraction-demo";
 import { MagneticCompassExplorer } from "@/components/content/magnetic-compass-explorer";
+import { MaskingOrClock } from "@/components/content/masking-or-clock";
 import { MycorrhizalMarket } from "@/components/content/mycorrhizal-market";
 import { NichePartitionExplorer } from "@/components/content/niche-partition-explorer";
 import { NightEyeOptics } from "@/components/content/night-eye-optics";
 import { OccamsRazorEngine } from "@/components/content/occams-razor-engine";
 import { OpenQuestions } from "@/components/content/open-questions";
+import { PandoraLightLadder } from "@/components/content/pandora-light-ladder";
 import { PercolationNetwork } from "@/components/content/percolation-network";
 import { PhotophoreIntensity } from "@/components/content/photophore-intensity";
+import { TemporalNichePartition } from "@/components/content/temporal-niche-partition";
 import { TorukFlightEngine } from "@/components/content/toruk-flight-engine";
 import { PredatorPreyOscillator } from "@/components/content/predator-prey-oscillator";
 import { QuorumCascade } from "@/components/content/quorum-cascade";
@@ -111,13 +118,17 @@ export const pandoraMdxComponents = {
   DataComparison,
   DetectionMethodScope,
   DiagramFigure,
+  DriftingHumanClock,
   EclipseDayClock,
+  EntrainmentRangeDial,
   Figure,
   FigureGrid,
   FlightCeilingLab,
   FloatingMountainFigure,
   FluxFieldFigure,
+  FoundationVsKeystone,
   StrataDiversityEngine,
+  StructureVsBiomassClock,
   FroudeGaitDial,
   FunctionalResponseCurves,
   GiantFlierShowdown,
@@ -130,6 +141,7 @@ export const pandoraMdxComponents = {
   HydraulicLimitSimulator,
   KeystoneCascadeToggle,
   MagneticCompassExplorer,
+  MaskingOrClock,
   MycorrhizalMarket,
   NichePartitionExplorer,
   IsochronPlot,
@@ -140,8 +152,10 @@ export const pandoraMdxComponents = {
   OccamsRazorEngine,
   OpenQuestions,
   OrbitClock,
+  PandoraLightLadder,
   PercolationNetwork,
   PhotophoreIntensity,
+  TemporalNichePartition,
   TorukFlightEngine,
   PredatorPreyOscillator,
   QuorumCascade,

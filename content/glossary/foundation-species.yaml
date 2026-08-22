@@ -1,0 +1,16 @@
+id: foundation-species
+label:
+  vi: Loài nền tảng
+  en: Foundation species
+definition:
+  vi: 'Một loài đông đảo, thường to lớn, mà cơ thể nó tạo nên chính môi trường sống của cả cộng đồng — tán che, độ ẩm, bề mặt, chỗ trú. Khác hẳn loài chủ chốt: loài chủ chốt thì hiếm và tác động qua việc ăn, còn loài nền tảng tác động bằng chính khối lượng của mình, và khối lượng ấy chính là điểm mấu chốt. Nhà sinh thái Paul Dayton đặt tên năm 1972 khi nghiên cứu đáy biển Nam Cực. Tảo bẹ khổng lồ, thông độc cần miền đông Bắc Mỹ, một cây cổ thụ ba trăm mét — mất chúng là mất chính nơi ở, không phải mất một mắt lưới thức ăn.'
+  en: 'An abundant, usually large species whose body constitutes the habitat its whole community lives in — the shade, the humidity, the surfaces, the shelter. Unlike a keystone species, which is rare and acts by eating, a foundation species acts through its sheer mass, and the mass is the point. Paul Dayton named it in 1972 from work on the Antarctic seafloor. Giant kelp, eastern hemlock, a three-hundred-metre tree: lose one and you have not lost a strand of the food web, you have lost the premises.'
+see_also:
+- keystone-species
+- ecosystem-engineer
+- dominant-species
+- keystone-structure
+category: concept
+tags:
+- ecology
+cover_prompt: A painted cross-section of a dark seafloor thick with massive sponges and a towering kelp stipe rising through cold teal water, dozens of small fish and invertebrates sheltering among their bodies, the large organisms glowing faintly as the structure everything else depends on, painterly naturalist plate, no text, no labels.

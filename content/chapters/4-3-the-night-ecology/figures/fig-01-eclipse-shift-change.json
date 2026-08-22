@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-eclipse-shift-change",
+  "chapter_slug": "the-night-ecology",
+  "role": "hero",
+  "narrative_purpose": "The cold-open anchor: the shift change itself, caught mid-handover, so the reader sees one roster settling and another rising at the same instant - the observation the whole chapter interrogates.",
+  "subject": "A Pandoran forest clearing at the moment of the afternoon eclipse, composed so both shifts are visible at once. High on the left, a large winged flier is coming down to a roost on a high branch with its wings half-folded, plainly finishing for the day. Centre-right, a six-legged grazing animal walks unhurried toward the treeline, head still up. Low in the right foreground, two lean six-legged pack predators with burnished black hides and faintly luminous markings step out into the open, one with its head lowered. Between them the forest floor is coming alight - branching root filaments, glowing moss, fungal mats - and one spiral-leafed plant is caught halfway through folding shut.",
+  "scene": "A clearing floored with luminous root networks and low mist, ringed by enormous dark trunks, the eclipsed gas giant filling a wedge of sky above the canopy gap.",
+  "camera": "A wide eye-level three-quarter view across the clearing, deep enough to hold the roosting flier high left, the departing grazer mid-right, and the arriving predators near right.",
+  "light": "Failing coppery daylight almost gone from the upper canopy, replaced by cyan uplight rising from the ground; the predators lit from below by the glowing floor, the roosting flier silhouetted against the darkening sky.",
+  "palette": "Void-indigo sky with a last thin copper trace, deep teal forest mass, cyan and violet ground glow, restrained amber only in the predators' eyes.",
+  "style": "Painterly cinematic naturalist plate, hand-painted texture, clear staging of the three groups.",
+  "detail_level": "Crisp on the foreground predators and the lit root network; the grazer moderately soft; the roosting flier read mostly as silhouette; canopy dissolving into haze.",
+  "composition": "Roosting flier upper-left, departing grazer centre-right at mid-depth, two predators lower-right in the near ground, luminous floor threading between all three, dark sky across the top for text, 16:9.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette, key light from the ground. Same forest and creature language as the chapter cover; the predators must read as the same species in both plates.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/the-night-ecology/fig-00-cover.png"]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-the-scar-over-time",
+  "chapter_slug": "hometree-as-keystone",
+  "role": "diagram",
+  "narrative_purpose": "Shows the two recovery clocks as a sequence the eye can walk along: green cover returns quickly across the first three panels while height and structure do not, and the jump to the fourth panel is the gap nothing can shorten.",
+  "subject": "A wide plate divided into four equal vertical panels showing the same forest clearing at four moments. Panel one: a raw ash bed with a burnt shattered stump and a bare crater under harsh open light, nothing growing. Panel two: the same site thick with low pioneer vines, scrub and fast tangled growth, still no trees of height. Panel three: a closed ordinary forest canopy of moderate-height trees, uniform and dense, with no giant anywhere and no cavities in the young trunks. Panel four: a single vast Hometree-scale trunk rising far above that same canopy, its crown near the top of the frame, the earlier panels' low skyline drawn faintly across for comparison.",
+  "scene": "The identical patch of Pandoran forest in all four panels, same viewpoint each time, the stump position consistent so the eye tracks one place through time.",
+  "camera": "A fixed low three-quarter view repeated identically in each panel, matched horizon line across all four.",
+  "light": "Panel one harsh and exposed with no canopy shade; panels two and three progressively cooler and more shadowed as cover closes; panel four deep and layered with bioluminescent cyan glow returning at ground level and in the bark.",
+  "palette": "Ash grey and bone in panel one warming to teal and cyan through panels two and three, void-indigo depth and cyan bioluminescence in panel four, one restrained amber accent in the final crown.",
+  "style": "Painterly naturalist plate, hand-painted texture, sequential study rather than a montage.",
+  "detail_level": "Crisp on the stump, the pioneer growth, the uniform young canopy and the final giant trunk; distances softened consistently in each panel.",
+  "composition": "Four equal vertical panels with narrow dark gutters between them, matched horizon across all four, generous sky in each for later callout labels, 16:9 landscape.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "human figures", "machinery", "timeline graphics"],
+  "consistency_notes": "Same viewpoint and horizon in every panel - the sequence only works if the reader believes it is one place. The giant in panel four shares the Hometree morphology of the other plates.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no year markers, no infographic styling, no photographic or 3D-render look, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["fig-00-cover.png"]
+}

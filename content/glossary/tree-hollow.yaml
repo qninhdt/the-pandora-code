@@ -1,0 +1,15 @@
+id: tree-hollow
+label:
+  vi: Hốc cây
+  en: Tree hollow
+definition:
+  vi: 'Khoang rỗng trong thân hay cành cây, nơi chim làm tổ, thú túi ngủ, dơi trú. Hốc cây không do con vật nào khoét ra: nó là sản phẩm của một sự phối hợp chậm rãi giữa nấm phân hủy gỗ, côn trùng gặm phần gỗ đã mềm, và thương tích cơ học từ gió hay sét — và sự phối hợp ấy cần một lượng thời gian đáng sợ. Hốc nhỏ bắt đầu hình thành sau khoảng một trăm đến một trăm hai mươi năm; hốc đủ lớn cho một loài có xương sống cỡ lớn cần hai trăm hai mươi đến năm trăm năm hoặc hơn. Ở rừng Úc, hơn ba trăm loài có xương sống phụ thuộc vào hốc cây mà không có gì thay thế.'
+  en: 'A cavity in a trunk or limb where a bird nests, a possum sleeps, a bat roosts. Hollows are not excavated by animals: they are the product of a slow collaboration between wood-decay fungi, insects working the softened tissue, and mechanical injury from wind or lightning — and that collaboration takes a shocking amount of time. Small hollows begin forming at around 100 to 120 years; cavities large enough for a substantial vertebrate need 220 to 500 years or more. In Australian forests over 300 vertebrate species depend on hollows, with no substitute available.'
+see_also:
+- keystone-structure
+- foundation-species
+- biological-legacy
+category: bio
+tags:
+- ecology
+cover_prompt: A painted dark tree trunk in cross-section showing a deep rounded cavity opened in decayed heartwood, fungal threads and softened wood at its edges, a pair of small eyes glowing faintly cyan from inside the hollow, painterly naturalist plate, no text, no labels.

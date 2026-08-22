@@ -51,9 +51,9 @@ describe("Glossary registry / visualizer / disk / yaml consistency", () => {
   const vizUnique = [...new Set(vizIds)].sort();
   const yamlIds = glossaryYamlIds();
 
-  it("has exactly 257 registry IDs with no duplicates", () => {
-    expect(GLOSSARY_VISUALIZATION_IDS).toHaveLength(257);
-    expect(new Set(GLOSSARY_VISUALIZATION_IDS).size).toBe(257);
+  it("has exactly 286 registry IDs with no duplicates", () => {
+    expect(GLOSSARY_VISUALIZATION_IDS).toHaveLength(286);
+    expect(new Set(GLOSSARY_VISUALIZATION_IDS).size).toBe(286);
   });
 
   it("matches disk component files 1:1", () => {
@@ -61,12 +61,12 @@ describe("Glossary registry / visualizer / disk / yaml consistency", () => {
   });
 
   it("matches visualizer dynamic imports 1:1", () => {
-    expect(vizIds).toHaveLength(257);
+    expect(vizIds).toHaveLength(286);
     expect(vizUnique).toEqual(registryIds);
   });
 
   it("matches content/glossary YAML entries 1:1", () => {
-    expect(yamlIds).toHaveLength(257);
+    expect(yamlIds).toHaveLength(286);
     expect(yamlIds).toEqual(registryIds);
   });
 

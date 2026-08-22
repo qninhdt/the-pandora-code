@@ -1,0 +1,15 @@
+id: alternative-stable-state
+label:
+  vi: Trạng thái bền vững thay thế
+  en: Alternative stable state
+definition:
+  vi: 'Cùng một nơi, nhưng hệ sinh thái có thể đứng vững ở hai hình thái hoàn toàn khác nhau — và một khi đã chuyển sang hình thái kia, nó không tự quay lại. Rừng tảo bẹ là ví dụ rõ nhất: mất tảo bẹ, khu rừng ba chiều đầy cá con và sóng được cản lại biến thành một bãi cầu gai phẳng, năng suất thấp. Đưa lại vài con tảo bẹ không đủ, vì cầu gai đã đông và ăn hết chồi non. Trạng thái mới tự củng cố chính nó. Đây là lý do "sẽ trồng lại" thường không phải câu trả lời cho việc phá hủy cấu trúc.'
+  en: 'The same place, but an ecosystem that can stand in two entirely different configurations — and once it has flipped to the other, it does not flip back on its own. Kelp forests are the clearest case: lose the kelp and a three-dimensional forest full of juvenile fish and damped waves becomes a flat, low-productivity urchin barren. Adding a few kelp plants back is not enough, because the urchins are now abundant and eat the new growth. The new state reinforces itself. This is why "we will replant" is often not an answer to structural destruction.'
+see_also:
+- tipping-point
+- foundation-species
+- ecological-resilience
+category: concept
+tags:
+- ecology
+cover_prompt: A painted underwater diptych against dark water, on one side a tall three-dimensional kelp forest full of small fish glowing faint teal, on the other a flat bare rocky seafloor covered in dense spiny urchins under the same cold light, painterly naturalist plate, no text, no labels.
