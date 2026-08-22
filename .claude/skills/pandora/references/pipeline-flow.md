@@ -51,11 +51,15 @@ _pct summing to 100}, related_chapters, glossary_terms, figures[], sources[]`.
 ### 2. Figures - `pandora-art-director`
 Emit `content/chapters/{slug}/figures/fig-NN-*.json`, one per figure, each
 valid against `FigurePrompt`. Add a matching `figures[]` entry (id, role,
-`asset_status: pending`) to `meta.yaml`. Count is content-driven (many; density
-scales) - no fixed minimum. **Always author a `fig-00-cover` (role `hero`,
-16:9/3:2)** - the chapter's representative image shown on the landing book-map
-plate; the web resolves it automatically (`fig-00` sorts first; body figures
-start at `fig-01`).
+`asset_status: pending`) to `meta.yaml`. For a standard 5–7k-word chapter,
+author **7–10 inline figures** across distinct narrative/science beats; seven is
+the default minimum, not a reason to create filler. Go lower only for a
+materially shorter chapter or when another visual already carries the same
+beat better, and record the reason in the chapter plan. **Always author a
+`fig-00-cover` (role `hero`, 16:9/3:2)** - the chapter's representative image
+shown on the landing book-map plate. An optional `fig-99-background` is
+decorative and does not count toward the inline target. The web resolves the
+cover automatically (`fig-00` sorts first; body figures start at `fig-01`).
 
 ### 3. Images - `scripts/gen-images.ts`
 `pnpm gen-images --chapter {slug}`. Writes PNGs to

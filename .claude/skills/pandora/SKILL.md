@@ -54,7 +54,7 @@ check research/{slug}.md exists?
           0. read research/{slug}.md + outline → a short chapter plan
              (structure, dual-payload beats, components to reuse/create, figure list)
           1. pandora-author      → content/chapters/{slug}/en.mdx (5–7k words, fusion voice)
-          2. pandora-art-director → content/chapters/{slug}/figures/fig-NN-*.json (many)
+          2. pandora-art-director → 7–10 inline figure specs + fig-00 cover
           3. scripts/gen-images.ts --chapter {slug}   → PNGs + flips asset_status
           4. figure-annotation pass → READ each generated PNG, author labels/notes
                                        onto its <DiagramFigure> in en.mdx (coords come
@@ -120,6 +120,15 @@ Full detail, including `meta.yaml` authoring and the status taxonomy, lives in
    fills `labels=[…]`. See `pandora-art-director` (annotation pass) and
    `pandora-author` (figure component rule).
 
+9. **Keep visual density high.** A standard 5–7k-word chapter ships **7–10
+   inline AI-image figures**, in addition to `fig-00-cover`; `fig-99-background`
+   remains optional and does not count toward the range. Treat seven inline
+   figures as the default minimum. Distribute them across distinct narrative or
+   scientific beats instead of clustering them, and never pad the count with
+   near-duplicates. Go below seven only when the chapter is materially shorter
+   or another visual already communicates the same beat better; record that
+   reason in the chapter plan.
+
 ## Component selection (palette, not checklist)
 
 The component library is a **reference palette that grows chapter by chapter** -
@@ -154,6 +163,8 @@ discarded for quality. See `references/component-palette.md`.
 
 - `content/chapters/{slug}/{meta.yaml,en.mdx,vi.mdx}` exist and validate.
 - `figures/fig-NN-*.json` present; images generated; `asset_status: ready`.
+- Standard 5–7k-word chapters contain 7–10 distinct inline figures, plus the
+  cover; any justified lower count is called out in the chapter plan.
 - Every AI-image figure renders as a `<DiagramFigure>` and has been through the
   annotation pass: callout `labels=[…]` authored from the real PNG (EN), then
   translated (VI). Decorative cover/background layers (`fig-00`, `fig-99`) are

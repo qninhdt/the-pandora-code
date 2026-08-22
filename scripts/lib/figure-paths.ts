@@ -1,4 +1,6 @@
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
+import yaml from "js-yaml";
 
 // Repo-root-relative paths. The image pipeline runs from the workspace root
 // (where content/ and apps/web/ live), unlike the web app's content-paths
@@ -9,12 +11,39 @@ export const CONTENT_ROOT = path.join(ROOT, "content");
 export const PUBLIC_IMAGES_ROOT = path.join(ROOT, "apps/web/public/images");
 export const ANCHORS_DIR = path.join(CONTENT_ROOT, "art-direction", "anchors");
 
+// Chapter folders carry their book-order prefix (for example
+// "4-5-pandoras-smallest-things"), while figure JSON, URLs, and public image
+// folders use the clean metadata slug ("pandoras-smallest-things"). Resolve
+// either form here so the image CLI can keep accepting the public clean slug.
+export function resolveChapterContentDir(contentRoot: string, slug: string): string {
+  const chaptersRoot = path.join(contentRoot, "chapters");
+  const direct = path.join(chaptersRoot, slug);
+  if (existsSync(direct)) return direct;
+
+  if (!existsSync(chaptersRoot)) return direct;
+  for (const entry of readdirSync(chaptersRoot, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    const candidate = path.join(chaptersRoot, entry.name);
+    const metaPath = path.join(candidate, "meta.yaml");
+    if (!existsSync(metaPath)) continue;
+    try {
+      const meta = yaml.load(readFileSync(metaPath, "utf8")) as { slug?: unknown } | null;
+      if (meta?.slug === slug) return candidate;
+    } catch {
+      // Content validation owns malformed YAML errors. Path lookup simply
+      // ignores an unreadable candidate and keeps searching.
+    }
+  }
+
+  return direct;
+}
+
 export function chapterFiguresDir(slug: string): string {
-  return path.join(CONTENT_ROOT, "chapters", slug, "figures");
+  return path.join(resolveChapterContentDir(CONTENT_ROOT, slug), "figures");
 }
 
 export function chapterMetaPath(slug: string): string {
-  return path.join(CONTENT_ROOT, "chapters", slug, "meta.yaml");
+  return path.join(resolveChapterContentDir(CONTENT_ROOT, slug), "meta.yaml");
 }
 
 export function chapterImagesDir(slug: string): string {
