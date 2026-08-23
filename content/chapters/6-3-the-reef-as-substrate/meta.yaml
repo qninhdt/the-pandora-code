@@ -1,0 +1,117 @@
+slug: the-reef-as-substrate
+part: sea-and-reefs
+order: 3
+status: published
+title:
+  vi: Rạn san hô — Một thành phố được xây bởi sinh vật
+  en: The Reef as Substrate
+subtitle:
+  vi: >-
+    Làng Awa'atlu không đứng trên đá. Nó đứng trên thân xác tích tụ của những sinh vật khác — một
+    cái nền sống được nuôi lớn bằng ánh sáng, và chỉ tồn tại chừng nào việc dựng xây còn nhanh hơn
+    biển cả bào mòn.
+  en: >-
+    The Metkayina village of Awa'atlu does not stand on rock. It stands on the accumulated bodies of
+    other organisms — a living floor grown out of sunlight, alive only as long as its builders keep
+    pace with the sea.
+hook:
+  vi: >-
+    Cả một ngôi làng đang đứng trên mặt biển. Cái sàn ấy do sinh vật tạo ra, và để hiểu nó ta phải
+    hỏi: bức tường được làm từ gì? Câu trả lời dẫn tới mối cộng sinh kỳ lạ nhất sinh giới — con vật
+    nuôi tảo trong tế bào mình, biến ánh nắng thành đá.
+  en: >-
+    A whole village is standing on the sea. That floor was made by living things, and to read it we
+    must ask what the wall is made of. The answer leads to biology's strangest partnership — an
+    animal farming algae inside its own cells, turning sunlight into stone.
+authors:
+  - bardabez
+reading_time_min: 24
+tags:
+  - coral-reef-ecology
+  - symbiosis
+  - zooxanthellae
+  - foundation-species
+  - biogenic-substrate
+  - metkayina
+classification:
+  canon_pct: 22
+  inference_pct: 12
+  speculation_pct: 6
+  real_science_pct: 60
+related_chapters:
+  - pandoras-ocean
+  - tulkun-not-quite-whales
+  - hometree-as-keystone
+  - convergent-but-not-quite
+glossary_terms:
+  - biogenic-reef
+  - zooxanthellae
+  - symbiosis
+  - mutualism
+  - coral-bleaching
+  - foundation-species
+  - autogenic-engineer
+  - rugosity
+  - niche-partitioning
+  - darwins-paradox
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-a-village-on-a-living-thing
+    role: hero
+    asset_status: ready
+  - id: fig-02-sunlight-becomes-rock
+    role: diagram
+    asset_status: ready
+  - id: fig-03-the-scarcity-of-a-place-to-stand
+    role: inline
+    asset_status: ready
+  - id: fig-04-the-mass-is-the-point
+    role: inline
+    asset_status: ready
+  - id: fig-05-three-neighbourhoods-of-the-reef
+    role: inline
+    asset_status: ready
+  - id: fig-06-nobody-lives-alone
+    role: inline
+    asset_status: ready
+  - id: fig-07-the-broken-partnership
+    role: comparison
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Avatar - The Way of Water (2022), film
+  - kind: canon
+    label: Avatar - The Way of Water - The Visual Dictionary (2022)
+  - kind: canon
+    label: The Art of Avatar - The Way of Water (2022)
+  - kind: science
+    label: >-
+      Muscatine et al. - Fate of photosynthetic fixed carbon in light- and shade-adapted colonies of
+      the symbiotic coral Stylophora pistillata (Proc. R. Soc. B, 1984)
+  - kind: science
+    label: >-
+      Ferrario et al. - The effectiveness of coral reefs for coastal hazard risk reduction and
+      adaptation (Nature Communications, 2014)
+    url: https://doi.org/10.1038/ncomms4794
+  - kind: science
+    label: Hughes et al. - Global warming and recurrent mass bleaching of corals (Nature, 2017)
+    url: https://doi.org/10.1038/nature21707
+  - kind: science
+    label: >-
+      Perry et al. - Loss of coral reef growth capacity to track future increases in sea level
+      (Nature, 2018)
+    url: https://doi.org/10.1038/s41586-018-0194-z
+  - kind: science
+    label: >-
+      de Goeij et al. - Surviving in a marine desert: the sponge loop retains resources within coral
+      reefs (Science, 2013)
+    url: https://doi.org/10.1126/science.1241981
+  - kind: science
+    label: Jones, Lawton & Shachak - Organisms as ecosystem engineers (Oikos, 1994)
+    url: https://doi.org/10.2307/3545850
+  - kind: research-note
+    label: >-
+      The Reef as Biogenic Substrate - Pandoran Seascape Architecture and Comparative Coral Reef
+      Ecology (chapter research note)

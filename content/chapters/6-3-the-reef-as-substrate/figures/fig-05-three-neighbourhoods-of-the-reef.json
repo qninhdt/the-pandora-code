@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-three-neighbourhoods-of-the-reef",
+  "chapter_slug": "the-reef-as-substrate",
+  "role": "inline",
+  "narrative_purpose": "This figure shows how one reef's structure sorts life into distinct zones — high-energy barrier, calm bright lagoon, dim deep drop-off — so the reader sees rugosity and physics dividing a single reef into many different places to live.",
+  "subject": "A single continuous reef cross-section reading left to right through three habitats. Left: the wave-battered barrier crest in bright churning water with fast-swimming streamlined fish and a skimwing gliding above the foam. Centre: a calm, brightly sunlit shallow lagoon with branching gardens, grazing shoals and a young plesiosaur-like ilu among the crevices. Right: the reef gives way to a dim, deep drop-off wall descending into dark blue, sparse large forms patrolling the shadow. The same reef structure runs unbroken through all three.",
+  "scene": "One Pandoran reef seen in profile from barrier to lagoon to deep drop-off, the water brightening in the middle and darkening at both ends of the depth range.",
+  "camera": "Wide horizontal cross-section from the side, the three zones arranged left to right along the reef.",
+  "light": "Bright churned teal light at the barrier, saturated clear sunlight in the lagoon, deep dim indigo at the drop-off; cyan bioluminescence throughout marking living structure.",
+  "palette": "Ocean teal and cyan across the lit zones, void indigo at the deep drop-off, living-teal on reef life, one restrained magenta or amber accent.",
+  "style": "Hand-painted speculative-biology naturalist plate, textured and observed.",
+  "detail_level": "High detail on each zone's characteristic life and the reef structure linking them; open water above kept plain for callouts on each zone.",
+  "composition": "Three legible bands left-to-right — turbulent barrier, calm lagoon, dark drop-off — sharing one continuous reef, with clear negative space above each for annotation.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "flat infographic style", "photographic look", "RDA machinery"],
+  "consistency_notes": "One continuous reef, three habitats sorted by wave energy and depth. Match creature look (ilu, skimwing) and palette to the other figures. Keep dark or plain regions above each zone for labels.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no numbers, no arrows, no flat vector infographic, no photographic or CGI look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/the-reef-as-substrate/fig-01-a-village-on-a-living-thing.png"]
+}

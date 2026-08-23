@@ -1,8 +1,13 @@
 # Figure Planning - what and how many to illustrate
 
-Figure count is content-driven. No minimum, no maximum. The question is never
-"how many figures should this chapter have" but "what does the reader need to
-*see* to understand this chapter".
+Figure count is content-driven, within a density floor. A standard 5–7k-word
+chapter ships **7–10 inline AI-image figures** (plus the mandatory `fig-00-cover`;
+`fig-99-background` is optional and does not count). Treat **seven inline figures
+as the default minimum**. The question is never "how do I hit the number" but
+"what does the reader need to *see* to understand this chapter" — then check the
+count clears seven and every figure earns its place. Go below seven only when the
+chapter is materially shorter or another visual already teaches the same beat,
+and record that reason in the chapter plan.
 
 ## Where figures earn their place
 
@@ -25,12 +30,14 @@ Figure count is content-driven. No minimum, no maximum. The question is never
    can't state in a sentence.
 4. Order them in narrative sequence and assign `fig-01`, `fig-02`, …
 
-## Density guidance (not a rule)
+## Density guidance
 
-- A dense systems/anatomy chapter may warrant many figures.
-- A short reflective chapter may warrant a handful.
+- Seven inline figures is the default floor for a standard-length chapter.
+- A dense systems/anatomy chapter may warrant the full 7–10 range or more.
+- A short reflective chapter may drop below seven — but only with a recorded
+  reason in the chapter plan.
 - The sample/template chapter is intentionally figure-rich to set the immersion
-  bar - but that's a property of *that* chapter's content, not a global quota.
+  bar. Match that bar; do not treat it as an exception that lets you undershoot.
 
 ## Anti-pattern: decoration
 

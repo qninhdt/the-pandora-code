@@ -1,0 +1,139 @@
+slug: a-real-living-planet
+part: eywa
+order: 7
+status: published
+title:
+  vi: Một hành tinh đang thở đúng nghĩa
+  en: Gaia After Eywa
+subtitle:
+  vi: >-
+    Người Na'vi nói mọi nguồn năng lượng đều chỉ là đi mượn, rồi một ngày phải trả về cho cái toàn
+    thể. Đó là thần học — hay là mô tả chính xác nhất từng có về một hành tinh tự điều hòa lấy chính
+    mình?
+  en: >-
+    The Na'vi say all energy is only borrowed, and one day must be returned to the whole. That is
+    theology — or it is the most exact description ever written of a planet that regulates itself.
+hook:
+  vi: >-
+    Suốt cả Phần III, ta đã mổ xẻ từng cơ phận của Eywa: trí tuệ phân tán, mạng nấm rễ, băng thông,
+    sức bền của mạng lưới. Giờ là lúc lắp chúng lại thành một câu hỏi duy nhất, lớn nhất — Pandora
+    là một hành tinh *có* sự sống, hay một hành tinh *là* một cơ thể sống? Trái Đất đã chạm tới câu
+    hỏi ấy trước, dưới một cái tên gây tranh cãi suốt nửa thế kỷ: Giả thuyết Gaia.
+  en: >-
+    All through Part III we have dissected Eywa part by part: distributed cognition, the fungal web,
+    bandwidth, the resilience of the mesh. Now we assemble them into a single, largest question — is
+    Pandora a planet *with* life, or a planet that *is* a living thing? Earth reached that question
+    first, under a name that has been fought over for half a century: the Gaia hypothesis.
+authors:
+  - bardabez
+reading_time_min: 30
+tags:
+  - eywa
+  - gaia-hypothesis
+  - earth-system-science
+  - homeostasis
+  - planetary-boundaries
+  - climate
+classification:
+  canon_pct: 20
+  inference_pct: 18
+  speculation_pct: 10
+  real_science_pct: 52
+related_chapters:
+  - what-eywa-is
+  - the-wood-wide-web
+  - the-bandwidth-of-a-planet
+  - why-burning-eywa-doesnt-kill-it
+glossary_terms:
+  - gaia-hypothesis
+  - daisyworld
+  - earth-system-science
+  - homeostasis
+  - negative-feedback
+  - positive-feedback
+  - atmospheric-disequilibrium
+  - biosignature
+  - carbonate-silicate-cycle
+  - faint-young-sun-paradox
+  - claw-hypothesis
+  - planetary-boundaries
+  - tipping-point
+  - differential-persistence
+  - teleology
+  - superorganism
+  - emergence
+  - tsaheylu
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-the-living-moon
+    role: hero
+    asset_status: ready
+  - id: fig-02-borrowed-energy-loop
+    role: diagram
+    asset_status: ready
+  - id: fig-03-disequilibrium-biosignature
+    role: comparison
+    asset_status: ready
+  - id: fig-04-carbonate-silicate-thermostat
+    role: diagram
+    asset_status: ready
+  - id: fig-05-claw-cloud-albedo
+    role: diagram
+    asset_status: ready
+  - id: fig-06-earth-vs-pandora-regulation
+    role: comparison
+    asset_status: ready
+  - id: fig-07-song-not-singer
+    role: diagram
+    asset_status: ready
+  - id: fig-08-brake-becomes-accelerator
+    role: comparison
+    asset_status: ready
+  - id: fig-99-background
+    role: hero
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Eywa - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Eywa
+  - kind: canon
+    label: Pandora - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Pandora
+  - kind: canon
+    label: Spirit Tree - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Spirit_Tree
+  - kind: canon
+    label: Tulkun - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Tulkun
+  - kind: science
+    label: Lovelock & Margulis - Atmospheric homeostasis by and for the biosphere (Tellus, 1974)
+    url: https://onlinelibrary.wiley.com/doi/10.1111/j.2153-3490.1974.tb01946.x
+  - kind: science
+    label: >-
+      Watson & Lovelock - Biological homeostasis of the global environment (Daisyworld, Tellus,
+      1983)
+    url: https://onlinelibrary.wiley.com/doi/10.3402/tellusb.v35i4.14616
+  - kind: science
+    label: >-
+      Walker, Hays & Kasting - A negative feedback mechanism for the long-term stabilization of
+      Earth's surface temperature (JGR, 1981)
+    url: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/JC086iC10p09776
+  - kind: science
+    label: >-
+      Charlson, Lovelock, Andreae & Warren - Oceanic phytoplankton, atmospheric sulphur, cloud
+      albedo and climate (CLAW, Nature, 1987)
+    url: https://www.nature.com/articles/326655a0
+  - kind: science
+    label: Rockström et al. - A safe operating space for humanity (Planetary boundaries, Nature, 2009)
+    url: https://www.nature.com/articles/461472a
+  - kind: science
+    label: >-
+      Doolittle - Is it the song, not the singer? A hierarchical reframing of selection (ITSNTS,
+      PNAS, 2018)
+    url: https://www.pnas.org/doi/10.1073/pnas.1722232115
+  - kind: research-note
+    label: >-
+      Comparative Astro-Physiology - Pandora's Bioneurological Biosphere through Earth System
+      Science and the Gaia Hypothesis (chapter research note)

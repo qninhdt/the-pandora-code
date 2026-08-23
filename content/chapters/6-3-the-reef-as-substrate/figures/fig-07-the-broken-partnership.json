@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-the-broken-partnership",
+  "chapter_slug": "the-reef-as-substrate",
+  "role": "comparison",
+  "narrative_purpose": "This side-by-side shows bleaching as a broken partnership rather than death from outside: the same coral, colour-rich and algae-filled on one side, ghostly white over bare skeleton on the other, with only a small rise in warmth between them.",
+  "subject": "A split comparison of one branching coral colony. On the left half: the coral is vivid and healthy, its tissue rich with colour and dense golden-brown algal cells, gently lit, small fish sheltering in its branches. On the right half: the identical coral has turned translucent and ghostly white, the bare pale limestone skeleton showing through, the golden cells gone, the water around it a warmer hazy tint and the sheltering fish absent. A subtle vertical seam divides the two states of the same colony.",
+  "scene": "Shallow reef water, the left side cool and clear, the right side warmer and hazier, the same coral head spanning both.",
+  "camera": "Straight-on medium view of a single coral colony, centred, split down the middle into two conditions.",
+  "light": "Left: cool teal shafts and soft cyan glow with warm golden cells within the tissue. Right: a flat, warmer, slightly harsh haze with no living glow, the white skeleton coldly bright.",
+  "palette": "Left uses ocean teal, cyan and a warm golden-amber tissue accent; right drains to pale stone-white and desaturated warm haze against indigo.",
+  "style": "Hand-painted speculative-biology comparison plate, textured and observed, halves clearly contrasted without a hard graphic border.",
+  "detail_level": "High detail on both coral states and the transition seam; surrounding water kept plain and hazy for callouts on each side.",
+  "composition": "Healthy colony fills the left half with living colour, bleached colony fills the right half in ghostly white, open low-detail water flanking each for annotation.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "thermometer graphics", "flat infographic style", "photographic look", "gore"],
+  "consistency_notes": "Both halves are the SAME branching coral colony, one alive and colourful with visible golden cells, one white and translucent over bare skeleton. Show warmth as a subtle change in water tone, not a drawn thermometer or number.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no numbers, no labels, no arrows, no thermometer icon, no flat vector infographic, no photographic or CGI look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/the-reef-as-substrate/fig-02-sunlight-becomes-rock.png"]
+}

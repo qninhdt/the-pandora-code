@@ -1,0 +1,31 @@
+id: symbiosis
+label:
+  vi: Cộng sinh
+  en: Symbiosis
+definition:
+  vi: >-
+    Mối quan hệ sống chung mật thiết và lâu dài giữa hai loài khác nhau. Cộng sinh không hàm ý cả hai
+    cùng có lợi — nó là một dải liên tục: tương hỗ (cả hai cùng lợi), hội sinh (một bên lợi, bên kia
+    không hại không lợi), và ký sinh (một bên lợi trên tổn thất của bên kia). Cộng sinh có thể diễn ra
+    ngoài cơ thể (ngoại cộng sinh) hoặc bên trong tế bào vật chủ (nội cộng sinh). Ranh giới giữa các
+    dạng thường mờ và có thể trượt: một đối tác tương hỗ có thể hóa ký sinh khi điều kiện đổi thay.
+  en: >-
+    A close, long-term living-together of two different species. Symbiosis does not mean both
+    benefit — it is a spectrum: mutualism (both gain), commensalism (one gains, the other is
+    unaffected) and parasitism (one gains at the other's expense). It can happen outside the body
+    (ectosymbiosis) or inside the host's own cells (endosymbiosis). The boundaries between these
+    forms are often blurred and can slide: a mutualist can tip into a parasite when conditions
+    change.
+see_also:
+  - mutualism
+  - zooxanthellae
+  - coevolution
+  - biological-market
+category: bio
+tags:
+  - ecology
+  - evolution
+cover_prompt: >-
+  A painterly naturalist triptych suggesting a spectrum, two organisms exchanging glowing particles
+  in balance on one side, one sheltering beside another in the middle, and one drawing from another
+  on the far side, cool teal and amber accents on dark indigo, no text, no labels.

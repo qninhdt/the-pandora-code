@@ -1,0 +1,32 @@
+id: darwins-paradox
+label:
+  vi: Nghịch lý Darwin
+  en: Darwin's paradox
+definition:
+  vi: >-
+    Câu hỏi Charles Darwin đặt ra khi ngắm những rạn san hô: làm sao một hệ sinh thái đông đúc, phồn
+    thịnh bậc nhất lại mọc lên giữa vùng nước biển nhiệt đới trong veo và gần như cạn kiệt dưỡng chất
+    — nơi lẽ ra chẳng nuôi nổi mấy sự sống? Lời giải nằm ở sự giữ và tái chế: mối cộng sinh san hô–tảo
+    khóa chặt nitơ và phốt pho trong nội bộ trước khi chúng kịp thất thoát ra nước; bọt biển thu lại
+    lượng carbon hòa tan mà san hô thải ra và trả về chuỗi thức ăn; và bản thân khối đảo, rạn cản dòng
+    hải lưu tạo nên những vùng nước trồi cục bộ. Nước nghèo, nhưng rạn gần như không để rơi vãi thứ gì.
+  en: >-
+    The question Charles Darwin raised looking at coral reefs: how can one of the richest, most
+    crowded ecosystems on Earth flourish in clear tropical seawater almost devoid of nutrients —
+    water that should support very little life? The answer is retention and recycling: the
+    coral–algae symbiosis locks nitrogen and phosphorus internally before they can leak away;
+    sponges reclaim the dissolved carbon corals shed and return it to the food web; and the island
+    or reef mass itself obstructs currents to generate local upwelling. The water is poor, but the
+    reef lets almost nothing escape.
+see_also:
+  - zooxanthellae
+  - biogenic-reef
+  - symbiosis
+category: concept
+tags:
+  - oceanography
+  - ecology
+cover_prompt: >-
+  A painterly naturalist scene of a vivid crowded coral reef teeming with fish in the foreground
+  against vast empty clear-blue open ocean behind, the contrast between richness and barrenness
+  made visual, cool teal palette with faint cyan glow, painterly plate, no text, no labels.

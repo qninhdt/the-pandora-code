@@ -1,0 +1,19 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "the-reef-as-substrate",
+  "role": "hero",
+  "narrative_purpose": "A dim full-bleed ocean-reef mood layer evokes the vast living floor beneath the Metkayina world without competing with overlaid chapter text.",
+  "subject": "An immense reef atoll seen from very high and far: a faint arcing ring of stepped barrier enclosing a darker lagoon, the reef structure only barely legible as texture beneath still water. Sparse bioluminescent plankton and dissolving coral shelves fade into haze. No close subject and no bright focal point.",
+  "scene": "A Pandoran reef seascape at deep night from a great height, water and reef extending beyond sight in every direction.",
+  "camera": "Ultra-wide panoramic view from a very high, distant vantage, extreme scale and layered atmospheric depth.",
+  "light": "Very dim indigo ambience, faint living-teal traces along the reef rim and almost imperceptible cyan plankton, uniformly low contrast for readable overlaid text.",
+  "palette": "Nearly all void indigo and deep ocean teal, minimal muted cyan, no warm focal accents.",
+  "style": "Painterly atmospheric reef vista, hand-painted and immersive, designed as a background rather than a study plate.",
+  "detail_level": "Soft, dissolving reef texture and dim water; intentionally little local contrast or sharp detail.",
+  "composition": "The faint barrier ring sits low across the lower third, the upper two-thirds remain dark open water with even tone for text overlay.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "bright focal subject", "close subject", "boats", "humans", "RDA machinery", "Avatar branding"],
+  "consistency_notes": "Same reef-atoll world as the cover but rendered only as a distant, low-contrast vista. Preserve a dark, even reading surface above all else.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no labels, no bright focal subject, no lens flare, no photographic or CGI look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

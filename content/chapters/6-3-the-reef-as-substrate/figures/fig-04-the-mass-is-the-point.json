@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-the-mass-is-the-point",
+  "chapter_slug": "the-reef-as-substrate",
+  "role": "inline",
+  "narrative_purpose": "This figure makes the foundation-species idea concrete: the reef is not one clever stone but a vast accumulated mass of built structure that the entire surrounding community lives inside — remove it and there is no place left, not merely one missing link.",
+  "subject": "A grand cross-section of a reef mound rising from the seafloor: a thin living veneer of colourful corals and encrusting life on top, and beneath it layer upon layer of pale accreted limestone framework riddled with cavities and old cemented rubble, showing the structure is mostly accumulated dead skeleton built over ages. All through the cavities and along the surface, an entire community shelters — fish schools, crustacean-like animals, sessile filter-feeders, a sleek plesiosaur-like ilu nosing a crevice — every creature depending on the structure itself.",
+  "scene": "A towering biogenic reef bank in clear shallow-to-mid Pandoran water, the living rim bright and the deep interior dim.",
+  "camera": "Wide vertical cross-section view from the side, the whole reef mound in frame from living crest to buried base.",
+  "light": "Cool teal daylight on the living crest fading to deep indigo in the buried interior; cyan and living-teal glow marking the living veneer and sheltering fauna.",
+  "palette": "Ocean teal and void indigo dominant, cyan and living-teal on the living rim and creatures, pale stone-grey accreted framework, one small amber accent.",
+  "style": "Hand-painted speculative-biology cutaway plate, textured and observed.",
+  "detail_level": "High detail on the living veneer, the layered limestone framework and the sheltering community; the surrounding open water plain and hazy for callouts.",
+  "composition": "Reef mound centred and vertical, thin bright living top, massive pale accreted body below, community distributed through the cavities, open water flanking for annotation.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "flat infographic style", "photographic look", "modern objects"],
+  "consistency_notes": "Show clearly that the living layer is thin and the bulk is accumulated dead framework — the mass is the habitat. Same reef palette and creature look as the other figures. Keep dark open water beside the mound for labels.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no labels, no numbers, no arrows, no flat vector infographic, no photographic or CGI look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/the-reef-as-substrate/fig-01-a-village-on-a-living-thing.png"]
+}

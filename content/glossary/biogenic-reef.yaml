@@ -1,0 +1,33 @@
+id: biogenic-reef
+label:
+  vi: Rạn sinh vật tạo
+  en: Biogenic reef
+definition:
+  vi: >-
+    Một cấu trúc địa chất được dựng nên hoàn toàn bởi sinh vật sống, chứ không phải bởi kiến tạo hay
+    lắng đọng. San hô tạo rạn hút ion canxi và cacbonat từ nước biển để kết tủa nên khung xương đá vôi;
+    qua hàng thiên niên kỷ, mô sống, khung xương, chất kết dính sinh học và trầm tích gắn kết chồng
+    lên nhau thành một địa hình ba chiều chống chọi được sóng. Điều đặc biệt là ở đây môi trường sống
+    *chính là* cơ thể của một loài vật: cái nền mà mọi sinh vật khác bám vào, khoét vào, ẩn trong đó
+    lại là thứ do một loài vật khác nuôi tảo trong tế bào mình mà xây nên.
+  en: >-
+    A geological structure built entirely by living organisms rather than by tectonics or
+    sedimentation. Reef-building corals draw calcium and carbonate ions from seawater to precipitate
+    limestone skeletons; over millennia, living tissue, skeletal framework, biological cements and
+    bound sediment accumulate into a three-dimensional, wave-resistant landform. The remarkable part
+    is that the habitat *is* an animal's body: the ground that everything else settles on, bores
+    into and hides within is something another animal grew by farming algae inside its own cells.
+see_also:
+  - zooxanthellae
+  - autogenic-engineer
+  - foundation-species
+  - rugosity
+category: bio
+tags:
+  - oceanography
+  - ecology
+cover_prompt: >-
+  A painterly naturalist cross-section of a tropical reef, a living veneer of branching and massive
+  corals atop pale accreted limestone rock riddled with cavities, small fish sheltering in the
+  structure, cool teal water above and dark below, faint cyan glow along the living rim, no text,
+  no labels.

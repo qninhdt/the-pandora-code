@@ -20,8 +20,8 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/chapters-50-36c5d9?style=for-the-badge&labelColor=0e1320" />
-  <img src="https://img.shields.io/badge/glossary-250%2B_terms-2bd4a8?style=for-the-badge&labelColor=0e1320" />
+  <img src="https://img.shields.io/badge/chapters-65-36c5d9?style=for-the-badge&labelColor=0e1320" />
+  <img src="https://img.shields.io/badge/glossary-300%2B_terms-2bd4a8?style=for-the-badge&labelColor=0e1320" />
   <img src="https://img.shields.io/badge/languages-EN_%7C_VI-ff5da8?style=for-the-badge&labelColor=0e1320" />
   <img src="https://img.shields.io/badge/license-MIT-ffb454?style=for-the-badge&labelColor=0e1320" />
 </p>
@@ -44,125 +44,147 @@ Every chapter begins with something strange about the world of Pandora — float
 
 ## The Journey
 
-The Pandora Code unfolds across **nine great expeditions**, each peeling back a deeper layer of the moon-world:
+The Pandora Code unfolds across **ten great expeditions** and a prologue, exploring the full depth of James Cameron's universe including *Avatar: Fire and Ash*:
 
 ### Prologue
 
-| # | Chapter | |
-|:-:|:--------|:-|
-| 0.1 | **Reading Pandora as a specimen** | *Read Pandora as a specimen, not a plot → the Canon / Inference / Speculation / Real-science tier system* |
+| # | Chapter | Real-Science Meal |
+|:-:|:--------|:------------------|
+| 0.1 | **Reading Pandora as a specimen** | *Falsifiability, order-of-magnitude estimates, Bayesian updating & 5-tier evidence hierarchy* |
 
 ### Part I · The World
 
-> *Where is Pandora, and what kind of place is it?* — Astronomy, geology, atmospheric science
+> *Where is Pandora, and what kind of place is it?* — Astronomy, orbital mechanics, atmospheric chemistry, volcanism
 
-| # | Chapter | |
-|:-:|:--------|:-|
-| 1.1 | **Where is Pandora** | Alpha Centauri A, Polyphemus, habitable zones, exoplanet detection |
-| 1.2 | **Time on Pandora** | Tidal locking, libration, orbital mechanics |
-| 1.3 | **What's in the air** | Atmospheric chemistry, biosignatures, O₂/CH₄ disequilibrium |
-| 1.4 | **Floating mountains and the superconductor** | Cooper pairs, Meissner effect, flux pinning |
-| 1.5 | **Continents, oceans, climate** | Comparative climatology, Hadley cells, biomes |
-| 1.6 | **Pandora's deep time** | Geochronology, radiometric dating, planetary evolution |
+| # | Chapter | Real-Science Meal |
+|:-:|:--------|:------------------|
+| 1.1 | **Where is Pandora?** | Binary-star habitable zones, exomoon dynamical stability, detection methods |
+| 1.2 | **Time on Pandora** | Synchronous rotation, tidal locking, libration, eclipse seasons |
+| 1.3 | **What’s really in the air?** | Hypoxia vs hypercapnia, gas partial pressures, biosignature spectroscopy |
+| 1.4 | **Floating mountains, unobtanium and the Flux Devil** | Cooper pairs, Meissner effect, flux pinning, diamagnetic levitation |
+| 1.5 | **Continents, oceans and climate** | Planetary climate modeling, Hadley cells, prevailing wind corridors |
+| 1.6 | **Pandora’s deep time** | Radiometric dating, stratigraphy, impact cratering, molecular clocks |
+| 1.7 | **What keeps Pandora volcanically alive?** | Tidal dissipation heating, radiogenic energy, Io planetary analogue |
 
 ### Part II · The Living World
 
-> *Why does everything here have six limbs and glow?* — Evolutionary biology, biomechanics, biochemistry
+> *Why does everything here have six limbs and glow?* — Evolutionary biology, biomechanics, sensory ecology
 
-| # | Chapter | |
-|:-:|:--------|:-|
-| 2.1 | **Six limbs and the bilateral lattice** | Body-plan evolution, Hox genes |
-| 2.2 | **Convergent but not quite** | Convergent evolution, niche partitioning |
-| 2.3 | **The breathing fans** | Comparative respiratory biology |
-| 2.4 | **When glow is the norm** | Bioluminescence chemistry, why glow evolves |
-| 2.5 | **Pandoran tree of life** | Phylogenetics, cladograms, parsimony |
-| 2.6 | **Direhorse and banshee up close** | Allometric scaling, biomechanics |
-| 2.7 | **The hunters and the hunted** | Predator-prey dynamics, Lotka-Volterra |
-| 2.8 | **What is Pandoran life made of** | Astrobiology, alternative biochemistries |
-| 2.9 | **The Pandoran umwelt** | Sensory ecology, the Umwelt concept |
+| # | Chapter | Real-Science Meal |
+|:-:|:--------|:------------------|
+| 2.1 | **Six limbs and the bilateral lattice** | Hox gene clusters, Bilaterian body plans, developmental constraints |
+| 2.2 | **Convergent, but not quite** | Homology vs analogy, convergent evolution, morphological constraints |
+| 2.3 | **The breathing fans** | Comparative respiratory physiology, countercurrent exchange, Fick's law |
+| 2.4 | **When glow is the norm** | Luciferin–luciferase biochemistry, selective pressures for visual signaling |
+| 2.5 | **Building the Pandoran tree of life** | Parsimony, synapomorphy, cladistics, Bayesian phylogenetics |
+| 2.6 | **Direhorse and banshee up close** | Allometric scaling, tendon elastic energy, muscle power density |
+| 2.7 | **Hunters and the hunted** | Extended Lotka–Volterra models, Holling functional responses, trophic cascades |
+| 2.8 | **What is Pandoran life made of?** | Carbon biochemistry, chirality, XNA xenobiology, cross-biosphere compatibility |
+| 2.9 | **The Pandoran Umwelt** | Magnetoreception, polarization vision, sensory ecology, Shannon information |
 
 ### Part III · The Living Network / Eywa
 
-> *What is Eywa, and could a living planet think?* — Network science, mycorrhizal biology, information theory
+> *What is Eywa, and could a living planet think?* — Network science, mycorrhizal biology, information theory, bioelectricity
 
-| # | Chapter | |
-|:-:|:--------|:-|
-| 3.1 | **What Eywa is** | Distributed cognition, the network/mind boundary |
-| 3.2 | **The wood-wide web** | Mycorrhizal networks (Simard, Kiers) |
-| 3.3 | **The bandwidth of a planet** | Information theory, Shannon limits |
-| 3.4 | **Why burning Eywa doesn't kill it** | Network resilience, percolation theory |
-| 3.5 | **A real living planet** | The Gaia hypothesis revisited |
+| # | Chapter | Real-Science Meal |
+|:-:|:--------|:------------------|
+| 3.1 | **What Eywa is** | Distributed cognition, swarm computation, cognitive benchmarks for superorganisms |
+| 3.2 | **The Wood-Wide Web revisited** | Common Mycorrhizal Networks (CMNs), empirical scrutiny, resource transfer |
+| 3.3 | **The bandwidth of a planet** | Shannon channel capacity, neural firing rates, memory indexing vs connectome uploads |
+| 3.4 | **Why burning Eywa doesn’t kill it** | Percolation theory, scale-free network topology, targeted hub attack resilience |
+| 3.5 | **Spider’s second biology** | Mycelial endosymbiosis, tissue respiration remodeling, developmental morphogenesis |
+| 3.6 | **Kiri and the writable biosphere** | Developmental bioelectricity, morphogenetic fields, ecosystem-scale actuation |
+| 3.7 | **Gaia after Eywa** | Weak vs strong Gaia hypotheses, ecological engineering, planetary homeostasis |
 
-### Part IV · Forests, Mountains & Skies
+### Part IV · Fire, Ash & Wind
 
-> *How do the impossible things work?* — Aerodynamics, scaling laws, forest ecology
+> *How does life persist in ashes and sail the upper sky?* — Disturbance ecology, buoyancy physics, atmospheric navigation
 
-| # | Chapter | |
-|:-:|:--------|:-|
-| 4.1 | **The forest as a cathedral** | Forest stratification, niche partitioning |
-| 4.2 | **Why banshees get to be big** | Flight biomechanics, Reynolds number, wing loading |
-| 4.3 | **The night ecology** | Circadian biology under non-Earth light |
-| 4.4 | **Hometree as keystone** | Keystone / foundation species |
-| 4.5 | **Pandora's smallest things** | Soil ecology, host-pathogen co-evolution, Red Queen |
+| # | Chapter | Real-Science Meal |
+|:-:|:--------|:------------------|
+| 4.1 | **Life after the volcano** | Ecological succession, biological legacies, Mount St. Helens recovery |
+| 4.2 | **Fire as ecology, weapon and technology** | Combustion thermodynamics, wildfire disturbance regimes, volcanic glass mechanics |
+| 4.3 | **The biological zeppelin** | Archimedes buoyancy, bio-hydrogen synthesis, biological ballast control |
+| 4.4 | **How the Wind Traders navigate a planet** | Atmospheric jet streams, planetary waves, 3D altitude-based weather routing |
+| 4.5 | **The aerial arms race** | Tandem-wing aerodynamics, wake-vortex interactions, dogfighting maneuverability |
 
-### Part V · Sea & Reefs
+### Part V · Forests, Mountains & Skies
 
-> *What lurks beneath the waves?* — Ocean science, cetacean cognition, reef ecology
+> *How do the impossible giants fly and shelter an entire world?* — Aerodynamics, canopy stratification, scaling laws
 
-| # | Chapter | |
-|:-:|:--------|:-|
-| 5.1 | **Pandora's ocean** | Ocean stratification, upwelling |
-| 5.2 | **Tulkun, not quite whales** | Cetacean cognition, cultural transmission |
-| 5.3 | **The reef as substrate** | Coral-reef ecology, symbiosis, zooxanthellae |
-| 5.4 | **Bodies built for water** | Aquatic adaptation, Bajau divers, recent human evolution |
-| 5.5 | **Amrita and the price of a hunt** | Bioprospecting, biopiracy, the Nagoya Protocol |
+| # | Chapter | Real-Science Meal |
+|:-:|:--------|:------------------|
+| 5.1 | **The forest as a cathedral** | Vertical canopy stratification, microclimate gradients, spatial niche partitioning |
+| 5.2 | **Why banshees get to be big** | Wing loading, Reynolds numbers, low gravity (0.8g), high atmospheric density |
+| 5.3 | **The night ecology** | Circadian entrainment, melatonin analogues, multi-zeitgeber synchronization |
+| 5.4 | **Hometree as keystone, foundation and cultural keystone** | Trophic keystone vs foundation species vs cultural keystone concepts |
+| 5.5 | **Pandora’s smallest things** | Soil food webs, microbial succession, Red Queen coevolution, holobiont paradigm |
 
-### Part VI · The Na'vi
+### Part VI · Sea & Reefs
 
-> *What does it mean to be ten feet tall, blue, and wired into a planet?* — Anatomy, linguistics, cultural ecology
+> *What lurks beneath the waves?* — Physical oceanography, cetacean cognition, biogenic infrastructure, deep-sea vents
 
-| # | Chapter | |
-|:-:|:--------|:-|
-| 6.1 | **The Na'vi body** | Allometric scaling, thermoregulation, square-cube law |
-| 6.2 | **The queue as interface** | Neural interfaces, BCI |
-| 6.3 | **Na'vi language as a window** | Linguistic relativity, typology |
-| 6.4 | **One people, many ecologies** | Cultural ecology, niche construction |
-| 6.5 | **What the elders know** | Traditional Ecological Knowledge (TEK) |
-| 6.6 | **I see you** | Embodied cognition, Gibson's affordances |
+| # | Chapter | Real-Science Meal |
+|:-:|:--------|:------------------|
+| 6.1 | **Pandora’s ocean** | Ocean stratification, thermoclines, upwelling, tidal mixing energy |
+| 6.2 | **Tulkun beyond whales** | Cetacean cognitive ethology, social learning, cultural transmission, coda dialects |
+| 6.3 | **The reef as substrate** | Coral–algal symbiosis, light-enhanced calcification, rugosity, carbonate budget |
+| 6.4 | **Bodies built for water** | Mammalian diving reflex, splenic contraction, human Bajau diver genomics |
+| 6.5 | **Squidray and the deep-ocean design space** | Siphon jet propulsion, cavitation limits, chemosynthetic hydrothermal food webs |
+| 6.6 | **Amrita, bioprospecting and industrial extraction** | Cellular senescence pharmacology, bioprospecting economics, Nagoya Protocol |
 
-### Part VII · The Human Machine / RDA Tech
+### Part VII · The Na'vi
 
-> *How do you cross four light-years and survive?* — Propulsion, cryogenics, mining, brain emulation
+> *What does it mean to be ten feet tall, blue, and wired into a planet?* — Biomechanics, linguistics, cultural ecology
 
-| # | Chapter | |
-|:-:|:--------|:-|
-| 7.1 | **Six years each way** | Interstellar propulsion, antimatter, 0.7c |
-| 7.2 | **Sleeping through the stars** | Induced torpor, therapeutic hypothermia |
-| 7.3 | **The avatar body** | BCI, telepresence, chimerism |
-| 7.4 | **What extraction costs** | Mining engineering, EROI |
-| 7.5 | **What the mask buys you** | Closed-loop ECLSS |
-| 7.6 | **Old minds in new bodies** | Brain emulation, continuity of identity |
+| # | Chapter | Real-Science Meal |
+|:-:|:--------|:------------------|
+| 7.1 | **The Na’vi body** | Square-cube law, skeletal stress mechanics, cardiovascular hydrostatics |
+| 7.2 | **The queue as neural interface** | Invasive BCIs, peripheral nerve interfaces, cross-species biocompatibility |
+| 7.3 | **Language as a window** | Linguistic typology, phonotactics, Sapir-Whorf linguistic relativity |
+| 7.4 | **One people, many ecologies** | Cultural ecology, niche construction, gene–culture coevolution |
+| 7.5 | **Trade as a cultural nervous system** | Social network theory, diffusion of innovations, cultural transmission topology |
+| 7.6 | **Disaster, trauma and cultural evolution** | Disaster anthropology, collective memory, crisis norm formation, costly signaling |
+| 7.7 | **The Three Laws and appropriate technology** | Appropriate technology, design constraints, EROI, sociotechnical systems |
+| 7.8 | **What the elders know** | Traditional Ecological Knowledge (TEK), field baselines, knowledge co-production |
+| 7.9 | **I See You** | Embodied cognition, Gibson's affordances, Theory of Mind, interoception |
 
-### Part VIII · Contact, Conflict, Ethics
+### Part VIII · The Human Machine & RDA Tech
 
-> *What happens when two worlds collide?* — Anthropology, ethics, postcolonial science
+> *How do you cross four light-years and industrialize an alien moon?* — Relativistic physics, cryogenics, BCI, planetary engineering
 
-| # | Chapter | |
-|:-:|:--------|:-|
-| 8.1 | **First contact as a pattern** | Anthropology of contact (Sentinelese, Yanomami) |
-| 8.2 | **Whose body, whose consent** | Research ethics, indigenous data sovereignty |
-| 8.3 | **No shared grammar** | The commensurability problem |
-| 8.4 | **Why the stronger side loses** | Asymmetric warfare, insurgency theory |
-| 8.5 | **Pandora as mirror** | Postcolonial science studies, transitional justice |
+| # | Chapter | Real-Science Meal |
+|:-:|:--------|:------------------|
+| 8.1 | **How long does it take to reach Pandora?** | Relativistic kinematics, antimatter energetics, 0.7c velocity profiles, source criticism |
+| 8.2 | **Sleeping through the stars** | Induced synthetic torpor, therapeutic hypothermia, metabolic suppression |
+| 8.3 | **The Avatar body** | Genetic chimerism, developmental histocompatibility, sensorimotor remapping |
+| 8.4 | **The true cost of extraction** | Energy Return on Investment (EROI), Life-Cycle Assessment (LCA), Jevons paradox |
+| 8.5 | **What the mask buys you** | Gas partial pressures, CO₂ scrubbers, closed-loop ECLSS life support |
+| 8.6 | **Old minds in new bodies** | Memory engrams, connectomics, Whole-Brain Emulation (WBE), personal identity |
+| 8.7 | **Reverse-engineering an alien biosphere** | Multi-omics pipelines, metabolomics, organoids, xenobiological biosafety |
+| 8.8 | **Colonizing by changing the colonist** | Macro-terraforming vs engineered symbiosis, bioethics, planetary protection |
 
-### Part IX · Open Questions
+### Part IX · Contact, Conflict & Ethics
 
-> *What don't we know yet?* — The edges of the map
+> *What happens when civilizations collide?* — Contact anthropology, bioethics, asymmetric warfare, political ecology
 
-| # | Chapter | |
-|:-:|:--------|:-|
-| 9.1 | **Pandora's open file** | The structure of an open scientific question |
-| 9.2 | **What Pandora helps us see** | Counterfactual reasoning, Drake equation, Fermi paradox |
+| # | Chapter | Real-Science Meal |
+|:-:|:--------|:------------------|
+| 9.1 | **First contact as a pattern** | Anthropology of contact, power asymmetry, extractive frontiers, demographic shocks |
+| 9.2 | **Whose body, whose consent?** | Belmont Report bioethics, HeLa cells precedent, Indigenous OCAP principles |
+| 9.3 | **No shared grammar** | Pragmatics, ontological incommensurability, signaling games, common ground |
+| 9.4 | **Why the stronger side loses** | Asymmetric warfare, insurgency dynamics, logistics bottlenecks, Lanchester laws |
+| 9.5 | **Technology transfer and the Mangkwan–RDA alliance** | Military technology diffusion, learning curves, supply-chain dependency traps |
+| 9.6 | **Pandora as mirror** | Postcolonial science studies, environmental justice, political ecology |
+
+### Part X · Open Questions
+
+> *What don't we know yet?* — Open scientific frontiers
+
+| # | Chapter | Real-Science Meal |
+|:-:|:--------|:------------------|
+| 10.1 | **Pandora’s open file** | Transforming canon plot holes into testable scientific hypotheses |
+| 10.2 | **What Pandora helps us see** | Drake equation, Fermi paradox, technosignatures, counterfactual reasoning |
 
 <p align="center">
   <img src="apps/web/public/images/pages/codex-field.png" alt="Woodsprites drifting through Pandora's bioluminescent forest — seeds of Eywa" width="720" />
@@ -172,9 +194,9 @@ The Pandora Code unfolds across **nine great expeditions**, each peeling back a 
 
 ## What You'll Find Inside
 
-- **50 chapters** of deep science dressed in alien wonder — from orbital mechanics to consciousness theory
+- **65 chapters** of deep science dressed in alien wonder — from orbital mechanics to consciousness theory
 - **Bilingual content** — every word in both English and Vietnamese
-- **250+ glossary terms** — an interactive codex of real science, cross-linked and searchable
+- **300+ glossary terms** — an interactive codex of real science, cross-linked and searchable
 - **Original painterly illustrations** — speculative-biology field plates, not screenshots
 - **3D concept constellation** — an interactive knowledge graph connecting ideas across chapters
 - **⌘K instant search** — find anything, diacritic-insensitive, lightning-fast

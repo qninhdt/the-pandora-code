@@ -1,0 +1,32 @@
+id: rugosity
+label:
+  vi: Độ gồ ghề (rugosity)
+  en: Rugosity
+definition:
+  vi: >-
+    Thước đo độ phức tạp ba chiều của một bề mặt, tính bằng tỉ số giữa quãng đường thật men theo mọi
+    khe, nhánh, hốc của bề mặt và khoảng cách thẳng nối hai đầu. Đáy cát phẳng có độ gồ ghề gần bằng 1;
+    một rạn san hô rậm rạp có thể đạt 2 đến 5. Con số ấy quan trọng vì cấu trúc sinh ra chỗ ở: mỗi khe
+    nứt, mỗi mái che, mỗi tán nhánh là một vi môi trường với ánh sáng, dòng chảy và chốn ẩn náu riêng.
+    Bề mặt càng gồ ghề càng nhét được nhiều ổ sinh thái, và đó là lý do một rạn san hô nuôi được lượng
+    loài khổng lồ trên một mẩu đáy biển tí hon.
+  en: >-
+    A measure of a surface's three-dimensional complexity: the ratio of the true distance traced
+    across every crevice, branch and hollow to the straight-line distance between the endpoints. A
+    flat sand bottom has a rugosity near 1; a dense coral reef can reach 2 to 5. The number matters
+    because structure creates habitat: every crevice, overhang and branching canopy is a
+    micro-environment with its own light, flow and refuge. The rougher the surface, the more
+    ecological niches it packs — which is why a reef can host an enormous number of species on a
+    tiny patch of seafloor.
+see_also:
+  - biogenic-reef
+  - niche-partitioning
+  - keystone-structure
+category: concept
+tags:
+  - ecology
+  - oceanography
+cover_prompt: >-
+  A painterly naturalist study of a branching coral surface seen close, its crevices and hollows
+  each sheltering a different small creature in its own pocket of light, cool teal water with faint
+  cyan glow in the deepest gaps, painterly plate, no text, no labels.

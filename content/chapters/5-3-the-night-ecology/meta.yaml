@@ -1,0 +1,170 @@
+slug: the-night-ecology
+part: forests-mountains-skies
+order: 3
+status: published
+title:
+  vi: Khi màn đêm không thật sự tối
+  en: The Night Ecology
+subtitle:
+  vi: >-
+    Khi ánh sáng tắt trên Pandora, khu rừng không ngủ — nó đổi ca. Câu hỏi không phải "loài nào hoạt
+    động về đêm?" mà là "ai đã bảo chúng biết bây giờ là mấy giờ?" — và câu trả lời là một chiếc
+    đồng hồ nằm sẵn bên trong từng tế bào, được lên dây bởi vòng quay của chính mặt trăng này.
+  en: >-
+    When the light goes out on Pandora, the forest does not sleep — it changes shift. The question
+    is not which animals are active at night, but who told them what time it is — and the answer is
+    a clock built into every cell, wound by the turning of this particular moon.
+hook:
+  vi: >-
+    Mỗi buổi chiều, bóng của Polyphemus trượt qua và cả thế giới chìm vào tối. Rồi mặt đất bừng
+    sáng, lũ thú ban ngày lặng lẽ tìm chỗ đậu, và một danh sách sinh vật hoàn toàn khác bắt đầu
+    chuyển động. Trông như một phản xạ trước việc đèn tắt. Nhưng sinh học thời gian có một câu hỏi
+    sắc hơn thế: liệu có sinh vật nào trên Pandora đang thực sự *đọc giờ*, hay tất cả chỉ là cái
+    giật mình trước bóng tối? Phân biệt được hai điều đó là một trong những mẹo hay nhất mà khoa học
+    từng nghĩ ra — và nó dẫn tới một sự thật lạnh người: một hành tinh có thể trao cho cơ thể ta một
+    ngày mà ta không có khả năng giữ nhịp.
+  en: >-
+    Every afternoon the shadow of Polyphemus slides across and the world goes dark. Then the ground
+    lights up, the day animals settle quietly onto their roosts, and an entirely different roster
+    begins to move. It looks like a reflex to the lights going out. But chronobiology has a sharper
+    question: is anything on Pandora actually reading a clock, or is all of this just a flinch at
+    the dark? Telling those two apart is one of the finest tricks science ever devised — and it
+    leads to a chilling fact: a planet can hand a body a day it has no physical capacity to keep.
+authors:
+  - bardabez
+reading_time_min: 29
+tags:
+  - circadian-rhythm
+  - chronobiology
+  - entrainment
+  - temporal-niche-partitioning
+  - light-pollution
+  - night-ecology
+classification:
+  canon_pct: 20
+  inference_pct: 16
+  speculation_pct: 9
+  real_science_pct: 55
+related_chapters:
+  - when-glow-is-the-norm
+  - the-pandoran-umwelt
+  - time-on-pandora
+  - the-forest-as-a-cathedral
+glossary_terms:
+  - circadian-rhythm
+  - free-running-period
+  - zeitgeber
+  - entrainment
+  - phase-response-curve
+  - range-of-entrainment
+  - masking
+  - suprachiasmatic-nucleus
+  - melatonin
+  - melanopsin
+  - temporal-niche-partitioning
+  - nocturnal-bottleneck
+  - circalunar-clock
+  - artificial-light-at-night
+  - forced-desynchrony
+  - bioluminescence
+  - tapetum-lucidum
+  - cryptochrome
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-eclipse-shift-change
+    role: hero
+    asset_status: ready
+  - id: fig-02-night-roster
+    role: diagram
+    asset_status: ready
+  - id: fig-03-light-budget
+    role: diagram
+    asset_status: ready
+  - id: fig-04-drifting-sleep
+    role: diagram
+    asset_status: ready
+  - id: fig-05-the-closed-cupboard
+    role: comparison
+    asset_status: ready
+  - id: fig-06-clockwork-in-a-cell
+    role: diagram
+    asset_status: ready
+  - id: fig-07-light-at-two-phases
+    role: comparison
+    asset_status: ready
+  - id: fig-08-the-retinas-second-wire
+    role: diagram
+    asset_status: ready
+  - id: fig-09-the-nocturnal-inheritance
+    role: comparison
+    asset_status: ready
+  - id: fig-10-living-on-mars-time
+    role: inline
+    asset_status: ready
+  - id: fig-99-background
+    role: inline
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Viperwolf - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Viperwolf
+  - kind: canon
+    label: Fan Lizard - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Fan_Lizard
+  - kind: canon
+    label: Pandoran Fauna - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Pandoran_Fauna
+  - kind: community
+    label: Reykunyu - Na'vi complete word list (trr, txon, trr-txon, txon'ong)
+    url: https://reykunyu.lu/all
+  - kind: community
+    label: Astrophysics of Pandora, the moon-world from Avatar - planetplanet
+    url: https://planetplanet.net/2022/12/14/pandora-the-moon-world-from-avatar-revisited/
+  - kind: science
+    label: >-
+      An Introduction to Chronobiology - The BioClock Studio (de Mairan, de Candolle, free-running
+      period)
+    url: https://bioclock.ucsd.edu/portfolio-item/an-introduction-to-chronobiology-part-i/
+  - kind: science
+    label: >-
+      The 50th anniversary of the Konopka and Benzer 1971 paper: Clock Mutants of Drosophila
+      melanogaster (PNAS, 2021)
+    url: https://www.pnas.org/doi/pdf/10.1073/pnas.2110171118
+  - kind: science
+    label: >-
+      Reconstitution of Circadian Oscillation of Cyanobacterial KaiC Phosphorylation in Vitro
+      (Nakajima & Kondo, Science, 2005)
+    url: >-
+      https://www.semanticscholar.org/paper/Reconstitution-of-Circadian-Oscillation-of-KaiC-in-Nakajima-Imai/67a0b846f759656e200d0470b82e2af25d3a392a
+  - kind: science
+    label: >-
+      Adaptations for life in the Arctic - melatonin rhythms in reindeer are not driven by a
+      circadian oscillator
+    url: >-
+      https://www.researchgate.net/publication/6035995_Adaptations_for_life_in_the_Arctic_Evidence_that_melatonin_rhythms_in_reindeer_are_not_driven_by_a_circadian_oscillator_but_remain_acutely_sensitive_to_environmental_photoperiod
+  - kind: science
+    label: >-
+      A Blind Circadian Clock in Cavefish Reveals that Opsins Mediate Peripheral Clock
+      Photoreception (PLOS Biology)
+    url: https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001142
+  - kind: science
+    label: >-
+      Mars 520-d mission simulation reveals protracted crew hypokinesis and alterations of sleep
+      duration and timing (PNAS, 2013)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3574912/
+  - kind: science
+    label: >-
+      Two light sensors decode moonlight versus sunlight to adjust a plastic circadian/circalunidian
+      clock to moon phase (PNAS, 2022)
+    url: https://www.pnas.org/doi/10.1073/pnas.2115725119
+  - kind: science
+    label: >-
+      Dark and Quiet Skies for Science and Society - Bio-Environment report (artificial light at
+      night)
+    url: https://www.astro.sunysb.edu/fwalter/IAU_DQS/Draft_Report_Bio-Environment.pdf
+  - kind: research-note
+    label: >-
+      The Chronobiology of Pandora - Biological Timekeeping, Non-Earth Light Regimes, and the
+      Nocturnal Biosphere (chapter research note)

@@ -1,0 +1,34 @@
+id: zooxanthellae
+label:
+  vi: Tảo cộng sinh (zooxanthellae)
+  en: Zooxanthellae
+definition:
+  vi: >-
+    Tên gọi chức năng cho những tảo đơn bào quang hợp sống bên trong tế bào của san hô và nhiều động
+    vật biển khác — chủ yếu là các tảo hai roi thuộc họ Symbiodiniaceae. Đây không phải một đơn vị
+    phân loại mà là một *vai trò*: con vật cho tảo một chỗ ở sáng sủa và được che chở cùng khí thải
+    giàu nitơ, phốt pho; đổi lại tảo chuyển tới 90–95% lượng carbon nó cố định được qua quang hợp cho
+    vật chủ dưới dạng đường và axit amin. Chính mối cộng sinh này nuôi sống rạn san hô giữa vùng nước
+    nhiệt đới nghèo dinh dưỡng — và cũng chính nó mong manh đến mức chỉ cần nước ấm lên vài độ là đứt gãy.
+  en: >-
+    A functional nickname for the single-celled photosynthetic algae that live inside the cells of
+    corals and many other marine animals — mostly dinoflagellates of the family Symbiodiniaceae. It
+    is not a taxonomic group but a *role*: the animal gives the algae a lit, sheltered home plus
+    nitrogen- and phosphorus-rich metabolic waste; in return the algae hand over as much as 90–95%
+    of the carbon they fix by photosynthesis, as sugars and amino acids. This partnership feeds the
+    coral reef in nutrient-poor tropical water — and is fragile enough that a few degrees of warming
+    can break it.
+see_also:
+  - symbiosis
+  - coral-bleaching
+  - biogenic-reef
+  - mutualism
+category: bio
+tags:
+  - oceanography
+  - physiology
+  - ecology
+cover_prompt: >-
+  A painterly microscopic view of a translucent coral tissue layer packed with round golden-brown
+  algal cells glowing softly, sunlight filtering through cool teal water above, an amber-cyan
+  palette on dark indigo, painterly naturalist plate, no text, no labels.

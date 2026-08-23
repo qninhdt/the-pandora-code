@@ -1,0 +1,34 @@
+id: coral-bleaching
+label:
+  vi: Tẩy trắng san hô
+  en: Coral bleaching
+definition:
+  vi: >-
+    Hiện tượng san hô mất đi lớp tảo cộng sinh sống trong mô của nó, để lộ bộ xương đá vôi trắng bên
+    dưới qua lớp thịt trong suốt. Không phải là chết — mà là đứt gãy quan hệ đối tác. Khi nước biển
+    ấm hơn mức bình thường chỉ một đến hai độ trong nhiều tuần, bộ máy quang hợp của tảo hư hại và
+    sinh ra các gốc oxy độc; san hô phản ứng bằng cách tống hoặc tiêu hóa chính đám tảo nuôi sống nó.
+    Mất nguồn dưỡng chất, con vật lâm vào cảnh đói. Nếu nước dịu lại kịp, tảo có thể trở về; nếu không,
+    cả quần thể chết. Đây là ví dụ rõ nhất cho thấy một mối cộng sinh mạnh mẽ cũng có thể mong manh
+    đến nhường nào.
+  en: >-
+    The loss of a coral's symbiotic algae from its tissues, exposing the white limestone skeleton
+    beneath the now-transparent flesh. It is not death but the breakdown of a partnership. When
+    seawater runs one or two degrees above the normal summer maximum for weeks, the algae's
+    photosynthetic machinery is damaged and leaks toxic reactive-oxygen species; the coral responds
+    by expelling or digesting the very algae that feed it. Cut off from that food, the animal
+    starves. If the water cools in time the algae can return; if not, the colony dies. It is the
+    clearest demonstration that even a powerful symbiosis can be fragile.
+see_also:
+  - zooxanthellae
+  - symbiosis
+  - biogenic-reef
+category: bio
+tags:
+  - oceanography
+  - physiology
+  - ecology
+cover_prompt: >-
+  A painterly naturalist view of a branching coral colony half vivid with living colour and half
+  ghostly white skeleton, warm hazy water above shading to dark, a stark amber-to-pale gradient
+  against teal, painterly plate, no text, no labels.

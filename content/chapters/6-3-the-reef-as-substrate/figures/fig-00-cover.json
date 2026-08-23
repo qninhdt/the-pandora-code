@@ -1,0 +1,19 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "the-reef-as-substrate",
+  "role": "hero",
+  "narrative_purpose": "The cover states the chapter's central image at a glance: an entire village standing on a living reef, the built world of the Na'vi resting on ground that other organisms grew.",
+  "subject": "A Metkayina reef settlement at dawn: a cluster of woven bulbous pod-dwellings suspended from the thick aerial stilt-roots of giant salt-tolerant mangrove-like trees, elevated wooden walkways linking them above a calm turquoise lagoon. In the mid-distance a low stepped terraced reef barrier, like the rimstone lips of a hot spring, rings the settlement and breaks a line of ocean swell into white foam. Beneath the clear shallow water, branching coral-like growths and encrusting life are faintly visible as the solid floor everything rests on. A few slender blue Na'vi figures move along the walkways and one rides a sleek plesiosaur-like ilu through the shallows.",
+  "scene": "A sheltered tropical Pandoran lagoon enclosed by a reef atoll, open ocean beyond the barrier fading into layered teal haze, early low sun.",
+  "camera": "Wide establishing three-quarter aerial view from a moderate height, taking in the village, the lagoon floor and the encircling barrier in one sweep.",
+  "light": "Cool dawn ambience with soft teal shafts through the water; faint cyan and living-teal bioluminescence along the submerged reef life; one restrained warm amber glow from within a dwelling.",
+  "palette": "Ocean teal and void indigo dominate, cyan living light along the reef, sparse ember-amber interior accent.",
+  "style": "Painterly speculative-biology naturalist establishing plate, observed rather than cinematic.",
+  "detail_level": "Crisp on the nearest pods, roots and reef-crest foam; lagoon floor and distant ocean dissolve into haze.",
+  "composition": "Village and its tree-roots anchor the foreground left, lagoon opens to centre, the stepped barrier arcs across the background with generous hazy negative space above.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "RDA machinery", "modern boats", "Earth architecture", "Avatar branding", "lens flare"],
+  "consistency_notes": "The dwellings are woven organic pods hung from living mangrove-like roots, not huts on poles. The reef barrier is stepped and terraced. Water is shallow and clear over a visibly living floor.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no poster typography, no photographic or 3D-render look, no modern buildings, no boats with engines, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

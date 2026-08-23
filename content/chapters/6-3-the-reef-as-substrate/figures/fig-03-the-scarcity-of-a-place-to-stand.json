@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-the-scarcity-of-a-place-to-stand",
+  "chapter_slug": "the-reef-as-substrate",
+  "role": "inline",
+  "narrative_purpose": "This figure makes the substrate idea visible: on shifting sand nothing can anchor, but the instant a hard reef surface exists it is crowded with settled life competing for grip — showing that structure, not food, is the scarce resource.",
+  "subject": "A single continuous seafloor scene split by terrain. On the left, a bare rippled sand bottom, almost empty, with one tiny dislodged organism tumbling loose in the current and nothing anchored. On the right, a hard pale reef-rock ledge densely encrusted with fixed life: anemone-like columns, small branching growths, tube-dwelling forms, encrusting pink and teal crusts, and tiny drifting larvae descending toward it to settle. The boundary between shifting sand and solid rock runs diagonally through the middle.",
+  "scene": "A shallow, sunlit Pandoran lagoon floor where mobile sand meets a solid biogenic rock ledge.",
+  "camera": "Low near-seafloor lateral view taking in the empty sand on one side and the crowded hard ledge on the other.",
+  "light": "Cool teal daylight from above; faint cyan and living-teal glow on the encrusting reef life; the bare sand dim and unlit.",
+  "palette": "Void indigo and ocean teal dominant, cyan and living-teal on the settled life, muted stone-grey sand, one small magenta larva accent.",
+  "style": "Hand-painted speculative-biology naturalist plate, textured and observed.",
+  "detail_level": "High detail on the crowded rock ledge and settling larvae; the sand side deliberately sparse and plain; open water above kept clear for callouts.",
+  "composition": "Empty sand fills the lower left, the life-covered rock ledge fills the right, larvae descend from open water above, with plain regions on each side for annotation.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "flat infographic style", "photographic look", "modern objects"],
+  "consistency_notes": "Same reef-life look and palette as the other figures. The contrast is bare mobile sand (nothing anchored) versus solid rock crowded with fixed organisms and arriving larvae. Keep dark open water above for labels.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no numbers, no arrows, no flat vector infographic, no photographic or CGI look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/the-reef-as-substrate/fig-01-a-village-on-a-living-thing.png"]
+}
