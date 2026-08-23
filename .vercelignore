@@ -1,9 +1,9 @@
 # Development, AI agent and research directories not needed in production build
-research/
-i18n/chapters/
-docs/
-.agent/
-scripts/
+/research/
+/i18n/chapters/
+/docs/
+/.agent/
+/scripts/
 
 # Figure + glossary images are optimized to .webp and referenced as such.
 # Keep the .png sources in the repo, but don't ship them to Vercel — they are
