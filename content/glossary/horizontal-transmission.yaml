@@ -1,0 +1,23 @@
+id: horizontal-transmission
+label:
+  vi: Truyền ngang
+  en: Horizontal transmission
+definition:
+  vi: 'Việc một vật chủ thu nhận cộng sinh của mình tươi mới từ môi trường, chứ không thừa hưởng từ cha
+    mẹ (truyền dọc). Mực đuôi cụt là ví dụ mẫu: mỗi con nở ra không mang vi khuẩn phát sáng nào và phải
+    lọc lấy đúng loài từ nước biển trong vài giờ đầu đời. Cách thu nhận này quan trọng vì nó cho phép
+    một cá thể — chứ không chỉ một dòng dõi — bỗng nhiên có được một đối tác và một năng lực mới.'
+  en: 'When a host acquires its symbiont fresh from the environment rather than inheriting it from a parent
+    (vertical transmission). The bobtail squid is the model case: each one hatches with no glowing bacteria
+    and must filter the right species out of seawater within its first hours. This mode matters because
+    it lets a single individual — not just a lineage — suddenly gain a partner and a new capability.'
+see_also:
+- endosymbiosis
+- symbiosis
+- bacteriocyte
+category: bio
+tags:
+- ecology
+- evolution
+cover_prompt: A painterly scene of a small marine animal drawing glowing particles inward from the surrounding
+  dark water into a nascent internal organ, cool cyan motes against deep indigo sea, no text, no labels.

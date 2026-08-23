@@ -1,0 +1,32 @@
+id: coral-holobiont
+label:
+  vi: Siêu sinh thể san hô (holobiont)
+  en: Coral holobiont
+definition:
+  vi: >-
+    Ý tưởng rằng một "con san hô" không phải một sinh vật mà là một tập hợp sống cùng nhau: con vật
+    thích ti chủ, đám tảo quang hợp trong tế bào nó (zooxanthellae), cùng cả một hệ vi khuẩn, nấm và
+    virus bám theo. Cả cụm này vận hành như một đơn vị sinh học duy nhất — trao đổi carbon, nitơ và
+    tín hiệu — và chính nhờ vậy san hô mới đủ năng lượng để tiết ra bộ xương đá vôi dựng nên rạn. Khi
+    một mắt xích trong siêu sinh thể đứt gãy, chẳng hạn tảo bị đẩy ra lúc nước ấm, cả cỗ máy xây rạn
+    khựng lại.
+  en: >-
+    The idea that a "coral" is not one organism but a living collective: the cnidarian animal host,
+    the photosynthetic algae inside its cells (zooxanthellae), and an entire associated community of
+    bacteria, fungi and viruses. The whole assembly runs as a single biological unit — trading
+    carbon, nitrogen and signals — and it is this partnership that gives the coral enough energy to
+    secrete the limestone skeleton that builds a reef. Break one link in the holobiont, such as
+    expelling the algae when the water warms, and the whole reef-building machine stalls.
+see_also:
+  - zooxanthellae
+  - symbiosis
+  - coral-bleaching
+  - biogenic-reef
+category: bio
+tags:
+  - ecology
+  - physiology
+cover_prompt: >-
+  A painterly cutaway of a single coral polyp, its translucent tissue glowing with golden symbiotic
+  algae and a faint haze of microbes around it, cool teal water and dark indigo background, subtle
+  cyan bioluminescent rim, painterly naturalist plate, no text, no labels.

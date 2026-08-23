@@ -1,0 +1,34 @@
+{
+  "id": "fig-01-two-breaths",
+  "chapter_slug": "spiders-second-biology",
+  "role": "comparison",
+  "narrative_purpose": "Establishes the before-and-after of Spider's transformation at a glance: the same human, once tethered to a breathing mask, now breathing the open air unaided.",
+  "subject": "A single human figure shown twice, side by side against the same Pandoran forest night: on the left, the figure wears a sealed breathing mask over nose and mouth, a faint tube and the reflective visor marking total dependence on filtered air, the skin ordinary; on the right, the same figure stands with no mask at all, head tilted back drawing an open breath, and beneath the skin of the throat and chest a soft cyan network of fine threads now glows, marking the living filter within.",
+  "scene": "A two-figure comparison of one person before and after, masked versus unmasked, in the same setting.",
+  "camera": "A flat frontal comparison view, both figures at equal size, a soft vertical seam of darkness dividing the two states.",
+  "light": "Cool bioluminescent ambient from the forest; the right figure carries an added inner cyan glow beneath the skin; the left figure lit only by cold external light on the mask visor.",
+  "palette": "Void-indigo base, Pandora cyan and living teal, the masked side cooler and dimmer, the unmasked side carrying the added inner glow; no warm accents.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence, luminous and atmospheric.",
+  "detail_level": "Crisp on the mask and visor at left and on the under-skin glow at right; the shared forest background kept dim and simple.",
+  "composition": "Two equal figures facing forward, a clear dark central seam; open dark margins above and below for annotation labels.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding",
+    "modern Earth objects"
+  ],
+  "consistency_notes": "Same person in both halves; the only differences are the mask and the inner glow. Cool palette, leave dark space for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": []
+}

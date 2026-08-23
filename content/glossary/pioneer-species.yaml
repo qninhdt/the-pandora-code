@@ -1,0 +1,31 @@
+id: pioneer-species
+label:
+  vi: Loài tiên phong
+  en: Pioneer species
+definition:
+  vi: >-
+    Những sinh vật đầu tiên cư trú được một bề mặt trơ trọi, khắc nghiệt mà phần lớn loài khác không
+    thể bám trụ. Chúng thường phát tán nhờ gió, chịu được stress, và — điều quan trọng nhất trên nền
+    núi lửa — nhiều loài cố định được nitơ. Trên đồng bọt đá của núi St. Helens, cây lupin đồng cỏ
+    (*Lupinus lepidus*) khởi động diễn thế nhờ vi khuẩn cố định đạm trong rễ, tạo ra những hòn đảo
+    đất màu mỡ cho các loài đến sau. Nhưng loài tiên phong không chỉ là ân nhân: thảm lupin dày còn
+    lấn át cây con lá kim — cùng một loài vừa dựng đất vừa cản rừng, tùy vào việc nó còn sống hay đã chết.
+  en: >-
+    The first organisms able to colonise a bare, hostile surface where most others cannot hold. They
+    are typically wind-dispersed, stress-tolerant and — most importantly on volcanic ground — often
+    nitrogen-fixers. On the Mount St. Helens pumice plain, the prairie lupine (*Lupinus lepidus*)
+    kick-started succession through nitrogen-fixing bacteria in its roots, building islands of fertile
+    soil for later colonists. But a pioneer is not only a benefactor: dense living lupine mats also
+    crowded out conifer seedlings — the same plant that builds the ground can, while alive, hold back
+    the forest.
+see_also:
+  - primary-succession
+  - nitrogen-fixation
+  - ecological-succession
+category: bio
+tags:
+  - ecology
+cover_prompt: >-
+  A painterly naturalist plate of a single low cushion of purple-flowered lupine growing on a vast
+  expanse of pale grey volcanic pumice, windblown dark grit caught around its base, faint cyan light,
+  deep indigo sky, no text, no labels, no numbers.

@@ -15,6 +15,7 @@ import { generateImage } from "./lib/openai-image-client";
 import { composePrompt, loadStyleBible } from "./lib/style-bible-loader";
 
 interface Args {
+  all?: boolean;
   chapter?: string;
   figure?: string;
   force: boolean;
@@ -27,6 +28,7 @@ interface GeneratedFigure {
 }
 
 interface GenerationTask {
+  key: string;
   filePath: string;
   figure: FigurePrompt;
   dependencies: string[];
@@ -41,6 +43,7 @@ function parseArgs(argv: string[]): Args {
     if (a === "--chapter") args.chapter = argv[++i];
     else if (a === "--figure") args.figure = argv[++i];
     else if (a === "--force") args.force = true;
+    else if (a === "--all") args.all = true;
     else if (a === "--concurrency") args.concurrency = parseConcurrency(argv[++i]);
   }
   return args;
@@ -137,6 +140,26 @@ function findFigureFile(figureId: string): string {
   fail(`Figure JSON for "${figureId}" not found under any chapter's figures/.`);
 }
 
+function listAllFigureFiles(): string[] {
+  const chaptersRoot = path.join(process.cwd(), "content", "chapters");
+  if (!existsSync(chaptersRoot)) fail("No content/chapters directory found.");
+  const files: string[] = [];
+  const entries = readdirSync(chaptersRoot, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+  for (const entry of entries) {
+    const figDir = path.join(chaptersRoot, entry.name, "figures");
+    if (!existsSync(figDir)) continue;
+    const jsonFiles = readdirSync(figDir)
+      .filter((f) => f.endsWith(".json"))
+      .sort()
+      .map((f) => path.join(figDir, f));
+    files.push(...jsonFiles);
+  }
+  return files;
+}
+
 async function generateMany(
   filePaths: string[],
   force: boolean,
@@ -150,9 +173,9 @@ async function generateMany(
         (task) =>
           !force && existsSync(figureImagePath(task.figure.chapter_slug, task.figure.id)),
       )
-      .map((task) => task.figure.id),
+      .map((task) => task.key),
   );
-  const remaining = new Map(tasks.map((task) => [task.figure.id, task]));
+  const remaining = new Map(tasks.map((task) => [task.key, task]));
 
   while (remaining.size > 0) {
     const runnable = [...remaining.values()].filter((task) =>
@@ -161,15 +184,15 @@ async function generateMany(
 
     if (runnable.length === 0) {
       const blocked = [...remaining.values()]
-        .map((task) => `${task.figure.id} waits for ${task.dependencies.join(", ")}`)
+        .map((task) => `${task.key} waits for ${task.dependencies.join(", ")}`)
         .join("\n  - ");
       fail(`No runnable figures; check reference dependencies:\n  - ${blocked}`);
     }
 
     const generated = await runTaskBatch(runnable, force, concurrency);
     for (const task of runnable) {
-      remaining.delete(task.figure.id);
-      completed.add(task.figure.id);
+      remaining.delete(task.key);
+      completed.add(task.key);
     }
     results.push(...generated);
   }
@@ -182,22 +205,26 @@ function buildGenerationTasks(filePaths: string[], force: boolean): GenerationTa
     filePath,
     figure: loadFigure(filePath),
   }));
-  const figureIdByOutputPath = new Map(
+  const taskKeyByOutputPath = new Map(
     figuresByPath.map(({ figure }) => [
       figureImagePath(figure.chapter_slug, figure.id),
-      figure.id,
+      `${figure.chapter_slug}/${figure.id}`,
     ]),
   );
 
   return figuresByPath.map(({ filePath, figure }) => {
+    const taskKey = `${figure.chapter_slug}/${figure.id}`;
     const dependencies = [...figure.style_refs, ...figure.character_refs]
       .map(resolveReferencePath)
-      .map((refPath) => figureIdByOutputPath.get(refPath))
-      .filter((id): id is string => Boolean(id))
-      .filter((id) => id !== figure.id)
-      .filter((id) => force || !existsSync(figureImagePath(figure.chapter_slug, id)));
+      .map((refPath) => taskKeyByOutputPath.get(refPath))
+      .filter((depKey): depKey is string => Boolean(depKey))
+      .filter((depKey) => depKey !== taskKey)
+      .filter((depKey) => {
+        const [depSlug, depId] = depKey.split("/");
+        return force || !existsSync(figureImagePath(depSlug, depId));
+      });
 
-    return { filePath, figure, dependencies };
+    return { key: taskKey, filePath, figure, dependencies };
   });
 }
 
@@ -239,46 +266,55 @@ async function runTaskBatch(
 async function main(): Promise<void> {
   const args = parseArgs(process.argv.slice(2));
 
-  if (!args.chapter && !args.figure) {
-    fail(
-      "Usage: gen-images --chapter <slug> | --figure <fig-NN-...> " +
-        "[--force] [--concurrency <n>]",
-    );
-  }
-
   // Surface a missing key early with a clear message (not a stack trace).
   if (!process.env.OPENAI_API_KEY || process.env.OPENAI_API_KEY.trim() === "") {
     fail("OPENAI_API_KEY is not set. Copy .env.example to .env and add your key.");
   }
 
   if (args.figure) {
-    const generated = await generateOne(findFigureFile(args.figure), args.force);
+    const filePath = args.chapter
+      ? path.join(chapterFiguresDir(args.chapter), `${args.figure}.json`)
+      : findFigureFile(args.figure);
+    const generated = await generateOne(filePath, args.force);
     if (generated) markAssetReady(generated.slug, generated.figureId);
     console.log("[gen-images] done.");
     return;
   }
 
-  const figuresDir = chapterFiguresDir(args.chapter as string);
-  if (!existsSync(figuresDir)) {
-    fail(`No figures directory for chapter "${args.chapter}" at ${figuresDir}`);
-  }
-  const files = readdirSync(figuresDir)
-    .filter((f) => f.endsWith(".json"))
-    .sort();
-  if (files.length === 0) fail(`No figure JSON files in ${figuresDir}`);
+  let filePaths: string[] = [];
 
-  console.log(
-    `[gen-images] processing ${files.length} figure(s) with concurrency ${args.concurrency}...`,
-  );
+  if (args.chapter) {
+    const figuresDir = chapterFiguresDir(args.chapter);
+    if (!existsSync(figuresDir)) {
+      fail(`No figures directory for chapter "${args.chapter}" at ${figuresDir}`);
+    }
+    const files = readdirSync(figuresDir)
+      .filter((f) => f.endsWith(".json"))
+      .sort();
+    if (files.length === 0) fail(`No figure JSON files in ${figuresDir}`);
+    filePaths = files.map((file) => path.join(figuresDir, file));
+    console.log(
+      `[gen-images] processing chapter "${args.chapter}" (${filePaths.length} figure(s)) with concurrency ${args.concurrency}...`,
+    );
+  } else {
+    filePaths = listAllFigureFiles();
+    if (filePaths.length === 0) {
+      fail("No figure JSON files found under content/chapters/*/figures");
+    }
+    console.log(
+      `[gen-images] processing all chapters (${filePaths.length} figure(s)) with concurrency ${args.concurrency}...`,
+    );
+  }
+
   const generatedFigures = await generateMany(
-    files.map((file) => path.join(figuresDir, file)),
+    filePaths,
     args.force,
     args.concurrency,
   );
   for (const generated of generatedFigures) {
     markAssetReady(generated.slug, generated.figureId);
   }
-  console.log(`[gen-images] done. ${files.length} figure(s) processed.`);
+  console.log(`[gen-images] done. ${filePaths.length} figure(s) processed.`);
 }
 
 main().catch((err) => {

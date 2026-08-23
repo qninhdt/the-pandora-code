@@ -1,0 +1,31 @@
+id: pedogenesis
+label:
+  vi: Sự hình thành đất
+  en: Pedogenesis
+definition:
+  vi: >-
+    Quá trình tạo đất từ đá trơ, qua phong hóa vật lý và hóa học cùng sự tích lũy chất hữu cơ — bước
+    chậm nhất và quyết định nhất của diễn thế nguyên sinh. Trên nền núi lửa, quá trình này có một
+    nghịch lý dài hạn: chính thứ đá đang bỏ đói vùng đất, qua hàng thế kỷ phong hóa trong khí hậu ẩm,
+    lại biến thành Andisol — một trong những loại đất màu mỡ nhất trên Trái Đất. Vấn đề thuần túy nằm
+    ở nhịp độ: sự hủy diệt mất một buổi chiều, còn sự màu mỡ mất hàng thế kỷ tới thiên niên kỷ. Một
+    đời người rơi trọn vào khoảng trống giữa hai mốc ấy.
+  en: >-
+    The formation of soil from bare rock, through physical and chemical weathering together with the
+    accumulation of organic matter — the slowest and most decisive step of primary succession. On
+    volcanic ground it carries a long-run paradox: the very rock now starving the land, weathered over
+    centuries in a wet climate, becomes an Andisol — among the most fertile soils on Earth. The problem
+    is purely one of tempo: destruction takes an afternoon, fertility takes centuries to millennia. A
+    lifetime falls entirely inside the gap between them.
+see_also:
+  - primary-succession
+  - biological-legacy
+  - ecological-succession
+category: concept
+tags:
+  - geology
+  - ecology
+cover_prompt: >-
+  A painterly naturalist vertical cutaway of ground transforming left to right from raw grey volcanic
+  glass to a dark rich soil profile threaded with roots, faint cyan life increasing across it, deep
+  indigo background, no text, no labels, no numbers.

@@ -1,0 +1,34 @@
+{
+  "id": "fig-04-builders-and-breakers",
+  "chapter_slug": "the-reef-as-substrate",
+  "role": "diagram",
+  "narrative_purpose": "Makes the carbonate budget concrete: on one reef, some organisms add limestone while others remove it, and the balance decides the reef's fate.",
+  "subject": "A single continuous reef scene divided by activity rather than by a border. On the left, healthy branching and massive coral-analogue colonies and a spreading crust of pink encrusting coralline algae are visibly laying down bright pale limestone. On the right, a large parrotfish-analogue with a beaked jaw scrapes a bite from the reef surface leaving a fresh white scar, and a cutaway of the same rock shows dark tunnels and cavities bored through it by sponges and worms hollowing it from within.",
+  "scene": "One reef flat in clear shallow water, builders concentrated left, eroders right, drifting rubble in between.",
+  "camera": "Wide straight-on plate at reef scale, both processes at equal visual weight.",
+  "light": "Cyan glow on the living building corals and coralline crust, cooler neutral light on the scraped and bored right side, indigo in the borings.",
+  "palette": "Ocean teal and cyan on the builder side, muted stone-grey and magenta accents on the eroder side, void indigo cavities.",
+  "style": "Painterly naturalist comparison plate, organic, not an infographic.",
+  "detail_level": "Crisp on the fresh limestone, the parrotfish bite scar and the sponge borings; open water above for callouts.",
+  "composition": "Left-to-right builder-vs-eroder layout with open low-detail water bands above each side for overlay labels.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "plus and minus signs",
+    "balance-scale icon",
+    "callout lines",
+    "panel borders"
+  ],
+  "consistency_notes": "Both sides are the SAME reef, same palette. The parrotfish-analogue is a reef fish, not an Earth species portrait. Coralline algae read as pink encrusting crust.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no plus/minus symbols, no scale icon, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

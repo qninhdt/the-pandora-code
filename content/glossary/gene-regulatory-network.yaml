@@ -1,0 +1,29 @@
+id: gene-regulatory-network
+label:
+  vi: Mạng điều hòa gene
+  en: Gene regulatory network
+definition:
+  vi: >-
+    Mạng lưới các gene bật/tắt lẫn nhau qua các protein điều hòa (yếu tố phiên mã), quyết định tế
+    bào nào biểu hiện gene nào, khi nào và ở đâu. Các gene chọn lọc bảo tồn cao như cụm Hox nằm ở
+    những nút điều khiển của mạng này, xác định danh tính giải phẫu dọc trục trước–sau. Chính vì cả
+    một cơ quan là một chương trình mạng như vậy, một tín hiệu bậc cao đơn giản có thể "gọi" trọn cả
+    chương trình — dựng nên một con mắt hoàn chỉnh — thay vì phải chỉ dẫn từng tế bào một.
+  en: >-
+    A network of genes that switch each other on and off through regulatory proteins (transcription
+    factors), deciding which cell expresses which gene, when, and where. Highly conserved selector
+    genes like the Hox cluster sit at the control nodes of this network, fixing anatomical identity
+    along the head-to-tail axis. Because a whole organ is a network program like this, a single
+    high-level signal can "call" the entire program — building a complete eye — instead of
+    instructing every cell one at a time.
+see_also:
+  - morphogen
+  - target-morphology
+category: bio
+tags:
+  - developmental-biology
+  - evolution
+cover_prompt: >-
+  A painted network of glowing nodes wired with activating and repressing links, a few large
+  selector nodes controlling downstream clusters, cool cyan and faint magenta on deep indigo,
+  schematic and luminous, no text, no labels, no numbers.

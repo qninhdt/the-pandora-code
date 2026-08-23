@@ -72,9 +72,11 @@ than range - a paragraph should sound like Bardabez on every chapter. See
    pass (`pandora-translate`). Length is a target, not a quota - don't pad.
 4. **All code / component / schema names in English.** Reader prose is the only
    localized layer.
-5. **Components are a palette, not a checklist.** Use only what the chapter needs
-   from the current library; build bespoke when needed; never force-fit. See the
-   orchestrator's `references/component-palette.md`.
+5. **At least 3 new bespoke components per chapter; reuse old only if truly necessary.**
+   Author, implement, and register at least 3 brand-new custom interactive components
+   tailored to the chapter's scientific phenomena and narrative beats. Only reuse
+   existing components if strictly and truly necessary. See the orchestrator's
+   `references/component-palette.md`.
 6. **AI-image figures are `<DiagramFigure>`, not `<Figure>`.** Any figure backed
    by a generated PNG (`fig-NN-*`) MUST be authored as `<DiagramFigure>` so it can
    carry callout labels and the global annotation toggle. Author it with
@@ -88,7 +90,9 @@ than range - a paragraph should sound like Bardabez on every chapter. See
 
 ## Output
 
-- `content/chapters/{slug}/en.mdx` - the chapter body (MDX, uses registered
+- At least 3 new bespoke components implemented under `apps/web/components/content/`
+  (or `components/three/`) and registered in `apps/web/lib/mdx-components.ts`.
+- `content/chapters/{slug}/en.mdx` - the chapter body (MDX, uses the new and registered
   components from `apps/web/lib/mdx-components.ts`).
 - `content/chapters/{slug}/meta.yaml` if absent - valid against `ChapterMeta`
   (`apps/web/lib/content/schemas/chapter-meta.ts`): `slug, part, order, status,

@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-morphogen-french-flag",
+  "chapter_slug": "kiri-and-the-writable-biosphere",
+  "role": "diagram",
+  "narrative_purpose": "Illustrates Wolpert's positional-information / French-flag model: one fading morphogen gradient plus two thresholds sorts a row of identical cells into three tissue fates — how a body knows its shape with no central blueprint.",
+  "subject": "A schematic in two stacked bands. TOP BAND: a glowing source blob at the far left leaking a substance that fades across the frame to the right, drawn as a smooth descending curve of light; two faint horizontal dashed threshold-lines cross the curve at a high and a low level. BOTTOM BAND: a single horizontal row of identical round cells beneath the curve, sorted into three crisp adjacent color-zones — bright cyan on the left (where the curve is above the high threshold), teal in the middle (between the thresholds), and deep magenta on the right (below the low threshold) — like a three-striped flag laid out under the fading gradient.",
+  "scene": "A morphogen gradient above a row of cells that have committed to three fates by reading their local concentration.",
+  "camera": "A flat schematic diagram, gradient curve above, cell row below, aligned vertically.",
+  "light": "Bioluminescent key: the source and gradient glow, the three cell-zones glow in their distinct hues; dark ground behind.",
+  "palette": "Void-indigo base, Pandora cyan for the high-concentration zone and gradient, teal for the middle zone, magenta for the low zone.",
+  "style": "Painterly speculative-biology naturalist plate as a luminous schematic, hand-painted texture, not vector-flat.",
+  "detail_level": "Crisp on the fading curve, the two threshold levels, and the three sharp cell-zones so the 'gradient plus thresholds equals pattern' idea reads instantly; plain dark margins for callouts.",
+  "composition": "Gradient curve spanning the top, the three-zone cell row spanning the bottom directly below it, threshold lines linking the two, dark margins for labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "annotation arrows", "Avatar branding"],
+  "consistency_notes": "The relationship that must read: where the curve crosses each threshold is where the cell-zone color changes. Three clean zones like a flag. Cool-to-warm cyan/teal/magenta by concentration. Leave dark margins for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

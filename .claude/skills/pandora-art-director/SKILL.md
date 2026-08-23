@@ -1,6 +1,6 @@
 ---
 name: pandora-art-director
-description: Owns figure art direction for The Pandora Code - applies the one global STYLE BIBLE, authors figure-prompt JSON per chapter (7-10 inline figures, seven-inline floor), and invokes gen-images.ts. Routed to by /pandora - not loaded directly.
+description: Owns figure art direction for The Pandora Code - applies the one global STYLE BIBLE, authors figure-prompt JSON per chapter (content-driven count, density scales), and invokes gen-images.ts. Routed to by /pandora - not loaded directly.
 triggers:
   - figure prompt
   - image prompt
@@ -27,17 +27,13 @@ so figure JSON describes the **subject and scene**, not the global style. Don't
 re-specify the palette/medium in every figure; lean on the bible. See
 `references/style-bible-usage.md`.
 
-## Figure count: seven-inline floor, content-driven above it
+## Figure count is content-driven
 
-A standard 5–7k-word chapter ships **7–10 inline figures** (plus `fig-00-cover`;
-`fig-99-background` is optional and does not count). **Seven inline is the default
-minimum.** Above the floor, density scales with the chapter - a dense systems
-chapter earns the full range or more. Illustrate where a visual teaches faster
+No fixed minimum. Density scales with the chapter - a dense systems chapter earns
+many figures; a short one earns fewer. Illustrate where a visual teaches faster
 than prose: the cold-open anchor, each mechanism the reader must _see_,
 comparisons, diagrams. Never add a figure that teaches nothing (decoration is an
-anti-pattern). Drop below seven only for a materially shorter chapter or when
-another visual already teaches the beat, and record the reason in the chapter
-plan. See `references/figure-planning.md`.
+anti-pattern). See `references/figure-planning.md`.
 
 ## Every chapter has a cover figure (`fig-00-cover`)
 

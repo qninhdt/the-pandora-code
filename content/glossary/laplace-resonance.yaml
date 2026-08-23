@@ -1,0 +1,17 @@
+id: laplace-resonance
+label:
+  vi: Cộng hưởng Laplace
+  en: Laplace resonance
+definition:
+  vi: Một dạng cộng hưởng quỹ đạo ba thiên thể đặc biệt, được đặt tên theo ba mặt trăng trong của Sao Mộc là Io, Europa và Ganymede, khóa nhịp theo tỉ lệ 4:2:1 - Io quay bốn vòng, Europa hai và Ganymede một. Các cú kéo lặp lại đều đặn giữ cho quỹ đạo của chúng hơi lệch tâm, và chính điều đó duy trì hoạt động núi lửa dữ dội của Io. Pandora gần như chắc chắn cần một dàn xếp tương tự với các mặt trăng anh em của Polyphemus.
+  en: A special three-body orbital resonance, named for Jupiter's inner moons Io, Europa, and Ganymede, locked in a 4:2:1 rhythm - Io laps four times for Europa's two and Ganymede's one. The steadily repeating tugs keep their orbits slightly eccentric, and that is what sustains Io's ferocious volcanism. Pandora almost certainly needs a similar arrangement with sibling moons of Polyphemus.
+see_also:
+  - mean-motion-resonance
+  - orbital-resonance
+  - tidal-heating
+category: planet
+tags:
+- orbital-mechanics
+- planetary-science
+- astronomy
+cover_prompt: A painted view of three moons of decreasing size on nested orbital rings around a large banded gas giant, lined up in a row on one side with faint glowing connection lines, one moon's interior faintly molten-orange, cool indigo palette, painterly astronomical plate, no text or numbers.

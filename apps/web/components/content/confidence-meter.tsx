@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 
 interface ConfidenceMeterProps {
-  classification: ClassificationPct;
+  classification?: ClassificationPct;
   className?: string;
 }
 
@@ -16,9 +16,16 @@ const tiers = [
   { pctKey: "real_science_pct", name: "real_science", tone: "--real-science" },
 ] as const;
 
+const defaultClassification: ClassificationPct = {
+  canon_pct: 0,
+  inference_pct: 0,
+  speculation_pct: 0,
+  real_science_pct: 0,
+};
+
 // A single stacked bar showing how a chapter splits across the four epistemic
 // tiers, each segment glowing in its tier hue with a legend beneath.
-export function ConfidenceMeter({ classification, className }: ConfidenceMeterProps) {
+export function ConfidenceMeter({ classification = defaultClassification, className }: ConfidenceMeterProps) {
   const t = useTranslations("classification");
   const aria = useTranslations("viz.confidenceMeter");
   return (

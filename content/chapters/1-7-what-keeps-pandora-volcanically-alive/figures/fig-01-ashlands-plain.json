@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-ashlands-plain",
+  "chapter_slug": "what-keeps-pandora-volcanically-alive",
+  "role": "inline",
+  "narrative_purpose": "The cold-open image: the desolate Ashlands where a forest and a Hometree once stood, grounding the human stakes of the chapter's physics in the Mangkwan catastrophe.",
+  "subject": "A wide desolate plain of black basalt and grey volcanic ash under a smoke-dimmed sky. In the middle distance stands the broken, blackened stump of a colossal fallen tree, its splintered crown collapsed. A few small Na'vi figures pick their way across the wasteland, tiny against the scale. On the far horizon a dull red glow marks distant volcanic vents; thin smoke drifts sideways.",
+  "scene": "A ruined post-eruption landscape at grim overcast twilight, ash underfoot stretching to a low horizon, everything muted and grey-black except distant vent glow.",
+  "camera": "Wide establishing shot low to the ash, the fallen Hometree stump as the focal landmark, tiny figures for scale.",
+  "light": "Flat, smoke-dimmed daylight with almost no warmth; a scarce dull ember-red glow on the far horizon vents; cool grey-indigo overall.",
+  "palette": "Dominant charcoal-black basalt and grey ash, cool indigo smoke sky, a single scarce dull ember-red horizon accent.",
+  "style": "Painterly naturalist plate, textured ash and rock, bleak and atmospheric.",
+  "detail_level": "Crisp on the ash textures and fallen stump near the viewer; the horizon and vents dissolving into smoke haze.",
+  "composition": "Low horizon, the blackened Hometree stump on a third, small wandering figures leading the eye across the plain, wide dim sky above.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "lush greenery", "bright sun", "arrows"],
+  "consistency_notes": "Cool Pandora palette but drained toward grey and black to read as ruined ash barrens. Na'vi figures tall and slender, kept small. Distinct from the warm glowing cover.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no lush forest, no bright sunlight, no photographic or 3D-render look, no lens flares, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"]
+}

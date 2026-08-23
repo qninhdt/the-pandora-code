@@ -403,6 +403,147 @@
       },
       "verdictPresent": "Material life, language and ceremony all run through it",
       "verdictGone": "Not only a resource lost — the culture must restructure"
+    },
+    "succession-arrest": {
+      "title": "The Same Blow, Three Futures",
+      "subtitle": "Recovery is set by what survived, not how hard the land was hit",
+      "controlLabel": "Choose a disturbance type",
+      "regime": {
+        "sterilized": "Sterilized",
+        "blast": "Blast + legacies",
+        "ashfall": "Light ashfall"
+      },
+      "hint": {
+        "sterilized": "Deep pyroclastic burial pyrolyzes the soil and its seed bank. With almost nothing left to build from, the land barely greens across a century — this is primary succession, and it is slow.",
+        "blast": "A lateral blast flattens the forest but spares roots, seeds and burrowers under soil and snow. Those survivors reseed the site from within, closing a canopy in a few decades.",
+        "ashfall": "A thin, non-sterilizing ash drape leaves the living community mostly intact. Resprouting is almost immediate — secondary succession at its fastest."
+      },
+      "aria": {
+        "sterilized": "Recovery curve barely rising above zero across 120 years",
+        "blast": "Recovery curve climbing to near-full cover within a few decades",
+        "ashfall": "Recovery curve rising steeply to full cover within a few years"
+      },
+      "xAxis": "Years since the disturbance",
+      "yAxis": "Vegetation cover",
+      "canopyLine": "Canopy closure",
+      "yearsMax": "120 yr",
+      "readout": {
+        "legacies": "Survivors left",
+        "cover": "Cover at 120 yr",
+        "canopy": "Years to canopy"
+      },
+      "legacyLevel": {
+        "sterilized": "Almost none",
+        "blast": "Many",
+        "ashfall": "Nearly all"
+      },
+      "never": "Not within 120 yr",
+      "yearsValue": "{n} yr",
+      "verdict": {
+        "sterilized": "Arrested. The land must build soil from rock",
+        "blast": "Reseeded from within by survivors",
+        "ashfall": "The community barely paused"
+      }
+    },
+    "inhibitor-stack": {
+      "title": "Why the Ground Says No",
+      "subtitle": "A seedling must clear every gate at once — relieving one barely helps",
+      "hint": {
+        "clear": "Every inhibitor relieved. Only now, with all gates open, does a pioneer stand a real chance of establishing.",
+        "active": "{n} inhibitors still active. A germinant must survive all of them at once, so the surviving fraction is their product — vanishingly small."
+      },
+      "aria": "Compound seedling survival of {pct} percent across the active inhibitors",
+      "barStart": "100 germinants",
+      "barEnd": "{pct}% establish",
+      "state": {
+        "active": "Active",
+        "relieved": "Relieved"
+      },
+      "filter": {
+        "nitrogen": {
+          "name": "Nitrogen poverty",
+          "detail": "Fresh tephra carries almost no usable nitrogen; non-fixers starve."
+        },
+        "toxicity": {
+          "name": "Acid & metal toxicity",
+          "detail": "Leached acids free aluminium and manganese that poison root tips."
+        },
+        "crust": {
+          "name": "Crust & hydrophoby",
+          "detail": "Rain-packed ash seals into a crust roots cannot pierce; water runs off."
+        },
+        "thermal": {
+          "name": "Thermal extremes",
+          "detail": "Unshaded ash swings tens of degrees a day, girdling stems at the surface."
+        },
+        "erosion": {
+          "name": "Erosion resets",
+          "detail": "Rills and mudflows strip young roots or bury them under fresh sediment."
+        }
+      },
+      "readout": {
+        "survival": "Establishment odds"
+      },
+      "verdict": {
+        "clear": "All gates open — a pioneer can finally hold",
+        "gated": "{n} gates still closed; the product stays near zero"
+      }
+    },
+    "recovery-chronosequence": {
+      "title": "How Long Is 'Recovered'?",
+      "subtitle": "Five real volcanic recoveries on one logarithmic clock",
+      "controlLabel": "Choose a volcanic site",
+      "site": {
+        "sthelens": {
+          "tab": "St. Helens",
+          "note": "Mount St. Helens (1980): a mosaic. Blast-zone survivors drove dense scrub within 30 years while the sterile pumice plain still lags.",
+          "disturbance": "Lateral blast + pyroclastic flows",
+          "span": "≈45 yr studied",
+          "driverShort": "Legacies",
+          "driver": "Survivors under snow and soil reseeded the site from within"
+        },
+        "surtsey": {
+          "tab": "Surtsey",
+          "note": "Surtsey (1963): a new basalt island stalled in sparse forbs for two decades — until a gull colony began delivering nitrogen and the curve jumped.",
+          "disturbance": "New sterile volcanic island",
+          "span": "≈57 yr studied",
+          "driverShort": "Nutrient switch",
+          "driver": "A seabird colony after year 23 supplied the missing nitrogen"
+        },
+        "krakatau": {
+          "tab": "Krakatau",
+          "note": "Krakatau (1883): sterilized outright, yet wet equatorial climate and bird- and bat-borne seed closed a rainforest canopy within 50–70 years.",
+          "disturbance": "Caldera collapse, total sterilization",
+          "span": "≈70 yr to canopy",
+          "driverShort": "Wet climate",
+          "driver": "High rainfall and fast animal seed dispersal outpaced the sterility"
+        },
+        "paricutin": {
+          "tab": "Parícutin",
+          "note": "Parícutin (1943): bare cinder cones stay depauperate 80+ years on — coarse cinders hold little water and build soil painfully slowly.",
+          "disturbance": "Cinder cone + lava fields",
+          "span": "80+ yr, still sparse",
+          "driverShort": "Dry substrate",
+          "driver": "Coarse cinders drain fast and seasonal drought stalls pioneers"
+        },
+        "laki": {
+          "tab": "Laki",
+          "note": "Laki (1783): a subarctic flood basalt still carries mostly moss after 240 years — cold, dense rock and fluorine weather and colonize glacially slowly.",
+          "disturbance": "Flood basalt fissure eruption",
+          "span": "240+ yr, moss-dominated",
+          "driverShort": "Cold + dense rock",
+          "driver": "Subarctic cold and slow basalt weathering stretch recovery to centuries"
+        }
+      },
+      "xAxis": "Years since eruption (log scale)",
+      "yAxis": "Vegetation cover",
+      "yearTick": "{n} yr",
+      "eventLabel": "Gull colony",
+      "readout": {
+        "disturbance": "Disturbance",
+        "span": "Observed span",
+        "driver": "Pace set by"
+      }
     }
   }
 }

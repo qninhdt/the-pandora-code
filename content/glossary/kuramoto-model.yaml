@@ -1,0 +1,28 @@
+id: kuramoto-model
+label:
+  vi: Mô hình Kuramoto
+  en: Kuramoto model
+definition:
+  vi: >-
+    Mô hình toán học kinh điển cho hiện tượng đồng bộ hóa: một tập các dao động tử có nhịp riêng
+    khác nhau, khi ghép cặp đủ mạnh, sẽ tự khóa pha vào một nhịp chung. Nó lý giải vì sao hàng nghìn
+    con đom đóm chớp sáng cùng lúc, hay các tế bào tạo nhịp tim đập ăn khớp. Khi độ ghép cặp vượt một
+    ngưỡng tới hạn, hệ trải qua một chuyển pha: từ hỗn loạn rời rạc sang một nhịp thống nhất — một
+    hình mẫu khác của "trồi lên trật tự tập thể mà không ai chỉ huy".
+  en: >-
+    The classic mathematical model of synchronization: a set of oscillators, each with its own
+    natural rhythm, will lock into a common phase once the coupling between them is strong enough.
+    It explains why thousands of fireflies flash in unison, or why cardiac pacemaker cells beat
+    together. Past a critical coupling strength the system undergoes a phase transition: from
+    scattered chaos to one unified rhythm — another template for "collective order emerging with no
+    conductor."
+see_also:
+  - boids-model
+  - quorum-sensing
+category: concept
+tags:
+  - collective-behavior
+cover_prompt: >-
+  A painted ring of small glowing pulses, most flashing in unison with a few still out of step,
+  arrows suggesting them locking into one rhythm, cool cyan on deep indigo, schematic and luminous,
+  no text, no labels, no numbers.

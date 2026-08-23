@@ -1,0 +1,34 @@
+{
+  "id": "fig-03-solar-powered-stone",
+  "chapter_slug": "the-reef-as-substrate",
+  "role": "comparison",
+  "narrative_purpose": "Shows light-enhanced calcification: the same coral lays down skeleton faster in daylight than in darkness, because photosynthesis fuels the process.",
+  "subject": "A single coral colony shown twice side by side as one continuous scene split by lighting. On the sunlit left half, the polyps are fully extended and bright, and a visibly thick fresh pale rim of new skeleton is forming beneath them. On the dim right half, the same polyps are contracted and dull, and only a thin sliver of new skeleton has formed. A soft gradient of light runs from bright upper-left to dark lower-right across the middle.",
+  "scene": "One reef ledge under a day-to-night light gradient, clear water, no hard border between the two halves.",
+  "camera": "Straight-on comparative view at coral scale, the colony centered, left bright and right dim.",
+  "light": "Warm-tinged bright teal daylight on the left with cyan glow on the fresh skeleton; deep indigo shadow on the right with only faint glow.",
+  "palette": "Bright ocean teal and cyan on the lit side, void indigo on the dark side, pale skeleton throughout.",
+  "style": "Painterly naturalist comparison plate, organic light gradient rather than a hard split panel.",
+  "detail_level": "Crisp on the two skeleton rims (thick vs thin) and polyp states; simple graded background.",
+  "composition": "Left-bright / right-dim across the frame with open sky-water band above for callouts contrasting day vs night growth.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "panel borders",
+    "sun icon",
+    "clock",
+    "callout lines"
+  ],
+  "consistency_notes": "It must read as the SAME colony under two light levels, not two species. Fresh skeleton is clearly thicker on the sunlit side.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no sun or clock icons, no panel dividers, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

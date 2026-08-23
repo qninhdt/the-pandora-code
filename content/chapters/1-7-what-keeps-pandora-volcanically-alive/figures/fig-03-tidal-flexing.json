@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-tidal-flexing",
+  "chapter_slug": "what-keeps-pandora-volcanically-alive",
+  "role": "inline",
+  "narrative_purpose": "Shows the tidal-heating engine: Pandora hugging Polyphemus is stretched into an egg shape and kneaded, its interior heating - the answer to why a small old moon stays molten.",
+  "subject": "A moon close beside the enormous banded flank of a gas giant, the moon visibly stretched into an egg shape with its long axis pointing straight at the planet. Glowing orange-amber molten fractures web the moon's interior and crust, brightest on the side facing the planet, as if it is being squeezed hardest there. The gas giant's curved banded bulk looms over most of one side of the frame.",
+  "scene": "Space close to the gas giant, the moon dwarfed beside it, deep starfield and faint magnetic haze around.",
+  "camera": "Wide view placing the small flexed moon against the overwhelming curved flank of the giant planet for scale.",
+  "light": "Warm amber-orange glow leaking from the moon's stressed molten fractures, cool indigo space, dim reflected light on the planet's bands, subtle cyan haze.",
+  "palette": "Dominant cool void-indigo and dim cream-rust planet, deliberate ember-amber glow from the moon's molten seams, faint cyan haze.",
+  "style": "Painterly astronomical plate, naturalistic, textured planetary surfaces.",
+  "detail_level": "Crisp glowing fractures and egg-shaped distortion on the moon; the giant planet softer and atmospheric behind.",
+  "composition": "Gas giant's curved flank filling the right two-thirds, the small flexed moon on the left third, the molten side turned toward the planet so the cause reads as the squeeze.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "orbit lines", "force diagrams", "spacecraft"],
+  "consistency_notes": "Banded gas giant is Polyphemus, consistent with the rest of the chapter. Warm molten glow is the deliberate scarce warm accent; cool Pandora palette dominates. Should echo the deep-time tidal-engine figure.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no orbit or force diagram lines, no photographic or 3D-render look, no lens flares, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-05-tidal-engine.png"]
+}

@@ -1,0 +1,29 @@
+id: gap-junction
+label:
+  vi: Mối nối khe
+  en: Gap junction
+definition:
+  vi: >-
+    Kênh protein nối trực tiếp bào tương của hai tế bào kề nhau, cho ion và các phân tử tín hiệu nhỏ
+    đi thẳng từ tế bào này sang tế bào kia mà không ra ngoài không gian ngoại bào. Nhờ đó cả một đám
+    tế bào rời rạc "chập" thành một khối điện–hóa liên thông, để trạng thái điện áp lan tỏa, tính
+    toán và tạo thành các trường hình thái mạch lạc khắp mô. Đây chính là "dây điện" của điện sinh
+    học phát triển — chặn các mối nối khe lại là đủ để viết lại hình dạng cơ thể sán dẹp.
+  en: >-
+    A protein channel that directly links the cytoplasm of two adjacent cells, letting ions and
+    small signaling molecules pass straight from one cell to the next without entering the space
+    outside. This couples a crowd of discrete cells into one connected electrical–chemical syncytium,
+    so voltage states can spread, compute, and form coherent morphogenetic fields across a tissue.
+    It is the "wiring" of developmental bioelectricity — blocking gap junctions alone is enough to
+    rewrite a flatworm's body plan.
+see_also:
+  - developmental-bioelectricity
+  - membrane-potential
+category: bio
+tags:
+  - developmental-biology
+  - physiology
+cover_prompt: >-
+  Two painted cells pressed together with a bright channel bridging them, glowing dots of ions
+  streaming through the gap, cool cyan on deep indigo, schematic and luminous, no text, no labels,
+  no numbers.

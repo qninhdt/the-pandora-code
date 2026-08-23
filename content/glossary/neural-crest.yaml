@@ -1,0 +1,22 @@
+id: neural-crest
+label:
+  vi: Mào thần kinh
+  en: Neural crest
+definition:
+  vi: Một quần thể tế bào phôi di cư, đặc trưng của động vật có xương sống, tỏa đi khắp cơ thể đang hình
+    thành và sinh ra phần lớn hệ thần kinh ngoại biên cùng nhiều cấu trúc khác. Chính mào thần kinh giúp
+    dây thần kinh tìm đường tới các cấu trúc mới trong quá trình phát triển. Nếu một cơ quan mới như queue
+    mọc trên cơ thể trưởng thành, việc nối dây cho nó sẽ phải mượn lại đúng loại cơ chế dẫn đường này.
+  en: A migratory population of embryonic cells, unique to vertebrates, that spreads throughout the developing
+    body and gives rise to much of the peripheral nervous system and many other structures. The neural
+    crest is how nerves find their way to new structures during development. If a new organ such as a
+    queue grew on an adult body, wiring it in would have to borrow exactly this kind of guidance machinery.
+see_also:
+- morphogenesis
+- neuroplasticity
+- queue
+category: bio
+tags:
+- physiology
+cover_prompt: A painterly depiction of a stream of glowing migratory cells fanning out along guidance
+  paths through a developing body, fine cyan trails, deep indigo, no text, no labels.

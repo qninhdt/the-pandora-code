@@ -1,0 +1,25 @@
+id: chemosynthesis
+label:
+  vi: Hóa tổng hợp
+  en: Chemosynthesis
+definition:
+  vi: Việc dựng nên sự sống từ năng lượng hóa học thay vì ánh sáng mặt trời. Quanh các miệng phun thủy
+    nhiệt dưới đáy biển sâu, vi khuẩn lấy những khí độc như hydro sulfide và carbon dioxide rồi biến chúng
+    thành thức ăn, nuôi cả một hệ sinh thái nơi không tia nắng nào chạm tới. Chính cơ chế này cho thấy
+    một cộng sinh có thể biến một chất khí chết người thành nguồn sống — bản mẫu cho việc một cơ thể được
+    cải tạo quanh một loại khí thù địch.
+  en: Building life from chemical energy instead of sunlight. Around deep-sea hydrothermal vents, bacteria
+    take toxic gases like hydrogen sulfide and carbon dioxide and turn them into food, feeding whole ecosystems
+    where no sunlight reaches. This mechanism shows how a symbiont can turn a deadly gas into sustenance
+    — the template for a body remade around a hostile atmosphere.
+see_also:
+- mitochondrion
+- ficks-law
+- symbiosis
+category: bio
+tags:
+- ecology
+- chemistry
+cover_prompt: A painterly deep-sea vent scene, dark water lit only by faint chemical glow, tubeworms clustered
+  around a mineral chimney with luminous internal bacteria, cool teal against near-black, no text, no
+  labels.

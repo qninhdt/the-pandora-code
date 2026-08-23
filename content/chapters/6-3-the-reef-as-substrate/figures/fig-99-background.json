@@ -1,0 +1,30 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "the-reef-as-substrate",
+  "role": "hero",
+  "narrative_purpose": "Atmospheric full-bleed background for the chapter page: wide, dim, underwater reef vista that reader prose floats over.",
+  "subject": "An ultra-wide panoramic vista of a vast deep Pandoran coral reef lagoon at night. Vast glowing biogenic terraces curve through dark indigo waters, fading into deep atmospheric haze and shadow. Distant gentle cyan bioluminescence glows softly along far reef edges with no single bright focal object.",
+  "scene": "Expansive, dim, mysterious underwater reef landscape receding into the deep distance.",
+  "camera": "High-angle ultra-wide panorama with extreme depth of field.",
+  "light": "Very low contrast, dim deep indigo ambient light, subtle cyan bioluminescent accents scattered across the distance.",
+  "palette": "Deep void indigo, dark teal, subtle cyan bioluminescence.",
+  "style": "Dark atmospheric background plate, painterly and diffuse.",
+  "detail_level": "Soft, atmospheric, low contrast so overlay text remains highly readable.",
+  "composition": "Curving terraces sweeping across the lower third, deep hazy ocean taking up the upper two thirds.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "bright focal objects",
+    "high-contrast figures"
+  ],
+  "consistency_notes": "Must be dark and low contrast so overlaid text is readable.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no bright foreground objects, no high contrast elements, no photographic 3D render look",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

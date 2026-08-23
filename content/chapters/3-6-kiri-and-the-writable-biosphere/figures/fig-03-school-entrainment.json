@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-school-entrainment",
+  "chapter_slug": "kiri-and-the-writable-biosphere",
+  "role": "diagram",
+  "narrative_purpose": "Shows that Kiri steering a fish school is a few individuals biased and a self-organizing swarm completing the turn — 'commanding' the school is really steering an emergent collective.",
+  "subject": "An open Na'vi hand entering from the right edge of the frame, a small bright point of light at the fingertips. A large school of many small fish, each drawn as a simple arrow-shape, sweeps in a smooth spiral curve toward the hand. The handful of fish nearest the fingertips are rendered brighter and in a distinct warm-magenta tint to mark those directly pulled; the great majority of the school trailing behind them are cooler cyan, following the leaders' curve rather than the hand directly.",
+  "scene": "A school of fish wheeling toward a hand, with only the nearest few directly influenced and the rest following through the flock's own alignment.",
+  "camera": "A flat schematic view from above the water, the whole spiralling school and the hand held in one frame.",
+  "light": "Bioluminescent key from the fish; the few led fish near the hand glow warm-magenta, the following majority cool cyan; dark water behind.",
+  "palette": "Void-indigo water base, dominant Pandora cyan for the following school, a small warm-magenta cluster marking the directly-biased leaders near the hand.",
+  "style": "Painterly speculative-biology naturalist plate as a luminous schematic, hand-painted texture, not vector-flat.",
+  "detail_level": "Crisp on the distinction between the magenta led-fish near the hand and the cyan following majority so the 'few steer many' idea reads instantly; plain dark margins for callouts.",
+  "composition": "The hand at the right, the spiral of the school sweeping in from the left and curving toward it, the magenta leaders at the spiral's head near the fingertips, generous dark water for labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows as annotation", "Avatar branding"],
+  "consistency_notes": "The contrast that must read: a few warm-magenta led fish near the hand, the cyan majority following. The fish 'arrow-shapes' are subjects, not annotation arrows. Leave dark margins for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

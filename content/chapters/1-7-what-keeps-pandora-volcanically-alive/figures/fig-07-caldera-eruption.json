@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-caldera-eruption",
+  "chapter_slug": "what-keeps-pandora-volcanically-alive",
+  "role": "inline",
+  "narrative_purpose": "The payoff that ties physics back to the Mangkwan: a massive caldera-forming eruption burying a forest and Hometree under pyroclastic flows and ash - the ground-level consequence of the tidal furnace, the birth of the Ashlands.",
+  "subject": "A colossal volcanic eruption at night: a towering ash column boiling tens of kilometers into a dark sky, glowing molten fissures at the collapsing mountain's base, and a fast ground-hugging avalanche of superheated ash and gas pouring down the slope toward a doomed forest edge with a colossal Hometree. The leading front of the flow glows warm; ash rains across the darkening land.",
+  "scene": "A cataclysmic eruption overwhelming a forested Pandoran valley at night, the moment the biome is buried.",
+  "camera": "Wide dramatic shot capturing the towering ash column, the descending pyroclastic flow, and the small doomed forest with the Hometree for scale.",
+  "light": "Warm ember-orange glow from the eruption fissures and the leading edge of the pyroclastic flow, cool indigo smoke-choked sky, the forest falling into shadow.",
+  "palette": "Dominant dark indigo smoke and ash, strong ember-amber-orange glow concentrated at the vent and flow front, cool doomed forest silhouettes.",
+  "style": "Painterly naturalist plate, textured ash and fire, dramatic and atmospheric.",
+  "detail_level": "Crisp on the ash column, flow front, and Hometree silhouette; upper sky dissolving into smoke haze.",
+  "composition": "Towering ash column rising on one third, the pyroclastic flow sweeping down toward the small Hometree and forest on the other side, warm glow low, dark smoke filling the sky.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "spacecraft", "modern machinery"],
+  "consistency_notes": "Na'vi Hometree and forest styling consistent with the franchise; the warm eruption glow is a large but still-scarce warm accent against the dominant cool smoke palette. Foreshadows the ruined Ashlands of fig-01.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/what-keeps-pandora-volcanically-alive/fig-01-ashlands-plain.png"]
+}

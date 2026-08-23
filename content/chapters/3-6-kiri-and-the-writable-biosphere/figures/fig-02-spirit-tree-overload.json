@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-spirit-tree-overload",
+  "chapter_slug": "kiri-and-the-writable-biosphere",
+  "role": "diagram",
+  "narrative_purpose": "Depicts Kiri's spirit-tree seizure as an over-voltage event — a single nervous system meeting the signal density of a planetary network — making the 'cost' of deep network coupling visible.",
+  "subject": "A young Na'vi girl underwater, her queue-tendril plugged into a glowing pale root of a submerged spirit tree. An intense surge of cyan-white light floods up the tendril from the root system into the back of her head, where it flares into a jagged, spiking magenta burst around her skull, her body arched and rigid as if convulsing. The tree's other roots visibly dim as the light concentrates into her, as though the network's energy is being funnelled into one small body.",
+  "scene": "A moment of dangerous over-connection: peaceful blue network light turning into a violent magenta electrical burst where it enters a single brain.",
+  "camera": "A three-quarter underwater view centred on the girl's head and the queue-junction where the surge enters.",
+  "light": "Cool cyan-white network light rushing up the tendril; a hot jagged magenta flare at the girl's skull marking the overload; the surrounding roots dimming as their light drains toward her.",
+  "palette": "Void-indigo water base, Pandora cyan-white in the surging light, alarming magenta confined to the seizure-burst at the head, dimming teal in the draining roots.",
+  "style": "Painterly speculative-biology naturalist plate as a luminous schematic, hand-painted texture, not vector-flat.",
+  "detail_level": "Crisp on the queue-junction and the magenta burst at the skull so the overload reads instantly; the deep water dissolving into dark haze; plain dark margins for callouts.",
+  "composition": "The girl's head and the entering surge as the focal point, roots trailing off dimming into the dark, generous dark water for annotation labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "The contrast that must read: calm cyan network light turning to violent magenta where it meets one brain; roots dimming as energy concentrates. Warm/alarm color strictly limited to the seizure-burst. Leave dark margins for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/kiri-and-the-writable-biosphere/fig-00-cover.png"]
+}

@@ -403,6 +403,147 @@
       },
       "verdictPresent": "Đời sống vật chất, ngôn ngữ và nghi lễ đều chạy qua nó",
       "verdictGone": "Không chỉ mất một nguồn lợi — cả nền văn hóa phải tái cấu trúc"
+    },
+    "succession-arrest": {
+      "title": "Cùng một đòn, ba tương lai",
+      "subtitle": "Phục hồi do thứ sống sót quyết định, không phải do đòn nặng đến đâu",
+      "controlLabel": "Chọn kiểu tàn phá",
+      "regime": {
+        "sterilized": "Tiệt sinh",
+        "blast": "Sóng nổ + di sản",
+        "ashfall": "Tro rơi nhẹ"
+      },
+      "hint": {
+        "sterilized": "Lớp tro núi lửa vùi sâu nung cháy cả đất lẫn ngân hàng hạt giống. Gần như chẳng còn gì để dựng lại, mặt đất suốt cả thế kỷ chỉ vừa hé xanh — đây là diễn thế nguyên sinh, và nó chậm.",
+        "blast": "Sóng nổ ngang san phẳng rừng nhưng chừa lại rễ, hạt và loài đào hang dưới đất và tuyết. Những kẻ sống sót ấy tự gieo lại từ bên trong, khép tán trong vài thập kỷ.",
+        "ashfall": "Lớp tro mỏng không tiệt sinh để cộng đồng sống gần như nguyên vẹn. Chồi tái sinh gần như tức thì — diễn thế thứ sinh ở tốc độ nhanh nhất."
+      },
+      "aria": {
+        "sterilized": "Đường phục hồi gần như không nhích khỏi số không suốt 120 năm",
+        "blast": "Đường phục hồi leo tới gần kín tán trong vài thập kỷ",
+        "ashfall": "Đường phục hồi dựng đứng tới kín tán chỉ trong vài năm"
+      },
+      "xAxis": "Số năm kể từ khi tàn phá",
+      "yAxis": "Độ phủ thực vật",
+      "canopyLine": "Khép tán",
+      "yearsMax": "120 năm",
+      "readout": {
+        "legacies": "Kẻ sống sót còn lại",
+        "cover": "Độ phủ ở năm 120",
+        "canopy": "Số năm tới khép tán"
+      },
+      "legacyLevel": {
+        "sterilized": "Gần như không",
+        "blast": "Nhiều",
+        "ashfall": "Gần như toàn bộ"
+      },
+      "never": "Không đạt trong 120 năm",
+      "yearsValue": "{n} năm",
+      "verdict": {
+        "sterilized": "Đình trệ. Mặt đất phải tạo đất từ đá",
+        "blast": "Được gieo lại từ bên trong bởi kẻ sống sót",
+        "ashfall": "Cộng đồng gần như không hề ngừng"
+      }
+    },
+    "inhibitor-stack": {
+      "title": "Vì sao mặt đất nói không",
+      "subtitle": "Một mầm cây phải vượt mọi cửa cùng lúc — gỡ một cửa gần như vô ích",
+      "hint": {
+        "clear": "Mọi rào cản đã được gỡ. Chỉ khi tất cả các cửa cùng mở, một loài tiên phong mới có cơ hội thực sự bám trụ.",
+        "active": "Còn {n} rào cản đang hoạt động. Mầm cây phải vượt qua tất cả cùng lúc, nên tỷ lệ sống sót là tích của chúng — nhỏ đến mức gần như bằng không."
+      },
+      "aria": "Xác suất sống sót gộp của mầm cây là {pct} phần trăm qua các rào cản đang hoạt động",
+      "barStart": "100 mầm cây",
+      "barEnd": "{pct}% bám trụ",
+      "state": {
+        "active": "Đang chặn",
+        "relieved": "Đã gỡ"
+      },
+      "filter": {
+        "nitrogen": {
+          "name": "Nghèo nitơ",
+          "detail": "Tro mới gần như không mang nitơ khả dụng; loài không cố định đạm chết đói."
+        },
+        "toxicity": {
+          "name": "Axit & độc kim loại",
+          "detail": "Axit rửa trôi giải phóng nhôm và mangan đầu độc chóp rễ."
+        },
+        "crust": {
+          "name": "Lớp vỏ & kỵ nước",
+          "detail": "Tro bị mưa nén thành vỏ cứng rễ không xuyên nổi; nước chảy trượt đi."
+        },
+        "thermal": {
+          "name": "Cực đoan nhiệt",
+          "detail": "Tro trơ nắng dao động hàng chục độ mỗi ngày, thắt cổ thân ở sát mặt đất."
+        },
+        "erosion": {
+          "name": "Xói mòn xóa sạch",
+          "detail": "Rãnh xói và dòng bùn cuốn trôi rễ non hoặc vùi chúng dưới trầm tích mới."
+        }
+      },
+      "readout": {
+        "survival": "Cơ hội bám trụ"
+      },
+      "verdict": {
+        "clear": "Mọi cửa đã mở — một loài tiên phong cuối cùng cũng trụ được",
+        "gated": "Còn {n} cửa đóng; tích số vẫn gần bằng không"
+      }
+    },
+    "recovery-chronosequence": {
+      "title": "\"Phục hồi\" là bao lâu?",
+      "subtitle": "Năm cuộc phục hồi núi lửa thật trên một trục thời gian logarit",
+      "controlLabel": "Chọn một địa điểm núi lửa",
+      "site": {
+        "sthelens": {
+          "tab": "St. Helens",
+          "note": "Núi St. Helens (1980): một bức khảm. Kẻ sống sót vùng sóng nổ dựng lại lùm cây rậm trong 30 năm, trong khi đồng bọt đá vô trùng vẫn ì ạch.",
+          "disturbance": "Sóng nổ ngang + dòng tro nóng",
+          "span": "≈45 năm nghiên cứu",
+          "driverShort": "Di sản sinh học",
+          "driver": "Kẻ sống sót dưới tuyết và đất gieo lại địa điểm từ bên trong"
+        },
+        "surtsey": {
+          "tab": "Surtsey",
+          "note": "Surtsey (1963): đảo bazan mới đình trệ ở thảm cỏ thưa suốt hai thập kỷ — cho tới khi một bầy mòng biển bắt đầu tải nitơ về và đường cong bật lên.",
+          "disturbance": "Đảo núi lửa vô trùng mới",
+          "span": "≈57 năm nghiên cứu",
+          "driverShort": "Bước ngoặt dưỡng chất",
+          "driver": "Một bầy chim biển sau năm 23 cung cấp lượng nitơ còn thiếu"
+        },
+        "krakatau": {
+          "tab": "Krakatau",
+          "note": "Krakatau (1883): bị tiệt sinh hoàn toàn, nhưng khí hậu xích đạo ẩm ướt và hạt do chim, dơi mang tới đã khép tán rừng mưa trong 50–70 năm.",
+          "disturbance": "Sụp miệng núi, tiệt sinh toàn phần",
+          "span": "≈70 năm tới khép tán",
+          "driverShort": "Khí hậu ẩm",
+          "driver": "Mưa lớn và phát tán hạt nhờ động vật vượt qua sự vô trùng"
+        },
+        "paricutin": {
+          "tab": "Parícutin",
+          "note": "Parícutin (1943): nón xỉ trơ trọi vẫn nghèo nàn sau hơn 80 năm — xỉ thô giữ ít nước và tạo đất chậm chạp một cách khổ sở.",
+          "disturbance": "Nón xỉ + đồng dung nham",
+          "span": "hơn 80 năm, vẫn thưa",
+          "driverShort": "Nền khô",
+          "driver": "Xỉ thô thoát nước nhanh và hạn theo mùa làm loài tiên phong đình trệ"
+        },
+        "laki": {
+          "tab": "Laki",
+          "note": "Laki (1783): dòng bazan tràn cận Bắc Cực sau 240 năm phần lớn vẫn chỉ có rêu — đá lạnh, đặc và fluor phong hóa cùng cư trú chậm như sông băng.",
+          "disturbance": "Phun trào khe nứt bazan tràn",
+          "span": "hơn 240 năm, rêu chiếm ưu thế",
+          "driverShort": "Lạnh + đá đặc",
+          "driver": "Lạnh cận Bắc Cực và phong hóa bazan chậm kéo phục hồi tới hàng thế kỷ"
+        }
+      },
+      "xAxis": "Số năm kể từ phun trào (thang log)",
+      "yAxis": "Độ phủ thực vật",
+      "yearTick": "{n} năm",
+      "eventLabel": "Bầy mòng biển",
+      "readout": {
+        "disturbance": "Kiểu tàn phá",
+        "span": "Khoảng quan sát",
+        "driver": "Nhịp do"
+      }
     }
   }
 }

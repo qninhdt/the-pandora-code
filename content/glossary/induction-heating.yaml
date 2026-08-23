@@ -1,0 +1,16 @@
+id: induction-heating
+label:
+  vi: Sưởi cảm ứng
+  en: Induction heating
+definition:
+  vi: "Sự nung nóng một vật dẫn điện bằng một từ trường biến thiên theo thời gian, vốn cảm ứng nên các dòng điện xoáy chạy vòng trong vật và làm nó ấm lên qua điện trở - đúng nguyên lý của bếp từ. Với một mặt trăng đá quét qua từ trường lồi lõm của một hành tinh khổng lồ, hiệu ứng này có thật nhưng cực nhỏ: nhỏ hơn nhiệt thủy triều tới hàng triệu lần. Một từ trường tĩnh thì sưởi bằng không."
+  en: "The heating of an electrical conductor by a time-varying magnetic field, which induces looping eddy currents in the material that warm it through resistance - the exact principle of an induction stove. For a rocky moon sweeping through the lumpy field of a giant planet the effect is real but tiny: smaller than tidal heating by a factor of a million or more. A static magnetic field heats not at all."
+see_also:
+  - meissner-effect
+  - dynamo-theory
+  - tidal-heating
+category: concept
+tags:
+- physics
+- planetary-science
+cover_prompt: A painted scene of a rocky moon passing through curving magnetic field lines of a gas giant, faint circular eddy-current loops glowing dimly inside the moon, the glow deliberately weak to signal a small effect, cool indigo dominant with only a faint amber trace, painterly plate, no text or numbers.

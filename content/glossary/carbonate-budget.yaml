@@ -1,0 +1,33 @@
+id: carbonate-budget
+label:
+  vi: Cán cân cacbonat
+  en: Carbonate budget
+definition:
+  vi: >-
+    Bảng cân đối kế toán của một rạn san hô, tính bằng khối lượng canxi cacbonat (CaCO₃) được tạo ra
+    trừ đi lượng bị lấy đi trên mỗi mét vuông mỗi năm. Bên có là san hô và tảo vôi tiết ra đá vôi;
+    bên nợ là cá vẹt gặm, bọt biển khoan, nhím biển cạo và sự hòa tan hóa học. Nếu tổng dương, rạn
+    dâng lên và bám theo mực biển; nếu âm, cái nền tan rã nhanh hơn tốc độ tái tạo. Nhà khoa học đo
+    từng khoản này ngoài thực địa (phương pháp ReefBudget của Perry và cộng sự) để biết một rạn đang
+    xây hay đang chết — một rạn "trông vẫn còn đó" vẫn có thể đang lỗ vốn.
+  en: >-
+    The accounting sheet of a reef, measured as the mass of calcium carbonate (CaCO₃) produced minus
+    the mass removed, per square metre per year. On the credit side, corals and coralline algae
+    secrete limestone; on the debit side, parrotfish grazing, boring sponges, urchin scraping and
+    chemical dissolution take it away. If the total is positive the reef rises and tracks sea level;
+    if negative, the foundation breaks down faster than it regrows. Scientists measure each term in
+    the field (Perry et al.'s ReefBudget census method) to tell whether a reef is building or dying —
+    a reef that still "looks like it is there" can already be running at a loss.
+see_also:
+  - biogenic-reef
+  - bioerosion
+  - ocean-acidification
+  - rugosity
+category: concept
+tags:
+  - oceanography
+  - ecology
+cover_prompt: >-
+  A painterly split scene of a reef, one side dense with living coral laying down bright limestone,
+  the other side gnawed and bored hollow by fish and sponges, a faint balance motif implied by the
+  contrast, cool teal water and dark indigo, painterly naturalist plate, no text, no labels.

@@ -1,0 +1,32 @@
+id: primary-succession
+label:
+  vi: Diễn thế nguyên sinh
+  en: Primary succession
+definition:
+  vi: >-
+    Sự cư trú lên một bề mặt hoàn toàn mới hoặc mới lộ ra, không có đất, không có cộng đồng vi sinh
+    vật, không có mầm sống nào sót lại: dung nham nguội, đồng tro núi lửa dày, bãi rút của sông băng,
+    hòn đảo núi lửa vừa trồi lên như Surtsey. Bước quyết định tốc độ ở đây là tạo đất — sự sống phải
+    tự dựng lấy nền đất, gần như từng nguyên tử một, trước khi một khu rừng thậm chí trở nên khả dĩ.
+    Vì thế diễn thế nguyên sinh chậm khủng khiếp: hàng thế kỷ tới hàng thiên niên kỷ. Vùng Tro tàn
+    của tộc Mangkwan bị đẩy về đúng điểm khởi đầu này khi vụ phun trào nung cháy lớp đất cũ.
+  en: >-
+    The colonisation of a wholly new or newly exposed surface with no soil, no microbial community and
+    no surviving propagules: cooled lava, deep volcanic tephra, a retreating glacier's foreland, a
+    freshly emerged volcanic island like Surtsey. The rate-limiting step is making soil — life must
+    build the ground itself, almost atom by atom, before a forest is even possible. Primary succession
+    is therefore agonisingly slow: centuries to millennia. The Mangkwan Ashlands were reset to exactly
+    this starting point when the eruption cooked away the old soil.
+see_also:
+  - secondary-succession
+  - ecological-succession
+  - pedogenesis
+  - pioneer-species
+category: concept
+tags:
+  - ecology
+  - geology
+cover_prompt: >-
+  A painterly naturalist plate of a bare grey volcanic surface of cooled lava and pumice under a dim
+  sky, a single tiny pioneer plant in one sheltered crack, vast sterile rock all around, cool cyan and
+  indigo tones, no text, no labels, no numbers.

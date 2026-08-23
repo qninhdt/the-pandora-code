@@ -1,0 +1,113 @@
+slug: life-after-the-volcano
+part: fire-ash-wind
+order: 1
+status: published
+title:
+  vi: Sự sống sau ngày tận thế
+  en: Life After the Volcano
+subtitle:
+  vi: >-
+    Một thế hệ đã trôi qua kể từ ngày ngọn núi chôn vùi quê hương tộc Mangkwan, mà vùng Tro tàn vẫn
+    trơ trọi. Câu hỏi không phải vì sao nó chết — mà vì sao nó chưa sống lại.
+  en: >-
+    A generation has passed since the mountain buried the Mangkwan homeland, and the Ashlands are
+    still bare. The question is not why it died — it is why it has not come back.
+hook:
+  vi: >-
+    Ta quen nghĩ sự sống luôn quay lại: cháy rừng rồi rừng mọc, vết thương rồi liền da. Nhưng vùng
+    Tro tàn của tộc Mangkwan đã trơ trọi suốt một thế hệ, và điều đó không phải là ngoại lệ kỳ lạ —
+    đó là quy luật mà Trái Đất đã dạy ta ở sườn một ngọn núi lửa năm 1980. Phục hồi không phải một
+    lời hứa; nó là một cuộc mặc cả với những gì còn sót lại dưới lòng đất.
+  en: >-
+    We assume life always comes back: a forest burns and regrows, a wound scars over. But the
+    Mangkwan Ashlands have stayed barren for a generation, and that is no strange exception — it is
+    the rule Earth taught us on the flank of one volcano in 1980. Recovery is not a promise; it is a
+    bargain struck with whatever survived underground.
+authors:
+  - bardabez
+reading_time_min: 27
+tags:
+  - ecological-succession
+  - disturbance-ecology
+  - volcanism
+  - mount-st-helens
+  - biological-legacy
+  - ashlands
+classification:
+  canon_pct: 16
+  inference_pct: 20
+  speculation_pct: 6
+  real_science_pct: 58
+related_chapters:
+  - what-keeps-pandora-volcanically-alive
+  - why-burning-eywa-doesnt-kill-it
+  - the-wood-wide-web
+  - hometree-as-keystone
+glossary_terms:
+  - ecological-succession
+  - primary-succession
+  - secondary-succession
+  - biological-legacy
+  - pioneer-species
+  - nitrogen-fixation
+  - pedogenesis
+  - alternative-stable-state
+  - seed-bank
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-kneeling-in-the-ash
+    role: hero
+    asset_status: ready
+  - id: fig-02-two-kinds-of-ruin
+    role: comparison
+    asset_status: ready
+  - id: fig-03-the-buried-survivors
+    role: diagram
+    asset_status: ready
+  - id: fig-04-the-first-lupine
+    role: inline
+    asset_status: ready
+  - id: fig-05-the-gopher-engineer
+    role: inline
+    asset_status: ready
+  - id: fig-06-the-crust-that-says-no
+    role: diagram
+    asset_status: ready
+  - id: fig-07-the-severed-network
+    role: diagram
+    asset_status: ready
+  - id: fig-08-the-ash-village
+    role: inline
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Mangkwan Clan - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Mangkwan_Clan
+  - kind: canon
+    label: Avatar - Frontiers of Pandora - From the Ashes expansion
+    url: >-
+      https://store.steampowered.com/app/3823590/From_The_Ashes_Expansion__Avatar_Frontiers_of_Pandora/
+  - kind: science
+    label: Connell & Slatyer - Mechanisms of succession in natural communities (Am. Nat., 1977)
+    url: https://www.journals.uchicago.edu/doi/10.1086/283241
+  - kind: science
+    label: >-
+      Dale, Swanson & Crisafulli (eds.) - Ecological Responses to the 1980 Eruption of Mount St.
+      Helens (Springer, 2005)
+    url: https://link.springer.com/book/10.1007/0-387-28150-9
+  - kind: science
+    label: >-
+      del Moral & Wood - Early primary succession on the volcano Mount St. Helens (J. Veg. Sci.,
+      1993)
+    url: https://faculty.washington.edu/moral/publications/RDM_Wood1993JVS.pdf
+  - kind: science
+    label: >-
+      Magnússon, Magnússon & Fridriksson - Developments in plant colonization and succession on
+      Surtsey (Surtsey Research, 2009)
+    url: http://faculty.washington.edu/moral/publications/2009SurtseyResearch12.pdf
+  - kind: research-note
+    label: >-
+      Life After the Volcano - Ecological Succession, Disturbance Biogeochemistry, and the
+      Post-Eruptive Dynamics of Pandora's Ashlands (chapter research note)

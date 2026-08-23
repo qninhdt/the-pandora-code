@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-four-walls",
+  "chapter_slug": "kiri-and-the-writable-biosphere",
+  "role": "comparison",
+  "narrative_purpose": "The honest-edges summary: four barriers — specificity, triggering-vs-dictating, thermodynamics (matter/energy/time), and scale — separate real lab-scale bioelectric and swarm science from Pandora's instant planetary bio-actuation.",
+  "subject": "A diagram of four tall vertical barrier-walls standing in a row across the frame, each wall glowing along its edges. On the NEAR side (foreground, lower left) sit small lab-scale motifs pressed against the walls: a tiny flatworm, a small frog embryo, a little cluster of a few fish. On the FAR side (background, upper right, beyond the walls) looms a vast dim planetary silhouette — a whole glowing moon with a spreading network across it. The four walls stand between the small near-side biology and the huge far-side planet, conveying a series of barriers the small science cannot cross to reach planetary scale.",
+  "scene": "Four barrier-walls dividing small, real, lab-scale biology in the foreground from a vast planetary-scale ambition beyond.",
+  "camera": "A three-quarter view down a row of four standing walls, near-side motifs small in front, planet looming far behind.",
+  "light": "Bioluminescent edge-glow on the four walls; the near-side motifs modest and cyan; the far planet dim and hazy, deliberately unreachable.",
+  "palette": "Void-indigo base, Pandora cyan edge-light on the walls and near motifs, the far planet a dim desaturated teal fading into haze.",
+  "style": "Painterly speculative-biology naturalist plate as a luminous schematic, hand-painted texture, not vector-flat.",
+  "detail_level": "Crisp on the four distinct walls and the small near-side motifs; the far planet soft and dissolving into haze; plain dark margins and clear space above each wall for callouts.",
+  "composition": "Four evenly spaced vertical walls across the frame, small lab motifs low in front, the planetary silhouette large and dim behind, generous dark sky above the walls for annotation labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "annotation arrows", "Avatar branding"],
+  "consistency_notes": "The relationship that must read: four barriers between small real near-side biology and a vast far-side planet. Leave clear dark space above each wall for the four labels the annotation pass will add.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

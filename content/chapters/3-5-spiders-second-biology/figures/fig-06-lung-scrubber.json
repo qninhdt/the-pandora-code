@@ -1,0 +1,34 @@
+{
+  "id": "fig-06-lung-scrubber",
+  "chapter_slug": "spiders-second-biology",
+  "role": "diagram",
+  "narrative_purpose": "Illustrates Hurdle 2 — respiratory remodelling — showing the mycelial film lining the airway acting as a living catalytic filter that neutralises poison gases before they reach the blood.",
+  "subject": "A cutaway of a human lung's fine branching airways and air sacs, the inner surface lined with a delicate luminous cyan fungal film; incoming dark motes of poison gas from the airway are shown being caught and transformed at the glowing lining into harmless pale particles before they can pass into the fine blood vessels wrapping the air sacs, which glow a healthy soft red-teal beyond the filter.",
+  "scene": "A cutaway of lung air sacs whose lining is a living fungal filter catching incoming toxic gas.",
+  "camera": "A cross-section view into the branching air sacs, close enough to see the lining and the gas motes crossing it.",
+  "light": "Bioluminescent key from the fungal lining — cyan and living teal; incoming poison motes rendered dark and cold; the blood vessels beyond a faint warm-cool blush.",
+  "palette": "Void-indigo base, Pandora cyan and living teal in the lining, dark cold motes for the poison gas, a restrained faint warm blush in the capillaries only.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence, luminous and atmospheric.",
+  "detail_level": "Crisp on the fungal lining and the gas motes being transformed at it; the deeper lung tissue dissolving into haze.",
+  "composition": "The lined air sac fills the centre, incoming dark gas from one side, clean particles and glowing capillaries on the far side; dark margins for labels.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding",
+    "modern Earth objects"
+  ],
+  "consistency_notes": "Focus on the lining as an active filter. Cool palette, warm confined to a faint capillary blush. Leave dark space for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": []
+}

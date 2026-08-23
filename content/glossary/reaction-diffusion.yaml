@@ -1,0 +1,27 @@
+id: reaction-diffusion
+label:
+  vi: Phản ứng–khuếch tán
+  en: Reaction–diffusion
+definition:
+  vi: >-
+    Cơ chế Alan Turing nêu năm 1952: hai chất hóa học vừa phản ứng với nhau vừa khuếch tán ở tốc độ
+    khác nhau có thể tự phá vỡ sự đồng đều và sinh ra hoa văn không gian tuần hoàn — vằn, chấm,
+    khoảng cách đều. Điều kiện then chốt là chất ức chế phải lan nhanh hơn chất tự kích hoạt ("kích
+    hoạt tầm gần, ức chế tầm xa"). Đây là cách các vằn da, khoảng cách nang lông, hay sự tụ ngón chi
+    xuất hiện từ một khởi điểm phẳng lặng, không cần bản thiết kế.
+  en: >-
+    Alan Turing's 1952 mechanism: two chemicals that both react with each other and diffuse at
+    different rates can spontaneously break uniformity and generate periodic spatial patterns —
+    stripes, spots, regular spacing. The key condition is that the inhibitor must spread faster than
+    the self-activator ("short-range activation, long-range inhibition"). This is how skin stripes,
+    hair-follicle spacing, and digit condensation emerge from a featureless start with no blueprint.
+see_also:
+  - morphogen
+  - positional-information
+category: bio
+tags:
+  - developmental-biology
+cover_prompt: >-
+  A painted field of glowing cyan spots and stripes emerging from a smooth dark surface, a
+  self-organizing pattern like animal markings, luminous and schematic on deep indigo, no text, no
+  labels, no numbers.

@@ -1,0 +1,29 @@
+id: parthenogenesis
+label:
+  vi: Trinh sản
+  en: Parthenogenesis
+definition:
+  vi: >-
+    Sinh sản từ trứng chưa thụ tinh, không cần đóng góp di truyền của con đực. Trong tự nhiên nó có ở
+    nhiều loài thằn lằn, cá và côn trùng. Trong phòng thí nghiệm, "trinh sản nhân tạo" được kích hoạt
+    bằng cách bắt chước tín hiệu mà tinh trùng thường mang lại — thường là một xung ion canxi làm khử
+    cực màng trứng và khởi động chuỗi phân chia. Chính cơ chế kích hoạt bằng điện–ion này khiến nguồn
+    gốc "sinh ra từ mạng lưới" của một nhân vật như Kiri không hoàn toàn nằm ngoài khoa học.
+  en: >-
+    Reproduction from an unfertilized egg, with no genetic contribution from a male. In nature it
+    occurs in many lizards, fish, and insects. In the lab, "artificial parthenogenesis" is triggered
+    by mimicking the signal a sperm normally delivers — often a pulse of calcium ions that
+    depolarizes the egg membrane and starts the cleavage cascade. It is this electrical–ionic
+    activation that keeps a "born from the network" origin, like Kiri's, from being wholly outside
+    science.
+see_also:
+  - membrane-potential
+  - developmental-bioelectricity
+category: bio
+tags:
+  - developmental-biology
+  - physiology
+cover_prompt: >-
+  A painted single egg cell beginning to divide, a glowing ripple of ion activation sweeping across
+  its membrane, cool cyan pulse on deep indigo, schematic and luminous, no text, no labels, no
+  numbers.

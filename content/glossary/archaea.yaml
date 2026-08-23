@@ -1,0 +1,23 @@
+id: archaea
+label:
+  vi: Cổ khuẩn
+  en: Archaea
+definition:
+  vi: >-
+    Một trong ba lãnh giới (domain) của sự sống trên Trái Đất bên cạnh Vi khuẩn (Bacteria) và Sinh vật
+    nhân thực (Eukaryota). Dù sở hữu hình thái đơn bào vi mô tương tự vi khuẩn, phân tích phát sinh loài
+    phân tử và bộ máy sao chép di truyền cho thấy cổ khuẩn có mối liên hệ họ hàng tiến hóa gần gũi với
+    sinh vật nhân thực hơn là vi khuẩn thực sự.
+  en: >-
+    One of the three fundamental domains of cellular life alongside Bacteria and Eukarya. Despite sharing
+    a simple single-celled morphology with bacteria, molecular phylogenetics and genetic transcription
+    machinery reveal that archaea share a closer evolutionary ancestry with eukaryotes.
+see_also:
+  - endosymbiosis
+  - serial-endosymbiotic-theory
+category: bio
+tags:
+  - evolution
+  - astrobiology
+cover_prompt: >-
+  A detailed scientific illustration of extremophile single-celled archaea near a hydrothermal vent, showing distinct cellular membrane architecture with a faint golden bioluminescent glow, dark ocean background, no text, no labels.

@@ -1,0 +1,20 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "kiri-and-the-writable-biosphere",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate on the landing book-map: a young Na'vi girl at a submerged spirit tree with the living network reaching toward her and fish spiralling around her hand — the single image of a biosphere that reads and writes bodies, the visual thesis of a writable living network.",
+  "subject": "A young female Na'vi with luminous blue skin and faint bioluminescent freckles, kneeling in shallow moonlit water beside the pale glowing roots of a submerged spirit tree. One of her hands is lowered just beneath the water's surface, and a dense school of small silver-and-cyan bioluminescent fish spirals tightly around her fingers in a glowing vortex, all of them oriented toward her hand. From the tree's roots, fine luminous cyan threads reach through the water toward her body, as if the living network were listening to her.",
+  "scene": "An intimate underwater-edge scene at night: a girl, a submerged sacred tree, a swirl of responding fish, and threads of network light connecting tree to girl.",
+  "camera": "A three-quarter view from just above the waterline, close enough to hold the girl, her lowered hand, and the spiralling fish in one frame.",
+  "light": "Cool bioluminescent key from the fish, the tree roots, and the girl's own freckles; deep indigo water and night around; a soft rim of cyan on the girl's shoulder and hand.",
+  "palette": "Void-indigo and deep teal water base, dominant Pandora cyan and living teal in the fish, tree threads, and freckles; no warm accents; the far water dissolving into dark haze.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence, luminous and atmospheric.",
+  "detail_level": "Crisp and intricate on the girl's hand, the spiralling fish, and the reaching network threads; the surrounding water dissolving into haze.",
+  "composition": "The girl set slightly off-centre, her lowered hand and the fish-vortex forming the luminous focal point, the tree roots and their threads entering from one side, generous dark water for the plate to breathe.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "modern Earth objects"],
+  "consistency_notes": "Na'vi girl present as the focal subject. Cool Pandora palette with from-within bioluminescent key, no warm light. The 'a living network reads and writes a body' mood that anchors the whole chapter.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

@@ -1,0 +1,63 @@
+{
+  "viz": {
+    "morphogenGradientLab": {
+      "title": "The French-flag rule",
+      "subtitle": "A gradient tells cells what to become",
+      "hint": "Drag the decay length and the two thresholds. The same row of cells re-sorts into three fates — no cell is told individually what to be; each just reads the concentration where it sits.",
+      "aria": "A morphogen concentration curve above a row of cells that color into three fate bands by threshold.",
+      "sourceLabel": "morphogen source",
+      "lambda": "Decay length λ",
+      "t1": "Threshold T₁",
+      "t2": "Threshold T₂",
+      "t1Mark": "T₁",
+      "t2Mark": "T₂",
+      "fatesLabel": "Cells per fate",
+      "fatesNote": "high · mid · low"
+    },
+    "bioelectricMorphologyEditor": {
+      "title": "Rewriting a body's target shape",
+      "subtitle": "Voltage, not DNA, decides how many heads",
+      "prompt": "Set the bioelectric state of the trunk fragment, then regenerate — and try re-cutting the result.",
+      "aria": "A flatworm trunk fragment that regenerates into one head or two depending on its bioelectric state.",
+      "regenerate": "Regenerate",
+      "recut": "Re-cut in plain water",
+      "reset": "Reset",
+      "vmemLabel": "Bioelectric state",
+      "polarized": "Polarized",
+      "flat": "Flattened",
+      "vmemState": "Voltage gradient",
+      "gradientOn": "Head–tail",
+      "gradientOff": "Uniform",
+      "gradientOnNote": "normal head-to-tail voltage",
+      "gradientOffNote": "gap junctions uncoupled",
+      "resultLabel": "Regenerated form",
+      "idle": "—",
+      "oneHead": "One head",
+      "twoHead": "Two heads",
+      "memoryHeld": "Still two heads",
+      "oneHeadNote": "The default target morphology: one head, one tail.",
+      "twoHeadNote": "Flattening the gradient rewrites the target to two heads — no gene was edited.",
+      "memoryNote": "Re-cut in plain water with no further treatment, it regenerates two heads again: the rewritten target is remembered.",
+      "recutTag": "memory persists",
+      "headEnd": "head voltage",
+      "tailEnd": "tail voltage",
+      "flatEnd": "flat",
+      "dnaNote": "DNA unchanged throughout"
+    },
+    "swarmSteeringField": {
+      "title": "Steering a swarm you don't command",
+      "subtitle": "A bias in a few drags the whole school",
+      "aria": "A school of boids where a fraction feel an attractor and pull the rest into a coordinated turn.",
+      "play": "Play",
+      "pause": "Pause",
+      "biasLabel": "Fraction biased",
+      "ledLabel": "Boids led",
+      "ledNote": "feel the attractor",
+      "orderLabel": "Swarm alignment",
+      "orderNote": "how unified the heading is",
+      "noneNote": "No bias: the school mills with no shared direction — separation, alignment, and cohesion alone.",
+      "fewNote": "Only a few boids feel the attractor, yet alignment and cohesion propagate the pull and the whole school wheels to follow.",
+      "manyNote": "Most of the school is biased now; the turn is immediate. But even a small fraction was enough — you steer the collective, you never command each animal."
+    }
+  }
+}

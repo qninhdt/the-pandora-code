@@ -1,0 +1,34 @@
+{
+  "id": "fig-03-the-ancient-merger",
+  "chapter_slug": "spiders-second-biology",
+  "role": "diagram",
+  "narrative_purpose": "Makes the settled science of endosymbiosis concrete: two organisms becoming one, the merger that produced the mitochondria in every reader's cells — the deep-time proof that a guest can grant a host a new power.",
+  "subject": "A left-to-right sequence of three luminous cells against dark void: on the left a large simple host cell drawn as a soft glowing sphere; in the middle the same host cell with a smaller free-swimming rod-shaped bacterium being enveloped by an inward fold of the host's membrane; on the right the finished result — the bacterium now living inside the host as a glowing bean-shaped body with its own tiny internal loop, the whole cell larger and threaded with faint internal energy.",
+  "scene": "A three-stage schematic of one cell engulfing a bacterium and keeping it as an internal organelle.",
+  "camera": "A flat schematic side view, three cells in a row at equal size across the frame.",
+  "light": "Bioluminescent key from the cells themselves — cyan and teal internal glow; the engulfed bacterium slightly warmer teal to stand out; dark void between the stages.",
+  "palette": "Void-indigo background, Pandora cyan and living teal for the cells, the internal organelle a slightly brighter teal; no warm accents.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence, luminous and atmospheric.",
+  "detail_level": "Crisp on the three cells and the enveloping membrane fold; plain dark void between them for labels.",
+  "composition": "Three equal cells evenly spaced left to right, generous dark gaps between and below for stage labels.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding",
+    "modern Earth objects"
+  ],
+  "consistency_notes": "Schematic but painterly, not vector-flat. Cool palette. Leave clear dark space between stages for annotation.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": []
+}

@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-two-headed-planarian",
+  "chapter_slug": "kiri-and-the-writable-biosphere",
+  "role": "diagram",
+  "narrative_purpose": "The chapter's core evidence: a flatworm's head-versus-tail target morphology lives in its bioelectric voltage state, and flattening that state rewrites the body to two heads — a change remembered across re-cuttings, with no gene edited.",
+  "subject": "A two-panel diagram of a flatworm and its voltage state. LEFT PANEL: a normal flatworm with a single rounded head (two eyespots) at one end and a pointed tail at the other, beside a horizontal voltage-bar that fades smoothly from bright cyan at the head end to deep magenta at the tail end (a head-to-tail gradient). RIGHT PANEL: the same worm regrown with a rounded head at BOTH ends, no tail, beside a voltage-bar that is now a flat uniform cyan all along its length (the gradient erased). A small looping curved motif between the two panels suggests the two-headed form persists when cut again.",
+  "scene": "A comparison of a normal one-headed worm with a normal head-tail voltage gradient, and a rewritten two-headed worm with a flattened uniform voltage.",
+  "camera": "A flat schematic diptych, worm and its voltage-bar paired in each panel, the two panels side by side.",
+  "light": "Bioluminescent key from the worms and the voltage-bars; the head-to-tail gradient reading as a cyan-to-magenta fade, the flattened state as uniform cyan.",
+  "palette": "Void-indigo base; the normal voltage-bar fading cyan-to-magenta; the flattened bar uniform Pandora cyan; the worms in soft luminous cyan.",
+  "style": "Painterly speculative-biology naturalist plate as a luminous schematic, hand-painted texture, not vector-flat.",
+  "detail_level": "Crisp on the one-head-vs-two-head bodies and on the graded-vs-flat voltage bars so the mapping between voltage and shape reads instantly; plain dark margins for callouts.",
+  "composition": "Two equal panels with a dark gutter between; worm-plus-voltage-bar paired in each; the persistence loop-motif in the gutter; dark margins for labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "annotation arrows", "Avatar branding"],
+  "consistency_notes": "The mapping that must read: graded voltage = one head/one tail; flat voltage = two heads. The voltage-bars are subjects, not annotation. Leave dark margins for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

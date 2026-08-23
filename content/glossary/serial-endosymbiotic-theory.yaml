@@ -1,0 +1,26 @@
+id: serial-endosymbiotic-theory
+label:
+  vi: Thuyết nội cộng sinh nối tiếp
+  en: Serial endosymbiotic theory
+definition:
+  vi: Ý tưởng — được Lynn Margulis đưa vào dòng chính vào cuối thập niên 1960 bất chấp nhiều phản đối,
+    nay là một trong những thuyết vững chắc nhất của sinh học — rằng các tế bào phức tạp (nhân thực) ra
+    đời qua một chuỗi các cuộc hợp nhất cộng sinh, chứ không chỉ bằng đột biến dần dần. Một tế bào chủ
+    cổ đại nuốt một vi khuẩn hiếu khí và giữ nó lại làm ty thể; về sau một dòng khác thu nhận vi khuẩn
+    lam và biến nó thành lục lạp. Sự tiến hóa lớn đôi khi tiến bằng cách sáp nhập, không chỉ bằng phân
+    nhánh.
+  en: The idea — argued into the mainstream by Lynn Margulis in the late 1960s against much resistance,
+    now among biology's best-supported theories — that complex (eukaryotic) cells arose through a series
+    of symbiotic mergers, not by gradual mutation alone. An ancient host cell engulfed an aerobic bacterium
+    and kept it as the mitochondrion; later a lineage acquired a cyanobacterium and made it the chloroplast.
+    Major evolution sometimes proceeds by merger, not only by branching.
+see_also:
+- endosymbiosis
+- mitochondrion
+- endosymbiotic-gene-transfer
+category: bio
+tags:
+- evolution
+cover_prompt: A painterly sequence of three glowing cells in a row showing a small bacterium being enveloped
+  and becoming an internal organelle, an arrow of soft light implying time, cool teal and indigo palette,
+  no text, no labels.

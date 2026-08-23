@@ -1,0 +1,17 @@
+id: volcanic-explosivity-index
+label:
+  vi: Chỉ số phun trào núi lửa
+  en: Volcanic explosivity index
+definition:
+  vi: Một thang đo (viết tắt VEI) xếp hạng độ dữ dội của một vụ phun trào núi lửa theo thể tích vật chất phun ra và độ cao cột tro, mỗi bậc lớn hơn bậc dưới khoảng mười lần. Các vụ phun trào chôn vùi cả một vùng và làm sập miệng núi thành hõm chảo nằm ở đầu trên của thang. Một thế giới nóng hơn Trái Đất như Pandora sẽ sinh ra những sự kiện cỡ lớn ấy dễ dàng hơn.
+  en: A scale (abbreviated VEI) ranking the violence of a volcanic eruption by the volume of material ejected and the height of the ash column, each step roughly tenfold larger than the one below. The eruptions that bury a whole region and collapse a mountain into a caldera sit near the top of the scale. A world hotter than Earth, like Pandora, produces such large events more readily.
+see_also:
+  - pyroclastic-density-current
+  - partial-melting
+  - tidal-heating
+category: planet
+tags:
+- geology
+- earth-systems
+- planetary-science
+cover_prompt: A painted eruption scene showing a towering ash column rising tens of kilometers into a dark sky above a collapsing volcanic cone, glowing molten fissures at its base, ash spreading over the land, cool indigo sky with scarce ember-amber glow from the vent, painterly plate, no text or numbers.

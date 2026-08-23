@@ -1,0 +1,34 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "spiders-second-biology",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate on the landing book-map: a human boy in the act of breathing Pandoran air unaided, his body visibly rewritten from within by a living fungal network — the single image of the oldest trick in biology run at fast-forward.",
+  "subject": "A human teenager on Pandora at night seen from the chest up, in the act of lowering a breathing mask away from his face with one hand; beneath the skin of his throat, jaw, and shoulders a fine luminous cyan lattice of fungal threads glows softly, tracing the paths of his veins; from the base of his skull a slender nascent neural braid has begun to grow, wrapped in the same living light; his expression is astonishment, not fear, at drawing a breath that should have killed him.",
+  "scene": "A close portrait of a human boy at the moment he breathes unmasked in alien air, the mask lowered from his face.",
+  "camera": "A three-quarter close portrait from slightly below, head and shoulders filling the frame, the lowered mask just visible at the lower edge.",
+  "light": "Bioluminescent key from the fungal threads glowing under his skin — cool cyan and living teal light from within; a dim indigo Pandoran night behind; a faint warm ember catchlight in his eyes as the only warm accent.",
+  "palette": "Void-indigo and deep teal-indigo base, dominant Pandora cyan and living teal in the under-skin glow, scarce warm amber only in the eye catchlight, skin rendered in cool desaturated tones.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence, luminous and atmospheric.",
+  "detail_level": "Crisp and intricate on the glowing fungal lattice under the skin and the nascent braid at the nape; the background dissolving into soft night haze.",
+  "composition": "The boy's face and throat fill the upper two-thirds; the lowered mask and hand at the lower edge; generous dark negative space to one side for the plate to breathe.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding",
+    "modern Earth objects"
+  ],
+  "consistency_notes": "Na'vi absent; a human subject rendered as a naturalist portrait. Cool Pandora palette with from-within bioluminescent key. The 'a body being rewritten' mood that anchors the whole chapter.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": []
+}

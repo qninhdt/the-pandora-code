@@ -1,47 +1,45 @@
-# Component Palette - reuse, not a checklist
+# Component Authoring & Palette — Minimum 3 New Components per Chapter
 
-How `/pandora` chooses the interactive components for a chapter. This rule exists
-because the old project either ignored components or crammed them in; both hurt.
+How `/pandora` authors and integrates interactive components for each chapter.
+Every chapter in The Pandora Code is an interactive, explorable experience where
+visual and interactive models teach the STEM concepts.
 
-## The rule
+## The Rule
 
-The component library is a **reference palette that grows chapter by chapter**.
-It is **never a checklist** to satisfy. After reading the research note and
-forming the chapter plan, the author/art-director:
+1. **Build at least 3 new bespoke components per chapter.**
+   Each chapter MUST author, implement, and register at least 3 brand-new custom
+   components (interactive simulations, calculators, interactive 2D/3D physical
+   models, dynamic charts, comparative visualizers) tailored specifically to that
+   chapter's scientific phenomena and narrative beats.
+2. **Reusing existing components is allowed ONLY if strictly necessary.**
+   Do not lazily reuse components across chapters. Existing components from the
+   baseline or earlier chapters may only be reused if there is a strict, genuine
+   pedagogical justification (e.g., core infrastructural callouts or an exact
+   comparative fit). Reusing an existing component does NOT count toward the
+   mandatory minimum of 3 new bespoke components.
+3. **Plan components in Plan Mode (Step 0).**
+   Before authoring prose, identify the exact 3+ new components to create, their
+   props, what scientific mechanism they demonstrate, and how they interact with
+   the reader.
 
-1. **Reuse what exists right now.** The components present in the project at this
-   moment = the fresh baseline + everything accumulated from earlier chapters.
-   Pick only what *this* chapter genuinely needs.
-2. **Never force-fit.** Do not add a component just because it exists. A chapter
-   that needs three components uses three; one that needs eight uses eight.
-3. **Build bespoke when needed.** If the chapter needs something the library
-   doesn't have, build it. Different chapters legitimately need different (and
-   new) components. The library is *expected* to keep expanding.
+## Standards for New Components
 
-## Standards for new components
-
-New components match the existing baseline:
-- Registered in `apps/web/lib/mdx-components.ts` so MDX can use them.
-- Styled from design tokens (`apps/web/lib/design-tokens.ts` /
-  `globals.css`) - no hard-coded colors.
-- If 3D (react-three-fiber), ship a 2D fallback and obey the perf/fallback
-  gateway used by the other 3D components.
-- Mobile-verified (works at ~375px) and desktop.
-- Bilingual-ready: any visible strings come from props, so EN/VI both render.
-- For chart-like components, render human-facing text from props all the way
-  through the UI: axis labels, legends, tooltips, annotations. Do not expose
-  raw technical keys (`t`, `R`, `flux`) when a readable label exists.
+New components must match the existing codebase quality standards:
+- **Registered in `apps/web/lib/mdx-components.ts`** so MDX files can use them directly.
+- **Located under `apps/web/components/content/`** (or `apps/web/components/three/` if 3D).
+- **Styled from design tokens** (`apps/web/lib/design-tokens.ts` / `globals.css`) — no hard-coded arbitary colors.
+- **2D Fallback for 3D:** If using 3D (`react-three-fiber`), provide a smooth 2D fallback and respect WebGL capabilities and performance toggles.
+- **Mobile-verified:** Must function seamlessly on mobile screens (~375px) as well as desktop.
+- **Bilingual-ready (i18n):** All visible strings, axis labels, legends, tooltips, and annotations MUST be passed via props so both `en.mdx` and `vi.mdx` can localize them cleanly.
+- **Human-facing text:** Render clear human-readable labels throughout UI elements. Never expose raw variable names (`t`, `R`, `flux`, `omega`) without accessible labels.
 
 ## What NOT to do
 
-- Do NOT pull components from the old project - discarded for quality.
-- Do NOT reference plan artifacts (phase numbers, finding codes) in component
-  names, files, or comments. Name for what the component *is*.
-- Do NOT block a chapter waiting for a "complete" library - build what this
-  chapter needs and move on.
+- Do NOT skip the 3 new components requirement.
+- Do NOT reuse existing components just to fill space — only reuse if truly necessary.
+- Do NOT pull legacy components from old discarded projects.
+- Do NOT reference plan artifacts (phase numbers, finding codes) in component names, files, or comments. Name them for what they actually are (e.g., `SuperconductorMeissnerSimulator`, `AtmosphereDensityCalculator`).
 
-## Where to look
+## Live Inventory
 
-Browse `apps/web/components/content/` and `apps/web/components/three/` for the
-current palette before deciding to build new. The `/{locale}/design` page renders
-the live inventory - a fast way to see what already exists.
+Browse `apps/web/components/content/` and `apps/web/components/three/` to see the current inventory. The `/{locale}/design` page renders the live component catalog.

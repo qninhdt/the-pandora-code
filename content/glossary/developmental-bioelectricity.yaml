@@ -1,0 +1,32 @@
+id: developmental-bioelectricity
+label:
+  vi: Điện sinh học phát triển
+  en: Developmental bioelectricity
+definition:
+  vi: >-
+    Lớp thông tin hình thái nằm bên trên bộ gene: mọi tế bào sống đều duy trì một hiệu điện thế
+    ngang màng, và các hoa văn điện áp trải khắp một mô sẽ lưu trữ và áp đặt "hình dạng đích" mà cơ
+    thể phải dựng nên. Công trình của Michael Levin và cộng sự cho thấy chỉ cần thay đổi trạng thái
+    điện — không sửa một chữ cái ADN nào — là đủ để bắt một con sán dẹp mọc hai đầu, hay khiến một
+    con mắt hoàn chỉnh mọc ở nơi vốn không có mắt. Điện áp không tự vẽ nên cơ quan; nó bật công tắc
+    cho một chương trình phát triển sẵn có.
+  en: >-
+    A morphological information layer sitting on top of the genome: every living cell maintains a
+    voltage across its membrane, and spatial patterns of that voltage across a tissue store and
+    impose the "target morphology" the body builds toward. Work by Michael Levin and colleagues
+    shows that changing the electrical state alone — without editing a single letter of DNA — can
+    make a flatworm regrow two heads, or grow a complete eye where no eye belongs. The voltage does
+    not draft the organ; it flips a switch on an existing developmental program.
+see_also:
+  - membrane-potential
+  - target-morphology
+  - gap-junction
+  - morphogen
+category: bio
+tags:
+  - developmental-biology
+  - physiology
+cover_prompt: >-
+  A painted salamander-like embryo mapped with a gradient of glowing membrane-voltage colors, cool
+  cyan hyperpolarized regions outlining a future face and warm regions elsewhere, schematic and
+  luminous against dark indigo, no text, no labels, no numbers.

@@ -1,0 +1,33 @@
+{
+  "id": "fig-02-the-animal-that-farms-light",
+  "chapter_slug": "the-reef-as-substrate",
+  "role": "diagram",
+  "narrative_purpose": "Shows the coral holobiont: the reef-builder is an animal hosting photosynthetic algae inside its cells, and that partnership is the energy source for the skeleton.",
+  "subject": "A magnified cutaway of a single coral polyp. The translucent tube-shaped animal body has a ring of fine tentacles at the top and sits on a pale aragonite skeleton cup below it. The tissue is densely packed with round golden-brown algal cells glowing softly. A gentle flow of small warm-gold particles drifts inward from the algae into the animal tissue (sugar); a fainter stream of pale bubbles drifts outward from the animal (waste gas). Below the polyp, fresh pale skeleton is visibly forming as a layered rim.",
+  "scene": "Inside and just around one coral polyp, cool clear sunlit water above, dark skeleton cavity below.",
+  "camera": "Tight macro cross-section, the single polyp filling most of the frame.",
+  "light": "Sunlit teal from above, warm amber glow from the golden algae inside the tissue, cyan rim on the fresh skeleton.",
+  "palette": "Ocean teal water, warm amber-gold algae, pale mineral skeleton, void indigo cavity.",
+  "style": "Painterly microscopic naturalist plate, organic and glowing, not a vector infographic.",
+  "detail_level": "Crisp on the polyp tissue, algal cells and skeleton rim; soft open water around it for labels.",
+  "composition": "Central polyp with clear open regions upper-left and right for callouts marking algae, sugar flow, and forming skeleton.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "chemical formulas",
+    "callout lines",
+    "vector infographic look"
+  ],
+  "consistency_notes": "The golden cells are INSIDE the animal's tissue, not outside. Keep the amber-in-teal palette consistent with the zooxanthellae glossary look.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no labels, no arrows, no chemical formulas, no molecular diagrams, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

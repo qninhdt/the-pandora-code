@@ -1,0 +1,29 @@
+id: blastema
+label:
+  vi: Chồi tái sinh
+  en: Blastema
+definition:
+  vi: >-
+    Khối tế bào chưa biệt hóa hình thành tại vết cắt của một động vật có khả năng tái sinh — như kỳ
+    giông axolotl — và từ đó mọc lại nguyên một chi hoàn chỉnh. Chồi tái sinh phải tăng sinh, tạo
+    hình và biệt hóa theo trình tự, mất hàng tuần đến hàng tháng, và ở động vật có xương sống nó chỉ
+    hoạt động khi có dây thần kinh hiện diện. Chính giới hạn động học này là bức tường ngăn cách giữa
+    tái sinh có thật và chuyện "mọc lại tức thì" trong phim ảnh.
+  en: >-
+    The mass of undifferentiated cells that forms at the wound of a regeneration-capable animal —
+    like the axolotl — and regrows an entire, complete limb from scratch. The blastema must
+    proliferate, pattern, and differentiate in sequence, taking weeks to months, and in vertebrates
+    it only works when nerves are present. This kinetic limit is exactly the wall between real
+    regeneration and cinematic "instant regrowth."
+see_also:
+  - target-morphology
+  - neurotrophic-hypothesis
+  - developmental-bioelectricity
+category: bio
+tags:
+  - developmental-biology
+  - physiology
+cover_prompt: >-
+  A painted salamander limb stump with a glowing rounded bud of new cells at the cut, faint outline
+  of the limb it will regrow, cool cyan on deep indigo, schematic and luminous, no text, no labels,
+  no numbers.

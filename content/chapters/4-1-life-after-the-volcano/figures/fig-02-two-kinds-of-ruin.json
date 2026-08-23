@@ -1,0 +1,19 @@
+{
+  "id": "fig-02-two-kinds-of-ruin",
+  "chapter_slug": "life-after-the-volcano",
+  "role": "comparison",
+  "narrative_purpose": "Show the pivotal distinction visually: a survivable burn (secondary succession, soil and roots intact) versus a sterilising burial (primary succession, only bare rock), side by side.",
+  "subject": "A split-frame comparison. LEFT HALF: a fire-blackened forest floor where bright green shoots resprout from surviving charred tree stumps, the dark soil beneath intact and threaded with roots. RIGHT HALF: a deep grey pyroclastic burial, a calcined bare tree skeleton, only sterile mineral rock and ash with nothing growing and no visible soil.",
+  "scene": "Two adjacent Pandoran aftermaths divided by a clear vertical seam down the middle of the frame; left side charred but living, right side buried and dead.",
+  "camera": "Straight-on mid shot, both halves at the same eye level so the contrast reads immediately.",
+  "light": "Left half carries faint living cyan-green glow from the resprouting shoots; right half is flat, cold, unglowing grey-indigo.",
+  "palette": "Left: charred black with living teal-green accents. Right: uniform stone-grey and void indigo, no life colour.",
+  "style": "Painterly naturalist comparison plate, the two halves clearly distinct in mood.",
+  "detail_level": "Even detail on both halves so the resprouting shoots and the sterile rock are equally legible.",
+  "composition": "Clean vertical split down the centre, matched framing on each side, a charred stump on the left mirrored by a bare skeleton on the right.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "diagram lines", "RDA machinery", "photographic look"],
+  "consistency_notes": "Left = secondary succession (soil and roots survive, green returns); right = primary succession (sterile rock, nothing left). The seam between them is the whole point. Cool Pandora palette; green only on the living left half.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no 3D-render or photographic look, no cartoon style, no neon glow",
+  "style_refs": ["pandora-establishing.png"]
+}

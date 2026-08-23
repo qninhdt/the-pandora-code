@@ -1,0 +1,17 @@
+id: tidal-quality-factor
+label:
+  vi: Hệ số phẩm chất thủy triều
+  en: Tidal quality factor
+definition:
+  vi: Một con số (ký hiệu Q) đo mức độ "hao hụt" của mỗi chu kỳ uốn nắn thủy triều - tức bao nhiêu phần công bị mất thành nhiệt do ma sát thay vì bật trở lại. Q thấp nghĩa là hao hụt nhiều và sinh nhiều nhiệt; Q cao nghĩa là thiên thể đàn hồi gần như hoàn hảo và sưởi rất ít. Cùng với số Love, Q quyết định một quỹ đạo lệch tâm cho trước sẽ nung nóng lòng thiên thể mạnh đến đâu.
+  en: A number (written Q) measuring how "lossy" each cycle of tidal flexing is - how much of the work is dissipated as friction heat rather than sprung back. A low Q means high loss and lots of heat; a high Q means a nearly perfectly elastic body that barely warms. Together with the Love number, Q sets how strongly a given eccentric orbit heats an interior.
+see_also:
+  - love-number
+  - tidal-dissipation
+  - tidal-heating
+category: planet
+tags:
+- planetary-science
+- physics
+- orbital-mechanics
+cover_prompt: A painted abstract of a rock sample being cyclically squeezed, with a small fraction of each squeeze shown leaking away as warm amber heat glow while the rest springs back as cool motion, cool indigo dominant with scarce ember-amber accent, painterly plate, no text or numbers.

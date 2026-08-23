@@ -1,0 +1,17 @@
+id: dynamo-theory
+label:
+  vi: Thuyết dynamo
+  en: Dynamo theory
+definition:
+  vi: "Lời giải thích cách một hành tinh hay mặt trăng sinh ra từ trường của chính nó: dòng kim loại lỏng dẫn điện chảy đối lưu trong lõi, được nuôi bởi nhiệt bên trong và sự tự quay, tạo và duy trì từ trường như một máy phát tự nuôi. Điểm mấu chốt là chiều nhân quả - từ trường là sản phẩm của nhiệt bên trong, chứ không phải nguồn sinh ra nhiệt đó."
+  en: "The explanation of how a planet or moon generates its own magnetic field: convecting currents of electrically conductive liquid metal in the core, driven by internal heat and rotation, create and sustain the field like a self-feeding generator. The crucial point is the direction of cause - the magnetic field is a product of internal heat, not a source of it."
+see_also:
+  - induction-heating
+  - mantle-convection
+  - primordial-heat
+category: planet
+tags:
+- planetary-science
+- physics
+- geology
+cover_prompt: A painted cutaway of a planet's glowing molten metal outer core with swirling convective currents, faint magnetic field lines emerging from it and looping out around the whole world, warm amber core against cool indigo mantle and space, painterly cross-section, no text or arrows.

@@ -1,0 +1,34 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "spiders-second-biology",
+  "role": "hero",
+  "narrative_purpose": "The full-bleed atmospheric background the chapter's text floats over: a dim, vast, immersive Pandoran vista that sets mood without a bright focal subject.",
+  "subject": "An ultra-wide panoramic vista of a Pandoran forest at deep night seen from a very high vantage, the canopy stretching to a hazy horizon, threaded faintly throughout with a barely-there web of cyan bioluminescent connections between distant trees, everything dim and low in contrast, detail dissolving into atmospheric depth, no single bright subject anywhere.",
+  "scene": "A vast dim high-vantage forest nightscape as an immersive mood layer.",
+  "camera": "An extreme wide high-altitude panorama looking out and slightly down across an endless forest canopy to a hazy horizon.",
+  "light": "Very low, diffuse bioluminescent ambient — faint cyan threads scattered across a dark canopy; no bright key light; deep indigo sky fading to haze.",
+  "palette": "Overwhelmingly void-indigo and deep teal-indigo, only the faintest Pandora cyan in the scattered connective threads; dark and low-contrast throughout for text overlay.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence, luminous and atmospheric.",
+  "detail_level": "Deliberately low and soft — detail dissolving into haze so overlaid long-form text stays readable; no crisp focal element.",
+  "composition": "A wide horizon low in the frame, vast dim canopy and sky, no bright subject; uniform enough to carry text anywhere across it.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding",
+    "modern Earth objects"
+  ],
+  "consistency_notes": "A mood layer, not a figure to study. Dark, wide, hazy, low-contrast. Cool palette only, no warm accents, no focal subject.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": []
+}

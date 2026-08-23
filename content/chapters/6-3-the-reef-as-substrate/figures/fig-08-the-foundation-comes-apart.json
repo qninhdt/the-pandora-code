@@ -1,0 +1,38 @@
+{
+  "id": "fig-08-the-foundation-comes-apart",
+  "chapter_slug": "the-reef-as-substrate",
+  "role": "inline",
+  "narrative_purpose": "The fragility payload: a Metkayina village whose living foundation is failing both visibly (fire, ash) and invisibly (a dissolving, eroding reef beneath a calm surface).",
+  "subject": "A Metkayina pod-dwelling cluster over a reef in the act of failing. Above the waterline, drifting grey volcanic ash settles on the calm surface and one woven dwelling tilts as the living tree root supporting it sags and gives way. Below the waterline, the reef framework is pale and visibly dissolving at its edges, crumbling into grey rubble, its crevices collapsing, only a few faint patches of living colour left. The upper scene looks eerily calm while the underwater collapse is advanced.",
+  "scene": "A once-sheltered reef lagoon now stressed: hazy ashen air above, a decaying dissolving reef below, dim and quiet.",
+  "camera": "Vertical cross-section from ashen air down through the waterline to the failing reef floor.",
+  "light": "Muted, desaturated daylight above with drifting ash; below, faint dying cyan glow on the last living patches, cold grey on the dissolving framework, indigo in the collapsing cavities.",
+  "palette": "Desaturated ashen grey above, cold stone-grey dissolving reef, sparse dying cyan, void indigo shadow.",
+  "style": "Painterly naturalist plate, quiet and unsettling rather than explosive.",
+  "detail_level": "Crisp on the tilting dwelling, the sagging root and the dissolving reef edge; hazy calm elsewhere for callouts.",
+  "composition": "Calm ashen upper third, waterline across the middle, decaying reef lower two-thirds, open margins for labels contrasting visible vs invisible collapse.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "explosions",
+    "fireballs",
+    "RDA machinery",
+    "callout lines",
+    "Avatar branding"
+  ],
+  "consistency_notes": "The tone is quiet decay, not a battle. Same village and reef palette as the cover and fig-01, now failing. Dissolution shows as crumbling pale framework, not blast damage.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no labels, no arrows, no explosions, no fireballs, no combat, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "../public/images/chapters/the-reef-as-substrate/fig-00-cover.png"
+  ]
+}

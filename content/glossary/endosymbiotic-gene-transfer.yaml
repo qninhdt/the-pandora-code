@@ -1,0 +1,23 @@
+id: endosymbiotic-gene-transfer
+label:
+  vi: Chuyển gene nội cộng sinh
+  en: Endosymbiotic gene transfer
+definition:
+  vi: Quá trình theo đó, sau khi một cộng sinh nội bào dọn vào ở, các gene của nó dần di cư sang bộ gene
+    nhân của vật chủ. Theo thời gian vị khách mất khả năng tự chủ — bộ gene của nó teo lại, nhiều chức
+    năng do vật chủ điều khiển — và một cộng sinh độc lập biến thành một bào quan không thể tách rời.
+    Đây là một trong những bước then chốt phân biệt một kẻ ở trọ với một bộ phận cơ thể thực thụ.
+  en: The process by which, after an endosymbiont moves in, its genes gradually migrate into the host's
+    nuclear genome. Over time the guest loses autonomy — its genome shrinks, many functions come under
+    host control — and an independent symbiont becomes an inseparable organelle. It is one of the key
+    steps that turns a lodger into a genuine body part.
+see_also:
+- endosymbiosis
+- mitochondrion
+- serial-endosymbiotic-theory
+category: bio
+tags:
+- evolution
+cover_prompt: A painterly diagram of glowing gene-threads drifting from a small internal organelle toward
+  a larger central nucleus, thin luminous filaments crossing the cell, cool teal and indigo, no text,
+  no labels.

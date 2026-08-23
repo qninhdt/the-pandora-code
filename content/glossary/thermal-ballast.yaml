@@ -1,0 +1,25 @@
+id: thermal-ballast
+label:
+  vi: Khối dằn nhiệt
+  en: Thermal ballast
+definition:
+  vi: >-
+    Khả năng của một khối lượng vật chất lớn có nhiệt dung riêng cao (đặc biệt là các đại dương nước lỏng)
+    trong việc hấp thụ và từ từ giải phóng nhiệt lượng khổng lồ mà không làm biến thiên nhiệt độ đột ngột.
+    Khối dằn nhiệt của đại dương giúp làm phẳng các biên độ nhiệt độ cực đoan giữa ngày-đêm và giữa các mùa,
+    tạo ra vùng khí hậu êm dịu cho các vùng ven biển và ổn định nhiệt độ bề mặt toàn cầu.
+  en: >-
+    The capacity of a large physical mass with high specific heat capacity (most notably liquid water oceans)
+    to absorb and slowly release immense amounts of heat with minimal internal temperature change.
+    Thermal ballast dampens diurnal and seasonal temperature extremes across a planet, buffering coastal
+    climates and stabilizing global planetary surface temperatures.
+see_also:
+  - ocean-stratification
+  - upwelling
+category: concept
+tags:
+  - oceanography
+  - earth-systems
+  - planetary-science
+cover_prompt: >-
+  A cross-section illustration of an ocean absorbing intense daylight heat and gently releasing thermal currents into a cool evening coastal atmosphere, rich deep blue and warm amber palettes, stylized scientific naturalist diagram, no text, no labels.

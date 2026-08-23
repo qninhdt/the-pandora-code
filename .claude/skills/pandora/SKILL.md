@@ -46,13 +46,14 @@ second list. See `references/command-reference.md`.
 read outline.ts → first chapter with status != "published"
 check research/{slug}.md exists?
   NO  → route to pandora-research: write research/{slug}.prompt.md
-        print: open the prompt → run it in Gemini Deep Research →
-                paste the result into research/{slug}.md → run `/pandora next` again
+        print: copy prompt.md → run in Gemini Deep Research →
+                send English export prompt in same chat →
+                paste codeblock into research/{slug}.md → run `/pandora next` again
         STOP        ← THE ONLY MANUAL STOP. Do not continue. Do not guess canon.
   YES → ENTER PLAN MODE before reading the note or writing (see Hard Rules #2)
         then run automatically, with NO further prompts:
           0. read research/{slug}.md + outline → a short chapter plan
-             (structure, dual-payload beats, components to reuse/create, figure list)
+             (structure, dual-payload beats, plan for ≥3 new bespoke components, strictly justified reuse of existing components, figure list)
           1. pandora-author      → content/chapters/{slug}/en.mdx (5–7k words, fusion voice)
           2. pandora-art-director → 7–10 inline figure specs + fig-00 cover
           3. scripts/gen-images.ts --chapter {slug}   → PNGs + flips asset_status
@@ -103,7 +104,12 @@ Full detail, including `meta.yaml` authoring and the status taxonomy, lives in
    `GLOSSARY_TAGS` + a vi/en label to `GLOSSARY_TAG_LABELS`), then use it. Adding
    a tag ad-hoc in content YAML without registering it fails schema validation.
 
-6. **Components are a reference palette, not a checklist.** See the rule below.
+6. **At least 3 new bespoke components per chapter; reuse old only if truly necessary.**
+   Every chapter MUST build and introduce at least 3 new custom interactive components
+   tailored specifically to the chapter's unique scientific mechanisms and narrative beats.
+   Reusing existing components is permitted ONLY when strictly necessary and explicitly
+   justified in the chapter plan; never default to reusing old components out of convenience.
+   See the rule below and `references/component-palette.md`.
 
 7. **All code / identifiers / filenames / comments / commit messages in English.**
    Reader prose: EN authored first → VI translated. VI is the default display
@@ -129,23 +135,24 @@ Full detail, including `meta.yaml` authoring and the status taxonomy, lives in
    or another visual already communicates the same beat better; record that
    reason in the chapter plan.
 
-## Component selection (palette, not checklist)
+## Component authoring (at least 3 new components per chapter)
 
-The component library is a **reference palette that grows chapter by chapter** -
-never a fixed checklist to satisfy. After reading the research note, the
-author/art-director:
+Each chapter must deliver high interactive depth and visual explanation:
 
-- **Reuse** the components that exist in the project _at that moment_ (the fresh
-  baseline plus everything accumulated from earlier chapters). Pick only what this
-  chapter genuinely needs. **Never force-fit or cram in a component** to "use it".
-- **Build new bespoke components** for anything the chapter needs that doesn't
-  exist yet. Different chapters legitimately need different (and new) components;
-  the library is expected to keep expanding.
+- **Build at least 3 new bespoke components** per chapter (interactive
+  simulations, calculators, comparative diagrams, 2D/3D physical models, sensor
+  visualizers) specifically designed to make that chapter's STEM payload
+  tangible and explorable.
+- **Strictly limit reuse of existing components.** Reusing components from earlier
+  chapters or the baseline is only allowed if strictly and genuinely necessary
+  (e.g., core infrastructural callouts or an exact pedagogical fit). Reusing an
+  existing component does NOT count toward the minimum requirement of 3 new components.
 
-New components follow the existing component standards: registered in
+New components follow the project's component standards: registered in
 `apps/web/lib/mdx-components.ts`, styled from design tokens, a 2D fallback if 3D,
-mobile-verified. The old project's components are NOT a source - they were
-discarded for quality. See `references/component-palette.md`.
+mobile-verified (~375px), and bilingual-ready (props for all text labels).
+The old project's components are NOT a source - they were discarded for quality.
+See `references/component-palette.md`.
 
 ## Routing table (internal - user never sees these)
 
@@ -162,6 +169,8 @@ discarded for quality. See `references/component-palette.md`.
 ## Definition of done (per chapter)
 
 - `content/chapters/{slug}/{meta.yaml,en.mdx,vi.mdx}` exist and validate.
+- Includes at least 3 newly created bespoke interactive components registered in
+  `apps/web/lib/mdx-components.ts`; any reused components are strictly necessary and justified.
 - `figures/fig-NN-*.json` present; images generated; `asset_status: ready`.
 - Standard 5–7k-word chapters contain 7–10 distinct inline figures, plus the
   cover; any justified lower count is called out in the chapter plan.

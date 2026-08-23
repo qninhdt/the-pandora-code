@@ -1,0 +1,18 @@
+id: radiogenic-heating
+label:
+  vi: Nhiệt phóng xạ
+  en: Radiogenic heating
+definition:
+  vi: "Nhiệt sinh ra bên trong một thiên thể do sự phân rã của các nguyên tố phóng xạ sống lâu rải rác trong đá - chủ yếu là uranium, thorium và một dạng của potassium. Mỗi lần phân rã giải phóng một chút năng lượng; cộng lại trên toàn bộ lớp phủ, đây là nguồn nhiệt lớn với Trái Đất. Nhưng đó là một quỹ cạn dần: nhiên liệu phóng xạ càng ngày càng ít, nên ngọn lửa này yếu đi theo từng tỉ năm."
+  en: "Heat produced inside a body by the decay of long-lived radioactive elements scattered through its rock - chiefly uranium, thorium, and a form of potassium. Each decay releases a flick of energy; summed over a whole mantle it is a major source for Earth. But it is a dwindling fund: the radioactive fuel is steadily consumed, so the fire burns lower with every passing eon."
+see_also:
+  - primordial-heat
+  - tidal-heating
+  - half-life
+  - geoneutrino
+category: planet
+tags:
+- geology
+- planetary-science
+- physics
+cover_prompt: A painted cutaway of a rocky planet's mantle with tiny scattered points of warm amber light representing decaying radioactive atoms deep in the dark rock, faint heat rising toward the crust, cool indigo dominant with scarce ember-amber glow, painterly cross-section, no text or labels.

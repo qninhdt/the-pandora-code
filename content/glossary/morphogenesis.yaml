@@ -1,0 +1,25 @@
+id: morphogenesis
+label:
+  vi: Sự tạo hình
+  en: Morphogenesis
+definition:
+  vi: Quá trình một cơ thể tự dựng nên hình dạng của mình — các tế bào biết mình đang ở đâu và phải trở
+    thành gì, nhờ những gradient hóa học báo vị trí và những gene bật tắt theo trình tự nghiêm ngặt. Phần
+    lớn sự tạo hình diễn ra sớm, trong phôi, rồi khóa lại. Mọc một cơ quan hoàn toàn mới trên một cơ thể
+    đã trưởng thành đòi hỏi khởi động lại chính chương trình này mà không để nó biến thành sinh trưởng
+    hỗn loạn.
+  en: The process by which a body builds its own shape — cells knowing where they are and what to become,
+    guided by chemical gradients that signal position and genes switching on and off in strict sequence.
+    Most morphogenesis happens early, in the embryo, and then locks. Growing a wholly new organ on an
+    adult body demands restarting that very program without letting it collapse into disorganized growth.
+see_also:
+- canalization
+- blastema
+- bioelectricity
+- neural-crest
+category: bio
+tags:
+- physiology
+- evolution
+cover_prompt: A painterly study of a cluster of cells organizing along glowing positional gradients into
+  an ordered emerging structure, faint coordinate-like light fields, cool teal and cyan, no text, no labels.

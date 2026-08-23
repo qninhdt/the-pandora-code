@@ -1,0 +1,17 @@
+id: love-number
+label:
+  vi: Số Love
+  en: Love number
+definition:
+  vi: Một con số không thứ nguyên đo mức độ dễ biến dạng của phần bên trong một thiên thể dưới lực hấp dẫn kéo lên nó - đặt theo tên nhà toán học Augustus Love. Số Love càng lớn thì thiên thể càng dễ bị nhào nặn, và càng sinh nhiều nhiệt thủy triều. Một lớp phủ ấm, mềm, một phần nóng chảy có số Love cao hơn hẳn một lớp phủ lạnh và cứng.
+  en: A dimensionless number measuring how readily a body's interior deforms under the gravitational pull acting on it - named for the mathematician Augustus Love. A larger Love number means the body is more easily kneaded, and so makes more tidal heat. A warm, soft, partly molten mantle has a much higher Love number than a cold rigid one.
+see_also:
+  - tidal-heating
+  - tidal-dissipation
+  - tidal-quality-factor
+category: planet
+tags:
+- planetary-science
+- physics
+- orbital-mechanics
+cover_prompt: A painted diagram-like scene contrasting two identical moons beside a gas giant, one drawn as rigid and barely distorted, the other visibly stretched and softened with a faint molten interior, cool indigo palette with scarce amber glow on the softer moon, painterly astronomical plate, no text or numbers.

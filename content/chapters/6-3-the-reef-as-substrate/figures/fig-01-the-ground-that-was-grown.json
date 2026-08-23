@@ -1,0 +1,37 @@
+{
+  "id": "fig-01-the-ground-that-was-grown",
+  "chapter_slug": "the-reef-as-substrate",
+  "role": "inline",
+  "narrative_purpose": "Anchors the cold open: shows that every load-bearing surface of the village \u2014 roots, seawall, lagoon floor \u2014 is biological, not geological.",
+  "subject": "A cutaway side view of a Metkayina dwelling cluster and the reef beneath it. At the top, a woven pod-dwelling hangs from the thick arching aerial roots of a giant mangrove-like tree. The roots plunge into clear water and spread into a dense living root matrix. Below, the seabed is a pale accreted limestone-like platform riddled with cavities, its living upper surface carpeted with branching and massive coral-analogue colonies. To one side, a low cascading terraced seawall rises in stepped rimmed pools.",
+  "scene": "A shallow reef lagoon shown in vertical cross-section from air above to reef floor below, calm water, a few fish among the coral.",
+  "camera": "Straight-on side elevation, layered top-to-bottom: dwelling, roots, water column, living reef floor.",
+  "light": "Cool teal water light, cyan glow along the living coral rim and root tips, dim indigo in the deeper cavities, faint warm accent in the dwelling.",
+  "palette": "Ocean teal and void indigo, cyan living-edge glow, one small warm amber dwelling accent.",
+  "style": "Painterly naturalist cross-section plate, observed field-illustration energy.",
+  "detail_level": "Crisp on the root matrix and the living-vs-accreted reef boundary; open low-detail water for overlay labels.",
+  "composition": "Clear vertical stack with open dark water on the left margin for callouts, structure banked to the right.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "callout lines",
+    "rigid pilings",
+    "concrete",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Dwelling hangs from LIVING roots; the seabed shows a clear boundary between living coral veneer on top and pale accreted framework below. Keep the same reef palette as the cover.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no labels, no arrows, no leader lines, no concrete pilings, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "../public/images/chapters/the-reef-as-substrate/fig-00-cover.png"
+  ]
+}

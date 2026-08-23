@@ -1,0 +1,33 @@
+{
+  "id": "fig-05-a-structure-older-than-the-clan",
+  "chapter_slug": "the-reef-as-substrate",
+  "role": "diagram",
+  "narrative_purpose": "Shows Darwin's atoll succession: as a volcanic island subsides, the reef keeps building upward, outliving the rock it started on \u2014 the deep-time origin of a reef platform.",
+  "subject": "A three-stage left-to-right sequence of the same volcanic island shown at three moments. Stage one (left): a tall conical volcanic island with a thin fringing reef hugging its shore. Stage two (middle): the island is lower and partly sunk, with a wider reef standing off from it enclosing a lagoon between reef and shore. Stage three (right): the island has vanished beneath the surface, leaving a ring-shaped reef enclosing a central lagoon of open water. A faint dashed outline of the sinking island connects the three stages beneath the waterline.",
+  "scene": "Open tropical sea shown in side-on cross-section across three stages, waterline consistent across the frame, reef always reaching up to the light.",
+  "camera": "Wide side-elevation triptych in one continuous seascape, three stages evenly spaced.",
+  "light": "Cyan glow along each living reef crest at the waterline, warm-neutral on the volcanic rock, indigo in the deep water below.",
+  "palette": "Ocean teal water, cyan reef crest, stone-grey volcanic rock fading as it sinks, void indigo depths.",
+  "style": "Painterly naturalist geological cross-section plate, calm and diagrammatic but organic.",
+  "detail_level": "Clear reef crest and island silhouette at each stage; simple graded water for callouts.",
+  "composition": "Three evenly spaced stages left-to-right with open water band above for stage callouts (fringing, barrier, atoll).",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "stage numbers",
+    "callout lines",
+    "panel borders"
+  ],
+  "consistency_notes": "The reef crest stays at the waterline across all three stages while the island sinks \u2014 that persistence is the whole point. Keep the reef palette consistent with earlier figures.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no numbers, no arrows, no stage captions, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

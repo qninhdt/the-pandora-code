@@ -1,0 +1,29 @@
+id: boids-model
+label:
+  vi: Mô hình boids
+  en: Boids model
+definition:
+  vi: >-
+    Mô hình do Craig Reynolds nêu năm 1987 cho thấy hành vi bầy đàn phức tạp — đàn chim, đàn cá —
+    nảy sinh chỉ từ ba quy tắc cục bộ mà mỗi cá thể tự thực thi, không cần thủ lĩnh: tránh va chạm
+    (tách), theo hướng chung của láng giềng (canh), và tiến về trung tâm bầy (kết). Quỹ đạo cả bầy
+    là hiện tượng trồi. Hệ quả then chốt: muốn lái cả một đàn cá, không cần tính toán cho từng con —
+    chỉ cần gieo một thiên lệch cục bộ vào một phần nhỏ, cả bầy sẽ cuốn theo.
+  en: >-
+    Craig Reynolds' 1987 model showing that complex flocking — bird flocks, fish schools — emerges
+    from just three local rules each individual runs, with no leader: avoid collisions
+    (separation), match neighbors' heading (alignment), and steer toward the local center
+    (cohesion). The whole flock's path is an emergent phenomenon. The key consequence: to steer an
+    entire school you need not compute for each fish — seed a local bias into a small fraction and
+    the whole swarm follows.
+see_also:
+  - kuramoto-model
+  - stigmergy
+  - quorum-sensing
+category: concept
+tags:
+  - collective-behavior
+cover_prompt: >-
+  A painted school of small glowing fish-shapes flowing in a coordinated arc, a few near the front
+  turning and the rest cascading to follow, cool cyan on deep indigo, schematic and luminous, no
+  text, no labels, no numbers.

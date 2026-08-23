@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-magnet-not-magma",
+  "chapter_slug": "what-keeps-pandora-volcanically-alive",
+  "role": "inline",
+  "narrative_purpose": "Illustrates the chapter's constructive correction: magnetism levitates Pandora's mountains but cannot melt rock. A floating mountain held aloft by field lines is shown as cold and dark, while the moon's heat glow comes from deep inside, not from the field.",
+  "subject": "A dramatic Pandoran floating mountain suspended in mid-air above a landscape, wrapped and cradled by smooth glowing cyan magnetic field lines that hold it up. The mountain itself is dark, cold rock - no glow, no lava - making clear the magnetism only lifts, never heats. Far below and behind, the land shows dull ember-red molten cracks whose warmth clearly rises from deep underground, unconnected to the cool floating field.",
+  "scene": "A twilight Pandoran highland where a mountain hangs held by visible magnetic field lines, cold above, with faint deep-earth volcanic glow far below.",
+  "camera": "Dramatic upward-looking wide shot of the floating mountain held in glowing field lines, the warm ground glow small and far beneath.",
+  "light": "Cool cyan magnetic-field glow around and under the floating mountain as the eye-catch, the mountain itself unlit and dark; a scarce separate dull ember-red glow from ground cracks far below.",
+  "palette": "Dominant void-indigo and cool cyan field-line glow on the levitating mountain, the mountain dark and cold, a scarce distant ember-red ground accent kept clearly separate.",
+  "style": "Painterly astronomical/landscape plate, naturalistic rock, luminous cool field lines.",
+  "detail_level": "Crisp on the dark floating mountain and the cyan field lines cradling it; the distant ground glow soft and small.",
+  "composition": "Floating dark mountain high in the frame wrapped in cool glowing field lines, the warm deep-earth glow small and low, generous dark sky - the cool lift and the warm heat visibly separated.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "lava on the floating mountain", "spacecraft"],
+  "consistency_notes": "Floating mountain and cyan flux styling consistent with the floating-mountains chapter. Crucial: the levitating mountain is cold/dark (magnetism = lift), and any warm glow is clearly deep underground (heat = tidal), so the two never merge.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no lava on the floating rock, no photographic or 3D-render look, no lens flares, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"]
+}

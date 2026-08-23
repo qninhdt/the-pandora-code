@@ -1,0 +1,25 @@
+id: endosymbiosis
+label:
+  vi: Cộng sinh nội bào
+  en: Endosymbiosis
+definition:
+  vi: 'Trường hợp cộng sinh mật thiết nhất: một sinh vật sống ngay bên trong tế bào hoặc cơ thể của một
+    sinh vật khác. Đây không phải chuyện hiếm của quá khứ xa xôi mà là sự kiện đã tạo nên sự sống phức
+    tạp — ty thể trong mọi tế bào của bạn và lục lạp trong mọi chiếc lá đều là những vi khuẩn từng sống
+    tự do rồi dọn vào ở và không bao giờ rời đi. Vị khách trao cho vật chủ một năng lực trao đổi chất
+    mới; vật chủ trao lại nơi trú ngụ và nguồn sống.'
+  en: 'The most intimate case of symbiosis: one organism living inside the cells or body of another. Far
+    from a rare curiosity, it is the event that produced complex life — the mitochondria in every cell
+    of your body and the chloroplasts in every leaf are once-free-living bacteria that moved in and never
+    left. The guest hands the host a new metabolic power; the host provides shelter and sustenance.'
+see_also:
+- symbiosis
+- serial-endosymbiotic-theory
+- mitochondrion
+- holobiont
+category: bio
+tags:
+- evolution
+- physiology
+cover_prompt: A painterly naturalist study of a large glowing cell with a smaller luminous organism nestled
+  living inside it, fine cyan threads binding the two into one, deep indigo background, no text, no labels.

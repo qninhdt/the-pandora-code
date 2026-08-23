@@ -10,10 +10,12 @@ literal so the user always gets a path + a next command, never a vague error.
 ```
 [pandora] Chapter "{slug}" has no research note yet.
 
-  1. Open the generated prompt:   research/{slug}.prompt.md
-  2. Run it in Gemini Deep Research.
-  3. Paste the full result into:  research/{slug}.md
-  4. Run `/pandora next` again.
+  1. Copy the full prompt from: research/{slug}.prompt.md
+  2. Paste and run it in Gemini Deep Research.
+  3. When Deep Research completes, send this follow-up prompt in the same Gemini chat:
+     "Please provide the complete research report as raw Markdown inside a single codeblock, preserving all LaTeX formulas ($...$, $$...$$) and reference links with full URLs. Do not include any conversational preamble, intro text, or outro."
+  4. Copy the raw markdown from inside the codeblock into: research/{slug}.md
+  5. Run `/pandora next` again.
 
 Stopping here - this is the only manual step. I will not invent Pandora canon.
 ```

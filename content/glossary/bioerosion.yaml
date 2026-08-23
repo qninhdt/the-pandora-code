@@ -1,0 +1,30 @@
+id: bioerosion
+label:
+  vi: Xói mòn sinh học
+  en: Bioerosion
+definition:
+  vi: >-
+    Sự phá hủy đá vôi rạn san hô do chính sinh vật gây ra, chứ không phải do sóng hay hóa chất đơn
+    thuần. Cá vẹt dùng hàm như mỏ neo cạo cả mảng khung san hô để ăn tảo bám; bọt biển khoan, thân
+    mềm và giun đục hầm xuyên vào bộ xương từ bên trong; tảo và vi khuẩn nội thạch gặm mòn ở cấp vi
+    mô. Đây là vế "nợ" trong cán cân cacbonat: một rạn khỏe vẫn xây nhanh hơn mức bị bào, nhưng
+    khi san hô sống suy giảm, xói mòn sinh học thắng thế và cái nền bắt đầu rỗng ruột rồi sụp.
+  en: >-
+    The breakdown of reef limestone caused by living organisms, not by waves or chemistry alone.
+    Parrotfish scrape whole mouthfuls of coral framework to eat the algae on it; boring sponges,
+    molluscs and worms tunnel into the skeleton from within; endolithic algae and bacteria erode it
+    at the microscopic scale. This is the "debit" side of the [[carbonate-budget]]: a healthy reef
+    still builds faster than it is ground down, but once live coral declines, bioerosion wins and the
+    foundation begins to hollow out and collapse.
+see_also:
+  - carbonate-budget
+  - biogenic-reef
+  - rugosity
+category: concept
+tags:
+  - oceanography
+  - ecology
+cover_prompt: >-
+  A painterly reef close-up showing a parrotfish scraping a coral surface and a cross-section of
+  limestone riddled with sponge borings and worm tunnels, cool teal water and dark indigo, faint
+  cyan glow, painterly naturalist plate, no text, no labels.

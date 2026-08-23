@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-kiri-anomaly-catalog",
+  "chapter_slug": "kiri-and-the-writable-biosphere",
+  "role": "comparison",
+  "narrative_purpose": "Establishes what sets Kiri apart from ordinary Na'vi: not a stronger endpoint but a different kind of node — a two-way transceiver that senses and steers many organisms at once, often without contact.",
+  "subject": "A triptych of three glowing figures on dark ground. LEFT: a baseline Na'vi shown in profile, a single physical queue-tendril reaching out to touch one animal, one thin link between them. MIDDLE: a similar figure, again one physical tendril to one animal, nearly identical. RIGHT (larger, central emphasis): a young Na'vi girl standing with no tendrils out, yet surrounded by a ring of small animals and plants all turned to face her, with faint radiating field-lines spreading from her body to each of them, no physical contact.",
+  "scene": "A comparison of interface types: two one-to-one, by-touch endpoints and one contactless many-at-once transceiver.",
+  "camera": "A flat schematic row of three figures at equal ground level, the rightmost given slightly more space and emphasis.",
+  "light": "Bioluminescent key from the queue-links and the girl's radiating field-lines; the two left figures quiet, the right figure the luminous focus.",
+  "palette": "Void-indigo base, Pandora cyan and teal for the links and field-lines, faint magenta accent on the girl's radiating lines to mark the active outgoing signal.",
+  "style": "Painterly speculative-biology naturalist plate as a luminous schematic, hand-painted texture, not vector-flat.",
+  "detail_level": "Crisp on the difference between single by-touch links (left, middle) and the contactless radiating ring (right); plain dark margins for callouts.",
+  "composition": "Three figures left to right with dark gutters between; the rightmost surrounded by its ring of responding organisms; dark margins for annotation labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "The contrast that must read: left/middle = one link, by touch; right = many, contactless. Cool palette, faint magenta only on the girl's outgoing field. Leave dark margins for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/kiri-and-the-writable-biosphere/fig-00-cover.png"]
+}

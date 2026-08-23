@@ -1,0 +1,24 @@
+id: immune-tolerance
+label:
+  vi: Dung nạp miễn dịch
+  en: Immune tolerance
+definition:
+  vi: 'Khả năng của một cơ thể chấp nhận sự hiện diện của một sinh vật hoặc mô ngoại lai mà không tấn
+    công tiêu diệt nó — trong khi vẫn giữ nguyên hàng phòng thủ chống lại mọi thứ khác. Đây là rào cản
+    đầu tiên mà bất kỳ cộng sinh nội bào nào cũng phải vượt: hệ miễn dịch vốn được dựng lên để tìm và
+    diệt đúng loại xâm nhập ấy. Trái Đất giải bài toán này nhiều cách — mực tắt phòng thủ hóa học, thai
+    người được dung nạp dù mang nửa gene lạ.'
+  en: A body's ability to accept the presence of a foreign organism or tissue without mounting a destructive
+    attack on it — while keeping its defenses against everything else intact. It is the first hurdle any
+    endosymbiont must clear, because the immune system is built precisely to find and destroy that kind
+    of intruder. Earth solves it several ways — the squid switches off a chemical defense, a mammalian
+    pregnancy tolerates half-foreign tissue for months.
+see_also:
+- endosymbiosis
+- holobiont
+- symbiosis
+category: bio
+tags:
+- physiology
+cover_prompt: A painterly scene of glowing immune sentinel cells standing down around a calm foreign guest,
+  their alarm signals dimmed to soft cool light, forming a permissive ring, deep indigo, no text, no labels.

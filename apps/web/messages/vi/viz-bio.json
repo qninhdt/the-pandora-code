@@ -526,7 +526,12 @@
       "hint": "Sử dụng thanh trượt để kéo cây mọc cao lên. Khi các tầng mới xuất hiện, những ổ sinh thái mới mở ra mà không hề giẫm chân lên nhau tranh giành không gian.",
       "treeHeight": "Độ cao cây",
       "niches": "Ổ sinh thái",
-      "strataNames": ["Thảm rừng", "Tầng dưới tán", "Vòm lá", "Tầng vượt tán"],
+      "strataNames": [
+        "Thảm rừng",
+        "Tầng dưới tán",
+        "Vòm lá",
+        "Tầng vượt tán"
+      ],
       "floor": "Thảm rừng",
       "understory": "Tầng dưới tán",
       "canopy": "Vòm lá",
@@ -842,7 +847,11 @@
       "title": "Một lỗ rỗng là cả một lục địa",
       "subtitle": "Nước nối các láng giềng vi sinh, rồi khép cánh cửa oxy",
       "controlLabel": "Độ ẩm của đất",
-      "state": { "dry": "Khô", "moist": "Ẩm vừa", "saturated": "Bão hòa" },
+      "state": {
+        "dry": "Khô",
+        "moist": "Ẩm vừa",
+        "saturated": "Bão hòa"
+      },
       "grain": "hạt khoáng",
       "waterFilm": "màng nước",
       "oxygen": "oxy",
@@ -862,8 +871,16 @@
         "moist": "Sẵn có",
         "saturated": "Thấp; có túi yếm khí"
       },
-      "connectivity": { "dry": "Đứt đoạn", "moist": "Liền mạch", "saturated": "Liền mạch" },
-      "turnover": { "dry": "Đình trệ", "moist": "Nhanh", "saturated": "Chậm lại" },
+      "connectivity": {
+        "dry": "Đứt đoạn",
+        "moist": "Liền mạch",
+        "saturated": "Liền mạch"
+      },
+      "turnover": {
+        "dry": "Đình trệ",
+        "moist": "Nhanh",
+        "saturated": "Chậm lại"
+      },
       "verdict": {
         "dry": "Không khí dồi dào nhưng những xa lộ nước đã đứt. Tế bào không chạm được cơ chất hay nhau.",
         "moist": "Màng nước mỏng đưa cơ chất tới trong khi khoảng khí vẫn cấp oxy—đây là vùng nhộn nhịp nhất.",
@@ -879,14 +896,25 @@
       "title": "Mục tiêu không chịu đứng yên",
       "subtitle": "So sánh leo thang một chiều với chu kỳ Nữ hoàng Đỏ",
       "modeLabel": "Động lực đồng tiến hóa",
-      "mode": { "fluctuating": "Mục tiêu đổi chỗ", "armsRace": "Chạy đua vũ trang" },
+      "mode": {
+        "fluctuating": "Mục tiêu đổi chỗ",
+        "armsRace": "Chạy đua vũ trang"
+      },
       "generationLabel": "Thế hệ",
       "generation": "Thế hệ {n}",
       "hostRow": "Kiểu gene vật chủ",
       "pathogenRow": "Kiểu mầm bệnh",
       "tracking": "mầm bệnh bám theo kiểu phổ biến",
-      "genotype": { "a": "Vật chủ A", "b": "Vật chủ B", "c": "Vật chủ C" },
-      "pathogen": { "a": "Mầm bệnh A", "b": "Mầm bệnh B", "c": "Mầm bệnh C" },
+      "genotype": {
+        "a": "Vật chủ A",
+        "b": "Vật chủ B",
+        "c": "Vật chủ C"
+      },
+      "pathogen": {
+        "a": "Mầm bệnh A",
+        "b": "Mầm bệnh B",
+        "c": "Mầm bệnh C"
+      },
       "defence": "Phòng vệ chung của vật chủ",
       "attack": "Đòn đối phó của mầm bệnh",
       "armsAria": "Sự leo thang một chiều giữa phòng vệ và tấn công",
@@ -1071,6 +1099,99 @@
         "largeCavities": "~350 năm — hốc đủ lớn cho loài có xương sống cỡ lớn",
         "oldGrowth": "~800 năm — vỏ dày nứt sâu, đất treo trên tán, đủ độ phức tạp",
         "hometree": "~20.000 năm — lượng cấu trúc tích tụ của một Hometree"
+      }
+    },
+    "symbiontIntegrationMap": {
+      "title": "Spider đứng ở đâu giữa những kẻ ở trọ của Trái Đất",
+      "subtitle": "Mọi quan hệ cộng sinh nội bào đều trả lời hai câu hỏi: di truyền hay thu nhận, khách trọ hay bộ phận vĩnh viễn.",
+      "hint": "Chọn một mối quan hệ để xem nó dạy ta điều gì. Spider là ngoại lệ — thu nhận tươi mới như loài mực, nhưng hợp nhất sâu và nhanh đến mức không gì ở đây sánh được.",
+      "aria": "Biểu đồ phân tán các quan hệ cộng sinh nội bào theo phương thức thu nhận và độ sâu hợp nhất",
+      "axisInherited": "Di truyền",
+      "axisAcquired": "Thu nhận tươi",
+      "axisTenant": "Khách trọ tháo gỡ được",
+      "axisPermanent": "Bộ phận vĩnh viễn",
+      "selectedLabel": "Đang chọn",
+      "earthNote": "Một quan hệ có thật trên Trái Đất",
+      "spiderNote": "Ngoại lệ Pandora",
+      "case": {
+        "mitochondrion": {
+          "short": "Ty thể",
+          "name": "Ty thể",
+          "note": "Vi khuẩn cổ đại đã trở thành nhà máy điện của tế bào bạn — di truyền, và hợp nhất trọn vẹn đến mức nay là một bào quan bạn không thể sống thiếu."
+        },
+        "buchnera": {
+          "short": "Buchnera",
+          "name": "Rệp–Buchnera",
+          "note": "Một vi khuẩn được nuôi trong tế bào chuyên biệt của rệp, tạo ra các axit amin mà nhựa cây thiếu. Di truyền từ mẹ, bắt buộc cho cả hai bên suốt hơn 100 triệu năm."
+        },
+        "paulinella": {
+          "short": "Paulinella",
+          "name": "Paulinella",
+          "note": "Một trùng amip đang giữa cuộc hợp nhất, biến một vi khuẩn lam nuốt vào thành bào quan vĩnh viễn — một lục lạp thứ hai đang ra đời sau hàng chục triệu năm."
+        },
+        "symbiodinium": {
+          "short": "San hô",
+          "name": "San hô–tảo",
+          "note": "Tảo vàng sống trong mô san hô, nuôi nó bằng ánh nắng. Thường được thu nhận tươi và có thể bỏ đi — một đợt nóng khiến san hô tống chúng ra và bạc trắng."
+        },
+        "vibrio": {
+          "short": "Mực",
+          "name": "Mực–Vibrio",
+          "note": "Mực đuôi cụt nở ra không mang cộng sinh, trong vài giờ phải thu nhặt bạn đồng hành phát sáng từ nước biển và dựng một cơ quan phát quang quanh nó. Trường hợp mẫu mực của việc thu nhận cộng sinh tươi."
+        },
+        "oophila": {
+          "short": "Kỳ giông",
+          "name": "Kỳ giông–tảo",
+          "note": "Tảo lục xâm nhập vào chính tế bào phôi kỳ giông — trường hợp rõ nhất về một vị khách quang hợp sống bên trong tế bào động vật có xương sống, thu nhận từ môi trường quanh trứng."
+        },
+        "spider": {
+          "short": "Spider",
+          "name": "Spider Socorro",
+          "note": "Một cộng sinh nấm sợi được thu nhận cùng một lúc, trong cơn nguy cấp, từ mạng lưới sống của Pandora — rồi hợp nhất đủ sâu và vĩnh viễn để viết lại hô hấp và cơ thể một người trưởng thành, ở tốc độ không gì trên Trái Đất sánh kịp."
+        }
+      }
+    },
+    "respiratoryScrubberDial": {
+      "title": "Hít thở một bầu trời độc",
+      "subtitle": "Vì sao không khí Pandora giết người — và làm sao một cộng sinh có thể khiến nó thở được.",
+      "aria": "Một lá phổi sơ đồ với CO₂ và H₂S môi trường điều chỉnh được cùng một bộ lọc nấm sợi bật/tắt",
+      "filterLabel": "Bộ lọc nấm sợi",
+      "filterOff": "Không lọc",
+      "filterOn": "Lớp lọc",
+      "offHint": "Không mặt nạ giữa không khí Pandora thô: gradient CO₂ đảo ngược tràn vào máu và sulfide làm nghẽn ty thể. Tăng các núm để thấy nó hóa chí mạng nhanh thế nào.",
+      "safeHint": "Với một màng nấm sợi lót đường thở — các enzyme ăn CO₂ đi vào và trung hòa sulfide trước khi chúng chạm tới máu — chính bầu trời độc ấy trở nên thở được.",
+      "partialHint": "Bộ lọc có giúp, nhưng ở mức này vẫn đủ độc lọt qua để khiến cơ thể lâm nguy. Một máy lọc sống cũng có giới hạn.",
+      "phLabel": "pH máu",
+      "phNote": "7.4 khỏe · dưới 6.8 tử vong",
+      "mitoLabel": "Ty thể hoạt động",
+      "mitoNote": "Sulfide làm nghẽn enzyme oxy",
+      "co2Slider": "CO₂ môi trường",
+      "h2sSlider": "H₂S môi trường",
+      "filterLining": "Lớp lọc sống",
+      "bareLining": "Đường thở người trần",
+      "verdict": {
+        "safe": "Đang thở",
+        "distress": "Lâm nguy",
+        "fatal": "Tử vong"
+      }
+    },
+    "organogenesisGate": {
+      "title": "Mọc một cơ quan chưa từng có",
+      "subtitle": "Mô trưởng thành khóa kín chương trình dựng cơ thể — vì một lý do chính đáng.",
+      "aria": "Một mảng mô trưởng thành có sự sinh trưởng được điều khiển bằng thanh trượt độ mạch lạc của khuôn mẫu điện sinh học",
+      "outcomeLabel": "Kết quả",
+      "coherenceSlider": "Độ mạch lạc khuôn mẫu điện sinh học",
+      "tissueLabel": "Mảng mô trưởng thành",
+      "windowNote": "Khe hở giữa 'không gì cả' và 'ung thư' rất hẹp",
+      "outcome": {
+        "dormant": "Khóa kín",
+        "tumour": "Sinh trưởng hỗn loạn",
+        "organ": "Queue có tổ chức"
+      },
+      "hint": {
+        "dormant": "Quá ít tín hiệu thì chương trình phát triển vẫn khóa — không gì mọc lên. An toàn, nhưng cũng không có cơ quan nào.",
+        "tumour": "Chương trình mở lại mà thiếu kiểm soát không gian, và kết quả đúng là thứ mà cái khóa sinh ra để ngăn: một khối hỗn loạn kiểu u bướu, không phải một cơ quan.",
+        "organ": "Với một bản thiết kế điện sinh học mạch lạc áp lên mảng mô, sinh trưởng được dẫn vào một blastema có tổ chức rồi kéo dài thành một queue. Đây là bước nhảy chưa sinh học Trái Đất nào thực hiện được với một cơ quan hoàn toàn mới."
       }
     }
   }

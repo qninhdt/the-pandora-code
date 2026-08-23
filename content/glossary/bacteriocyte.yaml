@@ -1,0 +1,23 @@
+id: bacteriocyte
+label:
+  vi: Tế bào chứa khuẩn
+  en: Bacteriocyte
+definition:
+  vi: 'Một tế bào chuyên biệt của vật chủ tồn tại để chứa các vi khuẩn cộng sinh nội bào. Ở loài rệp,
+    các tế bào chứa khuẩn nuôi giữ vi khuẩn Buchnera sản xuất những axit amin mà nhựa cây thiếu. Sự tồn
+    tại của một loại tế bào dành riêng cho việc nuôi khách cho thấy quan hệ cộng sinh đã sâu đến mức nào:
+    vật chủ đã tiến hóa hạ tầng chỉ để giữ lấy vị khách của mình.'
+  en: 'A specialized host cell that exists to house intracellular symbiotic bacteria. In aphids, bacteriocytes
+    maintain the bacterium Buchnera, which manufactures the amino acids the aphid''s sap diet lacks. The
+    very existence of a cell type dedicated to housing a guest shows how deep a symbiosis has become:
+    the host has evolved infrastructure purely to keep its partner.'
+see_also:
+- endosymbiosis
+- horizontal-transmission
+- symbiosis
+category: bio
+tags:
+- physiology
+- evolution
+cover_prompt: A painterly cutaway of a swollen host cell densely packed with small glowing rod-shaped
+  bacteria, the cell membrane cradling them, warm-cool teal light, deep background, no text, no labels.

@@ -1,0 +1,20 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "kiri-and-the-writable-biosphere",
+  "role": "hero",
+  "narrative_purpose": "The chapter's full-bleed atmospheric background layer: a vast dim submerged forest of glowing network threads that the long-form text floats over, setting the 'living, listening network' mood without a bright focal subject.",
+  "subject": "An ultra-wide, very high-vantage panorama over a vast submerged Pandoran forest at night, seen through deep water: countless faint threads of cyan bioluminescent network light webbing between dim, distant root-trees, spreading toward every horizon and dissolving into haze. No figures, no bright focal subject — only the immense, quiet lattice of a living network fading into darkness.",
+  "scene": "A boundless, dim, submerged network of faint glowing threads receding into atmospheric haze — a mood vista, not a figure to study.",
+  "camera": "An ultra-wide panoramic vantage from very high above, looking out across the submerged forest to a distant hazy horizon.",
+  "light": "Very low-contrast, dark; faint diffuse cyan glow from the distant network threads only; no bright key, deep shadow throughout so overlaid text stays readable.",
+  "palette": "Deep void-indigo and near-black water base, sparse dim Pandora cyan in the far threads, everything low-saturation and dissolving into haze.",
+  "style": "Painterly speculative-biology naturalist plate, atmospheric and immersive, hand-painted texture, deliberately dim and recessive.",
+  "detail_level": "Soft and low-detail throughout, everything dissolving into deep atmospheric haze; no sharp focal element; suitable as a dark backdrop under long text.",
+  "composition": "Ultra-wide horizontal vista, faint network threads spread evenly and receding to a hazy horizon, generous dark low-contrast field across the whole frame for overlaid text.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "bright focal subject", "figures", "Avatar branding"],
+  "consistency_notes": "Background mood layer only: dark, wide, low-contrast, no bright subject, detail dissolving into haze so long-form text floats readably on top. Distinct from the crisp cover.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no bright focal point, no figures, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

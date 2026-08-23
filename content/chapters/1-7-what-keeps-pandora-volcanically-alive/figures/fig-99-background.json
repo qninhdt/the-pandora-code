@@ -1,0 +1,20 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "what-keeps-pandora-volcanically-alive",
+  "role": "hero",
+  "narrative_purpose": "The dim full-bleed atmospheric backdrop the chapter's text floats over: a vast dark volcanic ashland plain under a smoke-dimmed sky with faint distant vent glow, evoking the chapter's fire-and-ash mood, deliberately low-contrast so overlaid text stays readable.",
+  "subject": "A vast panoramic ashland plain of dark basalt and drifting grey ash stretching to a low horizon, faint threads of dull ember-red glow marking distant volcanic vents far away, slow veils of smoke layering the air. Almost everything is dark silhouette dissolving into haze; a pale dim curve of a gas giant sits low and distant on the horizon.",
+  "scene": "A wide desolate volcanic vista from a high, far vantage at deep smoky twilight, immense atmospheric haze layering the distance, everything dissolving into murk - mood, not a figure to study.",
+  "camera": "Ultra-wide panoramic vista from a very high distant vantage, horizon low in the frame, great depth of layered smoke haze.",
+  "light": "Very dark and low-contrast; a faint scattered dull ember-red glow from distant vents, deep indigo smoke shadow everywhere else; no bright focal light.",
+  "palette": "Dominant void-indigo and charcoal ash-grey, a faint scattered dull ember-red on the far horizon, dim overall.",
+  "style": "Painterly atmospheric vista, soft, dark, immersive; detail dissolving into smoke haze.",
+  "detail_level": "Low and soft throughout - deliberately dim and hazy so long-form text can float over it and stay legible.",
+  "composition": "Low horizon; dark ash plains receding across the frame; wide empty hazy smoke sky above; nothing bright competing for attention.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "bright focal subject", "high contrast", "sharp foreground detail", "human figures"],
+  "consistency_notes": "Same cool Pandora palette drained toward ash-grey; any gas giant matches Polyphemus. Must stay dark and low-contrast as a background layer, distinct from the crisp bright cover.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no bright focal point, no high contrast, no sharp foreground, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-99-background.png"]
+}

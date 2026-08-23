@@ -478,7 +478,12 @@
       "hint": "Use the slider to grow the tree. As new layers emerge, new ecological niches open up without competing for space.",
       "treeHeight": "Tree Height",
       "niches": "Ecological Niches",
-      "strataNames": ["Forest Floor", "Understory", "Canopy", "Emergent Layer"],
+      "strataNames": [
+        "Forest Floor",
+        "Understory",
+        "Canopy",
+        "Emergent Layer"
+      ],
       "floor": "Floor",
       "understory": "Understory",
       "canopy": "Canopy",
@@ -794,7 +799,11 @@
       "title": "A pore is a continent",
       "subtitle": "Water connects microbial neighbours, then shuts the oxygen door",
       "controlLabel": "Soil moisture",
-      "state": { "dry": "Dry", "moist": "Moist", "saturated": "Saturated" },
+      "state": {
+        "dry": "Dry",
+        "moist": "Moist",
+        "saturated": "Saturated"
+      },
       "grain": "mineral grain",
       "waterFilm": "water film",
       "oxygen": "oxygen",
@@ -814,8 +823,16 @@
         "moist": "Available",
         "saturated": "Low; anoxic pockets"
       },
-      "connectivity": { "dry": "Fragmented", "moist": "Connected", "saturated": "Connected" },
-      "turnover": { "dry": "Stalled", "moist": "Fast", "saturated": "Slower" },
+      "connectivity": {
+        "dry": "Fragmented",
+        "moist": "Connected",
+        "saturated": "Connected"
+      },
+      "turnover": {
+        "dry": "Stalled",
+        "moist": "Fast",
+        "saturated": "Slower"
+      },
       "verdict": {
         "dry": "Air is plentiful, but the water highways are broken. Cells cannot reach substrate or one another.",
         "moist": "Thin connected films deliver substrate while gas-filled space still supplies oxygen—the busy middle.",
@@ -831,14 +848,25 @@
       "title": "The target that will not stay still",
       "subtitle": "Compare directional escalation with a Red Queen cycle",
       "modeLabel": "Coevolutionary dynamic",
-      "mode": { "fluctuating": "Changing target", "armsRace": "Arms race" },
+      "mode": {
+        "fluctuating": "Changing target",
+        "armsRace": "Arms race"
+      },
       "generationLabel": "Generation",
       "generation": "Generation {n}",
       "hostRow": "Host genotypes",
       "pathogenRow": "Pathogen types",
       "tracking": "the pathogen tracks what is common",
-      "genotype": { "a": "Host A", "b": "Host B", "c": "Host C" },
-      "pathogen": { "a": "Pathogen A", "b": "Pathogen B", "c": "Pathogen C" },
+      "genotype": {
+        "a": "Host A",
+        "b": "Host B",
+        "c": "Host C"
+      },
+      "pathogen": {
+        "a": "Pathogen A",
+        "b": "Pathogen B",
+        "c": "Pathogen C"
+      },
       "defence": "Shared host defence",
       "attack": "Pathogen countermeasure",
       "armsAria": "Directional escalation between defence and attack",
@@ -1023,6 +1051,99 @@
         "largeCavities": "~350 yr — cavities big enough for large vertebrates",
         "oldGrowth": "~800 yr — deep bark, canopy soil, full complexity",
         "hometree": "~20,000 yr — one Hometree's accumulated structure"
+      }
+    },
+    "symbiontIntegrationMap": {
+      "title": "Where Spider fits among Earth's lodgers",
+      "subtitle": "Every endosymbiosis answers two questions: inherited or acquired, tenant or permanent part.",
+      "hint": "Select any partnership to read what it teaches. Spider is the outlier — acquired fresh like the squid's, yet integrated as deeply and as fast as nothing else here.",
+      "aria": "Scatter plot of endosymbioses by acquisition mode and integration depth",
+      "axisInherited": "Inherited",
+      "axisAcquired": "Acquired fresh",
+      "axisTenant": "Removable tenant",
+      "axisPermanent": "Permanent part",
+      "selectedLabel": "Selected",
+      "earthNote": "A real Earth partnership",
+      "spiderNote": "The Pandoran outlier",
+      "case": {
+        "mitochondrion": {
+          "short": "Mito",
+          "name": "Mitochondrion",
+          "note": "The ancient bacterium that became your cells' power plant — inherited, and integrated so completely it is now an organelle you cannot live without."
+        },
+        "buchnera": {
+          "short": "Buchnera",
+          "name": "Aphid–Buchnera",
+          "note": "A bacterium housed in special aphid cells, making the amino acids the aphid's sap diet lacks. Inherited from the mother, obligate on both sides for over 100 million years."
+        },
+        "paulinella": {
+          "short": "Paulinella",
+          "name": "Paulinella",
+          "note": "An amoeba caught mid-merger, turning a swallowed cyanobacterium into a permanent organelle — a second chloroplast being born tens of millions of years in."
+        },
+        "symbiodinium": {
+          "short": "Coral",
+          "name": "Coral–algae",
+          "note": "Golden algae living inside coral tissue, feeding it with sunlight. Often acquired fresh, and expendable — a heatwave makes the coral expel them and bleach white."
+        },
+        "vibrio": {
+          "short": "Squid",
+          "name": "Squid–Vibrio",
+          "note": "The bobtail squid hatches with no symbiont and harvests its glowing partner from seawater within hours, building a light organ around it. The model case of acquiring a symbiont fresh."
+        },
+        "oophila": {
+          "short": "Salamander",
+          "name": "Salamander–algae",
+          "note": "Green algae that invade a salamander embryo's own cells — the clearest case of a photosynthetic guest living inside vertebrate cells, acquired from the egg's surroundings."
+        },
+        "spider": {
+          "short": "Spider",
+          "name": "Spider Socorro",
+          "note": "A mycelial symbiont acquired all at once, under duress, from Pandora's living network — then integrated deeply and permanently enough to rewrite an adult human's breathing and body, at a speed nothing on Earth approaches."
+        }
+      }
+    },
+    "respiratoryScrubberDial": {
+      "title": "Breathing a poison sky",
+      "subtitle": "Why Pandora's air kills — and how a symbiont could make it breathable.",
+      "aria": "A schematic lung with adjustable ambient carbon dioxide and hydrogen sulfide and a toggleable mycelial filter",
+      "filterLabel": "Mycelial filter",
+      "filterOff": "No filter",
+      "filterOn": "Filter lining",
+      "offHint": "Unmasked in raw Pandoran air: the reversed CO₂ gradient floods the blood and sulfide jams the mitochondria. Raise the dials to see how fast it turns fatal.",
+      "safeHint": "With a mycelial film lining the airway — enzymes eating incoming CO₂ and neutralizing sulfide before they reach the blood — the same poison sky becomes breathable.",
+      "partialHint": "The filter helps, but at these levels enough toxin still gets through to leave the body in distress. A living scrubber has limits too.",
+      "phLabel": "Blood pH",
+      "phNote": "7.4 healthy · below 6.8 fatal",
+      "mitoLabel": "Mitochondria working",
+      "mitoNote": "Sulfide jams the oxygen enzyme",
+      "co2Slider": "Ambient CO₂",
+      "h2sSlider": "Ambient H₂S",
+      "filterLining": "Living filter lining",
+      "bareLining": "Bare human airway",
+      "verdict": {
+        "safe": "Breathing",
+        "distress": "In distress",
+        "fatal": "Fatal"
+      }
+    },
+    "organogenesisGate": {
+      "title": "Growing an organ that was never there",
+      "subtitle": "Adult tissue keeps its build program sealed — for good reason.",
+      "aria": "A patch of adult tissue whose growth is controlled by a bioelectric pattern coherence slider",
+      "outcomeLabel": "Result",
+      "coherenceSlider": "Bioelectric pattern coherence",
+      "tissueLabel": "Adult tissue patch",
+      "windowNote": "The window between 'nothing' and 'cancer' is narrow",
+      "outcome": {
+        "dormant": "Sealed",
+        "tumour": "Disorganized growth",
+        "organ": "Organized queue"
+      },
+      "hint": {
+        "dormant": "Too little signal and the developmental program stays locked — nothing grows. Safe, but no organ either.",
+        "tumour": "The program reopens without enough spatial control, and the result is exactly what the lock exists to prevent: a disorganized, tumour-like mass, not an organ.",
+        "organ": "With a coherent bioelectric blueprint imposed on the patch, growth channels into an organized blastema that extends into a queue. This is the leap no Earth biology has yet made on a novel organ."
       }
     }
   }

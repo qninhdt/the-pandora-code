@@ -1,0 +1,24 @@
+id: holobiont
+label:
+  vi: Siêu sinh thể
+  en: Holobiont
+definition:
+  vi: 'Một cơ thể được nhìn nhận đúng bản chất: không phải một cá thể đơn độc mà là một liên minh của
+    vật chủ cùng tất cả các sinh vật cộng sinh sống trong và trên nó. Bạn là một siêu sinh thể — người
+    cộng với hàng nghìn tỉ vi sinh vật và những ty thể vốn từng là vi khuẩn. Khái niệm này biến câu hỏi
+    ''sinh vật này là gì'' thành ''liên minh này gồm những ai'', và làm cho một cơ thể bị viết lại bởi
+    cộng sinh trở nên dễ hình dung hơn.'
+  en: 'A body seen for what it really is: not a lone individual but a coalition of a host together with
+    all the symbiotic organisms living in and on it. You are a holobiont — human plus trillions of microbes
+    plus the mitochondria that were once bacteria. The concept turns the question ''what is this organism''
+    into ''who is in this coalition'', and makes a body rewritten by symbiosis far easier to imagine.'
+see_also:
+- endosymbiosis
+- symbiosis
+- coral-holobiont
+category: bio
+tags:
+- ecology
+- evolution
+cover_prompt: A painterly portrait of a single glowing silhouette revealed to be composed of countless
+  smaller luminous organisms woven together, cool teal and cyan on indigo, no text, no labels.

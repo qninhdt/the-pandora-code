@@ -1,0 +1,34 @@
+{
+  "id": "fig-08-wiring-in",
+  "chapter_slug": "spiders-second-biology",
+  "role": "diagram",
+  "narrative_purpose": "Illustrates Hurdle 4 — neural integration — showing the new braid's nerve fibres finding their way inward along the fungal scaffold and the brain remapping to adopt the new sense.",
+  "subject": "Two joined halves against dark ground: on the left, fine nerve fibres emerging from the base of a newly grown neural braid threading inward along glowing cyan fungal guide-strands to reach the spinal cord and brain stem; on the right, a stylized soft top-down map of a brain's sensory surface with a new patch of territory lighting up in bright cyan among the existing dimmer regions, showing the brain reallocating map space to the new incoming channel.",
+  "scene": "A two-part diagram of nerve fibres routing inward and a brain map reallocating to a new sense.",
+  "camera": "A flat schematic view, the nerve-routing scene left and the brain map right, joined across the middle.",
+  "light": "Bioluminescent key from the nerve fibres and fungal guide-strands and from the newly lit brain region — cyan and living teal; existing brain regions dimmer teal.",
+  "palette": "Void-indigo base, Pandora cyan and living teal, the newly annexed brain patch the brightest cyan, existing regions a dim teal; no warm accents.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence, luminous and atmospheric.",
+  "detail_level": "Crisp on the fibres following the guide-strands and on the newly lit brain patch; surrounding areas kept dim and simple.",
+  "composition": "Nerve routing on the left, brain map on the right, joined mid-frame; dark margins above and below for labels.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding",
+    "modern Earth objects"
+  ],
+  "consistency_notes": "The new channel reads as the brightest element on both sides. Cool palette. Leave dark space for annotation.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": []
+}

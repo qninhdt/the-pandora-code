@@ -1,0 +1,18 @@
+id: tidal-dissipation
+label:
+  vi: Tiêu tán thủy triều
+  en: Tidal dissipation
+definition:
+  vi: Quá trình năng lượng cơ học của việc uốn nắn thủy triều bị biến thành nhiệt bên trong một thiên thể. Vì đá không đàn hồi hoàn hảo, mỗi lần bị ép rồi thả ra, một phần công không bật trở lại thành chuyển động mà ở lại dưới dạng nhiệt do ma sát nội tại. Lặp lại hàng tỉ lần, dòng nhiệt nhỏ này trở thành nguồn sưởi chính giữ cho các mặt trăng như Io hay Pandora nóng chảy.
+  en: The process by which the mechanical energy of tidal flexing is converted into heat inside a body. Because rock is not perfectly elastic, each squeeze-and-release leaves a little work behind as frictional heat rather than returning it as motion. Repeated billions of times, that trickle becomes the dominant furnace keeping moons like Io - or Pandora - molten.
+see_also:
+  - tidal-heating
+  - love-number
+  - tidal-quality-factor
+  - mantle-convection
+category: planet
+tags:
+- planetary-science
+- orbital-mechanics
+- physics
+cover_prompt: A painted cutaway of a moon being stretched into a faint egg shape by a huge gas giant off to one side, its interior webbed with glowing orange fractures where the flexing rock heats up, cool indigo space around, deliberate scarce ember-amber glow, painterly astronomical plate, no text or labels.

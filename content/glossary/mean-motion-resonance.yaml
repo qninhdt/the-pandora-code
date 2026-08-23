@@ -1,0 +1,17 @@
+id: mean-motion-resonance
+label:
+  vi: Cộng hưởng chuyển động trung bình
+  en: Mean-motion resonance
+definition:
+  vi: Trạng thái trong đó chu kỳ quỹ đạo của hai (hay nhiều) mặt trăng khớp nhau theo một tỉ lệ số nguyên đơn giản - chẳng hạn một mặt trăng quay đúng hai vòng cho mỗi vòng của mặt trăng kia. Vì chúng trở lại đúng vị trí thẳng hàng lặp đi lặp lại, các cú kéo hấp dẫn không triệt tiêu nhau mà cộng dồn, giữ cho quỹ đạo hơi lệch tâm và nuôi sống động cơ nhiệt thủy triều qua hàng tỉ năm.
+  en: A state in which the orbital periods of two (or more) moons match in a simple whole-number ratio - one moon completing exactly two laps for each lap of another, say. Because they return to the same alignment again and again, their gravitational tugs accumulate instead of cancelling, holding an orbit slightly eccentric and feeding the tidal-heating engine across billions of years.
+see_also:
+  - laplace-resonance
+  - orbital-resonance
+  - tidal-heating
+category: planet
+tags:
+- orbital-mechanics
+- planetary-science
+- astronomy
+cover_prompt: A painted view of two moons of different sizes on nested circular orbits around a banded gas giant, caught aligned in a row on one side, faint glowing tick marks spaced evenly along each ring hinting at a 2-to-1 rhythm, cool indigo palette, painterly astronomical plate, no text or numbers.

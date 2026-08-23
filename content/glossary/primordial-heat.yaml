@@ -1,0 +1,18 @@
+id: primordial-heat
+label:
+  vi: Nhiệt nguyên thủy
+  en: Primordial heat
+definition:
+  vi: Nhiệt mà một thiên thể sinh ra cùng và giữ lại từ lúc hình thành - từ động năng của vô số vụ va chạm khi nó bồi tụ lại với nhau, cộng với năng lượng hấp dẫn giải phóng khi sắt nặng chìm xuống tạo lõi. Đó là số dư mở đầu trong tài khoản nhiệt của một hành tinh, và kể từ ngày đầu tiên nó chỉ rò rỉ dần ra không gian mà không có gì bù lại.
+  en: The heat a body is born with and retains from its formation - from the kinetic energy of the countless collisions as it accreted together, plus the gravitational energy released as heavy iron sank to form a core. It is the opening balance in a world's heat account, and from the first day it only leaks slowly away into space with nothing to replace it.
+see_also:
+  - accretion
+  - planetary-differentiation
+  - radiogenic-heating
+  - tidal-heating
+category: planet
+tags:
+- planetary-science
+- geology
+- physics
+cover_prompt: A painted scene of a very young molten planet glowing deep orange-red across its whole surface, wisps of heat radiating into the surrounding dark, faint infalling debris streaking in, cool indigo void framing the hot newborn world, painterly astronomical plate, no text or labels.

@@ -1,0 +1,19 @@
+{
+  "id": "fig-06-the-crust-that-says-no",
+  "chapter_slug": "life-after-the-volcano",
+  "role": "diagram",
+  "narrative_purpose": "Make the physical inhibitor stack tangible: a hardened hydrophobic ash crust a seedling cannot pierce, water beading and running off, and an erosion rill ready to strip anything that establishes.",
+  "subject": "A close view of a cracked, hardened grey ash crust on a gentle slope. A single small seedling wilts where its root failed to penetrate the crust. Beads of rainwater sit on the crust surface and trickle downhill rather than soaking in. A shallow erosion rill (a small gully) cuts down the slope nearby, carrying loose grey sediment.",
+  "scene": "A barren ashland slope surface in close view, the cracked crust filling most of the frame, the rill cutting through one side.",
+  "camera": "Close low oblique shot across the crust surface, following the slope downhill.",
+  "light": "Dim flat overcast light; the wilting seedling carries only the faintest fading teal, emphasising failure; cool grey throughout.",
+  "palette": "Uniform stone-grey crust and indigo shadow in the cracks, a weak fading teal on the dying seedling, no warm accent.",
+  "style": "Painterly naturalist plate, bleak surface study.",
+  "detail_level": "High detail on the cracked crust texture, the beading water and the failing seedling; slope softens into haze.",
+  "composition": "Cracked crust across the frame, the seedling just off-centre, water beads catching light, the rill cutting one edge; leave a plain dim area for later callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "healthy plants", "lush growth", "photographic look"],
+  "consistency_notes": "Everything signals a hostile surface: sealed crust, water running off not soaking in, erosion, a failing seedling. No thriving vegetation anywhere. Cool grey Pandora palette. Keep open dark space for callouts.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no healthy vegetation, no 3D-render or photographic look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

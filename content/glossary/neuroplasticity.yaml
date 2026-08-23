@@ -1,0 +1,25 @@
+id: neuroplasticity
+label:
+  vi: Tính mềm dẻo thần kinh
+  en: Neuroplasticity
+definition:
+  vi: Khả năng của não người trưởng thành tự tổ chức lại quanh những đầu vào và đầu ra mới, phân bổ lại
+    'bản đồ' của nó cho một kênh mà nó chưa từng được thiết kế để nhận. Người học 'nhìn' qua một camera
+    nối vào lưỡi, bệnh nhân điều khiển chi robot, tình nguyện viên gắn thêm ngón tay cái — tất cả cho
+    thấy não có thể sáp nhập một giác quan mới. Đó là lý do bước cuối của Spider — não học cách cảm nhận
+    qua queue — là rào cản ta có thể quan sát con người vượt qua ngay hôm nay.
+  en: The adult human brain's ability to reorganize around new inputs and outputs, reallocating its 'map'
+    to a channel it was never designed to receive. People who learn to 'see' through a camera wired to
+    the tongue, patients controlling robotic limbs, volunteers fitted with an extra thumb — all show the
+    brain annexing a new sense. It is why Spider's final step — the brain learning to feel through the
+    queue — is a hurdle we can watch humans clear today.
+see_also:
+- neural-crest
+- queue
+- tsaheylu
+category: bio
+tags:
+- physiology
+- sensory-biology
+cover_prompt: A painterly top-down map of a brain's sensory surface with a new patch of territory lighting
+  up in cyan as the map reallocates, soft glowing boundaries shifting, indigo ground, no text, no labels.

@@ -1,0 +1,31 @@
+id: ecological-succession
+label:
+  vi: Diễn thế sinh thái
+  en: Ecological succession
+definition:
+  vi: >-
+    Quá trình một quần xã sinh vật lắp ráp, phát triển và thay thế qua thời gian sau một xáo trộn.
+    Hình dung cũ — do Frederic Clements đưa ra đầu thế kỷ 20 — coi diễn thế như một chuỗi giai đoạn
+    có trật tự, tất định, leo dần tới một "đỉnh cực" cố định do khí hậu quy định. Nghiên cứu thực địa
+    dài hạn, đặc biệt tại núi St. Helens, đã lật đổ hình dung ấy: diễn thế thực chất mang tính ngẫu
+    nhiên, phụ thuộc đường đi, và không nhất thiết hội tụ về một đích duy nhất. Thứ tự loài đến, hiệu
+    ứng ưu tiên và sự bất ổn của nền đất đều có thể bẻ hướng cả quỹ đạo.
+  en: >-
+    The process by which a biological community assembles, develops and turns over through time after
+    a disturbance. The old picture — Frederic Clements's, from the early twentieth century — treated
+    succession as an orderly, deterministic sequence of stages climbing toward one fixed, climatically
+    determined climax. Long-term fieldwork, above all at Mount St. Helens, overturned it: succession is
+    actually stochastic and path-dependent, and need not converge on a single endpoint. The order of
+    arrival, priority effects and the instability of the ground can all bend the whole trajectory.
+see_also:
+  - primary-succession
+  - secondary-succession
+  - biological-legacy
+  - alternative-stable-state
+category: concept
+tags:
+  - ecology
+cover_prompt: >-
+  A painterly naturalist plate showing a single hillside in four faint overlapping stages left to
+  right — bare grey rock, first low cushion plants, taller shrubs, then a closed canopy — under a dim
+  cyan-lit sky, no arrows, no text, no labels, no numbers, deep indigo ground.

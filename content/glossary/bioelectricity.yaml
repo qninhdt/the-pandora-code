@@ -1,0 +1,26 @@
+id: bioelectricity
+label:
+  vi: Điện sinh học
+  en: Bioelectricity
+definition:
+  vi: 'Những hiệu điện thế nhỏ bé trải khắp và giữa các tế bào sống, không chỉ trong dây thần kinh mà
+    trong mọi mô. Công trình của các nhà nghiên cứu như Michael Levin cho thấy các khuôn mẫu điện áp này
+    hoạt động như một bản thiết kế có thể viết lại: đổi khuôn mẫu điện là có thể dụ mô mọc mắt hay chi
+    ở sai chỗ mà không đụng tới gene. Đó là gợi ý mạnh nhất rằng hình dạng cơ thể có thể được điều khiển
+    từ tầng trên của gene.'
+  en: 'The tiny voltages spread across and between living cells — not just in nerves but in every tissue.
+    Work by researchers such as Michael Levin shows these voltage patterns act like a rewritable blueprint:
+    change the electrical pattern and you can coax tissue to grow eyes or limbs in the wrong place without
+    touching the genes. It is the strongest hint that body shape can be steered from a layer above the
+    genome.'
+see_also:
+- morphogenesis
+- blastema
+- canalization
+- neural-crest
+category: bio
+tags:
+- physiology
+- physics
+cover_prompt: A painterly map of faint voltage patterns glowing across a sheet of cells, contour-like
+  fields of cool light marking where structure will form, teal and cyan on indigo, no text, no labels.

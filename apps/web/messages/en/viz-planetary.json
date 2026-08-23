@@ -297,6 +297,63 @@
       "presetPandora": "Pandora (Slower spin · 1 cell)",
       "presetNone": "No spin (Stationary)",
       "hint": "Coriolis deflection is an apparent force resulting from planetary rotation. Choose a hemisphere, adjust the spin speed, and launch a probe. Watch the probe drift relative to the rotating surface, while moving in a straight line in space."
+    },
+    "tidalHeatBudget": {
+      "title": "Pandora's tidal furnace",
+      "subtitle": "How hard Polyphemus has to knead Pandora to keep it molten",
+      "aria": "A log scale of surface heat flux with markers for the Moon, Earth, and Io; a movable needle shows where Pandora lands as eccentricity and mantle response change",
+      "eLabel": "Orbital eccentricity (e)",
+      "kLabel": "Mantle response (k₂/Q)",
+      "powerLabel": "Tidal power",
+      "powerUnit": "TW",
+      "fluxLabel": "Surface flux",
+      "fluxUnit": "W/m²",
+      "regimeLabel": "Regime",
+      "pandora": "Pandora",
+      "axisLow": "cold, dead",
+      "axisHigh": "magma ocean",
+      "axisTitle": "surface heat flux (W/m², log scale)",
+      "ref": {
+        "moon": "Moon",
+        "earth": "Earth",
+        "io": "Io"
+      },
+      "regime": {
+        "quiescent": "Quiescent — barely warm",
+        "active": "Active — volcanic, habitable",
+        "extreme": "Extreme — heat-pipe volcanism",
+        "sterilizing": "Runaway — biosphere lost"
+      },
+      "hint": "Slide the eccentricity and the mantle's dissipation response. Tidal power climbs with the square of eccentricity, so a tiny resonance-pumped e ≈ 0.001 already puts Pandora near a vigorous, still-habitable ~0.8 W/m² — about nine times Earth's heat flow."
+    },
+    "heatSourceDecay": {
+      "title": "Three ways to stay hot",
+      "subtitle": "How a world's heat sources rise and fall over billions of years",
+      "aria": "Three curves over deep time: primordial heat and radiogenic heat both decline, while resonance-fed tidal heating stays roughly flat",
+      "xAxis": "age since formation (billions of years)",
+      "yHigh": "high",
+      "ageLabel": "World's age",
+      "gyr": "{n} Gyr",
+      "dominantLabel": "Dominant source now",
+      "series": {
+        "primordial": "Born-with heat (cooling)",
+        "radiogenic": "Radioactive decay",
+        "tidal": "Tidal flexing (resonance-fed)"
+      },
+      "hint": "Drag the age forward. The heat a world is born with leaks away and its radioactive fuel decays — so an ancient, small moon that is still molten must be topped up by a third source: tidal flexing, kept alive by an orbital resonance."
+    },
+    "magmaEnergyLedger": {
+      "title": "Can magnetism melt a mantle?",
+      "subtitle": "The energy ledger that settles the 'magnetic heating' claim",
+      "aria": "A log-scale bar chart comparing tidal, radiogenic, and magnetic-induction heating power; induction is millions of times weaker",
+      "axisTitle": "heating power (watts, log scale)",
+      "decade": "10^{n}",
+      "source": {
+        "tidal": "Tidal flexing",
+        "radiogenic": "Radioactive decay",
+        "induction": "Magnetic induction"
+      },
+      "hint": "A static magnetic field does zero net work — its force is always sideways to a particle's motion. Only a changing field heats, through eddy currents, and for a rocky moon that power is five to seven orders of magnitude below tidal or radiogenic heat. Magnetism levitates Pandora's mountains; it cannot melt its rock."
     }
   }
 }

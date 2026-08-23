@@ -19,20 +19,26 @@ the order. Target 5–7k EN words.
    Use the classification components.
 6. **Close.** A short landing that returns to the opening image, now understood.
 
-## Components (palette, not checklist)
+## Components (at least 3 new components per chapter)
 
-Reach for the registered content components only where they earn their place:
-- A hero figure to anchor the cold open (often the chapter's `fig-00-cover` -
-  the same representative image shown on the landing book-map plate).
-- Inline figures / diagrams where a visual teaches faster than prose.
-- A "what this means" beat for the Earth turn.
-- Classification badges / confidence meter for the honest-edges section.
-- "Open questions" for genuine canon gaps.
-- `<GlossaryTerm slug="…">` on first use of a defined term.
+Every chapter must introduce at least 3 new bespoke components to make its STEM
+and Pandoran mechanisms interactive:
+- **Build at least 3 new bespoke components** tailored to the chapter's core concepts
+  (e.g., interactive physical simulations, parameter calculators, dynamic comparative charts,
+  interactive diagrams with sliders/toggles).
+- **Only reuse existing components if strictly necessary:** Reusing existing components
+  from earlier chapters or baseline requires a clear pedagogical reason and does NOT count
+  toward the 3 new components minimum.
+- Anchor visual beats:
+  - A hero figure to anchor the cold open (`fig-00-cover`).
+  - Inline `<DiagramFigure>` items where visual art illustrates key scenes.
+  - Bespoke interactive components where dynamic exploration explains physical/biological laws.
+  - A "what this means" beat for the Earth turn.
+  - Classification badges / confidence meter for the honest-edges section.
+  - "Open questions" for genuine canon gaps.
+  - `<GlossaryTerm slug="…">` on first use of a defined term.
 
-Build a bespoke component if the chapter needs a visualization the library lacks
-(see the orchestrator's component-palette reference). Never add a component just
-to use it.
+See the orchestrator's `references/component-palette.md` for full component standards.
 
 ## Pacing rules
 

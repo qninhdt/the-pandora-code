@@ -1,0 +1,28 @@
+id: positional-information
+label:
+  vi: Thông tin vị trí
+  en: Positional information
+definition:
+  vi: >-
+    Ý tưởng do Lewis Wolpert nêu năm 1969: một tế bào biết mình phải trở thành cái gì bằng cách cảm
+    nhận vị trí của nó trong mô, thường thông qua nồng độ một chất tạo hình. Wolpert minh họa bằng
+    hình ảnh lá cờ ba màu — cùng một dải tế bào, nhưng mỗi tế bào chọn "màu" theo ngưỡng nồng độ nó
+    gặp, nên cả dải tự phân thành ba vùng rạch ròi. Cơ thể không được vẽ từng điểm ảnh; nó được dựng
+    lên từ các quy tắc đọc-vị-trí như thế này.
+  en: >-
+    Lewis Wolpert's 1969 idea that a cell knows what to become by sensing its position within a
+    tissue, usually via the concentration of a morphogen. Wolpert illustrated it with a
+    three-colored flag — the same strip of cells, but each cell picks its "color" from the
+    concentration threshold it meets, so the whole strip partitions itself into three clean regions.
+    A body is not drawn pixel by pixel; it is built from position-reading rules like this.
+see_also:
+  - morphogen
+  - target-morphology
+  - reaction-diffusion
+category: bio
+tags:
+  - developmental-biology
+cover_prompt: >-
+  A painted horizontal strip of cells over a fading gradient arrow, the strip dividing into three
+  crisp color zones like a flag, glowing cyan to teal to deep indigo, schematic and luminous on dark
+  ground, no text, no labels, no numbers.

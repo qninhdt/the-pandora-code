@@ -1,0 +1,28 @@
+id: morphogen
+label:
+  vi: Chất tạo hình
+  en: Morphogen
+definition:
+  vi: >-
+    Một phân tử tín hiệu khuếch tán từ một nguồn cục bộ, tạo nên một gradient nồng độ giảm dần theo
+    khoảng cách. Các tế bào "đọc" nồng độ tại vị trí của mình và bật chương trình gene tương ứng:
+    nồng độ cao thành một loại mô, nồng độ vừa thành loại khác, nồng độ thấp thành loại thứ ba. Đó là
+    cách một gradient hóa học đơn giản tổ chức nên cấu trúc không gian phức tạp mà không cần chỉ dẫn
+    riêng cho từng tế bào — ý tưởng "thông tin vị trí" mà Lewis Wolpert đặt nền.
+  en: >-
+    A signaling molecule that diffuses from a local source, forming a concentration gradient that
+    falls off with distance. Cells "read" the concentration at their position and switch on the
+    matching genetic program: high concentration becomes one tissue, medium another, low a third.
+    This is how a simple chemical gradient organizes complex spatial structure with no per-cell
+    instruction — the "positional information" idea Lewis Wolpert founded.
+see_also:
+  - positional-information
+  - reaction-diffusion
+  - gene-regulatory-network
+category: bio
+tags:
+  - developmental-biology
+cover_prompt: >-
+  A painted row of cells beside a fading concentration gradient, the cells recoloring into three
+  distinct bands from high to low, like a French flag rendered in glowing cyan-teal-indigo, schematic
+  and luminous on dark ground, no text, no labels, no numbers.

@@ -1,0 +1,18 @@
+id: mantle-convection
+label:
+  vi: Đối lưu lớp phủ
+  en: Mantle convection
+definition:
+  vi: Sự chảy chậm chạp, ở thể rắn của lớp phủ đá bên trong một hành tinh, khi vật chất nóng nhẹ hơn trồi lên và vật chất nguội nặng hơn chìm xuống - giống một nồi cháo đặc sôi liu riu qua hàng triệu năm. Chính dòng đối lưu này tải nhiệt từ sâu trong lòng ra tới đáy lớp vỏ nhanh hơn nhiều so với dẫn nhiệt đơn thuần, và là thứ cấp nguồn cho núi lửa cùng sự dịch chuyển của vỏ.
+  en: The slow, solid-state churning of a planet's rocky mantle, as hotter, lighter material rises and cooler, denser material sinks - like a pot of thick porridge simmering over millions of years. This convective flow hauls heat from deep inside up to the base of the crust far faster than conduction alone, and is what feeds volcanism and the shifting of the crust.
+see_also:
+  - partial-melting
+  - primordial-heat
+  - tidal-heating
+  - dynamo-theory
+category: planet
+tags:
+- geology
+- planetary-science
+- earth-systems
+cover_prompt: A painted cutaway of a planet's mantle showing slow looping currents of rock, warm amber plumes rising and cooler dark material sinking in great cells, heat gathering under a thin crust, cool indigo and dim rust tones with scarce ember-amber glow, painterly cross-section, no text or arrows.

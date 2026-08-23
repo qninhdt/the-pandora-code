@@ -1,0 +1,34 @@
+{
+  "id": "fig-02-the-colonization",
+  "chapter_slug": "spiders-second-biology",
+  "role": "diagram",
+  "narrative_purpose": "Shows the transformation's origin event: the planetary mycelium being channelled into a collapsing human body, the moment of horizontal acquisition of the symbiont.",
+  "subject": "A human figure collapsed to the ground in a dark forest, a breathing mask fallen away at their side; from the surrounding earth and root-mat a dense web of luminous cyan fungal tendrils and fine rhizosphere threads reaches up and across the body, entering at the chest and nape and spreading beneath the skin as a branching glow; one guiding presence of brighter light at the edge of the frame implies the network is being directed toward the body rather than merely growing.",
+  "scene": "A prone human body being enveloped by living luminous fungal tendrils rising from the forest floor.",
+  "camera": "A high three-quarter view looking down at the body on the forest floor, wide enough to show the tendrils converging from the surrounding ground.",
+  "light": "Bioluminescent key entirely from the fungal tendrils — cyan and living teal light converging on the body; the fallen mask a dead dark object; deep indigo forest night around.",
+  "palette": "Void-indigo and deep teal base, dominant Pandora cyan and living teal in the converging tendrils, a single brighter teal-white focus of guiding light at one edge, the body in cool desaturated tones.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence, luminous and atmospheric.",
+  "detail_level": "Crisp on the converging tendrils and the point where they enter the body; the surrounding forest dissolving into dark haze.",
+  "composition": "The body lower-centre, tendrils converging inward from the frame edges, a brighter guiding glow at one upper corner; dark negative space for labels.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding",
+    "modern Earth objects"
+  ],
+  "consistency_notes": "Na'vi mostly absent; focus on the body and the living network. Cool palette, warm entirely absent. The 'acquired under duress, from the environment' moment.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": []
+}

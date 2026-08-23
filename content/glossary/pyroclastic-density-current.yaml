@@ -1,0 +1,16 @@
+id: pyroclastic-density-current
+label:
+  vi: Dòng mật độ hỏa lưu
+  en: Pyroclastic density current
+definition:
+  vi: Một khối hỗn hợp khí siêu nóng, tro và mảnh đá bọt sà sát mặt đất, đổ ào xuống sườn núi lửa nhanh hơn cả gió bão trong một vụ phun trào lớn. Nóng tới hàng trăm độ và di chuyển với vận tốc chết người, nó thiêu rụi mọi thứ trên đường đi và chôn vùi phần còn lại dưới lớp tephra - chính là loại hiện tượng đã hủy diệt quê hương tộc Mangkwan.
+  en: A ground-hugging mass of superheated gas, ash, and pumice that races down a volcano's slopes faster than a stormwind during a large eruption. Hundreds of degrees hot and moving at lethal speed, it incinerates everything in its path and buries the rest under tephra - exactly the kind of phenomenon that destroyed the Mangkwan homeland.
+see_also:
+  - volcanic-explosivity-index
+  - tidal-heating
+category: planet
+tags:
+- geology
+- earth-systems
+- planetary-science
+cover_prompt: A painted scene of a fast ground-hugging avalanche of glowing ash and hot gas pouring down a dark volcanic slope toward a forest edge, the leading front lit warm amber-orange, thick ash billowing above, cool indigo smoke-dimmed sky, painterly plate, no text or numbers.

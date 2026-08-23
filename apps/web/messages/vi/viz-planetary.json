@@ -297,6 +297,63 @@
       "presetPandora": "Pandora (Quay chậm hơn · 1 vòng)",
       "presetNone": "Không tự quay (Đứng yên)",
       "hint": "Lực Coriolis bẻ cong hướng gió và hải lưu do sự tự quay của hành tinh. Hãy chọn bán cầu, chỉnh tốc độ quay và bắn đầu dò. Để ý cách đầu dò bị bẻ cong so với bề mặt quay dưới chân nó, dù vẫn đi thẳng trong không gian quán tính."
+    },
+    "tidalHeatBudget": {
+      "title": "Lò nung thủy triều của Pandora",
+      "subtitle": "Polyphemus phải nhào nặn Pandora mạnh đến đâu để giữ nó nóng chảy",
+      "aria": "Thang log của thông lượng nhiệt bề mặt với các mốc Mặt Trăng, Trái Đất và Io; một kim chỉ di động cho biết Pandora rơi vào đâu khi độ lệch tâm và độ phản hồi của lớp phủ thay đổi",
+      "eLabel": "Độ lệch tâm quỹ đạo (e)",
+      "kLabel": "Phản hồi lớp phủ (k₂/Q)",
+      "powerLabel": "Công suất thủy triều",
+      "powerUnit": "TW",
+      "fluxLabel": "Thông lượng bề mặt",
+      "fluxUnit": "W/m²",
+      "regimeLabel": "Chế độ",
+      "pandora": "Pandora",
+      "axisLow": "lạnh, chết",
+      "axisHigh": "biển magma",
+      "axisTitle": "thông lượng nhiệt bề mặt (W/m², thang log)",
+      "ref": {
+        "moon": "Mặt Trăng",
+        "earth": "Trái Đất",
+        "io": "Io"
+      },
+      "regime": {
+        "quiescent": "Ngủ yên — chỉ hơi ấm",
+        "active": "Sôi động — núi lửa, ở được",
+        "extreme": "Cực đoan — núi lửa ống dẫn nhiệt",
+        "sterilizing": "Vượt ngưỡng — mất sinh quyển"
+      },
+      "hint": "Trượt độ lệch tâm và độ tiêu tán của lớp phủ. Công suất thủy triều tăng theo bình phương độ lệch tâm, nên chỉ cần một e ≈ 0,001 được cộng hưởng bơm lên đã đưa Pandora tới mức ~0,8 W/m² sôi động mà vẫn ở được — khoảng chín lần dòng nhiệt của Trái Đất."
+    },
+    "heatSourceDecay": {
+      "title": "Ba cách để giữ nóng",
+      "subtitle": "Các nguồn nhiệt của một thế giới lên xuống thế nào qua hàng tỉ năm",
+      "aria": "Ba đường cong theo thời gian sâu thẳm: nhiệt nguyên thủy và nhiệt phóng xạ đều suy giảm, trong khi nhiệt thủy triều được cộng hưởng nuôi dưỡng gần như đi ngang",
+      "xAxis": "tuổi kể từ khi hình thành (tỉ năm)",
+      "yHigh": "cao",
+      "ageLabel": "Tuổi của thế giới",
+      "gyr": "{n} tỉ năm",
+      "dominantLabel": "Nguồn chủ đạo hiện nay",
+      "series": {
+        "primordial": "Nhiệt bẩm sinh (nguội dần)",
+        "radiogenic": "Phân rã phóng xạ",
+        "tidal": "Uốn nắn thủy triều (cộng hưởng nuôi)"
+      },
+      "hint": "Kéo tuổi tiến về phía trước. Nhiệt mà một thế giới sinh ra cùng sẽ rò rỉ mất và nhiên liệu phóng xạ của nó phân rã dần — nên một mặt trăng nhỏ, cổ xưa mà vẫn nóng chảy phải được tiếp thêm bởi nguồn thứ ba: sự uốn nắn thủy triều, được giữ sống bằng một cộng hưởng quỹ đạo."
+    },
+    "magmaEnergyLedger": {
+      "title": "Từ trường có nấu chảy nổi lớp phủ không?",
+      "subtitle": "Bảng cân đối năng lượng giải quyết luận điệu 'nhiệt từ tính'",
+      "aria": "Biểu đồ cột thang log so sánh công suất sưởi từ thủy triều, phóng xạ và cảm ứng từ; cảm ứng yếu hơn hàng triệu lần",
+      "axisTitle": "công suất sưởi (watt, thang log)",
+      "decade": "10^{n}",
+      "source": {
+        "tidal": "Uốn nắn thủy triều",
+        "radiogenic": "Phân rã phóng xạ",
+        "induction": "Cảm ứng từ"
+      },
+      "hint": "Một từ trường tĩnh sinh công thực bằng không — lực của nó luôn vuông góc với chuyển động của hạt. Chỉ từ trường biến thiên mới sưởi ấm, qua dòng điện xoáy, và với một mặt trăng đá thì công suất ấy thấp hơn nhiệt thủy triều hay phóng xạ năm tới bảy bậc độ lớn. Từ tính nâng bổng núi non của Pandora; nó không nấu chảy nổi đá."
     }
   }
 }

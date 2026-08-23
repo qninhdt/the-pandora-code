@@ -1,0 +1,32 @@
+id: neurotrophic-hypothesis
+label:
+  vi: Giả thuyết dưỡng thần kinh
+  en: Neurotrophic hypothesis
+definition:
+  vi: >-
+    Phát hiện của Marcus Singer (giữa thế kỷ 20): tái sinh chi ở động vật có xương sống bắt buộc phải
+    có dây thần kinh. Cắt cụt một chi kỳ giông đã bị mất dây thần kinh thì vết thương chỉ liền sẹo,
+    chồi tái sinh không tăng sinh. Điều then chốt là hiệu ứng mang tính định lượng: cần đủ số sợi
+    thần kinh trên một đơn vị diện tích vết thương, bất kể là sợi vận động hay cảm giác. Về sau người
+    ta tìm ra phân tử nAG do bao thần kinh tiết ra chính là tín hiệu nuôi chồi. Vì thế một giao diện
+    thần kinh — như sợi kuru — là kênh lý tưởng để một mạng lưới bên ngoài cấp tín hiệu điều khiển
+    sự mọc.
+  en: >-
+    Marcus Singer's mid-20th-century finding that vertebrate limb regeneration strictly requires
+    nerves. Amputate a salamander limb that has been denervated and the wound merely scars — the
+    blastema fails to proliferate. Crucially the effect is quantitative: enough nerve fibers per unit
+    of wound area, whether motor or sensory, will do. The molecule nAG, secreted by nerve sheaths,
+    was later identified as the signal that sustains the blastema. This is why a neural interface —
+    like the kuru — is the ideal channel through which an outside network could supply the signals
+    that direct growth.
+see_also:
+  - blastema
+  - developmental-bioelectricity
+category: bio
+tags:
+  - developmental-biology
+  - physiology
+cover_prompt: >-
+  A painted salamander limb with glowing nerve fibers threading into a regenerating bud at the cut,
+  the nerves lit cyan, faint outline of the regrowing limb, schematic and luminous on deep indigo,
+  no text, no labels, no numbers.

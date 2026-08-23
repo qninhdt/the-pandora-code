@@ -1,0 +1,32 @@
+{
+  "id": "fig-06-a-thousand-places-to-hide",
+  "chapter_slug": "the-reef-as-substrate",
+  "role": "comparison",
+  "narrative_purpose": "Shows rugosity as the driver of life: a complex three-dimensional reef holds far more organisms than a flattened one of the same footprint.",
+  "subject": "A continuous seascape contrasting two reef states. On the left, a tall, intricately branched and folded reef riddled with caves, arches and overhangs, dense with small fish, invertebrates and shelter-seeking creatures packed into every crevice. On the right, the same footprint reduced to a low, smooth slope of grey coral rubble with almost no structure and only a few scattered organisms drifting over it.",
+  "scene": "One reef floor in clear shallow water transitioning from complex left to flattened right, no hard border.",
+  "camera": "Wide straight-on plate at reef scale, both states at equal footprint width.",
+  "light": "Cyan glow through the complex crevices on the left, flat dull light over the bare rubble on the right, indigo in the deep caves.",
+  "palette": "Ocean teal and cyan on the living complex side, muted stone-grey on the flattened side, void indigo cave shadows.",
+  "style": "Painterly naturalist comparison plate, organic, not an infographic.",
+  "detail_level": "Crisp on the crevices and sheltering fauna at left and the bare rubble at right; open water above for callouts.",
+  "composition": "Complex-left / flat-right across the frame with open low-detail water band above for labels on rugosity and lost habitat.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "panel borders",
+    "callout lines"
+  ],
+  "consistency_notes": "Same reef footprint both sides; the difference is structural complexity, not species. Keep palette consistent with earlier reef figures.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no panel dividers, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

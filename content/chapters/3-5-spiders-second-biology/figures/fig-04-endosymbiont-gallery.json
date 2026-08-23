@@ -1,0 +1,34 @@
+{
+  "id": "fig-04-endosymbiont-gallery",
+  "chapter_slug": "spiders-second-biology",
+  "role": "diagram",
+  "narrative_purpose": "A naturalist gallery of four real Earth endosymbioses so the reader sees how common and varied live-in partnerships are, and where Spider fits among them.",
+  "subject": "A four-panel specimen gallery, each a small vignette against dark ground: top-left, an aphid with a cluster of glowing rod-shaped bacteria packed into special cells in its abdomen; top-right, a small bobtail squid with a luminous oval light organ glowing on its underside; bottom-left, a coral polyp with tiny golden-green algae suspended inside its translucent tissue; bottom-right, a single-celled amoeba with a curved blue-green photosynthetic body held inside it.",
+  "scene": "A gallery plate of four separate organisms, each showing its internal symbiont.",
+  "camera": "A flat grid of four equal specimen vignettes, two over two.",
+  "light": "Bioluminescent key within each organism from its symbiont — cyan, teal, and a restrained gold-green in the coral and amoeba; each vignette on its own pool of dark.",
+  "palette": "Void-indigo base, Pandora cyan and living teal dominant, a small controlled warm gold-green confined to the coral's and amoeba's algae; dark separating margins.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence, luminous and atmospheric.",
+  "detail_level": "Crisp on each organism and its glowing internal symbiont; the four dark backgrounds kept plain.",
+  "composition": "A clean two-by-two grid with dark gutters between panels for labels.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding",
+    "modern Earth objects"
+  ],
+  "consistency_notes": "Four distinct real Earth organisms, each clearly showing an internal glowing guest. Cool palette with tightly restrained warm only in the algal symbionts.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": []
+}

@@ -1,12 +1,15 @@
 import { CanonBadge } from "@/components/classification/canon-badge";
 import { AirRegimeVisualizer } from "@/components/content/air-regime-visualizer";
 import { AnatomyPlate } from "@/components/content/anatomy-plate";
+import { AragoniteThresholdDial } from "@/components/content/aragonite-threshold-dial";
 import { AtmosphereComparison } from "@/components/content/atmosphere-comparison";
 import { AtmosphericDisequilibrium } from "@/components/content/atmospheric-disequilibrium";
 import { BilateralLatticeTree } from "@/components/content/bilateral-lattice-tree";
+import { BioelectricMorphologyEditor } from "@/components/content/bioelectric-morphology-editor";
 import { BreathingModeToggle } from "@/components/content/breathing-mode-toggle";
 import { Callout, ScientificNote, SideNote } from "@/components/content/callout";
 import { CarbonVsSilicon } from "@/components/content/carbon-vs-silicon";
+import { CarbonateBudgetBalance } from "@/components/content/carbonate-budget-balance";
 import { CarbonateSilicateThermostat } from "@/components/content/carbonate-silicate-thermostat";
 import { CascadingFailure } from "@/components/content/cascading-failure";
 import { CharacterMatrixCladogram } from "@/components/content/character-matrix-cladogram";
@@ -41,27 +44,33 @@ import { GlowBiogeographyToggle } from "@/components/content/glow-biogeography-t
 import { GlowOriginsTree } from "@/components/content/glow-origins-tree";
 import { HabitableZoneExplorer } from "@/components/content/habitable-zone-explorer";
 import { HalfLifeDecay } from "@/components/content/half-life-decay";
+import { HeatSourceDecay } from "@/components/content/heat-source-decay";
 import { HoxColinearityMap } from "@/components/content/hox-colinearity-map";
 import { HydraulicLimitSimulator } from "@/components/content/hydraulic-limit-simulator";
+import { InhibitorStackFilter } from "@/components/content/inhibitor-stack-filter";
 import { IntegrationVsSize } from "@/components/content/integration-vs-size";
 import { IsochronPlot } from "@/components/content/isochron-plot";
 import { KeystoneCascadeToggle } from "@/components/content/keystone-cascade-toggle";
 import { LimbFieldToggle } from "@/components/content/limb-field-toggle";
 import { LongBranchAttractionDemo } from "@/components/content/long-branch-attraction-demo";
 import { MagneticCompassExplorer } from "@/components/content/magnetic-compass-explorer";
+import { MagmaEnergyLedger } from "@/components/content/magma-energy-ledger";
 import { MaskingOrClock } from "@/components/content/masking-or-clock";
+import { MorphogenGradientLab } from "@/components/content/morphogen-gradient-lab";
 import { MycorrhizalMarket } from "@/components/content/mycorrhizal-market";
 import { NichePartitionExplorer } from "@/components/content/niche-partition-explorer";
 import { NightEyeOptics } from "@/components/content/night-eye-optics";
 import { OccamsRazorEngine } from "@/components/content/occams-razor-engine";
 import { OceanColumnExplorer } from "@/components/content/ocean-column-explorer";
 import { OpenQuestions } from "@/components/content/open-questions";
+import { OrganogenesisGate } from "@/components/content/organogenesis-gate";
 import { PandoraLightLadder } from "@/components/content/pandora-light-ladder";
 import { PercolationNetwork } from "@/components/content/percolation-network";
 import { PhotophoreIntensity } from "@/components/content/photophore-intensity";
 import { PredatorPreyOscillator } from "@/components/content/predator-prey-oscillator";
 import { QuorumCascade } from "@/components/content/quorum-cascade";
 import { Quote } from "@/components/content/quote";
+import { RecoveryChronosequence } from "@/components/content/recovery-chronosequence";
 import { RedQueenRace } from "@/components/content/red-queen-race";
 import { ReplayTheTape } from "@/components/content/replay-the-tape";
 import { ScaleUpChallenge } from "@/components/content/scale-up-challenge";
@@ -70,8 +79,13 @@ import { ShannonChannel } from "@/components/content/shannon-channel";
 import { SoilPoreExplorer } from "@/components/content/soil-pore-explorer";
 import { StrataDiversityEngine } from "@/components/content/strata-diversity-engine";
 import { StructureVsBiomassClock } from "@/components/content/structure-vs-biomass-clock";
+import { SuccessionArrestExplorer } from "@/components/content/succession-arrest-explorer";
 import { SuperconductorCooldown } from "@/components/content/superconductor-cooldown";
+import { SwarmSteeringField } from "@/components/content/swarm-steering-field";
+import { SymbiontIntegrationMap } from "@/components/content/symbiont-integration-map";
+import { RespiratoryScrubberDial } from "@/components/content/respiratory-scrubber-dial";
 import { TemporalNichePartition } from "@/components/content/temporal-niche-partition";
+import { TidalHeatBudget } from "@/components/content/tidal-heat-budget";
 import { TierLegend } from "@/components/content/tier-legend";
 import { Timeline } from "@/components/content/timeline";
 import { TorukFlightEngine } from "@/components/content/toruk-flight-engine";
@@ -96,13 +110,16 @@ import type { ComponentType } from "react";
 export const pandoraMdxComponents = {
   AirRegimeVisualizer,
   AnatomyPlate,
+  AragoniteThresholdDial,
   AtmosphereComparison,
   AtmosphericDisequilibrium,
   BilateralLatticeTree,
+  BioelectricMorphologyEditor,
   BreathingModeToggle,
   Callout,
   CanonBadge,
   CarbonVsSilicon,
+  CarbonateBudgetBalance,
   CarbonateSilicateThermostat,
   CascadingFailure,
   ChapterHero,
@@ -144,11 +161,15 @@ export const pandoraMdxComponents = {
   GlowOriginsTree,
   HabitableZoneExplorer,
   HalfLifeDecay,
+  HeatSourceDecay,
   HoxColinearityMap,
   HydraulicLimitSimulator,
+  InhibitorStackFilter,
   KeystoneCascadeToggle,
   MagneticCompassExplorer,
+  MagmaEnergyLedger,
   MaskingOrClock,
+  MorphogenGradientLab,
   MycorrhizalMarket,
   NichePartitionExplorer,
   IsochronPlot,
@@ -160,14 +181,17 @@ export const pandoraMdxComponents = {
   OceanColumnExplorer,
   OpenQuestions,
   OrbitClock,
+  OrganogenesisGate,
   PandoraLightLadder,
   PercolationNetwork,
   PhotophoreIntensity,
   TemporalNichePartition,
+  TidalHeatBudget,
   TorukFlightEngine,
   PredatorPreyOscillator,
   QuorumCascade,
   Quote,
+  RecoveryChronosequence,
   ReadingProgress,
   RelatedChapters,
   ReplayTheTape,
@@ -180,7 +204,11 @@ export const pandoraMdxComponents = {
   SideNote,
   SourceList,
   StatGrid,
+  SuccessionArrestExplorer,
   SuperconductorCooldown,
+  SwarmSteeringField,
+  SymbiontIntegrationMap,
+  RespiratoryScrubberDial,
   TableOfContents,
   TierLegend,
   Timeline,

@@ -1,0 +1,19 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "life-after-the-volcano",
+  "role": "hero",
+  "narrative_purpose": "The full-bleed atmospheric mood layer the chapter text floats over: a vast, dim, hazed ashland vista under a venting sky, detail dissolving into distance so long-form text stays readable.",
+  "subject": "An immense desolate volcanic ashland stretching to the horizon, faint distant venting ridges, the barely-there silhouettes of a few calcined giant tree skeletons dissolving into deep atmospheric haze; no bright focal subject.",
+  "scene": "A panoramic ashland seen from a high vantage, layered ridges receding into grey haze, thin sulfurous plumes rising far off, a dim ashen sky.",
+  "camera": "Ultra-wide panoramic vista from a high vantage, very deep atmospheric perspective.",
+  "light": "Dark, low-contrast, dim overcast; a single faint distant ember glow on a far vent, everything else muted so overlaid text reads clearly.",
+  "palette": "Deep void-indigo and stone-grey throughout, extremely low contrast, one nearly-imperceptible ember hint on the far horizon.",
+  "style": "Painterly atmospheric mood layer, no crisp focal subject, detail dissolving into haze.",
+  "detail_level": "Deliberately low; everything softens into atmospheric haze, no sharp foreground.",
+  "composition": "Wide, dark, empty, horizon low, vast dim negative space for overlaid text; no bright element to compete with reading.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "bright focal subject", "high contrast", "green vegetation", "photographic look"],
+  "consistency_notes": "This is a dim immersive backdrop, NOT a figure to study: dark, hazed, low-contrast so long text overlays stay legible. Same Ashlands world as the cover, but macro and atmospheric.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no bright subject, no high contrast, no green, no 3D-render or photographic look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

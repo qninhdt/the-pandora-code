@@ -36,13 +36,16 @@ Run these in order, no prompts between them. Stop only on a hard failure
 ### 0. Chapter plan (in plan mode)
 Read `research/{slug}.md` + the chapter's outline entry (title + payload).
 Produce a short plan: section structure, the dual-payload beats (where Pandora
-hooks, where the STEM lands), which existing components to reuse, which new
-components to build, and the figure list (role + purpose each). This is the
-plan-mode artifact - reviewable before prose.
+hooks, where the STEM lands), the ≥3 new bespoke interactive components to build
+(what mechanisms they illustrate and their props), strictly justified reuse of
+any existing components (if genuinely necessary), and the figure list (role +
+purpose each). This is the plan-mode artifact - reviewable before prose.
 
-### 1. Write EN - `pandora-author`
-Author `content/chapters/{slug}/en.mdx` (5–7k words) and the chapter
-`meta.yaml` if absent. `meta.yaml` fields (validated by `ChapterMeta`):
+### 1. Write EN & Components - `pandora-author`
+Build and register the ≥3 new bespoke interactive components in
+`apps/web/lib/mdx-components.ts` (styled with tokens, mobile-ready, bilingual props).
+Author `content/chapters/{slug}/en.mdx` (5–7k words) integrating the new components,
+and the chapter `meta.yaml` if absent. `meta.yaml` fields (validated by `ChapterMeta`):
 `slug, part, order, status, title{vi,en}, hook{vi,en}, authors:[bardabez],
 reading_time_min, tags, classification{canon/inference/speculation/real_science
 _pct summing to 100}, related_chapters, glossary_terms, figures[], sources[]`.

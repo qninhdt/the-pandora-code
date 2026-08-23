@@ -1,0 +1,31 @@
+id: nitrogen-fixation
+label:
+  vi: Cố định đạm
+  en: Nitrogen fixation
+definition:
+  vi: >-
+    Quá trình chuyển khí nitơ trơ trong không khí (N₂) thành dạng hóa học mà sự sống dùng được, do
+    một số vi khuẩn thực hiện — nhiều loài sống cộng sinh trong rễ cây tiên phong. Đây là nút cổ chai
+    quyết định trên nền núi lửa mới: tro tươi có thể giàu phốt pho, kali, canxi, nhưng gần như không
+    có nitơ khả dụng, vì sức nóng phun trào đã đẩy nó đi hết. Nitơ là nguyên tố sự sống cần với khối
+    lượng lớn và khó tự xoay xở. Không có loài cố định đạm mồi cho guồng máy, phần lớn thực vật chết
+    đói trên thứ đá nhìn thì như đã màu mỡ một nửa.
+  en: >-
+    The conversion of inert atmospheric nitrogen gas (N₂) into a chemical form life can use, performed
+    by certain bacteria — many living symbiotically in the roots of pioneer plants. It is the decisive
+    bottleneck on fresh volcanic ground: new tephra can be rich in phosphorus, potassium and calcium
+    but carries almost no biologically available nitrogen, because the heat of the eruption drove it
+    off. Nitrogen is the element life needs in bulk and cannot easily improvise. Without a nitrogen-
+    fixer to prime the pump, most plants simply starve on rock that looks, chemically, half-fertile.
+see_also:
+  - pioneer-species
+  - primary-succession
+  - mutualism
+category: bio
+tags:
+  - ecology
+  - chemistry
+cover_prompt: >-
+  A painterly naturalist cutaway of a plant root in dark soil with small rounded nodules along it,
+  faint cyan glow inside the nodules suggesting living bacteria, fine root hairs reaching into grey
+  mineral grains, deep indigo ground, no text, no labels, no numbers.

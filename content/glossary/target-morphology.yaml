@@ -1,0 +1,28 @@
+id: target-morphology
+label:
+  vi: Hình thái đích
+  en: Target morphology
+definition:
+  vi: >-
+    Hình dạng ổn định mà một cơ thể liên tục dựng về và tái tạo về sau tổn thương — như thể giải
+    phẫu là một trạng thái cân bằng trong "không gian hình dạng", và các tế bào cứ điều chỉnh cho tới
+    khi sai lệch bằng không. Sán dẹp thường tái sinh đúng một đầu vì hình thái đích của nó là "một
+    đầu". Điều gây sửng sốt là hình thái đích này có thể bị viết lại: đổi trạng thái điện sinh học,
+    con sán "nhớ" một hình thái đích mới — hai đầu — và giữ nguyên qua nhiều lần cắt lại.
+  en: >-
+    The stable shape a body continuously builds toward and regenerates back to after injury — as if
+    anatomy were an equilibrium in "shape space" that cells keep correcting toward until the error
+    is zero. A flatworm regenerates exactly one head because its target morphology is "one head."
+    The startling part is that this target can be rewritten: change the bioelectric state and the
+    worm "remembers" a new target morphology — two heads — and holds it across repeated re-cuttings.
+see_also:
+  - developmental-bioelectricity
+  - positional-information
+  - blastema
+category: bio
+tags:
+  - developmental-biology
+cover_prompt: >-
+  A painted flatworm with a head at each end, faint ghosted outline showing the "target" shape it
+  regenerates toward, cool cyan bioluminescent linework on deep indigo, schematic and luminous, no
+  text, no labels, no numbers.

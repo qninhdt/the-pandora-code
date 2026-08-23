@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-ectopic-eye-trigger",
+  "chapter_slug": "kiri-and-the-writable-biosphere",
+  "role": "diagram",
+  "narrative_purpose": "Makes the 'triggering, not dictating' idea visual: a tiny high-level bioelectric signal calls up an enormous pre-existing organ-building program, growing a complete eye where none belonged — the plausible shape of Eywa's power over bodies.",
+  "subject": "A left-to-right diagram. LEFT: a very small, simple glowing toggle-like mark — a tiny two-state switch icon rendered as a single small cyan node with a minimal flip — deliberately modest. A single thin thread of light crosses rightward from it to a patch of plain undifferentiated cells. RIGHT: that patch of cells has self-organized into a large, elaborate, layered eye — a domed lens, concentric retinal layers, an optic-nerve stalk trailing off — glowing and intricate, drawn much larger and more complex than the tiny switch that triggered it.",
+  "scene": "A tiny simple signal on the left triggering a large, complex, self-built eye on the right.",
+  "camera": "A flat schematic left-to-right layout, small switch at left, large detailed eye at right.",
+  "light": "Bioluminescent key; the switch a modest cyan point, the eye a rich luminous cyan-teal structure; dark ground.",
+  "palette": "Void-indigo base, Pandora cyan for the triggering signal and the eye's structure, teal depth in the retinal layers.",
+  "style": "Painterly speculative-biology naturalist plate as a luminous schematic, hand-painted texture, not vector-flat.",
+  "detail_level": "Deliberate contrast: the switch minimal and plain, the eye intricate and layered, so 'small command, huge program' reads instantly; plain dark margins for callouts.",
+  "composition": "Small switch lower-left, single thread crossing to the right, the large detailed eye dominating the right two-thirds, dark margins for labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "annotation arrows", "Avatar branding"],
+  "consistency_notes": "The contrast that must read: the trigger is tiny and simple, the eye it calls up is large and elaborate. The connecting thread is a subject, not an annotation arrow. Leave dark margins for labels.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

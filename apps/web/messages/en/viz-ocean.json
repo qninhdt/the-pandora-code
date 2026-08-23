@@ -1,5 +1,63 @@
 {
   "viz": {
+    "carbonateBudget": {
+      "title": "A reef is a balance sheet",
+      "subtitle": "Builders add limestone; grazers and borers take it away. The sign of the difference decides whether the platform rises.",
+      "controls": {
+        "coral": "Live coral cover",
+        "cca": "Coralline algae cover",
+        "pressure": "Bioerosion pressure"
+      },
+      "bar": {
+        "coral": "Coral",
+        "cca": "Coralline",
+        "erosion": "Erosion",
+        "net": "Net"
+      },
+      "readout": {
+        "build": "Gross build-up",
+        "erode": "Gross loss",
+        "net": "Net production"
+      },
+      "verdict": {
+        "accreting": "Accreting — the reef rises",
+        "eroding": "Eroding — the reef loses mass"
+      },
+      "hint": {
+        "accreting": "Calcification outruns erosion. Limestone accumulates, the platform grows, and it keeps pace with the sea.",
+        "eroding": "Erosion outruns calcification. The framework breaks down faster than it forms — the foundation itself is being spent."
+      },
+      "units": "kg CaCO₃ per m² per year. Healthy reefs sit near +4 to +10; below roughly 10–15% live cover the budget flips negative."
+    },
+    "aragoniteThreshold": {
+      "title": "When the water stops letting a skeleton form",
+      "subtitle": "More CO₂ in the air means less carbonate in the sea. Below a threshold, limestone dissolves faster than reefs can lay it down.",
+      "controls": {
+        "pco2": "Atmospheric CO₂"
+      },
+      "thresholdLabel": "Accretion threshold",
+      "axis": {
+        "omega": "Aragonite saturation Ω",
+        "pco2": "Atmospheric CO₂ (µatm)"
+      },
+      "readout": {
+        "ph": "Surface pH",
+        "omega": "Saturation state"
+      },
+      "verdict": {
+        "accreting": "Above threshold — reefs can build",
+        "dissolving": "Below threshold — framework dissolves"
+      },
+      "hint": {
+        "accreting": "The water is supersaturated with aragonite; corals spend energy but the skeleton holds and grows.",
+        "dissolving": "Saturation has fallen through the accretion floor. Bare framework now dissolves into the sea faster than it forms."
+      },
+      "anchor": {
+        "preindustrial": "Pre-industrial: pCO₂ ~280, pH ~8.18, Ω ~4.4",
+        "today": "Today: pCO₂ ~425, pH ~8.05, Ω ~3.7",
+        "future": "2100 (high emissions): pCO₂ ~900, pH ~7.8, Ω ~2.1"
+      }
+    },
     "oceanColumnExplorer": {
       "title": "A vertical ocean",
       "subtitle": "Move through the water column; switch the circulation regime.",

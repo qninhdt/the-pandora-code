@@ -1,0 +1,28 @@
+id: membrane-potential
+label:
+  vi: Hiệu điện thế màng
+  en: Membrane potential
+definition:
+  vi: >-
+    Chênh lệch điện áp giữa bên trong và bên ngoài một tế bào, sinh ra do các bơm và kênh ion phân
+    bố ion không đều qua màng tế bào. Ở trạng thái nghỉ nó thường nằm trong khoảng −10 đến −90 mV.
+    Ta quen nghĩ hiệu điện thế màng chỉ là chuyện của nơ-ron phóng xung, nhưng mọi tế bào đều có nó,
+    và ở tế bào không phải thần kinh, mẫu hình điện áp bền vững này lại mang thông tin về hình thái —
+    nó là "mực" mà điện sinh học phát triển dùng để viết nên hình dạng.
+  en: >-
+    The voltage difference between the inside and outside of a cell, created by ion pumps and
+    channels that distribute ions unevenly across the membrane. At rest it typically sits between
+    −10 and −90 mV. We tend to think of membrane potential as a neuron's business — firing spikes —
+    but every cell has one, and in non-neural cells this stable voltage pattern carries
+    morphological information: it is the "ink" developmental bioelectricity writes shape with.
+see_also:
+  - developmental-bioelectricity
+  - gap-junction
+category: bio
+tags:
+  - developmental-biology
+  - physiology
+cover_prompt: >-
+  A single painted cell in cross-section with a glowing membrane, positive and negative ion symbols
+  arranged unevenly on either side, a soft voltage-gradient halo, cool cyan and faint magenta on
+  dark indigo, schematic and luminous, no text, no labels, no numbers.

@@ -1,0 +1,35 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "what-keeps-pandora-volcanically-alive",
+  "role": "hero",
+  "narrative_purpose": "The chapter's definitive cover: capturing Pandora's fiery geological engine where liquid magma fissures tear through dark basalt rock beneath an atmospheric twilight sky, juxtaposing the raw geothermal power that keeps the moon alive with the looming presence of Polyphemus on the horizon.",
+  "subject": "A sweeping landscape across a vast volcanic rift basin on Pandora at dusk: deep glowing orange and amber lava rivers pulse through intricate fractures in dark basalt rock; billowing geothermal steam vents rise into the twilight air; along the cooled rock edges, vivid bioluminescent teal and cyan mosses glow in sharp contrast to the molten fire; on the distant horizon, the enormous curved disc of the banded gas giant Polyphemus rises through haze and purple-tinted volcanic ash clouds.",
+  "scene": "A grand volcanic rift valley in the Pandoran Ashlands at twilight, showing active surface volcanism fueled by tidal forces, framed against the gas giant in the sky.",
+  "camera": "Wide panoramic landscape with a low vantage point looking across glowing magma fissures toward the distant volcanic horizon and the looming gas giant.",
+  "light": "Intense ember-amber and golden-orange underlighting from the open magma fissures casting dramatic rim light on jagged basalt cliffs, contrasted with soft cyan bioluminescence along the margins and deep twilight indigo from the sky.",
+  "palette": "Void-indigo base, rich obsidian blacks, glowing lava orange and molten amber, paired with electric cyan bioluminescent accents and soft amethyst sky tones.",
+  "style": "Painterly speculative-planetary naturalist plate, textured rock and liquid magma surfaces, atmospheric haze and luminous bioluminescence, rich traditional painting feel.",
+  "detail_level": "Crisp glowing molten textures and steaming fissure cracks in the foreground; atmospheric depth as the volcanic plain recedes toward the colossal banded planet.",
+  "composition": "Dynamic diagonal magma rift leading the eye from lower left across the frame; jagged basalt spires framing the midground; the massive curvature of Polyphemus dominating the upper right sky.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "diagram lines",
+    "spacecraft",
+    "buildings",
+    "humans",
+    "weapons"
+  ],
+  "consistency_notes": "Polyphemus is the banded gas giant in the background. Basalt landscape and molten lava provide the warm geothermal engine, balanced with Pandora's signature cool cyan bioluminescence.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no diagram lines, no arrows, no photographic or 3D-render look, no modern machines, no neon UI glow, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "fig-07-growing-the-queue",
+  "chapter_slug": "spiders-second-biology",
+  "role": "diagram",
+  "narrative_purpose": "Illustrates Hurdle 3 — de novo organogenesis — showing a new neural braid being grown on an adult from an organized bud, alongside the failure mode of disorganized growth, dramatizing the speculative leap.",
+  "subject": "A study of the nape and base of a skull in profile: a patch of ordinary tissue is being reorganized by a faint glowing cyan pattern into an organized rounded bud of progenitor cells, which then extends outward stage by stage into a slender neural braid with a core of parallel fibres wrapped in an outer sheath; set apart to one side and dimmer, a small contrasting inset shows the same patch growing into a formless disorganized lump when the guiding pattern is absent.",
+  "scene": "The growth of a new neural braid from an organized cellular bud at the base of a skull, with a failure-mode inset.",
+  "camera": "A profile view of the back of a head and neck, close on the nape where the braid emerges.",
+  "light": "Bioluminescent key from the guiding pattern and the growing braid — cyan and living teal; the disorganized inset dimmer and cooler with a faint off-magenta tinge.",
+  "palette": "Void-indigo base, Pandora cyan and living teal for the organized growth, a faint muted magenta only in the small failure inset; skin in cool desaturated tones.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence, luminous and atmospheric.",
+  "detail_level": "Crisp on the emerging braid and the organized bud; the failure inset kept small, dim, and clearly secondary.",
+  "composition": "The nape and emerging braid fill the main frame; the small failure inset tucked into one lower corner; dark margins for labels.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding",
+    "modern Earth objects"
+  ],
+  "consistency_notes": "The main subject reads as organized, patterned growth; the inset as its opposite. Cool palette, muted magenta confined to the failure inset.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": []
+}

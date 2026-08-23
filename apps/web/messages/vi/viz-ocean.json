@@ -1,5 +1,63 @@
 {
   "viz": {
+    "carbonateBudget": {
+      "title": "Rạn san hô là một bảng cân đối",
+      "subtitle": "Kẻ xây đắp thêm đá vôi; kẻ gặm và kẻ khoan lấy đi. Dấu của hiệu số quyết định nền có dâng lên hay không.",
+      "controls": {
+        "coral": "Độ phủ san hô sống",
+        "cca": "Độ phủ tảo vôi",
+        "pressure": "Áp lực xói mòn sinh học"
+      },
+      "bar": {
+        "coral": "San hô",
+        "cca": "Tảo vôi",
+        "erosion": "Xói mòn",
+        "net": "Ròng"
+      },
+      "readout": {
+        "build": "Tổng bồi đắp",
+        "erode": "Tổng hao hụt",
+        "net": "Sản lượng ròng"
+      },
+      "verdict": {
+        "accreting": "Bồi đắp — rạn dâng lên",
+        "eroding": "Xói mòn — rạn mất khối lượng"
+      },
+      "hint": {
+        "accreting": "Quá trình vôi hóa vượt xói mòn. Đá vôi tích tụ, nền dâng lên và theo kịp mực biển.",
+        "eroding": "Xói mòn vượt vôi hóa. Khung đá tan rã nhanh hơn tốc độ tạo thành — chính cái nền đang bị bào mòn."
+      },
+      "units": "kg CaCO₃ mỗi m² mỗi năm. Rạn khỏe mạnh nằm quanh +4 đến +10; dưới khoảng 10–15% độ phủ san hô sống, cán cân lật sang âm."
+    },
+    "aragoniteThreshold": {
+      "title": "Khi nước biển không còn cho phép tạo xương",
+      "subtitle": "Càng nhiều CO₂ trong khí quyển thì càng ít cacbonat trong biển. Dưới một ngưỡng, đá vôi tan nhanh hơn tốc độ rạn kịp bồi đắp.",
+      "controls": {
+        "pco2": "CO₂ khí quyển"
+      },
+      "thresholdLabel": "Ngưỡng bồi đắp",
+      "axis": {
+        "omega": "Độ bão hòa aragonit Ω",
+        "pco2": "CO₂ khí quyển (µatm)"
+      },
+      "readout": {
+        "ph": "pH bề mặt",
+        "omega": "Trạng thái bão hòa"
+      },
+      "verdict": {
+        "accreting": "Trên ngưỡng — rạn có thể xây",
+        "dissolving": "Dưới ngưỡng — khung đá tan rã"
+      },
+      "hint": {
+        "accreting": "Nước quá bão hòa aragonit; san hô tốn năng lượng nhưng bộ xương vẫn giữ vững và lớn lên.",
+        "dissolving": "Độ bão hòa đã rơi qua sàn bồi đắp. Khung đá trần giờ tan vào biển nhanh hơn tốc độ tạo thành."
+      },
+      "anchor": {
+        "preindustrial": "Tiền công nghiệp: pCO₂ ~280, pH ~8.18, Ω ~4.4",
+        "today": "Hiện nay: pCO₂ ~425, pH ~8.05, Ω ~3.7",
+        "future": "2100 (phát thải cao): pCO₂ ~900, pH ~7.8, Ω ~2.1"
+      }
+    },
     "oceanColumnExplorer": {
       "title": "Một đại dương theo chiều đứng",
       "subtitle": "Di chuyển qua cột nước và đổi chế độ hoàn lưu.",

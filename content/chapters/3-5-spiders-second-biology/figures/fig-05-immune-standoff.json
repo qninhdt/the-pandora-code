@@ -1,0 +1,34 @@
+{
+  "id": "fig-05-immune-standoff",
+  "chapter_slug": "spiders-second-biology",
+  "role": "diagram",
+  "narrative_purpose": "Illustrates Hurdle 1 — immune tolerance — by contrasting an intruder being destroyed with a symbiont being accepted, so the reader sees that the same defences can be made to stand down.",
+  "subject": "Two contrasting scenes side by side against dark tissue: on the left, a small foreign microbe swarmed and torn apart by aggressive angular immune cells firing sharp bright alarm bursts; on the right, a calm symbiotic organism sitting intact inside host tissue while the same immune cells hold back in a quiet ring around it, their alarm bursts dimmed to a soft cool glow, forming a permissive niche.",
+  "scene": "A left-destruction, right-tolerance comparison of how a host body treats a foreign organism.",
+  "camera": "A flat comparison view, two scenes of equal size divided by a soft vertical seam.",
+  "light": "Left scene lit by harsh bright alarm flashes; right scene lit by soft calm cyan glow; both over dark tissue.",
+  "palette": "Void-indigo tissue base, Pandora cyan and living teal for the calm right scene, a restrained sharp accent for the alarm bursts on the left; the guest a gentle teal.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed-from-life confidence, luminous and atmospheric.",
+  "detail_level": "Crisp on the immune cells and their alarm signals in both scenes; dark tissue background kept simple.",
+  "composition": "Two equal scenes divided vertically, the destroyed microbe left, the tolerated guest right; dark margins for labels.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding",
+    "modern Earth objects"
+  ],
+  "consistency_notes": "The same kind of immune cell appears in both scenes, aggressive left and quiescent right. Cool palette, alarm accents used sparingly.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": []
+}

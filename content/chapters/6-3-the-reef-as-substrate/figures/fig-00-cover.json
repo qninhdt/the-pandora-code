@@ -1,0 +1,32 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "the-reef-as-substrate",
+  "role": "hero",
+  "narrative_purpose": "Hero thumbnail: captures the essence of the chapter \u2014 the Metkayina living atop and within a living biogenic reef.",
+  "subject": "A panoramic twilight view of the Metkayina settlement at Awa'atlu. Organic woven pod-dwellings (marui) hang suspended from the arched aerial roots of giant water-borne mangrove-like trees. Beneath them, calm glowing turquoise lagoon water laps against cascading terraced limestone seawall rim-pools extending into the open sea under a dusk sky with the giant banded form of Polyphemus rising.",
+  "scene": "A peaceful coastal reef lagoon at dusk, soft bioluminescent glows along the reef crest and dwelling interiors.",
+  "camera": "Wide cinematic 16:9 establishing vista at water level.",
+  "light": "Deep indigo twilight sky, soft amber interior light in dwellings, bioluminescent cyan and teal along the living reef edges.",
+  "palette": "Ocean teal, void indigo, bioluminescent cyan, warm amber dwelling accents.",
+  "style": "Painterly naturalist landscape, atmospheric and grand.",
+  "detail_level": "Rich on the living root architecture, terraced reef walls, and water reflections.",
+  "composition": "Stepped reef terraces sweeping across the lower midground, suspended pods in upper right, calm lagoon center-left.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "modern boats",
+    "concrete",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Follow canonical Metkayina village architecture from Way of Water. The reef is clearly biological and stepped.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no watermark, no modern boats, no photographic 3D render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

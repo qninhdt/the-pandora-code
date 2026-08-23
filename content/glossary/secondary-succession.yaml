@@ -1,0 +1,29 @@
+id: secondary-succession
+label:
+  vi: Diễn thế thứ sinh
+  en: Secondary succession
+definition:
+  vi: >-
+    Sự phục hồi của một nơi đã bị xáo trộn nhưng vẫn còn giữ đất và một phần sự sống: sau cháy rừng,
+    sau gió quật đổ cây, sau khai hoang, sau lớp tro rơi mỏng không tiệt sinh. Nó diễn ra nhanh vì
+    những loài tiên phong có thể lập tức khai thác kho dưỡng chất, khả năng giữ ẩm và ngân hàng hạt
+    giống sẵn có trong đất. Đây là lý do khu rừng bị RDA thiêu rụi vẫn mọc lại: bộ khung dưới lòng
+    đất chưa từng bị hủy. Trái với diễn thế nguyên sinh, thứ sinh dựng lại từ một tấm mẫu còn sống.
+  en: >-
+    The recovery of a place that has been disturbed but still retains its soil and some of its life:
+    after a wildfire, a blowdown, a clear-cut, a thin non-sterilising ash fall. It proceeds fast
+    because pioneers can immediately draw on the existing nutrient store, moisture-holding capacity
+    and buried seed bank. This is why an RDA-burned forest regrows — the underground template was
+    never destroyed. Unlike primary succession, secondary succession rebuilds from a living template.
+see_also:
+  - primary-succession
+  - ecological-succession
+  - biological-legacy
+  - seed-bank
+category: concept
+tags:
+  - ecology
+cover_prompt: >-
+  A painterly naturalist plate of a fire-blackened forest floor where green shoots resprout from
+  surviving charred stumps and intact dark soil, faint cyan life returning through the char, deep
+  indigo background, no text, no labels, no numbers.

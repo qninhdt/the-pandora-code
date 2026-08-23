@@ -1,0 +1,63 @@
+{
+  "viz": {
+    "morphogenGradientLab": {
+      "title": "Quy tắc lá cờ ba màu",
+      "subtitle": "Một gradient mách cho tế bào biết phải trở thành gì",
+      "hint": "Kéo chiều dài phân rã và hai ngưỡng. Vẫn dải tế bào ấy tự phân lại thành ba số phận — không tế bào nào được chỉ dẫn riêng phải là gì; mỗi tế bào chỉ đọc nồng độ ngay tại chỗ nó đứng.",
+      "aria": "Một đường cong nồng độ chất tạo hình phía trên một dải tế bào tô màu thành ba dải số phận theo ngưỡng.",
+      "sourceLabel": "nguồn chất tạo hình",
+      "lambda": "Chiều dài phân rã λ",
+      "t1": "Ngưỡng T₁",
+      "t2": "Ngưỡng T₂",
+      "t1Mark": "T₁",
+      "t2Mark": "T₂",
+      "fatesLabel": "Số tế bào mỗi số phận",
+      "fatesNote": "cao · vừa · thấp"
+    },
+    "bioelectricMorphologyEditor": {
+      "title": "Viết lại hình dạng đích của cơ thể",
+      "subtitle": "Điện áp, không phải ADN, quyết định mấy cái đầu",
+      "prompt": "Đặt trạng thái điện sinh học cho mẩu thân, rồi tái sinh — và thử cắt lại kết quả.",
+      "aria": "Một mẩu thân sán dẹp tái sinh thành một đầu hoặc hai đầu tùy trạng thái điện sinh học của nó.",
+      "regenerate": "Tái sinh",
+      "recut": "Cắt lại trong nước sạch",
+      "reset": "Đặt lại",
+      "vmemLabel": "Trạng thái điện sinh học",
+      "polarized": "Phân cực",
+      "flat": "San phẳng",
+      "vmemState": "Gradient điện áp",
+      "gradientOn": "Đầu–đuôi",
+      "gradientOff": "Đồng nhất",
+      "gradientOnNote": "điện áp đầu-đến-đuôi bình thường",
+      "gradientOffNote": "mối nối khe bị ngắt",
+      "resultLabel": "Hình dạng tái sinh",
+      "idle": "—",
+      "oneHead": "Một đầu",
+      "twoHead": "Hai đầu",
+      "memoryHeld": "Vẫn hai đầu",
+      "oneHeadNote": "Hình thái đích mặc định: một đầu, một đuôi.",
+      "twoHeadNote": "San phẳng gradient là viết lại hình thái đích thành hai đầu — không gene nào bị sửa.",
+      "memoryNote": "Cắt lại trong nước sạch không xử lý gì thêm, nó vẫn mọc lại hai đầu: hình thái đích đã viết lại được ghi nhớ.",
+      "recutTag": "ký ức bền vững",
+      "headEnd": "điện áp đầu",
+      "tailEnd": "điện áp đuôi",
+      "flatEnd": "phẳng",
+      "dnaNote": "ADN không đổi suốt quá trình"
+    },
+    "swarmSteeringField": {
+      "title": "Lái một bầy mà bạn không hề chỉ huy",
+      "subtitle": "Thiên lệch ở vài cá thể kéo cả đàn",
+      "aria": "Một đàn boids trong đó một phần cảm nhận điểm hút và kéo phần còn lại vào một cú rẽ đồng loạt.",
+      "play": "Chạy",
+      "pause": "Dừng",
+      "biasLabel": "Tỉ lệ bị thiên lệch",
+      "ledLabel": "Số boids bị dẫn",
+      "ledNote": "cảm nhận điểm hút",
+      "orderLabel": "Độ đồng hướng của bầy",
+      "orderNote": "hướng đi thống nhất đến đâu",
+      "noneNote": "Không thiên lệch: cả đàn quẩn quanh không hướng chung — chỉ có tách, canh và kết.",
+      "fewNote": "Chỉ vài con cảm nhận điểm hút, vậy mà canh hướng và kết bầy lan truyền lực kéo, cả đàn cuốn theo.",
+      "manyNote": "Giờ phần lớn đàn bị thiên lệch; cú rẽ tức thì. Nhưng chỉ một phần nhỏ đã là đủ — bạn lái cả tập thể, chứ không bao giờ ra lệnh cho từng con."
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-cold-dead-moon",
+  "chapter_slug": "what-keeps-pandora-volcanically-alive",
+  "role": "inline",
+  "narrative_purpose": "Illustrates the chapter's central paradox: a small old world should look like a dead grey cratered moon, yet Pandora is still molten. Two moons side by side make the contrast between expected death and observed life.",
+  "subject": "Two moons side by side in space against a starfield. On the left, a grey, cratered, geologically dead world with a frozen cracked crust and no glow - the fate a small world expects. On the right, a moon of similar size still faintly threaded with glowing orange molten fractures, subtly alive. A clear gap of dark space separates them so they read as a comparison pair.",
+  "scene": "Deep space, two moons floating at the same scale on a shared dark starfield, nothing else competing.",
+  "camera": "Balanced two-up composition, both moons at equal size for direct comparison, centered.",
+  "light": "Left moon lit only by cold flat starlight, grey and lifeless; right moon self-lit by scarce warm ember-amber glow from its molten seams; deep indigo void between.",
+  "palette": "Left moon desaturated grey-indigo; right moon cool dark crust with scarce ember-amber fracture glow; void-indigo background.",
+  "style": "Painterly astronomical plate, naturalistic cratered and fractured surfaces.",
+  "detail_level": "Crisp craters on the dead moon and glowing seams on the live moon; background soft dark haze.",
+  "composition": "Two moons on left and right thirds with a dark gap between, equal size, generous dark negative space.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "gas giant", "spacecraft"],
+  "consistency_notes": "The live moon on the right should match Pandora's dark-crust-with-amber-seams look from the cover. The dead moon reads clearly as grey and lifeless for contrast.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-05-tidal-engine.png"]
+}

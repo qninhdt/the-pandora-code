@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-resonance-lockstep",
+  "chapter_slug": "what-keeps-pandora-volcanically-alive",
+  "role": "diagram",
+  "narrative_purpose": "Shows the orbital resonance that pumps a moon's eccentricity: three moons in a 4:2:1 rhythm around a giant, whose repeating aligned tugs keep orbits oval and the tidal furnace stoked.",
+  "subject": "A large banded gas giant at one side, ringed by three concentric faint orbital paths carrying three moons of decreasing size. The three moons are lined up in a neat row along one radius, caught at a shared conjunction. Along each orbital ring sit faint evenly spaced glowing tick-marks suggesting a rhythmic beat, denser on the inner ring and sparser outward, hinting at a four-to-two-to-one lockstep. The innermost moon glows faintly molten.",
+  "scene": "A clean top-down-feeling view of a moon system, spacious and dark, the giant planet anchoring one side, orbits nested outward.",
+  "camera": "Elevated near-overhead view of the orbital plane so the nested rings and the lined-up moons read clearly.",
+  "light": "Cool cyan-teal glow on the orbital rings and tick-marks, a scarce ember-amber glow on the innermost moon, dim banded light on the gas giant, deep indigo void.",
+  "palette": "Dominant void-indigo, cool cyan-teal orbital rings and beat marks, dim cream-rust gas giant, one scarce ember-amber moon accent.",
+  "style": "Painterly astronomical plate with a faint schematic clarity, elegant and diagrammatic without hard technical lines.",
+  "detail_level": "Crisp on the three aligned moons and the ring tick-marks; the gas giant softer behind.",
+  "composition": "Gas giant anchored on one side, three nested rings sweeping across the frame, the three moons aligned in a radial row on the near side, generous dark space.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "hard arrows", "equations", "spacecraft"],
+  "consistency_notes": "Gas giant is Polyphemus, banded, consistent with the chapter. Orbital rings and beat marks glow cool; the innermost molten moon is the scarce warm accent. Diagrammatic but still painterly.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no hard vector arrows, no equations, no photographic or 3D-render look, no lens flares, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-05-tidal-engine.png"]
+}

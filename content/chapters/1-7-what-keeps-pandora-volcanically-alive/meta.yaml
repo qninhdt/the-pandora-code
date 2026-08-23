@@ -1,0 +1,117 @@
+slug: what-keeps-pandora-volcanically-alive
+part: the-world
+order: 7
+status: published
+title:
+  vi: Cỗ máy núi lửa của Pandora
+  en: What Keeps Pandora Volcanically Alive?
+subtitle:
+  vi: >-
+    Vì sao một mặt trăng nhỏ và cổ xưa vẫn còn nóng chảy - và điều gì thực sự đã chôn vùi tộc
+    Mangkwan dưới biển tro: nhiệt thủy triều, phân rã phóng xạ, và lý do từ trường không thể nấu
+    chảy đá
+  en: >-
+    Why a small, ancient moon is still molten inside - and what really buried the Mangkwan under
+    ash: tidal heating, radioactive decay, and why a magnetic field cannot melt rock
+hook:
+  vi: >-
+    Một thế hệ trước, quê hương của tộc Mangkwan là rừng già. Rồi một ngọn núi lửa nuốt chửng nó, và
+    giờ họ đứng trên một đồng bằng dung nham đen nơi Cây Mẹ từng vươn cao. Cả chương này là một câu
+    hỏi mà một nhà vật lý sẽ đặt ra khi nhìn ngọn lửa ấy: một mặt trăng nhỏ bằng này, già bằng này,
+    lẽ ra phải nguội lạnh và chết từ lâu - vậy thứ gì vẫn đang đun sôi lòng nó?
+  en: >-
+    A generation ago the Mangkwan homeland was old-growth forest. Then a volcano swallowed it, and
+    now they stand on a plain of black lava where a Hometree once rose. The whole of this chapter is
+    a question a physicist would ask of that fire: a moon this small, this old, should have gone
+    cold and dead long ago - so what is still boiling its insides?
+authors:
+  - bardabez
+reading_time_min: 27
+tags:
+  - tidal-heating
+  - planetary-heat
+  - volcanism
+  - orbital-resonance
+  - radiogenic-heating
+  - electromagnetism
+classification:
+  canon_pct: 20
+  inference_pct: 22
+  speculation_pct: 10
+  real_science_pct: 48
+related_chapters:
+  - pandoras-deep-time
+  - floating-mountains-and-the-superconductor
+  - time-on-pandora
+  - where-is-pandora
+  - life-after-the-volcano
+glossary_terms:
+  - tidal-heating
+  - tidal-dissipation
+  - orbital-resonance
+  - mean-motion-resonance
+  - laplace-resonance
+  - radiogenic-heating
+  - primordial-heat
+  - mantle-convection
+  - love-number
+  - tidal-quality-factor
+  - induction-heating
+  - dynamo-theory
+  - volcanic-explosivity-index
+  - pyroclastic-density-current
+  - unobtanium
+  - meissner-effect
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-ashlands-plain
+    role: inline
+    asset_status: ready
+  - id: fig-02-cold-dead-moon
+    role: inline
+    asset_status: ready
+  - id: fig-03-tidal-flexing
+    role: inline
+    asset_status: ready
+  - id: fig-04-io-heat-pipe
+    role: comparison
+    asset_status: ready
+  - id: fig-05-resonance-lockstep
+    role: diagram
+    asset_status: ready
+  - id: fig-06-magnet-not-magma
+    role: inline
+    asset_status: ready
+  - id: fig-07-caldera-eruption
+    role: inline
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Mangkwan Clan - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Mangkwan_Clan
+  - kind: canon
+    label: 'Avatar: Fire and Ash - Wikipedia'
+    url: https://en.wikipedia.org/wiki/Avatar:_Fire_and_Ash
+  - kind: canon
+    label: James Cameron's Avatar - An Activist Survival Guide (Wilhelm & Mathison)
+    url: >-
+      https://james-camerons-avatar.fandom.com/wiki/James_Cameron%27s_Avatar:_An_Activist_Survival_Guide
+  - kind: science
+    label: Peale, Cassen & Reynolds (1979) - Melting of Io by Tidal Dissipation (Science)
+    url: https://www.science.org/doi/10.1126/science.203.4383.892
+  - kind: science
+    label: Moore & Webb (2013) - Heat-pipe Earth (Nature)
+    url: https://www.nature.com/articles/nature12473
+  - kind: science
+    label: KamLAND geoneutrino measurement of Earth's radiogenic heat (Nature Geoscience 2011)
+    url: https://www.nature.com/articles/ngeo1205
+  - kind: science
+    label: Chyba, Hand & Thomas (2021) - Magnetic induction heating of planetary satellites (Icarus)
+    url: https://doi.org/10.1016/j.icarus.2021.114360
+  - kind: science
+    label: Io - NASA Solar System Exploration
+    url: https://science.nasa.gov/jupiter/moons/io/
+  - kind: research-note
+    label: Planetary Heat Engines and Exomoon Volcanism (chapter research note)

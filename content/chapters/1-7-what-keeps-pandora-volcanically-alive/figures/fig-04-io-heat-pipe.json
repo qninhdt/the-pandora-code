@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-io-heat-pipe",
+  "chapter_slug": "what-keeps-pandora-volcanically-alive",
+  "role": "comparison",
+  "narrative_purpose": "Shows how tidal heat reaches the surface: a cutaway of a heat-pipe moon like Io, with a molten interior feeding narrow magma conduits that erupt and resurface the crust, burying old layers - the mechanism a world with Pandora's heat budget would share.",
+  "subject": "A cutaway cross-section of a moon: a glowing orange partly molten interior, narrow bright vertical conduits of magma rising straight up through a thick dark rigid crust to erupt at the surface as small volcanic plumes. Fresh lava flows spread over the surface and older buried crust layers are visibly dragged downward at the edges. The dim banded flank of a gas giant sits far behind in space.",
+  "scene": "A sliced-open view of a tidally heated moon in space, interior revealed, the giant planet dim and distant behind.",
+  "camera": "Cross-section cutaway view, the moon sliced to reveal its glowing interior and rising conduits, surface eruptions along the top.",
+  "light": "Warm amber-orange glow from the molten interior and the rising conduits, cool dark rigid crust, deep indigo space behind, dim planet light.",
+  "palette": "Dominant cool dark crust and void-indigo, strong ember-amber glow concentrated in the interior and conduits, dim rust planet behind.",
+  "style": "Painterly astronomical cutaway plate, naturalistic layered rock, luminous molten interior.",
+  "detail_level": "Crisp on the conduits, molten interior, and surface eruptions; the distant planet soft.",
+  "composition": "The cutaway moon dominating the frame, interior glow drawing the eye up the conduits to surface plumes, dim planet in the background.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "cross-section labels", "spacecraft"],
+  "consistency_notes": "This is Io-as-analogue but painted in the same Pandora palette - cool crust, scarce warm molten accent. The gas giant behind stays consistent with Polyphemus/Jupiter styling.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no diagram callouts, no photographic or 3D-render look, no lens flares, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-05-tidal-engine.png"]
+}

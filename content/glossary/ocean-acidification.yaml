@@ -1,0 +1,33 @@
+id: ocean-acidification
+label:
+  vi: Axit hóa đại dương
+  en: Ocean acidification
+definition:
+  vi: >-
+    Sự thay đổi hóa học của nước biển khi đại dương hấp thụ khí CO₂ dư thừa từ khí quyển. CO₂ hòa
+    tan tạo axit cacbonic, thả proton làm giảm pH và đồng thời nuốt mất ion cacbonat — chính viên
+    gạch mà san hô cần để tiết đá vôi. Hệ quả đo bằng độ bão hòa aragonit (Ω): Ω càng thấp, việc tạo
+    xương càng tốn năng lượng, và dưới ngưỡng tới hạn (khoảng 3,0–3,3) thì khung đá trần bắt đầu tan
+    ra thay vì lớn lên. Đây là mối đe dọa âm thầm với cái nền của rạn: không cần một ngọn lửa hay quả
+    bom nào, chỉ cần nước đổi vị là nền móng tự rã.
+  en: >-
+    The shift in seawater chemistry as the ocean absorbs surplus CO₂ from the atmosphere. Dissolved
+    CO₂ forms carbonic acid, releasing protons that lower pH and simultaneously consuming carbonate
+    ions — the very building block corals need to secrete limestone. The consequence is tracked by
+    the aragonite saturation state (Ω): the lower Ω falls, the more energy calcification costs, and
+    below a critical threshold (roughly 3.0–3.3) bare framework begins to dissolve rather than grow.
+    It is the quiet threat to a reef's foundation: no fire or bomb required — the ground can come
+    apart simply because the water changed its chemistry.
+see_also:
+  - carbonate-budget
+  - coral-bleaching
+  - biogenic-reef
+  - carbonate-silicate-cycle
+category: concept
+tags:
+  - oceanography
+  - chemistry
+cover_prompt: >-
+  A painterly scene of a pale reef skeleton with its edges visibly dissolving into cloudy water,
+  faint rising bubbles suggesting dissolved gas, cool teal fading to sickly grey, dark indigo
+  background, painterly naturalist plate, no text, no labels.

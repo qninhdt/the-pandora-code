@@ -1,0 +1,26 @@
+id: mitochondrion
+label:
+  vi: Ty thể
+  en: Mitochondrion
+definition:
+  vi: Bào quan hình hạt đậu trong tế bào bạn, nơi oxy được dùng để đốt thức ăn thành năng lượng. Nó mang
+    loop DNA riêng, phân chia theo lịch riêng và được bọc trong màng kép — dấu vết còn lại của một vi
+    khuẩn từng sống tự do, đã dọn vào một tế bào chủ khoảng hai tỉ năm trước và ở lại vĩnh viễn. Ty thể
+    là bằng chứng sống rằng một sinh vật có thể trở thành bộ phận thường trực của một sinh vật khác và
+    trao cho nó một năng lực hoàn toàn mới.
+  en: The bean-shaped organelle in your cells where oxygen is used to burn food into energy. It carries
+    its own loop of DNA, divides on its own schedule, and is wrapped in a double membrane — the lingering
+    trace of a once-free-living bacterium that moved into a host cell about two billion years ago and
+    stayed for good. The mitochondrion is living proof that one organism can become a permanent part of
+    another and hand it a wholly new power.
+see_also:
+- endosymbiosis
+- serial-endosymbiotic-theory
+- chemosynthesis
+category: bio
+tags:
+- physiology
+- evolution
+cover_prompt: A painterly close study of a single glowing bean-shaped organelle with a faint internal
+  loop of DNA and folded inner membranes, suspended in cool cytoplasm, teal and cyan light, no text, no
+  labels.

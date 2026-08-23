@@ -1,0 +1,33 @@
+{
+  "id": "fig-07-the-colour-leaves",
+  "chapter_slug": "the-reef-as-substrate",
+  "role": "inline",
+  "narrative_purpose": "Shows coral bleaching as a partnership breaking: under heat stress the coral expels its algae and turns bone-white, a starvation event rather than a clean death.",
+  "subject": "A single reef shown transitioning across the frame. On the left, vivid living coral colonies rich with colour and small fish. Moving right, the colours drain and the colonies turn stark bone-white, their branching skeletons showing bare through translucent tissue. At the far right the white is total and the fish have thinned to almost none. Faint shimmering heat-haze rises through the water on the right side.",
+  "scene": "One continuous reef in warm, slightly hazy shallow water, healthy left grading to bleached right, no hard border.",
+  "camera": "Wide straight-on plate at reef scale, colour gradient running left to right.",
+  "light": "Cyan and living colour on the left; a hot, flat, slightly overbright wash on the right that flattens the bleached white; indigo depth below.",
+  "palette": "Ocean teal and living cyan on the left grading to stark bone-white and pale grey on the right, void indigo below.",
+  "style": "Painterly naturalist plate, the whitening organic and gradual, not a hard split.",
+  "detail_level": "Crisp on the colour-to-white transition and the bared skeleton; simple hazy water for callouts.",
+  "composition": "Colour-left to white-right gradient with open upper water band for labels on healthy vs bleached.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "thermometer icon",
+    "panel borders",
+    "callout lines"
+  ],
+  "consistency_notes": "It is the SAME reef losing colour, not two reefs. Bleached coral is bone-white with skeleton showing, not dead-brown or algae-covered.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no thermometer or icons, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}
