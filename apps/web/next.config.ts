@@ -7,6 +7,19 @@ const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 const withMDX = createMDX();
 
 const nextConfig: NextConfig = {
+  outputFileTracingExcludes: {
+    "*": [
+      "./public/**/*",
+      "public/**/*",
+      "../../public/**/*",
+      "../../research/**/*",
+      "../../i18n/**/*",
+      "../../docs/**/*",
+      "../../.agent/**/*",
+      "../../scripts/**/*",
+      "../../tests/**/*",
+    ],
+  },
   turbopack: {
     root: path.resolve(process.cwd(), "../../"),
   },

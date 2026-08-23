@@ -14,7 +14,8 @@
     "test:lhci": "lhci autorun",
     "validate:content": "tsx scripts/validate-content.ts",
     "build:search-index": "tsx scripts/build-search-index.ts",
-    "prebuild": "tsx scripts/validate-content.ts && tsx scripts/build-search-index.ts && fumadocs-mdx",
+    "build:image-manifest": "tsx scripts/build-image-manifest.ts",
+    "prebuild": "tsx scripts/validate-content.ts && tsx scripts/build-search-index.ts && tsx scripts/build-image-manifest.ts && fumadocs-mdx",
     "postinstall": "fumadocs-mdx"
   },
   "dependencies": {

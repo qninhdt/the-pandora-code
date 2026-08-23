@@ -1,41 +1,9 @@
-import fs from "node:fs";
-import path from "node:path";
-import { chapterImagesDir } from "./content-paths";
+import manifest from "./image-manifest.json";
 
-// Resolve a chapter's representative ("cover") image - the one shown on the
-// landing plate and as the chapter's social/hero thumbnail. Preference order:
-//   1. cover.png            (an explicit hand-placed cover)
-//   2. fig-00-cover.png     (the cover figure the pipeline authors per chapter)
-//   3. the lowest-numbered fig-NN-*.png that exists (graceful fallback)
-// Returns a public URL path (/images/chapters/{slug}/{file}) or undefined when
-// no image has been generated yet, so the plate can fall back to its gradient.
-
-function publicPath(slug: string, file: string): string {
-  return `/images/chapters/${slug}/${file}`;
-}
-
+// Resolve a chapter's representative ("cover") image from the pre-built manifest.
+// This eliminates runtime `fs` operations on public/images during page rendering,
+// preventing Node File Tracing (NFT) from bundling 1.4GB of images into Serverless Functions.
 export function getChapterCoverImage(slug: string): string | undefined {
-  const dir = chapterImagesDir(slug);
-  if (!fs.existsSync(dir)) return undefined;
-
-  const candidates = [
-    "cover.webp",
-    "cover.png",
-    "fig-00-cover.webp",
-    "fig-00-cover.png",
-  ];
-  for (const candidate of candidates) {
-    if (fs.existsSync(path.join(dir, candidate))) {
-      return publicPath(slug, candidate);
-    }
-  }
-
-  // Fallback: the first figure image in sequential order.
-  const figures = fs
-    .readdirSync(dir)
-    .filter((f) => /^fig-\d{2}-.+\.(webp|png)$/.test(f))
-    .sort();
-  const webpFig = figures.find((f) => f.endsWith(".webp"));
-  if (webpFig) return publicPath(slug, webpFig);
-  return figures.length > 0 ? publicPath(slug, figures[0]) : undefined;
+  const covers = manifest.chapterCovers as Record<string, string>;
+  return covers[slug];
 }
