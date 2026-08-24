@@ -1,0 +1,30 @@
+id: thermally-thin-fuel
+label:
+  vi: Nhiên liệu mỏng nhiệt (thermally thin fuel)
+  en: Thermally thin fuel
+definition:
+  vi: >-
+    Vật liệu mỏng đến mức khi bị sưởi, cả bề dày của nó nóng lên gần như cùng lúc, không có chênh
+    lệch nhiệt độ đáng kể giữa mặt ngoài và mặt trong. Tiêu chuẩn quy ước là số Biot nhỏ hơn 0,1.
+    Hệ quả rất thực dụng: thời gian đến khi bắt cháy tỉ lệ thuận với khối lượng nhiệt trên đơn vị
+    diện tích ρcδ, chứ không tỉ lệ với bình phương quán tính nhiệt như ở vật dày. Lá cây, giấy, và
+    màng da cánh đều rơi vào loại này - đó là lý do những thứ mỏng không hề "cháy chậm hơn một chút"
+    mà gần như hỏng ngay lập tức khi gặp bức xạ nhiệt.
+  en: >-
+    A material thin enough that when it is heated, its whole thickness warms together, with no
+    meaningful temperature gradient between the exposed face and the back. The conventional test is a
+    Biot number below 0.1. The practical consequence is a change of scaling law: time to ignition
+    goes linearly with areal thermal mass ρcδ, instead of quadratically with thermal inertia as it
+    does in thick solids. Leaves, paper and flight membranes all fall in this class - which is why
+    thin things do not merely burn a little sooner than thick ones, they fail almost immediately
+    under radiant heat.
+see_also:
+  - critical-heat-flux
+  - flame-blow-off
+  - firebrand-spotting
+  - wing-loading
+category: concept
+tags:
+  - physics
+  - physiology
+cover_prompt: A painterly naturalist plate of a single translucent membrane stretched between two slender dark ribs, held against deep indigo darkness so cyan backlight passes right through the membrane, one edge curling and browning to faint ember amber, no text, no labels.

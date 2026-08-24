@@ -1,0 +1,17 @@
+id: wake-recapture
+label:
+  vi: Thu lại năng lượng vệt khí
+  en: Wake recapture
+definition:
+  vi: 'Mánh mà một loài bay bốn cánh dùng để lấy lại phần năng lượng cặp cánh trước vừa ném đi. Mỗi cú đập cánh bỏ lại phía sau một khối khí đang xoáy, và khối xoáy đó mang theo động năng thật. Nếu cặp cánh sau đập chậm pha đúng lúc - đo trên chuồn chuồn là khoảng một phần tư nhịp - nó băng qua vùng xoáy ấy và bòn lại được một phần, hạ tổng công suất cần thiết xuống tới khoảng một phần năm so với đập độc lập. Đây là lời đáp của sinh học cho hình phạt của cấu hình cánh xếp trước sau: không phải bố trí cánh khác đi, mà là canh nhịp khác đi.'
+  en: 'The trick a four-winged flyer uses to take back some of the energy its front pair just threw away. Every wingbeat leaves a mass of swirling air behind it, and that swirl carries real kinetic energy. If the rear pair beats at the right lag - measured on dragonflies at roughly a quarter of a cycle - it passes through that swirl and harvests part of it, cutting the total power needed by up to about a fifth compared with beating independently. This is biology''s answer to the tandem-wing penalty: not a different wing layout, but different timing.'
+see_also:
+  - tandem-wing
+  - downwash
+  - leading-edge-vortex
+  - induced-drag
+category: concept
+tags:
+  - physics
+  - physiology
+cover_prompt: A painted study of a four-winged creature in mid-beat, the front pair rising while the rear pair sweeps down through two faint spiralling rings of cool teal swirling air left hanging behind, deep indigo background, painterly naturalist plate, no text, no labels.

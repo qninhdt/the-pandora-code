@@ -1,0 +1,30 @@
+id: archimedes-principle
+label:
+  vi: Nguyên lý Archimedes
+  en: Archimedes' principle
+definition:
+  vi: >-
+    Một vật nhúng trong chất lỏng hay chất khí chịu một lực đẩy hướng lên đúng bằng trọng lượng của
+    lượng chất mà nó chiếm chỗ. Điểm cốt yếu thường bị bỏ qua: lực nổi không phụ thuộc vào việc vật
+    nhẹ tới đâu, mà phụ thuộc vào việc nó đẩy đi được bao nhiêu. Một hòn đá vẫn nhận lực đẩy ấy, chỉ là
+    nó nặng hơn phần nước bị chiếm chỗ nên chìm. Vì không khí cũng là một chất lỏng có khối lượng,
+    nguyên lý này chi phối bầu trời y như chi phối mặt biển - và đó là toàn bộ cơ sở của khinh khí cầu,
+    của khí cầu, và của bất kỳ sinh vật nào chọn cách treo mình trong không khí thay vì đập cánh.
+  en: >-
+    A body immersed in a fluid experiences an upward force equal to the weight of the fluid it
+    displaces. The point most often missed: buoyancy does not depend on how light the object is, but on
+    how much it pushes aside. A stone feels that upward force too — it simply weighs more than the
+    water it displaced, so it sinks. Because air is also a fluid with weight, the principle governs the
+    sky exactly as it governs the sea, and it is the entire basis of the balloon, the airship, and any
+    organism that chooses to hang in the air rather than beat against it.
+see_also:
+  - aerostatic-lift
+  - aerostat
+  - ballast
+category: concept
+tags:
+  - physics
+cover_prompt: >-
+  A painterly study of a translucent sphere suspended in a dark indigo fluid, a faint cyan outline
+  showing the volume of fluid it has pushed aside and small upward-curving streamlines gathering
+  beneath it, hand-painted texture, no text, no labels, no numbers.

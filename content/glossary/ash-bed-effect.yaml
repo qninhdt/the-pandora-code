@@ -1,0 +1,30 @@
+id: ash-bed-effect
+label:
+  vi: Hiệu ứng nền tro (ash bed effect)
+  en: Ash bed effect
+definition:
+  vi: >-
+    Đợt dinh dưỡng đột ngột mà lửa để lại trên mặt đất. Khi thực vật cháy, canxi, magie và kali trong
+    sinh khối không bay đi mà đọng lại dưới dạng oxit và cacbonat, tức là ở dạng cây hút được ngay,
+    không cần chờ phân giải chậm. Những chất này có tính kiềm nên còn trung hòa tầng đất mặt chua,
+    nâng pH lên chừng 1-3 đơn vị và mở khóa cho những chất khoáng vốn bị giữ chặt ở pH thấp. Đây là
+    nửa tái sinh trong sổ sách dinh dưỡng của lửa, đối trọng với nửa mất mát là nitơ bay hơi theo
+    khói - lửa lấy đi nitơ và trả lại cation.
+  en: >-
+    The sudden nutrient pulse a fire leaves on the ground. When vegetation burns, the calcium,
+    magnesium and potassium in the biomass do not go up the plume; they settle as oxides and
+    carbonates, in forms roots can take up at once rather than after slow decomposition. Being
+    alkaline, they also neutralise acid topsoil, lifting pH by roughly 1-3 units and unlocking
+    minerals that low pH had held tightly bound. This is the regenerative half of fire's nutrient
+    ledger, the counterweight to the losing half where nitrogen volatilises into the smoke - fire
+    takes nitrogen away and hands back cations.
+see_also:
+  - pyrogenic-carbon
+  - serotiny
+  - nitrogen-fixation
+  - pedogenesis
+category: concept
+tags:
+  - ecology
+  - chemistry
+cover_prompt: A painterly naturalist plate close to the ground showing a soft pale grey-white ash layer over dark charcoal soil, a few chalky white flecks catching cyan light and one small living teal-green shoot pushing up through the ash, deep indigo shadow behind, no text, no labels.

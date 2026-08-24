@@ -1,0 +1,17 @@
+id: wayfinding
+label:
+  vi: Wayfinding (dẫn đường Polynesia)
+  en: Wayfinding
+definition:
+  vi: 'Truyền thống dẫn đường vượt đại dương của người Polynesia và Micronesia, thực hiện hoàn toàn không có dụng cụ đo: một la bàn sao tinh tú chia đường chân trời thành các nhà theo điểm mọc và lặn của những ngôi sao đã thuộc lòng, hệ quy chiếu di động etak dùng để theo dõi vị trí bằng cách hình dung hòn đảo tham chiếu tự trôi qua các nhà sao ấy, cùng với khuôn mẫu sóng lừng và hành vi của chim biển để dò đất liền ngoài tầm mắt. Cần nói rõ một điều: đây là một môn khoa học được huấn luyện, nghiêm ngặt và định lượng, được truyền qua chế độ học nghề nhiều năm và qua các bài xướng ghi nhớ — không phải trực giác, càng không phải may mắn.'
+  en: 'The Polynesian and Micronesian tradition of open-ocean navigation carried out with no instruments at all: a sidereal star compass that divides the horizon into houses by the rising and setting points of memorised stars, the etak moving-reference system that tracks position by imagining the reference island drifting past those star houses, and swell patterns and seabird behaviour to find land beyond the horizon. One thing must be said plainly: this is a trained, rigorous, quantitative discipline, transmitted through years of apprenticeship and through mnemonic chant — not intuition, and certainly not luck.'
+see_also:
+  - zermelo-navigation-problem
+  - sidereal-day
+  - animal-culture
+  - social-learning
+category: concept
+tags:
+  - collective-behavior
+  - earth-systems
+cover_prompt: A painted night scene of an outrigger canoe on dark open ocean, the horizon ringed by evenly spaced points of starlight and long swell crests crossing at an angle beneath the hull, a single seabird low in the sky, cool teal and cyan on void-indigo, painterly, no text, no labels, no numbers.

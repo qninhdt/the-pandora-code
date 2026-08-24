@@ -1,0 +1,17 @@
+id: orographic-lift
+label:
+  vi: Nâng địa hình
+  en: Orographic lift
+definition:
+  vi: 'Hiện tượng không khí bị chính địa hình cưỡng bức bốc lên: gió gặp một sườn núi hay một vách dựng thì không thể đi xuyên qua nên buộc phải leo lên, và cả một khối khí khổng lồ được nâng lên chỉ vì hình dáng mặt đất. Với các loài lượn và với tàu lượn của con người, đây là món quà đáng tin cậy nhất trên trời — dòng thăng bám sát sườn núi, có mặt suốt ngày miễn là còn gió, khác với các nhiệt lưu chỉ mọc lên khi mặt đất đủ nóng. Cái giá phải trả là mưa: không khí leo cao thì nguội đi, hơi nước ngưng tụ, nên sườn đón gió luôn ướt đẫm trong khi sườn bên kia khô hạn.'
+  en: 'Air forced upward by the shape of the land itself: wind meeting a mountain flank or a cliff cannot go through it and must climb, so an enormous mass of air is lifted for no reason other than terrain. For soaring animals and for human gliders this is the most dependable gift in the sky — the updraft hugs the slope and is there all day as long as the wind blows, unlike thermals, which only appear once the ground has heated. The price is rain: climbing air cools, its vapour condenses, and the windward slope stays drenched while the far side goes dry.'
+see_also:
+  - thermal-soaring
+  - mountain-wave
+  - adiabatic-lapse-rate
+  - dynamic-soaring
+category: concept
+tags:
+  - atmosphere
+  - earth-systems
+cover_prompt: A painted view of moist air sliding up a steep dark ridge face, condensing into a glowing cloud cap right at the crest while the far slope stays clear and arid, cool teal cloud on void-indigo, painterly, no text, no labels, no numbers.

@@ -1,0 +1,31 @@
+id: adiabatic-flame-temperature
+label:
+  vi: Nhiệt độ ngọn lửa đoạn nhiệt (adiabatic flame temperature)
+  en: Adiabatic flame temperature
+definition:
+  vi: >-
+    Nhiệt độ mà sản phẩm cháy sẽ đạt tới nếu toàn bộ nhiệt phản ứng đều dùng để sưởi chính chúng, và
+    không có chút nào thất thoát ra ngoài. Đó là giới hạn trên lý tưởng: gỗ khô cháy trong không khí
+    Trái Đất cho khoảng 2250 K, còn ngọn lửa thật luôn nguội hơn vì bức xạ và đối lưu. Vì con số này
+    đến từ một cân bằng enthalpy chứ không phải từ độ mạnh của nhiên liệu, mọi chất khí trơ có nhiệt
+    dung mol lớn đều kéo nó xuống - CO₂ ở 298 K là 37 J/mol·K so với 29 của N₂, nên cùng một lượng
+    phần trăm CO₂ làm nguội ngọn lửa mạnh hơn nitơ. Khi nhiệt độ tính ra tụt xuống dưới ngưỡng cần
+    để duy trì phản ứng chuỗi, ngọn lửa đơn giản là không tồn tại được.
+  en: >-
+    The temperature the products of combustion would reach if every joule of reaction enthalpy went
+    into heating them and none leaked away. It is an idealised ceiling: dry wood burning in Earth air
+    gives about 2250 K, while real flames always run cooler because they radiate and convect heat
+    out. Because the figure comes from an enthalpy balance rather than from how energetic the fuel
+    is, any inert diluent with a large molar heat capacity pulls it down - CO₂ is 37 J/mol·K at 298 K
+    against nitrogen's 29, so the same percentage of carbon dioxide cools a flame considerably
+    harder. Once the calculated temperature falls below what the radical chain reaction needs, the
+    flame simply cannot exist.
+see_also:
+  - fire-tetrahedron
+  - limiting-oxygen-index
+  - critical-heat-flux
+category: concept
+tags:
+  - chemistry
+  - physics
+cover_prompt: A painterly naturalist plate of a single tall narrow flame rising in a dark indigo chamber, its base ember amber fading upward through magenta into cool cyan and then into teal smoke, faint pale gas streams curling inward from the sides, no text, no labels.

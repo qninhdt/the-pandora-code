@@ -1,0 +1,31 @@
+id: aerostat
+label:
+  vi: Khí cầu
+  en: Aerostat
+definition:
+  vi: >-
+    Bất kỳ vật thể bay nào giữ mình trên trời bằng lực nổi thay vì bằng chuyển động - bóng bay, khí cầu
+    có động cơ, bóng thám không, và trên Pandora là loài Medusoid. Khác biệt cốt lõi so với một chiếc
+    máy bay hay một con chim là ở chi phí: một khí cầu trả tiền một lần bằng thể tích rồi lơ lửng gần
+    như miễn phí hàng tháng, còn một chiếc cánh phải trả từng giây và rơi ngay khi ngừng trả. Cái giá
+    của sự rẻ ấy là nó trôi cùng khối khí xung quanh, nên nó không cảm nhận được gió tương đối và cũng
+    không có gì để bánh lái đạp vào: một khí cầu tự do gần như không thể tự chọn hướng.
+  en: >-
+    Any flying body held up by buoyancy rather than by motion — balloons, powered airships, weather
+    sondes, and on Pandora the Medusoid. The essential difference from an aircraft or a bird is the cost
+    structure: an aerostat pays once, in volume, and then floats almost free for months, while a wing
+    pays every second and falls the moment it stops. The price of that cheapness is that it drifts with
+    the surrounding air, so it feels no relative wind and has nothing for a rudder to push against — a
+    free aerostat can barely choose its own direction.
+see_also:
+  - aerostatic-lift
+  - ballast
+  - added-mass
+category: concept
+tags:
+  - physics
+  - atmosphere
+cover_prompt: >-
+  A painted silhouette of a great rounded envelope drifting high above a dim cloud layer at dusk, a
+  small gondola slung beneath it on fine lines, deep indigo and teal atmosphere with faint haze
+  dissolving the horizon, painterly naturalist plate, no text, no labels, no numbers.

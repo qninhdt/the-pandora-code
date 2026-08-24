@@ -1,0 +1,17 @@
+id: escalation
+label:
+  vi: Leo thang tiến hóa
+  en: Escalation
+definition:
+  vi: 'Kiểu chạy đua vũ trang trong đó cả hai phía thật sự cải thiện năng lực tuyệt đối theo thời gian - răng sắc hơn thì da dày hơn, sonar nhạy hơn thì tai tinh hơn - chứ không chỉ luân phiên chiếm ưu thế. Cần phân biệt với việc dao động tuần hoàn quanh một điểm cân bằng, nơi hai bên đổi vai qua từng thế hệ mà chẳng ai khá lên. Leo thang là bất đối xứng: nguyên tắc "mạng sống đổi bữa ăn" nói rằng con mồi thất bại thì chết, kẻ săn thất bại thì chỉ đói - nên áp lực chọn lọc lên khả năng chạy thoát luôn nặng hơn lên khả năng bắt được, và con mồi thường đầu tư nhiều hơn.'
+  en: 'The kind of arms race in which both sides genuinely improve in absolute capability over time - sharper teeth answered by thicker hide, better sonar answered by better ears - rather than merely trading the advantage back and forth. It is worth distinguishing from cycling around an equilibrium, where the two sides swap roles generation by generation and neither actually gets better. Escalation is asymmetric: the life-dinner principle notes that a failed prey dies while a failed predator only goes hungry, so selection presses harder on escape than on capture, and prey tend to out-invest.'
+see_also:
+  - coevolution
+  - red-queen-hypothesis
+  - life-dinner-principle
+  - ecomorph
+category: concept
+tags:
+  - evolution
+  - ecology
+cover_prompt: A painted plate of two ascending stepped ladders climbing side by side out of dark indigo depths, one edged in cool teal and one in warm magenta, each rung slightly higher than its neighbour on the other side, painterly naturalist illustration, no text, no labels.

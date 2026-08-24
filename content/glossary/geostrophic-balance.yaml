@@ -1,0 +1,17 @@
+id: geostrophic-balance
+label:
+  vi: Cân bằng địa chuyển
+  en: Geostrophic balance
+definition:
+  vi: 'Trạng thái cân bằng giữa lực gradient áp suất và lực Coriolis, và cũng là lý do gió quy mô lớn thổi DỌC THEO các đường đẳng áp thay vì chảy thẳng từ nơi áp cao sang nơi áp thấp. Đây chính là chỗ phản trực giác: không khí bắt đầu chuyển động về phía áp thấp, nhưng vừa chuyển động là nó bị chuyển động tự quay của hành tinh bẻ sang một bên, và nó chỉ ngừng bẻ khi hai lực triệt tiêu nhau — lúc đó dòng chảy đã quay vuông góc với hướng nó khởi hành. Định luật Buys Ballot phát biểu điều này theo cách nhà đi biển dùng được: ở Bắc bán cầu, đứng lưng về hướng gió thì áp thấp nằm phía tay trái.'
+  en: 'The balance between the pressure-gradient force and the Coriolis force, and the reason large-scale wind blows ALONG the isobars instead of running straight from high pressure to low. This is the counterintuitive part: air does start moving toward the low, but the moment it moves the planet''s spin deflects it sideways, and the deflection only stops when the two forces cancel — by which point the flow runs at right angles to where it set out. Buys Ballot''s law states this in a form a sailor can use: in the Northern Hemisphere, stand with your back to the wind and the low pressure lies to your left.'
+see_also:
+  - coriolis-effect
+  - thermal-wind-balance
+  - rossby-number
+  - jet-stream
+category: concept
+tags:
+  - atmosphere
+  - physics
+cover_prompt: A painted overhead study of concentric pressure contours around a dark low-pressure centre with a single glowing arrow of wind running parallel to the contours rather than inward, cool teal and indigo, painterly, no text, no labels, no numbers.

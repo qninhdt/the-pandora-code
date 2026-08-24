@@ -1,0 +1,17 @@
+id: rossby-wave
+label:
+  vi: Sóng Rossby
+  en: Rossby wave
+definition:
+  vi: 'Khúc uốn ở quy mô hành tinh trên một dòng tia, được giữ và hồi phục bởi cách xoáy hành tinh thay đổi theo vĩ độ — cái gọi là hiệu ứng beta — cộng với việc dòng khí phải bảo toàn xoáy thế của nó. Một khối khí bị đẩy về phía cực nhận thêm xoáy hành tinh, nên buộc phải xoay ngược lại để bù trừ, và chính lực hồi phục đó biến một nhiễu động nhỏ thành một con sóng dài hàng nghìn kilômét. Sóng Rossby lan truyền về phía tây so với dòng chảy trung bình; khi tốc độ lan truyền ấy vừa đúng bằng tốc độ dòng chảy mang nó về phía đông, hai chuyển động triệt tiêu và khuôn mẫu sóng gần như đứng yên trên mặt đất.'
+  en: 'A planetary-scale meander in a jet, held and restored by the way planetary vorticity changes with latitude — the beta effect — together with the flow''s conservation of potential vorticity. A parcel pushed poleward gains planetary vorticity and must spin the other way to compensate, and that restoring tendency turns a small nudge into a wave thousands of kilometres long. Rossby waves propagate westward relative to the mean flow; when that westward propagation exactly matches the eastward flow carrying them, the two cancel and the wave pattern stands nearly still over the ground.'
+see_also:
+  - jet-stream
+  - atmospheric-blocking
+  - coriolis-effect
+  - geostrophic-balance
+category: concept
+tags:
+  - atmosphere
+  - physics
+cover_prompt: A painted polar-view of a luminous wind ribbon looping in four broad symmetrical waves around a dark planet, one lobe reaching far toward the pole and another far toward the equator, cool teal and cyan on void-indigo, painterly, no text, no labels, no numbers.

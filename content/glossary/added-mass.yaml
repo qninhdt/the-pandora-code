@@ -1,0 +1,30 @@
+id: added-mass
+label:
+  vi: Khối lượng kèm
+  en: Added mass
+definition:
+  vi: >-
+    Lượng chất lỏng mà một vật phải kéo theo khi nó tăng tốc, biểu hiện ra như thể vật nặng hơn khối lượng
+    thật của nó. Muốn đổi hướng thì không chỉ thân vật phải được gia tốc mà cả khối khí hoặc nước bị nó
+    xáo động cũng phải được gia tốc theo. Với một vật đặc trong không khí, hiệu ứng này nhỏ đến mức bỏ
+    qua được; với một vật rỗng, khổng lồ và nhẹ - một quả bóng, một chiếc khí cầu, một sinh vật nổi - khối
+    lượng kèm có thể sánh ngang hoặc vượt cả khối lượng bản thân. Đó là lý do những thân bay thật lớn phản
+    ứng với lệnh điều khiển sau nhiều phút chứ không phải nhiều giây, và mọi cú chuyển hướng phải được ra
+    lệnh từ rất sớm.
+  en: >-
+    The quantity of fluid a body must drag along as it accelerates, which shows up as though the body were
+    heavier than its actual mass. Changing course means accelerating not just the body itself but the air
+    or water it disturbs. For a dense object in air the effect is negligible; for a hollow, enormous, light
+    one — a balloon, an airship, a floating organism — the added mass can rival or exceed the body's own.
+    This is why very large buoyant bodies answer the helm over minutes rather than seconds, and why every
+    turn has to be commanded far in advance.
+see_also:
+  - aerostat
+  - reynolds-number
+category: concept
+tags:
+  - physics
+cover_prompt: >-
+  A painted study of a large pale rounded body beginning to move through a dark indigo medium, a broad
+  faint halo of entrained fluid moving with it rendered as soft displaced streamlines, painterly texture,
+  no text, no labels, no numbers.

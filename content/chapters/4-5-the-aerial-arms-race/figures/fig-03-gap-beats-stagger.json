@@ -1,0 +1,36 @@
+{
+  "id": "fig-03-gap-beats-stagger",
+  "chapter_slug": "the-aerial-arms-race",
+  "role": "comparison",
+  "narrative_purpose": "Land Munk's stagger theorem visually: separating two wings along the flight direction does almost nothing, while separating them vertically lifts the rear wing out of the sinking air and fixes the problem.",
+  "subject": "A split-frame comparison of two wing arrangements, divided by a clear vertical seam down the centre. LEFT HALF: two thin dark wing cross-sections at almost the same height as each other but placed very far apart horizontally; a broad band of pale cool-teal flowing lines sinks gently from the first one and the second one sits fully inside that band. RIGHT HALF: the same two wing sections placed close together horizontally but with a large vertical separation, the upper section clearly above the sinking band of flow, the flow lines reaching it staying horizontal and clean.",
+  "scene": "An abstract dark field on both halves, nothing but the wing sections and the flowing air.",
+  "camera": "Flat side elevation on both halves, identical scale and eye level so the comparison reads instantly.",
+  "light": "Self-luminous pale flow lines against darkness; cool teal where the flow sinks and spoils the rear wing on the left, a cleaner brighter cyan for the undisturbed flow on the right.",
+  "palette": "Left half muted teal-into-magenta where the rear wing sits in bad air; right half cleaner cyan. Deep indigo void behind both.",
+  "style": "Painterly hand-worked comparison plate, brushed glowing flow, not a vector schematic.",
+  "detail_level": "Even detail on both halves so neither reads as the more finished picture.",
+  "composition": "Clean vertical split down the centre, matched framing, plain dark space along the top of each half for overlaid callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrowheads",
+    "leader lines",
+    "dimension lines",
+    "vector flat style",
+    "infographic style",
+    "photographic look"
+  ],
+  "consistency_notes": "Wing sections identical in shape and size to the previous figure's, so the reader recognises them. Left = far apart along the flight direction and still spoiled; right = far apart vertically and clean. The contrast between 'inside the sinking air' and 'above it' is the only idea in the frame.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrowheads, no dimension lines, no vector-flat infographic look, no CAD linework, no photographic or 3D render, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": [
+    "apps/web/public/images/chapters/the-aerial-arms-race/fig-02-the-air-the-second-wing-gets.png"
+  ]
+}

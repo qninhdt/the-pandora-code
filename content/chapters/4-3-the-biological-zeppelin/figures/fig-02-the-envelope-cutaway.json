@@ -1,0 +1,19 @@
+{
+  "id": "fig-02-the-envelope-cutaway",
+  "chapter_slug": "the-biological-zeppelin",
+  "role": "diagram",
+  "narrative_purpose": "Show the internal architecture the engineering requires: separate gas compartments so one puncture is not fatal, a ballast reservoir low in the body, and the fermentation chamber that makes the gas.",
+  "subject": "A vertical cutaway slice through a large dome-shaped creature, as if half of it has been cleanly removed. Inside the upper dome are seven or eight large rounded gas compartments separated by thin pale membrane walls, each faintly luminous and empty-looking. Below them sits one large dark rounded reservoir half filled with liquid, its surface visible. At the very base is a smaller dark chamber containing dense folded tissue, with fine strings of small bubbles rising from it up into the gas compartments above.",
+  "scene": "A clean cross-section study against a plain dark background, as in a naturalist's dissection plate, with a faint outline of the whole creature's silhouette for context.",
+  "camera": "Straight-on side cross-section view, flat and diagrammatic but painterly.",
+  "light": "Faint cyan luminosity inside the gas compartments, cooler dark tones in the liquid reservoir, one warm amber glow in the fermentation chamber at the base.",
+  "palette": "Pale translucent cyan compartments, deep indigo liquid reservoir, a small amber-lit chamber at the bottom, plain dark surround.",
+  "style": "Painterly naturalist cutaway plate, clear layered internal structure but still painted rather than schematic.",
+  "detail_level": "Crisp on the compartment walls, the liquid surface and the rising bubble strings; the outer silhouette softly suggested.",
+  "composition": "Compartments filling the upper two thirds, reservoir across the middle, fermentation chamber at the base, with a plain dark vertical margin on one side for later callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "baked-in captions", "metal tanks", "pipes", "machinery", "photographic look"],
+  "consistency_notes": "Everything must read as ORGANIC tissue, never engineered tanks or plumbing. Keep clear plain dark space beside each of the three structures so callouts can be overlaid later.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no metal, no pipes, no machinery, no 3D-render or photographic look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

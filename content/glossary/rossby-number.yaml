@@ -1,0 +1,18 @@
+id: rossby-number
+label:
+  vi: Số Rossby
+  en: Rossby number
+definition:
+  vi: 'Một con số không thứ nguyên, bằng U chia cho f nhân L — tốc độ dòng chảy, trên thông số Coriolis nhân với quy mô ngang — dùng để kiểm tra xem chuyển động tự quay của hành tinh hay quán tính mới là bên chi phối một dòng chảy. Khi Ro nhỏ hơn 1 rất nhiều, chuyển động tự quay nắm quyền và cân bằng địa chuyển thành hiện thực; khi Ro cỡ 1 hoặc lớn hơn, chuyển động tự quay chỉ là vai phụ và dòng chảy đi theo hướng nó bị đẩy. Vì vậy con số này quyết định luôn một chuyện lớn hơn nhiều: một thế giới có được ban cho hệ thống dòng tia có tổ chức theo vĩ tuyến hay không, hay bầu khí quyển của nó chỉ đối lưu một cách lộn xộn không phân dải.'
+  en: 'A dimensionless number, U divided by f times L — flow speed over the Coriolis parameter times the horizontal scale — that tests whether planetary rotation or inertia dominates a flow. When Ro is much less than 1, rotation rules and geostrophic balance holds; when Ro is of order 1 or greater, rotation is a minor player and the flow simply goes where it is pushed. That makes the number the arbiter of something much larger: whether a world gets organised zonal jets at all, or whether its atmosphere merely convects in unbanded disorder.'
+see_also:
+  - geostrophic-balance
+  - coriolis-effect
+  - superrotation
+  - reynolds-number
+category: concept
+tags:
+  - atmosphere
+  - planetary-science
+  - physics
+cover_prompt: A painted diptych of two planets side by side, one wrapped in neat parallel bands of cool teal cloud and the other in chaotic unbanded swirls, both on a void-indigo field, painterly, no text, no labels, no numbers.

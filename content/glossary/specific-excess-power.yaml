@@ -1,0 +1,15 @@
+id: specific-excess-power
+label:
+  vi: Công suất dư riêng
+  en: Specific excess power
+definition:
+  vi: 'Phần công suất còn lại sau khi đã trả xong hóa đơn lực cản, tính trên mỗi đơn vị trọng lượng - thứ mà một vật bay có thể dùng để leo cao, để tăng tốc, hoặc để giữ một cú ngoặt gắt mà không tụt tốc. Con số này là cách John Boyd định lượng lại toàn bộ khái niệm "lợi thế" trong không chiến: kẻ có công suất dư nhiều hơn không cần bay nhanh hơn, chỉ cần luôn giữ được nhiều lựa chọn hơn đối thủ. Một kẻ săn chuyên đánh gần có thể chấp nhận công suất dư âm trong vài giây để ép được cú vồ, còn kẻ đi săn đường dài phải sống quanh mức không.'
+  en: 'The power left over after the drag bill is paid, per unit of weight - what a flyer can spend on climbing, on accelerating, or on holding a hard turn without bleeding speed. This number is how John Boyd reframed the whole idea of advantage in air combat: whoever holds more excess power does not need to be faster, only to keep more options than the other side. A close-quarters hunter can accept a negative value for a few seconds to force a capture; a long-range pursuer has to live near zero.'
+see_also:
+  - load-factor
+  - corner-speed
+  - power-curve
+category: concept
+tags:
+  - physics
+cover_prompt: A painted plate of two rising curves crossing over a dark indigo field, the gap between them filled with a faint glowing teal wedge that narrows to nothing at the crossing, painterly hand-worked shading rather than clean vector lines, no text, no labels.

@@ -1,0 +1,31 @@
+id: limiting-oxygen-index
+label:
+  vi: Chỉ số oxy tối thiểu (limiting oxygen index)
+  en: Limiting oxygen index
+definition:
+  vi: >-
+    Tỉ lệ oxy thấp nhất trong dòng khí mà một vật liệu vẫn còn cháy được như ngọn nến cháy chúc
+    xuống. Đây là phép thử tiêu chuẩn để nói một bầu khí quyển cách ngưỡng "không đỡ được lửa" bao
+    xa: người ta hạ dần phần thể tích oxy trong dòng khí đi qua mẫu đến khi ngọn lửa không tự lan
+    xuống dưới nữa. Gỗ và bông chưa xử lý chống cháy nằm quanh 20-21,5%, nghĩa là không khí Trái Đất
+    với 20,9% oxy chỉ vừa đủ vượt ngưỡng - hạ vài phần trăm là phần lớn thảm thực vật khô thôi cháy
+    lan. Chỉ số này cho biết ngưỡng, còn tốc độ gió và độ dày nhiên liệu quyết định điều gì xảy ra
+    ngay sát ngưỡng đó.
+  en: >-
+    The lowest oxygen fraction in a flowing gas mixture at which a material will still sustain
+    candle-like downward flaming. It is the standard way of saying how far an atmosphere sits from
+    not supporting fire at all: the oxygen volume fraction in the stream passing the sample is
+    lowered until the flame no longer creeps downward on its own. Untreated wood and cotton sit
+    around 20-21.5%, which means Earth air at 20.9% oxygen clears the bar only barely - drop a few
+    percentage points and most dry vegetation stops carrying flame. The index gives the threshold;
+    airflow and fuel thickness decide what happens right at it.
+see_also:
+  - fire-tetrahedron
+  - adiabatic-flame-temperature
+  - flame-blow-off
+  - partial-pressure
+category: concept
+tags:
+  - chemistry
+  - atmosphere
+cover_prompt: A painterly naturalist plate of a slim vertical glass tube standing in deep indigo darkness with a small ember amber flame partway down inside it, faint cyan gas streaming upward around the flame and the glass edges catching ocean teal light, no text, no labels.

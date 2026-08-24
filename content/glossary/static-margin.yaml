@@ -1,0 +1,15 @@
+id: static-margin
+label:
+  vi: Biên ổn định tĩnh
+  en: Static margin
+definition:
+  vi: 'Khoảng cách giữa trọng tâm của một vật bay và điểm mà một cơn gió giật tác động lên - điểm trung hòa - tính theo chiều dài dây cung cánh. Biên dương (trọng tâm ở phía trước) khiến vật bay tự cân lại: nâng mũi lên thì hình học tự ấn mũi xuống. Nhưng chính lực hồi vị ấy cũng chống lại mọi cú ngoặt có chủ đích, nên ổn định và cơ động là hai đầu của cùng một núm xoay. Các tiêm kích hiện đại cố ý đặt biên gần bằng không hoặc âm - gọi là nới lỏng ổn định tĩnh - để mũi đảo nhanh, rồi phó thác việc giữ thẳng cho hệ điều khiển điện tử liên tục hiệu chỉnh.'
+  en: 'The distance between a flyer''s centre of mass and the point where an added gust of lift acts - the neutral point - measured in wing chords. A positive margin (mass ahead) makes the flyer self-righting: knock the nose up and the geometry pushes it back down. But that same restoring force fights every deliberate turn, so stability and manoeuvrability sit at opposite ends of one dial. Modern fighters deliberately run the margin near zero or negative - relaxed static stability - to get a fast-pitching nose, then hand the job of staying pointed to a flight-control system correcting continuously.'
+see_also:
+  - load-factor
+  - corner-speed
+  - tandem-wing
+category: concept
+tags:
+  - physics
+cover_prompt: A painted side profile of a dark winged body balanced on a knife edge, one glowing cyan dot marking its centre of mass ahead of a hollow ring marking the neutral point, a faint curved arrow showing the nose being pushed back down, deep indigo background, painterly plate, no text, no labels.

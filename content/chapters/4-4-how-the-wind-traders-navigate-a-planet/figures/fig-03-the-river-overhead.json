@@ -1,0 +1,38 @@
+{
+  "id": "fig-03-the-river-overhead",
+  "chapter_slug": "how-the-wind-traders-navigate-a-planet",
+  "role": "inline",
+  "narrative_purpose": "Show that the fast layer is not a general wind but a narrow river with banks, running near the top of the weather layer, so far above the caravan that reaching its underside is itself the achievement.",
+  "subject": "A broad meandering ribbon of thin high cloud snaking away from the viewer across the frame, curving in two or three long lazy S-bends before it disappears into haze at the far horizon. The ribbon has soft but clearly defined edges on both sides, like a river with banks, and its interior is combed into long taut parallel streaks running along its length. On either side of the ribbon the air is clear and empty, so the ribbon reads as a distinct band rather than general cloud. Far below and slightly to one side, a tiny chain of four pale translucent bell-shaped gasbag creatures with woven gondolas slung beneath them on rigging lines climbs toward the ribbon's underside, minute against it.",
+  "scene": "Extremely high vantage near the top of the atmosphere. Below the ribbon, an enormous depth of dim air and dark scattered lower cloud, and below that again a dark curved planetary horizon, its arc visible across the lower portion of the frame with a thin band of pale atmospheric glow along the curve. Stars faint in the darker air above.",
+  "camera": "Very high aerial view looking down and along the length of the ribbon, so it recedes from the foreground toward the curved horizon, exaggerating its length and the vertical distance to the caravan.",
+  "light": "Cold low sunlight raking across the ribbon from one side, catching its upper surface in pale mist tones and leaving its underside in indigo shadow. The world far below is dim. Faint cyan glow on the tiny caravan.",
+  "palette": "Very dark indigo air and near-black world below; the ribbon the palest thing in frame in cool mist and grey-blue; a thin teal band of atmospheric glow along the planet's curve.",
+  "style": "Painterly high-altitude naturalist plate, enormous scale and thin cold air, the ribbon observed as a natural feature rather than drawn as a graphic.",
+  "detail_level": "Fine streaked texture along the near portion of the ribbon; everything below and beyond dissolving progressively into deep haze; the caravan tiny but legible.",
+  "composition": "The ribbon runs diagonally from the lower foreground into the upper distance, occupying the upper two thirds. The curved horizon crosses the lower frame. The caravan is a small mark below the ribbon on one side. Keep the clear empty air beside the ribbon's near flank dark, plain and low-detail so overlaid callouts on the ribbon's banks read cleanly.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "leader lines",
+    "watermark",
+    "logos",
+    "UI",
+    "rigid metal airship hull",
+    "propellers",
+    "engines",
+    "spacecraft",
+    "satellites",
+    "photographic look"
+  ],
+  "consistency_notes": "The aerostats are living creatures: soft translucent bells, trailing tentacles, woven gondolas on rigging lines — no rigid hulls, no propellers, no engines. The ribbon must read as a bounded band with clear air on both sides, not as an overcast sky. Scale contrast is the point: the caravan must be almost lost against it. Cool Pandora palette, sparse cyan bioluminescence.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no propellers, no engines, no rigid airship hull, no spacecraft, no satellite imagery look, no 3D-render or photographic look, no cartoon style, no lens flare",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": [
+    "apps/web/public/images/chapters/how-the-wind-traders-navigate-a-planet/fig-00-cover.png"
+  ]
+}

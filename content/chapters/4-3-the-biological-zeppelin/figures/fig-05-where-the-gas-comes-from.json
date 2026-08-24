@@ -1,0 +1,19 @@
+{
+  "id": "fig-05-where-the-gas-comes-from",
+  "chapter_slug": "the-biological-zeppelin",
+  "role": "diagram",
+  "narrative_purpose": "Make the chapter's key biological claim visible: hydrogen rises from the fermenting gut into the gas cells because the microbes that would normally eat it are absent.",
+  "subject": "A cutaway of a fermentation chamber at the base of a large creature. In the lower part, dark folded gut tissue with a mass of partly digested prey. From it, dense strings of small pale bubbles rise upward through a narrow channel and into a large pale gas compartment above, which is visibly filling. Along the walls of the narrow channel, a thin layer of small rounded microbial cells is depicted as sparse, faded and dying, so the rising bubbles pass them untouched.",
+  "scene": "A clean warm-toned interior cross-section, dark organic tissue below and the pale luminous gas space above.",
+  "camera": "Side cross-section view, looking into the chamber, bubbles travelling from bottom to top of frame.",
+  "light": "Warm amber glow low in the fermenting tissue, cooling to pale cyan luminosity in the gas compartment above; the sparse microbial layer unlit and dim.",
+  "palette": "Amber and deep brown-indigo in the gut tissue, pale cyan bubbles and gas space, the faded microbial layer in desaturated grey.",
+  "style": "Painterly naturalist cutaway plate, biological and wet, not schematic.",
+  "detail_level": "Crisp on the bubble strings and the sparse microbial layer they pass; the surrounding tissue softly textured.",
+  "composition": "Gut tissue across the lower third, rising bubble channel through the centre, gas compartment across the upper third, plain dark margin on one side for later callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "chemical formulae", "molecular diagrams", "baked-in captions", "photographic look"],
+  "consistency_notes": "The teaching point is that the rising gas passes the microbial layer UNCONSUMED - so that layer must read as sparse and faded, not dense and thriving. No chemical notation of any kind.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no chemical formulae, no molecular diagrams, no 3D-render or photographic look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

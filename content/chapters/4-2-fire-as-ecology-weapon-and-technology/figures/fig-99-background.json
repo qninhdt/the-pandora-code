@@ -1,0 +1,33 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "fire-as-ecology-weapon-and-technology",
+  "role": "hero",
+  "narrative_purpose": "The dim full-bleed atmospheric layer the chapter's text floats over: an immense dark volcanic panorama with no focal subject, detail dissolving into haze so long-form reading stays comfortable.",
+  "subject": "An immense dark volcanic landscape seen from a great height, layered ridges receding one behind another into deep grey haze, the barely-there silhouettes of two or three calcined giant tree skeletons dissolving into the distance, and a few faint pale vapour plumes rising far off. No bright focal subject anywhere.",
+  "scene": "A panoramic ashland and ridge system viewed from a high vantage at dusk, the horizon low, the sky a dim ashen indigo with heavy layered atmospheric haze.",
+  "camera": "Ultra-wide panoramic vista from a very high vantage, extremely deep atmospheric perspective, no near foreground.",
+  "light": "Dark, flat and low-contrast throughout; a single almost imperceptible ember-orange hint on one far ridge, everything else muted so overlaid text reads cleanly.",
+  "palette": "Deep void-indigo and stone-grey across the entire frame at very low contrast, with one nearly invisible ember-orange trace on the distant horizon.",
+  "style": "Painterly atmospheric mood layer, no crisp focal subject, all detail dissolving into haze.",
+  "detail_level": "Deliberately low — everything softens into atmospheric haze, no sharp foreground and no element that draws the eye.",
+  "composition": "Wide, dark and empty with a low horizon and vast dim negative space across the upper two thirds; nothing bright or detailed enough to compete with reading.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "bright focal subject",
+    "high contrast",
+    "large flames",
+    "figures or creatures",
+    "green vegetation",
+    "photographic look"
+  ],
+  "consistency_notes": "This is a dim immersive backdrop, NOT a figure to study: dark, hazed and low-contrast so long text overlays stay legible. The same Ashlands volcanic world as the cover, but macro and atmospheric, with no rider, no creature and no fire.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no bright subject, no high contrast, no flames, no figures or creatures, no green, no 3D-render or photographic look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

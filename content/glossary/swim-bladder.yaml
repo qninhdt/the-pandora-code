@@ -1,0 +1,32 @@
+id: swim-bladder
+label:
+  vi: Bong bóng cá
+  en: Swim bladder
+definition:
+  vi: >-
+    Túi khí bên trong cơ thể cá xương, dùng để giữ trạng thái nổi trung tính mà không phải bơi liên tục.
+    Bộ máy nạp khí vào nó rất đáng nể: một đám mao mạch xếp đối lưu dày đặc gọi là rete mirabile chạy
+    cạnh một tuyến khí tiết axit vào máu; axit làm hemoglobin nhả oxy, oxy tự do dồn lại trong đám mao
+    mạch cho đến khi áp suất vượt áp suất trong bong bóng và tràn vào. Đó là tiết khí chủ động ngược
+    gradient, thực hiện bằng ống dẫn và độ pH. Nhược điểm cố hữu là định luật Boyle: lặn sâu thì túi bị
+    nén và cá chìm nhanh hơn, nổi lên thì túi giãn và đà nổi tự tăng, nên cá phải liên tục điều chỉnh.
+  en: >-
+    An internal gas sac in bony fishes, used to hold neutral buoyancy without swimming continuously. The
+    machinery that fills it is remarkable: a dense counterflow weave of capillaries called the rete
+    mirabile runs alongside a gland that secretes acid into the blood; the acid makes haemoglobin release
+    its oxygen, and the freed oxygen accumulates in the weave until its pressure exceeds the bladder's and
+    flows in. That is active gas secretion against a gradient, achieved with nothing but plumbing and pH.
+    The inherent weakness is Boyle's law: descend and the sac compresses so the fish sinks faster, ascend
+    and it expands so the rise accelerates, which means constant active correction.
+see_also:
+  - gas-vesicle
+  - ballast
+  - countercurrent-exchange
+category: bio
+tags:
+  - physiology
+  - physics
+cover_prompt: >-
+  A painted anatomical cutaway of a fish showing a pale ovoid gas sac inside the body cavity, with a dense
+  fan of fine parallel capillaries alongside it rendered in faint cyan and magenta, deep indigo water
+  beyond, painterly naturalist plate, no text, no labels, no numbers.

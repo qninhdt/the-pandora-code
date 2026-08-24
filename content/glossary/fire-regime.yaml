@@ -1,0 +1,32 @@
+id: fire-regime
+label:
+  vi: Chế độ lửa (fire regime)
+  en: Fire regime
+definition:
+  vi: >-
+    Kiểu cháy đặc trưng của một hệ sinh thái, gộp cả tần suất, cường độ, mùa xảy ra, mức độ khốc liệt
+    và quy mô của các đám cháy trong đó. Điểm cốt lõi cần nhớ: đây là thuộc tính của cả hệ theo thời
+    gian, không phải của một đám cháy riêng lẻ - "một trận cháy lớn" không nói lên chế độ lửa, còn
+    "cháy tán rừng khốc liệt mỗi 60-150 năm" thì có. Chính chế độ lửa sàng lọc loài nào trụ được ở
+    đó: rừng cháy mặt đất nhẹ mỗi vài năm chọn ra cây vỏ dày, còn rừng cháy tán thưa và dữ dội chọn
+    ra cây trữ hạt trên tán. Thay đổi chế độ, dù theo hướng cháy nhiều hơn hay theo hướng dập sạch
+    lửa, đều thay đổi thành phần loài.
+  en: >-
+    The characteristic pattern of burning in an ecosystem: the frequency, intensity, seasonality,
+    severity and extent of its fires taken together. The essential point is that a regime is a
+    property of the system over time, not of an event - "one big fire" says nothing about a regime,
+    while "severe crown fire every 60-150 years" does. The regime is what selects which species can
+    persist: forests that burn lightly at the surface every few years favour thick-barked trees, while
+    those that burn rarely and violently in the canopy favour species that store seed in the crown.
+    Shifting a regime in either direction, toward more fire or toward total suppression, changes which
+    species live there.
+see_also:
+  - fireline-intensity
+  - serotiny
+  - alternative-stable-state
+  - secondary-succession
+category: concept
+tags:
+  - ecology
+  - earth-systems
+cover_prompt: A painterly naturalist plate of three vertical strips of the same forest side by side against deep indigo, the left strip dense cool teal foliage, the middle strip half black charred trunks with faint ember amber glow at their bases, the right strip young cyan-green saplings among old grey stumps, no text, no labels.

@@ -1,0 +1,16 @@
+id: atmospheric-blocking
+label:
+  vi: Chặn khí quyển (blocking)
+  en: Atmospheric blocking
+definition:
+  vi: 'Một khối áp cao rộng lớn gần như bất động, nằm chắn ngang và làm ngưng trệ chuyển động tây-sang-đông bình thường của thời tiết trong nhiều ngày đến nhiều tuần, thường bằng cách chẻ dòng tia thành hai nhánh vòng qua hai phía. Các nhà khí tượng phân loại theo hình dạng: khối omega có dòng khí vẽ nên chữ Ω, còn khối Rex xếp một áp cao ngay bên trên một áp thấp. Nguy hiểm của nó không nằm ở bản thân khối áp cao mà ở chỗ thời tiết phía hạ lưu ngừng tiến: mưa đáng lẽ trôi qua thì đứng lại và gây lụt, còn nắng nóng hay khô hạn đáng lẽ chỉ ghé một ngày thì bám trụ cho tới khi thành đợt nắng nóng chết người.'
+  en: 'A large, quasi-stationary high-pressure system that stalls the normal west-to-east progression of weather for days or weeks, usually by splitting the jet stream into two branches that detour around it. Forecasters name them by shape: an omega block traces the letter Ω in the flow, while a Rex block stacks a high directly above a low. The hazard is not the high itself but the fact that downstream weather stops advancing — rain that should have passed over settles in and floods, and heat or drought that should have lasted a day digs in until it becomes a lethal heatwave.'
+see_also:
+  - rossby-wave
+  - jet-stream
+  - geostrophic-balance
+category: concept
+tags:
+  - atmosphere
+  - earth-systems
+cover_prompt: A painted map-like view of a large calm circular high-pressure dome forcing a glowing wind ribbon to split and detour around both sides of it, with stalled cloud piled up on the upstream edge, cool teal and indigo, painterly, no text, no labels, no numbers.

@@ -1,0 +1,17 @@
+id: thermal-wind-balance
+label:
+  vi: Cân bằng gió nhiệt
+  en: Thermal wind balance
+definition:
+  vi: 'Hệ quả thu được khi ghép cân bằng địa chuyển với cân bằng thủy tĩnh: hễ tồn tại một gradient nhiệt độ theo phương ngang thì tốc độ gió BUỘC phải biến đổi theo độ cao. Lý do rất mộc mạc — không khí lạnh dày đặc hơn nên các lớp áp suất chồng lên nhau sát hơn, khiến gradient áp suất ở trên cao dốc hơn ở dưới thấp, và gió địa chuyển phải mạnh dần lên theo đó. Đó là lời giải thích cho việc các dòng tia nằm gần đỉnh tầng đối lưu: chênh lệch nhiệt độ giữa xích đạo và cực tích lũy độ trượt hướng đông suốt dọc đường lên, nên gió chỉ đạt cực đại ở nơi gradient nhiệt độ cạn kiệt.'
+  en: 'What you get when geostrophic balance is combined with hydrostatic balance: wherever a horizontal temperature gradient exists, the wind speed MUST change with height. The reason is homely — cold air is denser, so its pressure surfaces stack closer together, which makes the pressure gradient steeper aloft than near the ground, and the geostrophic wind has to strengthen to match. This is why jets sit near the tropopause: the equator-to-pole temperature difference accumulates eastward shear all the way up, so the wind only peaks where the temperature gradient runs out.'
+see_also:
+  - geostrophic-balance
+  - jet-stream
+  - wind-shear
+  - hadley-cell
+category: concept
+tags:
+  - atmosphere
+  - physics
+cover_prompt: A painted vertical cross-section where pressure layers tilt and crowd together over cold air on one side, with wind arrows growing longer and longer toward the top of the frame, cool teal over void-indigo, painterly, no text, no labels, no numbers.

@@ -1,0 +1,17 @@
+id: zermelo-navigation-problem
+label:
+  vi: Bài toán dẫn đường Zermelo
+  en: Zermelo navigation problem
+definition:
+  vi: 'Bài toán cổ điển do Ernst Zermelo đặt ra năm 1931: tìm đường đi mất ít thời gian nhất cho một con tàu có tốc độ riêng hữu hạn khi nó phải băng qua một trường dòng chảy hay trường gió đang di động. Câu trả lời hầu như không bao giờ là đường thẳng — hướng mũi tối ưu phải thay đổi liên tục, đôi khi chệch hẳn khỏi đích để trước tiên đón lấy một dòng thuận. Trường hợp suy biến lại là trường hợp thú vị nhất: khi tốc độ riêng tiến về không, con tàu mất hoàn toàn khả năng tự lái theo phương ngang, và toàn bộ nghệ thuật dẫn đường thu về một quyết định duy nhất — chọn NẰM Ở LỚP chuyển động nào, rồi để lớp ấy mang mình đi.'
+  en: 'The classical problem posed by Ernst Zermelo in 1931: find the minimum-time path for a craft of limited own-speed crossing a moving current or wind field. The answer is almost never a straight line — the optimal heading must keep changing, sometimes aiming well away from the destination in order to catch a favourable stream first. The degenerate case is the most interesting one: as own-speed goes to zero the craft loses all horizontal steering authority, and the entire art of navigation collapses into a single decision — WHICH moving layer to sit in, and letting that layer do the carrying.'
+see_also:
+  - wind-shear
+  - wayfinding
+  - dynamic-soaring
+  - jet-stream
+category: concept
+tags:
+  - physics
+  - atmosphere
+cover_prompt: A painted chart-like study of a dark sea crossed by drifting current bands of different speeds, with one curving glowing track that bends far off the direct line to ride a fast band before turning toward a distant shore, cool teal and cyan on void-indigo, painterly, no text, no labels, no numbers.

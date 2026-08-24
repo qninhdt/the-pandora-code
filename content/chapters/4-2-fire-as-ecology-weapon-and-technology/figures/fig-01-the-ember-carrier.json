@@ -1,0 +1,36 @@
+{
+  "id": "fig-01-the-ember-carrier",
+  "chapter_slug": "fire-as-ecology-weapon-and-technology",
+  "role": "hero",
+  "narrative_purpose": "Open the chapter on the object the whole argument turns on: a shielded stone brazier keeping a coal alive in fast-moving air that chemically resists combustion. Every feature of it is a design response to a physical problem.",
+  "subject": "A close view of a small light-grey pumice stone bowl about the size of two fists, hanging from three braided leather cords attached to a riding harness. The bowl's near wall is solid stone; its far wall is pierced with a row of five small round holes. Inside sits one lump of black charcoal glowing dull orange along its cracks. A long blue-skinned Na'vi hand with four fingers steadies the rim of the bowl from above.",
+  "scene": "In the air above a dim grey landscape, the dark leather straps of a riding harness and a patch of the flying creature's grey-brown hide filling the lower left, the background an out-of-focus wash of grey haze and indigo sky.",
+  "camera": "Tight three-quarter close-up on the stone bowl, shallow depth of field, the background falling away into soft haze.",
+  "light": "The glowing coal is the only light source in the frame, casting warm orange up onto the inside of the bowl, the underside of the hand, and the nearest strap; everything beyond that falls into cool grey shadow.",
+  "palette": "Cool grey stone and deep indigo shadow across most of the frame, with a concentrated ember-orange glow inside the bowl and a narrow warm rim on the hand and cords.",
+  "style": "Painterly naturalist plate, an intimate close study of a made object, patient and observational.",
+  "detail_level": "Very high on the porous texture of the pumice, the pierced holes, the cracked glowing charcoal and the braided cords; background fully soft.",
+  "composition": "The bowl centred and slightly low, the hand entering from the upper right, a large area of plain dark hazy background at the upper left kept clear and low-detail.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "open flames",
+    "sparks",
+    "smoke plume",
+    "green vegetation",
+    "metal bowl",
+    "photographic look"
+  ],
+  "consistency_notes": "A GLOWING COAL, not a flame — no fire tongues anywhere. The bowl is light grey porous pumice, solid on the near side and pierced with a row of small holes on the far side; the same bowl recurs elsewhere in the chapter. Cool grey dominant, one contained warm glow.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no open flame, no sparks flying, no green vegetation, no 3D-render or photographic look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": [
+    "apps/web/public/images/chapters/fire-as-ecology-weapon-and-technology/fig-00-cover.png"
+  ]
+}

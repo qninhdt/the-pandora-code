@@ -1,0 +1,30 @@
+id: fracture-toughness
+label:
+  vi: Độ dai phá hủy (fracture toughness)
+  en: Fracture toughness
+definition:
+  vi: >-
+    Đại lượng đo mức tập trung ứng suất tại đầu một vết nứt mà vật liệu còn chịu được trước khi vết
+    nứt chạy đi mất kiểm soát, ký hiệu K_Ic, đơn vị MPa·m^0,5. Nền tảng của nó là tiêu chuẩn năng
+    lượng do A. A. Griffith đưa ra năm 1921: vết nứt lan khi năng lượng đàn hồi được giải phóng vượt
+    năng lượng cần để tạo thêm bề mặt mới. Thủy tinh núi lửa nằm ở khoảng 0,7-0,95 MPa·m^0,5, trong
+    khi thép tôi đạt 25-45, chênh nhau vài chục lần. Chính một tính chất này giải thích cả hai mặt của
+    obsidian: nó cho lưỡi sắc nhất mà con người biết chế tác, và cũng là vật liệu dễ vỡ nhất khi bị
+    uốn hay va đập.
+  en: >-
+    A measure of how much stress concentration at a crack tip a material tolerates before the crack
+    runs away catastrophically, written K_Ic and given in MPa·m^0.5. Its foundation is the energy
+    criterion A. A. Griffith published in 1921: a crack propagates once the elastic energy released
+    exceeds the energy needed to create the new surface. Volcanic glass sits at roughly 0.7-0.95
+    MPa·m^0.5, while hardened steel reaches 25-45, a gap of several tens of times. That single property
+    explains both sides of obsidian: it takes the sharpest edge anyone can knap, and it is the most
+    fragile choice the moment it is bent or struck.
+see_also:
+  - conchoidal-fracture
+  - phase-transition
+  - pyroclastic-density-current
+category: concept
+tags:
+  - mineral
+  - physics
+cover_prompt: A painterly naturalist plate of a dark glossy glass slab against deep indigo with a single hairline crack branching from one notched edge, faint cyan light glowing along the crack path and a small ember amber spark at the crack tip, no text, no labels.

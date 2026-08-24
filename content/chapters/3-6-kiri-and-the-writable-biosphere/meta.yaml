@@ -2,6 +2,10 @@ slug: kiri-and-the-writable-biosphere
 part: eywa
 order: 6
 status: published
+reading_time_override:
+  en:
+    minutes: 8
+    reason: English edition is intentionally condensed relative to the longer Vietnamese field note.
 title:
   vi: Kiri và một sinh quyển có thể “viết lại” cơ thể
   en: Kiri and the Writable Biosphere
@@ -29,7 +33,6 @@ hook:
     exception to biology; she is the dramatization of a very real research frontier.
 authors:
   - bardabez
-reading_time_min: 27
 tags:
   - developmental-biology
   - bioelectricity

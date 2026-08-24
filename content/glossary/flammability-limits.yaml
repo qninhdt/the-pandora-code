@@ -1,0 +1,31 @@
+id: flammability-limits
+label:
+  vi: Giới hạn cháy
+  en: Flammability limits
+definition:
+  vi: >-
+    Khoảng nồng độ mà trong đó một hỗn hợp nhiên liệu và không khí còn dẫn được ngọn lửa. Quá loãng thì
+    không đủ nhiên liệu để duy trì phản ứng; quá đặc thì không đủ chất oxy hóa. Điều quan trọng là các
+    giới hạn này không phải hằng số của nhiên liệu mà phụ thuộc vào thành phần còn lại của không khí:
+    thêm một chất khí trơ - đặc biệt là loại phân tử ba nguyên tử như carbon dioxide, vốn tích trữ nhiệt
+    tốt hơn nitơ - sẽ hút bớt nhiệt mà mặt lửa cần để lan sang lớp khí kế tiếp, khiến cửa sổ hẹp lại từ
+    phía giàu nhiên liệu và cuối cùng đóng hẳn. Dập lửa bằng khí trơ hoạt động theo đúng nguyên lý này.
+  en: >-
+    The range of concentrations over which a fuel-and-air mixture will still carry a flame. Too lean and
+    there is not enough fuel to sustain the reaction; too rich and there is not enough oxidiser. The
+    important part is that these limits are not constants of the fuel but depend on what else is in the
+    air: adding an inert diluent — especially a triatomic molecule like carbon dioxide, which stores heat
+    better than nitrogen does — drains the heat a flame front needs to propagate into the next layer of
+    gas, narrowing the window from the rich end until it closes altogether. Inert-gas fire suppression
+    works on exactly this principle.
+see_also:
+  - partial-pressure
+  - dark-fermentation
+category: concept
+tags:
+  - chemistry
+  - physics
+cover_prompt: >-
+  A painted horizontal band shading from sparse to dense luminous particles, with a bright magenta
+  glowing segment in the middle marking where flame persists and dark regions at both ends, deep indigo
+  ground, painterly, no text, no labels, no numbers.

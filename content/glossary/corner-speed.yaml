@@ -1,0 +1,16 @@
+id: corner-speed
+label:
+  vi: Tốc độ ngoặt tối ưu
+  en: Corner speed
+definition:
+  vi: 'Tốc độ mà tại đó một vật bay ngoặt gắt nhất và nhanh nhất - điểm gặp nhau của hai giới hạn khác nhau hoàn toàn. Bay chậm hơn tốc độ này thì cánh là thứ chặn lại: kéo gắt hơn nữa là thất tốc, nên mỗi chút tốc độ thêm vào đều mua được vòng ngoặt gắt hơn. Bay nhanh hơn thì cánh còn kéo được nhưng thân thì không chịu nổi, và từ đó trở đi tốc độ chỉ làm vòng ngoặt rộng ra. Đúng ở giao điểm ấy, con vật vừa đạt hệ số tải tối đa vừa đạt lực nâng tối đa cùng một lúc - và đó là lý do phi công không chiến luôn tìm cách bay quanh con số này.'
+  en: 'The airspeed at which a flyer turns tightest and fastest - the meeting point of two entirely different limits. Fly slower and the wing is what stops you: pull any harder and it stalls, so every extra scrap of speed buys a tighter turn. Fly faster and the wing could pull harder but the body cannot take it, and from there on speed only widens the circle. Exactly at that intersection the animal reaches its maximum load factor and its maximum lift at the same moment - which is why dogfighting pilots spend their lives trying to fly near this one number.'
+see_also:
+  - load-factor
+  - wing-loading
+  - specific-excess-power
+  - static-margin
+category: concept
+tags:
+  - physics
+cover_prompt: A painted diagram-like plate of a dark curved boundary rising steeply then bending over to a flat ceiling, one glowing cyan point marking the sharp corner where the two meet, faint grid of hairlines behind it, deep indigo background, painterly not vector, no text, no labels.

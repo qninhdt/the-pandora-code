@@ -1,0 +1,39 @@
+{
+  "id": "fig-04-climbing-the-mountain-wave",
+  "chapter_slug": "how-the-wind-traders-navigate-a-planet",
+  "role": "inline",
+  "narrative_purpose": "Show that the stacked lens-shaped clouds downwind of a ridge mark a column of free rising air precisely enough to climb on, letting a caravan gain altitude on the mountain's work instead of its own reserves.",
+  "subject": "Three smooth lens-shaped almond clouds stacked one directly above another in a single vertical column, with clear empty air between each. The lowest almond is the largest and broadest, the middle one noticeably smaller, the topmost smallest of all, so the stack tapers upward. Each almond has a hard clean edge, a polished laminar upper surface and a smooth shadowed underside — no ragged or fluffy texture anywhere on them. Rising along that same invisible column, positioned in the clear air between the lowest and middle almond, a chain of four pale translucent bell-shaped gasbag creatures with woven gondolas slung on rigging lines climbs nose-up, the chain tilted upward along the column, WELL ABOVE the ground.",
+  "scene": "A great dark ridge of rock crosses the lower frame from left to right, its crest jagged, its far slope dropping away downwind toward the right. The stacked almond clouds and the climbing caravan sit downwind of the crest, over the low ground beyond it and much higher than the ridge itself. Beyond and below, a dim hazy landscape recedes. High thin streaks of cloud far above the top of the stack.",
+  "camera": "Side-on view from a little above the ridge crest, wide enough to hold the ridge along the bottom and the full vertical column of three almonds above it.",
+  "light": "Low cold sunlight from behind the ridge, rim-lighting the top edge of each almond cloud in pale mist and leaving the ridge itself a dark silhouette. Faint cyan glow along the gasbag rims.",
+  "palette": "Near-black ridge silhouette, deep indigo lower air, pale cool mist on the lens clouds' lit edges, thin teal in the far haze; one small warm amber catch of light on the leading gasbag.",
+  "style": "Painterly naturalist plate, an observed mountain sky; the lens clouds rendered as real smooth lenticular cloud, glassy and still, never as drawn shapes.",
+  "detail_level": "Crisp on the three almond clouds and the nearest gasbag and gondola; the ridge kept dark and simple; the distant landscape dissolving into haze.",
+  "composition": "Ridge as a dark horizontal mass across the lower quarter. The three almonds stack vertically slightly right of centre, occupying the upper two thirds. Caravan climbing on the column at lower-middle. Keep the clear air to the LEFT of the almond stack dark, empty and low-detail so overlaid callouts beside each lens cloud read cleanly.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "leader lines",
+    "watermark",
+    "logos",
+    "UI",
+    "rigid metal airship hull",
+    "propellers",
+    "engines",
+    "flying saucer",
+    "UFO",
+    "ragged storm cloud",
+    "photographic look"
+  ],
+  "consistency_notes": "The aerostats are living creatures: soft translucent bells, trailing tentacles, woven gondolas on rigging lines — no rigid hulls, no propellers, no engines. The three almond clouds must be smooth, laminar and clearly separated in a vertical stack, each smaller than the one below, and must not read as flying saucers. The caravan is high above the ridge base, calm and controlled. Cool Pandora palette, sparse cyan bioluminescence.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no propellers, no engines, no rigid airship hull, no flying saucers or UFOs, no 3D-render or photographic look, no cartoon style, no lens flare",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": [
+    "apps/web/public/images/chapters/how-the-wind-traders-navigate-a-planet/fig-00-cover.png"
+  ]
+}

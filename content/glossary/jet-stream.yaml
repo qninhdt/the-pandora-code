@@ -1,0 +1,17 @@
+id: jet-stream
+label:
+  vi: Dòng tia (jet stream)
+  en: Jet stream
+definition:
+  vi: 'Dải gió hẹp chảy rất nhanh nằm gần đỉnh tầng đối lưu. Trên Trái Đất, lõi của nó ở độ cao chừng 7–12 km, tốc độ thường 30–60 m/s và mùa đông có thể vượt 100 m/s, còn bề rộng chỉ khoảng 300–600 km — mảnh như một sợi chỉ so với vòng hành tinh mà nó quấn quanh. Điều dễ hiểu sai nhất: đây không phải một dải băng cố định được ghim sẵn lên bản đồ. Nó uốn lượn, dịch lên xuống theo vĩ độ theo mùa, tách đôi rồi nhập lại; và chính những khúc uốn ấy, chứ không phải vị trí trung bình, mới quyết định thời tiết bên dưới.'
+  en: 'A narrow, fast ribbon of wind near the tropopause. On Earth its cores sit around 7–12 km up, typically running 30–60 m/s and topping 100 m/s in winter, while the ribbon itself is only 300–600 km wide — a thread compared with the circumference it wraps. The common misconception is that it is a fixed band pinned to the map: it is not. It meanders, migrates in latitude with the seasons, splits and rejoins, and it is those wanderings rather than the average position that set the weather underneath.'
+see_also:
+  - thermal-wind-balance
+  - rossby-wave
+  - geostrophic-balance
+  - atmospheric-general-circulation
+category: concept
+tags:
+  - atmosphere
+  - physics
+cover_prompt: A painted high-altitude view of one narrow luminous ribbon of wind snaking across a dark curved horizon, thinning and bulging as it bends around a cold air mass far below, cool teal and cyan streaks on void-indigo, painterly motion blur, no text, no labels, no numbers.

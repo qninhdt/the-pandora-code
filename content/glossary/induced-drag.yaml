@@ -1,0 +1,17 @@
+id: induced-drag
+label:
+  vi: Lực cản cảm ứng
+  en: Induced drag
+definition:
+  vi: 'Phần lực cản mà một cánh phải trả riêng cho việc tạo ra lực nâng. Cánh nâng được thân là vì nó ném khối khí xuống phía dưới; nhưng khối khí bị ném xuống đó cũng làm luồng gió tới nghiêng đi, khiến lực nâng bị ngả về sau một chút - và thành phần ngả về sau ấy chính là lực cản cảm ứng. Nó tỉ lệ với bình phương lực nâng và nghịch với bình phương sải cánh, nên cánh càng dài thì càng rẻ: đó là lý do hải âu có sải hẹp mà dài, và là lý do một cặp cánh ngắn xếp trước sau không bao giờ đấu được với một cánh dài duy nhất cùng tổng diện tích.'
+  en: 'The part of a wing''s drag that is the price of making lift at all. A wing holds a body up by throwing air downward - but that downward-moving air also tilts the oncoming flow, so the lift vector leans slightly backwards, and that rearward lean is induced drag. It scales with the square of the lift and inversely with the square of the span, which is why long wings are cheap: it is the reason an albatross has a narrow, very long wing, and the reason two short wings stacked one behind the other can never match a single long wing of the same total area.'
+see_also:
+  - downwash
+  - lift
+  - aspect-ratio
+  - tandem-wing
+category: concept
+tags:
+  - physics
+  - physiology
+cover_prompt: A painted study of a single long wing seen from behind against a dark indigo sky, two faint spiralling cool-teal vortices trailing from its tips and curling downward, the air beneath the wing shown as sinking translucent haze, painterly naturalist plate, no text, no labels.

@@ -1,0 +1,18 @@
+id: tandem-wing
+label:
+  vi: Cánh xếp trước sau
+  en: Tandem wing
+definition:
+  vi: 'Bố trí hai mặt cánh nối tiếp nhau theo hướng bay, thay vì một cánh đơn. Trực giác bảo rằng thêm cánh là thêm lực nâng, nhưng cánh sau phải bay trong vệt khí đã bị cánh trước đẩy xuống, nên nó luôn làm việc kém hơn - tổng lực cản của cặp cánh không bao giờ tốt bằng một cánh dài duy nhất cùng tổng sải. Điều mà cấu hình này thật sự mua được là quyền điều khiển: bốn mặt cánh chuyển động độc lập tạo ra momen chúc và nghiêng lớn trong một sải ngắn, đúng thứ cần thiết để ngoặt gắt giữa vật cản. Chuồn chuồn dùng cách này, và tiêm kích cánh mũi cũng đánh đổi hệt như vậy.'
+  en: 'An arrangement of two lifting surfaces one behind the other rather than a single wing. Intuition says more wing means more lift, but the rear surface must fly through air the front one has already pushed downward, so it always works less efficiently - the pair''s total drag never beats a single long wing of the same total span. What the layout genuinely buys is control authority: four independently moving surfaces generate large pitching and rolling moments within a short span, which is exactly what is needed to turn hard among obstacles. Dragonflies fly this way, and a canard fighter makes the same trade.'
+see_also:
+  - downwash
+  - induced-drag
+  - wake-recapture
+  - aspect-ratio
+category: concept
+tags:
+  - physics
+  - physiology
+  - evolution
+cover_prompt: A painted side elevation of two membranous wings mounted one behind the other on a dark creature body, the rear wing raised slightly above the front one, cool teal and cyan bio-glow along the wing edges, deep indigo background, painterly naturalist plate, no text, no labels.

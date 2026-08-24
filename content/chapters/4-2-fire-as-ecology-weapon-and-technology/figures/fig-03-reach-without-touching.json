@@ -1,0 +1,33 @@
+{
+  "id": "fig-03-reach-without-touching",
+  "chapter_slug": "fire-as-ecology-weapon-and-technology",
+  "role": "diagram",
+  "narrative_purpose": "Make radiant ignition visible: fuel browning and beginning to smoke across an empty gap that no flame has crossed, so the reader understands fire spreads by radiation rather than contact.",
+  "subject": "On the LEFT, a burning Pandoran tree trunk with broad flames climbing its bark, throwing amber light rightward. On the RIGHT, at a clear distance across empty air, a cluster of broad Pandoran leaves that no flame is touching: the leaves nearest the fire have gone brown and curled at their edges, two thin wisps of pale smoke rise from them, and the leaves further right are still their natural dark blue-green. Between the two, nothing but empty dark air.",
+  "scene": "A dark forest floor at night with bare dark ground between the burning trunk and the leaf cluster, the background dissolving into deep indigo haze.",
+  "camera": "Level medium-wide view taking in both the fire and the distant leaves in one frame, the gap between them occupying the middle third.",
+  "light": "The burning trunk is the only light source; its amber light falls off visibly across the gap and lands weakly on the browning leaves, which are lit warm on their fire-facing side and cool indigo on the other. A faint amber haze fills the gap.",
+  "palette": "Deep indigo darkness dominant, warm amber concentrated on and near the trunk and fading across the gap, browning leaves in dull ochre, untouched leaves in cool teal-green.",
+  "style": "Painterly naturalist plate, an observed nocturnal scene, patient rather than dramatic.",
+  "detail_level": "High on the flames, the browning curled leaf edges and the smoke wisps; the ground and background soft and hazed.",
+  "composition": "Burning trunk on the far left third, leaf cluster on the right third, a wide expanse of plain dark air in between and a large area of dark low-detail sky above the gap kept free for overlaid callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "radiating ray lines",
+    "dotted lines",
+    "flames touching the leaves",
+    "photographic look"
+  ],
+  "consistency_notes": "CRITICAL: no flame, spark or ember may touch or reach the leaves — the gap must read as completely empty. The leaves are damaged and smoking on their own, from heat alone. Do NOT draw rays, arrows or beams of any kind between the fire and the leaves.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no drawn light rays or beams, no flames crossing the gap, no 3D-render or photographic look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

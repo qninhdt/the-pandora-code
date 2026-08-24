@@ -1,0 +1,38 @@
+{
+  "id": "fig-02-three-decks-three-directions",
+  "chapter_slug": "how-the-wind-traders-navigate-a-planet",
+  "role": "diagram",
+  "narrative_purpose": "Show that a single place has not one wind but a stack of them flowing in different directions, so a craft that cannot move relative to the air can still steer by choosing which layer to occupy.",
+  "subject": "A vertical slice through one column of air, showing three separate flat cloud decks stacked one above another with clear empty air between them. The LOWEST deck sits across the bottom third: a dense dark sheet of cloud whose surface is pulled out into long smooth streaming ribbons all running horizontally toward the LEFT edge of the frame, their trailing wisps tapering leftward. The MIDDLE deck sits across the centre: a flat pale sheet that is almost unstreaked, its forms rounded, lumpy and stalled, going nowhere, with soft blunt edges. The HIGHEST deck sits across the top: thin fibrous cloud drawn into long taut parallel streaks running hard toward the RIGHT edge, stretched and combed out, much faster-looking than either deck below. A chain of four pale translucent bell-shaped gasbag creatures, each with a small woven gondola slung beneath it on rigging lines and a few slender trailing tentacles, hangs in the clear air BETWEEN the lowest deck and the middle deck, small and dwarfed by the decks above and below.",
+  "scene": "Open high atmosphere seen edge-on, as though a wall of sky had been cut away. Clear thin air fills the gaps between the three decks. No ground is visible; the frame is entirely air and cloud, decks receding into haze toward a distant hazy vanishing edge on both sides.",
+  "camera": "Level side-on view at the height of the caravan, wide enough to hold all three decks stacked in frame at once, no perspective tilt, the decks read as clean horizontal bands.",
+  "light": "Cold flat high-altitude daylight from above, so each deck's top surface is pale mist and its underside falls into deep indigo shadow. Faint cyan bioluminescent glow along the lower rim of each gasbag bell.",
+  "palette": "Deep indigo and teal shadow under each deck, pale mist highlights on the deck tops, cool grey-blue clear air between; one restrained cyan accent on the creatures.",
+  "style": "Painterly naturalist cutaway plate, an observed slice of real sky rather than a flat schematic; the three directions carried entirely by the shape and stretch of the cloud forms, never by drawn symbols.",
+  "detail_level": "Crisp streaking texture on all three decks so their differing directions read unmistakably; the creatures rendered clearly but small; the far sides of each deck dissolving into haze.",
+  "composition": "Three clean horizontal bands filling the frame — bottom deck streaming left, middle deck stalled, top deck streaming right. The caravan sits in the clear gap in the lower-middle left. Leave the clear-air gaps between the decks, and the plain sky at the RIGHT of each gap, dark, empty and low-detail so overlaid callouts beside each deck read cleanly.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "leader lines",
+    "watermark",
+    "logos",
+    "UI",
+    "rigid metal airship hull",
+    "propellers",
+    "engines",
+    "ground",
+    "mountains",
+    "photographic look"
+  ],
+  "consistency_notes": "The aerostats are living creatures: soft translucent bell-shaped bodies, trailing tentacles, woven gondolas hung on rigging lines — never rigid metal hulls, never propellers, never engines. The three decks must be visibly distinct in motion: left-streaming, stalled, right-streaming. Cool Pandora high-altitude palette with sparse cyan bioluminescence, calm and observed rather than dramatic.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no diagram symbols, no propellers, no engines, no rigid airship hull, no vector or flat infographic style, no 3D-render or photographic look, no cartoon style, no lens flare",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": [
+    "apps/web/public/images/chapters/how-the-wind-traders-navigate-a-planet/fig-00-cover.png"
+  ]
+}

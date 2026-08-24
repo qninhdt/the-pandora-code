@@ -1,0 +1,40 @@
+{
+  "id": "fig-07-the-fixed-lamp-and-the-moving-clock",
+  "chapter_slug": "how-the-wind-traders-navigate-a-planet",
+  "role": "inline",
+  "narrative_purpose": "Show the two celestial references a Tlalim navigator has that Earth's wayfinders never did: a gas giant that never moves in the sky and so fixes position, and a sibling moon crossing its face that runs as a clock.",
+  "subject": "An enormous gas giant disc dominating the frame, sitting low so its lower edge is cut off by the horizon, its face banded in wide soft horizontal stripes of muted cream, dusty rose and pale grey-blue, one broad darker band across its middle, the whole disc utterly still and heavy. Crossing in FRONT of that disc, roughly a third of the way up its face and well inside its outline, a single much smaller perfectly round moon rendered as a small dark circle with a thin bright crescent rim on one side, silhouetted against the giant's lit bands.",
+  "scene": "Night. Along the horizon at the very bottom of the frame, a small chain of four gasbag creatures with gondolas slung beneath them on rigging lines is silhouetted in near-black, tiny, no more than a few centimetres of the frame's height. Above and around the giant's disc, a thin scatter of small stars in deep black-indigo sky. A faint haze band along the horizon line.",
+  "camera": "Wide low-angle night view from slightly above the caravan's altitude, horizon placed very low so the giant fills most of the frame and reads as overwhelming.",
+  "light": "The gas giant's own soft reflected glow is the dominant light, spilling pale onto the haze along the horizon and faintly rimming the tops of the silhouetted gasbags. No sun. Everything else deep night.",
+  "palette": "Deep black-indigo sky; the giant's banded face in restrained muted cream, dusty rose and pale grey-blue held cool overall; near-black silhouettes; a faint teal haze at the horizon.",
+  "style": "Painterly naturalist night sky plate, the giant observed as a real astronomical body with soft banded turbulence, quiet and immense.",
+  "detail_level": "Fine soft banding across the giant's face; the small transiting moon crisp and clearly a separate hard-edged disc in front; the caravan a simple dark silhouette.",
+  "composition": "The giant's disc fills the central and right portion of the frame edge to edge vertically, cut by the horizon at the bottom. The small transiting moon sits on the left-of-centre part of the giant's face. Caravan silhouette small at the lower left. Keep the plain dark starfield sky in the upper LEFT corner empty and low-detail so overlaid callouts read cleanly.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "leader lines",
+    "orbit lines",
+    "constellation lines",
+    "watermark",
+    "logos",
+    "UI",
+    "rigid metal airship hull",
+    "propellers",
+    "engines",
+    "spacecraft",
+    "planetary rings",
+    "photographic look"
+  ],
+  "consistency_notes": "The aerostats are living creatures: soft translucent bells, trailing tentacles, woven gondolas on rigging lines — no rigid hulls, no propellers, no engines. The small moon must clearly be IN FRONT of the gas giant's disc, fully inside its outline, not beside it. The giant is static and heavy, filling the frame; the scene reads as still and permanent, not dramatic. Cool Pandora palette.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no orbit lines, no constellation lines, no propellers, no engines, no rigid airship hull, no spacecraft, no planetary rings, no lens flare, no 3D-render or photographic look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": [
+    "apps/web/public/images/chapters/how-the-wind-traders-navigate-a-planet/fig-00-cover.png"
+  ]
+}

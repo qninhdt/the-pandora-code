@@ -1,0 +1,32 @@
+id: methanogenesis
+label:
+  vi: Sinh metan
+  en: Methanogenesis
+definition:
+  vi: >-
+    Quá trình một nhóm vi sinh cổ khuẩn kết hợp hydro với carbon dioxide để tạo ra metan, thu năng lượng
+    từ phản ứng đó. Vai trò sinh thái của nó quan trọng hơn nhiều so với vẻ ngoài khiêm tốn: trong mọi
+    khoang lên men trên Trái Đất, chính lũ sinh metan là kẻ ăn hydro ngay khoảnh khắc nó vừa sinh ra. Cơ
+    chế "chuyển hydro giữa các loài" ấy không phải chỗ rò rỉ của hệ thống mà là thứ giúp hệ thống chạy -
+    những kẻ lên men chỉ tiếp tục làm việc được khi có ai đó ở hạ nguồn liên tục dọn hydro đi. Đó cũng là
+    lý do một con bò sinh ra hàng mét khối hydro mỗi ngày mà thở ra gần như không có gì.
+  en: >-
+    The process by which a group of archaea combine hydrogen with carbon dioxide to make methane,
+    harvesting energy from the reaction. Its ecological role is far larger than it sounds: in every
+    fermentation chamber on Earth, methanogens are the organisms that eat hydrogen the instant it is
+    produced. That arrangement — interspecies hydrogen transfer — is not a leak in the system but the
+    thing that makes the system work, since fermenters can only keep going while someone downstream keeps
+    clearing the hydrogen away. It is also why a cow evolves cubic metres of hydrogen a day and exhales
+    essentially none.
+see_also:
+  - dark-fermentation
+  - microbiome
+  - symbiosis
+category: bio
+tags:
+  - chemistry
+  - ecology
+cover_prompt: >-
+  A painted scene of small pale archaeal cells clustered densely around a stream of rising bubbles,
+  intercepting them so that fewer bubbles continue upward past the cluster, cool teal glow against deep
+  indigo, painterly naturalist plate, no text, no labels, no numbers.

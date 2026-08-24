@@ -1,0 +1,17 @@
+id: ekman-spiral
+label:
+  vi: Xoắn Ekman trong khí quyển
+  en: Ekman spiral (atmospheric)
+definition:
+  vi: 'Kiểu gió vừa mạnh dần vừa quay dần theo độ cao khi ta đi lên qua chừng một kilômét thấp nhất của khí quyển, thường quay tổng cộng khoảng 15–45°. Nguyên nhân là ma sát bề mặt yếu đi khi ta rời xa mặt đất: ở sát đất ma sát kéo gió chậm lại và làm nó lệch vào phía áp thấp, còn càng lên cao ma sát càng mất tiếng nói cho tới khi gió khôi phục hướng địa chuyển thuần túy chạy dọc đường đẳng áp. Xin đừng lẫn với vận chuyển Ekman: đó là bản đại dương của cùng một vật lý, nơi các lớp nước quay dần theo độ sâu thay vì các lớp khí quay dần theo độ cao. Cùng một bài toán ma sát cộng Coriolis, hai chất lưu khác nhau.'
+  en: 'The pattern in which wind both speeds up and turns with height through roughly the lowest kilometre of the atmosphere, typically rotating through 15–45° in total. The cause is that surface friction weakens as you rise: near the ground friction drags the wind slower and swings it toward the low pressure, while higher up friction loses its voice until the wind recovers the pure geostrophic direction along the isobars. Do not conflate this with Ekman transport, which is the ocean version of the same physics, with water layers turning with depth rather than air layers turning with height. One friction-plus-Coriolis problem, two fluids.'
+see_also:
+  - ekman-transport
+  - planetary-boundary-layer
+  - geostrophic-balance
+  - coriolis-effect
+category: concept
+tags:
+  - atmosphere
+  - physics
+cover_prompt: A painted study of stacked translucent air layers above dark ground, each layer's flow arrow slightly longer and rotated further than the one below it so the tips trace a rising spiral, cool teal and cyan on void-indigo, painterly, no text, no labels, no numbers.

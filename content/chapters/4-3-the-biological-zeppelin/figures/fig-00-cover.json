@@ -1,0 +1,19 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "the-biological-zeppelin",
+  "role": "hero",
+  "narrative_purpose": "Capture the chapter's essence at a glance: a living animal the size of a hill floating above a cloud sea with a village slung beneath it, held up by nothing but displaced air.",
+  "subject": "One colossal jellyfish-like aerial creature: a broad translucent pale dome roughly fifty metres across, faintly lit from within, with a long curtain of thin trailing tentacles hanging far below it. Slung beneath the dome in a web of woven fibre bands are three small platforms of wicker and hide, with tiny blue-skinned figures standing on them. Four small flattened ray-shaped flying animals fly ahead of the dome on long taut lines.",
+  "scene": "High above an endless sea of cloud tops at dusk, distant mountain peaks breaking through the cloud layer far below, an immense open sky.",
+  "camera": "Wide cinematic establishing shot from slightly above and to the side, the creature placed off-centre with vast open sky around it.",
+  "light": "Soft dusk light from low on the horizon; the dome glows faintly translucent where light passes through it; one small warm ember point of a cooking fire on a platform is the only warm accent.",
+  "palette": "Cool teal and deep indigo sky and cloud, pale translucent cyan dome, a single small ember-amber cooking fire glow beneath.",
+  "style": "Painterly speculative-biology naturalist plate, serene and observed, not dramatic action art.",
+  "detail_level": "Crisp on the dome, harness and platforms; cloud sea and distant peaks dissolve into atmospheric haze.",
+  "composition": "The great dome occupying the upper two thirds off to one side, tentacle curtain and slung platforms below it, tug animals leading on lines toward open sky, generous empty sky.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "wings on the dome", "rigid metal airship hull", "propellers", "RDA machinery", "lens flare", "photographic look"],
+  "consistency_notes": "This is a LIVING animal, not a built airship: soft translucent organic dome, no rigid frame, no metal, no propellers. The dome has no wings of any kind. Cool Pandora palette with one scarce warm accent.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no wings, no metal hull, no propellers, no rivets, no 3D-render or photographic look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

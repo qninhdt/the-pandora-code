@@ -1,0 +1,17 @@
+id: mountain-wave
+label:
+  vi: Sóng núi
+  en: Mountain wave
+definition:
+  vi: 'Sóng trọng trường đứng hình thành ở phía hạ lưu một dãy núi: khi luồng khí ổn định bị dãy núi hẩy lên, nó vượt quá mức cân bằng rồi bị đẩy trở xuống, và cứ thế dập dềnh xuôi theo gió thành một chuỗi sóng gần như bất động so với mặt đất. Những đám mây hình thấu kính đánh dấu đỉnh sóng, còn bên dưới là các cuộn rotor xoáy ngược cực kỳ nguy hiểm cho máy bay. Nhánh thăng của sóng núi là dòng thăng mạnh và cao nhất mà khí quyển cung cấp: ngày 2 tháng 9 năm 2018, tàu lượn của Airbus Perlan Mission II đã dùng sóng núi trên dãy Andes để leo tới 23.203 m — tức 76.124 ft — mà không cần một động cơ nào.'
+  en: 'Standing gravity waves that form downwind of a ridge: when stable air is heaved up by the mountain, it overshoots its equilibrium, gets pushed back down, and goes on oscillating downstream as a train of waves that barely move relative to the ground. Lenticular clouds mark the wave crests, and beneath them churn dangerous rotors — reversed, tumbling eddies that have destroyed aircraft. The rising branch is the strongest and tallest updraft the atmosphere offers: on 2 September 2018 the Airbus Perlan Mission II sailplane rode mountain-wave lift over the Andes to 23,203 m, or 76,124 ft, entirely engineless.'
+see_also:
+  - orographic-lift
+  - thermal-soaring
+  - wind-shear
+  - adiabatic-lapse-rate
+category: concept
+tags:
+  - atmosphere
+  - physics
+cover_prompt: A painted scene of a dark serrated ridge with a train of smooth lens-shaped clouds standing in the sky downwind of it, each cloud marking a wave crest, and rough tumbling eddies sketched low beneath them, cool teal and cyan on void-indigo, painterly, no text, no labels, no numbers.

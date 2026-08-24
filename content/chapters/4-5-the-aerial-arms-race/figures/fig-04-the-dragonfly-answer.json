@@ -1,0 +1,33 @@
+{
+  "id": "fig-04-the-dragonfly-answer",
+  "chapter_slug": "the-aerial-arms-race",
+  "role": "diagram",
+  "narrative_purpose": "Show that a beating four-winged animal owns a control a fixed wing does not: the timing between its wing pairs. Three stacked studies of one body at three different phase settings.",
+  "subject": "Three studies of the same slender four-winged insect body, stacked vertically, each seen in flat side view. TOP: both wing pairs sweeping downward together, all four surfaces angled the same way. MIDDLE: the front pair near the end of its downstroke while the rear pair, lagging behind, sweeps down through two faint rings of swirling air hanging in the space the front pair just left. BOTTOM: the pairs in exact opposition, the front pair angled down while the rear pair is angled up.",
+  "scene": "An abstract dark field, each of the three bodies floating with nothing around it but the air it is moving.",
+  "camera": "Flat side elevation, all three bodies at identical scale and identical horizontal position so the only visible difference is the wing timing.",
+  "light": "Cool cyan self-glow along the front wing pair, warmer teal along the rear pair, and faint luminous teal rings for the swirling air in the middle study. Bodies dark.",
+  "palette": "Deep indigo void, cyan front wings, teal rear wings and swirl rings, near-black bodies.",
+  "style": "Painterly naturalist study sheet, three observations of one animal, hand-worked rather than diagrammatic.",
+  "detail_level": "Crisp wing outlines and swirl rings; the surrounding void plain and empty.",
+  "composition": "Three evenly spaced horizontal registers, each body centred, wide plain dark margins on both sides for overlaid callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrowheads",
+    "motion blur streaks",
+    "vector flat style",
+    "infographic style",
+    "photographic look",
+    "background scenery"
+  ],
+  "consistency_notes": "All three bodies must be the same animal at the same scale - only the wing angles change between registers. Four wings in every register, arranged as two clearly separate pairs front and back. The swirling rings appear ONLY in the middle register, sitting between the two pairs.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrowheads, no motion blur, no vector-flat infographic look, no photographic or 3D render, no cartoon style, no landscape background",
+  "style_refs": ["pandora-establishing.png"]
+}

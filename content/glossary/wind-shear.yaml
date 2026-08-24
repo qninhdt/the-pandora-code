@@ -1,0 +1,17 @@
+id: wind-shear
+label:
+  vi: Độ trượt gió (wind shear)
+  en: Wind shear
+definition:
+  vi: 'Sự biến đổi của gió theo độ cao hoặc theo khoảng cách ngang — và điều quan trọng là biến đổi cả về tốc độ lẫn HƯỚNG. Phần dễ bị bỏ qua chính là độ trượt hướng: gió ở độ cao 500 m và gió ở 8 km hoàn toàn có thể thổi ngược chiều nhau, nên bầu khí quyển không phải một khối di chuyển đồng nhất mà là một xấp lớp trượt lên nhau. Ở rìa các dòng tia, nơi tốc độ đổi rất gấp trong khoảng cách rất ngắn, độ trượt sinh ra nhiễu động không khí trong — thứ xáo động dữ dội trong trời quang mây, không có gì báo trước bằng mắt. Với một kẻ bay biết đọc các lớp ấy, cùng một cấu trúc đó lại là nguồn năng lượng.'
+  en: 'The change in wind with height, or across horizontal distance — and crucially a change in both speed and DIRECTION. Directional shear is the part people forget: the wind at 500 m and the wind at 8 km can blow opposite ways, so the atmosphere is not one moving block but a deck of layers sliding over one another. At the margins of a jet stream, where speed changes sharply over a short distance, shear generates clear-air turbulence — violent buffeting in cloudless sky with no visual warning. To a flier that can read those layers, the same structure is a source of energy.'
+see_also:
+  - jet-stream
+  - thermal-wind-balance
+  - dynamic-soaring
+  - ekman-spiral
+category: concept
+tags:
+  - atmosphere
+  - physics
+cover_prompt: A painted vertical slice of sky showing stacked translucent air layers with arrows pointing in progressively rotated directions, the topmost nearly reversed from the lowest, faint churning eddies at one boundary, cool teal and indigo, painterly, no text, no labels, no numbers.

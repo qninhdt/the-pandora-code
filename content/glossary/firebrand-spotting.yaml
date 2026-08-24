@@ -1,0 +1,29 @@
+id: firebrand-spotting
+label:
+  vi: Bắt lửa do đóm bay (firebrand spotting)
+  en: Firebrand spotting
+definition:
+  vi: >-
+    Cách một đám cháy nhảy qua khoảng trống mà không cần lửa lan liên tục trên mặt đất. Cột khí nóng
+    bốc lên cuốn theo những mảnh đang cháy - vỏ cây, cành nhỏ, lá xoắn - rồi gió cao mang chúng đi và
+    thả xuống làm bùng những ổ cháy mới cách mặt lửa chính hàng trăm mét đến vài kilômét. Đây là cơ
+    chế chính khiến lửa vượt sông, đường băng cản lửa và cả vành đai chống cháy quanh khu dân cư, vì
+    những thứ chắn được lửa lan trên mặt đất lại không chắn được thứ bay trên đầu. Hệ quả là mặt lửa
+    thực tế thường tiến theo kiểu nhảy bậc chứ không phải bò đều.
+  en: >-
+    How a fire crosses a gap without any continuous flame on the ground. The convective plume lofts
+    burning fragments - bark plates, twigs, curled leaves - and upper winds carry them downwind to
+    land and start fresh fires hundreds of metres to several kilometres ahead of the main front. It
+    is the dominant mechanism by which fires cross rivers, cleared firebreaks and the defensible
+    space around settlements, because a barrier that stops surface spread does nothing about
+    something airborne. The consequence is that real fire fronts usually advance in leaps rather than
+    creeping evenly.
+see_also:
+  - fireline-intensity
+  - thermally-thin-fuel
+  - fire-regime
+category: concept
+tags:
+  - ecology
+  - physics
+cover_prompt: A painterly naturalist plate of many small glowing ember amber fragments tumbling high through a dark indigo night sky above a wide black burnt ridge, a few of the fragments landing in cool teal vegetation on the far side of a pale cyan river, no text, no labels.

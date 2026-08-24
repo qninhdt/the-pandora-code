@@ -1,0 +1,31 @@
+id: pyrogenic-carbon
+label:
+  vi: Cacbon nhiệt sinh (pyrogenic carbon)
+  en: Pyrogenic carbon
+definition:
+  vi: >-
+    Phần cacbon đen còn lại khi vật liệu hữu cơ bị nhiệt phân trong điều kiện thiếu oxy nên cháy
+    không trọn - than củi và than sinh học đều thuộc loại này. Cấu trúc của nó là các vòng thơm liên
+    kết chặt, khó bị vi sinh vật phân giải, nên nó tồn tại trong đất ở thang thời gian 10² đến 10⁴
+    năm thay vì vài năm như mùn thường. Trong đất, những mảnh xốp này làm tăng dung tích trao đổi
+    cation và khả năng giữ nước, tức là giữ lại chính những dưỡng chất mà cơn mưa đầu tiên sau cháy
+    dễ rửa trôi. Vì vậy mỗi đám cháy vừa thải CO₂ vào khí quyển vừa gửi một phần cacbon vào một kho
+    lưu trữ rất dài hạn.
+  en: >-
+    The black carbon left behind when organic material pyrolyses with too little oxygen to burn
+    completely - charcoal and biochar are both this material. Its structure is tightly bonded aromatic
+    rings that soil microbes struggle to break down, so it persists on timescales of 10² to 10⁴ years
+    rather than the few years typical of ordinary humus. In the soil, these porous fragments raise
+    cation exchange capacity and water-holding capacity, retaining exactly the nutrients that the
+    first rain after a fire would otherwise wash away. Every fire therefore both vents CO₂ to the
+    atmosphere and files part of its carbon into a very long-term store.
+see_also:
+  - ash-bed-effect
+  - fire-regime
+  - decomposition
+  - pedogenesis
+category: concept
+tags:
+  - ecology
+  - chemistry
+cover_prompt: A painterly naturalist plate of a broken piece of charcoal resting on dark soil, its fractured face showing fine honeycomb pore channels lit in faint cyan, glossy black surfaces with deep teal-indigo reflections and one warm ember amber highlight along a cracked edge, no text, no labels.

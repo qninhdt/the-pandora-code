@@ -1,0 +1,17 @@
+id: downwash
+label:
+  vi: Luồng khí bị đẩy xuống
+  en: Downwash
+definition:
+  vi: 'Khối khí đang đi xuống mà một cánh để lại phía sau nó. Vì cách duy nhất để nâng một thân lên là đẩy khối khí xuống, mọi cánh đang tạo lực nâng đều kéo theo một vệt khí chìm dần sau lưng. Điều đó quan trọng khi có mặt cánh thứ hai bay trong vệt đó: nó gặp luồng khí đã nghiêng xuống, nên góc tấn hiệu dụng của nó nhỏ hơn góc hình học - cùng một hình dạng cánh, cùng một tư thế, nhưng ít lực nâng hơn và nhiều lực cản hơn. Đây là hình phạt cốt lõi của mọi cấu hình nhiều cánh, từ máy bay hai tầng cánh cho tới một con vật bốn cánh.'
+  en: 'The downward-moving air a lifting wing leaves behind it. Since the only way to hold a body up is to push air down, every wing making lift drags a sinking sheet of air in its wake. That matters the moment a second surface flies inside it: the trailing wing meets air already deflected downward, so its effective angle of attack is smaller than its geometric one - same wing shape, same attitude, less lift and more drag. This is the core penalty behind every multi-wing arrangement, from a biplane to a four-winged animal.'
+see_also:
+  - induced-drag
+  - lift
+  - tandem-wing
+  - wake-recapture
+category: concept
+tags:
+  - physics
+  - physiology
+cover_prompt: A painted side-on study of one wing with the air behind it drawn as translucent cool-teal streamlines bending downward, a second smaller wing sitting inside that sinking flow further back, dark indigo background, painterly naturalist plate, no text, no labels.

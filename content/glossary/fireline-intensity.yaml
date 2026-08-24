@@ -1,0 +1,29 @@
+id: fireline-intensity
+label:
+  vi: Cường độ tuyến lửa (fireline intensity)
+  en: Fireline intensity
+definition:
+  vi: >-
+    Năng lượng mà một mét chiều ngang của mặt lửa đang tiến giải phóng mỗi giây, đơn vị kW/m. George
+    Byram đưa ra công thức này năm 1959 dưới dạng I = H·w·r, với H là nhiệt lượng cháy của nhiên
+    liệu, w là khối lượng nhiên liệu bị tiêu thụ trên đơn vị diện tích, r là tốc độ lan của mặt lửa.
+    Đây là con số thực dụng nhất trong nghề chữa cháy rừng: trên khoảng 2000 kW/m thì tấn công trực
+    tiếp bằng người và vòi nước trên mặt đất coi như thất bại. Nó cũng gắn với chiều dài ngọn lửa mà
+    ta quan sát được qua quan hệ L = 0,0775·I^0,46, nên một nhân chứng ước lượng chiều cao lửa là đã
+    ước lượng luôn cường độ.
+  en: >-
+    The energy released each second by one metre of advancing fire front, in kW/m. George Byram
+    published it in 1959 as I = H·w·r, where H is the fuel's heat of combustion, w the fuel mass
+    consumed per unit area, and r the rate of spread. It is the most operationally useful single
+    number in wildfire suppression: above roughly 2000 kW/m, direct attack by crews and hoses on the
+    ground fails outright. It also ties to the flame length anyone can see, through L =
+    0.0775·I^0.46, so a witness estimating flame height is already estimating intensity.
+see_also:
+  - firebrand-spotting
+  - fire-regime
+  - critical-heat-flux
+category: concept
+tags:
+  - ecology
+  - physics
+cover_prompt: A painterly naturalist plate viewed from above of a long narrow ember amber line of flame advancing across dark teal-indigo grassland, unburned cool teal vegetation ahead of it and black charred ground behind, thin cyan smoke drifting off the line, no text, no labels.

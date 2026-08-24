@@ -1,0 +1,28 @@
+id: conchoidal-fracture
+label:
+  vi: Vết vỡ vỏ sò (conchoidal fracture)
+  en: Conchoidal fracture
+definition:
+  vi: >-
+    Kiểu vỡ để lại một mặt cong trơn liên tục, gợn như mặt trong của vỏ sò, đặc trưng cho vật liệu
+    không có mặt cát khai tinh thể để vết nứt đi theo. Vì không có mặt phẳng ưu tiên, vết nứt tự chọn
+    đường của nó qua khối vật liệu vô định hình và tạo ra rìa mỏng dần đến mức gần như không còn bề
+    dày. Ở thủy tinh núi lửa như obsidian, rìa ấy chỉ vào khoảng 2-3 nm, mỏng hơn dao mổ thép vốn nằm
+    quanh 20-50 nm. Đó là lý do một hòn đá có thể cho lưỡi cắt sắc hơn kim loại, và cũng là lý do
+    người ta có thể chế tác nó bằng cách gõ có kiểm soát chứ không cần mài.
+  en: >-
+    A break that leaves a smooth, continuously curved surface, rippled like the inside of a shell, and
+    it is what happens in a material with no crystal cleavage planes for the crack to follow. With no
+    preferred plane, the crack picks its own path through the amorphous solid and thins the resulting
+    edge until it has almost no thickness at all. In volcanic glass such as obsidian that edge is only
+    about 2-3 nm across, against 20-50 nm for surgical steel. This is why a stone can hold a keener
+    edge than metal, and why it can be shaped by controlled percussion rather than grinding.
+see_also:
+  - fracture-toughness
+  - phase-transition
+  - volcanic-explosivity-index
+category: concept
+tags:
+  - mineral
+  - geology
+cover_prompt: A painterly naturalist plate of a single flake of black volcanic glass on dark stone, its broken face showing smooth concentric ripple ridges catching cyan and ocean teal light, one long edge thinning to near invisibility with a faint magenta glint, deep indigo background, no text, no labels.

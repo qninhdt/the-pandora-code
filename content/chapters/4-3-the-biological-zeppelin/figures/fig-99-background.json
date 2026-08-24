@@ -1,0 +1,19 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "the-biological-zeppelin",
+  "role": "hero",
+  "narrative_purpose": "The full-bleed atmospheric mood layer the chapter text floats over: an immense dim cloud-sea sky with the barely-there silhouettes of distant drifting bells, detail dissolving into haze so long-form text stays readable.",
+  "subject": "An immense sea of cloud tops seen from very high altitude, with two or three extremely faint, distant dome silhouettes drifting far off and dissolving into atmospheric haze; no bright focal subject anywhere.",
+  "scene": "A panoramic high-altitude vista, layered cloud banks receding into deep haze, a dim twilight sky above, far mountain peaks barely suggested through the cloud.",
+  "camera": "Ultra-wide panoramic vista from a very high vantage, extremely deep atmospheric perspective.",
+  "light": "Dark, low-contrast, dim twilight; no strong light source, everything muted so overlaid text reads clearly.",
+  "palette": "Deep void-indigo and muted teal throughout, extremely low contrast, no warm accent.",
+  "style": "Painterly atmospheric mood layer, no crisp focal subject, detail dissolving into haze.",
+  "detail_level": "Deliberately low; everything softens into atmospheric haze, no sharp foreground element.",
+  "composition": "Wide, dark, empty, horizon low, vast dim negative space for overlaid text; no bright element to compete with reading.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "bright focal subject", "high contrast", "gondolas in close-up", "photographic look"],
+  "consistency_notes": "This is a dim immersive backdrop, NOT a figure to study: dark, hazed, low-contrast so long text overlays stay legible. Same cloud-sea world as the cover, but macro and atmospheric.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no bright subject, no high contrast, no 3D-render or photographic look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

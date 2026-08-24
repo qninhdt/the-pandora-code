@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-the-man-o-war-precedent",
+  "chapter_slug": "the-biological-zeppelin",
+  "role": "comparison",
+  "narrative_purpose": "Show that the Medusoid's mechanism already exists on Earth at tiny scale: a Portuguese man o' war float beside the vast bell, the same crested gas sac five hundred times apart.",
+  "subject": "A scale comparison in one frame. On the LEFT, drawn large and detailed as a specimen study, a Portuguese man o' war: a small iridescent gas-filled float with a raised crest along its top and long thin tentacles trailing beneath it, with a tiny human silhouette beside it for scale showing it is only about a hand's length. On the RIGHT, the same crested gas-float shape repeated at enormous size as the Medusoid's dome, with a tiny human silhouette at its base now almost invisibly small against it.",
+  "scene": "Both specimens presented against a plain deep indigo study background, the left one as if just lifted from water with faint wet highlights, the right one as if seen high in air with faint haze.",
+  "camera": "Flat comparative specimen framing, both subjects seen from the same side angle so the shared crested-float form reads clearly.",
+  "light": "Cool even specimen lighting; iridescent cyan and faint magenta sheen on the small float, pale translucent glow on the great dome.",
+  "palette": "Iridescent cyan and a touch of magenta on the man o' war, pale translucent cyan on the dome, deep indigo surround.",
+  "style": "Painterly naturalist specimen comparison plate.",
+  "detail_level": "Crisp on both float forms and their crests; backgrounds plain and empty.",
+  "composition": "Small specimen on the left third, giant on the right two thirds, both aligned on a common baseline, plain dark space above both for later callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "scale bars", "rulers", "baked-in captions", "photographic look"],
+  "consistency_notes": "The shared FORM is the whole point: both must read as the same crested gas-float solution at wildly different sizes. Human silhouettes convey scale without any numbers or scale bars. Dome matches fig-00-cover.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no scale bars, no rulers, no 3D-render or photographic look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/the-biological-zeppelin/fig-00-cover.png"]
+}

@@ -1,0 +1,29 @@
+id: flame-blow-off
+label:
+  vi: Thổi tắt ngọn lửa (flame blow-off)
+  en: Flame blow-off
+definition:
+  vi: >-
+    Ngọn lửa bị dập không phải vì hết nhiên liệu hay hết oxy, mà vì gió thổi quá nhanh. Phản ứng cháy
+    cần một khoảng thời gian nhất định để sinh ra các gốc tự do duy trì chính nó; nếu dòng khí kéo
+    khối phản ứng đi nhanh hơn khoảng thời gian đó, nhiệt và gốc tự do bị mang khỏi vùng cháy nhanh
+    hơn mức được tạo ra. Điều kiện này được viết gọn bằng số Damköhler, tỉ số giữa thời gian lưu của
+    dòng và thời gian phản ứng hóa học: xuống dưới 1 là ngọn lửa tắt. Với nhiên liệu mỏng và ngọn lửa
+    khuếch tán không được che chắn, ngưỡng đó thấp đến bất ngờ - chỉ khoảng 4-8,5 m/s, tức một cơn
+    gió vừa phải.
+  en: >-
+    Extinction by airflow rather than by lack of fuel or oxygen. A flame needs a certain dwell time
+    to breed the radicals that keep it going; if the flow sweeps the reacting gas past faster than
+    that, heat and radicals are stripped out of the reaction zone quicker than they are made. The
+    condition is written compactly as the Damköhler number, the ratio of flow residence time to
+    chemical reaction time: below 1, the flame goes out. For thin fuels carrying unshielded diffusion
+    flames the threshold is startlingly low - only about 4-8.5 m/s, a moderate breeze.
+see_also:
+  - fire-tetrahedron
+  - thermally-thin-fuel
+  - reynolds-number
+category: concept
+tags:
+  - physics
+  - chemistry
+cover_prompt: A painterly naturalist plate of a small ember amber flame on the edge of a thin dark leaf being bent sideways and torn into pale cyan wisps by fast air, streaked teal motion lines sweeping left to right across a deep indigo background, no text, no labels.

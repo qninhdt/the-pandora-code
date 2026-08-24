@@ -1,0 +1,40 @@
+{
+  "id": "fig-09-the-water-goes-overboard",
+  "chapter_slug": "how-the-wind-traders-navigate-a-planet",
+  "role": "inline",
+  "narrative_purpose": "Show that altitude is a consumable bought by throwing mass away: the water pouring over the gondola's side is the price of a climb and it is never recovered in flight.",
+  "subject": "A bright coherent arc of water pouring over the woven side of a gondola: a smooth glassy rope of water at the lip where it leaves the rail, holding its shape for the first stretch of its fall, then breaking apart lower down into a widening trail of separate droplets and fine bright spray that thins and scatters as it descends toward the bottom of the frame. Two blue-skinned figures stand at the rail beside the pour, both leaning slightly out with hands on the woven edge, heads turned down, watching the water fall away. A large emptied vessel of lashed fibre is tipped on its side on the gondola floor behind them.",
+  "scene": "One woven gondola of pale fibre and lashed timber, high in clear thin air, seen close. Directly above it the underside of a vast pale translucent gasbag bell fills the top of the frame, its skin taut, full and rounded, its rigging lines drawn tight down to the gondola's corners. Far, far below and softened almost to nothing by haze, a dim distant landscape of dark ridges and pale water. Clear open air between.",
+  "camera": "Close three-quarter view from just off the gondola's side and slightly above, angled down so the falling water leads the eye from the rail toward the distant ground.",
+  "light": "Cold clear high-altitude sunlight from the side catching the falling water so the arc and its spray are the brightest thing in frame; gondola and gasbag underside in cool shadow; the land below dim.",
+  "palette": "Deep indigo and teal shadow on gondola and gasbag; the water arc rendered in bright pale mist and cool cyan-white as the frame's brightest value; a faint teal wash on the distant land.",
+  "style": "Painterly naturalist study, close and physical, the weight and coherence of falling water carefully observed.",
+  "detail_level": "High detail on the rail, the water at the lip and the two watching figures; the spray progressively looser toward the bottom; the landscape below almost entirely dissolved in haze.",
+  "composition": "Gondola and rail occupy the left and upper-left; the water arc falls on a strong diagonal from the upper-left rail toward the lower-right. Keep the open hazy air in the RIGHT portion of the frame dark, plain and low-detail so overlaid callouts beside the falling water read cleanly.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "leader lines",
+    "watermark",
+    "logos",
+    "UI",
+    "rigid metal airship hull",
+    "propellers",
+    "engines",
+    "metal tanks",
+    "pipes",
+    "valves",
+    "pumps",
+    "photographic look"
+  ],
+  "consistency_notes": "The aerostat is a living creature: a soft translucent bell with trailing tentacles and a woven gondola on rigging lines — no rigid hull, no propellers, no engines, and no mechanical ballast tank, pipe, valve or pump anywhere. The bell above must read taut and full, consistent with a craft that is rising. The mood is deliberate and routine, not panicked jettison. Cool Pandora palette with the water as the single bright value.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no propellers, no engines, no rigid airship hull, no pipes or valves or pumps or metal tanks, no waterfall landscape, no 3D-render or photographic look, no cartoon style, no lens flare",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": [
+    "apps/web/public/images/chapters/how-the-wind-traders-navigate-a-planet/fig-00-cover.png"
+  ]
+}

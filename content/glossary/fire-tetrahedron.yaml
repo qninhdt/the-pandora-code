@@ -1,0 +1,28 @@
+id: fire-tetrahedron
+label:
+  vi: Tứ diện lửa (fire tetrahedron)
+  en: Fire tetrahedron
+definition:
+  vi: >-
+    Lửa cần bốn thứ cùng lúc, không phải ba. Tam giác lửa quen thuộc chỉ kể nhiên liệu, chất oxy hóa
+    và nhiệt; mô hình tứ diện thêm mặt thứ tư là phản ứng chuỗi gốc tự do tự duy trì, tức dòng các
+    gốc H•, OH•, O• mới thực sự đẩy quá trình cháy tiến lên. Các chất chữa cháy sạch họ halon không
+    dập lửa bằng cách làm ngạt hay làm lạnh, mà bằng cách bắt giữ chính những gốc tự do đó, nghĩa là
+    chúng cắt đúng cái chân thứ tư này. Bỏ đi bất kỳ một trong bốn chân thì ngọn lửa tắt, và điều đó
+    cho ta bốn cách dập lửa chứ không phải ba.
+  en: >-
+    Fire needs four things at once, not three. The familiar fire triangle lists fuel, oxidiser and
+    heat; the tetrahedron adds a fourth face, the self-sustaining free-radical chain reaction whose
+    stream of H•, OH• and O• fragments is what actually carries combustion forward. Halon-type clean
+    agents do not smother a flame or cool it below its ignition temperature; they scavenge those
+    radicals, attacking that fourth leg directly. Remove any one of the four and the flame dies,
+    which means there are four ways to put out a fire rather than three.
+see_also:
+  - limiting-oxygen-index
+  - adiabatic-flame-temperature
+  - flame-blow-off
+category: concept
+tags:
+  - chemistry
+  - physics
+cover_prompt: A painterly naturalist plate of four slender dark teal glass rods joined into a floating tetrahedral frame against a deep indigo void, the joint where they meet glowing faint ember amber with a few small cyan sparks drifting away from it, no text, no labels.

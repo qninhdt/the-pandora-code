@@ -1,0 +1,37 @@
+{
+  "id": "fig-04-the-firebrand-rider",
+  "chapter_slug": "fire-as-ecology-weapon-and-technology",
+  "role": "comparison",
+  "narrative_purpose": "Pair the natural mechanism with the deliberate one: burning fragments lofted by a fire's own plume beside a rider carrying an ember to a chosen target. The same physics, one accidental and one aimed.",
+  "subject": "LEFT: a rising column of dark smoke above a distant low fire, with a dozen small glowing orange flakes of bark tumbling upward and outward through it, scattering along the wind with no pattern. RIGHT: a Na'vi rider on a large winged flying creature holding a small pierced grey stone bowl with one glowing coal in it, flying a straight steady level course to the right, the wings held flat.",
+  "scene": "High above a dark forest canopy that stretches across the bottom of the frame, an ashen indigo sky with layered haze; the fire and its plume small in the left distance, the rider larger and nearer on the right.",
+  "camera": "Wide level view holding both halves in one frame, the horizon low, the two subjects at clearly different depths.",
+  "light": "Dim ambient overcast light overall; the tumbling bark flakes glow as many small scattered orange points, the rider's single coal as one contained brighter point. Everything else cool and unlit.",
+  "palette": "Cool indigo sky and near-black canopy dominant; scattered small ember-orange points on the left, one concentrated ember-orange point on the right.",
+  "style": "Painterly naturalist plate, an observed comparison of two ways the same thing happens, quiet rather than dramatic.",
+  "detail_level": "High on the rider, the flying creature and the stone bowl; medium on the nearest bark flakes; the distant fire and plume soft and hazed.",
+  "composition": "Left third holds the plume and its scatter of embers, right third holds the rider on a level line, a broad band of plain dark hazy sky across the middle and along the bottom left kept clear for overlaid callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "dotted trajectory lines",
+    "dividing line",
+    "burning wings",
+    "explosions",
+    "photographic look"
+  ],
+  "consistency_notes": "The contrast is chaotic versus deliberate: many small embers scattering randomly on the left, one ember held on a straight steady course on the right. The rider, the mount and the pierced grey pumice bowl match the rest of the chapter. Nothing on the rider or the mount is on fire. No divider between the halves.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows or trajectory lines, no dividing line, no burning rider or burning wings, no explosions, no 3D-render or photographic look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": [
+    "apps/web/public/images/chapters/fire-as-ecology-weapon-and-technology/fig-00-cover.png"
+  ]
+}

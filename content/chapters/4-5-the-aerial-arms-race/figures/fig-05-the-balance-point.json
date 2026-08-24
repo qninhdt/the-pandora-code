@@ -1,0 +1,33 @@
+{
+  "id": "fig-05-the-balance-point",
+  "chapter_slug": "the-aerial-arms-race",
+  "role": "diagram",
+  "narrative_purpose": "Make the stability trade physical: two profiles of the same body, one with its mass ahead of the balance point and self-righting, one with its mass behind it and diverging.",
+  "subject": "Two side profiles of the same dark winged creature body, stacked one above the other, both pointing left. In the UPPER profile a small bright glowing dot sits well forward along the body and a hollow ring outline sits further back; a single smooth curved line above the nose sweeps downward, showing the nose being pushed back down. In the LOWER profile the same bright dot has moved to sit behind the hollow ring, and the curved line above the nose sweeps upward instead, showing the nose continuing to rise. The upper body is level; the lower body is tipped nose-up.",
+  "scene": "An abstract dark field, the two profiles floating with nothing else in frame.",
+  "camera": "Flat side elevation, both profiles at identical scale and identical horizontal placement.",
+  "light": "The glowing mass dot is the brightest thing in each profile - cool cyan in the upper, warm magenta in the lower. Bodies dark, hollow ring a dim grey outline.",
+  "palette": "Deep indigo void, cyan glow on the stable upper study, magenta glow on the unstable lower one, near-black bodies, grey ring outlines.",
+  "style": "Painterly naturalist study sheet, two observations of one body, brushed rather than drafted.",
+  "detail_level": "Crisp body silhouettes, dot and ring; empty plain void elsewhere.",
+  "composition": "Two horizontal registers, generous plain dark margins right of each body for overlaid callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrowheads",
+    "dimension lines",
+    "vector flat style",
+    "infographic style",
+    "photographic look",
+    "cockpit or aircraft fuselage"
+  ],
+  "consistency_notes": "The only difference between the two registers is where the glowing dot sits relative to the hollow ring, and which way the curved line above the nose sweeps. The body is an animal body with wings, not an aeroplane. Same silhouette in both registers.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrowheads, no dimension lines, no aircraft or cockpit, no vector-flat infographic look, no photographic or 3D render, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

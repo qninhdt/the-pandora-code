@@ -1,0 +1,31 @@
+id: ballast
+label:
+  vi: Vật dằn
+  en: Ballast
+definition:
+  vi: >-
+    Khối lượng mang theo chỉ để có thể ném bỏ. Vì lực nổi là cuộc so sánh giữa lượng khí bị chiếm chỗ và
+    trọng lượng bản thân, một khí cầu leo cao bằng cách nhẹ đi chứ không phải bằng cách đẩy mạnh hơn -
+    nên nó chở nước, cát hoặc chất thải chuyên để trút xuống. Tính chất khắc nghiệt là ở chỗ vật dằn chỉ
+    tiêu được một lần: nước đã trút không quay lại, khí đã xả không quay lại. Mỗi lần đổi độ cao là một
+    khoản rút ra từ một tài khoản có hạn, và một khí cầu đã cạn dằn thì gần như mất luôn khả năng điều
+    khiển - đó là lý do bay bằng lực nổi giống việc quản lý ngân sách hơn là việc cầm lái.
+  en: >-
+    Mass carried for the sole purpose of being thrown away. Because buoyancy is a comparison between
+    displaced air and one's own weight, an aerostat climbs by becoming lighter rather than by pushing
+    harder — so it carries water, sand or waste specifically to dump. The unforgiving part is that
+    ballast is spent once: water released does not return, gas vented does not return. Every altitude
+    change is a withdrawal from a finite account, and an aerostat that has run its account down has
+    largely lost the ability to manoeuvre — which is why buoyant flight is less like steering and more
+    like budgeting.
+see_also:
+  - aerostat
+  - aerostatic-lift
+  - swim-bladder
+category: concept
+tags:
+  - physics
+cover_prompt: >-
+  A painted study of a bright column of water falling away from a dark rounded hull high in a dim
+  indigo sky, the droplets catching faint cyan light as they scatter, the hull riding visibly higher,
+  painterly texture, no text, no labels, no numbers.

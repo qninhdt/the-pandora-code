@@ -1,0 +1,17 @@
+id: planetary-boundary-layer
+label:
+  vi: Lớp biên hành tinh
+  en: Planetary boundary layer
+definition:
+  vi: 'Tầng thấp nhất của khí quyển, dày chừng 1–2 km, nơi ma sát bề mặt và xáo trộn rối chi phối mọi thứ — khác hẳn khí quyển tự do bên trên, nơi gió gần như đã quên mất mặt đất tồn tại. Ngay sát bề mặt, tốc độ gió tăng theo hàm logarit của độ cao, vì các mấu nhấp nhô của địa hình và tán cây kéo lùi dòng khí; nhờ đó chỉ cần biết độ nhám bề mặt là ta suy ra được profile gió. Ban đêm mặt đất nguội nhanh, đối lưu tắt và lớp biên co lại chỉ còn vài trăm mét, khiến lớp khí vừa được giải phóng phía trên trượt tự do thành một dòng tia tầng thấp ban đêm — có thể mạnh gấp đôi gió ban ngày ở cùng độ cao.'
+  en: 'The lowest 1–2 km of the atmosphere, where surface friction and turbulent mixing dominate everything — quite unlike the free atmosphere above, where the wind has all but forgotten the ground exists. Right at the surface, wind speed grows as the logarithm of height, because terrain roughness and canopy drag hold the flow back; knowing the surface roughness is therefore enough to reconstruct the whole profile. At night the ground cools fast, convection shuts down and the layer collapses to a few hundred metres, letting the newly released air above slide free as a nocturnal low-level jet that can run twice as fast as the daytime wind at the same height.'
+see_also:
+  - ekman-spiral
+  - wind-shear
+  - thermal-soaring
+  - adiabatic-lapse-rate
+category: concept
+tags:
+  - atmosphere
+  - earth-systems
+cover_prompt: A painted cross-section of dark forested ground under a shallow turbulent haze layer with visible eddies, a smooth clear sky above it, and one faster smooth stream gliding just over the haze at night, cool teal and void-indigo, painterly, no text, no labels, no numbers.

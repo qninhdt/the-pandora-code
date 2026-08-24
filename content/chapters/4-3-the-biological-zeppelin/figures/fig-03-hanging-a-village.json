@@ -1,0 +1,19 @@
+{
+  "id": "fig-03-hanging-a-village",
+  "chapter_slug": "the-biological-zeppelin",
+  "role": "diagram",
+  "narrative_purpose": "Contrast the failure and the fix side by side: a single rope on a taut membrane tears it, while a broad band sewn along the surface carries the same weight harmlessly.",
+  "subject": "A side-by-side comparison in one frame. On the LEFT: a taut pale membrane with one thin rope attached at a single point, the membrane visibly puckered and beginning to split around that point, a small heavy platform hanging from the rope, the tear rendered in warning magenta. On the RIGHT: the same pale membrane with a broad woven band curving in a long gentle catenary sag along its whole lower surface, joined to the membrane continuously across its full length, the same heavy platform hanging from the middle of that band, the membrane smooth and undistorted.",
+  "scene": "Two clean comparative studies against a plain dark background, separated by a subtle vertical division.",
+  "camera": "Straight-on side view of both cases, flat comparative framing.",
+  "light": "Even cool illumination on both membranes; the tearing point on the left picks up a magenta warning glow, the intact band on the right a faint teal.",
+  "palette": "Pale cyan membranes, deep indigo background, magenta at the failing point, teal along the intact band.",
+  "style": "Painterly naturalist comparative plate, clear and instructive but hand-painted.",
+  "detail_level": "Crisp on the attachment points, the puckering and the woven texture of the band; backgrounds plain.",
+  "composition": "Left half the failure case, right half the fix, generous plain dark space above each for later callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "baked-in captions", "photographic look"],
+  "consistency_notes": "The contrast must be immediately readable: concentrated point load tearing on the left, distributed line load intact on the right. Keep plain dark areas above both for overlaid callouts.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no 3D-render or photographic look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"]
+}

@@ -1,0 +1,16 @@
+id: load-factor
+label:
+  vi: Hệ số tải
+  en: Load factor
+definition:
+  vi: 'Lực nâng mà cánh đang tạo ra, chia cho trọng lượng của con vật - con số quen được gọi là "số g". Bay bằng thì hệ số tải bằng một. Muốn ngoặt, cánh phải tạo lực nâng lớn hơn trọng lượng, vì một phần lực nâng giờ dùng để bẻ hướng chứ không chỉ để đỡ thân: nghiêng cánh 60 độ là đã cần lực nâng gấp đôi. Hệ số tải là thứ nối hình học của cú ngoặt với sức chịu của cơ thể - xương, màng cánh và mạch máu đều có mức tối đa, và chính mức đó, không phải tốc độ, mới đặt ra vòng ngoặt gắt nhất mà một con vật thực sự sống sót được.'
+  en: 'The lift a wing is producing divided by the animal''s weight - the number usually spoken of as "g". In level flight the load factor is one. To turn, the wing must make more lift than the weight, because some of that lift is now bending the flight path rather than merely holding the body up: a sixty-degree bank already demands double. Load factor is what connects the geometry of a turn to what a body can survive - bone, membrane and blood vessels each have a ceiling, and that ceiling, not speed, sets the tightest turn an animal can actually live through.'
+see_also:
+  - corner-speed
+  - wing-loading
+  - specific-excess-power
+category: concept
+tags:
+  - physics
+  - physiology
+cover_prompt: A painted rear view of a large winged creature banked steeply into a turn, its wings visibly bent under load, cool teal bio-glow along the strained wing spars, thin haze streaming off the wingtips, dark indigo sky, painterly naturalist plate, no text, no labels.

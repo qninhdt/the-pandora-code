@@ -1,0 +1,31 @@
+id: dark-fermentation
+label:
+  vi: Lên men tối
+  en: Dark fermentation
+definition:
+  vi: >-
+    Quá trình vi sinh phân giải carbohydrate trong điều kiện yếm khí và không cần ánh sáng, tạo ra các
+    axit hữu cơ, carbon dioxide và khí hydro. Có một mức chặn nhiệt động rõ rệt: tối đa bốn phân tử hydro
+    trên mỗi phân tử glucose theo lối acetate, và muốn vượt qua thì phải bơm năng lượng từ nơi khác vào -
+    giới hạn mang tên Thauer. Trong thực tế, phần lớn hệ vi sinh đường ruột đi theo lối butyrate và chỉ
+    thu về hai. Đây là cơ chế khiến dạ cỏ một con bò sinh ra vài mét khối hydro mỗi ngày, và cũng là cơ
+    chế mà công nghiệp đang cố khai thác để sản xuất hydro sinh học.
+  en: >-
+    Microbial breakdown of carbohydrate under anaerobic conditions and without light, yielding organic
+    acids, carbon dioxide and hydrogen gas. There is a firm thermodynamic ceiling: at most four hydrogen
+    molecules per glucose via the acetate route, and getting past it requires energy pumped in from
+    elsewhere — the limit named after Thauer. In practice most gut communities take the butyrate route
+    instead and collect two. This is the mechanism by which a cow's rumen evolves cubic metres of
+    hydrogen a day, and the one industry is trying to harness for biological hydrogen production.
+see_also:
+  - methanogenesis
+  - microbiome
+  - chemosynthesis
+category: concept
+tags:
+  - chemistry
+  - physiology
+cover_prompt: >-
+  A painted cross-section of a warm dark fermentation chamber crowded with faintly glowing microbial
+  forms, fine strings of small bubbles rising from them toward the top of the frame, deep indigo and
+  amber interior light, painterly, no text, no labels, no numbers.

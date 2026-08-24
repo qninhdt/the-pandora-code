@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-the-thing-with-no-wings",
+  "chapter_slug": "the-biological-zeppelin",
+  "role": "hero",
+  "narrative_purpose": "Open the chapter on the absence the whole argument turns on: seen from directly underneath, this enormous flying animal has no wings anywhere and is visibly not pushing on the air.",
+  "subject": "Looking straight up at a vast translucent pale dome filling almost the entire frame, seen from below so its underside is visible: a broad soft organic bell with faint radiating internal structures showing through the translucent wall, a ring of thick muscle banding around its lower rim, and a dense curtain of long thin tentacles hanging down toward the viewer. Woven fibre harness bands cross the underside, holding two small wicker-and-hide platforms with tiny blue-skinned figures on them.",
+  "scene": "Directly beneath the creature as it passes overhead, a sliver of open sky and one distant ridge visible at the edges of the frame beyond the dome's rim.",
+  "camera": "Extreme low angle looking vertically upward, the dome in near-silhouette against bright sky, strong sense of scale and mass overhead.",
+  "light": "Backlit from above so the dome glows translucent where the sky shines through it, the harness and platforms in cool shadow beneath.",
+  "palette": "Pale luminous cyan and mist where light passes through the membrane, deep teal-indigo in the shadowed underside and tentacles.",
+  "style": "Painterly speculative-biology naturalist plate, awed and observational.",
+  "detail_level": "Crisp on the muscle band, harness weave and nearest tentacles; the dome's far rim softens into glare and haze.",
+  "composition": "The dome filling the upper and central frame, tentacle curtain descending through the lower third, one plain dark region of open sky at the frame edge for later callout labels.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "wings", "feathers", "rigid frame", "metal", "propellers", "photographic look"],
+  "consistency_notes": "The teaching point is the TOTAL ABSENCE of wings or any flapping surface. Keep a plain dark area of open sky at one edge so callouts can be overlaid later. Same creature design as fig-00-cover.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no wings, no feathers, no metal frame, no propellers, no 3D-render or photographic look, no cartoon style",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/the-biological-zeppelin/fig-00-cover.png"]
+}

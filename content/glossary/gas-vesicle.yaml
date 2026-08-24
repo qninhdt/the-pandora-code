@@ -1,0 +1,34 @@
+id: gas-vesicle
+label:
+  vi: Túi khí vi khuẩn
+  en: Gas vesicle
+definition:
+  vi: >-
+    Cấu trúc vỏ protein rỗng, cứng, kích thước dưới một micromet, giúp vi khuẩn lam và một số cổ khuẩn
+    nổi lên trong cột nước. Điểm tinh tế là chúng không được bơm khí vào: mặt trong sơ nước đẩy nước ra
+    còn khí xung quanh thì tự khuếch tán vào cho đến khi cân bằng, nên tế bào có được lực nổi mà không
+    phải tốn công bơm. Điều tiết diễn ra theo lối phá hủy - khi tế bào tích đủ carbohydrate nặng, áp suất
+    trương nội bào vượt ngưỡng và nghiến vỡ túi khí để chìm xuống. Cơ chế này không thể phóng to lên
+    thành khí cầu: trong nước nó khai thác chênh lệch mật độ cả nghìn kilogram mỗi mét khối, còn trong
+    không khí con số ấy chỉ hơn một, và vỏ protein nặng hơn lực nâng của chính nó vài bậc độ lớn.
+  en: >-
+    A hollow, rigid, sub-micrometre protein shell that lets cyanobacteria and some archaea float in a
+    water column. The subtlety is that they are not pumped full of anything: the hydrophobic interior
+    excludes liquid water while ambient gases diffuse in freely until pressures equalise, so the cell
+    gains buoyancy without doing any pumping work. Regulation is destructive — once the cell accumulates
+    enough dense carbohydrate, internal turgor exceeds the critical pressure and crushes the vesicles to
+    sink. The mechanism cannot be scaled into an aerostat: in water it exploits a density difference of a
+    thousand kilograms per cubic metre, while in air that figure is barely above one, and the protein
+    shell outweighs its own lift by orders of magnitude.
+see_also:
+  - aerostatic-lift
+  - swim-bladder
+  - square-cube-law
+category: bio
+tags:
+  - physiology
+  - physics
+cover_prompt: >-
+  A painted study of several hollow cylindrical protein shells with conical end caps, drawn very large as
+  if under a microscope, pale and translucent against dark indigo water with faint cyan highlights along
+  their ribs, painterly naturalist plate, no text, no labels, no numbers.

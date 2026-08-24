@@ -1,0 +1,30 @@
+id: critical-heat-flux
+label:
+  vi: Thông lượng nhiệt tới hạn (critical heat flux)
+  en: Critical heat flux
+definition:
+  vi: >-
+    Mức sưởi bằng bức xạ yếu nhất mà vẫn còn đủ để làm một vật rắn bắt cháy. Nói chính xác, đó là
+    thông lượng nhiệt tới nhỏ nhất, tính bằng kW/m², đủ kéo bề mặt vật liệu lên tới nhiệt độ bắt
+    cháy nhanh hơn mức mà đối lưu và tái bức xạ mang nhiệt đi; dưới ngưỡng đó bề mặt chỉ ấm lên đến
+    một trạng thái dừng rồi không bao giờ cháy. Với nhiên liệu xenlulozơ khô như gỗ, lá rụng hay
+    giấy, ngưỡng này khoảng 10-14 kW/m² khi có mồi lửa, và 28-35 kW/m² nếu vật liệu phải tự bùng
+    lên. Người ta đo nó bằng thiết bị nón nhiệt lượng theo ISO 5660, và chính con số này quyết định
+    một vật đang cháy có thể đứng gần vật kế tiếp bao nhiêu trước khi lửa nhảy sang.
+  en: >-
+    The weakest radiant heating that can still set a solid alight. Formally it is the minimum
+    incident heat flux, in kW/m², that drives a surface up to its piloted-ignition temperature
+    faster than convection and re-radiation can carry the heat away; below it the surface settles at
+    a steady warm temperature and never ignites at all. For dry cellulosic fuels such as wood, leaf
+    litter and paper it is roughly 10-14 kW/m² with a pilot flame present, and 28-35 kW/m² if the
+    material must ignite unaided. It is measured in a cone calorimeter under ISO 5660, and it is the
+    number that sets how close one burning object can stand to the next before the fire jumps.
+see_also:
+  - thermally-thin-fuel
+  - fireline-intensity
+  - firebrand-spotting
+category: concept
+tags:
+  - physics
+  - chemistry
+cover_prompt: A painterly naturalist plate of a flat dry leaf lying on dark stone in deep indigo shadow with a broad cone-shaped teal metal hood suspended just above it, the leaf surface faintly glowing ember amber directly under the cone and cool cyan at its edges, no text, no labels.
