@@ -344,6 +344,147 @@
       "cloudCooling": "Cloud cooling",
       "seaWarming": "Sea warming",
       "tooFar": "too far"
+    },
+    "wind-layer-router": {
+      "title": "Which River Are You In?",
+      "subtitle": "A caravan cannot fight the wind — it can only choose a height",
+      "control": "Flight level",
+      "kmValue": "{n} km",
+      "staffAria": "A vertical wind staff: barbs at each altitude point the way that layer flows, short and westward near the ground, long and eastward in the jet aloft",
+      "mapAria": "Ground track produced by drifting for {days} days at the chosen level",
+      "stratum": {
+        "surface": "Friction layer",
+        "trade": "Low trades",
+        "middle": "The dead middle",
+        "westerly": "Westerly flow",
+        "jet": "Jet core"
+      },
+      "hint": {
+        "surface": "Down here friction drags on the air, slowing it and twisting its heading away from the flow above. You go west, slowly, and you can see the ground — which is why caravans launch from this layer and rarely trade in it.",
+        "trade": "The steady low easterlies: reliable, moderate, and pointed west. A caravan that never climbs will circle the moon in this layer, the long way round, and arrive at every rendezvous late.",
+        "middle": "The wind here is weak and its heading unreliable — the layer between the two conveyors, where a caravan makes almost no progress in any direction. Navigators cross it; they do not linger in it.",
+        "westerly": "Above the reversal the flow has swung the other way and strengthened. This is the working level for an eastbound leg: fast enough to matter, calm enough to hold formation.",
+        "jet": "The core. Four times the speed of the trades, and almost due east — a caravan that finds it crosses in days what the low layer takes a season to cover. The price is the climb, and the turbulence at its edges."
+      },
+      "groundLabel": "Ground",
+      "tropopauseLabel": "Tropopause",
+      "staffCaption": "barb length = speed",
+      "equator": "Equator",
+      "mapCaption": "{days} days adrift",
+      "degValue": "{n}°",
+      "msValue": "{n} m/s",
+      "nowhere": "Nowhere",
+      "circuitsEast": "{n} circuits east",
+      "circuitsWest": "{n} circuits west",
+      "readout": {
+        "heading": "Flowing toward",
+        "speed": "Wind speed",
+        "arrival": "After a month"
+      }
+    },
+    "jet-meander": {
+      "title": "When the Sky Stops Arriving",
+      "subtitle": "A jet meanders; sometimes the meander stands still",
+      "control": {
+        "wavenumber": "Waves around the latitude",
+        "meanFlow": "Mean flow carrying them"
+      },
+      "waveValue": "{n} waves",
+      "msValue": "{n} m/s",
+      "kmValue": "{n} km",
+      "aria": {
+        "progressive": "A gently waving jet band travelling steadily eastward past a stationary caravan",
+        "stalling": "A sharpening jet band creeping slowly across the map, nearly stationary",
+        "blocked": "A large, deeply buckled jet band locked in place over the caravan"
+      },
+      "hint": {
+        "progressive": "The flow carries the pattern east faster than the wave can propagate west, so troughs and ridges sweep past. Weather keeps arriving, and a caravan can wait a few days for the layer it wants.",
+        "stalling": "The two speeds are close to cancelling. The pattern has slowed to a crawl and begun to amplify — the sky a navigator watches nervously, because whatever is overhead now may still be overhead next week.",
+        "blocked": "The wave has gone stationary and buckled. A stalled high sits over the caravan, the jet has split around it, and there is no fast layer to climb into. This is the failure mode that strands a fleet: not a storm, but a sky that has stopped moving."
+      },
+      "caravan": "Caravan",
+      "meanLatitude": "Mean jet latitude",
+      "westward": "← west",
+      "eastward": "east →",
+      "resonantNote": "flow that locks this wave",
+      "stationary": "Standing still",
+      "driftEast": "{n} m/s east",
+      "driftWest": "{n} m/s west",
+      "regime": {
+        "progressive": "Weather keeps arriving",
+        "stalling": "Pattern slowing and amplifying",
+        "blocked": "Blocked — nowhere to go"
+      },
+      "readout": {
+        "wavelength": "Wavelength",
+        "resonant": "Resonant flow",
+        "drift": "Pattern drift"
+      }
+    },
+    "ballast-budget": {
+      "title": "Five Legs, One Account",
+      "subtitle": "Every climb spends water; every descent vents gas; neither comes back",
+      "level": {
+        "low": "Low",
+        "mid": "Middle",
+        "jet": "Jet"
+      },
+      "legLabel": "Leg {n}",
+      "legWinds": "low {low} · middle {mid} · jet {jet} m/s eastward",
+      "legControl": "Flight level for leg {n}",
+      "refused": "Refused",
+      "kmForward": "+{n} km",
+      "kmBack": "−{n} km",
+      "ofValue": "{used} / {total}",
+      "ofKm": "{made} / {need} km",
+      "hint": {
+        "arrived": "That itinerary works. Notice what it required: not the fastest layer everywhere, but the right layer on each leg, bought with a water and gas budget that had just enough in it. This is what a navigator's memory is actually for.",
+        "short": "The account survived, but the caravan fell short. Progress is not about finding one good altitude — the fast layer moves as you travel, so a fleet that holds a single level spends most of the crossing in air going the wrong way.",
+        "stranded": "The caravan asked for a level it could no longer afford and had to hold the one it was already in. Out here that is not an inconvenience; it is the end of the route. Ballast spent early is control you do not have later."
+      },
+      "outcome": {
+        "arrived": "Arrived at the rendezvous",
+        "short": "Short of the rendezvous",
+        "stranded": "Stranded — budget ran out"
+      },
+      "startNote": "The caravan launches from the {level} layer, so choosing anything else for the first leg already costs a climb.",
+      "readout": {
+        "water": "Water ballast",
+        "gas": "Lifting gas",
+        "distance": "Eastward progress"
+      }
+    },
+    "season-reversal": {
+      "title": "Why Twice a Year",
+      "subtitle": "The circuit is quick; the wind's permission is not",
+      "cadence": {
+        "annual": "Once",
+        "semiannual": "Twice",
+        "quarterly": "Four times"
+      },
+      "cadenceControl": "Wind reversals per year",
+      "aria": "A ring of one Pandoran year divided into {reversals} wind seasons, the flying share of each drawn bright and the moored remainder dim",
+      "yearLabel": "{n} days",
+      "ringCaption": "one Pandoran year",
+      "control": {
+        "speed": "Riding speed"
+      },
+      "msValue": "{n} m/s",
+      "daysValue": "{n} days",
+      "noRoom": "No room",
+      "transitNote": "to cover {n} km",
+      "windowNote": "one of {n} wind seasons",
+      "mooredNote": "moored, trading, waiting for the turn",
+      "overrunNote": "the wind turns before the circuit closes",
+      "hint": {
+        "fits": "The crossing fits inside one wind season with time to spare — and that spare time is the trading. The rhythm is not set by how fast a caravan can travel but by how often the wind grants a direction, which is exactly the logic that paced the monsoon dhows.",
+        "overruns": "At this speed the circuit cannot close before the wind reverses, and a caravan caught mid-route by the turn is a caravan pushed back the way it came. Fewer, longer seasons are more forgiving than many short ones."
+      },
+      "readout": {
+        "transit": "Circuit takes",
+        "window": "Season lasts",
+        "moored": "Left over"
+      }
     }
   }
 }

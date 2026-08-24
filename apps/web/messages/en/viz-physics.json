@@ -1,234 +1,51 @@
 {
   "viz": {
-    "hydraulicLimit": {
-      "title": "How tall can a tree get?",
-      "subtitle": "Drag the height up to see how much the water column stretches",
-      "envLabel": "Which world",
-      "earth": "Earth",
-      "pandora": "Pandora",
-      "heightLabel": "Tree height",
-      "heightAxis": "Height →",
-      "turgorAxis": "Top-leaf vigour",
-      "ceiling": "ceiling",
-      "hyperion": "Tallest redwood (116 m)",
-      "hometree": "Hometree (~300 m)",
-      "turgorLabel": "Top-leaf vigour",
-      "turgorNote": "How well the topmost leaves can still fill with water and grow.",
-      "snapNote": "Past the ceiling the water column snaps — the top can no longer drink.",
-      "dead": "0%",
-      "snap": "Snap",
-      "worldLabel": "Select world",
-      "gravityLabel": "Gravity",
-      "gravityNote": "Lightens the water column",
-      "atmoLabel": "Atmosphere (CO₂ & density)",
-      "atmoNote": "Cuts transpiration loss",
-      "verdictOk": "The crown is still paying its way: water reaches the top under survivable tension.",
-      "verdictOver": "Beyond what the plumbing allows here. On Earth this is impossible; on Pandora, lower gravity and a CO2-rich, humid atmosphere lift the ceiling — straining toward Hometree's scale, not sailing past it.",
-      "hint": "A tree has no pump: it drinks by pulling an unbroken thread of water up its wood, powered only by evaporation from its leaves. The taller it grows, the harder the top must pull, until the leaf cells can no longer fill — Koch & Sillett (2004) put Earth's ceiling near 130 m. Switch to Pandora and watch lower gravity and dense, carbon-rich air move that ceiling."
-    },
-    "occamsRazor": {
-      "title": "Occam's Razor",
-      "subtitle": "Weighing competing explanations",
-      "hint": "Adjust the number of unproven assumptions. The razor shaves away the theory that demands too many miracles.",
-      "theoryA": "Theory A",
-      "theoryB": "Theory B",
-      "assumptions": "assumptions",
-      "verdict": "Verdict",
-      "verdictA": "Theory A is more robust",
-      "verdictB": "Theory B is more robust",
-      "verdictTie": "Equally plausible",
-      "noteA": "Relies on fewer leaps of faith.",
-      "noteB": "Relies on fewer leaps of faith.",
-      "noteTie": "Cannot distinguish based on simplicity alone.",
-      "theoryADesc": "Natural Explan.",
-      "theoryBDesc": "Conspiratorial Explan.",
-      "shavedStatus": "✗ SHAVED (TOO COMPLEX)",
-      "plausibleStatus": "✓ PLAUSIBLE (PARSIMONIOUS)",
-      "assumptionsList": {
-        "active": "Banshee was active in this area",
-        "hungry": "Banshee was hungry (seeking prey)",
-        "drones": "RDA deployed silent stealth drones",
-        "paint": "Drones leaked glowing cyan chemical paint",
-        "stealth": "Stealth drone intentionally snapped twigs to mark path",
-        "wind": "Heavy storm wind carried the drones here undetected"
-      }
-    },
-    "shannonEntropy": {
-      "title": "Shannon Entropy",
-      "subtitle": "Uncertainty and information content of a biased coin flip",
-      "probLabel": "Probability of Heads (p)",
-      "entropyLabel": "Entropy (H)",
-      "flipBtn": "Flip Coin",
-      "streamLabel": "Outcome Stream",
-      "hint": "At p = 0.5, the coin is perfectly fair and unpredictability is maximized at 1.0 bit of entropy per flip. At p = 0.0 or 1.0, the outcome is completely certain, carrying 0 bits of information because you gain no new knowledge when it lands."
-    },
-    "cohesionTension": {
-      "title": "Cohesion-Tension",
-      "subtitle": "Water column tension under transpiration pull",
-      "sunLabel": "Transpiration Rate",
-      "tensionLabel": "Column Tension",
-      "stateLabel": "Column State",
-      "stateStable": "Stable (Continuous flow)",
-      "stateSnapped": "Snapped (Cavitation)",
-      "heightLabel": "Tree Height",
-      "hint": "Water has no pump: leaves evaporate water (transpiration), pulling the molecules behind them. High sun or excessive height stretches the water column. Exceed the threshold, and the column snaps, blocking flow."
-    },
-    "dynamicSoaring": {
-      "title": "Dynamic Soaring",
-      "subtitle": "Harvesting kinetic energy from wind gradients",
-      "windGradient": "Wind Speed (gradient)",
-      "energyLabel": "Energy Gain",
-      "altitudeLabel": "Altitude",
-      "modeLabel": "Flight Phase",
-      "phaseAscent": "Ascent (harvesting wind)",
-      "phaseDescent": "Descent (gaining speed)",
-      "seaLevel": "Sea level (Calm)",
-      "windShear": "Wind Shear",
-      "hint": "Dynamic soaring works by flying between different wind speeds. By climbing into fast wind (ascent) and diving into slow wind near the sea (descent), a bird extracts energy from the wind shear, staying aloft indefinitely without flapping."
-    },
-    "squareCubeLaw": {
-      "title": "The Square-Cube Law",
-      "subtitle": "How mass outruns surface area during scaling",
-      "scaleSlider": "Linear Scale",
-      "heightLabel": "Height multiplier",
-      "areaLabel": "Surface Area (x²)",
-      "volumeLabel": "Mass/Volume (x³)",
-      "limitLabel": "Bone Stress Limit",
-      "statusLabel": "Skeletal Status",
-      "statusStable": "Stable",
-      "statusStrained": "Strained (Na'vi adaptation required)",
-      "statusCrushed": "Crushed (Earth bone fails)",
-      "hint": "Double the height, and you get 4x the muscle/bone cross-section but 8x the mass to support. Bone stress increases linearly with size. That is why Na'vi have carbon-fiber reinforced bones, and why giant terrestrial animals cannot exist with standard human proportions.",
-      "gridLabel": "Isometric grid division (volume)",
-      "humanBone": "Human Bone",
-      "naviBone": "Na'vi Carbon Bone"
-    },
-    "shannonChannel": {
-      "title": "Shannon's channel, made playable",
-      "subtitle": "C = B · log₂(1 + S/N)",
-      "bandwidth": "Bandwidth (B)",
-      "snr": "Signal-to-noise (S/N)",
-      "payload": "Payload to send",
-      "capacity": "Channel capacity",
-      "transferTime": "Transfer time",
-      "clearedPerSecond": "cleared in one second",
-      "payloads": {
-        "word": "A spoken word",
-        "photo": "A photograph",
-        "stream": "A lifetime of conscious thought",
-        "connectome": "A whole connectome"
+    "aerostatic-lift-budget": {
+      "title": "What Holds Up a Living Balloon",
+      "subtitle": "Lift is bought by the cubic metre; the skin is paid for by the square metre",
+      "gasLabel": "Choose a lifting gas",
+      "gas": {
+        "hydrogen": "Hydrogen",
+        "helium": "Helium",
+        "methane": "Methane",
+        "ammonia": "Ammonia",
+        "hotAir": "Hot air"
       },
-      "units": {
-        "instant": "instant",
-        "seconds": "{n} s",
-        "minutes": "{n} min",
-        "hours": "{n} hours",
-        "days": "{n} days",
-        "years": "{n} years"
+      "materialLabel": "Choose an envelope wall",
+      "material": {
+        "film": "Polymer film",
+        "goldbeater": "Goldbeater's skin",
+        "collagen": "Collagen laminate",
+        "mesoglea": "Thick mesoglea"
       },
-      "aria": "Channel capacity {capacity}; the chosen payload takes {time} to cross.",
-      "hint": "Drag bandwidth and watch the answer move in great linear strides; drag the signal-to-noise ratio and watch it barely budge. Bandwidth is the precious resource — raw power is almost useless. Then send a whole connectome down the biological cable and see why an overnight transfer of a mind is impossible the maximalist way, and merely extravagant the minimalist way."
-    },
-    "consciousBottleneck": {
-      "title": "The conscious bottleneck",
-      "subtitle": "Eleven million bits in; a few dozen bits of self out",
-      "firehose": "Raw sensation",
-      "trickle": "The experienced self",
-      "consciousLabel": "Conscious stream",
-      "compressionLabel": "Compression",
-      "compressionNote": "sensation thrown away per bit kept",
-      "lifetimeLabel": "A whole self",
-      "lifetimeNote": "{years} years of conscious experience",
-      "consciousSlider": "Conscious rate",
-      "aria": "The senses pour in eleven million bits per second; only {conscious} reaches awareness — a {compression}-fold compression.",
-      "hint": "Your senses pour ~11 Mb/s into the nervous system, yet the stream that reaches awareness — the self that thinks and remembers — runs at a mere handful of bits per second. Slide that rate and watch a whole lifetime of selfhood collapse to mere tens of gigabits: small enough, at last, to send across the bond in a single night."
-    },
-    "allometry": {
-      "title": "Bone Stress & Allometry",
-      "statusStable": "Skeleton: STABLE",
-      "statusOverloaded": "Skeleton: BUCKLING RISK",
-      "infoAllometric": "Allometry: Bones thicken non-linearly to support the cubed weight, maintaining skeletal integrity.",
-      "infoIsometric": "Isometry: Linear scaling. Volume (mass) increases by 8x while bone cross-section only increases by 4x, risking fracture.",
-      "boneWidth": "Bone width:",
-      "boneStress": "BONE MECHANICAL STRESS",
-      "mass": "Body Mass",
-      "sizeLabel": "Scale factor (k)"
-    },
-    "scaleUp": {
-      "title": "The square-cube scaling trap",
-      "subtitle": "Scale an animal up and watch mass outrun wing area",
-      "sizeLabel": "Scale factor (k)",
-      "multiple": "{n}× base",
-      "wing": "Wing Area",
-      "mass": "Body Mass",
-      "loading": "Wing Loading",
-      "stallLabel": "Stall speed",
-      "stallNote": {
-        "easy": "Slow, agile flight",
-        "hard": "Needs a long runway",
-        "desperate": "Must drop off a cliff",
-        "grounded": "Cannot generate enough lift"
+      "diameterLabel": "Envelope diameter",
+      "liftCurve": "Gross lift",
+      "overheadCurve": "Skin + organs",
+      "crossing": "Smallest that flies",
+      "canon": {
+        "fieldGuide": "field guide",
+        "caravan": "caravan"
       },
-      "status": {
-        "easy": "Agile flier",
-        "hard": "Heavy flier",
-        "desperate": "Marginal",
-        "grounded": "Grounded"
+      "xAxis": "Envelope diameter (metres, log scale)",
+      "yAxis": "Mass (log scale)",
+      "hint": {
+        "flying": "Above the crossing the cube beats the square: every metre of extra diameter adds more lift than skin. This is why an aerostat has no choice but to be enormous, and why the caravan animals can carry a village while the field-guide drifter cannot carry anyone.",
+        "grounded": "Below the crossing the square wins. The wall and the living tissue behind it weigh more than the displaced air will hold, so this animal cannot lift even itself — no arrangement of gas will save it. There are no sparrow-sized balloon animals for exactly this reason."
       },
-      "wlUnit": "kg/m²",
-      "hint": "Double the length, and you get 4× the wing area to lift 8× the mass. The 'wing loading' (mass per unit wing area) climbs relentlessly, forcing the animal to fly faster and faster just to stay in the air. Eventually, the stall speed exceeds what muscles can deliver."
-    },
-    "froudeDial": {
-      "title": "Froude gait dial",
-      "gravity": "Gravity",
-      "earth": "Earth",
-      "pandora": "Pandora",
-      "legLabel": "Leg length",
-      "walkTrot": "Walk → trot",
-      "gallop": "Gallop threshold",
-      "frNote": "at Fr ≈ 0.5",
-      "gallopNote": "at Fr ≈ 1.0",
-      "range": "0–{max} km/h",
-      "hint": "At the same leg length, Pandora's lower gravity pulls every gait transition down to a lower speed. The pa'li breaks into its efficient spring-loaded gaits sooner - and each footfall lands softer for it."
-    },
-    "flightLab": {
-      "title": "The wall for fliers",
-      "subtitle": "Where power demanded crosses power supplied",
-      "hint": "The teal curve is what muscles can supply. The amber curve is what flight demands. They must cross, setting a maximum mass. Drop Pandora's gravity and thicken its air, and watch the demand curve slide down — pushing the crossing point to a much heavier animal.",
-      "earth": "Earth",
-      "pandora": "Pandora",
-      "custom": "Custom",
-      "mode": "Select planet",
-      "massAxis": "Body mass →",
-      "ceiling": "Flight ceiling",
-      "gLabel": "Gravity",
-      "rhoLabel": "Air density",
-      "ceilingLabel": "Maximum flying mass"
-    },
-    "flierShowdown": {
-      "title": "The giants, to scale",
-      "subtitle": "Comparing Earth's largest to Pandora's everyday fliers",
-      "hint": "Quetzalcoatlus is the absolute largest creature Earth ever put in the air. The mountain banshee matches it. The toruk doubles it.",
-      "earthCeiling": "Earth's maximum (~11m)",
-      "spanAxis": "Wingspan (m) →",
-      "span": "Wingspan",
-      "mass": "Est. Mass",
-      "era": "Era",
-      "launch": "Launch mode",
-      "pelagornis": "Pelagornis",
-      "argentavis": "Argentavis",
-      "quetzalcoatlus": "Quetzalcoatlus",
-      "ikran": "Mountain Banshee",
-      "toruk": "Great Leonopteryx",
-      "eras": {
-        "25Mya": "25 Mya",
-        "6Mya": "6 Mya",
-        "68Mya": "68 Mya",
-        "Contemporary": "Contemporary"
+      "aria": {
+        "flying": "Gross lift curve above the overhead curve, leaving spare payload",
+        "grounded": "Overhead curve above the gross lift curve, so the envelope cannot lift itself"
       },
-      "launches": {
-        "bipedal": "Bipedal run / drop",
-        "quadrupedal": "Quadrupedal vault"
+      "readout": {
+        "specificLift": "Specific lift",
+        "vsHelium": "only {pct}% over helium",
+        "grossLift": "Gross lift",
+        "volume": "{v} m³ enclosed",
+        "overhead": "Skin + organs",
+        "payload": "Spare payload",
+        "grounded": "grounded",
+        "minimumDiameter": "needs at least {d} m to fly",
+        "households": "about {n} Tlalim households aboard"
       }
     },
     "airRegime": {
@@ -250,36 +67,161 @@
       "transitionalDesc": "Flow begins to attach, but unsteady.",
       "inertialDesc": "Clean, attached flow. Efficient lift."
     },
-    "torukFlight": {
-      "title": "Toruk Flight Synthesizer",
-      "subtitle": "Turn on Pandora's three physical 'cheats' to get Toruk airborne",
-      "hint": "Activate the necessary conditions to make Toruk's flight viable.",
-      "switch1": "Dense Atmosphere (1.2x Earth)",
-      "switch2": "Low Gravity (0.8x Earth)",
-      "switch3": "Quadrupedal Vault Launch",
-      "status": "Flight Viability",
-      "fail": "Grounded",
-      "success": "Airborne",
-      "failDesc": "Standard Earth physics. Toruk is far too heavy to fly or launch.",
-      "successDesc": "All three Pandoran physics cheats combined. The lift is higher, the weight is lower, and the launch muscles are maximized. Toruk flies."
+    "allometry": {
+      "title": "Bone Stress & Allometry",
+      "statusStable": "Skeleton: STABLE",
+      "statusOverloaded": "Skeleton: BUCKLING RISK",
+      "infoAllometric": "Allometry: Bones thicken non-linearly to support the cubed weight, maintaining skeletal integrity.",
+      "infoIsometric": "Isometry: Linear scaling. Volume (mass) increases by 8x while bone cross-section only increases by 4x, risking fracture.",
+      "boneWidth": "Bone width:",
+      "boneStress": "BONE MECHANICAL STRESS",
+      "mass": "Body Mass",
+      "sizeLabel": "Scale factor (k)"
     },
-    "superconductor": {
-      "title": "Superconductor cool-down",
-      "temp": "Temperature",
-      "resistance": "Resistance",
-      "state": "State",
-      "normal": "Normal metal",
-      "superconducting": "Superconducting",
-      "tc": "Critical temperature Tc",
-      "tempAxis": "Temperature (K) →",
-      "resAxis": "Resistance →",
-      "play": "Cool / warm",
-      "pause": "Pause",
-      "hint": "Drop the temperature below Tc: resistance falls straight to zero and the magnet locks, hanging in mid-air.",
-      "levitating": "Flux-locked — levitating",
-      "resting": "Resting on the surface",
-      "dragToMove": "DRAG BLOCK TO MOVE ALONG MAGNETIC TRACK",
-      "lowerToLevitate": "LOWER TEMPERATURE BELOW Tc TO LEVITATE"
+    "biohydrogen-ledger": {
+      "title": "Where the Lifting Gas Comes From",
+      "subtitle": "Making hydrogen is easy; a gut that keeps any is the hard part",
+      "gutLabel": "Choose a gut community",
+      "gut": {
+        "earthLike": "Earth-like gut",
+        "medusoid": "Sink suppressed"
+      },
+      "permeationLabel": "Wall leakage",
+      "permeation": {
+        "on": "Wall leaks",
+        "off": "Sealed wall"
+      },
+      "preyLabel": "Prey eaten per day",
+      "stage": {
+        "fermenter": "Fermentation chamber",
+        "evolved": "{v} m³ of hydrogen evolved per day",
+        "bladder": "Lifting bladder",
+        "capacity": "{v} m³ when full"
+      },
+      "band": {
+        "sink": "Eaten by microbes",
+        "sinkPct": "{pct}% of the day's gas",
+        "kept": "Reaches the bladder",
+        "leak": "Diffuses out"
+      },
+      "verdict": {
+        "holding": "The envelope gains {pct}% of its volume per day",
+        "sinking": "The envelope loses {pct}% of its volume per day"
+      },
+      "ceilingNote": "At the thermodynamic ceiling of four hydrogen per sugar, the same meal would net {v} m³.",
+      "hint": {
+        "earthLike": "A cow's rumen evolves cubic metres of hydrogen a day and exhales essentially none. Methanogens and sulfate reducers consume it the instant it appears — hydrogen is the currency of the gut, spent as fast as it is earned. Route that stream into a bladder and there is nothing left to route.",
+        "medusoid": "Suppress the microbes that eat hydrogen and the same fermentation suddenly has an output. This — not the chemistry of making the gas — is the one biological novelty a living aerostat actually requires. Everything else it does, animals on Earth already do."
+      },
+      "aria": {
+        "earthLike": "Almost the entire hydrogen stream consumed by microbes before reaching the bladder",
+        "medusoid": "Most of the hydrogen stream reaching the bladder, with a narrow leakage band"
+      },
+      "readout": {
+        "delivered": "Into the bladder",
+        "leak": "Lost through the wall",
+        "rent": "Daily rent",
+        "rentNote": "prey needed just to break even",
+        "never": "unpayable"
+      }
+    },
+    "burning-wing": {
+      "title": "How Long Can a Burning Wing Fly?",
+      "subtitle": "The wing stops flying long before it stops existing",
+      "aria": "Loss of control at {loc} seconds against burn-through at {burn} seconds",
+      "ignition": "Ignition",
+      "phase": {
+        "denature": "Heating to 60 °C",
+        "boil": "To boiling",
+        "desiccate": "Boiling the water off",
+        "char": "Charring"
+      },
+      "locMarker": "Control lost, {from}–{to} s",
+      "burnMarker": "Burns through at {s} s",
+      "hint": "Control goes at about {loc} seconds, while burning through the membrane takes some {burn} — and {water} percent of that longer budget is spent boiling water out of living tissue. Water is a superb heat sink, so the fire needs a long time to finish the wing. It needs almost none to ruin it: collagen unwinds at 58–65 °C and contracts hard along its fibres, and a puckered membrane on one wing is an uncommanded roll the animal cannot trim out.",
+      "readout": {
+        "loc": "Control lost",
+        "locValue": "{from}–{to} s",
+        "locNote": "Collagen contracts, roll diverges",
+        "burn": "Burns through",
+        "seconds": "{s} s",
+        "burnNote": "{water}% of it boiling off water",
+        "biot": "Biot number",
+        "biotThin": "Thermally thin — heats right through",
+        "biotThick": "Thick enough to hold a gradient"
+      },
+      "slider": {
+        "thickness": "Membrane thickness",
+        "thicknessValue": "{v} mm",
+        "flux": "Arriving heat"
+      }
+    },
+    "cohesionTension": {
+      "title": "Cohesion-Tension",
+      "subtitle": "Water column tension under transpiration pull",
+      "sunLabel": "Transpiration Rate",
+      "tensionLabel": "Column Tension",
+      "stateLabel": "Column State",
+      "stateStable": "Stable (Continuous flow)",
+      "stateSnapped": "Snapped (Cavitation)",
+      "heightLabel": "Tree Height",
+      "hint": "Water has no pump: leaves evaporate water (transpiration), pulling the molecules behind them. High sun or excessive height stretches the water column. Exceed the threshold, and the column snaps, blocking flow."
+    },
+    "combustion-budget": {
+      "title": "Does This Air Want to Burn?",
+      "subtitle": "A flame survives only while it releases heat faster than its surroundings take it away",
+      "presetLabel": "Choose an atmosphere",
+      "preset": {
+        "earth": "Earth air",
+        "pandora": "Pandora air"
+      },
+      "fuelBed": "Fuel bed",
+      "airstream": "Airstream",
+      "loss": {
+        "diluent": "Heat soaked up by the diluent gas",
+        "convective": "Heat stripped by the moving air"
+      },
+      "aria": "Flame at {speed} percent of Earth burning velocity and {temp} kelvin",
+      "hint": {
+        "readily": "This air supports fire much as Earth's does. Enough oxygen to keep the radical chain branching, little enough diluent that most of the reaction heat stays in the flame.",
+        "reluctant": "Fire still takes, but grudgingly. Carbon dioxide is a triatomic molecule with more ways to store energy than nitrogen has, so it drinks reaction heat and drops the flame temperature — and a cooler flame ignites its neighbours more slowly.",
+        "marginal": "Barely combustible. Between a thin oxygen supply and a heavy heat-absorbing diluent, the flame can no longer heat the fuel ahead of it fast enough to keep itself fed.",
+        "blownOff": "Blown out. The airstream now carries heat off faster than the reaction can replace it — reactants sweep through the flame zone before they finish reacting, and the flame simply stops. This is why an unshielded torch cannot survive at flying speed."
+      },
+      "readout": {
+        "flameSpeed": "Burning velocity",
+        "flameSpeedNote": "Share of the Earth-air rate",
+        "flameTemp": "Flame temperature",
+        "flameTempNote": "{delta} K cooler than Earth air",
+        "verdict": "This air",
+        "verdictNote": "How readily fire takes and spreads"
+      },
+      "verdict": {
+        "readily": "Burns readily",
+        "reluctant": "Burns reluctantly",
+        "marginal": "Barely burns",
+        "blownOff": "Flame blown out"
+      },
+      "slider": {
+        "o2": "Oxygen in the air",
+        "co2": "Carbon dioxide in the air",
+        "wind": "Airspeed across the flame",
+        "windValue": "{v} m/s"
+      }
+    },
+    "consciousBottleneck": {
+      "title": "The conscious bottleneck",
+      "subtitle": "Eleven million bits in; a few dozen bits of self out",
+      "firehose": "Raw sensation",
+      "trickle": "The experienced self",
+      "consciousLabel": "Conscious stream",
+      "compressionLabel": "Compression",
+      "compressionNote": "sensation thrown away per bit kept",
+      "lifetimeLabel": "A whole self",
+      "lifetimeNote": "{years} years of conscious experience",
+      "consciousSlider": "Conscious rate",
+      "aria": "The senses pour in eleven million bits per second; only {conscious} reaches awareness — a {compression}-fold compression.",
+      "hint": "Your senses pour ~11 Mb/s into the nervous system, yet the stream that reaches awareness — the self that thinks and remembers — runs at a mere handful of bits per second. Slide that rate and watch a whole lifetime of selfhood collapse to mere tens of gigabits: small enough, at last, to send across the bond in a single night."
     },
     "cooper-pair": {
       "title": "Cooper Pair",
@@ -330,6 +272,92 @@
       "water": "Water",
       "superconductor": "Superconductor"
     },
+    "dynamicSoaring": {
+      "title": "Dynamic Soaring",
+      "subtitle": "Harvesting kinetic energy from wind gradients",
+      "windGradient": "Wind Speed (gradient)",
+      "energyLabel": "Energy Gain",
+      "altitudeLabel": "Altitude",
+      "modeLabel": "Flight Phase",
+      "phaseAscent": "Ascent (harvesting wind)",
+      "phaseDescent": "Descent (gaining speed)",
+      "seaLevel": "Sea level (Calm)",
+      "windShear": "Wind Shear",
+      "hint": "Dynamic soaring works by flying between different wind speeds. By climbing into fast wind (ascent) and diving into slow wind near the sea (descent), a bird extracts energy from the wind shear, staying aloft indefinitely without flapping."
+    },
+    "edge-toughness": {
+      "title": "The Sharpest Edge Is the Most Fragile",
+      "subtitle": "What lets a material part cleanly is what stops it surviving a second blow",
+      "aria": "Edge sharpness plotted against fracture toughness for five weapon materials",
+      "material": {
+        "glass": "Volcanic glass",
+        "chert": "Heat-treated chert",
+        "bone": "Bone",
+        "steel": "Hardened steel",
+        "salvage": "Cold-worked salvage"
+      },
+      "xAxis": "Edge radius — smaller is sharper",
+      "yAxis": "Fracture toughness (MPa·m^½)",
+      "hint": {
+        "glass": "An edge a few nanometres across, an order of magnitude finer than surgical steel, and it costs nothing but a well-aimed blow to make. The price is written in the toughness figure: with no crystal planes and no plastic give, a crack that starts anywhere runs everywhere. Superb on soft tissue, finished the moment it meets bone.",
+        "chert": "Heating siliceous stone to a few hundred degrees drives out water between the crystals and lets it flake almost as cleanly as glass, while keeping nearly twice the toughness. The first material improvement in history that was purely thermal.",
+        "bone": "Blunt by any of these standards, and by far the most forgiving. Bone is a composite, so a crack in it has to fight its way through mineral and protein in turn — which is exactly what makes it the right choice for a shaft or a haft rather than a point.",
+        "steel": "Blunter than glass by more than tenfold, and forty times harder to break. Metal deforms before it parts, so a crack has to keep being fed. The catch is the furnace: this edge is unavailable to anyone without roughly 1,500 °C.",
+        "salvage": "The toughest thing on the plot, obtainable with no furnace at all. Hammer aerospace alloy cold and it hardens as its internal dislocations tangle; warm it to a few hundred degrees and they untangle again, restoring workability. Never molten, never cast — and never as sharp as glass."
+      },
+      "readout": {
+        "edge": "Edge radius",
+        "edgeNano": "{v} nm",
+        "edgeMicron": "{v} µm",
+        "edgeNote": "How fine an edge it takes",
+        "toughness": "Fracture toughness",
+        "toughnessNote": "Resistance to a running crack",
+        "strikes": "Hard strikes survived",
+        "strikesOne": "One",
+        "forgeNone": "No furnace needed",
+        "forgeNote": "Needs about {c} °C"
+      }
+    },
+    "flierShowdown": {
+      "title": "The giants, to scale",
+      "subtitle": "Comparing Earth's largest to Pandora's everyday fliers",
+      "hint": "Quetzalcoatlus is the absolute largest creature Earth ever put in the air. The mountain banshee matches it. The toruk doubles it.",
+      "earthCeiling": "Earth's maximum (~11m)",
+      "spanAxis": "Wingspan (m) →",
+      "span": "Wingspan",
+      "mass": "Est. Mass",
+      "era": "Era",
+      "launch": "Launch mode",
+      "pelagornis": "Pelagornis",
+      "argentavis": "Argentavis",
+      "quetzalcoatlus": "Quetzalcoatlus",
+      "ikran": "Mountain Banshee",
+      "toruk": "Great Leonopteryx",
+      "eras": {
+        "25Mya": "25 Mya",
+        "6Mya": "6 Mya",
+        "68Mya": "68 Mya",
+        "Contemporary": "Contemporary"
+      },
+      "launches": {
+        "bipedal": "Bipedal run / drop",
+        "quadrupedal": "Quadrupedal vault"
+      }
+    },
+    "flightLab": {
+      "title": "The wall for fliers",
+      "subtitle": "Where power demanded crosses power supplied",
+      "hint": "The teal curve is what muscles can supply. The amber curve is what flight demands. They must cross, setting a maximum mass. Drop Pandora's gravity and thicken its air, and watch the demand curve slide down — pushing the crossing point to a much heavier animal.",
+      "earth": "Earth",
+      "pandora": "Pandora",
+      "custom": "Custom",
+      "mode": "Select planet",
+      "massAxis": "Body mass →",
+      "ceiling": "Flight ceiling",
+      "gLabel": "Gravity",
+      "rhoLabel": "Air density",
+      "ceilingLabel": "Maximum flying mass"
+    },
     "flux-pinning": {
       "title": "Flux Pinning",
       "category": "Physics",
@@ -343,6 +371,19 @@
       "somePins": "some pins",
       "manyPins": "many pins"
     },
+    "froudeDial": {
+      "title": "Froude gait dial",
+      "gravity": "Gravity",
+      "earth": "Earth",
+      "pandora": "Pandora",
+      "legLabel": "Leg length",
+      "walkTrot": "Walk → trot",
+      "gallop": "Gallop threshold",
+      "frNote": "at Fr ≈ 0.5",
+      "gallopNote": "at Fr ≈ 1.0",
+      "range": "0–{max} km/h",
+      "hint": "At the same leg length, Pandora's lower gravity pulls every gait transition down to a lower speed. The pa'li breaks into its efficient spring-loaded gaits sooner - and each footfall lands softer for it."
+    },
     "hallelujah-mountains": {
       "title": "Hallelujah Mountains",
       "category": "Pandora",
@@ -352,6 +393,68 @@
       "pinned": "Pinned",
       "pinnedPullsBack": "Pinned — the flux threads pull it home",
       "stableEquilibrium": "Locked in a stable, self-correcting equilibrium"
+    },
+    "hydraulicLimit": {
+      "title": "How tall can a tree get?",
+      "subtitle": "Drag the height up to see how much the water column stretches",
+      "envLabel": "Which world",
+      "earth": "Earth",
+      "pandora": "Pandora",
+      "heightLabel": "Tree height",
+      "heightAxis": "Height →",
+      "turgorAxis": "Top-leaf vigour",
+      "ceiling": "ceiling",
+      "hyperion": "Tallest redwood (116 m)",
+      "hometree": "Hometree (~300 m)",
+      "turgorLabel": "Top-leaf vigour",
+      "turgorNote": "How well the topmost leaves can still fill with water and grow.",
+      "snapNote": "Past the ceiling the water column snaps — the top can no longer drink.",
+      "dead": "0%",
+      "snap": "Snap",
+      "worldLabel": "Select world",
+      "gravityLabel": "Gravity",
+      "gravityNote": "Lightens the water column",
+      "atmoLabel": "Atmosphere (CO₂ & density)",
+      "atmoNote": "Cuts transpiration loss",
+      "verdictOk": "The crown is still paying its way: water reaches the top under survivable tension.",
+      "verdictOver": "Beyond what the plumbing allows here. On Earth this is impossible; on Pandora, lower gravity and a CO2-rich, humid atmosphere lift the ceiling — straining toward Hometree's scale, not sailing past it.",
+      "hint": "A tree has no pump: it drinks by pulling an unbroken thread of water up its wood, powered only by evaporation from its leaves. The taller it grows, the harder the top must pull, until the leaf cells can no longer fill — Koch & Sillett (2004) put Earth's ceiling near 130 m. Switch to Pandora and watch lower gravity and dense, carbon-rich air move that ceiling."
+    },
+    "hydrogen-flammability-window": {
+      "title": "How Wide Is the Window to Burn?",
+      "subtitle": "Hydrogen ignites across a huge range — until something drinks the heat",
+      "presetLabel": "Choose an atmosphere",
+      "preset": {
+        "earth": "Earth air",
+        "pandora": "Pandora air",
+        "custom": "Set it yourself"
+      },
+      "co2Label": "Carbon dioxide in the air",
+      "scaleLabel": "Hydrogen mixed into the air",
+      "dryBand": "the band in Earth air",
+      "burns": "this mixture ignites",
+      "noBurn": "no mixture will ignite",
+      "xAxis": "Hydrogen concentration (% by volume)",
+      "hint": {
+        "flammable": "Hydrogen's band is extraordinarily wide and needs almost nothing to light it — an unfelt spark will do. Carbon dioxide narrows the window from the rich end, because a triatomic molecule stores more of the reaction's heat than nitrogen can. Pandora's air is genuinely more forgiving than Earth's here. It is not forgiving enough to make an ember arrow safe.",
+        "inert": "Past this much diluent the two limits meet and the window closes: no proportion of hydrogen and this air will carry a flame at all. Fire suppression works by reaching this point, not by removing every spark."
+      },
+      "aria": {
+        "flammable": "Flammable window from {lean} to {rich} percent hydrogen",
+        "inert": "Flammable window closed; no mixture ignites"
+      },
+      "readout": {
+        "width": "Window width",
+        "closed": "closed",
+        "narrowing": "{pct}% narrower than in Earth air",
+        "mie": "Spark needed",
+        "mieNote": "a static discharge is far more",
+        "verdict": "Verdict",
+        "safe": "Cannot ignite",
+        "ignitable": "Ignites easily",
+        "safeNote": "the diluent has closed the window",
+        "ignitableNote": "an ember is more than enough"
+      }
     },
     "meissner-effect": {
       "title": "Meissner Effect",
@@ -366,6 +469,33 @@
       "normal": "Normal",
       "belowTc": "below Tc",
       "aboveTc": "above Tc"
+    },
+    "occamsRazor": {
+      "title": "Occam's Razor",
+      "subtitle": "Weighing competing explanations",
+      "hint": "Adjust the number of unproven assumptions. The razor shaves away the theory that demands too many miracles.",
+      "theoryA": "Theory A",
+      "theoryB": "Theory B",
+      "assumptions": "assumptions",
+      "verdict": "Verdict",
+      "verdictA": "Theory A is more robust",
+      "verdictB": "Theory B is more robust",
+      "verdictTie": "Equally plausible",
+      "noteA": "Relies on fewer leaps of faith.",
+      "noteB": "Relies on fewer leaps of faith.",
+      "noteTie": "Cannot distinguish based on simplicity alone.",
+      "theoryADesc": "Natural Explan.",
+      "theoryBDesc": "Conspiratorial Explan.",
+      "shavedStatus": "✗ SHAVED (TOO COMPLEX)",
+      "plausibleStatus": "✓ PLAUSIBLE (PARSIMONIOUS)",
+      "assumptionsList": {
+        "active": "Banshee was active in this area",
+        "hungry": "Banshee was hungry (seeking prey)",
+        "drones": "RDA deployed silent stealth drones",
+        "paint": "Drones leaked glowing cyan chemical paint",
+        "stealth": "Stealth drone intentionally snapped twigs to mark path",
+        "wind": "Heavy storm wind carried the drones here undetected"
+      }
     },
     "quantum-locking": {
       "title": "Quantum Locking",
@@ -382,6 +512,125 @@
       "tilted": "tilted",
       "inverted": "inverted"
     },
+    "radiant-dose": {
+      "title": "Fire Reaches What It Never Touches",
+      "subtitle": "Radiated heat climbs as the fourth power of temperature and thins with distance",
+      "aria": "Radiant flux of {flux} kilowatts per square metre at {dist} metres from the flame",
+      "threshold": {
+        "pain": "Pain",
+        "blister": "Blisters",
+        "ignition": "Wood ignites",
+        "autoignition": "Bursts alight on its own"
+      },
+      "distMax": "8 m",
+      "xAxis": "Distance from the flame",
+      "yAxis": "Arriving heat (kW/m²)",
+      "hint": {
+        "none": "Below the threshold where anything happens. Heat is arriving, but slowly enough that skin and fuel shed it as fast as it lands.",
+        "pain": "Enough to hurt within about half a minute, and nothing more. Sunlight at its fiercest delivers roughly half this.",
+        "blister": "The escape threshold. Skin blisters in ten to fifteen seconds here, which is why fire crews treat this flux as the line you do not stand behind.",
+        "ignition": "Now dry wood and cloth catch from a spark or a stray ember — no flame need reach them. This is the flux that spreads a fire through a forest, delivered across open air.",
+        "autoignition": "Hot enough that dry fuel bursts alight with no ignition source at all, in seconds. Nothing organic survives standing in this."
+      },
+      "readout": {
+        "flux": "Arriving heat",
+        "fluxNote": "Radiant flux at the target",
+        "dose": "Time to blister",
+        "doseValue": "{s} s",
+        "doseSafe": "Survivable",
+        "doseNote": "Injury needs flux and time",
+        "outcome": "What happens",
+        "outcomeNote": "The highest threshold this flux clears"
+      },
+      "outcome": {
+        "none": "Nothing",
+        "pain": "Pain, no injury",
+        "blister": "Burns in seconds",
+        "ignition": "Fuel catches fire",
+        "autoignition": "Dry fuel bursts alight"
+      },
+      "slider": {
+        "temp": "Flame temperature",
+        "dist": "Distance to the target",
+        "distValue": "{v} m"
+      }
+    },
+    "scaleUp": {
+      "title": "The square-cube scaling trap",
+      "subtitle": "Scale an animal up and watch mass outrun wing area",
+      "sizeLabel": "Scale factor (k)",
+      "multiple": "{n}× base",
+      "wing": "Wing Area",
+      "mass": "Body Mass",
+      "loading": "Wing Loading",
+      "stallLabel": "Stall speed",
+      "stallNote": {
+        "easy": "Slow, agile flight",
+        "hard": "Needs a long runway",
+        "desperate": "Must drop off a cliff",
+        "grounded": "Cannot generate enough lift"
+      },
+      "status": {
+        "easy": "Agile flier",
+        "hard": "Heavy flier",
+        "desperate": "Marginal",
+        "grounded": "Grounded"
+      },
+      "wlUnit": "kg/m²",
+      "hint": "Double the length, and you get 4× the wing area to lift 8× the mass. The 'wing loading' (mass per unit wing area) climbs relentlessly, forcing the animal to fly faster and faster just to stay in the air. Eventually, the stall speed exceeds what muscles can deliver."
+    },
+    "shannonChannel": {
+      "title": "Shannon's channel, made playable",
+      "subtitle": "C = B · log₂(1 + S/N)",
+      "bandwidth": "Bandwidth (B)",
+      "snr": "Signal-to-noise (S/N)",
+      "payload": "Payload to send",
+      "capacity": "Channel capacity",
+      "transferTime": "Transfer time",
+      "clearedPerSecond": "cleared in one second",
+      "payloads": {
+        "word": "A spoken word",
+        "photo": "A photograph",
+        "stream": "A lifetime of conscious thought",
+        "connectome": "A whole connectome"
+      },
+      "units": {
+        "instant": "instant",
+        "seconds": "{n} s",
+        "minutes": "{n} min",
+        "hours": "{n} hours",
+        "days": "{n} days",
+        "years": "{n} years"
+      },
+      "aria": "Channel capacity {capacity}; the chosen payload takes {time} to cross.",
+      "hint": "Drag bandwidth and watch the answer move in great linear strides; drag the signal-to-noise ratio and watch it barely budge. Bandwidth is the precious resource — raw power is almost useless. Then send a whole connectome down the biological cable and see why an overnight transfer of a mind is impossible the maximalist way, and merely extravagant the minimalist way."
+    },
+    "shannonEntropy": {
+      "title": "Shannon Entropy",
+      "subtitle": "Uncertainty and information content of a biased coin flip",
+      "probLabel": "Probability of Heads (p)",
+      "entropyLabel": "Entropy (H)",
+      "flipBtn": "Flip Coin",
+      "streamLabel": "Outcome Stream",
+      "hint": "At p = 0.5, the coin is perfectly fair and unpredictability is maximized at 1.0 bit of entropy per flip. At p = 0.0 or 1.0, the outcome is completely certain, carrying 0 bits of information because you gain no new knowledge when it lands."
+    },
+    "squareCubeLaw": {
+      "title": "The Square-Cube Law",
+      "subtitle": "How mass outruns surface area during scaling",
+      "scaleSlider": "Linear Scale",
+      "heightLabel": "Height multiplier",
+      "areaLabel": "Surface Area (x²)",
+      "volumeLabel": "Mass/Volume (x³)",
+      "limitLabel": "Bone Stress Limit",
+      "statusLabel": "Skeletal Status",
+      "statusStable": "Stable",
+      "statusStrained": "Strained (Na'vi adaptation required)",
+      "statusCrushed": "Crushed (Earth bone fails)",
+      "hint": "Double the height, and you get 4x the muscle/bone cross-section but 8x the mass to support. Bone stress increases linearly with size. That is why Na'vi have carbon-fiber reinforced bones, and why giant terrestrial animals cannot exist with standard human proportions.",
+      "gridLabel": "Isometric grid division (volume)",
+      "humanBone": "Human Bone",
+      "naviBone": "Na'vi Carbon Bone"
+    },
     "superconductivity": {
       "title": "Superconductivity",
       "category": "Physics",
@@ -394,6 +643,24 @@
       "decays": "Resistance returns — the current decays",
       "belowTc": "below Tc",
       "aboveTc": "above Tc"
+    },
+    "superconductor": {
+      "title": "Superconductor cool-down",
+      "temp": "Temperature",
+      "resistance": "Resistance",
+      "state": "State",
+      "normal": "Normal metal",
+      "superconducting": "Superconducting",
+      "tc": "Critical temperature Tc",
+      "tempAxis": "Temperature (K) →",
+      "resAxis": "Resistance →",
+      "play": "Cool / warm",
+      "pause": "Pause",
+      "hint": "Drop the temperature below Tc: resistance falls straight to zero and the magnet locks, hanging in mid-air.",
+      "levitating": "Flux-locked — levitating",
+      "resting": "Resting on the surface",
+      "dragToMove": "DRAG BLOCK TO MOVE ALONG MAGNETIC TRACK",
+      "lowerToLevitate": "LOWER TEMPERATURE BELOW Tc TO LEVITATE"
     },
     "superposition": {
       "title": "Superposition",
@@ -418,6 +685,53 @@
       "siltstone": "Siltstone",
       "topsoil": "Topsoil",
       "selectBed": "select layer"
+    },
+    "torukFlight": {
+      "title": "Toruk Flight Synthesizer",
+      "subtitle": "Turn on Pandora's three physical 'cheats' to get Toruk airborne",
+      "hint": "Activate the necessary conditions to make Toruk's flight viable.",
+      "switch1": "Dense Atmosphere (1.2x Earth)",
+      "switch2": "Low Gravity (0.8x Earth)",
+      "switch3": "Quadrupedal Vault Launch",
+      "status": "Flight Viability",
+      "fail": "Grounded",
+      "success": "Airborne",
+      "failDesc": "Standard Earth physics. Toruk is far too heavy to fly or launch.",
+      "successDesc": "All three Pandoran physics cheats combined. The lift is higher, the weight is lower, and the launch muscles are maximized. Toruk flies."
+    },
+    "towed-aerostat-power": {
+      "title": "A Balloon Has No Course",
+      "subtitle": "Drifting is free; going anywhere costs the cube of the speed",
+      "bodyLabel": "Choose a hull shape",
+      "body": {
+        "bluff": "Blunt bell",
+        "streamlined": "Streamlined hull"
+      },
+      "towLabel": "How the tugs fly",
+      "tow": {
+        "static": "Straight tether",
+        "crosswind": "Crosswind arcs"
+      },
+      "speedLabel": "Speed across the wind",
+      "teamLine": "What eight tugs can give",
+      "speedMax": "12 m/s",
+      "xAxis": "Speed relative to the surrounding air (m/s)",
+      "yAxis": "Power required",
+      "hint": {
+        "drifting": "At zero the aerostat is simply part of the air. It feels no wind, needs no power, and can drift for months — but it also has no rudder, because a rudder needs something to push against. Altitude is the only steering a free balloon owns.",
+        "feasible": "A handful of tugs can manage this. Note how gently the caravan moves: walking pace, and it stays walking pace, because the next increment of speed costs far more than the last.",
+        "impossible": "Now the arithmetic breaks. Power rises as the cube of speed, so this pace would need a flock no clan could feed. A living airship is not slow because nobody thought of going faster — it is slow because faster is unaffordable."
+      },
+      "aria": "About {n} tugs required at {v} metres per second",
+      "readout": {
+        "drag": "Drag",
+        "power": "Power needed",
+        "cubeNote": "doubling speed costs eight times this",
+        "windrays": "Windrays needed",
+        "none": "none",
+        "driftNote": "drifting costs nothing",
+        "perAnimal": "at about 2 kW of thrust each"
+      }
     },
     "type-ii-superconductor": {
       "title": "Type-II Superconductor",

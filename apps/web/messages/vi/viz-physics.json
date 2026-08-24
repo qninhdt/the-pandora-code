@@ -1,219 +1,51 @@
 {
   "viz": {
-    "hydraulicLimit": {
-      "title": "Bức trần thủy lực",
-      "subtitle": "Kéo chiều cao lên để xem cột nước kéo căng đến mức nào",
-      "hint": "Chuyển sang Pandora: trọng lực thấp làm cột nước nhẹ đi, và không khí dày CO2 giúp cây giữ nước. Cả hai mặt của phương trình đều dịch chuyển, và bức trần được nâng lên.",
-      "worldLabel": "Thế giới",
-      "earth": "Trái Đất",
-      "pandora": "Pandora",
-      "ceiling": "Trần",
-      "hyperion": "Redwood",
-      "hometree": "Hometree",
-      "snap": "Đứt cột nước!",
-      "heightAxis": "Chiều cao (m)",
-      "turgorAxis": "Sức căng",
-      "gravityLabel": "Trọng lực",
-      "gravityNote": "nhẹ hơn = dễ kéo",
-      "atmoLabel": "Khí quyển",
-      "atmoNote": "đặc hơn = ít mất nước",
-      "heightLabel": "Chiều cao cây",
-      "turgorLabel": "Sức sống lá ngọn",
-      "dead": "Chết khô",
-      "snapNote": "áp suất âm",
-      "turgorNote": "sức căng tế bào",
-      "verdictOver": "Quá giới hạn. Cột nước đứt gãy, lá không thể trương lên. Cây không thể cao hơn.",
-      "verdictOk": "Hệ thống vẫn nguyên vẹn. Lá vẫn có thể hút nước và phát triển."
-    },
-    "occamsRazor": {
-      "title": "Dao cạo Occam",
-      "subtitle": "Cân đo các lời giải thích cạnh tranh",
-      "hint": "Điều chỉnh số lượng giả định chưa được chứng minh. Lưỡi dao sẽ cắt bỏ lý thuyết nào đòi hỏi quá nhiều phép màu.",
-      "theoryA": "Lý thuyết A",
-      "theoryB": "Lý thuyết B",
-      "assumptions": "giả định",
-      "verdict": "Kết luận",
-      "verdictA": "Lý thuyết A vững chắc hơn",
-      "verdictB": "Lý thuyết B vững chắc hơn",
-      "verdictTie": "Bất phân thắng bại",
-      "noteA": "Dựa trên ít niềm tin mù quáng hơn.",
-      "noteB": "Dựa trên ít niềm tin mù quáng hơn.",
-      "noteTie": "Không thể phân định chỉ dựa vào sự tối giản.",
-      "theoryADesc": "Giải thích Tự nhiên",
-      "theoryBDesc": "Giả thuyết Phức tạp",
-      "shavedStatus": "✗ BỊ CẮT BỎ (QUÁ PHỨC TẠP)",
-      "plausibleStatus": "✓ KHẢ THI (HỢP LÝ)",
-      "assumptionsList": {
-        "active": "Banshee kiếm ăn tại khu vực này",
-        "hungry": "Banshee đang đói (săn mồi)",
-        "drones": "RDA đã triển khai drone tàng hình",
-        "paint": "Drone bị rò rỉ hóa chất phát quang màu lam",
-        "stealth": "Drone cố tình bẻ gãy cành cây để đánh dấu",
-        "wind": "Cơn bão lớn đã thổi bay drone đến đây mà không bị phát hiện"
-      }
-    },
-    "shannonEntropy": {
-      "title": "Entropy Shannon",
-      "subtitle": "Độ bất định và lượng thông tin của đồng xu thiên lệch",
-      "probLabel": "Xác suất mặt Ngửa (p)",
-      "entropyLabel": "Entropy (H)",
-      "flipBtn": "Tung đồng xu",
-      "streamLabel": "Chuỗi kết quả",
-      "hint": "Ở p = 0.5, đồng xu hoàn toàn công bằng và độ bất định đạt cực đại tại 1.0 bit entropy mỗi lần tung. Ở p = 0.0 hoặc 1.0, kết quả hoàn toàn chắc chắn, mang lại 0 bit thông tin vì không có kiến thức mới nào được tạo ra."
-    },
-    "cohesionTension": {
-      "title": "Lực kéo - bám (Cohesion-Tension)",
-      "subtitle": "Sức căng của cột nước dưới lực kéo thoát hơi nước",
-      "sunLabel": "Tốc độ thoát hơi nước",
-      "tensionLabel": "Sức căng cột nước",
-      "stateLabel": "Trạng thái cột nước",
-      "stateStable": "Ổn định (Dòng chảy liên tục)",
-      "stateSnapped": "Đứt gãy (Hiện tượng Cavitation)",
-      "heightLabel": "Chiều cao cây",
-      "hint": "Cây không có bơm chủ động: lá thoát hơi nước để kéo các phân tử nước phía sau lên. Nắng gắt hoặc chiều cao quá lớn sẽ kéo căng cột nước. Vượt quá giới hạn, cột nước sẽ đứt gãy và dừng dòng chảy."
-    },
-    "dynamicSoaring": {
-      "title": "Lượn động (Dynamic Soaring)",
-      "subtitle": "Khai thác động năng từ gradient tốc độ gió",
-      "windGradient": "Tốc độ gió (gradient)",
-      "energyLabel": "Năng lượng thu được",
-      "altitudeLabel": "Độ cao",
-      "modeLabel": "Pha bay",
-      "phaseAscent": "Bay lên (thu năng lượng)",
-      "phaseDescent": "Lao xuống (tăng tốc độ)",
-      "seaLevel": "Mặt biển (Gió lặng)",
-      "windShear": "Lực xén gió",
-      "hint": "Lượn động hoạt động bằng cách bay qua lại giữa các lớp gió có tốc độ khác nhau. Bằng cách bay lên lớp gió mạnh (thu năng lượng) và lao xuống sát mặt biển lặng gió (tăng tốc), cánh chim hấp thụ năng lượng gió để lượn vô tận mà không cần vỗ cánh."
-    },
-    "squareCubeLaw": {
-      "title": "Định luật bình phương - lập phương",
-      "subtitle": "Khối lượng tăng nhanh hơn diện tích khi phóng to",
-      "scaleSlider": "Tỉ lệ phóng to",
-      "heightLabel": "Hệ số chiều cao",
-      "areaLabel": "Diện tích bề mặt (x²)",
-      "volumeLabel": "Khối lượng/Thể tích (x³)",
-      "limitLabel": "Giới hạn ứng suất xương",
-      "statusLabel": "Trạng thái bộ xương",
-      "statusStable": "Ổn định",
-      "statusStrained": "Căng thẳng (Cần sự thích nghi của Na'vi)",
-      "statusCrushed": "Đổ vỡ (Xương người thường gãy)",
-      "hint": "Gấp đôi chiều cao, bạn có diện tích mặt cắt cơ/xương tăng gấp 4 nhưng khối lượng phải nâng đỡ tăng gấp 8. Ứng suất xương tăng tuyến tính theo kích thước. Đó là lý do người Na'vi có xương gia cố sợi carbon, và sinh vật khổng lồ không thể có tỷ lệ giống người.",
-      "gridLabel": "Lớp lưới biểu diễn thể tích",
-      "humanBone": "Xương người thường",
-      "naviBone": "Xương Na'vi gia cố"
-    },
-    "shannonChannel": {
-      "title": "Giới hạn kênh truyền của Shannon",
-      "subtitle": "C = B · log₂(1 + S/N)",
-      "bandwidth": "Băng thông (B)",
-      "snr": "Tỉ số tín hiệu trên nhiễu (S/N)",
-      "payload": "Khối dữ liệu cần truyền",
-      "payloads": {
-        "word": "Một lời nói",
-        "photo": "Một bức ảnh",
-        "stream": "Một đời ý thức",
-        "connectome": "Toàn bộ connectome"
+    "aerostatic-lift-budget": {
+      "title": "Thứ giữ một quả bóng sống trên trời",
+      "subtitle": "Lực nâng mua theo mét khối; lớp da trả theo mét vuông",
+      "gasLabel": "Chọn khí nâng",
+      "gas": {
+        "hydrogen": "Hydro",
+        "helium": "Heli",
+        "methane": "Metan",
+        "ammonia": "Amoniac",
+        "hotAir": "Khí nóng"
       },
-      "capacity": "Dung lượng kênh",
-      "transferTime": "Thời gian truyền",
-      "clearedPerSecond": "thông được trong một giây",
-      "hint": "Băng thông là đòn bẩy thật sự: kéo thanh B, đáp án nhảy qua từng bậc độ lớn. Kéo thanh S/N — đổ thêm công suất thô — thì đáp án gần như đứng yên, vì dung lượng chỉ tăng theo logarit của tín hiệu. Đó là hai bài học của Shannon, cảm nhận ngay trong tay.",
-      "aria": "Dung lượng kênh {capacity}, thời gian truyền {time}",
-      "units": {
-        "instant": "tức thì",
-        "seconds": "{n} giây",
-        "minutes": "{n} phút",
-        "hours": "{n} giờ",
-        "days": "{n} ngày",
-        "years": "{n} năm"
-      }
-    },
-    "consciousBottleneck": {
-      "title": "Nút thắt cổ chai của ý thức",
-      "subtitle": "Mười một triệu bit đổ vào; chỉ vài chục bit cái tôi đi ra",
-      "firehose": "Cảm giác thô",
-      "trickle": "Cái tôi được trải nghiệm",
-      "consciousLabel": "Dòng ý thức",
-      "compressionLabel": "Tỉ lệ nén",
-      "compressionNote": "lượng cảm giác bị vứt bỏ trên mỗi bit giữ lại",
-      "lifetimeLabel": "Cả một cái tôi",
-      "lifetimeNote": "{years} năm trải nghiệm ý thức",
-      "consciousSlider": "Tốc độ ý thức",
-      "aria": "Các giác quan đổ vào mười một triệu bit mỗi giây; chỉ {conscious} chạm tới nhận thức — một tỉ lệ nén gấp {compression} lần.",
-      "hint": "Các giác quan đổ ~11 Mb/s vào hệ thần kinh, nhưng dòng chảy chạm tới nhận thức — cái tôi biết suy nghĩ và ghi nhớ — chỉ chạy ở vài chục bit mỗi giây. Kéo thanh trượt và xem cả một đời cái tôi co lại còn vài chục gigabit: đủ nhỏ, cuối cùng, để gửi qua mối liên kết trong một đêm."
-    },
-    "allometry": {
-      "title": "Ứng suất và Tương quan sinh trưởng (Allometry)",
-      "statusStable": "Bộ xương chắc chắn",
-      "statusOverloaded": "Xương bị quá tải",
-      "infoAllometric": "Allometry: Xương phát triển phi tuyến tính dày lên nhanh hơn chiều dài cơ thể để giữ cho áp lực xương không đổi.",
-      "infoIsometric": "Isometry: Xương phát triển tuyến tính. Thể tích (trọng lượng) tăng gấp 8 lần khi chiều dài gấp đôi, làm xương dễ gãy.",
-      "boneWidth": "Độ dày xương:",
-      "boneStress": "ỨNG SUẤT XƯƠNG",
-      "mass": "Khối lượng cơ thể",
-      "sizeLabel": "Hệ số tỷ lệ (k)"
-    },
-    "scaleUp": {
-      "title": "Thử thách nhân quy mô",
-      "subtitle": "Phóng to con vật và xem điều gì gãy vỡ đầu tiên",
-      "hint": "Định luật bình phương-lập phương: Diện tích (cánh) tăng theo k², nhưng thể tích (khối lượng) tăng theo k³. Tải trọng cánh tăng vọt khiến sinh vật rơi như đá.",
-      "sizeLabel": "Hệ số nhân (k)",
-      "multiple": "{n}×",
-      "wing": "Diện tích cánh",
-      "mass": "Khối lượng",
-      "loading": "Tải trọng cánh",
-      "wlUnit": "kg/m²",
-      "stallLabel": "Tốc độ chòng chành",
-      "status": {
-        "easy": "Bay lượn nhẹ nhàng",
-        "hard": "Cất cánh khó nhọc",
-        "desperate": "Bay lao dốc",
-        "grounded": "Gắn chặt xuống đất"
+      "materialLabel": "Chọn vách bao",
+      "material": {
+        "film": "Màng polymer",
+        "goldbeater": "Da bọc vàng",
+        "collagen": "Màng collagen",
+        "mesoglea": "Tầng keo dày"
       },
-      "stallNote": {
-        "easy": "Chậm, lượn tốt",
-        "hard": "Cần lấy đà nhanh",
-        "desperate": "Bay quá nhanh",
-        "grounded": "Vận tốc không tưởng"
-      }
-    },
-    "flightLab": {
-      "title": "Phòng thí nghiệm trần bay",
-      "hint": "Khi kéo trọng lực và độ đặc không khí, bạn đang trượt đường giới hạn sang phải. Những động vật từng bị Trái Đất cấm đoán nay lại có thể cất cánh.",
-      "mode": "Hành tinh",
-      "earth": "Trái Đất",
-      "pandora": "Pandora",
-      "custom": "Tùy chỉnh",
-      "massAxis": "Khối lượng →",
-      "ceiling": "Giới hạn bay",
-      "gLabel": "Trọng lực",
-      "rhoLabel": "Độ đặc không khí",
-      "ceilingLabel": "Khối lượng tối đa"
-    },
-    "flierShowdown": {
-      "title": "Bậc thang của những gã khổng lồ",
-      "subtitle": "Dựng tất cả theo cùng một tỷ lệ để thấy Trái Đất nhỏ bé thế nào",
-      "hint": "Bấm vào từng sinh vật. Pterosaur và Banshee cất cánh bằng 4 chi, giúp chúng vọt lên không trung bằng sức vóc của vai và cánh chứ không phải bằng đôi chân chết nặng.",
-      "earthCeiling": "Trần Trái Đất",
-      "spanAxis": "Sải cánh (m) →",
-      "pelagornis": "Pelagornis",
-      "argentavis": "Argentavis",
-      "quetzalcoatlus": "Quetzalcoatlus",
-      "ikran": "Ikran",
-      "toruk": "Toruk",
-      "span": "Sải cánh",
-      "mass": "Khối lượng",
-      "era": "Thời đại / Nơi sống",
-      "launch": "Cất cánh",
-      "eras": {
-        "25Mya": "Cách đây ~25 triệu năm",
-        "6Mya": "Cách đây ~6 triệu năm",
-        "68Mya": "Cách đây ~68 triệu năm",
-        "Contemporary": "Bầu trời Pandora đương đại"
+      "diameterLabel": "Đường kính bao khí",
+      "liftCurve": "Lực nâng thô",
+      "overheadCurve": "Da + nội quan",
+      "crossing": "Ngưỡng bay được",
+      "canon": {
+        "fieldGuide": "sách thực địa",
+        "caravan": "đoàn thương"
       },
-      "launches": {
-        "bipedal": "Hai chân (nhảy)",
-        "quadrupedal": "Bốn chi (chống đẩy lật ngựa)"
+      "xAxis": "Đường kính bao khí (mét, thang log)",
+      "yAxis": "Khối lượng (thang log)",
+      "hint": {
+        "flying": "Vượt qua điểm giao, lũy ba thắng lũy hai: mỗi mét đường kính tăng thêm cho lực nâng nhiều hơn cho lớp da. Đó là lý do một khí cầu không có lựa chọn nào ngoài việc phải khổng lồ, và vì sao những con vật cỡ đoàn thương chở nổi cả một làng trong khi con vật trong sách thực địa không chở nổi một ai.",
+        "grounded": "Dưới điểm giao, lũy hai thắng. Vách bao cùng khối thịt sống phía sau nó nặng hơn cả lượng khí bị chiếm chỗ có thể đỡ, nên con vật này không nâng nổi chính mình — không cách xếp đặt khí nào cứu được. Chính vì thế mà không tồn tại con bóng bay cỡ con sẻ."
+      },
+      "aria": {
+        "flying": "Đường lực nâng thô nằm trên đường chi phí, còn lại tải trọng dư",
+        "grounded": "Đường chi phí nằm trên đường lực nâng thô, nên bao khí không tự nâng nổi mình"
+      },
+      "readout": {
+        "specificLift": "Lực nâng riêng",
+        "vsHelium": "chỉ hơn heli {pct}%",
+        "grossLift": "Lực nâng thô",
+        "volume": "chứa {v} m³",
+        "overhead": "Da + nội quan",
+        "payload": "Tải trọng dư",
+        "grounded": "không bay nổi",
+        "minimumDiameter": "cần tối thiểu {d} m mới bay",
+        "households": "khoảng {n} hộ Tlalim trên khoang"
       }
     },
     "airRegime": {
@@ -235,36 +67,161 @@
       "transitionalDesc": "Bắt đầu xuất hiện các dòng xoáy không ổn định ở rìa cánh.",
       "inertialDesc": "Không khí trượt qua dễ dàng, tạo ra lực nâng tối ưu để bay lượn."
     },
-    "superconductor": {
-      "title": "Làm lạnh chất siêu dẫn",
-      "temp": "Nhiệt độ",
-      "resistance": "Điện trở",
-      "state": "Trạng thái",
-      "normal": "Kim loại thường",
-      "superconducting": "Siêu dẫn",
-      "tc": "Nhiệt độ tới hạn Tc",
-      "tempAxis": "Nhiệt độ (K) →",
-      "resAxis": "Điện trở →",
-      "play": "Làm lạnh / làm nóng",
-      "pause": "Dừng",
-      "hint": "Hạ nhiệt độ xuống dưới Tc: điện trở rơi thẳng về 0 và nam châm bị khóa lơ lửng trong không trung.",
-      "levitating": "Khóa từ thông — lơ lửng",
-      "resting": "Nằm yên trên mặt",
-      "dragToMove": "KÉO KHỐI ĐỂ DI CHUYỂN DỌC THEO ĐƯỜNG RAY",
-      "lowerToLevitate": "HẠ NHIỆT ĐỘ XUỐNG DƯỚI Tc ĐỂ BAY LÊN"
+    "allometry": {
+      "title": "Ứng suất và Tương quan sinh trưởng (Allometry)",
+      "statusStable": "Bộ xương chắc chắn",
+      "statusOverloaded": "Xương bị quá tải",
+      "infoAllometric": "Allometry: Xương phát triển phi tuyến tính dày lên nhanh hơn chiều dài cơ thể để giữ cho áp lực xương không đổi.",
+      "infoIsometric": "Isometry: Xương phát triển tuyến tính. Thể tích (trọng lượng) tăng gấp 8 lần khi chiều dài gấp đôi, làm xương dễ gãy.",
+      "boneWidth": "Độ dày xương:",
+      "boneStress": "ỨNG SUẤT XƯƠNG",
+      "mass": "Khối lượng cơ thể",
+      "sizeLabel": "Hệ số tỷ lệ (k)"
     },
-    "torukFlight": {
-      "title": "Cỗ máy mô phỏng cất cánh Toruk",
-      "subtitle": "Bật ba 'mật mã ăn gian' vật lý của Pandora để xem Toruk cất cánh",
-      "hint": "Kích hoạt các điều kiện cần thiết để biến chuyến bay của Toruk thành hiện thực.",
-      "switch1": "Không khí đặc (1.2x Trái Đất)",
-      "switch2": "Trọng lực thấp (0.8x Trái Đất)",
-      "switch3": "Cất cánh nhảy bằng bốn chi",
-      "status": "Khả năng bay",
-      "fail": "Bám đất",
-      "success": "Cất cánh",
-      "failDesc": "Vật lý Trái Đất tiêu chuẩn. Toruk quá nặng để bay hoặc cất cánh.",
-      "successDesc": "Cả ba mật mã ăn gian vật lý của Pandora đã được bật. Lực nâng cao hơn, trọng lượng nhẹ hơn, và sức bật tối đa. Toruk bay lên."
+    "biohydrogen-ledger": {
+      "title": "Khí nâng đến từ đâu",
+      "subtitle": "Tạo ra hydro thì dễ; có một cái ruột giữ lại được mới là phần khó",
+      "gutLabel": "Chọn hệ vi sinh ruột",
+      "gut": {
+        "earthLike": "Ruột kiểu Trái Đất",
+        "medusoid": "Đã chặn kẻ ăn khí"
+      },
+      "permeationLabel": "Rò qua vách",
+      "permeation": {
+        "on": "Vách rò khí",
+        "off": "Vách kín"
+      },
+      "preyLabel": "Con mồi ăn mỗi ngày",
+      "stage": {
+        "fermenter": "Khoang lên men",
+        "evolved": "sinh {v} m³ hydro mỗi ngày",
+        "bladder": "Túi nâng",
+        "capacity": "{v} m³ khi đầy"
+      },
+      "band": {
+        "sink": "Vi sinh ăn mất",
+        "sinkPct": "{pct}% lượng khí trong ngày",
+        "kept": "Đến được túi nâng",
+        "leak": "Khuếch tán ra"
+      },
+      "verdict": {
+        "holding": "Bao khí mỗi ngày dày thêm {pct}% thể tích",
+        "sinking": "Bao khí mỗi ngày hụt đi {pct}% thể tích"
+      },
+      "ceilingNote": "Ở ngưỡng nhiệt động bốn hydro trên một phân tử đường, cùng bữa ăn đó sẽ dư ra {v} m³.",
+      "hint": {
+        "earthLike": "Dạ cỏ một con bò sinh ra vài mét khối hydro mỗi ngày mà thở ra gần như không có gì. Vi khuẩn sinh metan và vi khuẩn khử sulfat tiêu thụ nó ngay khoảnh khắc nó xuất hiện — hydro là đồng tiền của khoang ruột, tiêu nhanh đúng bằng tốc độ kiếm được. Dẫn dòng ấy vào một túi nâng thì chẳng còn gì để dẫn.",
+        "medusoid": "Chặn lũ vi sinh ăn hydro thì cũng quá trình lên men ấy đột nhiên có đầu ra. Đây — chứ không phải hóa học của việc tạo khí — mới là điểm mới lạ sinh học duy nhất mà một khí cầu sống thật sự cần. Mọi thứ khác nó làm, động vật Trái Đất đã làm cả rồi."
+      },
+      "aria": {
+        "earthLike": "Gần như toàn bộ dòng hydro bị vi sinh tiêu thụ trước khi tới túi nâng",
+        "medusoid": "Phần lớn dòng hydro tới được túi nâng, chỉ còn một dải rò hẹp"
+      },
+      "readout": {
+        "delivered": "Vào túi nâng",
+        "leak": "Mất qua vách",
+        "rent": "Tiền thuê mỗi ngày",
+        "rentNote": "lượng mồi chỉ để hòa vốn",
+        "never": "không trả nổi"
+      }
+    },
+    "burning-wing": {
+      "title": "Một cánh đang cháy còn bay được bao lâu?",
+      "subtitle": "Cánh mất khả năng bay từ rất lâu trước khi nó biến mất",
+      "aria": "Mất điều khiển ở giây thứ {loc} so với cháy xuyên ở giây thứ {burn}",
+      "ignition": "Bắt lửa",
+      "phase": {
+        "denature": "Hâm tới 60 °C",
+        "boil": "Tới điểm sôi",
+        "desiccate": "Sôi cạn nước",
+        "char": "Hóa than"
+      },
+      "locMarker": "Mất điều khiển, {from}–{to} s",
+      "burnMarker": "Cháy xuyên ở {s} s",
+      "hint": "Khả năng điều khiển mất ở khoảng giây thứ {loc}, còn cháy xuyên qua màng cánh phải mất tới chừng {burn} giây - và {water} phần trăm của khoảng thời gian dài đó chỉ dùng để đun cạn nước trong mô sống. Nước là bể chứa nhiệt tuyệt vời, nên lửa cần rất lâu mới phá xong cánh. Nhưng để làm cánh hỏng thì nó gần như không cần thời gian: collagen bung xoắn ở 58–65 °C rồi co rút mạnh dọc theo bó sợi, và một màng cánh nhăn nhúm ở một bên là cú lật mà con vật không thể chỉnh lại.",
+      "readout": {
+        "loc": "Mất điều khiển",
+        "locValue": "{from}–{to} s",
+        "locNote": "Collagen co rút, cú lật vượt tầm chỉnh",
+        "burn": "Cháy xuyên",
+        "seconds": "{s} s",
+        "burnNote": "{water}% chỉ để đun cạn nước",
+        "biot": "Số Biot",
+        "biotThin": "Mỏng về nhiệt - nóng đều suốt bề dày",
+        "biotThick": "Đủ dày để giữ một chênh lệch nhiệt"
+      },
+      "slider": {
+        "thickness": "Bề dày màng cánh",
+        "thicknessValue": "{v} mm",
+        "flux": "Nhiệt nhận được"
+      }
+    },
+    "cohesionTension": {
+      "title": "Lực kéo - bám (Cohesion-Tension)",
+      "subtitle": "Sức căng của cột nước dưới lực kéo thoát hơi nước",
+      "sunLabel": "Tốc độ thoát hơi nước",
+      "tensionLabel": "Sức căng cột nước",
+      "stateLabel": "Trạng thái cột nước",
+      "stateStable": "Ổn định (Dòng chảy liên tục)",
+      "stateSnapped": "Đứt gãy (Hiện tượng Cavitation)",
+      "heightLabel": "Chiều cao cây",
+      "hint": "Cây không có bơm chủ động: lá thoát hơi nước để kéo các phân tử nước phía sau lên. Nắng gắt hoặc chiều cao quá lớn sẽ kéo căng cột nước. Vượt quá giới hạn, cột nước sẽ đứt gãy và dừng dòng chảy."
+    },
+    "combustion-budget": {
+      "title": "Không khí này có muốn cháy không?",
+      "subtitle": "Ngọn lửa chỉ sống được khi nó sinh nhiệt nhanh hơn tốc độ môi trường lấy nhiệt đi",
+      "presetLabel": "Chọn một khí quyển",
+      "preset": {
+        "earth": "Khí Trái Đất",
+        "pandora": "Khí Pandora"
+      },
+      "fuelBed": "Lớp nhiên liệu",
+      "airstream": "Luồng khí",
+      "loss": {
+        "diluent": "Nhiệt bị khí pha loãng hút vào",
+        "convective": "Nhiệt bị luồng khí cuốn đi"
+      },
+      "aria": "Ngọn lửa ở {speed} phần trăm tốc độ cháy trong khí Trái Đất và {temp} kelvin",
+      "hint": {
+        "readily": "Không khí này nuôi lửa gần như khí Trái Đất: đủ oxy để chuỗi gốc tự do tiếp tục phân nhánh, và ít khí pha loãng nên phần lớn nhiệt phản ứng vẫn nằm trong ngọn lửa.",
+        "reluctant": "Lửa vẫn bắt, nhưng bắt một cách khó khăn. CO₂ là phân tử ba nguyên tử, có nhiều cách tích trữ năng lượng hơn nitơ, nên nó uống bớt nhiệt phản ứng và hạ nhiệt độ ngọn lửa - mà lửa nguội thì làm bén nhiên liệu bên cạnh chậm hơn nhiều.",
+        "marginal": "Gần như không cháy được. Oxy thì mỏng, khí pha loãng thì hút nhiệt, nên ngọn lửa không còn kịp hâm nóng phần nhiên liệu phía trước để tự nuôi mình.",
+        "blownOff": "Bị thổi tắt. Luồng khí lúc này cuốn nhiệt đi nhanh hơn tốc độ phản ứng bù lại - chất phản ứng bị quét khỏi vùng lửa trước khi kịp phản ứng xong, và ngọn lửa đơn giản là dừng. Đây chính là lý do một bó đuốc để trần không thể sống nổi ở tốc độ bay."
+      },
+      "readout": {
+        "flameSpeed": "Tốc độ cháy",
+        "flameSpeedNote": "So với tốc độ trong khí Trái Đất",
+        "flameTemp": "Nhiệt độ ngọn lửa",
+        "flameTempNote": "Nguội hơn khí Trái Đất {delta} K",
+        "verdict": "Không khí này",
+        "verdictNote": "Lửa bắt và lan dễ đến mức nào"
+      },
+      "verdict": {
+        "readily": "Cháy dễ dàng",
+        "reluctant": "Cháy khó khăn",
+        "marginal": "Gần như không cháy",
+        "blownOff": "Lửa bị thổi tắt"
+      },
+      "slider": {
+        "o2": "Oxy trong không khí",
+        "co2": "Carbon dioxide trong không khí",
+        "wind": "Tốc độ khí lướt qua ngọn lửa",
+        "windValue": "{v} m/s"
+      }
+    },
+    "consciousBottleneck": {
+      "title": "Nút thắt cổ chai của ý thức",
+      "subtitle": "Mười một triệu bit đổ vào; chỉ vài chục bit cái tôi đi ra",
+      "firehose": "Cảm giác thô",
+      "trickle": "Cái tôi được trải nghiệm",
+      "consciousLabel": "Dòng ý thức",
+      "compressionLabel": "Tỉ lệ nén",
+      "compressionNote": "lượng cảm giác bị vứt bỏ trên mỗi bit giữ lại",
+      "lifetimeLabel": "Cả một cái tôi",
+      "lifetimeNote": "{years} năm trải nghiệm ý thức",
+      "consciousSlider": "Tốc độ ý thức",
+      "aria": "Các giác quan đổ vào mười một triệu bit mỗi giây; chỉ {conscious} chạm tới nhận thức — một tỉ lệ nén gấp {compression} lần.",
+      "hint": "Các giác quan đổ ~11 Mb/s vào hệ thần kinh, nhưng dòng chảy chạm tới nhận thức — cái tôi biết suy nghĩ và ghi nhớ — chỉ chạy ở vài chục bit mỗi giây. Kéo thanh trượt và xem cả một đời cái tôi co lại còn vài chục gigabit: đủ nhỏ, cuối cùng, để gửi qua mối liên kết trong một đêm."
     },
     "cooper-pair": {
       "title": "Cặp Cooper",
@@ -315,6 +272,91 @@
       "water": "Nước",
       "superconductor": "Siêu dẫn"
     },
+    "dynamicSoaring": {
+      "title": "Lượn động (Dynamic Soaring)",
+      "subtitle": "Khai thác động năng từ gradient tốc độ gió",
+      "windGradient": "Tốc độ gió (gradient)",
+      "energyLabel": "Năng lượng thu được",
+      "altitudeLabel": "Độ cao",
+      "modeLabel": "Pha bay",
+      "phaseAscent": "Bay lên (thu năng lượng)",
+      "phaseDescent": "Lao xuống (tăng tốc độ)",
+      "seaLevel": "Mặt biển (Gió lặng)",
+      "windShear": "Lực xén gió",
+      "hint": "Lượn động hoạt động bằng cách bay qua lại giữa các lớp gió có tốc độ khác nhau. Bằng cách bay lên lớp gió mạnh (thu năng lượng) và lao xuống sát mặt biển lặng gió (tăng tốc), cánh chim hấp thụ năng lượng gió để lượn vô tận mà không cần vỗ cánh."
+    },
+    "edge-toughness": {
+      "title": "Lưỡi sắc nhất cũng là lưỡi mong manh nhất",
+      "subtitle": "Chính cái giúp vật liệu tách ra thật gọn là cái khiến nó không sống nổi cú đánh thứ hai",
+      "aria": "Độ sắc của lưỡi đặt cạnh độ bền phá hủy của năm vật liệu làm vũ khí",
+      "material": {
+        "glass": "Thủy tinh núi lửa",
+        "chert": "Đá lửa đã tôi nhiệt",
+        "bone": "Xương",
+        "steel": "Thép tôi cứng",
+        "salvage": "Kim loại thu hồi gò nguội"
+      },
+      "xAxis": "Bán kính lưỡi - càng nhỏ càng sắc",
+      "yAxis": "Độ bền phá hủy (MPa·m^½)",
+      "hint": {
+        "glass": "Một lưỡi chỉ vài nanomet, mảnh hơn dao mổ bằng thép cả một bậc độ lớn, mà làm ra thì chẳng tốn gì ngoài một cú đập đúng chỗ. Cái giá nằm ngay trong con số độ bền: không có mặt tinh thể, không có chút biến dạng dẻo nào, nên một vết nứt khởi đầu ở đâu cũng chạy đi khắp nơi. Tuyệt vời trên mô mềm, và kết thúc ngay khi gặp xương.",
+        "chert": "Hâm đá silic tới vài trăm độ sẽ đẩy nước ra khỏi khoảng giữa các tinh thể, cho nó bong vảy gần gọn như thủy tinh mà vẫn giữ gần gấp đôi độ bền. Bước cải tiến vật liệu đầu tiên trong lịch sử hoàn toàn dựa vào nhiệt.",
+        "bone": "Cùn theo mọi thang đo ở đây, và cũng khoan dung nhất. Xương là vật liệu tổ hợp, nên một vết nứt phải len qua lần lượt khoáng chất rồi protein - và đó đúng là điều làm nó thành lựa chọn hợp lý cho cán và thân, chứ không phải cho mũi nhọn.",
+        "steel": "Cùn hơn thủy tinh hơn mười lần, và khó vỡ hơn bốn mươi lần. Kim loại biến dạng trước khi tách, nên vết nứt phải liên tục được tiếp năng lượng mới đi tiếp được. Cái bẫy nằm ở lò: lưỡi này ngoài tầm với của bất kỳ ai không có chừng 1.500 °C.",
+        "salvage": "Vật liệu bền nhất trên đồ thị, mà có được không cần lò nào cả. Gò nguội hợp kim hàng không thì nó cứng lên vì các sai lệch mạng bên trong rối vào nhau; hâm lên vài trăm độ thì chúng gỡ ra, và vật liệu lại dễ gia công. Không bao giờ nóng chảy, không bao giờ đúc - và cũng không bao giờ sắc bằng thủy tinh."
+      },
+      "readout": {
+        "edge": "Bán kính lưỡi",
+        "edgeNano": "{v} nm",
+        "edgeMicron": "{v} µm",
+        "edgeNote": "Lưỡi mảnh nhất nó cho được",
+        "toughness": "Độ bền phá hủy",
+        "toughnessNote": "Khả năng cản một vết nứt đang chạy",
+        "strikes": "Số cú đánh mạnh chịu được",
+        "strikesOne": "Một",
+        "forgeNone": "Không cần lò",
+        "forgeNote": "Cần chừng {c} °C"
+      }
+    },
+    "flierShowdown": {
+      "title": "Bậc thang của những gã khổng lồ",
+      "subtitle": "Dựng tất cả theo cùng một tỷ lệ để thấy Trái Đất nhỏ bé thế nào",
+      "hint": "Bấm vào từng sinh vật. Pterosaur và Banshee cất cánh bằng 4 chi, giúp chúng vọt lên không trung bằng sức vóc của vai và cánh chứ không phải bằng đôi chân chết nặng.",
+      "earthCeiling": "Trần Trái Đất",
+      "spanAxis": "Sải cánh (m) →",
+      "pelagornis": "Pelagornis",
+      "argentavis": "Argentavis",
+      "quetzalcoatlus": "Quetzalcoatlus",
+      "ikran": "Ikran",
+      "toruk": "Toruk",
+      "span": "Sải cánh",
+      "mass": "Khối lượng",
+      "era": "Thời đại / Nơi sống",
+      "launch": "Cất cánh",
+      "eras": {
+        "25Mya": "Cách đây ~25 triệu năm",
+        "6Mya": "Cách đây ~6 triệu năm",
+        "68Mya": "Cách đây ~68 triệu năm",
+        "Contemporary": "Bầu trời Pandora đương đại"
+      },
+      "launches": {
+        "bipedal": "Hai chân (nhảy)",
+        "quadrupedal": "Bốn chi (chống đẩy lật ngựa)"
+      }
+    },
+    "flightLab": {
+      "title": "Phòng thí nghiệm trần bay",
+      "hint": "Khi kéo trọng lực và độ đặc không khí, bạn đang trượt đường giới hạn sang phải. Những động vật từng bị Trái Đất cấm đoán nay lại có thể cất cánh.",
+      "mode": "Hành tinh",
+      "earth": "Trái Đất",
+      "pandora": "Pandora",
+      "custom": "Tùy chỉnh",
+      "massAxis": "Khối lượng →",
+      "ceiling": "Giới hạn bay",
+      "gLabel": "Trọng lực",
+      "rhoLabel": "Độ đặc không khí",
+      "ceilingLabel": "Khối lượng tối đa"
+    },
     "flux-pinning": {
       "title": "Ghim từ thông",
       "category": "Vật lý",
@@ -328,6 +370,19 @@
       "somePins": "vài ghim",
       "manyPins": "nhiều ghim"
     },
+    "froudeDial": {
+      "title": "Mặt số dáng đi Froude",
+      "gravity": "Trọng lực",
+      "earth": "Trái Đất",
+      "pandora": "Pandora",
+      "legLabel": "Chiều dài chân",
+      "walkTrot": "Đi bộ → chạy nước kiệu",
+      "gallop": "Ngưỡng phi nước đại",
+      "frNote": "tại Fr ≈ 0,5",
+      "gallopNote": "tại Fr ≈ 1,0",
+      "range": "0–{max} km/h",
+      "hint": "Với cùng chiều dài chân, trọng lực thấp hơn của Pandora kéo mọi chuyển đổi dáng đi xuống vận tốc thấp hơn. Pa'li sớm chuyển sang dáng chạy nảy như lò xo hiệu quả hơn — và mỗi lần tiếp đất cũng êm hơn."
+    },
     "hallelujah-mountains": {
       "title": "Dãy núi Hallelujah",
       "category": "Pandora",
@@ -337,6 +392,67 @@
       "pinned": "Đã ghim",
       "pinnedPullsBack": "Bị ghim — các ống từ thông kéo nó về",
       "stableEquilibrium": "Khóa trong cân bằng ổn định, tự điều chỉnh"
+    },
+    "hydraulicLimit": {
+      "title": "Bức trần thủy lực",
+      "subtitle": "Kéo chiều cao lên để xem cột nước kéo căng đến mức nào",
+      "hint": "Chuyển sang Pandora: trọng lực thấp làm cột nước nhẹ đi, và không khí dày CO2 giúp cây giữ nước. Cả hai mặt của phương trình đều dịch chuyển, và bức trần được nâng lên.",
+      "worldLabel": "Thế giới",
+      "earth": "Trái Đất",
+      "pandora": "Pandora",
+      "ceiling": "Trần",
+      "hyperion": "Redwood",
+      "hometree": "Hometree",
+      "snap": "Đứt cột nước!",
+      "heightAxis": "Chiều cao (m)",
+      "turgorAxis": "Sức căng",
+      "gravityLabel": "Trọng lực",
+      "gravityNote": "nhẹ hơn = dễ kéo",
+      "atmoLabel": "Khí quyển",
+      "atmoNote": "đặc hơn = ít mất nước",
+      "heightLabel": "Chiều cao cây",
+      "turgorLabel": "Sức sống lá ngọn",
+      "dead": "Chết khô",
+      "snapNote": "áp suất âm",
+      "turgorNote": "sức căng tế bào",
+      "verdictOver": "Quá giới hạn. Cột nước đứt gãy, lá không thể trương lên. Cây không thể cao hơn.",
+      "verdictOk": "Hệ thống vẫn nguyên vẹn. Lá vẫn có thể hút nước và phát triển."
+    },
+    "hydrogen-flammability-window": {
+      "title": "Cửa sổ để cháy rộng đến đâu?",
+      "subtitle": "Hydro bắt lửa trong một khoảng cực rộng — cho đến khi có thứ gì uống hết nhiệt",
+      "presetLabel": "Chọn bầu khí quyển",
+      "preset": {
+        "earth": "Khí Trái Đất",
+        "pandora": "Khí Pandora",
+        "custom": "Tự đặt"
+      },
+      "co2Label": "Lượng CO₂ trong không khí",
+      "scaleLabel": "Hydro trộn vào không khí",
+      "dryBand": "khoảng cháy trong khí Trái Đất",
+      "burns": "hỗn hợp này bắt lửa",
+      "noBurn": "không hỗn hợp nào bắt lửa",
+      "xAxis": "Nồng độ hydro (% theo thể tích)",
+      "hint": {
+        "flammable": "Khoảng cháy của hydro rộng đến khác thường và cần gần như không gì để châm — một tia lửa không cảm nhận được cũng đủ. Carbon dioxide bóp hẹp cửa sổ từ đầu giàu nhiên liệu, bởi một phân tử ba nguyên tử tích trữ được nhiều nhiệt phản ứng hơn nitơ. Khí Pandora ở điểm này thật sự dung thứ hơn khí Trái Đất. Nhưng không dung thứ đủ để một mũi tên lửa trở nên an toàn.",
+        "inert": "Vượt qua mức pha loãng này thì hai giới hạn gặp nhau và cửa sổ đóng lại: không tỷ lệ hydro nào trong thứ không khí này còn dẫn được ngọn lửa. Dập lửa là chuyện đạt tới điểm này, chứ không phải chuyện dẹp sạch mọi tia lửa."
+      },
+      "aria": {
+        "flammable": "Cửa sổ cháy từ {lean} đến {rich} phần trăm hydro",
+        "inert": "Cửa sổ cháy đã đóng; không hỗn hợp nào bắt lửa"
+      },
+      "readout": {
+        "width": "Bề rộng cửa sổ",
+        "closed": "đã đóng",
+        "narrowing": "hẹp hơn {pct}% so với khí Trái Đất",
+        "mie": "Tia lửa cần thiết",
+        "mieNote": "một cú phóng tĩnh điện còn lớn hơn nhiều",
+        "verdict": "Kết luận",
+        "safe": "Không bắt lửa",
+        "ignitable": "Bắt lửa dễ dàng",
+        "safeNote": "chất pha loãng đã đóng cửa sổ",
+        "ignitableNote": "một hòn than là quá đủ"
+      }
     },
     "meissner-effect": {
       "title": "Hiệu ứng Meissner",
@@ -351,6 +467,33 @@
       "normal": "Thường",
       "belowTc": "dưới Tc",
       "aboveTc": "trên Tc"
+    },
+    "occamsRazor": {
+      "title": "Dao cạo Occam",
+      "subtitle": "Cân đo các lời giải thích cạnh tranh",
+      "hint": "Điều chỉnh số lượng giả định chưa được chứng minh. Lưỡi dao sẽ cắt bỏ lý thuyết nào đòi hỏi quá nhiều phép màu.",
+      "theoryA": "Lý thuyết A",
+      "theoryB": "Lý thuyết B",
+      "assumptions": "giả định",
+      "verdict": "Kết luận",
+      "verdictA": "Lý thuyết A vững chắc hơn",
+      "verdictB": "Lý thuyết B vững chắc hơn",
+      "verdictTie": "Bất phân thắng bại",
+      "noteA": "Dựa trên ít niềm tin mù quáng hơn.",
+      "noteB": "Dựa trên ít niềm tin mù quáng hơn.",
+      "noteTie": "Không thể phân định chỉ dựa vào sự tối giản.",
+      "theoryADesc": "Giải thích Tự nhiên",
+      "theoryBDesc": "Giả thuyết Phức tạp",
+      "shavedStatus": "✗ BỊ CẮT BỎ (QUÁ PHỨC TẠP)",
+      "plausibleStatus": "✓ KHẢ THI (HỢP LÝ)",
+      "assumptionsList": {
+        "active": "Banshee kiếm ăn tại khu vực này",
+        "hungry": "Banshee đang đói (săn mồi)",
+        "drones": "RDA đã triển khai drone tàng hình",
+        "paint": "Drone bị rò rỉ hóa chất phát quang màu lam",
+        "stealth": "Drone cố tình bẻ gãy cành cây để đánh dấu",
+        "wind": "Cơn bão lớn đã thổi bay drone đến đây mà không bị phát hiện"
+      }
     },
     "quantum-locking": {
       "title": "Khóa lượng tử",
@@ -367,6 +510,125 @@
       "tilted": "nghiêng",
       "inverted": "lật ngược"
     },
+    "radiant-dose": {
+      "title": "Lửa với tới những gì nó chưa hề chạm",
+      "subtitle": "Nhiệt bức xạ tăng theo lũy thừa bốn của nhiệt độ và loãng dần theo khoảng cách",
+      "aria": "Thông lượng bức xạ {flux} kilowatt trên mét vuông ở cách ngọn lửa {dist} mét",
+      "threshold": {
+        "pain": "Đau rát",
+        "blister": "Phồng rộp",
+        "ignition": "Gỗ bắt lửa",
+        "autoignition": "Tự bùng lên không cần mồi"
+      },
+      "distMax": "8 m",
+      "xAxis": "Khoảng cách tới ngọn lửa",
+      "yAxis": "Nhiệt nhận được (kW/m²)",
+      "hint": {
+        "none": "Dưới ngưỡng xảy ra bất cứ điều gì. Nhiệt vẫn đến, nhưng chậm đến mức da và nhiên liệu thải nó đi kịp ngay khi nó vừa tới.",
+        "pain": "Đủ để đau sau khoảng nửa phút, và không hơn. Nắng gắt nhất cũng chỉ mang tới chừng một nửa mức này.",
+        "blister": "Ngưỡng phải rút lui. Da phồng rộp trong mười đến mười lăm giây, nên lính cứu hỏa coi mức này là vạch không được đứng sau.",
+        "ignition": "Đến đây thì gỗ khô và vải bắt lửa chỉ cần một tia hay một hòn than bay tới - không cần ngọn lửa nào chạm vào chúng. Đây chính là thông lượng đưa một đám cháy đi khắp cánh rừng, truyền qua khoảng không.",
+        "autoignition": "Nóng đến mức nhiên liệu khô bùng lên trong vài giây mà không cần nguồn mồi nào. Không sinh vật hữu cơ nào đứng trong mức này mà sống."
+      },
+      "readout": {
+        "flux": "Nhiệt nhận được",
+        "fluxNote": "Thông lượng bức xạ tại đích",
+        "dose": "Thời gian tới phồng rộp",
+        "doseValue": "{s} s",
+        "doseSafe": "Còn chịu được",
+        "doseNote": "Tổn thương cần cả thông lượng và thời gian",
+        "outcome": "Điều xảy ra",
+        "outcomeNote": "Ngưỡng cao nhất mà thông lượng này vượt qua"
+      },
+      "outcome": {
+        "none": "Không gì cả",
+        "pain": "Đau, chưa tổn thương",
+        "blister": "Bỏng trong vài giây",
+        "ignition": "Nhiên liệu bắt lửa",
+        "autoignition": "Nhiên liệu khô tự bùng"
+      },
+      "slider": {
+        "temp": "Nhiệt độ ngọn lửa",
+        "dist": "Khoảng cách tới đích",
+        "distValue": "{v} m"
+      }
+    },
+    "scaleUp": {
+      "title": "Thử thách nhân quy mô",
+      "subtitle": "Phóng to con vật và xem điều gì gãy vỡ đầu tiên",
+      "hint": "Định luật bình phương-lập phương: Diện tích (cánh) tăng theo k², nhưng thể tích (khối lượng) tăng theo k³. Tải trọng cánh tăng vọt khiến sinh vật rơi như đá.",
+      "sizeLabel": "Hệ số nhân (k)",
+      "multiple": "{n}×",
+      "wing": "Diện tích cánh",
+      "mass": "Khối lượng",
+      "loading": "Tải trọng cánh",
+      "wlUnit": "kg/m²",
+      "stallLabel": "Tốc độ chòng chành",
+      "status": {
+        "easy": "Bay lượn nhẹ nhàng",
+        "hard": "Cất cánh khó nhọc",
+        "desperate": "Bay lao dốc",
+        "grounded": "Gắn chặt xuống đất"
+      },
+      "stallNote": {
+        "easy": "Chậm, lượn tốt",
+        "hard": "Cần lấy đà nhanh",
+        "desperate": "Bay quá nhanh",
+        "grounded": "Vận tốc không tưởng"
+      }
+    },
+    "shannonChannel": {
+      "title": "Giới hạn kênh truyền của Shannon",
+      "subtitle": "C = B · log₂(1 + S/N)",
+      "bandwidth": "Băng thông (B)",
+      "snr": "Tỉ số tín hiệu trên nhiễu (S/N)",
+      "payload": "Khối dữ liệu cần truyền",
+      "payloads": {
+        "word": "Một lời nói",
+        "photo": "Một bức ảnh",
+        "stream": "Một đời ý thức",
+        "connectome": "Toàn bộ connectome"
+      },
+      "capacity": "Dung lượng kênh",
+      "transferTime": "Thời gian truyền",
+      "clearedPerSecond": "thông được trong một giây",
+      "hint": "Băng thông là đòn bẩy thật sự: kéo thanh B, đáp án nhảy qua từng bậc độ lớn. Kéo thanh S/N — đổ thêm công suất thô — thì đáp án gần như đứng yên, vì dung lượng chỉ tăng theo logarit của tín hiệu. Đó là hai bài học của Shannon, cảm nhận ngay trong tay.",
+      "aria": "Dung lượng kênh {capacity}, thời gian truyền {time}",
+      "units": {
+        "instant": "tức thì",
+        "seconds": "{n} giây",
+        "minutes": "{n} phút",
+        "hours": "{n} giờ",
+        "days": "{n} ngày",
+        "years": "{n} năm"
+      }
+    },
+    "shannonEntropy": {
+      "title": "Entropy Shannon",
+      "subtitle": "Độ bất định và lượng thông tin của đồng xu thiên lệch",
+      "probLabel": "Xác suất mặt Ngửa (p)",
+      "entropyLabel": "Entropy (H)",
+      "flipBtn": "Tung đồng xu",
+      "streamLabel": "Chuỗi kết quả",
+      "hint": "Ở p = 0.5, đồng xu hoàn toàn công bằng và độ bất định đạt cực đại tại 1.0 bit entropy mỗi lần tung. Ở p = 0.0 hoặc 1.0, kết quả hoàn toàn chắc chắn, mang lại 0 bit thông tin vì không có kiến thức mới nào được tạo ra."
+    },
+    "squareCubeLaw": {
+      "title": "Định luật bình phương - lập phương",
+      "subtitle": "Khối lượng tăng nhanh hơn diện tích khi phóng to",
+      "scaleSlider": "Tỉ lệ phóng to",
+      "heightLabel": "Hệ số chiều cao",
+      "areaLabel": "Diện tích bề mặt (x²)",
+      "volumeLabel": "Khối lượng/Thể tích (x³)",
+      "limitLabel": "Giới hạn ứng suất xương",
+      "statusLabel": "Trạng thái bộ xương",
+      "statusStable": "Ổn định",
+      "statusStrained": "Căng thẳng (Cần sự thích nghi của Na'vi)",
+      "statusCrushed": "Đổ vỡ (Xương người thường gãy)",
+      "hint": "Gấp đôi chiều cao, bạn có diện tích mặt cắt cơ/xương tăng gấp 4 nhưng khối lượng phải nâng đỡ tăng gấp 8. Ứng suất xương tăng tuyến tính theo kích thước. Đó là lý do người Na'vi có xương gia cố sợi carbon, và sinh vật khổng lồ không thể có tỷ lệ giống người.",
+      "gridLabel": "Lớp lưới biểu diễn thể tích",
+      "humanBone": "Xương người thường",
+      "naviBone": "Xương Na'vi gia cố"
+    },
     "superconductivity": {
       "title": "Tính siêu dẫn",
       "category": "Vật lý",
@@ -379,6 +641,24 @@
       "decays": "Điện trở trở lại — dòng tắt dần",
       "belowTc": "dưới Tc",
       "aboveTc": "trên Tc"
+    },
+    "superconductor": {
+      "title": "Làm lạnh chất siêu dẫn",
+      "temp": "Nhiệt độ",
+      "resistance": "Điện trở",
+      "state": "Trạng thái",
+      "normal": "Kim loại thường",
+      "superconducting": "Siêu dẫn",
+      "tc": "Nhiệt độ tới hạn Tc",
+      "tempAxis": "Nhiệt độ (K) →",
+      "resAxis": "Điện trở →",
+      "play": "Làm lạnh / làm nóng",
+      "pause": "Dừng",
+      "hint": "Hạ nhiệt độ xuống dưới Tc: điện trở rơi thẳng về 0 và nam châm bị khóa lơ lửng trong không trung.",
+      "levitating": "Khóa từ thông — lơ lửng",
+      "resting": "Nằm yên trên mặt",
+      "dragToMove": "KÉO KHỐI ĐỂ DI CHUYỂN DỌC THEO ĐƯỜNG RAY",
+      "lowerToLevitate": "HẠ NHIỆT ĐỘ XUỐNG DƯỚI Tc ĐỂ BAY LÊN"
     },
     "superposition": {
       "title": "Nguyên lý chồng chất",
@@ -403,6 +683,53 @@
       "siltstone": "Đá bột kết",
       "topsoil": "Lớp đất mặt",
       "selectBed": "chọn lớp"
+    },
+    "torukFlight": {
+      "title": "Cỗ máy mô phỏng cất cánh Toruk",
+      "subtitle": "Bật ba 'mật mã ăn gian' vật lý của Pandora để xem Toruk cất cánh",
+      "hint": "Kích hoạt các điều kiện cần thiết để biến chuyến bay của Toruk thành hiện thực.",
+      "switch1": "Không khí đặc (1.2x Trái Đất)",
+      "switch2": "Trọng lực thấp (0.8x Trái Đất)",
+      "switch3": "Cất cánh nhảy bằng bốn chi",
+      "status": "Khả năng bay",
+      "fail": "Bám đất",
+      "success": "Cất cánh",
+      "failDesc": "Vật lý Trái Đất tiêu chuẩn. Toruk quá nặng để bay hoặc cất cánh.",
+      "successDesc": "Cả ba mật mã ăn gian vật lý của Pandora đã được bật. Lực nâng cao hơn, trọng lượng nhẹ hơn, và sức bật tối đa. Toruk bay lên."
+    },
+    "towed-aerostat-power": {
+      "title": "Một quả bóng không có hướng đi",
+      "subtitle": "Trôi thì miễn phí; đi đến đâu đó phải trả bằng lũy ba của tốc độ",
+      "bodyLabel": "Chọn dạng thân",
+      "body": {
+        "bluff": "Chuông cùn",
+        "streamlined": "Thân thoát nước"
+      },
+      "towLabel": "Cách đàn kéo bay",
+      "tow": {
+        "static": "Dây kéo thẳng",
+        "crosswind": "Vòng cắt ngang gió"
+      },
+      "speedLabel": "Tốc độ cắt ngang gió",
+      "teamLine": "Sức của tám con kéo",
+      "speedMax": "12 m/s",
+      "xAxis": "Tốc độ so với khối khí xung quanh (m/s)",
+      "yAxis": "Công suất cần thiết",
+      "hint": {
+        "drifting": "Ở mức không, khí cầu chỉ đơn giản là một phần của không khí. Nó không cảm nhận gió, không cần công suất, và có thể trôi hàng tháng — nhưng nó cũng không có bánh lái, vì một bánh lái cần thứ gì đó để đạp vào. Độ cao là cách điều hướng duy nhất mà một quả bóng tự do sở hữu.",
+        "feasible": "Một nhóm nhỏ vài con kéo là xoay xở được. Hãy để ý đoàn thương di chuyển êm đến mức nào: tốc độ đi bộ, và nó cứ ở tốc độ đi bộ, bởi mỗi phần tăng thêm của tốc độ đắt hơn hẳn phần trước.",
+        "impossible": "Đến đây thì phép tính đổ vỡ. Công suất tăng theo lũy ba của tốc độ, nên nhịp đi này cần một đàn mà không tộc nào nuôi nổi. Một chiếc khí cầu sống chậm không phải vì chẳng ai nghĩ đến việc đi nhanh hơn — nó chậm vì nhanh hơn là thứ không kham được."
+      },
+      "aria": "Cần khoảng {n} con kéo ở tốc độ {v} mét mỗi giây",
+      "readout": {
+        "drag": "Lực cản",
+        "power": "Công suất cần",
+        "cubeNote": "tăng gấp đôi tốc độ tốn gấp tám lần mức này",
+        "windrays": "Số windray cần",
+        "none": "không cần",
+        "driftNote": "trôi thì chẳng tốn gì",
+        "perAnimal": "mỗi con cho khoảng 2 kW lực đẩy"
+      }
     },
     "type-ii-superconductor": {
       "title": "Chất siêu dẫn loại II",

@@ -344,6 +344,147 @@
       "cloudCooling": "Mây làm mát",
       "seaWarming": "Hâm nóng biển",
       "tooFar": "quá xa"
+    },
+    "wind-layer-router": {
+      "title": "Bạn đang ở dòng sông nào?",
+      "subtitle": "Đoàn thương thuyền không thể chống lại gió — chỉ có thể chọn độ cao",
+      "control": "Tầng bay",
+      "kmValue": "{n} km",
+      "staffAria": "Cột gió thẳng đứng: mỗi vạch ở một độ cao chỉ hướng dòng khí tầng đó chảy, ngắn và hướng tây gần mặt đất, dài và hướng đông trong dòng xiết trên cao",
+      "mapAria": "Vết đường đi trên mặt đất sau {days} ngày trôi ở tầng đã chọn",
+      "stratum": {
+        "surface": "Tầng ma sát",
+        "trade": "Tín phong tầng thấp",
+        "middle": "Khoảng chết ở giữa",
+        "westerly": "Dòng tây",
+        "jet": "Lõi dòng xiết"
+      },
+      "hint": {
+        "surface": "Dưới này ma sát níu lấy dòng khí, làm nó chậm lại và xoay hướng lệch khỏi dòng chảy phía trên. Bạn đi về tây, chậm, và còn thấy được mặt đất — vì thế các đoàn thương thuyền khởi hành từ tầng này nhưng hầu như không giao thương trong nó.",
+        "trade": "Dải gió đông tầng thấp ổn định: đáng tin, vừa phải, và hướng về tây. Một đoàn không bao giờ leo cao sẽ vòng quanh mặt trăng trong tầng này, theo đường dài nhất, và đến mọi điểm hẹn đều muộn.",
+        "middle": "Gió ở đây yếu và hướng thì thất thường — tầng nằm giữa hai băng chuyền, nơi đoàn thương thuyền gần như không tiến được về đâu. Các hoa tiêu băng qua nó, chứ không nấn ná trong nó.",
+        "westerly": "Trên điểm đảo chiều, dòng khí đã quay ngược lại và mạnh lên. Đây là tầng làm việc cho một chặng hướng đông: đủ nhanh để có ý nghĩa, đủ êm để giữ đội hình.",
+        "jet": "Lõi dòng xiết. Nhanh gấp bốn lần tín phong và gần như thẳng hướng đông — đoàn nào tìm được nó sẽ băng qua trong vài ngày cái khoảng cách mà tầng thấp phải mất cả một mùa. Giá phải trả là cú leo cao, và sự nhiễu động ở hai rìa."
+      },
+      "groundLabel": "Mặt đất",
+      "tropopauseLabel": "Đỉnh tầng đối lưu",
+      "staffCaption": "độ dài vạch = tốc độ",
+      "equator": "Xích đạo",
+      "mapCaption": "trôi {days} ngày",
+      "degValue": "{n}°",
+      "msValue": "{n} m/s",
+      "nowhere": "Chẳng tới đâu",
+      "circuitsEast": "{n} vòng về đông",
+      "circuitsWest": "{n} vòng về tây",
+      "readout": {
+        "heading": "Chảy về hướng",
+        "speed": "Tốc độ gió",
+        "arrival": "Sau một tháng"
+      }
+    },
+    "jet-meander": {
+      "title": "Khi bầu trời ngừng đổi mới",
+      "subtitle": "Dòng xiết luôn uốn khúc; đôi khi khúc uốn đứng yên",
+      "control": {
+        "wavenumber": "Số sóng quanh vòng vĩ tuyến",
+        "meanFlow": "Dòng chảy trung bình mang chúng đi"
+      },
+      "waveValue": "{n} sóng",
+      "msValue": "{n} m/s",
+      "kmValue": "{n} km",
+      "aria": {
+        "progressive": "Dải dòng xiết uốn nhẹ, trôi đều về đông ngang qua đoàn thương thuyền đứng yên",
+        "stalling": "Dải dòng xiết uốn sâu dần, bò rất chậm qua bản đồ, gần như bất động",
+        "blocked": "Dải dòng xiết uốn gãy sâu, khóa cứng tại chỗ ngay trên đầu đoàn thương thuyền"
+      },
+      "hint": {
+        "progressive": "Dòng chảy mang khối sóng về đông nhanh hơn tốc độ sóng tự lan về tây, nên các rãnh và sống áp lần lượt quét qua. Thời tiết liên tục đổi mới, và đoàn thương thuyền chỉ cần chờ vài ngày là có tầng gió mình muốn.",
+        "stalling": "Hai tốc độ gần như triệt tiêu nhau. Khối sóng đã chậm lại thành một nhịp bò và bắt đầu khuếch đại — đúng kiểu bầu trời làm hoa tiêu bồn chồn, vì thứ đang ở trên đầu lúc này có thể vẫn còn nguyên đó tuần sau.",
+        "blocked": "Sóng đã đứng yên và uốn gãy. Một áp cao đình trệ ngồi ngay trên đoàn thương thuyền, dòng xiết tách làm hai nhánh vòng quanh nó, và không còn tầng gió nhanh nào để leo vào. Đây chính là kiểu thất bại khiến cả hạm đội mắc cạn: không phải một cơn bão, mà là một bầu trời đã ngừng chuyển động."
+      },
+      "caravan": "Đoàn thương thuyền",
+      "meanLatitude": "Vĩ tuyến trung bình của dòng xiết",
+      "westward": "← tây",
+      "eastward": "đông →",
+      "resonantNote": "dòng chảy khóa sóng này lại",
+      "stationary": "Đứng yên",
+      "driftEast": "{n} m/s về đông",
+      "driftWest": "{n} m/s về tây",
+      "regime": {
+        "progressive": "Thời tiết vẫn liên tục đổi mới",
+        "stalling": "Khối sóng đang chậm lại và khuếch đại",
+        "blocked": "Bị chặn — không còn đường nào"
+      },
+      "readout": {
+        "wavelength": "Bước sóng",
+        "resonant": "Dòng chảy cộng hưởng",
+        "drift": "Khối sóng dịch"
+      }
+    },
+    "ballast-budget": {
+      "title": "Năm chặng, một sổ chi",
+      "subtitle": "Mỗi lần leo cao tốn nước; mỗi lần hạ độ tốn khí nâng; không thứ nào lấy lại được",
+      "level": {
+        "low": "Thấp",
+        "mid": "Giữa",
+        "jet": "Dòng xiết"
+      },
+      "legLabel": "Chặng {n}",
+      "legWinds": "thấp {low} · giữa {mid} · dòng xiết {jet} m/s về đông",
+      "legControl": "Tầng bay cho chặng {n}",
+      "refused": "Bị từ chối",
+      "kmForward": "+{n} km",
+      "kmBack": "−{n} km",
+      "ofValue": "{used} / {total}",
+      "ofKm": "{made} / {need} km",
+      "hint": {
+        "arrived": "Lộ trình đó chạy được. Hãy để ý nó đòi hỏi điều gì: không phải tầng nhanh nhất ở mọi nơi, mà là tầng đúng cho từng chặng, mua bằng một sổ nước và khí vừa đủ chi. Đây chính là thứ mà ký ức của một hoa tiêu tồn tại để làm.",
+        "short": "Sổ chi vẫn còn, nhưng đoàn thương thuyền chưa tới. Tiến được hay không không nằm ở việc tìm một độ cao tốt — tầng gió nhanh dịch chuyển theo hành trình, nên hạm đội cứ giữ mãi một tầng sẽ dành phần lớn chuyến đi nằm trong khối khí chảy sai hướng.",
+        "stranded": "Đoàn thương thuyền xin một tầng mà nó không còn khả năng chi trả, và buộc phải giữ nguyên tầng đang bay. Ngoài kia điều đó không phải một bất tiện; đó là điểm kết của lộ trình. Dằn tiêu sớm là quyền điều khiển bạn sẽ không có về sau."
+      },
+      "outcome": {
+        "arrived": "Đã tới điểm hẹn",
+        "short": "Chưa tới điểm hẹn",
+        "stranded": "Mắc cạn — cạn sổ chi"
+      },
+      "startNote": "Đoàn thương thuyền khởi hành từ tầng {level}, nên chọn bất cứ tầng nào khác cho chặng đầu đã phải trả giá một cú leo cao.",
+      "readout": {
+        "water": "Nước dằn",
+        "gas": "Khí nâng",
+        "distance": "Tiến về đông"
+      }
+    },
+    "season-reversal": {
+      "title": "Vì sao lại hai lần mỗi năm",
+      "subtitle": "Vòng bay thì nhanh; sự cho phép của gió thì không",
+      "cadence": {
+        "annual": "Một lần",
+        "semiannual": "Hai lần",
+        "quarterly": "Bốn lần"
+      },
+      "cadenceControl": "Số lần gió đảo chiều mỗi năm",
+      "aria": "Vành tròn một năm Pandora chia thành {reversals} mùa gió, phần bay được của mỗi mùa vẽ sáng và phần neo đậu còn lại vẽ mờ",
+      "yearLabel": "{n} ngày",
+      "ringCaption": "một năm Pandora",
+      "control": {
+        "speed": "Tốc độ cưỡi gió"
+      },
+      "msValue": "{n} m/s",
+      "daysValue": "{n} ngày",
+      "noRoom": "Không còn chỗ",
+      "transitNote": "để đi hết {n} km",
+      "windowNote": "một trong {n} mùa gió",
+      "mooredNote": "neo đậu, giao thương, chờ gió trở",
+      "overrunNote": "gió trở trước khi vòng bay kịp khép lại",
+      "hint": {
+        "fits": "Hành trình vừa vặn trong một mùa gió và còn dư thời gian — và chính khoảng dư đó là lúc giao thương. Nhịp điệu không do đoàn thương thuyền đi nhanh đến đâu quyết định, mà do gió ban cho một hướng đi bao lâu một lần, đúng logic đã định nhịp cho những con thuyền dhow theo gió mùa.",
+        "overruns": "Ở tốc độ này vòng bay không thể khép lại trước khi gió đảo chiều, và một đoàn bị cú trở gió bắt gặp giữa đường là một đoàn bị đẩy ngược lại lối đã đi. Ít mùa mà dài thì rộng đường hơn nhiều mùa mà ngắn."
+      },
+      "readout": {
+        "transit": "Vòng bay mất",
+        "window": "Mùa gió dài",
+        "moored": "Còn lại"
+      }
     }
   }
 }

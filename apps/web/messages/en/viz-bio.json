@@ -69,7 +69,16 @@
       "photocyte": "Photocyte",
       "reflector": "Reflector",
       "lens": "Lens",
-      "pigment": "Pigment"
+      "pigment": "Pigment",
+      "intensity": "Intensity",
+      "hue": "Hue",
+      "hueValue": "blue-white",
+      "slider": "Photophore intensity",
+      "calm": "calm",
+      "aroused": "aroused",
+      "note": "Brightness follows arousal; the hue stays constant.",
+      "monoTag": "MONOCHROME",
+      "mono": "One blue-white colour; only intensity changes."
     },
     "glowBiogeography": {
       "title": "Where glow happens — and why",

@@ -205,6 +205,166 @@
       "landSpeed": "Tốc đáp",
       "agility": "Linh hoạt",
       "ikran": "Preset ikran"
+    },
+    "tandem-wing": {
+      "title": "Cái giá của cặp cánh thứ hai",
+      "subtitle": "Kéo cánh sau lên cao và ra sau. Xem thử động tác nào mới thật sự có ích.",
+      "freestream": "Luồng khí chưa bị xáo trộn",
+      "wakeSheet": "Vệt khí cánh trước để lại, đang chìm dần",
+      "forewing": "Cánh trước",
+      "aftwing": "Cánh sau",
+      "gapMark": "Khoảng cách dọc",
+      "staggerMark": "Độ lệch trước sau",
+      "dragStrip": "Lực cản để nâng cùng một khối lượng",
+      "gapLabel": "Khoảng cách thẳng đứng giữa hai cánh",
+      "staggerLabel": "Cánh sau lùi ra sau bao nhiêu",
+      "times": "{n}×",
+      "bar": {
+        "longWing": "Một cánh dài",
+        "tandem": "Cặp cánh này"
+      },
+      "dragNote": "So với một cánh đơn có cùng tổng sải",
+      "readout": {
+        "sigma": "Mức phá nhau",
+        "aftLoss": "Lực nâng cánh sau mất đi",
+        "drag": "Lực cản phải trả thêm"
+      },
+      "hint": {
+        "spoiled": "Xếp gần như ngang nhau, hai cánh nằm trong luồng khí của nhau và phá nhau nặng nề. Đây chính là kiểu bố trí trông giống \"thêm một cặp cánh\" nhất — và cũng là kiểu lãng phí nhất.",
+        "partial": "Nâng cánh sau ra khỏi vệt khí thì lấy lại được phần lớn chỗ đã mất. Hãy để ý: kéo nó lùi ra sau gần như không đổi được lực cản. Chính khoảng cách thẳng đứng mới có tác dụng, không phải khoảng cách trước sau.",
+        "cleared": "Với khoảng cách dọc rộng, hai mặt cánh gần như không còn cảm nhận nhau. Lực cản đã sát mức tốt nhất mà một cặp cánh có thể đạt — vẫn còn xa mức mà một cánh dài duy nhất cùng tổng sải làm được."
+      },
+      "aftNote": {
+        "spoiled": "Bay trong khối khí đã bị đẩy xuống",
+        "partial": "Đã ra khỏi vệt khí một phần",
+        "cleared": "Gặp luồng khí gần như sạch"
+      },
+      "aria": {
+        "spoiled": "Hai cánh gần như ngang nhau, cánh sau nằm sâu trong vệt khí bị đẩy xuống của cánh trước và mất phần lớn lực nâng.",
+        "partial": "Cánh sau được nâng ra khỏi vệt khí của cánh trước một phần, lấy lại được một phần lực nâng.",
+        "cleared": "Cánh sau nằm cao hẳn trên vệt khí của cánh trước, gặp luồng khí gần như không bị xáo trộn."
+      }
+    },
+    "wing-phase": {
+      "title": "Canh nhịp cho hai cặp cánh",
+      "subtitle": "Loài bay bốn cánh được chọn thời điểm cặp sau đập. Chính lựa chọn đó là toàn bộ mánh.",
+      "psiLabel": "Cặp sau chậm pha bao nhiêu",
+      "forePair": "Cặp trước",
+      "aftPair": "Cặp sau",
+      "swirl": "Xoáy khí bỏ lại phía sau",
+      "degrees": "{n}°",
+      "times": "{n}×",
+      "play": "Chạy nhịp đập cánh",
+      "pause": "Dừng nhịp đập cánh",
+      "dial": {
+        "together": "Cùng nhịp",
+        "recapture": "Chậm một phần tư nhịp",
+        "counter": "Ngược nhịp"
+      },
+      "readout": {
+        "force": "Lực nâng đỉnh",
+        "bob": "Độ nhấp nhô của thân",
+        "power": "Chi phí công suất"
+      },
+      "hint": {
+        "together": "Hai cặp đập như một tạo ra cú đẩy mạnh nhất — cách con chuồn chuồn cất cánh, hoặc thoát khỏi thứ đang đuổi nó. Đó cũng là cách đắt nhất, vì cả bốn cánh cùng vật lộn với một khối khí trong cùng một khoảnh khắc.",
+        "recapture": "Chậm một phần tư nhịp, cặp cánh sau bay xuyên qua khối khí xoáy mà cặp trước vừa ném ra và lấy lại một phần năng lượng đó. Đo trên chuồn chuồn thật, đây là cách bay đường dài rẻ nhất.",
+        "counter": "Đập ngược nhau, hai cặp triệt tiêu cú đẩy của nhau và thân thôi nhấp nhô. Lực nâng đỉnh thấp nhất trong ba kiểu, nhưng con vật trở thành một bệ ngắm vững — điều đáng giá nếu bạn đang nhắm vào cái gì đó."
+      },
+      "verdict": {
+        "together": "Nhiều lực nhất, tốn kém nhất",
+        "recapture": "Bay đường dài rẻ nhất",
+        "counter": "Bệ ngắm vững nhất"
+      },
+      "aria": {
+        "together": "Hai cặp cánh đập cùng nhịp, tạo lực nâng đỉnh lớn nhất và tốn công suất cao nhất.",
+        "recapture": "Cặp cánh sau đập chậm một phần tư chu kỳ so với cặp trước, băng qua vùng xoáy khí nó để lại và thu lại năng lượng từ đó.",
+        "counter": "Hai cặp cánh đập ngược nhau, triệt tiêu chuyển động của thân để tạo một bệ vững."
+      }
+    },
+    "static-margin": {
+      "title": "Món mặc cả mà mọi loài bay đều phải ký",
+      "subtitle": "Dịch trọng tâm. Sự ổn định và độ cơ động nằm ở hai đầu của cùng một núm xoay.",
+      "cgLabel": "Trọng tâm nằm ở đâu dọc thân",
+      "neutralPoint": "Nơi luồng gió giật tác động",
+      "centreOfMass": "Trọng tâm",
+      "relativeTime": "{n}×",
+      "scale": {
+        "relaxed": "Nhạy giật",
+        "stable": "Tự cân lại"
+      },
+      "disturbance": {
+        "stable": "Gió giật nâng mũi lên — thân tự ấn mũi trở xuống",
+        "neutral": "Gió giật nâng mũi lên — thân cứ nằm nguyên ở đó",
+        "relaxed": "Gió giật nâng mũi lên — và thân tiếp tục lật lên nữa"
+      },
+      "readout": {
+        "margin": "Biên ổn định",
+        "trim": "Công phải bỏ ra chỉ để bay bằng",
+        "response": "Thời gian đảo được mũi"
+      },
+      "hint": {
+        "stable": "Với trọng tâm dồn hẳn về trước, con vật tự cân lại sau mỗi lần bị xáo trộn — dễ chịu và an toàn. Nhưng cũng chính lực hồi vị ấy chống lại mọi cú ngoặt mà nó thật sự muốn thực hiện.",
+        "neutral": "Đứng đúng trên lưỡi dao. Không có gì đẩy mũi trở lại, cũng không có gì đẩy mũi đi xa hơn. Thân đi tới đâu là nằm đó.",
+        "relaxed": "Vượt qua điểm cân bằng, con vật không còn tự cân lại: một cú hẩy nhẹ sẽ lớn dần thay vì tắt đi. Mũi giờ đảo nhanh hơn hẳn bất kỳ thân ổn định nào, đổi lại là phải chỉnh liên tục. Các nhà thiết kế tiêm kích đã chủ động chọn kiểu này."
+      },
+      "marginNote": {
+        "stable": "Tự cân lại, chống lại lệnh của bạn",
+        "neutral": "Không giúp cũng không cản",
+        "relaxed": "Phân kỳ — phải chỉnh liên tục"
+      },
+      "verdict": {
+        "stable": "Dễ chịu, chậm chạp",
+        "neutral": "Đúng điểm chuyển",
+        "relaxed": "Dữ dội, khắt khe"
+      },
+      "aria": {
+        "stable": "Trọng tâm nằm hẳn phía trước điểm mà gió giật tác động, nên thân tự cân lại và chống lại các cú ngoặt được điều khiển.",
+        "neutral": "Trọng tâm nằm đúng điểm mà gió giật tác động, không tự cân lại cũng không phân kỳ.",
+        "relaxed": "Trọng tâm nằm phía sau điểm mà gió giật tác động, nên xáo trộn lớn dần và thân đảo mũi rất nhanh."
+      }
+    },
+    "turn-envelope": {
+      "title": "Nó ngoặt gắt được đến đâu?",
+      "subtitle": "Mọi cú ngoặt đều bị chặn bởi hai bức tường: hết lực nâng, và hết sức chịu của thân.",
+      "worldLabel": "Ở thế giới nào",
+      "flyerLabel": "Loài bay nào",
+      "speedLabel": "Tốc độ bay",
+      "cornerSpeed": "Tốc độ ngoặt tối ưu",
+      "xAxis": "Tốc độ bay (mét mỗi giây)",
+      "yAxis": "Tốc độ đảo hướng (độ mỗi giây)",
+      "speedValue": "{n} m/s",
+      "gees": "{n} g",
+      "metres": "{n} m",
+      "degPerSec": "{n}°/s",
+      "noTurn": "Không ngoặt được",
+      "world": {
+        "earth": "Trái Đất",
+        "pandora": "Pandora"
+      },
+      "flyer": {
+        "nightwraith": "Nightwraith",
+        "ikran": "Ikran",
+        "peregrine": "Chim cắt",
+        "albatross": "Hải âu lớn"
+      },
+      "readout": {
+        "load": "Tải đang chịu",
+        "radius": "Vòng ngoặt gắt nhất",
+        "rate": "Tốc độ đảo hướng"
+      },
+      "hint": {
+        "lift": "Ở dưới này, cánh mới là giới hạn — kéo gắt hơn nữa là thất tốc. Mỗi chút tốc độ thêm vào đều mua được một vòng ngoặt gắt hơn, cho tới đúng điểm tối ưu.",
+        "structure": "Vượt qua điểm tối ưu, cánh còn kéo được gắt hơn nhưng thân thì không chịu nổi. Từ đây trở đi, càng nhanh thì vòng ngoặt càng rộng ra."
+      },
+      "limitNote": {
+        "lift": "Bị cánh giới hạn",
+        "structure": "Bị thân giới hạn"
+      },
+      "aria": {
+        "lift": "Điểm hoạt động nằm trên rìa bị giới hạn bởi lực nâng của bao ngoặt, dưới tốc độ ngoặt tối ưu.",
+        "structure": "Điểm hoạt động nằm trên giới hạn kết cấu của bao ngoặt, trên tốc độ ngoặt tối ưu."
+      }
     }
   }
 }

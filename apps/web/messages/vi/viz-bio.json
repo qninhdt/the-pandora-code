@@ -69,7 +69,16 @@
       "photocyte": "Photocyte",
       "reflector": "Gương",
       "lens": "Thấu kính",
-      "pigment": "Sắc tố"
+      "pigment": "Sắc tố",
+      "intensity": "Cường độ",
+      "hue": "Màu sắc",
+      "hueValue": "trắng xanh",
+      "slider": "Cường độ photophore",
+      "calm": "bình tĩnh",
+      "aroused": "kích động",
+      "note": "Độ sáng đi theo mức kích động; màu sắc giữ nguyên.",
+      "monoTag": "ĐƠN SẮC",
+      "mono": "Một màu trắng xanh; chỉ cường độ thay đổi."
     },
     "glowBiogeography": {
       "title": "Nơi nào phát sáng — và vì sao",

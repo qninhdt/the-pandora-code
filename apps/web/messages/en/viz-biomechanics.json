@@ -205,6 +205,166 @@
       "landSpeed": "Landing speed",
       "agility": "Agility",
       "ikran": "Ikran preset"
+    },
+    "tandem-wing": {
+      "title": "The cost of a second wing",
+      "subtitle": "Slide the rear wing up and back. Watch which move actually helps.",
+      "freestream": "Undisturbed air",
+      "wakeSheet": "Front wing's wake, sinking",
+      "forewing": "Front wing",
+      "aftwing": "Rear wing",
+      "gapMark": "Gap",
+      "staggerMark": "Stagger",
+      "dragStrip": "Drag to hold the same weight up",
+      "gapLabel": "Vertical gap between wings",
+      "staggerLabel": "How far back the rear wing sits",
+      "times": "{n}×",
+      "bar": {
+        "longWing": "One long wing",
+        "tandem": "This wing pair"
+      },
+      "dragNote": "Compared with a single wing of the same total span",
+      "readout": {
+        "sigma": "Mutual spoiling",
+        "aftLoss": "Lift lost by rear wing",
+        "drag": "Drag penalty"
+      },
+      "hint": {
+        "spoiled": "Stacked almost level, the two wings sit in each other's air and spoil each other badly. This is the arrangement that looks most like a second pair of wings — and it is the one that wastes the most.",
+        "partial": "Lifting the rear wing clear of the wake recovers much of the loss. Notice that sliding it backwards barely changes the drag at all: it is the vertical separation doing the work, not the fore-and-aft one.",
+        "cleared": "With a wide vertical gap the two surfaces barely feel each other. The drag is close to the best a pair of wings can manage — still nowhere near what one long wing of the same total span would achieve."
+      },
+      "aftNote": {
+        "spoiled": "Flying in air already pushed downward",
+        "partial": "Partly clear of the wake",
+        "cleared": "Meeting nearly clean air"
+      },
+      "aria": {
+        "spoiled": "Two wings almost level with each other, the rear wing deep in the front wing's downward-deflected wake, losing most of its lift.",
+        "partial": "The rear wing raised partly clear of the front wing's wake, recovering some lift.",
+        "cleared": "The rear wing well above the front wing's wake, meeting almost undisturbed air."
+      }
+    },
+    "wing-phase": {
+      "title": "Timing two pairs of wings",
+      "subtitle": "A four-winged flyer chooses when the back pair beats. That choice is the whole trick.",
+      "psiLabel": "How far the rear pair lags",
+      "forePair": "Front pair",
+      "aftPair": "Rear pair",
+      "swirl": "Spinning air left behind",
+      "degrees": "{n}°",
+      "times": "{n}×",
+      "play": "Run the wingbeat",
+      "pause": "Hold the wingbeat",
+      "dial": {
+        "together": "Together",
+        "recapture": "Quarter-beat behind",
+        "counter": "Opposite"
+      },
+      "readout": {
+        "force": "Peak lift",
+        "bob": "Body bounce",
+        "power": "Power bill"
+      },
+      "hint": {
+        "together": "Both pairs beating as one gives the hardest single shove — how a dragonfly launches, or breaks away from something chasing it. It also costs the most, because all four wings fight the same air at the same instant.",
+        "recapture": "A quarter-beat behind, the rear pair flies through the swirling air the front pair threw off and takes some of that energy back. Measured on real dragonflies, this timing is the cheapest way to cruise.",
+        "counter": "Beating in opposition, the two pairs cancel each other's shoves and the body stops bouncing. Peak lift is the lowest of the three, but the animal becomes a steady platform — which matters if you are aiming at something."
+      },
+      "verdict": {
+        "together": "Most force, worst economy",
+        "recapture": "Cheapest cruise",
+        "counter": "Steadiest platform"
+      },
+      "aria": {
+        "together": "Both wing pairs beating in unison, producing the largest peak lift and the highest power cost.",
+        "recapture": "The rear wing pair beating a quarter-cycle behind the front pair, crossing its shed swirl and recovering energy from it.",
+        "counter": "The wing pairs beating in opposition, cancelling body movement for a steady platform."
+      }
+    },
+    "static-margin": {
+      "title": "The bargain every flyer strikes",
+      "subtitle": "Move the centre of mass. Stability and agility sit at opposite ends of one dial.",
+      "cgLabel": "Where the mass sits along the body",
+      "neutralPoint": "Where a gust pushes",
+      "centreOfMass": "Centre of mass",
+      "relativeTime": "{n}×",
+      "scale": {
+        "relaxed": "Twitchy",
+        "stable": "Self-righting"
+      },
+      "disturbance": {
+        "stable": "A gust lifts the nose — the body pushes it back down",
+        "neutral": "A gust lifts the nose — the body simply stays there",
+        "relaxed": "A gust lifts the nose — and the body keeps going"
+      },
+      "readout": {
+        "margin": "Stability margin",
+        "trim": "Effort wasted holding level",
+        "response": "Time to swing the nose"
+      },
+      "hint": {
+        "stable": "With the mass well forward the flyer rights itself after every disturbance, which is restful and safe — and the same restoring force fights every turn the animal actually wants to make.",
+        "neutral": "Balanced on the knife edge. Nothing pushes the nose back, and nothing pushes it further. The body goes where it is put and stays there.",
+        "relaxed": "Past the balance point the flyer no longer rights itself: a nudge grows instead of fading. The nose now swings far faster than any stable body could manage, at the price of needing constant correction. Fighter designers chose this deliberately."
+      },
+      "marginNote": {
+        "stable": "Rights itself, resists your inputs",
+        "neutral": "Neither helps nor fights",
+        "relaxed": "Diverges — needs constant correction"
+      },
+      "verdict": {
+        "stable": "Comfortable, sluggish",
+        "neutral": "The crossover point",
+        "relaxed": "Vicious, demanding"
+      },
+      "aria": {
+        "stable": "The centre of mass sits well ahead of the point a gust acts on, so the body rights itself and resists commanded turns.",
+        "neutral": "The centre of mass sits at the point a gust acts on, neither righting nor diverging.",
+        "relaxed": "The centre of mass sits behind the point a gust acts on, so disturbances grow and the body pitches very quickly."
+      }
+    },
+    "turn-envelope": {
+      "title": "How hard can it turn?",
+      "subtitle": "Two walls bound every turn: running out of lift, and running out of body.",
+      "worldLabel": "Which world",
+      "flyerLabel": "Which flyer",
+      "speedLabel": "Airspeed",
+      "cornerSpeed": "Best turning speed",
+      "xAxis": "Airspeed (metres per second)",
+      "yAxis": "Turn rate (degrees per second)",
+      "speedValue": "{n} m/s",
+      "gees": "{n} g",
+      "metres": "{n} m",
+      "degPerSec": "{n}°/s",
+      "noTurn": "Cannot turn",
+      "world": {
+        "earth": "Earth",
+        "pandora": "Pandora"
+      },
+      "flyer": {
+        "nightwraith": "Nightwraith",
+        "ikran": "Ikran",
+        "peregrine": "Falcon",
+        "albatross": "Albatross"
+      },
+      "readout": {
+        "load": "Load carried",
+        "radius": "Tightest circle",
+        "rate": "Turn rate"
+      },
+      "hint": {
+        "lift": "Down here the wing is the limit — pull any harder and it stalls. Every extra scrap of speed buys a tighter turn, right up to the corner.",
+        "structure": "Past the corner the wing could pull harder but the body cannot take it. From here on, more speed only makes the circle wider."
+      },
+      "limitNote": {
+        "lift": "Limited by the wing",
+        "structure": "Limited by the body"
+      },
+      "aria": {
+        "lift": "The operating point sits on the lift-limited edge of the turn envelope, below corner speed.",
+        "structure": "The operating point sits on the structural limit of the turn envelope, above corner speed."
+      }
     }
   }
 }
