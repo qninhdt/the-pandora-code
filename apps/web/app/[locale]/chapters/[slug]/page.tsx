@@ -7,20 +7,25 @@ import { GlossaryTerm } from "@/components/glossary/glossary-term";
 import { ChapterBackground } from "@/components/reading/chapter-background";
 import { ChapterHero } from "@/components/reading/chapter-hero";
 import { ChapterShell } from "@/components/reading/chapter-shell";
+import { ContinueReadingPrompt } from "@/components/reading/continue-reading-prompt";
+import { OfflineChapterButton } from "@/components/reading/offline-chapter-button";
+import { ReadingPreferences } from "@/components/reading/reading-preferences";
 import { ReadingProgress } from "@/components/reading/reading-progress";
 import type { RelatedChapterCard } from "@/components/reading/related-chapters";
 import { type RelatedGlossaryChip, RelatedMaterials } from "@/components/reading/related-materials";
 import { TableOfContents, type TocHeading } from "@/components/reading/table-of-contents";
+import { JsonLd } from "@/components/seo/json-ld";
 import { SourceList } from "@/components/sources/source-list";
 import { type Locale, isLocale, locales } from "@/i18n/config";
 import { getChapterBackgroundImage } from "@/lib/content/loader/chapter-background";
-import { getChapter, listChapterSlugs } from "@/lib/content/loader/chapter-loader";
+import { getPublishedChapter, listPublishedChapters } from "@/lib/content/loader/chapter-loader";
 import { getChapterCoverImage } from "@/lib/content/loader/cover-image";
 import { getGlossaryCoverImage } from "@/lib/content/loader/glossary-cover";
 import { listGlossaryTerms } from "@/lib/content/loader/glossary-loader";
 import { getChapterMDX } from "@/lib/content/render/mdx-source";
 import { getMDXComponents } from "@/lib/mdx-components";
 import { buildPageMetadata, clampDescription } from "@/lib/seo/page-metadata";
+import { createArticleSchema, createBreadcrumbListSchema } from "@/lib/seo/structured-data";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -30,19 +35,26 @@ interface ChapterPageProps {
   params: Promise<{ locale: string; slug: string }>;
 }
 
+// Chapter documents are public, filesystem-backed book content. Render them
+// as static artifacts so the offline engine can safely cache the hard HTML
+// navigation without storing personalized/no-store responses.
+export const dynamic = "force-static";
+export const revalidate = false;
+
 export function generateStaticParams() {
-  const slugs = listChapterSlugs();
-  return ["vi", "en"].flatMap((locale) => slugs.map((slug) => ({ locale, slug })));
+  return locales.flatMap((locale) =>
+    listPublishedChapters(locale).map((chapter) => ({ locale, slug: chapter.meta.slug })),
+  );
 }
 
 export async function generateMetadata({ params }: ChapterPageProps): Promise<Metadata> {
   const { locale, slug } = await params;
   if (!isLocale(locale)) return {};
   const loc = locale as Locale;
-  const chapter = getChapter(slug, loc);
+  const chapter = getPublishedChapter(slug, loc);
   if (!chapter) return {};
   // hreflang only for locales whose MDX actually exists.
-  const available = locales.filter((l) => getChapter(slug, l) !== null);
+  const available = locales.filter((l) => getPublishedChapter(slug, l) !== null);
   const cover = getChapterCoverImage(slug);
   return buildPageMetadata({
     locale: loc,
@@ -51,6 +63,7 @@ export async function generateMetadata({ params }: ChapterPageProps): Promise<Me
     description: clampDescription(chapter.hook),
     availableLocales: available,
     ogImage: cover,
+    pageType: "article",
   });
 }
 
@@ -74,8 +87,6 @@ function toHeadings(toc: { depth: number; url: string; title: ReactNode }[]): To
     }));
 }
 
-
-
 export default async function ChapterPage({ params }: ChapterPageProps) {
   const { locale, slug } = await params;
   if (!isLocale(locale)) notFound();
@@ -83,7 +94,7 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
   const loc = locale as Locale;
   const t = await getTranslations({ locale });
 
-  const chapter = getChapter(slug, loc);
+  const chapter = getPublishedChapter(slug, loc);
   if (!chapter) notFound();
 
   const mdx = getChapterMDX(slug, loc);
@@ -97,19 +108,11 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
   // glossary YAML, never duplicated (and never wrong-language) in the prose.
   const glossary = new Map(listGlossaryTerms(loc).map((g) => [g.id, g]));
   const components = getMDXComponents({
-    AnatomyPlate: (props: ComponentProps<typeof AnatomyPlate>) => (
-      <AnatomyPlate {...props} />
-    ),
-    CanonBadge: (props: ComponentProps<typeof CanonBadge>) => (
-      <CanonBadge {...props} />
-    ),
-    DiagramFigure: (props: ComponentProps<typeof DiagramFigure>) => (
-      <DiagramFigure {...props} />
-    ),
+    AnatomyPlate: (props: ComponentProps<typeof AnatomyPlate>) => <AnatomyPlate {...props} />,
+    CanonBadge: (props: ComponentProps<typeof CanonBadge>) => <CanonBadge {...props} />,
+    DiagramFigure: (props: ComponentProps<typeof DiagramFigure>) => <DiagramFigure {...props} />,
     Figure: (props: ComponentProps<typeof Figure>) => <Figure {...props} />,
-    FigureGrid: (props: ComponentProps<typeof FigureGrid>) => (
-      <FigureGrid {...props} />
-    ),
+    FigureGrid: (props: ComponentProps<typeof FigureGrid>) => <FigureGrid {...props} />,
     GlossaryTerm: ({
       slug: termSlug,
       children,
@@ -130,9 +133,7 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
         </GlossaryTerm>
       );
     },
-    SourceList: (props: ComponentProps<typeof SourceList>) => (
-      <SourceList {...props} />
-    ),
+    SourceList: (props: ComponentProps<typeof SourceList>) => <SourceList {...props} />,
   });
   const headings = toHeadings(mdx.data.toc ?? []);
   const cls = chapter.meta.classification;
@@ -141,38 +142,57 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
   // chapters (skipping any slug that has no published locale file), the
   // glossary terms this chapter leans on, and its sources.
   const relatedChapters: RelatedChapterCard[] = chapter.meta.related_chapters
-    .map((relSlug) => getChapter(relSlug, loc))
+    .map((relSlug) => getPublishedChapter(relSlug, loc))
     .filter((c): c is NonNullable<typeof c> => c !== null)
     .map((c) => ({
       slug: c.meta.slug,
       title: c.meta.title,
       hook: c.meta.hook,
-      reading_time_min: c.meta.reading_time_min,
+      readingTimeMin: c.readingTimeMin,
     }));
   const relatedGlossary: RelatedGlossaryChip[] = chapter.meta.glossary_terms
     .map((id) => glossary.get(id))
     .filter((g): g is NonNullable<typeof g> => g !== undefined)
     .map((g) => ({ id: g.id, label: g.label }));
 
+  const canonicalPath = `/${loc}/chapters/${slug}`;
+  const articleSchema = createArticleSchema({
+    url: canonicalPath,
+    headline: chapter.title,
+    description: clampDescription(chapter.hook),
+    image: coverImage ?? undefined,
+    author: chapter.meta.authors.map((author) => ({ name: author })),
+  });
+  const breadcrumbSchema = createBreadcrumbListSchema([
+    { name: t("nav.home"), item: `/${loc}` },
+    { name: t("nav.chapters"), item: `/${loc}/chapters` },
+    { name: chapter.title, item: canonicalPath },
+  ]);
+
   return (
-    <>
+    <div className="relative">
+      <JsonLd data={[articleSchema, breadcrumbSchema]} />
       {backgroundImage && <ChapterBackground src={backgroundImage} />}
       <ChapterShell
-        progress={<ReadingProgress />}
+        progress={<ReadingProgress locale={loc} slug={slug} />}
         hero={
           <ChapterHero
             title={chapter.meta.title}
             subtitle={chapter.meta.subtitle}
             hook={chapter.meta.hook}
             authors={chapter.meta.authors}
-            readingTimeMin={chapter.meta.reading_time_min}
+            readingTimeMin={chapter.readingTimeMin}
             classification={cls}
             imageSrc={coverImage}
+            actions={<OfflineChapterButton locale={loc} slug={slug} />}
           />
         }
         toc={<TableOfContents headings={headings} label={t("chapter.tableOfContents")} />}
         footer={
           <>
+            <div className="reading-column mb-10 space-y-5">
+              <ReadingPreferences title={t("chapter.readingPreferences")} compact />
+            </div>
             <RelatedMaterials
               chapters={relatedChapters}
               glossary={relatedGlossary}
@@ -206,8 +226,16 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
           </>
         }
       >
+        <ContinueReadingPrompt
+          locale={loc}
+          slug={slug}
+          label={t("chapter.continueReading")}
+          busyLabel={t("chapter.restoringPosition")}
+          progressLabel={t("chapter.readingProgressPercent", { percent: "__PERCENT__" })}
+          className="mb-8"
+        />
         <Body components={components} />
       </ChapterShell>
-    </>
+    </div>
   );
 }

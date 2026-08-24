@@ -34,7 +34,9 @@ export function ChapterShell({
               pinned while scrolling; the desktop gutter copy above is hidden on
               mobile. */}
           <div className="mb-6 lg:hidden">{toc}</div>
-          <article className="prose-pandora reading-column">{children}</article>
+          <article data-reading-root className="prose-pandora reading-column">
+            {children}
+          </article>
           {footer}
         </main>
       </div>

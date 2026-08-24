@@ -4,6 +4,7 @@ import { DecodeProgress } from "@/components/landing/decode-progress";
 import { useReducedMotionSafe } from "@/components/motion/use-reduced-motion-safe";
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const HERO_VISTA = "/images/pages/hero-vista.png";
@@ -51,9 +52,13 @@ export function HeroSurface({
     <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 text-center">
       {/* Layer 1 - painted establishing vista at the back. */}
       <div aria-hidden className="absolute inset-0 -z-30">
-        <img
+        <Image
           src={HERO_VISTA}
           alt=""
+          fill
+          priority
+          sizes="100vw"
+          quality={78}
           className={`size-full object-cover ${reduced ? "" : "animate-ken-burns"}`}
         />
       </div>

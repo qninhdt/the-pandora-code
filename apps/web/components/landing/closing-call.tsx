@@ -3,9 +3,10 @@
 import { FadeInOnScroll } from "@/components/motion/fade-in-on-scroll";
 import { Parallax } from "@/components/motion/parallax";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
-const CTA_BG = "/images/pages/cta-horizon.png";
+const CTA_BG = "/images/pages/cta-horizon.webp";
 
 interface ClosingCallProps {
   kicker: string;
@@ -34,7 +35,17 @@ export function ClosingCall({
     <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden px-6 py-32 text-center">
       {/* Painted horizon backdrop with a slow parallax push. */}
       <Parallax offset={70} className="absolute inset-0 -z-20">
-        <img src={CTA_BG} alt="" aria-hidden className="size-full scale-[1.35] object-cover" />
+        <Image
+          src={CTA_BG}
+          alt=""
+          aria-hidden
+          fill
+          loading="lazy"
+          decoding="async"
+          sizes="100vw"
+          quality={68}
+          className="size-full scale-[1.35] object-cover"
+        />
       </Parallax>
       {/* Legibility + blend into the void above and below. */}
       <div

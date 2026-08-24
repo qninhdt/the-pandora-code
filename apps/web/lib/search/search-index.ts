@@ -38,9 +38,18 @@ const miniSearchOptions = {
 const cache = new Map<Locale, Promise<MiniSearch<SearchRecord>>>();
 
 async function loadIndex(locale: Locale): Promise<MiniSearch<SearchRecord>> {
-  const res = await fetch(`/search/index-${locale}.json`);
-  if (!res.ok) throw new Error(`Failed to load search index for "${locale}"`);
-  const records: SearchRecord[] = await res.json();
+  let response: Response | undefined;
+  try {
+    const res = await fetch(`/search/index-${locale}.json`);
+    if (res.ok) response = res;
+  } catch {
+    // Offline fallback below.
+  }
+  if (!response && typeof caches !== "undefined") {
+    response = await caches.match(`/search/index-${locale}.json`, { ignoreSearch: true });
+  }
+  if (!response) throw new Error(`Failed to load search index for "${locale}"`);
+  const records: SearchRecord[] = await response.json();
   const mini = new MiniSearch<SearchRecord>(miniSearchOptions);
   mini.addAll(records);
   return mini;

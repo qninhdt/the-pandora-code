@@ -5,11 +5,11 @@ import { CommandPalette } from "@/components/search/command-palette";
 import type { Locale } from "@/i18n/config";
 import { cn } from "@/lib/utils";
 import { Github, Menu, X } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { useLocale, useTranslations } from "next-intl";
 
 const REPO_URL = "https://github.com/qninhdt/the-pandora-code";
 
@@ -56,6 +56,7 @@ export function FloatingDock() {
     { href: `${base}/glossary`, label: t("nav.glossary") },
     { href: `${base}/author`, label: t("nav.authors") },
     { href: `${base}/timeline`, label: t("nav.timeline") },
+    { href: `${base}/offline`, label: t("nav.offline") },
   ];
   const isActive = (href: string) => pathname.startsWith(href);
 
@@ -66,7 +67,7 @@ export function FloatingDock() {
     >
       <div
         className={cn(
-          "flex w-full max-w-5xl items-center gap-3 rounded-full border px-3 py-2 transition-all duration-300",
+          "flex w-full max-w-5xl items-center gap-3 rounded-full border px-3 py-2 transition-[background-color,border-color,box-shadow] duration-300",
           scrolled
             ? "border-border-strong bg-void/75 backdrop-blur-xl"
             : "border-border/60 bg-void/40 backdrop-blur-md",
@@ -165,6 +166,7 @@ function MobileOverlay({ open, onClose, brand, links, isActive }: MobileOverlayP
         open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0",
       )}
       aria-hidden={!open}
+      inert={!open}
     >
       {/* Glowing void backdrop */}
       <div
@@ -204,7 +206,7 @@ function MobileOverlay({ open, onClose, brand, links, isActive }: MobileOverlayP
               aria-current={isActive(l.href) ? "page" : undefined}
               onClick={onClose}
               className={cn(
-                "border-b border-border/40 py-4 font-display text-3xl font-700 tracking-tight transition-all duration-500",
+                "border-b border-border/40 py-4 font-display text-3xl font-700 tracking-tight transition-[transform,opacity,color] duration-500",
                 open ? "translate-x-0 opacity-100" : "translate-x-4 opacity-0",
                 isActive(l.href) ? "text-cyan" : "text-foreground/85 hover:text-cyan",
               )}

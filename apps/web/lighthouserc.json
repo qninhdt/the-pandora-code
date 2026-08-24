@@ -4,7 +4,7 @@
       "startServerCommand": "pnpm start",
       "url": [
         "http://localhost:3000/vi",
-        "http://localhost:3000/vi/chapters/demo-chapter-foundation-shell"
+        "http://localhost:3000/vi/chapters/reading-pandora-as-a-specimen"
       ],
       "numberOfRuns": 1,
       "settings": {

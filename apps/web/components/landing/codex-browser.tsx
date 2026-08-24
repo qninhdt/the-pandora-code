@@ -3,9 +3,11 @@
 import { SpecimenPlate } from "@/components/codex/specimen-plate";
 import { FadeInOnScroll } from "@/components/motion/fade-in-on-scroll";
 import { StaggerChildren, StaggerItem } from "@/components/motion/stagger-children";
+import type { OfflineLocale } from "@/lib/offline/types";
 
 export interface BrowserChapter {
   slug: string;
+  locale: OfflineLocale;
   href: string;
   title: string;
   payload: string;
@@ -77,6 +79,8 @@ export function CodexBrowser({ heading, kicker, comingLabel, parts }: CodexBrows
                   <StaggerItem key={c.slug}>
                     <SpecimenPlate
                       href={c.href}
+                      locale={c.locale}
+                      slug={c.slug}
                       title={c.title}
                       subtitle={c.payload}
                       plateNo={c.plateNo}

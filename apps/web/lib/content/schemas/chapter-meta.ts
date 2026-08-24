@@ -1,4 +1,5 @@
 import { z } from "zod";
+import type { ReadingTimeDiagnostics } from "../reading-time";
 import {
   AssetStatus,
   AuthorId,
@@ -17,6 +18,26 @@ export const ChapterFigureRef = z.object({
 });
 export type ChapterFigureRef = z.infer<typeof ChapterFigureRef>;
 
+export const ReadingTimeOverride = z
+  .object({
+    minutes: z.number().int().min(1).max(120),
+    reason: z.string().trim().min(1, "reading-time override reason is required"),
+  })
+  .strict();
+export type ReadingTimeOverride = z.infer<typeof ReadingTimeOverride>;
+
+export const LocalizedReadingTimeOverride = z
+  .object({
+    vi: ReadingTimeOverride.optional(),
+    en: ReadingTimeOverride.optional(),
+  })
+  .strict()
+  .refine((data) => data.vi !== undefined || data.en !== undefined, {
+    message: "reading_time_override must include at least one locale",
+  })
+  .optional();
+export type LocalizedReadingTimeOverride = z.infer<typeof LocalizedReadingTimeOverride>;
+
 export const ChapterMeta = z
   .object({
     slug: Slug,
@@ -27,7 +48,7 @@ export const ChapterMeta = z
     subtitle: LocalizedString.optional(),
     hook: LocalizedString,
     authors: z.array(AuthorId).min(1, "at least one author required").default(["bardabez"]),
-    reading_time_min: z.number().int().min(1).max(120),
+    reading_time_override: LocalizedReadingTimeOverride,
     tags: z.array(z.string().min(1)).default([]),
     classification: ClassificationPct,
     related_chapters: z.array(Slug).default([]),
@@ -35,6 +56,7 @@ export const ChapterMeta = z
     figures: z.array(ChapterFigureRef).default([]),
     sources: z.array(Source).default([]),
   })
+  .strict()
   .refine((data) => new Set(data.figures.map((f) => f.id)).size === data.figures.length, {
     message: "figure ids must be unique within a chapter",
   });
@@ -47,4 +69,6 @@ export interface LocalizedChapter {
   subtitle?: string;
   hook: string;
   mdxPath: string;
+  readingTimeMin: number;
+  readingTimeDiagnostics: ReadingTimeDiagnostics;
 }

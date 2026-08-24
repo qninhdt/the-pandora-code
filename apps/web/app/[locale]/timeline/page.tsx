@@ -1,11 +1,13 @@
 import { TimelineJourney } from "@/components/content/timeline-journey";
 import { PageBackground } from "@/components/layout/page-background";
+import { JsonLd } from "@/components/seo/json-ld";
 import { type Locale, isLocale } from "@/i18n/config";
 import { chapterOrderPrefix } from "@/lib/content/loader/chapter-index";
-import { listChapters } from "@/lib/content/loader/chapter-loader";
+import { listPublishedChapters } from "@/lib/content/loader/chapter-loader";
 import { getPageBackground } from "@/lib/content/loader/page-background";
 import { listParts } from "@/lib/content/loader/part-loader";
 import { buildPageMetadata } from "@/lib/seo/page-metadata";
+import { createBreadcrumbListSchema } from "@/lib/seo/structured-data";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -44,7 +46,7 @@ export default async function TimelinePage({ params }: TimelinePageProps) {
   const loc = locale as Locale;
 
   const parts = listParts(loc);
-  const chapters = listChapters(loc);
+  const chapters = listPublishedChapters(loc);
   const bg = getPageBackground("timeline");
 
   // Build the reading order from the Parts when they exist, but always fall
@@ -88,8 +90,23 @@ export default async function TimelinePage({ params }: TimelinePageProps) {
 
   return (
     <>
+      <JsonLd
+        data={createBreadcrumbListSchema([
+          { name: t("nav.home"), item: `/${loc}` },
+          { name: t("page.timeline.title"), item: `/${loc}/timeline` },
+        ])}
+      />
       {bg && <PageBackground src={bg} />}
       <main className="mx-auto max-w-5xl px-6 pb-28 pt-32">
+        <nav aria-label="Breadcrumb" className="mb-6 font-sans text-xs text-subtle">
+          <a href={`/${loc}`} className="hover:text-cyan">
+            {t("nav.home")}
+          </a>
+          <span aria-hidden className="px-2">
+            /
+          </span>
+          <span className="text-muted">{t("page.timeline.title")}</span>
+        </nav>
         <header className="mb-14 max-w-3xl">
           <p className="mb-4 font-sans text-xs uppercase tracking-[0.4em] text-cyan">
             {t("page.timeline.kicker")}

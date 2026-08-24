@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#06111d" />
+    <title id="offline-title">The Pandora Code — Offline</title>
+    <style>
+      :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #06111d; color: #e8f3f5; }
+      body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 2rem; box-sizing: border-box; }
+      main { max-width: 34rem; border: 1px solid rgba(152, 231, 234, .25); border-radius: 1.25rem; padding: 2rem; background: rgba(12, 34, 49, .88); box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, .28); }
+      h1 { margin: 0 0 .75rem; font-size: clamp(1.6rem, 4vw, 2.5rem); letter-spacing: -.03em; }
+      p { color: #b7cbd2; line-height: 1.65; }
+      a { display: inline-block; margin-top: .75rem; color: #86e8eb; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 id="offline-heading">You are offline</h1>
+      <p id="offline-copy">This page is not downloaded yet. Reconnect once to open it, or choose a chapter from your Offline Library.</p>
+      <a id="offline-home" href="/">Return to The Pandora Code</a>
+    </main>
+    <script>
+      (function () {
+        var vietnamese = location.pathname === "/vi" || location.pathname.indexOf("/vi/") === 0;
+        if (!vietnamese) return;
+        document.documentElement.lang = "vi";
+        document.title = "The Pandora Code — Ngoại tuyến";
+        document.getElementById("offline-heading").textContent = "Bạn đang ngoại tuyến";
+        document.getElementById("offline-copy").textContent = "Trang này chưa được tải về. Hãy kết nối lại một lần, hoặc chọn một chương trong Thư viện offline.";
+        var home = document.getElementById("offline-home");
+        home.textContent = "Về The Pandora Code";
+        home.href = "/vi";
+      })();
+    </script>
+  </body>
+</html>

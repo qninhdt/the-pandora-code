@@ -54,6 +54,12 @@
   --duration-slow: 520ms;
   --ease-out-quart: cubic-bezier(0.22, 1, 0.36, 1);
   --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Reader preferences. The layout integration sets these on <html>; only
+     the explicit [data-reading-root] consumes typography values. */
+  --reader-font-scale: 1;
+  --reader-line-height: 1.8;
+  --reader-measure: 84ch;
 }
 
 @theme inline {
@@ -131,6 +137,32 @@ html {
   }
   .atmosphere-motes {
     animation: none;
+  }
+}
+
+/* A persisted override is applied by ReadingPreferencesProvider. Keep the
+   CSS fallback useful before React mounts, while motion primitives also read
+   the same preference through useReducedMotionSafe. */
+[data-reader-motion="reduce"] {
+  scroll-behavior: auto;
+}
+
+[data-reader-motion="reduce"] *,
+[data-reader-motion="reduce"] *::before,
+[data-reader-motion="reduce"] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  scroll-behavior: auto !important;
+  transition-duration: 0.01ms !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reader-motion="no-preference"] .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+
+  [data-reader-motion="no-preference"] .atmosphere-motes {
+    animation: atmosphere-drift 60s linear infinite;
   }
 }
 
@@ -233,6 +265,14 @@ a:hover {
   font-size: 1.125rem;
   line-height: 1.8;
   color: color-mix(in oklab, var(--foreground) 92%, var(--muted));
+}
+
+/* Preference variables are intentionally scoped to the article root. A
+   related-materials footer or a chapter list must keep the site typography. */
+.prose-pandora[data-reading-root] {
+  font-size: calc(1.125rem * var(--reader-font-scale, 1));
+  line-height: var(--reader-line-height, 1.8);
+  max-width: var(--reader-measure, 84ch);
 }
 
 .prose-pandora > * + * {

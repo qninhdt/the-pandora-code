@@ -1,6 +1,6 @@
 import { type Locale, locales } from "@/i18n/config";
 import type { Metadata } from "next";
-import { getSiteUrl } from "./site-url";
+import { buildLocalizedUrls } from "./localized-urls";
 
 // Truncate a definition/hook to a search-snippet length for meta descriptions
 // without cutting mid-word.
@@ -11,7 +11,9 @@ export function clampDescription(text: string, max = 160): string {
   return `${slice.slice(0, lastSpace > 40 ? lastSpace : max).trimEnd()}…`;
 }
 
-interface PageMetaInput {
+export type PageMetaType = "website" | "article";
+
+export interface PageMetaInput {
   locale: Locale;
   path: string; // locale-relative, e.g. "/chapters/where-is-pandora"
   title: string;
@@ -20,6 +22,8 @@ interface PageMetaInput {
   availableLocales?: readonly Locale[];
   /** Absolute or root-relative OG image URL. Defaults to the route's OG image. */
   ogImage?: string;
+  /** Route semantics for social previews. Only chapter pages should use article. */
+  pageType?: PageMetaType;
 }
 
 // Build canonical + hreflang + OpenGraph/Twitter metadata for a localized page.
@@ -32,30 +36,29 @@ export function buildPageMetadata({
   description,
   availableLocales = locales,
   ogImage,
+  pageType = "website",
 }: PageMetaInput): Metadata {
-  const base = getSiteUrl();
-  const canonical = `${base}/${locale}${path}`;
-  const languages: Record<string, string> = {};
-  for (const loc of availableLocales) languages[loc] = `${base}/${loc}${path}`;
+  const { canonical, languages } = buildLocalizedUrls({ locale, path, availableLocales });
+  const ogImageUrl = ogImage ? new URL(ogImage, canonical).toString() : undefined;
 
   return {
     title,
     description,
     alternates: { canonical, languages },
     openGraph: {
-      type: "article",
+      type: pageType,
       title,
       description,
       url: canonical,
       siteName: "The Pandora Code",
       locale,
-      ...(ogImage ? { images: [{ url: ogImage }] } : {}),
+      ...(ogImageUrl ? { images: [{ url: ogImageUrl }] } : {}),
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      ...(ogImage ? { images: [ogImage] } : {}),
+      ...(ogImageUrl ? { images: [ogImageUrl] } : {}),
     },
   };
 }

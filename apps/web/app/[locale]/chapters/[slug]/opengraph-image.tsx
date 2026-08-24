@@ -1,5 +1,5 @@
 import { type Locale, isLocale } from "@/i18n/config";
-import { getChapter } from "@/lib/content/loader/chapter-loader";
+import { getPublishedChapter } from "@/lib/content/loader/chapter-loader";
 import { getOutlineWithStatus } from "@/lib/content/outline";
 import { designTokens } from "@/lib/design-tokens";
 import { OG_CONTENT_TYPE, OG_SIZE, renderOgImage } from "@/lib/seo/og-image";
@@ -14,7 +14,7 @@ interface Props {
 
 // Pick a tier accent from the chapter's dominant classification, so the card's
 // hue signals where the chapter sits between canon and real science.
-function dominantAccent(chapter: NonNullable<ReturnType<typeof getChapter>>): string {
+function dominantAccent(chapter: NonNullable<ReturnType<typeof getPublishedChapter>>): string {
   const c = chapter.meta.classification;
   const entries: [keyof typeof designTokens.classification, number][] = [
     ["canon", c.canon_pct],
@@ -29,9 +29,9 @@ function dominantAccent(chapter: NonNullable<ReturnType<typeof getChapter>>): st
 export default async function Image({ params }: Props) {
   const { locale, slug } = await params;
   const loc: Locale = isLocale(locale) ? locale : "en";
-  const chapter = getChapter(slug, loc);
+  const chapter = getPublishedChapter(slug, loc);
   if (!chapter) {
-    return renderOgImage({ kicker: "The Pandora Code", title: "Pandora" });
+    return new Response(null, { status: 404 });
   }
   const part = getOutlineWithStatus(loc).find((p) => p.chapters.some((ch) => ch.slug === slug));
   return renderOgImage({

@@ -1,28 +1,31 @@
 import { locales } from "@/i18n/config";
-import { getChapter, listChapterSlugs } from "@/lib/content/loader/chapter-loader";
+import {
+  getPublishedChapter,
+  listChapterSlugs,
+  listPublishedChapters,
+} from "@/lib/content/loader/chapter-loader";
 import { listGlossaryIds } from "@/lib/content/loader/glossary-loader";
+import { buildLocalizedUrls } from "@/lib/seo/localized-urls";
 import { getSiteUrl } from "@/lib/seo/site-url";
 import type { MetadataRoute } from "next";
-
-// Map a path-builder to a hreflang alternates record across the given locales.
-// Next emits these as <xhtml:link rel="alternate" hreflang="..."> entries so
-// Google serves the right language and treats en/vi as one canonical document.
-function languageAlternates(path: (loc: string) => string, locs: readonly string[]) {
-  const base = getSiteUrl();
-  const languages: Record<string, string> = {};
-  for (const loc of locs) languages[loc] = `${base}${path(loc)}`;
-  return languages;
-}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = getSiteUrl();
   const chapters = listChapterSlugs();
   const glossary = listGlossaryIds();
 
-  const tags = new Set<string>();
-  for (const slug of chapters) {
-    const ch = getChapter(slug, "vi");
-    for (const tag of ch?.meta.tags ?? []) tags.add(tag);
+  const publishedByLocale = new Map(
+    locales.map((locale) => [locale, listPublishedChapters(locale)]),
+  );
+  const topicLocales = new Map<string, Set<(typeof locales)[number]>>();
+  for (const [locale, localizedChapters] of publishedByLocale) {
+    for (const chapter of localizedChapters) {
+      for (const tag of chapter.meta.tags ?? []) {
+        const available = topicLocales.get(tag) ?? new Set<(typeof locales)[number]>();
+        available.add(locale);
+        topicLocales.set(tag, available);
+      }
+    }
   }
 
   const entries: MetadataRoute.Sitemap = [];
@@ -32,8 +35,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const p of staticPaths) {
     for (const loc of locales) {
       entries.push({
-        url: `${base}/${loc}${p}`,
-        alternates: { languages: languageAlternates((l) => `/${l}${p}`, locales) },
+        url: buildLocalizedUrls({ locale: loc, path: p }).canonical,
+        alternates: { languages: buildLocalizedUrls({ locale: loc, path: p }).languages },
       });
     }
   }
@@ -42,13 +45,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // exists, and cross-link hreflang only to the locales that actually have it.
   for (const slug of chapters) {
     const available = locales.filter((loc) => {
-      const c = getChapter(slug, loc);
-      return c !== null && c.meta.status === "published";
+      return getPublishedChapter(slug, loc) !== null;
     });
     for (const loc of available) {
       entries.push({
         url: `${base}/${loc}/chapters/${slug}`,
-        alternates: { languages: languageAlternates((l) => `/${l}/chapters/${slug}`, available) },
+        alternates: {
+          languages: buildLocalizedUrls({
+            locale: loc,
+            path: `/chapters/${slug}`,
+            availableLocales: available,
+          }).languages,
+        },
       });
     }
   }
@@ -58,17 +66,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entries.push(
       ...locales.map((loc) => ({
         url: `${base}/${loc}/glossary/${id}`,
-        alternates: { languages: languageAlternates((l) => `/${l}/glossary/${id}`, locales) },
+        alternates: {
+          languages: buildLocalizedUrls({ locale: loc, path: `/glossary/${id}` }).languages,
+        },
       })),
     );
   }
 
   // Topic tag pages.
-  for (const tag of tags) {
+  for (const [tag, availableSet] of topicLocales) {
+    const available = [...availableSet];
     entries.push(
-      ...locales.map((loc) => ({
+      ...available.map((loc) => ({
         url: `${base}/${loc}/topics/${tag}`,
-        alternates: { languages: languageAlternates((l) => `/${l}/topics/${tag}`, locales) },
+        alternates: {
+          languages: buildLocalizedUrls({
+            locale: loc,
+            path: `/topics/${tag}`,
+            availableLocales: available,
+          }).languages,
+        },
       })),
     );
   }

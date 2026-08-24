@@ -3,8 +3,9 @@
 import { GlassPanel } from "@/components/codex/glass-panel";
 import { FadeInOnScroll } from "@/components/motion/fade-in-on-scroll";
 import { Parallax } from "@/components/motion/parallax";
+import Image from "next/image";
 
-const DESCENT_BG = "/images/pages/descent-deep.png";
+const DESCENT_BG = "/images/pages/descent-deep.webp";
 
 interface DescentSectionProps {
   kicker: string;
@@ -22,12 +23,15 @@ export function DescentSection({ kicker, heading, body, note }: DescentSectionPr
     <section className="relative overflow-hidden px-6 py-32">
       {/* Painted ravine backdrop, drifting slower than the foreground. */}
       <Parallax offset={60} className="absolute inset-0 -z-20">
-        <img
+        <Image
           src={DESCENT_BG}
           alt=""
           aria-hidden
+          fill
           loading="lazy"
           decoding="async"
+          sizes="100vw"
+          quality={68}
           className="size-full scale-[1.3] object-cover opacity-40"
         />
       </Parallax>

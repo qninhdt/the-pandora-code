@@ -1,14 +1,16 @@
 "use client";
 
 import { CanonBadge } from "@/components/classification/canon-badge";
+import { OfflineAwareLink } from "@/components/offline/offline-aware-link";
 import type { ClassificationKind } from "@/lib/content/schemas/shared";
+import type { OfflineLocale } from "@/lib/offline/types";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
 
 export interface ChapterRowData {
   slug: string;
   href: string;
+  locale?: OfflineLocale;
   title: string;
   payload: string;
   plateNo: string;
@@ -103,14 +105,16 @@ export function ChapterRow({ chapter, comingLabel, readingUnit }: ChapterRowProp
   }
 
   return (
-    <Link
+    <OfflineAwareLink
       href={chapter.href}
+      locale={chapter.locale}
+      slug={chapter.slug}
       className={cn(
         shell,
         "no-underline hover:-translate-y-0.5 hover:border-border-strong hover:bg-surface/70",
       )}
     >
       {inner}
-    </Link>
+    </OfflineAwareLink>
   );
 }

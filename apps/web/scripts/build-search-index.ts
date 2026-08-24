@@ -2,7 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { type Locale, locales } from "../i18n/config";
-import { listChapters, listPublishedChapters } from "../lib/content/loader/chapter-loader";
+import { listPublishedChapters } from "../lib/content/loader/chapter-loader";
 import { listGlossaryTerms } from "../lib/content/loader/glossary-loader";
 import type { SearchRecord } from "../lib/search/search-index";
 
@@ -48,7 +48,7 @@ function buildRecords(locale: Locale): SearchRecord[] {
 
   // Topic tags: collect from all chapters (locale-independent ids), label = tag.
   const tags = new Set<string>();
-  for (const chapter of listChapters(locale)) {
+  for (const chapter of listPublishedChapters(locale)) {
     for (const tag of chapter.meta.tags ?? []) tags.add(tag);
   }
   for (const tag of tags) {

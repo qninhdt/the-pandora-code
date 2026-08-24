@@ -1,9 +1,10 @@
 "use client";
 
 import { type Locale, locales } from "@/i18n/config";
-import { usePathname, useRouter } from "next/navigation";
-import { useTransition } from "react";
+import { rememberScrollPosition } from "@/lib/navigation/scroll-position";
 import { useLocale } from "next-intl";
+import { useRouter } from "next/navigation";
+import { useTransition } from "react";
 
 interface LocaleSwitcherProps {
   /** Stack vertically (for the collapsed instrument rail). */
@@ -17,18 +18,21 @@ const labels: Record<Locale, string> = { vi: "VI", en: "EN" };
 export function LocaleSwitcher({ vertical = false }: LocaleSwitcherProps) {
   const current = useLocale() as Locale;
   const router = useRouter();
-  const pathname = usePathname();
   const [pending, startTransition] = useTransition();
 
   function switchTo(next: Locale) {
     if (next === current) return;
-    const segments = pathname.split("/").filter(Boolean);
+    const segments = window.location.pathname.split("/").filter(Boolean);
     if (segments.length === 0) {
-      startTransition(() => router.push(`/${next}`));
+      const destination = `/${next}`;
+      rememberScrollPosition(destination, window.scrollY);
+      startTransition(() => router.push(destination, { scroll: false }));
       return;
     }
     segments[0] = next;
-    startTransition(() => router.push(`/${segments.join("/")}`));
+    const destination = `/${segments.join("/")}${window.location.search}${window.location.hash}`;
+    rememberScrollPosition(destination, window.scrollY);
+    startTransition(() => router.push(destination, { scroll: false }));
   }
 
   return (

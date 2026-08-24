@@ -102,5 +102,8 @@ external/
 worktrees/
 
 .kiro
-
 .agent
+.codegraph
+
+# Generated offline manifests are rebuilt during the web prebuild.
+/apps/web/public/offline/*.json

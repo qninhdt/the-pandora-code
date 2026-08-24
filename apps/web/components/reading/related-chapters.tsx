@@ -1,13 +1,13 @@
-import { useLocale, useTranslations } from "next-intl";
+import { OfflineAwareLink } from "@/components/offline/offline-aware-link";
 import type { LocalizedString } from "@/lib/content/schemas/shared";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 
 export interface RelatedChapterCard {
   slug: string;
   title: LocalizedString;
   hook?: LocalizedString;
-  reading_time_min?: number;
+  readingTimeMin?: number;
 }
 
 interface RelatedChaptersProps {
@@ -16,11 +16,7 @@ interface RelatedChaptersProps {
   className?: string;
 }
 
-export function RelatedChapters({
-  chapters = [],
-  heading,
-  className,
-}: RelatedChaptersProps) {
+export function RelatedChapters({ chapters = [], heading, className }: RelatedChaptersProps) {
   const locale = useLocale() as "vi" | "en";
   const t = useTranslations("chapter");
   const tCommon = useTranslations("common");
@@ -34,8 +30,10 @@ export function RelatedChapters({
       <ul className="grid gap-3 sm:grid-cols-2">
         {chapters.map((c) => (
           <li key={c.slug}>
-            <Link
+            <OfflineAwareLink
               href={`/${locale}/chapters/${c.slug}`}
+              locale={locale}
+              slug={c.slug}
               className="block rounded-[var(--radius-md)] border border-[color:var(--border)] p-4 transition-colors hover:bg-[color:var(--accent)]/5 no-underline"
             >
               <h4 className="text-base font-semibold text-[color:var(--foreground)] mb-1">
@@ -44,12 +42,12 @@ export function RelatedChapters({
               {c.hook ? (
                 <p className="text-sm text-[color:var(--muted)] line-clamp-2">{c.hook[locale]}</p>
               ) : null}
-              {c.reading_time_min ? (
+              {c.readingTimeMin ? (
                 <p className="mt-2 text-xs font-mono text-[color:var(--muted)]">
-                  {tCommon("readingTime", { minutes: c.reading_time_min })}
+                  {tCommon("readingTime", { minutes: c.readingTimeMin })}
                 </p>
               ) : null}
-            </Link>
+            </OfflineAwareLink>
           </li>
         ))}
       </ul>

@@ -3,6 +3,7 @@ import type { ClassificationPct, LocalizedString } from "@/lib/content/schemas/s
 import { cn } from "@/lib/utils";
 import { Clock } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 
 interface ChapterHeroProps {
   title: LocalizedString;
@@ -13,7 +14,7 @@ interface ChapterHeroProps {
   classification: ClassificationPct;
   /** Optional hero image (the chapter's establishing figure) for full-bleed. */
   imageSrc?: string;
-  /** Optional action controls (e.g. bookmark) rendered in the meta row. */
+  /** Optional reader action controls rendered in the meta row. */
   actions?: React.ReactNode;
   className?: string;
 }
@@ -50,7 +51,14 @@ export function ChapterHero({
       {/* Backdrop: chapter figure if present, else a living gradient field. */}
       <div aria-hidden className="absolute inset-0 -z-10">
         {imageSrc ? (
-          <img src={imageSrc} alt="" className="size-full object-cover opacity-50" />
+          <Image
+            src={imageSrc}
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover opacity-50"
+          />
         ) : null}
         <div
           className="absolute inset-0"

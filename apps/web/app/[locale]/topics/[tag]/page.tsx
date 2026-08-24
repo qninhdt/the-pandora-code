@@ -1,10 +1,12 @@
 import { CanonBadge } from "@/components/classification/canon-badge";
-import { type Locale, isLocale } from "@/i18n/config";
-import { getChapter, listChapterSlugs } from "@/lib/content/loader/chapter-loader";
+import { OfflineAwareLink } from "@/components/offline/offline-aware-link";
+import { JsonLd } from "@/components/seo/json-ld";
+import { type Locale, isLocale, locales } from "@/i18n/config";
+import { listPublishedChapters } from "@/lib/content/loader/chapter-loader";
 import { buildPageMetadata } from "@/lib/seo/page-metadata";
+import { createBreadcrumbListSchema } from "@/lib/seo/structured-data";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 
 interface TopicPageProps {
@@ -20,23 +22,20 @@ export async function generateMetadata({ params }: TopicPageProps): Promise<Meta
     path: `/topics/${tag}`,
     title: t("page.topics.title", { tag }),
     description: t("page.topics.subtitle"),
+    availableLocales: locales.filter((candidate) => collectTags(candidate).includes(tag)),
   });
 }
 
-function collectTags(): string[] {
-  const slugs = listChapterSlugs();
+function collectTags(locale: Locale): string[] {
   const tags = new Set<string>();
-  for (const slug of slugs) {
-    const chapter = getChapter(slug, "vi");
-    if (!chapter) continue;
+  for (const chapter of listPublishedChapters(locale)) {
     for (const tag of chapter.meta.tags ?? []) tags.add(tag);
   }
   return Array.from(tags);
 }
 
 export function generateStaticParams() {
-  const tags = collectTags();
-  return ["vi", "en"].flatMap((locale) => tags.map((tag) => ({ locale, tag })));
+  return locales.flatMap((locale) => collectTags(locale).map((tag) => ({ locale, tag })));
 }
 
 export default async function TopicPage({ params }: TopicPageProps) {
@@ -44,46 +43,63 @@ export default async function TopicPage({ params }: TopicPageProps) {
   if (!isLocale(locale)) notFound();
   setRequestLocale(locale);
   const t = await getTranslations("page.topics");
+  const tRoot = await getTranslations({ locale });
+  const breadcrumb = createBreadcrumbListSchema([
+    { name: tRoot("nav.home"), item: `/${locale}` },
+    { name: tRoot("page.topics.title", { tag }), item: `/${locale}/topics/${tag}` },
+  ]);
 
-  const chapters = listChapterSlugs()
-    .map((slug) => getChapter(slug, locale as Locale))
-    .filter((c): c is NonNullable<typeof c> => c !== null && (c.meta.tags ?? []).includes(tag));
+  const chapters = listPublishedChapters(locale as Locale).filter((chapter) =>
+    (chapter.meta.tags ?? []).includes(tag),
+  );
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-12 space-y-6">
-      <header>
-        <p className="text-xs font-mono uppercase tracking-wide text-[color:var(--muted)]">
-          {t("topicKicker")}
-        </p>
-        <h1 className="text-3xl font-semibold tracking-tight">#{tag}</h1>
-      </header>
+    <>
+      <JsonLd data={breadcrumb} />
+      <main className="mx-auto max-w-3xl space-y-6 px-6 py-12">
+        <nav aria-label="Breadcrumb" className="font-sans text-xs text-subtle">
+          <a href={`/${locale}`} className="hover:text-cyan">
+            {tRoot("nav.home")}
+          </a>
+          <span aria-hidden className="px-2">
+            /
+          </span>
+          <span className="text-muted">{tRoot("page.topics.title", { tag })}</span>
+        </nav>
+        <header>
+          <p className="text-xs font-mono uppercase tracking-wide text-[color:var(--muted)]">
+            {t("topicKicker")}
+          </p>
+          <h1 className="text-3xl font-semibold tracking-tight">#{tag}</h1>
+        </header>
 
-      {chapters.length === 0 ? (
-        <p className="text-sm text-[color:var(--muted)]">
-          {t("empty")}
-        </p>
-      ) : (
-        <ul className="space-y-3">
-          {chapters.map((c) => (
-            <li
-              key={c.meta.slug}
-              className="rounded-[var(--radius-md)] border border-[color:var(--border)] p-4"
-            >
-              <Link
-                href={`/${locale}/chapters/${c.meta.slug}`}
-                className="no-underline text-[color:var(--foreground)]"
+        {chapters.length === 0 ? (
+          <p className="text-sm text-[color:var(--muted)]">{t("empty")}</p>
+        ) : (
+          <ul className="space-y-3">
+            {chapters.map((c) => (
+              <li
+                key={c.meta.slug}
+                className="rounded-[var(--radius-md)] border border-[color:var(--border)] p-4"
               >
-                <h2 className="text-lg font-semibold">{c.title}</h2>
-                <div className="mt-2">
-                  <CanonBadge kind="canon">
-                    {`Canon ${c.meta.classification.canon_pct}%`}
-                  </CanonBadge>
-                </div>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
-    </main>
+                <OfflineAwareLink
+                  href={`/${locale}/chapters/${c.meta.slug}`}
+                  locale={locale as Locale}
+                  slug={c.meta.slug}
+                  className="no-underline text-[color:var(--foreground)]"
+                >
+                  <h2 className="text-lg font-semibold">{c.title}</h2>
+                  <div className="mt-2">
+                    <CanonBadge kind="canon">
+                      {`Canon ${c.meta.classification.canon_pct}%`}
+                    </CanonBadge>
+                  </div>
+                </OfflineAwareLink>
+              </li>
+            ))}
+          </ul>
+        )}
+      </main>
+    </>
   );
 }

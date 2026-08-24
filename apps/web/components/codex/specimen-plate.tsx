@@ -1,11 +1,14 @@
 import { CanonBadge } from "@/components/classification/canon-badge";
+import { OfflineAwareLink } from "@/components/offline/offline-aware-link";
 import type { ClassificationKind } from "@/lib/content/schemas/shared";
+import type { OfflineLocale } from "@/lib/offline/types";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
 
 interface SpecimenPlateProps {
   href: string;
+  locale?: OfflineLocale;
+  slug?: string;
   title: string;
   subtitle?: string;
   /** Establishing figure for the plate; falls back to a gradient field. */
@@ -25,6 +28,8 @@ interface SpecimenPlateProps {
 // a tier badge. Lifts and glows on hover.
 export function SpecimenPlate({
   href,
+  locale,
+  slug,
   title,
   subtitle,
   imageSrc,
@@ -69,11 +74,7 @@ export function SpecimenPlate({
             № {plateNo}
           </span>
         )}
-        {tier && (
-          <CanonBadge kind={tier}>
-            {tierLabel}
-          </CanonBadge>
-        )}
+        {tier && <CanonBadge kind={tier}>{tierLabel}</CanonBadge>}
       </div>
 
       <div className="mt-auto p-5">
@@ -110,13 +111,15 @@ export function SpecimenPlate({
   if (coming) return <div className={shell}>{inner}</div>;
 
   return (
-    <Link
+    <OfflineAwareLink
       href={href}
+      locale={locale}
+      slug={slug}
       className={shell}
       style={{ boxShadow: "0 1px 0 0 transparent" }}
       onMouseEnter={undefined}
     >
       {inner}
-    </Link>
+    </OfflineAwareLink>
   );
 }

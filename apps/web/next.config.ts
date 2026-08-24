@@ -1,4 +1,5 @@
-import path from "path";
+import path from "node:path";
+import { withSerwist } from "@serwist/turbopack";
 import { createMDX } from "fumadocs-mdx/next";
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
@@ -30,6 +31,17 @@ const nextConfig: NextConfig = {
   typedRoutes: false,
   // r3f/three ship untranspiled ESM; transpile so Next can bundle them.
   transpilePackages: ["three", "@react-three/fiber", "@react-three/drei"],
+  async headers() {
+    return [
+      {
+        source: "/:locale/chapters/:slug",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=0, must-revalidate" },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+        ],
+      },
+    ];
+  },
 };
 
-export default withMDX(withNextIntl(nextConfig));
+export default withSerwist(withMDX(withNextIntl(nextConfig)));

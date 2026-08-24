@@ -1,11 +1,13 @@
 import { GlassPanel } from "@/components/codex/glass-panel";
 import { GlossaryBrowser } from "@/components/glossary/glossary-browser";
 import { PageBackground } from "@/components/layout/page-background";
+import { JsonLd } from "@/components/seo/json-ld";
 import { type Locale, isLocale } from "@/i18n/config";
 import { getGlossaryCoverImage } from "@/lib/content/loader/glossary-cover";
 import { listGlossaryTerms } from "@/lib/content/loader/glossary-loader";
 import { getPageBackground } from "@/lib/content/loader/page-background";
 import { buildPageMetadata } from "@/lib/seo/page-metadata";
+import { createBreadcrumbListSchema } from "@/lib/seo/structured-data";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -39,8 +41,23 @@ export default async function GlossaryIndex({ params }: GlossaryIndexProps) {
 
   return (
     <>
+      <JsonLd
+        data={createBreadcrumbListSchema([
+          { name: t("nav.home"), item: `/${loc}` },
+          { name: t("page.glossary.title"), item: `/${loc}/glossary` },
+        ])}
+      />
       {bg && <PageBackground src={bg} />}
       <main className="mx-auto max-w-6xl px-4 pb-24 pt-24 sm:px-6 sm:pt-32">
+        <nav aria-label="Breadcrumb" className="mb-6 font-sans text-xs text-subtle">
+          <a href={`/${loc}`} className="hover:text-cyan">
+            {t("nav.home")}
+          </a>
+          <span aria-hidden className="px-2">
+            /
+          </span>
+          <span className="text-muted">{t("page.glossary.title")}</span>
+        </nav>
         <header className="mb-8">
           <h1 className="font-display text-4xl font-700 tracking-tight text-foreground sm:text-5xl">
             {t("page.glossary.title")}
