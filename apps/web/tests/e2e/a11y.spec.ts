@@ -9,8 +9,8 @@ test.describe("a11y", () => {
     expect(critical).toEqual([]);
   });
 
-  test("vi demo chapter has no critical violations", async ({ page }) => {
-    await page.goto("/vi/chapters/demo-chapter-foundation-shell");
+  test("vi published chapter has no critical violations", async ({ page }) => {
+    await page.goto("/vi/chapters/reading-pandora-as-a-specimen");
     const results = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze();
     const critical = results.violations.filter((v) => v.impact === "critical");
     expect(critical).toEqual([]);

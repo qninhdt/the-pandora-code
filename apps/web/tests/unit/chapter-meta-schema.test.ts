@@ -10,7 +10,6 @@ describe("ChapterMeta schema", () => {
     title: { vi: "T", en: "T" },
     hook: { vi: "H", en: "H" },
     authors: ["bardabez"],
-    reading_time_min: 5,
     tags: [],
     classification: {
       canon_pct: 25,
@@ -26,6 +25,30 @@ describe("ChapterMeta schema", () => {
 
   it("accepts a valid meta", () => {
     expect(() => ChapterMeta.parse(valid)).not.toThrow();
+  });
+
+  it("accepts locale-specific overrides only with a reason", () => {
+    expect(
+      ChapterMeta.parse({
+        ...valid,
+        reading_time_override: {
+          en: { minutes: 7, reason: "Reviewed after a recorded editorial read-through" },
+        },
+      }).reading_time_override?.en?.minutes,
+    ).toBe(7);
+  });
+
+  it("rejects a localized override without a reason", () => {
+    expect(() =>
+      ChapterMeta.parse({
+        ...valid,
+        reading_time_override: { vi: { minutes: 7, reason: "  " } },
+      }),
+    ).toThrow();
+  });
+
+  it("rejects the removed shared reading-time field", () => {
+    expect(() => ChapterMeta.parse({ ...valid, reading_time_min: 5 })).toThrow();
   });
 
   it("rejects classification not summing to 100", () => {

@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-const SLUG = "demo-chapter-foundation-shell";
+const SLUG = "reading-pandora-as-a-specimen";
 
 test.describe("chapter reader", () => {
   test("vi chapter renders hero and classification", async ({ page }) => {
@@ -14,9 +14,11 @@ test.describe("chapter reader", () => {
     await expect(page.locator("h1")).toBeVisible();
   });
 
-  test("chapters index lists demo chapter", async ({ page }) => {
+  test("chapters index lists a published chapter", async ({ page }) => {
     await page.goto("/vi/chapters");
-    await expect(page.getByRole("link", { name: /demo/i }).first()).toBeVisible();
+    await expect(
+      page.getByRole("link", { name: /reading pandora as a specimen/i }).first(),
+    ).toBeVisible();
   });
 
   test("unknown slug returns 404", async ({ page }) => {
