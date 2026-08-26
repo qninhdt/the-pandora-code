@@ -1,0 +1,174 @@
+{
+  "viz": {
+    "gyreBoundaryCurrents": {
+      "title": "Một lưu vực, hai bờ không hề giống nhau",
+      "subtitle": "Gió khép nước mặt thành một vòng tuần hoàn; chuyển động tự quay quyết định bờ nào được làn đường tốc hành.",
+      "aria": "Vòng hải lưu quy mô lưu vực, dòng ven bờ tây chạy nhanh gấp {west} lần vùng giữa lưu vực",
+      "hemisphereLabel": "Bán cầu",
+      "hemisphere": {
+        "north": "Bắc bán cầu",
+        "south": "Nam bán cầu"
+      },
+      "play": "Cho dòng chảy chạy",
+      "pause": "Tạm dừng dòng chảy",
+      "coastWest": "Bờ tây",
+      "coastEast": "Bờ đông",
+      "interior": "Vùng giữa lưu vực chảy chậm",
+      "limb": {
+        "west": "Nhánh ven bờ tây",
+        "east": "Nhánh ven bờ đông"
+      },
+      "slider": {
+        "gradient": "Mức thay đổi của lực Coriolis theo vĩ độ",
+        "none": "Không thay đổi",
+        "mild": "Vừa phải",
+        "strong": "Mạnh"
+      },
+      "readout": {
+        "west": "Tốc độ nhánh bờ tây",
+        "westNote": "Hẹp, sâu, chảy nhanh",
+        "east": "Tốc độ nhánh bờ đông",
+        "eastNote": "Rộng, nông, chảy chậm",
+        "dwell": "Thời gian ở bờ đông / bờ tây"
+      },
+      "verdict": {
+        "symmetric": "Một đường đua công bằng: vòng nước dành thời gian như nhau cho cả hai bờ.",
+        "intensified": "Vòng nước lững thững dọc bờ đông rồi phóng vụt xuống dọc bờ tây."
+      },
+      "hint": {
+        "symmetric": "Nếu lực Coriolis giữ nước như nhau ở mọi vĩ độ, vòng hải lưu sẽ đối xứng — hai bờ dài rộng bằng nhau, nước bò chậm quanh cả hai. Không có đại dương nào trên một hành tinh tự quay trông như vậy.",
+        "intensified": "Vì lực Coriolis mạnh dần theo vĩ độ, dòng nước hồi lưu bị dồn ép vào sát bờ tây: một dòng hẹp, sâu và chảy nhanh ở đó, còn phía bên kia chỉ là dòng trôi rộng và chậm. Gulf Stream và Kuroshio của Trái Đất thuộc loại bờ tây; California và Humboldt thuộc loại bờ đông."
+      }
+    },
+    "codaRhythmComparator": {
+      "title": "Thông điệp nằm ở nhịp",
+      "subtitle": "Mọi tiếng tách đều giống nhau. Điều phân biệt bầy tiếng nói này với bầy khác chỉ là vị trí các tiếng tách trong thời gian.",
+      "aria": "Các dải nhịp tiếng tách so sánh các vốn âm, đang hiển thị {voice}",
+      "timeAxis": "Một chu kỳ của mẫu nhịp →",
+      "voiceLabel": "Vốn âm đang xem",
+      "sympatricToggle": "Hiện tất cả cùng lúc",
+      "play": "Cho mẫu nhịp chạy",
+      "pause": "Tạm dừng mẫu nhịp",
+      "unresolved": "Phim dịch nó, nhưng chưa bao giờ vẽ nó ra",
+      "voice": {
+        "regular": "Bầy nhịp đều",
+        "plusOneOneThree": "Bầy hai rồi ba",
+        "short": "Bầy nhịp dồn",
+        "tulkun": "Tiếng gọi tulkun"
+      },
+      "voiceShort": {
+        "regular": "Nhịp đều",
+        "plusOneOneThree": "Hai rồi ba",
+        "short": "Nhịp dồn",
+        "tulkun": "Tulkun"
+      },
+      "signature": {
+        "regular": "Nhịp đều",
+        "plusOneOneThree": "Hai, rồi ba",
+        "short": "Chùm dồn",
+        "tulkun": "Ầm, hú, tách"
+      },
+      "range": {
+        "regular": "Lặn sâu ngoài khơi",
+        "plusOneOneThree": "Thềm ven bờ và đảo san hô",
+        "short": "Đi rộng vùng nước mở",
+        "tulkun": "Cả một lưu vực đại dương"
+      },
+      "carries": {
+        "regular": "Tư cách thành viên bầy",
+        "plusOneOneThree": "Tư cách thành viên bầy",
+        "short": "Tư cách thành viên bầy",
+        "tulkun": "Lời đối thoại được dịch"
+      },
+      "limit": {
+        "regular": "Giữ nguyên hàng chục năm; không nằm trong gien",
+        "plusOneOneThree": "Chung dòng mẹ với các bầy khác, nhưng không bao giờ chung bầy",
+        "short": "Giữ riêng biệt qua hàng chục năm ghi âm",
+        "tulkun": "Chưa hề trưng ra ngữ pháp, chỉ khẳng định ý nghĩa"
+      },
+      "hint": {
+        "clan": "Các bầy cá nhà táng được đặt tên theo chính những mẫu nhịp này. Bản thân các tiếng tách đều là những xung âm băng rộng giống nhau; mẫu hình của các khoảng lặng mới là toàn bộ tín hiệu.",
+        "sympatric": "Những bầy này dùng cùng một vùng nước vào cùng một thời điểm và chung dòng mẹ, nhưng mỗi đơn vị chỉ kết giao với đơn vị nào giữ đúng nhịp của mình. Một khác biệt không rộng hơn một khoảng lặng đang làm công việc của một đường biên xã hội.",
+        "tulkun": "Nguyên tác cho tulkun những tiếng ầm trầm vang khắp một lưu vực đại dương, và dịch chúng thành câu nói. Nhưng nó chưa bao giờ trưng ra cấu trúc. Dải này cố ý để trống — bộ phim khẳng định ý nghĩa mà không hé lộ bộ mã."
+      },
+      "signatureNote": {
+        "regular": "Năm đến tám tiếng tách cách nhau đều đặn",
+        "plusOneOneThree": "Hai tiếng tách rời, rồi một chùm ba tiếng nhanh",
+        "short": "Ba hoặc bốn tiếng tách dồn sát nhau",
+        "tulkun": "Nguyên tác có nêu; chưa bao giờ vẽ ra"
+      },
+      "readout": {
+        "signature": "Dấu hiệu nhịp điệu",
+        "gap": "Khoảng cách hẹp nhất giữa hai tiếng tách",
+        "gapValue": "{pct}% chu kỳ",
+        "gapNone": "Không đo được",
+        "gapNote": "Toàn bộ khác biệt giữa các bầy nằm trong những con số nhỏ đến thế",
+        "range": "Nơi nó được dùng",
+        "carries": "Điều mẫu nhịp mang theo"
+      }
+    },
+    "elderMemoryLedger": {
+      "title": "Điều một bầy mất đi cùng những cá thể già nhất",
+      "subtitle": "Có loại tri thức chỉ tồn tại trong con vật từng sống qua một năm khốn khó. Lấy những con ấy đi, bầy quên nhanh hơn hẳn tốc độ nó thưa dần.",
+      "aria": "Cấu trúc tuổi của bầy; khả năng bầy còn sống sót vẫn giữ được ký ức về năm khốn khó là {pct} phần trăm",
+      "ageAxis": "Tuổi của từng thành viên trong bầy, tính theo năm",
+      "glowNote": "Thân càng sáng, con vật càng đi qua nhiều năm khốn khó",
+      "controls": {
+        "removed": "Số cá thể già nhất bị lấy đi",
+        "removedValue": "Mất {n} con",
+        "recurrence": "Năm khốn khó hiếm đến mức nào",
+        "recurrenceValue": "1 lần trong {n} năm"
+      },
+      "readout": {
+        "bodies": "Số đầu con",
+        "bodiesNote": "Điều một cuộc kiểm đếm ghi lại",
+        "experience": "Kinh nghiệm đã sống",
+        "experienceNote": "Điều không cuộc kiểm đếm nào ghi lại",
+        "retained": "Bầy vẫn còn giữ ký ức"
+      },
+      "verdict": {
+        "held": "Vẫn còn con đang sống từng đi qua một năm như thế.",
+        "lost": "Gần như không còn con nào từng đi qua một năm như thế."
+      },
+      "hint": {
+        "intact": "Còn đủ mọi thành viên. Những con già nhất đã đi qua nhiều năm khốn khó nhất, nên tri thức hiếm hoi nhất của bầy nằm ở chúng — và chỉ an toàn chừng nào chúng còn sống.",
+        "asymmetric": "Hãy so hai con số trên cùng. Số đầu con hầu như không nhích; còn kinh nghiệm đã sống của bầy thì tụt sâu gấp nhiều lần, vì kinh nghiệm dồn hết về đầu già. Một cuộc đi săn nhắm vào những con lớn nhất không hề lấy đi một mẫu trung bình.",
+        "buffered": "Ở tần suất này, năm khốn khó xảy ra đủ thường xuyên để con non trưởng thành cũng từng gặp, nên tri thức của bầy vẫn sống sót dù mất cá thể già. Hãy làm năm khốn khó hiếm hơn và lớp đệm ấy tan biến."
+      }
+    },
+    "reefRugosityProfile": {
+      "title": "Chính những nếp gấp là sinh cảnh",
+      "subtitle": "Đặt một sợi dây lên mặt rạn rồi chia độ dài của nó cho khoảng cách nó phủ qua. Chỉ một con số ấy dự báo được lượng sinh vật mà cái nền này gánh nổi.",
+      "aria": "Mặt cắt bề mặt rạn san hô với chỉ số gồ ghề đo được là {index}",
+      "linearSpan": "Khoảng cách thẳng mà sợi dây phủ qua",
+      "surface": "Mặt biển",
+      "swellThrough": "Sóng lừng vẫn lọt qua",
+      "controls": {
+        "complexity": "Độ phức tạp cấu trúc của khung rạn"
+      },
+      "state": {
+        "complex": "Khung phân nhánh",
+        "reduced": "Đang mất cấu trúc",
+        "flattened": "Bãi vụn phẳng"
+      },
+      "sizeClass": {
+        "small": "Kẽ nứt cạn",
+        "medium": "Hốc cỡ trung",
+        "large": "Hang và mái vòm"
+      },
+      "readout": {
+        "rugosity": "Chỉ số gồ ghề",
+        "rugosityNote": "1,0 là mặt sàn phẳng; rạn khỏe mạnh đạt 2,5 trở lên",
+        "refuges": "Số chỗ ẩn náu đếm được",
+        "refugesNote": "Mọi khe lõm đủ sâu để che chở cho một sinh vật",
+        "swell": "Năng lượng sóng truyền qua",
+        "swellNote": "Phần chạm tới đầm phá phía sau rạn"
+      },
+      "hint": {
+        "complex": "Một khung phân nhánh gấp được nhiều diện tích hơn hẳn vào cùng một khoảnh nền. Mỗi nếp gấp là một chỗ trốn kẻ săn mồi, một vườn ươm cho sinh vật nhỏ, một chỗ để loài khác bám vào — và nó tiêu tán sóng lừng trước khi sóng chạm tới làng.",
+        "reduced": "Cấu trúc mảnh nhất mất trước. Nhánh con, rồi cành, rồi khối tảng: khi khung rạn bị bào dần, những chỗ trú nhỏ nhất biến mất trước khi rạn trông có vẻ hư hại, và ngày càng nhiều sóng lừng lọt qua.",
+        "flattened": "Ở chỉ số gần 1,0, rạn vẫn còn đó với tư cách đá và đã mất với tư cách sinh cảnh. Các kẽ nứt đã bị lấp, những sinh vật từng sống trong đó không còn chỗ nào để ở, và ngọn sóng lừng mà các bậc thềm từng chặn lại nay cứ thế tràn qua."
+      }
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "viz": {
+    "solventWindow": {
+      "title": "The solvent bench",
+      "subtitle": "Set a world's surface temperature, then ask what could still flow there — and whether a cell could be built in it",
+      "aria": "Liquid temperature ranges for four candidate biological solvents, with {count} of them liquid at the temperature currently set",
+      "axisLabel": "Surface temperature (kelvin)",
+      "marker": "{temp} K",
+      "tempLabel": "Surface temperature of the world",
+      "solventLabel": "Choose a solvent to examine",
+      "gateLabel": "What a cell needs from its solvent",
+      "phaseLabel": "State at this temperature",
+      "windowLabel": "Liquid window",
+      "windowNote": "How wide a climate the liquid tolerates",
+      "polarityLabel": "Polarity",
+      "polarityNote": "Higher pulls polar molecules apart more strongly",
+      "liquidCountLabel": "Liquid here",
+      "liquidCountNote": "Candidates still flowing at this temperature",
+      "names": {
+        "water": "Water",
+        "ammonia": "Ammonia",
+        "methane": "Methane",
+        "formamide": "Formamide"
+      },
+      "phase": {
+        "solid": "Frozen solid",
+        "liquid": "Liquid",
+        "gas": "Boiled away"
+      },
+      "gates": {
+        "solvation": "Dissolves the molecules",
+        "folding": "Folds proteins",
+        "membrane": "Builds a membrane"
+      },
+      "gateState": {
+        "works": "Demonstrated",
+        "untested": "Not shown",
+        "fails": "Ruled out"
+      },
+      "gateDetail": {
+        "water": {
+          "solvation": "Every polar biomolecule you are made of goes into solution in it — sugars, salts, amino acids, the phosphate spine of DNA.",
+          "folding": "Folding is driven by water: oily parts of a protein flee it and huddle inward while the rest embrace it, and that flight is what carves an enzyme's shape.",
+          "membrane": "A lipid bilayer assembles itself in water for the same reason — oily tails inward, water-loving heads out. No instruction needed, only the solvent."
+        },
+        "ammonia": {
+          "solvation": "Polar and cosmically abundant, so it dissolves polar compounds respectably — the reason it stays on every serious list of alternative solvents.",
+          "folding": "It hydrogen-bonds, so an ammonia version of the fold-driving effect is not excluded. Nobody has shown one working, and no molecule is known to do it.",
+          "membrane": "Ordinary bilayers are tuned to water. Whether an equivalent sheet could hold together in liquid ammonia is an open theoretical question."
+        },
+        "methane": {
+          "solvation": "Non-polar, so the polar molecules biochemistry runs on barely dissolve in it at all. A different chemistry would be needed from the ground up.",
+          "folding": "With no hydrogen bonding there is nothing for an oily group to flee, so the effect that folds every one of your enzymes simply does not exist here.",
+          "membrane": "A lipid bilayer cannot form in a non-polar liquid. Theorists have to invent an entirely different membrane for Titan's seas to make cells thinkable."
+        },
+        "formamide": {
+          "solvation": "More polar than water, and a better medium than water for exactly the phosphate chemistry that assembles a genetic backbone.",
+          "folding": "Its polarity leaves room for a folding effect in principle, but no protein is known to fold in it and the mechanism has never been demonstrated.",
+          "membrane": "No self-assembling membrane has been shown in formamide. The gap between a promising solvent and a working cell is still unbridged."
+        }
+      },
+      "verdict": {
+        "water": "Water flows here, and it is the only candidate that clears all three requirements: it dissolves the molecules, it drives protein folding, and a membrane assembles in it unaided. Notice what it does not win — formamide beats it on liquid window and on polarity. That is precisely why the honest verdict is 'close to a universal optimum' rather than 'optimal'.",
+        "ammonia": "Ammonia flows here, and it dissolves polar compounds well enough to stay on the list. But its liquid window at ordinary pressure is barely a quarter of water's, and neither protein folding nor a working membrane has ever been shown in it. A candidate, not a rival.",
+        "methane": "Methane flows here — and that is nearly the end of the good news. Being non-polar, it dissolves almost nothing biochemistry needs, offers no folding effect, and will not hold a lipid bilayer. Life in Titan's seas would need a chemistry invented from scratch, running at a geological crawl.",
+        "formamide": "Formamide flows here, and it out-scores water on both headline numbers: a liquid window twice as wide and higher polarity, plus better phosphate chemistry for assembling a genetic backbone. What it lacks is any demonstration of folding or a membrane. Keep it as the reason to say 'close to' optimal — and to keep the door open.",
+        "notLiquid": "At this temperature the chosen solvent is not a liquid at all, so the question of whether a cell could be built in it does not arise. A solvent that is frozen or boiled away is no solvent. This is the first and crudest filter any living world has to pass."
+      }
+    },
+    "networkOrMind": {
+      "title": "Network or mind?",
+      "subtitle": "Four checks in series, and five specimens to run through them — including two whose answers we already know",
+      "aria": "A diagnostic bench of four consecutive checks; a signal travels along it and stops at the first check the chosen specimen fails",
+      "enters": "Signal in",
+      "blocked": "Stalled",
+      "clears": "Clears every check",
+      "reachedLabel": "Checks cleared",
+      "reachedNote": "Before the signal stalls",
+      "verdictLabel": "What the bench reads",
+      "specimenLabel": "Choose a specimen to test",
+      "gateLabel": "How this specimen answered each check",
+      "names": {
+        "slimeMould": "Slime mould",
+        "beeSwarm": "Bee swarm",
+        "cerebellum": "Cerebellum",
+        "cortex": "Cerebral cortex",
+        "eywa": "Eywa"
+      },
+      "gates": {
+        "competence": "Solves problems it was never told about",
+        "recurrence": "Loops back on itself, irreducibly",
+        "broadcast": "Broadcasts one content to the whole system",
+        "experience": "Something it is like to be it"
+      },
+      "short": {
+        "competence": "Competence",
+        "recurrence": "Integration",
+        "broadcast": "Broadcast",
+        "experience": "Experience"
+      },
+      "grade": {
+        "yes": "Clears it",
+        "partial": "Locally only",
+        "no": "Fails",
+        "unknown": "Unanswerable"
+      },
+      "source": {
+        "behaviour": "Observed behaviour",
+        "iit": "Integrated Information Theory",
+        "gwt": "Global Workspace Theory",
+        "hardProblem": "The hard problem"
+      },
+      "verdict": {
+        "network": "An intelligent network",
+        "candidate": "A candidate for a mind",
+        "mind": "A mind"
+      },
+      "hint": {
+        "slimeMould": "One cell, no neurons, and it reproduces the Tokyo rail map. It stalls at integration: thick tubes where flow is high is a local rule, not a whole bound into something irreducible. Competence without a candidate for a mind — and the cleanest proof the first check on this bench is not the interesting one.",
+        "beeSwarm": "The swarm makes a genuinely good decision with no decider, and its piping signal is the closest thing here to a broadcast. But it carries a single alarm, not arbitrary content offered to every processor, and the swarm never binds into one irreducible system. Brilliant, and nobody home.",
+        "cerebellum": "The control that matters. Four-fifths of your neurons sit here, and people who lose it stay fully conscious. It stalls at the very first architectural check because it is a one-way pipeline. If a test cannot fail the biggest heap of connections in your skull, it is only counting parts.",
+        "cortex": "The other control: the one specimen that runs the whole bench. Saturated with recurrent loops, wired for the sudden system-wide ignition that makes a content conscious — and it is the sole case where the last check is answered from the inside rather than guessed from outside.",
+        "eywa": "Now the specimen this chapter is about. Eywa clears competence outright — the wildlife surge, the balance kept for millennia. It stalls at integration, because root-and-mycelial signalling is slow and diffuse, with dense pockets at hubs like the Tree of Souls rather than one irreducible planetary whole. Memory access is a query at one tree, not an ignition across a world. And the last check is not a low score; it is unanswerable from outside, exactly as it is for the person beside you."
+      },
+      "detail": {
+        "slimeMould": {
+          "competence": "Set on food laid out like the cities around Tokyo, it floods every route, then prunes until what remains matches a rail network humans took decades to optimise.",
+          "recurrence": "Its feedback is real but local: tubes carrying more flow thicken, the rest wither. The network never becomes a whole that cannot be carved into independent parts.",
+          "broadcast": "Nothing here selects a content and makes it available system-wide. Every region responds to the flow in its own tubes.",
+          "experience": "No structure of the kind either framework requires, and none of its competence needs one. The answer is a plain no."
+        },
+        "beeSwarm": {
+          "competence": "Scouts dance, inspect each other's finds, and count their neighbours; the colony reliably picks the best cavity available. No bee compares all the options.",
+          "recurrence": "Recruitment feeds back on itself at each site, which is genuine integration — but it stays local to the candidate, never welding the swarm into one irreducible system.",
+          "broadcast": "The piping signal genuinely goes out to everyone and shuts down competing dances. It carries one message, though, not any content the whole colony might need.",
+          "experience": "Individual bees may well have inner lives. The swarm as an entity shows no sign of one, and its decision needs none."
+        },
+        "cerebellum": {
+          "competence": "It runs the arithmetic of balance and fine movement continuously and superbly. Lose it and your gait, speech, and coordination fall apart.",
+          "recurrence": "Almost purely feed-forward: signals pour in one direction, are processed, and exit. On Integrated Information Theory's own terms a feed-forward system unfolds into independent chains, so its integrated information is essentially nil.",
+          "broadcast": "No workspace, no ignition. It reports its results onward instead of lighting up the whole brain with them.",
+          "experience": "The decisive empirical fact on this bench: people missing a cerebellum are motorically impaired and fully conscious. Sixty-nine billion neurons, and the lights stay on without them."
+        },
+        "cortex": {
+          "competence": "Perception, language, planning, and the ordinary miracle of recognising a face — the specimen every other entry here is implicitly compared against.",
+          "recurrence": "Saturated with re-entrant loops and locked in constant conversation with the thalamus. Information reverberates, re-enters, and binds instead of merely passing through.",
+          "broadcast": "The signature is 'ignition': a sudden system-wide flare of synchronised activity that puts one content in front of every specialised processor at once.",
+          "experience": "The one case answered from the inside. You are reading this, which is not evidence available for any other specimen on the bench."
+        },
+        "eywa": {
+          "competence": "Coordinates a continent-wide defence, holds a biosphere's balance for millennia, and stores whole personalities with enough fidelity to replay them. Competence is not in question anywhere in this chapter.",
+          "recurrence": "Grace's connection count is real and beside the point. Root-to-root chemical and bioelectric signalling is slow and diffuse — dense local integration at hubs like the Tree of Souls, no evidence of one fast, irreducible, planet-spanning whole.",
+          "broadcast": "Canon shows point-to-point access: a body plugs into one specific tree to reach one specific memory. That is a query answered off a drive, not a planet flaring into a single shared moment.",
+          "experience": "Unanswerable, and saying so is the honest result rather than a hedge. Subjective experience cannot be read off behaviour from outside — not for Eywa, and not for anyone else either."
+        }
+      }
+    }
+  }
+}

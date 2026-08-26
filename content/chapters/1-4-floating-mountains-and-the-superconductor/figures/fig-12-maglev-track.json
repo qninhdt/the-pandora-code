@@ -20,5 +20,8 @@
   ],
   "consistency_notes": "The glow in the gap is the same cyan as the chapter's flux threads, tying the Earth example to the Pandora physics; the train clearly does not touch the rail.",
   "aspect_ratio": "4:3",
-  "negative_prompt": "no text, no logos, no wheels, no contact between train and track, no oversaturation"
+  "negative_prompt": "no text, no logos, no wheels, no contact between train and track, no oversaturation",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

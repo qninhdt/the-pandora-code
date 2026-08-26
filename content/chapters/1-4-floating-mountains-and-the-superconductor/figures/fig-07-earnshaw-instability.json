@@ -20,5 +20,8 @@
   ],
   "consistency_notes": "Glowing cyan lines on a near-black background; magenta reserved for the danger/escape arrows, matching the chapter's diagram language.",
   "aspect_ratio": "4:3",
-  "negative_prompt": "no text, no numbers, no photorealism, no 3D bevels, no clutter"
+  "negative_prompt": "no text, no numbers, no photorealism, no 3D bevels, no clutter",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

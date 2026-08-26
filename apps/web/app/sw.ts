@@ -21,6 +21,7 @@ import {
   putIntent,
   reconcileOfflineIntents,
 } from "../lib/offline/db";
+import { collectShellImageUrls } from "../lib/offline/shell-assets";
 import {
   OFFLINE_PROTOCOL_VERSION,
   type OfflineAsset,
@@ -42,6 +43,12 @@ declare const self: ServiceWorkerGlobalScope & {
 const MAX_ASSET_BYTES = 80 * 1024 * 1024;
 const MAX_CHAPTER_BYTES = 80 * 1024 * 1024;
 const MAX_ASSETS = 128;
+// Ceiling for the shell's imagery (brand mark plus chapter/author covers).
+// Today's covers total roughly 6MB, so this is headroom rather than a limit the
+// book is expected to reach; it exists because the shell is warmed unattended on
+// a first visit and must stay a bounded cost as chapters are added. Past the cap
+// a cover simply falls back to the gradient placeholder the lists already draw.
+const MAX_SHELL_IMAGE_BYTES = 20 * 1024 * 1024;
 const OFFLINE_FALLBACK_URL = "/offline.html";
 const SHELL_LOCALES: OfflineLocale[] = ["en", "vi"];
 const SHELL_PATHS = ["", "/chapters", "/glossary", "/timeline", "/author", "/offline"];
@@ -331,8 +338,18 @@ function shellUrls(): string[] {
   return SHELL_LOCALES.flatMap((locale) => SHELL_PATHS.map((path) => `/${locale}${path}`));
 }
 
+/** Shared across every shell document so the ceiling is a whole-shell budget. */
+interface ShellImageBudget {
+  bytes: number;
+  claimed: Set<string>;
+}
+
 /** Cache one shell document plus the /_next/static bundle it references. */
-async function precacheShellDocument(cache: Cache, path: string): Promise<void> {
+async function precacheShellDocument(
+  cache: Cache,
+  path: string,
+  imageBudget: ShellImageBudget,
+): Promise<void> {
   const url = new URL(path, self.location.origin);
   const response = await fetch(new Request(url.href, { credentials: "omit", cache: "no-store" }));
   if (!response.ok || response.redirected || response.type !== "basic") return;
@@ -356,13 +373,52 @@ async function precacheShellDocument(cache: Cache, path: string): Promise<void> 
       await staticCache.put(assetUrl.href, assetResponse);
     }
   });
+
+  await precacheShellImages(shellImageUrls(html), imageBudget);
+}
+
+/**
+ * Same-origin imagery a shell document needs to look like itself offline: the
+ * brand mark in the dock and the chapter/author covers the listing grids paint.
+ * See lib/offline/shell-assets.ts for what is included and why.
+ */
+function shellImageUrls(html: string): string[] {
+  return collectShellImageUrls(html, decodeHtmlAttribute);
+}
+
+/** Store shell imagery until the byte ceiling is reached; overflow is dropped. */
+async function precacheShellImages(urls: string[], budget: ShellImageBudget): Promise<void> {
+  const optimized = await caches.open(OPTIMIZED_IMAGE_CACHE);
+  const originals = await caches.open(STATIC_IMAGE_CACHE);
+  await forEachConcurrent(urls, 4, async (url) => {
+    if (budget.bytes >= MAX_SHELL_IMAGE_BYTES) return;
+    const parsed = originUrl(url);
+    if (!parsed) return;
+    // Both locales render the same covers and backdrops, and documents are
+    // warmed concurrently, so claim each URL before fetching it. Without this
+    // the same file is downloaded twice and charged to the budget twice.
+    if (budget.claimed.has(parsed.href)) return;
+    budget.claimed.add(parsed.href);
+    const cache = parsed.pathname === "/_next/image" ? optimized : originals;
+    const key = new Request(parsed.href, { credentials: "omit" });
+    if (await cache.match(key, { ignoreVary: true })) return;
+    const response = await fetch(
+      new Request(parsed.href, { credentials: "omit", cache: "no-store" }),
+    ).catch(() => null);
+    if (!response?.ok || response.redirected || response.type !== "basic") return;
+    const bytes = (await response.clone().arrayBuffer()).byteLength;
+    if (budget.bytes + bytes > MAX_SHELL_IMAGE_BYTES) return;
+    budget.bytes += bytes;
+    await cache.put(key, response);
+  });
 }
 
 /** Warm the navigation shell. Individual failures must not fail the install. */
 async function precacheShell(): Promise<void> {
   const cache = await caches.open(OFFLINE_SHELL_CACHE);
+  const imageBudget: ShellImageBudget = { bytes: 0, claimed: new Set() };
   await forEachConcurrent(shellUrls(), 4, async (path) => {
-    await precacheShellDocument(cache, path).catch(() => undefined);
+    await precacheShellDocument(cache, path, imageBudget).catch(() => undefined);
   });
 }
 
@@ -728,7 +784,11 @@ async function matchOptimizedImage(url: URL): Promise<Response | undefined> {
 
 function optimizedImageHandler() {
   return async ({ request, url }: { request: Request; url: URL }): Promise<Response> => {
-    const exact = await matchOwnedCaches(request);
+    // The optimizer sends `Vary: Accept`, and the shell warm-up fetches these
+    // from the worker (Accept: */*) rather than from an <img> element. Ignoring
+    // Vary lets a reader's image request reuse that stored response; the bytes
+    // carry their own content-type, so a negotiated variant is still correct.
+    const exact = await matchOwnedCaches(request, { ignoreVary: true });
     if (exact) return exact;
     try {
       const response = await fetch(request);

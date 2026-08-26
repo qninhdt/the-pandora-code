@@ -14,5 +14,6 @@
   "exclude": ["text", "letters", "numbers", "equations", "watermark", "photographic texture"],
   "consistency_notes": "Thin glowing teal/cyan elements on a near-black background, matching the chapter's schematic diagrams.",
   "aspect_ratio": "4:3",
-  "negative_prompt": "no text, no equations, no numbers, no photorealism, no 3D bevels, no clutter"
+  "negative_prompt": "no text, no equations, no numbers, no photorealism, no 3D bevels, no clutter",
+  "style_refs": ["pandora-establishing.png"]
 }

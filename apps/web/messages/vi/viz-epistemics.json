@@ -1,0 +1,124 @@
+{
+  "viz": {
+    "evidenceGradeLadder": {
+      "title": "Tự tay chấm điểm bằng chứng",
+      "subtitle": "Thiết kế nghiên cứu định nấc khởi điểm. Sai sót và điểm mạnh mới quyết định nó dừng ở đâu.",
+      "designLabel": "Thiết kế nghiên cứu",
+      "design": {
+        "randomized": "Thử nghiệm ngẫu nhiên",
+        "observational": "Nghiên cứu quan sát"
+      },
+      "level": {
+        "high": "Độ tin cậy cao",
+        "moderate": "Độ tin cậy trung bình",
+        "low": "Độ tin cậy thấp",
+        "veryLow": "Độ tin cậy rất thấp"
+      },
+      "licence": {
+        "high": "Độ tin cậy cao: các nghiên cứu về sau gần như không thể làm thay đổi con số này. Bạn có thể hành động dựa trên nó và nói thẳng ra như vậy.",
+        "moderate": "Độ tin cậy trung bình: hiệu quả thật có lẽ nằm sát con số này, nhưng vẫn có thể lệch. Cứ hành động, nhưng phải kèm lời rào trước.",
+        "low": "Độ tin cậy thấp: hiệu quả thật có thể khác đi rất nhiều. Hãy coi đây là một chiều hướng, chứ chưa phải một kết luận.",
+        "veryLow": "Độ tin cậy rất thấp: gần như con số nào cũng tương thích với chỗ bằng chứng này. Chỉ nên dẫn nó ra như một câu hỏi, tuyệt đối không phải một câu trả lời."
+      },
+      "startsHere": "khởi điểm",
+      "liftedTo": "được nâng lên",
+      "draggedTo": "bị kéo xuống",
+      "certainty": "Độ tin cậy của bằng chứng",
+      "netMove": "Dịch chuyển ròng",
+      "noMove": "giữ nguyên",
+      "startedAt": "khởi điểm ở",
+      "flawsLabel": "Vấn đề phát hiện khi thẩm định (mỗi cái tụt một nấc)",
+      "flaw": {
+        "bias": "Nguy cơ sai lệch",
+        "inconsistency": "Kết quả không đồng nhất",
+        "indirectness": "Bằng chứng gián tiếp",
+        "imprecision": "Khoảng bất định quá rộng",
+        "publication": "Sai lệch xuất bản"
+      },
+      "strengthsLabel": "Điểm mạnh phát hiện khi thẩm định (mỗi cái lấy lại một nấc)",
+      "strength": {
+        "largeEffect": "Hiệu quả cực lớn",
+        "doseResponse": "Liều lượng tỉ lệ rõ ràng",
+        "confounding": "Yếu tố gây nhiễu chỉ làm yếu kết quả"
+      }
+    },
+    "binaryStabilityWindow": {
+      "title": "Thế giới có trụ nổi ở nơi nó đủ ấm?",
+      "subtitle": "Một ngôi sao thứ hai vạch ra giới hạn cứng cho những quỹ đạo sống sót đường dài.",
+      "aria": "Một thế giới quay quanh một ngôi sao trong cặp sao gần nhau, với dải ôn đới và giới hạn tồn tại của quỹ đạo được vẽ quanh nó",
+      "primary": "Ngôi sao chính",
+      "companion": "Sao đồng hành",
+      "temperate": "Dải ôn đới",
+      "survivalEdge": "Giới hạn tồn tại",
+      "fateLabel": "Số phận đường dài",
+      "fate": {
+        "safe": "Trụ vững",
+        "marginal": "Đang bị kéo giãn",
+        "lost": "Bị bắn ra"
+      },
+      "limit": "Quỹ đạo xa nhất còn sống sót",
+      "climate": "Nước trên bề mặt",
+      "wet": "Thể lỏng",
+      "boiled": "Bốc hơi cạn",
+      "frozen": "Đóng băng",
+      "bandFits": "dải ôn đới nằm gọn bên trong",
+      "bandCut": "dải ôn đới bị cắt mất",
+      "periastronLabel": "Khoảng cách gần nhất của sao đồng hành",
+      "orbitLabel": "Quỹ đạo của thế giới",
+      "verdict": {
+        "safe": "Nằm gọn bên trong giới hạn. Sao đồng hành vẫn níu kéo, nhưng những cú níu ấy không bao giờ dồn tích lại — quỹ đạo này một tỉ năm nữa vẫn còn đó, và nó lại nằm đúng trong dải mà nước giữ được thể lỏng. Đây chính là chỗ trống mà Alpha Centauri A thật sự có.",
+        "marginal": "Áp sát ngay mép giới hạn. Sức níu của sao đồng hành đã bắt đầu kéo quỹ đạo giãn thêm một chút sau mỗi vòng, và một thế giới trên đó sẽ đảo qua đảo lại giữa nung nấu và đóng băng từ rất lâu trước khi bị bắn đi đâu. Ấm áp không đồng nghĩa với sống sót.",
+        "lost": "Vượt quá giới hạn. Những cú níu lặp lại của ngôi sao thứ hai bơm cho quỹ đạo dài ra và méo dần cho tới khi thế giới bị tống hẳn ra khỏi hệ. Không khí hậu nào trụ nổi qua chuyện đó, dù dải ôn đới có nằm đẹp đến đâu."
+      }
+    },
+    "eclipseSeasonThreader": {
+      "title": "Vì sao nhật thực hằng ngày cũng có lúc nghỉ mùa",
+      "subtitle": "Nghiêng quỹ đạo rồi cho năm chạy tới; xem hành lang bóng tối lúc bị xuyên qua, lúc bị bỏ lỡ.",
+      "aria": "Quỹ đạo nghiêng của một mặt trăng nhìn từ cạnh bên, đặt cạnh hành lang bóng tối mà hành tinh mẹ phóng ra phía đối diện ngôi sao",
+      "starlight": "Ánh sao",
+      "shadowCorridor": "Bóng của hành tinh",
+      "planet": "Hành tinh mẹ",
+      "moon": "Mặt trăng",
+      "today": "Buổi chiều hôm nay",
+      "fit": {
+        "total": "Nhật thực toàn phần",
+        "grazing": "Nhật thực sượt rìa",
+        "clear": "Không có nhật thực"
+      },
+      "explain": {
+        "total": "Quỹ đạo đang chạy thẳng dọc hành lang bóng tối, nên mỗi vòng đều đưa mặt trăng chìm hẳn vào vùng đen. Đây chính là một mùa nhật thực: vẫn cái giờ chiều tối sâu hun hút ấy, ngày này qua ngày khác, cho tới khi hình học lệch đi.",
+        "grazing": "Mặt trăng chỉ sượt qua mép bóng chứ không cắt ngang tâm. Mặt trời mờ đi và ngả đỏ thay vì tắt hẳn — vài ngày mở màn và hạ màn cho một mùa nhật thực.",
+        "clear": "Độ nghiêng đang mang quỹ đạo vượt hẳn lên trên vùng bóng, nên mặt trời không hề bị che. Đó là những tuần dài chan hòa ánh sáng: một mùa không nhật thực trên chính cái thế giới mà nửa năm còn lại ngày nào cũng có nhật thực."
+      },
+      "clearance": "Khoảng lệch",
+      "clearanceNote": "số lần bán kính hành tinh, tính từ trục bóng",
+      "seasonShare": "Mùa nhật thực",
+      "seasonShareNote": "phần của năm có nhật thực mỗi ngày",
+      "tiltLabel": "Độ nghiêng của quỹ đạo",
+      "seasonLabel": "Năm đã đi tới đâu",
+      "nearEquinox": "Thẳng hàng điểm nút",
+      "midYear": "Giữa mùa",
+      "nearSolstice": "Lệch xa nhất"
+    },
+    "siderealSynodicGearing": {
+      "title": "Hai chiếc đồng hồ, một vòng xoay",
+      "subtitle": "Ngày mà các vì sao đo và ngày bạn thực sự sống không dài bằng nhau.",
+      "aria": "Hai vành tròn lồng nhau: vòng chạy của mặt trăng quanh hành tinh nằm trong vòng năm của hành tinh quanh ngôi sao, với hai kim giữa trưa riêng biệt theo sao và theo mặt trời",
+      "yearRing": "Vòng năm quanh ngôi sao",
+      "dayRing": "Một vòng quanh hành tinh",
+      "starClock": "Giữa trưa theo sao",
+      "sunClock": "Giữa trưa theo mặt trời",
+      "livedDay": "Ngày bạn sống",
+      "starDay": "Ngày các vì sao đo",
+      "surplus": "dài hơn",
+      "minutes": "phút",
+      "drift": "Số ngày lệch nhau",
+      "driftNote": "đúng một ngày mỗi năm, dù ngày dài bao nhiêu",
+      "dayLabel": "Một vòng quanh hành tinh",
+      "yearLabel": "Một năm quanh ngôi sao",
+      "earthDays": "ngày Trái Đất",
+      "scrubLabel": "Đã đi được bao nhiêu phần của năm",
+      "hint": "Mặt trăng tự quay đúng một vòng so với các vì sao xa xôi sau mỗi vòng quanh hành tinh — nhưng trong lúc đó cả hệ đã nhích thêm một đoạn trên quỹ đạo của riêng nó, nên mặt đất phải quay thêm một chút nữa mới đưa được mặt trời trở lại đỉnh đầu. Phần dôi ra đó nhỏ xíu trong một ngày, và đúng bằng trọn một ngày sau một năm. Trái Đất chạy đúng cơ cấu ấy: ngày theo sao của chúng ta ngắn hơn ngày theo mặt trời chừng bốn phút, và đó là lý do các chòm sao mọc sớm dần mỗi đêm."
+    }
+  }
+}

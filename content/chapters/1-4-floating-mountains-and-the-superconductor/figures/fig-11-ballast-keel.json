@@ -14,5 +14,6 @@
   "exclude": ["text", "letters", "numbers", "watermark", "people"],
   "consistency_notes": "Core and threads glow the same cyan as the chapter's flux threads; rock is grey weathered stone.",
   "aspect_ratio": "4:3",
-  "negative_prompt": "no text, no numbers, no photorealism clutter, no machinery"
+  "negative_prompt": "no text, no numbers, no photorealism clutter, no machinery",
+  "style_refs": ["pandora-establishing.png"]
 }

@@ -15,6 +15,5 @@
   "consistency_notes": "Grey weathered rock, blue-green canopy, cyan-teal glowing mist; the winged mount has four limbs plus two wings and a long tail.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no logos, no closeup human faces, no oversaturation, no lens-flare clutter",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/floating-mountains-and-the-superconductor/fig-00-cover.png"]
+  "style_refs": ["pandora-establishing.png"]
 }

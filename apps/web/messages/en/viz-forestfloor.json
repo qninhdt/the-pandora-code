@@ -1,0 +1,129 @@
+{
+  "viz": {
+    "dependentSpeciesLedger": {
+      "title": "The tenant ledger of one fallen tree",
+      "subtitle": "Fix the doomed total on the day of the felling, then walk a census forward and watch it discover them",
+      "hint": "Koh and colleagues found the shape of a dependent species' response turns on how fussy it is: a strict obligate goes one-for-one with its host, while a species that can use several hosts hangs on until the whole host network collapses. Tilman named the delay extinction debt — the destruction happens now, the extinctions are paid later, by instalment. Scrub the years and the two numbers separate: what a clipboard would record, and what was already owed.",
+      "calibrationLabel": "Which tree the tenant list is calibrated to",
+      "calibration": {
+        "ash": "European ash",
+        "canopy": "Panama canopy tree",
+        "hometree": "Hometree"
+      },
+      "axis": {
+        "time": "Years after the tree came down",
+        "species": "Species still present"
+      },
+      "floor": "What genuinely survives",
+      "barLabel": "Where the tenant list ends up",
+      "band": {
+        "safe": "Persist — enough other hosts nearby",
+        "affiliates": "Multi-host species doomed — they collapse late",
+        "obligates": "Strict obligates doomed — lost the day it fell"
+      },
+      "readout": {
+        "recorded": "A census would record",
+        "recordedNote": "{years} years after the felling",
+        "doomed": "Already owed",
+        "doomedNote": "Fixed on the day, paid over decades",
+        "paid": "Debt paid so far"
+      },
+      "verdict": {
+        "early": "Almost everything still looks present. This is the census that misleads.",
+        "paying": "The lineages are going out one at a time, long after anyone stopped watching.",
+        "settled": "The bill has mostly been paid. Only now does the count match the loss."
+      },
+      "slider": {
+        "obligates": "Species that can live on no other host",
+        "hostShare": "Share of their host supply this tree was",
+        "years": "Years since the felling"
+      },
+      "pct": "{n}%",
+      "years": "{n} yr",
+      "aria": "Tenant ledger for a felled tree: {doomed} species already doomed, of which a census {years} years later would still record {recorded} as present."
+    },
+    "infectionBarrierGauntlet": {
+      "title": "The infection chain, lock by lock",
+      "subtitle": "Try each lock in turn and find out where the chain actually ends",
+      "pairingLabel": "Which pair of organisms is meeting",
+      "pairing": {
+        "sameBiosphere": "One biosphere",
+        "crossBiosphere": "Two biospheres",
+        "avatarChimera": "An avatar body"
+      },
+      "chainStart": "A microbe arrives",
+      "chainEnd": "Infection established",
+      "tryNext": "Try the next lock",
+      "reset": "Start again",
+      "readout": {
+        "cleared": "Locks cleared"
+      },
+      "state": {
+        "clears": "Opens",
+        "narrow": "Usually fails",
+        "unknown": "Unmeasured",
+        "blocked": "Will not open",
+        "untried": "Untried"
+      },
+      "lock": {
+        "exposure": {
+          "short": "Arrive",
+          "name": "Reach the right tissue",
+          "detail": "Breath, a mouthful, a bite or a cut has to put the organism somewhere it can act. Landing on intact skin is not exposure."
+        },
+        "docking": {
+          "short": "Dock",
+          "name": "Recognise a surface it can hold",
+          "detail": "Adhesins, pili and viral coat proteins have to fit particular molecules on the host's cells. This is a lock cut by shared evolutionary history, and nothing else cuts it."
+        },
+        "chemistry": {
+          "short": "Tolerate",
+          "name": "Survive the host's chemistry",
+          "detail": "Temperature, acidity, salt, digestive enzymes. A microbe built for cool wet soil is not built for the inside of a warm animal."
+        },
+        "replication": {
+          "short": "Replicate",
+          "name": "Copy itself using what is there",
+          "detail": "A virus borrows the host's ribosomes and enzymes outright. A bacterium at least needs molecules it can recognise as food. Mismatched machinery stops replication dead."
+        },
+        "immunity": {
+          "short": "Evade",
+          "name": "Get past the broad defences",
+          "detail": "Engulfing cells, reactive chemistry and membrane-tearing peptides attack anything unfamiliar. These need no prior acquaintance with the invader, which is exactly why they catch strangers."
+        },
+        "transmission": {
+          "short": "Escape",
+          "name": "Leave in a viable form",
+          "detail": "One infected body is a dead end unless offspring get out and reach somebody else. Without this the outbreak has a population of one."
+        }
+      },
+      "blocked": {
+        "exposure": "It never reached tissue where it could do anything. The chain ends before it starts.",
+        "docking": "Nothing on the host's cells fits it. Without a shared evolutionary history there is no handle to grip, and every lock behind this one is unreachable.",
+        "chemistry": "The host's internal chemistry destroys it before it can do anything else.",
+        "replication": "It cannot use this host's molecular machinery, so it cannot make copies. A pathogen that cannot replicate is a particle, not an infection.",
+        "immunity": "The host's broad, unspecific defences clear it. They never needed to have met it before.",
+        "transmission": "It infected one body and had no way out. That is a dead end, not an epidemic."
+      },
+      "verdict": {
+        "start": "Nothing has happened yet. Open the first lock and see how far a visitor gets.",
+        "walking": "{n, plural, =1 {One lock open. It had to open before any of the others could be tried.} other {# locks open so far, and every one of them had to open in order.}}"
+      },
+      "outcome": {
+        "sameBiosphere": "All six open — which is how a host jump happens on Earth. Note that two of them were narrow: shared ancestry makes this possible, not easy, and most microbes still cannot infect most species.",
+        "crossBiosphere": "Never reached. Two biospheres with separate origins share no receptors, no molecular handedness and no genetic code, so the chain ends at the first recognition step.",
+        "avatarChimera": "Never reached, and not because the answer is no. Nobody has measured it."
+      },
+      "harmTitle": "What stays open regardless",
+      "harmLead": "None of these need the organism to reproduce inside a living host, so failing every lock above rules none of them out. \"Cannot infect\" and \"cannot harm\" are different claims.",
+      "harm": {
+        "toxin": "A toxin it carries",
+        "inflammation": "Violent unspecific inflammation",
+        "necrotrophy": "Digesting dead tissue at a wound",
+        "fouling": "Fouling a membrane until it cannot work",
+        "niche": "Taking an ecological niche nothing here defends"
+      },
+      "aria": "Infection barrier chain: {cleared} of {total} locks cleared."
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "viz": {
+    "evidenceGradeLadder": {
+      "title": "Grade the evidence yourself",
+      "subtitle": "Study design sets the starting rung. Flaws and strengths decide where it ends up.",
+      "designLabel": "Study design",
+      "design": {
+        "randomized": "Randomized trial",
+        "observational": "Observational study"
+      },
+      "level": {
+        "high": "High certainty",
+        "moderate": "Moderate certainty",
+        "low": "Low certainty",
+        "veryLow": "Very low certainty"
+      },
+      "licence": {
+        "high": "High certainty: further research is very unlikely to change the estimate. You may act on this and say so plainly.",
+        "moderate": "Moderate certainty: the true effect is probably close to the estimate, but it may yet differ. Act, and hedge.",
+        "low": "Low certainty: the true effect could be substantially different. Treat this as a direction of travel, not a finding.",
+        "veryLow": "Very low certainty: almost any estimate is compatible with this evidence. Cite it as a question, never as an answer."
+      },
+      "startsHere": "starts here",
+      "liftedTo": "lifted here",
+      "draggedTo": "dragged here",
+      "certainty": "Certainty of the evidence",
+      "netMove": "Net movement",
+      "noMove": "held",
+      "startedAt": "started at",
+      "flawsLabel": "Problems found in the appraisal (each costs a rung)",
+      "flaw": {
+        "bias": "Risk of bias",
+        "inconsistency": "Results disagree",
+        "indirectness": "Indirect evidence",
+        "imprecision": "Wide uncertainty",
+        "publication": "Publication bias"
+      },
+      "strengthsLabel": "Strengths found in the appraisal (each earns a rung back)",
+      "strength": {
+        "largeEffect": "Very large effect",
+        "doseResponse": "Clean dose-response",
+        "confounding": "Confounding would have weakened it"
+      }
+    },
+    "binaryStabilityWindow": {
+      "title": "Can the world stay where it is warm?",
+      "subtitle": "A second star sets a hard edge on which orbits survive the long haul.",
+      "aria": "A world orbiting one star of a close pair, with the temperate band and the orbital survival edge drawn around it",
+      "primary": "The star",
+      "companion": "Companion star",
+      "temperate": "Temperate band",
+      "survivalEdge": "Survival edge",
+      "fateLabel": "Long-term fate",
+      "fate": {
+        "safe": "Stays put",
+        "marginal": "Stretching",
+        "lost": "Flung out"
+      },
+      "limit": "Outermost surviving orbit",
+      "climate": "Surface water",
+      "wet": "Liquid",
+      "boiled": "Boiled off",
+      "frozen": "Frozen",
+      "bandFits": "the temperate band fits inside",
+      "bandCut": "the temperate band is cut off",
+      "periastronLabel": "Companion's closest approach",
+      "orbitLabel": "The world's orbit",
+      "verdict": {
+        "safe": "Comfortably inside the edge. The companion tugs, but the tugs never accumulate — this orbit is still here in a billion years, and it sits in the band where water stays liquid. This is the slot the real Alpha Centauri A genuinely has.",
+        "marginal": "Right up against the edge. The companion's pull is now stretching the orbit a little more each circuit, and a world on it would swing between scorching and freezing long before it was flung anywhere. Warm is not the same as survivable.",
+        "lost": "Past the edge. Repeated tugs from the second star pump the orbit longer and more lopsided until the world is thrown out of the system entirely. No climate survives this, however well-placed the temperate band is."
+      }
+    },
+    "eclipseSeasonThreader": {
+      "title": "Why the daily eclipse takes seasons off",
+      "subtitle": "Tip the orbit and walk the year forward; watch the shadow corridor be threaded, then missed.",
+      "aria": "A moon's tilted orbit seen edge-on against the shadow corridor its planet throws away from the star",
+      "starlight": "Starlight",
+      "shadowCorridor": "The planet's shadow",
+      "planet": "The planet",
+      "moon": "The moon",
+      "today": "This afternoon",
+      "fit": {
+        "total": "Total eclipse",
+        "grazing": "Grazing eclipse",
+        "clear": "No eclipse"
+      },
+      "explain": {
+        "total": "The orbit is running straight down the shadow corridor, so every single lap carries the moon fully into the dark. This is an eclipse season: the same deep hour of afternoon night, day after day, until the geometry drifts on.",
+        "grazing": "The moon is clipping the edge of the shadow rather than crossing its heart. The sun dims and reddens instead of going out — the few days that open and close an eclipse season.",
+        "clear": "The tilt is carrying the orbit clear over the shadow entirely, so the sun is never blocked. These are the long bright weeks: an eclipse-free season on a world that has a daily eclipse for part of the year."
+      },
+      "clearance": "Miss distance",
+      "clearanceNote": "planet radii off the shadow's axis",
+      "seasonShare": "Eclipse seasons",
+      "seasonShareNote": "share of the year with daily eclipses",
+      "tiltLabel": "Tilt of the orbit",
+      "seasonLabel": "Where the year has got to",
+      "nearEquinox": "Node alignment",
+      "midYear": "Mid-season",
+      "nearSolstice": "Furthest from alignment"
+    },
+    "siderealSynodicGearing": {
+      "title": "Two clocks, one turning",
+      "subtitle": "The day the stars keep and the day you live by are not the same length.",
+      "aria": "Two nested rings: the moon's lap around its planet inside the planet's year around its star, with separate star-noon and sun-noon markers",
+      "yearRing": "The year around the star",
+      "dayRing": "One lap around the planet",
+      "starClock": "Noon by the stars",
+      "sunClock": "Noon by the sun",
+      "livedDay": "The day you live",
+      "starDay": "The day the stars keep",
+      "surplus": "longer by",
+      "minutes": "min",
+      "drift": "Days of disagreement",
+      "driftNote": "exactly one per year, whatever the day length",
+      "dayLabel": "One lap around the planet",
+      "yearLabel": "One year around the star",
+      "earthDays": "Earth days",
+      "scrubLabel": "How far through the year",
+      "hint": "The moon turns once against the far stars each lap of its planet — but the whole system has crept along its own orbit meanwhile, so the ground must turn a touch further to bring the sun back overhead. That surplus is small on any single day and exactly one whole day over a year. Earth runs the same gearing: our star-day is about four minutes short of our sun-day, which is why the constellations rise earlier each night."
+    }
+  }
+}

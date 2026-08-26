@@ -14,5 +14,6 @@
   "exclude": ["text", "letters", "numbers", "watermark", "photographic texture"],
   "consistency_notes": "Glowing cyan lines on a near-black background; amber for the holding-force arrows, matching the chapter's diagram language.",
   "aspect_ratio": "4:3",
-  "negative_prompt": "no text, no numbers, no photorealism, no 3D bevels, no clutter, no unbalanced arrows"
+  "negative_prompt": "no text, no numbers, no photorealism, no 3D bevels, no clutter, no unbalanced arrows",
+  "style_refs": ["pandora-establishing.png"]
 }

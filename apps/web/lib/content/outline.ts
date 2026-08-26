@@ -49,6 +49,21 @@ export const OUTLINE: OutlinePart[] = [
     label: { vi: "Phần I — Thế giới", en: "Part I — The World" },
     chapters: [
       {
+        slug: "from-stardust-to-pandora",
+        title: {
+          vi: "Từ Bụi sao đến Pandora",
+          en: "From Stardust to Pandora",
+        },
+        payload: {
+          vi: "Nguồn gốc vũ trụ của Pandora từ Vụ nổ Lớn đến phản ứng tổng hợp hạt nhân → Sự tổng hợp hạt nhân ở các sao, các nguyên tố nặng và đĩa tiền hành tinh.",
+          en: "Cosmic origins of Pandora from Big Bang to stellar fusion → Stellar nucleosynthesis, heavy elements, and protoplanetary disk formation.",
+        },
+        detailedPayload: {
+          vi: "Chương này đi sâu vào quá trình tổng hợp hạt nhân từ thời kỳ Big Bang, các phản ứng nhiệt hạch trong các vì sao và cách các ngôi sao \"gieo hạt\" cho các hành tinh. Hành trình bắt đầu từ những ngôi sao đầu tiên, cái chết của chúng, và cách khí bụi giữa các vì sao ngưng tụ trong các đĩa tiền hành tinh để hình thành các thế giới như Pandora cùng hành tinh mẹ khổng lồ của nó. Chương lý giải cách các nguyên tố nặng như carbon và oxy được mang đến đây qua các thiên thạch chứa carbon.",
+          en: "This chapter covers Big Bang nucleosynthesis, stellar fusion, and how stars seed planets. It traces the journey from the first stars to the death of stars, and how the resulting interstellar gas condenses in protoplanetary disks to form worlds like Pandora and its gas giant. It explores how heavy elements like carbon and oxygen are delivered via carbonaceous meteorites.",
+        },
+      },
+      {
         slug: "where-is-pandora",
         title: { vi: "Pandora nằm ở đâu?", en: "Where Is Pandora?" },
         payload: {
@@ -58,6 +73,21 @@ export const OUTLINE: OutlinePart[] = [
         detailedPayload: {
           vi: "Pandora quay quanh Polyphemus — một hành tinh khí khổng lồ cỡ Sao Hải Vương trong hệ ba sao Alpha Centauri, chịu sự chi phối mãnh liệt từ trường hấp dẫn và từ quyển của hành tinh mẹ. Từ bối cảnh thiên văn nền tảng này, chúng ta khảo sát vùng ở được (habitable zone) quanh các hệ sao đôi phức tạp và điều kiện động lực học để một mặt trăng duy trì quỹ đạo ổn định. Việc phát hiện một thiên thể như Pandora trong thực tế đòi hỏi kỹ thuật đo biến thiên thời gian quá cảnh (transit timing variations), quang phổ truyền qua và chụp ảnh trực tiếp. Định nghĩa vùng sống được của NASA không chỉ dừng lại ở nước lỏng trên bề mặt; một mặt trăng có sự sống còn phải vượt qua bài toán khắc nghiệt về bão bức xạ sao, nhiệt thủy triều ma sát và sự nhiễu loạn quỹ đạo trường kỳ.",
           en: "Pandora orbits Polyphemus, a Neptune-sized gas giant within the Alpha Centauri trinary system, subjected to immense gravitational and magnetospheric forces from its parent world. This astronomical setting anchors an exploration of circumstellar habitable zones around binary stars and the dynamical stability required for giant-planet moons. Detecting a real-world Pandora relies on transit timing variations, transmission spectroscopy, and direct exoplanet imaging. Beyond NASA's baseline criterion of liquid surface water, a living exomoon must withstand intense stellar flare radiation, tidal heating dissipation, and persistent orbital perturbations.",
+        },
+      },
+      {
+        slug: "the-birth-of-pandora",
+        title: {
+          vi: "Sự ra đời của Pandora",
+          en: "The Birth of Pandora",
+        },
+        payload: {
+          vi: "Sự hình thành của Pandora quanh một hành tinh khí trong hệ sao đôi → Sự bồi tụ hành tinh, phân dị vật chất và địa hóa học khí quyển.",
+          en: "The formation of Pandora around a gas giant in a binary system → Planetary accretion, differentiation, and atmospheric geochemistry.",
+        },
+        detailedPayload: {
+          vi: "Tiếp nối nguồn gốc vũ trụ, chương này tập trung vào sự hình thành của Pandora quanh Polyphemus trong hệ sao đôi Alpha Centauri. Nó giải thích động lực học quỹ đạo của sự hình thành hành tinh, sự bồi tụ vật chất tạo nên lõi, lớp vỏ và lớp phủ của Pandora, cũng như cách địa hóa học tạo nền tảng cho sự sống. Bằng việc phân tích khoáng chất và khí núi lửa, chương liên kết quá trình hình thành bầu khí quyển với môi trường vật lý thúc đẩy các thích nghi sinh học.",
+          en: "Building on cosmic origins, this chapter focuses on how Pandora formed around Polyphemus in the Alpha Centauri binary system. It explains the orbital dynamics of planet formation, the accretion of elements into Pandora's core, mantle, and crust, and how geochemistry sets the stage for life. By examining soil minerals and volcanic gases, it links the atmospheric origins to the physical environment that shapes life's adaptations.",
         },
       },
       {
@@ -157,6 +187,96 @@ export const OUTLINE: OutlinePart[] = [
     label: { vi: "Phần II — Thế giới sống", en: "Part II — The Living World" },
     chapters: [
       {
+        slug: "origins-of-life-on-pandora",
+        title: {
+          vi: "Nguồn gốc Sự sống trên Pandora",
+          en: "Origins of Life on Pandora",
+        },
+        payload: {
+          vi: "Tia lửa sự sống dưới những điều kiện nguyên thủy → Hóa học tiền sinh mệnh, giả thuyết thế giới RNA, và các quá trình trao đổi chất ban đầu.",
+          en: "The spark of life under primordial conditions → Prebiotic chemistry, the RNA world hypothesis, and early energy metabolism.",
+        },
+        detailedPayload: {
+          vi: "Chương mang đến một cái nhìn toàn diện về các giả thuyết phát sinh sinh giới trong bối cảnh Pandora. Nó điều tra cách sự sống bắt đầu dưới những điều kiện nguyên thủy, so sánh các kịch bản nguồn gốc trên Trái Đất với hành trình tiềm năng của Pandora. Các chủ đề bao gồm quá trình tổng hợp các phân tử hữu cơ đơn giản từ bão sấm sét hoặc miệng phun thủy nhiệt, các polymer tự nhân bản như RNA, những con đường trao đổi chất đầu tiên, và bước nhảy vọt từ các phân tử vô tri đến các tế bào nguyên thủy.",
+          en: "A dedicated survey of abiogenesis theories in a Pandoran context. It investigates how life might begin under primordial conditions, comparing Earth's origin scenarios with Pandora's possible paths. Topics include the synthesis of simple organic molecules in electrical storms or hydrothermal vents, self-replicating polymers like RNA, early metabolic pathways, and the leap from molecules to protocells.",
+        },
+      },
+      {
+        slug: "what-is-pandoran-life-made-of",
+        title: {
+          vi: "Sự sống Pandora được nhào nặn từ đâu?",
+          en: "What Is Pandoran Life Made Of?",
+        },
+        payload: {
+          vi: "Nghịch lý tương thích sinh hóa giữa người và Pandora → Sinh học vũ trụ (astrobiology), tính bất đối xứng phân tử (chirality) và xenobiology.",
+          en: "The deep paradox of Human–Pandoran biochemical interoperability → Astrobiology, molecular chirality, and alternative xenobiology.",
+        },
+        detailedPayload: {
+          vi: "Thế giới Pandora đặt ra một nghịch lý sinh hóa kỳ lạ: con người có thể hấp thụ một số dinh dưỡng bản địa, cơ thể lai Avatar phát triển hoàn hảo, và Spider thậm chí thiết lập mối quan hệ cộng sinh nấm rễ nội bào (endosymbiosis) sâu sắc. Khám phá này gợi mở mức độ tương thích phân tử đáng kinh ngạc giữa hai nguồn gốc sinh quyển khác nhau. Khảo sát hóa học hữu cơ gốc carbon, nước làm dung môi phân cực, tính bất đối xứng phân tử (chirality), sự tương thích của các amino acid và các biến thể axit nucleic nhân tạo (XNA), chương chỉ ra rằng sinh quyển càng có nguồn gốc độc lập ngoài hành tinh thì sự tương thích sinh hóa với con người càng khó giải thích nếu không có công nghệ Avatar hoặc sự hội tụ sinh hóa phân tử làm cầu nối.",
+          en: "Pandora introduces a fascinating biochemical paradox: humans consume local nutrients, chimeric Avatar bodies develop seamlessly, and Spider establishes deep intracellular mycelial endosymbiosis. This implies astonishing molecular interoperability between distinct biospheres. Surveying carbon-based organic chemistry, water as a polar solvent, molecular chirality, amino acid compatibility, and alternative xenobiological nucleic acid backbones (XNAs), the chapter shows that the more alien a world's genesis, the harder cross-species biochemical compatibility becomes without advanced Avatar genetic engineering or extreme molecular convergence.",
+        },
+      },
+      {
+        slug: "pandoran-paleontology",
+        title: {
+          vi: "Cổ sinh vật học Pandora",
+          en: "Pandoran Paleontology",
+        },
+        payload: {
+          vi: "Dòng thời gian sâu thẳm và hồ sơ hóa thạch của Pandora → Điều kiện hóa thạch, cổ sinh thái học và dòng thời gian của các kỷ nguyên tiến hóa.",
+          en: "Deep time and the fossil record of Pandora → Fossilization conditions, paleoecology, and the timeline of evolutionary epochs.",
+        },
+        detailedPayload: {
+          vi: "Chương kết nối sinh học và địa chất bằng cách hình dung các bằng chứng hóa thạch và \"dòng thời gian sâu thẳm\" của quá trình tiến hóa trên Pandora. Nó chi tiết hóa các điều kiện cần thiết để hình thành hóa thạch trong môi trường Pandora, các kỷ nguyên địa chất chính, những biến đổi khí hậu trong quá khứ, và diện mạo của các loài sinh vật khổng lồ đã tuyệt chủng, cung cấp một nền tảng cổ sinh vật học để xác thực câu chuyện tiến hóa đương đại.",
+          en: "This chapter bridges biology and geology by imagining the fossil evidence and evolutionary \"deep time\" of Pandora. It details the conditions required for fossilization in Pandora's environment, major geologic periods, past climate shifts, and what extinct megafauna eras might have looked like, providing a paleontological context that validates the modern evolutionary narrative.",
+        },
+      },
+      {
+        slug: "pandoran-tree-of-life",
+        title: {
+          vi: "Phả hệ sự sống Pandora",
+          en: "Building the Pandoran Tree of Life",
+        },
+        payload: {
+          vi: "Xây dựng ma trận tính trạng giải phẫu cho sinh giới alien → Nguyên lý tối giản (parsimony), phát sinh loài Bayes và biểu đồ cladogram.",
+          en: "Building an anatomical character matrix for alien biodiversity → Parsimony principles, Bayesian phylogenetics, and cladistic mapping.",
+        },
+        detailedPayload: {
+          vi: "Bỏ qua cách phân loại dựa trên cảm quan thị giác bề ngoài, chương thiết lập một ma trận tính trạng giải phẫu thực thụ — gồm số lượng chi, cấu tạo mắt, hệ van thở, cấu trúc miệng, sợi kuru và phương thức sinh sản — để phác dựng biểu đồ phân nhánh phát sinh loài (cladogram) cho toàn bộ sinh vật Pandora. Người đọc sẽ được tiếp cận các phương pháp hệ thống học hiện đại như nguyên lý tối giản (parsimony), tính trạng dẫn xuất chung (synapomorphy), tính trạng hội tụ (homoplasy) và xác suất Bayes. Một bộ dữ liệu thử nghiệm thực hành sẽ minh chứng rõ nét việc một tính trạng hội tụ đánh lừa có thể làm sai lệch toàn bộ cây phân loại sinh học như thế nào nếu ta quá tin vào những nét tương đồng bề nổi.",
+          en: "Rejecting superficial visual classifications, this chapter constructs a formal anatomical character matrix — incorporating limb counts, ocular morphology, breathing opercula, kuru appendages, jaw mechanics, and reproductive strategies — to draft a hypothetical cladogram of Pandoran life. It introduces modern phylogenetic methods including maximum parsimony, synapomorphic traits, convergent homoplasies, and Bayesian inference. An interactive test dataset demonstrates how a single unflagged convergent trait can distort an entire evolutionary tree if taxonomists rely naively on outward appearances.",
+        },
+      },
+      {
+        slug: "evolution-of-pandoran-flora",
+        title: {
+          vi: "Tiến hóa Thực vật Pandora",
+          en: "Evolution of Pandoran Flora",
+        },
+        payload: {
+          vi: "Cây phả hệ của hệ thực vật Pandora → Sự xâm chiếm đất liền, những thích nghi của thực vật, và phân tích phát sinh loài hệ thực vật ngoại hành tinh.",
+          en: "The evolutionary tree of Pandoran plant life → Land colonization, floral adaptations, and phylogenetic analysis of alien botany.",
+        },
+        detailedPayload: {
+          vi: "Tập trung vào sự tiến hóa của thực vật Pandora từ những tổ tiên giống tảo dưới nước đến những cái cây khổng lồ phức tạp, chương này đối chiếu các nhóm thực vật giả định trên Pandora với các nhánh trên Trái Đất. Nó phân tích những thích nghi thực vật độc đáo như khả năng phát quang sinh học, sử dụng hydro và sự đồng tiến hóa với động vật thụ phấn, từ đó xây dựng một sơ đồ phát sinh loài củng cố nền tảng thực vật học cho hệ sinh thái Pandora.",
+          en: "Focusing on how Pandora's plant life evolved from aquatic algae-like ancestors to complex trees, this chapter maps hypothetical Pandoran plant groups against Earth clades. It analyzes unique floral adaptations like bioluminescence, hydrogen use, and co-evolution with pollinators, culminating in a phylogenetic chart that solidifies the botanical backbone of Pandora's ecology.",
+        },
+      },
+      {
+        slug: "materials-of-life",
+        title: {
+          vi: "Vật liệu Sự sống",
+          en: "Materials of Life",
+        },
+        payload: {
+          vi: "Bí mật cấu trúc của hệ thực vật và động vật Pandora → Các polymer tự nhiên, cơ sinh học và các vật liệu sinh học composite tương đương sợi carbon.",
+          en: "The structural secrets of Pandoran flora and fauna → Natural polymers, biomechanics, and carbon-fiber analogous biocomposites.",
+        },
+        detailedPayload: {
+          vi: "Chương này xem xét các polymer tự nhiên và mô liên kết ở các sinh vật Pandora, những thứ tạo ra các vật liệu cực kỳ bền chắc, tương tự như tơ nhện hoặc sợi carbon trên Trái Đất. Nó khám phá cách động vật hình thành lớp xương vững chãi và thực vật nâng đỡ các tán lá khổng lồ trong một môi trường trọng lực đặc biệt, giải thích các cấu trúc sinh học phân tử làm cho hệ động thực vật khổng lồ trở nên hợp lý về mặt cơ sinh học.",
+          en: "This chapter examines the natural polymers and composite tissues in Pandoran life that allow for incredibly strong materials, akin to spider silk or carbon fiber on Earth. It explores how creatures build sturdy exoskeletons and plants support heavy canopies in a unique gravity environment, explaining the structural biopolymers that make giant fauna and flora biomechanically plausible.",
+        },
+      },
+      {
         slug: "six-limbs-and-the-bilateral-lattice",
         title: {
           vi: "Sáu chi và bài toán sơ đồ cơ thể",
@@ -202,33 +322,18 @@ export const OUTLINE: OutlinePart[] = [
         },
       },
       {
-        slug: "when-glow-is-the-norm",
+        slug: "physiology-of-pandoran-life",
         title: {
-          vi: "Khi sự rực rỡ trong đêm là chuẩn mực",
-          en: "When Glow Is the Norm",
+          vi: "Sinh lý học Sự sống Pandora",
+          en: "Physiology of Pandoran Life",
         },
         payload: {
-          vi: "Hiện tượng phát quang sinh học ngập tràn toàn sinh quyển → Hóa sinh luciferin–luciferase và các áp lực chọn lọc tín hiệu thị giác.",
-          en: "Ubiquitous biosphere-wide bioluminescence → Luciferin–luciferase biochemistry and selective pressures for multi-functional visual signaling.",
+          vi: "Sự thích nghi sinh lý học xuyên suốt các loài → Trao đổi khí, sắc tố tuần hoàn, điều hòa thân nhiệt và độc học chuyển hóa.",
+          en: "The physiological adaptations across species → Gas exchange, circulatory pigments, thermoregulation, and metabolic toxicology.",
         },
         detailedPayload: {
-          vi: "Phát quang sinh học là một hiện tượng bao trùm toàn bộ sinh quyển Pandora, bùng nổ rực rỡ trong bóng đêm và suốt những kỳ nhật thực kéo dài do Polyphemus che khuất ngôi sao chủ. Khảo sát các con đường phản ứng enzyme luciferin–luciferase trên Trái Đất và các cơ chế phát quang tiềm năng khác, chúng ta tìm hiểu lý do tự nhiên lại ưu ái tín hiệu ánh sáng ở quy mô toàn cầu: ngụy trang ngược sáng (counter-illumination), mồi nhử săn mồi, thu hút bạn tình, cảnh báo độc tố (aposematism) hay nhận diện bầy đàn. Sự thật là trên Trái Đất, phát quang sinh học đã tiến hóa độc lập ở hàng chục dòng dõi sinh vật với vô vàn chức năng khác nhau, chứng minh rằng sự rực rỡ của Pandora được định hình bởi nhiều áp lực chọn lọc đan xen chứ không phục vụ một mục đích duy nhất.",
-          en: "Bioluminescence is an omnipresent feature of the Pandoran biosphere, illuminating nights and planetary eclipses caused by Polyphemus. Examining terrestrial luciferin–luciferase enzymatic pathways and alternative bio-emitter chemistry, we investigate why global selection favored visual light emission: counter-illumination camouflage, predatory lures, courtship displays, aposematic warning coloration, and pack communication. Because bioluminescence evolved independently dozens of times on Earth for diverse behavioral functions, Pandora's luminous ecology is driven by multiple overlapping evolutionary pressures rather than a single master function.",
-        },
-      },
-      {
-        slug: "pandoran-tree-of-life",
-        title: {
-          vi: "Phả hệ sự sống Pandora",
-          en: "Building the Pandoran Tree of Life",
-        },
-        payload: {
-          vi: "Xây dựng ma trận tính trạng giải phẫu cho sinh giới alien → Nguyên lý tối giản (parsimony), phát sinh loài Bayes và biểu đồ cladogram.",
-          en: "Building an anatomical character matrix for alien biodiversity → Parsimony principles, Bayesian phylogenetics, and cladistic mapping.",
-        },
-        detailedPayload: {
-          vi: "Bỏ qua cách phân loại dựa trên cảm quan thị giác bề ngoài, chương thiết lập một ma trận tính trạng giải phẫu thực thụ — gồm số lượng chi, cấu tạo mắt, hệ van thở, cấu trúc miệng, sợi kuru và phương thức sinh sản — để phác dựng biểu đồ phân nhánh phát sinh loài (cladogram) cho toàn bộ sinh vật Pandora. Người đọc sẽ được tiếp cận các phương pháp hệ thống học hiện đại như nguyên lý tối giản (parsimony), tính trạng dẫn xuất chung (synapomorphy), tính trạng hội tụ (homoplasy) và xác suất Bayes. Một bộ dữ liệu thử nghiệm thực hành sẽ minh chứng rõ nét việc một tính trạng hội tụ đánh lừa có thể làm sai lệch toàn bộ cây phân loại sinh học như thế nào nếu ta quá tin vào những nét tương đồng bề nổi.",
-          en: "Rejecting superficial visual classifications, this chapter constructs a formal anatomical character matrix — incorporating limb counts, ocular morphology, breathing opercula, kuru appendages, jaw mechanics, and reproductive strategies — to draft a hypothetical cladogram of Pandoran life. It introduces modern phylogenetic methods including maximum parsimony, synapomorphic traits, convergent homoplasies, and Bayesian inference. An interactive test dataset demonstrates how a single unflagged convergent trait can distort an entire evolutionary tree if taxonomists rely naively on outward appearances.",
+          vi: "Hệ thống hóa các thích nghi sinh lý học, chương này phân tích cách sinh vật Pandora thực hiện quá trình trao đổi khí trong môi trường nhiều CO2 và H2. Đi sâu vào các giả thuyết về sắc tố máu tuần hoàn, tốc độ trao đổi chất bị giới hạn bởi môi trường, cách điều hòa thân nhiệt trong đêm Pandora, và các cơ chế xử lý độc tố từ thực vật hoặc nguồn núi lửa, qua đó gắn kết hóa sinh học trực tiếp với giải phẫu học.",
+          en: "Systematizing physiological adaptations, this chapter covers how Pandoran organisms exchange gases in a high-CO2, H2-rich atmosphere. It delves into hypothetical circulatory pigments, metabolic rates constrained by the environment, thermoregulation during Pandora's nights, and mechanisms for processing toxins from plants or volcanic sources, tying chemistry directly to anatomy.",
         },
       },
       {
@@ -247,33 +352,18 @@ export const OUTLINE: OutlinePart[] = [
         },
       },
       {
-        slug: "the-hunters-and-the-hunted",
+        slug: "when-glow-is-the-norm",
         title: {
-          vi: "Kẻ đi săn và kẻ bị săn",
-          en: "Hunters and the Hunted",
+          vi: "Khi sự rực rỡ trong đêm là chuẩn mực",
+          en: "When Glow Is the Norm",
         },
         payload: {
-          vi: "Chiến thuật săn mồi của Thanator và phòng thủ bầy đàn → Mô hình Lotka–Volterra mở rộng, đáp ứng chức năng Holling và tầng bậc dinh dưỡng.",
-          en: "Thanator sensory predation and collective prey defenses → Extended Lotka–Volterra models, Holling functional responses, and trophic cascades.",
+          vi: "Hiện tượng phát quang sinh học ngập tràn toàn sinh quyển → Hóa sinh luciferin–luciferase và các áp lực chọn lọc tín hiệu thị giác.",
+          en: "Ubiquitous biosphere-wide bioluminescence → Luciferin–luciferase biochemistry and selective pressures for multi-functional visual signaling.",
         },
         detailedPayload: {
-          vi: "Mối quan hệ giữa kẻ đi săn và con mồi trên Pandora không chỉ xoay quanh một quái thú đơn độc mà thể hiện qua chiến thuật săn bầy của Viperwolf, cơ chế phòng thủ bầy đàn của các loài ăn cỏ khổng lồ và dã thú đỉnh bảng Thanator với các giác quan định vị con mồi cực kỳ nhạy bén. Khởi đầu từ hệ phương trình vi phân Lotka–Volterra kinh điển, chương mở rộng sang các dạng đáp ứng chức năng Holling, sức chứa của môi trường (carrying capacity), các vùng ẩn náu không gian và hiệu ứng thác dinh dưỡng (trophic cascades). Những yếu tố phi tuyến tính này giải thích vì sao các quần thể sinh vật thực tế không bao giờ dao động tuần hoàn hình sin đơn giản như trong sách giáo khoa, mà luôn trải qua những biến động phức tạp và bất ngờ.",
-          en: "Predator–prey dynamics on Pandora encompass pack hunting strategies in viperwolves, herd defense in megaherbivores, and apex sensory predation in the Thanator. Beginning with classical Lotka–Volterra differential equations, the analysis incorporates Holling functional responses, environmental carrying capacities, spatial refugia, and trophic cascades. These nonlinear dynamics explain why real-world ecological populations rarely follow neat textbook sine waves, exhibiting complex, chaotic population fluctuations instead.",
-        },
-      },
-      {
-        slug: "what-is-pandoran-life-made-of",
-        title: {
-          vi: "Sự sống Pandora được nhào nặn từ đâu?",
-          en: "What Is Pandoran Life Made Of?",
-        },
-        payload: {
-          vi: "Nghịch lý tương thích sinh hóa giữa người và Pandora → Sinh học vũ trụ (astrobiology), tính bất đối xứng phân tử (chirality) và xenobiology.",
-          en: "The deep paradox of Human–Pandoran biochemical interoperability → Astrobiology, molecular chirality, and alternative xenobiology.",
-        },
-        detailedPayload: {
-          vi: "Thế giới Pandora đặt ra một nghịch lý sinh hóa kỳ lạ: con người có thể hấp thụ một số dinh dưỡng bản địa, cơ thể lai Avatar phát triển hoàn hảo, và Spider thậm chí thiết lập mối quan hệ cộng sinh nấm rễ nội bào (endosymbiosis) sâu sắc. Khám phá này gợi mở mức độ tương thích phân tử đáng kinh ngạc giữa hai nguồn gốc sinh quyển khác nhau. Khảo sát hóa học hữu cơ gốc carbon, nước làm dung môi phân cực, tính bất đối xứng phân tử (chirality), sự tương thích của các amino acid và các biến thể axit nucleic nhân tạo (XNA), chương chỉ ra rằng sinh quyển càng có nguồn gốc độc lập ngoài hành tinh thì sự tương thích sinh hóa với con người càng khó giải thích nếu không có công nghệ Avatar hoặc sự hội tụ sinh hóa phân tử làm cầu nối.",
-          en: "Pandora introduces a fascinating biochemical paradox: humans consume local nutrients, chimeric Avatar bodies develop seamlessly, and Spider establishes deep intracellular mycelial endosymbiosis. This implies astonishing molecular interoperability between distinct biospheres. Surveying carbon-based organic chemistry, water as a polar solvent, molecular chirality, amino acid compatibility, and alternative xenobiological nucleic acid backbones (XNAs), the chapter shows that the more alien a world's genesis, the harder cross-species biochemical compatibility becomes without advanced Avatar genetic engineering or extreme molecular convergence.",
+          vi: "Phát quang sinh học là một hiện tượng bao trùm toàn bộ sinh quyển Pandora, bùng nổ rực rỡ trong bóng đêm và suốt những kỳ nhật thực kéo dài do Polyphemus che khuất ngôi sao chủ. Khảo sát các con đường phản ứng enzyme luciferin–luciferase trên Trái Đất và các cơ chế phát quang tiềm năng khác, chúng ta tìm hiểu lý do tự nhiên lại ưu ái tín hiệu ánh sáng ở quy mô toàn cầu: ngụy trang ngược sáng (counter-illumination), mồi nhử săn mồi, thu hút bạn tình, cảnh báo độc tố (aposematism) hay nhận diện bầy đàn. Sự thật là trên Trái Đất, phát quang sinh học đã tiến hóa độc lập ở hàng chục dòng dõi sinh vật với vô vàn chức năng khác nhau, chứng minh rằng sự rực rỡ của Pandora được định hình bởi nhiều áp lực chọn lọc đan xen chứ không phục vụ một mục đích duy nhất.",
+          en: "Bioluminescence is an omnipresent feature of the Pandoran biosphere, illuminating nights and planetary eclipses caused by Polyphemus. Examining terrestrial luciferin–luciferase enzymatic pathways and alternative bio-emitter chemistry, we investigate why global selection favored visual light emission: counter-illumination camouflage, predatory lures, courtship displays, aposematic warning coloration, and pack communication. Because bioluminescence evolved independently dozens of times on Earth for diverse behavioral functions, Pandora's luminous ecology is driven by multiple overlapping evolutionary pressures rather than a single master function.",
         },
       },
       {
@@ -289,6 +379,21 @@ export const OUTLINE: OutlinePart[] = [
         detailedPayload: {
           vi: "Môi trường Pandora ngập tràn những luồng thông tin vô hình đối với con người: dao động từ trường cực mạnh, ánh sáng phát quang phân cực, vi rung động địa chấn và các tín hiệu giao tiếp thần kinh trực tiếp, khiến một cá thể Thanator, Ikran hay Na'vi sống trong những thế giới tri giác (Umwelt) hoàn toàn dị biệt. Áp dụng lý thuyết thế giới tri giác của Jakob von Uexküll, chương phân tích khả năng thụ cảm từ trường (magnetoreception), thị giác ánh sáng phân cực, điện thụ cảm và cơ thụ cảm. Quan trọng hơn cả, chương chứng minh một giác quan chỉ có thể tiến hóa và tồn tại nếu môi trường chứa đựng lượng thông tin Shannon ổn định mà hệ thần kinh có thể khai thác, tạo tiền đề lý thuyết thông tin cho mạng lưới Eywa.",
           en: "Pandora's environment is saturated with signals invisible to unaugmented humans: intense magnetic flux fluctuations, polarized bioluminescent wavelengths, substrate micro-vibrations, and direct neural communication channels, meaning a Thanator, an Ikran, and a Na'vi inhabit entirely distinct sensory Umwelten. Applying Jakob von Uexküll's Umwelt framework, this chapter analyzes magnetoreception, polarization vision, electroreception, and mechanosensation. Crucially, it demonstrates that sensory modalities only evolve if the physical environment provides stable Shannon information that nervous systems can exploit, laying the theoretical foundation for understanding Eywa.",
+        },
+      },
+      {
+        slug: "the-hunters-and-the-hunted",
+        title: {
+          vi: "Kẻ đi săn và kẻ bị săn",
+          en: "Hunters and the Hunted",
+        },
+        payload: {
+          vi: "Chiến thuật săn mồi của Thanator và phòng thủ bầy đàn → Mô hình Lotka–Volterra mở rộng, đáp ứng chức năng Holling và tầng bậc dinh dưỡng.",
+          en: "Thanator sensory predation and collective prey defenses → Extended Lotka–Volterra models, Holling functional responses, and trophic cascades.",
+        },
+        detailedPayload: {
+          vi: "Mối quan hệ giữa kẻ đi săn và con mồi trên Pandora không chỉ xoay quanh một quái thú đơn độc mà thể hiện qua chiến thuật săn bầy của Viperwolf, cơ chế phòng thủ bầy đàn của các loài ăn cỏ khổng lồ và dã thú đỉnh bảng Thanator với các giác quan định vị con mồi cực kỳ nhạy bén. Khởi đầu từ hệ phương trình vi phân Lotka–Volterra kinh điển, chương mở rộng sang các dạng đáp ứng chức năng Holling, sức chứa của môi trường (carrying capacity), các vùng ẩn náu không gian và hiệu ứng thác dinh dưỡng (trophic cascades). Những yếu tố phi tuyến tính này giải thích vì sao các quần thể sinh vật thực tế không bao giờ dao động tuần hoàn hình sin đơn giản như trong sách giáo khoa, mà luôn trải qua những biến động phức tạp và bất ngờ.",
+          en: "Predator–prey dynamics on Pandora encompass pack hunting strategies in viperwolves, herd defense in megaherbivores, and apex sensory predation in the Thanator. Beginning with classical Lotka–Volterra differential equations, the analysis incorporates Holling functional responses, environmental carrying capacities, spatial refugia, and trophic cascades. These nonlinear dynamics explain why real-world ecological populations rarely follow neat textbook sine waves, exhibiting complex, chaotic population fluctuations instead.",
         },
       },
     ],
@@ -400,6 +505,21 @@ export const OUTLINE: OutlinePart[] = [
         detailedPayload: {
           vi: "Với khả năng cộng sinh nội bào và mạng lưới điều phối chủ động, Pandora vượt xa khỏi cách hiểu kinh điển về Giả thuyết Gaia của Trái Đất. Chương phân biệt rõ ràng giữa Giả thuyết Gaia yếu (các vòng phản hồi sinh địa hóa thụ động tạo nên cân bằng nội môi homeostasis) và Giả thuyết Gaia mạnh mang tính mục đích luận (coi sinh quyển như một thực thể có ý chí và mục tiêu). Vận dụng lý thuyết điều khiển, kỹ thuật sinh thái và khoa học hệ thống Trái Đất, chúng ta đánh giá xem Pandora có thực sự sở hữu đầy đủ hệ thống cảm biến, kênh truyền tin, bộ chấp hành sinh học và các vòng phản hồi tự điều chỉnh để xứng đáng được gọi là một cỗ máy điều hòa quy mô hành tinh hay không.",
           en: "With active mycelial endosymbiosis and biospheric actuation, Pandora transcends classical Earth formulations of the Gaia hypothesis. This chapter distinguishes weak Gaia (passive biogeochemical feedback loops generating homeostasis) from strong, teleological Gaia (the biosphere acting as an intentional, goal-directed superorganism). Applying control theory, ecological engineering, and Earth-system science, it evaluates whether Pandora possesses sufficient biological sensors, communication channels, actuators, and feedback loops to qualify as an active, planetary-scale homeostatic regulator.",
+        },
+      },
+      {
+        slug: "symbiosis-and-the-mycelial-web",
+        title: {
+          vi: "Cộng sinh và Mạng lưới Sợi nấm",
+          en: "Symbiosis and the Mycelial Web",
+        },
+        payload: {
+          vi: "Kỹ thuật sinh thái và tính cộng sinh của mạng lưới thần kinh → Mạng lưới sợi nấm, sinh thái học Gaia và cân bằng nội môi hành tinh.",
+          en: "The ecosystem engineering and symbiotism of the neural network → Mycelial networks, Gaian ecology, and planetary homeostasis.",
+        },
+        detailedPayload: {
+          vi: "Một góc nhìn liền mạch về Eywa trong vai trò kỹ sư sinh thái. Chương khảo sát cách các mạng lưới sợi nấm kết nối rễ cây tạo thành một \"mạng lưới wood-wide web\" và ứng dụng giả thuyết Gaia vào trạng thái cân bằng hành tinh của Pandora. Bàn luận về trao đổi dinh dưỡng, sự cộng sinh giữa thực vật-nấm-động vật, và những hệ lụy sinh thái sâu sắc khi những mối cộng sinh tinh tế này bị phá vỡ.",
+          en: "A cohesive look at Eywa as an ecosystem engineer. It examines how mycelial networks or their analogs connect plants in a \"wood wide web\" and applies the Gaia hypothesis to Pandora's planetary homeostasis. The chapter discusses nutrient exchange, plant-fungi-animal mutualisms, and the profound ecological impacts of disrupting these delicate symbioses.",
         },
       },
     ],
@@ -922,12 +1042,42 @@ export const OUTLINE: OutlinePart[] = [
           en: "Colonizing by Changing the Colonist",
         },
         payload: {
-          vi: "Chiến lược thích nghi sinh học thay vì cải tạo địa cầu (terraforming) → Kỹ thuật hành tinh, cộng sinh nhân tạo (engineered symbiosis) và bảo vệ hành tinh.",
-          en: "Biological colonist adaptation versus macro-terraforming → Planetary engineering economics, engineered symbiosis, and planetary protection ethics.",
+          vi: "Thuyết siêu nhân học (Transhumanism) và sinh học cộng sinh → Kỹ thuật di truyền, nấm rễ nhân tạo và cái giá của nhân dạng con người.",
+          en: "Transhumanism and symbiotic integration → Genetic engineering, artificial mycelial symbiosis, and the bioethics of human identity.",
         },
         detailedPayload: {
-          vi: "Biến đổi sinh học của Spider mở ra một hướng đi chiến lược mới: thay vì tiêu tốn tài nguyên khổng lồ để cải tạo khí quyển cả một mặt trăng (terraforming) giống Trái Đất, nhân loại có thể biến đổi chính cơ thể người để thích nghi trực tiếp với Pandora thông qua cơ chế cộng sinh nấm rễ nhân tạo. Chương đặt hai giải pháp kỹ thuật lên bàn cân: cải tạo địa cầu quy mô vĩ mô đối lập với kỹ thuật di truyền và cộng sinh sinh học nhân tạo (engineered symbiosis). Giải pháp thứ hai tiết kiệm năng lượng hàng triệu lần nhưng đặt ra những thách thức nghiệt ngã về đạo đức sinh học, tính di truyền qua các thế hệ, nguy cơ mầm bệnh lai và sự ràng buộc không thể đảo ngược vào hệ sinh thái alien.",
-          en: "Spider's adaptation sparks a strategic revolution: rather than spending centuries geoengineering an entire moon (macro-terraforming), humanity can bio-adapt the colonists themselves to Pandora through engineered mycelial symbiosis. This chapter contrasts two planetary engineering paradigms: macro-terraforming/paraterraforming versus human genetic engineering and synthetic symbiosis. Adapting the colonist is millions of times more energy-efficient but introduces severe bioethical dilemmas, heritability risks, pathogen hazards, and irreversible biological coupling to an alien ecosystem.",
+          vi: "Biến đổi sinh học của Spider mở ra một chân trời mới: thay vì biến đổi khí quyển hành tinh, RDA có thể biến đổi chính cơ thể thực dân. Chương này tập trung hoàn toàn vào công nghệ sinh học và thuyết siêu nhân học (Transhumanism). Bằng cách cấy ghép vi sinh vật bản địa, nấm rễ nhân tạo (engineered symbiosis) hoặc chỉnh sửa gen trực tiếp, con người có thể thở được khí độc. Nhưng điều này đặt ra những thách thức nghiệt ngã: tính di truyền qua các thế hệ, nguy cơ mầm bệnh lai, và sự đánh đổi về bản ngã triết học khi ranh giới sinh học giữa con người và người ngoài hành tinh bị xóa nhòa.",
+          en: "Spider's biological integration reveals a radical pathway: adapting the colonist's body instead of the planet's atmosphere. This chapter focuses purely on biotechnology and transhumanism. Through artificial mycelial symbiosis or direct genetic editing, humans could be engineered to process Pandora's toxic air. However, this introduces severe bioethical dilemmas: heritability risks, chimeric pathogens, and the philosophical cost to human identity when the biological boundaries between colonist and alien ecosystem are deliberately dissolved.",
+        },
+      },
+      {
+        slug: "humans-on-pandora",
+        title: {
+          vi: "Con người trên Pandora",
+          en: "Humans on Pandora",
+        },
+        payload: {
+          vi: "Cuộc thực dân hóa của các tập đoàn trên Pandora → Kinh tế học khai thác tài nguyên, kỹ thuật chương trình Avatar và đạo đức thực dân.",
+          en: "The corporate colonization of Pandora → Resource extraction economics, Avatar program engineering, and colonial ethics.",
+        },
+        detailedPayload: {
+          vi: "Phân tích sự hiện diện của loài người, chương khảo sát nguồn gốc của tập đoàn RDA, sứ mệnh khai thác unobtanium, và sự hình thành của Chương trình Avatar. Nó phác họa các cơ sở hạ tầng quân sự và khai khoáng, đồng thời đi sâu vào những hệ lụy nhân học và đạo đức thực dân tương đồng với các ngành công nghiệp khai thác tài nguyên trong lịch sử, cũng như những xung đột trong quan hệ giữa con người và người Na'vi.",
+          en: "Analyzing the human presence, this chapter covers the RDA corporation's origins, its mission for unobtanium, and the genesis of the Avatar Program. It describes the military and mining infrastructure while exploring the deep anthropological and ethical parallels to historical resource extraction, colonial overreach, and the friction in human-Na'vi relations.",
+        },
+      },
+      {
+        slug: "terraforming-and-planetary-engineering",
+        title: {
+          vi: "Cải tạo hành tinh và Kỹ thuật quy mô hành tinh",
+          en: "Terraforming and Planetary Engineering",
+        },
+        payload: {
+          vi: "Bài toán vật lý địa cầu của RDA → Kỹ thuật khí hậu quy mô lớn, nhiệt động lực học và các nhà máy lọc không khí khổng lồ.",
+          en: "The geophysics of planetary subjugation → Macro-climate engineering, thermodynamics, and industrial atmospheric scrubbers.",
+        },
+        detailedPayload: {
+          vi: "Nếu khoa học sinh học thất bại, RDA phải quay lại với phương án tàn khốc nhất: Cải tạo hành tinh (Terraforming). Chương này thuần túy phân tích kỹ thuật vật lý vĩ mô. Để biến Pandora thành Trái Đất thứ hai, cần phải hút hàng tỷ tấn H2S và CO2 ra khỏi khí quyển, giải phóng mây che phủ, và xây dựng các cỗ máy nhiệt động lực học khổng lồ. Chúng ta sẽ tính toán năng lượng hợp hạch cần thiết để duy trì các trạm lọc khí quyển (atmospheric scrubbers), sự sụp đổ của chuỗi thức ăn địa phương, và hệ lụy thảm khốc khi cố tình \"đập đi xây lại\" một hệ sinh thái đã có sinh quyển hoàn chỉnh.",
+          en: "If biotechnology fails, the RDA must resort to brute-force Terraforming. This chapter is dedicated strictly to macro-physical geoengineering. Transforming Pandora into a second Earth requires scrubbing billions of tons of H2S and CO2 from the atmosphere, altering albedo, and deploying gargantuan thermodynamic engines. We calculate the fusion energy demands required to power planetary-scale atmospheric scrubbers, the physical mechanics of climate control, and the catastrophic ecological thermodynamics of actively dismantling a fully formed alien biosphere.",
         },
       },
     ],

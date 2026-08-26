@@ -1,0 +1,72 @@
+{
+  "viz": {
+    "exopackFilterBudget": {
+      "title": "Chia phần cho bộ lọc",
+      "subtitle": "Một khối chất hấp thụ, hai loại độc. Bạn quyết định chia thế nào.",
+      "aria": "Sơ đồ cắt dọc luồng khí trong exopack: không khí Pandora thô đi vào, hai lớp hấp thụ do người đọc phân bổ, và hỗn hợp thở được đưa tới mặt nạ",
+      "demandLabel": "Người mang đang thở gắng đến mức nào",
+      "rest": "Đứng yên",
+      "work": "Vận động nặng",
+      "intake": "Khí thô",
+      "delivered": "Vào mặt nạ",
+      "scrubberBed": "Lớp khử CO₂",
+      "sulfideBed": "Lớp bắt sulfide",
+      "co2Amount": "CO₂ {value}",
+      "h2sAmount": "H₂S {value} ppm",
+      "flowCaption": "Bộ lọc hút chính không khí của mặt trăng này — không mang theo gì cả",
+      "noTank": "Không hề có bình oxy nào trong sơ đồ này",
+      "leakLabel": "Phần chất độc vẫn lọt qua được",
+      "co2Out": "CO₂ được đưa vào phổi",
+      "co2Note": "An toàn khi dưới 0,5%",
+      "h2sOut": "H₂S được đưa vào phổi",
+      "h2sNote": "Thiết kế chịu tới {limit} ppm",
+      "oxygenOut": "Áp suất oxy đưa vào phổi",
+      "oxygenNote": "Khí thô vốn đã có {raw} kPa",
+      "splitLabel": "Chia chất hấp thụ cho hai lớp",
+      "splitDisplay": "{scrubber}% khử CO₂ / {bed}% bắt sulfide",
+      "h2sLabel": "Lượng H₂S trong không khí bên ngoài",
+      "service": "Với cách chia này và mức sulfide này, lớp bắt sulfide trụ được khoảng {days} ngày trước khi bị thấm xuyên và chất độc bắt đầu lọt vào nguyên vẹn.",
+      "serviceClean": "Nếu ngoài trời không có sulfide thì lớp hấp thụ chẳng bao giờ bị ngốn hết — nhưng với hệ núi lửa của mặt trăng này, đó không phải mức bạn được phép trông cậy.",
+      "verdict": {
+        "clean": "Chặn được cả hai chất độc, và khí tới mặt nạ còn ít CO₂ hơn cả không khí Trái Đất. Đây đúng là điều bộ lọc được thiết kế để làm — và hãy để ý thứ nó không cần cung cấp: một phân tử oxy cũng không.",
+        "pass": "Sống được. CO₂ vượt mức thiết kế của bộ lọc nhưng vẫn nằm trong ngưỡng người chịu nổi, còn sulfide thì bị giữ lại. Một thỏa hiệp dùng được, chỉ là chưa gọn.",
+        "co2": "Lớp khử CO₂ đã bị bỏ đói. CO₂ lọt vào vượt ngưỡng cơ thể chịu được, và người mang sẽ bắt đầu hớp lấy thứ khí chỉ khiến mọi thứ tệ hơn — đúng cái nghịch chiều gradient ấy, lần này diễn ra ngay bên trong mặt nạ.",
+        "h2s": "Cái bẫy. Bạn dốc cả bộ lọc vào con số đáng sợ, để con số lặng lẽ lọt qua: đủ sulfide để khóa chặt enzyme giúp tế bào dùng oxy. Hóa học máu hoàn hảo, mà ty thể thì đứng máy.",
+        "both": "Cả hai lớp đều quá mỏng cho thứ không khí này. CO₂ đang axit hóa máu trong khi sulfide đánh sập chính những tế bào lẽ ra phải dùng oxy — hai sát thủ cùng lúc ập tới, y như một người không mặt nạ phải chịu."
+      }
+    },
+    "rainShadowTransect": {
+      "title": "Vùng đất khô trốn ở đâu",
+      "subtitle": "Dựng một dãy núi chắn ngang luồng gió biển và xem một lục địa tách làm hai.",
+      "aria": "Mặt cắt từ đại dương vào đồng bằng nội địa qua một dãy núi: sườn đón gió nhận {windward} centimet mưa mỗi năm, đồng bằng bên kia chỉ nhận {lee}",
+      "worldLabel": "Không khí của thế giới nào đang leo núi",
+      "earth": "Trái Đất",
+      "pandora": "Pandora",
+      "sea": "Đại dương",
+      "windward": "Sườn đón gió",
+      "lee": "Đồng bằng khuất gió",
+      "crest": "Đỉnh",
+      "cloudBase": "Mây hình thành ở đây",
+      "wind": "Gió biển",
+      "descent": "Chìm xuống, nóng lên, hút nước",
+      "rainUnit": "cm/năm",
+      "supply": "Lượng mưa do hoàn lưu cấp",
+      "supplyNote": "Trước khi có núi, ở vĩ độ {lat}°",
+      "leeRain": "Mưa xuống được đồng bằng khuất gió",
+      "leeNote": "Khí tới nơi với độ ẩm {rh}%",
+      "foehn": "Nóng hơn ở phía bên kia",
+      "foehnNote": "Vẫn khối khí đó, nóng hơn lúc rời biển",
+      "ridgeLabel": "Độ cao của dãy núi",
+      "ridgeDisplay": "{km} km",
+      "latLabel": "Vĩ độ của mặt cắt",
+      "latDisplay": "{lat}° so với xích đạo",
+      "crossCheck": "Đem đúng dãy núi ấy sang {world} thì đồng bằng khuất gió nhận khoảng {lee} {unit}. Không khí ở đó nguội {otherLapse} °C mỗi kilomet leo cao, so với {thisLapse} °C ở đây — mà một dãy núi chỉ tạo ra sa mạc bằng cách làm khí nguội đủ để vắt cạn nước của nó.",
+      "verdict": {
+        "wetBoth": "Chẳng có bóng mưa nào đáng kể. Khối khí vượt đỉnh mà vẫn giữ gần trọn lượng nước, nên cả hai bên đều ẩm — chuyện thường tình ở một thế giới có không khí nguội chậm và dải ẩm vươn xa tới đây.",
+        "gentle": "Một bóng mưa nhạt. Bên khuất gió khô hơn vùng ven biển nhưng còn xa mới gọi là hạn; đây là rừng thưa đi một chút, chứ không phải đường biên giữa xanh và trọc.",
+        "grassland": "Đồng cỏ bán khô hạn — vùng đất khô đúng chất Pandora. Không phải sa mạc, chỉ là nơi mà cơn mưa trút xuống sườn bên kia chẳng bao giờ vượt nổi đỉnh núi. Đây chính là bối cảnh khớp với vùng Upper Plains lộng gió.",
+        "desert": "Một bóng mưa thật sự. Khối khí vượt đỉnh xuống tới đây thì đã nóng và khát, nên nó rút nước khỏi mặt đất thay vì trả lại chút nào. Trên Pandora, muốn có cảnh này cần cả một dãy núi cao lẫn một vĩ độ mà dải ẩm đã bỏ rơi — chính vì thế mặt trăng này chỉ có những ổ khô nội địa chứ không có vành sa mạc."
+      }
+    }
+  }
+}

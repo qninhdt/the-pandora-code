@@ -1,0 +1,156 @@
+{
+  "viz": {
+    "outgroupPolarityBench": {
+      "title": "The baseline decides which traits are new",
+      "subtitle": "Nominate a starting point and re-read the same scores against it",
+      "aria": "Each character shown as the baseline state on the left and the novelty it polarizes to on the right, with bar length showing how many specimens share that novelty",
+      "baselineLabel": "Nominate the baseline creature",
+      "matrixHead": "The bench, scored",
+      "specimen": "Specimen",
+      "baselineSide": "Baseline state",
+      "noveltySide": "Novelty it points to",
+      "taxa": {
+        "marine": "Early marine form",
+        "ilu": "Ilu",
+        "direhorse": "Direhorse",
+        "hexapede": "Hexapede",
+        "prolemuris": "Prolemuris",
+        "navi": "Na'vi"
+      },
+      "chars": {
+        "limbs": {
+          "short": "Limbs",
+          "states": {
+            "0": "Six limbs",
+            "1": "Split forelimbs",
+            "2": "Four limbs"
+          }
+        },
+        "eyes": {
+          "short": "Eyes",
+          "states": {
+            "0": "Four eyes",
+            "1": "Two eyes"
+          }
+        },
+        "resp": {
+          "short": "Breathing",
+          "states": {
+            "0": "Flank intakes",
+            "1": "Head airway"
+          }
+        },
+        "queue": {
+          "short": "Queue",
+          "states": {
+            "0": "No queue",
+            "1": "Neural queue"
+          }
+        },
+        "bone": {
+          "short": "Bone",
+          "states": {
+            "0": "Plain mineral",
+            "1": "Carbon-threaded"
+          }
+        }
+      },
+      "kind": {
+        "synapomorphy": "Binds {count} specimens into a branch",
+        "autapomorphy": "Stranded on one specimen — groups nobody",
+        "constant": "Identical everywhere — groups nobody"
+      },
+      "readout": {
+        "grouping": "Characters that group",
+        "groupingNote": "shared novelties you can build a branch on",
+        "loners": "Characters stranded",
+        "lonersNote": "held by one specimen, so they say nothing",
+        "crest": "Family crest",
+        "crestHeld": "Recovered",
+        "crestLost": "Lost"
+      },
+      "verdict": {
+        "clean": "A creature that branched off before the family gives the honest compass: carbon-threaded bone and the neural queue both read as novelties shared by everything else on the bench, and the whole bestiary gathers into one branch.",
+        "crestLost": "Nominate a member of the family as the baseline and its own traits become the definition of 'ancestral'. The carbon bone and the queue go dark — everyone already has them, so they group nobody — and the family crest vanishes from the evidence without a single score changing. Worse, genuinely ancient anatomy gets promoted to a novelty, so the tree comes out confident and backwards."
+      }
+    },
+    "hexapodGaitSequencer": {
+      "title": "Six legs are a timing problem",
+      "subtitle": "When each foot is down decides support, spring, and the brace for a turn",
+      "ariaChart": "Footfall chart showing when each of the six feet is on the ground across one stride",
+      "ariaBody": "The direhorse seen from above with {feet} of six feet currently planted",
+      "gaitLabel": "Choose the gait",
+      "gait": {
+        "walk": "Walk",
+        "trot": "Trot",
+        "gallop": "Gallop"
+      },
+      "play": "Run the stride",
+      "pause": "Pause the stride",
+      "limbs": {
+        "foreLeft": "Fore left",
+        "foreRight": "Fore right",
+        "midLeft": "Middle left",
+        "midRight": "Middle right",
+        "hindLeft": "Hind left",
+        "hindRight": "Hind right"
+      },
+      "strideStart": "Stride begins",
+      "strideEnd": "Stride ends",
+      "stanceLegend": "A lit bar means that foot is carrying weight",
+      "midPhaseLabel": "Where the short middle pair lands",
+      "midPhaseValue": "{pct}% into the stride",
+      "scrubLabel": "Scrub through the stride",
+      "scrubValue": "{pct}% of the stride",
+      "readout": {
+        "feetNow": "Feet down right now",
+        "brace": "Turns that find a brace",
+        "braceNote": "middle foot planted when the stride legs let go",
+        "suspension": "Airborne share",
+        "suspensionNone": "None",
+        "suspensionNote": "both stride pairs clear of the ground"
+      },
+      "verdict": {
+        "grounded": "One of the long stride pairs is always carrying weight, so nothing about this gait is a leap. It is the cheapest gait to hold and the most punishing per step, because no tendon gets to store and return the energy of a bounce.",
+        "bouncing": "The stride pairs now leave the ground together, and a middle foot is planted through almost every gap they leave. That airborne moment lets the long tendons work as springs — kinder on bone than a heavy walk — while the short pair still has purchase whenever a turn arrives.",
+        "unbraced": "The middle pair is timed to swing at exactly the moments the stride legs have let go. Those are the instants a hard turn needs something planted to push sideways against, and the sideways brace is the job canon gives those middle legs."
+      }
+    },
+    "pneumaticBoneBudget": {
+      "title": "Hollowing a wing bone, without losing it",
+      "subtitle": "Same rigidity throughout — only the wall thickness and the material change",
+      "aria": "Cross-section of a wing bone with its air channel, beside bars for the spar's mass and how close its wall is to crumpling",
+      "materialLabel": "Bone material",
+      "material": {
+        "mineral": "Earth mineral bone",
+        "carbon": "Carbon-threaded bone"
+      },
+      "solidReference": "Solid spar, same rigidity",
+      "airChannel": "air",
+      "reference": {
+        "mammal": "Mammal limb bone: {pct}% hollow",
+        "bird": "Bird wing bone: {pct}% hollow",
+        "pterosaur": "Pterosaur wing bone: {pct}% hollow"
+      },
+      "massBar": "What the spar weighs",
+      "bucklingBar": "How thin the wall has become",
+      "crumpleLimit": "Crumple threshold",
+      "hollownessLabel": "Hollow out the core",
+      "hollownessValue": "{pct}% of the diameter",
+      "readout": {
+        "mass": "Mass saved",
+        "massValue": "{pct}%",
+        "massNote": "at {stiffness}× stiffness, rigidity unchanged",
+        "cooling": "Cooling airflow",
+        "coolingNote": "against a bird's wing bone",
+        "wall": "Radius per wall thickness",
+        "wallValue": "{ratio} : 1"
+      },
+      "verdict": {
+        "solid": "A nearly solid spar is safe and heavy. Most of that material sits near the centre, where it barely resists bending at all — mass carried for nothing, and no channel for the air that has to cool a flying animal from the inside.",
+        "tuned": "This is the bargain a flyer wants. The material has moved outward to where it actually resists bending, so the spar holds the same rigidity for a fraction of the weight, and the open middle becomes the duct that carries flight heat out of the skeleton.",
+        "fragile": "The wall is now so thin that bending is no longer what breaks it. A tube this slender fails by crumpling locally, like a drinks can underfoot — and a wing spar that crumples at the wrong instant does not get a second stroke."
+      }
+    }
+  }
+}

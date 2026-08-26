@@ -48,13 +48,13 @@ glossary_terms:
 figures:
   - id: fig-00-cover
     role: hero
-    asset_status: pending
+    asset_status: ready
   - id: fig-01-rider-between-peaks
     role: hero
-    asset_status: pending
+    asset_status: ready
   - id: fig-02-flux-vortex-map
     role: diagram
-    asset_status: pending
+    asset_status: ready
   - id: fig-03-unobtanium-core
     role: inline
     asset_status: ready
@@ -66,27 +66,24 @@ figures:
     asset_status: ready
   - id: fig-07-earnshaw-instability
     role: diagram
-    asset_status: pending
+    asset_status: ready
   - id: fig-08-abrikosov-vortices
     role: diagram
-    asset_status: pending
+    asset_status: ready
   - id: fig-09-flux-pinning-lock
     role: diagram
-    asset_status: pending
+    asset_status: ready
   - id: fig-10-quasicrystal-voids
     role: inline
-    asset_status: pending
+    asset_status: ready
   - id: fig-11-ballast-keel
     role: comparison
-    asset_status: pending
+    asset_status: ready
   - id: fig-12-maglev-track
     role: inline
-    asset_status: pending
+    asset_status: ready
   - id: fig-13-levitating-disc
     role: comparison
-    asset_status: pending
-  - id: fig-14-mountains-wide-close
-    role: hero
     asset_status: ready
 sources:
   - kind: canon

@@ -15,6 +15,5 @@
   "consistency_notes": "Grey rock and cyan-teal mist matching the chapter's other floating-mountain scenes, but darker, wider, and more distant — a macro mood backdrop, not a close hero.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no logos, no people, no bright hotspot, no high contrast, no sharp foreground, no warm daylight, no oversaturation, no busy detail",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/floating-mountains-and-the-superconductor/fig-00-cover.png"]
+  "style_refs": ["pandora-establishing.png"]
 }

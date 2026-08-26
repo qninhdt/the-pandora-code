@@ -1,0 +1,159 @@
+{
+  "viz": {
+    "solventWindow": {
+      "title": "Bàn thử dung môi",
+      "subtitle": "Đặt nhiệt độ bề mặt của một thế giới, rồi hỏi ở đó thứ gì còn chảy được — và liệu có dựng nổi một tế bào trong nó hay không",
+      "aria": "Dải nhiệt độ tồn tại ở thể lỏng của bốn dung môi sinh học ứng cử, trong đó {count} dung môi còn ở thể lỏng tại nhiệt độ đang đặt",
+      "axisLabel": "Nhiệt độ bề mặt (kelvin)",
+      "marker": "{temp} K",
+      "tempLabel": "Nhiệt độ bề mặt của thế giới",
+      "solventLabel": "Chọn một dung môi để xem xét",
+      "gateLabel": "Những gì một tế bào cần ở dung môi của nó",
+      "phaseLabel": "Trạng thái ở nhiệt độ này",
+      "windowLabel": "Cửa sổ lỏng",
+      "windowNote": "Dải khí hậu mà chất lỏng còn chịu được",
+      "polarityLabel": "Độ phân cực",
+      "polarityNote": "Càng cao càng kéo tách mạnh các phân tử phân cực",
+      "liquidCountLabel": "Còn lỏng ở đây",
+      "liquidCountNote": "Số ứng cử viên còn chảy tại nhiệt độ này",
+      "names": {
+        "water": "Nước",
+        "ammonia": "Amoniac",
+        "methane": "Methane",
+        "formamide": "Formamide"
+      },
+      "phase": {
+        "solid": "Đóng băng cứng",
+        "liquid": "Thể lỏng",
+        "gas": "Bay hơi hết"
+      },
+      "gates": {
+        "solvation": "Hòa tan được các phân tử",
+        "folding": "Làm protein cuộn gập",
+        "membrane": "Dựng được màng tế bào"
+      },
+      "gateState": {
+        "works": "Đã chứng thực",
+        "untested": "Chưa từng chứng minh",
+        "fails": "Bị loại thẳng"
+      },
+      "gateDetail": {
+        "water": {
+          "solvation": "Mọi phân tử sinh học phân cực làm nên bạn đều tan trong nó — đường, muối, axit amin, và cả xương sống phosphate của ADN.",
+          "folding": "Chính nước điều khiển sự cuộn gập: những phần ưa dầu của protein chạy trốn khỏi nước và co cụm vào trong, phần còn lại thì ôm lấy nước — và cuộc chạy trốn ấy là thứ tạc nên hình dáng của một enzyme.",
+          "membrane": "Một lớp màng lipid kép tự lắp ráp trong nước cũng vì lẽ đó: đuôi ưa dầu quay vào, đầu ưa nước hướng ra. Không cần chỉ dẫn nào, chỉ cần dung môi."
+        },
+        "ammonia": {
+          "solvation": "Phân cực và dồi dào khắp vũ trụ, nên nó hòa tan các hợp chất phân cực khá tốt — lý do nó luôn có tên trong mọi danh sách dung môi thay thế nghiêm túc.",
+          "folding": "Nó tạo được liên kết hydro, nên một phiên bản amoniac của hiệu ứng cuộn gập không hẳn bị loại trừ. Chỉ là chưa ai chứng minh nó vận hành, và chưa biết phân tử nào làm được.",
+          "membrane": "Màng lipid kép vốn được tinh chỉnh cho nước. Liệu một lớp màng tương đương có bám trụ nổi trong amoniac lỏng hay không vẫn là câu hỏi lý thuyết còn treo."
+        },
+        "methane": {
+          "solvation": "Không phân cực, nên những phân tử phân cực mà hóa sinh học cần gần như chẳng tan chút nào. Sẽ phải dựng một hệ hóa học khác hẳn từ nền móng.",
+          "folding": "Không có liên kết hydro thì chẳng có gì để một nhóm ưa dầu phải chạy trốn, nên hiệu ứng cuộn gập nên từng enzyme của bạn đơn giản là không tồn tại ở đây.",
+          "membrane": "Màng lipid kép không thể hình thành trong một chất lỏng không phân cực. Các nhà lý thuyết buộc phải phát minh một loại màng hoàn toàn khác cho biển Titan để tế bào trở nên khả nghĩ."
+        },
+        "formamide": {
+          "solvation": "Phân cực hơn cả nước, và là môi trường tốt hơn nước đúng ở mảng hóa học phosphate — thứ lắp nên xương sống di truyền.",
+          "folding": "Độ phân cực của nó về nguyên tắc còn chỗ cho một hiệu ứng cuộn gập, nhưng chưa protein nào được biết là cuộn gập trong nó và cơ chế thì chưa từng được chứng minh.",
+          "membrane": "Chưa có màng tự lắp ráp nào được trình diễn trong formamide. Khoảng cách giữa một dung môi hứa hẹn và một tế bào thực sự vẫn chưa được nối."
+        }
+      },
+      "verdict": {
+        "water": "Nước chảy được ở đây, và đây là ứng cử viên duy nhất vượt cả ba yêu cầu: nó hòa tan các phân tử, nó điều khiển sự cuộn gập protein, và một lớp màng tự lắp ráp trong nó mà không cần trợ giúp. Hãy để ý thứ nó không thắng — formamide vượt nước cả ở cửa sổ lỏng lẫn độ phân cực. Chính vì thế mà phán quyết trung thực là \"gần như một điểm tối ưu phổ quát\", chứ không phải \"tối ưu\".",
+        "ammonia": "Amoniac chảy được ở đây, và nó hòa tan các hợp chất phân cực đủ tốt để giữ chỗ trong danh sách. Nhưng cửa sổ lỏng của nó ở áp suất thường chỉ bằng chừng một phần tư của nước, và chưa bao giờ ai chứng minh được sự cuộn gập protein hay một lớp màng vận hành trong nó. Một ứng cử viên, chưa phải một đối thủ.",
+        "methane": "Methane chảy được ở đây — và đó gần như là toàn bộ tin tốt. Vì không phân cực, nó gần như không hòa tan thứ gì hóa sinh học cần, không tạo nổi hiệu ứng cuộn gập, và không giữ được màng lipid kép. Sự sống trong biển Titan sẽ phải phát minh một hệ hóa học từ đầu, vận hành chậm rì như tốc độ địa chất.",
+        "formamide": "Formamide chảy được ở đây, và nó vượt nước ở cả hai con số nổi bật: cửa sổ lỏng rộng gấp đôi, độ phân cực cao hơn, cộng thêm hóa học phosphate tốt hơn để lắp nên xương sống di truyền. Thứ nó thiếu là bất kỳ chứng minh nào về cuộn gập hay về màng. Hãy giữ nó lại như lý do để nói \"gần như\" tối ưu — và để cánh cửa vẫn hé mở.",
+        "notLiquid": "Ở nhiệt độ này, dung môi bạn chọn không còn là chất lỏng, nên câu hỏi liệu có dựng nổi một tế bào trong nó cũng không còn chỗ đặt ra. Một dung môi đã đóng băng hay bay hơi hết thì không còn là dung môi. Đây là tấm lọc đầu tiên và thô sơ nhất mà bất cứ thế giới sống nào cũng phải vượt qua."
+      }
+    },
+    "networkOrMind": {
+      "title": "Mạng lưới hay tâm trí?",
+      "subtitle": "Bốn phép kiểm nối tiếp nhau, và năm mẫu vật để chạy qua chúng — trong đó có hai mẫu ta đã biết trước đáp án",
+      "aria": "Một bàn chẩn đoán gồm bốn phép kiểm nối tiếp; tín hiệu chạy dọc bàn và dừng lại ở phép kiểm đầu tiên mà mẫu vật được chọn không vượt qua",
+      "enters": "Tín hiệu vào",
+      "blocked": "Bị chặn lại",
+      "clears": "Vượt qua tất cả",
+      "reachedLabel": "Số phép kiểm đã vượt",
+      "reachedNote": "Trước khi tín hiệu tắc lại",
+      "verdictLabel": "Bàn thử đọc ra",
+      "specimenLabel": "Chọn một mẫu vật để thử",
+      "gateLabel": "Mẫu vật này trả lời từng phép kiểm thế nào",
+      "names": {
+        "slimeMould": "Nấm nhầy",
+        "beeSwarm": "Bầy ong",
+        "cerebellum": "Tiểu não",
+        "cortex": "Vỏ não",
+        "eywa": "Eywa"
+      },
+      "gates": {
+        "competence": "Giải được bài toán chưa ai dạy nó",
+        "recurrence": "Vòng ngược về chính mình, không thể tối giản",
+        "broadcast": "Phát một nội dung ra toàn hệ thống",
+        "experience": "Có cảm giác nào đó khi là chính nó"
+      },
+      "short": {
+        "competence": "Năng lực",
+        "recurrence": "Tích hợp",
+        "broadcast": "Phát sóng",
+        "experience": "Trải nghiệm"
+      },
+      "grade": {
+        "yes": "Vượt qua",
+        "partial": "Chỉ cục bộ",
+        "no": "Không vượt",
+        "unknown": "Không thể trả lời"
+      },
+      "source": {
+        "behaviour": "Hành vi quan sát được",
+        "iit": "Lý thuyết Thông tin Tích hợp",
+        "gwt": "Lý thuyết Không gian Làm việc Toàn cầu",
+        "hardProblem": "Bài toán khó của ý thức"
+      },
+      "verdict": {
+        "network": "Một mạng lưới thông minh",
+        "candidate": "Một ứng viên cho tâm trí",
+        "mind": "Một tâm trí"
+      },
+      "hint": {
+        "slimeMould": "Một tế bào, không nơ-ron nào, mà tái dựng được bản đồ đường sắt Tokyo. Nó tắc lại ở phép kiểm tích hợp: \"ống nào chảy nhiều thì dày lên\" là một quy tắc cục bộ, không phải một tổng thể được hàn thành thứ không thể tối giản. Năng lực mà không phải ứng viên cho tâm trí — và cũng là chứng cứ gọn nhất rằng phép kiểm đầu tiên trên bàn này không phải phép kiểm đáng bàn.",
+        "beeSwarm": "Bầy ong ra một quyết định thực sự tốt mà chẳng có ai quyết, và tín hiệu ríu rít của nó là thứ gần với một đợt phát sóng nhất ở đây. Nhưng nó chỉ tải một lời báo động, không phải nội dung bất kỳ mở ra cho mọi bộ xử lý, và bầy ong chưa bao giờ kết thành một hệ thống không thể tối giản. Tài tình, mà không có ai ở nhà.",
+        "cerebellum": "Đây là mẫu đối chứng quan trọng nhất. Bốn phần năm số nơ-ron của bạn nằm ở đây, mà người mất nó vẫn tỉnh thức trọn vẹn. Nó tắc ngay ở phép kiểm kiến trúc đầu tiên vì nó là một đường ống một chiều. Nếu một phép thử không thể đánh trượt cái đống kết nối lớn nhất trong hộp sọ bạn, thì nó chỉ đang đếm số bộ phận.",
+        "cortex": "Mẫu đối chứng còn lại: mẫu vật duy nhất chạy trọn cả bàn thử. Đặc kín các vòng hồi quy, được đấu dây cho đúng cái \"kích nổ\" toàn hệ thống bất thần biến một nội dung thành có ý thức — và là trường hợp duy nhất mà phép kiểm cuối cùng được trả lời từ bên trong thay vì phỏng đoán từ bên ngoài.",
+        "eywa": "Giờ đến mẫu vật mà cả chương này nói về. Eywa vượt phép kiểm năng lực một cách dứt khoát — đợt sóng thú hoang, thế cân bằng được giữ qua hàng ngàn năm. Nó tắc lại ở phép kiểm tích hợp, bởi tín hiệu qua rễ và khuẩn ty thì chậm và tán loãng, chỉ dày lên thành từng ổ quanh những trung tâm như Cây Linh Hồn thay vì một tổng thể hành tinh không thể tối giản. Truy cập ký ức là một truy vấn tại một cái cây, không phải một đợt kích nổ trải khắp thế giới. Còn phép kiểm cuối cùng không phải điểm thấp; nó là điều không thể trả lời từ bên ngoài, đúng như với người đang ngồi cạnh bạn."
+      },
+      "detail": {
+        "slimeMould": {
+          "competence": "Đặt lên bàn thức ăn xếp theo vị trí các thành phố quanh Tokyo, nó tràn khắp mọi tuyến, rồi tỉa bớt cho đến khi phần còn lại trùng khớp với mạng đường sắt mà con người mất hàng thập kỷ tối ưu.",
+          "recurrence": "Phản hồi của nó là thật nhưng cục bộ: ống nào chảy nhiều thì dày lên, số còn lại teo đi. Mạng lưới ấy chưa bao giờ trở thành một tổng thể không thể cắt thành các phần độc lập.",
+          "broadcast": "Ở đây chẳng có gì chọn lấy một nội dung rồi mở nó ra cho toàn hệ thống. Mỗi vùng chỉ đáp lại dòng chảy trong đúng những ống của mình.",
+          "experience": "Không có cấu trúc nào thuộc loại mà hai bộ khung lý thuyết đòi hỏi, và cũng chẳng năng lực nào của nó cần đến. Câu trả lời là không, thẳng thắn."
+        },
+        "beeSwarm": {
+          "competence": "Ong trinh sát nhảy múa, đi thẩm tra phát hiện của nhau, và đếm số bạn cùng chỗ; cả tổ chọn được hốc cây tốt nhất hiện có. Không con ong nào so sánh hết mọi phương án.",
+          "recurrence": "Sự tuyển mộ tự phản hồi lên chính nó ở từng địa điểm, và đó là tích hợp thật — nhưng nó chỉ cục bộ trong từng ứng viên, chưa bao giờ hàn cả bầy thành một hệ thống không thể tối giản.",
+          "broadcast": "Tín hiệu ríu rít thực sự đến với tất cả và dập tắt những điệu múa đối thủ. Có điều nó chỉ tải một thông điệp, không phải nội dung bất kỳ mà cả tổ có thể cần.",
+          "experience": "Từng con ong thì rất có thể có đời sống nội tâm. Bầy ong với tư cách một thực thể thì không cho thấy dấu hiệu nào, và quyết định của nó chẳng cần đến."
+        },
+        "cerebellum": {
+          "competence": "Nó chạy phép tính của thăng bằng và vận động tinh vi liên tục và xuất sắc. Mất nó thì dáng đi, giọng nói và sự phối hợp của bạn đổ vỡ.",
+          "recurrence": "Gần như thuần truyền thẳng: tín hiệu tràn vào một chiều, được xử lý, rồi đi ra. Theo đúng lời của Lý thuyết Thông tin Tích hợp, một hệ truyền thẳng luôn tháo được thành những chuỗi độc lập, nên thông tin tích hợp của nó gần như bằng không.",
+          "broadcast": "Không có không gian làm việc, không có kích nổ. Nó chuyển kết quả đi tiếp chứ không làm cả bộ não bừng sáng cùng kết quả ấy.",
+          "experience": "Đây là dữ kiện thực nghiệm quyết định trên bàn thử này: người thiếu tiểu não thì suy giảm vận động nhưng ý thức trọn vẹn. Sáu mươi chín tỷ nơ-ron, mà thiếu chúng đèn vẫn sáng."
+        },
+        "cortex": {
+          "competence": "Tri giác, ngôn ngữ, dự tính, và kỳ tích thường ngày của việc nhận ra một khuôn mặt — mẫu vật mà mọi mục khác ở đây đều đang mặc nhiên được so với.",
+          "recurrence": "Đặc kín các vòng quặt ngược và trò chuyện không ngừng với đồi thị. Thông tin dội qua dội lại, đi vào lần nữa, và gắn kết chứ không chỉ chảy xuyên qua.",
+          "broadcast": "Dấu hiệu của nó là \"kích nổ\": một đợt lóe sáng đồng bộ bất thần trên toàn hệ thống, đặt một nội dung trước mặt mọi bộ xử lý chuyên biệt cùng một lúc.",
+          "experience": "Trường hợp duy nhất được trả lời từ bên trong. Bạn đang đọc dòng này — một bằng chứng không mẫu vật nào khác trên bàn thử có được."
+        },
+        "eywa": {
+          "competence": "Điều phối một cuộc phòng vệ khắp lục địa, giữ thế cân bằng của cả sinh quyển qua hàng ngàn năm, và lưu trọn những nhân cách với độ chân thực đủ để phát lại. Năng lực chưa từng bị đặt dấu hỏi ở bất cứ đâu trong chương này.",
+          "recurrence": "Con số kết nối của Grace là thật và không ăn nhập vào đâu. Tín hiệu hóa học và điện sinh học rễ-nối-rễ thì chậm và tán loãng — tích hợp dày lên thành ổ quanh những trung tâm như Cây Linh Hồn, chứ không có chứng cứ nào về một tổng thể nhanh, không thể tối giản, trải khắp hành tinh.",
+          "broadcast": "Nguyên tác cho thấy truy cập điểm-nối-điểm: một cơ thể kết nối vào đúng một cái cây để với tới đúng một ký ức. Đó là một truy vấn được đáp từ ổ cứng, không phải cả hành tinh bùng lên thành một khoảnh khắc dùng chung.",
+          "experience": "Không thể trả lời, và nói thẳng như vậy là kết quả trung thực chứ không phải một lối lảng tránh. Trải nghiệm chủ quan không thể đọc ra từ hành vi khi đứng ngoài — với Eywa cũng như với bất kỳ ai khác."
+        }
+      }
+    }
+  }
+}

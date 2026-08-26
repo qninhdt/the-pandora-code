@@ -1,0 +1,174 @@
+{
+  "viz": {
+    "gyreBoundaryCurrents": {
+      "title": "One basin, two unequal margins",
+      "subtitle": "Wind closes the surface water into a loop; rotation decides which side of the basin gets the fast lane.",
+      "aria": "Basin-scale ocean gyre with the western margin running {west} times the speed of the interior",
+      "hemisphereLabel": "Hemisphere",
+      "hemisphere": {
+        "north": "Northern",
+        "south": "Southern"
+      },
+      "play": "Start the circulation",
+      "pause": "Pause the circulation",
+      "coastWest": "Western coast",
+      "coastEast": "Eastern coast",
+      "interior": "Slow basin interior",
+      "limb": {
+        "west": "Western margin",
+        "east": "Eastern margin"
+      },
+      "slider": {
+        "gradient": "How much rotation's grip changes with latitude",
+        "none": "No change",
+        "mild": "Moderate",
+        "strong": "Strong"
+      },
+      "readout": {
+        "west": "Western margin speed",
+        "westNote": "Narrow, deep, fast",
+        "east": "Eastern margin speed",
+        "eastNote": "Broad, shallow, slow",
+        "dwell": "Time spent east / west"
+      },
+      "verdict": {
+        "symmetric": "A fair racetrack: the loop spends the same time on either margin.",
+        "intensified": "The loop lingers on the eastern side and sprints down the western one."
+      },
+      "hint": {
+        "symmetric": "With rotation gripping equally at every latitude, the gyre is symmetric — both long margins the same width, water crawling around each. No ocean on a rotating world looks like this.",
+        "intensified": "Because rotation's grip strengthens with latitude, the return flow is crowded against the western margin: a narrow, deep, fast current there and a broad, slow drift on the far side. Earth's Gulf Stream and Kuroshio are the western kind; the California and Humboldt currents the eastern."
+      }
+    },
+    "codaRhythmComparator": {
+      "title": "The message is the timing",
+      "subtitle": "Every click is the same sound. What separates one vocal clan from another is only where the clicks fall in time.",
+      "aria": "Click-timing tracks comparing vocal repertoires, showing {voice}",
+      "timeAxis": "One cycle of the pattern →",
+      "voiceLabel": "Repertoire on show",
+      "sympatricToggle": "Show all at once",
+      "play": "Run the pattern",
+      "pause": "Pause the pattern",
+      "unresolved": "Canon translates it; canon never diagrams it",
+      "voice": {
+        "regular": "Evenly spaced clan",
+        "plusOneOneThree": "Two-then-three clan",
+        "short": "Condensed clan",
+        "tulkun": "Tulkun call"
+      },
+      "voiceShort": {
+        "regular": "Even",
+        "plusOneOneThree": "Two-then-three",
+        "short": "Condensed",
+        "tulkun": "Tulkun"
+      },
+      "signature": {
+        "regular": "Even spacing",
+        "plusOneOneThree": "Two, then three",
+        "short": "Tight burst",
+        "tulkun": "Rumble, whistle, click"
+      },
+      "range": {
+        "regular": "Deep offshore dives",
+        "plusOneOneThree": "Coastal shelves and atolls",
+        "short": "Open-ocean ranging",
+        "tulkun": "Whole ocean basin"
+      },
+      "carries": {
+        "regular": "Clan membership",
+        "plusOneOneThree": "Clan membership",
+        "short": "Clan membership",
+        "tulkun": "Translated dialogue"
+      },
+      "limit": {
+        "regular": "Held for decades; not written in the genes",
+        "plusOneOneThree": "Shares maternal lineages with the others, never their company",
+        "short": "Kept distinct across decades of recording",
+        "tulkun": "No grammar has been shown, only meaning asserted"
+      },
+      "hint": {
+        "clan": "Sperm-whale clans are named for these rhythms. The clicks themselves are interchangeable broadband pulses; the pattern of silences is the whole signal.",
+        "sympatric": "These clans use the same water at the same time and share maternal lineages, yet units only ever associate with others that keep their rhythm. A difference no wider than a pause is doing the work of a social border.",
+        "tulkun": "Canon gives tulkun low rumbles that carry across an ocean basin, and subtitles them as sentences. It never exposes a structure. The band stays unresolved on purpose — the film asserts the meaning without showing the code."
+      },
+      "signatureNote": {
+        "regular": "Five to eight clicks at a steady interval",
+        "plusOneOneThree": "Two isolated clicks, then a rapid triplet",
+        "short": "Three or four clicks packed close together",
+        "tulkun": "Stated in canon; never diagrammed"
+      },
+      "readout": {
+        "signature": "Rhythmic signature",
+        "gap": "Tightest gap between clicks",
+        "gapValue": "{pct}% of the cycle",
+        "gapNone": "Not measurable",
+        "gapNote": "The whole difference between clans lives in numbers this small",
+        "range": "Where it is used",
+        "carries": "What the pattern carries"
+      }
+    },
+    "elderMemoryLedger": {
+      "title": "What a pod loses with its oldest members",
+      "subtitle": "Some knowledge only exists in an animal that lived through a bad year. Take those animals away and the pod forgets far faster than it shrinks.",
+      "aria": "Pod age structure; the surviving pod's chance of still holding a lean-year memory is {pct} per cent",
+      "ageAxis": "Age of each pod member, in years",
+      "glowNote": "The brighter the body, the more lean years it has crossed",
+      "controls": {
+        "removed": "Oldest members taken",
+        "removedValue": "{n} taken",
+        "recurrence": "How rare a lean year is",
+        "recurrenceValue": "1 in {n} years"
+      },
+      "readout": {
+        "bodies": "Head count",
+        "bodiesNote": "What a census records",
+        "experience": "Lived experience",
+        "experienceNote": "What no census records",
+        "retained": "Pod still holds the memory"
+      },
+      "verdict": {
+        "held": "Somebody alive has crossed a year like that before.",
+        "lost": "Probably nobody left has crossed a year like that."
+      },
+      "hint": {
+        "intact": "Every member alive. The oldest animals have crossed the most lean years, so the pod's rarest knowledge sits with them — and is safe only while they are.",
+        "asymmetric": "Compare the top two numbers. The head count barely moved; the pod's lived experience fell several times further, because experience piles up at the old end. A hunt that takes the largest animals is not taking an average sample.",
+        "buffered": "At this recurrence, lean years come often enough that younger adults have crossed one too, so the pod's knowledge survives losing its elders. Make the lean year rarer and that buffer disappears."
+      }
+    },
+    "reefRugosityProfile": {
+      "title": "The folds are the habitat",
+      "subtitle": "Lay a chain over the reef and divide its length by the distance it spans. That one number predicts how much life the ground can hold.",
+      "aria": "Cross-section of a reef surface with a measured roughness index of {index}",
+      "linearSpan": "Straight distance the chain spans",
+      "surface": "Sea surface",
+      "swellThrough": "Swell still getting past",
+      "controls": {
+        "complexity": "Structural complexity of the framework"
+      },
+      "state": {
+        "complex": "Branching framework",
+        "reduced": "Losing structure",
+        "flattened": "Rubble plain"
+      },
+      "sizeClass": {
+        "small": "Shallow crevices",
+        "medium": "Mid-sized hollows",
+        "large": "Caves and overhangs"
+      },
+      "readout": {
+        "rugosity": "Roughness index",
+        "rugosityNote": "1.0 is a flat floor; healthy reefs reach 2.5 and above",
+        "refuges": "Hiding places counted",
+        "refugesNote": "Every valley deep enough to shelter something",
+        "swell": "Wave energy transmitted",
+        "swellNote": "What reaches the lagoon behind the reef"
+      },
+      "hint": {
+        "complex": "A branching framework folds far more surface into the same footprint. Each fold is a refuge from a predator, a nursery for something small, a place for something else to settle — and it dissipates the swell before it reaches the village.",
+        "reduced": "The finest structure goes first. Twigs, then branches, then boulders: as the framework is ground down, the smallest shelters disappear before the reef looks visibly damaged, and more swell starts getting through.",
+        "flattened": "At an index near 1.0 the reef is still there as rock and gone as habitat. The crevices have filled, the animals that lived in them have nowhere to be, and the swell the terraces used to break rolls straight through."
+      }
+    }
+  }
+}

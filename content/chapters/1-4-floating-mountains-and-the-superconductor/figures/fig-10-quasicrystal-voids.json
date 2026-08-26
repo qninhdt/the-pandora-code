@@ -14,5 +14,6 @@
   "exclude": ["text", "watermark", "simple repeating square grid", "faceted gemstone", "jewelry"],
   "consistency_notes": "Thread glow is the same cyan as the chapter's flux threads; lattice shows five-fold (pentagonal) aperiodic symmetry, not a periodic cubic grid.",
   "aspect_ratio": "1:1",
-  "negative_prompt": "no text, no numbers, no faceted gemstone, no regular repeating cubic lattice, no oversaturation"
+  "negative_prompt": "no text, no numbers, no faceted gemstone, no regular repeating cubic lattice, no oversaturation",
+  "style_refs": ["pandora-establishing.png"]
 }

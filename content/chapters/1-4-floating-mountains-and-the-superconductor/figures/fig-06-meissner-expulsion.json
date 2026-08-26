@@ -14,5 +14,6 @@
   "exclude": ["text", "letters", "numbers", "watermark", "photographic texture"],
   "consistency_notes": "Thin glowing cyan lines on a near-black background, matching the chapter's schematic diagrams.",
   "aspect_ratio": "4:3",
-  "negative_prompt": "no text, no numbers, no photorealism, no 3D bevels, no clutter, no lines inside the sphere"
+  "negative_prompt": "no text, no numbers, no photorealism, no 3D bevels, no clutter, no lines inside the sphere",
+  "style_refs": ["pandora-establishing.png"]
 }

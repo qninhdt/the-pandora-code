@@ -1,0 +1,119 @@
+{
+  "viz": {
+    "stratigraphicColumn": {
+      "title": "Đọc một vách đá",
+      "subtitle": "Chọn một cấu trúc bất kỳ. Cả vách đá tự xếp lại thành phần chắc chắn cổ hơn, phần chắc chắn trẻ hơn — và phần mà hình học của đá từ chối xếp hạng.",
+      "pickLabel": "Lấy cấu trúc này làm mốc",
+      "axis": {
+        "younger": "Trẻ hơn",
+        "older": "Cổ hơn"
+      },
+      "feature": {
+        "upperSand": "Sa thạch phủ trên",
+        "unconformity": "Mặt bào mòn",
+        "dike": "Mạch xâm nhập",
+        "fault": "Đứt gãy",
+        "ashUpper": "Tầng tro trên",
+        "fossilBed": "Tầng chứa hóa thạch",
+        "ashLower": "Tầng tro dưới",
+        "lowerSand": "Sa thạch dưới",
+        "basement": "Đá móng"
+      },
+      "principle": {
+        "superposition": "Chồng chất tầng bậc",
+        "crossCutting": "Cắt xuyên",
+        "unconformity": "Khoảng thời gian mất tích",
+        "anchor": "Tầng tro đã định tuổi"
+      },
+      "principleNote": {
+        "superposition": "Các tầng nguyên vẹn xếp cổ nhất ở dưới cùng — trọng lực đã sắp thứ tự sẵn",
+        "crossCutting": "Thứ gì cắt qua đá thì buộc phải trẻ hơn khối đá nó cắt",
+        "unconformity": "Một mặt bị bào mòn: các tầng từng nằm đây đã biến mất, và thời gian của chúng cũng vậy",
+        "anchor": "Tro núi lửa tự làm mới đồng hồ nguyên tử của nó, nên tầng này định tuổi được trực tiếp"
+      },
+      "readout": {
+        "principle": "Điều gì định vị nó",
+        "age": "Tuổi bạn bảo vệ được",
+        "span": "Khoảng tuổi rộng {n} triệu năm",
+        "oneSided": "Chỉ chặn một phía — phía kia không có mốc định tuổi",
+        "older": "Cổ hơn",
+        "younger": "Trẻ hơn",
+        "undetermined": "Không xếp được"
+      },
+      "age": {
+        "measured": "{n} tỷ năm",
+        "between": "{old} – {young} tỷ năm",
+        "olderThan": "cổ hơn {n} tỷ năm",
+        "youngerThan": "trẻ hơn {n} tỷ năm"
+      },
+      "hint": {
+        "ordered": "Mọi cấu trúc khác trên vách đá này đều tiếp xúc với nó ở đâu đó, nên chính đá quyết định thứ tự. Đây là định tuổi tương đối ở dạng mạnh nhất: chắc chắn, miễn phí, và tuyệt đối im lặng về số năm.",
+        "ambiguous": "Có những cấu trúc không thể xếp hạng với nó. Mạch xâm nhập và đứt gãy không hề giao nhau — cả hai đều cắt các tầng bên dưới, cả hai đều bị mặt bào mòn phía trên chặt ngang, và không gì trong đá cho biết cái nào có trước. Quan sát kỹ đến đâu cũng không giải được; chỉ một con số định tuổi mới giải được."
+      },
+      "slider": {
+        "lowerAsh": "Tầng tro dưới định tuổi được",
+        "upperAsh": "Tầng tro trên định tuổi được",
+        "sigma": "Sai số phép đo"
+      },
+      "gyrValue": "{n} tỷ năm trước",
+      "myrValue": "± {n} triệu năm",
+      "aria": "Vách địa tầng gồm chín cấu trúc, đang lấy {feature} làm mốc"
+    },
+    "opercularOxygenBudget": {
+      "title": "Quạt thở có theo kịp cơ thể không?",
+      "subtitle": "Nhu cầu oxy tăng theo khối lượng^0,75. Còn bề mặt thở nếu chỉ lớn lên cùng tỉ lệ với cơ thể thì tăng theo khối lượng^0,67 — nên con vật càng lớn, quạt thở càng tụt lại phía sau.",
+      "modeControl": "Cách con vật đẩy không khí",
+      "mode": {
+        "tidal": "Ra vào hai chiều",
+        "oneWay": "Một chiều"
+      },
+      "airControl": "Bầu khí quyển nào",
+      "air": {
+        "earth": "Khí Trái Đất",
+        "pandora": "Khí Pandora"
+      },
+      "breakEven": "Điểm hòa: cung vừa đủ cầu",
+      "ceilingMarker": "Quạt thở cạn sức ở đây",
+      "axis": {
+        "mass": "Khối lượng cơ thể (kg)",
+        "margin": "Oxy cung cấp ÷ oxy cần"
+      },
+      "readout": {
+        "margin": "Cung so với cầu",
+        "ceiling": "Cơ thể nặng nhất còn nuôi được",
+        "ceilingNote": "nơi biên độ tụt về điểm hòa",
+        "noCeiling": "không có giới hạn",
+        "required": "Bề mặt phải tăng theo khối lượng^",
+        "requiredNote": "số mũ vừa đủ nuôi chính cơ thể này",
+        "noRequirement": "—",
+        "ventilationCost": "Chi cho việc đẩy khí",
+        "costPaid": "trả bằng chính lượng oxy đó, mỗi nhịp thở",
+        "costFree": "chân và cánh vốn đã chuyển động — luồng khí đi kèm miễn phí",
+        "barrier": "Rào cản thực tế",
+        "barrierStagnant": "khí tù đọng lại tụ trên màng và làm dày đoạn đường phải vượt",
+        "barrierScoured": "luồng khí chảy liên tục cạo sạch lớp màng tù đọng đó"
+      },
+      "verdict": {
+        "enough": "Bề mặt trao đổi vẫn đi trước nhu cầu",
+        "short": "Nhu cầu đã vượt bề mặt — cơ thể này không thể được nuôi"
+      },
+      "hint": {
+        "affording": "Vẫn chạy được, nhưng con vật trả giá hai lần: một lần để tăng tốc rồi phanh đứng một cột khí nặng ở mỗi nhịp thở, và một lần nữa cho lớp khí tù đọng luôn lắng xuống màng ngay khi luồng khí dừng lại. Chuyển sang dòng một chiều thì cả hai hóa đơn đều biến mất — hãy xem ngưỡng giới hạn nhảy lên tới đâu.",
+        "carried": "Đây chính là thứ mà quạt thở bên sườn mua được. Khí vào phía trước, băng qua bề mặt trao đổi một lần, rồi thoát ra phía sau — không bao giờ dừng, không bao giờ đảo chiều, và do chính tốc độ con vật đẩy chứ không phải lồng ngực. Mô trao đổi không hề thay đổi; chỉ chiều của luồng khí thay đổi.",
+        "payingTwice": "Nhu cầu đã vượt bề mặt. Hãy để ý cái đòn không dùng được: khí Pandora đặc nhưng áp suất riêng phần oxy chỉ ngang Trái Đất, nên đổi bầu khí quyển gần như không dịch chuyển gì. Điều mà khí đặc thực sự gây ra là làm mỗi lần đảo chiều trở nên đắt đỏ — vậy thì đừng đảo chiều nữa.",
+        "foldFaster": "Ngay cả khi khí đã chảy một chiều, cơ thể này vẫn quá lớn cho một bề mặt chỉ lớn lên cùng tỉ lệ với nó. Đòn duy nhất còn lại là chính bề mặt đó: hãy gấp nếp nó nhanh hơn mức cơ thể phình ra, và đọc xem cần số mũ bao nhiêu."
+      },
+      "slider": {
+        "mass": "Khối lượng cơ thể",
+        "areaExponent": "Bề mặt trao đổi tăng theo khối lượng^"
+      },
+      "exponentNote": "Ở mức {isometric}, quạt thở chỉ lớn lên cùng tỉ lệ với cơ thể — lựa chọn hình học mặc định, và là lựa chọn thua. Bề mặt hô hấp thật luôn gấp nếp nhanh hơn thế; câu hỏi là phải nhanh hơn bao nhiêu.",
+      "calibrationNote": "Các số mũ là sinh lý học; còn thang dọc thì không. Không có số đo tốc độ chuyển hóa hay khối lượng cơ thể nào cho bất kỳ loài Pandora nào, nên toàn bộ đồ thị được ghim vào một cơ thể tham chiếu — loài thở hai chiều nặng {reference} kg trong khí Trái Đất, bề mặt chỉ lớn lên cùng tỉ lệ, đặt đúng tại điểm hòa. Mọi số liệu khác là so sánh với mốc đó, không phải phép đo.",
+      "shadowNote": "Đường nét đứt là cùng con vật đó, trong cùng bầu khí đó, nhưng thở theo cách còn lại.",
+      "kgValue": "{n} kg",
+      "timesValue": "{n}×",
+      "percentValue": "{n}%",
+      "aria": "Biên độ cung–cầu oxy theo khối lượng cơ thể, thở {mode}, hiện gấp {margin} lần nhu cầu"
+    }
+  }
+}

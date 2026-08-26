@@ -1,0 +1,162 @@
+{
+  "viz": {
+    "warningSignalRace": {
+      "title": "Does the warning arrive first?",
+      "subtitle": "An alarm is only an alarm if it beats the herbivore to the neighbour.",
+      "aria": "A signal crossing soil between an attacked plant and its neighbour, reaching {reach} of a {distance} gap before the deadline",
+      "channelLabel": "Channel the alarm travels on",
+      "channels": {
+        "streaming": "Sap flow in the fungus",
+        "spike": "Fungal electrical spike",
+        "nerve": "A nerve, for comparison"
+      },
+      "hint": {
+        "inTime": "The warning lands before the attack does — so the neighbour has its defences up when the aphids arrive. Notice how small the gap has to be for this to work.",
+        "tooLate": "The alarm is still crawling through the soil when the herbivore arrives. The signal is real; over this distance it is simply too slow to be a warning."
+      },
+      "attacked": "Attacked plant",
+      "neighbour": "Neighbour",
+      "frontLabel": "signal reaches {reach}",
+      "gapLabel": "gap between the plants: {distance}",
+      "travelLabel": "Time to cross",
+      "travelNote": "At this channel's measured speed",
+      "verdictLabel": "Outcome",
+      "verdict": {
+        "inTime": "Warned in time",
+        "tooLate": "Too late"
+      },
+      "distanceSlider": "Distance between the two plants",
+      "deadlineSlider": "Time before the herbivore reaches the neighbour",
+      "units": {
+        "instant": "almost instant",
+        "seconds": "{n} s",
+        "minutes": "{n} min",
+        "hours": "{n} hours",
+        "days": "{n} days",
+        "years": "{n} years"
+      }
+    },
+    "isotopeTracerAudit": {
+      "title": "Build the experiment, earn the claim",
+      "subtitle": "Switch each control on and see which sentence the design lets you write.",
+      "aria": "An isotope-tracing experiment with {n} of {total} controls in place, and the strongest claim it supports",
+      "source": "Labelled donor",
+      "receiver": "Receiver",
+      "receiverShaded": "Shaded receiver",
+      "routeLabel": "shared soil and the fungal link between the root systems",
+      "meshMarker": "mesh: cuts hyphae, passes soil water",
+      "claimLabel": "Strongest claim earned",
+      "claimNote": "The design cannot support anything above this",
+      "attributionLabel": "Where the molecule came from",
+      "attribution": {
+        "unknown": "Unknown donor",
+        "soilLeak": "Soil leak or fungus",
+        "fungalRoute": "The fungal link"
+      },
+      "controlsLabel": "Controls in place",
+      "controlsNote": "Each one closes a different escape route",
+      "rung": {
+        "none": "Nothing yet",
+        "movement": "Something moved",
+        "route": "It went through the fungus",
+        "gradient": "It moved toward need",
+        "kin": "Kin were favoured"
+      },
+      "confound": {
+        "donorUnknown": "With one label you can find the isotope in the receiver and still not know which plant it started in. Nothing can be claimed until the donor is distinguishable.",
+        "soilLeak": "Carbon reached the receiver — but sugars leak from roots into soil and neighbours take them up independently. Without a barrier, the fungal route is one explanation among several.",
+        "noGradient": "The mesh rules out the soil, so the link really did carry it. What the design still cannot show is direction: nothing here says the flow followed anyone's need.",
+        "kinUntested": "This is what Simard's design earned — net flow running down a shading gradient, from the sunlit tree toward the struggling one. The kin claim is not tested and cannot be inferred.",
+        "potArtifact": "Related seedlings in pots can show a kin effect that pots create. Continuous wild forest is where the claim has to hold, and where it has almost never been attempted.",
+        "none": "Every escape route closed — and this is precisely the design forest ecology has essentially never run. The 2023 review found no field evidence for the kin claim at all, which is why it stays a hypothesis."
+      },
+      "state": {
+        "on": "In place",
+        "off": "Skipped"
+      },
+      "control": {
+        "dualIsotope": {
+          "name": "Two distinguishable labels",
+          "detail": "Feed each species a different carbon isotope so any molecule found can be traced to the plant it started in."
+        },
+        "meshBarrier": {
+          "name": "Hyphae-severing mesh",
+          "detail": "A fine barrier that cuts the fungal threads while still letting soil water through, so the two routes can be told apart."
+        },
+        "sourceSink": {
+          "name": "A shading gradient",
+          "detail": "Shade the receiver so it cannot photosynthesise, creating the source-to-sink difference that makes direction meaningful."
+        },
+        "kinDesign": {
+          "name": "Related receivers",
+          "detail": "Compare seedlings related to the donor against strangers — the only way the mother-tree claim becomes testable at all."
+        },
+        "wildForest": {
+          "name": "Continuous wild forest",
+          "detail": "Run it in real forest soil with mapped fungal individuals, not pots, so the result speaks for the ecosystem."
+        }
+      }
+    },
+    "latencyHorizon": {
+      "title": "How much of a moon can answer in time?",
+      "subtitle": "Capacity says how much crosses. Latency says how much of the planet is even in reach.",
+      "aria": "A disc of Pandora with the reachable region glowing: a signal reaches {reach} within the deadline, dividing the moon into {regions} regions",
+      "deadlineLabel": "How long coordination may take",
+      "deadlines": {
+        "reflex": "A reflex",
+        "day": "One day",
+        "season": "A season"
+      },
+      "hint": {
+        "whole": "At this speed and this deadline the whole moon is inside one horizon — every part of the network can answer every other part in time. This is what it takes for a planet to act as one.",
+        "fragmented": "The moon breaks into roughly {n} regions that cannot reach each other inside the deadline. Each is coherent; none of them can coordinate with the rest. A planetary network, but not a planetary moment."
+      },
+      "moonLabel": "Pandora",
+      "horizonLabel": "reach: {reach}",
+      "crossingLabel": "Pole to pole, at best",
+      "crossingNote": "Straight line, halfway around the moon — the floor, not the real delay",
+      "regionsLabel": "Regions in reach of each other",
+      "oneRegion": "The whole moon",
+      "regionsNote": "How many separate horizons the moon holds",
+      "speedSlider": "Conduction speed of the cable",
+      "speedValue": "{n} m/s",
+      "speedNote": "Electrochemical signalling spans about 1 m/s in bare fibres to {max} m/s in the fattest insulated ones. Nothing biological is known to go faster, so the whole slider is the real envelope.",
+      "units": {
+        "seconds": "{n} s",
+        "minutes": "{n} min",
+        "hours": "{n} hours",
+        "days": "{n} days",
+        "years": "{n} years"
+      }
+    },
+    "regenerationRace": {
+      "title": "Burning against regrowth",
+      "subtitle": "Resilience is not armour. It is a rate — and a rate can be outrun.",
+      "aria": "A trajectory of how much of the network is still standing over two centuries, ending at {pct} percent: {verdict}",
+      "shapeLabel": "Shape of the network",
+      "shapes": {
+        "scaleFree": "Hubs and leaves",
+        "lattice": "Even mesh"
+      },
+      "hint": {
+        "shattered": "Burning outpaces reseeding, the standing network slides to the critical density, and in year {year} the connected whole does not dim — it shatters into islands in a single step.",
+        "holding": "Reseeding keeps up. The forest carries a permanent scar — it levels off around {pct}% of what it was — and stays one connected network the whole way."
+      },
+      "criticalLabel": "critical density {pct}%",
+      "axisFull": "all standing",
+      "axisGone": "gone",
+      "axisYears": "years of sustained burning",
+      "verdictLabel": "Outcome",
+      "verdict": {
+        "shattered": "Network shattered",
+        "holding": "Scarred but whole"
+      },
+      "shatterNote": "Crossed the threshold in year {year}",
+      "holdingNote": "Settles near {pct}% standing",
+      "burnSlider": "Network burned each year",
+      "regrowSlider": "Reseeding at its most productive",
+      "perYear": "{n}% per year",
+      "regrowNote": "Reseeding is done by the forest that survives, so it slows as the network shrinks — which is why the losing side of this race accelerates instead of levelling out."
+    }
+  }
+}

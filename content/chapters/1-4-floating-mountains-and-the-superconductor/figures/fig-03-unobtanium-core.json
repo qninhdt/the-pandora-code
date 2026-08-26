@@ -21,7 +21,7 @@
   "consistency_notes": "Core glow is the same cyan-teal as the glowing mist elsewhere in the chapter; rock is grey weathered stone.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no logos, no machinery, no oversaturation, no faceted jewel look",
-  "character_refs": [
-    "apps/web/public/images/chapters/floating-mountains-and-the-superconductor/fig-00-cover.png"
+  "style_refs": [
+    "pandora-establishing.png"
   ]
 }

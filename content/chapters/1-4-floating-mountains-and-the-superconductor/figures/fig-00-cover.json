@@ -22,5 +22,7 @@
   "consistency_notes": "Grey weathered rock, blue-green canopy on top, cyan-teal glowing mist around the base. This image defines the look every other floating-mountain scene in the chapter must match.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no logos, no humans, no modern machinery, no oversaturation, no cartoon or anime style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }
