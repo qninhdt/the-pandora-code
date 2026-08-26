@@ -1,0 +1,31 @@
+id: nictitating-membrane
+label:
+  vi: Màng mắt thứ ba
+  en: Nictitating membrane
+definition:
+  vi: >-
+    Một lớp mí thứ ba mờ hoặc trong suốt quét ngang qua giác mạc, có ở cá mập, lưỡng cư, bò sát, chim
+    và một số loài thú như hải cẩu, bò biển, gấu trắng. Điều đáng nói là chức năng thật của nó: nó bảo
+    vệ, chứ không phải để nhìn rõ hơn. Nó chắn cát bụi và lực xé của dòng nước khi con vật lao đi thật
+    nhanh, giữ màng nước mắt nguyên vẹn — mà vẫn cho ánh sáng đi qua, nên con vật không phải nhắm mắt
+    lại. Nó không sửa được cái tật viễn thị nặng mà nước gây ra; đó là chuyện của thấu kính và con
+    ngươi.
+  en: >-
+    A translucent or transparent third eyelid that sweeps sideways across the cornea, found in sharks,
+    amphibians, reptiles, birds, and a handful of mammals — seals, sirenians, polar bears. What matters
+    is what it actually does: it protects, rather than improving vision. It shields the eye from grit
+    and from the shearing force of water at speed, and keeps the tear film intact — while still letting
+    light through, so the animal never has to close its eyes. It does not correct the severe
+    farsightedness water causes; that is the lens and the pupil's problem.
+see_also:
+  - tapetum-lucidum
+  - phenotypic-plasticity
+  - convergent-evolution
+category: bio
+tags:
+  - sensory-biology
+  - physiology
+cover_prompt: >-
+  A painterly close study of a large luminous eye underwater, a thin translucent membrane drawn
+  partway across it horizontally, fine sediment drifting past in the current, cyan and teal reflections
+  on the wet surface against deep indigo, no text, no labels, no numbers.

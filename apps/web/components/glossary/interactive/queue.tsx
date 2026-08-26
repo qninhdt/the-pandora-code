@@ -82,13 +82,46 @@ export default function QueueViz() {
       <div ref={ref} className="absolute inset-0">
         <svg viewBox="0 0 100 100" className="h-full w-full" role="img" aria-label={t("title")}>
           {/* buffer trough */}
-          <rect x="14" y="36" width="72" height="18" rx="2" fill="var(--void)" stroke="var(--border-strong)" strokeWidth={0.5} opacity={0.6} />
+          <rect
+            x="14"
+            y="36"
+            width="72"
+            height="18"
+            rx="2"
+            fill="var(--void)"
+            stroke="var(--border-strong)"
+            strokeWidth={0.5}
+            opacity={0.6}
+          />
           {/* server */}
-          <rect x="8" y="38" width="8" height="14" rx="1" fill="var(--surface)" stroke="var(--teal)" strokeWidth={0.9} />
-          <text x="12" y="47" textAnchor="middle" style={{ fontSize: 2.8, fontFamily: "monospace", fill: "var(--teal)" }}>μ</text>
+          <rect
+            x="8"
+            y="38"
+            width="8"
+            height="14"
+            rx="1"
+            fill="var(--surface)"
+            stroke="var(--teal)"
+            strokeWidth={0.9}
+          />
+          <text
+            x="12"
+            y="47"
+            textAnchor="middle"
+            style={{ fontSize: 2.8, fontFamily: "monospace", fill: "var(--teal)" }}
+          >
+            μ
+          </text>
           {/* arrival */}
           <polygon points="90,40 96,45 90,50" fill="var(--amber)" opacity={0.85} />
-          <text x="93" y="56" textAnchor="middle" style={{ fontSize: 2.6, fontFamily: "monospace", fill: "var(--amber)" }}>λ</text>
+          <text
+            x="93"
+            y="56"
+            textAnchor="middle"
+            style={{ fontSize: 2.6, fontFamily: "monospace", fill: "var(--amber)" }}
+          >
+            λ
+          </text>
           {items.current.map((it) => (
             <rect
               key={it.id}
@@ -107,8 +140,26 @@ export default function QueueViz() {
           <Readout label={t("wait")} value={W.toFixed(2)} accent="teal" />
         </div>
         <div className="absolute inset-x-3 bottom-10 flex flex-col gap-1">
-          <ControlSlider label={t("arrival")} value={lambda} min={0.2} max={4} step={0.1} display={lambda.toFixed(1)} onChange={setLambda} thumb="amber" />
-          <ControlSlider label={t("service")} value={mu} min={0.2} max={4} step={0.1} display={mu.toFixed(1)} onChange={setMu} thumb="teal" />
+          <ControlSlider
+            label={t("arrival")}
+            value={lambda}
+            min={0.2}
+            max={4}
+            step={0.1}
+            display={lambda.toFixed(1)}
+            onChange={setLambda}
+            thumb="amber"
+          />
+          <ControlSlider
+            label={t("service")}
+            value={mu}
+            min={0.2}
+            max={4}
+            step={0.1}
+            display={mu.toFixed(1)}
+            onChange={setMu}
+            thumb="teal"
+          />
         </div>
       </div>
     </GlossaryFrame>

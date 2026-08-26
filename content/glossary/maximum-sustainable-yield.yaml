@@ -1,0 +1,37 @@
+id: maximum-sustainable-yield
+label:
+  vi: Sản lượng bền vững tối đa
+  en: Maximum sustainable yield
+definition:
+  vi: >-
+    Lượng lớn nhất có thể lấy khỏi một quần thể mỗi năm mà quần thể vẫn giữ được mức cũ. Với mô hình
+    sinh trưởng logistic, điểm đó nằm ở đúng một nửa sức chứa môi trường, nơi mức sinh sản dư ra
+    nhiều nhất. Nghe rất gọn, và nó đã thất bại nhiều lần trên biển thật. Ba lý do: sức chứa và tốc
+    độ sinh trưởng đo ngoài đại dương có sai số rất rộng, nên định mức đặt cao hơn khả năng bù đắp
+    thật mà không ai biết; ở mật độ thấp, quần thể sinh sản kém hơn dự đoán chứ không tốt hơn; và
+    sản lượng trên mỗi đơn vị công sức có thể trông ổn định trong khi đàn đang sụp, vì tàu ngày càng
+    giỏi tìm những đám cuối cùng. Vụ sụp cá tuyết Grand Banks năm 1992 là bài học kinh điển.
+  en: >-
+    The largest amount that can be taken from a population each year while the population holds its
+    level. Under logistic growth that point sits at exactly half of environmental carrying capacity,
+    where surplus reproduction peaks. It sounds tidy, and it has failed repeatedly in real oceans.
+    Three reasons: carrying capacity and growth rate measured at sea carry very wide error bars, so a
+    quota can exceed genuine replacement without anyone knowing; at low density populations breed
+    worse than predicted rather than better; and catch per unit effort can look stable while a stock
+    collapses, because vessels get better at finding the last aggregations. The 1992 Grand Banks cod
+    collapse is the classic lesson.
+see_also:
+  - carrying-capacity
+  - depensation
+  - potential-biological-removal
+  - bioeconomics
+category: concept
+tags:
+  - bioeconomics
+  - ecology
+  - oceanography
+cover_prompt: >-
+  A painterly plate of a broad dome-shaped curve rising and falling across a dark field, with a
+  single vertical marker standing at its highest point and a shoal of small fish rendered thinning
+  from left to right beneath the curve, cool teal curve and pale fish on deep indigo, painterly
+  naturalist plate, no text, no labels.

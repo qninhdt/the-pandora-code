@@ -1,8 +1,8 @@
 "use client";
 
-import { Scene3D } from "./scene-3d";
 import { OrbitClockFallback } from "./orbit-clock-fallback";
 import { OrbitClockScene } from "./orbit-clock-scene";
+import { Scene3D } from "./scene-3d";
 
 interface OrbitClockProps {
   /** Optional generated poster shown as the 2D fallback on low-power devices. */

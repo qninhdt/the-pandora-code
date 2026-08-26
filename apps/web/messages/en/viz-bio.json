@@ -487,12 +487,7 @@
       "hint": "Use the slider to grow the tree. As new layers emerge, new ecological niches open up without competing for space.",
       "treeHeight": "Tree Height",
       "niches": "Ecological Niches",
-      "strataNames": [
-        "Forest Floor",
-        "Understory",
-        "Canopy",
-        "Emergent Layer"
-      ],
+      "strataNames": ["Forest Floor", "Understory", "Canopy", "Emergent Layer"],
       "floor": "Floor",
       "understory": "Understory",
       "canopy": "Canopy",

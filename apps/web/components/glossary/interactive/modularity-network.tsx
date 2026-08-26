@@ -85,9 +85,7 @@ function modularityQ(labels: number[], edges: [number, number][]) {
   for (let i = 0; i < GRAPH.nodes.length; i++) {
     for (let j = i + 1; j < GRAPH.nodes.length; j++) {
       if (labels[i] !== labels[j]) continue;
-      const linked = edges.some(
-        ([a, b]) => (a === i && b === j) || (a === j && b === i),
-      );
+      const linked = edges.some(([a, b]) => (a === i && b === j) || (a === j && b === i));
       if (!linked) q -= (deg[i] * deg[j]) / (2 * m);
     }
   }

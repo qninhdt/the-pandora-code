@@ -41,15 +41,6 @@ export default async function OfflinePage({ params }: OfflinePageProps) {
     <>
       <JsonLd data={breadcrumb} />
       <main className="mx-auto max-w-5xl px-6 pb-24 pt-32">
-        <nav aria-label="Breadcrumb" className="mb-8 font-sans text-xs text-subtle">
-          <a href={`/${locale}`} className="hover:text-cyan">
-            {t("nav.home")}
-          </a>
-          <span aria-hidden className="px-2">
-            /
-          </span>
-          <span className="text-muted">{t("offline.libraryTitle")}</span>
-        </nav>
         <h1 className="font-display text-4xl font-700 tracking-tight text-foreground sm:text-5xl">
           {t("offline.libraryTitle")}
         </h1>

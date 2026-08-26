@@ -1,8 +1,8 @@
 "use client";
 
-import { Scene3D } from "./scene-3d";
 import { FloatingMountainFallback } from "./floating-mountain-fallback";
 import { FloatingMountainScene } from "./floating-mountain-scene";
+import { Scene3D } from "./scene-3d";
 
 interface FloatingMountainFigureProps {
   /** Optional generated poster shown as the 2D fallback on low-power devices. */

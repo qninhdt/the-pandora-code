@@ -126,13 +126,7 @@ export default function GlobalWorkspaceTheory() {
           })}
 
           {/* spotlight */}
-          {winner && (
-            <polygon
-              points="50,62 38,48 62,48"
-              fill="var(--amber)"
-              opacity={0.15}
-            />
-          )}
+          {winner && <polygon points="50,62 38,48 62,48" fill="var(--amber)" opacity={0.15} />}
         </svg>
 
         <div className="absolute right-3 top-14">

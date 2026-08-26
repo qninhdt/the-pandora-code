@@ -60,14 +60,7 @@ export default function Mutualism() {
 
           {/* partner B — pollinator */}
           <g transform="translate(72 42)">
-            <ellipse
-              cx="0"
-              cy="0"
-              rx="7"
-              ry="4"
-              fill="var(--cyan)"
-              opacity={0.4 + fitB * 0.55}
-            />
+            <ellipse cx="0" cy="0" rx="7" ry="4" fill="var(--cyan)" opacity={0.4 + fitB * 0.55} />
             <ellipse cx="-2" cy="-5" rx="4" ry="2" fill="var(--teal)" opacity="0.5" />
             <ellipse cx="2" cy="-5" rx="4" ry="2" fill="var(--teal)" opacity="0.5" />
             <circle cx="5" cy="0" r="1.2" fill="var(--foreground)" />
@@ -99,8 +92,25 @@ export default function Mutualism() {
             >
               {t("fitnessA")}
             </text>
-            <rect x="-12" y="0" width="24" height="4" rx="1" fill="var(--surface)" stroke="var(--border-strong)" strokeWidth="0.3" />
-            <rect x="-12" y="0" width={24 * fitA} height="4" rx="1" fill="var(--magenta)" opacity="0.85" />
+            <rect
+              x="-12"
+              y="0"
+              width="24"
+              height="4"
+              rx="1"
+              fill="var(--surface)"
+              stroke="var(--border-strong)"
+              strokeWidth="0.3"
+            />
+            <rect
+              x="-12"
+              y="0"
+              width={24 * fitA}
+              height="4"
+              rx="1"
+              fill="var(--magenta)"
+              opacity="0.85"
+            />
           </g>
           <g transform="translate(72 68)">
             <text
@@ -111,8 +121,25 @@ export default function Mutualism() {
             >
               {t("fitnessB")}
             </text>
-            <rect x="-12" y="0" width="24" height="4" rx="1" fill="var(--surface)" stroke="var(--border-strong)" strokeWidth="0.3" />
-            <rect x="-12" y="0" width={24 * fitB} height="4" rx="1" fill="var(--cyan)" opacity="0.85" />
+            <rect
+              x="-12"
+              y="0"
+              width="24"
+              height="4"
+              rx="1"
+              fill="var(--surface)"
+              stroke="var(--border-strong)"
+              strokeWidth="0.3"
+            />
+            <rect
+              x="-12"
+              y="0"
+              width={24 * fitB}
+              height="4"
+              rx="1"
+              fill="var(--cyan)"
+              opacity="0.85"
+            />
           </g>
 
           {/* balance scale */}

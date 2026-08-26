@@ -58,10 +58,7 @@ export default function MeissnerEffect() {
         >
           <defs>
             <radialGradient id="mei-bg" cx="50%" cy="34%" r="70%">
-              <stop
-                offset="0%"
-                stopColor={superconducting ? "#0e2438" : "#141024"}
-              />
+              <stop offset="0%" stopColor={superconducting ? "#0e2438" : "#141024"} />
               <stop offset="100%" stopColor="#070912" />
             </radialGradient>
             <linearGradient id="mei-mag" x1="0" y1="0" x2="0" y2="1">
@@ -74,10 +71,7 @@ export default function MeissnerEffect() {
               <stop offset="100%" stopColor="#3a4150" />
             </linearGradient>
             <radialGradient id="mei-disc" cx="50%" cy="30%" r="80%">
-              <stop
-                offset="0%"
-                stopColor={superconducting ? "#1c4a52" : "#232a3a"}
-              />
+              <stop offset="0%" stopColor={superconducting ? "#1c4a52" : "#232a3a"} />
               <stop offset="100%" stopColor="#0b1220" />
             </radialGradient>
             <radialGradient id="mei-cushion" cx="50%" cy="50%" r="50%">
@@ -166,31 +160,9 @@ export default function MeissnerEffect() {
 
           {/* the bar magnet — N pole steel, S pole magenta */}
           <g filter={superconducting ? "url(#mei-glow)" : undefined}>
-            <rect
-              x="38"
-              y={magY}
-              width="24"
-              height="9"
-              rx="1.4"
-              fill="url(#mei-mag)"
-            />
-            <rect
-              x="38"
-              y={magY}
-              width="12"
-              height="9"
-              rx="1.4"
-              fill="url(#mei-mag-n)"
-            />
-            <rect
-              x="38"
-              y={magY}
-              width="24"
-              height="3"
-              rx="1.4"
-              fill="#ffffff"
-              opacity="0.18"
-            />
+            <rect x="38" y={magY} width="24" height="9" rx="1.4" fill="url(#mei-mag)" />
+            <rect x="38" y={magY} width="12" height="9" rx="1.4" fill="url(#mei-mag-n)" />
+            <rect x="38" y={magY} width="24" height="3" rx="1.4" fill="#ffffff" opacity="0.18" />
           </g>
 
           {/* superconducting disc with real thickness */}

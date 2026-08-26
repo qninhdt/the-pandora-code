@@ -75,8 +75,7 @@ export function GlossaryFrame({
 
   // Track real fullscreen state so the toggle icon stays in sync with Esc, etc.
   useEffect(() => {
-    const onChange = () =>
-      setIsFullscreen(document.fullscreenElement === containerRef.current);
+    const onChange = () => setIsFullscreen(document.fullscreenElement === containerRef.current);
     document.addEventListener("fullscreenchange", onChange);
     return () => document.removeEventListener("fullscreenchange", onChange);
   }, []);
@@ -240,13 +239,9 @@ export function GlossaryFrame({
                 <X size={14} />
               </button>
             </div>
-            <p className="font-sans text-xs leading-relaxed text-muted">
-              {infoText}
-            </p>
+            <p className="font-sans text-xs leading-relaxed text-muted">{infoText}</p>
             {infoExtra && (
-              <div className="mt-2 font-sans text-xs leading-relaxed text-muted">
-                {infoExtra}
-              </div>
+              <div className="mt-2 font-sans text-xs leading-relaxed text-muted">{infoExtra}</div>
             )}
           </motion.div>
         )}

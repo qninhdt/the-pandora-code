@@ -88,19 +88,32 @@
     "readingProgress": "Reading progress",
     "continueReading": "Continue reading",
     "restoringPosition": "Restoring position…",
-    "readingPreferences": "Reading preferences",
     "readingProgressPercent": "{percent}% read",
-    "preferencesReset": "Reset",
-    "preferencesTextSize": "Text size",
-    "preferencesLineSpacing": "Line spacing",
-    "preferencesColumnWidth": "Column width",
-    "preferencesMotion": "Motion",
-    "preferencesMotionSystem": "Use device setting",
-    "preferencesMotionReduce": "Reduce motion",
-    "preferencesMotionAllow": "Allow motion",
     "classification": "Content classification",
     "demoBanner": "This is a DEMO chapter - not official Pandora content.",
     "readNext": "Read next"
+  },
+  "reader": {
+    "title": "Reading style",
+    "close": "Close",
+    "typeface": "Typeface",
+    "font": {
+      "sans": "Sans",
+      "serif": "Serif",
+      "mono": "Mono"
+    },
+    "textSize": "Text size",
+    "textSizeIncrease": "Increase text size",
+    "textSizeDecrease": "Decrease text size",
+    "lineSpacing": "Line spacing",
+    "spacing": {
+      "tight": "Tight",
+      "normal": "Normal",
+      "loose": "Loose"
+    },
+    "fullWidth": "Full width",
+    "reduceMotion": "Reduce motion",
+    "reset": "Reset to default"
   },
   "classification": {
     "canon": "Canon",

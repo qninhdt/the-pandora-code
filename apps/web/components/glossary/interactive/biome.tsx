@@ -52,12 +52,33 @@ export default function Biome() {
       caption={<span className="text-teal">{t(key)}</span>}
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           <rect x="0" y="0" width="100" height="100" fill={pal.sky} />
           <ellipse cx="50" cy="78" rx="48" ry="18" fill={ground} opacity={0.9} />
           {/* climate wheel */}
-          <circle cx="78" cy="22" r="14" fill="var(--void)" stroke="var(--border-strong)" strokeWidth="0.6" />
-          <circle cx="78" cy="22" r="10" fill="none" stroke="var(--cyan)" strokeWidth="0.4" opacity={0.5} />
+          <circle
+            cx="78"
+            cy="22"
+            r="14"
+            fill="var(--void)"
+            stroke="var(--border-strong)"
+            strokeWidth="0.6"
+          />
+          <circle
+            cx="78"
+            cy="22"
+            r="10"
+            fill="none"
+            stroke="var(--cyan)"
+            strokeWidth="0.4"
+            opacity={0.5}
+          />
           {/* dial needle from temp/precip angle */}
           {(() => {
             const ang = (temp * 0.7 + precip * 0.3) * Math.PI * 1.6 - Math.PI * 0.8;
@@ -80,14 +101,29 @@ export default function Biome() {
               <path d="M20 72 L28 58 L36 72" />
               <path d="M40 74 L46 62 L52 74" />
               <path d="M58 72 L68 54 L78 72" />
-              <line x1="15" y1="76" x2="85" y2="76" stroke="var(--cyan)" strokeWidth="0.5" opacity={0.4} />
+              <line
+                x1="15"
+                y1="76"
+                x2="85"
+                y2="76"
+                stroke="var(--cyan)"
+                strokeWidth="0.5"
+                opacity={0.4}
+              />
             </g>
           )}
           {key === "rainforest" && (
             <g fill={pal.accent} opacity={0.85}>
               {[28, 42, 56, 70].map((x, i) => (
                 <g key={x}>
-                  <rect x={x - 1.2} y={48 - i * 2} width="2.4" height={28 + i * 2} fill="var(--teal)" opacity={0.5} />
+                  <rect
+                    x={x - 1.2}
+                    y={48 - i * 2}
+                    width="2.4"
+                    height={28 + i * 2}
+                    fill="var(--teal)"
+                    opacity={0.5}
+                  />
                   <ellipse cx={x} cy={46 - i * 2} rx={8 + (i % 2)} ry={6} />
                 </g>
               ))}
@@ -97,8 +133,22 @@ export default function Biome() {
             <g>
               {[30, 48, 65].map((x, i) => (
                 <g key={x}>
-                  <rect x={x - 1.5} y={40 - i * 3} width="3" height={36 + i * 3} fill="var(--cyan)" opacity={0.35} />
-                  <circle cx={x} cy={38 - i * 3} r={7 + i} fill="var(--magenta)" opacity={0.45} style={{ filter: "drop-shadow(0 0 4px var(--magenta))" }} />
+                  <rect
+                    x={x - 1.5}
+                    y={40 - i * 3}
+                    width="3"
+                    height={36 + i * 3}
+                    fill="var(--cyan)"
+                    opacity={0.35}
+                  />
+                  <circle
+                    cx={x}
+                    cy={38 - i * 3}
+                    r={7 + i}
+                    fill="var(--magenta)"
+                    opacity={0.45}
+                    style={{ filter: "drop-shadow(0 0 4px var(--magenta))" }}
+                  />
                   <circle cx={x - 4} cy={50} r="1.2" fill="var(--teal)" opacity={0.9} />
                   <circle cx={x + 5} cy={56} r="1" fill="var(--cyan)" opacity={0.8} />
                 </g>
@@ -110,8 +160,26 @@ export default function Biome() {
           <Readout label={t("biome")} value={t(key)} accent="teal" />
         </div>
         <div className="absolute inset-x-3 bottom-10 space-y-2">
-          <ControlSlider label={t("temp")} value={temp} min={0} max={1} step={0.01} display={`${Math.round(temp * 40 - 5)}°C`} onChange={setTemp} thumb="amber" />
-          <ControlSlider label={t("precip")} value={precip} min={0} max={1} step={0.01} display={`${Math.round(precip * 4000)} mm`} onChange={setPrecip} thumb="cyan" />
+          <ControlSlider
+            label={t("temp")}
+            value={temp}
+            min={0}
+            max={1}
+            step={0.01}
+            display={`${Math.round(temp * 40 - 5)}°C`}
+            onChange={setTemp}
+            thumb="amber"
+          />
+          <ControlSlider
+            label={t("precip")}
+            value={precip}
+            min={0}
+            max={1}
+            step={0.01}
+            display={`${Math.round(precip * 4000)} mm`}
+            onChange={setPrecip}
+            thumb="cyan"
+          />
         </div>
       </div>
     </GlossaryFrame>

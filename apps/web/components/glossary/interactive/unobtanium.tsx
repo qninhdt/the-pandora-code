@@ -15,10 +15,7 @@ export default function Unobtanium() {
   const [tick, setTick] = useState(0);
   const { ref, inView } = useInView<HTMLDivElement>();
 
-  useRafLoop(
-    () => setTick((n) => (n + 1) % 1_000_000),
-    { active: inView },
-  );
+  useRafLoop(() => setTick((n) => (n + 1) % 1_000_000), { active: inView });
 
   const pinned = pos >= 0.78;
   // ore centre
@@ -84,7 +81,13 @@ export default function Unobtanium() {
           <g transform="translate(90 12)" opacity="0.45">
             <line x1="0" y1="0" x2="0" y2="8" stroke="var(--muted)" strokeWidth="0.4" />
             <path d="M-1.4 5.5 L0 8 L1.4 5.5" fill="none" stroke="var(--muted)" strokeWidth="0.4" />
-            <text x="0" y="-1.5" textAnchor="middle" className="fill-muted" style={{ fontSize: 2.4, fontFamily: "monospace" }}>
+            <text
+              x="0"
+              y="-1.5"
+              textAnchor="middle"
+              className="fill-muted"
+              style={{ fontSize: 2.4, fontFamily: "monospace" }}
+            >
               g
             </text>
           </g>

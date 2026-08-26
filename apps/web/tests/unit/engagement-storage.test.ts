@@ -6,6 +6,7 @@ import {
   resetReadingPreferences,
   resolveReducedMotion,
   setReadingPreferences,
+  stepFontScale,
 } from "@/lib/engagement/preferences-store";
 import {
   COMPLETION_THRESHOLD,
@@ -43,24 +44,51 @@ describe("reader storage", () => {
     expect(readReaderStorage(READER_STORAGE_KEYS.history, () => null, fallback)).toEqual(fallback);
   });
 
-  it("clamps preference values and ignores unknown motion modes", () => {
+  it("clamps preference values and ignores unknown enum members", () => {
     const preferences = normalizeReadingPreferences({
+      fontFamily: "comic",
       fontScale: 99,
-      lineHeight: -3,
-      columnWidth: 1,
+      lineSpacing: "airy",
+      fullWidth: "yes",
       reducedMotion: "fast",
     });
     expect(preferences).toEqual({
+      fontFamily: DEFAULT_READING_PREFERENCES.fontFamily,
       fontScale: READER_PREFERENCE_LIMITS.fontScale.max,
-      lineHeight: READER_PREFERENCE_LIMITS.lineHeight.min,
-      columnWidth: READER_PREFERENCE_LIMITS.columnWidth.min,
+      lineSpacing: DEFAULT_READING_PREFERENCES.lineSpacing,
+      fullWidth: false,
       reducedMotion: DEFAULT_READING_PREFERENCES.reducedMotion,
     });
 
-    setReadingPreferences({ fontScale: 1.2, reducedMotion: "reduce" });
-    expect(getReadingPreferences()).toMatchObject({ fontScale: 1.2, reducedMotion: "reduce" });
+    setReadingPreferences({ fontScale: 1.2, reducedMotion: "reduce", fontFamily: "mono" });
+    expect(getReadingPreferences()).toMatchObject({
+      fontScale: 1.2,
+      reducedMotion: "reduce",
+      fontFamily: "mono",
+    });
     expect(resolveReducedMotion(false, "reduce")).toBe(true);
     expect(resolveReducedMotion(true, "no-preference")).toBe(false);
+  });
+
+  it("maps a legacy free-form lineHeight onto the nearest named step", () => {
+    expect(normalizeReadingPreferences({ lineHeight: 1.45 }).lineSpacing).toBe("tight");
+    expect(normalizeReadingPreferences({ lineHeight: 1.8 }).lineSpacing).toBe("normal");
+    expect(normalizeReadingPreferences({ lineHeight: 2.2 }).lineSpacing).toBe("loose");
+  });
+
+  it("steps text size on the step grid and stops at the bounds", () => {
+    const { min, max, step } = READER_PREFERENCE_LIMITS.fontScale;
+    setReadingPreferences({ fontScale: 1 });
+    stepFontScale(1);
+    expect(getReadingPreferences().fontScale).toBeCloseTo(1 + step);
+
+    setReadingPreferences({ fontScale: max });
+    stepFontScale(1);
+    expect(getReadingPreferences().fontScale).toBeCloseTo(max);
+
+    setReadingPreferences({ fontScale: min });
+    stepFontScale(-1);
+    expect(getReadingPreferences().fontScale).toBeCloseTo(min);
   });
 
   it("keeps at most twenty recent chapter locations and marks completion", () => {

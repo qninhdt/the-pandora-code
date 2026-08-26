@@ -66,11 +66,7 @@ export default function SpinOrbitResonance() {
       }}
       caption={
         <span>
-          {ratio === "lock"
-            ? t("locked")
-            : ratio === "mercury"
-              ? t("mercury")
-              : t("fast")}
+          {ratio === "lock" ? t("locked") : ratio === "mercury" ? t("mercury") : t("fast")}
         </span>
       }
     >
@@ -108,10 +104,24 @@ export default function SpinOrbitResonance() {
 
           {/* body */}
           <circle cx={bodyX} cy={bodyY} r={BODY_R} fill="#2a5b6e" />
-          <circle cx={bodyX} cy={bodyY} r={BODY_R} fill="none" stroke="var(--cyan)" strokeWidth="0.4" />
+          <circle
+            cx={bodyX}
+            cy={bodyY}
+            r={BODY_R}
+            fill="none"
+            stroke="var(--cyan)"
+            strokeWidth="0.4"
+          />
 
           {/* spin marker + pointer */}
-          <line x1={bodyX} y1={bodyY} x2={markDirX} y2={markDirY} stroke="var(--magenta)" strokeWidth="1" />
+          <line
+            x1={bodyX}
+            y1={bodyY}
+            x2={markDirX}
+            y2={markDirY}
+            stroke="var(--magenta)"
+            strokeWidth="1"
+          />
           <circle cx={mx} cy={my} r="1.6" fill="var(--magenta)" />
         </svg>
 

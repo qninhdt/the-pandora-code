@@ -21,7 +21,16 @@ function idx(c: number, r: number) {
 
 function neighbors(c: number, r: number) {
   const out: [number, number][] = [];
-  for (const [dc, dr] of [[1, 0], [-1, 0], [0, 1], [0, -1], [1, 1], [1, -1], [-1, 1], [-1, -1]] as const) {
+  for (const [dc, dr] of [
+    [1, 0],
+    [-1, 0],
+    [0, 1],
+    [0, -1],
+    [1, 1],
+    [1, -1],
+    [-1, 1],
+    [-1, -1],
+  ] as const) {
     const nc = c + dc;
     const nr = r + dr;
     if (nc >= 0 && nc < COLS && nr >= 0 && nr < ROWS) out.push([nc, nr]);
@@ -66,8 +75,7 @@ export default function Stigmergy() {
         let bestScore = -1;
         for (const [nc, nr] of neigh) {
           const pherS = P[idx(nc, nr)];
-          const dist =
-            Math.abs(nc - target.c) + Math.abs(nr - target.r);
+          const dist = Math.abs(nc - target.c) + Math.abs(nr - target.r);
           const score = pherS * 3 + (1 / (1 + dist)) * 2 + Math.random() * 0.4;
           if (score > bestScore) {
             bestScore = score;
@@ -110,7 +118,11 @@ export default function Stigmergy() {
       onPlayPause={() => setPlaying((p) => !p)}
       isPlaying={playing}
       allowFullscreen={false}
-      caption={<span className="text-amber">{t("path")}: {trailSum.toFixed(1)}</span>}
+      caption={
+        <span className="text-amber">
+          {t("path")}: {trailSum.toFixed(1)}
+        </span>
+      }
     >
       <div ref={ref} className="absolute inset-0">
         <svg viewBox="0 0 100 100" className="h-full w-full" role="img" aria-label={t("title")}>
@@ -132,9 +144,19 @@ export default function Stigmergy() {
             }),
           )}
           {/* nest */}
-          <circle cx={ox + (NEST.c + 0.5) * cellW} cy={oy + (NEST.r + 0.5) * cellH} r={2.8} fill="var(--cyan)" />
+          <circle
+            cx={ox + (NEST.c + 0.5) * cellW}
+            cy={oy + (NEST.r + 0.5) * cellH}
+            r={2.8}
+            fill="var(--cyan)"
+          />
           {/* food */}
-          <circle cx={ox + (food.c + 0.5) * cellW} cy={oy + (food.r + 0.5) * cellH} r={2.8} fill="var(--teal)" />
+          <circle
+            cx={ox + (food.c + 0.5) * cellW}
+            cy={oy + (food.r + 0.5) * cellH}
+            r={2.8}
+            fill="var(--teal)"
+          />
           {ants.current.map((a, i) => (
             <circle
               key={i}
@@ -146,11 +168,22 @@ export default function Stigmergy() {
           ))}
         </svg>
         <div className="absolute right-3 top-14 flex flex-col gap-1.5">
-          <ControlButton onClick={dropFood} className="px-2.5">{t("food")}</ControlButton>
+          <ControlButton onClick={dropFood} className="px-2.5">
+            {t("food")}
+          </ControlButton>
           <Readout label={t("path")} value={trailSum.toFixed(1)} accent="amber" />
         </div>
         <div className="absolute inset-x-3 bottom-10">
-          <ControlSlider label={t("evap")} value={evap} min={0.005} max={0.12} step={0.005} display={evap.toFixed(3)} onChange={setEvap} thumb="amber" />
+          <ControlSlider
+            label={t("evap")}
+            value={evap}
+            min={0.005}
+            max={0.12}
+            step={0.005}
+            display={evap.toFixed(3)}
+            onChange={setEvap}
+            thumb="amber"
+          />
         </div>
       </div>
     </GlossaryFrame>

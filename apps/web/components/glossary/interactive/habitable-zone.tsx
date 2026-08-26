@@ -10,7 +10,7 @@ import { Readout } from "./shared/readout";
 // and luminosity scales steeply with stellar mass (~M^3.5). We fold that into a
 // single normalized factor so the band visibly marches outward with mass.
 function zoneBounds(mass: number) {
-  const lum = Math.pow(mass, 3.5);
+  const lum = mass ** 3.5;
   const inner = 0.95 * Math.sqrt(lum);
   const outer = 1.67 * Math.sqrt(lum);
   return { inner, outer };
@@ -81,11 +81,36 @@ export default function HabitableZone() {
             strokeWidth={outerR - innerR}
           />
           {/* zone edges */}
-          <circle cx={50} cy={50} r={innerR} fill="none" stroke="#2bd4a8" strokeOpacity={0.5} strokeWidth={0.4} />
-          <circle cx={50} cy={50} r={outerR} fill="none" stroke="#36c5d9" strokeOpacity={0.4} strokeWidth={0.4} />
+          <circle
+            cx={50}
+            cy={50}
+            r={innerR}
+            fill="none"
+            stroke="#2bd4a8"
+            strokeOpacity={0.5}
+            strokeWidth={0.4}
+          />
+          <circle
+            cx={50}
+            cy={50}
+            r={outerR}
+            fill="none"
+            stroke="#36c5d9"
+            strokeOpacity={0.4}
+            strokeWidth={0.4}
+          />
 
           {/* Pandora orbit + dot */}
-          <circle cx={50} cy={50} r={pandoraR} fill="none" stroke="#9fb4d8" strokeOpacity={0.25} strokeDasharray="1 2" strokeWidth={0.3} />
+          <circle
+            cx={50}
+            cy={50}
+            r={pandoraR}
+            fill="none"
+            stroke="#9fb4d8"
+            strokeOpacity={0.25}
+            strokeDasharray="1 2"
+            strokeWidth={0.3}
+          />
           <circle
             cx={50 + pandoraR}
             cy={50}
@@ -112,7 +137,12 @@ export default function HabitableZone() {
             display={`${mass.toFixed(2)} M☉`}
             onChange={setMass}
           />
-          <Readout label="HZ" value={`${inner.toFixed(2)}–${outer.toFixed(2)}`} unit="AU" accent="teal" />
+          <Readout
+            label="HZ"
+            value={`${inner.toFixed(2)}–${outer.toFixed(2)}`}
+            unit="AU"
+            accent="teal"
+          />
         </div>
       </div>
     </GlossaryFrame>

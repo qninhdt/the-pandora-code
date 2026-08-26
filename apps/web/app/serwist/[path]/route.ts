@@ -20,6 +20,11 @@ export const revalidate = false;
 export const generateStaticParams = serwistRoute.generateStaticParams;
 
 export async function GET(request: Request, context: { params: Promise<{ path: string }> }) {
+  // The development server uses mutable, non-immutable chunk URLs. Never
+  // expose a worker there: a cache-first runtime worker would defeat HMR and
+  // make local code changes look stale until site data is cleared.
+  if (process.env.NODE_ENV !== "production") return new Response(null, { status: 404 });
+
   const response = await serwistRoute.GET(request, context);
   response.headers.set("Cache-Control", "no-store, max-age=0");
   response.headers.set("Service-Worker-Allowed", "/");

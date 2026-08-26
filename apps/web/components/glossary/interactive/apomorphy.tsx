@@ -35,11 +35,7 @@ export default function Apomorphy() {
       infoText={t("info")}
       onReset={() => setSplit("left")}
       allowFullscreen={false}
-      caption={
-        <span className="text-muted">
-          {split ? t("derived") : t("hint")}
-        </span>
-      }
+      caption={<span className="text-muted">{split ? t("derived") : t("hint")}</span>}
     >
       <div className="absolute inset-0">
         <svg
@@ -62,31 +58,26 @@ export default function Apomorphy() {
           <line x1="82" y1="52" x2="82" y2="30" stroke="var(--border-strong)" strokeWidth="1" />
 
           {/* lit descendant stems */}
-          {active &&
-            active.tips.map((ti) => {
-              const n = NODES[ti];
-              return (
-                <line
-                  key={`lit-${ti}`}
-                  x1={n.x}
-                  y1={n.y}
-                  x2={n.x}
-                  y2="52"
-                  stroke="var(--cyan)"
-                  strokeWidth="1.4"
-                  opacity="0.85"
-                />
-              );
-            })}
+          {active?.tips.map((ti) => {
+            const n = NODES[ti];
+            return (
+              <line
+                key={`lit-${ti}`}
+                x1={n.x}
+                y1={n.y}
+                x2={n.x}
+                y2="52"
+                stroke="var(--cyan)"
+                strokeWidth="1.4"
+                opacity="0.85"
+              />
+            );
+          })}
 
           {SPLITS.map((s) => {
             const on = s.id === split;
             return (
-              <g
-                key={s.id}
-                onClick={() => setSplit(s.id)}
-                style={{ cursor: "pointer" }}
-              >
+              <g key={s.id} onClick={() => setSplit(s.id)} style={{ cursor: "pointer" }}>
                 <circle
                   cx={s.x}
                   cy={s.y}

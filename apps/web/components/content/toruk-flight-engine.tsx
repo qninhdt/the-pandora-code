@@ -4,9 +4,9 @@ import { GlowDefs, glowUrl } from "@/components/content/viz/glow-defs";
 import { VizFigure } from "@/components/content/viz/viz-figure";
 import { VizReadout } from "@/components/content/viz/viz-readout";
 import { VizText } from "@/components/content/viz/viz-svg-text";
+import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import { useId, useState } from "react";
-import { cn } from "@/lib/utils";
 
 export function TorukFlightEngine({
   caption,
@@ -112,7 +112,7 @@ export function TorukFlightEngine({
             x={W_SVG / 2}
             y={yGround + 24}
             size="small"
-            tone={tone as any}
+            tone={tone}
             anchor="middle"
             weight={700}
           >
@@ -163,6 +163,7 @@ function VizToggle({
 }: { label: string; active: boolean; onClick: () => void; tone: string }) {
   return (
     <button
+      type="button"
       onClick={onClick}
       className={cn(
         "flex items-center justify-between p-3 rounded-lg border text-left text-sm transition-all duration-300",

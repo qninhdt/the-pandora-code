@@ -48,18 +48,6 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
   return (
     <>
       <JsonLd data={[profile, breadcrumbs]} />
-      <nav
-        aria-label="Breadcrumb"
-        className="mx-auto max-w-2xl px-6 pt-24 font-sans text-xs text-subtle"
-      >
-        <a href={`/${loc}`} className="hover:text-cyan">
-          {t("nav.home")}
-        </a>
-        <span aria-hidden className="px-2">
-          /
-        </span>
-        <span className="text-muted">{t("page.authors.title")}</span>
-      </nav>
       <AuthorProfile author={author} bgSrc={getPageBackground("authors")} />
     </>
   );

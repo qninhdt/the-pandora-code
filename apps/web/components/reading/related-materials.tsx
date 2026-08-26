@@ -1,9 +1,9 @@
 import { SourceList } from "@/components/sources/source-list";
 import type { Source } from "@/lib/content/schemas/shared";
 import { cn } from "@/lib/utils";
+import { useLocale } from "next-intl";
 import Link from "next/link";
 import { type RelatedChapterCard, RelatedChapters } from "./related-chapters";
-import { useLocale } from "next-intl";
 
 export interface RelatedGlossaryChip {
   id: string;
@@ -56,11 +56,7 @@ export function RelatedMaterials({
       </h2>
 
       {chapters.length > 0 ? (
-        <RelatedChapters
-          chapters={chapters}
-          heading={labels.relatedChapters}
-          className="my-6"
-        />
+        <RelatedChapters chapters={chapters} heading={labels.relatedChapters} className="my-6" />
       ) : null}
 
       {glossary.length > 0 ? (
@@ -84,11 +80,7 @@ export function RelatedMaterials({
       ) : null}
 
       {sources.length > 0 ? (
-        <SourceList
-          sources={sources}
-          heading={labels.sources}
-          className="my-6 border-t-0 pt-0"
-        />
+        <SourceList sources={sources} heading={labels.sources} className="my-6 border-t-0 pt-0" />
       ) : null}
     </section>
   );

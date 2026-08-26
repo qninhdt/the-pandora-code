@@ -71,6 +71,14 @@ const PAD_R = 16;
 const PAD_T = 18;
 const PAD_B = 24;
 
+function xFor(m: number): number {
+  return PAD_L + (m / H_MAX) * (W - PAD_L - PAD_R);
+}
+
+function yFor(v: number): number {
+  return SVG_H - PAD_B - (v / 100) * (SVG_H - PAD_T - PAD_B);
+}
+
 export function HydraulicLimitSimulator({ caption, className }: HydraulicLimitSimulatorProps) {
   const uid = useId();
   const t = useTranslations("viz.hydraulicLimit");
@@ -85,9 +93,6 @@ export function HydraulicLimitSimulator({ caption, className }: HydraulicLimitSi
   const toneVar = `var(--${tone})`;
 
   // Plot mapping
-  const xFor = (m: number) => PAD_L + (m / H_MAX) * (W - PAD_L - PAD_R);
-  const yFor = (v: number) => SVG_H - PAD_B - (v / 100) * (SVG_H - PAD_T - PAD_B);
-
   // Turgor curve: sample 80 points up to the ceiling
   const turgorPath = useMemo(() => {
     const pts: string[] = [];

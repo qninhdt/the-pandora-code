@@ -16,10 +16,7 @@ export default function ThermalSoaring() {
 
   const addThermal = () => {
     if (thermals.length >= 5) return;
-    setThermals((prev) => [
-      ...prev,
-      { x: 18 + Math.random() * 64, y: 60 + Math.random() * 16 },
-    ]);
+    setThermals((prev) => [...prev, { x: 18 + Math.random() * 64, y: 60 + Math.random() * 16 }]);
   };
 
   return (
@@ -27,7 +24,12 @@ export default function ThermalSoaring() {
       title={t("title")}
       category={t("category")}
       infoText={t("info")}
-      onReset={() => setThermals([{ x: 30, y: 70 }, { x: 62, y: 68 }])}
+      onReset={() =>
+        setThermals([
+          { x: 30, y: 70 },
+          { x: 62, y: 68 },
+        ])
+      }
       allowFullscreen={false}
       caption={
         <span className="text-teal">
@@ -59,8 +61,24 @@ export default function ThermalSoaring() {
             </g>
           ))}
           {/* altitude bar */}
-          <rect x="90" y="20" width="4" height="55" rx="1" fill="var(--void)" stroke="var(--border-strong)" strokeWidth="0.4" />
-          <rect x="90" y={75 - Math.min(55, altitude * 0.35)} width="4" height={Math.min(55, altitude * 0.35)} rx="1" fill="var(--teal)" />
+          <rect
+            x="90"
+            y="20"
+            width="4"
+            height="55"
+            rx="1"
+            fill="var(--void)"
+            stroke="var(--border-strong)"
+            strokeWidth="0.4"
+          />
+          <rect
+            x="90"
+            y={75 - Math.min(55, altitude * 0.35)}
+            width="4"
+            height={Math.min(55, altitude * 0.35)}
+            rx="1"
+            fill="var(--teal)"
+          />
         </svg>
 
         <div className="absolute right-3 top-14">
@@ -72,7 +90,11 @@ export default function ThermalSoaring() {
             type="button"
             onClick={addThermal}
             className="rounded-lg border px-3 py-1 font-mono text-[10px] uppercase"
-            style={{ borderColor: "var(--amber)", color: "var(--amber)", background: "var(--void)" }}
+            style={{
+              borderColor: "var(--amber)",
+              color: "var(--amber)",
+              background: "var(--void)",
+            }}
           >
             {t("place")}
           </button>
@@ -80,7 +102,11 @@ export default function ThermalSoaring() {
             type="button"
             onClick={() => setThermals([])}
             className="rounded-lg border px-3 py-1 font-mono text-[10px] uppercase"
-            style={{ borderColor: "var(--border-strong)", color: "var(--muted)", background: "var(--void)" }}
+            style={{
+              borderColor: "var(--border-strong)",
+              color: "var(--muted)",
+              background: "var(--void)",
+            }}
           >
             {t("clear")}
           </button>

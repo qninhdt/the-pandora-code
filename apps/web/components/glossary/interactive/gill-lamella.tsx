@@ -18,13 +18,31 @@ export default function GillLamella() {
       infoText={t("info")}
       onReset={() => setCounter(true)}
       allowFullscreen={false}
-      caption={<span className={counter ? "text-teal" : "text-amber"}>{counter ? t("counter") : t("parallel")}</span>}
+      caption={
+        <span className={counter ? "text-teal" : "text-amber"}>
+          {counter ? t("counter") : t("parallel")}
+        </span>
+      }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {[0, 1, 2, 3, 4].map((i) => (
             <g key={i}>
-              <line x1="20" y1={28 + i * 10} x2="80" y2={28 + i * 10} stroke="var(--cyan)" strokeWidth="1.2" opacity="0.7" />
+              <line
+                x1="20"
+                y1={28 + i * 10}
+                x2="80"
+                y2={28 + i * 10}
+                stroke="var(--cyan)"
+                strokeWidth="1.2"
+                opacity="0.7"
+              />
               <line
                 x1="22"
                 y1={32 + i * 10}
@@ -44,16 +62,47 @@ export default function GillLamella() {
               />
             </g>
           ))}
-          <rect x="20" y="84" width={efficiency * 60} height="5" fill="var(--teal)" opacity="0.85" />
+          <rect
+            x="20"
+            y="84"
+            width={efficiency * 60}
+            height="5"
+            fill="var(--teal)"
+            opacity="0.85"
+          />
         </svg>
         <div className="absolute right-3 top-14">
-          <Readout label={t("efficiency")} value={`${(efficiency * 100).toFixed(0)}%`} accent="teal" />
+          <Readout
+            label={t("efficiency")}
+            value={`${(efficiency * 100).toFixed(0)}%`}
+            accent="teal"
+          />
         </div>
         <div className="absolute inset-x-3 bottom-12 flex justify-center gap-1.5">
-          <button type="button" onClick={() => setCounter(true)} className="rounded-lg border px-3 py-1 font-mono text-[10px] uppercase"
-            style={{ borderColor: counter ? "var(--teal)" : "var(--border-strong)", color: counter ? "var(--teal)" : "var(--muted)", background: "var(--void)" }}>{t("counter")}</button>
-          <button type="button" onClick={() => setCounter(false)} className="rounded-lg border px-3 py-1 font-mono text-[10px] uppercase"
-            style={{ borderColor: !counter ? "var(--amber)" : "var(--border-strong)", color: !counter ? "var(--amber)" : "var(--muted)", background: "var(--void)" }}>{t("parallel")}</button>
+          <button
+            type="button"
+            onClick={() => setCounter(true)}
+            className="rounded-lg border px-3 py-1 font-mono text-[10px] uppercase"
+            style={{
+              borderColor: counter ? "var(--teal)" : "var(--border-strong)",
+              color: counter ? "var(--teal)" : "var(--muted)",
+              background: "var(--void)",
+            }}
+          >
+            {t("counter")}
+          </button>
+          <button
+            type="button"
+            onClick={() => setCounter(false)}
+            className="rounded-lg border px-3 py-1 font-mono text-[10px] uppercase"
+            style={{
+              borderColor: !counter ? "var(--amber)" : "var(--border-strong)",
+              color: !counter ? "var(--amber)" : "var(--muted)",
+              background: "var(--void)",
+            }}
+          >
+            {t("parallel")}
+          </button>
         </div>
       </div>
     </GlossaryFrame>

@@ -99,13 +99,7 @@ export default function Phenetics() {
                   cx={tip.x}
                   cy="30"
                   r={twin ? 3.6 : 2.8}
-                  fill={
-                    twin
-                      ? "var(--amber)"
-                      : phenetic
-                        ? "var(--surface)"
-                        : "var(--cyan)"
-                  }
+                  fill={twin ? "var(--amber)" : phenetic ? "var(--surface)" : "var(--cyan)"}
                   stroke="var(--border-strong)"
                   strokeWidth="0.5"
                 />
@@ -149,11 +143,7 @@ export default function Phenetics() {
                       : "var(--cyan)"
                     : "var(--border-strong)",
                 color:
-                  mode === m
-                    ? m === "phenetic"
-                      ? "var(--amber)"
-                      : "var(--cyan)"
-                    : "var(--muted)",
+                  mode === m ? (m === "phenetic" ? "var(--amber)" : "var(--cyan)") : "var(--muted)",
                 background: "var(--void)",
               }}
             >

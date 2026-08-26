@@ -67,11 +67,24 @@ export default function Mycelium() {
       }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           <rect x="0" y="0" width="100" height="100" fill="#070a0f" />
           {/* substrate grain */}
           {Array.from({ length: 20 }).map((_, i) => (
-            <circle key={i} cx={(i * 17) % 100} cy={(i * 29) % 100} r="0.5" fill="var(--border-strong)" opacity={0.4} />
+            <circle
+              key={i}
+              cx={(i * 17) % 100}
+              cy={(i * 29) % 100}
+              r="0.5"
+              fill="var(--border-strong)"
+              opacity={0.4}
+            />
           ))}
           {/* threads */}
           {threads.map((th) => (
@@ -99,7 +112,14 @@ export default function Mycelium() {
             </g>
           ))}
           {/* hub colony */}
-          <circle cx={hub.x} cy={hub.y} r={6 + foods.length} fill="var(--teal)" opacity={0.45} style={{ filter: "drop-shadow(0 0 6px var(--teal))" }} />
+          <circle
+            cx={hub.x}
+            cy={hub.y}
+            r={6 + foods.length}
+            fill="var(--teal)"
+            opacity={0.45}
+            style={{ filter: "drop-shadow(0 0 6px var(--teal))" }}
+          />
           {/* food sources */}
           {foods.map((f) => (
             <g key={f.id}>
@@ -115,7 +135,11 @@ export default function Mycelium() {
           <ControlButton variant="accent" onClick={dropFood} aria-label={t("food")}>
             <span className="px-1 text-[11px] uppercase tracking-wider">{t("food")}</span>
           </ControlButton>
-          <ControlButton variant={prune ? "active" : "default"} onClick={() => setPrune((v) => !v)} aria-label={t("prune")}>
+          <ControlButton
+            variant={prune ? "active" : "default"}
+            onClick={() => setPrune((v) => !v)}
+            aria-label={t("prune")}
+          >
             <span className="px-1 text-[11px] uppercase tracking-wider">{t("prune")}</span>
           </ControlButton>
         </div>

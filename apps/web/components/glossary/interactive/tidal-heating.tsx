@@ -40,8 +40,7 @@ export default function TidalHeating() {
 
   // Heat 0..1 climbs steeply with eccentricity (∝ e² in reality).
   const heat = Math.min(1, ecc * ecc * 1.8 + 0.05);
-  const coreColor =
-    heat > 0.66 ? "var(--magenta)" : heat > 0.3 ? "var(--amber)" : "var(--cyan)";
+  const coreColor = heat > 0.66 ? "var(--magenta)" : heat > 0.3 ? "var(--amber)" : "var(--cyan)";
   const tempC = Math.round(heat * 1700);
   const state = heat > 0.66 ? t("molten") : heat > 0.3 ? t("warm") : t("cool");
 

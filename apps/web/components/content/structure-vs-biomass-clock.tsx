@@ -86,10 +86,7 @@ interface StructureVsBiomassClockProps {
 // Scrub across four orders of magnitude of recovery time and watch the two
 // curves refuse to travel together. The gap between them is the chapter's
 // transferable point: biomass is purchasable, structure is not.
-export function StructureVsBiomassClock({
-  caption,
-  className,
-}: StructureVsBiomassClockProps) {
+export function StructureVsBiomassClock({ caption, className }: StructureVsBiomassClockProps) {
   const uid = useId();
   const t = useTranslations("viz.structureClock");
   const [logYears, setLogYears] = useState(1.78); // ~60 years: canopy closed, no structure
@@ -285,4 +282,3 @@ export function StructureVsBiomassClock({
     </VizFigure>
   );
 }
-

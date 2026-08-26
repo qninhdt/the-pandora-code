@@ -1,0 +1,34 @@
+id: potential-biological-removal
+label:
+  vi: Mức lấy đi sinh học cho phép
+  en: Potential biological removal
+definition:
+  vi: >-
+    Định mức thay thế cho sản lượng bền vững tối đa, được xây riêng cho thú biển sau khi cách tính cũ
+    thất bại. Thay vì dùng con số ước lượng khả dĩ nhất về quy mô đàn, nó dùng ước lượng thận trọng ở
+    cận dưới; thay vì lấy toàn bộ năng suất, nó lấy một nửa; rồi nhân thêm một hệ số phục hồi hạ
+    xuống rất thấp nếu quần thể đang nguy cấp. Kết quả là một con số nhỏ hơn nhiều so với sản lượng
+    bền vững tối đa, và đó là chủ ý: khi mỗi cá thể mất đi mất hàng chục năm mới bù được, sai số nên
+    nghiêng về phía con vật chứ không nghiêng về phía hạn ngạch. Bước chuyển ngầm ở đây là chuyển từ
+    hỏi "lấy được bao nhiêu" sang hỏi "sai thì hậu quả thế nào".
+  en: >-
+    A quota rule that replaced maximum sustainable yield, built specifically for marine mammals after
+    the older approach failed. Instead of the best-guess estimate of population size it uses a
+    conservative lower-bound estimate; instead of taking the full productivity it takes half; then it
+    multiplies by a recovery factor dropped very low for an endangered stock. The result is a number
+    far smaller than maximum sustainable yield, and that is the intent: when each individual lost takes
+    decades to replace, the error should fall on the animal's side rather than the quota's. The quiet
+    shift here is from asking "how much can be taken" to asking "what happens if we are wrong".
+see_also:
+  - maximum-sustainable-yield
+  - depensation
+  - reproductive-value
+category: concept
+tags:
+  - bioeconomics
+  - ecology
+  - law-and-policy
+cover_prompt: >-
+  A painterly plate of three stacked horizontal bars of sharply decreasing length, the longest at the
+  top and a very short one at the bottom, with a single small marine mammal silhouette resting beside
+  the shortest bar, cool teal bars on deep indigo, painterly naturalist plate, no text, no labels.

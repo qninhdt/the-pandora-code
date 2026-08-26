@@ -71,13 +71,7 @@ export default function DirectImaging() {
             <circle cx="100" cy="65" r="6" fill="#fff8e6" opacity={starGlare} />
 
             {/* the planet, off to the side, washed out until glare is gone */}
-            <circle
-              cx="138"
-              cy="50"
-              r="5"
-              fill="url(#di-planet)"
-              opacity={planetVisibility}
-            />
+            <circle cx="138" cy="50" r="5" fill="url(#di-planet)" opacity={planetVisibility} />
             {planetVisibility > 0.3 && (
               <text
                 x="138"

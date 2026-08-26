@@ -150,11 +150,7 @@ export default function Cladogram() {
         </svg>
 
         <div className="absolute right-3 top-16 flex flex-col gap-1.5">
-          <Readout
-            label={t("steps")}
-            value={tree.steps}
-            accent={isBest ? "teal" : "amber"}
-          />
+          <Readout label={t("steps")} value={tree.steps} accent={isBest ? "teal" : "amber"} />
           <Readout label={t("topology")} value={`${idx + 1}/3`} accent="cyan" />
         </div>
 
@@ -173,11 +169,7 @@ export default function Cladogram() {
                       : "var(--amber)"
                     : "var(--border-strong)",
                 color:
-                  idx === i
-                    ? tr.steps === best
-                      ? "var(--teal)"
-                      : "var(--amber)"
-                    : "var(--muted)",
+                  idx === i ? (tr.steps === best ? "var(--teal)" : "var(--amber)") : "var(--muted)",
                 background: "var(--void)",
               }}
             >

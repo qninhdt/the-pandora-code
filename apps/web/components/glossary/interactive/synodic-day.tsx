@@ -138,19 +138,44 @@ export default function SynodicDay() {
 
           {/* eclipse flash: giant's shadow cone toward the sun */}
           {inEclipse && (
-            <circle cx={CX} cy={CY} r={GIANT_R + 6} fill="none" stroke="var(--magenta)" strokeWidth="0.6" opacity={flash * 0.7} />
+            <circle
+              cx={CX}
+              cy={CY}
+              r={GIANT_R + 6}
+              fill="none"
+              stroke="var(--magenta)"
+              strokeWidth="0.6"
+              opacity={flash * 0.7}
+            />
           )}
 
           {/* moon */}
-          <circle cx={moonX} cy={moonY} r={MOON_R} fill="#243247" stroke="var(--border-strong)" strokeWidth="0.4" />
+          <circle
+            cx={moonX}
+            cy={moonY}
+            r={MOON_R}
+            fill="#243247"
+            stroke="var(--border-strong)"
+            strokeWidth="0.4"
+          />
           {/* lit half of moon toward the sun */}
-          <circle cx={moonX + 1.4} cy={moonY} r="2.2" fill="var(--amber)" opacity={inEclipse ? 0.1 : 0.55} />
+          <circle
+            cx={moonX + 1.4}
+            cy={moonY}
+            r="2.2"
+            fill="var(--amber)"
+            opacity={inEclipse ? 0.1 : 0.55}
+          />
         </svg>
 
         <div className="absolute right-3 top-16 flex flex-col gap-1.5">
           <Readout label={t("sidereal")} value={`${siderealRef.current}`} accent="cyan" />
           <Readout label={t("solar")} value={`${solarRef.current}`} accent="amber" />
-          <Readout label={t("marker")} value={inEclipse ? "●" : "—"} accent={inEclipse ? "magenta" : "foreground"} />
+          <Readout
+            label={t("marker")}
+            value={inEclipse ? "●" : "—"}
+            accent={inEclipse ? "magenta" : "foreground"}
+          />
         </div>
       </div>
     </GlossaryFrame>

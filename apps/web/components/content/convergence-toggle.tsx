@@ -165,12 +165,7 @@ export function ConvergenceToggle({ caption, className }: ConvergenceToggleProps
           <p className="font-sans text-xs text-subtle">{t("panther")}</p>
         </div>
         <div className="flex flex-col items-center gap-1">
-          <svg
-            viewBox={`0 0 ${W} ${H}`}
-            className="w-full"
-            role="img"
-            aria-label={t("thanator")}
-          >
+          <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label={t("thanator")}>
             <GlowDefs idBase={`${uid}-b`} tones={["cyan", "amber"]} />
             <Predator
               accent="var(--cyan)"

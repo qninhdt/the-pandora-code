@@ -1,0 +1,33 @@
+id: acclimatization
+label:
+  vi: Thích nghi sinh lý
+  en: Acclimatization
+definition:
+  vi: >-
+    Những điều chỉnh thuận nghịch mà một cơ thể thực hiện trong chính đời mình để đối phó với hoàn cảnh
+    khắc nghiệt: hàng giờ, hàng tuần, hoặc theo mùa. Lá lách học co bóp mạnh hơn sau nhiều ngày lặn lặp
+    lại; cơ thể sinh nhiệt nhiều hơn khi ngâm nước lạnh triền miên; hồng cầu tăng lên khi sống trên
+    cao. Đặc điểm định nghĩa của tầng này không phải là nó xuất hiện, mà là nó biến mất: khi những
+    người lặn Haenyeo ở Jeju chuyển sang mặc áo lặn cao su vào thập niên 1970, mức chuyển hóa mùa đông
+    cao mà họ mang suốt nhiều thế hệ tan biến chỉ trong hai, ba năm. Đó là bằng chứng dứt khoát rằng nó
+    chưa bao giờ nằm trong gene.
+  en: >-
+    The reversible adjustments a body makes within its own lifetime to cope with a hard environment:
+    over hours, weeks, or seasons. A spleen learns to squeeze harder after days of repeated diving; the
+    body generates more heat under sustained cold immersion; red cells rise at altitude. What defines
+    this tier is not that it appears but that it goes away: when the Haenyeo divers of Jeju adopted
+    neoprene suits in the 1970s, the elevated winter metabolism they had carried for generations
+    vanished within two or three years. That disappearance is the proof it was never in the genes.
+see_also:
+  - phenotypic-plasticity
+  - splenic-contraction
+  - diving-reflex
+  - homeostasis
+category: bio
+tags:
+  - physiology
+  - evolution
+cover_prompt: >-
+  A painterly diptych of the same human figure standing in cold shallow water, on one side lit with a
+  faint warm inner glow of raised metabolism, on the other cool and unlit, the two halves separated only
+  by a shift in light, deep indigo water and pale mist, no text, no labels, no numbers.

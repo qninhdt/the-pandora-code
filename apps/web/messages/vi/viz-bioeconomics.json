@@ -1,0 +1,219 @@
+{
+  "viz": {
+    "extinctionDiscount": {
+      "title": "Khi tuyệt chủng là lựa chọn có lợi nhất",
+      "subtitle": "Một chủ sở hữu tối đa hóa lợi nhuận sẽ chọn mức tồn lượng cho giá trị hiện tại cao nhất. Sinh trưởng chậm cộng với dòng vốn nóng ruột đẩy mức đó về không.",
+      "controls": {
+        "growth": "Tốc độ sinh trưởng đàn",
+        "discount": "Suất chiết khấu",
+        "price": "Giá mỗi lọ",
+        "cost": "Chi phí mỗi đơn vị công sức"
+      },
+      "axis": {
+        "stock": "Số cá thể còn lại",
+        "surplus": "Sản lượng dư mỗi năm"
+      },
+      "marker": {
+        "msy": "K/2 — sản lượng đỉnh",
+        "optimum": "chủ dừng ở đây"
+      },
+      "readout": {
+        "optimum": "Mức tồn lượng chủ nhắm tới",
+        "msy": "Mốc của nhà sinh học",
+        "margin": "Chiết khấu trừ sinh trưởng"
+      },
+      "verdict": {
+        "conserve": "Đáng để giữ sống",
+        "deplete": "Vắt xuống dưới ngưỡng an toàn",
+        "liquidate": "Tối ưu là săn đến cạn"
+      },
+      "note": {
+        "impatient": "Vốn lớn nhanh hơn con vật",
+        "patient": "Con vật lớn nhanh hơn vốn"
+      },
+      "hint": {
+        "impatient": "Khi suất chiết khấu vượt tốc độ sinh trưởng, chờ đàn sinh sản sinh lời kém hơn là bán sạch rồi tái đầu tư. Phép tính khuyên thanh lý.",
+        "patient": "Chừng nào đàn còn lớn nhanh hơn tiền, để con vật lại trong nước chính là khoản đầu tư tốt hơn — tồn lượng là một tài sản đang lên giá."
+      },
+      "aria": {
+        "conserve": "Đường sản lượng dư với mức tồn lượng tối ưu của chủ nằm trên điểm sản lượng đỉnh",
+        "deplete": "Đường sản lượng dư với mức tồn lượng tối ưu của chủ nằm dưới điểm sản lượng đỉnh",
+        "liquidate": "Đường sản lượng dư với mức tồn lượng tối ưu của chủ bằng không"
+      },
+      "units": "Tồn lượng tính theo cá thể; các suất tính theo năm; giá và chi phí tính theo triệu mỗi đơn vị."
+    },
+    "reproductiveValue": {
+      "title": "Không phải cái chết nào cũng giá như nhau",
+      "subtitle": "Tốc độ tăng đàn phụ thuộc vào sự sống của con mẹ sinh sản nhiều hơn hẳn so với tỉ lệ sinh hay sự sống của con non. Cuộc săn nhắm vào những con mẹ đã tìm đúng lớp đắt nhất.",
+      "controls": {
+        "target": "Lớp bị cuộc săn nhắm tới",
+        "pressure": "Tỉ lệ lớp đó bị lấy đi"
+      },
+      "class": {
+        "calf": "Con non",
+        "juvenile": "Con nhỡ",
+        "male": "Con đực trưởng thành",
+        "female": "Con mẹ sinh sản"
+      },
+      "axis": {
+        "elasticity": "Độ nhạy của tốc độ tăng đàn"
+      },
+      "readout": {
+        "growth": "Tốc độ sinh trưởng còn lại",
+        "recovery": "Thời gian hồi phục",
+        "never": "không hồi phục"
+      },
+      "note": {
+        "recover": "để leo từ 30% lên 80% sức chứa",
+        "collapse": "sinh trưởng đã bị đẩy về không hoặc âm"
+      },
+      "hint": {
+        "female": "Đây chính là lớp cuộc săn thực sự nhắm vào. Lấy đi những con mẹ sinh sản là tước khỏi đàn gần như toàn bộ khả năng tự bù đắp.",
+        "other": "Mất mát ở lớp này vẫn đau, nhưng đàn hấp thụ được. Tốc độ sinh trưởng nằm gần như trọn vẹn trong sự sống của con mẹ trưởng thành."
+      },
+      "aria": {
+        "chart": "Độ nhạy của tốc độ tăng đàn theo từng lớp tuổi, đang chọn {class}"
+      },
+      "units": "Độ nhạy lấy từ các mô hình ma trận ở bộ cá voi; năng suất tối đa lấy bằng 4% mỗi năm."
+    },
+    "wildHarvestLadder": {
+      "title": "Hàng tấn cho một thìa cà phê",
+      "subtitle": "Mỗi hợp chất đã ngốn bao nhiêu sinh khối hoang dã, và ngành dược cuối cùng đã thoát khỏi cái giá đó bằng cách nào. Chọn một bậc để so sánh.",
+      "axis": {
+        "ratio": "Số kilôgam nguyên liệu hoang dã cho mỗi gam sản phẩm"
+      },
+      "case": {
+        "paclitaxel": {
+          "short": "Paclitaxel",
+          "source": "Vỏ thông đỏ Thái Bình Dương",
+          "solution": "Bán tổng hợp, rồi nuôi tế bào"
+        },
+        "halichondrin": {
+          "short": "Eribulin",
+          "source": "Bọt biển",
+          "solution": "Tổng hợp toàn phần 62 bước"
+        },
+        "bryostatin": {
+          "short": "Bryostatin-1",
+          "source": "Tập đoàn động vật hình rêu",
+          "solution": "Chất tương tự tổng hợp"
+        },
+        "trabectedin": {
+          "short": "Trabectedin",
+          "source": "Hải tiêu rừng ngập mặn",
+          "solution": "Bán tổng hợp từ lên men"
+        },
+        "amrita": {
+          "short": "Amrita",
+          "source": "Tuyến trong hộp sọ tulkun",
+          "solution": "Không có — vẫn săn ngoài tự nhiên"
+        }
+      },
+      "readout": {
+        "source": "Sinh vật nguồn",
+        "course": "Sinh khối cho một liệu trình",
+        "solution": "Nguồn cung được giải quyết ra sao"
+      },
+      "note": {
+        "course": "bị phá hủy để có một liệu trình 300 mg"
+      },
+      "hint": {
+        "escaped": "Mọi trường hợp Trái Đất trên cái thang này đều thoát khỏi khai thác hoang dã theo cùng một cách: khi phân tử đã được xác định, hóa học thay thế việc đi thu hái. Khai thác hoang dã là con đường đắt, không phải con đường rẻ.",
+        "trapped": "Đây là bậc duy nhất không có cửa ra. Không có lộ trình tổng hợp thì cuộc săn không bao giờ dừng, và tỉ lệ ấy không bao giờ khá hơn — đó chính là lý do quần thể, chứ không phải hóa học, trở thành tài nguyên giới hạn."
+      },
+      "aria": {
+        "chart": "So sánh thang lôgarit lượng sinh khối hoang dã cần cho mỗi gam sản phẩm ở năm hợp chất"
+      }
+    },
+    "senescenceArrest": {
+      "title": "\"Chặn lão hóa\" thực ra phải có nghĩa gì",
+      "subtitle": "Nguy cơ tử vong leo theo hàm số mũ với tuổi. Một can thiệp có thể hoãn đường leo đó, làm nó chậm lại, hoặc — như lời quảng cáo ở đây — làm nó phẳng hẳn.",
+      "controls": {
+        "regime": "Can thiệp làm được gì",
+        "rate": "Tốc độ lão hóa còn giữ lại",
+        "extrinsic": "Nguy cơ tai nạn và thương tích"
+      },
+      "regime": {
+        "compress": "Hoãn lại",
+        "decelerate": "Làm chậm",
+        "arrest": "Chặn hẳn"
+      },
+      "axis": {
+        "age": "Tuổi (năm)",
+        "hazard": "Nguy cơ tử vong mỗi năm"
+      },
+      "readout": {
+        "mrdt": "Thời gian nguy cơ nhân đôi",
+        "median": "Tuổi thọ trung vị"
+      },
+      "note": {
+        "mrdt": "số năm để nguy cơ tử vong nhân đôi",
+        "median": "mốc không điều trị: {baseline}"
+      },
+      "hint": {
+        "compress": "Bệnh đến muộn hơn nhưng độ dốc không đổi: nguy cơ vẫn nhân đôi theo đúng cái nhịp cũ, nên cái trần gần như không nhích. Đây là điều phần lớn y học thành công đã làm được.",
+        "decelerate": "Uốn được độ dốc mới là mục tiêu thật của lão khoa học. Kết quả tái lập tốt nhất trên Trái Đất — rapamycin ở chuột đa dạng di truyền — chỉ dịch tuổi thọ trung vị chừng một phần mười.",
+        "arrest": "Làm phẳng đường cong thì cái chết thôi đi theo tuổi; còn lại chỉ là tai nạn và thương tích. Chưa hợp chất nào từng làm được điều này, ở bất kỳ sinh vật nào, nên lời tuyên bố ấy thuộc một hạng khác chứ không phải một con số lớn hơn."
+      },
+      "aria": {
+        "compress": "Đường tử vong dịch về sau nhưng độ dốc hàm mũ không đổi",
+        "decelerate": "Đường tử vong với độ dốc hàm mũ giảm, đặt cạnh mốc không điều trị",
+        "arrest": "Đường tử vong phẳng, số hạng lão hóa hàm mũ bị xóa hẳn"
+      },
+      "units": "Nguy cơ trên trục lôgarit; thời gian nhân đôi cơ sở 8 năm."
+    },
+    "consentLadder": {
+      "title": "Cái thang của sự đồng thuận",
+      "subtitle": "Luật tiếp cận nguồn gene leo lên từng bậc một, từ tự do khai thác đến chia sẻ lợi ích có thương lượng. Chọn một bậc để xem điều gì đã lập ra nó — và liệu cuộc mua bán này có vượt qua.",
+      "rung": {
+        "openAccess": {
+          "label": "Tự do khai thác",
+          "instrument": "Không nợ ai sự đồng thuận",
+          "precedent": "Dừa cạn hồng, Madagascar",
+          "why": "Cuộc mua bán vận hành đúng ở đây: khai thác mà không cần phép của bất kỳ ai."
+        },
+        "sovereignty": {
+          "label": "Chủ quyền",
+          "instrument": "Công ước Đa dạng sinh học, Điều 15",
+          "precedent": "Chấm dứt \"di sản chung\", 1992",
+          "why": "Không một chủ thể nào trên Pandora được công nhận có quyền với chính sinh học của mình."
+        },
+        "consent": {
+          "label": "Đồng thuận báo trước",
+          "instrument": "Nghị định thư Nagoya, hiệu lực 2014",
+          "precedent": "Bằng sáng chế neem và nghệ bị hủy",
+          "why": "Không ai được hỏi ý, và không điều khoản nào được thương lượng với ai."
+        },
+        "benefit": {
+          "label": "Chia sẻ lợi ích",
+          "instrument": "Tiền bản quyền thương lượng cho người giữ tri thức",
+          "precedent": "Thỏa thuận hoodia và rooibos",
+          "why": "Mọi đơn vị giá trị đều rời khỏi hệ thống; không gì trở lại thế giới đã sinh ra nó."
+        },
+        "personhood": {
+          "label": "Tư cách nhân vị",
+          "instrument": "Tư cách pháp lý của chính sinh vật",
+          "precedent": "Đười ươi Sandra; sông Whanganui",
+          "why": "Đây mới là bậc mà vụ việc thật sự thuộc về — và là bậc không khung tiếp cận nguồn gene nào chạm tới được."
+        }
+      },
+      "readout": {
+        "instrument": "Công cụ pháp lý",
+        "precedent": "Tiền lệ Trái Đất",
+        "status": "Cuộc mua bán này có vượt qua?"
+      },
+      "status": {
+        "met": "Có",
+        "unmet": "Không"
+      },
+      "hint": {
+        "cleared": "Đây là bậc duy nhất cuộc mua bán vượt qua, và nó vượt qua bằng cách chẳng đòi hỏi gì cả.",
+        "failed": "Cuộc mua bán trượt hẳn bậc này. Đáng lưu ý là dù có vượt qua mọi bậc dưới đỉnh, vấn đề cốt lõi vẫn còn nguyên — những bậc đó điều chỉnh quyền sở hữu, mà sở hữu là hạng mục sai ở đây."
+      },
+      "aria": {
+        "chart": "Cái thang năm bậc của các khung đồng thuận, đang chọn {rung}"
+      },
+      "legend": "Bậc {index} trên {total}. Dấu tròn được tô đầy nghĩa là cuộc mua bán vượt qua bậc đó."
+    }
+  }
+}

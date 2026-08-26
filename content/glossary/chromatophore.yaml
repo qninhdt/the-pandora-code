@@ -1,0 +1,32 @@
+id: chromatophore
+label:
+  vi: Tế bào sắc tố
+  en: Chromatophore
+definition:
+  vi: >-
+    Túi sắc tố đàn hồi trong da, mỗi túi được một vành 12–24 thớ cơ hướng tâm bao quanh, và các thớ ấy nối
+    thẳng tới thần kinh vận động. Cơ co thì túi bị kéo bung thành một đĩa màu trong khoảng 100–300
+    millisecond — không hormone, không trễ, nên hoa văn trên da mực nang không giống một cái đỏ mặt mà giống
+    một trình điều khiển màn hình. Điều then chốt là chromatophore chỉ *trừ đi* bước sóng khỏi ánh sáng đã có
+    sẵn: nó phản chiếu, không phát sáng. Bung một túi sắc tố trong bóng tối hoàn toàn thì chẳng ai thấy gì —
+    nên đây là công nghệ của vùng nước nông.
+  en: >-
+    An elastic sac of pigment in the skin, each ringed by 12–24 radial muscle fibres wired directly to motor
+    neurons. Contracting the muscles pulls the sac open into a coloured disc in 100–300 milliseconds — no
+    hormones, no lag, which is why cuttlefish patterning looks less like blushing than like a display
+    driver. The crucial point is that a chromatophore only *subtracts* wavelengths from light that is
+    already present: it reflects, it does not emit. Expand a pigment sac in total darkness and nobody sees
+    anything — which makes it a shallow-water technology.
+see_also:
+  - iridophore
+  - bioluminescence
+  - counter-illumination
+  - aphotic-zone
+category: bio
+tags:
+  - physiology
+  - sensory-biology
+cover_prompt: >-
+  An extreme close view of skin showing a dozen round pigment sacs at different stages of expansion, each
+  encircled by fine radiating muscle fibres pulling it open, magenta and amber pigment against translucent
+  teal tissue, painterly naturalist microscopy plate, no text, no labels.

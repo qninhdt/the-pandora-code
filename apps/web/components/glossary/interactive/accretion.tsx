@@ -1,12 +1,12 @@
 "use client";
 
-import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import { GlossaryFrame } from "./shared/frame";
+import { useRef, useState } from "react";
 import { ControlSlider } from "./shared/control-slider";
+import { GlossaryFrame } from "./shared/frame";
 import { Readout } from "./shared/readout";
-import { useRafLoop } from "./shared/use-raf-loop";
 import { useInView } from "./shared/use-in-view";
+import { useRafLoop } from "./shared/use-raf-loop";
 
 interface Particle {
   ang: number;
@@ -22,8 +22,8 @@ const SEED_RAD = 6;
 
 function makeParticles(n: number): Particle[] {
   return Array.from({ length: n }, (_, i) => {
-    const s = (i * 2654435761) % 1000 / 1000;
-    const s2 = (i * 40503) % 997 / 997;
+    const s = ((i * 2654435761) % 1000) / 1000;
+    const s2 = ((i * 40503) % 997) / 997;
     return {
       ang: s * Math.PI * 2,
       rad: 14 + s2 * 30,
@@ -107,7 +107,13 @@ export default function Accretion() {
           <ellipse cx={CX} cy={CY} rx="30" ry="27" fill="var(--cyan)" opacity="0.05" />
 
           {/* warm core glow scales with mass */}
-          <circle cx={CX} cy={CY} r={protoR + 6} fill="url(#accr-glow)" opacity={0.3 + massPct / 200} />
+          <circle
+            cx={CX}
+            cy={CY}
+            r={protoR + 6}
+            fill="url(#accr-glow)"
+            opacity={0.3 + massPct / 200}
+          />
 
           {/* particles */}
           {ps.map((p, i) => {

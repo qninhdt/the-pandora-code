@@ -98,21 +98,84 @@ export default function ErrorCorrectingCode() {
           {/* source */}
           {DATA.map((b, i) => (
             <g key={`s${i}`}>
-              <rect x={8 + i * 8} y={22} width={6.5} height={10} rx={0.8} fill={b ? "var(--cyan)" : "var(--surface)"} stroke="var(--cyan)" strokeWidth={0.5} opacity={0.9} />
-              <text x={11.25 + i * 8} y={29} textAnchor="middle" style={{ fontSize: 3.5, fontFamily: "monospace", fill: b ? "var(--void)" : "var(--cyan)" }}>{b}</text>
+              <rect
+                x={8 + i * 8}
+                y={22}
+                width={6.5}
+                height={10}
+                rx={0.8}
+                fill={b ? "var(--cyan)" : "var(--surface)"}
+                stroke="var(--cyan)"
+                strokeWidth={0.5}
+                opacity={0.9}
+              />
+              <text
+                x={11.25 + i * 8}
+                y={29}
+                textAnchor="middle"
+                style={{
+                  fontSize: 3.5,
+                  fontFamily: "monospace",
+                  fill: b ? "var(--void)" : "var(--cyan)",
+                }}
+              >
+                {b}
+              </text>
             </g>
           ))}
-          <text x={22} y={18} textAnchor="middle" style={{ fontSize: 2.6, fontFamily: "monospace", fill: "var(--muted)" }}>SRC</text>
+          <text
+            x={22}
+            y={18}
+            textAnchor="middle"
+            style={{ fontSize: 2.6, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
+            SRC
+          </text>
           {/* channel noise arc */}
-          <path d="M40 27 C55 10, 55 10, 70 27" fill="none" stroke="var(--amber)" strokeWidth={0.6} strokeDasharray="1.5 1.2" opacity={0.7} />
-          <text x={55} y={14} textAnchor="middle" style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--amber)" }}>noise</text>
+          <path
+            d="M40 27 C55 10, 55 10, 70 27"
+            fill="none"
+            stroke="var(--amber)"
+            strokeWidth={0.6}
+            strokeDasharray="1.5 1.2"
+            opacity={0.7}
+          />
+          <text
+            x={55}
+            y={14}
+            textAnchor="middle"
+            style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--amber)" }}
+          >
+            noise
+          </text>
           {/* received */}
           {result.recv.slice(0, 7).map((b, i) => {
             const bad = result.sent[i] !== b;
             return (
               <g key={`r${i}`}>
-                <rect x={8 + i * 8} y={42} width={6.5} height={10} rx={0.8} fill={bad ? "var(--magenta)" : b ? "var(--teal)" : "var(--surface)"} stroke={bad ? "var(--magenta)" : "var(--teal)"} strokeWidth={0.5} opacity={0.9} />
-                <text x={11.25 + i * 8} y={49} textAnchor="middle" style={{ fontSize: 3.5, fontFamily: "monospace", fill: bad || b ? "var(--void)" : "var(--teal)" }}>{b}</text>
+                <rect
+                  x={8 + i * 8}
+                  y={42}
+                  width={6.5}
+                  height={10}
+                  rx={0.8}
+                  fill={bad ? "var(--magenta)" : b ? "var(--teal)" : "var(--surface)"}
+                  stroke={bad ? "var(--magenta)" : "var(--teal)"}
+                  strokeWidth={0.5}
+                  opacity={0.9}
+                />
+                <text
+                  x={11.25 + i * 8}
+                  y={49}
+                  textAnchor="middle"
+                  style={{
+                    fontSize: 3.5,
+                    fontFamily: "monospace",
+                    fill: bad || b ? "var(--void)" : "var(--teal)",
+                  }}
+                >
+                  {b}
+                </text>
               </g>
             );
           })}
@@ -121,12 +184,39 @@ export default function ErrorCorrectingCode() {
             const ok = b === DATA[i];
             return (
               <g key={`d${i}`}>
-                <rect x={8 + i * 8} y={64} width={6.5} height={10} rx={0.8} fill={ok ? (b ? "var(--cyan)" : "var(--surface)") : "var(--magenta)"} stroke={ok ? "var(--cyan)" : "var(--magenta)"} strokeWidth={0.5} />
-                <text x={11.25 + i * 8} y={71} textAnchor="middle" style={{ fontSize: 3.5, fontFamily: "monospace", fill: ok && b ? "var(--void)" : ok ? "var(--cyan)" : "var(--void)" }}>{b}</text>
+                <rect
+                  x={8 + i * 8}
+                  y={64}
+                  width={6.5}
+                  height={10}
+                  rx={0.8}
+                  fill={ok ? (b ? "var(--cyan)" : "var(--surface)") : "var(--magenta)"}
+                  stroke={ok ? "var(--cyan)" : "var(--magenta)"}
+                  strokeWidth={0.5}
+                />
+                <text
+                  x={11.25 + i * 8}
+                  y={71}
+                  textAnchor="middle"
+                  style={{
+                    fontSize: 3.5,
+                    fontFamily: "monospace",
+                    fill: ok && b ? "var(--void)" : ok ? "var(--cyan)" : "var(--void)",
+                  }}
+                >
+                  {b}
+                </text>
               </g>
             );
           })}
-          <text x={22} y={82} textAnchor="middle" style={{ fontSize: 2.6, fontFamily: "monospace", fill: "var(--muted)" }}>OUT</text>
+          <text
+            x={22}
+            y={82}
+            textAnchor="middle"
+            style={{ fontSize: 2.6, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
+            OUT
+          </text>
         </svg>
         <div className="absolute right-3 top-14 flex flex-col gap-1.5 items-end">
           <ControlTabs
@@ -138,11 +228,26 @@ export default function ErrorCorrectingCode() {
               { value: "hamming", label: t("hamming") },
             ]}
           />
-          <Readout label={t("errors")} value={result.flips} accent={result.match ? "teal" : "magenta"} />
-          <ControlButton onClick={() => setSeed((s) => s + 1)} className="px-2.5">↻</ControlButton>
+          <Readout
+            label={t("errors")}
+            value={result.flips}
+            accent={result.match ? "teal" : "magenta"}
+          />
+          <ControlButton onClick={() => setSeed((s) => s + 1)} className="px-2.5">
+            ↻
+          </ControlButton>
         </div>
         <div className="absolute inset-x-3 bottom-10">
-          <ControlSlider label={t("noise")} value={noise} min={0} max={0.5} step={0.02} display={`${Math.round(noise * 100)}%`} onChange={setNoise} thumb="amber" />
+          <ControlSlider
+            label={t("noise")}
+            value={noise}
+            min={0}
+            max={0.5}
+            step={0.02}
+            display={`${Math.round(noise * 100)}%`}
+            onChange={setNoise}
+            thumb="amber"
+          />
         </div>
       </div>
     </GlossaryFrame>

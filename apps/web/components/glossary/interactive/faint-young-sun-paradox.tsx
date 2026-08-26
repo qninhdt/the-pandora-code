@@ -2,8 +2,8 @@
 
 import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
-import { ControlSlider } from "./shared/control-slider";
 import { ControlButton } from "./shared/control-button";
+import { ControlSlider } from "./shared/control-slider";
 import { GlossaryFrame } from "./shared/frame";
 import { Readout } from "./shared/readout";
 
@@ -35,9 +35,7 @@ export default function FaintYoungSunParadox() {
   const lum = luminosity(gyr);
   // Without the CO2 thermostat surface tracks luminosity and dives below freezing
   // early on. With it, a thicker early greenhouse holds the world above freezing.
-  const surface = thermostat
-    ? Math.max(0.32, lum + (gyr / 4) * 0.38)
-    : lum - 0.18;
+  const surface = thermostat ? Math.max(0.32, lum + (gyr / 4) * 0.38) : lum - 0.18;
 
   const frozen = surface <= 0.3;
 
@@ -137,7 +135,11 @@ export default function FaintYoungSunParadox() {
           </svg>
 
           <div className="absolute right-2 top-14 flex flex-col gap-1.5">
-            <Readout label={t("luminosity")} value={`${(lum * 130 + 70).toFixed(0)}%`} accent="amber" />
+            <Readout
+              label={t("luminosity")}
+              value={`${(lum * 130 + 70).toFixed(0)}%`}
+              accent="amber"
+            />
             <Readout
               label={t("temperature")}
               value={frozen ? "❄" : "≈"}

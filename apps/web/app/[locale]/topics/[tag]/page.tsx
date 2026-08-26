@@ -57,15 +57,6 @@ export default async function TopicPage({ params }: TopicPageProps) {
     <>
       <JsonLd data={breadcrumb} />
       <main className="mx-auto max-w-3xl space-y-6 px-6 py-12">
-        <nav aria-label="Breadcrumb" className="font-sans text-xs text-subtle">
-          <a href={`/${locale}`} className="hover:text-cyan">
-            {tRoot("nav.home")}
-          </a>
-          <span aria-hidden className="px-2">
-            /
-          </span>
-          <span className="text-muted">{tRoot("page.topics.title", { tag })}</span>
-        </nav>
         <header>
           <p className="text-xs font-mono uppercase tracking-wide text-[color:var(--muted)]">
             {t("topicKicker")}

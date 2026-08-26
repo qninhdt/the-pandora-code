@@ -1,0 +1,32 @@
+id: strouhal-number
+label:
+  vi: Số Strouhal
+  en: Strouhal number
+definition:
+  vi: >-
+    Một con số không đơn vị mô tả nhịp vẫy của một cái vây hay cánh: lấy tần số nhân với biên độ vẫy
+    rồi chia cho tốc độ tiến. Nó cho biết mỗi lần đập tạo ra một xoáy nước nằm cách nhau bao xa trong
+    vệt sau con vật. Điều kỳ lạ là cá heo, cá ngừ, cá mập và chim cánh cụt — những dòng dõi chẳng liên
+    quan gì nhau — đều bơi hiệu quả nhất trong cùng một dải hẹp, từ 0,20 đến 0,40. Ra ngoài dải đó,
+    các xoáy nước không còn ăn khớp với nhau, vệt nước rối loạn, và con vật đốt nhiều năng lượng hơn để
+    đi cùng một quãng đường.
+  en: >-
+    A dimensionless number describing the rhythm of a beating fin or wing: frequency times stroke
+    amplitude, divided by forward speed. It says how far apart each beat leaves its vortex in the wake.
+    The strange thing is that dolphins, tuna, sharks and penguins — lineages with nothing to do with one
+    another — all swim most efficiently inside the same narrow band, 0.20 to 0.40. Outside it the
+    vortices stop meshing, the wake turns chaotic, and the animal burns more energy to cover the same
+    distance.
+see_also:
+  - reynolds-number
+  - lift
+  - froude-number
+  - convergent-evolution
+category: concept
+tags:
+  - physics
+  - oceanography
+cover_prompt: >-
+  A painterly overhead study of a broad flattened tail sweeping through dark water, leaving a chain of
+  evenly spaced spiral vortices trailing behind it in the current, cool teal and cyan swirls against
+  deep indigo, no text, no labels, no numbers, no arrows.

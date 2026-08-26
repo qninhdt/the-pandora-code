@@ -1,0 +1,34 @@
+id: open-access-resource
+label:
+  vi: Tài nguyên tự do tiếp cận
+  en: Open-access resource
+definition:
+  vi: >-
+    Tài nguyên mà không ai có quyền loại trừ người khác khỏi việc khai thác. Hệ quả kinh tế rất dễ
+    đoán: người ta còn tiếp tục lao vào chừng nào còn lãi, nên đàn bị vắt xuống đúng mức mà chi phí
+    bắt được con cuối cùng vừa bằng giá bán nó, và toàn bộ lợi nhuận của cả ngành tan biến. Đây không
+    phải hậu quả của lòng tham cá nhân mà của cấu trúc quyền: mỗi người khai thác đều biết rằng con
+    vật mình không lấy thì người khác sẽ lấy, nên tiết chế chỉ là thiệt cho riêng mình. Cần chú ý một
+    điều: chuyển sang một chủ sở hữu duy nhất giải quyết được sự triệt tiêu lợi nhuận đó, nhưng không
+    tự động cứu được quần thể.
+  en: >-
+    A resource from which no one has the right to exclude anyone else. The economic consequence is
+    predictable: entrants keep coming while profit remains, so the stock is ground down to exactly the
+    level where the cost of catching the last animal equals the price it fetches, and the whole
+    industry's profit evaporates. This is not a consequence of individual greed but of the structure of
+    rights: every harvester knows that an animal they leave will be taken by someone else, so restraint
+    is a private loss. One thing worth noting: moving to a single owner solves that dissipation of
+    profit, but does not automatically save the population.
+see_also:
+  - bioeconomics
+  - discount-rate
+  - optimal-extinction
+  - maximum-sustainable-yield
+category: concept
+tags:
+  - bioeconomics
+  - law-and-policy
+cover_prompt: >-
+  A painterly plate of an open stretch of sea with a great many small vessel silhouettes converging
+  from every direction toward one shrinking pale shoal at the centre, no boundary or barrier anywhere
+  in the water, cool teal vessels on deep indigo, painterly naturalist plate, no text, no labels.

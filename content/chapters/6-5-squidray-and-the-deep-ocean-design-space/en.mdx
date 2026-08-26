@@ -1,0 +1,379 @@
+<DiagramFigure
+  src="/images/chapters/squidray-and-the-deep-ocean-design-space/fig-01-the-thing-that-came-up.webp"
+  alt="A vast squid-ray hybrid breaching from black water into dim air, its broad mantle wings still spread wide, twelve tentacles trailing beneath, water sheeting off its dark counter-shaded back"
+  labels={[
+    { x: 18, y: 30, side: "left", label: "Mantle wing span", note: "Flapping foil optimized for low-cost cruising" },
+    { x: 48, y: 32, side: "right", label: "Lateral siphon", note: "Constricted nozzle for violent high-impulse bursts" },
+    { x: 28, y: 46, side: "left", label: "Trailing tentacles", note: "Twelve-tentacle cluster with barbed grasping hooks" },
+    { x: 48, y: 76, side: "right", label: "Surface froth ring", note: "Ballistic breach tearing through shallow water" }
+  ]}
+  figNo="01"
+  caption="The moment that does not add up. Wings this broad belong to an animal that glides for a living. The speed needed to leave the water belongs to something else entirely — and both are attached to the same body."
+  tier="canon"
+/>
+
+The water goes from flat to broken in about a second.
+
+What comes out of it is eight to fourteen metres long, depending on whose visual estimate you trust, and it comes out fast enough to leave the sea entirely — a multi-tonne animal in the air, briefly, on a ballistic arc. Under the mantle are twelve tentacles, eight of them lined with hooks, four smaller ones folded in behind. At the centre of them is a beak that closes sideways instead of up and down, and that beak has already gone through the reinforced canopy of an RDA submersible the way a bolt cutter goes through a padlock. Then the whole arrangement folds itself narrow, drops back through the surface, and is gone into water where the light does not reach.
+
+The Metkayina call it *tsyong*. The xenobiologists who catalogued it gave it a name that sounds like an accusation: *Velociteuthis mortigravis*, the swift deadly squid. Both parties agree on the important thing, which is that when one of these appears you have a serious problem.
+
+But set the fear aside and look at the shape, because the shape is where the puzzle is. Along each side of the central mantle run broad muscular wings that flare into pectoral fins — the profile of a manta ray, an animal that makes its living by flapping slowly and efficiently across whole ocean basins. And tucked into the flanks are paired siphons, described in the survey literature as working like a biological turbine: pressurise the mantle cavity, fire the water out, and vector the thrust. That is the profile of a squid, an animal that makes its living by explosive acceleration and pays dearly for it.
+
+Those are not two settings on one engine. They are two different engines, built on opposite principles, and on Earth no animal above about half a tonne carries both. So the question this chapter is actually about is not "how does the squidray work." It is the harder one underneath: what, exactly, does seawater allow? Because when you write out what the water charges for — momentum, light, pressure, calories — you get something more useful than a description of one alien predator. You get a map of the space that any large animal in any ocean has to fit inside. And the most interesting thing on that map is that it gets *wider* as you go down.
+
+## Two engines in one body
+
+Start with the siphons, because that is where the intuition fails first.
+
+<GlossaryTerm slug="jet-propulsion">Jet propulsion</GlossaryTerm> is the most honest form of locomotion there is. Newton's third law, applied without any cleverness: take water in, throw it backwards, go forwards. The thrust you get is exactly the momentum flux of what you threw — the mass flow rate times the exit velocity. Nothing is hidden. Nothing is borrowed. It is the same principle as a rocket, and for the same reason it is wonderful at accelerating and terrible at travelling.
+
+Here is why. The force depends on mass flow times velocity, but the energy you have to spend depends on velocity *squared*. So if you want a given amount of thrust, you have a choice: move a lot of water slowly, or a little water quickly. Both give you the same push. Only one of them is cheap.
+
+A siphon does not get to choose. Its aperture is small — that is what makes it a nozzle rather than a hole — so the only way to make real force is to send the water out fast. Much faster than the animal itself is moving. And every metre per second by which the exhaust overshoots the body is energy left behind in the wake, doing nothing but stirring the ocean.
+
+There is a number for how much of your effort actually reaches you rather than the water. It is called <GlossaryTerm slug="froude-efficiency">Froude efficiency</GlossaryTerm>, and it has one of the cleanest forms in all of biomechanics: twice the swimming speed, divided by the sum of the swimming speed and the jet speed. Read it out loud and the conclusion is immediate. Efficiency approaches one only as the jet velocity approaches the swimming velocity — that is, only as you stop jetting and start merely sliding water gently rearwards. The harder you jet, the more you waste. Measured Froude efficiencies for pulsed squid jets land between about 0.38 and 0.55. A flapping ray gets past 0.85.
+
+And the jet has a second problem the ray does not have, which is that it has to breathe in. The mantle must refill between pulses. During the refill there is no thrust at all, and drag is still working on the body, and the animal has to do muscular work to pull water in against the flow it is moving through. So the peak thrust during the push has to exceed the average thrust you need, sometimes considerably, just to average out.
+
+<DiagramFigure
+  src="/images/chapters/squidray-and-the-deep-ocean-design-space/fig-02-two-engines.webp"
+  alt="An anatomical cutaway of a large squid-ray body showing the broad lateral mantle wings on one side and the internal mantle cavity feeding two lateral siphon nozzles on the other"
+  labels={[
+    { x: 28, y: 22, side: "left", label: "Muscular wing foil", note: "Broad swept area for steady, low-cost transit" },
+    { x: 40, y: 50, side: "left", label: "Cephalic ring", note: "Four-eyed visual cluster and tentacle base" },
+    { x: 58, y: 48, side: "right", label: "Pressurised mantle cavity", note: "Thick circular and radial muscle bands" },
+    { x: 82, y: 50, side: "right", label: "Siphon exhaust", note: "Narrow tapering jet producing high momentum flux" }
+  ]}
+  figNo="02"
+  caption="Two propulsion systems sharing one trunk. The wings are a distance engine: enormous swept area, gentle acceleration, cheap. The siphons are an event engine: tiny aperture, violent acceleration, expensive. Nothing about carrying both is contradictory — but everything about *when* you use each one is decided by physics, not preference."
+  tier="canon"
+/>
+
+Now put a number on the whole business. Divide the energy an animal burns by its mass and by the distance it covers, and you get its <GlossaryTerm slug="cost-of-transport">cost of transport</GlossaryTerm> — joules per kilogram per metre, the fuel-economy figure of biology. Respirometry on pelagic squid puts them at roughly 1.5 to 4.5. Fishes and rays of comparable mass sit at 0.2 to 0.6. That is a three-to-fivefold metabolic penalty for choosing the jet, and it is not a rounding error — it is the difference between an animal that can cross an ocean and one that can cross a room.
+
+The difference is visible in the water itself, if you know what to look for. Everything an animal spends on locomotion ends up somewhere, and what it does not use to move itself, it leaves behind in the shape of its wake.
+
+<DiagramFigure
+  src="/images/chapters/squidray-and-the-deep-ocean-design-space/fig-03-two-kinds-of-wake.webp"
+  alt="Two wake patterns side by side in dark water: a narrow chain of tight fast vortex rings behind a small nozzle, and a broad train of wide gentle vortex loops behind a large flapping wing"
+  labels={[
+    { x: 48, y: 24, side: "left", label: "Tight vortex chain", note: "Small, fast rings leaving heavy kinetic waste in the wake" },
+    { x: 88, y: 26, side: "right", label: "Nozzle throat", note: "High exit velocity yielding 38–55% Froude efficiency" },
+    { x: 35, y: 68, side: "left", label: "Broad vortex loops", note: "Wide, slow loops that barely outrun the swimming body" },
+    { x: 86, y: 68, side: "right", label: "Flapping wing tip", note: "Lift-based foil propulsion reaching >85% efficiency" }
+  ]}
+  figNo="03"
+  caption="The same thrust, delivered two ways. The siphon leaves a narrow chain of fast rings — energy the animal paid for and gave to the ocean. The wing leaves broad slow loops that barely outrun the body, which is what efficiency actually looks like from behind."
+  tier="real_science"
+/>
+
+<JetVersusFoilEfficiency
+  caption="Both engines are given the same job: hold this animal at this speed. Widen the siphon aperture and its efficiency climbs toward the wing's — but look at the aperture it takes. By the time the numbers meet, the nozzle has become a fin with a hole in it."
+/>
+
+Which resolves the apparent contradiction in the body plan, and resolves it in a slightly deflating way: the squidray is not doing something impossible. It is doing the obvious thing. The wings are for going places. The siphons are for the four seconds in which something is either caught or lost. Canon describes exactly this division — metachronal undulation of the lateral fins for cruising and hovering, high-impulse siphon bursts for pursuit, evasion and vertical assault — and the physics says that is the only arrangement that works. An animal this size that jetted everywhere would starve. An animal this size that could only flap would never catch anything that could see it coming.
+
+## Why Earth's biggest squid is slow
+
+There is a further reason to be suspicious of the jet, and it explains something odd about our own ocean.
+
+Earth's largest cephalopods are enormous. The giant squid runs to about 450 kilograms and the colossal squid to around 500. If jetting scaled well, these should be the ocean's terrors. They are not. They are slow, low-metabolism ambush animals that hang in the water column waiting, and get eaten in large numbers by sperm whales that hunt them with sound.
+
+The reason is structural, and it is worth walking through because it is the same wall the tsyong has to get over.
+
+Make an animal longer and its mass grows with the cube of length, while the cross-sectional area of its muscle — which is what sets force — grows only with the square. So power per unit mass falls off as one over length. A big animal is, in a specific and unavoidable sense, weaker than a small one.
+
+For a jetter this bites twice, because the mantle is a pressure vessel. The volume it encloses grows as the cube of length; the thickness of its muscular wall grows only linearly. And the tension in the wall of a pressure vessel — its <GlossaryTerm slug="hoop-stress">hoop stress</GlossaryTerm> — is the internal pressure times the radius, divided by twice the wall thickness. Radius up, thickness barely up, so stress climbs steadily with size until it runs into the maximum a muscle fibre can generate without tearing, somewhere around a quarter of a megapascal for invertebrate tissue.
+
+At that point a large squid has exactly two options, and both of them are surrenders. It can contract more slowly, which lowers the pressure but also the jet velocity. Or it can widen the siphon, which lowers the pressure needed for the same mass flow but drops the exit velocity too. Either way peak thrust falls. The animal gets bigger and its punch gets relatively weaker.
+
+<DiagramFigure
+  src="/images/chapters/squidray-and-the-deep-ocean-design-space/fig-04-the-mantle-under-load.webp"
+  alt="A cross-section through a muscular mantle cavity under internal pressure, the thin wall stretched taut with tension arrows running circumferentially around it and the water jet leaving through a narrow siphon"
+  labels={[
+    { x: 28, y: 18, side: "left", label: "Peak hoop stress", note: "Thinnest wall section where enclosed radius is widest" },
+    { x: 52, y: 44, side: "right", label: "Pressurised lumen", note: "Internal water volume scaling with length cubed" },
+    { x: 18, y: 55, side: "left", label: "Circumferential muscle", note: "Tensile stress capped at ~0.25 MPa before tearing" },
+    { x: 78, y: 76, side: "right", label: "Funnel discharge", note: "Nozzle exit setting peak expulsion rate" }
+  ]}
+  figNo="04"
+  caption="The mantle is a pressure vessel made of meat. Tension in its wall rises with the radius it encloses and falls with its thickness — and thickness cannot keep up. Past a certain size the muscle simply cannot squeeze hard enough without tearing itself, which is why Earth's largest squid are ambushers rather than pursuers."
+  tier="real_science"
+/>
+
+One thing does come free, and it is worth noticing because it is the exact opposite of the situation on land. Water is dense enough that a body can be built to weigh nothing. Earth's giant squid manage <GlossaryTerm slug="neutral-buoyancy">neutral buoyancy</GlossaryTerm> by retaining low-density ammonium chloride solution in their body cavities, which floats them weightlessly in the column. No skeleton has to hold the animal up. That is why the largest organisms our planet has ever produced live in the sea and always have — the structural ceiling that stops a land animal at a few tens of tonnes simply does not exist here.
+
+But buoyancy solves the static problem, not the dynamic one. Weighing nothing does not mean *massing* nothing. To accelerate four tonnes you still need four tonnes' worth of impulse, and impulse is force integrated over time, and force is limited by how much water the mantle holds and how fast it can be expelled. Free from gravity, still bound by inertia. The tsyong gets the gift and keeps the bill.
+
+<Comparison
+  left={{
+    title: "What canon establishes",
+    children: "Paired lateral siphons working like a turbine; the animal compressing into a streamlined torpedo profile; enough acceleration to breach the surface. Undulating mantle wings for cruising and hovering. Both modes shown on screen and described in companion material.",
+  }}
+  right={{
+    title: "What Earth measurement adds",
+    children: "Why those two modes must be separate rather than blended: Froude efficiency collapses as jet velocity rises, cost of transport runs three to five times a fish's, and mantle hoop stress caps peak thrust as body size grows.",
+  }}
+/>
+
+## What the deep actually buys you
+
+So far this reads as a chapter about limits. Here is where it turns over.
+
+Everyone knows that fast swimmers are limited by drag. Fewer people know there is a second ceiling above the drag ceiling, and that it is made of bubbles.
+
+Accelerate water over a curved surface — a fin, a nozzle lip, the leading edge of a wing — and Bernoulli's principle says its local pressure drops. Push harder and the local pressure drops further. If it falls all the way to the vapour pressure of seawater, about 2.3 kilopascals, the liquid does something startling: it boils. Not from heat, from tension. It tears open into vapour-filled voids. This is <GlossaryTerm slug="cavitation">cavitation</GlossaryTerm>, and the tearing is not the damaging part. The damaging part is what happens when those voids drift into higher pressure and collapse, asymmetrically and very fast, driving micro-jets that hit the nearby surface at between one and five gigapascals.
+
+Ship propellers get eaten by this. So, it turns out, do animals. Hydrodynamic modelling by Iosilevskii and Weihs put the cavitation ceiling for dolphins and fast teleosts in surface water at roughly 10 to 15 metres per second — and there is a lovely, grim detail confirming it. Cetacean tail flukes carry pain receptors. A dolphin approaching its cavitation limit does not get quietly damaged; it hurts. The ceiling is enforced by the animal's own nervous system before the tissue erodes. Some animals have gone the other way and weaponised the effect: a pistol shrimp snaps its claw fast enough to generate a cavitation bubble whose collapse reaches temperatures above 4,700 kelvin and produces a 218-decibel pulse, which is a small acoustic bomb used to stun prey.
+
+Now write the onset condition properly. Cavitation begins when the ratio of available pressure margin to dynamic pressure falls below a critical value — and the available margin is the *ambient* pressure, which is atmospheric pressure plus the weight of all the water above you.
+
+Which means the ceiling is not fixed. It moves with depth. Specifically, the critical velocity rises with the square root of depth, and because ambient pressure at a kilometre down is a hundred times what it is at the surface, the effect is not subtle.
+
+<CavitationDepthCeiling
+  caption="The same fin, the same geometry, the same animal — and a speed limit that quadruples in the first two hundred metres. Shallow water is the constrained environment. The abyss is where a high-speed jet stops being self-destructive."
+/>
+
+Sit with that, because it inverts the usual story about the deep sea. We narrate depth as hardship: crushing, freezing, starving, dark. But for one specific and important capability — moving fast without destroying yourself — the deep ocean is *permissive* and the surface is *restrictive*. A siphon that would shred its own nozzle lip at fifteen metres per second near the surface can run at four or five times that speed a kilometre down and never form a bubble.
+
+<DiagramFigure
+  src="/images/chapters/squidray-and-the-deep-ocean-design-space/fig-05-bubbles-that-eat-skin.webp"
+  alt="A split comparison of the same fin at two depths: near the surface a ragged sheet of vapour bubbles tears off its trailing edge and pits the skin, while at depth the same fin moves through smooth unbroken flow"
+  labels={[
+    { x: 62, y: 16, side: "right", label: "Cavitation bubble sheet", note: "Local pressure drops below seawater vapour pressure" },
+    { x: 52, y: 34, side: "left", label: "Pitted skin surface", note: "Gigapascal micro-jets tearing epithelial tissue" },
+    { x: 32, y: 68, side: "left", label: "Intact leading edge", note: "Identical geometry and stroke moving smoothly" },
+    { x: 68, y: 68, side: "right", label: "Laminar deep flow", note: "High hydrostatic pressure suppresses bubble formation" }
+  ]}
+  figNo="05"
+  caption="One fin, two depths, two different physics. Near the surface there is not enough ambient pressure to keep the water together at speed, and the collapsing voids pit the tissue. Deeper down, pressure holds the liquid intact and the same stroke runs clean."
+  tier="real_science"
+/>
+
+There is something satisfying about where the tsyong's high-speed apparatus is canonically supposed to live. The animal is described as aggregating at extreme depth along tectonic fractures, and rising to the reefs and the surface to hunt. If you were designing an animal around a turbine siphon, that is the itinerary you would choose: keep the expensive, cavitation-prone machinery in the pressure regime where it works, and bring it up only for short, decisive engagements. The breach at the start of this chapter — a several-tonne animal leaving the water entirely — is the one moment when the siphon is being run in the regime it likes least. It is a brief, extremely costly stunt, performed at the shallowest and most punishing point of the animal's range. Which is presumably why you see it at the end of a hunt, not during a commute.
+
+## Nothing down there is being crushed
+
+While we are dismantling intuitions about depth, there is a bigger one to take apart.
+
+The image everyone carries is of pressure as a vice. Descend far enough and something gives; the hull implodes, the body is squeezed flat. That picture is accurate for a submarine and completely wrong for an animal, and the reason is one number.
+
+<GlossaryTerm slug="hydrostatic-pressure">Hydrostatic pressure</GlossaryTerm> increases by about 0.1 megapascals — near enough one atmosphere — for every ten metres of descent. At the bottom of the deepest trench you are under roughly 1,100 atmospheres. It sounds unsurvivable. But water is very nearly incompressible: its compressibility is about 4.5 × 10⁻¹⁰ per pascal, which means that even 110 megapascals squeezes it by only a few per cent. Biological tissue, being mostly water, behaves the same way.
+
+And here is the part that matters. Pressure only deforms something if it is *unbalanced* — if there is more of it on one side of a wall than the other. A gas-filled cavity gives you that imbalance, which is why a lung or a swim bladder or a submarine hull is in danger, and why a diving mammal's chest collapses on the way down. An animal with no gas inside it presents pressure with nothing to push against. It is squeezed identically from every direction by a fluid it is mechanically indistinguishable from. There is no shear. There is nothing to fail.
+
+<PressureDoesNotCrush
+  caption="Four things deep water could do to a body, ranked by how much they actually matter. The famous one barely registers. The two molecular ones grind away steadily. The last one is a wall, and it arrives at a specific depth."
+/>
+
+What pressure does instead is much more interesting, and it happens at the scale of single molecules.
+
+Any chemical step whose transition state takes up more room than its ingredients gets pushed backwards by pressure — the relationship between the rate constant and pressure is governed by that activation volume, and an activation volume of a few tens of cubic centimetres per mole is enough to noticeably slow a reaction over a few kilometres of depth. Multimeric assembly suffers particularly: actin filaments polymerise reluctantly, enzyme subunits bind less readily, because pressure encourages water to organise around exposed polar residues that would otherwise be tucked away.
+
+Membranes have the mirror-image problem. Pressure compresses the oily interior of a lipid bilayer, driving it out of its fluid state toward something gel-like, which is disastrous for anything that needs to diffuse or be pumped across it. Deep-sea organisms answer with <GlossaryTerm slug="homeoviscous-adaptation">homeoviscous adaptation</GlossaryTerm>: they build membranes with a higher proportion of kinked, cis-unsaturated fatty acids, which pack badly on purpose and so preserve fluidity under squeeze. The membrane is retuned to its habitat depth, the way an instrument is retuned to a room.
+
+And proteins get chemical bodyguards. Deep-sea animals accumulate small zwitterionic molecules called <GlossaryTerm slug="piezolyte">piezolytes</GlossaryTerm>, principally trimethylamine N-oxide, which sit outside a protein's hydration shell in a way that thermodynamically favours the folded state. TMAO is what keeps deep enzymes working, and in marine bony fish its concentration in muscle rises almost linearly with depth — a correlation near 0.94, which for a biological trend is remarkable.
+
+That linearity is also a trap, and it produces the single most elegant result in deep-sea biology.
+
+A bony fish keeps its internal osmolarity well below the sea's — around 300 to 400 milliosmoles per kilogram against seawater's 1,100. It has room to add osmolytes, but only so much room. Follow the TMAO-versus-depth line down and it crosses 1,100 at somewhere between 8,200 and 8,400 metres. Past that crossing the fish would be saltier than the ocean, water would flood inwards, and osmoregulation would fail. So there is a predicted floor for bony fish — not a mechanical one, a biochemical one.
+
+The observed deepest bony fish sit right at it. Below about 8,400 metres you find snailfish no longer; the hadal trenches belong to amphipods and other animals that solved the problem differently. A protein-stabilising molecule quietly determines the shape of an entire planet's vertebrate distribution.
+
+<Callout variant="science" title="The useful shape of that argument">
+Notice what happened there. A limit that looks physical — how deep can a body go — turned out to be set by a completely different discipline than the one everybody assumed. Not structural engineering. Osmotic chemistry. This is a recurring pattern in biology: the constraint that actually binds is rarely the one that is easiest to picture.
+</Callout>
+
+For the tsyong, the specific TMAO ceiling need not apply — it is a limit on animals with dilute blood, and a marine invertebrate that is already isosmotic with seawater sidesteps it entirely, which is exactly why Earth's cephalopods and amphipods go deeper than fish do. What transfers is the reasoning, not the number: an animal moving between the reef and the abyssal fractures is not fighting a mechanical siege. It is running a molecular retuning problem in enzymes, membranes and osmolytes across a pressure range spanning two orders of magnitude, and doing it fast enough to keep functioning at both ends.
+
+## A skin that talks in a room with no light
+
+Canon gives the tsyong an integument stacked with millions of pigment cells and photogenic units — described as "bioluminescent chromatophores" — which it can drive at millisecond speed. In pack hunts the animals engage in rapid chromatic chattering, waves of light and pattern propagating across mantle and tentacles, which serve two purposes at once: keeping the search geometry coordinated among conspecifics and disorienting whatever is being hunted. During deep station-keeping the same skin goes the other way, contracting its pigment into a counter-shaded near-black that vanishes against the water.
+
+That is a lovely piece of design, and it contains a physical problem that the phrase "bioluminescent chromatophores" quietly papers over.
+
+An Earth cephalopod's skin is a three-tier optical stack, and it is worth knowing the tiers because they are genuinely different machines. On top sit the <GlossaryTerm slug="chromatophore">chromatophores</GlossaryTerm>: elastic sacs of pigment, each ringed by a dozen or two radial muscle fibres wired directly to motor neurons, so that contracting the muscles pulls the sac open into a coloured disc in a couple of hundred milliseconds. No hormones, no lag — this is skin under direct nervous control, which is why cuttlefish patterning looks less like blushing and more like a display driver. Beneath them are the <GlossaryTerm slug="iridophore">iridophores</GlossaryTerm>: Bragg reflectors built from stacked plates of reflectin protein alternating with fluid, tunable by phosphorylation, capable of shifting the reflected band across blue, green and polarised light. At the base are leucophores, broadband scatterers full of purine crystals that throw back whatever hits them as white.
+
+Every one of those is a *reflector*. None of them makes light. A chromatophore subtracts wavelengths from illumination that already exists; expand a pigment sac in the dark and you have changed nothing anyone can see.
+
+And light in the ocean is not a gentle gradient. It is a filter with a very narrow pass band. Downwelling irradiance decays exponentially with depth, and the decay constant depends strongly on wavelength: red and orange are gone within the first tens of metres, while a blue-green window near 470 to 490 nanometres decays some twenty times more slowly. So the sea does not just get darker with depth, it gets monochromatic first, then dark. Below two hundred metres there is not enough for photosynthesis. Below a thousand, in the <GlossaryTerm slug="aphotic-zone">aphotic zone</GlossaryTerm>, downwelling sunlight is effectively zero.
+
+<AbyssalSignalStack
+  caption="Three of the four layers can only work by reflecting light that arrived from somewhere else. Take the light away and they go mute together. The fourth layer does not care, which is why every deep-sea conversation is held in light the animals make themselves."
+/>
+
+So a pigment-based system is a shallow-water technology, and any animal signalling in the deep must be *emitting*. Which is what Earth's deep fauna do, in three recognisable idioms. There is <GlossaryTerm slug="counter-illumination">counter-illumination</GlossaryTerm>, in which ventral photophores emit blue-green light matched in intensity and angular spread to the faint downwelling glow, erasing the animal's silhouette from anything hunting from below — camouflage by addition rather than subtraction, and a genuinely strange idea the first time you meet it. There is ultra-black skin, in which melanin granules are packed into dense continuous layers engineered to forward-scatter, achieving total reflectance under 0.05 per cent, so that a predator's search beam comes back with nothing. And there is straightforward bioluminescent signalling: lures, conspecific display, and burglar-alarm flashes that light up an attacker in the hope of attracting something bigger.
+
+Read the tsyong's canonical behaviour through that lens and it splits cleanly in two. The chromatic chattering during a deep pack hunt has to be emissive — actual light production, propagating across the mantle. The counter-shaded dark grey and black of a stealth approach is the ultra-black strategy, and it is not a colour choice at all but an anti-detection surface. And the reflective pigment work, the part that is genuinely chromatophore rather than photophore, only earns its keep during the excursions into sunlit reef water. One animal, two optical regimes, switched by depth.
+
+There is one last twist worth mentioning, because it is one of the odder open problems in sensory biology. Most coleoid cephalopods have a single visual pigment, which by the usual logic makes them colour-blind — yet they match backgrounds with uncanny accuracy. The leading explanations are both slightly outrageous. One holds that they exploit chromatic aberration: because their uncorrected lenses focus different wavelengths at different distances, an off-axis U- or W-shaped pupil maximises the colour blur, and by racking the lens back and forth the animal can infer wavelength from *where* an edge comes into focus. The other holds that the skin itself sees, with opsins expressed directly in the dermal layers, letting patches of tissue read the local light field without consulting the eye. Neither has won. Both are more interesting than colour vision would have been.
+
+<DiagramFigure
+  src="/images/chapters/squidray-and-the-deep-ocean-design-space/fig-06-chatter-in-the-dark.webp"
+  alt="Several large squid-ray bodies in black water, bands of cyan and magenta light sweeping across their mantles in a coordinated wave, one animal further off answering with the same pattern"
+  labels={[
+    { x: 42, y: 56, side: "right", label: "Transverse light wave", note: "Active bioluminescent emission traveling along mantle" },
+    { x: 36, y: 68, side: "left", label: "Aphotic ocular array", note: "Large pupil aperture tuned to packmate wavelengths" },
+    { x: 76, y: 38, side: "right", label: "Synchronised flanker", note: "Coordinated pack geometry without voice or radio" },
+    { x: 23, y: 32, side: "left", label: "Disoriented prey", note: "Schooling fish blinded by shifting optical patterns" }
+  ]}
+  figNo="06"
+  caption="A pack conversation in total darkness. Because there is no ambient light to reflect, every one of these patterns is being generated, not borrowed — and the same display that coordinates the hunters is what disorients whatever they are converging on."
+  tier="inference"
+/>
+
+## The vent cannot pay for this animal
+
+Now the hard part, which is the arithmetic that canon does not do.
+
+The tsyong is repeatedly and specifically tied to hydrothermal vents. Pandorapedia has it congregating near vents on the ocean floor where food is abundant; the Visual Dictionary makes vent fields its primary deep foraging ground. The imagery is compelling — chimneys in the dark, thickets of tubeworms, a vast predator moving over them — and the underlying science is real and wonderful.
+
+Vents run on geochemistry instead of sunlight. Seawater circulates through fractured basalt near a magma chamber, comes back out at 350 to 400 degrees stripped of oxygen and loaded with reduced compounds, and <GlossaryTerm slug="chemolithoautotroph">chemolithoautotrophs</GlossaryTerm> harvest the chemical disequilibrium — oxidising hydrogen sulfide, methane, hydrogen or ferrous iron and using the energy to fix carbon dioxide into organic matter. The sulfide reaction alone releases nearly 800 kilojoules per mole. That is an entire primary-production economy with no photon anywhere in it, which is why the 1977 Galápagos Rift discovery reorganised how biologists think about where life can be.
+
+What grows on top of it is genuinely dense. *Riftia* tubeworms with no digestive tract at all, running sulfur-oxidising bacteria in an internal organ and using specialised haemoglobins to carry both oxygen and toxic sulfide at once. Mussels hosting two kinds of symbiont in their gill cells. A snail that armours its foot with iron sulfide. Shrimp farming bacteria in their gill chambers and reading the infrared glow of the chimneys with modified photoreceptors on their backs. Local carbon fixation rates of 0.1 to 2.0 kilograms per square metre per year — comparable to a coral reef or a rainforest.
+
+And then you ask how big the field is, and the whole thing falls over.
+
+An individual vent field covers between a few hundred square metres and a few hectares. Globally, all active venting adds up to under fifty square kilometres, which is well below a twentieth of a per cent of ocean primary production. Then apply <GlossaryTerm slug="trophic-efficiency">trophic efficiency</GlossaryTerm>: each step up a food chain passes on roughly a tenth of what it received. Bacteria to tubeworms to crabs to a top predator is four levels, so about a thousandth of the fixed carbon survives to the top. Multiply a small area by a thousandth and you have a budget measured in kilograms.
+
+Which is exactly what Earth's vents contain. The top resident predators at real hydrothermal fields are zoarcid eelpouts under a kilogram, bythograeid crabs under half of one, and *Vulcanoctopus hydrothermalis* at under two hundred grams. Not one large animal lives permanently at a vent, and now we can say why with a straight face rather than by observation: nothing large *could*.
+
+<VentEnergyBudget
+  caption="Move the sliders wherever you like — generous area, rainforest-grade productivity, an optimistic transfer efficiency. The number at the top stays small. This is not a Pandoran problem; it is what four factors of ten in a row do to any food chain."
+/>
+
+<DiagramFigure
+  src="/images/chapters/squidray-and-the-deep-ocean-design-space/fig-07-the-vent-field.webp"
+  alt="A hydrothermal vent field in darkness: mineral chimneys venting shimmering fluid, dense thickets of tubeworms and mussel beds around their bases, two large squid-ray silhouettes hanging in the water above"
+  labels={[
+    { x: 16, y: 38, side: "left", label: "Hydrothermal chimney", note: "Mineral spire venting 350°C reduced chemical fluid" },
+    { x: 32, y: 72, side: "left", label: "Chemosynthetic oasis", note: "Tubeworms and shell beds packing dense biomass" },
+    { x: 75, y: 64, side: "right", label: "Bare abyssal plain", note: "Empty sediment desert stretching beyond the field" },
+    { x: 78, y: 12, side: "left", label: "Hovering predators", note: "Apex migrators visiting a thermal landmark" }
+  ]}
+  figNo="07"
+  caption="Everything in this frame is real, including the density. Vent communities pack biomass at rainforest rates — over an area the size of a few tennis courts. The productivity is not the illusion. The extent is."
+  tier="canon"
+/>
+
+So either the canon is wrong or the reading of it is. And the reading is the thing that is wrong, because canon never actually claims the vents feed the animal. It says the tsyong dwells near them, that food is abundant there, and — crucially — that the animal undertakes broad vertical foraging excursions to epipelagic reef zones and open surface water, striking at *ilu* and schooling fish, competing with *akula*, and occasionally being eaten by *tulkun*. That is not the itinerary of a vent resident. That is the itinerary of a vertical migrator.
+
+Which resolves cleanly, and in a way that makes the animal more interesting rather than less. The vent is not a farm; it is a waypoint. It offers a reliable dense patch to raid, a warm place in cold water, a fixed landmark on an otherwise featureless plain, and shelter from anything that hunts by sunlight. But the calories come from the photic zone, where photosynthesis operates over the whole ocean surface instead of over a few hectares. The tsyong lives in the deep and eats in the light.
+
+<DiagramFigure
+  src="/images/chapters/squidray-and-the-deep-ocean-design-space/fig-08-the-water-column.webp"
+  alt="A vertical cross-section of the ocean from a sunlit reef at the top through progressively darker water to a vent field on the floor, with a squid-ray tracked at several points along a rising and falling path"
+  labels={[
+    { x: 58, y: 13, side: "right", label: "Sunlit reef strike", note: "Epipelagic hunting harvesting bulk oceanic calories" },
+    { x: 48, y: 32, side: "left", label: "Mesopelagic transit", note: "Descending through thermocline and light gradients" },
+    { x: 54, y: 66, side: "right", label: "Bathypelagic glide", note: "Low-cost wing cruising in the cold dark" },
+    { x: 24, y: 88, side: "left", label: "Abyssal vent refuge", note: "Geothermal oasis providing shelter and orientation" }
+  ]}
+  figNo="08"
+  caption="The commute that closes the budget. The vent supplies shelter, a landmark and an occasional dense meal; the sunlit surface supplies almost all of the calories. An animal this size at this depth is not a resident of either zone — it is a commuter between them."
+  tier="inference"
+/>
+
+<WhatThisMeans title="Energy supply, not toughness, sets the size of things">
+The instinct when asking whether a big animal could live somewhere is to check whether it could *survive* there — pressure, temperature, oxygen. Almost always the binding constraint is upstream of all that: how much energy arrives per square metre per year, over how many square metres, through how many trophic steps. Do that sum first and it will usually tell you the answer before any physiology gets involved. It is why the largest animals on Earth eat krill rather than each other, why apex predators are rare by arithmetic rather than by accident, and why a spectacular local abundance can still be unable to support anything large. Productivity is a rate. What matters is the rate times the area, divided by ten for every step up.
+</WhatThisMeans>
+
+## The engine has to be warm
+
+One thing in the canonical record is not a gap so much as a silence, and it is the most consequential silence of the lot. Nowhere is it stated whether the tsyong is an ectotherm, a poikilothermic gigantotherm, or a regionally endothermic animal. Body temperature, metabolism, thermal biology: the Pandorapedia entry covers the siphon system, the beak, the chromatophores, the *kuru* and the vent habitat, and says nothing about heat at all.
+
+So it has to be reasoned out, and the reasoning is unusually clean.
+
+Rate processes in an ectotherm scale with temperature through a coefficient measured across a ten-degree interval — the <GlossaryTerm slug="q10-temperature-coefficient">Q₁₀ coefficient</GlossaryTerm> — and for marine ectotherms it runs about 2.0 to 2.5. Take an animal from 25-degree surface water to the 2 to 4 degrees of the deep and its metabolic rate drops by a factor of four to six. That is the number usually quoted, and quoted as though it were a speed penalty.
+
+It is not, and the difference is the whole argument. Sustained swimming power scales with the cube of speed, so a fivefold loss of power is only about a 1.7-fold loss of speed. Cold water makes a predator meaningfully slower but not absurdly so.
+
+Timing is where it actually bites. Muscle twitch frequency and neural conduction scale with rate *directly*, not with its cube root. A fivefold metabolic penalty is a fivefold penalty on how fast the animal can change what it is doing — and a coordinated pack strike is a timing problem long before it is a speed problem. Canon has these animals executing collective pincer movements and targeted ambushes with no visible leader, which means every individual has to read the geometry and commit inside the same fraction of a second, against prey that is manoeuvring. Half a second of latency does not make that harder. It makes it a different behaviour: a chase instead of an ambush.
+
+<ThermalScopeDial
+  caption="Cold water charges in two currencies and only one of them is obvious. Drag the heat-retention slider and watch the latency needle come back through its threshold long before anything dramatic happens to the speed."
+/>
+
+There is a further reason to expect a cold predator to be slow, and it is one of the best pieces of reasoning in deep-sea biology. Childress and Seibel's visual-interactions hypothesis observed that metabolic rate falls with depth in pelagic animals faster than temperature alone explains, and proposed that the cause is optical rather than thermal. In sunlit water you can see a predator coming from ten to fifty metres away, so there is intense selection for burst capability. In the dark, detection range collapses to metres or centimetres, sustained pursuit stops paying, and sit-and-wait ambush with low muscle protein content wins instead. The clinching evidence is a control: non-visual animals like chaetognaths and jellies show no depth-related decline in mass-specific metabolic rate at all. The decline is not about the cold. It is about what there is to chase.
+
+Which makes the tsyong a deliberate exception to a well-supported rule, and exceptions to that rule need machinery. Earth's answer, arrived at independently by tunas and by lamnid sharks, is <GlossaryTerm slug="regional-endothermy">regional endothermy</GlossaryTerm>: don't heat the whole body, just the parts whose speed matters. The mechanism is a <GlossaryTerm slug="rete-mirabile">rete mirabile</GlossaryTerm>, a counter-current bundle of fine arteries and veins running against each other so that cold arterial blood heading into the swimming muscle picks up heat from warm venous blood heading out. Metabolic heat that would have been dumped through the gills is intercepted and recycled, holding red muscle and braincase 5 to 15 degrees above ambient. A mako shark in cold water has warm eyes, a warm brain and a warm engine, inside a body otherwise at sea temperature.
+
+<DiagramFigure
+  src="/images/chapters/squidray-and-the-deep-ocean-design-space/fig-09-the-warm-core.webp"
+  alt="A cutaway of a large marine predator showing interleaved bundles of fine arteries and veins wrapping the deep swimming muscle and the braincase, warm tones in the core fading to cold blue at the body surface"
+  labels={[
+    { x: 29, y: 48, side: "left", label: "Warmed braincase", note: "Maintaining millisecond neural latency for pack ambushes" },
+    { x: 58, y: 50, side: "right", label: "Red muscle core", note: "Deep swimming engine held 5–15°C above ambient water" },
+    { x: 52, y: 38, side: "right", label: "Rete mirabile plexus", note: "Counter-current capillary beds trapping metabolic heat" },
+    { x: 75, y: 22, side: "right", label: "Cold outer mantle", note: "Peripheral tissues equilibrating with near-freezing sea" }
+  ]}
+  figNo="09"
+  caption="Not a warm animal — a warm engine inside a cold one. Counter-current vessel bundles hand heat from outgoing venous blood back to incoming arterial blood, so the muscle and nervous system that need speed run 5 to 15 degrees above the water while the rest of the body does not bother. Canon never grants the tsyong this; the behaviour canon does grant is hard to explain without it."
+  tier="inference"
+/>
+
+<Callout variant="warning" title="Where this reading stops">
+This is inference, not canon, and the honest version has a caveat attached. No cephalopod on Earth has evolved retia mirabilia — the trick appears in bony fishes and sharks, animals with a very different circulatory architecture, and a mantle-and-gill layout may simply not support it. So the argument establishes a *requirement*, not a mechanism: something must be keeping the tsyong's swimming muscle and nervous system warm enough to strike in concert in near-freezing water, and counter-current heat exchange is the only solution Earth has produced. Whether Pandoran physiology reaches it the same way, or by some route with no terrestrial analogue, canon does not say and this chapter will not invent.
+</Callout>
+
+## Honest edges
+
+<ConfidenceMeter
+  classification={{ canon_pct: 14, inference_pct: 16, speculation_pct: 5, real_science_pct: 65 }}
+/>
+
+The secure canon here is anatomical and behavioural. *Fire and Ash* and its companion literature establish the taxonomy, the four-eyed optical arrangement, the horizontally articulating beak strong enough to breach RDA submersible canopies, the twelve-tentacle cluster with its bifurcating grasping digits, the paired turbine siphons and the undulating mantle wings, the pigment-and-photophore integument, the amphibious crawl on a mucus layer, the *kuru* and the *tsaheylu* bond, the vent association, and the vertical foraging excursions. The Metkayina regard for the animal as a dark spirit, the refusal to domesticate it, and the *Fire and Ash* sequence in which Eywa's mediation through Kiri directs swarms against RDA maritime assets — all canon.
+
+The quantities are not. Length between eight and fourteen metres and mass between two and six tonnes are visual scaling estimates from footage, not published figures; depth range beyond "bathyal to abyssal" is community extrapolation; the proportional split between flapping and jetting during sustained transit is unquantified; the geochemistry of Pandoran vent fluid is unmeasured. The numbers this chapter runs through its models are Earth numbers with Pandoran labels, and the conclusions they support are structural — that jetting cannot scale, that depth relaxes the cavitation ceiling, that four trophic steps over a few hectares cannot feed a multi-tonne pack. Those hold regardless of whether the animal turns out to be six metres or fourteen.
+
+The inference share is higher than in neighbouring chapters, and one argument is responsible for most of it: the case for regional endothermy. Canon is silent on metabolic class, so the chapter reasons from the behaviour canon does show to the physiology that behaviour requires. That is a legitimate move and it is also the most reversible claim here — a single line in a future companion volume could overturn it.
+
+The real-science share is the largest because these are among the best-measured systems in marine biology: jet-flow kinematics from flume respirometry, cavitation ceilings from hydrodynamic modelling against observed burst speeds, TMAO gradients from hadal sampling, vent productivity from decades of submersible work. Even there the confidence varies. That pulsed jetting is expensive and that cavitation limits are depth-dependent is settled. Whether the specific microstructure of cephalopod bioluminescence is luciferase-based, bacterial or something else is not settled even for Earth animals, let alone this one.
+
+<OpenQuestions
+  title="What the dark has not given up"
+  items={[
+    {
+      question: "Is the tsyong cold-blooded or does it hold heat?",
+      answer: "Canon does not say, and the omission matters more than any other. Its capacity to move between near-freezing abyssal water and high-speed surface pursuit without thermal collapse is the animal's central physiological unknown. This chapter argues from Q₁₀ scaling and pack-strike timing that some heat-retention mechanism is required, but no canonical source confirms one.",
+    },
+    {
+      question: "How large is it, actually?",
+      answer: "Visual scaling against ilu and Na'vi riders suggests eight to fourteen metres and two to six tonnes, but no length, displacement or mass figure has been published. Since almost every energetic and structural argument here scales with mass, the range matters — though none of the conclusions flips inside it.",
+    },
+    {
+      question: "How is the duty cycle actually divided?",
+      answer: "Both propulsion modes are established, but nothing quantifies how much of a long transit runs on the wings versus the siphons. That ratio is the single number that would settle whether the animal's energy budget is comfortable or marginal.",
+    },
+    {
+      question: "What is coming out of Pandora's vents?",
+      answer: "Vent associations are confirmed, but sulfide concentration, methane partial pressure and exit temperature are all unmeasured. Without them the chemosynthetic productivity of a Pandoran field cannot be estimated, only assumed by analogy — and Pandora's stronger tidal heating could plausibly push it well past Earth's rates.",
+    },
+    {
+      question: "How does the skin make light?",
+      answer: "Studio sources say 'bioluminescent chromatophores' without resolving whether that means pigment-screened photophores, endogenous luciferin-luciferase organelles, or symbiotic photobacteria in the dermis. All three exist on Earth, they behave differently under pressure and temperature, and the choice would change what the animal can say and how fast.",
+    },
+  ]}
+/>
+
+## What the water allows
+
+Go back to the breach.
+
+The animal is still coming out of black water into dim air, wings spread, tentacles trailing, and it is still an alarming thing to have happen near your boat. But the frame reads differently now. Nothing in it is arbitrary. The wings are there because a body this size has to travel cheaply and lift-based flapping is the only affordable way to do it. The siphons are there because catching things requires acceleration that no wing can deliver, and they are usable at all because the animal keeps them in water deep enough that the flow does not tear. The dark skin is not a colour; it is an absence of return signal. The light show is not decoration; it is the only channel available once reflection stops working. The vent it came from is not a larder, it is an address. And whatever is keeping its muscle warm enough to strike in concert at four degrees is doing the quiet work that makes all of the rest of it possible.
+
+That is what a design space is. Not a list of what an animal has, but a set of prices the environment charges, and a body that has settled somewhere sensible against every one of them. Seawater sets those prices with four properties: it is dense, so bodies can weigh nothing but still mass everything; it is opaque, so vision fails and information has to be manufactured; it is heavy, so pressure rises without limit and speed gets *cheaper* as you descend; and it is mostly unproductive, so the calories are thin and spread out and have to be commuted to.
+
+Run those four constraints and much of what looks like alien invention turns out to be convergence — the envelope showing through. Which is the useful thing to carry away from an animal that does not exist. When you meet a body you have never seen before, in an ocean or a fossil bed or a description in a companion volume, the productive question is not what it is. It is what it was charged, and what it evidently decided to pay.
+
+<RelatedChapters
+  slugs={[
+    "pandoras-ocean",
+    "tulkun-not-quite-whales",
+    "the-reef-as-substrate",
+    "bodies-built-for-water",
+  ]}
+/>
+
+<SourceList />

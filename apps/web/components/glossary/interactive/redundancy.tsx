@@ -43,10 +43,38 @@ export default function Redundancy() {
       <div className="absolute inset-0">
         <svg viewBox="0 0 100 100" className="h-full w-full" role="img" aria-label={t("title")}>
           {/* source / sink */}
-          <circle cx="16" cy="52" r="7" fill="var(--surface)" stroke="var(--cyan)" strokeWidth={1.2} />
-          <circle cx="84" cy="52" r="7" fill="var(--surface)" stroke="var(--cyan)" strokeWidth={1.2} />
-          <text x="16" y="53.5" textAnchor="middle" style={{ fontSize: 3.2, fontFamily: "monospace", fill: "var(--cyan)" }}>S</text>
-          <text x="84" y="53.5" textAnchor="middle" style={{ fontSize: 3.2, fontFamily: "monospace", fill: "var(--cyan)" }}>T</text>
+          <circle
+            cx="16"
+            cy="52"
+            r="7"
+            fill="var(--surface)"
+            stroke="var(--cyan)"
+            strokeWidth={1.2}
+          />
+          <circle
+            cx="84"
+            cy="52"
+            r="7"
+            fill="var(--surface)"
+            stroke="var(--cyan)"
+            strokeWidth={1.2}
+          />
+          <text
+            x="16"
+            y="53.5"
+            textAnchor="middle"
+            style={{ fontSize: 3.2, fontFamily: "monospace", fill: "var(--cyan)" }}
+          >
+            S
+          </text>
+          <text
+            x="84"
+            y="53.5"
+            textAnchor="middle"
+            style={{ fontSize: 3.2, fontFamily: "monospace", fill: "var(--cyan)" }}
+          >
+            T
+          </text>
           {paths.map((p) => (
             <g key={p.id}>
               <path
@@ -58,7 +86,14 @@ export default function Redundancy() {
                 strokeDasharray={p.alive ? undefined : "2 1.5"}
               />
               {!p.alive && (
-                <text x="50" y={p.y + 1} textAnchor="middle" style={{ fontSize: 3, fontFamily: "monospace", fill: "var(--magenta)" }}>×</text>
+                <text
+                  x="50"
+                  y={p.y + 1}
+                  textAnchor="middle"
+                  style={{ fontSize: 3, fontFamily: "monospace", fill: "var(--magenta)" }}
+                >
+                  ×
+                </text>
               )}
             </g>
           ))}

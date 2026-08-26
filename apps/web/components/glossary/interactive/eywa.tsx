@@ -67,7 +67,7 @@ function buildEdges(nodes: Node[]): Edge[] {
     const hi = byLayer.get(L + 1) ?? [];
     for (const a of lo) {
       let best = hi[0];
-      let bestD = Infinity;
+      let bestD = Number.POSITIVE_INFINITY;
       for (const b of hi) {
         const d = (a.x - b.x) ** 2 + (a.y - b.y) ** 2;
         if (d < bestD) {
@@ -242,6 +242,7 @@ export default function Eywa() {
                 key={n.id}
                 onClick={() => touch(n)}
                 style={{ cursor: "pointer" }}
+                // biome-ignore lint/a11y/useSemanticElements: an SVG <g> cannot be a native <button>; button role is the correct ARIA mapping for a clickable network node
                 role="button"
                 tabIndex={0}
                 onKeyDown={(ev) => {
@@ -284,12 +285,7 @@ export default function Eywa() {
             unit={t("synapses")}
             accent="foreground"
           />
-          <Readout
-            label={t("eywaNet")}
-            value={eywaLinks}
-            unit={t("connections")}
-            accent="cyan"
-          />
+          <Readout label={t("eywaNet")} value={eywaLinks} unit={t("connections")} accent="cyan" />
           <Readout label={t("nodes")} value={lit.size} accent="teal" />
         </div>
         {/* keep tick referenced so RAF re-renders breathe */}

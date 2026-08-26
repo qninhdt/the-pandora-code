@@ -1,0 +1,37 @@
+id: senolytic
+label:
+  vi: Thuốc diệt tế bào lão hóa
+  en: Senolytic
+definition:
+  vi: >-
+    Một phân tử được thiết kế để tìm và giết riêng các tế bào đã lão hóa, chừa lại tế bào lành. Cơ
+    chế là tắt đúng những protein sinh tồn mà tế bào lão hóa dựa vào để không chết, khiến chúng tự
+    kết liễu. Ở chuột già, các cặp thuốc như dasatinib cộng quercetin, hay flavonoid fisetin, làm
+    giảm gánh nặng tế bào lão hóa, cải thiện chức năng tim, sức bền và độ mềm mạch máu, kéo dài tuổi
+    thọ trung vị chừng một phần mười. Trên người, các thử nghiệm giai đoạn đầu ở bệnh xơ phổi và
+    bệnh thận do tiểu đường cho thấy dấu ấn viêm giảm và chức năng nhích lên, nhưng chưa có thuốc
+    nào chứng minh được là làm chậm chính tốc độ lão hóa của con người. Đây là hướng đi hứa hẹn nhất
+    của lão khoa học, không phải một phép chữa.
+  en: >-
+    A molecule designed to find and kill senescent cells specifically, sparing healthy ones. It
+    works by switching off the very survival proteins a senescent cell relies on to avoid death,
+    letting it finish itself off. In aged mice, drug pairs such as dasatinib with quercetin, or the
+    flavonoid fisetin, reduce senescent-cell burden, improve cardiac function, endurance and vascular
+    compliance, and extend median lifespan by roughly a tenth. In humans, early trials in pulmonary
+    fibrosis and diabetic kidney disease show falling inflammatory markers and modest functional
+    gains, but no senolytic has been shown to slow the underlying rate of human aging. This is
+    geroscience's most promising direction, not a cure.
+see_also:
+  - cellular-senescence
+  - hallmarks-of-aging
+  - gompertz-makeham-law
+  - heterochronic-parabiosis
+category: concept
+tags:
+  - pharmacology
+  - physiology
+cover_prompt: >-
+  A painterly microscopic plate of a tissue field in which several swollen pale cells are collapsing
+  inward and dissolving while the slim healthy cells around them stay untouched and intact, faint
+  magenta dissolution glow against cool teal tissue and dark indigo background, painterly naturalist
+  plate, no text, no labels.

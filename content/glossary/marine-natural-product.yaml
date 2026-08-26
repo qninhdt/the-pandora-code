@@ -1,0 +1,37 @@
+id: marine-natural-product
+label:
+  vi: Hợp chất tự nhiên biển
+  en: Marine natural product
+definition:
+  vi: >-
+    Phân tử do sinh vật biển tạo ra, thường là để tự vệ hoặc để giành chỗ, và vì thế mang cấu trúc
+    hóa học phức tạp hơn hẳn những gì phòng thí nghiệm nghĩ ra được. Biển đã cho ngành dược một số
+    thuốc thật: cytarabine cho bệnh bạch cầu, khởi nguồn từ một loài bọt biển vùng Caribe;
+    ziconotide cho đau thần kinh nặng, từ nọc ốc cối; eribulin và trabectedin cho ung thư. Nhưng tỉ
+    lệ thành công thấp đến mức khó tin — dưới một phần vạn hợp chất được sàng lọc trở thành thuốc
+    được phê duyệt. Điểm quan trọng hơn: không một thuốc nào trong số đó cuối cùng còn được lấy từ
+    sinh vật hoang dã. Hễ biết được cấu trúc phân tử, hóa học tổng hợp hay lên men luôn rẻ hơn và ổn
+    định hơn việc đi thu hái.
+  en: >-
+    A molecule made by a marine organism, usually for defence or to hold territory, and consequently
+    carrying chemical structures far more intricate than a laboratory would think to design. The sea
+    has given medicine some real drugs: cytarabine for leukaemia, traced to a Caribbean sponge;
+    ziconotide for severe nerve pain, from cone snail venom; eribulin and trabectedin for cancer. But
+    the success rate is barely credible — fewer than one in ten thousand screened compounds becomes an
+    approved drug. The more important point: none of those drugs is still obtained from wild
+    organisms. Once the molecular structure is known, synthesis or fermentation is always cheaper and
+    steadier than going out to collect.
+see_also:
+  - total-synthesis
+  - bioprospecting
+  - spermaceti
+category: concept
+tags:
+  - pharmacology
+  - oceanography
+  - chemistry
+cover_prompt: >-
+  A painterly naturalist plate of three marine organisms arranged as specimens - an encrusting
+  sponge, a patterned cone snail shell, and a branching colonial growth - each with a single small
+  luminous droplet drawn beside it, the droplets far smaller than the organisms, cool teal specimens
+  with faint amber droplet glow on dark indigo, painterly naturalist plate, no text, no labels.

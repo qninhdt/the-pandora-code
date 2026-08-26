@@ -25,17 +25,52 @@ export default function Epiphyte() {
       caption={<span className="text-teal">{t("parasite")}</span>}
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {/* host trunk */}
-          <rect x="46" y="16" width="8" height="62" fill="var(--surface)" stroke="var(--cyan)" strokeWidth="0.8" rx="1" />
+          <rect
+            x="46"
+            y="16"
+            width="8"
+            height="62"
+            fill="var(--surface)"
+            stroke="var(--cyan)"
+            strokeWidth="0.8"
+            rx="1"
+          />
           <ellipse cx="50" cy="14" rx="20" ry="10" fill="var(--teal)" opacity={0.35} />
           <rect x="20" y="78" width="60" height="6" fill="var(--surface)" opacity={0.6} />
           {/* no-parasitism mark: dashed boundary, no arrow into xylem */}
-          <line x1="54" y1={y} x2="62" y2={y} stroke="var(--border-strong)" strokeWidth="0.5" strokeDasharray="1 1" />
+          <line
+            x1="54"
+            y1={y}
+            x2="62"
+            y2={y}
+            stroke="var(--border-strong)"
+            strokeWidth="0.5"
+            strokeDasharray="1 1"
+          />
           {/* epiphyte body */}
           <g>
-            <circle cx="60" cy={y} r="5" fill="var(--magenta)" opacity={0.45} style={{ filter: "drop-shadow(0 0 4px var(--magenta))" }} />
-            <path d={`M60 ${y} L66 ${y - 6} M60 ${y} L68 ${y - 1} M60 ${y} L66 ${y + 5}`} stroke="var(--teal)" strokeWidth="0.9" fill="none" />
+            <circle
+              cx="60"
+              cy={y}
+              r="5"
+              fill="var(--magenta)"
+              opacity={0.45}
+              style={{ filter: "drop-shadow(0 0 4px var(--magenta))" }}
+            />
+            <path
+              d={`M60 ${y} L66 ${y - 6} M60 ${y} L68 ${y - 1} M60 ${y} L66 ${y + 5}`}
+              stroke="var(--teal)"
+              strokeWidth="0.9"
+              fill="none"
+            />
             {/* water droplets from air */}
             {[0, 1, 2].map((i) => (
               <circle
@@ -48,9 +83,21 @@ export default function Epiphyte() {
               />
             ))}
             {/* debris catch */}
-            <rect x="57" y={y + 4} width="8" height="2" fill="var(--amber)" opacity={0.3 + debris * 0.5} rx="0.5" />
+            <rect
+              x="57"
+              y={y + 4}
+              width="8"
+              height="2"
+              fill="var(--amber)"
+              opacity={0.3 + debris * 0.5}
+              rx="0.5"
+            />
           </g>
-          <text x="72" y={y + 1} style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--magenta)" }}>
+          <text
+            x="72"
+            y={y + 1}
+            style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--magenta)" }}
+          >
             {t("host")}
           </text>
         </svg>

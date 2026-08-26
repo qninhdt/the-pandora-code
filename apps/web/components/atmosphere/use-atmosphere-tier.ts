@@ -1,6 +1,6 @@
 "use client";
 
-import { useReducedMotionSafe } from "@/components/motion/use-reduced-motion-safe";
+import { useReducedMotionForScene } from "@/components/motion/use-reduced-motion-safe";
 import { useEffect, useState } from "react";
 
 export type AtmosphereTier = "pending" | "webgl" | "fallback";
@@ -15,7 +15,7 @@ interface TierState {
 // `pending` (renders nothing) so neither the canvas nor the poster flashes
 // before the device decision is made on mount - avoids the F5 image flash.
 export function useAtmosphereTier(): TierState {
-  const reduced = useReducedMotionSafe();
+  const reduced = useReducedMotionForScene();
   const [state, setState] = useState<TierState>({
     tier: "pending",
     weaker: false,

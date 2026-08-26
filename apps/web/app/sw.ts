@@ -1,16 +1,12 @@
 /// <reference lib="webworker" />
 
-import {
-  CacheFirst,
-  NetworkFirst,
-  NetworkOnly,
-  type RuntimeCaching,
-  Serwist,
-  StaleWhileRevalidate,
-} from "serwist";
+import { NetworkOnly, type RuntimeCaching, Serwist } from "serwist";
 import {
   OFFLINE_INDEX_CACHE,
   OFFLINE_SHELL_CACHE,
+  OPTIMIZED_IMAGE_CACHE,
+  STATIC_ASSET_CACHE,
+  STATIC_IMAGE_CACHE,
   chapterCacheName,
   isOwnedOfflineCache,
   stagingCacheName,
@@ -46,6 +42,9 @@ declare const self: ServiceWorkerGlobalScope & {
 const MAX_ASSET_BYTES = 80 * 1024 * 1024;
 const MAX_CHAPTER_BYTES = 80 * 1024 * 1024;
 const MAX_ASSETS = 128;
+const OFFLINE_FALLBACK_URL = "/offline.html";
+const SHELL_LOCALES: OfflineLocale[] = ["en", "vi"];
+const SHELL_PATHS = ["", "/chapters", "/glossary", "/timeline", "/author", "/offline"];
 const manifestCache = new Map<OfflineLocale, Promise<OfflineManifestFile>>();
 const activeOperations = new Map<
   string,
@@ -313,6 +312,58 @@ async function forEachConcurrent<T>(
 
 function post(port: MessagePort | undefined, message: OfflineResponse): void {
   port?.postMessage(message);
+}
+
+// ─────────────────────────────────────────────────────────────────────
+// Shell precaching
+//
+// The worker installs on a reader's FIRST visit but does not control that page
+// (skipWaiting/clientsClaim are off so a running reader is never swapped
+// mid-session). Nothing the first page loads therefore passes through a fetch
+// handler, and the landing page — the one a reader is most likely to reopen —
+// would stay uncached until they happened to visit it a second time. That is
+// what made the site look entirely offline-hostile: the very first URL always
+// missed. So the install step fetches the navigation shell itself, for both
+// locales, plus the build assets those documents reference.
+// ─────────────────────────────────────────────────────────────────────
+
+function shellUrls(): string[] {
+  return SHELL_LOCALES.flatMap((locale) => SHELL_PATHS.map((path) => `/${locale}${path}`));
+}
+
+/** Cache one shell document plus the /_next/static bundle it references. */
+async function precacheShellDocument(cache: Cache, path: string): Promise<void> {
+  const url = new URL(path, self.location.origin);
+  const response = await fetch(new Request(url.href, { credentials: "omit", cache: "no-store" }));
+  if (!response.ok || response.redirected || response.type !== "basic") return;
+  await cache.put(new Request(url.href, { credentials: "omit" }), response.clone());
+
+  // Build assets are content-hashed and shared across routes, so they live in
+  // the long-lived static cache rather than being duplicated per document.
+  const html = await response.text();
+  const staticCache = await caches.open(STATIC_ASSET_CACHE);
+  const assets = new Set<string>();
+  for (const match of html.matchAll(/(?:src|href)=["'](\/_next\/static\/[^"']+)["']/gi)) {
+    assets.add(decodeHtmlAttribute(match[1]));
+  }
+  await forEachConcurrent([...assets], 6, async (asset) => {
+    const assetUrl = originUrl(asset);
+    if (!assetUrl || (await staticCache.match(assetUrl.href))) return;
+    const assetResponse = await fetch(
+      new Request(assetUrl.href, { credentials: "omit", cache: "no-store" }),
+    ).catch(() => null);
+    if (assetResponse?.ok && !assetResponse.redirected && assetResponse.type === "basic") {
+      await staticCache.put(assetUrl.href, assetResponse);
+    }
+  });
+}
+
+/** Warm the navigation shell. Individual failures must not fail the install. */
+async function precacheShell(): Promise<void> {
+  const cache = await caches.open(OFFLINE_SHELL_CACHE);
+  await forEachConcurrent(shellUrls(), 4, async (path) => {
+    await precacheShellDocument(cache, path).catch(() => undefined);
+  });
 }
 
 async function downloadChapter(
@@ -616,8 +667,105 @@ async function handleRequest(
   };
 }
 
+// ─────────────────────────────────────────────────────────────────────
+// Runtime routing
+//
+// A downloaded chapter stores its figures in its own content-hashed cache, so a
+// plain per-route cache lookup misses them: `/images/chapters/x/fig-01.webp`
+// lives in `pandora-offline:chapter:...`, not in the shared image cache. Every
+// asset handler therefore searches all caches we own before giving up, and the
+// router-level catch handler turns an unreachable document into the offline
+// page instead of a browser connection error.
+// ─────────────────────────────────────────────────────────────────────
+
+/** Look for a stored copy of this request in every cache this worker owns. */
+async function matchOwnedCaches(
+  request: Request,
+  options?: CacheQueryOptions,
+): Promise<Response | undefined> {
+  for (const name of (await caches.keys()).filter(isOwnedOfflineCache)) {
+    const hit = await (await caches.open(name)).match(request, options);
+    if (hit) return hit;
+  }
+  return undefined;
+}
+
+/** Cache-first, but read across caches and write to one. */
+function cacheFirstAcrossCaches(cacheName: string) {
+  return async ({ request }: { request: Request }): Promise<Response> => {
+    const cached = await matchOwnedCaches(request);
+    if (cached) return cached;
+    const response = await fetch(request);
+    if (response.ok && !response.redirected && response.type === "basic") {
+      await (await caches.open(cacheName)).put(request, response.clone());
+    }
+    return response;
+  };
+}
+
+/**
+ * The optimizer keys a response by width and quality, and `next/image` emits a
+ * srcset the browser picks from by device pixel ratio. A chapter download only
+ * stores the variants named in the served HTML, so a reader on a different DPR
+ * asks for a width that was never cached. Any stored variant of the same source
+ * image is a correct picture, so accept one rather than showing a broken image.
+ */
+async function matchOptimizedImage(url: URL): Promise<Response | undefined> {
+  const source = url.searchParams.get("url");
+  if (!source) return undefined;
+  for (const name of (await caches.keys()).filter(isOwnedOfflineCache)) {
+    const cache = await caches.open(name);
+    for (const key of await cache.keys()) {
+      const keyUrl = new URL(key.url);
+      if (keyUrl.pathname !== "/_next/image") continue;
+      if (keyUrl.searchParams.get("url") !== source) continue;
+      const hit = await cache.match(key);
+      if (hit) return hit;
+    }
+  }
+  return undefined;
+}
+
+function optimizedImageHandler() {
+  return async ({ request, url }: { request: Request; url: URL }): Promise<Response> => {
+    const exact = await matchOwnedCaches(request);
+    if (exact) return exact;
+    try {
+      const response = await fetch(request);
+      if (response.ok && !response.redirected && response.type === "basic") {
+        await (await caches.open(OPTIMIZED_IMAGE_CACHE)).put(request, response.clone());
+      }
+      return response;
+    } catch (error) {
+      const variant = await matchOptimizedImage(url);
+      if (variant) return variant;
+      throw error;
+    }
+  };
+}
+
+/** Network-first for content that can change, with a cross-cache read on failure. */
+function networkFirstAcrossCaches(cacheName: string) {
+  return async ({ request }: { request: Request }): Promise<Response> => {
+    try {
+      const response = await fetch(request);
+      if (response.ok && !response.redirected && response.type === "basic") {
+        await (await caches.open(cacheName)).put(request, response.clone());
+      }
+      return response;
+    } catch (error) {
+      const cached = await matchOwnedCaches(request);
+      if (cached) return cached;
+      throw error;
+    }
+  };
+}
+
 const runtimeCaching: RuntimeCaching[] = [
   {
+    // RSC payloads are never cached: a stale flight response would desync the
+    // router. Offline these fail fast, which makes App Router fall back to a
+    // hard navigation the worker can answer from cache.
     matcher: ({ request, sameOrigin }) =>
       sameOrigin &&
       (request.headers.get("RSC") === "1" || new URL(request.url).searchParams.has("_rsc")),
@@ -626,19 +774,19 @@ const runtimeCaching: RuntimeCaching[] = [
   {
     matcher: ({ url, sameOrigin }) =>
       sameOrigin && /^\/_next\/static\/.+\.(?:js|css|woff2?)$/i.test(url.pathname),
-    handler: new CacheFirst({ cacheName: "pandora-next-static-v1" }),
+    handler: cacheFirstAcrossCaches(STATIC_ASSET_CACHE),
   },
   {
     matcher: ({ url, sameOrigin }) => sameOrigin && url.pathname === "/_next/image",
-    handler: new CacheFirst({ cacheName: "pandora-next-images-v1" }),
+    handler: optimizedImageHandler(),
   },
   {
     matcher: ({ url, sameOrigin }) => sameOrigin && url.pathname.startsWith("/search/"),
-    handler: new NetworkFirst({ cacheName: OFFLINE_INDEX_CACHE }),
+    handler: networkFirstAcrossCaches(OFFLINE_INDEX_CACHE),
   },
   {
     matcher: ({ url, sameOrigin }) => sameOrigin && url.pathname.startsWith("/images/"),
-    handler: new StaleWhileRevalidate({ cacheName: "pandora-static-images-v1" }),
+    handler: cacheFirstAcrossCaches(STATIC_IMAGE_CACHE),
   },
 ];
 
@@ -647,7 +795,6 @@ const serwist = new Serwist({
   skipWaiting: false,
   clientsClaim: false,
   runtimeCaching,
-  fallbacks: { entries: [{ url: "/offline.html" }] },
 });
 
 serwist.registerCapture(
@@ -659,24 +806,71 @@ serwist.registerCapture(
   async ({ request, url }) => {
     const [, localeValue, , slugValue] = url.pathname.split("/");
     if (!isOfflineLocale(localeValue) || !slugValue || !isSafeSlug(slugValue))
-      return fetch(request);
+      return navigateOrShell(request, url);
     const record = await getChapterRecord(offlineRecordId(localeValue, slugValue));
     if (record?.status === "ready" && record.cacheName) {
       const cleanRequest = new Request(`${url.origin}${url.pathname}`, { method: "GET" });
       const cached = await (await caches.open(record.cacheName)).match(cleanRequest, {
         ignoreSearch: true,
       });
+      // A downloaded chapter is authoritative offline and cheap online: serving
+      // it from cache is what "available offline" is supposed to mean.
       if (cached) return cached;
     }
-    return fetch(request);
+    return navigateOrShell(request, url);
   },
 );
 
 serwist.registerCapture(
   ({ request, sameOrigin }) =>
     sameOrigin && request.mode === "navigate" && request.headers.get("RSC") !== "1",
-  new NetworkFirst({ cacheName: OFFLINE_SHELL_CACHE }),
+  async ({ request, url }) => navigateOrShell(request, url),
 );
+
+/** Fetch a document, falling back to the precached shell copy of that URL. */
+async function navigateOrShell(request: Request, url: URL): Promise<Response> {
+  const cleanRequest = new Request(`${url.origin}${url.pathname}`, { method: "GET" });
+  try {
+    const response = await fetch(request);
+    if (response.ok && !response.redirected && response.type === "basic") {
+      await (await caches.open(OFFLINE_SHELL_CACHE)).put(cleanRequest, response.clone());
+    }
+    return response;
+  } catch (error) {
+    const cached = await matchOwnedCaches(cleanRequest, { ignoreSearch: true });
+    if (cached) return cached;
+    // The PWA's start_url is the bare origin, which online is a locale
+    // redirect. Offline there is nothing to redirect to, so answer with a
+    // cached locale home rather than the offline notice.
+    if (url.pathname === "/" || url.pathname === "") {
+      for (const locale of SHELL_LOCALES) {
+        const home = await matchOwnedCaches(
+          new Request(`${url.origin}/${locale}`, { method: "GET" }),
+          { ignoreSearch: true },
+        );
+        if (home) return home;
+      }
+    }
+    throw error;
+  }
+}
+
+// Any route that cannot produce a response ends here. Documents get the
+// offline page (so the reader sees the book's own message instead of the
+// browser's error screen); other destinations fail quietly.
+serwist.setCatchHandler(async ({ request }) => {
+  if (request.destination === "document" || request.mode === "navigate") {
+    const fallback =
+      (await serwist.matchPrecache(OFFLINE_FALLBACK_URL)) ??
+      (await caches.match(OFFLINE_FALLBACK_URL, { ignoreSearch: true }));
+    if (fallback) return fallback;
+  }
+  return Response.error();
+});
+
+self.addEventListener("install", (event) => {
+  event.waitUntil(precacheShell());
+});
 
 self.addEventListener("message", (event) => {
   const port = event.ports[0];
@@ -743,6 +937,10 @@ self.addEventListener("activate", (event) => {
           .filter((name) => name.startsWith("pandora-offline:chapter:") && !live.has(name))
           .map((name) => caches.delete(name)),
       );
+      // A new build renames every /_next/static asset, so the shell HTML cached
+      // by the previous worker points at bundles that no longer exist. Refresh
+      // it here; failures are tolerated because the old copy still renders.
+      await precacheShell().catch(() => undefined);
     })(),
   );
 });

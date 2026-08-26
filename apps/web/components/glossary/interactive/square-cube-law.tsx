@@ -36,7 +36,15 @@ export default function SquareCubeLaw() {
           role="img"
           aria-label={t("title")}
         >
-          <rect x="14" y={70 - 12} width="12" height="12" fill="var(--surface)" stroke="var(--teal)" strokeWidth="0.8" />
+          <rect
+            x="14"
+            y={70 - 12}
+            width="12"
+            height="12"
+            fill="var(--surface)"
+            stroke="var(--teal)"
+            strokeWidth="0.8"
+          />
           <rect
             x="48"
             y={70 - 12 * k}
@@ -46,15 +54,45 @@ export default function SquareCubeLaw() {
             stroke={overtop ? "var(--magenta)" : "var(--cyan)"}
             strokeWidth="1"
           />
-          <rect x="14" y="82" width={Math.min(36, area * 6)} height="4" fill="var(--teal)" opacity="0.8" />
-          <rect x="54" y="82" width={Math.min(36, volume * 3)} height="4" fill={overtop ? "var(--magenta)" : "var(--cyan)"} opacity="0.85" />
-          <text x="14" y="92" style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--muted)" }}>{t("area")}</text>
-          <text x="54" y="92" style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--muted)" }}>{t("volume")}</text>
+          <rect
+            x="14"
+            y="82"
+            width={Math.min(36, area * 6)}
+            height="4"
+            fill="var(--teal)"
+            opacity="0.8"
+          />
+          <rect
+            x="54"
+            y="82"
+            width={Math.min(36, volume * 3)}
+            height="4"
+            fill={overtop ? "var(--magenta)" : "var(--cyan)"}
+            opacity="0.85"
+          />
+          <text
+            x="14"
+            y="92"
+            style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
+            {t("area")}
+          </text>
+          <text
+            x="54"
+            y="92"
+            style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
+            {t("volume")}
+          </text>
         </svg>
 
         <div className="absolute right-3 top-14 flex flex-col gap-1">
           <Readout label={t("area")} value={area.toFixed(2)} accent="teal" />
-          <Readout label={t("volume")} value={volume.toFixed(2)} accent={overtop ? "magenta" : "cyan"} />
+          <Readout
+            label={t("volume")}
+            value={volume.toFixed(2)}
+            accent={overtop ? "magenta" : "cyan"}
+          />
         </div>
 
         <div className="absolute inset-x-3 bottom-10">

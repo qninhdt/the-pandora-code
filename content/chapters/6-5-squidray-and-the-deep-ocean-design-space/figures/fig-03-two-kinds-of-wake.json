@@ -1,0 +1,36 @@
+{
+  "id": "fig-03-two-kinds-of-wake",
+  "chapter_slug": "squidray-and-the-deep-ocean-design-space",
+  "role": "comparison",
+  "narrative_purpose": "Shows what propulsive efficiency looks like from behind: a narrow chain of small fast vortex rings against a broad train of wide gentle vortex loops.",
+  "subject": "Two horizontal bands of dark water, one above the other, each showing a wake trailing away to the left behind a partly visible propulsor at the right edge. In the upper band, a small smooth biological nozzle has left a narrow straight chain of eight tightly spaced small doughnut-shaped vortex rings, each ring compact and sharply defined, glowing brightly, with the water immediately around the chain badly churned into fine turbulent froth. In the lower band, a broad curved muscular wing tip has left a wide train of four very large soft oval vortex loops, widely spaced, faint and diffuse, the surrounding water smooth and almost undisturbed.",
+  "scene": "Deep dark open water with no surface or floor visible, the two wakes isolated for comparison.",
+  "camera": "Flat straight-on lateral view, both bands seen edge-on at the same scale.",
+  "light": "The vortex structures themselves are the light source, revealed by fine suspended bioluminescent particles caught in the rotation; ambient water almost black.",
+  "palette": "Void indigo water, bright Pandora cyan in the tight fast rings, dim soft teal in the broad gentle loops, faint mist grey in the turbulent froth.",
+  "style": "Painterly flow-visualisation plate, as if a naturalist had photographed glowing plankton caught in two wakes.",
+  "detail_level": "Crisp on the ring geometry and spacing in both bands; the propulsors at the right edge only partly shown and less detailed.",
+  "composition": "Two stacked horizontal registers of equal height, wakes running right to left in both, plain black water at the left end of each band for annotations.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "graph axes",
+    "grid lines",
+    "panel borders",
+    "streamline diagrams",
+    "whole animals"
+  ],
+  "consistency_notes": "The two wakes must differ clearly in ring size, spacing and brightness: upper small tight bright and many, lower large sparse faint and few. Same palette in both bands.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no axes or graph lines, no infographic style, no photographic or 3D-render look, no cartoon style, no smoke",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

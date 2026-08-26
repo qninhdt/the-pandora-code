@@ -147,11 +147,11 @@ export function VerticalForestDive({ caption, className }: VerticalForestDivePro
     for (let i = 0; i <= 50; i++) {
       const f = i / 50;
       const lx = 140 + (lightAt(f) / 100) * 140;
-      const ly = yFor(f);
+      const ly = PAD_T + (1 - f) * plotH;
       pts.push(`${i === 0 ? "M" : "L"} ${lx.toFixed(1)} ${ly.toFixed(1)}`);
     }
     return pts.join(" ");
-  }, []);
+  }, [plotH]);
 
   // Background darkness: the whole card gets dimmer as you descend
   const bgOpacity = 0.04 + (1 - depth) * 0.18;

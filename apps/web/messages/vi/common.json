@@ -88,19 +88,32 @@
     "readingProgress": "Tiến độ đọc",
     "continueReading": "Đọc tiếp từ vị trí trước",
     "restoringPosition": "Đang khôi phục vị trí…",
-    "readingPreferences": "Tuỳ chỉnh đọc",
     "readingProgressPercent": "Đã đọc {percent}%",
-    "preferencesReset": "Đặt lại",
-    "preferencesTextSize": "Cỡ chữ",
-    "preferencesLineSpacing": "Độ giãn dòng",
-    "preferencesColumnWidth": "Độ rộng cột",
-    "preferencesMotion": "Chuyển động",
-    "preferencesMotionSystem": "Theo cài đặt thiết bị",
-    "preferencesMotionReduce": "Giảm chuyển động",
-    "preferencesMotionAllow": "Cho phép chuyển động",
     "classification": "Phân loại nội dung",
     "demoBanner": "Đây chỉ là chương BẢN NHÁP (DEMO) - không phải nội dung chính thức của Pandora.",
     "readNext": "Đọc tiếp"
+  },
+  "reader": {
+    "title": "Kiểu hiển thị",
+    "close": "Đóng",
+    "typeface": "Kiểu chữ",
+    "font": {
+      "sans": "Không chân",
+      "serif": "Có chân",
+      "mono": "Đơn cách"
+    },
+    "textSize": "Cỡ chữ",
+    "textSizeIncrease": "Tăng cỡ chữ",
+    "textSizeDecrease": "Giảm cỡ chữ",
+    "lineSpacing": "Giãn dòng",
+    "spacing": {
+      "tight": "Chặt",
+      "normal": "Vừa",
+      "loose": "Rộng"
+    },
+    "fullWidth": "Toàn chiều rộng",
+    "reduceMotion": "Giảm chuyển động",
+    "reset": "Đặt lại mặc định"
   },
   "classification": {
     "canon": "Cốt truyện gốc",

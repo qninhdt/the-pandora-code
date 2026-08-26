@@ -10,9 +10,7 @@ type Edge = [number, number];
 
 export default function NodeGraphTheory() {
   const t = useTranslations("viz.node-graph-theory");
-  const [nodes, setNodes] = useState<GNode[]>([
-    { id: 0, x: 50, y: 48 },
-  ]);
+  const [nodes, setNodes] = useState<GNode[]>([{ id: 0, x: 50, y: 48 }]);
   const [edges, setEdges] = useState<Edge[]>([]);
   const [nextId, setNextId] = useState(1);
   const [linkFrom, setLinkFrom] = useState<number | null>(null);
@@ -28,7 +26,11 @@ export default function NodeGraphTheory() {
   };
 
   const onBgClick = (e: React.MouseEvent<SVGSVGElement>) => {
-    if ((e.target as Element).tagName !== "svg" && (e.target as Element).getAttribute("data-bg") == null) return;
+    if (
+      (e.target as Element).tagName !== "svg" &&
+      (e.target as Element).getAttribute("data-bg") == null
+    )
+      return;
     const { x, y } = toSvg(e.clientX, e.clientY);
     // too close to existing?
     if (nodes.some((n) => (n.x - x) ** 2 + (n.y - y) ** 2 < 64)) return;
@@ -53,9 +55,7 @@ export default function NodeGraphTheory() {
     }
     const lo = Math.min(linkFrom, id);
     const hi = Math.max(linkFrom, id);
-    setEdges((es) =>
-      es.some(([a, b]) => a === lo && b === hi) ? es : [...es, [lo, hi]],
-    );
+    setEdges((es) => (es.some(([a, b]) => a === lo && b === hi) ? es : [...es, [lo, hi]]));
     setLinkFrom(null);
   };
 
@@ -120,7 +120,12 @@ export default function NodeGraphTheory() {
               />
             </g>
           ))}
-          <text x="50" y="96" textAnchor="middle" style={{ fontSize: 2.6, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="50"
+            y="96"
+            textAnchor="middle"
+            style={{ fontSize: 2.6, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("spawn")}
           </text>
         </svg>

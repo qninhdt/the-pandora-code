@@ -22,7 +22,15 @@ interface StarDef {
 const STARS: StarDef[] = [
   { id: "A", color: "#fff2cc", glow: "#ffd66e", baseRadius: 26, orbitR: 70, phase: 0 },
   { id: "B", color: "#ff9a52", glow: "#ff7a2e", baseRadius: 17, orbitR: 118, phase: Math.PI },
-  { id: "M", color: "#ff5d5d", glow: "#ff3b3b", baseRadius: 6, orbitR: 0, phase: 0, fixed: { x: 86, y: 84 } },
+  {
+    id: "M",
+    color: "#ff5d5d",
+    glow: "#ff3b3b",
+    baseRadius: 6,
+    orbitR: 0,
+    phase: 0,
+    fixed: { x: 86, y: 84 },
+  },
 ];
 
 const VIEW = { w: 100, h: 100, cx: 42, cy: 46 };
@@ -114,7 +122,16 @@ export default function AlphaCentauri() {
                 key={s.id}
                 className="cursor-pointer"
                 onClick={() => setSelected(s.id)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    setSelected(s.id);
+                  }
+                }}
+                tabIndex={0}
+                // biome-ignore lint/a11y/useSemanticElements: an SVG <g> cannot be a native <button>; button role is the correct ARIA mapping for a clickable star
                 role="button"
+                aria-pressed={isSel}
                 aria-label={t(s.id === "A" ? "starA" : s.id === "B" ? "starB" : "proxima")}
               >
                 <circle cx={s.x} cy={s.y} r={r} fill={`url(#ac-${s.id})`} />

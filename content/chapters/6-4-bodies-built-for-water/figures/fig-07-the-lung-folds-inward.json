@@ -1,0 +1,35 @@
+{
+  "id": "fig-07-the-lung-folds-inward",
+  "chapter_slug": "bodies-built-for-water",
+  "role": "diagram",
+  "narrative_purpose": "Makes Boyle's law physical: the same chest at four depths, its air space shrinking toward the limit the ribcage can fold to, with blood moving in to fill what is left.",
+  "subject": "A vertical column of dark water containing four separate cutaway views of the same ribcage, stacked one below the other, each smaller in air volume than the one above. In the topmost chest, near the surface, the pale luminous air space inside is large and rounded and the surrounding vessels are thin. In the second, the air space is noticeably smaller and the ribs have curved slightly inward. In the third, the air space has shrunk to a compact pale core, the ribs are visibly folded closer together, and the vessels lining the chest wall are thickened and glowing. In the fourth and deepest, the air space is a small flattened sliver and the chest interior is crowded with dense engorged glowing vessels pressing in around it. The water above each successive chest is rendered progressively darker and heavier.",
+  "scene": "A single continuous water column from a bright surface at the very top down into near-black depth at the bottom, no seabed visible.",
+  "camera": "Straight-on side elevation of the whole column, all four chests at the same scale and aligned vertically.",
+  "light": "Pale surface light at the top fading to deep indigo darkness at the bottom, each air space glowing pale from within, engorged vessels glowing warm crimson in the lower two chests.",
+  "palette": "Mist and pale grey for trapped air, crimson for engorged vessels, ocean teal at the top grading into void indigo at the bottom.",
+  "style": "Painterly naturalist cutaway sequence, hand-painted texture, observed rather than schematic.",
+  "detail_level": "Crisp on each air space boundary and on the folding of the ribs; the water between the chests kept simple and dark.",
+  "composition": "Four chests stacked in a single vertical line slightly right of centre, a broad column of open dark water down the left side for overlay callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "depth markings",
+    "measurement scales",
+    "callout lines",
+    "medical diagram styling",
+    "Avatar branding"
+  ],
+  "consistency_notes": "The same ribcage four times, differing only in compression — not four different bodies. Depth is conveyed by the darkening water and the shrinking air space alone, never by written depth marks or a measuring scale.",
+  "aspect_ratio": "9:16",
+  "negative_prompt": "no text, no labels, no numbers, no depth scale or measurement marks, no arrows, no clinical diagram look, no photographic or 3D-render look",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

@@ -33,9 +33,15 @@ export default function Emergence() {
       const bs = boids.current;
       const next = bs.map((b) => ({ ...b }));
       for (let i = 0; i < bs.length; i++) {
-        let sx = 0, sy = 0, sc = 0;
-        let ax = 0, ay = 0, ac = 0;
-        let cx = 0, cy = 0, cc = 0;
+        let sx = 0;
+        let sy = 0;
+        let sc = 0;
+        let ax = 0;
+        let ay = 0;
+        let ac = 0;
+        let cx = 0;
+        let cy = 0;
+        let cc = 0;
         const me = bs[i];
         for (let j = 0; j < bs.length; j++) {
           if (i === j) continue;
@@ -64,12 +70,12 @@ export default function Emergence() {
           vy += (sy / sc) * sep * 40;
         }
         if (ac > 0) {
-          vx += ((ax / ac) - me.vx) * ali * 0.08;
-          vy += ((ay / ac) - me.vy) * ali * 0.08;
+          vx += (ax / ac - me.vx) * ali * 0.08;
+          vy += (ay / ac - me.vy) * ali * 0.08;
         }
         if (cc > 0) {
-          vx += ((cx / cc) - me.x) * coh * 0.015;
-          vy += ((cy / cc) - me.y) * coh * 0.015;
+          vx += (cx / cc - me.x) * coh * 0.015;
+          vy += (cy / cc - me.y) * coh * 0.015;
         }
         // soft bounds
         if (me.x < 8) vx += 8;
@@ -133,9 +139,36 @@ export default function Emergence() {
           })}
         </svg>
         <div className="absolute inset-x-3 bottom-10 flex flex-col gap-1">
-          <ControlSlider label={t("separation")} value={sep} min={0} max={1.5} step={0.05} display={sep.toFixed(2)} onChange={setSep} thumb="magenta" />
-          <ControlSlider label={t("alignment")} value={ali} min={0} max={1.5} step={0.05} display={ali.toFixed(2)} onChange={setAli} thumb="cyan" />
-          <ControlSlider label={t("cohesion")} value={coh} min={0} max={1.5} step={0.05} display={coh.toFixed(2)} onChange={setCoh} thumb="teal" />
+          <ControlSlider
+            label={t("separation")}
+            value={sep}
+            min={0}
+            max={1.5}
+            step={0.05}
+            display={sep.toFixed(2)}
+            onChange={setSep}
+            thumb="magenta"
+          />
+          <ControlSlider
+            label={t("alignment")}
+            value={ali}
+            min={0}
+            max={1.5}
+            step={0.05}
+            display={ali.toFixed(2)}
+            onChange={setAli}
+            thumb="cyan"
+          />
+          <ControlSlider
+            label={t("cohesion")}
+            value={coh}
+            min={0}
+            max={1.5}
+            step={0.05}
+            display={coh.toFixed(2)}
+            onChange={setCoh}
+            thumb="teal"
+          />
         </div>
       </div>
     </GlossaryFrame>

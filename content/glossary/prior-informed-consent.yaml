@@ -1,0 +1,34 @@
+id: prior-informed-consent
+label:
+  vi: Đồng thuận báo trước có thông tin
+  en: Prior informed consent
+definition:
+  vi: >-
+    Yêu cầu rằng trước khi lấy bất kỳ mẫu sinh học nào, người đi lấy phải công bố đầy đủ mục đích nghiên
+    cứu và ý định thương mại, rồi nhận được sự chấp thuận rõ ràng. Ba chữ trong tên đều là điều kiện
+    riêng: đồng thuận phải có trước khi lấy, không phải hợp thức hóa sau; phải dựa trên thông tin thật,
+    nên che giấu ý định thương mại là làm mất hiệu lực; và phải là đồng thuận, tức là có thể bị từ chối.
+    Điểm cuối cùng mới là điều làm nó có nghĩa: một sự chấp thuận không thể bị từ chối thì không phải
+    đồng thuận mà là thủ tục. Trong luật đa dạng sinh học, quyền cho phép này thuộc về nhà nước và cộng
+    đồng bản địa — chứ không thuộc về sinh vật.
+  en: >-
+    The requirement that before any biological sample is taken, the collector must fully disclose the
+    research purpose and commercial intent, and then receive explicit approval. Each part of the name is
+    a separate condition: consent must come before collection, not as later ratification; it must rest on
+    real information, so concealing commercial intent voids it; and it must be consent, meaning it can be
+    refused. That last point is what gives it meaning: an approval that cannot be withheld is not consent
+    but paperwork. In biodiversity law this power to permit belongs to the state and to indigenous
+    communities — not to the organism.
+see_also:
+  - nagoya-protocol
+  - biopiracy
+  - nonhuman-personhood
+category: concept
+tags:
+  - law-and-policy
+  - bioethics
+cover_prompt: >-
+  A painterly plate of two hands meeting over a single sheet of paper laid on a table, one hand offering
+  a pen and the other resting flat on the sheet without taking it, a small plant specimen beside them,
+  cool teal skin and paper tones with a faint amber lamp glow on deep indigo, painterly naturalist
+  plate, no text, no labels.

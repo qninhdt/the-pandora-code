@@ -58,7 +58,16 @@ export default function Lift() {
             />
           ))}
           {/* Cl bar */}
-          <rect x="12" y="84" width="76" height="5" rx="1" fill="var(--void)" stroke="var(--border-strong)" strokeWidth="0.4" />
+          <rect
+            x="12"
+            y="84"
+            width="76"
+            height="5"
+            rx="1"
+            fill="var(--void)"
+            stroke="var(--border-strong)"
+            strokeWidth="0.4"
+          />
           <rect
             x="12"
             y="84"
@@ -75,7 +84,16 @@ export default function Lift() {
         </div>
 
         <div className="absolute inset-x-3 bottom-10">
-          <ControlSlider label={t("aoa")} value={aoa} min={0} max={28} step={0.5} display={`${aoa.toFixed(1)}°`} onChange={setAoa} thumb={stalled ? "magenta" : "cyan"} />
+          <ControlSlider
+            label={t("aoa")}
+            value={aoa}
+            min={0}
+            max={28}
+            step={0.5}
+            display={`${aoa.toFixed(1)}°`}
+            onChange={setAoa}
+            thumb={stalled ? "magenta" : "cyan"}
+          />
         </div>
       </div>
     </GlossaryFrame>

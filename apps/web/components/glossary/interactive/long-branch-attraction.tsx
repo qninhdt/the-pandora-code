@@ -62,14 +62,7 @@ export default function LongBranchAttraction() {
               : "var(--border-strong)";
             return (
               <g key={tip.key}>
-                <line
-                  x1={x}
-                  y1="70"
-                  x2={x}
-                  y2={yTip}
-                  stroke={col}
-                  strokeWidth={long ? 1.6 : 1}
-                />
+                <line x1={x} y1="70" x2={x} y2={yTip} stroke={col} strokeWidth={long ? 1.6 : 1} />
                 <circle
                   cx={x}
                   cy={yTip}
@@ -85,11 +78,7 @@ export default function LongBranchAttraction() {
                   style={{
                     fontSize: 2.5,
                     fontFamily: "monospace",
-                    fill: long
-                      ? attracted
-                        ? "var(--amber)"
-                        : "var(--cyan)"
-                      : "var(--muted)",
+                    fill: long ? (attracted ? "var(--amber)" : "var(--cyan)") : "var(--muted)",
                   }}
                 >
                   {tip.key.toUpperCase()}
@@ -141,11 +130,7 @@ export default function LongBranchAttraction() {
                       : "var(--teal)"
                     : "var(--border-strong)",
                 color:
-                  mode === m
-                    ? m === "standard"
-                      ? "var(--amber)"
-                      : "var(--teal)"
-                    : "var(--muted)",
+                  mode === m ? (m === "standard" ? "var(--amber)" : "var(--teal)") : "var(--muted)",
                 background: "var(--void)",
               }}
             >

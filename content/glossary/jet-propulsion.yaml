@@ -1,0 +1,32 @@
+id: jet-propulsion
+label:
+  vi: Đẩy bằng dòng phun (jet propulsion)
+  en: Jet propulsion
+definition:
+  vi: >-
+    Cách di chuyển bằng cách hút nước vào một khoang rồi bơm ra qua một lỗ hẹp: động lượng của khối
+    nước bị bắn đi tạo phản lực đẩy con vật về phía trước. Lực đẩy tỉ lệ với lưu lượng khối nhân tốc
+    độ phun, nhưng năng lượng phải trả lại tỉ lệ với bình phương tốc độ — nên một miệng phun nhỏ buộc
+    con vật bắn ít nước rất nhanh, và phần lớn công bỏ ra nằm lại trong dòng xoáy chứ không đẩy được
+    ai. Đó là lý do mực và sứa bứt tốc kinh khủng nhưng đi đường dài rất tốn, và cũng là lý do con
+    tsyong chỉ dùng ống phun cho những giây quyết định.
+  en: >-
+    Moving by drawing water into a cavity and forcing it out through a narrow opening: the momentum of
+    the ejected water pushes the animal the other way. Thrust scales with mass flow times exit
+    velocity, but the energy bill scales with velocity squared — so a small aperture forces the animal
+    to throw a little water very fast, and most of the work ends up in the wake rather than in the
+    body. That is why squid and jellyfish accelerate ferociously and travel expensively, and why the
+    tsyong reserves its siphons for the seconds that decide a hunt.
+see_also:
+  - froude-efficiency
+  - cost-of-transport
+  - hoop-stress
+  - cavitation
+category: concept
+tags:
+  - physics
+  - physiology
+cover_prompt: >-
+  A dark muscular funnel nozzle seen close, a dense narrow stream of water leaving it and breaking
+  into a chain of tight glowing vortex rings receding into deep indigo water, cool teal and cyan
+  bioluminescent particles caught in the rotation, painterly naturalist plate, no text, no labels.

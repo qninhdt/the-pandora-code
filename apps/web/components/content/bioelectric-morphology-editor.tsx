@@ -155,7 +155,12 @@ export function BioelectricMorphologyEditor({
       }
     >
       <div className="flex flex-col gap-3 sm:flex-row sm:items-stretch">
-        <svg viewBox={`0 0 ${W} ${H}`} className="w-full sm:w-2/3" role="img" aria-label={t("aria")}>
+        <svg
+          viewBox={`0 0 ${W} ${H}`}
+          className="w-full sm:w-2/3"
+          role="img"
+          aria-label={t("aria")}
+        >
           <GlowDefs idBase={uid} tones={["cyan", "magenta"]} />
 
           {/* the trunk body — a voltage-tinted bar before regeneration */}

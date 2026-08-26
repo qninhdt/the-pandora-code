@@ -93,7 +93,12 @@ export function MorphogenGradientLab({ caption, className }: MorphogenGradientLa
       hint={t("hint")}
     >
       <div className="flex flex-col gap-3 sm:flex-row sm:items-stretch">
-        <svg viewBox={`0 0 ${W} ${H}`} className="w-full sm:w-2/3" role="img" aria-label={t("aria")}>
+        <svg
+          viewBox={`0 0 ${W} ${H}`}
+          className="w-full sm:w-2/3"
+          role="img"
+          aria-label={t("aria")}
+        >
           <GlowDefs idBase={uid} tones={["cyan", "teal", "magenta"]} />
 
           {/* threshold guide lines */}

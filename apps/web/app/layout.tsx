@@ -1,11 +1,6 @@
-import { ScrollPositionRestorer } from "@/components/navigation/scroll-position-restorer";
-import { OfflineProvider } from "@/components/offline/offline-provider";
-import { ReadingPreferencesProvider } from "@/lib/engagement/preferences-store";
-import { fontVariables } from "@/lib/fonts";
-import { getSiteUrl } from "@/lib/seo/site-url";
 import type { Metadata, Viewport } from "next";
-import { getLocale } from "next-intl/server";
 import "./globals.css";
+import { getSiteUrl } from "@/lib/seo/site-url";
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
@@ -33,19 +28,11 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-// Next.js requires <html> and <body> in the root layout. Locale is resolved via
-// next-intl (set by middleware) so the right lang attribute lands here, above
-// the [locale] segment.
-export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const locale = await getLocale();
-  return (
-    <html lang={locale} className={fontVariables}>
-      <body>
-        <ScrollPositionRestorer />
-        <ReadingPreferencesProvider>
-          <OfflineProvider>{children}</OfflineProvider>
-        </ReadingPreferencesProvider>
-      </body>
-    </html>
-  );
+// Deliberately a pass-through: <html>/<body> live in app/[locale]/layout.tsx.
+// Reading the locale here (getLocale()) would resolve next-intl's request
+// config before the [locale] segment can call setRequestLocale, freezing every
+// server component that uses useLocale()/useTranslations() to the default
+// locale. The unmatched-route 404 supplies its own document shell.
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return children;
 }

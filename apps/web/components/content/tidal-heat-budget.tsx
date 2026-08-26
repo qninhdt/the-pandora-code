@@ -270,8 +270,19 @@ export function TidalHeatBudget({ caption, className }: TidalHeatBudgetProps) {
             tone={tone}
           />
           <div className="grid grid-cols-2 gap-2">
-            <VizReadout label={t("powerLabel")} value={`${fmtPower(powerTW)}`} note={t("powerUnit")} tone={tone} />
-            <VizReadout label={t("fluxLabel")} value={fmtFlux(flux)} note={t("fluxUnit")} tone={tone} tinted />
+            <VizReadout
+              label={t("powerLabel")}
+              value={`${fmtPower(powerTW)}`}
+              note={t("powerUnit")}
+              tone={tone}
+            />
+            <VizReadout
+              label={t("fluxLabel")}
+              value={fmtFlux(flux)}
+              note={t("fluxUnit")}
+              tone={tone}
+              tinted
+            />
           </div>
           <VizReadout label={t("regimeLabel")} value={t(`regime.${regime}`)} tone={tone} tinted />
         </div>

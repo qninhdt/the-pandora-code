@@ -12,9 +12,11 @@ import type * as THREE from "three";
 // Scene3D (lazy, capped DPR, demand frameloop).
 export function FloatingMountainScene() {
   const group = useRef<THREE.Group>(null);
+  const elapsed = useRef(0);
 
-  useFrame((state) => {
-    if (group.current) group.current.rotation.y = Math.sin(state.clock.elapsedTime * 0.1) * 0.15;
+  useFrame((_, delta) => {
+    elapsed.current += delta;
+    if (group.current) group.current.rotation.y = Math.sin(elapsed.current * 0.1) * 0.15;
   });
 
   return (

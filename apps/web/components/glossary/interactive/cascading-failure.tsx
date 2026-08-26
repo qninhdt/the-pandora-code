@@ -11,15 +11,35 @@ import { useRafLoop } from "./shared/use-raf-loop";
 type Node = { id: number; x: number; y: number; load: number; cap: number; dead: boolean };
 
 const EDGES: [number, number][] = [
-  [0, 1], [1, 2], [2, 3], [0, 4], [1, 4], [1, 5], [2, 5], [2, 6],
-  [3, 6], [4, 5], [5, 6], [4, 7], [5, 7], [5, 8], [6, 8], [7, 8],
+  [0, 1],
+  [1, 2],
+  [2, 3],
+  [0, 4],
+  [1, 4],
+  [1, 5],
+  [2, 5],
+  [2, 6],
+  [3, 6],
+  [4, 5],
+  [5, 6],
+  [4, 7],
+  [5, 7],
+  [5, 8],
+  [6, 8],
+  [7, 8],
 ];
 
 function seedNodes(): Node[] {
   const pos = [
-    [20, 28], [40, 22], [60, 22], [80, 28],
-    [28, 50], [50, 48], [72, 50],
-    [36, 74], [64, 74],
+    [20, 28],
+    [40, 22],
+    [60, 22],
+    [80, 28],
+    [28, 50],
+    [50, 48],
+    [72, 50],
+    [36, 74],
+    [64, 74],
   ];
   return pos.map(([x, y], id) => ({
     id,
@@ -43,9 +63,7 @@ export default function CascadingFailure() {
 
   const knock = useCallback((id: number) => {
     setSeed(id);
-    setNodes((ns) =>
-      ns.map((n) => (n.id === id ? { ...n, dead: true, load: 0 } : n)),
-    );
+    setNodes((ns) => ns.map((n) => (n.id === id ? { ...n, dead: true, load: 0 } : n)));
     setPlaying(true);
   }, []);
 

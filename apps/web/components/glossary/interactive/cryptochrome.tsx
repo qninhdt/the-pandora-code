@@ -21,11 +21,28 @@ export default function Cryptochrome() {
       infoText={t("info")}
       onReset={() => setAngle(30)}
       allowFullscreen={false}
-      caption={<span className="text-cyan">{t("needle")}: {needle.toFixed(0)}°</span>}
+      caption={
+        <span className="text-cyan">
+          {t("needle")}: {needle.toFixed(0)}°
+        </span>
+      }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
-          <circle cx="50" cy="42" r="18" fill="var(--surface)" stroke="var(--border-strong)" strokeWidth="0.6" />
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
+          <circle
+            cx="50"
+            cy="42"
+            r="18"
+            fill="var(--surface)"
+            stroke="var(--border-strong)"
+            strokeWidth="0.6"
+          />
           <line
             x1="50"
             y1="42"
@@ -36,15 +53,43 @@ export default function Cryptochrome() {
           />
           <circle cx="50" cy="42" r="2" fill="var(--teal)" />
           <rect x="14" y="72" width={singlet * 0.35} height="5" fill="var(--cyan)" opacity="0.85" />
-          <rect x="14" y="82" width={triplet * 0.35} height="5" fill="var(--magenta)" opacity="0.85" />
-          <text x="52" y="76" style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--muted)" }}>{t("singlet")}</text>
-          <text x="52" y="86" style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--muted)" }}>{t("triplet")}</text>
+          <rect
+            x="14"
+            y="82"
+            width={triplet * 0.35}
+            height="5"
+            fill="var(--magenta)"
+            opacity="0.85"
+          />
+          <text
+            x="52"
+            y="76"
+            style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
+            {t("singlet")}
+          </text>
+          <text
+            x="52"
+            y="86"
+            style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
+            {t("triplet")}
+          </text>
         </svg>
         <div className="absolute right-3 top-14">
           <Readout label={t("field")} value={`${angle}°`} accent="cyan" />
         </div>
         <div className="absolute inset-x-3 bottom-10">
-          <ControlSlider label={t("field")} value={angle} min={0} max={180} step={2} display={`${angle}°`} onChange={setAngle} thumb="cyan" />
+          <ControlSlider
+            label={t("field")}
+            value={angle}
+            min={0}
+            max={180}
+            step={2}
+            display={`${angle}°`}
+            onChange={setAngle}
+            thumb="cyan"
+          />
         </div>
       </div>
     </GlossaryFrame>

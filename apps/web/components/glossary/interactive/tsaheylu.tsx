@@ -27,7 +27,10 @@ function tendrilPath(
   const curl = (side === "L" ? 1 : -1) * (8 - pull * 7);
   const c1x = baseX + curl * 0.4;
   const c2x = baseX + (tipTarget - baseX) * 0.55 + curl;
-  const tipX = baseX + (tipTarget - baseX) * (0.35 + pull * 0.62) + (i - 3) * spread * 0.15 * (side === "L" ? 1 : -1);
+  const tipX =
+    baseX +
+    (tipTarget - baseX) * (0.35 + pull * 0.62) +
+    (i - 3) * spread * 0.15 * (side === "L" ? 1 : -1);
   // slight interlace offset when bonded
   const lace = pull > 0.85 ? Math.sin(i * 2.2) * 1.8 * (side === "L" ? 1 : -1) : 0;
   return `M ${baseX} ${y0} C ${c1x} ${y0 + 8}, ${c2x + lace} ${midY}, ${tipX + lace} ${tipY}`;
@@ -54,7 +57,7 @@ export default function Tsaheylu() {
       }
       spawnAcc.current += dt;
       setParticles((prev) => {
-        let next = prev
+        const next = prev
           .map((p) => ({ ...p, t: p.t + dt * 0.55 * p.dir }))
           .filter((p) => p.t > -0.05 && p.t < 1.05);
         while (spawnAcc.current > 0.14 && next.length < 28) {

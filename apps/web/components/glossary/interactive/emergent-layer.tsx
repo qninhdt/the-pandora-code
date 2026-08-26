@@ -29,18 +29,37 @@ export default function EmergentLayer() {
       }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           <g transform={`translate(0, ${viewY})`}>
             {/* sky */}
             <rect x="0" y="-20" width="100" height="50" fill="#0a1420" />
             {/* emergent crowns */}
             <rect x="30" y="0" width="3" height="48" fill="var(--cyan)" opacity={0.4} />
-            <ellipse cx="31.5" cy="-2" rx="14" ry="10" fill="var(--amber)" opacity={0.45 + sun * 0.4} style={{ filter: aboveCanopy ? "drop-shadow(0 0 6px var(--amber))" : undefined }} />
+            <ellipse
+              cx="31.5"
+              cy="-2"
+              rx="14"
+              ry="10"
+              fill="var(--amber)"
+              opacity={0.45 + sun * 0.4}
+              style={{ filter: aboveCanopy ? "drop-shadow(0 0 6px var(--amber))" : undefined }}
+            />
             <rect x="58" y="6" width="3" height="42" fill="var(--cyan)" opacity={0.35} />
             <ellipse cx="59.5" cy="4" rx="12" ry="9" fill="var(--teal)" opacity={0.4 + sun * 0.3} />
             {/* closed canopy band */}
             <rect x="10" y="28" width="80" height="14" fill="var(--teal)" opacity={0.35} rx="2" />
-            <text x="50" y="37" textAnchor="middle" style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--teal)" }}>
+            <text
+              x="50"
+              y="37"
+              textAnchor="middle"
+              style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--teal)" }}
+            >
               {t("canopy")}
             </text>
             {/* understory stubs */}
@@ -67,8 +86,16 @@ export default function EmergentLayer() {
           <circle cx="86" cy="14" r={4 + sun * 3} fill="var(--amber)" opacity={0.3 + sun * 0.5} />
         </svg>
         <div className="absolute right-3 top-14 space-y-1">
-          <Readout label={t("sun")} value={`${Math.round(Math.min(1, sun) * 100)}%`} accent="amber" />
-          <Readout label={t("wind")} value={`${Math.round(Math.min(1, wind) * 100)}%`} accent="cyan" />
+          <Readout
+            label={t("sun")}
+            value={`${Math.round(Math.min(1, sun) * 100)}%`}
+            accent="amber"
+          />
+          <Readout
+            label={t("wind")}
+            value={`${Math.round(Math.min(1, wind) * 100)}%`}
+            accent="cyan"
+          />
         </div>
         <div className="absolute inset-x-3 bottom-10">
           <ControlSlider

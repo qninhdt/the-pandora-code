@@ -42,7 +42,12 @@ export function OccamsRazorEngine({
       className={className}
     >
       <div className="flex flex-col gap-6 lg:flex-row lg:items-stretch">
-        <svg viewBox={`0 0 ${W} ${H}`} className="w-full lg:w-[60%]" role="img">
+        <svg
+          viewBox={`0 0 ${W} ${H}`}
+          className="w-full lg:w-[60%]"
+          role="img"
+          aria-label={t("title")}
+        >
           <GlowDefs idBase={uid} tones={["cyan", "magenta"]} />
 
           {/* Base */}

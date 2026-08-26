@@ -1,0 +1,32 @@
+id: iridophore
+label:
+  vi: Tế bào óng ánh
+  en: Iridophore
+definition:
+  vi: >-
+    Lớp tế bào phản chiếu nằm dưới tầng sắc tố, hoạt động không bằng thuốc nhuộm mà bằng cấu trúc: những
+    phiến protein reflectin chiết suất cao (n ≈ 1,59) xếp xen kẽ với dịch chiết suất thấp (n ≈ 1,33), tạo
+    thành một gương Bragg phản chiếu đúng một dải bước sóng. Điều đặc biệt là dải ấy điều chỉnh được — tín
+    hiệu acetylcholine làm reflectin bị phosphoryl hóa, khoảng cách giữa các phiến đổi theo, và màu phản
+    chiếu dịch qua lam, lục hay ánh sáng phân cực. Đây là màu sinh ra từ hình học chứ không từ hóa chất, và
+    cũng như tế bào sắc tố, nó vô dụng khi không còn ánh sáng để phản chiếu.
+  en: >-
+    A reflective cell layer beneath the pigment tier that works by structure rather than dye: high-refractive
+    -index plates of reflectin protein (n ≈ 1.59) alternating with low-index fluid (n ≈ 1.33), forming a Bragg
+    mirror that reflects one tuned band of wavelengths. The remarkable part is that the band is adjustable —
+    acetylcholine signalling phosphorylates the reflectin, plate spacing shifts, and the reflected colour
+    moves across blue, green and polarised light. This is colour produced by geometry rather than chemistry,
+    and like the pigment cells above it, it is useless once there is no light left to reflect.
+see_also:
+  - chromatophore
+  - bioluminescence
+  - counter-illumination
+  - aphotic-zone
+category: bio
+tags:
+  - physiology
+  - sensory-biology
+cover_prompt: >-
+  A steep cutaway through skin revealing a stack of thin parallel reflective plates with fluid gaps between
+  them, incoming pale light splitting into cyan and teal iridescent bands as it leaves the stack, deep indigo
+  tissue around it, painterly naturalist microscopy plate, no text, no labels.

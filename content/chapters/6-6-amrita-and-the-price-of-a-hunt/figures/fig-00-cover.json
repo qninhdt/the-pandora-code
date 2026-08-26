@@ -1,0 +1,33 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "amrita-and-the-price-of-a-hunt",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate: an industrial vessel and the animal it has killed, side by side, so the scale mismatch between the machine and the life it processes reads at a glance.",
+  "subject": "A long low grey warship-like vessel, about a hundred and twenty metres, sitting on open ocean with a wide catamaran hull and four large ducted fan housings across its stern. Alongside its port hull, secured by taut cables, floats the enormous dark body of a dead marine animal, longer than a third of the ship, its skin patterned in faint bioluminescent lines that are dimming out. An overhead crane arm reaches out over the animal's head. Two small fast boats sit further out on the water.",
+  "scene": "Open ocean at dusk, no land visible, a long low bank of cloud on the horizon and a faint slick spreading on the water around the animal.",
+  "camera": "Wide three-quarter aerial vantage from above and behind the ship, both vessel and animal fully in frame.",
+  "light": "Low dusk light from behind the cloud bank, cold work-lamps on the ship's deck, the animal's own faint glow fading to nothing along its flank.",
+  "palette": "Void indigo water, deep teal sky, cold grey steel hull, one small warm amber pool of deck lighting.",
+  "style": "Painterly naturalist plate, weighty and observed, not a film poster or a technical rendering.",
+  "detail_level": "Crisp on the ship's silhouette and the animal's body; open dark water at the frame edges.",
+  "composition": "Ship on the left third running toward the right, animal along its near flank, wide empty water at lower right and open sky upper left.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "Avatar branding",
+    "poster framing",
+    "gore",
+    "blood detail"
+  ],
+  "consistency_notes": "The animal is a large intelligent marine creature, whale-like in mass but not an Earth whale portrait. Keep the mood grim and quiet rather than action-cinematic.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no logos, no poster treatment, no photographic or 3D-render look, no cartoon style, no explicit gore",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

@@ -35,12 +35,15 @@ export function NichePartitionExplorer({ caption, className }: NichePartitionExp
   const uid = useId();
   const t = useTranslations("viz.nichePartition");
   const [selected, setSelected] = useState<number | null>(null);
-  const active = selected !== null ? {
-    zone: t(`bands.${BANDS[selected].id}.zone`),
-    pandora: t(`bands.${BANDS[selected].id}.pandora`),
-    earth: t(`bands.${BANDS[selected].id}.earth`),
-    how: t(`bands.${BANDS[selected].id}.how`),
-  } : null;
+  const active =
+    selected !== null
+      ? {
+          zone: t(`bands.${BANDS[selected].id}.zone`),
+          pandora: t(`bands.${BANDS[selected].id}.pandora`),
+          earth: t(`bands.${BANDS[selected].id}.earth`),
+          how: t(`bands.${BANDS[selected].id}.how`),
+        }
+      : null;
 
   return (
     <VizFigure title={t("title")} caption={caption} className={className} hint={t("hint")}>

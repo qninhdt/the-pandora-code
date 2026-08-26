@@ -98,15 +98,6 @@ export default async function TimelinePage({ params }: TimelinePageProps) {
       />
       {bg && <PageBackground src={bg} />}
       <main className="mx-auto max-w-5xl px-6 pb-28 pt-32">
-        <nav aria-label="Breadcrumb" className="mb-6 font-sans text-xs text-subtle">
-          <a href={`/${loc}`} className="hover:text-cyan">
-            {t("nav.home")}
-          </a>
-          <span aria-hidden className="px-2">
-            /
-          </span>
-          <span className="text-muted">{t("page.timeline.title")}</span>
-        </nav>
         <header className="mb-14 max-w-3xl">
           <p className="mb-4 font-sans text-xs uppercase tracking-[0.4em] text-cyan">
             {t("page.timeline.kicker")}

@@ -86,7 +86,13 @@ export default function FunctionalResponse() {
             f(N)
           </text>
 
-          <path d={path} fill="none" stroke="var(--cyan)" strokeWidth="1.2" strokeLinejoin="round" />
+          <path
+            d={path}
+            fill="none"
+            stroke="var(--cyan)"
+            strokeWidth="1.2"
+            strokeLinejoin="round"
+          />
           <circle cx={toX(nMark)} cy={toY(fMark)} r="1.8" fill="var(--amber)" />
 
           {/* asymptote 1/h for type II */}

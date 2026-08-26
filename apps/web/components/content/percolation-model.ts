@@ -128,11 +128,12 @@ function giantComponent(nodes: Node[], removed: Set<number>): number {
   const parent = new Array<number>(nodes.length);
   for (let i = 0; i < nodes.length; i++) parent[i] = i;
   const find = (x: number): number => {
-    while (parent[x] !== x) {
-      parent[x] = parent[parent[x]];
-      x = parent[x];
+    let root = x;
+    while (parent[root] !== root) {
+      parent[root] = parent[parent[root]];
+      root = parent[root];
     }
-    return x;
+    return root;
   };
   const union = (a: number, b: number) => {
     const ra = find(a);

@@ -18,14 +18,17 @@ export default function DegreeGraphTheory() {
 
   const add = () => {
     if (leaves.length >= 12) return;
-    const angle = leaves.length === 0 ? -Math.PI / 2 : leaves[leaves.length - 1].angle + (Math.PI * 2) / (leaves.length + 1);
+    const angle =
+      leaves.length === 0
+        ? -Math.PI / 2
+        : leaves[leaves.length - 1].angle + (Math.PI * 2) / (leaves.length + 1);
     // redistribute angles evenly
     const n = leaves.length + 1;
     const id = nextId;
     setNextId((x) => x + 1);
     setLeaves(
       Array.from({ length: n }, (_, i) => ({
-        id: i === n - 1 ? id : leaves[i]?.id ?? id,
+        id: i === n - 1 ? id : (leaves[i]?.id ?? id),
         angle: (i / n) * Math.PI * 2 - Math.PI / 2,
       })),
     );
@@ -95,13 +98,7 @@ export default function DegreeGraphTheory() {
               </g>
             );
           })}
-          <circle
-            cx={cx}
-            cy={cy}
-            r={7.5}
-            fill="var(--cyan)"
-            opacity={0.25}
-          />
+          <circle cx={cx} cy={cy} r={7.5} fill="var(--cyan)" opacity={0.25} />
           <circle
             cx={cx}
             cy={cy}

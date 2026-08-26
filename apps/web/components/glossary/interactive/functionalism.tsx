@@ -61,14 +61,7 @@ export default function Functionalism() {
 
           {SUBS.map((s) => (
             <g key={s.id}>
-              <line
-                x1={s.x}
-                y1="28"
-                x2={s.x}
-                y2="44"
-                stroke={s.color}
-                strokeWidth="0.7"
-              />
+              <line x1={s.x} y1="28" x2={s.x} y2="44" stroke={s.color} strokeWidth="0.7" />
               <rect
                 x={s.x - 10}
                 y="44"
@@ -87,14 +80,7 @@ export default function Functionalism() {
               >
                 {t(s.id).slice(0, 6)}
               </text>
-              <line
-                x1={s.x}
-                y1="60"
-                x2={s.x}
-                y2="72"
-                stroke={s.color}
-                strokeWidth="0.7"
-              />
+              <line x1={s.x} y1="60" x2={s.x} y2="72" stroke={s.color} strokeWidth="0.7" />
               {/* identical outputs */}
               <circle cx={s.x} cy="76" r="4" fill={s.color} opacity={0.75} />
               <text

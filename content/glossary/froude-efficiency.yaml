@@ -1,0 +1,33 @@
+id: froude-efficiency
+label:
+  vi: Hiệu suất Froude
+  en: Froude efficiency
+definition:
+  vi: >-
+    Tỉ lệ công suất thực sự đẩy được con vật so với tổng công suất thủy động nó bỏ ra. Với một dòng
+    phun, công thức gọn đến mức bất ngờ: bằng hai lần tốc độ bơi chia cho tổng tốc độ bơi và tốc độ
+    dòng phun. Đọc lên là thấy ngay kết luận — hiệu suất chỉ tiến tới 1 khi tốc độ phun tiến tới tốc
+    độ bơi, tức là khi ta thôi phun mà chỉ còn nhẹ nhàng dịch nước ra sau. Mực bơi phản lực đo được
+    khoảng 0,38–0,55; cá đuối vỗ vây vượt 0,85. Càng phun mạnh càng lãng phí, và đó là giới hạn nền
+    tảng của mọi cơ chế đẩy bằng dòng phun.
+  en: >-
+    The share of an animal's hydrodynamic power output that actually moves the animal rather than the
+    water. For a jet the expression is startlingly compact: twice the swimming speed divided by the sum
+    of the swimming speed and the jet speed. Read it aloud and the conclusion is immediate — efficiency
+    approaches one only as jet velocity approaches swimming velocity, which is to say only as you stop
+    jetting and start gently sliding water rearwards. Measured jetting squid land at 0.38–0.55;
+    flapping rays exceed 0.85. Harder jetting always means more waste, and that is the fundamental
+    ceiling on jet propulsion.
+see_also:
+  - jet-propulsion
+  - cost-of-transport
+  - strouhal-number
+  - added-mass
+category: concept
+tags:
+  - physics
+  - physiology
+cover_prompt: >-
+  Two wakes in dark water compared side by side: a narrow chain of small tight glowing vortex rings
+  above, a broad train of large faint slow vortex loops below, cyan and teal bioluminescent particles
+  tracing the rotation against void indigo, painterly flow-visualisation plate, no text, no labels.

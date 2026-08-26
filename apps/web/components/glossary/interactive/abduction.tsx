@@ -45,11 +45,7 @@ export default function Abduction() {
             const x = 18 + i * 28;
             const on = i === mode;
             return (
-              <g
-                key={m.key}
-                onClick={() => setMode(i)}
-                style={{ cursor: "pointer" }}
-              >
+              <g key={m.key} onClick={() => setMode(i)} style={{ cursor: "pointer" }}>
                 <rect
                   x={x - 10}
                   y="28"

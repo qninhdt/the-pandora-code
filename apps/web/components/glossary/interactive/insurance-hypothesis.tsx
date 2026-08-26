@@ -44,8 +44,7 @@ export default function InsuranceHypothesis() {
       allowFullscreen={false}
       caption={
         <span>
-          {t("function")}:{" "}
-          <span className="text-teal">{Math.round(diverseFn * 100)}%</span> vs{" "}
+          {t("function")}: <span className="text-teal">{Math.round(diverseFn * 100)}%</span> vs{" "}
           <span className="text-magenta">{Math.round(monoFn * 100)}%</span>
         </span>
       }
@@ -69,7 +68,14 @@ export default function InsuranceHypothesis() {
           </text>
           {tolerances.map((tol, i) => {
             const alive = tol > stressLevel;
-            const colors = ["var(--cyan)", "var(--teal)", "var(--amber)", "var(--cyan)", "var(--teal)", "var(--amber)"];
+            const colors = [
+              "var(--cyan)",
+              "var(--teal)",
+              "var(--amber)",
+              "var(--cyan)",
+              "var(--teal)",
+              "var(--amber)",
+            ];
             return (
               <rect
                 key={i}
@@ -84,8 +90,25 @@ export default function InsuranceHypothesis() {
             );
           })}
           {/* function bar diverse */}
-          <rect x="12" y="58" width="34" height="5" rx="1" fill="var(--surface)" stroke="var(--border-strong)" strokeWidth="0.3" />
-          <rect x="12" y="58" width={34 * diverseFn} height="5" rx="1" fill="var(--teal)" opacity="0.8" />
+          <rect
+            x="12"
+            y="58"
+            width="34"
+            height="5"
+            rx="1"
+            fill="var(--surface)"
+            stroke="var(--border-strong)"
+            strokeWidth="0.3"
+          />
+          <rect
+            x="12"
+            y="58"
+            width={34 * diverseFn}
+            height="5"
+            rx="1"
+            fill="var(--teal)"
+            opacity="0.8"
+          />
 
           {/* monoculture plot */}
           <text
@@ -111,8 +134,25 @@ export default function InsuranceHypothesis() {
               />
             );
           })}
-          <rect x="56" y="58" width="34" height="5" rx="1" fill="var(--surface)" stroke="var(--border-strong)" strokeWidth="0.3" />
-          <rect x="56" y="58" width={34 * monoFn} height="5" rx="1" fill="var(--magenta)" opacity="0.8" />
+          <rect
+            x="56"
+            y="58"
+            width="34"
+            height="5"
+            rx="1"
+            fill="var(--surface)"
+            stroke="var(--border-strong)"
+            strokeWidth="0.3"
+          />
+          <rect
+            x="56"
+            y="58"
+            width={34 * monoFn}
+            height="5"
+            rx="1"
+            fill="var(--magenta)"
+            opacity="0.8"
+          />
 
           {/* stress overlay */}
           {stress > 0 && (

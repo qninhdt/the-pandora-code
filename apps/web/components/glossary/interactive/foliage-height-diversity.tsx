@@ -47,7 +47,13 @@ export default function FoliageHeightDiversity() {
       }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {/* axes */}
           <line x1="24" y1="20" x2="24" y2="72" stroke="var(--border-strong)" strokeWidth="0.5" />
           <line x1="24" y1="72" x2="88" y2="72" stroke="var(--border-strong)" strokeWidth="0.5" />
@@ -58,8 +64,21 @@ export default function FoliageHeightDiversity() {
             { m: low, y: 56, c: "var(--cyan)", label: "L" },
           ].map((row) => (
             <g key={row.label}>
-              <rect x="26" y={row.y} width={8 + row.m * 50} height="10" fill={row.c} opacity={0.55} rx="1" />
-              <text x="20" y={row.y + 7} textAnchor="end" style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--muted)" }}>
+              <rect
+                x="26"
+                y={row.y}
+                width={8 + row.m * 50}
+                height="10"
+                fill={row.c}
+                opacity={0.55}
+                rx="1"
+              />
+              <text
+                x="20"
+                y={row.y + 7}
+                textAnchor="end"
+                style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--muted)" }}
+              >
                 {row.label}
               </text>
             </g>
@@ -75,7 +94,12 @@ export default function FoliageHeightDiversity() {
               opacity={0.5 + fhd * 0.5}
             />
           ))}
-          <text x="50" y="90" textAnchor="middle" style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="50"
+            y="90"
+            textAnchor="middle"
+            style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("niches")}
           </text>
         </svg>
@@ -83,9 +107,36 @@ export default function FoliageHeightDiversity() {
           <Readout label={t("fhd")} value={fhd.toFixed(2)} accent="teal" />
         </div>
         <div className="absolute inset-x-3 bottom-10 space-y-1.5">
-          <ControlSlider label={`${t("layer")} H`} value={high} min={0.05} max={1} step={0.01} display={`${Math.round(high * 100)}%`} onChange={setHigh} thumb="amber" />
-          <ControlSlider label={`${t("layer")} M`} value={mid} min={0.05} max={1} step={0.01} display={`${Math.round(mid * 100)}%`} onChange={setMid} thumb="teal" />
-          <ControlSlider label={`${t("layer")} L`} value={low} min={0.05} max={1} step={0.01} display={`${Math.round(low * 100)}%`} onChange={setLow} thumb="cyan" />
+          <ControlSlider
+            label={`${t("layer")} H`}
+            value={high}
+            min={0.05}
+            max={1}
+            step={0.01}
+            display={`${Math.round(high * 100)}%`}
+            onChange={setHigh}
+            thumb="amber"
+          />
+          <ControlSlider
+            label={`${t("layer")} M`}
+            value={mid}
+            min={0.05}
+            max={1}
+            step={0.01}
+            display={`${Math.round(mid * 100)}%`}
+            onChange={setMid}
+            thumb="teal"
+          />
+          <ControlSlider
+            label={`${t("layer")} L`}
+            value={low}
+            min={0.05}
+            max={1}
+            step={0.01}
+            display={`${Math.round(low * 100)}%`}
+            onChange={setLow}
+            thumb="cyan"
+          />
         </div>
       </div>
     </GlossaryFrame>

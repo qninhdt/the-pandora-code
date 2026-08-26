@@ -1,9 +1,14 @@
 import { AtmosphereProvider } from "@/components/atmosphere/atmosphere-provider";
 import { FloatingDock } from "@/components/layout/floating-dock";
 import { SiteFooter } from "@/components/layout/site-footer";
+import { ScrollPositionRestorer } from "@/components/navigation/scroll-position-restorer";
 import { InstallAndUpdateStatus } from "@/components/offline/install-and-update-status";
+import { OfflineProvider } from "@/components/offline/offline-provider";
+import { ReaderSettingsMenu } from "@/components/reading/reader-settings-menu";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { type Locale, isLocale, locales } from "@/i18n/config";
+import { ReadingPreferencesProvider } from "@/lib/engagement/preferences-store";
+import { fontVariables } from "@/lib/fonts";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -17,26 +22,36 @@ interface LocaleLayoutProps {
   params: Promise<{ locale: string }>;
 }
 
+// This segment owns <html>/<body>: it is the first layout that knows the route
+// locale, so `lang` and every server-rendered translation resolve correctly
+// here. The parent app/layout.tsx is a pass-through for that reason.
 export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
   setRequestLocale(locale);
-  // The root layout resolves the default locale before this segment runs. Pass
-  // the route locale explicitly so client components (offline controls,
-  // navigation, prompts) never hydrate with English messages on `/vi` routes.
   const messages = await getMessages({ locale });
 
   return (
-    <NextIntlClientProvider locale={locale as Locale} messages={messages}>
-      <TooltipProvider delayDuration={150}>
-        <AtmosphereProvider />
-        <FloatingDock />
-        <InstallAndUpdateStatus />
-        <div>
-          {children}
-          <SiteFooter />
-        </div>
-      </TooltipProvider>
-    </NextIntlClientProvider>
+    <html lang={locale} className={fontVariables}>
+      <body>
+        <NextIntlClientProvider locale={locale as Locale} messages={messages}>
+          <ScrollPositionRestorer />
+          <ReadingPreferencesProvider>
+            <OfflineProvider>
+              <TooltipProvider delayDuration={150}>
+                <AtmosphereProvider />
+                <FloatingDock />
+                <InstallAndUpdateStatus />
+                <ReaderSettingsMenu />
+                <div>
+                  {children}
+                  <SiteFooter />
+                </div>
+              </TooltipProvider>
+            </OfflineProvider>
+          </ReadingPreferencesProvider>
+        </NextIntlClientProvider>
+      </body>
+    </html>
   );
 }

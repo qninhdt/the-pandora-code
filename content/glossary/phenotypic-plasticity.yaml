@@ -1,0 +1,33 @@
+id: phenotypic-plasticity
+label:
+  vi: Độ dẻo kiểu hình
+  en: Phenotypic plasticity
+definition:
+  vi: >-
+    Khả năng một bộ gene cho ra những cơ thể khác nhau tùy theo hoàn cảnh mà nó lớn lên. Khác với thích
+    nghi sinh lý, những thay đổi này thường xảy ra trong một cửa sổ phát triển hẹp của tuổi thơ và rồi
+    ở lại: lồng ngực sâu hơn của đứa trẻ lớn lên trên vùng núi cao là một ví dụ. Nghiên cứu của Gislén
+    và cộng sự trên trẻ em Moken ở biển Andaman cho thấy chúng nhìn dưới nước rõ gấp đôi trẻ em châu Âu
+    — rồi năm 2006, những đứa trẻ châu Âu được tập một tháng đã đạt đúng mức đó và giữ được nhiều tháng
+    sau. Chẳng có gì được di truyền cả. Chỉ là một cơ thể đang lớn được định hình bởi chính việc nó làm.
+  en: >-
+    The capacity of one genome to produce different bodies depending on the conditions it grows up in.
+    Unlike acclimatization, these changes usually happen inside a narrow developmental window in
+    childhood and then stay: the deeper chest of a child raised at high altitude is one example. Gislén
+    and colleagues found that Moken children of the Andaman Sea saw twice as sharply underwater as
+    European children — and then in 2006 European children given a month of practice matched them
+    exactly, and kept it for months. Nothing was inherited. A growing body was simply shaped by what it
+    did.
+see_also:
+  - acclimatization
+  - neuroplasticity
+  - canalization
+  - morphogenesis
+category: bio
+tags:
+  - developmental-biology
+  - evolution
+cover_prompt: >-
+  A painterly study of two young figures of the same build seen underwater, one with visibly narrowed
+  pupils and a clear steady gaze, the other squinting into blur, the water between them the same cool
+  teal, deep indigo depth behind, no text, no labels, no numbers.

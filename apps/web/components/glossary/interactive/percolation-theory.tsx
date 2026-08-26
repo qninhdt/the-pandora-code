@@ -32,7 +32,12 @@ function spanningCluster(occ: boolean[][]) {
   }
   const members = new Set<string>();
   let spans = false;
-  const dirs = [[1, 0], [-1, 0], [0, 1], [0, -1]];
+  const dirs = [
+    [1, 0],
+    [-1, 0],
+    [0, 1],
+    [0, -1],
+  ];
   while (q.length) {
     const [r, c] = q.pop()!;
     members.add(`${r},${c}`);
@@ -90,13 +95,7 @@ export default function PercolationTheory() {
                   width={cell - 0.3}
                   height={cell - 0.3}
                   rx={0.3}
-                  fill={
-                    !on
-                      ? "var(--void)"
-                      : inSpan
-                        ? "var(--amber)"
-                        : "var(--cyan)"
-                  }
+                  fill={!on ? "var(--void)" : inSpan ? "var(--amber)" : "var(--cyan)"}
                   opacity={on ? (inSpan ? 0.95 : 0.55) : 0.25}
                   stroke="var(--border-strong)"
                   strokeWidth={0.15}
@@ -105,8 +104,22 @@ export default function PercolationTheory() {
             }),
           )}
           {/* left/right markers */}
-          <line x1={ox - 1} y1={oy} x2={ox - 1} y2={oy + G * cell} stroke="var(--teal)" strokeWidth={0.8} />
-          <line x1={ox + G * cell + 0.5} y1={oy} x2={ox + G * cell + 0.5} y2={oy + G * cell} stroke="var(--teal)" strokeWidth={0.8} />
+          <line
+            x1={ox - 1}
+            y1={oy}
+            x2={ox - 1}
+            y2={oy + G * cell}
+            stroke="var(--teal)"
+            strokeWidth={0.8}
+          />
+          <line
+            x1={ox + G * cell + 0.5}
+            y1={oy}
+            x2={ox + G * cell + 0.5}
+            y2={oy + G * cell}
+            stroke="var(--teal)"
+            strokeWidth={0.8}
+          />
         </svg>
         <div className="absolute right-3 top-14">
           <Readout label="p" value={p.toFixed(2)} accent={spans ? "amber" : "cyan"} />

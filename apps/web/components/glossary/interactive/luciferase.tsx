@@ -22,8 +22,22 @@ export default function Luciferase() {
       caption={<span className="text-teal">{t(PHASES[phase])}</span>}
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
-          <ellipse cx="50" cy="48" rx="28" ry="18" fill="var(--surface)" stroke="var(--cyan)" strokeWidth="1" />
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
+          <ellipse
+            cx="50"
+            cy="48"
+            rx="28"
+            ry="18"
+            fill="var(--surface)"
+            stroke="var(--cyan)"
+            strokeWidth="1"
+          />
           <ellipse
             cx="50"
             cy="48"
@@ -41,16 +55,40 @@ export default function Luciferase() {
             opacity="0.9"
             style={phase === 2 ? { filter: "drop-shadow(0 0 8px var(--teal))" } : undefined}
           />
-          {phase === 2 && <circle cx="78" cy="32" r="4" fill="var(--cyan)" style={{ filter: "drop-shadow(0 0 6px var(--cyan))" }} />}
-          <text x="50" y="78" textAnchor="middle" style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--muted)" }}>{t("active")}</text>
+          {phase === 2 && (
+            <circle
+              cx="78"
+              cy="32"
+              r="4"
+              fill="var(--cyan)"
+              style={{ filter: "drop-shadow(0 0 6px var(--cyan))" }}
+            />
+          )}
+          <text
+            x="50"
+            y="78"
+            textAnchor="middle"
+            style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
+            {t("active")}
+          </text>
         </svg>
         <div className="absolute right-3 top-14">
           <Readout label={t("active")} value={t(PHASES[phase])} accent="teal" />
         </div>
         <div className="absolute inset-x-3 bottom-12 flex justify-center gap-1.5">
           {PHASES.map((p, i) => (
-            <button key={p} type="button" onClick={() => setPhase(i)} className="rounded-lg border px-3 py-1 font-mono text-[10px] uppercase"
-              style={{ borderColor: phase === i ? "var(--teal)" : "var(--border-strong)", color: phase === i ? "var(--teal)" : "var(--muted)", background: "var(--void)" }}>
+            <button
+              key={p}
+              type="button"
+              onClick={() => setPhase(i)}
+              className="rounded-lg border px-3 py-1 font-mono text-[10px] uppercase"
+              style={{
+                borderColor: phase === i ? "var(--teal)" : "var(--border-strong)",
+                color: phase === i ? "var(--teal)" : "var(--muted)",
+                background: "var(--void)",
+              }}
+            >
               {t(p)}
             </button>
           ))}

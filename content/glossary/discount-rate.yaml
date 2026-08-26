@@ -1,0 +1,33 @@
+id: discount-rate
+label:
+  vi: Suất chiết khấu
+  en: Discount rate
+definition:
+  vi: >-
+    Tỉ lệ mà theo đó một khoản tiền trong tương lai được coi là kém giá trị hơn cùng khoản tiền đó
+    hôm nay. Nó không phản ánh sự thiếu kiên nhẫn về mặt cảm xúc mà phản ánh chi phí cơ hội: tiền
+    nhận hôm nay có thể đem đầu tư chỗ khác và tự sinh lời. Đối với tài nguyên sống, con số này là
+    bản lề của toàn bộ vấn đề, vì nó đứng cùng đơn vị với tốc độ sinh trưởng sinh học. Nếu quần thể
+    lớn nhanh hơn suất chiết khấu, để con vật lại trong tự nhiên chính là khoản đầu tư tốt hơn. Nếu
+    suất chiết khấu cao hơn, chờ đợi trở thành lỗ — và khi đó phép tính tài chính, chứ không phải sự
+    tàn nhẫn, là thứ khuyến nghị lấy hết ngay.
+  en: >-
+    The rate at which a sum of money in the future counts as worth less than the same sum today. It
+    reflects not emotional impatience but opportunity cost: money received now can be invested
+    elsewhere and earn a return on its own. For a living resource this number is the hinge of the whole
+    problem, because it is measured in the same units as biological growth. If a population grows faster
+    than the discount rate, leaving the animals in the wild is itself the better investment. If the
+    discount rate is higher, waiting becomes a loss — and then it is the financial arithmetic, not
+    cruelty, that recommends taking everything now.
+see_also:
+  - bioeconomics
+  - optimal-extinction
+  - open-access-resource
+category: concept
+tags:
+  - bioeconomics
+cover_prompt: >-
+  A painterly plate of a row of identical coin discs receding into depth, each one rendered fainter
+  and more transparent than the one before until the farthest is barely visible in the haze, cool teal
+  metallic sheen with a warm amber highlight on the nearest coin, deep indigo behind, painterly
+  naturalist plate, no text, no labels.

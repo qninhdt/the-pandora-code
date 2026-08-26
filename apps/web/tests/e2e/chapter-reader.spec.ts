@@ -17,7 +17,7 @@ test.describe("chapter reader", () => {
   test("chapters index lists a published chapter", async ({ page }) => {
     await page.goto("/vi/chapters");
     await expect(
-      page.getByRole("link", { name: /reading pandora as a specimen/i }).first(),
+      page.locator('a[href="/vi/chapters/reading-pandora-as-a-specimen"]').first(),
     ).toBeVisible();
   });
 

@@ -47,9 +47,7 @@ export function ControlTabs<T extends string>({
               "rounded-lg px-2.5 py-1 font-mono text-[11px] uppercase tracking-wide",
               "transition-colors duration-[--duration-fast] cursor-pointer",
               "focus-visible:outline-2 focus-visible:outline-cyan focus-visible:outline-offset-2",
-              active
-                ? "bg-cyan/15 text-cyan"
-                : "text-muted hover:text-foreground",
+              active ? "bg-cyan/15 text-cyan" : "text-muted hover:text-foreground",
             )}
           >
             {opt.label}

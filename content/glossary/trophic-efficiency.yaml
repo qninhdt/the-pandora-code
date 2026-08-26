@@ -1,0 +1,32 @@
+id: trophic-efficiency
+label:
+  vi: Hiệu suất chuyển bậc dinh dưỡng
+  en: Trophic efficiency
+definition:
+  vi: >-
+    Tỉ lệ năng lượng ở một bậc thức ăn thực sự đi lên được bậc kế tiếp — theo quan sát của Lindeman thì
+    khoảng một phần mười, phần còn lại mất vào hô hấp, chất thải và những gì không bị ăn. Vì các bậc nhân
+    dồn nhau, hệ quả rất nhanh trở nên tàn nhẫn: một chuỗi bốn bậc chỉ giữ lại chừng một phần nghìn lượng
+    carbon ban đầu. Đó là lý do kẻ săn đỉnh bảng luôn hiếm theo số học chứ không phải tình cờ, và là lý do
+    một trường thủy nhiệt rộng vài nghìn mét vuông — dù năng suất trên mỗi mét vuông ngang rừng nhiệt đới —
+    chỉ nuôi nổi những kẻ săn cân được bằng kilogram.
+  en: >-
+    The share of the energy at one trophic level that actually reaches the next — by Lindeman's observation
+    roughly a tenth, the rest lost to respiration, waste and whatever goes uneaten. Because levels compound,
+    the consequence turns brutal fast: a four-step chain retains about a thousandth of the carbon originally
+    fixed. That is why apex predators are rare by arithmetic rather than by accident, and why a hydrothermal
+    field of a few thousand square metres — however rainforest-grade its productivity per square metre —
+    supports top predators measured in kilograms.
+see_also:
+  - chemolithoautotroph
+  - carrying-capacity
+  - biological-pump
+  - ecological-niche
+category: concept
+tags:
+  - ecology
+  - earth-systems
+cover_prompt: >-
+  A stepped pyramid of four horizontal tiers in dark water, the broad glowing cyan base narrowing sharply
+  each step until the top tier is a small faint magenta sliver, the sheer loss between steps visually
+  dominant, painterly naturalist plate, no text, no labels.

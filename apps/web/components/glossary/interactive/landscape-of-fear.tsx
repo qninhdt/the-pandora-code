@@ -19,9 +19,7 @@ function foodAt(i: number, j: number): number {
 
 export default function LandscapeOfFear() {
   const t = useTranslations("viz.landscape-of-fear");
-  const [preds, setPreds] = useState<{ c: number; r: number }[]>([
-    { c: 8, r: 2 },
-  ]);
+  const [preds, setPreds] = useState<{ c: number; r: number }[]>([{ c: 8, r: 2 }]);
 
   const cells = useMemo(() => {
     const out: {
@@ -49,10 +47,8 @@ export default function LandscapeOfFear() {
     return out.map((cell) => ({ ...cell, fn: cell.forage / maxF }));
   }, [preds]);
 
-  const meanRisk =
-    cells.reduce((s, c) => s + c.risk, 0) / Math.max(1, cells.length);
-  const meanForage =
-    cells.reduce((s, c) => s + c.fn, 0) / Math.max(1, cells.length);
+  const meanRisk = cells.reduce((s, c) => s + c.risk, 0) / Math.max(1, cells.length);
+  const meanForage = cells.reduce((s, c) => s + c.fn, 0) / Math.max(1, cells.length);
 
   const onCell = (c: number, r: number) => {
     setPreds((prev) => {
@@ -133,10 +129,7 @@ export default function LandscapeOfFear() {
           <ControlButton className="px-2.5 py-1.5" variant="default" disabled>
             {t("place")}
           </ControlButton>
-          <ControlButton
-            className="px-2.5 py-1.5"
-            onClick={() => setPreds([])}
-          >
+          <ControlButton className="px-2.5 py-1.5" onClick={() => setPreds([])}>
             {t("clear")}
           </ControlButton>
         </div>

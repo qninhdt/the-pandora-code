@@ -1,0 +1,35 @@
+id: total-synthesis
+label:
+  vi: Tổng hợp toàn phần
+  en: Total synthesis
+definition:
+  vi: >-
+    Việc dựng lại một phân tử phức tạp từ những nguyên liệu hóa học đơn giản, không cần đến sinh vật
+    đã sinh ra nó. Đây là con đường thoát khỏi khai thác hoang dã, và nó không hề rẻ: eribulin cần
+    một lộ trình 62 bước có kiểm soát lập thể; bryostatin cần 29 bước. Trabectedin thoát ra theo cách
+    khác — bán tổng hợp từ một tiền chất do vi khuẩn lên men, sau khi việc nuôi 250 tấn hải tiêu vẫn
+    không đủ. Paclitaxel cũng vậy: bán tổng hợp từ chất lấy được ở lá thông đỏ, rồi nuôi tế bào thực
+    vật trong nồi phản ứng. Quy tắc chung của ngành hợp chất tự nhiên là: khi đã biết cấu trúc, thu
+    hái ngoài tự nhiên gần như luôn là cách sản xuất đắt nhất, mong manh nhất và kém hiệu quả nhất.
+  en: >-
+    Rebuilding a complex molecule from simple chemical starting materials, without the organism that
+    made it. This is the exit from wild harvest, and it is not cheap: eribulin required a 62-step
+    stereoselective route; bryostatin, 29 steps. Trabectedin escaped differently — semi-synthesis from
+    a bacterially fermented precursor, after farming 250 tonnes of tunicate still proved insufficient.
+    Paclitaxel likewise: semi-synthesis from a compound harvested renewably from yew needles, then
+    plant-cell culture in bioreactors. The governing rule of natural-product chemistry is that once a
+    structure is known, wild harvest is almost always the most expensive, most fragile and least
+    efficient way to manufacture it.
+see_also:
+  - marine-natural-product
+  - bioprospecting
+  - bioeconomics
+category: concept
+tags:
+  - chemistry
+  - pharmacology
+cover_prompt: >-
+  A painterly plate of a long chain of small glass flasks arranged in a rising sequence, each holding
+  a slightly more elaborate molecular skeleton than the one before, the final flask holding a dense
+  intricate structure, cool teal glass with faint amber reaction glow on dark indigo, painterly
+  naturalist plate, no text, no labels.

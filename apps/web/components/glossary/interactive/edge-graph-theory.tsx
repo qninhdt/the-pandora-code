@@ -71,15 +71,45 @@ export default function EdgeGraphTheory() {
           {!directed && (
             <>
               {/* double-ended soft ticks for undirected */}
-              <circle cx={mx} cy={my} r={1.4} fill={weighted ? "var(--amber)" : "var(--cyan)"} opacity={0.7} />
+              <circle
+                cx={mx}
+                cy={my}
+                r={1.4}
+                fill={weighted ? "var(--amber)" : "var(--cyan)"}
+                opacity={0.7}
+              />
             </>
           )}
-          <circle cx={ax} cy={ay} r={6.5} fill="var(--surface)" stroke="var(--teal)" strokeWidth={1.2} />
-          <circle cx={bx} cy={by} r={6.5} fill="var(--surface)" stroke="var(--teal)" strokeWidth={1.2} />
-          <text x={ax} y={ay + 1.5} textAnchor="middle" style={{ fontSize: 4, fontFamily: "monospace", fill: "var(--teal)" }}>
+          <circle
+            cx={ax}
+            cy={ay}
+            r={6.5}
+            fill="var(--surface)"
+            stroke="var(--teal)"
+            strokeWidth={1.2}
+          />
+          <circle
+            cx={bx}
+            cy={by}
+            r={6.5}
+            fill="var(--surface)"
+            stroke="var(--teal)"
+            strokeWidth={1.2}
+          />
+          <text
+            x={ax}
+            y={ay + 1.5}
+            textAnchor="middle"
+            style={{ fontSize: 4, fontFamily: "monospace", fill: "var(--teal)" }}
+          >
             A
           </text>
-          <text x={bx} y={by + 1.5} textAnchor="middle" style={{ fontSize: 4, fontFamily: "monospace", fill: "var(--teal)" }}>
+          <text
+            x={bx}
+            y={by + 1.5}
+            textAnchor="middle"
+            style={{ fontSize: 4, fontFamily: "monospace", fill: "var(--teal)" }}
+          >
             B
           </text>
           {weighted && (
@@ -108,11 +138,7 @@ export default function EdgeGraphTheory() {
           >
             {weighted ? t("weighted") : t("plain")}
           </ControlButton>
-          <Readout
-            label={t("weight")}
-            value={weighted ? weight.toFixed(2) : "—"}
-            accent="amber"
-          />
+          <Readout label={t("weight")} value={weighted ? weight.toFixed(2) : "—"} accent="amber" />
         </div>
         {weighted && (
           <div className="absolute inset-x-3 bottom-10">

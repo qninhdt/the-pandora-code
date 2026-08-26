@@ -1,0 +1,39 @@
+{
+  "id": "fig-02-two-engines",
+  "chapter_slug": "squidray-and-the-deep-ocean-design-space",
+  "role": "diagram",
+  "narrative_purpose": "Makes the two propulsion systems visible on one body: a broad low-cost flapping wing surface on one side, and a small high-pressure nozzle fed by a muscular cavity on the other.",
+  "subject": "A single large squid-ray animal seen from directly above, its body opened as a naturalist cutaway along the centre line. On the left half the wing is intact and whole, shown mid-downstroke as a broad curved muscular sheet with long parallel muscle fibre bands running out toward its pointed tip. On the right half the body wall is cut away to reveal a large hollow internal cavity lined with thick circular and radial muscle bands, narrowing at the rear into a short smooth funnel nozzle that opens through the flank. A thin stream of water is shown leaving that nozzle as a narrow tapering jet. The head with its four eyes and twelve tentacles is intact at the front of the frame.",
+  "scene": "Neutral dark open water with no background objects, the animal isolated as a specimen plate.",
+  "camera": "Straight-on overhead plan view, flat and diagrammatic, the whole animal filling the frame front to back.",
+  "light": "Even soft cool illumination from above with no strong shadow; faint cyan glow inside the exposed muscular cavity; the intact wing lit slightly warmer than the cutaway side.",
+  "palette": "Deep teal and indigo body tones, muted stone-grey muscle bands, cyan glow in the cavity interior, one amber accent on the nozzle opening.",
+  "style": "Hand-painted anatomical cutaway plate in a naturalist field-guide idiom, painterly not vector.",
+  "detail_level": "High detail on the muscle fibre banding, the cavity lining and the nozzle throat; plain dark water surrounding the whole animal for annotations.",
+  "composition": "Bilateral split with the intact wing on the left and the cutaway cavity and nozzle on the right, animal centred, wide plain dark margins on all four sides.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "measurement rules",
+    "panel borders",
+    "callout circles",
+    "mechanical parts",
+    "metal turbine"
+  ],
+  "consistency_notes": "Same animal as fig-00-cover: four eyes, twelve tentacles, ray-like wings. The nozzle is biological tissue, never a machine part. Both halves are the same individual, not two specimens.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no metal machinery, no turbine blades, no infographic panels, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/squidray-and-the-deep-ocean-design-space/fig-00-cover.png"
+  ]
+}

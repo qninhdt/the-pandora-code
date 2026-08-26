@@ -1,0 +1,31 @@
+id: boyles-law
+label:
+  vi: Định luật Boyle
+  en: Boyle's law
+definition:
+  vi: >-
+    Với một lượng khí cố định ở nhiệt độ không đổi, thể tích tỉ lệ nghịch với áp suất: nén gấp đôi thì
+    khối khí còn một nửa. Nghe khô khan, nhưng đây chính là điều xảy ra bên trong lồng ngực mỗi người
+    lặn. Một lá phổi 6 lít hít căng trên mặt nước, xuống tới 30 mét trên Trái Đất — nơi áp suất gần
+    bốn atmosphere — chỉ còn khoảng 1,5 lít, đúng bằng thể tích khí cặn mà lồng ngực không thể gập nhỏ
+    hơn. Sâu hơn nữa, khối khí muốn nhỏ hơn giới hạn hình học của lồng ngực, và phải có thứ khác lấp
+    vào khoảng trống đó, nếu không mạch máu phổi sẽ vỡ.
+  en: >-
+    For a fixed amount of gas at constant temperature, volume is inversely proportional to pressure:
+    double the squeeze and you halve the gas. It sounds dry, but it is exactly what happens inside a
+    diver's chest. A 6-litre lung filled at the surface, taken to 30 metres on Earth — near four
+    atmospheres — is down to about 1.5 litres, which is precisely the residual volume the chest cannot
+    fold below. Deeper than that, the gas wants to be smaller than the ribcage geometrically allows,
+    and something else must fill the gap or the pulmonary vessels tear.
+see_also:
+  - partial-pressure
+  - archimedes-principle
+  - hypercapnia
+  - aerobic-dive-limit
+category: concept
+tags:
+  - physics
+cover_prompt: >-
+  A painterly sequence of the same translucent gas bubble at four depths in dark water, each smaller
+  and denser than the last, the water above growing heavier and darker, cool teal highlights on the
+  bubble walls against deep indigo, no text, no labels, no numbers.

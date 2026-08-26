@@ -121,7 +121,12 @@ export default function Superorganism() {
               x="50"
               y="50"
               textAnchor="middle"
-              style={{ fontSize: 4, fontFamily: "monospace", fill: "var(--amber)", fontWeight: 700 }}
+              style={{
+                fontSize: 4,
+                fontFamily: "monospace",
+                fill: "var(--amber)",
+                fontWeight: 700,
+              }}
             >
               {choiceLabel}
             </text>

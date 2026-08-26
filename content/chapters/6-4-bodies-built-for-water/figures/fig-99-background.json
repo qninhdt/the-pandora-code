@@ -1,0 +1,33 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "bodies-built-for-water",
+  "role": "hero",
+  "narrative_purpose": "Atmospheric full-bleed background layer for the chapter page: a wide, dim open-ocean void that long-form reader prose floats over without competing with it.",
+  "subject": "An ultra-wide panoramic view of vast open Pandoran ocean seen from high in the water column, looking outward into empty blue-black water. Faint broad shafts of pale light descend from a distant surface far above and dissolve before reaching the bottom of the frame. Very far below and to one side, the barest suggestion of a pale reef ridge fades into haze. Scattered drifting particles catch the light dimly. No single bright subject anywhere in the frame.",
+  "scene": "Immense dim underwater emptiness receding into depth in every direction, all detail dissolving into atmospheric haze.",
+  "camera": "High-vantage ultra-wide panorama with extreme atmospheric depth of field.",
+  "light": "Very low contrast throughout, dim deep indigo ambient, weak diffuse light shafts from far above, faint scattered cyan glimmers in the distance.",
+  "palette": "Void indigo and deep teal dominant, the faintest cyan glimmers, no warm accents.",
+  "style": "Dark atmospheric background plate, painterly and diffuse, deliberately understated.",
+  "detail_level": "Soft, hazy and low contrast everywhere so overlaid long-form text stays fully readable.",
+  "composition": "Empty hazy open water filling the upper two thirds, the faint far reef ridge low in the lower third at one side, no focal subject.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "bright focal objects",
+    "high-contrast figures",
+    "creatures",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Must be dark, hazy and low contrast with no bright focal point anywhere, since long-form text is overlaid on top of it.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no bright foreground objects, no high-contrast elements, no creatures, no photographic or 3D-render look",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

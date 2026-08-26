@@ -1,9 +1,9 @@
 "use client";
 
-import { Github } from "lucide-react";
-import Link from "next/link";
-import { useLocale, useTranslations } from "next-intl";
 import type { Locale } from "@/i18n/config";
+import { Github } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
+import Link from "next/link";
 
 // A quiet horizon at the foot of every page - a thin bioluminescent rule, the
 // Bardabez byline, the in-world tagline, and the locale.

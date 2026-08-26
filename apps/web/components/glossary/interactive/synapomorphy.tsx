@@ -28,9 +28,7 @@ export default function Synapomorphy() {
       onReset={() => setShow(false)}
       allowFullscreen={false}
       caption={
-        <span className={show ? "text-cyan" : "text-muted"}>
-          {show ? t("valid") : t("hint")}
-        </span>
+        <span className={show ? "text-cyan" : "text-muted"}>{show ? t("valid") : t("hint")}</span>
       }
     >
       <div className="absolute inset-0">
@@ -113,17 +111,11 @@ export default function Synapomorphy() {
           })}
 
           {/* origin node of the synapomorphy */}
-          {show && (
-            <circle cx="36" cy="52" r="3.2" fill="var(--cyan)" opacity="0.9" />
-          )}
+          {show && <circle cx="36" cy="52" r="3.2" fill="var(--cyan)" opacity="0.9" />}
         </svg>
 
         <div className="absolute right-3 top-16">
-          <Readout
-            label={t("sharedDerived")}
-            value={show ? `${members}` : "—"}
-            accent="cyan"
-          />
+          <Readout label={t("sharedDerived")} value={show ? `${members}` : "—"} accent="cyan" />
         </div>
 
         <div className="absolute inset-x-3 bottom-12 flex justify-center">

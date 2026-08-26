@@ -5,9 +5,10 @@ import { type RefObject, useEffect, useRef, useState } from "react";
 // Lightweight visibility observer for 2D figures. Returns a ref to attach to the
 // wrapper and an `inView` flag that flips as the element enters/leaves the
 // viewport. Pair with `useRafLoop` so animations idle while scrolled away.
-export function useInView<T extends HTMLElement>(
-  options?: { rootMargin?: string; threshold?: number },
-): { ref: RefObject<T | null>; inView: boolean } {
+export function useInView<T extends HTMLElement>(options?: {
+  rootMargin?: string;
+  threshold?: number;
+}): { ref: RefObject<T | null>; inView: boolean } {
   const ref = useRef<T>(null);
   const [inView, setInView] = useState(false);
 

@@ -1,0 +1,32 @@
+id: chemolithoautotroph
+label:
+  vi: Sinh vật hóa dưỡng vô cơ tự dưỡng
+  en: Chemolithoautotroph
+definition:
+  vi: >-
+    Vi khuẩn hay archaea tự tổng hợp chất hữu cơ từ CO₂ mà không dùng một photon nào, lấy năng lượng từ việc
+    oxy hóa các hợp chất vô cơ đã bị khử: hydro sulfide, methane, hydro phân tử hay sắt hai. Riêng phản ứng
+    oxy hóa sulfide đã giải phóng gần 800 kJ/mol, đủ để chạy chu trình Calvin hoặc rTCA và dựng nên một nền
+    kinh tế sản xuất sơ cấp hoàn chỉnh. Đây là nền của các hệ sinh thái miệng phun thủy nhiệt — nơi giun ống
+    *Riftia* không có ruột, chỉ nuôi vi khuẩn cộng sinh trong một cơ quan nội tại — và là lý do phát hiện năm
+    1977 ở rãnh Galápagos đã viết lại quan niệm về nơi sự sống có thể tồn tại.
+  en: >-
+    A bacterium or archaeon that builds organic matter from CO₂ without a single photon, drawing its energy
+    from oxidising reduced inorganic compounds: hydrogen sulfide, methane, molecular hydrogen or ferrous iron.
+    Sulfide oxidation alone releases nearly 800 kJ/mol, enough to run the Calvin or rTCA cycle and support a
+    complete primary-production economy. This is the foundation of hydrothermal vent ecosystems — where
+    *Riftia* tubeworms have no gut at all and simply farm symbionts in an internal organ — and the reason the
+    1977 Galápagos Rift discovery rewrote where biologists thought life could be.
+see_also:
+  - chemosynthesis
+  - endosymbiosis
+  - bacteriocyte
+  - trophic-efficiency
+category: bio
+tags:
+  - chemistry
+  - ecology
+cover_prompt: >-
+  A dense thicket of pale tubeworms with deep magenta plumes crowded at the base of a dark mineral chimney,
+  shimmering warm fluid rising from its top, faint cyan bacterial mats glowing on the surrounding rock, void
+  indigo darkness beyond, painterly naturalist deep-sea plate, no text, no labels.

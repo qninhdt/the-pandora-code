@@ -43,17 +43,41 @@ export default function FoundationSpecies() {
           aria-label={t("title")}
         >
           {/* biomass share */}
-          <text x="16" y="24" style={{ fontSize: 2.6, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="16"
+            y="24"
+            style={{ fontSize: 2.6, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("biomass")}
           </text>
-          <rect x="16" y="26" width="68" height="6" fill="var(--void)" stroke="var(--border)" strokeWidth="0.3" />
+          <rect
+            x="16"
+            y="26"
+            width="68"
+            height="6"
+            fill="var(--void)"
+            stroke="var(--border)"
+            strokeWidth="0.3"
+          />
           <rect x="16" y="26" width={barW} height="6" fill={tone} opacity={0.75} />
 
           {/* removal impact — held constant so the ratio is the story */}
-          <text x="16" y="44" style={{ fontSize: 2.6, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="16"
+            y="44"
+            style={{ fontSize: 2.6, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("impact")}
           </text>
-          <rect x="16" y="46" width="68" height="6" fill="var(--void)" stroke="var(--border)" strokeWidth="0.3" />
+          <rect
+            x="16"
+            y="46"
+            width="68"
+            height="6"
+            fill="var(--void)"
+            stroke="var(--border)"
+            strokeWidth="0.3"
+          />
           <rect
             x="16"
             y="46"
@@ -65,13 +89,30 @@ export default function FoundationSpecies() {
           />
 
           {/* the threshold that renames the mechanism */}
-          <line x1={16 + 0.4 * 68} y1="22" x2={16 + 0.4 * 68} y2="56" stroke="var(--border-strong)" strokeWidth="0.4" strokeDasharray="1.5 1.5" />
-          <text x="50" y="66" textAnchor="middle" style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <line
+            x1={16 + 0.4 * 68}
+            y1="22"
+            x2={16 + 0.4 * 68}
+            y2="56"
+            stroke="var(--border-strong)"
+            strokeWidth="0.4"
+            strokeDasharray="1.5 1.5"
+          />
+          <text
+            x="50"
+            y="66"
+            textAnchor="middle"
+            style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("axis")}
           </text>
         </svg>
         <div className="absolute right-3 top-14">
-          <Readout label={t("ratio")} value={ratio.toFixed(1)} accent={isFoundation ? "cyan" : "magenta"} />
+          <Readout
+            label={t("ratio")}
+            value={ratio.toFixed(1)}
+            accent={isFoundation ? "cyan" : "magenta"}
+          />
         </div>
         <div className="absolute inset-x-3 bottom-10">
           <ControlSlider

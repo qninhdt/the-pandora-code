@@ -1,0 +1,34 @@
+id: biopiracy
+label:
+  vi: Cướp đoạt sinh học
+  en: Biopiracy
+definition:
+  vi: >-
+    Việc một tổ chức thương mại đăng ký độc quyền sáng chế trên vật liệu sinh học hoặc tri thức truyền
+    thống mà không xin phép, không thương lượng điều khoản, và không chia lại lợi ích cho những người
+    đã giữ tri thức ấy. Từ này nghe như một khẩu hiệu, nhưng nó có nội dung pháp lý cụ thể và đã được
+    kiểm chứng ở tòa: bằng sáng chế nghệ bị Hoa Kỳ hủy năm 1997 sau khi Ấn Độ trình các văn bản
+    Ayurveda cổ; bằng sáng chế neem bị châu Âu hủy năm 2000 vì thiếu tính mới; bằng sáng chế giống đậu
+    Enola bị hủy năm 2008 sau chín năm kiện. Ba vụ đều thắng theo cùng một lập luận: cái được cấp bằng
+    không phải phát minh mà là tri thức đã có sẵn của người khác.
+  en: >-
+    A commercial entity taking out exclusive patents on biological material or traditional knowledge
+    without seeking permission, negotiating terms, or returning benefit to the people who held that
+    knowledge. The word sounds like a slogan, but it has specific legal content and has been tested in
+    court: the turmeric patent cancelled in the United States in 1997 after India produced ancient
+    Ayurvedic texts; the neem patent revoked in Europe in 2000 for lack of novelty; the Enola bean
+    patent invalidated in 2008 after nine years of litigation. All three succeeded on the same argument:
+    what had been patented was not an invention but somebody else's existing knowledge.
+see_also:
+  - nagoya-protocol
+  - bioprospecting
+  - prior-informed-consent
+category: concept
+tags:
+  - law-and-policy
+  - bioethics
+cover_prompt: >-
+  A painterly plate of an old handwritten botanical manuscript page lying open beneath a crisp modern
+  patent seal stamped over it, the seal's clean geometry cutting across the older drawing of a leaf and
+  seed, cool teal parchment tones with a warm amber seal on deep indigo, painterly naturalist plate,
+  no text, no labels.

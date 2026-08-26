@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { type ReactNode, useEffect, useRef, useState } from "react";
-import { useReducedMotionSafe } from "./use-reduced-motion-safe";
+import { useReducedMotionForScene } from "./use-reduced-motion-safe";
 
 interface ParallaxProps {
   children: ReactNode;
@@ -14,7 +14,7 @@ interface ParallaxProps {
 // Drift a layer at a different rate than the scroll for depth. Used by hero
 // scenes and section backdrops. Disabled under prefers-reduced-motion.
 export function Parallax({ children, offset = 80, className }: ParallaxProps) {
-  const reduced = useReducedMotionSafe();
+  const reduced = useReducedMotionForScene();
   const [capable, setCapable] = useState(false);
 
   useEffect(() => {

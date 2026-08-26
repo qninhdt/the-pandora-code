@@ -71,12 +71,7 @@ export function MagmaEnergyLedger({ caption, className }: MagmaEnergyLedgerProps
       tone="magenta"
       className={className}
     >
-      <svg
-        viewBox={`0 0 ${W_SVG} ${H_SVG}`}
-        className="w-full"
-        role="img"
-        aria-label={t("aria")}
-      >
+      <svg viewBox={`0 0 ${W_SVG} ${H_SVG}`} className="w-full" role="img" aria-label={t("aria")}>
         <GlowDefs idBase={uid} tones={["teal", "cyan", "amber", "magenta"]} />
 
         {/* Decade gridlines */}
@@ -93,7 +88,13 @@ export function MagmaEnergyLedger({ caption, className }: MagmaEnergyLedgerProps
                 strokeWidth={0.5}
                 strokeOpacity={0.6}
               />
-              <VizText x={x} y={TOP + SOURCES.length * ROW_H + 14} size="micro" tone="subtle" anchor="middle">
+              <VizText
+                x={x}
+                y={TOP + SOURCES.length * ROW_H + 14}
+                size="micro"
+                tone="subtle"
+                anchor="middle"
+              >
                 {t("decade", { n: d })}
               </VizText>
             </g>
@@ -106,7 +107,14 @@ export function MagmaEnergyLedger({ caption, className }: MagmaEnergyLedgerProps
           const c = `var(--${s.tone})`;
           return (
             <g key={s.key}>
-              <VizText x={LABEL_W - 8} y={y + ROW_H / 2 - 2} size="small" tone={s.tone} anchor="end" weight={700}>
+              <VizText
+                x={LABEL_W - 8}
+                y={y + ROW_H / 2 - 2}
+                size="small"
+                tone={s.tone}
+                anchor="end"
+                weight={700}
+              >
                 {t(`source.${s.key}`)}
               </VizText>
               <rect

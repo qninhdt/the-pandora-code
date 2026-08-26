@@ -25,7 +25,10 @@ const defaultClassification: ClassificationPct = {
 
 // A single stacked bar showing how a chapter splits across the four epistemic
 // tiers, each segment glowing in its tier hue with a legend beneath.
-export function ConfidenceMeter({ classification = defaultClassification, className }: ConfidenceMeterProps) {
+export function ConfidenceMeter({
+  classification = defaultClassification,
+  className,
+}: ConfidenceMeterProps) {
   const t = useTranslations("classification");
   const aria = useTranslations("viz.confidenceMeter");
   return (

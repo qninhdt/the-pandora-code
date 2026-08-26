@@ -1087,9 +1087,7 @@ export interface OutlinePartWithStatus {
 // browser renders the full map with published entries clickable. Plate numbers
 // run sequentially across the whole book.
 export function getOutlineWithStatus(locale: Locale): OutlinePartWithStatus[] {
-  const published = new Set(
-    listPublishedChapters(locale).map((c) => c.meta.slug),
-  );
+  const published = new Set(listPublishedChapters(locale).map((c) => c.meta.slug));
   let n = 0;
   return OUTLINE.map((part) => ({
     id: part.id,

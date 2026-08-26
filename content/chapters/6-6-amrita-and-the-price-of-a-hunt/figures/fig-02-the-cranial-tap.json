@@ -1,0 +1,35 @@
+{
+  "id": "fig-02-the-cranial-tap",
+  "chapter_slug": "amrita-and-the-price-of-a-hunt",
+  "role": "diagram",
+  "narrative_purpose": "Shows how small the extracted structure is relative to the animal, and how crude the method is: a hole drilled through bone into a fist-sized sac, with the rest of the body irrelevant to the process.",
+  "subject": "A cutaway cross-section through the front half of an enormous marine animal's head, seen from the side. Thick layered skull plates run across the top. A heavy industrial drill unit on a hanging gantry arm descends from above and has bored a clean circular hole through those plates. A thin flexible catheter tube runs down through the hole and ends inside a small rounded sac, roughly fist-sized, sitting directly beneath the large pale mass of the brain. The sac holds a luminous golden-yellow fluid; a faint line of that same gold runs back up the tube. The animal's huge jaw, eye and body continue below and behind, drawn in full but entirely untouched by the apparatus.",
+  "scene": "A technical cutaway against dark water, the animal's head filling most of the frame, machinery entering from the top.",
+  "camera": "Straight-on side cross-section, the head filling the frame width, machinery at the top edge.",
+  "light": "Cold hard light on the metal drill and gantry, soft warm amber glow from the small fluid sac, cool teal tones through the flesh, deep indigo in the skull cavity.",
+  "palette": "Cool teal and grey tissue tones, pale bone, cold grey steel, one small warm amber-gold source at the sac.",
+  "style": "Painterly anatomical cutaway plate, organic and hand-painted, not a CAD drawing or vector infographic.",
+  "detail_level": "Crisp on the skull plates, the bore hole, the catheter and the small sac; softer through the surrounding body; open dark water at the frame edges.",
+  "composition": "Head occupying the lower two thirds, machinery descending from the top edge, open dark regions at upper left and right for overlay labels.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "anatomical annotation marks",
+    "vector infographic look",
+    "gore",
+    "blood spray"
+  ],
+  "consistency_notes": "The fluid sac must read as tiny against the scale of the head - that size contrast is the entire point of the figure. Keep the golden fluid the only warm colour in the frame.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no labels, no arrows, no leader lines, no medical annotation marks, no vector infographic look, no photographic or 3D-render look, no explicit gore",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

@@ -23,7 +23,13 @@ export default function Bioluminescence() {
       caption={<span className="text-teal">{t(STEPS[step])}</span>}
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {STEPS.map((s, i) => {
             const x = 18 + i * 22;
             const on = i <= step;
@@ -38,9 +44,25 @@ export default function Bioluminescence() {
                   style={on ? { filter: "drop-shadow(0 0 6px var(--teal))" } : undefined}
                 />
                 {i < 3 && (
-                  <line x1={x + 8} y1="48" x2={x + 14} y2="48" stroke="var(--border-strong)" strokeWidth="0.7" />
+                  <line
+                    x1={x + 8}
+                    y1="48"
+                    x2={x + 14}
+                    y2="48"
+                    stroke="var(--border-strong)"
+                    strokeWidth="0.7"
+                  />
                 )}
-                <text x={x} y="66" textAnchor="middle" style={{ fontSize: 2.2, fontFamily: "monospace", fill: on ? "var(--teal)" : "var(--muted)" }}>
+                <text
+                  x={x}
+                  y="66"
+                  textAnchor="middle"
+                  style={{
+                    fontSize: 2.2,
+                    fontFamily: "monospace",
+                    fill: on ? "var(--teal)" : "var(--muted)",
+                  }}
+                >
                   {t(s)}
                 </text>
               </g>

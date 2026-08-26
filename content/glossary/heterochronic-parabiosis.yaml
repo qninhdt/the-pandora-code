@@ -1,0 +1,35 @@
+id: heterochronic-parabiosis
+label:
+  vi: Ghép tuần hoàn khác tuổi
+  en: Heterochronic parabiosis
+definition:
+  vi: >-
+    Thí nghiệm nối hệ tuần hoàn của một con vật non với một con già để hai bên dùng chung một dòng
+    máu. Con già hồi phục cơ tốt hơn, gan tái tạo nhanh hơn, tế bào gốc thần kinh tăng sinh trở lại
+    — nên trong một thời gian người ta đi tìm "yếu tố tuổi trẻ" nào trong máu đã làm điều đó. Cuộc
+    tìm kiếm ấy là một bài học về sự thận trọng: ứng viên nổi tiếng nhất, protein GDF11, hóa ra được
+    đo bằng thuốc thử phản ứng lẫn với một protein họ hàng, và khi đo lại cho đúng thì nó không giảm
+    theo tuổi, còn tiêm vào chuột già lại làm teo cơ. Cách giải thích vững hơn đi ngược lại: cái có
+    ích không phải máu trẻ chảy vào, mà là các yếu tố gây viêm trong máu già bị pha loãng đi.
+  en: >-
+    An experiment joining the circulatory systems of a young and an old animal so the two share one
+    blood supply. The old partner recovers muscle better, regenerates liver faster, and resumes
+    neural stem-cell proliferation — so for a while researchers hunted for whichever "youth factor"
+    in the blood had done it. That hunt is a lesson in caution: the most famous candidate, the
+    protein GDF11, turned out to have been measured with reagents that cross-reacted with a close
+    relative, and when measured properly it did not decline with age, while injecting it into old
+    mice wasted muscle instead. The sturdier explanation runs the other way: what helped was not
+    young blood arriving, but the inflammatory factors in old blood being diluted away.
+see_also:
+  - senolytic
+  - cellular-senescence
+  - hallmarks-of-aging
+category: concept
+tags:
+  - pharmacology
+  - physiology
+cover_prompt: >-
+  A painterly anatomical plate of two small mammals lying side by side with a fine surgical junction
+  of shared vessels running between their flanks, a faint luminous flow drawn passing in both
+  directions along that junction, cool teal bodies with warm amber blood glow on dark indigo,
+  painterly naturalist plate, no text, no labels.

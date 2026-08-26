@@ -146,9 +146,7 @@ export default function TransmissionSpectroscopy() {
                 type="button"
                 onClick={() => toggle(m.key)}
                 className={`rounded-md border px-2 py-1 font-mono text-[10px] transition-colors ${
-                  active[m.key]
-                    ? "text-foreground"
-                    : "border-border/40 text-muted opacity-50"
+                  active[m.key] ? "text-foreground" : "border-border/40 text-muted opacity-50"
                 }`}
                 style={active[m.key] ? { borderColor: m.color, color: m.color } : undefined}
               >

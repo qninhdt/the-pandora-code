@@ -38,17 +38,35 @@ export default function SeedBank() {
       }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {/* soil layers */}
           <rect x="8" y="36" width="84" height="44" fill="#1a140e" />
           <rect x="8" y="36" width="84" height="12" fill="#2a2218" opacity={0.7} />
           <rect x="8" y="48" width="84" height="14" fill="#1a140e" opacity={0.9} />
           <rect x="8" y="62" width="84" height="18" fill="#0e0c0a" />
           {/* surface */}
-          <line x1="8" y1="36" x2="92" y2="36" stroke="var(--teal)" strokeWidth="0.6" opacity={0.4} />
+          <line
+            x1="8"
+            y1="36"
+            x2="92"
+            y2="36"
+            stroke="var(--teal)"
+            strokeWidth="0.6"
+            opacity={0.4}
+          />
           {/* event wash */}
-          {event === "fire" && <rect x="8" y="20" width="84" height="16" fill="var(--amber)" opacity={0.25} />}
-          {event === "flood" && <rect x="8" y="28" width="84" height="20" fill="var(--cyan)" opacity={0.2} />}
+          {event === "fire" && (
+            <rect x="8" y="20" width="84" height="16" fill="var(--amber)" opacity={0.25} />
+          )}
+          {event === "flood" && (
+            <rect x="8" y="28" width="84" height="20" fill="var(--cyan)" opacity={0.2} />
+          )}
           {event === "gap" && (
             <polygon points="40,8 60,8 70,36 30,36" fill="var(--amber)" opacity={0.18} />
           )}
@@ -67,14 +85,32 @@ export default function SeedBank() {
                 />
                 {awake && (
                   <>
-                    <line x1={s.x} y1={s.y - 3} x2={s.x} y2={s.y - 10} stroke="var(--teal)" strokeWidth="0.8" />
-                    <ellipse cx={s.x} cy={s.y - 11} rx="3" ry="2" fill="var(--teal)" opacity={0.7} />
+                    <line
+                      x1={s.x}
+                      y1={s.y - 3}
+                      x2={s.x}
+                      y2={s.y - 10}
+                      stroke="var(--teal)"
+                      strokeWidth="0.8"
+                    />
+                    <ellipse
+                      cx={s.x}
+                      cy={s.y - 11}
+                      rx="3"
+                      ry="2"
+                      fill="var(--teal)"
+                      opacity={0.7}
+                    />
                   </>
                 )}
               </g>
             );
           })}
-          <text x="12" y="88" style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="12"
+            y="88"
+            style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("depth")}
           </text>
         </svg>

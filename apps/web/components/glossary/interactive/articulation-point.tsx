@@ -62,11 +62,7 @@ function components(nodes: number[], edges: [number, number][]): number {
   return c;
 }
 
-function isArticulation(
-  id: number,
-  nodes: number[],
-  edges: [number, number][],
-): boolean {
+function isArticulation(id: number, nodes: number[], edges: [number, number][]): boolean {
   const base = components(nodes, edges);
   const rest = nodes.filter((n) => n !== id);
   const restE = edges.filter(([a, b]) => a !== id && b !== id);
@@ -150,7 +146,12 @@ export default function ArticulationPoint() {
                   x={p.x}
                   y={p.y + 1.2}
                   textAnchor="middle"
-                  style={{ fontSize: 3, fontFamily: "monospace", fill: art ? "var(--void)" : "var(--cyan)", pointerEvents: "none" }}
+                  style={{
+                    fontSize: 3,
+                    fontFamily: "monospace",
+                    fill: art ? "var(--void)" : "var(--cyan)",
+                    pointerEvents: "none",
+                  }}
                 >
                   {p.id}
                 </text>
@@ -160,7 +161,11 @@ export default function ArticulationPoint() {
         </svg>
         <div className="absolute right-3 top-14 flex flex-col gap-1.5">
           <Readout label={t("components")} value={comps} accent={split ? "magenta" : "teal"} />
-          <ControlButton onClick={() => hover != null && remove(hover)} disabled={hover == null} className="px-2.5">
+          <ControlButton
+            onClick={() => hover != null && remove(hover)}
+            disabled={hover == null}
+            className="px-2.5"
+          >
             {t("remove")}
           </ControlButton>
         </div>

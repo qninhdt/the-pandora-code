@@ -28,10 +28,29 @@ export default function LeafAreaIndex() {
       }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {/* ground patch */}
-          <rect x="22" y="72" width="56" height="8" fill="var(--surface)" stroke="var(--border-strong)" strokeWidth="0.5" />
-          <text x="50" y="84" textAnchor="middle" style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <rect
+            x="22"
+            y="72"
+            width="56"
+            height="8"
+            fill="var(--surface)"
+            stroke="var(--border-strong)"
+            strokeWidth="0.5"
+          />
+          <text
+            x="50"
+            y="84"
+            textAnchor="middle"
+            style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("ground")}
           </text>
           {/* stacked leaf layers */}
@@ -70,7 +89,11 @@ export default function LeafAreaIndex() {
         </svg>
         <div className="absolute right-3 top-14 space-y-1">
           <Readout label={t("lai")} value={layers.toFixed(1)} accent="teal" />
-          <Readout label={t("intercept")} value={`${Math.round(intercept * 100)}%`} accent={saturated ? "amber" : "cyan"} />
+          <Readout
+            label={t("intercept")}
+            value={`${Math.round(intercept * 100)}%`}
+            accent={saturated ? "amber" : "cyan"}
+          />
         </div>
         <div className="absolute inset-x-3 bottom-10">
           <ControlSlider

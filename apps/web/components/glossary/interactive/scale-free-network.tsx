@@ -110,8 +110,16 @@ export default function ScaleFreeNetwork() {
             const nb = nodes.find((n) => n.id === b);
             if (!na || !nb) return null;
             return (
-              <line key={`${a}-${b}`} x1={na.x} y1={na.y} x2={nb.x} y2={nb.y}
-                stroke="var(--cyan)" strokeWidth={0.5} opacity={0.45} />
+              <line
+                key={`${a}-${b}`}
+                x1={na.x}
+                y1={na.y}
+                x2={nb.x}
+                y2={nb.y}
+                stroke="var(--cyan)"
+                strokeWidth={0.5}
+                opacity={0.45}
+              />
             );
           })}
           {nodes.map((n) => {

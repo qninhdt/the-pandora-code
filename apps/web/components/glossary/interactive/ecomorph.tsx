@@ -8,7 +8,12 @@ import { Readout } from "./shared/readout";
 // Six niches, six body plans. Pick a habitat; the matching ecomorph glows.
 const FORMS = [
   { key: "arboreal", x: 20, y: 36, path: "M0 8 L4 0 L8 8 L6 8 L6 16 L2 16 L2 8 Z" },
-  { key: "cursorial", x: 50, y: 36, path: "M0 6 L12 6 L12 10 L10 10 L10 16 L8 16 L8 10 L4 10 L4 16 L2 16 L2 10 L0 10 Z" },
+  {
+    key: "cursorial",
+    x: 50,
+    y: 36,
+    path: "M0 6 L12 6 L12 10 L10 10 L10 16 L8 16 L8 10 L4 10 L4 16 L2 16 L2 10 L0 10 Z",
+  },
   { key: "fossorial", x: 80, y: 36, path: "M2 12 L0 8 L4 4 L10 6 L12 12 L8 14 Z" },
   { key: "aquatic", x: 20, y: 68, path: "M0 8 Q 8 0 16 8 Q 8 14 0 8 Z" },
   { key: "aerial", x: 50, y: 68, path: "M8 8 L0 4 L2 8 L0 12 L8 8 L16 4 L14 8 L16 12 Z" },

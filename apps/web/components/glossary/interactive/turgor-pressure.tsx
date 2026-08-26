@@ -32,9 +32,22 @@ export default function TurgorPressure() {
       }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {/* cell close-up left */}
-          <circle cx="30" cy="42" r={wallR} fill="var(--surface)" stroke="var(--cyan)" strokeWidth="1.2" />
+          <circle
+            cx="30"
+            cy="42"
+            r={wallR}
+            fill="var(--surface)"
+            stroke="var(--cyan)"
+            strokeWidth="1.2"
+          />
           <circle
             cx="30"
             cy="42"
@@ -46,14 +59,35 @@ export default function TurgorPressure() {
           />
           {/* gap (plasmolysis) when wilted */}
           {!turgid && (
-            <circle cx="30" cy="42" r={wallR - 1} fill="none" stroke="var(--magenta)" strokeWidth="0.5" strokeDasharray="2 1.5" opacity={0.7} />
+            <circle
+              cx="30"
+              cy="42"
+              r={wallR - 1}
+              fill="none"
+              stroke="var(--magenta)"
+              strokeWidth="0.5"
+              strokeDasharray="2 1.5"
+              opacity={0.7}
+            />
           )}
-          <text x="30" y="72" textAnchor="middle" style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="30"
+            y="72"
+            textAnchor="middle"
+            style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("pressure")}
           </text>
           {/* whole plant right */}
           <g transform={`translate(70 70) rotate(${droop})`}>
-            <line x1="0" y1="0" x2="0" y2={-28 - pressure * 8} stroke="var(--cyan)" strokeWidth="2" />
+            <line
+              x1="0"
+              y1="0"
+              x2="0"
+              y2={-28 - pressure * 8}
+              stroke="var(--cyan)"
+              strokeWidth="2"
+            />
             <ellipse
               cx="0"
               cy={-30 - pressure * 8}
@@ -78,7 +112,12 @@ export default function TurgorPressure() {
               opacity={0.7}
             />
           </g>
-          <text x="70" y="88" textAnchor="middle" style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="70"
+            y="88"
+            textAnchor="middle"
+            style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("plant")}
           </text>
         </svg>

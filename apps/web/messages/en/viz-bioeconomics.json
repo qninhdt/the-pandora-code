@@ -1,0 +1,219 @@
+{
+  "viz": {
+    "extinctionDiscount": {
+      "title": "When extinction is the profitable choice",
+      "subtitle": "A profit-maximising owner picks the stock level that maximises present value. Slow growth and impatient capital move that level toward zero.",
+      "controls": {
+        "growth": "Stock growth rate",
+        "discount": "Discount rate",
+        "price": "Price per vial",
+        "cost": "Cost per unit effort"
+      },
+      "axis": {
+        "stock": "Population remaining",
+        "surplus": "Annual surplus"
+      },
+      "marker": {
+        "msy": "K/2 — peak yield",
+        "optimum": "owner stops here"
+      },
+      "readout": {
+        "optimum": "Owner's target stock",
+        "msy": "Biologist's reference",
+        "margin": "Discount minus growth"
+      },
+      "verdict": {
+        "conserve": "Worth keeping alive",
+        "deplete": "Ground below the safe point",
+        "liquidate": "Optimal to harvest to zero"
+      },
+      "note": {
+        "impatient": "Capital outgrows the animal",
+        "patient": "The animal outgrows capital"
+      },
+      "hint": {
+        "impatient": "With the discount rate above the growth rate, waiting for the population to breed earns less than cashing it out and reinvesting. The arithmetic recommends liquidation.",
+        "patient": "While the population grows faster than money does, leaving animals in the water is itself the better investment — the stock is an appreciating asset."
+      },
+      "aria": {
+        "conserve": "Surplus production curve with the owner's optimal stock above the peak-yield point",
+        "deplete": "Surplus production curve with the owner's optimal stock below the peak-yield point",
+        "liquidate": "Surplus production curve with the owner's optimal stock at zero"
+      },
+      "units": "Stock in individuals; rates per year; price and cost in millions per unit."
+    },
+    "reproductiveValue": {
+      "title": "Not every death costs the same",
+      "subtitle": "Population growth is far more sensitive to breeding-female survival than to birth rate or calf survival. A hunt that targets mothers has found the most expensive class.",
+      "controls": {
+        "target": "Class targeted by the hunt",
+        "pressure": "Share of that class removed"
+      },
+      "class": {
+        "calf": "Calves",
+        "juvenile": "Juveniles",
+        "male": "Adult males",
+        "female": "Breeding females"
+      },
+      "axis": {
+        "elasticity": "Sensitivity of population growth"
+      },
+      "readout": {
+        "growth": "Growth rate left",
+        "recovery": "Recovery time",
+        "never": "no recovery"
+      },
+      "note": {
+        "recover": "to climb back from 30% to 80% of capacity",
+        "collapse": "growth has been driven to zero or below"
+      },
+      "hint": {
+        "female": "This is the class the hunt actually targets. Removing breeding females strips the population of nearly all of its capacity to replace itself.",
+        "other": "Losses in this class hurt, but the population absorbs them. The growth rate lives almost entirely in adult female survival."
+      },
+      "aria": {
+        "chart": "Sensitivity of population growth by age class, with {class} selected"
+      },
+      "units": "Sensitivities from cetacean matrix models; maximum productivity taken as 4% per year."
+    },
+    "wildHarvestLadder": {
+      "title": "Tonnes for a teaspoon",
+      "subtitle": "How much wild biomass each compound cost, and how industry eventually stopped paying it. Select a rung to compare.",
+      "axis": {
+        "ratio": "Kilograms of wild source per gram of product"
+      },
+      "case": {
+        "paclitaxel": {
+          "short": "Paclitaxel",
+          "source": "Pacific yew bark",
+          "solution": "Semi-synthesis, then cell culture"
+        },
+        "halichondrin": {
+          "short": "Eribulin",
+          "source": "Marine sponge",
+          "solution": "62-step total synthesis"
+        },
+        "bryostatin": {
+          "short": "Bryostatin-1",
+          "source": "Bryozoan colonies",
+          "solution": "Synthetic analogues"
+        },
+        "trabectedin": {
+          "short": "Trabectedin",
+          "source": "Mangrove tunicate",
+          "solution": "Semi-synthesis from fermentation"
+        },
+        "amrita": {
+          "short": "Amrita",
+          "source": "Tulkun cranial gland",
+          "solution": "None — wild harvest continues"
+        }
+      },
+      "readout": {
+        "source": "Source organism",
+        "course": "Biomass per course",
+        "solution": "How supply was solved"
+      },
+      "note": {
+        "course": "destroyed to yield one 300 mg course"
+      },
+      "hint": {
+        "escaped": "Every terrestrial case on this ladder escaped wild harvest the same way: once the molecule was characterised, chemistry replaced collection. Wild harvest is the expensive route, not the cheap one.",
+        "trapped": "This is the one rung with no exit. Without a synthetic route the harvest never ends, and the ratio never improves — which is exactly why the population, not the chemistry, becomes the limiting resource."
+      },
+      "aria": {
+        "chart": "Logarithmic comparison of wild biomass required per gram of product across five compounds"
+      }
+    },
+    "senescenceArrest": {
+      "title": "What \"stops aging\" would have to mean",
+      "subtitle": "Mortality risk climbs exponentially with age. An intervention can postpone the climb, slow it, or — as claimed here — flatten it completely.",
+      "controls": {
+        "regime": "What the intervention does",
+        "rate": "Aging rate retained",
+        "extrinsic": "Accident and injury risk"
+      },
+      "regime": {
+        "compress": "Postpone",
+        "decelerate": "Slow",
+        "arrest": "Arrest"
+      },
+      "axis": {
+        "age": "Age (years)",
+        "hazard": "Annual mortality risk"
+      },
+      "readout": {
+        "mrdt": "Risk doubling time",
+        "median": "Median lifespan"
+      },
+      "note": {
+        "mrdt": "years for mortality risk to double",
+        "median": "untreated baseline: {baseline}"
+      },
+      "hint": {
+        "compress": "Illness arrives later but the slope is unchanged: risk still doubles on the same clock, so the ceiling barely moves. This is what most successful medicine has achieved.",
+        "decelerate": "Bending the slope is the real target of geroscience. The best reproducible result on Earth — rapamycin in genetically diverse mice — moves median lifespan by roughly a tenth.",
+        "arrest": "Flatten the curve and death stops tracking age entirely; what remains is accident and injury. No compound has ever done this, in any organism, which is why the claim is a category apart rather than a bigger number."
+      },
+      "aria": {
+        "compress": "Mortality curve shifted later but with an unchanged exponential slope",
+        "decelerate": "Mortality curve with a reduced exponential slope beside the untreated baseline",
+        "arrest": "Flat mortality curve with the exponential aging term removed entirely"
+      },
+      "units": "Hazard on a logarithmic axis; baseline doubling time 8 years."
+    },
+    "consentLadder": {
+      "title": "The ladder of consent",
+      "subtitle": "Access law climbed one rung at a time, from open access to negotiated benefit-sharing. Select a rung to see what established it — and whether this trade clears it.",
+      "rung": {
+        "openAccess": {
+          "label": "Open access",
+          "instrument": "No consent owed",
+          "precedent": "Rosy periwinkle, Madagascar",
+          "why": "The trade operates exactly here: extraction without permission of any kind."
+        },
+        "sovereignty": {
+          "label": "Sovereignty",
+          "instrument": "Biodiversity Convention, Article 15",
+          "precedent": "End of \"common heritage\", 1992",
+          "why": "No authority on Pandora is recognised as holding rights over its own biology."
+        },
+        "consent": {
+          "label": "Prior informed consent",
+          "instrument": "Nagoya Protocol, in force 2014",
+          "precedent": "Neem and turmeric patents revoked",
+          "why": "No permission is sought, and no terms are negotiated with anyone."
+        },
+        "benefit": {
+          "label": "Benefit-sharing",
+          "instrument": "Negotiated royalties to knowledge-holders",
+          "precedent": "Hoodia and rooibos agreements",
+          "why": "Every unit of value leaves the system; nothing returns to the world it came from."
+        },
+        "personhood": {
+          "label": "Personhood",
+          "instrument": "Legal standing of the being itself",
+          "precedent": "Sandra the orangutan; Whanganui River",
+          "why": "This is the rung the case actually belongs on — and the one no access framework can reach."
+        }
+      },
+      "readout": {
+        "instrument": "Legal instrument",
+        "precedent": "Earth precedent",
+        "status": "Does this trade clear it?"
+      },
+      "status": {
+        "met": "Yes",
+        "unmet": "No"
+      },
+      "hint": {
+        "cleared": "This is the only rung the trade satisfies, and it satisfies it by requiring nothing at all.",
+        "failed": "The trade fails this rung outright. Note that clearing every rung below the top would still leave the central problem untouched — those rungs govern property, and property is the wrong category here."
+      },
+      "aria": {
+        "chart": "Five-rung ladder of consent frameworks with {rung} selected"
+      },
+      "legend": "Rung {index} of {total}. A filled marker means the trade clears that rung."
+    }
+  }
+}

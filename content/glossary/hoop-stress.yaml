@@ -1,0 +1,34 @@
+id: hoop-stress
+label:
+  vi: Ứng suất vòng
+  en: Hoop stress
+definition:
+  vi: >-
+    Lực căng chạy vòng quanh thành của một bình chịu áp — bằng áp suất bên trong nhân bán kính, chia
+    cho hai lần độ dày thành. Công thức ngắn nhưng hệ quả thì tàn nhẫn với sinh học: khi một con vật
+    lớn lên, thể tích khoang nó bơm tăng theo lập phương chiều dài còn độ dày thành cơ chỉ tăng theo
+    bậc một, nên ứng suất vòng cứ leo lên tới khi chạm mức tối đa mà thớ cơ chịu được, cỡ 2,5×10⁵ Pa ở
+    động vật không xương sống. Tới đó con mực khổng lồ chỉ còn hai lựa chọn, cả hai đều là đầu hàng: co
+    chậm hơn, hoặc mở rộng miệng phun — cách nào cũng làm lực đẩy đỉnh sụt xuống.
+  en: >-
+    The tension running circumferentially around the wall of a pressure vessel — internal pressure
+    times radius, divided by twice the wall thickness. The formula is short and its biological
+    consequence is brutal: as an animal grows, the volume of the cavity it pressurises rises with the
+    cube of length while the thickness of its muscular wall rises only linearly, so hoop stress climbs
+    until it meets the maximum a muscle fibre can generate, around 2.5×10⁵ Pa in invertebrate tissue.
+    At that point a giant squid has two options and both are surrenders: contract more slowly, or widen
+    the siphon. Either way peak thrust falls.
+see_also:
+  - jet-propulsion
+  - square-cube-law
+  - allometry
+  - biomechanics
+category: concept
+tags:
+  - physics
+  - physiology
+cover_prompt: >-
+  A cross-section through a thin muscular wall enclosing a pressurised cavity, circumferential fibre
+  bands stretched visibly taut and thinning pale at the widest point, cyan glow from the compressed
+  interior showing through the overstretched tissue, deep teal and indigo, painterly anatomical plate,
+  no text, no labels.

@@ -51,7 +51,11 @@ export default function Biomechanics() {
           {/* GRF */}
           <line x1="38" y1="82" x2="38" y2="90" stroke="var(--amber)" strokeWidth="1.4" />
           <path d="M35 88 L38 92 L41 88" fill="none" stroke="var(--amber)" strokeWidth="1" />
-          <text x="44" y="92" style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--amber)" }}>
+          <text
+            x="44"
+            y="92"
+            style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--amber)" }}
+          >
             {t("grf")}
           </text>
 

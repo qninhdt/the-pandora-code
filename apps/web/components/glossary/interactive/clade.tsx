@@ -118,7 +118,8 @@ export default function Clade() {
               onClick={() => setCut(i)}
               className="rounded-lg border px-2.5 py-1 font-mono text-[10px] uppercase tracking-wide backdrop-blur-md transition-colors"
               style={{
-                borderColor: cut === i ? (c.mono ? "var(--cyan)" : "var(--magenta)") : "var(--border-strong)",
+                borderColor:
+                  cut === i ? (c.mono ? "var(--cyan)" : "var(--magenta)") : "var(--border-strong)",
                 color: cut === i ? (c.mono ? "var(--cyan)" : "var(--magenta)") : "var(--muted)",
                 background:
                   cut === i

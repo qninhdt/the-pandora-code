@@ -23,9 +23,7 @@ export default function OccamsRazor() {
       onReset={() => setCut(false)}
       allowFullscreen={false}
       caption={
-        <span className={cut ? "text-teal" : "text-muted"}>
-          {cut ? t("lean") : t("bloated")}
-        </span>
+        <span className={cut ? "text-teal" : "text-muted"}>{cut ? t("lean") : t("bloated")}</span>
       }
     >
       <div className="absolute inset-0">
@@ -121,11 +119,7 @@ export default function OccamsRazor() {
 
         <div className="absolute right-3 top-16 flex flex-col gap-1">
           <Readout label={t("lean")} value={LEAN} accent="teal" />
-          <Readout
-            label={t("assumptions")}
-            value={bloatedLen}
-            accent={cut ? "cyan" : "magenta"}
-          />
+          <Readout label={t("assumptions")} value={bloatedLen} accent={cut ? "cyan" : "magenta"} />
         </div>
 
         <div className="absolute inset-x-3 bottom-12 flex justify-center">

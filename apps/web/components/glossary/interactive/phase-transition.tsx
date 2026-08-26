@@ -92,7 +92,17 @@ export default function PhaseTransition() {
             )),
           )}
           {/* M(T) plot */}
-          <rect x="68" y="20" width="28" height="50" rx="1" fill="var(--void)" opacity={0.5} stroke="var(--border-strong)" strokeWidth={0.4} />
+          <rect
+            x="68"
+            y="20"
+            width="28"
+            height="50"
+            rx="1"
+            fill="var(--void)"
+            opacity={0.5}
+            stroke="var(--border-strong)"
+            strokeWidth={0.4}
+          />
           <line
             x1={68 + TC * 28}
             y1={22}
@@ -109,7 +119,12 @@ export default function PhaseTransition() {
             points={curve.map((pt) => `${68 + pt.t * 28},${68 - pt.o * 44}`).join(" ")}
           />
           <circle cx={68 + T * 28} cy={68 - m * 44} r={1.5} fill="var(--amber)" />
-          <text x="82" y="76" textAnchor="middle" style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="82"
+            y="76"
+            textAnchor="middle"
+            style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("critical")}
           </text>
         </svg>

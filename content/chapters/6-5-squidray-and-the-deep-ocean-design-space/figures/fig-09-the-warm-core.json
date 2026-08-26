@@ -1,0 +1,40 @@
+{
+  "id": "fig-09-the-warm-core",
+  "chapter_slug": "squidray-and-the-deep-ocean-design-space",
+  "role": "diagram",
+  "narrative_purpose": "Makes the inferred heat-retention machinery visible: interleaved vessel bundles wrapping only the swimming muscle and the braincase, so a warm engine sits inside an otherwise cold body.",
+  "subject": "A large squid-ray animal in lateral cutaway, its outer body wall removed along the near side to expose the interior. Deep inside the trunk sits a compact block of dense dark swimming muscle; inside the head sits a rounded braincase. Wrapped tightly around both of those structures are bundles of many fine parallel blood vessels, drawn as alternating strands running in opposite directions and interleaved so closely they touch along their whole length - each bundle looks like a woven mat of hair-fine tubes. The muscle block and braincase and the vessel bundles around them are rendered in warm amber tones. Everything outside those bundles - the wings, the mantle wall, the tentacles, the outer skin - is rendered in cold blue and indigo, with a visibly sharp transition at the outer edge of each bundle.",
+  "scene": "Isolated anatomical cutaway on plain dark water, cold deep ocean implied by the surrounding indigo but no background objects.",
+  "camera": "Lateral straight-on cutaway view, the whole animal in profile filling the frame.",
+  "light": "The warm core glows faintly from within as if radiating heat; the cold outer body is lit only by dim ambient blue; no external light source.",
+  "palette": "Ember amber restricted strictly to the muscle block, braincase and vessel bundles; deep void indigo and ocean teal everywhere else; no warm tones outside the bundles at all.",
+  "style": "Painterly anatomical cutaway plate with a thermal reading, biological and fleshy rather than schematic.",
+  "detail_level": "High detail on the interleaving of the vessel strands and the sharp warm-to-cold transition at the bundle edges; the wings and outer body simpler and darker.",
+  "composition": "Animal in profile facing left, warm core in the lower centre of the trunk with the warm braincase at the head, plain dark water above the back and below the tentacles for annotations.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "temperature scales",
+    "thermometers",
+    "false-colour heat map",
+    "rainbow gradient",
+    "panel borders",
+    "mechanical heat exchanger"
+  ],
+  "consistency_notes": "Same animal design as fig-00-cover. Warm colour appears ONLY inside the vessel bundles, muscle block and braincase - a rainbow thermal-camera look is wrong. Vessel strands must visibly run in two opposing directions and interleave.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no thermometer, no false-colour thermal map, no rainbow gradient, no mechanical radiator, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/squidray-and-the-deep-ocean-design-space/fig-00-cover.png"
+  ]
+}

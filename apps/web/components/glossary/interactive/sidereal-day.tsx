@@ -43,7 +43,11 @@ export default function SiderealDay() {
       category={t("category")}
       infoText={t("info")}
       aspectRatio="16/10"
-      caption={<span>{t("gap")}: +{extraDeg}°</span>}
+      caption={
+        <span>
+          {t("gap")}: +{extraDeg}°
+        </span>
+      }
     >
       <div className="flex h-full w-full flex-col gap-3 p-4 pt-16">
         <div className="relative flex-1">
@@ -84,7 +88,14 @@ export default function SiderealDay() {
 
             {/* world */}
             <circle cx={worldX} cy={worldY} r="4.5" fill="#2a5b6e" />
-            <circle cx={worldX} cy={worldY} r="4.5" fill="none" stroke="var(--cyan)" strokeWidth="0.4" />
+            <circle
+              cx={worldX}
+              cy={worldY}
+              r="4.5"
+              fill="none"
+              stroke="var(--cyan)"
+              strokeWidth="0.4"
+            />
 
             {/* sidereal mark — toward fixed star (cyan) */}
             <line x1={worldX} y1={worldY} x2={sx2} y2={sy2} stroke="var(--cyan)" strokeWidth="1" />

@@ -41,11 +41,35 @@ export default function CytoplasmicStreaming() {
       }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {/* cell wall */}
-          <ellipse cx="50" cy="46" rx="34" ry="26" fill="var(--surface)" stroke="var(--teal)" strokeWidth="1.1" opacity={0.9} />
+          <ellipse
+            cx="50"
+            cy="46"
+            rx="34"
+            ry="26"
+            fill="var(--surface)"
+            stroke="var(--teal)"
+            strokeWidth="1.1"
+            opacity={0.9}
+          />
           {/* vacuole */}
-          <ellipse cx="50" cy="46" rx="14" ry="10" fill="var(--void)" stroke="var(--border-strong)" strokeWidth="0.5" opacity={0.7} />
+          <ellipse
+            cx="50"
+            cy="46"
+            rx="14"
+            ry="10"
+            fill="var(--void)"
+            stroke="var(--border-strong)"
+            strokeWidth="0.5"
+            opacity={0.7}
+          />
           {/* streaming path */}
           <ellipse
             cx="50"
@@ -76,7 +100,12 @@ export default function CytoplasmicStreaming() {
               opacity={stalled ? 0.35 : 0.85}
             />
           ))}
-          <text x="50" y="80" textAnchor="middle" style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="50"
+            y="80"
+            textAnchor="middle"
+            style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("organelles")}
           </text>
         </svg>

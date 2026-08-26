@@ -19,8 +19,7 @@ export default function Obliquity() {
   // More tilt -> stronger seasonal contrast and larger winter ice cap.
   const lean = tilt / 45;
   const capR = R * (0.18 + lean * 0.32);
-  const seasonStrength =
-    tilt < 6 ? "upright" : tilt < 28 ? "summer" : "steep";
+  const seasonStrength = tilt < 6 ? "upright" : tilt < 28 ? "summer" : "steep";
 
   return (
     <GlossaryFrame
@@ -75,11 +74,25 @@ export default function Obliquity() {
             />
 
             {/* planet body */}
-            <circle cx={CX} cy={CY} r={R} fill="url(#obl-planet)" stroke="var(--border-strong)" strokeWidth="0.5" />
+            <circle
+              cx={CX}
+              cy={CY}
+              r={R}
+              fill="url(#obl-planet)"
+              stroke="var(--border-strong)"
+              strokeWidth="0.5"
+            />
 
             {/* day/night terminator: night on the far side from star (left) */}
             <g clipPath="url(#obl-clip)">
-              <rect x={CX - R} y={CY - R} width={R} height={R * 2} fill="var(--void)" opacity="0.55" />
+              <rect
+                x={CX - R}
+                y={CY - R}
+                width={R}
+                height={R * 2}
+                fill="var(--void)"
+                opacity="0.55"
+              />
             </g>
 
             {/* tilted spin axis + ice caps, rotated by tilt around planet centre */}
@@ -96,8 +109,22 @@ export default function Obliquity() {
               />
               {/* north cap (summer-leaning) smaller, south cap (winter) larger */}
               <g clipPath="url(#obl-clip)">
-                <ellipse cx={CX} cy={CY - R} rx={capR} ry={capR * 0.7} fill="var(--cyan)" opacity={0.35 + lean * 0.3} />
-                <ellipse cx={CX} cy={CY + R} rx={capR * 1.3} ry={capR * 0.9} fill="var(--cyan)" opacity={0.45 + lean * 0.4} />
+                <ellipse
+                  cx={CX}
+                  cy={CY - R}
+                  rx={capR}
+                  ry={capR * 0.7}
+                  fill="var(--cyan)"
+                  opacity={0.35 + lean * 0.3}
+                />
+                <ellipse
+                  cx={CX}
+                  cy={CY + R}
+                  rx={capR * 1.3}
+                  ry={capR * 0.9}
+                  fill="var(--cyan)"
+                  opacity={0.45 + lean * 0.4}
+                />
               </g>
             </g>
           </svg>

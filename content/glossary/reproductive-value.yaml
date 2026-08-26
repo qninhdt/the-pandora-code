@@ -1,0 +1,35 @@
+id: reproductive-value
+label:
+  vi: Giá trị sinh sản
+  en: Reproductive value
+definition:
+  vi: >-
+    Đóng góp mà một cá thể ở một độ tuổi nhất định còn có thể mang lại cho những thế hệ sau. Con non
+    có giá trị thấp vì phần lớn chưa sống nổi tới tuổi sinh sản; con mẹ trưởng thành đang nuôi con có
+    giá trị cao nhất vì nó đã vượt qua mọi rủi ro và còn nhiều lần sinh phía trước. Phân tích độ nhạy
+    trên các mô hình ma trận dân số của bộ cá voi cho thấy tốc độ tăng đàn phụ thuộc vào sự sống của
+    con mẹ trưởng thành với hệ số trên 0,8, còn phụ thuộc vào tỉ lệ sinh dưới 0,1. Nghĩa là: thiệt
+    hại dân số của một cái chết không tỉ lệ với khối lượng con vật mà tỉ lệ với giá trị sinh sản của
+    nó. Một cuộc săn nhắm vào các con mẹ đang cho con bú đã tìm đúng lớp gây tổn thất lớn nhất có thể.
+  en: >-
+    The contribution an individual of a given age can still make to future generations. Calves have low
+    value because most will not survive to breed; an adult female currently raising young has the
+    highest, having already cleared every risk and with many births still ahead. Sensitivity analyses of
+    cetacean population matrix models show that the growth rate depends on adult female survival with a
+    coefficient above 0.8, and on birth rate below 0.1. Which means: the demographic damage of a death
+    is not proportional to the animal's mass but to its reproductive value. A hunt that targets nursing
+    mothers has found precisely the class that inflicts the greatest possible loss.
+see_also:
+  - potential-biological-removal
+  - depensation
+  - maximum-sustainable-yield
+  - density-dependence
+category: concept
+tags:
+  - ecology
+  - bioeconomics
+cover_prompt: >-
+  A painterly plate of four animal silhouettes in a row - a small calf, a half-grown juvenile, an
+  adult male, and an adult female with a calf at her flank - each standing on a pedestal of markedly
+  different height, the female's by far the tallest, cool teal silhouettes with a warm amber glow on
+  the tallest pedestal, deep indigo behind, painterly naturalist plate, no text, no labels.

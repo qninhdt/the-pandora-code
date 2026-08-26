@@ -133,16 +133,33 @@ export function RecoveryChronosequence({ caption, className }: RecoveryChronoseq
       tone={tone}
       className={className}
       controls={
-        <SegmentedToggle options={options} value={site} onChange={setSite} ariaLabel={t("controlLabel")} />
+        <SegmentedToggle
+          options={options}
+          value={site}
+          onChange={setSite}
+          ariaLabel={t("controlLabel")}
+        />
       }
     >
       <div className="flex flex-col gap-4 md:flex-row md:items-stretch">
-        <svg viewBox={`0 0 ${W} ${H}`} className="w-full md:w-3/5" role="img" aria-label={t(`site.${site}.note`)}>
+        <svg
+          viewBox={`0 0 ${W} ${H}`}
+          className="w-full md:w-3/5"
+          role="img"
+          aria-label={t(`site.${site}.note`)}
+        >
           <GlowDefs idBase={uid} tones={["cyan", "teal", "amber", "magenta"]} />
           <rect x={PAD_L} y={PAD_T} width={PLOT_W} height={PLOT_H} fill={glowUrl(uid, "grid")} />
 
           {/* axes */}
-          <line x1={PAD_L} y1={PAD_T} x2={PAD_L} y2={PAD_T + PLOT_H} stroke="var(--border-strong)" strokeWidth={1} />
+          <line
+            x1={PAD_L}
+            y1={PAD_T}
+            x2={PAD_L}
+            y2={PAD_T + PLOT_H}
+            stroke="var(--border-strong)"
+            strokeWidth={1}
+          />
           <line
             x1={PAD_L}
             y1={PAD_T + PLOT_H}
@@ -164,7 +181,13 @@ export function RecoveryChronosequence({ caption, className }: RecoveryChronoseq
                 strokeOpacity={0.08}
                 strokeWidth={1}
               />
-              <VizText x={lx(yr)} y={PAD_T + PLOT_H + 14} size="micro" tone="subtle" anchor="middle">
+              <VizText
+                x={lx(yr)}
+                y={PAD_T + PLOT_H + 14}
+                size="micro"
+                tone="subtle"
+                anchor="middle"
+              >
                 {t("yearTick", { n: yr })}
               </VizText>
             </g>
@@ -198,14 +221,26 @@ export function RecoveryChronosequence({ caption, className }: RecoveryChronoseq
                 strokeOpacity={0.6}
                 strokeWidth={1}
               />
-              <VizText x={lx(spec.eventYear) + 3} y={PAD_T + 12} size="micro" tone="cyan" anchor="start">
+              <VizText
+                x={lx(spec.eventYear) + 3}
+                y={PAD_T + 12}
+                size="micro"
+                tone="cyan"
+                anchor="start"
+              >
                 {t("eventLabel")}
               </VizText>
             </g>
           )}
 
           {/* end marker */}
-          <circle cx={lx(last.year)} cy={ly(last.cover)} r={5} fill={spec.tone} filter={glowUrl(uid, "bloom")} />
+          <circle
+            cx={lx(last.year)}
+            cy={ly(last.cover)}
+            r={5}
+            fill={spec.tone}
+            filter={glowUrl(uid, "bloom")}
+          />
 
           <VizText x={PAD_L + PLOT_W / 2} y={H - 6} size="micro" tone="subtle" anchor="middle">
             {t("xAxis")}
@@ -223,7 +258,11 @@ export function RecoveryChronosequence({ caption, className }: RecoveryChronoseq
         </svg>
 
         <div className="flex w-full flex-col gap-2 md:w-2/5">
-          <VizReadout label={t("readout.disturbance")} value={t(`site.${site}.disturbance`)} tone={spec.tone} />
+          <VizReadout
+            label={t("readout.disturbance")}
+            value={t(`site.${site}.disturbance`)}
+            tone={spec.tone}
+          />
           <VizReadout label={t("readout.span")} value={t(`site.${site}.span`)} tone={spec.tone} />
           <VizReadout
             label={t("readout.driver")}

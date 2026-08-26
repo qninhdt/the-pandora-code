@@ -1,0 +1,35 @@
+{
+  "id": "fig-06-the-blood-bank",
+  "chapter_slug": "bodies-built-for-water",
+  "role": "diagram",
+  "narrative_purpose": "Shows the splenic contraction as a physical event: an organ squeezing stored red cells into circulation seconds after submersion, for a real but modest gain.",
+  "subject": "An anatomical cutaway of a diving torso seen from the front, semi-transparent, oriented head-up. Low on the left side sits a dark red elongated organ shown mid-contraction, its capsule visibly tightened and its outline smaller and more puckered than a relaxed organ would be. A dense stream of tiny glowing disc-shaped red cells is leaving it through a single vessel and joining a larger vessel that runs upward toward the heart, where the cells disperse into a brighter, denser crowd filling the central circulation. The vessels of the arms and the outer body wall are drawn narrow and dim by contrast.",
+  "scene": "Dark water surrounding the torso, nothing else in frame, faint suspended particles.",
+  "camera": "Front-on medium view of the torso from shoulders to hips, filling most of the frame.",
+  "light": "Warm crimson glow from the contracting organ and the stream of cells, brighter crimson pooling at the heart, everything peripheral in deep indigo shadow with a faint cool teal rim from the water.",
+  "palette": "Deep crimson and warm red for blood and organ, void indigo shadow, cool teal rim light, one small cyan accent.",
+  "style": "Painterly naturalist anatomical plate, wet and organic, hand-painted texture.",
+  "detail_level": "High detail on the puckered contracting capsule and the dense stream of individual cells; the torso outline soft and simplified.",
+  "composition": "Organ low-left, vessel and cell stream rising diagonally to the heart at centre, open dark space in the upper-right and lower-left corners for overlay callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "callout lines",
+    "medical diagram styling",
+    "graphs",
+    "surgical instruments",
+    "Avatar branding"
+  ],
+  "consistency_notes": "The organ reads as a soft contractile sac being squeezed, not a cut or wounded organ. The cells are small discs, many of them, clearly moving in one direction. No arrows anywhere — direction is shown by the shape of the stream.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no labels, no arrows, no graphs, no surgical or clinical look, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

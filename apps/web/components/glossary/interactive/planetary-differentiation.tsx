@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { GlossaryFrame } from "./shared/frame";
+import { useState } from "react";
 import { ControlSlider } from "./shared/control-slider";
+import { GlossaryFrame } from "./shared/frame";
 import { Legend } from "./shared/legend";
 
 // `time` 0 → undifferentiated melt; 1 → fully layered core/mantle/crust.
@@ -20,7 +20,8 @@ export default function PlanetaryDifferentiation() {
   // Mixed phase: blotchy overlay opacity fades as differentiation completes.
   const mixOpacity = (1 - time) * 0.85;
 
-  const stage = time < 0.15 ? t("molten") : time > 0.85 ? t("layered") : `${(time * 100).toFixed(0)}%`;
+  const stage =
+    time < 0.15 ? t("molten") : time > 0.85 ? t("layered") : `${(time * 100).toFixed(0)}%`;
 
   return (
     <GlossaryFrame

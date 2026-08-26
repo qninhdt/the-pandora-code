@@ -36,7 +36,14 @@ export default function PneumaticBone() {
           aria-label={t("title")}
         >
           {/* bone cross-section */}
-          <circle cx="50" cy="42" r="22" fill="var(--surface)" stroke="var(--cyan)" strokeWidth="1" />
+          <circle
+            cx="50"
+            cy="42"
+            r="22"
+            fill="var(--surface)"
+            stroke="var(--cyan)"
+            strokeWidth="1"
+          />
           <circle
             cx="50"
             cy="42"
@@ -54,16 +61,28 @@ export default function PneumaticBone() {
                   key={ang}
                   x1={50 + Math.cos(r) * 8}
                   y1={42 + Math.sin(r) * 8}
-                  x2={50 + Math.cos(r) * (18)}
-                  y2={42 + Math.sin(r) * (18)}
+                  x2={50 + Math.cos(r) * 18}
+                  y2={42 + Math.sin(r) * 18}
                   stroke="var(--teal)"
                   strokeWidth="0.7"
                   opacity={p}
                 />
               );
             })}
-          <text x="22" y="78" style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--muted)" }}>{t("solid")}</text>
-          <text x="68" y="78" style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--muted)" }}>{t("pneumatic")}</text>
+          <text
+            x="22"
+            y="78"
+            style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
+            {t("solid")}
+          </text>
+          <text
+            x="68"
+            y="78"
+            style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
+            {t("pneumatic")}
+          </text>
         </svg>
 
         <div className="absolute right-3 top-14 flex flex-col gap-1">
@@ -72,7 +91,16 @@ export default function PneumaticBone() {
         </div>
 
         <div className="absolute inset-x-3 bottom-10">
-          <ControlSlider label={t("pneumatic")} value={p} min={0} max={1} step={0.02} display={`${Math.round(p * 100)}%`} onChange={setP} thumb="cyan" />
+          <ControlSlider
+            label={t("pneumatic")}
+            value={p}
+            min={0}
+            max={1}
+            step={0.02}
+            display={`${Math.round(p * 100)}%`}
+            onChange={setP}
+            thumb="cyan"
+          />
         </div>
       </div>
     </GlossaryFrame>

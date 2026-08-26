@@ -1,0 +1,32 @@
+id: regional-endothermy
+label:
+  vi: Thân nhiệt cục bộ
+  en: Regional endothermy
+definition:
+  vi: >-
+    Chiến lược không sưởi cả cơ thể mà chỉ giữ ấm những phần nào cần tốc độ — thường là khối cơ bơi, mắt và
+    não. Cá ngừ và cá mập họ Lamnidae đã tiến hóa ra nó một cách độc lập, giữ các cấu trúc ấy ấm hơn nước
+    5–15 °C trong khi phần còn lại của cơ thể vẫn bằng nhiệt độ biển. Cái được không nằm ở tốc độ tối đa —
+    công suất tỉ lệ với lập phương tốc độ nên hiệu ứng ở đó khá nhẹ — mà nằm ở nhịp: tần số co cơ và tốc độ
+    dẫn truyền thần kinh tỉ lệ thuận với cường độ chuyển hóa, nên giữ ấm là mua lấy thời gian phản ứng. Với
+    một kẻ săn theo đàn cần cả bầy vào đòn trong cùng một khoảnh khắc, đó mới là thứ đáng tiền.
+  en: >-
+    The strategy of heating not the whole body but only the parts whose speed matters — typically the swimming
+    muscle, the eyes and the brain. Tunas and lamnid sharks arrived at it independently, holding those
+    structures 5–15 °C above the water while the rest of the body sits at sea temperature. The payoff is not
+    top speed — power scales with the cube of speed, so the effect there is mild — but timing: twitch frequency
+    and neural conduction scale directly with metabolic rate, so retained heat buys reaction time. For a pack
+    predator that needs every member to commit inside the same instant, that is the part worth paying for.
+see_also:
+  - rete-mirabile
+  - q10-temperature-coefficient
+  - countercurrent-exchange
+  - cost-of-transport
+category: bio
+tags:
+  - physiology
+  - evolution
+cover_prompt: >-
+  A large predatory fish in lateral cutaway, a compact block of deep swimming muscle and the braincase glowing
+  warm amber inside a body rendered entirely in cold blue and indigo, a sharp boundary between the warm core and
+  the cold flesh around it, painterly anatomical plate, no text, no labels.

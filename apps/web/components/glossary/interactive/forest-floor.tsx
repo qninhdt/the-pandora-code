@@ -27,7 +27,13 @@ export default function ForestFloor() {
       }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {/* dark understory wash */}
           <rect x="0" y="0" width="100" height="100" fill="#06080c" />
           {/* canopy silhouette top */}
@@ -58,7 +64,14 @@ export default function ForestFloor() {
             {[28, 44, 60, 72].map((x, i) => (
               <g key={x}>
                 <line x1={x} y1="68" x2={x} y2={60 - i} stroke="var(--magenta)" strokeWidth="0.7" />
-                <circle cx={x} cy={58 - i} r="2.2" fill="var(--magenta)" opacity={0.7} style={{ filter: "drop-shadow(0 0 3px var(--magenta))" }} />
+                <circle
+                  cx={x}
+                  cy={58 - i}
+                  r="2.2"
+                  fill="var(--magenta)"
+                  opacity={0.7}
+                  style={{ filter: "drop-shadow(0 0 3px var(--magenta))" }}
+                />
               </g>
             ))}
             {/* nutrient recycle loop */}
@@ -70,12 +83,28 @@ export default function ForestFloor() {
               strokeDasharray="2 1.5"
               opacity={0.5 + reveal * 0.5}
             />
-            <path d="M22 50 C 22 40, 78 40, 78 50" fill="none" stroke="var(--cyan)" strokeWidth="0.6" opacity={0.35 + reveal * 0.4} />
-            <text x="50" y="38" textAnchor="middle" style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--teal)" }}>
+            <path
+              d="M22 50 C 22 40, 78 40, 78 50"
+              fill="none"
+              stroke="var(--cyan)"
+              strokeWidth="0.6"
+              opacity={0.35 + reveal * 0.4}
+            />
+            <text
+              x="50"
+              y="38"
+              textAnchor="middle"
+              style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--teal)" }}
+            >
               {t("recycle")}
             </text>
           </g>
-          <text x="50" y="92" textAnchor="middle" style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="50"
+            y="92"
+            textAnchor="middle"
+            style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("detritus")}
           </text>
         </svg>
@@ -83,7 +112,16 @@ export default function ForestFloor() {
           <Readout label={t("reveal")} value={`${Math.round(reveal * 100)}%`} accent="magenta" />
         </div>
         <div className="absolute inset-x-3 bottom-10">
-          <ControlSlider label={t("light")} value={lamp} min={0} max={1} step={0.01} display={`${Math.round(lamp * 100)}%`} onChange={setLamp} thumb="amber" />
+          <ControlSlider
+            label={t("light")}
+            value={lamp}
+            min={0}
+            max={1}
+            step={0.01}
+            display={`${Math.round(lamp * 100)}%`}
+            onChange={setLamp}
+            thumb="amber"
+          />
         </div>
       </div>
     </GlossaryFrame>

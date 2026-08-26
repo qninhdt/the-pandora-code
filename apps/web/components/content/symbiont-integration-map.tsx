@@ -65,11 +65,31 @@ export function SymbiontIntegrationMap({ className }: { className?: string }) {
           aria-label={t("aria")}
         >
           <GlowDefs idBase={uid} tones={["cyan", "magenta"]} />
-          <rect x={PAD} y={PAD} width={W - PAD * 2} height={H - PAD * 2} fill={glowUrl(uid, "grid")} />
+          <rect
+            x={PAD}
+            y={PAD}
+            width={W - PAD * 2}
+            height={H - PAD * 2}
+            fill={glowUrl(uid, "grid")}
+          />
 
           {/* axes */}
-          <line x1={PAD} y1={H - PAD} x2={W - PAD} y2={H - PAD} stroke="var(--border-strong)" strokeWidth={0.8} />
-          <line x1={PAD} y1={PAD} x2={PAD} y2={H - PAD} stroke="var(--border-strong)" strokeWidth={0.8} />
+          <line
+            x1={PAD}
+            y1={H - PAD}
+            x2={W - PAD}
+            y2={H - PAD}
+            stroke="var(--border-strong)"
+            strokeWidth={0.8}
+          />
+          <line
+            x1={PAD}
+            y1={PAD}
+            x2={PAD}
+            y2={H - PAD}
+            stroke="var(--border-strong)"
+            strokeWidth={0.8}
+          />
 
           <VizText x={PAD} y={H - 14} size="micro" tone="subtle">
             {t("axisInherited")}
@@ -77,10 +97,22 @@ export function SymbiontIntegrationMap({ className }: { className?: string }) {
           <VizText x={W - PAD} y={H - 14} size="micro" tone="subtle" anchor="end">
             {t("axisAcquired")}
           </VizText>
-          <VizText x={14} y={H - PAD} size="micro" tone="subtle" transform={`rotate(-90 14 ${H - PAD})`}>
+          <VizText
+            x={14}
+            y={H - PAD}
+            size="micro"
+            tone="subtle"
+            transform={`rotate(-90 14 ${H - PAD})`}
+          >
             {t("axisTenant")}
           </VizText>
-          <VizText x={14} y={PAD + 4} size="micro" tone="subtle" transform={`rotate(-90 14 ${PAD + 4})`}>
+          <VizText
+            x={14}
+            y={PAD + 4}
+            size="micro"
+            tone="subtle"
+            transform={`rotate(-90 14 ${PAD + 4})`}
+          >
             {t("axisPermanent")}
           </VizText>
 
@@ -114,7 +146,12 @@ export function SymbiontIntegrationMap({ className }: { className?: string }) {
         </svg>
 
         <div className="flex flex-col gap-2 sm:w-2/5">
-          <VizReadout label={t("selectedLabel")} value={t(`case.${active.key}.name`)} tone={tone} tinted />
+          <VizReadout
+            label={t("selectedLabel")}
+            value={t(`case.${active.key}.name`)}
+            tone={tone}
+            tinted
+          />
           <p className="rounded-lg border border-border bg-void/30 px-3 py-2 font-serif text-sm leading-relaxed text-muted">
             {t(`case.${active.key}.note`)}
           </p>

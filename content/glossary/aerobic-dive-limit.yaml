@@ -1,0 +1,34 @@
+id: aerobic-dive-limit
+label:
+  vi: Giới hạn lặn hiếu khí
+  en: Aerobic dive limit
+definition:
+  vi: >-
+    Khoảng thời gian một sinh vật còn có thể ở dưới nước mà vẫn sống bằng oxy nó mang theo, trước khi
+    các cơ buộc phải chuyển sang đốt năng lượng không cần oxy. Cách tính đơn giản đến mức đáng ngạc
+    nhiên: lấy tổng lượng oxy dự trữ chia cho tốc độ tiêu thụ. Vì lượng dự trữ tăng tỉ lệ thuận với
+    khối lượng còn tốc độ tiêu thụ chỉ tăng theo lũy thừa 0,75, con vật càng lớn càng lặn được lâu —
+    một lợi thế hoàn toàn hình học. Vượt qua giới hạn này, axit lactic tích lại trong cơ và bị giữ ở
+    đó cho tới lúc trồi lên, khiến lần lặn kế tiếp phải chờ rất lâu; vì thế các loài lặn sâu thực
+    hiện hơn 90% chuyến săn của mình bên trong giới hạn ấy.
+  en: >-
+    How long an organism can stay under while still living on the oxygen it brought with it, before
+    its muscles are forced to burn energy without oxygen. The arithmetic is startlingly simple: total
+    oxygen stores divided by the rate they are spent. Because stores scale directly with body mass
+    while consumption scales only as mass to the three-quarter power, bigger animals dive longer for
+    purely geometric reasons. Past the limit, lactic acid builds in the muscle and stays trapped
+    there until surfacing, making the next dive wait — which is why deep divers keep more than 90% of
+    their foraging trips inside it.
+see_also:
+  - diving-reflex
+  - myoglobin
+  - haematocrit
+  - allometry
+category: bio
+tags:
+  - physiology
+  - ecology
+cover_prompt: >-
+  A painterly cutaway of a large swimming body seen in silhouette against deep water, three faint
+  glowing reservoirs suggested within it — one at the chest, one along the vessels, one through the
+  swimming muscle — the glow dimming toward the tail, cool teal and indigo, no text, no labels.

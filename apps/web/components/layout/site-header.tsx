@@ -4,10 +4,10 @@ import { LocaleSwitcher } from "@/components/layout/locale-switcher";
 import type { Locale } from "@/i18n/config";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
+import { useLocale } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { useLocale } from "next-intl";
 
 interface SiteHeaderProps {
   brand: string;

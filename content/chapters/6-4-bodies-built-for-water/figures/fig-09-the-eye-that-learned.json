@@ -1,0 +1,37 @@
+{
+  "id": "fig-09-the-eye-that-learned",
+  "chapter_slug": "bodies-built-for-water",
+  "role": "comparison",
+  "narrative_purpose": "Carries the chapter's central proof: one month of practice separates blurred underwater vision from sharp, and the difference is a constricted pupil rather than a different eye.",
+  "subject": "Two children's faces shown side by side just below the surface of the same clear water, both looking directly toward the viewer, cropped close so each face fills its half of the frame. The left child squints slightly with a wide dark open pupil, and the patterned seabed visible behind and below them is rendered soft, smeared and out of focus. The right child's eyes are open, calm and steady, with a strikingly tiny constricted pupil in each, and the same patterned seabed behind them is rendered sharp and legible, every ripple and pebble distinct. Fine strands of wet hair drift across both faces. Small bubbles rise past each of them.",
+  "scene": "Bright shallow sunlit water just under the surface, a rippled sandy seabed with scattered pebbles a short distance below and behind both faces.",
+  "camera": "Close head-and-shoulders view of both faces at equal scale, straight-on, at the same depth.",
+  "light": "Dappled surface light falling across both faces from above, cool teal water tone identical on both halves, cyan catchlights in all four eyes.",
+  "palette": "Ocean teal water, pale sunlit sand, cyan catchlights, deep indigo in the shadowed water at the edges.",
+  "style": "Painterly naturalist portrait study, wet and immediate, hand-painted texture.",
+  "detail_level": "Extremely crisp on the two pupil sizes and on the difference in sharpness of the seabed behind each child; the water margins soft.",
+  "composition": "Left face in the left half, right face in the right half, both centred vertically, open water in a band across the top of each half for overlay labels.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "eye charts",
+    "optical diagrams",
+    "diving masks",
+    "goggles",
+    "panel borders",
+    "dividing line",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Both children are the same age and build, in identical water and light — the ONLY differences are pupil size and how sharply the background behind each one resolves. No goggles or masks on either. Blue Na'vi skin on both.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no eye chart, no optical ray diagram, no goggles or diving mask, no panel borders, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

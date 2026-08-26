@@ -34,22 +34,77 @@ export default function ExtinctionDebt() {
       infoText={t("info")}
       onReset={() => setYears(0)}
       allowFullscreen={false}
-      caption={<span style={{ color: tone }}>{owed > 0.08 ? t("verdictOwed", { n: Math.round(owed * 100) }) : t("verdictPaid")}</span>}
+      caption={
+        <span style={{ color: tone }}>
+          {owed > 0.08 ? t("verdictOwed", { n: Math.round(owed * 100) }) : t("verdictPaid")}
+        </span>
+      }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 78" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
-          <line x1="16" y1="54" x2="86" y2="54" stroke="var(--border-strong)" strokeWidth="0.4" opacity={0.6} />
-          <line x1="16" y1="18" x2="16" y2="54" stroke="var(--border-strong)" strokeWidth="0.4" opacity={0.6} />
+        <svg
+          viewBox="0 0 100 78"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
+          <line
+            x1="16"
+            y1="54"
+            x2="86"
+            y2="54"
+            stroke="var(--border-strong)"
+            strokeWidth="0.4"
+            opacity={0.6}
+          />
+          <line
+            x1="16"
+            y1="18"
+            x2="16"
+            y2="54"
+            stroke="var(--border-strong)"
+            strokeWidth="0.4"
+            opacity={0.6}
+          />
 
           {/* the new equilibrium the system is falling toward */}
-          <line x1="16" y1={py(equilibrium)} x2="86" y2={py(equilibrium)} stroke="var(--magenta)" strokeWidth="0.4" strokeDasharray="2 1.5" opacity={0.7} />
+          <line
+            x1="16"
+            y1={py(equilibrium)}
+            x2="86"
+            y2={py(equilibrium)}
+            stroke="var(--magenta)"
+            strokeWidth="0.4"
+            strokeDasharray="2 1.5"
+            opacity={0.7}
+          />
           {/* the debt: the gap between the survivors and that floor */}
-          <rect x={px(years) - 2} y={py(remaining)} width="4" height={Math.max(0, py(equilibrium) - py(remaining))} fill="var(--amber)" opacity={0.25} />
+          <rect
+            x={px(years) - 2}
+            y={py(remaining)}
+            width="4"
+            height={Math.max(0, py(equilibrium) - py(remaining))}
+            fill="var(--amber)"
+            opacity={0.25}
+          />
 
           <path d={path} fill="none" stroke="var(--teal)" strokeWidth="1.2" opacity={0.9} />
-          <circle cx={px(years)} cy={py(remaining)} r="1.9" fill="var(--teal)" style={{ filter: "drop-shadow(0 0 3px var(--teal))" }} />
+          <circle
+            cx={px(years)}
+            cy={py(remaining)}
+            r="1.9"
+            fill="var(--teal)"
+            style={{ filter: "drop-shadow(0 0 3px var(--teal))" }}
+          />
           <line x1="16" y1="18" x2="20" y2="18" stroke="var(--border)" strokeWidth="0.3" />
-          <text x="50" y="66" textAnchor="middle" style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--muted)" }}>{t("axis")}</text>
+          <text
+            x="50"
+            y="66"
+            textAnchor="middle"
+            style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
+            {t("axis")}
+          </text>
         </svg>
         <div className="absolute right-3 top-14 flex flex-col gap-1.5">
           <Readout label={t("surviving")} value={`${Math.round(remaining * 100)}%`} accent="teal" />

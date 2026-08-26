@@ -21,8 +21,7 @@ export default function TransitTimingVariation() {
   // Timing offset: positive moon → late transit, negative → early.
   const offsetMin = moon * 22;
   const dipCenter = 50 + moon * 24; // shift dip across the lightcurve panel
-  const state =
-    Math.abs(moon) < 0.06 ? t("onTime") : moon > 0 ? t("late") : t("early");
+  const state = Math.abs(moon) < 0.06 ? t("onTime") : moon > 0 ? t("late") : t("early");
 
   // Barycentre wobble: planet sits off-centre opposite the moon.
   const planetOffset = -moon * 8;
@@ -34,9 +33,7 @@ export default function TransitTimingVariation() {
       infoText={t("info")}
       aspectRatio="16/10"
       caption={
-        <span
-          style={{ color: Math.abs(moon) < 0.06 ? "var(--muted)" : "var(--amber)" }}
-        >
+        <span style={{ color: Math.abs(moon) < 0.06 ? "var(--muted)" : "var(--amber)" }}>
           {state}
         </span>
       }
@@ -104,8 +101,9 @@ export default function TransitTimingVariation() {
             viewBox="0 0 100 30"
             className="h-full w-full"
             preserveAspectRatio="none"
-            aria-hidden
+            aria-hidden={true}
           >
+            <title>{t("lightcurve")}</title>
             {/* on-time reference dip */}
             <path
               d="M0 6 H42 L48 20 H52 L58 6 H100"

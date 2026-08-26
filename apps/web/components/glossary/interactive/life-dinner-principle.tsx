@@ -34,8 +34,8 @@ export default function LifeDinnerPrinciple() {
       allowFullscreen={false}
       caption={
         <span>
-          {t("pressure")} ratio{" "}
-          <span className="text-amber">{asymmetry.toFixed(1)}×</span> prey-biased
+          {t("pressure")} ratio <span className="text-amber">{asymmetry.toFixed(1)}×</span>{" "}
+          prey-biased
         </span>
       }
     >
@@ -60,14 +60,7 @@ export default function LifeDinnerPrinciple() {
 
           {/* prey runner */}
           <g transform={`translate(${18 + preyEdge * 52} 36)`}>
-            <ellipse
-              cx="0"
-              cy="0"
-              rx="5"
-              ry="3.2"
-              fill="var(--teal)"
-              opacity="0.85"
-            />
+            <ellipse cx="0" cy="0" rx="5" ry="3.2" fill="var(--teal)" opacity="0.85" />
             <text
               x="0"
               y="10"
@@ -80,14 +73,7 @@ export default function LifeDinnerPrinciple() {
 
           {/* predator runner */}
           <g transform={`translate(${18 + predEdge * 52} 48)`}>
-            <ellipse
-              cx="0"
-              cy="0"
-              rx="5.5"
-              ry="3.4"
-              fill="var(--magenta)"
-              opacity="0.85"
-            />
+            <ellipse cx="0" cy="0" rx="5.5" ry="3.4" fill="var(--magenta)" opacity="0.85" />
             <text
               x="0"
               y="10"

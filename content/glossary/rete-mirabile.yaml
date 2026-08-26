@@ -1,0 +1,32 @@
+id: rete-mirabile
+label:
+  vi: Rete mirabile (lưới mạch kỳ diệu)
+  en: Rete mirabile
+definition:
+  vi: >-
+    Bó mạch máu gồm rất nhiều động mạch và tĩnh mạch nhỏ chạy ngược chiều nhau và cài vào nhau sát đến mức
+    tiếp xúc suốt cả chiều dài. Nhờ đó máu động mạch lạnh đi vào khối cơ nhận nhiệt từ máu tĩnh mạch ấm đang
+    đi ra, và nhiệt chuyển hóa vốn sẽ bị thải qua mang thì bị chặn lại rồi tái sử dụng. Cùng một hình học ấy
+    còn được dùng cho những việc khác — cô đặc khí trong bong bóng cá, giữ nhiệt ở chi động vật vùng lạnh —
+    nên nó là ví dụ điển hình của một mô-đun kỹ thuật sinh học được tái dụng nhiều lần. Một con cá mập mako
+    trong nước lạnh có mắt ấm, não ấm và động cơ ấm, còn phần còn lại thì không.
+  en: >-
+    A vascular bundle of many fine arteries and veins running counter to each other and interleaved so closely
+    they touch along their whole length. Cold arterial blood heading into the muscle picks up heat from warm
+    venous blood heading out, so metabolic heat that would have been dumped through the gills is intercepted and
+    recycled. The same geometry is reused for other jobs — concentrating gas in a swim bladder, conserving heat
+    in cold-climate limbs — making it a textbook case of a bioengineering module reinvented for several purposes.
+    A mako shark in cold water has warm eyes, a warm brain and a warm engine, and nothing else.
+see_also:
+  - regional-endothermy
+  - countercurrent-exchange
+  - cross-current-exchange
+  - q10-temperature-coefficient
+category: bio
+tags:
+  - physiology
+  - evolution
+cover_prompt: >-
+  An extreme close view of a woven mat of hair-fine blood vessels, alternating strands running in opposite
+  directions and pressed together along their length, warm amber tones bleeding into cool teal across the
+  interface, deep indigo tissue around it, painterly anatomical plate, no text, no labels.

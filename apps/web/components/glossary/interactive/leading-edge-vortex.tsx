@@ -48,7 +48,15 @@ export default function LeadingEdgeVortex() {
             />
             {lev && (
               <g>
-                <circle cx="-18" cy="-8" r="6" fill="none" stroke="var(--magenta)" strokeWidth="1" opacity="0.85" />
+                <circle
+                  cx="-18"
+                  cy="-8"
+                  r="6"
+                  fill="none"
+                  stroke="var(--magenta)"
+                  strokeWidth="1"
+                  opacity="0.85"
+                />
                 <circle cx="-18" cy="-8" r="3" fill="var(--magenta)" opacity="0.35" />
                 <path
                   d="M-24 -8 Q -18 -14 -12 -8 Q -18 -2 -24 -8"
@@ -107,7 +115,16 @@ export default function LeadingEdgeVortex() {
               {t("lev")}
             </button>
           </div>
-          <ControlSlider label={t("aoa")} value={aoa} min={5} max={45} step={1} display={`${aoa}°`} onChange={setAoa} thumb="cyan" />
+          <ControlSlider
+            label={t("aoa")}
+            value={aoa}
+            min={5}
+            max={45}
+            step={1}
+            display={`${aoa}°`}
+            onChange={setAoa}
+            thumb="cyan"
+          />
         </div>
       </div>
     </GlossaryFrame>

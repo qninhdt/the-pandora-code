@@ -80,11 +80,7 @@ export default function Falsifiability() {
                   : "var(--foreground)",
               }}
             >
-              {flipped
-                ? claim.falsifiable
-                  ? t("testable")
-                  : t("notTestable")
-                : t("flip")}
+              {flipped ? (claim.falsifiable ? t("testable") : t("notTestable")) : t("flip")}
             </span>
             {flipped && (
               <span

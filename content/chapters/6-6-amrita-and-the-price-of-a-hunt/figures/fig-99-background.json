@@ -1,0 +1,35 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "amrita-and-the-price-of-a-hunt",
+  "role": "hero",
+  "narrative_purpose": "The chapter's full-bleed atmospheric layer: an ultra-wide dim night ocean the reader's text floats over, carrying the mood of open water at scale with nothing to fix the eye.",
+  "subject": "An ultra-wide panorama of open night ocean seen from very high above. Long low swell runs across the whole width in soft parallel bands. A thin scattering of faint bioluminescent plankton glimmers in the troughs, too dim and too evenly distributed to draw the eye anywhere in particular. Near the far horizon, barely distinguishable from the haze, sit two or three tiny distant vessel lights, no larger than specks. No animal, no structure, no foreground object anywhere in the frame.",
+  "scene": "Open ocean at night from a great height, deep atmospheric haze compressing the horizon, everything dissolving into darkness toward the frame edges.",
+  "camera": "Ultra-wide panoramic aerial vista from very high altitude, horizon sitting high in the frame.",
+  "light": "Almost no light source - a faint diffuse glow along the horizon haze and scattered dim plankton glimmer, everything else in deep shadow.",
+  "palette": "Void indigo throughout, faint deep teal in the swell bands, the barest cyan glimmer in the troughs, no warm accent.",
+  "style": "Painterly atmospheric vista, soft and dissolving, detail giving way to haze.",
+  "detail_level": "Deliberately low throughout - no crisp focal detail anywhere, uniformly dim and low contrast so overlaid long-form text stays fully readable.",
+  "composition": "Horizon high in the frame, wide unbroken bands of dim water filling the lower two thirds, no focal subject at any point.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "bright focal objects",
+    "high-contrast figures",
+    "large animals",
+    "foreground vessels",
+    "moon",
+    "lens flare"
+  ],
+  "consistency_notes": "Must stay dark and low contrast - this sits behind body text under a scrim. No single element may become a focal point.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no bright focal subject, no high contrast, no moon, no lens flare, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

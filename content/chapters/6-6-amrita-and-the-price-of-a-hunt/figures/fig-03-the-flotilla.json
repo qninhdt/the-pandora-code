@@ -1,0 +1,37 @@
+{
+  "id": "fig-03-the-flotilla",
+  "chapter_slug": "amrita-and-the-price-of-a-hunt",
+  "role": "diagram",
+  "narrative_purpose": "Shows that the hunt is a formation rather than a single vessel: every craft type exists to close a different escape route, which is why the animals cannot simply outrun or outdive it.",
+  "subject": "A high overhead view of open ocean. At the lower centre sits one long grey mothership with a wide twin hull and four large fan housings at its stern. From an opening beneath its hull, one larger gunboat with a forward turret runs ahead. Fanning outward from the mothership in a widening arc are six small ten-metre fast boats throwing white wakes. Below the surface, drawn as pale shapes visible through the water, three small stubby submersibles with bubble canopies run further ahead of the boats. High above, a single tiltrotor aircraft circles, and four small buoys float in a line on the water beneath its path. Far at the top of the frame, a loose group of four large dark animal shapes is visible just under the surface, still in formation.",
+  "scene": "Open ocean seen from high above, no land, the water dark and slightly textured with swell.",
+  "camera": "High aerial plan view, the whole formation and its quarry in one frame.",
+  "light": "Flat overcast daylight from above, cold and even, pale wakes bright against dark water.",
+  "palette": "Void indigo and deep teal water, cold grey hulls, pale grey-white wakes, no warm colour.",
+  "style": "Painterly naturalist plan view, hand-painted water and hulls, not a tactical map or vector diagram.",
+  "detail_level": "Crisp on the hull silhouettes and wakes; the submerged animals soft and dim; open flat water between the formation and the animals for overlay labels.",
+  "composition": "Mothership lower centre, craft fanning up and outward toward the upper third, animals at the top edge, wide open dark water bands at left and right for callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "dashed movement lines",
+    "tactical map symbols",
+    "grid overlay",
+    "vector diagram look"
+  ],
+  "consistency_notes": "Same mothership design as the cover: long grey twin hull, four stern fan housings. The formation must read as an encircling net closing on the animals, conveyed by hull positions alone with no arrows.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no dashed lines, no map symbols, no grid, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/amrita-and-the-price-of-a-hunt/fig-00-cover.png"
+  ]
+}

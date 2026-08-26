@@ -1,0 +1,35 @@
+id: bioeconomics
+label:
+  vi: Kinh tế học tài nguyên sinh vật
+  en: Bioeconomics
+definition:
+  vi: >-
+    Ngành nghiên cứu điều xảy ra khi một quần thể sinh vật vừa tuân theo quy luật sinh học vừa tuân
+    theo quy luật thị trường cùng lúc. Khung cơ bản khá đơn giản: quần thể tự sinh trưởng theo hàm
+    logistic, doanh thu tăng theo cả giá và lượng còn lại, chi phí tăng theo công sức bỏ ra. Từ đó
+    rút ra được ba mức tồn lượng khác nhau — mức cho sản lượng sinh học cao nhất, mức mà thị trường
+    tự do dừng lại khi hết lãi, và mức một chủ sở hữu duy nhất tính toán là có lợi nhất. Ba con số ấy
+    không trùng nhau, và khoảng cách giữa chúng giải thích phần lớn lịch sử khai thác tài nguyên sống
+    trên Trái Đất, kể cả những lần thất bại.
+  en: >-
+    The study of what happens when a biological population obeys biological law and market law at the
+    same time. The basic framework is simple enough: the population grows logistically on its own,
+    revenue rises with both price and remaining abundance, and cost rises with effort expended. From
+    that fall three different stock levels — the one giving the highest biological yield, the one an
+    open market settles at when profit runs out, and the one a sole owner calculates as most
+    advantageous. Those three numbers do not coincide, and the gaps between them explain much of the
+    history of living-resource extraction on Earth, including its failures.
+see_also:
+  - discount-rate
+  - open-access-resource
+  - optimal-extinction
+  - maximum-sustainable-yield
+category: concept
+tags:
+  - bioeconomics
+  - ecology
+cover_prompt: >-
+  A painterly plate of a dark field crossed by one rising straight line and one falling straight line
+  that intersect near the centre, with a dome-shaped biological growth curve drawn faintly beneath
+  them and a small shoal of fish swimming along the dome, cool teal lines and pale fish on deep
+  indigo, painterly naturalist plate, no text, no labels.

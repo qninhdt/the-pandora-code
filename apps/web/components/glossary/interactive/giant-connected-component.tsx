@@ -155,8 +155,15 @@ export default function GiantConnectedComponent() {
           ))}
         </svg>
         <div className="absolute right-3 top-14 flex flex-col gap-1.5">
-          <Readout label={t("giant")} value={`${Math.round(frac * 100)}%`} accent={crystallized ? "amber" : "teal"} />
-          <ControlButton onClick={() => setCount((c) => Math.min(POOL.length, c + 1))} className="px-2.5">
+          <Readout
+            label={t("giant")}
+            value={`${Math.round(frac * 100)}%`}
+            accent={crystallized ? "amber" : "teal"}
+          />
+          <ControlButton
+            onClick={() => setCount((c) => Math.min(POOL.length, c + 1))}
+            className="px-2.5"
+          >
             + {t("edges")}
           </ControlButton>
         </div>

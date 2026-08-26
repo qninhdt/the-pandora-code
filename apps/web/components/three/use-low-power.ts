@@ -1,6 +1,6 @@
 "use client";
 
-import { useReducedMotionSafe } from "@/components/motion/use-reduced-motion-safe";
+import { useReducedMotionForScene } from "@/components/motion/use-reduced-motion-safe";
 import { useEffect, useState } from "react";
 
 // Decide whether a 3D scene should run at all. Returns true (use 2D fallback)
@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 // true on the server / first paint and relaxes after mount - so SSR is always
 // the cheap fallback and there is no hydration mismatch.
 export function useLowPower(): boolean {
-  const reduced = useReducedMotionSafe();
+  const reduced = useReducedMotionForScene();
   const [lowPower, setLowPower] = useState(true);
 
   useEffect(() => {

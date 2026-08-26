@@ -1,0 +1,37 @@
+id: cellular-senescence
+label:
+  vi: Lão hóa tế bào
+  en: Cellular senescence
+definition:
+  vi: >-
+    Trạng thái một tế bào ngừng phân chia vĩnh viễn nhưng vẫn sống và vẫn hoạt động chuyển hóa, do
+    tổn thương DNA, stress oxy hóa hoặc telomere bị bào mòn tới hạn. Tế bào bị bắt giữ này bật các
+    protein ức chế chu kỳ như p16 và p21, và tự bảo vệ khỏi chết theo chương trình bằng một họ
+    protein sinh tồn. Ban đầu đây là một hàng rào chống ung thư: một tế bào có nguy cơ hóa ác thì
+    thà ngừng phân chia. Nhưng khi tuổi tăng, chúng tích lại và tiết ra một hỗn hợp cytokine gây
+    viêm cùng enzyme phá vỡ chất nền, làm hỏng mô lành quanh nó và đẩy các tế bào láng giềng vào
+    cùng trạng thái. Từ một cơ chế bảo vệ, nó trở thành một trong những động lực chính của suy giảm
+    hệ thống theo tuổi.
+  en: >-
+    A state in which a cell permanently stops dividing yet remains alive and metabolically active,
+    triggered by DNA damage, oxidative stress, or critical telomere erosion. The arrested cell
+    switches on cell-cycle inhibitors such as p16 and p21, and protects itself from programmed death
+    through a family of survival proteins. Initially this is an anti-cancer barrier: a cell at risk
+    of turning malignant is better off not dividing. But with age these cells accumulate and secrete
+    a mixture of inflammatory cytokines and matrix-degrading enzymes that damages the healthy tissue
+    around them and pushes neighbouring cells into the same state. What began as a protective
+    mechanism becomes one of the principal drivers of age-related systemic decline.
+see_also:
+  - senolytic
+  - hallmarks-of-aging
+  - epigenetic-clock
+  - homeostasis
+category: concept
+tags:
+  - pharmacology
+  - physiology
+cover_prompt: >-
+  A painterly microscopic plate of a tissue sheet where most cells are slim and orderly while a few
+  swollen, flattened cells sit among them leaking a faint warm haze into their neighbours, the
+  nearby cells dimming in response, cool teal cytoplasm against dark indigo, painterly naturalist
+  plate, no text, no labels.

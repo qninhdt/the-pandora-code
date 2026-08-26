@@ -33,12 +33,28 @@ export default function EcosystemEngineer() {
           role="img"
           aria-label={t("title")}
         >
-          <line x1="8" y1="58" x2="92" y2="58" stroke="var(--border-strong)" strokeWidth="0.5" opacity={0.6} />
+          <line
+            x1="8"
+            y1="58"
+            x2="92"
+            y2="58"
+            stroke="var(--border-strong)"
+            strokeWidth="0.5"
+            opacity={0.6}
+          />
 
           {mode === "allogenic" ? (
             <g>
               {/* the engineer, small, beside the structure it assembled */}
-              <ellipse cx="26" cy="53" rx="5" ry="3.4" fill={tone} opacity={0.9} style={{ filter: `drop-shadow(0 0 3px ${tone})` }} />
+              <ellipse
+                cx="26"
+                cy="53"
+                rx="5"
+                ry="3.4"
+                fill={tone}
+                opacity={0.9}
+                style={{ filter: `drop-shadow(0 0 3px ${tone})` }}
+              />
               {/* moved material: a dam of separate pieces */}
               {[0, 1, 2, 3, 4, 5].map((i) => (
                 <rect
@@ -50,7 +66,7 @@ export default function EcosystemEngineer() {
                   rx="0.8"
                   fill="var(--muted)"
                   opacity={0.55}
-                  transform={`rotate(${(i * 13) % 20 - 10} ${50 + (i % 3) * 9} ${50 - Math.floor(i / 3) * 5})`}
+                  transform={`rotate(${((i * 13) % 20) - 10} ${50 + (i % 3) * 9} ${50 - Math.floor(i / 3) * 5})`}
                 />
               ))}
               <rect x="44" y="52" width="32" height="6" fill={tone} opacity={0.14} />
@@ -58,7 +74,14 @@ export default function EcosystemEngineer() {
           ) : (
             <g>
               {/* the engineer IS the structure: one body, many tenants on it */}
-              <path d="M48 58 L48 22 M48 34 L38 26 M48 40 L59 32 M48 30 L57 22" stroke={tone} strokeWidth="2.6" strokeLinecap="round" opacity={0.9} style={{ filter: `drop-shadow(0 0 4px ${tone})` }} />
+              <path
+                d="M48 58 L48 22 M48 34 L38 26 M48 40 L59 32 M48 30 L57 22"
+                stroke={tone}
+                strokeWidth="2.6"
+                strokeLinecap="round"
+                opacity={0.9}
+                style={{ filter: `drop-shadow(0 0 4px ${tone})` }}
+              />
               <ellipse cx="48" cy="58" rx="13" ry="3" fill={tone} opacity={0.2} />
               {[
                 [38, 26],
@@ -73,12 +96,21 @@ export default function EcosystemEngineer() {
             </g>
           )}
 
-          <text x="50" y="70" textAnchor="middle" style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="50"
+            y="70"
+            textAnchor="middle"
+            style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t(`caption.${mode}`)}
           </text>
         </svg>
         <div className="absolute right-3 top-14">
-          <Readout label={t("mechanism")} value={t(`short.${mode}`)} accent={mode === "autogenic" ? "cyan" : "teal"} />
+          <Readout
+            label={t("mechanism")}
+            value={t(`short.${mode}`)}
+            accent={mode === "autogenic" ? "cyan" : "teal"}
+          />
         </div>
         <div className="absolute inset-x-3 bottom-10">
           <ControlTabs

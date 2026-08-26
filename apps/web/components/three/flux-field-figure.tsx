@@ -1,8 +1,8 @@
 "use client";
 
-import { Scene3D } from "./scene-3d";
 import { FieldViz } from "./field-viz";
 import { FieldVizFallback } from "./field-viz-fallback";
+import { Scene3D } from "./scene-3d";
 
 interface FluxFieldFigureProps {
   caption?: string;

@@ -1,0 +1,35 @@
+{
+  "id": "fig-05-where-a-body-keeps-its-oxygen",
+  "chapter_slug": "bodies-built-for-water",
+  "role": "comparison",
+  "narrative_purpose": "Kills the intuition that a bigger breath makes a better diver: a human keeps a quarter of its oxygen as lung air, a seal almost none, loading it into blood and muscle instead.",
+  "subject": "Two swimming bodies shown side by side in cutaway against the same dark water, both semi-transparent so their interiors read. On the left, a slender human-proportioned swimmer whose chest cavity glows brightly with a large pale luminous air space, while the vessels through the torso glow moderately and the limb muscles are only faintly lit. On the right, a thickset barrel-bodied seal-like marine animal whose chest cavity is small and nearly dark, while a dense network of vessels through its body glows intensely and its thick swimming muscles along the back and tail glow a deep saturated colour throughout.",
+  "scene": "One continuous stretch of open blue-black water, both animals at the same depth and scaled so their bodies occupy similar frame height.",
+  "camera": "Straight-on side view of both cutaways at equal visual weight.",
+  "light": "Internal glow is the only strong light source in each body — pale luminous air in the left chest, deep crimson and cyan through the right animal's vessels and muscle; cool ambient blue-green from above.",
+  "palette": "Void indigo water, pale mist for lung air, crimson and magenta for blood-rich tissue, cyan accents, deep teal shadow.",
+  "style": "Painterly naturalist cutaway plate, glowing from within, hand-painted texture.",
+  "detail_level": "Crisp on the size difference between the two chest cavities and on the density of glow in the right animal's swimming muscle; outer body contours softened.",
+  "composition": "Left animal in the left half, right animal in the right half, open low-detail dark water in a band across the top of each for overlay labels.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "bar charts",
+    "percentages",
+    "panel borders",
+    "dividing line",
+    "Avatar branding"
+  ],
+  "consistency_notes": "The left chest cavity must be visibly large and bright, the right visibly small and dim — that inversion is the entire point. The right animal is a generic thickset marine diver, not a recognisable Earth species portrait.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no numbers, no bar charts or percentages, no arrows, no panel borders, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

@@ -16,16 +16,19 @@ import { useRafLoop } from "./shared/use-raf-loop";
 // actively carves it. The glowing points under each curve are individuals;
 // they drift and forage, but their spread always tracks the population mean.
 const SIGMA = 8;
-const gauss = (x: number, mu: number, s: number) =>
-  Math.exp(-((x - mu) ** 2) / (2 * s * s));
+const gauss = (x: number, mu: number, s: number) => Math.exp(-((x - mu) ** 2) / (2 * s * s));
 
 // fixed pseudo-random population samples so dots feel organic but never reflow
-const POP_A = [-1.6, -0.9, -0.4, 0.1, 0.6, 1.1, 1.7, -1.2, 0.3, -0.1].map(
-  (dx, i) => ({ dx, frac: 0.2 + ((i * 37) % 70) / 100, phase: i * 1.3 }),
-);
-const POP_B = [-1.7, -1.0, -0.3, 0.2, 0.7, 1.2, 1.6, -1.3, 0.4, -0.2].map(
-  (dx, i) => ({ dx, frac: 0.2 + ((i * 53) % 70) / 100, phase: i * 0.9 + 2 }),
-);
+const POP_A = [-1.6, -0.9, -0.4, 0.1, 0.6, 1.1, 1.7, -1.2, 0.3, -0.1].map((dx, i) => ({
+  dx,
+  frac: 0.2 + ((i * 37) % 70) / 100,
+  phase: i * 1.3,
+}));
+const POP_B = [-1.7, -1.0, -0.3, 0.2, 0.7, 1.2, 1.6, -1.3, 0.4, -0.2].map((dx, i) => ({
+  dx,
+  frac: 0.2 + ((i * 53) % 70) / 100,
+  phase: i * 0.9 + 2,
+}));
 
 export default function CharacterDisplacement() {
   const t = useTranslations("viz.character-displacement");
@@ -165,25 +168,51 @@ export default function CharacterDisplacement() {
 
           <path d={areaFor(mA)} fill="url(#chd-fill-a)" />
           <path d={areaFor(mB)} fill="url(#chd-fill-b)" />
-          <path d={pathFor(mA)} fill="none" stroke="var(--teal)" strokeWidth="1.1" filter="url(#chd-glow)" />
-          <path d={pathFor(mB)} fill="none" stroke="var(--cyan)" strokeWidth="1.1" filter="url(#chd-glow)" />
+          <path
+            d={pathFor(mA)}
+            fill="none"
+            stroke="var(--teal)"
+            strokeWidth="1.1"
+            filter="url(#chd-glow)"
+          />
+          <path
+            d={pathFor(mB)}
+            fill="none"
+            stroke="var(--cyan)"
+            strokeWidth="1.1"
+            filter="url(#chd-glow)"
+          />
 
           {/* foraging individuals drifting under each curve */}
           {POP_A.map((o, i) => {
             const p = dotAt(mA, o);
-            return <circle key={`a${i}`} cx={p.x} cy={p.y} r="1" fill="var(--teal)" opacity="0.85" />;
+            return (
+              <circle key={`a${i}`} cx={p.x} cy={p.y} r="1" fill="var(--teal)" opacity="0.85" />
+            );
           })}
           {POP_B.map((o, i) => {
             const p = dotAt(mB, o);
-            return <circle key={`b${i}`} cx={p.x} cy={p.y} r="1" fill="var(--cyan)" opacity="0.85" />;
+            return (
+              <circle key={`b${i}`} cx={p.x} cy={p.y} r="1" fill="var(--cyan)" opacity="0.85" />
+            );
           })}
 
           <circle cx={mA} cy={32} r="1.8" fill="var(--teal)" filter="url(#chd-glow)" />
-          <text x={mA} y="28" textAnchor="middle" style={{ fontSize: 3.2, fontFamily: "monospace", fill: "var(--teal)" }}>
+          <text
+            x={mA}
+            y="28"
+            textAnchor="middle"
+            style={{ fontSize: 3.2, fontFamily: "monospace", fill: "var(--teal)" }}
+          >
             {t("speciesA")}
           </text>
           <circle cx={mB} cy={32} r="1.8" fill="var(--cyan)" filter="url(#chd-glow)" />
-          <text x={mB} y="28" textAnchor="middle" style={{ fontSize: 3.2, fontFamily: "monospace", fill: "var(--cyan)" }}>
+          <text
+            x={mB}
+            y="28"
+            textAnchor="middle"
+            style={{ fontSize: 3.2, fontFamily: "monospace", fill: "var(--cyan)" }}
+          >
             {t("speciesB")}
           </text>
 

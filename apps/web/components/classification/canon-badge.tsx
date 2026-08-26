@@ -1,6 +1,6 @@
-import { useTranslations } from "next-intl";
 import type { ClassificationKind } from "@/lib/content/schemas/shared";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 
 // Built fresh for the dark bioluminescent system. Each tier glows in its own
 // hue - a tiny dot of "living light" plus a soft outer bloom - so the four

@@ -85,8 +85,26 @@ export default function AspectRatio() {
               </button>
             ))}
           </div>
-          <ControlSlider label={t("span")} value={span} min={0.2} max={16} step={0.1} display={`${span.toFixed(1)} m`} onChange={setSpan} thumb="cyan" />
-          <ControlSlider label={t("chord")} value={chord} min={0.05} max={3} step={0.05} display={`${chord.toFixed(2)} m`} onChange={setChord} thumb="teal" />
+          <ControlSlider
+            label={t("span")}
+            value={span}
+            min={0.2}
+            max={16}
+            step={0.1}
+            display={`${span.toFixed(1)} m`}
+            onChange={setSpan}
+            thumb="cyan"
+          />
+          <ControlSlider
+            label={t("chord")}
+            value={chord}
+            min={0.05}
+            max={3}
+            step={0.05}
+            display={`${chord.toFixed(2)} m`}
+            onChange={setChord}
+            thumb="teal"
+          />
         </div>
       </div>
     </GlossaryFrame>

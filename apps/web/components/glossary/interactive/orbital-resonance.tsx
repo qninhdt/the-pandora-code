@@ -137,7 +137,15 @@ export default function OrbitalResonance() {
 
           {/* conjunction flash */}
           {conjunction && (
-            <circle cx={CX} cy={CY} r={GIANT_R + 6} fill="none" stroke="var(--teal)" strokeWidth="0.6" opacity="0.6" />
+            <circle
+              cx={CX}
+              cy={CY}
+              r={GIANT_R + 6}
+              fill="none"
+              stroke="var(--teal)"
+              strokeWidth="0.6"
+              opacity="0.6"
+            />
           )}
 
           {/* moons */}

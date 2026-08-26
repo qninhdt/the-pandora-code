@@ -33,11 +33,7 @@ export default function DistributedCognition() {
   });
 
   const capacity = useMemo(
-    () =>
-      (Object.keys(WEIGHT) as Piece[]).reduce(
-        (s, k) => s + (on[k] ? WEIGHT[k] : 0),
-        0,
-      ),
+    () => (Object.keys(WEIGHT) as Piece[]).reduce((s, k) => s + (on[k] ? WEIGHT[k] : 0), 0),
     [on],
   );
   const intact = capacity >= 0.99;
@@ -53,9 +49,7 @@ export default function DistributedCognition() {
       title={t("title")}
       category={t("category")}
       infoText={t("info")}
-      onReset={() =>
-        setOn({ head: true, notebook: true, teammate: true, board: true })
-      }
+      onReset={() => setOn({ head: true, notebook: true, teammate: true, board: true })}
       allowFullscreen={false}
       caption={
         <span className={intact ? "text-teal" : "text-magenta"}>
@@ -73,18 +67,20 @@ export default function DistributedCognition() {
         >
           {/* links between active pieces */}
           {active.map((a, i) =>
-            active.slice(i + 1).map((b) => (
-              <line
-                key={`${a}-${b}`}
-                x1={POS[a].x}
-                y1={POS[a].y}
-                x2={POS[b].x}
-                y2={POS[b].y}
-                stroke="var(--cyan)"
-                strokeWidth="0.7"
-                opacity={0.45}
-              />
-            )),
+            active
+              .slice(i + 1)
+              .map((b) => (
+                <line
+                  key={`${a}-${b}`}
+                  x1={POS[a].x}
+                  y1={POS[a].y}
+                  x2={POS[b].x}
+                  y2={POS[b].y}
+                  stroke="var(--cyan)"
+                  strokeWidth="0.7"
+                  opacity={0.45}
+                />
+              )),
           )}
 
           {(Object.keys(POS) as Piece[]).map((k) => {

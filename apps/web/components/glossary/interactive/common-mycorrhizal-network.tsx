@@ -39,13 +39,32 @@ export default function CommonMycorrhizalNetwork() {
       }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {/* soil band */}
           <rect x="4" y="58" width="92" height="30" fill="var(--surface)" opacity={0.55} />
           {/* hub tree */}
           <rect x="48" y="28" width="4" height="32" fill="var(--cyan)" opacity={0.55} />
-          <ellipse cx="50" cy="26" rx="12" ry="8" fill="var(--teal)" opacity={0.5 + inject * 0.4} style={{ filter: "drop-shadow(0 0 6px var(--teal))" }} />
-          <text x="50" y="22" textAnchor="middle" style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--teal)" }}>
+          <ellipse
+            cx="50"
+            cy="26"
+            rx="12"
+            ry="8"
+            fill="var(--teal)"
+            opacity={0.5 + inject * 0.4}
+            style={{ filter: "drop-shadow(0 0 6px var(--teal))" }}
+          />
+          <text
+            x="50"
+            y="22"
+            textAnchor="middle"
+            style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--teal)" }}
+          >
             {t("hub")}
           </text>
           {/* fungal web underground */}
@@ -79,7 +98,14 @@ export default function CommonMycorrhizalNetwork() {
             const fed = flow * s.share;
             return (
               <g key={i}>
-                <rect x={s.x - 0.8} y={s.y} width="1.6" height={16} fill="var(--cyan)" opacity={0.35 + fed * 0.5} />
+                <rect
+                  x={s.x - 0.8}
+                  y={s.y}
+                  width="1.6"
+                  height={16}
+                  fill="var(--cyan)"
+                  opacity={0.35 + fed * 0.5}
+                />
                 <ellipse
                   cx={s.x}
                   cy={s.y}
@@ -97,7 +123,16 @@ export default function CommonMycorrhizalNetwork() {
           <Readout label={t("network")} value={`${Math.round(flow * 100)}%`} accent="magenta" />
         </div>
         <div className="absolute inset-x-3 bottom-10 space-y-2">
-          <ControlSlider label={t("inject")} value={inject} min={0} max={1} step={0.01} display={`${Math.round(inject * 100)}%`} onChange={setInject} thumb="amber" />
+          <ControlSlider
+            label={t("inject")}
+            value={inject}
+            min={0}
+            max={1}
+            step={0.01}
+            display={`${Math.round(inject * 100)}%`}
+            onChange={setInject}
+            thumb="amber"
+          />
           <div className="flex justify-center">
             <ControlButton
               variant="accent"

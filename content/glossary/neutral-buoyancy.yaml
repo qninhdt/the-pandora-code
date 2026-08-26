@@ -1,0 +1,32 @@
+id: neutral-buoyancy
+label:
+  vi: Nổi trung tính
+  en: Neutral buoyancy
+definition:
+  vi: >-
+    Trạng thái khi lực đẩy Archimedes của một cơ thể vừa đúng bằng trọng lượng của nó, nên nó không
+    chìm cũng không nổi mà treo lơ lửng trong nước. Đạt được nó là bỏ hẳn được bài toán chống đỡ: không
+    bộ xương nào phải nâng con vật lên, và cái trần kết cấu vốn chặn động vật trên cạn ở vài chục tấn
+    đơn giản là không tồn tại. Mực khổng lồ Trái Đất làm điều này bằng cách giữ dịch ammonium chloride
+    tỉ trọng thấp trong khoang cơ thể. Nhưng nhẹ không có nghĩa là ít khối lượng: muốn tăng tốc bốn tấn
+    thì vẫn phải sinh đủ xung lực cho bốn tấn — thoát khỏi trọng lực, vẫn mắc ở quán tính.
+  en: >-
+    The state in which a body's buoyant force exactly equals its weight, so it neither sinks nor rises
+    but hangs suspended. Achieving it removes the support problem entirely: no skeleton has to hold the
+    animal up, and the structural ceiling that stops a land animal at a few tens of tonnes simply does
+    not exist. Earth's giant squid manage it by retaining low-density ammonium chloride solution in
+    their body cavities. But weighing nothing is not massing nothing: accelerating four tonnes still
+    demands four tonnes' worth of impulse — free of gravity, still bound by inertia.
+see_also:
+  - archimedes-principle
+  - ballast
+  - hoop-stress
+  - jet-propulsion
+category: concept
+tags:
+  - physics
+  - physiology
+cover_prompt: >-
+  An enormous pale-bellied marine animal hanging perfectly motionless in mid water, no seafloor and no
+  surface visible, its wings relaxed and level, faint cyan bioluminescent particles suspended around it
+  at the same stillness, deep void indigo and ocean teal, painterly naturalist plate, no text, no labels.

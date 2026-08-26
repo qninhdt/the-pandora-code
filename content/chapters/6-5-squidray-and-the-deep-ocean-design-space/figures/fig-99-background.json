@@ -1,0 +1,35 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "squidray-and-the-deep-ocean-design-space",
+  "role": "hero",
+  "narrative_purpose": "Atmospheric full-bleed background for the chapter page: a vast dim abyssal water column the reader's prose floats over.",
+  "subject": "An ultra-wide panoramic view of an enormous empty abyssal water column. A wall of dark tectonic rock rises along one far edge, its face receding into haze. Along the base of that wall, extremely faint clusters of distant vent glow are barely visible as small dim warm smudges. Suspended particles drift through the middle water as a fine soft haze. No creature, no bright object, no focal subject anywhere in the frame.",
+  "scene": "Vast dim deep-ocean void, immense in scale, dissolving into darkness in every direction.",
+  "camera": "Ultra-wide panoramic view from a very high vantage looking out and slightly down across the open column, extreme depth of field.",
+  "light": "Very low contrast throughout, dim deep indigo ambient with no directional source; the distant vent glow so faint it barely registers.",
+  "palette": "Void indigo dominating almost the entire frame, deep teal in the mid water haze, a trace of ember amber only in the far distant vent smudges.",
+  "style": "Dark atmospheric background plate, painterly and diffuse, detail dissolving into haze.",
+  "detail_level": "Deliberately soft and low contrast everywhere so overlaid long-form text stays fully readable.",
+  "composition": "Rock wall along the far right edge falling away into haze, vast empty water filling the left two thirds and the whole centre, faint vent glow low along the base of the wall.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "bright focal objects",
+    "high-contrast figures",
+    "creatures",
+    "submarines",
+    "sunlight",
+    "surface"
+  ],
+  "consistency_notes": "Must stay dark and low contrast so overlaid text is readable. No creature and no bright focal point anywhere - this is mood, not a figure to study.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no creatures, no bright foreground objects, no high contrast elements, no sunlight, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

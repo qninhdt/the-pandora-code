@@ -60,11 +60,7 @@ export default function LotkaVolterraEquations() {
   const N = nRef.current;
   const P = pRef.current;
   const maxT = Math.max(2, ...histN.current, ...histP.current);
-  const maxPN = Math.max(
-    2,
-    ...phase.current.map((q) => q.n),
-    ...phase.current.map((q) => q.p),
-  );
+  const maxPN = Math.max(2, ...phase.current.map((q) => q.n), ...phase.current.map((q) => q.p));
 
   const tx = (i: number, len: number) => 6 + (i / Math.max(1, len - 1)) * 50;
   const ty = (v: number) => 62 - (v / maxT) * 40;
@@ -149,10 +145,46 @@ export default function LotkaVolterraEquations() {
         </div>
 
         <div className="absolute inset-x-3 bottom-8 grid grid-cols-2 gap-x-3 gap-y-1">
-          <ControlSlider label={t("a")} value={alpha} min={0.3} max={2} step={0.05} display={alpha.toFixed(2)} onChange={setAlpha} thumb="teal" />
-          <ControlSlider label={t("b")} value={beta} min={0.1} max={1.2} step={0.05} display={beta.toFixed(2)} onChange={setBeta} thumb="cyan" />
-          <ControlSlider label={t("c")} value={delta} min={0.1} max={1} step={0.05} display={delta.toFixed(2)} onChange={setDelta} thumb="amber" />
-          <ControlSlider label={t("d")} value={gamma} min={0.2} max={1.5} step={0.05} display={gamma.toFixed(2)} onChange={setGamma} thumb="magenta" />
+          <ControlSlider
+            label={t("a")}
+            value={alpha}
+            min={0.3}
+            max={2}
+            step={0.05}
+            display={alpha.toFixed(2)}
+            onChange={setAlpha}
+            thumb="teal"
+          />
+          <ControlSlider
+            label={t("b")}
+            value={beta}
+            min={0.1}
+            max={1.2}
+            step={0.05}
+            display={beta.toFixed(2)}
+            onChange={setBeta}
+            thumb="cyan"
+          />
+          <ControlSlider
+            label={t("c")}
+            value={delta}
+            min={0.1}
+            max={1}
+            step={0.05}
+            display={delta.toFixed(2)}
+            onChange={setDelta}
+            thumb="amber"
+          />
+          <ControlSlider
+            label={t("d")}
+            value={gamma}
+            min={0.2}
+            max={1.5}
+            step={0.05}
+            display={gamma.toFixed(2)}
+            onChange={setGamma}
+            thumb="magenta"
+          />
         </div>
       </div>
     </GlossaryFrame>

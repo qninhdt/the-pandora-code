@@ -77,10 +77,18 @@ export default function Planetshine() {
               <circle cx={giantCx} cy={giantCy} r={giantR} fill="url(#ps-giant-lit)" />
             </g>
             {/* banding hint */}
-            <ellipse cx={giantCx} cy={giantCy} rx={giantR} ry={giantR * 0.32} fill="#1d2f5a" opacity="0.25" />
+            <ellipse
+              cx={giantCx}
+              cy={giantCy}
+              rx={giantR}
+              ry={giantR * 0.32}
+              fill="#1d2f5a"
+              opacity="0.25"
+            />
 
             {/* light rays from giant down to the moon surface when shining */}
-            {shine && wash > 0.05 &&
+            {shine &&
+              wash > 0.05 &&
               Array.from({ length: 5 }).map((_, i) => {
                 const x = giantCx - 12 + i * 6;
                 return (
@@ -140,10 +148,7 @@ export default function Planetshine() {
             disabled={!shine}
             className="flex-1"
           />
-          <ControlButton
-            variant={shine ? "active" : "default"}
-            onClick={() => setShine((v) => !v)}
-          >
+          <ControlButton variant={shine ? "active" : "default"} onClick={() => setShine((v) => !v)}>
             {t("shine")}
           </ControlButton>
         </div>

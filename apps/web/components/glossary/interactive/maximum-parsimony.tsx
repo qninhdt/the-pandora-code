@@ -120,11 +120,7 @@ export default function MaximumParsimony() {
         </svg>
 
         <div className="absolute right-3 top-16">
-          <Readout
-            label={t("steps")}
-            value={active.steps}
-            accent={isMin ? "teal" : "amber"}
-          />
+          <Readout label={t("steps")} value={active.steps} accent={isMin ? "teal" : "amber"} />
         </div>
 
         <div className="absolute inset-x-3 bottom-12 flex justify-center gap-1.5">
@@ -142,11 +138,7 @@ export default function MaximumParsimony() {
                       : "var(--amber)"
                     : "var(--border-strong)",
                 color:
-                  idx === i
-                    ? tr.steps === min
-                      ? "var(--teal)"
-                      : "var(--amber)"
-                    : "var(--muted)",
+                  idx === i ? (tr.steps === min ? "var(--teal)" : "var(--amber)") : "var(--muted)",
                 background: "var(--void)",
               }}
             >

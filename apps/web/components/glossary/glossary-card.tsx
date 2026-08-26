@@ -3,8 +3,8 @@
 import { GlassPanel } from "@/components/codex/glass-panel";
 import type { LocalizedGlossaryTerm } from "@/lib/content/loader/glossary-loader";
 import { glossaryTagLabel } from "@/lib/content/schemas/glossary-tags";
-import Link from "next/link";
 import { useLocale } from "next-intl";
+import Link from "next/link";
 
 interface GlossaryCardProps {
   term: LocalizedGlossaryTerm;

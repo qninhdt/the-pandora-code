@@ -48,14 +48,7 @@ export default function Outgroup() {
             stroke="var(--amber)"
             strokeWidth="1.4"
           />
-          <line
-            x1="20"
-            y1="70"
-            x2="80"
-            y2="70"
-            stroke="var(--border-strong)"
-            strokeWidth="1"
-          />
+          <line x1="20" y1="70" x2="80" y2="70" stroke="var(--border-strong)" strokeWidth="1" />
           {TIPS.map((tip) => {
             const isOg = tip.id === og;
             return (

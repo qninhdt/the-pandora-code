@@ -126,7 +126,12 @@ export function CarbonateBudgetBalance({ caption, className }: CarbonateBudgetBa
       }
     >
       <div className="flex flex-col gap-4 sm:flex-row sm:items-stretch">
-        <svg viewBox={`0 0 ${W} ${H}`} className="w-full sm:w-3/5" role="img" aria-label={t("title")}>
+        <svg
+          viewBox={`0 0 ${W} ${H}`}
+          className="w-full sm:w-3/5"
+          role="img"
+          aria-label={t("title")}
+        >
           <GlowDefs idBase={uid} tones={["cyan", "teal", "magenta"]} />
 
           {/* zero line — the accrete/erode divide */}
@@ -157,7 +162,15 @@ export function CarbonateBudgetBalance({ caption, className }: CarbonateBudgetBa
             const bx = PAD.l + plotW * b.x - 14;
             return (
               <g key={b.id}>
-                <rect x={bx} y={top} width={28} height={Math.max(1, h)} rx={2} fill={b.tone} opacity={0.85} />
+                <rect
+                  x={bx}
+                  y={top}
+                  width={28}
+                  height={Math.max(1, h)}
+                  rx={2}
+                  fill={b.tone}
+                  opacity={0.85}
+                />
                 <VizText x={bx + 14} y={H - 22} size="small" anchor="middle" tone="var(--muted)">
                   {t(`bar.${b.id}`)}
                 </VizText>
@@ -181,8 +194,16 @@ export function CarbonateBudgetBalance({ caption, className }: CarbonateBudgetBa
         </svg>
 
         <div className="flex w-full flex-col gap-2 sm:w-2/5">
-          <VizReadout label={t("readout.build")} value={`+${(gCoral + gCca).toFixed(1)}`} tone="var(--teal)" />
-          <VizReadout label={t("readout.erode")} value={`−${bEro.toFixed(1)}`} tone="var(--magenta)" />
+          <VizReadout
+            label={t("readout.build")}
+            value={`+${(gCoral + gCca).toFixed(1)}`}
+            tone="var(--teal)"
+          />
+          <VizReadout
+            label={t("readout.erode")}
+            value={`−${bEro.toFixed(1)}`}
+            tone="var(--magenta)"
+          />
           <VizReadout
             label={t("readout.net")}
             value={`${net >= 0 ? "+" : "−"}${Math.abs(net).toFixed(1)}`}

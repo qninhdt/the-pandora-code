@@ -54,12 +54,49 @@ export default function WingLoading() {
           />
           <ellipse cx="50" cy="36" rx="4" ry="5" fill="var(--teal)" opacity="0.75" />
           {/* meters */}
-          <rect x="14" y="62" width="30" height="5" rx="1" fill="var(--void)" stroke="var(--border-strong)" strokeWidth="0.4" />
+          <rect
+            x="14"
+            y="62"
+            width="30"
+            height="5"
+            rx="1"
+            fill="var(--void)"
+            stroke="var(--border-strong)"
+            strokeWidth="0.4"
+          />
           <rect x="14" y="62" width={Math.min(30, land)} height="5" rx="1" fill="var(--amber)" />
-          <text x="14" y="74" style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--muted)" }}>{t("landSpeed")}</text>
-          <rect x="56" y="62" width="30" height="5" rx="1" fill="var(--void)" stroke="var(--border-strong)" strokeWidth="0.4" />
-          <rect x="56" y="62" width={Math.min(30, agility * 8)} height="5" rx="1" fill="var(--teal)" />
-          <text x="56" y="74" style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--muted)" }}>{t("agility")}</text>
+          <text
+            x="14"
+            y="74"
+            style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
+            {t("landSpeed")}
+          </text>
+          <rect
+            x="56"
+            y="62"
+            width="30"
+            height="5"
+            rx="1"
+            fill="var(--void)"
+            stroke="var(--border-strong)"
+            strokeWidth="0.4"
+          />
+          <rect
+            x="56"
+            y="62"
+            width={Math.min(30, agility * 8)}
+            height="5"
+            rx="1"
+            fill="var(--teal)"
+          />
+          <text
+            x="56"
+            y="74"
+            style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
+            {t("agility")}
+          </text>
         </svg>
 
         <div className="absolute right-3 top-14 flex flex-col gap-1">
@@ -73,13 +110,35 @@ export default function WingLoading() {
               type="button"
               onClick={ikran}
               className="rounded-lg border px-3 py-1 font-mono text-[10px] uppercase"
-              style={{ borderColor: "var(--teal)", color: "var(--teal)", background: "var(--void)" }}
+              style={{
+                borderColor: "var(--teal)",
+                color: "var(--teal)",
+                background: "var(--void)",
+              }}
             >
               {t("ikran")}
             </button>
           </div>
-          <ControlSlider label={t("weight")} value={weight} min={200} max={5000} step={50} display={`${weight.toFixed(0)} N`} onChange={setWeight} thumb="amber" />
-          <ControlSlider label={t("area")} value={area} min={2} max={40} step={0.5} display={`${area.toFixed(1)} m²`} onChange={setArea} thumb="cyan" />
+          <ControlSlider
+            label={t("weight")}
+            value={weight}
+            min={200}
+            max={5000}
+            step={50}
+            display={`${weight.toFixed(0)} N`}
+            onChange={setWeight}
+            thumb="amber"
+          />
+          <ControlSlider
+            label={t("area")}
+            value={area}
+            min={2}
+            max={40}
+            step={0.5}
+            display={`${area.toFixed(1)} m²`}
+            onChange={setArea}
+            thumb="cyan"
+          />
         </div>
       </div>
     </GlossaryFrame>

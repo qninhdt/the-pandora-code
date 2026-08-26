@@ -25,7 +25,13 @@ export default function CountercurrentExchange() {
       }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           <line x1="18" y1="40" x2="82" y2="40" stroke="var(--cyan)" strokeWidth="2" />
           <line
             x1={counter ? 82 : 18}
@@ -49,7 +55,10 @@ export default function CountercurrentExchange() {
             />
           ))}
           <path d="M18 40 l6 -3 l0 6 z" fill="var(--cyan)" />
-          <path d={counter ? "M18 56 l6 -3 l0 6 z" : "M82 56 l-6 -3 l0 6 z"} fill="var(--magenta)" />
+          <path
+            d={counter ? "M18 56 l6 -3 l0 6 z" : "M82 56 l-6 -3 l0 6 z"}
+            fill="var(--magenta)"
+          />
           <rect x="20" y="78" width={transfer * 60} height="5" fill="var(--teal)" opacity="0.85" />
         </svg>
         <div className="absolute right-3 top-14 flex flex-col gap-1">
@@ -57,10 +66,30 @@ export default function CountercurrentExchange() {
           <Readout label={t("gradient")} value={counter ? "steep" : "flat"} accent="amber" />
         </div>
         <div className="absolute inset-x-3 bottom-12 flex justify-center gap-1.5">
-          <button type="button" onClick={() => setCounter(true)} className="rounded-lg border px-3 py-1 font-mono text-[10px] uppercase"
-            style={{ borderColor: counter ? "var(--teal)" : "var(--border-strong)", color: counter ? "var(--teal)" : "var(--muted)", background: "var(--void)" }}>{t("counter")}</button>
-          <button type="button" onClick={() => setCounter(false)} className="rounded-lg border px-3 py-1 font-mono text-[10px] uppercase"
-            style={{ borderColor: !counter ? "var(--amber)" : "var(--border-strong)", color: !counter ? "var(--amber)" : "var(--muted)", background: "var(--void)" }}>{t("concurrent")}</button>
+          <button
+            type="button"
+            onClick={() => setCounter(true)}
+            className="rounded-lg border px-3 py-1 font-mono text-[10px] uppercase"
+            style={{
+              borderColor: counter ? "var(--teal)" : "var(--border-strong)",
+              color: counter ? "var(--teal)" : "var(--muted)",
+              background: "var(--void)",
+            }}
+          >
+            {t("counter")}
+          </button>
+          <button
+            type="button"
+            onClick={() => setCounter(false)}
+            className="rounded-lg border px-3 py-1 font-mono text-[10px] uppercase"
+            style={{
+              borderColor: !counter ? "var(--amber)" : "var(--border-strong)",
+              color: !counter ? "var(--amber)" : "var(--muted)",
+              background: "var(--void)",
+            }}
+          >
+            {t("concurrent")}
+          </button>
         </div>
       </div>
     </GlossaryFrame>

@@ -36,7 +36,9 @@ export default function BiologicalMarket() {
       allowFullscreen={false}
       caption={
         <span className={equilibrium ? "text-teal" : "text-magenta"}>
-          {equilibrium ? t("equilibrium") : `${plantAccepts ? "P" : "C"} / ${fungusAccepts ? "F" : "D"}`}
+          {equilibrium
+            ? t("equilibrium")
+            : `${plantAccepts ? "P" : "C"} / ${fungusAccepts ? "F" : "D"}`}
         </span>
       }
     >

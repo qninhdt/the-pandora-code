@@ -1,0 +1,34 @@
+id: myoglobin
+label:
+  vi: Myoglobin
+  en: Myoglobin
+definition:
+  vi: >-
+    Loại protein giữ oxy nằm bên trong tế bào cơ, khác với hemoglobin vận chuyển oxy trong máu.
+    Myoglobin là bình dưỡng khí riêng của từng bó cơ, dùng đến khi máu đã bị siết lại và không còn
+    chảy tới nữa. Cơ người chứa 4–7 mg trên mỗi gram; cơ các loài thú biển lặn sâu chứa 50–80 mg, đủ
+    khiến khối cơ bơi của chúng đen sẫm gần như mực. Nhồi nhiều protein đến mức đó lẽ ra sẽ khiến
+    chúng vón lại và kết tủa; nghiên cứu của Mirceta và cộng sự (2013) cho thấy các dòng thú lặn đã
+    độc lập tiến hóa cùng một giải pháp — thay các axit amin bề mặt bằng loại tích điện dương, để các
+    phân tử đẩy nhau ra và không bao giờ dính lại.
+  en: >-
+    The oxygen-holding protein inside muscle cells, distinct from the haemoglobin that carries oxygen
+    in blood. Myoglobin is each muscle's private air tank, drawn on once the blood has been clamped
+    off and no longer arrives. Human muscle holds 4–7 mg per gram; the muscle of deep-diving marine
+    mammals holds 50–80 mg, dark enough to look almost like ink. Packing protein that densely should
+    make it clump and precipitate; Mirceta and colleagues (2013) found that diving lineages
+    independently evolved the same fix — swapping surface residues for positively charged ones, so the
+    molecules repel each other and never stick.
+see_also:
+  - aerobic-dive-limit
+  - haematocrit
+  - diving-reflex
+  - convergent-evolution
+category: bio
+tags:
+  - physiology
+  - chemistry
+cover_prompt: >-
+  A painterly microscopic study of dense dark red muscle fibre in cross-section, packed with countless
+  tiny glowing points of stored oxygen, each faintly haloed as if pushing its neighbours away, deep
+  crimson and indigo with a cool teal rim light, no text, no labels, no numbers.

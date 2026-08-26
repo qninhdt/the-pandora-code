@@ -1,0 +1,40 @@
+{
+  "id": "fig-01-the-thing-that-came-up",
+  "chapter_slug": "squidray-and-the-deep-ocean-design-space",
+  "role": "inline",
+  "narrative_purpose": "Cold-open anchor: shows the breach itself, the one moment the animal runs its expensive high-speed apparatus in the shallow water where it works worst.",
+  "subject": "The same squid-ray animal from the cover, now fully clear of the water in mid-air at the top of a breach. Its two broad wings are still spread wide to either side, water sheeting off their trailing edges in long ribbons. The twelve tentacles trail loosely downward and backward beneath it. The four eyes are open, the two large lateral ones catching the dim sky. Below it the sea surface is torn open into a ring of white froth and thrown spray where the body left the water. Its back is near-black and wet, its underside slightly paler.",
+  "scene": "Open ocean surface at dusk under a heavy overcast sky, no land in sight, the water dark and choppy.",
+  "camera": "Low wide lateral view from just above the water line, the animal filling the upper middle of the frame in profile.",
+  "light": "Dim overcast dusk light from above, cold and flat; wet highlights along the animal's back and wing edges; faint cyan glow on the underside photophore rows.",
+  "palette": "Void indigo sky and water, ocean teal in the wave troughs, pale mist grey in the spray and froth, sparse cyan glow beneath the wings.",
+  "style": "Painterly naturalist plate with the weight and stillness of an observed event, not an action poster.",
+  "detail_level": "High detail on the wings, water sheeting and tentacle cluster; the sea and sky loose and atmospheric.",
+  "composition": "Animal in profile across the upper two thirds, torn froth ring in the lower third, large expanses of plain dark sky at left and right for annotations.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "boats",
+    "submarines",
+    "human figures",
+    "blood",
+    "sun",
+    "lens flare"
+  ],
+  "consistency_notes": "Same animal as fig-00-cover: four eyes (two large lateral, two small anterior), twelve tentacles, broad ray-like wings, two lateral siphon nozzles. Wings must read as fully spread, not folded.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no boats, no ordinary Earth squid, no photographic or 3D-render look, no cartoon style, no lens flare, no dramatic sunset colours",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/squidray-and-the-deep-ocean-design-space/fig-00-cover.png"
+  ]
+}

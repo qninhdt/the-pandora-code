@@ -24,9 +24,7 @@ export default function RedundancyEngineering() {
   const masked = voter === trueVal;
 
   const inject = (id: number) => {
-    setMods((ms) =>
-      ms.map((m) => (m.id === id ? { ...m, faulted: !m.faulted } : m)),
-    );
+    setMods((ms) => ms.map((m) => (m.id === id ? { ...m, faulted: !m.faulted } : m)));
   };
 
   const positions = useMemo(
@@ -60,8 +58,22 @@ export default function RedundancyEngineering() {
       <div className="absolute inset-0">
         <svg viewBox="0 0 100 100" className="h-full w-full" role="img" aria-label={t("title")}>
           {/* voter box */}
-          <rect x="38" y="58" width="24" height="16" rx="2" fill="var(--surface)" stroke="var(--cyan)" strokeWidth={1} />
-          <text x="50" y="68" textAnchor="middle" style={{ fontSize: 3.2, fontFamily: "monospace", fill: "var(--cyan)" }}>
+          <rect
+            x="38"
+            y="58"
+            width="24"
+            height="16"
+            rx="2"
+            fill="var(--surface)"
+            stroke="var(--cyan)"
+            strokeWidth={1}
+          />
+          <text
+            x="50"
+            y="68"
+            textAnchor="middle"
+            style={{ fontSize: 3.2, fontFamily: "monospace", fill: "var(--cyan)" }}
+          >
             VOTE
           </text>
           {/* output */}
@@ -72,7 +84,12 @@ export default function RedundancyEngineering() {
             fill={masked ? "var(--teal)" : "var(--magenta)"}
             opacity={0.85}
           />
-          <text x="50" y="87.5" textAnchor="middle" style={{ fontSize: 3.5, fontFamily: "monospace", fill: "var(--void)" }}>
+          <text
+            x="50"
+            y="87.5"
+            textAnchor="middle"
+            style={{ fontSize: 3.5, fontFamily: "monospace", fill: "var(--void)" }}
+          >
             {voter}
           </text>
           <line x1="50" y1="74" x2="50" y2="81" stroke="var(--cyan)" strokeWidth={0.8} />
@@ -106,12 +123,22 @@ export default function RedundancyEngineering() {
                   x={p.x}
                   y={p.y + 1}
                   textAnchor="middle"
-                  style={{ fontSize: 4, fontFamily: "monospace", fill: m.faulted ? "var(--magenta)" : "var(--amber)", pointerEvents: "none" }}
+                  style={{
+                    fontSize: 4,
+                    fontFamily: "monospace",
+                    fill: m.faulted ? "var(--magenta)" : "var(--amber)",
+                    pointerEvents: "none",
+                  }}
                 >
                   {out}
                 </text>
                 {m.faulted && (
-                  <text x={p.x} y={p.y - 10} textAnchor="middle" style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--magenta)" }}>
+                  <text
+                    x={p.x}
+                    y={p.y - 10}
+                    textAnchor="middle"
+                    style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--magenta)" }}
+                  >
                     fault
                   </text>
                 )}
@@ -120,7 +147,11 @@ export default function RedundancyEngineering() {
           })}
         </svg>
         <div className="absolute left-3 top-14 flex flex-col gap-1.5">
-          <Readout label={t("modules")} value={`${good}/3`} accent={good >= 2 ? "teal" : "magenta"} />
+          <Readout
+            label={t("modules")}
+            value={`${good}/3`}
+            accent={good >= 2 ? "teal" : "magenta"}
+          />
           <Readout label={t("voter")} value={voter} accent={masked ? "teal" : "magenta"} />
           <ControlButton
             onClick={() => {

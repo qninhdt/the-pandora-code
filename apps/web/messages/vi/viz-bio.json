@@ -535,12 +535,7 @@
       "hint": "Sử dụng thanh trượt để kéo cây mọc cao lên. Khi các tầng mới xuất hiện, những ổ sinh thái mới mở ra mà không hề giẫm chân lên nhau tranh giành không gian.",
       "treeHeight": "Độ cao cây",
       "niches": "Ổ sinh thái",
-      "strataNames": [
-        "Thảm rừng",
-        "Tầng dưới tán",
-        "Vòm lá",
-        "Tầng vượt tán"
-      ],
+      "strataNames": ["Thảm rừng", "Tầng dưới tán", "Vòm lá", "Tầng vượt tán"],
       "floor": "Thảm rừng",
       "understory": "Tầng dưới tán",
       "canopy": "Vòm lá",

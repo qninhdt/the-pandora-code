@@ -25,7 +25,13 @@ export default function Ectomycorrhiza() {
       }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {/* root tip */}
           <path
             d="M40 20 L40 62 Q40 78 50 82 Q60 78 60 62 L60 20"
@@ -61,7 +67,11 @@ export default function Ectomycorrhiza() {
             strokeWidth="2.4"
             opacity={0.75}
           />
-          <text x="72" y="40" style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--teal)" }}>
+          <text
+            x="72"
+            y="40"
+            style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--teal)" }}
+          >
             {t("mantle")}
           </text>
           {/* Hartig net between cells */}
@@ -72,17 +82,29 @@ export default function Ectomycorrhiza() {
               <line key={row} x1="44" y1={32 + row * 10} x2="58.5" y2={32 + row * 10} />
             ))}
           </g>
-          <text x="22" y="52" style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--magenta)" }}>
+          <text
+            x="22"
+            y="52"
+            style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--magenta)" }}
+          >
             {t("hartig")}
           </text>
           {/* exchange at sheath */}
           <g>
             <path d="M64 50 L76 44" stroke="var(--amber)" strokeWidth="0.8" />
             <path d="M64 56 L76 62" stroke="var(--cyan)" strokeWidth="0.8" />
-            <text x="78" y="45" style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--amber)" }}>
+            <text
+              x="78"
+              y="45"
+              style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--amber)" }}
+            >
               N/P
             </text>
-            <text x="78" y="64" style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--cyan)" }}>
+            <text
+              x="78"
+              y="64"
+              style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--cyan)" }}
+            >
               C
             </text>
           </g>
@@ -91,7 +113,12 @@ export default function Ectomycorrhiza() {
             <g opacity={0.55} stroke="var(--amber)" strokeWidth="0.6" fill="none">
               <path d="M50 48 L46 40 L50 36 L54 40 Z" />
               <path d="M50 48 L48 56 L52 56 Z" />
-              <text x="50" y="72" textAnchor="middle" style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--amber)" }}>
+              <text
+                x="50"
+                y="72"
+                textAnchor="middle"
+                style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--amber)" }}
+              >
                 {t("contrast")}
               </text>
             </g>

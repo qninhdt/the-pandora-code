@@ -49,9 +49,7 @@ export default function Plesiomorphy() {
           ))}
 
           {/* basal mark at root */}
-          {show && (
-            <circle cx="50" cy="70" r="5" fill="var(--teal)" opacity="0.35" />
-          )}
+          {show && <circle cx="50" cy="70" r="5" fill="var(--teal)" opacity="0.35" />}
 
           {TIPS.map((x, i) => (
             <g key={x}>
@@ -98,11 +96,7 @@ export default function Plesiomorphy() {
         </svg>
 
         <div className="absolute right-3 top-16">
-          <Readout
-            label={t("ancestral")}
-            value={show ? "5/5" : "—"}
-            accent="teal"
-          />
+          <Readout label={t("ancestral")} value={show ? "5/5" : "—"} accent="teal" />
         </div>
 
         <div className="absolute inset-x-3 bottom-12 flex justify-center">

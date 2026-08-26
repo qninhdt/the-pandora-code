@@ -131,7 +131,11 @@ export default function ParadoxOfEnrichment() {
         </svg>
 
         <div className="absolute left-3 top-14 flex flex-col gap-1.5">
-          <Readout label={t("amplitude")} value={amp.toFixed(1)} accent={crash ? "magenta" : "cyan"} />
+          <Readout
+            label={t("amplitude")}
+            value={amp.toFixed(1)}
+            accent={crash ? "magenta" : "cyan"}
+          />
           <Readout
             label={crash ? t("crash") : t("stable")}
             value={crash ? "!" : "ok"}

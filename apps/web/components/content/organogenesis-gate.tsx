@@ -71,7 +71,12 @@ export function OrganogenesisGate({ className }: { className?: string }) {
       className={className}
     >
       <div className="flex flex-col gap-3 sm:flex-row sm:items-stretch">
-        <svg viewBox={`0 0 ${W} ${H}`} className="w-full sm:w-3/5" role="img" aria-label={t("aria")}>
+        <svg
+          viewBox={`0 0 ${W} ${H}`}
+          className="w-full sm:w-3/5"
+          role="img"
+          aria-label={t("aria")}
+        >
           <GlowDefs idBase={uid} tones={["cyan", "magenta", "teal"]} />
           {/* tissue patch baseline */}
           <line
@@ -105,7 +110,12 @@ export function OrganogenesisGate({ className }: { className?: string }) {
         </svg>
 
         <div className="flex flex-col gap-2 sm:w-2/5">
-          <VizReadout label={t("outcomeLabel")} value={t(`outcome.${outcome}`)} tone={toneVar} tinted />
+          <VizReadout
+            label={t("outcomeLabel")}
+            value={t(`outcome.${outcome}`)}
+            tone={toneVar}
+            tinted
+          />
           <VizSlider
             label={t("coherenceSlider")}
             display={`${coherence}%`}

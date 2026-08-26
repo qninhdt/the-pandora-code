@@ -35,12 +35,31 @@ export default function MotherTreeHypothesis() {
       }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           <rect x="4" y="60" width="92" height="24" fill="var(--surface)" opacity={0.5} />
           {/* mother */}
           <rect x="47" y="22" width="6" height="40" fill="var(--cyan)" opacity={0.5} />
-          <ellipse cx="50" cy="20" rx="16" ry="11" fill="var(--teal)" opacity={0.55} style={{ filter: "drop-shadow(0 0 6px var(--teal))" }} />
-          <text x="50" y="14" textAnchor="middle" style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--teal)" }}>
+          <ellipse
+            cx="50"
+            cy="20"
+            rx="16"
+            ry="11"
+            fill="var(--teal)"
+            opacity={0.55}
+            style={{ filter: "drop-shadow(0 0 6px var(--teal))" }}
+          />
+          <text
+            x="50"
+            y="14"
+            textAnchor="middle"
+            style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--teal)" }}
+          >
             {t("mother")}
           </text>
           {/* mycorrhizal links */}
@@ -63,7 +82,14 @@ export default function MotherTreeHypothesis() {
                   fill="var(--amber)"
                   opacity={0.5 + share * 0.5}
                 />
-                <rect x={j.x - 1} y={j.y} width="2" height="14" fill="var(--cyan)" opacity={0.35 + share * 0.45} />
+                <rect
+                  x={j.x - 1}
+                  y={j.y}
+                  width="2"
+                  height="14"
+                  fill="var(--cyan)"
+                  opacity={0.35 + share * 0.45}
+                />
                 <ellipse
                   cx={j.x}
                   cy={j.y}
@@ -75,8 +101,20 @@ export default function MotherTreeHypothesis() {
                 {j.shaded && (
                   <g>
                     {/* shade cloud */}
-                    <ellipse cx={j.x} cy={j.y - 8} rx={6 + shade * 4} ry="3" fill="var(--void)" opacity={0.35 + shade * 0.4} />
-                    <text x={j.x} y={j.y + 20} textAnchor="middle" style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--amber)" }}>
+                    <ellipse
+                      cx={j.x}
+                      cy={j.y - 8}
+                      rx={6 + shade * 4}
+                      ry="3"
+                      fill="var(--void)"
+                      opacity={0.35 + shade * 0.4}
+                    />
+                    <text
+                      x={j.x}
+                      y={j.y + 20}
+                      textAnchor="middle"
+                      style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--amber)" }}
+                    >
                       {t("juvenile")}
                     </text>
                   </g>
@@ -84,7 +122,12 @@ export default function MotherTreeHypothesis() {
               </g>
             );
           })}
-          <text x="50" y="90" textAnchor="middle" style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="50"
+            y="90"
+            textAnchor="middle"
+            style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("link")}
           </text>
         </svg>

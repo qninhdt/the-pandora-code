@@ -22,7 +22,7 @@ export function StrataDiversityEngine({
   const t = useTranslations("viz.strataDiversity");
   const [height, setHeight] = useState(50);
 
-  const niches = Math.floor(10 * Math.pow(height / 50, 2.5));
+  const niches = Math.floor(10 * (height / 50) ** 2.5);
 
   const W_SVG = 340;
   const H_SVG = 260;
@@ -44,7 +44,7 @@ export function StrataDiversityEngine({
     for (let i = 0; i < 150; i++) {
       const r1 = seededRandom(i);
       const r2 = seededRandom(i + 1000);
-      const h = 300 * Math.pow(r1, 1.5); // Bias towards higher up
+      const h = 300 * r1 ** 1.5; // Bias towards higher up
       const x = 70 + r2 * 200;
       d.push({ h, x, id: i });
     }
@@ -52,13 +52,15 @@ export function StrataDiversityEngine({
   }, []);
 
   const canopyPath = useMemo(() => {
+    const pathYFor = (m: number) =>
+      Number((yGround - (m / 300) * (H_SVG - PAD_T - PAD_B)).toFixed(1));
     const pts = [];
-    pts.push(`M 170 ${yFor(height) - 10}`);
-    pts.push(`Q 100 ${yFor(height) + 20} 120 ${yFor(height * 0.4)}`);
-    pts.push(`Q 170 ${yFor(height * 0.1)} 220 ${yFor(height * 0.4)}`);
-    pts.push(`Q 240 ${yFor(height) + 20} 170 ${yFor(height) - 10}`);
+    pts.push(`M 170 ${pathYFor(height) - 10}`);
+    pts.push(`Q 100 ${pathYFor(height) + 20} 120 ${pathYFor(height * 0.4)}`);
+    pts.push(`Q 170 ${pathYFor(height * 0.1)} 220 ${pathYFor(height * 0.4)}`);
+    pts.push(`Q 240 ${pathYFor(height) + 20} 170 ${pathYFor(height) - 10}`);
     return pts.join(" ");
-  }, [height]);
+  }, [height, yGround]);
 
   return (
     <VizFigure
@@ -106,7 +108,7 @@ export function StrataDiversityEngine({
                   strokeOpacity={0.3}
                   strokeDasharray="3 3"
                 />
-                <VizText x={50} y={yBot - 6} size="micro" tone={s.tone as any} weight={700}>
+                <VizText x={50} y={yBot - 6} size="micro" tone={s.tone} weight={700}>
                   {t(s.key)}
                 </VizText>
               </g>

@@ -38,18 +38,42 @@ export default function KeystoneStructure() {
       infoText={t("info")}
       onReset={() => setPresent(true)}
       allowFullscreen={false}
-      caption={<span style={{ color: tone }}>{present ? t("verdictPresent") : t("verdictGone")}</span>}
+      caption={
+        <span style={{ color: tone }}>{present ? t("verdictPresent") : t("verdictGone")}</span>
+      }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 78" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 78"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {/* the empty field */}
           <rect x="6" y="56" width="88" height="8" fill="var(--void)" opacity={0.5} />
-          <line x1="6" y1="56" x2="94" y2="56" stroke="var(--border-strong)" strokeWidth="0.5" opacity={0.6} />
+          <line
+            x1="6"
+            y1="56"
+            x2="94"
+            y2="56"
+            stroke="var(--border-strong)"
+            strokeWidth="0.5"
+            opacity={0.6}
+          />
 
           {present ? (
             <g>
-              <line x1="50" y1="56" x2="50" y2="30" stroke={tone} strokeWidth="2.4" strokeLinecap="round"
-                style={{ filter: `drop-shadow(0 0 4px ${tone})` }} />
+              <line
+                x1="50"
+                y1="56"
+                x2="50"
+                y2="30"
+                stroke={tone}
+                strokeWidth="2.4"
+                strokeLinecap="round"
+                style={{ filter: `drop-shadow(0 0 4px ${tone})` }}
+              />
               <ellipse cx="50" cy="28" rx="11" ry="6" fill={tone} opacity={0.35} />
               <ellipse cx="50" cy="56" rx="9" ry="2" fill={tone} opacity={0.2} />
               {/* seed rain focused under the crown */}
@@ -65,9 +89,26 @@ export default function KeystoneStructure() {
 
           {/* movement paths across the gap */}
           {hops.map(([x1, y1, x2, y2], i) => (
-            <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke={tone} strokeWidth="0.45" strokeDasharray="2 1.6" opacity={present ? 0.75 : 0.35} />
+            <line
+              key={i}
+              x1={x1}
+              y1={y1}
+              x2={x2}
+              y2={y2}
+              stroke={tone}
+              strokeWidth="0.45"
+              strokeDasharray="2 1.6"
+              opacity={present ? 0.75 : 0.35}
+            />
           ))}
-          <text x="50" y="70" textAnchor="middle" style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--muted)" }}>{t("axis")}</text>
+          <text
+            x="50"
+            y="70"
+            textAnchor="middle"
+            style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
+            {t("axis")}
+          </text>
         </svg>
         <div className="absolute right-3 top-14">
           <Readout label={t("species")} value={species} accent={present ? "cyan" : "magenta"} />

@@ -1,0 +1,37 @@
+{
+  "id": "fig-05-the-mother-who-cannot-dive",
+  "chapter_slug": "amrita-and-the-price-of-a-hunt",
+  "role": "inline",
+  "narrative_purpose": "Shows why the tactic works: the calf physically cannot descend, the mother will not descend without it, and so the one defence that made her unreachable is neutralised by a bond rather than by force.",
+  "subject": "A large marine animal holding motionless at the surface, its back breaking the water, its head turned inward and downward toward a much smaller animal of the same kind floating beside it. The smaller one is wrapped in a loose mesh of pale netting across its tail flukes, the net lines slack in the water. Beneath them both, the water falls away into deep darkness, and a faint pale trace suggests the depth that is available and unused. Four small fast boats converge across the water from different directions, close but not yet arrived, throwing low wakes.",
+  "scene": "Open ocean surface under a dull overcast sky, no land, deep water below.",
+  "camera": "Low three-quarter view just above the waterline, the two animals large in frame, boats smaller in the middle distance.",
+  "light": "Flat cold overcast light on the water surface, the animals' bioluminescent flank lines dim and steady, deep indigo falling away beneath them.",
+  "palette": "Void indigo depth, deep teal surface water, cold grey sky and hulls, faint cyan flank glow, pale grey netting.",
+  "style": "Painterly naturalist plate, still and quiet rather than action-cinematic.",
+  "detail_level": "Crisp on both animals, the netting and the near boats; the depth below soft and dark; open flat water and sky for callouts.",
+  "composition": "The two animals occupying the centre and left, boats entering from the right and upper right, open dim sky along the top edge and dark water at the lower left for overlay labels.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "harpoons in flight",
+    "blood",
+    "wounds",
+    "gore"
+  ],
+  "consistency_notes": "Same animal design as the other figures in this chapter. Nothing is wounded yet - the moment shown is the waiting, not the kill. The mother is calm and stationary, which is the point.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no labels, no arrows, no blood, no wounds, no harpoons in flight, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/amrita-and-the-price-of-a-hunt/fig-00-cover.png"
+  ]
+}

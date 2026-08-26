@@ -1,0 +1,35 @@
+id: epigenetic-clock
+label:
+  vi: Đồng hồ biểu sinh
+  en: Epigenetic clock
+definition:
+  vi: >-
+    Cách đo tuổi sinh học bằng cách đọc mức methyl hóa DNA tại hàng trăm vị trí cụ thể trên bộ gene.
+    Các vị trí này thay đổi đủ đều theo tuổi để một mô hình thống kê có thể đoán tuổi của một người
+    từ mẫu máu hay mẫu mô, đôi khi sai chỉ vài năm. Các đồng hồ thế hệ sau còn tương quan với nguy
+    cơ mắc bệnh và tử vong, chứ không chỉ với số năm đã sống. Nhưng đây là dấu ấn thống kê, không
+    phải bằng chứng lâm sàng: cơ quan quản lý không coi "lão hóa" là một bệnh có thể điều trị, nên
+    một can thiệp muốn được chấp thuận vẫn phải chứng minh giảm được biến cố cụ thể như đột quỵ hay
+    suy nhược. Làm đồng hồ chạy chậm lại trên giấy không đồng nghĩa với việc người ta sống lâu hơn.
+  en: >-
+    A way of measuring biological age by reading DNA methylation levels at hundreds of specific sites
+    across the genome. These sites shift regularly enough with age that a statistical model can
+    predict a person's age from a blood or tissue sample, sometimes to within a few years.
+    Second-generation clocks also correlate with disease risk and mortality, not merely with years
+    lived. But these are statistical biomarkers, not clinical evidence: regulators do not recognise
+    "aging" as a treatable disease, so an intervention seeking approval must still show a reduction
+    in concrete events such as stroke or frailty. Slowing the clock on paper is not the same as
+    someone living longer.
+see_also:
+  - hallmarks-of-aging
+  - cellular-senescence
+  - gompertz-makeham-law
+category: concept
+tags:
+  - pharmacology
+  - physiology
+cover_prompt: >-
+  A painterly plate of a long DNA double helix laid horizontally with small pale marker beads
+  attached at intervals along it, the beads growing denser and warmer in colour from left to right
+  across the strand, a faint dial arc implied behind it, cool teal helix on dark indigo, painterly
+  naturalist plate, no text, no labels.

@@ -1,0 +1,34 @@
+{
+  "id": "fig-08-the-ladder-of-consent",
+  "chapter_slug": "amrita-and-the-price-of-a-hunt",
+  "role": "diagram",
+  "narrative_purpose": "Renders the legal argument as architecture: four rungs of access law were actually built, the fifth was not, and the stair therefore ends in open air exactly where a rights-bearing being would have to stand.",
+  "subject": "A stepped stone stair rising out of dark open water toward the upper right, made of four broad rectangular platforms of decreasing width, each set higher and slightly further back than the one below. The lowest platform is half submerged and worn smooth. The second, third and fourth are dry, progressively cleaner and more precisely cut. Above the fourth platform there is nothing at all - no fifth step, no railing, just open air and haze where the next platform would sit, with the mounting sockets for it visible as empty cut recesses in the top surface of the fourth. On the lowest submerged platform stands a small plain stone marker. Far below and to the left, deep in the water beneath the whole structure, the faint dim silhouette of an enormous marine animal is visible.",
+  "scene": "Dark still open water under a pale hazy dawn sky, no shoreline, the stair standing alone.",
+  "camera": "Low three-quarter view from the water, looking up the length of the stair toward the missing top step.",
+  "light": "Pale cold dawn light from the upper right catching the cut stone edges, the empty air above the top step brightest, deep indigo water below.",
+  "palette": "Void indigo water, deep teal shadow, pale cool grey stone, one faint amber warmth in the dawn haze.",
+  "style": "Painterly architectural naturalist plate, weathered and physical, not a diagram or vector illustration.",
+  "detail_level": "Crisp on the stone edges and the empty mounting recesses on the top step; the submerged animal soft and very dim; open sky and water for callouts.",
+  "composition": "Stair rising from lower left to upper right across the frame, wide open hazy sky in the upper left quadrant and dark water in the lower right for overlay labels.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "scales of justice",
+    "gavel",
+    "courthouse columns",
+    "vector infographic look"
+  ],
+  "consistency_notes": "The absence of the fifth step must be legible as a step that was never built - hence the visible empty mounting recesses - rather than as ruin or collapse.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no labels, no arrows, no scales of justice, no gavel, no legal iconography, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

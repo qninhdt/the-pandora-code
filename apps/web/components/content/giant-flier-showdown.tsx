@@ -149,8 +149,17 @@ export function GiantFlierShowdown({ caption, className }: GiantFlierShowdownPro
               key={f.key}
               transform={`translate(${PAD_X + (f.span / 2) * pxPerM}, ${yPos}) scale(${pxPerM})`}
               onClick={() => setSel(f.key)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  setSel(f.key);
+                }
+              }}
               style={{ cursor: "pointer" }}
+              tabIndex={0}
+              // biome-ignore lint/a11y/useSemanticElements: an SVG <g> cannot be a native <button>; button role is the correct ARIA mapping for a clickable flier
               role="button"
+              aria-pressed={isSelected}
               aria-label={t(f.key)}
             >
               <path

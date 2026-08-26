@@ -1,0 +1,40 @@
+{
+  "id": "fig-05-bubbles-that-eat-skin",
+  "chapter_slug": "squidray-and-the-deep-ocean-design-space",
+  "role": "comparison",
+  "narrative_purpose": "Shows the same fin at two depths: torn into a sheet of collapsing vapour bubbles near the surface, moving through unbroken flow at depth.",
+  "subject": "The same broad muscular wing tip shown twice, once in an upper register and once in a lower one, at identical size and angle. In the upper register the water above is bright and the surface is faintly visible not far overhead; along the wing's leading edge a ragged sheet of small white vapour bubbles has torn open and streams back off the trailing edge, and the wing skin behind that sheet is visibly pitted and roughened with tiny pale craters. In the lower register the water is nearly black with no surface visible; the same wing at the same angle moves through completely smooth unbroken water with no bubbles at all, its skin intact and glossy, with only fine clean flow lines of suspended glowing particles curving past it.",
+  "scene": "Two depths in the same ocean, shallow and bright above, deep and black below, with no dividing border drawn between the registers.",
+  "camera": "Matched close lateral views of the wing tip in both registers, identical framing and scale.",
+  "light": "Upper register lit by pale downwelling light from the near surface; lower register lit only by faint cyan glow from suspended particles and the wing's own photophore rows.",
+  "palette": "Pale mist grey and cold white in the bubble sheet, ocean teal in the shallow water, void indigo in the deep water, magenta accent on the pitted damaged skin, faint cyan on the clean flow lines.",
+  "style": "Painterly naturalist comparison plate, both registers in the same palette and hand.",
+  "detail_level": "Crisp on the bubble sheet, the pitting damage and the clean flow lines; the surrounding water loose and atmospheric.",
+  "composition": "Two stacked horizontal registers of equal height, wing tip centred in each, plain water at the left of each register for annotations.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "panel borders",
+    "depth gauges",
+    "boat propellers",
+    "machinery",
+    "blood",
+    "gore"
+  ],
+  "consistency_notes": "Both registers show the SAME wing at the same angle and scale - the only differences are depth, bubbles and skin damage. Wing shape matches the animal in fig-00-cover.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no labels, no arrows, no boat propeller, no machinery, no gauges, no panel borders, no photographic or 3D-render look, no cartoon style, no blood",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/squidray-and-the-deep-ocean-design-space/fig-00-cover.png"
+  ]
+}

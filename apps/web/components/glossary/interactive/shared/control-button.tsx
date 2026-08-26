@@ -5,8 +5,7 @@ import type React from "react";
 
 type ControlButtonVariant = "default" | "active" | "accent";
 
-interface ControlButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ControlButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ControlButtonVariant;
   // Render a slightly larger tap target; used for primary play/pause controls.
   prominent?: boolean;

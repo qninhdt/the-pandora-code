@@ -84,10 +84,7 @@ export default function HubNetwork() {
   const t = useTranslations("viz.hub-network");
   const [graph, setGraph] = useState(() => buildScaleFree());
   const liveEdges = useMemo(
-    () =>
-      graph.edges.filter(
-        ([a, b]) => !graph.nodes[a].dead && !graph.nodes[b].dead,
-      ),
+    () => graph.edges.filter(([a, b]) => !graph.nodes[a].dead && !graph.nodes[b].dead),
     [graph],
   );
   const connected = largestAlive(graph.nodes, graph.edges);

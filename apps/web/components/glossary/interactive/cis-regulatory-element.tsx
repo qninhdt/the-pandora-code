@@ -55,8 +55,7 @@ export default function CisRegulatoryElement() {
       allowFullscreen={false}
       caption={
         <span>
-          {t("geneIntact")} ·{" "}
-          <span className="text-cyan">{activeCount}</span> / {SWITCHES.length}{" "}
+          {t("geneIntact")} · <span className="text-cyan">{activeCount}</span> / {SWITCHES.length}{" "}
           {t("switchesOn")}
         </span>
       }
@@ -151,7 +150,13 @@ export default function CisRegulatoryElement() {
           {/* travelling RNA polymerase, only once a switch has docked */}
           {anyActive && (
             <g filter="url(#cre-glow)">
-              <circle cx={polyX} cy="29" r="2.1" fill="var(--amber)" opacity={transcribing ? 1 : 0.65} />
+              <circle
+                cx={polyX}
+                cy="29"
+                r="2.1"
+                fill="var(--amber)"
+                opacity={transcribing ? 1 : 0.65}
+              />
               {transcribing && (
                 <path
                   d={`M${GENE_X0} 29 L${polyX} 29`}
@@ -171,7 +176,13 @@ export default function CisRegulatoryElement() {
             return (
               <g key={s.key}>
                 {active && (
-                  <circle cx={s.x} cy={30} r={5.5 + pulse * 1.2} fill="var(--cyan)" opacity="0.16" />
+                  <circle
+                    cx={s.x}
+                    cy={30}
+                    r={5.5 + pulse * 1.2}
+                    fill="var(--cyan)"
+                    opacity="0.16"
+                  />
                 )}
                 <rect
                   x={s.x - 4}
@@ -259,7 +270,11 @@ export default function CisRegulatoryElement() {
         </svg>
 
         <div className="absolute right-3 top-16">
-          <Readout label={t("expressed")} value={`${activeCount}/${SWITCHES.length}`} accent="cyan" />
+          <Readout
+            label={t("expressed")}
+            value={`${activeCount}/${SWITCHES.length}`}
+            accent="cyan"
+          />
         </div>
 
         <div className="absolute inset-x-3 bottom-12 text-center font-mono text-[10px] uppercase tracking-wider text-muted">

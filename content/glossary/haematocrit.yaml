@@ -1,0 +1,31 @@
+id: haematocrit
+label:
+  vi: Hematocrit
+  en: Haematocrit
+definition:
+  vi: >-
+    Tỉ lệ phần trăm thể tích máu do hồng cầu chiếm giữ — nói cách khác, độ đặc của dòng máu tính theo
+    thứ chở oxy. Người trưởng thành thường ở khoảng 42%. Con số này là một sự đánh đổi rất chặt: hồng
+    cầu càng nhiều thì mỗi lần bơm chở được càng nhiều oxy, nhưng máu cũng càng nhớt và tim càng phải
+    làm việc nặng hơn để đẩy nó đi. Đó là lý do việc trữ hồng cầu trong lá lách rồi chỉ tống ra khi
+    lặn lại thông minh đến vậy: con vật được hưởng máu đặc đúng lúc cần, mà không phải trả giá độ nhớt
+    trong suốt phần còn lại của cuộc đời.
+  en: >-
+    The percentage of blood volume taken up by red cells — in other words, how thick the blood is in
+    terms of the thing that carries oxygen. A typical adult human sits near 42%. The number is a tight
+    trade-off: more red cells means more oxygen per beat, but also thicker blood and a heart working
+    harder to push it. Which is what makes storing red cells in the spleen and releasing them only on
+    a dive so elegant: the animal gets dense blood exactly when it needs it, and pays the viscosity
+    cost for none of the rest of its life.
+see_also:
+  - splenic-contraction
+  - myoglobin
+  - aerobic-dive-limit
+  - acclimatization
+category: bio
+tags:
+  - physiology
+cover_prompt: >-
+  A painterly cross-section of a blood vessel crowded with disc-shaped red cells suspended in pale
+  plasma, some vessels densely packed and others sparse, warm crimson against a deep indigo field with
+  a faint cool rim light, naturalist plate energy, no text, no labels, no numbers.

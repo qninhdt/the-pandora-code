@@ -119,8 +119,22 @@ export function HeatSourceDecay({ caption, className }: HeatSourceDecayProps) {
             opacity={0.5}
           />
           {/* Axes */}
-          <line x1={PAD_L} y1={PAD_T} x2={PAD_L} y2={PAD_T + PLOT_H} stroke="var(--border-strong)" strokeWidth={1} />
-          <line x1={PAD_L} y1={PAD_T + PLOT_H} x2={PAD_L + PLOT_W} y2={PAD_T + PLOT_H} stroke="var(--border-strong)" strokeWidth={1} />
+          <line
+            x1={PAD_L}
+            y1={PAD_T}
+            x2={PAD_L}
+            y2={PAD_T + PLOT_H}
+            stroke="var(--border-strong)"
+            strokeWidth={1}
+          />
+          <line
+            x1={PAD_L}
+            y1={PAD_T + PLOT_H}
+            x2={PAD_L + PLOT_W}
+            y2={PAD_T + PLOT_H}
+            stroke="var(--border-strong)"
+            strokeWidth={1}
+          />
           <VizText x={PAD_L - 4} y={PAD_T + 6} size="micro" tone="subtle" anchor="end">
             {t("yHigh")}
           </VizText>
@@ -196,7 +210,12 @@ export function HeatSourceDecay({ caption, className }: HeatSourceDecayProps) {
               </div>
             ))}
           </div>
-          <VizReadout label={t("dominantLabel")} value={t(`series.${dominant.key}`)} tone={`var(--${dominant.tone})`} tinted />
+          <VizReadout
+            label={t("dominantLabel")}
+            value={t(`series.${dominant.key}`)}
+            tone={`var(--${dominant.tone})`}
+            tinted
+          />
         </div>
       </div>
     </VizFigure>

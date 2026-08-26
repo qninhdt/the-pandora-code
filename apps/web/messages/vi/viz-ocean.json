@@ -140,6 +140,433 @@
         "productive": "Dưỡng chất có thể trở lại tầng có ánh sáng.",
         "suppressed": "Ranh giới dưỡng chất bị đẩy xuống sâu hơn."
       }
+    },
+    "jetVersusFoil": {
+      "title": "Hai cách đẩy nước",
+      "subtitle": "Ống phun bắn một ít nước cực nhanh. Cánh đẩy thật nhiều nước một cách êm ái. Chỉ một trong hai là đủ rẻ để dùng cả ngày.",
+      "duty": {
+        "pulsed": "Từng nhịp",
+        "continuous": "Liên tục"
+      },
+      "dutyLabel": "Cách sinh lực đẩy",
+      "axis": {
+        "efficiency": "Hiệu suất đẩy",
+        "wakeRatio": "Tốc độ dòng phun ÷ tốc độ bơi"
+      },
+      "marker": {
+        "foil": "Cánh",
+        "jet": "Ống phun"
+      },
+      "footnote": "Muốn ống phun hiệu quả đến mức này thì miệng phun phải rộng {area} cm² — tới đó thì nó là cái cánh rồi.",
+      "readout": {
+        "jetVelocity": "Tốc độ nước ra khỏi ống",
+        "jetVelocityNote": "Gấp {ratio} lần tốc độ của con vật",
+        "wasted": "Bỏ lại trong dòng xoáy",
+        "wastedNote": "Công suất chỉ làm nước chuyển động, không đẩy con vật",
+        "cost": "Chi phí: ống phun / cánh",
+        "costNote": "Mỗi mét đường, ống phun đắt gấp {factor} lần",
+        "verdict": "Kết luận"
+      },
+      "slider": {
+        "mass": "Khối lượng cơ thể",
+        "massValue": "{v} tấn",
+        "speed": "Tốc độ bơi đường dài",
+        "aperture": "Tổng tiết diện miệng phun",
+        "apertureValue": "{v} cm²"
+      },
+      "hint": {
+        "competitive": "Ở tiết diện này ống phun không còn lỗ vốn — nhưng một miệng rộng như vậy là cái vây có lỗ, chứ không còn là vòi phun.",
+        "penalised": "Ống phun đốt gấp {factor} lần năng lượng cho mỗi mét đường. Trụ được vài giây, không trụ được cả một chuyến băng đại dương."
+      },
+      "units": "Chi phí di chuyển tính bằng joule trên mỗi kilogram mỗi mét. Số đo thực tế: động vật chân đầu 1,5–4,5; cá và cá đuối 0,2–0,6.",
+      "aria": "Hiệu suất đẩy: ống phun {jet}%, cánh {foil}%."
+    },
+    "cavitationCeiling": {
+      "title": "Được bơi nhanh đến đâu là do đang ở sâu bao nhiêu",
+      "subtitle": "Đạp vây quá mạnh ở nước cạn thì nước xé ra thành bọt. Áp suất dưới sâu khiến chuyện đó không thể xảy ra.",
+      "slider": {
+        "sigma": "Ngưỡng xâm thực σ",
+        "depth": "Độ sâu",
+        "depthValue": "{v} m",
+        "burst": "Tốc độ bứt tốc muốn đạt"
+      },
+      "axis": {
+        "depth": "Độ sâu (m)",
+        "speed": "Tốc độ (m/s)"
+      },
+      "band": {
+        "dolphin": "Giới hạn đo được ở mặt nước của cá heo và cá bơi nhanh"
+      },
+      "readout": {
+        "ceiling": "Trần tốc độ ở đây",
+        "ceilingNote": "Gấp {factor} lần trần ở mặt nước",
+        "safeDepth": "Đủ sâu từ",
+        "safeDepthNote": "Độ sâu nông nhất mà cú bứt tốc này còn sạch bọt",
+        "anyDepth": "Mọi độ sâu",
+        "verdict": "Ở tốc độ và độ sâu này",
+        "verdictNote": "Bọt nổ sập tạo áp lực cỡ gigapascal, rỗ cả da"
+      },
+      "verdict": {
+        "cavitating": "Sinh bọt — tổn thương mô",
+        "clean": "Dòng chảy sạch"
+      },
+      "hint": {
+        "cavitating": "Cú bứt tốc này sẽ sinh bọt ở đây. Chính tốc độ đó lại an toàn khi xuống dưới khoảng {depth} m, nơi áp suất môi trường giữ nước liền khối.",
+        "clean": "Không bọt ở độ sâu này. Vực sâu chính là nơi một dòng phun tốc độ cao thôi tự hủy hoại chủ nó."
+      },
+      "units": "Số xâm thực σ = (p∞ − p_v) / (½ρU²); bọt bắt đầu hình thành quanh 0,5–1,2 tùy hình dạng bề mặt.",
+      "aria": "Ở {depth} m, trần tốc độ không sinh bọt là {ceiling} mét mỗi giây."
+    },
+    "pressureDoesNotCrush": {
+      "title": "Nước sâu thật ra phá thứ gì",
+      "subtitle": "Bị bóp nát là hiểm nguy nổi tiếng nhất và cũng là thứ không bao giờ xảy ra. Giới hạn thật nằm ở cấp phân tử, và một trong số đó là bức tường.",
+      "slider": {
+        "depth": "Độ sâu",
+        "depthValue": "{v} m",
+        "activationVolume": "Thể tích hoạt hóa của phản ứng",
+        "activationVolumeValue": "{v} cm³/mol"
+      },
+      "row": {
+        "crush": "Bị bóp nát",
+        "enzyme": "Tốc độ enzyme",
+        "membrane": "Sửa màng tế bào",
+        "osmotic": "Tải thẩm thấu"
+      },
+      "rowNote": {
+        "crush": "thể tích mất đi của cơ thể không chứa khí",
+        "enzyme": "tốc độ phản ứng còn lại so với mặt nước",
+        "membrane": "lượng lipid chưa bão hòa cần có để màng còn lỏng",
+        "osmotic": "nồng độ thẩm thấu bên trong, mOsm/kg"
+      },
+      "scaleNote": "mỗi thanh: không có → tối đa",
+      "readout": {
+        "pressure": "Áp suất",
+        "pressureNote": "{atm} atmosphere",
+        "volume": "Thể tích cơ thể",
+        "volumeNote": "Mô sống gần như không nén được",
+        "osmotic": "Dư địa thẩm thấu",
+        "osmoticHeadroom": "Còn {v} mOsm",
+        "osmoticBreached": "Đã vượt trần",
+        "osmoticNote": "Cá xương hết đường ở khoảng {depth} m"
+      },
+      "hint": {
+        "withinCeiling": "Áp suất chẳng làm gì về mặt cơ học. Nó đang làm enzyme chậm lại và màng tế bào cứng đi, và vẫn còn {headroom} mOsm dư địa trước khi tới bức tường sinh hóa.",
+        "pastCeiling": "Sâu hơn mức này, chính chất bảo vệ giữ cho protein gấp đúng hình lại làm con vật mặn hơn cả biển. Đây là nơi cá xương biến mất — không phải vì bị bóp nát, mà vì không giữ nổi nước trong tế bào."
+      },
+      "aria": "Ở {depth} m, áp suất là {pressure} megapascal."
+    },
+    "abyssalSignalStack": {
+      "title": "Một lớp da nói chuyện trong căn phòng không ánh sáng",
+      "subtitle": "Ba trong bốn lớp của nó chỉ hoạt động bằng cách phản chiếu ánh sáng. Lấy ánh sáng đi, chỉ lớp cuối còn nói được gì.",
+      "downwelling": "Ánh sáng mặt trời",
+      "slider": {
+        "depth": "Độ sâu",
+        "depthValue": "{v} m"
+      },
+      "modeLabel": "Chế độ phát tín hiệu",
+      "mode": {
+        "crypsis": "Ẩn mình",
+        "chatter": "Tín hiệu đàn",
+        "counterlight": "Phản chiếu sáng"
+      },
+      "modeNote": {
+        "crypsis": "Tắt phát quang và co hết sắc tố: một bề mặt đen tuyệt đối, không trả lại gì cho chùm sáng dò tìm của kẻ săn.",
+        "chatter": "Từng đợt sáng chạy khắp thân với nhịp cỡ millisecond — vừa điều phối cuộc săn, vừa làm con mồi mất phương hướng.",
+        "counterlight": "Các photophore dưới bụng phát đúng bằng lượng sáng còn rọi xuống từ trên, xóa sạch bóng silhouette trước mắt bất cứ ai nhìn lên."
+      },
+      "tier": {
+        "chromatophore": "Tế bào sắc tố",
+        "iridophore": "Tế bào óng ánh",
+        "leucophore": "Tế bào trắng",
+        "photophore": "Tế bào phát quang"
+      },
+      "tierNote": {
+        "chromatophore": "túi sắc tố được cơ kéo bung ra",
+        "iridophore": "gương protein xếp lớp, điều chỉnh được bước sóng",
+        "leucophore": "tán xạ trắng trên toàn dải",
+        "photophore": "tự làm ra photon của mình"
+      },
+      "readout": {
+        "blue": "Ánh sáng lam-lục còn lại",
+        "blueNote": "Cửa sổ duy nhất biển còn để mở",
+        "red": "Ánh sáng đỏ còn lại",
+        "redNote": "Mất sạch trong vài chục mét đầu",
+        "gone": "Không còn",
+        "channel": "Kênh đang hoạt động",
+        "channelNote": "Lớp nào còn nhìn thấy được"
+      },
+      "channel": {
+        "reflective": "Phản chiếu",
+        "emissive": "Tự phát"
+      },
+      "hint": {
+        "reflective": "Dưới đây vẫn còn đủ sáng để sắc tố và gương tạo được độ tương phản — khoảng {pct}% dải hữu dụng còn lại.",
+        "emissive": "Các lớp phản chiếu không còn gì để phản chiếu. Từ đây trở xuống, muốn nói gì con vật phải tự thắp sáng mà nói."
+      },
+      "aria": "Ở {depth} m, còn lại {reflective}% dải phát tín hiệu bằng phản chiếu."
+    },
+    "ventEnergyBudget": {
+      "title": "Một miệng phun thủy nhiệt có nuôi nổi con vật này không?",
+      "subtitle": "Năng suất trên mỗi mét vuông ngang rừng nhiệt đới. Vấn đề là có bao nhiêu mét vuông, và bốn bậc ở giữa.",
+      "tier": {
+        "0": "Vi khuẩn hóa dưỡng",
+        "1": "Giun ống, trai",
+        "2": "Cua, cá miệng phun",
+        "3": "Kẻ săn đỉnh bảng"
+      },
+      "scaleNote": "chiều rộng các bậc theo thang log — kg carbon mỗi năm ở bên phải",
+      "slider": {
+        "area": "Diện tích trường thủy nhiệt",
+        "areaValue": "{v} m²",
+        "production": "Lượng carbon cố định",
+        "productionValue": "{v} kg C/m²/năm",
+        "transfer": "Hiệu suất mỗi bậc",
+        "pack": "Số con trong đàn",
+        "packValue": "{v} con"
+      },
+      "readout": {
+        "apexSupply": "Lên tới đỉnh tháp",
+        "apexSupplyNote": "Sau bốn bậc thức ăn",
+        "packDemand": "Cả đàn cần",
+        "packDemandNote": "{n} con, mỗi con 4 tấn",
+        "maxResident": "Con lớn nhất có thể trụ lại",
+        "maxResidentNote": "Sống quanh năm chỉ dựa vào trường thủy nhiệt này",
+        "carbonPerYear": "{v} kg C/năm",
+        "massKg": "{v} kg"
+      },
+      "hint": {
+        "sufficient": "Với các thông số này thì trường thủy nhiệt gánh được cả đàn — nhưng đó là những con số chưa trường thủy nhiệt nào từng đo được.",
+        "deficit": "Trường thủy nhiệt thiếu hụt khoảng {shortfall} lần. Con lớn nhất nó giữ được lâu dài chỉ nặng {resident} kg, nên một đàn cỡ vài tấn buộc phải ăn ở nơi khác."
+      },
+      "earthCheck": "Dân bản địa ở các miệng phun Trái Đất đúng như vậy: cá chình chưa tới 1 kg, cua chưa tới 0,5 kg, bạch tuộc thủy nhiệt chưa tới 0,2 kg. Không có gì lớn sống ở miệng phun.",
+      "aria": "Tháp dinh dưỡng chuyển giao {apex} kg carbon mỗi năm lên đỉnh tháp, so với nhu cầu {demand} kg mỗi năm của bầy đàn."
+    },
+    "thermalScope": {
+      "title": "Nước lạnh thu phí bằng hai loại tiền",
+      "subtitle": "Trong nước lạnh, tốc độ chỉ sụt nhẹ. Thời gian phản ứng thì sụp — mà một cú đánh phối hợp trước hết là bài toán canh nhịp.",
+      "gauge": {
+        "speed": "Tốc độ bứt tốc",
+        "speedThreshold": "cần đạt",
+        "latency": "Độ trễ ra đòn",
+        "latencyThreshold": "giới hạn"
+      },
+      "footnote": "công suất tỉ lệ với lập phương tốc độ; nhịp co cơ thì tỉ lệ thuận",
+      "slider": {
+        "ambient": "Nhiệt độ nước",
+        "q10": "Q₁₀",
+        "retia": "Nhiệt giữ lại trên nền nước",
+        "retiaValue": "+{v} °C"
+      },
+      "readout": {
+        "muscleTemp": "Nhiệt độ khối cơ",
+        "muscleTempNote": "Nước đang ở {ambient} °C",
+        "rate": "Cường độ chuyển hóa",
+        "rateNote": "So với con vật ở 25 °C",
+        "verdict": "Cú đánh phối hợp",
+        "verdictNote": "Cần khoảng +{needed} °C nhiệt giữ lại",
+        "verdictImpossible": "Không đạt được với bất kỳ mức giữ nhiệt hợp lý nào"
+      },
+      "verdict": {
+        "capable": "Trong tầm",
+        "tooSlow": "Chậm quá, không kịp vào đòn"
+      },
+      "hint": {
+        "capable": "Đủ nhanh, và — phần quan trọng hơn — đủ nhanh để quyết định. Mọi con trong đàn đều vào đòn được trong cùng một khoảnh khắc.",
+        "tooSlow": "Tốc độ thì còn sống được; thời gian phản ứng thì không. Muốn bù khoảng cách này cần chừng +{needed} °C nhiệt chuyển hóa giữ lại, mà ở Trái Đất nghĩa là các bó mạch trao đổi ngược dòng."
+      },
+      "earthCheck": "Cá ngừ và cá mập mako giữ khối cơ bơi và hộp sọ ấm hơn nước 5–15 °C bằng retia mirabilia. Không loài động vật chân đầu nào trên Trái Đất làm được vậy.",
+      "aria": "Khối cơ ở {temp} °C cho độ trễ ra đòn {latency} millisecond."
+    },
+    "hydrostaticDepth": {
+      "title": "Cùng một độ sâu, hai khối nước nặng khác nhau",
+      "subtitle": "Áp suất chính là trọng lượng cột nước phía trên, nên trọng lực yếu hơn sẽ đẩy mọi ngưỡng nguy hiểm xuống sâu hơn.",
+      "worldControl": "Thế giới",
+      "world": {
+        "earth": "Trái Đất 1,0 g",
+        "pandora": "Pandora 0,8 g"
+      },
+      "residualLabel": "Thể tích khí cặn — phổi không thể nhỏ hơn nữa",
+      "axis": {
+        "depth": "Độ sâu (m)",
+        "volume": "Thể tích phổi (L)"
+      },
+      "readout": {
+        "pressure": "Áp suất tuyệt đối",
+        "perAtm": "mỗi atm ứng với {n} m",
+        "volume": "Phổi bị nén còn",
+        "squeeze": "Bắt đầu bị bóp ở",
+        "beyondRange": "sâu hơn 150 m"
+      },
+      "verdict": {
+        "safe": "Phổi vẫn còn trên mức khí cặn",
+        "narcosis": "Phân áp nitơ đã đủ gây say",
+        "squeeze": "Dưới mức khí cặn — riêng lồng ngực không chống nổi"
+      },
+      "hint": {
+        "safe": "Lồng ngực đang bị nén lại nhưng lượng khí bên trong vẫn còn chỗ để nhường. Đến đây cơ thể chưa cần làm gì khác thường.",
+        "narcosis": "Nitơ hòa tan đã đạt mức áp suất đủ để tan vào màng tế bào thần kinh: suy nghĩ chậm lại, tay chân lóng ngóng, và một cảm giác bình thản hoàn toàn vô căn cứ.",
+        "squeeze": "Khối khí đã bị ép nhỏ hơn cả giới hạn mà lồng ngực có thể gập lại. Nếu không có hơn một lít máu dồn vào phổi để bù chỗ trống ấy, các mạch máu sẽ vỡ."
+      },
+      "atmValue": "{n} atm",
+      "litreValue": "{n} L",
+      "metreValue": "{n} m",
+      "slider": {
+        "depth": "Độ sâu",
+        "tlc": "Tổng dung tích phổi"
+      },
+      "assumption": "Ở đây tạm coi nước biển Pandora đặc như nước biển Trái Đất, 1025 kg/m³ — chính sử chưa từng nêu con số này.",
+      "narcosisNote": "Trên thế giới này, nitơ bắt đầu gây say ở khoảng {n} m.",
+      "aria": "Thể tích phổi theo độ sâu, tại {depth} mét và {atm} atm"
+    },
+    "diveOxygenBudget": {
+      "title": "Nín thở là một phép chia",
+      "subtitle": "Lượng oxy mang theo chia cho lượng oxy tiêu thụ. Và nơi cơ thể trữ oxy còn quan trọng hơn cả việc nó hít vào bao nhiêu.",
+      "profileControl": "Cơ thể",
+      "profile": {
+        "untrainedHuman": "Chưa luyện",
+        "eliteApneist": "Đã luyện",
+        "weddellSeal": "Hải cẩu"
+      },
+      "barTitle": "Oxy được trữ ở đâu — phổi, máu, cơ",
+      "targetLabel": "Cú lặn đang thử",
+      "axis": {
+        "mass": "Khối lượng cơ thể (kg)",
+        "adl": "Giới hạn hiếu khí (phút)"
+      },
+      "readout": {
+        "stores": "Oxy mang theo",
+        "storesNote": "{n} mL trên mỗi kg cơ thể",
+        "burn": "Oxy tiêu thụ",
+        "burnNote": "ở mức hãm chuyển hóa đã chọn",
+        "adl": "Giới hạn hiếu khí"
+      },
+      "verdict": {
+        "aerobic": "Cú lặn vẫn nằm trong giới hạn hiếu khí",
+        "anaerobic": "Vượt giới hạn — cơ chuyển sang yếm khí"
+      },
+      "hint": {
+        "aerobic": "Mọi thứ cú lặn này tiêu tốn đều được chi trả bằng oxy cơ thể mang theo. Trồi lên, hít hai hơi, rồi lặn tiếp.",
+        "anaerobic": "Các cơ đã cạn oxy dự trữ của chính mình và chuyển sang đốt đường mà không cần oxy. Axit bị giam trong chân cho tới lúc trồi lên rồi mới tràn vào máu — và cú lặn kế tiếp buộc phải chờ."
+      },
+      "slider": {
+        "mass": "Khối lượng cơ thể",
+        "suppression": "Hãm chuyển hóa còn",
+        "target": "Cú lặn muốn giữ"
+      },
+      "kgValue": "{n} kg",
+      "litreValue": "{n} L",
+      "minuteValue": "{n} phút",
+      "perMinValue": "{n} mL/phút",
+      "percentValue": "{n}%",
+      "derivedNote": "Tài liệu nguồn không đo tốc độ chuyển hóa khi lặn của những loài này, nên tốc độ ở đây do bạn đặt và được hiệu chỉnh theo giới hạn đã biết của một người chưa luyện.",
+      "aria": "Giới hạn lặn hiếu khí theo khối lượng cơ thể, hiện là {minutes} phút"
+    },
+    "adaptationTimescale": {
+      "title": "Một cơ thể cần bao nhiêu thời gian?",
+      "subtitle": "Mỗi thay đổi trên cơ thể người lặn đều có nhịp đồng hồ riêng. Cho nó một tháng thì được nhóm này; cho nó một triệu năm mới được nhóm kia.",
+      "mark": {
+        "day": "một ngày",
+        "year": "một năm",
+        "millennium": "một nghìn năm",
+        "megayear": "một triệu năm"
+      },
+      "trait": {
+        "splenicConditioning": "Lách học cách co bóp",
+        "mokenAcuity": "Thị lực dưới nước tăng gấp đôi",
+        "haenyeoThermogenesis": "Chuyển hóa mùa đông tăng lên",
+        "apneaDiscipline": "Kỷ luật nín thở",
+        "thoracicExpansion": "Lồng ngực sâu thêm",
+        "bajauSpleen": "Lách to do di truyền",
+        "tibetanEpas1": "Máu thích nghi khí loãng",
+        "caudalFluke": "Đuôi thành vây bơi"
+      },
+      "tier": {
+        "none": "Chưa có gì",
+        "acclimatization": "Hiệu chỉnh",
+        "plasticity": "Lớn lên cùng nó",
+        "genetic": "Di truyền",
+        "skeletal": "Dựng lại bộ xương"
+      },
+      "verdict": {
+        "none": "Ngay cả một phản xạ cũng chưa kịp hình thành",
+        "acclimatization": "Thuận nghịch — và sẽ mất đi khi áp lực biến mất",
+        "plasticity": "Hình thành từ thuở nhỏ, giữ được suốt đời",
+        "genetic": "Chỉ qua nhiều thế hệ, không bao giờ trong một cơ thể",
+        "skeletal": "Thời gian địa chất, và không có đường quay lại"
+      },
+      "hint": {
+        "none": "Quá ít thời gian để bất cứ điều gì thay đổi. Ngay cả phản ứng của lách cũng cần lặp lại hàng ngày mới bắt đầu xuất hiện đều đặn.",
+        "acclimatization": "Đây là hiệu chỉnh, không phải xây lại: vẫn cơ thể đó nhưng chạy ở thiết lập khác. Đây cũng là tầng dễ mất nhất — những người lặn Hàn Quốc đánh mất mức chuyển hóa mùa đông cao chỉ sau hai, ba năm kể từ khi mặc áo lặn cao su.",
+        "plasticity": "Đủ dài để một cơ thể đang lớn được định hình bởi chính việc nó làm. Những đứa trẻ chưa từng luyện, chỉ sau một tháng tập, đã đạt đúng thị lực dưới nước của trẻ em các bộ tộc biển — và giữ được nó. Chẳng có gì được di truyền; chỉ có một thứ được học đủ sâu để ở lại.",
+        "genetic": "Đến đây ta đã rời khỏi phạm vi một cá thể. Lá lách to trong một cộng đồng lặn biển xuất hiện ở cả người lặn lẫn người không lặn, và chính điều đó chứng minh đây là di truyền chứ không phải rèn luyện — tín hiệu ấy cần hàng chục đến hàng trăm thế hệ chịu áp lực.",
+        "skeletal": "Đây là tầng duy nhất có thể biến một cái đuôi thành vây bơi, và nó tốn hàng triệu năm. Không lượng luyện tập nào chạm tới được, và đó chính là lý do giải phẫu là phần mà kẻ mới đến không thể tập mà có."
+      },
+      "readout": {
+        "reached": "Trong tầm với",
+        "mechanism": "Đổi được gì",
+        "nothingYet": "chưa có gì"
+      },
+      "slider": {
+        "budget": "Thời gian có được",
+        "generation": "Một thế hệ"
+      },
+      "duration": {
+        "hours": "{n} giờ",
+        "days": "{n} ngày",
+        "months": "{n} tháng",
+        "years": "{n} năm",
+        "megayears": "{n} triệu năm"
+      },
+      "countValue": "{n}/{total}",
+      "generationNote": "Độ dài một thế hệ dùng để đổi hai đặc điểm di truyền từ số thế hệ sang thời gian lịch; các vị trí chỉ đúng ở cấp bậc độ lớn, không phải mốc chính xác.",
+      "aria": "Thang thời gian thích nghi với {count} trong {total} đặc điểm nằm trong tầm với"
+    },
+    "ascentHypoxia": {
+      "title": "Hiểm nguy nằm ở lúc trồi lên",
+      "subtitle": "Áp suất oxy tăng khi xuống và sụp đổ khi lên. Cảm giác đói khí lại đi theo CO₂ — một hồi báo động sai chỗ.",
+      "prepControl": "Cách thở trước khi lặn",
+      "prep": {
+        "normal": "Thở bình thường",
+        "hyperventilated": "Thở gấp trước"
+      },
+      "blackoutLabel": "Dưới mức này là mất ý thức",
+      "breakpointLabel": "cơn đói khí",
+      "axis": {
+        "time": "Giây kể từ khi lặn",
+        "po2": "Áp suất oxy (mmHg)"
+      },
+      "readout": {
+        "breakpoint": "Đói khí ở giây",
+        "breakpointNote": "khởi điểm từ {n} mmHg CO₂",
+        "crossing": "Oxy sụp ở giây",
+        "neverCrosses": "không bao giờ",
+        "outcome": "Kết cục"
+      },
+      "outcome": {
+        "safe": "Trồi lên an toàn",
+        "warned": "Được báo động kịp lúc",
+        "blackout": "Mất ý thức khi trồi lên"
+      },
+      "verdict": {
+        "safe": "Oxy không bao giờ chạm sàn",
+        "warned": "Báo động đến trước khi oxy cạn",
+        "blackout": "Oxy cạn trước khi có bất kỳ lời cảnh báo nào"
+      },
+      "hint": {
+        "safe": "Đủ ngắn và đủ chậm để áp suất oxy không bao giờ rơi xuyên qua sàn, kể cả khi phổi giãn nở trở lại trên đường lên.",
+        "warned": "Hồi báo động CO₂ vang lên khi oxy vẫn còn dự trữ. Đây đúng là trình tự cơ thể được thiết kế cho: người lặn thấy khó chịu, và vì thế còn sống.",
+        "blackout": "Hãy để ý lúc báo động vang lên — sau khi oxy đã cạn. Thở gấp gần như không thêm được chút oxy nào vào máu vốn đã bão hòa; nó chỉ lấy đi lời cảnh báo. Người lặn không hề cảm thấy có gì bất thường."
+      },
+      "slider": {
+        "depth": "Độ sâu",
+        "bottom": "Thời gian ở đáy",
+        "vo2": "Tốc độ đốt oxy"
+      },
+      "metreValue": "{n} m",
+      "secondValue": "{n} giây",
+      "perMinLitreValue": "{n} L/phút",
+      "modelNote": "Một mô hình một khoang mang tính minh họa: các ngưỡng là số liệu đo được, còn tốc độ tiêu thụ do bạn đặt.",
+      "aria": "Áp suất oxy trong một cú lặn nín thở dài {seconds} giây"
     }
   }
 }

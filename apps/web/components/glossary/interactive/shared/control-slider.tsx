@@ -49,10 +49,7 @@ export function ControlSlider({
   return (
     <div className={cn("flex flex-col gap-1", className)}>
       <div className="flex items-baseline justify-between gap-3">
-        <label
-          htmlFor={id}
-          className="text-[10px] font-mono uppercase tracking-wider text-muted"
-        >
+        <label htmlFor={id} className="text-[10px] font-mono uppercase tracking-wider text-muted">
           {label}
         </label>
         <span className="text-[11px] font-mono tabular-nums text-foreground">

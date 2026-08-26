@@ -1,0 +1,35 @@
+id: optimal-extinction
+label:
+  vi: Tuyệt chủng tối ưu
+  en: Optimal extinction
+definition:
+  vi: >-
+    Kết quả toán học cho thấy một chủ sở hữu duy nhất, hoàn toàn duy lý và độc quyền tuyệt đối, vẫn có
+    thể thấy việc săn một loài đến tuyệt chủng là lựa chọn sinh lời nhất. Điều kiện gồm hai phần. Thứ
+    nhất, tốc độ sinh trưởng của loài thấp hơn suất chiết khấu của chủ, nên chờ đàn sinh sản sinh lời
+    kém hơn là bán sạch rồi mang tiền đi đầu tư chỗ khác. Thứ hai, giá cao đến mức chi phí tìm bắt
+    những cá thể cuối cùng vẫn không đáng kể so với doanh thu, nên cái phanh duy nhất của thị trường
+    bị vô hiệu. Điều khiến kết quả này khó chịu là nó không cần đến sự thiếu hiểu biết, sự thiếu quản
+    lý, hay lòng tham: nó thành ra từ việc tính đúng.
+  en: >-
+    The mathematical result showing that a single owner, entirely rational and holding absolute
+    monopoly, can still find hunting a species to extinction the most profitable choice. The conditions
+    are twofold. First, the species' growth rate is below the owner's discount rate, so waiting for the
+    population to breed earns less than selling out and investing the money elsewhere. Second, the price
+    is high enough that the cost of finding the last individuals remains negligible against revenue, so
+    the market's only brake is disabled. What makes the result uncomfortable is that it requires no
+    ignorance, no regulatory failure, and no greed: it emerges from calculating correctly.
+see_also:
+  - discount-rate
+  - bioeconomics
+  - open-access-resource
+  - functional-extinction
+category: concept
+tags:
+  - bioeconomics
+  - ecology
+cover_prompt: >-
+  A painterly plate of a curve descending from upper left and meeting the horizontal baseline at the
+  lower right where it flattens to nothing, a single small animal silhouette standing at the last
+  point before the flat stretch begins, cool teal curve with a warm magenta glow at the point of
+  contact, deep indigo behind, painterly naturalist plate, no text, no labels.

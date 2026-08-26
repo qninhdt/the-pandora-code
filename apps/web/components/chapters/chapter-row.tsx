@@ -6,6 +6,7 @@ import type { ClassificationKind } from "@/lib/content/schemas/shared";
 import type { OfflineLocale } from "@/lib/offline/types";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
+import { useState } from "react";
 
 export interface ChapterRowData {
   slug: string;
@@ -32,6 +33,11 @@ interface ChapterRowProps {
 // and inert.
 export function ChapterRow({ chapter, comingLabel, readingUnit }: ChapterRowProps) {
   const { published, coverSrc, plateNo, title, payload, readingMin, tier } = chapter;
+  // Offline, only downloaded chapters have their cover stored, so the rest of
+  // the list would show the browser's broken-image glyph. Fall back to the same
+  // gradient a cover-less chapter already uses.
+  const [coverFailed, setCoverFailed] = useState(false);
+  const showCover = Boolean(coverSrc) && !coverFailed;
 
   const inner = (
     <>
@@ -42,10 +48,11 @@ export function ChapterRow({ chapter, comingLabel, readingUnit }: ChapterRowProp
 
       {/* thumbnail */}
       <div className="relative aspect-[16/10] w-24 shrink-0 overflow-hidden rounded-lg border border-border sm:w-28">
-        {coverSrc ? (
+        {showCover ? (
           <img
-            src={coverSrc}
+            src={coverSrc ?? undefined}
             alt=""
+            onError={() => setCoverFailed(true)}
             className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
         ) : (

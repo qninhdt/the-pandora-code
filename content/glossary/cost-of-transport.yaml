@@ -1,0 +1,32 @@
+id: cost-of-transport
+label:
+  vi: Chi phí di chuyển
+  en: Cost of transport
+definition:
+  vi: >-
+    Năng lượng một con vật tiêu tốn cho mỗi kilogram khối lượng trên mỗi mét đường đi — con số "mức
+    tiêu thụ nhiên liệu" của sinh học, đo bằng joule trên kilogram trên mét. Vì đã chia cho cả khối
+    lượng lẫn khoảng cách, nó so sánh được giữa những cơ thể khác hẳn nhau về kích cỡ và cách vận
+    động. Số đo bằng hô hấp kế cho mực biển khơi khoảng 1,5–4,5, còn cá và cá đuối cùng cỡ chỉ
+    0,2–0,6: đẩy bằng dòng phun đắt gấp ba đến năm lần vỗ vây, và đó là khác biệt giữa một con vật
+    băng được cả đại dương và một con chỉ băng được vài chục mét.
+  en: >-
+    The energy an animal spends per kilogram of body mass per metre travelled — biology's
+    fuel-economy figure, in joules per kilogram per metre. Because it divides out both mass and
+    distance, it compares bodies that differ wildly in size and gait. Respirometry puts pelagic squid
+    at roughly 1.5–4.5 while fishes and rays of similar mass sit at 0.2–0.6: jetting costs three to
+    five times what flapping does, which is the difference between an animal that can cross an ocean
+    and one that can cross a room.
+see_also:
+  - froude-efficiency
+  - jet-propulsion
+  - allometry
+  - kleibers-law
+category: concept
+tags:
+  - physiology
+  - physics
+cover_prompt: >-
+  A large winged marine animal rendered in cool teal silhouette against void indigo water, faint cyan
+  streamlines flowing smoothly over its broad wings with almost no turbulence, a distant smaller
+  jetting body trailing violent bright churn behind it, painterly naturalist plate, no text, no labels.

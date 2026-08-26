@@ -1,12 +1,12 @@
 "use client";
 
-import { useLocale, useTranslations } from "next-intl";
 import { CanonBadge } from "@/components/classification/canon-badge";
 import { AnnotationLayer, type ResolvedLabel } from "@/components/content/figure-annotations";
 import { LightboxImage } from "@/components/content/lightbox";
 import type { ClassificationKind } from "@/lib/content/schemas/shared";
 import { cn } from "@/lib/utils";
 import { Tag, TagsIcon } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 import { toggleAnnotations, useAnnotationsVisible } from "./use-annotations";
 
 type Localized = { vi: string; en: string } | string;
@@ -75,9 +75,7 @@ export function DiagramFigure({
     note: pick(l.note, locale),
   }));
 
-  const btnTitle = annotationsVisible
-    ? t("hideAllLabels")
-    : t("showAllLabels");
+  const btnTitle = annotationsVisible ? t("hideAllLabels") : t("showAllLabels");
 
   return (
     <figure className={cn("my-8", bleed && "lg:-mx-24", className)}>
@@ -133,9 +131,7 @@ export function DiagramFigure({
                 {captionText}
               </span>
             )}
-            {tier && (
-              <CanonBadge kind={tier} className="ml-auto shrink-0 sm:ml-0" />
-            )}
+            {tier && <CanonBadge kind={tier} className="ml-auto shrink-0 sm:ml-0" />}
           </div>
           {captionText && (
             <span className="mt-2 block font-serif text-sm italic leading-relaxed text-muted sm:hidden">

@@ -1,0 +1,36 @@
+id: hydrostatic-pressure
+label:
+  vi: Áp suất thủy tĩnh
+  en: Hydrostatic pressure
+definition:
+  vi: >-
+    Áp suất do trọng lượng của khối nước phía trên gây ra, tăng đều khoảng 0,1 MPa — xấp xỉ một
+    atmosphere — cho mỗi 10 m độ sâu. Ở đáy rãnh sâu nhất, con số là chừng 1.100 atm, nghe như bản án tử.
+    Nhưng nước gần như không nén được (độ nén khoảng 4,5×10⁻¹⁰ Pa⁻¹), và mô sống chủ yếu là nước, nên
+    ngay ở 110 MPa thể tích chỉ giảm vài phần trăm. Áp suất chỉ làm biến dạng khi nó lệch — khi một bên
+    thành có nhiều hơn bên kia — nên khoang chứa khí thì nguy, còn một cơ thể không khí thì bị nén đều
+    từ mọi phía và chẳng có gì để hỏng. Cái nó thật sự phá là ở cấp phân tử: enzyme chậm lại, màng tế
+    bào cứng đi.
+  en: >-
+    The pressure exerted by the weight of the water column above, rising by about 0.1 MPa — near enough
+    one atmosphere — every 10 m of descent. At the bottom of the deepest trench that is roughly 1,100
+    atmospheres, which sounds like a death sentence. But water is very nearly incompressible (about
+    4.5×10⁻¹⁰ per pascal), and tissue is mostly water, so even 110 MPa squeezes it by only a few per
+    cent. Pressure deforms things only when it is unbalanced — more on one side of a wall than the
+    other — so a gas-filled cavity is in danger while a gas-free body is squeezed identically from every
+    direction with nothing to fail. What pressure actually breaks is molecular: enzymes slow, membranes
+    stiffen.
+see_also:
+  - piezolyte
+  - homeoviscous-adaptation
+  - cavitation
+  - archimedes-principle
+category: concept
+tags:
+  - physics
+  - oceanography
+cover_prompt: >-
+  A tall vertical slice of ocean from a faint pale surface at the top fading through deepening indigo to
+  black at the bottom, the water rendered as increasingly dense and heavy toward the base, a single small
+  gas bubble near the top compressed to a pinpoint further down, painterly naturalist plate, no text,
+  no labels.

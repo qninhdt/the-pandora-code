@@ -1,0 +1,34 @@
+id: cavitation
+label:
+  vi: Xâm thực (cavitation)
+  en: Cavitation
+definition:
+  vi: >-
+    Hiện tượng nước tự xé ra thành bọt hơi khi áp suất cục bộ tụt xuống tới áp suất hơi của nó — không
+    phải do nóng mà do bị kéo căng, khi dòng chảy tăng tốc quanh một mặt cong. Phần phá hoại không phải
+    lúc bọt sinh ra mà lúc chúng trôi vào vùng áp cao rồi nổ sập bất đối xứng, phóng ra những tia vi mô
+    đập vào bề mặt gần đó với áp lực 1–5 GPa: đủ để rỗ chân vịt tàu và rỗ cả da thịt. Với cá heo và cá
+    bơi nhanh, trần tốc độ do xâm thực ở nước mặt vào khoảng 10–15 m/s. Vì áp suất môi trường tăng theo
+    độ sâu, trần này tăng theo căn bậc hai của độ sâu — nên vực sâu là nơi duy nhất một dòng phun cực
+    nhanh không tự phá hủy chính nó.
+  en: >-
+    The tearing of water into vapour-filled voids when local pressure falls to its vapour pressure —
+    boiling from tension rather than heat, as flow accelerates over a curved surface. The damaging part
+    is not their formation but their collapse: swept into higher pressure they implode asymmetrically,
+    driving micro-jets that strike nearby surfaces at 1–5 GPa, enough to pit ship propellers and living
+    tissue alike. For dolphins and fast fish the cavitation speed ceiling in surface water is roughly
+    10–15 m/s. Because ambient pressure rises with depth, that ceiling rises with the square root of
+    depth — which makes the deep ocean the one place a very fast jet does not destroy itself.
+see_also:
+  - hydrostatic-pressure
+  - jet-propulsion
+  - corner-speed
+  - froude-efficiency
+category: concept
+tags:
+  - physics
+  - oceanography
+cover_prompt: >-
+  A close view of a dark curved fin edge in shallow water with a ragged sheet of small white vapour
+  bubbles tearing off behind it, the skin behind the sheet visibly pitted with tiny pale craters, cold
+  mist grey against ocean teal and void indigo, painterly naturalist plate, no text, no labels.

@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  clearDevelopmentOfflineState,
   getOfflineStatus,
   isOfflineSupported,
   registerOfflineWorker,
@@ -54,6 +55,16 @@ export function OfflineProvider({ children }: { children: React.ReactNode }) {
   const [records, setRecords] = useState<OfflineChapterRecord[]>([]);
 
   useEffect(() => {
+    if (process.env.NODE_ENV === "development") {
+      void clearDevelopmentOfflineState()
+        .then((changed) => {
+          // Unregistering does not remove the current controller until the
+          // next navigation. Reload once so an old dev worker cannot serve one
+          // final stale document.
+          if (changed && navigator.serviceWorker.controller) window.location.reload();
+        })
+        .catch(() => undefined);
+    }
     setSupported(isOfflineSupported());
     if (typeof navigator !== "undefined") {
       const standalone = Boolean((navigator as Navigator & { standalone?: boolean }).standalone);
@@ -72,13 +83,6 @@ export function OfflineProvider({ children }: { children: React.ReactNode }) {
 
   const refresh = useCallback(async () => {
     if (!supported) return;
-    try {
-      const registration = await registerOfflineWorker();
-      if (registration?.waiting) setWaiting(true);
-    } catch {
-      // IndexedDB remains the source of truth when worker registration is
-      // temporarily unavailable (for example during an update).
-    }
     const local = await getOfflineStatus();
     setRecords(local);
     const estimate = await navigator.storage?.estimate?.();
@@ -100,10 +104,66 @@ export function OfflineProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     void refresh();
     if (!supported) return;
+
+    let disposed = false;
+    let registration: ServiceWorkerRegistration | null = null;
+    let installing: ServiceWorker | null = null;
+
+    const markWaiting = () => {
+      if (!disposed && registration?.waiting && navigator.serviceWorker.controller) {
+        setWaiting(true);
+      }
+    };
+
+    const onInstallingStateChange = () => {
+      if (installing?.state === "installed") markWaiting();
+    };
+
+    const onUpdateFound = () => {
+      installing?.removeEventListener("statechange", onInstallingStateChange);
+      installing = registration?.installing ?? null;
+      installing?.addEventListener("statechange", onInstallingStateChange);
+      onInstallingStateChange();
+    };
+
+    const checkForUpdate = () => {
+      if (document.visibilityState === "visible") {
+        const update = registration?.update();
+        void update?.catch(() => undefined);
+      }
+    };
+
+    const observeUpdates = async () => {
+      try {
+        registration = await registerOfflineWorker();
+        if (!registration || disposed) return;
+        registration.addEventListener("updatefound", onUpdateFound);
+        if (registration.waiting) setWaiting(true);
+        onUpdateFound();
+        // `registerOfflineWorker` already requests an update, but this second
+        // check covers registrations returned from another caller during the
+        // same render and keeps the update banner deterministic.
+        await registration.update().catch(() => undefined);
+        markWaiting();
+      } catch {
+        // IndexedDB remains the source of truth when worker registration is
+        // temporarily unavailable (for example during an update).
+      }
+    };
+
+    void observeUpdates();
     const onControllerChange = () => setReady(true);
     navigator.serviceWorker.addEventListener("controllerchange", onControllerChange);
-    return () =>
+    window.addEventListener("focus", checkForUpdate);
+    document.addEventListener("visibilitychange", checkForUpdate);
+    return () => {
+      disposed = true;
+      registration?.removeEventListener("updatefound", onUpdateFound);
+      installing?.removeEventListener("statechange", onInstallingStateChange);
       navigator.serviceWorker.removeEventListener("controllerchange", onControllerChange);
+      window.removeEventListener("focus", checkForUpdate);
+      document.removeEventListener("visibilitychange", checkForUpdate);
+    };
   }, [refresh, supported]);
 
   const download = useCallback(
@@ -153,11 +213,13 @@ export function OfflineProvider({ children }: { children: React.ReactNode }) {
   const activateUpdate = useCallback(async () => {
     if (!supported) return;
     const registration = await registerOfflineWorker();
+    const waiting = registration?.waiting;
+    if (!waiting) return;
     const request = {
       type: "ACTIVATE_UPDATE",
       protocolVersion: OFFLINE_PROTOCOL_VERSION,
     } as const;
-    await sendOfflineRequest(request, undefined, registration?.waiting ?? undefined);
+    await sendOfflineRequest(request, undefined, waiting);
     window.location.reload();
   }, [supported]);
 

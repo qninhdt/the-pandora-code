@@ -17,10 +17,7 @@ export default function InferenceToTheBestExplanation() {
   const t = useTranslations("viz.inference-to-the-best-explanation");
   const [sel, setSel] = useState(1);
 
-  const scores = useMemo(
-    () => HYP.map((h) => h.simplicity + h.scope + h.fit),
-    [],
-  );
+  const scores = useMemo(() => HYP.map((h) => h.simplicity + h.scope + h.fit), []);
   const bestIdx = scores.indexOf(Math.max(...scores));
   const active = HYP[sel];
 
@@ -58,11 +55,7 @@ export default function InferenceToTheBestExplanation() {
             const score = scores[i];
             const glow = 0.35 + score / 20;
             return (
-              <g
-                key={h.key}
-                onClick={() => setSel(i)}
-                style={{ cursor: "pointer" }}
-              >
+              <g key={h.key} onClick={() => setSel(i)} style={{ cursor: "pointer" }}>
                 <rect
                   x={x - 11}
                   y="24"
@@ -70,13 +63,7 @@ export default function InferenceToTheBestExplanation() {
                   height="44"
                   rx="2"
                   fill="var(--surface)"
-                  stroke={
-                    on
-                      ? isBest
-                        ? "var(--teal)"
-                        : "var(--cyan)"
-                      : "var(--border-strong)"
-                  }
+                  stroke={on ? (isBest ? "var(--teal)" : "var(--cyan)") : "var(--border-strong)"}
                   strokeWidth={on ? 1.2 : 0.5}
                   opacity={on ? 0.98 : glow}
                 />
@@ -87,11 +74,7 @@ export default function InferenceToTheBestExplanation() {
                   style={{
                     fontSize: 3.4,
                     fontFamily: "monospace",
-                    fill: on
-                      ? isBest
-                        ? "var(--teal)"
-                        : "var(--cyan)"
-                      : "var(--muted)",
+                    fill: on ? (isBest ? "var(--teal)" : "var(--cyan)") : "var(--muted)",
                   }}
                 >
                   {t(h.key)}
@@ -107,14 +90,7 @@ export default function InferenceToTheBestExplanation() {
                   const by = 42 + bi * 7;
                   return (
                     <g key={label}>
-                      <rect
-                        x={x - 8}
-                        y={by}
-                        width="16"
-                        height="2.2"
-                        rx="0.4"
-                        fill="var(--void)"
-                      />
+                      <rect x={x - 8} y={by} width="16" height="2.2" rx="0.4" fill="var(--void)" />
                       <rect
                         x={x - 8}
                         y={by}

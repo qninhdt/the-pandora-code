@@ -1,0 +1,33 @@
+id: piezolyte
+label:
+  vi: Piezolyte (chất bảo vệ chịu áp)
+  en: Piezolyte
+definition:
+  vi: >-
+    Những phân tử hữu cơ nhỏ, lưỡng cực, mà sinh vật biển sâu tích lũy để giữ cho protein không bị áp
+    suất làm bung cấu trúc — chủ yếu là trimethylamine N-oxide, TMAO. Cơ chế khá tinh tế: TMAO bị đẩy ra
+    khỏi lớp nước áo sát protein, và về mặt nhiệt động điều đó ưu ái trạng thái gấp đúng hình. Ở cá xương
+    biển, nồng độ TMAO trong cơ tăng gần như tuyến tính theo độ sâu, tương quan cỡ 0,94. Chính sự tuyến
+    tính đó là cái bẫy: máu cá xương loãng hơn nước biển, nên đường tăng ấy cắt mức 1.100 mOsm/kg của biển
+    ở khoảng 8.200–8.400 m — và đó đúng là độ sâu cuối cùng người ta còn tìm thấy cá xương.
+  en: >-
+    Small zwitterionic organic molecules that deep-sea organisms accumulate to keep pressure from
+    unfolding their proteins — principally trimethylamine N-oxide, TMAO. The mechanism is subtle: TMAO is
+    excluded from a protein's immediate hydration shell, and that exclusion thermodynamically favours the
+    folded state. In marine bony fish, muscle TMAO rises almost linearly with depth, correlating at about
+    0.94. That linearity is the trap: teleost blood is dilute relative to seawater, so the rising line
+    crosses the sea's 1,100 mOsm/kg somewhere around 8,200–8,400 m — which is precisely the depth below
+    which bony fish are no longer found.
+see_also:
+  - hydrostatic-pressure
+  - homeoviscous-adaptation
+  - extremophile
+  - hadal-zone
+category: concept
+tags:
+  - chemistry
+  - physiology
+cover_prompt: >-
+  A single folded protein molecule rendered as a compact glowing cyan ribbon knot, surrounded by a shell
+  of small pale teal molecules held deliberately at a distance from its surface, deep indigo background
+  suggesting immense pressure, painterly molecular naturalist plate, no text, no labels.

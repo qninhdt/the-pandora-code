@@ -10,25 +10,43 @@ import {
 } from "./storage";
 import { createReaderStore, useReaderStore } from "./use-reader-store";
 
+/** Typeface the reading column is set in. Mirrors the three font tiles. */
+export const READER_FONTS = ["sans", "serif", "mono"] as const;
+export type ReaderFont = (typeof READER_FONTS)[number];
+
+/**
+ * Line spacing is three named steps rather than a free slider: readers pick a
+ * feel, not a number, and any value in between is not worth a control.
+ */
+export const READER_LINE_SPACINGS = ["tight", "normal", "loose"] as const;
+export type ReaderLineSpacing = (typeof READER_LINE_SPACINGS)[number];
+export const LINE_SPACING_VALUES: Record<ReaderLineSpacing, number> = {
+  tight: 1.55,
+  normal: 1.8,
+  loose: 2.1,
+};
+
+/** Text size is stepped, so the min/max/step below are the stepper's bounds. */
 export const READER_PREFERENCE_LIMITS = {
-  fontScale: { min: 0.9, max: 1.3, step: 0.05 },
-  lineHeight: { min: 1.4, max: 2.2, step: 0.1 },
-  columnWidth: { min: 60, max: 100, step: 1 },
+  fontScale: { min: 0.85, max: 1.4, step: 0.05 },
 } as const;
 
 export type ReducedMotionPreference = "system" | "reduce" | "no-preference";
 
 export interface ReadingPreferences {
+  fontFamily: ReaderFont;
   fontScale: number;
-  lineHeight: number;
-  columnWidth: number;
+  lineSpacing: ReaderLineSpacing;
+  /** Let the article fill the viewport instead of holding a reading measure. */
+  fullWidth: boolean;
   reducedMotion: ReducedMotionPreference;
 }
 
 export const DEFAULT_READING_PREFERENCES: ReadingPreferences = {
+  fontFamily: "serif",
   fontScale: 1,
-  lineHeight: 1.8,
-  columnWidth: 84,
+  lineSpacing: "normal",
+  fullWidth: false,
   reducedMotion: "system",
 };
 
@@ -38,27 +56,43 @@ function normalizeReducedMotion(value: unknown): ReducedMotionPreference {
     : DEFAULT_READING_PREFERENCES.reducedMotion;
 }
 
+function normalizeFont(value: unknown): ReaderFont {
+  return READER_FONTS.includes(value as ReaderFont)
+    ? (value as ReaderFont)
+    : DEFAULT_READING_PREFERENCES.fontFamily;
+}
+
+/**
+ * Accepts the named steps and, for readers who stored the earlier free-form
+ * `lineHeight` number, the closest step to that number.
+ */
+function normalizeLineSpacing(value: unknown, legacyLineHeight: unknown): ReaderLineSpacing {
+  if (READER_LINE_SPACINGS.includes(value as ReaderLineSpacing)) {
+    return value as ReaderLineSpacing;
+  }
+  if (typeof legacyLineHeight === "number" && Number.isFinite(legacyLineHeight)) {
+    return READER_LINE_SPACINGS.reduce((best, step) =>
+      Math.abs(LINE_SPACING_VALUES[step] - legacyLineHeight) <
+      Math.abs(LINE_SPACING_VALUES[best] - legacyLineHeight)
+        ? step
+        : best,
+    );
+  }
+  return DEFAULT_READING_PREFERENCES.lineSpacing;
+}
+
 export function normalizeReadingPreferences(value: unknown): ReadingPreferences {
   if (!isRecord(value)) return DEFAULT_READING_PREFERENCES;
   return {
+    fontFamily: normalizeFont(value.fontFamily),
     fontScale: clampNumber(
       value.fontScale,
       READER_PREFERENCE_LIMITS.fontScale.min,
       READER_PREFERENCE_LIMITS.fontScale.max,
       DEFAULT_READING_PREFERENCES.fontScale,
     ),
-    lineHeight: clampNumber(
-      value.lineHeight,
-      READER_PREFERENCE_LIMITS.lineHeight.min,
-      READER_PREFERENCE_LIMITS.lineHeight.max,
-      DEFAULT_READING_PREFERENCES.lineHeight,
-    ),
-    columnWidth: clampNumber(
-      value.columnWidth,
-      READER_PREFERENCE_LIMITS.columnWidth.min,
-      READER_PREFERENCE_LIMITS.columnWidth.max,
-      DEFAULT_READING_PREFERENCES.columnWidth,
-    ),
+    lineSpacing: normalizeLineSpacing(value.lineSpacing, value.lineHeight),
+    fullWidth: value.fullWidth === true,
     reducedMotion: normalizeReducedMotion(value.reducedMotion),
   };
 }
@@ -78,9 +112,10 @@ const preferencesStore = createReaderStore<ReadingPreferences>({
   write: (value) =>
     writeReaderStorage(READER_STORAGE_KEYS.preferences, normalizeReadingPreferences(value)),
   equals: (left, right) =>
+    left.fontFamily === right.fontFamily &&
     left.fontScale === right.fontScale &&
-    left.lineHeight === right.lineHeight &&
-    left.columnWidth === right.columnWidth &&
+    left.lineSpacing === right.lineSpacing &&
+    left.fullWidth === right.fullWidth &&
     left.reducedMotion === right.reducedMotion,
 });
 
@@ -100,6 +135,15 @@ export function resetReadingPreferences() {
 
 export function useReadingPreferences(): ReadingPreferences {
   return useReaderStore(preferencesStore);
+}
+
+/** Move text size by whole steps, clamped to the stepper's bounds. */
+export function stepFontScale(direction: 1 | -1) {
+  const { min, max, step } = READER_PREFERENCE_LIMITS.fontScale;
+  const next = getReadingPreferences().fontScale + direction * step;
+  // Round to the step grid so repeated float additions cannot drift.
+  const snapped = Math.round(next / step) * step;
+  setReadingPreferences({ fontScale: Math.min(max, Math.max(min, snapped)) });
 }
 
 /**
@@ -122,8 +166,12 @@ export function useApplyReadingPreferences() {
   useLayoutEffect(() => {
     const root = document.documentElement;
     root.style.setProperty("--reader-font-scale", String(preferences.fontScale));
-    root.style.setProperty("--reader-line-height", String(preferences.lineHeight));
-    root.style.setProperty("--reader-measure", `${preferences.columnWidth}ch`);
+    root.style.setProperty(
+      "--reader-line-height",
+      String(LINE_SPACING_VALUES[preferences.lineSpacing]),
+    );
+    root.dataset.readerFont = preferences.fontFamily;
+    root.dataset.readerWidth = preferences.fullWidth ? "full" : "measure";
     root.dataset.readerMotion = preferences.reducedMotion;
   }, [preferences]);
 

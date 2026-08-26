@@ -1,12 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { GlossaryFrame } from "./shared/frame";
+import { useState } from "react";
 import { ControlSlider } from "./shared/control-slider";
+import { GlossaryFrame } from "./shared/frame";
 import { Readout } from "./shared/readout";
-import { useRafLoop } from "./shared/use-raf-loop";
 import { useInView } from "./shared/use-in-view";
+import { useRafLoop } from "./shared/use-raf-loop";
 
 // Exomoon: a small moon orbits a banded gas giant. As the user shrinks the
 // orbital radius, tidal flexing intensifies — the moon's core glow climbs from
@@ -36,8 +36,7 @@ export default function Exomoon() {
   const moonY = cy + Math.sin(angle) * orbitR * 0.42; // tilted orbit
 
   // Core glow color by heat.
-  const coreColor =
-    heat < 0.33 ? "var(--cyan)" : heat < 0.66 ? "var(--teal)" : "var(--amber)";
+  const coreColor = heat < 0.33 ? "var(--cyan)" : heat < 0.66 ? "var(--teal)" : "var(--amber)";
   const stateLabel = heat < 0.33 ? t("cold") : heat < 0.66 ? t("warm") : t("molten");
 
   return (
@@ -81,14 +80,7 @@ export default function Exomoon() {
 
           {/* Starfield */}
           {STARS.map((s, i) => (
-            <circle
-              key={i}
-              cx={s.x}
-              cy={s.y}
-              r={s.r}
-              fill="var(--foreground)"
-              opacity={s.o}
-            />
+            <circle key={i} cx={s.x} cy={s.y} r={s.r} fill="var(--foreground)" opacity={s.o} />
           ))}
 
           {/* Gas giant — large, banded, fills upper-right */}
@@ -106,7 +98,14 @@ export default function Exomoon() {
               />
             ))}
             {/* terminator shadow */}
-            <circle cx="74" cy="40" r="34" fill="#070912" opacity="0.34" transform="translate(-7 4)" />
+            <circle
+              cx="74"
+              cy="40"
+              r="34"
+              fill="#070912"
+              opacity="0.34"
+              transform="translate(-7 4)"
+            />
           </g>
 
           {/* Orbit path */}
@@ -123,7 +122,13 @@ export default function Exomoon() {
           />
 
           {/* Moon with heat halo */}
-          <circle cx={moonX} cy={moonY} r="9" fill="url(#exo-moon-core)" opacity={0.3 + heat * 0.7} />
+          <circle
+            cx={moonX}
+            cy={moonY}
+            r="9"
+            fill="url(#exo-moon-core)"
+            opacity={0.3 + heat * 0.7}
+          />
           <circle
             cx={moonX}
             cy={moonY}
@@ -135,7 +140,9 @@ export default function Exomoon() {
           {/* molten cracks at high heat */}
           {heat > 0.45 && (
             <g stroke={coreColor} strokeWidth={0.4} opacity={(heat - 0.45) * 1.8} fill="none">
-              <path d={`M${moonX - 2},${moonY - 1} L${moonX},${moonY} L${moonX + 1.5},${moonY - 1.8}`} />
+              <path
+                d={`M${moonX - 2},${moonY - 1} L${moonX},${moonY} L${moonX + 1.5},${moonY - 1.8}`}
+              />
               <path d={`M${moonX - 1},${moonY + 2} L${moonX + 0.5},${moonY + 0.5}`} />
             </g>
           )}

@@ -1,8 +1,4 @@
 import { ChaptersLibrary } from "@/components/chapters/chapters-library";
-import {
-  ContinueReadingCard,
-  type ContinueReadingItem,
-} from "@/components/reading/continue-reading-card";
 import { JsonLd } from "@/components/seo/json-ld";
 import { type Locale, isLocale } from "@/i18n/config";
 import { listPublishedChapters } from "@/lib/content/loader/chapter-loader";
@@ -83,16 +79,6 @@ export default async function ChaptersPage({ params }: ChaptersPageProps) {
       };
     }),
   }));
-  const continueItems: ContinueReadingItem[] = parts
-    .flatMap((part) => part.chapters)
-    .filter((chapter) => chapter.published)
-    .map((chapter) => ({
-      locale: loc,
-      slug: chapter.slug,
-      title: chapter.title,
-      href: chapter.href,
-    }));
-
   return (
     <>
       <JsonLd
@@ -101,9 +87,6 @@ export default async function ChaptersPage({ params }: ChaptersPageProps) {
           { name: t("nav.chapters"), item: `/${loc}/chapters` },
         ])}
       />
-      <div className="pt-24">
-        <ContinueReadingCard items={continueItems} label={t("chapter.continueReading")} />
-      </div>
       <ChaptersLibrary
         title={t("page.chapters.title")}
         subtitle={t("page.chapters.subtitle")}

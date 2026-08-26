@@ -128,8 +128,20 @@ export default function TidalLocking() {
               strokeWidth="0.5"
             />
             {/* bulge tips highlighted */}
-            <circle cx={MOON_R + 1} cy="0" r="1.6" fill={locked ? "var(--teal)" : "var(--amber)"} opacity="0.7" />
-            <circle cx={-(MOON_R + 1)} cy="0" r="1.6" fill={locked ? "var(--teal)" : "var(--amber)"} opacity="0.7" />
+            <circle
+              cx={MOON_R + 1}
+              cy="0"
+              r="1.6"
+              fill={locked ? "var(--teal)" : "var(--amber)"}
+              opacity="0.7"
+            />
+            <circle
+              cx={-(MOON_R + 1)}
+              cy="0"
+              r="1.6"
+              fill={locked ? "var(--teal)" : "var(--amber)"}
+              opacity="0.7"
+            />
           </g>
 
           {/* line from moon center to giant (reference) */}

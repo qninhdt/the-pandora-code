@@ -60,6 +60,19 @@
   --reader-font-scale: 1;
   --reader-line-height: 1.8;
   --reader-measure: 84ch;
+  /* Resolved from [data-reader-font] below so the article can inherit one
+     variable instead of branching on the attribute at every rule. */
+  --reader-font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+}
+
+[data-reader-font="sans"] {
+  --reader-font-family: var(--font-sans), system-ui, sans-serif;
+}
+[data-reader-font="serif"] {
+  --reader-font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+}
+[data-reader-font="mono"] {
+  --reader-font-family: var(--font-mono), ui-monospace, "SF Mono", Menlo, monospace;
 }
 
 @theme inline {
@@ -87,6 +100,7 @@
   --font-sans: var(--font-sans);
   --font-display: var(--font-display);
   --font-serif: var(--font-serif);
+  --font-mono: var(--font-mono);
 }
 
 html {
@@ -141,19 +155,17 @@ html {
 }
 
 /* A persisted override is applied by ReadingPreferencesProvider. Keep the
-   CSS fallback useful before React mounts, while motion primitives also read
-   the same preference through useReducedMotionSafe. */
+   scene fallback useful before React mounts; interactive figures do not read
+   this attribute for their controls. */
 [data-reader-motion="reduce"] {
   scroll-behavior: auto;
 }
 
-[data-reader-motion="reduce"] *,
-[data-reader-motion="reduce"] *::before,
-[data-reader-motion="reduce"] *::after {
-  animation-duration: 0.01ms !important;
-  animation-iteration-count: 1 !important;
-  scroll-behavior: auto !important;
-  transition-duration: 0.01ms !important;
+/* The reader switch only calms the ambient fallback that replaces WebGL. Do
+   not blanket-disable descendants: chapter figures must keep their sliders,
+   controls, and state transitions usable. */
+[data-reader-motion="reduce"] .atmosphere-motes {
+  animation: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -270,9 +282,27 @@ a:hover {
 /* Preference variables are intentionally scoped to the article root. A
    related-materials footer or a chapter list must keep the site typography. */
 .prose-pandora[data-reading-root] {
+  font-family: var(--reader-font-family);
   font-size: calc(1.125rem * var(--reader-font-scale, 1));
   line-height: var(--reader-line-height, 1.8);
   max-width: var(--reader-measure, 84ch);
+}
+
+/* Monospace runs wider per character; hold a shorter measure so lines do not
+   overrun a comfortable reading length. */
+[data-reader-font="mono"] .prose-pandora[data-reading-root] {
+  font-size: calc(1.0625rem * var(--reader-font-scale, 1));
+  max-width: calc(var(--reader-measure, 84ch) * 0.82);
+}
+
+/* Full-width drops the measure on the article and widens the reading column
+   itself, so figures and prose both use the viewport. */
+[data-reader-width="full"] .prose-pandora[data-reading-root] {
+  max-width: none;
+}
+
+[data-reader-width="full"] .reading-column {
+  max-width: none;
 }
 
 .prose-pandora > * + * {

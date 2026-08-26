@@ -5,9 +5,9 @@ import type { LocalizedGlossaryTerm } from "@/lib/content/loader/glossary-loader
 import { GLOSSARY_TAGS, glossaryTagLabel } from "@/lib/content/schemas/glossary-tags";
 import { cn } from "@/lib/utils";
 import { ChevronDown, Search } from "lucide-react";
+import { useLocale } from "next-intl";
 import { useMemo, useState } from "react";
 import { GlossaryCard } from "./glossary-card";
-import { useLocale } from "next-intl";
 
 interface GlossaryBrowserProps {
   terms: LocalizedGlossaryTerm[];

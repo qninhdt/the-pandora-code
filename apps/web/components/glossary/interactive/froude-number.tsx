@@ -37,9 +37,26 @@ export default function FroudeNumber() {
           role="img"
           aria-label={t("title")}
         >
-          <rect x="8" y="40" width="84" height="28" rx="2" fill="var(--surface)" stroke="var(--border-strong)" strokeWidth="0.5" />
+          <rect
+            x="8"
+            y="40"
+            width="84"
+            height="28"
+            rx="2"
+            fill="var(--surface)"
+            stroke="var(--border-strong)"
+            strokeWidth="0.5"
+          />
           {/* water line */}
-          <line x1="8" y1="52" x2="92" y2="52" stroke="var(--cyan)" strokeWidth="0.6" opacity="0.5" />
+          <line
+            x1="8"
+            y1="52"
+            x2="92"
+            y2="52"
+            stroke="var(--cyan)"
+            strokeWidth="0.6"
+            opacity="0.5"
+          />
           {/* creature */}
           <ellipse cx={20 + speed * 18} cy="50" rx="8" ry="3.5" fill="var(--teal)" opacity="0.9" />
           {/* bow wave height ~ waveDrag */}
@@ -53,7 +70,12 @@ export default function FroudeNumber() {
           {/* Fr meter */}
           <line x1="12" y1="82" x2="88" y2="82" stroke="var(--border-strong)" strokeWidth="0.6" />
           <circle cx={12 + Math.min(fr, 2) * 38} cy="82" r="3" fill="var(--cyan)" />
-          <text x="50" y="92" textAnchor="middle" style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="50"
+            y="92"
+            textAnchor="middle"
+            style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             Fr = 1
           </text>
           <line x1="50" y1="78" x2="50" y2="86" stroke="var(--amber)" strokeWidth="0.7" />

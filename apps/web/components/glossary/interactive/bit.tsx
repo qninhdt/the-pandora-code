@@ -14,10 +14,7 @@ export default function Bit() {
   const [bits, setBits] = useState<number[]>(() => Array(N).fill(0));
 
   const total = bits.length;
-  const value = useMemo(
-    () => bits.reduce((acc, b, i) => acc + b * 2 ** (N - 1 - i), 0),
-    [bits],
-  );
+  const value = useMemo(() => bits.reduce((acc, b, i) => acc + b * 2 ** (N - 1 - i), 0), [bits]);
   const pattern = bits.join("");
 
   const flip = (i: number) => {

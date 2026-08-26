@@ -106,7 +106,14 @@ export default function SynchronousRotation() {
           />
 
           {/* moon body */}
-          <circle cx={moonX} cy={moonY} r={MOON_R} fill="#243247" stroke="var(--border-strong)" strokeWidth="0.4" />
+          <circle
+            cx={moonX}
+            cy={moonY}
+            r={MOON_R}
+            fill="#243247"
+            stroke="var(--border-strong)"
+            strokeWidth="0.4"
+          />
           {/* near side (faces planet) */}
           <circle cx={nearX} cy={nearY} r="2" fill="var(--cyan)" />
           {/* far side (hidden hemisphere) */}

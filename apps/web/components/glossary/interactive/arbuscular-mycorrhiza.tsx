@@ -19,20 +19,48 @@ export default function ArbuscularMycorrhiza() {
       onReset={() => setLinked(true)}
       allowFullscreen={false}
       caption={
-        <span className={linked ? "text-teal" : "text-magenta"}>
-          {linked ? t("on") : t("off")}
-        </span>
+        <span className={linked ? "text-teal" : "text-magenta"}>{linked ? t("on") : t("off")}</span>
       }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {/* root cell wall */}
-          <ellipse cx="50" cy="48" rx="28" ry="22" fill="var(--surface)" stroke="var(--cyan)" strokeWidth="1.2" opacity={0.85} />
-          <ellipse cx="50" cy="48" rx="22" ry="16" fill="none" stroke="var(--border-strong)" strokeWidth="0.5" strokeDasharray="2 1.5" />
+          <ellipse
+            cx="50"
+            cy="48"
+            rx="28"
+            ry="22"
+            fill="var(--surface)"
+            stroke="var(--cyan)"
+            strokeWidth="1.2"
+            opacity={0.85}
+          />
+          <ellipse
+            cx="50"
+            cy="48"
+            rx="22"
+            ry="16"
+            fill="none"
+            stroke="var(--border-strong)"
+            strokeWidth="0.5"
+            strokeDasharray="2 1.5"
+          />
           {/* nucleus */}
           <circle cx="58" cy="44" r="4" fill="var(--amber)" opacity={0.55} />
           {/* fungal entry hypha */}
-          <path d="M8 70 C 22 66, 30 60, 36 54" fill="none" stroke="var(--teal)" strokeWidth="1.4" opacity={linked ? 0.9 : 0.25} />
+          <path
+            d="M8 70 C 22 66, 30 60, 36 54"
+            fill="none"
+            stroke="var(--teal)"
+            strokeWidth="1.4"
+            opacity={linked ? 0.9 : 0.25}
+          />
           {/* arbuscule tree inside cell */}
           {linked && (
             <g stroke="var(--teal)" strokeWidth="0.9" fill="none" opacity={0.95}>
@@ -61,7 +89,12 @@ export default function ArbuscularMycorrhiza() {
           {/* exchange arrows */}
           {linked && (
             <g style={{ fontSize: 2.4, fontFamily: "monospace" }}>
-              <path d="M70 38 L82 30" stroke="var(--amber)" strokeWidth="0.8" markerEnd="url(#am-p)" />
+              <path
+                d="M70 38 L82 30"
+                stroke="var(--amber)"
+                strokeWidth="0.8"
+                markerEnd="url(#am-p)"
+              />
               <text x="84" y="30" fill="var(--amber)">
                 {t("phosphorus")}
               </text>
@@ -78,10 +111,18 @@ export default function ArbuscularMycorrhiza() {
           </defs>
         </svg>
         <div className="absolute right-3 top-14">
-          <Readout label={t("exchange")} value={linked ? t("on") : t("off")} accent={linked ? "teal" : "magenta"} />
+          <Readout
+            label={t("exchange")}
+            value={linked ? t("on") : t("off")}
+            accent={linked ? "teal" : "magenta"}
+          />
         </div>
         <div className="absolute inset-x-3 bottom-10 flex justify-center">
-          <ControlButton variant={linked ? "active" : "default"} onClick={() => setLinked((v) => !v)} aria-label={t("symbiosis")}>
+          <ControlButton
+            variant={linked ? "active" : "default"}
+            onClick={() => setLinked((v) => !v)}
+            aria-label={t("symbiosis")}
+          >
             <span className="px-1 text-[11px] uppercase tracking-wider">{t("symbiosis")}</span>
           </ControlButton>
         </div>

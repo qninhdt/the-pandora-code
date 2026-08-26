@@ -16,10 +16,10 @@ export default function PowerCurve() {
     const points: { v: number; p: number }[] = [];
     for (let v = 0.4; v <= 4; v += 0.15) {
       // induced ~ 1/v, parasite ~ v³, scaled by loading & mass
-      const p = mass * (loading * 1.2) / v + 0.15 * mass * v ** 3;
+      const p = (mass * (loading * 1.2)) / v + 0.15 * mass * v ** 3;
       points.push({ v, p });
     }
-    let minP = Infinity;
+    let minP = Number.POSITIVE_INFINITY;
     let vminLocal = 1;
     for (const pt of points) {
       if (pt.p < minP) {
@@ -28,7 +28,7 @@ export default function PowerCurve() {
       }
     }
     // max range ~ min of P/v
-    let best = Infinity;
+    let best = Number.POSITIVE_INFINITY;
     let vrangeLocal = 1;
     for (const pt of points) {
       const pv = pt.p / pt.v;
@@ -107,8 +107,26 @@ export default function PowerCurve() {
         </div>
 
         <div className="absolute inset-x-3 bottom-10 flex flex-col gap-1.5">
-          <ControlSlider label={t("loading")} value={loading} min={0.5} max={2.5} step={0.05} display={loading.toFixed(2)} onChange={setLoading} thumb="cyan" />
-          <ControlSlider label={t("mass")} value={mass} min={0.5} max={2.5} step={0.05} display={mass.toFixed(2)} onChange={setMass} thumb="teal" />
+          <ControlSlider
+            label={t("loading")}
+            value={loading}
+            min={0.5}
+            max={2.5}
+            step={0.05}
+            display={loading.toFixed(2)}
+            onChange={setLoading}
+            thumb="cyan"
+          />
+          <ControlSlider
+            label={t("mass")}
+            value={mass}
+            min={0.5}
+            max={2.5}
+            step={0.05}
+            display={mass.toFixed(2)}
+            onChange={setMass}
+            thumb="teal"
+          />
         </div>
       </div>
     </GlossaryFrame>

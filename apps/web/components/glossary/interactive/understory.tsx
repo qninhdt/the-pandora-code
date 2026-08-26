@@ -40,7 +40,13 @@ export default function Understory() {
       }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {/* canopy lid with gap */}
           <rect x="8" y="12" width="84" height="16" fill="var(--teal)" opacity={0.4} />
           <rect
@@ -67,24 +73,78 @@ export default function Understory() {
           ))}
           {/* shade-tolerant plant */}
           <g>
-            <rect x="28" y="58" width="2.5" height="16" fill="var(--cyan)" opacity={0.4 + shadeFit * 0.5} />
-            <ellipse cx="29" cy="56" rx={6 + shadeFit * 4} ry={4 + shadeFit * 2} fill="var(--teal)" opacity={0.35 + shadeFit * 0.5} />
-            <text x="29" y="80" textAnchor="middle" style={{ fontSize: 2.1, fontFamily: "monospace", fill: shadeFit > 0.5 ? "var(--teal)" : "var(--magenta)" }}>
+            <rect
+              x="28"
+              y="58"
+              width="2.5"
+              height="16"
+              fill="var(--cyan)"
+              opacity={0.4 + shadeFit * 0.5}
+            />
+            <ellipse
+              cx="29"
+              cy="56"
+              rx={6 + shadeFit * 4}
+              ry={4 + shadeFit * 2}
+              fill="var(--teal)"
+              opacity={0.35 + shadeFit * 0.5}
+            />
+            <text
+              x="29"
+              y="80"
+              textAnchor="middle"
+              style={{
+                fontSize: 2.1,
+                fontFamily: "monospace",
+                fill: shadeFit > 0.5 ? "var(--teal)" : "var(--magenta)",
+              }}
+            >
               {t("shade")}
             </text>
           </g>
           {/* sun plant */}
           <g>
-            <rect x="68" y="58" width="2.5" height="16" fill="var(--cyan)" opacity={0.3 + sunFit * 0.5} />
-            <ellipse cx="69" cy="56" rx={5 + sunFit * 5} ry={3 + sunFit * 3} fill="var(--amber)" opacity={0.3 + sunFit * 0.55} />
-            <text x="69" y="80" textAnchor="middle" style={{ fontSize: 2.1, fontFamily: "monospace", fill: sunFit > 0.5 ? "var(--amber)" : "var(--magenta)" }}>
+            <rect
+              x="68"
+              y="58"
+              width="2.5"
+              height="16"
+              fill="var(--cyan)"
+              opacity={0.3 + sunFit * 0.5}
+            />
+            <ellipse
+              cx="69"
+              cy="56"
+              rx={5 + sunFit * 5}
+              ry={3 + sunFit * 3}
+              fill="var(--amber)"
+              opacity={0.3 + sunFit * 0.55}
+            />
+            <text
+              x="69"
+              y="80"
+              textAnchor="middle"
+              style={{
+                fontSize: 2.1,
+                fontFamily: "monospace",
+                fill: sunFit > 0.5 ? "var(--amber)" : "var(--magenta)",
+              }}
+            >
               {t("sun")}
             </text>
           </g>
         </svg>
         <div className="absolute right-3 top-14 space-y-1">
-          <Readout label={t("shade")} value={shadeFit > 0.5 ? t("thrive") : t("stress")} accent={shadeFit > 0.5 ? "teal" : "magenta"} />
-          <Readout label={t("sun")} value={sunFit > 0.5 ? t("thrive") : t("stress")} accent={sunFit > 0.5 ? "amber" : "magenta"} />
+          <Readout
+            label={t("shade")}
+            value={shadeFit > 0.5 ? t("thrive") : t("stress")}
+            accent={shadeFit > 0.5 ? "teal" : "magenta"}
+          />
+          <Readout
+            label={t("sun")}
+            value={sunFit > 0.5 ? t("thrive") : t("stress")}
+            accent={sunFit > 0.5 ? "amber" : "magenta"}
+          />
         </div>
         <div className="absolute inset-x-3 bottom-10">
           <ControlSlider

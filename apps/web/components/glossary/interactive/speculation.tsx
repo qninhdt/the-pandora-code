@@ -91,11 +91,7 @@ export default function Speculation() {
                     ? "var(--amber)"
                     : "var(--magenta)";
             return (
-              <g
-                key={c.id}
-                onClick={() => cycle(i)}
-                style={{ cursor: "pointer" }}
-              >
+              <g key={c.id} onClick={() => cycle(i)} style={{ cursor: "pointer" }}>
                 <circle
                   cx={x}
                   cy={y}

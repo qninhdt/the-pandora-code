@@ -41,12 +41,38 @@ export default function KleibersLaw() {
           <line x1="16" y1="78" x2="88" y2="78" stroke="var(--border-strong)" strokeWidth="0.6" />
           <line x1="16" y1="78" x2="16" y2="18" stroke="var(--border-strong)" strokeWidth="0.6" />
           {/* 3/4 line */}
-          <line x1="16" y1="78" x2="88" y2={78 - 56} stroke="var(--teal)" strokeWidth="1" opacity="0.7" />
-          <circle cx={x} cy={yPt} r="3.2" fill="var(--cyan)" stroke="var(--border-strong)" strokeWidth="0.4" />
-          <text x="52" y="90" textAnchor="middle" style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <line
+            x1="16"
+            y1="78"
+            x2="88"
+            y2={78 - 56}
+            stroke="var(--teal)"
+            strokeWidth="1"
+            opacity="0.7"
+          />
+          <circle
+            cx={x}
+            cy={yPt}
+            r="3.2"
+            fill="var(--cyan)"
+            stroke="var(--border-strong)"
+            strokeWidth="0.4"
+          />
+          <text
+            x="52"
+            y="90"
+            textAnchor="middle"
+            style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("mass")} (log)
           </text>
-          <text x="10" y="48" textAnchor="middle" transform="rotate(-90 10 48)" style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="10"
+            y="48"
+            textAnchor="middle"
+            transform="rotate(-90 10 48)"
+            style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("metab")}
           </text>
         </svg>

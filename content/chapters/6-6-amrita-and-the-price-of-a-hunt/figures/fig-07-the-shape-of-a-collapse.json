@@ -1,0 +1,34 @@
+{
+  "id": "fig-07-the-shape-of-a-collapse",
+  "chapter_slug": "amrita-and-the-price-of-a-hunt",
+  "role": "diagram",
+  "narrative_purpose": "Shows serial depletion as a shape rather than a statistic: fleets took the largest animals first and then moved down the size ladder, so the survivors of an industry are systematically the small ones.",
+  "subject": "Four whale-like animal shapes arranged in a row across a dim seascape, each dramatically smaller than the one to its left. The leftmost and largest is drawn only as a faint hollow outline with nothing filled in, barely present. The second is a partial outline with some of its body filled in solid. The third is mostly solid. The fourth and smallest, at the right, is fully solid and clearly rendered. All four float at the same depth just below a pale surface, evenly spaced. Beneath each of the two leftmost shapes, a scattering of pale sunken bone fragments lies on a dim seafloor.",
+  "scene": "Wide dim underwater expanse with a faint pale surface above and a barely visible seafloor below.",
+  "camera": "Wide flat side-on view, all four animals in one row at equal depth.",
+  "light": "Faint diffuse light from the surface above, the solid smaller animals catching more of it, the large hollow outline almost lost in haze.",
+  "palette": "Void indigo water, deep teal midwater, pale grey bone fragments, faint cyan edge light on the solid shapes.",
+  "style": "Painterly naturalist plate, atmospheric and quiet, not a chart or size-comparison infographic.",
+  "detail_level": "Crisp on the smallest solid animal and the bone fragments; the largest deliberately faint and dissolving into haze; open dark water above the row for callouts.",
+  "composition": "Single horizontal row of four decreasing shapes across the middle band, wide open dim water along the top and bottom edges for overlay labels.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "measuring rules",
+    "size comparison bars",
+    "silhouette charts",
+    "vector infographic look"
+  ],
+  "consistency_notes": "The progressive emptying from left to right must read as absence rather than as distance - the largest is faint because it is gone, not because it is far away.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no measuring rules, no comparison bars, no chart look, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

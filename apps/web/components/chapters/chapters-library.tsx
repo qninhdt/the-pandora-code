@@ -18,6 +18,8 @@ interface ChaptersLibraryProps {
   subtitle: string;
   parts: LibraryPart[];
   totals: { done: number; total: number; totalReadingMin: number };
+  /** "Continue reading" bar, placed under the header inside the page container. */
+  continueReading?: React.ReactNode;
   labels: {
     search: string;
     allParts: string;
@@ -38,7 +40,7 @@ type StatusFilter = "all" | "published" | "coming";
 // Strip diacritics + lowercase so a search for "eywa" matches "Eywa" and
 // VI accents don't block matches.
 function normalize(s: string): string {
-  return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/đ/g, "d");
+  return s.toLowerCase().normalize("NFD").replace(/\p{M}/gu, "").replace(/đ/g, "d");
 }
 
 export function ChaptersLibrary({
@@ -46,6 +48,7 @@ export function ChaptersLibrary({
   subtitle,
   parts,
   totals,
+  continueReading,
   labels,
 }: ChaptersLibraryProps) {
   const [query, setQuery] = useState("");
@@ -119,6 +122,8 @@ export function ChaptersLibrary({
           </div>
         </header>
       </FadeInOnScroll>
+
+      {continueReading ? <div className="mb-8">{continueReading}</div> : null}
 
       {/* filter bar — not sticky: a second sticky layer fought the jump-rail
           and slid under it on scroll. Lives inline in the scroll flow. */}

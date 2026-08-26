@@ -36,7 +36,13 @@ interface RegimeSpec {
 }
 
 const REGIMES: Record<Regime, RegimeSpec> = {
-  sterilized: { tone: "var(--magenta)", legacies: 2, rate: 0.006, ceiling: 0.22, yearsToCanopy: null },
+  sterilized: {
+    tone: "var(--magenta)",
+    legacies: 2,
+    rate: 0.006,
+    ceiling: 0.22,
+    yearsToCanopy: null,
+  },
   blast: { tone: "var(--amber)", legacies: 46, rate: 0.05, ceiling: 0.92, yearsToCanopy: 30 },
   ashfall: { tone: "var(--teal)", legacies: 88, rate: 0.42, ceiling: 0.98, yearsToCanopy: 3 },
 };
@@ -122,7 +128,14 @@ export function SuccessionArrestExplorer({ caption, className }: SuccessionArres
           </VizText>
 
           {/* axes */}
-          <line x1={PAD_L} y1={PAD_T} x2={PAD_L} y2={PAD_T + PLOT_H} stroke="var(--border-strong)" strokeWidth={1} />
+          <line
+            x1={PAD_L}
+            y1={PAD_T}
+            x2={PAD_L}
+            y2={PAD_T + PLOT_H}
+            stroke="var(--border-strong)"
+            strokeWidth={1}
+          />
           <line
             x1={PAD_L}
             y1={PAD_T + PLOT_H}
@@ -147,7 +160,13 @@ export function SuccessionArrestExplorer({ caption, className }: SuccessionArres
           ))}
 
           {/* end-of-span marker on the active curve */}
-          <circle cx={px(YEARS)} cy={py(coverNow)} r={5} fill={spec.tone} filter={glowUrl(uid, "bloom")} />
+          <circle
+            cx={px(YEARS)}
+            cy={py(coverNow)}
+            r={5}
+            fill={spec.tone}
+            filter={glowUrl(uid, "bloom")}
+          />
 
           {/* axis labels */}
           <VizText x={PAD_L + PLOT_W / 2} y={H - 6} size="micro" tone="subtle" anchor="middle">
@@ -166,13 +185,23 @@ export function SuccessionArrestExplorer({ caption, className }: SuccessionArres
           <VizText x={PAD_L} y={PAD_T + PLOT_H + 14} size="micro" tone="subtle" anchor="start">
             0
           </VizText>
-          <VizText x={PAD_L + PLOT_W} y={PAD_T + PLOT_H + 14} size="micro" tone="subtle" anchor="end">
+          <VizText
+            x={PAD_L + PLOT_W}
+            y={PAD_T + PLOT_H + 14}
+            size="micro"
+            tone="subtle"
+            anchor="end"
+          >
             {t("yearsMax")}
           </VizText>
         </svg>
 
         <div className="flex w-full flex-col gap-2 md:w-2/5">
-          <VizReadout label={t("readout.legacies")} value={t(`legacyLevel.${regime}`)} tone={spec.tone} />
+          <VizReadout
+            label={t("readout.legacies")}
+            value={t(`legacyLevel.${regime}`)}
+            tone={spec.tone}
+          />
           <VizReadout
             label={t("readout.cover")}
             value={`${Math.round(coverNow * 100)}%`}
@@ -180,7 +209,9 @@ export function SuccessionArrestExplorer({ caption, className }: SuccessionArres
           />
           <VizReadout
             label={t("readout.canopy")}
-            value={spec.yearsToCanopy === null ? t("never") : t("yearsValue", { n: spec.yearsToCanopy })}
+            value={
+              spec.yearsToCanopy === null ? t("never") : t("yearsValue", { n: spec.yearsToCanopy })
+            }
             note={t(`verdict.${regime}`)}
             tone={spec.tone}
             tinted

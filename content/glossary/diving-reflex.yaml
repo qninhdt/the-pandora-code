@@ -1,0 +1,32 @@
+id: diving-reflex
+label:
+  vi: Phản xạ lặn ở động vật có vú
+  en: Mammalian diving reflex
+definition:
+  vi: >-
+    Một phản xạ tự động cổ xưa, có ở mọi loài thú kể cả con người, khởi động khi mặt tiếp xúc nước
+    lạnh và hơi thở bị nín lại. Dây thần kinh sinh ba trên mặt báo về hành não, và hành não đáp lại
+    bằng ba việc cùng lúc: tim đập chậm lại, mạch máu ở da và cơ co thắt để dồn máu về tim và não,
+    còn máu ở ngoại vi bị áp suất đẩy vào lồng ngực. Ở người, nhịp tim giảm 15–40%; ở hải cẩu và cá
+    voi, hơn 85%. Điều đáng chú ý là phản xạ này không phải thứ phải học — nó đã có sẵn trong cơ thể
+    mọi người, và việc luyện tập chỉ khiến nó đến sớm hơn, sâu hơn.
+  en: >-
+    An ancient automatic reflex present in every mammal, humans included, triggered when cold water
+    touches the face and the breath is held. The trigeminal nerve carries the signal to the medulla,
+    which answers with three things at once: the heart slows, vessels in skin and muscle clamp down
+    to reserve blood for heart and brain, and peripheral blood is pushed by pressure into the chest.
+    In humans the heart rate falls 15–40%; in seals and whales, by more than 85%. What matters is
+    that the reflex is not learned — it is already in every body, and training only makes it arrive
+    sooner and go deeper.
+see_also:
+  - splenic-contraction
+  - aerobic-dive-limit
+  - acclimatization
+  - countercurrent-exchange
+category: bio
+tags:
+  - physiology
+cover_prompt: >-
+  A painterly study of a face just below a dark water surface, eyes closed, faint cool light on the
+  cheekbones, and beneath the skin a suggestion of glowing vessels drawing inward toward the chest
+  while the limbs fade into shadow, deep indigo and teal, no text, no labels, no numbers.

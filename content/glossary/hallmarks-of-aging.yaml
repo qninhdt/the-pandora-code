@@ -1,0 +1,38 @@
+id: hallmarks-of-aging
+label:
+  vi: Các dấu hiệu đặc trưng của lão hóa
+  en: Hallmarks of aging
+definition:
+  vi: >-
+    Bộ khung phân loại chia lão hóa sinh học thành khoảng một chục quá trình tổn hại có liên hệ với
+    nhau, thay vì coi nó là một đồng hồ đơn lẻ. Nhóm nguyên nhân gồm mất ổn định bộ gene, telomere
+    bị bào mòn, biến đổi biểu sinh, mất khả năng giữ protein đúng hình và suy giảm việc dọn dẹp bào
+    quan hỏng. Nhóm phản ứng gồm cảm nhận dinh dưỡng bị lệch, ty thể suy yếu và lão hóa tế bào.
+    Nhóm hậu quả hệ thống gồm cạn kiệt tế bào gốc, mất phối hợp tín hiệu giữa các tế bào, viêm âm ỉ
+    kéo dài và mất cân bằng hệ vi sinh vật. Giá trị của cách phân loại này nằm ở chỗ nó cho thấy vì
+    sao một phân tử duy nhất khó mà chặn được lão hóa: muốn dừng hẳn thì phải trung hòa đồng thời
+    nhiều đường tổn hại độc lập ở mọi dòng tế bào.
+  en: >-
+    A classification framework that breaks biological aging into roughly a dozen interconnected damage
+    processes rather than treating it as one clock. The causes include genomic instability, telomere
+    attrition, epigenetic drift, loss of the machinery that keeps proteins correctly folded, and
+    declining clearance of damaged organelles. The responses include deranged nutrient sensing,
+    failing mitochondria, and cellular senescence. The systemic consequences include stem-cell
+    exhaustion, loss of coordinated signalling between cells, chronic low-grade inflammation, and
+    microbiome imbalance. The value of the framework is that it shows why a single molecule is
+    unlikely to halt aging: stopping it outright would mean neutralising several independent damage
+    pathways at once, across every cell lineage.
+see_also:
+  - cellular-senescence
+  - senolytic
+  - epigenetic-clock
+  - gompertz-makeham-law
+category: concept
+tags:
+  - pharmacology
+  - physiology
+cover_prompt: >-
+  A painterly anatomical plate arranged as a wheel of a dozen small vignettes around a single dim
+  human silhouette, each vignette showing a different failing structure - a frayed chromosome end, a
+  tangled protein clump, a dark shrivelled mitochondrion, an empty stem-cell niche - cool teal and
+  indigo with faint amber decay accents, painterly naturalist plate, no text, no labels.

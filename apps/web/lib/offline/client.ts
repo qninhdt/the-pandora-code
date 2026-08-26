@@ -1,3 +1,4 @@
+import { isOwnedOfflineCache } from "./cache-names";
 import { getChapterRecord, listChapterRecords } from "./db";
 import {
   OFFLINE_PROTOCOL_VERSION,
@@ -10,8 +11,39 @@ import {
 export const SERVICE_WORKER_URL = "/serwist/sw.js";
 export const SERVICE_WORKER_SCOPE = "/";
 
-export function isOfflineSupported(): boolean {
+const isDevelopment = process.env.NODE_ENV === "development";
+
+function hasOfflineApis(): boolean {
   return typeof window !== "undefined" && "serviceWorker" in navigator && "caches" in window;
+}
+
+export function isOfflineSupported(): boolean {
+  // A development build must never own the browser's asset cache. Next's dev
+  // chunk URLs are not immutable, so cache-first would make HMR/reloads serve
+  // yesterday's JavaScript until the developer clears site data.
+  return !isDevelopment && hasOfflineApis();
+}
+
+/** Remove a worker/cache left by an older dev session after the PWA was enabled. */
+export async function clearDevelopmentOfflineState(): Promise<boolean> {
+  if (!isDevelopment || !hasOfflineApis()) return false;
+
+  let changed = false;
+  const scope = new URL(SERVICE_WORKER_SCOPE, window.location.href).href;
+  const registrations = await navigator.serviceWorker.getRegistrations();
+  for (const registration of registrations) {
+    const scriptUrl =
+      registration.active?.scriptURL ??
+      registration.waiting?.scriptURL ??
+      registration.installing?.scriptURL;
+    if (registration.scope !== scope && !scriptUrl?.endsWith(SERVICE_WORKER_URL)) continue;
+    changed = (await registration.unregister()) || changed;
+  }
+
+  for (const name of await caches.keys()) {
+    if (isOwnedOfflineCache(name)) changed = (await caches.delete(name)) || changed;
+  }
+  return changed;
 }
 
 export async function registerOfflineWorker(): Promise<ServiceWorkerRegistration | null> {
@@ -19,6 +51,10 @@ export async function registerOfflineWorker(): Promise<ServiceWorkerRegistration
   const registration = await navigator.serviceWorker.register(SERVICE_WORKER_URL, {
     scope: SERVICE_WORKER_SCOPE,
   });
+  // `register()` can return an existing registration without performing a
+  // timely update check. Ask the browser explicitly so a new deploy is found
+  // during the current visit instead of waiting for a future navigation.
+  await registration.update().catch(() => undefined);
   await navigator.serviceWorker.ready;
   return registration;
 }

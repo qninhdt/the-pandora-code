@@ -30,21 +30,46 @@ export default function CulturalKeystoneSpecies() {
       infoText={t("info")}
       onReset={() => setPresent(true)}
       allowFullscreen={false}
-      caption={<span style={{ color: tone }}>{present ? t("verdictPresent") : t("verdictGone")}</span>}
+      caption={
+        <span style={{ color: tone }}>{present ? t("verdictPresent") : t("verdictGone")}</span>
+      }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 78" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 78"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {/* the species at the centre, or its absence */}
           {present ? (
             <g>
-              <line x1="50" y1="52" x2="50" y2="28" stroke={tone} strokeWidth="2.6" strokeLinecap="round" opacity={0.9}
-                style={{ filter: `drop-shadow(0 0 4px ${tone})` }} />
+              <line
+                x1="50"
+                y1="52"
+                x2="50"
+                y2="28"
+                stroke={tone}
+                strokeWidth="2.6"
+                strokeLinecap="round"
+                opacity={0.9}
+                style={{ filter: `drop-shadow(0 0 4px ${tone})` }}
+              />
               <ellipse cx="50" cy="26" rx="9" ry="5" fill={tone} opacity={0.32} />
             </g>
           ) : (
             <path d="M46 52 L47 47 L53 47 L54 52 Z" fill="var(--muted)" opacity={0.55} />
           )}
-          <line x1="14" y1="52" x2="86" y2="52" stroke="var(--border-strong)" strokeWidth="0.5" opacity={0.6} />
+          <line
+            x1="14"
+            y1="52"
+            x2="86"
+            y2="52"
+            stroke="var(--border-strong)"
+            strokeWidth="0.5"
+            opacity={0.6}
+          />
 
           {/* the three cultural layers hanging off it */}
           {LAYERS.map((layer, i) => {
@@ -75,10 +100,21 @@ export default function CulturalKeystoneSpecies() {
               </g>
             );
           })}
-          <text x="50" y="70" textAnchor="middle" style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--muted)" }}>{t("axis")}</text>
+          <text
+            x="50"
+            y="70"
+            textAnchor="middle"
+            style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
+            {t("axis")}
+          </text>
         </svg>
         <div className="absolute right-3 top-14">
-          <Readout label={t("intact")} value={present ? `3/3` : `0/3`} accent={present ? "cyan" : "magenta"} />
+          <Readout
+            label={t("intact")}
+            value={present ? "3/3" : "0/3"}
+            accent={present ? "cyan" : "magenta"}
+          />
         </div>
         <div className="absolute inset-x-3 bottom-10">
           <ControlTabs

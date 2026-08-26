@@ -1,0 +1,34 @@
+{
+  "id": "fig-02-two-tails-in-the-same-water",
+  "chapter_slug": "bodies-built-for-water",
+  "role": "comparison",
+  "narrative_purpose": "Makes Ronal's judgement visible: a cylindrical tail and a flattened blade are different kinds of tool, and the difference decides how much thrust each stroke can produce.",
+  "subject": "Two Na'vi tails shown side by side in the same stretch of clear open seawater, each attached to the lower back of a partially visible swimming body cropped at the waist. On the left, a slender cylindrical tail tapering to a small tuft of hair at its tip, angled mid-push with a churn of disturbed bubbles and broken swirls behind it. On the right, a broad flattened blade with no hair, dorsoventrally expanded and laterally compressed, angled mid-stroke with a smooth continuous sheet of clean flow bending around it and a tidy line of evenly spaced spiral eddies trailing behind.",
+  "scene": "One continuous body of clear mid-depth seawater, both tails at the same depth and the same distance from the viewer, particles drifting in the light.",
+  "camera": "Straight-on side view at tail height, both subjects at equal visual weight and identical scale.",
+  "light": "Even cool blue-green light from above, cyan highlights on the wet skin of both tails, deep indigo in the water behind.",
+  "palette": "Ocean teal and cyan for the clean flow on the right, muted grey-teal for the broken churn on the left, void indigo background.",
+  "style": "Painterly naturalist comparison plate, organic and observed, not an infographic.",
+  "detail_level": "Crisp on both tail surfaces and on the difference between churned bubbles and smooth flow; the water beyond kept simple.",
+  "composition": "Left-to-right split with the two tails mirrored across the centre, open low-detail dark water in a band across the top of each half for overlay labels.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "panel borders",
+    "dividing line",
+    "callout lines",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Same water, same light, same scale on both halves. The left tail is unmistakably a round rope with a hair tuft; the right is unmistakably a flat hairless blade. Both are blue Na'vi skin, the left deeper cobalt and the right turquoise.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no panel borders or dividing lines, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

@@ -12,7 +12,9 @@
       "**/playwright-report/**",
       "**/test-results/**",
       "**/coverage/**",
-      "**/.source/**"
+      "**/.source/**",
+      "public/search/**",
+      "public/offline/**"
     ]
   },
   "formatter": {

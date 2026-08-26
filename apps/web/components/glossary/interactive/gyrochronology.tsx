@@ -131,11 +131,7 @@ export default function Gyrochronology() {
 
         <div className="absolute right-3 top-16 flex flex-col gap-1.5">
           <Readout label={t("age")} value={`${age.toFixed(1)} Gyr`} accent="amber" />
-          <Readout
-            label={t("period")}
-            value={`${periodDays(age).toFixed(0)}d`}
-            accent="cyan"
-          />
+          <Readout label={t("period")} value={`${periodDays(age).toFixed(0)}d`} accent="cyan" />
         </div>
 
         <div className="absolute inset-x-3 bottom-12">

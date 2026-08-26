@@ -40,18 +40,62 @@ export default function Transpiration() {
       }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {/* leaf blade */}
-          <ellipse cx="48" cy="44" rx="30" ry="18" fill="var(--surface)" stroke="var(--teal)" strokeWidth="1" />
-          <line x1="22" y1="44" x2="72" y2="44" stroke="var(--teal)" strokeWidth="0.5" opacity={0.5} />
+          <ellipse
+            cx="48"
+            cy="44"
+            rx="30"
+            ry="18"
+            fill="var(--surface)"
+            stroke="var(--teal)"
+            strokeWidth="1"
+          />
+          <line
+            x1="22"
+            y1="44"
+            x2="72"
+            y2="44"
+            stroke="var(--teal)"
+            strokeWidth="0.5"
+            opacity={0.5}
+          />
           {/* stomata pair */}
           {[0, 1, 2].map((i) => {
             const x = 36 + i * 12;
             return (
               <g key={i}>
-                <ellipse cx={x} cy="50" rx={2.2} ry={aperture} fill="var(--void)" stroke="var(--cyan)" strokeWidth="0.6" />
-                <ellipse cx={x} cy={50 - aperture - 1} rx="2.4" ry="1.2" fill="var(--teal)" opacity={0.5} />
-                <ellipse cx={x} cy={50 + aperture + 1} rx="2.4" ry="1.2" fill="var(--teal)" opacity={0.5} />
+                <ellipse
+                  cx={x}
+                  cy="50"
+                  rx={2.2}
+                  ry={aperture}
+                  fill="var(--void)"
+                  stroke="var(--cyan)"
+                  strokeWidth="0.6"
+                />
+                <ellipse
+                  cx={x}
+                  cy={50 - aperture - 1}
+                  rx="2.4"
+                  ry="1.2"
+                  fill="var(--teal)"
+                  opacity={0.5}
+                />
+                <ellipse
+                  cx={x}
+                  cy={50 + aperture + 1}
+                  rx="2.4"
+                  ry="1.2"
+                  fill="var(--teal)"
+                  opacity={0.5}
+                />
               </g>
             );
           })}
@@ -68,18 +112,61 @@ export default function Transpiration() {
               />
             ))}
           {/* water column tug */}
-          <rect x="46" y="62" width="4" height={10 + rate * 12} fill="var(--cyan)" opacity={0.45 + rate * 0.4} />
-          <text x="56" y="74" style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--cyan)" }}>
+          <rect
+            x="46"
+            y="62"
+            width="4"
+            height={10 + rate * 12}
+            fill="var(--cyan)"
+            opacity={0.45 + rate * 0.4}
+          />
+          <text
+            x="56"
+            y="74"
+            style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--cyan)" }}
+          >
             {t("stomata")}
           </text>
         </svg>
         <div className="absolute right-3 top-14">
-          <Readout label={t("rate")} value={`${Math.round(rate * 100)}`} unit="%" accent={open ? "cyan" : "magenta"} />
+          <Readout
+            label={t("rate")}
+            value={`${Math.round(rate * 100)}`}
+            unit="%"
+            accent={open ? "cyan" : "magenta"}
+          />
         </div>
         <div className="absolute inset-x-3 bottom-10 space-y-1.5">
-          <ControlSlider label={t("humidity")} value={humidity} min={0} max={1} step={0.01} display={`${Math.round(humidity * 100)}%`} onChange={setHumidity} thumb="cyan" />
-          <ControlSlider label={t("temp")} value={temp} min={0} max={1} step={0.01} display={`${Math.round(10 + temp * 30)}°C`} onChange={setTemp} thumb="amber" />
-          <ControlSlider label={t("wind")} value={wind} min={0} max={1} step={0.01} display={`${Math.round(wind * 20)} m/s`} onChange={setWind} thumb="teal" />
+          <ControlSlider
+            label={t("humidity")}
+            value={humidity}
+            min={0}
+            max={1}
+            step={0.01}
+            display={`${Math.round(humidity * 100)}%`}
+            onChange={setHumidity}
+            thumb="cyan"
+          />
+          <ControlSlider
+            label={t("temp")}
+            value={temp}
+            min={0}
+            max={1}
+            step={0.01}
+            display={`${Math.round(10 + temp * 30)}°C`}
+            onChange={setTemp}
+            thumb="amber"
+          />
+          <ControlSlider
+            label={t("wind")}
+            value={wind}
+            min={0}
+            max={1}
+            step={0.01}
+            display={`${Math.round(wind * 20)} m/s`}
+            onChange={setWind}
+            thumb="teal"
+          />
         </div>
       </div>
     </GlossaryFrame>

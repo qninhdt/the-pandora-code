@@ -1,0 +1,38 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "squidray-and-the-deep-ocean-design-space",
+  "role": "hero",
+  "narrative_purpose": "Hero thumbnail: the chapter's whole argument in one image - a huge deep-water predator rising out of black water toward faint light, carrying two incompatible propulsion systems on one body.",
+  "subject": "An enormous squid-ray hybrid animal ascending steeply through very dark open ocean toward a faint pale surface glow high above. Its central body is a long tapering muscular mantle, flanked on both sides by broad undulating muscular wings that flare outward into wide pointed pectoral fins like a manta ray. Set into each flank behind the head is a smooth funnel-shaped nozzle opening. Beneath the head hangs a cluster of twelve long tentacles - eight thick outer arms lined with small hooks and suction pads, four shorter hooked arms folded inward among them. The head carries four eyes: two enormous domed lateral eyes and two much smaller forward-facing ones. Its back is a deep absorptive near-black; faint rows of small cyan light points run along the underside of the wings.",
+  "scene": "Deep open ocean at great depth, almost entirely dark, with a single faint distant plane of pale light far above marking the surface.",
+  "camera": "Wide cinematic low three-quarter view from below and slightly ahead of the ascending animal, looking up past it toward the distant surface.",
+  "light": "Near-total darkness with one weak cool light source far above; the animal's own faint cyan photophore rows are the only light on its body; deep indigo ambient throughout.",
+  "palette": "Void indigo and near-black dominating, deep ocean teal in the water, sparse Pandora cyan light points, one small cool highlight on the nearest large eye.",
+  "style": "Painterly naturalist xenobiology plate, atmospheric and imposing, observed rather than staged.",
+  "detail_level": "High detail on the head, the four eyes, the wing edges and the tentacle cluster; the far body dissolving into haze and shadow.",
+  "composition": "The animal placed diagonally across the frame rising from lower left toward upper right, the faint surface glow in the upper right corner, large areas of empty dark water at lower right.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "human divers",
+    "boats",
+    "submarines",
+    "blood",
+    "gore",
+    "bright coral reef",
+    "Avatar branding"
+  ],
+  "consistency_notes": "This is the master character sheet for the animal; every later figure in the chapter references it. Four eyes exactly: two large lateral, two small anterior. Twelve tentacles exactly. Wings are broad and ray-like, not squid fins. Two lateral siphon nozzles, not one ventral funnel.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no ordinary Earth squid, no octopus with eight arms only, no two-eyed head, no photographic or 3D-render look, no CGI plastic sheen, no cartoon style, no lens flare",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

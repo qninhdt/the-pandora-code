@@ -87,25 +87,41 @@ export default function HardProblemOfConsciousness() {
                   strokeWidth="0.6"
                   opacity={lit ? 0.9 : 0.35}
                 />
-                {lit &&
-                  i > 0 && (
-                    <line
-                      x1={PROCESSES[i - 1].x}
-                      y1={PROCESSES[i - 1].y}
-                      x2={p.x}
-                      y2={p.y}
-                      stroke="var(--teal)"
-                      strokeWidth="0.7"
-                      opacity={0.7}
-                    />
-                  )}
+                {lit && i > 0 && (
+                  <line
+                    x1={PROCESSES[i - 1].x}
+                    y1={PROCESSES[i - 1].y}
+                    x2={p.x}
+                    y2={p.y}
+                    stroke="var(--teal)"
+                    strokeWidth="0.7"
+                    opacity={0.7}
+                  />
+                )}
               </g>
             );
           })}
 
           {/* progress bar */}
-          <rect x="12" y="68" width="30" height="3" rx="1" fill="var(--void)" stroke="var(--border-strong)" strokeWidth="0.3" />
-          <rect x="12" y="68" width={30 * fill} height="3" rx="1" fill="var(--cyan)" opacity={0.8} />
+          <rect
+            x="12"
+            y="68"
+            width="30"
+            height="3"
+            rx="1"
+            fill="var(--void)"
+            stroke="var(--border-strong)"
+            strokeWidth="0.3"
+          />
+          <rect
+            x="12"
+            y="68"
+            width={30 * fill}
+            height="3"
+            rx="1"
+            fill="var(--cyan)"
+            opacity={0.8}
+          />
 
           {/* subjective panel — always empty-ish */}
           <rect

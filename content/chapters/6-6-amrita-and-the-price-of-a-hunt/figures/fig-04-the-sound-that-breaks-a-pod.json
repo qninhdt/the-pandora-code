@@ -1,0 +1,34 @@
+{
+  "id": "fig-04-the-sound-that-breaks-a-pod",
+  "chapter_slug": "amrita-and-the-price-of-a-hunt",
+  "role": "diagram",
+  "narrative_purpose": "Makes the acoustic weapon's actual function visible: it does not wound, it destroys the spacing that keeps a group coherent, and one individual ends up isolated as a result.",
+  "subject": "An underwater scene. On the left, four enormous dark marine animals hold a tight even formation, their bodies nearly parallel and closely spaced, faint bioluminescent lines along their flanks. Toward the right, three small boat hulls sit on the surface above, and from beneath each hull a wide pale cone of compressed water spreads downward and outward, the cones overlapping. Where the cones fall, the water is rendered with dense bright compression ripples. The animals inside that zone are turned at wrong angles to each other, spacing broken, their flank lines flaring harshly bright. One smaller animal has been pushed clear of the group entirely and floats alone in open water at the lower right, well outside the formation.",
+  "scene": "Mid-depth open water, the surface visible as a bright ceiling above, darkness falling away below.",
+  "camera": "Wide side-on underwater view, ordered formation on the left, disordered animals and the isolated small one on the right.",
+  "light": "Pale surface light from above, harsh bright compression ripples inside the sound cones, the animals' own flank glow flaring where the sound hits, deep indigo below.",
+  "palette": "Void indigo depth, deep teal midwater, cold pale grey-white sound cones, harsh cyan flank flare.",
+  "style": "Painterly naturalist underwater plate, organic and turbulent, not a physics infographic.",
+  "detail_level": "Crisp on the animals' body angles and the isolated small one; the sound cones rendered as water texture rather than geometry; dark open water lower left for callouts.",
+  "composition": "Ordered group left third, sound cones sweeping in from the upper right, isolated small animal alone in the lower right quadrant, dark open water at lower left for overlay labels.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "concentric ring waveform icons",
+    "sound-wave symbols",
+    "speaker icons",
+    "vector infographic look"
+  ],
+  "consistency_notes": "The sound must be shown as compressed, disturbed water and as the animals' broken body angles - never as cartoon waveform rings. Nothing is bleeding or wounded; the damage is to formation, not flesh.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no waveform rings, no sound icons, no speaker symbols, no photographic or 3D-render look, no cartoon style, no gore",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

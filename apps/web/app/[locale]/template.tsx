@@ -18,10 +18,17 @@ import type { ReactNode } from "react";
 export default function LocaleTemplate({ children }: { children: ReactNode }) {
   const reduced = useReducedMotionSafe();
 
-  if (reduced) return <>{children}</>;
+  // Keep an isolated stacking context even when the enter animation is
+  // skipped. Chapter/page backgrounds use z-index -2 and would otherwise be
+  // painted underneath the body's background when this route wrapper becomes
+  // a fragment.
+  if (reduced) {
+    return <div className="relative isolate">{children}</div>;
+  }
 
   return (
     <motion.div
+      className="relative isolate"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}

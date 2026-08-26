@@ -86,7 +86,14 @@ export default function Libration() {
             strokeDasharray="2 2"
             opacity="0.5"
           />
-          <circle cx={CX} cy={CY + MOON_R + 18} r="4" fill="var(--surface-raised)" stroke="var(--border-strong)" strokeWidth="0.5" />
+          <circle
+            cx={CX}
+            cy={CY + MOON_R + 18}
+            r="4"
+            fill="var(--surface-raised)"
+            stroke="var(--border-strong)"
+            strokeWidth="0.5"
+          />
 
           {/* libration envelope ring — area swept into view */}
           {librating && (
@@ -109,9 +116,23 @@ export default function Libration() {
             {/* central marker = the point that faces the host on average */}
             <circle cx={CX + shift} cy={CY + nod} r="3" fill="var(--cyan)" opacity="0.8" />
             <circle cx={CX + shift - 9} cy={CY + nod - 6} r="2" fill="#3a5572" opacity="0.5" />
-            <ellipse cx={CX + shift + 8} cy={CY + nod + 5} rx="4" ry="3" fill="#2c425f" opacity="0.7" />
+            <ellipse
+              cx={CX + shift + 8}
+              cy={CY + nod + 5}
+              rx="4"
+              ry="3"
+              fill="#2c425f"
+              opacity="0.7"
+            />
             <circle cx={CX + shift + 11} cy={CY + nod - 7} r="1.6" fill="#34506f" opacity="0.6" />
-            <ellipse cx={CX + shift - 7} cy={CY + nod + 8} rx="3" ry="2" fill="#34506f" opacity="0.55" />
+            <ellipse
+              cx={CX + shift - 7}
+              cy={CY + nod + 8}
+              rx="3"
+              ry="2"
+              fill="#34506f"
+              opacity="0.55"
+            />
           </g>
 
           {/* limb highlight */}

@@ -1,0 +1,32 @@
+id: q10-temperature-coefficient
+label:
+  vi: Hệ số nhiệt Q₁₀
+  en: Q₁₀ temperature coefficient
+definition:
+  vi: >-
+    Con số cho biết một tiến trình sinh học nhanh lên bao nhiêu lần khi nhiệt độ tăng 10 °C. Với động vật
+    biến nhiệt ở biển, Q₁₀ khoảng 2,0–2,5, nên đưa một con vật từ nước mặt 25 °C xuống vùng sâu 2–4 °C làm
+    cường độ chuyển hóa của nó giảm bốn đến sáu lần. Điều thường bị hiểu sai là coi đó như một hình phạt về
+    tốc độ. Không hẳn: công suất bơi tỉ lệ với lập phương tốc độ, nên mất năm lần công suất chỉ mất khoảng
+    1,7 lần tốc độ. Chỗ thật sự đau là nhịp — tần số co cơ và dẫn truyền thần kinh tỉ lệ thuận với cường độ,
+    nên nước lạnh làm con vật chậm *quyết định* nhiều hơn là chậm *di chuyển*.
+  en: >-
+    The factor by which a biological process speeds up for every 10 °C of warming. For marine ectotherms Q₁₀
+    runs about 2.0–2.5, so taking an animal from 25 °C surface water down to the 2–4 °C of the deep drops its
+    metabolic rate by a factor of four to six. The common misreading is to treat that as a speed penalty. It
+    is not quite: swimming power scales with the cube of speed, so losing a factor of five in power costs only
+    about 1.7 in speed. The real bite is in timing — twitch frequency and neural conduction scale directly
+    with rate, so cold water slows an animal's *deciding* far more than its *moving*.
+see_also:
+  - regional-endothermy
+  - rete-mirabile
+  - homeoviscous-adaptation
+  - cost-of-transport
+category: concept
+tags:
+  - physiology
+  - physics
+cover_prompt: >-
+  Two identical marine predators shown mid-strike side by side, the one in warm teal water caught with limbs
+  fully committed and sharp, the one in near-freezing indigo water caught barely beginning to move and visibly
+  blurred by hesitation, painterly naturalist comparison plate, no text, no labels.

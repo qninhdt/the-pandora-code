@@ -43,14 +43,57 @@ export default function QuadrupedalLaunch() {
         >
           <line x1="10" y1="78" x2="90" y2="78" stroke="var(--border-strong)" strokeWidth="0.6" />
           {/* body */}
-          <ellipse cx="50" cy={bodyY} rx="12" ry="5" fill="var(--surface)" stroke="var(--cyan)" strokeWidth="1" />
+          <ellipse
+            cx="50"
+            cy={bodyY}
+            rx="12"
+            ry="5"
+            fill="var(--surface)"
+            stroke="var(--cyan)"
+            strokeWidth="1"
+          />
           {/* wings */}
-          <line x1={50 - wingSpread} y1={bodyY - 2} x2={50 + wingSpread} y2={bodyY - 2} stroke="var(--teal)" strokeWidth="1.4" />
+          <line
+            x1={50 - wingSpread}
+            y1={bodyY - 2}
+            x2={50 + wingSpread}
+            y2={bodyY - 2}
+            stroke="var(--teal)"
+            strokeWidth="1.4"
+          />
           {/* legs pushing */}
-          <line x1="44" y1={bodyY + 4} x2={42} y2={78 - legPush} stroke="var(--amber)" strokeWidth="1.2" />
-          <line x1="56" y1={bodyY + 4} x2={58} y2={78 - legPush} stroke="var(--amber)" strokeWidth="1.2" />
-          <line x1="40" y1={bodyY + 2} x2={36} y2={78 - legPush * 0.6} stroke="var(--amber)" strokeWidth="1" />
-          <line x1="60" y1={bodyY + 2} x2={64} y2={78 - legPush * 0.6} stroke="var(--amber)" strokeWidth="1" />
+          <line
+            x1="44"
+            y1={bodyY + 4}
+            x2={42}
+            y2={78 - legPush}
+            stroke="var(--amber)"
+            strokeWidth="1.2"
+          />
+          <line
+            x1="56"
+            y1={bodyY + 4}
+            x2={58}
+            y2={78 - legPush}
+            stroke="var(--amber)"
+            strokeWidth="1.2"
+          />
+          <line
+            x1="40"
+            y1={bodyY + 2}
+            x2={36}
+            y2={78 - legPush * 0.6}
+            stroke="var(--amber)"
+            strokeWidth="1"
+          />
+          <line
+            x1="60"
+            y1={bodyY + 2}
+            x2={64}
+            y2={78 - legPush * 0.6}
+            stroke="var(--amber)"
+            strokeWidth="1"
+          />
         </svg>
 
         <div className="absolute right-3 top-16">

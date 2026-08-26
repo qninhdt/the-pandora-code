@@ -68,7 +68,12 @@ export function InhibitorStackFilter({ caption, className }: InhibitorStackFilte
     >
       <div className="flex flex-col gap-4">
         {/* gauntlet bar */}
-        <svg viewBox="0 0 320 70" className="w-full" role="img" aria-label={t("aria", { pct: survivalPct.toFixed(1) })}>
+        <svg
+          viewBox="0 0 320 70"
+          className="w-full"
+          role="img"
+          aria-label={t("aria", { pct: survivalPct.toFixed(1) })}
+        >
           <GlowDefs idBase={uid} tones={["teal", "amber", "magenta"]} />
           <rect x="10" y="24" width={barW} height={barH} rx="6" fill="var(--depth)" />
           <rect
@@ -81,7 +86,12 @@ export function InhibitorStackFilter({ caption, className }: InhibitorStackFilte
             filter={glowUrl(uid, "bloom")}
             style={{ transition: "width 0.4s ease" }}
           />
-          <text x="10" y="16" className="font-sans" style={{ fill: "var(--subtle)", fontSize: 8.5 }}>
+          <text
+            x="10"
+            y="16"
+            className="font-sans"
+            style={{ fill: "var(--subtle)", fontSize: 8.5 }}
+          >
             {t("barStart")}
           </text>
           <text
@@ -116,7 +126,9 @@ export function InhibitorStackFilter({ caption, className }: InhibitorStackFilte
                 }}
               >
                 <div className="flex items-center justify-between gap-2">
-                  <span className="font-display text-sm font-700 text-foreground">{t(`filter.${id}.name`)}</span>
+                  <span className="font-display text-sm font-700 text-foreground">
+                    {t(`filter.${id}.name`)}
+                  </span>
                   <span
                     className="font-sans text-[0.65rem] uppercase tracking-wider"
                     style={{ color: on ? "var(--magenta)" : "var(--teal)" }}

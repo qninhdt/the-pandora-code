@@ -70,7 +70,10 @@ export default function DegreeDistribution() {
   const t = useTranslations("viz.degree-distribution");
   const [mode, setMode] = useState<Mode>("scaleFree");
   const [tick, setTick] = useState(0);
-  const { nodes, edges } = useMemo(() => build(mode), [mode, tick]);
+  const { nodes, edges } = useMemo(() => {
+    void tick;
+    return build(mode);
+  }, [mode, tick]);
 
   const hist = useMemo(() => {
     const maxD = Math.max(1, ...nodes.map((n) => n.deg));
@@ -125,7 +128,17 @@ export default function DegreeDistribution() {
             );
           })}
           {/* histogram panel */}
-          <rect x="62" y="18" width="34" height="64" rx="1.5" fill="var(--void)" opacity={0.55} stroke="var(--border-strong)" strokeWidth={0.4} />
+          <rect
+            x="62"
+            y="18"
+            width="34"
+            height="64"
+            rx="1.5"
+            fill="var(--void)"
+            opacity={0.55}
+            stroke="var(--border-strong)"
+            strokeWidth={0.4}
+          />
           {hist.map((c, k) => {
             const h = (c / maxBin) * 52;
             const bw = Math.min(3.2, 28 / hist.length);
@@ -142,7 +155,12 @@ export default function DegreeDistribution() {
               />
             );
           })}
-          <text x="79" y="90" textAnchor="middle" style={{ fontSize: 2.6, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="79"
+            y="90"
+            textAnchor="middle"
+            style={{ fontSize: 2.6, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("degree")} k
           </text>
         </svg>

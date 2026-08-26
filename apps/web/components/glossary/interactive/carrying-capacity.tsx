@@ -117,7 +117,13 @@ export default function CarryingCapacity() {
           </text>
 
           {/* logistic / boom-bust trail */}
-          <path d={path} fill="none" stroke="var(--cyan)" strokeWidth="1.1" strokeLinejoin="round" />
+          <path
+            d={path}
+            fill="none"
+            stroke="var(--cyan)"
+            strokeWidth="1.1"
+            strokeLinejoin="round"
+          />
           <circle cx={toX(hist.length - 1)} cy={toY(N)} r="1.6" fill="var(--cyan)" />
 
           {/* fill under curve */}

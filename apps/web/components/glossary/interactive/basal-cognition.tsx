@@ -91,10 +91,8 @@ export default function BasalCognition() {
 
       // bias growth toward food (chemotaxis)
       frontier.sort((a, b) => {
-        const da =
-          Math.abs((a % COLS) - fc) + Math.abs(Math.floor(a / COLS) - fr);
-        const db =
-          Math.abs((b % COLS) - fc) + Math.abs(Math.floor(b / COLS) - fr);
+        const da = Math.abs((a % COLS) - fc) + Math.abs(Math.floor(a / COLS) - fr);
+        const db = Math.abs((b % COLS) - fc) + Math.abs(Math.floor(b / COLS) - fr);
         return da - db;
       });
       const pick = frontier[0];

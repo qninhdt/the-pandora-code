@@ -1,0 +1,38 @@
+{
+  "id": "fig-08-thrust-on-both-strokes",
+  "chapter_slug": "bodies-built-for-water",
+  "role": "diagram",
+  "narrative_purpose": "Explains why a flattened blade beats a rope: an angled hydrofoil generates lift on the upstroke and the downstroke both, leaving an evenly spaced vortex chain instead of a churn.",
+  "subject": "A broad flattened turquoise Na'vi tail shown at four successive moments of one complete up-and-down cycle, arranged left to right across a single stretch of clear water, the swimmer's lower back cropped at the left edge of each. In the first the blade is angled upward near the top of its sweep; in the second it is level and moving down fast; in the third it is angled downward near the bottom; in the fourth it is level again and rising. In every one of the four, a smooth continuous curved sheet of flow bends around the blade's surface rather than piling up behind it. Behind and below the whole sequence, a tidy chain of evenly spaced spiral eddies trails away to the right, alternating in rotation direction, each one about the same size.",
+  "scene": "Clear mid-depth open seawater with fine suspended particles catching the light, no seabed and no other creatures.",
+  "camera": "Straight-on side view of the whole four-phase sequence, all four tails at the same scale and depth.",
+  "light": "Cool blue-green light from above raking across the wet blade surfaces, cyan highlights along the trailing edges, the spiral eddies faintly lit from within, deep indigo behind.",
+  "palette": "Turquoise blade, ocean teal water, cyan flow highlights, void indigo depth.",
+  "style": "Painterly naturalist motion study, organic and fluid, not an engineering schematic.",
+  "detail_level": "High detail on each blade's angle and on the smooth sheet of flow bending around it; the eddy chain rendered as soft luminous spirals.",
+  "composition": "Four phases spaced evenly across the middle band of the frame, the eddy chain running along the lower third, open darker water across the top for overlay callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "flow-vector arrows",
+    "streamline diagrams",
+    "grid lines",
+    "panel borders",
+    "Avatar branding"
+  ],
+  "consistency_notes": "The same tail four times through one cycle, not four different tails. The flow must read as a smooth bending sheet in every phase — never as a churn of bubbles, which is the opposite point. No arrows: direction comes from the shape of the flow and the spacing of the eddies.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows or flow vectors, no engineering streamline diagram, no grid, no panel borders, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/bodies-built-for-water/fig-00-cover.png"
+  ]
+}

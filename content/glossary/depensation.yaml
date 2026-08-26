@@ -1,0 +1,35 @@
+id: depensation
+label:
+  vi: Hiệu ứng thưa đàn
+  en: Depensation
+definition:
+  vi: >-
+    Hiện tượng một quần thể càng ít cá thể thì mỗi cá thể lại sinh sản càng kém, thay vì càng tốt.
+    Điều này đi ngược trực giác quản lý thông thường: bớt đông thì lẽ ra bớt cạnh tranh, dư thức ăn,
+    đàn phục hồi nhanh hơn. Nhưng ở mật độ rất thấp, việc tìm được bạn tình trở nên khó, kiếm ăn theo
+    nhóm mất hiệu quả, tập tính di cư học từ đồng loại bị đứt, và ở loài giao tiếp bằng âm thanh thì
+    các cá thể đơn giản là ở quá xa nhau để nghe thấy nhau. Hệ quả nguy hiểm nhất: có một ngưỡng mà
+    dưới nó, dừng khai thác hoàn toàn cũng không cứu được — đàn vẫn trượt xuống tuyệt chủng vì đã
+    quá thưa để tự bù đắp.
+  en: >-
+    The phenomenon where a population with fewer individuals reproduces worse per individual rather
+    than better. This runs against ordinary management intuition: fewer animals should mean less
+    competition, more food each, faster recovery. But at very low density finding a mate becomes hard,
+    group foraging loses its efficiency, migration routes learned from others are broken, and in
+    acoustically communicating species individuals are simply too far apart to hear one another. The
+    most dangerous consequence: there is a threshold below which stopping harvest entirely no longer
+    saves the population — it slides toward extinction anyway, too sparse to replace itself.
+see_also:
+  - carrying-capacity
+  - density-dependence
+  - maximum-sustainable-yield
+  - functional-extinction
+category: concept
+tags:
+  - ecology
+  - bioeconomics
+cover_prompt: >-
+  A painterly plate of a wide dark ocean expanse holding only three widely separated animal
+  silhouettes, each surrounded by a faint fading ring of sound that dissipates well before reaching
+  the next one, cool teal silhouettes and dim rings on deep indigo, painterly naturalist plate, no
+  text, no labels.

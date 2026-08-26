@@ -85,9 +85,7 @@ export default function NichePartitioning() {
             const d = curve
               .map((p, i) => `${i === 0 ? "M" : "L"}${toX(p.x).toFixed(2)} ${toY(p.y).toFixed(2)}`)
               .join(" ");
-            const fill =
-              d +
-              ` L${toX(1).toFixed(2)} 62 L${toX(0).toFixed(2)} 62 Z`;
+            const fill = `${d} L${toX(1).toFixed(2)} 62 L${toX(0).toFixed(2)} 62 Z`;
             return (
               <g key={ci}>
                 <path d={fill} fill={colors[ci]} opacity="0.15" />
@@ -121,12 +119,12 @@ export default function NichePartitioning() {
         <div className="absolute left-3 top-14 flex flex-col gap-1.5">
           <Readout
             label={t("overlap")}
-            value={(overlap * 100).toFixed(0) + "%"}
+            value={`${(overlap * 100).toFixed(0)}%`}
             accent={competition > 0.45 ? "magenta" : "cyan"}
           />
           <Readout
             label={t("competition")}
-            value={(competition * 100).toFixed(0) + "%"}
+            value={`${(competition * 100).toFixed(0)}%`}
             accent={competition > 0.45 ? "magenta" : "teal"}
           />
         </div>

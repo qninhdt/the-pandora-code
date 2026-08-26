@@ -153,10 +153,7 @@ export default function IntegratedInformationTheory() {
           >
             {t("addLink")}
           </ControlButton>
-          <ControlButton
-            onClick={() => setCount((c) => Math.max(0, c - 1))}
-            className="px-2 py-1"
-          >
+          <ControlButton onClick={() => setCount((c) => Math.max(0, c - 1))} className="px-2 py-1">
             {t("cutLink")}
           </ControlButton>
         </div>

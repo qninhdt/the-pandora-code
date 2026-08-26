@@ -63,7 +63,12 @@ export function RespiratoryScrubberDial({ className }: { className?: string }) {
       className={className}
     >
       <div className="flex flex-col gap-3 sm:flex-row sm:items-stretch">
-        <svg viewBox={`0 0 ${W} ${H}`} className="w-full sm:w-1/2" role="img" aria-label={t("aria")}>
+        <svg
+          viewBox={`0 0 ${W} ${H}`}
+          className="w-full sm:w-1/2"
+          role="img"
+          aria-label={t("aria")}
+        >
           <GlowDefs idBase={uid} tones={["cyan", "magenta", "amber"]} />
           {/* a schematic lung sac: an ellipse whose lining glows cyan when the
               filter is active, magenta when raw poison air reaches it */}

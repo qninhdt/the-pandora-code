@@ -1,0 +1,37 @@
+{
+  "id": "fig-01-the-breathing-lesson",
+  "chapter_slug": "bodies-built-for-water",
+  "role": "inline",
+  "narrative_purpose": "Anchors the cold open: the first diving lesson happens sitting still in ankle-deep water, before anyone submerges, because the training is metabolic rather than athletic.",
+  "subject": "Three young blue-skinned Na'vi sitting cross-legged on a pale sandbar in very shallow water that reaches only to their knees. The one in the centre, a Metkayina girl with a broad flattened tail resting on the wet sand beside her, has her open palm pressed flat against the chest of the boy facing her. The boy sits upright with his eyes closed and his shoulders dropped, his tail slender and cylindrical with a small tuft at its tip lying behind him. A third younger child sits slightly apart, watching them, also with a slender tail. The water surface is glassy and undisturbed around all three.",
+  "scene": "A calm dawn lagoon at low tide, a broad wet sandbar, the dark line of a reef and a cluster of woven hanging dwellings far in the background across still water.",
+  "camera": "Low three-quarter view at water level, close enough to read the hand on the chest and the two different tail shapes.",
+  "light": "Soft pale pre-dawn light from a low horizon, cool teal water reflections on their skin, faint warm amber glow from the distant dwellings.",
+  "palette": "Cool teal and pale mist dominant, turquoise and cobalt skin, one small warm amber accent in the far background.",
+  "style": "Painterly naturalist figure study, quiet and observed, hand-painted texture.",
+  "detail_level": "Crisp on the hand pressed to the chest, the closed eyes, and both tail shapes where they rest on the sand; the background dissolving into haze.",
+  "composition": "The two facing figures centre-left, the watching child at right, open low-detail glassy water across the upper third and lower left for overlay callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "callout lines",
+    "weapons",
+    "modern equipment",
+    "Avatar branding"
+  ],
+  "consistency_notes": "The Metkayina girl's tail is a broad flat blade; both forest children's tails are slender cylinders with hair tufts. That contrast must be legible even though the figures are seated. Turquoise skin for the Metkayina girl, deeper cobalt for the two forest children.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no leader lines, no modern equipment, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/bodies-built-for-water/fig-00-cover.png"
+  ]
+}

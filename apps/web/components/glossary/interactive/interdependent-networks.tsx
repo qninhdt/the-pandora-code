@@ -12,12 +12,23 @@ type Layer = "power" | "comms";
 type N = { id: number; layer: Layer; x: number; y: number; dead: boolean };
 
 const INTRA: [number, number][] = [
-  [0, 1], [1, 2], [2, 3], [0, 3], [1, 3],
-  [4, 5], [5, 6], [6, 7], [4, 7], [5, 7],
+  [0, 1],
+  [1, 2],
+  [2, 3],
+  [0, 3],
+  [1, 3],
+  [4, 5],
+  [5, 6],
+  [6, 7],
+  [4, 7],
+  [5, 7],
 ];
 // interdependent couples: power i ↔ comms i
 const COUPLE: [number, number][] = [
-  [0, 4], [1, 5], [2, 6], [3, 7],
+  [0, 4],
+  [1, 5],
+  [2, 6],
+  [3, 7],
 ];
 
 function seed(): N[] {
@@ -63,8 +74,8 @@ export default function InterdependentNetworks() {
         // isolated in own layer also dies (needs support)
         for (const n of prev) {
           if (nextDead.has(n.id)) continue;
-          const neighbors = INTRA.filter(([x, y]) => x === n.id || y === n.id).map(
-            ([x, y]) => (x === n.id ? y : x),
+          const neighbors = INTRA.filter(([x, y]) => x === n.id || y === n.id).map(([x, y]) =>
+            x === n.id ? y : x,
           );
           const liveN = neighbors.filter((id) => !nextDead.has(id));
           if (neighbors.length > 0 && liveN.length === 0) nextDead.add(n.id);
@@ -101,16 +112,38 @@ export default function InterdependentNetworks() {
     >
       <div ref={ref} className="absolute inset-0">
         <svg viewBox="0 0 100 100" className="h-full w-full" role="img" aria-label={t("title")}>
-          <text x="40" y="14" textAnchor="middle" style={{ fontSize: 2.8, fontFamily: "monospace", fill: "var(--amber)" }}>{t("power")}</text>
-          <text x="60" y="92" textAnchor="middle" style={{ fontSize: 2.8, fontFamily: "monospace", fill: "var(--cyan)" }}>{t("comms")}</text>
+          <text
+            x="40"
+            y="14"
+            textAnchor="middle"
+            style={{ fontSize: 2.8, fontFamily: "monospace", fill: "var(--amber)" }}
+          >
+            {t("power")}
+          </text>
+          <text
+            x="60"
+            y="92"
+            textAnchor="middle"
+            style={{ fontSize: 2.8, fontFamily: "monospace", fill: "var(--cyan)" }}
+          >
+            {t("comms")}
+          </text>
           {COUPLE.map(([a, b]) => {
             const na = nodes[a];
             const nb = nodes[b];
             const dead = na.dead || nb.dead;
             return (
-              <line key={`c${a}-${b}`} x1={na.x} y1={na.y} x2={nb.x} y2={nb.y}
-                stroke={dead ? "var(--magenta)" : "var(--teal)"} strokeWidth={0.7}
-                strokeDasharray="1.5 1" opacity={dead ? 0.25 : 0.7} />
+              <line
+                key={`c${a}-${b}`}
+                x1={na.x}
+                y1={na.y}
+                x2={nb.x}
+                y2={nb.y}
+                stroke={dead ? "var(--magenta)" : "var(--teal)"}
+                strokeWidth={0.7}
+                strokeDasharray="1.5 1"
+                opacity={dead ? 0.25 : 0.7}
+              />
             );
           })}
           {INTRA.map(([a, b]) => {
@@ -118,8 +151,16 @@ export default function InterdependentNetworks() {
             const nb = nodes[b];
             const col = na.layer === "power" ? "var(--amber)" : "var(--cyan)";
             return (
-              <line key={`i${a}-${b}`} x1={na.x} y1={na.y} x2={nb.x} y2={nb.y}
-                stroke={col} strokeWidth={0.6} opacity={na.dead || nb.dead ? 0.15 : 0.55} />
+              <line
+                key={`i${a}-${b}`}
+                x1={na.x}
+                y1={na.y}
+                x2={nb.x}
+                y2={nb.y}
+                stroke={col}
+                strokeWidth={0.6}
+                opacity={na.dead || nb.dead ? 0.15 : 0.55}
+              />
             );
           })}
           {nodes.map((n) => (
@@ -129,7 +170,9 @@ export default function InterdependentNetworks() {
               cy={n.y}
               r={4.5}
               fill={n.dead ? "var(--void)" : "var(--surface)"}
-              stroke={n.dead ? "var(--magenta)" : n.layer === "power" ? "var(--amber)" : "var(--cyan)"}
+              stroke={
+                n.dead ? "var(--magenta)" : n.layer === "power" ? "var(--amber)" : "var(--cyan)"
+              }
               strokeWidth={1.1}
               opacity={n.dead ? 0.4 : 0.95}
               className="cursor-pointer"

@@ -1,0 +1,36 @@
+{
+  "id": "fig-04-the-mantle-under-load",
+  "chapter_slug": "squidray-and-the-deep-ocean-design-space",
+  "role": "diagram",
+  "narrative_purpose": "Makes the hoop-stress limit visible: a thin muscular wall stretched taut around a large pressurised cavity, with the wall thinnest exactly where the cavity is widest.",
+  "subject": "A cross-section cut straight through a large muscular body cavity, seen as a ring. The cavity interior is a wide open space filled with compressed water, rendered slightly brighter than the surrounding tissue. The wall around it is a thin band of muscle whose fibres run circumferentially all the way around the ring, drawn visibly stretched and taut, thinned and pale at the widest part of the ring and thicker and darker where the ring narrows. At the lower right the ring narrows into a short funnel throat through which a dense fast stream of water is escaping outward. Fine hairline splits are just beginning to appear in the palest, most stretched section of the wall.",
+  "scene": "Isolated anatomical cross-section on plain dark water, no surrounding body or background.",
+  "camera": "Straight-on flat cross-sectional view, the ring centred and filling most of the frame.",
+  "light": "Cool light emanating from the pressurised cavity interior outward, so the thinnest wall sections glow faintly from behind; the outer tissue surface in deep shadow.",
+  "palette": "Ocean teal muscle tissue, pale mist grey in the overstretched thinned wall, cyan glow in the pressurised interior, magenta accent on the beginning hairline splits.",
+  "style": "Painterly anatomical cross-section plate, biological and fleshy, never a mechanical engineering drawing.",
+  "detail_level": "High detail on the circumferential fibre direction and the thinning of the wall; plain dark space outside the ring for annotations.",
+  "composition": "Ring centred with its widest thinnest section at the upper left, the narrowing funnel throat at the lower right, generous plain dark margins around the whole ring.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "stress arrows",
+    "measurement rules",
+    "pressure gauges",
+    "metal pipes",
+    "engineering blueprint style"
+  ],
+  "consistency_notes": "The wall is living muscle, not a pipe or tank. Fibres must clearly run around the ring, not along it. Thinning at the widest section is the key readable feature.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no labels, no arrows, no gauges, no metal pipe or pressure vessel, no blueprint or CAD style, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

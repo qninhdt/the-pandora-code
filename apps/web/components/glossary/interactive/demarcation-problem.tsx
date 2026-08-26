@@ -41,14 +41,7 @@ export default function DemarcationProblem() {
           aria-label={t("title")}
         >
           {/* dial track */}
-          <line
-            x1="12"
-            y1="50"
-            x2="88"
-            y2="50"
-            stroke="var(--border-strong)"
-            strokeWidth="1.2"
-          />
+          <line x1="12" y1="50" x2="88" y2="50" stroke="var(--border-strong)" strokeWidth="1.2" />
           <line x1="50" y1="44" x2="50" y2="56" stroke="var(--amber)" strokeWidth="0.8" />
           <text
             x="18"
@@ -71,11 +64,7 @@ export default function DemarcationProblem() {
             const on = i === active;
             const col = c.falsifiable ? "var(--cyan)" : "var(--muted)";
             return (
-              <g
-                key={c.key}
-                onClick={() => setActive(i)}
-                style={{ cursor: "pointer" }}
-              >
+              <g key={c.key} onClick={() => setActive(i)} style={{ cursor: "pointer" }}>
                 <circle
                   cx={c.pos}
                   cy="50"

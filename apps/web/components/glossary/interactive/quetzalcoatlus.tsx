@@ -43,16 +43,48 @@ export default function Quetzalcoatlus() {
           aria-label={t("title")}
         >
           {/* quetz silhouette */}
-          <ellipse cx="32" cy="40" rx={span * 2.2} ry={3 + mass / 40} fill="var(--surface)" stroke={plausible ? "var(--cyan)" : "var(--magenta)"} strokeWidth="1" />
-          <text x="32" y="56" textAnchor="middle" style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <ellipse
+            cx="32"
+            cy="40"
+            rx={span * 2.2}
+            ry={3 + mass / 40}
+            fill="var(--surface)"
+            stroke={plausible ? "var(--cyan)" : "var(--magenta)"}
+            strokeWidth="1"
+          />
+          <text
+            x="32"
+            y="56"
+            textAnchor="middle"
+            style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("quetz")}
           </text>
           {/* ikran ref */}
-          <ellipse cx="72" cy="40" rx={ikranSpan * 1.6} ry={4} fill="var(--surface)" stroke="var(--teal)" strokeWidth="0.8" opacity="0.85" />
-          <text x="72" y="56" textAnchor="middle" style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--teal)" }}>
+          <ellipse
+            cx="72"
+            cy="40"
+            rx={ikranSpan * 1.6}
+            ry={4}
+            fill="var(--surface)"
+            stroke="var(--teal)"
+            strokeWidth="0.8"
+            opacity="0.85"
+          />
+          <text
+            x="72"
+            y="56"
+            textAnchor="middle"
+            style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--teal)" }}
+          >
             {t("ikran")}
           </text>
-          <text x="72" y="62" textAnchor="middle" style={{ fontSize: 2, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="72"
+            y="62"
+            textAnchor="middle"
+            style={{ fontSize: 2, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {ikranSpan}m · {ikranMass}kg
           </text>
         </svg>
@@ -63,8 +95,26 @@ export default function Quetzalcoatlus() {
         </div>
 
         <div className="absolute inset-x-3 bottom-10 flex flex-col gap-1.5">
-          <ControlSlider label={t("span")} value={span} min={5} max={12} step={0.1} display={`${span.toFixed(1)} m`} onChange={setSpan} thumb="cyan" />
-          <ControlSlider label={t("mass")} value={mass} min={40} max={250} step={5} display={`${mass.toFixed(0)} kg`} onChange={setMass} thumb={plausible ? "teal" : "magenta"} />
+          <ControlSlider
+            label={t("span")}
+            value={span}
+            min={5}
+            max={12}
+            step={0.1}
+            display={`${span.toFixed(1)} m`}
+            onChange={setSpan}
+            thumb="cyan"
+          />
+          <ControlSlider
+            label={t("mass")}
+            value={mass}
+            min={40}
+            max={250}
+            step={5}
+            display={`${mass.toFixed(0)} kg`}
+            onChange={setMass}
+            thumb={plausible ? "teal" : "magenta"}
+          />
         </div>
       </div>
     </GlossaryFrame>

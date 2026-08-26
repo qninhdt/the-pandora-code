@@ -25,12 +25,7 @@ function pick(v: { vi: string; en: string } | string | undefined, loc: "vi" | "e
 // A creature/structure plate with annotated anchor points. Hover/focus/tap a
 // dot to reveal its callout; click the image to open it fullscreen (where the
 // same annotations ride along). Nothing is clipped or stacked below the frame.
-export function AnatomyPlate({
-  src,
-  title,
-  hotspots,
-  className,
-}: AnatomyPlateProps) {
+export function AnatomyPlate({ src, title, hotspots, className }: AnatomyPlateProps) {
   const locale = useLocale() as "vi" | "en";
   const resolved: ResolvedLabel[] = hotspots.map((h) => ({
     x: h.x,

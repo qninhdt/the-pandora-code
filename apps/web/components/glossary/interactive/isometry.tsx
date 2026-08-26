@@ -37,7 +37,15 @@ export default function Isometry() {
           aria-label={t("title")}
         >
           {/* small reference */}
-          <rect x="18" y="50" width="14" height="20" fill="var(--surface)" stroke="var(--teal)" strokeWidth="0.8" />
+          <rect
+            x="18"
+            y="50"
+            width="14"
+            height="20"
+            fill="var(--surface)"
+            stroke="var(--teal)"
+            strokeWidth="0.8"
+          />
           {/* scaled twin */}
           <rect
             x={55}

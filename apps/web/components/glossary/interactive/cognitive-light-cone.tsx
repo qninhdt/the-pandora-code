@@ -46,22 +46,8 @@ export default function CognitiveLightCone() {
           aria-label={t("title")}
         >
           {/* time axis */}
-          <line
-            x1="18"
-            y1="78"
-            x2="18"
-            y2="16"
-            stroke="var(--border-strong)"
-            strokeWidth="0.4"
-          />
-          <line
-            x1="18"
-            y1="78"
-            x2="92"
-            y2="78"
-            stroke="var(--border-strong)"
-            strokeWidth="0.4"
-          />
+          <line x1="18" y1="78" x2="18" y2="16" stroke="var(--border-strong)" strokeWidth="0.4" />
+          <line x1="18" y1="78" x2="92" y2="78" stroke="var(--border-strong)" strokeWidth="0.4" />
           <text
             x="92"
             y="84"
@@ -126,11 +112,7 @@ export default function CognitiveLightCone() {
         </svg>
 
         <div className="absolute right-3 top-14">
-          <Readout
-            label={t("reach")}
-            value={reach.toFixed(0)}
-            accent="teal"
-          />
+          <Readout label={t("reach")} value={reach.toFixed(0)} accent="teal" />
         </div>
 
         <div className="absolute inset-x-3 bottom-10">

@@ -46,8 +46,6 @@ const panelGlow: Record<Kind, "cyan" | "teal" | "magenta"> = {
   real_science: "cyan",
 };
 
-
-
 // A cinematic vertical "journey" down the codex: a glowing spine threads through
 // the page, Part markers land as luminous waypoints centered on the spine, and
 // each chapter floats in on a glass card that alternates sides on desktop. All
@@ -213,9 +211,7 @@ function TierKey() {
               className="size-2.5 rounded-full"
               style={{ background: c, boxShadow: `0 0 8px 0 ${c}` }}
             />
-            <span className="font-sans text-xs uppercase tracking-wider text-muted">
-              {t(k)}
-            </span>
+            <span className="font-sans text-xs uppercase tracking-wider text-muted">{t(k)}</span>
           </li>
         );
       })}

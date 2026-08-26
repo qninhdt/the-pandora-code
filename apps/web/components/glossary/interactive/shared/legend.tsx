@@ -35,9 +35,7 @@ export function Legend({ items, vertical = false, className }: LegendProps) {
               boxShadow: `0 0 8px -1px ${item.color}`,
             }}
           />
-          <span className="font-mono text-[10px] tracking-wide text-muted">
-            {item.label}
-          </span>
+          <span className="font-mono text-[10px] tracking-wide text-muted">{item.label}</span>
         </div>
       ))}
     </div>

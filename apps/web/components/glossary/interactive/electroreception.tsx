@@ -19,14 +19,39 @@ export default function Electroreception() {
       infoText={t("info")}
       onReset={() => setPrey(50)}
       allowFullscreen={false}
-      caption={<span className="text-cyan">{t("receptors")}: {(distortion * 100).toFixed(0)}%</span>}
+      caption={
+        <span className="text-cyan">
+          {t("receptors")}: {(distortion * 100).toFixed(0)}%
+        </span>
+      }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {/* predator */}
-          <ellipse cx="28" cy="50" rx="14" ry="7" fill="var(--surface)" stroke="var(--teal)" strokeWidth="0.8" />
+          <ellipse
+            cx="28"
+            cy="50"
+            rx="14"
+            ry="7"
+            fill="var(--surface)"
+            stroke="var(--teal)"
+            strokeWidth="0.8"
+          />
           {[0, 1, 2, 3, 4].map((i) => (
-            <circle key={i} cx={36} cy={42 + i * 4} r={1.2 + distortion * 1.5} fill="var(--cyan)" opacity={0.4 + distortion * 0.6} />
+            <circle
+              key={i}
+              cx={36}
+              cy={42 + i * 4}
+              r={1.2 + distortion * 1.5}
+              fill="var(--cyan)"
+              opacity={0.4 + distortion * 0.6}
+            />
           ))}
           {/* field lines */}
           {[0, 1, 2, 3].map((i) => (
@@ -45,7 +70,16 @@ export default function Electroreception() {
           <Readout label={t("field")} value={distortion.toFixed(2)} accent="cyan" />
         </div>
         <div className="absolute inset-x-3 bottom-10">
-          <ControlSlider label={t("prey")} value={prey} min={45} max={85} step={1} display={`${prey}`} onChange={setPrey} thumb="amber" />
+          <ControlSlider
+            label={t("prey")}
+            value={prey}
+            min={45}
+            max={85}
+            step={1}
+            display={`${prey}`}
+            onChange={setPrey}
+            thumb="amber"
+          />
         </div>
       </div>
     </GlossaryFrame>

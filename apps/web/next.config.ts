@@ -27,6 +27,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: {
     formats: ["image/avif", "image/webp"],
+    qualities: [68, 75, 78],
   },
   typedRoutes: false,
   // r3f/three ship untranspiled ESM; transpile so Next can bundle them.

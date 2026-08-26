@@ -70,15 +70,52 @@ export default function PreySwitching() {
           >
             dens.
           </text>
-          <rect x="70" y={60 - preyA * 32} width="8" height={preyA * 32} rx="1" fill="var(--cyan)" opacity="0.8" />
-          <rect x="82" y={60 - preyB * 32} width="8" height={preyB * 32} rx="1" fill="var(--magenta)" opacity="0.8" />
-          <text x="74" y="66" textAnchor="middle" style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--cyan)" }}>A</text>
-          <text x="86" y="66" textAnchor="middle" style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--magenta)" }}>B</text>
+          <rect
+            x="70"
+            y={60 - preyA * 32}
+            width="8"
+            height={preyA * 32}
+            rx="1"
+            fill="var(--cyan)"
+            opacity="0.8"
+          />
+          <rect
+            x="82"
+            y={60 - preyB * 32}
+            width="8"
+            height={preyB * 32}
+            rx="1"
+            fill="var(--magenta)"
+            opacity="0.8"
+          />
+          <text
+            x="74"
+            y="66"
+            textAnchor="middle"
+            style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--cyan)" }}
+          >
+            A
+          </text>
+          <text
+            x="86"
+            y="66"
+            textAnchor="middle"
+            style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--magenta)" }}
+          >
+            B
+          </text>
 
           {/* diet pie */}
           <circle cx={cx} cy={cy} r={r} fill="var(--magenta)" opacity="0.75" />
           {pieA && <path d={pieA} fill="var(--cyan)" opacity="0.9" />}
-          <circle cx={cx} cy={cy} r={r} fill="none" stroke="var(--border-strong)" strokeWidth="0.5" />
+          <circle
+            cx={cx}
+            cy={cy}
+            r={r}
+            fill="none"
+            stroke="var(--border-strong)"
+            strokeWidth="0.5"
+          />
           <text
             x={cx}
             y={cy + r + 8}
@@ -93,11 +130,7 @@ export default function PreySwitching() {
         </svg>
 
         <div className="absolute left-3 top-14">
-          <Readout
-            label={t("diet")}
-            value={`${(dietA * 100).toFixed(0)}%`}
-            accent="cyan"
-          />
+          <Readout label={t("diet")} value={`${(dietA * 100).toFixed(0)}%`} accent="cyan" />
         </div>
 
         <div className="absolute inset-x-3 bottom-10 space-y-1.5">

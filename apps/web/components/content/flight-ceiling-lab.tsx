@@ -34,15 +34,23 @@ function supply(m: number): number {
 
 function demand(m: number, g: number, rho: number): number {
   // Demand scales with g^1.5 / sqrt(rho)
-  const gFactor = Math.pow(g, 1.5);
+  const gFactor = g ** 1.5;
   const rhoFactor = 1 / Math.sqrt(rho);
   return DEMAND_K_EARTH * gFactor * rhoFactor * m ** DEMAND_EXP;
 }
 
 function ceilingMass(g: number, rho: number): number {
   // SUPPLY_K * M^0.73 = D_K * M^1.17 => M^0.44 = SUPPLY_K / D_K
-  const dk = (DEMAND_K_EARTH * Math.pow(g, 1.5)) / Math.sqrt(rho);
-  return Math.pow(SUPPLY_K / dk, 1 / (DEMAND_EXP - SUPPLY_EXP));
+  const dk = (DEMAND_K_EARTH * g ** 1.5) / Math.sqrt(rho);
+  return (SUPPLY_K / dk) ** (1 / (DEMAND_EXP - SUPPLY_EXP));
+}
+
+function xFor(m: number): number {
+  return PAD_L + (m / MASS_MAX) * (W_SVG - PAD_L - PAD_R);
+}
+
+function yFor(p: number, pMax: number): number {
+  return H_SVG - PAD_B - (p / pMax) * (H_SVG - PAD_T - PAD_B);
 }
 
 // Pre-defined presets
@@ -82,15 +90,12 @@ export function FlightCeilingLab({ caption, className }: FlightCeilingLabProps) 
   const ceiling = ceilingMass(g, rho);
   const pMax = supply(MASS_MAX) * 1.2;
 
-  const xFor = (m: number) => PAD_L + (m / MASS_MAX) * (W_SVG - PAD_L - PAD_R);
-  const yFor = (p: number) => H_SVG - PAD_B - (p / pMax) * (H_SVG - PAD_T - PAD_B);
-
   // Supply curve (teal)
   const supplyPath = useMemo(() => {
     const pts: string[] = [];
     for (let i = 0; i <= 50; i++) {
       const m = (i / 50) * MASS_MAX;
-      pts.push(`${i === 0 ? "M" : "L"} ${xFor(m).toFixed(1)} ${yFor(supply(m)).toFixed(1)}`);
+      pts.push(`${i === 0 ? "M" : "L"} ${xFor(m).toFixed(1)} ${yFor(supply(m), pMax).toFixed(1)}`);
     }
     return pts.join(" ");
   }, [pMax]);
@@ -101,7 +106,7 @@ export function FlightCeilingLab({ caption, className }: FlightCeilingLabProps) 
     for (let i = 0; i <= 50; i++) {
       const m = (i / 50) * MASS_MAX;
       pts.push(
-        `${i === 0 ? "M" : "L"} ${xFor(m).toFixed(1)} ${yFor(demand(m, g, rho)).toFixed(1)}`,
+        `${i === 0 ? "M" : "L"} ${xFor(m).toFixed(1)} ${yFor(demand(m, g, rho), pMax).toFixed(1)}`,
       );
     }
     return pts.join(" ");
@@ -114,14 +119,14 @@ export function FlightCeilingLab({ caption, className }: FlightCeilingLabProps) 
     const bot: string[] = [];
     for (let i = 0; i <= 30; i++) {
       const m = (i / 30) * limit;
-      top.push(`${i === 0 ? "M" : "L"} ${xFor(m).toFixed(1)} ${yFor(supply(m)).toFixed(1)}`);
-      bot.unshift(`L ${xFor(m).toFixed(1)} ${yFor(demand(m, g, rho)).toFixed(1)}`);
+      top.push(`${i === 0 ? "M" : "L"} ${xFor(m).toFixed(1)} ${yFor(supply(m), pMax).toFixed(1)}`);
+      bot.unshift(`L ${xFor(m).toFixed(1)} ${yFor(demand(m, g, rho), pMax).toFixed(1)}`);
     }
-    return top.join(" ") + " " + bot.join(" ") + " Z";
+    return `${top.join(" ")} ${bot.join(" ")} Z`;
   }, [ceiling, g, rho, pMax]);
 
   const cx = xFor(ceiling);
-  const cy = yFor(supply(ceiling));
+  const cy = yFor(supply(ceiling), pMax);
 
   return (
     <VizFigure

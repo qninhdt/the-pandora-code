@@ -15,9 +15,7 @@ function grid(p: number, seed: number) {
     s = (s * 16807) % 2147483647;
     return (s & 0x7fffffff) / 0x7fffffff;
   };
-  return Array.from({ length: G }, () =>
-    Array.from({ length: G }, () => rng() < p),
-  );
+  return Array.from({ length: G }, () => Array.from({ length: G }, () => rng() < p));
 }
 
 function orderParam(occ: boolean[][]) {
@@ -35,7 +33,12 @@ function orderParam(occ: boolean[][]) {
     const [r, c] = q.pop()!;
     size++;
     if (c === G - 1) spans = true;
-    for (const [dr, dc] of [[1, 0], [-1, 0], [0, 1], [0, -1]] as const) {
+    for (const [dr, dc] of [
+      [1, 0],
+      [-1, 0],
+      [0, 1],
+      [0, -1],
+    ] as const) {
       const nr = r + dr;
       const nc = c + dc;
       if (nr < 0 || nc < 0 || nr >= G || nc >= G) continue;
@@ -83,7 +86,7 @@ export default function PercolationThreshold() {
       allowFullscreen={false}
       caption={
         <span className={spans ? "text-amber" : "text-cyan"}>
-          {t("order")}: {pInf.toFixed(2)} · |p−pc|={(Math.abs(p - PC)).toFixed(3)}
+          {t("order")}: {pInf.toFixed(2)} · |p−pc|={Math.abs(p - PC).toFixed(3)}
         </span>
       }
     >
@@ -103,11 +106,31 @@ export default function PercolationThreshold() {
             )),
           )}
           {/* order-parameter plot */}
-          <rect x="64" y="18" width="32" height="52" rx="1" fill="var(--void)" opacity={0.5} stroke="var(--border-strong)" strokeWidth={0.4} />
+          <rect
+            x="64"
+            y="18"
+            width="32"
+            height="52"
+            rx="1"
+            fill="var(--void)"
+            opacity={0.5}
+            stroke="var(--border-strong)"
+            strokeWidth={0.4}
+          />
           {/* pc line */}
           {(() => {
             const xPc = 66 + ((PC - 0.3) / 0.5) * 28;
-            return <line x1={xPc} y1={20} x2={xPc} y2={66} stroke="var(--magenta)" strokeWidth={0.5} strokeDasharray="1 1" />;
+            return (
+              <line
+                x1={xPc}
+                y1={20}
+                x2={xPc}
+                y2={66}
+                stroke="var(--magenta)"
+                strokeWidth={0.5}
+                strokeDasharray="1 1"
+              />
+            );
           })()}
           <polyline
             fill="none"
@@ -128,7 +151,12 @@ export default function PercolationThreshold() {
             r={1.4}
             fill="var(--amber)"
           />
-          <text x="80" y="74" textAnchor="middle" style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="80"
+            y="74"
+            textAnchor="middle"
+            style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("pc")}
           </text>
         </svg>

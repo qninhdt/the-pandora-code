@@ -41,7 +41,15 @@ export default function Cursorial() {
         >
           <line x1="10" y1="78" x2="90" y2="78" stroke="var(--border-strong)" strokeWidth="0.6" />
           {/* body */}
-          <ellipse cx="50" cy={78 - leg - 6} rx="14" ry="5" fill="var(--surface)" stroke="var(--cyan)" strokeWidth="0.8" />
+          <ellipse
+            cx="50"
+            cy={78 - leg - 6}
+            rx="14"
+            ry="5"
+            fill="var(--surface)"
+            stroke="var(--cyan)"
+            strokeWidth="0.8"
+          />
           {/* legs — phase offset by gait */}
           {[0, 1, 2, 3].map((i) => {
             const phase =
@@ -68,8 +76,26 @@ export default function Cursorial() {
         </div>
 
         <div className="absolute inset-x-3 bottom-10 flex flex-col gap-1.5">
-          <ControlSlider label={t("limbRatio")} value={ratio} min={0.7} max={2} step={0.05} display={ratio.toFixed(2)} onChange={setRatio} thumb="teal" />
-          <ControlSlider label={t("froude")} value={speed} min={0.15} max={1.4} step={0.05} display={speed.toFixed(2)} onChange={setSpeed} thumb="cyan" />
+          <ControlSlider
+            label={t("limbRatio")}
+            value={ratio}
+            min={0.7}
+            max={2}
+            step={0.05}
+            display={ratio.toFixed(2)}
+            onChange={setRatio}
+            thumb="teal"
+          />
+          <ControlSlider
+            label={t("froude")}
+            value={speed}
+            min={0.15}
+            max={1.4}
+            step={0.05}
+            display={speed.toFixed(2)}
+            onChange={setSpeed}
+            thumb="cyan"
+          />
         </div>
       </div>
     </GlossaryFrame>

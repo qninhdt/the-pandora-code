@@ -30,14 +30,8 @@ export default function Teleology() {
   });
   const [active, setActive] = useState<ClaimId>("claimA");
 
-  const sorted = useMemo(
-    () => CLAIMS.filter((c) => bins[c] !== null).length,
-    [bins],
-  );
-  const correct = useMemo(
-    () => CLAIMS.filter((c) => bins[c] === CORRECT[c]).length,
-    [bins],
-  );
+  const sorted = useMemo(() => CLAIMS.filter((c) => bins[c] !== null).length, [bins]);
+  const correct = useMemo(() => CLAIMS.filter((c) => bins[c] === CORRECT[c]).length, [bins]);
 
   const assign = (bin: Bin) => {
     setBins((prev) => ({ ...prev, [active]: bin }));
@@ -48,9 +42,7 @@ export default function Teleology() {
       title={t("title")}
       category={t("category")}
       infoText={t("info")}
-      onReset={() =>
-        setBins({ claimA: null, claimB: null, claimC: null, claimD: null })
-      }
+      onReset={() => setBins({ claimA: null, claimB: null, claimC: null, claimD: null })}
       allowFullscreen={false}
       caption={
         <span className={correct === 4 ? "text-teal" : "text-amber"}>
@@ -172,18 +164,10 @@ export default function Teleology() {
         </div>
 
         <div className="absolute inset-x-3 bottom-10 flex justify-center gap-2">
-          <ControlButton
-            onClick={() => assign("mechanism")}
-            className="px-3 py-1"
-            variant="active"
-          >
+          <ControlButton onClick={() => assign("mechanism")} className="px-3 py-1" variant="active">
             → {t("mechanism")}
           </ControlButton>
-          <ControlButton
-            onClick={() => assign("purpose")}
-            className="px-3 py-1"
-            variant="accent"
-          >
+          <ControlButton onClick={() => assign("purpose")} className="px-3 py-1" variant="accent">
             → {t("purpose")}
           </ControlButton>
         </div>

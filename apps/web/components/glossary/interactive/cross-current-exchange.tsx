@@ -24,24 +24,66 @@ export default function CrossCurrentExchange() {
       infoText={t("info")}
       onReset={() => setIdx(1)}
       allowFullscreen={false}
-      caption={<span className="text-cyan">{t(m.key)} · {(m.eff * 100).toFixed(0)}%</span>}
+      caption={
+        <span className="text-cyan">
+          {t(m.key)} · {(m.eff * 100).toFixed(0)}%
+        </span>
+      }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {[0, 1, 2].map((i) => (
-            <line key={`a-${i}`} x1="20" y1={34 + i * 10} x2="80" y2={34 + i * 10} stroke="var(--cyan)" strokeWidth="1.1" />
+            <line
+              key={`a-${i}`}
+              x1="20"
+              y1={34 + i * 10}
+              x2="80"
+              y2={34 + i * 10}
+              stroke="var(--cyan)"
+              strokeWidth="1.1"
+            />
           ))}
           {idx === 0 &&
             [0, 1, 2].map((i) => (
-              <line key={`b-${i}`} x1="20" y1={38 + i * 10} x2="80" y2={38 + i * 10} stroke="var(--magenta)" strokeWidth="0.9" />
+              <line
+                key={`b-${i}`}
+                x1="20"
+                y1={38 + i * 10}
+                x2="80"
+                y2={38 + i * 10}
+                stroke="var(--magenta)"
+                strokeWidth="0.9"
+              />
             ))}
           {idx === 1 &&
             [0, 1, 2, 3].map((i) => (
-              <line key={`c-${i}`} x1={30 + i * 12} y1="30" x2={30 + i * 12} y2="64" stroke="var(--magenta)" strokeWidth="0.9" />
+              <line
+                key={`c-${i}`}
+                x1={30 + i * 12}
+                y1="30"
+                x2={30 + i * 12}
+                y2="64"
+                stroke="var(--magenta)"
+                strokeWidth="0.9"
+              />
             ))}
           {idx === 2 &&
             [0, 1, 2].map((i) => (
-              <line key={`d-${i}`} x1="80" y1={38 + i * 10} x2="20" y2={38 + i * 10} stroke="var(--magenta)" strokeWidth="0.9" />
+              <line
+                key={`d-${i}`}
+                x1="80"
+                y1={38 + i * 10}
+                x2="20"
+                y2={38 + i * 10}
+                stroke="var(--magenta)"
+                strokeWidth="0.9"
+              />
             ))}
           <rect x="20" y="78" width={m.eff * 60} height="5" fill="var(--teal)" opacity="0.85" />
         </svg>
@@ -50,8 +92,17 @@ export default function CrossCurrentExchange() {
         </div>
         <div className="absolute inset-x-3 bottom-12 flex justify-center gap-1.5">
           {MODES.map((mode, i) => (
-            <button key={mode.key} type="button" onClick={() => setIdx(i)} className="rounded-lg border px-2.5 py-1 font-mono text-[10px] uppercase"
-              style={{ borderColor: idx === i ? "var(--cyan)" : "var(--border-strong)", color: idx === i ? "var(--cyan)" : "var(--muted)", background: "var(--void)" }}>
+            <button
+              key={mode.key}
+              type="button"
+              onClick={() => setIdx(i)}
+              className="rounded-lg border px-2.5 py-1 font-mono text-[10px] uppercase"
+              style={{
+                borderColor: idx === i ? "var(--cyan)" : "var(--border-strong)",
+                color: idx === i ? "var(--cyan)" : "var(--muted)",
+                background: "var(--void)",
+              }}
+            >
               {t(mode.key)}
             </button>
           ))}

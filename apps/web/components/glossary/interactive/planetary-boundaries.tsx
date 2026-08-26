@@ -107,7 +107,14 @@ export default function PlanetaryBoundaries() {
             );
           })}
 
-          <circle cx={cx} cy={cy} r={rIn - 1} fill="var(--void)" stroke="var(--border-strong)" strokeWidth="0.4" />
+          <circle
+            cx={cx}
+            cy={cy}
+            r={rIn - 1}
+            fill="var(--void)"
+            stroke="var(--border-strong)"
+            strokeWidth="0.4"
+          />
           <text
             x={cx}
             y={cy + 1.2}
@@ -124,10 +131,7 @@ export default function PlanetaryBoundaries() {
             value={levels[active].toFixed(2)}
             accent={levels[active] > 1 ? "magenta" : "teal"}
           />
-          <ControlButton
-            className="px-2 py-1"
-            onClick={() => setActive((a) => (a + 1) % n)}
-          >
+          <ControlButton className="px-2 py-1" onClick={() => setActive((a) => (a + 1) % n)}>
             {t("push")} #{active + 1}
           </ControlButton>
         </div>

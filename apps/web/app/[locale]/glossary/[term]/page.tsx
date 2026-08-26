@@ -59,21 +59,6 @@ export default async function GlossaryDetail({ params }: GlossaryDetailProps) {
     <>
       <JsonLd data={breadcrumb} />
       <main className="mx-auto max-w-3xl space-y-6 px-6 pb-12 pt-32">
-        <nav aria-label="Breadcrumb" className="font-sans text-xs text-subtle">
-          <a href={`/${locale}`} className="hover:text-cyan">
-            {tRoot("nav.home")}
-          </a>
-          <span aria-hidden className="px-2">
-            /
-          </span>
-          <a href={`/${locale}/glossary`} className="hover:text-cyan">
-            {tRoot("nav.glossary")}
-          </a>
-          <span aria-hidden className="px-2">
-            /
-          </span>
-          <span className="text-muted">{entry.label}</span>
-        </nav>
         {cover && (
           <div className="relative mb-2 aspect-[16/9] w-full overflow-hidden rounded-2xl border border-[color:var(--border)]">
             <img src={cover} alt="" className="size-full object-cover" />

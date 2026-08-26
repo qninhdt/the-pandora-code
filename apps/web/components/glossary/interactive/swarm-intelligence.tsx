@@ -54,21 +54,15 @@ export default function SwarmIntelligence() {
         const r1 = Math.random();
         const r2 = Math.random();
         const cog = 1.1;
-        let vx =
-          inertia * p.vx +
-          cog * r1 * (p.bx - p.x) +
-          social * r2 * (gx - p.x);
-        let vy =
-          inertia * p.vy +
-          cog * r1 * (p.by - p.y) +
-          social * r2 * (gy - p.y);
+        let vx = inertia * p.vx + cog * r1 * (p.bx - p.x) + social * r2 * (gx - p.x);
+        let vy = inertia * p.vy + cog * r1 * (p.by - p.y) + social * r2 * (gy - p.y);
         const sp = Math.hypot(vx, vy);
         if (sp > 40) {
           vx = (vx / sp) * 40;
           vy = (vy / sp) * 40;
         }
-        let x = Math.max(5, Math.min(95, p.x + vx * dt));
-        let y = Math.max(12, Math.min(80, p.y + vy * dt));
+        const x = Math.max(5, Math.min(95, p.x + vx * dt));
+        const y = Math.max(12, Math.min(80, p.y + vy * dt));
         const f = fitness(x, y);
         let bx = p.bx;
         let by = p.by;
@@ -125,18 +119,27 @@ export default function SwarmIntelligence() {
       <div ref={ref} className="absolute inset-0">
         <svg viewBox="0 0 100 100" className="h-full w-full" role="img" aria-label={t("title")}>
           {heat.map((h, i) => (
-            <circle
-              key={i}
-              cx={h.x}
-              cy={h.y}
-              r={3.5}
-              fill="var(--teal)"
-              opacity={h.f * 0.45}
-            />
+            <circle key={i} cx={h.x} cy={h.y} r={3.5} fill="var(--teal)" opacity={h.f * 0.45} />
           ))}
           {/* peaks */}
-          <circle cx="30" cy="35" r="3" fill="none" stroke="var(--cyan)" strokeWidth={0.5} opacity={0.5} />
-          <circle cx="70" cy="55" r="3.5" fill="none" stroke="var(--amber)" strokeWidth={0.6} opacity={0.7} />
+          <circle
+            cx="30"
+            cy="35"
+            r="3"
+            fill="none"
+            stroke="var(--cyan)"
+            strokeWidth={0.5}
+            opacity={0.5}
+          />
+          <circle
+            cx="70"
+            cy="55"
+            r="3.5"
+            fill="none"
+            stroke="var(--amber)"
+            strokeWidth={0.6}
+            opacity={0.7}
+          />
           {parts.current.map((p, i) => (
             <circle key={i} cx={p.x} cy={p.y} r={1.8} fill="var(--magenta)" opacity={0.9} />
           ))}
@@ -152,8 +155,26 @@ export default function SwarmIntelligence() {
           <Readout label={t("best")} value={gBest.current.f.toFixed(2)} accent="amber" />
         </div>
         <div className="absolute inset-x-3 bottom-10 flex flex-col gap-1">
-          <ControlSlider label={t("inertia")} value={inertia} min={0.1} max={1} step={0.05} display={inertia.toFixed(2)} onChange={setInertia} thumb="cyan" />
-          <ControlSlider label={t("social")} value={social} min={0.2} max={2.5} step={0.05} display={social.toFixed(2)} onChange={setSocial} thumb="amber" />
+          <ControlSlider
+            label={t("inertia")}
+            value={inertia}
+            min={0.1}
+            max={1}
+            step={0.05}
+            display={inertia.toFixed(2)}
+            onChange={setInertia}
+            thumb="cyan"
+          />
+          <ControlSlider
+            label={t("social")}
+            value={social}
+            min={0.2}
+            max={2.5}
+            step={0.05}
+            display={social.toFixed(2)}
+            onChange={setSocial}
+            thumb="amber"
+          />
         </div>
       </div>
     </GlossaryFrame>

@@ -30,10 +30,11 @@ interface Boid {
 
 // Deterministic PRNG so the initial swarm is identical on server and client.
 function mulberry32(seed: number) {
+  let state = seed;
   return () => {
-    seed |= 0;
-    seed = (seed + 0x6d2b79f5) | 0;
-    let x = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+    state |= 0;
+    state = (state + 0x6d2b79f5) | 0;
+    let x = Math.imul(state ^ (state >>> 15), 1 | state);
     x = (x + Math.imul(x ^ (x >>> 7), 61 | x)) ^ x;
     return ((x ^ (x >>> 14)) >>> 0) / 4294967296;
   };
@@ -188,7 +189,12 @@ export function SwarmSteeringField({ caption, className }: SwarmSteeringFieldPro
       }
     >
       <div className="flex flex-col gap-3 sm:flex-row sm:items-stretch">
-        <svg viewBox={`0 0 ${W} ${H}`} className="w-full sm:w-2/3" role="img" aria-label={t("aria")}>
+        <svg
+          viewBox={`0 0 ${W} ${H}`}
+          className="w-full sm:w-2/3"
+          role="img"
+          aria-label={t("aria")}
+        >
           <GlowDefs idBase={uid} tones={["cyan", "magenta"]} />
 
           {/* the attractor */}

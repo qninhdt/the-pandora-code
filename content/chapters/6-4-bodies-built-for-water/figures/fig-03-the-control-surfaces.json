@@ -1,0 +1,38 @@
+{
+  "id": "fig-03-the-control-surfaces",
+  "chapter_slug": "bodies-built-for-water",
+  "role": "inline",
+  "narrative_purpose": "Shows what the flared limb strakes actually do: they are steering surfaces held out into fast-moving water, not paddles, which is why they are useful submerged and costly on land.",
+  "subject": "A close study of one turquoise Na'vi forearm and one lower leg held out into fast-moving water, each seen from slightly above and behind. Along the outer edge of each limb runs a broad flared ridge of muscle and fibrous tissue, flattening the limb's profile into a wing-like section. Water streams past both in smooth parallel bands that bend around the flared edges. The hand at the end of the forearm is open and relaxed with long fingers, doing no pushing. A faint tilt of the forearm turns the streaming water slightly, and the bands of flow continue past it in a gently deflected line.",
+  "scene": "Fast clear water in mid-swim, the rest of the swimmer's body implied at the edge of frame, small suspended particles streaking with the motion.",
+  "camera": "Close three-quarter view of the two limbs, tight enough that the flared ridges fill much of the frame.",
+  "light": "Cool blue-green light raking across the wet skin, cyan highlights along the flared edges, deep indigo shadow beneath each limb.",
+  "palette": "Turquoise skin, ocean teal water, cyan edge highlights, void indigo in the shadows.",
+  "style": "Painterly naturalist anatomical study, wet and muscular, hand-painted texture.",
+  "detail_level": "High detail on the flared muscular ridges and the wet skin; the streaming water rendered as soft directional bands rather than sharp lines.",
+  "composition": "Forearm across the upper left, lower leg across the lower right, open darker water in the upper right and lower left for overlay callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "callout lines",
+    "webbing between fingers",
+    "fins",
+    "modern equipment",
+    "Avatar branding"
+  ],
+  "consistency_notes": "The flare is a ridge of the limb's own muscle and fibrous tissue, continuous with the arm — not a fin, not a membrane, and not webbing between the fingers. Five long fingers on the hand, relaxed and open.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no labels, no arrows, no webbed fingers, no swim fins, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/bodies-built-for-water/fig-00-cover.png"
+  ]
+}

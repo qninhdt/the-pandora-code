@@ -143,14 +143,7 @@ export default function SourceSinkDynamics() {
 
           {/* migration arrow */}
           <defs>
-            <marker
-              id="arrow-ss"
-              markerWidth="4"
-              markerHeight="4"
-              refX="3"
-              refY="2"
-              orient="auto"
-            >
+            <marker id="arrow-ss" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
               <path d="M0 0 L4 2 L0 4 Z" fill="var(--amber)" />
             </marker>
           </defs>

@@ -1,0 +1,36 @@
+id: bioprospecting
+label:
+  vi: Đãi tìm sinh chất
+  en: Bioprospecting
+definition:
+  vi: >-
+    Việc tìm kiếm trong sinh giới những phân tử có thể trở thành thuốc, thuốc trừ sâu hay enzyme công
+    nghiệp. Trực giác ban đầu rất hấp dẫn: rừng nhiệt đới và rạn san hô là những thư viện hóa học khổng
+    lồ, nên bảo vệ đa dạng sinh học sẽ tự trả cho chính nó bằng các phát hiện dược phẩm. Kinh tế học
+    lại nói khác. Vì xác suất một loài cho ra hợp chất thành công cực nhỏ, và vì các loài khác nhau
+    thường cho những cấu trúc trùng lặp, giá trị kinh tế biên của việc giữ thêm một loài chưa sàng lọc
+    gần như bằng không. Thỏa thuận Merck–INBio năm 1991 với mười nghìn mẫu đã kiểm chứng điều đó: sau
+    một thập niên, không một thuốc thương mại nào. Đa dạng sinh học đáng được bảo vệ, nhưng vì những lý
+    do khác.
+  en: >-
+    Searching the living world for molecules that might become drugs, pesticides, or industrial enzymes.
+    The initial intuition is appealing: rainforests and reefs are vast chemical libraries, so protecting
+    biodiversity should pay for itself through pharmaceutical discovery. The economics say otherwise.
+    Because the probability that any one species yields a successful compound is tiny, and because
+    different species frequently yield redundant structures, the marginal economic value of keeping one
+    more unscreened species is close to zero. The 1991 Merck–INBio agreement, with ten thousand samples,
+    tested that: after a decade, no commercial drugs. Biodiversity is worth protecting, but for other
+    reasons.
+see_also:
+  - biopiracy
+  - nagoya-protocol
+  - marine-natural-product
+  - total-synthesis
+category: concept
+tags:
+  - bioeconomics
+  - law-and-policy
+cover_prompt: >-
+  A painterly naturalist plate of a dense forest and reef margin with a long orderly rack of small
+  numbered specimen jars standing in front of it, the rack extending well past the frame edge, cool
+  teal foliage and pale glass jars on deep indigo, painterly naturalist plate, no text, no labels.

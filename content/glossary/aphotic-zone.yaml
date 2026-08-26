@@ -1,0 +1,32 @@
+id: aphotic-zone
+label:
+  vi: Đới không ánh sáng
+  en: Aphotic zone
+definition:
+  vi: >-
+    Phần đại dương nơi ánh sáng mặt trời từ trên rọi xuống đã tắt hẳn — nói chung là dưới khoảng 1.000 m.
+    Nước biển không tối dần một cách đơn giản mà lọc trước rồi mới tắt: theo định luật Beer-Lambert, độ suy
+    giảm phụ thuộc mạnh vào bước sóng, nên đỏ và cam mất sạch trong vài chục mét đầu, còn cửa sổ lam-lục
+    quanh 470–490 nm suy giảm chậm hơn chừng hai chục lần. Dưới 200 m đã không đủ sáng cho quang hợp; dưới
+    1.000 m thì bằng không. Ở đó mọi hệ tín hiệu dựa vào phản chiếu đều chết theo, và cách duy nhất còn nói
+    được điều gì là tự phát ra ánh sáng.
+  en: >-
+    The part of the ocean where downwelling sunlight has failed entirely — broadly, below about 1,000 m. The
+    sea does not simply darken; it filters first and then goes out. Under the Beer-Lambert law attenuation
+    depends strongly on wavelength, so red and orange are gone within the first tens of metres while a
+    blue-green window near 470–490 nm decays some twenty times more slowly. Below 200 m there is not enough
+    for photosynthesis; below 1,000 m there is none. Every reflection-based signalling system dies there
+    together, and the only way left to say anything is to make light yourself.
+see_also:
+  - euphotic-zone
+  - bioluminescence
+  - counter-illumination
+  - chromatophore
+category: concept
+tags:
+  - oceanography
+  - ecology
+cover_prompt: >-
+  A vertical band of ocean showing colour vanishing with depth: warm reds and ambers extinguished in the
+  topmost sliver, a narrow blue-green window persisting far below, then total void indigo darkness filling
+  the lower two thirds, painterly naturalist plate, no text, no labels.

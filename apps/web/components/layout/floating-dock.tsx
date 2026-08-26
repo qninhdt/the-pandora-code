@@ -94,7 +94,10 @@ export function FloatingDock() {
               href={l.href}
               aria-current={isActive(l.href) ? "page" : undefined}
               className={cn(
-                "rounded-full px-3.5 py-1.5 font-sans text-sm transition-colors",
+                // Never wrap: a two-line label makes the pill grow and the whole
+                // dock reflow. Labels are short enough to stay on one line in
+                // both locales.
+                "whitespace-nowrap rounded-full px-3 py-1.5 font-sans text-sm transition-colors lg:px-3.5",
                 isActive(l.href)
                   ? "bg-surface text-cyan"
                   : "text-muted hover:bg-surface/60 hover:text-foreground",

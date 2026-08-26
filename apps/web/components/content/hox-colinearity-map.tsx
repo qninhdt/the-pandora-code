@@ -44,10 +44,13 @@ export function HoxColinearityMap({ caption, className }: HoxColinearityMapProps
   const [active, setActive] = useState<number | null>(null);
 
   const slotX = (i: number) => X0 + SLOT * i + SLOT / 2;
-  const current = active !== null ? {
-    gene: t(`genes.${GENES[active].id}.gene`),
-    region: t(`genes.${GENES[active].id}.region`),
-  } : null;
+  const current =
+    active !== null
+      ? {
+          gene: t(`genes.${GENES[active].id}.gene`),
+          region: t(`genes.${GENES[active].id}.region`),
+        }
+      : null;
 
   return (
     <VizFigure title={t("title")} caption={caption} className={className} hint={t("hint")}>

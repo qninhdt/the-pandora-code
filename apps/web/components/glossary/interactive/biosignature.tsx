@@ -40,9 +40,7 @@ function Atmosphere({
 
   return (
     <div className="flex flex-1 flex-col items-center gap-3">
-      <span className="font-mono text-[11px] uppercase tracking-wider text-muted">
-        {label}
-      </span>
+      <span className="font-mono text-[11px] uppercase tracking-wider text-muted">{label}</span>
       <div className="relative">
         <svg viewBox="0 0 120 120" className="size-28" aria-hidden>
           <title>{label}</title>
@@ -63,15 +61,34 @@ function Atmosphere({
             cx="60"
             cy="60"
             r="44"
-            fill={living ? "color-mix(in oklab, var(--teal) 28%, var(--void))" : "color-mix(in oklab, var(--stone, #8a93a8) 18%, var(--void))"}
+            fill={
+              living
+                ? "color-mix(in oklab, var(--teal) 28%, var(--void))"
+                : "color-mix(in oklab, var(--stone, #8a93a8) 18%, var(--void))"
+            }
             stroke={hasDisequilibrium ? "var(--teal)" : "var(--border-strong)"}
             strokeWidth="2"
           />
           {living && (
             <>
-              <circle cx="48" cy="52" r="7" fill="color-mix(in oklab, var(--teal) 45%, transparent)" />
-              <circle cx="72" cy="64" r="9" fill="color-mix(in oklab, var(--cyan) 35%, transparent)" />
-              <circle cx="58" cy="78" r="5" fill="color-mix(in oklab, var(--teal) 40%, transparent)" />
+              <circle
+                cx="48"
+                cy="52"
+                r="7"
+                fill="color-mix(in oklab, var(--teal) 45%, transparent)"
+              />
+              <circle
+                cx="72"
+                cy="64"
+                r="9"
+                fill="color-mix(in oklab, var(--cyan) 35%, transparent)"
+              />
+              <circle
+                cx="58"
+                cy="78"
+                r="5"
+                fill="color-mix(in oklab, var(--teal) 40%, transparent)"
+              />
             </>
           )}
         </svg>
@@ -93,8 +110,7 @@ export default function Biosignature() {
   const t = useTranslations("viz.biosignature");
   const [livingGases, setLivingGases] = useState<Record<GasKey, boolean>>(LIVING_GASES);
 
-  const toggle = (k: GasKey) =>
-    setLivingGases((g) => ({ ...g, [k]: !g[k] }));
+  const toggle = (k: GasKey) => setLivingGases((g) => ({ ...g, [k]: !g[k] }));
 
   const spectrum = useMemo(() => {
     // Build absorption dips for whichever gases are present on the living world.
@@ -142,15 +158,9 @@ export default function Biosignature() {
                 type="button"
                 onClick={() => toggle(g.key)}
                 className={`rounded-md border px-2 py-1 font-mono text-[10px] transition-colors ${
-                  livingGases[g.key]
-                    ? "text-foreground"
-                    : "border-border/40 text-muted opacity-50"
+                  livingGases[g.key] ? "text-foreground" : "border-border/40 text-muted opacity-50"
                 }`}
-                style={
-                  livingGases[g.key]
-                    ? { borderColor: g.color, color: g.color }
-                    : undefined
-                }
+                style={livingGases[g.key] ? { borderColor: g.color, color: g.color } : undefined}
               >
                 {t(g.key)}
               </button>

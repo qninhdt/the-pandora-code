@@ -10,6 +10,7 @@ import * as THREE from "three";
 // one THREE.Points, additive, one draw call. Mounted only through Scene3D.
 export function FieldViz() {
   const pointsRef = useRef<THREE.Points>(null);
+  const elapsed = useRef(0);
 
   const geometry = useMemo(() => {
     const rings = 6;
@@ -47,10 +48,11 @@ export function FieldViz() {
     [],
   );
 
-  useFrame((state) => {
+  useFrame((_, delta) => {
+    elapsed.current += delta;
     if (pointsRef.current) {
-      pointsRef.current.rotation.y = state.clock.elapsedTime * 0.25;
-      pointsRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.15) * 0.2;
+      pointsRef.current.rotation.y = elapsed.current * 0.25;
+      pointsRef.current.rotation.x = Math.sin(elapsed.current * 0.15) * 0.2;
     }
   });
 

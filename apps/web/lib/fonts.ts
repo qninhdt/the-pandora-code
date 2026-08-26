@@ -1,4 +1,4 @@
-import { Be_Vietnam_Pro, Inter, Spectral } from "next/font/google";
+import { Be_Vietnam_Pro, IBM_Plex_Mono, Inter, Spectral } from "next/font/google";
 
 // Display face - headings, hero titles, the book's visual identity. Built for
 // Vietnamese (the default locale) with heavy weights for display impact.
@@ -27,4 +27,14 @@ export const inter = Inter({
   display: "swap",
 });
 
-export const fontVariables = `${beVietnamPro.variable} ${spectral.variable} ${inter.variable}`;
+// Monospace reading option. IBM Plex Mono has Vietnamese coverage, which the
+// usual monospace choices (JetBrains Mono, Roboto Mono) lack for `ơ`/`ư`.
+export const ibmPlexMono = IBM_Plex_Mono({
+  variable: "--font-mono",
+  subsets: ["latin", "vietnamese"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+  display: "swap",
+});
+
+export const fontVariables = `${beVietnamPro.variable} ${spectral.variable} ${inter.variable} ${ibmPlexMono.variable}`;

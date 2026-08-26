@@ -1,9 +1,9 @@
 "use client";
 
-import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
-import { GlossaryFrame } from "./shared/frame";
+import { useMemo, useState } from "react";
 import { ControlSlider } from "./shared/control-slider";
+import { GlossaryFrame } from "./shared/frame";
 import { Readout } from "./shared/readout";
 
 // Roche limit: drag the moon's approach distance inward. Beyond the limit the
@@ -27,8 +27,8 @@ export default function RocheLimit() {
   const debris = useMemo(
     () =>
       Array.from({ length: 46 }, (_, i) => {
-        const seed = (i * 2654435761) % 1000 / 1000;
-        const seed2 = (i * 40503) % 997 / 997;
+        const seed = ((i * 2654435761) % 1000) / 1000;
+        const seed2 = ((i * 40503) % 997) / 997;
         return { a: seed * Math.PI * 2, spread: 0.3 + seed2 * 0.7, size: 0.3 + seed2 * 0.7 };
       }),
     [],
@@ -117,7 +117,7 @@ export default function RocheLimit() {
           {/* Debris stream (grows with disruption) — sheared into an arc toward planet */}
           {disruption > 0 &&
             debris.map((d, i) => {
-              const t01 = (i / debris.length);
+              const t01 = i / debris.length;
               // particles trail from the moon toward and around the planet
               const along = moonX - (moonX - planetX) * t01 * disruption;
               const ang = d.a + t01 * 4;

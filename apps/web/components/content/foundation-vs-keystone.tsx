@@ -220,18 +220,19 @@ export function FoundationVsKeystone({ caption, className }: FoundationVsKeyston
                     ? "border-transparent text-void"
                     : "border-[var(--border-strong)] text-muted hover:text-fg",
                 )}
-                style={
-                  s.id === selected.id
-                    ? { backgroundColor: ZONE_TONE[s.zone] }
-                    : undefined
-                }
+                style={s.id === selected.id ? { backgroundColor: ZONE_TONE[s.zone] } : undefined}
               >
                 {t(`species.${s.id}`)}
               </button>
             ))}
           </div>
 
-          <VizReadout label={t("readout.zone")} value={t(`zone.${selected.zone}`)} tone={tone} tinted />
+          <VizReadout
+            label={t("readout.zone")}
+            value={t(`zone.${selected.zone}`)}
+            tone={tone}
+            tinted
+          />
           <VizReadout
             label={t("readout.biomass")}
             value={`${Math.round(selected.biomass * 100)}%`}
@@ -253,4 +254,3 @@ export function FoundationVsKeystone({ caption, className }: FoundationVsKeyston
     </VizFigure>
   );
 }
-

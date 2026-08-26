@@ -28,11 +28,33 @@ export default function CohesionTension() {
       }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {/* trunk outline */}
-          <rect x="42" y="22" width="16" height="56" fill="var(--surface)" stroke="var(--cyan)" strokeWidth="0.8" rx="1" />
+          <rect
+            x="42"
+            y="22"
+            width="16"
+            height="56"
+            fill="var(--surface)"
+            stroke="var(--cyan)"
+            strokeWidth="0.8"
+            rx="1"
+          />
           {/* leaves / crown */}
-          <ellipse cx="50" cy="18" rx="18" ry="10" fill="var(--teal)" opacity={0.35 + pull * 0.35} />
+          <ellipse
+            cx="50"
+            cy="18"
+            rx="18"
+            ry="10"
+            fill="var(--teal)"
+            opacity={0.35 + pull * 0.35}
+          />
           {/* soil */}
           <rect x="20" y="78" width="60" height="8" fill="var(--surface)" opacity={0.7} />
           {/* water column */}
@@ -59,8 +81,21 @@ export default function CohesionTension() {
           {/* cavitation bubble */}
           {cavitated && (
             <g>
-              <ellipse cx="50" cy="48" rx="5" ry="7" fill="var(--void)" stroke="var(--magenta)" strokeWidth="1" />
-              <text x="50" y="50" textAnchor="middle" style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--magenta)" }}>
+              <ellipse
+                cx="50"
+                cy="48"
+                rx="5"
+                ry="7"
+                fill="var(--void)"
+                stroke="var(--magenta)"
+                strokeWidth="1"
+              />
+              <text
+                x="50"
+                y="50"
+                textAnchor="middle"
+                style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--magenta)" }}
+              >
                 {t("cavitation")}
               </text>
               {/* broken segments */}
@@ -70,8 +105,12 @@ export default function CohesionTension() {
           )}
           {/* tension arrows */}
           <path d={`M60 ${topY + 4} L68 ${topY + 4}`} stroke="var(--amber)" strokeWidth="0.7" />
-          <path d={`M60 74 L68 74`} stroke="var(--amber)" strokeWidth="0.7" />
-          <text x="70" y={topY + 5} style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--amber)" }}>
+          <path d={"M60 74 L68 74"} stroke="var(--amber)" strokeWidth="0.7" />
+          <text
+            x="70"
+            y={topY + 5}
+            style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--amber)" }}
+          >
             {t("tension")}
           </text>
         </svg>

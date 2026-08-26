@@ -30,7 +30,7 @@ export default function SignalToNoiseRatio() {
       noisy.push(`${x},${50 - pure - n}`);
     }
     return { pure: pts.join(" "), noisy: noisy.join(" ") };
-  }, [noise, signalAmp]);
+  }, [noise]);
 
   return (
     <GlossaryFrame

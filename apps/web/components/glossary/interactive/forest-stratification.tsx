@@ -41,7 +41,13 @@ export default function ForestStratification() {
       }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {LAYERS.map((layer) => {
             const m = LAYER_Y[layer];
             const on = layer === active;
@@ -65,11 +71,26 @@ export default function ForestStratification() {
                   strokeWidth={on ? 1 : 0.4}
                   rx="1"
                 />
-                <text x="20" y={m.y + m.h / 2 + 1} style={{ fontSize: 2.3, fontFamily: "monospace", fill: on ? fill : "var(--muted)" }}>
+                <text
+                  x="20"
+                  y={m.y + m.h / 2 + 1}
+                  style={{
+                    fontSize: 2.3,
+                    fontFamily: "monospace",
+                    fill: on ? fill : "var(--muted)",
+                  }}
+                >
                   {t(layer)}
                 </text>
                 {pandoran && on && (
-                  <circle cx="60" cy={m.y + m.h / 2} r="2" fill="var(--magenta)" opacity={0.9} style={{ filter: "drop-shadow(0 0 4px var(--magenta))" }} />
+                  <circle
+                    cx="60"
+                    cy={m.y + m.h / 2}
+                    r="2"
+                    fill="var(--magenta)"
+                    opacity={0.9}
+                    style={{ filter: "drop-shadow(0 0 4px var(--magenta))" }}
+                  />
                 )}
               </g>
             );
@@ -80,7 +101,11 @@ export default function ForestStratification() {
         </svg>
         <div className="absolute right-3 top-14 space-y-1">
           <Readout label={t("light")} value={`${Math.round(meta.light * 100)}%`} accent="amber" />
-          <Readout label={t("humidity")} value={`${Math.round(meta.humidity * 100)}%`} accent="cyan" />
+          <Readout
+            label={t("humidity")}
+            value={`${Math.round(meta.humidity * 100)}%`}
+            accent="cyan"
+          />
         </div>
         <div className="absolute inset-x-3 bottom-10 flex flex-wrap justify-center gap-1.5">
           {LAYERS.map((layer) => (
@@ -94,7 +119,11 @@ export default function ForestStratification() {
               <span className="px-0.5 text-[10px] uppercase tracking-wider">{t(layer)}</span>
             </ControlButton>
           ))}
-          <ControlButton variant={pandoran ? "accent" : "default"} onClick={() => setPandoran((v) => !v)} aria-label={t("variant")}>
+          <ControlButton
+            variant={pandoran ? "accent" : "default"}
+            onClick={() => setPandoran((v) => !v)}
+            aria-label={t("variant")}
+          >
             <span className="px-0.5 text-[10px] uppercase tracking-wider">{t("variant")}</span>
           </ControlButton>
         </div>

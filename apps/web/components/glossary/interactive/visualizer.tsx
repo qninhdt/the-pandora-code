@@ -561,10 +561,9 @@ const GLOSSARY_VISUALIZATIONS: Partial<Record<GlossaryVisualizationId, React.Com
   // Cetacean cognition and cultural transmission
   "animal-culture": dynamic(() => import("./animal-culture"), { ssr: false }),
   "social-learning": dynamic(() => import("./social-learning"), { ssr: false }),
-  "network-based-diffusion-analysis": dynamic(
-    () => import("./network-based-diffusion-analysis"),
-    { ssr: false },
-  ),
+  "network-based-diffusion-analysis": dynamic(() => import("./network-based-diffusion-analysis"), {
+    ssr: false,
+  }),
 };
 
 interface GlossaryVisualizerProps {

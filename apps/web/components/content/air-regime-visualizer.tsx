@@ -2,11 +2,11 @@
 
 import { GlowDefs, glowUrl } from "@/components/content/viz/glow-defs";
 import { SegmentedToggle } from "@/components/content/viz/segmented-toggle";
+import { usePhaseLoop } from "@/components/content/viz/use-phase-loop";
 import { VizFigure } from "@/components/content/viz/viz-figure";
 import { VizReadout } from "@/components/content/viz/viz-readout";
 import { VizSlider } from "@/components/content/viz/viz-slider";
 import { VizText } from "@/components/content/viz/viz-svg-text";
-import { usePhaseLoop } from "@/components/content/viz/use-phase-loop";
 import { useReducedMotionSafe } from "@/components/motion/use-reduced-motion-safe";
 import { useTranslations } from "next-intl";
 import { useId, useState } from "react";

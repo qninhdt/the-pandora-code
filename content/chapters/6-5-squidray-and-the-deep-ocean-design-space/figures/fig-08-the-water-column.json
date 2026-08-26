@@ -1,0 +1,40 @@
+{
+  "id": "fig-08-the-water-column",
+  "chapter_slug": "squidray-and-the-deep-ocean-design-space",
+  "role": "diagram",
+  "narrative_purpose": "Shows the vertical commute that closes the animal's energy budget: shelter and a landmark at the bottom, almost all of the calories at the top.",
+  "subject": "A tall vertical slice through the whole ocean seen from the side, from the sunlit surface at the top of the frame to the seafloor at the bottom. At the top, bright shallow water over a shelf of glowing reef structures crowded with dense schools of small fish. Below that the water darkens through a broad middle band of open blue-black water containing only a few scattered drifting organisms. At the bottom, a small cluster of vent chimneys with dense pale tubeworm thickets around them on an otherwise bare dark plain. The same squid-ray animal appears four times along a single continuous S-curved path: once near the chimneys with wings folded close, once mid-ascent through the dark middle band with wings half spread, once striking among the surface fish schools with tentacles extended forward, and once descending again with wings spread wide.",
+  "scene": "One continuous ocean cross-section spanning the full depth range, top brightly lit and bottom in darkness.",
+  "camera": "Tall straight-on lateral cross-sectional view, no perspective foreshortening, the full water column visible at once.",
+  "light": "Strong pale downwelling light in the top fifth fading steadily to complete darkness by the middle of the frame; faint warm glow at the vent chimneys; the animals' own cyan photophores visible only in the dark portions.",
+  "palette": "Ocean teal and pale mist in the sunlit top, deepening void indigo through the middle and bottom, ember amber only at the vent fluid, Pandora cyan on the reef glow and the animals' photophores.",
+  "style": "Painterly naturalist depth-profile plate, one continuous scene rather than stacked panels.",
+  "detail_level": "High detail on the reef and fish schools at the top and the vent cluster at the bottom; the middle band deliberately sparse and hazy; each of the four animal positions clearly readable.",
+  "composition": "Vertical composition with sunlit reef across the top fifth, empty dark mid water through the middle three fifths, vent field across the bottom fifth, the S-curved path of the four animal positions running down the centre-right, plain dark water at the left for annotations.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "dotted path lines",
+    "depth scales",
+    "measurement rules",
+    "panel borders",
+    "submarines",
+    "human figures"
+  ],
+  "consistency_notes": "All four animals are the same individual design as fig-00-cover, differing only in wing posture and tentacle position. No drawn path line - the reader infers the route from the four positions.",
+  "aspect_ratio": "9:16",
+  "negative_prompt": "no text, no labels, no arrows, no dotted or dashed path lines, no depth scale, no panel borders, no submarine, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/squidray-and-the-deep-ocean-design-space/fig-00-cover.png"
+  ]
+}

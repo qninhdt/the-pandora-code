@@ -1,4 +1,9 @@
 <DiagramFigure
+  labels={[
+    { x: 20, y: 45, side: "right", label: "Intact bioluminescent forest", note: "Densely interconnected canopy and root web holding the planetary network" },
+    { x: 50, y: 60, side: "right", label: "Re-knitting lattice", note: "Cyan filaments bridge signals across and around the scarred boundary" },
+    { x: 82, y: 50, side: "left", label: "Scorched clear-cut", note: "Physical trees destroyed by fire, but underlying topology reroutes" }
+  ]}
   src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-00-cover.webp"
   alt="A vast Pandoran rainforest seen from above at night, half of it scarred by a black burn-line where RDA machines have clear-cut and torched a wide swathe; yet across the whole landscape a fine cyan lattice of glowing connections still webs between the surviving trees, threading around and across the wound as if the burn were a hole punched in a net that simply re-knits around it"
   figNo="00"
@@ -26,10 +31,10 @@ The fourth blow moves to the ocean. In *The Way of Water*, the RDA's whaling div
   src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-01-catalog-of-strikes.webp"
   alt="A stylized dark map of Pandora's living network drawn as a web of glowing cyan nodes and links, with four distinct RDA strikes marked across it: a small grove being bulldozed at the edge, a massive node being felled near the centre, a single brightly-glowing hub node ringed by a targeting reticle, and a cluster of mobile nodes in an ocean region being struck; most of the web remains lit and connected despite the damage"
   labels={[
-    { x: 62, y: 11, side: "left", label: "The aimed strike", note: "Tree of Souls — a true hub, ringed for targeting" },
-    { x: 16, y: 84, side: "right", label: "Bulldozed grove", note: "Tree of Voices — a leaf node the network barely misses" },
-    { x: 40, y: 56, side: "right", label: "A felled giant", note: "Hometree — huge, yet not load-bearing for the whole" },
-    { x: 84, y: 60, side: "left", label: "Hunted in the deep", note: "Tulkun — mobile nodes removed region by region" },
+    { x: 59, y: 13, side: "left", label: "The aimed strike", note: "Tree of Souls — a true hub, ringed for targeting" },
+    { x: 18, y: 80, side: "right", label: "Bulldozed grove", note: "Tree of Voices — a leaf node the network barely misses" },
+    { x: 47, y: 53, side: "right", label: "A felled giant", note: "Hometree — massive physical biomass, yet topologically redundant" },
+    { x: 82, y: 62, side: "left", label: "Hunted in the deep", note: "Tulkun — mobile nodes removed region by region" }
   ]}
   figNo="01"
   caption="Four strikes, three of them effectively random and one of them aimed. Bulldozing the Tree of Voices and felling the Hometrees delete nodes the network barely depends on. Hunting the tulkun removes mobile nodes one region at a time. Only the assault on the Tree of Souls is true target selection — an attempt to decapitate the hub — and it is the only one the planet stops before it lands. The difference between random loss and targeted loss is not a detail. It is the entire difference between a network that survives and one that shatters."
@@ -64,10 +69,10 @@ Albert and her colleagues then did something simple and devastating. They asked:
   src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-02-random-vs-targeted.webp"
   alt="A two-panel naturalist diagram of the same scale-free network of glowing nodes and links, with a few large hub nodes and many small leaf nodes. Left panel labelled random failure: scattered small leaf nodes are dimmed and removed, but the hubs remain and the whole web stays connected and lit. Right panel labelled targeted attack: only the few large hub nodes are removed, and the web instantly fragments into many small disconnected dark islands"
   labels={[
-    { x: 25, y: 30, side: "right", label: "Random failure", note: "Blind loss hits the abundant leaves; the hubs survive" },
-    { x: 25, y: 88, side: "right", label: "Giant component holds", note: "One connected whole, barely dented" },
-    { x: 70, y: 22, side: "left", label: "Targeted attack", note: "Aim at the few hubs first" },
-    { x: 68, y: 50, side: "left", label: "Shattered into islands", note: "The dead hubs (magenta) strand every leaf they held" },
+    { x: 25, y: 42, side: "right", label: "Hub-connected core", note: "Central high-degree hubs survive random deletions unscathed" },
+    { x: 25, y: 84, side: "right", label: "Giant component holds", note: "Random loss hits abundant leaves; global connectivity remains intact" },
+    { x: 72, y: 22, side: "left", label: "Targeted attack", note: "Strategic removal aimed selectively at high-degree hubs" },
+    { x: 72, y: 52, side: "left", label: "Shattered into islands", note: "Dead hubs (magenta X) sever connections, causing topological collapse" }
   ]}
   figNo="02"
   caption="The same network, two ways of breaking it. Delete nodes at random (left) and you almost always hit the abundant low-degree leaves; the hubs survive, the giant component holds, and the network barely notices losing even a large fraction of itself. Delete the few high-degree hubs on purpose (right) and the network disintegrates after only a tiny number of removals. Scale-free networks are simultaneously the most robust structures against accident and the most fragile against sabotage. What you remove matters incomparably more than how much."
@@ -120,10 +125,10 @@ This is the exact tool we need for the Tree of Souls. The reason its destruction
   src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-03-articulation-point.webp"
   alt="A network diagram of two dense glowing cyan clusters of nodes — a forest module on the left and a wider planetary network on the right — joined by a single bright bridging node sitting on the only link between them; a targeting reticle is trained on that bridge node, and a faint ghosted version shows the right cluster surviving intact while the left cluster goes dark and disconnected once the bridge is cut"
   labels={[
-    { x: 18, y: 30, side: "right", label: "The local module", note: "One clan's forest — densely wired within itself" },
-    { x: 50, y: 28, side: "left", label: "The articulation point", note: "The single bridge node — cut it and the graph splits" },
-    { x: 78, y: 32, side: "left", label: "The planetary network", note: "The far side closes over the gap and survives intact" },
-    { x: 24, y: 82, side: "right", label: "Severed, not killed", note: "Below: the bridge cut — the module goes dark, amputated from the whole" },
+    { x: 19, y: 31, side: "right", label: "The local module", note: "One clan's forest — densely wired within itself" },
+    { x: 40, y: 31, side: "left", label: "The articulation point", note: "The single bridge node (pink reticle) — cut it and the graph splits" },
+    { x: 74, y: 28, side: "left", label: "The planetary network", note: "The far side closes over the gap and survives intact" },
+    { x: 19, y: 79, side: "right", label: "Severed, not killed", note: "Below: the bridge cut — the module goes dark, amputated from the whole" }
   ]}
   figNo="03"
   caption="What an articulation point is, and why the Tree of Souls might be one. A modular network keeps its damage local — dense clusters wired richly inside, sparsely between. The few nodes that sit on the bridges between modules are the articulation points: cut one and you split the graph. If the Tree of Souls is the bridge coupling the Omaticaya forest to the planetary network, destroying it would not kill Eywa — the far side closes over — but it would amputate one clan from the whole. That, not decapitation, is the real shape of Quaritch's plan."
@@ -146,9 +151,9 @@ Now read the woodsprites again. The *atokirina'* — the drifting, luminous seed
   src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-04-woodsprite-seedbank.webp"
   alt="A burned, ashen Pandoran clearing at night, the ground sterile and dark — and drifting in from the glowing untouched forest at the edges of the frame, a swarm of luminous jellyfish-like woodsprites settling onto the bare earth, where the faintest new cyan threads of root and network are beginning to spread out from where the first ones have landed, re-knitting the gap"
   labels={[
-    { x: 14, y: 24, side: "right", label: "Untouched hub forest", note: "The intact network at the edges — the source of the seeds" },
-    { x: 40, y: 40, side: "left", label: "The drifting seed bank", note: "Atokirina' carried in on the wind across the moon" },
-    { x: 56, y: 80, side: "left", label: "Reseeding the gap", note: "New threads spread from where the first woodsprites land" },
+    { x: 18, y: 25, side: "right", label: "Untouched hub forest", note: "Intact sacred tree acts as the broadcast reservoir for seeds" },
+    { x: 44, y: 38, side: "left", label: "The drifting seed bank", note: "Atokirina' carried on wind currents across the moon" },
+    { x: 67, y: 76, side: "left", label: "Reseeding the gap", note: "Settled woodsprites extend new cyan hyphal threads into sterile ash" }
   ]}
   figNo="04"
   caption="The seed bank that flies. The atokirina' — the woodsprites — are the drifting seeds of the network's most connected hubs, dispersed on the wind across the whole moon. Burn a region to sterile ash and they settle in from untouched forest and reseed it, restoring not just trees but the network's connectivity, planting fresh nodes into the gap. This is why the climb toward the percolation threshold is continually undone: the network regrows its lost nodes faster than blind burning can subtract them."
@@ -162,9 +167,9 @@ The two get confused constantly, and the difference is everything. A resistant s
 <DiagramFigure
   src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-05-resistance-vs-resilience.webp"
   labels={[
-    { x: 25, y: 42, side: "right", label: "Resistance", note: "Thick bark keeps the fire from entering; the standing trunk looks unchanged." },
-    { x: 77, y: 47, side: "left", label: "Resilience", note: "The stand burns to stumps, but buried reserves are already rebuilding lost function." },
-    { x: 78, y: 76, side: "left", label: "Recovery reserve", note: "Young shoots, fungal threads, and living soil carry the second strategy forward." },
+    { x: 25, y: 38, side: "right", label: "Resistance (armour)", note: "Thick bark deflects flame; the standing trunk structure remains unchanged" },
+    { x: 74, y: 45, side: "left", label: "Resilience (renewal)", note: "Canopy burns to stumps, but underlying function is actively rebuilt" },
+    { x: 65, y: 68, side: "left", label: "Recovery reserve", note: "Buried root crowns, fungal threads, and fresh green shoots rapidly resprout" }
   ]}
   alt="Two forest survival strategies: a thick-barked trunk on the left turns aside a low fire and remains unchanged, while on the right an ordinary stand has burned to black stumps but is already crowded with new shoots, fungal threads, and young saplings"
   figNo="05"
@@ -181,9 +186,9 @@ The first way is **targeted hub decapitation** — the Albert-Barabási attack m
 <DiagramFigure
   src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-06-simultaneous-hub-strike.webp"
   labels={[
-    { x: 24, y: 39, side: "right", label: "Rare hubs", note: "The circled sacred trees are few compared with the surrounding intact forest." },
-    { x: 52, y: 55, side: "right", label: "Simultaneous strike", note: "A coordinated attack removes connectors at once rather than clearing every ordinary tree." },
-    { x: 79, y: 80, side: "left", label: "Topological damage", note: "The links fail across a huge landscape even though the physically destroyed area stays small." },
+    { x: 16, y: 35, side: "right", label: "Targeted terrestrial hubs", note: "Rare sacred trees circled in magenta across the terrestrial canopy" },
+    { x: 39, y: 48, side: "right", label: "Simultaneous coordinated strike", note: "Pinpointing key connector nodes rather than clear-cutting ordinary forest" },
+    { x: 69, y: 79, side: "left", label: "Subsea Spirit Tree hubs", note: "Marine neural conduits targeted to decouple oceanic and terrestrial webs" }
   ]}
   alt="A high night panorama across forest, coast, and reef where almost every ordinary tree remains standing, but seven rare sacred-tree, fungal, and underwater hubs are targeted together; their surrounding links fail and the intact landscape separates into disconnected pools of light"
   figNo="06"
@@ -198,9 +203,9 @@ The third way is subtler and crueller: **sterilising the regeneration itself**. 
 <DiagramFigure
   src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-07-sterile-future.webp"
   labels={[
-    { x: 27, y: 43, side: "right", label: "Recovery reserve", note: "Seeds, fungi, and seedlings wait beneath a mature canopy that still has a future." },
-    { x: 75, y: 43, side: "left", label: "Sterile present", note: "Adult trunks remain standing over pale soil where the next generation has already disappeared." },
-    { x: 75, y: 79, side: "left", label: "Resilience turned countdown", note: "When the last adults fall, there is no buried reserve left to restart the forest." },
+    { x: 25, y: 65, side: "right", label: "Living recovery reserve", note: "Seeds, mycorrhizal hyphae, woodsprites, and germinants ready to replace canopy" },
+    { x: 75, y: 22, side: "left", label: "Deceptive green canopy", note: "Adult trees stand unchanged today, masking subterranean sterility" },
+    { x: 75, y: 65, side: "left", label: "Dead subsoil (countdown)", note: "Poisoned soil with dead hyphae and empty seed husks — zero replacement capacity" }
   ]}
   alt="Two apparently similar mature forests shown in soil cutaway: beneath the left are seeds, living fungal threads, settling woodsprites, and many seedlings, while beneath the right the adult trunks still stand over pale poisoned soil containing empty husks, dead hyphae, and no next generation"
   figNo="07"
@@ -215,9 +220,9 @@ The fourth way is the most insidious, and it comes from one of the genuinely fri
 <DiagramFigure
   src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-08-fauna-flora-cascade.webp"
   labels={[
-    { x: 18, y: 55, side: "right", label: "Animals present", note: "Pollinators, seed carriers, grazers, flowers, and fruit still support one another." },
-    { x: 50, y: 55, side: "right", label: "Fauna removed first", note: "Plants remain standing for a while, but pollination and seed movement have stopped." },
-    { x: 82, y: 55, side: "left", label: "Cascade", note: "Fewer plants mean less food, so the remaining animals collapse after the initial loss." },
+    { x: 16, y: 48, side: "right", label: "Intact mutualistic web", note: "Pollinators, seed-dispersing grazers, and vibrant bioluminescent flora" },
+    { x: 50, y: 55, side: "right", label: "Fauna removed (silent forest)", note: "Trees stand but unpollinated flowers and rotting seeds arrest recruitment" },
+    { x: 83, y: 55, side: "left", label: "Co-extinction cascade", note: "Canopy collapses from lack of regeneration; remaining fauna starve" }
   ]}
   alt="The same Pandoran clearing in three stages: first full of pollinators, seed carriers, grazers, flowers, and fruit; then with mature plants still standing but animals absent and seeds rotting beneath their parents; finally with a thinning canopy, no young plants, scarce fruit, and the few remaining animals starving"
   figNo="08"

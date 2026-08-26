@@ -1,0 +1,35 @@
+{
+  "id": "fig-04-the-blood-goes-inward",
+  "chapter_slug": "bodies-built-for-water",
+  "role": "diagram",
+  "narrative_purpose": "Makes the dive reflex concrete: within seconds of a face entering cold water, circulation is withdrawn from the limbs and skin and concentrated on the heart and brain.",
+  "subject": "A single turquoise Na'vi figure suspended face-down and horizontal in dark water, arms loose at the sides, seen from directly above so the whole body reads at once. The body is rendered semi-transparent so the vascular network shows through the skin. In the arms, the legs, the tail and across the surface of the skin the vessels are drawn narrow, dim and constricted, fading almost to nothing at the extremities. Around the heart, filling the chest cavity, and running up the neck into the head, the vessels are thick, engorged and brightly glowing. The chest itself appears full and turgid with blood. A soft band of cold pale light lies across the forehead, eyes and upper cheeks where the face meets the water.",
+  "scene": "Deep dark water with nothing else in frame, faint particles suspended, the surface far above out of view.",
+  "camera": "Straight-down overhead view of the full horizontal body, filling the frame lengthwise.",
+  "light": "Bright cyan and warm crimson internal glow concentrated in the chest and head, everything peripheral falling into deep indigo shadow, a pale cool wash across the face.",
+  "palette": "Void indigo dominant, crimson and cyan glow at the core, cold pale light on the face, muted teal at the dim extremities.",
+  "style": "Painterly naturalist anatomical plate, glowing from within, not a medical schematic.",
+  "detail_level": "High detail on the engorged chest and neck vessels and on the pale light across the face; the limbs deliberately dim and simplified.",
+  "composition": "Body running diagonally across the frame, open dark water at the two opposite corners for overlay callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "callout lines",
+    "heart rate traces",
+    "graphs",
+    "medical diagram styling",
+    "Avatar branding"
+  ],
+  "consistency_notes": "The contrast must be unmistakable: bright and full at the core, dark and constricted at the periphery. One tail, four limbs, turquoise Metkayina skin. No numbers or traces anywhere in the image.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no graphs or heart-rate traces, no sterile medical-diagram look, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

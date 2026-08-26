@@ -1,0 +1,40 @@
+{
+  "id": "fig-07-the-vent-field",
+  "chapter_slug": "squidray-and-the-deep-ocean-design-space",
+  "role": "inline",
+  "narrative_purpose": "Shows the vent field as it really is: extraordinarily dense biomass packed into a very small patch of seafloor, with the predators hanging above it as visitors rather than residents.",
+  "subject": "A dark seafloor plain with a cluster of five tall mineral chimneys rising from it, each a rough dark spire with shimmering hot fluid streaming upward from its top and bending away in the current. Around the base of every chimney grows an extremely dense thicket of long pale tubeworms with dark red plumes at their tips, and between the thickets lie crowded beds of large closed shells and clusters of small pale shrimp and crabs. Immediately beyond the outermost thicket the seafloor is completely bare dark sediment stretching away flat and empty in every direction, with a sharp boundary between the crowded life and the emptiness. Two large squid-ray animals hang in the water perhaps twenty metres above the chimneys, small in the frame, silhouetted against nothing.",
+  "scene": "Abyssal seafloor in total darkness, the vent field an isolated island of life on an otherwise empty plain.",
+  "camera": "Wide elevated view looking down and across the field so that both the crowded patch and the surrounding bare plain are visible in one frame.",
+  "light": "Faint warm glow from the hot vent fluid at the chimney tops, cool cyan bioluminescence scattered through the tubeworm thickets, deep indigo darkness everywhere beyond the field.",
+  "palette": "Void indigo darkness, ember amber restricted to the chimney fluid, pale mist grey tubeworm tubes with deep magenta plume tips, ocean teal in the mid water.",
+  "style": "Painterly naturalist deep-sea plate, awed but observational.",
+  "detail_level": "High detail on the chimneys, tubeworm density and shell beds; the bare plain flat and low-detail; the two animals above reduced to dark shapes.",
+  "composition": "Chimney cluster occupying the lower left third, the sharp boundary to bare plain running across the middle to the right, the two hovering animals small in the upper right, plain dark water across the top of the frame for annotations.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "submarines",
+    "submersible lights",
+    "human figures",
+    "sunlight",
+    "coral reef",
+    "fish schools"
+  ],
+  "consistency_notes": "The contrast between the crowded vent patch and the empty plain around it is the point and must be unmistakable. The two animals are the same species as fig-00-cover but far away and small.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no submarine, no artificial floodlights, no sunlight, no coral, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/squidray-and-the-deep-ocean-design-space/fig-00-cover.png"
+  ]
+}

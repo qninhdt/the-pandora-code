@@ -19,15 +19,7 @@ interface FigureProps {
 
 // A chapter figure: framed image, a figure number, an optional classification
 // tag, and a bilingual caption. The frame reads as a glass specimen plate.
-export function Figure({
-  src,
-  caption,
-  alt,
-  tier,
-  figNo,
-  bleed,
-  className,
-}: FigureProps) {
+export function Figure({ src, caption, alt, tier, figNo, bleed, className }: FigureProps) {
   const locale = useLocale() as "vi" | "en";
   const text = typeof caption === "string" ? caption : caption?.[locale];
   return (
@@ -50,9 +42,7 @@ export function Figure({
                 {text}
               </span>
             )}
-            {tier && (
-              <CanonBadge kind={tier} className="ml-auto shrink-0 sm:ml-0" />
-            )}
+            {tier && <CanonBadge kind={tier} className="ml-auto shrink-0 sm:ml-0" />}
           </div>
           {text && (
             <span className="mt-2 block font-serif text-sm italic leading-relaxed text-muted sm:hidden">

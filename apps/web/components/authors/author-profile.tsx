@@ -1,4 +1,3 @@
-import { useTranslations } from "next-intl";
 import { GlassPanel } from "@/components/codex/glass-panel";
 import { PageBackground } from "@/components/layout/page-background";
 import { FadeInOnScroll } from "@/components/motion/fade-in-on-scroll";
@@ -6,6 +5,7 @@ import { GlowPulse } from "@/components/motion/glow-pulse";
 import { StaggerChildren, StaggerItem } from "@/components/motion/stagger-children";
 import type { LocalizedAuthor } from "@/lib/content/loader/author-loader";
 import { Languages, Palette, PenLine } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 interface AuthorProfileProps {

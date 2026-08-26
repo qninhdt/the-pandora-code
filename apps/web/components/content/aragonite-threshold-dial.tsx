@@ -106,7 +106,12 @@ export function AragoniteThresholdDial({ caption, className }: AragoniteThreshol
       }
     >
       <div className="flex flex-col gap-4 sm:flex-row sm:items-stretch">
-        <svg viewBox={`0 0 ${W} ${H}`} className="w-full sm:w-3/5" role="img" aria-label={t("title")}>
+        <svg
+          viewBox={`0 0 ${W} ${H}`}
+          className="w-full sm:w-3/5"
+          role="img"
+          aria-label={t("title")}
+        >
           <GlowDefs idBase={uid} tones={["cyan", "teal", "magenta"]} />
 
           {/* dissolution zone below the threshold */}
@@ -139,7 +144,14 @@ export function AragoniteThresholdDial({ caption, className }: AragoniteThreshol
           <VizTick x={PAD.l - 8} y={yOf(2) + 3} anchor="end">
             2
           </VizTick>
-          <VizText x={11} y={PAD.t + plotH / 2} size="small" anchor="middle" tone="var(--muted)" transform={`rotate(-90 11 ${PAD.t + plotH / 2})`}>
+          <VizText
+            x={11}
+            y={PAD.t + plotH / 2}
+            size="small"
+            anchor="middle"
+            tone="var(--muted)"
+            transform={`rotate(-90 11 ${PAD.t + plotH / 2})`}
+          >
             {t("axis.omega")}
           </VizText>
           <VizText x={PAD.l + plotW / 2} y={H - 8} size="small" anchor="middle" tone="var(--muted)">
@@ -191,7 +203,11 @@ export function AragoniteThresholdDial({ caption, className }: AragoniteThreshol
           <ul className="mt-1 flex flex-col gap-1">
             {ANCHORS.map((a) => (
               <li key={a.id} className="flex items-baseline gap-2 font-sans text-xs">
-                <span aria-hidden className="mt-1 inline-block size-1.5 shrink-0 rounded-full" style={{ backgroundColor: a.tone }} />
+                <span
+                  aria-hidden
+                  className="mt-1 inline-block size-1.5 shrink-0 rounded-full"
+                  style={{ backgroundColor: a.tone }}
+                />
                 <span className="text-muted">{t(`anchor.${a.id}`)}</span>
               </li>
             ))}

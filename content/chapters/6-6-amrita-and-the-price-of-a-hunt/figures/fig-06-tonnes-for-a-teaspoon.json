@@ -1,0 +1,34 @@
+{
+  "id": "fig-06-tonnes-for-a-teaspoon",
+  "chapter_slug": "amrita-and-the-price-of-a-hunt",
+  "role": "comparison",
+  "narrative_purpose": "Puts four wild-harvest cases side by side at their true ratios, so the reader sees that the destroyed biomass dwarfs the recovered product in every case - and that only one of the four has no alternative route.",
+  "subject": "Four tall vertical panels of equal width in one continuous scene, divided only by changes in setting rather than by drawn borders. Panel one: a dense stand of tall conifer trees, several of them stripped of bark and dead, with a single small glass vial standing on the ground at their base. Panel two: three large open aquaculture tanks crowded with dark colonial marine growths, with a single small vial on the tank rim. Panel three: broad mats of fine branching marine colonies covering a rock shelf, with a single small vial resting on the rock. Panel four: the enormous dark body of one marine animal filling the panel, with a single small vial on the deck plating beside it. In every panel the vial is the same small size and holds a faint luminous fluid.",
+  "scene": "Four settings joined edge to edge - a conifer forest floor, an aquaculture facility, a shallow rock shelf underwater, and a ship's deck - each dim and cool.",
+  "camera": "Wide flat-on comparison plate, all four panels at equal scale and equal visual weight.",
+  "light": "Cool even light across all four settings, each vial glowing faintly warm amber from within, deep shadow behind the large sources.",
+  "palette": "Void indigo shadow, deep teal and cool green sources, pale grey vials with warm amber contents.",
+  "style": "Painterly naturalist comparison plate, organic and observed, not a chart or vector infographic.",
+  "detail_level": "Crisp on each vial and on the immediate source material; the backgrounds soft and dark; a dim open band across the top of all four panels for callouts.",
+  "composition": "Four equal vertical zones left to right, each with its bulk source occupying the upper two thirds and its tiny vial in the lower third, dim open space along the top edge for overlay labels.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "bar charts",
+    "scale bars",
+    "panel borders",
+    "vector infographic look"
+  ],
+  "consistency_notes": "The vial must be identically small in all four panels - the size contrast between bulk source and product is the whole figure. Same vial design as the earlier chapter figures.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no arrows, no bar charts, no scale bars, no panel borders, no photographic or 3D-render look, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

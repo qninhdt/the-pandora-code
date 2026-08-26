@@ -1,0 +1,35 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "bodies-built-for-water",
+  "role": "hero",
+  "narrative_purpose": "Hero thumbnail: captures the chapter's essence at a glance — a Metkayina clan at home in deep water, broad flattened tails mid-stroke, the anatomy that cannot be trained into existence.",
+  "subject": "Three tall slender blue-skinned Na'vi figures of the Metkayina clan gliding together through clear open seawater, seen at a distance from the side, small against the vastness of the water. Each has a long tail that widens into a broad flattened hairless blade, all three caught mid-stroke. Their skin is turquoise with darker undulating stripes across the back and shoulders. Their forearms and lower legs show narrow flared ridges along the outer edges. Long braided hair trails behind them. They wear simple woven bands at the waist and upper arm. Below and behind them a vast pale reef slope falls away into deep blue shadow, with scattered schools of small fish through the water column.",
+  "scene": "Sunlit open ocean above a deep reef drop-off, broad shafts of light descending from the surface far overhead, fine particles suspended in the water.",
+  "camera": "Wide cinematic 16:9 underwater establishing view at mid-depth, the three figures small in frame to show the scale of the water around them.",
+  "light": "Cool blue-green light descending in broad shafts from the surface, soft cyan bioluminescent glow along the reef edges far below, deep indigo in the depths.",
+  "palette": "Ocean teal and void indigo dominant, turquoise skin, cyan bioluminescent reef accents far below.",
+  "style": "Painterly naturalist underwater landscape plate, observed and unhurried, hand-painted texture.",
+  "detail_level": "Readable on the flattened tail blades and the skin patterning; the reef and fish softened into atmosphere.",
+  "composition": "Three figures grouped in the upper-centre third with open water around them, reef slope sweeping across the lower right, deep empty blue in the lower left.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "close-up portraits",
+    "diving mask",
+    "scuba gear",
+    "air tanks",
+    "modern equipment",
+    "Avatar branding"
+  ],
+  "consistency_notes": "The tails must read clearly as broad flat blades rather than ropes. Skin is turquoise with darker stripes, distinct from the deeper cobalt of forest Na'vi. Four limbs and one tail each, no extra appendages. Figures are clothed in simple woven garments and shown at a distance.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no labels, no watermark, no close-up portrait framing, no diving mask or scuba gear, no photographic or 3D-render look, no cartoon style, no cylindrical rope-like tails",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

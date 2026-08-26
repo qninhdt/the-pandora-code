@@ -44,10 +44,21 @@ export default function Allometry() {
           {/* axes */}
           <line x1="16" y1="78" x2="88" y2="78" stroke="var(--border-strong)" strokeWidth="0.6" />
           <line x1="16" y1="78" x2="16" y2="18" stroke="var(--border-strong)" strokeWidth="0.6" />
-          <text x="52" y="90" textAnchor="middle" style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="52"
+            y="90"
+            textAnchor="middle"
+            style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("mass")} (log)
           </text>
-          <text x="10" y="48" textAnchor="middle" transform="rotate(-90 10 48)" style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="10"
+            y="48"
+            textAnchor="middle"
+            transform="rotate(-90 10 48)"
+            style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("organ")}
           </text>
 

@@ -1,0 +1,32 @@
+id: homeoviscous-adaptation
+label:
+  vi: Thích nghi đồng nhớt màng
+  en: Homeoviscous adaptation
+definition:
+  vi: >-
+    Việc sinh vật chỉnh lại thành phần lipid của màng tế bào để giữ đúng độ lỏng cần thiết khi nhiệt độ
+    hoặc áp suất thay đổi. Cả lạnh và áp suất cao đều ép phần lõi dầu của lớp lipid kép về trạng thái đông
+    đặc như gel — tai họa cho mọi thứ cần khuếch tán hay được bơm qua màng. Câu trả lời là xây màng với tỉ
+    lệ cao hơn các acid béo cis chưa bão hòa, loại có nếp gập nên xếp chồng kém đi một cách có chủ ý, và
+    chính sự xếp kém đó giữ cho màng còn lỏng. Sinh vật biển sâu mang màng đã được lên dây theo đúng độ sâu
+    nơi nó sống, như một nhạc cụ được lên dây theo căn phòng.
+  en: >-
+    An organism retuning the lipid composition of its cell membranes to preserve the fluidity it needs as
+    temperature or pressure changes. Both cold and high pressure compress the oily interior of a lipid
+    bilayer toward a gel-like state — disastrous for anything that has to diffuse or be pumped across it.
+    The answer is to build membranes with a higher proportion of kinked cis-unsaturated fatty acids, which
+    pack badly on purpose, and that bad packing is what preserves fluidity. A deep-sea organism carries
+    membranes tuned to its habitat depth, the way an instrument is tuned to a room.
+see_also:
+  - piezolyte
+  - hydrostatic-pressure
+  - extremophile
+  - q10-temperature-coefficient
+category: bio
+tags:
+  - physiology
+  - chemistry
+cover_prompt: >-
+  A cutaway of a cell membrane as two facing rows of lipid tails, the left half packed tight and rigid in
+  cold teal tones, the right half loose and mobile with visibly kinked tails glowing faint cyan, deep
+  indigo surroundings, painterly molecular naturalist plate, no text, no labels.

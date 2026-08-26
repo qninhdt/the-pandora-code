@@ -72,11 +72,7 @@ export default function HoxGenes() {
             </linearGradient>
             <linearGradient id="hox-chr" x1="0" y1="0" x2="1" y2="0">
               {HOX.map((g, i) => (
-                <stop
-                  key={g.key}
-                  offset={`${(i / (n - 1)) * 100}%`}
-                  stopColor={g.color}
-                />
+                <stop key={g.key} offset={`${(i / (n - 1)) * 100}%`} stopColor={g.color} />
               ))}
             </linearGradient>
             <filter id="hox-glow" x="-40%" y="-40%" width="180%" height="180%">
@@ -87,13 +83,7 @@ export default function HoxGenes() {
               </feMerge>
             </filter>
             {HOX.map((g) => (
-              <radialGradient
-                key={g.key}
-                id={`hox-seg-${g.key}`}
-                cx="40%"
-                cy="30%"
-                r="80%"
-              >
+              <radialGradient key={g.key} id={`hox-seg-${g.key}`} cx="40%" cy="30%" r="80%">
                 <stop offset="0%" stopColor={g.color} stopOpacity="0.95" />
                 <stop offset="100%" stopColor={g.color} stopOpacity="0.45" />
               </radialGradient>
@@ -130,6 +120,7 @@ export default function HoxGenes() {
             return (
               <g
                 key={g.key}
+                // biome-ignore lint/a11y/useSemanticElements: an SVG <g> cannot be a native <button>; button role is the correct ARIA mapping for a clickable gene
                 role="button"
                 tabIndex={0}
                 aria-label={t(g.key)}
@@ -144,22 +135,8 @@ export default function HoxGenes() {
                 }}
               >
                 {/* generous invisible hit target */}
-                <rect
-                  x={14 + i * geneW}
-                  y={18}
-                  width={geneW}
-                  height={18}
-                  fill="transparent"
-                />
-                {on && (
-                  <circle
-                    cx={x}
-                    cy={gy}
-                    r={4 + pulse * 1.6}
-                    fill={g.color}
-                    opacity={0.25}
-                  />
-                )}
+                <rect x={14 + i * geneW} y={18} width={geneW} height={18} fill="transparent" />
+                {on && <circle cx={x} cy={gy} r={4 + pulse * 1.6} fill={g.color} opacity={0.25} />}
                 <circle
                   cx={x}
                   cy={gy}
@@ -231,13 +208,7 @@ export default function HoxGenes() {
             fill="url(#hox-seg-lab)"
             opacity={sel != null && sel !== 0 ? 0.2 : 0.9}
           />
-          <circle
-            cx={bodyX0 + 1.5}
-            cy={cy - 2}
-            r="1"
-            fill="#070912"
-            opacity="0.8"
-          />
+          <circle cx={bodyX0 + 1.5} cy={cy - 2} r="1" fill="#070912" opacity="0.8" />
 
           <text
             x={bodyX0}

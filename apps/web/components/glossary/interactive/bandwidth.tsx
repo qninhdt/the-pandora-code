@@ -29,10 +29,7 @@ export default function Bandwidth() {
   const [width, setWidth] = useState(0.55);
   const [medium, setMedium] = useState<Medium>("neuron");
 
-  const throughput = useMemo(
-    () => BASE[medium] * (0.15 + width * 0.85),
-    [medium, width],
-  );
+  const throughput = useMemo(() => BASE[medium] * (0.15 + width * 0.85), [medium, width]);
 
   const pipeR = 4 + width * 14;
   const packets = Math.max(3, Math.round(4 + width * 10));

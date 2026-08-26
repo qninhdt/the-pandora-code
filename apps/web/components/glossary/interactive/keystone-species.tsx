@@ -96,11 +96,7 @@ export default function KeystoneSpecies() {
           })}
 
           {nodes.map((n) => {
-            const fill = n.keystone
-              ? "var(--amber)"
-              : n.id === "V"
-                ? "var(--teal)"
-                : "var(--cyan)";
+            const fill = n.keystone ? "var(--amber)" : n.id === "V" ? "var(--teal)" : "var(--cyan)";
             const r = n.r * Math.sqrt(Math.max(n.m, 0.08));
             return (
               <g key={n.id} opacity={n.alive ? 1 : 0.25}>

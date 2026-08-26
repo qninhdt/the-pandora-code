@@ -26,13 +26,17 @@ export default function Mycorrhiza() {
       onReset={() => setSoilP(0.35)}
       allowFullscreen={false}
       caption={
-        <span className={fair ? "text-teal" : "text-amber"}>
-          {fair ? t("fair") : t("skew")}
-        </span>
+        <span className={fair ? "text-teal" : "text-amber"}>{fair ? t("fair") : t("skew")}</span>
       }
     >
       <div className="absolute inset-0">
-        <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="xMidYMid meet" role="img" aria-label={t("title")}>
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={t("title")}
+        >
           {/* plant root left */}
           <rect x="14" y="20" width="4" height="36" fill="var(--cyan)" opacity={0.45} />
           <ellipse cx="16" cy="18" rx="10" ry="7" fill="var(--teal)" opacity={0.45} />
@@ -49,25 +53,65 @@ export default function Mycorrhiza() {
           <g transform={`rotate(${tilt} 50 68)`}>
             <line x1="28" y1="68" x2="72" y2="68" stroke="var(--amber)" strokeWidth="1.4" />
             {/* left pan — plant C */}
-            <rect x="24" y="58" width="14" height="8" fill="var(--cyan)" opacity={0.35 + plantC * 0.5} rx="1" />
-            <text x="31" y="64" textAnchor="middle" style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--cyan)" }}>
+            <rect
+              x="24"
+              y="58"
+              width="14"
+              height="8"
+              fill="var(--cyan)"
+              opacity={0.35 + plantC * 0.5}
+              rx="1"
+            />
+            <text
+              x="31"
+              y="64"
+              textAnchor="middle"
+              style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--cyan)" }}
+            >
               C
             </text>
             {/* right pan — fungus nutrients */}
-            <rect x="62" y="58" width="14" height="8" fill="var(--magenta)" opacity={0.35 + fungusOffer * 0.5} rx="1" />
-            <text x="69" y="64" textAnchor="middle" style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--magenta)" }}>
+            <rect
+              x="62"
+              y="58"
+              width="14"
+              height="8"
+              fill="var(--magenta)"
+              opacity={0.35 + fungusOffer * 0.5}
+              rx="1"
+            />
+            <text
+              x="69"
+              y="64"
+              textAnchor="middle"
+              style={{ fontSize: 2.2, fontFamily: "monospace", fill: "var(--magenta)" }}
+            >
               P/N
             </text>
           </g>
-          <text x="31" y="88" textAnchor="middle" style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="31"
+            y="88"
+            textAnchor="middle"
+            style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("carbon")}
           </text>
-          <text x="69" y="88" textAnchor="middle" style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="69"
+            y="88"
+            textAnchor="middle"
+            style={{ fontSize: 2.1, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             {t("fungus")}
           </text>
         </svg>
         <div className="absolute right-3 top-14">
-          <Readout label={t("balance")} value={fair ? t("fair") : t("skew")} accent={fair ? "teal" : "amber"} />
+          <Readout
+            label={t("balance")}
+            value={fair ? t("fair") : t("skew")}
+            accent={fair ? "teal" : "amber"}
+          />
         </div>
         <div className="absolute inset-x-3 bottom-10">
           <ControlSlider

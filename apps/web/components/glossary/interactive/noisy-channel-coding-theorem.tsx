@@ -50,10 +50,20 @@ export default function NoisyChannelCodingTheorem() {
         >
           <line x1="18" y1="78" x2="88" y2="78" stroke="var(--border-strong)" strokeWidth="0.4" />
           <line x1="18" y1="18" x2="18" y2="78" stroke="var(--border-strong)" strokeWidth="0.4" />
-          <text x="88" y="84" textAnchor="end" style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="88"
+            y="84"
+            textAnchor="end"
+            style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             noise
           </text>
-          <text x="12" y="20" textAnchor="middle" style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--muted)" }}>
+          <text
+            x="12"
+            y="20"
+            textAnchor="middle"
+            style={{ fontSize: 2.3, fontFamily: "monospace", fill: "var(--muted)" }}
+          >
             R
           </text>
 
@@ -74,7 +84,11 @@ export default function NoisyChannelCodingTheorem() {
             strokeWidth="1"
             strokeDasharray="2 1.5"
           />
-          <text x="86" y={capY} style={{ fontSize: 2.5, fontFamily: "monospace", fill: "var(--cyan)" }}>
+          <text
+            x="86"
+            y={capY}
+            style={{ fontSize: 2.5, fontFamily: "monospace", fill: "var(--cyan)" }}
+          >
             C
           </text>
 

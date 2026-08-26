@@ -47,7 +47,10 @@ export default function DensityDependence() {
       allowFullscreen={false}
       caption={
         <span>
-          {t("growth")} = <span className={perCapita > 0.15 ? "text-teal" : "text-magenta"}>{perCapita.toFixed(2)}</span>
+          {t("growth")} ={" "}
+          <span className={perCapita > 0.15 ? "text-teal" : "text-magenta"}>
+            {perCapita.toFixed(2)}
+          </span>
         </span>
       }
     >
@@ -68,13 +71,7 @@ export default function DensityDependence() {
             stroke="var(--border-strong)"
             strokeWidth="0.5"
           />
-          <circle
-            cx="38"
-            cy="42"
-            r="26"
-            fill="var(--magenta)"
-            opacity={crowd * 0.18}
-          />
+          <circle cx="38" cy="42" r="26" fill="var(--magenta)" opacity={crowd * 0.18} />
 
           {dots.map((d) => (
             <circle
@@ -134,7 +131,11 @@ export default function DensityDependence() {
         </svg>
 
         <div className="absolute right-3 top-14">
-          <Readout label={t("growth")} value={perCapita.toFixed(2)} accent={perCapita > 0.15 ? "teal" : "magenta"} />
+          <Readout
+            label={t("growth")}
+            value={perCapita.toFixed(2)}
+            accent={perCapita > 0.15 ? "teal" : "magenta"}
+          />
         </div>
 
         <div className="absolute inset-x-3 bottom-10">

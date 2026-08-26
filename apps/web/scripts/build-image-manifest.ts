@@ -7,10 +7,7 @@ import path from "node:path";
 // the Serverless Function bundle during Node File Tracing (NFT).
 
 const PUBLIC_IMAGES = path.resolve(process.cwd(), "public/images");
-const MANIFEST_PATH = path.resolve(
-  process.cwd(),
-  "lib/content/loader/image-manifest.json",
-);
+const MANIFEST_PATH = path.resolve(process.cwd(), "lib/content/loader/image-manifest.json");
 
 interface ImageManifest {
   chapterCovers: Record<string, string>;
@@ -35,17 +32,11 @@ export function buildImageManifest(): ImageManifest {
       // Background check
       const bgFile = path.join(dir, "fig-99-background.png");
       if (fs.existsSync(bgFile)) {
-        manifest.chapterBackgrounds[slug] =
-          `/images/chapters/${slug}/fig-99-background.png`;
+        manifest.chapterBackgrounds[slug] = `/images/chapters/${slug}/fig-99-background.png`;
       }
 
       // Cover check in priority order
-      const candidates = [
-        "cover.webp",
-        "cover.png",
-        "fig-00-cover.webp",
-        "fig-00-cover.png",
-      ];
+      const candidates = ["cover.webp", "cover.png", "fig-00-cover.webp", "fig-00-cover.png"];
       let foundCover = false;
       for (const candidate of candidates) {
         if (fs.existsSync(path.join(dir, candidate))) {
@@ -85,7 +76,7 @@ export function buildImageManifest(): ImageManifest {
     }
   }
 
-  fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2), "utf8");
+  fs.writeFileSync(MANIFEST_PATH, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
   return manifest;
 }
 

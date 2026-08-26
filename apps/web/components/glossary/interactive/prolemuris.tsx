@@ -73,8 +73,7 @@ export default function Prolemuris() {
   const [fusion, setFusion] = useState(0.45);
   const g = useMemo(() => limbGeometry(fusion), [fusion]);
 
-  const stateLabel =
-    fusion < 0.25 ? t("stateSix") : fusion < 0.75 ? t("stateMid") : t("stateNavi");
+  const stateLabel = fusion < 0.25 ? t("stateSix") : fusion < 0.75 ? t("stateMid") : t("stateNavi");
 
   const reset = useCallback(() => setFusion(0.45), []);
 
@@ -185,8 +184,20 @@ export default function Prolemuris() {
             strokeWidth="0.45"
           />
           {/* eyes */}
-          <circle cx={g.bodyX - 2} cy={g.shoulderY - 10.5} r="0.7" fill="var(--cyan)" opacity="0.9" />
-          <circle cx={g.bodyX + 2} cy={g.shoulderY - 10.5} r="0.7" fill="var(--cyan)" opacity="0.9" />
+          <circle
+            cx={g.bodyX - 2}
+            cy={g.shoulderY - 10.5}
+            r="0.7"
+            fill="var(--cyan)"
+            opacity="0.9"
+          />
+          <circle
+            cx={g.bodyX + 2}
+            cy={g.shoulderY - 10.5}
+            r="0.7"
+            fill="var(--cyan)"
+            opacity="0.9"
+          />
           {/* ear tufts */}
           <path
             d={`M ${g.bodyX - 4} ${g.shoulderY - 13} L ${g.bodyX - 6} ${g.shoulderY - 17}`}
@@ -214,15 +225,30 @@ export default function Prolemuris() {
           {/* limb legend ticks */}
           <g opacity="0.7">
             <circle cx="10" cy="78" r="1.2" fill="var(--magenta)" />
-            <text x="13" y="79.2" className="fill-muted" style={{ fontSize: 2.4, fontFamily: "monospace" }}>
+            <text
+              x="13"
+              y="79.2"
+              className="fill-muted"
+              style={{ fontSize: 2.4, fontFamily: "monospace" }}
+            >
               {t("forelimbs")} ↑
             </text>
             <circle cx="10" cy="84" r="1.2" fill="var(--cyan)" />
-            <text x="13" y="85.2" className="fill-muted" style={{ fontSize: 2.4, fontFamily: "monospace" }}>
+            <text
+              x="13"
+              y="85.2"
+              className="fill-muted"
+              style={{ fontSize: 2.4, fontFamily: "monospace" }}
+            >
               {t("forelimbs")}
             </text>
             <circle cx="10" cy="90" r="1.2" fill="var(--teal)" />
-            <text x="13" y="91.2" className="fill-muted" style={{ fontSize: 2.4, fontFamily: "monospace" }}>
+            <text
+              x="13"
+              y="91.2"
+              className="fill-muted"
+              style={{ fontSize: 2.4, fontFamily: "monospace" }}
+            >
               {t("hindlimbs")}
             </text>
           </g>

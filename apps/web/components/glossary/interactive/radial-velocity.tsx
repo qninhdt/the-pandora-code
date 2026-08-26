@@ -44,16 +44,8 @@ export default function RadialVelocity() {
   const receding = radialV > 0.05;
   // Doppler-shifted spectral line: blue when approaching, red when receding.
   const shiftPx = -radialV * 1.6;
-  const lineColor = approaching
-    ? "var(--cyan)"
-    : receding
-      ? "var(--magenta)"
-      : "var(--foreground)";
-  const state = approaching
-    ? t("approaching")
-    : receding
-      ? t("receding")
-      : t("rest");
+  const lineColor = approaching ? "var(--cyan)" : receding ? "var(--magenta)" : "var(--foreground)";
+  const state = approaching ? t("approaching") : receding ? t("receding") : t("rest");
 
   return (
     <GlossaryFrame
@@ -110,8 +102,22 @@ export default function RadialVelocity() {
             opacity="0.5"
           />
           {/* barycentre cross */}
-          <line x1={CX - 1.6} y1={CY} x2={CX + 1.6} y2={CY} stroke="var(--muted)" strokeWidth="0.3" />
-          <line x1={CX} y1={CY - 1.6} x2={CX} y2={CY + 1.6} stroke="var(--muted)" strokeWidth="0.3" />
+          <line
+            x1={CX - 1.6}
+            y1={CY}
+            x2={CX + 1.6}
+            y2={CY}
+            stroke="var(--muted)"
+            strokeWidth="0.3"
+          />
+          <line
+            x1={CX}
+            y1={CY - 1.6}
+            x2={CX}
+            y2={CY + 1.6}
+            stroke="var(--muted)"
+            strokeWidth="0.3"
+          />
 
           {/* planet */}
           <circle cx={planetX} cy={planetY} r="2.4" fill="var(--teal)" />
@@ -138,10 +144,7 @@ export default function RadialVelocity() {
           <div className="relative h-10 overflow-hidden rounded-lg border border-border/40 bg-void/70">
             <div className="absolute inset-0 bg-gradient-to-r from-magenta/15 via-foreground/5 to-cyan/15" />
             {/* rest wavelength marker */}
-            <div
-              className="absolute top-0 h-full w-px bg-muted/60"
-              style={{ left: "50%" }}
-            />
+            <div className="absolute top-0 h-full w-px bg-muted/60" style={{ left: "50%" }} />
             <span className="absolute bottom-0.5 left-1/2 -translate-x-1/2 font-mono text-[7px] uppercase tracking-wider text-muted">
               {t("rest")}
             </span>

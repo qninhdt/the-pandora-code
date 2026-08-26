@@ -62,11 +62,7 @@ export default function Autapomorphy() {
           {TIPS.map((tip, i) => {
             const on = i === sel;
             return (
-              <g
-                key={tip.key}
-                onClick={() => setSel(i)}
-                style={{ cursor: "pointer" }}
-              >
+              <g key={tip.key} onClick={() => setSel(i)} style={{ cursor: "pointer" }}>
                 <circle
                   cx={tip.x}
                   cy="32"

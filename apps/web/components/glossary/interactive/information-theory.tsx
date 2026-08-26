@@ -131,26 +131,64 @@ export default function InformationTheory() {
           ))}
 
           {/* meters */}
-          <rect x="12" y="62" width="36" height="4" rx="1" fill="var(--void)" stroke="var(--border-strong)" strokeWidth="0.3" />
-          <rect x="12" y="62" width={Math.min(36, H * 12)} height="4" rx="1" fill="var(--amber)" opacity={0.8} />
-          <text x="12" y="72" style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--amber)" }}>
+          <rect
+            x="12"
+            y="62"
+            width="36"
+            height="4"
+            rx="1"
+            fill="var(--void)"
+            stroke="var(--border-strong)"
+            strokeWidth="0.3"
+          />
+          <rect
+            x="12"
+            y="62"
+            width={Math.min(36, H * 12)}
+            height="4"
+            rx="1"
+            fill="var(--amber)"
+            opacity={0.8}
+          />
+          <text
+            x="12"
+            y="72"
+            style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--amber)" }}
+          >
             H={H.toFixed(2)}
           </text>
 
-          <rect x="52" y="62" width="36" height="4" rx="1" fill="var(--void)" stroke="var(--border-strong)" strokeWidth="0.3" />
-          <rect x="52" y="62" width={Math.min(36, redundancy * 36)} height="4" rx="1" fill="var(--teal)" opacity={0.8} />
-          <text x="52" y="72" style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--teal)" }}>
+          <rect
+            x="52"
+            y="62"
+            width="36"
+            height="4"
+            rx="1"
+            fill="var(--void)"
+            stroke="var(--border-strong)"
+            strokeWidth="0.3"
+          />
+          <rect
+            x="52"
+            y="62"
+            width={Math.min(36, redundancy * 36)}
+            height="4"
+            rx="1"
+            fill="var(--teal)"
+            opacity={0.8}
+          />
+          <text
+            x="52"
+            y="72"
+            style={{ fontSize: 2.4, fontFamily: "monospace", fill: "var(--teal)" }}
+          >
             R={redundancy.toFixed(2)}
           </text>
         </svg>
 
         <div className="absolute right-3 top-14 flex flex-col gap-1.5">
           <Readout label={t("entropy")} value={H.toFixed(2)} accent="amber" />
-          <Readout
-            label={t("redundancy")}
-            value={redundancy.toFixed(2)}
-            accent="teal"
-          />
+          <Readout label={t("redundancy")} value={redundancy.toFixed(2)} accent="teal" />
         </div>
 
         <div className="absolute left-3 top-12 flex items-center gap-1">

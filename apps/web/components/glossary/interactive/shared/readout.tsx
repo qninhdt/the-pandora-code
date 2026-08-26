@@ -21,13 +21,7 @@ const accentClass: Record<NonNullable<ReadoutProps["accent"]>, string> = {
 
 // Monospace HUD chip for live numeric readouts (a value + unit, optional label).
 // Shared so every figure's telemetry reads in one consistent voice.
-export function Readout({
-  label,
-  value,
-  unit,
-  accent = "cyan",
-  className,
-}: ReadoutProps) {
+export function Readout({ label, value, unit, accent = "cyan", className }: ReadoutProps) {
   return (
     <div
       className={cn(
@@ -36,23 +30,12 @@ export function Readout({
       )}
     >
       {label && (
-        <span className="font-mono text-[10px] uppercase tracking-wider text-muted">
-          {label}
-        </span>
+        <span className="font-mono text-[10px] uppercase tracking-wider text-muted">{label}</span>
       )}
-      <span
-        className={cn(
-          "font-mono text-sm font-semibold tabular-nums",
-          accentClass[accent],
-        )}
-      >
+      <span className={cn("font-mono text-sm font-semibold tabular-nums", accentClass[accent])}>
         {value}
       </span>
-      {unit && (
-        <span className="font-mono text-[10px] tracking-wide text-muted">
-          {unit}
-        </span>
-      )}
+      {unit && <span className="font-mono text-[10px] tracking-wide text-muted">{unit}</span>}
     </div>
   );
 }

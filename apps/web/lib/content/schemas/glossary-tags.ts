@@ -34,6 +34,10 @@ export const GLOSSARY_TAGS = [
   "physics",
   "chemistry",
   "mineral",
+  "bioeconomics",
+  "law-and-policy",
+  "pharmacology",
+  "bioethics",
   "pandora-canon",
 ] as const;
 
@@ -65,6 +69,10 @@ export const GLOSSARY_TAG_LABELS: Record<GlossaryTag, { vi: string; en: string }
   physics: { vi: "Vật lý", en: "Physics" },
   chemistry: { vi: "Hóa học", en: "Chemistry" },
   mineral: { vi: "Khoáng vật", en: "Mineral" },
+  bioeconomics: { vi: "Kinh tế sinh học", en: "Bioeconomics" },
+  "law-and-policy": { vi: "Luật & chính sách", en: "Law and policy" },
+  pharmacology: { vi: "Dược lý học", en: "Pharmacology" },
+  bioethics: { vi: "Đạo đức sinh học", en: "Bioethics" },
   "pandora-canon": { vi: "Chính sử Pandora", en: "Pandora canon" },
 };
 

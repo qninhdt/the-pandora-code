@@ -7,9 +7,7 @@ import { GlossaryTerm } from "@/components/glossary/glossary-term";
 import { ChapterBackground } from "@/components/reading/chapter-background";
 import { ChapterHero } from "@/components/reading/chapter-hero";
 import { ChapterShell } from "@/components/reading/chapter-shell";
-import { ContinueReadingPrompt } from "@/components/reading/continue-reading-prompt";
 import { OfflineChapterButton } from "@/components/reading/offline-chapter-button";
-import { ReadingPreferences } from "@/components/reading/reading-preferences";
 import { ReadingProgress } from "@/components/reading/reading-progress";
 import type { RelatedChapterCard } from "@/components/reading/related-chapters";
 import { type RelatedGlossaryChip, RelatedMaterials } from "@/components/reading/related-materials";
@@ -190,9 +188,6 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
         toc={<TableOfContents headings={headings} label={t("chapter.tableOfContents")} />}
         footer={
           <>
-            <div className="reading-column mb-10 space-y-5">
-              <ReadingPreferences title={t("chapter.readingPreferences")} compact />
-            </div>
             <RelatedMaterials
               chapters={relatedChapters}
               glossary={relatedGlossary}
@@ -226,14 +221,6 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
           </>
         }
       >
-        <ContinueReadingPrompt
-          locale={loc}
-          slug={slug}
-          label={t("chapter.continueReading")}
-          busyLabel={t("chapter.restoringPosition")}
-          progressLabel={t("chapter.readingProgressPercent", { percent: "__PERCENT__" })}
-          className="mb-8"
-        />
         <Body components={components} />
       </ChapterShell>
     </div>

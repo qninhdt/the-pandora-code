@@ -140,6 +140,433 @@
         "productive": "Nutrients can re-enter the sunlit layer.",
         "suppressed": "The nutrient boundary is pushed deeper."
       }
+    },
+    "jetVersusFoil": {
+      "title": "Two ways to push water",
+      "subtitle": "A siphon throws a little water very fast. A wing moves a lot of water gently. Only one of them is affordable all day.",
+      "duty": {
+        "pulsed": "Pulsed",
+        "continuous": "Steady"
+      },
+      "dutyLabel": "Thrust delivery",
+      "axis": {
+        "efficiency": "Propulsive efficiency",
+        "wakeRatio": "Wake speed ÷ swimming speed"
+      },
+      "marker": {
+        "foil": "Wing",
+        "jet": "Siphon"
+      },
+      "footnote": "A siphon this efficient would need an aperture of {area} cm² — by then it is a wing.",
+      "readout": {
+        "jetVelocity": "Jet exit speed",
+        "jetVelocityNote": "{ratio}× the animal's own speed",
+        "wasted": "Left in the wake",
+        "wastedNote": "Power that moved water, not the animal",
+        "cost": "Cost: siphon / wing",
+        "costNote": "The siphon costs {factor}× as much per metre",
+        "verdict": "Verdict"
+      },
+      "slider": {
+        "mass": "Body mass",
+        "massValue": "{v} t",
+        "speed": "Cruising speed",
+        "aperture": "Total siphon aperture",
+        "apertureValue": "{v} cm²"
+      },
+      "hint": {
+        "competitive": "At this aperture the siphon is no longer losing — but an opening this wide is a fin with a hole in it, not a nozzle.",
+        "penalised": "The siphon burns {factor}× the energy per metre travelled. Sustainable for seconds, not for an ocean crossing."
+      },
+      "units": "Cost of transport in joules per kilogram per metre. Measured values: cephalopods 1.5–4.5, fishes and rays 0.2–0.6.",
+      "aria": "Propulsive efficiency: siphon {jet}%, wing {foil}%."
+    },
+    "cavitationCeiling": {
+      "title": "How fast you may swim depends on how deep you are",
+      "subtitle": "Push a fin too hard in shallow water and the water tears into bubbles. Pressure at depth makes that impossible.",
+      "slider": {
+        "sigma": "Cavitation threshold σ",
+        "depth": "Depth",
+        "depthValue": "{v} m",
+        "burst": "Attempted burst speed"
+      },
+      "axis": {
+        "depth": "Depth (m)",
+        "speed": "Speed (m/s)"
+      },
+      "band": {
+        "dolphin": "Measured surface limit for dolphins and fast fish"
+      },
+      "readout": {
+        "ceiling": "Speed ceiling here",
+        "ceilingNote": "{factor}× the surface ceiling",
+        "safeDepth": "Deep enough at",
+        "safeDepthNote": "Shallowest depth this burst stays clean",
+        "anyDepth": "Any depth",
+        "verdict": "At this speed and depth",
+        "verdictNote": "Bubble collapse pits skin at gigapascal pressures"
+      },
+      "verdict": {
+        "cavitating": "Bubbles forming — tissue damage",
+        "clean": "Clean flow"
+      },
+      "hint": {
+        "cavitating": "This burst would cavitate here. The same speed becomes safe below about {depth} m, where ambient pressure holds the water together.",
+        "clean": "No bubbles at this depth. The deep ocean is where a high-speed jet stops being self-destructive."
+      },
+      "units": "Cavitation number σ = (p∞ − p_v) / (½ρU²); onset near 0.5–1.2 depending on the surface geometry.",
+      "aria": "At {depth} m the cavitation-free speed ceiling is {ceiling} metres per second."
+    },
+    "pressureDoesNotCrush": {
+      "title": "What deep water actually breaks",
+      "subtitle": "Being crushed is the famous danger and the one that never happens. The real limits are molecular, and one of them is a wall.",
+      "slider": {
+        "depth": "Depth",
+        "depthValue": "{v} m",
+        "activationVolume": "Reaction activation volume",
+        "activationVolumeValue": "{v} cm³/mol"
+      },
+      "row": {
+        "crush": "Crushing",
+        "enzyme": "Enzyme rate",
+        "membrane": "Membrane repair",
+        "osmotic": "Osmotic load"
+      },
+      "rowNote": {
+        "crush": "volume lost by a gas-free body",
+        "enzyme": "reaction speed left, relative to the surface",
+        "membrane": "unsaturated lipid needed to stay fluid",
+        "osmotic": "internal osmolarity, mOsm/kg"
+      },
+      "scaleNote": "each bar: none → total",
+      "readout": {
+        "pressure": "Pressure",
+        "pressureNote": "{atm} atmospheres",
+        "volume": "Body volume",
+        "volumeNote": "Tissue is nearly incompressible",
+        "osmotic": "Osmotic headroom",
+        "osmoticHeadroom": "{v} mOsm left",
+        "osmoticBreached": "Ceiling passed",
+        "osmoticNote": "Bony fish run out at about {depth} m"
+      },
+      "hint": {
+        "withinCeiling": "Pressure is doing nothing mechanical. It is slowing enzymes and stiffening membranes, and there are still {headroom} mOsm of osmotic room before the biochemical wall.",
+        "pastCeiling": "Past this depth the protectant that keeps proteins folded would make the animal saltier than the sea. This is where bony fish stop being found — not because they are crushed, but because they cannot hold their water."
+      },
+      "aria": "At {depth} m the pressure is {pressure} megapascals."
+    },
+    "abyssalSignalStack": {
+      "title": "A skin that talks in a room with no light",
+      "subtitle": "Three of its four layers can only work by reflecting light. Take the light away and only the last one still says anything.",
+      "downwelling": "Sunlight",
+      "slider": {
+        "depth": "Depth",
+        "depthValue": "{v} m"
+      },
+      "modeLabel": "Signalling mode",
+      "mode": {
+        "crypsis": "Hiding",
+        "chatter": "Pack signal",
+        "counterlight": "Counter-light"
+      },
+      "modeNote": {
+        "crypsis": "Emission suppressed and pigment contracted: an ultra-black surface that gives a searching predator's beam nothing to come back with.",
+        "chatter": "Waves of light run across the mantle at millisecond speed — coordinating the hunt and disorienting whatever is being hunted.",
+        "counterlight": "Belly photophores match the faint glow still coming down from above, erasing the silhouette from anything looking up."
+      },
+      "tier": {
+        "chromatophore": "Chromatophores",
+        "iridophore": "Iridophores",
+        "leucophore": "Leucophores",
+        "photophore": "Photophores"
+      },
+      "tierNote": {
+        "chromatophore": "pigment sacs pulled open by muscle",
+        "iridophore": "tunable mirrors of stacked protein",
+        "leucophore": "broadband white scatterers",
+        "photophore": "makes its own photons"
+      },
+      "readout": {
+        "blue": "Blue-green light left",
+        "blueNote": "The only window the sea keeps open",
+        "red": "Red light left",
+        "redNote": "Gone in the first few tens of metres",
+        "gone": "None",
+        "channel": "Working channel",
+        "channelNote": "Which layer can still be seen"
+      },
+      "channel": {
+        "reflective": "Reflection",
+        "emissive": "Emission"
+      },
+      "hint": {
+        "reflective": "There is still enough light down here for pigment and mirrors to show contrast — about {pct}% of the usable range remains.",
+        "emissive": "Reflective layers have nothing left to reflect. Anything this animal wants to say from here down, it has to say by making light itself."
+      },
+      "aria": "At {depth} m, {reflective}% of the reflective signalling range remains."
+    },
+    "ventEnergyBudget": {
+      "title": "Can a vent field pay for this animal?",
+      "subtitle": "Productivity per square metre is rainforest-grade. The trouble is the number of square metres, and the four steps between.",
+      "tier": {
+        "0": "Chemosynthetic bacteria",
+        "1": "Tubeworms, mussels",
+        "2": "Crabs, vent fish",
+        "3": "Apex predator"
+      },
+      "scaleNote": "tier widths on a log scale — kg carbon per year at right",
+      "slider": {
+        "area": "Vent field area",
+        "areaValue": "{v} m²",
+        "production": "Carbon fixed",
+        "productionValue": "{v} kg C/m²/yr",
+        "transfer": "Transfer per step",
+        "pack": "Pack size",
+        "packValue": "{v} animals"
+      },
+      "readout": {
+        "apexSupply": "Reaches the top",
+        "apexSupplyNote": "After four trophic steps",
+        "packDemand": "The pack needs",
+        "packDemandNote": "{n} animals at 4 tonnes each",
+        "maxResident": "Largest resident possible",
+        "maxResidentNote": "Living here year-round on this field alone",
+        "carbonPerYear": "{v} kg C/yr",
+        "massKg": "{v} kg"
+      },
+      "hint": {
+        "sufficient": "At these settings the field could carry the pack — but it takes numbers no measured vent field has produced.",
+        "deficit": "The field falls short by a factor of about {shortfall}. The biggest animal it could keep permanently weighs {resident} kg, so a multi-tonne pack has to be eating somewhere else."
+      },
+      "earthCheck": "Earth's real vent residents match this: eelpouts under 1 kg, crabs under 0.5 kg, the vent octopus under 0.2 kg. Nothing large lives at a vent.",
+      "aria": "Trophic pyramid delivering {apex} kg carbon per year to the apex tier, against a pack demand of {demand} kg per year."
+    },
+    "thermalScope": {
+      "title": "Cold water charges in two currencies",
+      "subtitle": "Speed sags gently in the cold. Reaction time collapses — and a coordinated strike is a timing problem first.",
+      "gauge": {
+        "speed": "Burst speed",
+        "speedThreshold": "needed",
+        "latency": "Strike latency",
+        "latencyThreshold": "limit"
+      },
+      "footnote": "power scales as speed cubed; twitch rate scales directly",
+      "slider": {
+        "ambient": "Water temperature",
+        "q10": "Q₁₀",
+        "retia": "Heat held above ambient",
+        "retiaValue": "+{v} °C"
+      },
+      "readout": {
+        "muscleTemp": "Muscle temperature",
+        "muscleTempNote": "Water is at {ambient} °C",
+        "rate": "Metabolic rate",
+        "rateNote": "Relative to a 25 °C animal",
+        "verdict": "Coordinated strike",
+        "verdictNote": "Needs about +{needed} °C of retained heat",
+        "verdictImpossible": "Out of reach at any plausible heat retention"
+      },
+      "verdict": {
+        "capable": "Within reach",
+        "tooSlow": "Too slow to commit"
+      },
+      "hint": {
+        "capable": "Fast enough, and — the part that matters — able to decide fast enough. Every animal in the pack can commit inside the same window.",
+        "tooSlow": "The speed is survivable; the reaction time is not. Closing the gap needs roughly +{needed} °C of retained metabolic heat, which on Earth means counter-current vessel bundles."
+      },
+      "earthCheck": "Tunas and lamnid sharks hold swimming muscle and braincase 5–15 °C above the water using retia mirabilia. No cephalopod on Earth does.",
+      "aria": "Muscle at {temp} °C gives a strike latency of {latency} milliseconds."
+    },
+    "hydrostaticDepth": {
+      "title": "The same depth, two different weights of water",
+      "subtitle": "Pressure is the weight of the water overhead, so weaker gravity means every threshold sits deeper.",
+      "worldControl": "World",
+      "world": {
+        "earth": "Earth 1.0 g",
+        "pandora": "Pandora 0.8 g"
+      },
+      "residualLabel": "Residual volume — the lung can go no smaller",
+      "axis": {
+        "depth": "Depth (m)",
+        "volume": "Lung volume (L)"
+      },
+      "readout": {
+        "pressure": "Absolute pressure",
+        "perAtm": "one atmosphere per {n} m",
+        "volume": "Compressed lung",
+        "squeeze": "Squeeze begins at",
+        "beyondRange": "deeper than 150 m"
+      },
+      "verdict": {
+        "safe": "Lung still above residual volume",
+        "narcosis": "Nitrogen partial pressure now narcotic",
+        "squeeze": "Below residual volume — chest wall alone cannot hold"
+      },
+      "hint": {
+        "safe": "The chest is compressing but the air inside it still has room to give. Nothing here needs anything unusual of the body.",
+        "narcosis": "Dissolved nitrogen has reached the pressure where it starts dissolving into nerve membranes: slowed thought, clumsy hands, an unearned sense of calm.",
+        "squeeze": "The air is squeezed below the volume the chest can physically fold to. Without more than a litre of blood shifting into the lungs to fill the gap, the vessels tear."
+      },
+      "atmValue": "{n} atm",
+      "litreValue": "{n} L",
+      "metreValue": "{n} m",
+      "slider": {
+        "depth": "Depth",
+        "tlc": "Total lung capacity"
+      },
+      "assumption": "Seawater density is assumed to match Earth's 1025 kg/m³ — canon never states Pandora's.",
+      "narcosisNote": "On this world, nitrogen turns narcotic at about {n} m.",
+      "aria": "Lung volume against depth at {depth} metres and {atm} atmospheres"
+    },
+    "diveOxygenBudget": {
+      "title": "A breath-hold is a division problem",
+      "subtitle": "Oxygen carried, divided by oxygen spent. Where the body keeps that oxygen matters more than how much air it swallowed.",
+      "profileControl": "Body",
+      "profile": {
+        "untrainedHuman": "Untrained",
+        "eliteApneist": "Trained",
+        "weddellSeal": "Seal"
+      },
+      "barTitle": "Where the oxygen is kept — lungs, blood, muscle",
+      "targetLabel": "The dive being attempted",
+      "axis": {
+        "mass": "Body mass (kg)",
+        "adl": "Aerobic limit (min)"
+      },
+      "readout": {
+        "stores": "Oxygen carried",
+        "storesNote": "{n} mL per kg of body",
+        "burn": "Oxygen spent",
+        "burnNote": "at the chosen metabolic brake",
+        "adl": "Aerobic limit"
+      },
+      "verdict": {
+        "aerobic": "The dive fits inside the aerobic limit",
+        "anaerobic": "Past the limit — the muscles go anaerobic"
+      },
+      "hint": {
+        "aerobic": "Everything this dive costs is paid out of oxygen the body brought with it. Surface, breathe twice, go again.",
+        "anaerobic": "The muscles have run out of their own oxygen and switched to burning sugar without it. The acid stays trapped in the legs until surfacing, then floods in — and the next dive has to wait."
+      },
+      "slider": {
+        "mass": "Body mass",
+        "suppression": "Metabolic rate held to",
+        "target": "Dive to hold"
+      },
+      "kgValue": "{n} kg",
+      "litreValue": "{n} L",
+      "minuteValue": "{n} min",
+      "perMinValue": "{n} mL/min",
+      "percentValue": "{n}%",
+      "derivedNote": "No measured diving metabolic rate exists for these animals in the source, so the rate is set here and calibrated against an untrained human's known limit.",
+      "aria": "Aerobic dive limit against body mass, currently {minutes} minutes"
+    },
+    "adaptationTimescale": {
+      "title": "How long does a body need?",
+      "subtitle": "Every change to a diving body has a clock. Give it a month and one set of things becomes possible; give it a million years and another.",
+      "mark": {
+        "day": "a day",
+        "year": "a year",
+        "millennium": "a millennium",
+        "megayear": "a million years"
+      },
+      "trait": {
+        "splenicConditioning": "Spleen learns to squeeze",
+        "mokenAcuity": "Underwater eyesight doubles",
+        "haenyeoThermogenesis": "Winter metabolism rises",
+        "apneaDiscipline": "Breath-hold discipline",
+        "thoracicExpansion": "Chest grows deeper",
+        "bajauSpleen": "Spleen enlarged by inheritance",
+        "tibetanEpas1": "Thin-air blood chemistry",
+        "caudalFluke": "Tail becomes a fluke"
+      },
+      "tier": {
+        "none": "Nothing yet",
+        "acclimatization": "Tuning",
+        "plasticity": "Growing into it",
+        "genetic": "Inheritance",
+        "skeletal": "Rebuilt skeleton"
+      },
+      "verdict": {
+        "none": "Not even a reflex has settled",
+        "acclimatization": "Reversible — and it fades if the pressure lifts",
+        "plasticity": "Grown in during childhood, kept for life",
+        "genetic": "Only across generations, never within one body",
+        "skeletal": "Deep time, and no going back"
+      },
+      "hint": {
+        "none": "Too little time for anything to change. Even the spleen's response needs days of repetition before it starts arriving reliably.",
+        "acclimatization": "This is tuning, not rebuilding: the same body running different settings. It is also the tier that disappears — Korean divers lost their raised winter metabolism within two or three years of putting on wetsuits.",
+        "plasticity": "Long enough for a growing body to be shaped by what it does. Untrained children given a month of practice matched sea-nomad children's underwater eyesight exactly — and kept it. Nothing was inherited; something was learned deeply enough to stay.",
+        "genetic": "Now we have left the individual behind. Enlarged spleens in a diving population show up in divers and non-divers alike, which is what makes them inheritance rather than training — and that signal needs tens to hundreds of generations of pressure.",
+        "skeletal": "This is the only tier that can turn a tail into a fluke, and it takes millions of years. No amount of practice reaches it, which is exactly why the anatomy is the part a newcomer cannot train into."
+      },
+      "readout": {
+        "reached": "Within reach",
+        "mechanism": "What that buys",
+        "nothingYet": "nothing yet"
+      },
+      "slider": {
+        "budget": "Time available",
+        "generation": "One generation"
+      },
+      "duration": {
+        "hours": "{n} h",
+        "days": "{n} days",
+        "months": "{n} months",
+        "years": "{n} years",
+        "megayears": "{n} Ma"
+      },
+      "countValue": "{n} of {total}",
+      "generationNote": "Generation length converts the two inherited traits from generations into calendar time; the placements are order-of-magnitude, not exact dates.",
+      "aria": "Adaptation timescale ladder with {count} of {total} traits within reach"
+    },
+    "ascentHypoxia": {
+      "title": "The danger is on the way up",
+      "subtitle": "Oxygen pressure rises going down and collapses coming back. The urge to breathe tracks carbon dioxide, which is the wrong alarm.",
+      "prepControl": "Breathing before the dive",
+      "prep": {
+        "normal": "Breathed normally",
+        "hyperventilated": "Hyperventilated"
+      },
+      "blackoutLabel": "Consciousness fails below here",
+      "breakpointLabel": "urge to breathe",
+      "axis": {
+        "time": "Seconds into the dive",
+        "po2": "Oxygen pressure (mmHg)"
+      },
+      "readout": {
+        "breakpoint": "Urge to breathe at",
+        "breakpointNote": "starting from {n} mmHg of CO₂",
+        "crossing": "Oxygen fails at",
+        "neverCrosses": "never",
+        "outcome": "Outcome"
+      },
+      "outcome": {
+        "safe": "Surfaced",
+        "warned": "Warned in time",
+        "blackout": "Blackout on ascent"
+      },
+      "verdict": {
+        "safe": "Oxygen never reaches the floor",
+        "warned": "The alarm arrives before the oxygen runs out",
+        "blackout": "Oxygen fails before any warning comes"
+      },
+      "hint": {
+        "safe": "Short enough and slow enough that oxygen pressure never falls through the floor, even as the lungs re-expand on the way up.",
+        "warned": "The carbon dioxide alarm fires while there is still oxygen in reserve. This is the ordering the body is built for: the diver is uncomfortable, and therefore alive.",
+        "blackout": "Look at when the alarm arrives — after the oxygen already gave out. Hyperventilating added almost no oxygen to blood that was already saturated; all it removed was the warning. The diver never felt anything wrong."
+      },
+      "slider": {
+        "depth": "Depth",
+        "bottom": "Time on the bottom",
+        "vo2": "Oxygen burn rate"
+      },
+      "metreValue": "{n} m",
+      "secondValue": "{n} s",
+      "perMinLitreValue": "{n} L/min",
+      "modelNote": "An illustrative single-compartment model: the thresholds are measured values, the consumption rate is yours to set.",
+      "aria": "Oxygen pressure across a {seconds} second breath-hold dive"
     }
   }
 }

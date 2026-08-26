@@ -1,0 +1,35 @@
+id: gompertz-makeham-law
+label:
+  vi: Định luật tử vong Gompertz–Makeham
+  en: Gompertz–Makeham law of mortality
+definition:
+  vi: >-
+    Công thức mô tả nguy cơ chết theo tuổi ở người và nhiều loài động vật: nguy cơ tử vong mỗi năm
+    bằng một phần nền không phụ thuộc tuổi cộng với một phần tăng theo hàm số mũ với tuổi. Phần nền
+    là tai nạn, thương tích, bạo lực. Phần hàm mũ chính là lão hóa. Ở các dân số hiện đại, phần hàm
+    mũ ấy làm nguy cơ tử vong nhân đôi mỗi khoảng tám năm sau tuổi trưởng thành. Cách viết này biến
+    những lời hứa mơ hồ thành ba tuyên bố khác nhau hẳn: hoãn bệnh tật lại mà giữ nguyên độ dốc, làm
+    độ dốc bớt dốc đi, hoặc xóa hẳn số hạng hàm mũ. Chỉ trường hợp thứ ba mới đúng nghĩa "chặn lão
+    hóa", và khi đó nguy cơ tử vong trở thành một mặt phẳng — người ta vẫn chết, nhưng chỉ vì tai nạn.
+  en: >-
+    A formula describing how the risk of death rises with age in humans and many animals: the annual
+    mortality risk equals an age-independent floor plus a term that grows exponentially with age. The
+    floor is accidents, injury, violence. The exponential term is aging itself. In modern populations
+    that term doubles the risk of death roughly every eight years past maturity. Writing it this way
+    turns vague promises into three quite different claims: postpone illness while leaving the slope
+    intact, reduce the slope, or delete the exponential term entirely. Only the third amounts to
+    "halting aging", and in that case the mortality curve becomes flat — people still die, but only
+    by accident.
+see_also:
+  - hallmarks-of-aging
+  - epigenetic-clock
+  - senolytic
+category: concept
+tags:
+  - pharmacology
+  - physics
+cover_prompt: >-
+  A painterly plate of a dark chart field carrying two curves, one bending steeply upward toward the
+  top right and one running perfectly flat and level across the bottom, small faint tick marks along
+  the lower edge suggesting increasing age, cyan for the flat line and warm amber for the rising one
+  on deep indigo, painterly naturalist plate, no text, no labels.
