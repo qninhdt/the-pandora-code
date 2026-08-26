@@ -90,7 +90,9 @@ export default async function Home({ params }: HomeProps) {
         glossaryHref={`/${loc}/glossary`}
       />
 
-      <ContinueReadingCard items={continueItems} label={t("chapter.continueReading")} />
+      <div className="mx-auto w-full max-w-6xl px-6">
+        <ContinueReadingCard items={continueItems} label={t("chapter.continueReading")} />
+      </div>
 
       <DescentSection
         kicker={t("landing.descentKicker")}
