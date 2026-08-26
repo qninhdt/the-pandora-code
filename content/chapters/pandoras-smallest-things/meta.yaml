@@ -1,0 +1,121 @@
+slug: pandoras-smallest-things
+status: published
+title:
+  vi: Những sinh thể bé mọn nhất Pandora
+  en: Pandora’s Smallest Things
+subtitle:
+  vi: >-
+    Pandora khoe những sinh vật lớn nhất trước tiên. Nhưng khu rừng chỉ tiếp tục sống vì những thứ
+    quá nhỏ để máy quay bận tâm: chúng ăn chiếc lá đã rụng, dựng lại đất từ xác chết, cư trú trong
+    mỗi cơ thể và buộc mọi vật chủ phải chạy chỉ để đứng yên.
+  en: >-
+    Pandora shows us its largest creatures first. Yet the forest remains alive because of things too
+    small for the camera to notice: they eat the fallen leaf, rebuild soil from the dead, inhabit
+    every body, and force every host to run merely to stay where it is.
+hook:
+  vi: >-
+    Một chiếc lá phát sáng rơi xuống nền rừng Pandora rồi biến mất khỏi câu chuyện. Sinh thái học
+    bắt đầu đúng nơi điện ảnh quay đi: không có chất thải trong một khu rừng lâu đời, chỉ có vật
+    chất đang chờ một cái miệng đủ nhỏ. Lần theo chiếc lá ấy sẽ dẫn ta từ một lỗ rỗng chứa nước tới
+    microbiome của cơ thể avatar, rồi đến cuộc rượt đuổi Nữ hoàng Đỏ giữa vật chủ và mầm bệnh—một
+    cuộc đua không có vạch đích, nơi kẻ phổ biến nhất chính là kẻ dễ bị bắt nhất.
+  en: >-
+    A luminous leaf falls to Pandora's forest floor and disappears from the story. Ecology begins
+    exactly where the camera turns away: in an old forest there is no waste, only matter waiting for
+    a mouth small enough to take it. Following that leaf leads from a water-filled pore to an avatar
+    body's microbiome and then into the Red Queen chase between hosts and pathogens—a race with no
+    finish line, where being common is what makes you easiest to catch.
+authors:
+  - bardabez
+tags:
+  - soil-ecology
+  - microbiome
+  - decomposition
+  - host-pathogen-coevolution
+  - red-queen-hypothesis
+  - planetary-protection
+classification:
+  canon_pct: 8
+  inference_pct: 18
+  speculation_pct: 7
+  real_science_pct: 67
+related_chapters:
+  - the-wood-wide-web
+  - what-is-pandoran-life-made-of
+  - the-hunters-and-the-hunted
+  - hometree-as-keystone
+glossary_terms:
+  - soil-aggregate
+  - decomposition
+  - rhizosphere
+  - microbiome
+  - mutualism
+  - pathogen
+  - coevolution
+  - negative-frequency-dependent-selection
+  - red-queen-hypothesis
+  - chirality
+  - planetary-protection
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-world-under-a-leaf
+    role: hero
+    asset_status: ready
+  - id: fig-02-life-inside-a-pore
+    role: diagram
+    asset_status: ready
+  - id: fig-03-the-unseeded-avatar
+    role: comparison
+    asset_status: ready
+  - id: fig-04-two-biospheres-at-the-skin
+    role: comparison
+    asset_status: ready
+  - id: fig-05-archive-in-the-mud
+    role: diagram
+    asset_status: ready
+  - id: fig-06-dead-cells-build-the-soil
+    role: diagram
+    asset_status: ready
+  - id: fig-07-the-dirty-airlock
+    role: comparison
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Avatar (2009), film and published screenplay
+  - kind: canon
+    label: Avatar - The Way of Water (2022), film
+  - kind: other
+    label: 'Avatar: Adapt or Die - licensed Dark Horse continuity'
+    url: https://digital.darkhorse.com/books/9b2d7020332c4ff990502c827ed56aa9/avatar-adapt-or-die
+  - kind: science
+    label: Lehmann & Kleber - The contentious nature of soil organic matter (Nature, 2015)
+    url: https://doi.org/10.1038/nature16069
+  - kind: science
+    label: >-
+      Cotrufo et al. - The Microbial Efficiency-Matrix Stabilization framework (Global Change
+      Biology, 2013)
+    url: https://doi.org/10.1111/gcb.12113
+  - kind: science
+    label: >-
+      Liang et al. - Quantitative assessment of microbial necromass contribution to soil organic
+      matter (Global Change Biology, 2019)
+    url: https://doi.org/10.1111/gcb.14781
+  - kind: science
+    label: >-
+      Decaestecker et al. - Host-parasite Red Queen dynamics archived in pond sediment (Nature,
+      2007)
+    url: https://doi.org/10.1038/nature06291
+  - kind: science
+    label: Morran et al. - Host-parasite coevolution selects for biparental sex (Science, 2011)
+    url: https://doi.org/10.1126/science.1206360
+  - kind: science
+    label: Van Valen - A New Evolutionary Law (Evolutionary Theory, 1973)
+    url: >-
+      https://ebme.marine.rutgers.edu/HistoryEarthSystems/HistEarthSystems_Fall2008/Week10b/Van_Valen_Evol_Theory_1973.pdf
+  - kind: science
+    label: NASA - Planetary Protection policy history and contamination principles
+    url: https://science.nasa.gov/planetary-science/programs/planetary-protection/
+  - kind: research-note
+    label: Pandora's Smallest Things - chapter Deep Research note

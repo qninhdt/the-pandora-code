@@ -1,0 +1,104 @@
+slug: whats-in-the-air
+status: published
+title:
+  vi: Hít một hơi là chết
+  en: What’s Really in the Air?
+subtitle:
+  vi: Có gì trong không khí
+  en: >-
+    Why an oxygen-rich air kills in seconds - and why that same air is the clearest possible
+    announcement that Pandora is alive
+hook:
+  vi: >-
+    Tháo mặt nạ ra trên Pandora, và bạn sẽ bất tỉnh trong khoảng hai mươi giây. Điều kỳ lạ là không
+    phải vì thiếu oxy - thứ khí ấy có thừa oxy để thở. Bầu không khí giết bạn bằng hóa học, không
+    phải bằng sự ngạt thở; và chính cái công thức hóa học giết người đó, khi nhìn từ ngoài vũ trụ,
+    lại là dấu hiệu không thể chối cãi của một thế giới đang sống.
+  en: >-
+    Take your mask off on Pandora and you have about twenty seconds before you lose consciousness.
+    The strange part is that it is not for lack of oxygen - the air has oxygen to spare. This air
+    kills by chemistry, not by suffocation; and that same lethal chemistry, read from space, is the
+    one thing that betrays a living world.
+authors:
+  - bardabez
+tags:
+  - atmospheric-chemistry
+  - toxicology
+  - biosignatures
+  - astrobiology
+  - respiratory-physiology
+classification:
+  canon_pct: 24
+  inference_pct: 12
+  speculation_pct: 6
+  real_science_pct: 58
+related_chapters:
+  - where-is-pandora
+  - the-breathing-fans
+  - a-real-living-planet
+glossary_terms:
+  - partial-pressure
+  - hypercapnia
+  - histotoxic-hypoxia
+  - biosignature
+  - atmospheric-disequilibrium
+  - great-oxidation-event
+  - transmission-spectroscopy
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-the-twenty-seconds
+    role: hero
+    asset_status: ready
+  - id: fig-02-thick-air
+    role: diagram
+    asset_status: ready
+  - id: fig-03-exo-pack-filter
+    role: diagram
+    asset_status: ready
+  - id: fig-04-reversed-gradient
+    role: diagram
+    asset_status: ready
+  - id: fig-05-jammed-mitochondrion
+    role: diagram
+    asset_status: ready
+  - id: fig-06-bonfire-from-space
+    role: diagram
+    asset_status: ready
+  - id: fig-07-false-positive-oxygen
+    role: comparison
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Exopack - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Exopack
+  - kind: canon
+    label: Pandora - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Pandora
+  - kind: science
+    label: Partial Pressure of Oxygen - StatPearls (NCBI Bookshelf)
+    url: https://www.ncbi.nlm.nih.gov/books/NBK493219/
+  - kind: science
+    label: Hydrogen Sulfide - Hazards (OSHA)
+    url: https://www.osha.gov/hydrogen-sulfide/hazards
+  - kind: science
+    label: Hydrogen sulfide - IDLH (NIOSH / CDC)
+    url: https://www.cdc.gov/niosh/idlh/7783064.html
+  - kind: science
+    label: Disequilibrium biosignatures over Earth history (PMC)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5787383/
+  - kind: science
+    label: Biosignature - Wikipedia
+    url: https://en.wikipedia.org/wiki/Biosignature
+  - kind: science
+    label: Prospects for detecting signs of life on exoplanets in the JWST era (PNAS)
+    url: https://www.pnas.org/doi/10.1073/pnas.2416188122
+  - kind: science
+    label: Life or illusion? Avoiding 'false positives' in the search for living worlds (UW News)
+    url: >-
+      https://www.washington.edu/news/2016/02/29/life-or-illusion-avoiding-false-positives-in-the-search-for-living-worlds/
+  - kind: research-note
+    label: >-
+      Comparative Planetology and Xenophysiology - Analysis of the Pandoran Atmosphere (chapter
+      research note)

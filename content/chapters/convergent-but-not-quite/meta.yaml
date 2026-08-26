@@ -1,0 +1,119 @@
+slug: convergent-but-not-quite
+status: published
+title:
+  vi: Tiến hóa hội tụ, nhưng không hẳn
+  en: Convergent, but Not Quite
+subtitle:
+  vi: >-
+    Tại sao một mặt trăng xa xôi cứ liên tục tái tạo lại những con vật của Trái Đất - và một quy
+    luật duy nhất giúp bạn dự đoán hình thù của một sinh vật mà mình chưa từng chạm mặt.
+  en: >-
+    Why an alien moon keeps reinventing Earth's animals - and the one law that lets you predict the
+    shape of a creature you have never seen
+hook:
+  vi: >-
+    Người đầu tiên đặt chân vào cánh rừng Pandora đã liên tục điểm mặt gọi tên vạn vật - kia là một
+    con báo, kia là một bầy sói, kia là một con đại bàng - và gần như gã luôn đoán trúng phóc vai
+    trò của chúng, dẫu chưa một lần gọi đúng hình hài. Một mặt trăng mang trong mình nguồn gốc sự
+    sống hoàn toàn độc lập, được kiến tạo dựa trên bản thiết kế cơ thể sáu chi, thế nhưng lại cứ
+    ngang bướng tái diễn lại nguyên dàn diễn viên của Trái Đất. Lời giải đáp không phải là Pandora
+    đang bắt chước chúng ta. Nó nằm ở một quy luật buộc sự sống, dù ở bất kỳ xó xỉnh nào, cũng phải
+    hội tụ về đúng một danh sách ngắn ngủi những lời giải xuất sắc - và một sự thật sâu xa hơn đằng
+    sau việc vì sao nó không bao giờ hội tụ một cách trọn vẹn.
+  en: >-
+    The first human to walk Pandora's forest kept naming things - that is a panther, that is a
+    wolf-pack, that is an eagle - and was almost always right about the job, never about the build.
+    A moon with its own separate origin of life, built on a six-limbed body plan, keeps stubbornly
+    reinventing Earth's cast of characters. The answer is not that Pandora copied us. It is a law
+    that forces life anywhere to converge on the same short list of good answers - and the deeper
+    truth in why it never converges all the way.
+authors:
+  - bardabez
+tags:
+  - evolutionary-biology
+  - convergent-evolution
+  - ecology
+  - niche-theory
+  - astrobiology
+classification:
+  canon_pct: 25
+  inference_pct: 18
+  speculation_pct: 8
+  real_science_pct: 49
+related_chapters:
+  - six-limbs-and-the-bilateral-lattice
+  - pandoran-tree-of-life
+  - the-hunters-and-the-hunted
+glossary_terms:
+  - convergent-evolution
+  - analogous-structures
+  - homologous-structures
+  - ecological-niche
+  - fundamental-niche
+  - realized-niche
+  - niche-partitioning
+  - competitive-exclusion-principle
+  - character-displacement
+  - adaptive-radiation
+  - ecomorph
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-the-recognition
+    role: hero
+    asset_status: ready
+  - id: fig-02-thanator-vs-panther
+    role: comparison
+    asset_status: ready
+  - id: fig-03-niche-space
+    role: diagram
+    asset_status: ready
+  - id: fig-04-anolis-radiation
+    role: diagram
+    asset_status: ready
+  - id: fig-05-tells-of-history
+    role: comparison
+    asset_status: ready
+  - id: fig-06-partitioning
+    role: diagram
+    asset_status: ready
+  - id: fig-07-prolemuris-intermediate
+    role: inline
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Thanator - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Thanator
+  - kind: canon
+    label: Viperwolf - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Viperwolf
+  - kind: canon
+    label: Mountain Banshee - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Mountain_Banshee
+  - kind: canon
+    label: Prolemuris - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Prolemuris
+  - kind: canon
+    label: Direhorse - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Direhorse
+  - kind: science
+    label: Convergent evolution - Wikipedia
+    url: https://en.wikipedia.org/wiki/Convergent_evolution
+  - kind: science
+    label: Losos, J. (2011) Lizards in an Evolutionary Tree - Anolis ecomorphs
+    url: https://www.ucpress.edu/book/9780520269842/lizards-in-an-evolutionary-tree
+  - kind: science
+    label: Hutchinson, G.E. (1957) Concluding Remarks - the n-dimensional niche
+    url: https://symposium.cshlp.org/content/22/415.short
+  - kind: science
+    label: Liu et al. (2010) Convergent Prestin sequence in echolocating bats and dolphins
+    url: https://www.cell.com/current-biology/fulltext/S0960-9822(09)02088-2
+  - kind: science
+    label: Gause, G.F. (1934) The Struggle for Existence - competitive exclusion
+    url: https://www.biodiversitylibrary.org/bibliography/4489
+  - kind: science
+    label: Carcinisation - Wikipedia
+    url: https://en.wikipedia.org/wiki/Carcinisation
+  - kind: research-note
+    label: Convergent Evolution, Niche Theory, and the Pandoran Bestiary (chapter research note)

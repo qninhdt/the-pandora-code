@@ -4,8 +4,6 @@ import { describe, expect, it } from "vitest";
 describe("ChapterMeta schema", () => {
   const valid = {
     slug: "demo",
-    part: "prologue",
-    order: 1,
     status: "published",
     title: { vi: "T", en: "T" },
     hook: { vi: "H", en: "H" },

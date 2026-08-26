@@ -2,10 +2,10 @@ import { TimelineJourney } from "@/components/content/timeline-journey";
 import { PageBackground } from "@/components/layout/page-background";
 import { JsonLd } from "@/components/seo/json-ld";
 import { type Locale, isLocale } from "@/i18n/config";
-import { chapterOrderPrefix } from "@/lib/content/loader/chapter-index";
 import { listPublishedChapters } from "@/lib/content/loader/chapter-loader";
 import { getPageBackground } from "@/lib/content/loader/page-background";
 import { listParts } from "@/lib/content/loader/part-loader";
+import { OUTLINE, chapterPosition, partNumberLabel } from "@/lib/content/outline";
 import { buildPageMetadata } from "@/lib/seo/page-metadata";
 import { createBreadcrumbListSchema } from "@/lib/seo/structured-data";
 import type { Metadata } from "next";
@@ -28,16 +28,6 @@ export async function generateMetadata({ params }: TimelinePageProps): Promise<M
   });
 }
 
-// "first-light" → "First Light", so part sections still read nicely even when a
-// part has no metadata file yet and we only know its id from the chapters.
-function humanize(id: string): string {
-  return id
-    .split(/[-_]/)
-    .filter(Boolean)
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(" ");
-}
-
 export default async function TimelinePage({ params }: TimelinePageProps) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
@@ -49,42 +39,33 @@ export default async function TimelinePage({ params }: TimelinePageProps) {
   const chapters = listPublishedChapters(loc);
   const bg = getPageBackground("timeline");
 
-  // Build the reading order from the Parts when they exist, but always fall
-  // back to the part ids referenced by the chapters themselves — otherwise the
-  // timeline is empty whenever the parts/ directory hasn't been authored yet.
+  // OUTLINE is the single source of book order; parts/*.yaml only supplies prose
+  // (title, description) for a part that has been authored.
   const partMeta = new Map(parts.map((p) => [p.id, p]));
-  const sectionIds: string[] = parts.map((p) => p.id);
-  for (const c of chapters) {
-    if (!sectionIds.includes(c.meta.part)) sectionIds.push(c.meta.part);
-  }
+  const bySlug = new Map(chapters.map((c) => [c.meta.slug, c]));
 
-  const events = sectionIds.flatMap((partId, i) => {
-    const meta = partMeta.get(partId);
-    const partChapters = chapters.filter((c) => c.meta.part === partId);
+  const events = OUTLINE.flatMap((part) => {
+    const meta = partMeta.get(part.id);
+    const partChapters = part.chapters
+      .map((ch) => bySlug.get(ch.slug))
+      .filter((c): c is NonNullable<typeof c> => c !== undefined);
     if (!meta && partChapters.length === 0) return [];
-    // Part/chapter numbers come from the on-disk "N-M-" folder prefix (book
-    // order), since meta.order is unreliable. Fall back to part metadata or
-    // encounter index only when no chapter prefix is available.
-    const partNo =
-      chapterOrderPrefix(partChapters[0]?.meta.slug ?? "")?.part ?? meta?.order ?? i + 1;
+    const roman = partNumberLabel(part.id);
     return [
       {
-        id: `part-${partId}`,
-        date: `Part ${partNo}`,
-        title: meta?.title ?? humanize(partId),
+        id: `part-${part.id}`,
+        date: roman ? `Part ${roman}` : part.label[loc],
+        title: meta?.title ?? part.label[loc],
         description: meta?.description,
         kind: "canon" as const,
       },
-      ...partChapters.map((c, j) => {
-        const prefix = chapterOrderPrefix(c.meta.slug);
-        return {
-          id: `ch-${c.meta.slug}`,
-          date: `${prefix?.part ?? partNo}.${prefix?.order ?? j + 1}`,
-          title: c.title,
-          description: c.subtitle ?? c.hook,
-          kind: "inference" as const,
-        };
-      }),
+      ...partChapters.map((c) => ({
+        id: `ch-${c.meta.slug}`,
+        date: chapterPosition(c.meta.slug)?.label ?? "",
+        title: c.title,
+        description: c.subtitle ?? c.hook,
+        kind: "inference" as const,
+      })),
     ];
   });
 

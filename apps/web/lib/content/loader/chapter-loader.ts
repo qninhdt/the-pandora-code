@@ -1,9 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { Locale } from "@/i18n/config";
+import { chapterPosition } from "../outline";
 import { estimateReadingTimeCached } from "../reading-time";
 import { ChapterMeta, type LocalizedChapter } from "../schemas/chapter-meta";
-import { chapterOrderPrefix, listChapterSlugsFromIndex } from "./chapter-index";
+import { listChapterSlugsFromIndex } from "./chapter-index";
 import { chapterDir, chapterMdxPath, chapterMetaPath } from "./content-paths";
 import { fileExists, parseYaml } from "./yaml-utils";
 
@@ -52,14 +53,14 @@ export function listChapters(locale: Locale): LocalizedChapter[] {
     const chapter = getChapter(slug, locale);
     if (chapter) chapters.push(chapter);
   }
-  // Sort by the on-disk "N-M-" folder prefix (part N, order M) - the
-  // authoritative book order. meta.part is a string id and meta.order is
-  // inconsistent across chapters, so neither can be trusted for sequencing.
+  // Book order is the array order of OUTLINE, the single source of sequence.
+  // A chapter absent from the outline sorts last; the content validator fails
+  // the build on that case, so it only ever shows up mid-authoring.
   return chapters.sort((a, b) => {
-    const pa = chapterOrderPrefix(a.meta.slug);
-    const pb = chapterOrderPrefix(b.meta.slug);
+    const pa = chapterPosition(a.meta.slug);
+    const pb = chapterPosition(b.meta.slug);
     if (pa && pb) {
-      return pa.part - pb.part || pa.order - pb.order;
+      return pa.partIndex - pb.partIndex || pa.chapterIndex - pb.chapterIndex;
     }
     if (pa) return -1;
     if (pb) return 1;

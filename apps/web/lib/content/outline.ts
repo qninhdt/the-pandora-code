@@ -1,11 +1,14 @@
-import type { Locale } from "@/i18n/config";
-import { listPublishedChapters } from "./loader/chapter-loader";
-
-// Single source of truth for the book's structure: 10 Parts + a prologue, 65
-// chapters total. Each chapter carries a bilingual one-line payload (the
-// Pandora hook → real-science meal) and a rich, naturally flowing detailedPayload
-// weaving canonical worldbuilding observations directly with empirical scientific analysis.
-// The landing browser, reader nav, and the /pandora "next pending" logic all read this list.
+// Single source of truth for the book's structure and its order. Array position IS
+// the book order: part index gives the part number, chapter index gives the number
+// within the part. Nothing else - not a folder name, not a meta.yaml field - carries
+// sequence, so resequencing the book is an edit to this file alone.
+//
+// Parts I-V teach a mechanism once. Parts VI-XI are places and peoples that spend
+// those mechanisms and may only refer back to them. The prologue and epilogue mirror
+// each other at either end.
+//
+// The landing browser, reader nav, timeline and the /pandora "next pending" logic all
+// read this list.
 
 export interface OutlineChapter {
   slug: string;
@@ -45,8 +48,8 @@ export const OUTLINE: OutlinePart[] = [
     ],
   },
   {
-    id: "the-world",
-    label: { vi: "Phần I — Thế giới", en: "Part I — The World" },
+    id: "the-planet",
+    label: { vi: "Phần I — Hành tinh", en: "Part I — The Planet" },
     chapters: [
       {
         slug: "from-stardust-to-pandora",
@@ -59,7 +62,7 @@ export const OUTLINE: OutlinePart[] = [
           en: "Cosmic origins of Pandora from Big Bang to stellar fusion → Stellar nucleosynthesis, heavy elements, and protoplanetary disk formation.",
         },
         detailedPayload: {
-          vi: "Chương này đi sâu vào quá trình tổng hợp hạt nhân từ thời kỳ Big Bang, các phản ứng nhiệt hạch trong các vì sao và cách các ngôi sao \"gieo hạt\" cho các hành tinh. Hành trình bắt đầu từ những ngôi sao đầu tiên, cái chết của chúng, và cách khí bụi giữa các vì sao ngưng tụ trong các đĩa tiền hành tinh để hình thành các thế giới như Pandora cùng hành tinh mẹ khổng lồ của nó. Chương lý giải cách các nguyên tố nặng như carbon và oxy được mang đến đây qua các thiên thạch chứa carbon.",
+          vi: 'Chương này đi sâu vào quá trình tổng hợp hạt nhân từ thời kỳ Big Bang, các phản ứng nhiệt hạch trong các vì sao và cách các ngôi sao "gieo hạt" cho các hành tinh. Hành trình bắt đầu từ những ngôi sao đầu tiên, cái chết của chúng, và cách khí bụi giữa các vì sao ngưng tụ trong các đĩa tiền hành tinh để hình thành các thế giới như Pandora cùng hành tinh mẹ khổng lồ của nó. Chương lý giải cách các nguyên tố nặng như carbon và oxy được mang đến đây qua các thiên thạch chứa carbon.',
           en: "This chapter covers Big Bang nucleosynthesis, stellar fusion, and how stars seed planets. It traces the journey from the first stars to the death of stars, and how the resulting interstellar gas condenses in protoplanetary disks to form worlds like Pandora and its gas giant. It explores how heavy elements like carbon and oxygen are delivered via carbonaceous meteorites.",
         },
       },
@@ -73,21 +76,6 @@ export const OUTLINE: OutlinePart[] = [
         detailedPayload: {
           vi: "Pandora quay quanh Polyphemus — một hành tinh khí khổng lồ cỡ Sao Hải Vương trong hệ ba sao Alpha Centauri, chịu sự chi phối mãnh liệt từ trường hấp dẫn và từ quyển của hành tinh mẹ. Từ bối cảnh thiên văn nền tảng này, chúng ta khảo sát vùng ở được (habitable zone) quanh các hệ sao đôi phức tạp và điều kiện động lực học để một mặt trăng duy trì quỹ đạo ổn định. Việc phát hiện một thiên thể như Pandora trong thực tế đòi hỏi kỹ thuật đo biến thiên thời gian quá cảnh (transit timing variations), quang phổ truyền qua và chụp ảnh trực tiếp. Định nghĩa vùng sống được của NASA không chỉ dừng lại ở nước lỏng trên bề mặt; một mặt trăng có sự sống còn phải vượt qua bài toán khắc nghiệt về bão bức xạ sao, nhiệt thủy triều ma sát và sự nhiễu loạn quỹ đạo trường kỳ.",
           en: "Pandora orbits Polyphemus, a Neptune-sized gas giant within the Alpha Centauri trinary system, subjected to immense gravitational and magnetospheric forces from its parent world. This astronomical setting anchors an exploration of circumstellar habitable zones around binary stars and the dynamical stability required for giant-planet moons. Detecting a real-world Pandora relies on transit timing variations, transmission spectroscopy, and direct exoplanet imaging. Beyond NASA's baseline criterion of liquid surface water, a living exomoon must withstand intense stellar flare radiation, tidal heating dissipation, and persistent orbital perturbations.",
-        },
-      },
-      {
-        slug: "the-birth-of-pandora",
-        title: {
-          vi: "Sự ra đời của Pandora",
-          en: "The Birth of Pandora",
-        },
-        payload: {
-          vi: "Sự hình thành của Pandora quanh một hành tinh khí trong hệ sao đôi → Sự bồi tụ hành tinh, phân dị vật chất và địa hóa học khí quyển.",
-          en: "The formation of Pandora around a gas giant in a binary system → Planetary accretion, differentiation, and atmospheric geochemistry.",
-        },
-        detailedPayload: {
-          vi: "Tiếp nối nguồn gốc vũ trụ, chương này tập trung vào sự hình thành của Pandora quanh Polyphemus trong hệ sao đôi Alpha Centauri. Nó giải thích động lực học quỹ đạo của sự hình thành hành tinh, sự bồi tụ vật chất tạo nên lõi, lớp vỏ và lớp phủ của Pandora, cũng như cách địa hóa học tạo nền tảng cho sự sống. Bằng việc phân tích khoáng chất và khí núi lửa, chương liên kết quá trình hình thành bầu khí quyển với môi trường vật lý thúc đẩy các thích nghi sinh học.",
-          en: "Building on cosmic origins, this chapter focuses on how Pandora formed around Polyphemus in the Alpha Centauri binary system. It explains the orbital dynamics of planet formation, the accretion of elements into Pandora's core, mantle, and crust, and how geochemistry sets the stage for life. By examining soil minerals and volcanic gases, it links the atmospheric origins to the physical environment that shapes life's adaptations.",
         },
       },
       {
@@ -121,21 +109,6 @@ export const OUTLINE: OutlinePart[] = [
         },
       },
       {
-        slug: "floating-mountains-and-the-superconductor",
-        title: {
-          vi: "Một thế giới bị từ trường bẻ cong",
-          en: "Floating Mountains, Unobtanium and the Flux Devil",
-        },
-        payload: {
-          vi: "Dãy Hallelujah, quặng unobtanium và vùng xoáy từ Flux Devil → Vật lý siêu dẫn (cặp Cooper, hiệu ứng Meissner) và lực nâng nghịch từ.",
-          en: "Hallelujah Mountains, unobtanium, and the Flux Devil → Superconductivity (Cooper pairs, Meissner effect, flux pinning) and diamagnetic levitation.",
-        },
-        detailedPayload: {
-          vi: "Dãy núi bay Hallelujah lơ lửng giữa tầng không nhờ các mỏ unobtanium — một chất siêu dẫn gắn liền với các nồng độ từ thông khổng lồ, mà đỉnh điểm là hiện tượng Flux Devil tại Cove of the Ancestors nơi cột xoáy nước và plasma nghịch từ bốc cao hơn 3.000 feet, giật tung kim loại khỏi người mang. Khám phá này mở ra bức tranh vật lý lượng tử kỳ vĩ về các cặp Cooper, nhiệt độ tới hạn, hiệu ứng Meissner, hiện tượng ghim từ thông (flux pinning) và áp suất từ trường. Bằng cách tính toán định lượng gradient từ trường cần thiết để nâng bổng một cột nước lỏng rồi đối chiếu với năng lượng khổng lồ để treo một ngọn núi đá hàng triệu tấn, chương làm rõ khoảng cách thực tế giữa siêu dẫn trong phòng thí nghiệm và quy mô địa chất của Pandora.",
-          en: "The floating Hallelujah Mountains levitate above massive deposits of unobtanium, a superconductor embedded in planetary magnetic flux concentrations, culminating in the Flux Devil at the Cove of the Ancestors where diamagnetic water and plasma twist over 3,000 feet into the air, stripping metallic gear away. This phenomenon unlocks the quantum physics of Cooper pairing, critical temperatures, the Meissner effect, flux pinning, and magnetic pressure. By calculating the magnetic field gradients required to lift liquid water and contrasting them with the forces needed to suspend gigaton mountain landforms, the chapter bridges tabletop superconductivity and planetary-scale geophysics.",
-        },
-      },
-      {
         slug: "continents-oceans-climate",
         title: {
           vi: "Lục địa, đại dương và khí hậu",
@@ -148,6 +121,51 @@ export const OUTLINE: OutlinePart[] = [
         detailedPayload: {
           vi: "Pandora không chỉ có rừng rậm nhiệt đới mà sở hữu những đại dương bao la, các lục địa hoang sơ chưa khám phá, những đồng bằng bán khô hạn và vô vàn quần xã sinh vật phân hóa phức tạp. Chương xây dựng một mô hình khí hậu hoàn chỉnh dựa trên bức xạ sao, tốc độ tự quay, khối lượng khí quyển, nhiệt dung của các đại dương, các ô hoàn lưu Hadley và sự xáo trộn thủy triều dữ dội. Hoàn lưu khí quyển và các đai gió thịnh hành giải thích tại sao các dải rừng và biển lại hình thành ở đúng tọa độ đó, đồng thời cung cấp cơ sở vật lý cho các hành lang bay di cư định kỳ vòng quanh hành tinh của tộc du mục Tlalim.",
           en: "Pandora is not a monolithic rainforest; it hosts expansive oceans, uncharted continents, arid plains, and diverse biomes. This chapter builds a comprehensive planetary climate model incorporating stellar insolation, rotation rates, atmospheric mass, oceanic heat capacity, Hadley circulation cells, and intense tidal mixing. Atmospheric dynamics explain why specific biomes emerge at distinct latitudes, establishing the physical foundation for the annual planetary migration corridors navigated by the Tlalim Wind Traders.",
+        },
+      },
+      {
+        slug: "pandoran-water-and-weather",
+        title: {
+          vi: "Nước và Thời tiết trên Pandora",
+          en: "Pandora's Water and Weather",
+        },
+        payload: {
+          vi: "Thác nước rơi khỏi những rặng núi bay và mưa rừng không bao giờ dứt → Vòng tuần hoàn nước, vi vật lý mây, mạng lưới sông và động lực học bão.",
+          en: "Waterfalls pouring off floating mountains and a rainforest that never dries → The water cycle, cloud microphysics, river networks, and storm dynamics.",
+        },
+        detailedPayload: {
+          vi: "Canon cho ta thấy nước ở khắp nơi trên Pandora — thác đổ khỏi rặng Hallelujah, sông chảy dưới tán rừng Omatikaya, đầm lầy và vùng ngập ven Đại Dương Đông — nhưng chưa bao giờ giải thích chu trình đưa nước lên cao rồi trả nó về. Chương này dựng lại vòng tuần hoàn ấy từ nguyên lý: bốc hơi và thoát hơi từ tán rừng, độ hụt áp suất hơi quyết định cây mất nước nhanh đến đâu, sự hình thành mây quanh hạt nhân ngưng tụ, và ngưỡng mà giọt mây đủ lớn để rơi. Trên Trái Đất, rừng Amazon tự tái chế khoảng một nửa lượng mưa của chính nó qua những dòng sông bay trên không — luận điểm tương tự giải thích tại sao một mặt trăng gần như toàn rừng mưa có thể tự duy trì độ ẩm. Từ mây, chương đi xuống mặt đất: định luật Horton về mạng lưới sông, thời gian lưu của nước trong tầng ngậm nước, xói mòn và vận chuyển trầm tích tạc nên địa hình. Cuối cùng là thời tiết dữ: đối lưu trong khí quyển đặc hơn Trái Đất, xoáy thuận, và câu hỏi chỉ Pandora mới có — một hành tinh mẹ khổng lồ cùng chu kỳ nhật thực hằng ngày làm gì với nhịp đối lưu ban ngày.",
+          en: "Canon shows water everywhere on Pandora — waterfalls pouring off the Hallelujah range, rivers threading the Omatikaya understory, wetlands and floodplains along the Eastern Sea — yet never accounts for the cycle that lifts that water and returns it. This chapter rebuilds that cycle from first principles: evaporation and canopy transpiration, the vapour-pressure deficit that sets how fast a leaf loses water, cloud formation around condensation nuclei, and the threshold at which a droplet grows heavy enough to fall. On Earth the Amazon recycles roughly half its own rainfall through flying rivers of vapour — the same argument explains how a moon that is almost entirely rainforest sustains its own humidity. From cloud the chapter descends to ground: Horton's laws of river networks, groundwater residence time, and the erosion and sediment transport that carve topography. It closes on violent weather: convection in air denser than Earth's, cyclone formation, and the question only Pandora poses — what a giant parent planet and a daily eclipse do to the rhythm of afternoon convection.",
+        },
+      },
+      {
+        slug: "pandoran-plate-tectonics",
+        title: {
+          vi: "Lớp vỏ đang dịch chuyển",
+          en: "A Crust That Moves",
+        },
+        payload: {
+          vi: "Những dãy núi, biển sâu và mỏ unobtanium đòi hỏi một lớp vỏ biết dịch chuyển → Kiến tạo mảng, đối lưu manti và cách sóng địa chấn đọc được lòng một hành tinh.",
+          en: "Mountain ranges, deep seas and unobtanium deposits all demand a crust that moves → Plate tectonics, mantle convection, and how seismic waves read a planet's interior.",
+        },
+        detailedPayload: {
+          vi: "Pandora có dãy núi, có biển sâu, có vành núi lửa và có những mỏ khoáng vật tập trung đủ đậm để đáng khai thác liên sao — bốn đặc điểm trên Trái Đất đều là sản phẩm của cùng một cỗ máy: kiến tạo mảng. Nhưng canon chưa từng nói Pandora có mảng. Chương này xét bằng chứng gián tiếp và hỏi liệu suy luận ấy có bắt buộc hay không. Bắt đầu từ cách nhân loại biết được lòng Trái Đất mà không cần đào tới đó: sóng địa chấn P và S, vùng tối của sóng ngang chứng minh nhân ngoài là chất lỏng, và bất liên tục Mohorovičić. Rồi tới động cơ: đối lưu manti, số Rayleigh quyết định một lớp có đối lưu hay không, và ba chế độ mà một thiên thể đá có thể chọn — kiến tạo mảng như Trái Đất, nắp trì trệ như Sao Kim, hay chế độ ống dẫn nhiệt như Io. Đây là điểm căng thẳng thật: Io được nung bởi nhiệt thủy triều giống Pandora, nhưng Io không có mảng; nó phun toàn bộ nhiệt qua núi lửa và tái tạo bề mặt mà không hề tách giãn. Nếu Pandora vừa có nhiệt thủy triều mạnh vừa có dãy núi va chạm, nó phải giải một bài toán mà không thiên thể nào trong Hệ Mặt Trời giải theo cách đó — và chương đánh dấu rõ đâu là suy luận, đâu là chỗ ta chỉ đang đoán.",
+          en: "Pandora has mountain ranges, deep seas, a volcanic province, and ore concentrated richly enough to justify interstellar mining. On Earth all four are products of one machine: plate tectonics. Yet canon never says Pandora has plates. This chapter weighs the circumstantial evidence and asks whether the inference is forced. It starts with how humanity learned Earth's interior without ever reaching it: P and S waves, the shear-wave shadow that proves a liquid outer core, and the Mohorovičić discontinuity. Then the engine: mantle convection, the Rayleigh number that decides whether a layer convects at all, and the three regimes a rocky body can settle into — Earth-style plate tectonics, Venus-style stagnant lid, or Io's heat-pipe mode. That is where the real tension sits. Io is tidally heated much as Pandora is, and Io has no plates; it vents its entire heat budget through volcanism, resurfacing itself without ever rifting. A Pandora with both strong tidal heating and collisional mountain ranges would be solving a problem no body in the Solar System solves that way — and the chapter marks plainly where inference ends and guessing begins.",
+        },
+      },
+      {
+        slug: "what-keeps-pandora-volcanically-alive",
+        title: {
+          vi: "Cỗ máy núi lửa của Pandora",
+          en: "What Keeps Pandora Volcanically Alive?",
+        },
+        payload: {
+          vi: "Hoạt động hỏa sơn dữ dội và thảm họa diệt vong của tộc Mangkwan → Tiêu tán thủy triều (tidal dissipation), nhiệt nguyên thủy và bài học từ vệ tinh Io.",
+          en: "Violent volcanism and the catastrophe of the Mangkwan clan → Tidal dissipation heating, radiogenic energy, and the Io analogue.",
+        },
+        detailedPayload: {
+          vi: "Tương tác hấp dẫn và từ trường mãnh liệt với Polyphemus nuôi dưỡng các cơn bão từ và hoạt động núi lửa dữ dội, mà biến cố lịch sử đau thương nhất chính là vụ phun trào hủy diệt hoàn toàn quê hương và Cây Mẹ Hometree của tộc Tro tàn Mangkwan. Bằng tư duy vật lý địa cầu, chương phản biện lại giả định cho rằng từ trường trực tiếp sinh ra magma, mà chứng minh nguồn nhiệt thực sự duy trì sự sống địa chất của Pandora đến từ sự phân rã phóng xạ, nhiệt nguyên thủy và đặc biệt là năng lượng tiêu tán thủy triều (tidal dissipation). Lấy mặt trăng Io của Sao Mộc làm mô hình đối chiếu, chúng ta tính toán độ lệch tâm quỹ đạo và hệ số tiêu tán cơ học cần thiết để duy trì hoạt động hỏa sơn liên tục qua hàng trăm triệu năm.",
+          en: "Intense gravitational and magnetic interactions with Polyphemus fuel violent volcanic activity and magnetic storms, culminating in the historic eruption that obliterated the ancestral Hometree of the Mangkwan clan. Planetary geophysics provides constructive critique: magnetic fields cannot directly generate magma without a mechanical energy conversion pathway; Pandora's internal heat is sustained by radiogenic decay, primordial thermal energy, and tidal dissipation from gravitational flexing. Using Jupiter's moon Io as an analogue, the chapter calculates the orbital eccentricity and tidal dissipation factors required to sustain continuous volcanism across geological epochs.",
         },
       },
       {
@@ -166,25 +184,25 @@ export const OUTLINE: OutlinePart[] = [
         },
       },
       {
-        slug: "what-keeps-pandora-volcanically-alive",
+        slug: "floating-mountains-and-the-superconductor",
         title: {
-          vi: "Cỗ máy núi lửa của Pandora",
-          en: "What Keeps Pandora Volcanically Alive?",
+          vi: "Một thế giới bị từ trường bẻ cong",
+          en: "Floating Mountains, Unobtanium and the Flux Devil",
         },
         payload: {
-          vi: "Hoạt động hỏa sơn dữ dội và thảm họa diệt vong của tộc Mangkwan → Tiêu tán thủy triều (tidal dissipation), nhiệt nguyên thủy và bài học từ vệ tinh Io.",
-          en: "Violent volcanism and the catastrophe of the Mangkwan clan → Tidal dissipation heating, radiogenic energy, and the Io analogue.",
+          vi: "Dãy Hallelujah, quặng unobtanium và vùng xoáy từ Flux Devil → Vật lý siêu dẫn (cặp Cooper, hiệu ứng Meissner) và lực nâng nghịch từ.",
+          en: "Hallelujah Mountains, unobtanium, and the Flux Devil → Superconductivity (Cooper pairs, Meissner effect, flux pinning) and diamagnetic levitation.",
         },
         detailedPayload: {
-          vi: "Tương tác hấp dẫn và từ trường mãnh liệt với Polyphemus nuôi dưỡng các cơn bão từ và hoạt động núi lửa dữ dội, mà biến cố lịch sử đau thương nhất chính là vụ phun trào hủy diệt hoàn toàn quê hương và Cây Mẹ Hometree của tộc Tro tàn Mangkwan. Bằng tư duy vật lý địa cầu, chương phản biện lại giả định cho rằng từ trường trực tiếp sinh ra magma, mà chứng minh nguồn nhiệt thực sự duy trì sự sống địa chất của Pandora đến từ sự phân rã phóng xạ, nhiệt nguyên thủy và đặc biệt là năng lượng tiêu tán thủy triều (tidal dissipation). Lấy mặt trăng Io của Sao Mộc làm mô hình đối chiếu, chúng ta tính toán độ lệch tâm quỹ đạo và hệ số tiêu tán cơ học cần thiết để duy trì hoạt động hỏa sơn liên tục qua hàng trăm triệu năm.",
-          en: "Intense gravitational and magnetic interactions with Polyphemus fuel violent volcanic activity and magnetic storms, culminating in the historic eruption that obliterated the ancestral Hometree of the Mangkwan clan. Planetary geophysics provides constructive critique: magnetic fields cannot directly generate magma without a mechanical energy conversion pathway; Pandora's internal heat is sustained by radiogenic decay, primordial thermal energy, and tidal dissipation from gravitational flexing. Using Jupiter's moon Io as an analogue, the chapter calculates the orbital eccentricity and tidal dissipation factors required to sustain continuous volcanism across geological epochs.",
+          vi: "Dãy núi bay Hallelujah lơ lửng giữa tầng không nhờ các mỏ unobtanium — một chất siêu dẫn gắn liền với các nồng độ từ thông khổng lồ, mà đỉnh điểm là hiện tượng Flux Devil tại Cove of the Ancestors nơi cột xoáy nước và plasma nghịch từ bốc cao hơn 3.000 feet, giật tung kim loại khỏi người mang. Khám phá này mở ra bức tranh vật lý lượng tử kỳ vĩ về các cặp Cooper, nhiệt độ tới hạn, hiệu ứng Meissner, hiện tượng ghim từ thông (flux pinning) và áp suất từ trường. Bằng cách tính toán định lượng gradient từ trường cần thiết để nâng bổng một cột nước lỏng rồi đối chiếu với năng lượng khổng lồ để treo một ngọn núi đá hàng triệu tấn, chương làm rõ khoảng cách thực tế giữa siêu dẫn trong phòng thí nghiệm và quy mô địa chất của Pandora.",
+          en: "The floating Hallelujah Mountains levitate above massive deposits of unobtanium, a superconductor embedded in planetary magnetic flux concentrations, culminating in the Flux Devil at the Cove of the Ancestors where diamagnetic water and plasma twist over 3,000 feet into the air, stripping metallic gear away. This phenomenon unlocks the quantum physics of Cooper pairing, critical temperatures, the Meissner effect, flux pinning, and magnetic pressure. By calculating the magnetic field gradients required to lift liquid water and contrasting them with the forces needed to suspend gigaton mountain landforms, the chapter bridges tabletop superconductivity and planetary-scale geophysics.",
         },
       },
     ],
   },
   {
-    id: "the-living-world",
-    label: { vi: "Phần II — Thế giới sống", en: "Part II — The Living World" },
+    id: "the-matter-of-life",
+    label: { vi: "Phần II — Vật chất của sự sống", en: "Part II — The Matter of Life" },
     chapters: [
       {
         slug: "origins-of-life-on-pandora",
@@ -217,51 +235,6 @@ export const OUTLINE: OutlinePart[] = [
         },
       },
       {
-        slug: "pandoran-paleontology",
-        title: {
-          vi: "Cổ sinh vật học Pandora",
-          en: "Pandoran Paleontology",
-        },
-        payload: {
-          vi: "Dòng thời gian sâu thẳm và hồ sơ hóa thạch của Pandora → Điều kiện hóa thạch, cổ sinh thái học và dòng thời gian của các kỷ nguyên tiến hóa.",
-          en: "Deep time and the fossil record of Pandora → Fossilization conditions, paleoecology, and the timeline of evolutionary epochs.",
-        },
-        detailedPayload: {
-          vi: "Chương kết nối sinh học và địa chất bằng cách hình dung các bằng chứng hóa thạch và \"dòng thời gian sâu thẳm\" của quá trình tiến hóa trên Pandora. Nó chi tiết hóa các điều kiện cần thiết để hình thành hóa thạch trong môi trường Pandora, các kỷ nguyên địa chất chính, những biến đổi khí hậu trong quá khứ, và diện mạo của các loài sinh vật khổng lồ đã tuyệt chủng, cung cấp một nền tảng cổ sinh vật học để xác thực câu chuyện tiến hóa đương đại.",
-          en: "This chapter bridges biology and geology by imagining the fossil evidence and evolutionary \"deep time\" of Pandora. It details the conditions required for fossilization in Pandora's environment, major geologic periods, past climate shifts, and what extinct megafauna eras might have looked like, providing a paleontological context that validates the modern evolutionary narrative.",
-        },
-      },
-      {
-        slug: "pandoran-tree-of-life",
-        title: {
-          vi: "Phả hệ sự sống Pandora",
-          en: "Building the Pandoran Tree of Life",
-        },
-        payload: {
-          vi: "Xây dựng ma trận tính trạng giải phẫu cho sinh giới alien → Nguyên lý tối giản (parsimony), phát sinh loài Bayes và biểu đồ cladogram.",
-          en: "Building an anatomical character matrix for alien biodiversity → Parsimony principles, Bayesian phylogenetics, and cladistic mapping.",
-        },
-        detailedPayload: {
-          vi: "Bỏ qua cách phân loại dựa trên cảm quan thị giác bề ngoài, chương thiết lập một ma trận tính trạng giải phẫu thực thụ — gồm số lượng chi, cấu tạo mắt, hệ van thở, cấu trúc miệng, sợi kuru và phương thức sinh sản — để phác dựng biểu đồ phân nhánh phát sinh loài (cladogram) cho toàn bộ sinh vật Pandora. Người đọc sẽ được tiếp cận các phương pháp hệ thống học hiện đại như nguyên lý tối giản (parsimony), tính trạng dẫn xuất chung (synapomorphy), tính trạng hội tụ (homoplasy) và xác suất Bayes. Một bộ dữ liệu thử nghiệm thực hành sẽ minh chứng rõ nét việc một tính trạng hội tụ đánh lừa có thể làm sai lệch toàn bộ cây phân loại sinh học như thế nào nếu ta quá tin vào những nét tương đồng bề nổi.",
-          en: "Rejecting superficial visual classifications, this chapter constructs a formal anatomical character matrix — incorporating limb counts, ocular morphology, breathing opercula, kuru appendages, jaw mechanics, and reproductive strategies — to draft a hypothetical cladogram of Pandoran life. It introduces modern phylogenetic methods including maximum parsimony, synapomorphic traits, convergent homoplasies, and Bayesian inference. An interactive test dataset demonstrates how a single unflagged convergent trait can distort an entire evolutionary tree if taxonomists rely naively on outward appearances.",
-        },
-      },
-      {
-        slug: "evolution-of-pandoran-flora",
-        title: {
-          vi: "Tiến hóa Thực vật Pandora",
-          en: "Evolution of Pandoran Flora",
-        },
-        payload: {
-          vi: "Cây phả hệ của hệ thực vật Pandora → Sự xâm chiếm đất liền, những thích nghi của thực vật, và phân tích phát sinh loài hệ thực vật ngoại hành tinh.",
-          en: "The evolutionary tree of Pandoran plant life → Land colonization, floral adaptations, and phylogenetic analysis of alien botany.",
-        },
-        detailedPayload: {
-          vi: "Tập trung vào sự tiến hóa của thực vật Pandora từ những tổ tiên giống tảo dưới nước đến những cái cây khổng lồ phức tạp, chương này đối chiếu các nhóm thực vật giả định trên Pandora với các nhánh trên Trái Đất. Nó phân tích những thích nghi thực vật độc đáo như khả năng phát quang sinh học, sử dụng hydro và sự đồng tiến hóa với động vật thụ phấn, từ đó xây dựng một sơ đồ phát sinh loài củng cố nền tảng thực vật học cho hệ sinh thái Pandora.",
-          en: "Focusing on how Pandora's plant life evolved from aquatic algae-like ancestors to complex trees, this chapter maps hypothetical Pandoran plant groups against Earth clades. It analyzes unique floral adaptations like bioluminescence, hydrogen use, and co-evolution with pollinators, culminating in a phylogenetic chart that solidifies the botanical backbone of Pandora's ecology.",
-        },
-      },
-      {
         slug: "materials-of-life",
         title: {
           vi: "Vật liệu Sự sống",
@@ -276,6 +249,42 @@ export const OUTLINE: OutlinePart[] = [
           en: "This chapter examines the natural polymers and composite tissues in Pandoran life that allow for incredibly strong materials, akin to spider silk or carbon fiber on Earth. It explores how creatures build sturdy exoskeletons and plants support heavy canopies in a unique gravity environment, explaining the structural biopolymers that make giant fauna and flora biomechanically plausible.",
         },
       },
+      {
+        slug: "how-a-pandoran-plant-feeds",
+        title: {
+          vi: "Một cái cây Pandora ăn bằng cách nào?",
+          en: "How Does a Pandoran Plant Feed?",
+        },
+        payload: {
+          vi: "Lá tím, tán rừng phát sáng và khí quyển giàu CO₂ → Quang phổ hấp thụ sắc tố, cố định carbon, khí khổng và vận chuyển phloem.",
+          en: "Purple leaves, a glowing canopy and CO₂-rich air → Pigment absorption spectra, carbon fixation, stomata, and phloem transport.",
+        },
+        detailedPayload: {
+          vi: "Canon cho ta thấy thực vật Pandora có màu không giống Trái Đất — tím, đỏ sẫm, xanh lam — và phát sáng sau khi trời tối. Canon không nói vì sao. Chương này coi một cái cây Pandora như một cỗ máy hóa học và truy nguyên đường đi của carbon qua nó. Bắt đầu từ ánh sáng: diệp lục Trái Đất hấp thụ mạnh ở đỏ và lam nhưng phản xạ lục, và đó là một sự lựa chọn tiến hóa chứ không phải một tất yếu vật lý. Một sinh quyển dưới hai ngôi sao — Alpha Centauri A vàng và B cam — nhận một phổ khác, và trong nhiều thập kỷ liền B cháy rực hơn hẳn; chương lập luận đó chính là áp lực chọn lọc cho sắc tố dải rộng cùng các sắc tố phụ trợ và cơ chế bảo vệ quang. Từ photon, chương đi tới hóa học: cố định carbon, đường, cellulose. Rồi tới nghịch lý trung tâm của mọi cái lá — muốn CO₂ vào thì phải mở lỗ, mà mở lỗ thì nước bay ra. Trên Pandora, khí quyển giàu CO₂ khiến ván cược ấy lệch hẳn: cây có thể thu đủ carbon mà gần như không cần hé khí khổng. Cuối cùng là chiều ngược lại — phloem chở đường từ lá xuống rễ, quả và mô đang lớn, và bài toán phân bổ carbon quyết định một cái cây quyết định lớn ở đâu.",
+          en: "Canon shows us Pandoran plants in colours Earth never chose — violet, deep red, blue — and glowing once the light goes. Canon does not say why. This chapter treats a Pandoran plant as a chemical machine and traces carbon through it. It begins with light: Earth's chlorophyll absorbs hard in the red and blue and reflects green, and that is an evolutionary accident rather than a physical necessity. A biosphere under two suns — Alpha Centauri A, yellow, and B, orange — receives a different spectrum, and for decades at a stretch B burns far brighter; the chapter argues that is exactly the selection pressure for broadband pigments, accessory pigments and photoprotection. From photon it moves to chemistry: carbon fixation, sugar, cellulose. Then to the paradox at the centre of every leaf — to let CO₂ in you must open a pore, and an open pore loses water. On Pandora the CO₂-rich air tilts that wager hard: a leaf can take its carbon while barely cracking its stomata. It closes on the return trip — phloem carrying sugar from leaf to root, fruit and growing tissue, and the carbon-allocation problem that decides where a tree spends its growth.",
+        },
+      },
+      {
+        slug: "biogeochemical-cycles",
+        title: {
+          vi: "Sổ sách của một hành tinh",
+          en: "A Planet's Bookkeeping",
+        },
+        payload: {
+          vi: "Sự sống Pandora tái chế mọi nguyên tử nó vay → Chu trình carbon, nitơ, phốt pho và lưu huỳnh, cùng nguyên tắc bảo toàn khối lượng ở quy mô hành tinh.",
+          en: "Pandoran life recycles every atom it borrows → The carbon, nitrogen, phosphorus and sulfur cycles, and mass balance at planetary scale.",
+        },
+        detailedPayload: {
+          vi: "Người Na'vi nói mọi năng lượng chỉ là vay mượn và một ngày phải trả lại cho cái toàn thể. Đó là thần học — và cũng là phát biểu chính xác về nguyên tắc bảo toàn khối lượng. Chương này mở sổ sách của Pandora và kiểm tra xem nó có khớp. Bốn nguyên tố, bốn chu trình. Carbon: cố định qua quang hợp, trả lại qua hô hấp và phân hủy, khóa lại trong sinh khối và trầm tích, và tính đệm dài hạn của chu trình carbonate–silicate. Nitơ: khí quyển Pandora giàu nitơ nhưng N₂ trơ về mặt hóa học, nên phải có gì đó phá được liên kết ba — trên Trái Đất là vi khuẩn cố định đạm và sét trong bão; chương hỏi Pandora dùng con đường nào. Phốt pho: không có pha khí, nên nó là nguyên tố giới hạn kinh điển, chỉ đến từ phong hóa đá và chỉ trở lại qua trầm tích — điều này biến chương kiến tạo mảng thành điều kiện tiên quyết cho sinh quyển. Lưu huỳnh: và đây là chỗ Pandora khác biệt hẳn, vì H₂S trong khí quyển đòi hỏi một nguồn núi lửa liên tục cùng một bể chứa cân bằng nó. Kết chương quay lại Eywa và hỏi câu khó: một mạng lưới có thể *điều tiết* những chu trình này, hay nó chỉ là thứ những chu trình ấy tạo ra?",
+          en: "The Na'vi say all energy is only borrowed, and one day must be returned to the whole. That is theology — and it is also an exact statement of mass balance. This chapter opens Pandora's books and checks whether they close. Four elements, four cycles. Carbon: fixed by photosynthesis, returned by respiration and decay, locked into biomass and sediment, and buffered over the long run by the carbonate–silicate cycle. Nitrogen: Pandora's air is nitrogen-rich, but N₂ is chemically inert, so something must break that triple bond — on Earth it is nitrogen-fixing bacteria and lightning; the chapter asks which route Pandora takes. Phosphorus: no gas phase, which makes it the classic limiting element, arriving only by rock weathering and leaving only by sedimentation — a fact that turns the tectonics chapter into a precondition for the biosphere. Sulfur: and here Pandora diverges sharply, because atmospheric H₂S demands a sustained volcanic source and a sink to balance it. The chapter closes by turning back to Eywa and asking the hard question: can a network *regulate* these cycles, or is it merely something the cycles produced?",
+        },
+      },
+    ],
+  },
+  {
+    id: "form-and-ancestry",
+    label: { vi: "Phần III — Hình thái và Tổ tiên", en: "Part III — Form and Ancestry" },
+    chapters: [
       {
         slug: "six-limbs-and-the-bilateral-lattice",
         title: {
@@ -306,6 +315,57 @@ export const OUTLINE: OutlinePart[] = [
           en: "Pa'li evokes horses, ikran mirrors pterosaurs, tulkun resembles cetaceans, and thanators mirror big cats — yet these reflect shared ecological geometry rather than phylogenetic lineage. This chapter rigorously separates homology, analogy, and convergent evolution driven by shared hydrodynamic and aerodynamic constraints. By highlighting fundamental Pandoran anomalies — hexapody, neural kuru interfaces, and thoracic breathing opercula — it charts the boundary where convergent adaptation meets entrenched architectural constraints.",
         },
       },
+      {
+        slug: "pandoran-tree-of-life",
+        title: {
+          vi: "Phả hệ sự sống Pandora",
+          en: "Building the Pandoran Tree of Life",
+        },
+        payload: {
+          vi: "Xây dựng ma trận tính trạng giải phẫu cho sinh giới alien → Nguyên lý tối giản (parsimony), phát sinh loài Bayes và biểu đồ cladogram.",
+          en: "Building an anatomical character matrix for alien biodiversity → Parsimony principles, Bayesian phylogenetics, and cladistic mapping.",
+        },
+        detailedPayload: {
+          vi: "Bỏ qua cách phân loại dựa trên cảm quan thị giác bề ngoài, chương thiết lập một ma trận tính trạng giải phẫu thực thụ — gồm số lượng chi, cấu tạo mắt, hệ van thở, cấu trúc miệng, sợi kuru và phương thức sinh sản — để phác dựng biểu đồ phân nhánh phát sinh loài (cladogram) cho toàn bộ sinh vật Pandora. Người đọc sẽ được tiếp cận các phương pháp hệ thống học hiện đại như nguyên lý tối giản (parsimony), tính trạng dẫn xuất chung (synapomorphy), tính trạng hội tụ (homoplasy) và xác suất Bayes. Một bộ dữ liệu thử nghiệm thực hành sẽ minh chứng rõ nét việc một tính trạng hội tụ đánh lừa có thể làm sai lệch toàn bộ cây phân loại sinh học như thế nào nếu ta quá tin vào những nét tương đồng bề nổi.",
+          en: "Rejecting superficial visual classifications, this chapter constructs a formal anatomical character matrix — incorporating limb counts, ocular morphology, breathing opercula, kuru appendages, jaw mechanics, and reproductive strategies — to draft a hypothetical cladogram of Pandoran life. It introduces modern phylogenetic methods including maximum parsimony, synapomorphic traits, convergent homoplasies, and Bayesian inference. An interactive test dataset demonstrates how a single unflagged convergent trait can distort an entire evolutionary tree if taxonomists rely naively on outward appearances.",
+        },
+      },
+      {
+        slug: "pandoran-paleontology",
+        title: {
+          vi: "Cổ sinh vật học Pandora",
+          en: "Pandoran Paleontology",
+        },
+        payload: {
+          vi: "Dòng thời gian sâu thẳm và hồ sơ hóa thạch của Pandora → Điều kiện hóa thạch, cổ sinh thái học và dòng thời gian của các kỷ nguyên tiến hóa.",
+          en: "Deep time and the fossil record of Pandora → Fossilization conditions, paleoecology, and the timeline of evolutionary epochs.",
+        },
+        detailedPayload: {
+          vi: 'Chương kết nối sinh học và địa chất bằng cách hình dung các bằng chứng hóa thạch và "dòng thời gian sâu thẳm" của quá trình tiến hóa trên Pandora. Nó chi tiết hóa các điều kiện cần thiết để hình thành hóa thạch trong môi trường Pandora, các kỷ nguyên địa chất chính, những biến đổi khí hậu trong quá khứ, và diện mạo của các loài sinh vật khổng lồ đã tuyệt chủng, cung cấp một nền tảng cổ sinh vật học để xác thực câu chuyện tiến hóa đương đại.',
+          en: 'This chapter bridges biology and geology by imagining the fossil evidence and evolutionary "deep time" of Pandora. It details the conditions required for fossilization in Pandora\'s environment, major geologic periods, past climate shifts, and what extinct megafauna eras might have looked like, providing a paleontological context that validates the modern evolutionary narrative.',
+        },
+      },
+      {
+        slug: "evolution-of-pandoran-flora",
+        title: {
+          vi: "Tiến hóa Thực vật Pandora",
+          en: "Evolution of Pandoran Flora",
+        },
+        payload: {
+          vi: "Cây phả hệ của hệ thực vật Pandora → Sự xâm chiếm đất liền, những thích nghi của thực vật, và phân tích phát sinh loài hệ thực vật ngoại hành tinh.",
+          en: "The evolutionary tree of Pandoran plant life → Land colonization, floral adaptations, and phylogenetic analysis of alien botany.",
+        },
+        detailedPayload: {
+          vi: "Tập trung vào sự tiến hóa của thực vật Pandora từ những tổ tiên giống tảo dưới nước đến những cái cây khổng lồ phức tạp, chương này đối chiếu các nhóm thực vật giả định trên Pandora với các nhánh trên Trái Đất. Nó phân tích những thích nghi thực vật độc đáo như khả năng phát quang sinh học, sử dụng hydro và sự đồng tiến hóa với động vật thụ phấn, từ đó xây dựng một sơ đồ phát sinh loài củng cố nền tảng thực vật học cho hệ sinh thái Pandora.",
+          en: "Focusing on how Pandora's plant life evolved from aquatic algae-like ancestors to complex trees, this chapter maps hypothetical Pandoran plant groups against Earth clades. It analyzes unique floral adaptations like bioluminescence, hydrogen use, and co-evolution with pollinators, culminating in a phylogenetic chart that solidifies the botanical backbone of Pandora's ecology.",
+        },
+      },
+    ],
+  },
+  {
+    id: "bodies-at-work",
+    label: { vi: "Phần IV — Cơ thể vận hành", en: "Part IV — Bodies at Work" },
+    chapters: [
       {
         slug: "the-breathing-fans",
         title: {
@@ -352,6 +412,21 @@ export const OUTLINE: OutlinePart[] = [
         },
       },
       {
+        slug: "why-banshees-get-to-be-big",
+        title: {
+          vi: "Vì sao ikran được phép lớn đến thế?",
+          en: "Why Banshees Get to Be Big",
+        },
+        payload: {
+          vi: "Quần xã sinh vật bay khổng lồ thống trị bầu trời → Tải trọng cánh (wing loading), số Reynolds, mật độ khí quyển và trọng lực thấp.",
+          en: "Gigantic flying fauna scaling limits → Wing loading equations, Reynolds numbers, atmospheric density, and low-gravity biomechanics.",
+        },
+        detailedPayload: {
+          vi: "Kích thước khổng lồ của Ikran, Nightwraith và Toruk đặt ra câu hỏi về các giới hạn vật lý: bằng cách nào sinh quyển Pandora nuôi dưỡng được cả một quần xã động vật bay có sải cánh lớn hơn tiêm kích chiến đấu? Tích hợp phương trình tải trọng cánh (wing loading), số Reynolds, vận tốc thất tốc (stall speed), công suất cảm ứng, giới hạn công suất cơ bắp, trọng lực thấp (0.8g) và mật độ khí quyển đậm đặc, chương xây dựng một công cụ tính toán tham số giúp người đọc nhận biết chính xác điều kiện môi trường nào quyết định sự tồn tại của các loài động vật bay khổng lồ này.",
+          en: "The colossal dimensions of Ikran, Nightwraiths, and Toruk challenge physical flight limits: how does Pandora's biosphere sustain an entire guild of flying vertebrates with wingspans rivaling fighter jets? Integrating wing loading equations, Reynolds numbers, stall speeds, induced power requirements, muscle power scaling limits, lower gravity (0.8g), and high atmospheric density, this chapter constructs a parameter calculator demonstrating which planetary factors make giant biological flight viable.",
+        },
+      },
+      {
         slug: "when-glow-is-the-norm",
         title: {
           vi: "Khi sự rực rỡ trong đêm là chuẩn mực",
@@ -381,29 +456,11 @@ export const OUTLINE: OutlinePart[] = [
           en: "Pandora's environment is saturated with signals invisible to unaugmented humans: intense magnetic flux fluctuations, polarized bioluminescent wavelengths, substrate micro-vibrations, and direct neural communication channels, meaning a Thanator, an Ikran, and a Na'vi inhabit entirely distinct sensory Umwelten. Applying Jakob von Uexküll's Umwelt framework, this chapter analyzes magnetoreception, polarization vision, electroreception, and mechanosensation. Crucially, it demonstrates that sensory modalities only evolve if the physical environment provides stable Shannon information that nervous systems can exploit, laying the theoretical foundation for understanding Eywa.",
         },
       },
-      {
-        slug: "the-hunters-and-the-hunted",
-        title: {
-          vi: "Kẻ đi săn và kẻ bị săn",
-          en: "Hunters and the Hunted",
-        },
-        payload: {
-          vi: "Chiến thuật săn mồi của Thanator và phòng thủ bầy đàn → Mô hình Lotka–Volterra mở rộng, đáp ứng chức năng Holling và tầng bậc dinh dưỡng.",
-          en: "Thanator sensory predation and collective prey defenses → Extended Lotka–Volterra models, Holling functional responses, and trophic cascades.",
-        },
-        detailedPayload: {
-          vi: "Mối quan hệ giữa kẻ đi săn và con mồi trên Pandora không chỉ xoay quanh một quái thú đơn độc mà thể hiện qua chiến thuật săn bầy của Viperwolf, cơ chế phòng thủ bầy đàn của các loài ăn cỏ khổng lồ và dã thú đỉnh bảng Thanator với các giác quan định vị con mồi cực kỳ nhạy bén. Khởi đầu từ hệ phương trình vi phân Lotka–Volterra kinh điển, chương mở rộng sang các dạng đáp ứng chức năng Holling, sức chứa của môi trường (carrying capacity), các vùng ẩn náu không gian và hiệu ứng thác dinh dưỡng (trophic cascades). Những yếu tố phi tuyến tính này giải thích vì sao các quần thể sinh vật thực tế không bao giờ dao động tuần hoàn hình sin đơn giản như trong sách giáo khoa, mà luôn trải qua những biến động phức tạp và bất ngờ.",
-          en: "Predator–prey dynamics on Pandora encompass pack hunting strategies in viperwolves, herd defense in megaherbivores, and apex sensory predation in the Thanator. Beginning with classical Lotka–Volterra differential equations, the analysis incorporates Holling functional responses, environmental carrying capacities, spatial refugia, and trophic cascades. These nonlinear dynamics explain why real-world ecological populations rarely follow neat textbook sine waves, exhibiting complex, chaotic population fluctuations instead.",
-        },
-      },
     ],
   },
   {
-    id: "eywa",
-    label: {
-      vi: "Phần III — Mạng lưới Sự sống Eywa",
-      en: "Part III — The Living Network",
-    },
+    id: "the-living-network",
+    label: { vi: "Phần V — Mạng lưới sống", en: "Part V — The Living Network" },
     chapters: [
       {
         slug: "what-eywa-is",
@@ -507,29 +564,92 @@ export const OUTLINE: OutlinePart[] = [
           en: "With active mycelial endosymbiosis and biospheric actuation, Pandora transcends classical Earth formulations of the Gaia hypothesis. This chapter distinguishes weak Gaia (passive biogeochemical feedback loops generating homeostasis) from strong, teleological Gaia (the biosphere acting as an intentional, goal-directed superorganism). Applying control theory, ecological engineering, and Earth-system science, it evaluates whether Pandora possesses sufficient biological sensors, communication channels, actuators, and feedback loops to qualify as an active, planetary-scale homeostatic regulator.",
         },
       },
+    ],
+  },
+  {
+    id: "the-forest",
+    label: { vi: "Phần VI — Rừng rậm", en: "Part VI — The Forest" },
+    chapters: [
       {
-        slug: "symbiosis-and-the-mycelial-web",
+        slug: "the-forest-as-a-cathedral",
         title: {
-          vi: "Cộng sinh và Mạng lưới Sợi nấm",
-          en: "Symbiosis and the Mycelial Web",
+          vi: "Khu rừng mang dáng dấp một thánh đường",
+          en: "The Forest as a Cathedral",
         },
         payload: {
-          vi: "Kỹ thuật sinh thái và tính cộng sinh của mạng lưới thần kinh → Mạng lưới sợi nấm, sinh thái học Gaia và cân bằng nội môi hành tinh.",
-          en: "The ecosystem engineering and symbiotism of the neural network → Mycelial networks, Gaian ecology, and planetary homeostasis.",
+          vi: "Cấu trúc không gian ba chiều của đại ngàn Omatikaya → Phân tầng tán rừng (canopy stratification), vi khí hậu và chia lô ổ sinh thái.",
+          en: "Three-dimensional canopy architecture in Omatikaya rainforests → Vertical stratification, microclimate gradients, and spatial niche partitioning.",
         },
         detailedPayload: {
-          vi: "Một góc nhìn liền mạch về Eywa trong vai trò kỹ sư sinh thái. Chương khảo sát cách các mạng lưới sợi nấm kết nối rễ cây tạo thành một \"mạng lưới wood-wide web\" và ứng dụng giả thuyết Gaia vào trạng thái cân bằng hành tinh của Pandora. Bàn luận về trao đổi dinh dưỡng, sự cộng sinh giữa thực vật-nấm-động vật, và những hệ lụy sinh thái sâu sắc khi những mối cộng sinh tinh tế này bị phá vỡ.",
-          en: "A cohesive look at Eywa as an ecosystem engineer. It examines how mycelial networks or their analogs connect plants in a \"wood wide web\" and applies the Gaia hypothesis to Pandora's planetary homeostasis. The chapter discusses nutrient exchange, plant-fungi-animal mutualisms, and the profound ecological impacts of disrupting these delicate symbioses.",
+          vi: "Đại ngàn Omatikaya là một không gian sinh thái ba chiều đồ sộ với các tầng sống phân hóa rõ rệt từ thảm rừng tối tăm đến vòm tán vượt tầng đón nắng rực rỡ. Chương phân tích quá trình phân tầng tán rừng (canopy stratification), gradient suy giảm ánh sáng, biến thiên độ ẩm và nhiệt độ, thực vật biểu sinh (epiphytes) và động lực khoảng trống rừng (gap dynamics). Sơ đồ mặt cắt đứng chứng minh cách hàng trăm mét chiều cao thẳng đứng tạo ra các tiểu khí hậu riêng biệt, cho phép hàng ngàn loài chuyên biệt cùng chia sẻ ổ sinh thái mà không triệt tiêu lẫn nhau.",
+          en: "The Omatikaya rainforest is a massive three-dimensional ecological volume with vertically stratified life zones spanning from the dim forest floor to the sun-drenched emergent canopy. This chapter analyzes canopy stratification, light extinction gradients, humidity and temperature regimes, epiphyte micro-habitats, and forest gap dynamics. Vertical cross-section modeling demonstrates how hundreds of meters of vertical relief generate distinct microclimates, allowing thousands of specialized species to partition shared resources without competitive exclusion.",
+        },
+      },
+      {
+        slug: "the-night-ecology",
+        title: {
+          vi: "Khi màn đêm không thật sự tối",
+          en: "The Night Ecology",
+        },
+        payload: {
+          vi: "Sinh thái học ban đêm dưới ánh sáng phát quang và nhật thực → Đồng bộ nhịp sinh học (circadian entrainment), phân tử melatonin và thị giác bóng đêm.",
+          en: "Nocturnal ecology under bioluminescent nightscapes and eclipses → Circadian clock entrainment, melatonin pathways, and night-vision adaptations.",
+        },
+        detailedPayload: {
+          vi: "Cảnh quan đêm trên Pandora không phải là khoảng tối vô tận mà là một chế độ cảm giác độc lập ngập tràn ánh sáng phát quang sinh học, ánh sáng phản xạ từ Polyphemus và các kỳ nhật thực thường xuyên. Khám phá quá trình đồng bộ nhịp sinh học (circadian entrainment), các phân tử tương đương melatonin, độ nhạy quang phổ thị giác và sự phân chia ổ sinh thái theo thời gian, chương giải đáp bài toán hóc búa: sinh vật Pandora sẽ khóa đồng hồ sinh học theo chu kỳ mặt trời, chu kỳ quỹ đạo quanh Polyphemus, mùa nhật thực hay biến thiên nhiệt độ khi các tín hiệu thời gian này bị lệch pha.",
+          en: "Pandora's nightscape is not passive darkness but an active sensory regime illuminated by widespread bioluminescence, Polyphemus reflected light, and frequent eclipses. Exploring circadian clock entrainment, melatonin pathways, retinal spectral sensitivity, and temporal niche partitioning, this chapter examines how organisms synchronize biological rhythms when solar days, orbital eclipses, and temperature cycles act as competing, out-of-phase zeitgebers.",
+        },
+      },
+      {
+        slug: "the-hunters-and-the-hunted",
+        title: {
+          vi: "Kẻ đi săn và kẻ bị săn",
+          en: "Hunters and the Hunted",
+        },
+        payload: {
+          vi: "Chiến thuật săn mồi của Thanator và phòng thủ bầy đàn → Mô hình Lotka–Volterra mở rộng, đáp ứng chức năng Holling và tầng bậc dinh dưỡng.",
+          en: "Thanator sensory predation and collective prey defenses → Extended Lotka–Volterra models, Holling functional responses, and trophic cascades.",
+        },
+        detailedPayload: {
+          vi: "Mối quan hệ giữa kẻ đi săn và con mồi trên Pandora không chỉ xoay quanh một quái thú đơn độc mà thể hiện qua chiến thuật săn bầy của Viperwolf, cơ chế phòng thủ bầy đàn của các loài ăn cỏ khổng lồ và dã thú đỉnh bảng Thanator với các giác quan định vị con mồi cực kỳ nhạy bén. Khởi đầu từ hệ phương trình vi phân Lotka–Volterra kinh điển, chương mở rộng sang các dạng đáp ứng chức năng Holling, sức chứa của môi trường (carrying capacity), các vùng ẩn náu không gian và hiệu ứng thác dinh dưỡng (trophic cascades). Những yếu tố phi tuyến tính này giải thích vì sao các quần thể sinh vật thực tế không bao giờ dao động tuần hoàn hình sin đơn giản như trong sách giáo khoa, mà luôn trải qua những biến động phức tạp và bất ngờ.",
+          en: "Predator–prey dynamics on Pandora encompass pack hunting strategies in viperwolves, herd defense in megaherbivores, and apex sensory predation in the Thanator. Beginning with classical Lotka–Volterra differential equations, the analysis incorporates Holling functional responses, environmental carrying capacities, spatial refugia, and trophic cascades. These nonlinear dynamics explain why real-world ecological populations rarely follow neat textbook sine waves, exhibiting complex, chaotic population fluctuations instead.",
+        },
+      },
+      {
+        slug: "hometree-as-keystone",
+        title: {
+          vi: "Hometree: loài nòng cốt hay biểu tượng nòng cốt?",
+          en: "Hometree as Keystone, Foundation and Cultural Keystone",
+        },
+        payload: {
+          vi: "Hậu quả sinh thái và văn hóa khi Hometree sụp đổ → Phân biệt loài nòng cốt (keystone), loài nền tảng (foundation) và loài biểu tượng văn hóa.",
+          en: "Ecological and cultural cascading shocks of Hometree collapse → Ecological keystone vs foundation species vs cultural keystone concepts.",
+        },
+        detailedPayload: {
+          vi: "Sự sụp đổ của Cây Mẹ Hometree tại Omatikaya và Mangkwan gây ra những chấn động vượt xa phạm vi sinh thái học thuần túy, bởi Hometree vừa là sinh cảnh vật lý, nơi định cư, hạ tầng tâm linh lẫn kho lưu trữ văn hóa thiêng liêng. Chương làm sáng tỏ các khái niệm sinh thái: phân biệt loài nòng cốt (keystone species có tác động vượt trội so với sinh khối), loài nền tảng (foundation species kiến tạo cấu trúc không gian sống) và loài biểu tượng văn hóa (cultural keystone species), tránh lối suy diễn thô sơ rằng một cái cây khổng lồ thì mặc nhiên là loài nòng cốt mà tập trung vào các mắt xích sụp đổ dây chuyền trong hệ sinh thái.",
+          en: "The destruction of Hometrees in the Omatikaya and Mangkwan territories caused devastation extending far beyond pure ecology, as Hometrees function simultaneously as physical habitats, settlements, sacred infrastructure, and cultural archives. The chapter refines ecological taxonomy: distinguishing trophic keystone species (disproportionate impact relative to biomass), foundation species (primary physical habitat builders), and cultural keystone species, avoiding the naive assumption that massive trees are automatically keystones while mapping cascading food-web collapses.",
+        },
+      },
+      {
+        slug: "pandoras-smallest-things",
+        title: {
+          vi: "Những sinh thể bé mọn nhất Pandora",
+          en: "Pandora’s Smallest Things",
+        },
+        payload: {
+          vi: "Thế giới vi nấm, vi sinh vật đất và đối tác cộng sinh → Lưới thức ăn vi sinh, học thuyết siêu sinh thể (holobiont) và giả thuyết Nữ hoàng Đỏ.",
+          en: "Subterranean fungal hyphae, soil microbiomes, and micro-symbionts → Soil food webs, the holobiont superorganism model, and Red Queen coevolution.",
+        },
+        detailedPayload: {
+          vi: "Mạng lưới nấm ngầm và thế giới vi sinh vật vô hình chi phối trực tiếp mạng lưới Eywa và sự thích nghi sinh lý của các sinh vật lớn, chứng minh vi sinh vật đóng vai trò nền tảng không kém gì các loài động vật khổng lồ. Phân tích lưới thức ăn đất (soil food web), diễn thế vi sinh vật, sự đồng tiến hóa mầm bệnh - vật chủ theo giả thuyết Nữ hoàng Đỏ và hệ vi sinh microbiome, chương khẳng định thông điệp cốt lõi: một cơ thể không bao giờ là một cá thể đơn độc, mà mọi sự sống đều là một siêu sinh thể cộng sinh (holobiont) phức hợp.",
+          en: "Subterranean mycelial networks and the invisible microbial realm directly govern Eywa signaling and macro-organism physiology, proving microscopic organisms rival megafauna in ecological importance. Exploring soil food webs, microbial succession, host–pathogen coevolution (Red Queen hypothesis), and host microbiomes, the chapter underscores a central theme: no organism is an isolated individual; all complex life operates as symbiotic holobiont superorganisms.",
         },
       },
     ],
   },
   {
-    id: "fire-ash-wind",
-    label: {
-      vi: "Phần IV — Lửa, Tro và Gió",
-      en: "Part IV — Fire, Ash & Wind",
-    },
+    id: "ash-and-sky",
+    label: { vi: "Phần VII — Tro tàn và Bầu trời", en: "Part VII — Ash and Sky" },
     chapters: [
       {
         slug: "life-after-the-volcano",
@@ -609,95 +729,8 @@ export const OUTLINE: OutlinePart[] = [
     ],
   },
   {
-    id: "forests-mountains-skies",
-    label: {
-      vi: "Phần V — Rừng Rậm, Núi Non và Bầu Trời",
-      en: "Part V — Forests, Mountains & Skies",
-    },
-    chapters: [
-      {
-        slug: "the-forest-as-a-cathedral",
-        title: {
-          vi: "Khu rừng mang dáng dấp một thánh đường",
-          en: "The Forest as a Cathedral",
-        },
-        payload: {
-          vi: "Cấu trúc không gian ba chiều của đại ngàn Omatikaya → Phân tầng tán rừng (canopy stratification), vi khí hậu và chia lô ổ sinh thái.",
-          en: "Three-dimensional canopy architecture in Omatikaya rainforests → Vertical stratification, microclimate gradients, and spatial niche partitioning.",
-        },
-        detailedPayload: {
-          vi: "Đại ngàn Omatikaya là một không gian sinh thái ba chiều đồ sộ với các tầng sống phân hóa rõ rệt từ thảm rừng tối tăm đến vòm tán vượt tầng đón nắng rực rỡ. Chương phân tích quá trình phân tầng tán rừng (canopy stratification), gradient suy giảm ánh sáng, biến thiên độ ẩm và nhiệt độ, thực vật biểu sinh (epiphytes) và động lực khoảng trống rừng (gap dynamics). Sơ đồ mặt cắt đứng chứng minh cách hàng trăm mét chiều cao thẳng đứng tạo ra các tiểu khí hậu riêng biệt, cho phép hàng ngàn loài chuyên biệt cùng chia sẻ ổ sinh thái mà không triệt tiêu lẫn nhau.",
-          en: "The Omatikaya rainforest is a massive three-dimensional ecological volume with vertically stratified life zones spanning from the dim forest floor to the sun-drenched emergent canopy. This chapter analyzes canopy stratification, light extinction gradients, humidity and temperature regimes, epiphyte micro-habitats, and forest gap dynamics. Vertical cross-section modeling demonstrates how hundreds of meters of vertical relief generate distinct microclimates, allowing thousands of specialized species to partition shared resources without competitive exclusion.",
-        },
-      },
-      {
-        slug: "why-banshees-get-to-be-big",
-        title: {
-          vi: "Vì sao ikran được phép lớn đến thế?",
-          en: "Why Banshees Get to Be Big",
-        },
-        payload: {
-          vi: "Quần xã sinh vật bay khổng lồ thống trị bầu trời → Tải trọng cánh (wing loading), số Reynolds, mật độ khí quyển và trọng lực thấp.",
-          en: "Gigantic flying fauna scaling limits → Wing loading equations, Reynolds numbers, atmospheric density, and low-gravity biomechanics.",
-        },
-        detailedPayload: {
-          vi: "Kích thước khổng lồ của Ikran, Nightwraith và Toruk đặt ra câu hỏi về các giới hạn vật lý: bằng cách nào sinh quyển Pandora nuôi dưỡng được cả một quần xã động vật bay có sải cánh lớn hơn tiêm kích chiến đấu? Tích hợp phương trình tải trọng cánh (wing loading), số Reynolds, vận tốc thất tốc (stall speed), công suất cảm ứng, giới hạn công suất cơ bắp, trọng lực thấp (0.8g) và mật độ khí quyển đậm đặc, chương xây dựng một công cụ tính toán tham số giúp người đọc nhận biết chính xác điều kiện môi trường nào quyết định sự tồn tại của các loài động vật bay khổng lồ này.",
-          en: "The colossal dimensions of Ikran, Nightwraiths, and Toruk challenge physical flight limits: how does Pandora's biosphere sustain an entire guild of flying vertebrates with wingspans rivaling fighter jets? Integrating wing loading equations, Reynolds numbers, stall speeds, induced power requirements, muscle power scaling limits, lower gravity (0.8g), and high atmospheric density, this chapter constructs a parameter calculator demonstrating which planetary factors make giant biological flight viable.",
-        },
-      },
-      {
-        slug: "the-night-ecology",
-        title: {
-          vi: "Khi màn đêm không thật sự tối",
-          en: "The Night Ecology",
-        },
-        payload: {
-          vi: "Sinh thái học ban đêm dưới ánh sáng phát quang và nhật thực → Đồng bộ nhịp sinh học (circadian entrainment), phân tử melatonin và thị giác bóng đêm.",
-          en: "Nocturnal ecology under bioluminescent nightscapes and eclipses → Circadian clock entrainment, melatonin pathways, and night-vision adaptations.",
-        },
-        detailedPayload: {
-          vi: "Cảnh quan đêm trên Pandora không phải là khoảng tối vô tận mà là một chế độ cảm giác độc lập ngập tràn ánh sáng phát quang sinh học, ánh sáng phản xạ từ Polyphemus và các kỳ nhật thực thường xuyên. Khám phá quá trình đồng bộ nhịp sinh học (circadian entrainment), các phân tử tương đương melatonin, độ nhạy quang phổ thị giác và sự phân chia ổ sinh thái theo thời gian, chương giải đáp bài toán hóc búa: sinh vật Pandora sẽ khóa đồng hồ sinh học theo chu kỳ mặt trời, chu kỳ quỹ đạo quanh Polyphemus, mùa nhật thực hay biến thiên nhiệt độ khi các tín hiệu thời gian này bị lệch pha.",
-          en: "Pandora's nightscape is not passive darkness but an active sensory regime illuminated by widespread bioluminescence, Polyphemus reflected light, and frequent eclipses. Exploring circadian clock entrainment, melatonin pathways, retinal spectral sensitivity, and temporal niche partitioning, this chapter examines how organisms synchronize biological rhythms when solar days, orbital eclipses, and temperature cycles act as competing, out-of-phase zeitgebers.",
-        },
-      },
-      {
-        slug: "hometree-as-keystone",
-        title: {
-          vi: "Hometree: loài nòng cốt hay biểu tượng nòng cốt?",
-          en: "Hometree as Keystone, Foundation and Cultural Keystone",
-        },
-        payload: {
-          vi: "Hậu quả sinh thái và văn hóa khi Hometree sụp đổ → Phân biệt loài nòng cốt (keystone), loài nền tảng (foundation) và loài biểu tượng văn hóa.",
-          en: "Ecological and cultural cascading shocks of Hometree collapse → Ecological keystone vs foundation species vs cultural keystone concepts.",
-        },
-        detailedPayload: {
-          vi: "Sự sụp đổ của Cây Mẹ Hometree tại Omatikaya và Mangkwan gây ra những chấn động vượt xa phạm vi sinh thái học thuần túy, bởi Hometree vừa là sinh cảnh vật lý, nơi định cư, hạ tầng tâm linh lẫn kho lưu trữ văn hóa thiêng liêng. Chương làm sáng tỏ các khái niệm sinh thái: phân biệt loài nòng cốt (keystone species có tác động vượt trội so với sinh khối), loài nền tảng (foundation species kiến tạo cấu trúc không gian sống) và loài biểu tượng văn hóa (cultural keystone species), tránh lối suy diễn thô sơ rằng một cái cây khổng lồ thì mặc nhiên là loài nòng cốt mà tập trung vào các mắt xích sụp đổ dây chuyền trong hệ sinh thái.",
-          en: "The destruction of Hometrees in the Omatikaya and Mangkwan territories caused devastation extending far beyond pure ecology, as Hometrees function simultaneously as physical habitats, settlements, sacred infrastructure, and cultural archives. The chapter refines ecological taxonomy: distinguishing trophic keystone species (disproportionate impact relative to biomass), foundation species (primary physical habitat builders), and cultural keystone species, avoiding the naive assumption that massive trees are automatically keystones while mapping cascading food-web collapses.",
-        },
-      },
-      {
-        slug: "pandoras-smallest-things",
-        title: {
-          vi: "Những sinh thể bé mọn nhất Pandora",
-          en: "Pandora’s Smallest Things",
-        },
-        payload: {
-          vi: "Thế giới vi nấm, vi sinh vật đất và đối tác cộng sinh → Lưới thức ăn vi sinh, học thuyết siêu sinh thể (holobiont) và giả thuyết Nữ hoàng Đỏ.",
-          en: "Subterranean fungal hyphae, soil microbiomes, and micro-symbionts → Soil food webs, the holobiont superorganism model, and Red Queen coevolution.",
-        },
-        detailedPayload: {
-          vi: "Mạng lưới nấm ngầm và thế giới vi sinh vật vô hình chi phối trực tiếp mạng lưới Eywa và sự thích nghi sinh lý của các sinh vật lớn, chứng minh vi sinh vật đóng vai trò nền tảng không kém gì các loài động vật khổng lồ. Phân tích lưới thức ăn đất (soil food web), diễn thế vi sinh vật, sự đồng tiến hóa mầm bệnh - vật chủ theo giả thuyết Nữ hoàng Đỏ và hệ vi sinh microbiome, chương khẳng định thông điệp cốt lõi: một cơ thể không bao giờ là một cá thể đơn độc, mà mọi sự sống đều là một siêu sinh thể cộng sinh (holobiont) phức hợp.",
-          en: "Subterranean mycelial networks and the invisible microbial realm directly govern Eywa signaling and macro-organism physiology, proving microscopic organisms rival megafauna in ecological importance. Exploring soil food webs, microbial succession, host–pathogen coevolution (Red Queen hypothesis), and host microbiomes, the chapter underscores a central theme: no organism is an isolated individual; all complex life operates as symbiotic holobiont superorganisms.",
-        },
-      },
-    ],
-  },
-  {
-    id: "sea-and-reefs",
-    label: {
-      vi: "Phần VI — Đại Dương và Rạn San Hô",
-      en: "Part VI — Sea & Reefs",
-    },
+    id: "sea-and-reef",
+    label: { vi: "Phần VIII — Biển và Rạn san hô", en: "Part VIII — Sea and Reef" },
     chapters: [
       {
         slug: "pandoras-ocean",
@@ -709,21 +742,6 @@ export const OUTLINE: OutlinePart[] = [
         detailedPayload: {
           vi: "Đại dương của Pandora trải rộng từ các rạn san hô nhiệt đới nông đến tận vực thẳm biển sâu và các miệng phun thủy nhiệt ngầm, chịu tác động xáo trộn thủy triều khổng lồ từ hành tinh mẹ Polyphemus. Chương phân tích sự phân tầng đại dương, tầng nhiệt nhảy (thermocline), nồng độ oxy hòa tan, hoàn lưu lật nhào toàn cầu, dòng nước trồi (upwelling) giàu dinh dưỡng và sự xáo trộn cơ học mãnh liệt. Năng lượng thủy triều khổng lồ từ Polyphemus thúc đẩy sự hòa trộn chất dinh dưỡng liên tục, đặt ra câu hỏi liệu năng suất sinh học sơ cấp của biển Pandora có vượt trội hoàn toàn so với Trái Đất hay không.",
           en: "Pandora's oceans span from shallow tropical coral shelves to abyssal hydrothermal vents, driven by colossal tidal forces from Polyphemus. This chapter analyzes physical ocean stratification, thermoclines, dissolved oxygen minimum zones, global overturning circulation, nutrient-rich upwelling, and tidal mixing. Massive tidal dissipation drives vigorous deep-ocean mixing, investigating whether Pandoran tidal forces fuel marine primary productivity far exceeding Earth's oceans.",
-        },
-      },
-      {
-        slug: "tulkun-not-quite-whales",
-        title: {
-          vi: "Tulkun — Khi “cá voi” có lịch sử, văn hóa và chính trị",
-          en: "Tulkun Beyond Whales",
-        },
-        payload: {
-          vi: "Xã hội Tulkun với trí tuệ, ngôn ngữ âm nhạc và chuẩn mực đạo đức → Nhận thức bộ cá voi (cetacean), học tập xã hội và truyền thừa văn hóa.",
-          en: "Tulkun society, musical dialect, and pacifist cultural norms → Cetacean cognitive ethology, social learning, and intergenerational cultural transmission.",
-        },
-        detailedPayload: {
-          vi: "Loài Tulkun không chỉ là những sinh vật biển thông minh đơn lẻ mà cấu thành một xã hội hoàn chỉnh với hội đồng bô lão, ngôn ngữ âm nhạc phức tạp, ký ức truyền thừa và những cuộc tranh luận tập thể về chuẩn mực bất bạo động cũng như phản kháng chiến tranh. Đối chiếu với các nghiên cứu về bộ cá voi Trái Đất (cá voi sát thủ, cá nhà táng), chương phân tích cách học tập xã hội (social learning) tạo nên các nền văn hóa thị tộc ổn định, sự đồng tiến hóa gene–văn hóa và cấu trúc ngữ pháp tổ hợp của các chuỗi âm thanh coda, từ đó làm rõ ranh giới khoa học giữa văn hóa động vật, chuẩn mực tập quán và hành vi chính trị thực thụ.",
-          en: "Tulkun are not merely intelligent marine animals but constitute a complex society featuring council elders, sophisticated musical dialects, intergenerational memory, and collective political debates over pacifist laws and military resistance. Drawing parallels with Earth cetaceans (orcas, sperm whales), the chapter examines social learning, clan culture, gene–culture coevolution, and combinatorial coda dialects to explore the scientific boundaries between animal culture, social norms, and emergent politics.",
         },
       },
       {
@@ -739,6 +757,21 @@ export const OUTLINE: OutlinePart[] = [
         detailedPayload: {
           vi: "Ngôi làng Awa'atlu của tộc Metkayina không xây trên đá cứng mà đứng trên chính nền sinh học tích tụ qua hàng ngàn năm của rạn san hô — một hạ tầng sống (biogenic infrastructure) nuôi dưỡng toàn bộ đời sống của bộ tộc. Phân tích mối quan hệ cộng sinh giữa san hô và vi tảo, quá trình vôi hóa khung xương từ ánh sáng mặt trời, tái tuần hoàn dưỡng chất khép kín, độ phức tạp không gian ba chiều (rugosity) và vai trò của các kỹ sư hệ sinh thái, chương đặt câu hỏi về vật liệu xương của sinh vật rạn trước hóa học đại dương ngoại hành tinh và cảnh báo về sự mong manh của ngân sách carbonate khi biển cả nóng lên.",
           en: "The Metkayina village of Awa'atlu does not stand on mineral rock but rests upon the accumulated biological substrate of a living coral reef — a biogenic infrastructure supporting the clan's entire lifeway. Analyzing coral-algal mutualisms, light-enhanced calcification, closed-loop nutrient recycling, three-dimensional habitat rugosity, and ecosystem engineering, the chapter investigates skeletal biomaterials under alien ocean chemistry while highlighting carbonate budget vulnerabilities under ocean warming.",
+        },
+      },
+      {
+        slug: "tulkun-not-quite-whales",
+        title: {
+          vi: "Tulkun — Khi “cá voi” có lịch sử, văn hóa và chính trị",
+          en: "Tulkun Beyond Whales",
+        },
+        payload: {
+          vi: "Xã hội Tulkun với trí tuệ, ngôn ngữ âm nhạc và chuẩn mực đạo đức → Nhận thức bộ cá voi (cetacean), học tập xã hội và truyền thừa văn hóa.",
+          en: "Tulkun society, musical dialect, and pacifist cultural norms → Cetacean cognitive ethology, social learning, and intergenerational cultural transmission.",
+        },
+        detailedPayload: {
+          vi: "Loài Tulkun không chỉ là những sinh vật biển thông minh đơn lẻ mà cấu thành một xã hội hoàn chỉnh với hội đồng bô lão, ngôn ngữ âm nhạc phức tạp, ký ức truyền thừa và những cuộc tranh luận tập thể về chuẩn mực bất bạo động cũng như phản kháng chiến tranh. Đối chiếu với các nghiên cứu về bộ cá voi Trái Đất (cá voi sát thủ, cá nhà táng), chương phân tích cách học tập xã hội (social learning) tạo nên các nền văn hóa thị tộc ổn định, sự đồng tiến hóa gene–văn hóa và cấu trúc ngữ pháp tổ hợp của các chuỗi âm thanh coda, từ đó làm rõ ranh giới khoa học giữa văn hóa động vật, chuẩn mực tập quán và hành vi chính trị thực thụ.",
+          en: "Tulkun are not merely intelligent marine animals but constitute a complex society featuring council elders, sophisticated musical dialects, intergenerational memory, and collective political debates over pacifist laws and military resistance. Drawing parallels with Earth cetaceans (orcas, sperm whales), the chapter examines social learning, clan culture, gene–culture coevolution, and combinatorial coda dialects to explore the scientific boundaries between animal culture, social norms, and emergent politics.",
         },
       },
       {
@@ -790,7 +823,7 @@ export const OUTLINE: OutlinePart[] = [
   },
   {
     id: "the-navi",
-    label: { vi: "Phần VII — Người Na'vi", en: "Part VII — The Na'vi" },
+    label: { vi: "Phần IX — Người Na'vi", en: "Part IX — The Na'vi" },
     chapters: [
       {
         slug: "the-navi-body",
@@ -847,6 +880,21 @@ export const OUTLINE: OutlinePart[] = [
         detailedPayload: {
           vi: "Sự phân hóa giữa các bộ tộc Omatikaya (rừng), Metkayina (biển), Tlalim (gió) và Mangkwan (tro núi lửa) chứng minh văn hóa Na'vi không phải là một khối thuần nhất mà phản ánh sự đa dạng thích nghi sâu sắc. Kết hợp Sinh thái học Văn hóa (Cultural Ecology) và Lý thuyết Kiến tạo Ổ sinh thái (Niche Construction Theory), chương làm rõ sự tương tác hai chiều: môi trường định hình tập quán nhưng chính hoạt động văn hóa của cộng đồng cũng tái định hình áp lực chọn lọc của môi trường. Dựa trên các ví dụ về đồng tiến hóa gene–văn hóa ở loài người, chương bác bỏ định mệnh luận môi trường thô sơ để tôn vinh tính năng động xã hội.",
           en: "The divergence among the Omatikaya (forest), Metkayina (reef), Tlalim (wind), and Mangkwan (ash) clans demonstrates that Na'vi culture is not a monolith but an adaptive tapestry. Combining Cultural Ecology and Niche Construction Theory, this chapter explores bidirectional interactions: environments shape cultural practices, while cultural practices actively reshape selective ecological pressures. Drawing on human gene–culture coevolution models, it rejects crude environmental determinism in favor of dynamic biocultural adaptation.",
+        },
+      },
+      {
+        slug: "what-a-clan-eats",
+        title: {
+          vi: "Một thị tộc ăn gì?",
+          en: "What a Clan Eats",
+        },
+        payload: {
+          vi: "Người Na'vi cao ba mét, và mỗi thị tộc ăn theo hệ sinh thái của mình → Ngân sách năng lượng, lý thuyết tìm mồi tối ưu và sức tải của một cảnh quan.",
+          en: "A Na'vi stands three metres tall, and each clan eats its own ecosystem → Energy budgets, optimal foraging theory, and the carrying capacity of a landscape.",
+        },
+        detailedPayload: {
+          vi: "Phim cho ta thấy người Omatikaya săn trong rừng, người Metkayina thu hoạch từ rạn san hô, người Mangkwan cào cái sống trên tro núi lửa — nhưng chưa bao giờ tính hóa đơn. Chương này tính. Bắt đầu từ cơ thể: một sinh vật cao ba mét cần bao nhiêu calo mỗi ngày, suy ra từ định luật tỷ lệ trao đổi chất và điều chỉnh cho khối lượng cùng mức hoạt động của người Na'vi. Rồi tới cảnh quan: năng suất sơ cấp thực của rừng mưa so với rạn san hô so với đồng tro, hiệu suất chuyển hóa qua các bậc dinh dưỡng, và diện tích cần thiết để nuôi một thị tộc. Lý thuyết tìm mồi tối ưu biến việc đi săn thành một bài toán quyết định — theo đuổi con mồi nào, bỏ qua con nào, khi nào rời một mảnh rừng đã cạn — và định lý giá trị cận biên cho biết câu trả lời đúng. Từ đó chương đọc lại các quy tắc săn bắn của người Na'vi không phải như phong tục mà như quản lý tài nguyên: hạn ngạch, mùa nghỉ, và lời tạ ơn con vật vừa chết đều là những thứ một nhà sinh thái học nghề cá sẽ nhận ra ngay. Kết chương là câu hỏi khó nhất: điều gì xảy ra với sức tải khi núi lửa lấy mất cảnh quan của bạn?",
+          en: "The films show the Omatikaya hunting the forest, the Metkayina harvesting a reef, the Mangkwan scratching a living from volcanic ash — and never once total the bill. This chapter totals it. It starts with the body: how many calories a three-metre organism needs per day, derived from metabolic scaling and adjusted for Na'vi mass and activity. Then the landscape: net primary productivity of rainforest against reef against ash plain, transfer efficiency up the trophic ladder, and the area required to feed a clan. Optimal foraging theory turns a hunt into a decision problem — which prey to pursue, which to ignore, when to abandon a depleted patch — and the marginal value theorem gives the correct answer. From there the chapter rereads Na'vi hunting rule not as custom but as resource management: quotas, closed seasons, and the thanks given to a killed animal are all things a fisheries ecologist would recognise on sight. It ends on the hardest question: what happens to carrying capacity when a volcano takes your landscape away?",
         },
       },
       {
@@ -924,11 +972,8 @@ export const OUTLINE: OutlinePart[] = [
     ],
   },
   {
-    id: "the-human-machine",
-    label: {
-      vi: "Phần VIII — Cỗ máy Nhân loại",
-      en: "Part VIII — The Human Machine & RDA Tech",
-    },
+    id: "humans-and-rda",
+    label: { vi: "Phần X — Con người và RDA", en: "Part X — Humans and the RDA" },
     chapters: [
       {
         slug: "how-long-does-it-take-to-reach-pandora",
@@ -973,36 +1018,6 @@ export const OUTLINE: OutlinePart[] = [
         detailedPayload: {
           vi: "Cơ thể Avatar là một thể khảm sinh học kết hợp DNA con người và Na'vi được điều khiển từ xa qua buồng liên kết sóng não, nhưng bản thân nó vẫn là một cơ thể sinh học thực thụ có trao đổi chất, phát triển và chịu thương tổn chứ không phải robot vô hồn. Chương phân tích thể khảm di truyền (chimerism), sinh học phát triển, sự tương thích miễn dịch mô học, giao diện não-máy tính băng thông cao và sự tái ánh xạ cảm giác-vận động (sensorimotor remapping). Trong khi công nghệ BCI thực tế mới chỉ giải mã các tín hiệu vận động hẹp, công nghệ Avatar đòi hỏi truyền dẫn hai chiều hoàn hảo với độ trễ cực thấp để vỏ não người điều khiển và cảm nhận trọn vẹn một cơ thể alien cao 3 mét.",
           en: "The Avatar body is an engineered biological chimera combining human and Na'vi genetics, tele-operated via neural link units, yet operating as an autonomous physiological organism that eats, metabolizes, grows, and sustains injury rather than a robotic puppet. This chapter examines genetic chimerism, developmental biology, immune histocompatibility, high-bandwidth BCIs, and sensorimotor remapping. While current real-world BCIs decode narrow signal streams, the Avatar system requires low-latency bidirectional neural transfer allowing a human motor cortex to orchestrate a ten-foot alien physique with full proprioceptive fidelity.",
-        },
-      },
-      {
-        slug: "the-true-cost-of-extraction",
-        title: {
-          vi: "Từ mỏ unobtanium đến Factory Ship",
-          en: "The True Cost of Extraction",
-        },
-        payload: {
-          vi: "Cỗ máy chuyển hóa công nghiệp của RDA từ quặng đất liền đến đại dương → Chỉ số hoàn vốn năng lượng (EROI), đánh giá vòng đời (LCA) và ngoại tác môi trường.",
-          en: "RDA industrial metabolism spanning strip-mines to ocean Factory Ships → Energy Return on Investment (EROI), Life-Cycle Assessment, and ecological externalities.",
-        },
-        detailedPayload: {
-          vi: "Quy mô khai thác của tập đoàn RDA mở rộng từ các mỏ lộ thiên unobtanium trên đất liền, logistics liên sao của hạm đội ISV đến tàu chế biến Factory Ship khổng lồ săn bắt tulkun trên đại dương, hình thành một cỗ máy chuyển hóa công nghiệp (industrial metabolism) khổng lồ. Vận dụng chỉ số Hoàn vốn Năng lượng Đầu tư (EROI), Đánh giá Vòng đời (LCA), thông lượng vật chất, năng lượng ẩn chứa (embodied energy), ngoại tác môi trường và hiệu ứng bật lại Jevons, chương chứng minh rằng giá trị thị trường hàng triệu USD/kg không thể đảm bảo tính khả thi nếu không tính toán toàn bộ chi phí năng lượng khai thác, vận tải liên sao và những tổn hại sinh thái bị gạt khỏi bảng cân đối kế toán.",
-          en: "The RDA's extractive footprint spans terrestrial strip-mines for unobtanium, ISV interstellar logistics, and oceanic Factory Ships for tulkun processing, forming a colossal industrial metabolism. Applying Energy Return on Investment (EROI), Life-Cycle Assessment (LCA), material throughput, embodied energy, environmental externalities, and the Jevons paradox rebound effect, this chapter demonstrates that high market prices per kilogram cannot justify economic viability without accounting for total energy expenditures across interstellar supply lines and ecological degradation excluded from corporate balance sheets.",
-        },
-      },
-      {
-        slug: "what-the-mask-buys-you",
-        title: {
-          vi: "Chiếc mặt nạ thực sự mua cho bạn những gì?",
-          en: "What the Mask Buys You",
-        },
-        payload: {
-          vi: "Mặt nạ lọc khí Exo-pack và hệ thống hỗ trợ sự sống → Áp suất riêng phần khí thở, hệ thống lọc CO₂ và vòng tuần hoàn sinh tồn (ECLSS).",
-          en: "Exo-pack breathing masks and life-support architecture → Gas partial pressure physics, CO₂ scrubbers, and closed-loop ECLSS engineering.",
-        },
-        detailedPayload: {
-          vi: "Mặt nạ lọc khí Exo-pack là ranh giới mong manh giữa sự sống và cái chết đối với con người trong bầu khí quyển kịch độc của Pandora, mà sự biến đổi miễn nhiễm của Spider càng làm nổi bật tầm quan trọng sinh tử này. Chương tiếp cận vấn đề dưới góc độ kỹ thuật hỗ trợ sự sống (life-support architecture): phân tích áp suất riêng phần khí thở, nhu cầu bổ sung O₂ và lọc hóa học CO₂, sự điều hòa nhiệt độ và độ ẩm, tuổi thọ phin lọc, khoảng chết hô hấp và các kịch bản hỏng hóc. Đồng thời, chương so sánh mặt nạ thở hở, hệ thống tuần hoàn khí thở kín (rebreather) và hệ thống kiểm soát môi trường sinh tồn vòng kín (ECLSS) của các trạm không gian.",
-          en: "The Exo-pack breathing mask is the fragile boundary between life and death for humans in Pandora's toxic air, a reality underscored by Spider's unmasked biological transformation. This chapter approaches the device through life-support systems engineering: analyzing gas partial pressures, supplemental oxygen requirements, chemical CO₂ scrubbers, thermal-moisture regulation, cartridge service life, dead space, and failure modes. It compares open-loop masks, closed-circuit rebreathers, and closed-loop Environmental Control and Life Support Systems (ECLSS) deployed in space habitats.",
         },
       },
       {
@@ -1051,18 +1066,18 @@ export const OUTLINE: OutlinePart[] = [
         },
       },
       {
-        slug: "humans-on-pandora",
+        slug: "the-true-cost-of-extraction",
         title: {
-          vi: "Con người trên Pandora",
-          en: "Humans on Pandora",
+          vi: "Từ mỏ unobtanium đến Factory Ship",
+          en: "The True Cost of Extraction",
         },
         payload: {
-          vi: "Cuộc thực dân hóa của các tập đoàn trên Pandora → Kinh tế học khai thác tài nguyên, kỹ thuật chương trình Avatar và đạo đức thực dân.",
-          en: "The corporate colonization of Pandora → Resource extraction economics, Avatar program engineering, and colonial ethics.",
+          vi: "Cỗ máy chuyển hóa công nghiệp của RDA từ quặng đất liền đến đại dương → Chỉ số hoàn vốn năng lượng (EROI), đánh giá vòng đời (LCA) và ngoại tác môi trường.",
+          en: "RDA industrial metabolism spanning strip-mines to ocean Factory Ships → Energy Return on Investment (EROI), Life-Cycle Assessment, and ecological externalities.",
         },
         detailedPayload: {
-          vi: "Phân tích sự hiện diện của loài người, chương khảo sát nguồn gốc của tập đoàn RDA, sứ mệnh khai thác unobtanium, và sự hình thành của Chương trình Avatar. Nó phác họa các cơ sở hạ tầng quân sự và khai khoáng, đồng thời đi sâu vào những hệ lụy nhân học và đạo đức thực dân tương đồng với các ngành công nghiệp khai thác tài nguyên trong lịch sử, cũng như những xung đột trong quan hệ giữa con người và người Na'vi.",
-          en: "Analyzing the human presence, this chapter covers the RDA corporation's origins, its mission for unobtanium, and the genesis of the Avatar Program. It describes the military and mining infrastructure while exploring the deep anthropological and ethical parallels to historical resource extraction, colonial overreach, and the friction in human-Na'vi relations.",
+          vi: "Quy mô khai thác của tập đoàn RDA mở rộng từ các mỏ lộ thiên unobtanium trên đất liền, logistics liên sao của hạm đội ISV đến tàu chế biến Factory Ship khổng lồ săn bắt tulkun trên đại dương, hình thành một cỗ máy chuyển hóa công nghiệp (industrial metabolism) khổng lồ. Vận dụng chỉ số Hoàn vốn Năng lượng Đầu tư (EROI), Đánh giá Vòng đời (LCA), thông lượng vật chất, năng lượng ẩn chứa (embodied energy), ngoại tác môi trường và hiệu ứng bật lại Jevons, chương chứng minh rằng giá trị thị trường hàng triệu USD/kg không thể đảm bảo tính khả thi nếu không tính toán toàn bộ chi phí năng lượng khai thác, vận tải liên sao và những tổn hại sinh thái bị gạt khỏi bảng cân đối kế toán.",
+          en: "The RDA's extractive footprint spans terrestrial strip-mines for unobtanium, ISV interstellar logistics, and oceanic Factory Ships for tulkun processing, forming a colossal industrial metabolism. Applying Energy Return on Investment (EROI), Life-Cycle Assessment (LCA), material throughput, embodied energy, environmental externalities, and the Jevons paradox rebound effect, this chapter demonstrates that high market prices per kilogram cannot justify economic viability without accounting for total energy expenditures across interstellar supply lines and ecological degradation excluded from corporate balance sheets.",
         },
       },
       {
@@ -1076,18 +1091,15 @@ export const OUTLINE: OutlinePart[] = [
           en: "The geophysics of planetary subjugation → Macro-climate engineering, thermodynamics, and industrial atmospheric scrubbers.",
         },
         detailedPayload: {
-          vi: "Nếu khoa học sinh học thất bại, RDA phải quay lại với phương án tàn khốc nhất: Cải tạo hành tinh (Terraforming). Chương này thuần túy phân tích kỹ thuật vật lý vĩ mô. Để biến Pandora thành Trái Đất thứ hai, cần phải hút hàng tỷ tấn H2S và CO2 ra khỏi khí quyển, giải phóng mây che phủ, và xây dựng các cỗ máy nhiệt động lực học khổng lồ. Chúng ta sẽ tính toán năng lượng hợp hạch cần thiết để duy trì các trạm lọc khí quyển (atmospheric scrubbers), sự sụp đổ của chuỗi thức ăn địa phương, và hệ lụy thảm khốc khi cố tình \"đập đi xây lại\" một hệ sinh thái đã có sinh quyển hoàn chỉnh.",
+          vi: 'Nếu khoa học sinh học thất bại, RDA phải quay lại với phương án tàn khốc nhất: Cải tạo hành tinh (Terraforming). Chương này thuần túy phân tích kỹ thuật vật lý vĩ mô. Để biến Pandora thành Trái Đất thứ hai, cần phải hút hàng tỷ tấn H2S và CO2 ra khỏi khí quyển, giải phóng mây che phủ, và xây dựng các cỗ máy nhiệt động lực học khổng lồ. Chúng ta sẽ tính toán năng lượng hợp hạch cần thiết để duy trì các trạm lọc khí quyển (atmospheric scrubbers), sự sụp đổ của chuỗi thức ăn địa phương, và hệ lụy thảm khốc khi cố tình "đập đi xây lại" một hệ sinh thái đã có sinh quyển hoàn chỉnh.',
           en: "If biotechnology fails, the RDA must resort to brute-force Terraforming. This chapter is dedicated strictly to macro-physical geoengineering. Transforming Pandora into a second Earth requires scrubbing billions of tons of H2S and CO2 from the atmosphere, altering albedo, and deploying gargantuan thermodynamic engines. We calculate the fusion energy demands required to power planetary-scale atmospheric scrubbers, the physical mechanics of climate control, and the catastrophic ecological thermodynamics of actively dismantling a fully formed alien biosphere.",
         },
       },
     ],
   },
   {
-    id: "contact-conflict-ethics",
-    label: {
-      vi: "Phần IX — Chạm trán, Xung đột và Lằn ranh Đạo đức",
-      en: "Part IX — Contact, Conflict & Ethics",
-    },
+    id: "contact-and-ethics",
+    label: { vi: "Phần XI — Chạm trán và Đạo đức", en: "Part XI — Contact and Ethics" },
     chapters: [
       {
         slug: "first-contact-as-a-pattern",
@@ -1182,27 +1194,9 @@ export const OUTLINE: OutlinePart[] = [
     ],
   },
   {
-    id: "open-questions",
-    label: {
-      vi: "Phần X — Những câu hỏi còn ngỏ",
-      en: "Part X — Open Questions",
-    },
+    id: "epilogue",
+    label: { vi: "Lời kết", en: "Epilogue" },
     chapters: [
-      {
-        slug: "pandoras-open-file",
-        title: {
-          vi: "Tập hồ sơ chưa khép lại của Pandora",
-          en: "Pandora’s Open File",
-        },
-        payload: {
-          vi: "Bảng tổng hợp các quan sát chưa có lời giải đáp hoàn chỉnh → Cách biến lỗ hổng kịch bản thành câu hỏi nghiên cứu và thiết kế thí nghiệm kiểm chứng.",
-          en: "Catalog of unresolved canon anomalies and scientific puzzles → Transforming plot holes into testable scientific hypotheses and thought experiments.",
-        },
-        detailedPayload: {
-          vi: "Thay vì chỉ vạch lỗi kịch bản, chương lập một bảng tổng hợp các ẩn số khoa học lớn nhất của Pandora: nguồn năng lượng nhiệt động học tối thượng của Eywa, cơ chế tạo kuru ở Spider, độ tuổi và nguồn gốc sinh quyển, sự bất tương thích sơ đồ cơ thể 4 chi và 6 chi, động lực học chất lưu của Flux Devil, ngân sách năng lượng treo núi bay và sự tương thích sinh hóa sâu sắc với con người. Chương hướng dẫn cách chuyển hóa một lỗ hổng cốt truyện thành một câu hỏi nghiên cứu khoa học thực thụ: xác định biến số quan sát được, lập các giả thuyết cạnh tranh, đưa ra dự đoán phân biệt và thiết kế các thí nghiệm tưởng tượng chặt chẽ để kiểm chứng.",
-          en: "Rather than trivial cinematic nitpicking, this chapter compiles Pandora's greatest unresolved scientific anomalies: Eywa's ultimate thermodynamic energy source, the cellular mechanics of Spider's kuru morphogenesis, the age and genesis of the biosphere, the four-limb vs six-limb phylogenetic mismatch, the magnetohydrodynamics of the Flux Devil, the energy budget of floating mountains, and human biochemical compatibility. It teaches how to transform narrative plot holes into rigorous scientific research questions: defining observables, formulating competing hypotheses, establishing discriminating predictions, and designing thought experiments.",
-        },
-      },
       {
         slug: "what-pandora-helps-us-see",
         title: {
@@ -1222,33 +1216,56 @@ export const OUTLINE: OutlinePart[] = [
   },
 ];
 
-export interface OutlineChapterWithStatus extends OutlineChapter {
-  plateNo: string;
-  published: boolean;
+// Flat slug -> position lookup. Backs <ChapterRef> and <PartRef> so prose never
+// hard-codes an ordinal that renumbering would silently falsify.
+export interface ChapterPosition {
+  partId: string;
+  partIndex: number;
+  chapterIndex: number;
+  /** Human-facing "IV.3" style label. Prologue and epilogue have no part number. */
+  label: string;
+  title: { vi: string; en: string };
 }
 
-export interface OutlinePartWithStatus {
-  id: string;
-  label: { vi: string; en: string };
-  chapters: OutlineChapterWithStatus[];
+const UNNUMBERED_PARTS = new Set(["prologue", "epilogue"]);
+
+const ROMAN = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"];
+
+function buildPositions(): Map<string, ChapterPosition> {
+  const map = new Map<string, ChapterPosition>();
+  let partNo = 0;
+  OUTLINE.forEach((part, partIndex) => {
+    const numbered = !UNNUMBERED_PARTS.has(part.id);
+    if (numbered) partNo += 1;
+    part.chapters.forEach((ch, chapterIndex) => {
+      map.set(ch.slug, {
+        partId: part.id,
+        partIndex,
+        chapterIndex,
+        label: numbered ? `${ROMAN[partNo]}.${chapterIndex + 1}` : "",
+        title: ch.title,
+      });
+    });
+  });
+  return map;
 }
 
-// Merge the static outline with which chapters are actually published, so the
-// browser renders the full map with published entries clickable. Plate numbers
-// run sequentially across the whole book.
-export function getOutlineWithStatus(locale: Locale): OutlinePartWithStatus[] {
-  const published = new Set(listPublishedChapters(locale).map((c) => c.meta.slug));
-  let n = 0;
-  return OUTLINE.map((part) => ({
-    id: part.id,
-    label: part.label,
-    chapters: part.chapters.map((ch) => {
-      n += 1;
-      return {
-        ...ch,
-        plateNo: String(n).padStart(2, "0"),
-        published: published.has(ch.slug),
-      };
-    }),
-  }));
+let positions: Map<string, ChapterPosition> | null = null;
+
+export function chapterPosition(slug: string): ChapterPosition | null {
+  if (!positions) positions = buildPositions();
+  return positions.get(slug) ?? null;
+}
+
+export function partNumberLabel(partId: string): string {
+  let partNo = 0;
+  for (const part of OUTLINE) {
+    if (!UNNUMBERED_PARTS.has(part.id)) partNo += 1;
+    if (part.id === partId) return UNNUMBERED_PARTS.has(part.id) ? "" : ROMAN[partNo];
+  }
+  return "";
+}
+
+export function partLabel(partId: string): { vi: string; en: string } | null {
+  return OUTLINE.find((p) => p.id === partId)?.label ?? null;
 }

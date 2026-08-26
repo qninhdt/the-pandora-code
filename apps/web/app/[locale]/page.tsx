@@ -10,7 +10,7 @@ import {
 import { JsonLd } from "@/components/seo/json-ld";
 import { type Locale, isLocale } from "@/i18n/config";
 import { getChapterCoverImage } from "@/lib/content/loader/cover-image";
-import { getOutlineWithStatus } from "@/lib/content/outline";
+import { getOutlineWithStatus } from "@/lib/content/outline-status";
 import { buildPageMetadata } from "@/lib/seo/page-metadata";
 import { createBreadcrumbListSchema, createWebSiteSchema } from "@/lib/seo/structured-data";
 import type { Metadata } from "next";

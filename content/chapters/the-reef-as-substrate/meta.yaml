@@ -1,0 +1,128 @@
+slug: the-reef-as-substrate
+status: published
+title:
+  vi: Rạn san hô — Một thành phố được xây bởi sinh vật
+  en: The Reef as Substrate
+subtitle:
+  vi: >-
+    Làng Awa'atlu không đứng trên đá. Nó đứng trên một cơ thể sống — cái nền mà một loài vật nuôi tảo
+    trong tế bào mình rồi xây nên, và có thể chết đói hoặc tan ra ngay dưới chân bộ tộc.
+  en: >-
+    Awa'atlu does not stand on rock. It stands on a living body — a foundation an animal grew by
+    farming algae inside its own cells, and one that can starve or dissolve beneath the clan.
+hook:
+  vi: >-
+    Người Metkayina không xây nhà trên nền đất mà trên chính rạn san hô đang sống. Lần theo cái nền
+    ấy sẽ dẫn ta tới một ý niệm chuyển được sang bất kỳ thế giới nào: rạn san hô không phải một tảng
+    đá mà là một bảng cân đối — nơi kẻ xây và kẻ phá tranh nhau từng gram, và khi cán cân lật, cái
+    nền tự tan vào biển.
+  en: >-
+    The Metkayina build not on land but on a living reef. Following that foundation leads to an idea
+    that transfers to any world: a reef is not a rock but a balance sheet — builders and breakers
+    contesting every gram — and when the balance tips, the ground itself dissolves back into the sea.
+authors:
+  - bardabez
+tags:
+  - biogenic-reef
+  - ecosystem-engineering
+  - coral-holobiont
+  - carbonate-budget
+  - ocean-acidification
+  - metkayina
+classification:
+  canon_pct: 14
+  inference_pct: 12
+  speculation_pct: 4
+  real_science_pct: 70
+related_chapters:
+  - pandoras-ocean
+  - bodies-built-for-water
+  - hometree-as-keystone
+  - amrita-and-the-price-of-a-hunt
+glossary_terms:
+  - biogenic-reef
+  - autogenic-engineer
+  - coral-holobiont
+  - zooxanthellae
+  - carbonate-budget
+  - bioerosion
+  - rugosity
+  - darwins-paradox
+  - coral-bleaching
+  - ocean-acidification
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-the-ground-that-was-grown
+    role: inline
+    asset_status: ready
+  - id: fig-02-the-animal-that-farms-light
+    role: diagram
+    asset_status: ready
+  - id: fig-03-solar-powered-stone
+    role: comparison
+    asset_status: ready
+  - id: fig-04-builders-and-breakers
+    role: diagram
+    asset_status: ready
+  - id: fig-05-a-structure-older-than-the-clan
+    role: diagram
+    asset_status: ready
+  - id: fig-06-a-thousand-places-to-hide
+    role: comparison
+    asset_status: ready
+  - id: fig-07-the-colour-leaves
+    role: inline
+    asset_status: ready
+  - id: fig-08-the-foundation-comes-apart
+    role: inline
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Avatar - The Way of Water (2022), film
+  - kind: canon
+    label: James Cameron's Avatar - The Way of Water - The Visual Dictionary (DK, 2022)
+  - kind: science
+    label: Jones, Lawton & Shachak - Organisms as ecosystem engineers (Oikos, 1994)
+    url: https://doi.org/10.2307/3545850
+  - kind: science
+    label: >-
+      Muscatine & Porter - Reef corals: mutualistic symbioses adapted to nutrient-poor environments
+      (BioScience, 1977)
+    url: https://doi.org/10.2307/1297526
+  - kind: science
+    label: >-
+      Allemand et al. - Coral calcification, cells to reefs (in Coral Reefs: An Ecosystem in
+      Transition, 2011)
+    url: https://doi.org/10.1007/978-94-007-0114-4_9
+  - kind: science
+    label: >-
+      Perry et al. - Estimating rates of biologically driven coral reef framework construction and
+      dissolution (Limnology and Oceanography: Methods, 2012)
+    url: https://doi.org/10.4319/lom.2012.10.1027
+  - kind: science
+    label: Perry et al. - Loss of coral reef growth capacity to track future increases in sea level (Nature, 2018)
+    url: https://doi.org/10.1038/s41586-018-0194-z
+  - kind: science
+    label: >-
+      De Goeij et al. - Surviving in a marine desert: the sponge loop retains resources within coral
+      reefs (Science, 2013)
+    url: https://doi.org/10.1126/science.1241981
+  - kind: science
+    label: Graham & Nash - The importance of structural complexity in coral reef ecosystems (Coral Reefs, 2013)
+    url: https://doi.org/10.1007/s00338-012-0984-y
+  - kind: science
+    label: >-
+      Hoegh-Guldberg - Climate change, coral bleaching and the future of the world's coral reefs
+      (Marine and Freshwater Research, 1999)
+    url: https://doi.org/10.1071/MF99078
+  - kind: science
+    label: >-
+      Kleypas et al. - Geochemical consequences of increased atmospheric CO2 on coral reefs
+      (Science, 1999)
+    url: https://doi.org/10.1126/science.284.5411.118
+  - kind: research-note
+    label: >-
+      The Reef as Substrate - Biogenic Frameworks, Carbonate Budgets, and the Living Foundations of
+      Metkayina Settlement (chapter research note)

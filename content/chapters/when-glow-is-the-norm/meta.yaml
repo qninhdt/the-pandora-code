@@ -1,0 +1,119 @@
+slug: when-glow-is-the-norm
+status: published
+title:
+  vi: Khi sự rực rỡ trong đêm là chuẩn mực
+  en: When Glow Is the Norm
+subtitle:
+  vi: >-
+    Trên Pandora, gần như vạn vật đều phát sáng khi màn đêm buông — cây cỏ, nấm, muông thú, và cả
+    làn da người Na'vi: hóa học của ánh sáng lạnh, và lý do tại sao bóng tối, chứ không phải ánh
+    sáng, mới là điều bất thường.
+  en: >-
+    On Pandora nearly everything glows after dark — plants, fungi, fauna, even Na'vi skin: the
+    chemistry of cold light, and why darkness, not light, is the anomaly here.
+hook:
+  vi: >-
+    Trên Trái Đất, một sinh vật tự phát sáng là chuyện lạ — vài con đom đóm, ít loài nấm, và cả một
+    đại dương sâu thẳm mà ta hiếm khi thấy. Trên Pandora thì ngược lại: khi sao lặn, cả khu rừng
+    bừng sáng. Câu hỏi không phải "vì sao chúng phát sáng?" mà là "vì sao mọi thứ đều phát sáng?" —
+    và câu trả lời nằm trong một phản ứng hóa học gần như không tỏa nhiệt, một mẹo tiến hóa đã được
+    phát minh lại hàng chục lần, và một quy luật sinh thái lật ngược.
+  en: >-
+    On Earth a creature that makes its own light is a curiosity — a few fireflies, a handful of
+    fungi, and a deep ocean we rarely see. On Pandora it is the reverse: when the star sets, the
+    whole forest comes alight. The question is not "why do they glow?" but "why does everything
+    glow?" — and the answer is a chemical reaction that wastes almost no heat, an evolutionary trick
+    reinvented dozens of times, and one ecological rule turned inside out.
+authors:
+  - bardabez
+tags:
+  - bioluminescence
+  - chemiluminescence
+  - luciferin
+  - convergent-evolution
+  - sensory-ecology
+  - deep-sea
+classification:
+  canon_pct: 24
+  inference_pct: 14
+  speculation_pct: 8
+  real_science_pct: 54
+related_chapters:
+  - convergent-but-not-quite
+  - six-limbs-and-the-bilateral-lattice
+  - the-pandoran-umwelt
+glossary_terms:
+  - bioluminescence
+  - chemiluminescence
+  - luciferin
+  - luciferase
+  - photophore
+  - quantum-yield
+  - counter-illumination
+  - quorum-sensing
+  - aposematism
+  - green-fluorescent-protein
+  - fluorescence
+  - convergent-evolution
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-lit-footprint
+    role: hero
+    asset_status: ready
+  - id: fig-02-navi-photophores
+    role: diagram
+    asset_status: ready
+  - id: fig-03-glowing-flora
+    role: inline
+    asset_status: ready
+  - id: fig-04-deepsea-vs-land
+    role: comparison
+    asset_status: ready
+  - id: fig-05-earth-cold-light
+    role: inline
+    asset_status: ready
+  - id: fig-06-counterillumination
+    role: comparison
+    asset_status: ready
+  - id: fig-07-luminous-background-pressure
+    role: comparison
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Bioluminescence - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Bioluminescence
+  - kind: canon
+    label: Pandora - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Pandora
+  - kind: canon
+    label: Pandoran Flora - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Pandoran_Flora
+  - kind: science
+    label: Haddock, Moline & Case - Bioluminescence in the Sea (Annual Review of Marine Science)
+    url: https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1186&context=bio_fac
+  - kind: science
+    label: >-
+      Widder - Bioluminescence in the Ocean: Origins of Biological, Chemical, and Ecological
+      Diversity (Science)
+    url: https://www.researchgate.net/publication/44578600
+  - kind: science
+    label: Understanding Bioluminescence in Dinoflagellates - How Far Have We Come? (PMC)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5029497/
+  - kind: science
+    label: Shedding light on bioluminescence regulation in Vibrio fischeri (PMC)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3359415/
+  - kind: science
+    label: Bioluminescent aposematism in millipedes - Motyxia (PMC)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3221455/
+  - kind: science
+    label: Biotechnologies based on the fungal bioluminescence pathway (IBCh RAS)
+    url: https://www.ibch.ru/en/press/news/science/5381
+  - kind: science
+    label: The Nobel Prize in Chemistry 2008 - GFP (NobelPrize.org)
+    url: https://www.nobelprize.org/prizes/chemistry/2008/illustrated-information/
+  - kind: research-note
+    label: >-
+      Astrobiological Analysis of Bioluminescence - Pandoran Paradigms and Earth Analogs (chapter
+      research note)

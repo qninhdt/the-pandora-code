@@ -1,0 +1,98 @@
+slug: the-breathing-fans
+status: published
+title:
+  vi: Những chiếc quạt thở
+  en: The Breathing Fans
+subtitle:
+  vi: >-
+    Vì sao loài thú Pandora thở bằng sườn chứ không bằng mũi - và điều cơ thể học so sánh dạy ta về
+    một bài toán mà sự sống ở đâu cũng phải giải
+  en: >-
+    Why Pandoran animals breathe through their flanks, not their faces - and what comparative
+    anatomy teaches about a problem every living thing must solve
+hook:
+  vi: >-
+    Một con banshee lao thẳng đứng lên trời, cơ ngực cháy rực vì gắng sức - vậy mà không khí không
+    đi vào qua mũi nó. Nó đi vào qua những khe hở trên mạn sườn. Câu đố ấy không có lời giải trong
+    phim, nhưng lại nằm sẵn trong một nhánh sinh học Trái Đất đã dành cả thế kỷ để học cách sự sống
+    hít thở.
+  en: >-
+    A banshee powers straight up into the sky, its flight muscles burning - and the air does not go
+    in through its nose. It goes in through slots along its flanks. The films never explain the
+    puzzle, but a branch of Earth biology spent a century learning exactly how life breathes, and
+    the answer is sitting there in plain sight.
+authors:
+  - bardabez
+tags:
+  - comparative-physiology
+  - respiration
+  - convergent-evolution
+  - pandora-biology
+classification:
+  canon_pct: 14
+  inference_pct: 30
+  speculation_pct: 16
+  real_science_pct: 40
+related_chapters:
+  - whats-in-the-air
+  - six-limbs-and-the-bilateral-lattice
+  - convergent-but-not-quite
+glossary_terms:
+  - operculum
+  - ficks-law
+  - partial-pressure
+  - countercurrent-exchange
+  - cross-current-exchange
+  - unidirectional-airflow
+  - tidal-ventilation
+  - dead-space
+  - ram-ventilation
+  - spiracle
+  - gill-lamella
+  - convergent-evolution
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-banshee-intakes
+    role: hero
+    asset_status: ready
+  - id: fig-02-ficks-law-membrane
+    role: diagram
+    asset_status: ready
+  - id: fig-03-gill-countercurrent
+    role: diagram
+    asset_status: ready
+  - id: fig-04-avian-flowthrough
+    role: diagram
+    asset_status: ready
+  - id: fig-05-tidal-vs-unidirectional
+    role: comparison
+    asset_status: ready
+  - id: fig-06-operculum-reading
+    role: diagram
+    asset_status: ready
+  - id: fig-07-one-way-airflow-lineage
+    role: comparison
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Operculum - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Operculum
+  - kind: canon
+    label: Pandoran Fauna - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Pandoran_Fauna
+  - kind: science
+    label: Unidirectional Airflow in the Lungs of Alligators (Farmer & Sanders, Science 2010)
+    url: https://farmer.biology.utah.edu/pdf/2010%20Farmer%20and%20Sanders%20Science%20.pdf
+  - kind: science
+    label: Unidirectional pulmonary airflow patterns in the savannah monitor lizard (Nature 2014)
+    url: https://pubmed.ncbi.nlm.nih.gov/24336209/
+  - kind: science
+    label: Structure and function of the avian respiratory system (PMC)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11864839/
+  - kind: science
+    label: >-
+      Increase in tracheal investment with beetle size supports oxygen limitation on insect
+      gigantism (PNAS 2007)
+    url: https://www.pnas.org/doi/10.1073/pnas.0611544104

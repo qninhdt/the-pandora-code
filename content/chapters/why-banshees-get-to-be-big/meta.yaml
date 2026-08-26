@@ -1,0 +1,126 @@
+slug: why-banshees-get-to-be-big
+status: published
+title:
+  vi: Vì sao ikran được phép lớn đến thế?
+  en: Why Banshees Get to Be Big
+subtitle:
+  vi: >-
+    Một con toruk dang cánh rộng hơn cả một chiếc tiêm kích, lao khỏi vách núi bay và lượn vòng trên
+    rừng. Trên Trái Đất, không một loài biết bay nào được phép to đến thế — có một bức tường vật lý
+    chặn lại ở quãng vài trăm ký. Câu hỏi không phải "vì sao chúng đẹp" mà là "vì sao bầu trời
+    Pandora lại cho phép những thân hình mà bầu trời chúng ta cấm tiệt?"
+  en: >-
+    A toruk spreads wings wider than a fighter jet, drops off a floating crag, and banks out over
+    the forest. On Earth, nothing that flies is allowed to get that large — a wall of physics stops
+    fliers at a few hundred kilograms. The question is not why they are beautiful, but why Pandora's
+    sky permits the bodies that ours forbids.
+hook:
+  vi: >-
+    Banshee và toruk lớn đến mức trông như phạm luật. Và đúng là có luật thật: lực nâng, tải trọng
+    cánh, và một đường giao nhau nghiệt ngã giữa sức cơ bắp có thể tạo ra và sức mà việc bay đòi hỏi
+    — đường giao ấy đặt trần kích thước cho mọi loài vỗ cánh, và trên Trái Đất nó nằm ở quãng
+    Quetzalcoatlus, con thú bay lớn nhất từng tồn tại. Pandora không xé bỏ phương trình. Nó chỉ vặn
+    hai núm điều chỉnh — hấp dẫn thấp hơn, không khí đặc hơn — và cái trần ấy trượt lên cao. Câu
+    chuyện về vì sao banshee được phép to là một bài học trung thực về chính giới hạn của bay.
+  en: >-
+    Banshees and the toruk are big enough to look illegal. And there really is a law: lift, wing
+    loading, and a merciless crossing point between the power a muscle can supply and the power
+    flight demands — a crossing that caps the size of every flapping animal, and on Earth sits
+    around Quetzalcoatlus, the largest creature that ever flew. Pandora does not tear up the
+    equation. It turns just two dials — lower gravity, denser air — and the ceiling slides upward.
+    The story of why a banshee gets to be big is an honest lesson in the limits of flight itself.
+authors:
+  - bardabez
+tags:
+  - flight-biomechanics
+  - wing-loading
+  - reynolds-number
+  - flight-power-ceiling
+  - pterosaur-flight
+  - banshee
+classification:
+  canon_pct: 15
+  inference_pct: 18
+  speculation_pct: 12
+  real_science_pct: 55
+related_chapters:
+  - direhorse-and-banshee-up-close
+  - the-forest-as-a-cathedral
+  - floating-mountains-and-the-superconductor
+  - whats-in-the-air
+glossary_terms:
+  - lift
+  - wing-loading
+  - square-cube-law
+  - reynolds-number
+  - aspect-ratio
+  - thermal-soaring
+  - dynamic-soaring
+  - quadrupedal-launch
+  - power-curve
+  - quetzalcoatlus
+  - pneumatic-bone
+  - leading-edge-vortex
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-toruk-launch
+    role: hero
+    asset_status: ready
+  - id: fig-02-ikran-wing
+    role: diagram
+    asset_status: ready
+  - id: fig-03-launch-mechanics
+    role: diagram
+    asset_status: ready
+  - id: fig-04-lift-on-pandora
+    role: diagram
+    asset_status: ready
+  - id: fig-05-wing-loading-ladder
+    role: comparison
+    asset_status: ready
+  - id: fig-06-earths-flight-ceiling
+    role: inline
+    asset_status: pending
+  - id: fig-07-two-toruk-wings
+    role: comparison
+    asset_status: pending
+  - id: fig-08-vortex-over-a-wing
+    role: diagram
+    asset_status: ready
+  - id: fig-09-riding-the-updraft
+    role: inline
+    asset_status: pending
+sources:
+  - kind: canon
+    label: Mountain Banshee - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Mountain_Banshee
+  - kind: canon
+    label: Great Leonopteryx - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Great_Leonopteryx
+  - kind: canon
+    label: Pandora (Avatar) - Wikipedia
+    url: https://en.wikipedia.org/wiki/Pandora_(Avatar)
+  - kind: science
+    label: 'Pennycuick - Mechanics of Bird Flight: the power curve of a pigeon (J. Exp. Biol., 2009)'
+    url: https://journals.biologists.com/jeb/article/212/10/1421/18253
+  - kind: science
+    label: Marden - Maximum lift production during takeoff in flying animals (J. Exp. Biol., 1987)
+    url: https://journals.biologists.com/jeb/article/130/1/235/5530
+  - kind: science
+    label: Habib - Comparative evidence for quadrupedal launch in pterosaurs (Zitteliana, 2008)
+    url: https://epub.ub.uni-muenchen.de/12011/1/zitteliana_2008_b28_09.pdf
+  - kind: science
+    label: Ksepka - Flight performance of the largest volant bird (PNAS, 2014)
+    url: https://www.pnas.org/doi/10.1073/pnas.1320297111
+  - kind: science
+    label: Chatterjee et al. - The aerodynamics of Argentavis (PNAS, 2007)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC1906724/
+  - kind: science
+    label: Witton & Habib - On the Size and Flight Diversity of Giant Pterosaurs (PLOS One, 2010)
+    url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0013982
+  - kind: research-note
+    label: >-
+      Biomechanics of Megafaunal Flight - Earth's Aerodynamic Limits and Pandora's Aerial Giants
+      (chapter research note)

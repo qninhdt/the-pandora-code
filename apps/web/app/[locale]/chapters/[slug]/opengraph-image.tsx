@@ -1,6 +1,6 @@
 import { type Locale, isLocale } from "@/i18n/config";
 import { getPublishedChapter } from "@/lib/content/loader/chapter-loader";
-import { getOutlineWithStatus } from "@/lib/content/outline";
+import { getOutlineWithStatus } from "@/lib/content/outline-status";
 import { designTokens } from "@/lib/design-tokens";
 import { OG_CONTENT_TYPE, OG_SIZE, renderOgImage } from "@/lib/seo/og-image";
 

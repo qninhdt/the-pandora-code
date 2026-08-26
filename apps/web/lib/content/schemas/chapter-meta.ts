@@ -41,8 +41,6 @@ export type LocalizedReadingTimeOverride = z.infer<typeof LocalizedReadingTimeOv
 export const ChapterMeta = z
   .object({
     slug: Slug,
-    part: z.string().min(1),
-    order: z.number().int().min(0),
     status: Status,
     title: LocalizedString,
     subtitle: LocalizedString.optional(),

@@ -1,0 +1,153 @@
+slug: squidray-and-the-deep-ocean-design-space
+status: published
+title:
+  vi: Quỷ mực dưới miệng phun thủy nhiệt
+  en: Squidray and the Deep-Ocean Design Space
+subtitle:
+  vi: >-
+    Con tsyong mang hai bộ động cơ không thể cùng tồn tại trong một cơ thể — và cả hai đều chỉ hợp
+    lý khi ta thôi coi vực sâu là chốn giam cầm mà nhìn nó như một tấm giấy phép.
+  en: >-
+    The tsyong carries two engines that should not fit in one body — and both of them only make
+    sense once you stop reading the deep as a prison and start reading it as a permit.
+hook:
+  vi: >-
+    Một con vật nặng nhiều tấn trồi lên từ nước đen, xé nắp tàu ngầm RDA rồi biến mất. Truy ngược cú
+    trồi ấy sẽ dẫn tới một ý niệm chuyển được sang bất kỳ đại dương nào: nước biển không cấm đoán mà
+    chỉ ra giá — và ở dưới sâu, cái giá của tốc độ lại rẻ hơn hẳn so với trên mặt.
+  en: >-
+    A multi-tonne animal comes up out of black water, shears open an RDA canopy, and is gone.
+    Tracing that breach leads to an idea that transfers to any ocean: seawater does not forbid, it
+    prices — and in the deep, speed is far cheaper than it is at the surface.
+authors:
+  - bardabez
+tags:
+  - jet-propulsion
+  - cavitation
+  - hydrostatic-pressure
+  - chemosynthesis
+  - trophic-efficiency
+  - tsyong
+classification:
+  canon_pct: 14
+  inference_pct: 16
+  speculation_pct: 5
+  real_science_pct: 65
+related_chapters:
+  - pandoras-ocean
+  - tulkun-not-quite-whales
+  - the-reef-as-substrate
+  - bodies-built-for-water
+glossary_terms:
+  - jet-propulsion
+  - froude-efficiency
+  - cost-of-transport
+  - hoop-stress
+  - neutral-buoyancy
+  - cavitation
+  - hydrostatic-pressure
+  - piezolyte
+  - homeoviscous-adaptation
+  - chromatophore
+  - iridophore
+  - aphotic-zone
+  - counter-illumination
+  - chemolithoautotroph
+  - trophic-efficiency
+  - regional-endothermy
+  - rete-mirabile
+  - q10-temperature-coefficient
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-the-thing-that-came-up
+    role: inline
+    asset_status: ready
+  - id: fig-02-two-engines
+    role: diagram
+    asset_status: ready
+  - id: fig-03-two-kinds-of-wake
+    role: comparison
+    asset_status: ready
+  - id: fig-04-the-mantle-under-load
+    role: diagram
+    asset_status: ready
+  - id: fig-05-bubbles-that-eat-skin
+    role: comparison
+    asset_status: ready
+  - id: fig-06-chatter-in-the-dark
+    role: inline
+    asset_status: ready
+  - id: fig-07-the-vent-field
+    role: inline
+    asset_status: ready
+  - id: fig-08-the-water-column
+    role: diagram
+    asset_status: ready
+  - id: fig-09-the-warm-core
+    role: diagram
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Avatar - Fire and Ash (2025), film
+  - kind: canon
+    label: Avatar - Fire and Ash - The Visual Dictionary (DK, 2025)
+  - kind: canon
+    label: Pandorapedia - Southern Squidray (Velociteuthis mortigravis)
+    url: https://www.avatar.com/pandorapedia/southern-squidray
+  - kind: science
+    label: >-
+      Anderson & Grosenbaugh - Jet flow in steadily swimming adult squid (Journal of Experimental
+      Biology, 2005)
+    url: https://doi.org/10.1242/jeb.01507
+  - kind: science
+    label: >-
+      O'Dor & Webber - Invertebrate athletes: trade-offs between transport cost and mechanical power
+      in squid (Journal of Experimental Biology, 1991)
+    url: https://doi.org/10.1242/jeb.160.1.93
+  - kind: science
+    label: >-
+      Fish, Kolpas & Bart-Smith - Batoid bio-propulsion: kinematics and efficiency of lift-based
+      pectoral flapping (Integrative and Comparative Biology, 2018)
+    url: https://doi.org/10.1093/icb/icy090
+  - kind: science
+    label: >-
+      Iosilevskii & Weihs - Speed limits on swimming of fishes and cetaceans based on cavitation
+      constraints (Journal of the Royal Society Interface, 2008)
+    url: https://doi.org/10.1098/rsif.2007.1073
+  - kind: science
+    label: >-
+      Yancey et al. - Marine fish may be biochemically constrained from inhabiting the deepest ocean
+      depths (Proceedings of the National Academy of Sciences, 2014)
+    url: https://doi.org/10.1073/pnas.1322003111
+  - kind: science
+    label: >-
+      Somero - Adaptations to high hydrostatic pressure: enzyme kinetics, lipid homeoviscous
+      adaptation, and volume shifts (Annual Review of Physiology, 1992)
+    url: https://doi.org/10.1146/annurev.ph.54.030192.003013
+  - kind: science
+    label: Hanlon & Messenger - Cephalopod Behaviour, 2nd edition (Cambridge University Press, 2018)
+    url: https://doi.org/10.1017/9780511843600
+  - kind: science
+    label: >-
+      Haddock, Moline & Case - Bioluminescence in the sea: optical signatures, counterillumination
+      and sensory communication (Annual Review of Marine Science, 2010)
+    url: https://doi.org/10.1146/annurev-marine-120308-085928
+  - kind: science
+    label: Van Dover - The Ecology of Deep-Sea Hydrothermal Vents (Princeton University Press, 2000)
+    url: https://doi.org/10.1515/9780691236179
+  - kind: science
+    label: >-
+      Seibel & Drazen - The rate of metabolism in marine animals: environmental constraints, optical
+      ecology and the visual interactions hypothesis (Journal of Experimental Biology, 2007)
+    url: https://doi.org/10.1242/jeb.02789
+  - kind: science
+    label: >-
+      Block & Finnerty - Endothermy in fishes: a phylogenetic analysis of metabolic heat
+      conservation and cranial warming in pelagic predators (American Zoologist, 1994)
+    url: https://doi.org/10.1093/icb/34.3.441
+  - kind: research-note
+    label: >-
+      Squidray and the Deep-Ocean Design Space - Xenobiological Morphology, Biophysical Constraints
+      and Chemosynthetic Energetics (chapter research note)

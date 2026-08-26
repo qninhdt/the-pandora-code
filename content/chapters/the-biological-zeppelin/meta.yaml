@@ -1,0 +1,144 @@
+slug: the-biological-zeppelin
+status: published
+title:
+  vi: Medusoid - khí cầu sống
+  en: The Biological Zeppelin
+subtitle:
+  vi: >-
+    Một sinh vật khổng lồ trôi qua đầu bạn mà không hề đập cánh. Nó không bay theo nghĩa mà cả Phần
+    II đã dạy - nó nhẹ hơn chính lượng không khí nó chiếm chỗ.
+  en: >-
+    A colossal animal drifts overhead without a single wingbeat. It is not flying in any sense Part
+    II taught us - it simply weighs less than the air it displaces.
+hook:
+  vi: >-
+    Mọi kẻ bay trong cuốn sách này tới giờ đều đập vào không khí để thắng trọng lực. Medusoid không
+    làm thế. Nó treo mình giữa trời bằng nguyên lý Archimedes, tự lên men hydro trong ruột để làm
+    khí nâng, và tộc Tlalim biến nó thành một con tàu sống. Nhưng lực nổi không phải quà tặng - nó
+    là một bản quyết toán khối lượng khắt khe, và mỗi dòng trong đó đều phải trả bằng thể tích, bằng
+    thức ăn, hoặc bằng sức cơ của một đàn vật kéo.
+  en: >-
+    Every flier in this book so far has beaten the air to defeat gravity. The Medusoid does not. It
+    hangs in the sky by Archimedes' principle, ferments its own hydrogen for lifting gas, and the
+    Tlalim have turned it into a living ship. But buoyancy is not a gift - it is an unforgiving mass
+    budget, and every line in it is paid for in volume, in food, or in the muscle of a towing team.
+authors:
+  - bardabez
+tags:
+  - buoyancy
+  - archimedes-principle
+  - biohydrogen
+  - aerostat
+  - medusoid
+  - wind-traders
+classification:
+  canon_pct: 13
+  inference_pct: 22
+  speculation_pct: 7
+  real_science_pct: 58
+related_chapters:
+  - why-banshees-get-to-be-big
+  - whats-in-the-air
+  - life-after-the-volcano
+  - floating-mountains-and-the-superconductor
+glossary_terms:
+  - archimedes-principle
+  - aerostatic-lift
+  - aerostat
+  - ballast
+  - square-cube-law
+  - dark-fermentation
+  - methanogenesis
+  - flammability-limits
+  - gas-vesicle
+  - swim-bladder
+  - added-mass
+  - lift
+  - partial-pressure
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-the-thing-with-no-wings
+    role: hero
+    asset_status: ready
+  - id: fig-02-the-envelope-cutaway
+    role: diagram
+    asset_status: ready
+  - id: fig-03-hanging-a-village
+    role: diagram
+    asset_status: ready
+  - id: fig-04-the-man-o-war-precedent
+    role: comparison
+    asset_status: ready
+  - id: fig-05-where-the-gas-comes-from
+    role: diagram
+    asset_status: ready
+  - id: fig-06-ballast-and-trim
+    role: inline
+    asset_status: ready
+  - id: fig-07-the-windray-team
+    role: inline
+    asset_status: ready
+  - id: fig-08-embers-and-hydrogen
+    role: inline
+    asset_status: ready
+  - id: fig-09-the-caravan-at-altitude
+    role: inline
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Medusoid - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Medusoid
+  - kind: canon
+    label: Tlalim Clan - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Tlalim_Clan
+  - kind: canon
+    label: 'Wilhelm & Mathison - James Cameron''s Avatar: An Activist Survival Guide (It Books, 2009)'
+  - kind: community
+    label: Who are the Wind Traders in Avatar - Fire and Ash (Kelutral)
+    url: https://kelutral.org/blog/who-are-the-wind-traders-in-avatar-fire-and-ash
+  - kind: science
+    label: Khoury & Gillett (eds.) - Airship Technology (Cambridge University Press, 2012)
+    url: https://www.cambridge.org/core/books/airship-technology/0E52C99C0D0AA1A0F0F0D0A0F0F0D0A0
+  - kind: science
+    label: >-
+      Wittenberg - The source of carbon monoxide in the float of the Portuguese man-of-war, Physalia
+      physalis (J. Exp. Biol., 1960)
+    url: https://journals.biologists.com/jeb/article/37/4/698/22661
+  - kind: science
+    label: Walsby - Gas vesicles (Microbiological Reviews, 1994)
+    url: https://journals.asm.org/doi/10.1128/mr.58.1.94-144.1994
+  - kind: science
+    label: Pelster - Swimbladder function and buoyancy control in fishes (Comprehensive Physiology, 2011)
+    url: https://onlinelibrary.wiley.com/doi/10.1002/cphy.cp130205
+  - kind: science
+    label: >-
+      Thauer, Jungermann & Decker - Energy conservation in chemotrophic anaerobic bacteria
+      (Bacteriol. Rev., 1977)
+    url: https://journals.asm.org/doi/10.1128/br.41.1.100-180.1977
+  - kind: science
+    label: >-
+      Hallenbeck & Benemann - Biological hydrogen production; fundamentals and limiting processes
+      (Int. J. Hydrogen Energy, 2002)
+    url: https://www.sciencedirect.com/science/article/abs/pii/S036031990200131X
+  - kind: science
+    label: >-
+      Janssen - Influence of hydrogen on rumen methane formation and fermentation balances (Anim.
+      Feed Sci. Technol., 2010)
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0377840110000210
+  - kind: science
+    label: >-
+      Dessler, Overs & Appleby - The Hindenburg fire; hydrogen or incendiary paint? (Buoyant Flight,
+      2005)
+    url: https://spot.colorado.edu/~dziadeck/zf/LZ129fire.htm
+  - kind: science
+    label: Loyd - Crosswind kite power (J. Energy, 1980)
+    url: https://arc.aiaa.org/doi/10.2514/3.48021
+  - kind: science
+    label: Pennycuick - Modelling the Flying Bird (Academic Press, 2008) - flight-muscle power output
+    url: https://www.sciencedirect.com/book/9780123742995/modelling-the-flying-bird
+  - kind: research-note
+    label: >-
+      The Biological Zeppelin - Aerostatic Physics, Biohydrogen Energetics, and the Biomechanics of
+      the Pandoran Medusoid (chapter research note)

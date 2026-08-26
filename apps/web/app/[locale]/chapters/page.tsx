@@ -3,7 +3,7 @@ import { JsonLd } from "@/components/seo/json-ld";
 import { type Locale, isLocale } from "@/i18n/config";
 import { listPublishedChapters } from "@/lib/content/loader/chapter-loader";
 import { getChapterCoverImage } from "@/lib/content/loader/cover-image";
-import { getOutlineWithStatus } from "@/lib/content/outline";
+import { getOutlineWithStatus } from "@/lib/content/outline-status";
 import type { ChapterMeta } from "@/lib/content/schemas/chapter-meta";
 import type { ClassificationKind } from "@/lib/content/schemas/shared";
 import { buildPageMetadata } from "@/lib/seo/page-metadata";

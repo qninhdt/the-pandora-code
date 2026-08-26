@@ -21,6 +21,7 @@ import { CarbonateBudgetBalance } from "@/components/content/carbonate-budget-ba
 import { CarbonateSilicateThermostat } from "@/components/content/carbonate-silicate-thermostat";
 import { CascadingFailure } from "@/components/content/cascading-failure";
 import { CavitationDepthCeiling } from "@/components/content/cavitation-depth-ceiling";
+import { ChapterRef, PartRef } from "@/components/content/chapter-ref";
 import { CharacterMatrixCladogram } from "@/components/content/character-matrix-cladogram";
 import { Chart } from "@/components/content/chart";
 import { ChiralityHandedness } from "@/components/content/chirality-handedness";
@@ -187,6 +188,7 @@ export const pandoraMdxComponents = {
   CascadingFailure,
   CavitationDepthCeiling,
   ChapterHero,
+  ChapterRef,
   ChapterShell,
   CharacterMatrixCladogram,
   Chart,
@@ -270,6 +272,7 @@ export const pandoraMdxComponents = {
   OrganogenesisGate,
   OutgroupPolarityBench,
   PandoraLightLadder,
+  PartRef,
   PercolationNetwork,
   PhotophoreIntensity,
   PneumaticBoneBudget,
