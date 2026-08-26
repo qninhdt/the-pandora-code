@@ -77,9 +77,6 @@ figures:
   - id: fig-04-zircon-anatomy
     role: diagram
     asset_status: ready
-  - id: fig-05-tidal-engine
-    role: inline
-    asset_status: ready
   - id: fig-06-living-archive
     role: inline
     asset_status: ready
