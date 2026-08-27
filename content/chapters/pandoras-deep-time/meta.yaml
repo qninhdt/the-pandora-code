@@ -4,7 +4,9 @@ title:
   vi: Dòng thời gian sâu thẳm của Pandora
   en: Pandora’s Deep Time
 subtitle:
-  vi: Thời gian sâu thẳm của Pandora
+  vi: >-
+    Cách đọc tuổi của một thế giới ta vừa mới đặt chân tới - và làm sao ta biết Trái Đất đã 4,5 tỷ
+    năm tuổi: địa thời học, định tuổi bằng đồng vị phóng xạ, và cuốn tiểu sử của một hành tinh
   en: >-
     How to read the age of a world you have only just reached - and how we know Earth is 4.5 billion
     years old: geochronology, radiometric dating, and the biography of a planet
@@ -32,13 +34,14 @@ tags:
   - isochron
 classification:
   canon_pct: 20
-  inference_pct: 18
-  speculation_pct: 8
+  inference_pct: 14
+  speculation_pct: 12
   real_science_pct: 54
 related_chapters:
   - where-is-pandora
   - floating-mountains-and-the-superconductor
   - time-on-pandora
+  - what-keeps-pandora-volcanically-alive
 glossary_terms:
   - deep-time
   - geochronology
@@ -104,6 +107,12 @@ sources:
     label: Isochron dating - Wikipedia
     url: https://en.wikipedia.org/wiki/Isochron_dating
   - kind: science
+    label: The U-Pb system (UCL geochronology notes)
+    url: https://www.homepages.ucl.ac.uk/~ucfbpve/geotopes/indexch5.html
+  - kind: science
+    label: Radiocarbon dating - Wikipedia
+    url: https://en.wikipedia.org/wiki/Radiocarbon_dating
+  - kind: science
     label: Jack Hills zircon - oldest known fragment of Earth (Sci.News)
     url: https://www.sci.news/geology/science-jack-hills-zircon-oldest-known-fragment-earth-01779.html
   - kind: science
@@ -119,7 +128,17 @@ sources:
     label: Gyrochronology - Wikipedia
     url: https://en.wikipedia.org/wiki/Gyrochronology
   - kind: science
+    label: A mapping method of age estimation for binary stars - Alpha Centauri A and B
+    url: >-
+      https://astrobiology.com/2026/02/a-mapping-method-of-age-estimation-for-binary-stars-application-to-the-alpha-centauri-system-a-and-b.html
+  - kind: science
     label: Europa and Titan - Oceans in the Outer Solar System (LPI)
     url: https://www.lpi.usra.edu/science/kiefer/Education/SSRG2-Europa/europa.html
+  - kind: science
+    label: Tidal effects on Io and Europa (The Open University, OpenLearn)
+    url: https://www.open.edu/openlearn/ocw/mod/oucontent/view.php?id=69107
+  - kind: science
+    label: Uniformitarianism - Wikipedia
+    url: https://en.wikipedia.org/wiki/Uniformitarianism
   - kind: research-note
     label: Chronological Frameworks of Pandoran and Terrestrial Deep Time (chapter research note)

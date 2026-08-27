@@ -4,7 +4,9 @@ title:
   vi: Hít một hơi là chết
   en: What’s Really in the Air?
 subtitle:
-  vi: Có gì trong không khí
+  vi: >-
+    Vì sao một bầu không khí thừa oxy lại giết người trong vài giây - và vì sao chính bầu không khí
+    ấy là lời tuyên bố rõ ràng nhất rằng Pandora đang sống
   en: >-
     Why an oxygen-rich air kills in seconds - and why that same air is the clearest possible
     announcement that Pandora is alive
@@ -36,6 +38,9 @@ related_chapters:
   - where-is-pandora
   - the-breathing-fans
   - a-real-living-planet
+  - time-on-pandora
+  - continents-oceans-climate
+  - floating-mountains-and-the-superconductor
 glossary_terms:
   - partial-pressure
   - hypercapnia
@@ -98,6 +103,12 @@ sources:
     label: Life or illusion? Avoiding 'false positives' in the search for living worlds (UW News)
     url: >-
       https://www.washington.edu/news/2016/02/29/life-or-illusion-avoiding-false-positives-in-the-search-for-living-worlds/
+  - kind: science
+    label: Cytochrome c oxidase - Wikipedia
+    url: https://en.wikipedia.org/wiki/Cytochrome_c_oxidase
+  - kind: science
+    label: Great Oxidation Event - Wikipedia
+    url: https://en.wikipedia.org/wiki/Great_Oxidation_Event
   - kind: research-note
     label: >-
       Comparative Planetology and Xenophysiology - Analysis of the Pandoran Atmosphere (chapter

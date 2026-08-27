@@ -6,19 +6,19 @@ title:
 subtitle:
   vi: >-
     Một con thú nặng ngang voi lại phi nước đại 95 km/h trên đôi chân mảnh dẻ, một kẻ săn mồi sải
-    cánh 14 mét lại cõng theo cả người cưỡi - cả hai lẽ ra đều bất khả thi. Phép tính tỉ lệ dị sinh
+    cánh 12–14 mét lại cõng theo cả người cưỡi - cả hai lẽ ra đều bất khả thi. Phép tính tỉ lệ dị sinh
     trưởng và cơ sinh học giải thích vì sao kích thước không bao giờ là miễn phí, và ba hằng số của
     Pandora đã dịch chuyển mọi giới hạn ấy ra sao.
   en: >-
     An animal as heavy as an elephant gallops at 95 km/h on slender legs; a predator spanning
-    fourteen metres carries a rider aloft - both should be impossible. Allometric scaling and
+    twelve to fourteen metres carries a rider aloft - both should be impossible. Allometric scaling and
     biomechanics explain why size is never free, and how three Pandoran constants move every limit.
 hook:
   vi: >-
     Đặt một con pa'li và một con ikran cạnh nhau trên bàn mổ, và bạn đang nhìn vào hai điều bất khả
     thi. Con ngựa khổng lồ kia nặng ngang một con voi, vậy mà phi nước đại 95 km/h trên đôi chân
     mảnh hơn nhiều so với lẽ thường - đáng ra mỗi sải chân phải làm gãy vụn xương nó. Con dã thú bay
-    kia sải cánh mười bốn mét, vậy mà cất mình khỏi vách đá cùng một người Na'vi trên lưng - một
+    kia sải cánh mười hai đến mười bốn mét, vậy mà cất mình khỏi vách đá cùng một người Na'vi trên lưng - một
     trọng lượng đủ ghim mọi loài bay trên Trái Đất xuống đất vĩnh viễn. Cả hai đều lẽ ra phải sụp đổ
     dưới chính luật vật lý cai quản mọi cơ thể. Vậy mà chúng không. Trọn chương này truy tìm lý do -
     và lời giải không nằm ở phép màu, mà ở ba con số mà Pandora đã âm thầm chỉnh khác đi.
@@ -26,7 +26,7 @@ hook:
     Lay a pa'li and an ikran side by side on the dissection bench and you are looking at two
     impossibilities. The giant horse is as heavy as an elephant, yet it gallops at 95 km/h on legs
     far more slender than they have any right to be - every stride should shatter the bone beneath
-    it. The flying predator spans fourteen metres, yet it lifts off a cliff with a Na'vi on its back
+    it. The flying predator spans twelve to fourteen metres, yet it lifts off a cliff with a Na'vi on its back
     - a weight that would pin any Earth flyer to the ground forever. Both should collapse under the
     very physics that governs every body that has ever lived. And yet they do not. This whole
     chapter chases the reason - and the answer is not magic, but three numbers Pandora quietly set
@@ -46,9 +46,11 @@ classification:
   speculation_pct: 8
   real_science_pct: 54
 related_chapters:
-  - six-limbs-and-the-bilateral-lattice
-  - the-breathing-fans
   - why-banshees-get-to-be-big
+  - the-breathing-fans
+  - six-limbs-and-the-bilateral-lattice
+  - the-aerial-arms-race
+  - the-pandoran-umwelt
 glossary_terms:
   - allometry
   - square-cube-law
@@ -57,6 +59,7 @@ glossary_terms:
   - froude-number
   - kleibers-law
   - wing-loading
+  - pneumatic-bone
   - quetzalcoatlus
   - tsaheylu
   - operculum
@@ -79,9 +82,6 @@ figures:
   - id: fig-05-pali-cornering
     role: inline
     asset_status: pending
-  - id: fig-06-two-giant-launches
-    role: comparison
-    asset_status: ready
   - id: fig-07-tsaheylu-interface
     role: diagram
     asset_status: ready

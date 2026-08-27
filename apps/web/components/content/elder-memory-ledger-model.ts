@@ -17,8 +17,8 @@
 // of everything the pod has lived through while being under a third of its
 // bodies. Removing them is therefore not the same bereavement as removing
 // the same number at random — which is exactly the loss a census cannot
-// see, and exactly what industrial hunting does when it targets the large
-// and the accompanied.
+// see, and exactly what any hunt does when it takes the oldest and the
+// accompanied rather than a random sample.
 //
 // Earth supplies the demographic confirmation: the death of a
 // post-reproductive killer-whale matriarch raises her adult sons'

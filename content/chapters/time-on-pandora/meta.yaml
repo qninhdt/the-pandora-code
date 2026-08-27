@@ -4,7 +4,9 @@ title:
   vi: Nhịp điệu thời gian trên Pandora
   en: Time on Pandora
 subtitle:
-  vi: Thời gian trên Pandora
+  vi: >-
+    Vì sao thứ lớn nhất trên bầu trời Pandora không bao giờ nhúc nhích - mà một ngày vẫn cứ trôi
+    qua: khóa thủy triều, sự bình động, và điệu nhảy của cơ học quỹ đạo
   en: >-
     Why the biggest thing in Pandora's sky never moves - yet a day still passes: tidal locking,
     libration, and the dance of orbital mechanics
@@ -38,6 +40,8 @@ related_chapters:
   - where-is-pandora
   - whats-in-the-air
   - continents-oceans-climate
+  - what-keeps-pandora-volcanically-alive
+  - pandoras-deep-time
 glossary_terms:
   - tidal-locking
   - synchronous-rotation
@@ -100,5 +104,14 @@ sources:
     label: Community orbital reconstructions of the Polyphemus system (r/Avatar, Universe Sandbox)
     url: >-
       https://www.reddit.com/r/Avatar/comments/zyrwql/pandoras_orbit_and_eclipse_visualized_universe/
+  - kind: science
+    label: Sidereal time - Wikipedia
+    url: https://en.wikipedia.org/wiki/Sidereal_time
+  - kind: science
+    label: Eclipse season - Wikipedia
+    url: https://en.wikipedia.org/wiki/Eclipse_season
+  - kind: science
+    label: Roche limit - Wikipedia
+    url: https://en.wikipedia.org/wiki/Roche_limit
   - kind: research-note
     label: The Chronometric and Astrodynamical Profile of Pandora (chapter research note)

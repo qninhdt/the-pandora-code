@@ -4,7 +4,9 @@ title:
   vi: Lục địa, đại dương và khí hậu
   en: Continents, Oceans and Climate
 subtitle:
-  vi: Lục địa, đại dương, khí hậu
+  vi: >-
+    Vì sao gần như cả một mặt trăng đều là rừng mưa - và cách chính cái quy luật đã xếp đặt rừng và
+    hoang mạc của Trái Đất tiên đoán được tấm bản đồ Pandora trước khi bạn kịp nhìn thấy nó
   en: >-
     Why almost an entire moon is rainforest - and how the same law that places Earth's forests and
     deserts predicts Pandora's map before you ever see it
@@ -38,6 +40,8 @@ related_chapters:
   - where-is-pandora
   - time-on-pandora
   - whats-in-the-air
+  - what-keeps-pandora-volcanically-alive
+  - pandoras-ocean
 glossary_terms:
   - albedo
   - radiative-equilibrium
@@ -48,9 +52,12 @@ glossary_terms:
   - superrotation
   - adiabatic-lapse-rate
   - thermohaline-circulation
+  - upwelling
+  - thermal-ballast
   - biome
   - obliquity
   - tidal-heating
+  - tidal-locking
   - roche-limit
 figures:
   - id: fig-00-cover
@@ -109,6 +116,21 @@ sources:
   - kind: science
     label: Climate and Biomes - SERC (Carleton College)
     url: https://serc.carleton.edu/eslabs/weather/4a.html
+  - kind: science
+    label: Coriolis force - Wikipedia
+    url: https://en.wikipedia.org/wiki/Coriolis_force
+  - kind: science
+    label: Lapse rate - Wikipedia
+    url: https://en.wikipedia.org/wiki/Lapse_rate
+  - kind: science
+    label: Thermohaline circulation - Wikipedia
+    url: https://en.wikipedia.org/wiki/Thermohaline_circulation
+  - kind: science
+    label: Upwelling - Wikipedia
+    url: https://en.wikipedia.org/wiki/Upwelling
+  - kind: science
+    label: Roche limit - Wikipedia
+    url: https://en.wikipedia.org/wiki/Roche_limit
   - kind: research-note
     label: >-
       Comparative Climatology, Planetary Dynamics, and Geographical Synthesis of the Exomoon Pandora

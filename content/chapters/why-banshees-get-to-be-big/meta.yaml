@@ -45,6 +45,8 @@ classification:
   real_science_pct: 55
 related_chapters:
   - direhorse-and-banshee-up-close
+  - the-aerial-arms-race
+  - the-biological-zeppelin
   - the-forest-as-a-cathedral
   - floating-mountains-and-the-superconductor
   - whats-in-the-air
@@ -53,13 +55,11 @@ glossary_terms:
   - wing-loading
   - square-cube-law
   - reynolds-number
-  - aspect-ratio
   - thermal-soaring
   - dynamic-soaring
   - quadrupedal-launch
   - power-curve
   - quetzalcoatlus
-  - pneumatic-bone
   - leading-edge-vortex
 figures:
   - id: fig-00-cover

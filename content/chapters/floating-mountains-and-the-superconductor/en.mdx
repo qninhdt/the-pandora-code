@@ -8,7 +8,7 @@ import { FluxFieldFigure } from "@/components/three/flux-field-figure";
 
 A banshee comes up through the cloud deck at dawn, and the first thing you see is wrong. Not strange-beautiful, not alien-pretty — *wrong*, in the specific way that makes a physicist sit up. There is a mountain ahead of the rider, several kilometres of grey rock and dripping forest, and it is not attached to anything. It hangs. Below it is air, and below the air is more air, and somewhere far down through the mist is the ground it should be lying on.
 
-Your eye keeps trying to find the trick. A pillar, a cable, a matte line where the model meets the plate. There isn't one. The Hallelujah Mountains of Pandora — *Ayram alusìng* in Na'vi, "the floating mountains" — simply float, the way a cork floats, except there is no water, only sky.
+Your eye keeps trying to find the trick. A pillar, a cable, a matte line where the model meets the plate. There isn't one. The <GlossaryTerm slug="hallelujah-mountains">Hallelujah Mountains</GlossaryTerm> of Pandora — *Ayram alusìng* in Na'vi, "the floating mountains" — simply float, the way a cork floats, except there is no water, only sky.
 
 The easy thing to do with an image like that is to call it magic and move on. I want to do the harder thing, which is to take it seriously as a specimen. Because if you ask the patient, slightly obsessive question — *what would actually have to be true for a mountain to hang in the air and stay there* — you do not end up in fantasy. You end up in one of the strangest, best-verified corners of real physics, in a Leiden laboratory in 1911, and eventually inside a phenomenon that lets a coin-sized disc lock itself rigidly into empty space as if the air had quietly turned to glass around it.
 
@@ -18,7 +18,17 @@ The mountains are the bait. Superconductivity is the meal. Let me earn it.
 
 Let us start with what the films and the official material commit to, because that is the part we are not allowed to invent.
 
-Canon is specific about the cause: the mountains float because of <GlossaryTerm slug="unobtanium">unobtanium</GlossaryTerm>, a mineral concentrated in their cores. Pandora's magnetic field is unusually strong — the moon's iron core does the ordinary planetary dynamo thing, but buried unobtanium is described as amplifying that baseline field more than a hundredfold. Where Pandora's field overlaps the field of the gas giant it orbits, Polyphemus, you get a region of violent, concentrated magnetic flux: the **Flux Vortex**, centred over the mountains themselves.
+Canon is specific about the cause: the mountains float because of <GlossaryTerm slug="unobtanium">unobtanium</GlossaryTerm>, a mineral concentrated in their cores. Pandora's magnetic field is unusually strong — the moon's iron core does the ordinary planetary dynamo thing, but buried unobtanium is described as amplifying that baseline field more than a hundredfold.
+
+<DiagramFigure
+  src="/images/chapters/floating-mountains-and-the-superconductor/fig-03-unobtanium-core.webp"
+  alt="Cutaway of a floating island showing a glowing unobtanium deposit in its lower mass, veins branching out into the rock"
+  figNo="03"
+  caption="Cut a floating island open and canon puts the answer in the lower mass: a deposit of unobtanium, veined through the surrounding stone. Everything else in this chapter is an argument about what that ore is doing."
+  tier="canon"
+/>
+
+Where Pandora's field overlaps the field of the gas giant it orbits, Polyphemus, you get a region of violent, concentrated magnetic flux: the **Flux Vortex**, centred over the mountains themselves.
 
 <DiagramFigure
   src="/images/chapters/floating-mountains-and-the-superconductor/fig-02-flux-vortex-map.webp"
@@ -148,6 +158,14 @@ Except for Earnshaw.
 Here is the problem the films' first explanation walks straight into. Pure magnetic repulsion cannot hold anything *stably*. Samuel Earnshaw proved it in 1842: you cannot trap an object in a stable equilibrium using forces that fall off the way magnetic and electric forces do. There is always an escape direction — a way to slide "downhill" off the field and out.
 
 A magnet floating on Meissner repulsion is balanced, but it is balanced like a pencil on its point. Nudge it and there is no restoring force pulling it back to centre; instead it tips, slides off the field line, and falls. Lab demonstrations of pure Meissner levitation are accordingly fussy and twitchy — the magnet wants to escape, and it will.
+
+<DiagramFigure
+  src="/images/chapters/floating-mountains-and-the-superconductor/fig-07-earnshaw-instability.webp"
+  alt="A block balanced on the apex of a dome, with arrows fanning down its sides and a ghosted copy of the block sliding away"
+  figNo="07"
+  caption="Earnshaw's theorem in one picture: the block on top of the dome is held up, and every direction it could move is downhill. Repulsion supplies the height and leaves the escape routes open."
+  tier="real_science"
+/>
 
 <Callout variant="warning" title="The common error">
 You will see this conflated everywhere, including in pop-science coverage: "the superconductor levitates because of the Meissner effect." The Meissner effect explains the *lift*. It does not explain the *stability* — and stability is the entire mystery of a mountain that hangs in one place for centuries instead of sliding off into the sky. For that, you need a different, stranger effect, available only in a particular class of superconductor.
