@@ -1,0 +1,32 @@
+id: s-wave
+label:
+  vi: Sóng ngang (sóng S)
+  en: S wave
+definition:
+  vi: >-
+    Sóng địa chấn thứ hai tới trạm thu, truyền bằng cách lắc vật chất sang bên, vuông góc với hướng
+    đi — nó làm đá biến dạng về hình mà không đổi thể tích. Điều đó buộc nó phải dựa vào độ cứng
+    trượt của vật chất, và ở đây có một hệ quả sắc gọn: chất lỏng không có độ cứng trượt, mô đun trượt
+    bằng không, nên vận tốc sóng ngang cũng bằng không. Sóng ngang tuyệt đối không xuyên qua chất
+    lỏng. Chính điều tưởng như vụn vặt ấy đã chứng minh nhân ngoài Trái Đất là chất lỏng.
+  en: >-
+    The second seismic wave to arrive, travelling by shaking material sideways, perpendicular to its
+    direction of travel — it deforms rock in shape without changing its volume. That forces it to lean
+    entirely on the material's resistance to shearing, and there the consequence is sharp: a liquid has
+    no shear strength, its shear modulus is exactly zero, and so the shear-wave speed is zero too. An S
+    wave cannot cross a liquid at all. That apparently small fact is what proved Earth's outer core
+    molten.
+see_also:
+  - p-wave
+  - shadow-zone
+  - mantle-convection
+category: concept
+tags:
+  - geology
+  - physics
+  - planetary-science
+cover_prompt: >-
+  A painted diagram of a wave travelling left to right through a column of rock while the rock itself
+  displaces up and down across the path, drawn as a sideways-rippling ribbon of stone, the crests
+  glowing teal against deep indigo, the ribbon terminating abruptly at a dark molten region on the
+  right, painterly physics plate, no text, no labels, no arrows.

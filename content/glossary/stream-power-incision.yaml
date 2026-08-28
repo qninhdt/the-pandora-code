@@ -1,0 +1,26 @@
+id: stream-power-incision
+label:
+  vi: Định luật xâm thực do năng lượng dòng chảy
+  en: Stream-power incision law
+definition:
+  vi: >-
+    Mô hình toán học định lượng tốc độ một dòng sông đào sâu vào nền đá gốc theo thời gian, tỷ lệ thuận
+    với diện tích lưu vực thu nước (đại diện cho lưu lượng dòng chảy) và độ dốc của lòng dẫn. Định luật này
+    mô tả sự cạnh tranh vĩnh cửu giữa lực nâng kiến tạo (dựng nên địa hình) và dòng nước chảy (bào mòn địa
+    hình).
+  en: >-
+    The mathematical formulation stating that the rate of bedrock river channel incision is proportional
+    to upstream drainage area (as a proxy for river discharge) and channel slope. The stream-power law
+    captures the fundamental tug-of-war in landscape evolution between tectonic rock uplift and river-driven
+    denudation.
+see_also:
+  - knickpoint
+  - drainage-density
+category: concept
+tags:
+  - geology
+  - earth-systems
+  - physics
+cover_prompt: >-
+  A painted dynamic rendering of a powerful mountain river violently cutting a deep gorge into layered
+  bedrock, hydraulic turbulence churning sediment tools against the rock floor, no text, no labels.

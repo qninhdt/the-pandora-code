@@ -1,0 +1,18 @@
+id: stellar-nucleosynthesis
+label:
+  vi: Tổng hợp hạt nhân trong sao
+  en: Stellar nucleosynthesis
+definition:
+  vi: Việc chế tạo các nguyên tố nặng hơn heli bằng phản ứng nhiệt hạch trong lòng sao và trong những cái chết dữ dội của chúng. Các sao khối lượng lớn dựng nên oxy, magie, silic và canxi trong vài triệu năm ngắn ngủi; sắt đến muộn hơn từ những vụ nổ khác. Toàn bộ lớp manti và lõi của Pandora là sản phẩm tích lũy của nhiều thế hệ sao đã chết trước khi hệ này hình thành.
+  en: The manufacture of every element heavier than helium by fusion inside stars and in their violent deaths. Massive stars build oxygen, magnesium, silicon and calcium in a few short million years; iron arrives later from a different kind of explosion. Pandora's entire mantle and core are the accumulated output of generations of stars that died before its system existed.
+see_also:
+  - big-bang-nucleosynthesis
+  - core-collapse-supernova
+  - triple-alpha-process
+  - nuclear-binding-energy
+category: concept
+tags:
+- astronomy
+- physics
+- chemistry
+cover_prompt: A painted cutaway of a massive star's interior showing nested concentric glowing shells graded from a cool dim outer envelope through teal and cyan mid layers to an intensely bright dense core, painterly astronomical cross-section plate, no text, no labels, no numbers.

@@ -1,0 +1,27 @@
+id: lifting-condensation-level
+label:
+  vi: Mực ngưng tụ do nâng
+  en: Lifting condensation level
+definition:
+  vi: >-
+    Cao độ mà tại đó một khối không khí bề mặt khi được nâng lên đoạn nhiệt khô sẽ nguội tới nhiệt độ
+    điểm sương và bắt đầu xảy ra hiện tượng ngưng tụ hơi nước. Trên bầu trời, LCL xuất hiện dưới hình thái
+    đáy phẳng đồng đều của các đám mây tích ban ngày, đánh dấu ranh giới nhiệt động lực học nơi hơi ẩm
+    vô hình biến thành mây nhìn thấy được.
+  en: >-
+    The altitude at which an unsaturated parcel of air lifted dry-adiabatically cools to its dew point,
+    reaching one hundred percent relative humidity and initiating condensation. In the sky, the LCL
+    is visibly demarcated by the flat, uniform cloud bases of daytime cumulus towers, marking the exact
+    thermodynamic threshold where invisible vapour becomes visible cloud.
+see_also:
+  - convective-available-potential-energy
+  - adiabatic-lapse-rate
+category: concept
+tags:
+  - atmosphere
+  - physics
+  - earth-systems
+cover_prompt: >-
+  A painted atmospheric landscape showing the perfectly flat, horizontal undersides of convective cloud
+  towers aligned across a forest horizon, warm sunlight illuminating the rising pillars, no text, no
+  labels.

@@ -1,0 +1,27 @@
+id: triple-alpha-process
+label:
+  vi: Phản ứng ba alpha
+  en: Triple-alpha process
+definition:
+  vi: >-
+    Con đường duy nhất vượt qua khoảng trống khối lượng 8: ba hạt nhân heli phải gặp nhau gần
+    như cùng lúc để tạo thành carbon. Nó chỉ chạy được vì carbon-12 tình cờ có một mức năng
+    lượng kích thích khớp gần đúng với năng lượng của cặp heli đang tới, khiến tốc độ phản ứng
+    tăng khoảng bảy bậc độ lớn. Không có sự trùng hợp ấy thì không có carbon, không có oxy, và
+    không có hóa học nào đáng bàn.
+  en: >-
+    The only route across the mass-8 gap: three helium nuclei must meet almost simultaneously to
+    make carbon. It works only because carbon-12 happens to have an excited state matching the
+    incoming pair's energy closely enough to boost the reaction rate by about seven orders of
+    magnitude. Without that coincidence there is no carbon, no oxygen, and no chemistry worth
+    discussing.
+see_also:
+  - stellar-nucleosynthesis
+  - big-bang-nucleosynthesis
+  - nuclear-binding-energy
+category: concept
+tags:
+- physics
+- chemistry
+- astronomy
+cover_prompt: A painted close view of three small bright spheres of light converging on one point in a hot dense stellar interior, the collision flaring into a single larger warm nucleus, amber and cyan glow against deep indigo, painterly nuclear-physics plate, no text, no labels, no numbers.

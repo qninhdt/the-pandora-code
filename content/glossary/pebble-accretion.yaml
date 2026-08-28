@@ -1,0 +1,26 @@
+id: pebble-accretion
+label:
+  vi: Bồi tụ sỏi
+  en: Pebble accretion
+definition:
+  vi: >-
+    Cách một vi thể hành tinh đã hình thành lớn lên nhanh chóng: hấp dẫn của nó bẻ cong đường đi
+    của những viên sỏi đang trôi trong khí, nên nó quét một khối không gian lớn hơn nhiều tiết
+    diện của chính mình. Vật thể lớn nhất trong một vùng lớn nhanh nhất, và mười lần khối lượng
+    Trái Đất vật liệu rắn có thể tích tụ trong vài trăm nghìn năm - vừa kịp trước khi khí trong
+    đĩa tan hết.
+  en: >-
+    How an existing planetesimal grows fast: its gravity bends the paths of pebbles drifting
+    through the gas, so it sweeps a volume far larger than its own cross-section. The biggest
+    object in a neighbourhood grows fastest, and ten Earth masses of solid material can
+    accumulate in a few hundred thousand years - comfortably before the disk's gas disperses.
+see_also:
+  - streaming-instability
+  - accretion
+  - protoplanetary-disk
+  - circumplanetary-disk
+category: concept
+tags:
+- planetary-science
+- physics
+cover_prompt: A painted view of a single dark growing protoplanet with streams of small bright pebbles curving inward toward it from a surrounding dust disk, cyan trails against deep indigo, painterly astronomical plate, no text, no labels, no numbers.

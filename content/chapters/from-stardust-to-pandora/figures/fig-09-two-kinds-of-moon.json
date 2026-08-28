@@ -1,0 +1,20 @@
+{
+  "id": "fig-09-two-kinds-of-moon",
+  "chapter_slug": "from-stardust-to-pandora",
+  "role": "comparison",
+  "narrative_purpose": "Puts the two possible interiors side by side so the reader sees what Pandora's derived density actually rules out: an ice moon and a rock-and-metal world are not variations on a theme.",
+  "subject": "Two spherical moons of identical size side by side, each cut open in a clean vertical section facing the viewer. The left moon is mostly pale translucent ice in thick layers, with only a small dull rocky ball at its centre. The right moon is dense dark rock throughout, with a large bright metallic core filling roughly a third of its diameter, and a very thin darker crust at the surface.",
+  "scene": "Both moons hang against empty dark space with faint distant stars, at the same scale and the same distance, nothing else in frame.",
+  "camera": "Straight-on view, both cut faces square to the viewer, the two moons evenly spaced with a clear gap of dark space between them.",
+  "light": "Soft even illumination from the upper left so both cut faces are equally readable; the metallic core in the right moon self-luminous with a faint warm glow, the left moon's ice cool and translucent.",
+  "palette": "Left moon in cool mist-white and pale cyan ice over a small stone-grey centre; right moon in deep teal-indigo rock over a scarce warm amber core; void-indigo background.",
+  "style": "Painterly naturalist comparative plate, hand-rendered cross-sections, soft-edged internal boundaries.",
+  "detail_level": "Moderate and matched: both interiors rendered to the same level so the comparison is fair, with layer boundaries readable but not hard-lined.",
+  "composition": "Left moon at one-quarter frame width, right moon at three-quarters, both vertically centred, with dark negative space above and below for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "scale bars", "watermark", "logos", "UI", "grid", "ruler marks"],
+  "consistency_notes": "The two moons must be the same diameter - the whole point is that identical size hides completely different interiors. No surface features that would identify either as Pandora specifically.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no scale bars, no grid, no diagram chrome, no vector or flat-design look, no photographic or 3D-render look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

@@ -1,0 +1,26 @@
+id: baseflow
+label:
+  vi: Dòng chảy ngầm cơ sở
+  en: Baseflow
+definition:
+  vi: >-
+    Phần lưu lượng dòng chảy của sông suối được duy trì liên tục bởi sự thẩm thấu và rò rỉ chậm rãi
+    của nguồn nước ngầm từ các tầng đất đá xung quanh, thay vì dòng chảy tràn trực tiếp trên bề mặt sau
+    cơn mưa. Dòng chảy ngầm cơ sở là thứ giúp các con sông duy trì dòng nước quanh năm trong những khoảng
+    thời gian dài không có mưa.
+  en: >-
+    The portion of streamflow sustained over long intervals between precipitation events by the slow,
+    continuous seepage of subsurface groundwater through aquifers and soil strata into river channels.
+    Baseflow represents the subterranean hydrological buffer that distinguishes a perennial river from
+    an ephemeral dry wash or wadi.
+see_also:
+  - drainage-density
+  - stream-power-incision
+category: concept
+tags:
+  - geology
+  - earth-systems
+cover_prompt: >-
+  A painted cross-sectional view of a river channel cutting through layered bedrock, showing glowing blue
+  groundwater seepage lines filtering through rock fissures into the clear flowing stream, no text, no
+  labels.

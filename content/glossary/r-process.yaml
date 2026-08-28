@@ -1,0 +1,27 @@
+id: r-process
+label:
+  vi: Bắt neutron nhanh
+  en: Rapid neutron capture
+definition:
+  vi: >-
+    Con đường nhanh tới những nguyên tố nặng nhất: trong mảnh vụn đầy neutron của một vụ sáp
+    nhập sao neutron, hạt nhân hấp thụ neutron nhanh hơn tốc độ chúng phân rã, chỉ trong khoảng
+    một giây, và bị đẩy xa khỏi vùng bền tới tận urani. Năm 2017 con người quan sát trực tiếp
+    quá trình này lần đầu. Vàng, bạch kim, thori và urani trong vỏ một hành tinh đều ra đời như
+    vậy.
+  en: >-
+    The fast route to the heaviest elements: in the neutron-drenched debris of a neutron-star
+    merger, nuclei absorb neutrons faster than they can decay, over roughly one second, and are
+    driven far past stability all the way to uranium. The process was observed directly for the
+    first time in 2017. The gold, platinum, thorium and uranium in a planet's crust were all
+    made this way.
+see_also:
+  - s-process
+  - stellar-nucleosynthesis
+  - siderophile
+category: concept
+tags:
+- astronomy
+- physics
+- chemistry
+cover_prompt: A painted scene of two tiny extremely dense objects merging in deep space, throwing off luminous curved tidal streams of debris that glow with a warm metallic sheen, magenta and amber against void indigo, painterly astronomical plate, no text, no labels, no numbers.

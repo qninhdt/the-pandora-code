@@ -1,0 +1,28 @@
+id: siderophile
+label:
+  vi: Nguyên tố ưa sắt
+  en: Siderophile element
+definition:
+  vi: >-
+    Nhóm nguyên tố "yêu kim loại" - bạch kim, vàng, iridi, niken và họ hàng - tan vào sắt lỏng
+    thay vì ở lại trong đá nóng chảy, với tỉ lệ ưu tiên lên tới mười nghìn lần hoặc hơn. Vì vậy
+    khi kim loại chìm xuống tạo lõi, chúng bị lấy đi khỏi lớp vỏ: phần lớn vàng của Trái Đất nằm
+    trong lõi, không sao lấy được. Đó là lý do một mỏ quặng nặng trong vỏ là điều cần giải
+    thích.
+  en: >-
+    The "metal-loving" elements - platinum, gold, iridium, nickel and their relatives - which
+    dissolve into liquid iron rather than staying in molten rock, by preference factors of ten
+    thousand or more. So when metal sinks to form a core it strips them from the crust: most of
+    Earth's gold is in the core, unreachable. That is why a heavy orebody in a crust is
+    something that needs explaining.
+see_also:
+  - planetary-differentiation
+  - magma-ocean
+  - unobtanium
+  - r-process
+category: concept
+tags:
+- geology
+- chemistry
+- mineral
+cover_prompt: A painted cutaway of molten rock in which bright dense metallic droplets are visibly sinking downward and leaving the paler silicate melt above depleted, warm amber metal against dark teal rock, painterly geochemical plate, no text, no labels, no numbers.

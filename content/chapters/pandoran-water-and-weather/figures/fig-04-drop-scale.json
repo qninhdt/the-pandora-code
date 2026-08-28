@@ -1,0 +1,32 @@
+{
+  "id": "fig-04-drop-scale",
+  "chapter_slug": "pandoran-water-and-weather",
+  "role": "comparison",
+  "narrative_purpose": "Makes the millionfold volume gap between a cloud droplet and a raindrop physically felt rather than merely stated - the step that diffusion cannot climb and coalescence must.",
+  "subject": "A comparison plate on a plain dark ground. On one side, a single very small sphere of water, faintly glowing, isolated with generous empty space around it. On the other side, one sphere roughly a hundred times its radius, rendered as a real water drop with light refracting through it. Gathered beside and partly behind the large drop is a dense drifting field of the tiny spheres, numerous enough to read as an uncountable swarm, suggesting how many were consumed to build the one large drop.",
+  "scene": "Empty dark air with no landscape, no horizon and no context - a laboratory-like void so nothing competes with the size comparison.",
+  "camera": "Straight-on view at the same distance from both drops, flat and diagrammatic, no perspective foreshortening between them.",
+  "light": "Single soft off-frame source; both drops lit identically so the only difference the eye reads is size. Faint internal refraction in the large drop.",
+  "palette": "Deep void-indigo ground, misty-cyan water with pale highlights, faint teal in the swarm of small droplets.",
+  "style": "Painterly plate with a clean comparative layout; real water rendering with soft refraction, NOT a hard vector schematic and NOT a 3D render.",
+  "detail_level": "High on both drops' surfaces and the refraction in the large one; the swarm soft and unresolved so it reads as quantity rather than individuals.",
+  "composition": "Two clear zones separated by empty dark space, the small drop given deliberately excessive room so its smallness registers, and generous plain background on both outer edges for callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "scale bar",
+    "ruler",
+    "grid",
+    "UI",
+    "watermark",
+    "logos"
+  ],
+  "consistency_notes": "Water is the same misty-cyan used for water-in-air throughout the chapter. No scale bar or measurement chrome of any kind - the comparison is carried by the drops themselves and by the caption.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no scale bar, no ruler, no grid, no diagram chrome, no photographic or 3D-render look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

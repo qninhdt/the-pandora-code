@@ -1,0 +1,33 @@
+id: rayleigh-number
+label:
+  vi: Số Rayleigh
+  en: Rayleigh number
+definition:
+  vi: >-
+    Con số không thứ nguyên định đoạt một lớp chất được nung từ dưới có đảo lộn hay chỉ dẫn nhiệt. Nó
+    đặt lực nổi lên tử số — khối lượng riêng, trọng trường, độ giãn nở nhiệt, độ chênh nhiệt, và bề dày
+    lớp lũy ba — rồi chia cho những gì cản trở dòng chảy: độ nhớt và độ khuếch tán nhiệt. Dưới một
+    ngưỡng cỡ vài trăm thì không có gì chuyển động. Lớp phủ Trái Đất chạy ở khoảng 10⁶–10⁸, tức là vượt
+    ngưỡng rất xa. Hãy để ý bề dày vào theo lũy ba: cùng một loại đá, lớp dày hơn đối lưu dễ hơn nhiều.
+  en: >-
+    The dimensionless number that decides whether a layer heated from below overturns or merely
+    conducts. It puts buoyancy on top — density, gravity, thermal expansion, the temperature drop, and
+    the layer thickness cubed — and divides by what resists flow: viscosity and thermal diffusivity.
+    Below a threshold of order a few hundred, nothing moves. Earth's mantle runs at roughly 10⁶–10⁸,
+    which is far past it. Note the thickness enters cubed: for the same rock, a thicker layer convects
+    much more readily.
+see_also:
+  - mantle-convection
+  - nusselt-number
+  - asthenosphere
+  - stagnant-lid
+category: concept
+tags:
+  - physics
+  - geology
+  - planetary-science
+cover_prompt: >-
+  A painted side view of a tall layer of fluid rock heated along its base, the lower half still and
+  flat while the upper half has broken into tall rolling convection cells with rising warm columns and
+  sinking cool ones, faint amber at the base grading to deep teal-indigo above, painterly physics
+  plate, no text, no labels, no arrows.

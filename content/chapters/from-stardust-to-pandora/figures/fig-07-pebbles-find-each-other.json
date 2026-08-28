@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-pebbles-find-each-other",
+  "chapter_slug": "from-stardust-to-pandora",
+  "role": "diagram",
+  "narrative_purpose": "Makes the hardest step in planet formation visible: pebbles cannot grow one collision at a time, so instead they gather into filaments dense enough to collapse straight into planetesimals.",
+  "subject": "A close view inside a dust disk. Across the middle of the frame, thousands of small pebbles have gathered into one long dense elongated filament, thickest toward its right end. Around the filament, sparse individual pebbles drift in loose trails, clearly thinner in number than the filament. At the filament's right end, a single dark solid body about the size of a fingertip in frame has already formed, distinctly rounder and more opaque than the pebbles feeding into it.",
+  "scene": "The interior of a protoplanetary disk: a faintly luminous layered haze of gas receding into depth, with the filament suspended in it. No star in frame, only a broad directional glow from off-frame left.",
+  "camera": "Close, nearly edge-on to the disk plane, shallow depth of field so the filament is sharp and the surrounding haze softens.",
+  "light": "Broad soft glow from off-frame left rims each pebble; the gathered filament reads brighter simply because it is denser; the formed body is dark and catches only a thin rim.",
+  "palette": "Void-indigo and deep teal-indigo haze, cool cyan rim light on the pebbles, mist-grey brightest at the filament core, one dark stone-grey solid body.",
+  "style": "Painterly naturalist plate, soft-edged, textured brushwork, atmospheric depth.",
+  "detail_level": "High on the filament and the newly formed body; the surrounding drifting pebbles progressively softer with distance.",
+  "composition": "The filament runs from lower left to centre right on a gentle diagonal. The new body sits at its right end. The upper left third is open dark haze for a callout.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "motion lines", "watermark", "logos", "UI", "grid", "stars", "spacecraft"],
+  "consistency_notes": "The contrast that must survive is density: the filament visibly crowded, the surroundings visibly sparse. No drawn arrows indicating drift.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no motion lines, no grid, no diagram chrome, no spacecraft, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/from-stardust-to-pandora/fig-06-collapse-into-a-disk.png"]
+}

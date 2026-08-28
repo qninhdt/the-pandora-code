@@ -1,0 +1,33 @@
+id: mohorovicic-discontinuity
+label:
+  vi: Bất liên tục Mohorovičić (mặt Moho)
+  en: Mohorovičić discontinuity
+definition:
+  vi: >-
+    Ranh giới giữa lớp vỏ và lớp phủ của một hành tinh, nơi tốc độ sóng địa chấn nhảy vọt vì thành
+    phần đá đổi khác. Andrija Mohorovičić tìm ra nó năm 1909 khi nhận thấy một cơn địa chấn ở thung
+    lũng Kupa gửi tới hai bộ sóng chứ không phải một: bộ chậm hơn đi trực tiếp trong lớp vỏ, bộ nhanh
+    hơn đã lặn xuống một lớp sâu hơn và cứng hơn rồi quay lên. Trên Trái Đất mặt Moho nằm ở chừng 7 km
+    dưới đáy đại dương nhưng tới 35–70 km dưới các lục địa — và chính sự chênh lệch ấy là bằng chứng
+    rằng hành tinh có hai loại vỏ khác nhau.
+  en: >-
+    The boundary between a planet's crust and its mantle, where seismic speeds jump because the rock
+    changes character. Andrija Mohorovičić found it in 1909 by noticing that a quake in the Kupa Valley
+    sent not one set of arrivals but two: a slower set travelling directly through the crust, and a
+    faster set that had dived into a deeper, stiffer layer and come back up. On Earth the Moho lies
+    about 7 km below the ocean floor but 35–70 km beneath continents — and that very difference is the
+    evidence that the planet has two distinct kinds of crust.
+see_also:
+  - p-wave
+  - lithosphere
+  - hypsometry
+  - continental-crust
+category: planet
+tags:
+  - geology
+  - planetary-science
+cover_prompt: >-
+  A painted geological cross-section showing a thin pale crustal layer above a distinctly darker,
+  denser layer with a sharp horizontal interface between them, the crust thin beneath a sea on the left
+  and thickening dramatically beneath a mountain on the right, two faint ray paths bending at the
+  interface, cool teal and indigo tones, painterly plate, no text, no labels.

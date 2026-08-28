@@ -1,0 +1,28 @@
+id: evapotranspiration
+label:
+  vi: Bốc thoát hơi nước
+  en: Evapotranspiration
+definition:
+  vi: >-
+    Tổng lượng nước chuyển từ bề mặt đất vào khí quyển thông qua sự bốc hơi trực tiếp từ đất, đá,
+    mặt nước và sự thoát hơi nước của thực vật qua khí khổng lá. Trong rừng mưa nhiệt đới, thoát hơi
+    nước qua tán lá chiếm phần lớn lượng ẩm bơm vào khí quyển, biến rừng cây thành cỗ máy bơm độ ẩm chủ
+    lực cho các chu trình giáng thủy tiếp theo.
+  en: >-
+    The combined total water transferred from the land surface to the atmosphere through direct
+    evaporation from soil, rock, wet canopy surfaces, and plant transpiration via leaf stomata. In
+    tropical rainforests, vegetative transpiration constitutes the dominant pathway lifting water into
+    the sky, turning the canopy into a massive landscape-scale moisture pump.
+see_also:
+  - transpiration
+  - vapour-pressure-deficit
+  - precipitation-recycling
+category: concept
+tags:
+  - ecology
+  - atmosphere
+  - earth-systems
+cover_prompt: >-
+  A painted close study of forest canopy leaves releasing micro-droplet steam plumes into a humid morning
+  atmosphere, sunbeams catching rising vapour filaments, deep forest green and glowing gold atmosphere,
+  painterly scientific style, no text, no labels.

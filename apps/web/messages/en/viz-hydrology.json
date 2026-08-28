@@ -1,0 +1,131 @@
+{
+  "viz": {
+    "moistureRecyclingCascade": {
+      "title": "The rain a forest makes for itself",
+      "subtitle": "Follow one column of air inland and watch how much of the rain has already fallen once.",
+      "aria": "A cascade of rainfall bars running inland from the coast: {rho} percent of the total rain is recycled water, and {interior} millimetres reach the deepest interior segment",
+      "worldLabel": "Which world's air is making the crossing",
+      "earth": "Earth",
+      "pandora": "Pandora",
+      "ocean": "Sea",
+      "inland": "inland →",
+      "clearingMark": "cleared from here",
+      "noClearing": "none",
+      "kmValue": "{km} km",
+      "mmValue": "{mm} mm",
+      "controls": {
+        "fetch": "Forest to cross",
+        "clearing": "Clear the forest beyond"
+      },
+      "readout": {
+        "recycled": "Rain that fell before",
+        "recycledNote": "Share of all rainfall on this fetch",
+        "interior": "Rain in the deep interior",
+        "interiorNote": "At {km} km from the sea",
+        "cost": "Cost of the clearing",
+        "costNote": "Rain lost in the deep interior",
+        "costNone": "Nothing cut — nothing lost"
+      },
+      "verdict": {
+        "intact": "An unbroken forest hands its water forward, and the interior stays wet on rain it helped make.",
+        "thinning": "The cleared ground returns far less water to the sky, and every stretch downwind of it gets a thinner share.",
+        "broken": "The chain is cut. The deep interior is not dry because it was cleared — it is dry because its supplier was."
+      },
+      "footnote": "Each bar is the rain wrung out of the column over 500 km of fetch. The bright upper part is water a leaf sent back up; the dim lower part is vapour still on its first pass from the sea."
+    },
+    "raindropGrowthLadder": {
+      "title": "Two barriers between vapour and rain",
+      "subtitle": "A drop must first be allowed to start, and then find a second way to grow.",
+      "worldLabel": "Whose gravity and air the drop is falling through",
+      "earth": "Earth",
+      "pandora": "Pandora",
+      "panel": {
+        "kohler": "Can it start? — the humidity a speck needs before a droplet runs away",
+        "growth": "Can it fall? — how fast the drop sinks as it grows"
+      },
+      "aria": {
+        "kohler": "An activation curve peaking at {sc} percent supersaturation, at a droplet radius of {rc} micrometres",
+        "growth": "A growth track showing diffusion stalling after {stall} minutes and coalescence carrying the drop to a fall speed of {fall} metres per second"
+      },
+      "axis": {
+        "radius": "droplet radius (µm)",
+        "supersaturation": "humidity above saturation (%)",
+        "fall": "fall speed (m/s)"
+      },
+      "nucleus": {
+        "small": "fine haze speck",
+        "medium": "ordinary aerosol",
+        "large": "coarse sea salt"
+      },
+      "controls": {
+        "nucleus": "Speck it starts on",
+        "ambient": "Humidity above saturation"
+      },
+      "ambientMark": "air at {pct}%",
+      "peakMark": "runs away past {pct}%",
+      "stallMark": "diffusion quits here",
+      "cmPerSecond": "{v} cm/s",
+      "mPerSecond": "{v} m/s",
+      "hint": {
+        "haze": "Below the peak the droplet is stable haze. It swells and shrinks with the humidity and never becomes rain.",
+        "activated": "Past the peak no equilibrium is left. The droplet grows without limit — but growing is not yet falling."
+      },
+      "readout": {
+        "activation": "Humidity needed",
+        "activationYes": "Reached — the droplet is away",
+        "activationNo": "Not reached — still haze",
+        "stall": "Speed at the stall",
+        "stallNote": "After {min} minutes of growing, still cloud",
+        "rain": "Speed as rain",
+        "rainNote": "{jump}× the volume of a cloud droplet"
+      },
+      "footnote": "Both panels share one ruler along the bottom, so a droplet's place on the activation curve is its place on the growth track. Pure vapour would need roughly five times saturation to nucleate unaided — which is why every raindrop on any world begins on a speck of something else."
+    },
+    "perchedWaterBudget": {
+      "title": "Paying for a waterfall with fog",
+      "subtitle": "A floating mountain has no watershed. Every litre leaving its rim was caught from the air.",
+      "aria": "Two columns compared on a logarithmic scale: {capture} cubic metres per second captured from fog against {demand} leaving the massif",
+      "kmValue": "{km} km",
+      "lwcValue": "{g} g/m³",
+      "msValue": "{v} m/s",
+      "q3sValue": "{q} m³/s",
+      "mmDayValue": "{mm} mm/day",
+      "controls": {
+        "diameter": "Plateau across",
+        "lwc": "Water the fog carries",
+        "wind": "Wind through the fog",
+        "efficiency": "Fog the rock catches",
+        "discharge": "Cataract you must feed",
+        "venturi": "Let the gaps between massifs funnel the wind (speculative)"
+      },
+      "bar": {
+        "capture": "Caught",
+        "captureNote": "face + plateau",
+        "demand": "Spent",
+        "demandNote": "cataract + forest"
+      },
+      "gapMark": "{factor}× short",
+      "axis": { "flow": "flow (m³/s, log scale)" },
+      "verdict": {
+        "solvent": "The books close. At this discharge, fog interception alone can keep the plateau supplied.",
+        "marginal": "Nearly. Fog is the right order of magnitude here, and a modest store inside the rock would cover the rest.",
+        "shortfall": "Fog is real but not enough. A cataract this size needs several times the water the air is delivering.",
+        "impossible": "Not close. At the discharges the films show, fog interception is short by more than an order of magnitude."
+      },
+      "verdictShort": {
+        "solvent": "Supplied",
+        "marginal": "Nearly supplied",
+        "shortfall": "Under-supplied",
+        "impossible": "Nowhere near"
+      },
+      "readout": {
+        "coverage": "Share of demand met",
+        "sustainable": "Cataract fog could feed",
+        "sustainableNote": "After the plateau forest takes its share",
+        "asRate": "Capture as a rainfall rate",
+        "asRateNote": "Earth's cloud forests manage {lo}–{hi} mm/day"
+      },
+      "footnote": "Canon shows the waterfalls and never says how big they are, so the discharge is yours to set. The dark line across each column marks its split: on the left, plateau capture beneath face impaction; on the right, the forest's own thirst beneath the visible fall."
+    }
+  }
+}

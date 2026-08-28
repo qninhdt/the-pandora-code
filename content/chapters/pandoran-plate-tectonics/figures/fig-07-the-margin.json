@@ -1,0 +1,36 @@
+{
+  "id": "fig-07-the-margin",
+  "chapter_slug": "pandoran-plate-tectonics",
+  "role": "inline",
+  "narrative_purpose": "Make the continental margin visible as the ambiguous evidence it is: a sharp step from shallow shelf to deep basin, which on Earth means two kinds of crust meeting but on Pandora is unmeasured.",
+  "subject": "A high aerial view along a coastline. In the near half of the frame, a broad shallow platform of turquoise water, its floor visible through it, fringed at its seaward edge by a long curving line of reefs breaking the surface into pale foam. Beyond that reef line the water changes abruptly and completely: from turquoise to almost black, the transition sharp enough to read as an edge rather than a gradient, and the deep water fills the far half of the frame out to a hazy horizon. Landward, steep forested highlands rise directly from the shallow water, their canopy dark with scattered faint teal glowing patches, cut by two river mouths. Faint cyan bioluminescence traces the shallow platform floor and the reef line.",
+  "scene": "A Pandoran continental margin at dusk seen from high altitude, where shelf drops abruptly to deep ocean.",
+  "camera": "High oblique aerial view roughly along the coast, so the shelf, the reef line and the deep water read as three parallel bands receding.",
+  "light": "Low cool dusk light from above; the shallow platform luminous with transmitted light and faint bioluminescence; the deep water almost entirely unlit; the forested highlands in deep indigo shadow with scattered teal glow.",
+  "palette": "Void-indigo deep ocean, cyan and living-teal in the shallows and reef, deep teal-indigo forested slopes, cool grey-mist haze at the horizon.",
+  "style": "Painterly speculative-planetary naturalist plate, layered water depth rendered in transmitted colour rather than reflection, atmospheric haze at distance.",
+  "detail_level": "Reef structure and shallow-floor texture crisp in the near ground; the deep water flat and featureless by contrast; the far coastline dissolving into haze.",
+  "composition": "Three strong receding bands — glowing shallow shelf, foaming reef line, black deep water — with the forested highlands as a dark mass along the left edge; the sharp shelf-to-deep transition placed across the middle of the frame.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "diagram lines",
+    "boats",
+    "spacecraft",
+    "buildings",
+    "humans",
+    "creatures"
+  ],
+  "consistency_notes": "The shelf-to-deep transition must be abrupt, not a soft gradient — that sharpness is what the caption interrogates. Same cool Pandoran palette as the cover.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no diagram lines, no arrows, no boats, no photographic or 3D-render look, no lens flares, no modern machines, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

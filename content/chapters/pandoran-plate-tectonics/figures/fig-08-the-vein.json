@@ -1,0 +1,37 @@
+{
+  "id": "fig-08-the-vein",
+  "chapter_slug": "pandoran-plate-tectonics",
+  "role": "inline",
+  "narrative_purpose": "Show an ore body as the record of long-lived fluid flow that it is, so the mining question lands as a geological one about circulating water and heat.",
+  "subject": "A close underground view of a wall of fractured dark rock. Threading through it is a dense branching network of pale mineral veins, ranging from hairline threads to bands a hand's width across, following the fracture pattern and visibly thickening and pooling where two or more veins intersect. Within the widest vein sections, small angular metallic crystals catch the light with a cold sheen. The host rock around each vein is discoloured in a narrow bleached halo, paler than the rock further away. At the very bottom of the frame the rock takes on a faint dull ember warmth, as though heat is rising from below out of view.",
+  "scene": "A cut face of mineralized rock deep underground on Pandora, lit only by the faint glow of the mineral itself and heat from below.",
+  "camera": "Close, nearly flat-on to the rock face, filling the frame so the vein network is the entire subject.",
+  "light": "Faint cool cyan self-glow from the metallic crystals in the veins; dull ember-amber gradient rising from the very bottom edge; the host rock otherwise in deep indigo darkness.",
+  "palette": "Void-indigo and obsidian host rock, pale grey-white vein mineral, cold cyan glints on the metallic crystals, restrained dull ember-amber confined to the lowest strip of the frame.",
+  "style": "Painterly petrological specimen plate, heavy rock and crystal texture, close observed detail, naturalist rather than dramatic.",
+  "detail_level": "High detail throughout — individual vein branches, crystal faces, and the bleached halos in the host rock all crisp.",
+  "composition": "Vein network branching diagonally across the frame from lower left to upper right, thickening toward the centre where several intersect; areas of plain dark host rock left uncluttered on the right and upper left.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "diagram lines",
+    "mining equipment",
+    "tunnels",
+    "lamps",
+    "spacecraft",
+    "buildings",
+    "humans"
+  ],
+  "consistency_notes": "No mining machinery or human presence — this is the rock itself. Cool palette dominant; the ember warmth is a single narrow gradient at the bottom edge only, standing for heat from depth.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no diagram lines, no arrows, no mining machinery, no tunnels, no lamps, no photographic or 3D-render look, no glossy CGI sheen, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

@@ -1,0 +1,32 @@
+id: continental-crust
+label:
+  vi: Vỏ lục địa
+  en: Continental crust
+definition:
+  vi: >-
+    Loại vỏ nhẹ, giàu silic, thành phần từ andesite tới granite, tạo nên các lục địa và nổi cao trên đáy
+    đại dương đặc hơn. Điều thú vị nằm ở nguồn gốc: không thể nấu chảy đá lớp phủ khô mà ra granite với
+    khối lượng đáng kể — phải nấu chảy lại đá basalt có nước tham gia, và bối cảnh làm được việc đó ở quy
+    mô hành tinh là vành núi lửa trên một mảng đang hút chìm. Nói cách khác, một lục địa không chỉ là một
+    dạng địa hình. Nó là một phát biểu về việc hành tinh ấy có nước, và có lớp vỏ biết dịch chuyển.
+  en: >-
+    The light, silica-rich crust — andesitic to granitic — that makes up continents and floats high above
+    the denser ocean floor. The interesting part is where it comes from: you cannot make granite in any
+    volume by melting dry mantle rock. You have to remelt basalt with water involved, and the setting that
+    does that at planetary scale is a volcanic arc above a subducting plate. Which means a continent is not
+    merely a kind of terrain. It is a statement that the planet has water, and a crust that moves.
+see_also:
+  - subduction
+  - hypsometry
+  - isostasy
+  - plate-tectonics
+category: planet
+tags:
+  - geology
+  - planetary-science
+  - mineral
+cover_prompt: >-
+  A painted specimen study of pale coarse-grained speckled granite in the foreground, its individual pink
+  and white and glassy crystals distinct, set against a much darker fine-grained basaltic slab behind it,
+  the pale rock lit in cool teal and the dark rock receding into indigo shadow, painterly petrological
+  plate, no text, no labels.

@@ -21,6 +21,8 @@ import enEpistemics from "@/messages/en/viz-epistemics.json";
 import enEvolution from "@/messages/en/viz-evolution.json";
 import enForestfloor from "@/messages/en/viz-forestfloor.json";
 import enGeochronology from "@/messages/en/viz-geochronology.json";
+import enGeodynamics from "@/messages/en/viz-geodynamics.json";
+import enHydrology from "@/messages/en/viz-hydrology.json";
 import enMarine from "@/messages/en/viz-marine.json";
 import enMind from "@/messages/en/viz-mind.json";
 import enMycorrhiza from "@/messages/en/viz-mycorrhiza.json";
@@ -52,6 +54,8 @@ import viEpistemics from "@/messages/vi/viz-epistemics.json";
 import viEvolution from "@/messages/vi/viz-evolution.json";
 import viForestfloor from "@/messages/vi/viz-forestfloor.json";
 import viGeochronology from "@/messages/vi/viz-geochronology.json";
+import viGeodynamics from "@/messages/vi/viz-geodynamics.json";
+import viHydrology from "@/messages/vi/viz-hydrology.json";
 import viMarine from "@/messages/vi/viz-marine.json";
 import viMind from "@/messages/vi/viz-mind.json";
 import viMycorrhiza from "@/messages/vi/viz-mycorrhiza.json";
@@ -116,6 +120,8 @@ const EN_PARTS = [
   enChronostrat,
   enEpistemics,
   enForestfloor,
+  enGeodynamics,
+  enHydrology,
   enMarine,
   enMycorrhiza,
 ] as const;
@@ -149,6 +155,8 @@ const VI_PARTS = [
   viChronostrat,
   viEpistemics,
   viForestfloor,
+  viGeodynamics,
+  viHydrology,
   viMarine,
   viMycorrhiza,
 ] as const;

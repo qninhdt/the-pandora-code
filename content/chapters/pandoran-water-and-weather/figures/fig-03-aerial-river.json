@@ -1,0 +1,30 @@
+{
+  "id": "fig-03-aerial-river",
+  "chapter_slug": "pandoran-water-and-weather",
+  "role": "diagram",
+  "narrative_purpose": "Shows recycling as transport: one broad band of vapour crossing a continent, raining in several places along its path and being handed back up by the forest between them, so the reader sees rain arriving inland as re-used water rather than fresh ocean vapour.",
+  "subject": "A very wide aerial view along a continent, ocean at one edge and unbroken forest running away to the far distance. A broad luminous band of vapour flows inland above the canopy, following the land. At three or four places along its length, sheets of rain descend from the band onto the forest; between those places, fainter columns of vapour rise back up from the canopy into the band. The band is thickest near the coast and thinner but still continuous at the far inland end.",
+  "scene": "High above a forested continent at midday, the whole moisture corridor visible at once from sea to deep interior.",
+  "camera": "Very high oblique aerial view looking along the direction of flow, so the band recedes into the distance and the repeated rain-and-rise pattern reads as a sequence.",
+  "light": "Even high light; the vapour band luminous against the darker canopy, the rain sheets slightly darker and cooler than the band above them.",
+  "palette": "Living-teal canopy, misty-cyan vapour band and rising columns, slightly deeper teal-grey rain sheets, deep ocean-teal at the coast, void-indigo sky.",
+  "style": "Painterly plate reading as a diagram by layout; soft glowing volumes and brushed vapour, NOT a hard vector schematic and NOT a 3D render.",
+  "detail_level": "Moderate: the alternation of descending rain and rising vapour clearly distinguishable along the band; canopy and distance dissolving into haze.",
+  "composition": "Strong horizontal sweep from ocean at one edge to hazy interior at the other, with the repeating rain-then-rise motif spaced along it, and clear sky above the band for callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "grid",
+    "UI",
+    "watermark",
+    "logos"
+  ],
+  "consistency_notes": "Vapour and cloud in the same misty-cyan as the canopy-exhalation figure, so the reader recognises the water-in-air colour; canopy the same living teal. Flow is conveyed by shape and repetition, never by arrows.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no grid, no diagram chrome, no photographic or 3D-render look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

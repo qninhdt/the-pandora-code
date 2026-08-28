@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-the-first-stars",
+  "chapter_slug": "from-stardust-to-pandora",
+  "role": "inline",
+  "narrative_purpose": "Shows the first generation of stars igniting inside an unenriched cloud, so the reader can picture why the universe stopped being a hydrogen desert within a few million years.",
+  "subject": "A vast dark cloud of gas filling most of the frame, with five or six intensely bright blue-white points of light ignited inside it at different depths. Each point carves a small clear cavity in the surrounding gas and lights the cloud walls around it from within. No planets, no disks - only the newborn stars and the gas.",
+  "scene": "Deep space at the earliest epoch: the cloud is smooth, almost featureless, with long faint filaments and no dust lanes or knots of debris. The lit cavities show layered translucent veils of gas receding into darkness.",
+  "camera": "Wide establishing view from outside the cloud, looking into it, with strong sense of depth from near gas edges to far interior.",
+  "light": "The newborn stars are the only sources - hard blue-white cores, their glow attenuating quickly into the gas so most of the frame remains very dark; volumetric haze catches the light in shafts.",
+  "palette": "Void-indigo and deep teal-indigo gas dominating, cool cyan and near-white star cores, one small scarce amber knot at a distance, mist-grey haze in the lit shafts.",
+  "style": "Painterly atmospheric astronomical plate, layered haze, soft dissolving edges.",
+  "detail_level": "Low to moderate: the individual stars sharp, the gas broad and soft with painterly texture, deliberately empty of small detail.",
+  "composition": "The brightest star sits lower left; the others scatter toward the upper right in a loose diagonal. The upper left quadrant is nearly empty dark gas, open for a callout.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "watermark", "logos", "UI", "planets", "disks", "spacecraft", "grid"],
+  "consistency_notes": "This is the pre-enrichment universe, so the cloud must read as clean and smooth - no rocky debris, no dust knots, no protoplanetary disks anywhere in frame.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no grid, no planets, no protoplanetary disks, no spacecraft, no photographic or 3D-render look, no lens flares, no neon glow",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

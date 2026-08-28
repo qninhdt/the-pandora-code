@@ -1,0 +1,26 @@
+id: circumplanetary-disk
+label:
+  vi: Đĩa quanh hành tinh
+  en: Circumplanetary disk
+definition:
+  vi: >-
+    Bản thu nhỏ của đĩa tiền hành tinh, quay quanh một hành tinh khí đang hút khí thay vì quanh
+    ngôi sao. Các mặt trăng ngưng tụ từ đó, và đó là lý do các hệ vệ tinh đều trật tự, đồng
+    phẳng, cùng chiều. Nó cũng áp một mức trần: tổng khối lượng các mặt trăng một chiếc đĩa như
+    vậy nuôi được chỉ bằng chừng một phần mười nghìn hành tinh chủ.
+  en: >-
+    A miniature of the protoplanetary disk, orbiting a gas-accreting giant planet rather than
+    the star. Moons condense out of it, which is why satellite systems come out orderly,
+    coplanar and prograde. It also imposes a ceiling: the combined mass of the moons such a disk
+    grows comes to only about a ten-thousandth of the host planet.
+see_also:
+  - protoplanetary-disk
+  - pebble-accretion
+  - exomoon
+  - planetary-migration
+category: planet
+tags:
+- planetary-science
+- orbital-mechanics
+- astronomy
+cover_prompt: A painted view of a young banded gas giant encircled by a thin bright disk of gas and dust in which several small moons are taking shape at different distances, cyan disk against deep indigo space, painterly astronomical plate, no text, no labels, no numbers.

@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-the-seeding-shell",
+  "chapter_slug": "from-stardust-to-pandora",
+  "role": "diagram",
+  "narrative_purpose": "Shows enrichment and star formation as one event: the expanding shell both scatters new elements into the surrounding gas and compresses that gas into collapsing again.",
+  "subject": "An expanding roughly spherical shell of luminous debris on the left, its leading edge ragged and broken into fingers, ploughing rightward into a large dark dense cloud. Where the shell meets the cloud, the cloud edge is visibly compressed into a bright rim with two or three small dense knots already forming inside it. Behind the shell's trailing edge, thin scattered flecks of matter drift in the emptied space.",
+  "camera": "Wide side-on view so the collision front reads clearly as a boundary running vertically down the middle of the frame.",
+  "scene": "Interstellar space. The left half is thin, emptied, faintly lit; the right half is thick dark cloud with layered veils of haze receding into it.",
+  "light": "The shell is the light source, throwing cool cyan and teal light onto the compressed cloud rim; the knots inside the rim glow faintly warm from within; the cloud interior on the far right stays almost entirely dark.",
+  "palette": "Void-indigo cloud, cool cyan and teal shell light, mist-grey compressed rim, two or three small scarce amber knots, faint metallic flecks in the emptied space.",
+  "style": "Painterly atmospheric astronomical plate, volumetric haze, soft dissolving edges.",
+  "detail_level": "Moderate on the collision front where the compression and the forming knots must be legible; low and hazy elsewhere.",
+  "composition": "Shell occupying the left third, collision front running vertically just left of centre, dark cloud filling the right two-thirds with open dark space in the lower right for a callout.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "motion lines", "watermark", "logos", "UI", "grid", "planets", "spacecraft"],
+  "consistency_notes": "No arrows or motion streaks - the direction of travel must be conveyed by the ragged leading edge and the compressed rim alone.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no motion lines, no grid, no diagram chrome, no planets, no spacecraft, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/from-stardust-to-pandora/fig-03-the-first-stars.png"]
+}

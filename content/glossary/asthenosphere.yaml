@@ -1,0 +1,29 @@
+id: asthenosphere
+label:
+  vi: Quyển mềm
+  en: Asthenosphere
+definition:
+  vi: >-
+    Lớp đá ngay bên dưới thạch quyển, đủ nóng để bò như một chất rắn dẻo trên thang thời gian địa
+    chất. Cần nói rõ một điều thường bị hiểu sai: quyển mềm không phải chất lỏng và không phải magma —
+    phần nóng chảy trong nó thường dưới một phần trăm. Nó là đá đặc, chỉ là đá chảy được, giống một
+    khối nhựa đường nếu ta đủ kiên nhẫn quan sát. Các mảng không nổi trên biển magma; chúng nằm trên
+    thứ đá bò chậm này.
+  en: >-
+    The layer of rock immediately beneath the lithosphere, hot enough to creep like a ductile solid on
+    geological timescales. One thing is worth stating plainly because it is so often got wrong: the
+    asthenosphere is not liquid and not magma — its melt fraction is typically under one percent. It
+    is solid rock that happens to flow, like a block of asphalt if you are patient enough to watch.
+    Plates do not float on a sea of magma; they rest on this slowly creeping rock.
+see_also:
+  - lithosphere
+  - mantle-convection
+  - plate-tectonics
+category: planet
+tags:
+  - geology
+  - planetary-science
+cover_prompt: >-
+  A painted close view of hot solid rock deforming, its mineral grains stretched and sheared into long
+  smooth flow lines like slow-poured glass, no liquid pools anywhere, dull ember-amber warmth showing
+  through deep teal-indigo shadow, painterly petrological plate, no text, no labels.

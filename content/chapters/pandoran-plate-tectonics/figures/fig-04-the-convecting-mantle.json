@@ -1,0 +1,36 @@
+{
+  "id": "fig-04-the-convecting-mantle",
+  "chapter_slug": "pandoran-plate-tectonics",
+  "role": "diagram",
+  "narrative_purpose": "Correct the folk picture: draw the rigid surface plate as the cold top of the circulating mantle rather than a raft upon it, and show one section of it peeling away and sinking under its own weight.",
+  "subject": "A wide wedge cut from a planet's interior, curving gently so the top edge reads as a section of a spherical surface. Occupying the wedge are four large slow rotating cells of rock, each drawn as broad nested looping bands of flowing stone texture: warm dull amber material rising along the middle of each cell and cooler dark blue-grey material descending along the cell edges. The very top of the wedge is a continuous cold rigid band of darker, harder-textured rock, visibly the same material as the cool descending flow and continuous with it — not a separate slab sitting on top. At one point right of centre, that cold top band bends steeply downward and continues as a long tapering slab descending deep into the wedge, becoming progressively darker and denser-looking toward its tip, with the horizontal band behind it visibly stretched thin as it is drawn along.",
+  "scene": "A schematic cutaway of a convecting planetary mantle with its cold upper boundary layer bending down into the interior, as a painted illustration plate.",
+  "camera": "Flat-on cross-sectional view, the wedge filling the frame, plain dark field above the surface line.",
+  "light": "Self-luminous: dull ember-amber glow within the rising columns, cool blue-grey in the sinking ones, the rigid top band and the descending slab noticeably cold and unlit.",
+  "palette": "Void-indigo background, deep teal-indigo rock, restrained dull ember-amber only in the rising limbs, cold blue-grey in the cold band and slab.",
+  "style": "Painterly geological cross-section plate, visible brushwork in the flowing rock texture, soft boundaries between rising and sinking limbs, hand-illustrated rather than vector.",
+  "detail_level": "Flow texture clearly readable as slow circulation; the descending slab's thickening and darkening toward its tip distinct; the continuity between the cold top band and the sinking limb unambiguous.",
+  "composition": "Convection cells filling the lower two-thirds; the cold rigid band as a firm horizontal line across the top; the descending slab as a strong diagonal breaking that line right of centre.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrowheads",
+    "leader lines",
+    "molten lava pools",
+    "open magma sea",
+    "volcanoes",
+    "buildings",
+    "humans"
+  ],
+  "consistency_notes": "Crucially, the mantle must NOT read as liquid or as an open magma ocean — it is solid rock flowing slowly, so use stretched grain and flow-line texture rather than fluid surfaces. The cold top band must clearly be part of the circulation, not a raft resting on it.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrowheads, no leader lines, no liquid magma ocean, no open lava surface, no vector or flat infographic look, no photographic or 3D-render look, no glossy sheen",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

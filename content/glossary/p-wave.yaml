@@ -1,0 +1,32 @@
+id: p-wave
+label:
+  vi: Sóng dọc (sóng P)
+  en: P wave
+definition:
+  vi: >-
+    Sóng địa chấn nhanh nhất, nên cũng là sóng tới trạm thu trước tiên — chữ P vốn là "primary", sóng
+    thứ nhất. Nó truyền bằng cách nén rồi giãn vật chất dọc theo hướng đi, đúng kiểu sóng âm, nên nó
+    chỉ cần vật chất có tính chịu nén. Nhờ vậy sóng dọc xuyên được cả đá rắn, đá nóng chảy, nước và
+    không khí. Tốc độ của nó phụ thuộc cả mô đun khối và mô đun trượt chia cho khối lượng riêng, nên
+    mỗi lần vượt một ranh giới bên trong hành tinh nó lại bị bẻ cong đi một chút.
+  en: >-
+    The fastest seismic wave, and therefore the first to reach a station — the P stands for primary.
+    It travels by compressing and rarefying material along its direction of travel, exactly as sound
+    does, so all it needs is something that resists being squeezed. That lets a P wave cross solid
+    rock, molten rock, water and air alike. Its speed depends on both the bulk and shear moduli
+    divided by density, so every internal boundary it crosses bends it a little.
+see_also:
+  - s-wave
+  - shadow-zone
+  - mohorovicic-discontinuity
+  - seismic-tomography
+category: concept
+tags:
+  - geology
+  - physics
+  - planetary-science
+cover_prompt: >-
+  A painted diagram of a wave travelling left to right through a column of rock, shown as alternating
+  bands of tightly compressed and widely spaced material along the direction of travel, the
+  compression fronts picked out in cyan glow against deep indigo stone, painterly physics plate, no
+  text, no labels, no arrows.

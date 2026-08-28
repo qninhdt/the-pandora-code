@@ -1,0 +1,18 @@
+id: metallicity
+label:
+  vi: Độ kim loại
+  en: Metallicity
+definition:
+  vi: Trong thiên văn, "kim loại" nghĩa là mọi nguyên tố nặng hơn heli - tức là gần như toàn bộ vật liệu làm nên một hành tinh đá. Độ kim loại của một ngôi sao đo lượng vật liệu ấy so với Mặt Trời, và nó tăng dần qua từng thế hệ sao. Alpha Centauri A và B đo được cao hơn Mặt Trời chừng 1,6 lần, nghĩa là hệ của Pandora khởi đầu với ngân sách xây dựng dồi dào hơn hệ của chúng ta.
+  en: In astronomy, "metals" means every element heavier than helium - which is to say almost everything a rocky planet is made of. A star's metallicity measures how much of that material it has relative to the Sun, and it rises with each stellar generation. Alpha Centauri A and B measure about 1.6 times solar, meaning Pandora's system began with a more generous construction budget than ours.
+see_also:
+  - stellar-nucleosynthesis
+  - alpha-centauri
+  - protoplanetary-disk
+  - interstellar-medium
+category: concept
+tags:
+- astronomy
+- chemistry
+- planetary-science
+cover_prompt: A painted comparison of two star-forming gas clouds side by side, the left one thin and pale with sparse glinting dust, the right one visibly richer with dense bright mineral flecks suspended throughout, cyan and teal with warm amber flecks, painterly astronomical plate, no text, no labels, no numbers.

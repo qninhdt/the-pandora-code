@@ -1,0 +1,28 @@
+id: collision-coalescence
+label:
+  vi: Va chạm - hợp nhất
+  en: Collision-coalescence
+definition:
+  vi: >-
+    Cơ chế vi vật lý chủ đạo tạo mưa trong các đám mây nhiệt đới ấm (mây không đóng băng), nơi các giọt
+    nước lớn hơn rơi nhanh hơn, va chạm và nuốt chửng các giọt mây nhỏ hơn trên đường rơi. Quá trình tự
+    gia tốc này vượt qua điểm nghẽn khuếch tán hơi nước, gom khoảng một triệu giọt mây kích thước micromet
+    thành một hạt mưa kích thước milimet.
+  en: >-
+    The primary microphysical mechanism producing rain in warm, non-freezing clouds, whereby larger droplets
+    with higher terminal velocities fall through a cloud, colliding with and sweeping up smaller droplets
+    in their path. This self-reinforcing process overcomes the diffusion bottleneck, aggregating roughly
+    one million micrometre-scale cloud droplets into a single millimetre-scale raindrop.
+see_also:
+  - cloud-condensation-nuclei
+  - koehler-theory
+  - terminal-velocity
+category: concept
+tags:
+  - atmosphere
+  - physics
+  - earth-systems
+cover_prompt: >-
+  A painted study of a descending water droplet sweeping through a suspension of micro-droplets, growing
+  progressively larger as it absorbs them, luminous fluid dynamics on dark navy background, painterly
+  scientific plate, no text, no labels.

@@ -1,5 +1,75 @@
 {
   "viz": {
+    "condensationSequenceDial": {
+      "title": "Chiếc đĩa tự phân loại vật liệu của nó",
+      "subtitle": "Dịch điểm lấy mẫu ra xa dần trong một chiếc đĩa non và xem các vật liệu lần lượt ngưng tụ",
+      "aria": "Đồ thị nhiệt độ theo bán kính của một đĩa tiền hành tinh với các ngưỡng ngưng tụ được đánh dấu",
+      "hintInside": "Chỉ có {count} lớp vật liệu đã ngưng tụ ở đây. Một thiên thể lắp ghép ở bán kính này được dựng từ đá và kim loại — khô, đặc, và thiếu lượng chất rắn mà lõi một hành tinh khí cần.",
+      "hintOutside": "Có {count} lớp vật liệu khả dụng ở đây. Vượt qua vạch nước, ngân sách chất rắn nhảy lên vài lần và mọi thứ dựng ở ngoài này đều có phần băng — đó là lý do lõi các hành tinh khí hình thành bên ngoài vạch này chứ không phải bên trong.",
+      "material": {
+        "refractoryOxides": "oxit khó nóng chảy",
+        "silicatesMetal": "silicat + sắt",
+        "sulfidesAlkalis": "sunfua, kim loại kiềm",
+        "waterIce": "băng nước",
+        "volatileIces": "băng dễ bay hơi"
+      },
+      "snowLine": "vạch nước",
+      "radiusAxis": "khoảng cách tới ngôi sao (AU)",
+      "temperatureAxis": "nhiệt độ (K)",
+      "radiusLabel": "Nơi thiên thể lắp ghép",
+      "temperatureLabel": "Nhiệt độ tại chỗ",
+      "solidsLabel": "Chất rắn khả dụng",
+      "solidsRocky": "chỉ đá và kim loại",
+      "solidsIcy": "có cả băng",
+      "iceLabel": "Tỉ lệ băng",
+      "densityLabel": "Mật độ khối",
+      "densityUnit": "gam mỗi cm³, chưa nén"
+    },
+    "satelliteMassBudget": {
+      "title": "Một hành tinh khí nuôi được mặt trăng lớn tới đâu",
+      "subtitle": "Mọi hệ vệ tinh trong Hệ Mặt Trời đều rơi quanh một phần mười nghìn khối lượng hành tinh chủ",
+      "aria": "Đồ thị log-log của tỉ số khối lượng vệ tinh trên hành tinh chủ theo khối lượng chủ, với ngưỡng quan sát được đánh dấu",
+      "routeLabel": "Con đường hình thành",
+      "ceiling": "mức một chiếc đĩa cấp được",
+      "subject": "Pandora",
+      "hostAxis": "khối lượng hành tinh chủ (lần Sao Mộc)",
+      "ratioAxis": "mặt trăng ÷ chủ",
+      "system": {
+        "jupiter": "Sao Mộc",
+        "saturn": "Sao Thổ",
+        "uranus": "Sao Thiên Vương"
+      },
+      "verdictLabel": "Kết luận",
+      "verdict": {
+        "withinCeiling": "Một chiếc đĩa làm được",
+        "strained": "Đang căng",
+        "impossible": "Không từ đĩa"
+      },
+      "overshootLabel": "Vượt ngưỡng",
+      "overshootNote": "lần mức một chiếc đĩa nuôi nổi",
+      "permittedLabel": "Mặt trăng lớn nhất được phép",
+      "permittedNote": "lần khối lượng Trái Đất, từ chủ này",
+      "requiredHost": "Để mặt trăng này là sản phẩm bình thường của một chiếc đĩa, hành tinh chủ của nó phải nặng cỡ {mass} lần Sao Mộc — vượt qua mốc chừng mười ba lần, nơi một hành tinh thôi là hành tinh và bắt đầu đốt deuteri.",
+      "hostLabel": "Khối lượng hành tinh chủ",
+      "moonLabel": "Khối lượng mặt trăng",
+      "route": {
+        "disk": {
+          "name": "Lớn lên tại chỗ",
+          "hint": "Các mặt trăng ngưng tụ từ khí và bụi mà hành tinh khí dẫn vào quỹ đạo của chính nó. Các mặt trăng Galileo hình thành như vậy, và điều đó giải thích những quỹ đạo tròn, đồng phẳng gọn gàng của chúng — nhưng nó chặn trần khối lượng tổng.",
+          "cost": "cho ta những quỹ đạo đều đặn mà các mặt trăng chị em của Pandora dường như có, nhưng không cấp nổi khối lượng"
+        },
+        "capture": {
+          "name": "Bị bắt giữ",
+          "hint": "Mặt trăng hình thành ở nơi khác như một thế giới độc lập rồi về sau bị giữ lại. Sao Hải Vương đã làm thế với Triton. Không gì chặn trần khối lượng, vì mặt trăng chưa từng lớn lên từ đĩa của hành tinh khí.",
+          "cost": "giải quyết dứt điểm bài toán khối lượng, nhưng bắt giữ thường để lại quỹ đạo nghiêng và bị kéo giãn, rồi cần rất nhiều thời gian mới lắng lại"
+        },
+        "impact": {
+          "name": "Sáp nhập",
+          "hint": "Vài mặt trăng bình thường sinh ra từ đĩa mất ổn định rồi đâm vào nhau, và kẻ sống sót là hợp thể của chúng. Mặt Trăng của Trái Đất ra đời từ một vụ va chạm như vậy, theo chiều ngược lại.",
+          "cost": "chạm tới khối lượng và nung chảy thiên thể đủ để lý giải một lòng đất đã phân tầng, nhưng đòi một tai nạn dữ dội và đúng thời điểm"
+        }
+      }
+    },
     "daisyworld": {
       "title": "Daisyworld",
       "subtitle": "Một hành tinh tự điều hòa nhiệt độ của chính mình mà không cần ai điều khiển hay tính trước",

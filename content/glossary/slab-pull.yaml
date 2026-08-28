@@ -1,0 +1,33 @@
+id: slab-pull
+label:
+  vi: Lực kéo mảng chìm
+  en: Slab pull
+definition:
+  vi: >-
+    Lực chính khiến các mảng kiến tạo di chuyển, và nó không đến từ đâu khác ngoài chính trọng lượng của
+    mảng. Vỏ đại dương nguội dần theo tuổi và sau chừng hai ba chục triệu năm thì đặc hơn lớp phủ bên
+    dưới. Khi nó bắt đầu chìm, đá basalt biến chất thành eclogite đặc hơn nữa — nặng thêm chừng 400 kg
+    mỗi mét khối — nên tấm vỏ đang lún kéo phần còn lại của mảng theo mình. Nó chiếm hơn tám phần mười
+    tổng lực, và đó là lý do tốc độ một mảng tỷ lệ với chiều dài mép đang chìm của nó.
+  en: >-
+    The dominant force moving tectonic plates, and it comes from nowhere but the plate's own weight.
+    Oceanic crust cools with age and after twenty or thirty million years is denser than the mantle
+    beneath it. Once it starts to sink, its basalt metamorphoses into denser eclogite — heavier by some
+    400 kilograms per cubic metre — so the descending sheet hauls the rest of the plate along behind it.
+    It accounts for over eight-tenths of the total force, which is why a plate's speed tracks the length
+    of its sinking edge.
+see_also:
+  - subduction
+  - plate-tectonics
+  - eclogite
+  - lithosphere
+category: concept
+tags:
+  - geology
+  - physics
+  - earth-systems
+cover_prompt: >-
+  A painted cross-section of a cold dense slab of crust bending steeply downward into warmer mantle rock,
+  its deepest end noticeably darker and heavier-looking, the horizontal sheet behind it visibly stretched
+  taut as it is drawn along, cool blue-grey slab against deep indigo mantle with faint amber at depth,
+  painterly geological plate, no text, no labels, no arrows.

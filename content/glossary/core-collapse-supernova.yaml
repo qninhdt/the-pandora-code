@@ -1,0 +1,26 @@
+id: core-collapse-supernova
+label:
+  vi: Siêu tân tinh sụp lõi
+  en: Core-collapse supernova
+definition:
+  vi: >-
+    Cái chết của một ngôi sao nặng hơn Mặt Trời chừng tám lần: lõi sắt không còn tự chống đỡ
+    được, sụp xuống mật độ hạt nhân rồi bật lại, tung toàn bộ phần ngoài ra ngoài không gian.
+    Hơn chín mươi chín phần trăm năng lượng thoát đi dưới dạng neutrino - một phần trăm còn lại
+    đủ tháo rời cả ngôi sao. Đây là nguồn chính của oxy, magie và silic trong manti Pandora.
+  en: >-
+    The death of a star more than about eight times the Sun's mass: the iron core can no longer
+    support itself, collapses to nuclear density and rebounds, flinging the entire outer star
+    into space. Over ninety-nine percent of the energy leaves as neutrinos - the remaining one
+    percent is enough to unbind the whole star. This is the chief source of the oxygen,
+    magnesium and silicon in Pandora's mantle.
+see_also:
+  - stellar-nucleosynthesis
+  - type-ia-supernova
+  - nuclear-binding-energy
+  - interstellar-medium
+category: concept
+tags:
+- astronomy
+- physics
+cover_prompt: A painted expanding shell of luminous stellar debris in deep space, ragged filaments of cyan and teal light streaming outward from a small intensely bright collapsed centre, painterly astronomical plate, no text, no labels, no numbers.

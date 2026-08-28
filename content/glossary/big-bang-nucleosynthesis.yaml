@@ -1,0 +1,17 @@
+id: big-bang-nucleosynthesis
+label:
+  vi: Tổng hợp hạt nhân Vụ Nổ Lớn
+  en: Big Bang nucleosynthesis
+definition:
+  vi: Đợt phản ứng nhiệt hạch chỉ kéo dài chừng mười lăm phút sau Vụ Nổ Lớn, tạo ra gần như toàn bộ hydro và heli của vũ trụ cùng chút deuteri và liti. Nó dừng lại vì không tồn tại hạt nhân bền nào ở khối lượng 5 và 8, chặn mọi đường đi lên từ heli - nên mọi nguyên tử carbon, oxy, silic hay sắt trong một hòn đá Pandora đều phải được chế tạo về sau, bên trong các ngôi sao.
+  en: The burst of fusion that ran for roughly fifteen minutes after the Big Bang, producing nearly all the universe's hydrogen and helium plus traces of deuterium and lithium. It stopped because no stable nucleus exists at mass 5 or mass 8, closing every route up from helium - so every carbon, oxygen, silicon and iron atom in a Pandoran stone had to be manufactured later, inside stars.
+see_also:
+  - stellar-nucleosynthesis
+  - triple-alpha-process
+  - metallicity
+category: concept
+tags:
+- astronomy
+- physics
+- chemistry
+cover_prompt: A painted abstract of the earliest universe as a dense glowing fog of tiny pale particles pairing into simple nuclei, warm magenta and amber light dissolving into deep indigo dark at the edges, painterly cosmological plate, no text, no labels, no numbers.

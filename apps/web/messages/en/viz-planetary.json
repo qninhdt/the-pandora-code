@@ -1,5 +1,75 @@
 {
   "viz": {
+    "condensationSequenceDial": {
+      "title": "The disk sorts its own solids",
+      "subtitle": "Move a sampling point outward through a young disk and watch materials freeze out in order",
+      "aria": "A temperature-against-radius plot of a protoplanetary disk with condensation thresholds marked",
+      "hintInside": "Only {count} material classes have condensed here. A body assembling at this radius is built from rock and metal — dry, dense, and short of the solids a giant's core needs.",
+      "hintOutside": "{count} material classes are available here. Past the water line the solid budget jumps several-fold and everything built out here is part ice — which is why giant cores form beyond this line and not inside it.",
+      "material": {
+        "refractoryOxides": "refractory oxides",
+        "silicatesMetal": "silicates + iron",
+        "sulfidesAlkalis": "sulfides, alkalis",
+        "waterIce": "water ice",
+        "volatileIces": "volatile ices"
+      },
+      "snowLine": "water line",
+      "radiusAxis": "distance from the star (AU)",
+      "temperatureAxis": "temperature (K)",
+      "radiusLabel": "Where the body assembles",
+      "temperatureLabel": "Local temperature",
+      "solidsLabel": "Solids available",
+      "solidsRocky": "rock and metal only",
+      "solidsIcy": "ice included",
+      "iceLabel": "Ice share",
+      "densityLabel": "Bulk density",
+      "densityUnit": "grams per cm³, uncompressed"
+    },
+    "satelliteMassBudget": {
+      "title": "How large a moon a giant can grow",
+      "subtitle": "Every satellite system in the Solar System lands near one ten-thousandth of its host's mass",
+      "aria": "A log-log plot of satellite-to-host mass ratio against host mass, with the observed ceiling marked",
+      "routeLabel": "Formation route",
+      "ceiling": "what a disk delivers",
+      "subject": "Pandora",
+      "hostAxis": "host planet mass (Jupiters)",
+      "ratioAxis": "moon ÷ host",
+      "system": {
+        "jupiter": "Jupiter",
+        "saturn": "Saturn",
+        "uranus": "Uranus"
+      },
+      "verdictLabel": "Verdict",
+      "verdict": {
+        "withinCeiling": "A disk could",
+        "strained": "Straining",
+        "impossible": "Not from a disk"
+      },
+      "overshootLabel": "Over the ceiling",
+      "overshootNote": "times what a disk grows",
+      "permittedLabel": "Largest moon allowed",
+      "permittedNote": "Earth masses, from this host",
+      "requiredHost": "For this moon to be an ordinary disk product, its host would have to weigh about {mass} Jupiters — past the roughly thirteen where a planet stops being a planet and starts burning deuterium.",
+      "hostLabel": "Host planet mass",
+      "moonLabel": "Moon mass",
+      "route": {
+        "disk": {
+          "name": "Grown in place",
+          "hint": "Moons condense from the gas and dust the giant funnels into its own orbit. This is how the Galilean moons formed, and it explains their tidy circular, coplanar orbits — but it caps their combined mass.",
+          "cost": "buys the regular orbits Pandora's siblings appear to have, but cannot deliver the mass"
+        },
+        "capture": {
+          "name": "Captured",
+          "hint": "The moon formed elsewhere as an independent world and was later trapped. Neptune did this to Triton. Nothing caps the mass, because the moon never grew from the giant's disk at all.",
+          "cost": "solves the mass outright, but capture normally leaves a tilted, stretched orbit that then needs a long time to settle"
+        },
+        "impact": {
+          "name": "Merged",
+          "hint": "Several ordinary disk-grown moons destabilised and collided, and the survivor is their merger. Earth's Moon came out of a collision like this, in reverse.",
+          "cost": "reaches the mass and melts the body enough to explain a differentiated interior, but requires a violent, well-timed accident"
+        }
+      }
+    },
     "daisyworld": {
       "title": "Daisyworld",
       "subtitle": "A planet that regulates its own temperature with no controller and no foresight",

@@ -1,0 +1,25 @@
+id: condensation-sequence
+label:
+  vi: Trình tự ngưng tụ
+  en: Condensation sequence
+definition:
+  vi: >-
+    Thứ tự cố định mà các vật liệu tách khỏi pha hơi và đóng thành hạt rắn khi một đĩa tiền hành
+    tinh nguội dần ra xa: các oxit khó nóng chảy trước, rồi silicat và sắt kim loại, rồi sunfua
+    và kim loại kiềm, rồi băng nước, cuối cùng là các băng dễ bay hơi. Chính trình tự này quyết
+    định một thiên thể lắp ghép ở đâu thì được làm từ gì.
+  en: >-
+    The fixed order in which materials leave the vapour phase and condense into solid grains as
+    a protoplanetary disk cools outward: refractory oxides first, then silicates and metallic
+    iron, then sulfides and alkalis, then water ice, and finally the volatile ices. This
+    sequence decides what a body assembling at a given distance can be made of.
+see_also:
+  - snow-line
+  - protoplanetary-disk
+  - planetary-differentiation
+category: concept
+tags:
+- planetary-science
+- chemistry
+- mineral
+cover_prompt: A painted graded strip of mineral grains arranged from left to right, glassy pale refractory crystals then dark silicate and bright metallic flecks then dull sulfides then frost-coated icy grains, warm amber cooling into cyan across the sequence, painterly mineralogical plate, no text, no labels, no numbers.

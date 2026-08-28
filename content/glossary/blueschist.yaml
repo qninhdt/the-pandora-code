@@ -1,0 +1,29 @@
+id: blueschist
+label:
+  vi: Đá phiến xanh lam
+  en: Blueschist
+definition:
+  vi: >-
+    Đá biến chất mang sắc xanh lam của khoáng vật glaucophane, hình thành ở áp suất cao mà nhiệt độ lại
+    thấp — một tổ hợp lạ, vì đá bị vùi sâu thì thường nóng lên. Chỉ có một cách tự nhiên tạo ra nó: dìm đá
+    xuống nhanh hơn tốc độ nó kịp ấm lên, tức là kéo nó xuống theo một tấm vỏ đang hút chìm. Vì vậy đá
+    phiến xanh lam là dấu chỉ thị. Việc nó hầu như không xuất hiện trong hồ sơ địa chất trước chừng 800
+    triệu năm trước là một trong những lập luận mạnh nhất cho rằng kiến tạo mảng kiểu hiện đại xuất hiện muộn.
+  en: >-
+    A metamorphic rock carrying the blue of the mineral glaucophane, formed at high pressure but low
+    temperature — an odd combination, since rock buried deep normally gets hot. There is only one natural way
+    to make it: take rock down faster than it can warm up, which means dragging it down with a subducting
+    slab. So blueschist is an index. Its near-absence from the geological record before about 800 million
+    years ago is one of the strongest arguments that modern-style plate tectonics began late.
+see_also:
+  - eclogite
+  - subduction
+  - plate-tectonics
+category: planet
+tags:
+  - mineral
+  - geology
+cover_prompt: >-
+  A painted specimen study of a schistose rock split along its foliation, the exposed surface a lustrous
+  slate-blue shot through with fine parallel fibrous crystals that catch the light, faint teal sheen along
+  the cleavage plane, deep indigo background, painterly petrological plate, no text, no labels.

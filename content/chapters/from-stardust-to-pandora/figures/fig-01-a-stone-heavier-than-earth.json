@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-a-stone-heavier-than-earth",
+  "chapter_slug": "from-stardust-to-pandora",
+  "role": "hero",
+  "narrative_purpose": "Anchors the cold open on the physical object the whole chapter interrogates: a cracked-open piece of crust whose fresh face shows the iron that had to be manufactured in a dying star.",
+  "subject": "A dark rock broken cleanly in two, both halves held in one gloved hand. The freshly exposed inner faces are turned up toward the viewer - darker than the weathered outside, finer-grained, with a faint sheen and scattered pinpoint metallic glints across them. The outer surfaces are dulled and slightly reddened.",
+  "scene": "Outdoors on a riverbank in dense forest at dusk. Wet dark pebbles and a shallow band of water behind the hand, out of focus. Faintly glowing low plants scattered along the bank edge give a soft cool light.",
+  "camera": "Very close, looking almost straight down into the open palm, the broken faces filling most of the frame.",
+  "light": "A single warm handheld lamp from upper left grazing across the broken faces to catch the metallic glints; cool cyan bounce from the glowing bank plants filling the shadows; the background falls into deep indigo.",
+  "palette": "Deep teal-indigo stone, void-indigo shadows, a scarce warm amber raking light, tiny cool-white metallic glints, faint cyan from the plants.",
+  "style": "Painterly naturalist field illustration, close-observed, textured brushwork.",
+  "detail_level": "Very high on the broken faces - grain, sheen and glints legible; the surroundings soft and hazy.",
+  "composition": "The hand and rock fill the lower two-thirds, angled from lower left to upper right. Open dark space at the upper left for a callout to sit cleanly.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "watermark", "logos", "UI", "faces", "figures", "modern instruments", "grid"],
+  "consistency_notes": "Same rock type as the cover: ordinary dark crust with iron in it, never glowing or crystalline. The glove is plain dark fabric with no insignia.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no logos, no insignia, no photographic or 3D-render look, no lens flares, no glowing rock, no gemstones, no crystals",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/from-stardust-to-pandora/fig-00-cover.png"]
+}

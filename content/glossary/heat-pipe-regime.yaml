@@ -1,0 +1,32 @@
+id: heat-pipe-regime
+label:
+  vi: Chế độ ống dẫn nhiệt
+  en: Heat-pipe regime
+definition:
+  vi: >-
+    Cách một thế giới thải nhiệt khi lượng nhiệt bên trong quá lớn để dẫn ra ngoài kịp: magma tự mang
+    nhiệt đi. Đá nóng chảy trồi lên theo những ống hẹp, phun ra bề mặt, nguội đi và phát nhiệt vào không
+    gian, rồi các lớp mới cứ chôn dần lớp cũ và đẩy chúng xuống. Có một nghịch lý dễ chịu ở đây: chính
+    vì đá nguội liên tục bị vùi xuống, lớp vỏ lại lạnh, dày và cứng hơn — không mỏng đi — dù bên trong
+    nóng chảy dữ dội. Io là ví dụ sống, thải chừng 100 TW theo đúng lối này và xóa sạch mọi hố va chạm.
+  en: >-
+    How a world sheds heat when there is too much of it to conduct out: the melt carries it instead.
+    Molten rock rises through narrow conduits, erupts at the surface, cools and radiates to space, and
+    successive layers bury the older ones and drive them downward. There is a satisfying paradox here:
+    because cold surface rock is continually being buried, the lid ends up colder, thicker and stronger
+    — not thinner — despite ferocious melting below. Io is the living example, venting roughly 100 TW
+    this way and erasing every impact crater.
+see_also:
+  - stagnant-lid
+  - plate-tectonics
+  - mantle-convection
+  - partial-melting
+category: planet
+tags:
+  - planetary-science
+  - geology
+cover_prompt: >-
+  A painted geological cross-section of a thick dark crust pierced by several narrow vertical channels of
+  glowing molten rock reaching the surface, fresh lava sheets stacked in visible layers at the top with
+  the deepest layers bent downward under their weight, ember-amber conduits against deep indigo cold
+  rock, painterly plate, no text, no labels, no arrows.

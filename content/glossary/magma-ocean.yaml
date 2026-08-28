@@ -1,0 +1,17 @@
+id: magma-ocean
+label:
+  vi: Đại dương magma
+  en: Magma ocean
+definition:
+  vi: Trạng thái nóng chảy toàn phần mà một thiên thể đá vừa lắp ghép xong trải qua, được nuôi bởi năng lượng va chạm khi bồi tụ, năng lượng giải phóng khi kim loại chìm xuống, và sự phân rã của các đồng vị phóng xạ sống ngắn. Chính trong đại dương magma ấy mà các nguyên tố tự phân loại theo sở thích hóa học - đó là bước dựng nên lõi, manti và vỏ của mọi thế giới đá.
+  en: The wholly molten state a freshly assembled rocky body passes through, fed by the impact energy of accretion, the energy released as metal sinks, and the decay of short-lived radioactive isotopes. It is in a magma ocean that elements sort themselves by chemical preference - the step that builds every rocky world's core, mantle and crust.
+see_also:
+  - planetary-differentiation
+  - siderophile
+  - radiogenic-heating
+  - accretion
+category: planet
+tags:
+- planetary-science
+- geology
+cover_prompt: A painted cutaway of a young world entirely molten, glowing orange and amber convecting rock with bright metallic droplets descending through it toward a dense forming centre, thin dark crust cracking at the surface, painterly geological cross-section plate, no text, no labels, no numbers.

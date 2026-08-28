@@ -36,6 +36,8 @@ const NAMESPACES = [
   "viz-chronostrat",
   "viz-epistemics",
   "viz-forestfloor",
+  "viz-geodynamics",
+  "viz-hydrology",
   "viz-marine",
   "viz-mycorrhiza",
 ] as const;

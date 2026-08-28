@@ -1,0 +1,35 @@
+id: plate-tectonics
+label:
+  vi: Kiến tạo mảng
+  en: Plate tectonics
+definition:
+  vi: >-
+    Cách vận hành mà Trái Đất chọn: lớp vỏ nguội bên ngoài không phải một cái nắp liền khối mà vỡ
+    thành chừng một chục tấm cứng, chúng tách ra ở các sống núi giữa đại dương, trượt ngang nhau ở
+    các đứt gãy, và chìm trở lại vào lớp phủ ở các máng sâu. Điều đáng nhớ là các mảng không phải bè
+    nổi bị dòng đối lưu bên dưới lôi đi — chúng chính là lớp biên lạnh phía trên của dòng đối lưu ấy,
+    và phần lớn lực kéo chúng đi đến từ chính tấm vỏ đang chìm xuống. Đây là chế độ duy nhất trong Hệ
+    Mặt Trời mà chỉ một thiên thể có được.
+  en: >-
+    The arrangement Earth settled into: its cool outer shell is not one continuous lid but a dozen or
+    so rigid plates that pull apart at mid-ocean ridges, slide past one another along faults, and
+    sink back into the mantle at deep trenches. The part worth remembering is that plates are not
+    rafts dragged along by currents underneath — they *are* the cold upper boundary layer of the
+    convection, and most of the force moving them comes from the weight of their own sinking edge.
+    It is the only regime in the Solar System that exactly one body has.
+see_also:
+  - subduction
+  - slab-pull
+  - seafloor-spreading
+  - lithosphere
+  - mantle-convection
+category: planet
+tags:
+  - geology
+  - planetary-science
+  - earth-systems
+cover_prompt: >-
+  A painted cutaway of a planet's outer shell broken into rigid slabs, one slab bending steeply
+  downward into darker mantle rock on the right, a bright glowing rift opening between two slabs on
+  the left with fresh material welling up, deep indigo mantle with faint amber heat at depth and cool
+  cyan light along the rift, painterly geological cross-section, no text, no arrows, no labels.

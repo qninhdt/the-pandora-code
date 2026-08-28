@@ -1,0 +1,17 @@
+id: planetary-migration
+label:
+  vi: Di trú hành tinh
+  en: Planetary migration
+definition:
+  vi: Sự dịch chuyển quỹ đạo của một hành tinh khi nó trao đổi động lượng góc với chiếc đĩa khí nó đang nằm trong. Hàng trăm hành tinh khí thật đã được tìm thấy ở gần ngôi sao chủ hơn nhiều so với chỗ chúng có thể hình thành, và di trú là lý do. Polyphemus gần như chắc chắn đã dựng lõi ở ngoài vạch băng rồi mới trôi vào chỗ các bộ phim tìm thấy nó.
+  en: The orbital drift of a planet as it exchanges angular momentum with the gas disk it sits in. Hundreds of real exoplanets have been found far closer to their stars than they could possibly have formed, and migration is why. Polyphemus almost certainly built its core beyond the snow line and only then drifted inward to where the films find it.
+see_also:
+  - snow-line
+  - protoplanetary-disk
+  - circumplanetary-disk
+  - carbonaceous-chondrite
+category: concept
+tags:
+- planetary-science
+- orbital-mechanics
+cover_prompt: A painted view of a banded gas giant carving a dark annular gap through a glowing dust disk, faint spiral density waves trailing from it as it moves inward toward the bright star, cyan and amber against indigo, painterly astronomical plate, no text, no labels, no numbers.

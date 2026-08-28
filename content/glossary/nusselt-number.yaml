@@ -1,0 +1,31 @@
+id: nusselt-number
+label:
+  vi: Số Nusselt
+  en: Nusselt number
+definition:
+  vi: >-
+    Tỷ số giữa lượng nhiệt mà dòng đối lưu thực sự tải được và lượng nhiệt mà dẫn nhiệt đơn thuần sẽ tải
+    được qua cùng một lớp. Bằng một là đối lưu chẳng thêm gì; bằng ba mươi là dòng chảy đang tải nhiệt
+    nhanh gấp ba mươi lần. Với lớp phủ hành tinh, nó tăng cỡ căn bậc ba của số Rayleigh, và điều đó tạo
+    ra một cái điều nhiệt: lớp phủ nóng hơn thì nhớt ít hơn, nên đối lưu mạnh hơn, nên nguội nhanh hơn —
+    cho tới khi nó hạ về mức cân bằng. Hành tinh tự điều tiết tốc độ mất nhiệt của mình.
+  en: >-
+    The ratio of the heat convection actually carries to the heat plain conduction would carry through
+    the same layer. One means convection is adding nothing; thirty means the flow is moving heat thirty
+    times faster. For a planetary mantle it scales roughly as the cube root of the Rayleigh number, and
+    that makes a thermostat: a hotter mantle is less viscous, so it convects harder, so it cools faster
+    — until it settles back down. A planet regulates its own rate of heat loss.
+see_also:
+  - rayleigh-number
+  - mantle-convection
+  - heat-pipe-regime
+category: concept
+tags:
+  - physics
+  - geology
+  - earth-systems
+cover_prompt: >-
+  A painted comparison of two identical rock columns side by side, the left one still with heat seeping
+  slowly upward as a faint even amber gradient, the right one churning in vigorous loops that carry
+  bright amber warmth rapidly to the top, deep indigo surroundings, painterly physics plate, no text,
+  no labels, no numbers.

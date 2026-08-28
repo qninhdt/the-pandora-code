@@ -1,0 +1,25 @@
+id: protoplanetary-disk
+label:
+  vi: Đĩa tiền hành tinh
+  en: Protoplanetary disk
+definition:
+  vi: >-
+    Chiếc đĩa khí và bụi dẹt, đang quay quanh một ngôi sao vừa mới sinh, nơi mọi hành tinh và
+    mặt trăng của nó được lắp ghép. Nó dẹt vì bảo toàn động lượng góc: khí rơi vào gần mặt phẳng
+    xích đạo có quá nhiều chuyển động ngang để chạm tới tâm. Đĩa chỉ tồn tại chừng hai đến năm
+    triệu năm - toàn bộ việc dựng hành tinh phải xong trước khi nó tan.
+  en: >-
+    The flattened, rotating disk of gas and dust around a newborn star in which all its planets
+    and moons are assembled. It is flat because of angular momentum: gas falling in near the
+    equatorial plane has too much sideways motion to reach the centre. Disks last only about two
+    to five million years - all planet building has to finish before one disperses.
+see_also:
+  - snow-line
+  - condensation-sequence
+  - streaming-instability
+  - circumplanetary-disk
+category: concept
+tags:
+- planetary-science
+- astronomy
+cover_prompt: A painted view of a broad thin glowing disk of gas and dust seen at a shallow angle around a small bright newborn star, faint concentric rings and gaps visible in the dust, cyan and teal with a warm amber core, painterly astronomical plate, no text, no labels, no numbers.

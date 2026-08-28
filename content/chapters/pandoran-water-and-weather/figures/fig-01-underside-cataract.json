@@ -1,0 +1,31 @@
+{
+  "id": "fig-01-underside-cataract",
+  "chapter_slug": "pandoran-water-and-weather",
+  "role": "hero",
+  "narrative_purpose": "The cold-open anchor: close enough to see water physically leaving stone, and framed so the absence of anything above the rock is unmistakable. The reader must feel the mass-balance problem before any physics arrives.",
+  "subject": "A close view of the underside of a floating mountain: dark, wet, deeply fractured rock filling the upper part of the frame, and from a single seam near its lowest point a thick ribbon of white water walking out of the stone into open air. The water holds together for a stretch, then frays and comes apart into a drifting veil of faintly glowing spray. Beyond and below is nothing but hazy open air. No land is visible above the rock anywhere in the frame.",
+  "scene": "Directly beneath a suspended massif, kilometres of empty air below, thin cloud drifting past the rock face.",
+  "camera": "Close three-quarter view looking up at the underside, the rock overhead and the falling water leading the eye down out of frame.",
+  "light": "Strong backlight from off-frame, so the falling water and its spray glow bright while the rock face stays dark and textural.",
+  "palette": "Dark cool grey-violet wet rock, bright misty-cyan water and spray, deep void-indigo hazy air beyond, a faint teal glow where mist catches bioluminescence.",
+  "style": "Painterly naturalist plate, hand-painted, wet rock rendered with real texture, soft atmospheric spray, NOT a photograph and NOT a 3D render.",
+  "detail_level": "High on the seam where water leaves the stone and on the fractured rock texture around it; softening rapidly into haze away from the water.",
+  "composition": "Rock mass across the top and one side, the water emerging near the centre and falling out of frame, and a large area of plain dark hazy air on the opposite side kept clear for overlaid callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "grid",
+    "UI",
+    "watermark",
+    "logos",
+    "land above the rock"
+  ],
+  "consistency_notes": "Same wet grey-violet rock and glowing cyan water as the cover, seen much closer. Leave one side of the frame plain and dark for annotation callouts.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no grid, no diagram chrome, no photographic or 3D-render look, no terrain visible above the rock",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

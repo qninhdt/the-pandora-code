@@ -1,0 +1,25 @@
+id: s-process
+label:
+  vi: Bắt neutron chậm
+  en: Slow neutron capture
+definition:
+  vi: >-
+    Con đường chậm để dựng các nguyên tố nặng hơn sắt: bên trong những ngôi sao khối lượng vừa
+    đang hấp hối, neutron nhỏ giọt vào từng hạt nhân qua hàng thế kỷ, đủ chậm để mỗi hạt nhân
+    kịp phân rã về trạng thái bền trước khi cái tiếp theo tới. Nó dựng lên tới chì rồi dừng, và
+    những cơn gió sao mang sản phẩm ấy ra khoảng không giữa các sao.
+  en: >-
+    The slow route to elements heavier than iron: inside dying stars of modest mass, neutrons
+    trickle into a nucleus over centuries, slowly enough that each one has time to decay to
+    stability before the next arrives. It builds up to lead and stops, and stellar winds carry
+    the products out into interstellar space.
+see_also:
+  - r-process
+  - stellar-nucleosynthesis
+  - interstellar-medium
+category: concept
+tags:
+- astronomy
+- physics
+- chemistry
+cover_prompt: A painted view of a swollen dim red-orange dying star shedding slow soft shells of gas outward, faint metallic glints suspended in the drifting envelope, warm amber against deep teal-indigo, painterly astronomical plate, no text, no labels, no numbers.

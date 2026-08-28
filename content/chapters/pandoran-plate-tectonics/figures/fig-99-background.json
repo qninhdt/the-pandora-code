@@ -1,0 +1,39 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "pandoran-plate-tectonics",
+  "role": "hero",
+  "narrative_purpose": "The chapter's full-bleed atmospheric backdrop: a vast dim highland vista of layered rock receding into haze, dark and low-contrast so long-form reading text stays legible over it.",
+  "subject": "An immensely wide panorama seen from very high altitude across a highland landscape of layered rock. Successive escarpments and plateau rims recede in five or six overlapping ranks toward a distant horizon, each rank paler and flatter than the one before as haze accumulates, until the furthest are barely distinguishable from the sky. Deep valleys lie between them, filled with pooled mist that hides their floors. No single feature dominates; nothing is brightly lit; the whole scene is dim and even. A faint teal luminescence glimmers in a few valley bottoms, barely perceptible. Above, a heavy dark sky with layered cloud dissolving into the haze at the horizon.",
+  "scene": "An ultra-wide dim highland vista on Pandora at deep dusk, seen from great height, detail dissolving into atmospheric depth.",
+  "camera": "Extremely wide panoramic view from a very high vantage, looking out nearly level across successive ridge lines to a far horizon.",
+  "light": "Very low, flat, ambient dusk with no directional key and no bright highlight anywhere; the faintest teal glow deep in a few valleys; overall low contrast and dark middle values throughout.",
+  "palette": "Void-indigo and deep teal-indigo dominating almost entirely, cool grey-mist in the receding haze layers, the barest trace of living-teal in the valley floors, no warm accent at all.",
+  "style": "Painterly atmospheric landscape plate, soft and tonal rather than detailed, heavy aerial perspective, mood rather than a figure to study.",
+  "detail_level": "Deliberately low: even the nearest ridge is softly rendered, and everything beyond it progressively loses definition into haze. Nothing crisp anywhere.",
+  "composition": "Horizon roughly a third from the top; ranked ridge silhouettes stacked across the lower two-thirds as broad horizontal bands; no focal subject, no bright area, and large tonally even regions throughout so overlaid text remains readable.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "diagram lines",
+    "bright focal subject",
+    "high contrast highlights",
+    "sun or bright light source",
+    "floating rock",
+    "creatures",
+    "spacecraft",
+    "buildings",
+    "humans"
+  ],
+  "consistency_notes": "This is the immersive background layer sitting behind body text under a dark scrim, so it must stay dark, low-contrast and free of any bright or busy focal area. Same layered-rock highland subject as the chapter's foreground figures, but pushed far back into atmosphere.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no diagram lines, no arrows, no bright highlights, no visible sun, no high contrast, no sharp focal subject, no floating islands, no photographic or 3D-render look, no lens flares, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

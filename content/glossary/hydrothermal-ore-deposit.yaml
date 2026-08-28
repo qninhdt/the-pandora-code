@@ -1,0 +1,33 @@
+id: hydrothermal-ore-deposit
+label:
+  vi: Mỏ quặng nhiệt dịch
+  en: Hydrothermal ore deposit
+definition:
+  vi: >-
+    Mỏ khoáng sản sinh ra khi nước nóng lưu chuyển qua đá, hòa tan kim loại ở nơi này rồi kết tủa chúng ở
+    nơi khác — và làm việc đó bền bỉ hàng triệu năm cho tới khi hàm lượng vượt xa mức trong đá thường hàng
+    nghìn tới hàng vạn lần. Nước là nhân tố then chốt, nhưng nhiệt để duy trì dòng đối lưu ấy thường đến từ
+    magma, còn magma giàu nước thì lại tập trung ở các ranh giới mảng. Đó là lý do những vành quặng giàu
+    nhất Trái Đất nằm ở nơi đoán trước được, và cũng là lý do một thế giới có lớp vỏ bất động khó có nổi chúng.
+  en: >-
+    An ore body formed when hot water circulates through rock, dissolving metals in one place and precipitating
+    them in another — and doing it persistently for millions of years, until the concentration runs thousands
+    to tens of thousands of times above ordinary rock. Water is the essential agent, but the heat that keeps
+    the circulation going usually comes from magma, and water-rich magma is concentrated at plate boundaries.
+    That is why Earth's richest ore belts sit in predictable places, and why a world with an immobile crust
+    struggles to make them.
+see_also:
+  - subduction
+  - plate-tectonics
+  - unobtanium
+  - partial-melting
+category: planet
+tags:
+  - mineral
+  - geology
+  - earth-systems
+cover_prompt: >-
+  A painted cross-section of fractured dark rock threaded by a dense network of pale mineral veins, the veins
+  glinting with metallic sulphide crystals and thickening where they cross, faint amber heat rising from a
+  magma body at the base of the frame, deep teal-indigo host rock, painterly geological plate, no text, no
+  labels.

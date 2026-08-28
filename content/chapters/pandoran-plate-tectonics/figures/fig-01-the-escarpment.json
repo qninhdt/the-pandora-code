@@ -1,0 +1,39 @@
+{
+  "id": "fig-01-the-escarpment",
+  "chapter_slug": "pandoran-plate-tectonics",
+  "role": "inline",
+  "narrative_purpose": "The cold open: put the reader at the foot of the cliff whose layered beds are now a kilometre in the air, so the question 'what lifted them' arrives before any explanation does.",
+  "subject": "A sheer rock wall fills most of the frame, seen from close to its base looking up and along it. The face is unmistakably stratified: roughly twenty-five horizontal bands of rock, alternating pale grey-buff and darker slate, each band a distinct thickness, running perfectly level across the entire width of the wall and continuing out of frame on both sides. The bands are cut off abruptly at the vertical face as though sliced. At the very top, small dark trees stand along the rim, tiny by comparison. At the bottom, a scree slope of fallen blocks piles against the wall, and low mist drifts across it. To the lower right a narrow valley floor with faintly glowing teal ground cover.",
+  "scene": "The foot of a kilometre-high layered escarpment on Pandora in flat overcast daylight.",
+  "camera": "Low vantage close to the scree slope, looking steeply up the wall and obliquely along its length so the horizontal bands recede into the distance.",
+  "light": "Flat diffuse daylight from a hazy sky, grazing the wall so the edge of each rock band is picked out in a thin line of shadow; faint teal glow from the valley vegetation at the lower edge; deep indigo shadow in the fractures.",
+  "palette": "Grey-buff and slate rock bands, void-indigo in the deep fractures, cool teal-indigo haze, restrained teal bioluminescence at the base only.",
+  "style": "Painterly geological field study, dense stone texture, weathering and fracture detail, naturalist observation rather than drama.",
+  "detail_level": "High detail in the rock texture and stratification near the viewer; the receding length of the wall and the rim trees softening into haze.",
+  "composition": "The wall as a strong near-vertical mass filling the left and centre, its bands as a firm horizontal rhythm; open hazy sky in the upper right for breathing room; the scree and glowing valley anchoring the lower edge.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "diagram lines",
+    "floating rock",
+    "spacecraft",
+    "buildings",
+    "humans",
+    "machines"
+  ],
+  "consistency_notes": "Same bedrock and palette as the cover image. Nothing levitates. The stratification must read as genuine sedimentary or lava-flow layering — flat, parallel, and continuous — because the whole chapter opens from it.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no diagram lines, no arrows, no floating islands, no photographic or 3D-render look, no lens flares, no modern machines, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/pandoran-plate-tectonics/fig-00-cover.png"
+  ]
+}

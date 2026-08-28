@@ -1,0 +1,31 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "pandoran-water-and-weather",
+  "role": "hero",
+  "narrative_purpose": "The chapter's cover: the image the whole chapter is an argument about - a floating massif shedding water from its underside into open air, with nothing above it that could have supplied that water.",
+  "subject": "A single vast floating mountain hanging in hazy air, seen from a middle distance so its whole silhouette reads: a lush forested plateau on top, sheer fractured flanks, and a raw fissured underside from which two ribbons of white water pour out and fall away, breaking into a drifting veil of glowing mist below. Above the plateau there is nothing but open sky and a thin cloud layer the rock hangs inside. The forest floor lies far below, softened almost to nothing by haze.",
+  "scene": "Mid-air among the floating peaks at late afternoon, the massif wrapped in a thin band of cloud, immense empty air beneath it.",
+  "camera": "Middle-distance three-quarter view from slightly below the massif, so the underside and its falling water are clearly visible against open sky.",
+  "light": "Warm low sunlight raking across the plateau canopy from one side; the falling water and its mist lit from behind so it glows; the underside of the rock in deep shadow.",
+  "palette": "Deep void-indigo sky, living-teal plateau canopy, dark cool grey-violet rock, bright misty-cyan water and spray, faint amber warmth on the sunlit canopy edge.",
+  "style": "Painterly naturalist plate, hand-painted atmospheric landscape, soft aerial haze with distance, NOT a photograph and NOT a 3D render.",
+  "detail_level": "High on the water leaving the rock and the plateau's canopy edge, dissolving into soft haze in the far distance below.",
+  "composition": "The massif set slightly off-centre with generous open sky above it - the emptiness overhead is the point - and the falling water tracing a bright vertical line down through the frame.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "grid",
+    "UI",
+    "watermark",
+    "logos",
+    "Avatar branding"
+  ],
+  "consistency_notes": "The recurring subject of this chapter is water leaving rock with empty sky above it; keep the space above the plateau conspicuously clear of any higher terrain. Crisp focal portrait suitable as a landing thumbnail.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no grid, no diagram chrome, no UI, no photographic or 3D-render look, no lens flares, no higher land above the plateau",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

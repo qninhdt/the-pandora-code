@@ -1,0 +1,32 @@
+id: hypsometry
+label:
+  vi: Phân bố độ cao bề mặt
+  en: Hypsometry
+definition:
+  vi: >-
+    Cách các độ cao trên bề mặt một hành tinh phân bố — nghe như chuyện thống kê nhàm chán, cho tới lúc ta
+    thấy nó là một trong những phép thử kiến tạo sắc nhất mà có. Trái Đất có hai đỉnh rõ rệt: các lục địa
+    tụ quanh mức cao hơn mặt biển chừng 840 m, còn đáy đại dương tụ quanh mức âm 3.700 m. Hai đỉnh nghĩa
+    là hai loại vỏ có khối lượng riêng khác nhau. Sao Kim và Sao Hỏa chỉ có một đỉnh duy nhất, vì chúng
+    chỉ có một loại vỏ. Chỉ cần một đường cong độ cao là đã loại được nhiều giả thuyết.
+  en: >-
+    How a planet's surface elevations are distributed — which sounds like dull statistics until you see
+    that it is one of the sharpest tectonic tests available. Earth has two distinct peaks: continents
+    cluster around 840 m above sea level, ocean floor around 3,700 m below it. Two peaks mean two kinds of
+    crust with different densities. Venus and Mars have a single peak, because they have a single kind of
+    crust. One elevation curve rules out a great many hypotheses.
+see_also:
+  - continental-crust
+  - isostasy
+  - mohorovicic-discontinuity
+  - plate-tectonics
+category: concept
+tags:
+  - geology
+  - planetary-science
+  - earth-systems
+cover_prompt: >-
+  A painted panel comparing two planetary surfaces in profile, the upper one showing high broad plateaus
+  abruptly dropping to a deep flat sea floor at a clearly separate level, the lower one showing a single
+  gently undulating surface with no distinct second level, cool teal seas and deep indigo depths, painterly
+  geological plate, no text, no labels, no graph axes.

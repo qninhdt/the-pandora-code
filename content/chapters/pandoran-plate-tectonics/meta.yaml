@@ -1,0 +1,166 @@
+slug: pandoran-plate-tectonics
+status: published
+title:
+  vi: Lớp vỏ đang dịch chuyển
+  en: A Crust That Moves
+subtitle:
+  vi: >-
+    Bốn manh mối trên bề mặt Pandora đều chỉ về kiến tạo mảng, nhưng chính sử chưa từng nói tới một
+    mảng nào - và Io chứng minh rằng ta có thể dựng núi cao mười tám kilômét mà chẳng cần mảng nào
+    cả
+  en: >-
+    Four clues on Pandora's surface all point to plate tectonics, yet canon never mentions a single
+    plate - and Io proves you can raise eighteen-kilometre mountains without any
+hook:
+  vi: >-
+    Một vách đá cao hơn một kilômét, mặt cắt phơi ra từng tầng đá nằm ngang. Có gì đã nâng chúng lên
+    đó, và trên Trái Đất thì câu trả lời chỉ có một: lớp vỏ biết dịch chuyển. Pandora có núi, có
+    biển sâu, có vành núi lửa, có quặng đậm đặc - đủ bốn thứ mà trên Trái Đất đều do cùng một cỗ máy
+    sinh ra. Nhưng không một tài liệu chính thức nào nói Pandora có mảng kiến tạo, và chưa ai từng
+    đặt một máy đo địa chấn xuống mặt đất ấy.
+  en: >-
+    A cliff a kilometre high, its face laid open in flat horizontal beds. Something lifted them, and
+    on Earth there is only one answer: a crust that moves. Pandora has ranges, deep seas, a volcanic
+    province and richly concentrated ore - all four of the things one machine produces on Earth. Yet
+    no official source says Pandora has plates, and nobody has ever set a seismometer on its ground.
+authors:
+  - bardabez
+tags:
+  - plate-tectonics
+  - seismology
+  - mantle-convection
+  - comparative-planetology
+  - ore-genesis
+  - geodynamics
+classification:
+  canon_pct: 14
+  inference_pct: 20
+  speculation_pct: 8
+  real_science_pct: 58
+related_chapters:
+  - what-keeps-pandora-volcanically-alive
+  - pandoras-deep-time
+  - floating-mountains-and-the-superconductor
+  - continents-oceans-climate
+  - where-is-pandora
+  - life-after-the-volcano
+glossary_terms:
+  - plate-tectonics
+  - lithosphere
+  - asthenosphere
+  - p-wave
+  - s-wave
+  - shadow-zone
+  - mohorovicic-discontinuity
+  - seismic-tomography
+  - rayleigh-number
+  - nusselt-number
+  - stagnant-lid
+  - heat-pipe-regime
+  - slab-pull
+  - subduction
+  - isostasy
+  - hypsometry
+  - continental-crust
+  - eclogite
+  - blueschist
+  - seafloor-spreading
+  - wadati-benioff-zone
+  - hydrothermal-ore-deposit
+  - moment-of-inertia-factor
+  - hoop-stress
+  - mantle-convection
+  - unobtanium
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-the-escarpment
+    role: inline
+    asset_status: ready
+  - id: fig-02-the-ashlands-province
+    role: inline
+    asset_status: ready
+  - id: fig-03-rays-through-the-interior
+    role: diagram
+    asset_status: ready
+  - id: fig-04-the-convecting-mantle
+    role: diagram
+    asset_status: ready
+  - id: fig-05-two-mountains
+    role: comparison
+    asset_status: ready
+  - id: fig-06-the-unbroken-shell
+    role: comparison
+    asset_status: ready
+  - id: fig-07-the-margin
+    role: inline
+    asset_status: ready
+  - id: fig-08-the-vein
+    role: inline
+    asset_status: ready
+  - id: fig-09-the-listening-station
+    role: inline
+    asset_status: ready
+sources:
+  - kind: canon
+    label: James Cameron's Avatar - An Activist Survival Guide (Wilhelm & Mathison)
+    url: >-
+      https://james-camerons-avatar.fandom.com/wiki/James_Cameron%27s_Avatar:_An_Activist_Survival_Guide
+  - kind: canon
+    label: Unobtanium - Pandorapedia
+    url: https://james-camerons-avatar.fandom.com/wiki/Unobtanium
+  - kind: canon
+    label: Hallelujah Mountains - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Hallelujah_Mountains
+  - kind: science
+    label: Mohorovičić (1910) - Das Beben vom 8. X. 1909 (discovery of the crust-mantle boundary)
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0031920192901240
+  - kind: science
+    label: Lehmann (1936) - P' (discovery of the solid inner core)
+    url: >-
+      https://www.worldcat.org/title/publications-du-bureau-central-seismologique-international/oclc/1762376
+  - kind: science
+    label: Stähler et al. (2021) - Seismic detection of the martian core (Science)
+    url: https://doi.org/10.1126/science.abi7730
+  - kind: science
+    label: Knapmeyer-Endrun et al. (2021) - Thickness and structure of the martian crust (Science)
+    url: https://doi.org/10.1126/science.abf8966
+  - kind: science
+    label: Moore & Webb (2013) - Heat-pipe Earth (Nature)
+    url: https://doi.org/10.1038/nature12473
+  - kind: science
+    label: Bland & McKinnon (2016) - Mountain building on Io driven by deep faulting (Nature Geoscience)
+    url: https://doi.org/10.1038/ngeo2711
+  - kind: science
+    label: >-
+      McKinnon, Schenk & Dombard (2001) - Chaos on Io: mountain blocks by crustal heating and
+      tilting (Geology)
+    url: https://doi.org/10.1130/0091-7613(2001)029<0103:COIAMF>2.0.CO;2
+  - kind: science
+    label: Valencia, O'Connell & Sasselov (2007) - Inevitability of plate tectonics on super-Earths (ApJ)
+    url: https://doi.org/10.1086/524012
+  - kind: science
+    label: O'Neill & Lenardic (2007) - Geological consequences of super-sized Earths (GRL)
+    url: https://doi.org/10.1029/2007GL030598
+  - kind: science
+    label: >-
+      Stern (2008) - Modern-style plate tectonics began in Neoproterozoic time (International
+      Geology Review)
+    url: https://doi.org/10.2747/0020-6814.50.8.693
+  - kind: science
+    label: >-
+      Pearson et al. (2014) - Hydrous mantle transition zone indicated by ringwoodite in diamond
+      (Nature)
+    url: https://doi.org/10.1038/nature13080
+  - kind: science
+    label: Sillitoe (2010) - Porphyry copper systems (Economic Geology)
+    url: https://doi.org/10.2113/gsecongeo.105.1.3
+  - kind: science
+    label: Turcotte & Schubert - Geodynamics (3rd ed., Cambridge University Press)
+    url: https://www.cambridge.org/core/books/geodynamics/D97BB0D6E1F5F1C0EA9C3E8B0F1B9F1E
+  - kind: science
+    label: Io - NASA Science
+    url: https://science.nasa.gov/jupiter/moons/io/
+  - kind: research-note
+    label: Comparative Geodynamics and Crustal Mobility of Pandora (chapter research note)

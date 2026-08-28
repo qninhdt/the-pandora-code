@@ -1,0 +1,17 @@
+id: carbonaceous-chondrite
+label:
+  vi: Thiên thạch chondrit chứa carbon
+  en: Carbonaceous chondrite
+definition:
+  vi: Loại thiên thạch nguyên thủy, tối màu, đến từ những tiểu hành tinh hình thành ngoài vạch băng, giữ nước trong khoáng vật chứ không phải dưới dạng băng, cùng lượng lớn chất hữu cơ. Tỉ số deuteri trên hydro của chúng khớp gần đúng nước biển Trái Đất, nên chúng là nguồn hàng đầu cho nước của một hành tinh - kết luận được xác nhận trực tiếp bằng mẫu vật mang về từ Ryugu và Bennu.
+  en: A class of dark, primitive meteorite from asteroids that formed beyond the snow line, holding water chemically bound in its minerals rather than as ice, along with abundant organic matter. Their deuterium-to-hydrogen ratio matches Earth's seawater closely, making them the leading supplier of a planet's water - a conclusion confirmed directly by samples returned from Ryugu and Bennu.
+see_also:
+  - snow-line
+  - planetary-migration
+  - accretion
+category: concept
+tags:
+- planetary-science
+- chemistry
+- mineral
+cover_prompt: A painted close view of a dark rough meteorite fragment cut open on a bench, its interior showing small pale round inclusions and a faint sheen of hydrated minerals, deep teal-indigo stone under a single warm field lamp, painterly specimen plate, no text, no labels, no numbers.

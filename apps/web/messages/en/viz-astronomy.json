@@ -1,5 +1,81 @@
 {
   "viz": {
+    "nucleosynthesisLedger": {
+      "title": "Where these atoms were made",
+      "subtitle": "Pick a sample from the moon and trace its inventory back to the events that built it",
+      "aria": "A stacked bar showing which astrophysical events produced the atoms in a chosen sample",
+      "hint": "{channel} supplied {pct}% of this sample. No single event builds a world — and weighing a sample gives a different answer from counting it, because the light atoms are numerous and the heavy ones are heavy.",
+      "basisLabel": "Weigh or count",
+      "basis": {
+        "mass": "By mass",
+        "atoms": "By atom count"
+      },
+      "target": {
+        "ocean": "Ocean water",
+        "mantle": "Silicate mantle",
+        "core": "Metallic core",
+        "air": "Pandoran air",
+        "blood": "Iron in blood",
+        "oreVein": "Heavy-metal vein"
+      },
+      "element": {
+        "H": "hydrogen",
+        "C": "carbon",
+        "N": "nitrogen",
+        "O": "oxygen",
+        "Mg": "magnesium",
+        "Al": "aluminium",
+        "Si": "silicon",
+        "S": "sulfur",
+        "Ca": "calcium",
+        "Fe": "iron",
+        "Ni": "nickel",
+        "Xe": "xenon",
+        "heavyMetals": "platinum group",
+        "actinides": "thorium, uranium"
+      },
+      "channel": {
+        "bigBang": "First minutes",
+        "agbWinds": "Dying small stars",
+        "coreCollapse": "Massive-star collapse",
+        "typeIa": "White-dwarf detonation",
+        "rProcess": "Neutron-star merger"
+      },
+      "axisEarly": "earliest events",
+      "axisLate": "latest events",
+      "dominantLabel": "Chief source",
+      "dominantNote": "{pct}% of the sample",
+      "primordialLabel": "Made before stars",
+      "primordialNone": "nothing here predates stars",
+      "primordialSome": "still carrying the first minutes"
+    },
+    "volatileSourceFingerprint": {
+      "title": "Reading the receipt on an ocean",
+      "subtitle": "Asteroid water plus a second supplier — and only one blend reproduces the value seawater actually has",
+      "aria": "A logarithmic axis of deuterium-to-hydrogen ratios with a mixing line between two water sources",
+      "hintReachable": "Seawater is reached when about {pct}% of the hydrogen comes from {source} — and that is a ceiling, not an estimate. Any larger share overshoots the measured ocean.",
+      "hintUnreachable": "No blend of asteroid water and {source} reaches seawater at all: the ocean's value lies outside the range these two suppliers span, so this pair cannot have delivered it between them.",
+      "secondSourceLabel": "Second supplier",
+      "reservoir": {
+        "protosolar": "Nebular gas",
+        "chondrite": "Carbonaceous asteroid",
+        "oortComet": "Long-period comet",
+        "comet67p": "Comet 67P"
+      },
+      "target": "seawater",
+      "axis": "deuterium per million hydrogen",
+      "verdictLabel": "Verdict",
+      "verdict": {
+        "match": "Reproduces it",
+        "tooLight": "Too light",
+        "tooHeavy": "Too heavy"
+      },
+      "resultLabel": "Blend",
+      "resultNote": "per million hydrogen",
+      "offsetLabel": "Off target",
+      "offsetNote": "against seawater",
+      "fractionLabel": "Share drawn from {source}"
+    },
     "alpha-centauri": {
       "title": "Alpha Centauri",
       "category": "Astronomy",

@@ -1,0 +1,27 @@
+id: vapour-pressure-deficit
+label:
+  vi: Độ hụt áp suất hơi
+  en: Vapour pressure deficit
+definition:
+  vi: >-
+    Độ chênh lệch giữa lượng hơi nước tối đa mà không khí bão hòa có thể chứa ở một nhiệt độ nhất định
+    và lượng hơi nước thực tế đang có trong khối khí đó. VPD là động lực nhiệt động lực học thực sự hút
+    nước từ lá cây và các bề mặt ẩm ướt vào khí quyển, phản ánh mức độ "khát" của không khí chuẩn xác
+    hơn độ ẩm tương đối.
+  en: >-
+    The difference between the amount of moisture the air can hold at saturation for a given temperature
+    and the actual moisture present in that parcel of air. VPD represents the true thermodynamic driving
+    force pulling water out of leaves and wet surfaces into the atmosphere, quantifying the atmospheric
+    drying demand far more accurately than relative humidity alone.
+see_also:
+  - evapotranspiration
+  - transpiration
+category: concept
+tags:
+  - atmosphere
+  - physics
+  - earth-systems
+cover_prompt: >-
+  A painted conceptual graph rendering the exponential Clausius-Clapeyron curve with a highlighted deficit
+  gap between saturated and actual vapor pressures, glowing gradient lines on dark textured canvas, no
+  text, no labels.

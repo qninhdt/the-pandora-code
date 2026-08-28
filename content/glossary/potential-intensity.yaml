@@ -1,0 +1,27 @@
+id: potential-intensity
+label:
+  vi: Cường độ tiềm năng
+  en: Potential intensity
+definition:
+  vi: >-
+    Mức giới hạn trên về tốc độ gió tối đa và mức giảm áp suất trung tâm thấp nhất mà một xoáy thuận
+    nhiệt đới có thể đạt tới, được tính toán dựa trên lý thuyết động cơ nhiệt Carnot của Kerry Emanuel.
+    Nó phụ thuộc vào nhiệt độ mặt nước biển (nguồn nhiệt nạp), nhiệt độ tầng đối lưu trên cao (nguồn xả
+    nhiệt), và tỷ số truyền nhiệt so với hệ số ma sát bề mặt.
+  en: >-
+    The theoretical upper bound on the maximum wind speed and minimum central pressure achievable by
+    a tropical cyclone, derived from Kerry Emanuel's Carnot heat-engine formulation. It is dictated by
+    sea surface temperature (heat intake), tropopause outflow temperature (heat exhaust), and the ratio
+    of surface exchange coefficients to surface drag.
+see_also:
+  - convective-available-potential-energy
+  - coriolis-effect
+category: concept
+tags:
+  - atmosphere
+  - oceanography
+  - physics
+cover_prompt: >-
+  A painted cross-section of a massive tropical cyclone vortex acting as a thermodynamic heat engine,
+  inflow arrows curving across a warm glowing sea into an eye wall exhausting into the frigid upper
+  stratosphere, no text, no labels.

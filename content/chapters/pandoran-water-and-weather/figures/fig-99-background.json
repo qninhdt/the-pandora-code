@@ -1,0 +1,31 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "pandoran-water-and-weather",
+  "role": "hero",
+  "narrative_purpose": "The dim, immersive macro layer the chapter's long-form text floats over - endless rain-hazed air seen from very high among the floating peaks, dark and low-contrast so overlaid reading stays legible.",
+  "subject": "An ultra-wide panoramic view from very high in Pandora's cloud layer, looking out across an immense expanse of drifting rain haze. Faint dark silhouettes of distant floating massifs recede in layers into the murk, each softer than the last, with the barest suggestion of pale water falling from one or two of them far off. No single focal subject and no sharp foreground - just layer upon layer of wet atmosphere dissolving into depth.",
+  "scene": "The high, quiet air among the suspended peaks during steady rain at dusk, everything soft and far away, visibility fading in every direction.",
+  "camera": "Extreme high-altitude ultra-wide panorama, looking out level into the haze, vast and distant.",
+  "light": "Very dim and even, no bright highlights and no directional source; a low moody ambient glow with the faintest cool light pooling in the far haze.",
+  "palette": "Almost entirely deep void-indigo and dark rain-grey, with only the faintest misty-cyan where distant water catches light; no warm accent, kept dark throughout.",
+  "style": "Painterly atmospheric mood plate, very soft and low-contrast, immersive and dim, NOT a sharp focal illustration and NOT a 3D render.",
+  "detail_level": "Low and soft throughout - intentionally hazy and dim so text sits over it comfortably; no crisp focal element anywhere in the frame.",
+  "composition": "Wide horizontal layering of haze and receding silhouettes, dark and even across the whole frame, empty of any bright or sharp focal point.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "bright focal subject",
+    "high contrast",
+    "sharp foreground object",
+    "UI",
+    "watermark",
+    "logos"
+  ],
+  "consistency_notes": "This is the dim background layer, distinct from the crisp fig-00-cover. Keep it dark, hazy, low-contrast and focal-point-free so overlaid long-form text remains readable.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no bright focal subject, no high contrast, no sharp foreground, no diagram chrome, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

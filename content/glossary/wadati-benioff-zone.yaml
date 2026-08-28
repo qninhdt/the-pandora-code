@@ -1,0 +1,31 @@
+id: wadati-benioff-zone
+label:
+  vi: Đới Wadati–Benioff
+  en: Wadati–Benioff zone
+definition:
+  vi: >-
+    Mặt phẳng nghiêng đầy tâm chấn cắm từ một máng đại dương xuống tới độ sâu chừng 670 km. Đây là hình
+    dạng của một tấm vỏ đang chìm được vẽ ra bằng chính những cơn địa chấn của nó: đá lạnh còn đủ giòn để
+    vỡ ở độ sâu mà đá xung quanh chỉ chảy, và nước bị nén nhả ra khỏi khoáng vật lại giúp nó tiếp tục vỡ.
+    Với một hành tinh chưa từng được đo, đây là phép thử dứt khoát nhất — tìm thấy các tâm chấn sâu hơn
+    100 km xếp thành mặt nghiêng là tìm thấy sự hút chìm đang hoạt động.
+  en: >-
+    The dipping plane of earthquakes that descends from an oceanic trench to depths of around 670 km. It is
+    the shape of a sinking slab drawn out by its own quakes: cold rock stays brittle enough to break at
+    depths where the surrounding rock merely flows, and water squeezed out of its minerals helps it keep
+    breaking. For a planet never yet measured, this is the most decisive test there is — find quakes deeper
+    than 100 km arranged on a dipping sheet and you have found active subduction.
+see_also:
+  - subduction
+  - slab-pull
+  - p-wave
+  - plate-tectonics
+category: concept
+tags:
+  - geology
+  - planetary-science
+cover_prompt: >-
+  A painted cross-section of a planet's outer few hundred kilometres with a narrow deep trench at the surface
+  and a long inclined plane of small bright points descending from it far into the darker interior, the points
+  thinning out with depth, cyan pinpoints against deep indigo rock, painterly geophysical plate, no text, no
+  labels, no depth scale.

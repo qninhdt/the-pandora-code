@@ -1,0 +1,180 @@
+{
+  "viz": {
+    "seismicShadow": {
+      "title": "Đọc lòng hành tinh từ thứ không bao giờ tới",
+      "subtitle": "Quét máy đo địa chấn quanh hành tinh và xem sóng ngang biến mất",
+      "aria": "Mặt cắt một hành tinh với các tia địa chấn đi từ nguồn ở đỉnh tới trạm thu ở góc thay đổi; quá 103 độ thì sóng ngang không còn tới nữa",
+      "hint": "Sóng ngang cần độ cứng mới truyền được. Chất lỏng thì không có, nên sóng ngang đơn giản là không thể xuyên qua một nhân ngoài nóng chảy — mà quá chừng 103° cung tròn, mọi đường tới trạm đều buộc phải đi qua đó. Trạm thu lặng tiếng. Chính sự lặng tiếng ấy, được vẽ bản đồ vòng quanh hành tinh từ năm 1914, là cách nhân loại biết nhân ngoài là chất lỏng mà chẳng cần đặt chân xuống đó. Đổi nhân thành rắn, sự lặng tiếng lập tức mất đi.",
+      "coreToggle": "Trạng thái nhân ngoài",
+      "core": {
+        "liquid": "Nhân ngoài lỏng",
+        "solid": "Rắn suốt lòng"
+      },
+      "source": "Chấn tiêu",
+      "shells": "Lớp phủ · nhân ngoài · nhân trong",
+      "distanceLabel": "Góc từ chấn tiêu tới trạm thu",
+      "pLabel": "Sóng dọc",
+      "sLabel": "Sóng ngang",
+      "noArrival": "Không có gì",
+      "arrival": {
+        "direct": "Đi thẳng qua lớp phủ",
+        "throughCore": "Bị bẻ cong qua nhân",
+        "precursor": "Mờ nhạt, xuyên nhân trong rắn",
+        "none": "Không đường nào tới được đây"
+      },
+      "verdictLabel": "Điều này chứng minh",
+      "verdict": {
+        "liquid": "Nhân là chất lỏng",
+        "transmits": "Cứng suốt xuống dưới",
+        "shadowRange": "Vùng tối sóng ngang chạy từ {from}° tới nửa cầu bên kia; sóng dọc trở lại ở {to}°",
+        "noShadow": "Không đâu có vùng tối — trạm nào cũng nghe được cả hai sóng"
+      }
+    },
+    "mantleRayleigh": {
+      "title": "Lớp ấy có đảo lộn, hay chỉ dẫn nhiệt?",
+      "subtitle": "Một con số không thứ nguyên quyết định lớp phủ có tự khuấy mình hay không",
+      "aria": "Thanh thang loga biểu diễn số Rayleigh so với ngưỡng tới hạn, kèm dấu mốc cho Trái Đất, Pandora và Mặt Trăng",
+      "hint": "Lực nổi đấu với độ nhớt, và số Rayleigh là bảng tỷ số. Dưới ngưỡng vài trăm, đá nóng ở đáy đơn giản là thua cuộc, nhiệt chỉ rỉ lên bằng dẫn nhiệt. Vượt ngưỡng, cả lớp đảo lộn. Hãy để ý thanh nhiệt độ làm thay đổi kết quả ít đến mức nào so với thanh độ nhớt — chính số mũ ấy là lý do một lớp phủ nóng hơn vài trăm độ lại hành xử như một chất khác hẳn.",
+      "critical": "Ngưỡng",
+      "axis": "Số Rayleigh (thang loga)",
+      "body": {
+        "earth": "Trái Đất",
+        "pandora": "Pandora",
+        "moon": "Mặt Trăng"
+      },
+      "preset": {
+        "earth": "Lớp phủ Trái Đất",
+        "pandora": "Pandora, ước lượng",
+        "moon": "Mặt Trăng hiện nay"
+      },
+      "dtLabel": "Độ chênh nhiệt qua lớp",
+      "thicknessLabel": "Bề dày lớp",
+      "viscosityLabel": "Độ nhớt của đá",
+      "gravityLabel": "Gia tốc trọng trường bề mặt",
+      "raLabel": "Số Rayleigh",
+      "nuLabel": "Nhiệt được tải",
+      "nuNote": "Gấp mấy lần lượng dẫn nhiệt đơn thuần tải nổi",
+      "verdictLabel": "Cách vận hành",
+      "verdict": {
+        "convects": "Đảo lộn",
+        "conducts": "Chỉ dẫn nhiệt",
+        "convectsNote": "Đá lưu chuyển; nhiệt cưỡi dòng chảy lên mặt",
+        "conductsNote": "Đá đứng yên; nhiệt chỉ rỉ chậm qua nó"
+      }
+    },
+    "tectonicRegime": {
+      "title": "Một thế giới rốt cuộc có lớp vỏ kiểu nào?",
+      "subtitle": "Nhiệt thoát ra, đặt cạnh độ bền của cái nắp mà nó phải xuyên qua",
+      "aria": "Bản đồ hai trục giữa dòng nhiệt bề mặt và độ bền phá hủy của thạch quyển, tô màu theo chế độ kiến tạo, kèm dấu mốc Trái Đất, Sao Kim, Sao Hỏa, Io và một ô nét đứt phủ khoảng khả dĩ của Pandora",
+      "hint": "Chẳng hành tinh nào tự chọn có kiến tạo hay không. Lớp phủ của nó cứ đối lưu bất kể; câu hỏi duy nhất là ứng suất dồn tới bên dưới lớp vỏ có phá nổi lớp vỏ ấy hay không. Hai con số định đoạt điều đó, và Trái Đất nằm trong một góc hẹp của bản đồ, nơi câu trả lời chỉ vừa đủ là có. Pandora được vẽ thành một ô chứ không phải một điểm, vì chính sử ấn định lượng nhiệt của nó nhưng tuyệt nhiên không nói gì về việc lớp vỏ ấy bền hay ngậm nước đến đâu — và cái ô ấy băng qua mọi đường biên.",
+      "axisFlux": "Nhiệt rời khỏi bề mặt (W/m², thang loga)",
+      "axisYield": "Độ bền lớp vỏ (MPa)",
+      "body": {
+        "earth": "Trái Đất",
+        "venus": "Sao Kim",
+        "mars": "Sao Hỏa",
+        "io": "Io",
+        "pandora": "Pandora?"
+      },
+      "fluxLabel": "Nhiệt rời khỏi bề mặt",
+      "yieldLabel": "Độ bền của lớp vỏ",
+      "stressLabel": "Ứng suất từ bên dưới",
+      "ratioLabel": "Ứng suất ÷ độ bền",
+      "regimeLabel": "Chế độ",
+      "regime": {
+        "mobileLid": "Vỏ dịch chuyển",
+        "sluggishLid": "Vỏ trì trệ",
+        "stagnantLid": "Một lớp đóng băng",
+        "heatPipe": "Thoát qua dòng magma"
+      },
+      "regimeNote": {
+        "mobileLid": "Nắp vỡ ra, chìm xuống, rồi được tạo lại — cách của Trái Đất",
+        "sluggishLid": "Nắp biến dạng chậm rãi mà không vỡ thành các mảng",
+        "stagnantLid": "Một lớp vỏ liền khối; nhiệt dẫn xuyên qua nó — Sao Kim, Sao Hỏa",
+        "heatPipe": "Magma mang nhiệt ra ngoài và chôn vùi mặt đất cũ — Io"
+      }
+    },
+    "burialMountain": {
+      "title": "Hai cách dựng nên một ngọn núi",
+      "modeToggle": "Cơ chế tạo núi",
+      "mode": {
+        "burial": "Bị chôn rồi bị nén",
+        "collision": "Lục địa va nhau"
+      },
+      "subtitle": {
+        "burial": "Chôn một lớp vỏ đủ sâu, chính hình cầu sẽ nén nó bật lên",
+        "collision": "Lớp vỏ nhẹ dày lên, nổi trên đá nặng hơn"
+      },
+      "aria": {
+        "burial": "Mặt cắt lớp vỏ bị chôn dưới các tầng dung nham xếp lớp, bị nén vào từ hai bên, với một khối vỏ bị đẩy vọt lên dọc một đứt gãy chờm sâu",
+        "collision": "Mặt cắt hai mảng hội tụ dựng nên một dãy núi uốn nếp với chân rễ vỏ nổi cắm sâu bên dưới"
+      },
+      "hint": {
+        "burial": "Io có những ngọn núi cao mười tám kilômét và không hề có một ranh giới mảng nào. Dung nham chôn vùi mặt nó chừng một centimét mỗi năm, và lớp vỏ bị chôn thì lún xuống — nhưng một hình cầu càng xuống sâu càng ít chỗ hơn ở trên, nên lớp vỏ bị dồn vào thế nén ngang khủng khiếp. Cuối cùng nó vỡ, và từng tấm vỏ bị đẩy vọt lên trời. Đỉnh cao không phải bằng chứng của lục địa va nhau.",
+        "collision": "Các dãy núi của Trái Đất thì nổi. Vỏ lục địa nhẹ hơn lớp phủ bên dưới, nên một chồng vỏ dày lên sẽ đứng cao theo đúng lối một tảng băng trôi đứng cao — và giấu phần lớn thân mình bên dưới. Cái chân rễ ẩn ấy là dấu hiệu tố giác: đo trọng lực một ngọn núi là biết ngay nó nổi lên, hay chỉ bị chống lên."
+      },
+      "compression": "Lớp vỏ hết chỗ",
+      "thrustFault": "Đứt gãy chờm sâu",
+      "root": "Chân rễ nổi, {km} km",
+      "peak": "{km} km",
+      "heightLabel": "Độ cao đỉnh",
+      "burialLabel": "Độ sâu bị chôn",
+      "radiusLabel": "Bán kính thiên thể",
+      "stressLabel": "Lực nén ngang",
+      "stressNote": "Từ diện tích thu hẹp lại ở dưới sâu",
+      "thresholdLabel": "Lớp vỏ vỡ ở",
+      "rootLabel": "Chân rễ ẩn",
+      "rootNote": "Độ sâu lớp vỏ nhẹ nằm dưới đỉnh",
+      "hiddenLabel": "Ngoài tầm mắt",
+      "hiddenNote": "Phần cấu trúc nằm dưới mặt đất",
+      "outcomeLabel": "Kết quả",
+      "outcome": {
+        "thrusts": "Khối vỏ bị đẩy vọt lên",
+        "thrustsNote": "Đứt gãy sâu cắt qua và nâng từng tấm vỏ lên",
+        "holds": "Lớp vỏ trụ được",
+        "holdsNote": "Chưa bị nén đủ mạnh để vỡ",
+        "collision": "Dãy núi nổi lên",
+        "collisionNote": "Được lực nổi giữ, không phải bị ép lên"
+      }
+    },
+    "oreGenesis": {
+      "title": "Quặng từ đâu ra — và cần những gì",
+      "subtitle": "Năm con đường từ đá thường thành một mỏ đáng khai thác",
+      "aria": "Biểu đồ thanh năm con đường sinh quặng theo hệ số làm giàu, những con đường không khả dụng trong chế độ kiến tạo đang chọn thì bị làm mờ và ghi là đã khép",
+      "hint": "Một kim loại ở mức vài phần triệu thì chẳng đáng gì; đậm hơn ngàn lần thì thành một mỏ. Mỗi con đường dẫn tới độ đậm ấy đều có điều kiện riêng, và phần lớn những con đường giàu có trên Trái Đất đều cần một ranh giới mảng, cần nước lưu chuyển, hoặc cần cả hai — đó là lý do quặng trên Trái Đất nằm thành những vành đai đoán trước được chứ không rải rác tùy hứng. Hãy đổi chế độ và xem con đường nào khép lại. Một thế giới không có lớp vỏ dịch chuyển vẫn tạo được quặng. Nó chỉ khó tạo nổi loại giàu nhất.",
+      "regimeToggle": "Chế độ kiến tạo",
+      "regimeShort": {
+        "mobileLid": "Vỏ dịch chuyển",
+        "sluggishLid": "Trì trệ",
+        "stagnantLid": "Vỏ đóng băng",
+        "heatPipe": "Thoát qua magma"
+      },
+      "pathway": {
+        "magmatic": "Lắng tách khỏi magma",
+        "arcHydrothermal": "Dung dịch nóng trên mảng chìm",
+        "ridgeVms": "Miệng phun đáy biển",
+        "orogenicGold": "Nước bị va chạm ép ra",
+        "sedimentary": "Nước phân loại trên mặt đất"
+      },
+      "requirement": {
+        "magmatic": "Chỉ cần một khối magma nguội chậm — thế giới núi lửa nào cũng có",
+        "arcHydrothermal": "Cần nước theo mảng chìm xuống rồi nhả ra vào magma đang trồi",
+        "ridgeVms": "Cần nước biển lưu chuyển qua lớp vỏ non còn nóng ở trục tách giãn",
+        "orogenicGold": "Cần một vành đai va chạm hầm nước ra khỏi đá bị chôn",
+        "sedimentary": "Cần sông, mưa và một mặt đất liên tục được làm mới"
+      },
+      "closed": "Không khả dụng",
+      "axis": "Mức làm giàu so với đá thường (thang loga)",
+      "openLabel": "Đường còn mở",
+      "openNote": "Trong chế độ này",
+      "bestLabel": "Giàu nhất có thể",
+      "bestNote": "Mức làm giàu cao nhất chế độ này cho phép",
+      "selectedLabel": "Đường đang chọn",
+      "selected": {
+        "open": "Khả dụng",
+        "closed": "Bị loại",
+        "closedNote": "Một thế giới {regime} không có bối cảnh cho con đường này"
+      }
+    }
+  }
+}

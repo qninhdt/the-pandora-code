@@ -1,0 +1,30 @@
+{
+  "id": "fig-02-canopy-vapour-rise",
+  "chapter_slug": "pandoran-water-and-weather",
+  "role": "diagram",
+  "narrative_purpose": "Makes the pump visible: water leaving a landscape upward through leaves rather than off the ground, and gathering into the cloud layer that will carry it. The reader should see the forest as machinery, not scenery.",
+  "subject": "A view looking across the top of an unbroken rainforest canopy in early morning, from just above the leaves. Faint columns and sheets of vapour lift off the canopy in many places at once, thin near the leaves and thickening as they rise, merging into a low flat-bottomed cloud layer a short distance above the treetops. Beneath the canopy edge the forest floor is dark and still, with no vapour rising from it - the contrast between the busy canopy and the inert floor is deliberate.",
+  "scene": "Just after dawn over a lowland rainforest, air still, the whole canopy exhaling at once, a fresh cloud layer assembling overhead.",
+  "camera": "Low oblique aerial view skimming the canopy surface, horizon high in the frame so the cloud layer and the rising vapour both read.",
+  "light": "Low early light from one side catching the vapour so it reads as luminous sheets against darker canopy; the shaded understory almost black.",
+  "palette": "Living-teal canopy, pale misty-cyan vapour, void-indigo sky above, deep near-black shadow under the leaves.",
+  "style": "Painterly plate reading as a diagram through its layout rather than any chrome; soft glowing volumes and brushed vapour, NOT a hard vector schematic and NOT a 3D render.",
+  "detail_level": "Moderate: individual vapour columns distinct near the canopy, softening as they merge into the cloud base; canopy texture legible but not leaf-by-leaf.",
+  "composition": "Clear horizontal stratification - dark understory, bright busy canopy, rising vapour, flat cloud base - so the upward direction of the whole system reads instantly. Keep the sky band above the cloud base plain for callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "grid",
+    "UI",
+    "watermark",
+    "logos"
+  ],
+  "consistency_notes": "Same living-teal canopy used throughout the chapter; vapour and cloud in the misty-cyan reserved for water in the air. Vapour is painterly sheets, never vector arrows.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no grid, no diagram chrome, no photographic or 3D-render look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

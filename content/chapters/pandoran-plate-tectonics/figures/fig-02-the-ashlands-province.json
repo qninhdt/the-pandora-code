@@ -1,0 +1,38 @@
+{
+  "id": "fig-02-the-ashlands-province",
+  "chapter_slug": "pandoran-plate-tectonics",
+  "role": "inline",
+  "narrative_purpose": "The third of the four clues: establish the Ashlands as a real volcanic province while making visible that a province tells you volcanism happened, not how it is arranged across the world.",
+  "subject": "A vast dark plain of solidified basalt stretches to a distant horizon. Across it stand seven or eight steep conical cinder cones of varying size, scattered irregularly rather than in any line. Left of centre, a broad shallow circular depression several kilometres across breaks the plain — a collapsed caldera with a stepped inner rim. Sheets of pale ash lie draped over the older dark flows in soft grey patches. Two or three narrow fissures far in the middle distance glow dull ember-red. No vegetation anywhere; the ground is bare rock and ash. The sky is heavy with dark haze.",
+  "scene": "A regional volcanic wasteland on Pandora at dusk, viewed from a low ridge at its margin.",
+  "camera": "Elevated wide panorama from a ridge at the province's edge, looking out and slightly down across the plain to the horizon.",
+  "light": "Dim overcast dusk from above, with faint dull ember-red underlight from the distant fissures and no other warm source; the ash sheets catching a cold pale grey; deep indigo in the shadowed cone flanks.",
+  "palette": "Obsidian and void-indigo basalt, cold pale grey ash, deep teal-indigo haze, sparse dull ember-red confined to the far fissures only.",
+  "style": "Painterly geological field plate, matte volcanic rock texture, layered atmospheric haze, restrained and desolate rather than dramatic.",
+  "detail_level": "Crisp ropy and blocky lava texture and ash drift in the foreground; the cones and caldera rim softening progressively into haze toward the horizon.",
+  "composition": "A low horizon in the upper third; the caldera depression as a broad dark ellipse left of centre; the cinder cones scattered across the middle distance with no linear alignment; large expanses of plain dark rock left uncluttered.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "diagram lines",
+    "erupting fountains of lava",
+    "large lava rivers",
+    "vegetation",
+    "spacecraft",
+    "buildings",
+    "humans",
+    "machines"
+  ],
+  "consistency_notes": "This is a cooled, quiet province, not an eruption in progress — the point is the landform inventory, not the catastrophe. Keep warm tones minimal so the frame stays in Pandora's cool register.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no diagram lines, no arrows, no active eruption columns, no bright lava rivers, no photographic or 3D-render look, no lens flares, no modern machines, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

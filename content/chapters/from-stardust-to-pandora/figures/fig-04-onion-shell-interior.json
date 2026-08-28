@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-onion-shell-interior",
+  "chapter_slug": "from-stardust-to-pandora",
+  "role": "diagram",
+  "narrative_purpose": "Lets the reader see that a dying massive star is not uniform but a nest of concentric burning zones, with a dark inert centre that is the reason the whole structure is about to fail.",
+  "subject": "A cutaway of a spherical star with a wedge removed so the interior is exposed. Inside, six nested concentric shells of clearly different colour and texture, from a broad diffuse outermost shell to progressively thinner, denser, brighter shells further in. At the very centre, a small distinctly dark, dense, dull sphere - the only unlit thing in the picture.",
+  "scene": "The star hangs alone against empty dark space with a few faint distant stars. Fine wisps of gas drift off the outer surface.",
+  "camera": "Straight-on view of the cutaway, the wedge opening toward the viewer so all shells are visible at once, star centred.",
+  "light": "Self-luminous: each inner shell brighter and hotter-looking than the one outside it, glow spilling across the cut faces. The central sphere reflects nothing and stays dark against the brilliance around it.",
+  "palette": "Outermost shells cool teal and cyan, middle shells brightening through mist-white, inner shells warm amber, the central sphere a dull desaturated stone grey - warm strictly confined to the inner shells.",
+  "style": "Painterly naturalist cross-section plate, hand-rendered, soft-edged boundaries between shells rather than hard lines.",
+  "detail_level": "Moderate: shell boundaries clearly readable as distinct zones, each with its own texture, but no hard outlines or engineering precision.",
+  "composition": "Star centred and filling about two-thirds of the frame height. Empty dark space to the left and right of it for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "watermark", "logos", "UI", "grid", "ruler marks", "cross-hatching"],
+  "consistency_notes": "Six shells, no more - crowding them makes the picture unreadable. The dark centre must be unmistakably dark and unmistakably small relative to the shells.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no grid, no diagram chrome, no vector or flat-design look, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

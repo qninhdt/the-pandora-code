@@ -1,0 +1,24 @@
+id: terminal-velocity
+label:
+  vi: Vận tốc rơi tới hạn
+  en: Terminal velocity
+definition:
+  vi: >-
+    Vận tốc cực đại không đổi mà một vật thể rơi tự do (như giọt mây hoặc hạt mưa) đạt được khi lực cản
+    của chất lưu xung quanh bằng đúng trọng lực kéo vật thể xuống. Do Pandora có trọng lực bề mặt thấp hơn
+    và mật độ không khí dày hơn Trái Đất, mọi hạt mưa rơi trên Pandora đều có vận tốc tới hạn thấp hơn khoảng
+    hai mươi phần trăm, giúp các hạt nước nán lại lâu hơn trong mây để tiếp tục lớn lên qua hợp nhất.
+  en: >-
+    The constant maximum velocity attained by a falling object (such as a cloud droplet or raindrop)
+    when the upward aerodynamic drag force equals the downward gravitational force. Due to Pandora's
+    lower surface gravity and denser atmosphere, falling raindrops reach terminal velocities roughly twenty
+    percent lower than on Earth, prolonging in-cloud residence times and enhancing coalescence growth.
+see_also:
+  - collision-coalescence
+category: concept
+tags:
+  - physics
+  - atmosphere
+cover_prompt: >-
+  A painted artistic diagram of a falling water droplet reaching aerodynamic equilibrium, drag streamlines
+  flowing smoothly around its flattened base against a dark atmospheric gradient, no text, no labels.

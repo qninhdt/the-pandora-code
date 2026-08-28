@@ -1,0 +1,180 @@
+{
+  "viz": {
+    "seismicShadow": {
+      "title": "Reading an interior from what never arrives",
+      "subtitle": "Sweep a seismometer around the planet and watch the shear wave disappear",
+      "aria": "A cross-section of a planet with seismic ray paths from a source at the top to a station at a variable angle; past 103 degrees the shear wave arrival is absent",
+      "hint": "Shear waves need rigidity. A liquid has none, so a shear wave simply cannot cross a molten outer core — and past about 103° of arc, every path to the station must go through it. The station falls silent. That silence, mapped all the way around the planet in 1914, is how we learned the core was liquid without ever going there. Set the core solid and the silence vanishes.",
+      "coreToggle": "Outer core state",
+      "core": {
+        "liquid": "Liquid outer core",
+        "solid": "Solid throughout"
+      },
+      "source": "Quake",
+      "shells": "Mantle · outer core · inner core",
+      "distanceLabel": "Angle from the quake to the station",
+      "pLabel": "Compression wave",
+      "sLabel": "Shear wave",
+      "noArrival": "Nothing",
+      "arrival": {
+        "direct": "Straight through the mantle",
+        "throughCore": "Bent through the core",
+        "precursor": "Faint, via the solid inner core",
+        "none": "No path can reach here"
+      },
+      "verdictLabel": "What this proves",
+      "verdict": {
+        "liquid": "Core is liquid",
+        "transmits": "Rigid all the way down",
+        "shadowRange": "Shear shadow runs from {from}° to the far side; compression returns at {to}°",
+        "noShadow": "No shadow anywhere — every station hears both waves"
+      }
+    },
+    "mantleRayleigh": {
+      "title": "Does the layer overturn, or just conduct?",
+      "subtitle": "One dimensionless number decides whether a mantle stirs itself",
+      "aria": "A logarithmic bar showing the Rayleigh number against its critical threshold, with markers for Earth, Pandora and the Moon",
+      "hint": "Buoyancy fights viscosity, and the Rayleigh number is the scorecard. Below a threshold of a few hundred, hot rock at the bottom simply loses the argument and heat trickles upward by conduction. Above it, the layer overturns. Notice how little the temperature slider moves the answer compared to the viscosity slider — that exponent is why a mantle a few hundred degrees hotter behaves like a different substance.",
+      "critical": "Threshold",
+      "axis": "Rayleigh number (log scale)",
+      "body": {
+        "earth": "Earth",
+        "pandora": "Pandora",
+        "moon": "Moon"
+      },
+      "preset": {
+        "earth": "Earth's mantle",
+        "pandora": "Pandora, estimated",
+        "moon": "The Moon today"
+      },
+      "dtLabel": "Temperature drop across the layer",
+      "thicknessLabel": "Layer thickness",
+      "viscosityLabel": "Rock viscosity",
+      "gravityLabel": "Surface gravity",
+      "raLabel": "Rayleigh number",
+      "nuLabel": "Heat carried",
+      "nuNote": "Times what conduction alone would deliver",
+      "verdictLabel": "Behaviour",
+      "verdict": {
+        "convects": "Overturns",
+        "conducts": "Only conducts",
+        "convectsNote": "Rock circulates; heat rides the flow to the surface",
+        "conductsNote": "Rock stays put; heat seeps through it slowly"
+      }
+    },
+    "tectonicRegime": {
+      "title": "Which kind of crust does a world end up with?",
+      "subtitle": "Heat flowing out, against the strength of the lid it has to escape through",
+      "aria": "A two-axis map of surface heat flux against lithospheric yield strength, shaded by tectonic regime, with markers for Earth, Venus, Mars and Io and a dashed box covering Pandora's plausible range",
+      "hint": "No planet decides whether to have tectonics. Its mantle convects regardless; the only question is whether the stress arriving underneath the crust can break it. Two numbers settle that, and Earth sits in a narrow corner of the map where the answer is barely yes. Pandora is drawn as a box rather than a dot because canon fixes its heat but says nothing at all about how strong or how wet its crust is — and the box crosses every boundary.",
+      "axisFlux": "Heat leaving the surface (W/m², log scale)",
+      "axisYield": "Crustal strength (MPa)",
+      "body": {
+        "earth": "Earth",
+        "venus": "Venus",
+        "mars": "Mars",
+        "io": "Io",
+        "pandora": "Pandora?"
+      },
+      "fluxLabel": "Heat leaving the surface",
+      "yieldLabel": "Strength of the crust",
+      "stressLabel": "Stress from below",
+      "ratioLabel": "Stress ÷ strength",
+      "regimeLabel": "Regime",
+      "regime": {
+        "mobileLid": "Moving crust",
+        "sluggishLid": "Sluggish crust",
+        "stagnantLid": "One frozen shell",
+        "heatPipe": "Vented through melt"
+      },
+      "regimeNote": {
+        "mobileLid": "The lid breaks, sinks, and is remade — Earth's arrangement",
+        "sluggishLid": "The lid deforms slowly without breaking into plates",
+        "stagnantLid": "A single unbroken shell; heat conducts through it — Venus, Mars",
+        "heatPipe": "Melt carries the heat out and buries the old surface — Io"
+      }
+    },
+    "burialMountain": {
+      "title": "Two ways to raise a mountain",
+      "modeToggle": "Mountain-building mechanism",
+      "mode": {
+        "burial": "Buried and squeezed",
+        "collision": "Continents colliding"
+      },
+      "subtitle": {
+        "burial": "Bury a crust deep enough and the sphere itself squeezes it upward",
+        "collision": "Thickened light crust floating on heavier rock"
+      },
+      "aria": {
+        "burial": "A cross-section of crust buried under stacked lava sheets, compressed inward, with a fault-bounded block thrust upward along a deep thrust fault",
+        "collision": "A cross-section of two converging plates raising a folded mountain range with a deep buoyant crustal root beneath it"
+      },
+      "hint": {
+        "burial": "Io has mountains eighteen kilometres tall and not one plate boundary. Lava buries its surface at roughly a centimetre a year, and buried crust sinks — but a shrinking sphere has less room at depth than at the top, so the crust is forced into enormous sideways compression. Eventually it fails, and slabs of it are shoved into the sky. Tall peaks are not proof of colliding continents.",
+        "collision": "Earth's ranges float. Continental crust is lighter than the mantle beneath it, so a thickened pile sits high the way an iceberg does — and hides most of itself below. That hidden root is the giveaway: measure a mountain's gravity and you learn whether it is buoyant, or merely propped up."
+      },
+      "compression": "Crust running out of room",
+      "thrustFault": "Deep thrust fault",
+      "root": "Buoyant root, {km} km",
+      "peak": "{km} km",
+      "heightLabel": "Peak height",
+      "burialLabel": "Depth of burial",
+      "radiusLabel": "Radius of the world",
+      "stressLabel": "Sideways squeeze",
+      "stressNote": "From the shrinking area at depth",
+      "thresholdLabel": "Crust gives way at",
+      "rootLabel": "Hidden root",
+      "rootNote": "Depth of light crust below the peak",
+      "hiddenLabel": "Out of sight",
+      "hiddenNote": "Share of the structure that is underground",
+      "outcomeLabel": "Result",
+      "outcome": {
+        "thrusts": "Blocks thrust upward",
+        "thrustsNote": "Deep faults slice through and lift slabs of crust",
+        "holds": "Crust holds",
+        "holdsNote": "Not yet squeezed hard enough to fail",
+        "collision": "Range floats",
+        "collisionNote": "Held up by buoyancy, not by force"
+      }
+    },
+    "oreGenesis": {
+      "title": "Where ore comes from — and what it needs",
+      "subtitle": "Five routes from ordinary rock to a deposit worth mining",
+      "aria": "A bar chart of five ore-forming pathways by enrichment factor, with the ones unavailable in the selected tectonic regime dimmed and marked closed",
+      "hint": "A metal at a few parts per million is worthless; at a thousand times that it is a mine. Every route to that concentration has requirements, and most of the rich ones on Earth need a plate boundary, circulating water, or both — which is why terrestrial ore sits in predictable belts rather than scattered at random. Switch the regime and watch which routes close. A world with no moving crust can still make ore. It has a much harder time making the richest kind.",
+      "regimeToggle": "Tectonic regime",
+      "regimeShort": {
+        "mobileLid": "Moving crust",
+        "sluggishLid": "Sluggish",
+        "stagnantLid": "Frozen shell",
+        "heatPipe": "Melt-vented"
+      },
+      "pathway": {
+        "magmatic": "Settling out of magma",
+        "arcHydrothermal": "Hot fluids above a sinking slab",
+        "ridgeVms": "Seafloor vents",
+        "orogenicGold": "Fluids wrung out by collision",
+        "sedimentary": "Sorted by water at the surface"
+      },
+      "requirement": {
+        "magmatic": "Needs only a magma body cooling slowly — available to any volcanic world",
+        "arcHydrothermal": "Needs water carried down a sinking slab and released into rising magma",
+        "ridgeVms": "Needs seawater circulating through hot young crust at a spreading axis",
+        "orogenicGold": "Needs a collisional belt cooking water out of buried rock",
+        "sedimentary": "Needs rivers, rain and a surface that keeps being renewed"
+      },
+      "closed": "Not available",
+      "axis": "Enrichment over ordinary rock (log scale)",
+      "openLabel": "Routes open",
+      "openNote": "In this regime",
+      "bestLabel": "Richest reachable",
+      "bestNote": "Best enrichment this regime allows",
+      "selectedLabel": "Chosen route",
+      "selected": {
+        "open": "Available",
+        "closed": "Ruled out",
+        "closedNote": "A {regime} world has no setting for this"
+      }
+    }
+  }
+}

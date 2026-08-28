@@ -1,0 +1,20 @@
+{
+  "id": "fig-08-a-disk-around-a-giant",
+  "chapter_slug": "from-stardust-to-pandora",
+  "role": "diagram",
+  "narrative_purpose": "Shows a giant planet building its moons in a disk of its own, which explains both why satellite systems come out orderly and why they come out small.",
+  "subject": "A young banded gas giant, cream and rust banded with one large oval storm, encircled by a thin bright disk of gas and dust seen at a shallow angle. Four small moons are taking shape within the disk at different distances from the planet - the innermost smallest and barely distinct from the dust, the outer ones progressively rounder and more solid. Two faint funnels of material descend into the disk from above and below, feeding it from outside.",
+  "scene": "Deep space with faint distant stars. A much larger, dimmer wash of the surrounding stellar disk fills the far background, out of focus, establishing that this small disk sits inside a bigger one.",
+  "camera": "Wide view from about twenty degrees above the disk plane, planet centred, disk extending symmetrically to both edges of the frame.",
+  "light": "A distant off-frame star lights the planet from the left, leaving its right limb dark; the disk catches that light and glows cool where it is densest; the forming moons are dark bodies with thin bright rims.",
+  "palette": "Void-indigo space, cream-and-rust planet banding kept restrained, cool cyan and teal disk, mist-grey brightest disk lanes, small dark stone-grey moons.",
+  "style": "Painterly astronomical plate, soft and atmospheric, not a hard vector diagram and not a 3D render.",
+  "detail_level": "Moderate: the disk's flatness, the four distinct moons and the infall funnels readable; painterly softness throughout.",
+  "composition": "Planet centred, disk running horizontally across the frame, moons distributed along the disk's right-hand side. Open dark space in the upper left and lower right for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "orbit lines", "watermark", "logos", "UI", "grid", "rings with sharp edges"],
+  "consistency_notes": "This is Polyphemus in youth - same cream-and-rust banding and single large oval storm as the chapter's other gas-giant appearances. Exactly four forming moons, all small relative to the planet.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no orbit lines, no grid, no diagram chrome, no vector or flat-design look, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/from-stardust-to-pandora/fig-00-cover.png"]
+}

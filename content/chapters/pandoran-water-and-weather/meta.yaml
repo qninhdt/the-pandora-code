@@ -1,0 +1,180 @@
+slug: pandoran-water-and-weather
+status: published
+title:
+  vi: Nước và Thời tiết trên Pandora
+  en: Pandora's Water and Weather
+subtitle:
+  vi: >-
+    Một thác nước rơi khỏi tảng đá không có gì phía trên - và cỗ máy phải chạy suốt ngày đêm để ngọn
+    thác ấy không cạn
+  en: >-
+    A waterfall pouring off a rock with nothing above it - and the machine that has to run day and
+    night to keep it from running dry
+hook:
+  vi: >-
+    Từ mặt dưới của một khối núi bay, nước rời khỏi đá thành một dải trắng rồi tan vào sương trước
+    khi kịp chạm đất. Phía trên tảng đá ấy không có gì cả - không sông, không tuyết, không lưu vực.
+    Vậy dòng nước đó đến từ đâu, và vì sao sau bao nhiêu triệu năm nó vẫn chưa cạn? Câu hỏi nghe như
+    một chi tiết nhỏ trong phim, nhưng để trả lời được, ta phải dựng lại toàn bộ vòng tuần hoàn nước
+    của cả một hành tinh.
+  en: >-
+    From the underside of a floating massif, water leaves the rock as a white ribbon and dissolves
+    into mist before it ever reaches the ground. There is nothing above that rock - no river, no
+    snowfield, no catchment. So where does the water come from, and why, after all this time, has it
+    not run dry? It sounds like a small question about a film. Answering it means rebuilding the
+    entire water cycle of a world.
+authors:
+  - bardabez
+tags:
+  - hydrology
+  - atmospheric-physics
+  - cloud-microphysics
+  - geomorphology
+  - planetary-science
+classification:
+  canon_pct: 18
+  inference_pct: 17
+  speculation_pct: 8
+  real_science_pct: 57
+related_chapters:
+  - continents-oceans-climate
+  - whats-in-the-air
+  - time-on-pandora
+  - floating-mountains-and-the-superconductor
+  - pandoras-ocean
+glossary_terms:
+  - residence-time
+  - evapotranspiration
+  - vapour-pressure-deficit
+  - precipitation-recycling
+  - cloud-condensation-nuclei
+  - koehler-theory
+  - collision-coalescence
+  - terminal-velocity
+  - lifting-condensation-level
+  - convective-available-potential-energy
+  - potential-intensity
+  - drainage-density
+  - baseflow
+  - knickpoint
+  - stream-power-incision
+  - occult-precipitation
+  - adiabatic-lapse-rate
+  - orographic-lift
+  - planetary-boundary-layer
+  - transpiration
+  - coriolis-effect
+  - hadley-cell
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-underside-cataract
+    role: hero
+    asset_status: ready
+  - id: fig-02-canopy-vapour-rise
+    role: diagram
+    asset_status: ready
+  - id: fig-03-aerial-river
+    role: diagram
+    asset_status: ready
+  - id: fig-04-drop-scale
+    role: comparison
+    asset_status: ready
+  - id: fig-05-afternoon-tower
+    role: diagram
+    asset_status: ready
+  - id: fig-06-eclipse-collapse
+    role: comparison
+    asset_status: ready
+  - id: fig-07-marine-squall
+    role: inline
+    asset_status: ready
+  - id: fig-08-knickpoint-retreat
+    role: diagram
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Hallelujah Mountains - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Hallelujah_Mountains
+  - kind: canon
+    label: Pandora - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Pandora
+  - kind: canon
+    label: Avatar (2009) - original screenplay
+    url: https://imsdb.com/scripts/Avatar.html
+  - kind: canon
+    label: Avatar - The Way of Water (2022) - transcript
+    url: https://scrapsfromtheloft.com/movies/avatar-way-of-water-transcript/
+  - kind: canon
+    label: >-
+      Wilhelm, M. & Mathison, D. (2009). James Cameron's Avatar - An Activist Survival Guide
+      (atmospheric and gravitational parameters)
+  - kind: community
+    label: >-
+      Avatar - Frontiers of Pandora (Massive Entertainment, 2023): Kinglor Forest and Clouded Forest
+      biomes, dynamic weather
+    url: >-
+      https://www.ubisoft.com/en-gb/game/avatar/frontiers-of-pandora/news-updates/4Z1dkc7Ln6YGSrsrCtZH0B/community-highlight-2-a-twisted-world
+  - kind: science
+    label: >-
+      Trenberth, K. E. et al. (2007). Estimates of the Global Water Budget and Its Annual Cycle
+      Using Observational and Model Data. Journal of Hydrometeorology 8(4), 758-769
+    url: https://journals.ametsoc.org/view/journals/hydr/8/4/jhm600_1.xml
+  - kind: science
+    label: Penman-Monteith equation and reference evapotranspiration - FAO Irrigation & Drainage 56
+    url: https://www.fao.org/4/x0490e/x0490e06.htm
+  - kind: science
+    label: Clausius-Clapeyron relation - Wikipedia
+    url: https://en.wikipedia.org/wiki/Clausius%E2%80%93Clapeyron_relation
+  - kind: science
+    label: >-
+      Makarieva, A. M. & Gorshkov, V. G. (2007). Biotic pump of atmospheric moisture as driver of
+      the hydrological cycle on land. HESS Discussions 3, 2621-2673 (contested hypothesis)
+    url: https://www.bioticregulation.ru/common/pdf/06d02p-watpr_gm-en.pdf
+  - kind: science
+    label: Köhler theory of cloud droplet activation - Wikipedia
+    url: https://en.wikipedia.org/wiki/K%C3%B6hler_theory
+  - kind: science
+    label: Gunn, R. & Kinzer, G. D. (1949). The terminal velocity of fall for water droplets
+    url: >-
+      https://journals.ametsoc.org/view/journals/atsc/6/4/1520-0469_1949_006_0243_ttvoff_2_0_co_2.xml
+  - kind: science
+    label: Convective available potential energy - Wikipedia
+    url: https://en.wikipedia.org/wiki/Convective_available_potential_energy
+  - kind: science
+    label: >-
+      Harrison, R. G. & Hanna, E. (2016). The solar eclipse - a natural meteorological experiment.
+      Phil. Trans. R. Soc. A 374(2077), 20150225
+    url: https://royalsocietypublishing.org/doi/10.1098/rsta.2015.0225
+  - kind: science
+    label: >-
+      Gray, S. L. & Harrison, R. G. (2019). Diagnosing eclipse-induced wind changes. Frontiers in
+      Earth Science 7, 198
+    url: https://www.frontiersin.org/articles/10.3389/feart.2019.00198/full
+  - kind: science
+    label: >-
+      Emanuel, K. A. (1986). An air-sea interaction theory for tropical cyclones. Part I - maximum
+      potential intensity
+    url: >-
+      https://journals.ametsoc.org/view/journals/atsc/43/6/1520-0469_1986_043_0585_aasitf_2_0_co_2.xml
+  - kind: science
+    label: Horton's laws of drainage composition - Wikipedia
+    url: https://en.wikipedia.org/wiki/Horton%27s_laws
+  - kind: science
+    label: >-
+      Whipple, K. X. & Tucker, G. E. (1999). Dynamics of the stream-power river incision model.
+      Journal of Geophysical Research 104(B8), 17661-17674
+    url: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/1999JB900120
+  - kind: science
+    label: >-
+      Bruijnzeel, L. A., Mulligan, M. & Scatena, F. N. (2011). Hydrometeorology of tropical montane
+      cloud forests - emerging patterns
+    url: https://onlinelibrary.wiley.com/doi/10.1002/hyp.7974
+  - kind: science
+    label: Titan's methane cycle - lakes, clouds and rainfall (NASA Cassini science)
+    url: https://science.nasa.gov/saturn/moons/titan/
+  - kind: research-note
+    label: >-
+      Hydrodynamics and Atmospheric Moist Physics of Pandora - A Comparative
+      Terrestrial-Exoplanetary Hydrological Framework (chapter research note)

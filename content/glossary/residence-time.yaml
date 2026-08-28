@@ -1,0 +1,27 @@
+id: residence-time
+label:
+  vi: Thời gian lưu trú
+  en: Residence time
+definition:
+  vi: >-
+    Khoảng thời gian trung bình mà một phân tử hoặc đơn vị vật chất lưu lại bên trong một bể chứa
+    trước khi rời đi, tính bằng tổng lượng vật chất chứa trong bể chia cho tốc độ thoát ra. Bầu khí quyển
+    giữ lượng nước chỉ tương đương lớp chất lỏng dày 2,5 cm, tạo ra thời gian lưu trú khoảng tám đến chín
+    ngày — biến khí quyển thành một băng chuyền chạy tốc độ cao chứ không phải bể chứa tĩnh.
+  en: >-
+    The average duration a molecule or unit of substance spends within a specific reservoir before
+    exiting, calculated as total reservoir capacity divided by the flux rate. The atmosphere holds
+    water equivalent to a liquid layer only 2.5 cm deep, yielding a turnover time of eight to nine
+    days — making the sky a high-speed conveyor belt rather than a static holding tank.
+see_also:
+  - evapotranspiration
+  - precipitation-recycling
+category: concept
+tags:
+  - earth-systems
+  - atmosphere
+  - physics
+cover_prompt: >-
+  A painted conceptual scientific illustration of a reservoir with fast-flowing input and output
+  conveyor arrows, glowing molecular water markers indicating transit time, deep blue and amber tones,
+  painterly textbook plate, no text, no labels.

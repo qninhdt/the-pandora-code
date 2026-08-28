@@ -1,0 +1,137 @@
+slug: from-stardust-to-pandora
+status: published
+title:
+  vi: Từ Bụi sao đến Pandora
+  en: From Stardust to Pandora
+subtitle:
+  vi: Chuỗi cung ứng dài mười ba tỷ năm đã làm ra một hòn đá Pandora - và điểm nó gãy
+  en: The thirteen-billion-year supply chain that made a Pandoran stone - and the link where it breaks
+hook:
+  vi: >-
+    Nhặt một hòn đá lên ở Pandora. Không hòn nào đặc biệt - chỉ một mảnh vỏ hành tinh nặng hơn vẻ
+    ngoài của nó, với chút ánh kim loé lên ở mặt vừa nứt. Giờ hãy hỏi câu mà không ai trong các bộ
+    phim từng hỏi: những nguyên tử này đến từ đâu? Mỗi hạt nhân trong tay bạn đều phải được chế tạo
+    riêng, bởi một quá trình vật lý cụ thể, ở một loại nơi cụ thể - và gần như mọi mắt xích trong
+    chuỗi ấy đều liên quan tới một cái chết.
+  en: >-
+    Pick up a stone on Pandora. Not a remarkable one - just a piece of crust heavier than it looks,
+    with a faint metallic glint on the fresh face. Now ask the question nobody in the films ever
+    asks: where did these atoms come from? Every nucleus in your hand had to be manufactured
+    individually, by a specific physical process, in a specific kind of place - and almost every
+    link in that chain involves something dying.
+authors:
+  - bardabez
+tags:
+  - astronomy
+  - nucleosynthesis
+  - planet-formation
+  - cosmochemistry
+  - planetary-science
+classification:
+  canon_pct: 12
+  inference_pct: 16
+  speculation_pct: 7
+  real_science_pct: 65
+related_chapters:
+  - where-is-pandora
+  - whats-in-the-air
+  - floating-mountains-and-the-superconductor
+  - pandoras-deep-time
+  - what-keeps-pandora-volcanically-alive
+  - reading-pandora-as-a-specimen
+glossary_terms:
+  - big-bang-nucleosynthesis
+  - stellar-nucleosynthesis
+  - triple-alpha-process
+  - nuclear-binding-energy
+  - core-collapse-supernova
+  - type-ia-supernova
+  - s-process
+  - r-process
+  - metallicity
+  - interstellar-medium
+  - protoplanetary-disk
+  - condensation-sequence
+  - snow-line
+  - streaming-instability
+  - pebble-accretion
+  - planetary-migration
+  - circumplanetary-disk
+  - magma-ocean
+  - siderophile
+  - carbonaceous-chondrite
+  - planetary-differentiation
+  - accretion
+  - half-life
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-a-stone-heavier-than-earth
+    role: hero
+    asset_status: ready
+  - id: fig-02-two-stars-collide
+    role: inline
+    asset_status: ready
+  - id: fig-03-the-first-stars
+    role: inline
+    asset_status: ready
+  - id: fig-04-onion-shell-interior
+    role: diagram
+    asset_status: ready
+  - id: fig-05-the-seeding-shell
+    role: diagram
+    asset_status: ready
+  - id: fig-06-collapse-into-a-disk
+    role: diagram
+    asset_status: ready
+  - id: fig-07-pebbles-find-each-other
+    role: diagram
+    asset_status: ready
+  - id: fig-08-a-disk-around-a-giant
+    role: diagram
+    asset_status: ready
+  - id: fig-09-two-kinds-of-moon
+    role: comparison
+    asset_status: ready
+  - id: fig-10-iron-rains-inward
+    role: diagram
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Pandora - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Pandora
+  - kind: canon
+    label: Polyphemus - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Polyphemus
+  - kind: science
+    label: Big Bang nucleosynthesis - Wikipedia
+    url: https://en.wikipedia.org/wiki/Big_Bang_nucleosynthesis
+  - kind: science
+    label: Stellar nucleosynthesis - Wikipedia
+    url: https://en.wikipedia.org/wiki/Stellar_nucleosynthesis
+  - kind: science
+    label: Canup & Ward (2006), A common mass scaling for satellite systems of gaseous planets
+    url: https://doi.org/10.1038/nature04860
+  - kind: science
+    label: Youdin & Goodman (2005), Streaming instabilities in protoplanetary disks
+    url: https://doi.org/10.1086/426895
+  - kind: science
+    label: Johansen & Lambrechts (2017), Forming planets by pebble accretion
+    url: https://doi.org/10.1146/annurev-earth-063016-020226
+  - kind: science
+    label: Joyce & Chaboyer (2018), Constrained stellar evolution models of Alpha Centauri A and B
+    url: https://doi.org/10.3847/1538-4357/aad464
+  - kind: science
+    label: Holman & Wiegert (1999), Long-term stability of planets in binary systems
+    url: https://doi.org/10.1086/300695
+  - kind: science
+    label: Connelly et al. (2012), The absolute chronology of solids in the solar protoplanetary disk
+    url: https://doi.org/10.1126/science.1226919
+  - kind: science
+    label: Heller & Hippke (2024), Large exomoons unlikely around Kepler-1625 b and Kepler-1708 b
+    url: https://doi.org/10.1038/s41550-023-02148-w
+  - kind: research-note
+    label: >-
+      Cosmochemical Genealogy and Astrophysical Formation Models of a Habitable Exomoon (chapter
+      research note)

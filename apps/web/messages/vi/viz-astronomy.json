@@ -1,5 +1,81 @@
 {
   "viz": {
+    "nucleosynthesisLedger": {
+      "title": "Những nguyên tử này được tạo ra ở đâu",
+      "subtitle": "Chọn một mẫu vật từ mặt trăng và truy nguyên thành phần của nó về những biến cố đã dựng nên nó",
+      "aria": "Thanh xếp lớp cho thấy những biến cố thiên văn nào đã tạo ra các nguyên tử trong mẫu được chọn",
+      "hint": "{channel} cung cấp {pct}% mẫu này. Không một biến cố đơn lẻ nào dựng nên cả một thế giới — và cân một mẫu cho ra câu trả lời khác với đếm nó, bởi nguyên tử nhẹ thì đông còn nguyên tử nặng thì nặng.",
+      "basisLabel": "Cân hay đếm",
+      "basis": {
+        "mass": "Theo khối lượng",
+        "atoms": "Theo số nguyên tử"
+      },
+      "target": {
+        "ocean": "Nước đại dương",
+        "mantle": "Manti silicat",
+        "core": "Lõi kim loại",
+        "air": "Khí quyển Pandora",
+        "blood": "Sắt trong máu",
+        "oreVein": "Mạch kim loại nặng"
+      },
+      "element": {
+        "H": "hydro",
+        "C": "carbon",
+        "N": "nitơ",
+        "O": "oxy",
+        "Mg": "magie",
+        "Al": "nhôm",
+        "Si": "silic",
+        "S": "lưu huỳnh",
+        "Ca": "canxi",
+        "Fe": "sắt",
+        "Ni": "niken",
+        "Xe": "xenon",
+        "heavyMetals": "nhóm platin",
+        "actinides": "thori, urani"
+      },
+      "channel": {
+        "bigBang": "Những phút đầu tiên",
+        "agbWinds": "Sao nhỏ hấp hối",
+        "coreCollapse": "Sao lớn sụp lõi",
+        "typeIa": "Sao lùn trắng bùng nổ",
+        "rProcess": "Sao neutron sáp nhập"
+      },
+      "axisEarly": "biến cố sớm nhất",
+      "axisLate": "biến cố muộn nhất",
+      "dominantLabel": "Nguồn chính",
+      "dominantNote": "{pct}% của mẫu",
+      "primordialLabel": "Có trước các sao",
+      "primordialNone": "không gì ở đây có trước các sao",
+      "primordialSome": "vẫn mang theo những phút đầu tiên"
+    },
+    "volatileSourceFingerprint": {
+      "title": "Đọc hóa đơn của một đại dương",
+      "subtitle": "Nước tiểu hành tinh cộng thêm một nhà cung cấp thứ hai — và chỉ một tỉ lệ pha duy nhất tái tạo được giá trị mà nước biển thật sự có",
+      "aria": "Trục logarit của tỉ số deuteri trên hydro với một đường pha trộn giữa hai nguồn nước",
+      "hintReachable": "Nước biển được chạm tới khi khoảng {pct}% hydro đến từ {source} — và đó là mức trần, không phải một ước lượng. Tỉ lệ lớn hơn là vượt quá giá trị đại dương đo được.",
+      "hintUnreachable": "Không hỗn hợp nào giữa nước tiểu hành tinh và {source} chạm được nước biển: giá trị của đại dương nằm ngoài khoảng mà hai nhà cung cấp này trải ra, nên cặp này không thể đã cùng nhau mang nước tới.",
+      "secondSourceLabel": "Nhà cung cấp thứ hai",
+      "reservoir": {
+        "protosolar": "Khí tinh vân",
+        "chondrite": "Tiểu hành tinh chứa carbon",
+        "oortComet": "Sao chổi chu kỳ dài",
+        "comet67p": "Sao chổi 67P"
+      },
+      "target": "nước biển",
+      "axis": "deuteri trên mỗi triệu hydro",
+      "verdictLabel": "Kết luận",
+      "verdict": {
+        "match": "Tái tạo được",
+        "tooLight": "Quá nhẹ",
+        "tooHeavy": "Quá nặng"
+      },
+      "resultLabel": "Hỗn hợp",
+      "resultNote": "trên mỗi triệu hydro",
+      "offsetLabel": "Lệch mục tiêu",
+      "offsetNote": "so với nước biển",
+      "fractionLabel": "Tỉ lệ lấy từ {source}"
+    },
     "alpha-centauri": {
       "title": "Alpha Centauri",
       "category": "Thiên văn học",

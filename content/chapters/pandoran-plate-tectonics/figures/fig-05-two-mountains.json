@@ -1,0 +1,35 @@
+{
+  "id": "fig-05-two-mountains",
+  "chapter_slug": "pandoran-plate-tectonics",
+  "role": "comparison",
+  "narrative_purpose": "The chapter's pivot made visual: two mountains with similar silhouettes and completely unrelated interiors — one a burial-compression fault block needing no plates, one a buoyant collisional range with a deep root.",
+  "subject": "A single wide cross-section split down the middle by a narrow dark vertical gap into two panels of equal size. LEFT PANEL: horizontally layered dark volcanic strata, twelve or so stacked sheets, are broken by two steep faults that slice from the surface deep down; between them a large wedge-shaped block of that layered rock has been shoved bodily upward so its layers now sit tilted and high above the surrounding plain, forming a steep angular peak. The layers within the raised block clearly match the layers of the plain on either side. Below the surface the rock continues uniformly dark with no lighter material anywhere. RIGHT PANEL: a range of folded, arched rock rises to a peak of similar height, made of noticeably paler rock than its surroundings. Beneath it, that same pale rock extends downward as an enormous rounded wedge reaching perhaps five times deeper than the peak is tall, embedded in distinctly darker denser rock below and to either side.",
+  "scene": "A paired geological cross-section comparing a fault-block mountain and a collisional range, as a painted illustration plate.",
+  "camera": "Flat-on cross-sectional view, both panels fully in frame, plain dark sky band above both.",
+  "light": "Cool even illumination from above so the stratification and the pale/dark rock contrast read clearly; faint cyan rim light along both summits; deep indigo at depth.",
+  "palette": "Void-indigo depths, dark slate volcanic layers on the left, pale grey-buff crustal rock on the right against darker mantle rock, cool cyan highlight on the peaks only.",
+  "style": "Painterly geological cross-section plate, textured stone, visible brushwork, hand-illustrated rather than vector.",
+  "detail_level": "Clear stratification in the left panel and clear pale-versus-dark rock boundary in the right; the deep root's full extent unmistakable.",
+  "composition": "Two equal panels side by side, both summits at the same height so the silhouettes invite comparison; the left panel's interior uniformly dark, the right panel's dominated by the huge pale root; open dark space above each summit for callout labels.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrowheads",
+    "leader lines",
+    "measurement scales",
+    "vegetation",
+    "buildings",
+    "humans"
+  ],
+  "consistency_notes": "The two panels must be visually parallel — same framing, same surface level, same peak height — so the only difference the eye finds is what lies underneath. Left has no light-coloured root at all; right's root is the dominant mass in its panel.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrowheads, no leader lines, no measurement scale bars, no vector or flat infographic look, no photographic or 3D-render look, no glossy sheen",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

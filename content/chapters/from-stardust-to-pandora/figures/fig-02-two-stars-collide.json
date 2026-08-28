@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-two-stars-collide",
+  "chapter_slug": "from-stardust-to-pandora",
+  "role": "inline",
+  "narrative_purpose": "Shows the only confirmed factory for gold, platinum and uranium - two neutron stars merging - so the reader can see that the heaviest elements in a crust came from an event lasting about one second.",
+  "subject": "Two very small, extremely bright compact spheres in deep space, close together and clearly in the act of merging: one slightly larger and brighter, the smaller one already deformed into a teardrop stretching toward it. Two long curved streams of luminous debris trail away from the pair in opposite directions, spiralling outward, breaking into clumps and glittering flecks toward their tips.",
+  "scene": "Empty interstellar space dusted with faint distant stars. A thin flattened cloud of freshly thrown-off matter wraps around the pair like a spreading skirt, brightest where it is densest near the centre and fading into darkness at the edges.",
+  "camera": "Wide view from a great distance, looking down on the pair at a shallow angle so the two debris streams read as a flat spiral across the frame.",
+  "light": "The merging pair is the only light source - fiercely bright at the centre, throwing warm amber and magenta light through the near debris and leaving the far debris cool and dim.",
+  "palette": "Void-indigo space, an intensely bright near-white centre, warm amber and rare magenta in the inner debris, cool teal in the outer streams, faint mist-grey distant stars.",
+  "style": "Painterly astronomical plate, atmospheric and soft-edged, not a hard vector diagram and not a 3D render.",
+  "detail_level": "Moderate: the two objects and the two debris streams clearly separable, everything rendered with painterly softness rather than hard outlines.",
+  "composition": "The merging pair sits slightly left of centre. One debris stream sweeps to the upper right and one to the lower left, leaving generous dark empty space in the upper left and lower right corners.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "orbit lines", "watermark", "logos", "UI", "grid", "planets", "spacecraft"],
+  "consistency_notes": "Deep space only - no planets, no moons, no Pandora. The warm light here is exceptional and licensed by the subject being the brightest thing in the chapter.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no orbit lines, no grid, no diagram chrome, no spacecraft, no planets, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

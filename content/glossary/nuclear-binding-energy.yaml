@@ -1,0 +1,16 @@
+id: nuclear-binding-energy
+label:
+  vi: Năng lượng liên kết hạt nhân
+  en: Nuclear binding energy
+definition:
+  vi: Năng lượng giữ các proton và neutron lại với nhau trong một hạt nhân, tính trên mỗi hạt. Nó đạt cực đại quanh sắt và niken, nên phản ứng nhiệt hạch chỉ sinh năng lượng khi leo về phía đỉnh đó; vượt qua đỉnh, hợp hạch tiêu tốn nhiều hơn thu về. Đó là lý do một ngôi sao lớn kết thúc bằng cái lõi sắt không còn cách nào tự chống đỡ.
+  en: The energy holding a nucleus's protons and neutrons together, counted per particle. It peaks around iron and nickel, so fusion releases energy only while climbing toward that peak; past it, fusing costs more than it yields. That is why a massive star ends with an iron core that has no way left to hold itself up.
+see_also:
+  - stellar-nucleosynthesis
+  - core-collapse-supernova
+  - triple-alpha-process
+category: concept
+tags:
+- physics
+- chemistry
+cover_prompt: A painted rising-then-falling curve of soft glowing points over a dark field, the brightest point at the crest where a dense metallic nucleus sits, cyan rising into amber at the peak then dimming to indigo, painterly physics plate, no text, no labels, no numbers, no axes.

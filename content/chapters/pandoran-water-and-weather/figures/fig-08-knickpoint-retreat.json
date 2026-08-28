@@ -1,0 +1,31 @@
+{
+  "id": "fig-08-knickpoint-retreat",
+  "chapter_slug": "pandoran-water-and-weather",
+  "role": "diagram",
+  "narrative_purpose": "Shows a waterfall as a process rather than a place: the plunge pool hollowing out soft rock beneath a hard lip until the lip breaks off, so the step walks upstream. This sets up the contrast with the floating cataracts, which have no gorge to retreat along.",
+  "subject": "A cutaway cross-section of a river gorge, sliced so the rock layers are visible. A hard, resistant caprock layer forms a sharp lip over which the river plunges; beneath it a softer layer has been excavated into a deep churning plunge pool that undercuts the lip, leaving it overhanging with visible fractures where it will break. Downstream of the falls the gorge continues as a steep-walled canyon, and along that canyon two or three faint ghosted outlines mark earlier positions of the falls, further downstream than the present one.",
+  "scene": "A single waterfall and the gorge it has already cut behind it, seen in section, with faint Pandoran vegetation clinging to the canyon rim.",
+  "camera": "Side-on cutaway view, flat and diagrammatic, river flowing across the frame and the rock strata clearly readable.",
+  "light": "Even, slightly cool light so the strata contrast legibly; the falling water and plunge-pool spray glowing brighter than the rock.",
+  "palette": "Warm grey-brown resistant caprock, darker cool grey soft layer beneath, misty-cyan water and spray, living-teal vegetation on the rim, void-indigo above.",
+  "style": "Painterly cutaway plate reading as a diagram through its section geometry; brushed rock strata and soft glowing water, NOT a hard vector schematic and NOT a 3D render.",
+  "detail_level": "High on the undercut lip, the fractures in it, and the plunge pool; the ghosted earlier positions deliberately faint and soft.",
+  "composition": "Falls placed toward one side with the already-cut gorge and its ghosted earlier positions receding toward the other, so the direction of retreat reads without any arrow; plain rock face left clear for callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "dimension lines",
+    "grid",
+    "UI",
+    "watermark",
+    "logos"
+  ],
+  "consistency_notes": "Water in the chapter's misty-cyan; the two rock layers must be visually distinct enough that the reader sees soft rock being removed from under hard rock. Retreat is conveyed by the ghosted positions, never by arrows.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no dimension lines, no grid, no diagram chrome, no photographic or 3D-render look",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

@@ -1,0 +1,131 @@
+{
+  "viz": {
+    "moistureRecyclingCascade": {
+      "title": "Cơn mưa mà rừng tự làm ra cho mình",
+      "subtitle": "Đi theo một cột không khí vào sâu trong lục địa và xem bao nhiêu phần của cơn mưa vốn đã từng rơi một lần.",
+      "aria": "Chuỗi cột lượng mưa chạy từ bờ biển vào trong lục địa: {rho} phần trăm tổng lượng mưa là nước tái tuần hoàn, và {interior} milimét đến được đoạn sâu nhất trong nội địa",
+      "worldLabel": "Không khí của thế giới nào đang vượt qua",
+      "earth": "Trái Đất",
+      "pandora": "Pandora",
+      "ocean": "Biển",
+      "inland": "vào trong lục địa →",
+      "clearingMark": "phá rừng từ đây",
+      "noClearing": "không phá",
+      "kmValue": "{km} km",
+      "mmValue": "{mm} mm",
+      "controls": {
+        "fetch": "Chiều dài rừng phải vượt",
+        "clearing": "Phá rừng từ đoạn"
+      },
+      "readout": {
+        "recycled": "Nước từng rơi trước đó",
+        "recycledNote": "Tỷ lệ trong toàn bộ lượng mưa dọc tuyến",
+        "interior": "Mưa ở nội địa sâu",
+        "interiorNote": "Cách biển {km} km",
+        "cost": "Giá của việc phá rừng",
+        "costNote": "Lượng mưa mất đi ở nội địa sâu",
+        "costNone": "Không phá — không mất gì"
+      },
+      "verdict": {
+        "intact": "Một dải rừng liền mạch chuyền nước của nó về phía trước, và nội địa vẫn ẩm nhờ chính cơn mưa nó góp phần tạo ra.",
+        "thinning": "Đất trống trả lại cho trời ít nước hơn nhiều, nên mọi đoạn ở hạ lưu gió đều nhận phần mỏng hơn.",
+        "broken": "Chuỗi đã bị cắt. Nội địa sâu khô không phải vì nó bị phá — mà vì nguồn cung của nó bị phá."
+      },
+      "footnote": "Mỗi cột là lượng mưa vắt ra khỏi cột khí trên 500 km đường đi. Phần sáng phía trên là nước do một chiếc lá gửi trở lại lên trời; phần mờ phía dưới là hơi nước vẫn đang ở lượt đầu tiên rời biển."
+    },
+    "raindropGrowthLadder": {
+      "title": "Hai rào chắn giữa hơi nước và cơn mưa",
+      "subtitle": "Một giọt trước hết phải được phép khởi đầu, rồi phải tìm ra cách lớn lên thứ hai.",
+      "worldLabel": "Giọt nước đang rơi trong trọng lực và không khí của ai",
+      "earth": "Trái Đất",
+      "pandora": "Pandora",
+      "panel": {
+        "kohler": "Khởi đầu được không? — độ ẩm mà một hạt bụi cần để giọt nước bứt đi",
+        "growth": "Rơi được không? — giọt chìm nhanh đến đâu khi lớn lên"
+      },
+      "aria": {
+        "kohler": "Đường cong hoạt hóa đạt đỉnh ở mức quá bão hòa {sc} phần trăm, tại bán kính giọt {rc} micromét",
+        "growth": "Đường lớn lên cho thấy khuếch tán dừng lại sau {stall} phút và sự kết hợp va chạm đưa giọt tới tốc độ rơi {fall} mét mỗi giây"
+      },
+      "axis": {
+        "radius": "bán kính giọt (µm)",
+        "supersaturation": "độ ẩm vượt trên bão hòa (%)",
+        "fall": "tốc độ rơi (m/s)"
+      },
+      "nucleus": {
+        "small": "hạt mù mịn",
+        "medium": "hạt bụi thường",
+        "large": "muối biển thô"
+      },
+      "controls": {
+        "nucleus": "Hạt bụi làm nhân",
+        "ambient": "Độ ẩm vượt trên bão hòa"
+      },
+      "ambientMark": "không khí ở {pct}%",
+      "peakMark": "vượt {pct}% là bứt đi",
+      "stallMark": "khuếch tán bỏ cuộc ở đây",
+      "cmPerSecond": "{v} cm/s",
+      "mPerSecond": "{v} m/s",
+      "hint": {
+        "haze": "Dưới đỉnh, giọt nước chỉ là hạt mù ổn định. Nó phồng lên rồi co lại theo độ ẩm và không bao giờ thành mưa.",
+        "activated": "Vượt qua đỉnh thì không còn điểm cân bằng nào. Giọt lớn lên vô hạn — nhưng lớn lên vẫn chưa phải là rơi."
+      },
+      "readout": {
+        "activation": "Độ ẩm cần có",
+        "activationYes": "Đã đạt — giọt đã bứt đi",
+        "activationNo": "Chưa đạt — vẫn là hạt mù",
+        "stall": "Tốc độ tại điểm dừng",
+        "stallNote": "Sau {min} phút lớn lên, vẫn chỉ là mây",
+        "rain": "Tốc độ khi đã thành mưa",
+        "rainNote": "Gấp {jump} lần thể tích một giọt mây"
+      },
+      "footnote": "Cả hai khung dùng chung một thước ở cạnh dưới, nên vị trí của giọt trên đường hoạt hóa cũng là vị trí của nó trên đường lớn lên. Hơi nước tinh khiết cần độ ẩm cỡ năm lần bão hòa mới tự tạo mầm — đó là lý do mọi hạt mưa trên mọi thế giới đều bắt đầu trên một hạt bụi của thứ khác."
+    },
+    "perchedWaterBudget": {
+      "title": "Trả giá cho một thác nước bằng sương mù",
+      "subtitle": "Núi bay không có lưu vực. Từng lít nước rời khỏi vành đá đều được bắt lấy từ không khí.",
+      "aria": "Hai cột so sánh trên thang logarit: {capture} mét khối mỗi giây bắt được từ sương mù so với {demand} rời khỏi khối núi",
+      "kmValue": "{km} km",
+      "lwcValue": "{g} g/m³",
+      "msValue": "{v} m/s",
+      "q3sValue": "{q} m³/s",
+      "mmDayValue": "{mm} mm/ngày",
+      "controls": {
+        "diameter": "Đường kính cao nguyên",
+        "lwc": "Lượng nước sương mang theo",
+        "wind": "Gió xuyên qua sương",
+        "efficiency": "Phần sương đá bắt được",
+        "discharge": "Thác nước phải nuôi",
+        "venturi": "Cho các khe giữa những khối núi dồn gió lại (mang tính suy đoán)"
+      },
+      "bar": {
+        "capture": "Bắt được",
+        "captureNote": "vách + cao nguyên",
+        "demand": "Chi ra",
+        "demandNote": "thác + rừng"
+      },
+      "gapMark": "thiếu {factor} lần",
+      "axis": { "flow": "lưu lượng (m³/s, thang log)" },
+      "verdict": {
+        "solvent": "Sổ sách khớp. Ở lưu lượng này, riêng việc bắt sương mù đã đủ giữ cho cao nguyên có nước.",
+        "marginal": "Gần được. Sương mù ở đây đúng bậc độ lớn, và một bể chứa vừa phải trong lòng đá sẽ bù nốt phần còn lại.",
+        "shortfall": "Sương mù là thật nhưng chưa đủ. Một thác nước cỡ này cần nhiều lần lượng nước mà không khí đang mang tới.",
+        "impossible": "Còn xa. Ở lưu lượng mà phim cho thấy, việc bắt sương mù thiếu hơn một bậc độ lớn."
+      },
+      "verdictShort": {
+        "solvent": "Đủ nguồn",
+        "marginal": "Gần đủ",
+        "shortfall": "Thiếu nguồn",
+        "impossible": "Không đâu vào đâu"
+      },
+      "readout": {
+        "coverage": "Phần nhu cầu được đáp ứng",
+        "sustainable": "Thác mà sương có thể nuôi",
+        "sustainableNote": "Sau khi rừng trên cao nguyên lấy phần của nó",
+        "asRate": "Lượng bắt được quy ra mưa",
+        "asRateNote": "Rừng mây trên Trái Đất đạt {lo}–{hi} mm/ngày"
+      },
+      "footnote": "Canon cho thấy những thác nước nhưng chưa bao giờ nói chúng lớn đến đâu, nên lưu lượng là do bạn đặt. Vạch tối cắt ngang mỗi cột đánh dấu chỗ phân chia: bên trái là phần cao nguyên bắt được nằm dưới phần vách đá hứng sương; bên phải là cơn khát của chính khu rừng nằm dưới thác nước ta nhìn thấy."
+    }
+  }
+}

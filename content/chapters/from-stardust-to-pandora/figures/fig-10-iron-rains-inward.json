@@ -1,0 +1,20 @@
+{
+  "id": "fig-10-iron-rains-inward",
+  "chapter_slug": "from-stardust-to-pandora",
+  "role": "diagram",
+  "narrative_purpose": "Shows the moment a body stops being a pile of accreted material and becomes a structured world: metal descending, rock floating, gases escaping upward to form the first atmosphere.",
+  "subject": "A cutaway of a young world entirely molten inside. Through the glowing interior, dozens of bright metallic droplets of varying size are visibly descending toward a dense forming core at the centre, leaving faint trails behind them. The upper interior, drained of metal, is paler and less bright. At the surface, a thin dark crust is cracking into plates, and from several of the cracks thin dark plumes of gas rise upward into a hazy new atmosphere.",
+  "scene": "The world hangs alone against dark space with faint distant stars. A thin hazy shell of newly vented gas surrounds it, thickest just above the venting cracks.",
+  "camera": "Three-quarter view of the cutaway, the cut face angled toward the viewer so both the descending droplets and the surface venting are visible at once.",
+  "light": "Self-luminous interior: hottest and brightest at the forming core, cooling upward and outward; the thin crust silhouetted dark against the glow beneath it; the rising gas plumes lit from below.",
+  "palette": "Warm amber and ember interior confined inside the body, bright near-white metallic droplets, dark stone-grey crust, cool teal-indigo venting haze, void-indigo space.",
+  "style": "Painterly naturalist cross-section plate, textured brushwork, soft-edged internal boundaries.",
+  "detail_level": "High on the descending droplets and the cracked crust; softer in the deep interior glow.",
+  "composition": "The world fills about three-quarters of the frame, centre-right, cut face toward the viewer. Dark empty space to the left for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "watermark", "logos", "UI", "grid", "vegetation", "oceans", "clouds of water"],
+  "consistency_notes": "This is Pandora before it is Pandora - no forests, no oceans, no bioluminescence. The warm palette is licensed here because the subject is genuinely molten; keep it inside the body, with the surrounding space and haze cool.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no grid, no diagram chrome, no vegetation, no oceans, no bioluminescence, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

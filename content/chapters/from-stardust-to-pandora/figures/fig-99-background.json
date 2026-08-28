@@ -1,0 +1,20 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "from-stardust-to-pandora",
+  "role": "hero",
+  "narrative_purpose": "The dim full-bleed atmospheric backdrop the chapter's text floats over: an immense field of interstellar dust and distant starlight, deep and low-contrast so overlaid long-form text stays readable.",
+  "subject": "A vast field of faint interstellar gas and dust seen from within, layered translucent veils receding into enormous depth, with scattered dim distant stars showing through the gaps. In the far lower distance, a barely discernible dark curved limb of a planetary body sits low in the frame, catching almost no light.",
+  "scene": "Deep space, all of it dim. No bright focal subject anywhere; the brightest thing in frame is a soft diffuse patch of pale haze well off-centre. Detail dissolves progressively into murk toward every edge.",
+  "camera": "Ultra-wide panoramic vista from a very high, very distant vantage, the faint planetary limb low in the frame.",
+  "light": "Very dark and low-contrast throughout; a faint cool wash from off-frame lighting the nearest dust veils, everything else falling into deep shadow.",
+  "palette": "Dominant void-indigo and deep teal-indigo, a faint mist-grey haze patch, barely-there cool cyan on the nearest veils; no warm accent anywhere; overall dim.",
+  "style": "Painterly atmospheric vista, soft, dark, immersive, detail dissolving into haze.",
+  "detail_level": "Low and soft throughout - deliberately dim and hazy so long-form text can float over it and stay legible.",
+  "composition": "Low horizon suggested by the dark planetary limb along the bottom edge; the upper four-fifths is open hazy dust and dark space with nothing competing for attention.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "bright focal subject", "high contrast", "sharp foreground detail", "nebula neon colours"],
+  "consistency_notes": "Must stay dark and low-contrast as a background layer, clearly distinct from the crisp close-up cover. Nothing in it should read as a figure to study.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no bright focal point, no high contrast, no sharp foreground, no saturated nebula colours, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

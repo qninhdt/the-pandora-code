@@ -1,0 +1,16 @@
+id: interstellar-medium
+label:
+  vi: Môi trường giữa các sao
+  en: Interstellar medium
+definition:
+  vi: Khí và bụi loãng lấp giữa các ngôi sao, phân thành các pha nóng, ấm và lạnh với mật độ chênh nhau hàng triệu lần. Đây là nơi tro của các ngôi sao đã chết được trộn vào, nguội đi và tích tụ qua hàng chục triệu năm cho tới khi những đám mây lạnh đặc nhất sụp xuống thành thế hệ sao kế tiếp - nên mỗi thế hệ khởi đầu giàu nguyên tố nặng hơn thế hệ trước.
+  en: The thin gas and dust filling the space between stars, sorted into hot, warm and cold phases whose densities differ by factors of millions. It is where the ash of dead stars is mixed in, cooled and accumulated over tens of millions of years until the densest cold clouds collapse into the next generation of stars - which is why each generation begins richer in heavy elements than the last.
+see_also:
+  - metallicity
+  - core-collapse-supernova
+  - protoplanetary-disk
+category: concept
+tags:
+- astronomy
+- chemistry
+cover_prompt: A painted wide view of faint drifting interstellar gas and dust filaments between scattered distant stars, layered translucent veils of teal and indigo with a few warm amber knots, painterly astronomical plate, no text, no labels, no numbers.

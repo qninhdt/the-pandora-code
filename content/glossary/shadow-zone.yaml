@@ -1,0 +1,33 @@
+id: shadow-zone
+label:
+  vi: Vùng tối địa chấn
+  en: Seismic shadow zone
+definition:
+  vi: >-
+    Vành bề mặt mà một loại sóng địa chấn nào đó tuyệt nhiên không tới được sau một cơn địa chấn. Trên
+    Trái Đất có hai vùng như vậy và cả hai đều mang thông tin. Sóng dọc mất tích trong khoảng chừng
+    103° đến 143° tính từ chấn tiêu, vì khi đi vào nhân chậm hơn nó bị bẻ mạnh sang chỗ khác. Sóng
+    ngang thì tệ hơn nhiều: quá 103° nó không bao giờ trở lại, ở bất kỳ khoảng cách nào, bởi mọi đường
+    tới đó đều phải xuyên nhân ngoài lỏng. Nét đẹp của phương pháp nằm ở chỗ chính sự vắng mặt của tín
+    hiệu, chứ không phải tín hiệu nào cả, mới là số đo.
+  en: >-
+    A band of a planet's surface that some class of seismic wave simply never reaches after a quake.
+    Earth has two, and both carry information. P waves go missing between roughly 103° and 143° from
+    the epicentre, because entering the slower core refracts them sharply elsewhere. S waves fare far
+    worse: beyond 103° they never return at any distance, since every path there must cross the liquid
+    outer core. The beauty of the method is that the measurement is the *absence* of a signal rather
+    than any signal at all.
+see_also:
+  - s-wave
+  - p-wave
+  - mohorovicic-discontinuity
+category: concept
+tags:
+  - geology
+  - planetary-science
+  - physics
+cover_prompt: >-
+  A painted globe cross-section with faint curved ray paths spreading from a point at the top, the rays
+  clearly reaching one arc of the surface and a wide arc of the far surface left completely dark and
+  empty of rays, the dark arc rimmed in dim magenta, deep indigo interior with a paler molten central
+  region, painterly geophysical plate, no text, no labels.

@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-collapse-into-a-disk",
+  "chapter_slug": "from-stardust-to-pandora",
+  "role": "diagram",
+  "narrative_purpose": "Shows why planetary systems are flat, and shows in the same frame the companion star cutting the disk short - the specific constraint Alpha Centauri A's disk was built under.",
+  "subject": "A newborn star at the centre with a broad, thin, glowing disk of gas and dust extending outward around it, seen at a shallow angle so the disk reads as a flattened ellipse. Above and below the star, two faint funnels of infalling material descend toward it from the remains of a dark contracting cloud. On the right, at a distance, a second smaller orange star sits in open space, and the disk's outer edge on that side stops abruptly in a clean curved cut-off instead of fading gradually.",
+  "scene": "The last of the parent cloud hangs as dark ragged veils around the upper and lower edges of the frame. Faint distant stars show through the gaps.",
+  "camera": "Wide view from about fifteen degrees above the disk plane, star slightly left of centre, disk extending across the frame toward the companion.",
+  "light": "The newborn star is the key light, brightest at the disk's inner edge and dimming outward; the companion star adds a small scarce warm glint from the right; the surrounding cloud stays deep indigo.",
+  "palette": "Void-indigo space and cloud, cool cyan and teal disk brightening to mist-white near the star, one small scarce amber companion, faint warm core.",
+  "style": "Painterly astronomical plate, soft and atmospheric, layered haze, no hard vector edges.",
+  "detail_level": "Moderate: the disk's flatness, the polar infall funnels and the truncated outer edge all clearly readable; texture painterly throughout.",
+  "composition": "Star left of centre, disk sweeping rightward toward the companion at the right edge, truncation visible about two-thirds of the way across. Dark open cloud space along the top edge for callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "arrows", "orbit lines", "watermark", "logos", "UI", "grid", "planets", "moons"],
+  "consistency_notes": "No planets yet - this is the disk stage. The truncation on the companion's side must be visible as an abrupt edge, conveyed by shape alone with no drawn boundary line.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no orbit lines, no grid, no diagram chrome, no planets, no moons, no photographic or 3D-render look, no lens flares",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

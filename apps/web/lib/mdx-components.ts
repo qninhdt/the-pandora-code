@@ -14,6 +14,7 @@ import { BinaryStabilityWindow } from "@/components/content/binary-stability-win
 import { BioelectricMorphologyEditor } from "@/components/content/bioelectric-morphology-editor";
 import { BiohydrogenLedger } from "@/components/content/biohydrogen-ledger";
 import { BreathingModeToggle } from "@/components/content/breathing-mode-toggle";
+import { BurialHoopMountainBuilder } from "@/components/content/burial-hoop-mountain-builder";
 import { BurningWingTimeBudget } from "@/components/content/burning-wing-time-budget";
 import { Callout, ScientificNote, SideNote } from "@/components/content/callout";
 import { CarbonVsSilicon } from "@/components/content/carbon-vs-silicon";
@@ -32,6 +33,7 @@ import { CodaRhythmComparator } from "@/components/content/coda-rhythm-comparato
 import { ColdLightReaction } from "@/components/content/cold-light-reaction";
 import { CombustionBudgetLab } from "@/components/content/combustion-budget-lab";
 import { Comparison } from "@/components/content/comparison";
+import { CondensationSequenceDial } from "@/components/content/condensation-sequence-dial";
 import { ConfidenceDial } from "@/components/content/confidence-dial";
 import { ConfidenceMeter } from "@/components/content/confidence-meter";
 import { ConsciousBottleneck } from "@/components/content/conscious-bottleneck";
@@ -85,19 +87,24 @@ import { LimbFieldToggle } from "@/components/content/limb-field-toggle";
 import { LongBranchAttractionDemo } from "@/components/content/long-branch-attraction-demo";
 import { MagmaEnergyLedger } from "@/components/content/magma-energy-ledger";
 import { MagneticCompassExplorer } from "@/components/content/magnetic-compass-explorer";
+import { MantleConvectionRayleigh } from "@/components/content/mantle-convection-rayleigh";
 import { MaskingOrClock } from "@/components/content/masking-or-clock";
+import { MoistureRecyclingCascade } from "@/components/content/moisture-recycling-cascade";
 import { MorphogenGradientLab } from "@/components/content/morphogen-gradient-lab";
 import { MycorrhizalMarket } from "@/components/content/mycorrhizal-market";
 import { NetworkOrMindDiagnostic } from "@/components/content/network-or-mind-diagnostic";
 import { NichePartitionExplorer } from "@/components/content/niche-partition-explorer";
 import { NightEyeOptics } from "@/components/content/night-eye-optics";
+import { NucleosynthesisLedger } from "@/components/content/nucleosynthesis-ledger";
 import { OccamsRazorEngine } from "@/components/content/occams-razor-engine";
 import { OceanColumnExplorer } from "@/components/content/ocean-column-explorer";
 import { OpenQuestions } from "@/components/content/open-questions";
 import { OpercularOxygenBudget } from "@/components/content/opercular-oxygen-budget";
+import { OreGenesisRegimeLedger } from "@/components/content/ore-genesis-regime-ledger";
 import { OrganogenesisGate } from "@/components/content/organogenesis-gate";
 import { OutgroupPolarityBench } from "@/components/content/outgroup-polarity-bench";
 import { PandoraLightLadder } from "@/components/content/pandora-light-ladder";
+import { PerchedWaterBudget } from "@/components/content/perched-water-budget";
 import { PercolationNetwork } from "@/components/content/percolation-network";
 import { PhotophoreIntensity } from "@/components/content/photophore-intensity";
 import { PneumaticBoneBudget } from "@/components/content/pneumatic-bone-budget";
@@ -108,6 +115,7 @@ import { QuorumCascade } from "@/components/content/quorum-cascade";
 import { Quote } from "@/components/content/quote";
 import { RadiantDoseDial } from "@/components/content/radiant-dose-dial";
 import { RainShadowTransect } from "@/components/content/rain-shadow-transect";
+import { RaindropGrowthLadder } from "@/components/content/raindrop-growth-ladder";
 import { RecoveryChronosequence } from "@/components/content/recovery-chronosequence";
 import { RedQueenRace } from "@/components/content/red-queen-race";
 import { ReefRugosityProfile } from "@/components/content/reef-rugosity-profile";
@@ -115,9 +123,11 @@ import { RegenerationRace } from "@/components/content/regeneration-race";
 import { ReplayTheTape } from "@/components/content/replay-the-tape";
 import { ReproductiveValueElasticity } from "@/components/content/reproductive-value-elasticity";
 import { RespiratoryScrubberDial } from "@/components/content/respiratory-scrubber-dial";
+import { SatelliteMassBudget } from "@/components/content/satellite-mass-budget";
 import { ScaleUpChallenge } from "@/components/content/scale-up-challenge";
 import { ScrollSequence } from "@/components/content/scroll-sequence";
 import { SeasonReversalCircuit } from "@/components/content/season-reversal-circuit";
+import { SeismicShadowSounder } from "@/components/content/seismic-shadow-sounder";
 import { SenescenceArrestCurve } from "@/components/content/senescence-arrest-curve";
 import { ShannonChannel } from "@/components/content/shannon-channel";
 import { SiderealSynodicGearing } from "@/components/content/sidereal-synodic-gearing";
@@ -132,6 +142,7 @@ import { SuperconductorCooldown } from "@/components/content/superconductor-cool
 import { SwarmSteeringField } from "@/components/content/swarm-steering-field";
 import { SymbiontIntegrationMap } from "@/components/content/symbiont-integration-map";
 import { TandemWingInterference } from "@/components/content/tandem-wing-interference";
+import { TectonicRegimeSelector } from "@/components/content/tectonic-regime-selector";
 import { TemporalNichePartition } from "@/components/content/temporal-niche-partition";
 import { ThermalScopeDial } from "@/components/content/thermal-scope-dial";
 import { TidalHeatBudget } from "@/components/content/tidal-heat-budget";
@@ -144,6 +155,7 @@ import { TwentySecondsTimeline } from "@/components/content/twenty-seconds-timel
 import { UmweltLens } from "@/components/content/umwelt-lens";
 import { VentEnergyBudget } from "@/components/content/vent-energy-budget";
 import { VerticalForestDive } from "@/components/content/vertical-forest-dive";
+import { VolatileSourceFingerprint } from "@/components/content/volatile-source-fingerprint";
 import { WarningSignalRace } from "@/components/content/warning-signal-race";
 import { WhatThisMeans } from "@/components/content/what-this-means";
 import { WhittakerBiomeExplorer } from "@/components/content/whittaker-biome-explorer";
@@ -180,6 +192,7 @@ export const pandoraMdxComponents = {
   BiohydrogenLedger,
   BreathingModeToggle,
   BurningWingTimeBudget,
+  BurialHoopMountainBuilder,
   Callout,
   CanonBadge,
   CarbonVsSilicon,
@@ -200,6 +213,7 @@ export const pandoraMdxComponents = {
   CoastalUpwellingExplorer,
   CombustionBudgetLab,
   Comparison,
+  CondensationSequenceDial,
   ConfidenceDial,
   ConfidenceMeter,
   ConsciousBottleneck,
@@ -255,6 +269,8 @@ export const pandoraMdxComponents = {
   MagneticCompassExplorer,
   MagmaEnergyLedger,
   MaskingOrClock,
+  MantleConvectionRayleigh,
+  MoistureRecyclingCascade,
   MorphogenGradientLab,
   MycorrhizalMarket,
   NichePartitionExplorer,
@@ -264,19 +280,23 @@ export const pandoraMdxComponents = {
   LimbFieldToggle,
   LongBranchAttractionDemo,
   NightEyeOptics,
+  NucleosynthesisLedger,
   OccamsRazorEngine,
   OceanColumnExplorer,
   OpenQuestions,
   OpercularOxygenBudget,
   OrbitClock,
   OrganogenesisGate,
+  OreGenesisRegimeLedger,
   OutgroupPolarityBench,
   PandoraLightLadder,
   PartRef,
   PercolationNetwork,
+  PerchedWaterBudget,
   PhotophoreIntensity,
   PneumaticBoneBudget,
   TemporalNichePartition,
+  TectonicRegimeSelector,
   ThermalScopeDial,
   TidalHeatBudget,
   TorukFlightEngine,
@@ -288,6 +308,7 @@ export const pandoraMdxComponents = {
   Quote,
   RadiantDoseDial,
   RainShadowTransect,
+  RaindropGrowthLadder,
   RecoveryChronosequence,
   ReadingProgress,
   ReefRugosityProfile,
@@ -296,11 +317,13 @@ export const pandoraMdxComponents = {
   ReplayTheTape,
   RedQueenRace,
   ReproductiveValueElasticity,
+  SatelliteMassBudget,
   ScaleUpChallenge,
   ScientificNote,
   ScrollSequence,
   SeasonReversalCircuit,
   SenescenceArrestCurve,
+  SeismicShadowSounder,
   ShannonChannel,
   SiderealSynodicGearing,
   SoilPoreExplorer,
@@ -324,6 +347,7 @@ export const pandoraMdxComponents = {
   UmweltLens,
   VentEnergyBudget,
   VerticalForestDive,
+  VolatileSourceFingerprint,
   WarningSignalRace,
   WhatThisMeans,
   WhittakerBiomeExplorer,

@@ -1,0 +1,18 @@
+id: snow-line
+label:
+  vi: Vạch băng
+  en: Snow line
+definition:
+  vi: Khoảng cách trong một đĩa tiền hành tinh nơi nhiệt độ vừa xuống dưới chừng 170 K và nước ngừng là hơi để đóng thành băng. Vượt vạch này, lượng vật liệu rắn khả dụng tăng lên nhiều lần, nên lõi các hành tinh khí chỉ có thể lớn nhanh ở phía ngoài. Bên trong vạch, mọi thứ lắp ghép nên đều khô - nước của một thế giới như vậy phải được chở tới sau.
+  en: The distance in a protoplanetary disk where the temperature falls below about 170 K and water stops being vapour and freezes into ice. Beyond it, the available solid material multiplies, which is why giant-planet cores can only grow quickly on the far side. Inside it, everything that assembles comes out dry - such a world's water has to be delivered later.
+see_also:
+  - condensation-sequence
+  - protoplanetary-disk
+  - carbonaceous-chondrite
+  - planetary-migration
+category: concept
+tags:
+- planetary-science
+- chemistry
+- astronomy
+cover_prompt: A painted cross-section of a protoplanetary disk with a clear visual boundary running through it, bare dark rocky grains on the inner warm side and pale frost-coated grains on the outer cold side, amber shading into cyan across the divide, painterly astronomical plate, no text, no labels, no numbers.

@@ -1,0 +1,25 @@
+id: type-ia-supernova
+label:
+  vi: Siêu tân tinh loại Ia
+  en: Type Ia supernova
+definition:
+  vi: >-
+    Vụ nổ nhiệt hạch của một sao lùn trắng khi nó tích thêm khối lượng tới ngưỡng tự bùng cháy,
+    xé nát chính nó và không để lại tàn tích. Khoảng một nửa lượng sắt trong thiên hà đến từ
+    đây, và nó đến muộn: phải làm ra một sao lùn trắng trước rồi chờ. Sắt trong lõi Pandora, và
+    trong máu của mọi sinh vật trên bề mặt nó, phần lớn là tro của những xác sao đã phát nổ.
+  en: >-
+    The thermonuclear detonation of a white dwarf that has gained enough mass to ignite, tearing
+    itself apart and leaving no remnant. About half the galaxy's iron comes from this channel,
+    and it arrives late: a white dwarf must be made first, then wait. The iron in Pandora's
+    core, and in the blood of everything walking on its surface, is mostly the ash of exploded
+    stellar corpses.
+see_also:
+  - core-collapse-supernova
+  - stellar-nucleosynthesis
+  - metallicity
+category: concept
+tags:
+- astronomy
+- physics
+cover_prompt: A painted scene of a small dense white star flaring into a violent asymmetric detonation, hot amber and white light tearing through a shell of expanding gas against deep indigo space, painterly astronomical plate, no text, no labels, no numbers.

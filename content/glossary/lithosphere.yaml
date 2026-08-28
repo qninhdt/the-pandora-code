@@ -1,0 +1,31 @@
+id: lithosphere
+label:
+  vi: Thạch quyển
+  en: Lithosphere
+definition:
+  vi: >-
+    Lớp ngoài lạnh và cứng của một thiên thể đá, gồm cả lớp vỏ và phần trên cùng của lớp phủ. Ranh
+    giới của nó không phải ranh giới hóa học mà là ranh giới cơ học: thạch quyển là phần đá đủ nguội
+    để vỡ giòn hoặc uốn đàn hồi thay vì chảy. Bên dưới nó, cùng thứ đá ấy — thành phần không đổi — lại
+    bò chậm rãi vì nóng hơn. Chính sự phân chia theo cách hành xử này, chứ không phải theo thành phần,
+    mới quyết định một hành tinh có kiến tạo mảng hay không.
+  en: >-
+    The cold, rigid outer layer of a rocky body, comprising the crust plus the very top of the mantle.
+    Its boundary is mechanical rather than chemical: the lithosphere is the rock cool enough to break
+    or flex rather than flow. Beneath it the same rock — identical in composition — creeps slowly
+    because it is hotter. It is this division by behaviour, not by ingredient, that decides whether a
+    planet has plate tectonics at all.
+see_also:
+  - asthenosphere
+  - plate-tectonics
+  - mantle-convection
+  - stagnant-lid
+category: planet
+tags:
+  - geology
+  - planetary-science
+cover_prompt: >-
+  A painted vertical cross-section through the outer few hundred kilometres of a rocky planet, the
+  upper band rendered as brittle fractured plate with sharp cracks, grading downward into a softer
+  band whose texture flows in smooth slow swirls, cool indigo and teal above warming to faint amber
+  below, painterly geological plate, no text, no labels.

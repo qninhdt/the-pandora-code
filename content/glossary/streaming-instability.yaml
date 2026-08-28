@@ -1,0 +1,16 @@
+id: streaming-instability
+label:
+  vi: Bất ổn dòng chảy
+  en: Streaming instability
+definition:
+  vi: Cách một đĩa tiền hành tinh nhảy qua khoảng trống chết người ở kích thước một nắm tay tới một mét, nơi các hạt không còn dính vào nhau mà lại trôi vào ngôi sao chỉ trong vài trăm năm. Khi đủ nhiều viên sỏi tụ lại một chỗ, chúng kéo khí đi theo, làm giảm cơn gió cản, khiến càng nhiều sỏi tụ thêm - cho tới khi khối sỏi tự sụp dưới hấp dẫn của chính nó thành một vi thể hành tinh hoàn chỉnh.
+  en: How a protoplanetary disk skips the lethal gap between fist and metre sizes, where grains neither stick reliably nor survive their own inward drift into the star. Once enough pebbles gather in one region they drag the local gas with them, easing the headwind, which lets more pebbles gather - until the swarm's own gravity collapses it straight into a full-sized planetesimal.
+see_also:
+  - pebble-accretion
+  - protoplanetary-disk
+  - accretion
+category: concept
+tags:
+- planetary-science
+- physics
+cover_prompt: A painted close view inside a dust disk where drifting grains gather into a dense elongated filament, one region already collapsed into a single dark solid body, cyan grains against deep indigo with a faint amber wash, painterly astronomical plate, no text, no labels, no numbers.

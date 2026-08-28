@@ -1,0 +1,36 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "pandoran-plate-tectonics",
+  "role": "hero",
+  "narrative_purpose": "The chapter's cover: a kilometre-high banded escarpment standing over a glowing valley, framing the question the whole chapter asks — something lifted this rock, and nothing in the record says what.",
+  "subject": "A colossal cliff wall runs diagonally across the frame from lower left to upper right, its vertical face over a kilometre tall and clearly banded in twenty or thirty horizontal layers of alternating pale grey and dark rust-dark stone. The flat top of the cliff carries dense dark forest canopy right up to the edge. Below and in front of the cliff a deep valley falls away, its floor threaded by a river and carpeted in vegetation that glows faint teal and cyan. Thin mist pools along the base of the cliff and in the valley bends. In the far upper distance beyond the cliff top, the enormous curved limb of a banded gas giant sits low and pale through atmospheric haze.",
+  "scene": "A vast layered rock escarpment on Pandora at dusk, seen across the glowing forested valley it overlooks, with the parent gas giant faint on the horizon.",
+  "camera": "Wide cinematic landscape from a facing ridge at roughly the cliff's mid-height, looking slightly up at the wall and down into the valley.",
+  "light": "Cool low twilight from a sky above, raking sideways across the cliff face so every horizontal rock band catches its own line of light and shadow; bioluminescent teal and cyan rising softly from the valley floor below; deep indigo shadow in the recesses of the wall.",
+  "palette": "Void-indigo shadow, deep teal-indigo mid tones, weathered grey-stone rock faces with rust-dark banding, cyan and living-teal bioluminescence in the valley, one restrained band of pale amber haze near the horizon.",
+  "style": "Painterly speculative-planetary naturalist plate, heavily textured stone, atmospheric haze layers, observed-from-life confidence rather than dramatic staging.",
+  "detail_level": "Crisp fractured rock texture and clear stratification on the near cliff face; the valley and the distant cliff line softening into layered haze.",
+  "composition": "The cliff face occupies the right two-thirds as a strong diagonal; the glowing valley opens in the lower left; large areas of plain dark rock and dim sky left uncluttered so text can sit over the image.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "diagram lines",
+    "floating or levitating rock",
+    "spacecraft",
+    "buildings",
+    "humans",
+    "machines"
+  ],
+  "consistency_notes": "This is ordinary non-floating bedrock — nothing in this image levitates. The gas giant on the horizon is Polyphemus. Pandora's cool bioluminescent palette dominates; warm tones are confined to the horizon haze.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no diagram lines, no arrows, no floating islands, no photographic or 3D-render look, no lens flares, no modern machines, no neon UI glow, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

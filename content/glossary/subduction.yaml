@@ -1,0 +1,33 @@
+id: subduction
+label:
+  vi: Sự hút chìm
+  en: Subduction
+definition:
+  vi: >-
+    Quá trình một mảng kiến tạo chìm xuống dưới mảng kề bên và trở về lớp phủ. Đây là bước tái chế của
+    cỗ máy, và cũng là lý do không nơi nào trên Trái Đất còn đáy đại dương già hơn chừng 200 triệu năm,
+    trong khi lõi các lục địa đạt gần bốn tỷ năm. Sự hút chìm để lại dấu vết không thể lẫn: một mặt
+    nghiêng đầy tâm chấn cắm xuống tận 670 km, một vành núi lửa phía trên, và nước mang xuống theo tấm
+    vỏ chìm — chính lượng nước ấy mới là thứ làm nên đá granite và những mỏ quặng giàu nhất hành tinh.
+  en: >-
+    The process by which one tectonic plate sinks beneath its neighbour and returns to the mantle. This
+    is the machine's recycling step, and it is why nowhere on Earth is there ocean floor older than about
+    200 million years while the cores of continents reach nearly four billion. Subduction leaves marks
+    that cannot be mistaken: a dipping sheet of earthquakes reaching 670 km down, a volcanic arc above
+    it, and water carried down with the sinking slab — and it is that water which makes granite, and the
+    planet's richest ore deposits.
+see_also:
+  - plate-tectonics
+  - slab-pull
+  - blueschist
+  - eclogite
+category: planet
+tags:
+  - geology
+  - planetary-science
+  - earth-systems
+cover_prompt: >-
+  A painted cross-section where an oceanic plate bends down beneath a thicker continental plate, forming a
+  deep narrow trench at the surface, with a chain of glowing volcanic cones rising on the overriding plate
+  inland of the trench and small bright points marking earthquakes along the descending sheet, deep indigo
+  mantle, amber volcanic light, painterly geological plate, no text, no labels.

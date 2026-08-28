@@ -1,0 +1,26 @@
+id: knickpoint
+label:
+  vi: Điểm gãy lòng dẫn
+  en: Knickpoint
+definition:
+  vi: >-
+    Một sự thay đổi độ dốc đột ngột trong trắc diện dọc của dòng sông — thường biểu hiện dưới dạng thác
+    nước hoặc ghềnh đá dữ dội. Do áp lực xói mòn và hiện tượng đào khoét chân vách dưới tác động của hố
+    nước xoáy chân thác, điểm gãy lòng dẫn không phải là một điểm cố định mà liên tục dịch chuyển (thụt lùi)
+    về phía thượng nguồn theo thời gian địa chất.
+  en: >-
+    A sharp discontinuity or convex step in the longitudinal profile of a river, most commonly expressed
+    as a waterfall or cataract. Due to intense hydraulic plunge-pool undercutting and lip collapse, a
+    knickpoint is not a permanent geographical feature but an active transient wave of erosion migrating
+    progressively upstream through the drainage network.
+see_also:
+  - stream-power-incision
+  - baseflow
+category: concept
+tags:
+  - geology
+  - earth-systems
+cover_prompt: >-
+  A painted longitudinal cross-section of a majestic waterfall cascading over a hard caprock lip into a
+  scoured plunge pool, with ghosted lines depicting upstream gorge retreat, rich earth tones, no text,
+  no labels.

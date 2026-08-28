@@ -1,0 +1,33 @@
+id: seismic-tomography
+label:
+  vi: Chụp cắt lớp địa chấn
+  en: Seismic tomography
+definition:
+  vi: >-
+    Kỹ thuật dựng ảnh ba chiều lòng một hành tinh bằng cách gộp thời gian tới của hàng vạn tia địa chấn
+    băng chéo qua nhau. Nơi nào sóng tới sớm hơn dự kiến, đá ở đó lạnh và đặc hơn; nơi nào tới muộn, đá
+    nóng hơn. Cần một lưu ý quan trọng: phương pháp này không hề chụp trực tiếp thành phần hóa học mà chỉ
+    chụp độ lệch vận tốc, và việc quy độ lệch ấy về nhiệt độ hay về thành phần luôn là một bước diễn giải
+    riêng. Dù vậy nó đã cho ta thấy những tấm vỏ chìm còn lần được tới tận lớp phủ dưới.
+  en: >-
+    The technique that builds a three-dimensional image of a planet's interior by combining arrival
+    times from tens of thousands of crisscrossing seismic rays. Where waves arrive earlier than
+    expected the rock is colder and denser; where they arrive late it is hotter. One caveat matters:
+    the method does not image chemistry directly, only velocity anomalies, and converting those into
+    temperature or composition is always a separate interpretive step. Even so, it is what showed us
+    subducted slabs traceable all the way into the lower mantle.
+see_also:
+  - p-wave
+  - s-wave
+  - subduction
+  - mantle-convection
+category: concept
+tags:
+  - geology
+  - planetary-science
+  - physics
+cover_prompt: >-
+  A painted three-dimensional wedge cut from a planet's interior, threaded by many faint crisscrossing
+  ray lines, with a cool blue-teal slab-shaped region descending steeply through it and a warmer
+  amber-tinged plume rising nearby, deep indigo background, painterly geophysical plate, no text, no
+  labels, no colour scale bar.

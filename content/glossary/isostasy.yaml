@@ -1,0 +1,33 @@
+id: isostasy
+label:
+  vi: Đẳng tĩnh (isostasy)
+  en: Isostasy
+definition:
+  vi: >-
+    Nguyên lý cho biết vì sao một dãy núi đứng cao được: vỏ nhẹ nổi trên lớp phủ nặng hơn, đúng như tảng
+    băng nổi trên nước, và độ cao nó vươn lên phụ thuộc vào phần nó cắm xuống. Công thức đơn giản đến mức
+    bất ngờ — chân rễ bằng chiều cao nhân khối lượng riêng vỏ chia cho hiệu khối lượng riêng lớp phủ và
+    vỏ — nhưng con số thì gây choáng: một đỉnh cao 5 km cần một chân rễ chừng 28 km. Phần lớn một ngọn
+    núi nằm dưới mặt đất. Và vì thế, đo trọng lực một dãy núi là biết ngay nó nổi hay chỉ bị chống lên.
+  en: >-
+    The principle behind why a mountain range stands high at all: light crust floats on denser mantle
+    exactly as an iceberg floats on water, and how far it rises depends on how deep it reaches. The
+    formula is startlingly simple — the root equals the height times crustal density divided by the
+    density difference between mantle and crust — but the number is not: a 5 km peak needs a root of some
+    28 km. Most of a mountain is underground. And that is why measuring a range's gravity tells you
+    immediately whether it floats or is merely being propped up.
+see_also:
+  - mohorovicic-discontinuity
+  - continental-crust
+  - hypsometry
+  - plate-tectonics
+category: concept
+tags:
+  - geology
+  - physics
+  - planetary-science
+cover_prompt: >-
+  A painted cross-section of a tall mountain range with a vastly larger pale wedge of light rock extending
+  downward beneath it into darker denser rock, the underground portion visibly several times the height of
+  the visible peaks, cool teal highlights on the summits, deep indigo at depth, painterly geological plate,
+  no text, no labels, no measurement lines.

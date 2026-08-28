@@ -1,0 +1,32 @@
+id: stagnant-lid
+label:
+  vi: Chế độ nắp trì trệ
+  en: Stagnant lid
+definition:
+  vi: >-
+    Chế độ kiến tạo phổ biến nhất của các thiên thể đá trong Hệ Mặt Trời: lớp phủ vẫn đối lưu bên dưới,
+    nhưng ứng suất nó dồn lên lớp vỏ không đủ phá vỡ lớp vỏ ấy, nên hành tinh bị bọc trong một lớp cứng
+    liền khối duy nhất. Nhiệt thoát ra bằng dẫn nhiệt chậm qua cái nắp đó, cộng thêm núi lửa cục bộ. Sao
+    Kim là ca đáng suy ngẫm nhất vì nó gần bằng Trái Đất về kích thước và lượng nhiệt, nhưng khí hậu
+    nhà kính đã nướng cạn nước khỏi lớp vỏ — và đá khô thì bền đến mức đối lưu không phá nổi.
+  en: >-
+    The commonest tectonic regime among rocky bodies in the Solar System: the mantle still convects
+    below, but the stress it delivers to the crust is not enough to break it, so the planet is encased
+    in a single unbroken rigid shell. Heat escapes by slow conduction through that lid, plus localized
+    volcanism. Venus is the case worth dwelling on, because it is nearly Earth's size with nearly
+    Earth's heat budget — but its greenhouse baked the water out of its crust, and dry rock is strong
+    enough that convection cannot break it.
+see_also:
+  - plate-tectonics
+  - heat-pipe-regime
+  - lithosphere
+  - rayleigh-number
+category: planet
+tags:
+  - planetary-science
+  - geology
+cover_prompt: >-
+  A painted cutaway of a rocky planet whose outer shell is one continuous unbroken crust with no rifts
+  or trenches anywhere along it, slow convection loops turning beneath the shell without breaching it, a
+  single enormous volcanic shield swelling at one point on the surface, deep indigo and dull stone-grey
+  with faint amber below, painterly geological plate, no text, no labels.

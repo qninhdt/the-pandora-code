@@ -1,0 +1,41 @@
+{
+  "id": "fig-09-the-listening-station",
+  "chapter_slug": "pandoran-plate-tectonics",
+  "role": "inline",
+  "narrative_purpose": "Close the chapter on the one instrument that would settle everything — deliberately small and unglamorous, set against the landscape it could explain.",
+  "subject": "A small scientific instrument package sits on bare dark rock in the foreground, occupying only the lower left of the frame: a squat cylindrical dome roughly knee-high on three short splayed legs, its casing plain and matte, with one small steady cyan indicator light and a single thin cable running from it to a low flat solar panel beside it. The rock around it is undisturbed. In the middle distance the ground runs flat and empty. On the horizon, the silhouette of a tall layered escarpment stands dark against the sky, the same banded cliff seen earlier. Above and behind the escarpment, the enormous curved banded limb of a gas giant occupies the upper right of the frame, pale through haze. A scatter of faint stars in the darkest part of the sky.",
+  "scene": "A single seismometer station left running on a dark Pandoran plain at night, with the escarpment and the parent gas giant beyond.",
+  "camera": "Low ground-level vantage close to the instrument, looking past it across the plain toward the distant cliff and the planet above.",
+  "light": "Cool faint planetshine from the gas giant washing the plain in dim blue-grey; a single small cyan point from the instrument's indicator; deep indigo shadow everywhere else; no artificial floodlighting.",
+  "palette": "Void-indigo night ground and sky, cool blue-grey planetshine on the rock, one cyan indicator point, faint pale amber banding in the gas giant only.",
+  "style": "Painterly speculative-planetary naturalist plate, matte instrument casing with no glossy sheen, quiet and observational.",
+  "detail_level": "The instrument crisply detailed and clearly small; the plain smoothing out into darkness; the escarpment reduced to a clean silhouette; the gas giant soft through haze.",
+  "composition": "Instrument small in the lower left third, deliberately dwarfed; a large expanse of empty dark plain across the centre; escarpment silhouette on the horizon left of centre; the gas giant filling the upper right.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "screens",
+    "holograms",
+    "arrows",
+    "diagram lines",
+    "antennas arrays",
+    "vehicles",
+    "buildings",
+    "humans",
+    "weapons"
+  ],
+  "consistency_notes": "The escarpment on the horizon is the same cliff as the opening figure, and the gas giant is Polyphemus. The instrument must read as modest and purpose-built, not as heroic technology — the point of the closing image is how small the thing is next to the question it answers.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no glowing screens, no holograms, no diagram lines, no arrows, no vehicles, no buildings, no floodlights, no photographic or 3D-render look, no lens flares, no glossy CGI sheen, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/pandoran-plate-tectonics/fig-01-the-escarpment.png"
+  ]
+}

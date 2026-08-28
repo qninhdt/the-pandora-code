@@ -1,0 +1,31 @@
+id: moment-of-inertia-factor
+label:
+  vi: Hệ số mômen quán tính
+  en: Moment of inertia factor
+definition:
+  vi: >-
+    Một con số duy nhất cho biết khối lượng của một hành tinh dồn về tâm đến mức nào — và ta đo được nó từ
+    xa, chỉ bằng cách theo dõi hành tinh ấy tự quay và lắc. Nếu vật chất phân bố hoàn toàn đều thì hệ số bằng
+    0,4; càng dồn vào giữa thì con số càng nhỏ. Trái Đất được 0,3307, tức là có một nhân kim loại đặc ở giữa.
+    Sao Hỏa 0,365, Mặt Trăng 0,393, Io 0,378. Đây là bằng chứng độc lập với địa chấn, và việc hai phương pháp
+    ấy khớp nhau mới là điều làm ta tin bức tranh về lòng hành tinh.
+  en: >-
+    A single number telling you how far a planet's mass is concentrated toward its centre — measurable from a
+    distance, just by watching the body spin and wobble. Perfectly uniform material gives 0.4; the more mass
+    is gathered at the middle, the smaller the number. Earth comes in at 0.3307, meaning a dense metallic core.
+    Mars gives 0.365, the Moon 0.393, Io 0.378. This is evidence entirely independent of seismology, and it is
+    the agreement between the two methods that makes the picture of a planet's interior trustworthy.
+see_also:
+  - planetary-differentiation
+  - shadow-zone
+  - dynamo-theory
+category: concept
+tags:
+  - planetary-science
+  - physics
+  - astronomy
+cover_prompt: >-
+  A painted comparison of two spheres cut open side by side, the left one filled with uniform even rock
+  throughout, the right one with a small very dense bright core at its centre surrounded by lighter material,
+  both against a starless deep indigo field with faint cyan rim light, painterly planetary science plate, no
+  text, no labels, no numbers.

@@ -1,0 +1,31 @@
+{
+  "id": "fig-06-eclipse-collapse",
+  "chapter_slug": "pandoran-water-and-weather",
+  "role": "comparison",
+  "narrative_purpose": "The eclipse argument in one image: the same valley in full daylight and mid-eclipse, so the reader sees convection as something with a power supply that can be switched off - the tower slumping and the small cumulus, which live entirely on thermals, gone first.",
+  "subject": "A diptych of the identical forested valley under a gas giant sky, the two halves matched view for view. In the daylight half, a tall boiling cloud tower stands over the trees with a scatter of small flat-based cumulus around it, all brightly lit. In the eclipse half, the same valley lies in deep amber-brown gloom: the great tower has lost its crisp boiling structure and slumped into a ragged, spreading, softening mass, the small cumulus have vanished entirely leaving clear sky where they were, and the gas giant above is a vast dark disc rimmed with a thin bright edge.",
+  "scene": "The same rainforest valley minutes apart - once under full daylight, once with the primary star occulted by the gas giant.",
+  "camera": "Identical framing in both halves, a middle-distance view across the valley with the sky occupying the upper two-thirds.",
+  "light": "In the daylight half, bright directional sun with strong cloud modelling. In the eclipse half, an extremely dim amber-brown ambient wash with no directional source, the canopy losing all colour and the surviving cloud lit only by scattered edge light from the gas giant's rim.",
+  "palette": "Daylight half in living teal, misty-cyan cloud and void-indigo sky. Eclipse half in dim amber-brown and desaturated grey-teal, the whole half markedly darker and lower in contrast.",
+  "style": "Painterly comparison plate, two matched panels side by side, atmospheric and hand-painted, NOT a hard vector schematic and NOT a 3D render.",
+  "detail_level": "Moderate in both halves, with the crucial difference legible: crisp boiling cloud structure and small cumulus present on one side, slumped ragged cloud and empty sky on the other.",
+  "composition": "Two equal panels split by a clean vertical seam, terrain and horizon aligned exactly across the seam so the eye compares the sky rather than the land, with plain dim sky in each panel for callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "panel numbers",
+    "grid",
+    "UI",
+    "watermark",
+    "logos"
+  ],
+  "consistency_notes": "Both halves must be recognisably the same valley from the same viewpoint; only the light and the clouds change. The disappearance of the small cumulus in the eclipse half is the teaching detail and must be obvious.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no panel numbers, no grid, no diagram chrome, no photographic or 3D-render look, no differing viewpoint between halves",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

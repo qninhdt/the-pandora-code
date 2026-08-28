@@ -1,0 +1,30 @@
+{
+  "id": "fig-05-afternoon-tower",
+  "chapter_slug": "pandoran-water-and-weather",
+  "role": "diagram",
+  "narrative_purpose": "Shows the convective engine at full extension, and specifically shows its flat base as a level - the altitude where rising air surrenders its vapour - so the lifting condensation level becomes a thing the reader can point at.",
+  "subject": "A single enormous convective cloud tower rising over unbroken rainforest in late afternoon. Its base is conspicuously flat and level, at a clear height above the canopy, and several smaller clouds nearby share exactly the same flat base height, so the base reads as a contour rather than a coincidence. Above the base the tower boils upward in hard cauliflower masses and spreads into a broad flat anvil near the top. Beneath the tower a dark column of heavy rain reaches the canopy.",
+  "scene": "Late afternoon over lowland rainforest, one mature storm cell dominating an otherwise open sky, the banded limb of a gas giant faint and low in the background.",
+  "camera": "Distant ground-level or low-aerial view of the whole cloud from base to anvil, the tower fitting entirely within the frame.",
+  "light": "Warm low sun raking the tower's flank from one side so its boiling structure reads in relief; the rain column and cloud base in deep cool shadow.",
+  "palette": "Bright warm-lit cloud flank against void-indigo sky, cool teal-grey cloud shadow, living-teal canopy below, a dim amber-grey gas-giant limb.",
+  "style": "Painterly plate reading as a diagram through its structure; real convective cloud rendering with soft volumetric mass, NOT a hard vector schematic and NOT a 3D render.",
+  "detail_level": "High on the tower's boiling flank and its flat base; the anvil softening at the top, the distant canopy dissolving into haze.",
+  "composition": "Tower set slightly off-centre and rising nearly the full height of the frame, its flat base crossing the composition as a strong horizontal, and clear sky on the opposite side kept plain for callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "grid",
+    "UI",
+    "watermark",
+    "logos"
+  ],
+  "consistency_notes": "The flat, shared cloud base is the teaching feature and must be unmistakably level across every cloud in the frame. Canopy in the chapter's living teal; cloud in the cooler water-in-air palette.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no grid, no diagram chrome, no photographic or 3D-render look, no ragged or sloping cloud base",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

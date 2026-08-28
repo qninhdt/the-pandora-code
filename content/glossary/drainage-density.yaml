@@ -1,0 +1,25 @@
+id: drainage-density
+label:
+  vi: Mật độ mạng lưới sông
+  en: Drainage density
+definition:
+  vi: >-
+    Tổng chiều dài của tất cả các dòng chảy trong một lưu vực chia cho tổng diện tích của lưu vực đó
+    (tính bằng km/km²). Mật độ này phản ánh sự tương tác giữa khí hậu và địa chất: tăng cao ở những nơi
+    có lượng mưa lớn kèm nền đá mềm dễ xói mòn, và giảm thấp ở những nơi đất thấm nước tốt hoặc nền đá
+    cứng trơ bền vững.
+  en: >-
+    The total length of all stream channels in a drainage basin divided by the total area of the basin
+    (expressed in km/km²). It reflects the balance between climatic driving forces and substrate resistance:
+    rising sharply in regions with intense rainfall and weak, erodible bedrock, and dropping where permeable
+    soils or highly resistant rock dominate.
+see_also:
+  - stream-power-incision
+  - baseflow
+category: concept
+tags:
+  - geology
+  - earth-systems
+cover_prompt: >-
+  A painted orbital satellite view of an ultra-dense, finely branched river network carving a lush green
+  and brown continental basin like delicate capillary veins, rich earthy colors, no text, no labels.

@@ -1,0 +1,27 @@
+id: cloud-condensation-nuclei
+label:
+  vi: Hạt nhân ngưng tụ mây
+  en: Cloud condensation nuclei
+definition:
+  vi: >-
+    Các hạt aerosol cực nhỏ (muối biển, sulfate, hạt hữu cơ sinh học) lơ lửng trong khí quyển đóng
+    vai trò làm điểm tựa cho hơi nước ngưng tụ thành giọt mây lỏng. Không có các hạt nhân này, sự ngưng
+    tụ tự phát của nước nguyên chất đòi hỏi độ siêu bão hòa phi thực tế lên tới hàng trăm phần trăm do
+    hiệu ứng sức căng bề mặt trên giọt nước siêu nhỏ.
+  en: >-
+    Microscopic aerosol particles (sea salt, sulphates, biogenic organic aerosols) suspended in the air
+    that serve as nucleation sites for water vapour to condense into liquid cloud droplets. Without
+    these nuclei, spontaneous homogeneous condensation of pure water requires an impossible supersaturation
+    of several hundred percent due to the Kelvin curvature effect on sub-nanometre droplets.
+see_also:
+  - koehler-theory
+  - collision-coalescence
+category: concept
+tags:
+  - atmosphere
+  - physics
+  - earth-systems
+cover_prompt: >-
+  A painted microscopic visualization of water molecules clustering around a dissolved salt aerosol grain,
+  forming a glowing droplet surrounded by humid air, deep violet and cyan palette, painterly microscopic
+  plate, no text, no labels.

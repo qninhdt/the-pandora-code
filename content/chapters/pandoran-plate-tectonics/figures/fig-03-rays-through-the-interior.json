@@ -1,0 +1,36 @@
+{
+  "id": "fig-03-rays-through-the-interior",
+  "chapter_slug": "pandoran-plate-tectonics",
+  "role": "diagram",
+  "narrative_purpose": "Show how a single quake resolves a planet's layering — and make the shear-wave shadow visible as a stretch of surface that no ray reaches, so the reader sees that the absence is the measurement.",
+  "subject": "A large sphere fills the frame, cut open as a cross-section so its concentric interior shells are visible: an outermost thin bright rim of crust, a thick dark mantle beneath it occupying most of the radius, then a distinctly paler smooth-textured region occupying the inner half, and at the very centre a small dense darker ball. A single bright point sits on the surface at the top of the sphere. From that point, roughly twelve thin luminous lines spread out through the interior. The lines are gently curved, bowing upward toward the surface, and each one visibly kinks where it crosses from the dark mantle into the paler inner region. Several lines return to the surface on the upper left and upper right. A wide continuous stretch of the sphere's lower surface — roughly the bottom third of the circumference — is reached by no lines at all and is rendered plain and dark, edged by a faint dim magenta arc.",
+  "scene": "A schematic cross-section of a rocky planet's interior with seismic ray paths from a single surface source, rendered as a painted illustration plate.",
+  "camera": "Flat-on, centred, the whole sphere within frame against a plain dark field.",
+  "light": "The ray lines are self-luminous cyan and teal; the interior shells lit only faintly from within, the pale inner region glowing dimly; the empty lower arc left genuinely dark.",
+  "palette": "Void-indigo background and mantle, deep teal for the mantle texture, luminous cyan ray lines, a dimmer teal for the inner region, faint magenta only along the edge of the unreached arc.",
+  "style": "Painterly scientific cross-section plate, hand-illustrated rather than vector — soft edges on the shell boundaries, visible brush texture in the rock, luminous painted ray lines.",
+  "detail_level": "Clean readable geometry; shell boundaries distinct but softly painted; ray lines thin and precise.",
+  "composition": "Sphere centred and large; the source point at top dead centre; rays fanning symmetrically left and right; the empty dark arc unmistakable across the bottom.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrowheads",
+    "leader lines",
+    "grid lines",
+    "coordinate axes",
+    "continents",
+    "clouds",
+    "stars"
+  ],
+  "consistency_notes": "Purely diagrammatic — this is not a landscape. The relative shell sizes should read as crust very thin, mantle about half the radius, then a large inner region, then a small central ball. The unreached lower arc must be obvious at a glance.",
+  "aspect_ratio": "1:1",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrowheads, no leader lines, no measurement grid, no coordinate axes, no vector or flat infographic look, no photographic or 3D-render look, no glossy sheen",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

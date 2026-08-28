@@ -1,0 +1,27 @@
+id: koehler-theory
+label:
+  vi: Lý thuyết Köhler
+  en: Köhler theory
+definition:
+  vi: >-
+    Lý thuyết nhiệt động lực học mô tả sự cân bằng và kích hoạt của giọt mây dựa trên sự cạnh tranh
+    giữa hai hiệu ứng: hiệu ứng độ cong Kelvin (khiến giọt nhỏ dễ bốc hơi) và hiệu ứng chất tan Raoult
+    (hạ thấp áp suất hơi bão hòa nhờ chất tan hòa tan từ hạt nhân). Vượt qua đỉnh của đường cong Köhler,
+    giọt nước được "kích hoạt" và bắt đầu tăng trưởng không thể đảo ngược thành giọt mây.
+  en: >-
+    The thermodynamic framework describing the equilibrium and activation of cloud droplets, combining
+    the Kelvin curvature effect (which increases vapour pressure for small droplets) and the Raoult
+    solute effect (which decreases vapour pressure over dissolved solutions). Exceeding the critical
+    peak of the Köhler curve results in droplet activation and runaway growth.
+see_also:
+  - cloud-condensation-nuclei
+  - collision-coalescence
+category: concept
+tags:
+  - physics
+  - atmosphere
+  - chemistry
+cover_prompt: >-
+  A painted conceptual representation of the Köhler equilibrium curve, showing a stable haze particle
+  crossing an activation peak into runaway condensation, painted in refined technical-aesthetic style,
+  dark blue and amber gradients, no text, no labels.

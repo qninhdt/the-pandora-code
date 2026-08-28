@@ -1,0 +1,27 @@
+id: precipitation-recycling
+label:
+  vi: Tái chế giáng thủy
+  en: Precipitation recycling
+definition:
+  vi: >-
+    Quá trình lượng nước bốc thoát hơi từ một lưu vực hay vùng đất quay trở lại bề mặt dưới dạng mưa
+    ngay trong cùng khu vực đó hoặc vùng xuôi gió lân cận. Hiện tượng này duy trì các "dòng sông bay"
+    trong khí quyển, cho phép độ ẩm đại dương vượt qua hàng nghìn kilômét tiến sâu vào trung tâm lục địa
+    thông qua chuỗi chặng nhảy bốc hơi và đổ mưa liên tiếp qua các tán rừng.
+  en: >-
+    The process by which evapotranspired moisture originating from a land area contributes directly to
+    rainfall within the same region or immediately downwind. This mechanism sustains atmospheric
+    "aerial rivers", allowing oceanic moisture to penetrate thousands of kilometres into continental
+    interiors via cascading hops of vegetative transpiration and rainfall.
+see_also:
+  - evapotranspiration
+  - residence-time
+category: concept
+tags:
+  - atmosphere
+  - earth-systems
+  - ecology
+cover_prompt: >-
+  A painted wide-angle vista of an atmospheric river looping across a vast continent, vapor plumes rising
+  from dense canopy and raining down repeatedly in sequential cascades, luminescent greens and blues, no
+  text, no labels.

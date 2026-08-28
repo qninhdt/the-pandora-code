@@ -1,0 +1,40 @@
+{
+  "id": "fig-06-the-unbroken-shell",
+  "chapter_slug": "pandoran-plate-tectonics",
+  "role": "comparison",
+  "narrative_purpose": "Show the ordinary outcome — a world of Earth's size whose crust never broke — so the reader sees that plate tectonics is the exception rather than the default.",
+  "subject": "A planet's surface seen from low orbit, curving away to a hazy limb across the top of the frame. The visible crust is one continuous unbroken sheet: nowhere is there a long linear ridge, a linear trench, or any straight boundary crossing it. Instead the surface carries about eight wide circular structures of varying size, each a low ring or coronet of concentric ridges with a slightly sunken centre, scattered across the plains. One very large low shield volcano swells gently in the middle distance, broad and flat with a small summit depression. The plains between them are dry, cracked into irregular polygonal patterns, and dusty. Thick pale haze lies over everything, thinning toward the limb where a dense atmosphere glows faintly.",
+  "scene": "A dry, single-shelled rocky planet seen from low orbit through thick haze.",
+  "camera": "High oblique orbital view looking down and forward across the surface to the curved limb.",
+  "light": "Flat diffuse illumination heavily scattered by the thick atmosphere, so shadows are soft and long-wavelength; no bioluminescence anywhere; the limb carrying a faint pale amber atmospheric glow.",
+  "palette": "Dull stone-grey and desaturated buff plains, void-indigo in the ring depressions and cracks, cool teal-indigo haze, restrained pale amber only at the atmospheric limb.",
+  "style": "Painterly planetary surface plate, dry matte rock texture, heavy atmospheric scattering, naturalist rather than dramatic.",
+  "detail_level": "Cracked plain texture and concentric ring structures crisp in the near and middle ground; everything progressively dissolving into haze toward the limb.",
+  "composition": "The limb across the upper quarter; the great shield volcano as a broad low swell right of centre in the middle distance; circular ring structures scattered irregularly across the plains with deliberately no linear alignment anywhere.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "diagram lines",
+    "long linear ridges",
+    "linear trenches",
+    "rift valleys crossing the frame",
+    "oceans",
+    "vegetation",
+    "bioluminescence",
+    "spacecraft",
+    "buildings",
+    "humans"
+  ],
+  "consistency_notes": "This is explicitly NOT Pandora — it is the dry one-plate comparison world, so it must carry no bioluminescence and no water. The absence of any linear boundary is the entire point of the image and must be unmistakable.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no diagram lines, no arrows, no linear ridges or trenches, no oceans, no vegetation, no glowing plants, no photographic or 3D-render look, no lens flares, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

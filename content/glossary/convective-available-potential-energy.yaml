@@ -1,0 +1,27 @@
+id: convective-available-potential-energy
+label:
+  vi: Thế năng đối lưu khả dụng
+  en: Convective available potential energy
+definition:
+  vi: >-
+    Tổng lượng thế năng nổi tích lũy (tính bằng joule trên mỗi kilogram) mà một khối không khí ấm ẩm nhận
+    được khi bốc lên tự do từ mực tự do đối lưu tới mực cân bằng đối lưu. CAPE đo đạc "nhiên liệu" nhiệt động
+    lực học sẵn có trong khí quyển để nuôi dưỡng các dòng thăng thẳng đứng dữ dội, chuyển hóa trực tiếp thành
+    động năng của những cơn dông bão nhiệt đới.
+  en: >-
+    The integrated amount of buoyant energy (measured in joules per kilogram) available to an air parcel
+    as it rises freely from the level of free convection to the equilibrium level. CAPE quantifies the
+    thermodynamic instability and fuel within an atmospheric column, directly governing the maximum
+    potential updraft speed of convective thunderstorm towers.
+see_also:
+  - lifting-condensation-level
+  - potential-intensity
+category: concept
+tags:
+  - atmosphere
+  - physics
+  - earth-systems
+cover_prompt: >-
+  A painted thermodynamic sounder skew-T diagram stylised as a luminous atmospheric cross-section, showing
+  the positive buoyant energy envelope between parcel and environmental profiles in glowing amber, no
+  text, no labels.

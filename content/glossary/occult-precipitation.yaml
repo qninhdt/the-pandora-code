@@ -1,0 +1,27 @@
+id: occult-precipitation
+label:
+  vi: Giáng thủy ẩn
+  en: Occult precipitation
+definition:
+  vi: >-
+    Lượng nước thu gom được khi các giọt mây mù hoặc sương lơ lửng trong không khí trôi dạt và va chạm
+    trực tiếp vào thảm thực vật rừng (lá, cành, rêu, thực vật biểu sinh) hoặc vách đá trần. "Ẩn" vì nước
+    không rơi theo phương thẳng đứng nên hoàn toàn không được ghi nhận bởi các vũ kế tiêu chuẩn, nhưng
+    lại là nguồn cấp nước sống còn cho các khu rừng mây nhiệt đới và các khối núi bay.
+  en: >-
+    The deposition of liquid water onto vegetative surfaces (foliage, epiphytes, mosses) or rock faces
+    via the direct horizontal impaction and interception of wind-blown cloud and fog droplets. Termed
+    "occult" because it bypasses standard vertical rain gauges entirely, yet provides a critical hydrological
+    subsidy sustaining montane cloud forests and perched landforms.
+see_also:
+  - evapotranspiration
+  - orographic-lift
+category: concept
+tags:
+  - atmosphere
+  - ecology
+  - earth-systems
+cover_prompt: >-
+  A painted macro-scale botanical painting of lush cloud-forest epiphytes and hanging vines combing
+  dense horizontal fog into glistening water droplets and trickling rivulets, atmospheric mist and deep
+  emerald hues, no text, no labels.

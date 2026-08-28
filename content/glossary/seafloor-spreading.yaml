@@ -1,0 +1,31 @@
+id: seafloor-spreading
+label:
+  vi: Sự tách giãn đáy đại dương
+  en: Seafloor spreading
+definition:
+  vi: >-
+    Quá trình đáy đại dương mới liên tục được sinh ra ở các sống núi giữa đại dương rồi dạt ra hai bên. Cách
+    người ta chứng minh được điều đó là một trong những mẹo hay nhất của khoa học Trái Đất: từ trường của
+    hành tinh đảo cực bất chợt trong lịch sử, và đá basalt nguội đi ở sống núi thì ghi lại hướng từ trường
+    lúc ấy. Kết quả là hai bên trục tách giãn có những dải từ tính đối xứng như ảnh gương — một băng ghi lại
+    cả tốc độ lẫn chiều di chuyển của mảng, kéo dài hàng trăm triệu năm.
+  en: >-
+    The process by which new ocean floor is continually created at mid-ocean ridges and carried away to
+    either side. How this was proved is one of Earth science's finest tricks: the planet's magnetic field
+    reverses polarity now and then, and basalt cooling at a ridge records whichever direction was current at
+    the time. The result is magnetic stripes flanking the axis in mirror symmetry — a tape recording of both
+    the rate and the direction of plate motion, running back hundreds of millions of years.
+see_also:
+  - plate-tectonics
+  - subduction
+  - hypsometry
+category: planet
+tags:
+  - geology
+  - earth-systems
+  - planetary-science
+cover_prompt: >-
+  A painted overhead view of a long submarine ridge running down the centre of the frame with fresh glowing
+  rock along its axis, and the seafloor on either side rendered as alternating bands of lighter and darker
+  rock arranged in mirror symmetry about the ridge, cool teal and cyan on the axis fading to deep indigo
+  outward, painterly geological plate, no text, no labels.

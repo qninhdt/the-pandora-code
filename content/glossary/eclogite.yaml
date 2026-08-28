@@ -1,0 +1,31 @@
+id: eclogite
+label:
+  vi: Đá eclogite
+  en: Eclogite
+definition:
+  vi: >-
+    Loại đá biến chất áp suất cực cao, đá lựu đỏ nằm trong nền pyroxene xanh, sinh ra khi đá basalt bị nén
+    ở độ sâu hàng chục kilômét. Nó quan trọng vì hai lẽ. Thứ nhất, nó đặc hơn hẳn đá mẹ — chừng 400 kg mỗi
+    mét khối — nên chính phản ứng tạo ra nó lại làm mảng chìm nặng thêm và tự kéo mình xuống sâu hơn. Thứ
+    hai, nó là một trong ít loại đá chỉ hình thành nổi ở đường nhiệt độ đặc trưng của vùng hút chìm; tìm
+    thấy nó là bằng chứng thạch học rằng kiến tạo mảng đã từng hoạt động ở đó.
+  en: >-
+    An ultra-high-pressure metamorphic rock — red garnet set in green pyroxene — formed when basalt is
+    compressed at depths of tens of kilometres. It matters for two reasons. First, it is markedly denser
+    than its parent rock, by some 400 kilograms per cubic metre, so the very reaction that makes it adds
+    weight to a sinking slab and drags it deeper. Second, it is one of the few rocks that can only form
+    along the distinctive cool geotherm of a subduction zone; finding it is petrological proof that plate
+    tectonics operated there.
+see_also:
+  - blueschist
+  - subduction
+  - slab-pull
+category: planet
+tags:
+  - mineral
+  - geology
+  - planetary-science
+cover_prompt: >-
+  A painted specimen study of a polished rock face densely studded with deep red rounded garnet crystals
+  embedded in a bright green fine-grained matrix, the surface catching a cool cyan raking light, deep indigo
+  background, painterly petrological plate, no text, no labels, no scale bar.
