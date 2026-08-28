@@ -50,8 +50,7 @@ export function DescentSection({ kicker, heading, body, note }: DescentSectionPr
           WebkitMaskImage: DESCENT_EDGE_MASK,
         }}
       />
-
-      <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-[1.3fr_1fr]">
+      <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-[1.3fr_1fr]">
         <Parallax offset={50}>
           <FadeInOnScroll>
             <p className="mb-4 font-sans text-xs uppercase tracking-[0.3em] text-teal">{kicker}</p>

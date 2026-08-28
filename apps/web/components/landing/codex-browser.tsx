@@ -62,8 +62,7 @@ export function CodexBrowser({ heading, kicker, comingLabel, parts }: CodexBrows
           }}
         />
       </div>
-
-      <div className="mx-auto max-w-7xl px-6 py-28">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 py-28">
         <FadeInOnScroll>
           <p className="mb-3 font-sans text-xs uppercase tracking-[0.3em] text-magenta">{kicker}</p>
           <h2 className="mb-14 max-w-3xl font-display text-4xl font-700 leading-tight tracking-tight text-foreground sm:text-5xl">

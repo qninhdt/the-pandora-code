@@ -128,7 +128,8 @@ html {
 }
 
 /* Drifting motes for the 2D fallback - tiled radial dots crawling slowly. */
-.atmosphere-motes {
+.atmosphere-motes,
+.atmosphere-motes-overlay {
   background-image: radial-gradient(
       color-mix(in oklab, var(--cyan) 60%, transparent) 0.5px,
       transparent 1.5px
@@ -137,6 +138,17 @@ html {
   background-position: 0 0, 70px 90px;
   opacity: 0.5;
   animation: atmosphere-drift 60s linear infinite;
+}
+
+/* Landing artwork needs the fallback particles above each painted vista, not
+   buried behind the first image in the page's negative-z background stack. */
+.atmosphere-motes-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.8;
+  mix-blend-mode: screen;
 }
 
 @keyframes atmosphere-drift {
@@ -149,7 +161,8 @@ html {
   .scroll-smooth {
     scroll-behavior: auto;
   }
-  .atmosphere-motes {
+  .atmosphere-motes,
+  .atmosphere-motes-overlay {
     animation: none;
   }
 }
@@ -167,13 +180,17 @@ html {
 [data-reader-motion="reduce"] .atmosphere-motes {
   animation: none;
 }
+[data-reader-motion="reduce"] .atmosphere-motes-overlay {
+  animation: none;
+}
 
 @media (prefers-reduced-motion: reduce) {
   [data-reader-motion="no-preference"] .scroll-smooth {
     scroll-behavior: smooth;
   }
 
-  [data-reader-motion="no-preference"] .atmosphere-motes {
+  [data-reader-motion="no-preference"] .atmosphere-motes,
+  [data-reader-motion="no-preference"] .atmosphere-motes-overlay {
     animation: atmosphere-drift 60s linear infinite;
   }
 }

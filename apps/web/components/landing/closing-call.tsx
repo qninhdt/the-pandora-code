@@ -7,8 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const CTA_BG = "/images/pages/cta-horizon.webp";
-const CTA_EDGE_MASK =
-  "linear-gradient(to bottom, transparent 0%, black 14%, black 78%, transparent 100%)";
+const CTA_EDGE_MASK = "linear-gradient(to bottom, transparent 0%, black 14%, black 100%)";
 
 interface ClosingCallProps {
   kicker: string;
@@ -34,9 +33,9 @@ export function ClosingCall({
   glossaryHref,
 }: ClosingCallProps) {
   return (
-    <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden px-6 py-32 text-center">
+    <section className="relative flex min-h-[80vh] items-center justify-center overflow-visible px-6 py-32 text-center">
       {/* Painted horizon backdrop with a slow parallax push. */}
-      <Parallax offset={70} className="absolute inset-0 -z-20">
+      <Parallax offset={70} className="absolute inset-x-0 top-0 -bottom-24 -z-20 overflow-hidden">
         <Image
           src={CTA_BG}
           alt=""
@@ -53,17 +52,16 @@ export function ClosingCall({
       {/* Legibility + blend into the void above and below. */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10"
+        className="pointer-events-none absolute inset-x-0 top-0 -bottom-24 -z-10"
         style={{
           background:
-            "radial-gradient(110% 75% at 50% 55%, transparent 35%, color-mix(in oklab, var(--void) 78%, transparent) 100%), linear-gradient(to bottom, var(--void) 0%, transparent 30%, transparent 60%, var(--void) 100%)",
+            "radial-gradient(110% 75% at 50% 55%, transparent 35%, color-mix(in oklab, var(--void) 78%, transparent) 100%), linear-gradient(to bottom, var(--void) 0%, transparent 30%, transparent 100%)",
           maskImage: CTA_EDGE_MASK,
           WebkitMaskImage: CTA_EDGE_MASK,
         }}
       />
       <div aria-hidden className="grain-overlay pointer-events-none absolute inset-0 -z-10" />
-
-      <FadeInOnScroll>
+      <FadeInOnScroll className="relative z-10">
         <div className="flex max-w-3xl flex-col items-center">
           <p className="mb-5 font-sans text-xs uppercase tracking-[0.4em] text-amber">{kicker}</p>
           <h2 className="font-display text-4xl font-800 leading-[1.05] tracking-tight text-foreground sm:text-6xl">

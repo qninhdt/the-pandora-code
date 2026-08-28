@@ -25,6 +25,7 @@ export function AtmosphereProvider() {
   const { tier, weaker } = useAtmosphereTier();
   const pathname = usePathname();
   const profile = profileFor(pathname);
+  const landingFallback = tier === "fallback" && /^\/(?:en|vi)\/?$/.test(pathname);
 
   // Pause the WebGL loop while the tab is hidden (battery / CPU).
   const [hidden, setHidden] = useState(false);
@@ -35,21 +36,26 @@ export function AtmosphereProvider() {
   }, []);
 
   return (
-    <div className="atmosphere-layer" aria-hidden>
-      {tier === "pending" ? null : tier === "webgl" ? (
-        <AtmosphereCanvas profile={profile} weaker={weaker} paused={hidden} />
-      ) : (
-        <AtmosphereFallback />
-      )}
-      {/* Light vignette: center stays clear so the field shows; edges deepen
-          toward the void to frame the content. */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(130% 100% at 50% 40%, transparent 0%, transparent 55%, color-mix(in oklab, var(--void) 55%, transparent) 100%)",
-        }}
-      />
-    </div>
+    <>
+      <div className="atmosphere-layer" aria-hidden>
+        {tier === "pending" ? null : tier === "webgl" ? (
+          <AtmosphereCanvas profile={profile} weaker={weaker} paused={hidden} />
+        ) : (
+          <AtmosphereFallback />
+        )}
+        {/* Light vignette: center stays clear so the field shows; edges deepen
+            toward the void to frame the content. */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(130% 100% at 50% 40%, transparent 0%, transparent 55%, color-mix(in oklab, var(--void) 55%, transparent) 100%)",
+          }}
+        />
+      </div>
+      {/* The fallback particles sit above landing artwork, while all copy and
+          controls opt into a higher content stack inside their sections. */}
+      {landingFallback && <div className="atmosphere-motes-overlay" aria-hidden />}
+    </>
   );
 }
