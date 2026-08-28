@@ -3,7 +3,7 @@
 import { DecodeProgress } from "@/components/landing/decode-progress";
 import { useReducedMotionSafe } from "@/components/motion/use-reduced-motion-safe";
 import { motion } from "framer-motion";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -49,7 +49,7 @@ export function HeroSurface({
         };
 
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 text-center">
+    <section className="relative flex min-h-dvh flex-col items-center justify-center overflow-hidden px-6 text-center">
       {/* Layer 1 - painted establishing vista at the back. */}
       <div aria-hidden className="absolute inset-0 -z-30">
         <Image
@@ -150,20 +150,6 @@ export function HeroSurface({
           </Link>
         </motion.div>
       </div>
-
-      {/* Scroll cue */}
-      <motion.div
-        aria-hidden
-        className="absolute bottom-8 z-10 text-subtle"
-        animate={reduced ? undefined : { y: [0, 8, 0] }}
-        transition={{
-          duration: 2,
-          repeat: Number.POSITIVE_INFINITY,
-          ease: "easeInOut",
-        }}
-      >
-        <ChevronDown size={22} />
-      </motion.div>
     </section>
   );
 }

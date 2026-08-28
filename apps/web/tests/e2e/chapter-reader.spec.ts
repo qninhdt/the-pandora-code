@@ -21,7 +21,7 @@ test.describe("chapter reader", () => {
     ).toBeVisible();
   });
 
-  test("continue reading card stays inside the desktop content rail", async ({ page }) => {
+  test("continue reading card fits inside the initial desktop viewport", async ({ page }) => {
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.addInitScript(() => {
       localStorage.setItem(
@@ -53,8 +53,9 @@ test.describe("chapter reader", () => {
     expect(viewport).not.toBeNull();
     expect(box!.x).toBeGreaterThan(100);
     expect(viewport!.width - (box!.x + box!.width)).toBeGreaterThan(100);
-    expect(box!.y).toBeLessThan(descentBox!.y);
-    expect(box!.y + box!.height).toBeGreaterThan(descentBox!.y);
+    expect(box!.y + box!.height).toBeLessThanOrEqual(viewport!.height);
+    expect(descentBox!.y - (box!.y + box!.height)).toBeGreaterThanOrEqual(20);
+    await expect(page.locator("svg.lucide-chevron-down")).toHaveCount(0);
   });
 
   test("unknown slug returns 404", async ({ page }) => {

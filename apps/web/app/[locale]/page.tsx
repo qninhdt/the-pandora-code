@@ -94,7 +94,7 @@ export default async function Home({ params }: HomeProps) {
         <ContinueReadingCard
           items={continueItems}
           label={t("chapter.continueReading")}
-          className="-translate-y-1/2"
+          className="-translate-y-[calc(100%+1.5rem)]"
         />
       </div>
 
