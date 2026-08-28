@@ -1,0 +1,136 @@
+slug: pandoran-tree-of-life
+status: published
+title:
+  vi: Phả hệ sự sống Pandora
+  en: Building the Pandoran Tree of Life
+subtitle:
+  vi: >-
+    Một nhà sinh học được trao toàn bộ bầy thú Pandora mà không có lấy một sợi DNA - liệu có thể
+    dựng lại cây phả hệ của chúng? Có thể: bằng cách đọc những đặc điểm chung dẫn xuất theo lối phân
+    nhánh, và bằng việc biết chính xác phương pháp ấy gãy ở đâu.
+  en: >-
+    A biologist is handed the whole Pandoran bestiary with no DNA - can she still rebuild their
+    family tree? Yes: by reading shared derived traits cladistically, and by knowing exactly where
+    the method breaks.
+hook:
+  vi: >-
+    Trên một chiếc bàn mẫu vật tối mờ: hộp sọ thanator, một chiếc vây ilu, một đốt sống tulkun, và
+    một bộ xương Na'vi đứng lẫn giữa chúng. Mọi nhà phát sinh chủng loài học trên Trái Đất hôm nay
+    đều với tay tìm cùng một thứ trước tiên - và thứ đó đang vắng mặt: không có DNA. Cốt truyện gốc
+    hoàn toàn im lặng về sinh học phân tử của Pandora. Vậy mà cây phả hệ vẫn dựng được - bởi suốt
+    một thế kỷ trước khi biết giải trình tự gene, Trái Đất đã dựng cây sự sống của mình chỉ từ những
+    bộ xương. Câu hỏi thật sự không phải "có biết được không", mà là: điểm giống nào tiết lộ quan hệ
+    huyết thống, và điểm giống nào nói dối?
+  en: >-
+    On a dim specimen bench: a thanator skull, an ilu flipper, a tulkun vertebra, and a Na'vi
+    skeleton standing among them. The one tool every Earth phylogeneticist now reaches for first is
+    missing - there is no DNA. Canon is silent on Pandoran molecular biology. And yet the tree can
+    still be drawn, because for a century before sequencing, Earth built its own tree of life from
+    bones alone. The real question is not whether the tree is knowable, but which similarities
+    reveal kinship - and which ones lie.
+authors:
+  - bardabez
+tags:
+  - phylogenetics
+  - cladistics
+  - systematics
+  - maximum-parsimony
+  - tree-of-life
+  - evolutionary-biology
+classification:
+  canon_pct: 22
+  inference_pct: 15
+  speculation_pct: 8
+  real_science_pct: 55
+related_chapters:
+  - six-limbs-and-the-bilateral-lattice
+  - convergent-but-not-quite
+  - what-eywa-is
+  - the-hunters-and-the-hunted
+glossary_terms:
+  - cladogram
+  - archaea
+  - synapomorphy
+  - symplesiomorphy
+  - plesiomorphy
+  - apomorphy
+  - autapomorphy
+  - homologous-structures
+  - homoplasy
+  - outgroup
+  - maximum-parsimony
+  - occams-razor
+  - clade
+  - polyphyly
+  - phenetics
+  - long-branch-attraction
+  - reticulate-evolution
+  - convergent-evolution
+  - prolemuris
+  - queue
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-specimen-bench-no-dna
+    role: hero
+    asset_status: ready
+  - id: fig-02-character-types
+    role: diagram
+    asset_status: ready
+  - id: fig-03-phenetic-trap
+    role: comparison
+    asset_status: ready
+  - id: fig-04-long-branch-flyers
+    role: diagram
+    asset_status: ready
+  - id: fig-05-reticulate-web
+    role: inline
+    asset_status: ready
+  - id: fig-06-shared-pandoran-signatures
+    role: comparison
+    asset_status: ready
+  - id: fig-07-whale-ankle-clue
+    role: comparison
+    asset_status: ready
+  - id: fig-99-background
+    role: inline
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Na'vi - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Na%27vi
+  - kind: canon
+    label: Prolemuris - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Prolemuris
+  - kind: canon
+    label: Ilu - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Ilu
+  - kind: canon
+    label: Tulkun - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Tulkun
+  - kind: canon
+    label: Skimwing - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Skimwing
+  - kind: canon
+    label: Thanator - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Thanator
+  - kind: science
+    label: Hennig, Phylogenetic Systematics (the founding work of cladistics)
+    url: https://en.wikipedia.org/wiki/Phylogenetic_Systematics_(book)
+  - kind: science
+    label: Woese & Fox - the three-domain system from ribosomal RNA
+    url: https://en.wikipedia.org/wiki/Three-domain_system
+  - kind: science
+    label: Long branch attraction (Wikipedia overview of the parsimony failure mode)
+    url: https://en.wikipedia.org/wiki/Long_branch_attraction
+  - kind: science
+    label: Thewissen et al. - whales nested in artiodactyls, the double-pulley astragalus
+    url: https://pubmed.ncbi.nlm.nih.gov/11815723/
+  - kind: science
+    label: Farris - the retention index and the rescaled consistency index
+    url: https://evoluscope.fr/phylographe/biblio/Farris1989.pdf
+  - kind: research-note
+    label: >-
+      Systematics of the Pandoran Biosphere - cladistic analyses and the xenobiological tree of life
+      (chapter research note)

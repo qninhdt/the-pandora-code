@@ -1,0 +1,146 @@
+slug: why-burning-eywa-doesnt-kill-it
+status: published
+title:
+  vi: Vì sao thiêu rụi Eywa không giết được nó
+  en: Why Burning Eywa Doesn’t Kill It
+subtitle:
+  vi: >-
+    RDA đốt rụi cả những cánh rừng, quật ngã cái cây lớn nhất hành tinh, săn giết cả những đàn sinh
+    vật — vậy mà mạng lưới sống mang tên Eywa không hề lụi tắt. Không phải phép màu, mà là toán học
+    chính xác đến lạnh người về cách một mạng lưới sống sót, và cái ngưỡng duy nhất mà nó sẽ vỡ vụn.
+  en: >-
+    The RDA burns whole forests, fells the largest tree on the moon, hunts entire pods — and the
+    living network called Eywa never goes out. Not magic, but a coldly precise mathematics of how a
+    network survives, and the single threshold at which it would shatter.
+hook:
+  vi: >-
+    Đốt một lỗ thủng trong rừng và bạn đã giết rất nhiều cây. Nhưng liệu bạn có làm tổn hại mạng
+    lưới mà chúng thuộc về hay không lại là một câu hỏi hoàn toàn khác — và câu trả lời gần như luôn
+    là không. RDA học được điều đó theo cách đau đớn nhất: bạn có thể quật ngã cái cây lớn nhất vệ
+    tinh mà trí tuệ hành tinh không hề chớp mắt. Lý do nằm trong lý thuyết thẩm thấu và sự bền bỉ
+    của mạng lưới — một trong những điều hữu ích nhất mà toán học từng chứng minh về những thứ kết
+    nối.
+  en: >-
+    Burn a hole in a forest and you have killed a great many trees. Whether you have damaged the
+    network they belong to is a completely different question — and the answer is almost always no.
+    The RDA learns it the hard way: you can fell the largest tree on the moon and the planetary mind
+    does not so much as flicker. The reason lives in percolation theory and network resilience — one
+    of the most useful things mathematics has ever proven about connected things, and the precise
+    map of the four ways it would, finally, fail.
+authors:
+  - bardabez
+tags:
+  - network-resilience
+  - percolation-theory
+  - scale-free-networks
+  - eywa
+  - disturbance-ecology
+  - graph-theory
+classification:
+  canon_pct: 18
+  inference_pct: 17
+  speculation_pct: 10
+  real_science_pct: 55
+related_chapters:
+  - what-eywa-is
+  - the-wood-wide-web
+  - the-bandwidth-of-a-planet
+  - a-real-living-planet
+  - hometree-as-keystone
+  - life-after-the-volcano
+glossary_terms:
+  - node-graph-theory
+  - edge-graph-theory
+  - degree-graph-theory
+  - degree-distribution
+  - giant-connected-component
+  - hub-network
+  - scale-free-network
+  - percolation-theory
+  - percolation-threshold
+  - phase-transition
+  - redundancy-engineering
+  - degeneracy-biology
+  - modularity-network
+  - articulation-point
+  - ecological-resilience
+  - insurance-hypothesis
+  - seed-bank
+  - interdependent-networks
+  - cascading-failure
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-catalog-of-strikes
+    role: diagram
+    asset_status: ready
+  - id: fig-02-random-vs-targeted
+    role: comparison
+    asset_status: ready
+  - id: fig-03-articulation-point
+    role: diagram
+    asset_status: ready
+  - id: fig-04-woodsprite-seedbank
+    role: diagram
+    asset_status: ready
+  - id: fig-05-resistance-vs-resilience
+    role: comparison
+    asset_status: ready
+  - id: fig-06-simultaneous-hub-strike
+    role: diagram
+    asset_status: ready
+  - id: fig-07-sterile-future
+    role: comparison
+    asset_status: ready
+  - id: fig-08-fauna-flora-cascade
+    role: diagram
+    asset_status: ready
+  - id: fig-99-background
+    role: hero
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Tree of Souls - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Tree_of_Souls
+  - kind: canon
+    label: Tree of Voices - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Tree_of_Voices
+  - kind: canon
+    label: Hometree - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Hometree
+  - kind: canon
+    label: Spirit Tree - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Spirit_Tree
+  - kind: canon
+    label: Woodsprite - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Woodsprite
+  - kind: canon
+    label: Tulkun - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Tulkun
+  - kind: science
+    label: Albert, Jeong & Barabási - Error and attack tolerance of complex networks (Nature, 2000)
+    url: https://www.nature.com/articles/35019019
+  - kind: science
+    label: Cohen et al. - Resilience of the Internet to Random Breakdowns (Physical Review Letters, 2000)
+    url: https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.85.4626
+  - kind: science
+    label: Buldyrev et al. - Catastrophic cascade of failures in interdependent networks (Nature, 2010)
+    url: https://www.nature.com/articles/nature08932
+  - kind: science
+    label: >-
+      Holling - Resilience and Stability of Ecological Systems (Annual Review of Ecology and
+      Systematics, 1973)
+    url: https://www.annualreviews.org/doi/10.1146/annurev.es.04.110173.000245
+  - kind: science
+    label: >-
+      Yachi & Loreau - Biodiversity and ecosystem productivity in a fluctuating environment: the
+      insurance hypothesis (PNAS, 1999)
+    url: https://www.pnas.org/doi/10.1073/pnas.96.4.1463
+  - kind: science
+    label: Edelman & Gally - Degeneracy and complexity in biological systems (PNAS, 2001)
+    url: https://www.pnas.org/doi/10.1073/pnas.231499798
+  - kind: research-note
+    label: >-
+      The Resilience of Eywa - Damage Tolerance and Network Survival on Pandora (chapter research
+      note)

@@ -1,0 +1,162 @@
+{
+  "viz": {
+    "warningSignalRace": {
+      "title": "Lời cảnh báo có kịp đến trước không?",
+      "subtitle": "Một tiếng báo động chỉ có nghĩa nếu nó đến trước con vật ăn lá.",
+      "aria": "Một tín hiệu băng qua lớp đất giữa cây bị tấn công và cây hàng xóm, đi được {reach} trên khoảng cách {distance} trước khi hết thời gian",
+      "channelLabel": "Kênh mà lời cảnh báo đi qua",
+      "channels": {
+        "streaming": "Dòng nội chất trong nấm",
+        "spike": "Xung điện của nấm",
+        "nerve": "Dây thần kinh, để so sánh"
+      },
+      "hint": {
+        "inTime": "Lời cảnh báo đến trước đòn tấn công — cây hàng xóm đã kịp dựng hàng phòng vệ khi lũ rệp tới. Hãy để ý khoảng cách phải nhỏ đến mức nào thì điều này mới xảy ra được.",
+        "tooLate": "Tiếng báo động vẫn còn đang bò trong đất khi con vật ăn lá đã tới. Tín hiệu là thật; nhưng trên khoảng cách này, nó đơn giản là quá chậm để làm một lời cảnh báo."
+      },
+      "attacked": "Cây bị tấn công",
+      "neighbour": "Cây hàng xóm",
+      "frontLabel": "tín hiệu đi được {reach}",
+      "gapLabel": "khoảng cách giữa hai cây: {distance}",
+      "travelLabel": "Thời gian băng qua",
+      "travelNote": "Ở tốc độ đo được của kênh này",
+      "verdictLabel": "Kết cục",
+      "verdict": {
+        "inTime": "Kịp báo động",
+        "tooLate": "Quá muộn"
+      },
+      "distanceSlider": "Khoảng cách giữa hai cây",
+      "deadlineSlider": "Thời gian trước khi con vật ăn lá tới cây hàng xóm",
+      "units": {
+        "instant": "gần như tức thì",
+        "seconds": "{n} giây",
+        "minutes": "{n} phút",
+        "hours": "{n} giờ",
+        "days": "{n} ngày",
+        "years": "{n} năm"
+      }
+    },
+    "isotopeTracerAudit": {
+      "title": "Tự dựng thí nghiệm, tự giành lấy kết luận",
+      "subtitle": "Bật từng khâu kiểm soát và xem thiết kế cho phép bạn viết ra câu nào.",
+      "aria": "Một thí nghiệm truy vết đồng vị với {n} trên {total} khâu kiểm soát được bật, cùng kết luận mạnh nhất mà nó chống đỡ được",
+      "source": "Cây cho, có gắn nhãn",
+      "receiver": "Cây nhận",
+      "receiverShaded": "Cây nhận bị che nắng",
+      "routeLabel": "lớp đất chung và mối nối nấm giữa hai hệ rễ",
+      "meshMarker": "lưới: cắt sợi nấm, vẫn cho nước đất qua",
+      "claimLabel": "Kết luận mạnh nhất giành được",
+      "claimNote": "Thiết kế này không đỡ được bất cứ điều gì cao hơn",
+      "attributionLabel": "Phân tử đến từ đâu",
+      "attribution": {
+        "unknown": "Không rõ cây cho",
+        "soilLeak": "Rỉ qua đất hoặc qua nấm",
+        "fungalRoute": "Qua mối nối nấm"
+      },
+      "controlsLabel": "Khâu kiểm soát đã bật",
+      "controlsNote": "Mỗi khâu bịt một lối thoát khác nhau",
+      "rung": {
+        "none": "Chưa có gì",
+        "movement": "Có thứ gì đã di chuyển",
+        "route": "Nó đi qua nấm",
+        "gradient": "Nó chảy về phía nơi thiếu",
+        "kin": "Cây họ hàng được ưu ái"
+      },
+      "confound": {
+        "donorUnknown": "Với một loại nhãn duy nhất, bạn có thể tìm thấy đồng vị trong cây nhận mà vẫn không biết nó khởi hành từ cây nào. Chưa thể kết luận gì cho tới khi phân biệt được cây cho.",
+        "soilLeak": "Carbon đã tới được cây nhận — nhưng đường trong rễ vẫn rỉ ra đất và cây bên cạnh có thể tự hút lên. Không có màng chắn, đường qua nấm chỉ là một trong nhiều cách giải thích.",
+        "noGradient": "Tấm lưới đã loại đường đất, nên mối nối nấm thực sự đã tải nó đi. Điều thiết kế vẫn chưa nói được là chiều: chẳng có gì ở đây cho thấy dòng chảy đi theo nhu cầu của ai.",
+        "kinUntested": "Đây chính là điều thiết kế của Simard giành được — dòng ròng chảy xuống theo độ chênh ánh sáng, từ cây đầy nắng sang cây đang chật vật. Kết luận về cây họ hàng chưa được kiểm chứng và không thể suy ra.",
+        "potArtifact": "Cây con họ hàng trồng trong chậu có thể cho thấy một hiệu ứng huyết thống do chính cái chậu tạo ra. Rừng tự nhiên liền mạch mới là nơi kết luận phải đứng vững, và cũng là nơi gần như chưa ai thử.",
+        "none": "Mọi lối thoát đã bị bịt — và đây đúng là thiết kế mà sinh thái học rừng gần như chưa bao giờ chạy nổi. Bài tổng duyệt năm 2023 không tìm thấy bằng chứng thực địa nào cho kết luận huyết thống, nên nó vẫn chỉ là một giả thuyết."
+      },
+      "state": {
+        "on": "Đã bật",
+        "off": "Bỏ qua"
+      },
+      "control": {
+        "dualIsotope": {
+          "name": "Hai loại nhãn phân biệt được",
+          "detail": "Cho mỗi loài một đồng vị carbon khác nhau, để mỗi phân tử tìm thấy đều truy được về cây đã phát ra nó."
+        },
+        "meshBarrier": {
+          "name": "Lưới cắt sợi nấm",
+          "detail": "Một màng chắn mảnh cắt đứt các sợi nấm nhưng vẫn cho nước đất đi qua, nhờ đó tách bạch được hai con đường."
+        },
+        "sourceSink": {
+          "name": "Độ chênh ánh sáng",
+          "detail": "Che nắng cây nhận để nó không quang hợp được, tạo ra chênh lệch nguồn–đích khiến chiều của dòng chảy trở nên có nghĩa."
+        },
+        "kinDesign": {
+          "name": "Cây nhận là họ hàng",
+          "detail": "So sánh cây con có quan hệ họ hàng với cây cho và cây con xa lạ — cách duy nhất khiến giả thuyết Cây Mẹ có thể kiểm chứng được."
+        },
+        "wildForest": {
+          "name": "Rừng tự nhiên liền mạch",
+          "detail": "Làm thí nghiệm trong đất rừng thật với các cá thể nấm đã được lập bản đồ, không phải trong chậu, để kết quả nói thay cho cả hệ sinh thái."
+        }
+      }
+    },
+    "latencyHorizon": {
+      "title": "Bao nhiêu phần của một mặt trăng có thể đáp lời đúng lúc?",
+      "subtitle": "Dung lượng cho biết bao nhiêu dữ liệu băng qua. Độ trễ cho biết bao nhiêu phần hành tinh còn nằm trong tầm với.",
+      "aria": "Một đĩa Pandora với vùng trong tầm với đang phát sáng: tín hiệu đi được {reach} trong thời hạn cho phép, chia mặt trăng thành {regions} vùng",
+      "deadlineLabel": "Thời gian cho phép để phối hợp",
+      "deadlines": {
+        "reflex": "Một phản xạ",
+        "day": "Một ngày",
+        "season": "Một mùa"
+      },
+      "hint": {
+        "whole": "Ở tốc độ này và thời hạn này, cả mặt trăng nằm gọn trong một chân trời — mọi phần của mạng lưới đều đáp lời được mọi phần khác đúng lúc. Đây là điều kiện để một hành tinh hành động như một khối.",
+        "fragmented": "Mặt trăng vỡ thành khoảng {n} vùng không kịp với tới nhau trong thời hạn. Mỗi vùng đều mạch lạc; không vùng nào phối hợp được với phần còn lại. Một mạng lưới cấp hành tinh, nhưng không có một khoảnh khắc cấp hành tinh."
+      },
+      "moonLabel": "Pandora",
+      "horizonLabel": "tầm với: {reach}",
+      "crossingLabel": "Từ cực này sang cực kia, ở mức tốt nhất",
+      "crossingNote": "Đường thẳng, nửa vòng mặt trăng — đây là mức sàn, chưa phải độ trễ thực",
+      "regionsLabel": "Số vùng với tới được nhau",
+      "oneRegion": "Cả mặt trăng",
+      "regionsNote": "Mặt trăng chứa bao nhiêu chân trời riêng biệt",
+      "speedSlider": "Tốc độ dẫn truyền của sợi cáp",
+      "speedValue": "{n} m/s",
+      "speedNote": "Dẫn truyền điện hóa trải từ khoảng 1 m/s ở sợi trần đến {max} m/s ở sợi bọc myelin dày nhất. Chưa biết cấu trúc sinh học nào nhanh hơn, nên toàn bộ thanh trượt này chính là khung thực tế.",
+      "units": {
+        "seconds": "{n} giây",
+        "minutes": "{n} phút",
+        "hours": "{n} giờ",
+        "days": "{n} ngày",
+        "years": "{n} năm"
+      }
+    },
+    "regenerationRace": {
+      "title": "Ngọn lửa chạy đua với mầm tái sinh",
+      "subtitle": "Khả năng chống chịu không phải là áo giáp. Nó là một nhịp độ — và một nhịp độ thì có thể bị bỏ xa.",
+      "aria": "Đường biểu diễn phần mạng lưới còn đứng vững qua hai thế kỷ, kết thúc ở mức {pct} phần trăm: {verdict}",
+      "shapeLabel": "Hình dạng mạng lưới",
+      "shapes": {
+        "scaleFree": "Trục lớn và lá nhỏ",
+        "lattice": "Lưới đều"
+      },
+      "hint": {
+        "shattered": "Lửa cháy nhanh hơn mầm mọc lại, mật độ mạng lưới trượt xuống ngưỡng tới hạn, và vào năm thứ {year} cái toàn thể liên kết không mờ đi — nó vỡ thành những hòn đảo rời rạc chỉ trong một bước.",
+        "holding": "Mầm tái sinh vẫn theo kịp. Khu rừng mang một vết thương vĩnh viễn — nó chững lại quanh mức {pct}% so với trước — nhưng vẫn là một mạng lưới liền mạch suốt chặng đường."
+      },
+      "criticalLabel": "mật độ tới hạn {pct}%",
+      "axisFull": "còn nguyên",
+      "axisGone": "mất hết",
+      "axisYears": "số năm bị đốt liên tục",
+      "verdictLabel": "Kết cục",
+      "verdict": {
+        "shattered": "Mạng lưới tan vỡ",
+        "holding": "Đầy thương tích nhưng còn nguyên khối"
+      },
+      "shatterNote": "Vượt ngưỡng vào năm thứ {year}",
+      "holdingNote": "Chững lại quanh mức {pct}% còn đứng",
+      "burnSlider": "Phần mạng lưới bị đốt mỗi năm",
+      "regrowSlider": "Mầm tái sinh ở mức mạnh nhất",
+      "perYear": "{n}% mỗi năm",
+      "regrowNote": "Việc gieo lại do chính khu rừng còn sống đảm nhiệm, nên nó chậm dần khi mạng lưới teo lại — đó là lý do bên đang thua trong cuộc đua này càng trượt càng nhanh thay vì chững lại."
+    }
+  }
+}

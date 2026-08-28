@@ -223,12 +223,12 @@
     "synodic-day": {
       "title": "Ngày giao hội",
       "category": "Thiên văn học",
-      "info": "Ngày giao hội (ngày mặt trời) là từ bình minh đến bình minh — ngày mà ta thực sự sống theo — và dài hơn chút so với vòng quay sao thực. Trên Pandora, bị khóa với Polyphemus, hành tinh khổng lồ treo cố định trên trời và mặt trời nấp sau nó: một lần thiên thực đánh dấu nhịp của mỗi ngày. Bước qua để đánh dấu các sự kiện thiên thực.",
+      "info": "Ngày giao hội (ngày mặt trời) là từ bình minh đến bình minh — ngày mà ta thực sự sống theo — và dài hơn chút so với vòng quay sao thực. Trên Pandora, bị khóa với Polyphemus, hành tinh khổng lồ treo cố định trên trời và mặt trời nấp sau nó: một lần nhật thực đánh dấu nhịp của mỗi ngày. Bước qua để đánh dấu các sự kiện nhật thực.",
       "sidereal": "Vòng quay sao",
       "solar": "Ngày mặt trời",
-      "eclipse": "Thiên thực Polyphemus",
+      "eclipse": "Nhật thực Polyphemus",
       "sunrise": "bình minh",
-      "marker": "dấu thiên thực"
+      "marker": "dấu nhật thực"
     },
     "tidal-locking": {
       "title": "Khóa thủy triều",

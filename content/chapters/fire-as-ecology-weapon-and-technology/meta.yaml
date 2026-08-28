@@ -1,0 +1,125 @@
+slug: fire-as-ecology-weapon-and-technology
+status: published
+title:
+  vi: Lửa không chỉ phá hủy
+  en: Fire as Ecology, Weapon and Technology
+subtitle:
+  vi: >-
+    Với mọi thị tộc khác, lửa là thứ đã lấy đi thế giới. Với tộc Mangkwan, lửa là thứ duy nhất còn
+    lại để làm việc cùng - trên một hành tinh mà không khí chống lại chính ngọn lửa ấy.
+  en: >-
+    For every other clan, fire is what took the world away. For the Mangkwan it is the one thing
+    left to work with - on a moon whose air fights the flame at every step.
+hook:
+  vi: >-
+    Một kỵ sĩ banshee mang theo hòn than sống trong chiếc lò đá bọt, bay giữa thứ không khí gần một
+    phần năm là carbon dioxide - thứ khí mà trên Trái Đất người ta dùng để dập lửa. Hòn than vẫn
+    cháy. Hiểu được vì sao nó cháy, và vì sao một cánh bay bốc lửa mất khả năng điều khiển sau ba
+    giây chứ không phải ba mươi, là hiểu rằng lửa không phải một chất: nó là cuộc đua giữa nhiệt
+    sinh ra và nhiệt bị lấy đi.
+  en: >-
+    A banshee rider carries a live coal in a pumice cup through air that is nearly a fifth carbon
+    dioxide - the gas we put in fire extinguishers. The coal stays lit. Understanding why, and why a
+    burning wing loses control in three seconds rather than thirty, is understanding that fire is
+    not a substance at all: it is a race between heat released and heat carried away.
+authors:
+  - bardabez
+tags:
+  - combustion
+  - fire-ecology
+  - heat-transfer
+  - fracture-mechanics
+  - volcanic-glass
+  - mangkwan
+  - disturbance-ecology
+classification:
+  canon_pct: 14
+  inference_pct: 22
+  speculation_pct: 6
+  real_science_pct: 58
+related_chapters:
+  - life-after-the-volcano
+  - what-keeps-pandora-volcanically-alive
+  - whats-in-the-air
+  - the-aerial-arms-race
+glossary_terms:
+  - fire-tetrahedron
+  - critical-heat-flux
+  - adiabatic-flame-temperature
+  - limiting-oxygen-index
+  - flame-blow-off
+  - thermally-thin-fuel
+  - fireline-intensity
+  - firebrand-spotting
+  - fire-regime
+  - serotiny
+  - ash-bed-effect
+  - pyrogenic-carbon
+  - conchoidal-fracture
+  - fracture-toughness
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-the-ember-carrier
+    role: hero
+    asset_status: ready
+  - id: fig-02-the-air-that-fights-fire
+    role: comparison
+    asset_status: ready
+  - id: fig-03-reach-without-touching
+    role: diagram
+    asset_status: ready
+  - id: fig-04-the-firebrand-rider
+    role: comparison
+    asset_status: ready
+  - id: fig-05-the-burning-wing
+    role: diagram
+    asset_status: ready
+  - id: fig-06-the-glass-edge
+    role: inline
+    asset_status: ready
+  - id: fig-07-the-cold-forge
+    role: inline
+    asset_status: ready
+  - id: fig-08-the-ash-bed
+    role: diagram
+    asset_status: ready
+  - id: fig-09-two-burns
+    role: comparison
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Mangkwan Clan - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Mangkwan_Clan
+  - kind: canon
+    label: Chris Prince - The Art of Avatar Fire and Ash (DK, 2025)
+    url: https://dk.com/products/9780241789674-the-art-of-avatar-fire-and-ash
+  - kind: science
+    label: Drysdale - An Introduction to Fire Dynamics (Wiley, 3rd ed. 2011)
+    url: https://onlinelibrary.wiley.com/doi/book/10.1002/9781119975465
+  - kind: science
+    label: Hurley et al. (eds.) - SFPE Handbook of Fire Protection Engineering (Springer, 5th ed. 2016)
+    url: https://link.springer.com/referencework/10.1007/978-1-4939-2565-0
+  - kind: science
+    label: >-
+      Rothermel - A mathematical model for predicting fire spread in wildland fuels (USDA Forest
+      Service Research Paper INT-115, 1972)
+    url: https://research.fs.usda.gov/treesearch/32533
+  - kind: science
+    label: >-
+      Bond & Keeley - Fire as a global herbivore: the ecology and evolution of flammable ecosystems
+      (Trends Ecol. Evol., 2005)
+    url: https://pubmed.ncbi.nlm.nih.gov/16701401/
+  - kind: science
+    label: Griffith - The phenomena of rupture and flow in solids (Phil. Trans. R. Soc. A, 1921)
+    url: https://royalsocietypublishing.org/doi/10.1098/rsta.1921.0006
+  - kind: science
+    label: >-
+      Swartz & Konow - Advances in the study of bat flight: the wing and the wind (Can. J. Zool.,
+      2015)
+    url: https://cdnsciencepub.com/doi/10.1139/cjz-2015-0117
+  - kind: research-note
+    label: >-
+      Fire as Ecology, Weapon and Technology - Combustion Thermodynamics, Fire Ecology, and the
+      Fracture Mechanics of Volcanic Glass (chapter research note)

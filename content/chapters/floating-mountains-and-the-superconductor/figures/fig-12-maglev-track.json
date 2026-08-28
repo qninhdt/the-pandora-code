@@ -1,0 +1,27 @@
+{
+  "id": "fig-12-maglev-track",
+  "chapter_slug": "floating-mountains-and-the-superconductor",
+  "role": "inline",
+  "narrative_purpose": "Shows a sleek train carriage floating in a visible gap above a guideway rail - the same locking effect, built on Earth.",
+  "subject": "A sleek streamlined train carriage hovering above a straight guideway track. There is a clear visible empty gap of air between the bottom of the carriage and the top of the rail - the train touches nothing. Faint glowing lines bridge the gap between carriage and rail, suggesting the magnetic hold.",
+  "scene": "A clean modern test-track setting at dusk, the track receding into the distance; the carriage floating in its gap above the rail.",
+  "camera": "Low three-quarter view along the track, emphasising the visible floating gap beneath the carriage.",
+  "light": "Cool dusk ambient, with a cyan glow in the gap between carriage and rail.",
+  "palette": "Dark dusk background, pale carriage body, glowing cyan gap, teal guideway accents.",
+  "style": "Sleek photorealistic product-style render.",
+  "detail_level": "High detail on the carriage and the visible floating gap; track softening into the distance.",
+  "composition": "Carriage in the near two-thirds, the visible air gap emphasised, track leading to a vanishing point.",
+  "exclude": [
+    "text",
+    "watermark",
+    "wheels",
+    "rails touching the train",
+    "Pandora rock"
+  ],
+  "consistency_notes": "The glow in the gap is the same cyan as the chapter's flux threads, tying the Earth example to the Pandora physics; the train clearly does not touch the rail.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no logos, no wheels, no contact between train and track, no oversaturation",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

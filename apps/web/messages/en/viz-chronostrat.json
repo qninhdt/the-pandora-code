@@ -1,0 +1,119 @@
+{
+  "viz": {
+    "stratigraphicColumn": {
+      "title": "Reading a wall of rock",
+      "subtitle": "Pick any feature. The wall sorts itself into what is provably older, provably younger — and what the geometry refuses to rank.",
+      "pickLabel": "Reason from this feature",
+      "axis": {
+        "younger": "Younger",
+        "older": "Older"
+      },
+      "feature": {
+        "upperSand": "Capping sandstone",
+        "unconformity": "Erosion surface",
+        "dike": "Intrusion",
+        "fault": "Fault",
+        "ashUpper": "Upper ash bed",
+        "fossilBed": "Fossil-bearing bed",
+        "ashLower": "Lower ash bed",
+        "lowerSand": "Lower sandstone",
+        "basement": "Basement rock"
+      },
+      "principle": {
+        "superposition": "Superposition",
+        "crossCutting": "Cross-cutting",
+        "unconformity": "Missing time",
+        "anchor": "Dated ash bed"
+      },
+      "principleNote": {
+        "superposition": "Undisturbed beds stack oldest at the bottom — gravity did the ordering",
+        "crossCutting": "Anything that cuts a rock has to be younger than the rock it cuts",
+        "unconformity": "An eroded surface: the beds that once sat here are gone, and so is their time",
+        "anchor": "Volcanic ash resets its own atomic clock, so this layer can be dated directly"
+      },
+      "readout": {
+        "principle": "What places it",
+        "age": "Age you can defend",
+        "span": "A bracket {n} million years wide",
+        "oneSided": "One-sided bound — nothing dated on the far side",
+        "older": "Older",
+        "younger": "Younger",
+        "undetermined": "Unrankable"
+      },
+      "age": {
+        "measured": "{n} Gyr",
+        "between": "{old} – {young} Gyr",
+        "olderThan": "older than {n} Gyr",
+        "youngerThan": "younger than {n} Gyr"
+      },
+      "hint": {
+        "ordered": "Every other feature on this wall touches this one somewhere, so the rock itself settles the order. This is relative dating at full strength: certain, free, and completely silent about years.",
+        "ambiguous": "Some features cannot be ranked against this one at all. The intrusion and the fault never intersect — both cut the beds below, both are cut off by the erosion surface above, and nothing in the rock says which came first. No amount of careful looking fixes that; only a date would."
+      },
+      "slider": {
+        "lowerAsh": "Lower ash bed dated at",
+        "upperAsh": "Upper ash bed dated at",
+        "sigma": "Analytical uncertainty"
+      },
+      "gyrValue": "{n} Gyr ago",
+      "myrValue": "± {n} Myr",
+      "aria": "Stratigraphic wall of nine features, currently reasoning from the {feature}"
+    },
+    "opercularOxygenBudget": {
+      "title": "Can the fans keep up with the body?",
+      "subtitle": "Oxygen demand climbs as mass^0.75. A breathing surface that merely grew in proportion would climb as mass^0.67 — so the bigger the animal, the further behind its fans fall.",
+      "modeControl": "How the animal moves its air",
+      "mode": {
+        "tidal": "In and out",
+        "oneWay": "One-way"
+      },
+      "airControl": "Which atmosphere",
+      "air": {
+        "earth": "Earth air",
+        "pandora": "Pandora's air"
+      },
+      "breakEven": "Break-even: supply exactly meets demand",
+      "ceilingMarker": "Fans run out here",
+      "axis": {
+        "mass": "Body mass (kg)",
+        "margin": "Oxygen supplied ÷ oxygen needed"
+      },
+      "readout": {
+        "margin": "Supply against demand",
+        "ceiling": "Heaviest body supported",
+        "ceilingNote": "where the margin falls to break-even",
+        "noCeiling": "no limit",
+        "required": "Surface must grow as mass^",
+        "requiredNote": "the exponent that would exactly feed this body",
+        "noRequirement": "—",
+        "ventilationCost": "Spent moving air",
+        "costPaid": "paid out of the same oxygen budget, every breath",
+        "costFree": "the legs and wings are already moving — the air rides along free",
+        "barrier": "Effective barrier",
+        "barrierStagnant": "still air pools against the membrane and thickens the crossing",
+        "barrierScoured": "the moving stream scours that stagnant film away"
+      },
+      "verdict": {
+        "enough": "The exchange surface stays ahead of the appetite",
+        "short": "Demand has outrun the surface — this body cannot be fed"
+      },
+      "hint": {
+        "affording": "It works, but the animal is paying twice over: once to accelerate a heavy column of gas and stop it again on every breath, and once more to the stagnant film that settles on any membrane the moment the air pauses. Switch to one-way flow and both bills vanish — watch how far up the mass scale the ceiling jumps.",
+        "carried": "This is what the flank fans buy. Air enters at the front, crosses the exchange surface once, and leaves at the back — never stopping, never reversing, driven by the animal's own speed rather than its ribs. Nothing about the exchange tissue changed; only the direction of the air did.",
+        "payingTwice": "Demand has outrun the surface. Notice which lever is not available: Pandora's air is thick but its oxygen pressure is barely Earth's, so switching atmospheres hardly moves this. What the thick air does do is make every reversal expensive — so stop reversing.",
+        "foldFaster": "Even with the air running one way, this body is too large for a surface that merely keeps pace with it. The only lever left is the surface itself: fold it faster than the body grows, and read off the exponent it would take."
+      },
+      "slider": {
+        "mass": "Body mass",
+        "areaExponent": "Exchange surface grows as mass^"
+      },
+      "exponentNote": "At {isometric} the fans simply grow in proportion to the body — the geometric default, and a losing one. Real respiratory surfaces fold faster than that; the question is how much faster they must.",
+      "calibrationNote": "The exponents are physiology; the vertical scale is not. No measured metabolic rate or body mass exists for any Pandoran animal, so the whole plot is pegged to one reference body — a {reference} kg tidal breather in Earth air, surface merely keeping pace, set at exactly break-even. Every other reading is a comparison against that, not a measurement.",
+      "shadowNote": "The dashed line is the same animal in the same air, ventilating the other way.",
+      "kgValue": "{n} kg",
+      "timesValue": "{n}×",
+      "percentValue": "{n}%",
+      "aria": "Oxygen supply-to-demand margin against body mass, {mode} ventilation, currently {margin} times demand"
+    }
+  }
+}

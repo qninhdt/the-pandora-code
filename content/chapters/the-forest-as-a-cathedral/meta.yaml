@@ -1,0 +1,133 @@
+slug: the-forest-as-a-cathedral
+status: published
+title:
+  vi: Khu rừng mang dáng dấp một thánh đường
+  en: The Forest as a Cathedral
+subtitle:
+  vi: >-
+    Đứng dưới chân một Hometree cao hơn ba trăm mét, ánh sáng rọi xuống thành từng cột qua mái vòm
+    lá, ta nhận ra khu rừng không phải một môi trường sống duy nhất — mà là cả một chồng môi trường
+    xếp lên nhau theo chiều cao. Câu hỏi không phải "rừng đẹp đến mức nào?" mà là "một cái cây làm
+    sao vươn nổi tới đó, và bao nhiêu tầng sự sống chen chúc giữa gốc và ngọn?"
+  en: >-
+    Stand at the foot of a Hometree more than three hundred metres tall, watch the light fall in
+    shafts through the vaulted roof of leaves, and the forest stops being one habitat. It becomes a
+    stack of habitats piled on top of each other by height. The question is not how beautiful the
+    forest is, but how a tree climbs that high at all — and how many floors of life crowd between
+    the base and the crown.
+hook:
+  vi: >-
+    Người Na'vi bước vào rừng như bước vào thánh đường, và phép so sánh ấy chính xác hơn ta tưởng:
+    thánh đường được chia tầng — gian giữa, các dãy lầu, mái vòm — mỗi tầng một thứ ánh sáng, một
+    bầu khí hậu, một lớp cư dân. Rừng Pandora cũng vậy. Nhưng ngọn Hometree cao hơn ba trăm mét lại
+    va thẳng vào một bức tường mà mọi cái cây trên Trái Đất đều phải dừng lại trước nó: giới hạn vật
+    lý của việc kéo nước lên cao. Câu chuyện về cách khu rừng tự xếp tầng, và về lằn ranh mà ngọn
+    cây không thể vượt qua, là một trong những bài học trung thực nhất mà sinh thái học rừng có thể
+    trao cho ta.
+  en: >-
+    The Na'vi enter the forest the way one enters a cathedral, and the comparison is more exact than
+    it sounds: a cathedral is built in tiers — nave, galleries, vaulted roof — each with its own
+    light, its own climate, its own inhabitants. So is the Pandoran forest. But a Hometree more than
+    three hundred metres tall runs straight into a wall that every tree on Earth stops short of: the
+    physical limit on how high a living thing can pull water. The story of how a forest sorts itself
+    into floors, and of the line a treetop cannot cross, is one of the most honest lessons forest
+    ecology has to teach.
+authors:
+  - bardabez
+tags:
+  - forest-stratification
+  - vertical-niche-partitioning
+  - canopy-ecology
+  - tree-height-limit
+  - hometree
+  - forest-ecology
+classification:
+  canon_pct: 18
+  inference_pct: 20
+  speculation_pct: 10
+  real_science_pct: 52
+related_chapters:
+  - hometree-as-keystone
+  - convergent-but-not-quite
+  - why-banshees-get-to-be-big
+  - the-wood-wide-web
+  - floating-mountains-and-the-superconductor
+  - the-night-ecology
+glossary_terms:
+  - forest-stratification
+  - canopy
+  - understory
+  - emergent-layer
+  - forest-floor
+  - epiphyte
+  - leaf-area-index
+  - niche-partitioning
+  - ecological-niche
+  - cohesion-tension
+  - xylem
+  - transpiration
+  - turgor-pressure
+  - foliage-height-diversity
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-cathedral-base
+    role: hero
+    asset_status: ready
+  - id: fig-02-vertical-strata
+    role: diagram
+    asset_status: ready
+  - id: fig-03-canopy-frontier
+    role: diagram
+    asset_status: ready
+  - id: fig-04-warbler-zones
+    role: diagram
+    asset_status: ready
+  - id: fig-05-hydraulic-limit
+    role: diagram
+    asset_status: ready
+  - id: fig-06-hometree-vs-redwood
+    role: comparison
+    asset_status: ready
+  - id: fig-07-cavitation-break
+    role: diagram
+    asset_status: ready
+  - id: fig-08-carbon-rich-stomata
+    role: comparison
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Hometree - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Hometree
+  - kind: canon
+    label: Omatikaya Hometree - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Omatikaya_Hometree
+  - kind: canon
+    label: Pandora (Avatar) - Wikipedia
+    url: https://en.wikipedia.org/wiki/Pandora_(Avatar)
+  - kind: science
+    label: Koch, Sillett, Jennings & Davis - The limit to tree height (Nature, 2004)
+    url: https://www.nature.com/articles/nature02417
+  - kind: science
+    label: >-
+      MacArthur - Population Ecology of Some Warblers of Northeastern Coniferous Forests (Ecology,
+      1958)
+    url: https://www.jstor.org/stable/1931600
+  - kind: science
+    label: MacArthur & MacArthur - On Bird Species Diversity (Ecology, 1961)
+    url: https://www.journals.uchicago.edu/doi/10.1086/282219
+  - kind: science
+    label: >-
+      Erwin - Tropical forests: their richness in Coleoptera and other arthropod species (The
+      Coleopterists Bulletin, 1982)
+    url: https://www.jstor.org/stable/4007977
+  - kind: science
+    label: >-
+      Stork - How many species of insects and other terrestrial arthropods are there on Earth?
+      (Annual Review of Entomology, 2018)
+    url: https://www.annualreviews.org/doi/10.1146/annurev-ento-020117-043348
+  - kind: research-note
+    label: >-
+      Comparative Forest Ecology - Vertical Stratification, Canopy Niche Partitioning, and Hydraulic
+      Limits in Earth and Pandoran Forest Systems (chapter research note)

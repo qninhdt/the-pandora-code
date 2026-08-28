@@ -39,6 +39,27 @@ test.describe("offline reading", () => {
       ),
     ).toBe(true);
 
+    // Shell imagery is stored too: the brand mark and the painted page
+    // backdrops go through the image optimizer, chapter covers are served
+    // straight from public/. Without these the shell reads as broken rather
+    // than offline.
+    const shellImages = await page.evaluate(async () => {
+      const paths = async (name: string) =>
+        (await (await caches.open(name)).keys()).map((request) => request.url);
+      return {
+        optimized: await paths("pandora-next-images-v1"),
+        originals: await paths("pandora-static-images-v1"),
+      };
+    });
+    expect(
+      shellImages.optimized.filter((url) => url.includes("url=%2Flogo.png")).length,
+      "brand mark stored for the dock",
+    ).toBeGreaterThan(0);
+    expect(
+      shellImages.originals.filter((url) => url.includes("/images/chapters/")).length,
+      "chapter covers stored for the library index",
+    ).toBeGreaterThan(0);
+
     await page.goto("/vi/chapters/where-is-pandora");
     await page.getByRole("button", { name: "Tải để đọc offline" }).click();
     await expect(page.getByRole("button", { name: "Tải lại bản mới" })).toBeVisible({

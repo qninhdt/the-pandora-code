@@ -1,0 +1,390 @@
+The navigator is the first one awake, and she does not look at the horizon.
+
+She looks straight up. The caravan is riding at a little over a kilometre, where the air is cold enough to make your fingers stupid, and the gondolas hang in a long loose chain beneath their bladders like beads on a slack thread. Below, cloud. Above, more cloud — and then, higher still, a third deck so thin it is barely there, drawn out in long parallel streaks. She watches the three of them for a while without saying anything. Then she raises one hand flat above her head, holds it, turns it slowly through perhaps thirty degrees, and lets it fall.
+
+That is the whole instruction. Within an hour the fleet has spilled water, risen four kilometres, and set off in a direction nobody was travelling when the sun came up.
+
+<DiagramFigure
+  src="/images/chapters/how-the-wind-traders-navigate-a-planet/fig-01-the-navigator-at-dawn.webp"
+  alt="A Na'vi navigator standing at the rail of a woven gondola slung beneath a vast pale gasbag, one hand raised flat above her head, looking up past two lower cloud decks toward a thin streaked layer far above"
+  labels={[
+    { x: 32, y: 42, side: "right", label: "The navigator", note: "Reads upper atmospheric wind shear by observing cloud vectors" },
+    { x: 65, y: 16, side: "left", label: "Cirrus jet streaks", note: "High-velocity atmospheric currents indicating approaching shifts" },
+    { x: 65, y: 48, side: "left", label: "Mid-level stratus deck", note: "Lower trade layer carrying opposing return currents" },
+    { x: 10, y: 25, side: "right", label: "Gondola suspension rigging", note: "Connects wicker platform to the aerostat rim" }
+  ]}
+  figNo="01"
+  caption="Dawn on a Tlalim caravan. The navigator is not reading the horizon; she is reading the column of air above her, deck by deck, for the one layer flowing where the fleet needs to go. The raised hand is a heading, and an altitude, and a decision about the next three weeks."
+  tier="inference"
+/>
+
+I have been trying, ever since I first watched this, to find the right thing to compare it to, and every comparison I reach for is wrong in the same way. A helmsman turns a wheel and the ship answers. A rider leans and the ikran banks. Even a sailing ship, which cannot go straight into the wind, is *arguing* with the air: its keel and its sail work against each other to steal a component of motion the wind never offered. All of these have something in common that the Tlalim do not have.
+
+They have no way to move relative to the air at all.
+
+A caravan hung beneath a gasbag is not travelling through the wind; it *is* the wind, made visible. Whatever the surrounding air does, the caravan does, with a fidelity no other vehicle can match — and this is not a limitation to be engineered away, it is the definition of the thing. The Windrays harnessed at the front can swing a bladder's heading, hold a formation, nudge a gondola clear of a rock face. What they cannot do, at any scale that matters over a planet, is make the fleet go somewhere the air is not already going. Push a hundred tonnes of hydrogen-filled bladder against a headwind with muscle and you will find out very quickly how much of your day the air is willing to sell you.
+
+So the question the Tlalim answer twice a year, and the question this chapter is really about, is a strange one: **how do you steer a vehicle that has no rudder?**
+
+## The sky is not one river
+
+The answer begins with something you can check on Earth this afternoon, from the ground, with no instruments at all.
+
+Find a day with cloud at more than one height — a low deck of ragged cumulus and, above it, the high fibrous streaks of cirrus. Watch them both for five minutes. They will be moving in different directions. Not slightly different: on a good day, opposite. The low cloud slides off to the southwest while the high cloud, quite unhurried, goes east.
+
+The first time you notice this it feels like a trick, because we speak about "the wind" as if a place has one. It does not. A place has a *column*, and the column is layered — stacked sheets of air sliding over each other at different speeds and in different directions, all the way up. Meteorologists call the change from layer to layer <GlossaryTerm slug="wind-shear">wind shear</GlossaryTerm>, and the part of it that matters here is not the change in speed but the change in *heading*. The air at five hundred metres and the air at eight kilometres can be, and frequently are, flowing in genuinely opposite directions.
+
+Now put those two facts side by side. A caravan cannot move relative to the air it is in — but it can *change which air it is in*. And the airs available to it point different ways.
+
+That is the rudder. Not a fin, not a sail: an altitude.
+
+<DiagramFigure
+  src="/images/chapters/how-the-wind-traders-navigate-a-planet/fig-02-three-decks-three-directions.webp"
+  alt="A cutaway of an atmospheric column showing three stacked cloud decks with a caravan of gasbags between them, each deck's flow drawn as long streaming forms running in different directions"
+  labels={[
+    { x: 50, y: 12, side: "left", label: "Upper jet stream", note: "Eastward planetary flow deflected by Coriolis forces" },
+    { x: 50, y: 44, side: "left", label: "Mid-altitude trade layer", note: "Westward current carrying the airship convoy" },
+    { x: 26, y: 62, side: "right", label: "Zeppelin flotilla", note: "Cruising inside the calm, low-shear neutral corridor" },
+    { x: 50, y: 82, side: "left", label: "Surface boundary layer", note: "Dense katabatic flow rolling across lower terrain" }
+  ]}
+  figNo="02"
+  caption="One place, three winds. Low cloud drifting one way, a slack middle layer going almost nowhere, and a fast high deck streaming the opposite way — the ordinary structure of an atmospheric column. A vehicle that cannot fight the wind can still choose between them, and choosing is enough."
+  tier="real_science"
+/>
+
+Once you see the column this way, the navigator's raised hand stops being mystical and becomes something closer to a chess move. She is not sensing the future. She is recalling which layer, at this longitude, in this season, goes where — and then paying to get into it.
+
+<WindLayerRouter caption="The staff on the left is the whole column at once: each barb points where that layer flows, its length scaled to the wind's strength. The map on the right is the consequence — where a month of drifting at your chosen level actually puts you. Slide the altitude and watch the destination reverse. Nothing about the caravan has changed; only which river it is standing in." />
+
+Play with that for a moment before reading on, because the shape of it is the whole chapter. There is no altitude that is simply *best*. There is a low layer that carries you steadily west, a high layer that carries you rapidly east, a wasteland in between where you go almost nowhere at all, and a hard truth: the fast layer costs something to reach. We will get to what it costs.
+
+But first, the more interesting question. Why should the air be organised into layers like this at all? Why should there be a fast eastward river at nine kilometres on Pandora, of all places, and why should anyone be confident enough about it to bet a fleet on it?
+
+## A machine you can predict from four numbers
+
+We have met the engine before. Sunlight falls hardest on the tropics and glances off the poles, the atmosphere is obliged to move that surplus heat poleward, and because it does this on a spinning ball the flow gets bent — the <GlossaryTerm slug="coriolis-effect">Coriolis effect</GlossaryTerm> — into the great overturning wheels that put rainforest at the equator and desert at thirty degrees. That was the machine that let us predict Pandora's biomes from its spin rate and the thickness of its air.
+
+Here we need one more thing from it: not where the air rises, but *how fast it ends up moving, and at what height*.
+
+Start with the piece of large-scale wind behaviour that nobody guesses correctly the first time. Ask anyone which way the wind blows near a low-pressure area and they will say *inward* — air rushing from high pressure toward low, the way water runs downhill. Over a few kilometres, near the ground, that is roughly right. Over a thousand kilometres it is completely wrong.
+
+At that scale the wind blows *along* the pressure contours, not across them. A low-pressure centre does not suck air in; it has air circling around it, almost parallel to its isobars, going nowhere near the middle. The reason is that as soon as air starts moving down the pressure gradient, Coriolis begins turning it sideways, and it keeps turning until the sideways deflection exactly opposes the pressure force that started the motion. At that point the two cancel and the air, having nothing left pushing it off course, simply runs perpendicular to both — along the contours. This standoff is <GlossaryTerm slug="geostrophic-balance">geostrophic balance</GlossaryTerm>, and it holds almost everywhere on a rotating planet at large scale.
+
+The word "almost" is doing real work, and there is a clean way to know when to trust it. Compare how hard the flow's own inertia pushes it around against how hard rotation does, and the ratio of the two is a single dimensionless number — the <GlossaryTerm slug="rossby-number">Rossby number</GlossaryTerm>. It is the wind speed divided by the product of the feature's size and the local strength of the Coriolis effect. When that number comes out much smaller than one, rotation is in charge and the wind runs along the contours. When it is around one or larger, rotation is a bit player and the flow does something less organised.
+
+Now we can ask the question that decides whether the Tlalim's entire way of life is physically available to them. **Does Pandora rotate fast enough to have organised zonal winds at all?**
+
+It is a real worry, not a rhetorical one. Slow-spinning worlds do not get tidy wind belts. Venus, which takes 243 Earth days to turn, has essentially one enormous overturning cell per hemisphere and an atmosphere that has come loose from the surface entirely — <GlossaryTerm slug="superrotation">superrotation</GlossaryTerm>, the whole air shell lapping the planet dozens of times per rotation. Nothing about that sky offers a navigator a stack of contrary layers to choose between. And Pandora is a moon locked to its gas giant, which sounds like exactly the setup for a Venus-style regime.
+
+So let us put the numbers in. Canon gives Pandora a day of about twenty-six hours, and a radius three quarters of Earth's. Those two facts are enough.
+
+<Comparison
+  left={{
+    title: "Earth",
+    children: "Turns once in 23.93 hours. Coriolis strength at 45° latitude: 1.03 ten-thousandths per second. Equatorial circumference 40,030 km. The planet's radius is about 1.8 times the natural spacing between jets — which buys a small number of broad zonal jets per hemisphere, exactly what we observe.",
+  }}
+  right={{
+    title: "Pandora",
+    children: "Turns once in about 26 hours — only 8% slower. Coriolis strength at 45°: 0.95 ten-thousandths per second, or 92% of Earth's. Equatorial circumference 35,962 km. Radius-to-jet-spacing ratio about 1.6: slightly fewer, slightly broader jets than Earth's. Not remotely the Venus regime.",
+  }}
+/>
+
+That is a reassuring answer, and worth dwelling on because it is easy to get backwards. Pandora *is* a slow rotator in the sense that matters for climate: eight per cent less spin means measurably weaker Coriolis, a wider tropical overturning cell, and the broad wet belt that made Australis rainforest from coast to coast. But eight per cent is not two hundred and fifty times. On the scale that decides whether a world gets organised zonal jets or dissolves into one hemispheric cell, Pandora sits almost exactly where Earth sits. Take a thousand-kilometre feature moving at 30 m/s and its Rossby number comes out near 0.3; make the feature two thousand kilometres across and it drops to 0.16. Comfortably rotation-dominated. Geostrophic balance holds. Jets are allowed.
+
+<ScientificNote title="The day length this chapter is standing on">
+There is an unresolved tension here that the films inherited rather than created. A twenty-six-hour orbit around a Jupiter-mass planet puts a moon uncomfortably close in — near the point where tides would tear it, and well inside the zone where tidal heating becomes severe. A physically comfortable orbit would run to several days, which would give Pandora a much longer day and a correspondingly weaker Coriolis effect. This chapter takes canon's twenty-six hours at face value, because that is the figure the rest of the book is built on. If the true figure were four or five days, the arithmetic above would shift toward the slow-rotator regime and the navigator's stacked rivers would become a genuinely open question rather than a settled one.
+</ScientificNote>
+
+## Why the fast river runs high
+
+Granted jets, why are they *up there*? Why is the fastest wind on a planet always near the top of the weather layer rather than at the surface, where all the interesting geography is?
+
+This follows from geostrophic balance plus one more ingredient, and the argument is short enough to walk through completely.
+
+Pressure at any height comes from the weight of all the air above. Cold air is dense, so it packs into a shallower column; warm air is thin and spreads into a taller one. Now consider the tropics and the poles side by side: the tropical column is warm and tall, the polar column cold and squat. Climb upward through both and the *difference* in pressure between them at a given altitude does not stay constant — it grows, because the tall warm column keeps delivering pressure at heights where the squat cold one has already run out of air.
+
+Follow the consequence. The horizontal pressure difference increases with height. Geostrophic balance says wind speed tracks that pressure difference. Therefore the wind must *speed up as you go up* — and it must keep speeding up for as long as the temperature contrast persists. This is <GlossaryTerm slug="thermal-wind-balance">thermal wind balance</GlossaryTerm>, and it is the most quietly powerful relation in atmospheric physics: it says a horizontal temperature gradient does not merely *permit* vertical wind shear, it *requires* it.
+
+The shear accumulates all the way up through the weather layer and then stops, because above the tropopause the temperature contrast weakens and reverses. So the wind reaches its maximum right at that ceiling. On Earth that maximum is a ribbon seven to twelve kilometres up, a few hundred kilometres wide, typically running 30 to 60 m/s and touching well past 100 m/s in a winter core: a <GlossaryTerm slug="jet-stream">jet stream</GlossaryTerm>.
+
+<DiagramFigure
+  src="/images/chapters/how-the-wind-traders-navigate-a-planet/fig-03-the-river-overhead.webp"
+  alt="A very high vantage looking down on a broad meandering ribbon of high cloud streaming across a dark curved horizon, with a tiny chain of caravan gasbags climbing toward its underside"
+  labels={[
+    { x: 50, y: 30, side: "left", label: "Planetary jetstream", note: "High-velocity circumpolar atmospheric ribbon" },
+    { x: 44, y: 70, side: "right", label: "Flotilla in current", note: "Riding the high-speed core for rapid transcontinental transit" },
+    { x: 18, y: 38, side: "right", label: "Planetary limb", note: "Dense atmosphere creating expansive flight envelopes" },
+    { x: 45, y: 12, side: "left", label: "Rossby wave meander", note: "Planetary-scale wave generated by tidal and thermal forcing" }
+  ]}
+  figNo="03"
+  caption="The fast layer, seen from above its own altitude. A jet is not a wind so much as a river with banks — a few hundred kilometres wide, near the top of the weather layer, running many times faster than anything below it. A caravan that reaches its underside crosses in nine days what the low trades take three months to cover."
+  tier="inference"
+/>
+
+For a caravan this is the difference between a life and a legend. At the speed of the low friction layer — call it 4 or 5 m/s — one circuit of Pandora takes about ninety days. In the steady low trades at 11.5 m/s, thirty-six days. In a jet core at 42 m/s: **just under ten days**. Same planet, same vehicle, same total absence of an engine. The only variable is which layer you managed to reach.
+
+And now the shape of the Tlalim's whole discipline comes into focus. They are not fighting the sky. They are shopping in it.
+
+## The last kilometre is the hardest
+
+Except that between the caravan and any of those layers sits the messiest part of the atmosphere, and it happens to be the part nearest the ground.
+
+Air in contact with a planet gets dragged on. Terrain, forest, water — all of it exerts friction, and friction propagates upward through turbulence to a depth of a kilometre or two. This is the <GlossaryTerm slug="planetary-boundary-layer">planetary boundary layer</GlossaryTerm>, and inside it the neat geostrophic story is compromised in a specific and useful way.
+
+Friction slows the wind. Slower wind means weaker Coriolis deflection. Weaker deflection means the pressure force wins slightly, and the air is allowed to drift *across* the pressure contours instead of running perfectly along them. Rise a little and friction eases, the flow speeds up, deflection strengthens, and the heading swings back toward the free-atmosphere direction. The result is that wind direction rotates continuously as you climb — commonly through fifteen to forty-five degrees within the lowest kilometre alone. Trace the wind vector at successive heights and it sweeps out a spiral: the <GlossaryTerm slug="ekman-spiral">Ekman spiral</GlossaryTerm>.
+
+This is worth flagging carefully because the same physics appears elsewhere in this book wearing an oceanic hat. When wind drags on the sea surface, the water below turns through its own version of the spiral, and the net sideways transport is what hauls cold nutrient-rich water up along a coast. Same mathematics, different fluid. Here we are in the air, and the consequence is not upwelling but a navigational one: **the first few hundred metres of any climb changes your heading whether you want it to or not.**
+
+Which is why the navigator's raised hand had that slow rotation in it. She was not just naming an altitude; she was naming a heading that comes *with* that altitude, spiral included.
+
+Above the boundary layer the tactical opportunities improve considerably, and this is where the Tlalim stop being passengers and start being pilots.
+
+Air forced up the windward face of a ridge has nowhere to go but up: <GlossaryTerm slug="orographic-lift">orographic lift</GlossaryTerm>, the free elevator that every soaring bird on two worlds exploits. But the more remarkable trick happens downwind. When stable air crosses a ridge it does not simply resume its level; it oscillates, rising and sinking in a train of standing waves that can extend far downwind and far higher than the ridge that made them. A <GlossaryTerm slug="mountain-wave">mountain wave</GlossaryTerm> is invisible except where its crests condense into smooth lens-shaped caps stacked one above another — and those caps are a chart. They tell a navigator exactly where the rising air is, without a single instrument.
+
+<DiagramFigure
+  src="/images/chapters/how-the-wind-traders-navigate-a-planet/fig-04-climbing-the-mountain-wave.webp"
+  alt="A caravan of gasbags rising along the invisible crest of a standing wave downwind of a great ridge, marked by three stacked smooth lens-shaped clouds above them"
+  labels={[
+    { x: 58, y: 48, side: "left", label: "Primary lenticular cap", note: "Standing wave crest marking strong laminar updraft" },
+    { x: 58, y: 34, side: "left", label: "Stacked resonance wave", note: "Upper harmonic layer allowing multi-tiered ascents" },
+    { x: 46, y: 68, side: "right", label: "Surfing zeppelins", note: "Gaining free altitude on the rising windward slope" },
+    { x: 20, y: 75, side: "right", label: "Mountain barrier", note: "Forces horizontal wind into powerful vertical standing waves" }
+  ]}
+  figNo="04"
+  caption="The free elevator. Stable air crossing a ridge sets up a train of standing waves downwind; their crests condense into stacked lens-shaped caps that mark the rising air precisely. A caravan that reads the caps can climb into the fast layer on the mountain's work instead of its own reserves."
+  tier="inference"
+/>
+
+How much lift is really on offer? Earth answered this definitively on 2 September 2018, when the Airbus Perlan Mission II sailplane — no engine of any kind — rode mountain-wave lift over the Patagonian Andes to a pressure altitude of 23,203 metres. Higher than a U-2. On air that a mountain pushed upward and a jet stream helped organise. The Tlalim are not doing anything Earth's own engineless pilots have not done, at greater altitude, with witnesses.
+
+The catch is directly underneath. Beneath the crest of a trapped lee wave, the flow can curl back on itself into a **rotor** — a horizontal roll of violently turbulent air, often marked by nothing at all, sometimes by a ragged shred of cloud tumbling where the smooth caps are serene above. Sailplane pilots treat rotors as among the most dangerous air in the sky. For a fleet of gas-filled bladders on rigging lines, a rotor is not a rough patch; it is a structural event.
+
+<DiagramFigure
+  src="/images/chapters/how-the-wind-traders-navigate-a-planet/fig-05-the-rotor-below.webp"
+  alt="A cutaway downwind of a ridge showing smooth stacked lens clouds along the wave crests above and a churning ragged roll of turbulent cloud tumbling beneath them, with a caravan holding well clear above"
+  labels={[
+    { x: 50, y: 62, side: "left", label: "Turbulent rotor cloud", note: "Violent horizontal vortex in the lee of the ridge" },
+    { x: 32, y: 38, side: "right", label: "Smooth laminar corridor", note: "Airships cruise safely above the breaking shear zone" },
+    { x: 50, y: 22, side: "right", label: "Standing lenticular cap", note: "Smooth streamline boundary marking stable air overhead" },
+    { x: 8, y: 55, side: "right", label: "Ridge barrier", note: "Triggers downstream turbulence and wake rotors" }
+  ]}
+  figNo="05"
+  caption="The same wave, seen honestly. Serene lens caps mark the crests; underneath them a rotor rolls — turbulent, often invisible, and structurally lethal to a rigged fleet. The knowledge that keeps a caravan alive is not where the lift is but how far above the rotor the lift begins."
+  tier="real_science"
+/>
+
+So the sky the Tlalim work in has a specific texture: a friction layer that twists your heading, a stack of contrary rivers above it, ridges that offer free altitude, and rolling death immediately below the best of that free altitude. All of it invisible. All of it seasonal. None of it written down.
+
+## Every course correction is a withdrawal
+
+Here is the constraint that turns all of this from a puzzle into a discipline.
+
+A living aerostat changes height by throwing something away. To climb, it sheds mass — water goes over the side. To sink, it vents the gas that was holding it up. Neither can be recovered in flight. There is no ballast tank refilling itself at nine kilometres, no compressor rebuilding a hydrogen reserve out of thin air.
+
+So altitude, the caravan's only control, is a *consumable*. Each course correction is a withdrawal from an account that was fixed at departure, and when the account empties the fleet keeps whatever level it happens to be holding, for good.
+
+This changes the character of the problem completely. It is no longer "find the fastest layer." It is "spend a finite budget of level changes across a route in the order that gets you there" — and those are different problems with different answers, because the fast layer is not fast everywhere. Wind fields vary along a route. The jet that carries you brilliantly across one stretch may be flowing the wrong way over the next, and the layer you want on leg four may cost more to reach than the time it saves.
+
+<BallastBudgetPlanner caption="Five legs of a crossing, three levels to choose from on each, and two accounts that only ever go down. The itinerary most readers try first is to ride the jet the whole way; it fails, and it fails instructively. Of the 243 possible routes here, five arrive. Finding one is what a navigator's memory is for." />
+
+If you spent any time with that, you will have discovered the thing that makes the Tlalim navigator a specialist rather than an enthusiast. Riding the fast layer all the way does not work — it costs the full climb and then wastes it, because the jet only helps on one of the five legs. Holding a single comfortable level does not work either. What works is a specific *sequence*, matched leg by leg to a wind field that changes as you travel, bought with a budget that has barely enough in it.
+
+That is not intuition. That is an optimisation problem with a hard constraint, and somebody has to know the answer before the fleet leaves.
+
+## When the sky stops arriving
+
+There is one more failure mode, and it is the one that frightens navigators most, because you cannot climb out of it.
+
+Jets do not run straight. Displace a parcel of air poleward and the planetary spin it carries changes; to conserve its total rotation it has to acquire a compensating spin of its own, which curves it back. Displace it equatorward and the same logic curves it the other way. The result is that a jet is permanently oscillating north and south in enormous meanders — <GlossaryTerm slug="rossby-wave">Rossby waves</GlossaryTerm>, thousands of kilometres from crest to crest.
+
+These waves have a peculiar property. Left alone, they propagate *westward*. But they sit embedded in a jet flowing east, so their motion over the ground is the difference between the two. Usually the eastward flow wins and the whole pattern sweeps downwind — which is why weather on Earth generally arrives from the west and why waiting three days genuinely changes your options.
+
+Sometimes the two cancel exactly.
+
+When a wave's westward propagation matches the eastward flow carrying it, the pattern stops moving over the ground. It goes stationary, and — this is the dangerous part — it amplifies. The meanders deepen, the flow buckles, and eventually the wave overturns into a stalled high-pressure mass that splits the jet into two branches around it. This is <GlossaryTerm slug="atmospheric-blocking">atmospheric blocking</GlossaryTerm>, and it can hold for two or three weeks.
+
+<JetMeanderMap caption="The jet drawn as a band across a strip of latitude, animated at its real ground-relative speed. Turn the mean flow down and the pattern crawls; turn it up and it races east; hit the value in between and it stops dead and starts to buckle. The caravan is the pale dot: it does not move, it simply gets whatever the sky over it is doing." />
+
+For a powered aircraft a block is a delay and a fuel calculation. For a caravan it is something closer to being becalmed at sea, with one cruel addition: the vertical escape does not work either. Under a well-developed block the whole column above the fleet has gone slack and the fast layer has migrated hundreds of kilometres away. There is no altitude to climb into. There is only waiting, on stores, until the pattern breaks.
+
+<DiagramFigure
+  src="/images/chapters/how-the-wind-traders-navigate-a-planet/fig-08-becalmed-under-a-block.webp"
+  alt="A caravan of gasbags hanging motionless in dead flat air under a vast still high-pressure sky, envelopes slack, rigging lines hanging straight down, the horizon featureless"
+  labels={[
+    { x: 21, y: 44, side: "right", label: "Slack gas envelope", note: "Floating stationary inside an atmospheric blocking high" },
+    { x: 20, y: 77, side: "right", label: "Becalmed crew", note: "Waiting out the doldrums until thermal gradients resume" },
+    { x: 28, y: 56, side: "right", label: "Vertical tendrils", note: "Hang straight down indicating zero relative wind" },
+    { x: 46, y: 56, side: "right", label: "Stalled convoy", note: "Trapped in calm high-pressure cell between active jets" }
+  ]}
+  figNo="08"
+  caption="Blocked. Not a storm — the opposite of one. When a planetary wave goes stationary and buckles, the column above a caravan goes slack and the fast layer wanders hundreds of kilometres off. There is no level to climb into and nothing to ride. The fleet waits on its stores until the sky starts moving again."
+  tier="inference"
+/>
+
+## Why twice a year, and not nine
+
+Now we can answer the question that hangs over the whole clan, the one canon states as a bare fact and never explains: the Tlalim circumnavigate Pandora *twice a year*. Why twice? Why not once, or four times, or on no schedule at all?
+
+The tempting answer is that a circuit simply takes half a year. It does not. We already counted: in the steady trades a lap is about thirty-six days, in a jet under ten. Even dawdling, a caravan could ring the moon many times over in a Pandoran year — which, with Polyphemus orbiting Alpha Centauri A at a little over a hundred million kilometres, runs to roughly four hundred and eighty Earth days. Transit time is nowhere near the limit. So the rhythm is not set by how long the journey takes.
+
+It is set by how often the wind grants a direction.
+
+Like Earth's monsoon, Pandora's prevailing circulation reverses on a seasonal beat — the same tilt that gives the moon its summers and winters swings the great pressure patterns back and forth, and with them the direction of the layers a caravan rides. A fleet that lives by riding the wind cannot simply set out whenever it likes; it must leave *on the reversal*, ride the season's flow around, and arrive before the wind turns against it. Miss the window and the same air that would have carried you home now blocks the way. The circuit is not paced by the vehicle. It is paced by the wind's permission, and the wind gives permission twice a year.
+
+<SeasonReversalCircuit caption="One Pandoran year as a ring, cut into wind seasons. The bright arc of each season is the part a caravan can actually spend flying the circuit; the dim remainder is spent moored and trading, waiting for the turn. Push the riding speed up and the flying arc shrinks — but the number of departures does not change, because it was never the transit that set it. The reversal did." />
+
+This is not a Pandoran peculiarity. It is precisely how the Indian Ocean ran its trade for two thousand years. The monsoon reverses twice annually — southwesterly in the northern summer, northeasterly in the winter — and the dhows sailed on that beat: out on one reversal, home on the next, with the interval in port not idleness but the entire commercial point of the voyage. A Tlalim caravan moored at a trading rendezvous, waiting for the season to turn, is doing exactly what an Arab dhow did waiting in a Malabar harbour for the wind to come round. The physics wrote the calendar; the culture learned to trade inside it.
+
+## The oldest science on either world
+
+Which brings us, finally, to the thing that is easy to miss under all the fluid dynamics: the Tlalim are doing this *without instruments*. No compass — and on Pandora a magnetic compass would be worse than useless, since the same unobtanium anomalies that float the Hallelujah Mountains would swing the needle at random. No satellites. No forecast. No chart in the sense of a drawn map. The entire body of knowledge lives in trained human memory, passed down in song.
+
+The reflex is to treat that as charming and pre-scientific. The reflex is exactly wrong, and Earth proves it.
+
+Polynesian and Micronesian navigators crossed thousands of kilometres of open Pacific, finding islands a few kilometres wide, for centuries before any instrument reached them. They did it with a rigorous, teachable system: a <GlossaryTerm slug="wayfinding">sidereal star compass</GlossaryTerm> that partitioned the horizon by the rising and setting points of known stars; a moving-reference scheme called *etak* that let a navigator track progress against islands they could not see; the reading of swell trains refracting around land; the dawn and dusk flight lines of nesting birds. The Marshall Islanders even built teaching charts of swell interference out of sticks and shells. When the *Hōkūleʻa* sailed Hawaiʻi to Tahiti in 1976 navigated this way, with Mau Piailug reading the swell, it made landfall almost dead on — not by luck, but because the method is sound.
+
+<DiagramFigure
+  src="/images/chapters/how-the-wind-traders-navigate-a-planet/fig-06-the-route-in-a-song.webp"
+  alt="An elder Na'vi navigator chanting to two apprentices in a gondola at night, hands tracing shapes in the air, faint diagrams of layered winds and stars suggested in the bioluminescent haze around them"
+  labels={[
+    { x: 26, y: 42, side: "right", label: "Elder navigator", note: "Recites mnemonic songlines encoding altitudes, winds, and hazards" },
+    { x: 50, y: 26, side: "left", label: "Bioluminescent spore strata", note: "Natural aerial markers carried by distinct wind layers" },
+    { x: 76, y: 56, side: "left", label: "Apprentice navigators", note: "Memorizing acoustic cues and optical bearings" },
+    { x: 49, y: 88, side: "left", label: "Shielded floor lamp", note: "Provides dim warm illumination while preserving night vision" }
+  ]}
+  figNo="06"
+  caption="A route stored in a voice. With no chart and no instrument, the Tlalim carry the sky in structured song — altitude-and-heading pairs keyed to landmark and season, chanted and corrected across generations. It is not folklore dressed as knowledge. It is knowledge that happens to be stored in the only medium a nomad can carry."
+  tier="speculation"
+/>
+
+What makes an oral tradition trustworthy is not that any one navigator is infallible but that the knowledge is *error-corrected over generations*. A song that encodes a wrong altitude for a season kills the caravan that trusts it, and does not get sung again. What survives is what worked, filtered by consequence across more lifetimes than any single practitioner could accumulate. It is a slow, brutal, effective form of peer review, and its failure modes are real too: a single broken generation can lose a route for good, and knowledge tuned to a stable climate grows brittle when the climate shifts. But within its domain it is not inferior to instruments. In some ways it is more robust — it needs no batteries, and it cannot be jammed by a floating mountain.
+
+The Tlalim navigator has one more tool the Pacific never offered, and it is a spectacular one. Pandora is locked to Polyphemus, so the gas giant hangs at a fixed point in the sky for any given place on the near side — it does not rise or set. That makes Polyphemus a permanent landmark: its position alone fixes both your latitude and your longitude at a glance, the single reference a Pacific navigator would have traded a great deal for. And the sibling moons, transiting and occulting on their own clockwork, give a running celestial clock overhead. A sky that never moves for your position, and a set of moving hands to tell the time by: it is almost unfairly good, and a competent Tlalim navigator would be a fool not to use it.
+
+<DiagramFigure
+  src="/images/chapters/how-the-wind-traders-navigate-a-planet/fig-07-the-fixed-lamp-and-the-moving-clock.webp"
+  alt="Night sky over a caravan dominated by the huge fixed disc of Polyphemus low on the horizon, with a small sibling moon crossing in front of it, the gas giant's position unchanged while the smaller moon marks time"
+  labels={[
+    { x: 55, y: 35, side: "left", label: "Polyphemus gas giant", note: "Fixed primary beacon providing celestial heading" },
+    { x: 41, y: 56, side: "right", label: "Transiting moon silhouette", note: "Natural orbital clock hand measuring elapsed longitude" },
+    { x: 15, y: 84, side: "right", label: "Zeppelin caravan", note: "Adjusts flight heading relative to planetary alignment" },
+    { x: 60, y: 48, side: "left", label: "Equatorial cloud bands", note: "Serve as angular scale lines for altitude and drift" }
+  ]}
+  figNo="07"
+  caption="The fixed lamp and the moving clock. Because Pandora keeps one face to Polyphemus, the gas giant never moves in the sky — a permanent fix on both latitude and longitude. The sibling moons crossing in front of it run like a celestial clock. A navigator who could read both would know where and when with no instrument at all."
+  tier="inference"
+/>
+
+## The name for what they are doing
+
+There is a formal name for the problem the Tlalim solve, and it was posed on Earth in 1931 by the mathematician Ernst Zermelo. Given a vehicle of limited speed moving through a current that varies from place to place, what is the fastest path from here to there? The <GlossaryTerm slug="zermelo-navigation-problem">Zermelo navigation problem</GlossaryTerm> is a cornerstone of optimal-control theory, and its general solution tells you how to continuously re-aim a boat or an aircraft to exploit a moving medium.
+
+The Tlalim inhabit its strangest limit. Let the vehicle's own speed relative to the medium fall to zero — a craft that cannot swim against the current at all — and the classic steering law collapses, because there is no heading left to choose. In that limit the problem does not vanish; it *moves dimensions*. Horizontal control is gone, but if the current itself varies with height, then choosing an altitude chooses a horizontal velocity. The optimisation becomes: at each moment, which layer do I occupy? That is not a footnote to Zermelo's problem. It is the caravan's entire existence, written in the notation of control theory.
+
+And lest this seem like a pretty analogy stretched too far, Earth has built the machine and flown it. Google's Loon project kept balloons on station in the stratosphere for months at a time with no propulsion whatsoever — navigating, holding position over a target, by altitude selection alone, rising and sinking to catch layers going the way they needed. The control policy that did it was trained by reinforcement learning on real wind forecasts, and it independently discovered tactics the Tlalim would recognise on sight: circling, figure-eights, tacking up and down through the shear to hold a point. A caravan of living bladders steered by a navigator's memory and a fleet of stratospheric balloons steered by a neural network are solving the identical problem, and arriving at the identical repertoire of moves.
+
+<DiagramFigure
+  src="/images/chapters/how-the-wind-traders-navigate-a-planet/fig-09-the-water-goes-overboard.webp"
+  alt="A bright arc of water pouring from the side of a gondola into empty air far above a dim landscape, the gasbag above it beginning to rise, crew watching the water fall away"
+  labels={[
+    { x: 26, y: 32, side: "right", label: "The crew", note: "Manually dumping liquid ballast to initiate rapid climb" },
+    { x: 46, y: 60, side: "left", label: "Ballast cascade", note: "Discharged water lightening payload to catch upper winds" },
+    { x: 16, y: 45, side: "right", label: "Woven wicker gondola", note: "Lightweight platform engineered for atmospheric voyages" },
+    { x: 74, y: 82, side: "left", label: "Canopy and rivers below", note: "Distant forest floor thousands of metres beneath the ship" }
+  ]}
+  figNo="09"
+  caption="The price of a course change. A living aerostat climbs by throwing mass away and descends by venting the gas that holds it up, and neither returns in flight. Every correction is a withdrawal from an account fixed at departure — which is why the route has to be right before the fleet leaves."
+  tier="inference"
+/>
+
+<WhatThisMeans>
+Strip an aircraft of its engine and it does not become unnavigable — it becomes a different kind of navigable. When you cannot move relative to the air, the air's own layered structure becomes your control surface, and route-finding turns into the problem of choosing, moment by moment, which moving layer to ride. This is a real and general result: it is why a balloon is not merely "wherever the wind takes it," why Loon could hold station without a propeller, and why a people with no instruments could cross a planet on schedule. The knowledge required is not magical. It is a map of a moving, invisible, three-dimensional medium — and it can be carried in a song as faithfully as in a computer, provided the song has been corrected by enough generations of consequence.
+</WhatThisMeans>
+
+## What the wind will not tell them
+
+<ConfidenceMeter
+  classification={{ canon_pct: 14, inference_pct: 22, speculation_pct: 8, real_science_pct: 56 }}
+/>
+
+The honest edge of this chapter is a hard mathematical limit, and it is the same one that humbles our own forecasters.
+
+A caravan plans a route weeks long. But the atmosphere is chaotic: tiny uncertainties in its current state amplify until, somewhere around ten to fourteen days out, all skill at predicting the specific weather is gone. This is not a technology gap that better instruments would close; it is a property of the equations themselves, the ceiling Edward Lorenz found in the 1960s. No navigator, Tlalim or terrestrial, and no supercomputer, can know the specific state of the sky a month ahead.
+
+So a Tlalim navigator cannot possibly be forecasting the weather of the whole circuit at departure. What she must be carrying instead is *climatology* — not "the jet will be at nine kilometres over this ridge on the fortieth day," which is unknowable, but "in this season, over this ridge, the fast eastward layer is usually near nine kilometres." Statistics, not prophecy. The song encodes the reliable average sky, and the navigator improvises against the actual sky as it reveals itself day by day. That is exactly how a modern sailor uses a pilot chart, and exactly the boundary Loon lived within: plan on the climatology, react to the forecast, and never pretend to know the un-knowable.
+
+<ClaimAudit
+  rungs={[
+    {
+      level: "A caravan steers purely by choosing altitude in a sheared wind",
+      claim: "With no useful thrust relative to the air, the Tlalim navigate by selecting which layer to occupy, exploiting the change of wind direction with height.",
+      verdict: "well-supported",
+      evidence: "Directional wind shear is routinely observed; Loon demonstrated altitude-only station-keeping and navigation on real wind fields. The physics is textbook and the engineering has flown.",
+      caution: "That a biological aerostat can change altitude fast enough, and cheaply enough, to exploit the shear as nimbly as a pumped balloon is an inference, not a measurement.",
+    },
+    {
+      level: "Pandora has organised jet streams to ride",
+      claim: "A ~26-hour day keeps Pandora rotation-dominated, so it retains Earth-like zonal jets rather than collapsing into Venus-style superrotation.",
+      verdict: "well-supported",
+      evidence: "At 92% of Earth's Coriolis strength and a comparable radius-to-jet-spacing ratio, the standard scaling puts Pandora firmly in the jet-bearing regime.",
+      caution: "The whole argument rests on canon's 26-hour day. A tidally comfortable orbit would give a multi-day rotation and could move Pandora toward the slow-rotator regime.",
+    },
+    {
+      level: "The twice-yearly circuit is a monsoon rhythm",
+      claim: "The bi-annual circumnavigation is set by a seasonal wind reversal, not by travel time.",
+      verdict: "contested",
+      evidence: "Transit is far shorter than half a year, so something else sets the cadence; a monsoon-style reversal is the natural and Earth-attested candidate.",
+      caution: "Canon states the twice-yearly fact but never names a wind reversal as the cause. The mechanism is our inference, plausible but unconfirmed.",
+    },
+    {
+      level: "The named clan structure is established canon",
+      claim: "The navigators, fleet captains, bead economy and specific individuals are fixed facts about the Tlalim.",
+      verdict: "contested",
+      evidence: "These come from community compilations and pre-release material rather than confirmed on-screen depiction.",
+      caution: "Treated here as community-tier, not canon. The broad picture — a neutral nomadic aerial trading clan on Medusoid caravans — is what the films actually establish.",
+    },
+  ]}
+/>
+
+<OpenQuestions
+  title="What the Tlalim have not told us"
+  items={[
+    {
+      question: "How fast can a Medusoid caravan actually change altitude?",
+      answer: "Everything here assumes a fleet can climb and descend briskly enough to exploit the shear. Biological gas venting and water dumping have finite rates, and a bladder the size of a Medusoid has enormous inertia. If real climb rates are slow, the navigator's options collapse toward whatever layer the fleet is already in.",
+    },
+    {
+      question: "Which way does the circuit run — east or west?",
+      answer: "Canon does not say. It matters: an eastbound circuit rides the high jet and is fast but committing; a westbound one lives in the steady low trades, slower but more forgiving. The direction would tell us which layer the clan's whole culture is built around.",
+    },
+    {
+      question: "Is Pandora's day really 26 hours?",
+      answer: "The entire jet-bearing argument leans on it. A tidally realistic orbit around a gas giant would give a multi-day rotation, weaker Coriolis, and a genuinely more Venus-like sky. Canon's short day is a choice made for the camera, and this chapter is downstream of it.",
+    },
+    {
+      question: "How do the caravans avoid the flux vortices?",
+      answer: "The Hallelujah Mountains' magnetic anomalies wreck instruments and stir the local air. Community material says the Tlalim simply route around such regions, but how they detect the boundary of dangerous air from the outside, without instruments, is never explained.",
+    },
+  ]}
+/>
+
+## The hand comes down
+
+Go back to the navigator at dawn, hand raised, turning slowly through thirty degrees before it falls.
+
+You know now what was in that gesture. An altitude, chosen from a stack of contrary rivers. A heading that comes bundled with that altitude, spiral and all. A withdrawal from a fixed account of climbs and descents that has to last the whole crossing. A bet, placed on the reliable average sky of this season rather than on a forecast that cannot exist. And underneath it, a body of knowledge sung and corrected across more generations than she will ever meet, encoding the solution to a control problem that Ernst Zermelo posed and a neural network re-derived and a hundred stratospheric balloons have since flown.
+
+We are used to deciding in advance who the scientists are. They wear instruments; they carry charts; they compute. The Tlalim carry none of it, and they are, by any honest measure, doing the harder version of the same work — reading a moving, invisible, three-dimensional fluid and committing a fleet to its currents, with the arithmetic held entirely in a human head and a shared song. The sky over your own world is running the same machine right now: the same jets, the same waves, the same layered rivers going different ways at different heights, whether or not anyone is reading them.
+
+The navigator lowers her hand, and the caravan begins to climb. She is not guessing. She is remembering something a great many people learned the hard way, so that she would not have to.
+
+<RelatedChapters
+  slugs={[
+    "the-biological-zeppelin",
+    "continents-oceans-climate",
+    "time-on-pandora",
+    "the-aerial-arms-race",
+  ]}
+/>
+
+<SourceList />

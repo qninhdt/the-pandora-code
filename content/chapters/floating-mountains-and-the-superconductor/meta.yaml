@@ -1,0 +1,139 @@
+slug: floating-mountains-and-the-superconductor
+status: published
+title:
+  vi: Một thế giới bị từ trường bẻ cong
+  en: Floating Mountains, Unobtanium and the Flux Devil
+subtitle:
+  vi: >-
+    Vì sao Dãy núi Hallelujah treo được trên không - lời giải đầu tiên của nguyên tác là lực đẩy
+    Meissner, và nó không giữ nổi; lời giải thứ hai, được đính chính trong lặng lẽ, là ghim từ
+    thông, và nó giữ được
+  en: >-
+    Why the Hallelujah Mountains hang in the air - canon's first answer, Meissner repulsion, cannot
+    hold them up; its quietly corrected second answer, flux pinning, can
+hook:
+  vi: >-
+    Một ngọn núi khổng lồ dài 16 kilomet treo lơ lửng giữa không trung chẳng phải là phép màu gì
+    sất. Nó là một màn thị phạm vật lý được phóng to lên tầm vóc hành tinh - và nguyên tác đã chọn
+    sai cơ chế ngay từ lần đầu, rồi lặng lẽ tự đính chính. Đáp án không nằm ở chỗ từ trường đẩy vật
+    ra xa, mà ở chỗ một chiếc đĩa được làm lạnh có thể tự khóa mình cứng ngắc vào khoảng không vô
+    định.
+  en: >-
+    A sixteen-kilometre mountain hanging in mid-air is not magic. It is a physics demonstration
+    scaled up to planetary size - and canon picked the wrong mechanism first, then quietly corrected
+    itself. The answer is not that a field pushes the rock away; it is that a cold disc can lock
+    itself rigidly into empty space.
+authors:
+  - bardabez
+tags:
+  - superconductivity
+  - magnetism
+  - materials-science
+  - pandora-geology
+classification:
+  canon_pct: 24
+  inference_pct: 12
+  speculation_pct: 10
+  real_science_pct: 54
+related_chapters:
+  - whats-in-the-air
+  - the-pandoran-umwelt
+  - what-is-pandoran-life-made-of
+  - what-keeps-pandora-volcanically-alive
+  - pandoras-deep-time
+  - reading-pandora-as-a-specimen
+  - the-biological-zeppelin
+  - the-forest-as-a-cathedral
+  - why-banshees-get-to-be-big
+glossary_terms:
+  - superconductivity
+  - cooper-pair
+  - meissner-effect
+  - flux-pinning
+  - type-ii-superconductor
+  - quantum-locking
+  - diamagnetism
+  - critical-temperature
+  - unobtanium
+  - hallelujah-mountains
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-rider-between-peaks
+    role: hero
+    asset_status: ready
+  - id: fig-02-flux-vortex-map
+    role: diagram
+    asset_status: ready
+  - id: fig-03-unobtanium-core
+    role: inline
+    asset_status: ready
+  - id: fig-05-cooper-pair
+    role: diagram
+    asset_status: ready
+  - id: fig-06-meissner-expulsion
+    role: diagram
+    asset_status: ready
+  - id: fig-07-earnshaw-instability
+    role: diagram
+    asset_status: ready
+  - id: fig-08-abrikosov-vortices
+    role: diagram
+    asset_status: ready
+  - id: fig-09-flux-pinning-lock
+    role: diagram
+    asset_status: ready
+  - id: fig-10-quasicrystal-voids
+    role: inline
+    asset_status: ready
+  - id: fig-11-ballast-keel
+    role: comparison
+    asset_status: ready
+  - id: fig-12-maglev-track
+    role: inline
+    asset_status: ready
+  - id: fig-13-levitating-disc
+    role: comparison
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Hallelujah Mountains - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Hallelujah_Mountains
+  - kind: canon
+    label: Unobtanium - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Unobtanium
+  - kind: science
+    label: Flux pinning - Wikipedia
+    url: https://en.wikipedia.org/wiki/Flux_pinning
+  - kind: science
+    label: History of superconductivity (Kamerlingh Onnes, mercury, 1911) - Wikipedia
+    url: https://en.wikipedia.org/wiki/History_of_superconductivity
+  - kind: science
+    label: BCS theory (Bardeen, Cooper & Schrieffer, 1957) - Wikipedia
+    url: https://en.wikipedia.org/wiki/BCS_theory
+  - kind: science
+    label: Meissner effect (Meissner & Ochsenfeld, 1933) - Wikipedia
+    url: https://en.wikipedia.org/wiki/Meissner_effect
+  - kind: science
+    label: Earnshaw's theorem (1842) - Wikipedia
+    url: https://en.wikipedia.org/wiki/Earnshaw%27s_theorem
+  - kind: science
+    label: Abrikosov vortex and the type-II mixed state - Wikipedia
+    url: https://en.wikipedia.org/wiki/Abrikosov_vortex
+  - kind: science
+    label: SCMaglev - the L0 series and its 603 km/h manned record - Wikipedia
+    url: https://en.wikipedia.org/wiki/SCMaglev
+  - kind: science
+    label: LK-99 - Wikipedia
+    url: https://en.wikipedia.org/wiki/LK-99
+  - kind: science
+    label: Ranga Dias - the retracted room-temperature superconductivity claims
+    url: https://en.wikipedia.org/wiki/Ranga_Dias_(physicist)
+  - kind: science
+    label: Magnetic Levitation and Superconducting Applications (IJFMR)
+    url: https://www.ijfmr.com/papers/2025/5/55794.pdf
+  - kind: research-note
+    label: >-
+      The Quantum Mechanics of Geomorphic Levitation - Pandoran Unobtanium and Real-World
+      Superconductivity (chapter research note)

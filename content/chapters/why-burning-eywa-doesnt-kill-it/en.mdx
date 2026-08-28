@@ -1,0 +1,297 @@
+<DiagramFigure
+  labels={[
+    { x: 20, y: 45, side: "right", label: "Intact bioluminescent forest", note: "Densely interconnected canopy and root web holding the planetary network" },
+    { x: 50, y: 60, side: "right", label: "Re-knitting lattice", note: "Cyan filaments bridge signals across and around the scarred boundary" },
+    { x: 82, y: 50, side: "left", label: "Scorched clear-cut", note: "Physical trees destroyed by fire, but underlying topology reroutes" }
+  ]}
+  src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-00-cover.webp"
+  alt="A vast Pandoran rainforest seen from above at night, half of it scarred by a black burn-line where RDA machines have clear-cut and torched a wide swathe; yet across the whole landscape a fine cyan lattice of glowing connections still webs between the surviving trees, threading around and across the wound as if the burn were a hole punched in a net that simply re-knits around it"
+  figNo="00"
+  caption="Burn a hole in a forest and you have destroyed a great many trees. Whether you have damaged the network they belong to is a completely different question — and the answer, almost always, is no. The RDA learns this the hard way on Pandora: you can fell the largest tree on the moon and the planetary mind does not so much as flicker. Why a network shrugs off the loss of its pieces, and the exact conditions under which it would not, is one of the most useful things mathematics has ever proven about connected things."
+  tier="inference"
+/>
+
+There is a particular kind of confidence that comes over an army when it finds something big to destroy. On Pandora it arrives the morning the bulldozers reach the Tree of Voices. The machine is the size of a building, the tree is sacred, and the calculation behind the assault is brutally simple: hit the enemy where it is holiest and the rest will fall apart. It is the same calculation that fells Hometree a day later, the same one that sends Colonel Quaritch's gunships toward the Tree of Souls at the climax of the first war, the same one that sends harpoons into the tulkun a decade on. Find the important thing. Destroy it. Watch the system collapse.
+
+It never works. Not once, across two wars and an interstellar mining operation, does the destruction of any single Pandoran structure bring down the thing the RDA is actually fighting — the living planetary network the Na'vi call Eywa. The forest burns and Eywa does not die. The largest tree on the moon falls and the network does not so much as dim. This is not because Pandora is protected by magic, and it is not a screenwriter's convenience. It is the single most rigorously understood fact about connected systems on Earth, and it has a precise mathematics, a precise set of experiments, and — crucially — a precise list of the conditions under which it would, finally, fail. To understand why you cannot kill Eywa by burning her, and exactly how you could, we have to treat the planet the way a network scientist treats the internet: as a graph of nodes and links, and ask what it really takes to break one.
+
+## The catalog of strikes
+
+Start, as any honest analysis must, with the data — and on Pandora the data is a catalog of destruction. The RDA delivers four distinct blows to the living network over the course of the story, and they are worth laying out precisely, because each one is a different *kind* of attack, and the difference is the whole lesson.
+
+The first is the **bulldozing of the Tree of Voices**, the *Utraya Mokri*, on a morning early in the first film. The Tree of Voices is a stand of willow-like trees fused into a single organism, a place where the Omaticaya hear the recorded voices of their ancestors — a local archive node, in network terms. The corporation calls it a clearing operation; Grace Augustine reads it, correctly, as a deliberate provocation. Either way the result is the same: a sacred local access point is excised. And yet the broader network registers nothing. Other clans across the continent — the Anurai, the Li'ona, the Aranahe — keep their own equivalent sites and report no loss of connection at all. A node is deleted; the planet does not notice.
+
+The second is the **felling of Hometree**, *Kelutral* — and this is the one that ought to matter most, because Hometree is *enormous*. It stands over three hundred metres tall, it has lived for some twenty thousand years, and an entire clan lives inside it. When SecOps brings it down to reach the unobtanium beneath its roots, the devastation is total and the grief is bottomless. Later, returning RDA ships incinerate three more Hometrees and vast tracts of forest just to clear ground for a base. By any human intuition, destroying the biggest living structures on the moon should cripple the network they anchor. It does not. Canon is quietly insistent on the point: the felling of Hometree is a humanitarian and ecological catastrophe, and it is *not* a network failure. Eywa does not flicker. Whatever Hometree was to the Omaticaya, it was not a load-bearing hub of the planetary mind.
+
+The third blow is the one that breaks the pattern, and it is worth watching closely. Quaritch's assault on the **Tree of Souls**, the *Vitraya Ramunong*, is not random clearing. It is target selection. He has correctly identified the one structure that is genuinely different from the others — the single site where the entire clan can link their queues to the root system *at once*, the highest-bandwidth connection to Eywa anywhere in Omaticaya territory — and he means to destroy it specifically because it is the most connected thing on the map. His reasoning is, for once, sound network strategy: don't waste ordnance on ordinary trees, decapitate the hub. The assault fails, but not because the target was wrong. It fails because Pandora's wildlife mobilises and stops the gunships before they arrive — which means canon never actually shows us what destroying the Tree of Souls would have done. We are left with the most important question of the chapter deliberately unanswered: was the Tree of Souls a single point of failure, or just the biggest of many redundant hubs?
+
+The fourth blow moves to the ocean. In *The Way of Water*, the RDA's whaling division hunts the **tulkun** — vast, sapient, culture-bearing marine animals — to harvest *amrita* from their brains. The tulkun are not scenery; they are mobile, intelligent, data-rich nodes in the same planetary network, communing at the **Spirit Tree**, the seabed counterpart of the Tree of Souls. Hunting them is the serial removal of high-value nodes. And again the oceanic network absorbs the loss and, eventually, mobilises against the threat. The pattern holds underwater.
+
+<DiagramFigure
+  src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-01-catalog-of-strikes.webp"
+  alt="A stylized dark map of Pandora's living network drawn as a web of glowing cyan nodes and links, with four distinct RDA strikes marked across it: a small grove being bulldozed at the edge, a massive node being felled near the centre, a single brightly-glowing hub node ringed by a targeting reticle, and a cluster of mobile nodes in an ocean region being struck; most of the web remains lit and connected despite the damage"
+  labels={[
+    { x: 59, y: 13, side: "left", label: "The aimed strike", note: "Tree of Souls — a true hub, ringed for targeting" },
+    { x: 18, y: 80, side: "right", label: "Bulldozed grove", note: "Tree of Voices — a leaf node the network barely misses" },
+    { x: 47, y: 53, side: "right", label: "A felled giant", note: "Hometree — massive physical biomass, yet topologically redundant" },
+    { x: 82, y: 62, side: "left", label: "Hunted in the deep", note: "Tulkun — mobile nodes removed region by region" }
+  ]}
+  figNo="01"
+  caption="Four strikes, three of them effectively random and one of them aimed. Bulldozing the Tree of Voices and felling the Hometrees delete nodes the network barely depends on. Hunting the tulkun removes mobile nodes one region at a time. Only the assault on the Tree of Souls is true target selection — an attempt to decapitate the hub — and it is the only one the planet stops before it lands. The difference between random loss and targeted loss is not a detail. It is the entire difference between a network that survives and one that shatters."
+  tier="inference"
+/>
+
+Lay the four side by side and a shape appears. Three of the strikes — the Tree of Voices, the Hometrees, the tulkun pods — are, from the network's point of view, *random* damage. The RDA is not choosing targets by how connected they are; it is choosing them by where the unobtanium is, or where the amrita swims. The destruction is massive but topologically blind. Only the fourth, the Tree of Souls, is a deliberate strike at a hub. That distinction — random damage versus targeted damage — turns out to be the hinge on which the survival of the entire network swings. To see why, we have to leave Pandora for a moment and go to the one place this has been worked out exactly: the mathematics of graphs.
+
+## A planet drawn as a graph
+
+To a network scientist, the word "network" has a stripped-down, almost austere meaning. Forget the glowing tendrils and the sacred groves for a moment. A network is just two things: a set of <GlossaryTerm slug="node-graph-theory">nodes</GlossaryTerm> — the things — and a set of <GlossaryTerm slug="edge-graph-theory">edges</GlossaryTerm> — the connections between them. A tree is a node. A root-coupling between two trees is an edge. A tulkun is a node; the bond it shares at the Spirit Tree is an edge. Strip Pandora down to this and the whole planetary biosphere becomes a single vast graph — millions of nodes, a tangle of edges — and suddenly all the hard-won mathematics of graphs applies to it directly.
+
+The first thing that mathematics gives us is a number for each node: its <GlossaryTerm slug="degree-graph-theory">degree</GlossaryTerm>, simply the count of edges it has. A lonely sapling at the forest edge with two root-connections has degree two. The Tree of Souls, wired to an entire clan's worth of links, has an enormous degree. And the way those degrees are spread across all the nodes — how many lonely saplings there are versus how many giant hubs — is called the <GlossaryTerm slug="degree-distribution">degree distribution</GlossaryTerm>, and it is the single most important fact about a network's character. It decides, as we will see, whether the whole thing is tough or brittle.
+
+The second gift is the concept that tells us whether the network is even *alive* as a network. Picture removing trees one at a time and watching the web come apart. At first nothing much happens — pull out a node here, a node there, and signals still find a way across. But the connected bulk of the network — the one big mutually reachable mass that lets a signal at the north pole reach a root at the equator — has a name: the <GlossaryTerm slug="giant-connected-component">giant connected component</GlossaryTerm>, or GCC. The GCC is what "the network works" actually *means*. As long as a giant component spans most of the moon, Eywa is one connected mind. If enough damage shatters that component into thousands of isolated islands, then every tree can still be perfectly alive and photosynthesising and the network is nonetheless *dead* — no longer one thing, just a scatter of disconnected fragments that can no longer reach each other.
+
+<Callout variant="insight" title="A network can die without a single thing dying">
+This is the idea everything else hangs on. The death of a *network* is not the death of its *nodes*. Burn half a forest and you have killed many trees; whether you have killed the network depends entirely on whether the surviving trees are still connected to each other. A giant connected component can vanish while every node in it remains alive — the trees stand, green and breathing, but the web that made them one mind has fallen below the threshold and snapped into islands. Conversely, you can lose a great many nodes and lose *no* connectivity at all, if you lose the right — which is to say the wrong — ones. Killing a network is a problem of geometry, not body count.
+</Callout>
+
+And here is the first place the popular intuition goes wrong, the one Pandora invites us to correct. It is tempting to think that the more connected a network is, the more robust it must be — pile on enough links and surely nothing can break it. But raw connectivity is not what decides toughness. The *shape* of the degree distribution does. A network can be enormously connected and still be brittle in exactly the wrong place, and a far sparser one can be nearly indestructible. To see how that can be, we turn to the single most important result in the science of network failure.
+
+## The landmark result: random error versus targeted attack
+
+In the year 2000, three physicists — Réka Albert, Hawoong Jeong, and Albert-László Barabási — published a paper with a title that could serve as the epigraph for this entire chapter: "Error and attack tolerance of complex networks." What they discovered explains, with almost eerie precision, everything that happens to Eywa under the RDA's assault.
+
+They started from an observation about the shape of real networks. Many of the networks that actually run the world — the internet, cellular metabolism, airline routes, food webs — are not built like a uniform mesh where every node has roughly the same number of connections. They are wildly lopsided. The overwhelming majority of nodes have very few links, while a tiny minority of nodes — the <GlossaryTerm slug="hub-network">hubs</GlossaryTerm> — carry an immense number. The degree distribution follows what mathematicians call a power law, and such networks have a name: <GlossaryTerm slug="scale-free-network">scale-free networks</GlossaryTerm>. A handful of mega-connected hubs, an ocean of barely-connected leaves. The internet is like this. So, almost certainly, is Eywa.
+
+Albert and her colleagues then did something simple and devastating. They asked: what happens to a scale-free network if you start deleting nodes? And they ran it two ways. First, *random failure* — delete nodes blindly, at random, the way a disease or an accident or a wildfire would. Second, *targeted attack* — delete the highest-degree hubs first, deliberately, the way a strategist would. The two scenarios gave almost opposite results, and the gap between them is the secret of resilience.
+
+<DiagramFigure
+  src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-02-random-vs-targeted.webp"
+  alt="A two-panel naturalist diagram of the same scale-free network of glowing nodes and links, with a few large hub nodes and many small leaf nodes. Left panel labelled random failure: scattered small leaf nodes are dimmed and removed, but the hubs remain and the whole web stays connected and lit. Right panel labelled targeted attack: only the few large hub nodes are removed, and the web instantly fragments into many small disconnected dark islands"
+  labels={[
+    { x: 25, y: 42, side: "right", label: "Hub-connected core", note: "Central high-degree hubs survive random deletions unscathed" },
+    { x: 25, y: 84, side: "right", label: "Giant component holds", note: "Random loss hits abundant leaves; global connectivity remains intact" },
+    { x: 72, y: 22, side: "left", label: "Targeted attack", note: "Strategic removal aimed selectively at high-degree hubs" },
+    { x: 72, y: 52, side: "left", label: "Shattered into islands", note: "Dead hubs (magenta X) sever connections, causing topological collapse" }
+  ]}
+  figNo="02"
+  caption="The same network, two ways of breaking it. Delete nodes at random (left) and you almost always hit the abundant low-degree leaves; the hubs survive, the giant component holds, and the network barely notices losing even a large fraction of itself. Delete the few high-degree hubs on purpose (right) and the network disintegrates after only a tiny number of removals. Scale-free networks are simultaneously the most robust structures against accident and the most fragile against sabotage. What you remove matters incomparably more than how much."
+  tier="real_science"
+/>
+
+Under random failure, the scale-free network is astonishingly tough. The reason is pure statistics: because the overwhelming majority of nodes are low-degree leaves, a blindly random deletion almost always hits a leaf, not a hub. You can tear out a startlingly large fraction of random nodes — Albert's team found you could remove a substantial share of the network — and the giant connected component barely changes. The hubs, which do the real work of holding everything together, are statistically almost never struck, because they are so rare. The network routes around the missing leaves without effort. It is, against accident, almost unkillable.
+
+Under targeted attack, the very same network is pitifully fragile. Aim at the hubs — take out the most connected nodes first — and the giant component collapses after only a tiny fraction have been removed. Every hub you delete strands all the leaves that depended on it; delete a handful and the web fractures into disconnected islands. The thing that made the network robust against random loss — its dependence on a few mega-hubs — is exactly the thing that makes it brittle against a strategist who knows to aim at them.
+
+Now read the RDA's catalog back through this single result, and the whole story snaps into focus. Clear-cutting forest for unobtanium, bulldozing the Tree of Voices, burning tracts of jungle for a landing site, harpooning tulkun pod by pod — from the network's point of view this is *random failure*. The RDA is deleting nodes by geography, by where the ore is, never by how connected the node is. And because the network is scale-free, that blind deletion overwhelmingly destroys leaves, the abundant low-degree nodes whose loss the giant component never feels. The RDA can level vast areas and the planetary mind genuinely does not notice, for precisely the reason Albert's team proved a scale-free internet could survive massive random router failures: blind damage hits the unimportant nodes almost every time.
+
+And Quaritch at the Tree of Souls? That is the one moment the RDA stumbles, by instinct, onto the *targeted attack*. He has found a genuine hub and resolved to destroy it for being a hub. Had he succeeded — had he decapitated that node and others like it — he would have been running Albert's second experiment on the living moon, and the mathematics says targeted hub removal is exactly how you shatter a scale-free network. The Na'vi do not refute his strategy. They simply never let him test it. The deepest irony of the first war is that the colonel was, for one moment, thinking like a network scientist — and the planet's wildlife stopped him before the experiment could run.
+
+## The cliff edge: percolation
+
+The Albert-Barabási result tells us *which* nodes matter. But it leaves a more unsettling question hanging. If the RDA simply kept burning — not aiming at hubs, just clearing more and more forest, blindly, forever — would the network survive *any* amount of random damage? Or is there a point, even under purely random loss, where the whole thing finally comes apart? There is. And the way it comes apart is the strangest and most important idea in this chapter, because it does not happen the way intuition expects.
+
+The intuition is that a network degrades gradually: destroy ten percent of it and it works ten percent worse, destroy half and it works half as well, a steady slope downhill. That intuition is wrong. Connected systems do not fail on a slope. They fail off a cliff. The science of that cliff is called <GlossaryTerm slug="percolation-theory">percolation theory</GlossaryTerm>, and it began, fittingly, with a question about whether water could find its way through coffee.
+
+Here is the picture. Imagine the forest as a grid, and start removing trees at random, tracking the largest surviving connected patch — the giant component — as you go. Remove a few and almost nothing happens; the giant component shrinks by exactly the few you took. Remove more and still the bulk holds together, signals still crossing from one side to the other by some winding path. The network seems indestructible, shrugging off loss after loss. And then you remove a few more — no different from the ones before — and the entire connected mass *abruptly disintegrates* into a dust of tiny isolated islands. Not a slope. A cliff. One moment a continent-spanning web, the next a scatter of fragments that cannot reach each other. The exact fraction of removal where this sudden collapse happens has a name: the <GlossaryTerm slug="percolation-threshold">percolation threshold</GlossaryTerm>, written *p*<sub>c</sub>.
+
+This is a genuine <GlossaryTerm slug="phase-transition">phase transition</GlossaryTerm>, in the same deep mathematical sense as water freezing into ice. Below the threshold the system is one connected, conducting whole; cross it and the system is, suddenly and qualitatively, a different kind of thing — disconnected, insulating, broken. There is no gentle middle. Nudge the temperature of water a fraction below zero and it is not "mostly liquid"; it is ice. Nudge a network's connectivity a fraction below *p*<sub>c</sub> and it is not "mostly connected"; it is shattered. The most famous toy version of this is the forest-fire model that physicists actually study: scatter trees on a grid at some density and set one alight, and below a critical density the fire fizzles out locally, while above it the fire suddenly rips clear across the whole grid. The difference between a contained burn and a continent-wide firestorm is a hair's breadth of density on either side of a threshold.
+
+The interactive below lets you stand at that cliff edge yourself. Burn the network down at random and watch the giant component cling on, and on, far past the point you would expect — and then vanish all at once as you cross *p*<sub>c</sub>. Then switch the attack from random to targeted, aim at the hubs, and watch the same network collapse after only a few removals. The two modes are the whole chapter in your hands: the same web, indestructible one way and brittle the other.
+
+<PercolationNetwork />
+
+Now bring this back to the heart of the matter. There is a remarkable mathematical result, proved by Reuven Cohen and colleagues the same year as Albert-Barabási, that for a genuinely scale-free network under *random* failure, the percolation threshold effectively vanishes — *p*<sub>c</sub> creeps all the way toward one, meaning you would have to remove very nearly *every node* before the giant component finally dies. A scale-free network under random attack does not just resist collapse; it pushes the cliff edge so far back that, for any realistic amount of blind damage, the network never reaches it at all.
+
+That is the precise, honest, mathematical reason burning Eywa does not kill her. The RDA's destruction, however vast it looks from the ground, is random loss on a scale-free network — and random loss on such a network has its percolation cliff shoved so close to total annihilation that clear-cutting a few regions does not come within sight of it. The planet's mind does not flicker when Hometree falls for the same reason the global internet does not collapse when thousands of random routers fail overnight: the cliff is real, but blind damage cannot find its edge. You could burn an astonishing fraction of Pandora and the surviving forest would still be one connected Eywa — right up until, in principle, you crossed the threshold, at which point she would not dim. She would shatter, all at once, in a single catastrophic instant.
+
+## Why a forest is built to lose pieces
+
+Topology explains why random damage struggles to break the network. But living networks have a second layer of defence that pure graph theory misses, and it is the reason a *biological* web is even harder to kill than the internet. Engineers, when they want a system to survive failure, reach for <GlossaryTerm slug="redundancy-engineering">redundancy</GlossaryTerm>: install two identical pumps, so that when one dies the other takes over. It works, but it is expensive and brittle in its own way — the backup has to be the same part, doing the same job, in the same place. Evolution almost never builds like that. It builds something subtler and tougher, and it has a name.
+
+The name is <GlossaryTerm slug="degeneracy-biology">degeneracy</GlossaryTerm>, and it means something precise: *structurally different* elements that can perform the *same* function. Not two copies of one part, but several unlike parts that happen to overlap in what they can do. Your kidneys and your sweat glands and your lungs are structurally nothing alike, yet all three can rid the body of waste; lose one route and the others widen to compensate. Degeneracy is everywhere in biology, and it buys a kind of robustness redundancy cannot: a degenerate system can absorb a blow it was never specifically designed to survive, because the substitute was never a dedicated backup in the first place — it was just a different part with an overlapping talent.
+
+Eywa is profoundly degenerate, and once you have the word for it the canon reads differently. When the Tree of Voices is bulldozed, the Na'vi do not lose their connection to Eywa, because the connection was never routed through that one structure. They can bond at a Tree of Souls. They can bond at the seabed Spirit Tree, a completely different organism in a completely different biome. In *Frontiers of Pandora* one clan reaches Eywa not through a tree at all but through a giant bioluminescent *mushroom*. These are structurally unalike access points that do the same network job — the textbook signature of a degenerate system. The RDA keeps destroying specific structures and keeps being surprised that the function survives, because it is thinking in redundancy — kill the part, kill the capability — when Pandora is built on degeneracy, where the capability was never pinned to the part.
+
+<Callout variant="insight" title="Redundancy versus degeneracy">
+Redundancy is two identical backups: a spare tyre, a second pump. Degeneracy is *different* structures that happen to share a function — kidneys and lungs both clearing waste, a Tree of Souls and a seabed Spirit Tree and a glowing mushroom all reaching Eywa. Redundancy survives the failure you planned for. Degeneracy survives the failure you didn't. It is the difference between a system that is backed up and a system that is genuinely hard to surprise — and biological networks lean overwhelmingly on the second.
+</Callout>
+
+There is a third structural idea that completes the picture and finally lets us answer the question canon left hanging. Real networks are <GlossaryTerm slug="modularity-network">modular</GlossaryTerm>: they are built of dense local clusters — a single forest, a reef — that are richly wired inside and only sparsely connected to each other. Modularity acts like a firebreak. Damage inside one module tends to stay inside it, because there are few links along which it could spread to the next. But modularity comes with specific weak points. The handful of links that *do* bridge one module to another are precious, and the nodes that sit on those bridges have a special name in graph theory: <GlossaryTerm slug="articulation-point">articulation points</GlossaryTerm>, the vertices whose removal actually does split a connected graph in two.
+
+This is the exact tool we need for the Tree of Souls. The reason its destruction is a real strategic question — and not just more blind clearing — is that it might be an articulation point: the one bridge coupling the local Omaticaya forest module to the wider planetary network. If it is, then destroying it would do something none of the other strikes achieved. It would not kill Eywa; the global network would close over the gap. But it would *amputate* the local clan from the whole, severing the Omaticaya's access while leaving the planetary mind intact on the far side of the broken bridge. That is a precise, network-theoretic reading of Quaritch's plan: not a decapitation of Eywa, but a surgical isolation of one people from her. Canon never lets the strike land, so we never learn whether the Tree of Souls truly sits on that bridge. But percolation and modularity tell us exactly what to look for, and exactly what the two possible outcomes would have been.
+
+<DiagramFigure
+  src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-03-articulation-point.webp"
+  alt="A network diagram of two dense glowing cyan clusters of nodes — a forest module on the left and a wider planetary network on the right — joined by a single bright bridging node sitting on the only link between them; a targeting reticle is trained on that bridge node, and a faint ghosted version shows the right cluster surviving intact while the left cluster goes dark and disconnected once the bridge is cut"
+  labels={[
+    { x: 19, y: 31, side: "right", label: "The local module", note: "One clan's forest — densely wired within itself" },
+    { x: 40, y: 31, side: "left", label: "The articulation point", note: "The single bridge node (pink reticle) — cut it and the graph splits" },
+    { x: 74, y: 28, side: "left", label: "The planetary network", note: "The far side closes over the gap and survives intact" },
+    { x: 19, y: 79, side: "right", label: "Severed, not killed", note: "Below: the bridge cut — the module goes dark, amputated from the whole" }
+  ]}
+  figNo="03"
+  caption="What an articulation point is, and why the Tree of Souls might be one. A modular network keeps its damage local — dense clusters wired richly inside, sparsely between. The few nodes that sit on the bridges between modules are the articulation points: cut one and you split the graph. If the Tree of Souls is the bridge coupling the Omaticaya forest to the planetary network, destroying it would not kill Eywa — the far side closes over — but it would amputate one clan from the whole. That, not decapitation, is the real shape of Quaritch's plan."
+  tier="inference"
+/>
+
+## The forest that grows back
+
+There is still something graph theory alone cannot account for, and it is the most important thing of all. A network drawn on paper is static: remove a node and it is gone forever, and the only question is whether the survivors stay connected. But Eywa is not drawn on paper. She is *alive*, and living networks do something no diagram can — they regrow the nodes they lose. To finish the account of why burning Eywa fails, we have to leave pure mathematics for the science of how living systems recover from catastrophe, and it begins with a distinction that is constantly, expensively confused.
+
+The distinction is between <GlossaryTerm slug="ecological-resilience">resistance and resilience</GlossaryTerm>. Resistance is a system's ability to *not be damaged* in the first place — the thickness of the bark, the height of the seawall. Resilience is something else entirely: the ability to absorb damage and *recover*, to take the blow and come back. The ecologist C. S. Holling drew the line sharply in 1973, and it matters here because Eywa is not especially resistant — her trees burn as readily as any — and yet she is extraordinarily resilient. She does not survive the RDA by being hard to hurt. She survives by being almost impossible to keep down.
+
+Two real ecological mechanisms power that recovery, and both have direct Pandoran counterparts. The first is the <GlossaryTerm slug="insurance-hypothesis">insurance hypothesis</GlossaryTerm>: in a diverse ecosystem, many different species quietly perform overlapping roles, so that when a disturbance wipes out some of them, others are already in place to carry the function forward. Biodiversity, on this view, is not decoration; it is insurance, a portfolio of responses to an uncertain future. It is degeneracy again, written at the scale of a whole ecosystem — and it means a burned patch of forest is reseeded not by one heroic species but by a crowd of them, each hedging against the others' failure.
+
+The second mechanism is the one that truly explains the burn. Earth's fire-adapted ecosystems do not merely tolerate fire; many *require* it, holding their next generation in reserve precisely against the day everything above ground turns to ash. The reserve is the <GlossaryTerm slug="seed-bank">seed bank</GlossaryTerm> — seeds banked in the soil or locked in fire-opened cones, insulated from the heat, waiting to germinate into the cleared and fertilised ground a fire leaves behind. Burn such a forest to the bare earth and you have not ended it. You have triggered it. Within a season the supposedly destroyed ecosystem is greening from a memory it buried before the fire ever came.
+
+Now read the woodsprites again. The *atokirina'* — the drifting, luminous seeds of the sacred trees, the ones that settle on Jake Sully and that Neytiri reads as a sign from Eywa — are, in the cold language of this chapter, a mobile aerial seed bank and a distributed data-recovery system. They are the seeds of the network's most connected hubs, dispersed on the wind across the whole moon, carrying the instructions to grow new sacred trees wherever they land. Burn a region to sterile ash and the woodsprites from untouched hubs drift in and reseed it — restoring not just trees but the network's connectivity, planting fresh nodes into the gap. Canon even has them physically remake an organism, altering the human Spider so he can breathe Pandoran air. They are Eywa's regeneration made visible: the reason the network replaces its lost nodes faster than blind destruction can accumulate, and therefore the reason the slow climb toward the percolation threshold is, under any normal assault, continually undone.
+
+<DiagramFigure
+  src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-04-woodsprite-seedbank.webp"
+  alt="A burned, ashen Pandoran clearing at night, the ground sterile and dark — and drifting in from the glowing untouched forest at the edges of the frame, a swarm of luminous jellyfish-like woodsprites settling onto the bare earth, where the faintest new cyan threads of root and network are beginning to spread out from where the first ones have landed, re-knitting the gap"
+  labels={[
+    { x: 18, y: 25, side: "right", label: "Untouched hub forest", note: "Intact sacred tree acts as the broadcast reservoir for seeds" },
+    { x: 44, y: 38, side: "left", label: "The drifting seed bank", note: "Atokirina' carried on wind currents across the moon" },
+    { x: 67, y: 76, side: "left", label: "Reseeding the gap", note: "Settled woodsprites extend new cyan hyphal threads into sterile ash" }
+  ]}
+  figNo="04"
+  caption="The seed bank that flies. The atokirina' — the woodsprites — are the drifting seeds of the network's most connected hubs, dispersed on the wind across the whole moon. Burn a region to sterile ash and they settle in from untouched forest and reseed it, restoring not just trees but the network's connectivity, planting fresh nodes into the gap. This is why the climb toward the percolation threshold is continually undone: the network regrows its lost nodes faster than blind burning can subtract them."
+  tier="inference"
+/>
+
+<Callout variant="science" title="Resistance is armour; resilience is recovery">
+The two get confused constantly, and the difference is everything. A resistant system is hard to damage — thick bark, a high wall. A resilient system is hard to *finish* — it takes the damage and regrows. Eywa is not especially resistant: her forests burn. She is ferociously resilient: she grows back from a seed bank dispersed across a whole moon. The honest reason burning her fails is not that the fire does no damage. It is that the network repairs the damage — reseeds the burned nodes from its untouched hubs — faster than blind burning can ever pull it toward the cliff.
+</Callout>
+
+<DiagramFigure
+  src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-05-resistance-vs-resilience.webp"
+  labels={[
+    { x: 25, y: 38, side: "right", label: "Resistance (armour)", note: "Thick bark deflects flame; the standing trunk structure remains unchanged" },
+    { x: 74, y: 45, side: "left", label: "Resilience (renewal)", note: "Canopy burns to stumps, but underlying function is actively rebuilt" },
+    { x: 65, y: 68, side: "left", label: "Recovery reserve", note: "Buried root crowns, fungal threads, and fresh green shoots rapidly resprout" }
+  ]}
+  alt="Two forest survival strategies: a thick-barked trunk on the left turns aside a low fire and remains unchanged, while on the right an ordinary stand has burned to black stumps but is already crowded with new shoots, fungal threads, and young saplings"
+  figNo="05"
+  caption="Armour and recovery are not the same promise. Resistance (left) keeps the blow outside: the fire reaches the trunk and fails to enter. Resilience (right) makes no such claim — the trees are gone and the ash is real — but the buried reserve is already rebuilding the lost function. Eywa survives in the second way. The wound happens. It simply does not get the last word."
+  tier="real_science"
+/>
+
+Notice what that turns the question into. "Faster than blind burning can pull it toward the cliff" is not a threshold claim; it is a claim about two rates, and rates can be compared. Set them against each other and the network either finds a scarred plateau and stays one whole, or loses the race and falls off the cliff on an ordinary afternoon.
+
+<RegenerationRace
+  caption="The race the whole chapter turns on. While reseeding keeps ahead, the standing network settles at a permanent scar and stays connected indefinitely — no amount of further burning at that rate ever reaches the threshold. Push the burn rate up and the two curves cross: repair slows as the forest that powers it shrinks, the slide accelerates, and the giant component crosses the critical density in a single step. This is why Eywa's immortality is real and conditional at once. It is not armour. It is a rate, and a rate can be outrun."
+/>
+
+## How you would actually kill her
+
+It would be a strange kind of honesty that spent a whole chapter proving Eywa nearly unkillable and then stopped without admitting the obvious: *nearly* is not *entirely*. The same mathematics that explains her resilience also draws, with uncomfortable precision, the map of her death. A distributed network is hard to kill by accident and quite possible to kill on purpose, and the difference is exactly the difference between what the RDA did and what it would have had to do. There are four ways across the line, and laying them out is not ghoulishness — it is the proof that the resilience is real rather than magical, because a thing that genuinely could not be destroyed under any conditions would not be resilient. It would just be a miracle.
+
+The first way is **targeted hub decapitation** — the Albert-Barabási attack mode, executed at scale. Stop clear-cutting at random and start hunting hubs: identify every Tree of Souls, every Tree of Voices, every Spirit Tree, every major bioluminescent relay on the moon, and destroy them simultaneously. A scale-free network fragments after losing only a tiny fraction of its most connected nodes, so this would not require burning much of Pandora at all. It would require burning exactly the *right* sliver of it. Quaritch's instinct at the Tree of Souls was this strategy in embryo; he simply aimed at one hub instead of all of them at once.
+
+<DiagramFigure
+  src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-06-simultaneous-hub-strike.webp"
+  labels={[
+    { x: 16, y: 35, side: "right", label: "Targeted terrestrial hubs", note: "Rare sacred trees circled in magenta across the terrestrial canopy" },
+    { x: 39, y: 48, side: "right", label: "Simultaneous coordinated strike", note: "Pinpointing key connector nodes rather than clear-cutting ordinary forest" },
+    { x: 69, y: 79, side: "left", label: "Subsea Spirit Tree hubs", note: "Marine neural conduits targeted to decouple oceanic and terrestrial webs" }
+  ]}
+  alt="A high night panorama across forest, coast, and reef where almost every ordinary tree remains standing, but seven rare sacred-tree, fungal, and underwater hubs are targeted together; their surrounding links fail and the intact landscape separates into disconnected pools of light"
+  figNo="06"
+  caption="A surgical attack looks nothing like a clear-cut. Almost all the forest can remain standing while the rare structures that hold regions together are removed at once — sacred trees on land, fungal access hubs, Spirit Trees below the sea. The area destroyed is tiny. The topological damage is enormous. This is the attack mode Quaritch glimpsed at one tree, expanded into the only version the mathematics says could decapitate the mesh."
+  tier="speculation"
+/>
+
+The second way is **crossing the percolation threshold by attrition** — winning the race against regeneration. The woodsprites reseed faster than blind burning can accumulate damage, so the threshold stays out of reach. But that is a race, not a law. Burn faster than Eywa can regrow, sustain it long enough, and the standing density of the network creeps down toward *p*<sub>c</sub> — and then one ordinary day, indistinguishable from the last, the giant component crosses the cliff and the planetary mind shatters into mute fragments. Not a decline. A threshold, reached by outpacing the regrowth that normally holds it back.
+
+The third way is subtler and crueller: **sterilising the regeneration itself**. Resilience depends entirely on the capacity to regrow, and that capacity has a physical substrate — the seeds, the woodsprites, the living soil. Poison the soil against germination, or destroy the *atokirina'* in flight, and you have not killed a single mature tree, yet you have converted every future blow from survivable into permanent. A network that cannot regrow is, from the moment its seed bank dies, merely a network being slowly subtracted toward the threshold with no way back.
+
+<DiagramFigure
+  src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-07-sterile-future.webp"
+  labels={[
+    { x: 25, y: 65, side: "right", label: "Living recovery reserve", note: "Seeds, mycorrhizal hyphae, woodsprites, and germinants ready to replace canopy" },
+    { x: 75, y: 22, side: "left", label: "Deceptive green canopy", note: "Adult trees stand unchanged today, masking subterranean sterility" },
+    { x: 75, y: 65, side: "left", label: "Dead subsoil (countdown)", note: "Poisoned soil with dead hyphae and empty seed husks — zero replacement capacity" }
+  ]}
+  alt="Two apparently similar mature forests shown in soil cutaway: beneath the left are seeds, living fungal threads, settling woodsprites, and many seedlings, while beneath the right the adult trunks still stand over pale poisoned soil containing empty husks, dead hyphae, and no next generation"
+  figNo="07"
+  caption="A forest can be dead in the future while still green in the present. On the left, the recovery reserve waits below every adult: seeds, fungi, woodsprites, seedlings. On the right, the same mature canopy stands over sterile ground. No tree had to fall today. But every tree that falls tomorrow has become irreplaceable, and resilience has quietly been converted into a countdown."
+  tier="speculation"
+/>
+
+The fourth way is the most insidious, and it comes from one of the genuinely frightening results in modern network science. In 2010 Sergey Buldyrev and colleagues showed that <GlossaryTerm slug="interdependent-networks">interdependent networks</GlossaryTerm> — two networks that each depend on the other to function — are dramatically *more* fragile than either alone, because failure ricochets back and forth between them in a <GlossaryTerm slug="cascading-failure">cascading failure</GlossaryTerm>: nodes fail in network A, which knocks out the network-B nodes that depended on them, which knocks out further A nodes that depended on *those*, and so on, an avalanche that can level both systems from a single push. Pandora is exactly such a coupled pair. The flora is one network; the fauna — the pollinators, the seed-carriers, the woodsprites and the great beasts that defend the trees — is another, and each depends utterly on the other. Which means the way to kill Eywa might not be to burn a single tree. It might be to release a plague that kills only *animals*, and let the cascade do the rest: no fauna to disperse seeds or pollinate, so the flora fails, so the remaining fauna starve, the collapse bouncing between the two networks until both are gone. The most efficient way to kill a forest, the mathematics suggests, may be to never touch the forest at all.
+
+<CascadingFailure />
+
+<DiagramFigure
+  src="/images/chapters/why-burning-eywa-doesnt-kill-it/fig-08-fauna-flora-cascade.webp"
+  labels={[
+    { x: 16, y: 48, side: "right", label: "Intact mutualistic web", note: "Pollinators, seed-dispersing grazers, and vibrant bioluminescent flora" },
+    { x: 50, y: 55, side: "right", label: "Fauna removed (silent forest)", note: "Trees stand but unpollinated flowers and rotting seeds arrest recruitment" },
+    { x: 83, y: 55, side: "left", label: "Co-extinction cascade", note: "Canopy collapses from lack of regeneration; remaining fauna starve" }
+  ]}
+  alt="The same Pandoran clearing in three stages: first full of pollinators, seed carriers, grazers, flowers, and fruit; then with mature plants still standing but animals absent and seeds rotting beneath their parents; finally with a thinning canopy, no young plants, scarce fruit, and the few remaining animals starving"
+  figNo="08"
+  caption="Kill neither tree nor root, and the forest can still fail. Remove the animals first (left to right): flowers go unpollinated, seeds stop travelling, young plants vanish. Then the blow returns across the dependency — fewer plants mean less food, and the remaining fauna collapse in turn. Each network subtracts the support of the other until both fall. The efficient attack on Eywa may begin in a forest that no weapon ever touches."
+  tier="speculation"
+/>
+
+
+<ClaimAudit
+  caption="Why burning Eywa fails — and the four ways it would not. The whole chapter on one ladder: the network survives everything the RDA actually did because it was the wrong kind of attack, and it draws the precise map of the right kind. Read top to bottom: what is proven, what is inferred about Pandora, and what it would truly take to cross the line."
+  rungs={[
+    {
+      level: "Why random burning fails",
+      claim: "Clear-cutting and felling, however vast, cannot kill the network.",
+      verdict: "well-supported",
+      evidence: "Scale-free networks tolerate random node loss almost completely (Albert-Barabási 2000); Cohen et al. showed the percolation threshold under random failure approaches total annihilation.",
+      caution: "This is the real, settled mathematics — but it assumes the damage really is random with respect to connectivity, which the RDA's resource-driven targeting happens to be.",
+    },
+    {
+      level: "Why the Tree of Souls is special",
+      claim: "The sacred-tree hubs are the network's one true vulnerability.",
+      verdict: "demonstrated-under-conditions",
+      evidence: "Targeted removal of high-degree hubs fragments a scale-free network fast; canon marks the Tree of Souls as a uniquely high-bandwidth hub and an articulation point to its clan.",
+      caution: "Whether destroying it would sever a clan or the planet is exactly what canon never shows — the wildlife stops the assault first. Inference, not fact.",
+    },
+    {
+      level: "How you would actually kill her",
+      claim: "Targeted hub strikes, outracing regeneration, sterilising seed banks, or a fauna-only plague cascading through the coupled network.",
+      verdict: "contested",
+      evidence: "Each failure mode is a real, published result in network science and ecology (Buldyrev et al. 2010 on interdependent-network cascades especially).",
+      caution: "Applying them to Pandora is reasoned speculation — a map of what it would take, not anything canon depicts. Eywa survives because no one has yet attacked her this way.",
+    },
+  ]}
+/>
+
+## Honest edges
+
+The line worth drawing cleanly is the one between what is established and what is reasoned. The *mathematics* here is as settled as science gets: graph theory's giant connected component, the Albert-Barabási dichotomy of random-tolerance and targeted-fragility, the Cohen result pushing the percolation threshold toward one for scale-free networks under random failure, percolation as a genuine phase transition, Holling's resistance-versus-resilience, the insurance hypothesis, fire-adapted seed banks, and Buldyrev's cascades in interdependent networks. None of that is Pandoran and none of it is in doubt; it is the real, transferable payload, and it describes the internet, the power grid, and every forest on Earth as exactly as it describes Eywa.
+
+What is *canon* is the catalog of strikes and their outcomes: the Tree of Voices bulldozed without systemic effect, Hometree felled without the network dimming, the Tree of Souls singled out as the one hub worth a targeted strike, the tulkun hunted and the ocean network enduring, the woodsprites drifting out to reseed. What lies *between* the firm science and the firm canon is a bridge of inference, and it carries most of the chapter's interesting weight: reading the RDA's resource-driven destruction as topologically *random* attack, reading the Tree of Souls as a scale-free *hub* and an articulation point, reading the woodsprites as a regenerating seed bank. That bridge is sound engineering, but it is reasoning, and it is marked as reasoning. The four ways to kill her are further out still — reasoned speculation about what canon never depicts, offered as the necessary proof that the resilience has limits, not as anything the films show.
+
+<ConfidenceMeter
+  classification={{ canon_pct: 18, inference_pct: 17, speculation_pct: 10, real_science_pct: 55 }}
+/>
+
+So burn the forest, and you have killed a great many trees and left the network they belonged to almost untouched — because what you destroyed, the network barely depended on, and what you destroyed regrows. That is not Pandoran magic. It is the plainest lesson connected things have to teach, proven on Earth in the survival of the internet under random failure and the greening of a burned hillside, and it runs underneath your own feet as surely as it runs under Pandora's. Eywa shrugs off the fire for the same reason the network you are reading this on shrugs off a thousand failing routers a night: a sufficiently large, redundant, regenerating, distributed network has no single place where its life is kept, and you cannot kill what is not stored anywhere in particular. The haunting part — the part that should keep an honest reader up at night — is the corollary. *No single place* is not *no place*. The mathematics that makes her nearly immortal also names, with terrible precision, the four narrow doors through which even a planet's mind could be made to die.
+
+<OpenQuestions
+  title="What stays open"
+  items={[
+    {
+      question: "Was the Tree of Souls a single point of failure, or just the largest of many hubs?",
+      answer: "This is the chapter's deliberately unanswered question, and canon withholds the answer on purpose: the wildlife stops Quaritch's assault before the tree is destroyed, so we never see what its loss would have done. The existence of the Spirit Tree underwater and the Trees of Voices in other clan territories argues for redundancy — many hubs, no one of them load-bearing for the whole. But the Tree of Souls is also the only site canon says permits a clan-wide simultaneous connection, which hints it may be a genuine articulation point for its region. Whether it was a hub among hubs or the keystone of the planetary mind is left genuinely open."
+    },
+    {
+      question: "Are Pandora's forest and ocean networks one coupled system or two?",
+      answer: "The Spirit Tree mirrors the Tree of Souls beneath the sea, which suggests one continuous planet-spanning network crossing the seabed. If so, the forest and ocean are interdependent in exactly Buldyrev's dangerous sense, and a cascade started in one could in principle propagate to the other. But canon never shows the two physically joined, and they could equally be separate networks running the same design — in which case damaging one would leave the other wholly intact. Whether Pandora has one resilient global mind or two independent ones changes the entire vulnerability analysis, and it is never resolved."
+    },
+    {
+      question: "How fast can the network actually regenerate, and could the RDA outrun it?",
+      answer: "Everything rests on the race between destruction and regrowth, but canon never quantifies either rate. We see the woodsprites disperse and we see forests intact a decade after the first war, which implies regeneration comfortably outpaces the damage inflicted — but whether a sustained, industrial-scale burn campaign could push the standing network density down to the percolation threshold faster than the atokirina' could reseed it is precisely the number no one on either side appears to have. The threshold is real; whether the RDA could ever reach it is unknown."
+    }
+  ]}
+/>
+
+<SourceList />

@@ -1,0 +1,120 @@
+slug: time-on-pandora
+status: published
+title:
+  vi: Nhịp điệu thời gian trên Pandora
+  en: Time on Pandora
+subtitle:
+  vi: >-
+    Vì sao thứ lớn nhất trên bầu trời Pandora không bao giờ nhúc nhích - mà một ngày vẫn cứ trôi
+    qua: khóa thủy triều, sự bình động, và điệu nhảy của cơ học quỹ đạo
+  en: >-
+    Why the biggest thing in Pandora's sky never moves - yet a day still passes: tidal locking,
+    libration, and the dance of orbital mechanics
+hook:
+  vi: >-
+    Người Na'vi có một câu nói làm thay cả chiếc đồng hồ: "về nhà trước lúc nhật thực". Đó không
+    phải thơ ca, mà là một giờ trong ngày - buổi xế chiều khi mặt trời sắp khuất sau hành tinh khổng
+    lồ và thế giới chìm vào bóng tối giữa ban ngày. Trên Trái Đất, nhật thực toàn phần là kỳ quan
+    hiếm hoi cả đời mới gặp một lần; trên Pandora, nó là tiếng chuông báo giờ mỗi ngày. Lần theo chữ
+    "vì sao" ấy là toàn bộ chương này.
+  en: >-
+    The Na'vi have a phrase that does the work of a clock: be home by eclipse. It is not poetry but
+    a time of day - the late afternoon when the sun slides behind the giant planet and the world
+    goes dark in the middle of daylight. On Earth a total eclipse is a once-in-a-lifetime wonder; on
+    Pandora it is a daily errand-bell. Following that "why" is the whole of this chapter - and the
+    answer is a single fact about how Pandora moves.
+authors:
+  - bardabez
+tags:
+  - orbital-mechanics
+  - tidal-locking
+  - astronomy
+  - exomoons
+  - eclipses
+classification:
+  canon_pct: 24
+  inference_pct: 13
+  speculation_pct: 8
+  real_science_pct: 55
+related_chapters:
+  - where-is-pandora
+  - whats-in-the-air
+  - continents-oceans-climate
+  - what-keeps-pandora-volcanically-alive
+  - pandoras-deep-time
+  - how-the-wind-traders-navigate-a-planet
+  - pandoras-ocean
+  - the-night-ecology
+glossary_terms:
+  - tidal-locking
+  - synchronous-rotation
+  - libration
+  - sidereal-day
+  - synodic-day
+  - spin-orbit-resonance
+  - obliquity
+  - planetshine
+  - roche-limit
+  - tidal-heating
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-sky-clock
+    role: hero
+    asset_status: ready
+  - id: fig-02-tidal-lock-carousel
+    role: diagram
+    asset_status: ready
+  - id: fig-03-libration-nod
+    role: diagram
+    asset_status: ready
+  - id: fig-04-eclipse-season
+    role: diagram
+    asset_status: ready
+  - id: fig-05-sidereal-synodic
+    role: diagram
+    asset_status: ready
+  - id: fig-06-two-sun-decades
+    role: comparison
+    asset_status: ready
+  - id: fig-07-too-close-clock
+    role: comparison
+    asset_status: ready
+  - id: fig-99-background
+    role: hero
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Pandora - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Pandora
+  - kind: canon
+    label: Polyphemus - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Polyphemus
+  - kind: science
+    label: Tidal locking - Wikipedia
+    url: https://en.wikipedia.org/wiki/Tidal_locking
+  - kind: science
+    label: Orbit of the Moon (libration) - Wikipedia
+    url: https://en.wikipedia.org/wiki/Orbit_of_the_Moon
+  - kind: science
+    label: Astrophysics of Pandora, the moon-world from Avatar - planetplanet.net
+    url: https://planetplanet.net/2022/12/14/pandora-the-moon-world-from-avatar-revisited/
+  - kind: science
+    label: Mercury's 3:2 Spin-Orbit Resonance
+    url: https://ytliu0.github.io/Mercury-SpinOrbitResonance/mercury.html
+  - kind: community
+    label: Community orbital reconstructions of the Polyphemus system (r/Avatar, Universe Sandbox)
+    url: >-
+      https://www.reddit.com/r/Avatar/comments/zyrwql/pandoras_orbit_and_eclipse_visualized_universe/
+  - kind: science
+    label: Sidereal time - Wikipedia
+    url: https://en.wikipedia.org/wiki/Sidereal_time
+  - kind: science
+    label: Eclipse season - Wikipedia
+    url: https://en.wikipedia.org/wiki/Eclipse_season
+  - kind: science
+    label: Roche limit - Wikipedia
+    url: https://en.wikipedia.org/wiki/Roche_limit
+  - kind: research-note
+    label: The Chronometric and Astrodynamical Profile of Pandora (chapter research note)

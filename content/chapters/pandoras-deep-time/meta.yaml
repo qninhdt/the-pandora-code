@@ -1,0 +1,145 @@
+slug: pandoras-deep-time
+status: published
+title:
+  vi: Dòng thời gian sâu thẳm của Pandora
+  en: Pandora’s Deep Time
+subtitle:
+  vi: >-
+    Cách đọc tuổi của một thế giới ta vừa mới đặt chân tới - và làm sao ta biết Trái Đất đã 4,5 tỷ
+    năm tuổi: địa thời học, định tuổi bằng đồng vị phóng xạ, và cuốn tiểu sử của một hành tinh
+  en: >-
+    How to read the age of a world you have only just reached - and how we know Earth is 4.5 billion
+    years old: geochronology, radiometric dating, and the biography of a planet
+hook:
+  vi: >-
+    Trong lòng bàn tay một nhà địa chất là một hạt tinh thể nhỏ hơn hạt cát, bới ra từ lớp đá sa
+    thạch cổ trên cao nguyên Pandora. Nó là một chiếc đồng hồ. Khắc bên trong cấu trúc nguyên tử của
+    nó là con số năm tháng - không phải vài nghìn năm, mà hàng tỉ - cùng dấu vết của cú va chạm đã
+    khai sinh ra thế giới này. Cả chương này là câu hỏi làm thế nào một viên đá lại biết kể tuổi của
+    chính nó, và vì sao cùng một mẹo ấy lại đọc được tuổi của bất kỳ tảng đá nào trong cả thiên hà.
+  en: >-
+    In a geologist's palm sits a crystal grain smaller than a sand mote, picked from the ancient
+    sandstone of a Pandoran highland. It is a clock. Written into its atomic structure is a number
+    of years - not thousands but billions - and the scar of the collision that built this world. The
+    whole of this chapter is the question of how a stone comes to know its own age, and why the same
+    trick reads the age of any rock in the galaxy.
+authors:
+  - bardabez
+tags:
+  - geochronology
+  - radiometric-dating
+  - deep-time
+  - planetary-evolution
+  - tidal-heating
+  - isochron
+classification:
+  canon_pct: 20
+  inference_pct: 14
+  speculation_pct: 12
+  real_science_pct: 54
+related_chapters:
+  - where-is-pandora
+  - floating-mountains-and-the-superconductor
+  - time-on-pandora
+  - what-keeps-pandora-volcanically-alive
+  - six-limbs-and-the-bilateral-lattice
+glossary_terms:
+  - deep-time
+  - geochronology
+  - radiometric-dating
+  - half-life
+  - isochron
+  - uranium-lead-dating
+  - zircon
+  - radiocarbon-dating
+  - uniformitarianism
+  - superposition
+  - geologic-time-scale
+  - accretion
+  - planetary-differentiation
+  - orbital-resonance
+  - crater-counting
+  - gyrochronology
+  - evolutionary-stasis
+  - prolemuris
+  - tidal-heating
+  - alpha-centauri
+  - unobtanium
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-zircon-clock
+    role: hero
+    asset_status: ready
+  - id: fig-02-strata-record
+    role: inline
+    asset_status: ready
+  - id: fig-03-deep-impact
+    role: inline
+    asset_status: ready
+  - id: fig-04-zircon-anatomy
+    role: diagram
+    asset_status: ready
+  - id: fig-06-living-archive
+    role: inline
+    asset_status: ready
+  - id: fig-07-prolemuris-bridge
+    role: comparison
+    asset_status: ready
+  - id: fig-08-stasis-and-change
+    role: comparison
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Unobtanium - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Unobtanium
+  - kind: canon
+    label: Timeline - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Timeline
+  - kind: canon
+    label: Polyphemus - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Polyphemus
+  - kind: science
+    label: Clair Patterson - Age of meteorites and the earth (1956)
+    url: >-
+      https://www.semanticscholar.org/paper/Age-of-meteorites-and-the-earth-Patterson/8cb2724dda3b4695c735641dbd2c2a9e98cfb9c6
+  - kind: science
+    label: Isochron dating - Wikipedia
+    url: https://en.wikipedia.org/wiki/Isochron_dating
+  - kind: science
+    label: The U-Pb system (UCL geochronology notes)
+    url: https://www.homepages.ucl.ac.uk/~ucfbpve/geotopes/indexch5.html
+  - kind: science
+    label: Radiocarbon dating - Wikipedia
+    url: https://en.wikipedia.org/wiki/Radiocarbon_dating
+  - kind: science
+    label: Jack Hills zircon - oldest known fragment of Earth (Sci.News)
+    url: https://www.sci.news/geology/science-jack-hills-zircon-oldest-known-fragment-earth-01779.html
+  - kind: science
+    label: Allende meteorite (CAIs, Solar System age) - Wikipedia
+    url: https://en.wikipedia.org/wiki/Allende_meteorite
+  - kind: science
+    label: John Perry's neglected critique of Kelvin's age for the Earth (GSA Today)
+    url: https://rock.geosociety.org/gsatoday/archive/17/1/pdf/gt0701.pdf
+  - kind: science
+    label: Dating Planetary Surfaces - Crater Counting (CUNY Pressbooks)
+    url: https://pressbooks.cuny.edu/introplanetarygeology/chapter/1555/
+  - kind: science
+    label: Gyrochronology - Wikipedia
+    url: https://en.wikipedia.org/wiki/Gyrochronology
+  - kind: science
+    label: A mapping method of age estimation for binary stars - Alpha Centauri A and B
+    url: >-
+      https://astrobiology.com/2026/02/a-mapping-method-of-age-estimation-for-binary-stars-application-to-the-alpha-centauri-system-a-and-b.html
+  - kind: science
+    label: Europa and Titan - Oceans in the Outer Solar System (LPI)
+    url: https://www.lpi.usra.edu/science/kiefer/Education/SSRG2-Europa/europa.html
+  - kind: science
+    label: Tidal effects on Io and Europa (The Open University, OpenLearn)
+    url: https://www.open.edu/openlearn/ocw/mod/oucontent/view.php?id=69107
+  - kind: science
+    label: Uniformitarianism - Wikipedia
+    url: https://en.wikipedia.org/wiki/Uniformitarianism
+  - kind: research-note
+    label: Chronological Frameworks of Pandoran and Terrestrial Deep Time (chapter research note)

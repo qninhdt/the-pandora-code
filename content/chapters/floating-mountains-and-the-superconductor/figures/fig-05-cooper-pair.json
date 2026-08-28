@@ -1,0 +1,19 @@
+{
+  "id": "fig-05-cooper-pair",
+  "chapter_slug": "floating-mountains-and-the-superconductor",
+  "role": "diagram",
+  "narrative_purpose": "Shows two bright particles travelling through a grid of dots, the first pulling nearby dots inward to make a bright pocket the second is drawn toward.",
+  "subject": "A flat regular grid of small glowing dots (a lattice). Two brighter points move through the grid along a diagonal path, each with a short motion trail. Around the leading bright point, the nearby grid dots are pulled slightly inward toward it, bunching into a small concentrated glowing pocket. The trailing bright point is angled toward that pocket as if drawn to it.",
+  "scene": "The dot-grid fills the frame on a dark background. Only the grid, the two bright moving points with trails, and the small bunched-up pocket of dots around the first point.",
+  "camera": "Flat head-on view of a single flat plane of the grid.",
+  "light": "Flat even; the two moving points are the brightest things, the bunched pocket faintly warm.",
+  "palette": "Near-black background, teal grid dots, two bright cyan moving points, a faint amber tint in the bunched pocket.",
+  "style": "Clean elegant schematic of soft glowing dots and thin trails.",
+  "detail_level": "Regular grid, two clearly emphasized moving points, a subtle visible inward distortion of the grid near the first point.",
+  "composition": "Grid fills frame; the two points offset along a diagonal, leading point upper-right, trailing point lower-left.",
+  "exclude": ["text", "letters", "numbers", "equations", "watermark", "photographic texture"],
+  "consistency_notes": "Thin glowing teal/cyan elements on a near-black background, matching the chapter's schematic diagrams.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no equations, no numbers, no photorealism, no 3D bevels, no clutter",
+  "style_refs": ["pandora-establishing.png"]
+}

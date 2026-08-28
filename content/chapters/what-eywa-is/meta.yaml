@@ -1,0 +1,131 @@
+slug: what-eywa-is
+status: published
+title:
+  vi: Bản chất thực sự của Eywa
+  en: What Eywa Is
+subtitle:
+  vi: >-
+    Khi muông thú cả một hành tinh đồng loạt phản công, người Na'vi nói "Eywa đã nghe thấy ngươi" —
+    nhưng một mạng lưới phủ khắp địa cầu vừa *quyết định* điều gì đó, hay chỉ vừa thực thi phép tính
+    phản xạ vĩ đại nhất trong vũ trụ?
+  en: >-
+    When a whole planet's wildlife turns and counterattacks, the Na'vi say "Eywa has heard you" —
+    but did a planet-wide network just *decide* something, or merely execute the greatest reflexive
+    computation in the universe?
+hook:
+  vi: >-
+    Eywa được thờ phụng như một nữ thần và bị giải mã như một siêu máy tính sinh học cùng một lúc.
+    Bóc lớp thần học ấy ra và đặt nó lên bàn mổ, ta gặp ngay câu hỏi nằm ở ranh giới sắc bén nhất
+    của khoa học nhận thức Trái Đất: tới ngưỡng nào thì một mạng lưới gồm vô số phần tử đơn giản trở
+    thành trí khôn — và bao giờ, nếu có, một trí khôn vượt ngưỡng để thành một tâm trí thực sự?
+  en: >-
+    Eywa is worshipped as a goddess and decoded as a biological supercomputer in the same breath.
+    Strip the theology away and lay it on the table and you meet a question that sits on the
+    sharpest edge of Earth's cognitive science: at what threshold does a network of simple parts
+    become an intelligence — and when, if ever, does an intelligence cross over into a mind?
+authors:
+  - bardabez
+tags:
+  - eywa
+  - distributed-cognition
+  - emergence
+  - swarm-intelligence
+  - consciousness
+  - network
+classification:
+  canon_pct: 22
+  inference_pct: 18
+  speculation_pct: 8
+  real_science_pct: 52
+related_chapters:
+  - the-wood-wide-web
+  - the-bandwidth-of-a-planet
+  - why-burning-eywa-doesnt-kill-it
+  - a-real-living-planet
+  - spiders-second-biology
+  - kiri-and-the-writable-biosphere
+  - pandoran-tree-of-life
+glossary_terms:
+  - distributed-cognition
+  - swarm-intelligence
+  - quorum-sensing
+  - stigmergy
+  - superorganism
+  - emergence
+  - basal-cognition
+  - cognitive-light-cone
+  - connectome
+  - integrated-information-theory
+  - global-workspace-theory
+  - hard-problem-of-consciousness
+  - functionalism
+  - panpsychism
+  - tsaheylu
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-eywa-heard-you
+    role: hero
+    asset_status: ready
+  - id: fig-02-root-network
+    role: comparison
+    asset_status: ready
+  - id: fig-03-quorum-swarm
+    role: diagram
+    asset_status: ready
+  - id: fig-04-slime-mould-map
+    role: diagram
+    asset_status: ready
+  - id: fig-05-weak-strong-emergence
+    role: diagram
+    asset_status: ready
+  - id: fig-06-cerebellum-vs-cortex
+    role: comparison
+    asset_status: pending
+  - id: fig-07-local-memory-port
+    role: comparison
+    asset_status: ready
+  - id: fig-08-library-of-selves
+    role: inline
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Eywa - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Eywa
+  - kind: canon
+    label: Oma - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Oma
+  - kind: canon
+    label: Spirit Tree - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Spirit_Tree
+  - kind: canon
+    label: Three Laws of Eywa - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Three_Laws_of_Eywa
+  - kind: science
+    label: Thomas D. Seeley - Honeybee Democracy (2010)
+    url: https://press.princeton.edu/books/hardcover/9780691147215/honeybee-democracy
+  - kind: science
+    label: Tero et al. - Rules for Biologically Inspired Adaptive Network Design (Science, 2010)
+    url: https://www.science.org/doi/10.1126/science.1177894
+  - kind: science
+    label: P. W. Anderson - More Is Different (Science, 1972)
+    url: https://www.science.org/doi/10.1126/science.177.4047.393
+  - kind: science
+    label: >-
+      Levin - The Computational Boundary of a "Self": Developmental Bioelectricity Drives
+      Multicellularity and Scale-Free Cognition (Frontiers in Psychology, 2019)
+    url: https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02688/full
+  - kind: science
+    label: Koch et al. - Consciousness here, there and everywhere? (Phil. Trans. R. Soc. B, 2015)
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4387509/
+  - kind: science
+    label: Integrated Information Theory (overview)
+    url: https://en.wikipedia.org/wiki/Integrated_information_theory
+  - kind: science
+    label: Dehaene et al. - Conscious Processing and the Global Neuronal Workspace Hypothesis
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8770991/
+  - kind: research-note
+    label: >-
+      The Anatomy of a Planetary Mind - Distributed Cognition, Emergence, and the Biological Network
+      of Eywa (chapter research note)

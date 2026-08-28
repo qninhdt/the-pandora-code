@@ -5,20 +5,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#06111d" />
     <title id="offline-title">The Pandora Code — Offline</title>
+    <!--
+      This notice is served by the service worker for documents that were never
+      downloaded, so it cannot use the app shell, Tailwind, or the self-hosted
+      webfonts (their URLs are content-hashed per build). The tokens below are
+      copied from app/globals.css and the type falls back to the same system
+      stacks that file declares, so the page still reads as part of the book.
+      Keep the palette in sync when the design system changes.
+    -->
     <style>
-      :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #06111d; color: #e8f3f5; }
-      body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 2rem; box-sizing: border-box; }
-      main { max-width: 34rem; border: 1px solid rgba(152, 231, 234, .25); border-radius: 1.25rem; padding: 2rem; background: rgba(12, 34, 49, .88); box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, .28); }
-      h1 { margin: 0 0 .75rem; font-size: clamp(1.6rem, 4vw, 2.5rem); letter-spacing: -.03em; }
-      p { color: #b7cbd2; line-height: 1.65; }
-      a { display: inline-block; margin-top: .75rem; color: #86e8eb; }
+      :root {
+        --void: #070912;
+        --foreground: #e9edf6;
+        --muted: #9aa4bd;
+        --subtle: #6c7690;
+        --border: #1d2740;
+        --cyan: #36c5d9;
+        --accent-soft: #6fd9e7;
+        color-scheme: dark;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 2rem 1.5rem;
+        display: grid;
+        place-items: center;
+        background: var(--void);
+        color: var(--foreground);
+        font-family: Georgia, "Times New Roman", serif;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      /* The ambient haze the real layout paints behind every page. */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        background:
+          radial-gradient(60rem 60rem at 12% -8%, rgba(54, 197, 217, 0.12), transparent 60%),
+          radial-gradient(50rem 50rem at 92% 4%, rgba(43, 212, 168, 0.09), transparent 55%),
+          radial-gradient(70rem 70rem at 50% 120%, rgba(255, 93, 168, 0.07), transparent 60%);
+      }
+
+      main {
+        width: 100%;
+        max-width: 34rem;
+        padding: 2.5rem 2rem;
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        background: rgba(14, 19, 32, 0.88);
+        box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.45);
+        text-align: center;
+      }
+
+      .emblem {
+        display: block;
+        width: 3.25rem;
+        height: 3.25rem;
+        margin: 0 auto 1.5rem;
+        border-radius: 999px;
+        border: 1px solid rgba(54, 197, 217, 0.35);
+        background: rgba(7, 9, 18, 0.8);
+        box-shadow: 0 0 18px -6px rgba(54, 197, 217, 0.7);
+        object-fit: cover;
+      }
+
+      .kicker {
+        margin: 0 0 0.75rem;
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+        font-size: 0.7rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        color: var(--subtle);
+      }
+
+      h1 {
+        margin: 0;
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+        font-size: clamp(1.75rem, 5vw, 2.5rem);
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        color: var(--foreground);
+      }
+
+      p {
+        margin: 1.25rem 0 0;
+        font-size: 1.0625rem;
+        line-height: 1.75;
+        color: var(--muted);
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+        margin-top: 2rem;
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.6rem 1.15rem;
+        border-radius: 999px;
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+        font-size: 0.8125rem;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        transition: background-color 140ms ease, color 140ms ease;
+      }
+
+      a.primary {
+        border: 1px solid rgba(54, 197, 217, 0.4);
+        color: var(--cyan);
+      }
+      a.primary:hover {
+        background: rgba(54, 197, 217, 0.1);
+      }
+
+      a.secondary {
+        border: 1px solid var(--border);
+        color: var(--muted);
+      }
+      a.secondary:hover {
+        color: var(--accent-soft);
+      }
+
+      :focus-visible {
+        outline: 2px solid var(--cyan);
+        outline-offset: 3px;
+      }
     </style>
   </head>
   <body>
     <main>
+      <img class="emblem" src="/icons/icon-192.png" alt="" />
+      <p class="kicker" id="offline-kicker">No connection</p>
       <h1 id="offline-heading">You are offline</h1>
-      <p id="offline-copy">This page is not downloaded yet. Reconnect once to open it, or choose a chapter from your Offline Library.</p>
-      <a id="offline-home" href="/">Return to The Pandora Code</a>
+      <p id="offline-copy">
+        This page is not downloaded yet. Reconnect once to open it, or pick a chapter you already
+        saved to this device.
+      </p>
+      <div class="actions">
+        <a class="primary" id="offline-library" href="/en/offline">Open your offline library</a>
+        <a class="secondary" id="offline-home" href="/en">Return to The Pandora Code</a>
+      </div>
     </main>
     <script>
       (function () {
@@ -26,8 +168,13 @@
         if (!vietnamese) return;
         document.documentElement.lang = "vi";
         document.title = "The Pandora Code — Ngoại tuyến";
+        document.getElementById("offline-kicker").textContent = "Mất kết nối";
         document.getElementById("offline-heading").textContent = "Bạn đang ngoại tuyến";
-        document.getElementById("offline-copy").textContent = "Trang này chưa được tải về. Hãy kết nối lại một lần, hoặc chọn một chương trong Thư viện offline.";
+        document.getElementById("offline-copy").textContent =
+          "Trang này chưa được tải về. Hãy kết nối lại một lần, hoặc chọn một chương bạn đã lưu trên thiết bị này.";
+        var library = document.getElementById("offline-library");
+        library.textContent = "Mở thư viện offline";
+        library.href = "/vi/offline";
         var home = document.getElementById("offline-home");
         home.textContent = "Về The Pandora Code";
         home.href = "/vi";

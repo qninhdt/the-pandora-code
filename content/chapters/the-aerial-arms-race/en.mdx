@@ -1,0 +1,357 @@
+<DiagramFigure
+  src="/images/chapters/the-aerial-arms-race/fig-01-the-shape-in-the-plume.webp"
+  alt="A large dark four-winged predator banking hard inside a drifting volcanic ash plume, two great forewings sweeping down while a second, separate pair of wings behind them sweeps up on the opposite beat, a bone horn projecting forward from its skull, dim ember-orange light from below catching the wing membranes, a small Na'vi rider low on its shoulders"
+  labels={[
+    { x: 74, y: 69, side: "left", label: "Needle-pointed prow", note: "Pierces dense ash plumes and high-speed headwinds" },
+    { x: 32, y: 28, side: "right", label: "Upper leading wing", note: "Primary lift element generating leading-edge suction" },
+    { x: 59, y: 50, side: "left", label: "Tucked rider", note: "Crouched posture minimizing parasitic drag during high-g dives" },
+    { x: 42, y: 85, side: "left", label: "Volcanic ember updraft", note: "Thermal vents fueling violent convective airspace" }
+  ]}
+  figNo="01"
+  caption="A Nightwraith turning inside a plume. The eye counts the wings and reaches an immediate verdict: four must be better than two. The whole chapter is the slow business of finding out that the verdict is wrong, and that what is actually on display is not more flight but a different kind of it."
+  tier="canon"
+/>
+
+There is a moment, watching the thing come out of the ash, when you count wrong. You see a shape banking hard through a column of drifting grit — too large, too dark, moving in a way that a body that size should not be able to move — and your eye reports back that there are wings above and wings below, moving in opposition, four of them, all working. And the conclusion arrives before you can inspect it: *this is a better flier*. Twice the wing. Twice whatever wings do.
+
+The animal is the Nightwraith, the mount Varang rides out of the Ashlands, and its four independently driven surfaces are the single most immediately legible thing about it. They are also the reason it is worth a chapter, because that instant verdict your eye handed you — more wing, more flight — is not merely a bit optimistic. It is backwards. Two lifting surfaces arranged one behind the other are, in the plain arithmetic of aerodynamics, *worse at flying* than one long wing of the same total span. Not marginally. Reliably, calculably worse, for reasons that were worked out with pen and paper in the 1920s and have not budged since.
+
+Which leaves a much better question than "is it a good flier". If the layout costs something — and it does — then the animal is paying that cost to buy something else. So: what?
+
+## The question the wings ask
+
+Start with what the films and their official material actually establish, because the anatomy is unusually specific and it constrains the answer.
+
+The Nightwraith has four fully developed lifting surfaces, arranged as a close-coupled tandem pair, and the rear pair are not trim tabs. They are driven — a separate pelvic muscle girdle beating them through a real stroke, capable of pitching, changing dihedral, and sweeping fore and aft independently of the front pair. The animal has no walking hind limbs at all; the ancestral rear legs have been absorbed into the aft-wing structure, which is why it perches on cliffs rather than standing on ground. A hyper-ossified horn projects forward from the skull and is used as a wedge, smashing open hollow trunks and rock fissures to flush prey. Its colouring is charcoal, ash-grey and dark crimson, which is camouflage against basalt and plume rather than against forest, and its eyes carry the reflective layer of an animal that hunts in low light.
+
+Canon is also specific about where it hunts, and this turns out to matter more than any measurement. The Nightwraith works *inside* things: broken canopy, root tangles, fractured basalt cliffs, low-visibility ash plumes. It does not soar high thermals. Over open ground it hunts by sudden directional jinks that cut an individual out of a travelling group. It dominates both banshee species in a direct contest over a kill, and yields only to the great leonopteryx, which owns the open high air.
+
+<Callout variant="note" title="What the films do not say">
+Canon never gives the Nightwraith a mass. Estimates in the 280–380 kg range come from scaling it against the ikran's twelve-to-fourteen-metre span and the leonopteryx's twenty-five-plus, which puts the Nightwraith's own span somewhere around fourteen to sixteen and a half metres. That is reasoning, not a fact handed down — and every number downstream of it inherits the uncertainty. Nor does canon say whether the two wing pairs beat together or in opposition, which is, inconveniently, the most interesting question one could ask about the animal.
+</Callout>
+
+There is one more piece of evidence, and it belongs in a category of its own. The people who built this creature have said what they were referencing: the animation team worked from high-speed footage of dragonflies, and rigged all four wings with independent articulation specifically so the animal could perform pitch reversals and hover-stops that a single wing pair could not sell. That is a real statement about the design, not a fact about Pandoran biology — a Nightwraith does not have four wings *because* animators liked dragonflies. But it is a useful hint about what the shape is *for*, and it happens to point at exactly the physics we need.
+
+So. Four wings. Let us find out what they cost.
+
+## The tax nobody mentions
+
+To see the problem you have to be slightly more careful than usual about what a wing actually does, and <ChapterRef slug="why-banshees-get-to-be-big" /> already did the careful part: a wing holds a body up by throwing air *downward*, and the air, shoving back, holds the animal up. That is the whole mechanism. Nothing else.
+
+Follow the consequence. If the wing is throwing air downward, then behind the wing there is a region of air that is *moving downward*. It is not a subtle effect and it is not optional — it is the exhaust of the lift-making process, as inseparable from flight as the wake behind a boat. The formal name is <GlossaryTerm slug="downwash">downwash</GlossaryTerm>, and it drags a sinking sheet of air behind every wing that has ever generated lift.
+
+Now put a second wing in it.
+
+<DiagramFigure
+  src="/images/chapters/the-aerial-arms-race/fig-02-the-air-the-second-wing-gets.webp"
+  alt="A side-on cutaway showing a front wing section with the airflow behind it bending downward into a sinking sheet, and a second wing section positioned within that sinking flow, its own oncoming air arriving at a shallower angle, drawn as pale flowing lines against darkness"
+  labels={[
+    { x: 8, y: 32, side: "right", label: "Undisturbed laminar inflow", note: "Clean level air entering the front airfoil" },
+    { x: 28, y: 38, side: "left", label: "Front lifting wing", note: "Generates lift by deflecting airflow downward" },
+    { x: 50, y: 48, side: "right", label: "Induced downwash", note: "Descending exhaust flow unavoidable behind a lifting wing" },
+    { x: 70, y: 64, side: "right", label: "Rear wing in downwash", note: "Operates in sinking wake: reduced lift, increased drag" }
+  ]}
+  figNo="02"
+  caption="The problem in one picture. The front wing does its job by pushing air down — so the air arriving at the second wing is already travelling downward. The rear surface therefore meets the flow at a shallower angle than its own geometry suggests: same wing, same posture, less lift, more drag. Nothing is wrong with the second wing. It is simply flying in used air."
+  tier="real_science"
+/>
+
+The rear surface meets air that is already going down. From its point of view the oncoming wind is tilted, which means its effective angle to the flow is smaller than the angle its own anatomy is holding it at. Same wing, same posture, less lift. And the lift it does make is tilted backwards along with the flow, which converts part of it from *holding the animal up* into *dragging the animal back*.
+
+That backward-leaning component has a name and it is the central quantity of the whole chapter: <GlossaryTerm slug="induced-drag">induced drag</GlossaryTerm>, the drag you pay purely for the privilege of making lift. Every wing pays it. Its size depends, crucially, not on wing *area* but on wing *span* — long wings are cheap, short wings are expensive, and the penalty rises with the square of the lift you ask for.
+
+Which is why the <GlossaryTerm slug="tandem-wing">tandem arrangement</GlossaryTerm> loses. Two wings of span *b*, one behind the other, are not equivalent to one wing of span *2b*. They are closer to being equivalent to one wing of span *b* carrying twice the load — the worst possible outcome — with double the surface area dragging through the air on top of it. Ludwig Prandtl's group worked out the interference arithmetic a century ago, and it hinges on a single number describing how badly the two surfaces spoil each other's flow.
+
+Here is where it gets genuinely counterintuitive, and it is the one result I would like you to keep. Max Munk proved in 1923 that sliding the two surfaces *fore and aft* barely changes the total induced drag at all. Stagger is nearly free — and nearly useless. What actually matters is the *vertical* gap. Pull the surfaces apart in the direction the downwash is travelling and the interference decays; leave them level and it goes to its maximum, no matter how far apart you stretch them along the body.
+
+<TandemWingInterference
+  caption="Munk's stagger theorem, made draggable. Move the rear wing backwards and watch the drag bar refuse to care. Move it upward — out of the sinking air — and watch the penalty collapse. The intuition that the two wings need room from each other is right; the intuition about which direction that room lies in is wrong. Note also the bar that never disappears: even at their best, a pair of wings cannot reach what one long wing of the same total span achieves."
+/>
+
+Real aircraft have paid this bill in public. Henri Mignet's Flying Flea, a tandem-wing homebuilt of the 1930s, killed a number of its pilots in an unrecoverable pitch-down: at high angles the forewing's downwash swept across the rear wing, the rear wing lost its lift abruptly, and the aeroplane tucked under with no way back. The layout was not merely inefficient. Coupled wrongly, it was lethal.
+
+<DiagramFigure
+  src="/images/chapters/the-aerial-arms-race/fig-03-gap-beats-stagger.webp"
+  alt="A two-panel comparison against darkness. In the left panel two wing sections sit almost level with each other but far apart along the direction of flight, both immersed in the same sinking sheet of pale flowing air. In the right panel the same two sections sit close together along the flight direction but widely separated vertically, the upper one clearly above and clear of the sinking sheet"
+  labels={[
+    { x: 12, y: 47, side: "right", label: "Horizontal stagger alone", note: "Long fore-and-aft separation still remains inside the downwash" },
+    { x: 36, y: 55, side: "right", label: "Trapped rear airfoil", note: "Rear wing encounters turbulent, sinking wake (purple)" },
+    { x: 67, y: 34, side: "left", label: "Vertical gap separation", note: "Large vertical clearance lifts upper wing out of interference" },
+    { x: 67, y: 66, side: "left", label: "Clean independent flow", note: "Both surfaces meet undisturbed air for maximal efficiency" }
+  ]}
+  figNo="03"
+  caption="The same two wings, moved two different ways. On the left they have been slid far apart along the body — a great deal of separation, and almost no benefit, because the rear wing is still sitting in sinking air. On the right they have barely any fore-and-aft separation but a wide vertical gap, and the rear wing is flying in clean flow. Munk proved this in 1923: it is the vertical distance that buys anything. The intuition that the wings need room is right. The intuition about which direction is wrong."
+  tier="real_science"
+/>
+
+<Callout variant="insight" title="Why more wing is not more flight">
+Add a second lifting surface behind the first and it flies in the first one's downwash: less lift, more induced drag, and a coupling between the two that can bite. Two wings of span *b* never approach one wing of span *2b*. Anything with a tandem layout is therefore not optimised for cruising economy, because on that measure it has already lost. It must be optimised for something the long single wing cannot give.
+</Callout>
+
+## How a dragonfly gets away with it
+
+And yet dragonflies exist, have existed for something like three hundred million years, and are among the most formidable aerial hunters on Earth — catching prey in flight with success rates that shame most birds. They have four wings. They are not doing badly.
+
+The resolution is that the arithmetic above quietly assumed something false. It assumed the wings are *fixed*. Two rigid surfaces bolted to a fuselage have no choice about the wake they sit in. Two surfaces that *beat* have a control the aeroplane never had: **when**.
+
+<DiagramFigure
+  src="/images/chapters/the-aerial-arms-race/fig-04-the-dragonfly-answer.webp"
+  alt="Three stacked studies of the same four-winged insect body in flight, in the first both wing pairs sweep down together, in the second the rear pair trails a quarter-beat behind and passes through two faint rings of swirling air shed by the front pair, in the third the pairs beat in exact opposition, one up and one down"
+  labels={[
+    { x: 52, y: 16, side: "left", label: "In-phase beating (top)", note: "Both wing pairs beat together: maximum thrust, high peak power" },
+    { x: 42, y: 50, side: "left", label: "Phase-lag stroke (middle)", note: "Hindwing lags by 90° to intercept shed energy" },
+    { x: 55, y: 57, side: "right", label: "Harvested vortex ring", note: "Spinning vortex shed by front wing boosts hindwing lift" },
+    { x: 50, y: 84, side: "left", label: "Anti-phase hover (bottom)", note: "Opposed strokes cancel body pitch for steady hovering" }
+  ]}
+  figNo="04"
+  caption="The same animal, three different flights. Beating together (top) gives the hardest single shove and costs the most. A quarter-beat behind (middle), the rear pair passes through the swirl the front pair threw off and takes energy back out of it. In opposition (bottom), the shoves cancel and the body stops bouncing. A dragonfly switches between these within a single pursuit — and none of it is available to a wing that cannot choose its own timing."
+  tier="real_science"
+/>
+
+Measure a dragonfly and you find it running three distinct settings of the phase lag between its forewings and its hindwings, each doing a different job. Beating in phase, both pairs together, produces the largest peak force — good for launching, for a vertical break, for the instant a hunt turns into a fight — and costs the most power, because all four surfaces are fighting the same air in the same instant. Beating in exact opposition, one pair up while the other goes down, cancels the vertical shoves against each other so the body stops bouncing; the peak force is the lowest of the three, but the animal becomes a *steady platform*, which matters a great deal if you are trying to keep your eyes locked on something small and evasive.
+
+And in between, at roughly a quarter of a cycle of lag, something better than either happens. The forewing sheds a mass of swirling air at the end of its stroke, and that swirl contains real kinetic energy — energy the animal has just paid for and would otherwise abandon. If the hindwing arrives at the right moment, it flies *through* that swirl and takes some of it back. Bomphrey and colleagues measured the saving at up to about a fifth of the aerodynamic power of hovering. This is <GlossaryTerm slug="wake-recapture">wake recapture</GlossaryTerm>, and it is the reason the tandem layout is not a dead end in biology the way it largely was in aviation. Biology's answer to the interference penalty was never a cleverer wing arrangement. It was better timing.
+
+<WingPhaseController
+  caption="The dial a four-winged animal owns and a biplane does not. Sweep the lag from zero to a hundred and eighty degrees and watch three different animals emerge from one body: the launcher, the cruiser, the gun platform. The middle setting is the one that undoes the penalty of the previous figure — and it exists only because these wings can choose when to beat, not merely where to sit."
+/>
+
+Now the honest part, and it is a real constraint on how far the dragonfly reading can be pushed.
+
+All of that unsteady machinery — the swirl harvesting, and above all the <GlossaryTerm slug="leading-edge-vortex">leading-edge vortex</GlossaryTerm> that insects park on top of their wings to get lift coefficients no fixed aerofoil can touch — depends on being small. The relevant measure is the <GlossaryTerm slug="reynolds-number">Reynolds number</GlossaryTerm>, which compares the momentum in a flow against its stickiness. A dragonfly flies at a few thousand: sticky enough that a vortex sitting on the wing stays put, held in place by viscosity. A sixteen-metre animal moving at forty-odd metres per second through Pandora's dense air is somewhere around ten million. At ten million, viscosity has stopped helping. A leading-edge vortex at that scale does not sit politely on the wing; it bursts into turbulence and takes the lift with it.
+
+<Callout variant="warning" title="Where this argument stops">
+A Nightwraith is not a scaled-up dragonfly, and any account that treats it as one is wrong on the physics. The *phase* trick — choosing when the rear pair beats — is scale-tolerant, because it is about timing and geometry rather than about viscosity holding a vortex down. The vortex trick is not. Whatever a sixteen-metre four-winged animal does to control flow at high angles must be some other mechanism: flexing camber, spanwise bleed, sweep. Canon does not say, and neither will I.
+</Callout>
+
+## The bargain: stability against agility
+
+So the phase dial explains how a tandem flier survives the drag bill. It does not yet explain why an animal would *choose* the layout. For that we need the second half of the trade, and it is the half that sounds like engineering but is really about temperament.
+
+Every flying body has two points that matter. One is its centre of mass. The other is the point where an unexpected gust of lift effectively acts — the neutral point. The distance between them, measured in wing chords, is the <GlossaryTerm slug="static-margin">static margin</GlossaryTerm>, and it decides the animal's entire personality in the air.
+
+Put the mass well ahead of the neutral point and the body becomes self-righting. Knock the nose up and the geometry generates a moment pushing it back down; the flier returns to where it was without being asked. This is restful, forgiving, and exactly what you want in a long-distance cruiser that would like to hold a heading for six hours while its pilot attends to other things.
+
+It is also, precisely, what fights you. The restoring moment does not distinguish between a gust it should cancel and a turn the animal *wants*. Every deliberate input has to overpower the same self-righting tendency, which means larger control deflections, more drag spent holding the body bent, and a slower response.
+
+<DiagramFigure
+  src="/images/chapters/the-aerial-arms-race/fig-05-the-balance-point.webp"
+  alt="Two side profiles of the same dark winged body stacked against deep indigo. In the upper one a small glowing point sits well forward of a hollow ring further back, and a curved arrow shows the nose being pushed back down. In the lower one the glowing point has moved behind the ring, and the curved arrow now runs the other way, showing the nose continuing to rise"
+  labels={[
+    { x: 29, y: 28, side: "left", label: "Forward center of gravity", note: "Cyan mass ahead of neutral point produces passive stability" },
+    { x: 8, y: 18, side: "right", label: "Self-righting pitch moment", note: "Restores trim automatically but resists rapid pitch maneuvers" },
+    { x: 48, y: 73, side: "right", label: "Aft center of gravity", note: "Pink mass behind neutral point creates dynamic instability" },
+    { x: 8, y: 62, side: "right", label: "Divergent pitch response", note: "Rapidly amplifies pitch rate for instantaneous combat turning" }
+  ]}
+  figNo="05"
+  caption="The whole bargain in two profiles. Above: the mass sits ahead of the point a gust acts on, and every disturbance is answered by a moment pushing the nose back — safe, restful, and reluctant. Below: the mass has moved behind that point, and the same disturbance now grows. The lower animal is far harder to fly and turns far faster. Fighter designers deliberately chose the lower one and hired a computer to hold it steady."
+  tier="real_science"
+/>
+
+<StaticMarginTrade
+  caption="One dial, two personalities. Slide the mass forward and the body rights itself after every disturbance — comfortable, forgiving, and reluctant to do anything sudden. Slide it back past the balance point and the same disturbance now grows instead of fading: the nose swings faster than any stable body could manage, and the animal must correct continuously to point anywhere at all. Neither end is a defect. They are answers to different questions."
+/>
+
+Slide the mass rearward and the restoring moment shrinks, reaches zero, then reverses. Past that point a nudge to the nose *grows* rather than fading. The body will not hold a heading; it must be actively flown, every second. In exchange it pitches far faster than any stable configuration could, because nothing is resisting the input.
+
+Aerospace engineers named this relaxed static stability and then, remarkably, went out and *chose* it. The Typhoon, the Gripen, the F-22 all fly with their centre of mass at or behind the neutral point, deliberately near-unstable in pitch, with a flight-control computer making thousands of corrections a second to keep the thing pointed where the pilot asked. The instability is not a flaw they tolerated. It is the feature they paid for, and the computer is the price.
+
+Which reframes the Nightwraith's four wings entirely. Four independently articulated surfaces, each with its own moment arm, can generate large pitching and rolling moments *without* any single surface being pushed to an extreme angle where its flow separates. Differential pitch between fore and aft pairs is a pure pitch command. Asymmetric sweep couples roll and yaw. And because the total lifting area is packed into a short span rather than stretched across a long one, the body's resistance to rolling — which grows with the square of span — is far lower than a soarer's. Short span, many surfaces, high moments: this is a configuration built to change where it is pointing, quickly, over and over.
+
+<Callout variant="science" title="Why a long wing cannot knife-fight">
+Rolling resistance scales with the square of span. A three-and-a-half-metre albatross wing is superbly efficient and almost impossible to flick; the same mass of wing packed into two short pairs rolls several times faster for the same effort. This is not a small effect and it is not negotiable — it is why no high-aspect-ratio soarer, on any world, is also an agile close-quarters fighter. You may have the efficient wing or the fast one.
+</Callout>
+
+## What agility actually measures
+
+"Agile" is a word that does no work. Fortunately the aerospace world was forced to make it quantitative, because the question *whose aeroplane wins* had money and lives attached, and what came out of that is a small set of numbers that apply just as well to an animal.
+
+Start with the <GlossaryTerm slug="load-factor">load factor</GlossaryTerm> — the lift the wing is making divided by the weight it is holding, the quantity spoken of as *g*. Level flight is one. To turn, the wing must make more than the weight, because part of the lift is now bending the path rather than merely opposing gravity: a sixty-degree bank already needs double. Turn radius and turn rate both follow directly from load factor and speed, and they pull in opposite directions — for a given *g*, going faster widens the circle.
+
+Which sets up two walls. At low speed the wing is the constraint: pull any harder and it stalls, so more speed buys a tighter turn. At high speed the wing could pull harder but the *body* cannot — bone, membrane and blood vessels all have a ceiling — so from there on more speed only makes the circle bigger. The two walls meet at one airspeed, and at that airspeed the animal turns tightest and fastest it ever will. Fighter pilots call it <GlossaryTerm slug="corner-speed">corner speed</GlossaryTerm> and spend their careers trying to live near it.
+
+<TurnEnvelopeDiagram
+  caption="Agility, drawn. The rising left-hand edge is the wing running out of lift; the flat ceiling is the body running out of tolerance; the sharp bend where they meet is corner speed — the tightest, fastest turn this animal owns. Switch worlds and the whole envelope moves: Pandora's thicker air and lighter gravity hand the same body a tighter turn without changing a single gene. Switch flyers and watch the albatross fail to compete at all."
+/>
+
+Two things in that figure deserve saying out loud.
+
+The first is the world switch. Pandora's air is about a fifth denser than Earth's and its gravity about four-fifths as strong, and both dials push the same way. Lighter weight means less wing loading; denser air means more lift per unit of speed. Run the arithmetic and the same animal, unchanged, gets a minimum turn radius about seventeen per cent tighter and a stall speed about eighteen per cent lower simply by being on Pandora rather than Earth. <ChapterRef slug="why-banshees-get-to-be-big" /> used those two dials to explain how a banshee is permitted to be *large*. They also, quietly, permit it to be *sharp*.
+
+The second is the dashed line inside the solid one. The outer boundary is what the animal can snatch for a moment, trading speed for turn — and while it is out there it is bleeding energy fast. The inner boundary is what it can *hold*, where muscle power still covers the drag bill. The gap between them is the difference between a manoeuvre and a strategy, and John Boyd built a whole theory of air combat on the quantity that measures it: <GlossaryTerm slug="specific-excess-power">specific excess power</GlossaryTerm>, the power left over after drag is paid, available for climbing, accelerating, or holding a hard turn.
+
+<ChapterRef slug="why-banshees-get-to-be-big" /> arrived at the edge of this idea and left it there — it noted that a flier below its power ceiling has "surplus left over, for climbing, for turning hard, for carrying prey." That surplus is exactly Boyd's number. An interceptor spends it recklessly in short bursts to force a capture, accepting that it will be slow and low on options afterwards. A long-range pursuer cannot afford to; it lives near zero and wins by outlasting. These are not two grades of the same animal. They are two different animals, and the wings tell you which is which.
+
+<DiagramFigure
+  src="/images/chapters/the-aerial-arms-race/fig-06-the-turn-that-decides.webp"
+  alt="Two large winged shapes in a tight spiral against a dim ash-hazed sky, the pursuing four-winged one overshooting wide while the pursued one cuts inside it on a visibly smaller circle, faint spiralling trails of disturbed air marking both paths"
+  labels={[
+    { x: 66, y: 45, side: "left", label: "Heavy high-speed pursuer", note: "Carried wide into a large turning radius by momentum" },
+    { x: 35, y: 53, side: "right", label: "Agile inside cutter", note: "Slower flyer executing a tight inside-radius turn" },
+    { x: 22, y: 30, side: "right", label: "Vapor vortex arc", note: "Visualizes the wide arc dictated by high flight speed" },
+    { x: 12, y: 84, side: "right", label: "Volcanic terrain below", note: "Low clearance demands razor-sharp turn control" }
+  ]}
+  figNo="06"
+  caption="The only measurement that settles an encounter. Neither animal here is winning on speed — the one being chased is slower. It is winning on radius: by turning inside its pursuer it forces the faster animal to fly a wider circle and arrive where it no longer matters. This is why the fastest flyer does not win a pursuit, and why an arms race in the air is fought in degrees per second rather than kilometres per hour."
+  tier="inference"
+/>
+
+<WhatThisMeans title="The idea to carry out of the sky">
+You can read a flying thing's job off its wings, and you do not need to be told which animal it is. Long narrow wings with a light load mean efficiency and patience: a soarer, a traveller, something that wins by not spending. Short wings with a heavy load and lots of separate control surfaces mean the opposite bargain: expensive to fly, murderous to be near, built to change direction rather than to keep going. High load and moderate span means speed and the ability to survive pulling out of a dive. This mapping — wing shape onto way of life — is one of the most reliable patterns in the biology of flight, and it works on aircraft too. Next time you see a wing, ask what it gave up. The answer is usually written on it.
+</WhatThisMeans>
+
+## Reading a wing
+
+The pattern in that box has a name in biology — the study of how <GlossaryTerm slug="ecomorph">ecomorph</GlossaryTerm> maps onto habit — and it works because the two numbers that describe a planform are the two numbers that matter aerodynamically. <GlossaryTerm slug="aspect-ratio">Aspect ratio</GlossaryTerm> tells you how much wing you have relative to its span, and therefore how cheaply you make lift. <GlossaryTerm slug="wing-loading">Wing loading</GlossaryTerm> tells you how hard each square metre works, and therefore how slowly and tightly you can fly.
+
+<DiagramFigure
+  src="/images/chapters/the-aerial-arms-race/fig-07-reading-a-wing.webp"
+  alt="Four wing silhouettes arranged in a row against darkness, from left to right a very long narrow ocean-soaring wing, a broad rounded short forest-hunting wing, a swept pointed high-speed wing, and a compact four-surface arrangement of two short paired wings, each rendered as a pale form on deep indigo"
+  labels={[
+    { x: 13, y: 48, side: "right", label: "High-aspect soarer", note: "Long narrow wings optimize lift-to-drag for effortless cruising" },
+    { x: 37, y: 52, side: "right", label: "Low-aspect clutter hunter", note: "Broad rounded wings enable slow, tight forest maneuvering" },
+    { x: 63, y: 52, side: "left", label: "Swept stoop specialist", note: "Pointed wings survive extreme dive velocities and pull-outs" },
+    { x: 86, y: 55, side: "left", label: "Tandem four-wing array", note: "Shorter span buys instant multi-axis control authority" }
+  ]}
+  figNo="07"
+  caption="Four answers to the same air. The long narrow wing buys efficiency and cannot turn; the broad rounded one buys slow-speed control inside clutter; the swept one buys dive speed and the strength to pull out. The four-surface arrangement on the right gives up the efficiency of all three to buy something none of them has: the ability to point somewhere else, immediately, again and again."
+  tier="real_science"
+/>
+
+Plot Earth's fliers on those two axes and they sort themselves. Albatrosses and frigatebirds land in the high-aspect-ratio corner: lift-to-drag ratios past twenty, turn radii measured in tens of metres, animals that essentially cannot manoeuvre and do not need to. Accipiter hawks and forest owls land in the low-aspect, low-loading corner: slow, tight, built to thread trunks. Falcons sit at moderate aspect and high loading, which is the stoop specialist's signature — enormous terminal speed and the structure to survive the pull-out.
+
+Now place the Nightwraith. Not by measuring it, which canon will not let us do, but by asking what shape answers the environment it demonstrably hunts in. Broken canopy. Root tangles. Basalt fissures. Ash plumes with convective turbulence and abrasive grit suspended in them. That environment is hostile to exactly one thing: a long delicate wing. Gusts load a high-aspect-ratio spar brutally, and a long span in a fissure hits rock. The environment is *kind* to the opposite arrangement — short span, high control authority, many surfaces, a body that can be pointed somewhere else before the gust finishes arriving.
+
+The four wings, in other words, are not a better answer to the question the ikran is answering. They are the correct answer to a different question, asked in a place the ikran does not go. That is the whole reading, and it is why the animal is not simply an upgrade.
+
+## The race, not the racer
+
+There is one thing left, and it is the part the chapter's title actually promises. An animal shaped like this does not arise because a niche is empty. It arises because something else was already winning, and every generation of that winning applied pressure.
+
+<ChapterRef slug="the-hunters-and-the-hunted" /> set the frame out plainly and I will not improve on it: <GlossaryTerm slug="coevolution">predator–prey coevolution</GlossaryTerm> drives both sides to extremes across deep time, each adaptation on one side selecting for a counter on the other, and *neither side ever wins — that is the point; the race is the equilibrium*. What that chapter established in general, this one can make specific, because flight is where the arms race leaves the most legible receipts.
+
+<DiagramFigure
+  src="/images/chapters/the-aerial-arms-race/fig-08-the-race-not-the-racer.webp"
+  alt="A dark night sky in which a small winged insect drops in a sudden spiral dive while a larger winged hunter sweeps past the point the insect just vacated, faint concentric arcs spreading outward from the hunter's head to suggest sound travelling ahead of it"
+  labels={[
+    { x: 33, y: 33, side: "right", label: "Ultrasound hunter", note: "Emits directional acoustic pulses to detect prey in darkness" },
+    { x: 62, y: 32, side: "left", label: "Expanding acoustic wavefront", note: "Spherical sound pulse reveals hunter's position early" },
+    { x: 70, y: 78, side: "left", label: "Evasive diving moth", note: "Detects ultrasound and drops out of sky to escape" },
+    { x: 55, y: 56, side: "left", label: "Reaction distance gap", note: "The narrow sensory-motor window determining survival" }
+  ]}
+  figNo="08"
+  caption="The cleanest arms race Earth has on record, and it happens in the dark. The hunter calls; the moth hears the call and drops before the hunter arrives; some moths answer the call with noise of their own; some hunters have gone quiet to get inside the moth's hearing. Every round is measurable, and no round is final. The escalation is the stable state."
+  tier="real_science"
+/>
+
+The best-documented case is not visual at all. Bats evolved ultrasonic <GlossaryTerm slug="echolocation">echolocation</GlossaryTerm> to find insects in the dark. Noctuid and erebid moths evolved ears tuned specifically to bat search frequencies, wired to trigger an immediate power-off dive. Some tiger moths went further and evolved clicking organs that actively jam the bat's ranging — Corcoran and colleagues demonstrated the jamming directly, which is a remarkable thing to be able to say about an insect. And some bats answered *that* by going quiet, whispering their calls at amplitudes too low to trip a moth's ear until it is already too late. Four rounds, each measurable, none final.
+
+This is <GlossaryTerm slug="escalation">escalation</GlossaryTerm> proper — both sides genuinely improving in absolute capability, not merely swapping the advantage back and forth — and the crucial thing about it is that it is *lopsided*. Dawkins and Krebs made the point with a phrase already used here: the <GlossaryTerm slug="life-dinner-principle">life-dinner principle</GlossaryTerm>. A rabbit that fails is dead; a fox that fails is hungry. Selection therefore presses harder on escape than on capture, and the prediction is that prey out-invest predators in the machinery of the chase. Which is not a comfortable result for a chapter about an apex predator. It means the Nightwraith's terrifying agility is not evidence of dominance. It is evidence of *pressure* — of a very long argument with things that got away.
+
+Read Pandora's aerial guild that way and it stops being a bestiary. The leonopteryx owns the open high air, where mass and span win. The ikran is the generalist cruiser, efficient across long distances between mountains. The Nightwraith took the one remaining space — low, cluttered, turbulent, dark — and paid for it in cruise efficiency, which is the currency you spend if you never intended to travel far. Three animals, three different bargains with the same air. None of them better. Each of them the correct answer to a question the others are not asking.
+
+<Comparison
+  left={{
+    title: "The ikran's bargain",
+    children: "One large wing pair, longer span, one control surface set. Cheap to fly, comfortable, self-righting, good for hours of covering ground between mountains. Loses a close-quarters contest to something with half its patience and twice its control authority — and canon shows it losing exactly that contest.",
+  }}
+  right={{
+    title: "The Nightwraith's bargain",
+    children: "Four driven surfaces, shorter span, low rolling inertia, high moment authority. Expensive to fly and poor at travelling. Superb at the one thing that decides an encounter inside a plume or a root tangle: being somewhere else, pointing a different direction, before the other animal has finished committing.",
+  }}
+/>
+
+## Honest edges
+
+<ConfidenceMeter
+  classification={{ canon_pct: 14, inference_pct: 20, speculation_pct: 8, real_science_pct: 58 }}
+/>
+
+The solid ground here is aerodynamics and it is very solid indeed. Downwash and induced drag, Prandtl's biplane interference, Munk's stagger theorem, the static-margin trade and relaxed static stability, load factor and corner speed and Boyd's excess-power framing, the dragonfly phase measurements, the Reynolds-number ceiling on insect-scale vortex tricks, the wing-shape-to-lifestyle mapping, and the bat-moth arms race — all of it is published, measured, and none of it invented for this book.
+
+The canon is the animal's anatomy and its habits: four independently driven wings, no walking hind limbs, the rostral horn, the clutter-and-plume hunting, its dominance over both banshees and its deference to the leonopteryx, and Varang's coercive <GlossaryTerm slug="tsaheylu">tsaheylu</GlossaryTerm> — a bond established by neurological domination rather than the mutual partnership the forest clans practise.
+
+The inference — the bridge this chapter builds rather than reports — is the central reading: that the four-wing layout is a control-authority adaptation rather than a lift or efficiency one, and that the ash-plume environment is what selected for it. That reading is well-supported by the physics and consistent with everything canon shows, but canon never frames the animal in aerodynamic terms at all.
+
+And one category needs flagging separately, because it is easy to mistake for canon and is not. The dragonfly reference is **production commentary** — a statement by the people who made the film about what they looked at while animating it. It is genuinely useful evidence about intent, and it happens to align beautifully with the physics. It is not a fact about Pandoran biology, and I have tried not to let it become one. Meanwhile the specific numbers circulating for the animal's mass and span come from statue scaling and community reconstruction, not from the films or their companions; they are the best brackets available, and they are brackets, not measurements.
+
+<ClaimAudit
+  rungs={[
+    {
+      level: "A tandem layout costs cruise efficiency",
+      claim: "Two lifting surfaces in line cannot match one long wing of the same total span, because the rear surface flies in the front one's downwash.",
+      verdict: "well-supported",
+      evidence: "Prandtl's biplane interference theory and Munk's stagger theorem are century-old results, confirmed in wind tunnels and in the service record of real tandem-wing aircraft.",
+      caution: "The magnitude depends on the gap-to-span ratio, which for the Nightwraith is estimated from screen appearance rather than measured.",
+    },
+    {
+      level: "The Nightwraith is built for control, not economy",
+      claim: "Four driven surfaces in a short span buy pitch and roll authority and low rolling inertia, at the cost of lift-to-drag ratio.",
+      verdict: "well-supported",
+      evidence: "The trade is standard flight mechanics and matches canon exactly: an animal that hunts inside clutter and plumes, avoids high thermal soaring, and wins close encounters.",
+      caution: "This is a reading of the animal, not a claim canon makes. No official source describes the Nightwraith aerodynamically.",
+    },
+    {
+      level: "The wing pairs use phase control like a dragonfly",
+      claim: "The animal shifts the lag between fore and aft pairs to trade peak force, economy, and platform steadiness.",
+      verdict: "contested",
+      evidence: "The mechanism is measured in real Odonata, the animators referenced dragonflies directly, and independently driven pairs are exactly what phase control requires.",
+      caution: "Canon never states the phase relationship, and the insect-scale vortex mechanisms that accompany phasing in dragonflies do not survive scaling to sixteen metres. The timing argument may transfer; the vortex argument does not.",
+    },
+    {
+      level: "Prey out-invest predators in the chase",
+      claim: "Because failure costs the prey its life and the predator only a meal, escape machinery is under stronger selection than capture machinery.",
+      verdict: "demonstrated-under-conditions",
+      evidence: "The life-dinner principle is a standard and well-cited result, with the bat-moth system as the clearest measured case.",
+      caution: "It is an argument about relative selection pressure, not a guarantee about any single encounter — and applying it to Pandoran fauna assumes their populations behave broadly like Earth's.",
+    },
+  ]}
+/>
+
+<OpenQuestions
+  title="What the sky still will not say"
+  items={[
+    {
+      question: "Do the two wing pairs beat together or in opposition?",
+      answer: "This is the single most interesting unanswered question about the animal, and canon is silent. The three phase settings are three different animals — a launcher, a cruiser, a gun platform — and knowing which one it defaults to would settle whether it is primarily an interceptor or primarily an ambusher.",
+    },
+    {
+      question: "How is the skeleton packed?",
+      answer: "Two massive wing roots, adjacent along a short body, both beating hard, without the muscle groups interfering with each other, is a genuinely difficult piece of anatomy. No official cross-section exists. It is the sort of gap where the honest answer is that the problem is real and unsolved rather than that the solution is obvious.",
+    },
+    {
+      question: "What does it actually weigh?",
+      answer: "Never stated. Every quantitative claim about its turn performance scales with mass, so the whole agility argument rests on a bracket inferred from scaling it against the ikran and the leonopteryx. A factor-of-two error in mass would move the numbers substantially, though not the direction of the argument.",
+    },
+    {
+      question: "Is the four-wing plan ancient or recent?",
+      answer: "Pandoran vertebrates are ancestrally six-limbed, and the ikran got to four wings by committing two limb pairs to flight while keeping a reduced rear stabiliser pair. Whether the Nightwraith is a relict that kept four full wings all along, or a later lineage that re-enlarged vestigial rear surfaces, is unaddressed — and it would change whether we are looking at the old design or the new one.",
+    },
+    {
+      question: "How does it survive its own hunting ground?",
+      answer: "Ash plumes are abrasive and hot. Whatever protects its eyes and airways from suspended silicate is uncharacterised in official material, and it is not a trivial requirement — grit at flight speed is a sandblaster.",
+    }
+  ]}
+/>
+
+## Back in the plume
+
+Go back to the shape coming out of the ash, and count again.
+
+Four wings, still. But the reading has inverted. They are not twice the wing and they were never twice the flight; on the only measure the eye was implicitly applying — how well does this thing fly — they are a step backwards, and a calculable one. What they are instead is a different set of priorities, made out of bone and membrane and legible from outside: a body that gave up going far in order to be very good at not being where you expected. Short span so it does not strike rock. Many surfaces so it can point somewhere else immediately. Low rolling inertia so *immediately* means immediately. And, if the dragonfly parallel holds even partly, a timing dial that lets it be a launcher one second and a steady platform the next.
+
+That is a real design, and the reason it is worth admiring is not that it is powerful. It is that it is *specific*. Somewhere in the deep time of that lineage, being fast was not enough, and being efficient was not enough, and what paid was the ability to change your mind in the air faster than something else could change its own. The animal is a record of that argument. So is the moth that drops out of the sky when it hears a bat, and so is the bat that learned to whisper.
+
+We tell ourselves that evolution produces winners. It mostly produces *answers* — each one exquisitely shaped to a question, each one making a bargain that would be foolish anywhere else. The Nightwraith's bargain is a bad one for crossing an ocean and an excellent one for a plume full of grit and something trying to get away. Pandora's sky has room for both, which is why it holds a soarer, a cruiser, and this. Watch a swift and an albatross share the same air here sometime, doing utterly different things with it, and you will recognise the arrangement. It is the same sky, answering more than one question at once.
+
+<RelatedChapters
+  slugs={[
+    "why-banshees-get-to-be-big",
+    "direhorse-and-banshee-up-close",
+    "the-hunters-and-the-hunted",
+    "the-night-ecology",
+  ]}
+  locale="en"
+/>
+
+<SourceList />

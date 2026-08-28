@@ -1,0 +1,126 @@
+slug: the-aerial-arms-race
+status: published
+title:
+  vi: Nightwraith và cuộc chạy đua vũ trang trên trời
+  en: The Aerial Arms Race
+subtitle:
+  vi: >-
+    Bốn cánh trông như một bản nâng cấp. Khí động học nói ngược lại: cặp cánh thứ hai luôn phải trả
+    giá. Câu hỏi không phải nó bay giỏi hơn hay không - mà nó được đánh đổi để giỏi việc gì.
+  en: >-
+    Four wings look like an upgrade. Aerodynamics says otherwise: a second pair always costs
+    something. The question is not whether it flies better — it is what it was traded to be good at.
+hook:
+  vi: >-
+    Ta quen nghĩ thêm cánh là thêm lực nâng. Nhưng một cánh đang nâng thân luôn để lại phía sau khối
+    khí bị đẩy xuống, và mặt cánh nào bay trong khối khí đó đều làm việc kém hơn - nên gần như không
+    con vật bay nào chọn bốn cánh để bay xa. Nightwraith của Varang chọn nó vì thứ khác: quyền điều
+    khiển. Đọc được đánh đổi ấy là đọc được cả bầu trời Pandora.
+  en: >-
+    We assume more wings mean more lift. But a wing holding a body up always leaves sinking air
+    behind it, and any surface flying inside that air works less well — which is why almost nothing
+    that flies chooses four wings to go far. Varang's Nightwraith chose them for something else:
+    control. Read that trade and you can read the whole Pandoran sky.
+authors:
+  - bardabez
+tags:
+  - tandem-wing-aerodynamics
+  - flight-agility
+  - coevolution
+  - nightwraith
+  - dragonfly-flight
+  - stability-and-control
+classification:
+  canon_pct: 14
+  inference_pct: 20
+  speculation_pct: 8
+  real_science_pct: 58
+related_chapters:
+  - why-banshees-get-to-be-big
+  - direhorse-and-banshee-up-close
+  - the-hunters-and-the-hunted
+  - the-night-ecology
+  - fire-as-ecology-weapon-and-technology
+  - how-the-wind-traders-navigate-a-planet
+glossary_terms:
+  - downwash
+  - induced-drag
+  - tandem-wing
+  - aspect-ratio
+  - wing-loading
+  - wake-recapture
+  - leading-edge-vortex
+  - reynolds-number
+  - static-margin
+  - load-factor
+  - corner-speed
+  - specific-excess-power
+  - escalation
+  - coevolution
+  - life-dinner-principle
+  - ecomorph
+  - echolocation
+  - tsaheylu
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-the-shape-in-the-plume
+    role: hero
+    asset_status: ready
+  - id: fig-02-the-air-the-second-wing-gets
+    role: diagram
+    asset_status: ready
+  - id: fig-03-gap-beats-stagger
+    role: comparison
+    asset_status: ready
+  - id: fig-04-the-dragonfly-answer
+    role: diagram
+    asset_status: ready
+  - id: fig-05-the-balance-point
+    role: diagram
+    asset_status: ready
+  - id: fig-06-the-turn-that-decides
+    role: inline
+    asset_status: ready
+  - id: fig-07-reading-a-wing
+    role: comparison
+    asset_status: ready
+  - id: fig-08-the-race-not-the-racer
+    role: inline
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Avatar - Fire and Ash (2025), Lightstorm Entertainment
+  - kind: canon
+    label: Nightwraith and Varang - official Fire and Ash featurette and visual dictionary material
+    url: https://www.youtube.com/watch?v=LB3STPMb0V0
+  - kind: wiki
+    label: Varang - James Cameron's Avatar Wiki (community compilation, not canon)
+    url: https://james-camerons-avatar.fandom.com/wiki/Varang
+  - kind: science
+    label: Munk - The Minimum Induced Drag of Aerofoils (NACA Report No. 121, 1923)
+    url: https://ntrs.nasa.gov/citations/19930091235
+  - kind: science
+    label: >-
+      Wang & Russell - Effect of Forewing and Hindwing Interactions on Aerodynamic Forces and Power
+      in Hovering Dragonfly Flight (Phys. Rev. Lett., 2007)
+    url: https://dragonfly.tam.cornell.edu/publications/2007_PRL_Wang_Russell.pdf
+  - kind: science
+    label: >-
+      Bomphrey et al. - Phasing of dragonfly wings can improve aerodynamic efficiency by removing
+      swirl (J. R. Soc. Interface, 2008)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2607445/
+  - kind: science
+    label: Bomphrey et al. - Flight of the dragonflies and damselflies (Phil. Trans. R. Soc. B, 2016)
+    url: https://royalsocietypublishing.org/doi/10.1098/rstb.2015.0389
+  - kind: science
+    label: Dawkins & Krebs - Arms races between and within species (Proc. R. Soc. B, 1979)
+    url: https://royalsocietypublishing.org/doi/10.1098/rspb.1979.0081
+  - kind: science
+    label: Corcoran, Barber & Conner - Tiger moth jams bat sonar (Science, 2009)
+    url: https://www.science.org/doi/10.1126/science.1174096
+  - kind: research-note
+    label: >-
+      The Aerial Arms Race - Aerodynamic Interference, Manoeuvrability Envelopes, and Evolutionary
+      Escalation in Pandoran Aerial Guilds (chapter research note)

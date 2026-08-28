@@ -1,0 +1,19 @@
+{
+  "id": "fig-06-meissner-expulsion",
+  "chapter_slug": "floating-mountains-and-the-superconductor",
+  "role": "diagram",
+  "narrative_purpose": "Shows straight field lines bending to flow around a solid sphere, with none passing through its interior.",
+  "subject": "A solid dark sphere in the centre. A set of evenly spaced horizontal glowing lines approaches from the left. As the lines reach the sphere they bend and curve smoothly around its top and bottom, hugging its outline, and straighten out again on the right. The inside of the sphere is completely empty of lines.",
+  "scene": "Just the sphere and the parallel lines flowing around it, on a dark background. Symmetric: the same number of lines deflecting above and below the sphere.",
+  "camera": "Flat head-on side view.",
+  "light": "Flat even; the flowing lines glow on their own, the sphere is a simple dark form with a faint glowing rim.",
+  "palette": "Near-black background, glowing cyan flow lines, a faint teal rim light on the sphere, dark interior.",
+  "style": "Clean elegant schematic of thin glowing lines.",
+  "detail_level": "Smooth symmetric line curvature around the sphere; sphere a plain dark circle.",
+  "composition": "Sphere centred; lines enter left, bulge around it, exit right; clearly empty inside the sphere.",
+  "exclude": ["text", "letters", "numbers", "watermark", "photographic texture"],
+  "consistency_notes": "Thin glowing cyan lines on a near-black background, matching the chapter's schematic diagrams.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no numbers, no photorealism, no 3D bevels, no clutter, no lines inside the sphere",
+  "style_refs": ["pandora-establishing.png"]
+}

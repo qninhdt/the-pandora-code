@@ -1,0 +1,129 @@
+{
+  "viz": {
+    "dependentSpeciesLedger": {
+      "title": "Sổ nợ cư dân của một cây đại thụ ngã xuống",
+      "subtitle": "Chốt con số phải trả ngay ngày cây đổ, rồi dắt một đợt kiểm kê đi tới và xem nó dần phát hiện ra",
+      "hint": "Koh và các cộng sự nhận ra hình dạng phản ứng của một loài phụ thuộc tùy thuộc vào việc nó khó tính đến đâu: loài bắt buộc nghiêm ngặt ra đi theo tỉ lệ một đổi một cùng vật chủ, còn loài dùng được nhiều vật chủ thì cố bám trụ đến khi cả mạng lưới vật chủ sụp đổ. Tilman gọi khoảng chờ ấy là nợ tuyệt chủng — sự phá hủy xảy ra hôm nay, các vụ tuyệt chủng được trả sau, theo từng đợt. Kéo trục năm và hai con số tách nhau ra: cái mà một bìa kẹp hồ sơ ghi lại, và cái vốn đã mắc nợ từ đầu.",
+      "calibrationLabel": "Danh sách cư dân được hiệu chuẩn theo cây nào",
+      "calibration": {
+        "ash": "Tần bì châu Âu",
+        "canopy": "Cây tán rừng Panama",
+        "hometree": "Hometree"
+      },
+      "axis": {
+        "time": "Số năm sau khi cây đổ",
+        "species": "Số loài còn hiện diện"
+      },
+      "floor": "Số thật sự sống sót",
+      "barLabel": "Danh sách cư dân rốt cuộc đi về đâu",
+      "band": {
+        "safe": "Trụ được — còn đủ vật chủ khác quanh vùng",
+        "affiliates": "Loài đa vật chủ mắc nợ — sụp muộn",
+        "obligates": "Loài bắt buộc mắc nợ — mất ngay ngày cây đổ"
+      },
+      "readout": {
+        "recorded": "Một đợt kiểm kê sẽ ghi",
+        "recordedNote": "{years} năm sau khi cây đổ",
+        "doomed": "Đã mắc nợ",
+        "doomedNote": "Chốt ngay trong ngày, trả dần qua nhiều thập kỷ",
+        "paid": "Phần nợ đã trả"
+      },
+      "verdict": {
+        "early": "Gần như mọi thứ trông vẫn còn nguyên. Đây chính là đợt kiểm kê nói dối.",
+        "paying": "Các dòng dõi lần lượt tắt đi, rất lâu sau khi không còn ai theo dõi nữa.",
+        "settled": "Hóa đơn gần như đã thanh toán xong. Chỉ đến bây giờ con số mới khớp với sự mất mát."
+      },
+      "slider": {
+        "obligates": "Số loài không sống nổi trên vật chủ nào khác",
+        "hostShare": "Phần nguồn vật chủ mà riêng cây này chiếm",
+        "years": "Số năm kể từ khi cây đổ"
+      },
+      "pct": "{n}%",
+      "years": "{n} năm",
+      "aria": "Sổ nợ cư dân của một cây bị đốn hạ: {doomed} loài đã mắc nợ tuyệt chủng, trong đó một đợt kiểm kê {years} năm sau vẫn ghi nhận {recorded} loài là còn hiện diện."
+    },
+    "infectionBarrierGauntlet": {
+      "title": "Chuỗi lây nhiễm, qua từng ổ khóa",
+      "subtitle": "Thử lần lượt từng ổ khóa và xem chuỗi lây nhiễm thật sự gãy ở đâu",
+      "pairingLabel": "Cặp sinh vật nào đang gặp nhau",
+      "pairing": {
+        "sameBiosphere": "Cùng một sinh quyển",
+        "crossBiosphere": "Hai sinh quyển",
+        "avatarChimera": "Một cơ thể avatar"
+      },
+      "chainStart": "Một vi sinh vật đến",
+      "chainEnd": "Lây nhiễm thành công",
+      "tryNext": "Thử ổ khóa kế tiếp",
+      "reset": "Làm lại từ đầu",
+      "readout": {
+        "cleared": "Số ổ khóa đã mở"
+      },
+      "state": {
+        "clears": "Mở được",
+        "narrow": "Thường thất bại",
+        "unknown": "Chưa ai đo",
+        "blocked": "Không mở được",
+        "untried": "Chưa thử"
+      },
+      "lock": {
+        "exposure": {
+          "short": "Đến được",
+          "name": "Chạm đúng mô mục tiêu",
+          "detail": "Một hơi thở, một miếng ăn, một vết cắn hay vết cắt phải đưa sinh vật tới nơi nó có thể ra tay. Đậu lên lớp da lành lặn thì chưa phải phơi nhiễm."
+        },
+        "docking": {
+          "short": "Bám vào",
+          "name": "Nhận ra một bề mặt để níu lấy",
+          "detail": "Các protein bám dính, sợi pili hay vỏ virus phải khít với những phân tử cụ thể trên tế bào vật chủ. Ổ khóa này chỉ được gọt bởi lịch sử tiến hóa chung, và không gì khác gọt nổi nó."
+        },
+        "chemistry": {
+          "short": "Chịu được",
+          "name": "Sống nổi trong hóa học vật chủ",
+          "detail": "Nhiệt độ, độ axit, nồng độ muối, enzyme tiêu hóa. Một vi sinh vật sinh ra cho lớp đất ẩm mát không được dựng lên để sống trong lòng một con vật ấm nóng."
+        },
+        "replication": {
+          "short": "Nhân bản",
+          "name": "Tự sao chép bằng những gì có sẵn",
+          "detail": "Một virus vay trắng ribosome và enzyme của vật chủ. Một vi khuẩn ít nhất cũng cần những phân tử mà nó nhận ra được là thức ăn. Cỗ máy phân tử lệch nhau thì việc nhân bản chết tại chỗ."
+        },
+        "immunity": {
+          "short": "Lẩn tránh",
+          "name": "Vượt qua hàng rào phòng ngự diện rộng",
+          "detail": "Tế bào thực bào, hóa học oxy hóa và các peptide xé màng tấn công bất cứ thứ gì xa lạ. Chúng chẳng cần từng quen kẻ xâm nhập — chính vì thế chúng bắt được người lạ."
+        },
+        "transmission": {
+          "short": "Thoát ra",
+          "name": "Ra đi dưới hình thái còn sống",
+          "detail": "Một cơ thể nhiễm bệnh là đường cùng, trừ khi thế hệ sau thoát ra và chạm được tới kẻ khác. Thiếu bước này, ổ dịch có đúng một cá thể."
+        }
+      },
+      "blocked": {
+        "exposure": "Nó chưa bao giờ chạm tới mô nào để có thể làm gì. Chuỗi gãy trước cả khi bắt đầu.",
+        "docking": "Không có gì trên tế bào vật chủ khít với nó. Thiếu một lịch sử tiến hóa chung thì chẳng có tay nắm nào để níu, và mọi ổ khóa phía sau đều không thể chạm tới.",
+        "chemistry": "Hóa học nội môi của vật chủ phá hủy nó trước khi nó làm được bất cứ điều gì khác.",
+        "replication": "Nó không dùng được cỗ máy phân tử của vật chủ này, nên không tạo nổi bản sao. Một mầm bệnh không nhân bản được chỉ là một hạt vật chất, không phải một ca lây nhiễm.",
+        "immunity": "Hàng rào phòng ngự rộng và không đặc hiệu của vật chủ dọn sạch nó. Chúng chưa từng cần gặp nó trước đó.",
+        "transmission": "Nó lây được vào một cơ thể rồi không có đường ra. Đó là đường cùng, không phải một đại dịch."
+      },
+      "verdict": {
+        "start": "Chưa có gì xảy ra. Hãy mở ổ khóa đầu tiên và xem một vị khách đi được bao xa.",
+        "walking": "Đã mở được {n} ổ khóa, và từng ổ một đều phải mở theo đúng thứ tự."
+      },
+      "outcome": {
+        "sameBiosphere": "Cả sáu ổ đều mở — đó là cách một cú nhảy vật chủ diễn ra trên Trái Đất. Nhưng để ý rằng hai ổ trong số đó rất hẹp: gốc gác chung khiến điều này khả dĩ, chứ không hề dễ dàng, và phần lớn vi sinh vật vẫn không lây nhiễm được cho phần lớn giống loài.",
+        "crossBiosphere": "Không bao giờ tới được. Hai sinh quyển khởi nguồn tách biệt không chia sẻ thụ thể, không chia sẻ thủ tính phân tử và cũng chẳng chung một bộ mã di truyền, nên chuỗi gãy ngay ở bước nhận diện đầu tiên.",
+        "avatarChimera": "Không bao giờ tới được, và không phải vì câu trả lời là không. Đơn giản là chưa ai đo cả."
+      },
+      "harmTitle": "Những gì vẫn để ngỏ bất chấp mọi ổ khóa",
+      "harmLead": "Không lối nào trong số này đòi hỏi sinh vật phải sinh sản bên trong một vật chủ đang sống, nên việc trượt hết mọi ổ khóa phía trên chẳng loại trừ được lối nào. \"Không lây nhiễm được\" và \"không gây hại được\" là hai tuyên bố khác nhau.",
+      "harm": {
+        "toxin": "Độc tố mà nó mang theo",
+        "inflammation": "Cơn viêm dữ dội không đặc hiệu",
+        "necrotrophy": "Gặm nhấm mô hoại tử ở vết thương",
+        "fouling": "Làm bít một lớp màng đến mức nó ngừng hoạt động",
+        "niche": "Chiếm một hốc sinh thái mà ở đây chẳng ai phòng bị"
+      },
+      "aria": "Chuỗi rào chắn lây nhiễm: đã mở {cleared} trong {total} ổ khóa."
+    }
+  }
+}

@@ -11,10 +11,9 @@ export const CONTENT_ROOT = path.join(ROOT, "content");
 export const PUBLIC_IMAGES_ROOT = path.join(ROOT, "apps/web/public/images");
 export const ANCHORS_DIR = path.join(CONTENT_ROOT, "art-direction", "anchors");
 
-// Chapter folders carry their book-order prefix (for example
-// "4-5-pandoras-smallest-things"), while figure JSON, URLs, and public image
-// folders use the clean metadata slug ("pandoras-smallest-things"). Resolve
-// either form here so the image CLI can keep accepting the public clean slug.
+// Figure JSON, URLs, public image folders, and chapter folders all use the
+// clean metadata slug. The metadata fallback keeps image tooling tolerant of a
+// legacy prefixed workspace while a migration is in progress.
 export function resolveChapterContentDir(contentRoot: string, slug: string): string {
   const chaptersRoot = path.join(contentRoot, "chapters");
   const direct = path.join(chaptersRoot, slug);

@@ -1,0 +1,162 @@
+slug: bodies-built-for-water
+status: published
+title:
+  vi: Những cơ thể sinh ra để thuộc về biển cả
+  en: Bodies Built for Water
+subtitle:
+  vi: >-
+    Tộc Metkayina có cái đuôi mà lũ trẻ nhà Sully không thể tập mà có được. Nhưng phần lớn những gì
+    làm nên một người lặn giỏi thì lại không nằm ở chỗ đó.
+  en: >-
+    The Metkayina have a tail the Sully children cannot train into existence. But most of what makes
+    a diver is not kept there.
+hook:
+  vi: >-
+    Tsireya dạy lũ trẻ rừng cách làm chậm nhịp tim trước khi chúng kịp xuống nước, và Ronal thì bảo
+    đuôi chúng quá mảnh. Cả hai đều đúng — và khoảng cách giữa hai câu ấy chính là một trong những
+    ranh giới sắc nét nhất của sinh học: đâu là phần cơ thể ta rèn được, đâu là phần buộc phải thừa
+    hưởng.
+  en: >-
+    Tsireya teaches the forest children to slow a heartbeat before they touch the water, and Ronal
+    says their tails are too thin. Both are right — and the distance between those two sentences is
+    one of the sharpest lines in biology: which parts of a body can be trained, and which have to be
+    inherited.
+authors:
+  - bardabez
+tags:
+  - diving-physiology
+  - metkayina
+  - phenotypic-plasticity
+  - breath-hold
+  - sea-nomads
+  - biomechanics
+classification:
+  canon_pct: 12
+  inference_pct: 14
+  speculation_pct: 4
+  real_science_pct: 70
+related_chapters:
+  - pandoras-ocean
+  - the-reef-as-substrate
+  - tulkun-not-quite-whales
+  - convergent-but-not-quite
+  - squidray-and-the-deep-ocean-design-space
+glossary_terms:
+  - diving-reflex
+  - aerobic-dive-limit
+  - splenic-contraction
+  - haematocrit
+  - myoglobin
+  - boyles-law
+  - nictitating-membrane
+  - strouhal-number
+  - acclimatization
+  - phenotypic-plasticity
+  - hypercapnia
+  - partial-pressure
+  - allometry
+  - convergent-evolution
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-the-breathing-lesson
+    role: inline
+    asset_status: ready
+  - id: fig-02-two-tails-in-the-same-water
+    role: comparison
+    asset_status: ready
+  - id: fig-03-the-control-surfaces
+    role: inline
+    asset_status: ready
+  - id: fig-04-the-blood-goes-inward
+    role: diagram
+    asset_status: ready
+  - id: fig-05-where-a-body-keeps-its-oxygen
+    role: comparison
+    asset_status: ready
+  - id: fig-06-the-blood-bank
+    role: diagram
+    asset_status: ready
+  - id: fig-07-the-lung-folds-inward
+    role: diagram
+    asset_status: ready
+  - id: fig-08-thrust-on-both-strokes
+    role: diagram
+    asset_status: ready
+  - id: fig-09-the-eye-that-learned
+    role: comparison
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Avatar - The Way of Water (2022), film
+  - kind: canon
+    label: James Cameron's Avatar - The Way of Water - The Visual Dictionary (DK, 2022)
+  - kind: science
+    label: >-
+      Scholander - Experimental investigations on the respiratory function in diving mammals and
+      birds (Hvalradets Skrifter, 1940)
+  - kind: science
+    label: Irving - Respiration in diving mammals (Physiological Reviews, 1939)
+    url: https://doi.org/10.1152/physrev.1939.19.1.112
+  - kind: science
+    label: Butler & Jones - Physiology of diving of birds and mammals (Physiological Reviews, 1997)
+    url: https://doi.org/10.1152/physrev.1997.77.3.837
+  - kind: science
+    label: >-
+      Kooyman & Ponganis - The physiological basis of diving to depth (Annual Review of Physiology,
+      1998)
+    url: https://doi.org/10.1146/annurev.physiol.60.1.19
+  - kind: science
+    label: >-
+      Schagatay, Andersson, Hallen & Palsson - Role of spleen contraction in human diving response
+      (Journal of Applied Physiology, 2001)
+    url: https://doi.org/10.1152/jappl.2001.90.4.1623
+  - kind: science
+    label: >-
+      Schagatay, Richardson & Lodin-Sundstrom - Size matters: spleen and lung volumes predict
+      performance in human apneic divers (Frontiers in Physiology, 2012)
+    url: https://doi.org/10.3389/fphys.2012.00173
+  - kind: science
+    label: >-
+      Mirceta et al. - Evolution of mammalian diving capacity traced by myoglobin net surface charge
+      (Science, 2013)
+    url: https://doi.org/10.1126/science.1234192
+  - kind: science
+    label: Ilardo et al. - Physiological and genetic adaptations to diving in sea nomads (Cell, 2018)
+    url: https://doi.org/10.1016/j.cell.2018.03.054
+  - kind: science
+    label: >-
+      Gislen et al. - Superior underwater vision in a human population of sea gypsies (Current
+      Biology, 2003)
+    url: https://doi.org/10.1016/S0960-9822(03)00290-2
+  - kind: science
+    label: >-
+      Gislen, Warrant, Dacke & Kroger - Visual training improves underwater vision in children
+      (Vision Research, 2006)
+    url: https://doi.org/10.1016/j.visres.2006.05.002
+  - kind: science
+    label: Hong & Rahn - The diving women of Korea and Japan (Scientific American, 1967)
+    url: https://doi.org/10.1038/scientificamerican0567-34
+  - kind: science
+    label: Yi et al. - Sequencing of 50 human exomes reveals adaptation to high altitude (Science, 2010)
+    url: https://doi.org/10.1126/science.1190371
+  - kind: science
+    label: >-
+      Taylor, Nudds & Thomas - Flying and swimming animals cruise at a Strouhal number tuned for
+      high power efficiency (Nature, 2003)
+    url: https://doi.org/10.1038/nature02000
+  - kind: science
+    label: >-
+      Fish & Lauder - Passive and active flow control by swimming fishes and mammals (Annual Review
+      of Fluid Mechanics, 2006)
+    url: https://doi.org/10.1146/annurev.fluid.38.050304.092201
+  - kind: science
+    label: >-
+      Thewissen et al. - Whales originated from aquatic artiodactyls in the Eocene epoch of India
+      (Nature, 2007)
+    url: https://doi.org/10.1038/nature06343
+  - kind: research-note
+    label: >-
+      Comparative Diving Physiology, Aquatic Biomechanics, and Evolutionary Morphology - Metkayina
+      Functional Anatomy and the Vertebrate Adaptation Spectrum (chapter research note)

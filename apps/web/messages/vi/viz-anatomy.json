@@ -1,0 +1,156 @@
+{
+  "viz": {
+    "outgroupPolarityBench": {
+      "title": "Mốc so sánh quyết định đặc điểm nào là mới",
+      "subtitle": "Chọn một điểm khởi đầu rồi đọc lại đúng bảng điểm đó dựa trên nó",
+      "aria": "Mỗi đặc điểm hiện ra với trạng thái của mốc so sánh ở bên trái và đặc điểm mới mà nó chỉ tới ở bên phải, độ dài thanh cho biết bao nhiêu mẫu vật cùng chia sẻ đặc điểm mới đó",
+      "baselineLabel": "Chọn sinh vật làm mốc so sánh",
+      "matrixHead": "Bàn mẫu vật, đã chấm điểm",
+      "specimen": "Mẫu vật",
+      "baselineSide": "Trạng thái của mốc",
+      "noveltySide": "Đặc điểm mới nó chỉ tới",
+      "taxa": {
+        "marine": "Sinh vật biển sơ khai",
+        "ilu": "Ilu",
+        "direhorse": "Pa'li",
+        "hexapede": "Hexapede",
+        "prolemuris": "Prolemuris",
+        "navi": "Na'vi"
+      },
+      "chars": {
+        "limbs": {
+          "short": "Chi",
+          "states": {
+            "0": "Sáu chi",
+            "1": "Chi trước chẻ đôi",
+            "2": "Bốn chi"
+          }
+        },
+        "eyes": {
+          "short": "Mắt",
+          "states": {
+            "0": "Bốn mắt",
+            "1": "Hai mắt"
+          }
+        },
+        "resp": {
+          "short": "Hô hấp",
+          "states": {
+            "0": "Khe thở bên sườn",
+            "1": "Đường thở trên đầu"
+          }
+        },
+        "queue": {
+          "short": "Queue",
+          "states": {
+            "0": "Không có queue",
+            "1": "Có queue thần kinh"
+          }
+        },
+        "bone": {
+          "short": "Xương",
+          "states": {
+            "0": "Khoáng chất thuần",
+            "1": "Đan sợi carbon"
+          }
+        }
+      },
+      "kind": {
+        "synapomorphy": "Gắn {count} mẫu vật vào cùng một nhánh",
+        "autapomorphy": "Chỉ nằm ở một mẫu vật — không gom được ai",
+        "constant": "Giống nhau ở mọi nơi — không gom được ai"
+      },
+      "readout": {
+        "grouping": "Đặc điểm gom được nhóm",
+        "groupingNote": "đặc điểm mới chia sẻ, đủ để dựng một nhánh",
+        "loners": "Đặc điểm lẻ loi",
+        "lonersNote": "chỉ một mẫu vật có, nên chẳng nói lên điều gì",
+        "crest": "Huy hiệu gia tộc",
+        "crestHeld": "Còn nguyên",
+        "crestLost": "Mất dấu"
+      },
+      "verdict": {
+        "clean": "Một sinh vật rẽ nhánh từ trước khi gia tộc này hình thành sẽ cho ta chiếc la bàn trung thực: cả xương đan sợi carbon lẫn queue thần kinh đều hiện ra là đặc điểm mới mà mọi mẫu vật còn lại trên bàn đều chia sẻ, và toàn bộ tuyển tập sinh vật quy về một nhánh duy nhất.",
+        "crestLost": "Chọn một thành viên trong gia tộc làm mốc, thì chính đặc điểm của nó trở thành định nghĩa của \"tổ tiên\". Xương carbon và queue lập tức tắt ngóm — ai cũng đã có chúng, nên chúng chẳng gom được ai — và huy hiệu gia tộc biến mất khỏi bằng chứng dù chưa một điểm số nào thay đổi. Tệ hơn, những nét giải phẫu thực sự cổ xưa lại được đề bạt thành đặc điểm mới, nên cái cây hiện ra vừa tự tin vừa ngược đời."
+      }
+    },
+    "hexapodGaitSequencer": {
+      "title": "Sáu chân là một bài toán nhịp điệu",
+      "subtitle": "Thời điểm mỗi bàn chân hạ xuống quyết định điểm tựa, độ nhún và thế chống khi vào cua",
+      "ariaChart": "Biểu đồ nhịp chân cho thấy từng bàn chân trong sáu chân tiếp đất vào lúc nào suốt một sải chân",
+      "ariaBody": "Pa'li nhìn từ trên xuống với {feet} trong sáu bàn chân đang chống đất",
+      "gaitLabel": "Chọn dáng chạy",
+      "gait": {
+        "walk": "Đi bộ",
+        "trot": "Chạy nước nhỏ",
+        "gallop": "Phi nước đại"
+      },
+      "play": "Chạy sải chân",
+      "pause": "Tạm dừng sải chân",
+      "limbs": {
+        "foreLeft": "Chân trước trái",
+        "foreRight": "Chân trước phải",
+        "midLeft": "Chân giữa trái",
+        "midRight": "Chân giữa phải",
+        "hindLeft": "Chân sau trái",
+        "hindRight": "Chân sau phải"
+      },
+      "strideStart": "Bắt đầu sải",
+      "strideEnd": "Kết thúc sải",
+      "stanceLegend": "Thanh sáng nghĩa là bàn chân đó đang đỡ trọng lượng",
+      "midPhaseLabel": "Cặp chân giữa ngắn hạ xuống ở đâu",
+      "midPhaseValue": "{pct}% sải chân",
+      "scrubLabel": "Kéo qua từng thời điểm của sải chân",
+      "scrubValue": "{pct}% sải chân",
+      "readout": {
+        "feetNow": "Số chân đang chống đất",
+        "brace": "Cú ngoặt tìm được thế chống",
+        "braceNote": "chân giữa cắm đất đúng lúc cặp chân sải rời ra",
+        "suspension": "Phần bay trên không",
+        "suspensionNone": "Không có",
+        "suspensionNote": "cả hai cặp chân sải đều rời mặt đất"
+      },
+      "verdict": {
+        "grounded": "Luôn có một trong hai cặp chân sải đỡ trọng lượng, nên dáng đi này không hề có cú bật nào. Đây là dáng rẻ nhất để duy trì nhưng nặng nề nhất trên mỗi bước, bởi chẳng gân nào được dịp tích rồi hoàn lại năng lượng của một cú nhún.",
+        "bouncing": "Hai cặp chân sải giờ cùng rời mặt đất, và gần như mọi khoảng trống chúng để lại đều có một bàn chân giữa cắm xuống. Khoảnh khắc lơ lửng đó cho phép những sợi gân dài hoạt động như bộ nhíp — dịu dàng với xương hơn cả một bước đi nặng nề — trong khi cặp chân ngắn vẫn có điểm tựa mỗi khi một cú ngoặt xuất hiện.",
+        "unbraced": "Cặp chân giữa được hẹn giờ để vung lên đúng những lúc cặp chân sải vừa rời đất. Đó lại chính là những khoảnh khắc một cú ngoặt gấp cần thứ gì cắm xuống để chống lực ngang — mà chống lực ngang chính là nhiệm vụ chính sử giao cho cặp chân giữa ấy."
+      }
+    },
+    "pneumaticBoneBudget": {
+      "title": "Rỗng hóa một xương cánh mà không đánh mất nó",
+      "subtitle": "Độ cứng giữ nguyên xuyên suốt — chỉ độ dày vách và vật liệu thay đổi",
+      "aria": "Mặt cắt ngang một xương cánh cùng ống dẫn khí bên trong, đặt cạnh các thanh biểu thị khối lượng của thanh xương và mức độ vách đã mỏng tới ngưỡng bẹp",
+      "materialLabel": "Vật liệu xương",
+      "material": {
+        "mineral": "Xương khoáng Trái Đất",
+        "carbon": "Xương đan sợi carbon"
+      },
+      "solidReference": "Thanh đặc, cùng độ cứng",
+      "airChannel": "khí",
+      "reference": {
+        "mammal": "Xương chi thú: rỗng {pct}%",
+        "bird": "Xương cánh chim: rỗng {pct}%",
+        "pterosaur": "Xương cánh dực long: rỗng {pct}%"
+      },
+      "massBar": "Thanh xương nặng bao nhiêu",
+      "bucklingBar": "Vách đã mỏng đến mức nào",
+      "crumpleLimit": "Ngưỡng bẹp vách",
+      "hollownessLabel": "Rỗng hóa phần lõi",
+      "hollownessValue": "{pct}% đường kính",
+      "readout": {
+        "mass": "Khối lượng tiết kiệm",
+        "massValue": "{pct}%",
+        "massNote": "ở độ cứng {stiffness}×, độ vững không đổi",
+        "cooling": "Luồng khí làm mát",
+        "coolingNote": "so với xương cánh của một loài chim",
+        "wall": "Bán kính trên độ dày vách",
+        "wallValue": "{ratio} : 1"
+      },
+      "verdict": {
+        "solid": "Một thanh xương gần như đặc thì an toàn nhưng nặng. Phần lớn vật liệu nằm sát tâm, nơi nó gần như chẳng chống uốn được gì — khối lượng cõng vô ích, lại không còn ống dẫn cho luồng khí phải làm mát một sinh vật bay từ bên trong.",
+        "tuned": "Đây chính là món mặc cả mà một sinh vật bay mong muốn. Vật liệu đã dạt ra ngoài, đúng nơi nó thực sự chống uốn, nên thanh xương giữ nguyên độ vững với một phần nhỏ khối lượng, và phần lõi trống trở thành đường ống tống nhiệt bay ra khỏi bộ xương.",
+        "fragile": "Vách giờ mỏng đến mức uốn không còn là thứ làm nó vỡ. Một cái ống mảnh như vậy sẽ hỏng bằng cách bẹp cục bộ, y như vỏ lon nước bị đạp — và một thanh xương cánh bẹp đúng lúc không thích hợp thì chẳng có cú vỗ thứ hai."
+      }
+    }
+  }
+}

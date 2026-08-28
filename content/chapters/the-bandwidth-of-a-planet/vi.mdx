@@ -1,0 +1,275 @@
+<DiagramFigure
+  src="/images/chapters/the-bandwidth-of-a-planet/fig-01-the-bond-as-cable.webp"
+  alt="Cận cảnh chi tiết bím tóc thần kinh của một người Na'vi và ăng-ten của một con banshee đang kết nối tsaheylu: hai bó tua thần kinh mảnh dẻ màu hồng và lục lam vươn về phía nhau và đan cài vào nhau giữa không trung, phát sáng từ bên trong, được vẽ tựa như một sợi cáp quang đang cắm vào cổng, nổi bật trên phông nền màu chàm sẫm"
+  labels={[
+    { x: 22, y: 48, side: "left", label: "Bó sợi trục phát tín hiệu", note: "Các sợi thần kinh ly tâm truyền tín hiệu vận động và ý định được ghép kênh." },
+    { x: 48, y: 50, side: "left", label: "Giao diện synap khóa liên động", note: "Lưới vật lý nơi các đầu mút tua tiếp xúc điện hóa hai chiều với nhau." },
+    { x: 82, y: 32, side: "right", label: "Kênh dẫn thân thu nhận", note: "Bó sợi quang sinh học khổng lồ tỏa rộng vào các đường dẫn truyền thần kinh trung ương." }
+  ]}
+  figNo="01"
+  caption="Gạt đi lớp vỏ bọc huyền bí, tsaheylu bản chất là một cổng kết nối. Hai bó tua thần kinh đan cài vào nhau và một kênh truyền tải mở ra giữa hai hệ thần kinh. Chính nguyên tác cũng đã viện đến phép so sánh này — một sợi cáp ethernet sinh học. Và ngay khoảnh khắc bạn gọi một thứ là cáp, bạn được quyền đặt ra câu hỏi duy nhất mà một kỹ sư luôn hỏi về bất kỳ đường dây nào: nó có thể truyền tải bao nhiêu dữ liệu, và với tốc độ nhanh đến mức nào?"
+  tier="canon"
+/>
+
+Có một cử chỉ lặp đi lặp lại xuyên suốt các phần phim *Avatar*, uyển chuyển đến mức ta rất dễ bỏ qua lời khẳng định phi thường mà nó đang tuyên bố. Một người Na'vi đưa tay lên, nắm lấy chóp <GlossaryTerm slug="queue">bím tóc thần kinh</GlossaryTerm> của họ — phần phụ dài tết sam buông thõng từ sau gáy — và đưa nó chạm vào phần ăng-ten tương ứng của một con ngựa sáu chân, một quái thú săn mồi bay lượn khổng lồ, hay những nhánh tủa phát sáng của một thân cây thiêng. Những sợi tua màu hồng bên trong mỗi đầu mút khẽ cựa quậy, tự động vươn về phía nhau và đan cài chặt chẽ. Và rồi hai sinh vật hợp nhất. Người cưỡi cảm nhận được nhịp tim của con thú tựa như nhịp đập của chính mình; con thú cảm nhận được ý định của người cưỡi và tuân lệnh. Người Na'vi gọi đây là <GlossaryTerm slug="tsaheylu">tsaheylu</GlossaryTerm> — mối liên kết. Còn nguyên tác, khi đi sâu vào khía cạnh kỹ thuật, lại gọi nó bằng một cái tên bớt phần thành kính hơn: một kết nối thần kinh, phiên bản sống của một sợi cáp cắm vào cổng.
+
+Đó chính là từ ngữ định hình nên toàn bộ chương này. *Cáp.* Bởi ngay khoảnh khắc bạn miêu tả tsaheylu như một sợi cáp, bạn đã vô tình kéo theo cả một hệ thống khoa học vào cuộc. Một sợi cáp không phải là một điều bí ẩn. Cáp là một kênh truyền tải, và kênh truyền tải thì phải tuân theo những định luật — những định luật định lượng, sắt đá, không khoan nhượng — được đúc kết trên Trái Đất vào giữa thế kỷ hai mươi bởi một vị kỹ sư trầm lặng mang tên Claude Shannon. Một kênh truyền có thể đo đạc được. Nó có dung lượng, một mức trần giới hạn số bit trên giây mà nó có thể chuyên chở, được định đoạt bởi băng thông và độ nhiễu của nó, và không một phép màu nào có thể xê dịch được mức trần đó. Vậy nên, nếu mạng lưới hành tinh của Eywa thực sự được kết nối bằng các sợi cáp thần kinh, thì vạn vật chạy qua những sợi cáp đó — một mệnh lệnh gửi đến banshee, giọng nói của một bậc tổ tiên, và, ở giới hạn tuyệt đối, một linh hồn con người trọn vẹn — đều là thông tin luân chuyển qua một kênh truyền, và từng bit của nó đều phải tuân theo các định luật của Shannon.
+
+Hai chương trước đã dạo quanh mạng lưới này từ bên ngoài. <ChapterRef slug="what-eywa-is" /> đặt câu hỏi liệu Eywa có phải là một *tâm trí*. <ChapterRef slug="the-wood-wide-web" /> lật mở xem thực chất mạng lưới này được *cấu tạo* từ vật chất gì, và tìm thấy đáp án ở nấm và rễ cây. Chương này sẽ đặt ra câu hỏi lạnh lùng nhất trong cả ba, câu hỏi của một kỹ sư, câu hỏi biến sự kinh ngạc thành những phép toán: **thực chất có bao nhiêu thông tin truyền qua mối liên kết này, và tốc độ truyền của nó nhanh đến mức nào?** Và nó sẽ mang câu hỏi đó đến tận sự kiện táo bạo nhất mà loạt phim từng phô diễn — đêm người Na'vi cố gắng truyền toàn bộ ý thức của một người phụ nữ đang hấp hối xuyên qua một cái cây — và với một thái độ nghiêm túc cùng chiếc máy tính trên tay, phân tích xem liệu những con số này có khả thi hay không.
+## Thực chất điều gì băng qua mối liên kết
+
+Trước khi cân đo đong đếm bất cứ thứ gì, ta cần làm rõ xem nguyên tác thực chất khẳng định điều gì đang được truyền tải. Tsaheylu không phải là một kỳ tích lặp đi lặp lại; nó là một nấc thang của những quá trình truyền tải ngày càng khó tin, và từng bậc thang rất đáng để mổ xẻ bởi chúng đòi hỏi mức băng thông hoàn toàn khác biệt.
+
+Bậc thang thấp nhất là mối liên kết với động vật thường ngày, và nguyên tác miêu tả nó bằng những thuật ngữ mang tính vật lý, gần như lâm sàng. Bím tóc bên ngoài thực chất là vỏ bọc cho thứ mà tài liệu bổ sung gọi là một "roi thần kinh" — một cụm gồm những sợi tua mảnh, ngọ nguậy, cực kỳ nhạy cảm và là phần mở rộng trực tiếp từ hệ thần kinh của chính sinh vật. Khi hai cụm tua này đan cài vào nhau, thần kinh chạm thần kinh, và kênh truyền mở ra có tính hai chiều rõ rệt: mệnh lệnh tuôn ra, cảm giác truyền về. Grace Augustine, nhà khoa học thường trực trong phim, bày tỏ rất thẳng thắn về nền tảng vật chất của toàn bộ mạng lưới. Bà khẳng định, có "một loại hình giao tiếp điện hóa nào đó" chạy xuyên qua nó — cùng một phương thức nền tảng mà bộ não vận hành, dựa trên ion và điện thế, chứ không phải phép thuật.
+
+Bậc thang ở giữa lại kỳ lạ hơn. Khi một người Na'vi liên kết không phải với động vật mà với Cây Tiếng Nói hoặc Cây Linh Hồn, họ không điều khiển bất cứ thứ gì. Họ *lắng nghe*. Họ nghe thấy giọng nói được lưu lại của những tổ tiên đã khuất từ lâu; họ truy xuất những ký ức không phải của chính mình. Grace một lần nữa mượn ngôn ngữ máy tính một cách dứt khoát: tại những địa điểm này, bà nhận định, người Na'vi có thể "tải lên và tải xuống dữ liệu — những ký ức". Dưới góc nhìn của bà, mạng lưới không chỉ là một đường dây điện thoại mà là một kho lưu trữ — một kho chứa quy mô hành tinh lưu lại trải nghiệm của bất kỳ ai từng sống và kết nối với nó.
+
+<Quote cite="Tiến sĩ Grace Augustine, Avatar (2009)">
+Những gì chúng tôi nghĩ mình biết là có một loại hình giao tiếp điện hóa nào đó giữa rễ của những cái cây... họ có thể tải lên và tải xuống dữ liệu — những ký ức — tại những địa điểm như cái nơi mà anh vừa phá hủy.
+</Quote>
+
+Và cuối cùng là nấc thang cao nhất, thứ mà toàn bộ phần còn lại của chương này thực sự bàn tới. Tại Cây Linh Hồn, trong buổi lễ thiêng liêng nhất của người Na'vi, mạng lưới cố gắng thực hiện một điều mà không một đường dây điện thoại hay kho lưu trữ nào đáng ra có thể làm được. Nó cố gắng dịch chuyển một *bản ngã*.
+
+<DiagramFigure
+  src="/images/chapters/the-bandwidth-of-a-planet/fig-02-three-payloads.webp"
+  alt="Hình ảnh nấc thang ba tầng mô tả các mức độ truyền tải tsaheylu tăng dần được minh họa bằng các luồng dữ liệu phát sáng: ở dưới cùng là một người Na'vi cưỡi banshee với một liên kết mệnh lệnh-và-cảm giác mỏng và sáng; ở giữa là một người Na'vi quỳ trước Cây Tiếng Nói với một luồng ký ức tổ tiên dày đặc hơn đang chảy vào; ở trên cùng, rực sáng nhất, là một cơ thể tại Cây Linh Hồn với toàn bộ tâm trí con người rực sáng đang luân chuyển sang hình hài mới, khối lượng dữ liệu tăng vọt ở mỗi nấc thang"
+  labels={[
+    { x: 48, y: 20, side: "right", label: "Tải trọng cực đại: Chuyển giao toàn bộ tâm trí", note: "Quá trình chuyển giao tại Cây Linh Hồn di chuyển trọn một bản ngã; nguyên tác không bao giờ nói đó là từng khớp thần kinh hay chỉ là dòng ý thức." },
+    { x: 38, y: 55, side: "left", label: "Tải trọng trung bình: Trích xuất vết hằn tổ tiên", note: "Truy vấn Cây Tiếng Nói tải về các luồng cảm giác và bản ghi âm giọng nói cục bộ từ kho lưu trữ hành tinh." },
+    { x: 36, y: 84, side: "left", label: "Tải trọng tối thiểu: Liên kết vận động đo xa", note: "Cưỡi thú chỉ truyền ý định dạng véc-tơ băng thông thấp (bay lên, nghiêng cánh, bổ nhào) và nhận đo xa cảm giác bản thể." }
+  ]}
+  figNo="02"
+  caption="Tsaheylu không phải là một kỳ tích đơn lẻ mà là một nấc thang ba bậc, mỗi bậc lại đòi hỏi kênh truyền tải nhiều hơn hẳn so với bậc trước. Mối liên kết động vật mang theo một luồng mỏng mệnh lệnh và cảm giác. Mối liên kết tổ tiên lấy ra ký ức được lưu trữ từ một kho lưu trữ quy mô hành tinh. Và ở đỉnh cao, quá trình luân chuyển ý thức cố gắng dịch chuyển toàn bộ một bản ngã — khối lượng dữ liệu cực đại, sự kiện mà toàn bộ chương này được xây dựng để cân đo đong đếm. Mỗi nấc thang đi lên là một bước nhảy vọt về lượng bit phải chạy qua sợi cáp."
+  tier="canon"
+/>
+## Cưỡi thú như một liên kết dữ liệu
+
+Hãy bắt đầu từ dưới cùng của nấc thang, bởi bậc thấp nhất là nơi tính khoa học tỏ ra khoan dung nhất với chất viễn tưởng. Khi Jake Sully lần đầu gắn kết với một con direhorse, Neytiri không hề trao cho anh một cuốn cẩm nang các mệnh lệnh cơ bắp. Cô bảo anh hãy cảm nhận: "Cảm nhận nhịp tim của nó. Cảm nhận hơi thở của nó. Cảm nhận đôi chân mạnh mẽ của nó." Và để ra lệnh, cô bảo anh hãy dùng ý niệm: anh phải truyền đạt cho con vật điều cần làm "từ bên trong", bằng tâm trí, không cần đến dây cương hay lời nói. Về sau, khi đang vật lộn để điều khiển một con banshee giữa không trung, lời hướng dẫn thậm chí còn đơn giản hơn. *Hãy nghĩ "bay."*
+
+Chi tiết duy nhất đó — *hãy nghĩ "bay"* — là mảnh ghép kỹ thuật quan trọng bậc nhất trong toàn bộ mối liên kết động vật, và người ta rất dễ vô tình bỏ qua nó. Bởi hãy chú ý đến điều mà người cưỡi *không* làm. Họ không truyền đi tín hiệu kích hoạt cho từng bó cơ trên cánh banshee, theo từng nhịp vỗ, tính bằng từng micro giây. Đó sẽ là một cơn đại hồng thủy dữ liệu — hàng triệu kênh viễn trắc vận động, một mức băng thông mà không một sợi cáp sinh học nào dám mơ tới việc truyền tải theo thời gian thực. Thay vào đó, người cưỡi gửi đi một ý niệm cấp cao duy nhất — *bay*, *vút lên*, *chuyển hướng* — và hệ thần kinh của chính con vật, bộ não dưới và tủy sống của nó, sẽ giải nén mệnh lệnh ấy thành hàng ngàn chuyển động cơ bắp nhịp nhàng để thực sự nâng nó lên không trung.
+
+<Callout variant="insight" title="Mối liên kết là một dòng lệnh được nén, không phải một vòi rồng dữ liệu">
+Sự thiên tài của "hãy nghĩ 'bay'" nằm ở chỗ nó cực kỳ nhỏ gọn. Người cưỡi truyền đi *ý niệm*; chính cơ thể con thú sẽ cung cấp hàng megabyte cho việc kiểm soát cơ bắp. Đây chính xác là cách một giao diện não-máy tính thực thụ phải vận hành, bởi vì giải pháp thay thế — truyền dữ liệu vận động thô — sẽ làm quá tải bất kỳ kênh truyền nào. Một liên kết băng thông thấp mang theo các mệnh lệnh cấp cao, dựa vào trí thông minh ở đầu tiếp nhận để tự hoàn thiện chi tiết, không phải là điểm yếu của tsaheylu. Đó là cách duy nhất để một liên kết như vậy có thể hoạt động được.
+</Callout>
+
+<DiagramFigure
+  src="/images/chapters/the-bandwidth-of-a-planet/fig-06-intent-not-muscles.webp"
+  labels={[
+    { x: 24, y: 20, side: "right", label: "Tín hiệu ý định cấp cao", note: "Người cưỡi truyền các lệnh véc-tơ băng thông thấp (leo cao, bổ nhào, góc nghiêng) thay vì vi quản lý từng cơ bắp." },
+    { x: 45, y: 50, side: "right", label: "Mối nối giao diện Tsaheylu", note: "Hạch tủy sống trung tâm tiếp nhận luồng ý định cô đọng qua một liên kết thần kinh duy nhất." },
+    { x: 75, y: 32, side: "left", label: "Tỏa nhánh vận động phía bên nhận", note: "Hệ thần kinh ngoại biên của Banshee giải nén mệnh lệnh thành các điều chỉnh độ cong phức tạp trên nhiều bó cơ cánh." }
+  ]}
+  alt="Một người Na'vi gửi duy nhất một xung sáng mảnh qua tsaheylu vào con banshee đang bay; chỉ khi xung tới cơ thể con vật, nó mới tỏa qua lát cắt hệ thần kinh thành hàng trăm nhánh điều khiển cánh, ngực và đuôi"
+  figNo="06"
+  caption="Một mẩu ý niệm, cả cơ thể thực thi. Mối liên kết chỉ mang mệnh lệnh hẹp — bay, vút lên, chuyển hướng — vào banshee. Vòi rồng dữ liệu chỉ xuất hiện ở đầu bên kia, nơi hệ thần kinh của chính con vật bung chỉ dẫn nhỏ ấy thành hàng trăm tín hiệu cơ bắp được căn thời gian chính xác. Tsaheylu hoạt động vì trí thông minh ở bộ thu giải nén thông điệp. Người cưỡi không bao giờ phải truyền trực tiếp từng nhịp cánh."
+  tier="inference"
+/>
+
+Điều này mang ý nghĩa to lớn đối với bài toán ngân sách của chúng ta, vì nó cho thấy mối liên kết động vật thực chất rất *rẻ*. Luồng lệnh truyền đi — một ý niệm trừu tượng — là không đáng kể, chỉ vỏn vẹn một vài bit. Luồng cảm giác truyền về thì phong phú hơn; việc cảm nhận cơ thể một con vật từ bên trong là thông tin thực tế, và chúng ta sẽ thấy nó vẫn nằm gọn gàng bên trong giới hạn truyền tải của một dây thần kinh sinh học đơn lẻ. Phép màu thường nhật của việc cưỡi một con banshee, điều trông có vẻ viễn tưởng nhất, hóa ra lại là nấc thang hòa hợp nhất với các định luật vật lý của Trái Đất. Chính bậc trên cùng của nấc thang, đêm tại Cây Linh Hồn, mới là thứ sẽ khiến những con số phải gào thét. Để hiểu lý do tại sao, chúng ta phải rời Pandora một lát và gặp gỡ người đàn ông đã dạy cho cả thế giới cách cân đong một suy nghĩ.
+## Một bit thực chất là gì
+
+Năm 1948, trong một bài báo đăng trên tạp chí của một công ty điện thoại, Claude Shannon đã làm một điều nghe có vẻ bất khả thi cho đến khi bạn chứng kiến cách ông thực hiện nó: ông tìm ra cách để đo lường chính bản thân *thông tin* — gán cho nó một con số, một đơn vị đo, giống như cách chúng ta đo lường chiều dài hay khối lượng. Trước Shannon, "thông tin" là một khái niệm mơ hồ, gần như mang tính văn chương. Sau ông, nó trở thành một đại lượng vật lý với những phép tính toán nghiêm ngặt không thể phá vỡ. Bài báo của ông, "Một Lý thuyết Toán học về Truyền thông," là một trong những tài liệu hiếm hoi đặt nền móng cho <GlossaryTerm slug="information-theory">toàn bộ một ngành khoa học</GlossaryTerm> chỉ bằng một nét bút, và gần như mọi thứ trong cuộc sống kỹ thuật số của bạn — từng tệp tin, từng luồng dữ liệu, từng vạch sóng trên điện thoại — đều vận hành dựa trên cỗ máy mà ông đã xây dựng trong đó.
+
+Nước đi đầu tiên và sâu sắc nhất của ông là vứt bỏ khái niệm *ý nghĩa*. Lần đầu tiên nghe qua, điều này có vẻ giống như một hành động phá hoại. Chẳng phải toàn bộ mục đích của một thông điệp nằm ở ý nghĩa của nó sao? Nhưng Shannon nhận ra rằng ý nghĩa là kẻ thù của kỹ sư, bởi vì nó không thể đo lường được. Vì vậy, ông định nghĩa lại thông tin thành một thứ lạnh lùng hơn và có thể đếm được: **thông tin chính là sự giải tỏa tính bất định.** Một thông điệp mang thông tin chính xác ở mức độ nó cho bạn biết điều mà bạn không thể đoán trước. Nếu tôi hứa sẽ gửi cho bạn một bức thư chắc chắn ghi chữ "có", thì khi bức thư đến tay, nó không cho bạn biết thêm điều gì cả — vì bạn đã biết trước rồi. Thông tin tồn tại trọn vẹn trong sự bất ngờ.
+
+Từ một ý tưởng duy nhất đó, đơn vị đang thống trị thế giới hiện nay đã ra đời: <GlossaryTerm slug="bit">bit</GlossaryTerm>. Một bit là lượng thông tin cần thiết để phân định một lựa chọn hoặc-cái-này-hoặc-cái-kia cân bằng hoàn hảo — một lần tung đồng xu công bằng, một câu trả lời có-hoặc-không rạch ròi. Hai bit sẽ phân định một lựa chọn giữa bốn khả năng ngang nhau; mười bit, một lựa chọn giữa 1.024; và cứ thế, mỗi bit lại nhân đôi số lượng khả năng mà nó có thể xác định. Trong khung lý thuyết của Shannon, lượng thông tin trong một nguồn phát là số câu hỏi có/không trung bình mà bạn phải đặt ra để xác định chính xác thông điệp của nó. Ông đặt cho con số trung bình này một cái tên mượn từ vật lý — <GlossaryTerm slug="shannon-entropy">entropy</GlossaryTerm> — và đi kèm một công thức, nhưng công thức đó không quan trọng bằng trực giác ẩn sau nó: một nguồn phát có thể dự đoán được mang rất ít thông tin trên mỗi ký hiệu, trong khi một nguồn phát không thể đoán trước lại chuyên chở rất nhiều. Văn bản tiếng Anh, mặc cho có đến hơn trăm ký tự trên bàn phím, lại tràn ngập tính dư thừa và quy luật đến mức mỗi chữ cái chỉ mang khoảng một bit thông tin thực thụ. Phần còn lại chỉ là lớp đệm có thể dự đoán được — thứ mà như chúng ta sẽ thấy, hoàn toàn không phải là sự lãng phí, mà chính là yếu tố sống còn giúp một thông điệp sống sót qua một thế giới đầy nhiễu.
+
+Sau đó, Shannon đã vẽ ra một bức tranh mà giờ đây mọi kỹ sư truyền thông đều nằm lòng. Ông khẳng định, mọi hành vi giao tiếp đều vận hành trên cùng một cỗ máy gồm năm thành phần. Một **nguồn thông tin** tạo ra một thông điệp. Một **bộ phát** mã hóa nó thành tín hiệu. Tín hiệu băng qua một **kênh truyền tải**. Một **bộ thu** giải mã nó trở lại thành thông điệp. Và cuối cùng nó đến được **đích đến**. Nhưng rình rập trên kênh truyền tải là kẻ phản diện của toàn bộ câu chuyện — **nhiễu**: sự sai lệch ngẫu nhiên, nhiễu tĩnh, những dao động nhiệt mà mọi môi trường vật lý thực tế đều giáng xuống từng tín hiệu băng qua nó. Thử ánh xạ tsaheylu vào cỗ máy đó, và nó khớp một cách dễ dàng đến rùng mình.
+
+<DiagramFigure
+  src="/images/chapters/the-bandwidth-of-a-planet/fig-03-shannon-channel.webp"
+  alt="Một sơ đồ rõ ràng về hệ thống truyền thông năm thành phần của Shannon được thể hiện theo phong cách phát quang sinh học của Pandora: một nút nguồn phát sáng ở bên trái, một mũi tên chỉ vào bộ mã hóa, sau đó là một ống kênh truyền dài với đường nhiễu răng cưa được tiêm vào từ phía trên, tiếp đến là bộ giải mã, rồi đến nút đích ở bên phải; mỗi giai đoạn được dán nhãn với cả thuật ngữ kỹ thuật và khái niệm tương đương trong sinh học của Pandora"
+  labels={[
+    { x: 10, y: 50, side: "right", label: "Nguồn thông tin (Tâm trí)", note: "Dòng ý thức hoặc trạng thái ký ức chưa mã hóa sinh ra từ hệ thần kinh trung ương nguồn." },
+    { x: 27, y: 50, side: "right", label: "Giao diện bộ mã hóa thần kinh", note: "Bộ chuyển đổi sinh học biến đổi các mẫu xung vỏ não thành mã kênh ghép nhiều luồng." },
+    { x: 50, y: 32, side: "left", label: "Nhiễu kênh & Giao thoa", note: "Nhiễu tĩnh sinh học và tiêu tán nhiệt làm hỏng tính toàn vẹn của gói tin." },
+    { x: 90, y: 50, side: "left", label: "Bộ thu & Đích nhận", note: "Mạng thần kinh thụ thể kiểm tra lỗi và tái tạo lại trạng thái nhận thức nguyên bản." }
+  ]}
+  figNo="03"
+  caption="Mô hình năm 1948 của Shannon về hệ thống truyền thông, khi ánh xạ vào mối liên kết tsaheylu. Tâm trí người Na'vi là nguồn thông tin; phần gốc của bím tóc thần kinh mã hóa suy nghĩ thành các xung điện hóa; các xúc tu thần kinh đan cài là kênh truyền tải; sinh vật hoặc cây ở đầu xa sẽ giải mã nó; và nhiễu — nhiễu tĩnh, dao động nhiệt sinh học mà mọi sợi cáp thực tế đều phải gánh chịu — liên tục cào xé tín hiệu trên suốt chặng đường. Mọi quá trình truyền tải mà tsaheylu thực hiện, từ việc điều khiển một con banshee cho đến di dời một linh hồn, đều là chính cỗ máy này đang vận hành ở một quy mô khác nhau."
+  tier="real_science"
+/>
+
+Tâm trí người cưỡi chính là nguồn thông tin. Cơ cấu ở phần gốc bím tóc, đóng vai trò chuyển hóa suy nghĩ thành các xung điện hóa, chính là bộ phát. Những xúc tu thần kinh đan cài là kênh truyền tải. Hệ thần kinh của con banshee, hay hệ thống rễ của Cây Linh Hồn, là bộ thu. Và tất nhiên, nhiễu cũng có mặt ở đó, một cách không thể tránh khỏi — bởi vì một sợi cáp sinh học ẩm ướt, ấm áp và sống động là một trong những kênh truyền *nhiễu nhất* mà bạn có thể tưởng tượng ra, ngập chìm trong các dao động nhiệt và sự nhiễu chéo hóa học. Sự thật cuối cùng đó sẽ quan trọng hơn bất cứ điều gì khác khi chúng ta bàn đến linh hồn.
+## Giới hạn tốc độ không ai có thể phá vỡ
+
+Kiệt tác của Shannon không phải là bit. Đó là một định lý về kênh truyền tải — một phương trình duy nhất đặt ra mức trần vật lý tuyệt đối về tốc độ thông tin có thể truyền qua bất kỳ môi trường nào, và chứng minh rằng mức trần đó không thể bị vượt qua bằng bất kỳ thủ thuật, công nghệ hay bất kỳ nỗ lực nào. Nó được gọi là định lý Shannon–Hartley, và trong một chương tràn ngập sự kính sợ, đây là một mảnh luật thép hiếm hoi xứng đáng được phát biểu một cách chính xác tuyệt đối:
+
+<Callout variant="insight" title="Định lý dung lượng kênh truyền">
+**C = B · log₂(1 + S/N)**
+
+<GlossaryTerm slug="channel-capacity">Dung lượng</GlossaryTerm> **C** của một kênh truyền — tốc độ tối đa tuyệt đối để truyền tải thông tin không có lỗi, tính bằng bit trên giây — được quyết định bởi đúng hai yếu tố. **B** là <GlossaryTerm slug="bandwidth">**băng thông**</GlossaryTerm>, phạm vi tần số mà nó có thể chuyên chở, tính bằng hertz. Và **S/N** là <GlossaryTerm slug="signal-to-noise-ratio">**tỷ số tín hiệu trên nhiễu**</GlossaryTerm>, thể hiện tín hiệu đó lớn đến mức nào so với lớp nhiễu đang chực chờ nhấn chìm nó. Đó chính là toàn bộ giới hạn tốc độ của vũ trụ dành cho thông tin. Không có thứ gì có thể truyền qua bất kỳ kênh nào nhanh hơn mức C của nó. Dù kỹ thuật có tân tiến đến đâu, dù đổ vào nhiều năng lượng thế nào đi chăng nữa, điều đó vĩnh viễn không thể xảy ra.
+</Callout>
+
+Có hai bài học tàn nhẫn nằm ẩn bên trong phương trình nhỏ bé đó, và cả hai đều sẽ quay lại giáng một đòn chí mạng vào Pandora. Bài học thứ nhất: dung lượng chỉ tăng theo *logarit* của tỷ số tín hiệu trên nhiễu. Logarit chính là phép toán đại diện cho quy luật hiệu suất giảm dần. Để nhân đôi tốc độ truyền dữ liệu bằng sức mạnh thô — nói nôm na là hét to hơn — bạn không chỉ nhân đôi mức công suất; bạn phải bình phương tỷ số tín hiệu trên nhiễu, đổ vào một lượng năng lượng lớn hơn theo cấp số nhân cho mỗi một nấc tốc độ nhích thêm. Sức mạnh thô gần như là một đòn bẩy vô dụng. Bài học thứ hai chính là nguồn gốc tên gọi của chương này: dung lượng tăng theo *tuyến tính* với băng thông. Băng thông mới chính là nguồn tài nguyên quý giá, là thước đo đích thực cho giá trị của một kênh truyền. Một đường dây điện thoại bằng đồng có băng thông vài nghìn hertz và có thể truyền tải hàng chục kilobit mỗi giây. Một sợi cáp quang có băng thông tính bằng terahertz và có thể truyền tải đến hàng terabit. Sự khác biệt giữa một dòng nước nhỏ giọt và một thác lũ cuồn cuộn, gần như hoàn toàn, nằm ở băng thông.
+
+Và Shannon đã chứng minh thêm một điều nữa, một kết quả tàn khốc và tuyệt mỹ nhất trong tất cả — <GlossaryTerm slug="noisy-channel-coding-theorem">định lý mã hóa kênh nhiễu (noisy-channel coding theorem)</GlossaryTerm>. Chừng nào bạn còn truyền tải ở mức *dưới* dung lượng của kênh, bạn hoàn toàn có thể — bằng một cơ chế mã hóa đủ thông minh — ép tỷ lệ lỗi xuống tiệm cận mức 0 tùy thích. Việc truyền tải hoàn hảo, không suy hao trên một kênh truyền đầy nhiễu, có khiếm khuyết là một điều thực sự khả thi. Nhưng ngay khoảnh khắc bạn cố gắng đẩy tốc độ lên *nhanh hơn* mức dung lượng, mọi sự bảo chứng đều vỡ vụn. Lỗi không chỉ là rủi ro có thể xảy ra, mà là một sự *chắc chắn về mặt toán học*. Dữ liệu sẽ bị hỏng, và không một sự xảo diệu nào có thể cứu vãn được nó. Đây không phải là một sự bất tiện kỹ thuật mà người ta có thể tìm cách lách qua bằng thiết kế. Nó là một định luật, vững chắc như tốc độ ánh sáng, và chúng ta đang chuẩn bị đưa linh hồn của một người phụ nữ đang hấp hối ra để đối đầu với nó.
+## Cái giá của một bản sao hoàn hảo
+
+Có một giả định ngầm được chôn giấu trong buổi lễ tại Cây Linh Hồn, và đó chính là giả định sẽ làm phá sản mọi ngân sách. Khi người Na'vi di chuyển ý thức của Grace, hay chuyển giao vĩnh viễn ý thức của Jake, quá trình truyền tải đó bắt buộc phải *hoàn hảo*. Một linh hồn được sao chép với các lỗi sai thì không còn là một linh hồn nữa. Đánh rơi vài nghìn bit và bạn không chỉ làm suy giảm đôi chút bản thể của người đó — bạn có thể đã xóa sạch một tuổi thơ, làm đảo lộn một nhân cách, làm hỏng chính thứ mà nghi lễ này được sinh ra để cứu rỗi. Sự kiện mang khối lượng tải lớn nhất trên Pandora cũng đồng thời là sự kiện duy nhất đòi hỏi sự tổn hao phải bằng *không*. Và nó đang được thực hiện qua loại kênh truyền nhiễu nhất từng tồn tại.
+
+Shannon chỉ cho chúng ta biết chính xác cái giá của sự hoàn hảo trên một đường truyền đầy nhiễu là gì, và câu trả lời là: <GlossaryTerm slug="redundancy">**sự dự phòng (redundancy)**</GlossaryTerm>. Để đánh bại nhiễu, bạn không thể đơn thuần gửi đi thông điệp; bạn phải gửi kèm theo những bit bổ sung được cấu trúc cẩn thận — <GlossaryTerm slug="error-correcting-code">mã sửa lỗi</GlossaryTerm> — để bộ thu có thể phát hiện sự sai lệch và tái tạo lại một cách toán học những gì đã bị hỏng. Đây cũng chính là thủ thuật cho phép một chiếc đĩa bị xước vẫn có thể phát nhạc, cho phép một tàu vũ trụ cách xa hàng tỷ kilomet gửi về một bức ảnh rõ nét xuyên qua cả một biển nhiễu tĩnh vũ trụ. Các hệ thần kinh thực tế dường như cũng làm điều tương tự: có những nghiên cứu đang tiến hành chỉ ra rằng chính các mạch của não bộ sử dụng sự dự phòng như một dạng sửa lỗi sinh học, tiêu tốn các nơ-ron để đổi lấy sự tin cậy nhằm chống lại mức nhiễu liên tục của hệ thống sinh học ẩm ướt.
+
+<Callout variant="warning" title="Sự dự phòng không hề miễn phí — nó ăn mòn kênh truyền">
+Mỗi một bit sửa lỗi mà bạn thêm vào để bảo vệ thông điệp, chính là một bit mà bạn *không* thể sử dụng cho bản thân thông điệp đó. Độ trung thực tuyệt đối qua một kênh truyền nhiễu phải được đánh đổi bằng dung lượng. Việc chuyển giao một linh hồn không tổn hao ngang qua một sợi cáp sinh học ấm áp, đầy dao động có thể đòi hỏi bạn phải nhân đôi hoặc nhân ba lượng dữ liệu thô — tiêu tốn nhiều phần băng thông quý giá cho việc bảo vệ hơn là cho tải trọng dữ liệu. Kênh truyền càng nhiễu và mức cược càng cao, thì cái giá phải trả càng đắt đỏ. Một "bản sao hoàn hảo" là thứ đắt đỏ nhất mà bạn có thể yêu cầu một kênh truyền phải gánh vác.
+</Callout>
+
+<DiagramFigure
+  src="/images/chapters/the-bandwidth-of-a-planet/fig-07-redundancy-repairs-soul.webp"
+  labels={[
+    { x: 6, y: 50, side: "right", label: "Mẫu nhận thức nguồn", note: "Trạng thái bản ngã nơ-ron nguyên bản được mã hóa thành luồng kỹ thuật số mật độ thông tin cao." },
+    { x: 32, y: 48, side: "right", label: "Búi bện chẵn lẻ dự phòng", note: "Mã sửa lỗi chuyển tiếp mở rộng tải trọng trên các nhánh song song để tái tạo các gói tin bị mất." },
+    { x: 52, y: 48, side: "left", label: "Nhiễu kênh & Rớt gói tin", note: "Tia lửa hồng đánh dấu sự mất gói tin sinh học và đứt gãy synap xảy ra trong môi trường ướt." },
+    { x: 93, y: 50, side: "left", label: "Trạng thái đích được tái tạo", note: "Các gói tin dự phòng còn sống sót hội tụ vào vỏ não người nhận mà không làm mất độ chân thực của bản ngã." }
+  ]}
+  alt="Một khuôn mẫu bản ngã phát sáng nhỏ gọn được mở rộng thành bím dày gồm nhiều sợi lặp lại trước khi đi qua kênh sinh học ẩm ướt; nhiễu làm đứt vài sợi giữa đường, nhưng những phần lặp còn lại hội tụ ở bộ thu và dựng lại khuôn mẫu nguyên vẹn ban đầu"
+  figNo="07"
+  caption="Độ tin cậy cũng chiếm chỗ. Tải trọng ban đầu nhỏ, rồi phình thành một bím cấu trúc lặp lại trước khi bước vào kênh sống đầy nhiễu. Vài sợi bị mất, nhưng vẫn còn đủ bản sao của từng khuôn mẫu để bộ thu tái dựng cái toàn thể. Bím phụ ấy chính là mã sửa lỗi: không thể thiếu khi một bit hỏng có thể làm đổi khác một con người, và mỗi bit bảo vệ đều chiếm phần dung lượng lẽ ra có thể đưa con người ấy tới đích nhanh hơn."
+  tier="real_science"
+/>
+
+Vậy nên, chi phí thực sự của quá trình chuyển giao ý thức không chỉ nằm ở kích cỡ của một tâm trí. Đó là kích cỡ của một tâm trí, *cộng thêm* chi phí phát sinh khổng lồ để bảo đảm rằng không một bit quan trọng nào của nó bị đánh rơi trong quá trình trung chuyển qua loại cáp tồi tệ nhất cho công việc này. Giờ đây, chúng ta đã định hình được trọn vẹn hai nửa trong câu hỏi của vị kỹ sư. Chúng ta biết rằng kênh truyền phải tuân theo phương trình C = B · log₂(1 + S/N), và sự hoàn hảo trên một đường truyền nhiễu phải trả một cái giá đắt đỏ bằng sự dự phòng. Thứ duy nhất còn lại là tải trọng dữ liệu. Chính xác thì một con người nặng bao nhiêu bit?
+
+## Một tâm trí chứa bao nhiêu bit?
+
+Tại đây, cuộc khảo sát rẽ làm hai hướng, và toàn bộ câu hỏi về việc liệu buổi lễ tại Cây Linh Hồn là bất khả thi hay chỉ đơn thuần là một sự xa xỉ tột bậc sẽ phụ thuộc vào ngã rẽ mà bạn chọn. Có hai phương pháp hoàn toàn khác biệt để đo lường kích thước của một tâm trí con người, và chúng cho ra kết quả chênh lệch nhau tới hơn một triệu lần.
+
+Cách thứ nhất là đếm phần cứng. Một bộ não con người chứa khoảng một trăm nghìn tỷ <GlossaryTerm slug="connectome">khớp thần kinh (synapse)</GlossaryTerm>, mỗi khớp là một kết nối mà cường độ của nó đại diện cho một phần thông tin được lưu trữ. Nếu một tâm trí là trạng thái hoàn chỉnh của mạng lưới liên kết đó — mọi khớp thần kinh, mọi trọng số, toàn bộ <GlossaryTerm slug="connectome">bản đồ kết nối thần kinh (connectome)</GlossaryTerm> — thì việc sao chép nó đồng nghĩa với việc sao chép toàn bộ mạng lưới ấy. Con số phổ biến thường được nhắc đến cho phương pháp này là khoảng 2,5 petabyte: hai triệu rưỡi gigabyte, con số tính toán khi coi não bộ như một ổ cứng. Hãy tiếp nhận nó với một sự hoài nghi nhất định — bộ não không lưu trữ các tệp tin rời rạc, và bất kỳ tuyên bố nào kiểu "tâm trí bằng X byte" đều đang che đậy một sự mơ hồ sâu sắc về việc chính xác thứ gì đang được đong đếm — nhưng nếu coi đó là một giới hạn trên cho trạng thái phần cứng thô, thì quy mô hàng petabyte là con số cần phải vượt qua.
+
+Cách thứ hai không đo lường phần cứng, mà đo lường *trải nghiệm* — tốc độ thực tế mà những luồng suy nghĩ có ý thức tuôn trào. Và tại đây, khoa học mang đến một trong những bất ngờ lớn lao nhất khiến chúng ta phải khiêm nhường. Các giác quan của bạn trút khoảng mười một triệu bit mỗi giây vào hệ thần kinh; chỉ riêng đôi mắt đã chiếm phần lớn trong số đó. Thế nhưng, lượng thông tin thực sự chạm đến *nhận thức có ý thức* — băng thông của cái bản ngã biết suy nghĩ, biết quyết định và nhớ rằng mình là bạn — lại được các chuyên gia tâm vật lý học cổ điển ước tính chỉ vỏn vẹn ở mức **mười đến năm mươi bit mỗi giây.** Còn chậm hơn cả một chiếc modem từ thập niên 1980. Giới tâm lý học gọi khoảng trống này là <GlossaryTerm slug="conscious-bottleneck">nút thắt nhận thức</GlossaryTerm>, và triết gia Tor Nørretranders gọi kết quả đó là "ảo giác người dùng": não bộ nén một cách không thương tiếc dòng thác dữ liệu cảm giác thô thành một dòng chảy ý nghĩa mỏng manh và trừu tượng, vứt bỏ tất cả và chỉ giữ lại phần cốt lõi, và dòng chảy nhỏ nhoi đó chính là thứ mà bạn đang trải nghiệm với tư cách là tâm trí của mình.
+
+<Comparison
+  left={{
+    title: "Góc nhìn bản đồ kết nối thần kinh",
+    children: (
+      <>
+        <p>Một tâm trí <em>chính là</em> phần cứng của nó: mọi khớp thần kinh, mọi trọng số, toàn bộ sơ đồ mạng lưới.</p>
+        <p>Để sao chép nó, bạn phải sao chép <strong>tất cả mọi thứ</strong> — ở mức khoảng <strong>2,5 petabyte</strong>, con số tính toán khi coi não bộ như một ổ cứng.</p>
+        <p>Đây là tải trọng tối đa. Nó là con số khiến buổi lễ nghe có vẻ bất khả thi.</p>
+      </>
+    ),
+  }}
+  right={{
+    title: "Góc nhìn dòng chảy ý thức",
+    children: (
+      <>
+        <p>Một tâm trí là <em>trải nghiệm</em> — dòng chảy mỏng manh của những suy nghĩ chạm đến được nhận thức.</p>
+        <p>Dòng chảy đó chỉ vận hành ở tốc độ <strong>10–50 bit mỗi giây</strong>: trải nghiệm cá nhân của cả một đời người cũng chỉ vỏn vẹn vài chục gigabit.</p>
+        <p>Đây là tải trọng tối thiểu. Nó là con số khiến buổi lễ nghe có vẻ gần như hợp lý.</p>
+      </>
+    ),
+  }}
+/>
+
+Khoảng cách giữa hai góc nhìn này là khoảng cách giữa điều bất khả thi và điều đáng kinh ngạc đơn thuần, và chúng ta chuẩn bị đối chiếu cả hai con số đó với khả năng truyền tải của sợi cáp.
+
+<ConsciousBottleneck />
+
+Trước khi làm điều đó, hãy thử tự mình cầm lái phương trình này. Biểu đồ dưới đây là phiên bản tương tác được của định luật dung lượng kênh truyền Shannon: hãy thiết lập băng thông của một kênh và tỷ số tín hiệu trên nhiễu của nó, chọn một khối lượng dữ liệu — một từ được nói ra, một bức ảnh, hoặc toàn bộ bản đồ kết nối thần kinh — và quan sát xem quá trình truyền tải mất bao lâu. Hãy kéo các thanh trượt và tự tay cảm nhận hai bài học: cách băng thông tạo ra những bước nhảy vọt tuyến tính khổng lồ cho đáp án, và cách sức mạnh tín hiệu thô gần như không làm kết quả nhúc nhích chút nào.
+
+<ShannonChannel />
+
+
+## Thông số thực tế của sợi cáp
+
+Vậy *thông số* của sợi cáp mà người Na'vi thực sự sử dụng là gì? Nguyên tác cực kỳ rõ ràng ở một điểm quan trọng nhất: kết nối này mang tính **điện hóa.** Grace đã nói vậy, và các tua thần kinh đan cài của bím tóc cư xử hệt như mô thần kinh. Từ duy nhất đó là một giới hạn thép, bởi chúng ta biết chính xác tốc độ truyền tín hiệu điện hóa là bao nhiêu, và nó khác xa hoàn toàn so với tốc độ ánh sáng chạy dọc theo một sợi dây dẫn.
+
+Xung thần kinh không phải là dòng điện chạy qua dây đồng với tốc độ gần ba trăm ngàn kilômét một giây. Nó là một chuỗi phản ứng hóa học chậm chạp, các ion được bơm qua một lớp màng tế bào, tự tái tạo từng bước một dọc theo sợi trục thần kinh. Những dây thần kinh nhanh nhất, dày nhất và được bọc cách điện kỹ nhất trong cơ thể bạn — những dây thần kinh được thiết kế cho các phản xạ khẩn cấp — cũng chỉ đạt tới khoảng một trăm hai mươi mét mỗi giây. Những dây thần kinh trần, chậm chạp thì lê lết ở mức một mét mỗi giây, chỉ ngang tốc độ đi bộ. Đây là mức trần của <GlossaryTerm slug="nerve-conduction-velocity">vận tốc dẫn truyền</GlossaryTerm>, và nó được thiết lập bởi hóa học, chứ không phải kỹ thuật. Không một sợi cáp sinh học nào có thể thoát khỏi giới hạn đó.
+
+<DiagramFigure
+  src="/images/chapters/the-bandwidth-of-a-planet/fig-05-slow-cable.webp"
+  alt="Một góc nhìn rộng về đường cong rìa mặt trăng Pandora từ quỹ đạo gần vào ban đêm, với những khu rừng được bao bọc bởi một mạng lưới phát sáng nhạt; một xung ánh sáng đơn lẻ đang bò trườn dọc theo một sợi dây trên một quãng ngắn, trong khi phần tối tăm bao la còn lại của mặt trăng vẫn chưa sáng lên, phác họa cảnh tượng một tín hiệu di chuyển ở tốc độ điện hóa sẽ mất nhiều ngày để đi qua mạng lưới quy mô hành tinh này"
+  labels={[
+    { x: 32, y: 38, side: "left", label: "Mạng thần kinh trải khắp mặt trăng", note: "Hàng nghìn tỷ rễ cây và xa lộ sợi nấm liên kết tạo thành mạng lưới quy mô hành tinh." },
+    { x: 55, y: 62, side: "left", label: "Xung điện thế hoạt động", note: "Di chuyển với tốc độ dẫn truyền sinh học (~100 m/s), một xung đơn lẻ mất nhiều ngày để vượt qua khoảng cách hành tinh." },
+    { x: 82, y: 55, side: "right", label: "Chân trời độ trễ lan truyền", note: "Các khu vực chưa đồng bộ vẫn bị cô lập trong thời gian thực, ngăn cản phản xạ tập trung đồng thời trên toàn hành tinh." },
+  ]}
+  figNo="05"
+  caption="Phép toán tàn nhẫn của độ trễ. Một tín hiệu di chuyển ở tốc độ của xung thần kinh — tối đa khoảng hơn một trăm mét một giây — sẽ mất nhiều ngày để vượt qua một mạng lưới bao trùm khắp mặt trăng từ đầu này đến đầu kia. Một mạng lưới có thể chứa nhiều kết nối hơn một bộ não nhưng vẫn không thể tư duy nhanh chóng, bởi suy nghĩ không nằm ở việc bạn có bao nhiêu sợi dây nối, mà ở việc một tín hiệu chạy qua chúng nhanh đến nhường nào. Mạng lưới của Pandora, được xây dựng trên cáp điện hóa, dĩ nhiên phải là một thực thể tư duy tính bằng mùa, chứ không phải bằng giây."
+  tier="real_science"
+/>
+
+Mức trần đó kéo theo một hệ quả mà phương trình dung lượng chẳng hề nhắc tới. Băng thông quyết định bao nhiêu dữ liệu băng qua một mối nối; tốc độ dẫn truyền lại quyết định bao nhiêu phần *hành tinh* còn nằm trong tầm với của một câu trả lời. Hãy chọn một thời hạn — một phản xạ, một ngày, một mùa — và mặt trăng lập tức chia thành những vùng phối hợp được với nhau trong thời hạn đó và những vùng thì không, mà loại thứ hai thì cũng chẳng khác gì những thế giới riêng biệt.
+
+<LatencyHorizon
+  caption="Chân trời mà một sợi cáp chậm vẽ ra. Ở tốc độ dẫn truyền sinh học cao nhất, một tín hiệu đi được vài nghìn kilômét trong một ngày Pandora — một vạt rừng rộng, chứ chẳng phải một mặt trăng. Bắt mạng lưới đáp lời trong khoảng thời gian của một phản xạ thì vùng với tới được co lại chỉ bằng một thôn làng. Hình vẽ đo theo đường thẳng, tức cách đọc dễ dãi nhất có thể: một tín hiệu thật phải lần theo đường vòng vèo qua rễ và sợi nấm, nên quãng băng qua thực tế mất nhiều tuần chứ không phải đôi ngày như hiển thị. Mọi thứ ngoài vùng sáng không hề bị ngắt kết nối; chúng chỉ đơn giản là ở quá xa để kịp trả lời. Một mạng lưới cấp hành tinh có thể được nối dây hoàn hảo mà vẫn không có nổi một thời hiện tại cấp hành tinh."
+/>
+
+Nhưng tốc độ thô là độ trễ, chứ không phải băng thông — và câu hỏi hữu ích hơn là thực tế một sợi cáp sinh học có thể truyền tải được bao nhiêu bit mỗi giây. Để trả lời điều đó, chúng ta có một phép đo thực tế tuyệt đẹp. Dây thần kinh thị giác của con người — với khoảng một triệu sợi bó chung tín hiệu đầu ra của mắt để đưa đến não bộ, một trong những liên kết dữ liệu băng thông cao nhất trong toàn bộ giới sinh học — đã được ghi nhận ở tốc độ xấp xỉ **mười triệu bit mỗi giây.** Đó chính là tốc độ của một sợi cáp mạng ethernet đời đầu dùng trong gia đình, đang chạy dọc ngay phía sau đôi mắt bạn. Đó là những gì mà một triệu sợi thần kinh song song, được mài giũa qua hàng trăm triệu năm tiến hóa để tối ưu hóa thông lượng thô, có thể làm được.
+
+<DataComparison
+  stats={[
+    { label: "Dây thần kinh thị giác", value: "~10 Mb/s", note: "Một triệu sợi thần kinh — liên kết dữ liệu tốt nhất của sinh học", tone: "teal" },
+    { label: "Tốc độ tín hiệu thần kinh", value: "~120 m/s", note: "Tốc độ điện hóa tối đa; ánh sáng nhanh hơn hàng triệu lần", tone: "amber" },
+    { label: "Cáp quang", value: "terabits/s", note: "Kênh truyền nhân tạo, để làm tỷ lệ tham chiếu", tone: "cyan" },
+    { label: "Suy nghĩ có ý thức", value: "10–50 b/s", note: "Dòng chảy mỏng manh tạo nên trải nghiệm bản ngã của bạn", tone: "magenta" },
+  ]}
+/>
+
+Bím tóc của người Na'vi rõ ràng là một thiết bị phần cứng cao cấp hơn nhiều so với một dây thần kinh thị giác đơn lẻ — các nguồn cộng đồng ước tính nó là một khối dày đặc gồm hàng chục nghìn tua thần kinh. Hãy cứ hào phóng, hào phóng hết mức có thể. Giả sử rằng kuru vận hành một trăm dây thần kinh thị giác song song, và tất cả chúng đều hoàn hảo không tì vết. Điều đó đặt mức trần tuyệt đối cho kênh truyền tsaheylu vào khoảng **một gigabit mỗi giây** — tương đương với một đường kết nối băng thông rộng chất lượng cao tại nhà. Hãy ghi nhớ con số đó; đây chính là sợi cáp mà chúng ta phải đẩy mọi khối lượng dữ liệu đi qua. Và bây giờ, cuối cùng chúng ta cũng có thể thực hiện bài toán mà toàn bộ chương này đã luôn hướng tới.
+## Tính toán lại quá trình truyền tải
+
+Hãy xem xét góc nhìn bản đồ kết nối thần kinh trước — góc nhìn tối đa hóa, coi tâm trí như 2,5 petabyte phần cứng khớp thần kinh. Nếu đẩy 2,5 petabyte đó qua một kênh truyền đang chạy ở mức băng thông hào phóng là một gigabit mỗi giây, quá trình truyền tải sẽ mất *hơn hai trăm ngày* một chút — và đó là trước khi bạn tiêu tốn một bit nào cho việc sửa lỗi mà một bản sao linh hồn không tổn hao yêu cầu. Nếu thêm vào cái giá của sự dự phòng, bạn đang phải đối mặt với hơn một năm trời truyền tải liên tục, không tì vết chỉ để di chuyển một tâm trí. Buổi lễ tại Cây Linh Hồn chỉ diễn ra trong vỏn vẹn một đêm. Dưới lăng kính của bản đồ kết nối thần kinh, nguyên tác không chỉ là phóng đại; nó sai lệch đi hàng trăm lần. Nói một cách phũ phàng, điều đó là bất khả thi.
+
+Nhưng hãy chạy thử *con số còn lại*. Nếu thứ vượt qua mối liên kết không phải là phần cứng mà là luồng ý thức — một dòng chảy mỏng manh chính là bản ngã được trải nghiệm — thì ngân sách dữ liệu sẽ sụp đổ xuống mức chỉ bằng một phần triệu. Một đời người trải nghiệm nhận thức ở tốc độ năm mươi bit một giây, sống trải dài qua ba mươi hay bốn mươi năm, sẽ rơi vào khoảng **bốn mươi đến năm mươi gigabit.** Nhân ba nó lên để phục vụ việc sửa lỗi cường độ cao, làm tròn lên thật hào phóng cho mọi thứ mà ước tính đơn giản này có thể bỏ sót, và cứ coi toàn bộ linh hồn gói gọn trong vài trăm gigabit. Đẩy *con số đó* qua cùng sợi cáp một gigabit mỗi giây và quá trình truyền tải sẽ chỉ mất từ vài phút đến vài giờ.
+
+<Callout variant="insight" title="Con số cứu vớt cả buổi lễ">
+Toàn bộ một bản đồ kết nối thần kinh — hàng trăm ngày, bất khả thi trong một đêm. Toàn bộ một *luồng ý thức* — vài trăm gigabit, có thể truyền tải trọn vẹn trong khoảng thời gian diễn ra một buổi lễ. Ranh giới mong manh quyết định xem lời khẳng định xa xỉ nhất của Pandora là một điều hoang đường hay gần như hợp lý, hoàn toàn nằm ở sự khác biệt giữa việc sao chép *phần cứng* của tâm trí và sao chép *trải nghiệm* của nó. Lý thuyết thông tin không hề bẻ gãy truyền thuyết về Cây Linh Hồn. Nó chỉ cho bạn biết chính xác loại hình chuyển đổi tâm trí nào mà các định luật vật lý cho phép — và đó chính là sự dịch chuyển bản ngã, chứ không phải chất nền cấu tạo nên nó.
+</Callout>
+
+<DiagramFigure
+  src="/images/chapters/the-bandwidth-of-a-planet/fig-04-connectome-vs-stream.webp"
+  alt="Một hình ảnh so sánh song song được thể hiện theo phong cách phát quang sinh học của Pandora: bên trái, một khối phát sáng dày đặc khổng lồ đại diện cho 2,5 petabyte connectome, với nhãn ghi 'hàng trăm ngày'; bên phải, một sợi tơ sáng mỏng manh đại diện cho luồng ý thức dung lượng vài trăm gigabit, với nhãn ghi 'một đêm'; hai khối lượng dữ liệu được hiển thị ở tỷ lệ hoàn toàn khác biệt để truyền tải khoảng cách chênh lệch một triệu lần"
+  labels={[
+    { x: 22, y: 40, side: "right", label: "Ma trận toàn bộ mạng kết nối nơ-ron (Connectome)", note: "Hàng petabyte phần cứng synap và trọng số kết nối — đòi hỏi hàng trăm ngày để truyền tải ở tốc độ bit sinh học." },
+    { x: 56, y: 51, side: "left", label: "Nút thắt cổ chai thông tin", note: "Điểm thắt kênh cốt lõi nén cấu trúc giải phẫu học thành các véc-tơ trạng thái thiết yếu." },
+    { x: 82, y: 53, side: "left", label: "Dòng ý thức", note: "Chuỗi trải nghiệm chủ quan tinh gọn và các vết hằn ký ức hoạt động (hàng trăm gigabit) — có thể truyền tải trong một đêm." }
+  ]}
+  figNo="04"
+  caption="Hai cách để cân đo một linh hồn, và khoảng cách chênh lệch hàng triệu lần giữa chúng. Nếu hiểu theo toàn bộ một bản đồ kết nối thần kinh — mọi khớp thần kinh, hàng petabyte phần cứng — một tâm trí cần hàng trăm ngày để băng qua sợi cáp sinh học và buổi lễ là điều bất khả thi. Nếu hiểu theo luồng ý thức — dòng chảy mỏng manh của bản ngã được trải nghiệm, dung lượng vài trăm gigabit — nó có thể vượt qua chỉ trong một đêm. Toàn bộ tính khả thi của sự kiện thiêng liêng nhất Pandora phụ thuộc vào việc bạn tin một bản ngã thực chất là khái niệm nào trong hai khái niệm này."
+  tier="inference"
+/>
+
+<DiagramFigure
+  src="/images/chapters/the-bandwidth-of-a-planet/fig-08-tree-of-souls-transfer.webp"
+  labels={[
+    { x: 34, y: 36, side: "left", label: "Cơ thể nguồn (Điểm cuối con người)", note: "Cơ thể sinh học đang hấp hối có mạng kết nối nơ-ron và ký ức hoạt động đang được trích xuất." },
+    { x: 77, y: 55, side: "right", label: "Cơ thể Avatar đích", note: "Cơ thể nhân bản tiếp nhận trạng thái thần kinh được chuyển giao qua cầu nối rễ cây." },
+    { x: 52, y: 55, side: "left", label: "Cầu truyền dẫn Cây Linh Hồn", note: "Mảng sợi sinh học khổng lồ định tuyến các luồng băng thông cao giữa hai cơ thể." },
+    { x: 24, y: 72, side: "left", label: "Lưới đồng bộ thần kinh bộ tộc", note: "Cả thị tộc đồng loạt cắm bím tóc thần kinh vào hệ rễ để khuếch đại tín hiệu — nguyên tác cho thấy vòng người nhưng không nói nó góp phần gì." }
+  ]}
+  alt="Dưới Cây Linh Hồn, một phụ nữ loài người hấp hối và cơ thể avatar của bà nằm trên hai chiếc nôi bằng rễ, quanh họ là hàng trăm người Na'vi đang kết nối; các liên kết mờ hội tụ thành một luồng sáng dày chạy qua rễ từ cơ thể nguồn sang cơ thể đích"
+  figNo="08"
+  caption="Phép tính quay về với chính đêm mà nó cần phán xét. Hai cơ thể — một nguồn, một đích — được ghép qua Cây Linh Hồn, trong khi các liên kết thần kinh của cả thị tộc hội tụ lên tuyến đường giữa chúng. Nếu tải trọng là từng khớp thần kinh, buổi lễ phải kéo dài nhiều tháng. Nếu tải trọng là luồng ý thức đã nén, ánh sáng có thể sang tới nơi trước bình minh. Khung cảnh là canon; bộ mã hóa và tải trọng thì không."
+  tier="canon"
+/>
+
+Đó chính là món quà thầm lặng mà những phép toán của người kỹ sư trao trả lại cho người kể chuyện. Nếu hiểu theo nghĩa đen, như một quá trình tải xuống mọi khớp thần kinh, sự dịch chuyển ý thức sẽ vỡ vụn trước bức tường của Shannon. Nhưng nếu hiểu nó như việc truyền tải một *luồng thông tin hẹp, nén chặt và mang ý nghĩa cao* mà bản thân bản ngã ý thức thực sự là — chỉ lấy phần cốt lõi, không lấy hàng gigabyte — thì nó hoàn toàn vừa vặn, thậm chí còn dư dả, bên trong băng thông của một đêm. Và đó không phải là một trò ăn gian. Đó cũng chính là thủ thuật mà bộ não của bạn vận hành trong từng giây phút thức tỉnh, vứt bỏ đi vòi rồng dữ liệu thô và chỉ giữ lại ý nghĩa. Nghi lễ của người Na'vi, nếu nhìn nhận theo cách này, không phải là việc di chuyển một chiếc ổ cứng. Đó là việc di chuyển ảo giác người dùng — và ảo giác người dùng luôn luôn đủ nhỏ để có thể gửi đi.
+
+Cuối cùng, điều này đưa chúng ta quay lại với bài phát biểu của Grace và sự kinh ngạc ẩn chứa trong đó. <ChapterRef slug="the-wood-wide-web" /> đã chỉ ra vì sao con số kết nối mà bà viện tới lại là thứ đáng kinh ngạc sai chỗ — hệ thống dây nối ấy chậm như băng trôi. Chương này bổ sung nửa còn lại của phép tính, và đó mới là nửa gây bất ngờ hơn: ngay cả một đường cáp chậm chạp vẫn có thể chuyên chở một bản ngã, bởi một bản ngã là kiện hàng nhỏ hơn nhiều so với cảm giác từ bên trong. Điều kỳ diệu thực sự của tsaheylu không nằm ở việc nó kết nối mọi thứ. Nó nằm ở chỗ, băng qua một đường cáp sinh học ồn ào và ấm nóng, hoạt động tuân thủ nghiêm ngặt theo những định luật mà Claude Shannon đã viết ra trên Trái Đất vào năm 1948, nó vẫn xoay xở để vận chuyển được khối lượng dữ liệu duy nhất có ý nghĩa — một bản ngã — đủ nhỏ gọn và sạch sẽ để đến nơi trọn vẹn.
+
+<ConfidenceMeter
+  classification={{ canon_pct: 22, inference_pct: 20, speculation_pct: 8, real_science_pct: 50 }}
+/>
+
+Hóa ra, mối liên kết cũng tuân theo cùng một định luật như đường dây điện thoại, sợi cáp quang và dây thần kinh ngay phía sau đôi mắt bạn: đó là các bit, bị giới hạn bởi băng thông và nhiễu. Sự thật này luôn đúng, dù là trên Pandora hay ngay dưới hộp sọ của chính bạn. Những gì nguyên tác bổ sung — một sợi cáp đủ nhanh và sạch để đưa một linh hồn đi qua trong một đêm — là câu duy nhất mà vật lý chưa thể xác nhận, trừ phi linh hồn đang được chuyên chở chính là một bản ngã nhỏ bé, được nén chặt, có tính trải nghiệm chứ không phải là một cỗ máy khổng lồ sản sinh ra nó. Nhìn nhận theo cách đó, sự kiện huyền bí nhất trên toàn cõi Pandora trở thành một bài toán rõ ràng trong lý thuyết thông tin, với một đáp án gần như — gần như — hợp lý.
+
+<OpenQuestions
+  title="Những câu hỏi còn bỏ ngỏ"
+  items={[
+    {
+      question: "Quá trình truyền tải này là sao chép hay di chuyển?",
+      answer: "Lý thuyết thông tin đo lường có bao nhiêu bit băng qua kênh truyền tải, chứ không quan tâm đến việc bản gốc có tồn tại hay không. Theo định nghĩa, một bản sao lưu không tổn hao của tâm trí sẽ giữ nguyên bản gốc — tuy nhiên, nguyên tác lại miêu tả cơ thể nguồn chết đi và một bản ngã duy nhất tiếp tục sống sót. Việc tsaheylu di chuyển một ý thức hay nhân bản nó là một câu hỏi về bản sắc cá nhân, không phải về băng thông, và một chương sau về những tâm trí được tải lên sẽ trực tiếp bàn luận về vấn đề này. Dù theo cách nào thì các bit cũng sẽ truyền đi; những bit đó *sẽ trở thành thứ gì* khi chúng đến đích mới là bí ẩn sâu xa hơn."
+    },
+    {
+      question: "Làm thế nào mà một tâm trí có thể được mã hóa để truyền đi?",
+      answer: "Ngay cả khi chấp nhận góc nhìn về luồng ý thức và sợi cáp gigabit, không một tư liệu nguyên tác nào giải thích cơ chế mã hóa-giải mã (codec) — làm thế nào một chuỗi hoạt động thần kinh sống động có thể được tuần tự hóa thành một tín hiệu, truyền đi, và tái tạo lại trong một bộ não mới mà chất nền tiếp nhận không cần phải là một bản sao gần như giống hệt của người gửi. Trái Đất hoàn toàn chưa có bộ mã hóa nào dành cho tâm trí, ngay cả trên lý thuyết. Phép toán băng thông chứng minh khối lượng dữ liệu đó có thể vừa vặn; nhưng nó không hề cho biết bạn sẽ định dạng dữ liệu đó bằng cách nào."
+    },
+    {
+      question: "Một mạng lưới chậm chạp liệu có thể chứa đựng một bản ngã thời gian thực?",
+      answer: "Tín hiệu điện hóa di chuyển với tốc độ bò trườn, và một mạng lưới bao trùm khắp mặt trăng sẽ mất nhiều ngày để chuyển một tín hiệu từ đầu này sang đầu kia. Do đó, một bản ngã được lưu đệm bên trong Eywa ở giữa quá trình chuyển đổi giữa các cơ thể, có thể sẽ suy nghĩ theo một chuyển động chậm chạp theo quy mô thời gian địa chất, hoặc hoàn toàn không liên tục chút nào. Việc 'hòa nhập cùng Eywa' là một trải nghiệm thực tế, hiện hữu hay là một kho lưu trữ bị đóng băng chờ ngày tải xuống vẫn còn hoàn toàn bỏ ngỏ — và câu trả lời phụ thuộc vào độ trễ, tham số duy nhất mà nguyên tác chưa bao giờ công bố."
+    }
+  ]}
+/>
+
+<SourceList />

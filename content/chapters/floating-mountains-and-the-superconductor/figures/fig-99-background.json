@@ -1,0 +1,19 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "floating-mountains-and-the-superconductor",
+  "role": "hero",
+  "narrative_purpose": "The chapter's full-bleed atmospheric background — a vast, immersive macro vista the reader's text floats over, setting the mood for the whole post.",
+  "subject": "An immense panoramic vista of Pandora's floating mountains seen from very far away and high up — dozens of grey rock islands of many sizes suspended across an enormous sky, dwindling into deep atmospheric haze toward the horizon. No single subject dominates; the scale is planetary and overwhelming.",
+  "scene": "Deep night under a faint bioluminescent glow. Thick layered mist and cloud banks roll between the distant floating masses. The whole scene is dim and low-contrast, mostly dark, so overlaid text stays readable — light is sparse and atmospheric, not a bright focal burst.",
+  "camera": "Ultra-wide establishing panorama, extreme depth, very high vantage looking out and slightly down across the whole archipelago to a distant hazy horizon.",
+  "light": "Very low-key moonless night lighting; faint cool glow rising from mist far below and from scattered bioluminescent patches; no strong highlights, deliberately underexposed and moody.",
+  "palette": "Predominantly deep void blue and near-black, with restrained cyan and teal glows in the mist; almost no warm tones; overall dark and macro.",
+  "style": "Cinematic matte-painting establishing shot, vast atmospheric depth, painterly photoreal.",
+  "detail_level": "Soft and atmospheric throughout — no crisp foreground subject; detail dissolves into haze so the image reads as ambient backdrop, not a figure to study.",
+  "composition": "Full-bleed, horizon low, immense empty sky filling most of the frame; visual weight spread evenly with no bright center, leaving the upper-middle calm and dark for text overlay.",
+  "exclude": ["text", "watermark", "people", "spacecraft", "bright focal subject", "sharp foreground object", "Earth flora"],
+  "consistency_notes": "Grey rock and cyan-teal mist matching the chapter's other floating-mountain scenes, but darker, wider, and more distant — a macro mood backdrop, not a close hero.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no logos, no people, no bright hotspot, no high contrast, no sharp foreground, no warm daylight, no oversaturation, no busy detail",
+  "style_refs": ["pandora-establishing.png"]
+}

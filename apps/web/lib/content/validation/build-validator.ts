@@ -14,6 +14,7 @@ import {
   listYamlFiles,
   parseYaml,
 } from "../loader/yaml-utils";
+import { OUTLINE } from "../outline";
 import { type ReadingTimeDiagnostics, estimateReadingTimeCached } from "../reading-time";
 import { AuthorPersona } from "../schemas/author-persona";
 import { ChapterMeta } from "../schemas/chapter-meta";
@@ -65,7 +66,31 @@ export function validateAllContent(): ValidatorReport {
   };
 
   const chaptersDir = path.join(CONTENT_ROOT, "chapters");
-  for (const slug of listSubdirectories(chaptersDir)) {
+  const chapterDirs = listSubdirectories(chaptersDir);
+
+  // OUTLINE is the sole source of book order, so a chapter that exists on disk
+  // but not in the outline has no position and would silently sort to the end;
+  // an outline slug with no directory is a dead link in the browser and nav.
+  // Both are build failures rather than warnings.
+  const outlineSlugs = new Set(OUTLINE.flatMap((p) => p.chapters.map((c) => c.slug)));
+  for (const slug of chapterDirs) {
+    if (!outlineSlugs.has(slug)) {
+      errors.push(
+        `[chapters/${slug}] directory has no entry in OUTLINE - add it to lib/content/outline.ts or remove the directory`,
+      );
+    }
+  }
+  for (const part of OUTLINE) {
+    for (const ch of part.chapters) {
+      const dir = path.join(chaptersDir, ch.slug);
+      if (!fs.existsSync(dir)) continue; // unwritten slot; expected
+      if (!fs.existsSync(path.join(dir, "meta.yaml"))) {
+        errors.push(`[outline/${part.id}] ${ch.slug} has a directory but no meta.yaml`);
+      }
+    }
+  }
+
+  for (const slug of chapterDirs) {
     const metaPath = chapterMetaPath(slug);
     if (!fs.existsSync(metaPath)) {
       errors.push(`[chapters/${slug}] missing meta.yaml at ${metaPath}`);

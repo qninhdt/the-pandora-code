@@ -1,0 +1,72 @@
+{
+  "viz": {
+    "exopackFilterBudget": {
+      "title": "Spend the filter",
+      "subtitle": "One pack of sorbent, two poisons. Decide how to split it.",
+      "aria": "A cutaway of an exo-pack gas train: raw Pandoran air entering, two sorbent beds sized by the reader, and the breathable mixture delivered to the mask",
+      "demandLabel": "How hard the wearer is breathing",
+      "rest": "Standing still",
+      "work": "Working hard",
+      "intake": "Raw air",
+      "delivered": "To the mask",
+      "scrubberBed": "CO₂ scrubber",
+      "sulfideBed": "Sulfide bed",
+      "co2Amount": "CO₂ {value}",
+      "h2sAmount": "H₂S {value} ppm",
+      "flowCaption": "The pack draws in the moon's own air — nothing is carried",
+      "noTank": "No oxygen tank anywhere in this diagram",
+      "leakLabel": "Share of this poison still getting through",
+      "co2Out": "Carbon dioxide delivered",
+      "co2Note": "Safe below 0.5%",
+      "h2sOut": "Hydrogen sulfide delivered",
+      "h2sNote": "Rated for {limit} ppm",
+      "oxygenOut": "Oxygen pressure delivered",
+      "oxygenNote": "Raw air already offers {raw} kPa",
+      "splitLabel": "Split the sorbent between the two beds",
+      "splitDisplay": "{scrubber}% scrubber / {bed}% sulfide",
+      "h2sLabel": "Hydrogen sulfide in the outside air",
+      "service": "At this split and this haze the sulfide bed lasts about {days} days before it breaks through and the poison starts arriving unfiltered.",
+      "serviceClean": "With no sulfide in the outside air the bed never loads up — but nothing about this moon's volcanoes makes that a setting you can plan for.",
+      "verdict": {
+        "clean": "Both poisons stopped, and the air arriving at the mask is cleaner of carbon dioxide than Earth's own. This is what the pack is designed to do — and note what it never had to supply: a single molecule of oxygen.",
+        "pass": "Survivable. Carbon dioxide is above the pack's own target but well inside what a human tolerates, and the sulfide is held. A working compromise rather than a clean one.",
+        "co2": "The scrubber has been starved. Carbon dioxide is coming through above what a human can tolerate, and the wearer will begin gulping air that only makes it worse — the reversed gradient, indoors, inside the mask.",
+        "h2s": "The trap. You spent the pack on the frightening number and the quiet one got through: enough sulfide to jam the enzyme that lets cells use oxygen. Blood chemistry perfect, mitochondria stalling.",
+        "both": "Both beds are too thin for this air. Carbon dioxide is acidifying the blood while sulfide shuts down the cells that were meant to use the oxygen — the two killers arriving together, which is exactly what an unmasked human faces."
+      }
+    },
+    "rainShadowTransect": {
+      "title": "Where the dry country hides",
+      "subtitle": "Push a mountain range across a sea wind and watch a continent split in two.",
+      "aria": "A cross-section from ocean to inland plain across a mountain range: {windward} centimetres of rain a year on the windward flank, {lee} on the lee plain",
+      "worldLabel": "Which world's air is doing the climbing",
+      "earth": "Earth",
+      "pandora": "Pandora",
+      "sea": "Ocean",
+      "windward": "Windward flank",
+      "lee": "Lee plain",
+      "crest": "Crest",
+      "cloudBase": "Cloud forms here",
+      "wind": "Sea wind",
+      "descent": "Sinking, warming, drinking",
+      "rainUnit": "cm/yr",
+      "supply": "Rain the circulation supplies",
+      "supplyNote": "Before any mountain, at {lat}° latitude",
+      "leeRain": "Rain reaching the lee plain",
+      "leeNote": "Air arrives at {rh}% humidity",
+      "foehn": "Warmer on the far side",
+      "foehnNote": "The same air, hotter than it left the sea",
+      "ridgeLabel": "Height of the range",
+      "ridgeDisplay": "{km} km",
+      "latLabel": "Latitude of the transect",
+      "latDisplay": "{lat}° from the equator",
+      "crossCheck": "Move the same range to {world} and the lee plain gets about {lee} {unit} instead. Its air cools {otherLapse} °C for every kilometre it climbs, against {thisLapse} °C here — and a range only makes a desert by cooling the air enough to wring it out.",
+      "verdict": {
+        "wetBoth": "No shadow worth the name. The air clears the crest with most of its water still aboard, so both sides stay wet — the ordinary case on a world whose air cools slowly and whose wet belt reaches this far.",
+        "gentle": "A soft shadow. The lee is drier than the coast but nowhere near arid; this is forest that grows a little thinner, not a frontier between green and bare.",
+        "grassland": "Semi-arid grassland — the honest Pandoran dry country. Not a desert, just land where the rain that fell on the far slope never made it over the crest. This is the setting the windswept Upper Plains fit.",
+        "desert": "A real rain shadow. The air that crossed the crest arrives hot and starved, and it takes water out of the ground rather than giving any back. On Pandora this needs both a high range and a latitude the wet belt has already abandoned — which is why the moon has interior dry pockets rather than desert belts."
+      }
+    }
+  }
+}

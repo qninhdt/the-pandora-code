@@ -1,0 +1,19 @@
+{
+  "id": "fig-08-abrikosov-vortices",
+  "chapter_slug": "floating-mountains-and-the-superconductor",
+  "role": "diagram",
+  "narrative_purpose": "Shows a dark slab pierced by an orderly array of glowing threads, each thread a bright dot ringed by a small swirl.",
+  "subject": "A dark flat slab seen face-on. Piercing through it is a neat, evenly spaced triangular array of bright vertical threads, each thread appearing as a glowing dot on the slab's face. Around each dot is a small circular swirl of fainter circulating lines, like a tiny whirlpool. A few threads near the front are drawn larger to show the bright central dot surrounded by its ring of swirl.",
+  "scene": "Just the dark slab and the regular grid of glowing pierced threads with their little swirls, on a near-black background. Slight tilt so the threads read as tubes going through the slab.",
+  "camera": "Near face-on view of the slab with a slight downward tilt to show depth.",
+  "light": "Flat even; the thread dots are the brightest points, the swirl rings fainter.",
+  "palette": "Near-black background and dark slab, glowing cyan thread dots, faint teal swirl rings.",
+  "style": "Clean elegant schematic of glowing dots and thin circulating lines.",
+  "detail_level": "Regular repeating array; two or three threads enlarged to show dot-plus-swirl structure.",
+  "composition": "Array fills the slab face evenly; a couple of enlarged example threads toward the lower front.",
+  "exclude": ["text", "letters", "numbers", "watermark", "photographic texture"],
+  "consistency_notes": "Glowing cyan/teal elements on a near-black background, matching the chapter's schematic diagrams.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no numbers, no photorealism, no 3D bevels, no clutter, no irregular spacing",
+  "style_refs": ["pandora-establishing.png"]
+}

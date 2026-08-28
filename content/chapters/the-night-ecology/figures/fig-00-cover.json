@@ -1,0 +1,19 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "the-night-ecology",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate for the landing book-map: a Pandoran forest at the moment the sky darkens and the ground answers with its own light, posed so the reversal - the light coming from below, not above - reads at a glance as the puzzle the chapter solves.",
+  "subject": "A wide Pandoran forest clearing at the instant of the afternoon eclipse. Overhead the banded bulk of a gas giant has swallowed the sun and the sky is deep indigo; below, the forest floor has come alight from underneath - branching root networks tracing cyan paths through the leaf litter, glowing moss cushions, luminous fungal mats at the trunk bases, and veins of light running up the standing leaves. A single spiral-leafed plant is caught half-folded. In the middle distance a large six-legged grazing animal is walking away into cover while, low in the near foreground, the burnished dark shape of a six-legged pack predator steps out of shadow into the lit ground.",
+  "scene": "A broad clearing among enormous buttressed trunks, the canopy a dark vault overhead, mist pooling low, the lit ground receding into layered forest depth.",
+  "camera": "A wide, slightly low establishing view that keeps both the darkened sky and the self-lit ground in frame, the two animals small enough to read as figures in a landscape.",
+  "light": "The scene's only real light comes from the ground upward - cyan and violet bioluminescence throwing soft uplight onto trunk bases and undersides of leaves - with a thin cold rim of planetshine along the upper canopy edges and no warm sunlight anywhere.",
+  "palette": "Void-indigo sky, deep teal-black forest mass, cyan and faint violet ground glow, one restrained cool amber ember at the predator's eye.",
+  "style": "Painterly cinematic naturalist plate, hand-painted texture, strong atmospheric depth.",
+  "detail_level": "Crisp on the glowing root network and the foreground predator; the grazer and mid-forest softer; canopy and sky dissolving into haze.",
+  "composition": "The dark canopy and eclipsed sky across the upper third, the luminous ground filling the lower two-thirds, the predator lower-left and the departing grazer centre-right, generous dark sky for text, 3:2 landscape.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with the key light coming from the ground, not the sky. Same dark glowing mood as the established chapter covers; reuse the forest-cathedral trunk language from the earlier forest plates.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style, no warm sunlight",
+  "style_refs": ["pandora-establishing.png"]
+}

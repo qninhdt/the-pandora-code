@@ -1,0 +1,20 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "what-is-pandoran-life-made-of",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate on the landing book-map: a single image that says 'two worlds of life, one shared chemistry' — focusing on the microscopic, elemental connection that makes the splice possible.",
+  "subject": "A glowing, monumental molecular structure of a DNA double helix and carbon lattice, rising like a crystalline tree from a dark pool of water; one side of the helix glows with Earth-like warm golden bioluminescence, while the other side shines in signature Pandoran cyan and magenta. The two halves seamlessly interlock in the center.",
+  "scene": "A microscopic realm scaled up to look like an expansive, dark, awe-inspiring landscape, with the molecular structure standing as a towering monolith.",
+  "camera": "A dramatic low angle looking up at the glowing double helix structure, treating the molecules as if they were giant architecture.",
+  "light": "Ethereal internal bioluminescence from the molecule itself — warm gold on the left, cool cyan and magenta on the right, illuminating the dark reflective water below and casting a soft glow into the surrounding void.",
+  "palette": "Deep void-indigo background, striking contrast between warm ember-gold (Earth chemistry) and vivid bioluminescent cyan/magenta (Pandoran chemistry), grounded by dark teal shadows.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, conceptual macro-photography transformed into a landscape.",
+  "detail_level": "Hyper-crisp on the interlocking bonds of the helix and the carbon lattice, capturing the crystalline beauty of the molecules, fading into soft, dark atmospheric depth of field.",
+  "composition": "The towering double helix centered, perfectly balanced and symmetrical, rising from the lower third, surrounded by vast, quiet negative space.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "modern Earth logos", "human figures", "Na'vi figures"],
+  "consistency_notes": "Cool Pandora palette mixed with Earth warmth; a conceptual representation of the chapter's core theme of shared biochemistry.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style, no literal characters",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}
