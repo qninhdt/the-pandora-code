@@ -3,6 +3,7 @@ import { ClosingCall } from "@/components/landing/closing-call";
 import { type BrowserPart, CodexBrowser } from "@/components/landing/codex-browser";
 import { DescentSection } from "@/components/landing/descent-section";
 import { HeroSurface } from "@/components/landing/hero-surface";
+import { LandingScene } from "@/components/landing/landing-scene";
 import {
   ContinueReadingCard,
   type ContinueReadingItem,
@@ -74,57 +75,60 @@ export default async function Home({ params }: HomeProps) {
           createBreadcrumbListSchema([{ name: t("site.name"), item: `/${loc}` }]),
         ]}
       />
-      <HeroSurface
-        progressLabel={t("home.decoding")}
-        progressCount={t("home.decodingChapters", {
-          done: chaptersDone,
-          total: chaptersTotal,
-        })}
-        chaptersDone={chaptersDone}
-        chaptersTotal={chaptersTotal}
-        title={t("home.title")}
-        intro={t("home.intro")}
-        ctaChapters={t("home.ctaChapters")}
-        ctaGlossary={t("nav.glossary")}
-        chaptersHref={`/${loc}/chapters`}
-        glossaryHref={`/${loc}/glossary`}
-      />
-
-      <div className="relative z-20 mx-auto h-0 w-full max-w-6xl px-6">
-        <ContinueReadingCard
-          items={continueItems}
-          label={t("chapter.continueReading")}
-          className="-translate-y-[calc(100%+1.5rem)]"
+      <LandingScene variant="hero">
+        <HeroSurface
+          progressLabel={t("home.decoding")}
+          progressCount={t("home.decodingChapters", {
+            done: chaptersDone,
+            total: chaptersTotal,
+          })}
+          chaptersDone={chaptersDone}
+          chaptersTotal={chaptersTotal}
+          title={t("home.title")}
+          intro={t("home.intro")}
+          ctaChapters={t("home.ctaChapters")}
+          ctaGlossary={t("nav.glossary")}
+          chaptersHref={`/${loc}/chapters`}
+          glossaryHref={`/${loc}/glossary`}
         />
-      </div>
+        <div className="relative z-20 mx-auto h-0 w-full max-w-6xl px-6">
+          <ContinueReadingCard
+            items={continueItems}
+            label={t("chapter.continueReading")}
+            className="-translate-y-[calc(100%+1.5rem)]"
+          />
+        </div>
+      </LandingScene>
 
-      <DescentSection
-        kicker={t("landing.descentKicker")}
-        heading={t("landing.descentHeading")}
-        body={t("landing.descentBody")}
-        note={t("landing.descentNote")}
-      />
+      <LandingScene variant="descent">
+        <DescentSection
+          kicker={t("landing.descentKicker")}
+          heading={t("landing.descentHeading")}
+          body={t("landing.descentBody")}
+          note={t("landing.descentNote")}
+        />
+      </LandingScene>
 
-      {/* <DiagonalBreak tone="cyan" /> */}
+      <LandingScene variant="field">
+        <CodexBrowser
+          kicker={t("landing.codexKicker")}
+          heading={t("landing.codexHeading")}
+          comingLabel={t("landing.coming")}
+          parts={parts}
+        />
+      </LandingScene>
 
-      <CodexBrowser
-        kicker={t("landing.codexKicker")}
-        heading={t("landing.codexHeading")}
-        comingLabel={t("landing.coming")}
-        parts={parts}
-      />
-
-      {/* <DiagonalBreak tone="teal" flip /> */}
-
-      <ClosingCall
-        kicker={t("landing.closingKicker")}
-        heading={t("landing.closingHeading")}
-        body={t("landing.closingBody")}
-        cta={t("home.ctaChapters")}
-        secondaryCta={t("nav.glossary")}
-        chaptersHref={`/${loc}/chapters`}
-        glossaryHref={`/${loc}/glossary`}
-      />
+      <LandingScene variant="closing">
+        <ClosingCall
+          kicker={t("landing.closingKicker")}
+          heading={t("landing.closingHeading")}
+          body={t("landing.closingBody")}
+          cta={t("home.ctaChapters")}
+          secondaryCta={t("nav.glossary")}
+          chaptersHref={`/${loc}/chapters`}
+          glossaryHref={`/${loc}/glossary`}
+        />
+      </LandingScene>
     </>
   );
 }

@@ -2,7 +2,12 @@
 // the style-anchor poster - no canvas, no JS animation loop. Drifting motes use
 // a CSS keyframe that is disabled under reduced motion (see globals.css).
 
-export function AtmosphereFallback() {
+interface AtmosphereFallbackProps {
+  /** Landing pages render a fixed particle layer above their painted vistas. */
+  showMotes?: boolean;
+}
+
+export function AtmosphereFallback({ showMotes = true }: AtmosphereFallbackProps) {
   return (
     <div aria-hidden className="absolute inset-0 overflow-hidden">
       {/* Establishing-shot poster, deeply darkened so text stays readable. */}
@@ -21,7 +26,7 @@ export function AtmosphereFallback() {
         }}
       />
       {/* Slow drifting mote layer (CSS keyframe; off under reduced motion). */}
-      <div className="atmosphere-motes absolute inset-0" />
+      {showMotes && <div className="atmosphere-motes absolute inset-0" />}
       {/* Fade toward the void at the edges. */}
       <div
         className="absolute inset-0"

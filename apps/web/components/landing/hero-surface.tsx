@@ -4,10 +4,7 @@ import { DecodeProgress } from "@/components/landing/decode-progress";
 import { useReducedMotionSafe } from "@/components/motion/use-reduced-motion-safe";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
-
-const HERO_VISTA = "/images/pages/hero-vista.png";
 
 interface HeroSurfaceProps {
   progressLabel: string;
@@ -22,10 +19,8 @@ interface HeroSurfaceProps {
   glossaryHref: string;
 }
 
-// Full-screen opening, built in depth layers: a painted Pandora vista at the
-// back, a bioluminescent aurora wash, grain, and a vignette for legibility. The
-// title emerges from haze - blurred + faint + slightly scaled, settling into
-// focus. Under reduced motion everything is still and the title simply appears.
+// Full-screen opening. LandingScene owns the artwork and field layers so this
+// component only controls the introductory content and its entrance motion.
 export function HeroSurface({
   progressLabel,
   progressCount,
@@ -49,43 +44,8 @@ export function HeroSurface({
         };
 
   return (
-    <section className="relative flex min-h-dvh flex-col items-center justify-center overflow-hidden px-6 text-center">
-      {/* Layer 1 - painted establishing vista at the back. */}
-      <div aria-hidden className="absolute inset-0 -z-30">
-        <Image
-          src={HERO_VISTA}
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          quality={78}
-          className={`size-full object-cover ${reduced ? "" : "animate-ken-burns"}`}
-        />
-      </div>
-
-      {/* Layer 2 - bioluminescent aurora wash. */}
-      <div
-        aria-hidden
-        className={`pointer-events-none absolute inset-0 -z-20 ${reduced ? "" : "animate-aurora"}`}
-        style={{
-          background:
-            "radial-gradient(70% 55% at 22% 18%, color-mix(in oklab, var(--cyan) 26%, transparent), transparent 60%), radial-gradient(60% 50% at 82% 28%, color-mix(in oklab, var(--teal) 22%, transparent), transparent 60%), radial-gradient(50% 45% at 60% 92%, color-mix(in oklab, var(--magenta) 14%, transparent), transparent 60%)",
-        }}
-      />
-
-      {/* Layer 3 - vignette + blend into the void below, and a grain tooth. */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10"
-        style={{
-          background:
-            "radial-gradient(120% 80% at 50% 35%, transparent 45%, color-mix(in oklab, var(--void) 70%, transparent) 100%), linear-gradient(to bottom, color-mix(in oklab, var(--void) 35%, transparent) 0%, transparent 28%, transparent 62%, var(--void) 100%)",
-        }}
-      />
-      <div aria-hidden className="grain-overlay pointer-events-none absolute inset-0 -z-10" />
-
-      {/* Content. */}
-      <div className="relative z-10 flex flex-col items-center">
+    <section className="relative flex min-h-dvh flex-col items-center justify-center px-6 text-center">
+      <div className="flex flex-col items-center">
         <motion.div
           {...rise(0.1)}
           className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-border-strong/70 bg-void/40 px-4 py-1.5 backdrop-blur"

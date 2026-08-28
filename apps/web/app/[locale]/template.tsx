@@ -2,6 +2,7 @@
 
 import { useReducedMotionSafe } from "@/components/motion/use-reduced-motion-safe";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
 
 // Next.js `template.tsx` re-mounts its children on every navigation (unlike
@@ -17,18 +18,24 @@ import type { ReactNode } from "react";
 // anchored to the viewport.
 export default function LocaleTemplate({ children }: { children: ReactNode }) {
   const reduced = useReducedMotionSafe();
+  const pathname = usePathname();
+  const landing = /^\/(?:en|vi)\/?$/.test(pathname);
+  // Landing particles are a sibling fixed layer in the layout. Keep the
+  // landing route transparent to the root stacking context so its z-10 copy
+  // can sit above those particles while painted backdrops stay below them.
+  const stackClass = landing ? "relative" : "relative isolate";
 
-  // Keep an isolated stacking context even when the enter animation is
-  // skipped. Chapter/page backgrounds use z-index -2 and would otherwise be
-  // painted underneath the body's background when this route wrapper becomes
-  // a fragment.
-  if (reduced) {
-    return <div className="relative isolate">{children}</div>;
+  // Keep an isolated stacking context for reader routes: their page-level
+  // backgrounds use negative z-index values and must stay above the body
+  // background. The landing route opts out so its copy can layer over the
+  // fixed particle canvas owned by the layout.
+  if (reduced || landing) {
+    return <div className={stackClass}>{children}</div>;
   }
 
   return (
     <motion.div
-      className="relative isolate"
+      className={stackClass}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}

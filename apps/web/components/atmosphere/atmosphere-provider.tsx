@@ -25,7 +25,9 @@ export function AtmosphereProvider() {
   const { tier, weaker } = useAtmosphereTier();
   const pathname = usePathname();
   const profile = profileFor(pathname);
-  const landingFallback = tier === "fallback" && /^\/(?:en|vi)\/?$/.test(pathname);
+  const isLanding = /^\/(?:en|vi)\/?$/.test(pathname);
+  const landingFallback = tier === "fallback" && isLanding;
+  const landingWebgl = tier === "webgl" && isLanding;
 
   // Pause the WebGL loop while the tab is hidden (battery / CPU).
   const [hidden, setHidden] = useState(false);
@@ -39,9 +41,11 @@ export function AtmosphereProvider() {
     <>
       <div className="atmosphere-layer" aria-hidden>
         {tier === "pending" ? null : tier === "webgl" ? (
-          <AtmosphereCanvas profile={profile} weaker={weaker} paused={hidden} />
+          landingWebgl ? null : (
+            <AtmosphereCanvas profile={profile} weaker={weaker} paused={hidden} />
+          )
         ) : (
-          <AtmosphereFallback />
+          <AtmosphereFallback showMotes={!isLanding} />
         )}
         {/* Light vignette: center stays clear so the field shows; edges deepen
             toward the void to frame the content. */}
@@ -53,8 +57,14 @@ export function AtmosphereProvider() {
           }}
         />
       </div>
-      {/* The fallback particles sit above landing artwork, while all copy and
-          controls opt into a higher content stack inside their sections. */}
+      {/* Keep the complete landing atmosphere above painted vistas but below
+          each section's content stack. One transparent canvas avoids creating
+          two WebGL contexts while preserving both haze and drifting spores. */}
+      {landingWebgl && (
+        <div className="atmosphere-landing-overlay" aria-hidden>
+          <AtmosphereCanvas profile={profile} weaker={weaker} paused={hidden} />
+        </div>
+      )}
       {landingFallback && <div className="atmosphere-motes-overlay" aria-hidden />}
     </>
   );

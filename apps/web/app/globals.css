@@ -128,8 +128,7 @@ html {
 }
 
 /* Drifting motes for the 2D fallback - tiled radial dots crawling slowly. */
-.atmosphere-motes,
-.atmosphere-motes-overlay {
+.atmosphere-motes {
   background-image: radial-gradient(
       color-mix(in oklab, var(--cyan) 60%, transparent) 0.5px,
       transparent 1.5px
@@ -147,8 +146,41 @@ html {
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  opacity: 0.8;
+  background-image: radial-gradient(
+      circle,
+      color-mix(in oklab, var(--cyan) 90%, white) 0 1px,
+      color-mix(in oklab, var(--cyan) 60%, transparent) 1.5px,
+      transparent 4px
+    ),
+    radial-gradient(
+      circle,
+      color-mix(in oklab, var(--teal) 85%, white) 0 1px,
+      color-mix(in oklab, var(--teal) 55%, transparent) 1.5px,
+      transparent 4px
+    );
+  background-size: 180px 180px, 280px 280px;
+  background-position: 0 0, 90px 130px;
+  opacity: 0.9;
   mix-blend-mode: screen;
+  animation: atmosphere-drift 60s linear infinite;
+}
+
+/* The landing atmosphere uses a transparent canvas above painted vistas so
+   those images cannot occlude the spores; copy remains above this layer at
+   z-index 10+. */
+.atmosphere-landing-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.9;
+  mix-blend-mode: screen;
+}
+
+.atmosphere-landing-overlay canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes atmosphere-drift {
@@ -162,7 +194,8 @@ html {
     scroll-behavior: auto;
   }
   .atmosphere-motes,
-  .atmosphere-motes-overlay {
+  .atmosphere-motes-overlay,
+  .atmosphere-landing-overlay {
     animation: none;
   }
 }
