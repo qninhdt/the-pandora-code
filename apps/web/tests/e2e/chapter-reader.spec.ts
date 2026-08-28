@@ -45,11 +45,16 @@ test.describe("chapter reader", () => {
     const card = page.getByRole("link", { name: "83%" }).locator("..");
     await expect(card).toBeVisible();
     const box = await card.boundingBox();
+    const descent = page.locator('section:has(img[src*="descent-deep"])');
+    const descentBox = await descent.boundingBox();
     const viewport = page.viewportSize();
     expect(box).not.toBeNull();
+    expect(descentBox).not.toBeNull();
     expect(viewport).not.toBeNull();
     expect(box!.x).toBeGreaterThan(100);
     expect(viewport!.width - (box!.x + box!.width)).toBeGreaterThan(100);
+    expect(box!.y).toBeLessThan(descentBox!.y);
+    expect(box!.y + box!.height).toBeGreaterThan(descentBox!.y);
   });
 
   test("unknown slug returns 404", async ({ page }) => {

@@ -1,4 +1,5 @@
 import { defaultLocale, isLocale, locales } from "@/i18n/config";
+import { getMessages } from "@/i18n/messages";
 import { describe, expect, it } from "vitest";
 
 describe("locale config", () => {
@@ -20,5 +21,12 @@ describe("locale config", () => {
     expect(isLocale("en")).toBe(true);
     expect(isLocale("fr")).toBe(false);
     expect(isLocale("")).toBe(false);
+  });
+
+  it("loads every locale catalog without dynamic module resolution", () => {
+    expect(getMessages("en")).toHaveProperty("viz.seismicShadow.title");
+    expect(getMessages("vi")).toHaveProperty("viz.seismicShadow.title");
+    expect(getMessages("en")).toHaveProperty("viz.perchedWaterBudget.title");
+    expect(getMessages("vi")).toHaveProperty("viz.perchedWaterBudget.title");
   });
 });
