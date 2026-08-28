@@ -6,6 +6,8 @@ import { Parallax } from "@/components/motion/parallax";
 import Image from "next/image";
 
 const DESCENT_BG = "/images/pages/descent-deep.webp";
+const DESCENT_EDGE_MASK =
+  "linear-gradient(to bottom, transparent 0%, black 14%, black 78%, transparent 100%)";
 
 interface DescentSectionProps {
   kicker: string;
@@ -33,6 +35,7 @@ export function DescentSection({ kicker, heading, body, note }: DescentSectionPr
           sizes="100vw"
           quality={68}
           className="size-full scale-[1.3] object-cover opacity-40"
+          style={{ maskImage: DESCENT_EDGE_MASK, WebkitMaskImage: DESCENT_EDGE_MASK }}
         />
       </Parallax>
       {/* Haze gradients: blend the band into the void above/below and dim the
@@ -43,6 +46,8 @@ export function DescentSection({ kicker, heading, body, note }: DescentSectionPr
         style={{
           background:
             "linear-gradient(to bottom, var(--void) 0%, transparent 22%, transparent 78%, var(--void) 100%), linear-gradient(to right, var(--void) 12%, color-mix(in oklab, var(--void) 55%, transparent) 55%, transparent 100%)",
+          maskImage: DESCENT_EDGE_MASK,
+          WebkitMaskImage: DESCENT_EDGE_MASK,
         }}
       />
 

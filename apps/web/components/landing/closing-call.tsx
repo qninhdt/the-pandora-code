@@ -7,6 +7,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const CTA_BG = "/images/pages/cta-horizon.webp";
+const CTA_EDGE_MASK =
+  "linear-gradient(to bottom, transparent 0%, black 14%, black 78%, transparent 100%)";
 
 interface ClosingCallProps {
   kicker: string;
@@ -45,6 +47,7 @@ export function ClosingCall({
           sizes="100vw"
           quality={68}
           className="size-full scale-[1.35] object-cover"
+          style={{ maskImage: CTA_EDGE_MASK, WebkitMaskImage: CTA_EDGE_MASK }}
         />
       </Parallax>
       {/* Legibility + blend into the void above and below. */}
@@ -54,6 +57,8 @@ export function ClosingCall({
         style={{
           background:
             "radial-gradient(110% 75% at 50% 55%, transparent 35%, color-mix(in oklab, var(--void) 78%, transparent) 100%), linear-gradient(to bottom, var(--void) 0%, transparent 30%, transparent 60%, var(--void) 100%)",
+          maskImage: CTA_EDGE_MASK,
+          WebkitMaskImage: CTA_EDGE_MASK,
         }}
       />
       <div aria-hidden className="grain-overlay pointer-events-none absolute inset-0 -z-10" />
