@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  activateWaitingWorker,
   clearDevelopmentOfflineState,
   getOfflineStatus,
   isOfflineSupported,
@@ -17,7 +18,6 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState } 
 interface OfflineContextValue {
   supported: boolean;
   ready: boolean;
-  waiting: boolean;
   installAvailable: boolean;
   iosInstallHint: boolean;
   storageEstimate: { usage: number; quota: number } | null;
@@ -30,7 +30,6 @@ interface OfflineContextValue {
   ) => Promise<boolean>;
   remove: (locale: OfflineLocale, slug: string) => Promise<boolean>;
   cancel: (locale: OfflineLocale, slug: string) => Promise<boolean>;
-  activateUpdate: () => Promise<void>;
   install: () => Promise<void>;
 }
 
@@ -46,7 +45,6 @@ export function OfflineProvider({ children }: { children: React.ReactNode }) {
   // detected after hydration so offline controls do not introduce a mismatch.
   const [supported, setSupported] = useState(false);
   const [ready, setReady] = useState(false);
-  const [waiting, setWaiting] = useState(false);
   const [installEvent, setInstallEvent] = useState<BeforeInstallPromptEvent | null>(null);
   const [iosInstallHint, setIosInstallHint] = useState(false);
   const [storageEstimate, setStorageEstimate] = useState<{ usage: number; quota: number } | null>(
@@ -108,15 +106,28 @@ export function OfflineProvider({ children }: { children: React.ReactNode }) {
     let disposed = false;
     let registration: ServiceWorkerRegistration | null = null;
     let installing: ServiceWorker | null = null;
+    let activatingUpdate = false;
 
-    const markWaiting = () => {
-      if (!disposed && registration?.waiting && navigator.serviceWorker.controller) {
-        setWaiting(true);
+    const activateUpdate = async () => {
+      if (
+        disposed ||
+        activatingUpdate ||
+        !registration?.waiting ||
+        !navigator.serviceWorker.controller
+      ) {
+        return;
+      }
+      activatingUpdate = true;
+      try {
+        if ((await activateWaitingWorker(registration)) && !disposed) window.location.reload();
+      } catch {
+        // A superseded or failed worker will be retried by the next update check.
+        activatingUpdate = false;
       }
     };
 
     const onInstallingStateChange = () => {
-      if (installing?.state === "installed") markWaiting();
+      if (installing?.state === "installed") void activateUpdate();
     };
 
     const onUpdateFound = () => {
@@ -138,13 +149,10 @@ export function OfflineProvider({ children }: { children: React.ReactNode }) {
         registration = await registerOfflineWorker();
         if (!registration || disposed) return;
         registration.addEventListener("updatefound", onUpdateFound);
-        if (registration.waiting) setWaiting(true);
         onUpdateFound();
-        // `registerOfflineWorker` already requests an update, but this second
-        // check covers registrations returned from another caller during the
-        // same render and keeps the update banner deterministic.
+        // Cover registrations returned from another caller during this render.
         await registration.update().catch(() => undefined);
-        markWaiting();
+        await activateUpdate();
       } catch {
         // IndexedDB remains the source of truth when worker registration is
         // temporarily unavailable (for example during an update).
@@ -152,15 +160,12 @@ export function OfflineProvider({ children }: { children: React.ReactNode }) {
     };
 
     void observeUpdates();
-    const onControllerChange = () => setReady(true);
-    navigator.serviceWorker.addEventListener("controllerchange", onControllerChange);
     window.addEventListener("focus", checkForUpdate);
     document.addEventListener("visibilitychange", checkForUpdate);
     return () => {
       disposed = true;
       registration?.removeEventListener("updatefound", onUpdateFound);
       installing?.removeEventListener("statechange", onInstallingStateChange);
-      navigator.serviceWorker.removeEventListener("controllerchange", onControllerChange);
       window.removeEventListener("focus", checkForUpdate);
       document.removeEventListener("visibilitychange", checkForUpdate);
     };
@@ -210,19 +215,6 @@ export function OfflineProvider({ children }: { children: React.ReactNode }) {
     [refresh],
   );
 
-  const activateUpdate = useCallback(async () => {
-    if (!supported) return;
-    const registration = await registerOfflineWorker();
-    const waiting = registration?.waiting;
-    if (!waiting) return;
-    const request = {
-      type: "ACTIVATE_UPDATE",
-      protocolVersion: OFFLINE_PROTOCOL_VERSION,
-    } as const;
-    await sendOfflineRequest(request, undefined, waiting);
-    window.location.reload();
-  }, [supported]);
-
   const install = useCallback(async () => {
     if (!installEvent) return;
     await installEvent.prompt();
@@ -234,7 +226,6 @@ export function OfflineProvider({ children }: { children: React.ReactNode }) {
     () => ({
       supported,
       ready,
-      waiting,
       installAvailable: Boolean(installEvent),
       iosInstallHint,
       storageEstimate,
@@ -243,13 +234,11 @@ export function OfflineProvider({ children }: { children: React.ReactNode }) {
       download,
       remove,
       cancel,
-      activateUpdate,
       install,
     }),
     [
       supported,
       ready,
-      waiting,
       installEvent,
       iosInstallHint,
       storageEstimate,
@@ -258,7 +247,6 @@ export function OfflineProvider({ children }: { children: React.ReactNode }) {
       download,
       remove,
       cancel,
-      activateUpdate,
       install,
     ],
   );

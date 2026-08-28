@@ -29,8 +29,6 @@
     "refresh": "Làm mới thư viện",
     "failed": "Tải thất bại",
     "actionError": "Không thể cập nhật thư viện offline. Hãy thử lại.",
-    "updateAvailable": "Đã có phiên bản mới.",
-    "updateNow": "Tải lại ngay",
     "installAvailable": "Cài để đọc offline nhanh hơn.",
     "installNow": "Cài đặt",
     "iosInstallHint": "Trên iOS: nhấn Chia sẻ, rồi chọn Thêm vào màn hình chính.",

@@ -29,8 +29,6 @@
     "refresh": "Refresh library",
     "failed": "Download failed",
     "actionError": "Could not update the offline library. Try again.",
-    "updateAvailable": "A new version is ready.",
-    "updateNow": "Reload now",
     "installAvailable": "Install for faster offline reading.",
     "installNow": "Install",
     "iosInstallHint": "On iOS: tap Share, then Add to Home Screen.",

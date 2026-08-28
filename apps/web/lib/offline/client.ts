@@ -59,6 +59,41 @@ export async function registerOfflineWorker(): Promise<ServiceWorkerRegistration
   return registration;
 }
 
+/** Activate an installed update and resolve only after it is safe to reload. */
+export async function activateWaitingWorker(
+  registration: ServiceWorkerRegistration,
+): Promise<boolean> {
+  const worker = registration.waiting;
+  if (!worker) return false;
+
+  const listenerController = new AbortController();
+  const activated = new Promise<void>((resolve, reject) => {
+    const onStateChange = () => {
+      if (worker.state === "activated") {
+        resolve();
+      } else if (worker.state === "redundant") {
+        reject(new Error("Offline worker update became redundant"));
+      }
+    };
+    worker.addEventListener("statechange", onStateChange, { signal: listenerController.signal });
+    onStateChange();
+  });
+
+  try {
+    await Promise.all([
+      sendOfflineRequest(
+        { type: "ACTIVATE_UPDATE", protocolVersion: OFFLINE_PROTOCOL_VERSION },
+        undefined,
+        worker,
+      ),
+      activated,
+    ]);
+    return true;
+  } finally {
+    listenerController.abort();
+  }
+}
+
 export async function sendOfflineRequest(
   request: OfflineRequest,
   onProgress?: (progress: Extract<OfflineResponse, { type: "PROGRESS" }>) => void,
