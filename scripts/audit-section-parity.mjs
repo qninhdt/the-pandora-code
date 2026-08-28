@@ -51,7 +51,11 @@ function stripBlockJsx(text) {
 }
 
 function sections(body) {
-  const withoutFrontmatter = body.replace(/^---\n[\s\S]*?\n---\n/, "");
+  // Imports are executable module syntax, not chapter prose. Keeping them would
+  // create a phantom EN paragraph in the only chapter that imports figures.
+  const withoutFrontmatter = body
+    .replace(/^---\n[\s\S]*?\n---\n/, "")
+    .replace(/^import\s.+$/gm, "");
   const out = [];
   let current = { heading: "(preamble)", lines: [] };
   for (const line of withoutFrontmatter.split("\n")) {
@@ -103,7 +107,10 @@ for (const slug of readdirSync(CHAPTERS).sort()) {
     }
     if (es.words > 60) {
       const ratio = vs.words / es.words;
-      if (ratio < RATIO_LO || ratio > RATIO_HI) {
+      // The bounds are deliberately reported to two decimals; compare the same
+      // rounded value so a section at 1.950... does not fail its displayed 1.95 cap.
+      const displayedRatio = Number(ratio.toFixed(2));
+      if (displayedRatio < RATIO_LO || displayedRatio > RATIO_HI) {
         findings.push({
           slug,
           section: es.heading,

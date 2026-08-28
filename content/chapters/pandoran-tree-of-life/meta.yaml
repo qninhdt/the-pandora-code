@@ -46,8 +46,10 @@ related_chapters:
   - six-limbs-and-the-bilateral-lattice
   - convergent-but-not-quite
   - what-eywa-is
+  - the-hunters-and-the-hunted
 glossary_terms:
   - cladogram
+  - archaea
   - synapomorphy
   - symplesiomorphy
   - plesiomorphy
@@ -59,7 +61,6 @@ glossary_terms:
   - maximum-parsimony
   - occams-razor
   - clade
-  - paraphyly
   - polyphyly
   - phenetics
   - long-branch-attraction
@@ -67,7 +68,6 @@ glossary_terms:
   - convergent-evolution
   - prolemuris
   - queue
-  - operculum
 figures:
   - id: fig-00-cover
     role: hero

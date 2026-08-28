@@ -49,6 +49,7 @@ glossary_terms:
   - rossby-wave
   - atmospheric-blocking
   - rossby-number
+  - superrotation
   - wind-shear
   - ekman-spiral
   - planetary-boundary-layer
@@ -57,7 +58,6 @@ glossary_terms:
   - zermelo-navigation-problem
   - wayfinding
   - coriolis-effect
-  - hadley-cell
 figures:
   - id: fig-00-cover
     role: hero

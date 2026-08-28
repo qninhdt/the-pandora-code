@@ -8,8 +8,8 @@ import { listChapterSlugsFromIndex } from "./chapter-index";
 import { chapterDir, chapterMdxPath, chapterMetaPath } from "./content-paths";
 import { fileExists, parseYaml } from "./yaml-utils";
 
-// Returns clean slugs (URL params), resolved from each meta.yaml via the index -
-// the on-disk folders carry an "N-M-" order prefix that never appears in URLs.
+// Returns clean slugs (URL params) from the chapter index. The on-disk folders
+// use the same slug; book order is owned by OUTLINE, not by directory names.
 export function listChapterSlugs(): string[] {
   return listChapterSlugsFromIndex();
 }
