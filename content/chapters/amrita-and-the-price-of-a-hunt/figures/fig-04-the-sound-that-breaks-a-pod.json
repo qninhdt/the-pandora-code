@@ -9,7 +9,7 @@
   "light": "Pale surface light from above, harsh bright compression ripples inside the sound cones, the animals' own flank glow flaring where the sound hits, deep indigo below.",
   "palette": "Void indigo depth, deep teal midwater, cold pale grey-white sound cones, harsh cyan flank flare.",
   "style": "Painterly naturalist underwater plate, organic and turbulent, not a physics infographic.",
-  "detail_level": "Crisp on the animals' body angles and the isolated small one; the sound cones rendered as water texture rather than geometry; dark open water lower left for callouts.",
+  "detail_level": "Crisp on the animals' body angles and the isolated small one; the sound cones rendered as water texture rather than geometry; dark open water lower left framed by deep negative space.",
   "composition": "Ordered group left third, sound cones sweeping in from the upper right, isolated small animal alone in the lower right quadrant, dark open water at lower left for overlay labels.",
   "exclude": [
     "text",
@@ -23,7 +23,9 @@
     "concentric ring waveform icons",
     "sound-wave symbols",
     "speaker icons",
-    "vector infographic look"
+    "vector infographic look",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "The sound must be shown as compressed, disturbed water and as the animals' broken body angles - never as cartoon waveform rings. Nothing is bleeding or wounded; the damage is to formation, not flesh.",
   "aspect_ratio": "16:9",

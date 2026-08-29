@@ -20,11 +20,15 @@
     "grid",
     "UI",
     "watermark",
-    "logos"
+    "logos",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Same living-teal canopy used throughout the chapter; vapour and cloud in the misty-cyan reserved for water in the air. Vapour is painterly sheets, never vector arrows.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no grid, no diagram chrome, no photographic or 3D-render look",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

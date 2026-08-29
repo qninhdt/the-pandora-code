@@ -9,7 +9,7 @@
   "light": "Very flat, dim, sourceless ambient light with no visible sun, no rim-lighting and no bright highlight anywhere. A slight, even lift in brightness toward the distant horizon only.",
   "palette": "Void indigo and deep teal-indigo across nearly the whole frame, held dark and close in value; only the faintest desaturated mist grey in the far haze; no warm accent anywhere; no bioluminescent glow.",
   "style": "Painterly atmospheric mood layer, extremely soft, all edges dissolved, no crisp detail anywhere in the frame.",
-  "detail_level": "Uniformly low detail throughout — deliberately soft and unresolved everywhere, with no sharp region and no rendered focal element.",
+  "detail_level": "Uniformly low detail throughout \u2014 deliberately soft and unresolved everywhere, with no sharp region and no rendered focal element.",
   "composition": "Broad horizontal bands of dim cloud filling the frame, the whole image kept dark, even and low-contrast so that long passages of overlaid body text stay fully readable across every part of it. No bright patch, no strong value jump, no busy texture, nothing that competes with foreground text anywhere.",
   "exclude": [
     "text",
@@ -30,10 +30,14 @@
     "bright highlights",
     "sun",
     "high contrast",
-    "photographic look"
+    "photographic look",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "This is a background plate, not an illustration: absolutely no creatures, no figures and no focal subject of any kind. It must stay dark, low-contrast and evenly quiet across the entire frame so body text overlaid on it remains readable. Cool Pandora palette only, with the bioluminescent key deliberately absent.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no watermark, no creatures, no people, no aircraft, no buildings, no focal subject, no bright light source, no sun, no lens flare, no high contrast, no sharp detail, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

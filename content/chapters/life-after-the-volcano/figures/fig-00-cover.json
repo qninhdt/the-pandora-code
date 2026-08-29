@@ -2,7 +2,7 @@
   "id": "fig-00-cover",
   "chapter_slug": "life-after-the-volcano",
   "role": "hero",
-  "narrative_purpose": "Capture the chapter's essence at a glance: one Na'vi figure alone on a vast dead ash plain beneath a venting volcanic ridge — a people living on a landscape that will not recover in their lifetime.",
+  "narrative_purpose": "Capture the chapter's essence at a glance: one Na'vi figure alone on a vast dead ash plain beneath a venting volcanic ridge \u2014 a people living on a landscape that will not recover in their lifetime.",
   "subject": "A single tall blue-skinned Na'vi figure in dark hide-and-bone clothing standing small against an immense grey volcanic ash plain, back partly to the viewer, surveying the desolation. The figure is the only living thing in sight.",
   "scene": "A barren ashland stretching to a distant venting volcanic ridge on the horizon, thin sulfurous fumarole plumes rising, the calcined skeletons of a few giant trees scattered across the grey plain, a dim ashen sky with faint high haze.",
   "camera": "Wide establishing shot, low horizon, the lone figure placed off-centre and small to emphasise the scale of the dead land.",
@@ -11,9 +11,27 @@
   "style": "Painterly speculative-biology naturalist plate, bleak and observed, not dramatic action art.",
   "detail_level": "Crisp figure and nearest tree skeletons; the plain and ridge dissolve into atmospheric grey haze.",
   "composition": "Vast horizontal emptiness, the small figure low and to one side, generous dead negative space, a low venting ridge across the far third.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "lush green forest", "bright bioluminescence", "RDA machinery", "lens flare", "photographic look"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "lush green forest",
+    "bright bioluminescence",
+    "RDA machinery",
+    "lens flare",
+    "photographic look",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "A grim volcanic wasteland on Pandora: grey tephra, calcined tree skeletons, distant venting ridge. The mood is desolation and endurance, not spectacle. Cool grey-indigo dominant with a single small warm vent glow.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no green rainforest, no neon glow, no 3D-render or photographic look, no cartoon style, no dramatic explosion",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

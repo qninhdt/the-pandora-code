@@ -11,10 +11,28 @@
   "style": "Painterly naturalist astronomical plate, soft and atmospheric, NOT a hard vector diagram and NOT a 3D render.",
   "detail_level": "Moderate: clear shapes and spatial relationships, painterly texture, soft edges; no hard outlines.",
   "composition": "Star far left, giant planet and its moon centre, the two faint distant suns far right - reading left to right as a spread-out system, with generous dark negative space.",
-  "exclude": ["text", "letters", "numbers", "labels", "orbit lines", "arrows", "watermark", "logos", "UI", "grid", "ruler marks"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "orbit lines",
+    "arrows",
+    "watermark",
+    "logos",
+    "UI",
+    "grid",
+    "ruler marks",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same banded gas giant Polyphemus as the cover. No drawn orbit lines or labels of any kind - this reads as a painted scene, not an annotated chart.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no orbit lines, no arrows, no grid, no diagram chrome, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/where-is-pandora/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/where-is-pandora/fig-00-cover.png"
+  ]
 }

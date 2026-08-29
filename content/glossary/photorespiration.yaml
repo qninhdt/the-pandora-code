@@ -1,0 +1,18 @@
+id: photorespiration
+label:
+  vi: Quang hô hấp
+  en: Photorespiration
+definition:
+  vi: 'Cái giá phải trả khi Rubisco bắt nhầm oxy thay vì CO₂. Thay vì đường, phản ứng cho ra một mảnh hai carbon vô dụng và hơi độc, buộc tế bào phải chạy cả một dây chuyền dọn dẹp: tốn ATP, tốn lực khử, và trả ngược một phân tử CO₂ cho mỗi hai lần nhầm. Nói cách khác, cái lá tiêu năng lượng để sửa lỗi của chính mình và mất luôn phần carbon vừa vất vả giành được. Trên Trái Đất, hai thứ cứu nó: Rubisco vẫn ưu ái CO₂ khoảng chín mươi lần, và CO₂ tan trong nước tốt hơn oxy chừng hai mươi sáu lần — nên thực tế một chiếc lá được khoảng năm lượt đúng cho mỗi lượt nhầm. Toàn bộ cuộc chạy đua tiến hóa sinh ra C4 và CAM là để đối phó với đúng một khiếm khuyết này.'
+  en: 'The price of Rubisco grabbing oxygen instead of CO₂. Rather than sugar, the reaction yields a useless and mildly toxic two-carbon fragment, forcing the cell to run an entire salvage line: burning ATP, burning reducing power, and handing back one CO₂ for every two mistakes. In other words the leaf spends energy undoing its own error and loses the carbon it had just worked to capture. On Earth two things rescue it: Rubisco does prefer CO₂ by a factor of about ninety, and CO₂ dissolves in water roughly twenty-six times better than oxygen — so in practice a leaf gets about five good turns per mistake. The whole evolutionary arms race that produced C4 and CAM exists to fight this single flaw.'
+see_also:
+- rubisco
+- c4-photosynthesis
+- crassulacean-acid-metabolism
+- carbon-fixation
+category: bio
+tags:
+- physiology
+- chemistry
+- evolution
+cover_prompt: A painted comparison of two molecular products emerging from the same enzyme pocket, one an intact bright chain and the other a snapped fragment being carried away while a small gas particle escapes upward from it, cool teal-cyan palette with magenta accents against void-indigo, painterly naturalist plate, no text, no labels.

@@ -1,0 +1,18 @@
+id: rubisco
+label:
+  vi: Rubisco
+  en: Rubisco
+definition:
+  vi: 'Enzyme gắp khí CO₂ ra khỏi không khí và đính nó vào một bộ khung carbon — bước đầu tiên và quyết định của việc cố định carbon. Mọi thứ bạn từng ăn đều đi qua nó. Tính theo khối lượng, đây là protein nhiều nhất trên Trái Đất, vì nó chậm đến mức cây phải sản xuất một lượng khổng lồ để bù: Rubisco có thể chiếm một phần ba đến một nửa toàn bộ protein tan trong một chiếc lá. Tệ hơn cả sự chậm là chuyện nó không phân biệt nổi CO₂ với O₂: bắt nhầm oxy sẽ tạo ra một mảnh vô dụng mà tế bào phải tốn năng lượng dọn dẹp. Đó là một lỗi di truyền từ thời khí quyển hầu như chưa có oxy, và mọi cái cây hôm nay vẫn phải mang.'
+  en: 'The enzyme that grabs CO₂ out of the air and attaches it to a carbon scaffold — the first committed step of carbon fixation. Everything you have ever eaten passed through it. By mass it is the most abundant protein on Earth, because it is so slow that plants must manufacture enormous quantities to compensate: Rubisco can account for a third to a half of all soluble protein in a leaf. Worse than the slowness is that it cannot reliably tell CO₂ from O₂: catching oxygen produces a useless fragment the cell must spend energy dismantling. This is a fault inherited from an era when the atmosphere held almost no oxygen, and every plant today is still stuck with it.'
+see_also:
+- photorespiration
+- calvin-benson-cycle
+- c4-photosynthesis
+- photosynthesis
+category: bio
+tags:
+- chemistry
+- physiology
+- evolution
+cover_prompt: A painted study of a single large enzyme rendered as a folded translucent shape with an open pocket at its centre, two nearly identical small gas molecules drifting toward that pocket from opposite sides, cool teal-cyan palette with one magenta molecule against void-indigo, painterly naturalist plate, no text, no labels.

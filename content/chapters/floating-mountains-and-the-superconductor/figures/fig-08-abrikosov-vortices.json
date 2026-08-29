@@ -11,9 +11,21 @@
   "style": "Clean elegant schematic of glowing dots and thin circulating lines.",
   "detail_level": "Regular repeating array; two or three threads enlarged to show dot-plus-swirl structure.",
   "composition": "Array fills the slab face evenly; a couple of enlarged example threads toward the lower front.",
-  "exclude": ["text", "letters", "numbers", "watermark", "photographic texture"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "watermark",
+    "photographic texture",
+    "labels",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Glowing cyan/teal elements on a near-black background, matching the chapter's schematic diagrams.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no numbers, no photorealism, no 3D bevels, no clutter, no irregular spacing",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

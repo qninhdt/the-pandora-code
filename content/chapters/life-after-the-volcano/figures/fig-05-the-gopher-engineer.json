@@ -10,10 +10,26 @@
   "palette": "Pale grey ash against dark fertile indigo-brown soil, living-teal spore glow, no warm accent.",
   "style": "Painterly naturalist plate, a small creature caught mid-act, observed.",
   "detail_level": "High detail on the animal, the dark mound and the drifting spores; plain softens behind.",
-  "composition": "Burrow mouth and dark mound lower-centre, the animal emerging, scattered spores rising; leave open grey space to one side for later callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "Earth signage", "photographic look", "cartoon eyes"],
+  "composition": "Burrow mouth and dark mound lower-centre, the animal emerging, scattered spores rising; leave open grey space to one side framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "Earth signage",
+    "photographic look",
+    "cartoon eyes",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The teaching point is DARK buried soil being brought UP through the pale ash, plus spores spreading. Keep the dark mound and pale ash contrast clear. Cool Pandora palette, living-teal accents.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no 3D-render or photographic look, no cartoon style, no neon glow",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

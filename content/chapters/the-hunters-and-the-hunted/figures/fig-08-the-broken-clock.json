@@ -10,11 +10,29 @@
   "palette": "Cool teal-indigo forest on one side, a desaturated lightless scar on the other, a single harsh cold-white industrial intrusion as the off-model warning note.",
   "style": "Hand-painted naturalist field plate, sombre and observed, not a film still.",
   "detail_level": "Moderate-high on the boundary and the displaced animals; the machinery stays implied off-frame, only its light intruding.",
-  "composition": "A clear diagonal boundary splitting living forest from razed ground, displaced animals at the seam, dark negative space for callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "UI", "watermark", "logos", "film branding", "recognizable real-world vehicles", "readable signage"],
+  "composition": "A clear diagonal boundary splitting living forest from razed ground, displaced animals at the seam, dark negative generous deep indigo negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "UI",
+    "watermark",
+    "logos",
+    "film branding",
+    "recognizable real-world vehicles",
+    "readable signage",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Forest palette and creature look stay consistent with earlier figures; the industrial side reads as alien intrusion by its cold light, without depicting branded RDA hardware.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no UI chrome, no photographic or 3D-render look, no lens flares, no readable logos",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/the-hunters-and-the-hunted/fig-99-background.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/the-hunters-and-the-hunted/fig-99-background.png"
+  ]
 }

@@ -1,0 +1,18 @@
+id: last-universal-common-ancestor
+label:
+  vi: Tổ tiên chung phổ quát cuối cùng (LUCA)
+  en: Last universal common ancestor
+definition:
+  vi: 'Sinh vật mà mọi sự sống còn tồn tại trên Trái Đất đều truy về được — không phải sinh vật đầu tiên, mà là điểm phân nhánh cuối cùng còn để lại dấu trong bộ gen của tất cả chúng ta. Việc tái dựng LUCA từ những gene được chia sẻ rộng khắp cho ra chân dung một sinh vật kỵ khí, ưa nhiệt, sống bằng hydro, dùng các cụm sắt-lưu huỳnh — điều thường được viện dẫn để hậu thuẫn giả thuyết miệng phun. Nhưng phê phán cũng đúng chỗ: LUCA đã là một sinh vật tinh vi, cách xa các bước tiền sinh mệnh sơ khởi.'
+  en: 'The organism every surviving lineage on Earth traces back to — not the first organism, but the last branch point still legible in all our genomes. Reconstructing LUCA from widely shared genes yields a portrait of an anaerobic, heat-loving, hydrogen-fed organism using iron-sulfur clusters, which is often cited in support of a vent origin. The criticism lands too, though: LUCA was already a sophisticated organism, far downstream of the earliest prebiotic steps.'
+see_also:
+  - wood-ljungdahl-pathway
+  - alkaline-hydrothermal-vent
+  - abiogenesis
+  - deep-time
+category: bio
+tags:
+- evolution
+- astrobiology
+- geology
+cover_prompt: A painted branching tree of faint cyan lines spreading upward and outward from one single bright node low in the frame, the branches thinning into indigo haze at the top, dark ground, painterly, no text, no labels, no numbers.

@@ -11,9 +11,26 @@
   "style": "Painterly naturalist sequence plate, hand-painted texture, deliberately repetitive framing.",
   "detail_level": "Crisp on the window light and the sleeping figure in each frame; the berth interior consistent and slightly plain so the only visible variable is the light outside.",
   "composition": "Five equal horizontal frames stacked in a vertical column with thin dark gutters, identical interior geometry in each, window on the same side throughout, 9:16 portrait.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "clocks", "dials", "Avatar branding"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "clocks",
+    "dials",
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Cold human-habitat palette deliberately opposed to the warm bioluminescent forest plates in this chapter - the visual argument is that this room refuses the local world.",
   "aspect_ratio": "9:16",
   "negative_prompt": "no text, no lettering, no numbers, no logos, no clock faces, no diagram labels, no arrows, no photographic or 3D-render look, no cartoon or anime style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

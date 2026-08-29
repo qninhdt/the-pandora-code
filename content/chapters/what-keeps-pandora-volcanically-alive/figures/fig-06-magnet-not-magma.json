@@ -11,10 +11,27 @@
   "style": "Painterly astronomical/landscape plate, naturalistic rock, luminous cool field lines.",
   "detail_level": "Crisp on the dark floating mountain and the cyan field lines cradling it; the distant ground glow soft and small.",
   "composition": "Floating dark mountain high in the frame wrapped in cool glowing field lines, the warm deep-earth glow small and low, generous dark sky - the cool lift and the warm heat visibly separated.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "lava on the floating mountain", "spacecraft"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "lava on the floating mountain",
+    "spacecraft",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Floating mountain and cyan flux styling consistent with the floating-mountains chapter. Crucial: the levitating mountain is cold/dark (magnetism = lift), and any warm glow is clearly deep underground (heat = tidal), so the two never merge.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no lava on the floating rock, no photographic or 3D-render look, no lens flares, no cartoon style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"
+  ]
 }

@@ -1,0 +1,39 @@
+{
+  "id": "fig-05-the-bond-that-holds",
+  "chapter_slug": "biogeochemical-cycles",
+  "role": "diagram",
+  "narrative_purpose": "Show nitrogen's problem as a physical object: an extremely tightly bound pair of atoms held in the grip of the one enzyme that can open it, so the reader feels that the constraint is cost and strength rather than scarcity.",
+  "subject": "A close conceptual study, centred on two dark spherical atoms held together by three tight, taut, brilliantly luminous bands of light drawn very close and parallel between them — the triple bond rendered as something under enormous tension, almost strained. The bonded pair sits cradled in a shallow pocket formed by the folded interior of a large protein, painted as smooth interlocking organic ribbon and sheet forms receding into shadow around the pocket. Immediately beside the pocket sits a small tight cluster of six or seven dark metallic spheres of two distinguishable sizes and finishes, packed together into an irregular knot, with a faint cold spark of light at its centre. The surrounding protein interior falls away rapidly into deep shadow on all sides, so the bonded pair and the metal cluster are the only lit things.",
+  "scene": "The interior reaction pocket of a nitrogen-fixing enzyme, holding a molecule of nitrogen gas against its metal cofactor.",
+  "camera": "Extreme close conceptual view, the bonded atom pair filling the middle of the frame, the metal cluster just beside it, everything else in shadow.",
+  "light": "Self-luminous: the three bond bands are the brightest thing in the frame, cold and hard; a much fainter cold spark within the metal cluster; the protein ribbon lit only by that spill and dropping into deep indigo.",
+  "palette": "Void-indigo and deep teal-indigo throughout the protein interior, Pandora cyan for the taut bond bands, desaturated dark metallic grey and near-black for the cofactor spheres, one very small restrained ember-amber glint on the metal, no other warm tone.",
+  "style": "Painterly conceptual molecular plate — atmospheric and tactile like a naturalist illustration rather than a clean scientific render, with visible brushwork in the protein forms.",
+  "detail_level": "High on the bonded pair and the metal cluster; the protein ribbon progressively softer and more abstract with distance from the pocket.",
+  "composition": "The bonded pair slightly left of centre and vertically centred; the metal cluster lower right of it; the protein forms arching around the top and both sides to frame the pocket; deep unbroken shadow filling the lower left.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "arrowheads",
+    "chemical formulas",
+    "element symbols",
+    "bond-order notation",
+    "ball-and-stick model look",
+    "clinical white background",
+    "buildings",
+    "humans",
+    "machines"
+  ],
+  "consistency_notes": "The three bond bands must read as extraordinarily strong and under tension — that tension is the entire content of the image. Avoid the clean bright ball-and-stick idiom of a textbook render: this should look painted and observed, in the book's dark palette. No element symbols or formulas anywhere.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no element symbols, no chemical formulas, no arrows, no arrowheads, no clean ball-and-stick render, no white or bright clinical background, no vector or flat infographic look, no photographic or 3D-render look, no neon UI glow",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

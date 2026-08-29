@@ -22,11 +22,15 @@
     "grid",
     "UI",
     "watermark",
-    "logos"
+    "logos",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Water is the same misty-cyan used for water-in-air throughout the chapter. No scale bar or measurement chrome of any kind - the comparison is carried by the drops themselves and by the caption.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no scale bar, no ruler, no grid, no diagram chrome, no photographic or 3D-render look",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

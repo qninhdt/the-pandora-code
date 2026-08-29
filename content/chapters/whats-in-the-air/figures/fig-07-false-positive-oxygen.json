@@ -11,10 +11,28 @@
   "style": "Painterly comparative planetary plate, atmospheric and literal, not a spectral chart or infographic.",
   "detail_level": "High enough to read cracked dry basins and escaping wisps on the left, ocean-cloud-forest and interwoven gas streams on the right; dark space plain.",
   "composition": "Two equal crescents with broad dark separation; dead dry world left, living chemically busy world right, generous open space around each rim for labels.",
-  "exclude": ["text", "letters", "numbers", "labels", "axes", "wavelength bars", "arrows", "people", "spacecraft", "watermark", "city lights"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "axes",
+    "wavelength bars",
+    "arrows",
+    "people",
+    "spacecraft",
+    "watermark",
+    "city lights",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Oxygen-rich blue rims appear on both worlds. The teaching contrast is that the left remains dead and dry while the right sustains several incompatible atmospheric streams alongside visible oceans and life.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no labels, no spectrum chart, no arrows, no Earth continents, no cities, no photographic or glossy 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/whats-in-the-air/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/whats-in-the-air/fig-00-cover.png"
+  ]
 }

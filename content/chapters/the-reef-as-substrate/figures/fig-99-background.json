@@ -19,7 +19,10 @@
     "watermark",
     "logos",
     "bright focal objects",
-    "high-contrast figures"
+    "high-contrast figures",
+    "arrows",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Must be dark and low contrast so overlaid text is readable.",
   "aspect_ratio": "16:9",

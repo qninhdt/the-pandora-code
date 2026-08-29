@@ -11,10 +11,27 @@
   "style": "Painterly naturalist specimen plate, hand-observed, soft edges, visible brush texture.",
   "detail_level": "High on the cut face - individual mineral grains and metallic flecks readable; low and hazy everywhere else.",
   "composition": "The rock sits just right of centre, filling roughly a third of the frame. The bench runs out of frame to the left as dark negative space. The upper third is dim hazy sky.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "watermark", "logos", "UI", "tools", "hands", "modern instruments", "grid"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "watermark",
+    "logos",
+    "UI",
+    "tools",
+    "hands",
+    "modern instruments",
+    "grid",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The gas giant behind is Polyphemus - cream and rust banding, kept dim and out of focus so it never competes with the rock. The rock is ordinary basalt-like crust, not glowing or exotic.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no watermark, no photographic or 3D-render look, no lens flares, no glowing minerals, no unobtanium, no floating rock",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

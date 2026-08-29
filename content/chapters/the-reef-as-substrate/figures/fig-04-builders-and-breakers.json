@@ -9,7 +9,7 @@
   "light": "Cyan glow on the living building corals and coralline crust, cooler neutral light on the scraped and bored right side, indigo in the borings.",
   "palette": "Ocean teal and cyan on the builder side, muted stone-grey and magenta accents on the eroder side, void indigo cavities.",
   "style": "Painterly naturalist comparison plate, organic, not an infographic.",
-  "detail_level": "Crisp on the fresh limestone, the parrotfish bite scar and the sponge borings; open water above for callouts.",
+  "detail_level": "Crisp on the fresh limestone, the parrotfish bite scar and the sponge borings; open water above framed by deep negative space.",
   "composition": "Left-to-right builder-vs-eroder layout with open low-detail water bands above each side for overlay labels.",
   "exclude": [
     "text",
@@ -23,7 +23,9 @@
     "plus and minus signs",
     "balance-scale icon",
     "callout lines",
-    "panel borders"
+    "panel borders",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Both sides are the SAME reef, same palette. The parrotfish-analogue is a reef fish, not an Earth species portrait. Coralline algae read as pink encrusting crust.",
   "aspect_ratio": "16:9",

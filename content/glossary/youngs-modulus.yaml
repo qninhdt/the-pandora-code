@@ -1,0 +1,30 @@
+id: youngs-modulus
+label:
+  vi: Mô đun Young (độ cứng)
+  en: Young's modulus
+definition:
+  vi: >-
+    Đại lượng đo độ cứng của vật liệu: cần bao nhiêu ứng suất để làm nó biến dạng đàn hồi một lượng
+    nhất định, ký hiệu E, đơn vị gigapascal. Đây là câu trả lời cho câu hỏi "kéo bao nhiêu thì nó
+    giãn bấy nhiêu", chứ không phải "kéo bao nhiêu thì nó đứt" — độ cứng nói về hình dạng, còn độ bền
+    nói về sự phá hủy, và hai thứ đó độc lập với nhau. Thép ở khoảng 200 GPa, xương 18-22, gỗ dọc
+    thớ 10-13, gân chỉ 1,2-1,8. Một sợi cao su có độ cứng rất thấp nhưng điều đó không khiến nó yếu.
+    Với sinh vật, con số thực sự quyết định là độ cứng riêng E/ρ, vì cơ thể nào cũng phải tự mang
+    lấy vật liệu của mình.
+  en: >-
+    A measure of a material's stiffness: how much stress it takes to deform it elastically by a given
+    amount, written E and given in gigapascals. It answers "how far does it stretch when I pull," not
+    "when does it break" — stiffness is about shape while strength is about failure, and the two are
+    independent. Steel sits near 200 GPa, bone at 18-22, wood along the grain at 10-13, tendon at
+    only 1.2-1.8. A rubber band has very low stiffness, which does not make it weak. For an organism
+    the number that actually decides things is specific stiffness, E/ρ, because every body has to
+    carry its own materials.
+see_also:
+  - fracture-toughness
+  - material-performance-index
+  - biomechanics
+category: concept
+tags:
+  - physics
+  - physiology
+cover_prompt: A painterly naturalist study of a pale cylindrical rod held between two dark grips and stretched slightly, faint cyan strain lines running along its length and a subtle amber glow where the grips bite, deep indigo background, hand-painted texture, no text, no numbers, no labels.

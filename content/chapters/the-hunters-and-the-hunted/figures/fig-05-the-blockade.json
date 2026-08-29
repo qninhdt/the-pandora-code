@@ -10,11 +10,26 @@
   "palette": "Cool teal-indigo dominant, armoured hides in deep desaturated stone and shadow, a scarce warm amber glint low in the haze.",
   "style": "Hand-painted naturalist field plate, textured and observed, not a film still.",
   "detail_level": "High on the outward-facing adults and the ring formation; softer on the sheltered young and the hazy treeline.",
-  "composition": "Circular herd formation centred in frame, dark hazy margins around the edges for callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "UI", "watermark", "logos", "human figures", "film branding"],
+  "composition": "Circular herd formation centred in frame, dark hazy margins around the edges framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "UI",
+    "watermark",
+    "logos",
+    "human figures",
+    "film branding",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "These are hammerhead titanothere archetypes: over-large, bony hammer-crest, armoured frontal mass. Keep their build consistent if they recur.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no UI chrome, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

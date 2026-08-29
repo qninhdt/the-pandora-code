@@ -11,10 +11,27 @@
   "style": "Painterly astronomical plate, atmospheric and soft-edged, not a hard vector diagram and not a 3D render.",
   "detail_level": "Moderate: the two objects and the two debris streams clearly separable, everything rendered with painterly softness rather than hard outlines.",
   "composition": "The merging pair sits slightly left of centre. One debris stream sweeps to the upper right and one to the lower left, leaving generous dark empty space in the upper left and lower right corners.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "orbit lines", "watermark", "logos", "UI", "grid", "planets", "spacecraft"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "orbit lines",
+    "watermark",
+    "logos",
+    "UI",
+    "grid",
+    "planets",
+    "spacecraft",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Deep space only - no planets, no moons, no Pandora. The warm light here is exceptional and licensed by the subject being the brightest thing in the chapter.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no orbit lines, no grid, no diagram chrome, no spacecraft, no planets, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

@@ -11,10 +11,29 @@
   "style": "Painterly naturalist field illustration, close-observed, textured brushwork.",
   "detail_level": "Very high on the broken faces - grain, sheen and glints legible; the surroundings soft and hazy.",
   "composition": "The hand and rock fill the lower two-thirds, angled from lower left to upper right. Open dark space at the upper left for a callout to sit cleanly.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "watermark", "logos", "UI", "faces", "figures", "modern instruments", "grid"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "watermark",
+    "logos",
+    "UI",
+    "faces",
+    "figures",
+    "modern instruments",
+    "grid",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same rock type as the cover: ordinary dark crust with iron in it, never glowing or crystalline. The glove is plain dark fabric with no insignia.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no logos, no insignia, no photographic or 3D-render look, no lens flares, no glowing rock, no gemstones, no crystals",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/from-stardust-to-pandora/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/from-stardust-to-pandora/fig-00-cover.png"
+  ]
 }

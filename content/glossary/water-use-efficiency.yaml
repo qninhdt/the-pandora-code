@@ -1,0 +1,18 @@
+id: water-use-efficiency
+label:
+  vi: Hiệu suất dùng nước
+  en: Water-use efficiency
+definition:
+  vi: 'Điểm số của cuộc mặc cả ở lỗ khí: lượng carbon thu được trên mỗi phần nước phải trả. Con số này đáng được biết đến rộng rãi hơn — một cây trên cạn điển hình mất vài trăm phân tử nước cho mỗi một nguyên tử carbon nó giành được. Không phải do lãng phí, mà là cái giá không thể tránh của việc ăn. Gần như toàn bộ lượng nước đi qua một cái cây, và một phần lớn lượng nước đi qua cả một lục địa, được chi cho đúng cuộc trao đổi này. Nồng độ CO₂ trong không khí càng cao thì tỷ số càng dễ chịu: chênh lệch nồng độ tự làm việc thay cho cái lỗ, nên cây ăn no mà chỉ cần hé rất ít.'
+  en: 'The score of the bargain at the pore: carbon gained per unit of water spent. The figure deserves to be better known — a typical land plant loses several hundred molecules of water for every single atom of carbon it gains. Not as waste, but as the unavoidable cost of eating. Nearly all the water that moves through a tree, and a large fraction of all the water that moves through a continent, is spent on this one exchange. The higher the CO₂ in the air, the kinder the ratio: the concentration gradient does the work instead of the aperture, so a plant can eat its fill through the barest crack.'
+see_also:
+- stomata
+- transpiration
+- vapour-pressure-deficit
+- crassulacean-acid-metabolism
+category: concept
+tags:
+- physiology
+- physics
+- earth-systems
+cover_prompt: A painted balance scale against a dark field, one pan holding a single small bright carbon particle and the other holding a heaped mass of many water droplets, the water side hanging far lower, cool teal-cyan palette with magenta droplets against void-indigo, painterly naturalist plate, no text, no labels.

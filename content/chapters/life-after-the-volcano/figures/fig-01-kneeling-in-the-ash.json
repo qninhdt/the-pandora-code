@@ -2,7 +2,7 @@
   "id": "fig-01-kneeling-in-the-ash",
   "chapter_slug": "life-after-the-volcano",
   "role": "hero",
-  "narrative_purpose": "Anchor the cold open: the reader kneels in the dead ground with a handful of ash, confronting the chapter's central question — why is this still barren a generation on?",
+  "narrative_purpose": "Anchor the cold open: the reader kneels in the dead ground with a handful of ash, confronting the chapter's central question \u2014 why is this still barren a generation on?",
   "subject": "A close low view of a blue-skinned Na'vi hand lifting and letting fall a handful of coarse grey volcanic ash, individual grains catching the dim light as they spill; no roots, no humus, no green in the ash.",
   "scene": "A barren ashland floor, the charred stump-skeleton of a giant Pandoran tree rising just behind, a faint fumarole leaking steam from a crack in the crust nearby, grey plain fading into haze beyond.",
   "camera": "Very close low ground-level shot on the hand and falling ash, shallow depth so the tree skeleton and fumarole sit soft behind.",
@@ -11,9 +11,26 @@
   "style": "Painterly naturalist plate, intimate and tactile, observed close.",
   "detail_level": "High detail on the hand and individual falling ash grains; background tree and vent soft in haze.",
   "composition": "Hand and spilling ash fill the lower foreground, tree skeleton upper background, fumarole to one side, dead negative space of grey plain.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "green plants", "lush forest", "bright glow", "RDA machinery"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "green plants",
+    "lush forest",
+    "bright glow",
+    "RDA machinery",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same Ashlands world as the cover: grey tephra, calcined tree skeletons, fumaroles. Ash is lifeless and dry, clearly not soil.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no green vegetation, no neon, no photographic or 3D-render look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

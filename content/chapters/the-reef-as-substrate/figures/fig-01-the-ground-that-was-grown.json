@@ -10,7 +10,7 @@
   "palette": "Ocean teal and void indigo, cyan living-edge glow, one small warm amber dwelling accent.",
   "style": "Painterly naturalist cross-section plate, observed field-illustration energy.",
   "detail_level": "Crisp on the root matrix and the living-vs-accreted reef boundary; open low-detail water for overlay labels.",
-  "composition": "Clear vertical stack with open dark water on the left margin for callouts, structure banked to the right.",
+  "composition": "Clear vertical stack with open dark water on the left margin framed by deep negative space, structure banked to the right.",
   "exclude": [
     "text",
     "letters",
@@ -23,7 +23,9 @@
     "callout lines",
     "rigid pilings",
     "concrete",
-    "Avatar branding"
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Dwelling hangs from LIVING roots; the seabed shows a clear boundary between living coral veneer on top and pale accreted framework below. Keep the same reef palette as the cover.",
   "aspect_ratio": "4:3",

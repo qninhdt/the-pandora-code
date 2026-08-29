@@ -25,7 +25,8 @@
     "spacecraft",
     "buildings",
     "humans",
-    "creatures"
+    "creatures",
+    "callouts"
   ],
   "consistency_notes": "The shelf-to-deep transition must be abrupt, not a soft gradient — that sharpness is what the caption interrogates. Same cool Pandoran palette as the cover.",
   "aspect_ratio": "16:9",

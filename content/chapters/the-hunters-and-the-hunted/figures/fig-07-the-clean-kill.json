@@ -10,11 +10,29 @@
   "palette": "Cool teal-indigo dominant, the hunter's blue skin and the animal's body in soft shadow with cyan glow, one scarce warm accent.",
   "style": "Hand-painted naturalist field plate, intimate and observed, not a film still.",
   "detail_level": "High on the two figures and the laid hand; soft and hazy on the surrounding forest.",
-  "composition": "Tight focal pair with the hunter's bowed head and laid hand as the center, dark hazy negative space around for callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "UI", "watermark", "logos", "film branding", "weapons raised", "violence"],
+  "composition": "Tight focal pair with the hunter's bowed head and laid hand as the center, dark hazy negative space around framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "UI",
+    "watermark",
+    "logos",
+    "film branding",
+    "weapons raised",
+    "violence",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The hexapede is the small six-legged browser archetype, consistent with fig-01. The Na'vi reads as a reverent hunter, not a warrior.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no UI chrome, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/the-hunters-and-the-hunted/fig-01-the-hunt.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/the-hunters-and-the-hunted/fig-01-the-hunt.png"
+  ]
 }

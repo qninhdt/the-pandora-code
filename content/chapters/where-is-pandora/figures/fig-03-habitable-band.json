@@ -11,9 +11,25 @@
   "style": "Painterly atmospheric astronomical plate with glowing colour fields, NOT a hard vector ring diagram.",
   "detail_level": "Soft graduated colour fields; the planet and moon rendered with crisp painterly detail against the glow.",
   "composition": "Star centred; the warm ring as a wide sweeping arc; the gas giant placed on the ring at one side; smooth radial colour gradient from hot-centre to cold-edge.",
-  "exclude": ["text", "letters", "numbers", "labels", "orbit lines", "arrows", "scale bars", "watermark", "logos", "UI", "grid"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "orbit lines",
+    "arrows",
+    "scale bars",
+    "watermark",
+    "logos",
+    "UI",
+    "grid",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same banded gas giant Polyphemus as the cover, small here. The colour story (hot amber inner, teal temperate ring, cold blue outer) must be unmistakable without any text.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no orbit lines, no arrows, no grid, no ruler marks, no diagram chrome, no photographic or 3D-render look",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

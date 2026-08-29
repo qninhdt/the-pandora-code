@@ -1,0 +1,17 @@
+id: proton-motive-force
+label:
+  vi: Lực đẩy proton (proton-motive force)
+  en: Proton-motive force
+definition:
+  vi: 'Tổng lực đẩy proton qua một lớp màng, tính bằng millivolt, gộp hai thành phần: hiệu điện thế sẵn có và độ lệch nồng độ proton (tức độ lệch pH). Ở nhiệt độ ấm, mỗi đơn vị pH lệch nhau đóng góp chừng 60–70 mV. Tế bào hiện đại vận hành trên khoảng 150–250 mV; một miệng phun kiềm với độ lệch bốn đơn vị pH có thể vượt mức đó — nghĩa là năng lượng chưa bao giờ là nút cổ chai của nguồn gốc sự sống.'
+  en: 'The total force driving protons across a membrane, in millivolts, combining two parts: the electrical potential already there and the difference in proton concentration (that is, the pH difference). At warm temperatures each unit of pH difference contributes roughly 60–70 mV. Modern cells run on about 150–250 mV; an alkaline vent with a four-unit pH difference can exceed that — which is why energy was never the bottleneck in the origin of life.'
+see_also:
+  - chemiosmosis
+  - membrane-potential
+  - alkaline-hydrothermal-vent
+category: concept
+tags:
+- physics
+- chemistry
+- physiology
+cover_prompt: A painted vertical bar of graded teal light rising against a dark ground, brighter at the top, with a narrow cyan band marked partway up it as a reference level, cool palette, painterly, no text, no labels, no numbers.

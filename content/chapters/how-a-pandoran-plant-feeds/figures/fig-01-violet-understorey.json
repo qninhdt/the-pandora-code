@@ -1,0 +1,20 @@
+{
+  "id": "fig-01-violet-understorey",
+  "chapter_slug": "how-a-pandoran-plant-feeds",
+  "role": "hero",
+  "narrative_purpose": "The cold-open anchor: puts the reader on the forest floor in front of the actual observation the whole chapter starts from — foliage that is violet rather than green, with the night-glow just beginning to wake underneath it.",
+  "subject": "One broad ribbed violet leaf lying across dark leaf litter in the immediate foreground, its surface faintly waxy and catching a sheen. Above and behind it, storeys of deep magenta and indigo foliage rise into the dark, with a single vivid orange spiral-fronded plant curling up out of the litter to one side. Scattered through the shadow beneath the leaves, tiny pinpricks and thin veins of cold cyan light are switching on across moss and roots.",
+  "scene": "The floor of a dense Pandoran rainforest at the moment the light fails, canopy layers stacked overhead and dissolving into haze, ground littered with fallen violet foliage.",
+  "camera": "A low kneeling view close to the forest floor, the foreground leaf sharp and near, the canopy receding upward out of focus.",
+  "light": "Almost no light from above — the last dim filtered daylight caught on the top surfaces of the upper leaves; the true light sources are the small cyan bioluminescent points waking in the moss and along the roots below.",
+  "palette": "Void-indigo and deep teal-indigo shadow across most of the frame, foliage in saturated violet, magenta and near-black, the emerging glow in Pandora cyan and living teal, one scarce ember-amber accent in the spiral frond.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, observed as if by someone crouching to look closely.",
+  "detail_level": "Crisp on the foreground leaf's ribs, edge and waxy sheen and on the nearest glowing moss; upper canopy soft and hazy.",
+  "composition": "The single violet leaf anchoring the lower foreground, the orange spiral frond offset to one side as a scarce warm accent, dark quiet regions of shadow left open above and to the right for overlaid callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "diagrams", "human figures", "Na'vi figures", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette; the frame must read as a real forest floor observed at dusk, not as a staged hero shot. Keep large unbusy dark areas for annotation.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style, no vector flat design, no green foliage dominating",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/how-a-pandoran-plant-feeds/fig-00-cover.png"]
+}

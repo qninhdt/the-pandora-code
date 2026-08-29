@@ -1,0 +1,18 @@
+id: rna-world
+label:
+  vi: Thế giới RNA (RNA world)
+  en: RNA world
+definition:
+  vi: 'Giả thuyết cho rằng đã có một giai đoạn RNA vừa mang thông tin di truyền vừa tự xúc tác, trước khi DNA và enzyme protein xuất hiện. Chứng cứ hậu thuẫn là thật: RNA thực sự xúc tác được, lõi xúc tác của ribosome là RNA, và các chất mang năng lượng phổ quát như ATP hay NAD đều là dẫn xuất ribonucleotide. Nhưng đây vẫn là giả thuyết hàng đầu chứ không phải sự thật đã lập: ribose kém bền, và chưa ai chứng minh được RNA tự sao chép chính nó mà không cần trợ giúp.'
+  en: 'The hypothesis that there was a stage at which RNA both carried genetic information and catalysed its own chemistry, before DNA and protein enzymes. The supporting evidence is real: RNA genuinely does catalyse, the ribosome''s catalytic core is RNA, and universal energy carriers like ATP and NAD are ribonucleotide derivatives. But it remains the leading hypothesis rather than established fact: ribose is fragile, and nobody has demonstrated RNA copying itself unaided.'
+see_also:
+  - ribozyme
+  - error-threshold
+  - xeno-nucleic-acid
+  - abiogenesis
+category: concept
+tags:
+- chemistry
+- evolution
+- information-theory
+cover_prompt: A painted single-stranded ribbon of glowing cyan molecular units folding back on itself into a compact knot, one end still trailing loose, deep indigo ground, painterly, no text, no labels, no numbers.

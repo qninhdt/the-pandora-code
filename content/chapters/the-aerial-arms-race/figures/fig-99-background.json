@@ -25,10 +25,15 @@
     "sunburst",
     "lens flare",
     "green forest",
-    "photographic look"
+    "photographic look",
+    "arrows",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "This is a background layer, not a figure to study: dark, low-contrast, no bright or sharp focal point, nothing large in the foreground. Any winged shapes stay tiny and distant. Cool indigo dominant with at most a whisper of ember warmth.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no bright focal subject, no high contrast, no sunburst or lens flare, no large foreground creature, no green rainforest, no 3D-render or photographic look",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

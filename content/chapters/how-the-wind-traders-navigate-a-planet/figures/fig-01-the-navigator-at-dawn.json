@@ -25,11 +25,17 @@
     "compass",
     "maps",
     "charts",
-    "photographic look"
+    "photographic look",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "She carries NO instruments of any kind — no compass, no chart, no device. That absence is the point of the chapter. The gesture is calm and deliberate, not dramatic. Cool dawn palette with sparse cyan bioluminescence.",
+  "consistency_notes": "She carries NO instruments of any kind \u2014 no compass, no chart, no device. That absence is the point of the chapter. The gesture is calm and deliberate, not dramatic. Cool dawn palette with sparse cyan bioluminescence.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no compass, no charts, no instruments, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/how-the-wind-traders-navigate-a-planet/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/how-the-wind-traders-navigate-a-planet/fig-00-cover.png"
+  ]
 }

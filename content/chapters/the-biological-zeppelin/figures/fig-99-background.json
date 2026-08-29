@@ -11,9 +11,26 @@
   "style": "Painterly atmospheric mood layer, no crisp focal subject, detail dissolving into haze.",
   "detail_level": "Deliberately low; everything softens into atmospheric haze, no sharp foreground element.",
   "composition": "Wide, dark, empty, horizon low, vast dim negative space for overlaid text; no bright element to compete with reading.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "bright focal subject", "high contrast", "gondolas in close-up", "photographic look"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "bright focal subject",
+    "high contrast",
+    "gondolas in close-up",
+    "photographic look",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "This is a dim immersive backdrop, NOT a figure to study: dark, hazed, low-contrast so long text overlays stay legible. Same cloud-sea world as the cover, but macro and atmospheric.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no bright subject, no high contrast, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

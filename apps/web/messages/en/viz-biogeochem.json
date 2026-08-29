@@ -1,0 +1,193 @@
+{
+  "viz": {
+    "residenceTimeAudit": {
+      "title": "The audit bench",
+      "subtitle": "Divide what a reservoir holds by the rate it leaves",
+      "caseLabel": "Reservoir",
+      "case": {
+        "earthCarbon": "Earth's airborne carbon",
+        "pandoraCarbon": "Pandora's airborne carbon",
+        "oceanPhosphorus": "Ocean phosphate",
+        "earthNitrogen": "Earth's atmospheric nitrogen",
+        "pandoraSulfide": "Pandora's hydrogen sulfide"
+      },
+      "unit": {
+        "GtC": "Gt C",
+        "TgN": "Tg N",
+        "TgP": "Tg P",
+        "TgS": "Tg S"
+      },
+      "decade": {
+        "e-4": "hour",
+        "e-2": "days",
+        "e0": "1 yr",
+        "e2": "century",
+        "e4": "10 kyr",
+        "e6": "Myr",
+        "e8": "100 Myr"
+      },
+      "marker": {
+        "day": "a day",
+        "year": "a year",
+        "lifetime": "a lifetime",
+        "thermostat": "the thermostat",
+        "canonStability": "canon's stable span"
+      },
+      "reservoirSlider": "Reservoir size ({unit})",
+      "sinkSlider": "Removal rate ({unit} per year)",
+      "tauLabel": "An atom stays",
+      "tauNote": "reservoir ÷ removal rate",
+      "tauYears": "{years} yr",
+      "tauDays": "{days} days",
+      "sourceLabel": "Source needed",
+      "sourceNote": "to hold it steady",
+      "refillLabel": "Refills",
+      "refillNote": "over canon's 12 Myr",
+      "hint": {
+        "instant": "At this pace the reservoir empties and refills within days. Nothing can sit in the air this briefly unless something replaces it continuously, which turns the concentration into a statement about the source.",
+        "fast": "Fast enough that the whole reservoir turns over well within a human career — so it responds to change quickly, and cannot store anything for long.",
+        "slow": "Slow enough to buffer against short-term swings but not against geology. A perturbation here takes many human lifetimes to relax.",
+        "geological": "This reservoir turns over on geological time. It is effectively a bank rather than a conveyor: enormous, sluggish, and capable of holding a planet's chemistry steady for millions of years."
+      },
+      "aria": "A logarithmic time axis with the computed residence time marked at {years} years, placed against reference timescales from a day to a hundred million years."
+    },
+    "sulfurSourceGap": {
+      "title": "What the sulfide costs",
+      "subtitle": "The source flux needed to hold hydrogen sulfide in oxidising air",
+      "axisLabel": "Sulfur source required (Tg S per year, logarithmic)",
+      "decade": {
+        "e0": "1",
+        "e2": "100",
+        "e4": "10⁴",
+        "e6": "10⁶",
+        "e8": "10⁸",
+        "e10": "10¹⁰"
+      },
+      "reference": {
+        "earthVolcanic": "Earth's volcanoes",
+        "anthropogenicPeak": "1980s industry",
+        "hypervolcanic": "100× Earth's volcanism"
+      },
+      "unreachableBand": "beyond any volcanism",
+      "demandMarker": "{flux} Tg S/yr needed",
+      "ppmSlider": "Hydrogen sulfide in the air",
+      "ppmDisplay": "{ppm} ppm",
+      "daysSlider": "How long a molecule survives",
+      "daysDisplay": "{days} days",
+      "demandLabel": "Source required",
+      "demandValue": "{flux} Tg S/yr",
+      "demandNote": "to hold this concentration",
+      "multipleLabel": "Times Earth's volcanoes",
+      "multipleNote": "Earth manages 20 Tg S/yr",
+      "lethalLabel": "Still lethal?",
+      "lethalYes": "yes",
+      "lethalNo": "no",
+      "lethalNote": "needs about {ppm} ppm to drop a human fast",
+      "hint": {
+        "impossible": "The demand has left the map. No volcanism of any plausible intensity delivers sulfur at this rate, and sustaining it would strip the mantle of sulfur in a geological blink. Something in the stated numbers has to give.",
+        "strained": "Now within shouting distance of a very violent world, but still far past anything Earth has ever done. Keep going.",
+        "survivableButHarmless": "The books close — but look at the lethality readout. At this concentration the air no longer kills an unmasked human in seconds, which is the other thing canon insists on. The repair moved the problem rather than solving it."
+      },
+      "aria": "A logarithmic flux ladder. The required sulfur source sits at {flux} Tg S per year, which is {times} times Earth's total volcanic sulfur output.",
+      "gapLine": "At this lifetime the two requirements sit about {factor}-fold apart: the sulfide a lethal atmosphere needs, against the most a very volcanic moon could sustain. No setting closes both."
+    },
+    "elementCycleTracer": {
+      "title": "Four cycles, one missing box",
+      "subtitle": "Three elements have an atmosphere to draw on. One does not.",
+      "toggleAria": "Choose which element's cycle to inspect",
+      "element": {
+        "carbon": "Carbon",
+        "nitrogen": "Nitrogen",
+        "phosphorus": "Phosphorus",
+        "sulfur": "Sulfur"
+      },
+      "unit": {
+        "GtC": "Gt C",
+        "TgN": "Tg N",
+        "TgP": "Tg P",
+        "TgS": "Tg S"
+      },
+      "reservoir": {
+        "atmosphere": "Atmosphere",
+        "biomass": "Living things",
+        "soil": "Soil",
+        "ocean": "Ocean",
+        "rock": "Rock"
+      },
+      "flux": {
+        "photosynthesis": "photosynthesis",
+        "respiration": "respiration",
+        "litterfall": "leaf and wood fall",
+        "decay": "decay in soil",
+        "airSea": "air-to-sea exchange",
+        "burial": "burial in sediment",
+        "degassing": "volcanic return",
+        "fixation": "nitrogen fixation",
+        "uptake": "uptake by life",
+        "mineralisation": "release from dead tissue",
+        "leaching": "washed to the sea",
+        "denitrification": "returned to the air as N₂",
+        "marineDenitrification": "returned to the air from the sea",
+        "weathering": "rock weathering",
+        "remineralisation": "release from dead tissue",
+        "riverine": "carried down rivers",
+        "sedimentation": "sinking into sediment",
+        "volcanic": "volcanic outgassing",
+        "dms": "sulfur gas from plankton",
+        "deposition": "rained out of the air",
+        "pyriteBurial": "locked into pyrite"
+      },
+      "noAtmosphereRow": "no atmospheric box",
+      "gasPhaseLabel": "Gas phase",
+      "gasPhaseYes": "yes",
+      "gasPhaseNo": "none",
+      "gasPhaseNote": "can life draw it from the air?",
+      "slowestLabel": "Slowest step",
+      "geologicalLabel": "Geology's share",
+      "geologicalNote": "of all movement in the cycle",
+      "residenceLine": "{reservoir}: an atom stays about {years} years.",
+      "hint": {
+        "buffering": "Carbon moves through a fast biological loop and a slow geological one at the same time. The fast loop is enormous and nearly balanced; the slow one is tiny and decides the climate over millions of years.",
+        "bondEnergy": "Nitrogen is the most abundant gas in the air and still limits growth almost everywhere. The problem is not scarcity but the triple bond: breaking it is expensive, so only organisms that can afford the energy get to open the tap.",
+        "noGasPhase": "There is no phosphorus row for the atmosphere, because phosphorus has no stable gas. It arrives only by weathering rock and departs only by sinking into sediment, which makes long-term fertility a property of a planet's tectonics rather than its biology.",
+        "oxidation": "Sulfur's cycle is a redox story. Its reduced forms are destroyed quickly in oxygen-bearing air, so any reduced sulfur in an atmosphere is evidence of a source running right now."
+      },
+      "ariaWithGas": "The {element} cycle: reservoir stocks on a logarithmic scale, with the atmospheric reservoir highlighted.",
+      "ariaNoGas": "The {element} cycle: reservoir stocks on a logarithmic scale, with the absent atmospheric reservoir marked."
+    },
+    "matterLoopEnergyArrow": {
+      "title": "Borrowed, and spent",
+      "subtitle": "Follow an atom, then follow a joule",
+      "toggleAria": "Choose whether to follow matter or energy",
+      "tracer": {
+        "matter": "An atom",
+        "energy": "A joule"
+      },
+      "station": {
+        "air": "Air",
+        "leaf": "Leaf",
+        "body": "Animal",
+        "soil": "Soil",
+        "microbe": "Decomposer"
+      },
+      "photonIn": "sunlight in",
+      "heatOut": "heat radiated away",
+      "advance": "Next step",
+      "restart": "Start again",
+      "stepCounter": "Step {step} of {total}",
+      "returnsLabel": "Comes back?",
+      "returnsYes": "always",
+      "returnsNo": "never",
+      "returnsNoteMatter": "the ring has no exit",
+      "returnsNoteEnergy": "the only exit is outward",
+      "retainedLabel": "Still usable",
+      "retainedConserved": "all of it",
+      "retainedPct": "{pct}%",
+      "retainedNoteMatter": "atoms are conserved exactly",
+      "retainedNoteEnergy": "about a tenth survives each hand-off",
+      "hintMatter": "Step the atom round and it returns to where it began. Nothing is consumed; the same carbon has been through countless bodies before this one. This is the sense in which the Na'vi precept is exactly, literally true.",
+      "hintEnergy": "The joule walks the identical path and loses most of itself at every transfer. It cannot be recycled, only degraded, and each step leaves less capacity to do work than the last.",
+      "hintEscaped": "And there it goes. The energy left the world as infrared radiation and is not coming back — which is why the biosphere needs a fresh delivery of sunlight every single day. Matter is borrowed. Energy is spent."
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "fig-07-toruk-spar-root-materials-of-life",
+  "chapter_slug": "materials-of-life",
+  "role": "inline",
+  "narrative_purpose": "Show the thin-walled, internally braced structure required for a megaflier's wing.",
+  "subject": "Structural cutaway of the shoulder joint and inner wing bone of a massive flying creature. The hollow leading-edge bone is sliced open, revealing a very thin outer shell reinforced from within by a complex, lightweight lattice of fine trabecular struts crossing the hollow interior space. The wing is visibly bending upward under load.",
+  "scene": "Dark background, lit from within the bone hollow to cast shadows of the internal struts.",
+  "camera": "Medium distance, clear descriptive view, level angle.",
+  "light": "Bioluminescent key light highlighting structural details, deep teal-indigo ambient shadows, volumetric haze in the background.",
+  "palette": "Cool Pandora base (Void indigo, Deep teal-indigo, Ocean teal, Pandora cyan, Living teal) with sparing Biolum magenta or Ember amber accents for key structural features.",
+  "style": "Original speculative-biology painterly illustration, naturalist plate energy, detailed structural cutaway.",
+  "detail_level": "High structural detail, precise geometry, visible material textures (grain, fibres, layers).",
+  "composition": "Clear focal subject, generous negative space of haze and shadow, no clutter.",
+  "exclude": [
+    "text",
+    "labels",
+    "arrows",
+    "diagram lines",
+    "numbers",
+    "watermarks",
+    "signatures",
+    "UI elements"
+  ],
+  "consistency_notes": "Follow STYLE BIBLE. Ensure painterly feel, no 3D render plastic.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "text, numbers, captions, labels, watermarks, signatures, arrows, leader lines, UI chrome, flat-design infographic, textbook clip art, CAD, 3D render, photographic, lens flare, CGI plastic.",
+  "style_refs": [],
+  "character_refs": []
+}

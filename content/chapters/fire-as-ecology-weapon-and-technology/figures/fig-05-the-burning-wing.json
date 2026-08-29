@@ -10,7 +10,7 @@
   "palette": "Cool grey-indigo across the wings and sky, the membranes a muted grey-teal; one small ember-orange point at the burning margin.",
   "style": "Painterly naturalist anatomical plate of a creature in flight, observed and clinical rather than dramatic.",
   "detail_level": "High on both wing membranes so the difference between the ridged and smooth surfaces reads clearly; the ground far below flat and hazed.",
-  "composition": "The creature centred with its wings spanning most of the width, the tilt obvious against the horizon, broad areas of plain dim sky above each wing kept clear and low-detail for overlaid callouts.",
+  "composition": "The creature centred with its wings spanning most of the width, the tilt obvious against the horizon, broad areas of plain dim sky above each wing kept clear and low-detail framed by deep negative space.",
   "exclude": [
     "text",
     "letters",
@@ -25,10 +25,14 @@
     "whole wing engulfed in flame",
     "large fire",
     "holes burnt through the membrane",
-    "photographic look"
+    "photographic look",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "CRITICAL: the wing is CONTRACTED, not consumed. The membrane must still be present and continuous — ridged, puckered and drawn up, with no large burnt holes and no sheet of flame. Only one small flame at the rear margin. The asymmetry between the two wings and the resulting body tilt are the whole point.",
+  "consistency_notes": "CRITICAL: the wing is CONTRACTED, not consumed. The membrane must still be present and continuous \u2014 ridged, puckered and drawn up, with no large burnt holes and no sheet of flame. Only one small flame at the rear margin. The asymmetry between the two wings and the resulting body tilt are the whole point.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows or rotation indicators, no wing engulfed in flames, no large burnt holes, no explosion, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

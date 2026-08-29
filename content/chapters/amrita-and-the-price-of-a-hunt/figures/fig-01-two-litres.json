@@ -9,7 +9,7 @@
   "light": "Cold overhead deck lamps on the steel, warm amber glow from within the vial itself, deep shadow across the animal's flank.",
   "palette": "Void indigo shadow, cold grey wet steel, one concentrated warm amber-gold source in the vial.",
   "style": "Painterly naturalist plate, close and material, not a product photograph.",
-  "detail_level": "Crisp on the glove, the vial and its fluid; the animal's flank soft and dark; open dark space upper left for callouts.",
+  "detail_level": "Crisp on the glove, the vial and its fluid; the animal's flank soft and dark; open dark space upper left framed by deep negative space.",
   "composition": "Hand and vial slightly right of centre at mid-height, dark flank filling the right and lower background, open dim deck space at upper left and lower left for overlay labels.",
   "exclude": [
     "text",
@@ -23,7 +23,9 @@
     "callout lines",
     "gore",
     "open wounds",
-    "blood detail"
+    "blood detail",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "The fluid is luminous golden-yellow and viscous, glowing from inside the glass. The animal reads as immense and recently dead but is shown as flank and silhouette only, never as a wound.",
   "aspect_ratio": "4:3",

@@ -3,7 +3,7 @@
   "chapter_slug": "tulkun-not-quite-whales",
   "role": "inline",
   "narrative_purpose": "Show why Payakan's exile differs from cultural death: the memory-bearing individual remains alive outside the pod, and Lo'ak creates a new social route through which that history can move.",
-  "subject": "Payakan, a colossal four-eyed tulkun with six flipper-derived appendages, a shortened scarred left forward fin and old tracker wound, floats alone in deep water at center-left. Far to the right, a compact tulkun pod travels together, separated from him by a broad empty band of indigo water. Lo'ak, a small blue-skinned reef Na'vi with a long dark braid and simple reef clothing, hovers beside Payakan's nearest eye and joins his neural queue to the tulkun's sensory tendril in a restrained visible tsaheylu connection. A faint sequence of image-like light fragments—mother, hunt, counterattack—remains localized close to the bond and does not reach the distant pod. No writing, symbols or literal network lines.",
+  "subject": "Payakan, a colossal four-eyed tulkun with six flipper-derived appendages, a shortened scarred left forward fin and old tracker wound, floats alone in deep water at center-left. Far to the right, a compact tulkun pod travels together, separated from him by a broad empty band of indigo water. Lo'ak, a small blue-skinned reef Na'vi with a long dark braid and simple reef clothing, hovers beside Payakan's nearest eye and joins his neural queue to the tulkun's sensory tendril in a restrained visible tsaheylu connection. A faint sequence of image-like light fragments\u2014mother, hunt, counterattack\u2014remains localized close to the bond and does not reach the distant pod. No writing, symbols or literal network lines.",
   "scene": "Open Pandoran ocean beyond the reef after dusk, quiet and spacious enough that social isolation is visible as distance rather than a prison or physical wall.",
   "camera": "Very wide lateral naturalist view, Payakan and Lo'ak occupying the left half, distant pod small in the upper right, with the bond readable but not enlarged into an inset.",
   "light": "Soft cyan along Payakan's markings and the tsaheylu contact, deep void-indigo water, living-teal haze around the distant pod, and one restrained amber glint in Payakan's attentive eye.",
@@ -11,10 +11,35 @@
   "style": "Painterly speculative-ethology plate, emotionally quiet and spatially analytical rather than cinematic melodrama.",
   "detail_level": "Crisp four-eyed head, damaged fin, Lo'ak silhouette and physical neural bond; the pod and memory fragments soften into water haze.",
   "composition": "A triangular social arrangement: isolated memory carrier at left, one new listener beside him, and the former community far across empty water, with generous annotation-ready darkness between them.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "diagram nodes", "Earth whale anatomy", "two-eyed tulkun", "four-limbed tulkun", "riding saddle", "weapons", "battle", "blood", "RDA machinery"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "diagram nodes",
+    "Earth whale anatomy",
+    "two-eyed tulkun",
+    "four-limbed tulkun",
+    "riding saddle",
+    "weapons",
+    "battle",
+    "blood",
+    "RDA machinery",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Match Payakan and Lo'ak from figures 00 and 01. The bond is canon, while the bridge interpretation is inferential. Do not imply that the entire distant pod receives the memory or that tsaheylu broadcasts through seawater.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no labels, no arrows, no network graph, no telepathic beam to the distant pod, no ordinary two-eyed whale, no battle action, no photographic film still, no glossy CGI, no cartoon style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/tulkun-not-quite-whales/fig-01-a-biography-in-the-water.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/tulkun-not-quite-whales/fig-01-a-biography-in-the-water.png"
+  ]
 }

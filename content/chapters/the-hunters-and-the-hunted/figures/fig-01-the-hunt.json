@@ -11,10 +11,27 @@
   "style": "Hand-painted naturalist action plate of real alien animals, textured brushwork, not a film still.",
   "detail_level": "High on the prey and the flared fan and the nearest hunter; softer on the trailing hunters and hazy forest.",
   "composition": "Converging diagonals of hunters from both sides onto the bright twisting prey, open dark forest depth behind for breathing room.",
-  "exclude": ["text", "letters", "numbers", "labels", "UI", "watermark", "logos", "human figures", "film branding"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "UI",
+    "watermark",
+    "logos",
+    "human figures",
+    "film branding",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same viperwolf and hexapede archetypes as fig-00-cover; keep the sleek six-limbed black hunters and the small six-legged fan-crested browser consistent.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no UI chrome, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/the-hunters-and-the-hunted/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/the-hunters-and-the-hunted/fig-00-cover.png"
+  ]
 }

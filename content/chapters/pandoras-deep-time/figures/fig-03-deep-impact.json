@@ -11,10 +11,28 @@
   "style": "Painterly astronomical plate, dramatic but naturalistic, textured molten rock.",
   "detail_level": "Crisp glowing lava seams and the ejecta plume; the gas giant softer and atmospheric; field lines faint and delicate.",
   "composition": "Molten moon dominant center-left, impactor and bright plume upper-right on a diagonal of energy, gas giant anchoring the right edge, magnetic field lines curving the eye around.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "orbit dotted lines", "spacecraft", "modern objects"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "orbit dotted lines",
+    "spacecraft",
+    "modern objects",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The banded gas giant is Polyphemus and must match its look elsewhere in the chapter (cream/rust/grey bands). Warm impact glow is the rare deliberate warm accent against the cool palette.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no dotted orbit lines, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"
+  ]
 }

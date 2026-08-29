@@ -24,7 +24,10 @@
     "large animals",
     "foreground vessels",
     "moon",
-    "lens flare"
+    "lens flare",
+    "arrows",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Must stay dark and low contrast - this sits behind body text under a scrim. No single element may become a focal point.",
   "aspect_ratio": "16:9",

@@ -11,9 +11,23 @@
   "style": "Painterly naturalist field-plate illustration, observed-from-life, textured.",
   "detail_level": "High detail on the frond veins, pins, and lens rim; soft falloff into dark negative space around them.",
   "composition": "Frond centered and isolated with generous dark negative space; the magnifier in the lower third on a rule-of-thirds point.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "people", "Earth plant species", "modern machinery"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "people",
+    "Earth plant species",
+    "modern machinery",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "A single luminous cyan-teal frond on dark slate, warm amber only on the brass lens; this calm specimen-plate look anchors the prologue's other bench scene.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no readable writing, no logos, no people, no cartoon or anime style, no oversaturation",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

@@ -21,11 +21,15 @@
     "grid",
     "UI",
     "watermark",
-    "logos"
+    "logos",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Both halves must be recognisably the same valley from the same viewpoint; only the light and the clouds change. The disappearance of the small cumulus in the eclipse half is the teaching detail and must be obvious.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no panel numbers, no grid, no diagram chrome, no photographic or 3D-render look, no differing viewpoint between halves",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

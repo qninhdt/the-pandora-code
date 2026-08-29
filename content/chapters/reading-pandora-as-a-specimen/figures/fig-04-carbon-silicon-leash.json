@@ -11,10 +11,25 @@
   "style": "Painterly naturalist laboratory plate with literal molecular-scale forms enlarged into visible bead-and-bond structures; not a textbook infographic.",
   "detail_level": "High detail on the branching chain geometry and the repeating angular crystal lattice; bench and background soft and sparse.",
   "composition": "Two equal dishes balanced left and right with a narrow strip of dark negative space between; the left is visibly fluid and branching, the right compact and immobile.",
-  "exclude": ["text", "letters", "numbers", "chemical formulae", "labels", "arrows", "watermark", "people", "computer screens", "flat vector infographic"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "chemical formulae",
+    "labels",
+    "arrows",
+    "watermark",
+    "people",
+    "computer screens",
+    "flat vector infographic",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The image must show a physical contrast, not merely two colored blobs: many flexible branching chains in liquid on the left, one rigid repeating stone lattice on the right.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no symbols, no periodic-table glyphs, no labels, no arrows, no UI, no glossy 3D molecular render, no photographic look, no clutter",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

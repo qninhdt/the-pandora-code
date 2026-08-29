@@ -9,7 +9,7 @@
   "light": "Cool light emanating from the pressurised cavity interior outward, so the thinnest wall sections glow faintly from behind; the outer tissue surface in deep shadow.",
   "palette": "Ocean teal muscle tissue, pale mist grey in the overstretched thinned wall, cyan glow in the pressurised interior, magenta accent on the beginning hairline splits.",
   "style": "Painterly anatomical cross-section plate, biological and fleshy, never a mechanical engineering drawing.",
-  "detail_level": "High detail on the circumferential fibre direction and the thinning of the wall; plain dark space outside the ring for annotations.",
+  "detail_level": "High detail on the circumferential fibre direction and the thinning of the wall; plain dark space outside the ring framed by deep negative space.",
   "composition": "Ring centred with its widest thinnest section at the upper left, the narrowing funnel throat at the lower right, generous plain dark margins around the whole ring.",
   "exclude": [
     "text",
@@ -25,7 +25,9 @@
     "measurement rules",
     "pressure gauges",
     "metal pipes",
-    "engineering blueprint style"
+    "engineering blueprint style",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "The wall is living muscle, not a pipe or tank. Fibres must clearly run around the ring, not along it. Thinning at the widest section is the key readable feature.",
   "aspect_ratio": "4:3",

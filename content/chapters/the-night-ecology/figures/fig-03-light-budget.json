@@ -11,9 +11,24 @@
   "style": "Painterly naturalist cross-section plate, hand-painted texture, clear vertical separation of the three zones.",
   "detail_level": "Crisp on the glowing floor detail and the planet's banded limb; the companion star small and simple; mid-trunks softer to keep the three zones legible.",
   "composition": "Strict vertical stack - companion star top, gas giant and planetshine upper-middle, dark mid-forest, faint glowing floor across the bottom, generous dark space between zones, 9:16 portrait.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Cool Pandora palette. The ground glow must read as genuinely the weakest source in the frame - the whole point of the figure - and the planetshine as the broadest.",
   "aspect_ratio": "9:16",
   "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style, no bright ground glow overpowering the sky",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

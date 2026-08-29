@@ -11,10 +11,27 @@
   "style": "Painterly speculative-biology plate, textured rock against luminous organic network.",
   "detail_level": "Crisp glowing roots, threads, and memory-motes on the living side; the dead side flatter and duller by deliberate contrast; surface above dissolving into haze.",
   "composition": "A near-central vertical divide between dull strata (left) and glowing rooted network (right), roots and threads drawing the eye downward then back up, balanced halves.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "diagram split-line chrome", "human figures"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "diagram split-line chrome",
+    "human figures",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Cool Pandora palette with bioluminescent key from the living network; the dead-rock side is deliberately desaturated to read as 'silent record'. Restrained magenta accents only.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no infographic chrome, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"
+  ]
 }

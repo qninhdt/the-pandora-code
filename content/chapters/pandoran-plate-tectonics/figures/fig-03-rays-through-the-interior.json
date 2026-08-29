@@ -25,7 +25,10 @@
     "coordinate axes",
     "continents",
     "clouds",
-    "stars"
+    "stars",
+    "arrows",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Purely diagrammatic — this is not a landscape. The relative shell sizes should read as crust very thin, mantle about half the radius, then a large inner region, then a small central ball. The unreached lower arc must be obvious at a glance.",
   "aspect_ratio": "1:1",

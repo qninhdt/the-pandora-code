@@ -10,11 +10,27 @@
   "palette": "Cool indigo, hemlock teal and cyan stream dominate; restrained amber only on the newly exposed floor and warming water.",
   "style": "Painterly forest-ecology experiment with faithful eastern hemlock form and legible microclimate contrast.",
   "detail_level": "Crisp girdling cut, litter, stream edge and bird niches; distant trunks soften.",
-  "composition": "Intact shaded plot left, girdled opening right, the same stream running continuously across the lower third. Preserve dark canopy and open floor regions for callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "clear-cut stumps", "wildfire", "logging machinery", "watermark", "logos"],
+  "composition": "Intact shaded plot left, girdled opening right, the same stream running continuously across the lower third. Preserve dark canopy and open floor generous deep indigo negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "leader lines",
+    "clear-cut stumps",
+    "wildfire",
+    "logging machinery",
+    "watermark",
+    "logos",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The experimental treatment is bark girdling with trees left standing, not logging. Show multiple linked microclimate effects and a change in bird occupancy without depicting instant total forest death.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no arrows, no clear-cut, no chainsaws, no dramatic fire, no tropical forest, no photo or CGI look",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

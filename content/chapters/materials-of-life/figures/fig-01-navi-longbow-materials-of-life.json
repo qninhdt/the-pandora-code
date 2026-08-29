@@ -1,0 +1,32 @@
+{
+  "id": "fig-01-navi-longbow-materials-of-life",
+  "chapter_slug": "materials-of-life",
+  "role": "inline",
+  "narrative_purpose": "Show the structural complexity of a grown weapon that outperforms metal.",
+  "subject": "A detailed naturalist specimen plate showing a cross-sectional cut through the thick wooden stave of a Na'vi longbow. The circular cross-section reveals concentric growth rings, microscopic longitudinal cellulose fiber bundles at the core, and an outer bonded laminate layer of dark, glossy chitinous wing vane along the outer tension surface.",
+  "scene": "A clean laboratory specimen table draped in dark indigo velvet, lit by a soft focused teal naturalist spotlight from above.",
+  "camera": "Medium distance, clear descriptive view, level angle.",
+  "light": "Bioluminescent key light highlighting structural details, deep teal-indigo ambient shadows, volumetric haze in the background.",
+  "palette": "Cool Pandora base (Void indigo, Deep teal-indigo, Ocean teal, Pandora cyan, Living teal) with sparing Biolum magenta or Ember amber accents for key structural features.",
+  "style": "Original speculative-biology painterly illustration, naturalist plate energy, detailed structural cutaway.",
+  "detail_level": "High structural detail, precise geometry, visible material textures (grain, fibres, layers).",
+  "composition": "Clear focal subject, generous negative space of haze and shadow, no clutter.",
+  "exclude": [
+    "books",
+    "stacked paper",
+    "matchsticks",
+    "chopsticks",
+    "split logs",
+    "people",
+    "text",
+    "labels",
+    "arrows",
+    "numbers",
+    "watermarks"
+  ],
+  "consistency_notes": "Follow STYLE BIBLE. Ensure painterly feel, no 3D render plastic.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "text, numbers, captions, labels, watermarks, signatures, arrows, leader lines, UI chrome, flat-design infographic, textbook clip art, CAD, 3D render, photographic, lens flare, CGI plastic.",
+  "style_refs": [],
+  "character_refs": []
+}

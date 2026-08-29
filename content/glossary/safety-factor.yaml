@@ -1,0 +1,21 @@
+id: safety-factor
+label:
+  vi: Hệ số an toàn
+  en: Safety factor
+definition:
+  vi: Tỷ số giữa khả năng chịu tải kết cấu tối đa của một hệ thống và tải trọng dự
+    kiến thực tế lớn nhất mà nó phải gánh chịu trong quá trình vận hành. Trong kỹ
+    thuật và sinh học, hệ số an toàn bù đắp cho những biến động tải trọng ngẫu nhiên,
+    khuyết tật vi mô và sự suy giảm phẩm chất vật liệu theo thời gian.
+  en: The ratio between the ultimate load capacity of a structural component and the
+    maximum actual load expected during service, compensating for unpredictable dynamic
+    loads, material defects, and progressive wear over time.
+see_also:
+- youngs-modulus
+- fracture-toughness
+category: concept
+tags:
+- physics
+- philosophy-of-science
+cover_prompt: A biological joint and spar carrying a suspended load with visual stress
+  indicators, naturalist specimen plate style, no text.

@@ -11,9 +11,30 @@
   "style": "Painterly speculative-biology naturalist encounter, observed and intimate rather than cinematic action art.",
   "detail_level": "Crisp scars, eye, fin edges and skin texture on the central pair; distant pod and reef dissolve into haze.",
   "composition": "Two faces balanced across the frame with open dark water between their eyes, clear scale contrast and generous low-detail margins.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "callout lines", "Earth whale anatomy", "two-eyed tulkun", "four-limbed tulkun", "riding saddle", "weapons", "RDA machinery", "Avatar branding"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "callout lines",
+    "Earth whale anatomy",
+    "two-eyed tulkun",
+    "four-limbed tulkun",
+    "riding saddle",
+    "weapons",
+    "RDA machinery",
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Payakan must remain a four-eyed, six-appendaged alien marine animal with a shortened scarred left front fin, not a blue Earth humpback whale. Lo'ak is a small reef-adapted Na'vi companion, not mounted.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no poster typography, no photographic or 3D-render look, no two-eyed Earth whale, no extra people, no battle scene, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

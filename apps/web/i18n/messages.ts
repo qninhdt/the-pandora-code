@@ -8,6 +8,7 @@ import enAtmosphere from "../messages/en/viz-atmosphere.json";
 import enBio from "../messages/en/viz-bio.json";
 import enBiochemistry from "../messages/en/viz-biochemistry.json";
 import enBioeconomics from "../messages/en/viz-bioeconomics.json";
+import enBiogeochem from "../messages/en/viz-biogeochem.json";
 import enBiomechanics from "../messages/en/viz-biomechanics.json";
 import enCanon from "../messages/en/viz-canon.json";
 import enChrono from "../messages/en/viz-chrono.json";
@@ -22,6 +23,7 @@ import enGeochronology from "../messages/en/viz-geochronology.json";
 import enGeodynamics from "../messages/en/viz-geodynamics.json";
 import enHydrology from "../messages/en/viz-hydrology.json";
 import enMarine from "../messages/en/viz-marine.json";
+import enMaterials from "../messages/en/viz-materials.json";
 import enMind from "../messages/en/viz-mind.json";
 import enMycorrhiza from "../messages/en/viz-mycorrhiza.json";
 import enNetwork from "../messages/en/viz-network.json";
@@ -41,6 +43,7 @@ import viAtmosphere from "../messages/vi/viz-atmosphere.json";
 import viBio from "../messages/vi/viz-bio.json";
 import viBiochemistry from "../messages/vi/viz-biochemistry.json";
 import viBioeconomics from "../messages/vi/viz-bioeconomics.json";
+import viBiogeochem from "../messages/vi/viz-biogeochem.json";
 import viBiomechanics from "../messages/vi/viz-biomechanics.json";
 import viCanon from "../messages/vi/viz-canon.json";
 import viChrono from "../messages/vi/viz-chrono.json";
@@ -55,6 +58,7 @@ import viGeochronology from "../messages/vi/viz-geochronology.json";
 import viGeodynamics from "../messages/vi/viz-geodynamics.json";
 import viHydrology from "../messages/vi/viz-hydrology.json";
 import viMarine from "../messages/vi/viz-marine.json";
+import viMaterials from "../messages/vi/viz-materials.json";
 import viMind from "../messages/vi/viz-mind.json";
 import viMycorrhiza from "../messages/vi/viz-mycorrhiza.json";
 import viNetwork from "../messages/vi/viz-network.json";
@@ -120,6 +124,8 @@ const EN_PARTS = [
   enHydrology,
   enMarine,
   enMycorrhiza,
+  enBiogeochem,
+  enMaterials,
 ] as const;
 
 const VI_PARTS = [
@@ -155,6 +161,8 @@ const VI_PARTS = [
   viHydrology,
   viMarine,
   viMycorrhiza,
+  viBiogeochem,
+  viMaterials,
 ] as const;
 
 const MESSAGES: Record<Locale, Json> = {

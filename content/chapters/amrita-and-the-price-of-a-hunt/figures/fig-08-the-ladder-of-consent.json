@@ -9,7 +9,7 @@
   "light": "Pale cold dawn light from the upper right catching the cut stone edges, the empty air above the top step brightest, deep indigo water below.",
   "palette": "Void indigo water, deep teal shadow, pale cool grey stone, one faint amber warmth in the dawn haze.",
   "style": "Painterly architectural naturalist plate, weathered and physical, not a diagram or vector illustration.",
-  "detail_level": "Crisp on the stone edges and the empty mounting recesses on the top step; the submerged animal soft and very dim; open sky and water for callouts.",
+  "detail_level": "Crisp on the stone edges and the empty mounting recesses on the top step; the submerged animal soft and very dim; open sky and water framed by deep negative space.",
   "composition": "Stair rising from lower left to upper right across the frame, wide open hazy sky in the upper left quadrant and dark water in the lower right for overlay labels.",
   "exclude": [
     "text",
@@ -23,7 +23,9 @@
     "scales of justice",
     "gavel",
     "courthouse columns",
-    "vector infographic look"
+    "vector infographic look",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "The absence of the fifth step must be legible as a step that was never built - hence the visible empty mounting recesses - rather than as ruin or collapse.",
   "aspect_ratio": "4:3",

@@ -10,7 +10,7 @@
   "palette": "Near-black indigo dominating, faint cyan arcs, one small warm amber accent on the diving insect.",
   "style": "Painterly naturalist night plate, quiet and observed, closer to a field study than an action scene.",
   "detail_level": "Crisp on both animals; the sound arcs faint and soft-edged; the surrounding air empty and dark.",
-  "composition": "Hunter across the upper third moving left to right, insect low and ahead of it dropping on a steep diagonal, large plain dark areas in the lower left and upper right for overlaid callouts.",
+  "composition": "Hunter across the upper third moving left to right, insect low and ahead of it dropping on a steep diagonal, large plain dark areas in the lower left and upper right framed by deep negative space.",
   "exclude": [
     "text",
     "letters",
@@ -25,10 +25,14 @@
     "radar rings",
     "daylight",
     "green forest",
-    "photographic look"
+    "photographic look",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "The concentric arcs must read as soft painted haze spreading from the hunter's head, never as a graphic radar symbol or icon. The insect must be clearly already falling, wings folded, and clearly outside the arcs - the picture is about the escape happening before contact.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no radar or sonar icons, no graphic sound-wave symbols, no daylight, no green rainforest, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

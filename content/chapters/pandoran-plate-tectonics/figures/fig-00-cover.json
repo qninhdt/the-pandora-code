@@ -25,7 +25,8 @@
     "spacecraft",
     "buildings",
     "humans",
-    "machines"
+    "machines",
+    "callouts"
   ],
   "consistency_notes": "This is ordinary non-floating bedrock — nothing in this image levitates. The gas giant on the horizon is Polyphemus. Pandora's cool bioluminescent palette dominates; warm tones are confined to the horizon haze.",
   "aspect_ratio": "16:9",

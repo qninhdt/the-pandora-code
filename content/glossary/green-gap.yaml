@@ -1,0 +1,18 @@
+id: green-gap
+label:
+  vi: Khoảng trống lục
+  en: The green gap
+definition:
+  vi: 'Khoảng giữa quang phổ khả kiến — chừng 500 đến 600 nm — nơi diệp lục hấp thụ rất yếu, nên ánh sáng màu lục phần lớn dội ra hoặc xuyên qua lá. Điều kỳ lạ là Mặt Trời lại phát nhiều photon nhất đúng ở khoảng ấy, nghĩa là sự sống trên Trái Đất đã bỏ qua phần giàu có nhất của bầu trời. Hai cách giải thích đáng tin: hoặc tổ tiên của thực vật lớn lên bên dưới các thảm vi khuẩn màu tía đã chiếm sạch photon lục từ trước, hoặc việc hấp thụ ở hai bên sườn thay vì đúng đỉnh giúp dòng năng lượng vào ổn định hơn, tránh cho bộ máy quang hợp bị sốc và tự phá hủy. Đừng hiểu sai rằng ánh sáng lục là vô dụng: hấp thụ yếu nên nó đi sâu hơn vào lá và nuôi những lớp tế bào mà tia lam và đỏ chẳng bao giờ chạm tới.'
+  en: 'The stretch in the middle of the visible spectrum — roughly 500 to 600 nm — where chlorophyll absorbs only weakly, so green light mostly bounces off or passes through a leaf. The oddity is that our Sun delivers most of its photons right there, meaning life on Earth left the richest part of the sky on the table. Two credible explanations: either the ancestors of plants grew up beneath purple bacterial mats that had already claimed the green photons, or absorbing on the two flanks rather than at the peak buys a steadier energy supply, sparing the machinery from surges that would wreck it. Do not conclude that green light is useless: because it is absorbed weakly it penetrates deeper into a leaf and feeds cell layers the blue and red never reach.'
+see_also:
+- chlorophyll
+- photosynthetically-active-radiation
+- carotenoid
+- red-edge
+category: concept
+tags:
+- physiology
+- physics
+- astrobiology
+cover_prompt: A painted spectrum band running left to right across a dark field, with its two ends being drawn into a leaf silhouette while the broad middle section passes over the leaf untouched and continues onward, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

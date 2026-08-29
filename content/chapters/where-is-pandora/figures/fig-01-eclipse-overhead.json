@@ -11,10 +11,28 @@
   "style": "Painterly speculative-biology naturalist plate, atmospheric, high dynamic range between the bright ring and the dark sky.",
   "detail_level": "Crisp on the canopy edges and the bright flaring ring; the planet's shadowed disc smooth and dark.",
   "composition": "Planet-and-star high and central; dark forest silhouette framing the lower corners; strong vertical sense of looking straight up.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "spacecraft", "Earth trees", "human figures"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "spacecraft",
+    "Earth trees",
+    "human figures",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same banded gas giant Polyphemus as the cover (cream/rust/grey bands). Cool Pandora palette, bioluminescent forest key light.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no photographic or 3D-render look, no lens flares, no oversaturation, no cartoon or anime style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/where-is-pandora/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/where-is-pandora/fig-00-cover.png"
+  ]
 }

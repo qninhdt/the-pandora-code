@@ -11,9 +11,26 @@
   "style": "Painterly speculative-biology naturalist plate, hand-painted texture, luminous and atmospheric, observed-from-life confidence.",
   "detail_level": "Crisp on the crystal's facets and internal growth bands; background dissolving softly into haze and dark.",
   "composition": "The glowing crystal anchored vertically in the center on the rule-of-thirds, drifting luminous motes leading the eye in, generous dark negative space around it.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "clock faces", "literal hourglass frame", "human hands", "lab equipment", "arrows"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "clock faces",
+    "literal hourglass frame",
+    "human hands",
+    "lab equipment",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Cool Pandora palette with bioluminescent key glow from within the subject. This glowing layered crystal is the chapter's recurring zircon motif and must read consistently with the zircon close-ups later in the chapter.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no literal clock or hourglass hardware, no photographic or 3D-render look, no lens flares, no oversaturation, no cartoon or anime style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

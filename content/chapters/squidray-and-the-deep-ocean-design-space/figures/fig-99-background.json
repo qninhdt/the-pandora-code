@@ -24,7 +24,10 @@
     "creatures",
     "submarines",
     "sunlight",
-    "surface"
+    "surface",
+    "arrows",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Must stay dark and low contrast so overlaid text is readable. No creature and no bright focal point anywhere - this is mood, not a figure to study.",
   "aspect_ratio": "16:9",

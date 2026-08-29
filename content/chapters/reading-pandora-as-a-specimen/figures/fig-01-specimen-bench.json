@@ -11,10 +11,28 @@
   "style": "Painterly naturalist illustration, warm observed intimacy, textured brushwork.",
   "detail_level": "High detail on leaf, pins, lens, and pen; the indistinct page strokes soft; background dissolving into dark haze.",
   "composition": "Leaf and lens occupy the left and center; the notebook page leads in from the lower right; large calm dark negative space upper right.",
-  "exclude": ["readable text", "legible words", "letters", "numbers", "watermark", "people", "Earth plant species", "modern electronics"],
+  "exclude": [
+    "readable text",
+    "legible words",
+    "letters",
+    "numbers",
+    "watermark",
+    "people",
+    "Earth plant species",
+    "modern electronics",
+    "text",
+    "labels",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same single cyan-teal glowing frond and brass lens as the cover plate, here on a wooden bench rather than top-down; warm amber kept to the lens rim only.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no readable text, no legible handwriting, no logos, no people, no photographic look, no cartoon style, no clutter",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/reading-pandora-as-a-specimen/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/reading-pandora-as-a-specimen/fig-00-cover.png"
+  ]
 }

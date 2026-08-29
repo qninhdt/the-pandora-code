@@ -11,10 +11,25 @@
   "style": "Painterly mechanical thought-experiment plate, tactile wood, stone, water and brass; observed rather than theatrical.",
   "detail_level": "Crisp on every contact point in the causal chain, softer workshop background and generous shadow around the mechanism.",
   "composition": "A clear left-to-right cascade beginning with one hovering stone and ending with one raised latch; no disconnected stages and ample dark space above for later callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "multiple floating objects", "electric motors", "computer parts", "watermark", "people"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "multiple floating objects",
+    "electric motors",
+    "computer parts",
+    "watermark",
+    "people",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "There must be exactly one visually impossible element, the unsupported stone; every later motion must have an ordinary visible mechanical cause.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no arrows, no extra levitating objects, no perpetual-motion loop, no missing contact points, no steampunk clutter, no photographic or 3D-render look",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

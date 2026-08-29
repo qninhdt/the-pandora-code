@@ -24,9 +24,11 @@
     "measurement scales",
     "callout lines",
     "medical diagram styling",
-    "Avatar branding"
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "The same ribcage four times, differing only in compression — not four different bodies. Depth is conveyed by the darkening water and the shrinking air space alone, never by written depth marks or a measuring scale.",
+  "consistency_notes": "The same ribcage four times, differing only in compression \u2014 not four different bodies. Depth is conveyed by the darkening water and the shrinking air space alone, never by written depth marks or a measuring scale.",
   "aspect_ratio": "9:16",
   "negative_prompt": "no text, no labels, no numbers, no depth scale or measurement marks, no arrows, no clinical diagram look, no photographic or 3D-render look",
   "style_refs": [

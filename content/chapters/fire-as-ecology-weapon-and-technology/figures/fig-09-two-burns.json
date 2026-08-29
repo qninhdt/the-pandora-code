@@ -10,7 +10,7 @@
   "palette": "Cool grey and indigo dominant across both halves, with living teal-green confined strictly to the left half and no warm accents anywhere.",
   "style": "Painterly naturalist landscape plate, bleak and even-handed, presenting two cases for comparison.",
   "detail_level": "High on the green shoots and charred stumps at left and on the calcined tree at right; both distances dissolving into flat grey haze.",
-  "composition": "A single wide panorama with no drawn divider, the left third dense with regrowth, the right two thirds emptying into featureless grey, a broad band of plain dim sky across the top kept clear for overlaid callouts.",
+  "composition": "A single wide panorama with no drawn divider, the left third dense with regrowth, the right two thirds emptying into featureless grey, a broad band of plain dim sky across the top kept clear framed by deep negative space.",
   "exclude": [
     "text",
     "letters",
@@ -25,10 +25,14 @@
     "active flames",
     "smoke",
     "green vegetation on the right half",
-    "photographic look"
+    "photographic look",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "The contrast is regrowth versus nothing. Green appears ONLY in the left half; the right half must be completely bare grey. No divider or panel border between them — one continuous landscape. No active fire or smoke anywhere; both burns are long over. Matches the grey tephra and calcined megaflora of the Ashlands.",
+  "consistency_notes": "The contrast is regrowth versus nothing. Green appears ONLY in the left half; the right half must be completely bare grey. No divider or panel border between them \u2014 one continuous landscape. No active fire or smoke anywhere; both burns are long over. Matches the grey tephra and calcined megaflora of the Ashlands.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no dividing line or panel border, no arrows, no active flames or smoke, no green plants on the right side, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

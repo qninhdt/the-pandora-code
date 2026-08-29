@@ -11,10 +11,27 @@
   "style": "Painterly naturalist plate, textured ash and fire, dramatic and atmospheric.",
   "detail_level": "Crisp on the ash column, flow front, and Hometree silhouette; upper sky dissolving into smoke haze.",
   "composition": "Towering ash column rising on one third, the pyroclastic flow sweeping down toward the small Hometree and forest on the other side, warm glow low, dark smoke filling the sky.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "spacecraft", "modern machinery"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "spacecraft",
+    "modern machinery",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Na'vi Hometree and forest styling consistent with the franchise; the warm eruption glow is a large but still-scarce warm accent against the dominant cool smoke palette. Foreshadows the ruined Ashlands of fig-01.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/what-keeps-pandora-volcanically-alive/fig-01-ashlands-plain.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/what-keeps-pandora-volcanically-alive/fig-01-ashlands-plain.png"
+  ]
 }

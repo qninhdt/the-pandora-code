@@ -10,11 +10,31 @@
   "palette": "Deep indigo and teal sky, pale translucent bell, faint teal glow along the tug animals' rippling edges.",
   "style": "Painterly speculative-biology naturalist plate, dynamic but not action-poster.",
   "detail_level": "Crisp on the rays, riders and taut towlines; the bell slightly softer, cloud layer dissolving into haze.",
-  "composition": "Tug animals across the left and centre in curving arcs, towlines converging back to the bell on the right, generous plain dark sky above for later callout labels.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "propellers", "harpoons", "combat", "fire", "photographic look"],
+  "composition": "Tug animals across the left and centre in curving arcs, towlines converging back to the bell on the right, generous plain dark sky above framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "propellers",
+    "harpoons",
+    "combat",
+    "fire",
+    "photographic look",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The tugs must clearly be flying ACROSS the direction of travel in arcs, not pulling in a straight line - that is the physics being taught. They supply no lift, only forward and lateral pull. Bell matches fig-00-cover.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no propellers, no fire, no combat, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/the-biological-zeppelin/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/the-biological-zeppelin/fig-00-cover.png"
+  ]
 }

@@ -1,0 +1,25 @@
+id: microfibril-angle
+label:
+  vi: Góc xoắn vi sợi
+  en: Microfibril angle
+definition:
+  vi: 'Góc nghiêng của các bó vi sợi cellulose so với trục dọc của tế bào thực vật
+    trong lớp vách thứ cấp của gỗ. Góc nghiêng này quyết định tỷ lệ giữa độ cứng vững
+    và độ dãn dài đàn hồi của thân gỗ: góc càng nhỏ (song song trục), gỗ càng cứng
+    vững dọc trục để chống mất ổn định uốn; góc càng lớn, thân gỗ càng dẻo dai để
+    uốn mình trong gió bão.'
+  en: 'The helical angle at which cellulose microfibrils wind around the longitudinal
+    axis of plant cell walls. Tuning this single angle alters the mechanical function
+    of wood: a steep angle (parallel to the trunk) maximizes axial stiffness against
+    Euler buckling, while a wider angle provides high compliance and strain absorption
+    for branches.'
+see_also:
+- youngs-modulus
+- euler-buckling
+category: concept
+tags:
+- physics
+- physiology
+cover_prompt: A microscopic naturalist plate of plant cell walls showing glowing helical
+  microfibrils winding around a cylindrical fiber, cyan bioluminescent highlights,
+  painterly speculative biology, no text.

@@ -10,7 +10,7 @@
   "palette": "Bright ocean teal and cyan on the lit side, void indigo on the dark side, pale skeleton throughout.",
   "style": "Painterly naturalist comparison plate, organic light gradient rather than a hard split panel.",
   "detail_level": "Crisp on the two skeleton rims (thick vs thin) and polyp states; simple graded background.",
-  "composition": "Left-bright / right-dim across the frame with open sky-water band above for callouts contrasting day vs night growth.",
+  "composition": "Left-bright / right-dim across the frame with open sky-water band above framed by deep negative space contrasting day vs night growth.",
   "exclude": [
     "text",
     "letters",
@@ -23,7 +23,9 @@
     "panel borders",
     "sun icon",
     "clock",
-    "callout lines"
+    "callout lines",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "It must read as the SAME colony under two light levels, not two species. Fresh skeleton is clearly thicker on the sunlit side.",
   "aspect_ratio": "16:9",

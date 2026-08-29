@@ -5,15 +5,31 @@
   "narrative_purpose": "The chapter's strongest Earth evidence becomes visible: layered pond sediment preserves dormant parasite stages from different dates, allowing researchers to replay past and future encounters against hosts.",
   "subject": "A tall transparent sediment core standing upright against darkness, composed of many fine horizontal mud layers. Three widely separated layers contain distinct clusters of tiny luminous dormant parasite eggs, each cluster subtly different in form and hue. Beside the core, three small translucent water chambers align with those layers; each chamber contains a host water flea silhouette confronted by parasite particles from a different time layer, with the same-date pairing glowing most strongly.",
   "scene": "A dark limnology laboratory rendered as a specimen plate, the sediment core and time-matched bioassays isolated in cool haze.",
-  "camera": "Front-on diagrammatic composition, core occupying left half, three aligned assay chambers stacked on right, clean dark margins.",
+  "camera": "Front-on naturalist cutaway composition, core occupying left half, three aligned assay chambers stacked on right, clean dark margins.",
   "light": "Soft cyan edge light on glass, muted brown-grey sediment, living teal hosts, parasite eggs glowing amber and sparse magenta, strongest glow at the middle same-date match.",
   "palette": "Void-indigo background, muted mud umber and grey, cyan glass, teal organisms, restrained amber-magenta archive points.",
   "style": "Painterly experimental naturalist plate, clear enough to annotate but retaining hand-painted material texture.",
   "detail_level": "Crisp horizontal layers, three egg clusters and aligned chambers; laboratory surroundings dissolve completely into shadow.",
-  "composition": "Vertical core left with three visually distinct sampled horizons, corresponding chambers right, alignment conveyed by placement only with no arrows or baked text.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "calendar symbols", "modern branding"],
-  "consistency_notes": "The archive must read as real layered sediment and dormant biological stages. Leave clean spaces for interface labels identifying past, contemporary and future pairings.",
+  "composition": "Vertical core left with three visually distinct sampled horizons, corresponding chambers right, alignment conveyed purely by physical placement across deep indigo.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "calendar symbols",
+    "modern branding",
+    "diagram lines",
+    "callouts"
+  ],
+  "consistency_notes": "The archive must read as real layered sediment and dormant biological stages. Leave clean spaces framed by deep negative space identifying past, contemporary and future pairings.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no labels, no arrows, no timeline numbers, no infographic chrome, no photographic or 3D-render look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

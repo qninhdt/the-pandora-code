@@ -11,10 +11,26 @@
   "style": "Painterly plate that reads as a diagram through composition alone, soft glowing forms, NOT a hard vector chart, NOT a 3D render.",
   "detail_level": "Moderate: clear contrast between the small bright patch and the long dim strip; soft painterly edges, no hard outlines.",
   "composition": "The planet's curve filling one side, two equal ray bundles entering, the bright concentrated patch high and the dim stretched strip low, so the eye compares the two footprints directly.",
-  "exclude": ["text", "letters", "numbers", "labels", "angle markings", "rulers", "grid", "UI", "watermark", "logos"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "angle markings",
+    "rulers",
+    "grid",
+    "UI",
+    "watermark",
+    "logos",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Cool Pandora palette; warm amber used only to mark the concentrated equatorial heat. Reads as a teaching picture, not an annotated figure.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no angle symbols, no rulers, no grid, no diagram chrome, no 3D-render or photographic look",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

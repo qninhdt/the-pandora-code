@@ -154,6 +154,152 @@
           "experience": "Unanswerable, and saying so is the honest result rather than a hedge. Subjective experience cannot be read off behaviour from outside — not for Eywa, and not for anyone else either."
         }
       }
+    },
+    "ventBattery": {
+      "title": "The battery in the rock",
+      "subtitle": "Set the two fluids and the temperature, then read the voltage the pH difference alone produces",
+      "aria": "An alkaline vent fluid and an acidic ocean separated by a thin mineral wall, currently producing {mv} millivolts of drive",
+      "presetLabel": "Choose a vent setting",
+      "preset": {
+        "lostCity": "Lost City",
+        "pandora": "Pandora"
+      },
+      "ventSide": "Vent fluid",
+      "oceanSide": "Ocean",
+      "phValue": "pH {ph}",
+      "wallLabel": "Thin iron-sulfide wall",
+      "barLabel": "Drive available across the wall",
+      "cellBand": "{min}–{max} mV: what a cell runs on",
+      "pmfLabel": "Drive across the wall",
+      "pmfNote": "Free, continuous, no biology required",
+      "deltaPhLabel": "pH difference",
+      "deltaPhNote": "How far downhill a proton falls",
+      "perPhLabel": "Volts per pH unit",
+      "perPhNote": "Rises with temperature",
+      "ventPhLabel": "Vent fluid pH",
+      "oceanPhLabel": "Ocean pH",
+      "tempLabel": "Temperature at the wall",
+      "verdict": {
+        "below": "At this setting the rock supplies less drive than a living cell uses. Widen the pH gap and watch how easily it catches up — the gradient is the cheap part.",
+        "cellRange": "The bare rock is now delivering the same electrical drive a modern cell's ATP synthase runs on — with no pump, no membrane protein, no genome. This is the whole case for a vent origin.",
+        "above": "The rock is out-driving a living cell by about {ratio}× — a geological gradient handing over more voltage than biology bothers to use. Energy was never the scarce thing."
+      }
+    },
+    "errorThreshold": {
+      "title": "The ceiling on remembering",
+      "subtitle": "How long a sequence can a copier protect, if it makes mistakes at this rate?",
+      "aria": "Maximum sustainable sequence length against per-base copying fidelity, currently {length} nucleotides",
+      "replicaseBand": "Length a folded replicase needs",
+      "regime": {
+        "nonEnzymatic": "Bare chemistry",
+        "ribozyme": "RNA replicase",
+        "polymerase": "Modern enzyme"
+      },
+      "yAxis": "Nucleotides",
+      "xAxis": "Copying accuracy per base",
+      "ceilingLabel": "Longest sequence held",
+      "ceilingNote": "Above this, errors outrun selection",
+      "ntValue": "{n} nt",
+      "errorRateLabel": "Mistakes per base",
+      "errorRateNote": "What the copier gets wrong",
+      "perBase": "{n}%",
+      "needLabel": "Length required",
+      "needNote": "To fold into a working copier",
+      "fidelityLabel": "Copying accuracy per base",
+      "sigmaLabel": "Fitness edge over mutants",
+      "verdict": {
+        "shortOfReplicase": "Short by about {shortfall} nucleotides. The copier cannot protect a sequence long enough to encode the copier — and nothing on any world lets you skip that step.",
+        "clearsReplicase": "Now the ceiling clears the length a replicase needs. But look where the slider had to go to get here: that accuracy is what a folded replicase would provide, which is precisely what does not exist yet."
+      }
+    },
+    "wetDryRatchet": {
+      "title": "The ratchet on the shore",
+      "subtitle": "Watch a pool dry and refill, and watch what survives each round",
+      "aria": "A drying and refilling rock pool building oligomers, currently reaching {n} units",
+      "settingLabel": "Choose a setting",
+      "setting": {
+        "cycled": "Shoreline pool",
+        "submerged": "Always submerged"
+      },
+      "hint": {
+        "cycled": "Drying drives the joins; refilling breaks most of them and keeps the rest. Neither phase alone builds anything — the alternation does, and each round starts from a slightly longer chain than the last.",
+        "submerged": "Held under water the whole time, the reaction never flips. Synthesis and breakdown balance at the shortest fragments, and the chain simply never grows. This is the price of the vent scenario: the best battery sits where nothing can polymerise."
+      },
+      "phase": {
+        "dry": "Drying out",
+        "wet": "Flooded again"
+      },
+      "direction": {
+        "condensing": "Water leaving — links forming",
+        "hydrolysing": "Water abundant — links breaking"
+      },
+      "labCeiling": "Longest reached in the lab",
+      "yAxis": "Chain length",
+      "xAxis": "Wet–dry cycles",
+      "activityLabel": "How wet it is",
+      "activityNote": "1.0 is open ocean",
+      "reachedLabel": "Longest chain",
+      "reachedNote": "After the cycles shown",
+      "unitsValue": "{n} units",
+      "cyclesLabel": "Cycles run",
+      "cyclesNote": "Each one a chance to keep something",
+      "noneValue": "None"
+    },
+    "originScoreboard": {
+      "title": "Six things an origin has to do",
+      "subtitle": "Three settings proposed for where life began, graded honestly on each step — and what Pandora changes",
+      "hint": "Pandora improves {gains} of the six rows, and every one of them is about raw material or energy. {stuck} rows are handled well by no setting at all — and those are the ones about information.",
+      "stepColumn": "What must happen",
+      "pandoraColumn": "Pandora",
+      "scenarioShort": {
+        "spark": "Spark",
+        "vent": "Vent",
+        "pool": "Pool"
+      },
+      "scenario": {
+        "spark": "Lightning and open sky",
+        "vent": "Alkaline vents on the seafloor",
+        "pool": "Drying pools on a volcanic shore"
+      },
+      "scenarioNote": {
+        "spark": "Electrical discharge through a volcanic atmosphere makes the small molecules easily — but leaves them dissolved in an ocean too dilute to build anything from.",
+        "vent": "Warm alkaline fluid meeting cold acidic water across mineral walls supplies free electrical drive for as long as the rock lasts. The same warmth shreds long chains.",
+        "pool": "Evaporation concentrates and joins; refilling selects and wraps. The strongest answer for polymers, and the most vulnerable to simply drying up for good."
+      },
+      "step": {
+        "monomers": "Make the parts",
+        "polymers": "Join them into chains",
+        "information": "Copy a sequence faithfully",
+        "compartments": "Wrap it in a bag",
+        "energy": "Keep it fed continuously",
+        "darwin": "Start evolving"
+      },
+      "grade": {
+        "strong": "Shown",
+        "partial": "Partly",
+        "weak": "Weak"
+      },
+      "pandora": {
+        "better": "Better",
+        "same": "No change",
+        "worse": "Worse"
+      },
+      "detail": {
+        "monomers": "Amino acids, sugars, bases and fatty acids have to appear from volcanic gas and water. This is the part that is genuinely solved: they form readily under many plausible conditions, and meteorites deliver more.",
+        "polymers": "Joining two units expels a water molecule, so in bulk water chains fall apart as fast as they form. Something has to remove the water — drying, or a mineral surface that holds the pieces in place.",
+        "information": "A sequence must be copied accurately enough that what worked is still there next generation. Nobody has demonstrated a molecule that copies itself without help, and the accuracy needed to encode such a molecule is the accuracy it would provide.",
+        "compartments": "Without a boundary, anything useful diffuses away and no lineage can compete with another. Fatty-acid bags assemble, grow and split on their own, which makes this the least troublesome row after monomers.",
+        "energy": "Every step above runs uphill, so something must push continuously for as long as it takes. A pH difference across a thin mineral wall does exactly that, for free, for the lifetime of the rock.",
+        "darwin": "At some point a chemical system stops being chemistry that repeats and becomes a population that varies, inherits and is selected. No experiment has crossed this line, in any setting."
+      },
+      "pandoraDetail": {
+        "monomers": "Pandora is richer here than early Earth ever was: hydrogen sulfide is global rather than confined to vent fields, and the atmosphere is heavy with carbon dioxide. More feedstock, everywhere, continuously.",
+        "polymers": "More cycles than Earth gets. Tides from a gas giant, plus regular eclipses, give a shoreline pool many more chances per year to dry out and refill.",
+        "information": "Nothing about Pandora helps. Copying accuracy is a property of the chemistry, not of the planet, and no amount of energy or feedstock buys any of it.",
+        "compartments": "The same as Earth. Fatty acids self-assemble according to their own chemistry; a livelier moon neither helps nor hinders.",
+        "energy": "Pandora's advantage at its largest. Tidal flexing from Polyphemus keeps the interior hot independently of the star, so serpentinising vents can run for as long as the orbit lasts rather than as long as the planet takes to cool.",
+        "darwin": "Untouched. This is the row where being the most geologically alive moon in the neighbourhood earns nothing at all."
+      }
     }
   }
 }

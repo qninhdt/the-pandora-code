@@ -28,12 +28,16 @@
     "engines",
     "spacecraft",
     "planetary rings",
-    "photographic look"
+    "photographic look",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "The aerostats are living creatures: soft translucent bells, trailing tentacles, woven gondolas on rigging lines — no rigid hulls, no propellers, no engines. The small moon must clearly be IN FRONT of the gas giant's disc, fully inside its outline, not beside it. The giant is static and heavy, filling the frame; the scene reads as still and permanent, not dramatic. Cool Pandora palette.",
+  "consistency_notes": "The aerostats are living creatures: soft translucent bells, trailing tentacles, woven gondolas on rigging lines \u2014 no rigid hulls, no propellers, no engines. The small moon must clearly be IN FRONT of the gas giant's disc, fully inside its outline, not beside it. The giant is static and heavy, filling the frame; the scene reads as still and permanent, not dramatic. Cool Pandora palette.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no orbit lines, no constellation lines, no propellers, no engines, no rigid airship hull, no spacecraft, no planetary rings, no lens flare, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": [
     "apps/web/public/images/chapters/how-the-wind-traders-navigate-a-planet/fig-00-cover.png"
   ]

@@ -11,9 +11,24 @@
   "style": "Painterly naturalist comparison plate, the two halves clearly distinct in mood.",
   "detail_level": "Even detail on both halves so the resprouting shoots and the sterile rock are equally legible.",
   "composition": "Clean vertical split down the centre, matched framing on each side, a charred stump on the left mirrored by a bare skeleton on the right.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "diagram lines", "RDA machinery", "photographic look"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "diagram lines",
+    "RDA machinery",
+    "photographic look",
+    "callouts"
+  ],
   "consistency_notes": "Left = secondary succession (soil and roots survive, green returns); right = primary succession (sterile rock, nothing left). The seam between them is the whole point. Cool Pandora palette; green only on the living left half.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no 3D-render or photographic look, no cartoon style, no neon glow",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

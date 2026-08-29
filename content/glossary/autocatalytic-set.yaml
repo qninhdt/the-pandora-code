@@ -1,0 +1,17 @@
+id: autocatalytic-set
+label:
+  vi: Tập tự xúc tác (autocatalytic set)
+  en: Autocatalytic set
+definition:
+  vi: 'Một mạng phản ứng trong đó mọi phản ứng đều được xúc tác bởi một phân tử do chính mạng ấy tạo ra, và mọi nguyên liệu đều dựng được từ một tập chất nền có sẵn trong môi trường. Ý nghĩa của khái niệm này là nó đề xuất một cách di truyền không cần chuỗi: cái được truyền lại là tỉ lệ thành phần của cả mạng, không phải trình tự của một phân tử. Đây là hình thức lý thuyết của lập luận "trao đổi chất có trước", đối trọng với "sao chép có trước".'
+  en: 'A reaction network in which every reaction is catalysed by a molecule the network itself produces, and every reactant can be built from a set of raw materials the environment supplies. Its significance is that it proposes heredity without sequences: what gets passed on is the compositional balance of the whole network, not the order of units in one molecule. This is the formal shape of the metabolism-first argument, set against replication-first.'
+see_also:
+  - abiogenesis
+  - emergence
+  - rna-world
+category: concept
+tags:
+- network-science
+- chemistry
+- information-theory
+cover_prompt: A painted ring of small glowing teal nodes joined by curved cyan lines that loop back on themselves in a closed circuit, a few faint incoming lines from outside the ring, dark indigo ground, painterly, no text, no labels, no numbers.

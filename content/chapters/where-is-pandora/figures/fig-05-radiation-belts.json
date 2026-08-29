@@ -11,10 +11,27 @@
   "style": "Painterly astronomical plate, the belts like fine luminous particle clouds, NOT hard vector rings and NOT a labelled diagram.",
   "detail_level": "Soft glowing particle texture in the belts; crisp little moon in the gap; atmospheric planet.",
   "composition": "Planet centred; two nested glowing tori around it; a clearly darker gap between them with the small moon placed unmistakably inside that gap.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "watermark", "logos", "UI", "grid", "orbit lines"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "watermark",
+    "logos",
+    "UI",
+    "grid",
+    "orbit lines",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same banded gas giant Polyphemus as the cover. The dark calm gap between the two belts, and the moon sitting in it, must be the most readable relationship in the image - achieved purely visually, no labels.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no orbit lines, no diagram chrome, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/where-is-pandora/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/where-is-pandora/fig-00-cover.png"
+  ]
 }

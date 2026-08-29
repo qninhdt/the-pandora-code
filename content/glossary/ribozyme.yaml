@@ -1,0 +1,17 @@
+id: ribozyme
+label:
+  vi: Ribozyme (enzyme RNA)
+  en: Ribozyme
+definition:
+  vi: 'Một phân tử RNA gập lại thành hình dạng có thể xúc tác phản ứng hóa học — nghĩa là làm công việc mà người ta từng tưởng chỉ protein mới làm được. Ribozyme không phải suy đoán: chúng được phát hiện trong tế bào thật vào thập niên 1980, và lõi xúc tác của chính ribosome — bộ máy dựng nên mọi protein trong cơ thể bạn — là một ribozyme. Đó là lý do một phân tử vừa lưu trữ thông tin vừa tự xúc tác không còn là ý tưởng xa vời.'
+  en: 'An RNA molecule that folds into a shape able to catalyse a chemical reaction — doing the job once thought to belong to proteins alone. Ribozymes are not speculative: they were found in living cells in the 1980s, and the catalytic core of the ribosome itself — the machine that builds every protein in your body — is one. That is why a molecule that both stores information and catalyses its own chemistry stopped being a far-fetched idea.'
+see_also:
+  - rna-world
+  - error-threshold
+  - abiogenesis
+category: bio
+tags:
+- chemistry
+- physiology
+- evolution
+cover_prompt: A painted compact folded ribbon of glowing teal molecular units cradling a small bright cyan molecule at its centre like a hand holding a seed, dark indigo ground, painterly, no text, no labels, no numbers.

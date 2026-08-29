@@ -11,9 +11,22 @@
   "style": "Painterly photorealistic concept art, strong sense of altitude and scale.",
   "detail_level": "Crisp on the near peak and the rider-and-creature silhouette; atmospheric haze softening the far peak.",
   "composition": "Two mountains at left and right framing a deep central gap of open sky; the rider on the lower-right thirds line crossing the void.",
-  "exclude": ["text", "watermark", "Earth birds", "modern aircraft", "closeup faces"],
+  "exclude": [
+    "text",
+    "watermark",
+    "Earth birds",
+    "modern aircraft",
+    "closeup faces",
+    "letters",
+    "labels",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Grey weathered rock, blue-green canopy, cyan-teal glowing mist; the winged mount has four limbs plus two wings and a long tail.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no logos, no closeup human faces, no oversaturation, no lens-flare clutter",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

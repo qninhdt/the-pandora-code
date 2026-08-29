@@ -22,7 +22,10 @@
     "bright focal objects",
     "high-contrast figures",
     "creatures",
-    "Avatar branding"
+    "Avatar branding",
+    "arrows",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Must be dark, hazy and low contrast with no bright focal point anywhere, since long-form text is overlaid on top of it.",
   "aspect_ratio": "16:9",

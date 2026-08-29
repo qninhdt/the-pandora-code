@@ -1,0 +1,22 @@
+id: nanoscale-flaw-tolerance
+label:
+  vi: Dung nạp khuyết tật quy mô nano
+  en: Nanoscale flaw tolerance
+definition:
+  vi: Hiện tượng vật lý trong đó một vật liệu giòn ở kích thước dưới một ngưỡng nano
+    tới hạn (khoảng 30 nm đối với khoáng sinh học) trở nên hoàn toàn miễn nhiễm với
+    sự tập trung ứng suất tại đỉnh nứt. Ở kích thước này, ứng suất phá hủy đạt tới
+    giới hạn liên kết nguyên tử lý thuyết thay vì bị khuyết tật chi phối.
+  en: A fundamental scaling effect where brittle materials below a critical nanoscale
+    dimension (typically ~30 nm in biominerals) become insensitive to stress concentrations,
+    failing at the theoretical atomic bond strength rather than through Griffith crack
+    propagation.
+see_also:
+- fracture-toughness
+- crack-deflection
+category: concept
+tags:
+- physics
+- physiology
+cover_prompt: Nanoscale mineral platelets glowing faintly in a biological matrix,
+  pristine crystal lattices, painterly speculative science art, no text.

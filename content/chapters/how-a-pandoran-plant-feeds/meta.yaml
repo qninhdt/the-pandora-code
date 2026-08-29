@@ -1,0 +1,159 @@
+slug: how-a-pandoran-plant-feeds
+status: published
+title:
+  vi: Một cái cây Pandora ăn bằng cách nào?
+  en: How Does a Pandoran Plant Feed?
+subtitle:
+  vi: >-
+    Rừng Pandora màu tím, và canon không nói vì sao. Truy nguyên đường đi của một hạt photon qua một
+    chiếc lá — từ hai ngôi sao xuống tới rễ — và màu tím hóa ra là một chiến lược, còn cuộc mặc cả ở
+    lỗ khí hóa ra là thứ mà mọi chiếc lá trong vũ trụ đều phải trả giá.
+  en: >-
+    Pandora's forest is violet, and canon never says why. Trace one photon through one leaf — from
+    two suns down to the roots — and the colour turns out to be a strategy, while the trade at the
+    pore turns out to be the price every leaf anywhere has to pay.
+hook:
+  vi: >-
+    Một chiếc lá tím trong tầng dưới tán rừng Pandora không phải là lựa chọn của họa sĩ thiết kế —
+    hay đúng hơn, nó là thế, nhưng vẫn có một câu trả lời sinh học đúng cho câu hỏi vì sao nó có thể
+    tím. Lá mang màu của thứ ánh sáng nó từ chối, và dưới hai ngôi sao khác Mặt Trời, thứ đáng từ
+    chối cũng khác. Từ đó, ta lần theo carbon đi hết chiều dài một cái cây.
+  en: >-
+    A violet leaf in Pandora's understorey is not a production designer's whim — or rather it is,
+    but there is still a biologically correct answer to why it could be violet. A leaf is the colour
+    of the light it refuses, and under two suns unlike ours, a different refusal pays. From there we
+    follow the carbon the whole length of a tree.
+authors:
+  - bardabez
+tags:
+  - plant-physiology
+  - photosynthesis
+  - photobiology
+  - stomata
+  - carbon-fixation
+  - phloem-transport
+  - astrobiology
+classification:
+  canon_pct: 16
+  inference_pct: 18
+  speculation_pct: 6
+  real_science_pct: 60
+related_chapters:
+  - whats-in-the-air
+  - where-is-pandora
+  - the-forest-as-a-cathedral
+  - when-glow-is-the-norm
+  - the-wood-wide-web
+  - what-is-pandoran-life-made-of
+glossary_terms:
+  - photosynthesis
+  - chlorophyll
+  - green-gap
+  - carotenoid
+  - anthocyanin
+  - photosynthetically-active-radiation
+  - red-edge
+  - non-photochemical-quenching
+  - rubisco
+  - calvin-benson-cycle
+  - carbon-fixation
+  - photorespiration
+  - c4-photosynthesis
+  - crassulacean-acid-metabolism
+  - stomata
+  - water-use-efficiency
+  - stomatal-index
+  - phloem
+  - pressure-flow
+  - transpiration
+  - cohesion-tension
+  - xylem
+  - turgor-pressure
+  - vapour-pressure-deficit
+  - bioluminescence
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-violet-understorey
+    role: hero
+    asset_status: ready
+  - id: fig-02-leaf-light-path
+    role: diagram
+    asset_status: ready
+  - id: fig-03-two-skies-one-leaf
+    role: comparison
+    asset_status: ready
+  - id: fig-04-eclipse-drawdown
+    role: inline
+    asset_status: ready
+  - id: fig-05-rubisco-misfire
+    role: comparison
+    asset_status: ready
+  - id: fig-06-two-pores
+    role: comparison
+    asset_status: ready
+  - id: fig-07-trunk-counterflow
+    role: diagram
+    asset_status: ready
+  - id: fig-08-root-delivery
+    role: inline
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Pandoran flora - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Category:Flora
+  - kind: canon
+    label: Pandora - James Cameron's Avatar Wiki (atmosphere, gravity, surface pressure)
+    url: https://james-camerons-avatar.fandom.com/wiki/Pandora
+  - kind: canon
+    label: Hometree - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Hometree
+  - kind: science
+    label: >-
+      Kiang et al. - Spectral Signatures of Photosynthesis I & II (Astrobiology, 2007): predicted
+      pigment absorption under other host stars
+    url: https://pubmed.ncbi.nlm.nih.gov/17407406/
+  - kind: science
+    label: >-
+      Ainsworth & Long - What have we learned from 15 years of free-air CO2 enrichment (FACE)? (New
+      Phytologist, 2005)
+    url: https://nph.onlinelibrary.wiley.com/doi/10.1111/j.1469-8137.2004.01224.x
+  - kind: science
+    label: >-
+      Woodward - Stomatal numbers are sensitive to increases in CO2 from pre-industrial levels
+      (Nature, 1987)
+    url: https://www.nature.com/articles/327617a0
+  - kind: science
+    label: >-
+      Beerling & McElwain - Fossil plants as indicators of the Phanerozoic global carbon cycle
+      (Annual Review of Earth and Planetary Sciences)
+    url: https://www.annualreviews.org/doi/10.1146/annurev.earth.33.092203.122645
+  - kind: science
+    label: Koch, Sillett et al. - The limits to tree height (Nature, 2004)
+    url: https://www.nature.com/articles/nature02417
+  - kind: science
+    label: >-
+      Farquhar, von Caemmerer & Berry - A biochemical model of photosynthetic CO2 assimilation in
+      leaves of C3 species (Planta, 1980)
+    url: https://link.springer.com/article/10.1007/BF00386231
+  - kind: science
+    label: >-
+      Knoblauch & Peters - Munch, morphology, microfluidics: our structural problem with the phloem
+      (Plant, Cell & Environment)
+    url: https://onlinelibrary.wiley.com/doi/10.1111/j.1365-3040.2010.02166.x
+  - kind: science
+    label: >-
+      Kotlobay, Sarkisyan et al. - Genetically encodable bioluminescent system from fungi (PNAS,
+      2018): the caffeic-acid/hispidin luciferin pathway
+    url: https://www.pnas.org/doi/10.1073/pnas.1803615115
+  - kind: science
+    label: >-
+      Demmig-Adams & Adams - Photoprotection and other responses of plants to high light stress
+      (Annual Review of Plant Biology): the xanthophyll cycle
+    url: https://www.annualreviews.org/doi/10.1146/annurev.pp.43.060192.003123
+  - kind: research-note
+    label: >-
+      Comparative Photobiology and Hydraulic Physiology of Pandoran Flora - Autotrophic
+      Bioenergetics, Gas Exchange, and Long-Distance Transport in a Hypercapnic Exolunar Biosphere
+      (chapter research note)

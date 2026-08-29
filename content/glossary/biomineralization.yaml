@@ -1,0 +1,23 @@
+id: biomineralization
+label:
+  vi: Khoáng hóa sinh học
+  en: Biomineralization
+definition:
+  vi: Quá trình các sinh vật sống định hướng và kiểm soát sự kết tinh của các khoáng
+    chất vô cơ (như canxi cacbonat, canxi phosphat, silica) trên các khuôn mẫu đại
+    phân tử hữu cơ ở nhiệt độ môi trường, tạo nên các cấu trúc xương, vỏ ốc và xà
+    cừ có tính năng cơ học vượt trội.
+  en: The process by which living organisms direct and control the nucleation and
+    growth of inorganic minerals (calcium carbonate, calcium phosphate, silica) on
+    organic macromolecular templates at ambient temperatures, forming bone, shells,
+    and nacre.
+see_also:
+- nacre
+- nanoscale-flaw-tolerance
+category: concept
+tags:
+- chemistry
+- physiology
+cover_prompt: Growing mineral crystals nucleating precisely along organic protein
+  templates in seawater, delicate teal bioluminescent illumination, painterly style,
+  no text.

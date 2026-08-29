@@ -1,0 +1,17 @@
+id: wood-ljungdahl-pathway
+label:
+  vi: Con đường Wood-Ljungdahl
+  en: Wood-Ljungdahl pathway
+definition:
+  vi: 'Lộ trình sinh hóa cố định carbon được cho là cổ xưa nhất còn tồn tại: khử trực tiếp khí carbonic bằng hydro để tạo ra acetyl-CoA, dùng các cụm sắt-lưu huỳnh và nickel làm trung tâm xúc tác. Điều khiến nó đáng chú ý cho bài toán nguồn gốc là phản ứng tổng thể tỏa năng lượng — nó chạy xuống dốc — và những cụm khoáng xúc tác nó gần như trùng khớp với khoáng chất kết tủa tự nhiên trong vách các miệng phun kiềm.'
+  en: 'The carbon-fixation route generally taken to be the most ancient still in use: reducing carbon dioxide directly with hydrogen to make acetyl-CoA, using iron-sulfur and nickel clusters as its catalytic centres. What makes it striking for the origin problem is that the overall reaction releases energy — it runs downhill — and the mineral clusters that catalyse it closely resemble the minerals that precipitate naturally in the walls of alkaline vents.'
+see_also:
+  - alkaline-hydrothermal-vent
+  - chemolithoautotroph
+  - last-universal-common-ancestor
+category: bio
+tags:
+- chemistry
+- physiology
+- astrobiology
+cover_prompt: A painted close study of a dark mineral surface studded with tiny cubic metallic clusters, faint teal gas molecules descending onto them and larger linked molecules leaving to one side, cool palette against indigo, painterly, no text, no labels, no numbers.

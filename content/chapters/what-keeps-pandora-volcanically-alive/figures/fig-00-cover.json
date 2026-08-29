@@ -24,7 +24,8 @@
     "spacecraft",
     "buildings",
     "humans",
-    "weapons"
+    "weapons",
+    "callouts"
   ],
   "consistency_notes": "Polyphemus is the banded gas giant in the background. Basalt landscape and molten lava provide the warm geothermal engine, balanced with Pandora's signature cool cyan bioluminescence.",
   "aspect_ratio": "16:9",

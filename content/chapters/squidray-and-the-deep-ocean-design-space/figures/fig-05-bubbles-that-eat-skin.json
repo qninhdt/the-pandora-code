@@ -10,7 +10,7 @@
   "palette": "Pale mist grey and cold white in the bubble sheet, ocean teal in the shallow water, void indigo in the deep water, magenta accent on the pitted damaged skin, faint cyan on the clean flow lines.",
   "style": "Painterly naturalist comparison plate, both registers in the same palette and hand.",
   "detail_level": "Crisp on the bubble sheet, the pitting damage and the clean flow lines; the surrounding water loose and atmospheric.",
-  "composition": "Two stacked horizontal registers of equal height, wing tip centred in each, plain water at the left of each register for annotations.",
+  "composition": "Two stacked horizontal registers of equal height, wing tip centred in each, plain water at the left of each register framed by deep negative space.",
   "exclude": [
     "text",
     "letters",
@@ -26,7 +26,9 @@
     "boat propellers",
     "machinery",
     "blood",
-    "gore"
+    "gore",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Both registers show the SAME wing at the same angle and scale - the only differences are depth, bubbles and skin damage. Wing shape matches the animal in fig-00-cover.",
   "aspect_ratio": "4:3",

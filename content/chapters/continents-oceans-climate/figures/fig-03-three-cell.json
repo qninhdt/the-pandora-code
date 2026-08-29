@@ -11,10 +11,25 @@
   "style": "Painterly plate reading as a diagram by layout, soft glowing volumes and brushed flow lines, NOT a hard vector schematic, NOT a 3D render.",
   "detail_level": "Moderate: the rising plume, the rain, and the two sinking arms clearly distinct; soft edges, no hard arrows with heads.",
   "composition": "Symmetric about the central rising plume - wet glowing centre, two dry flanks - so the rainforest-at-centre, desert-at-edge logic reads instantly.",
-  "exclude": ["text", "letters", "numbers", "labels", "lettered arrows", "grid", "UI", "watermark", "logos"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "lettered arrows",
+    "grid",
+    "UI",
+    "watermark",
+    "logos",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same teal cloud and forest palette as the cover's equatorial band; warm-grey reserved for the dry sinking zones. Flow lines are painterly streaks, not vector arrows.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no lettered arrows, no grid, no diagram chrome, no 3D-render or photographic look",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

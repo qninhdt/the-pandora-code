@@ -10,11 +10,33 @@
   "palette": "Cool teal-indigo water, cyan markings, muted stone-grey scars, one faint amber eye reflection.",
   "style": "Hand-painted speculative ethology plate with believable anatomy and quiet emotional observation.",
   "detail_level": "High detail on scarred head, four eyes, damaged fin and healed tracker site; simple hazy water around label targets.",
-  "composition": "Payakan's injuries occupy the right half, the isolated pod sits in an uncluttered upper background, and dark open water remains beside each feature for annotations.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "two-eyed whale", "baleen", "blood", "active harpoon", "combat", "bright coral clutter"],
+  "composition": "Payakan's injuries occupy the right half, the isolated pod sits in an uncluttered upper background, and dark open water remains beside each feature framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "two-eyed whale",
+    "baleen",
+    "blood",
+    "active harpoon",
+    "combat",
+    "bright coral clutter",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Match Payakan's four-eyed, six-appendaged scarred design and Lo'ak's reef Na'vi appearance from the generated cover. The scene is quiet evidence, not melodrama.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no labels, no arrows, no cinematic explosion, no photographic or CGI look, no ordinary Earth whale, no gore, no cartoon style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/tulkun-not-quite-whales/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/tulkun-not-quite-whales/fig-00-cover.png"
+  ]
 }

@@ -11,10 +11,28 @@
   "style": "Painterly naturalist cross-section plate, textured brushwork, soft-edged internal boundaries.",
   "detail_level": "High on the descending droplets and the cracked crust; softer in the deep interior glow.",
   "composition": "The world fills about three-quarters of the frame, centre-right, cut face toward the viewer. Dark empty space to the left for callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "watermark", "logos", "UI", "grid", "vegetation", "oceans", "clouds of water"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "leader lines",
+    "watermark",
+    "logos",
+    "UI",
+    "grid",
+    "vegetation",
+    "oceans",
+    "clouds of water",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "This is Pandora before it is Pandora - no forests, no oceans, no bioluminescence. The warm palette is licensed here because the subject is genuinely molten; keep it inside the body, with the surrounding space and haze cool.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no grid, no diagram chrome, no vegetation, no oceans, no bioluminescence, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

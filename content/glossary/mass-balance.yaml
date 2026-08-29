@@ -1,0 +1,32 @@
+id: mass-balance
+label:
+  vi: Cân bằng khối lượng
+  en: Mass balance
+definition:
+  vi: >-
+    Nguyên tắc kế toán rằng vật chất không tự sinh ra cũng không tự mất đi: lượng chứa trong một bể
+    chỉ có thể thay đổi bằng đúng hiệu số giữa những gì chảy vào và những gì chảy ra. Nghe như sổ
+    sách, nhưng nó là một công cụ điều tra sắc bén. Nếu bạn đo được nguồn, đo được bể, mà hai con số
+    không khớp, thì kết luận không phải "phép đo sai" mà là "còn một dòng nào đó chưa được đếm" — và
+    đi tìm dòng ấy chính là cách người ta phát hiện bể hấp thụ carbon còn thiếu của Trái Đất, cũng
+    như nguyên nhân oxy tụt giảm trong Biosphere 2.
+  en: >-
+    The accounting rule that matter is neither created nor destroyed: a reservoir's contents can
+    change only by exactly the difference between what flows in and what flows out. It sounds like
+    bookkeeping, and it is one of the sharpest investigative tools in the earth sciences. If you
+    measure the sources, measure the reservoir, and the two do not agree, the conclusion is not that
+    the measurement failed but that a flux has gone uncounted — and hunting that missing flux is how
+    Earth's missing carbon sink was found, and how the oxygen loss inside Biosphere 2 was explained.
+see_also:
+  - residence-time
+  - biogeochemical-cycle
+  - steady-state
+category: concept
+tags:
+  - earth-systems
+  - physics
+  - chemistry
+cover_prompt: >-
+  A painted conceptual plate of an old brass balance scale, one pan holding a small glowing sphere of
+  teal light and the other holding faint drifting particles, set against a dark void-indigo field,
+  painterly naturalist textbook illustration, no text, no numbers, no labels.

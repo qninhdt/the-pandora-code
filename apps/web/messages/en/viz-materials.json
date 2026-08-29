@@ -1,0 +1,172 @@
+{
+  "viz": {
+    "materialIndexBench": {
+      "title": "There is no strongest material",
+      "subtitle": "Twelve materials, four jobs — choosing the job reshuffles the ranking",
+      "aria": "Materials ranked by their performance for the job: {job}",
+      "jobLabel": "What the part has to do",
+      "legend": "Teal bars are grown by an organism; grey bars are manufactured.",
+      "job": {
+        "tie": "Hold a pull",
+        "beam": "Resist bending",
+        "column": "Stand up a column",
+        "spring": "Store energy"
+      },
+      "hint": {
+        "tie": "A bowstring or a tendon: pure tension, so what matters is strength per unit weight.",
+        "beam": "A wing spar or a branch: it has to stay stiff in bending, which favours the square root of stiffness over density.",
+        "column": "A trunk carrying its own weight: buckling sets the limit, and the cube root of stiffness over density decides it.",
+        "spring": "A bow limb or an ankle tendon: the job is to take energy in and give it back, which rewards strength squared over stiffness."
+      },
+      "unit": {
+        "kNmPerKg": "{value} kN·m/kg",
+        "kJPerKg": "{value} kJ/kg",
+        "percent": "{value}%"
+      },
+      "readout": {
+        "leader": "Best for this job",
+        "leaderNote": "at {figure}",
+        "steel": "Where steel lands",
+        "steelValue": "{rank} of {total}",
+        "steelNote": "the material we call strong",
+        "percent": "{value}%"
+      },
+      "material": {
+        "bone": "Bone",
+        "nacre": "Nacre",
+        "wood": "Spruce wood",
+        "balsa": "Balsa wood",
+        "cuticle": "Insect cuticle",
+        "tendon": "Tendon",
+        "silk": "Spider silk",
+        "biosilica": "Sponge glass",
+        "steel": "Mild steel",
+        "titanium": "Titanium alloy",
+        "aluminium": "Aircraft aluminium",
+        "cfrp": "Carbon fibre"
+      },
+      "verdict": {
+        "tie": "Silk sits beside aerospace carbon fibre and leaves steel at the bottom of the board. Weight for weight, a spider outperforms a steel mill.",
+        "beam": "Balsa wins, and it is not a trick: for holding a shape against bending per unit weight, a light stiff foam beats every metal here. This is why wings are built hollow.",
+        "column": "The same light woods lead again. A trunk fails by buckling, and buckling rewards bulk that weighs nothing — which is exactly what a cellular solid is.",
+        "spring": "Now silk is alone at the top, an order of magnitude clear. A bow limb is an energy store, and this is why the good ones are grown rather than cast."
+      }
+    },
+    "toughnessArchitectureLab": {
+      "title": "The same mineral, arranged four ways",
+      "subtitle": "Nothing about the ingredient changes — only where it is put",
+      "aria": "A crack advancing through the architecture: {architecture}",
+      "solidBlock": "one solid block of mineral",
+      "progressLabel": "Drive the crack across",
+      "progressValue": "{pct}% of the block",
+      "architecture": {
+        "monolithic": "Solid mineral",
+        "platelets": "Platelet stack",
+        "bridged": "Staggered and bridged",
+        "bouligand": "Twisted stack"
+      },
+      "hint": {
+        "monolithic": "Cast the mineral as one block and a crack runs dead straight along the plane of highest tension. Every millimetre it travels is free.",
+        "platelets": "Break the block into platelets and the crack has to detour around each one, arriving at every interface with less force than it started with.",
+        "bridged": "Now let some mineral bridges survive behind the tip. They pull the crack faces shut from behind, and this is roughly where real nacre sits.",
+        "bouligand": "Rotate each layer a little further than the last. The crack can no longer find a single plane to follow, so it has to corkscrew — the mantis shrimp's club."
+      },
+      "readout": {
+        "tortuosity": "Distance travelled",
+        "tortuosityNote": "per unit of progress across",
+        "tipDrive": "Force reaching the tip",
+        "tipDriveNote": "after a {angle}° turn",
+        "energy": "Energy to break",
+        "energyNote": "measured, against the solid block",
+        "times": "{value}×",
+        "percent": "{value}%"
+      },
+      "verdict": {
+        "monolithic": "This is the baseline, and it is a bad one. Aragonite in bulk is chalky and brittle: a flaw anywhere becomes a crack, and the crack runs to the far side without ever being made to work for it.",
+        "platelets": "Geometry alone already buys a great deal. Forcing the crack off the straight plane costs it force at every turn, and the path it has to cut gets longer.",
+        "bridged": "Real nacre lands about here: roughly a thousand times the energy to break, out of the same brittle mineral it started with. Not a better ingredient — a better arrangement.",
+        "bouligand": "Twisting the stack takes the crack out of the drawing plane entirely. It manufactures new surface faster than it advances, which is the most expensive way to travel a crack can be given."
+      }
+    },
+    "columnHeightCeiling": {
+      "title": "How tall a trunk can stand on its own weight",
+      "subtitle": "Greenhill's buckling height — set the base, the wood, and the gravity",
+      "aria": "Column buckling height scale, currently {height} metres",
+      "axisMetres": "metres",
+      "profileLabel": "Trunk shape",
+      "hint": "Notice which slider actually moves the ceiling. Diameter is under a two-thirds power and gravity under a cube root, so widening the base beats changing worlds.",
+      "profile": {
+        "uniform": "Straight cylinder",
+        "tapered": "Naturally tapered"
+      },
+      "reference": {
+        "hyperion": "Hyperion, 116 m",
+        "hydraulicLimit": "water's limit, ~130 m",
+        "hometree": "Hometree, 300 m"
+      },
+      "readout": {
+        "ceiling": "Buckles at",
+        "ceilingNote": "its own weight, no wind",
+        "safety": "Margin at 300 m",
+        "safetyNote": "against buckling alone",
+        "needed": "Base needed for 300 m",
+        "neededNote": "with this wood and gravity",
+        "metres": "{value} m",
+        "metresPrecise": "{value} m",
+        "times": "{value}×"
+      },
+      "slider": {
+        "diameter": "Base diameter",
+        "gravity": "Surface gravity",
+        "gravityValue": "{value} × Earth",
+        "modulus": "Stiffness of the wood",
+        "modulusValue": "{value} GPa",
+        "density": "Density of the wood",
+        "densityValue": "{value} kg/m³"
+      },
+      "verdict": {
+        "clears": "Ordinary wood clears Hometree's 300 m with room to spare, and it does so on Earth-strength gravity too. Whatever stops a real tree at 130 m, it is not buckling — it is getting water to the top.",
+        "fails": "At this base diameter the column buckles under its own weight before it reaches 300 m. Widen the base: it is the cheapest fix by far, which is why real giants flare at the bottom."
+      }
+    },
+    "sparMassFractionGate": {
+      "title": "What a 25-metre wing costs its owner",
+      "subtitle": "Swap the spar material and watch the wing eat the animal",
+      "aria": "Wing spar mass at {pct} percent of body mass",
+      "materialLabel": "Spar material",
+      "rootMoment": "{value} kN·m at the shoulder",
+      "barLabel": "Spars, as share of body",
+      "viabilityLine": "no animal left",
+      "percent": "{value}%",
+      "material": {
+        "bone": "Ordinary bone",
+        "composite": "Carbon composite"
+      },
+      "hint": "The wing has to survive the bending moment and still leave room for a body. Both conditions have to hold at once.",
+      "slider": {
+        "span": "Wingspan",
+        "spanValue": "{value} m",
+        "mass": "Body mass",
+        "load": "How hard it banks",
+        "loadValue": "{value} g"
+      },
+      "readout": {
+        "sparMass": "Both spars weigh",
+        "sparMassNote": "carried on every wingbeat",
+        "stress": "Stress in the wall",
+        "stressNote": "material yields at {yield} MPa",
+        "safety": "Margin to failure",
+        "safetyThin": "thin — one hard turn from breaking",
+        "safetyComfortable": "comfortable for hard manoeuvring",
+        "kg": "{value} kg",
+        "mpa": "{value} MPa",
+        "times": "{value}×"
+      },
+      "verdict": {
+        "viable": "This flier works. The spars are light enough to leave a body around them and strong enough to bank hard without breaking.",
+        "grounded": "This flier cannot exist. Either the spar breaks under the manoeuvre, or it weighs so much that there is no mass budget left for muscle, gut and brain.",
+        "compare": "With {material} instead, the spars would come to {pct}% of body mass."
+      }
+    }
+  }
+}

@@ -11,9 +11,21 @@
   "style": "Clean elegant infographic of thin glowing lines, like a vector schematic.",
   "detail_level": "Smooth clean curved lines, a clearly denser glowing spiral at the overlap; everything else sparse.",
   "composition": "Large circle upper-left, small circle right, the bright knot centred and slightly low, island cluster directly beneath it.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "photographic texture"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "photographic texture",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Thin glowing cyan/teal lines on a near-black background; this is the shared visual language for every schematic diagram in the chapter.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no letters, no numbers, no busy clutter, no photorealism, no 3D bevels, no drop shadows",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

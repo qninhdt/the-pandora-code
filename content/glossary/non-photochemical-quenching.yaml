@@ -1,0 +1,16 @@
+id: non-photochemical-quenching
+label:
+  vi: Dập tắt không quang hóa (NPQ)
+  en: Non-photochemical quenching
+definition:
+  vi: 'Van xả an toàn của một chiếc lá khi ánh sáng mạnh quá mức nó tiêu thụ được. Bộ máy quang hợp bị nhồi quá nhiều năng lượng sẽ sinh ra các gốc phản ứng phá hủy chính nó, nên cây có một cơ chế xả: khi bên trong màng quang hợp bị axit hóa, một enzyme sẽ biến một carotenoid thành dạng khác, và sắc tố mới này tỏa phần năng lượng dư ra thành nhiệt trước khi nó kịp tới trung tâm phản ứng. Khi sáng dịu lại, phản ứng chạy ngược. Nói gọn: một cái nhiệt kế điều nhiệt làm bằng sắc tố — và là thứ tối quan trọng với những chiếc lá bị dúi ra dúi vào giữa tối và sáng chói liên tục.'
+  en: 'A leaf''s safety valve for light beyond what it can spend. Photosynthetic machinery stuffed with more energy than it can use generates reactive fragments that destroy it, so plants carry a dump: when the interior of the photosynthetic membrane acidifies, an enzyme converts one carotenoid into another, and the new pigment bleeds the surplus away as heat before it reaches the reaction centre. When the light softens the reaction runs backwards. In short: a thermostat made of pigment — and vital for leaves shoved repeatedly between darkness and full glare.'
+see_also:
+- carotenoid
+- photosynthesis
+- chlorophyll
+category: bio
+tags:
+- physiology
+- chemistry
+cover_prompt: A painted close study of a photosynthetic membrane rendered as a stack of thin glowing plates, with excess light arriving at the top and being turned aside as faint warm heat shimmer at the edges instead of passing downward, cool teal-cyan palette with amber accents against void-indigo, painterly naturalist plate, no text, no labels.

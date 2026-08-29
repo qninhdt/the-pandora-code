@@ -11,7 +11,19 @@
   "style": "Clean elegant schematic of glowing solid shapes and dashed lines, no realism.",
   "detail_level": "Crisp solid cliff edges; clearly separated dashes of even spacing across the gap; soft mist only.",
   "composition": "Symmetric: left cliff and right cliff at the frame edges, the dashed span centered between them, open dark space above and below.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "photographic texture", "people", "question marks"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "photographic texture",
+    "people",
+    "question marks",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Glowing cyan and teal lines on near-black, matching the book's schematic diagram language; solid means established, dashes mean reasoned across.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no numbers, no symbols, no photorealism, no 3D bevels, no clutter, no broken or missing far side"

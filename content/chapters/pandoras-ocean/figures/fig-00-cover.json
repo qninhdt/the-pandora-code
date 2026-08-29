@@ -11,9 +11,27 @@
   "style": "Painterly speculative-biology naturalist illustration, observed underwater with hand-painted texture and strong atmospheric depth.",
   "detail_level": "Crisp diver silhouette and near reef textures; fish and architecture soften with depth; the abyss dissolves into clean haze.",
   "composition": "A strong diagonal reef edge divides bright upper life from dark open volume. The diver crosses the division and provides scale. Preserve generous dark negative space in the lower left.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "callout lines", "film actors", "human face close-up", "Earth scuba gear", "Avatar branding"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "callout lines",
+    "film actors",
+    "human face close-up",
+    "Earth scuba gear",
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Establish a coherent Awa'atlu-like marine environment without copying a film frame. The sea is the subject; the diver is scale, not a portrait.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no labels, no arrows, no logo, no poster title, no photographic film still, no glossy CGI, no Earth coral photo, no crowded foreground",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

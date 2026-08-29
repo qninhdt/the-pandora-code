@@ -29,7 +29,8 @@
     "bioluminescence",
     "spacecraft",
     "buildings",
-    "humans"
+    "humans",
+    "callouts"
   ],
   "consistency_notes": "This is explicitly NOT Pandora — it is the dry one-plate comparison world, so it must carry no bioluminescence and no water. The absence of any linear boundary is the entire point of the image and must be unmistakable.",
   "aspect_ratio": "16:9",

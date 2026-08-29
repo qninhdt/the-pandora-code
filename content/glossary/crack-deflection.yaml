@@ -1,0 +1,25 @@
+id: crack-deflection
+label:
+  vi: Chệch hướng vết nứt
+  en: Crack deflection
+definition:
+  vi: Cơ chế gia cường độ dai trong cơ học phá hủy, trong đó vết nứt bị buộc phải
+    đổi hướng lệch khỏi mặt phẳng chịu ứng suất kéo lớn nhất khi gặp các ranh giới
+    tiếp giáp cấu trúc. Sự đổi hướng làm suy giảm động lực tại đỉnh vết nứt và tăng
+    diện tích bề mặt cần xé rách, giúp vật liệu composite hấp thụ năng lượng phá hủy
+    lớn hơn nhiều lần.
+  en: An extrinsic toughening mechanism in fracture mechanics where a propagating
+    crack is forced to deviate from the plane of maximum tensile stress upon encountering
+    weak interfaces, reducing the crack-driving force and greatly increasing energy
+    dissipation.
+see_also:
+- fracture-toughness
+- nacre
+- bouligand-structure
+category: concept
+tags:
+- physics
+- physiology
+cover_prompt: A microscopic naturalist study of a glowing crack zigzagging through
+  layered aragonite tiles and protein mortar, deep teal background, painterly illustration,
+  no text.

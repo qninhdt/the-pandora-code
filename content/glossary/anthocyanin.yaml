@@ -1,0 +1,16 @@
+id: anthocyanin
+label:
+  vi: Anthocyanin
+  en: Anthocyanin
+definition:
+  vi: 'Nhóm sắc tố flavonoid cho màu đỏ, tía và lam ở bắp cải tím, quả mọng và lá đỏ. Điểm dễ nhầm nhất: anthocyanin hấp thụ ánh sáng lục nhưng KHÔNG chuyển năng lượng ấy cho bộ máy quang hợp — nó giữ lại cho riêng mình. Vai trò thật của nó là kem chống nắng, chất làm mát và chất dọn các gốc phản ứng sinh ra khi sáng quá mạnh. Vì thế, khi cần giải thích vì sao một chiếc lá có màu khác lục mà vẫn ăn tốt, anthocyanin là câu trả lời sai: nó giải thích được màu nhưng không đóng góp gì cho việc thu năng lượng.'
+  en: 'The family of flavonoid pigments giving red, purple and blue to red cabbage, berries and red foliage. The most common confusion: anthocyanins absorb green light but do NOT pass that energy on to the photosynthetic machinery — they keep it. Their real roles are sunscreen, coolant, and mop for the reactive fragments intense light produces. So when explaining how a non-green leaf still feeds well, anthocyanin is the wrong answer: it accounts for the colour and contributes nothing to the harvest.'
+see_also:
+- carotenoid
+- chlorophyll
+- green-gap
+category: bio
+tags:
+- chemistry
+- physiology
+cover_prompt: A painted close view of a deep violet leaf surface with its upper cell layer rendered as a translucent tinted film sitting above the working green-teal tissue beneath, cool teal-cyan palette with magenta accents against void-indigo, painterly naturalist plate, no text, no labels.

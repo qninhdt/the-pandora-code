@@ -1,0 +1,17 @@
+id: stomatal-index
+label:
+  vi: Chỉ số khí khổng
+  en: Stomatal index
+definition:
+  vi: 'Tỷ lệ giữa số khí khổng và tổng số tế bào trên một vùng bề mặt lá — cách đo mật độ lỗ khí mà không bị nhiễu bởi việc lá to hay nhỏ. Điều làm nó quý giá: cây quyết định mọc bao nhiêu lỗ khí tùy theo lượng CO₂ nó sống trong đó. Không khí giàu carbon thì ít lỗ, loãng thì nhiều lỗ. Ian Woodward chứng minh trực tiếp điều này năm 1987. Nghĩa là có thể đảo ngược phép đo: đếm lỗ khí trên một chiếc lá hóa thạch là suy ra được nồng độ CO₂ của bầu trời hàng chục hay hàng trăm triệu năm trước. Đây là một chỉ dấu cổ khí hậu đúng nghĩa — chỗ mà vật lý bắt buộc một sinh vật phải chọn, nên cấu tạo của nó trở thành một phép đo.'
+  en: 'The ratio of stomata to total cells across a patch of leaf surface — a way of measuring pore density that is not thrown off by whether the leaf grew large or small. What makes it valuable: a plant decides how many pores to build according to how much CO₂ it lives in. Carbon-rich air, fewer pores; thin air, more. Ian Woodward demonstrated this directly in 1987. Which means the measurement can be inverted: counting pores on a fossil leaf yields the CO₂ concentration of a sky tens or hundreds of millions of years ago. This is a genuine paleoclimate proxy — a place where physics forced an organism''s hand, so its anatomy became a measurement.'
+see_also:
+- stomata
+- water-use-efficiency
+- transpiration
+category: concept
+tags:
+- physiology
+- earth-systems
+- geology
+cover_prompt: A painted study of a fossil leaf impression in pale stone, its surface texture showing a scatter of tiny regular pore marks, one small area rendered at higher magnification alongside it, cool teal-cyan palette with warm stone tones against void-indigo, painterly naturalist plate, no text, no labels.

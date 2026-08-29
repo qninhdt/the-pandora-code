@@ -11,10 +11,27 @@
   "style": "Painterly naturalist plate, two clean planetary portraits for comparison, NOT a vector infographic, NOT a 3D render.",
   "detail_level": "Moderate-high on each sphere's banding; the contrast in belt width is the point and must be unmistakable.",
   "composition": "Two equal spheres balanced left and right with dark space between; left = narrow belt + wide deserts, right = wide belt + far-flung thin deserts.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "grid", "UI", "watermark", "logos", "Avatar branding"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "grid",
+    "UI",
+    "watermark",
+    "logos",
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Reuse the equatorial cloud-band look from fig-00-cover for both spheres; the right sphere is Pandora-like with its broadened belt. No labels - the width contrast carries the meaning.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no grid, no diagram chrome, no 3D-render or photographic look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/continents-oceans-climate/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/continents-oceans-climate/fig-00-cover.png"
+  ]
 }

@@ -1,0 +1,32 @@
+id: revelle-factor
+label:
+  vi: Hệ số Revelle
+  en: Revelle factor
+definition:
+  vi: >-
+    Con số đo mức độ khó tính của đại dương khi nhận thêm carbon dioxide: nó cho biết áp suất CO₂ trong
+    khí quyển phải tăng bao nhiêu phần trăm để lượng carbon vô cơ tan trong nước biển tăng một phần trăm.
+    Trên Trái Đất hiện nay hệ số này vào khoảng mười đến mười bốn, nghĩa là biển hấp thụ kém hiệu quả hơn
+    rất nhiều so với trực giác — và tệ hơn theo thời gian, vì mỗi phân tử CO₂ hòa tan lại tiêu thụ một ion
+    carbonate, đúng thứ tạo nên khả năng đệm. Đại dương không phải một bể chứa vô hạn; nó là một bể chứa
+    tự làm mình chai cứng lại khi bị nạp thêm.
+  en: >-
+    The number that measures how grudgingly an ocean accepts more carbon dioxide: it gives the percentage
+    rise in atmospheric CO₂ needed to raise the dissolved inorganic carbon in seawater by one percent. On
+    modern Earth it sits around ten to fourteen, which makes the sea a far less efficient sink than
+    intuition suggests — and a worsening one, because every CO₂ molecule that dissolves consumes a
+    carbonate ion, the very species that provides the buffering. The ocean is not a limitless reservoir;
+    it is a reservoir that stiffens against you as you fill it.
+see_also:
+  - ocean-acidification
+  - biological-pump
+  - carbonate-budget
+category: concept
+tags:
+  - oceanography
+  - chemistry
+  - earth-systems
+cover_prompt: >-
+  A painted cross-section of dark seawater just below a choppy surface, faint gas molecules pressing
+  down from the air above and only a few passing into the water, the liquid rendered dense and resistant
+  with cool teal internal light, painterly naturalist plate, no text, no numbers, no labels.

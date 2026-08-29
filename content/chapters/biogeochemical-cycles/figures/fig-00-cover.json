@@ -1,0 +1,37 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "biogeochemical-cycles",
+  "role": "hero",
+  "narrative_purpose": "The chapter's cover: an enormous living forest standing directly above the dark strata that supply and receive every atom in it, framing the chapter's question — whether a planet's material accounts actually balance.",
+  "subject": "A cross-sectional view where the ground has been cut away cleanly, so a towering glowing forest above sits directly atop a deep exposed profile of dark layered earth below. Above the cut line: colossal trees with buttressed trunks and a canopy far overhead, foliage threaded with faint teal and cyan bioluminescence, hanging vines, drifting spores. Below the cut line, occupying roughly the lower third: a deep vertical section through dark soil, pale root masses tapering downward, and beneath them four or five distinct horizontal bands of sedimentary stone, progressively darker and more compressed with depth. A few fine luminous threads run downward from the root mass into the upper stone bands and a few run back up, suggesting a slow two-way exchange between the living layer and the rock. In the far upper distance the pale curved limb of a banded gas giant sits low through heavy haze.",
+  "scene": "A cutaway of a Pandoran forest and the layered ground beneath it at dusk, showing the living canopy and the mineral strata as one continuous system.",
+  "camera": "Wide landscape view from ground level a short distance back, the cut face of the earth filling the lower third and the forest rising through the upper two-thirds.",
+  "light": "Bioluminescent key from within the canopy and understory foliage, cool and soft; the exposed soil and stone section lit only by that spill, falling into deep indigo shadow with depth; layered volumetric haze between the tree trunks.",
+  "palette": "Void-indigo and deep teal-indigo dominating, ocean teal in the mid-tones of the strata, Pandora cyan and living teal in the foliage glow, weathered grey stone in the rock bands, a single restrained band of ember amber in the distant horizon haze.",
+  "style": "Painterly speculative-naturalist plate with heavy texture in both foliage and stone, observed rather than staged, hand-illustrated rather than rendered.",
+  "detail_level": "Crisp bark, root and mineral-band texture in the near foreground and the cut face; the deep forest and distant horizon softening into layered haze.",
+  "composition": "A strong horizontal division roughly a third from the bottom separating the living layer from the mineral one; the largest trunk offset left of centre; large tonally even areas of dim canopy and dark stone left uncluttered so text can sit over the image.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "diagram lines",
+    "arrowheads",
+    "floating or levitating rock",
+    "spacecraft",
+    "buildings",
+    "humans",
+    "machines"
+  ],
+  "consistency_notes": "Nothing in this image levitates; this is ordinary bedrock beneath ordinary forest. The gas giant on the horizon is Polyphemus. The luminous threads between root mass and stone must read as faint natural mineral seepage and root growth, never as glowing wires or a technological network. Cool palette dominates; warm is confined to the horizon.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no diagram lines, no arrows, no arrowheads, no glowing cables or wires, no floating islands, no photographic or 3D-render look, no lens flares, no machines, no neon UI glow, no cartoon style, no flat vector infographic look",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

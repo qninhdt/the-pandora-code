@@ -1,0 +1,20 @@
+{
+  "id": "fig-02-leaf-light-path",
+  "chapter_slug": "how-a-pandoran-plant-feeds",
+  "role": "diagram",
+  "narrative_purpose": "Corrects the commonest misunderstanding in the chapter: green light is not wasted light. Shows blue and red being consumed in the top cell layers while green travels deeper and is absorbed by cells the strong wavelengths never reach.",
+  "subject": "A cutaway slab of leaf tissue seen edge-on, several cell layers thick, drawn as stacked rows of rounded translucent cells. Three separate beams of light enter the top surface from above: a deep blue beam and a deep red beam that both stop short, petering out and being swallowed within the first two rows of cells, and a green beam that continues much further down and finally dissipates among the lowest rows. The uppermost cells glow brightly where the blue and red are absorbed; the lowest cells glow faintly where the green ends.",
+  "scene": "An isolated specimen slice of leaf tissue suspended against deep dark, presented like a naturalist's cross-section study with nothing else in the frame.",
+  "camera": "A straight-on edge view of the tissue slab, level with the layers so the depth each beam reaches is directly comparable.",
+  "light": "The three entering beams are the only light; the tissue itself is lit only where a beam is being absorbed, brightest at the top where blue and red end and faintly at the bottom where green ends.",
+  "palette": "Void-indigo ground and deep teal cell walls; the beams in restrained deep blue, deep magenta-red and a soft green; absorbed glow in Pandora cyan and living teal.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, a botanical cross-section rendered as an illustration rather than a schematic.",
+  "detail_level": "Crisp on the cell outlines and on exactly where each beam terminates; the surrounding void soft and empty.",
+  "composition": "The tissue slab spanning the lower two thirds horizontally, the three beams descending from the top with clear space between them, wide dark empty band across the upper frame for overlaid callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "wavelength scales", "graph axes", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette; the teaching point is the differing penetration depth of the three beams, so their stopping points must be unmistakably different.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no axes or rulers, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style, no vector flat design",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

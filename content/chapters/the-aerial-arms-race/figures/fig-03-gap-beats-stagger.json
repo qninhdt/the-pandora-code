@@ -10,7 +10,7 @@
   "palette": "Left half muted teal-into-magenta where the rear wing sits in bad air; right half cleaner cyan. Deep indigo void behind both.",
   "style": "Painterly hand-worked comparison plate, brushed glowing flow, not a vector schematic.",
   "detail_level": "Even detail on both halves so neither reads as the more finished picture.",
-  "composition": "Clean vertical split down the centre, matched framing, plain dark space along the top of each half for overlaid callouts.",
+  "composition": "Clean vertical split down the centre, matched framing, plain dark space along the top of each half framed by deep negative space.",
   "exclude": [
     "text",
     "letters",
@@ -24,12 +24,17 @@
     "dimension lines",
     "vector flat style",
     "infographic style",
-    "photographic look"
+    "photographic look",
+    "arrows",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Wing sections identical in shape and size to the previous figure's, so the reader recognises them. Left = far apart along the flight direction and still spoiled; right = far apart vertically and clean. The contrast between 'inside the sinking air' and 'above it' is the only idea in the frame.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrowheads, no dimension lines, no vector-flat infographic look, no CAD linework, no photographic or 3D render, no cartoon style",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": [
     "apps/web/public/images/chapters/the-aerial-arms-race/fig-02-the-air-the-second-wing-gets.png"
   ]

@@ -24,11 +24,15 @@
     "grid",
     "UI",
     "watermark",
-    "logos"
+    "logos",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Ocean in the same deep ocean-teal used for Pandoran seas elsewhere in the book; rain and spray in the chapter's water-in-air cyan. Keep the frame empty of craft, creatures and coastline so the weather is the whole subject.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no boats, no vessels, no land, no creatures, no grid, no diagram chrome, no photographic or 3D-render look",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

@@ -1,0 +1,33 @@
+id: limiting-nutrient
+label:
+  vi: Dưỡng chất giới hạn
+  en: Limiting nutrient
+definition:
+  vi: >-
+    Nguyên tố hiếm nhất so với nhu cầu của sinh vật, và vì thế là thứ quyết định một hệ sinh thái có
+    thể sản xuất bao nhiêu — bất kể mọi dưỡng chất khác dư dả đến đâu. Đây là định luật cực tiểu của
+    Liebig: cây không lớn theo tổng lượng thức ăn mà theo món thiếu nhất. Trên thang thời gian ngắn,
+    nitơ thường là kẻ giới hạn trực tiếp; nhưng qua hàng nghìn năm thì phốt pho mới là kẻ giới hạn tối
+    hậu, bởi thiếu nitơ luôn mở ra một ngách sinh thái cho vi khuẩn cố định đạm lấp vào, còn thiếu phốt
+    pho thì không có lối thoát nào tương đương — không sinh vật nào rút được phốt pho từ không khí.
+  en: >-
+    The element scarcest relative to what organisms need, and therefore the one that sets how much an
+    ecosystem can produce, no matter how abundant everything else is. This is Liebig's law of the
+    minimum: growth follows the shortest supply, not the total. On short timescales nitrogen is usually
+    the proximate limiter; across millennia phosphorus is the ultimate one, because a nitrogen shortfall
+    always opens a niche for nitrogen-fixing organisms to fill while a phosphorus shortfall has no
+    equivalent escape — no organism can draw phosphorus from the air.
+see_also:
+  - redfield-ratio
+  - nitrogen-fixation
+  - biogeochemical-cycle
+  - net-primary-production
+category: concept
+tags:
+  - ecology
+  - chemistry
+  - earth-systems
+cover_prompt: >-
+  A painted still-life of a wooden barrel built from staves of unequal height, luminous teal liquid
+  filling it only as high as the shortest stave and spilling over that one gap, dark indigo background,
+  painterly naturalist plate, no text, no numbers, no labels.

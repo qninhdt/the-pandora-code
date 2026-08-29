@@ -45,6 +45,20 @@ That is the whole model. Prey grow on their own and are eaten at a rate set by e
   caption="The pulse the math predicts. Hexapede numbers (the prey) and viperwolf numbers (the predator) chase each other around a closed loop forever, the predator wave always lagging a quarter-step behind the prey. Switch to the phase view and the same motion becomes a single orbit the system circles without ever spiralling in or out — balance not as a resting point, but as a wheel that never stops turning."
 />
 
+<DiagramFigure
+  src="/images/chapters/the-hunters-and-the-hunted/fig-02-the-coupled-cycle.webp"
+  alt="Two coupled luminous population waves over time: an upper cyan herbivore wave and a trailing magenta predator wave shifted to the right, showing the classic phase lag of Lotka-Volterra dynamics"
+  figNo="02"
+  labels={[
+    { x: 30, y: 32, side: "left", label: "Prey abundance peak (Yerik)", note: "Herbivore population surges when predation pressure is low" },
+    { x: 48, y: 58, side: "right", label: "Lagging predator peak (Nantang)", note: "Predator numbers climb with a generational delay, cresting after prey decline begins" },
+    { x: 70, y: 75, side: "left", label: "Coupled phase offset", note: "The quarter-cycle lag keeps the population wheel turning indefinitely without collapsing" }
+  ]}
+  caption="The coupled pulse. The prey population wave (cyan) crests first; the predator wave (magenta) peaks a quarter-step later. Because predators require time to breed and recruit new hunters, their boom lags behind the food supply — creating an eternal oscillation rather than a static equilibrium."
+  tier="real_science"
+/>
+
+
 And the cycle has a shape worth feeling in your bones, because it explains the "always a beat behind" you saw from the treetops. Start with plenty of hexapedes. Food is everywhere, so the viperwolves feast and breed, and their numbers climb — but climbing takes time, a generation of well-fed pups, so the predator peak arrives *late*, after the prey have already begun to suffer. Now there are too many viperwolves for the thinning hexapedes to sustain. The hunters overshoot, eat the prey down to scarcity, and then starve in the desert they have made — their own peak becomes their undoing. With the predators crashing, the surviving hexapedes are released, multiply back into the empty forest, and the whole wheel turns again. Predator follows prey the way a shadow follows a hand: bound to it, shaped by it, and always a quarter-turn behind. Neither population ever rests, and neither needs to. The balance is not a still point. It is a wheel.
 
 ## The same wheel, turning on Earth
@@ -91,6 +105,20 @@ The ecologist C. S. Holling sorted the possibilities into three shapes, and all 
   caption="How fast one hunter eats as prey grow more abundant — the three shapes Holling found. Type I climbs in a straight line until it abruptly stops: the filter-feeder, like a tulkun straining the sea. Type II climbs then bends to a ceiling set by handling time: the busy solitary hunter, a thanator that can only kill and eat so fast. Type III is the S-curve — slow at low prey density, then steep, then flat — the shape that saves rare prey, the viperwolf that ignores a hexapede until there are enough to be worth learning. Only the S-curve bends down near the origin, and that bend is a refuge."
 />
 
+<DiagramFigure
+  src="/images/chapters/the-hunters-and-the-hunted/fig-04-functional-response.webp"
+  alt="Three distinct glowing curves illustrating Holling's functional response types against a dark field: Type I linear plateau, Type II convex handling saturation, and Type III sigmoidal prey-switching S-curve"
+  figNo="04"
+  labels={[
+    { x: 72, y: 25, side: "left", label: "Type I: Filter feeder cap", note: "Direct intake proportionality up to mechanical saturation (e.g. Tulkun plankton grazing)" },
+    { x: 42, y: 38, side: "right", label: "Type II: Handling time limit", note: "Search time shrinks but digestion/handling taxes plateau consumption (e.g. Thanator)" },
+    { x: 32, y: 78, side: "right", label: "Type III: Prey-switching refuge", note: "Low consumption at scarce densities gives depleted prey time to recover (e.g. Viperwolf)" }
+  ]}
+  caption="Three shapes of a hunter's appetite. As prey density grows, predation rates cannot rise forever. Type I hits a hard ceiling; Type II bends under the weight of handling time; Type III stays flat at low density before rising, providing a behavioural refuge that shields rare prey from extinction."
+  tier="real_science"
+/>
+
+
 The straight-line **Type I** is the simplest: eat in direct proportion to what is available, up to a hard cap. It fits a filter-feeder that strains its food from a flow without chasing it — on Pandora, the great tulkun of the eastern sea cruising open-mouthed through clouds of plankton, taking in food at a rate that just tracks how thick the water is until the animal is sated. Search and swallow are the same act; there is no handling tax until the very top.
 
 The bending **Type II** is the busy hunter's curve. At low prey density the predator's kill rate climbs steeply — more prey, more kills — but as prey grow abundant the curve bends over and flattens against the ceiling of handling time. A solitary thanator can only stalk, kill, and consume so many sturmbeest in a week no matter how thick the herds grow; past a point, more prey in the forest does not mean more kills, only less time spent searching between them. This is the most common predator curve on Earth, and it is quietly *destabilising* — because at low prey density the predator takes a *larger fraction* of what little remains, pressing rare prey toward rarer still.
@@ -130,6 +158,21 @@ Now perform the thought experiment that Pandora's apex predators perform for fre
 <KeystoneCascadeToggle
   caption="Pull the keystone and watch the arch fall. With the apex predator present, the heavy grazers are held in check and the forest's layers stay balanced. Remove it, and the released giants explode, strip the vegetation, and crush the smaller herbivores out of existence — a collapse that runs from the top of the web to the bottom, sparing nothing, set off by removing a single rare animal."
 />
+
+<DiagramFigure
+  src="/images/chapters/the-hunters-and-the-hunted/fig-06-keystone-pull.webp"
+  alt="A two-panel comparative painting: on the left, an apex predator maintains a lush, diverse multi-tiered forest; on the right, the predator is removed, causing massive herbivores to overgraze and strip the understory to bare mud"
+  figNo="06"
+  labels={[
+    { x: 28, y: 25, side: "left", label: "Apex predator present", note: "Top-down control regulates giant browser densities and maintains canopy diversity" },
+    { x: 22, y: 72, side: "left", label: "Lush intact understory", note: "Diverse flora and small fauna thrive in balanced structural niches" },
+    { x: 74, y: 35, side: "right", label: "Predator-free overpopulation", note: "Unchecked mega-herbivores multiply rapidly without top-down mortality" },
+    { x: 78, y: 75, side: "right", label: "Trophic collapse & denudation", note: "Overbrowsing strips vegetation, eroding soil and eliminating small browsers" }
+  ]}
+  caption="Pulling the archway's keystone. Left: with the top predator present, mega-herbivores are kept in check and the multi-layered understory flourishes. Right: remove the apex hunter and the released giants multiply, stripping the forest bare and driving smaller creatures to extinction through runaway habitat destruction."
+  tier="inference"
+/>
+
 
 We know this is true because Earth ran the experiment — on purpose, and by accident, again and again, and always with the same result. The cleanest version was a scientist named Robert Paine on a rocky Pacific shore in the 1960s, with a crowbar and a stubborn question. He pried every starfish — a predatory starfish, *Pisaster*, that ate mussels — out of one stretch of tide pool, and left an identical stretch alone. In the pool he left alone, life stayed diverse: fifteen species sharing the rock. In the pool he stripped of its one predator, the mussels — freed from the thing that ate them — simply took over, crowding out everyone else, until the fifteen species had collapsed to eight. One predator, a small fraction of the living weight of that shore, had been holding the entire community open. Remove it and diversity caved in. Paine had to invent a word for what he'd found, and the word was *keystone*.
 

@@ -1,0 +1,20 @@
+{
+  "id": "fig-06-two-pores",
+  "chapter_slug": "how-a-pandoran-plant-feeds",
+  "role": "comparison",
+  "narrative_purpose": "Carries the chapter's Earth-turn in one image: the same pore, the same job, two different water bills — because the only thing that changed is the air on the other side of the opening.",
+  "subject": "A split-panel comparison of two leaf-surface pores in extreme close-up, each formed by a pair of curved kidney-shaped cells. Left panel: the two cells are bowed far apart leaving a wide open slit, and a thick billowing plume of vapour streams up out of it while only a thin trickle of small particles descends into it. Right panel: the same two cells are almost touching, leaving only a narrow crack, from which just a single thin thread of vapour escapes — while a dense crowd of small particles presses down into the crack from above.",
+  "scene": "Two paired surface studies side by side against deep dark, divided by a thin band of haze, each showing a patch of waxy leaf epidermis with one pore at its centre.",
+  "camera": "A straight-on paired close view from just above the leaf surface, both pores at identical magnification.",
+  "light": "The vapour plumes are the brightest elements, lit from within; the leaf surface catches a low waxy sheen; deep indigo shadow in the pore openings.",
+  "palette": "Void-indigo ground and deep teal epidermis; the vapour plumes in biolum magenta; the descending gas particles in Pandora cyan, sparse on the left and densely crowded on the right.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, a microscopist's surface study rendered as illustration.",
+  "detail_level": "Crisp on the guard-cell shapes, the width of each opening, and the very different plume volumes; surrounding epidermis softer.",
+  "composition": "Two equal vertical panels with a dark central seam, each pore centred low in its panel with the plume rising into open dark space above it, leaving quiet regions for overlaid callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "chemical formulae", "scale bars", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with magenta reserved for the water being lost; the asymmetry between the two panels — wide pore with heavy loss versus narrow pore with almost none — is the entire point and must be unmistakable.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no scale bars, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style, no vector flat design",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

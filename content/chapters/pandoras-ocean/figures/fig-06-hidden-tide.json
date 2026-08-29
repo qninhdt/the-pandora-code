@@ -9,12 +9,33 @@
   "light": "Soft cyan daylight confined to the upper water, indigo depth, pale magenta density interfaces and restrained living-teal turbulence at the slope.",
   "palette": "Void indigo, ocean teal, cyan surface light, muted magenta layer boundaries and a compact living-teal mixing plume.",
   "style": "Painterly naturalist ocean-process plate with cinematic depth and physically readable layers, not a flat educational diagram.",
-  "detail_level": "Three clear bent density bands, one steep reef ridge, one compact breaking zone and broad uncluttered water for later callouts.",
-  "composition": "The visual contrast must be between the quiet surface and the much larger submerged wave; reserve negative space at upper left, centre and lower right for annotations.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "giant surface wave", "storm", "ships", "film actors", "crowded fauna"],
+  "detail_level": "Three clear bent density bands, one steep reef ridge, one compact breaking zone and broad uncluttered water framed by deep negative space.",
+  "composition": "The visual contrast must be between the quiet surface and the much larger submerged wave; reserve negative space at upper left, centre and lower right framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "giant surface wave",
+    "storm",
+    "ships",
+    "film actors",
+    "crowded fauna",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Match the marine palette and painterly material of fig-03. Render motion using bent particle fields and density interfaces, never arrows. Keep the claim generic rather than depicting a confirmed Awa'atlu measurement.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no labels, no arrows, no giant breaking surface wave, no tsunami, no weather map, no vector infographic, no glossy CGI",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/pandoras-ocean/fig-03-island-stirs-the-water.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/pandoras-ocean/fig-03-island-stirs-the-water.png"
+  ]
 }

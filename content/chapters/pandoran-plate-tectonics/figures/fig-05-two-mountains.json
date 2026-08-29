@@ -24,7 +24,10 @@
     "measurement scales",
     "vegetation",
     "buildings",
-    "humans"
+    "humans",
+    "arrows",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "The two panels must be visually parallel — same framing, same surface level, same peak height — so the only difference the eye finds is what lies underneath. Left has no light-coloured root at all; right's root is the dominant mass in its panel.",
   "aspect_ratio": "16:9",

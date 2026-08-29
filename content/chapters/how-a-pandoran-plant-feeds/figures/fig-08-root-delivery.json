@@ -1,0 +1,20 @@
+{
+  "id": "fig-08-root-delivery",
+  "chapter_slug": "how-a-pandoran-plant-feeds",
+  "role": "inline",
+  "narrative_purpose": "Closes the carbon's journey where the surplus actually goes: sugar arriving underground and being handed across to fungal partners, making the point that the forest below is the larger half of the transaction.",
+  "subject": "A broad woody root plate underground, seen in cutaway, with glowing amber sugary sap arriving down through its interior from above and pooling brightly where the root's surface meets a dense spreading mesh of pale fine fungal filaments. The filaments radiate outward into dark soil, and where they touch the root they glow faintly, with a few small pale mineral grains being drawn back inward along them toward the root.",
+  "scene": "A subterranean cutaway beneath a Pandoran forest, dark packed soil filling most of the frame, the root plate crossing it and the fungal mesh spreading away into the dark on all sides.",
+  "camera": "A close underground three-quarter view of the root-fungus junction, soil receding into darkness behind.",
+  "light": "The arriving sap is the brightest element, glowing warm from inside the root; the fungal filaments pick up a cool faint glow where they contact it; the surrounding soil almost entirely dark.",
+  "palette": "Void-indigo and deep teal-indigo soil dominating; the arriving sap in ember amber confined to the root interior and the junction; the fungal mesh in mist and living teal; a few desaturated stone-grey mineral grains.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, a soil-profile study observed closely.",
+  "detail_level": "Crisp on the root-fungus contact zone, the pooling sap and the nearest filaments; soil and distant filaments soft and dissolving into dark.",
+  "composition": "The root plate crossing the lower centre diagonally with the sap arriving from the upper left, the fungal mesh spreading to the right, a broad dark quiet region of soil in the upper right for overlaid callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "diagrams", "human figures", "Na'vi figures", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with amber reserved for the sugar being delivered; the exchange must read as a two-way handover — sugar in one direction, mineral grains in the other — without any arrows.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style, no vector flat design",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

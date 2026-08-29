@@ -1,0 +1,149 @@
+slug: origins-of-life-on-pandora
+status: published
+title:
+  vi: Nguồn gốc Sự sống trên Pandora
+  en: Origins of Life on Pandora
+subtitle:
+  vi: >-
+    Pandora giàu hơn Trái Đất nguyên thủy ở mọi thứ mà một nguồn gốc sự sống cần đến — nhiệt, hydro,
+    lưu huỳnh, thời gian. Vậy mà bước khó nhất vẫn khó y như vậy, và lý do nằm ở chỗ nó không phải
+    một sự thiếu hụt mà là một vòng tròn phụ thuộc.
+  en: >-
+    Pandora is richer than the early Earth in everything an origin of life is supposed to need —
+    heat, hydrogen, sulfur, time. The hardest step was exactly as hard anyway, because it is not a
+    shortage but a circular dependency.
+hook:
+  vi: >-
+    Dưới đáy một đại dương Pandora, một ống khoáng nhạt màu đang lớn lên trong vùng nước chưa từng
+    thấy ánh sáng. Không có gì ở đó còn sống. Nhưng đặt điện cực hai bên vách khoáng ấy, bạn sẽ đo
+    được một hiệu điện thế cùng cỡ và cùng dấu với thứ mà mitochondria trong người bạn đang duy trì
+    lúc này. Tảng đá đang chạy một cục pin — và câu hỏi là cục pin đó mua được những gì.
+  en: >-
+    On the floor of a Pandoran ocean, a pale mineral chimney is growing in water that has never seen
+    light. Nothing there is alive. But put an electrode either side of one of its walls and you
+    would measure a voltage of the same size and sign as the one your mitochondria are maintaining
+    right now. The rock is running a battery — and the question is what a battery can buy.
+authors:
+  - bardabez
+tags:
+  - abiogenesis
+  - prebiotic-chemistry
+  - hydrothermal-vents
+  - rna-world
+  - tidal-heating
+  - astrobiology
+classification:
+  canon_pct: 16
+  inference_pct: 18
+  speculation_pct: 10
+  real_science_pct: 56
+related_chapters:
+  - what-is-pandoran-life-made-of
+  - pandoras-deep-time
+  - what-keeps-pandora-volcanically-alive
+  - whats-in-the-air
+  - pandoran-plate-tectonics
+  - reading-pandora-as-a-specimen
+glossary_terms:
+  - abiogenesis
+  - prebiotic-chemistry
+  - serpentinization
+  - alkaline-hydrothermal-vent
+  - chemiosmosis
+  - proton-motive-force
+  - wood-ljungdahl-pathway
+  - rna-world
+  - ribozyme
+  - error-threshold
+  - protocell
+  - last-universal-common-ancestor
+  - panspermia
+  - autocatalytic-set
+  - tidal-heating
+  - homochirality
+  - xeno-nucleic-acid
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-vent-field
+    role: hero
+    asset_status: ready
+  - id: fig-02-mineral-wall
+    role: diagram
+    asset_status: ready
+  - id: fig-03-serpentinisation
+    role: inline
+    asset_status: ready
+  - id: fig-04-tidal-engine
+    role: inline
+    asset_status: ready
+  - id: fig-05-eclipse-shoreline
+    role: inline
+    asset_status: ready
+  - id: fig-06-chain-shredding
+    role: comparison
+    asset_status: ready
+  - id: fig-07-vesicle-budding
+    role: inline
+    asset_status: ready
+  - id: fig-08-magnetic-surface
+    role: inline
+    asset_status: ready
+  - id: fig-09-two-origins
+    role: comparison
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Pandora - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Pandora
+  - kind: canon
+    label: Avatar (2009 film) - Wikipedia
+    url: https://en.wikipedia.org/wiki/Avatar_(2009_film)
+  - kind: wiki
+    label: >-
+      Pandoran atmospheric composition and orbital parameters, as reported from James Cameron's
+      Avatar: An Activist Survival Guide via community reference
+    url: https://james-camerons-avatar.fandom.com/wiki/Pandora
+  - kind: science
+    label: >-
+      Martin, Baross, Kelley & Russell - Hydrothermal vents and the origin of life (Nature Reviews
+      Microbiology, 2008)
+    url: https://www.nature.com/articles/nrmicro1991
+  - kind: science
+    label: Lane & Martin - The origin of membrane bioenergetics (Cell, 2012)
+    url: https://www.cell.com/cell/fulltext/S0092-8674(12)00768-1
+  - kind: science
+    label: >-
+      Weiss et al. - The physiology and habitat of the last universal common ancestor (Nature
+      Microbiology, 2016)
+    url: https://www.nature.com/articles/nmicrobiol2016116
+  - kind: science
+    label: >-
+      Powner, Gerland & Sutherland - Synthesis of activated pyrimidine ribonucleotides in
+      prebiotically plausible conditions (Nature, 2009)
+    url: https://www.nature.com/articles/nature08013
+  - kind: science
+    label: Damer & Deamer - The hot spring hypothesis for an origin of life (Astrobiology, 2020)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7133448/
+  - kind: science
+    label: Eigen - Selforganization of matter and the evolution of biological macromolecules
+    url: https://link.springer.com/article/10.1007/BF00623322
+  - kind: science
+    label: Larralde, Robertson & Miller - Rates of decomposition of ribose and other sugars (PNAS, 1995)
+    url: https://www.pnas.org/doi/10.1073/pnas.92.18.8158
+  - kind: science
+    label: Peale, Cassen & Reynolds - Melting of Io by tidal dissipation (Science, 1979)
+    url: https://www.science.org/doi/10.1126/science.203.4383.892
+  - kind: science
+    label: Kipping - An objective Bayesian analysis of life's early emergence on Earth (PNAS, 2020)
+    url: https://www.pnas.org/doi/10.1073/pnas.1921655117
+  - kind: science
+    label: >-
+      Spiegel & Turner - Bayesian analysis of the astrobiological implications of life's early
+      emergence on Earth (PNAS, 2012)
+    url: https://www.pnas.org/doi/10.1073/pnas.1111694108
+  - kind: research-note
+    label: >-
+      Comparative Astrobiology and Prebiotic Geochemistry - Origins of Life on Pandora and Universal
+      Principles of Abiogenesis (chapter research note)

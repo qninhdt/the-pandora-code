@@ -1,0 +1,33 @@
+id: nitrogenase
+label:
+  vi: Nitrogenase
+  en: Nitrogenase
+definition:
+  vi: >-
+    Enzyme duy nhất trong sinh giới có thể phá liên kết ba của khí nitơ, mở đường cho N₂ trơ trở thành
+    ammonia mà sự sống dùng được. Nó đắt đỏ đến mức gần như phi lý: mỗi phân tử N₂ tiêu tốn khoảng mười
+    sáu ATP, và trung tâm phản ứng chứa sắt cùng molybden của nó bị oxy phá hủy vĩnh viễn, nên vi khuẩn
+    cố định đạm phải vừa trả cái giá năng lượng ấy vừa dựng hàng rào chống oxy quanh enzyme. Đó là lý do
+    nitơ vẫn giới hạn tăng trưởng ở gần như mọi nơi dù chiếm gần bốn phần năm không khí: vấn đề chưa bao
+    giờ là khan hiếm, mà là chi phí.
+  en: >-
+    The only enzyme in biology that can break the triple bond in nitrogen gas, opening the route from
+    inert N₂ to the ammonia life can use. It is almost absurdly expensive: roughly sixteen ATP per
+    molecule of N₂ reduced, and its iron-and-molybdenum reaction centre is destroyed permanently by
+    oxygen, so nitrogen-fixing organisms must both pay the energy bill and build an oxygen barrier
+    around the enzyme. This is why nitrogen still limits growth almost everywhere despite making up
+    nearly four-fifths of the air: the problem was never scarcity, it was cost.
+see_also:
+  - nitrogen-fixation
+  - denitrification
+  - limiting-nutrient
+category: bio
+tags:
+  - chemistry
+  - ecology
+  - physiology
+cover_prompt: >-
+  A painted molecular study of a protein's interior cradling a small cluster of iron and molybdenum
+  atoms rendered as dark metallic spheres, a faint cyan spark at the cluster's centre where a
+  triple-bonded gas molecule is held, deep indigo surroundings, painterly scientific plate, no text,
+  no numbers, no labels.

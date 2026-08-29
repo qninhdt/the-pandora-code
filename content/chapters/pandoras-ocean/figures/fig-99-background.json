@@ -11,9 +11,28 @@
   "style": "Painterly atmospheric macro vista with detail dissolving into haze, designed as a dark text background.",
   "detail_level": "Soft distant silhouettes and broad tonal fields; no crisp foreground object and no busy surface texture.",
   "composition": "Open dark water across the lower two-thirds, a few small islands near the horizon, generous low-detail space everywhere for readable overlay text.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "characters", "ships", "bright focal subject", "sun", "lens flare", "busy reef detail"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "characters",
+    "ships",
+    "bright focal subject",
+    "sun",
+    "lens flare",
+    "busy reef detail",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Match the chapter's marine palette but remain darker, wider and quieter than the cover. This is atmosphere, not an inline figure.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no logo, no characters, no bright sun, no central hero object, no high contrast, no detailed foreground, no photographic or CGI look",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

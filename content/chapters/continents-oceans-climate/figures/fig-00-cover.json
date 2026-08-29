@@ -11,10 +11,25 @@
   "style": "Painterly naturalist plate, hand-painted planetary portrait, soft atmospheric haze at the limb, NOT a photograph or 3D render.",
   "detail_level": "High on the moon's surface texture and cloud band, softening into haze at the curved edge.",
   "composition": "The moon dominant and centred, the bright equatorial cloud band as the clear horizontal feature, gas-giant limb anchoring one corner, generous black negative space.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "grid", "UI", "watermark", "logos", "Avatar branding"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "grid",
+    "UI",
+    "watermark",
+    "logos",
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Cool Pandora palette locked to the style anchor; the equatorial cloud band is the recurring motif of the chapter. Crisp focal portrait suitable as a thumbnail.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no grid, no diagram chrome, no UI, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

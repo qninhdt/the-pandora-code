@@ -1,0 +1,20 @@
+{
+  "id": "fig-05-rubisco-misfire",
+  "chapter_slug": "how-a-pandoran-plant-feeds",
+  "role": "comparison",
+  "narrative_purpose": "Shows the enzyme's two possible outcomes side by side, so the reader sees that photorespiration is not a separate process but the same machine producing a broken product that must be salvaged at a loss.",
+  "subject": "A split-panel comparison of the same large folded enzyme shape, drawn twice, each with an open pocket at its centre. Left panel: a small round gas particle has entered the pocket and an intact continuous chain of six linked molecular beads emerges from the far side, glowing evenly and unbroken. Right panel: a slightly different small gas particle has entered the same pocket, and what emerges is a short snapped stub of two beads with a ragged broken end, being carried away along a side path while a single small particle escapes upward off it as a wisp.",
+  "scene": "Two paired molecular studies side by side against deep dark, divided by a thin band of haze, presented as two outcomes of one experiment.",
+  "camera": "A straight-on paired study view, both enzyme shapes at identical size and orientation for direct comparison.",
+  "light": "Internal glow from the molecular products themselves — steady and even on the left, weak and uneven on the right; the enzyme bodies lit only faintly from within by their contents.",
+  "palette": "Void-indigo ground; left panel's intact chain in living teal and Pandora cyan; right panel's snapped stub and escaping wisp in biolum magenta; enzyme bodies in desaturated deep teal and stone.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, molecular structures painted as physical objects rather than as chemical notation.",
+  "detail_level": "Crisp on the pocket, the entering particle, and above all on the difference between the intact chain and the snapped stub; backgrounds soft.",
+  "composition": "Two equal vertical panels with a dark central seam, the products emerging toward the outer edges, a clear dark region above each enzyme for overlaid callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "chemical formulae", "ball-and-stick notation", "reaction schemes", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with magenta reserved for the failure product; the left side must read as clean and productive and the right as broken and costly.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no chemical formulae, no ball-and-stick diagrams, no reaction arrows, no diagram labels, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style, no vector flat design",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

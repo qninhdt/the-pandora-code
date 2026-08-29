@@ -3,12 +3,12 @@
   "chapter_slug": "how-the-wind-traders-navigate-a-planet",
   "role": "inline",
   "narrative_purpose": "Show the failure mode a caravan cannot climb out of: a sky that has stopped moving entirely, with no streaked layer anywhere in the column to escape into, leaving the fleet stalled and waiting on stores.",
-  "subject": "A chain of five pale translucent bell-shaped gasbag creatures hanging absolutely motionless in dead flat air, strung in a slack line across the frame. Their envelopes are visibly under-filled — the bells softened, sagging and creased along their upper surfaces instead of taut and round, with loose folds in the translucent skin. Their trailing tentacles hang limp and perfectly vertical. Every rigging line between bell and gondola hangs dead straight down with no curve, no sway and no streaming. On the nearest woven gondola, three small blue-skinned figures stand idle at the rail, arms resting on it, one with head bowed, doing nothing.",
-  "scene": "A vast, empty, featureless pale high sky with no cloud of any kind — no streaks, no decks, no texture, just an even wash graduating slowly from pale near the horizon to deeper grey-blue at the top of the frame. The horizon is an utterly plain unbroken flat line with no terrain, no cloud bank and no feature on it whatsoever. The air is glassy and still.",
+  "subject": "A chain of five pale translucent bell-shaped gasbag creatures hanging absolutely motionless in dead flat air, strung in a slack line across the frame. Their envelopes are visibly under-filled \u2014 the bells softened, sagging and creased along their upper surfaces instead of taut and round, with loose folds in the translucent skin. Their trailing tentacles hang limp and perfectly vertical. Every rigging line between bell and gondola hangs dead straight down with no curve, no sway and no streaming. On the nearest woven gondola, three small blue-skinned figures stand idle at the rail, arms resting on it, one with head bowed, doing nothing.",
+  "scene": "A vast, empty, featureless pale high sky with no cloud of any kind \u2014 no streaks, no decks, no texture, just an even wash graduating slowly from pale near the horizon to deeper grey-blue at the top of the frame. The horizon is an utterly plain unbroken flat line with no terrain, no cloud bank and no feature on it whatsoever. The air is glassy and still.",
   "camera": "Wide level side-on view at the caravan's own altitude, static and uncentred, plenty of empty sky above and below the chain.",
   "light": "Flat, sourceless, diffuse daylight with no visible sun and almost no shadow modelling, so the scene looks airless and stalled. Only the faintest cyan glow on the gasbag rims, dimmer than in other figures.",
   "palette": "Desaturated pale grey-blue and stone tones across most of the frame, unusually low contrast; muted indigo only in the gondola shadows; the cyan bioluminescence subdued almost to nothing; no warm accent at all.",
-  "style": "Painterly naturalist plate deliberately drained of energy and movement — flat brushwork, no streaking, no directional strokes anywhere in the sky.",
+  "style": "Painterly naturalist plate deliberately drained of energy and movement \u2014 flat brushwork, no streaking, no directional strokes anywhere in the sky.",
   "detail_level": "Crisp on the nearest slack bell, its creased skin, the straight rigging and the idle figures; the rest of the chain softened; the sky held completely plain and untextured.",
   "composition": "The chain runs across the lower-middle third, small in an overwhelming expanse of empty sky. Enormous plain negative space fills the upper two thirds and stays deliberately blank and low-detail so overlaid callouts read cleanly; the emptiness is itself the subject.",
   "exclude": [
@@ -29,12 +29,16 @@
     "lightning",
     "wind streaks",
     "birds",
-    "photographic look"
+    "photographic look",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "The aerostats are living creatures: soft translucent bells, trailing tentacles, woven gondolas on rigging lines — no rigid hulls, no propellers, no engines. Nothing in the frame may suggest motion: no streaming cloud, no leaning, no billowing fabric, no wind-blown hair. The bells are slack and softened, the rigging perfectly vertical. This is stillness and low contrast, not a storm. Cool desaturated Pandora palette with the glow dialled down.",
+  "consistency_notes": "The aerostats are living creatures: soft translucent bells, trailing tentacles, woven gondolas on rigging lines \u2014 no rigid hulls, no propellers, no engines. Nothing in the frame may suggest motion: no streaming cloud, no leaning, no billowing fabric, no wind-blown hair. The bells are slack and softened, the rigging perfectly vertical. This is stillness and low contrast, not a storm. Cool desaturated Pandora palette with the glow dialled down.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no propellers, no engines, no rigid airship hull, no storm, no lightning, no streaked or wind-blown cloud, no motion blur, no dramatic lighting, no lens flare, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": [
     "apps/web/public/images/chapters/how-the-wind-traders-navigate-a-planet/fig-00-cover.png"
   ]

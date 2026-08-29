@@ -11,10 +11,29 @@
   "style": "Painterly astronomical plate, soft and atmospheric, NOT a hard vector schematic and NOT a render.",
   "detail_level": "Moderate: two clear planet-moon positions with a subtly different moon orientation; soft edges; no hard outlines or drawn geometry.",
   "composition": "Sun glow toward one edge, the two planet-moon positions along a soft arc across the frame, the moon's surface marking subtly re-aimed between them; generous dark space.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "drawn orbit lines", "grid", "ruler marks", "watermark", "logos", "UI", "clock faces"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "drawn orbit lines",
+    "grid",
+    "ruler marks",
+    "watermark",
+    "logos",
+    "UI",
+    "clock faces",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same Polyphemus as the cover. The two positions are the same planet-moon pair at two moments, not different objects. The teaching beat is the moon's slightly re-aimed surface marking - keep it subtle and painterly, with no drawn lines or arrows.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no drawn orbit lines, no grid, no diagram chrome, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"
+  ]
 }

@@ -10,7 +10,7 @@
   "palette": "Cool chalky grey-white ash and deep indigo-brown soil dominant, black charcoal fragments, one faint restrained ember-orange point at a stump base, pale grey smoke.",
   "style": "Painterly naturalist soil-profile plate, observed and diagrammatic in arrangement but painted throughout.",
   "detail_level": "High on the split cone, the falling seeds, the texture of the loose ash layer and the angular charcoal fragments in the soil; the sky and background soft.",
-  "composition": "Clear horizontal banding from smoke at the top through the cone, the ash layer and the soil below, with the cone on the left and a broad area of plain dim sky at the upper right kept clear for overlaid callouts.",
+  "composition": "Clear horizontal banding from smoke at the top through the cone, the ash layer and the soil below, with the cone on the left and a broad area of plain dim sky at the upper right kept clear framed by deep negative space.",
   "exclude": [
     "text",
     "letters",
@@ -25,10 +25,14 @@
     "diagram keys",
     "green foliage",
     "large flames",
-    "photographic look"
+    "photographic look",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Three things must be legible at once: smoke leaving upward, a pale ash layer resting ON TOP of intact dark soil, and black charcoal fragments embedded WITHIN that soil. The cone is split open with seeds falling. No flames beyond a faint ember glow, and no green plants anywhere.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows or leader lines, no chemical symbols or diagram keys, no green foliage, no large flames, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

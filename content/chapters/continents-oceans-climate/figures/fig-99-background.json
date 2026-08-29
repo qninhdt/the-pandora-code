@@ -11,10 +11,26 @@
   "style": "Painterly atmospheric mood plate, very soft and low-contrast, immersive and dim, NOT a sharp focal illustration, NOT a 3D render.",
   "detail_level": "Low and soft throughout - intentionally hazy and dim so text can sit over it; no crisp focal element anywhere.",
   "composition": "Wide horizontal layering of haze and faint cloud bands, dark and even across the whole frame, empty of any bright or sharp focal point.",
-  "exclude": ["text", "letters", "numbers", "labels", "bright focal subject", "high contrast", "sharp foreground object", "UI", "watermark", "logos"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "bright focal subject",
+    "high contrast",
+    "sharp foreground object",
+    "UI",
+    "watermark",
+    "logos",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "This is the dim background layer, distinct from the crisp fig-00-cover. Keep it dark, hazy, low-contrast, and focal-point-free so overlaid long-form text remains readable.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no bright focal subject, no high contrast, no sharp foreground, no diagram chrome, no 3D-render or photographic look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

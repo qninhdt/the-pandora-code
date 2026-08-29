@@ -10,7 +10,7 @@
   "palette": "Void indigo to pure black water, Pandora cyan and biolum magenta in the glowing bands, faint mist grey on the scattering fish, no warm tones anywhere.",
   "style": "Painterly naturalist night plate, restrained and eerie rather than neon or graphic.",
   "detail_level": "High detail on the nearest animal's band pattern and head; the distant animals reduced to glow and silhouette.",
-  "composition": "Nearest animal across the lower left, two mid-distance animals upper centre and right, farthest animal a faint glow at the upper left, large regions of pure black water at the right and lower edges for annotations.",
+  "composition": "Nearest animal across the lower left, two mid-distance animals upper centre and right, farthest animal a faint glow at the upper left, large regions of pure black water at the right and lower edges framed by deep negative space.",
   "exclude": [
     "text",
     "letters",
@@ -28,7 +28,9 @@
     "boats",
     "blood",
     "neon glow",
-    "lens flare"
+    "lens flare",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Same animal design as fig-00-cover in all four individuals: four eyes, twelve tentacles, ray-like wings. Light must clearly be emitted from within the skin, never a reflection or a spotlight from outside the frame.",
   "aspect_ratio": "16:9",

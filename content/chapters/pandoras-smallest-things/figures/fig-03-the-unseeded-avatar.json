@@ -10,10 +10,27 @@
   "palette": "Void-indigo ground, blue-cyan body, pale clinical cyan on left, diverse teal with sparse magenta and amber microbial accents on right.",
   "style": "Painterly speculative-medical naturalist plate, anatomically restrained, hand-painted rather than cinematic merchandise art.",
   "detail_level": "Crisp on the tank barrier, skin, gut silhouette and microbial halo; surrounding laboratory and forest softened.",
-  "composition": "Symmetrical diptych, sealed body left and environmentally colonized body right, strong dark gutters and clear callout space.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "callout lines", "brand marks", "military weapons", "nudity details"],
+  "composition": "Symmetrical diptych, sealed body left and environmentally colonized body right, strong dark gutters and generous deep indigo negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "callout lines",
+    "brand marks",
+    "military weapons",
+    "nudity details",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "This is an explicitly inferential microbiome assembly comparison, not a canon scene. Keep microbes subtle and biologically varied, never magical dust.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no labels, no arrows, no logos, no explicit anatomy, no superhero pose, no photographic or 3D-render look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

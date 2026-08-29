@@ -10,11 +10,27 @@
   "palette": "Indigo rooms, cyan test light and oscillator, pale mist dawn, tiny amber horizon accent only in the late-night panel.",
   "style": "Painterly physiological comparison with quiet clinical clarity, not a chart and not science-fiction UI.",
   "detail_level": "Clear repeated light pulse, closed eye, internal cycle position and outside dawn cue; room detail remains minimal.",
-  "composition": "Large early-night bay left, narrow midday dead-zone vignette center, large late-night bay right. Preserve dark margins beside each head for interface labels.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "clock faces", "digital displays", "hospital branding", "watermark", "logos"],
+  "composition": "Large early-night bay left, narrow midday dead-zone vignette center, large late-night bay right. Preserve dark margins beside each head framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "leader lines",
+    "clock faces",
+    "digital displays",
+    "hospital branding",
+    "watermark",
+    "logos",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Use the same subject and same blue pulse in both night panels. The only teaching difference is when the light arrives and whether the internal cycle shifts later or earlier.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no arrows, no readable clocks, no neon UI, no split personality, no medical horror, no photo or CGI look",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

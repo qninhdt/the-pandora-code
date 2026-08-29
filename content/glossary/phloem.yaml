@@ -1,0 +1,17 @@
+id: phloem
+label:
+  vi: Mạch rây
+  en: Phloem
+definition:
+  vi: 'Hệ thống ống dẫn chở đường từ lá đi tới mọi thứ không phải là lá: rễ, thân, chồi non, quả. Nếu mạch gỗ là ống hút đưa nước lên, thì mạch rây là tuyến vận chuyển đưa thức ăn xuống — và nó cũng không có bơm nào. Cây chỉ điều khiển hai đầu: xếp đường vào ở lá và lấy đường ra ở rễ, còn việc di chuyển thì tự lo nhờ chênh lệch áp suất sinh ra giữa hai đầu ấy. Dịch mạch rây trên Trái Đất chảy chừng 0,2 đến 2 mét mỗi giờ — tốc độ đi bộ tính theo ngày, không phải theo giây — nên với một cái cây cao hàng trăm mét, đây là một giới hạn thật sự.'
+  en: 'The system of pipes that carries sugar from the leaves to everything that is not a leaf: roots, trunk, growing tips, fruit. If the xylem is the straw that brings water up, the phloem is the freight line that takes food down — and it too has no pump. The plant controls only the two ends: loading sugar in at a leaf and taking it out at a root, while the travelling looks after itself thanks to the pressure difference those two operations create. Earth phloem sap moves at something like 0.2 to 2 metres an hour — a walking pace measured in days, not seconds — so for a tree hundreds of metres tall this is a real constraint.'
+see_also:
+- pressure-flow
+- xylem
+- turgor-pressure
+- source-sink-dynamics
+category: bio
+tags:
+- physiology
+- physics
+cover_prompt: A painted cutaway of a tree trunk showing an outer band of fine vertical tubes carrying dense glowing amber sap downward alongside an inner band carrying cool water upward, cool teal-cyan palette with warm amber accents against void-indigo, painterly naturalist plate, no text, no labels.

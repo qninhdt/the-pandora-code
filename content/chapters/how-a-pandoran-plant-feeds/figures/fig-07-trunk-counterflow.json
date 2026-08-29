@@ -1,0 +1,20 @@
+{
+  "id": "fig-07-trunk-counterflow",
+  "chapter_slug": "how-a-pandoran-plant-feeds",
+  "role": "diagram",
+  "narrative_purpose": "Shows the tree's two circulations running in opposite directions in adjacent tissue, with no pump anywhere — water climbing under tension, sugar descending under pressure.",
+  "subject": "A tall cutaway section of a tree trunk seen from the side, the bark peeled open to reveal two adjacent vertical bands of fine tubes. The inner band carries cool water upward, drawn as thin stretched threads climbing and visibly narrowing and straining toward the top. The outer band carries dense sugary sap downward, drawn as thick crowded glowing droplets descending, packed tightly at the top and thinning as they near the bottom. At the very top the water threads disappear into the base of a leaf; at the very bottom the descending droplets disperse into a spreading root.",
+  "scene": "An isolated tall trunk section suspended against deep dark, presented as a naturalist's anatomical cutaway with nothing else in frame.",
+  "camera": "A tall narrow straight-on side view, the full height of the trunk section visible top to bottom.",
+  "light": "Both flows lit from within — the ascending water in cool faint light, the descending sap in a warmer denser glow; the woody tissue itself dark and only edge-lit.",
+  "palette": "Void-indigo ground and deep teal woody tissue; ascending water in Pandora cyan; descending sap in ember amber, used deliberately and confined to the one band; stone-grey bark at the cut edges.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, an anatomical cutaway painted rather than drafted.",
+  "detail_level": "Crisp on the two bands of tubes and on the contrast between thin strained ascending threads and thick crowded descending droplets; the bark and background soft.",
+  "composition": "The trunk section running vertically through the centre of the frame, generous dark empty space on both left and right for overlaid callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "flow arrows", "diagram keys", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with the single amber band as the deliberate warm accent marking the sugar; direction of each flow must be legible from the shape and spacing of its contents, not from any arrow.",
+  "aspect_ratio": "9:16",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no flow arrows, no leader lines, no keys or legends, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style, no vector flat design",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

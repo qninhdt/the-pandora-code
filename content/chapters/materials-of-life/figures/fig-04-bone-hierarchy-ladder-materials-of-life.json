@@ -1,0 +1,29 @@
+{
+  "id": "fig-04-bone-hierarchy-ladder-materials-of-life",
+  "chapter_slug": "materials-of-life",
+  "role": "inline",
+  "narrative_purpose": "Show the seven-tier hierarchical structure of bone from molecule to macro cylinder.",
+  "subject": "A continuous structural transition across four nested magnifications. Left: staggered rope-like molecules with tiny mineral plates between them. Middle-left: bundled into thicker fibrils. Middle-right: stacked into plywood-like layers with rotating grain. Right: rolled into a solid concentric cylinder.",
+  "scene": "Abstract dark space to emphasize the structural transition, illuminated by cool teal bioluminescence.",
+  "camera": "Medium distance, clear descriptive view, level angle.",
+  "light": "Bioluminescent key light highlighting structural details, deep teal-indigo ambient shadows, volumetric haze in the background.",
+  "palette": "Cool Pandora base (Void indigo, Deep teal-indigo, Ocean teal, Pandora cyan, Living teal) with sparing Biolum magenta or Ember amber accents for key structural features.",
+  "style": "Original speculative-biology painterly illustration, naturalist plate energy, detailed structural cutaway.",
+  "detail_level": "High structural detail, precise geometry, visible material textures (grain, fibres, layers).",
+  "composition": "Clear focal subject, generous negative space of haze and shadow, no clutter.",
+  "exclude": [
+    "text",
+    "labels",
+    "arrows",
+    "diagram lines",
+    "numbers",
+    "watermarks",
+    "signatures",
+    "UI elements"
+  ],
+  "consistency_notes": "Follow STYLE BIBLE. Ensure painterly feel, no 3D render plastic.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "text, numbers, captions, labels, watermarks, signatures, arrows, leader lines, UI chrome, flat-design infographic, textbook clip art, CAD, 3D render, photographic, lens flare, CGI plastic.",
+  "style_refs": [],
+  "character_refs": []
+}

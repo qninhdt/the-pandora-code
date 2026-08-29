@@ -1,0 +1,37 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "biogeochemical-cycles",
+  "role": "hero",
+  "narrative_purpose": "The chapter's full-bleed atmospheric backdrop: a vast dim forested basin seen from great height, dark and low-contrast so long-form reading text stays legible over it.",
+  "subject": "An immensely wide panorama seen from very high altitude across a continuous forested lowland basin. Successive ranks of canopy ridge and shallow valley recede in five or six overlapping layers toward a distant horizon, each rank paler and flatter than the one before as haze accumulates, until the furthest are barely distinguishable from the sky. Broad slow rivers thread between the ranks as faint pale ribbons, and pooled mist lies in the valley bottoms. A very faint teal luminescence glimmers within a few of the nearer canopy layers, barely perceptible. No single feature dominates; nothing is brightly lit; the whole scene is dim and tonally even. Above, a heavy dark sky with layered cloud dissolving into the haze at the horizon.",
+  "scene": "An ultra-wide dim vista across Pandoran lowland forest at deep dusk, seen from great height, detail dissolving into atmospheric depth.",
+  "camera": "Extremely wide panoramic view from a very high vantage, looking out nearly level across successive canopy ranks to a far horizon.",
+  "light": "Very low, flat, ambient dusk with no directional key and no bright highlight anywhere; the faintest teal glow within a few near canopy layers; overall low contrast and dark middle values throughout.",
+  "palette": "Void-indigo and deep teal-indigo dominating almost entirely, cool grey-mist in the receding haze layers, the barest trace of living teal in the near canopy, no warm accent at all.",
+  "style": "Painterly atmospheric landscape plate, soft and tonal rather than detailed, heavy aerial perspective, mood rather than a subject to study.",
+  "detail_level": "Deliberately low: even the nearest canopy rank is softly rendered, and everything beyond it progressively loses definition into haze. Nothing crisp anywhere.",
+  "composition": "Horizon roughly a third from the top; ranked canopy silhouettes stacked across the lower two-thirds as broad horizontal bands; no focal subject, no bright area, and large tonally even regions throughout so overlaid text remains readable.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "diagram lines",
+    "bright focal subject",
+    "high contrast highlights",
+    "buildings",
+    "humans",
+    "machines",
+    "creatures"
+  ],
+  "consistency_notes": "This layer sits behind body text, so legibility governs everything: keep contrast low, values dark and even, and leave no bright or busy region anywhere in the frame. There must be no focal subject at all.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no diagram lines, no bright focal subject, no high contrast highlights, no strong directional light, no lens flares, no photographic or 3D-render look, no neon UI glow, no creatures, no machines",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

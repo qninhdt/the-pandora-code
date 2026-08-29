@@ -11,9 +11,26 @@
   "style": "Painterly speculative-biology naturalist plate, hand-painted texture, luminous but scientifically observed.",
   "detail_level": "Crisp on the leaf edge, fungal filaments, root hairs and soil pores; the towering forest behind dissolves into dark haze.",
   "composition": "Leaf as the central diagonal bridge between the dim macro forest above and the bright microscopic architecture below, with generous dark negative space around it.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "callout lines", "human figures", "modern equipment", "Avatar branding"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "callout lines",
+    "human figures",
+    "modern equipment",
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Establish the recurring fallen-leaf motif. Cool Pandora palette, restrained natural bioluminescence, and a credible soil cutaway rather than fantasy sparkles.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no logos, no labels, no arrows, no infographic chrome, no photographic or 3D-render look, no cartoon or anime style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

@@ -2,19 +2,36 @@
   "id": "fig-06-hometree-vs-redwood",
   "chapter_slug": "the-forest-as-a-cathedral",
   "role": "comparison",
-  "narrative_purpose": "Earth's tallest tree against Pandora's everyday: a coast redwood at the physical ceiling (~116 m) beside an Omatikaya Hometree over 300 m, on its braided multi-columnar hollow trunk — the gap that lower gravity and a dense, carbon-rich atmosphere have to explain.",
+  "narrative_purpose": "Earth's tallest tree against Pandora's everyday: a coast redwood at the physical ceiling (~116 m) beside an Omatikaya Hometree over 300 m, on its braided multi-columnar hollow trunk \u2014 the gap that lower gravity and a dense, carbon-rich atmosphere have to explain.",
   "subject": "Two trees drawn side by side at matched scale against a dark page. On the left, a coast redwood: tall, tapering, single straight trunk, with a tiny human silhouette at its base for scale. On the right, a vastly larger Pandoran Hometree more than twice as tall, its trunk visibly made of many braided woody columns fused into one wide hollow pillar, with sprawling buttressed surface roots and a broad crown that dwarfs the redwood. A faint vertical scale ruler runs up the right margin, and the redwood's crown clearly tops out far below the Hometree's crown.",
   "scene": "A side-by-side scale comparison of two trees on a neutral dark field, no landscape clutter.",
   "camera": "A flat, straight-on elevation view of both trees at the same scale, full height of the taller one in frame.",
-  "light": "Even diagrammatic light on both trees so their sizes and trunk structures compare cleanly; a faint cool glow on the Hometree.",
+  "light": "Even naturalist cutaway light on both trees so their sizes and trunk structures compare cleanly; a faint cool glow on the Hometree.",
   "palette": "Muted teal-grey for the redwood, richer living teal and Pandora cyan for the Hometree, void-indigo background, the scale ruler in a faint subtle tone.",
   "style": "Painterly speculative-biology naturalist plate with diagrammatic clarity, hand-painted texture.",
-  "detail_level": "Crisp on both trunks — especially the redwood's single column versus the Hometree's braided, hollow, multi-columnar trunk — and the tiny human for scale; soft background.",
-  "composition": "Two trees side by side at matched scale, clear height difference, scale ruler down the right margin, dark space between and beside them for callout labels.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
-  "consistency_notes": "Comparison plate in the book's cool palette; the height gap and the contrasting trunk structures (solid single redwood vs braided hollow Hometree) must read instantly; keep the human silhouette tiny for scale; leave margins for labels.",
+  "detail_level": "Crisp on both trunks \u2014 especially the redwood's single column versus the Hometree's braided, hollow, multi-columnar trunk \u2014 and the tiny human for scale; soft background.",
+  "composition": "Two trees side by side at matched scale, clear height difference, scale ruler down the right margin, dark space between and beside them framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
+  ],
+  "consistency_notes": "Comparison plate in the book's cool palette; the height gap and the contrasting trunk structures (solid single redwood vs braided hollow Hometree) must read instantly; keep the human silhouette tiny for scale; generous deep indigo negative space.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "fig-00-cover.png"
+  ]
 }

@@ -1,0 +1,22 @@
+id: second-moment-of-area
+label:
+  vi: Mô men quán tính tiết diện
+  en: Second moment of area
+definition:
+  vi: Đại lượng hình học đặc trưng cho khả năng chống uốn và chống mất ổn định của
+    một tiết diện dầm khi chịu tải trọng, ký hiệu I. Bằng cách phân bố khối lượng
+    vật liệu ra xa trục trung hòa (như ở ống rỗng hay dầm chữ I), cấu trúc đạt độ
+    cứng chống uốn tối đa với khối lượng tối thiểu.
+  en: A geometric property of a beam cross-section that predicts its resistance to
+    bending deflection and buckling under load, written I. Placing material far from
+    the neutral bending axis (as in hollow bones) maximizes bending stiffness per
+    unit mass.
+see_also:
+- youngs-modulus
+- euler-buckling
+category: concept
+tags:
+- physics
+- physiology
+cover_prompt: Cross-sectional geometries of a hollow bone and solid rod glowing with
+  internal stress distribution contours, painterly naturalist diagram, no text.

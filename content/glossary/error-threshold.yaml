@@ -1,0 +1,18 @@
+id: error-threshold
+label:
+  vi: Ngưỡng lỗi (error threshold)
+  en: Error threshold
+definition:
+  vi: 'Giới hạn Eigen đặt ra cho lượng thông tin một bộ máy tự sao chép có thể giữ được: nếu độ chính xác mỗi lần chép là q, chuỗi dài quá chừng ln(σ)/(1−q) sẽ tan thành nhiễu nhanh hơn mức chọn lọc kịp dựng lại. Kết quả là một vòng tròn nghiệt ngã cho bài toán nguồn gốc — hóa học trần chỉ giữ được vài chục nucleotide, còn một replicase RNA gập được cần tới 170–200, tức là cần đúng độ chính xác mà chỉ nó mới cung cấp được.'
+  en: 'Eigen''s limit on how much information a replicator can hold: at copying accuracy q per base, sequences longer than about ln(σ)/(1−q) dissolve into noise faster than selection can rebuild them. The consequence is a hard circle for the origin problem — bare chemistry holds only a few dozen nucleotides, while a folded RNA replicase needs 170–200, which is to say it needs exactly the accuracy that only it could provide.'
+see_also:
+  - rna-world
+  - ribozyme
+  - error-correcting-code
+  - abiogenesis
+category: concept
+tags:
+- information-theory
+- evolution
+- chemistry
+cover_prompt: A painted rising curve of pale cyan light climbing steeply toward the right against a dark grid, with a horizontal magenta band drawn high above it that the curve never reaches, cool palette, painterly, no text, no labels, no numbers.

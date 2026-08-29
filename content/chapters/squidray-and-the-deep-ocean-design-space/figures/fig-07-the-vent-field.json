@@ -10,7 +10,7 @@
   "palette": "Void indigo darkness, ember amber restricted to the chimney fluid, pale mist grey tubeworm tubes with deep magenta plume tips, ocean teal in the mid water.",
   "style": "Painterly naturalist deep-sea plate, awed but observational.",
   "detail_level": "High detail on the chimneys, tubeworm density and shell beds; the bare plain flat and low-detail; the two animals above reduced to dark shapes.",
-  "composition": "Chimney cluster occupying the lower left third, the sharp boundary to bare plain running across the middle to the right, the two hovering animals small in the upper right, plain dark water across the top of the frame for annotations.",
+  "composition": "Chimney cluster occupying the lower left third, the sharp boundary to bare plain running across the middle to the right, the two hovering animals small in the upper right, plain dark water across the top of the frame framed by deep negative space.",
   "exclude": [
     "text",
     "letters",
@@ -26,7 +26,9 @@
     "human figures",
     "sunlight",
     "coral reef",
-    "fish schools"
+    "fish schools",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "The contrast between the crowded vent patch and the empty plain around it is the point and must be unmistakable. The two animals are the same species as fig-00-cover but far away and small.",
   "aspect_ratio": "16:9",

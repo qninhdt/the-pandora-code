@@ -11,10 +11,28 @@
   "style": "Painterly astronomical plate with a faint schematic clarity, elegant and diagrammatic without hard technical lines.",
   "detail_level": "Crisp on the three aligned moons and the ring tick-marks; the gas giant softer behind.",
   "composition": "Gas giant anchored on one side, three nested rings sweeping across the frame, the three moons aligned in a radial row on the near side, generous dark space.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "hard arrows", "equations", "spacecraft"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "hard arrows",
+    "equations",
+    "spacecraft",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Gas giant is Polyphemus, banded, consistent with the chapter. Orbital rings and beat marks glow cool; the innermost molten moon is the scarce warm accent. Diagrammatic but still painterly.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no hard vector arrows, no equations, no photographic or 3D-render look, no lens flares, no cartoon style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-05-tidal-engine.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/pandoras-deep-time/fig-05-tidal-engine.png"
+  ]
 }

@@ -10,10 +10,26 @@
   "palette": "Void-indigo background, charcoal and mineral grey grains, cyan water, teal biology, faint amber organic fragments.",
   "style": "Painterly scientific specimen plate with clear anatomy and hand-painted texture, not a vector infographic.",
   "detail_level": "Crisp grain boundaries, films, hyphae, pores and microbial clusters; simple dark background reserved for overlay labels.",
-  "composition": "Large centered aggregate with three legible zones—outer gas-filled pore, connected water-film middle, dark saturated core—and open margins around each.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "callout dots", "busy forest background"],
+  "composition": "Large centered aggregate with three legible zones\u2014outer gas-filled pore, connected water-film middle, dark saturated core\u2014and open margins around each.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "callout dots",
+    "busy forest background",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Use spatial architecture, water thickness and brightness to encode the pore gradient. No baked labels or arrows; interface annotations will identify features.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no lettering, no labels, no arrows, no leader lines, no infographic chrome, no photographic or 3D-render look, no cartoon microbes",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

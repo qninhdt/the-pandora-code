@@ -11,10 +11,28 @@
   "style": "Painterly astronomical plate, soft and atmospheric, the shadow cone rendered as soft graded darkness, NOT a hard vector diagram and NOT a render.",
   "detail_level": "Moderate: planet and two moon positions clear, shadow cone soft-edged; no hard outlines or drawn geometry.",
   "composition": "Planet on one side with the shadow cone sweeping across the frame away from the sun; the two moon positions - one lit above the cone, one dark inside it - placed to contrast; generous dark negative space.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "drawn orbit lines", "drawn cone outlines", "grid", "watermark", "logos", "UI"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "drawn orbit lines",
+    "drawn cone outlines",
+    "grid",
+    "watermark",
+    "logos",
+    "UI",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same Polyphemus as the cover. The shadow must read as cast by the planet away from the off-frame sun. No drawn lines, arrows or geometry - soft painted light and shadow only. The same moon appears twice (lit and eclipsed), not two different moons.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no drawn orbit or cone lines, no grid, no diagram chrome, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"
+  ]
 }

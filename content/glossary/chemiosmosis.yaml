@@ -1,0 +1,17 @@
+id: chemiosmosis
+label:
+  vi: Hóa thẩm (chemiosmosis)
+  en: Chemiosmosis
+definition:
+  vi: 'Cách mọi sinh vật sống lấy năng lượng: dồn proton sang một bên của một lớp màng mỏng, rồi để chúng chảy ngược qua một enzyme để tổng hợp ATP — hệt như nước qua tua-bin. Điểm khiến ý tưởng này quan trọng với bài toán nguồn gốc sự sống là gradient proton không cần sinh học mới có: chỗ nào dòng kiềm gặp nước axit qua một vách khoáng mỏng, chỗ đó địa chất đã dựng sẵn một cục pin cùng loại, miễn phí và liên tục.'
+  en: 'How every living thing extracts energy: pump protons to one side of a thin membrane, then let them flow back through an enzyme that builds ATP — water through a turbine. What makes this matter for the origin problem is that a proton gradient does not require biology to exist: wherever alkaline fluid meets acidic water across a thin mineral wall, geology has already built the same kind of battery, free and continuous.'
+see_also:
+  - proton-motive-force
+  - alkaline-hydrothermal-vent
+  - membrane-potential
+category: bio
+tags:
+- physiology
+- chemistry
+- astrobiology
+cover_prompt: A painted diagram-like scene of a thin dark barrier with many small amber points crowded on one side and few on the other, a faint stream of them crossing through a glowing teal channel in the middle, cool palette against dark, painterly, no text, no labels, no numbers.

@@ -20,11 +20,15 @@
     "grid",
     "UI",
     "watermark",
-    "logos"
+    "logos",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Vapour and cloud in the same misty-cyan as the canopy-exhalation figure, so the reader recognises the water-in-air colour; canopy the same living teal. Flow is conveyed by shape and repetition, never by arrows.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no grid, no diagram chrome, no photographic or 3D-render look",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

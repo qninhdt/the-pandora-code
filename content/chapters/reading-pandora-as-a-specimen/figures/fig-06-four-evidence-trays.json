@@ -11,10 +11,28 @@
   "style": "Painterly museum-study plate, tactile and orderly, with no infographic chrome.",
   "detail_level": "High detail within each tray, especially the film frames, fitted bridge, single tether and measuring tools; plain dark tabletop elsewhere.",
   "composition": "Four equal trays read left to right, with strong separation and open dark margins around every object for interface labels.",
-  "exclude": ["readable text", "letters", "numbers", "captions", "labels", "arrows", "icons", "watermark", "people", "extra objects between trays"],
+  "exclude": [
+    "readable text",
+    "letters",
+    "numbers",
+    "captions",
+    "labels",
+    "arrows",
+    "icons",
+    "watermark",
+    "people",
+    "extra objects between trays",
+    "text",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The trays must remain distinct: recorded image strip, constructed bridge, exactly one tethered impossibility, and measured biological specimen. Never blend the contents across trays.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no readable writing, no symbols, no arrows, no UI, no poster layout, no photographic or 3D-render look, no clutter, no fifth tray",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/reading-pandora-as-a-specimen/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/reading-pandora-as-a-specimen/fig-00-cover.png"
+  ]
 }

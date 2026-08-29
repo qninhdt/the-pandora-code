@@ -9,7 +9,7 @@
   "light": "Faint diffuse light from the surface above, the solid smaller animals catching more of it, the large hollow outline almost lost in haze.",
   "palette": "Void indigo water, deep teal midwater, pale grey bone fragments, faint cyan edge light on the solid shapes.",
   "style": "Painterly naturalist plate, atmospheric and quiet, not a chart or size-comparison infographic.",
-  "detail_level": "Crisp on the smallest solid animal and the bone fragments; the largest deliberately faint and dissolving into haze; open dark water above the row for callouts.",
+  "detail_level": "Crisp on the smallest solid animal and the bone fragments; the largest deliberately faint and dissolving into haze; open dark water above the row framed by deep negative space.",
   "composition": "Single horizontal row of four decreasing shapes across the middle band, wide open dim water along the top and bottom edges for overlay labels.",
   "exclude": [
     "text",
@@ -23,7 +23,9 @@
     "measuring rules",
     "size comparison bars",
     "silhouette charts",
-    "vector infographic look"
+    "vector infographic look",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "The progressive emptying from left to right must read as absence rather than as distance - the largest is faint because it is gone, not because it is far away.",
   "aspect_ratio": "16:9",

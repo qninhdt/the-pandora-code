@@ -1,0 +1,18 @@
+id: panspermia
+label:
+  vi: Thuyết mầm sống vũ trụ (panspermia)
+  en: Panspermia
+definition:
+  vi: 'Ý tưởng cho rằng sự sống không khởi phát tại chỗ mà được đưa tới từ nơi khác. Trong phạm vi một hệ hành tinh, việc này khả tín: các vụ va chạm thực sự bắn đá giữa các hành tinh, và bào tử có thể sống sót. Giữa các ngôi sao thì phép tính không cứu nổi — chuyến đi mất 10^5 đến 10^7 năm, và liều tia vũ trụ tích lũy trong khoảng thời gian đó phá vỡ mọi polymer di truyền. Đó là lý do giới khoa học coi việc hai sinh quyển cách nhau nhiều parsec có họ với nhau là điều rất khó tin.'
+  en: 'The idea that life did not begin where we find it but arrived from elsewhere. Within one planetary system this is plausible: impacts really do throw rock between planets, and spores can survive the trip. Between stars the arithmetic does not survive — transit takes 10^5 to 10^7 years, and the accumulated cosmic-ray dose over that span shatters any genetic polymer. That is why relatedness between biospheres parsecs apart is treated as very hard to believe.'
+see_also:
+  - abiogenesis
+  - biosignature
+  - carbonaceous-chondrite
+  - planetary-protection
+category: concept
+tags:
+- astrobiology
+- astronomy
+- planetary-science
+cover_prompt: A painted dark starfield with a single small tumbling fragment of pale rock drifting across it, faint streaks of radiation crossing the frame and passing through the fragment, cold and empty, painterly, no text, no labels, no numbers.

@@ -26,9 +26,11 @@
     "goggles",
     "panel borders",
     "dividing line",
-    "Avatar branding"
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "Both children are the same age and build, in identical water and light — the ONLY differences are pupil size and how sharply the background behind each one resolves. No goggles or masks on either. Blue Na'vi skin on both.",
+  "consistency_notes": "Both children are the same age and build, in identical water and light \u2014 the ONLY differences are pupil size and how sharply the background behind each one resolves. No goggles or masks on either. Blue Na'vi skin on both.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no labels, no eye chart, no optical ray diagram, no goggles or diving mask, no panel borders, no photographic or 3D-render look, no cartoon style",
   "style_refs": [

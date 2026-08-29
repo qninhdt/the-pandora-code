@@ -2,7 +2,7 @@
   "id": "fig-07-the-severed-network",
   "chapter_slug": "life-after-the-volcano",
   "role": "diagram",
-  "narrative_purpose": "Show Pandora's unique twist: Eywa's living root-and-mycelial network — a super-legacy — is pyrolyzed to black inside the dead zone and cut clean at the ecotone, unable to reseed the burial from within.",
+  "narrative_purpose": "Show Pandora's unique twist: Eywa's living root-and-mycelial network \u2014 a super-legacy \u2014 is pyrolyzed to black inside the dead zone and cut clean at the ecotone, unable to reseed the burial from within.",
   "subject": "A horizontal cutaway across a boundary in the ground. On the LEFT, inside the dead zone: blackened, pyrolyzed root trunks in sterile grey ash, broken and disconnected, no glow. On the RIGHT, the living forest side: dark soil richly threaded with a glowing cyan mycelial-and-root network linking healthy roots. The glowing web reaches the boundary and stops abruptly, its severed ends dark where they meet the dead side.",
   "scene": "An underground cross-section spanning an ecotone: dead sterilised ground on one side, living networked soil on the other, the seam between them the focal point.",
   "camera": "Side-on cross-section, the boundary running vertically down the centre.",
@@ -10,10 +10,26 @@
   "palette": "Left: black pyrolyzed roots in grey ash, no glow. Right: dark indigo soil with bright Pandora-cyan network filaments. Warm accent absent.",
   "style": "Painterly naturalist cutaway plate, the glowing network painterly not neon-UI.",
   "detail_level": "Crisp on the severed network ends at the boundary and the glowing web on the living side; dead side deliberately dim and broken.",
-  "composition": "Vertical boundary at centre, dead disconnected roots left, glowing connected web right, severed ends meeting at the seam; leave plain dark regions for callout labels.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "neon-UI glow", "photographic look"],
-  "consistency_notes": "The glowing network is the biological fabric of Eywa; it must be clearly ALIVE and connected on the living side and DEAD and cut on the burial side, stopping at the seam. Cool Pandora palette, cyan life-glow only on the living half. Keep open dark space for callouts.",
+  "composition": "Vertical boundary at centre, dead disconnected roots left, glowing connected web right, severed ends meeting at the seam; generous deep indigo negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "neon-UI glow",
+    "photographic look",
+    "diagram lines",
+    "callouts"
+  ],
+  "consistency_notes": "The glowing network is the biological fabric of Eywa; it must be clearly ALIVE and connected on the living side and DEAD and cut on the burial side, stopping at the seam. Cool Pandora palette, cyan life-glow only on the living half. Keep generous deep indigo negative space.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no neon-UI glow, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

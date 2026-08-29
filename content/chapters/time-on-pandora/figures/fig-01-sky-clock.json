@@ -11,10 +11,28 @@
   "style": "Painterly naturalist plate, hand-painted texture, atmospheric depth, NOT a render.",
   "detail_level": "Crisp foreground clearing and plants, softer atmospheric planet, clean bright sun point.",
   "composition": "Polyphemus large in the upper third, small sun on a third line to its side, clearing and long shadows leading the eye across the lower two-thirds.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "clock faces", "orbit lines", "arrows", "spacecraft"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "clock faces",
+    "orbit lines",
+    "arrows",
+    "spacecraft",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same Polyphemus as fig-00-cover (identical bands and eye-storm). Cool Pandora palette with bioluminescent underglow; planet reads as fixed, sun reads as moving.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no clock imagery, no orbit lines, no arrows, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"
+  ]
 }

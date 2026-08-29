@@ -10,11 +10,31 @@
   "palette": "Ash grey and bone in panel one warming to teal and cyan through panels two and three, void-indigo depth and cyan bioluminescence in panel four, one restrained amber accent in the final crown.",
   "style": "Painterly naturalist plate, hand-painted texture, sequential study rather than a montage.",
   "detail_level": "Crisp on the stump, the pioneer growth, the uniform young canopy and the final giant trunk; distances softened consistently in each panel.",
-  "composition": "Four equal vertical panels with narrow dark gutters between them, matched horizon across all four, generous sky in each for later callout labels, 16:9 landscape.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "human figures", "machinery", "timeline graphics"],
+  "composition": "Four equal vertical panels with narrow dark gutters between them, matched horizon across all four, generous sky in each framed by deep negative space, 16:9 landscape.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding",
+    "human figures",
+    "machinery",
+    "timeline graphics",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same viewpoint and horizon in every panel - the sequence only works if the reader believes it is one place. The giant in panel four shares the Hometree morphology of the other plates.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no year markers, no infographic styling, no photographic or 3D-render look, no cartoon or anime style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "fig-00-cover.png"
+  ]
 }

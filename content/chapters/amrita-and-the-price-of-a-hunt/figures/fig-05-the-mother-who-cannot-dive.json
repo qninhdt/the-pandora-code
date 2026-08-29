@@ -9,7 +9,7 @@
   "light": "Flat cold overcast light on the water surface, the animals' bioluminescent flank lines dim and steady, deep indigo falling away beneath them.",
   "palette": "Void indigo depth, deep teal surface water, cold grey sky and hulls, faint cyan flank glow, pale grey netting.",
   "style": "Painterly naturalist plate, still and quiet rather than action-cinematic.",
-  "detail_level": "Crisp on both animals, the netting and the near boats; the depth below soft and dark; open flat water and sky for callouts.",
+  "detail_level": "Crisp on both animals, the netting and the near boats; the depth below soft and dark; open flat water and sky framed by deep negative space.",
   "composition": "The two animals occupying the centre and left, boats entering from the right and upper right, open dim sky along the top edge and dark water at the lower left for overlay labels.",
   "exclude": [
     "text",
@@ -23,7 +23,9 @@
     "harpoons in flight",
     "blood",
     "wounds",
-    "gore"
+    "gore",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Same animal design as the other figures in this chapter. Nothing is wounded yet - the moment shown is the waiting, not the kill. The mother is calm and stationary, which is the point.",
   "aspect_ratio": "3:2",

@@ -9,12 +9,31 @@
   "light": "Cyan daylight illuminates the lagoon and reef crest, angled shafts weaken across the slope, and deep water shifts to indigo with subtle teal life glows.",
   "palette": "Cyan and living teal in the upper reef, muted stone substrate, ocean-teal middle water and void-indigo depth with minimal magenta accents.",
   "style": "Painterly naturalist field plate with credible spatial continuity, not a vector diagram.",
-  "detail_level": "Clear reef crest, lagoon roots, outer slope and depth transition; simple open water and dark margins reserved for interface labels.",
-  "composition": "Four legible zones arranged right to left and top to bottom: lagoon, reef rim, descending wall and deep reservoir. Keep open dark space beside each zone for later callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "separate panels", "bathymetric grid", "film actors"],
+  "detail_level": "Clear reef crest, lagoon roots, outer slope and depth transition; simple open water and dark margins reserved framed by deep negative space.",
+  "composition": "Four legible zones arranged right to left and top to bottom: lagoon, reef rim, descending wall and deep reservoir. Keep open dark space beside each zone framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "separate panels",
+    "bathymetric grid",
+    "film actors",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Match the atoll, diver and marine palette established by fig-00-cover. Maintain one continuous ocean rather than a collage.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no labels, no arrows, no map symbols, no infographic chrome, no photographic or 3D-render look, no split-screen collage",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/pandoras-ocean/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/pandoras-ocean/fig-00-cover.png"
+  ]
 }

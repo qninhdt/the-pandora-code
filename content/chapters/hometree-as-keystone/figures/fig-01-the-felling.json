@@ -11,10 +11,30 @@
   "style": "Painterly naturalist plate, hand-painted texture, restrained and documentary rather than spectacular.",
   "detail_level": "Crisp on the failing trunk columns and the scattering winged shapes; the falling crown softened by motion and ash; distant forest dissolving into haze.",
   "composition": "The tilting trunk running diagonally across the frame from lower left toward upper right, the flattened ring of forest across the lower third, ash sky filling the upper right, 3:2 landscape.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "human figures", "aircraft", "machinery"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding",
+    "human figures",
+    "aircraft",
+    "machinery",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same Hometree as the cover plate - braided multi-columnar trunk, hollow core, buttressed roots. Cool Pandora palette with the fire as the single warm intrusion.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style, no explosions with sci-fi energy effects",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "fig-00-cover.png"
+  ]
 }

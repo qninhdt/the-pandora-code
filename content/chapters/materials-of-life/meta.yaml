@@ -1,0 +1,140 @@
+slug: materials-of-life
+status: published
+title:
+  vi: Vật liệu Sự sống
+  en: Materials of Life
+subtitle:
+  vi: >-
+    Một cây cung ba mét, một cái cây ba trăm mét, một đôi cánh hai mươi lăm mét — cả ba đều là những
+    tuyên bố về vật liệu, và vật liệu thì kiểm tra được. Bốn con số quyết định thứ gì có thể được
+    dựng nên, và sinh học thắng không nhờ nguyên liệu tốt hơn mà nhờ cách sắp xếp giỏi hơn.
+  en: >-
+    A three-metre bow, a three-hundred-metre tree, a twenty-five-metre wing — each is a claim about
+    materials, and materials can be checked. Four numbers decide what can be built, and biology wins
+    not with better ingredients but with better arrangements.
+hook:
+  vi: >-
+    Cây cung của người Na'vi dài gần ba mét, nặng chưa tới bốn kilogram, và cần một lực kéo mà không
+    cánh tay người nào giữ được. Không một chi tiết nào trong nó được gia công; tất cả đều được mọc
+    ra, ở nhiệt độ cơ thể, từ nước và đường. Vậy việc mọc ra thay vì chế tạo ra mua được cho ta
+    những gì — và giới hạn của nó nằm ở đâu?
+  en: >-
+    A Na'vi bow is nearly three metres long, weighs under four kilograms, and needs a pull no human
+    arm can hold. Nothing in it was machined; every part was grown, at body temperature, out of
+    water and sugar. So what does growing rather than manufacturing actually buy — and where does it
+    run out?
+authors:
+  - bardabez
+tags:
+  - materials-science
+  - biomechanics
+  - hierarchical-composites
+  - fracture-mechanics
+  - scaling-laws
+  - carbon-fibre
+classification:
+  canon_pct: 16
+  inference_pct: 20
+  speculation_pct: 5
+  real_science_pct: 59
+related_chapters:
+  - what-is-pandoran-life-made-of
+  - the-forest-as-a-cathedral
+  - why-banshees-get-to-be-big
+  - direhorse-and-banshee-up-close
+  - six-limbs-and-the-bilateral-lattice
+  - hometree-as-keystone
+glossary_terms:
+  - youngs-modulus
+  - fracture-toughness
+  - material-performance-index
+  - hierarchical-composite
+  - nacre
+  - bouligand-structure
+  - crack-deflection
+  - nanoscale-flaw-tolerance
+  - microfibril-angle
+  - euler-buckling
+  - second-moment-of-area
+  - safety-factor
+  - graphitization
+  - biomineralization
+  - square-cube-law
+figures:
+  - id: fig-00-cover-materials-of-life
+    role: hero
+    asset_status: ready
+  - id: fig-01-navi-longbow-materials-of-life
+    role: inline
+    asset_status: ready
+  - id: fig-02-four-property-tests-materials-of-life
+    role: comparison
+    asset_status: ready
+  - id: fig-03-nacre-brick-mortar-materials-of-life
+    role: diagram
+    asset_status: ready
+  - id: fig-04-bone-hierarchy-ladder-materials-of-life
+    role: diagram
+    asset_status: ready
+  - id: fig-05-bouligand-twist-materials-of-life
+    role: diagram
+    asset_status: ready
+  - id: fig-06-hometree-buttress-section-materials-of-life
+    role: inline
+    asset_status: ready
+  - id: fig-07-toruk-spar-root-materials-of-life
+    role: diagram
+    asset_status: ready
+  - id: fig-08-furnace-versus-spinneret-materials-of-life
+    role: comparison
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Na'vi - James Cameron's Avatar Wiki (carbon-fibre skeleton, body dimensions)
+    url: https://james-camerons-avatar.fandom.com/wiki/Na%27vi
+  - kind: canon
+    label: Hometree - James Cameron's Avatar Wiki (Kelutral dimensions)
+    url: https://james-camerons-avatar.fandom.com/wiki/Hometree
+  - kind: canon
+    label: Great Leonopteryx - James Cameron's Avatar Wiki (wingspan, mass)
+    url: https://james-camerons-avatar.fandom.com/wiki/Great_Leonopteryx
+  - kind: canon
+    label: >-
+      Maria Wilhelm and Dirk Mathison - James Cameron's Avatar: An Activist Survival Guide
+      (HarperCollins, 2009)
+  - kind: science
+    label: >-
+      M. F. Ashby - Materials Selection in Mechanical Design (Butterworth-Heinemann); performance
+      indices and material property charts
+    url: https://en.wikipedia.org/wiki/Material_selection
+  - kind: science
+    label: >-
+      U. G. K. Wegst and M. F. Ashby - The mechanical efficiency of natural materials (Philosophical
+      Magazine, 2004)
+    url: https://www.tandfonline.com/doi/abs/10.1080/14786430410001680935
+  - kind: science
+    label: >-
+      M. A. Meyers et al. - Biological materials: structure and mechanical properties (Progress in
+      Materials Science, 2008)
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0079642507000254
+  - kind: science
+    label: R. O. Ritchie - The conflicts between strength and toughness (Nature Materials, 2011)
+    url: https://www.nature.com/articles/nmat3115
+  - kind: science
+    label: H. Gao et al. - Materials become insensitive to flaws at nanoscale (PNAS, 2003)
+    url: https://www.pnas.org/doi/10.1073/pnas.0631609100
+  - kind: science
+    label: >-
+      A. G. Greenhill - Determination of the greatest height consistent with stability that a
+      vertical pole or mast can be made (Cambridge Philosophical Society, 1881)
+    url: https://en.wikipedia.org/wiki/Buckling
+  - kind: science
+    label: G. W. Koch and S. C. Sillett et al. - The limits to tree height (Nature, 2004)
+    url: https://www.nature.com/articles/nature02417
+  - kind: science
+    label: Carbon fibre manufacture - precursor, stabilisation, carbonisation, graphitisation
+    url: https://en.wikipedia.org/wiki/Carbon_fibers
+  - kind: research-note
+    label: >-
+      Structural Biomechanics and Material Architecture - Comparative Analysis of Pandoran Biology
+      and Terrestrial Materials Science (chapter research note)

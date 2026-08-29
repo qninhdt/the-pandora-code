@@ -11,10 +11,28 @@
   "style": "Painterly photoreal concept illustration with atmospheric depth.",
   "detail_level": "Crisp island, waterfall, and creature; soft haze on the distant cloud deck.",
   "composition": "Island upper-center, the single glowing thread rising vertically from it, generous open sky framing it; waterfall trailing down the lower third.",
-  "exclude": ["text", "watermark", "multiple support threads", "cables", "pillars", "people", "spacecraft", "Earth trees"],
+  "exclude": [
+    "text",
+    "watermark",
+    "multiple support threads",
+    "cables",
+    "pillars",
+    "people",
+    "spacecraft",
+    "Earth trees",
+    "letters",
+    "labels",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Grey weathered rock with blue-green canopy and cyan-teal glow matching the book's floating-mountain look; exactly ONE luminous thread, never more.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no logos, no extra support lines, no upward-falling water, no tilted rock strata, no cartoon style, no oversaturation",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/reading-pandora-as-a-specimen/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/reading-pandora-as-a-specimen/fig-00-cover.png"
+  ]
 }

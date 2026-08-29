@@ -11,10 +11,27 @@
   "style": "Painterly naturalist comparative plate, hand-rendered cross-sections, soft-edged internal boundaries.",
   "detail_level": "Moderate and matched: both interiors rendered to the same level so the comparison is fair, with layer boundaries readable but not hard-lined.",
   "composition": "Left moon at one-quarter frame width, right moon at three-quarters, both vertically centred, with dark negative space above and below for callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "scale bars", "watermark", "logos", "UI", "grid", "ruler marks"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "leader lines",
+    "scale bars",
+    "watermark",
+    "logos",
+    "UI",
+    "grid",
+    "ruler marks",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The two moons must be the same diameter - the whole point is that identical size hides completely different interiors. No surface features that would identify either as Pandora specifically.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no scale bars, no grid, no diagram chrome, no vector or flat-design look, no photographic or 3D-render look",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

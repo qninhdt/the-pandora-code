@@ -11,9 +11,24 @@
   "style": "Painterly atmospheric wash, hand-painted haze, deliberately low-contrast and unobtrusive.",
   "detail_level": "Intentionally soft everywhere - a mood layer, no sharp focal point, filaments dissolving into dark.",
   "composition": "An even, edge-darkened field with no dominant subject, safe for text overlay, generous void.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "sharp focal subject", "Avatar branding"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "sharp focal subject",
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Cool Pandora palette, extremely restrained. A background plate only - must never compete with foreground text or figures.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no logos, no labels, no arrows, no high-contrast focal subject, no photographic or 3D-render look, no cartoon or anime style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

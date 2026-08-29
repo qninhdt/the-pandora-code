@@ -4,7 +4,7 @@
   "role": "inline",
   "narrative_purpose": "Show that the entire body of navigational knowledge is stored in trained voice and memory rather than in any instrument or chart, by putting an elder teaching apprentices in a gondola where no device of any kind appears.",
   "subject": "An elder blue-skinned humanoid figure with a long grey-streaked braid sits cross-legged, head slightly raised and mouth open in mid-chant, both hands lifted and tracing shapes in the air in front of them, fingers spread and palms turned as if laying out something layered. Facing them, two younger blue-skinned figures sit close together, leaning slightly forward, watching the elder's hands intently, silent and still. All three wear close-fitting layered dark cloth wrappings with fine woven patterning.",
-  "scene": "Night interior of a small woven gondola: walls of pale lashed fibre and timber, rigging lines rising out of frame at the corners, a low woven floor with rolled bundles and coiled cordage pushed to the sides. Beyond one open gap in the weave, black night air and a few faint stars. In the air immediately around the elder's moving hands hangs a faint cyan bioluminescent haze, thin drifting motes gathering loosely into three soft horizontal bands at different heights and a scatter of small separate points of light above them — an impression only, formless, glowing, with no edges, no shapes, no figures and nothing drawn.",
+  "scene": "Night interior of a small woven gondola: walls of pale lashed fibre and timber, rigging lines rising out of frame at the corners, a low woven floor with rolled bundles and coiled cordage pushed to the sides. Beyond one open gap in the weave, black night air and a few faint stars. In the air immediately around the elder's moving hands hangs a faint cyan bioluminescent haze, thin drifting motes gathering loosely into three soft horizontal bands at different heights and a scatter of small separate points of light above them \u2014 an impression only, formless, glowing, with no edges, no shapes, no figures and nothing drawn.",
   "camera": "Intimate three-quarter interior shot at seated eye level, close enough to read all three faces and the elder's hands, the gondola's walls framing the group.",
   "light": "Warm ember amber from a small low lamp on the gondola floor lighting the faces from below; cool cyan bioluminescent haze around the elder's hands as the secondary source; deep indigo shadow filling the rest of the interior.",
   "palette": "Deep indigo interior shadow dominating; one warm amber pool on the three faces; restrained cyan glow around the hands; deep muted blue skin tones.",
@@ -30,10 +30,14 @@
     "watermark",
     "logos",
     "UI",
-    "photographic look"
+    "photographic look",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "Absolutely no instrument, chart, map, drawn diagram or written symbol anywhere in frame — that absence is the entire point of the figure. The bioluminescent haze must stay an unresolved suggestion of bands and points of light, never resolving into a readable diagram or any glyph. Cool Pandora palette with a single scarce warm amber interior accent.",
+  "consistency_notes": "Absolutely no instrument, chart, map, drawn specimen study or written symbol anywhere in frame \u2014 that absence is the entire point of the figure. The bioluminescent haze must stay an unresolved suggestion of bands and points of light, never resolving into a readable specimen study or any glyph. Cool Pandora palette with a single scarce warm amber interior accent.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no diagrams, no charts, no maps, no written symbols or glyphs or runes, no constellation lines, no compass, no instruments, no holograms, no glowing UI, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

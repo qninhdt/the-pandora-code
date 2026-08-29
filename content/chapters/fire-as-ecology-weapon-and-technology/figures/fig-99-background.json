@@ -9,7 +9,7 @@
   "light": "Dark, flat and low-contrast throughout; a single almost imperceptible ember-orange hint on one far ridge, everything else muted so overlaid text reads cleanly.",
   "palette": "Deep void-indigo and stone-grey across the entire frame at very low contrast, with one nearly invisible ember-orange trace on the distant horizon.",
   "style": "Painterly atmospheric mood layer, no crisp focal subject, all detail dissolving into haze.",
-  "detail_level": "Deliberately low — everything softens into atmospheric haze, no sharp foreground and no element that draws the eye.",
+  "detail_level": "Deliberately low \u2014 everything softens into atmospheric haze, no sharp foreground and no element that draws the eye.",
   "composition": "Wide, dark and empty with a low horizon and vast dim negative space across the upper two thirds; nothing bright or detailed enough to compete with reading.",
   "exclude": [
     "text",
@@ -24,10 +24,15 @@
     "large flames",
     "figures or creatures",
     "green vegetation",
-    "photographic look"
+    "photographic look",
+    "arrows",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "This is a dim immersive backdrop, NOT a figure to study: dark, hazed and low-contrast so long text overlays stay legible. The same Ashlands volcanic world as the cover, but macro and atmospheric, with no rider, no creature and no fire.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no bright subject, no high contrast, no flames, no figures or creatures, no green, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

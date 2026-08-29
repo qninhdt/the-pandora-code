@@ -25,7 +25,8 @@
     "spacecraft",
     "buildings",
     "humans",
-    "machines"
+    "machines",
+    "callouts"
   ],
   "consistency_notes": "Same bedrock and palette as the cover image. Nothing levitates. The stratification must read as genuine sedimentary or lava-flow layering — flat, parallel, and continuous — because the whole chapter opens from it.",
   "aspect_ratio": "3:2",

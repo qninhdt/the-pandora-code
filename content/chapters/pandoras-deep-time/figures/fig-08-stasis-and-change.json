@@ -11,10 +11,28 @@
   "style": "Painterly comparative evolutionary naturalist plate, silhouettes anatomically clear, no infographic chrome.",
   "detail_level": "Moderate-high on changing body proportions and repeated identical Na'vi forms; background habitats simplified but distinct.",
   "composition": "Two equal horizontal processions separated by dark space; four changing Earth figures on the left, four visually identical Na'vi figures on the right above one unbroken root web.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "timeline ticks", "weapons", "spacesuits", "city skyline", "watermark", "overlapping silhouettes"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "timeline ticks",
+    "weapons",
+    "spacesuits",
+    "city skyline",
+    "watermark",
+    "overlapping silhouettes",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The right-side Na'vi figure must be copied consistently at all four positions. The left-side Earth lineage must visibly change in stature, limb proportions and habitat rather than merely repeat.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no timeline numbers, no arrows, no cartoon evolution march, no wrong Na'vi limb count, no duplicated changing Earth figure, no photographic or 3D-render look",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-06-living-archive.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/pandoras-deep-time/fig-06-living-archive.png"
+  ]
 }

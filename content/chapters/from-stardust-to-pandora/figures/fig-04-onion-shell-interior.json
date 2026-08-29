@@ -11,10 +11,27 @@
   "style": "Painterly naturalist cross-section plate, hand-rendered, soft-edged boundaries between shells rather than hard lines.",
   "detail_level": "Moderate: shell boundaries clearly readable as distinct zones, each with its own texture, but no hard outlines or engineering precision.",
   "composition": "Star centred and filling about two-thirds of the frame height. Empty dark space to the left and right of it for callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "watermark", "logos", "UI", "grid", "ruler marks", "cross-hatching"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "leader lines",
+    "watermark",
+    "logos",
+    "UI",
+    "grid",
+    "ruler marks",
+    "cross-hatching",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Six shells, no more - crowding them makes the picture unreadable. The dark centre must be unmistakably dark and unmistakably small relative to the shells.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no grid, no diagram chrome, no vector or flat-design look, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

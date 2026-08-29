@@ -11,10 +11,27 @@
   "style": "Painterly scientific incident plate, precise and understated, not sensational.",
   "detail_level": "Crisp cigarette ember, smoke-borne particles, exposed leaf tissue and sealed control; background equipment soft and unreadable.",
   "composition": "A left-to-right contamination path with open negative space above the cigarette, open dish and sealed dish for later callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "logos", "people", "faces", "hazmat suits", "flames", "watermark", "Pandoran flora"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "logos",
+    "people",
+    "faces",
+    "hazmat suits",
+    "flames",
+    "watermark",
+    "Pandoran flora",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "This is an Earth genetics lab, not Pandora. The teaching relationship must be literal: smoke and particles reach the open plant sample while the sealed control remains untouched.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no brand marks, no people smoking, no fire beyond one small ember, no gore, no photographic or glossy 3D-render look, no clutter obscuring the dishes",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

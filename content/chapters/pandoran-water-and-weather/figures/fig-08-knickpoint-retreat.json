@@ -21,11 +21,15 @@
     "grid",
     "UI",
     "watermark",
-    "logos"
+    "logos",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Water in the chapter's misty-cyan; the two rock layers must be visually distinct enough that the reader sees soft rock being removed from under hard rock. Retreat is conveyed by the ghosted positions, never by arrows.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no dimension lines, no grid, no diagram chrome, no photographic or 3D-render look",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

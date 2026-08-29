@@ -10,11 +10,27 @@
   "palette": "Void indigo field, teal neural tissue, cyan timing channel, sparse amber at the SCN target.",
   "style": "Painterly neuroanatomical plate with accurate relative placement and delicate biological texture, not a sterile medical vector.",
   "detail_level": "Crisp retinal layers and diverging fibre tracts; the rest of the head dissolves into shadow.",
-  "composition": "Eye occupies the left third, optic chiasm and tiny SCN the centre, visual cortex the right third. Leave open dark space above each pathway for callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "third eye", "glowing whole brain", "surgical tools", "watermark", "logos"],
+  "composition": "Eye occupies the left third, optic chiasm and tiny SCN the centre, visual cortex the right third. Leave open dark space above each pathway framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "leader lines",
+    "third eye",
+    "glowing whole brain",
+    "surgical tools",
+    "watermark",
+    "logos",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The melanopsin pathway must begin in sparse retinal cells and terminate at the paired suprachiasmatic nuclei above the optic chiasm; it must not merge with the visual cortex pathway.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no arrows, no labels, no fantasy brain glow, no cybernetic wires, no gore, no photo, no CGI, no vector infographic",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

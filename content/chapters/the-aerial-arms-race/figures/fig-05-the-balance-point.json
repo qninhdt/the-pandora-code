@@ -10,7 +10,7 @@
   "palette": "Deep indigo void, cyan glow on the stable upper study, magenta glow on the unstable lower one, near-black bodies, grey ring outlines.",
   "style": "Painterly naturalist study sheet, two observations of one body, brushed rather than drafted.",
   "detail_level": "Crisp body silhouettes, dot and ring; empty plain void elsewhere.",
-  "composition": "Two horizontal registers, generous plain dark margins right of each body for overlaid callouts.",
+  "composition": "Two horizontal registers, generous plain dark margins right of each body framed by deep negative space.",
   "exclude": [
     "text",
     "letters",
@@ -24,10 +24,15 @@
     "vector flat style",
     "infographic style",
     "photographic look",
-    "cockpit or aircraft fuselage"
+    "cockpit or aircraft fuselage",
+    "arrows",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "The only difference between the two registers is where the glowing dot sits relative to the hollow ring, and which way the curved line above the nose sweeps. The body is an animal body with wings, not an aeroplane. Same silhouette in both registers.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrowheads, no dimension lines, no aircraft or cockpit, no vector-flat infographic look, no photographic or 3D render, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

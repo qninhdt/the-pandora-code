@@ -10,7 +10,7 @@
   "palette": "Deep indigo void, pale cool-teal flowing lines, near-black wing sections, one faint cyan edge highlight on each wing.",
   "style": "Painterly hand-worked plate, soft brushed flow lines - not a clean vector schematic and not an infographic.",
   "detail_level": "Even and clear throughout; the bend in the flow behind the front wing is the sharpest thing in the frame.",
-  "composition": "Two wing sections on a gentle descending diagonal left to right, wide plain dark space above and below the flow band for overlaid callouts.",
+  "composition": "Two wing sections on a gentle descending diagonal left to right, wide plain dark space above and below the flow band framed by deep negative space.",
   "exclude": [
     "text",
     "letters",
@@ -25,10 +25,15 @@
     "vector flat style",
     "infographic style",
     "CAD drawing",
-    "photographic look"
+    "photographic look",
+    "arrows",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "The single readable idea is that the air behind the first wing is going DOWN and the second wing is inside that descending air. The two wing sections must be identical in shape and size so the difference is clearly the flow and not the wing. Painterly, glowing flow lines on darkness; never a technical vector diagram.",
+  "consistency_notes": "The single readable idea is that the air behind the first wing is going DOWN and the second wing is inside that descending air. The two wing sections must be identical in shape and size so the difference is clearly the flow and not the wing. Painterly, glowing flow lines on darkness; never a technical vector specimen study.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrowheads, no leader lines, no vector-flat infographic look, no CAD linework, no photographic or 3D render, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

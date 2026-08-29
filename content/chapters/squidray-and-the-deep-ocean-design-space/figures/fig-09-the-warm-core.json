@@ -10,7 +10,7 @@
   "palette": "Ember amber restricted strictly to the muscle block, braincase and vessel bundles; deep void indigo and ocean teal everywhere else; no warm tones outside the bundles at all.",
   "style": "Painterly anatomical cutaway plate with a thermal reading, biological and fleshy rather than schematic.",
   "detail_level": "High detail on the interleaving of the vessel strands and the sharp warm-to-cold transition at the bundle edges; the wings and outer body simpler and darker.",
-  "composition": "Animal in profile facing left, warm core in the lower centre of the trunk with the warm braincase at the head, plain dark water above the back and below the tentacles for annotations.",
+  "composition": "Animal in profile facing left, warm core in the lower centre of the trunk with the warm braincase at the head, plain dark water above the back and below the tentacles framed by deep negative space.",
   "exclude": [
     "text",
     "letters",
@@ -26,7 +26,9 @@
     "false-colour heat map",
     "rainbow gradient",
     "panel borders",
-    "mechanical heat exchanger"
+    "mechanical heat exchanger",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Same animal design as fig-00-cover. Warm colour appears ONLY inside the vessel bundles, muscle block and braincase - a rainbow thermal-camera look is wrong. Vessel strands must visibly run in two opposing directions and interleave.",
   "aspect_ratio": "16:9",

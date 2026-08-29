@@ -3,18 +3,33 @@
   "chapter_slug": "the-hunters-and-the-hunted",
   "role": "comparison",
   "narrative_purpose": "Makes the keystone cascade visible as a before/after: with the apex predator the forest is layered and lush; with it gone the released giants strip the understory bare.",
-  "subject": "A two-panel painted comparison of the same forest. Left panel: a balanced, layered forest with lush understory growth, a single large apex predator silhouette high on a rise overlooking a few scattered, modest-sized grazers. Right panel: the same forest with the predator silhouette absent, now overrun by a swollen crowd of massive grazing animals, the understory stripped to bare trunks and churned ground, sparse and damaged vegetation.",
-  "scene": "A bioluminescent forest at night, the left half glowing and dense with growth, the right half dimmed and denuded, both sharing the same background ridge for clear comparison.",
+  "subject": "A side-by-side comparison of the same Pandoran forest under two ecological states. On the left, a balanced, multi-tiered rainforest bathed in vibrant bioluminescence, with a solitary apex predator silhouette perched high on a rocky outcrop watching over a healthy, moderate group of browsers. On the right, the same forest with the apex predator absent: the understory is overgrazed and churned into bare mud by an overgrown swarm of massive herbivores, with dim, stripped vegetation.",
+  "scene": "A comparative diptych of a nocturnal Pandoran forest, contrasting a healthy predator-regulated ecosystem against a degraded, overbrowsed landscape lacking its keystone hunter.",
   "camera": "Matched wide three-quarter view of both panels at the same scale and angle so the difference reads instantly.",
   "light": "Left panel richer with glowing flora; right panel darker and barer, less living light, to signal the collapse.",
   "palette": "Cool teal-indigo throughout; the left lush with living-teal-green glow, the right desaturated and dimmer, a faint warm amber scar of churned earth on the right.",
   "style": "Hand-painted naturalist field plate, textured and observed, reads as a diagram through its paired composition.",
   "detail_level": "Moderate and matched across panels so the eye compares structure, not rendering.",
-  "composition": "Two side-by-side panels of equal size, dark margins for callouts, the apex predator's presence vs absence the key difference.",
-  "exclude": ["text", "letters", "numbers", "labels", "UI", "watermark", "logos", "human figures", "film branding"],
+  "composition": "Two equal vertical halves side-by-side, sharing a continuous horizon and mountain ridge, separated by a subtle seam of deep indigo.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "UI",
+    "watermark",
+    "logos",
+    "human figures",
+    "film branding",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The grazers are titanothere/sturmbeest archetypes; the apex silhouette is the thanator archetype. Keep builds consistent with fig-03 and fig-05.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no UI chrome, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

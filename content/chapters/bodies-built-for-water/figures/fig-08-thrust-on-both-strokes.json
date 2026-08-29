@@ -24,9 +24,11 @@
     "streamline diagrams",
     "grid lines",
     "panel borders",
-    "Avatar branding"
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "The same tail four times through one cycle, not four different tails. The flow must read as a smooth bending sheet in every phase — never as a churn of bubbles, which is the opposite point. No arrows: direction comes from the shape of the flow and the spacing of the eddies.",
+  "consistency_notes": "The same tail four times through one cycle, not four different tails. The flow must read as a smooth bending sheet in every phase \u2014 never as a churn of bubbles, which is the opposite point. no artificial graphics: direction comes from the shape of the flow and the spacing of the eddies.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no labels, no arrows or flow vectors, no engineering streamline diagram, no grid, no panel borders, no photographic or 3D-render look, no cartoon style",
   "style_refs": [

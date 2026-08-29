@@ -10,7 +10,7 @@
   "palette": "Deep indigo darkness dominant, warm amber concentrated on and near the trunk and fading across the gap, browning leaves in dull ochre, untouched leaves in cool teal-green.",
   "style": "Painterly naturalist plate, an observed nocturnal scene, patient rather than dramatic.",
   "detail_level": "High on the flames, the browning curled leaf edges and the smoke wisps; the ground and background soft and hazed.",
-  "composition": "Burning trunk on the far left third, leaf cluster on the right third, a wide expanse of plain dark air in between and a large area of dark low-detail sky above the gap kept free for overlaid callouts.",
+  "composition": "Burning trunk on the far left third, leaf cluster on the right third, a wide expanse of plain dark air in between and a large area of dark low-detail sky above the gap kept free framed by deep negative space.",
   "exclude": [
     "text",
     "letters",
@@ -24,10 +24,14 @@
     "radiating ray lines",
     "dotted lines",
     "flames touching the leaves",
-    "photographic look"
+    "photographic look",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "CRITICAL: no flame, spark or ember may touch or reach the leaves — the gap must read as completely empty. The leaves are damaged and smoking on their own, from heat alone. Do NOT draw rays, arrows or beams of any kind between the fire and the leaves.",
+  "consistency_notes": "CRITICAL: no flame, spark or ember may touch or reach the leaves \u2014 the gap must read as completely empty. The leaves are damaged and smoking on their own, from heat alone. Do NOT draw rays, arrows or beams of any kind between the fire and the leaves.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no drawn light rays or beams, no flames crossing the gap, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

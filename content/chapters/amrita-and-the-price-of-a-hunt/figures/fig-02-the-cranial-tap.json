@@ -24,7 +24,9 @@
     "anatomical annotation marks",
     "vector infographic look",
     "gore",
-    "blood spray"
+    "blood spray",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "The fluid sac must read as tiny against the scale of the head - that size contrast is the entire point of the figure. Keep the golden fluid the only warm colour in the frame.",
   "aspect_ratio": "4:3",

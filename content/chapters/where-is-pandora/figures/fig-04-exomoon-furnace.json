@@ -11,10 +11,26 @@
   "style": "Painterly speculative-astronomy plate with strong directional lighting, NOT a labelled diagram.",
   "detail_level": "Crisp on the moon's surface seams and terminator; the giant planet softer and atmospheric behind.",
   "composition": "Moon centred and large; gas giant filling the background; the three light directions clearly distinguishable on the moon's sphere.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "watermark", "logos", "UI", "grid"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "watermark",
+    "logos",
+    "UI",
+    "grid",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same banded gas giant Polyphemus as the cover behind the moon. Warm accents (reflected glow + molten seams) kept scarce against the dominant cool palette.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no diagram chrome, no photographic or 3D-render look, no lens flares, no oversaturation",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/where-is-pandora/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/where-is-pandora/fig-00-cover.png"
+  ]
 }

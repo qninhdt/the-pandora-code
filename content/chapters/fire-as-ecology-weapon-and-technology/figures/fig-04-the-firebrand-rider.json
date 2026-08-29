@@ -10,7 +10,7 @@
   "palette": "Cool indigo sky and near-black canopy dominant; scattered small ember-orange points on the left, one concentrated ember-orange point on the right.",
   "style": "Painterly naturalist plate, an observed comparison of two ways the same thing happens, quiet rather than dramatic.",
   "detail_level": "High on the rider, the flying creature and the stone bowl; medium on the nearest bark flakes; the distant fire and plume soft and hazed.",
-  "composition": "Left third holds the plume and its scatter of embers, right third holds the rider on a level line, a broad band of plain dark hazy sky across the middle and along the bottom left kept clear for overlaid callouts.",
+  "composition": "Left third holds the plume and its scatter of embers, right third holds the rider on a level line, a broad band of plain dark hazy sky across the middle and along the bottom left kept clear framed by deep negative space.",
   "exclude": [
     "text",
     "letters",
@@ -25,12 +25,16 @@
     "dividing line",
     "burning wings",
     "explosions",
-    "photographic look"
+    "photographic look",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "The contrast is chaotic versus deliberate: many small embers scattering randomly on the left, one ember held on a straight steady course on the right. The rider, the mount and the pierced grey pumice bowl match the rest of the chapter. Nothing on the rider or the mount is on fire. No divider between the halves.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows or trajectory lines, no dividing line, no burning rider or burning wings, no explosions, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": [
     "apps/web/public/images/chapters/fire-as-ecology-weapon-and-technology/fig-00-cover.png"
   ]

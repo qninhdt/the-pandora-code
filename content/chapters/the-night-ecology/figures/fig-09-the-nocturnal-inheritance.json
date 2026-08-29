@@ -11,10 +11,25 @@
   "style": "Painterly evolutionary sensory plate with anatomically plausible Mesozoic mammal, modern fox and lizard.",
   "detail_level": "Crisp whiskers, ears, noses and simplified retinal receptor mosaics; dinosaurs and habitats remain soft context.",
   "composition": "Ancient mammal left, daylight lizard centre, modern fox right. Faces align horizontally; dark margins beside ears and retinal insets allow callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "anthropomorphic expressions", "dinosaurs attacking", "watermark", "logos"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "leader lines",
+    "anthropomorphic expressions",
+    "dinosaurs attacking",
+    "watermark",
+    "logos",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The figure should communicate a sensory trade: enhanced hearing, touch and smell in mammals alongside reduced colour receptor diversity, not claim that every early mammal was strictly nocturnal.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no arrows, no cartoon evolution march, no human eyes, no monster scene, no photo or CGI look, no vector infographic",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

@@ -11,10 +11,28 @@
   "style": "Painterly speculative-biology naturalist plate, hand-painted, atmospheric, NOT a 3D render or photo.",
   "detail_level": "Crisp on the figure and the dropped mask; softer glowing forest and drifting spores behind.",
   "composition": "Figure off-centre on a third line collapsing toward the mask in the foreground; glowing trunks framing; drifting spores leading the eye.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "blood", "gore", "weapons"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "blood",
+    "gore",
+    "weapons",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same exo-pack design as the cover (clear faceplate, side cartridge, jaw hose). Cool Pandora biolum palette; the air carries a faint green toxic cast unique to this figure.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no photographic or 3D-render look, no lens flares, no gore, no cartoon or anime style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/whats-in-the-air/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/whats-in-the-air/fig-00-cover.png"
+  ]
 }

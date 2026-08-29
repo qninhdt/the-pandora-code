@@ -9,11 +9,29 @@
   "light": "Almost no sunlight; faint cyan from distant upper water, living-teal microbial glow around the vent, restrained magenta scavenger signals and deep indigo ambient shadow.",
   "palette": "Void indigo dominates, with sparse cyan marine snow, living teal vent life, muted stone skeleton and rare magenta biological accents.",
   "style": "Painterly speculative-biology naturalist plate, sober and resource-limited rather than a fantasy aquarium.",
-  "detail_level": "Crisp carcass community and compact vent oasis, sparse particles and broad empty sediment plain; generous dark areas for callouts.",
-  "composition": "Three readable energy settings—falling particles above, carcass left, vent right—separated by large quiet distances.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "human submarine", "Earth whale", "crowded coral reef", "lava river"],
+  "detail_level": "Crisp carcass community and compact vent oasis, sparse particles and broad empty sediment plain; generous dark areas framed by deep negative space.",
+  "composition": "Three readable energy settings\u2014falling particles above, carcass left, vent right\u2014separated by large quiet distances.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "human submarine",
+    "Earth whale",
+    "crowded coral reef",
+    "lava river",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "This is explicitly a scientific speculation plate. Keep the abyss sparse and do not present Earth vent species unchanged.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no labels, no arrows, no giant glowing city, no crowded aquarium, no Earth whale, no photographic or glossy CGI look",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

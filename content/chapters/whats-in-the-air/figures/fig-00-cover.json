@@ -11,9 +11,24 @@
   "style": "Painterly speculative-biology naturalist plate, hand-painted texture, strong atmospheric depth, NOT a 3D render or photo.",
   "detail_level": "Crisp on the faceplate, breath-fog and reflected fronds; softer glowing haze behind.",
   "composition": "Face and faceplate filling the right two-thirds on a third line; reflected forest sweeping across the glass; generous glowing negative space at left.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "brand markings", "modern Earth cityscape"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "brand markings",
+    "modern Earth cityscape",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "This exo-pack design - clear faceplate, side filter cartridge, jaw hose - must match wherever the mask appears in this chapter. Cool Pandora biolum palette throughout.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no photographic or 3D-render look, no lens flares, no oversaturation, no cartoon or anime style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

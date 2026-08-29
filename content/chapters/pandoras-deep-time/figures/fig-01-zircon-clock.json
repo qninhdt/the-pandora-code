@@ -11,10 +11,27 @@
   "style": "Painterly naturalist specimen plate, hand-painted texture, shallow-focus intimacy.",
   "detail_level": "Crisp on the crystal's core, rim, and growth zones and the tweezer-tip; everything else dissolving into soft dark haze.",
   "composition": "The tweezers entering from one lower corner, the glowing grain at the optical center on a third line, vast dark negative space around it for focus.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "modern branding"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "modern branding",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same glowing layered crystal motif as the cover (bright core, paler rim). Cool Pandora palette, bioluminescent key glow from within the specimen.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"
+  ]
 }

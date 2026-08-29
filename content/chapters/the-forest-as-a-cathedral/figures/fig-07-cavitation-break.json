@@ -10,11 +10,28 @@
   "palette": "Void indigo background, muted teal-grey lignified walls, living cyan water, one sparse amber failure accent.",
   "style": "Painterly botanical microscopy plate with anatomically coherent vessel walls and tactile hand-painted texture, not a sterile textbook vector.",
   "detail_level": "Crisp vessel walls, bordered pits, continuous water surfaces and one clearly separated embolized column; all nonessential tissue fades into shadow.",
-  "composition": "Three tall vessels fill the frame. The intact left vessel and the failed central vessel form the teaching contrast; the right vessel recedes as context. Leave open dark margins beside the intact lower column and the central bubble for interface callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "blood vessels", "animal cells", "metal pipes", "watermark", "logos", "UI chrome"],
+  "composition": "Three tall vessels fill the frame. The intact left vessel and the failed central vessel form the teaching contrast; the right vessel recedes as context. Leave open dark margins beside the intact lower column and the central bubble framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "leader lines",
+    "blood vessels",
+    "animal cells",
+    "metal pipes",
+    "watermark",
+    "logos",
+    "UI chrome",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The failure must be a gas embolism inside woody xylem, not a crack in the wood. Show exactly one broken water column and at least one neighbouring intact column.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no labels, no arrows, no infographic layout, no plumbing hardware, no bloodstream, no photographic or CGI look, no glossy vector art",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

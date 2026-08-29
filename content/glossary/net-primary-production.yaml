@@ -1,0 +1,31 @@
+id: net-primary-production
+label:
+  vi: Sản lượng sơ cấp thuần
+  en: Net primary production
+definition:
+  vi: >-
+    Lượng carbon mà thực vật và các sinh vật quang hợp khác giữ lại được sau khi đã trừ phần chúng tự thở
+    ra — nghĩa là phần thực sự trở thành lá, gỗ, rễ và hạt, và là toàn bộ ngân sách mà mọi sinh vật còn
+    lại của một hệ sinh thái phải sống nhờ vào. Phân biệt với sản lượng gộp là điều thiết yếu: trên Trái
+    Đất, quang hợp gộp trên đất liền chừng 120 gigaton carbon mỗi năm, nhưng hô hấp của chính thực vật
+    lấy lại khoảng một nửa, để lại chừng 60 gigaton. Những dòng hai chiều khổng lồ ấy át hẳn phần mất cân
+    bằng ròng bé nhỏ — điều khiến phần mất cân bằng vừa khó đo vừa mang tính quyết định.
+  en: >-
+    The carbon that plants and other photosynthesisers keep after subtracting what they respire away —
+    the part that actually becomes leaf, wood, root and seed, and the entire budget every other organism
+    in an ecosystem has to live on. The distinction from gross production is essential: on Earth, gross
+    terrestrial photosynthesis runs about 120 gigatons of carbon a year, but the plants' own respiration
+    takes roughly half of it back, leaving around 60. Those enormous two-way flows dwarf the small net
+    imbalance — which is what makes the imbalance both hard to measure and decisive.
+see_also:
+  - trophic-efficiency
+  - biogeochemical-cycle
+  - limiting-nutrient
+category: concept
+tags:
+  - ecology
+  - earth-systems
+cover_prompt: >-
+  A painted naturalist study of a single broad leaf backlit so its veins glow, faint pale wisps of gas
+  drifting both toward and away from its surface in unequal amounts, deep indigo background, painterly
+  botanical plate, no text, no numbers, no labels.

@@ -1,0 +1,172 @@
+{
+  "viz": {
+    "materialIndexBench": {
+      "title": "Không có vật liệu nào mạnh nhất",
+      "subtitle": "Mười hai vật liệu, bốn công việc — đổi công việc là đảo cả bảng xếp hạng",
+      "aria": "Các vật liệu xếp hạng theo hiệu năng cho công việc: {job}",
+      "jobLabel": "Chi tiết này phải làm gì",
+      "legend": "Cột màu ngọc là vật liệu do sinh vật tự mọc ra; cột xám là vật liệu do con người chế tạo.",
+      "job": {
+        "tie": "Giữ một lực kéo",
+        "beam": "Chống uốn",
+        "column": "Dựng một cột đứng",
+        "spring": "Tích trữ năng lượng"
+      },
+      "hint": {
+        "tie": "Một sợi dây cung hay một sợi gân: chỉ chịu kéo thuần, nên điều quan trọng là độ bền trên mỗi đơn vị khối lượng.",
+        "beam": "Một thanh xương cánh hay một cành cây: nó phải giữ được độ cứng khi bị uốn, và điều đó ưu ái căn bậc hai của độ cứng chia cho khối lượng riêng.",
+        "column": "Một thân cây chống chính trọng lượng mình: giới hạn nằm ở hiện tượng mất ổn định, và căn bậc ba của độ cứng chia khối lượng riêng mới là yếu tố quyết định.",
+        "spring": "Một cánh cung hay một sợi gân gót chân: việc của nó là nhận năng lượng vào rồi trả lại, nên phần thưởng thuộc về bình phương độ bền chia cho độ cứng."
+      },
+      "unit": {
+        "kNmPerKg": "{value} kN·m/kg",
+        "kJPerKg": "{value} kJ/kg",
+        "percent": "{value}%"
+      },
+      "readout": {
+        "leader": "Tốt nhất cho việc này",
+        "leaderNote": "ở mức {figure}",
+        "steel": "Thép đứng ở đâu",
+        "steelValue": "thứ {rank} trên {total}",
+        "steelNote": "thứ vật liệu ta vẫn gọi là chắc",
+        "percent": "{value}%"
+      },
+      "material": {
+        "bone": "Xương",
+        "nacre": "Xà cừ",
+        "wood": "Gỗ thông",
+        "balsa": "Gỗ balsa",
+        "cuticle": "Vỏ kitin sâu bọ",
+        "tendon": "Gân",
+        "silk": "Tơ nhện",
+        "biosilica": "Thủy tinh hải miên",
+        "steel": "Thép thường",
+        "titanium": "Hợp kim titan",
+        "aluminium": "Nhôm hàng không",
+        "cfrp": "Sợi carbon"
+      },
+      "verdict": {
+        "tie": "Tơ nhện đứng ngay cạnh sợi carbon hàng không và bỏ thép lại dưới đáy bảng. Cân trên cùng một đơn vị khối lượng, một con nhện làm tốt hơn cả một lò luyện thép.",
+        "beam": "Gỗ balsa thắng, và đây không phải mẹo: để giữ hình dạng trước lực uốn trên mỗi đơn vị khối lượng, một thứ xốp nhẹ mà cứng vượt qua mọi kim loại có mặt ở đây. Đó chính là lý do cánh bay được làm rỗng.",
+        "column": "Vẫn là những loại gỗ nhẹ dẫn đầu. Một thân cây đổ vì mất ổn định, và mất ổn định thì thưởng cho khối tích không nặng — đúng là bản chất của một vật liệu tổ ong.",
+        "spring": "Giờ tơ nhện đứng một mình trên đỉnh, cách phần còn lại cả một bậc độ lớn. Một cánh cung là một cái kho năng lượng, và đó là lý do những cánh cung tốt được mọc ra chứ không được đúc ra."
+      }
+    },
+    "toughnessArchitectureLab": {
+      "title": "Cùng một khoáng vật, sắp xếp bốn kiểu",
+      "subtitle": "Nguyên liệu không đổi một chút nào — chỉ đổi chỗ đặt nó",
+      "aria": "Một vết nứt lan qua kiến trúc: {architecture}",
+      "solidBlock": "một khối khoáng vật đặc",
+      "progressLabel": "Cho vết nứt chạy qua",
+      "progressValue": "{pct}% khối",
+      "architecture": {
+        "monolithic": "Khoáng vật đặc",
+        "platelets": "Xếp lớp phiến",
+        "bridged": "So le và có cầu nối",
+        "bouligand": "Xếp lớp xoắn"
+      },
+      "hint": {
+        "monolithic": "Đúc khoáng vật thành một khối và vết nứt chạy thẳng băng theo mặt phẳng chịu kéo lớn nhất. Từng milimet nó đi đều miễn phí.",
+        "platelets": "Chia khối ra thành các phiến mỏng, vết nứt buộc phải đi vòng qua từng phiến, và đến mỗi mặt phân cách nó chỉ còn một phần lực so với lúc bắt đầu.",
+        "bridged": "Bây giờ hãy để một số cầu nối khoáng vật còn nguyên phía sau đầu vết nứt. Chúng kéo hai mặt nứt khép lại từ phía sau, và đây gần đúng chỗ xà cừ thật đứng.",
+        "bouligand": "Quay mỗi lớp lệch thêm một chút so với lớp dưới. Vết nứt không còn tìm được một mặt phẳng nào để đi theo nữa, nên nó phải xoáy như mũi khoan — đúng kiểu chùy của tôm tít."
+      },
+      "readout": {
+        "tortuosity": "Đường đã đi",
+        "tortuosityNote": "trên mỗi đơn vị tiến ngang",
+        "tipDrive": "Lực còn tới đầu nứt",
+        "tipDriveNote": "sau một góc ngoặt {angle}°",
+        "energy": "Năng lượng để vỡ",
+        "energyNote": "đo được, so với khối đặc",
+        "times": "{value}×",
+        "percent": "{value}%"
+      },
+      "verdict": {
+        "monolithic": "Đây là mốc so sánh, và nó là một mốc tệ. Aragonit ở dạng khối thì bở và giòn: một khuyết tật ở bất cứ đâu cũng thành vết nứt, và vết nứt chạy sang tận bờ bên kia mà chẳng phải trả giá gì.",
+        "platelets": "Chỉ riêng hình học đã mua được rất nhiều. Ép vết nứt lệch khỏi mặt phẳng thẳng khiến nó mất lực ở từng khúc ngoặt, còn quãng đường nó phải cắt thì dài thêm ra.",
+        "bridged": "Xà cừ thật nằm khoảng chỗ này: tốn cỡ một nghìn lần năng lượng mới vỡ, mà vẫn từ đúng thứ khoáng vật giòn ban đầu. Không phải nguyên liệu tốt hơn — cách sắp xếp tốt hơn.",
+        "bouligand": "Xoắn cả tập lớp lại đưa vết nứt ra khỏi mặt phẳng của bản vẽ. Nó phải tạo ra bề mặt mới nhanh hơn cả mức nó tiến lên, và đó là kiểu di chuyển đắt đỏ nhất mà một vết nứt có thể bị ép nhận."
+      }
+    },
+    "columnHeightCeiling": {
+      "title": "Một thân cây tự đứng được cao đến đâu",
+      "subtitle": "Chiều cao mất ổn định theo Greenhill — chọn gốc, chọn gỗ, chọn trọng lực",
+      "aria": "Thước chiều cao mất ổn định của cột, hiện ở {height} mét",
+      "axisMetres": "mét",
+      "profileLabel": "Dạng thân",
+      "hint": "Hãy để ý thanh trượt nào thật sự làm trần cao lên. Đường kính vào theo số mũ hai phần ba còn trọng lực chỉ vào theo căn bậc ba, nên nới gốc rộng ra ăn hơn hẳn việc đổi cả một hành tinh.",
+      "profile": {
+        "uniform": "Trụ thẳng",
+        "tapered": "Thu nhỏ tự nhiên"
+      },
+      "reference": {
+        "hyperion": "Hyperion, 116 m",
+        "hydraulicLimit": "giới hạn của nước, ~130 m",
+        "hometree": "Cây Nhà, 300 m"
+      },
+      "readout": {
+        "ceiling": "Mất ổn định ở",
+        "ceilingNote": "chỉ do trọng lượng bản thân, chưa có gió",
+        "safety": "Dư an toàn tại 300 m",
+        "safetyNote": "riêng với mất ổn định",
+        "needed": "Gốc cần cho 300 m",
+        "neededNote": "với loại gỗ và trọng lực này",
+        "metres": "{value} m",
+        "metresPrecise": "{value} m",
+        "times": "{value}×"
+      },
+      "slider": {
+        "diameter": "Đường kính gốc",
+        "gravity": "Trọng lực bề mặt",
+        "gravityValue": "{value} × Trái Đất",
+        "modulus": "Độ cứng của gỗ",
+        "modulusValue": "{value} GPa",
+        "density": "Khối lượng riêng của gỗ",
+        "densityValue": "{value} kg/m³"
+      },
+      "verdict": {
+        "clears": "Gỗ thường vượt qua mốc 300 m của Cây Nhà còn thừa chỗ, và nó làm được thế ngay cả ở trọng lực Trái Đất. Vậy thứ chặn một cây thật lại ở mốc 130 m không phải là mất ổn định — mà là chuyện đưa nước lên tới ngọn.",
+        "fails": "Với đường kính gốc này, cột mất ổn định dưới trọng lượng của chính nó trước khi kịp cao 300 m. Hãy nới gốc rộng ra: đó là cách chữa rẻ nhất, và cũng là lý do những gã khổng lồ thật đều xòe rộng phần chân."
+      }
+    },
+    "sparMassFractionGate": {
+      "title": "Một chiếc cánh 25 mét đòi chủ nó trả giá bao nhiêu",
+      "subtitle": "Đổi vật liệu thanh xương cánh và xem chiếc cánh ăn dần con vật",
+      "aria": "Khối lượng thanh xương cánh chiếm {pct} phần trăm khối lượng cơ thể",
+      "materialLabel": "Vật liệu thanh cánh",
+      "rootMoment": "{value} kN·m tại khớp vai",
+      "barLabel": "Hai thanh cánh, phần của cơ thể",
+      "viabilityLine": "không còn chỗ cho con vật",
+      "percent": "{value}%",
+      "material": {
+        "bone": "Xương thường",
+        "composite": "Composite carbon"
+      },
+      "hint": "Chiếc cánh phải sống sót qua momen uốn mà vẫn chừa chỗ cho một cơ thể. Cả hai điều kiện phải đúng cùng lúc.",
+      "slider": {
+        "span": "Sải cánh",
+        "spanValue": "{value} m",
+        "mass": "Khối lượng cơ thể",
+        "load": "Ngoặt gắt đến đâu",
+        "loadValue": "{value} g"
+      },
+      "readout": {
+        "sparMass": "Hai thanh cánh nặng",
+        "sparMassNote": "phải mang theo trong từng nhịp vỗ",
+        "stress": "Ứng suất trong vách",
+        "stressNote": "vật liệu chảy ở {yield} MPa",
+        "safety": "Dư trước khi hỏng",
+        "safetyThin": "mỏng — chỉ cách một cú ngoặt gắt là gãy",
+        "safetyComfortable": "thoải mái cho những pha ngoặt gắt",
+        "kg": "{value} kg",
+        "mpa": "{value} MPa",
+        "times": "{value}×"
+      },
+      "verdict": {
+        "viable": "Con vật bay này chạy được. Thanh cánh đủ nhẹ để còn chừa một cơ thể quanh nó, và đủ chắc để ngoặt gắt mà không gãy.",
+        "grounded": "Con vật bay này không thể tồn tại. Hoặc thanh cánh gãy dưới pha ngoặt, hoặc nó nặng đến mức chẳng còn chút hạn mức khối lượng nào cho cơ, ruột và não.",
+        "compare": "Nếu thay bằng {material}, hai thanh cánh sẽ chiếm {pct}% khối lượng cơ thể."
+      }
+    }
+  }
+}

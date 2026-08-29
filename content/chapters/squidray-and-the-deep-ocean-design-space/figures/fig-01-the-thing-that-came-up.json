@@ -10,7 +10,7 @@
   "palette": "Void indigo sky and water, ocean teal in the wave troughs, pale mist grey in the spray and froth, sparse cyan glow beneath the wings.",
   "style": "Painterly naturalist plate with the weight and stillness of an observed event, not an action poster.",
   "detail_level": "High detail on the wings, water sheeting and tentacle cluster; the sea and sky loose and atmospheric.",
-  "composition": "Animal in profile across the upper two thirds, torn froth ring in the lower third, large expanses of plain dark sky at left and right for annotations.",
+  "composition": "Animal in profile across the upper two thirds, torn froth ring in the lower third, large expanses of plain dark sky at left and right framed by deep negative space.",
   "exclude": [
     "text",
     "letters",
@@ -26,7 +26,9 @@
     "human figures",
     "blood",
     "sun",
-    "lens flare"
+    "lens flare",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Same animal as fig-00-cover: four eyes (two large lateral, two small anterior), twelve tentacles, broad ray-like wings, two lateral siphon nozzles. Wings must read as fully spread, not folded.",
   "aspect_ratio": "16:9",

@@ -2,7 +2,7 @@
   "id": "fig-00-cover",
   "chapter_slug": "how-the-wind-traders-navigate-a-planet",
   "role": "hero",
-  "narrative_purpose": "Capture the chapter's essence at a glance: a chain of living aerostats riding a fast river of high air across a whole world — a people who cross a planet by choosing which wind to stand in.",
+  "narrative_purpose": "Capture the chapter's essence at a glance: a chain of living aerostats riding a fast river of high air across a whole world \u2014 a people who cross a planet by choosing which wind to stand in.",
   "subject": "A long chain of six enormous pale translucent bell-shaped gasbag creatures, each with a small woven gondola slung beneath it on rigging lines, strung out in a loose diagonal line across a vast open sky. Each bell trails a few slender tentacles. Two small winged ray-shaped creatures with wide flat bow-tie wings fly ahead of the leading bell, joined to it by thin lines.",
   "scene": "Very high altitude above an enormous cloudscape. Far below, two separate flat decks of cloud stretch to the horizon, one much lower than the other. Between and above them the air is clear and thin. Long parallel streaks of very high thin cloud run across the top of the frame in a single consistent direction, marking the fast air the chain is riding.",
   "camera": "Wide cinematic establishing shot from slightly above and behind the chain, the horizon low and gently curved to imply a whole world below.",
@@ -24,10 +24,15 @@
     "engines",
     "RDA machinery",
     "lens flare",
-    "photographic look"
+    "photographic look",
+    "arrows",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "The aerostats are living creatures, not machines: soft translucent bells, no rigid frames, no propellers. Cool high-altitude Pandora palette with sparse cyan bioluminescence. The mood is calm competence at enormous scale, not action.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no propellers, no engines, no rigid airship hull, no neon glow, no 3D-render or photographic look, no cartoon style, no lens flare",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

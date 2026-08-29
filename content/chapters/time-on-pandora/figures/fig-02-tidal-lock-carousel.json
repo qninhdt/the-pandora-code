@@ -11,10 +11,29 @@
   "style": "Painterly astronomical plate, soft and atmospheric - reads as a painted scene of one moon at four moments, NOT a hard vector schematic and NOT a render.",
   "detail_level": "Moderate: clear shapes and the repeated-moon arrangement, painterly texture, soft edges, no hard outlines.",
   "composition": "Planet centred, four moon positions evenly around it like points on a clock face, the sunlit side consistent across all of them, generous dark negative space; the same surface marking faces inward at every position.",
-  "exclude": ["text", "letters", "numbers", "labels", "drawn orbit lines", "arrows", "grid", "ruler marks", "watermark", "logos", "UI", "clock hands"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "drawn orbit lines",
+    "arrows",
+    "grid",
+    "ruler marks",
+    "watermark",
+    "logos",
+    "UI",
+    "clock hands",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same banded gas giant Polyphemus as the cover. No drawn orbit lines, arrows or labels - the repeated moon positions and consistent lit side carry the idea. The moon's inward-facing marking must be the same patch at every position.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no orbit lines, no arrows, no grid, no diagram chrome, no clock hands, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"
+  ]
 }

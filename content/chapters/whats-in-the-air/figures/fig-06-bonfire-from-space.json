@@ -11,10 +11,28 @@
   "style": "Painterly naturalist astronomical plate, soft and atmospheric, NOT a hard vector diagram and NOT a 3D render.",
   "detail_level": "Moderate: clear crescent and the bending, fanning starlight; painterly soft spectrum; generous dark negative space.",
   "composition": "Dim gas-giant limb anchored at left, glowing crescent moon centre-left, the starlight bending through its atmosphere and the spectral fan opening across the right; dark negative space throughout.",
-  "exclude": ["text", "letters", "numbers", "labels", "axis", "arrows", "watermark", "logos", "UI", "grid", "wavelength markings"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "axis",
+    "arrows",
+    "watermark",
+    "logos",
+    "UI",
+    "grid",
+    "wavelength markings",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same banded gas giant Polyphemus as elsewhere in the book, here dim at the edge. The teal-and-amber spectrum ties the moon's oxygen-and-carbon-dioxide air to the biosignature idea. No drawn axes or labels - a painted scene, not a chart.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no axes, no arrows, no grid, no diagram chrome, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/whats-in-the-air/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/whats-in-the-air/fig-00-cover.png"
+  ]
 }

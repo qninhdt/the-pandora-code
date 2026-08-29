@@ -11,10 +11,24 @@
   "style": "Painterly plate reading as a comparison diagram, soft glowing atmosphere on the right, NOT a vector chart, NOT a 3D render.",
   "detail_level": "Moderate: the key is the contrast - stark gradient on the left, near-uniform tone on the right.",
   "composition": "Two equal spheres balanced left and right, the left high-contrast and bare, the right low-contrast and thickly haloed, dark space between.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "grid", "UI", "watermark", "logos"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "grid",
+    "UI",
+    "watermark",
+    "logos",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Warm amber reserved for the thin world's overheated equator; the thick world stays in the cool Pandora palette to read as the gentle, even-temperature case.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no grid, no diagram chrome, no 3D-render or photographic look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

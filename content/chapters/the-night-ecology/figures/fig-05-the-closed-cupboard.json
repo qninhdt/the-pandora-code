@@ -10,11 +10,27 @@
   "palette": "Void indigo wood interior, muted teal leaves, pale cyan edges, sparse amber confined outside the cupboard.",
   "style": "Painterly historical botany plate with tactile wood, soil and leaf texture; observational and restrained.",
   "detail_level": "Crisp repeated leaf postures and sealed cupboard edge; room furniture is soft and secondary.",
-  "composition": "Three equal cupboard windows run left to right: open leaves, folded leaves, open leaves. The surrounding room and watch occupy a narrow lower strip. Leave dark space beside each leaf crown for callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "sunlight entering cupboard", "open door", "electric lamps", "watermark", "logos"],
+  "composition": "Three equal cupboard windows run left to right: open leaves, folded leaves, open leaves. The surrounding room and watch occupy a narrow lower strip. Leave dark space beside each leaf crown framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "leader lines",
+    "sunlight entering cupboard",
+    "open door",
+    "electric lamps",
+    "watermark",
+    "logos",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Use the exact same plant, pot and sealed cupboard in all three observations. Only leaf posture and the external time glow may change; the interior must remain dark.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no clocks with readable numbers, no arrows, no open cupboard, no light beam inside, no modern laboratory, no photographic or CGI look",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

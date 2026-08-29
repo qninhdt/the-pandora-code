@@ -11,9 +11,22 @@
   "style": "Photorealistic close-up product/lab render.",
   "detail_level": "High detail on the disc, the gap, and the vapour; the inset simpler.",
   "composition": "Main disc-and-track in the lower two-thirds; small upside-down inset in an upper corner.",
-  "exclude": ["text", "watermark", "hands", "Pandora rock", "wires"],
+  "exclude": [
+    "text",
+    "watermark",
+    "hands",
+    "Pandora rock",
+    "wires",
+    "letters",
+    "labels",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Gap glow is the same cyan as the chapter's flux threads, tying the lab demo to the mountains; disc clearly does not touch the track.",
   "aspect_ratio": "1:1",
   "negative_prompt": "no text, no logos, no hands, no wires, no contact between disc and track, no oversaturation",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

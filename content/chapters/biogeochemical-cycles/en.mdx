@@ -1,0 +1,429 @@
+<DiagramFigure
+  src="/images/chapters/biogeochemical-cycles/fig-01-returned-to-the-roots.webp"
+  alt="A body wrapped in woven cloth lowered into a hollow among enormous pale roots at night, the root surfaces threaded with faint teal luminescence, Na'vi figures standing back in the dark, fine spores drifting in the still air"
+  labels={[
+    { x: 55, y: 62, side: "left", label: "The reservoir being returned", note: "Roughly a hundred kilograms of carbon, nitrogen and phosphorus re-entering circulation"  },
+    { x: 30, y: 33, side: "right", label: "Luminous root surfaces", note: "The uptake interface: every atom released here is intercepted within metres"  },
+    { x: 17, y: 27, side: "right", label: "Ceremony ends here", note: "What follows is decomposition on a fixed schedule, not ritual"  },
+    { x: 76, y: 78, side: "left", label: "Turned soil", note: "Where the fast loop actually runs — microbial respiration, days to seasons" }
+  ]}
+  figNo="01"
+  caption="The moment canon shows and never explains. A body is placed into the roots, and the ceremony ends. What happens next is not ceremony — it is chemistry, running on a schedule, and it is the only reason the forest overhead still has anything to build with."
+  tier="canon"
+/>
+
+A body goes into the roots.
+
+The ceremony around it is elaborate and the ceremony is not what I want to look at. What I want to look at is the weeks afterward, when the singing has stopped and everyone has gone, and something entirely unremarkable happens: the body stops being a body. Its carbon leaves. Its nitrogen leaves. Its phosphorus, which was locked into every strand of its DNA and every membrane of every cell, leaves. In a warm wet forest this takes a season at most, and at the end of it there is nothing there to bury.
+
+The Na'vi have a sentence for this. Jake Sully repeats it early, in the flat voice of a man quoting something he has not yet understood:
+
+<Quote cite="Avatar (2009), as rendered in the published screenplay">
+They see a network of energy that flows through all living things. They know that all energy is only borrowed — and one day you have to give it back.
+</Quote>
+
+Read it as theology and it is a lovely thing to say at a funeral. Read it as a claim about the physical world and it turns into something sharper: an assertion that nothing here is consumed, that the totals are conserved, that every atom in that body was on loan from a pool it must eventually return to. Stated that way it stops being a sentiment. It becomes an accounting statement — and accounting statements can be checked.
+
+So let us check it.
+
+This chapter is an audit. We are going to open Pandora's books, take canon's own published numbers as the entries, and see whether they balance. It requires exactly one piece of arithmetic, which I will build in a moment and which will then do all the work for the rest of the chapter. Applied to four elements it produces four answers. Three of those answers are startling. One of them, I think, cannot be made to work at all — and finding that out is far more interesting than being told the forest recycles beautifully.
+
+<Callout variant="warning" title="What is canon here, and what is arithmetic">
+Almost every Pandoran number in this chapter is *derived* rather than quoted. Canon gives the moon's radius, its surface gravity, its surface pressure, and the percentage composition of its air. From those four things you can calculate the mass of every gas in the atmosphere — but that calculation is mine, not canon's, and I will flag it wherever it matters.
+
+What canon does not give, anywhere, is a single flux: not one rate of volcanic outgassing, not one figure for forest productivity, not one word about soil nutrients, decomposition speed, or nitrogen. Those absences are not an inconvenience. They turn out to be the most informative part of the record, and by the end of the chapter I will be able to say precisely which one sentence of missing canon would settle the biggest question in it.
+</Callout>
+
+## The only arithmetic you need
+
+Here is the instrument. It is embarrassingly simple, and it is the reason planetary chemistry is a quantitative science instead of a set of stories.
+
+Pick any substance and any place it collects — carbon in the air, salt in the sea, water in a lake. Call how much sits there the **reservoir**, measured in tonnes or gigatonnes or moles, whatever is convenient. Call the rate at which it leaves the **flux**, measured in the same units per year. Divide the first by the second:
+
+`τ = M / F`
+
+What comes out is a time — the average span an individual atom spends in that reservoir before something removes it. This is the <GlossaryTerm slug="residence-time">residence time</GlossaryTerm>, and <ChapterRef slug="pandoran-water-and-weather" titleOnly /> already put it to work once: Earth's entire atmosphere holds a layer of water only two and a half centimetres deep, rains about a metre a year, and therefore turns its whole water content over every nine days. The sky is not a tank. It is a conveyor.
+
+Now the move that makes this an instrument rather than a curiosity. Run the division backwards.
+
+If you know how much of something a reservoir contains, and you know how fast the world destroys or removes it, then you also know how fast something must be *replacing* it — because if replacement did not match removal, the reservoir would be visibly draining. Rearranged:
+
+`F_source = M / τ`
+
+That is the whole trick. A concentration you can measure, plus a lifetime you can calculate from chemistry, gives you a source flux you never observed. It converts a static fact about how much of something is present into a hard requirement about the machinery that keeps it there. And if no plausible machinery can meet the requirement, then one of your inputs is wrong, and you have learned something.
+
+<ResidenceTimeAudit caption="The bench we will use for the rest of the chapter. Reservoir over removal rate gives the time an atom stays; push either dial and watch the answer swing across nine orders of magnitude. Note how a large store with a small drain buffers a planet for millions of years, while a small store with a big drain cannot hold anything at all — and note where Pandora's hydrogen sulfide lands." />
+
+Two things about that spread are worth carrying forward.
+
+The first is that residence times are *wildly* unequal, even for the same element. A carbon atom in the air stays a few years; a carbon atom in seafloor limestone stays hundreds of millions. Same element, same planet, two reservoirs whose behaviour has nothing in common. Fast reservoirs respond instantly to change and store nothing. Slow reservoirs store enormous quantities and take geological time to notice anything has happened. When someone tells you a planet's chemistry is stable, the useful question is always: stable in which reservoir, and paid for by which flux?
+
+The second is subtler and it is where popular accounts most often go wrong. The time an individual molecule spends in a reservoir is not the same as the time it takes a *disturbance* to that reservoir to fade. An individual CO₂ molecule leaves Earth's atmosphere in about four years, swapped out by photosynthesis and air-sea exchange. But those exchanges hand it straight back — they shuffle carbon between boxes rather than removing it. An *excess* of carbon relaxes only as fast as the slow permanent sinks can bury it, which takes a hundred thousand years and more. Four years and a hundred thousand years, both correct, describing different questions. Conflating them is the single most common error in writing about carbon, and keeping them apart is most of what it takes to reason well about any cycle.
+
+<ScientificNote title="Why the books must balance">
+The underlying rule has no exceptions and no fine print. For any element in any reservoir, the rate the stock changes equals what comes in minus what goes out:
+
+`dM/dt = Σ F_in - Σ F_out`
+
+This is <GlossaryTerm slug="mass-balance">mass balance</GlossaryTerm>, and its power is entirely investigative. If you have measured the inputs and the outputs and the reservoir, and the three do not agree, the correct conclusion is never that the arithmetic failed. It is that a flux exists which you have not counted. Chasing exactly that discrepancy is how atmospheric scientists discovered that something on land was quietly absorbing two to three gigatonnes of carbon a year that nobody had accounted for. The missing sink was found because the books refused to close.
+
+A reservoir holding steady is in <GlossaryTerm slug="steady-state">steady state</GlossaryTerm> — not because nothing is happening, but because inflow and outflow have matched. What is constant is the number, not the contents.
+</ScientificNote>
+
+Instrument built. Now the specimen.
+
+## Weighing the sky
+
+You can weigh an atmosphere from the ground without ever leaving it.
+
+The pressure you feel at sea level *is* the weight of the entire air column standing on every square metre above you. So the total mass of an atmosphere is just that pressure, multiplied by the surface area of the world, divided by its surface gravity. Three numbers, all of which canon supplies for Pandora: a surface pressure around nine-tenths of Earth's, a radius of about 5,720 kilometres, a surface gravity of about 0.8 g.
+
+Run it and Pandora's atmosphere comes out at roughly 4.8 × 10¹⁸ kilograms — about ninety-three percent of Earth's, which is unremarkable and rather satisfying. A slightly smaller world holding slightly less pressure ends up with about the same amount of air.
+
+Then you apply the composition, and it stops being unremarkable.
+
+<ChapterRef slug="whats-in-the-air" titleOnly /> went through what Pandoran air does to a human body and why twenty seconds is the number that matters. I am after something different: not what the air does, but how much of it there is. Canon's published breakdown puts carbon dioxide at roughly eighteen percent of the atmosphere. On Earth it is four hundredths of one percent.
+
+<StatGrid
+  stats={[
+    { label: "Airborne carbon, Earth today", value: "875 Gt C", note: "and 590 before industry", tone: "teal" },
+    { label: "Airborne carbon, Pandora", value: "≈285,000 Gt C", note: "derived from canon's 18% CO₂", tone: "cyan" },
+    { label: "Ratio", value: "≈325×", note: "Pandora's air holds this much more carbon", tone: "amber" },
+    { label: "Airborne sulfur, Pandora", value: "≈4×10⁷ Tg S", note: "if H₂S is near 1%", tone: "magenta" }
+  ]}
+/>
+
+Two hundred and eighty-five thousand gigatonnes of carbon, hanging in the air. That is not a slightly enriched atmosphere. That is more carbon in Pandora's sky than exists in the whole of Earth's atmosphere, vegetation, soils and surface ocean combined, several times over. And canon is emphatic that the moon has been like this for a very long time — the Na'vi are described as morphologically and genetically stable for something on the order of twelve million years, individual Hometrees stand for twenty thousand, and nothing in the record hints at a biosphere in the middle of a chemical transition.
+
+So the audit has its first entry, and it is a large one. Roughly 285,000 gigatonnes of carbon, in a reservoir alleged to have held steady for twelve million years.
+
+Which means there had better be a source and a sink, and they had better be equal to about twelve significant figures, because a mismatch of even a tenth of a percent per year empties or doubles that reservoir in a geological instant.
+
+<DiagramFigure
+  src="/images/chapters/biogeochemical-cycles/fig-02-the-weight-of-the-air.webp"
+  alt="A tall narrow column of atmosphere drawn as a cutaway shaft rising from a small patch of forest floor to the black of space, the air within it rendered denser and more luminous toward the bottom and thinning to nothing at the top, a distant gas giant beyond"
+  labels={[
+    { x: 50, y: 88, side: "right", label: "Where the weight lands", note: "Surface pressure is the mass of this entire column on one square metre"  },
+    { x: 47, y: 52, side: "right", label: "Density falls with height", note: "Most of the mass sits in the lowest few kilometres"  },
+    { x: 52, y: 14, side: "left", label: "Effectively nothing above", note: "The column has a top, which is why an atmosphere has a finite mass at all"  },
+    { x: 82, y: 22, side: "left", label: "Polyphemus", note: "The parent body sets the tides and the heat, not the air's weight" }
+  ]}
+  figNo="02"
+  caption="An atmosphere is a weight, not a volume. Whatever pressure you feel at the ground is the mass of the column overhead pressing down on every square metre — so pressure, area and gravity are enough to weigh a world's entire sky. Do that for Pandora and apply canon's own composition, and the carbon inventory that falls out is roughly three hundred times Earth's."
+  tier="inference"
+/>
+
+## The fast loop and the slow one
+
+Carbon on any living world runs two circuits at once, and almost everything interesting comes from the difference in their speeds.
+
+The fast circuit is biology. Photosynthesis pulls carbon out of the air; respiration and decay push it back. On Earth these two flows are enormous — around 120 gigatonnes a year fixed by land plants, most of it returned within months by the plants' own respiration and by the microbes eating what falls. Add the ocean's two-way gas exchange, another ninety-odd gigatonnes each way, and something like two hundred gigatonnes of carbon crosses in and out of the atmosphere every year.
+
+Against a reservoir of 875, that is a residence time of about four years. The air's carbon is completely replaced within a presidential term.
+
+Now look at what those vast flows actually *accomplish*. Gross uptake: 120. Plant respiration back out: 60. Microbial decay of everything that fell: 57. Net retained by the land, after all that: two or three gigatonnes. The gross flows are forty times larger than the net result, and the net result is what determines the atmosphere's future.
+
+This is the structural fact that makes carbon accounting hard and worth doing. You are trying to measure a small difference between two huge, noisy, seasonally swinging quantities. It is like weighing a letter by weighing a truck with and without it. But that small difference is the entire story, because it is the only part that accumulates.
+
+<ElementCycleTracer caption="The same audit run on all four elements. Watch the top row as you switch: carbon, nitrogen and sulfur each have an atmospheric reservoir — a fast, globally mixed buffer any organism anywhere can draw on. Phosphorus does not, and by the time we reach it that single missing row will have consequences for an entire biosphere." />
+
+The slow circuit is geology, and it is tiny. Some fraction of the carbon that life fixes never gets eaten: it sinks, gets buried in sediment, and is compressed into rock. Earth buries something like two-tenths of a gigatonne of carbon a year this way — a rounding error against the fast loop's two hundred. Volcanoes and metamorphism return roughly the same amount, exhaling carbon that was buried tens of millions of years earlier.
+
+Two-tenths of a gigatonne a year, against a sedimentary carbonate reservoir north of sixty million gigatonnes. Residence time: hundreds of millions of years.
+
+And here is the point of separating them. The fast loop is huge and nearly balanced, so it can shuffle carbon around quickly but cannot change the totals. The slow loop is minuscule and *not* required to balance in the short run, so it sets where the totals end up over millions of years. Climate on geological timescales is decided by the small circuit, not the large one.
+
+<WhatThisMeans title="The transferable habit">
+When you meet a claim about a planetary system, sort the flows by whether they *shuffle* or *accumulate*. Photosynthesis and respiration shuffle: enormous, nearly cancelling, unable to move the long-run total. Burial and outgassing accumulate: tiny, unbalanced, decisive. Most confused arguments about the carbon cycle come from citing a shuffling flux as though it settled an accumulating question — "plants take up far more CO₂ than humans emit" is true and irrelevant for exactly this reason. Ask which circuit a number belongs to before you let it carry any weight.
+</WhatThisMeans>
+
+<DiagramFigure
+  src="/images/chapters/biogeochemical-cycles/fig-03-fast-loop-slow-loop.webp"
+  alt="Two nested circuits drawn as flowing bands: a broad bright inner ring passing through leaf, animal and soil back to the air, and a vastly wider faint outer ring descending through seabed sediment into layered rock and rising again through a distant volcano"
+  labels={[
+    { x: 47, y: 22, side: "right", label: "Fast loop: the air", note: "About 200 Gt C a year crosses in and out on Earth; τ ≈ 4 years"  },
+    { x: 66, y: 45, side: "left", label: "Fixed, then returned", note: "Photosynthesis and respiration nearly cancel — huge flows, almost no net"  },
+    { x: 48, y: 74, side: "right", label: "Burial: the small leak", note: "Around 0.2 Gt C a year escapes the fast loop into sediment"  },
+    { x: 85, y: 63, side: "left", label: "Degassing returns it", note: "Volcanic and metamorphic release closes the slow circuit after 10⁸ years" }
+  ]}
+  figNo="03"
+  caption="Two circuits, one element. The bright inner loop is biology: gigantic, fast, and almost exactly self-cancelling. The faint outer loop is geology: a few hundredths its size, running on hundreds of millions of years, and the only one of the two that decides what a planet's air is made of."
+  tier="real_science"
+/>
+
+## The thermostat that should have eaten it
+
+There is a machine on Earth that removes carbon dioxide from the air, and its most remarkable property is that it works harder when the planet is warmer.
+
+Rain dissolves a little CO₂ and becomes a weak acid. That acid falls on rock. Where the rock is silicate — most of a continent's crust — the acid slowly takes it apart, and the products wash down rivers to the sea as dissolved calcium and bicarbonate. Marine organisms take those ions and build carbonate shells. The shells sink. Over millions of years, the carbon that started in the air ends up as limestone on the seafloor, and eventually gets subducted, cooked, and breathed back out by volcanoes.
+
+That closes the loop, and by itself it is only a loop. What makes it a thermostat is the temperature dependence. Chemical reactions run faster when warm, and a warmer world also runs a more vigorous water cycle with more rain flowing over more rock. So <GlossaryTerm slug="silicate-weathering">silicate weathering</GlossaryTerm> accelerates as the planet heats — pulling down more CO₂, thinning the greenhouse, and cooling it back. Let the planet cool and weathering slows, volcanic CO₂ accumulates unopposed, and the greenhouse thickens again.
+
+A <GlossaryTerm slug="negative-feedback">negative feedback</GlossaryTerm> with no thermostat in it. Nothing measures the temperature; nothing decides anything. The regulation is a property of the chemistry.
+
+<CarbonateSilicateThermostat caption="Drive the sun from its faint early value to today's and watch the two lines diverge. A bare rock tracks the star straight from frozen to scorched. A world with the weathering feedback holds near liquid-water temperatures the whole way — and does it by parking at high CO₂ when the sun is faint, which is exactly the resolution of the faint young sun paradox." />
+
+This is not a speculative mechanism. It is the accepted answer to the <GlossaryTerm slug="faint-young-sun-paradox">faint young sun paradox</GlossaryTerm> — the awkward fact that the early Sun was some twenty-five to thirty percent dimmer than today, cold enough to freeze Earth's oceans solid, and yet the geological record shows liquid water and life throughout. The <GlossaryTerm slug="carbonate-silicate-cycle">carbonate–silicate cycle</GlossaryTerm> held the planet in the habitable band by letting CO₂ pile up under a weak sun and drawing it down as the sun brightened.
+
+Now bring that machine to Pandora and notice what it does to our audit.
+
+Weathering rate depends on temperature, on rainfall, and on the CO₂ pressure driving the acid. Pandora, from everything canon shows, is warm and wet essentially everywhere: rainforest across enormous areas, no depicted dry season, persistent cloud and fog. And its CO₂ pressure is not slightly elevated but roughly four hundred times Earth's. Every single dial that accelerates silicate weathering is turned up hard.
+
+Which means Pandora's atmospheric carbon should be draining fast. Even on Earth, with its far gentler forcing, the weathering feedback relaxes a carbon perturbation on a timescale of a hundred thousand to a million years. Load the dials the way Pandora loads them and the drawdown time gets shorter, not longer.
+
+Canon's biosphere has been chemically stable for twelve million years. That is at least ten thermostat time-constants, and plausibly a hundred.
+
+<Callout variant="warning" title="Paradox one, stated precisely">
+For 285,000 gigatonnes of airborne carbon to sit unchanged for twelve million years on a warm, wet, tectonically active world, the return flux has to match the weathering drawdown almost exactly, continuously, for the whole span. On Earth that return flux — volcanic and metamorphic degassing — runs about two-tenths of a gigatonne of carbon a year. Pandora's would need to be very much larger, sustained, and stable.
+
+Canon never gives a number. It establishes vigorous volcanism (<ChapterRef slug="what-keeps-pandora-volcanically-alive" titleOnly /> works out where the heat to drive it comes from) and it establishes crustal activity (<ChapterRef slug="pandoran-plate-tectonics" titleOnly /> asks what regime that activity belongs to). What it never states is a rate, in tonnes per year, for anything coming out of the ground.
+
+So this paradox is not a contradiction. It is an unpaid invoice: a specific, quantifiable flux that canon requires and does not supply. It could be settled with one sentence. That is a fair place to leave it — and it is a much better position than the sulfur one, which we will get to.
+</Callout>
+
+<DiagramFigure
+  src="/images/chapters/biogeochemical-cycles/fig-04-rain-eats-the-rock.webp"
+  alt="A close naturalist study of rainwater running down a fractured boulder face, the mineral surface visibly pitted and etched along the water's paths, dissolved material clouding the runoff at the base where it joins a small stream"
+  labels={[
+    { x: 44, y: 30, side: "right", label: "Carbonic acid arrives", note: "Rain plus dissolved CO₂ — a weak acid, and the only one that matters at scale"  },
+    { x: 36, y: 55, side: "right", label: "Etched channels", note: "Silicate minerals taken apart; the CO₂ is consumed in the reaction itself"  },
+    { x: 72, y: 44, side: "left", label: "Unaltered rock", note: "Weathering is surface-limited, which is why exposure and uplift set the rate"  },
+    { x: 48, y: 88, side: "right", label: "Load bound for the sea", note: "Dissolved calcium and bicarbonate — the carbon's route into limestone" }
+  ]}
+  figNo="04"
+  caption="The slowest important reaction on a rocky planet. Rain carrying dissolved carbon dioxide is mildly acidic, and given enough time it takes silicate rock apart — carrying the pieces to the sea and the carbon into stone. Warm the world and this speeds up, which is the entire reason a planet can hold a climate steady for billions of years with nothing supervising it."
+  tier="real_science"
+/>
+
+## The most abundant thing that nobody can have
+
+Nitrogen makes up over half of Pandora's air and nearly four-fifths of Earth's. It is, by a wide margin, the most abundant element available to any organism standing anywhere on either world.
+
+It is also, on both worlds, one of the two things most likely to be limiting how fast anything grows.
+
+That combination sounds like a contradiction and it is the whole lesson. Nitrogen gas is two nitrogen atoms held together by a triple bond, and that bond costs 941 kilojoules per mole to break — among the strongest in ordinary chemistry. So the atmosphere is not a nitrogen supply. It is a nitrogen vault: full to the ceiling, sitting in the open, and effectively sealed. Every organism on Earth is standing in a room that is four-fifths food it cannot eat.
+
+Life found one key. A single enzyme, <GlossaryTerm slug="nitrogenase">nitrogenase</GlossaryTerm>, can pry that bond apart, and it is a spectacularly expensive tool to own. The reaction consumes about sixteen ATP per molecule of nitrogen reduced — an enormous metabolic bill. Worse, the iron-and-molybdenum cluster at the enzyme's heart is destroyed permanently by oxygen, so an organism that wants to run it must also build and maintain an oxygen-free compartment to run it in, on an oxygen-bearing planet.
+
+This is why <GlossaryTerm slug="nitrogen-fixation">nitrogen fixation</GlossaryTerm> is rare, patchy, and always somebody's expensive specialisation rather than a general capability. And it is why nitrogen limits growth in most ecosystems: not because it is scarce, but because it is *costly*. Scarcity and cost feel similar from the outside and behave completely differently. A scarce resource runs out. A costly one is abundant forever and available only to whoever can pay.
+
+<ScientificNote title="The rest of the loop, and where it leaks">
+Fixation is only the entrance. Once nitrogen is in biological form it cycles fast: taken up, built into protein, released again when tissue dies, converted by soil microbes from ammonium up through nitrite to nitrate, taken up again. Earth moves well over a thousand teragrams of nitrogen a year through that internal churn, against fixation inputs of a few hundred.
+
+The exit is <GlossaryTerm slug="denitrification">denitrification</GlossaryTerm>: in oxygen-poor soils and sediments, microbes reduce nitrate back to nitrogen gas and return it to the vault. Without that exit, reactive nitrogen would accumulate until ecosystems drowned in their own fertility. With it, the cycle closes.
+
+The exit leaks, though, at one intermediate step — some nitrogen escapes as N₂O, which is both a strong greenhouse gas and an attacker of stratospheric ozone. The mechanism that keeps the nitrogen cycle balanced is thus also a serious emission source, which is a good illustration of how rarely these cycles offer a clean win.
+
+The human comparison is worth having in mind. Industrial fixation via the Haber–Bosch process now runs at 120 to 150 teragrams of nitrogen a year, which matches or exceeds everything biology fixes on all the land on Earth. We built a second nitrogen cycle and it is the same size as the original.
+</ScientificNote>
+
+Now Pandora, where this gets uncomfortable.
+
+Canon shows a biosphere of extraordinary productivity: forests with canopies well over a hundred metres, trees whose trunks are tens of metres across, standing biomass that on any reasonable reckoning must exceed Earth's terrestrial vegetation by a large multiple. Every gram of that is protein and nucleic acid, and every gram of protein needs fixed nitrogen.
+
+And canon names no fixer. Not one organism, not one mechanism, not one mention of nodules or symbionts or a nitrogen-processing tissue anywhere in the published record. There is also no mention of soil fertility, no fertiliser, no agriculture, no nutrient limitation of any kind — the Na'vi are gatherers and hunters, and nothing in the material describes them managing soil at all.
+
+Two honest observations about that gap. First, lightning is a real abiotic route — the plasma in a discharge channel is hot enough to break N₂ directly — and Pandora has the storms for it, though Earth's lightning contributes only five to ten teragrams a year, a small share of the total. Second, the root network canon *does* describe is repeatedly said to carry signals, memory, and electrochemical traffic. It is never said to carry nutrients. Those are very different claims and fans routinely merge them; <ChapterRef slug="the-wood-wide-web" titleOnly /> deals with what such a network can actually do.
+
+<DiagramFigure
+  src="/images/chapters/biogeochemical-cycles/fig-05-the-bond-that-holds.webp"
+  alt="Two nitrogen atoms rendered as dark spheres bound by three tight luminous bands of light, held within the cradle of a protein's interior where a small cluster of iron and molybdenum atoms sits close by, everything else in deep shadow"
+  labels={[
+    { x: 46, y: 41, side: "right", label: "Three bonds, 941 kJ/mol", note: "The strongest bond in ordinary air — this is why nitrogen is unavailable"  },
+    { x: 65, y: 62, side: "left", label: "Iron–molybdenum cofactor", note: "Where nitrogenase does the work; destroyed permanently by oxygen"  },
+    { x: 22, y: 30, side: "right", label: "Enclosing protein", note: "Also an oxygen-free compartment — part of the enzyme's real cost"  },
+    { x: 60, y: 78, side: "left", label: "Sixteen ATP per molecule", note: "The metabolic bill that keeps fixation a specialisation, not a general skill" }
+  ]}
+  figNo="05"
+  caption="The strongest ordinary bond in the air, and the only tool in biology that opens it. Breaking N≡N costs 941 kilojoules per mole; the enzyme that manages it spends sixteen ATP a go and is wrecked by oxygen. Nitrogen is not scarce anywhere. It is expensive everywhere — and that is a different constraint with different consequences."
+  tier="real_science"
+/>
+
+## The element with no way home but stone
+
+Three of our four elements have an atmospheric reservoir. Phosphorus does not, and everything about phosphorus follows from that absence.
+
+There is no stable phosphorus gas at planetary surface conditions. None. So while carbon can be pulled from the air by any leaf and nitrogen can be pulled from the air by anything willing to pay nitrogenase's bill, phosphorus has exactly one entrance to the biosphere — the chemical weathering of phosphate minerals in rock — and exactly one exit, sinking into marine sediment.
+
+That single structural difference converts a nutrient question into a geological one. A world's long-term fertility depends on its capacity to lift buried rock back into the reach of rain. Uplift, erosion, exposure: the machinery <ChapterRef slug="pandoran-plate-tectonics" titleOnly /> spent a chapter trying to identify. If that machinery stops, phosphorus keeps draining to the seafloor and never comes back, and the biosphere thins out no matter how much sunlight and water and carbon it has.
+
+Life's response to this constraint is not to find more phosphorus but to stop losing any. Old tropical ecosystems on Earth run phosphorus at almost unbelievable efficiency — mycorrhizal networks intercepting it, phosphatase enzymes scavenging it from dead tissue before it can wash away, whole nutrient economies operating in the canopy rather than the soil so a released phosphate atom is recaptured metres above the ground. <GlossaryTerm slug="canopy-soil">Canopy soil</GlossaryTerm> is not a curiosity; it is a phosphorus-retention strategy.
+
+<Callout variant="science" title="Proximate and ultimate limits">
+Which nutrient actually limits an ecosystem depends on the timescale you ask about, and the answer flips.
+
+Over a season, nitrogen usually limits: surface waters run out of usable nitrogen quickly and growth stops. But a nitrogen shortfall creates an opportunity — an unexploited niche for organisms that can fix it — and given time, fixers move in and close the gap, driving the system toward the <GlossaryTerm slug="redfield-ratio">Redfield ratio</GlossaryTerm> of roughly 106 carbon to 16 nitrogen to 1 phosphorus that marine life actually needs.
+
+A phosphorus shortfall offers no such escape. Nobody can fix phosphorus from the air, because there is nothing in the air to fix. So over thousands of years phosphorus becomes the <GlossaryTerm slug="limiting-nutrient">ultimate limiting nutrient</GlossaryTerm>, and nitrogen turns out to be the proximate one — the thing that bites first, not the thing that sets the ceiling.
+
+The clean experimental demonstration is a lake. In the 1970s David Schindler fertilised whole Canadian lake basins: carbon and nitrogen produced little, and adding phosphorus produced spectacular blooms of nitrogen-fixing cyanobacteria that then drew their own nitrogen from the air. The system supplied its own nitrogen once phosphorus permitted it to. That result is why phosphorus, not nitrogen, is what freshwater regulation targets.
+</Callout>
+
+For Pandora the phosphorus gap in canon is the largest of the four and the least discussed. A forest of that productivity standing on ground that has been forest for twenty thousand years and more has a phosphorus budget that must be either extraordinarily tight or continuously resupplied. Volcanic ash is a genuinely plausible resupply — tephra weathers fast and carries apatite, and Pandora has no shortage of eruptions — but ash falls locally and episodically, and a planet-wide budget cannot be balanced by a regional subsidy without someone doing the arithmetic. Nobody has.
+
+<DiagramFigure
+  src="/images/chapters/biogeochemical-cycles/fig-06-no-way-back-but-stone.webp"
+  alt="A tall cross-section from mountain to seafloor: rain weathering exposed rock at the summit, a river carrying pale mineral load down through forest, the material settling into layered marine sediment at the bottom, and a faint slow arc of uplift returning the deep layers to the surface on the far side"
+  labels={[
+    { x: 13, y: 17, side: "right", label: "The only entrance", note: "Weathering of phosphate minerals in exposed rock — there is no other way in"  },
+    { x: 55, y: 47, side: "right", label: "Held as tightly as possible", note: "Old forests recapture phosphate before it can reach the river"  },
+    { x: 68, y: 68, side: "left", label: "The only exit", note: "Burial in marine sediment, effectively permanent on ecological timescales"  },
+    { x: 74, y: 20, side: "left", label: "Nothing crosses here", note: "Phosphorus has no gas phase, so the sky offers no shortcut at all"  },
+    { x: 19, y: 76, side: "right", label: "Uplift closes the circuit", note: "Only tectonics returns buried rock to the rain — fertility is a crustal property" }
+  ]}
+  figNo="06"
+  caption="Phosphorus has no gas phase, so it has no shortcut. It enters life only where rain reaches rock and leaves only where sediment buries it — which means the long-run fertility of any world is set by whether its crust can lift buried stone back into the weather. Fertility is a tectonic property that happens to look biological."
+  tier="real_science"
+/>
+
+## Two days
+
+Now the fourth element, and the place where the audit stops being an audit and becomes a finding.
+
+Canon is specific about hydrogen sulfide in Pandora's air, and it needs the gas for two separate jobs. The careful sources place it below one percent of the atmosphere. And the films need it lethal — part of why an unmasked human collapses in twenty seconds is that H₂S jams the final enzyme of the respiratory chain, the same target cyanide attacks. <ChapterRef slug="whats-in-the-air" titleOnly /> follows that mechanism down to the mitochondrion. Both jobs are load-bearing: the concentration and the lethality are each doing narrative work.
+
+Take our instrument to it.
+
+The reservoir first. Below one percent of an atmosphere of 4.8 × 10¹⁸ kilograms is, in sulfur terms, something like 4 × 10⁷ teragrams of sulfur suspended in the sky. Large, but so far only a number.
+
+Now the sink, and this is where it turns. Hydrogen sulfide is a *reduced* gas, and Pandora's air is eighteen percent oxygen. Reduced gases do not last in oxidising atmospheres. Hydroxyl radicals — which any sunlit, oxygen-bearing, water-bearing atmosphere manufactures continuously — strip H₂S apart within days, and the chain runs on to sulfur dioxide and then to sulfuric acid aerosol. The measured tropospheric lifetime of H₂S on Earth is one to three days.
+
+Call it two.
+
+`F_source = M / τ = (4 × 10⁷ Tg S) / (2/365 yr) ≈ 7 × 10⁹ Tg S/yr`
+
+Earth's volcanoes, all of them, emit about 20 teragrams of sulfur a year.
+
+The requirement is roughly four hundred million times that.
+
+<SulfurSourceGap caption="The gap, on the only scale that fits it. The teal markers are real fluxes: Earth's volcanoes, peak 1980s industrial emissions, and a deliberately generous allowance of a hundred times Earth's volcanism for a tidally heated moon. The demand from canon's stated concentration sits eight orders of magnitude to the right of all of them. Both dials are yours — thin the air, or slow the chemistry, and watch what each repair costs." />
+
+I want to be careful about what this does and does not show, because a number that large invites showing off, and showing off is not the point.
+
+It does not show that canon is stupid. It shows that two independently reasonable statements — *the air contains a fraction of a percent hydrogen sulfide* and *the air contains eighteen percent oxygen* — are chemically incompatible at that ratio, and that nobody noticed because the incompatibility only appears when you multiply the concentration by an atmospheric mass and divide by a photochemical lifetime. None of those three steps is obvious. All three are required.
+
+Nor is it a small overshoot that a generous assumption might absorb. Grant a moon a hundred times Earth's volcanic sulfur output — genuinely generous, and not unreasonable for a body heated the way <ChapterRef slug="what-keeps-pandora-volcanically-alive" titleOnly /> describes — and you have closed a factor of a hundred out of four hundred million. Sustaining anything near the required rate would also strip the moon's entire mantle sulfur inventory in a geological eyeblink, and bathe the surface in sulfuric acid rain that no canopy would survive.
+
+So something in the stated numbers has to give. There are exactly two places it can give, and both are visible on the two dials above.
+
+**Lower the concentration.** Drop the sulfide from one percent to a few parts per million and the required flux falls into a range a volcanic world could plausibly sustain. The books close. But watch the lethality readout while you do it: below a few hundred parts per million, hydrogen sulfide no longer drops a human in seconds. You have fixed the chemistry by breaking the toxicology, and canon needs both.
+
+**Lengthen the lifetime.** If some unrecorded feature of Pandoran air scavenged hydroxyl radicals, H₂S could persist longer and need less replacing. But the lifetimes required are measured in hundreds of thousands of days, not days, and no known atmospheric chemistry does that in the presence of that much oxygen.
+
+Which leaves the repair that actually works, and canon has left the door open for it: the high sulfide is **local**. Volcanic vents, fumarole fields, sulfurous basins, the Ashlands — regions where the gas is genuinely concentrated and genuinely lethal, sitting inside a global atmosphere carrying only traces. That is exactly how Earth's volcanic regions behave. It preserves every scene canon needs, it costs nothing narratively, and it makes the sulfur budget close. It requires giving up only one thing: the idea that the whole planet's air is at that concentration.
+
+<WhatThisMeans title="What the audit was for">
+This is the payoff of the instrument, and it generalises well past Pandora.
+
+A concentration is never just a concentration. Combined with a destruction rate it becomes a statement about a source — and the source is often the thing you actually wanted to know. This is not a trick for checking science fiction. It is one of the primary methods in astrobiology: when a telescope finds a reduced gas in an oxidising exoplanet atmosphere, the reasoning that makes it exciting is precisely this reasoning. Methane in an oxygen atmosphere should be destroyed in a decade or two, so if it is there, something is replenishing it right now. That is why atmospheric disequilibrium is treated as a biosignature at all.
+
+The chemistry that makes Pandora's sulfide a bookkeeping problem is the same chemistry that would make it, on a real exoplanet, the most interesting measurement of the decade.
+</WhatThisMeans>
+
+<DiagramFigure
+  src="/images/chapters/biogeochemical-cycles/fig-07-two-days-in-the-air.webp"
+  alt="A sulfurous plume rising from a dark volcanic fissure and dispersing into a bright oxygen-rich sky, the gas visibly breaking apart partway up into pale scattered particles and thin acid haze that drifts down again"
+  labels={[
+    { x: 26, y: 88, side: "right", label: "The source", note: "A vent, running now — nothing else can supply a gas this short-lived"  },
+    { x: 29, y: 55, side: "right", label: "Still coherent", note: "Dense reduced gas, moments old, not yet reached by hydroxyl"  },
+    { x: 38, y: 27, side: "right", label: "Coming apart", note: "Oxidation to SO₂ and onward to sulfuric acid; one to three days in total"  },
+    { x: 62, y: 18, side: "left", label: "Sink, not store", note: "Whatever the sky holds of H₂S measures the source rate, not an inventory" }
+  ]}
+  figNo="07"
+  caption="The sink that empties the sky. In sunlit oxygen-bearing air, hydroxyl radicals take hydrogen sulfide apart within a day or two and hand the sulfur on toward sulfuric acid. Whatever a planet's air holds of a gas this short-lived is not a store — it is a measurement of how hard something underground is working right now."
+  tier="real_science"
+/>
+
+## The world that ran out of air
+
+In 1991, eight people sealed themselves inside a glass building in the Arizona desert and tried to live in a closed ecosystem for two years.
+
+Biosphere 2 was a hectare and a quarter of engineered biomes under sealed glass — rainforest, savanna, mangrove, ocean, farm — and its purpose was to see whether a small world could be made to keep its own books. It failed in a specific and enormously instructive way.
+
+The oxygen started falling. Slowly at first, then unmistakably: 20.9 percent at the start, 14.5 percent sixteen months in, which is the equivalent of living at four thousand metres of altitude. The crew were breathing badly and sleeping worse, and eventually oxygen had to be injected from outside — which ended the experiment as a closure test, whatever else it achieved.
+
+Here is what makes it a lesson rather than an anecdote. Everyone could see the oxygen leaving. Nobody could find the carbon dioxide it should have become.
+
+Because that is the constraint: if soil microbes were consuming oxygen by respiring organic matter, then every molecule of oxygen consumed should have appeared as a molecule of CO₂. Oxygen fell by a great deal. CO₂ rose by far less than it should have. Mass balance said flatly that a carbon sink existed which nobody had accounted for, and the discrepancy was too large to argue with.
+
+It took until 1994 to find it, and the answer was the building. Biosphere 2's structure contained a great deal of exposed, unsealed concrete, and curing concrete absorbs carbon dioxide, converting calcium hydroxide into calcium carbonate. The walls were eating the CO₂. Roughly 750 kilomoles of it. Soil respiration was pulling oxygen down and the concrete was quietly removing the evidence, so the loop stayed broken while looking, from the inside, like nothing was wrong at all.
+
+<Callout variant="science" title="Why this is the best possible companion to the sulfur result">
+Biosphere 2 and Pandora's hydrogen sulfide are the same problem seen from opposite ends.
+
+At Biosphere 2 the reservoirs were measured, the books refused to close, and the residual pointed to a sink nobody had thought to include — a physical structure quietly reacting with the atmosphere. The mismatch was the instrument that found it.
+
+On Pandora the reservoir is stated, the sink is known from chemistry, and the books refuse to close in the other direction — pointing to a source that cannot exist at the required scale. The mismatch is again the instrument.
+
+In neither case does the arithmetic tell you the answer. It tells you that an answer is missing, and roughly how large it has to be. That is what makes it worth doing on any system you cannot see all of: a planet, a sealed building, a spacecraft's life support. NASA's station systems recover about ninety-eight percent of their water and are still, emphatically, not closed — because in closure accounting the last two percent is the whole problem.
+</Callout>
+
+And the deep reason closure matters at all, for Biosphere 2 and for Pandora and for us, is that planets are effectively sealed. Earth gains perhaps forty thousand tonnes a year of meteoritic dust and loses roughly a hundred thousand tonnes to atmospheric escape, mostly hydrogen and helium. Against an atmospheric mass of 5 × 10¹⁸ kilograms, that is a leak of about one part in a hundred trillion per year.
+
+Nothing arrives. Nothing leaves. Recycling is not a virtue on a planet — it is the only available option.
+
+<DiagramFigure
+  src="/images/chapters/biogeochemical-cycles/fig-08-the-sealed-world.webp"
+  alt="A cutaway of a great sealed glass structure at dusk containing dense vegetation, its steel frame and pale concrete foundations visible below the soil line, faint pale wisps drifting from the dark soil and being absorbed into the bare concrete walls"
+  labels={[
+    { x: 70, y: 26, side: "left", label: "Sealed envelope", note: "Glass and steel: the closure the experiment was built to test"  },
+    { x: 76, y: 40, side: "left", label: "The oxygen consumers", note: "Dense biomass and rich soil respiring faster than photosynthesis replaced it"  },
+    { x: 58, y: 64, side: "right", label: "Soil releases CO₂", note: "Every molecule of O₂ consumed should have appeared here as carbon dioxide"  },
+    { x: 44, y: 82, side: "right", label: "Unsealed concrete", note: "The unaudited sink: curing concrete absorbed roughly 750 kilomoles of CO₂" }
+  ]}
+  figNo="08"
+  caption="A hectare of sealed world, and the sink nobody wrote down. Oxygen fell for sixteen months inside Biosphere 2 while the carbon dioxide that should have replaced it never appeared — because the building's own unsealed concrete was absorbing it. The lesson is not that closure is hard. It is that mass balance found the culprit when direct observation could not."
+  tier="real_science"
+/>
+
+## Honest edges
+
+Let me separate what this chapter has established from what it has only argued.
+
+The science is not in question. Residence times, the two carbon circuits, the weathering thermostat, the nitrogen triple bond and nitrogenase's cost, phosphorus's missing gas phase, hydroxyl oxidation of reduced sulfur, the Biosphere 2 post-mortem — all of that is ordinary, measured earth-system science, tested on a planet we can put instruments on.
+
+What canon states is much narrower: an atmospheric composition, a surface pressure, a radius and a gravity, vigorous volcanism, abundant water, an enormously productive biosphere, roughly twelve million years of biological stability, and a funeral rite that returns bodies to the roots. That is close to all of it.
+
+Every reservoir mass in this chapter is my arithmetic from those inputs. Every flux is either an Earth measurement or an inference, because canon supplies no fluxes whatsoever. The sulfur result is the firmest conclusion here, and it rests on canon's own stated concentration meeting canon's own stated oxygen level — but it would dissolve entirely if the intended reading was always that high sulfide is local rather than global, which the text permits and never says.
+
+<ConfidenceMeter
+  classification={{ canon_pct: 10, inference_pct: 22, speculation_pct: 5, real_science_pct: 63 }}
+/>
+
+<OpenQuestions
+  title="What the record does not contain"
+  items={[
+    { question: "What is Pandora's volcanic outgassing rate?", answer: "Unstated, and it is the single most valuable missing number in the whole chapter. It would simultaneously address the carbon paradox (by supplying the return flux that balances weathering drawdown) and bound the sulfur one (by showing what the mantle can actually deliver). Canon establishes eruptions as events and never as rates. One figure in tonnes per year, with a CO₂-to-sulfur ratio, would close more of this audit than anything else."  },
+    { question: "How does anything on Pandora fix nitrogen?", answer: "No organism, tissue, symbiosis or mechanism is named anywhere. For a biosphere whose standing biomass plausibly exceeds Earth's terrestrial vegetation several times over, that is a large silence. Lightning is a real partial route and on Earth supplies only five to ten teragrams a year. The gap is not that the answer is implausible — it is that no answer has been offered."  },
+    { question: "Where does Pandora's phosphorus come from?", answer: "Also unstated, and structurally the hardest of the gaps because phosphorus has no atmospheric shortcut. Forests standing on the same ground for twenty thousand years need either extraordinary retention efficiency or continuous mineral resupply. Volcanic tephra is the most plausible candidate and is episodic and local; nobody has checked whether it balances at planetary scale."  },
+    { question: "Is the high hydrogen sulfide global or local?", answer: "Canon reads as global and works only as local. If the stated fraction applies to the whole atmosphere, the required source flux exceeds any conceivable volcanism by eight orders of magnitude. If it describes volcanic regions — vents, fumarole fields, sulfurous basins — inside a globally trace-level atmosphere, every scene still works and the budget closes. The text never distinguishes the two readings."  },
+    { question: "Does the root network move matter, or only signals?", answer: "Official sources describe electrochemical signalling, memory and sensory transmission. They never describe bulk transport of carbon, nitrogen or phosphorus across distance. Those are very different claims with very different costs, and they are routinely conflated. If the network did redistribute nutrients at scale, the phosphorus problem would look different — but nothing states that it does."  },
+    { question: "How caustic is the ocean, in numbers?", answer: "Secondary material describes Pandoran seawater as somewhat alkaline or caustic, which is interesting because an atmosphere at that CO₂ pressure should acidify surface water severely. Reconciling the two requires a very high total alkalinity, which is chemically possible and would need stating. No dissolved inorganic carbon, alkalinity or pH figure exists anywhere in the record."  }
+  ]}
+/>
+
+## Borrowed, and spent
+
+Go back to the body in the roots.
+
+The audit is finished and the verdict on the Na'vi precept is not the one I expected when I started. About matter, they are exactly right — not poetically, not approximately, but as a correct statement of physics. Every carbon atom in that body was borrowed. It had been in other bodies before, many times, and it will be in others after. The planet is a closed system to a precision of one part in a hundred trillion, so there is no other way it could work. Nothing is consumed. Nothing is used up. The books close, always, on atoms.
+
+And about energy they are wrong, in a way that is worth being precise about, because the error is the most interesting thing in the sentence.
+
+Energy is not borrowed. Energy is spent.
+
+It arrives as sunlight — photons from two stars, few in number, each carrying a lot of energy, which is to say arriving in a highly ordered, low-entropy form. A leaf captures some. It does work: builds sugar, then wood, then a body, then a thought. And at every single one of those transfers most of it degrades into heat, and the heat radiates away into space as infrared: many photons, each feeble, thoroughly disordered.
+
+That flow runs one way and only one way. The atoms make a ring; the energy makes an arrow. And the arrow is what pays for everything — all the order, all the structure, all the improbable persistence of a forest, is funded by the gap between the sunlight coming in and the heat going out. A biosphere does not keep its entropy low by avoiding entropy. It keeps it low by <GlossaryTerm slug="entropy-export">exporting the entropy outward</GlossaryTerm>, continuously, forever.
+
+<MatterLoopEnergyArrow caption="Follow the atom and it comes home; follow the joule and it never does. Both walk the same five stations — air, leaf, animal, soil, decomposer — but only one of them completes the circuit. The other arrives as ordered sunlight, loses most of itself at every hand-off, and leaves as heat. The ring and the arrow are the same diagram, read twice." />
+
+Which means the forest above that grave is not a system that has learned to need nothing. It is a system that needs one thing absolutely and continuously, and it is not matter. Pandora could recycle its atoms perfectly for another twelve million years and still be dead within days if the light went out.
+
+Matter is only borrowed, and one day you have to give it back. That part is exact.
+
+The energy was never a loan. It was a gift that arrives every morning, is spent by evening, and does not accumulate — and the debt the Na'vi describe so carefully is the smaller of the two obligations a living world is under.
+
+<RelatedChapters slugs={["whats-in-the-air", "pandoran-water-and-weather", "pandoran-plate-tectonics", "a-real-living-planet"]} />
+
+<SourceList />

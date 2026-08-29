@@ -28,12 +28,16 @@
     "pipes",
     "valves",
     "pumps",
-    "photographic look"
+    "photographic look",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "The aerostat is a living creature: a soft translucent bell with trailing tentacles and a woven gondola on rigging lines — no rigid hull, no propellers, no engines, and no mechanical ballast tank, pipe, valve or pump anywhere. The bell above must read taut and full, consistent with a craft that is rising. The mood is deliberate and routine, not panicked jettison. Cool Pandora palette with the water as the single bright value.",
+  "consistency_notes": "The aerostat is a living creature: a soft translucent bell with trailing tentacles and a woven gondola on rigging lines \u2014 no rigid hull, no propellers, no engines, and no mechanical ballast tank, pipe, valve or pump anywhere. The bell above must read taut and full, consistent with a craft that is rising. The mood is deliberate and routine, not panicked jettison. Cool Pandora palette with the water as the single bright value.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no propellers, no engines, no rigid airship hull, no pipes or valves or pumps or metal tanks, no waterfall landscape, no 3D-render or photographic look, no cartoon style, no lens flare",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": [
     "apps/web/public/images/chapters/how-the-wind-traders-navigate-a-planet/fig-00-cover.png"
   ]

@@ -10,7 +10,7 @@
   "palette": "Near-black volcanic glass with cool cyan-white specular highlights on its face and edge; deep indigo surroundings; a little cool grey dust.",
   "style": "Painterly naturalist specimen plate, a close material study, precise and reverent.",
   "detail_level": "Extremely high on the flake's rippled face and its thinning edge; everything else soft and dark.",
-  "composition": "The flake laid diagonally across the frame with the strike point in the upper area and the thin edge along the lower, a broad region of plain dark surface at the upper right kept clear for overlaid callouts.",
+  "composition": "The flake laid diagonally across the frame with the strike point in the upper area and the thin edge along the lower, a broad region of plain dark surface at the upper right kept clear framed by deep negative space.",
   "exclude": [
     "text",
     "letters",
@@ -25,10 +25,14 @@
     "rulers",
     "crystal facets",
     "flat straight fracture faces",
-    "photographic look"
+    "photographic look",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "The fracture face must be SMOOTH and CURVED with concentric ripples — never flat, faceted or crystalline. The edge should thin to near invisibility. Glass is near-black with cool highlights; no warm light in this figure at all.",
+  "consistency_notes": "The fracture face must be SMOOTH and CURVED with concentric ripples \u2014 never flat, faceted or crystalline. The edge should thin to near invisibility. Glass is near-black with cool highlights; no warm light in this figure at all.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no scale bars or rulers, no crystal facets or flat fracture planes, no warm firelight, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

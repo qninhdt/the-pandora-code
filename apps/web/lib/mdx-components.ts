@@ -3,6 +3,7 @@ import { AbyssalSignalStack } from "@/components/content/abyssal-signal-stack";
 import { AdaptationTimescaleLadder } from "@/components/content/adaptation-timescale-ladder";
 import { AerostaticLiftBudget } from "@/components/content/aerostatic-lift-budget";
 import { AirRegimeVisualizer } from "@/components/content/air-regime-visualizer";
+import { AlkalineVentBattery } from "@/components/content/alkaline-vent-battery";
 import { AnatomyPlate } from "@/components/content/anatomy-plate";
 import { AragoniteThresholdDial } from "@/components/content/aragonite-threshold-dial";
 import { AscentHypoxiaProfile } from "@/components/content/ascent-hypoxia-profile";
@@ -31,6 +32,7 @@ import { ClaimAudit } from "@/components/content/claim-audit";
 import { CoastalUpwellingExplorer } from "@/components/content/coastal-upwelling-explorer";
 import { CodaRhythmComparator } from "@/components/content/coda-rhythm-comparator";
 import { ColdLightReaction } from "@/components/content/cold-light-reaction";
+import { ColumnHeightCeiling } from "@/components/content/column-height-ceiling";
 import { CombustionBudgetLab } from "@/components/content/combustion-budget-lab";
 import { Comparison } from "@/components/content/comparison";
 import { CondensationSequenceDial } from "@/components/content/condensation-sequence-dial";
@@ -52,7 +54,9 @@ import { EclipseDayClock } from "@/components/content/eclipse-day-clock";
 import { EclipseSeasonThreader } from "@/components/content/eclipse-season-threader";
 import { EdgeToughnessTradeoff } from "@/components/content/edge-toughness-tradeoff";
 import { ElderMemoryLedger } from "@/components/content/elder-memory-ledger";
+import { ElementCycleTracer } from "@/components/content/element-cycle-tracer";
 import { EntrainmentRangeDial } from "@/components/content/entrainment-range-dial";
+import { ErrorThresholdCeiling } from "@/components/content/error-threshold-ceiling";
 import { EvidenceGradeLadder } from "@/components/content/evidence-grade-ladder";
 import { ExopackFilterBudget } from "@/components/content/exopack-filter-budget";
 import { ExtinctionDiscountExplorer } from "@/components/content/extinction-discount-explorer";
@@ -89,6 +93,8 @@ import { MagmaEnergyLedger } from "@/components/content/magma-energy-ledger";
 import { MagneticCompassExplorer } from "@/components/content/magnetic-compass-explorer";
 import { MantleConvectionRayleigh } from "@/components/content/mantle-convection-rayleigh";
 import { MaskingOrClock } from "@/components/content/masking-or-clock";
+import { MaterialIndexBench } from "@/components/content/material-index-bench";
+import { MatterLoopEnergyArrow } from "@/components/content/matter-loop-energy-arrow";
 import { MoistureRecyclingCascade } from "@/components/content/moisture-recycling-cascade";
 import { MorphogenGradientLab } from "@/components/content/morphogen-gradient-lab";
 import { MycorrhizalMarket } from "@/components/content/mycorrhizal-market";
@@ -102,11 +108,13 @@ import { OpenQuestions } from "@/components/content/open-questions";
 import { OpercularOxygenBudget } from "@/components/content/opercular-oxygen-budget";
 import { OreGenesisRegimeLedger } from "@/components/content/ore-genesis-regime-ledger";
 import { OrganogenesisGate } from "@/components/content/organogenesis-gate";
+import { OriginScenarioScoreboard } from "@/components/content/origin-scenario-scoreboard";
 import { OutgroupPolarityBench } from "@/components/content/outgroup-polarity-bench";
 import { PandoraLightLadder } from "@/components/content/pandora-light-ladder";
 import { PerchedWaterBudget } from "@/components/content/perched-water-budget";
 import { PercolationNetwork } from "@/components/content/percolation-network";
 import { PhotophoreIntensity } from "@/components/content/photophore-intensity";
+import { PigmentSpectrumTuner } from "@/components/content/pigment-spectrum-tuner";
 import { PneumaticBoneBudget } from "@/components/content/pneumatic-bone-budget";
 import { PredatorPreyOscillator } from "@/components/content/predator-prey-oscillator";
 import { PressureDoesNotCrush } from "@/components/content/pressure-does-not-crush";
@@ -122,7 +130,9 @@ import { ReefRugosityProfile } from "@/components/content/reef-rugosity-profile"
 import { RegenerationRace } from "@/components/content/regeneration-race";
 import { ReplayTheTape } from "@/components/content/replay-the-tape";
 import { ReproductiveValueElasticity } from "@/components/content/reproductive-value-elasticity";
+import { ResidenceTimeAudit } from "@/components/content/residence-time-audit";
 import { RespiratoryScrubberDial } from "@/components/content/respiratory-scrubber-dial";
+import { RubiscoErrorLedger } from "@/components/content/rubisco-error-ledger";
 import { SatelliteMassBudget } from "@/components/content/satellite-mass-budget";
 import { ScaleUpChallenge } from "@/components/content/scale-up-challenge";
 import { ScrollSequence } from "@/components/content/scroll-sequence";
@@ -133,11 +143,15 @@ import { ShannonChannel } from "@/components/content/shannon-channel";
 import { SiderealSynodicGearing } from "@/components/content/sidereal-synodic-gearing";
 import { SoilPoreExplorer } from "@/components/content/soil-pore-explorer";
 import { SolventWindowBench } from "@/components/content/solvent-window-bench";
+import { SparMassFractionGate } from "@/components/content/spar-mass-fraction-gate";
 import { StaticMarginTrade } from "@/components/content/static-margin-trade";
+import { StomatalBargainDial } from "@/components/content/stomatal-bargain-dial";
 import { StrataDiversityEngine } from "@/components/content/strata-diversity-engine";
 import { StratigraphicColumnReader } from "@/components/content/stratigraphic-column-reader";
 import { StructureVsBiomassClock } from "@/components/content/structure-vs-biomass-clock";
 import { SuccessionArrestExplorer } from "@/components/content/succession-arrest-explorer";
+import { SugarFreightLine } from "@/components/content/sugar-freight-line";
+import { SulfurSourceGap } from "@/components/content/sulfur-source-gap";
 import { SuperconductorCooldown } from "@/components/content/superconductor-cooldown";
 import { SwarmSteeringField } from "@/components/content/swarm-steering-field";
 import { SymbiontIntegrationMap } from "@/components/content/symbiont-integration-map";
@@ -149,6 +163,7 @@ import { TidalHeatBudget } from "@/components/content/tidal-heat-budget";
 import { TierLegend } from "@/components/content/tier-legend";
 import { Timeline } from "@/components/content/timeline";
 import { TorukFlightEngine } from "@/components/content/toruk-flight-engine";
+import { ToughnessArchitectureLab } from "@/components/content/toughness-architecture-lab";
 import { TowedAerostatPower } from "@/components/content/towed-aerostat-power";
 import { TurnEnvelopeDiagram } from "@/components/content/turn-envelope-diagram";
 import { TwentySecondsTimeline } from "@/components/content/twenty-seconds-timeline";
@@ -157,6 +172,7 @@ import { VentEnergyBudget } from "@/components/content/vent-energy-budget";
 import { VerticalForestDive } from "@/components/content/vertical-forest-dive";
 import { VolatileSourceFingerprint } from "@/components/content/volatile-source-fingerprint";
 import { WarningSignalRace } from "@/components/content/warning-signal-race";
+import { WetDryRatchet } from "@/components/content/wet-dry-ratchet";
 import { WhatThisMeans } from "@/components/content/what-this-means";
 import { WhittakerBiomeExplorer } from "@/components/content/whittaker-biome-explorer";
 import { WildHarvestYieldLadder } from "@/components/content/wild-harvest-yield-ladder";
@@ -180,6 +196,7 @@ export const pandoraMdxComponents = {
   AdaptationTimescaleLadder,
   AerostaticLiftBudget,
   AirRegimeVisualizer,
+  AlkalineVentBattery,
   AnatomyPlate,
   AragoniteThresholdDial,
   AscentHypoxiaProfile,
@@ -211,6 +228,7 @@ export const pandoraMdxComponents = {
   CodaRhythmComparator,
   ColdLightReaction,
   CoastalUpwellingExplorer,
+  ColumnHeightCeiling,
   CombustionBudgetLab,
   Comparison,
   CondensationSequenceDial,
@@ -232,7 +250,9 @@ export const pandoraMdxComponents = {
   EclipseSeasonThreader,
   EdgeToughnessTradeoff,
   ElderMemoryLedger,
+  ElementCycleTracer,
   EntrainmentRangeDial,
+  ErrorThresholdCeiling,
   EvidenceGradeLadder,
   ExopackFilterBudget,
   ExtinctionDiscountExplorer,
@@ -269,6 +289,8 @@ export const pandoraMdxComponents = {
   MagneticCompassExplorer,
   MagmaEnergyLedger,
   MaskingOrClock,
+  MaterialIndexBench,
+  MatterLoopEnergyArrow,
   MantleConvectionRayleigh,
   MoistureRecyclingCascade,
   MorphogenGradientLab,
@@ -288,18 +310,21 @@ export const pandoraMdxComponents = {
   OrbitClock,
   OrganogenesisGate,
   OreGenesisRegimeLedger,
+  OriginScenarioScoreboard,
   OutgroupPolarityBench,
   PandoraLightLadder,
   PartRef,
   PercolationNetwork,
   PerchedWaterBudget,
   PhotophoreIntensity,
+  PigmentSpectrumTuner,
   PneumaticBoneBudget,
   TemporalNichePartition,
   TectonicRegimeSelector,
   ThermalScopeDial,
   TidalHeatBudget,
   TorukFlightEngine,
+  ToughnessArchitectureLab,
   TowedAerostatPower,
   PredatorPreyOscillator,
   PressureDoesNotCrush,
@@ -317,6 +342,8 @@ export const pandoraMdxComponents = {
   ReplayTheTape,
   RedQueenRace,
   ReproductiveValueElasticity,
+  ResidenceTimeAudit,
+  RubiscoErrorLedger,
   SatelliteMassBudget,
   ScaleUpChallenge,
   ScientificNote,
@@ -328,12 +355,16 @@ export const pandoraMdxComponents = {
   SiderealSynodicGearing,
   SoilPoreExplorer,
   SolventWindowBench,
+  SparMassFractionGate,
   SideNote,
   SourceList,
   StatGrid,
   StaticMarginTrade,
+  StomatalBargainDial,
   StratigraphicColumnReader,
   SuccessionArrestExplorer,
+  SulfurSourceGap,
+  SugarFreightLine,
   SuperconductorCooldown,
   SwarmSteeringField,
   SymbiontIntegrationMap,
@@ -349,6 +380,7 @@ export const pandoraMdxComponents = {
   VerticalForestDive,
   VolatileSourceFingerprint,
   WarningSignalRace,
+  WetDryRatchet,
   WhatThisMeans,
   WhittakerBiomeExplorer,
   WildHarvestYieldLadder,

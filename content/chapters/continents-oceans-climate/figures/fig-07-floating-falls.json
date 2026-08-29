@@ -11,10 +11,27 @@
   "style": "Painterly naturalist plate, atmospheric and grand, soft brushed foliage and mist, NOT a 3D render, NOT a photo.",
   "detail_level": "High on the mountain, its forest and falls; softening into deep haze toward the lower islands.",
   "composition": "The floating mountain large and high in the frame, waterfalls and mist drawing the eye downward into haze, lush summit clearly free of ice.",
-  "exclude": ["text", "letters", "numbers", "labels", "snow cap", "bare rock summit", "arrows", "UI", "watermark", "logos"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "snow cap",
+    "bare rock summit",
+    "arrows",
+    "UI",
+    "watermark",
+    "logos",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Match the cool palette and biolum-forest look of the cover; the point is a warm, green, watered summit - never snow or barren rock.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no snow, no ice cap, no bare rock summit, no diagram chrome, no 3D-render or photographic look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/continents-oceans-climate/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/continents-oceans-climate/fig-00-cover.png"
+  ]
 }

@@ -1,0 +1,29 @@
+{
+  "id": "fig-02-four-property-tests-materials-of-life",
+  "chapter_slug": "materials-of-life",
+  "role": "inline",
+  "narrative_purpose": "Illustrate the four independent material properties (stiffness, strength, toughness, density).",
+  "subject": "Four distinct panels side-by-side. Each panel contains a sample of the same pale biological material. Left panel: sample stretched between two dark grips. Second panel: sample bent over two supports with a weight on it. Third panel: a visible crack opening from a notch. Fourth panel: sample resting on a balancing pan.",
+  "scene": "A clean, dark workspace setting, softly lit to isolate the four actions without any diagrammatic arrows.",
+  "camera": "Medium distance, clear descriptive view, level angle.",
+  "light": "Bioluminescent key light highlighting structural details, deep teal-indigo ambient shadows, volumetric haze in the background.",
+  "palette": "Cool Pandora base (Void indigo, Deep teal-indigo, Ocean teal, Pandora cyan, Living teal) with sparing Biolum magenta or Ember amber accents for key structural features.",
+  "style": "Original speculative-biology painterly illustration, naturalist plate energy, detailed structural cutaway.",
+  "detail_level": "High structural detail, precise geometry, visible material textures (grain, fibres, layers).",
+  "composition": "Clear focal subject, generous negative space of haze and shadow, no clutter.",
+  "exclude": [
+    "text",
+    "labels",
+    "arrows",
+    "diagram lines",
+    "numbers",
+    "watermarks",
+    "signatures",
+    "UI elements"
+  ],
+  "consistency_notes": "Follow STYLE BIBLE. Ensure painterly feel, no 3D render plastic.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "text, numbers, captions, labels, watermarks, signatures, arrows, leader lines, UI chrome, flat-design infographic, textbook clip art, CAD, 3D render, photographic, lens flare, CGI plastic.",
+  "style_refs": [],
+  "character_refs": []
+}

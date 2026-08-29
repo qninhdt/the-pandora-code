@@ -11,10 +11,28 @@
   "style": "Painterly longitudinal field-observation plate, atmospheric and naturalistic rather than infographic-like.",
   "detail_level": "High detail on the repeated tree, rocks and shadows so the two halves clearly depict the same place; backgrounds soften into haze.",
   "composition": "Two equal halves with matching horizon and fixed planet position; left visibly bright and shadow-casting, right dark and bioluminescent.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "clock faces", "different landscapes", "different trees", "people", "watermark", "sunrise"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "clock faces",
+    "different landscapes",
+    "different trees",
+    "people",
+    "watermark",
+    "sunrise",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Both halves must be the same clearing and same Polyphemus. The only causal change is the brilliant companion star and its directional orange shadows on the left.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no labels, no seasonal foliage change, no day-night split, no different camera angles, no lens flare, no photographic or 3D-render look",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"
+  ]
 }

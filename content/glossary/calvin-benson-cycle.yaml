@@ -1,0 +1,17 @@
+id: calvin-benson-cycle
+label:
+  vi: Chu trình Calvin-Benson
+  en: The Calvin-Benson cycle
+definition:
+  vi: 'Vòng phản ứng hóa học lắp CO₂ thành đường, chạy bằng "tiền" năng lượng mà nửa cần sáng của quang hợp vừa kiếm được. Rubisco đính từng phân tử CO₂ vào một phân tử nhận năm carbon; sản phẩm được sắp xếp lại qua nhiều bước, một phần đi ra làm đường, phần còn lại tái tạo chính phân tử nhận ban đầu để vòng lặp tiếp tục. Cứ ba phân tử CO₂ vào thì cần chín đơn vị ATP và sáu đơn vị lực khử. Điểm đáng nhớ: chu trình này không cần ánh sáng, nó chỉ cần thứ ánh sáng mua được — nên nó chạy tiếp một lúc sau khi trời tối, miễn là còn tiền trong két.'
+  en: 'The loop of chemistry that assembles CO₂ into sugar, running on the energy currency the light-requiring half of photosynthesis just earned. Rubisco attaches each CO₂ to a five-carbon acceptor molecule; the product is rearranged over several steps, some leaving as sugar and the rest regenerating that original acceptor so the loop can continue. Every three CO₂ entering costs nine units of ATP and six of reducing power. Worth remembering: this cycle does not need light, only what light buys — so it keeps turning for a while after dark, as long as there is currency in the till.'
+see_also:
+- rubisco
+- carbon-fixation
+- photosynthesis
+- photorespiration
+category: bio
+tags:
+- chemistry
+- physiology
+cover_prompt: A painted study of a closed circular chain of linked molecules turning like a wheel in a dark field, a small gas particle entering at one point on the rim and a finished sugar molecule leaving at another, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

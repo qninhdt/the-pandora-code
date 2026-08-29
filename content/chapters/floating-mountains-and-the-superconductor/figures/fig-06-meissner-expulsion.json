@@ -11,9 +11,21 @@
   "style": "Clean elegant schematic of thin glowing lines.",
   "detail_level": "Smooth symmetric line curvature around the sphere; sphere a plain dark circle.",
   "composition": "Sphere centred; lines enter left, bulge around it, exit right; clearly empty inside the sphere.",
-  "exclude": ["text", "letters", "numbers", "watermark", "photographic texture"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "watermark",
+    "photographic texture",
+    "labels",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Thin glowing cyan lines on a near-black background, matching the chapter's schematic diagrams.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no numbers, no photorealism, no 3D bevels, no clutter, no lines inside the sphere",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

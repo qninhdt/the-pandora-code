@@ -11,9 +11,28 @@
   "style": "Painterly marine naturalist comparison, organic signal shapes rather than a vector infographic.",
   "detail_level": "Clear species silhouettes and behaviors, simplified low-detail background, crisp open areas around the three teaching motifs.",
   "composition": "Three left-to-right islands of action with dark water gaps between them and open space above each group for overlay callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "panel borders", "arrows", "musical notation", "staff lines", "human divers", "boats", "Pandoran creatures"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "panel borders",
+    "arrows",
+    "musical notation",
+    "staff lines",
+    "human divers",
+    "boats",
+    "Pandoran creatures",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Keep the three Earth species distinct: square-headed sperm whales, long-flippered humpbacks, and small beaked bottlenose dolphins. Signals are abstract light traces with no glyphs or notation.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no labels, no musical notes, no arrows, no infographic boxes, no photographic or 3D-render look, no species hybrids, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

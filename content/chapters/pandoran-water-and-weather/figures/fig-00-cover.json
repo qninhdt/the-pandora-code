@@ -21,11 +21,15 @@
     "UI",
     "watermark",
     "logos",
-    "Avatar branding"
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "The recurring subject of this chapter is water leaving rock with empty sky above it; keep the space above the plateau conspicuously clear of any higher terrain. Crisp focal portrait suitable as a landing thumbnail.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no grid, no diagram chrome, no UI, no photographic or 3D-render look, no lens flares, no higher land above the plateau",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

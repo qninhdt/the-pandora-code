@@ -1,0 +1,29 @@
+id: bouligand-structure
+label:
+  vi: Cấu trúc Bouligand (gỗ dán xoắn)
+  en: Bouligand structure
+definition:
+  vi: >-
+    Kiểu xếp lớp trong đó mỗi tấm sợi nằm quay lệch một góc nhỏ cố định so với tấm bên dưới, khiến cả
+    tập lớp xoắn dần như một cầu thang xoắn — thường gọi là gỗ dán xoắn. Điều đó xóa sạch mọi mặt
+    phẳng liên tục xuyên qua vật liệu, nên một vết nứt không còn đường thẳng nào để đi theo: nó buộc
+    phải xoáy, tạo ra bề mặt mới nhanh hơn cả mức nó tiến lên, và đó là cách di chuyển đắt đỏ nhất mà
+    một vết nứt có thể bị ép nhận. Vỏ kitin của động vật chân đốt dựng theo lối này; chùy đập của tôm
+    tít chịu được gia tốc va đập trên mười nghìn g hàng nghìn lần mà không vỡ vụn.
+  en: >-
+    A layered arrangement in which each successive sheet of fibres sits rotated by a small constant
+    angle from the one beneath, so the whole stack twists like a spiral staircase — commonly called
+    twisted plywood. That erases every continuous plane through the material, so a crack has no
+    straight path to follow: it is forced to corkscrew, generating new surface faster than it
+    advances, which is the most expensive way to travel a crack can be given. Arthropod cuticle is
+    built this way; the mantis shrimp's dactyl club survives impact accelerations above ten thousand
+    gravities, thousands of times, without shattering.
+see_also:
+  - crack-deflection
+  - hierarchical-composite
+  - fracture-toughness
+category: bio
+tags:
+  - physiology
+  - physics
+cover_prompt: A painterly naturalist cutaway of a layered fibrous block in which each successive layer is rotated slightly from the one below so the stack forms a slow spiral, a thin cyan crack corkscrewing through it, deep indigo ground, hand-painted texture, no text, no numbers, no labels.

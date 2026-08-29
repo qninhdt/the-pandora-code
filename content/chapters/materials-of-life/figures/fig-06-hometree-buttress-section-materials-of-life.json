@@ -1,0 +1,33 @@
+{
+  "id": "fig-06-hometree-buttress-section-materials-of-life",
+  "chapter_slug": "materials-of-life",
+  "role": "inline",
+  "narrative_purpose": "Demonstrate how diameter is the cheap lever for stability against buckling.",
+  "subject": "A towering ancient giant tree trunk flaring out into massive, natural radiating buttress roots firmly anchoring into the forest floor. A vertical botanical cutaway section through the main trunk and one root exposes the internal continuous wood grain, showing smooth flowing grain lines sweeping downward from the vertical stem into the wide horizontal soil base.",
+  "scene": "Deep misty rainforest floor with moss, small glowing mushrooms, and giant buttress roots spreading naturally in all directions, showing authentic plant anatomy.",
+  "camera": "Medium distance, clear descriptive view, level angle.",
+  "light": "Bioluminescent key light highlighting structural details, deep teal-indigo ambient shadows, volumetric haze in the background.",
+  "palette": "Cool Pandora base (Void indigo, Deep teal-indigo, Ocean teal, Pandora cyan, Living teal) with sparing Biolum magenta or Ember amber accents for key structural features.",
+  "style": "Original speculative-biology painterly illustration, naturalist plate energy, detailed structural cutaway.",
+  "detail_level": "High structural detail, precise geometry, visible material textures (grain, fibres, layers).",
+  "composition": "Clear focal subject, generous negative space of haze and shadow, no clutter.",
+  "exclude": [
+    "slide",
+    "ramp",
+    "plank",
+    "man-made stairs",
+    "furniture",
+    "detached board",
+    "skate ramp",
+    "text",
+    "labels",
+    "arrows",
+    "numbers",
+    "watermarks"
+  ],
+  "consistency_notes": "Follow STYLE BIBLE. Ensure painterly feel, no 3D render plastic.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "text, numbers, captions, labels, watermarks, signatures, arrows, leader lines, UI chrome, flat-design infographic, textbook clip art, CAD, 3D render, photographic, lens flare, CGI plastic.",
+  "style_refs": [],
+  "character_refs": []
+}

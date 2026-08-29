@@ -11,10 +11,28 @@
   "style": "Painterly astronomical plate, soft and atmospheric, not a hard vector diagram and not a 3D render.",
   "detail_level": "Moderate: the disk's flatness, the four distinct moons and the infall funnels readable; painterly softness throughout.",
   "composition": "Planet centred, disk running horizontally across the frame, moons distributed along the disk's right-hand side. Open dark space in the upper left and lower right for callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "orbit lines", "watermark", "logos", "UI", "grid", "rings with sharp edges"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "orbit lines",
+    "watermark",
+    "logos",
+    "UI",
+    "grid",
+    "rings with sharp edges",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "This is Polyphemus in youth - same cream-and-rust banding and single large oval storm as the chapter's other gas-giant appearances. Exactly four forming moons, all small relative to the planet.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no orbit lines, no grid, no diagram chrome, no vector or flat-design look, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/from-stardust-to-pandora/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/from-stardust-to-pandora/fig-00-cover.png"
+  ]
 }

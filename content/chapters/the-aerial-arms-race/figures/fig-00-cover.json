@@ -25,10 +25,14 @@
     "RDA machinery",
     "lens flare",
     "photographic look",
-    "single pair of wings"
+    "single pair of wings",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "The animal MUST clearly have two separate pairs of driven wings, the rear pair as fully developed lifting surfaces rather than small tail fins, and the pairs must be caught at opposite points of their stroke. No walking hind legs - the rear limbs are part of the aft wing structure. Forward-projecting bone horn on the skull. Dark charcoal and crimson colouring suited to ash and basalt, not forest.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no green rainforest, no neon glow, no 3D-render or photographic look, no cartoon style, no walking hind legs, no single wing pair",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

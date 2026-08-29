@@ -10,7 +10,7 @@
   "palette": "Void indigo and deep teal water, cold grey hulls, pale grey-white wakes, no warm colour.",
   "style": "Painterly naturalist plan view, hand-painted water and hulls, not a tactical map or vector diagram.",
   "detail_level": "Crisp on the hull silhouettes and wakes; the submerged animals soft and dim; open flat water between the formation and the animals for overlay labels.",
-  "composition": "Mothership lower centre, craft fanning up and outward toward the upper third, animals at the top edge, wide open dark water bands at left and right for callouts.",
+  "composition": "Mothership lower centre, craft fanning up and outward toward the upper third, animals at the top edge, wide open dark water bands at left and right framed by deep negative space.",
   "exclude": [
     "text",
     "letters",
@@ -23,9 +23,11 @@
     "dashed movement lines",
     "tactical map symbols",
     "grid overlay",
-    "vector diagram look"
+    "vector diagram look",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "Same mothership design as the cover: long grey twin hull, four stern fan housings. The formation must read as an encircling net closing on the animals, conveyed by hull positions alone with no arrows.",
+  "consistency_notes": "Same mothership design as the cover: long grey twin hull, four stern fan housings. The formation must read as an encircling net closing on the animals, conveyed by hull positions alone with no artificial graphics.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no labels, no arrows, no dashed lines, no map symbols, no grid, no photographic or 3D-render look, no cartoon style",
   "style_refs": [

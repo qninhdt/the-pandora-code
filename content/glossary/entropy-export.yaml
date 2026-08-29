@@ -1,0 +1,33 @@
+id: entropy-export
+label:
+  vi: Xuất khẩu entropy
+  en: Entropy export
+definition:
+  vi: >-
+    Cách một hệ sống duy trì trật tự của mình mà không vi phạm định luật hai nhiệt động lực học: nó không
+    giữ entropy thấp bằng cách tránh sinh entropy, mà bằng cách đẩy phần entropy ấy ra ngoài. Một sinh
+    quyển nhận photon từ ngôi sao ở nhiệt độ rất cao — ít photon, mỗi photon nhiều năng lượng, entropy
+    thấp — dùng chúng để làm việc, rồi thải nhiệt hồng ngoại ở nhiệt độ thấp: nhiều photon, mỗi photon
+    yếu, entropy cao. Chính chênh lệch ấy trả tiền cho toàn bộ trật tự bên trong. Đây là lý do vật chất có
+    thể tuần hoàn vô hạn trong một hệ sinh thái nhưng năng lượng thì không bao giờ: một hành tinh gần như
+    kín về vật chất, mà mở hoàn toàn về nhiệt động lực học.
+  en: >-
+    How a living system maintains its own order without breaking the second law of thermodynamics: it keeps
+    its entropy low not by avoiding entropy production but by shipping that entropy outward. A biosphere
+    receives photons from a very hot star — few photons, each energetic, low entropy — uses them to do work,
+    then radiates infrared heat at low temperature: many photons, each feeble, high entropy. That difference
+    pays for all the order inside. It is why matter can circulate indefinitely in an ecosystem while energy
+    never can: a planet is nearly closed materially and wide open thermodynamically.
+see_also:
+  - net-primary-production
+  - mass-balance
+  - homeostasis
+category: concept
+tags:
+  - physics
+  - earth-systems
+  - ecology
+cover_prompt: >-
+  A painted conceptual plate of a planet's night limb against black space, a single narrow beam of pale
+  gold light arriving from one side and a broad diffuse spread of faint dull red glow radiating outward
+  from the whole dark surface, painterly astronomical illustration, no text, no numbers, no labels.

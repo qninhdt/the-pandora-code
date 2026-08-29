@@ -1,0 +1,39 @@
+{
+  "id": "fig-08-the-sealed-world",
+  "chapter_slug": "biogeochemical-cycles",
+  "role": "comparison",
+  "narrative_purpose": "Show the unaudited sink that broke Biosphere 2: dense vegetation under sealed glass with bare concrete quietly absorbing the carbon dioxide the soil released, so the reader sees mass balance finding a culprit direct observation could not.",
+  "subject": "A cutaway of a large sealed glass-and-steel structure at dusk, its stepped pyramidal and vaulted roof panels framed in visible steel members, seen from outside and slightly above so the interior is exposed. Inside, dense green-dark vegetation crowds the space from floor to glass, unmistakably terrestrial Earth plants rather than Pandoran flora — broad-leaved trees, vines, understory shrubs — with no bioluminescence anywhere. Below the interior soil line the cutaway continues into the substructure: deep dark planting beds, and beneath and behind them broad expanses of bare pale grey unfinished concrete forming the foundation walls and floor slab. Faint pale wisps rise from the dark soil beds, drift a short way, and are visibly drawn into and absorbed by the bare concrete surfaces, which show a subtle pale crystalline bloom developing where the wisps meet them. The sealed glass envelope above shows no opening anywhere. Ordinary arid desert ground and a dim cool sky surround the structure outside.",
+  "scene": "A cutaway of the sealed Biosphere 2 enclosure in the Arizona desert at dusk, showing its planted interior and its bare concrete substructure.",
+  "camera": "Wide three-quarter exterior view from slightly above, the cutaway face turned toward the viewer so both the planted interior and the concrete foundations are legible.",
+  "light": "Cool dim desert twilight from outside, glass panels catching a pale sheen; the interior vegetation in muted natural green-dark with no self-illumination; the concrete substructure lit faintly and evenly; deep indigo shadow in the beds.",
+  "palette": "Desaturated stone and pale concrete grey dominating the structure, muted natural dark greens in the vegetation, void-indigo in the shadows and substructure, cool mist grey in the sky and the drifting wisps, no bioluminescent teal and no warm accent.",
+  "style": "Painterly architectural cutaway plate, textured concrete and glass, naturalist rather than technical, hand-illustrated rather than rendered.",
+  "detail_level": "High on the steel framing, glass panels and especially the bare concrete surfaces and their crystalline bloom; the interior vegetation dense but softly handled; the desert surroundings simple.",
+  "composition": "The structure filling the centre and right of the frame with its cutaway face toward the viewer; the concrete substructure as a strong pale horizontal band across the lower third; open desert and dim sky to the left.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "arrowheads",
+    "diagram lines",
+    "gauges",
+    "readouts",
+    "bioluminescence",
+    "alien plants",
+    "Pandoran flora",
+    "gas giant",
+    "humans"
+  ],
+  "consistency_notes": "This is the only figure in the chapter set on Earth, so it must break the Pandoran look deliberately: no bioluminescence, no teal glow, no gas giant, no alien flora — muted natural greens and concrete grey instead. The wisps must read as ordinary invisible-gas suggestion being absorbed by the concrete, not as anything glowing or magical. The envelope must look completely sealed.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no arrowheads, no diagram lines, no gauges or readouts, no bioluminescence, no glowing plants, no alien flora, no gas giant in the sky, no photographic or 3D-render look, no lens flares, no neon UI glow",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

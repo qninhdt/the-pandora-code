@@ -11,10 +11,27 @@
   "style": "Painterly atmospheric astronomical plate, layered haze, soft dissolving edges.",
   "detail_level": "Low to moderate: the individual stars sharp, the gas broad and soft with painterly texture, deliberately empty of small detail.",
   "composition": "The brightest star sits lower left; the others scatter toward the upper right in a loose diagonal. The upper left quadrant is nearly empty dark gas, open for a callout.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "watermark", "logos", "UI", "planets", "disks", "spacecraft", "grid"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "watermark",
+    "logos",
+    "UI",
+    "planets",
+    "disks",
+    "spacecraft",
+    "grid",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "This is the pre-enrichment universe, so the cloud must read as clean and smooth - no rocky debris, no dust knots, no protoplanetary disks anywhere in frame.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no grid, no planets, no protoplanetary disks, no spacecraft, no photographic or 3D-render look, no lens flares, no neon glow",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

@@ -11,10 +11,27 @@
   "style": "Painterly naturalist plate, textured ash and rock, bleak and atmospheric.",
   "detail_level": "Crisp on the ash textures and fallen stump near the viewer; the horizon and vents dissolving into smoke haze.",
   "composition": "Low horizon, the blackened Hometree stump on a third, small wandering figures leading the eye across the plain, wide dim sky above.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "lush greenery", "bright sun", "arrows"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "lush greenery",
+    "bright sun",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Cool Pandora palette but drained toward grey and black to read as ruined ash barrens. Na'vi figures tall and slender, kept small. Distinct from the warm glowing cover.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no lush forest, no bright sunlight, no photographic or 3D-render look, no lens flares, no cartoon style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"
+  ]
 }

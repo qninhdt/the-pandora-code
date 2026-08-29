@@ -1,0 +1,31 @@
+id: denitrification
+label:
+  vi: Phản nitrat hóa
+  en: Denitrification
+definition:
+  vi: >-
+    Chuỗi phản ứng vi sinh trong môi trường thiếu oxy đưa nitrat trở lại thành khí nitơ, đóng vòng mà
+    cố định đạm đã mở ra. Không có nó, nitơ phản ứng sẽ tích tụ mãi trong đất và nước cho đến khi các
+    hệ sinh thái ngạt trong chính chất dinh dưỡng của mình. Chuỗi này rò rỉ ở một khâu giữa: một phần
+    nitơ thoát ra dưới dạng N₂O, chất khí gây hiệu ứng nhà kính mạnh và cũng phá tầng ozone — nên chính
+    cơ chế giữ chu trình nitơ cân bằng lại là nguồn phát thải đáng lo của nông nghiệp hiện đại.
+  en: >-
+    The chain of microbial reactions in oxygen-poor settings that returns nitrate to nitrogen gas,
+    closing the loop that fixation opened. Without it, reactive nitrogen would accumulate indefinitely
+    in soils and waters until ecosystems suffocated on their own fertility. The chain leaks at one
+    intermediate step: some nitrogen escapes as N₂O, a potent greenhouse gas that also attacks the
+    ozone layer — so the very mechanism that keeps the nitrogen cycle balanced is a serious emission
+    source in modern agriculture.
+see_also:
+  - nitrogen-fixation
+  - nitrogenase
+  - biogeochemical-cycle
+category: bio
+tags:
+  - ecology
+  - chemistry
+  - earth-systems
+cover_prompt: >-
+  A painted cutaway of waterlogged dark sediment with fine bubbles of gas rising from the anoxic layer
+  toward standing water above, mineral grains and root threads visible in the mud, faint teal glow
+  around the bubbles, painterly naturalist plate, no text, no numbers, no labels.

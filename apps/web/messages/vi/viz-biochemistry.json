@@ -154,6 +154,152 @@
           "experience": "Không thể trả lời, và nói thẳng như vậy là kết quả trung thực chứ không phải một lối lảng tránh. Trải nghiệm chủ quan không thể đọc ra từ hành vi khi đứng ngoài — với Eywa cũng như với bất kỳ ai khác."
         }
       }
+    },
+    "ventBattery": {
+      "title": "Cục pin nằm trong đá",
+      "subtitle": "Đặt hai dòng chất lỏng và nhiệt độ, rồi đọc hiệu điện thế mà riêng độ lệch pH tạo ra",
+      "aria": "Dịch nhiệt kiềm và đại dương axit ngăn nhau bởi một vách khoáng mỏng, hiện đang tạo ra {mv} millivolt",
+      "presetLabel": "Chọn một bối cảnh miệng phun",
+      "preset": {
+        "lostCity": "Lost City",
+        "pandora": "Pandora"
+      },
+      "ventSide": "Dịch miệng phun",
+      "oceanSide": "Đại dương",
+      "phValue": "pH {ph}",
+      "wallLabel": "Vách sulfide sắt mỏng",
+      "barLabel": "Lực điện có sẵn qua vách",
+      "cellBand": "{min}–{max} mV: mức tế bào dùng",
+      "pmfLabel": "Lực điện qua vách",
+      "pmfNote": "Miễn phí, liên tục, chưa cần sinh học",
+      "deltaPhLabel": "Độ lệch pH",
+      "deltaPhNote": "Proton rơi xuống dốc bao xa",
+      "perPhLabel": "Điện thế trên mỗi đơn vị pH",
+      "perPhNote": "Tăng theo nhiệt độ",
+      "ventPhLabel": "pH dịch miệng phun",
+      "oceanPhLabel": "pH đại dương",
+      "tempLabel": "Nhiệt độ tại vách",
+      "verdict": {
+        "below": "Ở mức này, đá cấp ít lực điện hơn một tế bào sống dùng. Hãy nới rộng khoảng lệch pH và xem nó bắt kịp dễ đến mức nào — gradient là phần rẻ nhất.",
+        "cellRange": "Tảng đá trần trụi giờ đang cấp đúng mức lực điện mà ATP synthase của một tế bào hiện đại vận hành trên đó — không bơm, không protein màng, không bộ gen. Đây là toàn bộ lý lẽ cho giả thuyết nguồn gốc ở miệng phun.",
+        "above": "Đá đang vượt tế bào sống chừng {ratio} lần — một gradient địa chất trao ra nhiều điện thế hơn mức sinh học buồn dùng đến. Năng lượng chưa bao giờ là thứ khan hiếm."
+      }
+    },
+    "errorThreshold": {
+      "title": "Cái trần của việc ghi nhớ",
+      "subtitle": "Một bộ máy sao chép sai ở mức này thì bảo vệ được chuỗi dài đến đâu?",
+      "aria": "Chiều dài chuỗi tối đa duy trì được so với độ chính xác sao chép trên mỗi base, hiện là {length} nucleotide",
+      "replicaseBand": "Chiều dài một replicase gập được cần",
+      "regime": {
+        "nonEnzymatic": "Hóa học trần",
+        "ribozyme": "Replicase RNA",
+        "polymerase": "Enzyme hiện đại"
+      },
+      "yAxis": "Nucleotide",
+      "xAxis": "Độ chính xác trên mỗi base",
+      "ceilingLabel": "Chuỗi dài nhất giữ được",
+      "ceilingNote": "Vượt mức này, lỗi chạy nhanh hơn chọn lọc",
+      "ntValue": "{n} nt",
+      "errorRateLabel": "Số lỗi trên mỗi base",
+      "errorRateNote": "Phần bộ máy sao chép làm sai",
+      "perBase": "{n}%",
+      "needLabel": "Chiều dài cần có",
+      "needNote": "Để gập thành một bộ máy sao chép hoạt động",
+      "fidelityLabel": "Độ chính xác sao chép mỗi base",
+      "sigmaLabel": "Ưu thế thích ứng so với đột biến",
+      "verdict": {
+        "shortOfReplicase": "Còn thiếu chừng {shortfall} nucleotide. Bộ máy sao chép không bảo vệ được một chuỗi đủ dài để mã hóa chính nó — và không hành tinh nào cho phép bỏ qua bước đó.",
+        "clearsReplicase": "Giờ cái trần đã vượt chiều dài một replicase cần. Nhưng hãy xem thanh trượt phải bị kéo tới đâu mới được vậy: mức chính xác đó chính là thứ một replicase gập xong sẽ cung cấp, tức là đúng thứ còn chưa tồn tại."
+      }
+    },
+    "wetDryRatchet": {
+      "title": "Bánh cóc trên bờ nước",
+      "subtitle": "Xem một vũng cạn đi rồi đầy lại, và xem thứ gì sống sót qua mỗi lượt",
+      "aria": "Một vũng đá khô đi rồi ngập lại đang dựng nên các oligomer, hiện đạt {n} đơn vị",
+      "settingLabel": "Chọn một bối cảnh",
+      "setting": {
+        "cycled": "Vũng ven bờ",
+        "submerged": "Ngập nước liên tục"
+      },
+      "hint": {
+        "cycled": "Khô đi thì đẩy các mối nối hình thành; ngập lại thì phá phần lớn và giữ lại phần còn sót. Không pha nào tự mình dựng được gì — chính sự luân phiên mới làm được, và mỗi lượt bắt đầu từ một chuỗi dài hơn lượt trước một chút.",
+        "submerged": "Bị giữ dưới nước suốt, phản ứng không bao giờ đảo chiều. Tổng hợp và phân giải cân bằng nhau ở những mảnh ngắn nhất, và chuỗi đơn giản là không dài ra. Đây là cái giá của giả thuyết miệng phun: cục pin tốt nhất lại nằm đúng nơi không gì trùng hợp được."
+      },
+      "phase": {
+        "dry": "Đang khô đi",
+        "wet": "Ngập trở lại"
+      },
+      "direction": {
+        "condensing": "Nước rút đi — mối nối hình thành",
+        "hydrolysing": "Nước dư thừa — mối nối bị phá"
+      },
+      "labCeiling": "Dài nhất đạt được trong phòng thí nghiệm",
+      "yAxis": "Chiều dài chuỗi",
+      "xAxis": "Số chu kỳ ướt–khô",
+      "activityLabel": "Độ ẩm hiện tại",
+      "activityNote": "1,0 là đại dương hở",
+      "reachedLabel": "Chuỗi dài nhất",
+      "reachedNote": "Sau số chu kỳ hiển thị",
+      "unitsValue": "{n} đơn vị",
+      "cyclesLabel": "Số chu kỳ đã chạy",
+      "cyclesNote": "Mỗi chu kỳ là một cơ hội giữ lại thứ gì đó",
+      "noneValue": "Không có"
+    },
+    "originScoreboard": {
+      "title": "Sáu việc một nguồn gốc phải làm",
+      "subtitle": "Ba bối cảnh được đề xuất cho nơi sự sống bắt đầu, chấm điểm trung thực từng bước — và Pandora thay đổi được gì",
+      "hint": "Pandora cải thiện {gains} trong sáu hàng, và tất cả đều thuộc về nguyên liệu thô hoặc năng lượng. Có {stuck} hàng mà không bối cảnh nào xử lý tốt — và đó đúng là những hàng về thông tin.",
+      "stepColumn": "Việc phải xảy ra",
+      "pandoraColumn": "Pandora",
+      "scenarioShort": {
+        "spark": "Sấm",
+        "vent": "Miệng phun",
+        "pool": "Vũng"
+      },
+      "scenario": {
+        "spark": "Sấm sét và trời mở",
+        "vent": "Miệng phun kiềm dưới đáy biển",
+        "pool": "Vũng cạn trên bờ núi lửa"
+      },
+      "scenarioNote": {
+        "spark": "Phóng điện qua khí quyển núi lửa tạo ra các phân tử nhỏ rất dễ dàng — nhưng để chúng tan trong một đại dương quá loãng để dựng được thứ gì.",
+        "vent": "Dịch kiềm ấm gặp nước axit lạnh qua các vách khoáng, cấp lực điện miễn phí chừng nào đá còn. Chính hơi ấm ấy lại băm nát các chuỗi dài.",
+        "pool": "Bốc hơi thì cô đặc và nối lại; ngập lại thì chọn lọc và bọc kín. Câu trả lời mạnh nhất cho polymer, và cũng dễ tổn thương nhất trước nguy cơ khô cạn hẳn."
+      },
+      "step": {
+        "monomers": "Tạo ra các bộ phận",
+        "polymers": "Nối chúng thành chuỗi",
+        "information": "Sao chép chuỗi cho trung thực",
+        "compartments": "Bọc nó vào một cái túi",
+        "energy": "Nuôi nó liên tục",
+        "darwin": "Bắt đầu tiến hóa"
+      },
+      "grade": {
+        "strong": "Đã chứng minh",
+        "partial": "Một phần",
+        "weak": "Yếu"
+      },
+      "pandora": {
+        "better": "Tốt hơn",
+        "same": "Không đổi",
+        "worse": "Kém hơn"
+      },
+      "detail": {
+        "monomers": "Axit amin, đường, base và axit béo phải xuất hiện từ khí núi lửa và nước. Đây là phần thực sự đã giải xong: chúng hình thành dễ dàng trong nhiều điều kiện khả tín, và thiên thạch còn mang thêm tới.",
+        "polymers": "Nối hai đơn vị lại thì đẩy ra một phân tử nước, nên trong nước khối các chuỗi tan rã nhanh bằng lúc hình thành. Phải có gì đó lấy nước đi — hoặc bốc khô, hoặc một bề mặt khoáng giữ các mảnh đúng chỗ.",
+        "information": "Một chuỗi phải được sao chép đủ chính xác để thứ từng hoạt động vẫn còn ở thế hệ sau. Chưa ai chứng minh được một phân tử tự sao chép mà không cần trợ giúp, và độ chính xác cần để mã hóa một phân tử như thế lại chính là độ chính xác nó sẽ mang lại.",
+        "compartments": "Không có ranh giới thì mọi thứ hữu ích đều tán đi và không dòng dõi nào cạnh tranh được với dòng dõi khác. Các túi axit béo tự lắp, tự lớn và tự chia, nên đây là hàng ít rắc rối nhất sau hàng monomer.",
+        "energy": "Mọi bước phía trên đều chạy lên dốc, nên phải có gì đó đẩy liên tục suốt chừng ấy thời gian. Một độ lệch pH qua vách khoáng mỏng làm đúng việc đó, miễn phí, suốt tuổi đời của tảng đá.",
+        "darwin": "Đến một lúc nào đó, một hệ hóa học ngừng là hóa học lặp lại và trở thành một quần thể biết biến dị, di truyền và bị chọn lọc. Chưa thí nghiệm nào vượt được vạch này, ở bất kỳ bối cảnh nào."
+      },
+      "pandoraDetail": {
+        "monomers": "Pandora giàu hơn Trái Đất nguyên thủy từng có: hydro sulfide phủ toàn cầu chứ không bó trong các trường miệng phun, và khí quyển nặng khí carbonic. Nhiều nguyên liệu hơn, khắp nơi, liên tục.",
+        "polymers": "Nhiều chu kỳ hơn Trái Đất. Thủy triều từ một hành tinh khí khổng lồ, cộng với những lần nhật thực đều đặn, cho một vũng ven bờ nhiều cơ hội khô đi rồi đầy lại hơn hẳn mỗi năm.",
+        "information": "Không có gì ở Pandora giúp được. Độ chính xác sao chép là tính chất của hóa học, không phải của hành tinh, và không lượng năng lượng hay nguyên liệu nào mua được nó.",
+        "compartments": "Giống Trái Đất. Axit béo tự lắp theo hóa học của riêng chúng; một mặt trăng sôi động hơn không giúp mà cũng không cản.",
+        "energy": "Lợi thế lớn nhất của Pandora. Sự uốn triều từ Polyphemus giữ phần trong nóng độc lập với ngôi sao, nên các miệng phun serpentine hóa có thể chạy chừng nào quỹ đạo còn, thay vì chừng nào hành tinh chưa nguội.",
+        "darwin": "Không hề nhúc nhích. Đây là hàng mà việc làm mặt trăng sôi động nhất vùng chẳng đem lại gì cả."
+      }
     }
   }
 }

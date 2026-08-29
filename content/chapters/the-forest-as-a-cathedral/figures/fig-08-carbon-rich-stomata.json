@@ -10,11 +10,28 @@
   "palette": "Cool indigo and teal dominate, with pale mist for water vapour and restrained amber only on the carbon-dioxide molecules.",
   "style": "Painterly comparative botanical plate, precise enough to distinguish guard cells, pore width, mesophyll and gas movement while retaining natural material texture.",
   "detail_level": "High detail at both stomata; molecules are simplified physical spheres without letters; background and deeper tissue soften rapidly.",
-  "composition": "Equal left and right leaf windows separated by a narrow band of darkness. Earth pore wide on the left with a large upward water plume; Pandora pore narrow on the right with a dense inward carbon cluster and small water plume. Preserve empty dark space above each pore for callouts.",
-  "exclude": ["text", "letters", "chemical formulas", "numbers", "labels", "arrows", "leader lines", "human skin", "mouths", "watermark", "logos", "UI chrome"],
+  "composition": "Equal left and right leaf windows separated by a narrow band of darkness. Earth pore wide on the left with a large upward water plume; Pandora pore narrow on the right with a dense inward carbon cluster and small water plume. Preserve empty dark space above each pore framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "chemical formulas",
+    "numbers",
+    "labels",
+    "arrows",
+    "leader lines",
+    "human skin",
+    "mouths",
+    "watermark",
+    "logos",
+    "UI chrome",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Both panels must show the same stomatal anatomy and scale; the teaching difference is pore width plus the relative density of incoming carbon and outgoing water, not a different organ.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no CO2 lettering, no labels, no arrows, no cartoon faces, no infographic chrome, no photographic or CGI look, no vector diagram",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

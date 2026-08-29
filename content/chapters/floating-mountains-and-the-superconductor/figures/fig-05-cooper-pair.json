@@ -11,9 +11,22 @@
   "style": "Clean elegant schematic of soft glowing dots and thin trails.",
   "detail_level": "Regular grid, two clearly emphasized moving points, a subtle visible inward distortion of the grid near the first point.",
   "composition": "Grid fills frame; the two points offset along a diagonal, leading point upper-right, trailing point lower-left.",
-  "exclude": ["text", "letters", "numbers", "equations", "watermark", "photographic texture"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "equations",
+    "watermark",
+    "photographic texture",
+    "labels",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Thin glowing teal/cyan elements on a near-black background, matching the chapter's schematic diagrams.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no equations, no numbers, no photorealism, no 3D bevels, no clutter",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

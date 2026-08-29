@@ -1,0 +1,33 @@
+id: biogeochemical-cycle
+label:
+  vi: Chu trình sinh địa hóa
+  en: Biogeochemical cycle
+definition:
+  vi: >-
+    Đường đi tuần hoàn của một nguyên tố qua các bể chứa của hành tinh — khí quyển, sinh vật sống,
+    đất, đại dương, đá — dưới tác động của cả sinh học, địa chất và hóa học, đúng như cái tên ghép
+    của nó. Mọi chu trình đều được mô tả bằng cùng một bộ ngữ pháp: các bể (một nguyên tố đang nằm ở
+    đâu, tính bằng khối lượng) nối với nhau bằng các dòng (nó di chuyển nhanh chậm ra sao). Bốn chu
+    trình quan trọng nhất với sự sống là carbon, nitơ, phốt pho và lưu huỳnh, và điểm khác biệt lớn
+    nhất giữa chúng chỉ đơn giản là: nguyên tố ấy có một dạng khí bền hay không.
+  en: >-
+    The circular route an element takes through a planet's reservoirs — atmosphere, living things,
+    soil, ocean, rock — driven by biology, geology and chemistry at once, exactly as the compound name
+    implies. Every cycle is described with the same grammar: reservoirs (where an element sits, in
+    units of mass) connected by fluxes (how fast it moves). The four that matter most to life are
+    carbon, nitrogen, phosphorus and sulfur, and the single largest difference between them is simply
+    whether the element has a stable gas phase.
+see_also:
+  - mass-balance
+  - residence-time
+  - limiting-nutrient
+  - carbonate-silicate-cycle
+category: concept
+tags:
+  - earth-systems
+  - ecology
+  - chemistry
+cover_prompt: >-
+  A painted schematic ring of five linked chambers — sky, leaf, animal, dark soil, and layered stone —
+  connected by faintly glowing teal channels flowing one way around the loop, deep indigo background,
+  painterly naturalist plate, no text, no numbers, no labels, no arrowheads.

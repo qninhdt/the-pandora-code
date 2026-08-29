@@ -11,10 +11,26 @@
   "style": "Painterly speculative-biology micro-plate, hand-painted, organic, NOT a clinical schematic and NOT a 3D render.",
   "detail_level": "Crisp on the final enzyme and the pale sulfur molecules locking it; the rest of the chain softening into glow.",
   "composition": "The electron relay sweeping in from one side along the membrane, light dying toward the jammed terminal enzyme off-centre; unusable oxygen motes hovering past it.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "watermark", "logos", "UI", "molecular formulae"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "watermark",
+    "logos",
+    "UI",
+    "molecular formulae",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Pale sulfur-yellow is the chapter's consistent visual for hydrogen sulfide; cyan-teal is living energy. Reads as a painted micro-scene, not a biochemistry textbook figure.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no chemical formulae, no schematic chrome, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/whats-in-the-air/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/whats-in-the-air/fig-00-cover.png"
+  ]
 }

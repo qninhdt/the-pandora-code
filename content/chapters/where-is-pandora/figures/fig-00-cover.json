@@ -11,9 +11,25 @@
   "style": "Painterly speculative-biology naturalist plate, hand-painted texture, strong atmospheric depth.",
   "detail_level": "Crisp detail on the near ridge and glowing forest; the giant planet softer and atmospheric; distant moons dissolving into haze.",
   "composition": "Giant planet anchored upper-left on a third line, bright star upper-right; ridge and tiny figure along the lower third to give overwhelming scale to the planet and sky.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "spacecraft", "Earth trees", "human characters in modern clothing"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "spacecraft",
+    "Earth trees",
+    "human characters in modern clothing",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "This banded gas giant (cream/rust/grey bands, one large eye-storm) is Polyphemus and must look identical wherever it appears in this chapter. Cool Pandora palette, bioluminescent key light.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no photographic or 3D-render look, no lens flares, no oversaturation, no cartoon or anime style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

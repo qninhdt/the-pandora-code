@@ -11,10 +11,29 @@
   "style": "Painterly atmospheric vista, soft, dark, immersive; detail dissolving into smoke haze.",
   "detail_level": "Low and soft throughout - deliberately dim and hazy so long-form text can float over it and stay legible.",
   "composition": "Low horizon; dark ash plains receding across the frame; wide empty hazy smoke sky above; nothing bright competing for attention.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "bright focal subject", "high contrast", "sharp foreground detail", "human figures"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "bright focal subject",
+    "high contrast",
+    "sharp foreground detail",
+    "human figures",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same cool Pandora palette drained toward ash-grey; any gas giant matches Polyphemus. Must stay dark and low-contrast as a background layer, distinct from the crisp bright cover.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no logos, no bright focal point, no high contrast, no sharp foreground, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-99-background.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/pandoras-deep-time/fig-99-background.png"
+  ]
 }

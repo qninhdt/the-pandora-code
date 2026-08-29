@@ -1,0 +1,29 @@
+{
+  "id": "fig-05-bouligand-twist-materials-of-life",
+  "chapter_slug": "materials-of-life",
+  "role": "inline",
+  "narrative_purpose": "Show the twisted plywood (Bouligand) structure that forces a crack to spiral.",
+  "subject": "A cutaway 3D block showing layers of straight parallel fibres. Each successive layer of fibres is rotated slightly clockwise from the one beneath it, creating a slow spiralling stack structure from bottom to top. A jagged glowing fracture line corkscrews its way through the twisted stack.",
+  "scene": "Dark void, with the layers catching cyan edge-lighting to emphasize the twist.",
+  "camera": "Medium distance, clear descriptive view, level angle.",
+  "light": "Bioluminescent key light highlighting structural details, deep teal-indigo ambient shadows, volumetric haze in the background.",
+  "palette": "Cool Pandora base (Void indigo, Deep teal-indigo, Ocean teal, Pandora cyan, Living teal) with sparing Biolum magenta or Ember amber accents for key structural features.",
+  "style": "Original speculative-biology painterly illustration, naturalist plate energy, detailed structural cutaway.",
+  "detail_level": "High structural detail, precise geometry, visible material textures (grain, fibres, layers).",
+  "composition": "Clear focal subject, generous negative space of haze and shadow, no clutter.",
+  "exclude": [
+    "text",
+    "labels",
+    "arrows",
+    "diagram lines",
+    "numbers",
+    "watermarks",
+    "signatures",
+    "UI elements"
+  ],
+  "consistency_notes": "Follow STYLE BIBLE. Ensure painterly feel, no 3D render plastic.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "text, numbers, captions, labels, watermarks, signatures, arrows, leader lines, UI chrome, flat-design infographic, textbook clip art, CAD, 3D render, photographic, lens flare, CGI plastic.",
+  "style_refs": [],
+  "character_refs": []
+}

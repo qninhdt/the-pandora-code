@@ -11,10 +11,27 @@
   "style": "Painterly cinematic naturalist plate, hand-painted texture, clear staging of the three groups.",
   "detail_level": "Crisp on the foreground predators and the lit root network; the grazer moderately soft; the roosting flier read mostly as silhouette; canopy dissolving into haze.",
   "composition": "Roosting flier upper-left, departing grazer centre-right at mid-depth, two predators lower-right in the near ground, luminous floor threading between all three, dark sky across the top for text, 16:9.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Cool Pandora palette, key light from the ground. Same forest and creature language as the chapter cover; the predators must read as the same species in both plates.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/the-night-ecology/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/the-night-ecology/fig-00-cover.png"
+  ]
 }

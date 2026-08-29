@@ -1,0 +1,17 @@
+id: pressure-flow
+label:
+  vi: Dòng chảy theo áp suất (cơ chế Münch)
+  en: Pressure flow (the Münch mechanism)
+definition:
+  vi: 'Cách cây chở đường đi xa mà không cần bơm, do Ernst Münch đề xuất vào những năm 1920. Xếp đường vào mạch rây ở một chiếc lá đang nắng làm nồng độ ở đó tăng lên, nên nước bị hút vào theo lối thẩm thấu và áp suất đầu ấy dựng lên — tới hai hay ba MPa. Ở đầu kia, trong rễ, đường được lấy ra và tiêu đi, nước rời khỏi, áp suất tụt xuống. Chênh lệch đó đẩy cả cột dịch nặng đường trôi dọc đường ống. Vẻ đẹp của nó nằm ở chỗ cây chỉ cần quản hai đầu, còn việc vận chuyển tự xảy ra. Cái bẫy nằm ở hình học: cây cao gấp đôi thì quãng đường dài gấp đôi mà lực đẩy trên mỗi mét chỉ còn một nửa, nên thời gian đi tăng theo bình phương chiều cao.'
+  en: 'How a plant ships sugar over distance without a pump, proposed by Ernst Münch in the 1920s. Loading sugar into the phloem at a sunlit leaf raises the concentration there, so water is drawn in osmotically and the pressure at that end climbs — to two or three MPa. At the far end, in a root, sugar is unloaded and consumed, the water leaves, and the pressure falls. That difference pushes the whole loaded column along the pipe. Its beauty is that the plant need only manage the two ends; the transport takes care of itself. The trap is geometric: a tree twice as tall means twice the distance with half the push behind each metre, so travel time grows with the square of height.'
+see_also:
+- phloem
+- turgor-pressure
+- cohesion-tension
+- source-sink-dynamics
+category: concept
+tags:
+- physics
+- physiology
+cover_prompt: A painted schematic of a long vertical tube against a dark field, densely packed bright particles crowding its upper end where pressure is high and thinning out toward its lower end where they disperse, the whole column drifting downward, cool teal-cyan palette with amber accents against void-indigo, painterly naturalist plate, no text, no labels.

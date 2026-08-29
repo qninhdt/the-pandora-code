@@ -1,0 +1,34 @@
+id: nacre
+label:
+  vi: Xà cừ (ngọc trai mẹ)
+  en: Nacre
+definition:
+  vi: >-
+    Lớp lót óng ánh bên trong vỏ trai và ốc, gồm 95% thể tích là aragonit — một dạng canxi carbonat,
+    về cơ bản là phấn — và 5% là chất nền hữu cơ đàn hồi. Aragonit khối có độ dai phá hủy khoảng
+    0,2-0,4 MPa·m^0,5, tức gần như không có gì; xà cừ làm từ đúng khoáng vật đó đạt 3,5-5,8 và hấp thụ
+    năng lượng trước khi vỡ cỡ một nghìn lần nhiều hơn. Toàn bộ khoản lợi ấy đến từ chỗ đặt khoáng
+    vật: các phiến dày chừng 0,5 µm xếp so le như xây gạch, giữa chúng là 20-30 nm chất nền cắt trượt
+    thay cho khoáng vật nứt, cộng thêm cầu nối khoáng, mặt phiến nhăn gây hãm và các liên kết hy sinh
+    tháo dần. Đây là ví dụ dạy học sạch nhất về việc kiến trúc thắng nguyên liệu.
+  en: >-
+    The iridescent inner lining of bivalve and gastropod shells, 95% aragonite by volume — a form of
+    calcium carbonate, essentially chalk — and 5% elastomeric organic matrix. Bulk aragonite has a
+    fracture toughness around 0.2-0.4 MPa·m^0.5, which is to say almost none; nacre, built from that
+    same mineral, reaches 3.5-5.8 and absorbs on the order of a thousand times more energy before it
+    breaks. The entire gain comes from where the mineral is put: tiles roughly 0.5 µm thick laid in
+    offset courses like brickwork, with 20-30 nm of matrix between them that shears instead of
+    letting the mineral crack, plus mineral bridges, corrugated tile faces that jam as they slide,
+    and sacrificial protein bonds that unravel in sequence. It is the cleanest teaching example of
+    architecture beating ingredient.
+see_also:
+  - hierarchical-composite
+  - crack-deflection
+  - fracture-toughness
+  - biomineralization
+category: bio
+tags:
+  - mineral
+  - physiology
+  - physics
+cover_prompt: A painterly naturalist macro study of a cracked-open shell interior, its nacre surface shimmering pale cyan and faint magenta iridescence, one edge broken to reveal flat mineral platelets stacked in offset courses, deep indigo shadow, hand-painted texture, no text, no numbers, no labels.

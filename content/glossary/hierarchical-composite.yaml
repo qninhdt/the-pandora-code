@@ -1,0 +1,33 @@
+id: hierarchical-composite
+label:
+  vi: Composite phân cấp
+  en: Hierarchical composite
+definition:
+  vi: >-
+    Vật liệu có cấu trúc được tổ chức đồng thời trên nhiều thang kích thước, từ nanomet tới milimet,
+    trong đó mỗi tầng đều gánh một phần việc cơ học. Đây là chiến lược cốt lõi của sinh học: không có
+    lò nung, không có khí trơ, không có nguyên tố lạ, sinh vật chỉ còn cách cạnh tranh bằng hình học.
+    Xương chạy bảy tầng — phiến khoáng vài nanomet xen so le trên sợi collagen, bó thành sợi, xếp
+    lớp như gỗ dán, cuộn thành trụ, ghép thành vỏ đặc mở vào một mạng dầm. Xà cừ, gỗ, vỏ kitin, tơ
+    nhện và thủy tinh hải miên đều chơi cùng một ván. Hệ quả: hiệu năng đến từ cách sắp xếp chứ không
+    từ nguyên liệu, nên không một bản mô phỏng đơn thang nào từng sánh được với bản gốc.
+  en: >-
+    A material whose structure is organised across many length scales at once, from nanometres to
+    millimetres, with every tier doing mechanical work. This is biology's core strategy: with no
+    furnace, no inert atmosphere and no exotic elements available, an organism can only compete on
+    geometry. Bone runs seven tiers — mineral platelets a few nanometres thick staggered along
+    collagen ropes, bundled into fibrils, laminated like plywood, rolled into cylinders, packed into
+    a dense shell that opens into a strut lattice. Nacre, wood, insect cuticle, spider silk and
+    sponge glass all play the same game. The consequence is that performance comes from arrangement
+    rather than ingredient, which is why no single-scale imitation has ever matched the original.
+see_also:
+  - nacre
+  - bouligand-structure
+  - nanoscale-flaw-tolerance
+  - biomineralization
+category: concept
+tags:
+  - physics
+  - physiology
+  - chemistry
+cover_prompt: A painterly naturalist plate of four nested magnification panels stepping inward through a pale biological material, each panel revealing a finer layer of fibres and platelets, cool teal and cyan glow tracing the structure against deep indigo, hand-painted texture, no text, no numbers, no labels.

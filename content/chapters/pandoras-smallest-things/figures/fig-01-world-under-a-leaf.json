@@ -10,11 +10,29 @@
   "palette": "Deep indigo and wet umber ground, muted blue-green leaf, cyan-teal biological glow, scarce amber decay accent.",
   "style": "Painterly field-naturalist macro plate, textured and ecological, observed rather than theatrical.",
   "detail_level": "Crisp along the transition from intact leaf to fragmented tissue to fungal and microbial colonization; peripheral forest softly hazed.",
-  "composition": "A left-to-right sequence embedded in one natural scene, intact leaf at left, busy decomposer frontier at center, soil and new root at right, dark space above for interface callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "callout lines", "oversized monsters", "human hands"],
-  "consistency_notes": "Same fallen leaf as the cover, with credible microbial scale cues. The process should read through material transitions without diagram arrows.",
+  "composition": "A left-to-right sequence embedded in one natural scene, intact leaf at left, busy decomposer frontier at center, soil and new root at right, dark space above framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "callout lines",
+    "oversized monsters",
+    "human hands",
+    "diagram lines",
+    "callouts"
+  ],
+  "consistency_notes": "Same fallen leaf as the cover, with credible microbial scale cues. The process should read through material transitions without specimen study arrows.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no labels, no arrows, no cute anthropomorphic microbes, no infographic layout, no photographic or 3D-render look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/pandoras-smallest-things/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/pandoras-smallest-things/fig-00-cover.png"
+  ]
 }

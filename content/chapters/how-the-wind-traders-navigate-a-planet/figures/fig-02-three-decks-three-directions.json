@@ -10,7 +10,7 @@
   "palette": "Deep indigo and teal shadow under each deck, pale mist highlights on the deck tops, cool grey-blue clear air between; one restrained cyan accent on the creatures.",
   "style": "Painterly naturalist cutaway plate, an observed slice of real sky rather than a flat schematic; the three directions carried entirely by the shape and stretch of the cloud forms, never by drawn symbols.",
   "detail_level": "Crisp streaking texture on all three decks so their differing directions read unmistakably; the creatures rendered clearly but small; the far sides of each deck dissolving into haze.",
-  "composition": "Three clean horizontal bands filling the frame — bottom deck streaming left, middle deck stalled, top deck streaming right. The caravan sits in the clear gap in the lower-middle left. Leave the clear-air gaps between the decks, and the plain sky at the RIGHT of each gap, dark, empty and low-detail so overlaid callouts beside each deck read cleanly.",
+  "composition": "Three clean horizontal bands filling the frame \u2014 bottom deck streaming left, middle deck stalled, top deck streaming right. The caravan sits in the clear gap in the lower-middle left. Leave the clear-air gaps between the decks, and the plain sky at the RIGHT of each gap, dark, empty and low-detail so overlaid callouts beside each deck read cleanly.",
   "exclude": [
     "text",
     "letters",
@@ -26,12 +26,16 @@
     "engines",
     "ground",
     "mountains",
-    "photographic look"
+    "photographic look",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "The aerostats are living creatures: soft translucent bell-shaped bodies, trailing tentacles, woven gondolas hung on rigging lines — never rigid metal hulls, never propellers, never engines. The three decks must be visibly distinct in motion: left-streaming, stalled, right-streaming. Cool Pandora high-altitude palette with sparse cyan bioluminescence, calm and observed rather than dramatic.",
+  "consistency_notes": "The aerostats are living creatures: soft translucent bell-shaped bodies, trailing tentacles, woven gondolas hung on rigging lines \u2014 never rigid metal hulls, never propellers, never engines. The three decks must be visibly distinct in motion: left-streaming, stalled, right-streaming. Cool Pandora high-altitude palette with sparse cyan bioluminescence, calm and observed rather than dramatic.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no diagram symbols, no propellers, no engines, no rigid airship hull, no vector or flat infographic style, no 3D-render or photographic look, no cartoon style, no lens flare",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": [
     "apps/web/public/images/chapters/how-the-wind-traders-navigate-a-planet/fig-00-cover.png"
   ]

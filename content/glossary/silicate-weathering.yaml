@@ -1,0 +1,33 @@
+id: silicate-weathering
+label:
+  vi: Phong hóa silicate
+  en: Silicate weathering
+definition:
+  vi: >-
+    Phản ứng chậm rãi giữa nước mưa mang carbon dioxide và đá silicate lộ thiên, biến khoáng vật thành
+    ion tan được và rút CO₂ ra khỏi khí quyển trong quá trình ấy. Điều làm nó trở thành bộ điều nhiệt
+    của một hành tinh là sự phụ thuộc vào nhiệt độ: đá càng ấm và càng nhiều nước chảy qua thì phản ứng
+    càng nhanh, nên một thế giới nóng lên sẽ tự động hút CO₂ mạnh hơn và nguội trở lại. Cơ chế này hoạt
+    động trên thang một trăm nghìn đến một triệu năm — đủ để giữ khí hậu ổn định qua thời gian địa chất,
+    và quá chậm để giúp gì cho bất kỳ nhiễu loạn nào diễn ra trong vài thế kỷ.
+  en: >-
+    The slow reaction between carbon-dioxide-bearing rainwater and exposed silicate rock, which turns
+    minerals into dissolved ions and pulls CO₂ out of the atmosphere in the process. What makes it a
+    planetary thermostat is its temperature dependence: warmer rock with more water running over it
+    reacts faster, so a warming world automatically draws down more CO₂ and cools back. The mechanism
+    works on a hundred-thousand to million-year timescale — long enough to hold a climate steady across
+    geological time, and far too slow to help with any disturbance measured in centuries.
+see_also:
+  - carbonate-silicate-cycle
+  - negative-feedback
+  - faint-young-sun-paradox
+  - subduction
+category: concept
+tags:
+  - geology
+  - earth-systems
+  - chemistry
+cover_prompt: >-
+  A painted close naturalist study of rain streaming down a fractured grey rock face, the mineral
+  surface pitted and softened where water has run for ages, faint teal luminescence in the wet
+  channels, dark indigo shadow behind, painterly plate, no text, no numbers, no labels.

@@ -1,0 +1,18 @@
+id: carbon-fixation
+label:
+  vi: Cố định carbon
+  en: Carbon fixation
+definition:
+  vi: 'Việc lấy carbon đang ở dạng khí — CO₂ trong không khí — và gắn nó vào một phân tử hữu cơ, tức là biến khí thành vật chất. Đây là bước biến một hành tinh có không khí thành một hành tinh có sự sống: mọi nguyên tử carbon trong cơ thể bạn từng là một phân tử CO₂ mà một cái lá nào đó đã bắt lấy. Trên Trái Đất phần lớn việc này do enzyme Rubisco làm, trong chu trình Calvin-Benson. Cụm từ "cố định" nghĩa là giữ lại: carbon vốn tự do bay trong khí quyển giờ bị neo vào một bộ khung mà sinh vật có thể dùng, chuyển tay, và cuối cùng trả lại.'
+  en: 'Taking carbon that exists as a gas — CO₂ in the air — and attaching it to an organic molecule, turning gas into matter. This is the step that makes a planet with an atmosphere into a planet with life: every carbon atom in your body was once a CO₂ molecule that some leaf caught. On Earth most of this work is done by the enzyme Rubisco, inside the Calvin-Benson cycle. The word "fixed" means held: carbon that was flying free in the atmosphere is now anchored into a scaffold that living things can use, pass along, and eventually return.'
+see_also:
+- rubisco
+- calvin-benson-cycle
+- photosynthesis
+- photorespiration
+category: concept
+tags:
+- chemistry
+- physiology
+- earth-systems
+cover_prompt: A painted study of loose glowing gas particles drifting in from a dark field and being caught one at a time onto the end of a growing chain of linked molecules, the chain solid and bright where it has formed, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

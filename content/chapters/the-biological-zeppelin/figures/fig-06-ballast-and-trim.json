@@ -10,11 +10,30 @@
   "palette": "Deep indigo sky and mountain, translucent cyan bell, bright pale water stream, one tiny ember amber accent.",
   "style": "Painterly speculative-biology naturalist plate, observed and quiet.",
   "detail_level": "Crisp on the vent, water stream and gondola harness; distant ridge dissolves into haze.",
-  "composition": "Bell in the upper half, water stream descending near one side, gondolas beneath, generous plain dark sky for later callout labels.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "propellers", "metal airship", "explosion", "photographic look"],
+  "composition": "Bell in the upper half, water stream descending near one side, gondolas beneath, generous plain dark sky framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "propellers",
+    "metal airship",
+    "explosion",
+    "photographic look",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The animal rises because water is being dumped, not because of a visible engine or wingbeat. Keep the ballast stream visually unmistakable and the bell consistent with fig-00-cover.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no propellers, no metal airship, no explosion, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/the-biological-zeppelin/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/the-biological-zeppelin/fig-00-cover.png"
+  ]
 }

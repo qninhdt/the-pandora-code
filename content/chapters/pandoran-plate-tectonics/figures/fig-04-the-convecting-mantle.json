@@ -25,7 +25,10 @@
     "open magma sea",
     "volcanoes",
     "buildings",
-    "humans"
+    "humans",
+    "arrows",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Crucially, the mantle must NOT read as liquid or as an open magma ocean — it is solid rock flowing slowly, so use stretched grain and flow-line texture rather than fluid surfaces. The cold top band must clearly be part of the circulation, not a raft resting on it.",
   "aspect_ratio": "16:9",

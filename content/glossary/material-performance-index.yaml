@@ -1,0 +1,29 @@
+id: material-performance-index
+label:
+  vi: Chỉ số hiệu năng vật liệu
+  en: Material performance index
+definition:
+  vi: >-
+    Tổ hợp các tính chất vật liệu quyết định vật liệu nào thắng cho một kiểu chịu lực cụ thể, do
+    M. F. Ashby hệ thống hóa. Không có vật liệu nào "mạnh nhất": mỗi bài toán kết cấu cân các con số
+    theo cách khác nhau. Một thanh chịu kéo thuần muốn σ/ρ; một dầm chịu uốn muốn √E/ρ; một cột chịu
+    nén mất ổn định muốn E^(1/3)/ρ; một cơ cấu tích năng lượng như cánh cung muốn σ²/(Eρ). Đổi công
+    việc là đảo cả bảng xếp hạng — và chính vì thế thép, thứ ta vẫn coi là đồng nghĩa với sự chắc
+    chắn, xếp gần cuối ở mọi công việc kết cấu khi đã chia cho khối lượng.
+  en: >-
+    A combination of material properties that decides which material wins for one specific loading
+    case, systematised by M. F. Ashby. There is no single strongest material: each structural problem
+    weighs the numbers differently. A tie in pure tension wants σ/ρ; a beam in bending wants √E/ρ; a
+    column limited by buckling wants E^(1/3)/ρ; an energy store such as a bow limb wants σ²/(Eρ).
+    Changing the job reshuffles the whole ranking — which is why steel, the substance our culture
+    treats as a synonym for strength, finishes near last at every structural job once you divide by
+    weight.
+see_also:
+  - youngs-modulus
+  - euler-buckling
+  - biomechanics
+category: concept
+tags:
+  - physics
+  - physiology
+cover_prompt: A painterly naturalist plate showing four small structural elements arranged in a row against deep indigo — a taut cord, a horizontal beam bending slightly, an upright column, and a curved bow limb — each glowing a different cool hue, hand-painted texture, no text, no numbers, no labels.

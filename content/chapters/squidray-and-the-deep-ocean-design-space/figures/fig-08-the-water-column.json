@@ -10,7 +10,7 @@
   "palette": "Ocean teal and pale mist in the sunlit top, deepening void indigo through the middle and bottom, ember amber only at the vent fluid, Pandora cyan on the reef glow and the animals' photophores.",
   "style": "Painterly naturalist depth-profile plate, one continuous scene rather than stacked panels.",
   "detail_level": "High detail on the reef and fish schools at the top and the vent cluster at the bottom; the middle band deliberately sparse and hazy; each of the four animal positions clearly readable.",
-  "composition": "Vertical composition with sunlit reef across the top fifth, empty dark mid water through the middle three fifths, vent field across the bottom fifth, the S-curved path of the four animal positions running down the centre-right, plain dark water at the left for annotations.",
+  "composition": "Vertical composition with sunlit reef across the top fifth, empty dark mid water through the middle three fifths, vent field across the bottom fifth, the S-curved path of the four animal positions running down the centre-right, plain dark water at the left framed by deep negative space.",
   "exclude": [
     "text",
     "letters",
@@ -26,7 +26,9 @@
     "measurement rules",
     "panel borders",
     "submarines",
-    "human figures"
+    "human figures",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "All four animals are the same individual design as fig-00-cover, differing only in wing posture and tentacle position. No drawn path line - the reader infers the route from the four positions.",
   "aspect_ratio": "9:16",

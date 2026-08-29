@@ -11,10 +11,28 @@
   "style": "Painterly naturalist plate evoking a diagram, soft glowing volumes, NOT a hard vector chart and NOT a 3D render.",
   "detail_level": "Moderate: clear contrast between thin and dense air, painterly motes and haze, soft edges, no hard outlines.",
   "composition": "Two columns balanced left and right with dark negative space between; tiny wading figure at the base of the right column for scale.",
-  "exclude": ["text", "letters", "numbers", "labels", "axis", "arrows", "watermark", "logos", "UI", "grid", "ruler marks"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "axis",
+    "arrows",
+    "watermark",
+    "logos",
+    "UI",
+    "grid",
+    "ruler marks",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Reads as a painted scene, not an annotated chart. Cool Pandora palette; the dense air's warm amber haze ties to the carbon-dioxide motif used elsewhere in the chapter.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no axes, no grid, no diagram chrome, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/whats-in-the-air/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/whats-in-the-air/fig-00-cover.png"
+  ]
 }

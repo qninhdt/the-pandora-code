@@ -1,0 +1,20 @@
+{
+  "id": "fig-03-two-skies-one-leaf",
+  "chapter_slug": "how-a-pandoran-plant-feeds",
+  "role": "comparison",
+  "narrative_purpose": "Lands the chapter's central inference in one glance: the same organ doing the same job comes out a different colour under a different sky, because the colour is set upstream by which photons arrive.",
+  "subject": "A split-panel comparison of two leaves of identical shape and size, each on its own short stem. Left panel: a green leaf beneath a single pale yellow-white sun, with a soft wash of green light rising off its upper surface. Right panel: a deep violet leaf beneath two suns — a pale yellow-white one and a smaller dimmer orange one — with a soft wash of blue-violet light rising off its upper surface. The leaves are drawn as near-mirror twins so only colour and sky differ.",
+  "scene": "Two paired specimen studies side by side against deep dark, divided by a thin vertical band of haze, each with its own small patch of sky above it.",
+  "camera": "A straight-on paired study view, both leaves at identical size and angle for direct comparison.",
+  "light": "Each leaf lit from its own sky above; the reflected wash above each leaf is the brightest element in its panel, and the two washes are clearly different colours.",
+  "palette": "Void-indigo ground throughout; left leaf in muted living teal-green under a pale mist sun; right leaf in saturated violet and magenta under one pale sun and one restrained ember-amber companion; deep teal shadow around both.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, two specimens plated together for comparison.",
+  "detail_level": "Crisp on both leaf blades and on the colour of the light washing off each; skies soft and hazy.",
+  "composition": "Two equal vertical panels with a dark central seam, each leaf sitting in the lower half of its panel and its sky in the upper half, dark unbusy margins at the outer edges for overlaid callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "spectra", "graph axes", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette overall; the left panel is permitted a slightly greener, more Earth-like cast so the contrast reads, but must not become warm or sunlit-photographic.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no spectral charts, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style, no vector flat design",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

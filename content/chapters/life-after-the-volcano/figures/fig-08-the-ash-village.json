@@ -11,9 +11,26 @@
   "style": "Painterly naturalist plate, a lived-in harsh settlement, observed not glamorised.",
   "detail_level": "High detail on the yurts, bone struts, scavenged metal and the perched banshee; plain recedes into haze.",
   "composition": "Root-cavern shelter filling one side with the warm hearth glow, figures small for scale, barren plain opening to the other side.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "lush vegetation", "green forest", "modern human buildings", "photographic look"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "lush vegetation",
+    "green forest",
+    "modern human buildings",
+    "photographic look",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Mangkwan / Ash People aesthetic: dark hides, bone, scavenged RDA metal, fire-centric, a barded pierced-wing banshee. Built in a dead Hometree's hollow roots on barren ash. Cool palette with one warm hearth accent.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no green vegetation, no modern buildings, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

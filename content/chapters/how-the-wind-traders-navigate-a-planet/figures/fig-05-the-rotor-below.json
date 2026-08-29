@@ -8,7 +8,7 @@
   "camera": "Level side-on view from downwind, wide enough to stack the serene almond clouds, the caravan, and the churning roll vertically in one frame.",
   "light": "Cold sunlight from the left rim-lighting the almond clouds' upper edges in pale mist; the churning roll left dark, muddy-shadowed and unlit so it reads as menace; ground in deep indigo shadow.",
   "palette": "Pale cool mist on the serene almonds above; deep indigo and dirty teal-grey on the churning roll below; near-black ridge and ground; one restrained cyan accent on the caravan.",
-  "style": "Painterly naturalist cutaway plate; the calm above and the violence below rendered with obviously different brush energy — smooth glassy strokes above, torn broken strokes below.",
+  "style": "Painterly naturalist cutaway plate; the calm above and the violence below rendered with obviously different brush energy \u2014 smooth glassy strokes above, torn broken strokes below.",
   "detail_level": "Crisp laminar edges on the almond clouds; heavy broken shredded texture on the roll; the caravan clear but small; ridge and ground kept dark and simple.",
   "composition": "Clear vertical division: serene almonds across the upper third, caravan holding in the clear middle band, churning roll across the lower third directly beneath the almonds. Keep the clear middle band and the plain sky at the RIGHT of the frame dark, empty and low-detail so overlaid callouts naming the calm layer and the turbulent layer read cleanly.",
   "exclude": [
@@ -27,12 +27,16 @@
     "lightning",
     "tornado funnel",
     "flying saucer",
-    "photographic look"
+    "photographic look",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "The aerostats are living creatures: soft translucent bells, trailing tentacles, woven gondolas on rigging lines — no rigid hulls, no propellers, no engines. The caravan is calm, level and intact, holding well clear — it is not being damaged or thrown about. The contrast between the smooth almonds above and the torn churning roll below must be unmistakable. Cool Pandora palette, sparse cyan bioluminescence.",
+  "consistency_notes": "The aerostats are living creatures: soft translucent bells, trailing tentacles, woven gondolas on rigging lines \u2014 no rigid hulls, no propellers, no engines. The caravan is calm, level and intact, holding well clear \u2014 it is not being damaged or thrown about. The contrast between the smooth almonds above and the torn churning roll below must be unmistakable. Cool Pandora palette, sparse cyan bioluminescence.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no diagram symbols, no propellers, no engines, no rigid airship hull, no lightning, no tornado, no flying saucers, no vector or flat infographic style, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": [
     "apps/web/public/images/chapters/how-the-wind-traders-navigate-a-planet/fig-00-cover.png"
   ]

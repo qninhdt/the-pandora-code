@@ -3,17 +3,34 @@
   "chapter_slug": "pandoras-ocean",
   "role": "diagram",
   "narrative_purpose": "A label-ready vertical specimen plate shows the mismatch between light at the surface and regenerated nutrients at depth, connected downward by marine snow.",
-  "subject": "A tall vertical cutaway through open ocean. The upper fifth is bright cyan water crowded with tiny translucent plankton cells beneath sunbeams. A narrow wavering density boundary separates it from darker blue water. Below, a sparse stream of organic flakes, pellets and cell fragments falls through the middle. Near the bottom, faint teal dissolved clouds suggest a deep nutrient reservoir without symbols or arrows.",
+  "subject": "A tall vertical cutaway through open ocean. The upper fifth is bright cyan water crowded with tiny translucent plankton cells beneath sunbeams. A narrow wavering density boundary separates it from darker blue water. Below, a sparse stream of organic flakes, pellets and cell fragments falls through the middle. Near the bottom, faint teal dissolved clouds suggest a deep nutrient reservoir as pure visual forms.",
   "scene": "An isolated ocean column presented like a naturalist specimen, with no coastline and no seafloor machinery.",
   "camera": "Straight-on vertical section, surface at the top edge and deep water occupying most of the frame.",
   "light": "Bright diffuse cyan at the surface fading exponentially into indigo; marine-snow particles catch small teal highlights; the deep reservoir has only a faint internal glow.",
   "palette": "Mist and cyan surface, ocean teal transition, void-indigo depth, living-teal particles and a rare amber organic flake.",
   "style": "Painterly scientific specimen plate with soft organic textures, not a chart or vector infographic.",
-  "detail_level": "Distinct surface cells, density boundary, falling particle types and dark deep water; uncluttered margins for annotations.",
+  "detail_level": "Distinct surface cells, density boundary, falling particle types and dark deep water; uncluttered generous deep indigo negative space.",
   "composition": "Strong vertical gradient with four visually separable regions and a continuous falling particle path slightly right of center.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "axes", "graph lines", "bubbles shaped like icons", "fish school"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "axes",
+    "graph lines",
+    "bubbles shaped like icons",
+    "fish school",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The plate must communicate vertical separation through light, particle density and colour alone. No baked-in scientific notation.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no labels, no arrows, no numbers, no chart axes, no flat infographic, no photographic or 3D-render look, no decorative fantasy storm",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

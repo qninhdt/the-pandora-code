@@ -1,0 +1,40 @@
+{
+  "id": "fig-01-returned-to-the-roots",
+  "chapter_slug": "biogeochemical-cycles",
+  "role": "hero",
+  "narrative_purpose": "The chapter's cold open: the moment canon shows and never explains, so the reader is looking at a body entering a material cycle rather than at a ceremony.",
+  "subject": "A hollow among enormous pale roots at night, the roots as thick as tree trunks arching over and around a shallow depression in dark soil. Lying in the depression is a still form wrapped in woven cloth, the wrapping patterned and carefully bound, the shape unmistakably a body but with no face or limb visible. The root surfaces nearest the hollow are threaded with fine faint teal luminescence running along their length. Fine spores drift in the motionless air above the hollow. Set back in the surrounding darkness, three or four tall slender figures stand at a distance, seen only as silhouettes with faint reflected glow on their shoulders, facing the hollow but not approaching it. Loose dark soil is heaped to one side.",
+  "scene": "A Na'vi interment among the great roots of Pandoran megaflora, deep at night, after the ceremony has ended.",
+  "camera": "Medium-wide view from slightly above and to one side of the hollow, the arching roots framing the composition, the standing figures small and out of focus in the background darkness.",
+  "light": "Bioluminescent key only — the faint teal glow within the roots themselves and a scatter of luminous spores; no moonlight, no fire, no torch. Deep indigo ambient shadow filling everything beyond the immediate hollow.",
+  "palette": "Void-indigo and deep teal-indigo throughout, ocean teal in the root shadows, living teal in the root filaments, pale mist grey on the woven wrapping, no warm accent at all.",
+  "style": "Painterly naturalist plate, quiet and observational rather than dramatic or reverent, heavy texture in root bark and soil, soft edges in the surrounding dark.",
+  "detail_level": "Fine texture on the woven wrapping and the nearest root bark; the standing figures and the far darkness left deliberately soft and unresolved.",
+  "composition": "The hollow and its wrapped form slightly below centre, framed by two great root arches crossing overhead; the standing silhouettes small along the left edge; deep unbroken dark filling the upper right.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "diagram lines",
+    "visible face",
+    "visible skin",
+    "gore",
+    "decay",
+    "exposed remains",
+    "fire",
+    "torches",
+    "machines",
+    "buildings"
+  ],
+  "consistency_notes": "Restraint is essential: the body is fully and respectfully wrapped, with no anatomy, no decay and no distress visible — this is a burial, not a corpse study. The root luminescence must read as ordinary Pandoran bioluminescence, faint and organic, never as a glowing network or technology. The standing figures are distant observers and must not be a focal point.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no visible face, no exposed body, no gore, no decay, no skeletal remains, no fire or torchlight, no glowing wires, no machines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon style",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

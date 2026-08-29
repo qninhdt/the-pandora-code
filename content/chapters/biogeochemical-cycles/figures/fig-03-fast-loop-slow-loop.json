@@ -1,0 +1,36 @@
+{
+  "id": "fig-03-fast-loop-slow-loop",
+  "chapter_slug": "biogeochemical-cycles",
+  "role": "diagram",
+  "narrative_purpose": "Show why the two carbon circuits cannot be compared by size: draw the biological loop as enormous and bright and the geological one as vastly wider and nearly invisible, so the reader sees that the small faint one is the one that decides a planet's air.",
+  "subject": "Two concentric closed circuits drawn as flowing painted bands against a dark field. The inner circuit is broad, bright and tight: a thick luminous teal band passing in sequence through four painted stations — a patch of open air rendered as pale haze, a glowing leaf cluster, a large animal form in silhouette, and a mass of dark soil with pale root threads — then returning to the air. The band is thick and its flow texture is vigorous. The outer circuit is enormously wider, encircling the entire inner loop with room to spare, and is drawn as an extremely thin, faint, barely-there filament: it descends from the inner loop's soil station down into a layered seabed of pale sediment, continues through several bands of progressively darker compressed stone at the very bottom of the frame, and rises on the far side through a distant volcanic cone that exhales a thin pale plume back into the air station. Its filament is perhaps a twentieth the thickness of the inner band and only just visible.",
+  "scene": "A schematic double circuit of a planetary carbon cycle, drawn as a painted illustration plate.",
+  "camera": "Flat-on symmetrical view, both circuits fully within frame, plain dark field behind.",
+  "light": "Self-luminous: strong living-teal glow along the thick inner band and its stations; the outer filament almost unlit, catching only the faintest cool sheen; the volcanic cone carrying one small restrained ember-amber glow at its vent.",
+  "palette": "Void-indigo background, living teal and Pandora cyan in the bright inner circuit, weathered grey-stone and deep teal-indigo in the sediment and rock layers, a single small ember-amber accent at the volcanic vent only.",
+  "style": "Painterly schematic plate with visible brushwork in the flowing bands, soft-edged stations, hand-illustrated rather than vector or infographic.",
+  "detail_level": "Flow texture clearly readable as circulation in the inner band; the outer filament deliberately faint but continuous and traceable all the way round; stations suggested rather than fully rendered.",
+  "composition": "The bright inner circuit occupying the middle half of the frame; the faint outer circuit sweeping wide to the frame edges, dipping through stone at the bottom and rising through the volcano at the right; large quiet dark areas in the corners.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrowheads",
+    "leader lines",
+    "callout boxes",
+    "gridlines",
+    "buildings",
+    "humans",
+    "machines"
+  ],
+  "consistency_notes": "The thickness contrast between the two circuits is the entire content of the image and must be extreme — the outer filament should look almost negligible next to the inner band. Both circuits must be visibly closed loops with no gaps or breaks. Use flowing painted bands, not arrows: no arrowheads anywhere.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrowheads, no leader lines, no callout boxes, no gridlines, no vector or flat infographic look, no photographic or 3D-render look, no glossy sheen, no neon UI glow",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

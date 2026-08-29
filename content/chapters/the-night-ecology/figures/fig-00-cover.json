@@ -11,9 +11,24 @@
   "style": "Painterly cinematic naturalist plate, hand-painted texture, strong atmospheric depth.",
   "detail_level": "Crisp on the glowing root network and the foreground predator; the grazer and mid-forest softer; canopy and sky dissolving into haze.",
   "composition": "The dark canopy and eclipsed sky across the upper third, the luminous ground filling the lower two-thirds, the predator lower-left and the departing grazer centre-right, generous dark sky for text, 3:2 landscape.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Cool Pandora palette with the key light coming from the ground, not the sky. Same dark glowing mood as the established chapter covers; reuse the forest-cathedral trunk language from the earlier forest plates.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style, no warm sunlight",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

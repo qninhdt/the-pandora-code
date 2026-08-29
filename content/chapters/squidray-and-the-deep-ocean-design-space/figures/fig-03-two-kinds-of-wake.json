@@ -10,7 +10,7 @@
   "palette": "Void indigo water, bright Pandora cyan in the tight fast rings, dim soft teal in the broad gentle loops, faint mist grey in the turbulent froth.",
   "style": "Painterly flow-visualisation plate, as if a naturalist had photographed glowing plankton caught in two wakes.",
   "detail_level": "Crisp on the ring geometry and spacing in both bands; the propulsors at the right edge only partly shown and less detailed.",
-  "composition": "Two stacked horizontal registers of equal height, wakes running right to left in both, plain black water at the left end of each band for annotations.",
+  "composition": "Two stacked horizontal registers of equal height, wakes running right to left in both, plain black water at the left end of each band framed by deep negative space.",
   "exclude": [
     "text",
     "letters",
@@ -25,7 +25,9 @@
     "grid lines",
     "panel borders",
     "streamline diagrams",
-    "whole animals"
+    "whole animals",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "The two wakes must differ clearly in ring size, spacing and brightness: upper small tight bright and many, lower large sparse faint and few. Same palette in both bands.",
   "aspect_ratio": "16:9",

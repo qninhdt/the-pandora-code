@@ -1,0 +1,22 @@
+id: graphitization
+label:
+  vi: Quá trình graphit hóa
+  en: Graphitization
+definition:
+  vi: Quá trình nhiệt phân chuyển hóa carbon vô định hình hoặc các polymer hữu cơ
+    thành mạng tinh thể than chì (graphite) có cấu trúc lục giác phẳng liên kết sp²,
+    thường đòi hỏi nhiệt độ từ 1.000 đến 3.000 °C trong môi trường khí trơ khan nước,
+    là rào cản nhiệt đối với sinh tổng hợp tế bào.
+  en: The high-temperature transformation of amorphous carbon or organic polymers
+    into layered crystalline hexagonal graphite with sp² hybridization, typically
+    requiring 1,000–3,000 °C in dry inert atmospheres, posing a severe thermodynamic
+    barrier for cellular biology.
+see_also:
+- chemistry
+- physics
+category: concept
+tags:
+- chemistry
+- physics
+cover_prompt: Aligned graphitic ribbons condensing within a dark void, fiery amber
+  heat transitioning to cool ordered lattice, painterly naturalist art, no text.

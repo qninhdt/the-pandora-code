@@ -1,0 +1,16 @@
+id: prebiotic-chemistry
+label:
+  vi: Hóa học tiền sinh mệnh (prebiotic chemistry)
+  en: Prebiotic chemistry
+definition:
+  vi: 'Nhánh hóa học nghiên cứu các phản ứng có thể đã tạo ra vật liệu của sự sống trước khi có sự sống — từ khí núi lửa, nước và ánh sáng tới axit amin, đường, base nitơ và axit béo. Đây là phần đã tiến xa nhất trong bài toán nguồn gốc: các đơn phân hình thành khá dễ dàng trong nhiều điều kiện khả tín khác nhau, và thiên thạch còn mang thêm chúng tới. Khó khăn không nằm ở việc tạo ra nguyên liệu, mà ở mọi bước sau đó.'
+  en: 'The chemistry of the reactions that could have produced life''s raw materials before there was any life — from volcanic gas, water and light to amino acids, sugars, nucleobases and fatty acids. It is the part of the origin problem that has advanced furthest: monomers form fairly readily under a range of plausible conditions, and meteorites deliver more of them. The difficulty is not making the parts; it is everything after that.'
+see_also:
+  - abiogenesis
+  - carbonaceous-chondrite
+  - rna-world
+category: concept
+tags:
+- chemistry
+- astrobiology
+cover_prompt: A painted study of dark volcanic gas vents releasing pale wisps that condense into small glowing cyan molecular clusters drifting above a shallow pool, cool palette against deep indigo, painterly, no text, no labels, no numbers.

@@ -11,10 +11,28 @@
   "style": "Painterly naturalist astronomical plate, soft, atmospheric, NOT a render and NOT a hard vector diagram.",
   "detail_level": "Moderate: main planet crisp, the offset repeats softer to read as a slow loop of motion; ridge low-detail and dark.",
   "composition": "Planet and its small looping trail of ghosted positions centred high, generous starfield, low dark horizon along the bottom for grounding.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "drawn path lines", "grid", "watermark", "logos", "UI", "clock faces"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "drawn path lines",
+    "grid",
+    "watermark",
+    "logos",
+    "UI",
+    "clock faces",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same Polyphemus as the cover (identical bands and eye-storm). The looping repeats must read as the same planet at slightly different sky positions, not as several different planets. No drawn motion lines or arrows.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no drawn path lines, no grid, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"
+  ]
 }

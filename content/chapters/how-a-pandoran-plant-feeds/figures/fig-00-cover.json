@@ -1,0 +1,20 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "how-a-pandoran-plant-feeds",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate on the landing book-map: one violet leaf held up against a sky with two suns in it — the single image that poses the chapter's question, why is this leaf that colour, and hints that the answer is overhead.",
+  "subject": "A single large violet leaf held upright and slightly translucent in the foreground, its ribbed veins glowing faintly teal from within, backlit so light passes through the leaf blade. Behind and far above it, two suns hang in a hazy sky: a larger pale yellow-white one and a smaller, dimmer orange one further off. The leaf's edges catch a rim of cyan light.",
+  "scene": "A high forest clearing at late afternoon, tall violet-black canopy shapes receding into layered haze on both sides, the sky opening in the middle where the two suns sit.",
+  "camera": "A close low three-quarter view of the leaf, the suns small and distant behind it, shallow depth so the canopy behind dissolves.",
+  "light": "Strong backlight through the leaf blade making its violet glow from behind; a faint internal teal bioluminescence beginning along the veins; deep indigo shadow filling the canopy on either side.",
+  "palette": "Void-indigo and deep teal canopy shadow dominating the frame, the leaf in saturated violet and magenta, the two suns as small restrained warm amber and pale mist highlights against hazy sky.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, a field botanist's specimen study of an alien leaf.",
+  "detail_level": "Crisp on the leaf's vein structure, waxy surface texture and translucent blade; canopy and sky soft and atmospheric.",
+  "composition": "The leaf occupying the left and lower centre of the frame, the open sky with its two suns in the upper right, generous hazy negative space between them.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "diagrams", "human figures", "Na'vi figures", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette with scarce warm accents confined to the two distant suns; the leaf is the subject and the sky is the explanation.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style, no vector flat design",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": []
+}

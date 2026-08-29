@@ -1,0 +1,29 @@
+{
+  "id": "fig-03-nacre-brick-mortar-materials-of-life",
+  "chapter_slug": "materials-of-life",
+  "role": "inline",
+  "narrative_purpose": "Show the nanoscale brick-and-mortar structure that gives nacre its toughness.",
+  "subject": "Microscopic cutaway view showing flat pale crystalline platelets stacked tightly like staggered brickwork. Between the thick white bricks are extremely thin dark organic layers. A jagged glowing-red crack is seen zigzagging around the bricks, forced to travel along the thin mortar lines rather than cutting straight through the blocks.",
+  "scene": "Deep microscopic void background, glowing accents on the crack path to highlight the deflection.",
+  "camera": "Medium distance, clear descriptive view, level angle.",
+  "light": "Bioluminescent key light highlighting structural details, deep teal-indigo ambient shadows, volumetric haze in the background.",
+  "palette": "Cool Pandora base (Void indigo, Deep teal-indigo, Ocean teal, Pandora cyan, Living teal) with sparing Biolum magenta or Ember amber accents for key structural features.",
+  "style": "Original speculative-biology painterly illustration, naturalist plate energy, detailed structural cutaway.",
+  "detail_level": "High structural detail, precise geometry, visible material textures (grain, fibres, layers).",
+  "composition": "Clear focal subject, generous negative space of haze and shadow, no clutter.",
+  "exclude": [
+    "text",
+    "labels",
+    "arrows",
+    "diagram lines",
+    "numbers",
+    "watermarks",
+    "signatures",
+    "UI elements"
+  ],
+  "consistency_notes": "Follow STYLE BIBLE. Ensure painterly feel, no 3D render plastic.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "text, numbers, captions, labels, watermarks, signatures, arrows, leader lines, UI chrome, flat-design infographic, textbook clip art, CAD, 3D render, photographic, lens flare, CGI plastic.",
+  "style_refs": [],
+  "character_refs": []
+}

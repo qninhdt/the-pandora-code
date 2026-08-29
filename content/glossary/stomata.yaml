@@ -1,0 +1,17 @@
+id: stomata
+label:
+  vi: Khí khổng
+  en: Stomata
+definition:
+  vi: 'Những cái lỗ li ti trên mặt lá, mỗi lỗ là một khe giữa hai tế bào chuyên biệt biết phồng lên và xẹp xuống để mở rộng hay khép kín khe ấy. Chúng tồn tại vì lá buộc phải cho CO₂ vào mới ăn được, và khí chỉ có thể vào qua một cái lỗ. Nhưng ruột lá thì ướt, nên cái lỗ nào cho khí vào cũng để hơi nước ra — không có màng, không có van, không mẹo hình học nào tách được hai chiều ấy. Vì thế mỗi khí khổng là chỗ diễn ra cuộc mặc cả trung tâm của đời một chiếc lá, và thứ duy nhất cây điều khiển được là: mở rộng bao nhiêu, ngay lúc này.'
+  en: 'The microscopic pores on a leaf''s surface, each a slit between two specialised cells that swell and slacken to widen or close it. They exist because a leaf must let CO₂ in to eat, and gas can only enter through a hole. But a leaf''s interior is wet, so any hole that admits gas also lets water vapour out — no membrane, no valve, no trick of geometry separates the two directions. Each stoma is therefore where the central bargain of a leaf''s life is struck, and the only thing the plant controls is how far to open it, right now.'
+see_also:
+- transpiration
+- water-use-efficiency
+- stomatal-index
+- turgor-pressure
+category: bio
+tags:
+- physiology
+- physics
+cover_prompt: A painted extreme close view of a leaf surface with one pore at its centre, formed by two curved kidney-shaped cells bowing apart, a faint thread of vapour rising from the gap and a faint stream of gas descending into it, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

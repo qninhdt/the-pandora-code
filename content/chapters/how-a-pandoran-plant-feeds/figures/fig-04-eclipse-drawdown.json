@@ -1,0 +1,20 @@
+{
+  "id": "fig-04-eclipse-drawdown",
+  "chapter_slug": "how-a-pandoran-plant-feeds",
+  "role": "inline",
+  "narrative_purpose": "Makes the eclipse beat physical: a gas giant blotting out the working day on a schedule, the canopy thrown into shadow, and the glow strengthening while fixation stops and reserves burn.",
+  "subject": "An enormous banded gas giant filling much of the upper sky, its limb sliding across and blotting out a small bright sun so only a thin crescent of direct light remains at its edge. Below it, the upper surface of a violet forest canopy lies in deep shadow, and along the veins and undersides of the topmost leaves a cold cyan bioluminescence has strengthened into visible glowing lines and patches.",
+  "scene": "A view across the top of the canopy from just above it, the forest receding into hazy distance below, the gas giant dominating overhead at the moment of occultation.",
+  "camera": "A wide elevated view looking slightly upward across the canopy toward the eclipsing planet, canopy in the lower third and sky above.",
+  "light": "Direct light almost entirely cut off — only a thin rim of pale light at the planet's edge and a dim red-shifted wash refracted around it; the canopy's own cyan and teal bioluminescence is now the dominant light in the frame.",
+  "palette": "Void-indigo sky and deep teal-indigo canopy shadow dominating; the gas giant rendered in dark desaturated stone and deep teal bands; glow in Pandora cyan and living teal; one thin restrained ember-amber rim where light refracts past the planet's edge.",
+  "style": "Painterly speculative-biology naturalist plate, hand-painted texture, atmospheric and observed.",
+  "detail_level": "Crisp on the glowing leaf veins in the near canopy and on the planet's limb; mid and far canopy soft and hazy.",
+  "composition": "Canopy across the lower third, the gas giant's curve occupying the upper left and centre, a broad dark quiet region of sky to the right for overlaid callouts.",
+  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "diagrams", "human figures", "Na'vi figures", "Avatar branding"],
+  "consistency_notes": "Cool Pandora palette; the frame must feel like light being taken away rather than like night — the sky is still daytime-hazy, just occluded.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style, no vector flat design",
+  "style_refs": ["pandora-establishing.png"],
+  "character_refs": ["apps/web/public/images/chapters/how-a-pandoran-plant-feeds/fig-00-cover.png"]
+}

@@ -24,9 +24,11 @@
     "webbing between fingers",
     "fins",
     "modern equipment",
-    "Avatar branding"
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "The flare is a ridge of the limb's own muscle and fibrous tissue, continuous with the arm — not a fin, not a membrane, and not webbing between the fingers. Five long fingers on the hand, relaxed and open.",
+  "consistency_notes": "The flare is a ridge of the limb's own muscle and fibrous tissue, continuous with the arm \u2014 not a fin, not a membrane, and not webbing between the fingers. Five long fingers on the hand, relaxed and open.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no labels, no arrows, no webbed fingers, no swim fins, no photographic or 3D-render look, no cartoon style",
   "style_refs": [

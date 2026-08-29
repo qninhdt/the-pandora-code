@@ -21,11 +21,16 @@
     "sharp foreground object",
     "UI",
     "watermark",
-    "logos"
+    "logos",
+    "arrows",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "This is the dim background layer, distinct from the crisp fig-00-cover. Keep it dark, hazy, low-contrast and focal-point-free so overlaid long-form text remains readable.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no bright focal subject, no high contrast, no sharp foreground, no diagram chrome, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

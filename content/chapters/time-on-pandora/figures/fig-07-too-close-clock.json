@@ -11,10 +11,27 @@
   "style": "Painterly comparative astronomy plate with tactile planetary surfaces, not a vector orbital chart.",
   "detail_level": "Crisp moon shapes and fissures; planet bands slightly softer; plain dark background for later labels.",
   "composition": "Matched halves with gas giant on the inner edge and moon outward; the left gap extremely narrow, the right gap visibly several times wider.",
-  "exclude": ["text", "letters", "numbers", "labels", "orbit lines", "arrows", "clocks", "different gas giants", "spacecraft", "watermark"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "orbit lines",
+    "arrows",
+    "clocks",
+    "different gas giants",
+    "spacecraft",
+    "watermark",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Both panels show the same Polyphemus and same moon at different orbital distances. The close case must read as distorted and volcanically overheated; the wide case as round and habitable.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no labels, no orbit rings, no arrows, no planet-size mismatch between panels, no extra moons, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/time-on-pandora/fig-00-cover.png"
+  ]
 }

@@ -1,0 +1,22 @@
+id: euler-buckling
+label:
+  vi: Mất ổn định uốn dọc Euler
+  en: Euler buckling
+definition:
+  vi: Hiện tượng một thanh dầm hoặc cột chịu nén dọc trục đột ngột mất ổn định và
+    bị uốn cong sang một bên trước khi vật liệu chạm tới giới hạn chịu nén phá hủy.
+    Chiều cao giới hạn dưới tải trọng bản thân tỷ lệ với căn bậc ba của độ cứng riêng
+    và lũy thừa 2/3 của đường kính đáy, giải thích vì sao các đại thụ mở rộng rễ bạnh.
+  en: The sudden lateral failure of a slender column subjected to axial compressive
+    stress before reaching material crushing strength. Self-weight buckling height
+    scales with the cube root of specific modulus and the 2/3 power of base diameter,
+    favoring wide buttress bases in giant trees.
+see_also:
+- youngs-modulus
+- second-moment-of-area
+category: concept
+tags:
+- physics
+- earth-systems
+cover_prompt: A slender biological column bending under compressive load beside a
+  massive flared buttress trunk, cool teal ambient light, painterly style, no text.

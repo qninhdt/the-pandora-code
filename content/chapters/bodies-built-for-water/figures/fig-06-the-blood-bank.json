@@ -24,9 +24,11 @@
     "medical diagram styling",
     "graphs",
     "surgical instruments",
-    "Avatar branding"
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "The organ reads as a soft contractile sac being squeezed, not a cut or wounded organ. The cells are small discs, many of them, clearly moving in one direction. No arrows anywhere — direction is shown by the shape of the stream.",
+  "consistency_notes": "The organ reads as a soft contractile sac being squeezed, not a cut or wounded organ. The cells are small discs, many of them, clearly moving in one direction. no artificial graphics anywhere \u2014 direction is shown by the shape of the stream.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no labels, no arrows, no graphs, no surgical or clinical look, no photographic or 3D-render look, no cartoon style",
   "style_refs": [

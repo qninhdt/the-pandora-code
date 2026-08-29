@@ -10,7 +10,7 @@
   "palette": "Deep indigo void, pale grey-white wing forms, cyan edge glow on the first three, teal on the fourth.",
   "style": "Painterly museum specimen sheet, brushed and hand-worked, like pressed wings pinned on dark board.",
   "detail_level": "Crisp clean outlines on all four, faint membrane texture within each, plain void between them.",
-  "composition": "Four forms in an evenly spaced horizontal row, all sharing one baseline, generous plain dark space above each for overlaid callouts.",
+  "composition": "Four forms in an evenly spaced horizontal row, all sharing one baseline, generous plain dark space above each framed by deep negative space.",
   "exclude": [
     "text",
     "letters",
@@ -25,10 +25,14 @@
     "vector flat style",
     "infographic style",
     "photographic look",
-    "bird bodies or heads"
+    "bird bodies or heads",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Wings only - no bodies, heads or feet, so the reader compares planform and nothing else. All four at the same scale and same total area, differing only in shape and proportion. The fourth must clearly be TWO pairs in tandem, visibly narrower in span than the other three.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no rulers or scale bars, no vector-flat infographic look, no photographic or 3D render, no cartoon style, no bird heads or bodies",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

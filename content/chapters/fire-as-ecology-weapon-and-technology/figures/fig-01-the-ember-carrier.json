@@ -24,12 +24,17 @@
     "smoke plume",
     "green vegetation",
     "metal bowl",
-    "photographic look"
+    "photographic look",
+    "arrows",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "A GLOWING COAL, not a flame — no fire tongues anywhere. The bowl is light grey porous pumice, solid on the near side and pierced with a row of small holes on the far side; the same bowl recurs elsewhere in the chapter. Cool grey dominant, one contained warm glow.",
+  "consistency_notes": "A GLOWING COAL, not a flame \u2014 no fire tongues anywhere. The bowl is light grey porous pumice, solid on the near side and pierced with a row of small holes on the far side; the same bowl recurs elsewhere in the chapter. Cool grey dominant, one contained warm glow.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no open flame, no sparks flying, no green vegetation, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": [
     "apps/web/public/images/chapters/fire-as-ecology-weapon-and-technology/fig-00-cover.png"
   ]

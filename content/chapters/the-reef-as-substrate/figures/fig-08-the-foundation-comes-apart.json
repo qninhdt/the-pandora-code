@@ -9,8 +9,8 @@
   "light": "Muted, desaturated daylight above with drifting ash; below, faint dying cyan glow on the last living patches, cold grey on the dissolving framework, indigo in the collapsing cavities.",
   "palette": "Desaturated ashen grey above, cold stone-grey dissolving reef, sparse dying cyan, void indigo shadow.",
   "style": "Painterly naturalist plate, quiet and unsettling rather than explosive.",
-  "detail_level": "Crisp on the tilting dwelling, the sagging root and the dissolving reef edge; hazy calm elsewhere for callouts.",
-  "composition": "Calm ashen upper third, waterline across the middle, decaying reef lower two-thirds, open margins for labels contrasting visible vs invisible collapse.",
+  "detail_level": "Crisp on the tilting dwelling, the sagging root and the dissolving reef edge; hazy calm elsewhere framed by deep negative space.",
+  "composition": "Calm ashen upper third, waterline across the middle, decaying reef lower two-thirds, generous deep indigo negative space contrasting visible vs invisible collapse.",
   "exclude": [
     "text",
     "letters",
@@ -24,7 +24,9 @@
     "fireballs",
     "RDA machinery",
     "callout lines",
-    "Avatar branding"
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "The tone is quiet decay, not a battle. Same village and reef palette as the cover and fig-01, now failing. Dissolution shows as crumbling pale framework, not blast damage.",
   "aspect_ratio": "4:3",

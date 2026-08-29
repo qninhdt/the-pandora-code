@@ -2,7 +2,7 @@
   "id": "fig-00-cover",
   "chapter_slug": "the-forest-as-a-cathedral",
   "role": "hero",
-  "narrative_purpose": "The chapter's representative plate on the landing book-map: the Pandoran forest read as a cathedral — a single colossal Hometree soaring out of a tiered forest, daylight falling through the vaulted canopy in long shafts, the one image that says 'this forest has floors.'",
+  "narrative_purpose": "The chapter's representative plate on the landing book-map: the Pandoran forest read as a cathedral \u2014 a single colossal Hometree soaring out of a tiered forest, daylight falling through the vaulted canopy in long shafts, the one image that says 'this forest has floors.'",
   "subject": "A single immense Pandoran Hometree rising from the centre of a dense forest, its trunk made of many braided woody columns fused into one vast pillar; tiers of foliage stack up its height from a dim glowing forest floor through a shaded mid-level into a bright crown; long pale shafts of daylight break downward through gaps in the high canopy like light through cathedral windows; a few tiny winged creatures wheel near the sunlit crown for scale.",
   "scene": "A grand interior-of-the-forest vista at the base of a giant tree, the eye drawn upward through stacked layers of leaf and light.",
   "camera": "A low, slightly upward-tilted wide view from near the forest floor, emphasising the tree's height and the vertical stacking of layers.",
@@ -11,10 +11,26 @@
   "style": "Painterly speculative-biology naturalist plate, hand-painted texture, luminous and atmospheric, observed-from-life confidence.",
   "detail_level": "Crisp on the great trunk and the nearer foliage tiers; softening into haze and light toward the high crown.",
   "composition": "The Hometree trunk anchoring the centre, layers receding upward, light shafts crossing the frame diagonally, dark floor foreground for the plate to breathe.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "modern Earth objects"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding",
+    "modern Earth objects",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Landscape/architecture plate, no prominent figures. Cool Pandora palette with the cathedral-of-light mood that anchors the whole chapter.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no neon UI glow, no cartoon or anime style",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

@@ -9,8 +9,8 @@
   "light": "Cyan glow through the complex crevices on the left, flat dull light over the bare rubble on the right, indigo in the deep caves.",
   "palette": "Ocean teal and cyan on the living complex side, muted stone-grey on the flattened side, void indigo cave shadows.",
   "style": "Painterly naturalist comparison plate, organic, not an infographic.",
-  "detail_level": "Crisp on the crevices and sheltering fauna at left and the bare rubble at right; open water above for callouts.",
-  "composition": "Complex-left / flat-right across the frame with open low-detail water band above for labels on rugosity and lost habitat.",
+  "detail_level": "Crisp on the crevices and sheltering fauna at left and the bare rubble at right; open water above framed by deep negative space.",
+  "composition": "Complex-left / flat-right across the frame with open low-detail water band above framed by deep negative space on rugosity and lost habitat.",
   "exclude": [
     "text",
     "letters",
@@ -21,7 +21,9 @@
     "UI",
     "arrows",
     "panel borders",
-    "callout lines"
+    "callout lines",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Same reef footprint both sides; the difference is structural complexity, not species. Keep palette consistent with earlier reef figures.",
   "aspect_ratio": "16:9",

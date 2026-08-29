@@ -10,11 +10,31 @@
   "palette": "Deep indigo and teal sky and cloud sea, pale translucent cyan bells, a few small ember-amber fire points.",
   "style": "Painterly speculative-biology naturalist plate, serene and elegiac.",
   "detail_level": "Crisp on the nearest bell, its gondolas and rope walkways; successive bells softening into haze with distance.",
-  "composition": "The line of bells across the middle of the frame at slightly different heights, cloud sea below, vast open sky above, generous plain dark sky for later callout labels.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "propellers", "metal airships", "fire damage", "combat", "photographic look"],
+  "composition": "The line of bells across the middle of the frame at slightly different heights, cloud sea below, vast open sky above, generous plain dark sky framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "propellers",
+    "metal airships",
+    "fire damage",
+    "combat",
+    "photographic look",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "A peaceful travelling community, not a fleet or a military formation. Bells consistent with fig-00-cover; tug animals consistent with fig-07.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no propellers, no metal airships, no combat, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/the-biological-zeppelin/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/the-biological-zeppelin/fig-00-cover.png"
+  ]
 }

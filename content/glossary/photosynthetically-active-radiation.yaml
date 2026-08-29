@@ -1,0 +1,18 @@
+id: photosynthetically-active-radiation
+label:
+  vi: Bức xạ quang hợp hữu hiệu (PAR)
+  en: Photosynthetically active radiation (PAR)
+definition:
+  vi: 'Dải bước sóng từ 400 đến 700 nm — gần đúng bằng vùng mắt người thấy được — mà thực vật trên Trái Đất dùng được cho quang hợp. Người ta đo PAR bằng số photon chứ không bằng năng lượng, vì bộ máy quang hợp đếm từng hạt sáng: mỗi phân tử CO₂ cố định được cần chừng 8 đến 10 photon, bất kể mỗi photon mang bao nhiêu năng lượng. Đáng nhớ là giới hạn 700 nm không phải một định luật vũ trụ mà là đặc điểm của sắc tố Trái Đất; dưới một ngôi sao đỏ hơn, dải hữu hiệu hoàn toàn có thể trải xa hơn về phía hồng ngoại.'
+  en: 'The 400 to 700 nm band — roughly what a human eye can see — that Earth plants can use for photosynthesis. PAR is measured in photons rather than energy, because the machinery counts individual particles of light: fixing one molecule of CO₂ takes something like 8 to 10 photons regardless of how much energy each one carries. Worth remembering that the 700 nm cutoff is not a cosmic law but a property of Earth''s pigments; under a redder star the useful band could extend considerably further into the infrared.'
+see_also:
+- photosynthesis
+- chlorophyll
+- green-gap
+- red-edge
+category: concept
+tags:
+- physics
+- physiology
+- astrobiology
+cover_prompt: A painted band of light broken into discrete glowing particles streaming toward a leaf surface, the particles at the blue and red ends being absorbed while those beyond the band's edges drift past, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

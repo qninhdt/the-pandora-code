@@ -2,7 +2,7 @@
   "id": "fig-00-cover",
   "chapter_slug": "fire-as-ecology-weapon-and-technology",
   "role": "hero",
-  "narrative_purpose": "Capture the chapter at a glance: a Na'vi rider on a flying mount carrying live fire across a dead volcanic landscape — a people who turned the thing that destroyed them into the only material they have left.",
+  "narrative_purpose": "Capture the chapter at a glance: a Na'vi rider on a flying mount carrying live fire across a dead volcanic landscape \u2014 a people who turned the thing that destroyed them into the only material they have left.",
   "subject": "A tall blue-skinned Na'vi rider seated on a large winged flying creature with a long membrane wing on each side, seen from the side and slightly below, banking across the frame. In one hand the rider holds a small pierced grey stone bowl with a single glowing orange coal inside it, the only bright warm point in the picture. The rider wears dark hide and bone, with pale ash markings on the arms.",
   "scene": "High above a vast grey volcanic ash plain, a low ridge on the distant horizon leaking two thin pale plumes of vapour, the sky a dim ashen indigo with layered haze. No vegetation anywhere in the frame.",
   "camera": "Wide cinematic side view from slightly below the flyer, the rider and mount placed in the upper third, the grey plain filling the lower two thirds.",
@@ -25,10 +25,15 @@
     "explosions",
     "RDA aircraft",
     "lens flare",
-    "photographic look"
+    "photographic look",
+    "arrows",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "A bleak volcanic wasteland on Pandora: grey tephra, dim ashen sky, distant venting ridge. The mood is grim endurance, not spectacle. Cool grey-indigo dominant with exactly one small warm ember point. This rider and this pierced stone ember bowl recur through the chapter — dark hides, bone ornament, ash markings, a light grey pumice bowl pierced with holes on one side.",
+  "consistency_notes": "A bleak volcanic wasteland on Pandora: grey tephra, dim ashen sky, distant venting ridge. The mood is grim endurance, not spectacle. Cool grey-indigo dominant with exactly one small warm ember point. This rider and this pierced stone ember bowl recur through the chapter \u2014 dark hides, bone ornament, ash markings, a light grey pumice bowl pierced with holes on one side.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no green rainforest, no neon glow, no big fire or explosion, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

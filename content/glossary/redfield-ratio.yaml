@@ -1,0 +1,34 @@
+id: redfield-ratio
+label:
+  vi: Tỷ lệ Redfield
+  en: Redfield ratio
+definition:
+  vi: >-
+    Tỷ lệ nguyên tử gần như cố định giữa carbon, nitơ và phốt pho trong sinh vật phù du biển — khoảng
+    106 : 16 : 1 — và trong nước biển sâu mà chúng để lại. Alfred Redfield phát hiện điều này năm 1934,
+    và điều làm nó đáng chú ý là nó chạy theo cả hai chiều: sinh học không chỉ tuân theo hóa học của
+    đại dương mà còn định hình chính hóa học ấy, vì vi khuẩn cố định đạm bù đắp phần nitơ thiếu cho đến
+    khi nước khớp với nhu cầu của sinh vật. Tỷ lệ này là một điểm cân bằng trung bình chứ không phải hằng
+    số: các loài và các vùng biển lệch khỏi nó khá nhiều, và chính những chỗ lệch ấy lại nói cho ta biết
+    dưỡng chất nào đang giới hạn ở đâu.
+  en: >-
+    The nearly fixed atomic ratio of carbon to nitrogen to phosphorus in marine plankton — about
+    106 : 16 : 1 — and in the deep seawater they leave behind. Alfred Redfield noticed it in 1934, and
+    what makes it remarkable is that the causation runs both ways: biology does not merely obey the
+    ocean's chemistry, it sets that chemistry, because nitrogen-fixing organisms make up any nitrogen
+    shortfall until the water matches what life needs. The ratio is an average balance point rather than
+    a constant: species and ocean regions depart from it considerably, and those departures are exactly
+    what reveal which nutrient limits where.
+see_also:
+  - limiting-nutrient
+  - nitrogen-fixation
+  - biological-pump
+category: concept
+tags:
+  - oceanography
+  - ecology
+  - chemistry
+cover_prompt: >-
+  A painted microscopy plate of marine plankton — glassy diatoms and delicate radiolarian shells —
+  suspended in dark water, three of them lit in graded intensities of teal, cyan and amber to suggest
+  proportion, painterly naturalist illustration, no text, no numbers, no labels.

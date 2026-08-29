@@ -11,9 +11,26 @@
   "style": "Painterly naturalist plate, tender and specific, a portrait of one plant against emptiness.",
   "detail_level": "High detail on the lupine and the small darker soil patch it is building; plain dissolves to haze.",
   "composition": "The lupine low and slightly off-centre, huge empty pumice negative space around it to stress its isolation.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "a whole meadow of flowers", "lush forest", "photographic look", "Earth signage"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "a whole meadow of flowers",
+    "lush forest",
+    "photographic look",
+    "Earth signage",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "ONE isolated pioneer plant on bare pumice, not a field of flowers. The story is a single colonist building the first patch of soil. Grey sterile ground with living-teal plant accent.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no meadow, no dense vegetation, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

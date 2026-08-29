@@ -11,10 +11,27 @@
   "style": "Painterly naturalist comparison plate, hand-painted texture, deliberately matched staging between panels.",
   "detail_level": "Crisp on all six animals so each is identifiable; the shared background rendered identically and slightly softer in both panels.",
   "composition": "Two full-width horizontal panels stacked with a thin dark division, matched geography, animals spread across each so none overlaps its counterpart above or below, 4:3 overall.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Cool Pandora palette. The pack predators, grazer and flier must match their appearance in the chapter cover and the shift-change plate.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no cartoon or anime style",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/the-night-ecology/fig-01-eclipse-shift-change.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/the-night-ecology/fig-01-eclipse-shift-change.png"
+  ]
 }

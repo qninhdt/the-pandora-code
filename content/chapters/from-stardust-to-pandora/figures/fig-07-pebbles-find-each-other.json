@@ -11,10 +11,29 @@
   "style": "Painterly naturalist plate, soft-edged, textured brushwork, atmospheric depth.",
   "detail_level": "High on the filament and the newly formed body; the surrounding drifting pebbles progressively softer with distance.",
   "composition": "The filament runs from lower left to centre right on a gentle diagonal. The new body sits at its right end. The upper left third is open dark haze for a callout.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "motion lines", "watermark", "logos", "UI", "grid", "stars", "spacecraft"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "motion lines",
+    "watermark",
+    "logos",
+    "UI",
+    "grid",
+    "stars",
+    "spacecraft",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The contrast that must survive is density: the filament visibly crowded, the surroundings visibly sparse. No drawn arrows indicating drift.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no motion lines, no grid, no diagram chrome, no spacecraft, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/from-stardust-to-pandora/fig-06-collapse-into-a-disk.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/from-stardust-to-pandora/fig-06-collapse-into-a-disk.png"
+  ]
 }

@@ -1,9 +1,16 @@
-import { FloatingMountainFigure } from "@/components/three/floating-mountain-figure";
 import { FluxFieldFigure } from "@/components/three/flux-field-figure";
 
-<FloatingMountainFigure
-  poster="/images/chapters/floating-mountains-and-the-superconductor/fig-01-rider-between-peaks.webp"
+<DiagramFigure
+  src="/images/chapters/floating-mountains-and-the-superconductor/fig-01-rider-between-peaks.webp"
+  labels={[
+    { x: 45, y: 35, side: "right", label: "Levitating monolith", note: "Kilometer-scale karst rock mass suspended in mid-air above the cloud deck." },
+    { x: 22, y: 55, side: "left", label: "Mountain rider", note: "Ikran rider navigating the sheer vertical gaps between floating peaks." },
+    { x: 65, y: 70, side: "right", label: "Tethering lianas", note: "Massive epiphyte vines trailing across the open air between levitating bodies." }
+  ]}
+  alt="A banshee rider flies between massive floating karst rock peaks of the Hallelujah Mountains suspended above a dense cloud deck at dawn"
+  figNo="01"
   caption="The Hallelujah Mountains — slabs of rock hanging where they have every right to fall."
+  tier="canon"
 />
 
 A banshee comes up through the cloud deck at dawn, and the first thing you see is wrong. Not strange-beautiful, not alien-pretty — *wrong*, in the specific way that makes a physicist sit up. There is a mountain ahead of the rider, several kilometres of grey rock and dripping forest, and it is not attached to anything. It hangs. Below it is air, and below the air is more air, and somewhere far down through the mist is the ground it should be lying on.
@@ -22,6 +29,11 @@ Canon is specific about the cause: the mountains float because of <GlossaryTerm 
 
 <DiagramFigure
   src="/images/chapters/floating-mountains-and-the-superconductor/fig-03-unobtanium-core.webp"
+  labels={[
+    { x: 48, y: 65, side: "left", label: "Unobtanium ore deposit", note: "Dense room-temperature superconductor core embedded in the lower rock body." },
+    { x: 70, y: 45, side: "right", label: "Branching ore veins", note: "Superconducting mineral fingers extending upward through host silicate rock." },
+    { x: 30, y: 30, side: "left", label: "Host mountain mass", note: "Dormant, non-magnetic rock ballast providing downward gravitational stability." }
+  ]}
   alt="Cutaway of a floating island showing a glowing unobtanium deposit in its lower mass, veins branching out into the rock"
   figNo="03"
   caption="Cut a floating island open and canon puts the answer in the lower mass: a deposit of unobtanium, veined through the surrounding stone. Everything else in this chapter is an argument about what that ore is doing."
@@ -161,7 +173,12 @@ A magnet floating on Meissner repulsion is balanced, but it is balanced like a p
 
 <DiagramFigure
   src="/images/chapters/floating-mountains-and-the-superconductor/fig-07-earnshaw-instability.webp"
-  alt="A block balanced on the apex of a dome, with arrows fanning down its sides and a ghosted copy of the block sliding away"
+  labels={[
+    { x: 50, y: 30, side: "right", label: "Unstable saddle peak", note: "Laplace's equation dictates that pure static fields have no 3D potential well minimum." },
+    { x: 30, y: 65, side: "left", label: "Lateral slip vector", note: "Any minor sideways perturbation causes runaway lateral ejection off the magnetic hill." },
+    { x: 70, y: 65, side: "right", label: "Earnshaw theorem limit", note: "Static magnetic fields alone cannot achieve passive 3D levitation stability." }
+  ]}
+  alt="A dark geometric block balanced precariously on the apex of a luminous potential dome, with ghosted slip positions illustrating unstable equilibrium"
   figNo="07"
   caption="Earnshaw's theorem in one picture: the block on top of the dome is held up, and every direction it could move is downhill. Repulsion supplies the height and leaves the escape routes open."
   tier="real_science"

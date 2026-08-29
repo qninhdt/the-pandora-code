@@ -11,10 +11,28 @@
   "style": "Painterly specimen plate with a clean, study-like clarity; textured but legible zones.",
   "detail_level": "Crisp, clearly separated core and rim zones with visible concentric growth bands; background plain dark so labels stay readable over it.",
   "composition": "Crystal centered and large; the bright core sitting around the left-center of the frame and the paler rim around the upper-right shoulder, leaving open dark space beside each for callout labels added later.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout dots", "arrows", "leader lines", "busy background"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout dots",
+    "arrows",
+    "leader lines",
+    "busy background",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same glowing zircon motif as the cover and fig-01 (bright core, paler rim). Keep the background simple and dark so interface labels overlay cleanly. Cool Pandora palette.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no callout dots or leader lines, no infographic chrome, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/pandoras-deep-time/fig-00-cover.png"
+  ]
 }

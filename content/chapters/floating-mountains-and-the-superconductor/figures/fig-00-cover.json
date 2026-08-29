@@ -17,7 +17,12 @@
     "people",
     "spacecraft",
     "Earth trees",
-    "birds"
+    "birds",
+    "letters",
+    "labels",
+    "arrows",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Grey weathered rock, blue-green canopy on top, cyan-teal glowing mist around the base. This image defines the look every other floating-mountain scene in the chapter must match.",
   "aspect_ratio": "16:9",

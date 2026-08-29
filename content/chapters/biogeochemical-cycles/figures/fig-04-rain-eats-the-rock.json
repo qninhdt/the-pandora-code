@@ -1,0 +1,37 @@
+{
+  "id": "fig-04-rain-eats-the-rock",
+  "chapter_slug": "biogeochemical-cycles",
+  "role": "diagram",
+  "narrative_purpose": "Make the slowest important reaction on a rocky planet physically visible: show acidic rain actually taking mineral apart, so the weathering thermostat reads as a real chemical process rather than an abstraction.",
+  "subject": "A close naturalist study of a large fractured boulder face filling most of the frame, seen from arm's length. Rainwater runs down it in several distinct channels. Along the wetted paths the mineral surface is visibly altered: pitted, softened, granular, its sharp crystal edges rounded away and a pale weathering rind developing, while the dry rock between the channels remains hard-edged and unaltered. The contrast between the etched wet channels and the crisp dry stone is the image's subject. At the base of the boulder the runoff collects into a small clear rill, the water faintly clouded with pale dissolved and suspended mineral load, and runs off toward the lower edge of the frame. Fine rain streaks the air. A few small glowing plants root in a crack at the boulder's shoulder.",
+  "scene": "Rain weathering an exposed silicate boulder in a Pandoran forest at dusk, seen very close.",
+  "camera": "Tight naturalist close view, the rock face nearly parallel to the picture plane, shallow depth so the near rock is crisp and the background forest dissolves.",
+  "light": "Cool low ambient dusk with a soft sheen on the wet channels; faint teal bioluminescence from the small plants in the crack spilling a little colour onto the nearest stone; deep indigo in the fractures.",
+  "palette": "Weathered grey-stone and desaturated mineral tones across the rock, void-indigo in the cracks and background, ocean teal in the running water, a small amount of living teal from the plants, no warm accent.",
+  "style": "Painterly naturalist specimen study, heavy tactile mineral texture, observed closely from life, hand-illustrated rather than rendered.",
+  "detail_level": "Very high on the rock surface — individual crystal faces, the pitting along the water paths, the grain of the weathering rind; the background forest deliberately soft.",
+  "composition": "The boulder face filling the upper two-thirds as a broad diagonal; the water channels running down it left of centre; the collecting rill along the bottom edge; the glowing crack plants small at the upper right.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "arrowheads",
+    "diagram lines",
+    "molecular diagrams",
+    "chemical formulas",
+    "buildings",
+    "humans",
+    "machines"
+  ],
+  "consistency_notes": "The etched-versus-fresh contrast along the water paths must be unmistakable — that difference is the whole teaching point. Keep it a real rock study, not a chemistry diagram: no molecules, no formulas, no annotation of any kind. The water is ordinary and clear, faintly clouded only near the base.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no chemical formulas, no molecular diagrams, no arrows, no arrowheads, no diagram lines, no vector or flat infographic look, no photographic or 3D-render look, no glossy sheen, no neon UI glow",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

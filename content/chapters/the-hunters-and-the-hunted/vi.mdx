@@ -45,6 +45,20 @@ Giờ hãy thêm bầy sói nantang vào. Một con hexapede phải bỏ mạng 
   caption="Nhịp đập mà toán học dự đoán. Số lượng hexapede (con mồi) và số lượng sói nantang (kẻ săn mồi) rượt đuổi nhau quanh một vòng lặp khép kín mãi mãi, làn sóng kẻ săn mồi luôn theo sau con mồi trễ một phần tư nhịp. Chuyển sang biểu đồ pha và chuyển động tương tự trở thành một quỹ đạo đơn lẻ mà hệ thống xoay quanh mà không bao giờ xoắn vào hay xoắn ra — sự cân bằng không phải là một điểm nghỉ, mà là một bánh xe không bao giờ ngừng quay."
 />
 
+<DiagramFigure
+  src="/images/chapters/the-hunters-and-the-hunted/fig-02-the-coupled-cycle.webp"
+  alt="Hai làn sóng quần thể phát sáng kết hợp theo thời gian: sóng con mồi màu cyan ở trên và sóng kẻ săn mồi màu magenta bám theo sau, thể hiện độ lệch pha kinh điển của phương trình Lotka-Volterra"
+  figNo="02"
+  labels={[
+    { x: 30, y: 32, side: "left", label: "Đỉnh quần thể con mồi (Yerik)", note: "Số lượng động vật ăn cỏ tăng vọt khi áp lực săn mồi còn thấp" },
+    { x: 48, y: 58, side: "right", label: "Đỉnh kẻ săn mồi trễ pha (Nantang)", note: "Kẻ săn mồi cần thời gian sinh sản nên đạt đỉnh trễ hơn, khi con mồi đã bắt đầu suy giảm" },
+    { x: 70, y: 75, side: "left", label: "Độ lệch pha liên kết", note: "Khoảng trễ một phần tư chu kỳ giữ cho bánh xe quần thể quay mãi mà không sụp đổ" }
+  ]}
+  caption="Nhịp đập liên kết. Sóng số lượng con mồi (cyan) đạt đỉnh trước; sóng kẻ săn mồi (magenta) đạt đỉnh sau một phần tư chu kỳ. Vì thú săn mồi cần thời gian nuôi lớn thế hệ con non, sự bùng nổ của chúng luôn đến trễ hơn nguồn thức ăn — tạo nên dao động vĩnh cửu thay vì một điểm cân bằng tĩnh."
+  tier="real_science"
+/>
+
+
 Và chu kỳ có một hình dạng đáng để bạn cảm nhận tận xương tủy, bởi vì nó giải thích cái sự "luôn trễ một nhịp" mà bạn đã thấy từ trên những ngọn cây. Bắt đầu với hàng đàn hexapede. Thức ăn ở khắp mọi nơi, vì vậy bầy sói nantang mở tiệc và sinh sản, và số lượng của chúng leo thang — nhưng việc leo thang cần có thời gian, đủ để nuôi lớn một lứa sói con no nê, do đó đỉnh điểm của kẻ săn mồi đến *trễ*, sau khi con mồi đã bắt đầu khốn đốn. Lúc này có quá nhiều sói nantang trong khi số lượng hexapede đang thưa dần, không đủ sức duy trì cả bầy. Những kẻ đi săn vọt lên quá đà, ăn con mồi đến mức khan hiếm, và rồi chết đói trong chính cái sa mạc mà chúng đã tạo ra — đỉnh cao của chúng lại trở thành sự lụi tàn. Khi quần thể kẻ đi săn sụp đổ, những con hexapede sống sót được giải thoát, sinh sôi trở lại lấp đầy khu rừng trống rỗng, và toàn bộ bánh xe lại quay. Kẻ săn mồi theo sát con mồi như hình bóng bám lấy bàn tay: bị trói buộc với nó, bị định hình bởi nó, và luôn theo sau trễ một phần tư vòng quay. Không quần thể nào được nghỉ ngơi, và cũng chẳng quần thể nào cần điều đó. Sự cân bằng không phải là một điểm tĩnh. Nó là một bánh xe đang quay.
 
 ## Cũng bánh xe ấy, đang quay trên Trái Đất
@@ -89,6 +103,20 @@ Nhà sinh thái học C. S. Holling đã phân loại các khả năng thành ba
 
 <FunctionalResponseCurves caption="Tốc độ ăn của một kẻ săn mồi khi con mồi ngày càng dồi dào — ba hình dạng mà Holling tìm ra. Type I leo lên theo một đường thẳng cho đến khi đột ngột dừng lại: động vật ăn lọc, giống như loài tulkun lọc nước biển. Type II leo lên rồi bẻ cong tới một mức trần do thời gian xử lý quy định: kẻ đi săn đơn độc bận rộn, một con thanator chỉ có thể giết và ăn với một tốc độ nhất định. Type III là đường cong chữ S — chậm ở mật độ con mồi thấp, sau đó dốc đứng, rồi nằm ngang — hình dạng cứu rỗi những con mồi quý hiếm, loài sói nantang sẽ phớt lờ loài hexapede cho đến khi có đủ số lượng để bõ công học cách săn. Chỉ có đường cong chữ S uốn cong xuống ở gần gốc tọa độ, và khúc uốn cong đó chính là một chốn dung thân." />
 
+<DiagramFigure
+  src="/images/chapters/the-hunters-and-the-hunted/fig-04-functional-response.webp"
+  alt="Ba đường cong phát sáng thể hiện ba dạng phản ứng chức năng của Holling trên nền tối: Loại I tuyến tính chạm trần, Loại II bão hòa thời gian xử lý, và Loại III đường cong chữ S chuyển đổi con mồi"
+  figNo="04"
+  labels={[
+    { x: 72, y: 25, side: "left", label: "Loại I: Giới hạn lọc thức ăn", note: "Tốc độ ăn tỉ lệ thuận với mật độ đến khi đạt giới hạn cơ học (như Tulkun lọc sinh vật phù du)" },
+    { x: 42, y: 38, side: "right", label: "Loại II: Trần thời gian xử lý", note: "Thời gian tìm kiếm giảm nhưng thời gian rượt đuổi và tiêu hóa áp đặt mức trần (như Thanator)" },
+    { x: 32, y: 78, side: "right", label: "Loại III: Nơi trú ẩn từ chuyển đổi mồi", note: "Tỉ lệ săn mồi thấp khi con mồi khan hiếm giúp quần thể suy kiệt có cơ hội hồi phục (như Nantang)" }
+  ]}
+  caption="Ba hình thái cơn thèm ăn của kẻ săn mồi. Khi mật độ con mồi tăng lên, tốc độ săn giết không thể tăng vô hạn. Loại I chạm trần đột ngột; Loại II uốn cong dưới sức nặng của thời gian xử lý con mồi; Loại III nằm bẹt khi con mồi khan hiếm trước khi vọt lên — tạo ra vùng trú ẩn hành vi cứu rỗi các loài hiếm khỏi họa diệt vong."
+  tier="real_science"
+/>
+
+
 Đường thẳng **Type I** là đơn giản nhất: ăn theo tỷ lệ thuận trực tiếp với những gì có sẵn, cho đến một giới hạn cứng. Nó phù hợp với một loài động vật ăn lọc, chắt lọc thức ăn từ một dòng chảy mà không cần rượt đuổi — trên Pandora, loài tulkun khổng lồ của vùng biển phía đông há miệng lướt qua những đám sinh vật phù du, nạp thức ăn với tốc độ tương ứng với độ đặc của nước cho đến khi con vật no nê. Việc tìm kiếm và nuốt chửng là cùng một hành động; không có thuế xử lý cho đến tận điểm tiệm cận trần.
 
 Đường cong **Type II** là đường cong của kẻ săn mồi bận rộn. Ở mật độ con mồi thấp, tốc độ giết chóc của kẻ săn mồi leo lên dốc đứng — thêm con mồi, thêm số mạng bị hạ gục — nhưng khi con mồi trở nên dồi dào, đường cong bẻ ngang và san phẳng sát mức trần của thời gian xử lý. Một con thanator đơn độc chỉ có thể rình rập, giết chết và tiêu thụ một số lượng sturmbeest nhất định trong một tuần, bất kể bầy đàn có đông đúc đến đâu; vượt qua một điểm, thêm nhiều con mồi trong rừng không đồng nghĩa với thêm nhiều con mồi bị giết, mà chỉ là bớt đi thời gian tìm kiếm giữa các lần săn. Đây là đường cong săn mồi phổ biến nhất trên Trái Đất, và nó đang âm thầm *gây mất ổn định* — bởi vì ở mật độ con mồi thấp, kẻ săn mồi lấy đi một *tỷ lệ lớn hơn* của phần ít ỏi còn sót lại, dồn ép những con mồi vốn đã hiếm nay càng thêm hiếm.
@@ -128,6 +156,21 @@ Bây giờ hãy thực hiện một thí nghiệm tưởng tượng mà những 
 <KeystoneCascadeToggle
   caption="Rút viên đá đỉnh vòm ra và chứng kiến cả mái vòm sụp đổ. Khi kẻ săn mồi đỉnh bảng hiện diện, những loài ăn cỏ hạng nặng bị kìm hãm và các tầng của khu rừng được giữ ở trạng thái cân bằng. Loại bỏ nó đi, và những gã khổng lồ được giải phóng sẽ bùng nổ, vặt trụi thảm thực vật và chèn ép những loài ăn cỏ nhỏ hơn đến chỗ tuyệt chủng — một sự sụp đổ chạy dọc từ đỉnh của lưới thức ăn xuống tận đáy, không dung tha bất cứ thứ gì, chỉ được châm ngòi bằng việc loại bỏ một con vật hiếm hoi duy nhất."
 />
+
+<DiagramFigure
+  src="/images/chapters/the-hunters-and-the-hunted/fig-06-keystone-pull.webp"
+  alt="Tranh so sánh hai khung cảnh: bên trái có thú săn mồi đầu bảng duy trì thảm rừng đa dạng; bên phải khi vắng bóng kẻ săn mồi, thú ăn cỏ khổng lồ tàn phá thảm thực vật thành bãi bùn trơ trụi"
+  figNo="06"
+  labels={[
+    { x: 28, y: 25, side: "left", label: "Hiện diện thú săn đầu bảng", note: "Kiểm soát từ trên xuống kìm hãm thú ăn cỏ khổng lồ và bảo vệ cấu trúc tán rừng" },
+    { x: 22, y: 72, side: "left", label: "Thảm thực vật nguyên vẹn", note: "Hệ thực vật phong phú tạo sinh cảnh sống cho các loài động vật nhỏ" },
+    { x: 74, y: 35, side: "right", label: "Bùng nổ số lượng mất kiểm soát", note: "Động vật ăn cỏ khổng lồ sinh sôi ồ ạt khi không còn kẻ thù tự nhiên" },
+    { x: 78, y: 75, side: "right", label: "Sụp đổ chuỗi dinh dưỡng", note: "Gặm phá trơ trụi thảm thực vật, làm xói mòn đất và bức tử các loài ăn cỏ nhỏ" }
+  ]}
+  caption="Rút viên đá đỉnh vòm. Bên trái: khi có mặt kẻ săn mồi đầu bảng, những gã khổng lồ ăn cỏ bị kiềm tỏa và tầng dưới tán phát triển rực rỡ. Bên phải: loại bỏ kẻ săn mồi, những kẻ ăn cỏ khổng lồ bùng nổ số lượng, gặm trơ trụi khu rừng và bức tử các loài nhỏ hơn qua việc phá hủy môi trường sống."
+  tier="inference"
+/>
+
 
 Chúng ta biết điều này là sự thật bởi vì Trái Đất đã chạy một thí nghiệm tương tự — một cách có chủ đích, và cũng có khi vô tình, lặp đi lặp lại nhiều lần, và luôn cho ra cùng một kết quả. Phiên bản gọn gàng nhất do một nhà khoa học tên là Robert Paine thực hiện trên một bờ biển Thái Bình Dương đầy đá vào những năm 1960, với một chiếc xà beng và một câu hỏi bướng bỉnh. Ông nạy mọi con sao biển — một loài sao biển săn mồi, *Pisaster*, chuyên ăn vẹm — ra khỏi một vũng thủy triều, và để nguyên một vũng giống hệt không đụng tới. Ở cái vũng mà ông không đụng tới, sự sống vẫn giữ nguyên sự đa dạng: mười lăm loài cùng chung sống trên tảng đá. Ở cái vũng mà ông tước đi loài săn mồi duy nhất, bầy vẹm — được giải thoát khỏi thứ vẫn ăn thịt chúng — đơn giản là chiếm quyền kiểm soát, chèn ép văng mọi loài khác, cho đến khi mười lăm loài đó tụt dốc thê thảm chỉ còn lại tám loài. Một kẻ săn mồi duy nhất, chỉ chiếm một phần nhỏ bé trong tổng trọng lượng sinh vật của bờ biển đó, đã giữ cho toàn bộ quần xã rộng mở. Gạt bỏ nó đi và sự đa dạng đổ sụp. Paine đã phải sáng tạo ra một từ để gọi thứ mà ông vừa khám phá, và từ đó chính là *keystone — loài chủ chốt*.
 

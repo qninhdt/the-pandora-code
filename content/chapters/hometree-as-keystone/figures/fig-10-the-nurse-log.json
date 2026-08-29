@@ -10,11 +10,27 @@
   "palette": "Void indigo shadows, deep teal moss and wood, cyan water and roots, sparse amber fungi.",
   "style": "Painterly forest naturalist observation with tactile decay, moisture and generational depth.",
   "detail_level": "Crisp seedlings, wrapping roots, water-holding wood, fungi and deadwood fauna; distant mature trees dissolve into haze.",
-  "composition": "Nurse log begins large in the lower left and recedes toward the centre; seedling row rides its crest; mature colonnade echoes the line in the upper right. Leave dark pockets beside each life stage for callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "human logging", "cut lumber", "grave imagery", "watermark", "logos"],
+  "composition": "Nurse log begins large in the lower left and recedes toward the centre; seedling row rides its crest; mature colonnade echoes the line in the upper right. Leave dark pockets beside each life stage framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "leader lines",
+    "human logging",
+    "cut lumber",
+    "grave imagery",
+    "watermark",
+    "logos",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The fallen trunk must read as dead wood functioning as habitat and nursery. Show both young seedlings on the present log and older trees standing where a previous log has vanished.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no arrows, no fantasy resurrection, no carved log, no lumberjack scene, no photo, no CGI, no vector infographic",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

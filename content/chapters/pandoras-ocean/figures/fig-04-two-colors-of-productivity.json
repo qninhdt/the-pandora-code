@@ -9,11 +9,28 @@
   "light": "Long clean cyan shafts penetrate the clear side; the productive side scatters softer green-teal light and becomes less transparent with depth.",
   "palette": "Cobalt indigo and cyan on the clear side, living teal and muted green-cyan on the productive side, sparse amber highlights on fish.",
   "style": "Painterly comparative naturalist plate with a physically continuous water front, not a split-screen graphic.",
-  "detail_level": "Sparse left water, visibly particle-rich right water, microscopic texture and a legible fish aggregation; backgrounds remain simple for labels.",
+  "detail_level": "Sparse left water, visibly particle-rich right water, microscopic texture and a legible fish aggregation; backgrounds remain simple framed by deep negative space.",
   "composition": "A curved vertical front creates two readable halves. Preserve open upper corners and dark lower margins for annotation boxes.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "divider line", "Earth species", "algae mat", "pollution"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "divider line",
+    "Earth species",
+    "algae mat",
+    "pollution",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The productive water should look alive rather than dirty or toxic. Do not imply universal exact colours; this is a mechanism plate.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no labels, no arrows, no split-screen border, no before-after captions, no sewage, no photographic or CGI look",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

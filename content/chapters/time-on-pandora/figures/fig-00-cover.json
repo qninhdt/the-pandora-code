@@ -3,7 +3,7 @@
   "chapter_slug": "time-on-pandora",
   "role": "hero",
   "narrative_purpose": "The chapter's definitive cover: capturing the rhythmic celestial clockwork of Pandora during a total solar eclipse, where the sun slips behind the towering silhouette of Polyphemus, crowning the gas giant in a blazing solar corona while the moon's vast bioluminescent canopy ignites across a misty twilight valley below.",
-  "subject": "A panoramic twilight landscape during a total celestial eclipse: the colossal dark disc of the banded gas giant Polyphemus dominates the upper sky, creating a breathtaking solar diamond-ring corona as the bright primary star is eclipsed behind its edge, casting long golden-amber corona flares into the deep indigo stratosphere. Below, a sweeping river valley and dense alien forest canopy instantly ignites with radiant bioluminescence \u2014 glowing electric cyan, teal, violet, and soft emerald light radiating from giant fern-like trees, luminous riverbanks, and floating spores in the rising mist. In the distant sky, a faint secondary orange companion star shines like a warm ember.",
+  "subject": "A panoramic twilight landscape during a total celestial eclipse: the colossal dark disc of the banded gas giant Polyphemus dominates the upper sky, creating a breathtaking solar diamond-ring corona as the bright primary star is eclipsed behind its edge, casting long golden-amber corona flares into the deep indigo stratosphere. Below, a sweeping river valley and dense alien forest canopy instantly ignites with radiant bioluminescence — glowing electric cyan, teal, violet, and soft emerald light radiating from giant fern-like trees, luminous riverbanks, and floating spores in the rising mist. In the distant sky, a faint secondary orange companion star shines like a warm ember.",
   "scene": "The profound moment of eclipse on Pandora: day turning abruptly to twilight shadow, triggering the sudden planetary shift into radiant bioluminescence under a crowned gas giant.",
   "camera": "Grand ultra-wide landscape view looking across an expansive river basin and bioluminescent forest canopy toward the eclipsed gas giant in the sky, capturing immense vertical scale.",
   "light": "Dramatic solar corona backlighting framing the dark silhouette of Polyphemus, contrasted with radiant bioluminescent ground glow in cyan and teal lighting the mist and water from below.",
@@ -24,7 +24,9 @@
     "human characters",
     "modern clothing",
     "orbit lines",
-    "arrows"
+    "arrows",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Polyphemus is the central celestial clock. The sudden shift into bioluminescence during eclipse captures the chapter theme of non-Earth circadian rhythms. Avoid lone cliff-edge Na'vi silhouettes to keep this cover distinctly panoramic and astronomical.",
   "aspect_ratio": "16:9",

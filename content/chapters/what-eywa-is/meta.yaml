@@ -82,7 +82,7 @@ figures:
     asset_status: ready
   - id: fig-06-cerebellum-vs-cortex
     role: comparison
-    asset_status: pending
+    asset_status: ready
   - id: fig-07-local-memory-port
     role: comparison
     asset_status: ready

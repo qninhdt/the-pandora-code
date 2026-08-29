@@ -11,9 +11,25 @@
   "style": "Painterly atmospheric matte vista, hand-painted and immersive, a mood backdrop rather than a study figure.",
   "detail_level": "Deliberately soft and dissolving; only hints of leaf texture, root and fungal threads in the lower frame.",
   "composition": "Wide dark field with soil motifs low in frame and vast shadowed trunks receding upward, even tonal distribution and no competing focal subject.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "bright focal subject", "sharp creature", "Avatar branding"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "bright focal subject",
+    "sharp creature",
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same fallen leaf and hidden-soil motif as the cover, but much darker and lower contrast for page background use.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no labels, no bright focal subject, no lens flare, no photographic or 3D-render look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

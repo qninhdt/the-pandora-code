@@ -1,0 +1,17 @@
+id: red-edge
+label:
+  vi: Rìa đỏ
+  en: The red edge
+definition:
+  vi: 'Bước nhảy đột ngột trong độ phản xạ của lá cây quanh 700 nm: dưới ngưỡng ấy lá hút gần hết ánh sáng, trên ngưỡng ấy lá dội lại phần lớn. Sở dĩ có bờ dốc này là vì lá cần ăn ánh sáng khả kiến nhưng lại phải tránh hấp thụ hồng ngoại gần, thứ chỉ làm nó nóng lên chứ chẳng nuôi được gì. Rìa đỏ là dấu hiệu rõ nhất của thảm thực vật khi quan sát Trái Đất từ vũ trụ, nên nó cũng là một trong những dấu hiệu sinh học mà các nhà thiên văn tìm kiếm ở hành tinh khác — với lưu ý quan trọng: dưới một ngôi sao khác, bờ dốc ấy sẽ nằm ở bước sóng khác.'
+  en: 'The abrupt jump in leaf reflectance around 700 nm: below it a leaf absorbs almost everything, above it a leaf throws most of the light back. The cliff exists because a leaf needs to eat visible light while avoiding near-infrared absorption, which only heats it without feeding it. The red edge is the clearest signature of vegetation when Earth is observed from space, which makes it one of the biosignatures astronomers look for on other planets — with the important caveat that under a different star the cliff would sit at a different wavelength.'
+see_also:
+- chlorophyll
+- photosynthetically-active-radiation
+- green-gap
+category: concept
+tags:
+- astrobiology
+- physics
+- astronomy
+cover_prompt: A painted view of a forest canopy seen from very high above, the foliage rendered dark and absorbing while a faint bright halo of reflected longer-wavelength light hangs just above the leaf tops, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

@@ -9,11 +9,28 @@
   "light": "Cyan rim on the skin barrier, teal glow for resident organisms, sparse amber for rejected outsiders, restrained magenta at the mismatched receptor contact.",
   "palette": "Deep indigo ground, blue-cyan tissue, living teal residents, sparse amber outsiders and one magenta incompatibility accent.",
   "style": "Painterly microscopic naturalist diagram, tactile membranes and cells, elegant rather than vector-clean.",
-  "detail_level": "Crisp at the skin layers, mismatched receptor, resident film and waiting immune cells; dark margins for labels.",
-  "composition": "A strong central barrier dividing the frame, multiple failed steps readable from left to right without arrows, clear open spaces near each gate.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "gore", "monster viruses", "hazmat suits"],
+  "detail_level": "Crisp at the skin layers, mismatched receptor, resident film and waiting immune cells; generous deep indigo negative space.",
+  "composition": "A strong central barrier dividing the frame, multiple successive filtering steps readable from left to right in space, clear negative space near each barrier.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "gore",
+    "monster viruses",
+    "hazmat suits",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Communicate barriers and incompatibility spatially. Avoid implying guaranteed safety or guaranteed infection; the image represents filters, not a verdict.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no labels, no arrows, no infographic chrome, no gore, no giant horror microbes, no photographic or 3D-render look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

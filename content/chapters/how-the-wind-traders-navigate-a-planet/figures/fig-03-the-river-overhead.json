@@ -26,12 +26,16 @@
     "engines",
     "spacecraft",
     "satellites",
-    "photographic look"
+    "photographic look",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "The aerostats are living creatures: soft translucent bells, trailing tentacles, woven gondolas on rigging lines — no rigid hulls, no propellers, no engines. The ribbon must read as a bounded band with clear air on both sides, not as an overcast sky. Scale contrast is the point: the caravan must be almost lost against it. Cool Pandora palette, sparse cyan bioluminescence.",
+  "consistency_notes": "The aerostats are living creatures: soft translucent bells, trailing tentacles, woven gondolas on rigging lines \u2014 no rigid hulls, no propellers, no engines. The ribbon must read as a bounded band with clear air on both sides, not as an overcast sky. Scale contrast is the point: the caravan must be almost lost against it. Cool Pandora palette, sparse cyan bioluminescence.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no propellers, no engines, no rigid airship hull, no spacecraft, no satellite imagery look, no 3D-render or photographic look, no cartoon style, no lens flare",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": [
     "apps/web/public/images/chapters/how-the-wind-traders-navigate-a-planet/fig-00-cover.png"
   ]

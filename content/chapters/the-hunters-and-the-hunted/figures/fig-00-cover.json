@@ -11,10 +11,25 @@
   "style": "Hand-painted naturalist field plate of real alien animals, textured and observed, not a film still.",
   "detail_level": "High on the four animals and the flared fan; soft and hazy on the forest behind.",
   "composition": "A reading half-circle of dark hunters on the left curving toward a single lit prey on the right, deep hazy depth, dark negative space above.",
-  "exclude": ["text", "letters", "numbers", "labels", "UI", "watermark", "logos", "human figures", "film branding"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "UI",
+    "watermark",
+    "logos",
+    "human figures",
+    "film branding",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The pack-hunters are the viperwolf archetype (sleek, black, six-limbed) and the prey is the hexapede archetype (small, six-legged, cranial display fan); both must read consistently across this chapter's figures.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no UI chrome, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

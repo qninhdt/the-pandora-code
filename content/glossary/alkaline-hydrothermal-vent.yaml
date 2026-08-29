@@ -1,0 +1,18 @@
+id: alkaline-hydrothermal-vent
+label:
+  vi: Miệng phun thủy nhiệt kiềm (alkaline hydrothermal vent)
+  en: Alkaline hydrothermal vent
+definition:
+  vi: Loại miệng phun đáy biển nơi dòng chất lỏng kiềm ấm (khoảng 40–90 °C, pH 9–11) rỉ ra từ đá lớp phủ đang serpentine hóa, dựng nên những ống khoáng xốp bằng sulfide sắt. Cần phân biệt rõ với "black smoker" magma vốn nóng 300–400 °C và có tính axit — mức nhiệt đó băm nát RNA và peptide. Chính miệng phun kiềm, không phải black smoker, mới là bối cảnh mà các giả thuyết nguồn gốc sự sống dựa vào, vì độ lệch pH qua vách khoáng mỏng tự nó đã là một hiệu điện thế.
+  en: A seafloor vent where warm alkaline fluid (roughly 40–90 °C, pH 9–11) seeps out of serpentinizing mantle rock, building porous chimneys of iron sulfide. It is sharply distinct from a magmatic black smoker at 300–400 °C and acidic — that heat shreds RNA and peptides. It is the alkaline vent, not the black smoker, that origin-of-life models rely on, because the pH difference across a thin mineral wall is itself a voltage.
+see_also:
+  - serpentinization
+  - chemiosmosis
+  - proton-motive-force
+  - chemolithoautotroph
+category: planet
+tags:
+- geology
+- oceanography
+- astrobiology
+cover_prompt: A painted study of pale porous mineral chimneys on a dark abyssal floor, faint teal shimmer of warm fluid drifting up from their tops into black water, everything lit only by a dim cool glow, painterly, no text, no labels, no numbers.

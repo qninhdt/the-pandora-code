@@ -27,7 +27,8 @@
     "vehicles",
     "buildings",
     "humans",
-    "weapons"
+    "weapons",
+    "callouts"
   ],
   "consistency_notes": "The escarpment on the horizon is the same cliff as the opening figure, and the gas giant is Polyphemus. The instrument must read as modest and purpose-built, not as heroic technology — the point of the closing image is how small the thing is next to the question it answers.",
   "aspect_ratio": "16:9",

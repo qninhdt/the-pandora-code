@@ -1,0 +1,32 @@
+id: pyrite-burial
+label:
+  vi: Chôn vùi pyrite
+  en: Pyrite burial
+definition:
+  vi: >-
+    Con đường mà lưu huỳnh bị khóa vĩnh viễn khỏi bề mặt hành tinh: vi khuẩn trong trầm tích thiếu oxy
+    khử sulfate, sản phẩm gặp sắt và kết tủa thành pyrite — thứ khoáng vật vàng ánh mà người xưa gọi là
+    "vàng của kẻ ngốc" — rồi bị vùi sâu. Điều bất ngờ là đây đồng thời là một trong hai nguồn oxy dài hạn
+    của khí quyển. Chôn vật chất khử xuống nghĩa là không trả lại nó cho oxy để đốt, nên mỗi tinh thể
+    pyrite nằm lại trong đá là một lượng oxy nhỏ được phép tồn tại trên bề mặt. Ngân sách oxy của một hành
+    tinh, xét cho cùng, là một bài toán kế toán về những gì đã bị vùi.
+  en: >-
+    The route by which sulfur is locked away from a planet's surface for good: bacteria in oxygen-free
+    sediment reduce sulfate, the product meets iron and precipitates as pyrite — the brassy mineral old
+    prospectors called fool's gold — and is buried. The surprise is that this is simultaneously one of the
+    two long-term sources of atmospheric oxygen. Burying reduced material means not handing it back to
+    oxygen to burn, so every pyrite crystal left in rock is a small quantity of oxygen permitted to exist
+    at the surface. A planet's oxygen budget is, in the end, an accounting problem about what got buried.
+see_also:
+  - great-oxidation-event
+  - biogeochemical-cycle
+  - mass-balance
+category: concept
+tags:
+  - geology
+  - chemistry
+  - earth-systems
+cover_prompt: >-
+  A painted mineralogical study of angular brassy metallic cubes embedded in dark layered shale, their
+  faces catching a cold amber sheen, surrounding sediment rendered in deep indigo and near-black,
+  painterly naturalist specimen plate, no text, no numbers, no labels.

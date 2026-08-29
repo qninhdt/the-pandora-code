@@ -1,0 +1,17 @@
+id: chlorophyll
+label:
+  vi: Diệp lục
+  en: Chlorophyll
+definition:
+  vi: 'Sắc tố chính giúp cây bắt ánh sáng. Diệp lục hấp thụ mạnh ở hai dải hẹp — một dải lam quanh 430 nm, một dải đỏ quanh 660 nm — và gần như bỏ qua khoảng giữa. Chính vì thế lá cây màu lục: phần sáng màu lục dội trở lại mắt ta, tức là màu ta thấy chính là thứ ánh sáng cái lá đã từ chối ăn. Đây là một thói quen tiến hóa để lại chứ không phải một tất yếu vật lý: dưới một ngôi sao khác, một sinh quyển hoàn toàn có thể chọn dải hấp thụ khác, và khi ấy lá sẽ mang màu khác.'
+  en: 'The main pigment plants use to catch light. Chlorophyll absorbs strongly in two narrow bands — one blue band near 430 nm, one red band near 660 nm — and largely ignores the middle. That is why leaves are green: the green light bounces back to your eye, so the colour you see is precisely the light the leaf declined to eat. This is an inherited evolutionary habit rather than a physical necessity: under a different star a biosphere could settle on a different absorbing band, and its leaves would wear a different colour.'
+see_also:
+- green-gap
+- photosynthesis
+- carotenoid
+- red-edge
+category: bio
+tags:
+- chemistry
+- physiology
+cover_prompt: A painted study of a leaf fragment lit from behind, with two narrow bands of light — one deep blue, one deep red — being swallowed into the tissue while a green band passes straight through, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

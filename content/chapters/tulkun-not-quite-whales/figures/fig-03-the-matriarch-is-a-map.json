@@ -3,17 +3,36 @@
   "chapter_slug": "tulkun-not-quite-whales",
   "role": "inline",
   "narrative_purpose": "The figure makes learned ecological memory spatial: an elder killer whale leads descendants along a route that exists in her experience rather than on the surface of the sea.",
-  "subject": "An older female killer whale with a slightly worn dorsal fin leads a multi-generational pod of six anatomically correct killer whales through sparse dark water. Two juveniles and three adults follow her curved path. Far ahead, a narrow distant school of salmon catches faint cyan light near an underwater shelf; the rest of the sea appears nearly empty. A subtle trail of fading bioluminescent particles marks only the route already taken, not a drawn arrow.",
+  "subject": "An older female killer whale with a slightly worn dorsal fin leads a multi-generational pod of six anatomically correct killer whales through sparse dark open ocean. Two juveniles and three adults follow her curved swimming trajectory. Far ahead, a distant school of salmon catches faint cyan light near a submerged shelf; the rest of the sea appears quiet and empty. A subtle, natural trail of disturbed luminous micro-particles drifts softly in their wake along the path.",
   "scene": "Cold open ocean during a lean season, deep indigo water with a dim rocky shelf and very little prey outside the one distant school.",
   "camera": "High oblique naturalist view looking down and forward along the pod's curved formation, elder prominent at lower left and prey distant at upper right.",
   "light": "Low cool ambient light, cyan rim on black-and-white bodies, faint teal route particles and a sparse amber focus on the distant salmon school.",
   "palette": "Void indigo water, stone white and charcoal animals, cyan-teal edges, very small amber prey accent.",
   "style": "Painterly behavioral-ecology plate, quiet and spatially legible rather than dramatic wildlife spectacle.",
-  "detail_level": "Crisp elder, followers and distant prey; water and seabed simplified into layered haze with label-ready negative space.",
+  "detail_level": "Crisp elder, followers and distant prey; water and seabed simplified into layered haze with deep negative space.",
   "composition": "A diagonal route from elder to prey, followers visibly ordered behind her, empty water emphasizing that the valuable feature is knowledge rather than abundance.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "map symbols", "boats", "humans", "ice", "tropical reef", "Pandoran creatures"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "map symbols",
+    "boats",
+    "humans",
+    "ice",
+    "tropical reef",
+    "Pandoran creatures",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Use anatomically accurate Earth killer whales. The elder is identifiable by position and gently worn fin, not exaggerated age or human facial expression.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no labels, no arrows, no map overlay, no anthropomorphic expressions, no photographic or CGI look, no giant prey swarm, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

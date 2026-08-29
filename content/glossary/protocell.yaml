@@ -1,0 +1,17 @@
+id: protocell
+label:
+  vi: Tiền tế bào (protocell)
+  en: Protocell
+definition:
+  vi: 'Một túi màng đơn giản chứa hóa chất, chưa phải tế bào sống nhưng đã có đủ những tính chất khiến sự sống trở nên khả thi: nó tự lắp từ axit béo, tự lớn lên bằng cách hút thêm phân tử vào màng, và tự chia đôi khi dòng chảy xé nó. Khoang là điều kiện bắt buộc — không có ranh giới thì mọi sản phẩm hữu ích đều tán loãng đi và không dòng dõi nào cạnh tranh được với dòng dõi nào. Đây là một trong ít bước của bài toán nguồn gốc đã được tái hiện trọn vẹn trong phòng thí nghiệm.'
+  en: 'A simple membrane sac holding chemistry — not yet a living cell, but already carrying the properties that make life possible: it self-assembles from fatty acids, grows by drawing more molecules into its membrane, and divides when flow shears it. Compartmentation is not optional — without a boundary, anything useful diffuses away and no lineage can compete with another. This is one of the few steps of the origin problem reproduced in full in the laboratory.'
+see_also:
+  - abiogenesis
+  - chemiosmosis
+  - gas-vesicle
+category: bio
+tags:
+- chemistry
+- physiology
+- astrobiology
+cover_prompt: A painted cluster of translucent spherical membrane bubbles of varying size against dark water, faint cyan glow tracing each rim, one bubble pinching in the middle as it splits, painterly, no text, no labels, no numbers.

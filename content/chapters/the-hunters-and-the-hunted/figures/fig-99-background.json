@@ -11,10 +11,26 @@
   "style": "Hand-painted atmospheric vista, soft and tonal, detail dissolving into haze, a mood layer not a figure to study.",
   "detail_level": "Low and soft everywhere; no crisp focal subject; built for text to sit on top.",
   "composition": "Wide horizon of receding ridges, generous dark sky and haze, deliberately empty of any single subject.",
-  "exclude": ["text", "letters", "numbers", "labels", "UI", "watermark", "logos", "bright focal subject", "human figures", "film branding"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "UI",
+    "watermark",
+    "logos",
+    "bright focal subject",
+    "human figures",
+    "film branding",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Pure background mood layer; must stay dark and low-contrast so overlaid chapter text remains legible. Not an inline figure.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no UI chrome, no bright focal point, no high contrast, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

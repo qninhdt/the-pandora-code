@@ -1,0 +1,193 @@
+{
+  "viz": {
+    "residenceTimeAudit": {
+      "title": "Bàn kiểm toán",
+      "subtitle": "Lấy lượng chứa trong bể chia cho tốc độ thoát ra",
+      "caseLabel": "Bể chứa",
+      "case": {
+        "earthCarbon": "Carbon trong khí quyển Trái Đất",
+        "pandoraCarbon": "Carbon trong khí quyển Pandora",
+        "oceanPhosphorus": "Phosphate trong đại dương",
+        "earthNitrogen": "Nitơ khí quyển Trái Đất",
+        "pandoraSulfide": "Hydro sulfide của Pandora"
+      },
+      "unit": {
+        "GtC": "Gt C",
+        "TgN": "Tg N",
+        "TgP": "Tg P",
+        "TgS": "Tg S"
+      },
+      "decade": {
+        "e-4": "giờ",
+        "e-2": "ngày",
+        "e0": "1 năm",
+        "e2": "thế kỷ",
+        "e4": "10 nghìn năm",
+        "e6": "triệu năm",
+        "e8": "100 triệu năm"
+      },
+      "marker": {
+        "day": "một ngày",
+        "year": "một năm",
+        "lifetime": "một đời người",
+        "thermostat": "bộ điều nhiệt",
+        "canonStability": "12 triệu năm của canon"
+      },
+      "reservoirSlider": "Lượng chứa trong bể ({unit})",
+      "sinkSlider": "Tốc độ thoát ra ({unit} mỗi năm)",
+      "tauLabel": "Một nguyên tử ở lại",
+      "tauNote": "lượng chứa ÷ tốc độ thoát",
+      "tauYears": "{years} năm",
+      "tauDays": "{days} ngày",
+      "sourceLabel": "Nguồn cần có",
+      "sourceNote": "để giữ bể không đổi",
+      "refillLabel": "Số lần nạp lại",
+      "refillNote": "trong 12 triệu năm của canon",
+      "hint": {
+        "instant": "Với nhịp này, cả bể chứa cạn rồi đầy lại chỉ trong vài ngày. Không thứ gì lơ lửng trong không khí ngắn ngủi đến thế mà vẫn tồn tại, trừ khi có cái gì liên tục bù vào — nên chính nồng độ đã trở thành một phát biểu về nguồn.",
+        "fast": "Đủ nhanh để toàn bộ bể chứa quay vòng gọn trong một sự nghiệp người, nghĩa là nó phản ứng tức thì với biến động và cũng chẳng giữ được gì lâu.",
+        "slow": "Đủ chậm để đệm cho những dao động ngắn hạn, nhưng không đệm nổi trước địa chất. Một nhiễu loạn ở đây cần nhiều đời người mới lắng xuống.",
+        "geological": "Bể chứa này quay vòng theo thời gian địa chất. Nó là nhà băng chứ không phải băng chuyền: khổng lồ, chậm rãi, và đủ sức giữ hóa học của một hành tinh ổn định qua hàng triệu năm."
+      },
+      "aria": "Trục thời gian logarit với thời gian lưu trú tính được đánh dấu tại {years} năm, đặt cạnh các mốc tham chiếu từ một ngày đến một trăm triệu năm."
+    },
+    "sulfurSourceGap": {
+      "title": "Cái giá của lưu huỳnh",
+      "subtitle": "Dòng nguồn cần thiết để giữ hydro sulfide trong không khí giàu oxy",
+      "axisLabel": "Nguồn lưu huỳnh cần có (Tg S mỗi năm, thang logarit)",
+      "decade": {
+        "e0": "1",
+        "e2": "100",
+        "e4": "10⁴",
+        "e6": "10⁶",
+        "e8": "10⁸",
+        "e10": "10¹⁰"
+      },
+      "reference": {
+        "earthVolcanic": "Núi lửa Trái Đất",
+        "anthropogenicPeak": "Công nghiệp thập niên 1980",
+        "hypervolcanic": "100× núi lửa Trái Đất"
+      },
+      "unreachableBand": "vượt ngoài mọi hoạt động núi lửa",
+      "demandMarker": "cần {flux} Tg S/năm",
+      "ppmSlider": "Hydro sulfide trong không khí",
+      "ppmDisplay": "{ppm} ppm",
+      "daysSlider": "Một phân tử sống được bao lâu",
+      "daysDisplay": "{days} ngày",
+      "demandLabel": "Nguồn cần có",
+      "demandValue": "{flux} Tg S/năm",
+      "demandNote": "để giữ nồng độ này",
+      "multipleLabel": "Gấp bao nhiêu lần núi lửa Trái Đất",
+      "multipleNote": "Trái Đất làm được 20 Tg S/năm",
+      "lethalLabel": "Còn gây chết không?",
+      "lethalYes": "còn",
+      "lethalNo": "không",
+      "lethalNote": "cần khoảng {ppm} ppm mới hạ một người trong tích tắc",
+      "hint": {
+        "impossible": "Con số đã ra khỏi bản đồ. Không hoạt động núi lửa nào ở cường độ khả tín cung cấp nổi lưu huỳnh với nhịp này, và duy trì nó sẽ vét sạch lưu huỳnh trong lớp phủ chỉ trong một cái nháy mắt địa chất. Có gì đó trong những số liệu đã nêu buộc phải nhượng bộ.",
+        "strained": "Đã tới gần một thế giới cực kỳ dữ dội, nhưng vẫn xa hơn bất cứ điều gì Trái Đất từng làm. Cứ kéo tiếp.",
+        "survivableButHarmless": "Sổ sách khớp — nhưng hãy nhìn ô độc tính. Ở nồng độ này, không khí không còn giết một người không mặt nạ trong vài giây nữa, mà đó lại đúng là điều canon khăng khăng. Cách sửa này chỉ dịch chuyển vấn đề chứ không giải được nó."
+      },
+      "aria": "Thang dòng logarit. Nguồn lưu huỳnh cần thiết nằm ở {flux} Tg S mỗi năm, gấp {times} lần tổng lượng lưu huỳnh núi lửa Trái Đất thải ra.",
+      "gapLine": "Ở tuổi thọ này, hai yêu cầu cách nhau khoảng {factor} lần: lượng sulfide mà một khí quyển gây chết cần đến, so với mức cao nhất mà một mặt trăng núi lửa dữ dội có thể duy trì. Không thiết lập nào thỏa mãn được cả hai."
+    },
+    "elementCycleTracer": {
+      "title": "Bốn chu trình, một chiếc hộp khuyết",
+      "subtitle": "Ba nguyên tố có khí quyển để vay. Một nguyên tố thì không.",
+      "toggleAria": "Chọn chu trình nguyên tố để xem xét",
+      "element": {
+        "carbon": "Carbon",
+        "nitrogen": "Nitơ",
+        "phosphorus": "Phốt pho",
+        "sulfur": "Lưu huỳnh"
+      },
+      "unit": {
+        "GtC": "Gt C",
+        "TgN": "Tg N",
+        "TgP": "Tg P",
+        "TgS": "Tg S"
+      },
+      "reservoir": {
+        "atmosphere": "Khí quyển",
+        "biomass": "Sinh vật sống",
+        "soil": "Đất",
+        "ocean": "Đại dương",
+        "rock": "Đá"
+      },
+      "flux": {
+        "photosynthesis": "quang hợp",
+        "respiration": "hô hấp",
+        "litterfall": "lá và gỗ rụng",
+        "decay": "phân hủy trong đất",
+        "airSea": "trao đổi khí–biển",
+        "burial": "chôn vào trầm tích",
+        "degassing": "núi lửa trả lại",
+        "fixation": "cố định đạm",
+        "uptake": "sinh vật hấp thu",
+        "mineralisation": "giải phóng từ xác",
+        "leaching": "trôi ra biển",
+        "denitrification": "trả về không khí dạng N₂",
+        "marineDenitrification": "trả về không khí từ biển",
+        "weathering": "phong hóa đá",
+        "remineralisation": "giải phóng từ xác",
+        "riverine": "sông chở đi",
+        "sedimentation": "lắng vào trầm tích",
+        "volcanic": "núi lửa phun khí",
+        "dms": "khí lưu huỳnh từ phù du",
+        "deposition": "mưa rửa khỏi không khí",
+        "pyriteBurial": "khóa vào pyrite"
+      },
+      "noAtmosphereRow": "không có hộp khí quyển",
+      "gasPhaseLabel": "Pha khí",
+      "gasPhaseYes": "có",
+      "gasPhaseNo": "không có",
+      "gasPhaseNote": "sinh vật lấy được từ không khí?",
+      "slowestLabel": "Bước chậm nhất",
+      "geologicalLabel": "Phần của địa chất",
+      "geologicalNote": "trong toàn bộ chuyển động của chu trình",
+      "residenceLine": "{reservoir}: một nguyên tử ở lại khoảng {years} năm.",
+      "hint": {
+        "buffering": "Carbon chạy đồng thời trong một vòng sinh học nhanh và một vòng địa chất chậm. Vòng nhanh khổng lồ và gần như cân bằng; vòng chậm bé nhỏ nhưng lại quyết định khí hậu qua hàng triệu năm.",
+        "bondEnergy": "Nitơ là chất khí dồi dào nhất trong không khí mà vẫn giới hạn tăng trưởng ở gần như mọi nơi. Vấn đề không phải khan hiếm mà là liên kết ba: phá nó rất đắt, nên chỉ sinh vật nào trả nổi cái giá năng lượng ấy mới được mở vòi.",
+        "noGasPhase": "Không có hàng khí quyển cho phốt pho, vì phốt pho không có dạng khí bền. Nó chỉ đến bằng đường phong hóa đá và chỉ ra đi bằng đường lắng xuống trầm tích — điều biến độ phì nhiêu lâu dài thành thuộc tính kiến tạo của một hành tinh chứ không phải thuộc tính sinh học.",
+        "oxidation": "Chu trình lưu huỳnh là một câu chuyện oxy hóa khử. Các dạng khử của nó bị phá hủy rất nhanh trong không khí giàu oxy, nên bất kỳ lưu huỳnh khử nào còn trong khí quyển đều là bằng chứng của một nguồn đang chạy ngay lúc này."
+      },
+      "ariaWithGas": "Chu trình {element}: lượng chứa các bể theo thang logarit, với bể khí quyển được làm nổi bật.",
+      "ariaNoGas": "Chu trình {element}: lượng chứa các bể theo thang logarit, với bể khí quyển khuyết được đánh dấu."
+    },
+    "matterLoopEnergyArrow": {
+      "title": "Vay được, nhưng tiêu mất",
+      "subtitle": "Đi theo một nguyên tử, rồi đi theo một joule",
+      "toggleAria": "Chọn đi theo vật chất hay năng lượng",
+      "tracer": {
+        "matter": "Một nguyên tử",
+        "energy": "Một joule"
+      },
+      "station": {
+        "air": "Không khí",
+        "leaf": "Lá",
+        "body": "Động vật",
+        "soil": "Đất",
+        "microbe": "Sinh vật phân hủy"
+      },
+      "photonIn": "ánh sáng vào",
+      "heatOut": "nhiệt bức xạ đi mất",
+      "advance": "Bước tiếp",
+      "restart": "Bắt đầu lại",
+      "stepCounter": "Bước {step} trên {total}",
+      "returnsLabel": "Có trở về không?",
+      "returnsYes": "luôn luôn",
+      "returnsNo": "không bao giờ",
+      "returnsNoteMatter": "chiếc vòng không có cửa ra",
+      "returnsNoteEnergy": "cửa ra duy nhất là hướng ra ngoài",
+      "retainedLabel": "Còn dùng được",
+      "retainedConserved": "toàn bộ",
+      "retainedPct": "{pct}%",
+      "retainedNoteMatter": "nguyên tử được bảo toàn tuyệt đối",
+      "retainedNoteEnergy": "mỗi lần chuyển tay chỉ còn khoảng một phần mười",
+      "hintMatter": "Bước nguyên tử ấy quanh vòng và nó trở về đúng chỗ khởi đầu. Không gì bị tiêu hao; chính lượng carbon này đã đi qua vô số cơ thể trước cơ thể lần này. Đây chính là nghĩa mà lời của người Na'vi đúng theo đúng nghĩa chữ.",
+      "hintEnergy": "Joule ấy đi đúng con đường đó và mất phần lớn chính nó ở mỗi lần chuyển tay. Nó không thể được tái chế, chỉ có thể suy thoái, và mỗi bước lại để lại ít khả năng sinh công hơn bước trước.",
+      "hintEscaped": "Và thế là nó đi. Năng lượng rời thế giới này dưới dạng bức xạ hồng ngoại và không quay lại nữa — đó là lý do sinh quyển cần một chuyến giao ánh sáng mới mỗi ngày. Vật chất được vay. Năng lượng bị tiêu."
+    }
+  }
+}

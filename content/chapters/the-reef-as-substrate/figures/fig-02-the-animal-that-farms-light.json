@@ -9,8 +9,8 @@
   "light": "Sunlit teal from above, warm amber glow from the golden algae inside the tissue, cyan rim on the fresh skeleton.",
   "palette": "Ocean teal water, warm amber-gold algae, pale mineral skeleton, void indigo cavity.",
   "style": "Painterly microscopic naturalist plate, organic and glowing, not a vector infographic.",
-  "detail_level": "Crisp on the polyp tissue, algal cells and skeleton rim; soft open water around it for labels.",
-  "composition": "Central polyp with clear open regions upper-left and right for callouts marking algae, sugar flow, and forming skeleton.",
+  "detail_level": "Crisp on the polyp tissue, algal cells and skeleton rim; soft open water around it framed by deep negative space.",
+  "composition": "Central polyp with clear open regions upper-left and right framed by deep negative space marking algae, sugar flow, and forming skeleton.",
   "exclude": [
     "text",
     "letters",
@@ -22,7 +22,9 @@
     "arrows",
     "chemical formulas",
     "callout lines",
-    "vector infographic look"
+    "vector infographic look",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "The golden cells are INSIDE the animal's tissue, not outside. Keep the amber-in-teal palette consistent with the zooxanthellae glossary look.",
   "aspect_ratio": "4:3",

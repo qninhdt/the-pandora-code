@@ -9,7 +9,7 @@
   "light": "Cyan glow along each living reef crest at the waterline, warm-neutral on the volcanic rock, indigo in the deep water below.",
   "palette": "Ocean teal water, cyan reef crest, stone-grey volcanic rock fading as it sinks, void indigo depths.",
   "style": "Painterly naturalist geological cross-section plate, calm and diagrammatic but organic.",
-  "detail_level": "Clear reef crest and island silhouette at each stage; simple graded water for callouts.",
+  "detail_level": "Clear reef crest and island silhouette at each stage; simple graded water framed by deep negative space.",
   "composition": "Three evenly spaced stages left-to-right with open water band above for stage callouts (fringing, barrier, atoll).",
   "exclude": [
     "text",
@@ -22,7 +22,9 @@
     "arrows",
     "stage numbers",
     "callout lines",
-    "panel borders"
+    "panel borders",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "The reef crest stays at the waterline across all three stages while the island sinks \u2014 that persistence is the whole point. Keep the reef palette consistent with earlier figures.",
   "aspect_ratio": "16:9",

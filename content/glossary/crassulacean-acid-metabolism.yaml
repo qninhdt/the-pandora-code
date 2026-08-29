@@ -1,0 +1,18 @@
+id: crassulacean-acid-metabolism
+label:
+  vi: Trao đổi chất acid họ Thuốc bỏng (CAM)
+  en: Crassulacean acid metabolism (CAM)
+definition:
+  vi: 'Cách giải quyết cùng một bài toán như C4, nhưng tách hai việc theo thời gian thay vì theo không gian. Cây mở lỗ khí vào ban đêm, khi không khí mát và ẩm nên mất ít nước nhất, bắt CO₂ và cất nó dưới dạng một acid hữu cơ; rồi suốt cả ngày nắng gắt thì đóng kín lỗ khí và nhả CO₂ ra từ kho acid ấy, ngay bên trong, sau cánh cửa đã khóa. Xương rồng và dứa chạy kiểu này. Đây là chiến lược tiết nước cực đoan nhất mà thực vật Trái Đất từng nghĩ ra — và cũng là bằng chứng rõ nhất cho thấy cuộc mặc cả ở lỗ khí gay gắt đến mức nào: có loài đã phải đổi cả nhịp sinh hoạt ngày đêm chỉ để đỡ mất nước.'
+  en: 'The same problem C4 solves, but separated in time rather than in space. The plant opens its pores at night, when the air is cool and damp and water loss is least, captures CO₂ and stores it as an organic acid; then through the whole blazing day it seals the pores shut and releases CO₂ from that acid store internally, behind a locked door. Cacti and pineapples run this way. It is the most extreme water-thrift strategy Earth plants ever devised — and the clearest evidence of how harsh the trade at the pore really is: some lineages rearranged their entire daily rhythm purely to spend less water.'
+see_also:
+- c4-photosynthesis
+- stomata
+- water-use-efficiency
+- photorespiration
+category: bio
+tags:
+- physiology
+- evolution
+- ecology
+cover_prompt: A painted diptych of the same thick succulent plant, on the left under a dark night sky with its surface pores open and faint gas particles entering, on the right under harsh daylight with the pores sealed tight and a dense bright store glowing inside the stem, cool teal-cyan palette with amber daylight accents against void-indigo, painterly naturalist plate, no text, no labels.

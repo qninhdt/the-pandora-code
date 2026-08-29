@@ -1,0 +1,18 @@
+id: c4-photosynthesis
+label:
+  vi: Quang hợp C4
+  en: C4 photosynthesis
+definition:
+  vi: 'Một cái bơm carbon mà một số dòng thực vật tiến hóa ra để chặn lỗi bắt nhầm oxy của Rubisco. Cách làm: cố định CO₂ trước bằng một enzyme khác không thể lẫn với oxy, ở lớp tế bào ngoài của lá; chuyển sản phẩm vào một khoang trong kín hơn; rồi nhả CO₂ ra ở đó, để Rubisco luôn ngồi trong một buồng có nồng độ CO₂ cao nhân tạo — trên một nghìn ppm — nơi oxy gần như không có cơ hội. Ngô, mía và phần lớn cỏ nhiệt đới chạy kiểu này. Giá phải trả là hai đơn vị ATP thêm cho mỗi CO₂ được đưa tới. Đó là món đầu tư sáng suốt trong không khí loãng carbon, và là tiền ném đi trong không khí giàu carbon — nên một thế giới đậm CO₂ sẽ chẳng có lý do nào để tiến hóa ra nó.'
+  en: 'A carbon pump some plant lineages evolved to head off Rubisco''s oxygen mistake. The method: fix CO₂ first with a different enzyme that cannot confuse it with oxygen, out in the leaf''s outer cell layer; ship the product into a more sealed inner compartment; then release the CO₂ there, so Rubisco always sits in a chamber where CO₂ is artificially concentrated — above a thousand ppm — and oxygen barely gets a look in. Maize, sugarcane and most tropical grasses run this way. The cost is two extra units of ATP per CO₂ delivered. That is a shrewd investment in carbon-thin air and money thrown away in carbon-rich air — so a CO₂-thick world would have no reason to evolve it at all.'
+see_also:
+- photorespiration
+- crassulacean-acid-metabolism
+- rubisco
+- stomata
+category: bio
+tags:
+- physiology
+- evolution
+- chemistry
+cover_prompt: A painted cutaway of leaf tissue in two concentric zones, gas particles being caught in the outer ring and ferried inward along short channels to accumulate densely inside a bright sealed inner chamber, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

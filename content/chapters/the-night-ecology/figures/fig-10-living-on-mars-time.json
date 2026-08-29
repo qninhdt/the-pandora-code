@@ -10,11 +10,28 @@
   "palette": "Deep indigo control room, cyan therapy light, teal screens with no glyphs, pale daylight, sparse amber at the treatment tray.",
   "style": "Painterly human-factors field observation, clinically believable and unglamorous, not futuristic command-centre spectacle.",
   "detail_level": "Clear exhausted posture, blue light panel, outside daylight mismatch and treatment tray; consoles remain soft and unreadable.",
-  "composition": "Operator and blue panel occupy the left centre; daylight window opens on the right; berth and treatment tray anchor the lower right; background staff recede in a shallow diagonal. Leave dark air beside the face and window for callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "NASA logos", "readable screens", "spacesuits", "Mars landscape outside", "watermark", "branding"],
+  "composition": "Operator and blue panel occupy the left centre; daylight window opens on the right; berth and treatment tray anchor the lower right; background staff recede in a shallow diagonal. Leave dark air beside the face and window framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "leader lines",
+    "NASA logos",
+    "readable screens",
+    "spacesuits",
+    "Mars landscape outside",
+    "watermark",
+    "branding",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "This is a control team on Earth following Mars time, not astronauts on Mars. The blue light and melatonin are deliberate treatment tools; the window shows Earth's changing daylight.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no logos, no readable clocks, no sci-fi HUD, no astronauts, no Mars surface outside, no medical drama, no photo or CGI look",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

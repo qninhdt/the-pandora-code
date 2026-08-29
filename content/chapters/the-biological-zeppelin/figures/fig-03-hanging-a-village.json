@@ -10,10 +10,26 @@
   "palette": "Pale cyan membranes, deep indigo background, magenta at the failing point, teal along the intact band.",
   "style": "Painterly naturalist comparative plate, clear and instructive but hand-painted.",
   "detail_level": "Crisp on the attachment points, the puckering and the woven texture of the band; backgrounds plain.",
-  "composition": "Left half the failure case, right half the fix, generous plain dark space above each for later callout labels.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "baked-in captions", "photographic look"],
-  "consistency_notes": "The contrast must be immediately readable: concentrated point load tearing on the left, distributed line load intact on the right. Keep plain dark areas above both for overlaid callouts.",
+  "composition": "Left half the failure case, right half the fix, generous plain dark space above each framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "baked-in captions",
+    "photographic look",
+    "diagram lines",
+    "callouts"
+  ],
+  "consistency_notes": "The contrast must be immediately readable: concentrated point load tearing on the left, distributed line load intact on the right. Keep plain dark areas above both framed by deep negative space.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

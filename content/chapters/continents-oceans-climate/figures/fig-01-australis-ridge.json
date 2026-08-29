@@ -11,10 +11,26 @@
   "style": "Painterly naturalist landscape plate, atmospheric depth, soft brushed canopy texture, NOT a photo or 3D render.",
   "detail_level": "High in the near canopy and ridge, dissolving into layered haze toward the sea and sky.",
   "composition": "Strong horizontal layering - ridge, canopy, sea, level cloud band - emphasising how the forest and the cloud band both run flat to the horizon.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "UI", "watermark", "logos", "modern Earth objects"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "UI",
+    "watermark",
+    "logos",
+    "modern Earth objects",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Match the moon's palette and cloud-band motif from fig-00-cover. The level cloud band is the same Intertropical Convergence Zone seen later in the diagrams.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no diagram chrome, no UI, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/continents-oceans-climate/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/continents-oceans-climate/fig-00-cover.png"
+  ]
 }

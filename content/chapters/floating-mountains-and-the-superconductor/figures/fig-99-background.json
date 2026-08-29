@@ -11,9 +11,24 @@
   "style": "Cinematic matte-painting establishing shot, vast atmospheric depth, painterly photoreal.",
   "detail_level": "Soft and atmospheric throughout — no crisp foreground subject; detail dissolves into haze so the image reads as ambient backdrop, not a figure to study.",
   "composition": "Full-bleed, horizon low, immense empty sky filling most of the frame; visual weight spread evenly with no bright center, leaving the upper-middle calm and dark for text overlay.",
-  "exclude": ["text", "watermark", "people", "spacecraft", "bright focal subject", "sharp foreground object", "Earth flora"],
+  "exclude": [
+    "text",
+    "watermark",
+    "people",
+    "spacecraft",
+    "bright focal subject",
+    "sharp foreground object",
+    "Earth flora",
+    "letters",
+    "labels",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Grey rock and cyan-teal mist matching the chapter's other floating-mountain scenes, but darker, wider, and more distant — a macro mood backdrop, not a close hero.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no logos, no people, no bright hotspot, no high contrast, no sharp foreground, no warm daylight, no oversaturation, no busy detail",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

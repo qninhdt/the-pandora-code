@@ -1,0 +1,18 @@
+id: abiogenesis
+label:
+  vi: Phát sinh sinh giới (abiogenesis)
+  en: Abiogenesis
+definition:
+  vi: 'Quá trình sự sống khởi phát từ vật chất không sống — không phải một sự kiện đơn lẻ mà là một chuỗi sáu bài toán riêng biệt: tạo ra các đơn phân, nối chúng thành chuỗi, sao chép chuỗi cho trung thực, bọc tất cả vào một khoang, ghép hệ vào một nguồn năng lượng liên tục, và cuối cùng bước qua ngưỡng để thành một quần thể biết tiến hóa. Giải xong một bước không đồng nghĩa với giải xong cả bài; đến nay chưa có lộ trình liên tục nào được chứng minh trọn vẹn từ địa hóa học tới một tế bào Darwin.'
+  en: 'The emergence of life from non-living matter — not a single event but a chain of six distinct problems: making the monomers, joining them into chains, copying a sequence faithfully, wrapping it all in a compartment, coupling the system to a continuous energy source, and finally crossing the threshold into a population that evolves. Solving one step is not solving the whole; no continuous route from geochemistry to a Darwinian cell has yet been demonstrated end to end.'
+see_also:
+  - prebiotic-chemistry
+  - rna-world
+  - protocell
+  - last-universal-common-ancestor
+category: concept
+tags:
+- astrobiology
+- chemistry
+- evolution
+cover_prompt: A painted sequence of six faint stages ascending from bare dark mineral rock at the bottom to a single glowing cyan cell at the top, each stage slightly more organised than the last, the lower stages dissolving into indigo haze, cool palette against dark, painterly, no text, no labels, no numbers.

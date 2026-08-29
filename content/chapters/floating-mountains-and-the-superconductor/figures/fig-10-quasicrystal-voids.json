@@ -11,9 +11,22 @@
   "style": "Semi-realistic scientific micrograph render with a schematic clarity.",
   "detail_level": "High detail on the five-fold aperiodic lattice and the scattered holes; a few holes emphasized with seated threads.",
   "composition": "Lattice fills the frame; two or three holes with seated glowing threads drawn slightly larger as focal points.",
-  "exclude": ["text", "watermark", "simple repeating square grid", "faceted gemstone", "jewelry"],
+  "exclude": [
+    "text",
+    "watermark",
+    "simple repeating square grid",
+    "faceted gemstone",
+    "jewelry",
+    "letters",
+    "labels",
+    "arrows",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Thread glow is the same cyan as the chapter's flux threads; lattice shows five-fold (pentagonal) aperiodic symmetry, not a periodic cubic grid.",
   "aspect_ratio": "1:1",
   "negative_prompt": "no text, no numbers, no faceted gemstone, no regular repeating cubic lattice, no oversaturation",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

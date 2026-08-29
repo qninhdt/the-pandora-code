@@ -28,7 +28,8 @@
     "creatures",
     "spacecraft",
     "buildings",
-    "humans"
+    "humans",
+    "callouts"
   ],
   "consistency_notes": "This is the immersive background layer sitting behind body text under a dark scrim, so it must stay dark, low-contrast and free of any bright or busy focal area. Same layered-rock highland subject as the chapter's foreground figures, but pushed far back into atmosphere.",
   "aspect_ratio": "16:9",

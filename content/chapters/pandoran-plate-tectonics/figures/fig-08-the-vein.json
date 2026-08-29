@@ -26,7 +26,8 @@
     "lamps",
     "spacecraft",
     "buildings",
-    "humans"
+    "humans",
+    "callouts"
   ],
   "consistency_notes": "No mining machinery or human presence — this is the rock itself. Cool palette dominant; the ember warmth is a single narrow gradient at the bottom edge only, standing for heat from depth.",
   "aspect_ratio": "3:2",

@@ -11,10 +11,28 @@
   "style": "Painterly naturalist plate, hand-painted texture, documentary and unsentimental.",
   "detail_level": "Crisp on the chestnut trunk bark and nut husks on the left; crisp on the dead stump, its thin shoots and the blighted leaves on the right; middle distance softer in both.",
   "composition": "Two equal vertical panels side by side with a narrow dark gutter, matched ground line across both, the great trunks anchoring the left and the low stump anchoring the lower right, 16:9 landscape.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "callout lines", "arrows", "Avatar branding", "Pandoran flora", "bioluminescence", "human figures"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding",
+    "Pandoran flora",
+    "bioluminescence",
+    "human figures",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "This is an Earth plate, not a Pandoran one - no bioluminescence and no alien flora. Keep the palette cool and restrained so it still sits beside the chapter's other figures.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no bioluminescent glow, no alien plants, no photographic or 3D-render look, no cartoon or anime style",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

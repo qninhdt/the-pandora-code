@@ -11,9 +11,24 @@
   "style": "Painterly geological field-study plate, textured rock, strong sense of stacked depth.",
   "detail_level": "Crisp banding and texture on the near wall, the distinct pale ash band clearly legible; the gorge depth softening into haze.",
   "composition": "The layered wall filling most of the frame as strong horizontal bands, the pale ash band on a third line, the tiny scale figure low for human reference.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "measurement marks", "geology hammer with branding"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "measurement marks",
+    "geology hammer with branding",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Cool Pandora palette; bioluminescent glow restrained and only along seams. Naturalistic rock, not a textbook cross-section diagram.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no infographic styling, no photographic or 3D-render look, no lens flares, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

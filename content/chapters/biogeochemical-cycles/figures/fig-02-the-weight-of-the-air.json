@@ -1,0 +1,38 @@
+{
+  "id": "fig-02-the-weight-of-the-air",
+  "chapter_slug": "biogeochemical-cycles",
+  "role": "diagram",
+  "narrative_purpose": "Make an atmosphere legible as a mass rather than a space: show the whole air column standing on one patch of ground, so the reader can see why pressure, area and gravity are enough to weigh a planet's sky.",
+  "subject": "A single immensely tall vertical shaft of atmosphere isolated against black, rising from a small square patch of forest floor at the very bottom of the frame to nothing at the top. The shaft's sides are implied by a faint difference in haze density rather than by drawn lines. Within the shaft the air is rendered as visible substance: dense, textured and softly luminous at the bottom where it presses on the ground, thinning progressively upward through several distinguishable strata until it fades entirely into the black of space at the top. Suspended within the lower portion, faint drifting particulate and spore matter gives the near air physical weight. The small patch of ground at the base carries a few glowing plants and is visibly compressed and shadowed. In the upper background, far beyond the shaft, the pale curved limb of a banded gas giant sits partly visible.",
+  "scene": "A conceptual cutaway of a planetary atmospheric column standing on its own patch of ground, seen against space.",
+  "camera": "Extremely tall narrow vertical framing, viewed flat-on from a distance so the shaft runs the full height of the frame without perspective convergence.",
+  "light": "Bioluminescent glow from the plants at the base spilling up into the densest air; the air's own faint self-luminous haze diminishing with height; deep indigo shadow flanking the shaft, absolute black above.",
+  "palette": "Void-indigo and near-black dominating, ocean teal and deep teal-indigo through the dense lower air, Pandora cyan in the plant glow at the base, pale mist grey in the thinning upper strata, no warm accent.",
+  "style": "Painterly conceptual plate with real atmospheric texture, hand-illustrated, tonal and soft rather than diagrammatic or vector.",
+  "detail_level": "Clear visible density gradient from bottom to top with several readable strata; fine particulate texture only in the lowest portion; everything above mid-height progressively featureless.",
+  "composition": "The shaft occupying a narrow central band running the full frame height; the small ground patch anchoring the bottom edge; large empty dark fields to either side.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "arrowheads",
+    "diagram lines",
+    "measurement marks",
+    "scale bars",
+    "gridlines",
+    "buildings",
+    "humans",
+    "machines"
+  ],
+  "consistency_notes": "The column's boundaries must be suggested purely by haze density — no drawn container, tube, glass wall or outline of any kind, and absolutely no tick marks or measurement graphics, since this is a painted concept rather than an infographic. The gas giant is Polyphemus and must stay faint and far away.",
+  "aspect_ratio": "9:16",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no scale bars, no tick marks, no gridlines, no arrows, no arrowheads, no drawn tube or glass cylinder, no vector or flat infographic look, no photographic or 3D-render look, no lens flares, no neon UI glow",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

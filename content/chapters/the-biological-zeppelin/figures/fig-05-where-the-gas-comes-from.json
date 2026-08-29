@@ -10,10 +10,28 @@
   "palette": "Amber and deep brown-indigo in the gut tissue, pale cyan bubbles and gas space, the faded microbial layer in desaturated grey.",
   "style": "Painterly naturalist cutaway plate, biological and wet, not schematic.",
   "detail_level": "Crisp on the bubble strings and the sparse microbial layer they pass; the surrounding tissue softly textured.",
-  "composition": "Gut tissue across the lower third, rising bubble channel through the centre, gas compartment across the upper third, plain dark margin on one side for later callout labels.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "chemical formulae", "molecular diagrams", "baked-in captions", "photographic look"],
+  "composition": "Gut tissue across the lower third, rising bubble channel through the centre, gas compartment across the upper third, plain dark margin on one side framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "chemical formulae",
+    "molecular diagrams",
+    "baked-in captions",
+    "photographic look",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The teaching point is that the rising gas passes the microbial layer UNCONSUMED - so that layer must read as sparse and faded, not dense and thriving. No chemical notation of any kind.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no chemical formulae, no molecular diagrams, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

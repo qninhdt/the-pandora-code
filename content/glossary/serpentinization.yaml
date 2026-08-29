@@ -1,0 +1,17 @@
+id: serpentinization
+label:
+  vi: Serpentine hóa (serpentinization)
+  en: Serpentinization
+definition:
+  vi: 'Phản ứng giữa nước biển và đá olivine giàu magie-sắt của lớp phủ, sinh nhiệt và cho ra khoáng serpentine, magnetite cùng một lượng lớn hydro phân tử tan trong nước. Đây là cỗ máy chạy các miệng phun thủy nhiệt kiềm: nó tự cấp nhiệt, tự cấp chất khử, và làm dòng chất lỏng có tính kiềm mạnh — ba điều kiện mà giả thuyết nguồn gốc sự sống ở miệng phun cần đến, hoàn toàn không cần sinh học tham gia.'
+  en: 'The reaction between seawater and the magnesium-iron olivine of the mantle, which gives off heat and produces serpentine minerals, magnetite, and a large amount of dissolved hydrogen. It is the engine behind alkaline hydrothermal vents: it supplies its own heat, its own reductant, and makes the outflowing fluid strongly alkaline — the three conditions a vent origin of life needs, with no biology involved at all.'
+see_also:
+  - alkaline-hydrothermal-vent
+  - chemiosmosis
+  - tidal-heating
+category: planet
+tags:
+- geology
+- chemistry
+- astrobiology
+cover_prompt: A painted cross-section of cracked dark green-grey mantle rock with pale veins spreading through it and small teal gas bubbles rising out of the fractures into dark water, warm amber glow deep in the rock, painterly, no text, no labels, no numbers.

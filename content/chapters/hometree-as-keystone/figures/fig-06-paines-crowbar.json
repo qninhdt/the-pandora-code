@@ -10,11 +10,27 @@
   "palette": "Indigo water, teal-grey rock, cyan tide-pool reflections, muted biological colours, sparse amber on the sea star.",
   "style": "Painterly intertidal field experiment plate with taxonomically recognisable organisms and tactile wet surfaces.",
   "detail_level": "Crisp sea star, mussel cover and species mosaic; waves and distant shore soften into haze.",
-  "composition": "Diverse control plot fills the left half; removal and mussel-dominated outcome share the right half in a shallow temporal overlay. Keep clear dark water margins beside the rare sea star and dense mussel carpet for callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "aquarium glass", "tropical coral", "watermark", "logos", "UI chrome"],
+  "composition": "Diverse control plot fills the left half; removal and mussel-dominated outcome share the right half in a shallow temporal overlay. Keep clear dark water margins beside the rare sea star and dense mussel carpet framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "leader lines",
+    "aquarium glass",
+    "tropical coral",
+    "watermark",
+    "logos",
+    "UI chrome",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The sea star must occupy little biomass yet control a large community effect. The post-removal plot must be dominated by mussels, not simply empty rock.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no plot labels, no arrows, no tropical beach, no giant starfish, no cartoon style, no photographic or CGI look",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

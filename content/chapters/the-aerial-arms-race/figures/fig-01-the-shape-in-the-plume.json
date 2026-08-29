@@ -24,11 +24,16 @@
     "green forest",
     "neon glow",
     "photographic look",
-    "walking hind legs"
+    "walking hind legs",
+    "callouts"
   ],
   "consistency_notes": "Same animal as the cover: two fully developed pairs of driven membranous wings caught on opposite strokes, no walking hind limbs, forward bone horn, charcoal-and-crimson colouring. The separation between front and rear wing pairs must be obvious at a glance - this is the whole point of the picture.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no diagram overlays, no green rainforest, no neon glow, no 3D-render or photographic look, no cartoon style, no single wing pair",
-  "style_refs": ["pandora-establishing.png"],
-  "character_refs": ["apps/web/public/images/chapters/the-aerial-arms-race/fig-00-cover.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
+  "character_refs": [
+    "apps/web/public/images/chapters/the-aerial-arms-race/fig-00-cover.png"
+  ]
 }

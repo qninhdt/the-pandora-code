@@ -11,9 +11,28 @@
   "style": "Painterly atmospheric ocean vista, hand-painted and immersive, designed as a background rather than a study plate.",
   "detail_level": "Soft silhouettes and dissolving reef depth; intentionally little local contrast or sharp detail.",
   "composition": "Pod occupies a small lower-third diagonal, one separated animal trails behind, upper two-thirds remain dark open water with even tone.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "bright focal subject", "close face", "boats", "humans", "RDA machinery", "Avatar branding"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "bright focal subject",
+    "close face",
+    "boats",
+    "humans",
+    "RDA machinery",
+    "Avatar branding",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Same tulkun body language as the cover but rendered only as distant low-contrast silhouettes. Preserve a dark reading surface above all else.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no labels, no bright focal subject, no lens flare, no photographic or CGI look, no ordinary two-eyed Earth whales, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

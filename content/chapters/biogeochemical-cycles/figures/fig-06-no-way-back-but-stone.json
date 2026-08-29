@@ -1,0 +1,38 @@
+{
+  "id": "fig-06-no-way-back-but-stone",
+  "chapter_slug": "biogeochemical-cycles",
+  "role": "comparison",
+  "narrative_purpose": "Show that phosphorus has one entrance and one exit and no shortcut through the air, so the reader sees long-term fertility as a tectonic property: the only return path runs through uplifted rock.",
+  "subject": "A tall wide cross-section reading left to right and top to bottom as a single continuous journey. At the upper left, a bare rocky summit under rain, its exposed stone visibly weathering, with pale mineral-laden runoff beginning to gather. The runoff becomes a river that descends right and downward through a band of dense glowing forest at mid-height, the water carrying a faint pale suspended load. At the lower right the river empties into a still dark sea, and beneath that water the pale load settles into four or five clearly layered horizontal bands of marine sediment on the seafloor, the deepest bands darkest and most compressed. From those deep layers, on the far left of the lower frame, a very broad slow faint arc of upward displacement lifts the buried strata back toward the summit where the journey began, the rock in that arc rendered as tilted and folded rather than flat. The critical negative feature: the entire upper band of the frame — the open sky above the summit, forest and sea — is completely empty of any pathway, drawn as clean uninterrupted haze with nothing crossing it.",
+  "scene": "A schematic planetary cross-section following mineral nutrient from weathering summit through river and forest to seafloor burial, and back up by tectonic uplift.",
+  "camera": "Wide flat-on cross-sectional view, the full journey contained in frame, horizon implied near the top.",
+  "light": "Cool ambient dusk overall; bioluminescent teal glow only in the forest band; the sea and sediment layers dark and unlit; the uplift arc barely lit at all, indicated by form rather than illumination.",
+  "palette": "Weathered grey-stone at the summit and in the strata, void-indigo in the sea and deep layers, ocean teal in the river, living teal and Pandora cyan in the forest glow, pale mist grey in the suspended mineral load and the empty sky, no warm accent.",
+  "style": "Painterly geological cross-section plate, textured stone and sediment banding, soft atmospheric haze, hand-illustrated rather than vector.",
+  "detail_level": "Clear readable sediment banding on the seafloor and visible weathering texture at the summit; the forest band softer; the uplift arc deliberately faint and slow-looking.",
+  "composition": "A descending diagonal from upper left to lower right carrying the journey; the sediment layers as strong horizontals along the bottom; the uplift arc sweeping up the left edge to close the circuit; the upper quarter of the frame left as completely empty haze.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrowheads",
+    "leader lines",
+    "gridlines",
+    "any pathway through the sky",
+    "gas plumes",
+    "volcanic emission",
+    "buildings",
+    "humans",
+    "machines"
+  ],
+  "consistency_notes": "The empty sky is the point of the image and must stay absolutely empty — no plume, vapour trail, drifting particle path or any other route crossing the upper band, because phosphorus has no gas phase. Use flowing form and painted bands rather than arrows: no arrowheads anywhere. The uplift must read as extremely slow and massive.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no arrowheads, no leader lines, no gridlines, no gas plume, no vapour trail, no path across the sky, no vector or flat infographic look, no photographic or 3D-render look, no neon UI glow",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

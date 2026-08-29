@@ -11,10 +11,26 @@
   "style": "Painterly speculative-zoology naturalist plate, anatomically legible and observed, not a movie still.",
   "detail_level": "High on shoulders, elbows, fork points, hands and limb attachments; faces subdued; background minimal.",
   "composition": "Three separated figures ordered left to right from six separate limbs, to forked paired upper limbs, to four total limbs, with open dark space above each for labels.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "weapons", "clothing detail", "extra tails", "overlapping bodies", "watermark", "Earth primates"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "weapons",
+    "clothing detail",
+    "extra tails",
+    "overlapping bodies",
+    "watermark",
+    "Earth primates",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "Limb counts are load-bearing: left exactly six separately attached limbs; center exactly two legs plus two upper arms that each fork into two forearms and hands; right exactly two arms and two legs.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no arrows, no wrong limb counts, no extra arms, no fused silhouettes, no ape or monkey from Earth, no photographic or 3D-render look, no action pose",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

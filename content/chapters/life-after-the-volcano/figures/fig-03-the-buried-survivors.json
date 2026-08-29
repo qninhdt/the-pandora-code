@@ -2,7 +2,7 @@
   "id": "fig-03-the-buried-survivors",
   "chapter_slug": "life-after-the-volcano",
   "role": "diagram",
-  "narrative_purpose": "Make biological legacies visible: recovery erupts from buried survivors, not from the edges — a root crown, a shielded seed and a burrow beneath the ash send one patch of life up through it.",
+  "narrative_purpose": "Make biological legacies visible: recovery erupts from buried survivors, not from the edges \u2014 a root crown, a shielded seed and a burrow beneath the ash send one patch of life up through it.",
   "subject": "A vertical cutaway of ground. A pale grey ash layer covers a darker buried soil layer. Beneath the ash, three surviving elements are sheltered: a living root crown, a single dormant seed in a pocket, and a small burrow tunnel. Directly above them, one small patch of green shoots pushes up through the ash to the surface.",
   "scene": "A cross-section slice of Ashlands ground, cutaway style so both the surface ash and the buried survivors are seen at once, dark earth below and grey ash above.",
   "camera": "Side-on cross-section view, as if a clean vertical slice through the ground.",
@@ -10,10 +10,26 @@
   "palette": "Grey ash over dark indigo soil, living teal-green on the survivors and shoots, no warm accent needed.",
   "style": "Painterly naturalist cutaway plate, clear layered structure but still painterly not schematic.",
   "detail_level": "Crisp on the three survivors and the emerging shoot; surrounding soil softly textured.",
-  "composition": "Ash band across the upper third, dark soil below, the three survivors spaced along the buried layer, one green patch rising through the ash above them; leave a plain dark region to one side for later callout labels.",
-  "exclude": ["text", "letters", "numbers", "labels", "watermark", "logos", "UI", "arrows", "leader lines", "baked-in captions", "photographic look"],
+  "composition": "Ash band across the upper third, dark soil below, the three survivors spaced along the buried layer, one green patch rising through the ash above them; leave a plain dark region to one side framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "baked-in captions",
+    "photographic look",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The point is survivors UNDER the ash, not colonists arriving from the side. Keep clear open dark space beside each survivor so callouts can be overlaid later. Cool Pandora palette with living-teal life accents.",
   "aspect_ratio": "4:3",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no leader lines, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }

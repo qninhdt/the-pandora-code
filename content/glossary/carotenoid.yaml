@@ -1,0 +1,17 @@
+id: carotenoid
+label:
+  vi: Carotenoid
+  en: Carotenoid
+definition:
+  vi: 'Nhóm sắc tố màu vàng, cam và đỏ cam làm nên màu của cà rốt và của lá mùa thu. Trong lá, carotenoid làm hai việc thật: chúng hấp thụ vùng lam-lục mà diệp lục bắt kém rồi chuyển năng lượng ấy sang cho diệp lục, nên chúng nới rộng dải sáng cây thu được; và khi sáng quá mạnh, chúng biến thành van xả, tỏa bớt năng lượng dư thành nhiệt trước khi nó kịp phá hủy bộ máy quang hợp. Đây là điểm khác biệt cốt tử so với anthocyanin — carotenoid thực sự góp phần vào việc ăn, còn anthocyanin thì không.'
+  en: 'The family of yellow, orange and red-orange pigments behind the colour of carrots and autumn leaves. In a leaf, carotenoids do two real jobs: they absorb the blue-green light chlorophyll catches poorly and hand that energy on to chlorophyll, widening the band a plant can harvest; and under intense light they become a relief valve, bleeding surplus energy away as heat before it can wreck the photosynthetic machinery. This is the crucial difference from anthocyanins — carotenoids genuinely contribute to the feeding, while anthocyanins do not.'
+see_also:
+- chlorophyll
+- anthocyanin
+- non-photochemical-quenching
+- green-gap
+category: bio
+tags:
+- chemistry
+- physiology
+cover_prompt: A painted study of overlapping leaf fragments shading from deep teal into warm amber and orange at their edges, with a faint wisp of heat rising off the warmest one, cool palette with amber accents against void-indigo, painterly naturalist plate, no text, no labels.

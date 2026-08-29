@@ -1,0 +1,30 @@
+id: steady-state
+label:
+  vi: Trạng thái dừng
+  en: Steady state
+definition:
+  vi: >-
+    Tình trạng một bể chứa giữ lượng không đổi không phải vì nó tĩnh lặng, mà vì dòng vào đúng bằng
+    dòng ra. Đây là một phân biệt dễ bị bỏ qua và rất quan trọng: khí quyển Trái Đất chứa một lượng
+    hơi nước gần như cố định, trong khi từng phân tử nước chỉ ở đó chừng chín ngày. Cái không đổi là
+    con số, không phải nội dung. Hệ quả thực tiễn là bất cứ khi nào một nồng độ được cho là bền vững
+    qua thời gian dài, ta có quyền hỏi ngay: nguồn nào đang bù vào, và với nhịp bao nhiêu?
+  en: >-
+    The condition in which a reservoir's contents stay constant not because nothing is happening but
+    because inflow exactly matches outflow. The distinction is easy to miss and matters enormously:
+    Earth's atmosphere holds a nearly fixed amount of water vapour while any individual water molecule
+    stays about nine days. What is constant is the number, not the contents. The practical consequence
+    is that whenever a concentration is said to have persisted over a long span, one is entitled to ask
+    immediately what source is replacing it, and at what rate.
+see_also:
+  - mass-balance
+  - residence-time
+  - negative-feedback
+category: concept
+tags:
+  - earth-systems
+  - physics
+cover_prompt: >-
+  A painted illustration of a stone basin brimming with luminous teal liquid, a steady stream pouring
+  in from above and an equal stream spilling from a notch at the rim so the level never changes, dark
+  indigo surroundings, painterly naturalist plate, no text, no numbers, no labels.

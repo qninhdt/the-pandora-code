@@ -11,10 +11,27 @@
   "style": "Painterly astronomical plate, soft and atmospheric, layered haze, no hard vector edges.",
   "detail_level": "Moderate: the disk's flatness, the polar infall funnels and the truncated outer edge all clearly readable; texture painterly throughout.",
   "composition": "Star left of centre, disk sweeping rightward toward the companion at the right edge, truncation visible about two-thirds of the way across. Dark open cloud space along the top edge for callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "orbit lines", "watermark", "logos", "UI", "grid", "planets", "moons"],
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "orbit lines",
+    "watermark",
+    "logos",
+    "UI",
+    "grid",
+    "planets",
+    "moons",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "No planets yet - this is the disk stage. The truncation on the companion's side must be visible as an abrupt edge, conveyed by shape alone with no drawn boundary line.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no orbit lines, no grid, no diagram chrome, no planets, no moons, no photographic or 3D-render look, no lens flares",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

@@ -21,11 +21,15 @@
     "UI",
     "watermark",
     "logos",
-    "land above the rock"
+    "land above the rock",
+    "diagram lines",
+    "callouts"
   ],
   "consistency_notes": "Same wet grey-violet rock and glowing cyan water as the cover, seen much closer. Leave one side of the frame plain and dark for annotation callouts.",
   "aspect_ratio": "3:2",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no arrows, no grid, no diagram chrome, no photographic or 3D-render look, no terrain visible above the rock",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

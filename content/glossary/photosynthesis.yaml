@@ -1,0 +1,17 @@
+id: photosynthesis
+label:
+  vi: Quang hợp
+  en: Photosynthesis
+definition:
+  vi: 'Quá trình cây xanh dùng ánh sáng để lắp khí CO₂ và nước thành đường — tức là tự làm ra thức ăn cho mình từ không khí. Nó gồm hai nửa: nửa cần sáng bắt photon và biến năng lượng ấy thành "tiền" hóa học, nửa còn lại dùng số tiền đó gắn từng nguyên tử carbon vào một bộ khung phân tử. Gần như mọi chuỗi thức ăn trên Trái Đất đều bắt đầu ở đây. Lưu ý rằng cây vẫn hô hấp suốt ngày đêm như ta; quang hợp chỉ là lớp việc thứ hai xếp thêm lên, và chỉ chạy khi có sáng.'
+  en: 'The process by which plants use light to assemble CO₂ and water into sugar — making their own food out of thin air. It comes in two halves: a light-requiring half that catches photons and converts their energy into chemical currency, and a second half that spends that currency attaching carbon atoms one at a time onto a molecular scaffold. Nearly every food chain on Earth begins here. Note that plants also respire around the clock, just as you do; photosynthesis is a second layer of work stacked on top, running only in the light.'
+see_also:
+- chlorophyll
+- calvin-benson-cycle
+- rubisco
+- photosynthetically-active-radiation
+category: bio
+tags:
+- physiology
+- chemistry
+cover_prompt: A painted close view of a single broad leaf held against a dark sky, thin beams of light entering its upper surface while a faint glowing thread of sugar traces down through its central vein, cool teal-cyan palette against void-indigo, painterly naturalist plate, no text, no labels.

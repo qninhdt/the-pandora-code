@@ -1,0 +1,38 @@
+{
+  "id": "fig-07-two-days-in-the-air",
+  "chapter_slug": "biogeochemical-cycles",
+  "role": "diagram",
+  "narrative_purpose": "Show the sink that empties the sky: a sulfurous plume visibly destroyed a short way above its vent, so the reader sees why any reduced gas in an oxidising atmosphere is evidence of a source running right now.",
+  "subject": "A dark volcanic fissure at the bottom of the frame venting a dense plume that rises vertically. The plume's life is drawn as three distinct stages up its height. Low down, immediately above the vent, it is thick, coherent, heavy and slightly sallow — a solid rope of gas. At mid-height it begins visibly coming apart: the coherent rope frays into wisps and breaks into separated pale scattered particulate, its density collapsing. In the upper third almost nothing of the plume remains — only a thin diffuse acid haze spread sideways across the bright open sky, with a few faint pale streaks drifting back downward as fallout toward the landscape below. The surrounding sky is notably bright, clear and open compared with the dark ground, reading as oxygen-rich air. Below and around the fissure, dark barren volcanic terrain with no vegetation.",
+  "scene": "A sulfurous volcanic plume rising into bright oxidising air on Pandora and being chemically destroyed within a short distance of its vent.",
+  "camera": "Wide landscape view from level ground a distance from the fissure, framing the whole vertical life of the plume from vent to dispersal.",
+  "light": "Bright diffuse sky light from above illuminating the plume from behind so its thinning is clearly readable; one small restrained ember glow within the fissure itself; the terrain in deep indigo shadow.",
+  "palette": "Void-indigo and deep teal-indigo in the terrain, pale mist grey and desaturated stone in the plume and haze, one small ember-amber accent confined to the vent, cool pale sky above, no other warm tone.",
+  "style": "Painterly volcanic landscape plate with real gas and aerosol texture, atmospheric and observed, hand-illustrated rather than rendered.",
+  "detail_level": "High texture in the dense lower plume and the fissure rim; the mid-height fraying rendered as clearly granular and breaking; the upper haze almost featureless.",
+  "composition": "The fissure low and left of centre; the plume rising as a strong vertical that visibly loses substance with height; the wide pale sky occupying the upper half; barren terrain along the bottom edge.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "arrowheads",
+    "diagram lines",
+    "molecular diagrams",
+    "chemical formulas",
+    "vegetation",
+    "buildings",
+    "humans",
+    "machines"
+  ],
+  "consistency_notes": "The three-stage destruction up the plume's height is the entire teaching content and must be unmistakable — dense rope at the bottom, visibly fraying in the middle, essentially gone at the top. Keep the sallow tint of the low plume very restrained so the cool palette still dominates. No molecules, formulas or annotations of any kind.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no labels, no chemical formulas, no molecular diagrams, no arrows, no arrowheads, no diagram lines, no lush vegetation, no vector or flat infographic look, no photographic or 3D-render look, no lens flares, no neon UI glow",
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
+}

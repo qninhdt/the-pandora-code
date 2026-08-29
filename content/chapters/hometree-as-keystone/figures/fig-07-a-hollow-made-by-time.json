@@ -10,11 +10,27 @@
   "palette": "Indigo understory, teal-grey bark and sapwood, cyan fungal threads, sparse amber inside the mature hollow.",
   "style": "Painterly dendrology and decay plate, botanically coherent and materially detailed.",
   "detail_level": "Crisp bark, branch scar, fungal front, galleries and final hollow; background foliage remains soft.",
-  "composition": "Four trunks progress left to right from solid sapling to mature hollow-bearing veteran, aligned at the base. Leave dark strips beside the injury, decay front and final occupants for callouts.",
-  "exclude": ["text", "letters", "numbers", "labels", "arrows", "leader lines", "chainsaws", "carved holes", "human nest boxes", "watermark", "logos"],
+  "composition": "Four trunks progress left to right from solid sapling to mature hollow-bearing veteran, aligned at the base. Leave dark strips beside the injury, decay front and final occupants framed by deep negative space.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "arrows",
+    "leader lines",
+    "chainsaws",
+    "carved holes",
+    "human nest boxes",
+    "watermark",
+    "logos",
+    "diagram lines",
+    "callouts"
+  ],
   "consistency_notes": "The hollow must develop from a natural branch injury through fungal and insect decay while living sapwood persists around it. Do not show a dead hollow log as the final stage.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no age numbers, no arrows, no carved doorway, no fantasy tree face, no photo, no CGI, no vector timeline",
-  "style_refs": ["pandora-establishing.png"],
+  "style_refs": [
+    "pandora-establishing.png"
+  ],
   "character_refs": []
 }

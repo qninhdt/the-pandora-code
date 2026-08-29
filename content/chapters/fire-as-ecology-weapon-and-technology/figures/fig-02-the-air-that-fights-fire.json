@@ -26,10 +26,14 @@
     "thermometers",
     "gauges",
     "green vegetation",
-    "photographic look"
+    "photographic look",
+    "diagram lines",
+    "callouts"
   ],
-  "consistency_notes": "The two fuel bundles must look IDENTICAL — same size, same twigs, same arrangement. Only the flames differ: left tall narrow bright, right short wide dull. No divider drawn between the halves. Cool dark surroundings with the flames as the only warm elements.",
+  "consistency_notes": "The two fuel bundles must look IDENTICAL \u2014 same size, same twigs, same arrangement. Only the flames differ: left tall narrow bright, right short wide dull. No divider drawn between the halves. Cool dark surroundings with the flames as the only warm elements.",
   "aspect_ratio": "16:9",
   "negative_prompt": "no text, no lettering, no numbers, no labels, no dividing line or panel border, no arrows, no measuring instruments, no green vegetation, no 3D-render or photographic look, no cartoon style",
-  "style_refs": ["pandora-establishing.png"]
+  "style_refs": [
+    "pandora-establishing.png"
+  ]
 }
