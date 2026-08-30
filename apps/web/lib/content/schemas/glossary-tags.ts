@@ -53,9 +53,15 @@ export const GLOSSARY_TAG_LABELS: Record<GlossaryTag, { vi: string; en: string }
   bioluminescence: { vi: "Phát quang sinh học", en: "Bioluminescence" },
   mycology: { vi: "Nấm & mạng rễ", en: "Mycology" },
   "collective-behavior": { vi: "Hành vi tập thể", en: "Collective behavior" },
-  "developmental-biology": { vi: "Sinh học phát triển", en: "Developmental biology" },
+  "developmental-biology": {
+    vi: "Sinh học phát triển",
+    en: "Developmental biology",
+  },
   consciousness: { vi: "Ý thức & nhận thức", en: "Consciousness" },
-  "philosophy-of-science": { vi: "Triết học khoa học", en: "Philosophy of science" },
+  "philosophy-of-science": {
+    vi: "Triết học khoa học",
+    en: "Philosophy of science",
+  },
   "information-theory": { vi: "Lý thuyết thông tin", en: "Information theory" },
   "network-science": { vi: "Khoa học mạng lưới", en: "Network science" },
   atmosphere: { vi: "Khí quyển & khí hậu", en: "Atmosphere" },
@@ -73,7 +79,7 @@ export const GLOSSARY_TAG_LABELS: Record<GlossaryTag, { vi: string; en: string }
   "law-and-policy": { vi: "Luật & chính sách", en: "Law and policy" },
   pharmacology: { vi: "Dược lý học", en: "Pharmacology" },
   bioethics: { vi: "Đạo đức sinh học", en: "Bioethics" },
-  "pandora-canon": { vi: "Chính sử Pandora", en: "Pandora canon" },
+  "pandora-canon": { vi: "Nguyên tác Pandora", en: "Pandora canon" },
 };
 
 export function glossaryTagLabel(tag: string, locale: "vi" | "en"): string {
