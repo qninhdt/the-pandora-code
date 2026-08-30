@@ -24,27 +24,24 @@ This skill owns editorial adaptation from chapter text to solo-narrator audio.
 It does not write chapters, translate locales, synthesize voices, create
 multi-host dialogue, or change the player/audio pipeline.
 
-Treat this `SKILL.md` as the authority for editorial behavior. Read
-`i18n/transcript.prompt.md` for the repository schema, skeleton block mapping,
-speech normalization, and validation contract. When the two conflict, preserve
-the schema and safety invariants, then report the editorial conflict instead of
-silently choosing one.
+Treat this `SKILL.md` as the authority for editorial behavior. **MUST open and
+read `i18n/transcript.prompt.md` in the same task before drafting**; it owns the
+repository schema, skeleton block mapping, speech normalization, and validation
+contract. Merely generating the skeleton does not load that contract. If the
+file cannot be read, stop instead of improvising its rules. When the two files
+conflict, preserve schema and safety invariants, then report the editorial
+conflict instead of silently choosing one.
 
 ## Non-negotiable invariants
 
-1. Preserve every material fact, number, named entity, causal relationship,
-   qualification, uncertainty level, and conclusion from the source.
-2. Never introduce a factual claim, analogy, illustrative scenario, motive,
-   quotation, or certainty level absent from the source material available for
-   that block.
-3. Keep skeleton sections, ids, and order unchanged. Reorganize only within a
-   section and only when meaning, chronology, and causality remain intact.
-4. Build each locale directly from that locale's MDX. Never derive Vietnamese
-   from the English transcript or English from the Vietnamese transcript.
-5. Preserve the author's point of view, warmth, restraint, and distinction
-   between canon, inference, speculation, and real science.
-6. Produce valid JSON matching the repository contract. Do not place Markdown,
-   JSX, HTML, production notes, or narrator directions inside spoken text.
+1. **Never summarize or condense (Tuyệt đối không tóm tắt):** The transcript MUST be a full-length, unabridged spoken adaptation preserving the complete explanatory depth, all paragraphs, arguments, numerical calculations, and evidence of the source MDX. Word count must match the full volume of the source (~1.0x in EN, ~1.2x to 1.5x in VI).
+2. Preserve every material fact, number, named entity, causal relationship, qualification, uncertainty level, and conclusion from the source.
+3. Never introduce a factual claim, analogy, illustrative scenario, motive, quotation, or certainty level absent from the source material available for that block.
+4. Keep skeleton sections, ids, and order unchanged. Reorganize only within a section and only when meaning, chronology, and causality remain intact.
+5. Build each locale directly from that locale's MDX. Never derive Vietnamese from the English transcript or English from the Vietnamese transcript.
+6. Preserve the author's point of view, warmth, restraint, and distinction between canon, inference, speculation, and real science.
+7. Produce valid JSON matching the repository contract. Do not place Markdown, JSX, HTML, production notes, or narrator directions inside spoken text.
+8. Spoken adaptation transforms written prose into natural audio flow: fully expanding all numbers, formulas, and symbols into spoken words; splitting long sentences into <= 45 words for natural breath control; eliminating visual/layout references; and ensuring seamless solo-narrator transitions.
 
 ## Workflow
 
@@ -65,24 +62,21 @@ For every section, identify internally before writing:
 - facts, numbers, names, definitions, and causal steps that must survive;
 - caveats, confidence labels, and boundaries that prevent overclaiming;
 - visual or interactive content whose meaning is unavailable through prose;
-- repeated or layout-dependent language that may be compressed or rewritten;
+- repeated or layout-dependent language that may be rewritten for audio;
 - the insight that should remain with the listener at the section's end.
 
 Use the ledger to verify completeness. Do not expose it in the transcript.
 
-### 3. Choose adaptation intensity
+### 3. Recompose for audio, never summarize
 
-Classify each source passage before rewriting:
-
-- **Preserve:** already sounds natural aloud. Apply only speech cleanup.
-- **Light-adapt:** retain its sequence and voice; shorten syntax, resolve
-  references, and improve breath points.
-- **Rebuild-for-audio:** reconstruct the passage around its source-backed ideas
-  when it depends on layout, dense lists, tables, figures, or print cadence.
-
-Use the minimum transformation needed. Do not apply a uniform podcast formula
-to every paragraph. Do not retain one output paragraph per source paragraph
-when merging or splitting improves listening comprehension.
+- Adapt every paragraph and explanatory step of the source into spoken prose. Do not omit information; change the structure, rhythm, and phrasing to optimize for the ear while retaining full depth.
+- Rewrite printed exposition into spoken reasoning: orient the listener,
+  establish the question, connect cause to consequence, and land the takeaway
+  in an order that can be followed without rereading.
+- Keep sentences comfortably paced (under 45 words) with clear punctuation
+  controlling breath pauses.
+- Expand all symbols, decimals, and formulas into spoken language.
+- Preserve exact phrasing for proper names, canon terms, and scientific definitions.
 
 ### 4. Shape a solo-narrator audio arc
 
@@ -97,6 +91,9 @@ when merging or splitting improves listening comprehension.
   next section through the argument, not through generic transition filler.
 - Treat this arc as a diagnostic, not a template. Omit stages the source does
   not need and avoid repeating the same cadence across sections.
+- Make transitions carry reasoning: connect the next idea to the question,
+  contrast, consequence, or uncertainty already in motion. Do not preserve
+  print-only adjacency just because two paragraphs were next to each other.
 
 ### 5. Write for one attentive listener
 
@@ -171,6 +168,9 @@ Do not report completion until all checks pass:
   sentence depends on unseen layout or omitted interaction.
 - **Naturalness:** the narration has varied rhythm, purposeful transitions, and
   no recurring verbal formula, fake enthusiasm, or mechanical enumeration.
+- **Adaptation:** the result cannot be mapped sentence-for-sentence or
+  paragraph-for-paragraph back to ordinary source prose; non-exempt long spans
+  are not copied, and changes go beyond notation and punctuation cleanup.
 - **Speakability:** two separated sections can be read aloud once without
   stumbling, backtracking, or mentally decoding notation.
 - **Structure:** JSON, ids, metadata, source hash, block fields, and validator

@@ -6,10 +6,10 @@
 // produces that pair from existing section renders, so a chapter that was
 // synthesized before the single-track change does not have to be paid for
 // again. Section WAVs are concatenated in numeric order with `--gap-section`
-// silence between them, matching what the TTS pipeline emits directly.
+// silence between them, defaulting to the gap-free TTS pipeline output.
 //
 // Usage:
-//   node scripts/assemble-chapter-audio.mjs <slug> <en|vi> [--gap-section 0.9]
+//   node scripts/assemble-chapter-audio.mjs <slug> <en|vi> [--gap-section 0]
 //     [--outdir dir] [--mp3]
 
 import { spawnSync } from "node:child_process";
@@ -20,7 +20,7 @@ import { bytesPerSecond, readWav, sameFormat, silence, writeWav } from "./lib/wa
 const CHAPTERS = "content/chapters";
 
 function parseArgs(args) {
-  const opts = { gapSection: 0.9, outdir: null, mp3: false };
+  const opts = { gapSection: 0, outdir: null, mp3: false };
   for (let index = 0; index < args.length; index += 1) {
     if (args[index] === "--mp3") opts.mp3 = true;
     else if (args[index] === "--gap-section") opts.gapSection = Number.parseFloat(args[++index]);
@@ -54,7 +54,7 @@ const [slug, locale, ...rest] = process.argv.slice(2);
 
 try {
   if (!slug || !["en", "vi"].includes(locale)) {
-    throw new Error("usage: assemble-chapter-audio.mjs <slug> <en|vi> [--gap-section 0.9] [--mp3]");
+    throw new Error("usage: assemble-chapter-audio.mjs <slug> <en|vi> [--gap-section 0] [--mp3]");
   }
   const opts = parseArgs(rest);
   const directory = opts.outdir ?? path.join("tts-out", `${slug}.${locale}`);

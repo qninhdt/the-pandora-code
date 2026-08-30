@@ -32,7 +32,13 @@ const LINT_ERRORS = [
 const LINT_WARNINGS = [
   [/\d[.,]\d/, "decimal number not spelled out"],
   [/\d\s?[–-]\s?\d/, "numeric range not spelled out"],
+  [
+    /\b(?:figure|table|chart)\s+(?:above|below)\b|\b(?:hình|bảng|biểu đồ)\s+(?:ở\s+)?(?:trên|dưới|bên trên|bên dưới)\b/i,
+    "visual-position reference should be audio-native",
+  ],
 ];
+const SPOKEN_FIGURE_TAG = /^\s*\[(?:Figure|Hình)\s+\d+\]/i;
+const MAX_SENTENCE_WORDS = 45;
 
 const words = (s) => s.split(/\s+/).filter(Boolean).length;
 const blockText = (b) => (b && typeof b.text === "string" ? b.text : "");
@@ -88,18 +94,24 @@ export function validateOne(transcript, skeleton) {
     for (const f of mdxFigs) if (!saidFigs.has(f)) err("error", "*", `figure ${f} never spoken`);
   }
 
-  // 4. speech lint (also locale-consistent figure tag)
-  const tag = transcript.locale === "vi" ? "[Hình" : "[Figure";
-  const wrongTag = transcript.locale === "vi" ? "[Figure" : "[Hình";
+  // 4. speech lint and audio-native presentation checks
   for (const s of transcript.sections) {
     for (const [j, b] of s.blocks.entries()) {
       const at = `${s.id}[${j}]`;
       const t = blockText(b);
       if (!t) continue;
-      if (b.type === "figure" && !t.startsWith(tag)) err("error", at, `figure text must open with ${tag} NN]`);
-      if (t.includes(wrongTag)) err("error", at, `wrong-locale figure tag ${wrongTag}`);
+      if (b.type === "figure" && SPOKEN_FIGURE_TAG.test(t)) {
+        err("error", at, "figure number must remain metadata, not spoken text");
+      }
       for (const [re, msg] of LINT_ERRORS) if (re.test(t)) err("error", at, `${msg}: "${(t.match(re) || [""])[0]}"`);
       for (const [re, msg] of LINT_WARNINGS) if (re.test(t)) err("warn", at, `${msg}: "${(t.match(re) || [""])[0]}"`);
+      const longSentence = t
+        .split(/[.!?]+/u)
+        .map((sentence) => words(sentence))
+        .find((count) => count > MAX_SENTENCE_WORDS);
+      if (longSentence) {
+        err("warn", at, `sentence has ${longSentence} words; review breath and clarity`);
+      }
     }
   }
   return issues;
@@ -183,7 +195,7 @@ function selftest() {
     .replace(/[₀-₉]/g, (c) => ` ${["khong", "mot", "hai", "ba", "bon", "nam", "sau", "bay", "tam", "chau"]["₀₁₂₃₄₅₆₇₈₉".indexOf(c)]}`);
   const speak = (b) => {
     if (b.type === "p") return { type: "p", text: spoken(b.raw) };
-    if (b.type === "figure") return { type: "figure", figNo: b.figNo, text: `[Figure ${Number(b.figNo)}] ${spoken(b.caption)}` };
+    if (b.type === "figure") return { type: "figure", figNo: b.figNo, text: spoken(b.caption) };
     if (b.type === "note" && b.body) return { type: "note", kind: b.kind, text: spoken(b.body) };
     if (b.type === "data" && b.left) return { type: "data", text: `${spoken(b.left.title)} versus ${spoken(b.right?.title)}.` };
     return null;
@@ -223,7 +235,16 @@ function selftest() {
   expect("co2 subscript", validateOne(adapt((t) => { t.sections[0].blocks[0].text = "khí CO₂ đậm"; }), sk), "error", "subscript");
   expect("decimal warn", validateOne(adapt((t) => { t.sections[0].blocks[0].text = "khoảng 4.37 năm"; }), sk), "warn", "decimal");
   expect("stale", staleness(adapt((t) => { t.source.sha256 = "0".repeat(64); }), mdx("where-is-pandora", "en")), "warn", "stale");
-  expect("wrong-locale tag", validateOne(adapt((t) => { t.locale = "vi"; }), sk), "error", "wrong-locale");
+  expect("spoken figure tag", validateOne(adapt((t) => {
+    const figure = t.sections.flatMap((section) => section.blocks).find((block) => block.type === "figure");
+    figure.text = `[Figure 2] ${figure.text}`;
+  }), sk), "error", "remain metadata");
+  expect("visual position", validateOne(adapt((t) => {
+    t.sections[0].blocks[0].text = "See the figure below for the result.";
+  }), sk), "warn", "audio-native");
+  expect("long sentence", validateOne(adapt((t) => {
+    t.sections[0].blocks[0].text = Array.from({ length: 46 }, () => "word").join(" ");
+  }), sk), "warn", "review breath");
 }
 
 const [slug, ...rest] = process.argv.slice(2);

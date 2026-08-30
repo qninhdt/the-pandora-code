@@ -18,14 +18,12 @@ import {
 // tvoiceai-chapter-tts.mjs — synthesize a chapter transcript into ONE audio file.
 //
 // The tvoiceai job API glitches on long single inputs (neural attention repeats
-// a phrase, nondeterministic), so each block is normalized and split into
-// sentence-aware requests of at most 512 characters, with:
+// a phrase, nondeterministic), so each section is sent whole when possible and
+// otherwise split into sentence-aware requests of at most 512 characters, with:
 //   - a parallel job pool,
 //   - a relative duration heuristic (block chars/sec vs corpus median) that
 //     retries outliers once,
-//   - client-side silence insertion when concatenating — the API's pause_cfg is
-//     a no-op for clone voices, so gaps are controlled here (0.35s between
-//     blocks, 0.9s between sections).
+//   - no client-side silence between requests or sections by default.
 //
 // Delivery is a single chapter track plus a marker sidecar, because the reader
 // plays one continuous audio and only uses sections to label and seek within it:
@@ -36,7 +34,7 @@ import {
 // Usage:
 //   node --env-file=.env scripts/tvoiceai-chapter-tts.mjs <slug> <locale> \
 //     [--voice <id|name>] [--outdir dir] [--sections sec-00,sec-01] \
-//     [--jobs 4] [--speed 1] [--gap-block 0.35] [--gap-section 0.9] [--user U --pass P]
+//     [--jobs 4] [--speed 1] [--gap-block 0] [--gap-section 0] [--user U --pass P]
 const CHAPTERS = "content/chapters";
 
 function runCommand(command, args, label) {
@@ -101,8 +99,8 @@ function parseArgs(args) {
     sections: null,
     jobs: 4,
     speed: 1.0,
-    gapBlock: 0.35,
-    gapSection: 0.9,
+    gapBlock: 0,
+    gapSection: 0,
     user: null,
     pass: null,
     mp3: false,
@@ -146,9 +144,9 @@ try {
   const outdir = opts.outdir || path.join("tts-out", `${slug}.${locale}`);
   fs.mkdirSync(outdir, { recursive: true });
 
-  // Flatten to speech units: chapter title first (it opens the audio), then
-  // every block text in section order. Long blocks are split into bounded
-  // sentence-aware requests before they reach the API.
+  // Flatten to speech units: chapter title first (it opens the audio), then one
+  // normalized text stream per section. A section stays in one request when it
+  // fits; otherwise only complete sentences overflow into later requests.
   const units = [];
   const wantSec = (id) => !opts.sections || opts.sections.includes(id);
   const addChunks = (sectionId, value, kind) => {
@@ -159,9 +157,7 @@ try {
   if (transcript.title && wantSec("sec-00")) addChunks("sec-00", transcript.title, "title");
   for (const s of transcript.sections) {
     if (!wantSec(s.id)) continue;
-    for (const b of s.blocks) {
-      addChunks(s.id, b.text, b.type);
-    }
+    addChunks(s.id, s.blocks.map((block) => block.text).join(" "), "section");
   }
   if (!units.length) throw new Error("no speakable units (check --sections filter)");
 

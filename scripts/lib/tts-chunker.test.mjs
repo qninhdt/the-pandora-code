@@ -26,33 +26,23 @@ test("stops greedy combination at the max character limit", () => {
   );
 });
 
-test("splits an over-limit sentence at punctuation or whitespace", () => {
-  for (const separator of [",", ";", ":", "-"]) {
-    const chunks = chunkTtsText(`${"a".repeat(300)}${separator}${"b".repeat(300)}.`);
-    assert.deepEqual(chunks, [`${"a".repeat(300)}${separator}`, `${"b".repeat(300)}.`]);
-  }
-
-  const whitespaceChunks = chunkTtsText(`${"a".repeat(300)} ${"b".repeat(300)}.`);
-  assert.deepEqual(whitespaceChunks, [`${"a".repeat(300)}`, `${"b".repeat(300)}.`]);
+test("uses only a period as a sentence boundary", () => {
+  const text = "Comma, exclamation! question? ellipsis… still one sentence.";
+  assert.deepEqual(chunkTtsText(text), [text]);
 });
 
-test("falls back to a hard cut when a token has no break point", () => {
-  const text = "x".repeat(MAX_TTS_CHARS + 1);
-  const chunks = chunkTtsText(text);
-  assert.deepEqual(
-    chunks.map((chunk) => chunk.length),
-    [MAX_TTS_CHARS, 1],
-  );
-  assert.equal(chunks.join(""), text);
+test("moves complete period-delimited sentences into the next chunk", () => {
+  const first = `${"a".repeat(30)}.`;
+  const second = `${"b".repeat(30)}.`;
+  assert.deepEqual(chunkTtsText(`${first} ${second}`, { maxChars: 40 }), [first, second]);
 });
 
-test("keeps a long-sentence tail with the following sentence when possible", () => {
-  const chunks = chunkTtsText(`${"a".repeat(60)} ${"b".repeat(60)}. Tail.`, { maxChars: 70 });
-  assert.equal(
-    chunks.every((chunk) => chunk.length <= 70),
-    true,
+test("rejects a single sentence that exceeds the request limit", () => {
+  const sentence = `${"x".repeat(MAX_TTS_CHARS)}.`;
+  assert.throws(
+    () => chunkTtsText(sentence),
+    /sentence exceeds 512 characters \(513\); sentence boundaries are indivisible/,
   );
-  assert.equal(chunks.at(-1), `${"b".repeat(60)}. Tail.`);
 });
 
 test("returns no chunks for empty or whitespace-only input", () => {

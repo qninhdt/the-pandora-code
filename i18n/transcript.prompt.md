@@ -1,174 +1,202 @@
-# Transcript Adaptation Prompt — The Pandora Code Chapter Audio
+# Pandora Chapter Transcript Contract
 
-You are an elite audiobook editor adapting a chapter of The Pandora Code into a
-speech-ready transcript. You receive a deterministic SKELETON (sections + typed
-blocks extracted from the chapter's `{locale}.mdx`) and produce the chapter's
-`{locale}.transcript.json`.
+Open and read `.claude/skills/pandora-transcript/SKILL.md` in the current task
+before adapting any chapter. That step is mandatory; a run that only reads the
+skeleton and this contract is incomplete. The skill owns editorial decisions
+and the solo-narrator podcast standard. This file owns the Pandora repository's
+input mapping, JSON schema, speech normalization, and machine-validation
+contract.
 
-**SUPREME GOAL:** The transcript is *the exact text a voice will read aloud*.
-It must sound like a masterful science audiobook — natural to the ear,
-self-contained without any visual, and faithful to the chapter's facts and
-author voice. A listener who never opens the page must lose nothing essential.
+## Inputs and output
 
-## Hard invariants (never violate)
+- Source edition: `content/chapters/<slug>/<locale>.mdx`.
+- Metadata: `content/chapters/<slug>/meta.yaml`.
+- Deterministic input: the skeleton emitted by
+  `scripts/gen-transcript-skeleton.mjs`.
+- Output: `content/chapters/<slug>/<locale>.transcript.json`.
+- Supported locales: `en` and `vi`.
 
-1. Every skeleton section becomes exactly one transcript section, same `id`
-   (`sec-00` intro … `sec-NN`), same order. Never drop, merge, or reorder.
-2. Never invent facts, numbers, or claims. A `figure`/`data`/`widget` bridge
-   sentence may only use strings present in that skeleton block (caption,
-   labels, notes, stats). No new numbers, no new names.
-3. Output is valid JSON matching the Output Contract exactly. No markdown
-   markers, no JSX, no HTML in any `text` field.
-4. Write pronunciation forms directly into the text (Speech Rules below).
-   The validator rejects raw symbols: `%` `~` `→` `≥` `≤` `°` `×` `—`,
-   subscript/superscript characters, decimals (`4.37`, `4,37`), markdown
-   (`**` `` ` `` `](`), any `<Tag`.
+Build one locale at a time from its own MDX. Treat the skeleton as a structural
+inventory, not narration ready for direct copying.
 
-## Block rules (skeleton type → transcript action)
+## Mandatory editorial transformation and no-summarization rule
 
-- **`p` (prose)** — The spine. Keep the prose, cleaned for the ear: strip
-  `*italics*`/`**bold**` markers (keep the words), turn `—` into a comma or
-  sentence break, integrate or drop parenthetical asides, keep the author's
-  voice and person. You MAY tighten a sentence that leans on layout ("as the
-  table below shows" → "as the numbers show" or cut), but do not summarize
-  prose away: listeners get the full narrative. **One output `p` per skeleton
-  `p`**: flatten internal paragraph breaks (`\n\n`) to single spaces.
-- **`p` that is a lone subheading** (short, matches a `###` heading) — speak it
-  as a natural lead-in line or fold it into the next paragraph; never invent
-  content around it.
-- **`figure`** — Write 1–2 spoken sentences describing what the figure shows,
-  built from `caption` (primary) + `labels[].label/note` (only if the caption
-  alone is too thin) + `alt` (last resort). Open with the figure tag, no
-  leading zero in both locales: `[Figure 2]` (EN) / `[Hình 2]` (VI). Example
-  VI: `[Hình 2] Nhìn từ ngoài vào, hệ này gồm mặt trời vàng Alpha Centauri A,
-  hành tinh khí khổng lồ Polyphemus, và Pandora ôm sát bên.` Never mention src,
-  tier, coordinates, or "the image above/below".
-- **`note` kinds**:
-  - `callout` / `whatthismeans` / `scientificnote` — read the full `body`,
-    lightly speech-cleaned like `p`. The `title`, if present, becomes a short
-    spoken lead (its own clause or woven into the first sentence). Beyond
-    that, optional lead-in at most a few words and not on every one: VI "Một
-    lưu ý:" / "Điều này có nghĩa là gì?" — EN "A note:" / "What this means:".
-    Vary or omit; never mechanical.
-  - `quote` — read `body` verbatim (speech-cleaned), then attribute from
-    `cite`: VI "— Jon Landau, nhà sản xuất." / EN "— Jon Landau, producer."
-  - `openquestions` — lead-in from `title` or the fixed phrase VI "Những câu
-    hỏi còn bỏ ngỏ:" / EN "The questions that stay open:", then each item as
-    its own sentence. Give `question` always; compress `answer` to its key
-    point in one or two sentences (answers are long on the page).
-  - `confidence` — one sentence from `classification`, VI: "Tỉ lệ phân loại
-    chương này: hai mươi sáu phần trăm chính sử, mười hai phần trăm suy đoán
-    hợp lý, bảy phần trăm phóng tác, và năm mươi lăm phần trăm khoa học thật."
-    EN: "This chapter's breakdown: twenty-six percent canon, twelve percent
-    inference, seven percent speculation, fifty-five percent real science."
-    Say percents in words; omit zero-percent fields.
-- **`data` kinds** — 1–2 sentences that carry the takeaway, all numbers in
-  words:
-  - `comparison` — contrast `left` vs `right` in one flowing sentence or two,
-    using both `title`s and the essence of both `text`s.
-  - `statgrid` / `datacomparison` — pick the 2–3 most meaningful `stats`; do
-    not recite every row. "So với Mặt Trời, hệ này già hơn: năm phẩy ba tỷ
-    năm so với bốn phẩy năm bảy." If a stat carries an unpronounceable raw
-    string (superscript exponent, `~10⁻⁹`, stray math), either spell the value
-    out in words (VI "khoảng mười mũ trừ chín" / EN "about ten to the minus
-    nine") when the magnitude matters, or drop that number and keep the
-    label's essence. Never copy the raw symbol.
-  - `timeline` — narrate as a sequence: "Năm 2009, phim ra mắt và là chuẩn
-    mực cuối cùng. Năm 2024, các sách companion chính thức bị hạ cấp."
-  - `chart` — a chart block carries only axis labels, series names, and raw
-  data. Name what the axes measure (from `xLabel`/`yLabel`/`series`) and state
-  the trend; wording for the trend may draw on the surrounding section prose
-  of this chapter (it explains the same chart), with every number in words.
-  Never read data points one by one.
-- **`widget`** — If the surrounding prose leans on the interactive ("thử kéo
-    thanh trượt", "click từng lớp"), write ONE bridge sentence stating what
-    the widget demonstrates, built from `title`/`bodyPreview` if present, else
-    from the prose context. If the prose stands alone without it, DROP the
-  widget block silently (emit nothing). A dropped widget never leaves a gap:
-  re-read the neighboring `p` blocks and confirm nothing dangles.
+The transcript is a full-length, unabridged spoken rendition of the chapter for a solo-narrator podcast.
 
-## Speech rules (both locales)
+### Absolute invariant: Never summarize or condense (Tuyệt đối không tóm tắt)
+- **Full explanatory depth:** Every single paragraph, explanation, numerical calculation, proof, and nuance in the MDX source MUST be fully narrated.
+- **Word count parity:** The transcript word count must match the source chapter volume (~1.0x in English, ~1.2x to 1.5x in Vietnamese due to spoken syllable expansion). Never condense multiple paragraphs into a brief 1-2 sentence summary.
+- **Full coverage:** Do not drop arguments, analogies, caveats, or transitions. The podcast listener receives the full depth of the chapter, not an executive summary.
 
-Write how a narrator reads, not how a page prints:
+### What spoken adaptation means:
+1. Recompose sentence structure for smooth speech: split sentences longer than 45 words into natural breath units.
+2. Fully expand all numbers, decimals, ranges, formulas, and units into natural spoken words (e.g. `bốn phẩy ba bảy`, `four point three seven`, `twenty-six-hour`).
+3. Remove all Markdown formatting, JSX tags, em-dashes, and visual layout references (`above`, `below`, `[Figure 1]`).
+4. Ensure conversational transitions sound natural when spoken aloud by a single host.
 
-- Decimals in words: `4.37`/`4,37` → VI "bốn phẩy ba bảy" / EN "four point
-  three seven". Ranges: `3–4` → VI "ba đến bốn" / EN "three to four".
-- Units expand on first use, then may stay short: VI `AU` → "đơn vị thiên
-  văn", `Gyr` → "tỷ năm", `km` → "ki-lô-mét"; EN `AU` → "astronomical units".
-- Symbols in words: `%` → "phần trăm"/"percent"; `°C` → "độ C"/"degrees
-  Celsius"; `~` → "khoảng"/"about"; `×` → "gấp"/"times"; `≥` → "ít
-  nhất"/"at least"; `→` → restate as "tăng lên/thay đổi thành" or drop.
-- Chemical/scientific: `CO₂` → VI "CO hai" / EN "carbon dioxide"; `H₂O` →
-  VI "H hai O" / EN "water" when read naturally; `O₂` → VI "ô xy" /
-  EN "oxygen".
-- Plain integers and years MAY stay as digits when a TTS reads them
-  naturally: `2009`, `26 giờ`, `4 limbs`. Decimals, fractions, ranges, and
-  exponents are always words. Prefer the form the chapter prose itself uses
-  ("four-fifths g" if the page says four-fifths). Ordinal prefixes drop the
-  digit: "Part 2" → VI "Phần hai" / EN "Part Two".
-- English terms inside VI prose stay in Latin script, naturally pronounced
-  (Alpha Centauri, JWST, tsaheylu). Do not phoneticize.
-- Em-dash `—` never appears: use a comma, colon, or full stop.
-- Quotation marks: plain text without smart quotes; quotes inside sentences
-  are fine spoken as-is.
+Do not chase novel wording at the expense of scientific precision. Do not add host banter, fictional reactions, unsupported analogies, hype, or generic podcast filler.
 
-## Style rules
+## Structural invariants
 
-- Sentences shorter than the page: split long compound sentences at natural
-  breath points. Target 8–22 words per sentence (VI: 10–25).
-- No visually-anchored language survives: "như hình dưới đây", "the table
-  above", "xem chú thích" must be rewritten self-contained or cut.
-- Keep the author's warmth and rhythm — this is a literary science book, not
-  a report. Do not flatten voice into neutral summary.
-- Section `title` is spoken (the player shows it too); speech-clean it like a
-  sentence but keep it short.
+1. Emit exactly one transcript section for every skeleton section, preserving
+   its `id`, order, and source boundary.
+2. Keep `sec-00` as the introduction. Keep later ids sequential.
+3. Preserve every skeleton figure as a `figure` block with the same `figNo`.
+4. Keep each output section non-empty after optional widget omission.
+5. Preserve `chapter`, `locale`, source filename, and source SHA verbatim from
+   the skeleton.
+6. Use only `p`, `figure`, `data`, and `note` output block types.
+7. Emit valid JSON. Every spoken `text` value must be one string without
+   Markdown, JSX, HTML, line breaks, stage directions, or production notes.
 
-## Output contract
+Do not preserve paragraph boundaries mechanically. Merge adjacent prose blocks
+or split dense prose into multiple `p` blocks when the skill's fidelity ledger
+and audio arc remain intact.
 
-One file: `content/chapters/<slug>/<locale>.transcript.json`
+## Block mapping
 
-```json
-{
-  "chapter": "<slug>",
-  "locale": "en" | "vi",
-  "title": "spoken chapter title",
-  "source": { "file": "<locale>.mdx", "sha256": "<copy verbatim from skeleton>" },
-  "sections": [
-    {
-      "id": "sec-00",
-      "title": null | "spoken section title",
-      "blocks": [
-        { "type": "p", "text": "…" },
-        { "type": "figure", "figNo": "02", "text": "[Hình 2] …" },
-        { "type": "data", "text": "…" },
-        { "type": "note", "kind": "callout" | "whatthismeans" | "scientificnote"
-          | "quote" | "openquestions" | "confidence", "text": "…" }
-      ]
-    }
-  ]
-}
-```
+### Prose
 
-- `title` (top-level): the chapter's title as the narrator speaks it, taken
-  from the skeleton's `expectedTitle` (meta.yaml). Speech-clean it (expand
-  symbols/units into words); keep the wording otherwise verbatim, same
-  language as locale. It becomes the first audio segment — do not add
-  greeting filler around it.
-- `title` (per-section): null only for `sec-00` (the chapter has no intro
-  heading) — otherwise the section heading, speech-cleaned, same language as
-  locale.
-- Blocks flatten to exactly four output types: `p`, `figure` (keeps `figNo`),
-  `data`, `note` (keeps its skeleton `kind`). A dropped widget emits nothing.
-- Every `text` is a single string; use spaces, no `\n`.
-- Empty sections are forbidden: even a section whose only content was widgets
-  keeps at least one `p` or note block.
+- Use prose as the factual and narrative spine.
+- Rebuild the delivery around the section's meaning inventory and audio arc.
+- Preserve material content without preserving ordinary source sentence
+  construction or one output block per source paragraph.
+- Remove formatting syntax only as part of the rewrite; cleanup by itself is
+  never a completed prose adaptation.
+- Resolve references that depend on screen position, typography, or nearby
+  visual layout.
+- Integrate a lone subheading into the surrounding narration when useful. Do
+  not invent content to justify it.
+- Use locale-natural spoken syntax, explicit logical connections, varied breath
+  length, and transitions earned by the argument.
 
-## Self-check before writing the file
+### Figures
 
-1. Section ids sequential from `sec-00`, count == skeleton sections. Top-level
-   `title` present, speech-cleaned, matches `expectedTitle` in wording.
-2. Every skeleton figure has a `[Hình NN]`/`[Figure N]` block.
-3. Forbidden symbols scan: `%` `~` `→` `≥` `≤` `°` `×` `—` `<` `**` `` ` ``
-   decimals — zero hits.
-4. Read two random sections aloud in your head: nothing dangles, nothing
-   invented.
+- Retain the source `figNo` in metadata.
+- Narrate the observation, spatial relationship, process, or contrast needed by
+  an audio-only listener.
+- Draw only from the figure caption, labels, label notes, alt text, and the
+  surrounding section's source-backed explanation.
+- Prefer the caption; use labels and notes only when they add material meaning.
+- Do not speak a figure number or prefix text with a figure tag.
+- Do not mention source paths, asset tiers, coordinates, colors without
+  semantic importance, or page position.
+
+### Notes
+
+- Map `callout`, `whatthismeans`, and `scientificnote` to `note` blocks with the
+  same `kind`. Integrate the title as a natural lead only when it aids context.
+- Keep quotation wording faithful after speech cleanup and preserve its
+  attribution. Never turn paraphrase into quotation.
+- For `openquestions`, preserve every question. Compress answers only when all
+  qualifications and the key conclusion survive.
+- For `confidence`, preserve every nonzero classification and its percentage.
+  Keep the distinction among canon, inference, speculation, and real science.
+- Do not introduce a repetitive verbal label before every note.
+
+### Data
+
+- Map comparisons to a spoken contrast that preserves both sides and their
+  relationship.
+- Map stat grids and data comparisons to the few values required to understand
+  the pattern or scale. Preserve any additional value that carries a distinct
+  material claim.
+- Map timelines to chronological narration while preserving event order and
+  uncertainty.
+- Map charts to axes, variables, trend, threshold, or comparison. Do not read
+  data points sequentially.
+- Derive interpretation only from strings inside the data block and the
+  surrounding source prose that explains the same data.
+
+### Widgets
+
+- Emit one audio-native block only when the interaction contains an insight not
+  already available in the surrounding narration.
+- State what changing the input demonstrates, not how to operate the control.
+- Omit redundant widgets and repair any neighboring sentence that depended on
+  clicking, dragging, hovering, or seeing the interface.
+
+## Titles
+
+- Set the top-level `title` from the skeleton's `expectedTitle`, preserving its
+  wording after speech normalization. The TTS pipeline speaks this title first.
+- Set the `sec-00` section title to `null`.
+- Set every later section title from the matching heading after speech cleanup.
+- Treat section titles as player navigation metadata. The TTS pipeline does not
+  automatically speak them. Orient the first block when the transition would
+  otherwise be unclear, but do not recite headings mechanically.
+
+## Speech normalization
+
+Write the pronunciation form directly into every spoken field.
+
+- Convert decimals digit by digit after the decimal separator.
+- Express numeric ranges with locale-appropriate words rather than punctuation.
+- Express fractions, exponents, inequalities, multiplication, approximation,
+  percentages, and temperatures in words.
+- Expand a unit or ambiguous abbreviation on first meaningful use. Keep later
+  forms short only when TTS pronunciation is reliable.
+- Render chemical formulas in the form a natural narrator would say in the
+  active locale. Preserve scientific identity.
+- Keep ordinary integers and years as digits only when the configured TTS reads
+  them reliably and unambiguously.
+- Preserve established English proper nouns and technical terms inside
+  Vietnamese narration. Do not invent phonetic spellings.
+- Replace em dashes with commas, colons, or sentence boundaries.
+- Use plain quotation marks and normal punctuation.
+
+The validator rejects these raw forms in spoken text:
+
+- Markdown markers and links;
+- JSX or HTML tags;
+- subscript and superscript digits;
+- percent, approximation, arrow, inequality, degree, multiplication, em-dash,
+  and mathematical minus symbols;
+- decimal and numeric-range forms that remain unspoken.
+
+## JSON contract
+
+The root object must contain:
+
+- `chapter`: source slug;
+- `locale`: `en` or `vi`;
+- `title`: spoken chapter title;
+- `source.file`: locale MDX filename;
+- `source.sha256`: skeleton source hash;
+- `sections`: ordered transcript sections.
+
+Each section must contain:
+
+- `id`: stable `sec-NN` id;
+- `title`: `null` for `sec-00`, otherwise the cleaned heading;
+- `blocks`: one or more audio-native blocks.
+
+Each block must contain:
+
+- `type` and `text`;
+- `figNo` when `type` is `figure`;
+- `kind` when `type` is `note`.
+
+Do not add fields for speakers, sound effects, pauses, emotions, or production
+cues. Prosody belongs in the wording and punctuation.
+
+## Required checks
+
+Before writing:
+
+1. Compare the fidelity ledger against every completed section.
+2. Confirm all source figures retain matching `figNo` metadata.
+3. Confirm no output depends on page position or interaction.
+4. Scan spoken fields for forbidden notation and formatting.
+5. Compare every section to its source and reject sentence-for-sentence,
+   paragraph-for-paragraph, or cleanup-only adaptation outside the allowed
+   exact-wording exceptions.
+6. Read separated sections aloud once for continuity, breath, pronunciation,
+   repetitive transitions, and synthetic podcast filler.
+
+After writing:
+
+1. Run the transcript validator for the active locale.
+2. Run pair validation after both locales exist.
+3. Fix source adaptation defects without weakening validation.
+4. Regenerate when source SHA changes.

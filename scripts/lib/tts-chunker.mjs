@@ -1,5 +1,4 @@
-const SENTENCE_ENDINGS = new Set([".", "!", "?", "…"]);
-const PREFERRED_BREAKS = new Set([",", ";", ":", "-"]);
+const SENTENCE_ENDINGS = new Set(["."]);
 const CLOSING_MARKS = new Set(['"', "'", "”", "’", "»", ")", "]", "}"]);
 
 export const MAX_TTS_CHARS = 512;
@@ -24,52 +23,23 @@ function isSentenceBoundary(text, index) {
 }
 
 function splitSentences(text) {
+  const normalized = normalizeTtsText(text);
   const parts = [];
   let start = 0;
 
-  for (let index = 0; index < text.length; index++) {
-    if (text[index] === "\r" || text[index] === "\n") {
-      pushNormalized(parts, text.slice(start, index));
-      if (text[index] === "\r" && text[index + 1] === "\n") index++;
-      start = index + 1;
+  for (let index = 0; index < normalized.length; index++) {
+    if (!SENTENCE_ENDINGS.has(normalized[index]) || !isSentenceBoundary(normalized, index))
       continue;
-    }
-
-    if (!SENTENCE_ENDINGS.has(text[index]) || !isSentenceBoundary(text, index)) continue;
 
     let end = index + 1;
-    while (SENTENCE_ENDINGS.has(text[end])) end++;
-    while (CLOSING_MARKS.has(text[end])) end++;
-    pushNormalized(parts, text.slice(start, end));
+    while (SENTENCE_ENDINGS.has(normalized[end])) end++;
+    while (CLOSING_MARKS.has(normalized[end])) end++;
+    pushNormalized(parts, normalized.slice(start, end));
     start = end;
     index = end - 1;
   }
 
-  pushNormalized(parts, text.slice(start));
-  return parts;
-}
-
-function findPreferredCut(text, maxChars) {
-  for (let index = Math.min(maxChars, text.length) - 1; index > 0; index--) {
-    if (PREFERRED_BREAKS.has(text[index])) return index + 1;
-    if (/\s/.test(text[index])) return index;
-  }
-  return maxChars;
-}
-
-function splitLongSentence(sentence, maxChars) {
-  const parts = [];
-  let remaining = sentence;
-
-  while (remaining.length > maxChars) {
-    const cut = findPreferredCut(remaining, maxChars);
-    const part = normalizeTtsText(remaining.slice(0, cut));
-    if (!part) throw new Error("TTS chunker could not make progress while splitting text");
-    parts.push(part);
-    remaining = normalizeTtsText(remaining.slice(cut));
-  }
-
-  if (remaining) parts.push(remaining);
+  pushNormalized(parts, normalized.slice(start));
   return parts;
 }
 
@@ -118,11 +88,9 @@ export function chunkTtsText(value, options = {}) {
 
   for (const sentence of sentences) {
     if (sentence.length > maxChars) {
-      if (current) chunks.push(current);
-      const parts = splitLongSentence(sentence, maxChars);
-      chunks.push(...parts.slice(0, -1));
-      current = parts.at(-1) ?? null;
-      continue;
+      throw new Error(
+        `TTS sentence exceeds ${maxChars} characters (${sentence.length}); sentence boundaries are indivisible`,
+      );
     }
 
     if (!current) {

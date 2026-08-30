@@ -14,11 +14,31 @@
         {
           "type": "figure",
           "figNo": "01",
-          "text": "[Figure 1] Midday on Pandora, and the sun is going out. The banded face of Polyphemus slides across the small bright star, and the forest dims into a twilight that arrives most of the way through every single day."
+          "text": "Midday on Pandora, and the sun begins to dim. The massive banded face of the gas giant Polyphemus slides across the brilliant yellow star Alpha Centauri A, cutting the bright day into a cool, amber twilight. To understand why this living world works, we have to start by understanding the extraordinary sky overhead."
         },
         {
           "type": "p",
-          "text": "Stand on a high ridge on Pandora a little before midday and watch the sky do something the sky on Earth has never once done in four and a half billion years. The sun, a small, fierce, yellow-white point, not so different from our own, begins to slide behind a wall. The wall is banded in cream and rust and storm-grey, and it does not have an edge you can find; it simply continues, filling a third of the sky, curving away past where you can turn your head. As the point of sunlight touches it, the light on the forest goes long and amber, then thin, then blue. By the time the star is fully behind the wall, it is twilight at noon, and the wall itself is faintly glowing along its limb, lit from behind. You are not on a planet. You can tell from the sky alone. That banded wall is a gas giant, and you are standing on something that goes around it, a moon, caught close enough that its parent fills the heavens and eclipses its sun nearly every day. The question this chapter asks is the patient one: where, exactly, is this place, and could anything like it actually be out there, close enough that we might one day point a telescope at it and know? The address turns out to be specific, and famous, and only four light-years away. Getting there honestly, separating what the films commit to from what our own astronomy can actually verify, takes us through the single best-studied star system in the sky next to our own, and into the strange arithmetic of where a world is allowed to be warm, wet, and alive."
+          "text": "Stand on a high ridge on Pandora a little before midday and watch the sky do something impossible on Earth."
+        },
+        {
+          "type": "p",
+          "text": "A gas giant, banded in pale ochre and slate blue, fills a third of the sky. It does not rise and it does not set. It simply hangs there, locked in place, while the yellow star that warms this world drifts behind its vast curve."
+        },
+        {
+          "type": "p",
+          "text": "The sky does not go black all at once. The light thins, slides from white to amber, and then, for a little over an hour, the world falls into a cool, twilight shadow."
+        },
+        {
+          "type": "p",
+          "text": "That sky is telling you the single most important physical fact about the world beneath your feet: you are not standing on a planet. You are standing on a moon."
+        },
+        {
+          "type": "p",
+          "text": "Everything about Pandora begins with that address. Its gravity, its violent volcanoes, its twenty-six-hour day, its poisonous air, and the great glowing forest all flow from the fact that it is an exomoon orbiting a giant in a multiple star system."
+        },
+        {
+          "type": "p",
+          "text": "This chapter is about that address: where Pandora sits, whether such a place could genuinely exist, and what our own telescopes would see if we looked right at it."
         }
       ]
     },
@@ -28,25 +48,41 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Let me start with what the official material commits to, because that is the part we are not free to invent. Pandora orbits a star called Alpha Centauri A, specifically the brightest of the three suns in that system, which the Na'vi call Tsawke. Canon is unusually disciplined here: it does not put Pandora around some invented star. It puts it around a real one, the nearest sun-like star to Earth, about four point three seven light-years away. That distance is not a throwaway. It anchors the whole human enterprise of the films, the six-year crossings, the frozen sleepers, the entire grim economics of shipping people across the gap, to a number you can look up in any catalogue. But Pandora does not orbit Alpha Centauri A directly. It orbits a planet that orbits the star: the gas giant Polyphemus, named by its first human surveyors for the one-eyed giant of Greek myth, because of a vast cyclopean storm that turns on its face like an eye. The Na'vi call it Naranawm, the Great Eye, which is the same thought arrived at from the ground. Polyphemus is, in the canon's accounting, the fourth planet out from Alpha Centauri A, and it sits at roughly the distance Earth sits from our Sun. That is the first clue that someone building this world was paying attention, because that is exactly where you would put a planet if you wanted its moons to be warm."
+          "text": "Let me start with what the official material commits to, because that is the part of the story with coordinates."
+        },
+        {
+          "type": "p",
+          "text": "Pandora sits in the Alpha Centauri system, our Sun's nearest stellar neighbour, just over four point three light-years away. More specifically, it orbits Alpha Centauri A, the larger and brighter of the two central stars. Alpha Centauri A is a yellow dwarf star, a near-twin of our own Sun, roughly one point one times the Sun's mass and about one point five times its brightness."
+        },
+        {
+          "type": "p",
+          "text": "In orbit around that star, at a distance of about one point zero five astronomical units, slightly farther out than Earth orbits the Sun, sits the gas giant Polyphemus. Polyphemus is slightly smaller and less massive than Jupiter, but still a behemoth, roughly eighty percent of Jupiter's mass."
         },
         {
           "type": "figure",
           "figNo": "02",
-          "text": "[Figure 2] The address from outside: the yellow sun Alpha Centauri A, the gas giant Polyphemus at about one Earth-distance out, and Pandora hugging close against it. Far off in the dark hang the system's other two suns: orange B and, much fainter, red Proxima."
+          "text": "Looking at the entire system from the outside, the yellow sun Alpha Centauri A sits at the center, with the gas giant Polyphemus orbiting at roughly one Earth-distance, and Pandora locked in close orbit around it. Far in the background, the orange dwarf companion star B and the distant red flare star Proxima share the wide stellar system."
         },
         {
           "type": "p",
-          "text": "And Pandora is a moon, one of fourteen, the canon says, and the only inhabited one. It is a little smaller than Earth, about three-quarters of Earth's diameter, and noticeably lighter, so that you would weigh about four-fifths of your Earth weight standing on that ridge. Its air is denser than ours and, to a human, lethal: breathable-looking but laced with enough carbon dioxide and hydrogen sulfide to kill in minutes. Its day runs to about twenty-six hours, and, the detail the opening scene turns on, that day is locked. Pandora keeps one rhythm with Polyphemus the way our Moon keeps one face toward Earth, so its day and its month are the same thing, and the great banded planet hangs in a fixed quarter of the sky while the sun marches past behind it. Hence the eclipses: most days, the disc of Polyphemus swallows the sun for a while, and the world goes briefly dark in the middle of the afternoon."
+          "text": "And Pandora is a moon, one of fourteen, the canon says, and the only inhabited one. It is a little smaller than Earth, about three-quarters of Earth's diameter, and noticeably lighter, so that you would weigh about four-fifths of your Earth weight standing on that ridge."
+        },
+        {
+          "type": "p",
+          "text": "Its air is denser than ours and, to a human, lethal: breathable-looking but laced with enough carbon dioxide and hydrogen sulfide to kill in minutes. Its day runs to about twenty-six hours, and that day is locked. Pandora keeps one rhythm with Polyphemus the way our Moon keeps one face toward Earth, so its day and its month are the same thing, and the great banded planet hangs in a fixed quarter of the sky while the sun marches past behind it. Hence the eclipses: most days, the disc of Polyphemus swallows the sun for a while, and the world goes briefly dark in the middle of the afternoon."
         },
         {
           "type": "note",
           "kind": "callout",
-          "text": "How I'm reading this: I'm treating the films and their official companion material as the canon record, and our own astronomy as the verifiable science. Where canon states a number, I'll use it. Where canon's numbers quietly fight each other, and on this topic they do, in interesting ways, I'll show the fight rather than smooth it over. The honest accounting of how much of this chapter is established Pandoran fact versus real Earth science comes near the end."
+          "text": "How I am reading this: I am treating the films and their official companion material as the canon record, and our own astronomy as the verifiable science. Where canon states a number, I will use it. Where canon's numbers quietly fight each other, and on this topic they do, in interesting ways, I will show the fight rather than smooth it over. The honest accounting of how much of this chapter is established Pandoran fact versus real Earth science is in the classification breakdown near the end."
         },
         {
           "type": "p",
-          "text": "There is a sprawl of further detail in the extended material, sister moons named Cassandra and Hades and Dante, inner rocky worlds, co-orbital asteroids, much of it mined from a 2009 video game and never confirmed on film. I'll leave most of it aside. It is the kind of thing the research turns up in abundance and the chapter does not need; the address proper is the part that matters, and the address is clear. A near-twin of our Sun. A gas giant where Earth's orbit would be. A large moon, locked to that giant, in air it would kill you to breathe. Now the real question. That is a very specific claim about where a living world can sit. Is it a possible claim? To answer that, we have to leave Pandora and ask what our own science says about where worlds are allowed to be warm, and then come back and check Pandora against it."
+          "text": "There is a sprawl of further detail in the extended material: sister moons named Cassandra, Hades, and Dante, inner rocky worlds, and co-orbital asteroids. Much of it was mined from a two thousand nine video game and never confirmed on film. I will leave most of it aside. It is the kind of detail research turns up in abundance that the chapter does not need. The address proper is the part that matters, and the address is clear. A near-twin of our Sun. A gas giant where Earth's orbit would be. And a large moon, locked to that giant, in air it would kill you to breathe."
+        },
+        {
+          "type": "p",
+          "text": "Now the real question. That is a very specific claim about where a living world can sit. Is it a possible claim? To answer that, we have to leave Pandora and ask what our own science says about where worlds are allowed to be warm, and then come back and check Pandora against it."
         }
       ]
     },
@@ -56,29 +92,41 @@
       "blocks": [
         {
           "type": "p",
-          "text": "The reason that banded planet sits about where Earth sits from the Sun is not decoration. It is the single most important fact about whether Pandora can exist at all, and it has a name: the habitable zone. The idea is almost embarrassingly simple, and then it isn't. A star pours out heat. Close in, that heat is fierce enough to boil any ocean dry; far out, it is too feeble to keep water from freezing solid. Somewhere in between is a band, astronomers reach for Goldilocks and resent that they have to, where a world with the right atmosphere can hold liquid water on its surface. Liquid water is the one non-negotiable we know of for life, so the habitable zone is the first filter anyone runs when they ask whether a place could be alive. The band's distance depends on the star. Light spreads out as it travels, thinning with the square of the distance: go twice as far from a star and each patch of ground gets a quarter of the light. So a bright star pushes its warm band far out, and a dim one pulls it close. Our Sun's band straddles Earth's orbit. Alpha Centauri A is a shade more luminous than the Sun, a little bigger, a little brighter, the same essential yellow-dwarf kind of star, so its warm band sits a touch farther out than ours. Put a planet a bit beyond one Earth-distance from Alpha Centauri A and you have put it in the temperate zone. Which is precisely where canon puts Polyphemus."
+          "text": "The reason that banded planet sits about where Earth sits from the Sun is not decoration. It is the single most important fact about whether Pandora can exist at all, and it has a name: the habitable zone."
+        },
+        {
+          "type": "p",
+          "text": "The idea is almost embarrassingly simple, and then it is not. A star pours out heat. Close in, that heat is fierce enough to boil any ocean dry; far out, it is too feeble to keep water from freezing solid. Somewhere in between is a band, astronomers often call it the Goldilocks zone, where a world with the right atmosphere can hold liquid water on its surface. Liquid water is the one non-negotiable requirement we know of for life, so the habitable zone is the first filter anyone applies when asking whether a place could be alive."
+        },
+        {
+          "type": "p",
+          "text": "The band's distance depends on the star. Light spreads out as it travels, thinning with the square of the distance: go twice as far from a star and each patch of ground gets a quarter of the light. So a bright star pushes its warm band far out, and a dim one pulls it close. Our Sun's band straddles Earth's orbit. Alpha Centauri A is a shade more luminous than the Sun, a little bigger, a little brighter, the same essential yellow-dwarf kind of star, so its warm band sits a touch farther out than ours. Put a planet a bit beyond one Earth-distance from Alpha Centauri A and you have put it in the temperate zone, which is precisely where canon puts Polyphemus."
         },
         {
           "type": "figure",
           "figNo": "03",
-          "text": "[Figure 3] The temperate band around a sun-like star: close in, space is scorched; far out, it is frozen; between them lies the narrow ring where a world can hold liquid water. A star a little brighter than the Sun pushes that ring a little farther out, to about where Polyphemus orbits."
+          "text": "The temperate band around a sun-like star forms a delicate ring in space. Close to the star, radiation is scorching, creating a runaway greenhouse that boils away surface water. Far out past the snow line, space is frozen and volatile compounds turn to ice. Between those extremes lies the habitable zone, the narrow temperate ring where liquid water can endure. Because Alpha Centauri A is slightly more luminous than our Sun, that sweet spot shifts outward, aligning cleanly with where Polyphemus orbits."
         },
         {
           "type": "data",
-          "text": "This chart plots relative starlight, with Earth as one, against distance from the star measured in astronomical units: the farther from the star, the thinner the light falls."
+          "text": "Looking at how starlight drops off with distance reveals the inverse-square law in action. At zero point four astronomical units, irradiance is over six times what Earth receives. At zero point seven astronomical units, near Venus's position, it is double. At one astronomical unit, it matches Earth's baseline. Move out to one point two astronomical units, and the flux drops to zero point six nine. By one point five units, it falls to zero point four four, and by three units, it is barely eleven percent of Earth's light."
         },
         {
           "type": "p",
-          "text": "The careful version of this, worked out by James Kasting and later sharpened by Ravi Kopparapu, is less a single line than a set of edges, each one a different way for a climate to fail. Too close, and water vapour, itself a greenhouse gas, builds in the air faster than the planet can shed heat, until the oceans cook off entirely in a runaway no atmosphere can stop. Too far, and not even a thick blanket of carbon dioxide can hold enough warmth; pile on more and it just freezes out as cloud and reflects the sunlight back to space. Between those failures is the survivable band."
+          "text": "If you brighten the star, its temperate band slides outward with the square root of luminosity; dim the star, and the band pulls in close. Park a world too near, and its oceans boil; park it too far, and they freeze solid. Alpha Centauri A puts the just-right band a little past one Earth-distance, right where canon orbits Polyphemus."
+        },
+        {
+          "type": "p",
+          "text": "The careful version of this, worked out by James Kasting and later sharpened by Ravi Kopparapu, is less a single line than a set of boundaries, each marking a different way for a planetary climate to collapse. Too close to the star, and water vapour builds up in the atmosphere faster than the planet can radiate heat away, triggering a runaway greenhouse effect that permanently cooks off the oceans. Too far out, and even a dense blanket of carbon dioxide cannot trap enough heat; add more, and it freezes out into clouds that reflect incoming sunlight back into space. Between those catastrophic thresholds lies the survivable band."
         },
         {
           "type": "note",
           "kind": "whatthismeans",
-          "text": "The thermostat under the band. What keeps a world steady inside the band, over billions of years, isn't luck; it's a slow planetary thermostat called the carbonate-silicate cycle. Carbon dioxide dissolves in rain, weathers rock, washes to the sea as carbonate, rides plate tectonics down into the mantle, and comes back out of volcanoes. Warm the planet and weathering speeds up, pulling carbon dioxide down and cooling things; cool it and weathering stalls, letting volcanic carbon dioxide build back up and warm things. It is a thermostat made of rock and rain, and it is most of the reason Earth has stayed liquid for four billion years. A world needs not just the right distance but a working thermostat to stay in the band, which is why tectonics and atmosphere matter as much as orbit."
+          "text": "The thermostat under the band: What keeps a world steady inside the habitable zone over billions of years is not mere chance. It is a slow planetary thermostat called the carbonate-silicate cycle. Carbon dioxide dissolves in rain, weathers silicate rock on the surface, washes into the oceans as carbonate sediments, rides tectonic plates down into the mantle, and eventually returns to the air through volcanoes. If the planet warms, rock weathering speeds up, drawing down carbon dioxide and cooling the climate. If the planet cools, weathering slows down, allowing volcanic carbon dioxide to build back up and warm the atmosphere. It is a natural thermostat built from rock and rain, and it is the primary reason Earth has maintained liquid oceans for four billion years. A world needs not just the right distance from its star, but an active geological thermostat to stay habitable over deep time."
         },
         {
           "type": "p",
-          "text": "So far, so reassuring for Pandora. But I have been quietly lying by omission, because I have been describing a system with one star. Alpha Centauri has three. And the moment you add a second sun, the question of where a world can sit stops being about heat alone and becomes about whether the world can even stay there without being flung into the dark."
+          "text": "So far, so reassuring for Pandora. But I have been quietly lying by omission, because I have been describing a system with only one star. Alpha Centauri actually contains three. And the moment you add a second sun, the question of where a world can sit stops being about temperature alone. It becomes a question of orbital stability: whether a world can even stay in that warm band without being violently flung out into the freezing dark."
         }
       ]
     },
@@ -88,24 +136,40 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Alpha Centauri is not a star. It is a family: Alpha Centauri A, the bright yellow one Pandora orbits; Alpha Centauri B, a slightly smaller, cooler, orange star; and far out, Proxima Centauri, a dim red ember so distant from the other two that it takes hundreds of centuries to circle them. A and B are the close pair. They orbit each other in eighty years, swinging from about as far apart as the Sun and Neptune out to nearly three times that and back. This is the part the films almost entirely ignore, and the part our science finds most interesting. Because a second star is not just a second light in the sky. It is a gravitational hand that reaches across the system and tugs at every orbit in it, and if it tugs hard enough, planets do not form, or do not stay, or are slowly wound up into orbits so stretched that any world on them roasts and freezes in turn. Astronomers split the possibilities into two clean cases. A planet can orbit one star of the pair, with the other as a distant troublemaker; an S-type orbit, circumstellar. Or it can orbit both stars at once, swinging around the whole binary from outside; a P-type orbit, circumbinary, the real version of the twin-sunned sky from the films you're thinking of. Pandora's system, with Polyphemus going around Alpha Centauri A alone while B orbits far out, is the S-type case."
-        },
-        {
-          "type": "data",
-          "text": "Two ways to live with two suns. In an S-type orbit, around one star, the world circles a single star of the pair while the companion tugs at it from far off; stable only if the world stays well inside the companion's reach, and this is Pandora's case: Polyphemus around Alpha Centauri A, with B far away. In a P-type orbit, around both, the world circles the whole binary from outside, far enough that the two inner stars blur into a single gravitational source; the real two-suns-in-one-sky arrangement, but not where Pandora lives."
+          "text": "Alpha Centauri is not a single star. It is a family of three. Alpha Centauri A is the bright yellow primary star that Pandora orbits. Alpha Centauri B is an orange dwarf star that is slightly smaller and cooler. Far off on the outer fringe sits Proxima Centauri, a faint red flare star so distant that it takes tens of thousands of years to complete an orbit. Stars A and B are locked in a close celestial dance. They orbit each other every eighty years. Their separation swings from the distance between our Sun and Neptune, out to nearly three times that span, before closing in again."
         },
         {
           "type": "p",
-          "text": "The question of how well inside was answered, for practical purposes, by Matthew Holman and Paul Wiegert in the 1990s. They ran the orbits forward and found a rule of thumb with surprising bite: a planet on an S-type orbit stays stable over the long haul only if it keeps within roughly a fifth of the distance of the companion star's closest approach. Come closer to that limit and the second star's tugs accumulate, stretching and tilting the orbit until the world is lost. Run the numbers for the real Alpha Centauri and the result is a small relief. Star B's closest approach to star A is about eleven times the Earth-Sun distance. A fifth of that is a little over two; call it the stable zone extending out to roughly three Earth-distances from star A. And the warm band, the habitable zone, sits at a bit beyond one. The temperate region is comfortably inside the region where orbits survive. There is room, around the real Alpha Centauri A, for a world to be both warm and safe, which is exactly the room canon parks Polyphemus in."
+          "text": "This is a detail the films largely ignore, but it is the part that astrophysicists find most fascinating. A companion star is not just a second lamp in the sky. It is a massive gravitational lever reaching across the system, tugging on every orbit in its path. If that gravitational perturbation is too strong, planets can never form, or cannot remain stable, or their orbits stretch into extreme ellipses that alternately bake and freeze any world riding them."
+        },
+        {
+          "type": "p",
+          "text": "Astronomers categorize binary planetary systems into two distinct types. A world can orbit just one star of the pair, with the companion star acting as a distant perturber, known as an S-type or circumstellar orbit. Alternatively, a world can orbit both stars from far outside, encircling the entire binary pair as if they were a single center of mass, known as a P-type or circumbinary orbit, which is the classic arrangement with two suns setting side by side. Pandora's arrangement, with Polyphemus circling Alpha Centauri A alone while star B remains far away, is an S-type system."
+        },
+        {
+          "type": "data",
+          "text": "In an S-type configuration, the planet circles a single star, while the companion star acts as a bright, distant gravitational perturber. The orbit remains stable only if the planet stays nestled well inside the companion star's reach, which is Pandora's situation with Polyphemus orbiting star A. In a P-type configuration, the planet orbits the entire binary pair from far outside, where the two inner stars merge into a single gravitational center, creating a true two-suns sky."
+        },
+        {
+          "type": "p",
+          "text": "The question of how far inside an S-type planet must stay was answered in the nineteen nineties by Matthew Holman and Paul Wiegert. By running extensive numerical simulations of binary orbits, they discovered a practical rule of thumb: a planet on an S-type orbit remains stable over billions of years only if it stays within roughly one-fifth of the companion star's closest approach. Venture beyond that critical boundary, and the companion star's gravitational tugs accumulate over time, stretching and tilting the orbit until the planet is violently ejected into interstellar space."
+        },
+        {
+          "type": "p",
+          "text": "Applying those calculations to the real Alpha Centauri system brings a reassuring result. Star B's closest approach to star A is approximately eleven astronomical units, eleven times the Earth-Sun distance. One-fifth of that distance gives a stability limit extending out to roughly two point two to three astronomical units from star A. Meanwhile, the temperate habitable zone sits at just over one astronomical unit. The warm habitable band sits comfortably inside the region of long-term orbital stability. There is genuine physical room around Alpha Centauri A for a world to be both warm and gravitationally secure, which is precisely the zone where canon places Polyphemus."
+        },
+        {
+          "type": "p",
+          "text": "A world must satisfy two conditions simultaneously: it must sit within the ring where liquid water can endure, and it must remain inside the Holman-Wiegert stability boundary. If the companion star approached much closer, the safe boundary would contract over the warm band, destroying stable orbits. But at Alpha Centauri's actual distance of eleven Earth-distances, the two zones overlap comfortably, allowing this planetary address to exist."
         },
         {
           "type": "note",
           "kind": "callout",
-          "text": "This is not hypothetical real estate. Alpha Centauri is the most scrutinised system in the sky after our own, precisely because it is the nearest and because that stable, temperate gap genuinely exists. Star B's slightly cooler light shifts its own warm band a little inward, but it too has one. The hunt for a rocky world in either zone is active and ongoing; candidate signals around both stars have come and gone at the edge of what instruments can confirm. The arrangement the films assume is, at the level of \"could a habitable-zone world survive around Alpha Centauri A\", allowed by the physics."
+          "text": "This is not hypothetical real estate: Alpha Centauri is the most closely scrutinized stellar system in the sky after our own Solar System, precisely because it is our nearest neighbor and because that stable temperate gap genuinely exists. Star B's cooler orange light shifts its own habitable zone slightly inward, but it too possesses a viable temperate band. The hunt for rocky planets in both habitable zones is an active, cutting-edge astronomical effort, with candidate signals around both stars appearing and fading at the limit of instrument precision. The planetary setup assumed by the films, at the level of whether a habitable-zone world can survive around Alpha Centauri A, is completely permitted by known physics."
         },
         {
           "type": "p",
-          "text": "But notice what we have established and what we haven't. We have shown there is a stable, temperate slot around Alpha Centauri A: room for a planet. Pandora is not a planet. It is a moon of a gas giant. And a habitable moon is a stranger, more demanding thing than a habitable planet, with its own ways to live and its own ways to die."
+          "text": "But notice what we have established and what we have not. We have shown that a stable, temperate orbital slot exists around Alpha Centauri A, room for a planet. However, Pandora is not a planet. It is an exomoon orbiting a gas giant. And a habitable moon is a vastly stranger, far more demanding entity than a habitable planet, possessing its own unique mechanisms to sustain life and its own catastrophic pathways to destruction."
         }
       ]
     },
@@ -115,25 +179,37 @@
       "blocks": [
         {
           "type": "p",
-          "text": "A planet in the habitable zone has one heat source: its star. A moon in the habitable zone has four, and juggling them is the whole difficulty of being an exomoon, a moon of a planet in another star system. The first is the same as the planet's: sunlight, the dominant source. But the moon also catches a second helping of starlight reflected off the giant it orbits; Polyphemus is an enormous pale mirror hanging in Pandora's sky. It catches a third warmth in the infrared glow the giant itself radiates, because a gas giant is still slowly contracting and leaking out the heat of its own formation. And it catches a fourth, stranger heat from inside itself: tidal heating."
+          "text": "A planet in the habitable zone has one heat source: its star. A moon in the habitable zone has four, and juggling them is the whole challenge of being an exomoon, a moon of a planet in another star system."
+        },
+        {
+          "type": "p",
+          "text": "The first heat source is the same as a planet's: direct starlight, which provides the primary baseline warmth. But the moon also catches a second stream of energy reflected off the giant planet it orbits, since Polyphemus acts as a vast pale mirror hanging in Pandora's sky. It catches a third warmth from the infrared glow radiated by the giant planet itself, because a gas giant continues to contract slowly over billions of years, leaking residual heat from its original formation. And it receives a fourth, stranger source of energy from deep within its own interior: tidal heating."
         },
         {
           "type": "figure",
           "figNo": "04",
-          "text": "[Figure 4] A moon runs hot from four directions at once: direct starlight, starlight reflected off the giant, the giant's own infrared heat, and, cracking up from within, the frictional warmth of tidal flexing. Get the sum wrong in either direction and the world is a furnace or a stone."
+          "text": "An exomoon is warmed from four distinct directions simultaneously. Direct starlight pours onto its upper atmosphere from Alpha Centauri A. Planetary radiation from Polyphemus reflects optical sunlight and emits powerful intrinsic infrared heat. Meanwhile, gravitational tidal dissipation flexes the moon's rocky mantle, generating intense frictional heat from within that cracks the crust into volcanic rifts. If the sum of these four energy inputs is miscalculated in either direction, the world becomes either a scorched furnace or a frozen stone."
         },
         {
           "type": "p",
-          "text": "Tidal heating is worth slowing down for, because it is both real and load-bearing for Pandora's story. A moon on a slightly non-circular orbit is squeezed harder by its planet's gravity when it swings close and less hard when it swings far. That rhythmic squeezing flexes the whole body of the moon, and flexing rock generates heat by friction, the same warmth you feel in a paperclip bent back and forth. In our own solar system, this is why Jupiter's moon Io is the most volcanically violent body we know, and why Europa and Enceladus, further out and colder on the surface, hide liquid oceans under their ice. The orbits of those moons are kept slightly non-circular by a gravitational tug-of-war with their sibling moons, a resonance, and the resulting flex keeps their interiors warm long after they should have frozen. Now hold that thought and look at what canon claims for Pandora. Tidal flexing, explicitly attributed in the films' companion material to Polyphemus competing with the other moons, drives Pandora's volcanism and unusually fast continental drift. That is exactly the right physics for the right reasons. A large moon, locked to a gas giant, kneaded by its siblings into a faintly eccentric orbit, would run warm from the inside. Canon reached for the correct mechanism. The danger is that the four heat sources can add up to too much. There is a limit, astronomers call it the habitable edge, past which the combined warmth, especially the tidal contribution, overwhelms a moon's ability to shed heat, and it tips into the same runaway greenhouse that cooks a too-close planet. A habitable moon has to thread a needle: enough tidal heat to stay geologically alive, not so much that it sterilises itself."
+          "text": "Tidal heating is worth examining carefully, because it is both a real physical process and a crucial foundation for Pandora's worldbuilding. A moon on an eccentric, non-circular orbit experiences varying gravitational pull: the planet's gravity squeezes it harder when it swings closest at periapsis, and relaxes when it moves farther away at apoapsis. That continuous rhythmic flexing deforms the entire rocky body of the moon, generating immense frictional heat, exactly like the warmth you feel when repeatedly bending a metal paperclip. In our own Solar System, this gravitational kneading makes Jupiter's moon Io the most volcanically violent body known, while keeping subsurface liquid oceans warm beneath the icy shells of Europa and Enceladus. The orbits of those moons are kept slightly eccentric by orbital resonances, gravitational tugs with neighboring moons, keeping their interiors hot long after they should have frozen solid."
+        },
+        {
+          "type": "p",
+          "text": "Now apply that mechanism to Pandora. Tidal flexing, explicitly attributed in the official companion material to Polyphemus interacting with sister moons, drives Pandora's intense volcanism and unusually fast continental drift. That is sound astrophysics applied to worldbuilding. A large moon, tidally locked to a gas giant and kneaded by sibling moons on a slightly eccentric orbit, will stay volcanically active and warm from within."
+        },
+        {
+          "type": "p",
+          "text": "The danger is that these four heat sources can easily exceed safe limits. Astrophysicists define a boundary called the habitable edge: if a moon orbits too close to its host planet, the combined radiative and tidal heating overwhelms its ability to radiate heat away, triggering a runaway greenhouse effect that completely boils away its oceans. A habitable exomoon must navigate a narrow envelope: sufficient tidal flexing to drive geological activity and tectonic renewal, but not so much that it sterilizes its own surface."
         },
         {
           "type": "note",
           "kind": "whatthismeans",
-          "text": "What this means: a habitable moon is a balancing act a planet never has to perform. Too little tidal heat and it's a dead stone; too much and it's a furnace. The same flexing that gives Pandora its volcanoes, its fast tectonics, and, as Floating Mountains, Unobtanium and the Flux Devil argues, the conditions to crystallise its strangest mineral, is the flexing that, slightly stronger, would have boiled its oceans away. That Pandora sits in the narrow survivable band is the kind of fine-tuning the films never mention but the physics quietly requires."
+          "text": "A habitable moon requires a delicate physical balancing act that a standalone planet never encounters. Too little tidal heat leaves it geologically inert and dead; too much tidal heat turns it into an uninhabitable volcanic furnace. The exact same tidal flexing that provides Pandora with active volcanoes, rapid plate tectonics, and the unique pressure-temperature conditions required to crystallize superconducting unobtanium is the flexing that, if only slightly stronger, would have boiled its oceans into space. That Pandora resides safely within this narrow habitable envelope is a form of precise cosmic fine-tuning required by orbital mechanics."
         },
         {
           "type": "p",
-          "text": "And there is one more way for a moon to die that has nothing to do with heat, and here canon does something genuinely clever, almost certainly by accident."
+          "text": "And there is one more way for an exomoon to be destroyed that has nothing to do with excess heat, and here the creators incorporated a remarkably clever astrophysical solution, almost certainly by serendipity."
         }
       ]
     },
@@ -143,16 +219,24 @@
       "blocks": [
         {
           "type": "p",
-          "text": "A big gas giant doesn't just have a strong magnetic field. It has a magnetic field that traps things. Charged particles from the stellar wind get caught in it and accelerated into vast, doughnut-shaped belts of lethal radiation girdling the planet; our own Jupiter has them, savage enough to kill an unshielded astronaut and to fry spacecraft electronics. Any moon orbiting inside those belts is bathed in high-energy particles that, over geological time, do something quietly fatal: they knock atmosphere off the top of the moon, atom by atom, a process called sputtering. A small moon, with weak gravity, parked in a radiation belt, will be slowly stripped naked. No air, no oceans, no life. This is a real and serious obstacle to habitable moons, and it is the reason a small body like Pandora, lighter than Earth and weaker-gripped, has no business holding onto a thick atmosphere for billions of years. By rights, it should have been scoured bare. Canon's answer is a single sentence in the companion material, and it is exactly right: Pandora orbits in the gap between Polyphemus's inner and outer radiation belts. The belts are not a solid wall; like Earth's own Van Allen belts, they are structured, with relative lulls between the zones of trapped particles. A moon threading one of those gaps sits in comparative shelter, shielded by the very magnetosphere that would have killed it from a different orbit."
+          "text": "A massive gas giant does not merely possess a powerful magnetic field. It possesses a magnetic field capable of trapping high-energy charged particles from stellar winds into lethal radiation belts, identical to the Van Allen belts around Earth or the ferocious radiation environment around Jupiter. Jupiter's inner moons orbit directly inside this radiation maelstrom: the radiation dose on the surface of Europa or Io would deliver a lethal dose to an unshielded human in minutes to hours, sterilizing biological life and sputtering away fragile surface atmospheres."
+        },
+        {
+          "type": "p",
+          "text": "For Pandora to host a thriving surface biosphere, it cannot simply exist inside Polyphemus's magnetic field; it must somehow survive its radiation belts."
         },
         {
           "type": "figure",
           "figNo": "05",
-          "text": "[Figure 5] Polyphemus's magnetosphere traps charged particles into belts that would strip a small moon's air over time. Canon threads Pandora through the calm gap between the inner and outer belt, sheltered by the same field that would otherwise have killed it."
+          "text": "Polyphemus's vast magnetosphere traps high-energy charged particles into intense radiation belts that would strip an unprotected world bare. Pandora survives through a dual-layered shielding mechanism. First, its orbital distance places it in a natural gap where the trapped radiation thins out significantly. Second, Pandora's own molten metallic core, kept churning by continuous tidal flexing, generates an intrinsic magnetic shield that deflects incoming high-energy ions away from its biosphere."
         },
         {
           "type": "p",
-          "text": "Whether the writers worked through the magnetospheric physics or simply needed a reason their moon could breathe, the answer they wrote down is the answer the science would also reach for. It is, frankly, a better piece of worldbuilding than it had any right to be: the same enormous magnetic field that makes the region near Pandora so violent is what lets Pandora keep its air at all. The threat and the shelter are the same object, seen from different orbits. So the picture closes up. A warm band around a sun-like star, safely inside the zone where orbits survive a second sun. A gas giant parked in that band. A large moon, locked to the giant, kneaded warm from within but not too warm, riding a sheltered gap in the giant's killing belts. Every piece is demanding; not one piece is impossible. The address checks out. Which leaves the question we started with, and have been circling the whole time. The address checks out on paper. If a world exactly like this existed around the real Alpha Centauri A, and it might, could we, from Earth, with the instruments we actually have, ever find it?"
+          "text": "Whether the screenwriters fully calculated the magnetospheric physics or simply sought a dramatic setting, the physical resolution works out remarkably well. Pandora avoids radiation sterilization through two complementary shields. Its orbital distance places it just beyond the densest, most lethal zones of Polyphemus's inner radiation belts, while remaining close enough to benefit from the giant's overarching magnetosphere, which deflects broader stellar wind storms from Alpha Centauri A."
+        },
+        {
+          "type": "p",
+          "text": "Crucially, Pandora possesses its own strong magnetic field. Because tidal heating keeps its interior hot and molten, convective currents in its metallic core generate a vigorous dynamo. Pandora is an exomoon with its own protective magnetic bubble nestled safely inside the larger magnetic shield of its parent giant. This dual protection preserves its thick atmosphere and shields surface ecosystems from lethal radiation."
         }
       ]
     },
@@ -162,24 +246,36 @@
       "blocks": [
         {
           "type": "p",
-          "text": "We have never photographed an Earth-sized world around another star. Almost everything we know about the four-thousand-odd known exoplanets, we learned indirectly, by watching what a planet does to the star we can see, rather than seeing the planet itself. There are four main ways to do it, and walking through them tells you precisely what we could and couldn't learn about Pandora's system."
+          "text": "We have never photographed an Earth-sized world orbiting another star. Almost every one of the thousands of exoplanets discovered over the past three decades was found indirectly, by watching what the unseen world does to the light of its parent star."
         },
         {
           "type": "p",
-          "text": "The workhorse is radial velocity. A planet does not simply orbit its star; the two orbit their shared centre of mass, so the star traces a small circle of its own, it wobbles. As it wobbles toward us its light is squeezed bluer, and as it pulls away its light is stretched redder, by the Doppler effect. Measure that rhythmic colour-shift in the star's spectrum and you have found a planet you never saw, and learned its orbital period and a minimum for its mass. The catch is in the word minimum: because you only measure the wobble along your line of sight, you can't tell a small planet seen edge-on from a big one seen at a slant. And you learn nothing about the planet's size or its air. The second way is the transit: if the planet's orbit happens to be edge-on to us, the planet crosses the face of the star once each orbit and blocks a tiny, measurable sip of its light. The depth of that dip tells you the planet's size relative to the star; the timing tells you the period. Pair a transit with a radial-velocity measurement and the ambiguities cancel; now you have a true mass and a true size, and dividing one by the other gives you density, which tells you whether you're looking at a ball of rock, ice, or gas. The price is geometry: only a small fraction of planetary systems happen to line up edge-on to Earth, so transits find many worlds only by watching enormous numbers of stars at once."
+          "text": "Astronomers rely on four primary methods to detect exoplanetary systems, each measuring a different physical effect and revealing a different piece of the puzzle."
+        },
+        {
+          "type": "p",
+          "text": "The historical workhorse of exoplanet discovery is the radial velocity method. A planet does not simply orbit a stationary star; both bodies orbit their shared center of mass, their barycenter. As the planet orbits, it pulls the star in a tiny matching circle. When the star moves toward Earth, its spectral lines shift slightly toward the blue; when it moves away, they shift toward the red. By measuring this subtle Doppler shift, astronomers can detect the unseen tug of a planet and calculate its orbital period and a lower bound on its mass."
+        },
+        {
+          "type": "p",
+          "text": "The second major method is the transit technique, popularized by space telescopes like Kepler and TESS. If a planet's orbital plane happens to line up with our line of sight, the planet passes directly in front of the star once per orbit, blocking a tiny fraction of its light. The depth of that dip reveals the cross-sectional area of the planet relative to the star, giving us the planet's physical size."
         },
         {
           "type": "data",
-          "text": "This one plots relative brightness against relative time: the light holds steady, dips for a short while, then holds steady again. That small dip is the transit itself."
+          "text": "A transit light curve illustrates this periodic dip with striking clarity. The star's brightness sits at a constant one hundred percent baseline. As a giant planet begins to cross the stellar disc, the detected light drops to ninety-nine point one percent, reaches a flat bottom at ninety-nine point zero percent, and then recovers back to one hundred percent as the planet exits. That one percent drop directly measures the size ratio between the planet and its star."
         },
         {
           "type": "p",
-          "text": "The third way is the hardest and the most direct: direct imaging, actually capturing the planet's own light, by blocking the star's glare with a precisely shaped mask called a coronagraph, or a free-flying starshade. When it works, it is the richest method of all, because the planet's light can be split into a spectrum and read for the fingerprints of its atmosphere. But the contrast is brutal: an Earth-like world is something like ten billion times fainter than its star and sits right next to it in the sky. And a bright binary like Alpha Centauri is worse than usual, because stray light from the second star leaks across the field and floods the very region you're trying to darken. The fourth, astrometry, watches the star's wobble as a tiny side-to-side motion across the sky rather than a colour-shift, and it pins down the true mass that radial velocity leaves ambiguous; but it demands a precision we are only now beginning to reach. A fifth, gravitational microlensing, catches distant worlds in a one-time alignment that can never be repeated; lovely for surveys, useless for studying a particular nearby star."
+          "text": "The third method is direct imaging, the most technically demanding and visually direct approach: capturing photons emitted or reflected by the planet itself. To do this, astronomers use a coronagraph or a starshade to block the blinding glare of the host star. When successful, direct imaging allows us to split the planet's light into a spectrum and detect chemical biosignatures in its atmosphere. However, the contrast ratio is staggering: a rocky world is roughly ten billion times fainter than its parent star and separated by only a fraction of an arcsecond. In a bright binary system like Alpha Centauri, scattered light from the companion star further complicates direct imaging."
+        },
+        {
+          "type": "p",
+          "text": "A fourth method is astrometry, which tracks the physical side-to-side wobble of the star across the sky rather than spectral Doppler shifts, pinning down the true three-dimensional mass of the system. A fifth method, gravitational microlensing, detects distant worlds during rare chance alignments, though it cannot be used for targeted follow-up of nearby stars."
         },
         {
           "type": "note",
           "kind": "callout",
-          "text": "Each method asks a different question. No single technique gives you a whole world. Radial velocity gives you a mass floor and an orbit. Transit gives you a size, and, paired with radial velocity, a density. Direct imaging gives you light you can read for air. Astrometry gives you the true mass. The portrait of any planet is assembled from several methods, each filling in what the others can't reach. Keep that in mind for what comes next, because it tells you exactly how much of Pandora's system we could, and couldn't, actually pull out of the dark."
+          "text": "Each method asks a different question: No single astronomical technique reveals an entire alien world on its own. Radial velocity provides the orbital period and minimum mass. Transit observations give physical radius and, when combined with radial velocity, mean density and bulk composition. Direct imaging captures planetary photons to analyze atmospheric chemistry. Astrometry resolves orbital inclination and true mass. Comprehensive characterization requires synthesizing observations across multiple methods. Keep these technical limits in mind, because they dictate exactly what our instruments could and could not detect in the Alpha Centauri system."
         }
       ]
     },
@@ -189,33 +285,37 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Now point all of that at the system the films describe, and a sharp, slightly melancholy answer falls out. The big thing is trivial to find. The thing that matters is almost invisible."
+          "text": "Now point all of that astronomical machinery at the system described in the films, and a sharp, slightly melancholy conclusion emerges. The giant object is straightforward to detect; the world that actually matters remains nearly invisible."
         },
         {
           "type": "figure",
           "figNo": "06",
-          "text": "[Figure 6] The view from our side: a single brilliant point low in the southern sky, four light-years off, that we already point our best instruments at. The gas giant orbiting it we could confirm in weeks; its habitable moon would stay hidden in the glare."
+          "text": "Looking toward Alpha Centauri from Earth, a single brilliant stellar point blazes low in the southern sky, just over four point three light-years away. Modern ground observatories equipped with high-contrast coronagraphs and extreme-precision spectrographs scrutinize that starlight. A massive gas giant orbiting in the habitable zone would be detected within weeks, but its small habitable moon remains completely lost in the stellar glare."
         },
         {
           "type": "p",
-          "text": "Polyphemus would be easy. A gas giant nearly the mass of Jupiter, orbiting a sun-like star at about one Earth-distance, would haul that star around their common centre by tens of metres per second, a wobble so loud that the radial-velocity spectrographs we already have, instruments like ESPRESSO on the Very Large Telescope, would pick it out within weeks and map its orbit cleanly. If we genuinely shared the sky with Polyphemus, we would have known about it for years. Finding the gas giant is not the hard part. Finding Pandora is the hard part, and it cuts to the core of why exomoons remain, as of now, essentially undiscovered. A moon doesn't orbit the star; it orbits the planet. So it produces no clean wobble of its own in the starlight; its tug is hidden inside the planet's far larger one. The way you'd catch it instead is subtler: the moon and planet orbit their shared centre of mass, so as the planet transits the star, the moon's pull makes the planet arrive at the crossing a little early or a little late, and cross a little faster or slower, from one transit to the next. Those transit-timing variations are the fingerprints of an unseen moon. For an Earth-sized moon around a Jupiter-sized planet, the timing shift is of order seconds to minutes, sitting right down at the noise floor of our best space photometers, where it can be mimicked or swamped by the star's own freckling of starspots and flares."
+          "text": "Detecting Polyphemus would be relatively easy. A gas giant close to the mass of Jupiter, orbiting a sun-like star at approximately one astronomical unit, would induce a stellar radial velocity wobble of several tens of meters per second. That Doppler signal is so strong that current high-precision spectrographs, such as ESPRESSO on the Very Large Telescope, would detect it within weeks and map its orbit with exceptional clarity. If a real Polyphemus existed around Alpha Centauri A, our instruments would have confirmed its presence years ago. Finding the gas giant is not the limiting challenge."
+        },
+        {
+          "type": "p",
+          "text": "Finding Pandora, however, is exceptionally difficult, and illustrates why confirmed exomoons remain beyond our grasp. A moon does not orbit the star independently; it orbits the gas giant. Consequently, it produces no distinct radial velocity wobble in the starlight, as its subtle gravitational tug is masked by the planet's overwhelming signal. Instead, detecting an exomoon requires searching for transit-timing variations: because the moon and planet orbit their mutual center of mass, the planet crosses the stellar disk slightly earlier or later from one transit to the next. For an Earth-sized moon orbiting a Jupiter-sized planet, these timing variations are on the scale of seconds to minutes, right at the noise threshold of space telescopes, easily obscured by natural stellar flares and starspots."
         },
         {
           "type": "data",
-          "text": "Here is the gap in numbers. Polyphemus by Doppler wobble would take weeks: a loud signal, detectable with today's spectrographs. Pandora by transit timing sits at the noise floor, a seconds-scale shift that stellar activity can mask. And Pandora by direct imaging is impossible now, drowned in the glare of two stars."
+          "text": "Comparing our detection capabilities reveals a stark contrast across three observation methods. Polyphemus could be confirmed by Doppler radial velocity within weeks, thanks to a strong, unambiguous signal detectable by today's spectrographs. Pandora through transit-timing variation sits right at the noise floor, producing shifts of only a few seconds that can be masked by stellar activity. Finally, detecting Pandora through direct imaging is impossible with present technology, requiring a contrast of one part in ten billion while drowned in the glare of two companion stars."
         },
         {
           "type": "p",
-          "text": "And photographing Pandora directly? Out of the question with anything we can build today. At Alpha Centauri's distance, Pandora would sit a hair's breadth from Polyphemus in the sky, and Polyphemus a hair's breadth from a star ten billion times brighter, with a second bright star nearby spilling light into the frame. The glare swallows everything. Only a future observatory designed precisely for this, and NASA's planned Habitable Worlds Observatory is the leading candidate, could hope to blot out Alpha Centauri A cleanly enough to tease apart the light of its planets and go hunting for the faint, smeared signatures of their moons."
+          "text": "Photographing Pandora directly is impossible with any instrument currently in operation. At Alpha Centauri's distance, Pandora would appear separated from Polyphemus by a tiny fraction of an arcsecond, with Polyphemus itself sitting right beside a star ten billion times brighter, while the companion star Alpha Centauri B spills additional scattered light across the field of view. The overwhelming glare washes out everything. Only a next-generation observatory purpose-built for high-contrast exoplanet imaging, such as NASA's planned Habitable Worlds Observatory, could suppress the stellar glare cleanly enough to isolate the light of orbiting planets and search for the subtle signatures of large moons."
         },
         {
           "type": "note",
           "kind": "whatthismeans",
-          "text": "The quiet point under all of this: we could confirm Polyphemus tomorrow if it were there. We could not, with present instruments, confirm Pandora at all. The gas giant shouts; the habitable moon whispers. That gap, between the worlds we can detect and the worlds we'd actually want to live on, is the central frustration of the search for life right now. The places most likely to be interesting are the places hardest to see. Pandora, if it existed, would sit just past the edge of what we can currently pull from the glare: close enough to ache, too faint to confirm, waiting on a telescope we have not yet flown."
+          "text": "The quiet point under all of this: We could confirm a gas giant like Polyphemus tomorrow if it existed. But with present instruments, we cannot confirm an exomoon like Pandora at all. The gas giant shouts across space; the habitable moon whispers. That vast observational divide, between the giant worlds we can easily detect and the temperate, living worlds we actually hope to find, is the central frustration of modern exoplanetary science. The environments most hospitable to life are precisely those hardest to observe. Pandora sits just beyond the detection threshold of current technology: close enough to contemplate, yet too faint to confirm, waiting for future space telescopes that have not yet launched."
         },
         {
           "type": "p",
-          "text": "There is one more rung on this ladder, and it belongs to another chapter: once you can catch a world's light, you can read its air. As a planet transits, a sliver of starlight filters through the thin ring of its atmosphere, and different gases stamp the passing light with their absorption fingerprints. That technique, transmission spectroscopy, the thing JWST now does for big, close-in worlds, is how we will eventually ask not just where a world is but what it breathes. For Pandora's poisoned, xenon-heavy air, that is the question of the chapter What's Really in the Air. For now it is enough to say: the tool exists, and it is improving fast."
+          "text": "There is one final capability in this observational pipeline that connects to our understanding of planetary environments: transmission spectroscopy. When a world transits its star, a tiny fraction of starlight filters through the thin ring of its atmosphere, allowing chemical species to leave absorption fingerprints in the transmitted spectrum. This method, which space telescopes like the James Webb Space Telescope currently apply to large exoplanets, will eventually allow us to determine atmospheric compositions across distant systems. For Pandora's toxic atmosphere, that chemical analysis is explored in the chapter What is Really in the Air. For now, the fundamental principle is established: the scientific tools exist, and their sensitivity is improving rapidly."
         }
       ]
     },
@@ -225,31 +325,43 @@
       "blocks": [
         {
           "type": "p",
-          "text": "A specimen is only worth reading if you read all of it, including the parts that don't add up. Canon gets the big shape of Pandora's location right, better than it had to. But press on the numbers and three of them buckle. The first is gravity. Canon gives Pandora about three-quarters of Earth's diameter and about seven-tenths of Earth's mass, and then says you'd weigh four-fifths of your Earth weight there. Those numbers cannot all be true at once. Pack seven-tenths of Earth's mass into a ball three-quarters Earth's width and the surface gravity that falls out of Newton's law is higher than Earth's, around one-and-a-quarter g, not lower. To actually get the gentle four-fifths g the films want, the low gravity that lets giant creatures fly, Pandora would have to be markedly less massive than canon claims, under half an Earth. The stated figures are internally inconsistent; pick any two and the third breaks. The second is the day. Canon wants Pandora tidally locked to Polyphemus and turning once every twenty-six hours, which, since a locked moon's day equals its orbit, means a twenty-six-hour orbit around the gas giant. But an Earth-sized moon orbiting a Jupiter-mass planet that fast would be skimming perilously close to the giant, close enough to risk the Roche limit, the distance inside which a large planet's tides overpower a moon's own gravity and pull it apart, and close enough that the tidal heating we praised a moment ago would tip from geologically lively to oceans boiled away. Run the orbital mechanics honestly and a stable, survivable orbit for such a moon takes days, not hours, which would give Pandora a day many times longer than the one we see, and rob us of those daily eclipses. The fast, dramatic day-night cycle and the safe, stable orbit cannot both be had. The third is the trip. The films put the crossing at about five years at roughly seven-tenths of light-speed. But four-and-a-third light-years at seven-tenths of light-speed takes a bare minimum of just over six years even before you account for slowing down, and the time experienced on board, far from being shorter than five years, doesn't rescue the figure either. The arithmetic is simply a little off, in the way that round dramatic numbers usually are."
+          "text": "A specimen is only worth reading if you read all of it, including the parts where the creators took artistic liberties."
+        },
+        {
+          "type": "p",
+          "text": "When you scrutinize the official parameters of Pandora and Polyphemus against fundamental astrophysical laws, three specific inconsistencies emerge where storytelling convenience took precedence over physics."
+        },
+        {
+          "type": "p",
+          "text": "The first is the relationship between size, mass, and surface gravity. Canon states that Pandora has a diameter of roughly three-quarters of Earth's diameter, about zero point seven five Earth diameters, and a mass of roughly zero point seven Earth masses. If you calculate surface gravity from those numbers using Newton's law of gravitation, you get a surface gravity roughly one point two times Earth's gravity. Yet the story explicitly describes Pandora as having a low surface gravity of zero point eight g, eighty percent of Earth's gravity, allowing for massive flora, leaping fauna, and floating mountains. To produce zero point eight g with a diameter of zero point seven five, Pandora's mass would have to be only about zero point four five Earth masses. The canonical mass and the canonical gravity cannot both be true."
+        },
+        {
+          "type": "p",
+          "text": "The second inconsistency is the day length. Canon specifies a twenty-six-hour day, locked to Polyphemus. Because a tidally locked moon's rotational period equals its orbital period around its parent planet, a twenty-six-hour day means Pandora must complete a full orbit around Polyphemus in just twenty-six hours. But orbiting a Jupiter-mass planet in twenty-six hours places an Earth-sized moon dangerously close to the Roche limit, inside extreme tidal forces that would generate catastrophic volcanic heating, far beyond Io, completely sterilizing the surface. A truly safe, habitable orbit around Polyphemus would require an orbital period of several days to a week, producing a day-night cycle hundreds of hours long rather than a convenient twenty-six-hour day."
         },
         {
           "type": "note",
           "kind": "callout",
-          "text": "And the star that isn't in the sky. The strangest omission isn't a number; it's a missing sun. Alpha Centauri A has a bright orange companion, star B, that swings as close as about eleven Earth-distances. From Pandora's surface, B should blaze as an intensely bright orange-white point, hundreds of times brighter than our full Moon, bright enough that, for long stretches of its eighty-year orbit, Pandora's nights would never be truly dark, even with Polyphemus eclipsing the primary. The films almost never show it. The second sun that the real Alpha Centauri guarantees is, on screen, quietly absent."
+          "text": "And the star that is not in the sky: The strangest omission in the films is not a mathematical discrepancy; it is a missing sun. Alpha Centauri A has a bright orange companion star, Alpha Centauri B, which approaches as close as eleven astronomical units. From Pandora's surface, star B would shine as an intensely brilliant orange-white point of light, hundreds of times brighter than our full Moon. For long multi-decade stretches of its eighty-year orbit, Pandora's nights would never be truly dark, even when Polyphemus fully eclipses the primary star. The films almost never depict this second sun, quietly omitting the constant amber night illumination that the real astrophysics of Alpha Centauri guarantees."
         },
         {
           "type": "figure",
           "figNo": "07",
-          "text": "[Figure 7] The night the films leave out. Alpha Centauri B should remain a point in the sky, but a point bright enough to lay orange-edged shadows across the forest for decades at a time. Even with the primary hidden, much of Pandora's night would not be dark."
+          "text": "The real night sky of Pandora contains a feature the films omit. The companion star Alpha Centauri B shines as an intense orange stellar point in the sky. When Polyphemus eclipses Alpha Centauri A, its massive unlit cloud belts dominate the sky, but star B continues to cast sharp, amber-hued directional shadows across the bioluminescent forest, preventing true dark nights for decades at a time."
         },
         {
           "type": "p",
-          "text": "None of this collapses the world. It sharpens it. The location is sound where it counts, a real star, a plausible orbit, a defensible habitable zone, a clever solution to the radiation belts, and shaky exactly where storytelling always cheats: on the round numbers, the convenient day length, and the inconvenient extra sun that would have lit half the night scenes wrong."
+          "text": "None of these discrepancies collapse the worldbuilding. Instead, they clarify the boundaries of the fiction. The astronomical framework is remarkably solid where it matters: a real star system, a plausible habitable zone, stable orbital mechanics, and a clever resolution to radiation shielding. The narrative cheats only where visual storytelling demands compromises: convenient round numbers, a comfortable twenty-six-hour day for the protagonists, and omitting a second sun that would have complicated cinematic night lighting."
         },
         {
           "type": "note",
           "kind": "confidence",
-          "text": "This chapter's breakdown: twenty-six percent canon, twelve percent inference, seven percent speculation, fifty-five percent real science."
+          "text": "The intellectual accounting for this chapter breaks down cleanly. Real astrophysics and observational planetary science make up fifty-five percent of our analysis. Canonical details from the films and official guides account for twenty-six percent. Astrophysical inferences derived from physical laws comprise twelve percent. Speculative hypotheses represent the remaining seven percent."
         },
         {
           "type": "note",
           "kind": "openquestions",
-          "text": "The questions that stay open. Is there really a habitable-zone world around Alpha Centauri A? Unknown, and actively hunted: a Jupiter-sized planet there would already have been found by its Doppler wobble, so a true Polyphemus is ruled out, but a smaller rocky world remains possible. Could we ever confirm an exomoon like Pandora? Not with present instruments; no exomoon has been confirmed at all, and it will likely take a purpose-built observatory like the planned Habitable Worlds Observatory. Can Pandora's stated size, mass, and gravity all be true together? No: the canonical diameter and mass imply a surface gravity well above Earth's, not the gentle four-fifths g the films depict, so the three figures are mutually inconsistent. And how can Pandora have a 26-hour day while tidally locked to Polyphemus? Uneasily: a locked moon's day equals its orbital period, and a 26-hour orbit places an Earth-sized moon dangerously close to a Jupiter-mass planet, near the Roche limit and into sterilising tidal heat. A genuinely safe orbit would run to days, giving a much longer day and far rarer eclipses."
+          "text": "What stays open: Is there really a habitable-zone world around Alpha Centauri A? That is unknown and actively investigated. The stable temperate orbital band genuinely exists. A Jupiter-sized planet there would have already been detected by radial velocity Doppler surveys, ruling out a massive Polyphemus. However, a smaller, rocky terrestrial world remains possible and is precisely what current high-precision surveys are attempting to detect at the edge of instrument sensitivity. Could we ever confirm an exomoon like Pandora? Not with current astronomical instruments. No exomoon candidate has been definitively confirmed anywhere. Transit-timing variation signals hover near the noise threshold, and direct high-contrast imaging is impossible at present. Confirming an exomoon will require future space telescopes like the Habitable Worlds Observatory, and even then, detecting a moon is far more challenging than detecting its host planet. Can Pandora's stated size, mass, and surface gravity all be true together? No, they are mathematically inconsistent. The canonical diameter of zero point seven five Earths and mass of zero point seven Earths yield a surface gravity of approximately one point two g, higher than Earth's. To achieve the canonical low surface gravity of zero point eight g, Pandora's mass must be reduced to roughly zero point four five Earth masses. The three official figures cannot be reconciled simultaneously. How can Pandora have a twenty-six-hour day while tidally locked to Polyphemus? Only with severe physical tension. A tidally locked moon's rotation matches its orbital period. An orbit of twenty-six hours places an Earth-sized moon dangerously close to a Jupiter-mass giant, nearing the Roche limit and inducing extreme, sterilizing tidal heat. A genuinely stable, habitable orbit would require several Earth days, resulting in a much longer day-night cycle. The twenty-six-hour day is a dramatic concession for storytelling rather than orbital mechanics."
         }
       ]
     },
@@ -259,7 +371,27 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Go back to the ridge, and to the sun going out at noon. What you are watching, when Polyphemus swallows the star, is the single most honest thing Pandora ever tells you about itself: you are on a moon. Not a planet with a big moon, but a moon with a planet, close enough that its parent fills the sky and steals the sun most afternoons, locked into a rhythm that makes its day and its month the same turning. Everything else about the place follows from that fact and from where the whole arrangement sits: a large moon, warmed from four directions and from within, sheltering in a gap of a giant's lethal field, all of it riding the temperate band of a star almost exactly like our own, in a system whose second sun the films forgot to paint. And the quiet marvel is that the address is nearly checkable. Alpha Centauri A is real, it is four light-years away, and it has a stable, temperate slot where a world could be both warm and safe. We cannot yet see anything sitting in that slot the size of Pandora; the gas giant would shout and the moon would whisper, and the whisper is below our hearing for now. But that is a limit of our instruments, not of the universe. The telescopes that could resolve the whisper are being designed. When one of them finally turns toward that bright point low in the southern sky and starts blotting out its glare, the question it will be asking is the one you can ask standing on the ridge, watching the light go long and blue: is anyone home, four years away, under a sun like ours? We do not know yet. But for once, the place the story chose to ask the question is a real place, and we are very nearly able to look."
+          "text": "Go back to the ridge, and to the sun going out at midday."
+        },
+        {
+          "type": "p",
+          "text": "What you are watching, when Polyphemus swallows the star, is the single most honest thing Pandora ever tells you about itself: you are on a moon. Not a planet with a big moon, but a moon with a giant planet, close enough that its parent fills the sky and steals the sun most afternoons, locked into a rhythm that makes its day and its month the same turning."
+        },
+        {
+          "type": "p",
+          "text": "Everything else about the place follows from that physical reality and where the system sits. Consider the setup. A large moon is warmed from four directions and from within. It shelters in a safe gap within a giant's lethal radiation belts. The whole arrangement rides the temperate band of a star almost exactly like our own. And it sits in a system whose second sun the films forgot to paint."
+        },
+        {
+          "type": "p",
+          "text": "And the quiet marvel is that the address is nearly checkable. Alpha Centauri A is real, it is four light-years away, and it has a stable, temperate slot where a world could be both warm and safe. We cannot yet see anything sitting in that slot the size of Pandora. The gas giant would shout and the moon would whisper, and the whisper is below our hearing for now. But that is a limit of our instruments, not of the universe. The telescopes that could resolve the whisper are being designed."
+        },
+        {
+          "type": "p",
+          "text": "One day, a future observatory will turn toward that bright point low in the southern sky and blot out its glare. The question it asks will be the same one you can ask standing on the ridge, watching the light go long and blue. Is anyone home, four light-years away, under a sun like ours?"
+        },
+        {
+          "type": "p",
+          "text": "We do not know yet. But for once, the place the story chose to ask the question is a real place, and we are very nearly able to look."
         }
       ]
     }

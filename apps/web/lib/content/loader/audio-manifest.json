@@ -3,85 +3,85 @@
     "from-stardust-to-pandora": {
       "vi": {
         "audioUrl": "/audio/chapters/from-stardust-to-pandora/vi/from-stardust-to-pandora.vi.mp3",
-        "duration": 2490.408,
+        "duration": 3058.056,
         "sections": [
           {
             "sectionId": "sec-00",
             "title": null,
             "start": 0,
-            "end": 109.54
+            "end": 143.04
           },
           {
             "sectionId": "sec-01",
             "title": "Vũ trụ gần như chẳng có gì để xây",
-            "start": 109.54,
-            "end": 259.02
+            "start": 143.04,
+            "end": 335.96
           },
           {
             "sectionId": "sec-02",
             "title": "Đọc tờ biên nhận",
-            "start": 259.02,
-            "end": 490.72
+            "start": 335.96,
+            "end": 669.06
           },
           {
             "sectionId": "sec-03",
             "title": "Chuyện đó dẫn tới câu hỏi khi nào",
-            "start": 490.72,
-            "end": 620.18
+            "start": 669.06,
+            "end": 833.76
           },
           {
             "sectionId": "sec-04",
             "title": "Các nhà máy nằm ở đâu",
-            "start": 620.18,
-            "end": 934.7
+            "start": 833.76,
+            "end": 1250.84
           },
           {
             "sectionId": "sec-05",
             "title": "Một đám mây không thể không rơi",
-            "start": 934.7,
-            "end": 1092.7
+            "start": 1250.84,
+            "end": 1472.22
           },
           {
             "sectionId": "sec-06",
             "title": "Cái đĩa tự phân loại nguyên liệu của nó",
-            "start": 1092.7,
-            "end": 1180.52
+            "start": 1472.22,
+            "end": 1628.22
           },
           {
             "sectionId": "sec-07",
             "title": "Khoảng trống ở giữa quá trình hình thành hành tinh",
-            "start": 1180.52,
-            "end": 1368.58
+            "start": 1628.22,
+            "end": 1886.68
           },
           {
             "sectionId": "sec-08",
             "title": "Và bây giờ là mặt trăng",
-            "start": 1368.58,
-            "end": 1743.52
+            "start": 1886.68,
+            "end": 2249.86
           },
           {
             "sectionId": "sec-09",
             "title": "Những gì khối lượng riêng đã kể cho ta",
-            "start": 1743.52,
-            "end": 1902.92
+            "start": 2249.86,
+            "end": 2431.8
           },
           {
             "sectionId": "sec-10",
             "title": "Hai vấn đề mà lòng sâu giải quyết cùng một lúc",
-            "start": 1902.92,
-            "end": 2067.28
+            "start": 2431.8,
+            "end": 2573.84
           },
           {
             "sectionId": "sec-11",
             "title": "Nước để lại dấu vân tay",
-            "start": 2067.28,
-            "end": 2274.02
+            "start": 2573.84,
+            "end": 2784.6
           },
           {
             "sectionId": "sec-12",
             "title": "Quay lại với hòn đá",
-            "start": 2274.02,
-            "end": 2490.38
+            "start": 2784.6,
+            "end": 3058.02
           }
         ]
       }
@@ -167,7 +167,7 @@
           },
           {
             "sectionId": "sec-01",
-            "title": "Địa chỉ, theo như chính sử ghi nhận",
+            "title": "Địa chỉ, theo như nguyên tác ghi nhận",
             "start": 131.36,
             "end": 453.66
           },
@@ -218,6 +218,74 @@
             "title": "Trở lại mỏm đá",
             "start": 2620.62,
             "end": 2756.72
+          }
+        ]
+      }
+    },
+    "time-on-pandora": {
+      "vi": {
+        "audioUrl": "/audio/chapters/time-on-pandora/vi/time-on-pandora.vi.mp3",
+        "duration": 1808.376,
+        "sections": [
+          {
+            "sectionId": "sec-00",
+            "title": null,
+            "start": 0,
+            "end": 120.82
+          },
+          {
+            "sectionId": "sec-01",
+            "title": "Chiếc đồng hồ không bao giờ nhích",
+            "start": 120.82,
+            "end": 229.82
+          },
+          {
+            "sectionId": "sec-02",
+            "title": "Một ngày cũng chính là một tháng",
+            "start": 229.82,
+            "end": 450.88
+          },
+          {
+            "sectionId": "sec-03",
+            "title": "Hành tinh biết gật gù",
+            "start": 450.88,
+            "end": 657.82
+          },
+          {
+            "sectionId": "sec-04",
+            "title": "Chìm vào màn đêm lúc mặt trời vẫn còn",
+            "start": 657.82,
+            "end": 896.9
+          },
+          {
+            "sectionId": "sec-05",
+            "title": "Hai chiếc đồng hồ mà Trái Đất giữ riêng rẽ",
+            "start": 896.9,
+            "end": 1050.48
+          },
+          {
+            "sectionId": "sec-06",
+            "title": "Trò ảo thuật tương tự diễn ra khắp bầu trời",
+            "start": 1050.48,
+            "end": 1212.82
+          },
+          {
+            "sectionId": "sec-07",
+            "title": "Những chiếc đồng hồ lớn ôm trọn đồng hồ nhỏ",
+            "start": 1212.82,
+            "end": 1408.94
+          },
+          {
+            "sectionId": "sec-08",
+            "title": "Khi chiếc đồng hồ bị kẹt bánh răng",
+            "start": 1408.94,
+            "end": 1713.04
+          },
+          {
+            "sectionId": "sec-09",
+            "title": "Nhớ về nhà trước lúc nhật thực",
+            "start": 1713.04,
+            "end": 1808.34
           }
         ]
       }

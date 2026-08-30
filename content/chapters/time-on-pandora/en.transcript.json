@@ -14,11 +14,23 @@
         {
           "type": "figure",
           "figNo": "01",
-          "text": "[Figure 1] The strangest clock on Pandora: the biggest thing in the sky never moves. Polyphemus hangs in a fixed quarter of the heavens all day and all night, while the small sun slides past behind it , so you tell the time not by the planet, but by the light. Tidally locked giant: Due to synchronous rotation, Polyphemus remains stationary at the same azimuth and elevation.. Moving primary sun: Alpha Centauri A traces a continuous path across the sky behind the stationary gas giant.. Long amber shadows: Time of day is measured by solar transit angle and shadow direction, not planetary motion."
+          "text": "The strangest clock on Pandora is that the biggest object in the sky never moves. The gas giant Polyphemus hangs in a fixed quarter of the heavens all day and all night, while the small bright primary sun slides past behind it. On this world, you tell the time not by the motion of the planet, but by the changing angle of the sunlight casting long amber shadows across the landscape."
         },
         {
           "type": "p",
-          "text": "The reef-dwelling Na'vi have a phrase, and the forest clans use it too, that does more quiet work than any clock face. Be home by eclipse. It is not poetry. It is a time of day , late afternoon, near enough, the hour when the sun is about to slide behind the great banded planet and the world goes dark for a while in the middle of what should be daylight. A child told to be home by eclipse has been given an appointment as exact as any struck by a bell. The eclipse comes, most days, at the same hour. You can set your life by it. Sit with that a moment, because it is stranger than it first sounds. On Earth a total solar eclipse is the rarest of spectacles , a thing people cross oceans to stand under once in a lifetime, lasting a few minutes, never to be repeated from the same spot for centuries. On Pandora it is a daily errand-bell. Something about where this world sits, and how it turns, has taken the most extraordinary event in our sky and made it as routine as a sunset. Reading how is the whole of this chapter, and the answer turns out to be a single fact about the way Pandora moves , a fact that governs not just the eclipses but the length of the day, the shape of the seasons, even what the night is bright enough to see by. And it begins with the thing in the sky that refuses to behave: the planet that hangs there, enormous, and never moves."
+          "text": "The reef-dwelling Na'vi have a phrase, and the forest clans use it too, that does more quiet work than any clock face. Be home by eclipse. It is not poetry. It is a time of day, near enough to late afternoon, the hour when the sun is about to slide behind the great banded planet and the world goes dark in the middle of what should be daylight. A child told to be home by eclipse has been given an appointment as exact as any struck by a bell. The eclipse comes, most days, at the same hour. You can set your life by it."
+        },
+        {
+          "type": "p",
+          "text": "Sit with that for a moment, because it is stranger than it first sounds. On Earth, a total solar eclipse is the rarest of spectacles. It is an event people cross oceans to stand under once in a lifetime, lasting only a few minutes, never to be repeated from the same spot for centuries. On Pandora, it is a daily errand-bell."
+        },
+        {
+          "type": "p",
+          "text": "Something about where this world sits, and how it turns, has taken the most extraordinary event in our sky and made it as routine as a sunset. Understanding how that happens is the whole purpose of this chapter. The answer turns out to be a single fact about the way Pandora moves, a fact that governs not just the eclipses, but the length of the day, the shape of the seasons, and even what the night is bright enough to see by."
+        },
+        {
+          "type": "p",
+          "text": "And it all begins with the thing in the sky that refuses to behave: the giant planet that hangs there, enormous, and never moves."
         }
       ]
     },
@@ -28,7 +40,19 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Stand anywhere on the inhabited face of Pandora and look up, and Polyphemus is there , a wall of cream and rust cloud filling a great wedge of the sky, the cyclopean storm turning slowly on its face. Come back an hour later and it is still there. Come back at what passes for midnight and it is still there, dark now, rimmed in a thread of reflected light, occupying the exact same patch of sky it held at noon. The largest object in the Pandoran heavens is also the only one that never rises and never sets. This is the detail that gives the game away, and it is worth being precise about why. A moon that keeps one face turned forever toward its planet is said to be tidally locked , and a locked moon sees its planet nailed to one spot in the sky, because the same hemisphere is always aimed at it. Our own Moon does this to us, not the other way around: it keeps one face toward Earth, which is why every generation of humans has seen the same \"man in the Moon\" and none has ever seen its far side without a spacecraft. Pandora does it to Polyphemus. The planet hangs fixed because Pandora always shows it the same cheek. So far this seems to settle the matter in the wrong direction. If Pandora keeps one face to its planet , if it is locked, frozen, always pointing the same way , then surely one side bakes in perpetual day and the other freezes in perpetual night? Surely a locked world has no day at all? It is the most natural conclusion in the world, and it is wrong, and the error is so common it is worth stopping to kill properly. Because the answer to \"how does a locked moon still have a day\" is the key that opens everything else."
+          "text": "Stand anywhere on the inhabited face of Pandora and look up, and Polyphemus is there. It is a colossal wall of cream and rust cloud filling a great wedge of the sky, with the cyclopean storm turning slowly on its face. Come back an hour later and it is still there. Come back at what passes for midnight and it is still there, dark now, rimmed in a thread of reflected light, occupying the exact same patch of sky it held at noon. The largest object in the Pandoran heavens is also the only one that never rises and never sets."
+        },
+        {
+          "type": "p",
+          "text": "This is the detail that gives the game away, and it is worth being precise about why. A moon that keeps one face turned forever toward its planet is said to be tidally locked. A locked moon sees its planet nailed to one spot in the sky, because the same hemisphere is always aimed directly at it. Our own Moon does this to us, not the other way around. It keeps one face toward Earth, which is why every generation of humans has seen the same face of the Moon and none has ever seen its far side without a spacecraft. Pandora does the exact same thing to Polyphemus. The planet hangs fixed because Pandora always shows it the same cheek."
+        },
+        {
+          "type": "p",
+          "text": "So far, this seems to settle the matter in the wrong direction. If Pandora keeps one face to its planet, if it is locked, frozen, always pointing the same way, then surely one side bakes in perpetual day and the other freezes in perpetual night. Surely a locked world has no day at all."
+        },
+        {
+          "type": "p",
+          "text": "It is the most natural conclusion in the world, and it is completely wrong. The error is so common that it is worth stopping to dismantle properly. The answer to how a locked moon still has a day is the key that opens everything else."
         }
       ]
     },
@@ -38,16 +62,28 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Here is the thing the word \"locked\" hides. Pandora keeps one face toward Polyphemus. It does not keep one face toward the sun. Those are two completely different objects, and the sun is not standing still. Watch what actually happens over one trip of Pandora around its planet. The moon swings around the great gas giant on its orbit, and as it goes it slowly turns, exactly once, keeping that one hemisphere always aimed inward at Polyphemus. But the sun , Alpha Centauri A, a fixed bright point far beyond the planet , shines from one side of the whole arrangement. So as Pandora rides around its orbit, any given spot on its surface is carried first into the sunlight, then around into the planet's shadow side, then back out into the light. The ground turns toward the sun, and away, and toward it again. That is sunrise, noon, sunset, night. That is a day. Synchronous rotation , one spin per orbit , does not abolish the day. It defines it. A locked moon's day is simply one trip around its planet. The two clocks that Earth keeps strictly apart, the spinning clock that gives us our twenty-four hours and the orbiting clock that gives our Moon its month, are on Pandora welded into a single mechanism. One orbit of Polyphemus is one Pandoran day. The day and the month are the same turning."
+          "text": "Here is the crucial fact that the word locked hides. Pandora keeps one face toward Polyphemus. It does not keep one face toward the sun. Those are two completely different objects, and the sun is not standing still."
+        },
+        {
+          "type": "p",
+          "text": "Watch what actually happens over one trip of Pandora around its planet. The moon swings around the great gas giant on its orbit, and as it goes it slowly turns, exactly once, keeping that one hemisphere always aimed inward at Polyphemus. But the sun, Alpha Centauri A, is a fixed bright point shining from one side far beyond the whole system. So as Pandora rides around its orbit, any given spot on its surface is carried first into the sunlight, then around into the planet's shadow side, then back out into the light. The ground turns toward the sun, away, and toward it again. That is sunrise, noon, sunset, and night. That is a day."
+        },
+        {
+          "type": "p",
+          "text": "Synchronous rotation, which means one spin per orbit, does not abolish the day. It defines it. A locked moon's day is simply one trip around its planet. The two clocks that Earth keeps strictly apart, the spinning clock that gives us our twenty-four hours and the orbiting clock that gives our Moon its month, are on Pandora welded into a single mechanism. One orbit of Polyphemus is one Pandoran day. The day and the month are the exact same turning."
         },
         {
           "type": "figure",
           "figNo": "02",
-          "text": "[Figure 2] Day equals orbit. The moon keeps one face locked toward the planet at the centre, yet any point on its surface still wheels through sunlight and shadow as the moon rides once around , so the sun rises, sets, and rises again over a single orbit. Central Polyphemus: The gas giant anchors the orbit; the moon's inner face points permanently toward it.. Midnight position: The locked surface turns away from the distant sun into planetary eclipse and shadow.. Noon position: The locked face turns toward the distant sun, experiencing full zenith illumination.. Synchronous orbit: One 360 degrees orbital revolution exactly equals one complete solar day-night cycle."
+          "text": "Day equals orbit. The moon keeps one face locked toward the planet at the centre, yet any point on its surface still wheels through sunlight and shadow as the moon rides once around. As a result, the sun rises, sets, and rises again over a single complete orbital revolution."
         },
         {
           "type": "p",
-          "text": "I find the cleanest way to feel this is to stop thinking about spinning at all and think about a carousel. Imagine you are on a slow merry-go-round, and the rule is that you must always face the central pole , so as the platform carries you around, you turn your body to keep your nose pointed at the middle. To anyone standing on the pole, you never turn; you show them your face the whole ride. But now put a single lamp on the far wall of the room. Over one full circuit of the carousel, that lamp shines on your face, then your left side, then your back, then your right side, then your face again. You have had a full day-night cycle of lamplight , while keeping one face rigidly toward the pole the entire time. The pole is Polyphemus. The lamp is the sun. The ride is Pandora's day, which is also its month, because on a carousel there is only ever one clock. Canon puts the length of that ride at about twenty-six hours , a day pleasantly close to our own, which is surely why the films chose it; a human can live on a twenty-six-hour rhythm without coming apart, where a forty-hour one would wreck the body's clock. So Pandora circles Polyphemus roughly once a day, and the planet hangs fixed, and the sun marches past behind it, and the world keeps a day-night cycle that an Earth-born lung , if not for the air , could almost call home. We will see, near the end, that the tidy twenty-six-hour figure is the single number in this chapter that does not survive a hard look. But the mechanism behind it is sound, and it is the same mechanism that runs every locked world we know."
+          "text": "The cleanest way to feel this is to stop thinking about spinning and think about a carousel. Imagine you are on a slow merry-go-round, and the rule is that you must always face the central pole. As the platform carries you around, you turn your body to keep your nose pointed directly at the middle. To anyone standing at the pole, you never turn, because you show them your face the whole ride. But now put a single lamp on the far wall of the room. Over one full circuit of the carousel, that lamp shines on your face, then your left side, then your back, then your right side, and then your face again. You have experienced a full day-night cycle of lamplight, while keeping one face rigidly toward the pole the entire time. The pole is Polyphemus. The lamp is the sun. The ride is Pandora's day, which is also its month, because on a carousel there is only ever one clock."
+        },
+        {
+          "type": "p",
+          "text": "Canon puts the length of that ride at about twenty-six hours. That is a day pleasantly close to our own, which is surely why the films chose it. A human can live on a twenty-six-hour rhythm without coming apart, whereas a forty-hour cycle would wreck the body's circadian clock. So Pandora circles Polyphemus roughly once a day, the planet hangs fixed, the sun marches past behind it, and the world keeps a day-night cycle that an Earth-born traveler could almost call home. Near the end of this chapter, we will see that the tidy twenty-six-hour figure is the single number that does not survive hard physical scrutiny. But the mechanism behind it is entirely sound, and it is the exact same mechanism that governs every locked world we know."
         }
       ]
     },
@@ -57,16 +93,28 @@
       "blocks": [
         {
           "type": "p",
-          "text": "If Pandora kept its face perfectly toward Polyphemus, the planet would hang not just in a fixed quarter of the sky but at a single mathematical point, motionless to the millimetre. It very nearly does. But \"very nearly\" is where the interesting physics always hides, and a careful watcher, over the course of a few days, would catch Polyphemus doing something a fixed object cannot do. It would nod. It would drift a little east, then a little west; ride a little high, then a little low; and swell and shrink almost imperceptibly. The great planet, supposedly nailed in place, would trace a slow lazy figure against the stars. This wobble has a name , libration , and it is not a flaw in the locking but a consequence of it being imperfect in two specific, understandable ways."
+          "text": "If Pandora kept its face perfectly toward Polyphemus, the planet would hang not just in a fixed quarter of the sky, but at a single mathematical point, motionless to the millimetre. It very nearly does. But very nearly is where the most interesting physics always hides. A careful watcher, over the course of a few days, would catch Polyphemus doing something a truly fixed object cannot do. It would nod. It would drift a little east, then a little west, ride a little high, then a little low, and swell and shrink almost imperceptibly. The great planet, supposedly nailed in place, would trace a slow lazy figure against the background stars."
+        },
+        {
+          "type": "p",
+          "text": "This wobble has a name: libration. It is not a flaw in the locking, but a consequence of the locking being imperfect in two specific, understandable ways."
         },
         {
           "type": "figure",
           "figNo": "03",
-          "text": "[Figure 3] The fixed planet is not quite fixed. Over one orbit Polyphemus traces a slow loop against the stars , drifting east and west as Pandora speeds up and slows on its slightly oval orbit, riding north and south as the moon's tilt turns its poles toward and away. The same wobble lets us, on Earth, peer around the edges of our own Moon. Libration ellipse: Polyphemus traces an apparent loop against background stars over each orbital period.. East-west drift: Orbital eccentricity causes orbital speed to vary while rotation speed stays constant.. North-south nod: Orbital inclination causes the apparent polar axis to nod north and south."
+          "text": "The fixed planet is not quite fixed. Over one orbit, Polyphemus traces a slow loop against the stars, drifting east and west as Pandora speeds up and slows on its slightly oval orbit, and riding north and south as the moon's tilt turns its poles toward and away. The same wobble lets us, on Earth, peer around the edges of our own Moon."
         },
         {
           "type": "p",
-          "text": "The first cause is that no orbit is a perfect circle. Pandora's path around Polyphemus is very slightly oval, and on an oval orbit a body does not move at a steady pace , it speeds up as it swings closest to the planet and slows as it draws away, a rule worked out for the planets by Kepler four centuries ago and obeyed by every orbit since. But Pandora's spin stays perfectly even, ticking around at one constant rate. So the steady spin and the uneven orbital march fall in and out of step: for part of the orbit the rotation runs slightly ahead of the revolution, swinging a sliver of the far side into view on one limb; for the other part it lags behind, revealing a sliver on the other side. The planet appears to swing gently east and west. Astronomers call this libration in longitude. The second cause is tilt. Pandora's spin axis is not perfectly upright to its orbit , canon gives it a lean of around twenty-five degrees, a touch steeper than Earth's. That tilt means that over the course of an orbit the moon nods the planet alternately past its north pole and its south, so Polyphemus rides high in the sky and then low, and a watcher peers over the top of the disc and then under the bottom of it. Libration in latitude. Our Moon does exactly the same dance for exactly these reasons, and the gift of it is unexpectedly large: between the east-west swing and the north-south nod, the Moon shows Earth not half its surface but about fifty-nine percent of it over time. Nearly a tenth of the \"far side\" is not truly far; it merely hides and peeks, swinging into view around the edges if you watch patiently across a month. Pandora's libration, with its steeper tilt, would be more dramatic still , and it quietly resolves a puzzle the franchise tripped over, which we will come to: along the edges of the locked face, places where Polyphemus sits low on the horizon, the planet's nodding can carry it briefly below the horizon and back, so that even the \"fixed\" planet, in some lands, rises and sets a little."
+          "text": "The first cause is that no orbit is a perfect circle. Pandora's path around Polyphemus is slightly oval. On an oval orbit, a body does not move at a steady pace. It speeds up as it swings closest to the planet and slows down as it draws away, a rule worked out by Kepler four centuries ago and obeyed by every orbit since. But Pandora's spin stays perfectly even, ticking around at one constant rate. So the steady spin and the uneven orbital speed fall in and out of step. For part of the orbit, the rotation runs slightly ahead of the revolution, swinging a sliver of the far side into view on one limb. For the other part, it lags behind, revealing a sliver on the other side. The planet appears to swing gently east and west. Astronomers call this libration in longitude."
+        },
+        {
+          "type": "p",
+          "text": "The second cause is axial tilt. Pandora's spin axis is not perfectly upright relative to its orbit. Canon gives it a lean of around twenty-five degrees, a touch steeper than Earth's. That tilt means that over the course of an orbit, the moon nods the planet alternately past its north pole and its south pole. Polyphemus rides high in the sky and then low, allowing a watcher to peer over the top of the disc and then under the bottom of it. This is libration in latitude."
+        },
+        {
+          "type": "p",
+          "text": "Our Moon performs the exact same dance for the exact same reasons. The gift of this motion is unexpectedly large. Between the east-west swing and the north-south nod, the Moon shows Earth not half its surface, but about fifty-nine percent over time. Nearly a tenth of the far side is not truly hidden; it swings into view around the edges if you watch patiently across a month. Pandora's libration, with its steeper tilt, would be even more dramatic. And it quietly resolves a puzzle the franchise tripped over. Along the edges of the locked face, where Polyphemus sits right on the horizon, the planet's nodding can carry it briefly below the horizon and back. In those lands, even the fixed planet rises and sets a little."
         }
       ]
     },
@@ -76,24 +124,40 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Now we can return to the errand-bell and explain it, because the eclipse is just the moment the carousel carries you directly behind the pole."
+          "text": "Now we can return to the errand-bell and explain it, because the eclipse is simply the moment the carousel carries you directly behind the central pole."
         },
         {
           "type": "p",
-          "text": "Once each orbit , once each day , Pandora passes around the far side of Polyphemus from the sun. When it does, the bulk of the planet slides between the moon and the star, and the sun is blotted out: not by another moon, the way our eclipses work, but by the whole vast body of the planet Pandora belongs to. And because Polyphemus is enormous in that sky, filling a great wedge of it where our Moon barely covers the sun's disc, the blotting-out is not the few minutes of an Earthly eclipse but a long, deep, total darkness , by the reckoning of the people who live under it, the better part of an hour, arriving like clockwork in the afternoon. What happens on the ground in that hour is not subtle. On Earth, even a brief total eclipse drops the temperature several degrees and sets confused birds to roosting. On Pandora the sun is cut off completely and for far longer, and there is no daylight reflecting off anything to soften it , when the sun is behind the planet, the planet's own near face is its night side too, so no friendly planetshine fills the gap. The world simply falls into true dark, and cold pours in behind the lost light. And then Pandora answers in the way only Pandora can: the forests light up. The daily eclipse is one of the great triggers of the moon's bioluminescent night-life, the cue that wakes a whole second ecosystem of glowing things and night-moving creatures, every afternoon, on schedule. \"Be home by eclipse\" is partly a warning: when the lights below come on, the things that hunt by them come out. But here the bell develops a subtlety, and it is the best piece of real orbital mechanics in the chapter. The eclipse does not, in fact, come every single day of the year. It comes every day for part of the year , and then, for another stretch, it does not come at all."
+          "text": "Once each orbit, which means once each day, Pandora passes around the far side of Polyphemus from the sun. When it does, the vast bulk of the gas giant slides between the moon and the primary star, blotting out the sun completely. This is not like an Earthly eclipse where our small Moon barely covers the solar disc for a few brief minutes. Because Polyphemus is enormous in the Pandoran sky, filling a huge wedge of the heavens, the blotting-out is a long, deep, total darkness that lasts for the better part of an hour, arriving like clockwork every afternoon."
+        },
+        {
+          "type": "p",
+          "text": "What happens on the ground during that hour is profound. On Earth, even a brief total eclipse drops the temperature several degrees and sets confused birds to roosting. On Pandora, the sunlight is cut off completely for far longer, and there is no reflecting surface to soften the blow. When the sun is behind Polyphemus, the planet's near face is also its night side, so no friendly planetshine fills the gap. The world falls into true pitch blackness, and cold pours in behind the lost light."
+        },
+        {
+          "type": "p",
+          "text": "And then Pandora answers in the way only Pandora can: the forests light up. The daily eclipse is one of the primary triggers of the moon's bioluminescent night-life, the environmental cue that wakes a whole secondary ecosystem of glowing plants and nocturnal predators every single afternoon. Be home by eclipse is partly a warning: when the lights below turn on, the things that hunt by that glow emerge."
+        },
+        {
+          "type": "p",
+          "text": "Yet here the errand-bell reveals an elegant orbital subtlety. The eclipse does not, in fact, occur on every single day of the year. It arrives every day for part of the year, and then, for another long stretch, it does not happen at all."
         },
         {
           "type": "figure",
           "figNo": "04",
-          "text": "[Figure 4] Why the eclipse keeps seasons. Pandora's tilted orbit means that for much of the year the moon rides above or below the planet's long shadow and the sun is never blocked , eclipse-free seasons. Only when the geometry lines up, twice a year, does the orbit thread the shadow on every pass: the daily-eclipse seasons. Umbra shadow cone: The massive shadow cylinder cast by Polyphemus into space opposite the primary star.. Orbiting above the umbra: Orbital inclination carries the moon above the shadow cone, yielding continuous daylight.. Threading the umbra: Twice per year, nodal alignment forces the moon directly through the deep shadow on every pass."
+          "text": "Why the eclipse keeps seasons. Pandora's tilted orbit means that for much of the year the moon rides cleanly above or below the planet's long shadow cylinder, leaving the sun unblocked during eclipse-free seasons. Only twice a year, when orbital nodes align with the shadow cone, does the orbit thread the darkness on every pass, creating the daily-eclipse seasons."
         },
         {
           "type": "p",
-          "text": "The reason is that tilt again. Because Pandora's orbit is canted relative to the line between Polyphemus and the sun, the planet's long cone of shadow does not always fall across the moon's path. For much of the year the orbit rides cleanly above the shadow, or cleanly below it, and Pandora sails around in unbroken sunlight , no eclipses at all, the long bright weeks the films show as ordinary day. But twice a year, as the geometry swings around, the orbit lines up edge-on with the shadow cone, and then Pandora threads straight through the dark on every single pass. Those are the eclipse seasons: stretches when the afternoon darkness returns day after day after day, before the angle drifts on and the sky clears again."
+          "text": "The reason is axial tilt once again. Because Pandora's orbit is canted relative to the line between Polyphemus and the primary sun, the planet's long cylindrical cone of shadow does not always fall across the moon's path. For much of the year, the orbit carries Pandora cleanly above or below the shadow, and the moon sails in unbroken sunlight for weeks on end. But twice a year, as the system progresses around the star, the orbit lines up edge-on with the shadow cone. Pandora then threads straight through the darkness on every single pass. Those are the eclipse seasons, stretches when afternoon totality returns day after day, before the angle drifts onward and the clear skies return."
         },
         {
           "type": "p",
-          "text": "This is not an exotic invention. It is precisely why we do not get an eclipse every month even though the Moon laps the Earth every month: the Moon's orbit is tilted about five degrees, so its shadow usually misses us above or below, and only during the twice-yearly \"eclipse seasons,\" when the orbit lines up with the Sun, do eclipses become possible. Pandora runs the same machinery with the numbers turned up , a bigger shadow, a steeper tilt, a closer orbit , and gets daily totality instead of rare glancing chance. Same geometry; wildly different sky."
+          "text": "If Pandora had zero orbital tilt, an eclipse would strike every single day of every year without fail. But with an axial tilt of twenty-five degrees, the daily eclipse season shrinks to roughly two-fifths of the year, flanked by long months of unbroken daylight."
+        },
+        {
+          "type": "p",
+          "text": "This is not an exotic theoretical invention. It is precisely why we do not experience a solar eclipse every month on Earth, even though the Moon circles us once a month. The Moon's orbit is tilted by about five degrees, so its shadow usually misses Earth above or below. Only during the twice-yearly eclipse seasons, when the orbital nodes align with the Sun, can eclipses occur. Pandora runs the exact same celestial machinery with the dials turned up: a much larger shadow, a steeper tilt, and a closer orbit, producing daily totality instead of rare glancing chance."
         }
       ]
     },
@@ -103,16 +167,28 @@
       "blocks": [
         {
           "type": "p",
-          "text": "I have been a little loose, on purpose, and it is time to pay the debt, because in the gap between two almost-identical ideas lives one of the most quietly useful distinctions in all of timekeeping. When I said Pandora's day equals one orbit, I meant its day relative to the stars , the time for the moon to turn once against the fixed background of the galaxy. Astronomers call that the sidereal day, and for a locked moon it is exactly the orbital period, by definition. But the day you actually live , sunrise to sunrise, the bright-and-dark cycle that the body runs on , is measured against the sun, not the stars, and that is a slightly different number called the synodic day."
+          "text": "I have been a little loose with terminology on purpose, and it is time to settle that debt. In the gap between two almost identical concepts lives one of the most quietly useful distinctions in all of timekeeping."
+        },
+        {
+          "type": "p",
+          "text": "When I said that Pandora's day equals one orbit, I meant its day measured relative to the distant stars, the time required for the moon to complete one full rotation against the fixed background of the galaxy. Astronomers call this the sidereal day, and for a tidally locked moon it is exactly equal to the orbital period by definition. But the day you actually live, from sunrise to sunrise, the light and dark cycle that the biological body runs on, is measured against the sun, not the stars. That is a slightly different value known as the synodic day."
         },
         {
           "type": "figure",
           "figNo": "05",
-          "text": "[Figure 5] The little extra. After Pandora turns once against the far stars (the sidereal day), the whole Polyphemus system has crept along its own orbit around the sun , so the moon must turn a touch further to bring the sun back overhead. That small surplus is the difference between the day measured by stars and the day measured by sunlight. Sidereal rotation: One complete 360-degree rotation of Pandora relative to the distant background stars.. Synodic alignment: Because Polyphemus has progressed along its orbit, Pandora must rotate extra degrees to realign with the sun.. Heliospheric center: Alpha Centauri A anchors the system orbit; the orbital advancement creates the day-length difference."
+          "text": "The small surplus. After Pandora turns once relative to the distant stars during its sidereal day, the entire Polyphemus system has crept forward along its own orbit around the sun. The moon must rotate slightly further to bring the sun back directly overhead. That small extra rotation is the precise difference between the day measured by the stars and the day measured by sunlight."
         },
         {
           "type": "p",
-          "text": "The two differ because the sun is not actually a fixed point , the whole Polyphemus system is slowly orbiting Alpha Centauri A. So in the time Pandora completes one turn relative to the distant stars, the sun has shifted a little, and the moon must rotate just a hair further to bring the sun back to the same place overhead. The day you live by is therefore a touch longer than the day the stars keep. Earth does this too: our sidereal day is about four minutes short of our twenty-four-hour solar day, and those four minutes a day are exactly why the constellations rise earlier each night and the night sky slowly turns through the year. For Pandora, with a slow stately year around its star, the gap between the two is small , minutes, not hours. But it is not zero, and a navigator or an ecologist who confused the two would slowly drift out of step with reality. Canon, for the record, never once distinguishes them; the films give one round number and leave the careful accounting to people like us."
+          "text": "The two days differ because the sun is not a stationary point in space; the entire Polyphemus system is slowly orbiting Alpha Centauri A. In the time it takes Pandora to complete one rotation relative to the distant stars, the sun has shifted slightly in the sky. The moon must rotate just a tiny bit further to bring the sun back to the exact same position overhead. The solar day you live by is therefore slightly longer than the sidereal day kept by the stars. Earth does the exact same thing: our sidereal day is about four minutes shorter than our twenty-four-hour solar day. Those four minutes every day are why constellations rise earlier each night and why the night sky slowly rotates throughout the year."
+        },
+        {
+          "type": "p",
+          "text": "For Pandora, with a slow, stately year around its primary star, the gap between the two is small, measured in minutes rather than hours. But it is not zero. A navigator or an ecologist who confused the two would slowly drift out of step with reality. Official canon never once makes this distinction, giving only a single round number and leaving the careful accounting to science."
+        },
+        {
+          "type": "p",
+          "text": "Over the course of one full trip around the star, that slight daily difference between the stars' clock and the sun's clock accumulates into exactly one full extra day per year, the identical gearing that robs four minutes from Earth each night."
         }
       ]
     },
@@ -122,12 +198,20 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Step back from Pandora for a moment, because the thing that makes its days so strange is not strange at all. It is the rule, not the exception, and our own solar system is full of it. Every large round moon orbiting every planet in our system is tidally locked to its world , all of them, without exception. Our Moon. The four big moons of Jupiter that Galileo found, Io and Europa and Ganymede and Callisto, each keeping one face to the giant. Saturn's Titan, Neptune's Triton. The reason is just time and proximity: a big moon sitting close to a massive planet feels enormous tides, and those tides act as a brake on any spin that does not match the orbit, dragging the moon into lock-step usually within a few tens of millions of years , an eyeblink against the age of a solar system. A world like Pandora, an Earth-sized moon hugging a Jupiter-sized planet, would have been locked almost as soon as it formed. Canon getting Pandora locked is not a liberty; it is very nearly an obligation. An unlocked moon in that position would be the surprise. The exception that proves the rule is Mercury, and it is worth a glance because it shows that \"locked\" is not the only stable answer. Mercury is not quite tidally locked to the Sun in the simple one-spin-per-orbit way. It is caught instead in a spin-orbit resonance of three turns for every two orbits , a 3:2 ratio rather than 1:1. It can sit there because its orbit is so lopsided that the Sun's tides get their strongest grip at the closest point of each pass, and that grip is happy to hold the planet in the 3:2 step rather than the 1:1. The lesson hiding in Mercury is a general one: tides do not always demand exactly one spin per orbit; they demand a simple whole-number relationship, and which one you land in depends on how oval the orbit is. Round orbits go to 1:1. Lopsided ones can settle elsewhere. Pandora, on its nearly circular path, takes the 1:1 , which is the only choice that gives it the locked, planet-fixed, day-equals-month sky the films show."
+          "text": "Step back from Pandora for a moment, because the mechanism that makes its days so strange is not strange at all. It is the rule rather than the exception, and our own solar system is filled with examples of it."
+        },
+        {
+          "type": "p",
+          "text": "Every large, round moon orbiting every planet in our solar system is tidally locked to its parent world, without exception. Our Moon is locked to Earth. The four large Galilean moons of Jupiter, Io, Europa, Ganymede, and Callisto, each keep one face permanently aimed at the gas giant. Saturn's Titan and Neptune's Triton do the exact same thing. The reason comes down to time and proximity. A massive moon close to a giant planet experiences immense gravitational tides. These tides act as an unrelenting brake on any rotation that does not match the orbital period, dragging the moon into synchronous lock usually within tens of millions of years, which is an eyeblink in cosmological time. A world like Pandora, an Earth-sized moon orbiting tightly around a Jupiter-sized planet, would have been tidally locked almost immediately after its formation. Canon establishing Pandora as locked is not an artistic liberty; it is an astronomical inevitability. An unlocked moon in that position would be the true anomaly."
+        },
+        {
+          "type": "p",
+          "text": "The exception that proves the rule is Mercury, and it is worth examining because it demonstrates that synchronous locking is not the only possible outcome. Mercury is not locked to the Sun in a simple one-to-one ratio. Instead, it is caught in a spin-orbit resonance of three rotations for every two orbits, a three to two ratio. Mercury can maintain this state because its orbit is highly eccentric. The Sun's gravitational tides exert their strongest grip at perihelion, the closest point in each pass, holding the planet in the three to two rhythm. The general lesson from Mercury is that tidal friction does not always demand exactly one spin per orbit; it demands a simple whole-number resonance. Circular orbits settle into a one to one lock, while eccentric orbits can land elsewhere. Pandora, traveling on a nearly circular path, locks into a one to one ratio, which is the only orbital configuration that produces the motionless planet, fused day and month, and predictable sky seen in the story."
         },
         {
           "type": "note",
           "kind": "whatthismeans",
-          "text": "What the locked sky is really telling you. The whole strange architecture of Pandoran time , the motionless planet, the day that is also a month, the libration wobble, the eclipse seasons , is not a pile of separate marvels. It is what one fact looks like from several angles: a big moon, close to a giant planet, dragged long ago into keeping one face inward. Once you grant that single fact, every piece follows by ordinary physics you can check against our own Moon and Jupiter's. That is the quiet power of orbital mechanics , a short list of rules that, run forward, dictate how time itself is felt on a world. Learn to read a sky for tidal locking and you can stand on any moon, real or invented, and tell what its day must be before anyone hands you a clock."
+          "text": "The entire architecture of Pandoran time, including the motionless planet, the day that equals a month, the libration wobble, and the eclipse seasons, is not a collection of separate miracles. It is what one single physical fact looks like from different perspectives: a massive moon orbiting close to a giant planet, tidally locked into keeping one face inward. Once that single premise is established, every other phenomenon follows through standard orbital mechanics that we can verify directly using our own Moon and Jupiter's satellites. Orbital mechanics provides a concise set of universal rules that dictate how time itself is experienced on any world."
         }
       ]
     },
@@ -137,24 +221,28 @@
       "blocks": [
         {
           "type": "p",
-          "text": "A day on Pandora, then, is one lap around Polyphemus. But a day is the smallest hand on a much larger instrument, and the bigger hands keep time by bigger orbits , a nested set of clocks stacked one inside the next. Above the day sits the year , and here is a thing worth saying plainly, because it is the most misunderstood fact about seasons anywhere. Pandora's seasons are not caused by it moving nearer to and farther from the sun. They are caused by its tilt. The whole Polyphemus system circles Alpha Centauri A once a \"year,\" and across that year Pandora's twenty-five-degree lean tips first one hemisphere and then the other toward the sun's direct light. The leaning hemisphere runs warm and bright; the other runs cool. That is summer and winter , and it is exactly how Earth does it, which is why our hemispheres have opposite seasons at the same instant and why January, when Earth is actually closest to the Sun, is deep winter in the north. Distance is a red herring. Tilt is the engine. Get that one idea straight and you understand the seasons of every tilted world there is."
-        },
-        {
-          "type": "data",
-          "text": "In undefined, undefined. In undefined, undefined. In undefined, undefined. In undefined, undefined"
+          "text": "A day on Pandora is one complete orbit around Polyphemus. But that day is merely the smallest hand on a much larger astronomical instrument. The larger hands keep time by larger orbits, creating a nested stack of orbital clocks nestled one inside the next."
         },
         {
           "type": "p",
-          "text": "And above the year sits the slowest hand of all, the one the films almost entirely forget: the second sun. Alpha Centauri A has a companion, the orange star B, and the two circle each other across roughly eighty years , close to a human lifetime. For long stretches of that cycle, star B rides the Pandoran night sky as a fierce orange point hundreds of times brighter than our full Moon, so the nights are never wholly black; for other stretches it shares the daytime sky, adding its own slow pulse of extra warmth. A Na'vi who lived a full life would watch the character of the nights themselves change , bright-night decades giving way to darker ones , on a rhythm too slow to be a season and too fast to be a geology. It is a clock you could only read by living a long time and remembering, which is perhaps why it belongs to the elders."
+          "text": "Above the day sits the year. Here is a fundamental principle that dispels the most widespread misconception about planetary seasons: Pandora's seasons are not caused by moving closer to or farther from the star. They are governed entirely by axial tilt. The entire Polyphemus system circles Alpha Centauri A once per stellar year. Across that orbit, Pandora's twenty-five-degree lean tips first one hemisphere and then the other toward the direct rays of the sun. The hemisphere tilted toward the star experiences summer with longer, warmer days, while the opposite hemisphere experiences winter. This is precisely how seasons work on Earth, which is why our northern and southern hemispheres experience opposite seasons simultaneously, and why January, when Earth is actually at its closest approach to the Sun, is midwinter in the north. Orbital distance is irrelevant here; axial tilt is the true engine of seasons."
         },
         {
           "type": "data",
-          "text": "The day is about 26 h. The eclipse season is twice a year. The two-sun cycle is about 80 years"
+          "text": "Consider the nested hierarchy of Pandoran time. The day lasts roughly twenty-six hours, defined by one orbit around Polyphemus where day and month are fused. The eclipse seasons recur twice per year whenever orbital tilt aligns the moon directly with the planet's shadow cone. The stellar year encompasses one complete orbit of the whole planetary system around Alpha Centauri A, where axial tilt generates summer and winter. And the binary cycle spans approximately eighty years as Alpha Centauri B circles its companion star, modulating night-time illumination across entire human generations."
+        },
+        {
+          "type": "p",
+          "text": "Above the stellar year sits the slowest clock of all, an astronomical rhythm that the films almost entirely overlook: the second sun. Alpha Centauri A has a companion, the bright orange star Alpha Centauri B. The two stars orbit their common center of mass roughly every eighty years, a duration comparable to a human lifetime. For decades at a time, star B blazes in the Pandoran night sky as a brilliant orange beacon hundreds of times brighter than our full Moon, ensuring that nights are never fully dark. In other decades, it shares the daytime sky, adding an extra pulse of warmth. A Na'vi living a full life would witness the fundamental nature of the night transform across their lifetime, with bright-night decades gradually giving way to deep dark decades. This is a generational sky-clock that can only be measured by memory."
+        },
+        {
+          "type": "data",
+          "text": "Contrasting these three temporal scales highlights their divergence. The day is a twenty-six-hour orbit where day and month become one. The eclipse seasons occur twice annually through tilt alignment. And the two-sun binary cycle unfolds over eighty years, reshaping night-time skies across a lifetime."
         },
         {
           "type": "figure",
           "figNo": "06",
-          "text": "[Figure 6] The slowest hand takes a lifetime to sweep. The same clearing can spend decades under an orange-white point bright enough to cast shadows, then decades in a far darker night as Alpha Centauri B moves around the binary. This is not a season; it is a sky changing at the pace of memory. Bright-binary decades: Centauri B provides continuous warm illumination during night periods for decades at periastron.. Constant landscape: Identical trees and fauna highlight that changes represent long-period binary orbital drift.. Dark-binary decades: At apoastron, Centauri B dims and shifts away, plunging nights into deep bioluminescent darkness.. Generational sky cycles: The about 80-year orbital period of Alpha Centauri AB spans a humanoid generation rather than a standard season."
+          "text": "The slowest clock takes a lifetime to sweep across the sky. The same clearing can spend decades under a brilliant orange-white companion star bright enough to cast distinct shadows at night, followed by decades in far darker nights lit solely by bioluminescence as Alpha Centauri B traverses its binary orbit. This is not a regular season; it is a celestial cycle changing at the pace of generational memory."
         }
       ]
     },
@@ -164,31 +252,39 @@
       "blocks": [
         {
           "type": "p",
-          "text": "A specimen is only honestly read if you read the parts that do not add up, and Pandora's clock , sound in its big shape , has a few teeth that grind when you look closely. The largest is the twenty-six-hour day itself. We have said a locked moon's day equals its orbit, so a twenty-six-hour day means Pandora laps Polyphemus every twenty-six hours , which is fast, and fast means close. To circle a Jupiter-mass planet in roughly a day, an Earth-sized moon would have to hug it about as tightly as Io hugs Jupiter, and at that range two things go wrong at once. First, the moon skirts the Roche limit, the distance inside which a planet's tides overpower a large moon's own gravity and begin to tear it apart. Second, the very tidal heating that makes such a moon geologically lively would, this close, run away , flexing the moon so hard that its interior melts and its surface turns to the sulphurous volcanic hell that Io actually is. Run the orbital mechanics honestly and a safe orbit for a habitable Earth-sized moon around a gas giant takes not a day but several days, even weeks , which would give Pandora a far longer day and far rarer eclipses than the films show. The brisk twenty-six-hour cycle is a gift to the camera and the human body clock, not a number the physics will sign off on."
+          "text": "A scientific specimen is only honestly analyzed if you examine the parts that do not add up. Pandora's astronomical clock, while remarkably sound in its broad design, has a few teeth that grind under close inspection."
+        },
+        {
+          "type": "p",
+          "text": "The largest issue is the twenty-six-hour day itself. We established that a tidally locked moon's day equals its orbital period. A twenty-six-hour day means that Pandora laps Polyphemus every twenty-six hours. That is extremely fast, and in orbital mechanics, fast means dangerously close. To orbit a Jupiter-mass planet in roughly one day, an Earth-sized moon would have to orbit at roughly the same tight distance as Io orbits Jupiter. At that range, two severe physical problems arise simultaneously. First, the moon skirts the Roche limit, the boundary inside which planetary tides overpower the moon's self-gravity and begin to tear it apart. Second, the tidal heating that drives geological activity would run out of control at this close distance, flexing the interior so violently that the mantle melts completely, turning the surface into a volcanic inferno like Io. An honest orbital calculation shows that a safe, stable orbit for a habitable Earth-sized moon around a gas giant requires an orbital period of several days or even weeks. That would give Pandora a much longer day and far rarer eclipses. The twenty-six-hour day is a dramatic convenience for human storytelling and circadian biology, not a number supported by orbital physics."
         },
         {
           "type": "figure",
           "figNo": "07",
-          "text": "[Figure 7] A short clock demands a close orbit. Put an Earth-sized moon near enough to lap a Jupiter-sized planet in twenty-six hours and the tides stretch and cook it; move it far enough out to stay round, wet, and habitable, and the day must lengthen with the orbit. Tidal furnace & tear: Inside the critical Roche proximity, tidal forces stretch the moon into an erupting molten ellipsoid.. Roche mass transfer: Extreme gravitational shear pulls atmospheric and crustal material directly into the gas giant.. Stable habitable orbit: At a safer orbital radius, tidal dissipation stabilizes, preserving spherical hydrostatic balance and liquid oceans."
+          "text": "A short day demands an dangerously close orbit. If an Earth-sized moon is placed close enough to circle a Jupiter-sized gas giant in twenty-six hours, extreme gravitational tides will stretch and overheat its interior into a volcanic state. Moving the moon outward to an orbit that allows it to remain spherical, ocean-bearing, and habitable inevitably lengthens its orbital period and its day."
         },
         {
           "type": "note",
           "kind": "callout",
-          "text": "The far side that shouldn't see the planet. The canon trips on its own geometry in one memorable place. A locked moon shows one hemisphere to its planet , which means the opposite hemisphere, the true far side, should never see Polyphemus at all; the bulk of the moon is always in the way. Yet the game set on Pandora's \"Western Frontier,\" explicitly placed on the far side, shows Polyphemus hanging in its sky regardless. Libration can rescue a thin band near the edge of the near side, where the planet's nodding carries it just above and below the horizon , but it cannot haul the whole planet into view on the genuine far side. That sky is simply painted wrong."
+          "text": "The fiction stumbles over its own geometry in one notable place. A tidally locked moon always turns one hemisphere toward its host planet, which means the opposite hemisphere, the true far side, should never see Polyphemus at all because the solid body of the moon blocks the view. Yet stories and games set on Pandora's Western Frontier, explicitly situated on the far side, depict Polyphemus hanging prominently in the sky. While libration allows a thin border region near the limb to see the planet dip slightly above and below the horizon, it cannot bring the massive planet into view from the deep far side. That sky is simply an astronomical error in world-building."
         },
         {
           "type": "p",
-          "text": "And there is the quiet omission we have flagged before: the films almost never show star B in the sky at all, though the real Alpha Centauri guarantees it would blaze there for decades at a stretch, bright enough to throw orange shadows and rob the nights of their dark. The most important clock above the year is the one the camera leaves out of frame. None of this breaks the world. It sharpens it. The deep logic is right , a locked moon, a fused day and month, eclipse seasons born of tilt, a nested stack of orbital clocks , and the cheats are exactly where storytelling always cheats: on the convenient day length and the inconvenient extra sun. The bones are real physics. Only the dramatic round numbers are negotiable."
+          "text": "There is also the quiet omission we noted earlier: the films rarely show the companion star Alpha Centauri B, even though real astrophysics dictates it would shine brightly in the sky for decades at a time, casting orange shadows and banishing true night. The most prominent multi-decade clock is left out of the camera frame."
+        },
+        {
+          "type": "p",
+          "text": "None of these flaws breaks the believability of the world. Instead, identifying them sharpens our understanding. The core architectural framework is entirely correct: a tidally locked moon, a fused day and month, tilt-driven eclipse seasons, and a nested stack of orbital rhythms. The shortcuts occur precisely where narrative art requires convenience: a familiar day length and the omission of an inconvenient second sun. The structural bones are authentic physics, while the specific round numbers are artistic compromises."
         },
         {
           "type": "note",
           "kind": "confidence",
-          "text": "This chapter's breakdown: twenty-four percent canon, thirteen percent inference, eight percent speculation, fifty-five percent real science."
+          "text": "Looking at the confidence meter for this chapter: real science accounts for fifty-five percent, based on well-established principles of tidal locking, orbital resonances, and binary star dynamics. Official canon contributes twenty-four percent, covering stated properties such as the twenty-six-hour day, axial tilt, and planetary positions. Astronomical inference provides thirteen percent, deducing eclipse mechanics and libration effects. Speculation accounts for the remaining eight percent, addressing unexplained world-building contradictions."
         },
         {
           "type": "note",
           "kind": "openquestions",
-          "text": "What stays open. Can Pandora really have a 26-hour day while locked to Polyphemus? Only uneasily. How often do the eclipses actually come? Canon and community estimates disagree , anywhere from a long totality once per day during eclipse seasons to far less frequent. Why is the second sun, Alpha Centauri B, almost never in the sky? Unexplained. Is Pandora's day measured against the sun or the stars? Canon never says."
+          "text": "Four open questions remain regarding Pandoran time. First: Can Pandora realistically sustain a twenty-six-hour day while locked to Polyphemus? Only under severe strain, because a twenty-six-hour orbit places an Earth-mass moon perilously close to runaway tidal melting near the Roche limit; a truly stable habitable orbit would require several days or weeks. Second: How frequently do eclipses actually occur? Official sources and fan calculations conflict, ranging from daily total eclipses during eclipse seasons to much sparser occurrences, though the tilt-driven seasonal mechanism itself is mathematically sound. Third: Why is the second sun, Alpha Centauri B, absent from the sky in visual media? This is an artistic omission rather than a physical one, as the real binary system guarantees star B would be a brilliant celestial feature for decades. Fourth: Is Pandora's day measured against the stars or the sun? Official material never distinguishes the sidereal day from the synodic day; while the difference is only a few minutes per day in a long stellar year, the astronomical distinction is real and unaddressed."
         }
       ]
     },
@@ -198,7 +294,15 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Go back to the child running home across a clearing as the light begins to go long and amber, the great planet motionless overhead exactly where it has hung all day, the small sun creeping toward its rust-coloured edge. What that child is obeying, without naming it, is orbital mechanics. The planet hangs still because Pandora keeps one face turned toward it, dragged into that posture long ago by tides it cannot feel. The day comes and goes anyway, because the sun is a different master from the planet and Pandora's orbit carries every field and forest through its light and out the other side , one lap, one day, one month, all the same turning. The eclipse arrives on schedule because today the tilted orbit happens to thread the planet's shadow, the way it will each afternoon until the angle drifts and the bright weeks return. And the forests will answer the dark by lighting themselves, on the same cue they have answered for longer than the Na'vi have had a word for it. It is the most ordinary errand in the world , be home by eclipse , and it is set, precisely, by the wheeling of a moon around a giant around a sun. The marvel of Pandora's sky was never that it breaks our rules. It is that a single rule we already know, run forward without mercy, builds a clock grand enough to tell a child when to come home."
+          "text": "Go back to the child running home across a clearing as the afternoon light begins to stretch long and amber, the great planet hanging motionless overhead exactly where it has remained all day, and the small sun creeping slowly toward its rust-coloured edge."
+        },
+        {
+          "type": "p",
+          "text": "What that child is obeying, without needing to name it, is pure orbital mechanics. The planet hangs motionless because Pandora keeps one face turned perpetually toward it, held in that ancient posture by gravitational tides. The day still comes and goes because the primary sun is an independent master, and Pandora's orbit carries every forest and clearing through the sunlight and out the other side. One orbit, one day, and one month are all the exact same celestial rhythm. The eclipse arrives on schedule because today the tilted orbit happens to thread straight through the planet's shadow cylinder, exactly as it will each afternoon until the seasonal geometry drifts and unbroken weeks of sunlight return. And the surrounding forests answer the sudden darkness by illuminating themselves, responding to the identical environmental cue they have followed since long before the Na'vi had words to describe it."
+        },
+        {
+          "type": "p",
+          "text": "It is the most ordinary daily instruction in the world: be home by eclipse. That entire routine is dictated, with mathematical precision, by the motion of a moon around a gas giant around a star. The wonder of Pandora's sky was never that it breaks our laws of physics. It is that a single universal law, operating without exception, constructs a celestial clock grand enough to guide a child safely home."
         }
       ]
     }
