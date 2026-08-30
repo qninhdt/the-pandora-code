@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { List, Pause, Play, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useId, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { TableOfContentsList, type TocHeading } from "./table-of-contents-list";
 
 interface MobileReaderDockProps {
@@ -62,52 +63,47 @@ export function MobileReaderDock({ headings, active, label }: MobileReaderDockPr
     };
   }, [outlineOpen]);
 
+  const outlineLayer =
+    hasOutline && outlineOpen && typeof document !== "undefined"
+      ? createPortal(
+          <>
+            <button
+              type="button"
+              aria-label="Close table of contents"
+              onClick={() => setOutlineOpen(false)}
+              className="fixed inset-0 z-[100] bg-void/60 backdrop-blur-sm"
+            />
+            <dialog
+              ref={sheetRef}
+              id={sheetId}
+              open
+              aria-modal="true"
+              aria-labelledby={labelId}
+              className="fixed inset-x-4 bottom-24 z-[110] m-0 mx-auto max-w-md"
+            >
+              <div className="max-h-[55vh] overflow-y-auto overscroll-contain rounded-2xl border border-cyan/30 bg-void/95 p-5 backdrop-blur-xl">
+                <p
+                  id={labelId}
+                  className="mb-3 font-sans text-[0.6875rem] text-cyan uppercase tracking-wider"
+                >
+                  {label}
+                </p>
+                <TableOfContentsList
+                  headings={headings}
+                  active={active}
+                  onNavigate={() => setOutlineOpen(false)}
+                  ariaLabel={label}
+                />
+              </div>
+            </dialog>
+          </>,
+          document.body,
+        )
+      : null;
+
   return (
     <div className="lg:hidden" data-mobile-reader-dock>
-      {hasOutline ? (
-        <>
-          <button
-            type="button"
-            aria-hidden={!outlineOpen}
-            tabIndex={-1}
-            onClick={() => setOutlineOpen(false)}
-            className={cn(
-              "fixed inset-0 z-50 bg-void/60 backdrop-blur-sm transition-opacity duration-300",
-              outlineOpen ? "opacity-100" : "pointer-events-none opacity-0",
-            )}
-          />
-          <dialog
-            ref={sheetRef}
-            id={sheetId}
-            open={outlineOpen}
-            aria-modal={outlineOpen ? "true" : undefined}
-            aria-hidden={!outlineOpen}
-            inert={!outlineOpen}
-            aria-labelledby={labelId}
-            className={cn(
-              "fixed inset-x-4 bottom-24 z-[60] m-0 mx-auto max-w-md transition-all duration-300 ease-out",
-              outlineOpen
-                ? "translate-y-0 opacity-100"
-                : "pointer-events-none translate-y-3 opacity-0",
-            )}
-          >
-            <div className="max-h-[55vh] overflow-y-auto overscroll-contain rounded-2xl border border-cyan/30 bg-void/95 p-5 backdrop-blur-xl">
-              <p
-                id={labelId}
-                className="mb-3 font-sans text-[0.6875rem] text-cyan uppercase tracking-wider"
-              >
-                {label}
-              </p>
-              <TableOfContentsList
-                headings={headings}
-                active={active}
-                onNavigate={() => setOutlineOpen(false)}
-                ariaLabel={label}
-              />
-            </div>
-          </dialog>
-        </>
-      ) : null}
+      {outlineLayer}
 
       <div className="fixed bottom-[calc(1rem+env(safe-area-inset-bottom))] left-1/2 z-40 flex -translate-x-1/2 items-center gap-1 rounded-full border border-cyan/35 bg-void/92 p-1.5 text-cyan shadow-2xl backdrop-blur-xl print:hidden">
         {hasOutline ? (

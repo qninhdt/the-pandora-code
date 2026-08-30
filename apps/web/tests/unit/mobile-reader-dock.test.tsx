@@ -29,7 +29,9 @@ describe("mobile reader dock", () => {
     expect(outline.parentElement).toBe(settings.parentElement?.parentElement);
 
     fireEvent.click(outline);
-    expect(screen.getByRole("dialog")).toHaveClass("z-[60]");
+    const dialog = screen.getByRole("dialog");
+    expect(dialog).toHaveClass("z-[110]");
+    expect(dialog.parentElement).toBe(document.body);
   });
 
   it("adds play to the same dock when the chapter has audio", () => {
