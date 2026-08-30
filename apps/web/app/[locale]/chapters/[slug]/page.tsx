@@ -173,12 +173,7 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
 
   return (
     <>
-      <AudioSectionSync
-        chapterSlug={slug}
-        chapterLocale={loc}
-        headings={headings}
-        track={chapterAudio}
-      />
+      <AudioSectionSync chapterSlug={slug} chapterLocale={loc} track={chapterAudio} />
       <div className="relative">
         <JsonLd data={[articleSchema, breadcrumbSchema]} />
         {backgroundImage && <ChapterBackground src={backgroundImage} />}

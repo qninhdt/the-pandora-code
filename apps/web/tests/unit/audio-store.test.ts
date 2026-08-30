@@ -11,7 +11,6 @@ import {
   resetAudioState,
   sectionIndexAt,
   seek,
-  setAudioFollowReading,
   setPlaybackRate,
   setVolume,
   skipSection,
@@ -124,9 +123,7 @@ describe("audio store", () => {
     const { result, unmount } = renderHook(() => useAudioState());
     act(() => load("sample", "en", track));
     act(() => play());
-    act(() => setAudioFollowReading(true));
-
-    expect(result.current).toMatchObject({ isPlaying: true, followReading: true });
+    expect(result.current).toMatchObject({ isPlaying: true });
     unmount();
   });
 });

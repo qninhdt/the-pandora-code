@@ -18,24 +18,42 @@ import { useState } from "react";
  * off the viewport in all three. Radix also portals the panel out of the fixed
  * trigger, so no ancestor can clip it.
  */
-export function ReaderSettingsMenu({ className }: { className?: string }) {
+interface ReaderSettingsMenuProps {
+  className?: string;
+  variant?: "floating" | "dock";
+}
+
+export function ReaderSettingsMenu({ className, variant = "floating" }: ReaderSettingsMenuProps) {
   const t = useTranslations("reader");
   const [open, setOpen] = useState(false);
+  const dock = variant === "dock";
 
   return (
-    <div className={cn("fixed bottom-5 right-5 z-40 print:hidden", className)}>
+    <div
+      data-global-reader-settings={dock ? undefined : ""}
+      className={cn(dock ? "relative" : "fixed right-5 bottom-5 z-40 print:hidden", className)}
+    >
       <PopoverPrimitive.Root open={open} onOpenChange={setOpen}>
         <PopoverPrimitive.Trigger
           aria-label={t("title")}
-          className="grid size-12 place-items-center rounded-full border border-cyan/50 bg-void/85 text-cyan backdrop-blur-xl transition-colors hover:bg-cyan/10"
-          style={{ boxShadow: "0 8px 32px -8px color-mix(in oklab, var(--cyan) 60%, transparent)" }}
+          className={cn(
+            "grid place-items-center rounded-full text-cyan transition-colors hover:bg-cyan/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/50",
+            dock ? "size-11" : "size-12 border border-cyan/50 bg-void/85 backdrop-blur-xl",
+          )}
+          style={
+            dock
+              ? undefined
+              : {
+                  boxShadow: "0 8px 32px -8px color-mix(in oklab, var(--cyan) 60%, transparent)",
+                }
+          }
         >
           {open ? <X size={20} aria-hidden /> : <Type size={20} aria-hidden />}
         </PopoverPrimitive.Trigger>
         <PopoverPrimitive.Portal>
           <PopoverPrimitive.Content
             side="top"
-            align="end"
+            align={dock ? "center" : "end"}
             sideOffset={12}
             collisionPadding={12}
             className={cn(

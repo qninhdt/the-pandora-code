@@ -10,7 +10,6 @@ import {
   sectionIndexAt,
   seekAudio,
   setAudioDuration,
-  setAudioFollowReading,
   setAudioPlaybackRate,
   skipAudioSection,
   useAudioState,
@@ -168,13 +167,7 @@ export function AudioPlayer() {
       : null;
 
   return (
-    <div
-      // The bottom-left ToC and bottom-right settings buttons own the bottom row
-      // (bottom-5, 3rem tall), so on narrow screens the player sits in its own
-      // row above them; from `sm` it becomes a centered pill on that same row,
-      // inset horizontally to clear both buttons.
-      className="fixed inset-x-3 bottom-[calc(4.75rem+env(safe-area-inset-bottom))] z-40 print:hidden sm:inset-x-0 sm:bottom-5 sm:flex sm:justify-center sm:px-20"
-    >
+    <div className="fixed inset-x-3 bottom-[calc(5.25rem+env(safe-area-inset-bottom))] z-40 print:hidden lg:inset-x-0 lg:bottom-5 lg:flex lg:justify-center lg:px-20">
       {/* biome-ignore lint/a11y/useSemanticElements: A group of media controls is not a native element; role/keyboard semantics are provided explicitly. */}
       <div
         role="group"
@@ -183,7 +176,7 @@ export function AudioPlayer() {
         aria-label={t("audio.player")}
         aria-keyshortcuts="Space ArrowLeft ArrowRight [ ] Escape 1 2 3 4 5"
         onKeyDown={handleKeyDown}
-        className="relative flex w-full flex-wrap items-center gap-x-2 gap-y-1 rounded-2xl border border-border bg-void/90 px-2.5 py-2 text-foreground shadow-2xl backdrop-blur-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/50 sm:w-[min(46rem,100%)] sm:flex-nowrap sm:rounded-full sm:px-3"
+        className="relative grid w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-x-2 gap-y-2 rounded-2xl border border-border bg-void/94 px-3 py-2.5 text-foreground shadow-2xl backdrop-blur-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/50 lg:flex lg:w-[min(56rem,100%)] lg:flex-nowrap lg:rounded-full lg:px-3 lg:py-2"
         style={{ boxShadow: "0 12px 40px -16px color-mix(in oklab, var(--cyan) 55%, transparent)" }}
       >
         {/* The chapter transcript is the caption surface for this hidden media element. */}
@@ -203,10 +196,8 @@ export function AudioPlayer() {
           onError={announceError}
         />
 
-        {/* Transport. Order utilities let one DOM order serve both layouts:
-            mobile wraps to [transport | label | close] then the scrubber row,
-            while `sm` puts the scrubber before the close button in one row. */}
-        <div className="order-1 flex shrink-0 items-center gap-1.5 sm:gap-2">
+        {/* Mobile transport lives in the shared reader dock below this panel. */}
+        <div className="hidden shrink-0 items-center gap-2 lg:flex">
           <button
             type="button"
             aria-label={audio.isPlaying ? t("audio.pause") : t("audio.play")}
@@ -225,7 +216,7 @@ export function AudioPlayer() {
             aria-label={t("audio.prevSection")}
             title={t("audio.prevSection")}
             onClick={() => skipAudioSection(-1)}
-            className="hidden size-8 shrink-0 place-items-center rounded-full text-muted transition-colors hover:bg-surface hover:text-cyan focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/50 sm:grid"
+            className="grid size-8 shrink-0 place-items-center rounded-full text-muted transition-colors hover:bg-surface hover:text-cyan focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/50"
           >
             <SkipBack size={15} aria-hidden />
           </button>
@@ -234,7 +225,7 @@ export function AudioPlayer() {
             aria-label={t("audio.nextSection")}
             title={t("audio.nextSection")}
             onClick={() => skipAudioSection(1)}
-            className="hidden size-8 shrink-0 place-items-center rounded-full text-muted transition-colors hover:bg-surface hover:text-cyan focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/50 sm:grid"
+            className="grid size-8 shrink-0 place-items-center rounded-full text-muted transition-colors hover:bg-surface hover:text-cyan focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/50"
           >
             <SkipForward size={15} aria-hidden />
           </button>
@@ -242,14 +233,14 @@ export function AudioPlayer() {
 
         {/* Fixed-basis label: the section title changes while scrubbing, so it
             gets a reserved width and truncates instead of resizing the pill. */}
-        <p className="order-2 min-w-0 flex-1 truncate font-sans text-xs text-foreground/85 sm:w-44 sm:flex-none">
+        <p className="min-w-0 truncate font-sans text-xs text-foreground/85 lg:w-36 lg:flex-none">
           {sectionPosition ? (
             <span className="mr-1.5 font-mono text-[0.65rem] text-subtle">{sectionPosition}</span>
           ) : null}
           {label}
         </p>
 
-        <div className="order-4 flex w-full min-w-0 items-center gap-2 sm:order-5 sm:w-auto sm:flex-1">
+        <div className="col-span-2 row-start-2 flex w-full min-w-0 items-center gap-2 lg:col-auto lg:row-auto lg:w-auto lg:flex-1">
           <AudioScrubber
             duration={audio.duration}
             currentTime={audio.currentTime}
@@ -258,7 +249,7 @@ export function AudioPlayer() {
             onSeek={seekAudio}
             ariaLabel={t("audio.currentTime")}
             valueText={timeLabel}
-            className="sm:min-w-32"
+            className="min-w-0 flex-1 lg:min-w-40"
           />
           <span className="shrink-0 font-mono text-[0.65rem] tabular-nums text-muted" aria-hidden>
             {timeLabel}
@@ -281,12 +272,12 @@ export function AudioPlayer() {
               align="end"
               sideOffset={10}
               collisionPadding={12}
-              className="w-52 border-border bg-void/97 p-3"
+              className="w-72 max-w-[calc(100vw-1.5rem)] border-border bg-void/97 p-3"
             >
               <p className="mb-2 font-sans text-[0.65rem] uppercase tracking-wider text-subtle">
                 {t("audio.speed")}
               </p>
-              <fieldset className="grid grid-cols-5 gap-1">
+              <fieldset className="grid grid-cols-5 gap-1.5">
                 <legend className="sr-only">{t("audio.speed")}</legend>
                 {AUDIO_PLAYBACK_RATES.map((rate) => (
                   <button
@@ -295,7 +286,7 @@ export function AudioPlayer() {
                     aria-pressed={audio.playbackRate === rate}
                     onClick={() => setAudioPlaybackRate(rate)}
                     className={cn(
-                      "rounded-md px-1 py-1.5 font-mono text-xs transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/50",
+                      "rounded-md px-2 py-1.5 font-mono text-xs whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/50",
                       audio.playbackRate === rate
                         ? "bg-cyan text-void"
                         : "text-muted hover:bg-surface hover:text-foreground",
@@ -305,34 +296,16 @@ export function AudioPlayer() {
                   </button>
                 ))}
               </fieldset>
-              <button
-                type="button"
-                role="switch"
-                aria-checked={audio.followReading}
-                onClick={() => setAudioFollowReading(!audio.followReading)}
-                className="mt-3 flex w-full items-center justify-between border-t border-border pt-3 text-left font-sans text-xs text-muted transition-colors hover:text-foreground"
-              >
-                <span>{t("audio.followReading")}</span>
-                <span
-                  className={cn(
-                    "size-2 rounded-full",
-                    audio.followReading ? "bg-cyan" : "bg-subtle",
-                  )}
-                  aria-hidden
-                />
-              </button>
             </PopoverContent>
           </Popover>
         </div>
 
-        {/* Close is the last control in both layouts: end of the transport row on
-            mobile (order 3, before the wrapped scrubber), end of the pill on `sm`. */}
         <button
           type="button"
           aria-label={t("audio.close")}
           title={t("audio.close")}
           onClick={() => closeAudio()}
-          className="order-3 grid size-8 shrink-0 place-items-center rounded-full text-subtle transition-colors hover:bg-surface hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/50 sm:order-6"
+          className="col-start-2 row-start-1 grid size-8 shrink-0 place-items-center rounded-full text-subtle transition-colors hover:bg-surface hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/50 lg:col-auto lg:row-auto"
         >
           <X size={15} aria-hidden />
         </button>

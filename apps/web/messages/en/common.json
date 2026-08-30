@@ -14,7 +14,7 @@
     "offline": "Offline library"
   },
   "offline": {
-    "download": "Download for offline",
+    "download": "Download",
     "downloading": "Downloading",
     "cancel": "Cancel download",
     "ready": "Available offline",
@@ -66,7 +66,6 @@
     "currentTime": "Current time",
     "duration": "Duration",
     "intro": "Intro",
-    "followReading": "Follow reading",
     "unavailable": "Audio unavailable for this section",
     "player": "Chapter player",
     "close": "Close player",

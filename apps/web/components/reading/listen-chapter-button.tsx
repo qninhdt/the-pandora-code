@@ -24,7 +24,7 @@ export function ListenChapterButton() {
       onClick={() => openAudio()}
       aria-label={t("audio.listenChapter")}
       title={t("audio.listenChapter")}
-      className="inline-flex items-center gap-1.5 rounded-full border border-cyan/45 bg-void/60 px-2.5 py-1.5 font-sans text-xs text-cyan transition-colors hover:border-cyan hover:bg-cyan/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/50"
+      className="hidden items-center gap-1.5 rounded-full border border-cyan/45 bg-void/60 px-2.5 py-1.5 font-sans text-xs text-cyan transition-colors hover:border-cyan hover:bg-cyan/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/50 lg:inline-flex"
     >
       <Headphones size={14} aria-hidden />
       {audio.duration > 0 ? (

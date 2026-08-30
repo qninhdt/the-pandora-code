@@ -30,7 +30,6 @@ export interface AudioPlayerState {
   isOpen: boolean;
   playbackRate: AudioPlaybackRate;
   volume: number;
-  followReading: boolean;
 }
 
 const EMPTY_AUDIO_STATE: AudioPlayerState = {
@@ -44,7 +43,6 @@ const EMPTY_AUDIO_STATE: AudioPlayerState = {
   isOpen: false,
   playbackRate: 1,
   volume: 1,
-  followReading: false,
 };
 
 let activeTrack: ChapterAudio | null = null;
@@ -141,7 +139,6 @@ const audioStore = createReaderStore<AudioPlayerState>({
       duration: sameChapter ? current.duration : persisted.duration,
       isPlaying: sameChapter ? current.isPlaying : false,
       isOpen: sameChapter ? current.isOpen : false,
-      followReading: current.followReading,
     };
   },
   equals: (left, right) =>
@@ -154,8 +151,7 @@ const audioStore = createReaderStore<AudioPlayerState>({
     left.isPlaying === right.isPlaying &&
     left.isOpen === right.isOpen &&
     left.playbackRate === right.playbackRate &&
-    left.volume === right.volume &&
-    left.followReading === right.followReading,
+    left.volume === right.volume,
 });
 
 export function getAudioState(): AudioPlayerState {
@@ -189,7 +185,7 @@ export function loadAudio(chapterSlug: string, chapterLocale: Locale, track: Cha
   activeChapterKey = track ? chapterKey(chapterSlug, chapterLocale) : null;
 
   if (!track) {
-    audioStore.update({ ...EMPTY_AUDIO_STATE, followReading: current.followReading });
+    audioStore.update(EMPTY_AUDIO_STATE);
     return;
   }
 
@@ -212,7 +208,7 @@ export function clearAudio() {
   activeChapterKey = null;
   const current = getAudioState();
   if (!current.chapterSlug && !current.audioUrl && !current.isOpen) return;
-  audioStore.update({ ...EMPTY_AUDIO_STATE, followReading: current.followReading });
+  audioStore.update(EMPTY_AUDIO_STATE);
 }
 
 /** Reveal the player. Opening is the reader's explicit request to listen. */
@@ -285,11 +281,6 @@ export function setAudioPlaybackRate(rate: number) {
 export function setAudioVolume(volume: number) {
   const current = getAudioState();
   audioStore.update({ ...current, volume: clampNumber(volume, 0, 1, current.volume) });
-}
-
-export function setAudioFollowReading(followReading: boolean) {
-  const current = getAudioState();
-  audioStore.update({ ...current, followReading });
 }
 
 export function resetAudioState() {

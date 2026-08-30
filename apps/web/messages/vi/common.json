@@ -14,7 +14,7 @@
     "offline": "Thư viện offline"
   },
   "offline": {
-    "download": "Tải để đọc offline",
+    "download": "Tải",
     "downloading": "Đang tải",
     "cancel": "Huỷ tải",
     "ready": "Đã lưu offline",
@@ -66,7 +66,6 @@
     "currentTime": "Thời điểm hiện tại",
     "duration": "Thời lượng",
     "intro": "Mở đầu",
-    "followReading": "Theo dõi khi đọc",
     "unavailable": "Âm thanh không khả dụng cho phần này",
     "player": "Trình phát chương",
     "close": "Đóng trình phát",
