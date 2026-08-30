@@ -2,7 +2,7 @@
 
 import type { AudioSection } from "@/lib/content/loader/audio-loader";
 import { cn } from "@/lib/utils";
-import { type KeyboardEvent, type PointerEvent, useCallback, useRef } from "react";
+import { type KeyboardEvent, type PointerEvent, useCallback, useRef, useState } from "react";
 
 interface AudioScrubberProps {
   duration: number;
@@ -33,30 +33,41 @@ export function AudioScrubber({
   className,
 }: AudioScrubberProps) {
   const trackRef = useRef<HTMLDivElement>(null);
+  const [previewTime, setPreviewTime] = useState<number | null>(null);
   const span = Math.max(duration, 1);
-  const progress = Math.min(Math.max(currentTime / span, 0), 1);
+  const displayedTime = previewTime ?? currentTime;
+  const progress = Math.min(Math.max(displayedTime / span, 0), 1);
 
-  const seekToClientX = useCallback(
+  const timeAtClientX = useCallback(
     (clientX: number) => {
       const element = trackRef.current;
-      if (!element) return;
+      if (!element) return null;
       const bounds = element.getBoundingClientRect();
-      if (bounds.width <= 0) return;
+      if (bounds.width <= 0) return null;
       const ratio = (clientX - bounds.left) / bounds.width;
-      onSeek(Math.min(Math.max(ratio, 0), 1) * span);
+      return Math.min(Math.max(ratio, 0), 1) * span;
     },
-    [onSeek, span],
+    [span],
   );
 
   // Pointer capture keeps the drag alive when the cursor leaves the thin bar.
+  // Dragging previews locally; committing each move restarts the audio Range
+  // request repeatedly and floods the browser's network queue.
   const handlePointerDown = (event: PointerEvent<HTMLDivElement>) => {
     event.currentTarget.setPointerCapture(event.pointerId);
-    seekToClientX(event.clientX);
+    setPreviewTime(timeAtClientX(event.clientX));
   };
 
   const handlePointerMove = (event: PointerEvent<HTMLDivElement>) => {
     if (!event.currentTarget.hasPointerCapture(event.pointerId)) return;
-    seekToClientX(event.clientX);
+    setPreviewTime(timeAtClientX(event.clientX));
+  };
+
+  const handlePointerUp = (event: PointerEvent<HTMLDivElement>) => {
+    if (!event.currentTarget.hasPointerCapture(event.pointerId)) return;
+    const nextTime = timeAtClientX(event.clientX);
+    setPreviewTime(null);
+    if (nextTime !== null) onSeek(nextTime);
   };
 
   const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
@@ -81,10 +92,12 @@ export function AudioScrubber({
       aria-label={ariaLabel}
       aria-valuemin={0}
       aria-valuemax={Math.round(span)}
-      aria-valuenow={Math.round(currentTime)}
+      aria-valuenow={Math.round(displayedTime)}
       aria-valuetext={valueText}
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
+      onPointerUp={handlePointerUp}
+      onPointerCancel={() => setPreviewTime(null)}
       onKeyDown={handleKeyDown}
       className={cn(
         "group relative h-6 min-w-16 flex-1 cursor-pointer touch-none select-none focus-visible:outline-none",
