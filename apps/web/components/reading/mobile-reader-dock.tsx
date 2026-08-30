@@ -109,12 +109,7 @@ export function MobileReaderDock({ headings, active, label }: MobileReaderDockPr
         </>
       ) : null}
 
-      <div
-        className={cn(
-          "fixed bottom-[calc(1rem+env(safe-area-inset-bottom))] left-1/2 flex -translate-x-1/2 items-center gap-1 rounded-full border border-cyan/35 bg-void/92 p-1.5 text-cyan shadow-2xl backdrop-blur-xl print:hidden",
-          outlineOpen ? "z-[60]" : "z-40",
-        )}
-      >
+      <div className="fixed bottom-[calc(1rem+env(safe-area-inset-bottom))] left-1/2 z-40 flex -translate-x-1/2 items-center gap-1 rounded-full border border-cyan/35 bg-void/92 p-1.5 text-cyan shadow-2xl backdrop-blur-xl print:hidden">
         {hasOutline ? (
           <button
             type="button"
