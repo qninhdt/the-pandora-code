@@ -5,11 +5,6 @@
 /.agent/
 /scripts/
 
-# Figure + glossary images are optimized to .webp and referenced as such.
-# Keep the .png sources in the repo, but don't ship them to Vercel — they are
-# what bloated the deploy ("Deploying outputs" timeout). Chapter covers
-# (fig-00) and backgrounds (fig-99) stay PNG and are kept.
-apps/web/public/images/glossary/*.png
-apps/web/public/images/chapters/**/fig-*.png
-!apps/web/public/images/chapters/**/fig-00-cover.png
-!apps/web/public/images/chapters/**/fig-99-background.png
+# Images stay versioned in GitHub and are served from the R2 custom domain.
+# The committed image manifest gives the Vercel build every URL it needs.
+apps/web/public/images/
