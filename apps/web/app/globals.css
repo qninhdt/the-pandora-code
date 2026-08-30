@@ -272,6 +272,7 @@ h5,
 h6 {
   font-family: var(--font-display), system-ui, sans-serif;
   letter-spacing: -0.02em;
+  text-wrap: balance;
   color: var(--foreground);
 }
 
@@ -389,13 +390,16 @@ a:hover {
   margin-block: 0;
 }
 
-/* Keep chapter paragraphs book-like without stretching headings, lists, or
-   embedded visualizer copy. The final line remains left-aligned. */
-.prose-pandora[data-reading-root] > p {
-  text-align: justify;
-  text-align-last: left;
-  text-justify: inter-word;
+/* Keep chapter copy readable on narrow screens. Left-aligned with smart wrapping
+   and hyphenation softens the ragged right margin without introducing large word gaps. */
+.prose-pandora[data-reading-root] p,
+.prose-pandora[data-reading-root] li {
+  text-align: start;
   text-wrap: pretty;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 .prose-pandora strong {
