@@ -1,3 +1,5 @@
+import { staticUrl } from "@/lib/static-url";
+
 interface PageBackgroundProps {
   src: string;
   /**
@@ -17,7 +19,7 @@ export function PageBackground({ src, intensity = 0.9 }: PageBackgroundProps) {
   const bottom = Math.round(82 + intensity * 14); // 82-96% void at the bottom
   return (
     <div className="fixed inset-0 -z-[2]" aria-hidden>
-      <img src={src} alt="" className="size-full object-cover" />
+      <img src={staticUrl(src)} alt="" className="size-full object-cover" />
       {/* Dark scrim: the image stays a mood, never competes with the text. */}
       <div
         className="absolute inset-0"

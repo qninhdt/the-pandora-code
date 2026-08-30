@@ -1,0 +1,228 @@
+{
+  "chapter": "continents-oceans-climate",
+  "locale": "vi",
+  "title": "Lục địa, đại dương và khí hậu",
+  "source": {
+    "file": "vi.mdx",
+    "sha256": "bfdf07e300cabae75f9f04627a28714e30b3c261091afaa48eb5add5b320d0e5"
+  },
+  "sections": [
+    {
+      "id": "sec-00",
+      "title": null,
+      "blocks": [
+        {
+          "type": "figure",
+          "figNo": "01",
+          "text": "[Hình 1] Nhìn từ một dải núi ở Australis, rừng mưa phát quang sinh học cuồn cuộn không dứt trải đến tận bờ biển xa xăm, hoàn toàn không có hoang mạc nội địa. Nó nhường chỗ cho khối đại dương khổng lồ của Biển Đông, và một dải mây xích đạo phẳng lì vắt ngang bầu trời ngay phía trên đường chân trời."
+        },
+        {
+          "type": "p",
+          "text": "Leo lên đủ cao trên lục địa Australis ở phương nam, bạn sẽ bắt gặp một khung cảnh mà Trái Đất hầu như chẳng bao giờ có: một quang cảnh nhất định không chịu đổi thay. Rừng mưa lấp đầy lớp cảnh gần, trung cảnh, rồi vươn tận viễn cảnh, cuồn cuộn những lớp sóng xanh rì cho đến khi chạm bờ rồi tràn xuống Biển Đông, để rồi bờ bên kia cũng lại khoác lên mình màu áo rừng ấy. Chẳng có lấy một vệt ố nâu của miền đất khô cằn nào lọt vào khung hình. Trên đỉnh đầu, mây không nằm rải rác ngẫu nhiên; chúng giăng thành một dải dài phẳng lì nương theo đường chân trời, dày đặc và rực sáng, như thể bầu trời bị kẻ sọc. Khung cảnh ấy tuyệt mỹ, và cũng đầy lạ lẫm, và sự lạ lẫm ấy đáng để ta nán lại đôi chút trước khi bị vẻ đẹp cuốn trôi. Bởi lẽ Trái Đất không hề giống như vậy. Hành tinh của chúng ta rất tằn tiện với rừng mưa. Nó chỉ ban phát cho vùng nhiệt đới sâu thẳm một vành đai xanh mỏng manh nịt chặt quanh xích đạo, dải Amazon, vùng Congo, hay những hòn đảo ở Đông Nam Á, và rồi, với sự đều đặn đến tàn nhẫn, chỉ cách vành đai ấy một quãng ngắn về hai cực, nó dằn xuống những đại hoang mạc: Sahara, Ả Rập, Kalahari, và vùng hoang mạc Úc. Cứ thế, một dải ướt xen một dải khô. Một lữ khách dẫu bị thả mù xuống Trái Đất cũng có thể đoán được vĩ độ chỉ bằng cách nhìn vào thảm thực vật. Vậy tại sao Pandora lại hào phóng đến thế? Tại sao cả một nửa lục địa Australis lại chìm trong rừng mưa, trong khi Trái Đất hẳn đã biến một nửa diện tích ấy thành sa mạc? Thành thực mà nói, câu trả lời đầu tiên là: chẳng phải do cây cối, chẳng phải do đất đai, và thực chất cũng chẳng phải do Pandora. Câu trả lời nằm ở bầu không khí, trong một cỗ máy chỉ được dệt nên từ nhiệt lượng và luồng khí xoay vần, cỗ máy mà bất kỳ thế giới nào có khí quyển cũng phải vận hành dù muốn hay không. Khi nắm được cách cỗ máy ấy hoạt động, ta sẽ thôi không còn nhìn rừng mưa và sa mạc như những sự ngẫu nhiên của một vùng đất cụ thể nữa. Ta bắt đầu thấy chúng là kết quả của một phép toán mà mọi hành tinh tự áp dụng lên chính mình. Và một khi đã có thể giải bài toán ấy, ta sẽ làm được một điều nghe có vẻ phi lý: ta có thể dự đoán bản đồ của một thế giới mà ta chưa từng đặt chân đến, đoán xem rừng mưa phải nằm ở đâu và sa mạc phải trốn vào góc nào, chỉ từ một nhúm các con số về tốc độ tự quay và độ dày bầu khí quyển của nó. Hóa ra, Pandora chẳng hề phá vỡ quy luật tạo nên những dải màu của Trái Đất. Nó tuân thủ y hệt quy luật ấy, chỉ là xoay đi hai núm vặn, và sự đồng nhất xanh tươi trên dải núi kia chính xác là những gì quy luật ấy tiên đoán. Giờ thì, hãy cùng nhau lắp ráp cỗ máy ấy từ nền móng."
+        }
+      ]
+    },
+    {
+      "id": "sec-01",
+      "title": "Nguồn nhiệt lượng đầu vào",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Mọi thứ đều bắt nguồn từ một sự chênh lệch, và sự chênh lệch này mang tính hình học. Một ngôi sao trút ánh sáng xuống hành tinh một cách đồng đều, dưới dạng những tia song song thẳng tắp. Thế nhưng một thế giới lại là một khối cầu, và một khối cầu thì đón nhận những tia sáng ấy ở mọi góc độ cùng một lúc. Gần xích đạo, nơi bề mặt hứng ánh sao gần như trực diện, một chùm tia nắng sẽ dồn toàn bộ sức nóng xuống một mảnh đất nhỏ. Tiến về phía hai cực, nơi bề mặt nghiêng đi rõ rệt, cũng chùm tia ấy lại bị kéo vệt thành một dải dài trượt chéo, cùng một mức năng lượng nhưng bị phết mỏng trên một diện tích lớn hơn, khiến cường độ trên mỗi đơn vị diện tích yếu đi hẳn. Xích đạo thì nóng bức còn hai cực thì lạnh lẽo vì lý do này, và về cơ bản, chỉ vì lý do này mà thôi."
+        },
+        {
+          "type": "note",
+          "kind": "scientificnote",
+          "text": "Một lưu ý về việc không phải vì ở gần ngôi sao hơn: Luận điệu theo trực giác cho rằng xích đạo nóng hơn vì nó phình ra gần ngôi sao hơn là gần như hoàn toàn sai lầm, và ta cần phải triệt tiêu tư duy này một cách dứt điểm. Vài ngàn kilomet mà xích đạo nhô ra thêm so với hai cực chẳng thấm vào đâu so với hành trình một trăm năm mươi triệu kilomet đến Mặt Trời, sự chênh lệch khoảng cách này chỉ như một sai số làm tròn. Yếu tố thay đổi từ xích đạo đến cực không phải là quãng đường ánh sáng di chuyển, mà là góc chiếu, trực diện hay sượt qua. Rải cùng một chùm tia lên một bề mặt nghiêng, ta sẽ làm loãng nó. Thêm vào đó, ở vĩ độ cao, ánh sáng còn phải chật vật cày xới qua một quãng đường chéo dài hơn xuyên qua tầng khí quyển, khiến nó bị tán xạ nhiều hơn. Góc độ mới là yếu tố quyết định, không phải khoảng cách. Ngẫu nhiên thay, cùng một đặc tính hình học ấy cũng giải thích vì sao nắng sáng sớm và chiều tà lại mang cảm giác dịu nhẹ, còn nắng giữa trưa lại gay gắt."
+        },
+        {
+          "type": "p",
+          "text": "Một thế giới sẽ giữ lại được bao nhiêu nhiệt từ nguồn năng lượng nó đón nhận lại là một vấn đề thứ hai, hoàn toàn riêng rẽ, và điều đó phụ thuộc vào hai yếu tố. Thứ nhất là bao nhiêu ánh sáng đơn thuần bị dội ngược lại không gian, gọi là suất phản chiếu của thế giới ấy, chỉ số này cao đối với tuyết trắng và mây sáng màu, và thấp đối với đại dương và rừng thẳm. Yếu tố còn lại là bầu khí quyển sẽ can thiệp thế nào vào nhiệt lượng đang trên đường thoát ra ngoài. Một hành tinh sẽ nóng lên cho tới khi nó phát ra bức xạ hồng ngoại đủ rực rỡ để tản đi lượng năng lượng đúng bằng mức nó hấp thụ từ ngôi sao; điểm cân bằng đó chính là cân bằng bức xạ của nó, và về mặt toán học thuần túy, ánh sáng mặt trời đi vào, tia hồng ngoại đi ra, nó thiết lập một mức nhiệt độ nền mà thế giới đó sẽ ngự trị nếu như hoàn toàn không có không khí. Chỉ cần phủ lên nó một bầu khí quyển ngậm đầy khí giữ nhiệt, thì bề mặt thực tế sẽ trở nên ấm hơn mức nền ấy, đôi khi chỉ một chút, nhưng đôi khi, như trên Pandora, lại cao hơn rất nhiều."
+        },
+        {
+          "type": "figure",
+          "figNo": "02",
+          "text": "[Hình 2] Cùng một ánh sáng sao song song, hai số phận. Chiếu trực diện tại xích đạo, góc chiếu vuông góc hội tụ thông lượng nhiệt xuống một vùng diện tích nhỏ rực sáng. Sượt qua vùng cực ở một góc nghiêng, cùng một chùm tia đó rải mỏng trên một dải bề mặt trải dài lạnh hơn. Khoảng cách nhiệt độ thúc đẩy mọi hiện tượng thời tiết bắt nguồn từ đây, hoàn toàn do góc chiếu."
+        },
+        {
+          "type": "p",
+          "text": "Hãy ghi nhớ một sự thật cốt lõi nằm bên dưới mọi hiện tượng: miền nhiệt đới được trao cho một khoản thặng dư năng lượng, còn hai cực lại gánh lấy một khoản thâm hụt. Tạo hóa vốn căm ghét sự thiên lệch đó. Toàn bộ thời tiết, trên mọi thế giới, chính là nỗ lực của khí quyển và đại dương nhằm vận chuyển phần thặng dư từ nơi nó đáp xuống đến nơi nó vắng mặt, dù nỗ lực này không bao giờ trọn vẹn. Quá trình luân chuyển ấy có một hình hài đàng hoàng, và hình hài đó chính là mảnh ghép tiếp theo của cỗ máy."
+        }
+      ]
+    },
+    {
+      "id": "sec-02",
+      "title": "Vòng tuần hoàn tạo nên rừng mưa",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Hãy lấy luồng không khí nóng bức ở xích đạo làm ví dụ. Không khí ấm thì nhẹ và bốc lên cao, khi leo lên môi trường loãng hơn, nó giãn nở và lạnh đi. Bầu không khí đang lạnh dần không thể ngậm nổi nước, thế là hơi ẩm ngưng tụ thành những đám mây sừng sững và trút xuống thành mưa. Những cơn mưa trĩu hạt, xối xả mỗi ngày. Vành đai không khí bốc lên và trút mưa bao quanh xích đạo này chính là Đới hội tụ gian nhiệt đới. Chẳng phải ngẫu nhiên mà những đại rừng mưa của Trái Đất lại tọa lạc ngay bên dưới nó. Rừng chỉ đơn giản là mọc lên ở nơi không khí bị ép phải buông bỏ gánh nặng hơi ẩm của mình. Lượng không khí bốc lên không thể tích tụ mãi trên cao. Nó tỏa dần ra khỏi xích đạo ở trên cao, và khi dạt về phía hai cực, nó xả nốt chút nhiệt lượng cuối cùng vào không gian, trở nên đặc và nặng nề hơn, cho đến khoảng vĩ độ 30, ở cả Bắc và Nam bán cầu, nó chìm ngược xuống mặt đất. Không khí chìm xuống chính là kẻ thù của mưa: khi hạ độ cao, nó bị nén lại và ấm lên, khiến sức chứa hơi ẩm của nó tăng vọt. Vì vậy, thay vì nhả nước, nó lại tham lam hút cạn hơi ẩm từ vùng đất bên dưới. Nằm dưới những đới không khí giáng xuống ấy là những sa mạc của hành tinh, xâu chuỗi quanh địa cầu ở vĩ độ ba mươi với cùng một sự đều đặn như cách những cánh rừng ngự trị ở vĩ độ 0. Luồng không khí khép lại vòng lặp bằng cách tràn dọc theo bề mặt quay về xích đạo để tiếp tục được hâm nóng và nhấc bổng lên. Bánh xe luân chuyển này, bốc lên ở xích đạo, tỏa ra trên cao, chìm xuống ở vĩ độ 30, và tràn về dọc theo bề mặt, chính là một vòng tuần hoàn Hadley, và đó là cấu trúc quan trọng bậc nhất trong chương này. Hai bánh xe nữa sẽ hoàn thiện bộ máy ở mỗi bán cầu, một bánh xe ở vùng trung vĩ độ và một ở vùng cực, quay nối tiếp nhau vươn đến tận hai đầu cực, và hợp lại, chúng tạo nên hoàn lưu đại khí quyển của hành tinh, băng chuyền cuối cùng đưa phần thặng dư của vùng nhiệt đới đến những vùng vĩ độ cao đang đói khát năng lượng. Nhưng vòng tuần hoàn Hadley mới là gã khổng lồ, kẻ đích thân vạch ra ranh giới giữa những vùng ẩm ướt và khô cằn. Hãy nhớ đến nó như một cỗ máy với hai đầu vận hành: nhịp hít vào tại xích đạo đẻ ra rừng mưa, còn nhịp thở ra tại vĩ độ ba mươi tạo nên sa mạc."
+        },
+        {
+          "type": "figure",
+          "figNo": "03",
+          "text": "[Hình 3] Sơ đồ mặt cắt một vòng tuần hoàn. Cột giông đối lưu bốc lên ở xích đạo và trút mưa xuống khu rừng rậm rạp bên dưới. Khí quyển tầng trên đã mất ẩm dạt lên cao sang hai bên rồi chìm xuống quanh vĩ độ ba mươi, hút khô mặt đất tạo nên những vành đai khô hạn. Rừng tọa lạc bên dưới nhịp hít vào, còn sa mạc thì nằm dưới nhịp thở ra."
+        },
+        {
+          "type": "p",
+          "text": "Giờ thì, điều gì quyết định nơi cỗ máy đó thở ra? Tại sao lại là vĩ độ 30, mà không phải 10, hay 60? Giải đáp được câu hỏi đó, toàn bộ bản đồ của Pandora sẽ tự động phơi bày."
+        }
+      ]
+    },
+    {
+      "id": "sec-03",
+      "title": "Vì sao bánh xe lại mang kích cỡ ấy",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vòng tuần hoàn Hadley không vươn dài đến tận vùng cực, và thủ phạm chính là chuyển động tự quay của hành tinh. Hãy hình dung một khối không khí rời khỏi xích đạo, bốc lên cao và tiến về cực Bắc. Trên chặng đường đó, bản thân nó đồng thời đang cưỡi trên một quả cầu đang xoay tròn, và mặt đất bên dưới nó thì chuyển động nhanh nhất ở xích đạo, càng lên phía Bắc thì tốc độ càng giảm dần, bởi lẽ các vĩ độ cao hơn vạch ra những vòng tròn nhỏ hơn quanh trục. Mang theo quán tính chuyển động nhanh về phía Đông từ xích đạo, khối không khí lao nhanh hơn hẳn bề mặt đang chậm dần bên dưới. Đứng từ mặt đất nhìn lên, trông như thể có một bàn tay vô hình nào đó đang xô dạt không khí sang một bên, uốn cong đường bay thẳng tắp của nó thành một vòng cung ngày càng thắt chặt về hướng Đông. Cú xô biểu kiến ấy chính là hiệu ứng Coriolis, một hệ quả rành rành của việc di chuyển trên một vật thể đang xoay."
+        },
+        {
+          "type": "note",
+          "kind": "callout",
+          "text": "Một lưu ý, không, nó không hề điều khiển bồn tắm nhà bạn. Hiệu ứng Coriolis là có thật và vô cùng mạnh mẽ, nhưng chỉ ở một quy mô thích hợp, còn hiện tượng nổi tiếng nhất được gán cho nó thực chất lại là một lời đồn thổi vô căn cứ. Nó không hề định đoạt chiều xoáy của dòng nước xả xuống bồn rửa hay bồn cầu nhà bạn. Trên một chiếc bồn chỉ rộng chừng một mét, lực này yếu ớt đến độ bị lấn át hoàn toàn bởi hình dáng của chiếc bồn, góc độ của vòi nước, và bất kỳ vòng xoáy nào mà dòng nước vốn dĩ đã mang theo, hãy đổ đầy cùng một chiếc bồn ấy hai lần, và nước sẽ vui vẻ xả xuống theo cả hai chiều khác nhau. Coriolis chỉ giành lấy vô lăng khi sự vật chuyển động có kích thước khổng lồ và diễn tiến chậm chạp, một cơn bão rộng ngàn kilomet, một dòng hải lưu trải dài cả lưu vực đại dương, một trận cuồng phong bao quanh hành tinh. Đó mới là những thứ nó thống trị tuyệt đối. Còn với lỗ cạn bồn tắm, nó chưa từng một lần nhúng tay vào."
+        },
+        {
+          "type": "p",
+          "text": "Và đây là đáp án. Chính cú chệch hướng sang ngang ấy đã buộc vòng tuần hoàn Hadley phải dừng bước. Khối không khí trên cao đang hướng về cực bị bẻ cong về phía Đông mạnh đến mức, khi chạm ngưỡng vĩ độ 30, nó không còn hướng về cực nữa, nó đang lao vun vút về hướng Đông hệt như một dòng phản lực, bay vòng quanh thế giới thay vì tiến về phía cực. Không thể nhích thêm xa hơn về phía Bắc, nó đành dồn ứ lại và chìm xuống. Đó chính là lý do vì sao luồng giáng tạo sa mạc lại an tọa ở vĩ độ 30: đó là vĩ độ mà chuyển động tự quay của Trái Đất bẻ ngoặt luồng không khí đang cố tẩu thoát khỏi vùng nhiệt đới sang một bên rồi kéo nó giáng xuống mặt đất. Một hành tinh quay càng nhanh thì điều đó xảy ra càng sớm, độ lệch hướng càng mạnh, tầm vươn về cực càng ngắn, ô hoàn lưu càng hẹp. Xoay một thế giới thật nhanh, bạn sẽ có những vòng tuần hoàn Hadley chật hẹp, khép lại từ sớm, cùng một vành đai nhiệt đới mỏng dính. Nhưng nếu xoay thật chậm, không khí sẽ vươn được xa xích đạo hơn trước khi sức mạnh rệu rã của Coriolis kịp bẻ cong nó, vòng tuần hoàn sẽ kéo giãn rộng ra, đẩy cả vành đai mưa lẫn những sa mạc hạ giáng di cư về phía các cực. Đây chính là chiếc núm vặn. Tốc độ tự quay thiết lập độ rộng của bánh xe luân chuyển, và độ rộng của bánh xe lại thiết lập vĩ độ cho từng gốc rừng và mỗi bãi cát sa mạc. Giờ đây, cuối cùng ta cũng có thể tự tay xoay chiếc núm vặn ấy, và chiêm ngưỡng Pandora dần hiện hình."
+        }
+      ]
+    },
+    {
+      "id": "sec-04",
+      "title": "Vặn chiếc núm về hướng Pandora",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Pandora tự quay chậm hơn Trái Đất. Nguyên tác khá chung chung về con số chính xác, độ dài một ngày dao động đâu đó quanh ngưỡng một ngày Trái Đất, nhưng khuynh hướng thì đã rõ, và tự quay chậm hơn là tất cả những gì chúng ta cần. Tốc độ tự quay chậm hơn đồng nghĩa với hiệu ứng Coriolis yếu ớt hơn, kéo theo luồng không khí nhiệt đới sẽ tẩu thoát xa hơn về hai cực trước khi bị bẻ cong. Điều này khiến vòng tuần hoàn Hadley rộng hơn so với của Trái Đất, và vì thế toàn bộ kết cấu của vùng mưa và vùng hạn đều bị kéo giãn ra xa khỏi xích đạo."
+        },
+        {
+          "type": "figure",
+          "figNo": "04",
+          "text": "[Hình 4] Cùng một cỗ máy, hai tốc độ quay. Quay nhanh, lực Coriolis mạnh bẻ gãy hoàn lưu thành vành đai ẩm hẹp bị chèn ép bởi những sa mạc trung vĩ độ rộng lớn. Quay chậm như Pandora, lực Coriolis yếu cho phép siêu vành đai Hadley ẩm ướt phình rộng gần như chạm đến các cực, đày ải các chỏm khô hạn về tận các vĩ độ cực cao."
+        },
+        {
+          "type": "p",
+          "text": "Hãy quan sát xem sự kéo giãn đó vẽ lại bản đồ như thế nào. Trên Trái Đất, nhánh bốc lên tạo mưa bị đóng đinh chặt vào xích đạo, còn luồng giáng tạo sa mạc giáng thẳng xuống ở vĩ độ 30, thế nên rừng mưa chỉ được nhận một dải hẹp còn sa mạc lại chiếm một vùng thênh thang. Khi vòng tuần hoàn kéo giãn ra, hai điều này sẽ đồng thời xảy ra. Nhánh không khí bốc lên mang theo mưa chẳng còn là một đường xích đạo mỏng dính nữa, nó phình ra thành một vành đai nhiệt đới khổng lồ vươn xa có lẽ gấp đôi tính từ xích đạo. Thế là cả một vùng rộng lớn của thế giới được giao phó cho dòng khí miệt mài bốc lên và trút mưa. Song song đó, luồng giáng tạo sa mạc bị xô dạt ra tận vĩ độ bốn mươi lăm hay năm mươi, lọt thỏm giữa những vùng vĩ độ cao mát mẻ, nơi mà nó yếu đi và dễ bị lấn át hơn. Các sa mạc không hề bốc hơi mất, nhưng chúng bị lưu đày ra vùng biên ải và những vùng khuất gió, bị tước đoạt mất đế chế cận nhiệt đới hùng vĩ mà chúng đang tại vị trên Trái Đất. Kết hợp hai sự biến đổi đó lại, ta đã lột tả chính xác lục địa Australis mà chẳng cần liếc nhìn nó dù chỉ một lần: một lục địa nằm sâu thẳm bên trong một dải mưa được mở rộng, đến mức rừng rậm nghiễm nhiên trở thành trạng thái mặc định của mảnh đất này, vắt từ bờ này sang bờ kia, chẳng chừa lại khe hở nào cho một Sahara hình thành. Sự đồng nhất xanh tươi ngút ngàn thoạt nhìn có vẻ xa lạ từ vách núi kia hóa ra chẳng hề xa lạ chút nào. Nó chính là hệ quả tất yếu mà vòng Hadley của một thế giới xoay chậm phải nhào nặn ra. Ta chỉ vừa vặn một chiếc núm, và thế là rừng mưa đã lan rộng lấp kín cả chân trời."
+        },
+        {
+          "type": "note",
+          "kind": "whatthismeans",
+          "text": "Điều này có nghĩa là gì, cỗ máy phác thảo bản đồ. Đây là một ý tưởng bạn có thể mang theo mình, dùng để lý giải bất kỳ thế giới nào bạn tò mò, chứ không riêng gì Pandora. Khí hậu không phải là một tờ sớ ghi tên những vùng tình cờ ẩm ướt hay khô cằn. Nó là kết quả đầu ra của một hệ thống hoàn lưu, và cấu trúc hình học của hoàn lưu đó được thiết lập bởi vài thông số hành tinh, lượng ánh sáng chiếu xuống, tốc độ tự quay, và độ dày của bầu khí quyển. Nơi nào không khí bốc lên, nơi đó sinh ra rừng mưa, nơi nào không khí giáng xuống, nơi đó có sa mạc, và tốc độ quay quyết định vĩ độ của cả hai. Đó là lý do tại sao các nhà sinh thái học có thể phân loại gần như mọi hệ sinh thái trên Trái Đất, mọi quần xã sinh vật, từ rừng mưa cho đến đài nguyên, chỉ bằng hai con số: nhiệt độ trung bình và lượng mưa trung bình của một vùng, bởi chính hai con số này vốn dĩ đã bị chi phối bởi vị trí của vùng đất đó trong vòng luân chuyển không khí của hành tinh. Hãy đưa cho một nhà khí hậu học lành nghề tốc độ tự quay, lượng ánh sáng sao và độ dày bầu khí quyển của một thế giới, họ sẽ phác thảo lại cho bạn bức tranh toàn cảnh về bản đồ sự sống của thế giới ấy. Hóa ra, từ trước đến nay, rừng rậm và sa mạc đều là những thứ hoàn toàn có thể tính toán được."
+        },
+        {
+          "type": "p",
+          "text": "Thế nhưng vòng tuần hoàn Hadley mới chỉ sắp đặt ranh giới ướt và khô. Tự bản thân nó không giải thích được đặc điểm còn lại mà vách núi kia đã phô bày, một thế giới ôn hòa và dịu dàng dẫu đã xa rời vùng nhiệt đới, không hề có những trạng thái cực đoan khắc nghiệt. Để lý giải điều đó, ta cần đến chiếc núm vặn thứ hai, và chiếc núm vặn thứ hai chính là độ dày của bầu không khí."
+        }
+      ]
+    },
+    {
+      "id": "sec-05",
+      "title": "Bộ ổn nhiệt bằng không khí đặc",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Khí quyển của Pandora đặc hơn Trái Đất khoảng một phần năm, trĩu nặng bởi vô số loại khí đậm đặc. Sự nặng nề ấy là một phiền toái đối với những con người tản bộ, nhưng lại là một món quà dành cho khí hậu, bởi một bầu không khí đặc quánh chính là một kho chứa nhiệt khổng lồ, đồng thời là một cỗ máy luân chuyển nhiệt vĩ đại. Không khí càng đặc, mỗi cơn gió càng cõng được nhiều nhiệt lượng, và nó càng quyết liệt bòn rút hơi ấm ra khỏi vùng nhiệt đới như thiêu như đốt để dội thẳng vào những vùng vĩ độ cao buốt giá. Một thế giới có bầu không khí loãng hoàn toàn bất lực trong chuyện này và đành cam chịu nhốt nhiệt lượng ngay tại nơi nó giáng xuống, xích đạo rực lửa, hai cực đóng băng, tạo ra một chênh lệch nhiệt độ tàn khốc ở giữa. Ngược lại, một thế giới có bầu khí quyển đặc lại biết cách san sẻ sự giàu có ấy đi muôn nơi. Sự chênh lệch nhiệt độ từ xích đạo đến cực bị cào bằng; những vĩ độ cao được ủ ấm êm dịu hơn rất nhiều so với những gì chút ánh sáng mặt trời le lói của chúng có thể tự xoay xở. Hệ mặt trời của chúng ta đã làm sẵn thí nghiệm này để phơi bày rành rành điều đó. Sao Hỏa, với lớp không khí mỏng dính gần như bằng không, liên tục chao đảo giữa những thái cực nhiệt độ man rợ vì bầu khí quyển của nó chẳng thể lưu trữ hay luân chuyển thứ gì. Ngược lại, Sao Kim và mặt trăng Titan, cả hai đều khoác lên mình lớp không khí dày cộm, nặng trĩu, lại phô diễn điều ngược lại đến mức kỳ dị: bầu không khí đặc của chúng bôi trát hơi ấm hiệu quả đến độ nhiệt độ từ xích đạo đến cực, hay thậm chí từ ngày sang đêm, gần như không mảy may sứt mẻ."
+        },
+        {
+          "type": "figure",
+          "figNo": "05",
+          "text": "[Hình 5] Bầu khí quyển loãng chôn vùi nhiệt lượng ngay tại nơi nó đáp xuống, nung nóng vùng xích đạo và để hai cực đóng băng vĩnh cửu. Còn khí quyển đặc đậm đặc hoạt động y hệt một bánh đà giữ nhiệt, lưu trữ và phân phối khối lượng nhiệt năng khổng lồ, cho đến khi toàn cầu vận hành ở một ngưỡng nhiệt độ dịu êm. Pandora ngự trị ở một mốc gần hơn rất nhiều so với thái cực đặc."
+        },
+        {
+          "type": "p",
+          "text": "Thử ép chặt mật độ khí quyển và tốc độ tự quay chậm đi cùng nhau đến một ngưỡng đủ lớn, cả thế giới có thể lật nhào sang một trạng thái cực đoan mang tên siêu tự quay. Ở đó, toàn bộ bầu khí quyển bong dứt ra khỏi bề mặt và đua quanh hành tinh như một lớp vỏ độc nhất di chuyển cực nhanh, Sao Kim đang làm chính xác chuyện này, khi bầu không khí của nó vượt mặt phần thân xác rắn rùa bò bên dưới đến hàng chục lần trong mỗi vòng tự quay của hành tinh. Pandora không cần phải đi xa đến thế để tận hưởng phiên bản êm dịu hơn của cùng một nguyên lý vật lý: một bầu không khí nặng trĩu đặt trên một thiên thể tự quay chậm lừ đừ vốn dĩ được sinh ra để cào bằng mọi biến động nhiệt độ. Đây chính là lời giải thích cho những vùng đất trên Pandora mà vành đai rừng mưa chẳng tài nào bao phủ nổi. Rừng Mây (Clouded Forest) vươn cao và se lạnh ở Western Frontier, một vương quốc ôn đới với những thân cây khổng lồ chìm trong sương mù, nơi mà trên Trái Đất lẽ ra phải án ngữ ở một bờ biển lạnh giá, lại ngự trị ở một vĩ độ đáng ra phải khắc nghiệt hơn thế nhiều. Nó sinh tồn được là nhờ bộ ổn nhiệt bằng bầu không khí đặc này liên tục bơm hơi ấm vào các vĩ độ cao, vĩnh viễn không để cái lạnh bắt rễ. Cũng chính cái bánh đà ấy đã cứu vớt Pandora khỏi sự tàn nhẫn của chính hệ thiên văn bao quanh nó. Mặt trăng này ngày nào cũng bị hành tinh mẹ khổng lồ nuốt chửng trong nhật thực, chìm vào bóng râm và bị cắt đứt nguồn sáng khỏi ngôi sao ròng rã suốt gần một tiếng rưỡi đồng hồ; cứ mỗi lần như thế, một thế giới không khí loãng sẽ lao thẳng xuống vực băng giá của màn đêm. Thế nhưng bầu không khí đặc của Pandora lại ôm ấp nhiệt lượng xuyên qua bóng tối hệt như một đống lửa được ủ kỹ giữ hơi ấm suốt đêm thâu, và bề mặt hành tinh gần như chẳng mảy may nhận ra ngôi sao vừa vụt tắt. Không khí đặc không chỉ luân chuyển nhiệt lượng. Nó còn cự tuyệt buông tay một cách chóng vánh, và chính sự kiên nhẫn ấy mới là thứ nhào nặn nên một khí hậu êm dịu. Vẫn còn một kho dự trữ nữa mà ta chưa nhắc đến, và trên một thế giới sở hữu một đại dương rộng cỡ Biển Đông (Eastern Sea), lờ nó đi thì đúng là một thiếu sót tội lỗi."
+        }
+      ]
+    },
+    {
+      "id": "sec-06",
+      "title": "Đại dương sinh ra để làm gì",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Nước là loại vật chất cứng đầu nhất trên bất kỳ thế giới nào mỗi khi bị bắt ép phải thay đổi nhiệt độ. Đòi hỏi một lượng nhiệt khổng lồ để nóng lên, rồi lại buông bỏ lượng nhiệt ấy một cách cực kỳ chậm chạp, nước biến các đại dương thành những khối dằn nhiệt vĩ đại của hành tinh, lâu sôi vào mùa hè, lâu lạnh vào mùa đông, và không ngừng san sẻ phần nhiệt lượng mà nó dự trữ vào không khí phía trên, xoa dịu bất cứ vùng khí hậu nào mà nó chạm mặt. Đó là lý do vì sao những bờ biển và hòn đảo luôn êm đềm, còn sâu bên trong lục địa lại là một chốn hoang dại khắc nghiệt. Đứng giữa một vùng đất liền mênh mông, bạn hoàn toàn làm mồi cho bầu trời trần trụi: ngày đỏ lửa, đêm giá buốt, mùa hè thiêu đốt, mùa đông cay nghiệt, bởi lẽ đất đá nóng lên và nguội đi gần như tức thì mà chẳng thèm tích trữ được gì. Nhưng cứ dạt ra bờ biển mà xem, đại dương kề bên đã vung tay là phẳng mọi sự chênh lệch đó, chi viện hơi ấm đã tích cóp cho mùa đông và nuốt bớt lượng nhiệt dư thừa của mùa hè. Một thế giới ngập trong đại dương là một thế giới gần như vắng bóng mọi cực đoan nhiệt độ."
+        },
+        {
+          "type": "data",
+          "text": "So sánh phần lõi lục địa cằn cỗi với ân huệ duyên hải của đại dương. Sâu trong đất liền, cách xa biển cả, đất đá thay đổi nhiệt độ chỉ trong vài giờ và chẳng tích trữ được gì, tạo nên khí hậu hung bạo nhất với những ngày đổ lửa, đêm đóng băng, và mùa đông mùa hè cực đoan. Cạnh bờ biển lớn, lượng nhiệt khổng lồ mà nước tích trữ đã là phẳng mọi sự chao đảo, mang đến mùa đông ấm áp, mùa hè mát mẻ, và màn đêm êm đềm. Pandora, bị dìm ngập một nửa trong những vùng nước như Biển Đông, mang đậm bản sắc duyên hải, được xoa dịu gần như ở mọi nơi."
+        },
+        {
+          "type": "p",
+          "text": "Biển Đông, đủ mênh mông để chia cắt trọn vẹn các lục địa, lại được điểm xuyết bằng vô số rạn san hô vòng và những dải đá karst dựng đứng, đã biến Pandora thành một thế giới sặc mùi duyên hải. Đây lại là thêm một lý do nữa giải thích vì sao khí hậu nơi đây lại bao dung và hiền hòa đến thế. Nhưng đại dương không chỉ nằm ỳ ra đó để ngậm nhiệt; chúng còn luân chuyển nhiệt lượng thông qua những dòng hải lưu vĩ đại, bị kéo lê đi bởi chính những luồng gió và bị bẻ cong bởi cùng một lực xoay Coriolis đã từng nhào nặn khí quyển. Các dòng chảy bề mặt dồn nước ấm vùng nhiệt đới về phía những bờ biển xa xăm; và ở những nơi gió cạo bề mặt nước ra khỏi bờ, dòng nước lạnh buốt dưới sâu bị hút lên để trám chỗ, một quá trình được gọi là hiện tượng nước trồi. Quá trình này hất ngược lên bề mặt những dưỡng chất vốn đã chìm nghỉm vào màn đêm, từ đó thổi bùng lên một vụ nổ sự sống ở bất kỳ nơi nào nó trồi lên. Đan dệt vùng nước sâu lại với nhau chính là hoàn lưu nhiệt muối, một băng chuyền toàn cầu lừ đừ di chuyển, vận hành nhờ vào việc sự thay đổi nhiệt độ và độ mặn làm nước nặng hơn hay nhẹ đi, qua đó đánh chìm nước ở một số nơi và nâng bổng nó ở một số nơi khác."
+        },
+        {
+          "type": "figure",
+          "figNo": "06",
+          "text": "[Hình 6] Nơi nào gió thịnh hành kéo tầng nước mặt ra xa bờ, nước lạnh từ dưới sâu dâng lên theo sườn dốc lục địa để trám chỗ, mang theo các khoáng chất hòa tan. Trên Pandora, đáy biển cũng được hâm nóng từ bên dưới, khiến dòng nước trồi càng thêm trù phú, và các rạn san hô nông Biển Đông tha hồ mở tiệc nhờ nguồn dưỡng chất được đưa lên liên tục dưới ánh mặt trời."
+        },
+        {
+          "type": "p",
+          "text": "Dưới thẳm sâu, đại dương của Pandora sở hữu một nguồn nhiệt mà Trái Đất gần như vắng bóng: mặt trăng này liên tục bị nhào nặn bởi lực hấp dẫn từ hành tinh mẹ khổng lồ, và sự co kéo không ngừng nghỉ đó làm bùng phát hiện tượng gia nhiệt thủy triều từ bên trong, sưởi ấm đáy biển ngay từ bên dưới (Cỗ máy núi lửa của Pandora mổ xẻ trọn vẹn cỗ máy này). Thế nên, thay vì vận hành theo kiểu Trái Đất, nơi băng chuyền được kéo bởi nước lạnh buốt chìm xuống ở hai cực, các vùng biển của Pandora lại được khuấy động từ bên dưới, sục thẳng dòng nước giàu dưỡng chất lên bề mặt thông qua những hiện tượng nước trồi cục bộ cực kỳ mạnh mẽ. Đó là lý do cốt lõi giải thích vì sao Biển Đông có thể gánh vác nổi khối lượng sinh vật vĩ đại đến vậy, những rạn san hô, những cánh rừng tảo bẹ, và cả bầy tulkun khổng lồ với sự phàm ăn vô tiền khoáng hậu. Chính cái nguồn nhiệt nội tại giữ cho đáy sâu không bị đóng băng cũng kiêm luôn nhiệm vụ tiếp tế không ngừng nghỉ cho kho lương thực khổng lồ này. Vậy là chúng ta chỉ còn vướng lại đúng một kỳ quan kỳ lạ cuối cùng, một nơi mà xét theo mọi lẽ, nó đáng ra phải là một tảng đá đóng băng cứng ngắc. Nhưng nó không hề đóng băng, và lý do nằm ở mảnh ghép cuối cùng của cỗ máy."
+        }
+      ]
+    },
+    {
+      "id": "sec-07",
+      "title": "Vì sao những ngọn núi bay không hề trọc lốc",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dãy núi Hallelujah treo lơ lửng cách mặt đất hàng kilomet, đỉnh núi cao nhất trong số đó xé toạc bầu trời ở độ cao hơn hai ngàn rưỡi mét, ấy vậy mà trên chóp núi lại chẳng hề có bóng dáng của những tảng băng trọc lốc khô cằn như cái độ cao chết chóc ấy thường đòi hỏi. Chúng xanh tươi mơn mởn. Sông ngòi ngang dọc tuôn chảy; những ngọn thác đổ ầm ầm khỏi rìa vách đá và vỡ vụn thành bọt nước trước khi hòn đảo lơ lửng bên dưới kịp hứng lấy lớp sương mù. Nước ở dạng lỏng, những cánh rừng sinh sôi nảy nở, trễm chệ ở cái độ cao mà một ngọn núi trên Trái Đất đáng lý đã bị khóa chặt trong tuyết lạnh. Bằng cách nào cơ chứ? Trên Trái Đất, không khí càng bốc lên cao càng lạnh đi theo một tốc độ cứng đầu và lì lợm, giảm đi chừng mười độ C cho mỗi kilomet đi lên trong điều kiện khô ráo. Đây chính là tỷ lệ giảm nhiệt độ đoạn nhiệt, và nó không hề ngẫu nhiên: không khí bốc lên sẽ giãn nở ra khi áp suất xung quanh tụt dốc, chính sự giãn nở này vắt kiệt năng lượng của nó, và phần năng lượng thất thoát ấy hiện hình thành một cú rơi tự do của nhiệt độ. Leo hai kilomet rưỡi lên một ngọn núi trên Trái Đất, bạn đã bị lột mất chừng hai mươi độ C, đủ tạo ra một vực thẳm nhiệt độ giữa một thung lũng ấm áp và một đỉnh núi đóng băng. Thế nhưng, tỷ lệ làm lạnh ấy không phải là một hằng số phổ quát. Nó là kết quả của một cuộc giằng co giữa hai đặc tính hành tinh: lực hấp dẫn, kẻ kiểm soát xem áp suất tụt dốc nhanh nhường nào theo độ cao, và nhiệt dung của không khí, kẻ quyết định xem việc mất đi một khoản năng lượng nhất định sẽ gây ra mức sụt giảm nhiệt độ thực tế là bao nhiêu. Nếu lực hấp dẫn yếu đi, tỷ lệ giảm nhiệt độ sẽ chùn bước. Bơm thêm nhiệt dung vào, nó lại càng điềm tĩnh hơn. Pandora đáp ứng trọn vẹn cả hai điều kiện này. Lực hấp dẫn bề mặt của nó yếu hơn Trái Đất khoảng một phần năm, nên áp suất cũng loãng đi một cách êm ái hơn theo độ cao. Đồng thời, khối không khí đặc quánh, ngậm nước và nặng nề kia mang theo mức nhiệt dung khủng khiếp hơn rất nhiều so với thứ không khí loãng toẹt của chúng ta. Cả hai núm vặn cùng đồng lòng đẩy về một hướng, và hệ quả là bầu không khí nơi đây lạnh đi cực kỳ chậm rãi khi leo cao. Cùng một độ cao hai kilomet rưỡi có thể lột trần hai mươi độ C của một đỉnh núi Trái Đất, nhưng lại chẳng hề hấn gì mấy trên đỉnh núi Pandora, giữ cho những ngọn núi bay lơ lửng luôn ấm áp và dư dả hơi ẩm để duy trì sắc xanh vĩnh cửu."
+        },
+        {
+          "type": "figure",
+          "figNo": "07",
+          "text": "[Hình 7] Theo quy luật của Trái Đất, những ngọn núi này đáng ra phải là băng trọc lốc. Nhưng trọng lực yếu hơn của Pandora và bầu khí quyển đặc ngậm nhiệt khiến tỷ lệ giảm nhiệt độ diễn ra chậm chạp, cho phép những cánh rừng mưa ôn đới sinh sôi ở độ cao hàng kilomet. Độ ẩm khí quyển không ngừng ngưng tụ trên các cao nguyên, nạp nước cho những dòng thác để chúng luôn chảy trôi."
+        },
+        {
+          "type": "p",
+          "text": "Thế là vòng lặp đã khép lại một cách đầy thỏa mãn. Chính sự đặc quánh của không khí, thứ đã xoa dịu khí hậu, san sẻ hơi ấm từ cực này sang cực khác, và kiên gan ôm ấp nhiệt lượng qua mọi kỳ nhật thực, cũng là thứ duy trì nhịp thở cho những cánh rừng vắt vẻo trên ngọn núi bay. Chỉ một thuộc tính duy nhất của bầu khí quyển mà mang đến quả ngọt ở tận bốn bối cảnh khác nhau. Đó chính là cảm giác khi một thế giới mang trong mình sự nhất quán nội tại tuyệt đối, nơi những hiện tượng kỳ dị không phải là một mớ phép màu tạp nham được đắp điếm lại, mà bắt nguồn từ vài chiếc núm vặn vật lý nhỏ bé, xoay nhẹ một vòng, rồi vươn những chiếc rễ logic để lan tỏa đến vạn vật. Và nó còn trả quả ngọt ở bối cảnh thứ năm, thanh toán luôn món nợ mà chương này đã mang từ lúc chúng ta đày ải các sa mạc. Nếu dải ẩm rộng thênh thang nghĩa là Pandora không có vành sa mạc cận nhiệt, thì rốt cuộc mặt trăng này giấu vùng đất khô của nó ở đâu? Nguyên tác khẳng định là có, vùng Upper Plains lộng gió của Western Frontier là đồng cỏ bán khô hạn, bị núi vây ba mặt, và lời chính thức là sa mạc trên Pandora chỉ tồn tại được dưới dạng những vùng bóng mưa nội địa hẹp. Bóng mưa chính là bản thu nhỏ, cục bộ của vòng hoàn lưu Hadley: thay vì một vòng lặp cỡ hành tinh nâng khí lên ở xích đạo, chỉ một dãy núi đơn lẻ đẩy luồng gió biển vượt qua đỉnh, vắt cạn nước của nó trên đường lên, rồi trút khối khí đã cạn ấy xuống phía bên kia, nóng hơn và khát hơn lúc bắt đầu. Đồng bằng khuất gió khô không phải vì dãy núi chắn mất gió. Nó khô vì khối khí tới được đó đã bị hâm nóng trên đường đi xuống, và khí nóng thì uống nước. Và đây đúng là chỗ mà tốc độ nguội chậm quay đầu cắn lại. Một dãy núi chỉ tạo được sa mạc bằng cách làm khối khí đang lên nguội đủ để buộc nó nhả nước ra, mà không khí Pandora, nguội chỉ bằng nửa tốc độ, thì khó vắt hơn nhiều. Hãy đặt cùng một dãy núi lên cả hai thế giới và xem mỗi đồng bằng khuất gió nhận được gì."
+        },
+        {
+          "type": "p",
+          "text": "Vậy nên những nơi khô cằn trên mặt trăng này không phải một dải mà bạn có thể chỉ tay từ quỹ đạo. Chúng phải được xây nên, từng dãy núi một, và chính bầu không khí đặc quánh làm nên khí hậu ôn hòa lại là thứ khiến việc xây ấy khó nhọc đến vậy. Và đó chính xác là lý do tại sao, hễ sự nhất quán đó đổ vỡ ở đâu, ta càng phải thẳng thắn chỉ mặt gọi tên nó."
+        }
+      ]
+    },
+    {
+      "id": "sec-08",
+      "title": "Những góc khuất nơi thế giới chưa trọn vẹn",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Một tiêu bản chỉ thực sự trung thực nếu bạn dám nhìn thẳng vào những vết nứt của nó, và địa lý của Pandora có vài lỗ hổng mà không một lập luận khí hậu học sắc sảo nào có thể lấp liếm được. Vết nứt sâu hoắm nhất lại là một nghịch lý ăn sâu vào gốc rễ của hệ thống, và nó chẳng dính dáng gì đến thời tiết cả. Nguyên tác một mực khẳng định Pandora bị khóa thủy triều vào Polyphemus, luôn hướng đúng một mặt về phía hành tinh khổng lồ, khiến một ngày của nó dài bằng đúng một tháng của nó, đồng thời cũng ấn định rằng một ngày này chỉ kéo dài loanh quanh từ hai mươi ba đến ba mươi tiếng. Đặt hai tuyên bố ấy cạnh nhau, chúng lập tức tương tàn. Để một mặt trăng phóng hết một vòng quanh một hành tinh đồ sộ như Polyphemus chỉ trong khoảng một ngày, nó bắt buộc phải quay ở một quỹ đạo khít sát rạt, gần đến mức nó sẽ sượt qua rìa giới hạn Roche, cái khoảng cách tử thần mà thủy triều của hành tinh mẹ dư sức xé toạc mặt trăng làm trăm mảnh, và rơi tọt vào giữa những vành đai bức xạ chết chóc mà một hành tinh khí khổng lồ thường giăng ra xung quanh mình. Ở cái quỹ đạo đó, mặt trăng không đời nào có cửa trở thành một thế giới xanh tươi mơn mởn. Lẽ ra nó phải là một địa ngục kinh hoàng, bị co kéo, thiêu rụi và ngâm trong bức xạ giống hệt mặt trăng Io của Sao Mộc, đầy rẫy núi lửa, bị nung đến cạn kiệt nước, và bầu khí quyển bị tước đoạt sạch sẽ. Chính cái sự gắn bó khăng khít với Polyphemus, thứ đã ban cho Pandora những vòm trời hùng vĩ cùng nguồn nhiệt thủy triều vô giá, nếu ốp đúng vào những con số mà nguyên tác đưa ra, đáng lẽ đã phải kết liễu nó từ lâu. Đơn giản là bộ phim yêu cầu chúng ta đừng lôi toán học ra tính mà thôi. Một vết nứt thứ hai, tinh vi hơn, nảy sinh từ chính cơ chế khóa mặt đó. Nếu Pandora thực sự vĩnh viễn phô một mặt ra với Polyphemus, thế thì một nửa bán cầu sẽ muôn đời tắm mình trong bầu không khí ấm áp, phản chiếu rực rỡ và ngập tràn tia hồng ngoại từ gã khổng lồ, trong khi nửa khuất còn lại sẽ chẳng bao giờ được chiêm ngưỡng nó. Đó là một sự chênh lệch nhiệt lượng vĩnh viễn ở quy mô bán cầu đè gí lên trên sự chênh lệch xích đạo - vùng cực thông thường, và nó đáng lẽ phải châm ngòi cho những hệ thống gió cố định khổng lồ mang bản sắc riêng, tạo ra một sự phân hóa thực sự khốc liệt giữa hai nửa mặt trăng. Nguyên tác hoàn toàn lờ đi chuyện này. Về mặt khí hậu, nửa gần và nửa xa của Pandora không thể nào là chung một kiểu thế giới, thế mà các câu chuyện lại đối xử với mặt trăng này như một khối đồng nhất."
+        },
+        {
+          "type": "note",
+          "kind": "callout",
+          "text": "Một lưu ý về tấm bản đồ chưa từng được vẽ. Cần nói rõ rằng không hề có một bản đồ toàn cầu chính thức, thống nhất nào của Pandora, không có bức tranh chung về cách lục địa và đại dương được sắp xếp. Những gì tồn tại chỉ là các bản đồ khu vực: Australis ở đây, Western Frontier ở kia, Biển Đông ở giữa, và Vùng đất Băng giá vùng cực chủ yếu được biết qua truyền miệng của người Na'vi. Những khoảng trống thênh thang trên mặt trăng hoàn toàn bị bỏ ngỏ. Sự bỏ ngỏ đó thành thật theo cách của nó, nó nhường chỗ cho khí hậu học dự đoán thay vì chỉ đơn thuần mô tả, nhưng nó cũng có nghĩa là khi chúng ta đặt một vành đai rừng mưa hay đày ải sa mạc ra vĩ độ bốn mươi lăm, chúng ta đang suy luận từ vật lý vào lãnh thổ mà nguyên tác chưa từng vẽ tới. Cỗ máy cho ta biết mọi thứ phải nằm ở đâu. Chưa có ai xác nhận rằng bản đồ thực sự khớp với điều đó."
+        },
+        {
+          "type": "p",
+          "text": "Chẳng điều nào trong số này phá hỏng thế giới ấy cả. Chúng chỉ giúp định vị nó rõ ràng hơn. Địa lý mà ta có thể tận mắt thấy là nguyên tác vững chắc; hệ thống luân chuyển khí giải thích cho nó là khoa học Trái Đất đanh thép; chiếc cầu nối giữa chúng, vòng tuần hoàn bị kéo giãn, những sa mạc bị lưu đày, vùng cực giá lạnh được dự đoán, là hệ quả suy luận minh bạch và có gắn nhãn đàng hoàng. Còn mâu thuẫn trong quỹ đạo kia, đơn thuần chỉ là nơi mà câu chuyện đã lấn át vật lý, và việc chúng ta thẳng thắn nhận ra điều đó chỉ đơn giản là đang làm tốt công việc ghi chép của mình."
+        },
+        {
+          "type": "note",
+          "kind": "confidence",
+          "text": "Tỉ lệ phân loại chương này: hai mươi hai phần trăm cốt truyện gốc, mười sáu phần trăm suy luận, bảy phần trăm phỏng đoán, và năm mươi lăm phần trăm khoa học thực chứng."
+        },
+        {
+          "type": "note",
+          "kind": "openquestions",
+          "text": "Những câu hỏi còn bỏ ngỏ: Đầu tiên, làm thế nào Pandora có thể bị khóa thủy triều với Polyphemus mà vẫn có một ngày dài khoảng hai mươi sáu giờ? Điều này gần như là không thể, một quỹ đạo dài một ngày quanh một hành tinh khổng lồ sẽ ép Pandora vào khoảng cách nguy hiểm, biến nó thành một thế giới bị thiêu rụi và mất khí quyển như Io, chứ không phải một nơi phủ đầy rừng rậm. Thứ hai, nếu một mặt luôn hướng về Polyphemus, tại sao hai bán cầu không phải là hai thế giới khác biệt? Đáng ra phải vậy, sự chênh lệch nhiệt độ cố định giữa mặt được chiếu sáng vĩnh viễn và mặt tối vĩnh viễn phải tạo ra hệ thống gió khổng lồ riêng biệt, nhưng nguyên tác lại coi Pandora là đồng nhất. Thứ ba, chính xác thì sa mạc và băng giá của Pandora nằm ở đâu? Không ai biết vì không có bản đồ toàn cầu, vật lý học dự đoán có vành đai rừng mưa xích đạo rộng và sa mạc bị đẩy ra vĩ độ bốn mươi lăm đến năm mươi, nhưng đây là những suy luận, không phải từ nguyên tác. Cuối cùng, Pandora tự quay chậm đến mức nào? Nguyên tác đưa ra con số ước chừng một ngày dài hai mươi ba đến ba mươi giờ, và con số chính xác rất quan trọng vì tốc độ tự quay quyết định độ rộng của vòng tuần hoàn Hadley và tầm lan rộng của rừng mưa."
+        }
+      ]
+    },
+    {
+      "id": "sec-09",
+      "title": "Trở lại vách núi ban đầu",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vậy thì, hãy quay về mỏm đá chót vót trên lục địa Australis, và thu vào tầm mắt một lần nữa cái khung cảnh đã khởi nguồn cho tất cả những chuyện này. Cánh rừng vẫn cuồn cuộn không dứt ra tận biển khơi, nhưng nó chẳng còn là một bí ẩn nữa, nó chính là cái miệng đang hít vào thật sâu của một vòng tuần hoàn Hadley bị kéo doãng ra bởi một thế giới xoay lừ đừ, mọc lên chính xác ở nơi mà luồng không khí bốc lên bắt buộc phải trút sạch những cơn mưa. Những đám mây vẫn giăng thành một dải phẳng lì ngang trời, nhưng dải mây ấy đích thị là Đới hội tụ gian nhiệt đới, là vết khâu nơi không khí bốc lên vừa kịp hiện hình ngay trước mắt. Khí hậu dịu êm đến tận đường chân trời bởi một bầu không khí đặc quánh và một đại dương bao la đang chở hơi ấm đi muôn nơi, khư khư ôm lấy nó qua từng kỳ nhật thực. Và ở tít tắp phía xa, vượt qua cả đường cong của mặt trăng, tại một vùng đất chưa từng được vẽ lên bản đồ, cũng cỗ máy ấy đang âm thầm trải ra những đường viền khô cằn và những vùng cực giá buốt, những thứ mà cánh rừng trước mặt bạn sẽ chẳng đời nào để lộ. Đó chính là thứ mà khí hậu học mang lại, và cũng là lý do khiến bộ môn này đáng giá hơn bất kỳ một hành tinh đơn lẻ nào. Bạn chẳng cần phải cuốc bộ trên Pandora mới có thể thấu hiểu nó. Bạn chỉ việc đọc tốc độ tự quay, bầu không khí và lượng ánh sáng sao, bấm nút khởi chạy cái vòng lặp mà nhiệt lượng bắt buộc phải tuân theo. Thế là tự động, những cánh rừng, sa mạc và cả những ngọn núi xanh lơ lửng cứ thế ngoan ngoãn xếp hàng phơi bày trước mắt bạn, hoàn toàn có thể tính toán được, là điều tất yếu, và đẹp đẽ đến tột cùng. Chính bài toán số học ấy cũng đang phác họa nên thế giới tiếp theo mà bạn sẽ tò mò, một thế giới cách xa bốn năm ánh sáng chưa một bóng người đặt chân tới, chỉ đang nằm chờ được đọc vị từ những con số trần trụi của nó mà thôi."
+        }
+      ]
+    }
+  ]
+}

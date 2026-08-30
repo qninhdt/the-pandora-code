@@ -59,6 +59,7 @@ The current journey is defined by [`OUTLINE`](apps/web/lib/content/outline.ts), 
 - **3D concept constellation** — an interactive knowledge graph connecting ideas across chapters
 - **⌘K instant search** — find anything, diacritic-insensitive, lightning-fast
 - **Bookmarks & reading position** — pick up exactly where you left off
+- **Chapter audio** — one continuous narration per chapter, opt-in, with a segmented scrubber and speed control
 - **SEO, RSS, dynamic OG images** — every chapter is a first-class citizen of the web
 
 ## Tech Stack
@@ -90,6 +91,45 @@ pnpm dev
 ```
 
 Then open [http://localhost:3000](http://localhost:3000) and step through the airlock.
+
+### Static media and chapter audio
+
+Each chapter is delivered as **one continuous MP3** plus a `*.sections.json`
+marker sidecar; the reader's player uses those markers to label and scrub
+segments inside that single track. Local development serves images from
+`apps/web/public/`, and the prebuild mirrors the chapter MP3s from `tts-out/`
+into the ignored `apps/web/public/audio/` path.
+
+For deployment, upload media to Cloudflare R2 and point the app at it. Uploads
+use R2's S3 API, so no interactive Cloudflare login is needed — set
+`R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, and `R2_BUCKET` in
+the root `.env` (see `.env.example`), then set `NEXT_PUBLIC_STATIC_BASE` in
+`apps/web/.env` to the bucket's public origin:
+
+The `*.r2.cloudflarestorage.com/<bucket>` URL is the authenticated S3 API
+endpoint, not a browser-facing public origin. Enable an R2 public `r2.dev`
+subdomain or attach a custom domain, then use that public URL for
+`NEXT_PUBLIC_STATIC_BASE`.
+
+```bash
+node --env-file=.env scripts/r2-sync.mjs --images
+node --env-file=.env scripts/r2-sync.mjs --audio
+```
+
+The chapter TTS command can render the track and upload it in one pass:
+
+```bash
+node --env-file=.env scripts/tvoiceai-chapter-tts.mjs <slug> <en|vi> --mp3 --upload
+```
+
+If a chapter was already synthesized as per-section WAVs, assemble the single
+track from those renders instead of paying for TTS again:
+
+```bash
+node scripts/assemble-chapter-audio.mjs <slug> <en|vi> --mp3
+```
+
+The audio manifest is rebuilt during the web app prebuild. To rebuild it manually, run `pnpm --filter web run build:audio-manifest`. Keep the generated manifest committed when production builds do not have the local, gitignored `tts-out/` directory.
 
 ## Project Structure
 

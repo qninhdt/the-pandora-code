@@ -31,7 +31,7 @@
         "year": "một năm",
         "lifetime": "một đời người",
         "thermostat": "bộ điều nhiệt",
-        "canonStability": "12 triệu năm của canon"
+        "canonStability": "12 triệu năm theo nguyên tác"
       },
       "reservoirSlider": "Lượng chứa trong bể ({unit})",
       "sinkSlider": "Tốc độ thoát ra ({unit} mỗi năm)",
@@ -42,7 +42,7 @@
       "sourceLabel": "Nguồn cần có",
       "sourceNote": "để giữ bể không đổi",
       "refillLabel": "Số lần nạp lại",
-      "refillNote": "trong 12 triệu năm của canon",
+      "refillNote": "trong 12 triệu năm theo nguyên tác",
       "hint": {
         "instant": "Với nhịp này, cả bể chứa cạn rồi đầy lại chỉ trong vài ngày. Không thứ gì lơ lửng trong không khí ngắn ngủi đến thế mà vẫn tồn tại, trừ khi có cái gì liên tục bù vào — nên chính nồng độ đã trở thành một phát biểu về nguồn.",
         "fast": "Đủ nhanh để toàn bộ bể chứa quay vòng gọn trong một sự nghiệp người, nghĩa là nó phản ứng tức thì với biến động và cũng chẳng giữ được gì lâu.",
@@ -86,7 +86,7 @@
       "hint": {
         "impossible": "Con số đã ra khỏi bản đồ. Không hoạt động núi lửa nào ở cường độ khả tín cung cấp nổi lưu huỳnh với nhịp này, và duy trì nó sẽ vét sạch lưu huỳnh trong lớp phủ chỉ trong một cái nháy mắt địa chất. Có gì đó trong những số liệu đã nêu buộc phải nhượng bộ.",
         "strained": "Đã tới gần một thế giới cực kỳ dữ dội, nhưng vẫn xa hơn bất cứ điều gì Trái Đất từng làm. Cứ kéo tiếp.",
-        "survivableButHarmless": "Sổ sách khớp — nhưng hãy nhìn ô độc tính. Ở nồng độ này, không khí không còn giết một người không mặt nạ trong vài giây nữa, mà đó lại đúng là điều canon khăng khăng. Cách sửa này chỉ dịch chuyển vấn đề chứ không giải được nó."
+        "survivableButHarmless": "Sổ sách khớp — nhưng hãy nhìn ô độc tính. Ở nồng độ này, không khí không còn giết một người không mặt nạ trong vài giây nữa, mà đó lại đúng là điều nguyên tác khăng khăng. Cách sửa này chỉ dịch chuyển vấn đề chứ không giải được nó."
       },
       "aria": "Thang dòng logarit. Nguồn lưu huỳnh cần thiết nằm ở {flux} Tg S mỗi năm, gấp {times} lần tổng lượng lưu huỳnh núi lửa Trái Đất thải ra.",
       "gapLine": "Ở tuổi thọ này, hai yêu cầu cách nhau khoảng {factor} lần: lượng sulfide mà một khí quyển gây chết cần đến, so với mức cao nhất mà một mặt trăng núi lửa dữ dội có thể duy trì. Không thiết lập nào thỏa mãn được cả hai."
@@ -159,6 +159,8 @@
       "title": "Vay được, nhưng tiêu mất",
       "subtitle": "Đi theo một nguyên tử, rồi đi theo một joule",
       "toggleAria": "Chọn đi theo vật chất hay năng lượng",
+      "ariaMatter": "Một vòng khép kín nối không khí, lá, động vật, đất và sinh vật phân hủy, với một nguyên tử carbon di chuyển quanh vòng",
+      "ariaEnergy": "Một đường đi từ ánh sáng qua không khí, lá, động vật, đất và sinh vật phân hủy, với năng lượng rời đi dưới dạng nhiệt bức xạ",
       "tracer": {
         "matter": "Một nguyên tử",
         "energy": "Một joule"

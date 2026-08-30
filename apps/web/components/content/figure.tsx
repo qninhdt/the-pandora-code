@@ -1,6 +1,7 @@
 import { CanonBadge } from "@/components/classification/canon-badge";
 import { LightboxImage } from "@/components/content/lightbox";
 import type { ClassificationKind } from "@/lib/content/schemas/shared";
+import { staticUrl } from "@/lib/static-url";
 import { cn } from "@/lib/utils";
 import { useLocale } from "next-intl";
 
@@ -25,7 +26,11 @@ export function Figure({ src, caption, alt, tier, figNo, bleed, className }: Fig
   return (
     <figure className={cn("my-8", bleed && "lg:-mx-24", className)}>
       <div className="overflow-hidden rounded-2xl border border-border bg-surface">
-        <LightboxImage src={src} alt={alt ?? text ?? ""} className="w-full object-cover" />
+        <LightboxImage
+          src={staticUrl(src)}
+          alt={alt ?? text ?? ""}
+          className="w-full object-cover"
+        />
       </div>
       {(text || figNo || tier) && (
         <figcaption className="mt-3 px-1">

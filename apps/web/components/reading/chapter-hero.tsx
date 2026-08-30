@@ -1,5 +1,6 @@
 import { CanonBadge } from "@/components/classification/canon-badge";
 import type { ClassificationPct, LocalizedString } from "@/lib/content/schemas/shared";
+import { staticUrl } from "@/lib/static-url";
 import { cn } from "@/lib/utils";
 import { Clock } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
@@ -52,7 +53,7 @@ export function ChapterHero({
       <div aria-hidden className="absolute inset-0 -z-10">
         {imageSrc ? (
           <Image
-            src={imageSrc}
+            src={staticUrl(imageSrc)}
             alt=""
             fill
             priority

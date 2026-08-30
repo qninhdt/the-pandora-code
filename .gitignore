@@ -22,6 +22,13 @@ bin/
 # production
 /build
 
+# Large static media is uploaded to Cloudflare R2 instead of bundled with the app.
+/apps/web/public/images/
+
+# Generated TTS source and delivery files.
+/tts-out/
+/apps/web/public/audio/
+
 # misc
 .DS_Store
 *.pem

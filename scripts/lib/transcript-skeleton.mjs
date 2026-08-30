@@ -314,6 +314,8 @@ export function extractSkeleton(slug, locale, source) {
   return {
     chapter: slug,
     locale,
+    // Spoken-form seed for the transcript's top-level title (from meta.yaml).
+    expectedTitle: chapterTitle(slug, locale),
     source: {
       file: `${locale}.mdx`,
       sha256: createHash("sha256").update(source, "utf8").digest("hex"),

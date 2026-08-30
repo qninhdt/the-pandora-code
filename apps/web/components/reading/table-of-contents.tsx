@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils";
 import { List, X } from "lucide-react";
 import { useEffect, useId, useRef, useState } from "react";
+import { useActiveHeading } from "./audio-section-sync";
 
 export interface TocHeading {
   id: string;
@@ -14,32 +15,6 @@ interface TableOfContentsProps {
   headings: TocHeading[];
   label?: string;
   className?: string;
-}
-
-// Scroll-spy: the heading nearest the top of the viewport is marked active.
-function useActiveHeading(headings: TocHeading[]) {
-  const [active, setActive] = useState<string | null>(null);
-  useEffect(() => {
-    if (headings.length === 0) return;
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries.filter((e) => e.isIntersecting);
-        if (visible.length > 0) {
-          const topmost = visible.reduce((acc, cur) =>
-            cur.boundingClientRect.top < acc.boundingClientRect.top ? cur : acc,
-          );
-          setActive(topmost.target.id);
-        }
-      },
-      { rootMargin: "-80px 0% -70% 0%", threshold: [0, 1] },
-    );
-    for (const h of headings) {
-      const el = document.getElementById(h.id);
-      if (el) observer.observe(el);
-    }
-    return () => observer.disconnect();
-  }, [headings]);
-  return active;
 }
 
 function TocList({

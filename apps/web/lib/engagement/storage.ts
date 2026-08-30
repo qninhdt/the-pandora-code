@@ -12,6 +12,7 @@ export const READER_STORAGE_VERSION = 1 as const;
 export const READER_STORAGE_KEYS = {
   history: "pandora:reading-history:v1",
   preferences: "pandora:reading-preferences:v1",
+  audio: "pandora:audio-state:v1",
 } as const;
 
 export type ReaderStorageKey = (typeof READER_STORAGE_KEYS)[keyof typeof READER_STORAGE_KEYS];

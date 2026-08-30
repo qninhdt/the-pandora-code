@@ -57,6 +57,22 @@
     "showAllLabels": "Show labels on every figure",
     "language": "Language"
   },
+  "audio": {
+    "play": "Play",
+    "pause": "Pause",
+    "nextSection": "Next section",
+    "prevSection": "Previous section",
+    "speed": "Playback speed",
+    "currentTime": "Current time",
+    "duration": "Duration",
+    "intro": "Intro",
+    "followReading": "Follow reading",
+    "unavailable": "Audio unavailable for this section",
+    "player": "Chapter player",
+    "close": "Close player",
+    "listenChapter": "Listen to this chapter",
+    "listenMinutes": "{minutes} min"
+  },
   "search": {
     "trigger": "Search",
     "placeholder": "Search chapters, terms, topics…",

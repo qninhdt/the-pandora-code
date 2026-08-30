@@ -49,7 +49,7 @@
       "verdictMasking": "Chẳng có đồng hồ nào",
       "verdictMaskingNote": "chính căn phòng đã báo giờ",
       "caption": "Thí nghiệm khai sinh của cả ngành, chỉ là làm trên động vật thay vì trên cây. Dưới một chu kỳ sáng-tối đều đặn, đồng hồ nội sinh thật và phản xạ ánh sáng đơn thuần cho ra cùng một biểu đồ gọn gàng: hoạt động đúng giờ đó, mọi ngày. Ngắt chu kỳ sáng-tối đi, hai thứ lập tức chia đường. Đồng hồ tiếp tục đếm, mỗi ngày trôi lệch một chút theo chu kỳ hơi-sai của riêng nó — chính độ trôi ấy là bằng chứng. Còn phản xạ, không còn gì để phản ứng, đơn giản là vỡ vụn.",
-      "hint": "Độ trôi chính là dấu vân tay. Phản xạ mãi mãi chỉ có thể đến muộn, vì nó chờ thế giới ra tay trước; đồng hồ thì có thể đến sớm, vì nó biết điều gì đang tới. Chưa ai chạy thí nghiệm này trên Pandora, nên chính sử không thể cho ta biết ta đang xem cái nào khi khu rừng bừng sáng."
+      "hint": "Độ trôi chính là dấu vân tay. Phản xạ mãi mãi chỉ có thể đến muộn, vì nó chờ thế giới ra tay trước; đồng hồ thì có thể đến sớm, vì nó biết điều gì đang tới. Chưa ai chạy thí nghiệm này trên Pandora, nên nguyên tác không thể cho ta biết ta đang xem cái nào khi khu rừng bừng sáng."
     },
     "lightLadder": {
       "title": "Một đêm tối đến mức nào?",
@@ -75,7 +75,7 @@
         "melatonin": "Ngưỡng ức chế melatonin",
         "sublux": "Sàn dưới một lux"
       },
-      "caption": "Những mức sáng có ý nghĩa với một chiếc đồng hồ sinh học, trên thang lôgarit. Đêm Trái Đất tụt xuống tới ánh sao — thấp hơn giữa trưa chừng tám bậc độ lớn, tín hiệu sắc nét nhất trong tự nhiên. Đêm Pandora thì có sàn: ánh hành tinh phản chiếu từ một hành tinh khí khổng lồ treo bất động, và trong một phần của năm là cả một mặt trời thứ hai. Trong khi đó mặt đất phát sáng nổi danh kia, đối chiếu với số đo quang học thật từ các loài nấm phát sáng trên Trái Đất, lại nằm thấp hơn hẳn mọi mức mà đồng hồ có thể đọc. Các con số Trái Đất là số đo thật; các giá trị Pandora chỉ là xấp xỉ, vì chính sử chưa bao giờ nêu độ chiếu sáng ban đêm.",
+      "caption": "Những mức sáng có ý nghĩa với một chiếc đồng hồ sinh học, trên thang lôgarit. Đêm Trái Đất tụt xuống tới ánh sao — thấp hơn giữa trưa chừng tám bậc độ lớn, tín hiệu sắc nét nhất trong tự nhiên. Đêm Pandora thì có sàn: ánh hành tinh phản chiếu từ một hành tinh khí khổng lồ treo bất động, và trong một phần của năm là cả một mặt trời thứ hai. Trong khi đó mặt đất phát sáng nổi danh kia, đối chiếu với số đo quang học thật từ các loài nấm phát sáng trên Trái Đất, lại nằm thấp hơn hẳn mọi mức mà đồng hồ có thể đọc. Các con số Trái Đất là số đo thật; các giá trị Pandora chỉ là xấp xỉ, vì nguyên tác chưa bao giờ nêu độ chiếu sáng ban đêm.",
       "hint": "Phần lộng lẫy nhất về mặt thị giác của đêm Pandora lại gần như câm lặng với đồng hồ sinh học, còn những phần không ai gọi là 'ánh sáng' mới là thứ đủ mạnh để có ý nghĩa. Khó khăn của Pandora không phải là quá ít sáng về đêm — mà là một màn đêm chưa bao giờ tối một cách đáng tin, và một tín hiệu bất định là một tín hiệu tồi để lên dây đồng hồ."
     },
     "temporalNiche": {
@@ -96,7 +96,7 @@
         "fanLizard": "Thằn lằn quạt"
       },
       "tiers": {
-        "stated": "chính sử nêu rõ",
+        "stated": "nguyên tác nêu rõ",
         "inferred": "suy ra từ phim"
       },
       "phaseLabel": "Pha hiện tại",

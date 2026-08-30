@@ -18,6 +18,7 @@ interface CreateReaderStoreOptions<T> {
   read: () => T;
   write: (value: T) => boolean;
   equals?: (left: T, right: T) => boolean;
+  mergeExternal?: (current: T, persisted: T) => T;
 }
 
 /**
@@ -31,6 +32,7 @@ export function createReaderStore<T>({
   read,
   write,
   equals = Object.is,
+  mergeExternal,
 }: CreateReaderStoreOptions<T>): ReaderStore<T> {
   let current = fallback;
   let hydrated = false;
@@ -52,8 +54,9 @@ export function createReaderStore<T>({
 
   const onExternalStorageChange = () => {
     const persisted = read();
-    if (equals(current, persisted)) return;
-    current = persisted;
+    const next = mergeExternal ? mergeExternal(current, persisted) : persisted;
+    if (equals(current, next)) return;
+    current = next;
     emit();
   };
 

@@ -2,6 +2,8 @@
 // the style-anchor poster - no canvas, no JS animation loop. Drifting motes use
 // a CSS keyframe that is disabled under reduced motion (see globals.css).
 
+import { staticUrl } from "@/lib/static-url";
+
 interface AtmosphereFallbackProps {
   /** Landing pages render a fixed particle layer above their painted vistas. */
   showMotes?: boolean;
@@ -14,7 +16,7 @@ export function AtmosphereFallback({ showMotes = true }: AtmosphereFallbackProps
       <div
         className="absolute inset-0 bg-cover bg-center opacity-[0.18]"
         style={{
-          backgroundImage: "url(/images/atmosphere/pandora-establishing.png)",
+          backgroundImage: `url(${staticUrl("/images/atmosphere/pandora-establishing.png")})`,
         }}
       />
       {/* Bioluminescent glow blooms. */}

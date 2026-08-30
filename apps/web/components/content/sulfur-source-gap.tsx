@@ -13,8 +13,8 @@ import {
   KNOCKDOWN_PPM,
   OXIDISING_LIFETIME_DAYS,
   constraintGap,
-  formatFlux,
   fluxPosition,
+  formatFlux,
   sulfurBudget,
   verdict,
 } from "./sulfur-source-gap-model";
@@ -63,8 +63,7 @@ export function SulfurSourceGap({ caption, className }: SulfurSourceGapProps) {
   const state = verdict(budget);
   const gap = constraintGap(days);
 
-  const tone =
-    state === "survivableButHarmless" ? "var(--amber)" : "var(--magenta)";
+  const tone = state === "survivableButHarmless" ? "var(--amber)" : "var(--magenta)";
   const figureTone = state === "survivableButHarmless" ? "amber" : "magenta";
 
   const demandX = xFor(budget.requiredSourceTgS);
@@ -84,7 +83,7 @@ export function SulfurSourceGap({ caption, className }: SulfurSourceGapProps) {
         className="w-full"
         role="img"
         aria-label={t("aria", {
-          demand: formatFlux(budget.requiredSourceTgS),
+          flux: formatFlux(budget.requiredSourceTgS),
           times: formatFlux(budget.timesEarthVolcanic),
         })}
       >

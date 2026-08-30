@@ -159,6 +159,8 @@
       "title": "Borrowed, and spent",
       "subtitle": "Follow an atom, then follow a joule",
       "toggleAria": "Choose whether to follow matter or energy",
+      "ariaMatter": "A closed loop connecting air, leaf, animal, soil, and decomposer, with a carbon atom moving around it",
+      "ariaEnergy": "A path from sunlight through air, leaf, animal, soil, and decomposer, with energy leaving as radiated heat",
       "tracer": {
         "matter": "An atom",
         "energy": "A joule"

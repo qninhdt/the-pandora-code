@@ -42,8 +42,16 @@ export function validateOne(transcript, skeleton) {
   const err = (level, sectionId, msg) => issues.push({ level, sectionId, msg });
 
   // 1. schema
-  for (const key of ["chapter", "locale", "source", "sections"]) {
+  for (const key of ["chapter", "locale", "title", "source", "sections"]) {
     if (!(key in transcript)) err("error", "*", `missing field "${key}"`);
+  }
+  // The title opens the audio: same spoken-form rules as block text.
+  if (typeof transcript.title !== "string" || !transcript.title.trim()) {
+    err("error", "*", "title missing or empty");
+  } else {
+    for (const [re, msg] of LINT_ERRORS) {
+      if (re.test(transcript.title)) err("error", "*", `title ${msg}: "${(transcript.title.match(re) || [""])[0]}"`);
+    }
   }
   if (!Array.isArray(transcript.sections) || transcript.sections.length === 0) {
     err("error", "*", "sections missing or empty");
@@ -183,6 +191,7 @@ function selftest() {
   const adapt = (mutate) => {
     const t = {
       chapter: sk.chapter, locale: "en",
+      title: sk.expectedTitle,
       source: { file: "en.mdx", sha256: sk.source.sha256 },
       sections: sk.sections.map((s, i) => ({
         id: `sec-${String(i).padStart(2, "0")}`,
@@ -203,6 +212,7 @@ function selftest() {
   console.log(cleanErrs.length === 0 ? "PASS valid transcript has zero errors" : `FAIL valid transcript: ${JSON.stringify(cleanErrs)}`);
   if (cleanErrs.length) process.exitCode = 1;
 
+  expect("missing title", validateOne(adapt((t) => { delete t.title; }), sk), "error", "title");
   expect("id sequence", validateOne(adapt((t) => { t.sections[2].id = "sec-99"; }), sk), "error", "sec-02");
   expect("empty section", validateOne(adapt((t) => { t.sections[3].blocks = []; }), sk), "error", "empty section");
   expect("dropped figure", validateOne(adapt((t) => { t.sections[1].blocks = t.sections[1].blocks.filter((b) => b.figNo !== "02"); }), sk), "error", "figure 02");

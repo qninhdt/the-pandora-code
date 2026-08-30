@@ -1,13 +1,7 @@
 #!/usr/bin/env node
 /**
  * tvoiceai-tts.mjs — CLI wrapper for tvoiceai.com internal TTS API.
- *
- * The site exposes an undocumented JSON API (author permits early use):
- *   POST /api/login {username, password} -> {token}
- *   GET  /api/user-info          (Bearer) -> {tokens, custom_voices}
- *   GET  /api/voices             (Bearer) -> [{id, display_name, gender, region, ...}]
- *   POST /api/tts                (Bearer) -> {jobId}; poll GET /api/status/:jobId
- *   Billing: 1 token per input character.
+ * Shared client lives in scripts/lib/tvoiceai-client.mjs.
  *
  * Auth is per-run: pass --user/--pass (or TVOICEAI_USER/TVOICEAI_PASS env).
  * Nothing is written to disk.
@@ -25,123 +19,27 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { LOCAL_VOICES } from "./tvoiceai-voices.mjs";
-
-const BASE = "https://tvoiceai.com";
-
-// ---------- auth ----------
-
-function readCredentials(opts) {
-  const username = opts.user || process.env.TVOICEAI_USER;
-  const password = opts.pass || process.env.TVOICEAI_PASS;
-  if (!username || !password) {
-    throw new Error("Missing credentials: pass --user/--pass or set TVOICEAI_USER/TVOICEAI_PASS.");
-  }
-  return { username, password };
-}
-
-async function login({ username, password }) {
-  const res = await fetch(`${BASE}/api/login`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ username, password }),
-  });
-  const data = await res.json();
-  if (!res.ok) throw new Error(`Login failed: ${data.error || res.status}`);
-  return data.token;
-}
-
-function makeClient(token) {
-  return (pathname, options = {}) =>
-    fetch(`${BASE}${pathname}`, {
-      ...options,
-      headers: { ...(options.headers || {}), Authorization: `Bearer ${token}` },
-    });
-}
-
-// ---------- tts core ----------
-
-async function fetchVoices(api) {
-  const res = await api("/api/voices");
-  return res.json();
-}
-
-// Resolve a voice query to {flow, voice}. Two flows exist, matching the web UI:
-//   "api"   — numeric voice ids from /api/voices (Vbee tier, fast)
-//   "local" — string ids: VIENEU_CLONE_* clones (ElevenLabs/Vbee clones) and system voice names
-async function resolveVoice(query, api) {
-  const q = String(query).trim();
-  if (/^VIENEU_CLONE_\d+$/.test(q)) return { flow: "local", voice: q };
-  if (/^\d+$/.test(q)) return { flow: "api", voice: parseInt(q, 10) };
-
-  const ql = q.toLowerCase();
-  const localMatches = Object.entries(LOCAL_VOICES).filter(([, name]) => String(name).toLowerCase().includes(ql));
-  const apiVoices = await fetchVoices(api);
-  const apiMatches = apiVoices.filter((v) => `${v.id} ${v.display_name}`.toLowerCase().includes(ql));
-
-  if (localMatches.length + apiMatches.length === 0) throw new Error(`No voice matches "${q}". Run "voices" to list.`);
-  if (localMatches.length + apiMatches.length > 1) {
-    const labels = [
-      ...localMatches.map(([id, name]) => `${id} = ${name} [local]`),
-      ...apiMatches.map((v) => `${v.id} = ${v.display_name} [api]`),
-    ];
-    throw new Error(`Ambiguous voice "${q}": ${labels.slice(0, 8).join(", ")}`);
-  }
-  if (localMatches.length === 1) return { flow: "local", voice: localMatches[0][0] };
-  return { flow: "api", voice: apiMatches[0].id };
-}
-
-async function synthesize(api, { text, flow, voice, speed, pitch, volume, format, sampleRate }) {
-  const res = await api("/api/tts", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      flow,
-      text,
-      voice,
-      speed,
-      pitch,
-      volume,
-      format,
-      sample_rate: sampleRate,
-      pause_cfg: null,
-    }),
-  });
-  const data = await res.json();
-  if (!data.success) throw new Error(data.error || "TTS submit failed");
-
-  // Poll job status every 2s, same cadence as the web UI.
-  for (let i = 0; i < 300; i++) {
-    await new Promise((r) => setTimeout(r, 2000));
-    const st = await (await fetch(`${BASE}/api/status/${data.jobId}`)).json();
-    if (st.status === "done") return st.audioUrl;
-    if (st.status === "error") throw new Error(st.errorMsg || "Server error while processing");
-  }
-  throw new Error("Timed out waiting for job");
-}
-
-// The audioUrl extension is unreliable (.wav name, MP3 bytes) — sniff the header.
-function sniffExt(buf) {
-  if (buf.slice(0, 3).toString() === "ID3" || (buf[0] === 0xff && (buf[1] & 0xe0) === 0xe0)) return "mp3";
-  if (buf.slice(0, 4).toString() === "RIFF") return "wav";
-  return "bin";
-}
-
-async function download(audioUrl, outPath) {
-  const buf = Buffer.from(await (await fetch(audioUrl)).arrayBuffer());
-  const ext = sniffExt(buf);
-  const finalPath = outPath.endsWith(`.${ext}`) ? outPath : `${outPath.replace(/\.(mp3|wav|bin)$/, "")}.${ext}`;
-  fs.mkdirSync(path.dirname(finalPath), { recursive: true });
-  fs.writeFileSync(finalPath, buf);
-  return finalPath;
-}
+import { readCredentials, login, makeClient, fetchVoices, resolveVoice, synthesize, download, LOCAL_VOICES } from "./lib/tvoiceai-client.mjs";
 
 // ---------- cli ----------
 
+// Parse --pause "dot=0.3,comma=0.2,semi=0.3,ellipsis=0.5,exclamation=0.3,question=0.3,newline=0.4"
+// into a pause_cfg object the tvoiceai API accepts; null when not given.
+// (Empirically ignored for local-flow clone voices — kept for api-flow voices.)
+function parsePause(spec) {
+  if (!spec) return null;
+  const cfg = {};
+  for (const pair of spec.split(",")) {
+    const [k, v] = pair.split("=");
+    if (k && v !== undefined) cfg[k.trim()] = parseFloat(v);
+  }
+  return Object.keys(cfg).length ? cfg : null;
+}
+
 function parseOpts(args) {
-  const opts = { speed: 1.0, pitch: 0, volume: 100, format: "mp3", sampleRate: 22050, voice: "7310", out: null, outdir: "tts-out", user: null, pass: null };
+  const opts = { speed: 1.0, pitch: 0, volume: 100, format: "mp3", sampleRate: 22050, voice: "7310", out: null, outdir: "tts-out", user: null, pass: null, pause: null };
   const positional = [];
-  const map = { "--voice": "voice", "--speed": "speed", "--pitch": "pitch", "--volume": "volume", "--format": "format", "--rate": "sampleRate", "--out": "out", "--outdir": "outdir", "--user": "user", "--pass": "pass" };
+  const map = { "--voice": "voice", "--speed": "speed", "--pitch": "pitch", "--volume": "volume", "--format": "format", "--rate": "sampleRate", "--out": "out", "--outdir": "outdir", "--user": "user", "--pass": "pass", "--pause": "pause" };
   for (let i = 0; i < args.length; i++) {
     if (map[args[i]]) opts[map[args[i]]] = args[++i];
     else positional.push(args[i]);
@@ -150,6 +48,7 @@ function parseOpts(args) {
   opts.pitch = parseInt(opts.pitch, 10);
   opts.volume = parseInt(opts.volume, 10);
   opts.sampleRate = parseInt(opts.sampleRate, 10);
+  opts.pauseCfg = parsePause(opts.pause);
   return { opts, positional };
 }
 
@@ -182,7 +81,7 @@ try {
       if (!text) throw new Error("No text given");
       const voiceCfg = await resolveVoice(String(opts.voice), api);
       console.log(`Synthesizing ${text.length} chars with voice ${voiceCfg.voice} [${voiceCfg.flow}]...`);
-      const url = await synthesize(api, { text, flow: voiceCfg.flow, voice: voiceCfg.voice, speed: opts.speed, pitch: opts.pitch, volume: opts.volume, format: opts.format, sampleRate: opts.sampleRate });
+      const url = await synthesize(api, { text, flow: voiceCfg.flow, voice: voiceCfg.voice, speed: opts.speed, pitch: opts.pitch, volume: opts.volume, format: opts.format, sampleRate: opts.sampleRate, pauseCfg: opts.pauseCfg });
       const out = await download(url, opts.out || `tts-${Date.now()}`);
       console.log(`Saved: ${out}`);
     } else if (cmd === "file") {
@@ -192,7 +91,7 @@ try {
       if (!text) throw new Error("Input file is empty");
       const voiceCfg = await resolveVoice(String(opts.voice), api);
       console.log(`Synthesizing ${text.length} chars from ${input} with voice ${voiceCfg.voice} [${voiceCfg.flow}]...`);
-      const url = await synthesize(api, { text, flow: voiceCfg.flow, voice: voiceCfg.voice, speed: opts.speed, pitch: opts.pitch, volume: opts.volume, format: opts.format, sampleRate: opts.sampleRate });
+      const url = await synthesize(api, { text, flow: voiceCfg.flow, voice: voiceCfg.voice, speed: opts.speed, pitch: opts.pitch, volume: opts.volume, format: opts.format, sampleRate: opts.sampleRate, pauseCfg: opts.pauseCfg });
       const base = path.basename(input, path.extname(input));
       const out = await download(url, path.join(opts.outdir, base));
       console.log(`Saved: ${out}`);

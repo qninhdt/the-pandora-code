@@ -7,6 +7,27 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 const withMDX = createMDX();
 
+function staticMediaPattern(): NonNullable<NonNullable<NextConfig["images"]>["remotePatterns"]> {
+  const raw = process.env.NEXT_PUBLIC_STATIC_BASE?.trim();
+  if (!raw) return [];
+
+  try {
+    const url = new URL(raw);
+    if (url.protocol !== "http:" && url.protocol !== "https:") return [];
+    const pathname = url.pathname.replace(/\/+$/, "");
+    return [
+      {
+        protocol: url.protocol.slice(0, -1) as "http" | "https",
+        hostname: url.hostname,
+        ...(url.port ? { port: url.port } : {}),
+        pathname: pathname ? `${pathname}/**` : "/**",
+      },
+    ];
+  } catch {
+    return [];
+  }
+}
+
 const nextConfig: NextConfig = {
   outputFileTracingExcludes: {
     "*": [
@@ -28,6 +49,7 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
     qualities: [68, 75, 78],
+    remotePatterns: staticMediaPattern(),
   },
   typedRoutes: false,
   // r3f/three ship untranspiled ESM; transpile so Next can bundle them.

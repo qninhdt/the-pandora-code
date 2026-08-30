@@ -16,7 +16,8 @@
     "audit:reading-time": "tsx scripts/audit-reading-time.ts",
     "build:search-index": "tsx scripts/build-search-index.ts",
     "build:image-manifest": "tsx scripts/build-image-manifest.ts",
-    "prebuild": "tsx scripts/validate-content.ts && tsx scripts/build-search-index.ts && tsx scripts/build-image-manifest.ts && tsx scripts/build-offline-manifest.ts && fumadocs-mdx",
+    "build:audio-manifest": "tsx scripts/build-audio-manifest.ts",
+    "prebuild": "tsx scripts/validate-content.ts && tsx scripts/build-search-index.ts && tsx scripts/build-image-manifest.ts && tsx scripts/build-audio-manifest.ts && tsx scripts/build-offline-manifest.ts && fumadocs-mdx",
     "postinstall": "fumadocs-mdx"
   },
   "dependencies": {

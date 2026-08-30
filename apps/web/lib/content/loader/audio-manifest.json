@@ -1,0 +1,226 @@
+{
+  "chapters": {
+    "from-stardust-to-pandora": {
+      "vi": {
+        "audioUrl": "/audio/chapters/from-stardust-to-pandora/vi/from-stardust-to-pandora.vi.mp3",
+        "duration": 2490.408,
+        "sections": [
+          {
+            "sectionId": "sec-00",
+            "title": null,
+            "start": 0,
+            "end": 109.54
+          },
+          {
+            "sectionId": "sec-01",
+            "title": "Vũ trụ gần như chẳng có gì để xây",
+            "start": 109.54,
+            "end": 259.02
+          },
+          {
+            "sectionId": "sec-02",
+            "title": "Đọc tờ biên nhận",
+            "start": 259.02,
+            "end": 490.72
+          },
+          {
+            "sectionId": "sec-03",
+            "title": "Chuyện đó dẫn tới câu hỏi khi nào",
+            "start": 490.72,
+            "end": 620.18
+          },
+          {
+            "sectionId": "sec-04",
+            "title": "Các nhà máy nằm ở đâu",
+            "start": 620.18,
+            "end": 934.7
+          },
+          {
+            "sectionId": "sec-05",
+            "title": "Một đám mây không thể không rơi",
+            "start": 934.7,
+            "end": 1092.7
+          },
+          {
+            "sectionId": "sec-06",
+            "title": "Cái đĩa tự phân loại nguyên liệu của nó",
+            "start": 1092.7,
+            "end": 1180.52
+          },
+          {
+            "sectionId": "sec-07",
+            "title": "Khoảng trống ở giữa quá trình hình thành hành tinh",
+            "start": 1180.52,
+            "end": 1368.58
+          },
+          {
+            "sectionId": "sec-08",
+            "title": "Và bây giờ là mặt trăng",
+            "start": 1368.58,
+            "end": 1743.52
+          },
+          {
+            "sectionId": "sec-09",
+            "title": "Những gì khối lượng riêng đã kể cho ta",
+            "start": 1743.52,
+            "end": 1902.92
+          },
+          {
+            "sectionId": "sec-10",
+            "title": "Hai vấn đề mà lòng sâu giải quyết cùng một lúc",
+            "start": 1902.92,
+            "end": 2067.28
+          },
+          {
+            "sectionId": "sec-11",
+            "title": "Nước để lại dấu vân tay",
+            "start": 2067.28,
+            "end": 2274.02
+          },
+          {
+            "sectionId": "sec-12",
+            "title": "Quay lại với hòn đá",
+            "start": 2274.02,
+            "end": 2490.38
+          }
+        ]
+      }
+    },
+    "reading-pandora-as-a-specimen": {
+      "vi": {
+        "audioUrl": "/audio/chapters/reading-pandora-as-a-specimen/vi/reading-pandora-as-a-specimen.vi.mp3",
+        "duration": 1837.512,
+        "sections": [
+          {
+            "sectionId": "sec-00",
+            "title": null,
+            "start": 0,
+            "end": 134.04
+          },
+          {
+            "sectionId": "sec-01",
+            "title": "Rắc rối với một thế giới được xây dựng quá cẩn trọng",
+            "start": 134.04,
+            "end": 321.78
+          },
+          {
+            "sectionId": "sec-02",
+            "title": "Đây là loại phát biểu gì?",
+            "start": 321.78,
+            "end": 398.38
+          },
+          {
+            "sectionId": "sec-03",
+            "title": "Cách một vũ trụ hư cấu phán định đâu là sự thật",
+            "start": 398.38,
+            "end": 628.76
+          },
+          {
+            "sectionId": "sec-04",
+            "title": "Cách thế giới thực chấm điểm các nhận định của mình",
+            "start": 628.76,
+            "end": 902.86
+          },
+          {
+            "sectionId": "sec-05",
+            "title": "Vạch ra ranh giới: khoa học, và tất cả những thứ đang bắt chước nó",
+            "start": 902.86,
+            "end": 1074.76
+          },
+          {
+            "sectionId": "sec-06",
+            "title": "Nấc thang lửng lơ: nơi trú ngụ của những suy đoán cẩn trọng",
+            "start": 1074.76,
+            "end": 1296.42
+          },
+          {
+            "sectionId": "sec-07",
+            "title": "Khi sàn nhà sập xuống: sự phỏng đoán bị xích lại",
+            "start": 1296.42,
+            "end": 1534.78
+          },
+          {
+            "sectionId": "sec-08",
+            "title": "Bốn cấp độ dẫn dắt toàn bộ cuốn sách này",
+            "start": 1534.78,
+            "end": 1656.32
+          },
+          {
+            "sectionId": "sec-09",
+            "title": "Bản thân cuốn sách này là gì, tự soi chiếu bằng chính thước đo của nó",
+            "start": 1656.32,
+            "end": 1837.48
+          }
+        ]
+      }
+    },
+    "where-is-pandora": {
+      "vi": {
+        "audioUrl": "/audio/chapters/where-is-pandora/vi/where-is-pandora.vi.mp3",
+        "duration": 2756.76,
+        "sections": [
+          {
+            "sectionId": "sec-00",
+            "title": null,
+            "start": 0,
+            "end": 131.36
+          },
+          {
+            "sectionId": "sec-01",
+            "title": "Địa chỉ, theo như chính sử ghi nhận",
+            "start": 131.36,
+            "end": 453.66
+          },
+          {
+            "sectionId": "sec-02",
+            "title": "Nơi một thế giới được phép ấm áp",
+            "start": 453.66,
+            "end": 769.42
+          },
+          {
+            "sectionId": "sec-03",
+            "title": "Hai mặt trời, và những quỹ đạo sống sót qua vòng bủa vây",
+            "start": 769.42,
+            "end": 1102.08
+          },
+          {
+            "sectionId": "sec-04",
+            "title": "Rắc rối và món quà của việc làm một mặt trăng",
+            "start": 1102.08,
+            "end": 1382.36
+          },
+          {
+            "sectionId": "sec-05",
+            "title": "Vành đai, và khe hở nơi Pandora ẩn nấp",
+            "start": 1382.36,
+            "end": 1610.72
+          },
+          {
+            "sectionId": "sec-06",
+            "title": "Làm thế nào để tìm thấy một thế giới vô hình",
+            "start": 1610.72,
+            "end": 1899.26
+          },
+          {
+            "sectionId": "sec-07",
+            "title": "Kính viễn vọng của chúng ta sẽ thực sự nhìn thấy gì ở Alpha Centauri A",
+            "start": 1899.26,
+            "end": 2234.6
+          },
+          {
+            "sectionId": "sec-08",
+            "title": "Chỗ mà câu chuyện ăn gian",
+            "start": 2234.6,
+            "end": 2620.62
+          },
+          {
+            "sectionId": "sec-09",
+            "title": "Trở lại mỏm đá",
+            "start": 2620.62,
+            "end": 2756.72
+          }
+        ]
+      }
+    }
+  }
+}

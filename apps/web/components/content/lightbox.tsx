@@ -1,5 +1,6 @@
 "use client";
 
+import { staticUrl } from "@/lib/static-url";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import { useCallback, useEffect, useState } from "react";
@@ -35,17 +36,20 @@ export function LightboxImage({
   wrapperClassName,
   labels,
 }: LightboxImageProps) {
+  const resolvedSrc = staticUrl(src);
   return (
     <button
       type="button"
       className={cn("group block w-full cursor-zoom-in", wrapperClassName)}
-      onClick={() => window.dispatchEvent(new CustomEvent(OPEN_EVENT, { detail: { src } }))}
+      onClick={() =>
+        window.dispatchEvent(new CustomEvent(OPEN_EVENT, { detail: { src: resolvedSrc } }))
+      }
       aria-label={alt ? `Phóng to: ${alt}` : "Phóng to ảnh"}
     >
       <img
-        data-lightbox-src={src}
+        data-lightbox-src={resolvedSrc}
         data-lightbox-labels={labels?.length ? JSON.stringify(labels) : undefined}
-        src={src}
+        src={resolvedSrc}
         alt={alt ?? ""}
         className={cn(
           "w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]",
@@ -71,7 +75,7 @@ export function Lightbox() {
       const src = (e as CustomEvent<{ src: string }>).detail?.src;
       const nodes = Array.from(document.querySelectorAll<HTMLImageElement>("[data-lightbox-src]"));
       const list: AnnoSlide[] = nodes.map((n) => ({
-        src: n.getAttribute("data-lightbox-src") ?? n.src,
+        src: staticUrl(n.getAttribute("data-lightbox-src") ?? n.src),
         alt: n.alt,
         labels: parseLabels(n.getAttribute("data-lightbox-labels")),
       }));

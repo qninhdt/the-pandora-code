@@ -474,10 +474,10 @@
     "forestEvidence": {
       "title": "Lập bản đồ bằng chứng",
       "subtitle": "Phần nào là định luật đã được chứng minh, phần nào là suy luận",
-      "hint": "Bấm vào một tuyên bố để xem cơ sở của nó và liệu nó đến từ khoa học Trái Đất, truyền thuyết (canon) hay chỉ là phỏng đoán.",
+      "hint": "Bấm vào một tuyên bố để xem cơ sở của nó và liệu nó đến từ khoa học thực chứng, nguyên tác hay chỉ là phỏng đoán.",
       "trustAxis": "Trục độ tin cậy →",
-      "tierScience": "Khoa học Trái Đất thực thụ",
-      "tierCanon": "Xuất hiện trong truyền thuyết",
+      "tierScience": "Khoa học thực chứng",
+      "tierCanon": "Xuất hiện trong nguyên tác",
       "tierInference": "Suy luận",
       "tierSpeculation": "Phỏng đoán",
       "claims": {

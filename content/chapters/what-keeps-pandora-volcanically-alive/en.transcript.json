@@ -1,0 +1,195 @@
+{
+  "chapter": "what-keeps-pandora-volcanically-alive",
+  "locale": "en",
+  "title": "What Keeps Pandora Volcanically Alive",
+  "source": {
+    "file": "en.mdx",
+    "sha256": "657f58322a095a114d95b0835b9887ce465a7201635ca06fe6a4ca45105cc6ab"
+  },
+  "sections": [
+    {
+      "id": "sec-00",
+      "title": null,
+      "blocks": [
+        {
+          "type": "figure",
+          "figNo": "01",
+          "text": "[Figure 1] Where a forest used to be. A generation before the events the Mangkwan now live through, a volcanic eruption buried their homeland and their Hometree under ash and lava, leaving shattered stumps and active volcanic fissures. The physicist's question is quieter than their grief: where did all that heat come from?"
+        },
+        {
+          "type": "p",
+          "text": "Stand for a moment where the Mangkwan stand. Their ground is black. Not the black of rich soil but the black of cooled lava and packed ash, a plain that stretches to a horizon smudged with smoke. Somewhere under their feet, by the reckoning the clan keeps in its songs, there was once a forest , canopy and root, birdsong and glow , and at its heart a Hometree older than memory. A generation ago, more or less, the mountain that fed this land woke up and took it all. The eruption incinerated the tree, buried the biome under meters of tephra, and severed the living threads that had bound the place to the rest of Pandora. The people who walked out of that ash were changed by it. They took a new name for the land , the Ashlands , and a harder way of living, and they learned to wield fire as both tool and weapon, because fire was the thing that had unmade them. That is a story about loss, and it belongs to the Mangkwan. But standing on their black plain, a visiting scientist would feel a second question rising underneath the first, cooler and more stubborn: where did the heat come from? Not the flame of one eruption , the whole furnace behind it. Because a mountain does not simply decide to erupt. Molten rock has to be made, somewhere down in the dark, and making molten rock takes an enormous and continuous supply of energy. On a world the size and age of Pandora, that supply is not supposed to exist. And yet here is the evidence, black underfoot, stretching to the smoke."
+        }
+      ]
+    },
+    {
+      "id": "sec-01",
+      "title": "A world that should be cold",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Heat, for a planet or a moon, is a bank account that mostly only ever gets smaller. A rocky world is born hot , hot from the sheer violence of its assembly, as countless smaller bodies crash together and their motion turns to heat, and hotter still as its iron sinks to the center and gives up gravitational energy on the way down. That is the opening balance: primordial heat, the warmth a world is simply born with. From the first day, it begins to leak away into the cold of space, and nothing puts it back. There is a second, slower deposit. Scattered through the rock of any world are unstable atoms , uranium, thorium, a variety of potassium , that break down on their own timetables, each decay releasing a flick of heat. This is radiogenic heating, and for a body like Earth it supplies a large share of the warmth still flowing out through the ground. But it too is a dwindling fund: every uranium atom that decays is one that will never decay again, so the radioactive fire burns lower with every passing eon. Run the clock back and the young Earth glowed with several times the radiogenic heat it makes today. Now the cruel arithmetic. How fast a world loses heat depends on its surface; how much heat it has to lose depends on its volume. Shrink a world and its surface falls as the square of its size while its volume , its heat store , falls as the cube. So small worlds have proportionally more skin to bleed through and less warmth inside to bleed, and they die young. Earth's Moon is a stone that cooled to its core long ago: no volcanoes, no shifting crust, a single frozen plate pocked with ancient craters. Mercury is much the same, wrinkled like an old apple by the contraction of its own cooling. Mars, bigger, held on longer but has largely gone quiet. The rule is simple and merciless , the smaller the world, the sooner the fire goes out."
+        },
+        {
+          "type": "figure",
+          "figNo": "02",
+          "text": "[Figure 2] The fate a small world expects. A body the size of Pandora is born with a store of heat and a slow radioactive fire, then radiates it away faster than it can hold on, cooling to a dead grey cratered stone like Earth's Moon within a couple of billion years."
+        },
+        {
+          "type": "p",
+          "text": "Pandora fails this test spectacularly. It is smaller than Earth , a little under nine-tenths of Earth's radius, by the figures in the official field guides , and it is old, roughly the age of its star, four and a half billion years or more. Worse, the impact that shaped its early history is said to have torn open its iron core, which should have helped it shed heat faster. Add up the primordial warmth and the radioactive fire for a body that size and age, and the sum is a cold, still world: dead volcanoes, a frozen crust, a quiet interior. That is the honest prediction. And it is flatly wrong. Pandora has active volcanism vigorous enough to bury a clan's homeland within living memory. Its crust shifts and rifts. Its magnetic environment is ferocious. Something is pouring heat into this moon that the ordinary two-part budget cannot supply. The whole rest of this chapter is the search for that something , and the discipline to reject the wrong answer even when it is the popular one."
+        }
+      ]
+    },
+    {
+      "id": "sec-02",
+      "title": "The dough and the hands",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The missing engine is not exotic. We watch it run in our own outer Solar System, and it turns on a single idea: flexing rock makes heat. Take a moon and set it close to a giant planet. The planet's gravity does not pull equally on every part of the moon , the near side is tugged harder than the far side, and the whole body is stretched slightly along the line to the planet, drawn into a faint egg shape. If the moon travelled on a perfect circle, that egg would simply hold its shape and point forever at the planet, and nothing would happen. But orbits are rarely perfect circles. On a slightly oval orbit the moon swings nearer and then farther with every lap, so the stretching rises and falls, and the tidal bulge swells and subsides and rocks back and forth across the moon's face. The moon is kneaded , worked like a ball of dough turned over and over in the hands. Kneading dough warms it, and for the same reason. Rock is not perfectly springy; when you flex it and let it relax, a little of the work does not come back as motion but stays behind as heat, lost to internal friction. Flex a whole moon this way, billions of times over billions of years, and that trickle of friction becomes a torrent of heat welling up from inside. This is tidal heating, or tidal dissipation, and it does not care how small the moon is or how long ago it formed. It is not a bank account being drawn down. It is a furnace fed from the outside, by the orbit itself."
+        },
+        {
+          "type": "figure",
+          "figNo": "03",
+          "text": "[Figure 3] Hugging the giant Polyphemus, Pandora is stretched into a visible egg shape, hardest when it swings near and least when it swings far. This squeeze rises and falls on every lap, kneading the rock and warming it from within."
+        },
+        {
+          "type": "p",
+          "text": "Jupiter's moon Io is the proof made visible. Io is racked by tides so fierce that its whole surface is a churn of sulphur and molten rock, hundreds of active volcanoes throwing plumes hundreds of kilometers into space , the most volcanically violent body in the Solar System, and one of the oldest, as old as Jupiter itself. Its neighbour Europa is flexed more gently, enough to keep a global ocean of liquid water sloshing beneath an icy shell. Both worlds are ancient and both are alive, and neither would be either without the tides. Pandora, hugging the giant Polyphemus, sits squarely in this family. Tidal heating is exactly the kind of engine that could keep a small, old moon molten enough to bury the Mangkwan."
+        },
+        {
+          "type": "figure",
+          "figNo": "04",
+          "text": "[Figure 4] How tidal heat reaches the surface. The flexed interior melts and magma races up narrow conduits to erupt, burying older crust and dragging it back down, a heat pipe that keeps the outer shell cold and thick while pouring lava out the top."
+        },
+        {
+          "type": "p",
+          "text": "But naming the engine is not the same as showing it can do the work. For that we need numbers."
+        }
+      ]
+    },
+    {
+      "id": "sec-03",
+      "title": "How hard is the squeeze?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Here is the pleasing thing about tidal heating: unlike much of what a distant moon hides from us, it can be written as a single, honest equation, and the equation tells you what matters and how much. The heat a flexed moon makes climbs with a few quantities you can almost feel. It rises steeply with the moon's size , a bigger ball of dough has more rock to knead. It rises steeply with how close and fast the moon orbits , the harder and more often you work the dough, the warmer it gets. And it rises with the square of how oval the orbit is: double the ovalness and you quadruple the heat. That last term is the crucial one, because a moon on a nearly circular orbit, however large or close, makes almost no tidal heat at all. The ovalness , the eccentricity, in the trade , is the throttle on the whole engine. Two properties of the moon's own rock finish the picture: how readily its interior deforms under the pull (captured in a number called the Love number), and how much of each flex is lost to friction rather than sprung back (captured in a quality factor). A warm, soft, partly molten interior dissipates far more than a cold rigid one , which sets up a feedback a careful reader will already sense: heating softens the rock, and softer rock heats more. You do not have to take the equation on faith. The figure below is the equation, made turnable. Feed it Pandora's real size and orbital speed from the field guides, then move the two dials you cannot read off a screen from four light-years away , how oval the orbit is, and how freely the mantle gives , and watch where Pandora lands against the Moon, the Earth, and Io."
+        },
+        {
+          "type": "p",
+          "text": "The tidal furnace equation can be made turnable, showing how the scale of heat escaping each square meter of surface changes as you slide the orbital ovalness and the mantle's give."
+        },
+        {
+          "type": "p",
+          "text": "Work the dials and a clear story falls out. Set the orbit almost circular and Pandora goes cold , the engine starves, and the moon reverts to the dead stone its size predicts. Nudge the ovalness up to a mere thousandth, the gentlest departure from a circle, and the moon lights up: a few hundred trillion watts of internal heat, spread over its surface at close to eight-tenths of a watt per square meter. That is about nine times the heat flowing out of the Earth , plenty to drive relentless volcanism and shifting crust , and yet comfortably short of the runaway that would boil the oceans and sterilize the biosphere. Push the dials to Io's own values and Pandora tips into that hellish regime, too hot for a living world. The habitable-but-vigorous middle, the band that fits everything the films show, sits at a whisper of orbital ovalness. The engine works. Pandora can be exactly as fiery as the Ashlands demand, on a squeeze almost too small to notice. Almost too small to notice , and there lies the last puzzle."
+        }
+      ]
+    },
+    {
+      "id": "sec-04",
+      "title": "The engine needs a pump",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Tides make heat from an oval orbit. But tides also, patiently, erase the ovalness they feed on. Every flex that warms the rock steals a little energy from the orbit, and the natural tendency of that theft is to round the orbit out , to pull it toward the perfect circle on which no flexing happens and no heat is made. Left alone, a tidally heated moon files down its own eccentricity and, in doing so, switches off its own furnace. The calculation is not close: for a large moon hugging a giant planet, the rounding-out would be complete in a small fraction of the moon's age. By now Pandora's orbit should be a circle, and Pandora should be cold. The engine we just built to save the moon appears to destroy itself. Io faces exactly this problem and survives it, and how it survives is the key that fits Pandora's lock. Io does not orbit Jupiter alone. It shares the giant with sister moons, and their orbits are tuned to simple whole-number rhythms: in the time Io takes to lap Jupiter once, the next moon out, Europa, goes exactly half as often, and Ganymede beyond it a quarter as often , a clean four-to-two-to-one lockstep. This is a mean-motion resonance, and the particular three-body version binding these moons is called the Laplace resonance. Because the moons return to the same alignment again and again, their gravitational tugs on one another do not average away but accumulate, pulling steadily on each orbit and holding it slightly oval against the tides' relentless rounding. The resonance is the pump that keeps the throttle open. Without the sister moons, Io's fires would have gone out billions of years ago."
+        },
+        {
+          "type": "figure",
+          "figNo": "05",
+          "text": "[Figure 5] The pump behind the furnace. Jupiter's inner moons circle in a tidy four to two to one rhythm, so their gravitational tugs line up and repeat instead of cancelling. That steady pull keeps Io's orbit just oval enough to stay molten."
+        },
+        {
+          "type": "note",
+          "kind": "whatthismeans",
+          "text": "What this means: A small moon that stays geologically alive for billions of years is telling you something about its neighbours. Tidal heat needs an oval orbit; an oval orbit decays unless a resonance with sibling moons keeps pumping it. So the living heat of a lone-looking moon is really evidence of a hidden family. Point a thermal camera at Io and you are, in effect, detecting Europa and Ganymede. The same logic works for any world: sustained internal heat plus small size is a fingerprint that says look for the other moons."
+        },
+        {
+          "type": "p",
+          "text": "Here the science quietly hands the story a prediction. For Pandora to have burned hot enough, long enough, to build the Ashlands, it most likely needs to be locked in a resonance with other moons of Polyphemus , sibling worlds whose repeated tugs keep its orbit just oval enough to flex. Canon notes that Polyphemus has a retinue of other satellites but never assigns them the orbits or the resonance this would require; the films never show the dance. Yet the physics all but insists on it. It is one of those places where taking a fictional world seriously as a specimen generates a testable claim the fiction never made: somewhere out there, Pandora has siblings keeping it warm."
+        }
+      ]
+    },
+    {
+      "id": "sec-05",
+      "title": "The furnace that isn't there",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Now for the answer we have to reject , and rejecting it well is as much a part of science as finding the right one. Pandora's most spectacular feature is magnetic. Deep in its crust lies unobtanium, a room-temperature superconductor, and where it concentrates the moon's magnetic fields run wild: whole mountains of the Hallelujah range hang in the air, and vortices of flux twist over the land. It is enormously tempting , and a staple of loose talk about Pandora , to reach for that magnetism as the source of the moon's heat and its volcanism. A world this magnetically ferocious, the reasoning goes, must be magnetically powered. It is a natural leap. It is also wrong, and the reason it is wrong is one of the cleanest results in physics. A magnetic field, by its nature, does no work. The force it exerts on a moving charged particle always points sideways to the particle's motion , perpendicular, exactly and always , and a sideways push can bend a path but can never speed it up, never add energy. A magnetic field can steer; it cannot power. So a steady magnetic field, however monstrous, pours precisely zero energy into the rock it threads. You cannot heat a world by parking it in a strong field, any more than you can warm your hands by holding them near a fridge magnet. The field strength is a red herring; strength is not energy delivered. There is one honest loophole, and it is important to grant it rather than pretend it away. A changing magnetic field , one that grows and shrinks in time , does induce electric currents in a conductor, and those currents do warm it, the way a pan heats on an induction stove. A moon sweeping through the lumpy magnetic field of a giant planet feels exactly this kind of variation, so the effect is real and not zero. But real is not the same as relevant. When you actually compute the induction heating for a rocky moon in a planetary magnetosphere, the number lands somewhere around a hundred million watts , and the tidal furnace we metered earlier runs to a few hundred trillion. The magnetic contribution is smaller by a factor of a million or more. It is a candle held up beside a bonfire. Worse for the trope, unobtanium's superconductivity actively expels magnetic fields from its interior , the Meissner effect , so the very mineral invoked as the magnetic heater is the one material that refuses to let the field inside at all."
+        },
+        {
+          "type": "figure",
+          "figNo": "06",
+          "text": "[Figure 6] Lift is not heat. Superconducting unobtanium pins magnetic flux, letting colossal cold rock masses float in the sky. But a static magnetic field does zero work on the stone it lifts, and the true furnace is the deep tidal churning miles below."
+        },
+        {
+          "type": "p",
+          "text": "A ledger of three candidate heat sources for Pandora shows that tidal flexing and radioactive decay tower in the hundreds of trillions and tens of trillions of watts, while magnetic induction sits five to seven steps below, a candle beside a bonfire."
+        },
+        {
+          "type": "p",
+          "text": "And there is a final tidy irony worth pausing on. Pandora almost certainly has a magnetic field of its own, generated deep in its churning metal core , a planetary dynamo, the same kind of engine that gives Earth its compass field. But a dynamo does not make heat; it consumes it. It is the moon's internal heat, driving the slow convection of molten metal, that generates the magnetic field as a by-product. Cause and effect run exactly opposite to the folk story. The magnetism is not the furnace's fuel. It is the furnace's smoke."
+        },
+        {
+          "type": "note",
+          "kind": "whatthismeans",
+          "text": "What this means: When something looks powered by a dramatic force, ask the accountant's question before the poet's: how many watts, and from where? A static magnetic field does zero work , its push is always sideways to motion , so field strength, however awesome, is not energy delivered. Even the honest loophole, a changing field inducing currents, comes up a millionfold short here. And a planet's magnetic field is generally a product of its internal heat, not the source of it. The rule generalizes far past Pandora: a real heat source has to balance an energy ledger, and \"it's magnetic\" almost never does."
+        }
+      ]
+    },
+    {
+      "id": "sec-06",
+      "title": "The Ashlands, accounted for",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "So return to the black plain, and put the pieces together into a single sentence a physicist could defend. Pandora is kept molten not by the heat it was born with, which has largely leaked away, nor mainly by the radioactive fire in its rocks, which has burned low with age, but by tidal heating: the ceaseless kneading of its interior by the gravity of Polyphemus, throttled by a slightly oval orbit that a resonance with sibling moons keeps from rounding out. That engine delivers a few hundred trillion watts to the moon's interior , of order nine times Earth's heat flow , enough to keep the mantle stirring, to drive convection that hauls heat to the base of the crust, to melt rock where the pressure drops, and to feed a surface as volcanically busy as any in the films. A world running that hot does not erupt gently. Earth's own most catastrophic eruptions , the ones that drop ash across continents and collapse a mountain into a caldera overnight , sit near the top of the volcanic explosivity index, and Pandora, with several times Earth's heat driving its magma, should produce them more readily, not less. An eruption of that class does not merely burn a forest. It sends pyroclastic density currents , ground-hugging avalanches of superheated gas and ash moving faster than a stormwind , racing across the land, incinerating everything they touch, and it buries what remains under meters of tephra that smother the soil for a generation. The severing of the Mangkwan's living connection to the wider biosphere, the black barrens that will not green again for decades, the clan's turn to fire and hardness , all of it follows from a single overdriven eruption, and the eruption follows from the tidal furnace, and the furnace follows from the orbit. The grief is theirs. The mechanism is the same one that lights Io's sky."
+        },
+        {
+          "type": "figure",
+          "figNo": "07",
+          "text": "[Figure 7] The catastrophe that made the Ashlands. Driven by tidal heat several times Earth's baseline, high caldera collapses unleash pyroclastic density currents that incinerate biomes in minutes, burying forests under meters of suffocating ash."
+        },
+        {
+          "type": "p",
+          "text": "The Ashlands, in other words, are a receipt. They are what it looks like, at ground level and human scale, when a moon is squeezed hard enough by its giant to stay alive four and a half billion years past its due date."
+        },
+        {
+          "type": "p",
+          "text": "Tracing a small world's three heat sources across its whole life shows that only tidal flexing stays high across deep time."
+        }
+      ]
+    },
+    {
+      "id": "sec-07",
+      "title": "Honest edges",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "What is solid here, and what is inference dressed in confidence? The physics is solid , it is ordinary planetary science, tested against real moons. Tidal heating, the eccentricity throttle, the resonance pump, the induction ledger, the dynamo's true direction of cause: none of it is speculative, and Io and Europa are the living proof. What canon actually states is narrower: that the Mangkwan's homeland was destroyed by a volcanic eruption, that Pandora is volcanically and magnetically active, that Polyphemus carries a family of moons. Everything connecting those facts to the tidal engine is inference , strong inference, but inference. And a few real gaps remain, the kind worth naming rather than papering over."
+        },
+        {
+          "type": "note",
+          "kind": "openquestions",
+          "text": "The questions that stay open: Which sibling moons keep Pandora's orbit oval , and are they really in resonance? Canon gives Polyphemus a retinue of satellites but never their orbits or periods. How oval is Pandora's orbit, exactly? No canonical figure exists. How does an ancient, stable biosphere coexist with catastrophic volcanism? A world hot enough to bury the Mangkwan is a world that periodically wrecks its own ecosystems. Why do the official guides disagree on Pandora's size? Different companion books assign the moon noticeably different masses and radii, which shifts the tidal numbers."
+        },
+        {
+          "type": "p",
+          "text": "None of these gaps threatens the core result. They are the places where a real expedition would point its instruments first , and where the story, if it ever chose to, could turn a prediction into canon."
+        }
+      ]
+    },
+    {
+      "id": "sec-08",
+      "title": "The fire, read",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Go back one last time to the Mangkwan on their plain of ash. To them the black ground is a wound, and it should be. But a visitor who understood what they were standing on would see something the grief cannot: that the eruption which unmade their home was not a curse, not an accident of an angry mountain, but the surface expression of a magnificent piece of machinery. Far above, unseen, sibling moons swing through their rhythmic laps and tug Pandora's orbit a hair away from a circle. That whisper of ovalness lets Polyphemus knead the moon on every pass. The kneading warms the rock; the warm rock rises and melts; the melt finds a weakness and, once in a long while, tears the surface open. The Ashlands are the far end of that chain , the point where an orbital resonance four hundred thousand kilometers out becomes ash under a survivor's feet. It is not magnetism, for all the moon's magnetic splendor; a field that does no work cannot melt a stone. It is not the fading warmth of Pandora's birth, nor the guttering radioactive fire, either of which would long since have let a moon this small go cold. It is gravity, and geometry, and the patient rhythm of moons , the same forces that light Io's sky, running under a different giant, for a people who will never see the machine that took their forest. The physicist's question, asked on the black plain, has an answer. The moon is alive because it is squeezed, and it is squeezed because it is not alone."
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 "use client";
 
-import { SegmentedToggle } from "@/components/content/viz/segmented-toggle";
 import { GlowDefs, glowUrl } from "@/components/content/viz/glow-defs";
+import { SegmentedToggle } from "@/components/content/viz/segmented-toggle";
 import { VizFigure } from "@/components/content/viz/viz-figure";
 import { VizReadout } from "@/components/content/viz/viz-readout";
 import { VizText } from "@/components/content/viz/viz-svg-text";

@@ -57,6 +57,22 @@
     "showAllLabels": "Hiện chú thích trên mọi hình",
     "language": "Ngôn ngữ"
   },
+  "audio": {
+    "play": "Phát",
+    "pause": "Tạm dừng",
+    "nextSection": "Phần tiếp theo",
+    "prevSection": "Phần trước",
+    "speed": "Tốc độ phát",
+    "currentTime": "Thời điểm hiện tại",
+    "duration": "Thời lượng",
+    "intro": "Mở đầu",
+    "followReading": "Theo dõi khi đọc",
+    "unavailable": "Âm thanh không khả dụng cho phần này",
+    "player": "Trình phát chương",
+    "close": "Đóng trình phát",
+    "listenChapter": "Nghe chương này",
+    "listenMinutes": "{minutes} phút"
+  },
   "search": {
     "trigger": "Tìm kiếm",
     "placeholder": "Tìm chương, thuật ngữ, chủ đề…",
@@ -193,7 +209,7 @@
   "sources": {
     "heading": "Nguồn",
     "kinds": {
-      "canon": "Canon",
+      "canon": "Nguyên tác",
       "science": "Khoa học",
       "community": "Cộng đồng",
       "research-note": "Ghi chú NC",

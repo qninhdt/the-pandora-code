@@ -1,6 +1,7 @@
 "use client";
 
 import { useReducedMotionSafe } from "@/components/motion/use-reduced-motion-safe";
+import { staticUrl } from "@/lib/static-url";
 import Image from "next/image";
 import type { ReactNode } from "react";
 
@@ -38,7 +39,7 @@ export function LandingScene({ variant, children }: LandingSceneProps) {
       {art && (
         <div aria-hidden className="pointer-events-none absolute inset-0 z-0">
           <Image
-            src={art}
+            src={staticUrl(art)}
             alt=""
             fill
             priority={variant === "hero"}

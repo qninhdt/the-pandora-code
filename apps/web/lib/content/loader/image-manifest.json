@@ -15,7 +15,7 @@
     "how-the-wind-traders-navigate-a-planet": "/images/chapters/how-the-wind-traders-navigate-a-planet/fig-00-cover.webp",
     "kiri-and-the-writable-biosphere": "/images/chapters/kiri-and-the-writable-biosphere/fig-00-cover.webp",
     "life-after-the-volcano": "/images/chapters/life-after-the-volcano/fig-00-cover.webp",
-    "materials-of-life": "/images/chapters/materials-of-life/fig-01-navi-longbow-materials-of-life.webp",
+    "materials-of-life": "/images/chapters/materials-of-life/fig-00-cover-materials-of-life.webp",
     "origins-of-life-on-pandora": "/images/chapters/origins-of-life-on-pandora/fig-00-cover.webp",
     "pandoran-plate-tectonics": "/images/chapters/pandoran-plate-tectonics/fig-00-cover.webp",
     "pandoran-tree-of-life": "/images/chapters/pandoran-tree-of-life/fig-00-cover.webp",
@@ -669,5 +669,12 @@
     "zermelo-navigation-problem": "/images/glossary/zermelo-navigation-problem.webp",
     "zircon": "/images/glossary/zircon.webp",
     "zooxanthellae": "/images/glossary/zooxanthellae.webp"
+  },
+  "pageBackgrounds": {
+    "chapters": "/images/pages/chapters.png",
+    "glossary": "/images/pages/glossary.png",
+    "authors": "/images/pages/authors.png",
+    "parts": "/images/pages/parts.png",
+    "timeline": "/images/pages/timeline.png"
   }
 }

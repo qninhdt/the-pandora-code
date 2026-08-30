@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { ScrollPositionRestorer } from "@/components/navigation/scroll-position-restorer";
 import { InstallAndUpdateStatus } from "@/components/offline/install-and-update-status";
 import { OfflineProvider } from "@/components/offline/offline-provider";
+import { AudioPlayer } from "@/components/reading/audio-player";
 import { ReaderSettingsMenu } from "@/components/reading/reader-settings-menu";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { type Locale, isLocale, locales } from "@/i18n/config";
@@ -43,6 +44,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
                 <FloatingDock />
                 <InstallAndUpdateStatus />
                 <ReaderSettingsMenu />
+                <AudioPlayer />
                 <div>
                   {children}
                   <SiteFooter />

@@ -4,6 +4,7 @@ import { CanonBadge } from "@/components/classification/canon-badge";
 import { AnnotationLayer, type ResolvedLabel } from "@/components/content/figure-annotations";
 import { LightboxImage } from "@/components/content/lightbox";
 import type { ClassificationKind } from "@/lib/content/schemas/shared";
+import { staticUrl } from "@/lib/static-url";
 import { cn } from "@/lib/utils";
 import { Tag, TagsIcon } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
@@ -84,7 +85,7 @@ export function DiagramFigure({
       <div className="relative">
         <div className="relative overflow-hidden rounded-2xl border border-border bg-surface">
           <LightboxImage
-            src={src}
+            src={staticUrl(src)}
             alt={alt ?? captionText ?? ""}
             labels={resolved}
             className="w-full object-contain"

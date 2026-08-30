@@ -113,7 +113,7 @@
       "verdict": {
         "grounded": "Luôn có một trong hai cặp chân sải đỡ trọng lượng, nên dáng đi này không hề có cú bật nào. Đây là dáng rẻ nhất để duy trì nhưng nặng nề nhất trên mỗi bước, bởi chẳng gân nào được dịp tích rồi hoàn lại năng lượng của một cú nhún.",
         "bouncing": "Hai cặp chân sải giờ cùng rời mặt đất, và gần như mọi khoảng trống chúng để lại đều có một bàn chân giữa cắm xuống. Khoảnh khắc lơ lửng đó cho phép những sợi gân dài hoạt động như bộ nhíp — dịu dàng với xương hơn cả một bước đi nặng nề — trong khi cặp chân ngắn vẫn có điểm tựa mỗi khi một cú ngoặt xuất hiện.",
-        "unbraced": "Cặp chân giữa được hẹn giờ để vung lên đúng những lúc cặp chân sải vừa rời đất. Đó lại chính là những khoảnh khắc một cú ngoặt gấp cần thứ gì cắm xuống để chống lực ngang — mà chống lực ngang chính là nhiệm vụ chính sử giao cho cặp chân giữa ấy."
+        "unbraced": "Cặp chân giữa được hẹn giờ để vung lên đúng những lúc cặp chân sải vừa rời đất. Đó lại chính là những khoảnh khắc một cú ngoặt gấp cần thứ gì cắm xuống để chống lực ngang — mà chống lực ngang chính là nhiệm vụ thiết lập gốc giao cho cặp chân giữa ấy."
       }
     },
     "pneumaticBoneBudget": {

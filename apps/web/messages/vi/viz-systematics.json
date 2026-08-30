@@ -196,11 +196,11 @@
     "speculation": {
       "title": "Suy đoán",
       "category": "Triết học",
-      "info": "Tầng của sách cho mô hình chấp một tiền đề chưa xác nhận rồi tuân mọi luật còn lại. Kéo tuyên bố qua Canon / Inference / Speculation / Real-science. Bẻ một quy tắc; trả đủ giá phần còn lại.",
-      "canon": "Canon",
+      "info": "Tầng của sách cho mô hình chấp một tiền đề chưa xác nhận rồi tuân mọi luật còn lại. Kéo tuyên bố qua Nguyên tác / Suy luận / Phỏng đoán / Khoa học thực chứng. Bẻ một quy tắc; trả đủ giá phần còn lại.",
+      "canon": "Nguyên tác",
       "inference": "Suy luận",
-      "speculation": "Suy đoán",
-      "realScience": "Khoa học thật",
+      "speculation": "Phỏng đoán",
+      "realScience": "Khoa học thực chứng",
       "hint": "Đặt mỗi tuyên bố vào một tầng"
     },
     "symplesiomorphy": {

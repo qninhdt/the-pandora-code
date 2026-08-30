@@ -66,7 +66,7 @@
       "title": "Một thế giới rốt cuộc có lớp vỏ kiểu nào?",
       "subtitle": "Nhiệt thoát ra, đặt cạnh độ bền của cái nắp mà nó phải xuyên qua",
       "aria": "Bản đồ hai trục giữa dòng nhiệt bề mặt và độ bền phá hủy của thạch quyển, tô màu theo chế độ kiến tạo, kèm dấu mốc Trái Đất, Sao Kim, Sao Hỏa, Io và một ô nét đứt phủ khoảng khả dĩ của Pandora",
-      "hint": "Chẳng hành tinh nào tự chọn có kiến tạo hay không. Lớp phủ của nó cứ đối lưu bất kể; câu hỏi duy nhất là ứng suất dồn tới bên dưới lớp vỏ có phá nổi lớp vỏ ấy hay không. Hai con số định đoạt điều đó, và Trái Đất nằm trong một góc hẹp của bản đồ, nơi câu trả lời chỉ vừa đủ là có. Pandora được vẽ thành một ô chứ không phải một điểm, vì chính sử ấn định lượng nhiệt của nó nhưng tuyệt nhiên không nói gì về việc lớp vỏ ấy bền hay ngậm nước đến đâu — và cái ô ấy băng qua mọi đường biên.",
+      "hint": "Chẳng hành tinh nào tự chọn có kiến tạo hay không. Lớp phủ của nó cứ đối lưu bất kể; câu hỏi duy nhất là ứng suất dồn tới bên dưới lớp vỏ có phá nổi lớp vỏ ấy hay không. Hai con số định đoạt điều đó, và Trái Đất nằm trong một góc hẹp của bản đồ, nơi câu trả lời chỉ vừa đủ là có. Pandora được vẽ thành một ô chứ không phải một điểm, vì nguyên tác ấn định lượng nhiệt của nó nhưng tuyệt nhiên không nói gì về việc lớp vỏ ấy bền hay ngậm nước đến đâu — và cái ô ấy băng qua mọi đường biên.",
       "axisFlux": "Nhiệt rời khỏi bề mặt (W/m², thang loga)",
       "axisYield": "Độ bền lớp vỏ (MPa)",
       "body": {

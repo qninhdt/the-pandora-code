@@ -131,6 +131,7 @@ One file: `content/chapters/<slug>/<locale>.transcript.json`
 {
   "chapter": "<slug>",
   "locale": "en" | "vi",
+  "title": "spoken chapter title",
   "source": { "file": "<locale>.mdx", "sha256": "<copy verbatim from skeleton>" },
   "sections": [
     {
@@ -148,8 +149,14 @@ One file: `content/chapters/<slug>/<locale>.transcript.json`
 }
 ```
 
-- `title`: null only for `sec-00` (the chapter has no intro heading) —
-  otherwise the section heading, speech-cleaned, same language as locale.
+- `title` (top-level): the chapter's title as the narrator speaks it, taken
+  from the skeleton's `expectedTitle` (meta.yaml). Speech-clean it (expand
+  symbols/units into words); keep the wording otherwise verbatim, same
+  language as locale. It becomes the first audio segment — do not add
+  greeting filler around it.
+- `title` (per-section): null only for `sec-00` (the chapter has no intro
+  heading) — otherwise the section heading, speech-cleaned, same language as
+  locale.
 - Blocks flatten to exactly four output types: `p`, `figure` (keeps `figNo`),
   `data`, `note` (keeps its skeleton `kind`). A dropped widget emits nothing.
 - Every `text` is a single string; use spaces, no `\n`.
@@ -158,7 +165,8 @@ One file: `content/chapters/<slug>/<locale>.transcript.json`
 
 ## Self-check before writing the file
 
-1. Section ids sequential from `sec-00`, count == skeleton sections.
+1. Section ids sequential from `sec-00`, count == skeleton sections. Top-level
+   `title` present, speech-cleaned, matches `expectedTitle` in wording.
 2. Every skeleton figure has a `[Hình NN]`/`[Figure N]` block.
 3. Forbidden symbols scan: `%` `~` `→` `≥` `≤` `°` `×` `—` `<` `**` `` ` ``
    decimals — zero hits.

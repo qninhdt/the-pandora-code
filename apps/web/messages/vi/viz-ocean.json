@@ -414,7 +414,7 @@
         "depth": "Độ sâu",
         "tlc": "Tổng dung tích phổi"
       },
-      "assumption": "Ở đây tạm coi nước biển Pandora đặc như nước biển Trái Đất, 1025 kg/m³ — chính sử chưa từng nêu con số này.",
+      "assumption": "Ở đây tạm coi nước biển Pandora đặc như nước biển Trái Đất, 1025 kg/m³ — nguyên tác chưa từng nêu con số này.",
       "narcosisNote": "Trên thế giới này, nitơ bắt đầu gây say ở khoảng {n} m.",
       "aria": "Thể tích phổi theo độ sâu, tại {depth} mét và {atm} atm"
     },

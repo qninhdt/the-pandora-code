@@ -4,9 +4,11 @@ import { DiagramFigure } from "@/components/content/diagram-figure";
 import { Figure } from "@/components/content/figure";
 import { FigureGrid } from "@/components/content/figure-grid";
 import { GlossaryTerm } from "@/components/glossary/glossary-term";
+import { AudioSectionSync } from "@/components/reading/audio-section-sync";
 import { ChapterBackground } from "@/components/reading/chapter-background";
 import { ChapterHero } from "@/components/reading/chapter-hero";
 import { ChapterShell } from "@/components/reading/chapter-shell";
+import { ListenChapterButton } from "@/components/reading/listen-chapter-button";
 import { OfflineChapterButton } from "@/components/reading/offline-chapter-button";
 import { ReadingProgress } from "@/components/reading/reading-progress";
 import type { RelatedChapterCard } from "@/components/reading/related-chapters";
@@ -15,6 +17,7 @@ import { TableOfContents, type TocHeading } from "@/components/reading/table-of-
 import { JsonLd } from "@/components/seo/json-ld";
 import { SourceList } from "@/components/sources/source-list";
 import { type Locale, isLocale, locales } from "@/i18n/config";
+import { getChapterAudio } from "@/lib/content/loader/audio-loader";
 import { getChapterBackgroundImage } from "@/lib/content/loader/chapter-background";
 import { getPublishedChapter, listPublishedChapters } from "@/lib/content/loader/chapter-loader";
 import { getChapterCoverImage } from "@/lib/content/loader/cover-image";
@@ -100,6 +103,7 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
   const Body = mdx.data.body;
   const coverImage = getChapterCoverImage(slug);
   const backgroundImage = getChapterBackgroundImage(slug);
+  const chapterAudio = getChapterAudio(slug, loc);
 
   // Resolve glossary definitions server-side and key them by slug, so the MDX
   // only carries the slug - the locale-correct term + definition come from the
@@ -168,61 +172,74 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
   ]);
 
   return (
-    <div className="relative">
-      <JsonLd data={[articleSchema, breadcrumbSchema]} />
-      {backgroundImage && <ChapterBackground src={backgroundImage} />}
-      <ChapterShell
-        progress={<ReadingProgress locale={loc} slug={slug} />}
-        hero={
-          <ChapterHero
-            title={chapter.meta.title}
-            subtitle={chapter.meta.subtitle}
-            hook={chapter.meta.hook}
-            authors={chapter.meta.authors}
-            readingTimeMin={chapter.readingTimeMin}
-            classification={cls}
-            imageSrc={coverImage}
-            actions={<OfflineChapterButton locale={loc} slug={slug} />}
-          />
-        }
-        toc={<TableOfContents headings={headings} label={t("chapter.tableOfContents")} />}
-        footer={
-          <>
-            <RelatedMaterials
-              chapters={relatedChapters}
-              glossary={relatedGlossary}
-              sources={chapter.meta.sources}
-              labels={{
-                section: t("chapter.relatedMaterials"),
-                relatedChapters: t("chapter.relatedChapters"),
-                glossary: t("chapter.relatedGlossary"),
-                sources: t("chapter.sources"),
-              }}
+    <>
+      <AudioSectionSync
+        chapterSlug={slug}
+        chapterLocale={loc}
+        headings={headings}
+        track={chapterAudio}
+      />
+      <div className="relative">
+        <JsonLd data={[articleSchema, breadcrumbSchema]} />
+        {backgroundImage && <ChapterBackground src={backgroundImage} />}
+        <ChapterShell
+          progress={<ReadingProgress locale={loc} slug={slug} />}
+          hero={
+            <ChapterHero
+              title={chapter.meta.title}
+              subtitle={chapter.meta.subtitle}
+              hook={chapter.meta.hook}
+              authors={chapter.meta.authors}
+              readingTimeMin={chapter.readingTimeMin}
+              classification={cls}
+              imageSrc={coverImage}
+              actions={
+                <>
+                  <ListenChapterButton />
+                  <OfflineChapterButton locale={loc} slug={slug} />
+                </>
+              }
             />
-            <div className="reading-column mt-16 border-t border-border pt-8">
-              <p className="mb-3 font-sans text-xs uppercase tracking-wider text-subtle">
-                {t("chapter.classification")}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <CanonBadge kind="canon">
-                  {`${t("classification.canon")} ${cls.canon_pct}%`}
-                </CanonBadge>
-                <CanonBadge kind="inference">
-                  {`${t("classification.inference")} ${cls.inference_pct}%`}
-                </CanonBadge>
-                <CanonBadge kind="speculation">
-                  {`${t("classification.speculation")} ${cls.speculation_pct}%`}
-                </CanonBadge>
-                <CanonBadge kind="real_science">
-                  {`${t("classification.real_science")} ${cls.real_science_pct}%`}
-                </CanonBadge>
+          }
+          toc={<TableOfContents headings={headings} label={t("chapter.tableOfContents")} />}
+          footer={
+            <>
+              <RelatedMaterials
+                chapters={relatedChapters}
+                glossary={relatedGlossary}
+                sources={chapter.meta.sources}
+                labels={{
+                  section: t("chapter.relatedMaterials"),
+                  relatedChapters: t("chapter.relatedChapters"),
+                  glossary: t("chapter.relatedGlossary"),
+                  sources: t("chapter.sources"),
+                }}
+              />
+              <div className="reading-column mt-16 border-t border-border pt-8">
+                <p className="mb-3 font-sans text-xs uppercase tracking-wider text-subtle">
+                  {t("chapter.classification")}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <CanonBadge kind="canon">
+                    {`${t("classification.canon")} ${cls.canon_pct}%`}
+                  </CanonBadge>
+                  <CanonBadge kind="inference">
+                    {`${t("classification.inference")} ${cls.inference_pct}%`}
+                  </CanonBadge>
+                  <CanonBadge kind="speculation">
+                    {`${t("classification.speculation")} ${cls.speculation_pct}%`}
+                  </CanonBadge>
+                  <CanonBadge kind="real_science">
+                    {`${t("classification.real_science")} ${cls.real_science_pct}%`}
+                  </CanonBadge>
+                </div>
               </div>
-            </div>
-          </>
-        }
-      >
-        <Body components={components} />
-      </ChapterShell>
-    </div>
+            </>
+          }
+        >
+          <Body components={components} />
+        </ChapterShell>
+      </div>
+    </>
   );
 }

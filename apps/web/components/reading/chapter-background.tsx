@@ -1,3 +1,5 @@
+import { staticUrl } from "@/lib/static-url";
+
 interface ChapterBackgroundProps {
   src: string;
 }
@@ -10,7 +12,7 @@ export function ChapterBackground({ src }: ChapterBackgroundProps) {
   return (
     <div className="fixed inset-0 -z-[2]" aria-hidden>
       <img
-        src={src}
+        src={staticUrl(src)}
         alt=""
         className="size-full scale-[1.02] object-cover"
         style={{ filter: "brightness(0.98) saturate(1.1) contrast(1.03)" }}

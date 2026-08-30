@@ -1,0 +1,236 @@
+{
+  "chapter": "pandoras-deep-time",
+  "locale": "en",
+  "title": "Pandora's Deep Time",
+  "source": {
+    "file": "en.mdx",
+    "sha256": "eef842d7e5a65528fe4d0948e084fd5746c4bf8de99e8b082865a37ade9b47d0"
+  },
+  "sections": [
+    {
+      "id": "sec-00",
+      "title": null,
+      "blocks": [
+        {
+          "type": "figure",
+          "figNo": "01",
+          "text": "[Figure 1] The smallest clock on Pandora. A zircon grain no larger than a grain of salt, pulled from highland sandstone, its glowing core records the day it first crystallized, the paler rim a violent event long after. Both ages are written in atoms, waiting to be read."
+        },
+        {
+          "type": "p",
+          "text": "A geologist steps off the lander, walks to the nearest outcrop of pale highland sandstone, and chips away a fist of rock. Back in the field tent, the rock is crushed, washed, and swirled until the light, useless grains float off and the heavy ones sink, and among the heavy ones, caught in the bottom of the pan, are a few dozen specks that glint when the lamp catches them. Each is a crystal of zircon, smaller than a grain of salt. Each is a clock that has been running, untouched, for billions of years. And the geologist has not yet learned a single thing about Pandora's biology, its weather, or its gods, but already, before lunch, she can tell you how old this world is, and roughly what violence it survived to get here. That is an extraordinary claim, and it is worth being honest about how strange it is. Here is a rock from a moon that humans reached only a handful of years ago, orbiting a star four light-years away, built by processes no one watched. And we propose to read its age, not guess, not date it by the story it tells, but measure it, to a precision of a percent or two, from a pinch of mineral grains. The same confidence lets us say the Earth is four and a half billion years old, a number so large it means nothing to the body and everything to the science. This chapter is about where that confidence comes from. It turns out that learning to read the age of a world, any world, rests on a single, almost unreasonable fact about the atoms inside rocks, and once you have it, the deep past of Pandora opens like a book whose pages are made of stone."
+        }
+      ]
+    },
+    {
+      "id": "sec-01",
+      "title": "The trouble with a very large number",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Begin on Earth, because the hard part was never the alien rock. The hard part was believing in the time at all. For most of human history the Earth was young, a few thousand years, by the reckoning of those who counted generations back to a creation. The number felt right because it matched a human scale, you could hold it, trace it, recite it. The first people to suspect otherwise were not physicists but field geologists, walking the cliffs of Scotland in the late 1700s, and the man usually given the credit, James Hutton, arrived at deep time not through a clock but through patience. He looked at rock and saw that the processes laying it down, silt settling, sand cementing, mountains wearing to grit, ran heartbreakingly slowly, and yet had plainly happened over and over, layer on layer, with whole cycles of building and grinding-down stacked inside a single sea cliff. If the present rate was the past rate, the arithmetic was merciless, the Earth was not thousands of years old but unthinkably, vertiginously ancient. Hutton's famous line, peering into that abyss of stacked time, was that he could find no vestige of a beginning, no prospect of an end."
+        },
+        {
+          "type": "note",
+          "kind": "callout",
+          "text": "A note: The quiet rule under all of it. The principle Hutton leaned on, later carried forward by Charles Lyell, is uniformitarianism, the laws and processes shaping the world today are the same ones that shaped it in the past, running at broadly the same rates. It sounds modest, even obvious. But it is the permission slip for the entire science of the deep past, it says the present is a working key to history, that a river silting up a delta this year tells you how deltas were built a billion years ago. Without it, every old rock is a mystery, with it, every old rock is a record."
+        },
+        {
+          "type": "p",
+          "text": "The geologists were right, but they could not prove it with a number, and into that gap stepped one of the great minds of the age, and got it gloriously wrong. William Thomson, Lord Kelvin, was the finest physicist of his century, and around 1860 he decided to settle the Earth's age with thermodynamics. Treat the planet as a ball of rock that started molten and has been cooling ever since, measure how fast temperature rises as you descend into a mine, run the heat equation backward to find when the surface would have been molten. The answer he got was, at most, a few tens of millions of years, and he narrowed it, over the years, toward a mere twenty million. That was far too short for Hutton's slow cliffs or for the even slower work that Darwin's evolution demanded, and Kelvin knew it, and he did not care, physics, he believed, trumped the soft inferences of geologists. There is a tidy story, often repeated, that Kelvin's blunder was simply ignorance of radioactivity, that the Earth has its own internal furnace, the slow decay of radioactive elements, which he could not have known about and which keeps the planet hot far longer than a cooling ball would stay warm. It is a satisfying story and it is mostly false. Adding radioactive heat to Kelvin's model nudges his number up only a little, it does not rescue him. The real flaw was subtler and was spotted, in 1895, by his own former assistant John Perry. Kelvin had assumed the Earth's interior carries its heat the way a brick does, by conduction, heat trickling slowly outward through solid rock. Perry pointed out that the deep interior is not a passive solid at all but churns, slowly, like a pot on a low flame, hot material rises, cool material sinks, and this convection hauls heat up from the depths far faster than conduction ever could. A convecting Earth keeps a thin cool skin over a hot, stirring interior for billions of years, and a thin cool skin is exactly what we measure. Perry's correction quietly demolished the twenty-million-year age and made room for the geologists' abyss. There is a lesson in that, and it is not about radioactivity, the famous wrong answer in science is usually wrong not because the genius lacked a fact, but because a hidden assumption was doing silent work. What neither Hutton's patience nor Perry's convection could supply was the number itself, an actual age, in years, that you could write down and defend. That had to wait for the discovery that matter contains its own clocks."
+        }
+      ]
+    },
+    {
+      "id": "sec-02",
+      "title": "A clock that cannot be bribed",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Inside certain atoms is an instability. The nucleus, the dense knot of protons and neutrons at an atom's heart, can be put together in a way that is not quite stable, and such a nucleus will, sooner or later, rearrange itself into something steadier, flinging off a particle or a burst of energy as it goes. We call the unstable kind the parent and what it becomes the daughter, and the transformation is radioactive decay. The miracle, for anyone who wants to measure time, is in the words sooner or later. You cannot say when any single nucleus will decay. It might go in the next second, it might sit unchanged for ten billion years. But take a great many of them, and even a speck of rock holds numbers with more zeros than the age of the universe has seconds, and the crowd behaves with perfect statistical obedience. In any given span of time, a fixed fraction of the parents present will decay. Not a fixed number, a fixed fraction. So the population thins not by even subtraction but by repeated halving, the signature curve of exponential decay. The cleanest way to hold this is the half-life, the time it takes for half of whatever parent atoms you have to turn into daughter. Wait one half-life and half are gone. Wait another and half of the remainder goes, you are down to a quarter. Another, an eighth. The parents never quite vanish, but they dwindle on a schedule so regular you can run it backward, measure how many parents are left and how much daughter has piled up, and the ratio tells you how many half-lives have passed."
+        },
+        {
+          "type": "data",
+          "text": "This chart tracks the percentage of atoms over elapsed half-lives. As time progresses, the parent atoms left steadily halve while the daughter atoms formed increase, crossing precisely at fifty percent after one half-life."
+        },
+        {
+          "type": "p",
+          "text": "Now comes the fact that makes the whole enterprise possible, and it is genuinely remarkable, the rate of decay cannot be changed. Heat the rock, freeze it, crush it under the pressure of a mantle, dissolve it in acid, bind its atoms into a hundred different minerals, the half-life does not budge. The decay is governed by forces inside the nucleus that the ordinary chemistry of the outside world cannot reach. This is why a radioactive clock cannot be bribed. A sundial can be moved, a pendulum can be slowed by a thick atmosphere, a water-clock clogs, but there is no temperature, no pressure, no chemical trick in nature that speeds or slows the ticking of uranium into lead. A clock that ignores everything the world can do to it is exactly the clock you want for reading a history of fire, burial, and upheaval. This family of methods is called radiometric dating, and it is the spine of geochronology, the science of putting numbers on the past. There is just one catch, and it is the catch that nearly sinks everything."
+        }
+      ]
+    },
+    {
+      "id": "sec-03",
+      "title": "The clock that needs no zero",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "To read a clock you must know where it started. The decay clock counts up the daughter atoms, but what if the rock already contained some of that daughter element on the day it formed? Then you would count those inherited atoms as if they were the product of decay, and you would read the rock as far older than it is. For a long time this was the soft underbelly of the whole method, every date depended on an assumption about the starting amount of daughter, and an assumption is not a measurement. The escape from this trap is one of the most elegant ideas in all of physical science, and it deserves to be felt rather than just stated. It is called the isochron method, and it works by being clever about several minerals at once instead of clinging to one. When a body of molten rock cools and crystallizes, it does not make one mineral, it makes several, side by side, from the same melt. Each mineral, because of the shape of its crystal lattice, greedily takes in some elements and refuses others. So the minerals end up with wildly different amounts of the radioactive parent. But here is the gift, because they all crystallized from the same well-stirred melt, they all start with the same initial ratio of the daughter element. Same starting line, different amounts of fuel. Watch what happens as the clock runs. Plot each mineral as a point, with the amount of parent along one axis and the amount of daughter along the other. At the moment of crystallization, every point sits on a flat horizontal line, same daughter ratio, whatever the parent. Then decay begins. The mineral packed with parent atoms produces a lot of daughter and climbs steeply, the mineral with little parent barely moves. The flat line pivots, like a see-saw tilting, and the longer the clock runs the steeper it tilts. The slope of that line is the age, and the beauty of it is that the starting amount of daughter, the thing you could never know, simply falls out as where the tilted line crosses the axis. You no longer need to assume the zero. The rock tells you its own starting point and its own age in the same stroke. And there is a bonus hiding in the geometry. If the rock was disturbed after it formed, reheated, leaked atoms, recrystallized, its mineral points will not fall on a clean straight line at all, they scatter. So the method polices itself. A tidy line is a rock that kept its secrets, a scattered mess is a rock waving a flag that says do not trust me, I have been tampered with. The isochron does not just give an age. It tells you whether to believe it."
+        }
+      ]
+    },
+    {
+      "id": "sec-04",
+      "title": "A drawer full of clocks",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "There is no single radioactive clock but a whole drawer of them, and a good geochronologist chooses the clock to fit the job, because the half-life sets the useful range, the way you would not measure a marathon with a stopwatch built for the hundred-metre dash."
+        },
+        {
+          "type": "data",
+          "text": "The geochronology toolkit holds many clocks. Uranium to lead has a half-life of four point five billion years and serves as the deep-time gold standard. Potassium to argon covers one point two five billion years to date volcanic ash, while carbon fourteen's five thousand seven hundred thirty year half-life is useful only up to fifty thousand years."
+        },
+        {
+          "type": "p",
+          "text": "The aristocrat of the drawer is the uranium-lead system, and its favourite host is the very mineral our geologist panned out of the sandstone, zircon. Uranium-lead dating is the standard against which deep-time ages are judged, for two reasons that together feel almost like cheating. First, zircon crystals are tiny tyrants about what they admit, as they grow they will happily lock uranium into their lattice but they slam the door on lead. So any lead you find inside a pristine zircon today has no business being there except as the child of uranium decay, the starting amount of daughter is essentially zero, guaranteed by chemistry rather than assumed. Second, uranium comes in two varieties that decay to two different kinds of lead at two different rates, which means a single zircon carries two independent clocks. If they agree, you can trust the age completely, if they disagree, the pattern of their disagreement reveals exactly when the crystal was later disturbed. Two clocks in one grain, cross-checking each other and confessing their own damage, it is hard to design anything better, and nature handed it to us for free. Zircons are also nearly indestructible, surviving the melting and burial of their parent rocks to be washed into sandstones like Pandora's, which is precisely why our geologist found them where she did. At the other end of the drawer sits the clock everyone has heard of and almost everyone misunderstands. Radiocarbon dating, carbon fourteen, is a magnificent tool for the recent past, it dates wood, bone, charcoal, linen, anything once alive, back across the span of human history and a little beyond. But its half-life is a mere five and a half thousand years, which means that after fifty thousand or so there is simply no parent left to measure, the clock has run down to nothing. Carbon fourteen cannot date a rock, cannot date a dinosaur, cannot touch deep time at all, it is the wrong stopwatch by a factor of a million. When you see a claim that carbon dating proves some rock is millions of years old, you are watching someone reach for the marathon with a sprinter's watch. For the age of worlds, you need the slow clocks, uranium, rubidium, samarium, the elements whose half-lives are measured in billions of years. Before any of these absolute clocks existed, geologists had already built a calendar of the past out of pure logic, and it still does indispensable work. Lay down sediment and the oldest layer is on the bottom, the youngest on top, the principle of superposition, obvious once stated and powerful beyond its obviousness. A fault that cuts through a stack of layers must be younger than the layers it cuts. A band of fossils found in the same order on three continents lets you line up rocks that no one could ever carry side by side. This relative dating could say what came before what, but never how long ago, until the absolute clocks arrived to pin numbers onto the sequence. Wedge a datable volcanic ash between two fossil-bearing layers and you have bracketed them in years. The marriage of the two, relative order from the rocks, absolute years from the atoms, is the geologic time scale, the calendar that divides Earth's history into its great eons and lets a geologist on any world begin by asking the same first question, what is older than what, and by how much?"
+        },
+        {
+          "type": "figure",
+          "figNo": "02",
+          "text": "[Figure 2] A page-stack of time. In any undisturbed sequence the lowest layer is the oldest, relative order written by gravity and patience. A datable band of paler volcanic ash wedged between layers lets the atomic clocks pin absolute years onto the sequence. This is how a planet's history is read before a single grain is put in a mass spectrometer."
+        }
+      ]
+    },
+    {
+      "id": "sec-05",
+      "title": "Reading the Earth's own birthday",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "For all this machinery, there is a famous frustration, you cannot date the Earth by dating an Earth rock. The planet is restless. Its surface is endlessly remade, ocean floor swallowed and reborn, mountains raised and ground to mud, the whole crust churned by the same convection that fooled Lord Kelvin. So the oldest rocks anyone has ever found on Earth are younger than the Earth itself, the planet keeps erasing its own birth certificate. The oldest known fragment of all is a single zircon from the Jack Hills of Western Australia, about four point four billion years old, a survivor that hints the crust existed early, but still falls short of the planet's true age. The solution, found by the geochemist Clair Patterson in the nineteen fifties, was to date not the Earth but its siblings. The Solar System condensed from one cloud, all at once, and the leftover rubble of that birth still falls from the sky as meteorites, pristine fragments that, unlike Earth's crust, were never melted and remade. Patterson measured lead isotopes in meteorites, including iron from the great Canyon Diablo crater, and drew an isochron through them. The slope gave an age of about four point five five billion years. Then he did the decisive thing, he measured the average lead of the Earth itself, sampled from ocean sediment, and found that it fell precisely on the same line as the meteorites. Earth and meteorites were the same age, born together. Modern work, dating the very oldest solids in the most primitive meteorites, tiny white flecks called calcium-aluminium inclusions, the first things to freeze out of the cooling solar cloud, has sharpened the number to four point five six seven billion years. That figure, the age of the Solar System, was not handed down by authority. It was read, off rocks, by people who understood half-lives and isochrons. Hold that, because everything we are about to do to Pandora is the same act, performed under a different sun."
+        }
+      ]
+    },
+    {
+      "id": "sec-06",
+      "title": "The biography of Pandora",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Now take the toolkit to the alien rock, and watch a world's life story assemble itself. Start with the bracket no one can argue. Pandora is a moon of the gas giant Polyphemus, and Polyphemus circles Alpha Centauri A, a star we can study directly from here. A star's age constrains its planets' ages, because a star and its worlds condense from the same cloud within a relatively short window. Alpha Centauri A is, by the standard reckoning, somewhere between about four and a half and six billion years old, a little older than our Sun. So Pandora cannot be much older than that, whatever its rocks say, it was born when the system was born, give or take the few tens of millions of years it takes a giant planet to gather a moon out of the disk of debris swirling around it. The bracket comes free, from astronomy, before geology says a word. But brackets are not biographies, and the zircon in our geologist's pan holds something an astronomer's telescope never could, the specific, violent particulars of this moon's life. Read it carefully, and the cleanest way to read a zircon is exactly the isochron logic we just watched, scaled down to the layers within a single crystal, and it tells a two-part story."
+        },
+        {
+          "type": "figure",
+          "figNo": "03",
+          "text": "[Figure 3] The blow that built a world. Canon holds that early in its history a Mars-sized body struck the still-molten Pandora, disrupting its iron core and mixing it through the mantle, and, in the powerful magnetic field of Polyphemus, forging the superconducting ore unobtanium. A geologist would not need the legend, the event is written into the rock, dated to the year."
+        },
+        {
+          "type": "p",
+          "text": "The deep glowing core of the crystal records its first crystallization, the day this scrap of Pandora's crust first cooled hard out of the melt, billions of years ago, near the system's birth. That is the rock's true age. But many a Pandoran zircon would also wear a paler rim, grown around the core long after, and the rim would date a later catastrophe. Canon tells us what that catastrophe was, early in its history, a Mars-sized body slammed into the still-molten Pandora, disrupting its nickel-iron core and stirring its metals through the mantle, and, crucially, doing so inside the immense magnetic field of Polyphemus, where the violence is said to have forged unobtanium, the room-temperature superconductor that floats the Hallelujah Mountains. Here is the quietly thrilling part, a geologist who had never heard the legend would discover it. She would see the disturbed clocks in the zircon rims, fit a line through their disorder, and report an upper age for the crust and a lower age marking a planet-shaking impact, recovering the headline of a four-billion-year-old event from the geometry of damaged crystals. The story and the stone would agree, and the stone would never have read the story."
+        },
+        {
+          "type": "figure",
+          "figNo": "04",
+          "text": "[Figure 4] One crystal, two ages. The luminous inner core dates the moon's original crust, its uranium-lead clock undisturbed for billions of years. The paler overgrowth rim crystallized later, around the ancient impact, and carries its own younger date. A single grain holds both the birth of Pandora and the blow that reshaped it."
+        },
+        {
+          "type": "data",
+          "text": "About four point five billion years ago, Pandora gathered from the disk of debris around the newborn Polyphemus. Early on, while still molten, a Mars-sized body struck the moon, forging unobtanium. Hundreds of millions of years later, the arches cooled. Deep in the undated past, Eywa took hold. About twelve million years ago, the Na'vi appeared, an evolutionary stillness with no Earthly parallel."
+        }
+      ]
+    },
+    {
+      "id": "sec-07",
+      "title": "The engine that should be dead",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Read the biography and a problem leaps out, the kind of contradiction that, on a real specimen, would send a scientist happily back to work. Pandora is a small world. Small worlds are supposed to be cold worlds. A body the size of Earth's Moon or Mars cooks itself in heat left over from its formation and from the radioactive elements in its rocks, then slowly radiates that heat to space and falls quiet, its volcanoes dead, its crust frozen into a single still plate, its magnetic field gone. The smaller the body, the faster it dies, because it has less heat stored inside and proportionally more surface to lose it through. And Pandora's founding catastrophe, the core-disrupting impact, should have hastened the cooling by tearing open its insides. By every rule of a planet's thermal life, Pandora ought to be a cold, dead stone. It is emphatically not. It has active volcanoes, shifting crust, and those ferocious local magnetic fields. That contradiction is exactly what the dating work has bought us, not an answer, but a well-posed question with numbers attached. An ancient world that is still geologically young needs a heat source its size cannot supply, and the candidate is tidal heating, the moon kneaded from within by the gravity of the giant it circles, most likely kept running by an orbital resonance with sibling moons that stops its orbit rounding out. Naming the engine is not the same as accounting for it, and What Keeps Pandora Volcanically Alive takes it apart, where the heat comes from, what keeps it stoked, and what the arrangement would have to look like for it to run for billions of years. What matters here is only that the clocks and the volcanoes disagree, and that the disagreement is real rather than an artefact of our measurements."
+        },
+        {
+          "type": "figure",
+          "figNo": "05",
+          "text": "[Figure 5] The engine that keeps a small moon molten. By its size and age Pandora should be a cold, geologically dead stone. Hugging Polyphemus, it is flexed and kneaded by tidal forces, a continuous gravitational squeeze that melts its interior and powers volcanoes across billions of years."
+        }
+      ]
+    },
+    {
+      "id": "sec-08",
+      "title": "How old, exactly?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "So we can say Pandora is roughly the age of its star. But pin that down and the comfortable bracket starts to wobble in an instructive way, because the age of the star is not one number either, and watching the experts disagree is more honest than any single figure. Reading a star's age is its own craft, and the methods do not always concur. The classic approach fits a star's brightness and colour to models of how stars evolve, and for Alpha Centauri A this gives something like four and three-quarters to a little over five billion years. A newer technique listens to the star ring, stars pulse faintly, and the frequencies of those pulsations sound the interior the way a struck bell betrays its size and age. This stellar seismology has, in some analyses, pushed the system's age startlingly older, into the seven-to-eight-billion-year range, and under certain assumptions about the star's chemistry older still. There is a third method, useful for cooler stars, that clocks a star's spin, young stars rotate fast and slow down with age in a predictable way, so a rotation rate is a rough birthday, a method called gyrochronology."
+        },
+        {
+          "type": "note",
+          "kind": "callout",
+          "text": "What this means: Why the disagreement is the point. A spread from under five to nearly eight billion years is not a failure of science, it is science showing its work. Each method rests on a model of how stars burn, ring, or spin, and where the models differ, the ages differ. The honest output is not a single number but a range with its reasons attached. This is exactly how an age is reported for any hard-to-reach thing, a distant star or an alien moon. You state the figure, the method, and the assumptions it leans on, so the next person can see precisely where the uncertainty lives. An age without its method is a rumour."
+        },
+        {
+          "type": "p",
+          "text": "This is the deep reason Pandora's age can only be bracketed, not fixed, from orbit. The astronomers give a star-age with honest, model-dependent scatter. Canon, for its part, offers a system age in the four-and-a-half-to-six-billion-year band and, tellingly, never states an absolute age for Pandora itself at all. The only thing that could collapse the range to a number is the thing our geologist is holding, a zircon, dated by uranium and lead, reporting the moon's own crystallization to a percent or two. The rock outperforms the telescope. That is not a knock on astronomy, it is the reason the first thing a serious expedition would do, after the air and the water, is reach for the rocks. For a world you cannot yet sample at all, a surface mapped only from above, there is even a fallback, count the craters. Older surfaces collect more impacts, at a rate calibrated against the Moon's radiometrically dated rocks, so crater counting turns a photograph of a battered plain into a rough age. It is the coarsest clock in the drawer, but it works from orbit, on a world no hand has touched."
+        }
+      ]
+    },
+    {
+      "id": "sec-09",
+      "title": "The living archive",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "There is one more way to read Pandora's deep past, and it has no parallel on Earth, which is exactly why it is worth ending on. On Earth, the record of life across deep time is a dead archive. We read the history of three and a half billion years of living things from fossils, bones and shells and chemical traces pressed into rock, a record that is patchy, accidental, and silent. Nothing in the rock remembers, we reconstruct, painstakingly, from what happened to survive. Pandora, if canon is taken seriously, keeps a different kind of record. The neural network the Na'vi call Eywa threads the whole biosphere together, and through it, by the linking of the queue, memory itself is said to be stored and retrieved, songs, histories, the dead. Where Earth's deep-time archive is a graveyard to be excavated, Pandora's is a library that can still be read aloud. It is a living memory of the moon's own past, an idea with no scientific counterpart, and the more arresting for it."
+        },
+        {
+          "type": "figure",
+          "figNo": "06",
+          "text": "[Figure 6] Two ways to keep the past. On the left, the dead rock record we read on Earth, life's history pressed into silent stone, recovered fossil by fossil. On the right, Pandora's living archive, a neural biosphere that, by canon, still holds and replays its own deep memory. One is excavated, the other answers back."
+        },
+        {
+          "type": "p",
+          "text": "And that living archive guards the strangest entry in Pandora's whole biography. By canon the Na'vi appeared some twelve million years ago and have barely changed since, twelve million years of near-total evolutionary stasis, no drift, no diversification, held still. On Earth, twelve million years is an age of transformation, our own line went from forest apes to starship engineers in less time. Stillness like Pandora's is not how life on a geologically active world is supposed to behave, because active worlds quaking, erupting, shifting their climates constantly knock species off balance and force them to change or die. The proposed answer is that Eywa actively damps the change, regulating populations and food webs to preserve its balance, suppressing the relentless competition that drives evolution everywhere else. Whether such a cooperative, planet-wide network could itself arise and persist across billions of years, without being undercut by selfish, faster-breeding life, is one of the genuine open questions this world poses. The fossils, if Pandora keeps any, would test the claim. The living archive, if it is real, already knows the answer. There is even a thread of evidence the stasis was not always so complete. Most Pandoran animals have six limbs, the Na'vi have four. The gap is bridged by a creature called Prolemuris, whose forelimbs are partly fused, a transitional form, caught mid-change, pointing back to a six-limbed ancestor the Na'vi share with the rest of the moon's animals. It is precisely the kind of in-between creature evolution leaves in its wake, the Pandoran echo of the fossil missing links that map our own descent. Whatever stilled the Na'vi, it did so after a long evolutionary history had already done its shaping."
+        },
+        {
+          "type": "figure",
+          "figNo": "07",
+          "text": "[Figure 7] The proposed bridge, drawn as anatomy. Most large Pandoran animals carry six separately attached limbs, Prolemuris begins with two upper arms that fork into four hands, and the Na'vi end with two arms and two legs. It is an evocative intermediate, and a claim the fossil record would have to test."
+        },
+        {
+          "type": "figure",
+          "figNo": "08",
+          "text": "[Figure 8] Twelve million years usually redraws a lineage. On Earth, bodies and habitats change together, Pandora's claim is that the landscape can burn, flood, and regrow while the Na'vi form remains fixed beneath one stabilizing network. That stillness is not the absence of a story. It is the biological mystery."
+        },
+        {
+          "type": "note",
+          "kind": "whatthismeans",
+          "text": "What this means: The universal geochron. Whatever else you leave behind on this moon, take this. The age of a world is not read from its story, its scripture, or its appearance. It is read from the atoms in its rocks, by a clock that nothing in nature can speed or slow, using a method, the isochron, that needs no assumption about where the clock began. That clock runs at the same rate on Earth, in a meteorite, and in a zircon from a moon of Alpha Centauri, because the physics of the nucleus is the same everywhere in the universe. So the question how old is this world has a single, transferable answer, good on any planet around any star. Learn to read one zircon and you can, in principle, date the galaxy a grain at a time. Deep time is not a fact about the Earth. It is a tool you can take anywhere."
+        }
+      ]
+    },
+    {
+      "id": "sec-10",
+      "title": "Honest edges",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A specimen is read honestly only when you mark what you actually know against what you have inferred or invented."
+        },
+        {
+          "type": "note",
+          "kind": "confidence",
+          "text": "This chapter's breakdown: twenty percent canon, fourteen percent inference, twelve percent speculation, and fifty-four percent real science."
+        },
+        {
+          "type": "p",
+          "text": "The real science here is rock-solid and load-bearing, radioactive decay, half-lives, the isochron method, the dating systems, Patterson's age of the Solar System, crater counting, stellar age-dating. None of that is in question, it is how we actually know the ages of the Earth, the Moon, and the meteorites. The canon supplies the dramatic particulars, the Mars-sized impact, the forging of unobtanium, the twelve-million-year stasis of the Na'vi, Eywa's living memory. The inference is the connective tissue, that Pandora's age tracks its star's, and that a zircon would record the impact in its rim. And the speculation is flagged as such, most of all the living archive and the evolutionary stillness, which have no Earthly precedent to lean on."
+        },
+        {
+          "type": "note",
+          "kind": "openquestions",
+          "text": "The questions that stay open: How old is Pandora, exactly? Canon never gives an absolute age for the moon itself, only a system age in the four point five to six billion-year band. Could a planet-wide cooperative network really persist over deep time? How such a cooperative system could arise and survive across billions of years without being outcompeted by selfish, faster-evolving life is a genuine and unresolved problem. Is the Na'vi's twelve-million-year stasis biologically possible? What froze it remains canon's assertion rather than a demonstrated mechanism."
+        }
+      ]
+    },
+    {
+      "id": "sec-11",
+      "title": "The grain in the palm",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Return to the field tent, and the geologist tilting the pan to the lamp, the zircons glinting in the bottom like a scatter of cold stars. She has not climbed a mountain or met a Na'vi or seen Eywa. She has a pinch of crystals smaller than sand. And yet, by the time the lamp burns down, she will know that this world was born with its star, four billion years and more ago, that early in its life something the size of Mars struck it hard enough to forge the ore that floats its mountains, that it should by rights have died of cold and somehow did not, and that whatever made it, the making is written, in atoms, in a clock that no fire and no pressure and no passage of time can talk out of telling the truth. That is the quiet astonishment of deep time. The largest fact about a world, its entire age, the whole arc of its biography, is not hidden in its myths or its grandeur. It is held in its smallest, dullest grains, waiting for someone who knows how to read a clock that needs no zero. Pandora kept its age secret for four billion years, through an impact and an ice of stasis and the slow carving of its arches, and gave it up, in the end, to a stranger with a pan and a half-life. The marvel was never that an alien world is unknowable. It is that a grain of sand, anywhere under any sun, will tell you exactly how long it has been waiting, if you only know to ask."
+        }
+      ]
+    }
+  ]
+}
