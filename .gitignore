@@ -114,3 +114,8 @@ worktrees/
 
 # Generated offline manifests are rebuilt during the web prebuild.
 /apps/web/public/offline/*.json
+
+# Local agent/editor/documentation material is not part of the application repository.
+/.claude/
+/.vscode/
+/docs/
