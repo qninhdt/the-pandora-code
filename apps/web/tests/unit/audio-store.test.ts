@@ -76,8 +76,12 @@ describe("audio store", () => {
     expect(getAudioState().isOpen).toBe(false);
     openAudio();
     expect(getAudioState()).toMatchObject({ isOpen: true, isPlaying: true });
-    closeAudio();
-    expect(getAudioState()).toMatchObject({ isOpen: false, isPlaying: false });
+    closeAudio(7.25);
+    expect(getAudioState()).toMatchObject({
+      currentTime: 7.25,
+      isOpen: false,
+      isPlaying: false,
+    });
 
     openAudio();
     clearAudio();

@@ -218,10 +218,17 @@ export function openAudio(play = true) {
   audioStore.update({ ...current, isOpen: true, isPlaying: play });
 }
 
-export function closeAudio() {
+export function closeAudio(currentTime?: number) {
   const current = getAudioState();
   if (!current.isOpen && !current.isPlaying) return;
-  audioStore.update({ ...current, isOpen: false, isPlaying: false });
+  audioStore.update({
+    ...current,
+    currentTime: finiteNumber(currentTime)
+      ? clampNumber(currentTime, 0, current.duration, current.currentTime)
+      : current.currentTime,
+    isOpen: false,
+    isPlaying: false,
+  });
 }
 
 export function playAudio() {

@@ -60,7 +60,7 @@ export function AudioPlayer() {
   // the persisted position once metadata is available, for both local and R2.
   useEffect(() => {
     const element = audioRef.current;
-    if (!element || !audio.audioUrl) return;
+    if (!audio.isOpen || !element || !audio.audioUrl) return;
 
     const restore = () => {
       if (Number.isFinite(element.duration) && element.duration > 0) {
@@ -74,7 +74,7 @@ export function AudioPlayer() {
     if (element.readyState >= 1) restore();
     else element.addEventListener("loadedmetadata", restore, { once: true });
     return () => element.removeEventListener("loadedmetadata", restore);
-  }, [audio.audioUrl, audio.duration]);
+  }, [audio.audioUrl, audio.duration, audio.isOpen]);
 
   // Store actions are also used by the scrubber, keyboard shortcuts, and section
   // sync. Reflect those state changes in the native element so seeking never
@@ -142,7 +142,7 @@ export function AudioPlayer() {
         skipAudioSection(1);
         break;
       case "Escape":
-        closeAudio();
+        closeAudio(audioRef.current?.currentTime);
         break;
       case "1":
       case "2":
@@ -304,7 +304,7 @@ export function AudioPlayer() {
           type="button"
           aria-label={t("audio.close")}
           title={t("audio.close")}
-          onClick={() => closeAudio()}
+          onClick={() => closeAudio(audioRef.current?.currentTime)}
           className="col-start-2 row-start-1 grid size-8 shrink-0 place-items-center rounded-full text-subtle transition-colors hover:bg-surface hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/50 lg:col-auto lg:row-auto"
         >
           <X size={15} aria-hidden />

@@ -72,7 +72,7 @@ export function MobileReaderDock({ headings, active, label }: MobileReaderDockPr
             tabIndex={-1}
             onClick={() => setOutlineOpen(false)}
             className={cn(
-              "fixed inset-0 z-40 bg-void/60 backdrop-blur-sm transition-opacity duration-300",
+              "fixed inset-0 z-50 bg-void/60 backdrop-blur-sm transition-opacity duration-300",
               outlineOpen ? "opacity-100" : "pointer-events-none opacity-0",
             )}
           />
@@ -85,7 +85,7 @@ export function MobileReaderDock({ headings, active, label }: MobileReaderDockPr
             inert={!outlineOpen}
             aria-labelledby={labelId}
             className={cn(
-              "fixed inset-x-4 bottom-24 z-40 m-0 mx-auto max-w-md transition-all duration-300 ease-out",
+              "fixed inset-x-4 bottom-24 z-[60] m-0 mx-auto max-w-md transition-all duration-300 ease-out",
               outlineOpen
                 ? "translate-y-0 opacity-100"
                 : "pointer-events-none translate-y-3 opacity-0",
@@ -109,7 +109,12 @@ export function MobileReaderDock({ headings, active, label }: MobileReaderDockPr
         </>
       ) : null}
 
-      <div className="fixed bottom-[calc(1rem+env(safe-area-inset-bottom))] left-1/2 z-40 flex -translate-x-1/2 items-center gap-1 rounded-full border border-cyan/35 bg-void/92 p-1.5 text-cyan shadow-2xl backdrop-blur-xl print:hidden">
+      <div
+        className={cn(
+          "fixed bottom-[calc(1rem+env(safe-area-inset-bottom))] left-1/2 flex -translate-x-1/2 items-center gap-1 rounded-full border border-cyan/35 bg-void/92 p-1.5 text-cyan shadow-2xl backdrop-blur-xl print:hidden",
+          outlineOpen ? "z-[60]" : "z-40",
+        )}
+      >
         {hasOutline ? (
           <button
             type="button"

@@ -27,6 +27,9 @@ describe("mobile reader dock", () => {
     const settings = screen.getByRole("button", { name: "Reading style" });
     expect(screen.queryByRole("button", { name: "Play" })).not.toBeInTheDocument();
     expect(outline.parentElement).toBe(settings.parentElement?.parentElement);
+
+    fireEvent.click(outline);
+    expect(screen.getByRole("dialog")).toHaveClass("z-[60]");
   });
 
   it("adds play to the same dock when the chapter has audio", () => {
