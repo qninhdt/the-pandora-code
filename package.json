@@ -22,6 +22,8 @@
     "gen-page-bg": "tsx scripts/gen-page-backgrounds.ts",
     "convert-webp": "tsx scripts/convert-figures-webp.ts",
     "check-glossary": "tsx scripts/check-glossary-terms.ts",
+    "transcript:skeleton": "node scripts/gen-transcript-skeleton.mjs",
+    "transcript:validate": "node scripts/validate-transcript.mjs",
     "typecheck:scripts": "tsc --noEmit -p scripts/tsconfig.json"
   },
   "dependencies": {

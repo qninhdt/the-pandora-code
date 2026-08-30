@@ -35,6 +35,7 @@ science in subtly - it should feel like the natural next sentence, never homewor
 | `/pandora write <slug>`     | Run the write→figures→images→translate→validate chain for one chapter. Hard error if its research note is missing.                     |
 | `/pandora figure <id>`      | Regenerate a single figure image (`fig-NN-…`) via `gen-images.ts --figure`.                                                            |
 | `/pandora translate <slug>` | (Re)generate `vi.mdx` from `en.mdx` for one chapter (body + figure captions).                                                          |
+| `/pandora transcript <slug>` | (Re)generate `{en,vi}.transcript.json` for one chapter (skeleton → adapt → validate both locales).                                  |
 
 `<slug>` and chapter order come from **`apps/web/lib/content/outline.ts`** -
 the same single source the landing page and reader nav read. Do not maintain a
@@ -61,7 +62,9 @@ check research/{slug}.md exists?
                                        onto its <DiagramFigure> in en.mdx (coords come
                                        from the real image, so this MUST follow image gen)
           5. pandora-translate   → content/chapters/{slug}/vi.mdx (body + captions + labels)
-          6. pnpm check-glossary {slug} && pnpm validate:content && pnpm build
+          6. pandora-transcript  → content/chapters/{slug}/{en,vi}.transcript.json
+                                  (run for both locales, then pnpm transcript:validate {slug})
+          7. pnpm check-glossary {slug} && pnpm validate:content && pnpm build
         print a summary + how to regen a figure (`/pandora figure <id>`)
 ```
 
@@ -72,7 +75,8 @@ Full detail, including `meta.yaml` authoring and the status taxonomy, lives in
 
 1. **Exactly one manual stop.** The ONLY time `/pandora` stops for the user is to
    paste research. Everything after research-present is non-interactive - no
-   "should I continue?" prompts between write, figures, images, translate, build.
+   "should I continue?" prompts between write, figures, images, translate,
+   transcript, build.
 
 2. **Plan mode before reading research / writing.** Before the author reads the
    research note and drafts prose, `/pandora` MUST be in plan mode. Auto-enable it
@@ -163,12 +167,14 @@ See `references/component-palette.md`.
 | Figure prompts + image gen          | `pandora-art-director` → `scripts/gen-images.ts`          |
 | Figure annotation pass (labels)     | `pandora-art-director` (reads PNGs → labels in en.mdx)    |
 | EN→VI translation (body + captions) | `pandora-translate`                                       |
+| Audio transcripts (EN+VI)           | `pandora-transcript` → `scripts/gen-transcript-skeleton.mjs` + `scripts/validate-transcript.mjs` |
 | Glossary sync                       | `scripts/check-glossary-terms.ts` (`pnpm check-glossary`) |
 | Validate + build                    | `pnpm validate:content`, `pnpm build`                     |
 
 ## Definition of done (per chapter)
 
 - `content/chapters/{slug}/{meta.yaml,en.mdx,vi.mdx}` exist and validate.
+- `content/chapters/{slug}/{en,vi}.transcript.json` exist and `pnpm transcript:validate {slug}` passes.
 - Includes at least 3 newly created bespoke interactive components registered in
   `apps/web/lib/mdx-components.ts`; any reused components are strictly necessary and justified.
 - `figures/fig-NN-*.json` present; images generated; `asset_status: ready`.

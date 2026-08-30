@@ -4,7 +4,9 @@ Every `/pandora` command, its arguments, and exact behavior.
 
 ## `/pandora status`
 No args. Prints the full outline grouped by Part (book order) with each
-chapter's state (`published` / `drafted` / `has-research` / `pending`).
+chapter's state (`published` / `drafted` / `has-research` / `pending`) and an
+audio marker (`♪` when `{en,vi}.transcript.json` both exist and
+`pnpm transcript:validate {slug}` would pass - file presence is the check).
 Read-only - never mutates files. Source of order: `apps/web/lib/content/outline.ts`.
 
 ## `/pandora next`
@@ -28,6 +30,14 @@ figure JSON or when an image needs a redo.
 Arg: chapter slug. Routes to `pandora-translate` to (re)generate `vi.mdx` from
 the existing `en.mdx` (body + all figure captions + callouts) in one pass.
 Requires `en.mdx` to exist.
+
+## `/pandora transcript <slug>`
+Arg: chapter slug. Runs the transcript chain for BOTH locales:
+`pnpm transcript:skeleton {slug} {locale}` → adapt per `i18n/transcript.prompt.md`
+(routed to `pandora-transcript`) → write `{locale}.transcript.json` →
+`pnpm transcript:validate {slug}`. Requires both `en.mdx` and `vi.mdx` to exist.
+After editing a chapter's mdx, re-run this: the validator flags stale transcripts
+via the mdx sha256 stored in the transcript.
 
 ## Argument resolution
 
