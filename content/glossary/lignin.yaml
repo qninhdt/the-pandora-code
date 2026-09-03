@@ -1,0 +1,31 @@
+id: lignin
+label:
+  vi: Lignin
+  en: Lignin
+definition:
+  vi: >-
+    Polymer thơm, kỵ nước, được nhồi vào vách tế bào thực vật để làm chúng cứng lại. Lignin giải quyết
+    hai bài toán cùng lúc: nó chống đỡ cơ học cho một cái thân vươn lên trong không khí, và nó tạo ra
+    độ bền vòng đủ để các ống dẫn nước không bị bẹp vào trong dưới lực hút âm mà sự bay hơi ở lá tạo
+    ra. Không có lignin thì không có cây cao — đó là lý do phát minh này mở ra toàn bộ chiều thẳng
+    đứng của sự sống trên cạn. Nó cũng khó phân hủy đến mức xác thực vật giàu lignin từng tích lại
+    thành các vỉa than đá của kỷ Carbon.
+  en: >-
+    An aromatic, water-repelling polymer packed into plant cell walls to stiffen them. Lignin solves
+    two problems at once: it provides mechanical support for a stem standing up in air, and it gives
+    the hoop strength that keeps water-conducting tubes from collapsing inward under the negative
+    pressure that evaporation at the leaves creates. No lignin, no tall plant — which is why this one
+    molecule opened the whole vertical dimension of life on land. It is also so hard to break down
+    that lignin-rich plant remains once accumulated into the coal seams of the Carboniferous.
+see_also:
+  - tracheid
+  - xylem
+  - secondary-growth
+category: bio
+tags:
+  - physiology
+  - chemistry
+cover_prompt: >-
+  A painterly naturalist cutaway of a plant stem wall at high magnification, dense fibrous polymer
+  packed between cell walls holding an open tube rigid against inward pressure, cool teal and indigo
+  palette with faint amber warmth in the wall material, no text, no labels, no numbers.

@@ -1,0 +1,29 @@
+id: plastid
+label:
+  vi: Lạp thể
+  en: Plastid
+definition:
+  vi: >-
+    Bào quan hai màng nơi thực vật quang hợp — lục lạp là dạng quen thuộc nhất của nó. Nó từng là một sinh vật
+    riêng. Khoảng 1,6 đến 1,9 tỷ năm trước, một tế bào nhân thực dị dưỡng nuốt một vi khuẩn lam và không tiêu hóa
+    nó; phần lớn gene của vi khuẩn đó chuyển dần sang nhân của vật chủ, phần còn lại thu nhỏ thành bào quan. Bằng
+    chứng vẫn còn nguyên: hai lớp màng, một hệ gene riêng, và ở tảo glaucophyte còn sót lại cả một lớp vách
+    peptidoglycan kiểu vi khuẩn nằm giữa hai màng.
+  en: >-
+    The double-membraned organelle where plants photosynthesise — the chloroplast is its most familiar form. It
+    was once a separate organism. Between roughly 1.6 and 1.9 billion years ago a heterotrophic eukaryotic cell
+    engulfed a cyanobacterium and did not digest it; most of that bacterium's genes migrated to the host nucleus
+    and the remainder shrank into an organelle. The evidence is still there: two membranes, a genome of its own,
+    and in the glaucophyte algae even a surviving bacterial peptidoglycan wall between the membranes.
+see_also:
+  - endosymbiosis
+  - plastid-capture
+  - photosynthesis
+category: bio
+tags:
+  - evolution
+  - physiology
+cover_prompt: >-
+  A painterly naturalist cutaway of a single plant cell with several glowing lens-shaped organelles inside, each
+  clearly bounded by two nested membranes and holding stacked internal layers, cool teal and cyan palette, no text,
+  no labels, no numbers.

@@ -1,0 +1,33 @@
+{
+  "id": "fig-03-ash-entombment",
+  "chapter_slug": "pandoran-paleontology",
+  "role": "diagram",
+  "narrative_purpose": "Shows what volcanic ash does that soil cannot: it buries a living community instantly and then holds the outer shape of every body as a void in the rock. This is the chapter's compensating mechanism, and the reader needs to see the hollow cavities to believe it.",
+  "subject": "A cutaway cross-section through thick layers of compacted grey volcanic ash. At the centre stands the blackened, charred lower trunk of a colossal tree, its bark converted to deep matte carbon, its interior channels faintly visible. Buried in the ash around it are five hollow void-cavities in the exact outer shapes of bodies - three six-limbed animals in flexed, contracted poses, and one tall slender humanoid form - each cavity an empty pocket in solid pale grey rock, with a few pale bone fragments loose on each cavity floor. Fine parallel laminations run through the ash layers.",
+  "scene": "A consolidated tephra deposit metres thick, its upper surface a barren grey plain under a dim smoke-dulled sky, the charred trunk protruding above the ash line.",
+  "camera": "A flat side-on cross-section view cut cleanly through the deposit, the trunk vertical at the centre and the body cavities distributed at slightly different depths around it.",
+  "light": "Cool dim daylight above the ash plain, and inside the section a faint cyan glow from nowhere in particular that picks out the interior surfaces of the hollow cavities so they read as empty rather than filled; deep indigo in the ash mass.",
+  "palette": "Ash-grey and stone as the dominant mid-tone against void-indigo, the charred trunk near-black, a faint teal rim light inside the cavities, a single restrained ember-amber glow far off at the horizon.",
+  "style": "Painterly naturalist cutaway plate, hand-painted texture, geological cross-section clarity.",
+  "detail_level": "Crisp on the cavity interiors and the ash laminations; the charred trunk richly textured; the plain above soft and hazy.",
+  "composition": "The charred trunk as the vertical anchor at centre, body cavities scattered left and right at varying depths, clear dark ash mass between them for later callouts, the ash surface line across the upper third.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "plaster casts",
+    "flowing lava",
+    "fire",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Six limbs on the animal cavities. The cavities must clearly be empty hollows in rock, not solid bodies. Ash-grey dominates; no bright warm light in the section itself.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no visible flames or glowing lava, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

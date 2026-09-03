@@ -1,0 +1,16 @@
+id: cytochrome-c-oxidase
+label:
+  vi: Cytochrome c oxidase
+  en: Cytochrome c oxidase
+definition:
+  vi: "Enzyme cuối cùng của chuỗi hô hấp - Phức hợp IV - nơi các electron được lấy từ thức ăn cuối cùng được trao cho oxy để tạo thành nước. Toàn bộ việc thở tồn tại để phục vụ bước này. Chính vì thế nó là mục tiêu của những chất độc nhanh nhất mà ta biết: cyanide và hydro sulfide đều gắn vào lõi sắt của nó và chặn phản ứng lại. Khi bị chặn, oxy vẫn có trong máu, vẫn tới được tế bào, nhưng tế bào không còn dùng được nó nữa - một dạng ngạt từ bên trong, xảy ra đồng thời ở mọi ty thể."
+  en: "The final enzyme of the respiratory chain - Complex IV - where the electrons stripped from food are handed to oxygen to make water. The whole business of breathing exists to serve this one step. Which is why it is the target of the fastest poisons known: cyanide and hydrogen sulfide both bind its iron core and stop the reaction. When it is blocked, oxygen is still in the blood and still reaching the cell, but the cell can no longer use it - suffocation from the inside, happening in every mitochondrion at once."
+see_also:
+  - histotoxic-hypoxia
+  - sulfide-quinone-oxidoreductase
+  - mitochondrion
+category: bio
+tags:
+  - physiology
+  - chemistry
+cover_prompt: A painted molecular study of a large membrane-embedded protein complex with a bright twin-metal centre glowing at its core, faint electron motes arriving along the membrane and a single pale intruding particle wedged into the metal site darkening it, teal fading to magenta against deep indigo, painterly, no text, no labels, no numbers.

@@ -1,0 +1,230 @@
+{
+  "viz": {
+    "taphonomicGauntlet": {
+      "title": "Five gates between a body and a fossil",
+      "subtitle": "Preservation is not one unlikely event. It is five, multiplied — and the same animal's odds swing four orders of magnitude depending only on where it happens to die.",
+      "controls": {
+        "setting": "Where the animal dies"
+      },
+      "aria": {
+        "chart": "Pass rates for the five preservation gates in the selected setting"
+      },
+      "axis": {
+        "pass": "Share that gets through each gate"
+      },
+      "setting": {
+        "forestFloor": "Forest floor",
+        "uplandLedge": "Upland ledge",
+        "sulfidicLagoon": "Sulfidic lagoon",
+        "ashFall": "Ash fall"
+      },
+      "gate": {
+        "tissue": "Durable tissue",
+        "burial": "Rapid burial",
+        "diagenesis": "Survives chemistry",
+        "strata": "Rock survives",
+        "discovery": "Someone finds it"
+      },
+      "hint": {
+        "forestFloor": "This is the biome Pandora is famous for, and it is the worst one. Nothing is buried fast enough — the burial gate alone throws away 996 bodies in every thousand, and acid pore water finishes the rest.",
+        "uplandLedge": "A mountain shelf is worse still. No sediment arrives to bury anything, and the little rock that forms there is the first to be stripped away again.",
+        "sulfidicLagoon": "Now the numbers invert. Anoxic bottom water keeps scavengers off, and sulfide-charged mud replaces soft tissue instead of destroying it.",
+        "ashFall": "Ash removes the bottleneck outright. A metre of tephra buries a living community where it stands, in hours, and seals it from the air."
+      },
+      "verdict": {
+        "forestFloor": "Effectively no record",
+        "uplandLedge": "Effectively no record",
+        "sulfidicLagoon": "A real archive",
+        "ashFall": "An exceptional archive"
+      },
+      "bottleneckNote": {
+        "tissue": "Nothing in the body is durable enough to start with.",
+        "burial": "The body is gone before sediment can cover it — the usual killer.",
+        "diagenesis": "Buried, then dissolved by the water in the sediment.",
+        "strata": "Fossilised, then erased with the rock that held it.",
+        "discovery": "In the ground, and nobody has cut that hillside open."
+      },
+      "readout": {
+        "overall": "Odds of a fossil",
+        "bottleneck": "Tightest gate"
+      },
+      "units": "Bars are per-gate pass rates on a log scale. Values are illustrative orders of magnitude drawn from Earth taphonomy, not Pandoran measurements."
+    },
+
+    "pyriteWindow": {
+      "title": "The window that casts soft tissue in mineral",
+      "subtitle": "Pyrite can replace a muscle at cellular resolution in days — but only inside a narrow chemical window. Pandora's air holds that window open.",
+      "controls": {
+        "preset": "World",
+        "sulfide": "Dissolved sulfide",
+        "iron": "Reactive iron",
+        "carbon": "Background organic carbon"
+      },
+      "preset": {
+        "earth": "Earth basin",
+        "pandora": "Pandoran basin"
+      },
+      "axis": {
+        "sulfide": "Dissolved sulfide at the carcass",
+        "iron": "Reactive iron in the mud"
+      },
+      "aria": {
+        "barren": "Chemical map with the carcass outside the pyritization window, too little sulfide",
+        "ironStarved": "Chemical map with the carcass short of reactive iron",
+        "carbonPoisoned": "Chemical map with the pyritization window closed by excess organic carbon",
+        "pyriteWindow": "Chemical map with the carcass inside the pyritization window"
+      },
+      "regime": {
+        "barren": "Nothing forms",
+        "ironStarved": "Iron-starved",
+        "carbonPoisoned": "Carbon-poisoned",
+        "pyriteWindow": "Soft tissue replaced"
+      },
+      "regimeNote": {
+        "barren": "Too little reduced sulfur to precipitate any iron sulfide.",
+        "ironStarved": "Sulfide is abundant, but there is no iron for it to bind.",
+        "carbonPoisoned": "So much organic matter that the iron is consumed everywhere except on the body.",
+        "pyriteWindow": "Brassy pyrite grows on the tissue itself before decay finishes."
+      },
+      "resolution": {
+        "none": "No anatomy recorded",
+        "outline": "Body outline only",
+        "organs": "Organs and gut traceable",
+        "cellular": "Filaments at cellular scale"
+      },
+      "limiting": {
+        "sulfide": "Sulfide supply",
+        "iron": "Iron supply",
+        "carbon": "Competing carbon",
+        "none": "Nothing — all three balanced"
+      },
+      "hint": {
+        "earth": "On Earth the sulfide has to be manufactured on site, by bacteria eating the corpse. That takes time the corpse does not have, which is why pyrite fossils are rare enough to have names.",
+        "pandora": "Pandora skips the bacterial step. With over one percent hydrogen sulfide in the air, rain and standing water arrive already charged, and the limit moves from sulfide to iron.",
+        "barren": "Below roughly thirty on the sulfide dial nothing precipitates at all, however much iron is waiting.",
+        "ironStarved": "Sulfide without iron gasses off harmlessly. The mineral needs both halves.",
+        "carbonPoisoned": "The counter-intuitive failure: too much organic carbon in the surrounding mud and the iron never reaches the body. Exceptional pyrite fossils come from carbon-poor beds."
+      },
+      "readout": {
+        "regime": "Outcome",
+        "fidelity": "Fidelity",
+        "limiting": "Limited by"
+      },
+      "units": "Dials are dimensionless 0–100 concentration regimes, not molarities. Thresholds reproduce the relationships measured in Earth pyrite deposits."
+    },
+
+    "lastAppearance": {
+      "title": "Why the last fossil is never the last animal",
+      "subtitle": "All five taxa die out at the same instant. Their observed last appearances do not — and how badly they scatter depends only on how often each one turns up.",
+      "controls": {
+        "effort": "Sampling effort",
+        "confidence": "Confidence"
+      },
+      "confidence": {
+        "c90": "90%",
+        "c95": "95%",
+        "c99": "99%"
+      },
+      "aria": {
+        "chart": "Stratigraphic section showing find horizons, observed last appearances, and confidence intervals for five taxa"
+      },
+      "taxon": {
+        "microspore": "Microspore",
+        "reefBuilder": "Reef builder",
+        "grazingHerd": "Grazer",
+        "apexHunter": "Hunter",
+        "canopyFlyer": "Flyer"
+      },
+      "marker": {
+        "truth": "True extinction",
+        "absent": "never found"
+      },
+      "axis": {
+        "section": "Up the section"
+      },
+      "hint": {
+        "sparse": "This is the Signor–Lipps effect. One abrupt event now looks like a staggered decline, and the rarest taxa appear to vanish first — purely because they are rare.",
+        "dense": "With this much sampling every taxon's confidence interval reaches the true horizon, and the extinction reads as what it is: simultaneous."
+      },
+      "readout": {
+        "decline": "Apparent decline",
+        "declineNote": "Vertical spread of last appearances — all of it artifact",
+        "covered": "Intervals reaching the truth",
+        "coveredNote": "Confidence intervals that contain the real horizon",
+        "rarest": "Rarest taxon's interval",
+        "rarestNote": "Strauss–Sadler extension above its highest find",
+        "unbounded": "unbounded"
+      },
+      "units": "Section height is in arbitrary units, 0 at the base to 100 at the true extinction. Intervals are the classical Strauss–Sadler estimate α = R[(1−C)^(−1/(n−1))−1]."
+    },
+
+    "archiveBlindspot": {
+      "title": "Two archives, two blind spots",
+      "subtitle": "Pandora keeps its past twice over. Which record can answer you depends entirely on what you ask.",
+      "controls": {
+        "question": "Ask the past"
+      },
+      "questionShort": {
+        "grandmotherSong": "A song",
+        "lastHunt": "Last season",
+        "anoxicEvent": "A dead ocean",
+        "stemAncestor": "The first ancestor"
+      },
+      "hint": {
+        "grandmotherSong": "For a question about what someone lived through, the network is not merely better than the rock — the rock has no way to hold the question at all.",
+        "lastHunt": "Recent, witnessed, told. Sediment has not had time to become evidence of anything.",
+        "anoxicEvent": "Now the asymmetry reverses. An ocean that lost its oxygen before anything was there to notice leaves no memory and a great deal of rock.",
+        "stemAncestor": "The hardest question on the list, and the one that decides the chapter: it is about an animal that existed before the network did, so only the rock could ever have known it."
+      },
+      "question": {
+        "grandmotherSong": "How did my grandmother's grandmother sing this — her cadence, the words she chose, where she paused?",
+        "lastHunt": "What happened on the hunt three seasons ago, and who was there?",
+        "anoxicEvent": "Did Pandora's ocean lose its oxygen forty million years ago, and for how long?",
+        "stemAncestor": "What did the animal look like that lived before anything had a queue at all?"
+      },
+      "archive": {
+        "neural": "Eywa's network",
+        "songcord": "Songcords and telling",
+        "rock": "The rock record"
+      },
+      "archiveNote": {
+        "neural": "Experience, replayed with its texture intact.",
+        "songcord": "What a clan chose to keep saying.",
+        "rock": "What happened, whether or not anything watched."
+      },
+      "verdict": {
+        "answers": "Answers",
+        "partial": "Partly",
+        "blind": "Blind"
+      },
+      "reason": {
+        "grandmotherSong": {
+          "neural": "By canon the network holds the stored experience of the dead, retrievable through the queue. This is exactly what it is for.",
+          "songcord": "A songcord fixes the events and their order, but a knot cannot hold a cadence.",
+          "rock": "No sediment anywhere records a performance. There is nothing for the question to bind to."
+        },
+        "lastHunt": {
+          "neural": "Recent, witnessed, and inside the network's reach.",
+          "songcord": "Living memory and retelling do this without any special machinery.",
+          "rock": "Three seasons of sediment is a film of silt. Nothing has had time to become evidence."
+        },
+        "anoxicEvent": {
+          "neural": "Nothing was there to experience it, and a network cannot recall an ocean's chemistry.",
+          "songcord": "Forty million years is far outside anything a clan has been telling.",
+          "rock": "Black shale, sulfide minerals and a carbon-isotope shift record it whether or not anyone noticed."
+        },
+        "stemAncestor": {
+          "neural": "The animal predates the queue, so it was never connected to be remembered.",
+          "songcord": "No lineage of telling reaches that far back.",
+          "rock": "Only the rock could hold it — and finding it means finding the right basin, which nobody has looked for."
+        }
+      },
+      "readout": {
+        "trust": "Ask this one",
+        "none": "Neither",
+        "blind": "Structurally blind",
+        "blindNote": "Archives that cannot answer this even in principle"
+      }
+    }
+  }
+}

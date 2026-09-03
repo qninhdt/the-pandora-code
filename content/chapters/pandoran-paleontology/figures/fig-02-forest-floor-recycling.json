@@ -1,0 +1,32 @@
+{
+  "id": "fig-02-forest-floor-recycling",
+  "chapter_slug": "pandoran-paleontology",
+  "role": "diagram",
+  "narrative_purpose": "Shows the destruction of a skeleton on a rainforest floor as a four-stage sequence, so the reader sees that the loss is progressive and total rather than partial - and that roots and soil, not scavengers alone, finish the job.",
+  "subject": "A cutaway cross-section of forest soil showing the same large six-limbed animal skeleton at four successive stages, arranged left to right. Stage one: the skeleton complete and articulated, pale and clean, lying on the leaf litter. Stage two: the same skeleton with its long bones visibly split by fine lengthwise cracks and thin flakes lifting from their surfaces. Stage three: the skeleton broken into disconnected fragments, ribs snapped, the surfaces pitted and eaten away. Stage four: only a faint pale discoloured stain in the soil in the shape the animal once occupied, crossed and penetrated by dense pale root hairs.",
+  "scene": "Deep orange-red clay soil in cross-section beneath a thin dark layer of rotting leaf litter, the whole soil body threaded with fine pale roots and fungal filaments, with the bases of enormous glowing tree trunks visible above the section line.",
+  "camera": "A flat side-on cross-section view, as if a trench wall had been cut cleanly and the four stages laid out along it at the same depth.",
+  "light": "Faint cool teal and cyan bioluminescence seeping down from above and glowing along the fungal filaments; the deep soil in indigo shadow; the intact skeleton at left catching the most light and each successive stage dimmer.",
+  "palette": "Rust-red and orange clay against void-indigo, pale bone-cream fading to nothing across the four stages, faint living-teal on the root and fungal network.",
+  "style": "Painterly naturalist cutaway plate, hand-painted texture, the clarity of a scientific illustration without any drawn annotation.",
+  "detail_level": "Crisp on the bone surface texture at each stage and on the root hairs invading the final stain; the soil matrix richly textured; the trunks above soft.",
+  "composition": "Four evenly spaced stages left to right across the middle band of the frame, dark soil above and below each for later callouts, the progression reading unmistakably as one sequence.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "stage markers",
+    "human figures",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Six limbs on the skeleton in every stage where limbs are still identifiable. Cool Pandora palette, no warm accent. The four stages must be clearly the same animal, not four different ones.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no stage numbers, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

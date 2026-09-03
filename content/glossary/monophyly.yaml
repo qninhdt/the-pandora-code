@@ -1,0 +1,30 @@
+id: monophyly
+label:
+  vi: Đơn ngành
+  en: Monophyly
+definition:
+  vi: >-
+    Tính chất của một nhóm gồm một tổ tiên và **toàn bộ** con cháu của nó, không thiếu ai. Đó là loại nhóm duy nhất tương ứng
+    với một nhánh thật trên cây sự sống, nên nó là mục tiêu của mọi phân loại nghiêm túc. Hai lối trượt thường gặp là bỏ sót
+    con cháu — cách gọi "bò sát" mà loại chim ra là ví dụ kinh điển — và gộp những thứ chỉ trông giống nhau. Với một hệ thực
+    vật, cái bẫy thứ hai đặc biệt nguy hiểm, vì dáng cây, chiếc bình bắt mồi và thân mọng nước đều đã được phát minh nhiều lần
+    ở những dòng dõi chẳng liên quan.
+  en: >-
+    The property of a group containing one ancestor and **all** of its descendants, with none left out. It is the only kind of
+    group that corresponds to a real branch on the tree of life, which makes it the goal of any serious classification. The two
+    common failures are leaving descendants out — "reptiles" excluding birds is the classic case — and lumping together things
+    that merely look alike. For a flora the second trap is especially dangerous, because the tree habit, the pitcher trap and
+    the succulent stem have each been invented many times in unrelated lineages.
+see_also:
+  - clade
+  - paraphyly
+  - polyphyly
+  - synapomorphy
+category: concept
+tags:
+  - evolution
+  - philosophy-of-science
+cover_prompt: >-
+  A painterly naturalist plate of a glowing branching tree with one complete branch and every one of its twigs highlighted
+  brightly, the rest of the tree dim, one neighbouring twig deliberately left dark outside the highlight, cool cyan and teal
+  palette, no text, no labels, no numbers.

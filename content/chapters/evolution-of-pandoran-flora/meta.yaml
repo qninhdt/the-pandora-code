@@ -1,0 +1,168 @@
+slug: evolution-of-pandoran-flora
+status: published
+title:
+  vi: Tiến hóa Thực vật Pandora
+  en: Evolution of Pandoran Flora
+subtitle:
+  vi: >-
+    Một tủ tiêu bản đầy tên Latin và không một sơ đồ phả hệ nào. Muốn dựng nó lên, trước tiên phải
+    trả lời câu hỏi khó hơn: khi hai cái cây trông giống nhau, ta thực sự biết được điều gì?
+  en: >-
+    A specimen cabinet full of Latin names and not one family tree. To draw it you must first answer
+    the harder question: when two plants resemble each other, what have you actually learned?
+hook:
+  vi: >-
+    Hệ thực vật Pandora được ghi chép chi tiết hơn bất cứ hệ thực vật hư cấu nào — hai chục cái tên
+    Linnaeus, kích thước, sinh cảnh, tập tính. Nhưng một tên chi là một luận điểm về nguồn gốc, và
+    chưa ai từng kiểm chứng nó. Bầy thú thì đã có cây phả hệ hẳn hoi; hệ thực vật chỉ có một tủ hồ
+    sơ. Chương này dựng lại cái cây còn thiếu ấy, và phát hiện ra rằng gần như mọi nét giống nhau
+    trong tủ đều đang kể về mặt đất, chứ không phải về dòng dõi. Trên Trái Đất, dáng cây được phát
+    minh ít nhất sáu lần độc lập, cái bình bắt mồi mười hai lần, và cỏ biển đã ba bốn lần quay lại
+    đại dương. Kết luận cuối cùng thậm chí còn khó chịu hơn: với một hệ thực vật nối nhau bằng rễ,
+    hình vẽ trung thực không phải một cái cây, mà là một mạng lưới.
+  en: >-
+    Pandora's flora is documented more thoroughly than any invented flora has a right to be — two
+    dozen Linnaean names, with sizes, habitats and behaviour. But a genus name is an argument about
+    descent, and nobody has ever tested one. The bestiary has a real family tree; the flora has a
+    filing cabinet. This chapter builds the missing tree, and finds that nearly every resemblance in
+    the drawer is reporting on the ground rather than on ancestry. On Earth the tree habit was
+    invented independently at least six times, the pitcher trap about twelve, and seagrasses went
+    back to the ocean three or four times over. The final answer is more awkward still: for a flora
+    wired together underground, the honest diagram is not a tree but a network.
+authors:
+  - bardabez
+tags:
+  - botany
+  - evolutionary-biology
+  - phylogenetics
+  - convergent-evolution
+  - terrestrialization
+  - plant-physiology
+classification:
+  canon_pct: 18
+  inference_pct: 20
+  speculation_pct: 7
+  real_science_pct: 55
+related_chapters:
+  - pandoran-tree-of-life
+  - how-a-pandoran-plant-feeds
+  - the-wood-wide-web
+  - life-after-the-volcano
+glossary_terms:
+  - convergent-evolution
+  - lignin
+  - tracheid
+  - secondary-growth
+  - vascular-cambium
+  - streptophyte-algae
+  - terrestrialization
+  - embryophyte
+  - sporopollenin
+  - stomata
+  - alternation-of-generations
+  - gametophyte
+  - sporophyte
+  - heterospory
+  - angiosperm
+  - gymnosperm
+  - seagrass
+  - aerenchyma
+  - zooplantae
+  - thigmonasty
+  - plastid
+  - polyploidy
+  - allopolyploidy
+  - horizontal-gene-transfer
+  - plastid-capture
+  - monophyly
+  - parataxonomy
+  - palynology
+  - living-fossil
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-field-catalogue-without-a-tree
+    role: hero
+    asset_status: ready
+  - id: fig-02-three-ways-to-be-a-tree
+    role: comparison
+    asset_status: ready
+  - id: fig-03-out-of-the-freshwater
+    role: diagram
+    asset_status: ready
+  - id: fig-04-the-pitcher-repeated
+    role: comparison
+    asset_status: ready
+  - id: fig-05-back-to-the-sea
+    role: comparison
+    asset_status: ready
+  - id: fig-06-the-leaf-that-flinches
+    role: inline
+    asset_status: ready
+  - id: fig-07-first-green-on-the-ash
+    role: inline
+    asset_status: ready
+  - id: fig-99-background
+    role: hero
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Pandoran Flora - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Pandoran_Flora
+  - kind: canon
+    label: Helicoradian - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Helicoradian
+  - kind: canon
+    label: Octoshroom - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Octoshroom
+  - kind: canon
+    label: Puffball Tree - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Puffball_Tree
+  - kind: canon
+    label: Direhorse Pitcher Plant - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Direhorse_Pitcher_Plant
+  - kind: canon
+    label: >-
+      Wilhelm & Mathison - James Cameron's Avatar: An Activist Survival Guide (the flora dossiers
+      and the zooplantae category)
+  - kind: community
+    label: The alien plants that twist the world of Avatar (interview with the production botanist)
+    url: https://www.space.com/8000-alien-plants-twist-world-avatar.html
+  - kind: science
+    label: One Thousand Plant Transcriptomes and the phylogenomics of green plants
+    url: https://www.nature.com/articles/s41586-019-1693-2
+  - kind: science
+    label: Cheng et al. - genomes of subaerial Zygnematophyceae and the plant terrestrialization toolkit
+    url: https://pubmed.ncbi.nlm.nih.gov/31730849/
+  - kind: science
+    label: Stein et al. - the earliest known trees and Middle Devonian forest architecture
+    url: https://www.nature.com/articles/nature05705
+  - kind: science
+    label: Boyce et al. - the bark-supported construction of the Carboniferous lycopsid trees
+    url: https://pubs.geoscienceworld.org/gsa/geology/article/31/12/1073/103649
+  - kind: science
+    label: Fleischmann et al. - the independent origins of carnivory in plants
+    url: https://pubmed.ncbi.nlm.nih.gov/29940194/
+  - kind: science
+    label: Les et al. - the phylogeny of seagrasses and the return of angiosperms to the sea
+    url: https://www.jstor.org/stable/2419724
+  - kind: science
+    label: Rice et al. - horizontal transfer of entire mitochondrial genomes into Amborella
+    url: https://www.science.org/doi/10.1126/science.1246275
+  - kind: science
+    label: Wood et al. - the frequency of polyploid speciation in vascular plants
+    url: https://www.pnas.org/doi/10.1073/pnas.0811575106
+  - kind: science
+    label: Halliday et al. - the age of the Rhynie Chert
+    url: https://www.lyellcollection.org/doi/10.1144/jgs2013-134
+  - kind: science
+    label: >-
+      del Moral & Whittaker - primary succession and the nitrogen bottleneck after volcanic
+      disturbance
+    url: >-
+      https://esajournals.onlinelibrary.wiley.com/doi/10.1890/0012-9658%282001%29082%5B0693%3ASOTPPA%5D2.0.CO%3B2
+  - kind: research-note
+    label: >-
+      The evolutionary xenobotany of Pandora - descent, convergence and reticulate phylogenetics
+      (chapter research note)

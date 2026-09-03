@@ -1,0 +1,18 @@
+id: signor-lipps-effect
+label:
+  vi: Hiệu ứng Signor-Lipps
+  en: Signor-Lipps effect
+definition:
+  vi: 'Philip Signor và Jere Lipps chỉ ra năm 1982 rằng vì hồ sơ hóa thạch của loài nào cũng khuyết, lần xuất hiện cuối cùng *quan sát được* của một loài gần như chưa bao giờ là thời điểm nó thực sự tuyệt chủng. Hệ quả rất khó chịu: lấy vài loài cùng chết trong một khoảnh khắc, loài phổ biến sẽ có hóa thạch cuối nằm sát tầng thật, loài hiếm thì nằm thấp hơn nhiều - và khi vẽ ra, một biến cố đột ngột trông y như một cuộc suy tàn so le kéo dài, với các loài hiếm dường như chết trước. Không có trình tự nào trong đó là thật.'
+  en: 'Philip Signor and Jere Lipps pointed out in 1982 that because every species'' fossil record is incomplete, a taxon''s *observed* last appearance is almost never when it actually went extinct. The consequence is uncomfortable: take several species that died out at the same instant, and the common one''s last fossil sits just below the true horizon while the rare one''s sits far below it - so when plotted, an abrupt event looks like a long staggered decline with rare species apparently dying first. None of that sequence is real.'
+see_also:
+  - taphonomy
+  - ghost-lineage
+  - pull-of-the-recent
+  - biostratigraphy
+category: concept
+tags:
+- geology
+- evolution
+- philosophy-of-science
+cover_prompt: A painted vertical rock section with one bright horizontal line near its top and five short tick marks scattered at different heights well below it, the ticks connected by nothing, cool indigo stone with cyan and magenta ticks, painterly diagram feel, no text, no numbers, no labels.

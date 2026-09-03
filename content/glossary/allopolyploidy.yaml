@@ -1,0 +1,29 @@
+id: allopolyploidy
+label:
+  vi: Đa bội khác nguồn
+  en: Allopolyploidy
+definition:
+  vi: >-
+    Sự hình thành loài mới bằng cách lai hai loài rồi nhân đôi bộ nhiễm sắc thể của con lai, khiến nó sinh
+    sản được và lập tức bị cách ly khỏi cả hai bên bố mẹ. Đây không phải lý thuyết: cỏ đầm mặn *Spartina
+    anglica* xuất hiện ở Anh khoảng năm 1890 theo đúng cách này, và *Tragopogon miscellus* ở Bắc Mỹ đã làm
+    điều tương tự trong thế kỷ hai mươi, hai lần, ở hai nơi khác nhau. Một loài đa bội khác nguồn có hai
+    dòng dõi bố mẹ, nên trên một sơ đồ cây phân nhánh thuần túy không tồn tại chỗ nào để vẽ nó.
+  en: >-
+    New species formation by hybridising two species and then doubling the hybrid's chromosome set, which
+    makes it fertile and instantly isolated from both parents. This is not theory: the salt-marsh grass
+    *Spartina anglica* appeared in Britain around 1890 in exactly this way, and *Tragopogon miscellus* in
+    North America did the same in the twentieth century, twice, in different places. An allopolyploid
+    species has two parent lineages, so on a strictly bifurcating tree diagram there is nowhere to draw it.
+see_also:
+  - polyploidy
+  - reticulate-evolution
+  - horizontal-gene-transfer
+category: bio
+tags:
+  - evolution
+  - network-science
+cover_prompt: >-
+  A painterly naturalist plate of two distinct grass plants whose glowing lineage threads converge into a
+  single new plant between them, that new plant brighter and carrying a doubled thread bundle, cool teal and
+  magenta palette, no text, no labels, no numbers.

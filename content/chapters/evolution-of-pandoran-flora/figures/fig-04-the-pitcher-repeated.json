@@ -1,0 +1,32 @@
+{
+  "id": "fig-04-the-pitcher-repeated",
+  "chapter_slug": "evolution-of-pandoran-flora",
+  "role": "comparison",
+  "narrative_purpose": "Shows four urn-forming plants of which three trap and digest animals while the fourth holds nectar for a pollinator, so the reader sees the same organ serving opposite purposes and stops reading the shape as kinship.",
+  "subject": "Four urn-shaped alien plants standing in a row, evenly spaced, each cut open on its near side so the inside of the vessel is visible. The first is a broad waisted urn holding dark fluid with a few insect husks floating in it. The second is a narrower funnel of a single folded leaf, its rim partly closed inward, also holding dark fluid. The third, the largest, is a tall tubular vessel whose basin holds a bright pale-gold liquid instead of dark fluid, and a slender six-limbed grazing animal stands at its rim with a long tongue lowered into the liquid. The fourth is small and sits not on the ground but clamped onto a thick horizontal branch above, a tight rosette of overlapping leaf bases holding rainwater and fallen debris.",
+  "scene": "A dark forest understorey with a bare damp forest floor beneath the first three plants and one thick horizontal bough crossing the upper right where the fourth plant grows.",
+  "camera": "A straight-on view at mid height, all four plants fully in frame, the fourth raised above the line of the other three.",
+  "light": "Bioluminescent self-glow from the vessels: cool cyan and living-teal rims on the three trapping urns, a distinctly warmer amber glow rising from the nectar-filled third vessel; deep indigo shadow behind and between them.",
+  "palette": "Void-indigo ground, cyan and living-teal on the three digesting urns, scarce ember amber reserved for the nectar vessel and the feeding animal, restrained.",
+  "style": "Painterly naturalist cutaway plate, hand-painted texture, clear focal hierarchy.",
+  "detail_level": "Crisp on the four vessel interiors and on the contrast between dark digestive fluid and pale nectar; the forest behind soft; edges dissolving into haze.",
+  "composition": "Four forms in even rhythm across the frame with the fourth lifted onto a bough at upper right, dark negative space above the row for later callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "Earth insects",
+    "human figures",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Cool Pandora palette; the warm amber is reserved strictly for the one non-carnivorous nectar vessel and its visiting animal, so the odd one out reads instantly by colour. The grazing animal must have six limbs.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

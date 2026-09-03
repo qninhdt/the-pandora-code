@@ -1,0 +1,16 @@
+id: target-site-insensitivity
+label:
+  vi: Kháng độc bằng biến đổi đích tác động
+  en: Target-site insensitivity
+definition:
+  vi: "Chiến lược sống sót với một chất độc bằng cách thay đổi thứ mà nó gắn vào, thay vì cố phân giải nó nhanh hơn. Bướm chúa là ví dụ kinh điển: ấu trùng của nó ăn cây bông tai chứa đầy glycoside tim - những hợp chất chặn bơm natri-kali mà mọi tế bào động vật đều phụ thuộc - và chúng sống được vì hai thay đổi axit amin trên chính chiếc bơm của mình đã hạ ái lực với chất độc xuống hàng bậc độ lớn. Chuột chũi trụi lông làm điều tương tự với cảm giác đau do axit; cá suối lưu huỳnh làm điều tương tự với vị trí khử oxy của Phức hợp IV. Cùng một nước đi, ba bài toán khác nhau."
+  en: "The strategy of surviving a toxin by changing the thing it binds to, rather than trying to break it down faster. The monarch butterfly is the textbook case: its caterpillars eat milkweed loaded with cardiac glycosides - compounds that block the sodium-potassium pump every animal cell depends on - and they survive because two amino acid substitutions in their own pump drop its affinity for the toxin by orders of magnitude. The naked mole-rat does the same thing to acid pain; sulfide-spring fish do the same thing to the oxygen-reduction site of Complex IV. The same move, on three unrelated problems."
+see_also:
+  - cytochrome-p450
+  - cytochrome-c-oxidase
+category: concept
+tags:
+  - physiology
+  - evolution
+  - pharmacology
+cover_prompt: A painted molecular study of a membrane pump protein shown twice side by side, on one a toxin molecule locking snugly into its binding pocket and on the other the same pocket subtly reshaped so the toxin drifts away unbound, teal and magenta against deep indigo, painterly, no text, no labels, no numbers.

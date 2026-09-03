@@ -1,0 +1,17 @@
+id: diagenesis
+label:
+  vi: Biến đổi sau chôn vùi (diagenesis)
+  en: Diagenesis
+definition:
+  vi: 'Tất cả những biến đổi vật lý và hóa học mà trầm tích - và mọi thứ bị vùi trong đó - trải qua sau khi đã bị chôn lấp, ở nhiệt độ và áp suất còn thấp, trước khi bước vào biến chất thực sự. Đây là giai đoạn quyết định số phận một xác chết đã được vùi kịp: nước trong lỗ rỗng có thể lấp đầy các khoang rỗng bằng khoáng vật và giữ nguyên cấu trúc, hoặc hòa tan sạch khoáng chất xương và không để lại gì. Cùng một cơ thể, cùng một tốc độ vùi lấp, hai hóa học lỗ rỗng khác nhau cho hai kết cục hoàn toàn trái ngược.'
+  en: 'All the physical and chemical change that sediment - and anything buried in it - undergoes after burial, at low temperature and pressure, short of true metamorphism. This is the stage that decides the fate of a body that did get buried in time: pore water can fill its cavities with mineral and hold the structure, or dissolve its bone mineral and leave nothing at all. The same body, buried at the same speed, in two different pore-water chemistries, gives two opposite outcomes.'
+see_also:
+  - taphonomy
+  - permineralization
+  - pyritization
+  - kerogen
+category: concept
+tags:
+- geology
+- chemistry
+cover_prompt: A painted extreme close-up cross-section of buried bone, its microscopic pore channels filling with pale glowing mineral crystals from the surrounding dark sediment, cool teal and indigo with faint amber crystal glow, painterly, no text, no labels.

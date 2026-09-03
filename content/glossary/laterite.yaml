@@ -1,0 +1,16 @@
+id: laterite
+label:
+  vi: Đất laterite
+  en: Laterite
+definition:
+  vi: 'Loại đất đỏ cam đặc trưng của vùng nhiệt đới ẩm, hình thành khi mưa lớn quanh năm rửa trôi gần hết các khoáng chất tan được và chỉ để lại phần bã giàu sắt và nhôm. Chính oxide sắt cho nó màu gạch nung ấy. Với cổ sinh vật học, laterite là tin xấu: nước ngấm qua thảm lá mục mang theo acid hữu cơ, thường xuống dưới pH 5, và khoáng chất xương - calcium phosphate - hòa tan đúng trong điều kiện đó. Một bộ xương chưa được vùi lấp trong đất laterite không xuống cấp; nó biến mất.'
+  en: 'The orange-red soil characteristic of the wet tropics, formed when year-round heavy rain leaches out nearly everything soluble and leaves a residue rich in iron and aluminium. Iron oxides give it that brick colour. For paleontology, laterite is bad news: water percolating through rotting leaf litter carries organic acids, routinely below pH 5, and bone mineral - calcium phosphate - dissolves in exactly those conditions. An unburied skeleton in laterite does not degrade; it disappears.'
+see_also:
+  - taphonomy
+  - bioturbation
+  - diagenesis
+category: planet
+tags:
+- geology
+- ecology
+cover_prompt: A painted vertical wall of an excavation pit cut into deep orange-red tropical clay soil, uniform and structureless, fine pale rootlets threading through it, cool teal shadow at the pit floor, painterly field-photograph feel, no text, no labels.

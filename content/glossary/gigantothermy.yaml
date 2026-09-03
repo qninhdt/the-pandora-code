@@ -1,0 +1,16 @@
+id: gigantothermy
+label:
+  vi: Điều nhiệt nhờ khối lượng
+  en: Gigantothermy
+definition:
+  vi: "Sự ổn định thân nhiệt mà một cơ thể rất lớn có được chỉ nhờ hình học, không cần tăng tốc độ chuyển hóa. Diện tích bề mặt tăng theo bình phương chiều dài còn thể tích tăng theo lập phương, nên càng lớn thì tỷ lệ bề mặt trên thể tích càng nhỏ, và nhiệt độ lõi càng chậm phản ứng với biến động bên ngoài. Rùa da có thể bơi trong nước gần đóng băng khi họ hàng nhỏ hơn của nó không thể; khủng long chân thú cỡ lớn hẳn cũng vậy. Đây là lý do một con vật vài tấn có thể phớt lờ một giờ lạnh - nhưng cũng là lý do nó không thể phớt lờ một cuộc truy đuổi."
+  en: "The temperature stability a very large body gets from geometry alone, without raising its metabolic rate. Surface area grows as the square of length while volume grows as the cube, so the bigger the body the lower its surface-to-volume ratio, and the slower its core responds to anything happening outside. A leatherback turtle can swim in near-freezing water where its smaller relatives cannot; large sauropods presumably did the same. It is why a multi-tonne animal can ignore an hour of cold - and equally why it cannot ignore a long chase."
+see_also:
+  - heat-dissipation-limit
+  - regional-endothermy
+  - allometry
+category: concept
+tags:
+  - physiology
+  - physics
+cover_prompt: A painted study of an enormous animal silhouette standing motionless in cold sinking mist while faint warmth still glows deep inside its bulk, small creatures huddled in shadow nearby, cool teal and indigo with a dim amber core, painterly and atmospheric, no text, no labels, no numbers.

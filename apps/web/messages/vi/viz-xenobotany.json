@@ -1,0 +1,137 @@
+{
+  "viz": {
+    "arborescenceHabit": {
+      "title": "Ba cách để cao ba trăm mét",
+      "subtitle": "Hãy phân loại các thân cây theo dáng vẻ, rồi theo thứ chống đỡ chúng",
+      "modeLabel": "Quy tắc phân loại",
+      "mode": {
+        "silhouette": "Theo dáng ngoài",
+        "construction": "Theo cấu tạo"
+      },
+      "aria": {
+        "silhouette": "Sáu tiết diện thân cây xếp theo chiều cao, các kiểu cấu tạo trộn lẫn nhau",
+        "construction": "Sáu tiết diện thân cây chia thành ba nhóm, mỗi nhóm ghép một thân Pandora với một thân Trái Đất có cùng cách cấu tạo"
+      },
+      "world": {
+        "pandora": "Pandora",
+        "earth": "Trái Đất"
+      },
+      "taxon": {
+        "kelutral": "Cây Nhà",
+        "banyan": "Cây đa",
+        "saltarus": "Cọ thân đậu",
+        "lepidodendron": "Thạch tùng cổ đại",
+        "obesus": "Cây cầu bông",
+        "cactus": "Xương rồng saguaro"
+      },
+      "readout": {
+        "piles": "Số nhóm",
+        "pilesNote": {
+          "silhouette": "một nhóm, cao nhất trước",
+          "construction": "mỗi cách đứng vững một nhóm"
+        },
+        "spread": "Độ lệch gỗ",
+        "spreadValue": "{pct} điểm",
+        "spreadNote": "khoảng cách rộng nhất trong một nhóm",
+        "tells": "Điều nó hé lộ",
+        "kinship": "Cấu tạo",
+        "habitat": "Không gì cả",
+        "tellsNote": {
+          "silhouette": "chiều cao không di truyền",
+          "construction": "vẫn chưa phải quan hệ họ hàng"
+        }
+      },
+      "hint": {
+        "silhouette": "Xếp theo lối này, khoảng cách về lượng gỗ chịu lực trong cùng một nhóm rộng đến mức khó tin — một thân gần một phần tư là gỗ nằm ngay cạnh một thân chỉ một phần hai mươi. Một nhóm trộn lẫn được cả hai thì không phải một họ.",
+        "construction": "Giờ mỗi nhóm gồm một thân Pandora cùng dòng dõi Trái Đất đã vươn tới tầm cây bằng đúng cách ấy. Chính sự ghép đôi đó tố giác mọi thứ: không có tổ tiên chung nào bắc qua hai thế giới, nên nét giống nhau kia đã được tìm ra hai lần."
+      },
+      "verdict": {
+        "silhouette": "Xét theo dáng ngoài, cả sáu đều là cây và phép phân loại chẳng nói lên điều gì. Chiều cao là lời đáp cho cuộc cạnh tranh ánh sáng, và bất cứ thứ gì có kiểu sinh trưởng cùng đủ thời gian đều có thể vươn tới.",
+        "construction": "Chia theo cơ chế, hệ thực vật tách ra rành rẽ — một vành rỗng gồm các thân chống hợp lại, một lõi mảnh nằm trong lớp vỏ bọc đầy sợi, một thân mềm được các khoang khí nâng đỡ. Mỗi giải pháp Pandora đều có một bản song sinh trên Trái Đất chẳng hề là họ hàng, và đó chính xác là diện mạo của tiến hóa hội tụ."
+      }
+    },
+    "pitcherConvergence": {
+      "title": "Một chiếc bình thật ra nói cho ta điều gì",
+      "subtitle": "Hãy rửa trôi đất và xem chiếc bình nào bắt đầu tự trang trải được",
+      "aria": "Bốn loài thực vật tạo bình nằm trên một nền đất, lòng bình đầy dần khi đất bị bần cùng hóa",
+      "taxon": {
+        "rosea": "Cây thánh tích",
+        "simplex": "Bình lá đơn",
+        "equina": "Bình ngựa trực",
+        "panopyra": "Panopyra"
+      },
+      "harvest": {
+        "prey": "đang tiêu hóa con mồi",
+        "debris": "đang hứng mảnh vụn",
+        "pollinator": "đang nuôi loài thụ phấn",
+        "none": "bẫy bỏ không"
+      },
+      "soil": {
+        "nitrogen": "Nitơ khả dụng sinh học",
+        "phosphorus": "Phốt pho khả dụng sinh học",
+        "percent": "{pct}% mức cần"
+      },
+      "readout": {
+        "percent": "{pct}%",
+        "soilSignal": "Tín hiệu về đất",
+        "soilSignalNote": "chiếc bình dự báo đất nghèo tốt đến đâu",
+        "origins": "Số lần phát sinh riêng",
+        "originsNote": "của chiếc bình, chỉ riêng trên bàn này",
+        "kinshipSignal": "Tín hiệu họ hàng",
+        "kinshipSignalNote": "đất thay đổi nó vẫn đứng yên, và rất thấp"
+      },
+      "hint": "Hãy kéo cả hai dưỡng chất xuống thấp và mọi chiếc bẫy đều sáng lên: trên nền đất đã rửa trôi, bắt một con vật rẻ hơn mọc thêm rễ. Kéo chúng lên thì các bẫy im lìm, mà chẳng ai đổi họ hàng với ai. Chỉ số về đất thì động; chỉ số về tổ tiên thì không.",
+      "verdict": {
+        "leached": "Đây chính là điều kiện liên tục phát minh lại chiếc bình — trên Trái Đất là mười đến mười hai lần, ở những họ chẳng gần gũi gì nhau. Bình ngựa trực là bằng chứng rõ nhất: nó giữ nguyên chiếc bình ấy nhưng tắt hẳn khả năng tiêu hóa, biến lòng bình thành một giếng mật, đúng như loài Nepenthes lowii trên Trái Đất đã từ bỏ lối ăn thịt để thành trạm ăn cho chuột chù cây. Còn Panopyra chạm tới cùng chiếc bình ấy từ trên tán rừng, chẳng có chút đất nào bên dưới.",
+        "rich": "Trên nền đất khá, chiếc bẫy thành một món nợ — carbon tiêu cho một cơ quan mà bộ rễ đã khiến thành vô dụng. Vì thế lối ăn thịt trên Trái Đất gần như chỉ thấy ở đầm than bùn, đất cát và đất nhiệt đới bị rửa trôi, và vì thế cơ quan ấy bị bỏ đi nhiều lần mỗi khi đất tốt lên."
+      }
+    },
+    "reticulateFlora": {
+      "title": "Cái cây không chịu làm một cái cây",
+      "subtitle": "Hãy thêm những kênh nối ngang rồi đếm số vòng khép kín",
+      "layerLabel": "Vẽ những đường nối nào",
+      "layer": {
+        "tree": "Chỉ dòng dõi",
+        "network": "Thêm kênh nối ngang"
+      },
+      "aria": {
+        "tree": "Sơ đồ phân nhánh các nhóm thực vật Pandora được đề xuất, chỉ gồm những đường dòng dõi",
+        "network": "Cùng sơ đồ ấy khi thêm các kênh nối ngang, tạo thành những vòng khép kín"
+      },
+      "clade": {
+        "stem": "sinh vật tự dưỡng gốc",
+        "protoZooplantae": "bậc zooplantae",
+        "paleoPterido": "nhóm tiên phong phát bào tử",
+        "vascularStem": "gốc có mạch",
+        "dendroNeuro": "những gã khổng lồ nối mạng",
+        "tensiloSperm": "nhóm thân đơn trục chịu kéo",
+        "sarcocaulo": "nhóm thân mọng",
+        "thalasso": "nhóm trở về biển"
+      },
+      "edge": {
+        "rootGraft": "ghép rễ (nguyên tác)",
+        "hyphalConduit": "ống dẫn nấm (nguyên tác)",
+        "plastidCapture": "chiếm lục lạp (suy luận)",
+        "geneTransfer": "chuyển gene (suy luận)"
+      },
+      "readout": {
+        "descent": "Đường dòng dõi",
+        "descentNote": "từ cha mẹ xuống con cháu",
+        "lateral": "Đường nối ngang",
+        "lateralNote": "từ nhánh sang nhánh",
+        "shape": "Hình dạng",
+        "tree": "Một cái cây",
+        "network": "Một mạng lưới",
+        "shapeNote": "{cycles} vòng khép kín"
+      },
+      "hint": {
+        "tree": "Chỉ riêng dòng dõi thì cho ra một cái cây gọn gàng: mỗi nhóm có đúng một nhóm cha mẹ, và một cái cây với số nút này có số đường nối ít hơn số nút đúng một. Không vòng nào cả.",
+        "network": "Hai trong số các kênh này là nguyên tác — cây Unidelta bơm hợp chất phòng vệ của chính nó sang bộ rễ láng giềng, và loài nấm khổng lồ luồn qua vỏ rễ. Hai kênh còn lại là dòng chảy di truyền bình thường mà thực vật Trái Đất vẫn cho thấy. Dù theo lối nào, một khi có đường nối hai nhánh thì sơ đồ khép lại một vòng, và một hình có vòng thì không phải cái cây."
+      },
+      "verdict": {
+        "tree": "Vẽ theo lối này, hệ thực vật trông như một cây phát sinh loài của động vật: phân nhánh suốt từ trên xuống, mỗi dòng dõi bắt nguồn từ đúng một tổ tiên. Thực vật trên Trái Đất hầu như chẳng bao giờ xử sự vậy.",
+        "network": "Giờ bức tranh mới trung thực. Khoảng bảy trong mười loài thực vật có hoa còn sống hôm nay mang một lần nhân đôi toàn bộ hệ gene trong quá khứ tổ tiên; loài Spartina anglica xuất hiện như một loài mới vào khoảng năm 1890 bằng cách lai hai loài khác; cây Amborella nhận năm hệ gene ty thể ngoại lai từ rêu và tảo; dương xỉ vay một thụ thể ánh sáng từ rêu tản. Pandora chỉ thêm vào danh sách ấy một mạng rễ trải khắp hành tinh — và một phả hệ thực vật buộc phải được vẽ thành mạng."
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+id: plastid-capture
+label:
+  vi: Chiếm lục lạp
+  en: Plastid capture
+definition:
+  vi: >-
+    Việc một loài kết thúc với hệ gene lục lạp của loài khác trong khi vẫn giữ nguyên bản sắc nhân của mình.
+    Cơ chế thì bình thường: lai với một loài họ hàng, rồi lai trở lại nhiều lần với loài của mình, và các gene
+    nhân ngoại lai dần bị pha loãng đi trong khi lục lạp — vốn chỉ truyền theo dòng mẹ và không tái tổ hợp —
+    vẫn nằm lại. Hệ quả rất thực tế: cây phả hệ dựng từ gene lục lạp và cây dựng từ gene nhân thường xuyên
+    mâu thuẫn, nên một nhà thực vật học khi dẫn một phả hệ buộc phải nói rõ nó đến từ hệ gene nào.
+  en: >-
+    A species ending up with another species' chloroplast genome while keeping its own nuclear identity. The
+    mechanism is ordinary: hybridise with a relative, then backcross repeatedly to your own species, and the
+    foreign nuclear genes are progressively diluted away while the chloroplast — inherited only through the
+    maternal line and not recombining — stays. The practical consequence is real: trees built from chloroplast
+    genes and trees built from nuclear genes routinely disagree, so a botanist quoting a phylogeny has to say
+    which genome it came from.
+see_also:
+  - horizontal-gene-transfer
+  - reticulate-evolution
+  - plastid
+category: bio
+tags:
+  - evolution
+  - network-science
+cover_prompt: >-
+  A painterly naturalist plate of a plant cell in cutaway whose nucleus glows one colour and whose chloroplasts
+  glow a clearly different colour, a faint lineage thread of the second colour trailing off toward a neighbouring
+  plant, cool cyan and magenta palette, no text, no labels, no numbers.

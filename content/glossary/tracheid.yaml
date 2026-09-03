@@ -1,0 +1,29 @@
+id: tracheid
+label:
+  vi: Tế bào mạch gỗ (tracheid)
+  en: Tracheid
+definition:
+  vi: >-
+    Một tế bào dẫn nước đã chết, rỗng, có vách thứ cấp hóa gỗ — đơn vị cơ bản của mạch gỗ ở phần lớn
+    thực vật có mạch. Điểm cốt yếu là nó chết: một tế bào sống sẽ chống lại dòng chảy, còn một cái ống
+    rỗng thì không. Vách hóa gỗ giữ cho ống không bẹp lại dưới lực căng âm, thứ áp suất mà cây dùng để
+    kéo nước lên. Sự xuất hiện của tracheid vào cuối kỷ Silur cùng đầu kỷ Devon là bước mở ra tầm cao:
+    một mô duy nhất vừa vận chuyển vừa chống đỡ.
+  en: >-
+    A dead, hollow water-conducting cell with a lignified secondary wall — the basic unit of xylem in
+    most vascular plants. The dead part is essential: a living cell resists flow, an empty tube does
+    not. The lignified wall keeps the tube from collapsing under the negative tension a plant uses to
+    haul water upward. The appearance of tracheids in the late Silurian and early Devonian is what
+    unlocked height, because a single tissue handled both transport and support.
+see_also:
+  - xylem
+  - lignin
+  - terrestrialization
+category: bio
+tags:
+  - physiology
+  - evolution
+cover_prompt: >-
+  A painterly naturalist plate of several long hollow plant conducting cells stacked end to end,
+  their thick walls patterned with spiral thickenings, faint water column glowing inside, cool cyan
+  and indigo palette, no text, no labels, no numbers.

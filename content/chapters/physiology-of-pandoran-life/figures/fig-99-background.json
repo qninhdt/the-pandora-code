@@ -1,0 +1,30 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "physiology-of-pandoran-life",
+  "role": "hero",
+  "narrative_purpose": "A full-bleed atmospheric mood layer for the chapter: the dense humid air itself, seen as a medium with weight, which is the thing every body in this chapter has had to negotiate with.",
+  "subject": "A wide, dim, empty expanse of Pandoran lowland seen from a high vantage - vast layered banks of humid haze lying in horizontal strata over an unbroken dark forest canopy, the far horizon dissolving entirely into vapour; no creatures, no focal subject, no structures.",
+  "scene": "Enormous open air above a rainforest basin at the dimmest part of the day, heavy saturated atmosphere made visible purely by depth, very low contrast, quiet and immersive.",
+  "camera": "Ultra-wide panoramic high-vantage establishing view, no subject, extreme atmospheric perspective.",
+  "light": "Dim diffuse ambient light with no direction, a faint glow buried deep in the lowest haze layers, no bright source anywhere, dark overall.",
+  "palette": "Void-indigo and deep teal-indigo dominating, the faintest cyan glow low in the haze, no warm accents.",
+  "style": "Painterly atmospheric background, soft, textureless, mood over detail.",
+  "detail_level": "Very soft and low-detail throughout, everything dissolving into haze; nothing sharp, nothing focal.",
+  "composition": "Wide empty horizontal expanse, layered depth bands stacked toward the horizon, generous dim negative space, suitable as a dark background layer beneath long-form text.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "creatures",
+    "focal subject",
+    "structures",
+    "bright highlights"
+  ],
+  "consistency_notes": "Cool Pandora palette, dim and immersive; a quiet background mood layer rather than an illustration. Must stay dark enough for overlaid body text to remain readable.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no creatures, no sharp focal subject, no bright highlights, no photographic or 3D-render look",
+  "style_refs": ["pandora-establishing.png"]
+}

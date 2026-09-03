@@ -1,0 +1,29 @@
+id: vascular-cambium
+label:
+  vi: Tầng phát sinh mạch
+  en: Vascular cambium
+definition:
+  vi: >-
+    Lớp tế bào phân chia hình trụ nằm giữa gỗ và vỏ, tạo ra mạch gỗ về phía trong và mạch rây về phía
+    ngoài. Nó là cơ quan làm nên cây gỗ theo nghĩa hiện đại, và nó không phổ quát: nó xuất hiện ở nhóm
+    tiền hạt trần vào cuối kỷ Devon, có ở cây hạt trần cùng phần lớn cây hai lá mầm, và vắng mặt hoàn toàn
+    ở thực vật một lá mầm. Cọ và cây yucca vươn tới tầm cây bằng cách khác — chúng dày lên nhờ một mô phân
+    sinh sơ cấp, gài các bó mạch kín rải rác trong mô mềm như cốt thép trong bê tông.
+  en: >-
+    The cylindrical layer of dividing cells between wood and bark, producing xylem inward and phloem
+    outward. It is the organ that makes a woody tree in the modern sense, and it is not universal: it
+    appears in progymnosperms in the late Devonian, is present in conifers and most broadleaved plants,
+    and is entirely absent from monocots. Palms and yuccas reach tree stature another way — they thicken
+    by a primary meristem, embedding closed vascular bundles through soft tissue like rebar in concrete.
+see_also:
+  - secondary-growth
+  - tracheid
+  - xylem
+category: bio
+tags:
+  - physiology
+  - developmental-biology
+cover_prompt: >-
+  A painterly naturalist cutaway of a stem at high magnification showing a single thin cylinder of small
+  dividing cells, denser conducting tissue forming on its inner side and softer tissue on its outer side,
+  cool cyan and teal palette, no text, no labels, no numbers.

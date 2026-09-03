@@ -1,0 +1,17 @@
+id: henderson-hasselbalch-equation
+label:
+  vi: Phương trình Henderson-Hasselbalch
+  en: Henderson-Hasselbalch equation
+definition:
+  vi: "Phương trình gắn độ axit của máu vào một tỷ số duy nhất: lượng bicarbonate trong huyết tương chia cho lượng carbon dioxide đang hòa tan. Chỉ tỷ số ấy quan trọng, không phải từng con số riêng lẻ - nên nếu carbon dioxide tăng gấp ba, một cơ thể vẫn giữ nguyên độ pH bằng cách tăng bicarbonate gấp ba. Ở người nghỉ ngơi, hai mươi bốn đơn vị bicarbonate đối lấy bốn mươi milimét thủy ngân carbon dioxide cho ra pH 7,39. Đây là công cụ để đọc mọi cơ thể sống trong không khí giàu CO₂: hoặc nâng tử số lên mức phải trả giá, hoặc hạ chính điểm đặt pH xuống."
+  en: "The equation that pins blood acidity to a single ratio: how much bicarbonate the plasma holds, divided by how much carbon dioxide is dissolved in it. Only the ratio matters, not either number alone - so a body facing three times the carbon dioxide can hold the same pH by carrying three times the bicarbonate. In a resting human, twenty-four units of bicarbonate against forty millimetres of mercury of carbon dioxide gives pH 7.39. It is the tool for reading any body that lives in CO₂-rich air: either raise the numerator at a real cost, or move the pH set-point itself."
+see_also:
+  - bicarbonate-buffer
+  - hypercapnia
+  - respiratory-alkalosis
+  - partial-pressure
+category: concept
+tags:
+  - physiology
+  - chemistry
+cover_prompt: A painted schematic of a balance beam with a dense cluster of pale glowing ion particles heaped on one pan and a sparse drift of gas motes on the other, the beam tilting, cool teal and cyan against deep indigo, painterly and atmospheric, no text, no labels, no numbers.

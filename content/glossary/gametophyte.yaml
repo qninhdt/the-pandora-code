@@ -1,0 +1,29 @@
+id: gametophyte
+label:
+  vi: Thể giao tử
+  en: Gametophyte
+definition:
+  vi: >-
+    Cơ thể đơn bội của thực vật — nó chỉ mang một bộ nhiễm sắc thể, và nó tạo ra trứng cùng tinh trùng
+    bằng nguyên phân chứ không phải giảm phân. Ở rêu, thể giao tử chính là tấm thảm xanh bạn nhìn thấy.
+    Ở dương xỉ, nó là một phiến bé sống độc lập trên đất ẩm, và vì tinh trùng của nó phải bơi, nó buộc
+    dương xỉ phải ở gần nước. Ở thực vật có hạt, nó co lại còn vài tế bào nằm trong hạt phấn và trong
+    noãn — chính sự thu nhỏ ấy đã tách rời việc thụ tinh khỏi nước đọng và mở đường cho hạt.
+  en: >-
+    The haploid plant body — it carries a single chromosome set, and it makes eggs and sperm by mitosis
+    rather than meiosis. In a moss, the gametophyte is the green mat you see. In a fern it is a small
+    free-living sheet on damp ground, and because its sperm must swim, it ties ferns to water. In a seed
+    plant it has shrunk to a few cells inside pollen and ovule — and that reduction is exactly what
+    decoupled fertilisation from standing water and opened the way to the seed.
+see_also:
+  - sporophyte
+  - alternation-of-generations
+  - heterospory
+category: bio
+tags:
+  - developmental-biology
+  - physiology
+cover_prompt: >-
+  A painterly naturalist plate of a small heart-shaped plant sheet lying flat on damp dark soil, fine
+  hairs anchoring it, a faint glowing droplet of moisture on its surface, everything else soft and dim,
+  cool teal and indigo palette, no text, no labels, no numbers.

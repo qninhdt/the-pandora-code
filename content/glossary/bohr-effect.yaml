@@ -1,0 +1,16 @@
+id: bohr-effect
+label:
+  vi: Hiệu ứng Bohr
+  en: Bohr effect
+definition:
+  vi: "Hiện tượng sắc tố hô hấp nhả oxy dễ hơn khi môi trường quanh nó có tính axit hơn. Cơ chế nằm ở việc proton gắn vào một số vị trí trên phân tử, làm nó nghiêng về hình dạng ái lực thấp. Trên Trái Đất đây là một sự trùng hợp thanh lịch: cơ đang làm việc sinh ra cả carbon dioxide và axit lactic, máu tại chỗ hóa axit nhẹ, và sắc tố phản ứng bằng cách trao thêm oxy đúng nơi đang cần - tín hiệu và nhu cầu là cùng một thứ. Nhưng trong một cơ thể mà máu vốn đã axit thường trực, cơ chế ấy mất đi tính chọn lọc và hóa thành gánh nặng."
+  en: "The phenomenon where a respiratory pigment releases oxygen more readily as its surroundings turn more acid. The mechanism is protons binding at specific sites on the molecule, tipping it toward its low-affinity shape. On Earth this is an elegant coincidence: a working muscle produces both carbon dioxide and lactic acid, the local blood turns slightly acid, and the pigment responds by handing over more oxygen exactly where it is needed - the signal and the need are the same thing. But in a body whose blood is already permanently acid, the mechanism loses its selectivity and becomes a liability."
+see_also:
+  - oxygen-dissociation-curve
+  - hypercapnia
+  - myoglobin
+category: concept
+tags:
+  - physiology
+  - chemistry
+cover_prompt: A painted molecular study of a four-lobed protein complex shown twice, once compact and holding bright motes tightly and once relaxed and releasing them, faint pale proton specks drifting between the two forms, teal and magenta against deep indigo, painterly, no text, no labels, no numbers.

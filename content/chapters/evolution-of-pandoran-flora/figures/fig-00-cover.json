@@ -1,0 +1,30 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "evolution-of-pandoran-flora",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate for the landing book-map: a plant family tree that stops being a tree - clean forks above, and below them the branches stitched sideways into a net by root threads.",
+  "subject": "A luminous branching diagram drawn as if in light, its upper tips ending in faint glowing silhouettes of distinct plant forms - one enormous hollow-crowned tree of many fused vertical stems, one slender unbranched shaft with a tuft at the top, one swollen stem carrying three pale round globes, one urn-shaped vessel, one tall spiral leaf, and one submerged ribbon frond. The upper half forks cleanly. In the lower half, fine glowing horizontal threads run sideways between the separate descending branches, linking branch to branch, so the clean fork thickens into a dense woven net at the base.",
+  "scene": "A dark naturalist's reconstruction space, the diagram floating in deep haze, no ground and no horizon.",
+  "camera": "A clean front-on view, the diagram filling the frame, tips fanning across the top, the woven root net gathered along the bottom.",
+  "light": "Bioluminescent key glowing from within the drawn lines themselves, living-teal and cyan in the vertical branches, a warmer magenta glow on the sideways threads so the lateral links read as a different kind of connection; deep indigo shadow throughout.",
+  "palette": "Void-indigo ground, living-teal and cyan in the branch lines, scarce magenta on the horizontal linking threads only.",
+  "style": "Painterly naturalist specimen plate, hand-painted texture, confident focal hierarchy.",
+  "detail_level": "Crisp on the branching structure and the six plant silhouettes at the tips; the woven root net softer and denser; outer edges dissolving into haze.",
+  "composition": "A vertical branching structure filling the frame, tips spread across the upper third, sideways-linking threads concentrated in the lower third, generous dark negative space at both sides.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Cool Pandora palette, bioluminescent key emanating from within the drawn lines. Same dark glowing-specimen mood as the established chapter covers. Warm accent used only on the horizontal threads, nowhere else.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

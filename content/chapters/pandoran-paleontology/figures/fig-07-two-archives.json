@@ -1,0 +1,32 @@
+{
+  "id": "fig-07-two-archives",
+  "chapter_slug": "pandoran-paleontology",
+  "role": "comparison",
+  "narrative_purpose": "Draws where each of Pandora's two archives stops. The glowing root network is bright and detailed but ends at a boundary; the rock keeps going far below it, indifferent. The reader should see that the deepest questions fall entirely beneath the reach of the living record.",
+  "subject": "A tall vertical cross-section, split into two zones by a clear horizontal boundary. Above the boundary: the base of an enormous tree whose roots spread outward and downward as a dense web of fine glowing teal filaments, brilliant and richly interconnected near the trunk, thinning and dimming as they descend, and stopping abruptly at the boundary line. Below the boundary: a deep stack of dull grey, ochre and rust-brown horizontal rock layers extending far further down than the roots ever reached, at least three times their depth, with faint pale traces of creature shapes and shell forms embedded at intervals in the lower layers, and two pale ash bands running through them.",
+  "scene": "A geological cross-section beneath a single great tree, the surface world only hinted at the very top of the frame.",
+  "camera": "A flat side-on cross-section view, tall and narrow, the root zone compressed into the upper third and the rock column occupying everything below.",
+  "light": "Bright living teal and cyan bioluminescence emanating from within the root filaments themselves, falling off sharply at the boundary; below it no self-illumination at all, only a neutral cool grey ambience so the rock reads as inert.",
+  "palette": "Vivid living-teal and cyan in the upper root zone against void-indigo, then dull stone-grey, ochre and rust below with the faintest cream on the embedded traces - the contrast between glowing and inert is the point.",
+  "style": "Painterly naturalist cutaway plate, hand-painted texture, geological section clarity.",
+  "detail_level": "Crisp on the root filament weave above and on the layer boundaries and embedded traces below; the transition band deliberately abrupt; the surface world soft.",
+  "composition": "Strong vertical stack with the boundary line about a third down, roots dense and bright above, deep quiet layered rock below with clear dark space beside the embedded traces for later callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "dinosaur skeletons",
+    "human figures",
+    "Avatar branding"
+  ],
+  "consistency_notes": "The root network must stop clearly and completely at the boundary; the rock column must extend markedly deeper. Any creature traces in the rock carry six limbs where limbs are visible. Cool Pandora palette, no warm accent anywhere.",
+  "aspect_ratio": "9:16",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no dinosaur skeletons, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

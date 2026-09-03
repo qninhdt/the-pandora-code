@@ -1,0 +1,15 @@
+id: cytochrome-p450
+label:
+  vi: Họ enzyme cytochrome P450
+  en: Cytochrome P450
+definition:
+  vi: "Họ enzyme khổng lồ mở đầu quá trình xử lý mọi hợp chất lạ mà một cơ thể ăn phải hoặc hít vào, bằng cách đóng một nguyên tử oxy vào phân tử đó. Đây là giai đoạn một trong ba giai đoạn giải độc, và nghịch lý nằm ngay ở đây: oxy hóa không đảm bảo làm mọi thứ an toàn hơn. Đôi khi nó tạo ra thứ độc hơn ban đầu - paracetamol vô hại cho tới khi một P450 biến một phần nhỏ của nó thành chất trung gian cực kỳ phản ứng. Vì thế giai đoạn một và giai đoạn hai phải khớp nhau; chạy oxy hóa mà thiếu liên hợp thì cơ thể tự đầu độc bằng chính hệ giải độc của mình."
+  en: "The vast enzyme family that begins the processing of any foreign compound a body eats or inhales, by punching an oxygen atom into it. This is stage one of three in detoxification, and the paradox sits right here: oxidation does not reliably make things safer. Sometimes it makes them worse - paracetamol is harmless until a P450 converts a small fraction of it into a highly reactive intermediate. So stages one and two have to be matched; run oxidation without conjugation and the body poisons itself with its own detoxification system."
+see_also:
+  - target-site-insensitivity
+  - mitochondrion
+category: bio
+tags:
+  - physiology
+  - pharmacology
+cover_prompt: A painted molecular study of a heme-bearing enzyme with a bright iron centre gripping a small organic molecule, one oxygen mote being driven into the molecule and a faintly unstable reactive fragment emerging on the other side, amber and teal against deep indigo, painterly, no text, no labels, no numbers.

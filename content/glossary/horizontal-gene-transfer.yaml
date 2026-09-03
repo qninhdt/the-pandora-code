@@ -1,0 +1,31 @@
+id: horizontal-gene-transfer
+label:
+  vi: Chuyển gene ngang
+  en: Horizontal gene transfer
+definition:
+  vi: >-
+    Việc vật chất di truyền đi từ sinh vật này sang sinh vật khác không qua đường sinh sản — ngang thay vì
+    dọc theo dòng dõi. Ai cũng biết chuyện này phổ biến ở vi khuẩn; điều ít được nhắc là nó cũng xảy ra ở
+    thực vật, và đôi khi rất đáng kể. Cây bụi *Amborella trichopoda*, nằm ở gốc cây phả hệ thực vật có hoa,
+    đã nhận trọn năm hệ gene ty thể ngoại lai từ rêu, tảo lục và những thực vật có hoa khác qua tiếp xúc
+    trực tiếp. Dương xỉ vay của rêu sừng một thụ thể ánh sáng gọi là neochrome khoảng 180 triệu năm trước và
+    dùng nó để quang hợp tốt hơn dưới tán cây rợp.
+  en: >-
+    Genetic material moving between organisms outside reproduction — sideways rather than down a lineage.
+    That it is common in bacteria is well known; less often mentioned is that it happens in plants too, and
+    sometimes consequentially. The shrub *Amborella trichopoda*, which sits at the base of the flowering
+    plant tree, has taken in five entire foreign mitochondrial genomes from mosses, green algae and other
+    flowering plants by direct contact. Ferns borrowed a light receptor called neochrome from hornworts about
+    180 million years ago and used it to photosynthesise better in deep shade.
+see_also:
+  - reticulate-evolution
+  - plastid-capture
+  - endosymbiotic-gene-transfer
+category: bio
+tags:
+  - evolution
+  - network-science
+cover_prompt: >-
+  A painterly naturalist plate of two unrelated plants touching at the root, a fine glowing thread of genetic
+  material passing from one into the other across the contact, their separate lineage lines running upward
+  apart, cool teal and amber palette, no text, no labels, no numbers.

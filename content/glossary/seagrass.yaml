@@ -1,0 +1,30 @@
+id: seagrass
+label:
+  vi: Cỏ biển
+  en: Seagrass
+definition:
+  vi: >-
+    Thực vật có hoa sống chìm hoàn toàn trong nước biển nông — *Zostera*, *Posidonia* và những đồng cỏ dưới biển của
+    chúng. Chúng không phải tảo, cũng không phải rong biển: chúng có rễ, gân lá và hoa, và tổ tiên chúng sống trên
+    cạn. Việc trở lại biển đã xảy ra ba đến bốn lần độc lập, và cái giá phải trả để lại dấu vết rõ ràng: chúng mất
+    hẳn khí khổng, giữ lại hệ khoang khí bên trong, và từ bỏ phấn bay trong không khí để chuyển sang phấn trôi trong
+    nước — một giải pháp lạ đến mức từng bị nghi ngờ nhiều năm. Cỏ biển là ví dụ chuẩn mực cho việc đọc một dòng dõi
+    qua những gì nó đã phá bỏ.
+  en: >-
+    Flowering plants living fully submerged in shallow seawater — *Zostera*, *Posidonia* and their submarine meadows.
+    They are not algae and not seaweed: they have roots, veins and flowers, and their ancestors lived on land. The
+    return to the sea happened three or four separate times, and the cost left clear traces: they lost their stomata
+    entirely, retained extensive internal air channels, and gave up airborne pollen for pollen that drifts in water — a
+    solution so unusual it was doubted for years. Seagrasses are the standard example of reading a lineage from what it
+    has broken.
+see_also:
+  - aerenchyma
+  - angiosperm
+  - convergent-evolution
+category: bio
+tags:
+  - oceanography
+  - evolution
+cover_prompt: >-
+  A painterly naturalist plate of a dense underwater meadow of long ribbon-like leaves rooted in pale sediment, faint
+  drifting pollen threads in the water above them, cool teal and cyan palette, no text, no labels, no numbers.

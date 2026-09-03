@@ -1,0 +1,32 @@
+{
+  "id": "fig-02-bicarbonate-ledger",
+  "chapter_slug": "physiology-of-pandoran-life",
+  "role": "diagram",
+  "narrative_purpose": "Shows the reaction that fixes blood acidity: gas arriving, an enzyme converting it, a large standing pool of the product in the plasma, and the ion swap that keeps the cell balanced.",
+  "subject": "A high-magnification cutaway of the inside of a blood vessel. Filling the plasma space, a dense scattered crowd of small pale glowing particles. At centre, one large biconcave red blood cell in cross-section; along the inner face of its membrane sits a tight cluster of compact rounded enzyme forms, each with a single bright point at its middle. Small gas motes drift in from the left through the vessel wall toward that cluster, and pale ion particles leave the cell rightward through its membrane while a counter-stream of slightly larger pale particles crosses inward the other way.",
+  "scene": "A dark histological specimen space, the vessel lumen glowing faintly from the particles suspended in it, deep indigo beyond the vessel wall.",
+  "camera": "Direct high-magnification cross-section, flat-on view, the red cell and its membrane cluster centred and in focus.",
+  "light": "Bioluminescent key from the suspended particles themselves and from the bright enzyme centres; the vessel wall in deep shadow.",
+  "palette": "Void-indigo ground, dense cyan glow in the plasma particles, living-teal at the enzyme centres, a deep muted crimson for the cell body.",
+  "style": "Painterly naturalist histological plate, oil texture, luminous specimen key light.",
+  "detail_level": "Crisp on the enzyme cluster and the crossing ion streams; the plasma crowd rendered as texture; the vessel wall soft.",
+  "composition": "Horizontal cross-section band across the frame, the red cell just left of centre, the enzyme cluster and the two counter-crossing ion streams on the clear right side, dark negative space above and below.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "arrows",
+    "diagram lines",
+    "callouts",
+    "vector",
+    "infographic",
+    "flat design",
+    "3D render"
+  ],
+  "consistency_notes": "Naturalist histological plate in the cool Pandora palette; deep indigo shadow with cyan and teal biological glow. Keep the upper region dark and plain for overlaid callouts.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no letters, no numbers, no labels, no arrows, no diagram lines, no flat vector art, no infographic styling, no UI, no watermarks, no 3D render",
+  "style_refs": ["pandora-establishing.png"]
+}

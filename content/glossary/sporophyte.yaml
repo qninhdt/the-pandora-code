@@ -1,0 +1,29 @@
+id: sporophyte
+label:
+  vi: Thể bào tử
+  en: Sporophyte
+definition:
+  vi: >-
+    Cơ thể nhị bội của thực vật — mang hai bộ nhiễm sắc thể, và tạo bào tử bằng giảm phân. Ở thực vật có
+    mạch, đây là cái cây theo nghĩa thông thường: một cây dương xỉ, một cây thông, một cây sồi đều là
+    thể bào tử. Lợi thế của nó mang tính số học. Vì hợp tử được giữ lại và phân chia nhiều lần trước khi
+    giảm phân, một lần thụ tinh duy nhất có thể sinh ra hàng triệu bào tử thay vì một ít. Chính sự khuếch
+    đại đó, cộng với mô mạch cho phép nó vươn cao, đã khiến thể bào tử thắng thế trong lịch sử thực vật.
+  en: >-
+    The diploid plant body — two chromosome sets, and it makes spores by meiosis. In vascular plants
+    this is the plant in the ordinary sense: a fern, a pine, an oak are all sporophytes. Its advantage
+    is arithmetic. Because the zygote is retained and divides many times before meiosis, a single
+    fertilisation can yield millions of spores rather than a handful. That amplification, plus the
+    vascular tissue that let it grow tall, is why the sporophyte won out over plant history.
+see_also:
+  - gametophyte
+  - alternation-of-generations
+  - tracheid
+category: bio
+tags:
+  - developmental-biology
+  - physiology
+cover_prompt: >-
+  A painterly naturalist plate of a tall upright branching plant axis bearing clustered spore capsules
+  at its tips, a much smaller flat green body at its base by contrast, cool cyan and teal palette, no
+  text, no labels, no numbers.

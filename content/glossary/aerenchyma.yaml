@@ -1,0 +1,29 @@
+id: aerenchyma
+label:
+  vi: Mô khí (aerenchyma)
+  en: Aerenchyma
+definition:
+  vi: >-
+    Mô thực vật có những khoang khí lớn chạy xuyên qua, dùng để dẫn oxy trong nội bộ cơ thể. Đây là đặc điểm của
+    thực vật trên cạn sống trong nước hay bùn yếm khí: rễ vẫn cần hô hấp, nhưng bùn ngập nước không cung cấp
+    được oxy, nên cây tự lắp đường ống dẫn khí từ phần trên xuống. Điều đáng chú ý về mặt phân loại là tảo không
+    có mô này và không cần — một cơ thể mỏng ngâm trong nước đã nhận đủ khí hòa tan qua khuếch tán. Vì vậy khi
+    gặp mô khí ở một sinh vật dưới nước, đó là dấu vết của một dòng dõi từng sống trên cạn.
+  en: >-
+    Plant tissue shot through with large air channels, used to conduct oxygen internally. It is a feature of land
+    plants living in water or anoxic mud: roots still need to respire, but waterlogged sediment cannot supply
+    oxygen, so the plant plumbs air down from above. What matters for classification is that algae have no such
+    tissue and do not need it — a thin body immersed in water gets all the dissolved gas it needs by diffusion. So
+    aerenchyma in a submerged organism is the trace of a lineage that used to live on land.
+see_also:
+  - seagrass
+  - stomata
+  - xylem
+category: bio
+tags:
+  - physiology
+  - oceanography
+cover_prompt: >-
+  A painterly naturalist cutaway of a submerged plant frond showing large pale hollow air channels running lengthwise
+  through its tissue, dark water and sediment around it, cool teal and indigo palette with faint pale highlights in the
+  cavities, no text, no labels, no numbers.

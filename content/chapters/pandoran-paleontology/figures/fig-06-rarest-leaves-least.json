@@ -1,0 +1,33 @@
+{
+  "id": "fig-06-rarest-leaves-least",
+  "chapter_slug": "pandoran-paleontology",
+  "role": "comparison",
+  "narrative_purpose": "Contrasts the two ends of the abundance-versus-size rule in one landscape: the solitary giant flier that lives and dies where nothing accumulates, and the dense herd that dies beside a delta that is actively burying things. It makes visible why the record will over-represent the second and effectively miss the first.",
+  "subject": "A single tall landscape composition. In the upper portion, one enormous solitary winged predator soars alone above a bare, sharply eroding mountain ridge whose thin soil is visibly sliding and washing downslope in pale runnels, no sediment gathering anywhere. In the lower portion, a dense scattered herd of perhaps thirty small six-limbed grazers stands and lies along the margin of a broad river delta, where fine pale sediment is visibly accumulating in flat stacked layers and a shallow channel spills silt across a mudflat. One grazer carcass lies part-submerged in that fresh silt.",
+  "scene": "A vertically stacked Pandoran landscape at dusk: barren high ridge above, fertile depositional lowland delta below, deep atmospheric haze separating the two elevations.",
+  "camera": "A tall vertical view taking in both elevations at once, the ridge occupying the upper third and the delta the lower half, the flier small against the sky to convey solitude.",
+  "light": "Dim bioluminescent ambience from the lowland vegetation glowing cool teal on the wet silt; the high ridge cold, cyan-grey, unlit from within; one restrained warm amber accent on the solitary flier so the eye finds it first.",
+  "palette": "Cool teal and cyan across the delta, cold grey-indigo on the eroding ridge, one scarce ember-amber highlight on the flier.",
+  "style": "Painterly naturalist landscape plate, hand-painted texture, observed rather than dramatised.",
+  "detail_level": "Crisp on the delta's layered sediment, the silt-buried carcass, and the erosion runnels on the ridge; the flier crisp in silhouette; the middle distance dissolving into haze.",
+  "composition": "Strong vertical stack with a hazy separation band, the lone flier high and isolated against dark sky with clear space around it, the herd dense and low, generous quiet areas for later callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "graphs",
+    "charts",
+    "human figures",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Six limbs on every grazer. Exactly one flier, to convey low density. Sediment must visibly accumulate in the lowland and visibly wash away on the ridge - the contrast between depositional and erosional is the whole figure.",
+  "aspect_ratio": "9:16",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no charts or graphs, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

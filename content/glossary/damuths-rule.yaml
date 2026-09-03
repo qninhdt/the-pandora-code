@@ -1,0 +1,16 @@
+id: damuths-rule
+label:
+  vi: Quy luật Damuth
+  en: Damuth's rule
+definition:
+  vi: 'Nhà sinh thái học John Damuth phát hiện năm 1981 rằng mật độ quần thể giảm theo khối lượng cơ thể với số mũ khoảng âm ba phần tư: con vật càng lớn thì số cá thể trên mỗi kilomet vuông càng ít, vì năng lượng trong một cảnh quan là hữu hạn và một cơ thể lớn thì tốn kém để duy trì. Quy luật đúng qua bốn bậc độ lớn của khối lượng. Với cổ sinh vật học, hệ quả rất nghiêm trọng: những con vật to nhất, ấn tượng nhất lại vốn đã hiếm nhất, nên hồ sơ hóa thạch tất yếu ghi thiếu chúng nhất.'
+  en: 'The ecologist John Damuth found in 1981 that population density falls off with body mass to roughly the power of minus three-quarters: the larger the animal, the fewer per square kilometre, because the energy available in a landscape is finite and a large body is expensive to run. The relationship holds across four orders of magnitude of mass. For paleontology the consequence is severe: the biggest, most spectacular animals were already the rarest, so the fossil record necessarily under-records them most.'
+see_also:
+  - taphonomy
+  - signor-lipps-effect
+  - pull-of-the-recent
+category: concept
+tags:
+- ecology
+- physiology
+cover_prompt: A painted composition with one enormous solitary winged creature high above a ridge and, far below in the valley, a dense scattered herd of many small six-limbed grazers, the size and number contrast obvious, cool teal and indigo with one warm amber accent on the solitary flier, painterly, no text, no labels.

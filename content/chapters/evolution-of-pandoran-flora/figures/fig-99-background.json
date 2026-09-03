@@ -1,0 +1,33 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "evolution-of-pandoran-flora",
+  "role": "hero",
+  "narrative_purpose": "The chapter's full-bleed atmospheric mood layer: a vast dim canopy of many differently built giants seen from far above, deliberately low in contrast so the chapter's text floats over it and stays readable.",
+  "subject": "An ultra-wide panoramic vista across the crowns of an enormous alien forest seen from high above, layer behind layer receding into haze. The crowns are visibly of several different kinds - some enormous and broad with many fused vertical stems descending from them, some slender and tufted on single bare shafts standing above the rest, some low and rounded carrying pale globes - but all of them dim, none picked out as a subject. Faint threads of mist lie between the canopy layers. No creature, no structure, no clearing.",
+  "scene": "A vast forested basin at night under heavy haze, the far ranges barely distinguishable from the sky, everything dissolving with distance.",
+  "camera": "An extremely wide panoramic view from a very high vantage, horizon placed high in the frame, the canopy filling most of the composition.",
+  "light": "Very low ambient bioluminescence rising faintly from the canopy itself, no bright focal source anywhere, contrast kept deliberately flat and dark so overlaid long-form text remains legible; deep indigo throughout.",
+  "palette": "Void-indigo dominating, muted living-teal and dim cyan in the canopy glow, no warm accent, everything desaturated.",
+  "style": "Painterly naturalist vista, hand-painted texture, atmospheric rather than illustrative.",
+  "detail_level": "Deliberately low and dissolving throughout - the nearest crowns only suggested, most of the frame dim haze so text reads cleanly over it. No sharp focal element anywhere.",
+  "composition": "A wide horizontal band of canopy across the lower two thirds, layered depth receding to a high hazy horizon, no single subject and no bright area.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "bright focal subject",
+    "sharp foreground creature",
+    "buildings",
+    "human figures",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Cool Pandora palette at very low contrast, functioning as a background layer rather than a figure. Nothing may draw the eye to a single point, and no element may be bright enough to compete with overlaid text.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no bright focal subject, no sharp foreground creature, no high contrast, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

@@ -1,0 +1,17 @@
+id: pseudofossil
+label:
+  vi: Hóa thạch giả (pseudofossil)
+  en: Pseudofossil
+definition:
+  vi: 'Một cấu trúc khoáng vật vô sinh trông giống hóa thạch đến mức gây nhầm lẫn - tinh thể tỏa tia, khoáng vật kết tủa dạng ống, lớp trầm tích bị biến dạng do kiến tạo. Chúng quan trọng vì chúng đã và đang đánh bại nhiều tuyên bố về sự sống cổ nhất: các "stromatolite" ở Isua hóa ra là cấu trúc biến dạng do trượt, còn thiên thạch Sao Hỏa ALH84001 năm 1996 đã dạy cả ngành sinh học vũ trụ một bài học vẫn còn nguyên giá trị - chỉ riêng hình thái không bao giờ đủ để chứng minh nguồn gốc sinh học.'
+  en: 'An abiotic mineral structure that resembles a fossil closely enough to mislead - radiating crystals, tube-shaped mineral precipitates, tectonically deformed sedimentary layers. They matter because they have repeatedly defeated claims about the earliest life: the Isua "stromatolites" turned out to be shear-deformation structures, and the 1996 Martian meteorite ALH84001 taught astrobiology a lesson that still holds - morphology alone is never sufficient to establish a biological origin.'
+see_also:
+  - biosignature
+  - taphonomy
+  - trace-fossil
+category: concept
+tags:
+- geology
+- astrobiology
+- philosophy-of-science
+cover_prompt: A painted pair of side-by-side rock specimens whose forms look almost identical - one a genuine branching organic trace, the other a radiating mineral crystal growth - cool stone-grey and indigo with faint teal on one and warm amber on the other, painterly comparison plate, no text, no labels.

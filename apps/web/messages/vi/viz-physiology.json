@@ -1,0 +1,253 @@
+{
+  "viz": {
+    "acidBaseSetPoint": {
+      "title": "Không khí làm gì với máu",
+      "subtitle": "Carbon dioxide quyết định độ axit; bicarbonate là đòn cân duy nhất chống lại nó",
+      "controls": {
+        "preset": "Cơ thể và không khí",
+        "paco2": "Carbon dioxide động mạch",
+        "bicarbonate": "Bicarbonate huyết tương"
+      },
+      "preset": {
+        "earth": "Chuẩn Trái Đất",
+        "defendEarthPh": "Giữ 7,40 tại đây",
+        "nativeSetPoint": "Điểm đặt bản địa",
+        "earthAirShock": "Bản địa hít khí Trái Đất"
+      },
+      "hint": {
+        "earth": "Hai mươi bốn đơn vị bicarbonate đối lấy bốn mươi đơn vị carbon dioxide. Mọi loài thú trên Trái Đất đều bảo vệ tỷ lệ này, và nó cho ra 7,39.",
+        "defendEarthPh": "Cùng độ pH ấy, nhưng trong khí Pandora. Lượng bicarbonate cần thiết gấp ba lần một loài thú, và một dự trữ lớn đến vậy kéo theo cái giá thẩm thấu mà mô không trả nổi.",
+        "nativeSetPoint": "Hạ mục tiêu xuống thay vì nâng dự trữ lên, các con số lập tức trở nên khả thi. Nguyên tác không nêu giá trị này; đây là những gì phép tính còn để lại.",
+        "earthAirShock": "Khí sạch rửa hết carbon dioxide trong chưa đầy một phút. Bicarbonate phải mất nhiều ngày mới theo kịp, và trong khoảng trống đó máu chuyển sang kiềm."
+      },
+      "axis": {
+        "paco2": "Áp suất riêng phần carbon dioxide động mạch",
+        "bicarbonate": "Bicarbonate huyết tương"
+      },
+      "iso": {
+        "earth": "các cặp giữ được 7,40",
+        "native": "các cặp giữ được 7,16"
+      },
+      "readout": {
+        "ph": "pH động mạch",
+        "load": "Giá của dự trữ",
+        "earthCost": "Để giữ 7,40 tại đây"
+      },
+      "verdict": {
+        "lethalAcidosis": "Vượt ngưỡng axit. Enzyme gấp sai và tim mất nhịp.",
+        "compensatedLow": "Axit theo tiêu chuẩn của ta, và vẫn ổn định — nếu bộ protein được dựng cho mức đó.",
+        "terrestrialNormal": "Cửa sổ Trái Đất, được bảo vệ.",
+        "alkalosis": "Kiềm. Mạch máu trong não co lại và canxi rơi khỏi dung dịch.",
+        "lethalAlkalosis": "Vượt ngưỡng kiềm. Co cứng cơ, rồi ngừng thở."
+      },
+      "load": {
+        "ordinary": "Bình thường",
+        "elevated": "Nặng nhưng trả được",
+        "unaffordable": "Ngoài sức của mô"
+      },
+      "loadNote": {
+        "ordinary": "Một dự trữ kiểu thú. Không gì phải gắng để mang nó.",
+        "elevated": "Cao hơn ta nhiều, và vẫn trong tầm — một số loài dơi hang sống ở mép dưới dải này.",
+        "unaffordable": "Lượng bicarbonate này lôi nước vào huyết tương, vét cạn chloride, và bắt đầu kết tủa canxi phosphat trong mô mềm."
+      },
+      "earthCostNote": "Lượng bicarbonate cần để có pH kiểu Trái Đất ở áp suất carbon dioxide này.",
+      "aria": {
+        "lethalAcidosis": "Độ axit của máu vượt ngưỡng sống sót ở mức carbon dioxide và dự trữ bicarbonate này.",
+        "compensatedLow": "Máu được giữ ổn định dưới điểm đặt Trái Đất nhờ dự trữ bicarbonate nâng cao.",
+        "terrestrialNormal": "Máu ở đúng điểm đặt độ axit của Trái Đất.",
+        "alkalosis": "Máu chuyển kiềm khi carbon dioxide rút đi nhanh hơn tốc độ thải bicarbonate.",
+        "lethalAlkalosis": "Độ kiềm của máu vượt ngưỡng sống sót."
+      },
+      "mmHgValue": "{n} mmHg",
+      "mmolValue": "{n} mmol/L",
+      "modelNote": "Phương trình Henderson-Hasselbalch với các hằng số huyết tương đo được. Nguyên tác không nêu pH máu Pandora, nên điểm đặt bản địa ở đây là tái dựng, không phải tường thuật."
+    },
+    "oxygenAffinity": {
+      "title": "Trao lại oxy",
+      "subtitle": "Một sắc tố được đánh giá bằng lượng nó nhả ra, không phải lượng nó giữ",
+      "controls": {
+        "regime": "Cơ thể và mức gắng sức",
+        "p50": "Áp suất bán bão hòa",
+        "hill": "Tính hợp tác",
+        "bohr": "Độ nhạy với axit"
+      },
+      "regime": {
+        "earthRest": "Người, nghỉ",
+        "earthSprint": "Người, chạy nước rút",
+        "pandoraRest": "Bản địa, nghỉ",
+        "pandoraSprint": "Bản địa, chạy nước rút"
+      },
+      "hint": {
+        "thin": "Cơ đã lấy gần hết. Tuyệt vời cho một cuộc truy đuổi, và không còn chút biên độ nào nếu dòng cung cấp chệch nhịp.",
+        "workable": "Phần lớn được trao đi, một phần vẫn nằm dự trữ. Đây là dáng vẻ của một cơ thể đang làm việc.",
+        "ample": "Gần như chưa chạm tới. Máu trở về gần đầy như lúc nó rời đi — dáng vẻ của lúc nghỉ."
+      },
+      "axis": {
+        "po2": "Áp suất riêng phần oxy",
+        "saturation": "Độ bão hòa sắc tố"
+      },
+      "readout": {
+        "delivered": "Trao đi mỗi vòng",
+        "loading": "Bão hòa khi rời phổi",
+        "reserve": "Còn mang khi trở về"
+      },
+      "extraction": {
+        "sparing": "Rút nhẹ. Phần lớn hàng hóa quay về mà chưa dùng.",
+        "moderate": "Mức rút của một cơ thể đang làm việc, đúng như gắng sức bền đòi hỏi.",
+        "aggressive": "Gần như tất cả, bị vét trong một vòng."
+      },
+      "loadingNote": {
+        "plateau": "Việc nạp nằm trên đoạn phẳng đỉnh đường cong, nơi ái lực hầu như không còn quan trọng.",
+        "limited": "Giờ thì sắc tố không nạp đủ ngay cả ở phổi. Việc nạp đã trở thành giới hạn."
+      },
+      "reserve": {
+        "thin": "Gần như không giữ lại gì",
+        "workable": "Một biên độ dùng được",
+        "ample": "Dự trữ còn nguyên"
+      },
+      "aria": {
+        "thin": "Sắc tố nhả gần hết oxy trong một vòng, không để lại dự trữ nào trong máu trở về.",
+        "workable": "Sắc tố nhả phần lớn oxy và giữ lại một biên độ dùng được.",
+        "ample": "Sắc tố chỉ nhả một phần nhỏ lượng oxy nó mang."
+      },
+      "bohrOff": "đã làm cùn",
+      "mmHgValue": "{n} mmHg",
+      "pctValue": "{n}%",
+      "modelNote": "Liên kết theo phương trình Hill kèm dịch chuyển Bohr. Áp suất phế nang được suy ra từ số liệu khí quyển nguyên tác; bản thân sắc tố thì nguyên tác chưa từng đặt tên, ngoài việc nó dựa trên sắt."
+    },
+    "radiatorHeat": {
+      "title": "Cái trần của gắng sức",
+      "subtitle": "Công suất bền bị chặn bởi lượng nhiệt các tấm tản có thể thải đi",
+      "controls": {
+        "regime": "Điều kiện",
+        "mass": "Khối lượng cơ thể",
+        "radiator": "Diện tích tản nhiệt",
+        "density": "Mật độ không khí"
+      },
+      "regime": {
+        "rainforestChase": "Truy đuổi trong rừng",
+        "eclipseTotality": "Nhật thực toàn phần",
+        "montaneWind": "Gió núi cao"
+      },
+      "hint": {
+        "rainforestChase": "Khí gần bão hòa, nên thanh bay hơi gần như không tồn tại. Mọi thứ dồn lên đối lưu — chính là số hạng duy nhất mà bầu khí quyển đặc làm nở ra.",
+        "eclipseTotality": "Trời hóa lạnh và không khí tụt xuống. Giờ các tấm tản nhiệt trở thành gánh nặng, và bài toán của con vật là đóng chúng lại.",
+        "montaneWind": "Khí lạnh chuyển động nhanh vét nhiệt đi nhanh hơn mức một cơ thể cỡ này tạo ra được. Hoặc trú, hoặc phải đủ to."
+      },
+      "row": {
+        "production": "Cơ sinh ra",
+        "convection": "Không khí mang đi",
+        "radiation": "Bức xạ ra ngoài",
+        "evaporation": "Bay hơi mang đi"
+      },
+      "ceilingLabel": "toàn bộ khả năng thải",
+      "axis": {
+        "power": "dòng nhiệt, kilowatt"
+      },
+      "readout": {
+        "sustainable": "Mức gắng sức giữ được",
+        "clock": "Thời gian ở mức này",
+        "deficit": "Hụt áp suất hơi",
+        "airGain": "Làm mát nhờ không khí"
+      },
+      "balance": {
+        "overheating": "Vượt trần. Nhiệt độ lõi đang leo lên và cuộc truy đuổi có hạn chót.",
+        "steady": "Trong trần. Mức này giữ được vô hạn định.",
+        "mustConserve": "Thấp xa dưới trần. Phải đóng các tấm tản nhiệt, không thì cơ thể cứ thế cạn nhiệt."
+      },
+      "clockNote": "Cho tới khi lõi nóng thêm hai độ.",
+      "noClock": "không hạn",
+      "deficitNote": {
+        "closed": "Gần như đã khép. Mồ hôi không bay hơi được, nên chẳng làm mát gì.",
+        "open": "Đủ mở để bay hơi còn có ý nghĩa."
+      },
+      "airGainNote": {
+        "denser": "Lợi thế so với khí mật độ Trái Đất ở cùng tốc độ.",
+        "thinner": "Bất lợi so với khí mật độ Trái Đất ở cùng tốc độ."
+      },
+      "aria": {
+        "overheating": "Lượng nhiệt sinh ra vượt mọi khả năng thải của cơ thể, nên nhiệt độ lõi đang tăng.",
+        "steady": "Lượng nhiệt sinh ra nằm trong khả năng thải, nên mức gắng sức này duy trì được.",
+        "mustConserve": "Lượng nhiệt mất đi vượt xa lượng sinh ra, nên cơ thể phải đóng các tấm tản nhiệt để giữ thân nhiệt."
+      },
+      "restingMultiple": "{n}× mức nghỉ",
+      "minutesValue": "{n} phút",
+      "kgValue": "{n} kg",
+      "kwValue": "{n} kW",
+      "pctValue": "{n}%",
+      "mmHgValue": "{n} mmHg",
+      "densityValue": "{n} kg/m³",
+      "modelNote": "Định luật làm mát Newton với hệ số theo mật độ, bức xạ Stefan-Boltzmann, và bay hơi theo độ hụt áp suất hơi. Nguyên tác không cho biết tốc độ chuyển hóa, thân nhiệt lõi hay diện tích tản nhiệt của bất kỳ loài bản địa nào."
+    },
+    "sulfideElectron": {
+      "title": "Chất độc, hay nhiên liệu",
+      "subtitle": "Cùng một phân tử, khác biệt duy nhất là cơ thể xử lý nó nhanh đến đâu",
+      "controls": {
+        "body": "Ty thể của ai",
+        "exposure": "Sulfide trong không khí"
+      },
+      "body": {
+        "human": "Người",
+        "exopack": "Người, có mặt nạ",
+        "sulfideSpringFish": "Cá suối lưu huỳnh",
+        "pandoranNative": "Bản địa Pandora"
+      },
+      "hint": {
+        "human": "Mọi enzyme cần thiết đều đã có sẵn — cơ thể tự sinh sulfide làm tín hiệu. Chỉ là không có công suất, và vượt vài trăm phần triệu thì phần dư tràn tới chuỗi hô hấp.",
+        "exopack": "Sinh học không đổi chút nào. Mặt nạ lấy sulfide ra trước khi phổi kịp thấy nó — chính vì thế nó mới có tác dụng.",
+        "sulfideSpringFish": "Hội tụ thật, đo được ở các suối lưu huỳnh Mexico: một vị trí gắn đã biến đổi cùng một chuỗi enzyme mở rộng. Cỡ cho một dòng suối, không phải cho cả bầu khí quyển.",
+        "pandoranNative": "Đặt vách đá cao hơn mức không khí mang tới, và chất độc thành thực phẩm bổ sung — vài phần trăm số electron hô hấp, đến miễn phí theo từng hơi thở."
+      },
+      "rung": {
+        "smell": "ngửi thấy",
+        "occupational": "ngưỡng lao động",
+        "olfactoryParalysis": "mất mùi",
+        "knockdown": "một hơi thở",
+        "pandoraTrace": "Pandora"
+      },
+      "axis": {
+        "exposure": "Hydro sulfide, phần triệu"
+      },
+      "legend": {
+        "capacity": "chuỗi hô hấp còn chạy",
+        "bonus": "năng lượng từ sulfide"
+      },
+      "readout": {
+        "fate": "Sulfide là gì ở đây",
+        "chain": "Chuỗi hô hấp còn nguyên",
+        "cascade": "Tải của chuỗi xử lý",
+        "energy": "Tỷ phần electron"
+      },
+      "fate": {
+        "trace": "Một lượng vết",
+        "supplement": "Một nguồn bổ sung",
+        "nearCapacity": "Ở sát mép",
+        "arrest": "Một chất độc"
+      },
+      "fateNote": {
+        "trace": "Được xử lý không cần gắng, và quá ít để đáng giá.",
+        "supplement": "Được xử lý, và số electron vào việc. Đây là thức ăn.",
+        "nearCapacity": "Chuỗi xử lý gần bão hòa. Thêm một chút nữa là sulfide tự do vọt đi mất kiểm soát.",
+        "arrest": "Vượt qua chuỗi xử lý và đậu lên vị trí khử oxy. Mọi ty thể dừng lại cùng một lúc."
+      },
+      "chainNote": "Tỷ phần cytochrome c oxidase còn đang khử oxy.",
+      "cascadeNote": {
+        "under": "Trong công suất, nên sulfide tự do gần như bằng không.",
+        "over": "Vượt công suất. Sulfide giờ tích lại mà không gì chặn nổi."
+      },
+      "energyNote": {
+        "gain": "Năng lượng thật, đến cùng không khí.",
+        "none": "Chưa đủ để đáng kể."
+      },
+      "aria": {
+        "trace": "Sulfide được chuỗi xử lý loại bỏ dễ dàng, quá ít để cung cấp năng lượng hữu dụng.",
+        "supplement": "Sulfide được chuỗi xử lý loại bỏ và đưa electron vào chuỗi hô hấp.",
+        "nearCapacity": "Chuỗi xử lý gần bão hòa và sulfide tự do bắt đầu tích lại.",
+        "arrest": "Sulfide tự do đã tới cytochrome c oxidase và chuỗi hô hấp đã dừng."
+      },
+      "ppmValue": "{n} ppm",
+      "pctValue": "{n}%",
+      "modelNote": "Một chuỗi xử lý có thể bão hòa, đặt cạnh sự ức chế cạnh tranh ở vị trí khử oxy. Các enzyme và các mốc phơi nhiễm là thật; công suất bản địa là suy luận — nguyên tác chỉ nói sulfide có ở đó và nó giết chúng ta."
+    }
+  }
+}

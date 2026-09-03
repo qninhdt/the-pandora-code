@@ -1,0 +1,29 @@
+id: sporopollenin
+label:
+  vi: Sporopollenin
+  en: Sporopollenin
+definition:
+  vi: >-
+    Lớp vỏ polymer cực kỳ trơ bao quanh bào tử và hạt phấn thực vật. Nó bền hóa học đến mức chống được
+    khô hạn, oxy hóa và tia cực tím khi còn sống — rồi tiếp tục tồn tại trong đá hàng trăm triệu năm
+    sau khi cơ thể mang nó đã tan biến. Đó là lý do bào tử và phấn hoa là loại hóa thạch thực vật dồi
+    dào nhất, và cũng là lý do những bào tử giữa kỷ Ordovic, khoảng 475 triệu năm trước, là bằng chứng
+    trực tiếp đầu tiên về thực vật trên cạn.
+  en: >-
+    The extraordinarily inert polymer coat around plant spores and pollen grains. It is chemically
+    stubborn enough to resist drying, oxidation and ultraviolet light in life — and then to survive in
+    rock for hundreds of millions of years after the body that made it has gone. That is why spores
+    and pollen are the most abundant plant fossils, and why mid-Ordovician spores from roughly 475
+    million years ago are the first direct evidence of plants on land.
+see_also:
+  - terrestrialization
+  - palynology
+  - heterospory
+category: bio
+tags:
+  - chemistry
+  - evolution
+cover_prompt: >-
+  A painterly naturalist plate of a cluster of four microscopic spores joined in a tetrad, each
+  wrapped in a thick sculpted outer wall, one of them shown embedded in pale rock beside the living
+  cluster, cool teal and indigo palette, no text, no labels, no numbers.

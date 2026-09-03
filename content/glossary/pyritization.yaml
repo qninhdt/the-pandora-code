@@ -1,0 +1,18 @@
+id: pyritization
+label:
+  vi: Pyrit hóa (pyritization)
+  en: Pyritization
+definition:
+  vi: 'Con đường hào phóng nhất trong mọi cách bảo tồn: tinh thể pyrit sắt vàng đồng kết tinh trực tiếp lên mô đang phân hủy, đúc lại thớ cơ hay sợi mang ở độ phân giải gần cấp tế bào, trong vài ngày. Nó cần ba thứ đến cùng lúc theo đúng tỷ lệ - sulfide khử, sắt hoạt động, và - điều phản trực giác - trầm tích xung quanh *nghèo* carbon hữu cơ. Bùn giàu carbon quá thì sắt bị tiêu thụ khắp nơi thay vì ở trên cơ thể. Trên Trái Đất, sulfide phải do vi khuẩn chế tạo tại chỗ, cuộc chạy đua mà phân hủy thường thắng - nên hóa thạch pyrit hiếm đến mức từng mỏ đều có tên riêng.'
+  en: 'The most generous of all preservation routes: brassy iron pyrite crystals nucleating directly onto decaying tissue, casting muscle fibres and gill filaments at nearly cellular resolution, in days. It needs three things arriving together in the right ratio - reduced sulfide, reactive iron, and, counter-intuitively, surrounding sediment that is *poor* in organic carbon. In carbon-rich mud the iron is consumed everywhere instead of at the body. On Earth the sulfide must be manufactured on site by bacteria, a race that decay usually wins - which is why pyrite fossils are rare enough for individual beds to have names.'
+see_also:
+  - konservat-lagerstatte
+  - diagenesis
+  - euxinia
+  - anoxia
+category: concept
+tags:
+- chemistry
+- geology
+- mineral
+cover_prompt: A painted small six-limbed creature preserved entirely in brassy golden metallic mineral on a dark shale face, its fine filaments standing in three dimensions, warm brass against cool void-indigo stone, painterly specimen plate, no text, no labels.

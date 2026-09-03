@@ -1,0 +1,33 @@
+{
+  "id": "fig-03-out-of-the-freshwater",
+  "chapter_slug": "evolution-of-pandoran-flora",
+  "role": "diagram",
+  "narrative_purpose": "Places the origin of land plants where it actually was - a drying freshwater margin, not the open ocean - and shows the transition as a spatial sequence the reader can walk across with their eye.",
+  "subject": "A shallow pond margin shown in cross-section from left to right. At the far left, submerged in still water, floating mats of fine hair-like filaments. Moving right, the water becomes shallower until it thins to wet dark mud, and on that mud lie low flat creeping green sheets pressed against the ground. Further right the ground rises and dries, cracking into small plates, and from those cracks stand a scattering of small bare upright stalks with no leaves at all, each forking once or twice near its tip. Nothing on the right is tall; the tallest stalk is barely a hand's height.",
+  "scene": "A quiet freshwater edge under dim overcast light, deep haze beyond the far bank, no animals present.",
+  "camera": "A low side-on view at the level of the water surface, the whole sequence from open water to dry ground crossing the frame left to right.",
+  "light": "Soft cool ambient light with a faint living-teal glow from the algal mats and the creeping sheets; the upright stalks lit slightly warmer where they catch the light; deep indigo shadow in the water and under the mud shelf.",
+  "palette": "Void-indigo water and shadow, living-teal in the filaments and creeping sheets, faint stone-grey in the drying cracked mud, one scarce warm note on the standing stalks.",
+  "style": "Painterly naturalist plate, hand-painted texture, patient observational framing.",
+  "detail_level": "Crisp on the three stages and the transition between them, especially the drying cracked mud in the middle; the far bank soft; edges dissolving into haze.",
+  "composition": "A left-to-right horizontal progression across the frame, the water line running through the lower third, generous dim sky above for later callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "timeline chrome",
+    "large trees",
+    "flowers",
+    "animals",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Cool Pandora palette with faint bioluminescent glow in the aquatic and creeping stages. No large plant may appear anywhere in the frame - the point is that everything here is small and simple, and any tree would destroy the reading.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no timeline graphics, no tall trees, no flowers, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

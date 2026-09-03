@@ -1,0 +1,15 @@
+id: carbonic-anhydrase
+label:
+  vi: Enzyme carbonic anhydrase
+  en: Carbonic anhydrase
+definition:
+  vi: "Enzyme làm nhanh phản ứng giữa carbon dioxide và nước, và nó nhanh đến mức phi thường: gần một triệu lượt xúc tác mỗi giây, thuộc nhóm enzyme nhanh nhất từng được biết. Không có nó, việc hydrat hóa carbon dioxide sẽ chậm hơn hàng nghìn lần so với nhịp máu chảy qua mao mạch, và cơ thể sẽ không kịp chuyển khí thải thành bicarbonate để chuyên chở. Nó nằm dày trong hồng cầu và trên bề mặt nội mô mao mạch phổi - và ở bất cứ nơi nào cơ thể cần hoán chuyển giữa khí và ion trong khoảng thời gian một tế bào máu đi qua."
+  en: "The enzyme that speeds the reaction between carbon dioxide and water, and it is extraordinarily fast: close to a million turnovers a second, among the quickest enzymes known. Without it, hydrating carbon dioxide would be thousands of times slower than the rate at which blood crosses a capillary, and the body could not convert its waste gas into transportable bicarbonate in time. It sits densely inside red cells and on the endothelial surfaces of the lung - anywhere a body needs to switch between gas and ion within the transit time of a single blood cell."
+see_also:
+  - bicarbonate-buffer
+  - henderson-hasselbalch-equation
+category: bio
+tags:
+  - physiology
+  - chemistry
+cover_prompt: A painted molecular study of a compact protein form with a single bright metal atom glowing at its centre, gas motes streaming in one side and ion particles leaving the other in a rapid blur, teal and cyan against deep indigo, painterly, no text, no labels, no numbers.

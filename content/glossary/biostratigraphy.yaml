@@ -1,0 +1,17 @@
+id: biostratigraphy
+label:
+  vi: Địa tầng sinh học (biostratigraphy)
+  en: Biostratigraphy
+definition:
+  vi: 'Việc dùng trình tự các tập hợp hóa thạch trong đá trầm tích để đối sánh và định tuổi các tầng đá ở những nơi cách nhau rất xa. Nền tảng của nó là quy luật kế tiếp động vật: các tập hợp hóa thạch nối tiếp nhau theo một trật tự nhất định và không thể đảo ngược, nên hai lớp đá ở hai lục địa mà chứa cùng loài chỉ thị thì cùng tuổi. Đáng chú ý là ranh giới các kỷ địa chất hiện đại được định nghĩa bằng *biến động sinh học*, không phải bằng loại đá.'
+  en: 'Using the succession of fossil assemblages in sedimentary rock to correlate and date strata across widely separated places. Its foundation is the principle of faunal succession: assemblages follow one another in a definite, irreversible order, so two beds on two continents containing the same index species are the same age. Notably, modern geological period boundaries are defined by *biological turnover*, not by rock type.'
+see_also:
+  - faunal-succession
+  - index-fossil
+  - superposition
+  - ghost-lineage
+category: concept
+tags:
+- geology
+- evolution
+cover_prompt: A painted pair of rock cliff sections standing far apart in a hazy landscape, with faint glowing cyan lines drawn between matching layers in each to link them across the gap, cool indigo and stone tones, painterly, no text, no labels.

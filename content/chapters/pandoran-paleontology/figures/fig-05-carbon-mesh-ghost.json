@@ -1,0 +1,32 @@
+{
+  "id": "fig-05-carbon-mesh-ghost",
+  "chapter_slug": "pandoran-paleontology",
+  "role": "comparison",
+  "narrative_purpose": "Puts an Earth bone and a carbon-reinforced Pandoran bone through the same acid soil and shows the two outcomes side by side. The reader needs to see that one leaves a stain and the other leaves a structural mesh, because that difference is the chapter's most speculative and most interesting claim.",
+  "subject": "A two-panel comparison, both panels showing the same dark acidic soil in cross-section. Left panel: a mammalian thigh bone in three stages from top to bottom - intact and pale, then porous and crumbling with its surface pitted, then nothing but a faint pale discoloured smear in the soil. Right panel: a Pandoran limb bone in the same three stages - intact and pale, then the pale mineral visibly dissolving away to reveal a dense interlaced dark network of fine aligned fibres underneath, then only that dark fibrous mesh remaining, still holding the complete outline and internal architecture of the bone it came from.",
+  "scene": "Dark acidic forest soil in cross-section in both panels, faint pale rootlets threading through, the two panels separated by a narrow band of deeper shadow.",
+  "camera": "A flat side-on cross-section view, both panels at identical scale and framing so the comparison is unmistakable.",
+  "light": "A cool cyan ambience from above falling equally on both panels; the surviving fibre mesh on the right catching a faint hard specular glint that the dissolving mineral does not.",
+  "palette": "Void-indigo and dark earth throughout, bone-cream fading out on the left, and on the right a near-black graphite-dark fibre network with the faintest cool sheen - deliberately no warm accent, so nothing distracts from the structural contrast.",
+  "style": "Painterly naturalist comparison plate, hand-painted texture, matched framing across both halves.",
+  "detail_level": "Very high on the fibre mesh weave on the right and on the pitted dissolving surfaces in both panels; soil matrix textured; edges into haze.",
+  "composition": "Two equal vertical panels side by side, three stages stacked top to bottom within each, generous dark soil around each stage for later callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "panel dividers with markings",
+    "human figures",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Both panels must use identical soil, framing, scale and lighting so only the bone differs. The surviving structure on the right must read as an aligned woven fibre network, not as intact bone and not as a random tangle.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no panel titles, no photographic or 3D-render look, no lens flares, no cartoon or anime style, no industrial carbon-fibre weave sheeting",
+  "style_refs": ["pandora-establishing.png"]
+}

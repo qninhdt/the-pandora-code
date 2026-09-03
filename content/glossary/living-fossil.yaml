@@ -1,0 +1,29 @@
+id: living-fossil
+label:
+  vi: Hóa thạch sống
+  en: Living fossil
+definition:
+  vi: >-
+    Cách gọi thông dụng cho một dòng dõi còn sống mà hình thái gần như không đổi suốt thời gian rất dài — bạch quả, thông
+    Wollemi, tuế, cỏ tháp bút. Cụm từ này gây nhầm lẫn nhiều hơn là làm sáng tỏ, vì **đứng yên về hình thái không phải đứng
+    yên về di truyền**. Bạch quả tích lũy đột biến với tốc độ bình thường; hệ gene của nó không hề bị đóng băng. Sự bất động
+    bề ngoài được duy trì bởi chọn lọc ổn định, bởi lối sống chịu được nhiễu động và bởi sự định kênh trong phát triển — chứ
+    không phải bởi tiến hóa ngừng lại. Một sinh quyển có thể trông tĩnh; nó không thể tĩnh.
+  en: >-
+    A common label for a living lineage whose form has barely changed over a very long span — ginkgo, the Wollemi pine, cycads,
+    horsetails. The phrase misleads more than it clarifies, because **morphological stasis is not genetic stasis**. Ginkgo
+    accumulates mutations at an ordinary rate; its genome is not frozen. The outward stillness is maintained by stabilising
+    selection, by disturbance-tolerant life histories and by developmental canalisation — not by evolution stopping. A
+    biosphere can look still. It cannot be still.
+see_also:
+  - evolutionary-stasis
+  - adaptive-radiation
+  - red-queen-hypothesis
+category: concept
+tags:
+  - evolution
+  - philosophy-of-science
+cover_prompt: >-
+  A painterly naturalist plate of a single fan-leaved tree standing unchanged while faint ghosted outlines of the same tree
+  recede behind it into deep time, its glowing internal threads shown shifting and rearranging, cool teal and amber palette,
+  no text, no labels, no numbers.

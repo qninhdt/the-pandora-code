@@ -1,0 +1,16 @@
+id: pull-of-the-recent
+label:
+  vi: Sức hút của hiện tại (pull of the recent)
+  en: Pull of the Recent
+definition:
+  vi: 'Một thiên lệch hệ thống mà David Raup mô tả: đa dạng sinh học trong hồ sơ hóa thạch trông như tăng dần về phía hiện tại, một phần vì đá càng cổ càng bị hủy - bị hút chìm, biến chất, bóc mòn - nên khối lượng và diện tích lộ ra của đá non luôn lớn hơn. Thêm nữa, sinh giới hiện đại thì đếm trực tiếp được, còn sinh giới cổ phải đợi hóa thạch. Kết quả là mọi so sánh đa dạng theo thời gian đều nghiêng về phía gần, nếu không chỉnh lại bằng phương pháp lấy mẫu con.'
+  en: 'A systematic bias described by David Raup: diversity in the fossil record appears to rise toward the present partly because older rock is progressively destroyed - subducted, metamorphosed, eroded - so the volume and exposed area of young rock is always greater. On top of that, modern biotas can be counted directly while ancient ones must wait on fossils. The result is that any diversity comparison through time tilts toward the recent unless corrected by subsampling methods.'
+see_also:
+  - signor-lipps-effect
+  - taphonomy
+  - biostratigraphy
+category: concept
+tags:
+- geology
+- philosophy-of-science
+cover_prompt: A painted wedge-shaped stack of rock layers, thin and fragmentary at its deep base and broad and continuous near its top, the upper layers clearly better exposed at the surface, cool indigo to stone-grey gradient, painterly, no text, no labels.

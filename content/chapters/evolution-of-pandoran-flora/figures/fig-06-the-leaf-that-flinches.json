@@ -1,0 +1,32 @@
+{
+  "id": "fig-06-the-leaf-that-flinches",
+  "chapter_slug": "evolution-of-pandoran-flora",
+  "role": "inline",
+  "narrative_purpose": "Catches the helicoradian mid-retraction so the reader sees a plant moving at animal speed, and sees the contractile strands in its stalk that make the zooplantae question a real one.",
+  "subject": "A single tall alien plant consisting of one enormous leaf wound into a tight upright spiral, caught halfway through pulling itself downward. The upper portion of the spiral is still open and unfurled, its coils clearly separated. The lower portion has already collapsed and drawn down into a dark sheath at ground level, the coils there compressed and blurred with speed. Along the exposed stalk between the two, fine parallel strand-like fibres are visible running lengthwise under the surface, several of them glowing more brightly than the surrounding tissue.",
+  "scene": "A dim riverbank at night, dark still water at the left edge, wet dark soil underfoot, other vegetation reduced to silhouettes.",
+  "camera": "A close low three-quarter view looking slightly up at the plant, the whole spiral in frame from the sheath at its base to the open coils at its top.",
+  "light": "Bioluminescent self-glow from the leaf coils and, more intensely, from the parallel fibres in the stalk; a faint cool reflection off the water at the left; deep indigo shadow filling the background.",
+  "palette": "Void-indigo ground and water, living-teal in the spiral leaf, brighter cyan in the glowing stalk fibres, one scarce magenta accent at the sheath.",
+  "style": "Painterly naturalist plate, hand-painted texture, a sense of arrested motion.",
+  "detail_level": "Crisp on the open upper coils and on the glowing fibres in the stalk; the collapsed lower coils intentionally blurred with motion; background dissolving into haze.",
+  "composition": "The plant standing left of centre and filling most of the frame height, generous dark space to the right for later callouts.",
+  "aspect_ratio": "4:3",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "motion-blur streak graphics",
+    "speed lines",
+    "human figures",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Cool Pandora palette with bioluminescent self-glow. The half-open, half-collapsed state must be obvious in a single glance, and the lengthwise fibres in the stalk must be visible since they are what the surrounding text argues about.",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no cartoon speed lines, no photographic or 3D-render look, no lens flares, no anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

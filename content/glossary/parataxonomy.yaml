@@ -1,0 +1,31 @@
+id: parataxonomy
+label:
+  vi: Phân loại theo bộ phận
+  en: Parataxonomy
+definition:
+  vi: >-
+    Cách đặt tên riêng cho từng bộ phận thực vật hóa thạch, vì thực vật rụng các cơ quan của mình một cách độc lập và một
+    nhà cổ thực vật học thường chỉ tìm được lá rời, gỗ rời, nón rời hay bào tử rời. Cây thạch tùng khổng lồ kỷ Carbon từng
+    mang tới năm cái tên khác nhau — một cho thân, một cho hệ rễ, một cho lá rụng, một cho nón, một cho bào tử — trước khi
+    những mẫu hóa đá nguyên vẹn chứng minh tất cả là một sinh vật. Đây là lời cảnh báo trực tiếp cho bất cứ ai phân loại
+    một hệ thực vật xa lạ từ những mảnh rời: hạt bay, quả rụng và thân đứng của cùng một loài rất dễ bị vào sổ như ba loài
+    khác nhau.
+  en: >-
+    The practice of giving separate names to separate fossil plant organs, because plants shed their parts independently and
+    a palaeobotanist usually finds detached leaves, detached wood, detached cones or detached spores. The giant Carboniferous
+    clubmoss carried five different names — one for the trunk, one for the root system, one for the shed leaves, one for the
+    cones, one for the spores — before intact permineralised specimens proved they were all one organism. It is a direct
+    warning to anyone classifying an unfamiliar flora from fragments: the airborne seed, the fallen fruit and the standing
+    trunk of one species are easily catalogued as three.
+see_also:
+  - palynology
+  - monophyly
+  - sporopollenin
+category: concept
+tags:
+  - geology
+  - philosophy-of-science
+cover_prompt: >-
+  A painterly naturalist plate of four separate fossil plant fragments laid apart on dark stone, a detached leaf, a length of
+  trunk, a root mass and a cone, faint ghostly outlines showing they belong to one single tall plant, cool teal and indigo
+  palette, no text, no labels, no numbers.

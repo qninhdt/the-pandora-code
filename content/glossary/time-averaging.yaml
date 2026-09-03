@@ -1,0 +1,16 @@
+id: time-averaging
+label:
+  vi: Bình quân hóa thời gian (time-averaging)
+  en: Time-averaging
+definition:
+  vi: 'Một lớp trầm tích mỏng không ghi lại một khoảnh khắc mà gộp chung hàng trăm đến hàng trăm nghìn năm vào cùng một mặt phân lớp. Hệ quả rất dễ gây nhầm: các sinh vật chưa từng sống cùng thời có thể nằm cạnh nhau trong cùng một lớp đá, trông như một quần xã, còn những biến động ngắn hạn thì bị san phẳng và biến mất hoàn toàn. Vì vậy "hóa thạch tìm thấy cùng nhau" không đồng nghĩa với "từng sống cùng nhau" - và độ phân giải thời gian của mọi hồ sơ hóa thạch đều thô hơn ta tưởng.'
+  en: 'A thin layer of sediment does not record a moment but bundles anywhere from centuries to hundreds of thousands of years into one bedding plane. The consequence is easy to misread: organisms that never coexisted can lie side by side in the same rock, looking like a community, while short-term fluctuations are flattened out and vanish entirely. So "found together" does not mean "lived together" - and the temporal resolution of any fossil record is coarser than it appears.'
+see_also:
+  - taphonomy
+  - bioturbation
+  - biostratigraphy
+category: concept
+tags:
+- geology
+- ecology
+cover_prompt: A painted single thin rock bedding plane seen edge-on and magnified, holding the mingled remains of several different creature forms that clearly do not belong to one moment, cool indigo and stone-grey with faint teal traces, painterly, no text, no labels.

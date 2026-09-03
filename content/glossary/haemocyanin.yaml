@@ -1,0 +1,15 @@
+id: haemocyanin
+label:
+  vi: Haemocyanin
+  en: Haemocyanin
+definition:
+  vi: "Sắc tố hô hấp gốc đồng của phần lớn động vật chân đốt và một số thân mềm - trong suốt khi thiếu oxy, xanh đậm khi gắn oxy. Nó là lý do máu cua móng ngựa hay bạch tuộc có màu xanh, và cũng là nguồn của một suy luận sai lệch phổ biến: da xanh không hàm ý máu gốc đồng. Quan trọng hơn, haemocyanin không thể đóng gói vào tế bào; nó lưu thông tự do trong dịch, nên phải rất lớn để không bị thận lọc mất. Ở nồng độ cần thiết để sánh với năng lực chở oxy của động vật có xương sống, dịch ấy sẽ đặc và hút nước đến mức không chảy qua nổi mao mạch."
+  en: "The copper-based respiratory pigment of most arthropods and some molluscs - transparent when deoxygenated, deep blue when it binds oxygen. It is why horseshoe crab and octopus blood is blue, and also the source of a common false inference: blue skin does not imply copper-based blood. More importantly, haemocyanin cannot be packed into cells; it circulates free in the fluid, so it must be very large to avoid being filtered out by the kidney. At the concentration needed to match a vertebrate's oxygen-carrying capacity, that fluid becomes both viscous and osmotically ferocious - too thick to push through a capillary."
+see_also:
+  - myoglobin
+  - oxygen-dissociation-curve
+category: bio
+tags:
+  - physiology
+  - chemistry
+cover_prompt: A painted study of a very large multi-lobed protein assembly suspended free in pale fluid, two bright copper-toned atoms glowing at its binding site, the fluid around it noticeably thick and slow, deep blue and cyan against indigo shadow, painterly, no text, no labels, no numbers.

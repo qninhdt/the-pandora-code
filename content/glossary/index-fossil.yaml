@@ -1,0 +1,16 @@
+id: index-fossil
+label:
+  vi: Hóa thạch chỉ thị (index fossil)
+  en: Index fossil
+definition:
+  vi: 'Một loài dùng để định tuổi tương đối cho tầng đá, và điều làm nó hữu dụng không phải là vẻ ngoài ấn tượng mà là bốn tính chất rất thực dụng: phân bố địa lý rộng, tồn tại trong khoảng thời gian ngắn, xuất hiện dồi dào, và dễ nhận diện. Chính vì thế những kẻ làm nên khung niên đại sinh học lại là các sinh vật nhỏ và tầm thường - trùng lỗ, răng nón, bào tử, phấn hoa - chứ không phải khủng long. Động vật lớn quá hiếm để dựng nên bất cứ thang thời gian nào.'
+  en: 'A species used to date rock layers relatively, and what makes one useful is not being impressive but four rather practical properties: wide geographic range, short temporal range, abundance, and easy identification. Which is why the workhorses of biological dating are small unglamorous organisms - foraminifera, conodonts, spores, pollen - rather than dinosaurs. Large animals are far too rare to build any timescale on.'
+see_also:
+  - biostratigraphy
+  - faunal-succession
+  - ghost-lineage
+category: concept
+tags:
+- geology
+- evolution
+cover_prompt: A painted array of nine tiny microfossil shapes - spirals, chambered shells, spiny spheres, toothed cones - laid out in a grid at high magnification against dark ground, pale cream forms with faint cyan rim light, painterly naturalist plate, no text, no labels.

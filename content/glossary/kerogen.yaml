@@ -1,0 +1,16 @@
+id: kerogen
+label:
+  vi: Kerogen
+  en: Kerogen
+definition:
+  vi: 'Phần chất hữu cơ không tan còn lại trong đá trầm tích sau khi chôn vùi đã tách hết những phân tử dễ phân hủy. Nó không phải chất gốc mà là sản phẩm biến đổi: các phân tử sinh học ban đầu bị nối chéo thành mạng polymer thơm, sẫm màu, kỵ nước và cực kỳ trơ. Wiemann và cộng sự chứng minh năm 2018 rằng cái từng được coi là "protein khủng long nguyên vẹn" thực chất là loại polymer này. Đó là lý do hình thái tế bào có thể tồn tại hàng trăm triệu năm dù phân tử gốc đã biến mất từ lâu.'
+  en: 'The insoluble organic residue left in sedimentary rock after burial has stripped out everything readily degradable. It is not original material but a transformation product: the starting biomolecules cross-link into a dark, water-repelling, aromatic polymer network that is extremely inert. Wiemann and colleagues showed in 2018 that what had been taken for intact dinosaur protein is in fact this class of polymer. It is why cellular morphology can persist for hundreds of millions of years after the original molecule is long gone.'
+see_also:
+  - diagenesis
+  - ancient-dna
+  - taphonomy
+category: concept
+tags:
+- chemistry
+- geology
+cover_prompt: A painted magnified view of dark brown-black interlinked polymer strands filling the space where recognisable cell structures once were, their outlines still faintly traceable, cool indigo ground with warm dark brown network, painterly, no text, no labels.

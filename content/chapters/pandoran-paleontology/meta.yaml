@@ -1,0 +1,161 @@
+slug: pandoran-paleontology
+status: published
+title:
+  vi: Cổ sinh vật học Pandora
+  en: Pandoran Paleontology
+subtitle:
+  vi: >-
+    Một mặt trăng có cả một sinh giới khổng lồ được ghi chép tỉ mỉ, mà không một hóa thạch nào được
+    công bố. Cái hố rỗng ấy không phải phán quyết về quá khứ Pandora - nó là phán quyết về một loại
+    đất, và về việc chúng ta đã đào sai chỗ.
+  en: >-
+    A moon with an exhaustively catalogued bestiary and not one published fossil. That empty pit is
+    not a verdict on Pandora's past - it is a verdict on a soil type, and on digging in the wrong
+    place.
+hook:
+  vi: >-
+    Hai mét sâu, và không có gì. Cái hố xuyên qua một mét rưỡi đất laterite đỏ trong một khu rừng
+    chở nhiều sinh khối động vật lớn trên mỗi hectare hơn bất cứ nơi nào trên Trái Đất - vậy mà vách
+    hố chỉ có rễ, sét và vài hạt thạch anh. Không xương, không vỏ, không răng. Rừng bên trên đã chạy
+    suốt hàng triệu năm; mặt đất bên dưới chẳng giữ lại chút nào. Câu hỏi thật không phải "quá khứ
+    Pandora có thể biết được không", mà là: liệu chỗ này có bao giờ giữ nổi bất cứ thứ gì, kể cả khi
+    có?
+  en: >-
+    Two metres down, and nothing. The pit cuts through a metre and a half of red laterite in a
+    forest carrying more large-animal biomass per hectare than anywhere on Earth - and its walls
+    hold roots, clay and a scatter of quartz. No bone, no shell, no tooth. The forest above has been
+    running for millions of years; the ground below has kept none of it. The real question is not
+    whether Pandora's past is knowable, but whether this place would have kept anything even if it
+    were there.
+authors:
+  - bardabez
+tags:
+  - taphonomy
+  - paleontology
+  - fossilization
+  - biostratigraphy
+  - sampling-bias
+  - diagenesis
+classification:
+  canon_pct: 14
+  inference_pct: 20
+  speculation_pct: 10
+  real_science_pct: 56
+related_chapters:
+  - pandoras-deep-time
+  - pandoran-tree-of-life
+  - six-limbs-and-the-bilateral-lattice
+  - what-keeps-pandora-volcanically-alive
+glossary_terms:
+  - taphonomy
+  - diagenesis
+  - konservat-lagerstatte
+  - permineralization
+  - pyritization
+  - phosphatization
+  - time-averaging
+  - bioturbation
+  - laterite
+  - anoxia
+  - euxinia
+  - signor-lipps-effect
+  - pull-of-the-recent
+  - ghost-lineage
+  - index-fossil
+  - biostratigraphy
+  - faunal-succession
+  - trace-fossil
+  - ichnology
+  - damuths-rule
+  - ancient-dna
+  - kerogen
+  - pseudofossil
+  - operculum
+  - queue
+  - prolemuris
+  - evolutionary-stasis
+  - superposition
+  - deep-time
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-empty-test-pit
+    role: hero
+    asset_status: ready
+  - id: fig-02-forest-floor-recycling
+    role: diagram
+    asset_status: ready
+  - id: fig-03-ash-entombment
+    role: diagram
+    asset_status: ready
+  - id: fig-04-pyrite-soft-tissue-cast
+    role: inline
+    asset_status: ready
+  - id: fig-05-carbon-mesh-ghost
+    role: comparison
+    asset_status: ready
+  - id: fig-06-rarest-leaves-least
+    role: comparison
+    asset_status: ready
+  - id: fig-07-two-archives
+    role: comparison
+    asset_status: ready
+  - id: fig-08-basin-versus-upland
+    role: diagram
+    asset_status: ready
+sources:
+  - kind: canon
+    label: >-
+      Wilhelm & Mathison, James Cameron's Avatar: An Activist Survival Guide (atmospheric hydrogen
+      sulfide, carbon-fibre bone reinforcement, RDA operations)
+  - kind: canon
+    label: Mangkwan Clan - James Cameron's Avatar Wiki (the volcanic burial of the clan's Hometree)
+    url: https://james-camerons-avatar.fandom.com/wiki/Mangkwan_Clan
+  - kind: canon
+    label: Great Leonopteryx - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Great_Leonopteryx
+  - kind: canon
+    label: Prolemuris - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Prolemuris
+  - kind: community
+    label: >-
+      Izzo, The World of Avatar: A Visual Exploration, as circulated in community summaries - the
+      twelve-million-year Na'vi stasis estimate, cited without a stated derivation
+  - kind: science
+    label: Behrensmeyer - taphonomic and ecologic information from bone weathering (Paleobiology, 1978)
+    url: https://doi.org/10.1017/S0094837300005820
+  - kind: science
+    label: McBrearty & Jablonski - first fossil chimpanzee (Nature, 2005)
+    url: https://www.nature.com/articles/nature04008
+  - kind: science
+    label: Signor & Lipps - sampling bias and the gradual smearing of abrupt extinctions (1982)
+    url: https://doi.org/10.1130/SPE190-p291
+  - kind: science
+    label: >-
+      Strauss & Sadler - classical confidence intervals for endpoints of stratigraphic ranges
+      (Mathematical Geology, 1989)
+    url: https://doi.org/10.1007/BF00897326
+  - kind: science
+    label: Damuth - population density and body size in mammals (Nature, 1981)
+    url: https://www.nature.com/articles/290699a0
+  - kind: science
+    label: >-
+      Allentoft et al. - the half-life of DNA in bone, measured across 158 dated fossils (Proc. R.
+      Soc. B, 2012)
+    url: https://doi.org/10.1098/rspb.2012.1745
+  - kind: science
+    label: >-
+      Wiemann et al. - fossilization transforms vertebrate hard-tissue proteins into N-heterocyclic
+      polymers (Nature Communications, 2018)
+    url: https://doi.org/10.1038/s41467-018-07013-3
+  - kind: science
+    label: Vinther - reconstructing vertebrate paleocolor from preserved melanosomes (2020)
+    url: https://doi.org/10.1146/annurev-earth-073019-045641
+  - kind: science
+    label: Green et al. - a framework for reporting evidence for life beyond Earth (Nature, 2021)
+    url: https://www.nature.com/articles/s41586-021-03804-9
+  - kind: research-note
+    label: >-
+      Taphonomic pathways, stratigraphic incompleteness, and astropaleontological modeling of the
+      Pandoran rock record (chapter research note)

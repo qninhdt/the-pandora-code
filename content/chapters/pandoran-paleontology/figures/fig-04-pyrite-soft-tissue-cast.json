@@ -1,0 +1,33 @@
+{
+  "id": "fig-04-pyrite-soft-tissue-cast",
+  "chapter_slug": "pandoran-paleontology",
+  "role": "inline",
+  "narrative_purpose": "Shows the specimen class the sulfide argument predicts - a whole animal, soft parts included, replaced in brassy metallic mineral. The reader has to see that the queue filaments and the operculum lamellae survived, because those are exactly the tissues that normally vanish first.",
+  "subject": "A dark grey shale slab split open and lying on a shallow specimen tray, its exposed inner face bearing the complete body of a small six-limbed animal about the length of a hand, rendered entirely in brassy golden metallic mineral standing slightly in relief. Visible in that metal: the six limbs in their natural arrangement, a fine branching braid of filaments trailing from the back of its head, and along one flank a slit-like opening whose interior feathery lamellae are individually distinguishable. Small clusters of tiny spherical brassy crystals dust the rock immediately around the body.",
+  "scene": "A dark specimen bench, the slab freshly opened with its counterpart half set behind it, deep shadow beyond.",
+  "camera": "A close overhead view straight down onto the split face, the animal filling most of the frame, the tray edges just visible.",
+  "light": "A cool cyan key raking low across the slab so the brassy metal catches a warm specular sheen and the relief casts fine shadows; the surrounding rock in deep indigo.",
+  "palette": "Void-indigo and cool stone-grey rock with the animal itself in warm brass and gold - the one place warm colour is allowed to dominate its own small area.",
+  "style": "Painterly naturalist specimen plate, hand-painted texture, the precision of a museum photographic plate.",
+  "detail_level": "Very high on the metallic body, the branching filaments, and the lamellae inside the flank slit; the rock matrix textured but quiet; the background dissolving.",
+  "composition": "The animal laid diagonally across the frame, generous dark rock at the upper left and lower right for later callouts, the tiny crystal clusters providing a secondary texture note.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "scale bars",
+    "rulers",
+    "human hands",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Exactly six limbs. The soft anatomy - the trailing head filaments and the flank slit lamellae - must be clearly rendered in the same brassy mineral as the rest of the body, since that is the whole point of the figure. Warm brass restricted to the specimen itself.",
+  "aspect_ratio": "4:3",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no scale bar, no ruler, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style, no gemstones or jewellery",
+  "style_refs": ["pandora-establishing.png"]
+}

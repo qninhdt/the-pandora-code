@@ -1,0 +1,253 @@
+{
+  "viz": {
+    "acidBaseSetPoint": {
+      "title": "What the air does to blood",
+      "subtitle": "Carbon dioxide sets the acidity; bicarbonate is the only lever against it",
+      "controls": {
+        "preset": "Body and air",
+        "paco2": "Arterial carbon dioxide",
+        "bicarbonate": "Plasma bicarbonate"
+      },
+      "preset": {
+        "earth": "Earth baseline",
+        "defendEarthPh": "Hold 7.40 here",
+        "nativeSetPoint": "Native set-point",
+        "earthAirShock": "Native in Earth air"
+      },
+      "hint": {
+        "earth": "Twenty-four units of bicarbonate against forty of carbon dioxide. This is the ratio every mammal on Earth defends, and it lands on 7.39.",
+        "defendEarthPh": "Same pH, Pandoran air. The bicarbonate needed is three times a mammal's, and a reserve that large carries an osmotic bill the tissue cannot pay.",
+        "nativeSetPoint": "Drop the target instead of raising the reserve, and the numbers become affordable. Nothing in canon states this value; it is what the arithmetic leaves standing.",
+        "earthAirShock": "Clean air washes the carbon dioxide out in under a minute. The bicarbonate takes days to follow, and in the gap the blood turns alkaline."
+      },
+      "axis": {
+        "paco2": "Arterial carbon dioxide tension",
+        "bicarbonate": "Plasma bicarbonate"
+      },
+      "iso": {
+        "earth": "the pairs that hold 7.40",
+        "native": "the pairs that hold 7.16"
+      },
+      "readout": {
+        "ph": "Arterial pH",
+        "load": "Cost of the reserve",
+        "earthCost": "To hold 7.40 here"
+      },
+      "verdict": {
+        "lethalAcidosis": "Past the acid limit. Enzymes misfold and the heart loses its rhythm.",
+        "compensatedLow": "Acid by our standards, and stable — if the proteins were built for it.",
+        "terrestrialNormal": "The terrestrial window, defended.",
+        "alkalosis": "Alkaline. Vessels in the brain constrict and calcium falls out of solution.",
+        "lethalAlkalosis": "Past the alkaline limit. Tetany, then apnoea."
+      },
+      "load": {
+        "ordinary": "Ordinary",
+        "elevated": "Heavy but payable",
+        "unaffordable": "Beyond the tissue"
+      },
+      "loadNote": {
+        "ordinary": "A mammalian reserve. Nothing strains to carry it.",
+        "elevated": "Well above ours, and within reach — some cave bats live near the bottom of this band.",
+        "unaffordable": "This much bicarbonate drags water into the plasma, strips chloride, and starts precipitating calcium phosphate in soft tissue."
+      },
+      "earthCostNote": "Bicarbonate required for a terrestrial pH at this carbon dioxide tension.",
+      "aria": {
+        "lethalAcidosis": "Blood acidity past the survivable limit at this carbon dioxide tension and bicarbonate reserve.",
+        "compensatedLow": "Blood held stable below the terrestrial set-point by a raised bicarbonate reserve.",
+        "terrestrialNormal": "Blood at the terrestrial acidity set-point.",
+        "alkalosis": "Blood turned alkaline as carbon dioxide falls faster than bicarbonate can clear.",
+        "lethalAlkalosis": "Blood alkalinity past the survivable limit."
+      },
+      "mmHgValue": "{n} mmHg",
+      "mmolValue": "{n} mmol/L",
+      "modelNote": "Henderson-Hasselbalch with measured plasma constants. Canon states no Pandoran blood pH, so the native set-point here is reconstruction, not reporting."
+    },
+    "oxygenAffinity": {
+      "title": "Handing the oxygen over",
+      "subtitle": "A pigment is judged on what it releases, not what it holds",
+      "controls": {
+        "regime": "Body and effort",
+        "p50": "Half-saturation pressure",
+        "hill": "Cooperativity",
+        "bohr": "Acid sensitivity"
+      },
+      "regime": {
+        "earthRest": "Human, resting",
+        "earthSprint": "Human, sprinting",
+        "pandoraRest": "Native, resting",
+        "pandoraSprint": "Native, sprinting"
+      },
+      "hint": {
+        "thin": "The muscle has taken nearly everything. Superb for a chase, and no margin at all if delivery stumbles.",
+        "workable": "Most of the load handed over, some still in reserve. This is what a working body looks like.",
+        "ample": "Barely tapped. The blood is returning almost as full as it left, which is what resting looks like."
+      },
+      "axis": {
+        "po2": "Oxygen tension",
+        "saturation": "Pigment saturation"
+      },
+      "readout": {
+        "delivered": "Handed over per pass",
+        "loading": "Saturation on leaving the lung",
+        "reserve": "Still carried on return"
+      },
+      "extraction": {
+        "sparing": "A light draw. Most of the cargo goes back unused.",
+        "moderate": "A working extraction, of the kind sustained effort needs.",
+        "aggressive": "Nearly everything, stripped in one pass."
+      },
+      "loadingNote": {
+        "plateau": "Loading sits on the flat top of the curve, where affinity barely matters.",
+        "limited": "Now the pigment cannot fill even at the lung. Loading has become the limit."
+      },
+      "reserve": {
+        "thin": "Almost nothing held back",
+        "workable": "A usable margin",
+        "ample": "A full reserve"
+      },
+      "aria": {
+        "thin": "The pigment gives up nearly all its oxygen in one pass, leaving no reserve in the returning blood.",
+        "workable": "The pigment gives up most of its oxygen and keeps a usable margin.",
+        "ample": "The pigment gives up only a small share of its oxygen."
+      },
+      "bohrOff": "blunted",
+      "mmHgValue": "{n} mmHg",
+      "pctValue": "{n}%",
+      "modelNote": "Hill binding with a Bohr shift. Alveolar tensions are derived from canonical atmospheric figures; the pigment itself is never named in canon beyond being iron-based."
+    },
+    "radiatorHeat": {
+      "title": "The ceiling on effort",
+      "subtitle": "Sustained power is capped by what the radiators can shed",
+      "controls": {
+        "regime": "Conditions",
+        "mass": "Body mass",
+        "radiator": "Radiator surface",
+        "density": "Air density"
+      },
+      "regime": {
+        "rainforestChase": "Rainforest chase",
+        "eclipseTotality": "Eclipse totality",
+        "montaneWind": "Montane wind"
+      },
+      "hint": {
+        "rainforestChase": "Saturated air, so the evaporation bar barely exists. Everything rides on convection, which is the one term the dense atmosphere inflates.",
+        "eclipseTotality": "The sky goes cold and the air falls. Now the radiators are a liability, and the animal's problem is shutting them.",
+        "montaneWind": "Cold air moving fast strips heat faster than any body this size can make it. Shelter and bulk, or nothing."
+      },
+      "row": {
+        "production": "Muscles make",
+        "convection": "Air carries off",
+        "radiation": "Radiated away",
+        "evaporation": "Evaporated off"
+      },
+      "ceilingLabel": "all it can shed",
+      "axis": {
+        "power": "heat flow, kilowatts"
+      },
+      "readout": {
+        "sustainable": "Effort it can hold",
+        "clock": "Time at this effort",
+        "deficit": "Vapour deficit",
+        "airGain": "Cooling from the air"
+      },
+      "balance": {
+        "overheating": "Above the ceiling. The core is climbing and the chase has a deadline.",
+        "steady": "Inside the ceiling. This can be held indefinitely.",
+        "mustConserve": "Far under the ceiling. The radiators have to be shut or the body simply drains."
+      },
+      "clockNote": "Until the core has risen two degrees.",
+      "noClock": "no limit",
+      "deficitNote": {
+        "closed": "Nearly closed. Sweat will not evaporate, so it cools nothing.",
+        "open": "Open enough for evaporation to matter."
+      },
+      "airGainNote": {
+        "denser": "Advantage over Earth-density air at the same speed.",
+        "thinner": "Penalty against Earth-density air at the same speed."
+      },
+      "aria": {
+        "overheating": "Heat production exceeds everything the body can shed, so the core temperature is rising.",
+        "steady": "Heat production sits within what the body can shed, so the effort can be sustained.",
+        "mustConserve": "Heat loss far exceeds production, so the body must close its radiators to hold temperature."
+      },
+      "restingMultiple": "{n}× resting",
+      "minutesValue": "{n} min",
+      "kgValue": "{n} kg",
+      "kwValue": "{n} kW",
+      "pctValue": "{n}%",
+      "mmHgValue": "{n} mmHg",
+      "densityValue": "{n} kg/m³",
+      "modelNote": "Newton cooling with a density-scaled coefficient, Stefan-Boltzmann radiation, and vapour-deficit evaporation. Canon gives no metabolic rate, core temperature, or radiator area for any native species."
+    },
+    "sulfideElectron": {
+      "title": "Poison, or fuel",
+      "subtitle": "The same molecule, and the only difference is how fast a body can process it",
+      "controls": {
+        "body": "Whose mitochondria",
+        "exposure": "Sulfide in the air"
+      },
+      "body": {
+        "human": "Human",
+        "exopack": "Human, masked",
+        "sulfideSpringFish": "Sulfide-spring fish",
+        "pandoranNative": "Pandoran native"
+      },
+      "hint": {
+        "human": "Every enzyme needed is already here — a body makes its own sulfide as a signal. There is simply no capacity, and past a few hundred parts per million the surplus reaches the respiratory chain.",
+        "exopack": "The biology is unchanged. The mask takes the sulfide out before the lung ever sees it, which is why it works at all.",
+        "sulfideSpringFish": "Real convergence, measured in Mexican sulfur springs: a modified binding site and an expanded cascade. Sized for a spring, not for a whole atmosphere.",
+        "pandoranNative": "Put the cliff above what the air delivers and the poison becomes a supplement — a few per cent of the respiratory electrons, arriving free with every breath."
+      },
+      "rung": {
+        "smell": "smelt",
+        "occupational": "workplace limit",
+        "olfactoryParalysis": "smell gone",
+        "knockdown": "one breath",
+        "pandoraTrace": "Pandora"
+      },
+      "axis": {
+        "exposure": "Hydrogen sulfide, parts per million"
+      },
+      "legend": {
+        "capacity": "respiratory chain still turning",
+        "bonus": "energy from sulfide"
+      },
+      "readout": {
+        "fate": "What the sulfide is",
+        "chain": "Respiratory chain intact",
+        "cascade": "Disposal cascade load",
+        "energy": "Share of electrons"
+      },
+      "fate": {
+        "trace": "A trace",
+        "supplement": "A supplement",
+        "nearCapacity": "At the edge",
+        "arrest": "A poison"
+      },
+      "fateNote": {
+        "trace": "Cleared without effort, and too little to be worth anything.",
+        "supplement": "Cleared, and the electrons go to work. This is food.",
+        "nearCapacity": "The cascade is nearly saturated. A little more and free sulfide runs away.",
+        "arrest": "Past the cascade and onto the oxygen-reduction site. Every mitochondrion stops at once."
+      },
+      "chainNote": "Share of cytochrome c oxidase still reducing oxygen.",
+      "cascadeNote": {
+        "under": "Within capacity, so free sulfide stays near zero.",
+        "over": "Over capacity. Sulfide now accumulates with nothing to stop it."
+      },
+      "energyNote": {
+        "gain": "Real energy, arriving with the air.",
+        "none": "Not enough to register."
+      },
+      "aria": {
+        "trace": "Sulfide cleared easily by the disposal cascade, too little to supply useful energy.",
+        "supplement": "Sulfide cleared by the cascade and feeding electrons into the respiratory chain.",
+        "nearCapacity": "The disposal cascade is close to saturation and free sulfide is beginning to accumulate.",
+        "arrest": "Free sulfide has reached cytochrome c oxidase and the respiratory chain has stopped."
+      },
+      "ppmValue": "{n} ppm",
+      "pctValue": "{n}%",
+      "modelNote": "A saturable clearance cascade against competitive inhibition of the oxygen-reduction site. Enzymes and exposure rungs are real; native capacity is inference — canon says only that the sulfide is there and that it kills us."
+    }
+  }
+}

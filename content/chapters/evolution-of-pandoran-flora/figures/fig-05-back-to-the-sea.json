@@ -1,0 +1,33 @@
+{
+  "id": "fig-05-back-to-the-sea",
+  "chapter_slug": "evolution-of-pandoran-flora",
+  "role": "comparison",
+  "narrative_purpose": "Makes the diagnostic features of a secondary marine return visible: internal air channels and true anchoring roots on a fully submerged plant, which is what a land lineage that went back to the water looks like.",
+  "subject": "A fully submerged underwater scene. In the foreground, two broad ribbon-like fronds rise from the seabed, each cut open lengthwise so the interior shows long pale hollow channels running the length of the tissue like parallel tubes, a few of them holding visible trapped bubbles. Beneath them, fine branching roots grip into pale sediment rather than merely resting on rock. Behind and to one side stands a submerged trunk with slender glowing tendrils drifting upward from its crown into the water column. In the far background, low mounded reef structures fade into the blue-dark distance.",
+  "scene": "A calm shallow reef floor in deep blue-green water, faint shafts of surface light filtering down, suspended particles drifting.",
+  "camera": "A low underwater view close to the seabed, looking slightly upward past the fronds so their cut interiors face the viewer.",
+  "light": "Cool filtered light from far above, plus bioluminescent self-glow in the drifting tendrils and a faint pale luminosity inside the air channels so the cavities read clearly against the tissue; deep indigo shadow in the water beyond.",
+  "palette": "Void-indigo and ocean-teal water, living-teal in the frond tissue, pale mist highlights inside the hollow channels, scarce magenta on the drifting tendrils.",
+  "style": "Painterly naturalist cutaway plate, hand-painted texture, underwater atmospheric depth.",
+  "detail_level": "Crisp on the cut frond interiors, the hollow channels and the root grip in sediment; the submerged trunk softer; the far reef dissolving into haze.",
+  "composition": "Two cut fronds occupying the left and centre foreground, the tendrilled trunk offset to the right, open dark water across the upper frame for later callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "fish",
+    "divers",
+    "boats",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Cool Pandora palette in an underwater key. The hollow internal channels are the entire point of the figure and must be unmistakable; the roots must clearly penetrate sediment rather than clinging to rock like an alga's holdfast.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no fish, no divers, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

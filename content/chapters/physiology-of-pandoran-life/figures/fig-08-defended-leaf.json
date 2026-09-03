@@ -1,0 +1,33 @@
+{
+  "id": "fig-08-defended-leaf",
+  "chapter_slug": "physiology-of-pandoran-life",
+  "role": "inline",
+  "narrative_purpose": "Grounds the toxicology thread in an ordinary act: a browsing animal eating a plant that is chemically armed, which is the negotiation every herbivore's liver exists to win.",
+  "subject": "A six-limbed browsing animal with a long narrow muzzle pushed deep into a cluster of broad dark violet fronds, jaw working, eyes half closed. One frond just beside its head is curling tightly away from contact, rolling in on itself. At the torn edge of a bitten leaf, a faint pale exudate beads and runs. Two or three already-stripped stems hang bare below.",
+  "scene": "The understorey of a bioluminescent forest, dim and close, broad violet and deep-red foliage crowding the frame, faint glowing growth scattered on the forest floor below.",
+  "camera": "Close three-quarter view at head height, the animal's muzzle and the fronds filling most of the frame.",
+  "light": "Cool bioluminescent key from low glowing growth throwing light up into the foliage from beneath; a faint pale glint on the beading exudate; deep indigo shadow behind the leaf mass.",
+  "palette": "Void-indigo ground, deep violet and muted red in the foliage, living-teal glow from below, a scarce pale highlight on the exudate.",
+  "style": "Painterly naturalist field-observation plate, oil texture, close and quiet.",
+  "detail_level": "Crisp on the animal's muzzle and jaw, on the curling frond and on the beading exudate at the torn leaf edge; the surrounding foliage softer; the background dissolving into dark haze.",
+  "composition": "Animal entering from the left third with its head at centre, the curling frond and the torn leaf edge on the clear right side, dark plain space in the upper corners.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "arrows",
+    "diagram lines",
+    "callouts",
+    "green Earth foliage",
+    "flowers",
+    "blood",
+    "injury",
+    "3D render"
+  ],
+  "consistency_notes": "Cool Pandora palette with violet and deep-red foliage, never Earth green. The browsing animal has six limbs and smooth hide. Keep the upper corners dark and plain for overlaid callouts.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no letters, no numbers, no labels, no arrows, no green foliage, no flowers, no blood, no flat vector art, no infographic styling, no UI, no watermarks, no 3D render",
+  "style_refs": ["pandora-establishing.png"]
+}

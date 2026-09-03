@@ -1,0 +1,29 @@
+id: thigmonasty
+label:
+  vi: Cảm ứng tiếp xúc (thigmonasty)
+  en: Thigmonasty
+definition:
+  vi: >-
+    Phản ứng cử động nhanh của thực vật khi bị chạm, và hướng cử động do cấu tạo của cây quyết định chứ không do hướng
+    của cái chạm. Cây trinh nữ *Mimosa pudica* cụp lá trong một hai giây; cây bắt ruồi Venus sập lại dưới một phần mười
+    giây. Điều đáng nói là chúng làm được vậy mà không có cơ và không có dây thần kinh: các ion di chuyển đột ngột làm
+    nước rời khỏi những tế bào chuyên biệt, và tín hiệu lan đi bằng điện thế hoạt động thật sự chạy qua mô thực vật
+    thường. Vì thế một cái cây cử động nhanh, tự nó, không phải bằng chứng của tổ tiên động vật.
+  en: >-
+    A plant's rapid movement in response to touch, where the direction of movement is set by the plant's structure rather
+    than by the direction of the stimulus. *Mimosa pudica* folds its leaves within a second or two; the Venus flytrap
+    snaps shut in under a tenth of a second. The notable part is that they do it without muscle and without nerves:
+    sudden ion movements drive water out of specialised cells, and the signal propagates as genuine action potentials
+    running through ordinary plant tissue. So a fast-moving plant is not, by itself, evidence of animal ancestry.
+see_also:
+  - zooplantae
+  - turgor-pressure
+  - membrane-potential
+category: bio
+tags:
+  - physiology
+  - sensory-biology
+cover_prompt: >-
+  A painterly naturalist plate of a compound leaf caught mid-fold, its leaflets on one side already closed and the others
+  still open, a faint glow travelling along the stalk as a signal, cool cyan and teal palette, no text, no labels, no
+  numbers.

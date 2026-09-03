@@ -1,0 +1,16 @@
+id: heat-dissipation-limit
+label:
+  vi: Giới hạn thải nhiệt
+  en: Heat-dissipation limit
+definition:
+  vi: "Giả thuyết cho rằng công suất chuyển hóa bền của một con vật bị chặn không phải bởi khả năng tiêu hóa hay sức chịu của cơ, mà bởi tốc độ cơ thể tống được nhiệt thải ra ngoài. Do John Speakman và Elżbieta Król nêu ra, nó đảo lại một tranh luận lâu năm trong sinh năng lượng học động vật: tốc độ tối đa do đôi chân quyết định, còn giữ được nhịp ấy bao lâu thì do các tấm tản nhiệt. Voi châu Phi bơm tới một phần năm lưu lượng tim qua đôi tai vì lý do này. Trong không khí gần bão hòa, nơi bay hơi gần như vô dụng, giới hạn ấy càng siết chặt."
+  en: "The hypothesis that an animal's sustained metabolic output is capped not by how fast its gut can process food or how much its muscles can stand, but by how fast its body can get rid of waste heat. Put forward by John Speakman and Elżbieta Król, it inverts a long-standing argument in animal energetics: top speed is set by the legs, but how long a pace can be held is set by the radiators. An African elephant routes up to a fifth of its cardiac output through its ears for exactly this reason. In near-saturated air, where evaporation is nearly useless, the limit bites harder still."
+see_also:
+  - gigantothermy
+  - vapour-pressure-deficit
+  - kleibers-law
+category: concept
+tags:
+  - physiology
+  - physics
+cover_prompt: A painted anatomical study of a large animal's broad thin vascularised ear or fan held out from its body, fine vessel branching visible across the membrane, faint warm haze rising off its surface into cool air, amber warmth against deep teal and indigo, painterly, no text, no labels, no numbers.

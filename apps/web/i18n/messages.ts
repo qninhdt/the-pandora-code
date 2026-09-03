@@ -29,11 +29,14 @@ import enMycorrhiza from "../messages/en/viz-mycorrhiza.json";
 import enNetwork from "../messages/en/viz-network.json";
 import enOcean from "../messages/en/viz-ocean.json";
 import enPhysics from "../messages/en/viz-physics.json";
+import enPhysiology from "../messages/en/viz-physiology.json";
 import enPlanetary from "../messages/en/viz-planetary.json";
 import enPlant from "../messages/en/viz-plant.json";
 import enSystematics from "../messages/en/viz-systematics.json";
+import enTaphonomy from "../messages/en/viz-taphonomy.json";
 import enTime from "../messages/en/viz-time.json";
 import enWrappers from "../messages/en/viz-wrappers.json";
+import enXenobotany from "../messages/en/viz-xenobotany.json";
 
 import viCommon from "../messages/vi/common.json";
 import viAirsea from "../messages/vi/viz-airsea.json";
@@ -64,11 +67,14 @@ import viMycorrhiza from "../messages/vi/viz-mycorrhiza.json";
 import viNetwork from "../messages/vi/viz-network.json";
 import viOcean from "../messages/vi/viz-ocean.json";
 import viPhysics from "../messages/vi/viz-physics.json";
+import viPhysiology from "../messages/vi/viz-physiology.json";
 import viPlanetary from "../messages/vi/viz-planetary.json";
 import viPlant from "../messages/vi/viz-plant.json";
 import viSystematics from "../messages/vi/viz-systematics.json";
+import viTaphonomy from "../messages/vi/viz-taphonomy.json";
 import viTime from "../messages/vi/viz-time.json";
 import viWrappers from "../messages/vi/viz-wrappers.json";
+import viXenobotany from "../messages/vi/viz-xenobotany.json";
 
 type Json = Record<string, unknown>;
 
@@ -126,6 +132,9 @@ const EN_PARTS = [
   enMycorrhiza,
   enBiogeochem,
   enMaterials,
+  enTaphonomy,
+  enXenobotany,
+  enPhysiology,
 ] as const;
 
 const VI_PARTS = [
@@ -163,6 +172,9 @@ const VI_PARTS = [
   viMycorrhiza,
   viBiogeochem,
   viMaterials,
+  viTaphonomy,
+  viXenobotany,
+  viPhysiology,
 ] as const;
 
 const MESSAGES: Record<Locale, Json> = {

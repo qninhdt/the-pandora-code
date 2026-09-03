@@ -1,0 +1,28 @@
+id: palynology
+label:
+  vi: Cổ phấn hoa học (palynology)
+  en: Palynology
+definition:
+  vi: >-
+    Việc nghiên cứu bào tử và hạt phấn, kể cả những mẫu hóa thạch. Nghe như một ngành hẹp, thực ra nó là xương sống của
+    địa tầng học trên cạn, và lý do rất đơn giản: lớp vỏ sporopollenin trơ đến mức bào tử cùng phấn hoa trở thành loại
+    hóa thạch thực vật dồi dào nhất và liên tục nhất trong đá. Một cái cây rất khó hóa thạch; phấn của nó thì rơi xuống
+    khắp nơi mỗi năm, hàng triệu hạt. Nhờ vậy có thể lần theo sự thay đổi thảm thực vật và khí hậu qua từng tầng đá, ngay
+    tại những nơi không còn một thân cây nào sót lại.
+  en: >-
+    The study of spores and pollen, including fossil ones. It sounds like a narrow speciality and is in fact the backbone
+    of terrestrial stratigraphy, for a simple reason: the sporopollenin wall is so inert that spores and pollen are the
+    most abundant and most continuous plant fossils in rock. A tree is hard to fossilise; its pollen falls everywhere,
+    every year, in millions of grains. That makes it possible to track vegetation and climate change layer by layer,
+    even where not one trunk survives.
+see_also:
+  - sporopollenin
+  - parataxonomy
+  - stomatal-index
+category: concept
+tags:
+  - geology
+  - ecology
+cover_prompt: >-
+  A painterly naturalist plate of many sculpted microscopic pollen grains of varied shapes suspended above thin banded rock
+  layers, a few of the same grains embedded within the bands, cool teal and amber palette, no text, no labels, no numbers.

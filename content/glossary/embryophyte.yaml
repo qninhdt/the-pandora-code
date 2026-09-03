@@ -1,0 +1,31 @@
+id: embryophyte
+label:
+  vi: Thực vật có phôi (embryophyte)
+  en: Embryophyte
+definition:
+  vi: >-
+    Thuật ngữ chính xác cho "thực vật trên cạn" — toàn bộ nhóm gồm rêu, rêu tản, rêu sừng, thạch tùng,
+    dương xỉ, thực vật hạt trần và thực vật có hoa. Tên gọi lấy từ đặc điểm chẩn đoán: hợp tử được giữ
+    lại và nuôi dưỡng bên trong cơ thể mẹ thành một phôi đa bào, thay vì bị thả ra ngoài. Chi tiết ấy
+    nghe nhỏ mà không nhỏ: giữ hợp tử lại chính là bước dẫn tới cả thế hệ sinh bào tử và cuối cùng là
+    hạt. Cần thuật ngữ này vì "thực vật" trong lời nói thường ngày quá lỏng — nó thường bị dùng cho cả
+    những sinh vật quang hợp chẳng phải họ hàng gì.
+  en: >-
+    The precise term for "land plant" — the whole group comprising mosses, liverworts, hornworts,
+    clubmosses, ferns, gymnosperms and flowering plants. The name comes from the diagnostic feature:
+    the zygote is retained and nourished inside the parent body as a multicellular embryo rather than
+    released. That detail sounds small and is not: retaining the zygote is the step that leads to the
+    spore-making generation and eventually to the seed. The term is needed because "plant" in ordinary
+    speech is far looser, and is often applied to photosynthetic organisms that are no relation at all.
+see_also:
+  - streptophyte-algae
+  - terrestrialization
+  - alternation-of-generations
+category: bio
+tags:
+  - evolution
+  - physiology
+cover_prompt: >-
+  A painterly naturalist plate showing a small parent plant body cradling a developing multicellular
+  embryo within its tissue, shown in cutaway, surrounding foliage soft and dark, cool teal and indigo
+  palette, no text, no labels, no numbers.

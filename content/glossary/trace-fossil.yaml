@@ -1,0 +1,16 @@
+id: trace-fossil
+label:
+  vi: Hóa thạch dấu vết (trace fossil)
+  en: Trace fossil
+definition:
+  vi: 'Dấu vết mà một sinh vật để lại trong trầm tích thay vì chính cơ thể nó: vết chân, đường bò, hang trú, lỗ khoan, phân hóa đá, vết cắn, tổ. Chúng có ba lợi thế mà hóa thạch cơ thể không có - gần như không bao giờ bị dòng nước mang khỏi chỗ hình thành, chúng vẫn tồn tại trong môi trường năng lượng cao nơi khoáng chất xương bị hòa tan, và chúng ghi lại *hành vi*: cách di chuyển, tốc độ, sinh hoạt tập thể. Không bộ xương nào nói được những điều đó.'
+  en: 'A mark an organism left in sediment rather than the organism itself: footprints, trails, dwelling burrows, borings, fossilised dung, bite marks, nests. They carry three advantages body fossils do not - they are almost never transported away from where they formed, they survive in high-energy settings where bone mineral dissolves, and they record *behaviour*: gait, speed, social life. No skeleton can tell you any of that.'
+see_also:
+  - ichnology
+  - taphonomy
+  - konservat-lagerstatte
+category: concept
+tags:
+- geology
+- ecology
+cover_prompt: A painted slab of pale rippled mudstone bearing a clear trackway of six-toed footprints crossing it diagonally, with a winding burrow trace and a small rounded dung fossil nearby, cool stone-grey and teal shadows, painterly, no text, no labels.

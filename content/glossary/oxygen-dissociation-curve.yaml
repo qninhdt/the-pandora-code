@@ -1,0 +1,16 @@
+id: oxygen-dissociation-curve
+label:
+  vi: Đường cong phân ly oxy
+  en: Oxygen dissociation curve
+definition:
+  vi: "Đồ thị cho biết một sắc tố hô hấp bão hòa đến đâu ở mỗi mức áp suất oxy quanh nó, và nó có hình chữ S chứ không phải đường thẳng. Nguyên nhân là các tiểu đơn vị của phân tử 'nói chuyện' với nhau: phân tử oxy đầu tiên gắn vào làm phân tử thứ hai dễ gắn hơn. Hệ quả là một đoạn giữa rất dốc - đúng khoảng áp suất phân cách phổi với cơ đang làm việc - nên độ bão hòa lao từ gần đầy xuống gần cạn chỉ trong khoảng hẹp ấy. Toàn bộ đường cong có thể trượt sang phải hoặc trái, và đó là cách sinh học điều chỉnh việc trao oxy."
+  en: "The plot of how saturated a respiratory pigment is at each oxygen pressure around it, and it is S-shaped rather than a straight line. The reason is that the molecule's subunits talk to each other: the first oxygen to bind makes the next one easier. The consequence is a very steep middle section - falling exactly across the pressure range that separates a lung from a working muscle - so saturation swings from nearly full to nearly empty within that narrow band. The whole curve can slide left or right, and that sliding is how biology tunes the handover."
+see_also:
+  - bohr-effect
+  - myoglobin
+  - partial-pressure
+category: concept
+tags:
+  - physiology
+  - chemistry
+cover_prompt: A painted diagram of a single smooth glowing S-shaped ribbon rising from lower left to upper right against deep indigo, its steep middle section brightest, faint cyan haze behind it, painterly and atmospheric, no text, no labels, no numbers, no axes.

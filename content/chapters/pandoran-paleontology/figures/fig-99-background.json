@@ -1,0 +1,31 @@
+{
+  "id": "fig-99-background",
+  "chapter_slug": "pandoran-paleontology",
+  "role": "hero",
+  "narrative_purpose": "The full-bleed atmospheric mood layer the chapter's text floats over: a vast dim expanse of layered strata and ash plain seen from great height, evoking a planet's stacked record without any focal subject, so long-form text stays readable on top.",
+  "subject": "An immense dim landscape seen from very high above: a wide barren plain of grey ash and dark basalt crossed by shallow eroded channels, its far edge breaking into enormous stepped cliffs whose exposed horizontal rock layers recede in faint parallel bands for many kilometres, everything dissolving into deep atmospheric haze toward the horizon; no single creature, structure or focal point, only the suggestion of endless stratification under a dark smoke-dulled sky.",
+  "scene": "A planetary-scale vista at deep dusk, very low contrast, all detail swallowed by distance and haze.",
+  "camera": "An ultra-wide, very high vantage panoramic view looking down and out across the layered plain and receding cliffs, no foreground subject.",
+  "light": "Dim, diffuse, sourceless dusk light with the faintest ember-amber smear at the far horizon where distant vents glow; deep indigo and cold grey elsewhere, very low contrast, no bright focal source; mood not subject.",
+  "palette": "Predominantly dark void-indigo and cold ash-grey, the faintest cool teal in the haze and a barely-there amber at the horizon line, kept dark throughout for overlaid text.",
+  "style": "Painterly atmospheric matte vista, hand-painted, soft and immersive - a mood backdrop, not a figure to study.",
+  "detail_level": "Deliberately low and dissolving; the layer bands only hinted, most of the frame dim haze so text reads cleanly over it.",
+  "composition": "Ultra-wide expanse, the plain across the lower frame and receding layered cliffs through the middle, vast dark sky above, everything low-contrast with no bright focal subject.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "bright focal subject",
+    "sharp foreground creature",
+    "arrows",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Same dark, hazy, low-contrast Pandora-establishing mood as the other chapter backgrounds; very dark so overlaid long-form text stays readable. The stratification motif echoes the chapter's theme without becoming a figure.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no labels, no bright focal subject, no sharp foreground, no arrows, no photographic or 3D-render look, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

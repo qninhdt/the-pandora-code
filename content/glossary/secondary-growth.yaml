@@ -1,0 +1,31 @@
+id: secondary-growth
+label:
+  vi: Sinh trưởng thứ cấp
+  en: Secondary growth
+definition:
+  vi: >-
+    Việc thân dày lên theo thời gian, chứ không chỉ dài ra. Ở thực vật có tầng phát sinh mạch, một lớp
+    tế bào phân chia hình trụ liên tục thêm gỗ vào phía trong và vỏ vào phía ngoài, năm này qua năm khác
+    — đó là điều làm nên một thân cây gỗ và những vòng năm của nó. Điểm quan trọng cho việc phân loại:
+    không phải cây cao nào cũng làm theo cách này. Thạch tùng khổng lồ kỷ Carbon cao bốn chục mét với
+    chưa tới một phần mười đường kính là gỗ, chống đỡ chủ yếu bằng lớp vỏ dày; còn cây cọ hoàn toàn không
+    có tầng phát sinh mạch. Cùng một dáng cây, những cơ chế không hề liên quan.
+  en: >-
+    A stem thickening over time rather than only lengthening. In plants with a vascular cambium, a
+    cylindrical layer of dividing cells adds wood inward and bark outward, year after year — that is
+    what makes a woody trunk and its growth rings. The point that matters for classification: not every
+    tall plant does it this way. The giant clubmosses of the Carboniferous reached forty metres with
+    under a tenth of their diameter in wood, supported mostly by thick bark, and palms have no vascular
+    cambium at all. Same tree shape, unrelated mechanisms.
+see_also:
+  - vascular-cambium
+  - lignin
+  - tracheid
+category: bio
+tags:
+  - physiology
+  - evolution
+cover_prompt: >-
+  A painterly naturalist cutaway of a thick woody stem showing concentric growth rings inside and a
+  layered bark exterior, beside a second slender stem with no rings and scattered strands in soft
+  tissue, cool teal and amber palette, no text, no labels, no numbers.

@@ -1,0 +1,137 @@
+{
+  "viz": {
+    "arborescenceHabit": {
+      "title": "Three ways to be three hundred metres tall",
+      "subtitle": "Sort the trunks by how they look, then by what holds them up",
+      "modeLabel": "Sorting rule",
+      "mode": {
+        "silhouette": "By silhouette",
+        "construction": "By construction"
+      },
+      "aria": {
+        "silhouette": "Six trunk cross-sections queued by height, constructions interleaved",
+        "construction": "Six trunk cross-sections in three groups, each pairing a Pandoran and an Earth stem built the same way"
+      },
+      "world": {
+        "pandora": "Pandora",
+        "earth": "Earth"
+      },
+      "taxon": {
+        "kelutral": "Hometree",
+        "banyan": "Banyan fig",
+        "saltarus": "Beanstalk palm",
+        "lepidodendron": "Scale tree",
+        "obesus": "Puffball tree",
+        "cactus": "Saguaro"
+      },
+      "readout": {
+        "piles": "Groups",
+        "pilesNote": {
+          "silhouette": "one pile, tallest first",
+          "construction": "one per way of standing up"
+        },
+        "spread": "Wood spread",
+        "spreadValue": "{pct} pts",
+        "spreadNote": "widest gap inside a group",
+        "tells": "What it reveals",
+        "kinship": "Construction",
+        "habitat": "Nothing",
+        "tellsNote": {
+          "silhouette": "height is not inherited",
+          "construction": "still not ancestry"
+        }
+      },
+      "hint": {
+        "silhouette": "Sorted this way, the widest gap in load-bearing wood inside the single pile is enormous — a stem that is almost a quarter wood sits beside one that is a twentieth. A pile that mixes those is not a family.",
+        "construction": "Now each group holds one Pandoran stem and the Earth lineage that reached tree height the same way. That pairing is the giveaway: no shared ancestor spans the two worlds, so the resemblance was arrived at twice."
+      },
+      "verdict": {
+        "silhouette": "By outline, all six are trees and the sort tells you nothing. Height is a response to competition for light, and anything with a growth habit and enough time can reach for it.",
+        "construction": "Split by mechanism, the flora separates cleanly — a hollow crown of fused prop-stems, a slender core inside a fibrous sheath, a soft stem propped by gas cavities. Each Pandoran solution has an Earth twin that is not remotely its relative, which is exactly what convergence looks like."
+      }
+    },
+    "pitcherConvergence": {
+      "title": "What a pitcher actually tells you",
+      "subtitle": "Leach the soil and watch which vessels start paying for themselves",
+      "aria": "Four urn-forming plants above a substrate, their basins filling as the soil is impoverished",
+      "taxon": {
+        "rosea": "Chalice plant",
+        "simplex": "Leaf pitcher",
+        "equina": "Direhorse pitcher",
+        "panopyra": "Panopyra"
+      },
+      "harvest": {
+        "prey": "digesting prey",
+        "debris": "collecting debris",
+        "pollinator": "feeding a pollinator",
+        "none": "trap idle"
+      },
+      "soil": {
+        "nitrogen": "Bioavailable nitrogen",
+        "phosphorus": "Bioavailable phosphorus",
+        "percent": "{pct}% of need"
+      },
+      "readout": {
+        "percent": "{pct}%",
+        "soilSignal": "Soil signal",
+        "soilSignalNote": "how well the urn predicts poor ground",
+        "origins": "Separate origins",
+        "originsNote": "of the urn, on this bench alone",
+        "kinshipSignal": "Kinship signal",
+        "kinshipSignalNote": "unmoved by the soil, and low"
+      },
+      "hint": "Drag both nutrients down and every trap lights up: on leached ground, catching an animal costs less than growing more root. Drag them up and the traps go quiet without changing whose relative anything is. The soil reading moves; the ancestry reading does not.",
+      "verdict": {
+        "leached": "This is the condition that keeps inventing the pitcher — on Earth, ten to twelve times over, in families that are not close kin. The Direhorse pitcher is the tell: it keeps the identical vessel with the digestion switched off, its basin converted to a nectar well, exactly as Nepenthes lowii on Earth abandoned carnivory to become a tree-shrew feeding station. And Panopyra reaches the same urn from the canopy, with no soil beneath it at all.",
+        "rich": "On decent ground the trap is a liability — carbon spent on an organ the roots have made redundant. Which is why carnivory on Earth is found almost only on bog, sand and leached tropical soil, and why the organ is repeatedly lost when the ground improves."
+      }
+    },
+    "reticulateFlora": {
+      "title": "The tree that will not stay a tree",
+      "subtitle": "Add the sideways channels and count the loops",
+      "layerLabel": "Which edges to draw",
+      "layer": {
+        "tree": "Descent only",
+        "network": "Add lateral channels"
+      },
+      "aria": {
+        "tree": "A branching diagram of proposed Pandoran plant groups, descent edges only",
+        "network": "The same diagram with lateral channels added, forming closed loops"
+      },
+      "clade": {
+        "stem": "basal phototroph",
+        "protoZooplantae": "zooplantae grade",
+        "paleoPterido": "free-sporing pioneers",
+        "vascularStem": "vascular stock",
+        "dendroNeuro": "networked giants",
+        "tensiloSperm": "tensile monopodials",
+        "sarcocaulo": "pachycauls",
+        "thalasso": "marine returns"
+      },
+      "edge": {
+        "rootGraft": "root graft (canon)",
+        "hyphalConduit": "fungal conduit (canon)",
+        "plastidCapture": "plastid capture (inferred)",
+        "geneTransfer": "gene transfer (inferred)"
+      },
+      "readout": {
+        "descent": "Descent edges",
+        "descentNote": "parent to daughter",
+        "lateral": "Lateral edges",
+        "lateralNote": "branch to branch",
+        "shape": "Shape",
+        "tree": "A tree",
+        "network": "A network",
+        "shapeNote": "{cycles} closed loops"
+      },
+      "hint": {
+        "tree": "Descent alone gives a clean tree: every group has exactly one parent, and a tree on this many nodes has exactly one fewer edge than it has nodes. No loops.",
+        "network": "Two of these channels are canon — Unidelta piping its own defensive compounds into a neighbour's roots, and the giant fungus threading root cortices. Two are the ordinary genomic traffic Earth plants show. Either way, once an edge joins two branches the diagram closes a loop, and a shape with a loop in it is not a tree."
+      },
+      "verdict": {
+        "tree": "Drawn this way the flora looks like an animal phylogeny: forks all the way down, each lineage descending from exactly one ancestor. Plants on Earth almost never behave like this.",
+        "network": "Now the picture is honest. Roughly seven in ten living flowering-plant species carry a whole-genome duplication in their ancestry; Spartina anglica appeared as a new species around 1890 by hybridising two others; Amborella took five foreign mitochondrial genomes from mosses and algae; ferns picked up a light receptor from hornworts. Pandora simply adds a planet-wide root network to the same list — and a botanical family history has to be drawn as a web."
+      }
+    }
+  }
+}

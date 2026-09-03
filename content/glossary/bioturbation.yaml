@@ -1,0 +1,16 @@
+id: bioturbation
+label:
+  vi: Xáo trộn sinh học (bioturbation)
+  en: Bioturbation
+definition:
+  vi: 'Việc sinh vật sống đào, khoan, đẩy và trộn trầm tích - rễ cây, giun, động vật đào hang - làm nhòe hoặc xóa hẳn sự phân lớp mà trầm tích vừa hình thành. Trong đất rừng nhiệt đới, xáo trộn sinh học chạy liên tục và mạnh đến mức không chỉ đập vỡ xương giòn mà còn phá luôn trình tự trước-sau: ngay cả cái trật tự tình cờ của việc ai bị vùi trước ai cũng bị đảo lộn. Một cách trớ trêu, chính hoạt động sống là thứ xóa hồ sơ của sự sống.'
+  en: 'Living things digging, boring, pushing and mixing sediment - roots, worms, burrowing animals - blurring or erasing the layering the sediment had just acquired. In tropical forest soil, bioturbation runs continuously and hard enough not only to break up brittle bone but to destroy sequence itself: even the accidental order of who was buried before whom gets scrambled. Ironically, it is biological activity that erases the record of biology.'
+see_also:
+  - taphonomy
+  - laterite
+  - time-averaging
+category: concept
+tags:
+- ecology
+- geology
+cover_prompt: A painted cutaway of dark forest soil densely threaded with pale root hairs and winding burrow tunnels, the once-flat sediment layers visibly warped and mixed by them, cool indigo and rust-red earth, faint teal root glow, painterly, no text, no labels.

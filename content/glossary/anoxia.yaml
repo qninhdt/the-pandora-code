@@ -1,0 +1,16 @@
+id: anoxia
+label:
+  vi: Thiếu oxy (anoxia)
+  en: Anoxia
+definition:
+  vi: 'Tình trạng nước hoặc trầm tích hầu như không còn oxy hòa tan. Với sinh vật đang sống thì đó là án tử; với một cái xác thì lại là cơ may duy nhất. Không có oxy, vi khuẩn hiếu khí không thể vận hành và động vật ăn xác không thể sống ở đó, nên hai lực phá hủy mạnh nhất bị tắt cùng lúc. Gần như mọi mỏ hóa thạch bảo tồn mô mềm ngoại hạng trên Trái Đất đều hình thành dưới lớp nước đáy thiếu oxy - đầm nước mặn tù, hồ phân tầng nhiệt, bồn trũng sâu kín.'
+  en: 'The condition of water or sediment holding essentially no dissolved oxygen. For a living organism it is a death sentence; for a corpse it is the one real chance. Without oxygen, aerobic bacteria cannot operate and scavenging animals cannot live there, so the two most destructive forces switch off together. Nearly every Earth deposit preserving exceptional soft tissue formed under oxygen-starved bottom water - stagnant hypersaline lagoons, thermally stratified lakes, enclosed deep basins.'
+see_also:
+  - euxinia
+  - konservat-lagerstatte
+  - pyritization
+category: concept
+tags:
+- chemistry
+- oceanography
+cover_prompt: A painted underwater cross-section showing a sharp boundary between clear upper water full of small swimming shapes and a still dark lower layer entirely empty of life, one carcass resting undisturbed on the dark floor, cool indigo and teal, painterly, no text, no labels.

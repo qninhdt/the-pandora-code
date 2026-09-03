@@ -1,0 +1,230 @@
+{
+  "viz": {
+    "taphonomicGauntlet": {
+      "title": "Năm cửa ải giữa một cơ thể và một hóa thạch",
+      "subtitle": "Hóa thạch hóa không phải một biến cố khó xảy ra. Nó là năm biến cố nhân vào nhau — và cùng một con vật ấy, xác suất chênh nhau tới bốn bậc độ lớn chỉ vì nó chết ở đâu.",
+      "controls": {
+        "setting": "Nơi con vật chết"
+      },
+      "aria": {
+        "chart": "Tỷ lệ vượt qua của năm cửa ải bảo tồn trong môi trường đang chọn"
+      },
+      "axis": {
+        "pass": "Tỷ lệ vượt qua mỗi cửa ải"
+      },
+      "setting": {
+        "forestFloor": "Nền rừng",
+        "uplandLedge": "Vách núi cao",
+        "sulfidicLagoon": "Đầm nước sulfide",
+        "ashFall": "Mưa tro"
+      },
+      "gate": {
+        "tissue": "Mô đủ bền",
+        "burial": "Bị vùi nhanh",
+        "diagenesis": "Sống sót hóa học",
+        "strata": "Đá còn nguyên",
+        "discovery": "Có người tìm ra"
+      },
+      "hint": {
+        "forestFloor": "Đây chính là kiểu sinh cảnh làm nên tên tuổi Pandora, và nó là kiểu tệ nhất. Không gì được vùi lấp kịp — riêng cửa ải vùi lấp đã loại 996 trong mỗi 1.000 cơ thể, phần còn lại thì nước lỗ rỗng chua kết liễu.",
+        "uplandLedge": "Một thềm núi còn tệ hơn. Chẳng có trầm tích nào đến để vùi lấp, mà chút đá ít ỏi hình thành ở đó lại là thứ bị bóc mòn trước tiên.",
+        "sulfidicLagoon": "Giờ thì mọi con số đảo chiều. Nước tầng đáy yếm khí giữ đám ăn xác thối ở ngoài, và lớp bùn giàu sulfide thay thế mô mềm chứ không phá hủy nó.",
+        "ashFall": "Tro núi lửa xóa sổ cái nút thắt ấy. Một mét tephra vùi cả một cộng đồng đang sống ngay tại chỗ, trong vài giờ, rồi niêm kín nó khỏi không khí."
+      },
+      "verdict": {
+        "forestFloor": "Coi như không có hồ sơ",
+        "uplandLedge": "Coi như không có hồ sơ",
+        "sulfidicLagoon": "Một kho lưu trữ thật sự",
+        "ashFall": "Một kho lưu trữ ngoại hạng"
+      },
+      "bottleneckNote": {
+        "tissue": "Ngay từ đầu, trong cơ thể chẳng có gì đủ bền.",
+        "burial": "Cơ thể tan biến trước khi trầm tích kịp phủ lên — kẻ sát nhân thường gặp.",
+        "diagenesis": "Bị vùi, rồi bị chính nước trong trầm tích hòa tan.",
+        "strata": "Hóa thạch xong, rồi bị xóa cùng khối đá từng chứa nó.",
+        "discovery": "Vẫn nằm dưới đất, và chưa ai xẻ ngọn đồi ấy ra."
+      },
+      "readout": {
+        "overall": "Xác suất thành hóa thạch",
+        "bottleneck": "Cửa ải hẹp nhất"
+      },
+      "units": "Các thanh là tỷ lệ vượt từng cửa ải, thang logarit. Giá trị là bậc độ lớn minh họa rút từ cổ sinh vật học Trái Đất, không phải số đo trên Pandora."
+    },
+
+    "pyriteWindow": {
+      "title": "Cửa sổ đúc mô mềm thành khoáng vật",
+      "subtitle": "Pyrit có thể thay thế một bó cơ ở độ phân giải tế bào chỉ trong vài ngày — nhưng chỉ trong một cửa sổ hóa học rất hẹp. Khí quyển Pandora giữ cửa sổ ấy luôn mở.",
+      "controls": {
+        "preset": "Thế giới",
+        "sulfide": "Sulfide hòa tan",
+        "iron": "Sắt hoạt động",
+        "carbon": "Carbon hữu cơ nền"
+      },
+      "preset": {
+        "earth": "Bồn trũng Trái Đất",
+        "pandora": "Bồn trũng Pandora"
+      },
+      "axis": {
+        "sulfide": "Sulfide hòa tan quanh xác",
+        "iron": "Sắt hoạt động trong bùn"
+      },
+      "aria": {
+        "barren": "Bản đồ hóa học với xác nằm ngoài cửa sổ pyrit hóa, quá ít sulfide",
+        "ironStarved": "Bản đồ hóa học với xác thiếu sắt hoạt động",
+        "carbonPoisoned": "Bản đồ hóa học với cửa sổ pyrit hóa bị carbon hữu cơ dư thừa đóng lại",
+        "pyriteWindow": "Bản đồ hóa học với xác nằm trong cửa sổ pyrit hóa"
+      },
+      "regime": {
+        "barren": "Không hình thành gì",
+        "ironStarved": "Cạn sắt",
+        "carbonPoisoned": "Ngộ độc carbon",
+        "pyriteWindow": "Mô mềm được thay thế"
+      },
+      "regimeNote": {
+        "barren": "Quá ít lưu huỳnh khử để kết tủa bất kỳ sulfide sắt nào.",
+        "ironStarved": "Sulfide thì thừa, nhưng chẳng có sắt để nó gắn vào.",
+        "carbonPoisoned": "Quá nhiều chất hữu cơ, nên sắt bị tiêu thụ ở khắp nơi trừ trên cơ thể.",
+        "pyriteWindow": "Pyrit vàng đồng mọc ngay trên mô, trước khi phân hủy kịp hoàn tất."
+      },
+      "resolution": {
+        "none": "Không ghi được giải phẫu",
+        "outline": "Chỉ còn đường viền cơ thể",
+        "organs": "Lần được nội quan và ruột",
+        "cellular": "Sợi mảnh ở cấp tế bào"
+      },
+      "limiting": {
+        "sulfide": "Nguồn sulfide",
+        "iron": "Nguồn sắt",
+        "carbon": "Carbon cạnh tranh",
+        "none": "Không gì — cả ba đã cân"
+      },
+      "hint": {
+        "earth": "Trên Trái Đất, sulfide phải được chế tạo ngay tại chỗ, bởi vi khuẩn ăn cái xác. Việc đó cần thời gian mà cái xác không có, nên hóa thạch pyrit hiếm đến mức từng cái đều có tên riêng.",
+        "pandora": "Pandora bỏ qua bước vi khuẩn. Với hơn một phần trăm hydro sulfide trong khí quyển, mưa và nước tù đã nạp sẵn sulfide, và giới hạn chuyển từ sulfide sang sắt.",
+        "barren": "Dưới khoảng ba mươi trên thang sulfide thì chẳng gì kết tủa, dù có bao nhiêu sắt đang chờ.",
+        "ironStarved": "Sulfide mà không có sắt thì bay đi vô hại. Khoáng vật cần đủ cả hai nửa.",
+        "carbonPoisoned": "Kiểu thất bại phản trực giác: bùn xung quanh quá giàu carbon hữu cơ thì sắt không bao giờ tới được cơ thể. Hóa thạch pyrit ngoại hạng đến từ những lớp nghèo carbon."
+      },
+      "readout": {
+        "regime": "Kết cục",
+        "fidelity": "Độ trung thực",
+        "limiting": "Bị giới hạn bởi"
+      },
+      "units": "Các núm là chế độ nồng độ không đơn vị 0–100, không phải nồng độ mol. Các ngưỡng tái lập quan hệ đo được trong các mỏ pyrit trên Trái Đất."
+    },
+
+    "lastAppearance": {
+      "title": "Vì sao hóa thạch cuối cùng chưa bao giờ là con vật cuối cùng",
+      "subtitle": "Cả năm đơn vị phân loại đều tuyệt chủng cùng một khoảnh khắc. Lần xuất hiện cuối được quan sát thì không — và chúng lệch nhau bao nhiêu chỉ phụ thuộc vào việc mỗi loài xuất hiện thường xuyên đến đâu.",
+      "controls": {
+        "effort": "Nỗ lực lấy mẫu",
+        "confidence": "Độ tin cậy"
+      },
+      "confidence": {
+        "c90": "90%",
+        "c95": "95%",
+        "c99": "99%"
+      },
+      "aria": {
+        "chart": "Mặt cắt địa tầng thể hiện các tầng tìm thấy, lần xuất hiện cuối được quan sát và khoảng tin cậy cho năm đơn vị phân loại"
+      },
+      "taxon": {
+        "microspore": "Bào tử nhỏ",
+        "reefBuilder": "Loài tạo rạn",
+        "grazingHerd": "Loài gặm cỏ",
+        "apexHunter": "Kẻ săn đầu bảng",
+        "canopyFlyer": "Loài bay tán rừng"
+      },
+      "marker": {
+        "truth": "Tuyệt chủng thật",
+        "absent": "chưa từng tìm thấy"
+      },
+      "axis": {
+        "section": "Lên theo mặt cắt"
+      },
+      "hint": {
+        "sparse": "Đây chính là hiệu ứng Signor–Lipps. Một biến cố đột ngột giờ trông như một cuộc suy tàn so le, và các loài hiếm nhất trông như biến mất trước tiên — thuần túy chỉ vì chúng hiếm.",
+        "dense": "Với mức lấy mẫu này, khoảng tin cậy của mọi loài đều chạm tới tầng thật, và cuộc tuyệt chủng đọc ra đúng bản chất của nó: đồng thời."
+      },
+      "readout": {
+        "decline": "Suy tàn biểu kiến",
+        "declineNote": "Độ lệch dọc của các lần xuất hiện cuối — toàn bộ đều là ảo giả",
+        "covered": "Khoảng chạm tới sự thật",
+        "coveredNote": "Số khoảng tin cậy có chứa tầng thật",
+        "rarest": "Khoảng của loài hiếm nhất",
+        "rarestNote": "Phần nới thêm Strauss–Sadler trên tầng tìm thấy cao nhất",
+        "unbounded": "vô hạn"
+      },
+      "units": "Chiều cao mặt cắt tính theo đơn vị quy ước, 0 ở đáy đến 100 tại tầng tuyệt chủng thật. Khoảng là ước lượng Strauss–Sadler cổ điển α = R[(1−C)^(−1/(n−1))−1]."
+    },
+
+    "archiveBlindspot": {
+      "title": "Hai kho lưu trữ, hai điểm mù",
+      "subtitle": "Pandora lưu giữ quá khứ của mình hai lần. Kho nào trả lời được bạn thì hoàn toàn phụ thuộc vào câu bạn hỏi.",
+      "controls": {
+        "question": "Hỏi quá khứ"
+      },
+      "questionShort": {
+        "grandmotherSong": "Một bài hát",
+        "lastHunt": "Mùa vừa rồi",
+        "anoxicEvent": "Một đại dương chết",
+        "stemAncestor": "Tổ tiên đầu tiên"
+      },
+      "hint": {
+        "grandmotherSong": "Với một câu hỏi về điều ai đó đã sống qua, mạng lưới không chỉ hơn đá — đá thậm chí không có cách nào giữ nổi câu hỏi ấy.",
+        "lastHunt": "Mới đây, có người chứng kiến, đã được kể lại. Trầm tích chưa kịp trở thành bằng chứng của bất cứ điều gì.",
+        "anoxicEvent": "Giờ thì thế bất đối xứng đảo ngược. Một đại dương mất oxy trước khi có ai đó để ý thì chẳng để lại ký ức nào, mà để lại rất nhiều đá.",
+        "stemAncestor": "Câu khó nhất trong danh sách, và cũng là câu quyết định cả chương: nó nói về một con vật tồn tại trước cả mạng lưới, nên chỉ đá mới từng có thể biết đến nó."
+      },
+      "question": {
+        "grandmotherSong": "Cụ ngoại của bà tôi đã hát khúc này thế nào — nhịp ngân, những từ bà chọn, những chỗ bà ngưng lại?",
+        "lastHunt": "Ba mùa trước, chuyến đi săn ấy đã diễn ra thế nào, và ai có mặt ở đó?",
+        "anoxicEvent": "Bốn mươi triệu năm trước, đại dương Pandora có mất oxy không, và kéo dài bao lâu?",
+        "stemAncestor": "Con vật sống trước khi bất cứ sinh vật nào có sợi kuru trông ra sao?"
+      },
+      "archive": {
+        "neural": "Mạng lưới Eywa",
+        "songcord": "Dây hát và lời kể",
+        "rock": "Hồ sơ đá"
+      },
+      "archiveNote": {
+        "neural": "Trải nghiệm, phát lại mà vẫn còn nguyên chất liệu.",
+        "songcord": "Những gì một thị tộc chọn kể đi kể lại.",
+        "rock": "Những gì đã xảy ra, dù có ai chứng kiến hay không."
+      },
+      "verdict": {
+        "answers": "Trả lời được",
+        "partial": "Một phần",
+        "blind": "Mù"
+      },
+      "reason": {
+        "grandmotherSong": {
+          "neural": "Theo nguyên tác, mạng lưới lưu giữ trải nghiệm của người đã mất, truy xuất được qua sợi kuru. Đây đúng là việc nó sinh ra để làm.",
+          "songcord": "Dây hát ghim lại các biến cố và trình tự của chúng, nhưng một nút thắt không giữ nổi một nhịp ngân.",
+          "rock": "Chẳng lớp trầm tích nào trên đời ghi lại một lần trình diễn. Câu hỏi không có gì để bám vào."
+        },
+        "lastHunt": {
+          "neural": "Mới đây, có người chứng kiến, và nằm trong tầm với của mạng lưới.",
+          "songcord": "Ký ức sống và lời kể lại làm được điều này mà chẳng cần cơ chế đặc biệt nào.",
+          "rock": "Ba mùa trầm tích là một màng bùn mỏng. Chưa gì kịp trở thành bằng chứng."
+        },
+        "anoxicEvent": {
+          "neural": "Chẳng có ai ở đó để trải nghiệm nó, và một mạng lưới thì không nhớ nổi hóa học của một đại dương.",
+          "songcord": "Bốn mươi triệu năm nằm ngoài xa bất cứ điều gì một thị tộc còn đang kể.",
+          "rock": "Đá phiến đen, khoáng vật sulfide và một dịch chuyển đồng vị carbon ghi lại nó, dù có ai để ý hay không."
+        },
+        "stemAncestor": {
+          "neural": "Con vật ấy có trước sợi kuru, nên nó chưa từng được nối vào để được nhớ.",
+          "songcord": "Không dòng kể nào vươn xa được đến đó.",
+          "rock": "Chỉ đá mới giữ nổi nó — và tìm ra nó nghĩa là tìm đúng bồn trũng, việc chưa ai từng làm."
+        }
+      },
+      "readout": {
+        "trust": "Hãy hỏi kho này",
+        "none": "Không kho nào",
+        "blind": "Mù về bản chất",
+        "blindNote": "Số kho không thể trả lời câu này, kể cả về nguyên tắc"
+      }
+    }
+  }
+}

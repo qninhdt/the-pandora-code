@@ -1,0 +1,31 @@
+id: streptophyte-algae
+label:
+  vi: Tảo streptophyte
+  en: Streptophyte algae
+definition:
+  vi: >-
+    Nhóm tảo lục nước ngọt là họ hàng gần nhất còn sống của mọi thực vật trên cạn. Đây là một trong
+    những điều chỉnh quan trọng nhất của thực vật học hiện đại: thực vật cạn không tiến ra từ rong biển
+    hay tảo bẹ ngoài đại dương, mà từ những sinh vật khiêm nhường sống ở rìa các vũng nước ngọt. Việc
+    giải trình tự hàng nghìn hệ gene thực vật cho thấy nhóm chị em gần nhất là Zygnematophyceae — thứ
+    tảo tiếp hợp bạn tìm thấy trong lớp bọt xanh trên mặt ao — và hệ gene của chúng đã mang sẵn phần
+    lớn bộ công cụ cho đời sống trên cạn trước khi có ai lên bờ.
+  en: >-
+    The freshwater green algae that are the closest living relatives of every land plant. This is one
+    of modern botany's most important corrections: land plants did not emerge from marine seaweed or
+    kelp, but from modest organisms living at the margins of fresh water. Sequencing a thousand plant
+    genomes identified the nearest sister group as the Zygnematophyceae — the conjugating algae you
+    find in pond scum — and their genomes already carried much of the toolkit for terrestrial life
+    before anything came ashore.
+see_also:
+  - terrestrialization
+  - embryophyte
+  - plastid
+category: bio
+tags:
+  - evolution
+  - ecology
+cover_prompt: >-
+  A painterly naturalist plate of fine filamentous green algae drifting in a shallow sunlit pond
+  margin, the water edge drying to mud at one side, a few filaments stranded on the wet ground, cool
+  teal and cyan palette with faint amber light, no text, no labels, no numbers.

@@ -1,0 +1,34 @@
+id: alternation-of-generations
+label:
+  vi: Xen kẽ thế hệ
+  en: Alternation of generations
+definition:
+  vi: >-
+    Vòng đời của mọi thực vật trên cạn: nó luân phiên giữa hai cơ thể đa bào khác nhau — một thể giao
+    tử đơn bội tạo trứng và tinh trùng, một thể bào tử nhị bội tạo bào tử. Điều đáng chú ý là ưu thế
+    giữa hai bên đã đảo ngược suốt lịch sử thực vật. Ở một cây rêu, thể giao tử là cái cây bạn thấy và
+    thể bào tử chỉ là một cuống nhỏ sống nhờ trên đó. Ở dương xỉ thì ngược lại: cây dương xỉ là thể bào
+    tử, còn thể giao tử là một mảnh bé bằng đầu ngón tay nằm trên đất. Ở thực vật có hạt, thể giao tử
+    teo lại thành vài tế bào ẩn trong hạt phấn và trong noãn. Cuộc soán ngôi tuần tự ấy có lẽ là sự tái
+    tổ chức lớn nhất trong toàn bộ lịch sử hình thái thực vật.
+  en: >-
+    The life cycle of every land plant: it alternates between two different multicellular bodies — a
+    haploid gametophyte that makes eggs and sperm, and a diploid sporophyte that makes spores. What is
+    remarkable is that dominance between the two has flipped over plant history. In a moss the
+    gametophyte is the plant you see and the sporophyte is a small stalk living on it. In a fern it is
+    reversed: the fern is the sporophyte and the gametophyte is a thumbnail-sized scrap on the soil. In
+    a seed plant the gametophyte has shrunk to a handful of cells hidden inside pollen and ovule. That
+    progressive takeover is arguably the largest reorganisation in the whole history of plant form.
+see_also:
+  - gametophyte
+  - sporophyte
+  - heterospory
+  - embryophyte
+category: bio
+tags:
+  - developmental-biology
+  - evolution
+cover_prompt: >-
+  A painterly naturalist plate of two distinct plant bodies side by side connected by a faint cycle of
+  light, one low and leafy bearing a small stalk on its back, the other tall and vascular bearing spore
+  capsules, cool teal and cyan palette, no text, no labels, no numbers.

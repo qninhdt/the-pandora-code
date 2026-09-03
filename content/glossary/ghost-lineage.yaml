@@ -1,0 +1,16 @@
+id: ghost-lineage
+label:
+  vi: Nhánh bóng ma (ghost lineage)
+  en: Ghost lineage
+definition:
+  vi: 'Khoảng thời gian một dòng dõi đã tồn tại nhưng không để lại hóa thạch nào - đoạn lịch sử có thật mà đá hoàn toàn im lặng. Nó xuất hiện tất yếu vì hóa thạch đầu tiên của một nhánh chỉ cho *tuổi tối thiểu*: dòng dõi bắt buộc phải có trước khi nó kịp được bảo tồn lần đầu. Vì thế khi đồng hồ phân tử báo hai nhánh tách nhau sớm hơn hóa thạch cổ nhất, đó thường không phải mâu thuẫn cần giải quyết mà chính là bề rộng của nhánh bóng ma.'
+  en: 'The span during which a lineage existed but left no fossils - a real stretch of history about which the rock is entirely silent. It arises necessarily because a clade''s first fossil gives only a *minimum age*: the lineage must have existed before it happened to be preserved for the first time. So when a molecular clock puts two lineages'' divergence earlier than the oldest fossil, that is usually not a contradiction to be resolved but the width of the ghost lineage itself.'
+see_also:
+  - signor-lipps-effect
+  - biostratigraphy
+  - index-fossil
+category: concept
+tags:
+- evolution
+- geology
+cover_prompt: A painted phylogenetic branch drawn as a glowing cyan line whose lower half fades into faint translucent ghost-grey before resuming solid near the top, dark indigo field, painterly diagram feel, no text, no labels.

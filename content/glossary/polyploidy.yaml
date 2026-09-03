@@ -1,0 +1,31 @@
+id: polyploidy
+label:
+  vi: Đa bội
+  en: Polyploidy
+definition:
+  vi: >-
+    Việc mang nhiều hơn hai bộ nhiễm sắc thể, thường do toàn bộ hệ gene được nhân đôi. Ở động vật, đa bội
+    hầu như luôn là tai họa. Ở thực vật, nó là chuyện thường ngày: khoảng bảy trong mười loài thực vật có
+    hoa còn sống mang ít nhất một lần nhân đôi hệ gene đâu đó trong quá khứ tổ tiên, và có những lần nhân
+    đôi cổ nằm dưới toàn bộ thực vật có hạt cùng toàn bộ thực vật có hoa. Hệ quả cho việc dựng cây phả hệ
+    rất lớn: nhân đôi hệ gene có thể tạo ra một loài mới ngay trong một thế hệ, nên phả hệ thực vật không
+    thể vẽ thành những nhánh chỉ tách mà không bao giờ nhập.
+  en: >-
+    Carrying more than two chromosome sets, usually through duplication of the entire genome. In animals
+    polyploidy is almost always a disaster. In plants it is routine: roughly seven in ten living flowering
+    plant species carry at least one whole-genome duplication somewhere in their ancestry, and ancient
+    duplications underlie all seed plants and all angiosperms. The consequence for tree-building is large:
+    a genome duplication can produce a new species within a single generation, so plant phylogenies cannot
+    be drawn as branches that only ever split and never rejoin.
+see_also:
+  - allopolyploidy
+  - reticulate-evolution
+  - angiosperm
+category: bio
+tags:
+  - evolution
+  - developmental-biology
+cover_prompt: >-
+  A painterly naturalist plate of two matched sets of glowing chromosome threads becoming four, arranged in
+  a dark cell, the doubled set slightly brighter, cool cyan and magenta palette, no text, no labels, no
+  numbers.

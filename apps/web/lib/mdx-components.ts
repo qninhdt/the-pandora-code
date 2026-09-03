@@ -1,11 +1,14 @@
 import { CanonBadge } from "@/components/classification/canon-badge";
 import { AbyssalSignalStack } from "@/components/content/abyssal-signal-stack";
+import { AcidBaseSetPointSolver } from "@/components/content/acid-base-set-point-solver";
 import { AdaptationTimescaleLadder } from "@/components/content/adaptation-timescale-ladder";
 import { AerostaticLiftBudget } from "@/components/content/aerostatic-lift-budget";
 import { AirRegimeVisualizer } from "@/components/content/air-regime-visualizer";
 import { AlkalineVentBattery } from "@/components/content/alkaline-vent-battery";
 import { AnatomyPlate } from "@/components/content/anatomy-plate";
 import { AragoniteThresholdDial } from "@/components/content/aragonite-threshold-dial";
+import { ArborescenceHabitSorter } from "@/components/content/arborescence-habit-sorter";
+import { ArchiveBlindspotMatrix } from "@/components/content/archive-blindspot-matrix";
 import { AscentHypoxiaProfile } from "@/components/content/ascent-hypoxia-profile";
 import { AtmosphereComparison } from "@/components/content/atmosphere-comparison";
 import { AtmosphericDisequilibrium } from "@/components/content/atmospheric-disequilibrium";
@@ -86,6 +89,7 @@ import { IsotopeTracerAudit } from "@/components/content/isotope-tracer-audit";
 import { JetMeanderMap } from "@/components/content/jet-meander-map";
 import { JetVersusFoilEfficiency } from "@/components/content/jet-versus-foil-efficiency";
 import { KeystoneCascadeToggle } from "@/components/content/keystone-cascade-toggle";
+import { LastAppearanceSmear } from "@/components/content/last-appearance-smear";
 import { LatencyHorizon } from "@/components/content/latency-horizon";
 import { LimbFieldToggle } from "@/components/content/limb-field-toggle";
 import { LongBranchAttractionDemo } from "@/components/content/long-branch-attraction-demo";
@@ -110,18 +114,22 @@ import { OreGenesisRegimeLedger } from "@/components/content/ore-genesis-regime-
 import { OrganogenesisGate } from "@/components/content/organogenesis-gate";
 import { OriginScenarioScoreboard } from "@/components/content/origin-scenario-scoreboard";
 import { OutgroupPolarityBench } from "@/components/content/outgroup-polarity-bench";
+import { OxygenAffinityBench } from "@/components/content/oxygen-affinity-bench";
 import { PandoraLightLadder } from "@/components/content/pandora-light-ladder";
 import { PerchedWaterBudget } from "@/components/content/perched-water-budget";
 import { PercolationNetwork } from "@/components/content/percolation-network";
 import { PhotophoreIntensity } from "@/components/content/photophore-intensity";
 import { PigmentSpectrumTuner } from "@/components/content/pigment-spectrum-tuner";
+import { PitcherConvergenceBench } from "@/components/content/pitcher-convergence-bench";
 import { PneumaticBoneBudget } from "@/components/content/pneumatic-bone-budget";
 import { PredatorPreyOscillator } from "@/components/content/predator-prey-oscillator";
 import { PressureDoesNotCrush } from "@/components/content/pressure-does-not-crush";
 import { PyricNutrientLedger } from "@/components/content/pyric-nutrient-ledger";
+import { PyriteWindowDial } from "@/components/content/pyrite-window-dial";
 import { QuorumCascade } from "@/components/content/quorum-cascade";
 import { Quote } from "@/components/content/quote";
 import { RadiantDoseDial } from "@/components/content/radiant-dose-dial";
+import { RadiatorHeatLedger } from "@/components/content/radiator-heat-ledger";
 import { RainShadowTransect } from "@/components/content/rain-shadow-transect";
 import { RaindropGrowthLadder } from "@/components/content/raindrop-growth-ladder";
 import { RecoveryChronosequence } from "@/components/content/recovery-chronosequence";
@@ -132,6 +140,7 @@ import { ReplayTheTape } from "@/components/content/replay-the-tape";
 import { ReproductiveValueElasticity } from "@/components/content/reproductive-value-elasticity";
 import { ResidenceTimeAudit } from "@/components/content/residence-time-audit";
 import { RespiratoryScrubberDial } from "@/components/content/respiratory-scrubber-dial";
+import { ReticulateFloraNetwork } from "@/components/content/reticulate-flora-network";
 import { RubiscoErrorLedger } from "@/components/content/rubisco-error-ledger";
 import { SatelliteMassBudget } from "@/components/content/satellite-mass-budget";
 import { ScaleUpChallenge } from "@/components/content/scale-up-challenge";
@@ -151,11 +160,13 @@ import { StratigraphicColumnReader } from "@/components/content/stratigraphic-co
 import { StructureVsBiomassClock } from "@/components/content/structure-vs-biomass-clock";
 import { SuccessionArrestExplorer } from "@/components/content/succession-arrest-explorer";
 import { SugarFreightLine } from "@/components/content/sugar-freight-line";
+import { SulfideElectronLedger } from "@/components/content/sulfide-electron-ledger";
 import { SulfurSourceGap } from "@/components/content/sulfur-source-gap";
 import { SuperconductorCooldown } from "@/components/content/superconductor-cooldown";
 import { SwarmSteeringField } from "@/components/content/swarm-steering-field";
 import { SymbiontIntegrationMap } from "@/components/content/symbiont-integration-map";
 import { TandemWingInterference } from "@/components/content/tandem-wing-interference";
+import { TaphonomicGauntlet } from "@/components/content/taphonomic-gauntlet";
 import { TectonicRegimeSelector } from "@/components/content/tectonic-regime-selector";
 import { TemporalNichePartition } from "@/components/content/temporal-niche-partition";
 import { ThermalScopeDial } from "@/components/content/thermal-scope-dial";
@@ -193,12 +204,15 @@ import type { ComponentType } from "react";
 
 export const pandoraMdxComponents = {
   AbyssalSignalStack,
+  AcidBaseSetPointSolver,
   AdaptationTimescaleLadder,
   AerostaticLiftBudget,
   AirRegimeVisualizer,
   AlkalineVentBattery,
   AnatomyPlate,
   AragoniteThresholdDial,
+  ArborescenceHabitSorter,
+  ArchiveBlindspotMatrix,
   AscentHypoxiaProfile,
   AtmosphereComparison,
   AtmosphericDisequilibrium,
@@ -285,6 +299,7 @@ export const pandoraMdxComponents = {
   JetMeanderMap,
   JetVersusFoilEfficiency,
   KeystoneCascadeToggle,
+  LastAppearanceSmear,
   LatencyHorizon,
   MagneticCompassExplorer,
   MagmaEnergyLedger,
@@ -312,12 +327,14 @@ export const pandoraMdxComponents = {
   OreGenesisRegimeLedger,
   OriginScenarioScoreboard,
   OutgroupPolarityBench,
+  OxygenAffinityBench,
   PandoraLightLadder,
   PartRef,
   PercolationNetwork,
   PerchedWaterBudget,
   PhotophoreIntensity,
   PigmentSpectrumTuner,
+  PitcherConvergenceBench,
   PneumaticBoneBudget,
   TemporalNichePartition,
   TectonicRegimeSelector,
@@ -329,9 +346,11 @@ export const pandoraMdxComponents = {
   PredatorPreyOscillator,
   PressureDoesNotCrush,
   PyricNutrientLedger,
+  PyriteWindowDial,
   QuorumCascade,
   Quote,
   RadiantDoseDial,
+  RadiatorHeatLedger,
   RainShadowTransect,
   RaindropGrowthLadder,
   RecoveryChronosequence,
@@ -343,6 +362,7 @@ export const pandoraMdxComponents = {
   RedQueenRace,
   ReproductiveValueElasticity,
   ResidenceTimeAudit,
+  ReticulateFloraNetwork,
   RubiscoErrorLedger,
   SatelliteMassBudget,
   ScaleUpChallenge,
@@ -365,12 +385,14 @@ export const pandoraMdxComponents = {
   SuccessionArrestExplorer,
   SulfurSourceGap,
   SugarFreightLine,
+  SulfideElectronLedger,
   SuperconductorCooldown,
   SwarmSteeringField,
   SymbiontIntegrationMap,
   RespiratoryScrubberDial,
   TableOfContents,
   TandemWingInterference,
+  TaphonomicGauntlet,
   TierLegend,
   Timeline,
   TurnEnvelopeDiagram,

@@ -1,0 +1,16 @@
+id: bicarbonate-buffer
+label:
+  vi: Hệ đệm bicarbonate
+  en: Bicarbonate buffer
+definition:
+  vi: "Cơ chế giữ cho độ axit của máu không dao động dù cơ thể liên tục sinh ra axit. Carbon dioxide hòa tan trong nước tạo thành axit carbonic, thứ lập tức tách ra thành một ion bicarbonate và một ion hydro - và ion hydro chính là độ axit. Vì phản ứng chạy được cả hai chiều, một bể bicarbonate lớn sẵn có trong huyết tương sẽ hấp thu các ion hydro mới đến và biến chúng trở lại thành carbon dioxide và nước. Đây là hệ đệm mở: sản phẩm dễ bay hơi được thải liên tục qua bề mặt hô hấp, nên dung lượng của nó lớn hơn nhiều một hệ đệm kín."
+  en: "The mechanism that keeps blood acidity steady even though the body produces acid continuously. Carbon dioxide dissolved in water becomes carbonic acid, which immediately splits into a bicarbonate ion and a hydrogen ion - and hydrogen ions are what acidity is. Because the reaction runs both ways, a large standing pool of bicarbonate in the plasma absorbs incoming hydrogen ions and turns them back into carbon dioxide and water. It is an open buffer: the volatile product is vented continuously across the respiratory surface, which gives it far more capacity than a closed system would have."
+see_also:
+  - henderson-hasselbalch-equation
+  - carbonic-anhydrase
+  - hypercapnia
+category: concept
+tags:
+  - physiology
+  - chemistry
+cover_prompt: A painted study of a crowd of pale luminous ions suspended in dark fluid, a few bright reactive particles arriving from one side and being absorbed into the crowd, cool teal against deep indigo shadow, painterly and atmospheric, no text, no labels, no numbers.

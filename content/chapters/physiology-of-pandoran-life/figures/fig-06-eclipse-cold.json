@@ -1,0 +1,33 @@
+{
+  "id": "fig-06-eclipse-cold",
+  "chapter_slug": "physiology-of-pandoran-life",
+  "role": "inline",
+  "narrative_purpose": "Shows the daily thermal cliff and how body size splits the response: bulk lets a large animal ignore an hour of cold outright, while a small one has to shelter.",
+  "subject": "A forest clearing during total eclipse. Filling the sky above the canopy gap, the enormous unlit disc of a banded gas giant with only a thin bright rim of light around one edge. In the clearing, one very large six-limbed animal stands completely still in the open, head low, its thin head-fan folded flat against its skull. In the near foreground, four or five small slender creatures press together into a hollow between the buttress roots of a huge tree. Cold mist sinks through the canopy gap in visible downward streams around them.",
+  "scene": "A rainforest clearing under total planetary eclipse, all sunlight gone, the only illumination coming from the forest's own glowing growth and from the thin rim of the eclipsing disc.",
+  "camera": "Wide low establishing view from ground level, the clearing and the huge sky disc both in frame, the sheltering creatures near and the large animal mid-distance.",
+  "light": "Very dim overall. A thin cold rim-light along the edge of the sky disc; faint blue-green glow from ground growth and bark; no warm light anywhere; deep shadow filling most of the frame.",
+  "palette": "Void-indigo and deep teal-indigo dominant, faint cyan and living-teal glow from the forest growth, one thin cold pale rim on the sky disc, no warm accents at all.",
+  "style": "Painterly atmospheric naturalist plate, mood-forward, low contrast, hand-painted texture.",
+  "detail_level": "Crisp on the sinking mist streams and on the huddled small creatures; the large animal held in soft silhouette; the canopy and far trunks dissolving into dark haze.",
+  "composition": "Enormous dark sky disc occupying the upper half, the still large animal on the mid-line, the huddled creatures low in the foreground third, generous dim negative space throughout.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "arrows",
+    "diagram lines",
+    "callouts",
+    "sunlight",
+    "warm light",
+    "bright highlights",
+    "fire",
+    "3D render"
+  ],
+  "consistency_notes": "Cool Pandora palette with no warm accent whatsoever - the absence of warm light is the subject. The large animal has six limbs and a thin bony head-fan, here folded flat. Keep the sky region dark and plain for overlaid callouts.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no letters, no numbers, no labels, no arrows, no sunlight, no warm light, no bright highlights, no fire, no flat vector art, no infographic styling, no UI, no watermarks, no 3D render",
+  "style_refs": ["pandora-establishing.png"]
+}

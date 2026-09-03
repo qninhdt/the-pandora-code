@@ -1,0 +1,33 @@
+{
+  "id": "fig-05-wet-air-sprint",
+  "chapter_slug": "physiology-of-pandoran-life",
+  "role": "inline",
+  "narrative_purpose": "Makes the wet-bulb trap visible: an animal working hard with a wet hide in air already nearly saturated, where the moisture runs off instead of evaporating and so carries away no heat.",
+  "subject": "A large six-limbed predator at full stride through dense undergrowth, body low and extended, six limbs in mid-gallop. Its flanks, shoulders and jaw are visibly wet, with distinct beads of water standing on the hide and long streaks running backward along its sides; a few droplets fling off its trailing edges as liquid rather than lifting away as vapour. The air immediately around it hangs thick and undisturbed, full of suspended fine droplets that do not part for the animal's passage.",
+  "scene": "The floor of a saturated bioluminescent rainforest at the hottest part of the day, mist standing between the trunks in still layers, glowing low growth trampled along the animal's line of travel.",
+  "camera": "Low three-quarter tracking view at knee height, the animal large in frame and moving across it, undergrowth blurring past.",
+  "light": "Cool bioluminescent key from the disturbed ground growth catching the wet hide as hard specular beads; a faint warm interior glow along the animal's flanks; deep indigo shadow in the standing mist behind.",
+  "palette": "Void-indigo and deep teal-indigo ground, cyan glints on the standing water beads, a scarce ember warmth along the animal's flanks and open mouth.",
+  "style": "Painterly naturalist field-observation plate, oil texture, motion caught rather than posed.",
+  "detail_level": "Crisp on the water beads and running streaks on the hide and on the suspended droplets in the near air; the undergrowth soft with motion; the far forest dissolving into mist.",
+  "composition": "Animal driving across the lower two thirds of the frame, thick standing mist filling the upper third as dark plain space, the wet flank turned toward the viewer.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "arrows",
+    "diagram lines",
+    "callouts",
+    "visible steam",
+    "vapour plumes",
+    "rising mist off the animal",
+    "rain",
+    "3D render"
+  ],
+  "consistency_notes": "Cool Pandora palette. The moisture must read as liquid running off the animal, never as vapour or steam lifting away - that distinction is the whole point of the figure. The predator has six limbs and smooth armoured hide, no fur. Keep the upper mist region dark and plain for overlaid callouts.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no letters, no numbers, no labels, no arrows, no steam, no vapour plumes, no rain, no flat vector art, no infographic styling, no UI, no watermarks, no 3D render",
+  "style_refs": ["pandora-establishing.png"]
+}

@@ -46,7 +46,10 @@
     "when-glow-is-the-norm": "/images/chapters/when-glow-is-the-norm/fig-00-cover.webp",
     "where-is-pandora": "/images/chapters/where-is-pandora/fig-00-cover.webp",
     "why-banshees-get-to-be-big": "/images/chapters/why-banshees-get-to-be-big/fig-00-cover.webp",
-    "why-burning-eywa-doesnt-kill-it": "/images/chapters/why-burning-eywa-doesnt-kill-it/fig-00-cover.webp"
+    "why-burning-eywa-doesnt-kill-it": "/images/chapters/why-burning-eywa-doesnt-kill-it/fig-00-cover.webp",
+    "evolution-of-pandoran-flora": "/images/chapters/evolution-of-pandoran-flora/fig-00-cover.webp",
+    "pandoran-paleontology": "/images/chapters/pandoran-paleontology/fig-00-cover.webp",
+    "physiology-of-pandoran-life": "/images/chapters/physiology-of-pandoran-life/fig-00-cover.webp"
   },
   "chapterBackgrounds": {
     "a-real-living-planet": "/images/chapters/a-real-living-planet/fig-99-background.png",
@@ -93,7 +96,10 @@
     "when-glow-is-the-norm": "/images/chapters/when-glow-is-the-norm/fig-99-background.png",
     "where-is-pandora": "/images/chapters/where-is-pandora/fig-99-background.png",
     "why-banshees-get-to-be-big": "/images/chapters/why-banshees-get-to-be-big/fig-99-background.png",
-    "why-burning-eywa-doesnt-kill-it": "/images/chapters/why-burning-eywa-doesnt-kill-it/fig-99-background.png"
+    "why-burning-eywa-doesnt-kill-it": "/images/chapters/why-burning-eywa-doesnt-kill-it/fig-99-background.png",
+    "evolution-of-pandoran-flora": "/images/chapters/evolution-of-pandoran-flora/fig-99-background.png",
+    "pandoran-paleontology": "/images/chapters/pandoran-paleontology/fig-99-background.png",
+    "physiology-of-pandoran-life": "/images/chapters/physiology-of-pandoran-life/fig-99-background.png"
   },
   "glossaryCovers": {
     "abduction": "/images/glossary/abduction.webp",
@@ -668,7 +674,30 @@
     "zeitgeber": "/images/glossary/zeitgeber.webp",
     "zermelo-navigation-problem": "/images/glossary/zermelo-navigation-problem.webp",
     "zircon": "/images/glossary/zircon.webp",
-    "zooxanthellae": "/images/glossary/zooxanthellae.webp"
+    "zooxanthellae": "/images/glossary/zooxanthellae.webp",
+    "ancient-dna": "/images/glossary/ancient-dna.webp",
+    "anoxia": "/images/glossary/anoxia.webp",
+    "biostratigraphy": "/images/glossary/biostratigraphy.webp",
+    "bioturbation": "/images/glossary/bioturbation.webp",
+    "damuths-rule": "/images/glossary/damuths-rule.webp",
+    "diagenesis": "/images/glossary/diagenesis.webp",
+    "euxinia": "/images/glossary/euxinia.webp",
+    "faunal-succession": "/images/glossary/faunal-succession.webp",
+    "ghost-lineage": "/images/glossary/ghost-lineage.webp",
+    "ichnology": "/images/glossary/ichnology.webp",
+    "index-fossil": "/images/glossary/index-fossil.webp",
+    "kerogen": "/images/glossary/kerogen.webp",
+    "konservat-lagerstatte": "/images/glossary/konservat-lagerstatte.webp",
+    "laterite": "/images/glossary/laterite.webp",
+    "permineralization": "/images/glossary/permineralization.webp",
+    "phosphatization": "/images/glossary/phosphatization.webp",
+    "pseudofossil": "/images/glossary/pseudofossil.webp",
+    "pull-of-the-recent": "/images/glossary/pull-of-the-recent.webp",
+    "pyritization": "/images/glossary/pyritization.webp",
+    "signor-lipps-effect": "/images/glossary/signor-lipps-effect.webp",
+    "taphonomy": "/images/glossary/taphonomy.webp",
+    "time-averaging": "/images/glossary/time-averaging.webp",
+    "trace-fossil": "/images/glossary/trace-fossil.webp"
   },
   "pageBackgrounds": {
     "chapters": "/images/pages/chapters.png",

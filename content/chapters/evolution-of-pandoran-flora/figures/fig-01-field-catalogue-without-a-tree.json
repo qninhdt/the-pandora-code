@@ -1,0 +1,32 @@
+{
+  "id": "fig-01-field-catalogue-without-a-tree",
+  "chapter_slug": "evolution-of-pandoran-flora",
+  "role": "hero",
+  "narrative_purpose": "The cold open: a rich, carefully catalogued plant collection that contains no relationships at all. The reader must see abundance of specimens beside an absence of any diagram, because that gap is the chapter's subject.",
+  "subject": "A wide herbarium bench crowded with about a dozen stiff pale mounting sheets laid flat and overlapping slightly. On each sheet a different pressed and flattened alien plant is fixed down with narrow strips of tape - a tightly coiled spiral leaf, a flattened urn-shaped vessel, a fan of feather-like fronds, a broad ribbed frond, a dried succulent rosette, a small round pod, a length of ribbed stem. Beside each specimen sits one small rectangular blank paper tag. In the immediate foreground, angled toward the viewer, lies one much larger sheet of paper that is completely empty, with a fine pen resting on top of it, untouched.",
+  "scene": "A dim specimen room, a wide wooden bench filling the lower frame, shallow open drawers visible at the edges, the air hazy and still.",
+  "camera": "A high three-quarter view looking down across the bench, the large empty sheet nearest the viewer at lower centre, the mounted specimens receding away into shadow.",
+  "light": "Cold cyan working light falling from above and slightly behind, so the pressed specimens catch the light and the empty foreground sheet reads as the palest object in the frame; deep indigo shadow filling the room beyond the bench.",
+  "palette": "Void-indigo room, cool cyan on the mounting sheets and specimens, faint living-teal retained in a few of the pressed plants, one small scarce amber warmth on the pen.",
+  "style": "Painterly naturalist specimen plate, hand-painted texture, observed-from-life confidence.",
+  "detail_level": "Crisp on the pressed specimens and their tape strips and on the empty foreground sheet; the far end of the bench and the drawers softer; edges dissolving into haze.",
+  "composition": "Bench filling the lower two thirds, specimens arrayed across the middle, the large blank sheet isolated in open space at lower centre with dark room above it for later callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "handwriting",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "diagram lines",
+    "modern lab equipment",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Cool Pandora palette with cold cyan key. The tags must be visibly blank rather than lettered, and no connecting lines or diagram may appear anywhere - the absence of a drawn tree is the whole point of the image.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no handwriting, no logos, no diagram labels, no arrows, no connecting lines, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

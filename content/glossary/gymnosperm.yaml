@@ -1,0 +1,32 @@
+id: gymnosperm
+label:
+  vi: Thực vật hạt trần
+  en: Gymnosperm
+definition:
+  vi: >-
+    Thực vật có hạt mà noãn không được bọc trong nhụy kín — cây thông, tuế, bạch quả, thông đất. Tên gọi
+    nghĩa là "hạt trần", và đó là mô tả chính xác: hạt phát triển lộ ra trên một vảy nón thay vì nằm trong
+    một buồng đóng. Nhóm này từng thống trị hệ thực vật trên cạn suốt Đại Trung sinh và giờ chỉ còn lại
+    những dòng dõi tương đối thưa thớt. Một điều chỉnh đáng chú ý: giả thuyết cũ cho rằng nhóm Gnetales là
+    họ hàng gần nhất của thực vật có hoa, dựa trên những nét giống nhau về nón và mạch dẫn. Dữ liệu phân tử
+    cho thấy các nét ấy là hội tụ — Gnetales là cây lá kim, còn thực vật có hoa là một nhánh riêng.
+  en: >-
+    Seed plants whose ovules are not enclosed in a sealed carpel — conifers, cycads, ginkgo, gnetophytes.
+    The name means "naked seed", and it is accurate: the seed develops exposed on a cone scale rather than
+    inside a closed chamber. The group dominated terrestrial floras through the Mesozoic and is now down
+    to relatively sparse lineages. A notable correction: an older hypothesis made the Gnetales the closest
+    relatives of the flowering plants, based on cone and vessel resemblances. Molecular data showed those
+    resemblances were convergent — the Gnetales are conifers, and the flowering plants are a branch of
+    their own.
+see_also:
+  - angiosperm
+  - heterospory
+  - convergent-evolution
+category: bio
+tags:
+  - evolution
+  - physiology
+cover_prompt: >-
+  A painterly naturalist plate of an open cone with visible seeds resting exposed on its woody scales,
+  needle foliage behind it, everything else dim, cool teal and indigo palette with faint amber warmth on
+  the seeds, no text, no labels, no numbers.

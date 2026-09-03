@@ -1,0 +1,366 @@
+<DiagramFigure
+  src="/images/chapters/physiology-of-pandoran-life/fig-01-two-bodies-one-air.webp"
+  alt="Two figures standing a few metres apart in a misty bioluminescent forest clearing: a tall blue-skinned humanoid breathing freely with nothing over its face, and a smaller human in a fitted transparent breathing mask with a compact filter unit at the jaw, both lit by the same drifting spore-light"
+  labels={[
+    { x: 28, y: 32, side: "left", label: "Exopack filter unit", note: "Scrubbing high CO₂ down to survivable partial pressure. Without it, acute hypercapnic acidosis causes unconsciousness in twenty seconds." },
+    { x: 71, y: 20, side: "right", label: "Unmasked airway", note: "Drawing in identical 18% CO₂ and 5% xenon directly into the lungs without filtration or distress." },
+    { x: 72, y: 46, side: "right", label: "Eucapnic breathing", note: "Quiet, steady respiratory rhythm. The adaptation is not an air barrier in the lungs, but the chemistry awaiting it in the blood." },
+    { x: 50, y: 38, side: "left", label: "Shared dense atmosphere", note: "85 kPa surface pressure, 20 kPa O₂, and 15 kPa CO₂ entering both chests simultaneously." }
+  ]}
+  figNo="01"
+  caption="The same air, at the same pressure, at the same temperature, entering two chests a few metres apart. One of them will be dead in four minutes without that mask. The difference is not in the lungs. It is in the chemistry of what the lungs hand the air to."
+  tier="inference"
+/>
+
+Two bodies stand in the same clearing. One of them is three metres tall and breathing the air with nothing over its face — mist condensing on its skin, ribs moving slowly, entirely at ease. The other is human, and has a transparent shell strapped over its nose and mouth with a filter cartridge humming quietly at the jaw. If that cartridge fails, the human has about twenty seconds of consciousness and rather less than four minutes of life.
+
+Both of them are drawing in the same gas at the same pressure. Both have lungs that work by the same physics: a wet membrane, a difference in pressure across it, gas sliding down the difference. The membranes are not the interesting part. Whatever is different between these two bodies happens *after* the air arrives — in the blood it arrives into, and in the tissue that blood eventually reaches.
+
+That is the whole subject of this chapter, and it turns out to have a surprisingly precise answer. Not a hand-wave about being adapted. A number, in a unit you can check, arrived at with a two-line calculation that any physiology student on Earth already knows.
+
+## The number nobody wrote down
+
+Here is the strange thing about the Avatar material: it describes this atmosphere in real detail. Total pressure, a little under nine tenths of Earth's at the surface. Oxygen at roughly a fifth — comfortably breathable, on its own. Carbon dioxide at sixteen to eighteen per cent, hundreds of times Earth's share. Five per cent xenon. Hydrogen sulfide at concentrations the sources are careful to keep well under one per cent. Gravity at four fifths of ours. A denser atmosphere than Earth's, by about a fifth. We worked through what that air *is*, and what it does to an unprotected human, in <ChapterRef slug="whats-in-the-air">What's Really in the Air?</ChapterRef>.
+
+And about the bodies that breathe it happily, canon supplies almost nothing. It states that Na'vi blood and native animal blood is red, and that it uses an iron compound similar to haemoglobin. It states that the Na'vi and the recombinants find *our* air uncomfortable and breathe shallowly in it. That is close to the end of the list. There is no published blood pH anywhere in official material. No haematocrit. No bicarbonate figure. No core body temperature for any native species. No metabolic rate. Nobody has ever said how many chambers a thanator's heart has.
+
+What the gap has attracted instead is a confident piece of fan lore: that Na'vi blood is naturally acidic, running below pH 6.8, and that Earth's air kills them by alkalosis. You will find that number in wikis and forum posts. It is not canon and it is not sourced. It is also, as we are about to see, almost certainly wrong — not in direction, but in magnitude, and the amount by which it is wrong is exactly what makes the real answer interesting.
+
+So this is a reconstruction. Not an invention: the air is given, and the chemistry of blood is not negotiable, and between those two things there is much less freedom than you would expect. We are going to work out what a body breathing that air *must* look like on the inside, mark clearly where the reasoning stops, and along the way pick up one of the most useful equations in medicine.
+
+## What an air does to blood
+
+Start with a thing your own body does about twenty thousand times a day without your involvement.
+
+Every cell you own burns fuel and produces carbon dioxide. That gas has to get out, and it gets out by dissolving into blood, riding to the lungs, and leaking across the membrane into air that has almost none of it. On Earth that last step is free, because Earth's air is four hundredths of one per cent carbon dioxide — effectively empty. The gradient runs steeply outward and always has.
+
+But dissolved carbon dioxide is not a passenger. It is an acid in waiting. Put it in water and a small fraction of it combines to make carbonic acid, which immediately falls apart into a bicarbonate ion and a free hydrogen ion — and free hydrogen ions *are* acidity, by definition. So the amount of carbon dioxide dissolved in your blood sets how acid your blood is. Not influences. Sets.
+
+Left there, this would be a disaster, because blood pH has to stay inside a window a couple of tenths of a unit wide or enzymes stop folding correctly and hearts stop keeping time. What saves it is that the reaction runs in both directions, and the body keeps a large standing pool of the *product* — bicarbonate — dissolved in the plasma. Pile up product on one side of a reversible reaction and you push it backwards; the bicarbonate absorbs incoming hydrogen ions and turns them back into carbon dioxide and water. That is a <GlossaryTerm slug="bicarbonate-buffer">bicarbonate buffer</GlossaryTerm>, and it is the reason you can sprint up a flight of stairs and produce a flood of acid without your blood chemistry noticing.
+
+<DiagramFigure
+  src="/images/chapters/physiology-of-pandoran-life/fig-02-bicarbonate-ledger.webp"
+  alt="A painted cutaway of a blood vessel interior at high magnification, plasma crowded with pale bicarbonate particles, a red cell at centre with a dense cluster of enzyme molecules at its inner membrane surface converting inbound gas into ions, and a stream of chloride ions crossing the cell wall outward in exchange"
+  labels={[
+    { x: 25, y: 50, side: "left", label: "CO₂ tissue influx", note: "Metabolic carbon dioxide dissolves into capillary plasma and diffuses rapidly across the erythrocyte membrane." },
+    { x: 54, y: 50, side: "right", label: "Carbonic anhydrase array", note: "Membrane-anchored enzyme complexes hydrating CO₂ into bicarbonate and protons at near-diffusion-limited catalytic rates." },
+    { x: 44, y: 52, side: "left", label: "Nucleated red cell", note: "High-affinity intracellular haemoglobin binds oxygen while buffering nascent protons released by carbonic acid dissociation." },
+    { x: 80, y: 50, side: "right", label: "Chloride-bicarbonate exchanger", note: "Exporting newly formed HCO₃⁻ into plasma in exchange for Cl⁻, maintaining electroneutrality and expanding the extracellular buffer pool." }
+  ]}
+  figNo="02"
+  caption="The reaction that decides how acid blood is. Carbon dioxide arriving from the tissues is hydrated inside the red cell — the enzyme that does it is among the fastest known — and the bicarbonate it produces is traded outward for chloride to keep the cell electrically neutral. The size of that plasma bicarbonate pool, against the amount of gas dissolved, is what pins the pH."
+  tier="real_science"
+/>
+
+The relationship between those two quantities is written down as the <GlossaryTerm slug="henderson-hasselbalch-equation">Henderson–Hasselbalch equation</GlossaryTerm>, and in plain language it says: blood pH depends on the ratio of bicarbonate to dissolved carbon dioxide. Not on either one alone — on the ratio. Triple the carbon dioxide and you can hold the same pH by tripling the bicarbonate. It is a fraction, and only the fraction matters.
+
+Two numbers make it concrete. A resting mammal on Earth carries about twenty-four units of bicarbonate against a carbon dioxide tension of about forty millimetres of mercury, and that particular ratio gives pH 7.39. Every mammal on this planet defends approximately that ratio, by whatever means necessary.
+
+Now put a body on Pandora, and the arithmetic starts doing the work for us. In air that is eighteen per cent carbon dioxide at a surface pressure of eighty-five kilopascals, the <GlossaryTerm slug="partial-pressure">partial pressure</GlossaryTerm> of carbon dioxide in the inhaled gas — after the airway saturates it with water vapour — comes out near a hundred and six millimetres of mercury. And because metabolic carbon dioxide still has to flow *outward* from the tissues into the gas-exchange surface, arterial blood must sit above the inspired figure, somewhere around a hundred and fifteen to a hundred and thirty.
+
+Hold that beside the terrestrial forty. The denominator of the fraction has just tripled.
+
+<AcidBaseSetPointSolver caption="The two numbers that decide blood acidity, and the pairs of them that hold a given pH. Start on the Earth preset, then hold the terrestrial pH in Pandoran air and watch what the bicarbonate has to do. The third preset drops the target instead — which is the move the chapter argues Pandoran biology actually made." />
+
+## The cost of holding still
+
+Work through the first option — a native body that defends the terrestrial pH of 7.40 — and the equation gives an unambiguous answer: it needs about seventy-three units of plasma bicarbonate. Three times a mammal's.
+
+That is where it stops being arithmetic and becomes physiology, because bicarbonate is not free. It is a dissolved ion, and dissolved ions drag water after them, so a reserve that size raises the osmotic load of the plasma substantially. It has to be balanced electrically, which means chloride gets displaced out of the plasma in exchange — the same swap the red cell makes on a small scale, run permanently and at three times the volume. And carbonate ions at that concentration start bumping against the solubility limit of calcium phosphate, which is a chemically polite way of saying that soft tissue begins to calcify.
+
+None of those is instantly fatal. All of them are expensive, and all of them are expensive *all the time*, in every tissue, for the animal's entire life. Evolution is not sentimental about a fixed point. If the numerator is unaffordable, there is another way to fix a ratio.
+
+Lower the target.
+
+Set the resting arterial pH at 7.15 to 7.25 instead, and the required bicarbonate falls to something in the high thirties or low forties — elevated over ours, certainly, but within the range Earth animals already reach. Some cave-roosting bats living in air thick with their own colony's carbon dioxide and ammonia carry plasma bicarbonate in the mid-to-high thirties. It is a real place for a vertebrate to live.
+
+<Callout variant="science" title="Where the fan number goes wrong">
+The community claim of pH below 6.8 is not a small overshoot. It is *past the survivable limit* for protein chemistry as we know it — below about 6.8 you are describing a body in terminal acidosis, not a body at rest. And it is unnecessary: the calculation does not require anything like that much acid.
+
+The direction of the claim is right, and worth saying plainly, because <ChapterRef slug="whats-in-the-air">the atmosphere chapter</ChapterRef> reached the same conclusion from the other side: native blood almost certainly does run acid by our standards. What the arithmetic adds is *how much* — a fifth of a pH unit, not six tenths. The difference between those two figures is the difference between a working animal and a corpse.
+</Callout>
+
+Understand what this means and the strangeness relocates. A native body is not built out of unfamiliar chemistry. It runs the same buffer, the same enzyme, the same ions. What it has done is pick a different set-point and then re-tune everything downstream to work there — the proteome, the enzyme optima, the membrane transporters, and critically the pain system, because an animal whose blood is permanently acid by our standards cannot afford acid-sensing nerve endings that fire constantly.
+
+That last one has a precise Earth analogue, and it is one of the most satisfying results in comparative physiology. The naked mole-rat lives in sealed burrows where carbon dioxide reaches two to ten per cent, and it feels no pain from acid at all. The reason is a single change in a voltage-gated sodium channel in its sensory nerves: in most mammals, protons make that channel more likely to fire, which is why lemon juice stings a cut. In the mole-rat, protons *block* it. The animal did not evolve tolerance for the sensation. It disconnected the sensor.
+
+The mole-rat endures ten per cent carbon dioxide without respiratory distress. It survives eighteen minutes of total anoxia. It is a rodent that weighs thirty grams and it is, for our purposes, the closest thing Earth has to a proof of concept.
+
+## Red blood under blue skin
+
+Before going further into that blood, there is a misconception worth killing, because it is the single most common thing said about Na'vi physiology and it is exactly backwards.
+
+The Na'vi are blue. Copper-based blood pigment — <GlossaryTerm slug="haemocyanin">haemocyanin</GlossaryTerm>, the stuff in a horseshoe crab or an octopus — is blue when oxygenated. The inference writes itself, and it is wrong twice over.
+
+It is wrong on the facts: canon says explicitly that the blood is red and iron-based. Blue skin comes from pigment and structural light-scattering in the skin itself, the same trick that makes a blue jay's feather blue without a molecule of blue pigment in it.
+
+But it is also wrong on the physics, and the physics is the more interesting half. Haemocyanin cannot be packed into cells. It circulates free in the fluid, and a free-floating carrier has to be enormous — hundreds of kilodaltons to several megadaltons — or the kidney filters it straight out. Now ask what concentration would be needed to match a vertebrate's oxygen-carrying capacity. The answer is around a hundred and fifty grams per litre of dissolved protein, and at that concentration the fluid becomes both viscous and osmotically ferocious: it pulls water out of the tissues and it will not flow through capillaries.
+
+<DiagramFigure
+  src="/images/chapters/physiology-of-pandoran-life/fig-03-red-under-blue.webp"
+  alt="A split painted study: on the left, a cross-section of blue-hued alien skin showing pigment granules and layered light-scattering structures in the outer layers; on the right, a deep vessel beneath it carrying red blood cells packed with iron-bearing pigment, the two halves separated by a thin band of tissue"
+  labels={[
+    { x: 50, y: 22, side: "right", label: "Epidermal pigment layer", note: "Melanins and cyanic accessory pigments absorb harmful UV without dictating the respiratory chemistry below." },
+    { x: 50, y: 33, side: "right", label: "Structural scattering lattice", note: "Ordered collagen and keratin arrays produce coherent Rayleigh/Mie scattering, creating the blue optical hue." },
+    { x: 50, y: 46, side: "left", label: "Basement membrane", note: "Dense fibrous connective sheath separating the structural skin optics from underlying microvasculature." },
+    { x: 50, y: 65, side: "right", label: "Iron-based red erythrocytes", note: "Genuine heme-bound red blood cells packed inside vessels. Cellular packaging keeps plasma viscosity low despite massive oxygen capacity." }
+  ]}
+  figNo="03"
+  caption="The colour is in the skin; the chemistry is underneath it and it is red. Packing the pigment inside cells is what lets whole blood carry oxygen at high concentration while the plasma it flows in stays about as runny as water. A free-floating carrier at the same capacity would be too thick to push through a capillary."
+  tier="inference"
+/>
+
+Vertebrates escaped that trap by putting the pigment *inside cells*. Sealed in a red cell, haemoglobin can sit at whatever concentration it likes without affecting how thick the plasma is, and whole blood ends up carrying over twenty volumes per cent of oxygen while flowing nearly as easily as water. That single architectural decision is what makes large, fast, aerobic animals possible.
+
+So a three-metre biped that leaps between canopy branches was never going to run on free plasma pigment, whatever colour its skin is. The blue is cosmetics. The blood underneath is doing the boring, essential, iron-based thing.
+
+## Handing it over
+
+A pigment's job is usually described as carrying oxygen. That is half of it, and the less demanding half. The real test is *letting go* — releasing oxygen where the tissue needs it, and holding on where it does not.
+
+The way biology tunes that is with a shape. Plot how saturated a pigment is against the oxygen pressure around it and you get an S-curve rather than a straight line: the <GlossaryTerm slug="oxygen-dissociation-curve">oxygen dissociation curve</GlossaryTerm>. It is S-shaped because the four subunits of the molecule talk to each other — the first oxygen to bind makes the next one easier, and so on. The consequence is a steep middle section, which is exactly what you want. Over the narrow pressure range that separates a lung from a working muscle, saturation swings from nearly full to nearly empty.
+
+And the whole curve can slide. Add acid and it shifts rightward, meaning the pigment holds oxygen less tightly and dumps more of it. That is the <GlossaryTerm slug="bohr-effect">Bohr effect</GlossaryTerm>, and on Earth it is elegant: a hard-working muscle produces both carbon dioxide and lactic acid, the local blood turns slightly acid, and the pigment responds by handing over more oxygen precisely where the acid says it is needed. The signal and the need are the same thing.
+
+Now run that logic in a body whose arterial blood is *permanently* acid.
+
+<OxygenAffinityBench caption="The upper curve is the pigment as it loads at the gas-exchange surface; the lower one is the same pigment in a muscle bed where acid has pushed its affinity down. The gap between the two dots is what one pass delivers. Switch to a native sprint and look for the trouble — then note where it actually is." />
+
+The trouble is not where you would guess. Loading barely suffers: alveolar oxygen pressure sits up on the flat top of the curve, where affinity hardly matters, so shifting the curve right by a quarter costs about one percentage point of arterial saturation. The pigment fills up almost as well as ever.
+
+What breaks is the other end. A permanently right-shifted pigment in an acid muscle bed unloads so aggressively that the blood comes back nearly empty. As a sprinter that is superb — maximum delivery per pass. As a margin it is nothing at all. There is no reserve left in the returning blood for the moment when delivery stumbles.
+
+Which is a reason to expect that native pigments have *blunted* their acid sensitivity rather than inherited ours — decoupling the shift from carbon dioxide and driving it instead with temperature or with organic phosphates inside the red cell, both of which real Earth animals also use. Slide the acid-sensitivity control to zero in that bench and watch the reserve come back.
+
+If that sounds like special pleading, Earth has already run the experiment. The bar-headed goose crosses the Himalayas at nine thousand metres, where ambient oxygen pressure is below fifty millimetres of mercury. Its haemoglobin differs from its lowland relatives' by a single amino acid substitution, which removes one contact point between subunits and leaves the molecule sitting in its high-affinity shape. Its half-saturation pressure is twenty-seven against the lowland forty. One substitution, one repositioned atom, and a bird that can fly over Everest.
+
+<WhatThisMeans title="The bit you can take away from this">
+Everything in the last three sections is standard clinical physiology, and it is the framework doctors use daily on Earth.
+
+The load-bearing fact is that **carbon dioxide sets blood acidity, and bicarbonate is the only lever against it** — and that the lever moves on two very different timescales. Acutely, over minutes to hours, a ten-millimetre rise in carbon dioxide buys you barely one extra unit of bicarbonate: almost no compensation, which is why a sudden exposure hurts so much. Given days to weeks, the kidney remodels its transporters and the same ten millimetres buys three and a half to four units. That is the whole difference between an emergency and an adaptation.
+
+It is why a patient with long-standing lung disease can walk around carrying a carbon dioxide tension that would put a healthy person in a coma. Their kidneys have had years to raise the numerator. It is also why giving that patient too much oxygen too fast is dangerous: you remove their drive to breathe, the carbon dioxide climbs further, and the compensation that took years cannot keep up.
+
+The chronically compensated patient and the reconstructed Pandoran native are the same physiological solution, at different scales. One had a lifetime. The other had an evolutionary history.
+</WhatThisMeans>
+
+## The other thing a body has to get rid of
+
+Oxygen in, carbon dioxide out, acidity held steady. That is one ledger, and we have balanced it. There is a second one, and on Pandora it is the harder of the two.
+
+Muscles are engines and engines are inefficient. Something like three quarters of the energy a muscle spends comes out as heat rather than motion, which means that an animal running hard is a furnace, and the furnace has to be vented or the animal cooks. This is not a metaphor: a rise of a few degrees denatures the same enzymes that acid would, and the animal dies of its own effort.
+
+There are exactly four ways out. Heat can conduct into whatever the body touches, convect into moving air, radiate away as infrared, or leave as latent heat in evaporating water. Every animal on Earth uses some mixture of the four, and the mixture depends entirely on the surroundings.
+
+<DiagramFigure
+  src="/images/chapters/physiology-of-pandoran-life/fig-04-radiator-gallery.webp"
+  alt="Three painted anatomical studies arranged side by side against dark indigo: a broad flat bony cranial fan on a heavy six-limbed grazer with fine vessels branching visibly across its thin surface, a pair of large mobile pointed ears on a tall blue humanoid head with vessels tracing their edges, and a stretched translucent wing membrane on a flying creature backlit so its vascular network shows through"
+  labels={[
+    { x: 18, y: 48, side: "left", label: "Cranial thermal fan", note: "Large bony shield on heavy herbivores richly threaded with superficial anastomoses for convective shedding." },
+    { x: 53, y: 45, side: "right", label: "Vascularised mobile pinnae", note: "Thin, hairless ears with controllable vasomotor shunts, venting excess metabolic heat during high exertion." },
+    { x: 84, y: 48, side: "right", label: "Wing membrane heat exchanger", note: "Broad uninsulated flight patagium functioning as a massive radiative and convective dump during aerial flight." }
+  ]}
+  figNo="04"
+  caption="The same solution in three unrelated lineages: a thin bare surface, held away from the body core, threaded with vessels the animal can open or close at will. Canon describes all three. What they have in common is that none of them is for locomotion, insulation, or display — they are heat exchangers, and their whole point is being controllable."
+  tier="inference"
+/>
+
+Canon hands us something useful here, almost in passing. Pandoran rainforest animals have no fur and no down — the integument is smooth, leathery, sometimes armoured with plates. And several unrelated lineages carry large, thin, uninsulated, heavily vascularised structures that do no locomotor work at all: the cranial fans of the hammerhead titanothere, the mobile ears of the Na'vi, the dorsal sails of the fan lizard, the wing membranes of the banshee.
+
+On Earth, that combination has one obvious reading. An African elephant routes up to a fifth of its cardiac output through its ears, which are exactly this: enormous, thin, bare, and vascular. Open the vessels and the ear becomes a short circuit between the blood core and the outside air. Clamp them down and the same ear becomes insulation. Nothing else in an animal's anatomy gives it that kind of on-off control over its own heat loss.
+
+Why a body would need that much control becomes clear once you look at the air it is doing it in.
+
+## The trap in wet air
+
+Humans are unusual animals. We cool ourselves primarily by evaporation — we sweat over nearly our whole surface, and that is the trick that lets a naked ape chase antelope through midday heat.
+
+Evaporation works because turning water into vapour costs energy, about two and a half kilojoules per gram, and that energy comes out of the skin. But it only happens if the surrounding air can accept the vapour. The measure of that is the <GlossaryTerm slug="vapour-pressure-deficit">vapour-pressure deficit</GlossaryTerm> — the gap between how much water vapour the air *could* hold at that temperature and how much it already holds. Wide gap, fast evaporation. Narrow gap, slow. No gap, nothing at all: the sweat sits there, and then drips off, having cooled precisely nothing.
+
+Canon puts the Pandoran equatorial rainforest at twenty-six to thirty-two degrees with relative humidity at eighty-five to ninety-five per cent. Run the numbers on that and the deficit between a warm animal's skin and that air comes out around ten to eleven millimetres of mercury — about a quarter of what a dry temperate afternoon on Earth offers. It has not closed completely, but it has closed enough that a body cannot lean on it.
+
+<DiagramFigure
+  src="/images/chapters/physiology-of-pandoran-life/fig-05-wet-air-sprint.webp"
+  alt="A large six-limbed predator at full stride through dense misty undergrowth, its flanks and shoulders visibly wet, beads of moisture standing on its hide and streaming backwards off it rather than lifting away as vapour, the saturated air around it hanging thick and undisturbed with suspended droplets"
+  labels={[
+    { x: 85, y: 45, side: "right", label: "Sprint hyperventilation", note: "Ventilating massive volumes of air through thoracic spiracles, generating immense metabolic heat." },
+    { x: 48, y: 42, side: "left", label: "Non-evaporating surface runoff", note: "High relative humidity (85–95%) collapses the vapour-pressure deficit; perspiration sheets off as liquid, taking zero latent heat." },
+    { x: 25, y: 33, side: "left", label: "Liquid droplet shedding", note: "Mechanical shedding of droplets carries only minor sensible heat (~4 kJ/kg/K) compared to the 2,400 kJ/kg of phase change." },
+    { x: 50, y: 15, side: "left", label: "Near-saturated forest air", note: "A 28°C canopy air mass near 100% relative humidity presents a lethal wet-bulb barrier to evaporative coolers." }
+  ]}
+  figNo="05"
+  caption="Wet, and no better off for it. In air already holding almost as much water vapour as it can, moisture on the skin has nowhere to go — it runs off instead of evaporating, and carries away no heat when it does. The one avenue a human would rely on is, on this moon, very nearly closed."
+  tier="inference"
+/>
+
+Which leaves convection carrying the load. And here Pandora finally does its inhabitants a favour.
+
+How fast moving air strips heat from a surface depends on the flow, and flow is characterised by the Reynolds number — which has fluid density sitting right in the numerator. Work through the standard heat-transfer correlations and the convective coefficient comes out proportional to density to roughly the power of seven tenths. Pandora's air is about a fifth denser than Earth's. That is worth something like fourteen per cent more convective cooling at the same speed, for free, forever.
+
+<RadiatorHeatLedger caption="Heat production against the three ways out. The top bar is what the muscles make; the three below are what the body can shed with every radiator wide open. Whenever production overhangs their total, the animal is on a clock — and the readout says how long. Note how small the evaporation bar is in the rainforest, then drop the density slider to Earth's value and watch the sustainable effort fall." />
+
+Play with that ledger and a general principle falls out, which is worth stating in its own right. **Sustained effort is capped by heat, not by muscle.** An animal's top speed is set by its legs; how long it can hold a pace is set by its radiators. This is the Heat-Dissipation-Limit hypothesis, put forward by John Speakman and Elżbieta Król, and it reframed a long-standing argument in animal energetics: sustained metabolic output turns out to be limited not by how fast the gut can process food or how much the muscles can stand, but by how fast the body can get rid of the waste heat that all of that generates.
+
+For a three-tonne ambush predator in saturated air, the ledger says the chase has a deadline measured in tens of minutes — which is a rather good description of an ambush predator, an animal that has evolved not to need a long chase. It also says that the same animal is safe from cold, because bulk is thermal ballast: surface area grows as the square of length while volume grows as the cube, so a big body warms and cools slowly regardless of what it wants. That is <GlossaryTerm slug="gigantothermy">gigantothermy</GlossaryTerm>, and it is why a leatherback turtle can swim in near-freezing water while its small relatives cannot.
+
+Which brings us to the moment when the sky goes out.
+
+## An hour of cold, every single day
+
+Pandora passes through the shadow of Polyphemus once per rotation. Totality runs from forty-five minutes to over ninety, and because the gas giant's night side offers essentially no reflected light, the sunlight simply stops. Canopy air temperature falls by eight to fifteen degrees inside the hour, with cold downdraughts to go with it.
+
+This happens *every day*. It is not a season or a weather event. It is a daily thermal cliff, and it arrives on a schedule.
+
+<DiagramFigure
+  src="/images/chapters/physiology-of-pandoran-life/fig-06-eclipse-cold.webp"
+  alt="A forest clearing during total eclipse, the enormous dark disc of a gas giant filling the sky above the canopy with only a thin rim of light at its edge, cold mist sinking in visible downward currents through the trees, a very large six-limbed animal standing still in the open while several small creatures press into a hollow between buttress roots, everything lit only by the forest's own blue-green glow"
+  labels={[
+    { x: 48, y: 16, side: "right", label: "Polyphemus eclipse totality", note: "100-minute solar occultation completely cuts stellar insolation, causing canopy temperatures to plunge by 8–15°C." },
+    { x: 25, y: 35, side: "left", label: "Sinking cold downdraughts", note: "Rapid atmospheric radiative cooling drives dense, chilly air parcels from the upper canopy down to the forest floor." },
+    { x: 36, y: 54, side: "left", label: "Thermal inertia of gigantothermy", note: "A 4-tonne grazer possesses a tiny surface-area-to-volume ratio; its core temperature drifts less than 0.5°C over the eclipse." },
+    { x: 78, y: 80, side: "right", label: "Communal microhabitat huddling", note: "Small endotherms (<5 kg) lose heat rapidly; they survive totality by sheltering in buttress root crevices and sharing body heat." }
+  ]}
+  figNo="06"
+  caption="Totality, and the same physics that punished the big animal an hour ago now protects it. A multi-tonne body has enough thermal inertia to ignore an hour of cold entirely. A sixty-kilogram one does not, and its options are shelter, huddling, or letting its temperature fall."
+  tier="inference"
+/>
+
+For the big animals, the eclipse is barely an event. The ratio of surface to volume is so low that an hour is not long enough to move the core temperature much, and the response is behavioural and vascular rather than metabolic: shut the radiator fans, constrict the periphery, wait. The same bulk that made the chase a problem makes the cold a non-problem.
+
+For a sixty-kilogram browser it is a real event, and the same dense air that helps the giant now works against it — the convective term does not care which way the heat is going. A small uninsulated body in dense moving air at nineteen degrees loses heat faster than it can plausibly generate it. Which predicts, without ever seeing it, that Pandora's small fauna should shelter, huddle, or drop their metabolic rate during totality, on a daily cycle. That is a testable claim about a moon nobody has visited, and it comes out of one exponent.
+
+## The poison that turns out to be food
+
+Now the strangest piece of this atmosphere, and the place where a native body does something a human body genuinely cannot.
+
+Hydrogen sulfide is present in Pandoran air, sourced from continuous volcanism, at concentrations canon describes as toxic far below one per cent. That framing is worth unpacking, because "far below one per cent" sounds reassuring and is not. One per cent is ten thousand parts per million. A tenth of one per cent is a thousand — and a thousand parts per million of hydrogen sulfide drops a human in a single breath.
+
+The mechanism is precise and rather horrible. Hydrogen sulfide binds the iron at the heart of <GlossaryTerm slug="cytochrome-c-oxidase">cytochrome c oxidase</GlossaryTerm> — Complex IV, the last enzyme in the respiratory chain, the one that finally hands electrons to oxygen. Block it and the whole chain backs up. Oxygen is still in the blood; it is still reaching the tissue; the cell simply can no longer use it. This is <GlossaryTerm slug="histotoxic-hypoxia">histotoxic hypoxia</GlossaryTerm>, and it is why sulfide kills like cyanide, which jams the same site: suffocation from the inside, with every mitochondrion stopping at once.
+
+The clinical ladder is short. Ten to twenty parts per million irritates the eyes and airway. Around a hundred and fifty, the olfactory nerve is paralysed within minutes — the smell stops, and people have died because they believed the danger had passed. Five hundred to seven hundred is knockdown in under a minute. Past a thousand is neurorespiratory arrest.
+
+And here is the turn. Hydrogen sulfide is also an electron donor. It carries electrons, and there is an enzyme whose entire job is to take them: <GlossaryTerm slug="sulfide-quinone-oxidoreductase">sulfide:quinone oxidoreductase</GlossaryTerm>, which strips electrons off sulfide and feeds them into the ubiquinone pool — the very same pool that food-derived electrons enter. Downstream, persulfide dioxygenase and rhodanese convert the leftover sulfur to sulfite and thiosulfate, and sulfite oxidase finishes it to harmless sulfate.
+
+You have all of these enzymes. Right now. Every cell in your body makes small amounts of hydrogen sulfide deliberately, as a signalling molecule, and this cascade is how it disposes of it afterwards.
+
+So the difference between poison and fuel is not the presence of machinery. It is capacity.
+
+<DiagramFigure
+  src="/images/chapters/physiology-of-pandoran-life/fig-07-two-mitochondria.webp"
+  alt="Two painted cellular studies side by side at high magnification: on the left a mitochondrion with its folded inner membrane dark and inert, pale sulfide particles crowded against a cluster of enzyme complexes along the membrane and the whole organelle drained of light; on the right a mitochondrion of the same shape with its membrane lit teal and active, the same pale particles being taken up by dense arrays of a different enzyme and streaming onward as bright motes into the membrane"
+  labels={[
+    { x: 23, y: 40, side: "left", label: "Dark, inhibited cristae", note: "Unadapted terrestrial mitochondrion: trace environmental H₂S stalls the electron transport chain completely." },
+    { x: 25, y: 68, side: "left", label: "Poisoned Complex IV", note: "Hydrogen sulfide competitively locks cytochrome c oxidase, blocking aerobic respiration and causing fatal histotoxic hypoxia." },
+    { x: 75, y: 35, side: "right", label: "Active bioluminescent cristae", note: "Pandoran mitochondrion: inner mitochondrial membrane remains energized and actively pumping protons." },
+    { x: 67, y: 52, side: "left", label: "Sulfide:quinone oxidoreductase", note: "Dense arrays of SQR strip high-energy electrons from H₂S, funneling them into coenzyme Q and converting poison into ATP." }
+  ]}
+  figNo="07"
+  caption="The same molecule at the same concentration, arriving at two mitochondria. On the left it reaches the last enzyme of the respiratory chain and stops it, and the organelle goes dark. On the right a cascade sized for this atmosphere strips its electrons first and feeds them into the chain. Neither cell contains machinery the other lacks — only more of it."
+  tier="inference"
+/>
+
+<SulfideElectronLedger caption="The same molecule, plotted across the whole clinical range, for four different sets of mitochondria. The solid line is how much of the respiratory chain is still working; the dashed line is how much energy the sulfide is providing. Every body here runs the same enzymes. Only the capacity differs, and the capacity decides where the cliff falls." />
+
+The shape of that answer is the point. Free sulfide inside a cell is not proportional to what is inhaled — it is the steady state between delivery and enzymatic clearance. Below capacity the enzymes clear it as fast as it arrives and free sulfide stays near zero, so the molecule is a nutrient. Approach capacity and the steady state runs away, sulfide reaches Complex IV, and the animal dies of its own fuel. There is almost no middle ground; it is a cliff, not a slope.
+
+A human's cascade tops out around the occupational exposure limit, which is precisely why the clinical ladder turns lethal in the low hundreds. Move the cliff above the concentration the air actually delivers, and everything changes character.
+
+<Callout variant="insight" title="Earth has already built this twice">
+This is not a speculative mechanism. It is a measured one, in two independent lineages.
+
+*Riftia pachyptila*, the giant tube worm, lives at deep-sea vents in water carrying one to two *millimolar* hydrogen sulfide — thousands of times a lethal human exposure. Its blood carries an extracellular haemoglobin of about three and a half megadaltons with zinc-coordinated free cysteine sites that bind oxygen and sulfide simultaneously and reversibly, ferrying sulfide to symbiotic bacteria without ever letting it reach Complex IV.
+
+*Poecilia mexicana*, a small fish in Mexican sulfur springs, took the other route: point substitutions in the oxygen-reduction core of Complex IV that lower its affinity for sulfide, paired with upregulated sulfide-oxidation enzymes. Same problem, different solution, and both are published.
+
+That two Earth lineages solved this independently is what moves a sulfide-tolerant Pandoran mitochondrion from speculation to inference. What canon supplies is that the sulfide is there and that it kills us. The mechanism is Earth's; the attribution is mine.
+</Callout>
+
+## Everything else the animal eats
+
+One more system, more briefly, because it follows the same logic and because Pandora's plants are notably well armed.
+
+Chemical defence is the normal condition of vegetation. A plant cannot run, so it invests in being unpleasant to digest, and a herbivore's liver is the counter-move. The counter-move has three stages, and they are the same three in every animal on Earth.
+
+Stage one is oxidation, run by an enormous family of enzymes called the <GlossaryTerm slug="cytochrome-p450">cytochrome P450s</GlossaryTerm>, which take a fat-soluble compound and punch an oxygen into it. Stage two attaches something large and water-soluble — a sugar acid, a glutathione, a sulfate — turning the molecule into something the kidney can excrete. Stage three pumps it out of the cell.
+
+The counter-intuitive part is stage one, because oxidation does not reliably make things safer. Sometimes it makes them worse. Paracetamol is harmless until a P450 converts a small fraction of it into a highly reactive intermediate, which is fine while glutathione is available to mop it up and catastrophic for the liver once that runs out. Benzo[a]pyrene from smoke is not itself a mutagen; its P450 products are. Toxicologists call this bioactivation, and it means stages one and two have to be matched. Run oxidation without conjugation and the animal poisons itself with its own detoxification.
+
+Which is why herbivores facing chemically defended foliage duplicate and diversify both stages together, and why the arms race shows up in genomes as expanded enzyme families. Pandoran herbivores browsing the flora canon describes should look the same way inside.
+
+<DiagramFigure
+  src="/images/chapters/physiology-of-pandoran-life/fig-08-defended-leaf.webp"
+  alt="A six-limbed browsing animal with its head deep in a cluster of broad dark violet fronds, one frond curling defensively away from contact, a faint pale exudate visible at the torn edges of a bitten leaf, the animal's jaw and throat rendered in careful detail against the dim glowing understorey"
+  labels={[
+    { x: 55, y: 45, side: "left", label: "Herbivore oral browsing", note: "Masticating fibrous purple foliage loaded with polyphenols, cyanogenic glycosides, and defensive alkaloids." },
+    { x: 74, y: 28, side: "right", label: "Defensive thigmonastic curling", note: "Rapid mechanical leaf-curling shields the adaxial photosynthetic surface and exposes protective spicules." },
+    { x: 80, y: 56, side: "right", label: "Chemical latex exudate", note: "Pressurized laticifers rupture on bite, releasing reactive secondary metabolites to deter feeding." },
+    { x: 57, y: 82, side: "left", label: "Coordinated hepatic clearance", note: "Phase I cytochrome P450 oxidation matched synchronously with Phase II glutathione conjugation in the grazer's liver." }
+  ]}
+  figNo="08"
+  caption="An ordinary meal, and a chemical negotiation. The plant invests in being unpalatable; the animal invests in two enzyme systems that have to work in step, because the first one alone converts some plant defences into something worse than they started as."
+  tier="inference"
+/>
+
+There is a second route, and canon points at it more directly. Na'vi hunters coat arrows with a preparation drawn from native toxic flora and fauna, and the SecOps briefing puts its effect at stopping a heart in about a minute. A minute is fast — too fast for anything that has to be absorbed and metabolised. That timescale implies a compound acting directly on the machinery of the heartbeat or of breathing.
+
+But an animal that handles such a compound routinely, whether making it or eating things that contain it, cannot rely on clearing it fast enough. The usual solution is <GlossaryTerm slug="target-site-insensitivity">target-site insensitivity</GlossaryTerm>: change the receptor rather than the chemistry. The monarch butterfly is the textbook case. Its caterpillars eat milkweed loaded with cardiac glycosides — compounds that block the sodium-potassium pump every animal cell depends on — and they survive because two amino acid substitutions in their own pump drop its affinity for the toxin by orders of magnitude. They then store the poison in their tissues and become poisonous themselves.
+
+That is the same move as the mole-rat's disconnected acid sensor and the sulfide-spring fish's modified Complex IV. Three times now, on three unrelated problems, the answer has been the same: do not fight the molecule, change the thing it binds to.
+
+## Honest edges
+
+<ConfidenceMeter
+  classification={{ canon_pct: 14, inference_pct: 24, speculation_pct: 8, real_science_pct: 54 }}
+/>
+
+The Earth science in this chapter is textbook material and none of it depends on Pandora existing. Henderson–Hasselbalch, the acute and chronic bicarbonate compensation figures, the oxygen dissociation curve and the Bohr effect, the mole-rat's sodium channel and the bar-headed goose's single substitution, the heat-balance equation and the density scaling of convective transfer, the sulfide oxidation cascade, *Riftia* and *Poecilia mexicana*, the three-phase xenobiotic pathway and the monarch's altered pump — all measured, all published, all citable.
+
+The canon is a much shorter list, and worth stating in full so nobody mistakes its length. What official material actually supplies: the atmospheric composition and surface pressure; the gravity; that native blood is red and iron-based; that unprotected humans lose consciousness in about twenty seconds and die within four minutes; that the exopack is a scrubber rather than a tank; that the Na'vi and recombinants breathe uncomfortably in Earth-normal air; the absence of insulating fur; the existence of those large uninsulated vascular structures across several clades; the temperature and humidity of the equatorial forest; the daily eclipse and its duration; the arrow poison and its one-minute effect; and that hydrogen sulfide is present and lethal to us. That is the list.
+
+Everything joining those two bodies of fact is mine, and the largest pieces should be named. That native arterial pH sits near 7.2 rather than 7.4 is a reconstruction from the arithmetic, not a reading of a measurement — canon states no blood pH at all, and the widely repeated figure below 6.8 is a community invention that the same arithmetic rules out. That native pigments have blunted their acid sensitivity is inference from what permanent acidity would otherwise cost. That the radiator structures are thermoregulatory is inference from their form and from the elephant's ear, though it is about as safe as inference gets. That native mitochondria carry a sulfide-resistant Complex IV and an expanded oxidation cascade is inference by analogy with two Earth lineages that demonstrably did exactly that.
+
+The most speculative claim in the chapter is the quietest one: that sulfide is a net metabolic *contributor* rather than merely a survivable nuisance. The enzymes exist and the electrons are real, but whether the contribution is worth anything at Pandoran concentrations depends on ventilation rates and enzyme densities that nobody has measured and canon never mentions. I have marked it in the component as inference, and it belongs at the speculative end of that.
+
+<OpenQuestions
+  title="What stays open"
+  items={[
+    {
+      question: "What is the pigment, actually?",
+      answer: "Canon names no protein, no globin variant, no prosthetic group — only 'an iron compound similar to haemoglobin'. That leaves a genuinely wide field: a conventional tetramer, a giant extracellular assembly like an annelid's, something with a different subunit count and therefore a different curve shape entirely. Everything this chapter says about affinity and unloading assumes a cooperative multi-subunit carrier packed inside cells, which is what the aerobic demands of a three-metre cursorial biped point to. It is not what canon says, because canon does not say."
+    },
+    {
+      question: "How is the eclipse anticipated, if it is?",
+      answer: "A daily thermal cliff on a fixed schedule is exactly the kind of predictable event a circadian system evolves to anticipate rather than merely react to — pre-emptive vasoconstriction before totality would be worth real energy. Nothing in canon describes such a mechanism, and the eclipse as a timekeeper belongs to the night-ecology chapter rather than this one. What this chapter can say is that the thermal incentive is large enough to be worth evolving toward."
+    },
+    {
+      question: "What does the xenon do?",
+      answer: "Five per cent xenon at Pandoran pressure works out to about seven per cent of a surgical anaesthetic dose — far too little to render anything unconscious, but xenon acts by blocking NMDA receptors, and that is not a threshold effect. Continuous low-level occupancy of those receptors implies mild baseline analgesia and sedation in anything breathing this air, including a human under an exopack that passes xenon straight through. Whether native nervous systems have altered receptors to compensate, or simply run at a different baseline, is entirely unstated."
+    },
+    {
+      question: "Are these animals warm-blooded?",
+      answer: "No official source classifies any native species as an endotherm, an ectotherm, or a gigantotherm, and no core body temperature is published for any of them. That is a large hole under the whole heat-budget section, which has to assume something in order to compute anything. The behaviour canon does show — sustained high-speed pursuit, powered flight at multi-tonne scale, activity through a cold eclipse — is hard to reconcile with anything but substantial internal heat production. But that is reasoning from performance to physiology, which is a weaker move than measuring."
+    }
+  ]}
+/>
+
+## The same air, still
+
+Go back to the clearing.
+
+The two bodies are still standing there, and nothing about the air between them has changed. Both are drawing in the same eighteen per cent carbon dioxide, the same trace of sulfide, the same five per cent xenon, at the same eighty-five kilopascals. The gas does not know which chest it has entered.
+
+What differs is downstream, and after all that arithmetic it comes to a surprisingly short list. The blood on one side of the clearing carries perhaps forty units of bicarbonate instead of twenty-four, and defends a pH near 7.2 instead of 7.4. Its pigment has been decoupled from the acid signal that ours still obeys. Its mitochondria carry an oxygen-reduction site that sulfide binds poorly, backed by an enzyme cascade sized for an atmosphere rather than for a trace. Its skin has fans and membranes it can open into the dense air, because in air that wet there is no other way to dump heat.
+
+Not one of those is a new kind of chemistry. Every single one has a counterpart on Earth, in an animal you could go and look at: a rodent that has disconnected its acid sensor, a goose with one substituted amino acid, an elephant running a fifth of its blood through its ears, a fish in a sulfur spring, a caterpillar that eats cardiac glycosides for a living. Pandora has not invented anything. It has picked a different set-point on each of half a dozen dials, and then built a working animal around the combination.
+
+Which is the real lesson, and it points back at us rather than out at them. A body's chemistry is not a property of life. It is a negotiated settlement with a particular atmosphere, and the settlement is written down in numbers that can be measured. Change the air and the numbers move — a little over a lifetime, if the kidney has time; a great deal over an evolutionary history.
+
+The human in that clearing is not fragile. They are simply calibrated somewhere else, in an atmosphere four hundred times poorer in carbon dioxide, and carrying the equipment that calibration implies. The mask is not making them stronger. It is a small machine holding open a window onto the air they were negotiated for, four light-years away, and it is doing so at four watts.
+
+<SourceList />
+
+<RelatedChapters
+  slugs={["whats-in-the-air", "the-breathing-fans", "spiders-second-biology"]}
+  locale="en"
+/>
+

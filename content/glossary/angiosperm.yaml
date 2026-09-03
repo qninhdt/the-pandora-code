@@ -1,0 +1,33 @@
+id: angiosperm
+label:
+  vi: Thực vật có hoa (angiosperm)
+  en: Angiosperm
+definition:
+  vi: >-
+    Thực vật có hoa — nhóm thực vật đông đảo nhất hôm nay, và nhóm gần nhất trong số các nhóm lớn. Chúng
+    bung ra khắp các sinh cảnh trên cạn vào đầu kỷ Phấn trắng, quãng 135 triệu năm trước, đột ngột đến mức
+    Darwin gọi đó là "bí ẩn đáng ghét". Ba đặc điểm giải thích phần lớn thành công ấy: noãn được bọc kín
+    trong một lá bào tử gập lại (cái nhụy); thụ tinh kép, nghĩa là mô dinh dưỡng cho phôi chỉ được tạo ra
+    sau khi thụ tinh thành công, nên không tiêu tốn cho những noãn không đậu; và mạch dẫn có tấm đục lỗ mở,
+    cho dòng nhựa chảy nhanh hơn mạch gỗ của cây hạt trần. Cần nhớ: cỏ biển là thực vật có hoa, không phải
+    tảo.
+  en: >-
+    The flowering plants — the largest group of plants today, and the most recent of the major groups.
+    They spread across terrestrial habitats in the Early Cretaceous, around 135 million years ago, so
+    abruptly that Darwin called it an "abominable mystery". Three features account for much of the
+    success: ovules fully enclosed in a folded megasporophyll (the carpel); double fertilisation, meaning
+    nutritive tissue for the embryo is built only after fertilisation succeeds, so nothing is spent on
+    ovules that fail; and vessel elements with open perforation plates, which carry sap faster than
+    gymnosperm tracheids. Worth remembering: seagrasses are angiosperms, not algae.
+see_also:
+  - gymnosperm
+  - seagrass
+  - polyploidy
+category: bio
+tags:
+  - evolution
+  - physiology
+cover_prompt: >-
+  A painterly naturalist cutaway of a single flower, its ovules fully enclosed within a folded protective
+  chamber at the base, a fine pollen tube growing down toward them, cool teal and magenta palette with a
+  scarce amber highlight, no text, no labels, no numbers.

@@ -1,0 +1,16 @@
+id: respiratory-alkalosis
+label:
+  vi: Nhiễm kiềm hô hấp
+  en: Respiratory alkalosis
+definition:
+  vi: "Trạng thái máu chuyển sang kiềm vì carbon dioxide bị thải ra nhanh hơn mức cơ thể sinh ra - do thở gấp, hoặc do bị đưa vào một bầu không khí nghèo carbon dioxide hơn nhiều so với nơi cơ thể đã hiệu chỉnh. Bể bicarbonate không thể co lại kịp: thận cần nhiều ngày để thải bớt nó, còn khí thì rút đi trong vài chục giây. Hậu quả không phải là dễ chịu: mạch máu não co lại gây choáng, canxi ion hóa gắn vào protein huyết tương gây co cứng cơ và co thắt thanh quản, và việc mất kích thích proton ở trung tâm hô hấp có thể làm ngừng thở."
+  en: "The state where blood turns alkaline because carbon dioxide is leaving faster than the body makes it - from over-breathing, or from being moved into air far poorer in carbon dioxide than the one the body was calibrated for. The bicarbonate pool cannot shrink to match: the kidney needs days to shed it, while the gas washes out in tens of seconds. The consequences are not gentle: cerebral arterioles constrict and cause syncope, ionised calcium binds to plasma proteins and produces tetany and laryngeal spasm, and the loss of proton drive at the respiratory centre can stop breathing altogether."
+see_also:
+  - henderson-hasselbalch-equation
+  - hypercapnia
+  - bicarbonate-buffer
+category: concept
+tags:
+  - physiology
+  - chemistry
+cover_prompt: A painted study of a vessel interior where gas motes stream rapidly outward through a thin membrane leaving the fluid behind unnaturally clear, a pale crystalline glint of precipitating mineral forming at the vessel wall, cold cyan against deep indigo, painterly, no text, no labels, no numbers.

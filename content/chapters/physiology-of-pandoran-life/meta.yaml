@@ -1,0 +1,133 @@
+slug: physiology-of-pandoran-life
+status: published
+title:
+  vi: Sinh lý học Sự sống Pandora
+  en: Physiology of Pandoran Life
+subtitle:
+  vi: >-
+    Vì sao cùng một bầu không khí lại giết người này và nuôi kẻ khác - và điều mà một phép tính hai
+    dòng nói về mọi cơ thể từng thích nghi với bất cứ đâu
+  en: >-
+    Why the same air kills one body and feeds another - and what a two-line calculation says about
+    every organism that ever adapted to anywhere
+hook:
+  vi: >-
+    Một recombinant đứng giữa trảng rừng mà không cần mặt nạ, ngay cạnh một con người sẽ chết trong
+    bốn phút nếu tháo mặt nạ ra. Cùng một bầu khí quyển, cùng một thể tích khí mỗi hơi thở. Khác
+    biệt không nằm ở phổi - nó nằm trong độ pH của máu, và ta có thể tính ra con số ấy.
+  en: >-
+    A recombinant stands unmasked in a forest clearing beside a human who would be dead in four
+    minutes without the mask. Same atmosphere, same lungful of it per breath. The difference is not
+    in the lungs - it is in the pH of the blood, and that number can be worked out.
+authors:
+  - bardabez
+tags:
+  - comparative-physiology
+  - acid-base-balance
+  - thermoregulation
+  - toxicology
+  - pandora-biology
+classification:
+  canon_pct: 14
+  inference_pct: 24
+  speculation_pct: 8
+  real_science_pct: 54
+related_chapters:
+  - whats-in-the-air
+  - the-breathing-fans
+  - spiders-second-biology
+  - direhorse-and-banshee-up-close
+glossary_terms:
+  - hypercapnia
+  - partial-pressure
+  - henderson-hasselbalch-equation
+  - bicarbonate-buffer
+  - carbonic-anhydrase
+  - respiratory-alkalosis
+  - oxygen-dissociation-curve
+  - bohr-effect
+  - haemocyanin
+  - myoglobin
+  - heat-dissipation-limit
+  - gigantothermy
+  - vapour-pressure-deficit
+  - histotoxic-hypoxia
+  - cytochrome-c-oxidase
+  - sulfide-quinone-oxidoreductase
+  - cytochrome-p450
+  - target-site-insensitivity
+figures:
+  - id: fig-00-cover
+    role: hero
+    asset_status: ready
+  - id: fig-01-two-bodies-one-air
+    role: hero
+    asset_status: ready
+  - id: fig-02-bicarbonate-ledger
+    role: diagram
+    asset_status: ready
+  - id: fig-03-red-under-blue
+    role: comparison
+    asset_status: ready
+  - id: fig-04-radiator-gallery
+    role: comparison
+    asset_status: ready
+  - id: fig-05-wet-air-sprint
+    role: inline
+    asset_status: ready
+  - id: fig-06-eclipse-cold
+    role: inline
+    asset_status: ready
+  - id: fig-07-two-mitochondria
+    role: comparison
+    asset_status: ready
+  - id: fig-08-defended-leaf
+    role: inline
+    asset_status: ready
+sources:
+  - kind: canon
+    label: Pandora - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Pandora
+  - kind: canon
+    label: Exopack - James Cameron's Avatar Wiki
+    url: https://james-camerons-avatar.fandom.com/wiki/Exopack
+  - kind: science
+    label: >-
+      Physiological and genomic adaptation of the naked mole-rat to hypoxia and hypercapnia (Park et
+      al., Science 2017)
+    url: https://pubmed.ncbi.nlm.nih.gov/28428423/
+  - kind: science
+    label: >-
+      Mechanisms of blood-gas transport and acid-base regulation in air-breathing and
+      water-breathing vertebrates (Comparative Biochemistry and Physiology)
+    url: https://pubmed.ncbi.nlm.nih.gov/31201869/
+  - kind: science
+    label: >-
+      A single amino acid substitution in the alpha-globin of the bar-headed goose increases oxygen
+      affinity (Jessen et al., PNAS 1991)
+    url: https://www.pnas.org/doi/10.1073/pnas.88.15.6519
+  - kind: science
+    label: >-
+      Maximal heat dissipation capacity and hyperthermia risk (Speakman & Krol, Journal of Animal
+      Ecology 2010)
+    url: https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-2656.2010.01689.x
+  - kind: science
+    label: >-
+      Hydrogen sulfide oxidation by sulfide:quinone oxidoreductase and the mitochondrial sulfide
+      oxidation pathway (Biochimica et Biophysica Acta)
+    url: https://pubmed.ncbi.nlm.nih.gov/29246862/
+  - kind: science
+    label: >-
+      Convergent evolution of hydrogen sulfide tolerance in sulfide spring fishes (Tobler et al.,
+      Nature Ecology & Evolution 2018)
+    url: https://pubmed.ncbi.nlm.nih.gov/30250158/
+  - kind: science
+    label: >-
+      Adaptations to a haemoglobin-less life in Antarctic icefishes (Sidell & O'Brien, Journal of
+      Experimental Biology 2006)
+    url: https://journals.biologists.com/jeb/article/209/10/1791/16205
+  - kind: science
+    label: >-
+      Xenobiotic metabolism: Phase I, Phase II and transporter-mediated disposition (Annual Review
+      of Pharmacology and Toxicology)
+    url: https://pubmed.ncbi.nlm.nih.gov/22235860/

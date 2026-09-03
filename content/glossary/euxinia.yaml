@@ -1,0 +1,16 @@
+id: euxinia
+label:
+  vi: Nước euxinia (yếm khí giàu sulfide)
+  en: Euxinia
+definition:
+  vi: 'Mức độ khắc nghiệt hơn của thiếu oxy: nước không chỉ hết oxy mà còn tích lũy hydro sulfide hòa tan, thứ vừa độc vừa có tính khử. Biển Đen là ví dụ sống hiện nay. Với việc bảo tồn, euxinia là điều kiện lý tưởng - nó vừa dập tắt kẻ ăn xác vừa cung cấp sẵn lưu huỳnh khử để pyrit hóa mô mềm. Trên Trái Đất, euxinia là trạng thái ngoại lệ cần điều kiện đặc biệt mới xảy ra; trên một hành tinh có sulfide ngay trong khí quyển thì nó có thể là mặc định.'
+  en: 'A more extreme grade of oxygen loss: water that has not only run out of oxygen but accumulated dissolved hydrogen sulfide, which is both toxic and chemically reducing. The Black Sea is the living example. For preservation, euxinia is close to ideal - it suppresses scavengers and simultaneously supplies the reduced sulfur that pyritizes soft tissue. On Earth euxinia is an exceptional state requiring special circumstances; on a world with sulfide in its atmosphere it could be the default.'
+see_also:
+  - anoxia
+  - pyritization
+  - konservat-lagerstatte
+category: concept
+tags:
+- chemistry
+- oceanography
+cover_prompt: A painted deep basin of utterly still black water with a faint brassy sheen on its surface and pale mineral crusts on the rocks at its margin, nothing alive anywhere in frame, cool void-indigo with sparse warm amber glints, painterly, no text, no labels.

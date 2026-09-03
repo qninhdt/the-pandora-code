@@ -1,0 +1,17 @@
+id: konservat-lagerstatte
+label:
+  vi: Mỏ bảo tồn ngoại hạng (Konservat-Lagerstätte)
+  en: Conservation deposit (Konservat-Lagerstätte)
+definition:
+  vi: 'Một tầng đá hiếm hoi nơi mô mềm - cơ, ruột, mắt, lông, mang - được giữ lại thay vì phân hủy hết, thường vì cơ thể bị vùi lấp cực nhanh vào môi trường yếm khí không có kẻ ăn xác. Nhà cổ sinh vật học Adolf Seilacher phân biệt loại này với "mỏ tập trung" (Konzentrat-Lagerstätte), nơi chỉ có xương và vỏ dồn đống lại. Đá phiến Burgess, đá vôi Solnhofen, hệ tầng Jehol và hố Messel là những mỏ bảo tồn - và mỗi mỏ hoạt động theo một cơ chế riêng biệt, chứ không phải nhờ may mắn chung.'
+  en: 'A rare rock unit where soft tissue - muscle, gut, eyes, feathers, gills - survives instead of decaying away, usually because bodies were buried extremely fast into anoxic conditions with no scavengers. The paleontologist Adolf Seilacher distinguished these from concentration deposits, where only bones and shells pile up. The Burgess Shale, Solnhofen limestone, the Jehol beds and Messel Pit are conservation deposits - and each one works through a specific, identifiable mechanism rather than general good fortune.'
+see_also:
+  - taphonomy
+  - pyritization
+  - phosphatization
+  - anoxia
+category: concept
+tags:
+- geology
+- ecology
+cover_prompt: A painted split slab of fine dark shale opened like a book, one face bearing the complete impression of a soft-bodied creature with its delicate limbs and gut trace intact, faint cyan glow along the impression, cool indigo stone, painterly, no text, no labels.

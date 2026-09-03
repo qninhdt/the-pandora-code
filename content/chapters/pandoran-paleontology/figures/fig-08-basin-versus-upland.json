@@ -1,0 +1,33 @@
+{
+  "id": "fig-08-basin-versus-upland",
+  "chapter_slug": "pandoran-paleontology",
+  "role": "diagram",
+  "narrative_purpose": "The practical payoff: where a field team should actually dig. One landscape holds an eroding upland that keeps nothing and a subsiding basin that stacks a continuous datable record, so the reader can see that the famous forest is on the wrong side of the picture.",
+  "subject": "A wide landscape cross-section reading left to right. On the left, a high mountain ridge of bare fractured rock with thin soil visibly stripping away downslope in pale washout channels, and a scatter of loose bone fragments lying exposed and weathering on a bare ledge with no sediment covering them. In the centre, a slope of glowing forest. On the right, a low coastal basin whose floor is visibly sinking, filled with many thin flat horizontal beds of fine sediment stacked one on another, three pale ash bands running through the stack as bright lines, and near the top of the stack a complete small six-limbed animal enclosed within one of the fine beds.",
+  "scene": "A single continuous Pandoran landscape cut open to full depth, ridge crest to shallow sea, at dusk with layered atmospheric haze between the elevations.",
+  "camera": "An ultra-wide side-on cross-section view spanning the full landscape, with both the surface topography above the cut line and the layered interior below it visible at once.",
+  "light": "Cold cyan-grey daylight on the bare upland with no self-illumination; cool teal bioluminescence in the central forest slope; a faint warm ember-amber glow in the pale ash bands so they read as the datable markers of the picture.",
+  "palette": "Cold grey-indigo on the left, living teal in the centre, cool stone and pale sediment tones on the right, with scarce ember-amber restricted to the three ash bands.",
+  "style": "Painterly naturalist cross-section plate, hand-painted texture, geological section clarity across a real landscape.",
+  "detail_level": "Crisp on the erosion channels and exposed weathering bones at left and on the individual sediment beds, ash bands and enclosed animal at right; the central forest slope softer; distance into haze.",
+  "composition": "Wide left-to-right progression from erosional to depositional across the frame, the cut line running horizontally through the middle, clear quiet zones above the ridge and beside the sediment stack for later callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "survey markers",
+    "measuring poles",
+    "human figures",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Six limbs on the enclosed animal. The left side must clearly be losing material and the right side clearly gaining it - if the two halves look equally depositional the figure has failed. Cool Pandora palette with amber confined to the ash bands.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no survey equipment, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

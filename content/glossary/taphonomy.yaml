@@ -1,0 +1,17 @@
+id: taphonomy
+label:
+  vi: Cổ sinh học chôn vùi (taphonomy)
+  en: Taphonomy
+definition:
+  vi: 'Nghiên cứu tất cả những gì xảy ra với một cơ thể giữa lúc chết và lúc được phát hiện - phân hủy, bị ăn xác, bị dòng nước phân loại, bị vùi lấp, rồi biến đổi hóa học trong đá. Nhà cổ sinh vật học Liên Xô Ivan Efremov đặt tên cho nó năm 1940, và ý tưởng cốt lõi của ông mới là điều đáng nhớ: những "tai nạn" ngăn giữa nhà khoa học và bằng chứng không phải là nhiễu, chúng *chính là* bằng chứng. Hiểu quy luật của chúng thì các khoảng trống trong hồ sơ hóa thạch cũng nói lên nhiều điều như bản thân hóa thạch.'
+  en: 'The study of everything that happens to a body between death and discovery - decay, scavenging, hydraulic sorting, burial, and the chemical changes that follow inside rock. The Soviet paleontologist Ivan Efremov named it in 1940, and his central insight is the part worth keeping: the accidents standing between a scientist and the evidence are not noise, they *are* the evidence. Learn their rules and the gaps in a fossil record become as informative as the fossils.'
+see_also:
+  - diagenesis
+  - konservat-lagerstatte
+  - bioturbation
+  - time-averaging
+category: concept
+tags:
+- geology
+- ecology
+cover_prompt: A painted sequence of four stages of one animal skeleton in dark sediment, from intact on the left to a faint fibrous trace on the right, cool indigo and teal soil tones with a single warm amber highlight on the intact form, painterly naturalist plate, no text, no labels, no numbers.

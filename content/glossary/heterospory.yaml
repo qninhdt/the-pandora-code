@@ -1,0 +1,30 @@
+id: heterospory
+label:
+  vi: Dị bào tử
+  en: Heterospory
+definition:
+  vi: >-
+    Việc tạo ra hai loại bào tử khác nhau thay vì một: bào tử nhỏ sinh ra thể giao tử đực, bào tử lớn
+    sinh ra thể giao tử cái. Nghe như một chi tiết vụn vặt về phân loại, thực ra đây là tiền đề kiến trúc
+    của hạt. Một khi bào tử cái đã lớn, ít và được giữ lại trong cơ thể mẹ — và một khi thể giao tử phát
+    triển trọn vẹn bên trong lớp vỏ bào tử thay vì mọc ra ngoài — thì mọi thành phần của một hạt đã có
+    mặt, chỉ còn chờ được xếp lại.
+  en: >-
+    Producing two kinds of spore instead of one: small spores that grow into male gametophytes, large
+    spores that grow into female ones. It sounds like a minor taxonomic detail and is in fact the
+    architectural precondition for the seed. Once the female spore is large, few in number and retained
+    inside the parent body — and once the gametophyte develops entirely within the spore wall rather
+    than outside it — every component of a seed is present and only needs rearranging.
+see_also:
+  - gametophyte
+  - sporophyte
+  - sporopollenin
+  - gymnosperm
+category: bio
+tags:
+  - evolution
+  - developmental-biology
+cover_prompt: >-
+  A painterly naturalist plate contrasting a scatter of many tiny spores on one side with a few large
+  round spores on the other, each large one held within a protective plant structure, cool teal and
+  magenta-tinted palette, no text, no labels, no numbers.

@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { FlaskConical, Info, Lightbulb, TriangleAlert } from "lucide-react";
 
-type CalloutVariant = "note" | "science" | "insight" | "warning";
+type CalloutVariant = "note" | "science" | "insight" | "warning" | "inference";
 
 interface CalloutProps {
   variant?: CalloutVariant;
@@ -15,12 +15,13 @@ const config: Record<CalloutVariant, { tone: string; icon: typeof Info }> = {
   science: { tone: "--teal", icon: FlaskConical },
   insight: { tone: "--amber", icon: Lightbulb },
   warning: { tone: "--magenta", icon: TriangleAlert },
+  inference: { tone: "--teal", icon: Lightbulb },
 };
 
 // Inline emphasis block, token-styled with a glowing left edge. Replaces the old
 // ScientificNote / SideNote / note boxes with a single variant-driven component.
 export function Callout({ variant = "note", title, className, children }: CalloutProps) {
-  const { tone, icon: Icon } = config[variant];
+  const { tone, icon: Icon } = config[variant] ?? config.note;
   const c = `var(${tone})`;
   return (
     <aside

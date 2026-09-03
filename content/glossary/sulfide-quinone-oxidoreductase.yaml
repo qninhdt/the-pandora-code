@@ -1,0 +1,16 @@
+id: sulfide-quinone-oxidoreductase
+label:
+  vi: Sulfide:quinone oxidoreductase
+  en: Sulfide:quinone oxidoreductase
+definition:
+  vi: "Enzyme lấy electron từ hydro sulfide và đưa chúng vào bể ubiquinone của ty thể - đúng cái bể mà electron từ thức ăn cũng đi vào. Nó là lý do sulfide vừa là chất độc vừa là nhiên liệu: cùng một phân tử, khác nhau chỉ ở việc enzyme này xử lý xong trước khi phần dư kịp tới Phức hợp IV hay không. Bạn đang mang nó ngay lúc này; mọi tế bào đều tự sinh một chút sulfide làm phân tử tín hiệu, và đây là cách nó dọn dẹp sau đó. Khác biệt giữa một cơ thể chết trong hai mươi giây và một cơ thể hưởng lợi không phải là bộ máy, mà là dung lượng của bộ máy ấy."
+  en: "The enzyme that takes electrons off hydrogen sulfide and feeds them into the mitochondrial ubiquinone pool - the very same pool that food-derived electrons enter. It is why sulfide is both poison and fuel: the same molecule, and the only difference is whether this enzyme clears it before the surplus reaches Complex IV. You are carrying it right now; every cell makes a little sulfide deliberately as a signalling molecule, and this is how it cleans up afterwards. The difference between a body that dies in twenty seconds and one that profits is not the machinery but its capacity."
+see_also:
+  - cytochrome-c-oxidase
+  - histotoxic-hypoxia
+  - mitochondrion
+category: bio
+tags:
+  - physiology
+  - chemistry
+cover_prompt: A painted molecular study of an enzyme seated in a folded inner membrane, pale sulfur particles arriving from one side and bright electron motes streaming out of it along the membrane into the glowing chain beyond, living teal and cyan against deep indigo, painterly, no text, no labels, no numbers.

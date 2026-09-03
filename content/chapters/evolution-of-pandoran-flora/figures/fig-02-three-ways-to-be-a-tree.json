@@ -1,0 +1,32 @@
+{
+  "id": "fig-02-three-ways-to-be-a-tree",
+  "chapter_slug": "evolution-of-pandoran-flora",
+  "role": "comparison",
+  "narrative_purpose": "Shows in one image that three trees of similar outline are built on incompatible internal engineering, so the shared silhouette cannot be inherited. The cutaway is the argument: same shape outside, nothing shared inside.",
+  "subject": "Three tall alien trunks standing side by side and evenly spaced, each cut open lengthwise down its near side so the interior is exposed. The left trunk is enormous and is not one stem at all but a ring of roughly ten narrower vertical stems fused where they touch, enclosing a large empty hollow core running the full height. The middle trunk is very slender and unbranched, with a bright fibrous sheath forming its outer skin and almost nothing inside it, a small tuft of foliage at its very top. The right trunk is short, swollen and soft-walled, with three large pale round globes held near its top and no dense core visible at all.",
+  "scene": "A dark specimen space with faint ground haze, the three trunks displayed as though mounted for comparison rather than growing in a forest.",
+  "camera": "A straight-on elevation view, all three trunks fully in frame from base to crown, evenly spaced left to right.",
+  "light": "Bioluminescent self-glow tracing the internal structures - the fused stems of the left trunk glow along their contact seams, the middle trunk's outer sheath glows brightest as a bright outline, the right trunk's globes glow softly from within; deep indigo shadow behind all three.",
+  "palette": "Void-indigo ground; cyan glow in the left trunk's fused seams, living-teal on the middle trunk's fibrous sheath, scarce ember amber inside the right trunk's globes.",
+  "style": "Painterly naturalist cutaway plate, hand-painted texture, clean structural clarity without infographic flatness.",
+  "detail_level": "Crisp on the three interiors and on the contrast between hollow ring, outer sheath and gas cavities; the surrounding space soft; edges dissolving into haze.",
+  "composition": "Three vertical forms in even rhythm across the frame, generous dark space above the crowns and between the trunks for later callouts.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "arrows",
+    "leader lines",
+    "infographic chrome",
+    "Earth foliage",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Cool Pandora palette with bioluminescent self-glow from the internal structures. The three interiors must read as clearly different constructions - a hollow fused ring, a hollow shaft with a bright outer skin, and a soft stem with gas globes - since the whole figure fails if they look alike.",
+  "aspect_ratio": "16:9",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no leader lines, no infographic chrome, no photographic or 3D-render look, no lens flares, no cartoon or anime style",
+  "style_refs": ["pandora-establishing.png"]
+}

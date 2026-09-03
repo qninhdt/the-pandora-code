@@ -1,0 +1,16 @@
+id: permineralization
+label:
+  vi: Khoáng hóa lấp lỗ rỗng (permineralization)
+  en: Permineralization
+definition:
+  vi: 'Con đường hóa thạch phổ biến nhất, và là con đường tạo ra gỗ hóa đá. Nước ngầm mang khoáng chất hòa tan ngấm vào các khoang rỗng còn lại trong gỗ hay xương - mạch dẫn, ống Havers, tủy - rồi khoáng chất kết tủa ra, lấp kín các khoang ấy. Điểm cốt yếu: nó *không* phá hủy khung cấu trúc gốc mà lấp vào chỗ trống bên trong, nên chi tiết tế bào có thể còn nguyên. Với gỗ, silic hòa tan lần lượt kết tinh thành opal rồi thành thạch anh vi tinh.'
+  en: 'The commonest fossilization route, and the one that makes petrified wood. Groundwater carrying dissolved minerals seeps into the empty spaces left inside wood or bone - vessels, Haversian canals, marrow cavities - and the minerals precipitate out, filling them. The essential point: it does *not* destroy the original framework but fills the voids inside it, so cellular detail can survive intact. In wood, dissolved silica crystallizes first to opal and eventually to microcrystalline quartz.'
+see_also:
+  - diagenesis
+  - taphonomy
+  - pyritization
+category: concept
+tags:
+- geology
+- mineral
+cover_prompt: A painted cross-section of petrified wood, its growth rings and cell walls preserved in banded stone shot through with pale mineral, cool teal and amber banding against void-indigo, high painterly detail, no text, no labels.

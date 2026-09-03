@@ -1,0 +1,31 @@
+id: zooplantae
+label:
+  vi: Zooplantae (thực vật - động vật)
+  en: Zooplantae
+definition:
+  vi: >-
+    Hạng mục mà các sách hướng dẫn thực địa của RDA dựng lên cho những sinh vật Pandora không chịu nằm trong bên nào
+    của ranh giới thực vật - động vật: chúng quang hợp, và theo cách diễn đạt của chính nguyên tác, chúng có "mầm mống
+    của một hệ thần kinh" cùng những sợi co rút hoạt động như cơ. Helicoradium, anemonoid, cây tai mèo, bình Panopyra
+    và những hạt bay atokirina' đều được xếp vào đây. Đây là một sự thừa nhận thất bại chứ không phải một đơn vị phân
+    loại: nguyên tác không hề nói bậc này là tình trạng cổ xưa được giữ lại hay là sự hội tụ về sau, và chọn đằng nào
+    thì cây phả hệ hệ thực vật Pandora cũng khác đi.
+  en: >-
+    The category the RDA field guides invented for Pandoran organisms that refuse to sit on either side of the
+    plant-animal boundary: they photosynthesise, and in canon's own phrasing they possess "the rudiments of a nervous
+    system" together with contractile fibrils that work as muscle does. The helicoradian, the anemonoid, the cat-ear
+    shrub, the Panopyra tank and the airborne atokirina' are all filed here. It is an admission of defeat rather than a
+    taxon: canon never says whether the grade is retained ancestral condition or later convergence, and the Pandoran
+    floral tree comes out differently depending on which it is.
+see_also:
+  - thigmonasty
+  - convergent-evolution
+  - eywa
+category: bio
+tags:
+  - pandora-canon
+  - evolution
+cover_prompt: >-
+  A painterly naturalist specimen plate of a glowing Pandoran organism that is half plant and half animal in character, a
+  broad photosynthetic blade above and fine contractile fibres visible in its stalk below, dark specimen space around it,
+  cool teal and magenta palette, no text, no labels, no numbers.

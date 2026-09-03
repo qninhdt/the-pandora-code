@@ -1,0 +1,31 @@
+{
+  "id": "fig-00-cover",
+  "chapter_slug": "pandoran-paleontology",
+  "role": "hero",
+  "narrative_purpose": "The chapter's representative plate for the landing book-map: the whole argument in one image - an empty excavation in living forest soil on one side, and the brassy mineral cast of a whole animal in split rock on the other. The record exists; it is simply not underneath the animals.",
+  "subject": "A single wide composition split by a soft vertical seam of haze. On the left, a rectangular pit cut into deep orange-red clay soil beneath the trunks of an enormous glowing forest, its walls bare and threaded only with pale rootlets, entirely empty. On the right, a split slab of dark grey rock lying open on a specimen tray, its inner face bearing the complete brassy golden-metallic form of a small six-limbed animal, its fine branching neck filaments standing out in relief.",
+  "scene": "A dark field-camp table set at the edge of the excavation, forest towering behind, the specimen slab lit as if just opened.",
+  "camera": "A wide front-on view at working height, the empty pit occupying the left third and the open specimen slab the right third, hazy forest depth between them.",
+  "light": "Bioluminescent ambience from the forest above pooling cool cyan on the red clay; a single warm amber glint catching the brassy metallic animal in the rock so the eye finds it second.",
+  "palette": "Void-indigo and rust-red clay on the left, cool stone-grey rock and scarce warm brass on the right, restrained.",
+  "style": "Painterly naturalist field plate, hand-painted texture, observed rather than staged.",
+  "detail_level": "Crisp on the pit wall texture and on the metallic animal in the slab; forest behind soft and dissolving into haze.",
+  "composition": "Wide left-to-right diptych balanced across one frame, generous dark negative space above both halves, the empty pit reading first and the brassy specimen second.",
+  "exclude": [
+    "text",
+    "letters",
+    "numbers",
+    "labels",
+    "watermark",
+    "logos",
+    "UI",
+    "callout lines",
+    "arrows",
+    "human figures",
+    "Avatar branding"
+  ],
+  "consistency_notes": "Cool Pandora palette dominant, warm brass used only for the mineralised animal. Same dark glowing-specimen mood as the established chapter covers; six limbs on any Pandoran animal shown.",
+  "aspect_ratio": "3:2",
+  "negative_prompt": "no text, no lettering, no numbers, no logos, no diagram labels, no arrows, no photographic or 3D-render look, no lens flares, no cartoon or anime style, no dinosaur skeletons, no museum displays",
+  "style_refs": ["pandora-establishing.png"]
+}

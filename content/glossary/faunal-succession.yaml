@@ -1,0 +1,17 @@
+id: faunal-succession
+label:
+  vi: Quy luật kế tiếp động vật
+  en: Faunal succession
+definition:
+  vi: 'Nhận thức - do William Smith ở Anh và Georges Cuvier cùng Alexandre Brongniart ở Pháp độc lập đưa ra - rằng các tập hợp hóa thạch nối tiếp nhau xuyên qua cột địa tầng theo một trật tự xác định và không đảo ngược. Điều này biến hóa thạch thành một cuốn lịch. Nó có tác dụng vì tiến hóa không lặp lại: một loài đã tuyệt chủng thì không quay lại, nên trình tự chỉ đi một chiều. Đây là nền móng cho toàn bộ địa tầng sinh học, và nó ra đời trước khi có bất kỳ phương pháp định tuổi tuyệt đối nào.'
+  en: 'The recognition - reached independently by William Smith in England and by Georges Cuvier with Alexandre Brongniart in France - that fossil assemblages succeed one another through the stratigraphic column in a definite, irreversible order. This turns fossils into a calendar. It works because evolution does not repeat: an extinct species does not return, so the sequence runs one way only. It is the foundation of all biostratigraphy, and it predates any method of absolute dating.'
+see_also:
+  - biostratigraphy
+  - index-fossil
+  - superposition
+  - geologic-time-scale
+category: concept
+tags:
+- geology
+- evolution
+cover_prompt: A painted tall stack of sedimentary layers, each layer holding a different distinct creature silhouette from the one below and above it, the forms changing progressively upward, cool indigo stone with pale cream fossil shapes, painterly, no text, no labels.

@@ -1,0 +1,16 @@
+id: phosphatization
+label:
+  vi: Phosphat hóa (phosphatization)
+  en: Phosphatization
+definition:
+  vi: 'Cửa sổ khoáng hóa cho độ phân giải cao nhất mà hóa thạch từng đạt được: apatit vi tinh kết tủa ngay trên mô mềm, đôi khi ghi được cả cấu trúc dưới cấp tế bào - phôi, cơ, thậm chí nhân tế bào. Nó đòi hỏi một điều kiện đặc thù và trái ngược trực giác: pH vi môi trường phải sụt nhanh xuống dưới khoảng 6,4, do chính quá trình tự phân yếm khí của cái xác tạo ra, cùng lượng phosphate hòa tan cao và carbonate thấp. Cái xác, nói cách khác, tự sinh ra hóa học đã bảo tồn nó.'
+  en: 'The mineralization window that yields the finest resolution fossils ever recovered: cryptocrystalline apatite precipitating directly onto soft tissue, sometimes recording sub-cellular structure - embryos, muscle, even cell nuclei. It requires a specific and counter-intuitive condition: the micro-environmental pH must drop rapidly below about 6.4, driven by the carcass''s own anaerobic autolysis, alongside high dissolved phosphate and low carbonate. The corpse, in other words, generates the chemistry that preserves it.'
+see_also:
+  - pyritization
+  - konservat-lagerstatte
+  - diagenesis
+category: concept
+tags:
+- chemistry
+- geology
+cover_prompt: A painted microscopic view of a tiny fossilised embryo rendered in pale cream mineral against dark rock matrix, its individual cells visible as rounded compartments, cool indigo surround with faint teal glow, painterly, no text, no labels.

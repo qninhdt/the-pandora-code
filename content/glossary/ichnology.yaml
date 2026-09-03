@@ -1,0 +1,17 @@
+id: ichnology
+label:
+  vi: Cổ sinh vết tích học (ichnology)
+  en: Ichnology
+definition:
+  vi: 'Ngành nghiên cứu hóa thạch dấu vết - vết chân, đường bò, hang, lỗ khoan - như một nguồn bằng chứng riêng biệt về hành vi cổ đại. Nó cho phép suy ra những thứ xương không nói được: từ chiều dài bước và độ cao khớp hông có thể tính ra tốc độ di chuyển của con vật, từ khoảng cách giữa các vệt chân suy ra thế đứng và trọng tâm, từ trật tự đặt chân suy ra kiểu phối hợp bước - kể cả với một cơ thể sáu chi. Các tập hợp dấu vết còn chỉ ra độ sâu nước và độ chặt của nền đáy.'
+  en: 'The study of trace fossils - tracks, trails, burrows, borings - as a distinct body of evidence about ancient behaviour. It supports inferences bone cannot: stride length and hip height together give a trackmaker''s speed, trackway spacing gives stance width and centre of gravity, and footfall order gives gait coordination, including for a six-limbed body. Trace assemblages also indicate water depth and how firm the substrate was.'
+see_also:
+  - trace-fossil
+  - taphonomy
+  - biostratigraphy
+category: concept
+tags:
+- geology
+- ecology
+- physiology
+cover_prompt: A painted long curving trackway of six-limbed footprints receding across a pale mudflat toward hazy distance, the prints deep and sharply defined in the foreground, cool teal and indigo dusk light, painterly naturalist plate, no text, no labels.

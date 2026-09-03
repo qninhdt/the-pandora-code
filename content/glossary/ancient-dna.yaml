@@ -1,0 +1,16 @@
+id: ancient-dna
+label:
+  vi: DNA cổ đại (aDNA)
+  en: Ancient DNA
+definition:
+  vi: 'DNA còn sót lại trong hài cốt cổ, và hạn chế của nó là một con số cứng chứ không phải vấn đề kỹ thuật. Nước phân cắt DNA theo hai đường - depurination và deamination - nên nó phân hủy theo động học bậc một. Allentoft và cộng sự đo trên 158 xương moa được định tuổi và tìm ra chu kỳ bán rã khoảng 521 năm cho một đoạn 242 base ở 13 độ C. Vì tốc độ phụ thuộc nhiệt độ theo Arrhenius, giới hạn lý thuyết là chừng 1 đến 1,5 triệu năm trong băng vĩnh cửu, và dưới 150 nghìn năm ở vùng nhiệt đới. DNA khủng long, vì thế, là điều bất khả về mặt hóa học.'
+  en: 'DNA surviving in ancient remains, and its limit is a hard number rather than a technical problem. Water cleaves DNA by two routes - depurination and deamination - so it decays with first-order kinetics. Allentoft and colleagues measured 158 dated moa bones and found a half-life of about 521 years for a 242-base fragment at 13 °C. Because the rate is Arrhenius-dependent on temperature, the theoretical ceiling is roughly 1 to 1.5 million years in permafrost, and under 150,000 years in the tropics. Dinosaur DNA is therefore a chemical impossibility.'
+see_also:
+  - taphonomy
+  - kerogen
+  - diagenesis
+category: concept
+tags:
+- chemistry
+- evolution
+cover_prompt: A painted double-helix strand rendered in pale cyan light, progressively fragmenting from left to right into shorter and shorter broken pieces until only scattered dots remain, dark indigo field, painterly, no text, no labels.
